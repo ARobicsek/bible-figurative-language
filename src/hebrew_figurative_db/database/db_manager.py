@@ -59,12 +59,11 @@ class DatabaseManager:
             CREATE TABLE IF NOT EXISTS figurative_language (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 verse_id INTEGER NOT NULL,
-                text_snippet TEXT NOT NULL,
-                hebrew_snippet TEXT,
-                type TEXT NOT NULL CHECK(type IN ('metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'other')),
+                type TEXT NOT NULL CHECK(type IN ('metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other')),
                 subcategory TEXT,
                 confidence REAL NOT NULL CHECK(confidence >= 0.0 AND confidence <= 1.0),
                 figurative_text TEXT,
+                figurative_text_in_hebrew TEXT,
                 explanation TEXT,
                 processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (verse_id) REFERENCES verses (id)
@@ -104,16 +103,15 @@ class DatabaseManager:
         """Insert figurative language finding"""
         self.cursor.execute('''
             INSERT INTO figurative_language
-            (verse_id, text_snippet, hebrew_snippet, type, subcategory, confidence, figurative_text, explanation)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            (verse_id, type, subcategory, confidence, figurative_text, figurative_text_in_hebrew, explanation)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_id,
-            figurative_data['text_snippet'],
-            figurative_data['hebrew_snippet'],
             figurative_data['type'],
             figurative_data.get('subcategory'),
             figurative_data['confidence'],
             figurative_data.get('figurative_text'),
+            figurative_data.get('figurative_text_in_hebrew'),
             figurative_data.get('explanation')
         ))
 
@@ -145,7 +143,7 @@ class DatabaseManager:
     def get_top_findings(self, limit: int = 5) -> List[Tuple]:
         """Get top figurative language findings by confidence"""
         self.cursor.execute('''
-            SELECT v.reference, fl.type, fl.confidence, fl.text_snippet
+            SELECT v.reference, fl.type, fl.confidence, fl.figurative_text
             FROM figurative_language fl
             JOIN verses v ON fl.verse_id = v.id
             ORDER BY fl.confidence DESC

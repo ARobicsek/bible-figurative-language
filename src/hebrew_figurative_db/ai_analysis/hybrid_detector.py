@@ -15,11 +15,15 @@ class HybridFigurativeDetector:
     Hybrid detector that prioritizes LLM analysis but falls back to rule-based detection
     """
 
-    def __init__(self, prefer_llm: bool = True, use_actual_llm: bool = False):
+    def __init__(self, prefer_llm: bool = True, use_actual_llm: bool = False, allow_rule_fallback: bool = False):
         self.prefer_llm = prefer_llm
         self.use_actual_llm = use_actual_llm
+        self.allow_rule_fallback = allow_rule_fallback
         self.llm_detector = LLMFigurativeDetector()
-        self.rule_detector = FigurativeLanguageDetector()
+        if allow_rule_fallback:
+            self.rule_detector = FigurativeLanguageDetector()
+        else:
+            self.rule_detector = None
 
     def detect_figurative_language(self, english_text: str, hebrew_text: str = "") -> List[Dict]:
         """
@@ -43,17 +47,21 @@ class HybridFigurativeDetector:
                     results.extend(llm_results)
                     print(f"    [LLM] Found {len(llm_results)} instances")
                 else:
-                    print(f"    [LLM] No instances found, trying rule-based...")
+                    print(f"    [LLM] No instances found")
+                    if self.allow_rule_fallback:
+                        print(f"    [LLM] Trying rule-based fallback...")
+                        rule_results = self._analyze_with_rules(english_text, hebrew_text)
+                        if rule_results:
+                            results.extend(rule_results)
+                            print(f"    [RULE] Found {len(rule_results)} instances")
+
+            except Exception as e:
+                print(f"    [LLM] Error: {e}")
+                if self.allow_rule_fallback:
+                    print(f"    [LLM] Falling back to rules...")
                     rule_results = self._analyze_with_rules(english_text, hebrew_text)
                     if rule_results:
                         results.extend(rule_results)
-                        print(f"    [RULE] Found {len(rule_results)} instances")
-
-            except Exception as e:
-                print(f"    [LLM] Error: {e}, falling back to rules...")
-                rule_results = self._analyze_with_rules(english_text, hebrew_text)
-                if rule_results:
-                    results.extend(rule_results)
 
         else:
             # Use rule-based primarily
@@ -86,6 +94,8 @@ class HybridFigurativeDetector:
 
     def _analyze_with_rules(self, english_text: str, hebrew_text: str) -> List[Dict]:
         """Analyze using rule-based detector"""
+        if self.rule_detector is None:
+            return []
         return self.rule_detector.detect_figurative_language(english_text, hebrew_text)
 
     def _create_analysis_prompt(self, hebrew_text: str, english_text: str) -> str:
