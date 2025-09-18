@@ -104,7 +104,36 @@ The foundation is rock-solid and dramatically exceeds Phase 1 targets. The syste
 - `scripts/process_genesis_1.py` - Genesis 1 validation
 - `scripts/measure_performance.py` - Performance benchmarking
 - `scripts/analyze_database.py` - Database optimization
+- `scripts/query_database.py` - Interactive SQLite query interface
+- `view_results_genesis_1_3.py` - Complete results viewer for 80 verses
 - `performance_test.db` - Optimized database with Genesis 1-3
+
+---
+
+## 🔗 Repository & Version Control
+
+- **GitHub Repository**: https://github.com/ARobicsek/bible-figurative-language
+- **Commit**: `b59b204` - "Phase 1 Complete: Comprehensive Hebrew Figurative Language Pipeline"
+- **Branch**: `main`
+- **Files Committed**: 47 files including complete pipeline, database, and documentation
+
+---
+
+## 📋 Tools Available for Next Session
+
+### Database Query Options
+1. **Interactive Python Interface**: `python query_database.py`
+2. **SQLite Browser**: Point to `performance_test.db`
+3. **Direct SQL**: Via Python sqlite3 module
+
+### View Results
+- **Complete 80 verses**: `python view_results_genesis_1_3.py`
+- **Phase 0 validation**: `python view_pipeline_results.py`
+
+### Processing Scripts
+- **Genesis processing**: `python scripts/process_genesis_1.py`
+- **Performance testing**: `python scripts/measure_performance.py`
+- **Database analysis**: `python scripts/analyze_database.py`
 
 **Phase 1 Duration**: 1 session (significantly ahead of 2-day schedule)
 **Next Phase**: Ready to begin Phase 2 Active Learning Loop
