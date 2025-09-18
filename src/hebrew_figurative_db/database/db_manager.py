@@ -61,6 +61,8 @@ class DatabaseManager:
                 verse_id INTEGER NOT NULL,
                 type TEXT NOT NULL CHECK(type IN ('metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other')),
                 subcategory TEXT,
+                subcategory_level_1 TEXT,
+                subcategory_level_2 TEXT,
                 confidence REAL NOT NULL CHECK(confidence >= 0.0 AND confidence <= 1.0),
                 figurative_text TEXT,
                 figurative_text_in_hebrew TEXT,
@@ -78,6 +80,8 @@ class DatabaseManager:
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_verses_llm_restriction ON verses (llm_restriction_error)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_type ON figurative_language (type)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_subcategory ON figurative_language (subcategory)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_subcategory_level_1 ON figurative_language (subcategory_level_1)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_subcategory_level_2 ON figurative_language (subcategory_level_2)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_confidence ON figurative_language (confidence)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_speaker ON figurative_language (speaker)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_purpose ON figurative_language (purpose)')
@@ -107,12 +111,14 @@ class DatabaseManager:
         """Insert figurative language finding"""
         self.cursor.execute('''
             INSERT INTO figurative_language
-            (verse_id, type, subcategory, confidence, figurative_text, figurative_text_in_hebrew, explanation, speaker, purpose)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            (verse_id, type, subcategory, subcategory_level_1, subcategory_level_2, confidence, figurative_text, figurative_text_in_hebrew, explanation, speaker, purpose)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_id,
             figurative_data['type'],
             figurative_data.get('subcategory'),
+            figurative_data.get('subcategory_level_1'),
+            figurative_data.get('subcategory_level_2'),
             figurative_data['confidence'],
             figurative_data.get('figurative_text'),
             figurative_data.get('figurative_text_in_hebrew'),

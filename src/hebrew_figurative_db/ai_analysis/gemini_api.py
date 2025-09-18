@@ -124,6 +124,38 @@ PROCEDURAL/INSTRUCTIONAL COMPARISONS (NOT figurative):
 - Technical method descriptions: comparing one ritual technique to another
 - Liturgical instructions: procedural steps using comparative language
 
+🛑 SPECIFIC LITERAL EXPRESSIONS - DO NOT MARK AS FIGURATIVE:
+
+LITERAL DESCRIPTIONS (straightforward descriptive language):
+- אֶ֣רֶץ טוֹבָ֑ה ("a good land") = literal description of land quality/fertility
+- חֹ֖שֶׁךְ עָנָ֥ן וַעֲרָפֶֽל ("dark with densest clouds") = literal theophany description
+- בִּמְתֵי מְעָט ("a scant few") = literal numerical statement
+- הַדּוֹר הָרָע הַזֶּה ("this evil generation") = literal character description
+- מַכּ֤וֹת גְּדֹלֹת֙ וְנֶ֣אֱמָנ֔וֹת ("great and faithful plagues") = literal disease descriptions
+
+HISTORICAL STATEMENTS (factual references to past events):
+- עֲבָדִ֛ים הָיִ֥ינוּ ("We were slaves") = literal historical status
+- וְהוֹצֵ֥אתָ מִמִּצְרַ֖יִם ("brought out from Egypt") = literal historical event
+- פָּדִ֖יתָ בְּגׇדְלֶ֑ךָ ("redeemed in Your majesty") = literal divine action description
+
+LITERAL VERBS/ACTIONS (actual actions, not metaphorical):
+- וְהִרְבֶּ֑ךָ ("and multiply you") = literal population increase
+- יוֹלֵךְ יְהֹוָ֜ה אֹתְךָ ("YHWH will drive you") = literal causation of movement
+- תִּגֹּשׂ ("dun") = literal action of demanding payment
+- וְהִפְלָ֤א יְהֹוָה֙ ("YHWH will inflict") = literal divine action
+- עָשׂ֥וּ לָהֶ֖ם מַסֵּכָֽה ("they made a molten image") = literal physical action
+
+STANDARD BIBLICAL IDIOMS (conventional expressions, NOT metaphors):
+- סָ֣רוּ מַהֵ֗ר מִן־הַדֶּ֙רֶךְ֙ ("stray from the path") = standard idiom for disobedience
+- תַּמְרֽוּ אֶת־פִּ֥י יְהֹוָ֖ה ("flout the command") = literal rebellion statement
+- לֹ֤א הֶֽאֱמַנְתֶּם֙ ל֔וֹ ("did not trust") = literal statement of faith/lack thereof
+- וְהַקְלָלָה ("and curse") = literal consequence/result
+
+DESCRIPTIVE QUALITIES (literal attributes, not figurative):
+- נֶ֣אֱמָנ֔וֹת ("faithful/reliable") when describing plagues = literal quality description
+- רָעִ֥ים ("evil/harmful") when describing diseases = literal harm description
+- גְּדֹלֹת֙ ("great") when describing plagues = literal magnitude description
+
 LITERAL USAGE vs FIGURATIVE:
 - Body parts performing literal functions (hands bringing offerings) = NOT metonymy
 - Place names (Waters of Meribah) = NOT metonymy, they're proper nouns
@@ -136,7 +168,7 @@ POSITIVE EXAMPLES of genuine figurative language:
 Example 1 - TRUE METAPHOR (different categories):
 Hebrew: יְהוָה רֹעִי לֹא אֶחְסָר
 English: The LORD is my shepherd; I shall not want
-Analysis: [{{"type": "metaphor", "hebrew_text": "יְהוָה רֹעִי", "english_text": "The LORD is my shepherd", "explanation": "True metaphor equating God with shepherd - genuinely different domains", "subcategory": "agricultural", "confidence": 0.95, "speaker": "David", "purpose": "express trust and reliance on God's guidance"}}]
+Analysis: [{{"type": "metaphor", "hebrew_text": "יְהוָה רֹעִי", "english_text": "The LORD is my shepherd", "explanation": "True metaphor equating God with shepherd - genuinely different domains", "subcategory_level_1": "The Natural World", "subcategory_level_2": "agricultural", "confidence": 0.95, "speaker": "David", "purpose": "express trust and reliance on God's guidance"}}]
 
 Example 1b - NOT A METAPHOR (religious term):
 Hebrew: אֱלֹהֵי הָאֱלֹהִים
@@ -146,12 +178,12 @@ Analysis: [] (DO NOT mark as metaphor - this is a theological title emphasizing 
 Example 2 - LEGITIMATE PERSONIFICATION (beyond simple speech):
 Hebrew: הָאָרֶץ קָאָה אֶת־יֹשְׁבֶיהָ
 English: the land spewed out its inhabitants
-Analysis: [{{"type": "personification", "hebrew_text": "הָאָרֶץ קָאָה", "english_text": "the land spewed out", "explanation": "The land is given human action of vomiting/spewing, expressing divine judgment through the land itself", "subcategory": "natural", "confidence": 0.9, "speaker": "Moses", "purpose": "emphasize the severity of moral corruption"}}]
+Analysis: [{{"type": "personification", "hebrew_text": "הָאָרֶץ קָאָה", "english_text": "the land spewed out", "explanation": "The land is given human action of vomiting/spewing, expressing divine judgment through the land itself", "subcategory_level_1": "The Natural World", "subcategory_level_2": "geological", "confidence": 0.9, "speaker": "Moses", "purpose": "emphasize the severity of moral corruption"}}]
 
 Example 3 - TRUE SIMILE (unlike categories):
 Hebrew: כְּכוֹכְבֵי הַשָּׁמַיִם לָרֹב
 English: like the stars of heaven for multitude
-Analysis: [{{"type": "simile", "hebrew_text": "כְּכוֹכְבֵי הַשָּׁמַיִם", "english_text": "like the stars of heaven", "explanation": "True figurative simile comparing people to stars - genuinely unlike things", "subcategory": "celestial", "confidence": 0.95, "speaker": "Moses", "purpose": "emphasize the vast number of descendants promised"}}]
+Analysis: [{{"type": "simile", "hebrew_text": "כְּכוֹכְבֵי הַשָּׁמַיִם", "english_text": "like the stars of heaven", "explanation": "True figurative simile comparing people to stars - genuinely unlike things", "subcategory_level_1": "The Natural World", "subcategory_level_2": "celestial", "confidence": 0.95, "speaker": "Moses", "purpose": "emphasize the vast number of descendants promised"}}]
 
 Example 4 - NOT A SIMILE (same category/procedure):
 Hebrew: כַּאֲשֶׁר מֵת אַהֲרֹן אָחִיךָ
@@ -208,9 +240,20 @@ Remember that ancient readers understood these texts in their historical context
 3. Could this be understood literally in its ancient ritual/legal/historical context?
 4. Would an ancient Near Eastern reader have understood this as a real action/place/object?
 5. Is this a procedural/instructional comparison (ritual technique vs. ritual technique)?
-6. Am I confident this is genuinely figurative (confidence > 0.7)?
+6. Is this a literal description (good land, evil generation, scant few, etc.)?
+7. Is this a historical statement (we were slaves, brought out of Egypt, etc.)?
+8. Is this a literal verb/action (multiply, drive, inflict, make, etc.)?
+9. Is this a standard biblical idiom (stray from path, flout command, etc.)?
+10. Is this a descriptive quality used literally (faithful plagues, great diseases, etc.)?
+11. Am I confident this is genuinely figurative and not just emphatic language (confidence > 0.7)?
 
-If YES to 1-5, or NO to 6 → DO NOT mark as figurative language.
+If YES to 1-10, or NO to 11 → DO NOT mark as figurative language.
+
+🔍 SPECIAL EMPHASIS: Many apparent "metaphors" are actually:
+- Literal descriptions with strong adjectives (not figurative)
+- Historical statements (factual, not figurative)
+- Standard biblical idioms (conventional, not creative metaphors)
+- Emphatic language (strong but literal, not figurative)
 
 IMPORTANT PROCESSING NOTES:
 - Work primarily from the HEBREW text, using English for context
@@ -224,23 +267,42 @@ IMPORTANT PROCESSING NOTES:
 - Determine the PURPOSE: Why is this figurative language used?
 - Minimum confidence threshold: 0.7 (if lower, do not include)
 
-SUBCATEGORY GUIDANCE - Choose meaningful semantic domains based on the TARGET of the comparison:
-• For metaphors/similes, identify the TARGET DOMAIN (what is being compared TO):
-  - ARCHITECTURAL: fortress, refuge, tower, foundation, house
-  - MILITARY: shield, sword, warrior, battle, victory
-  - GEOLOGICAL: rock, mountain, spring, foundation
-  - ELEMENTAL: fire, wind, water, light
-  - AGRICULTURAL: vineyard, shepherd, flock, harvest
-  - FAMILIAL: father, mother, brother, inheritance
-  - NATURAL: lion, eagle, tree, river
-  - CONCEPTUAL: futility, abomination, wisdom
-  - EMOTIONAL: comfort, terror, joy, anger
-  - TEMPORAL: ancient, eternal, brief
-  - SPATIAL: height, depth, distance
+SUBCATEGORY GUIDANCE - Two-Level System:
+Choose TWO levels of subcategories based on the TARGET domain of the comparison:
 
-Choose the most specific and analytically useful domain. Avoid generic terms like "divine" or "general."
+LEVEL 1 (Broad Category):
+- "The Natural World" - for imagery from nature, plants, animals, natural phenomena
+- "Human Institutions and Relationships" - for social structures, roles, human activities
+- "Abstract and Internal States" - for psychological, spiritual, temporal, economic concepts
 
-Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, subcategory, confidence (0.7-1.0), speaker, purpose.
+LEVEL 2 (Specific Domain):
+THE NATURAL WORLD:
+  - animal: characteristics/behavior of creatures (lion, eagle, sheep, etc.)
+  - agricultural: farming, crops, livestock (vineyard, shepherd, harvest, etc.)
+  - elemental: forces of nature (fire, wind, water, light, storm, etc.)
+  - geological: earth features (rock, mountain, spring, foundation, etc.)
+  - celestial: sky and heavenly bodies (stars, sun, moon, heaven, etc.)
+
+HUMAN INSTITUTIONS AND RELATIONSHIPS:
+  - familial: family relationships (father, mother, brother, inheritance, etc.)
+  - military: warfare, weapons (shield, sword, warrior, battle, etc.)
+  - architectural: buildings, structures (fortress, refuge, tower, house, etc.)
+  - social: societal roles, governance (king, judge, nation, people, etc.)
+  - political: power, authority, leadership (dominance, rule, etc.)
+  - sensory: perception, understanding (sight, hearing, touch, etc.)
+
+ABSTRACT AND INTERNAL STATES:
+  - emotional: feelings, mental states (comfort, terror, joy, anger, etc.)
+  - medical: health, disease, affliction (sickness, healing, etc.)
+  - covenantal: spiritual relationship with God (covenant, holiness, etc.)
+  - spiritual: religious/divine concepts beyond covenant (worship, etc.)
+  - temporal: time, duration (ancient, eternal, brief, seasons, etc.)
+  - economic: trade, prosperity (wealth, poverty, lending, etc.)
+  - industrial: craftsmanship, labor (refining, metalwork, etc.)
+
+Choose the most specific and analytically useful domains. Avoid generic terms.
+
+Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, subcategory_level_1, subcategory_level_2, confidence (0.7-1.0), speaker, purpose.
 
 If no figurative language found, return: []
 
