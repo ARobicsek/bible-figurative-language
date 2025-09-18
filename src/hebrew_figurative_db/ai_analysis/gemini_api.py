@@ -133,24 +133,62 @@ LITERAL USAGE vs FIGURATIVE:
 
 POSITIVE EXAMPLES of genuine figurative language:
 
-Example 1 - METAPHOR:
+Example 1 - TRUE METAPHOR (different categories):
 Hebrew: יְהוָה רֹעִי לֹא אֶחְסָר
 English: The LORD is my shepherd; I shall not want
-Analysis: [{{"type": "metaphor", "hebrew_text": "יְהוָה רֹעִי", "english_text": "The LORD is my shepherd", "explanation": "God is metaphorically compared to a shepherd who guides and protects his flock", "subcategory": "pastoral", "confidence": 0.95, "speaker": "David", "purpose": "express trust and reliance on God's guidance"}}]
+Analysis: [{{"type": "metaphor", "hebrew_text": "יְהוָה רֹעִי", "english_text": "The LORD is my shepherd", "explanation": "True metaphor equating God with shepherd - genuinely different domains", "subcategory": "agricultural", "confidence": 0.95, "speaker": "David", "purpose": "express trust and reliance on God's guidance"}}]
+
+Example 1b - NOT A METAPHOR (religious term):
+Hebrew: אֱלֹהֵי הָאֱלֹהִים
+English: God of gods
+Analysis: [] (DO NOT mark as metaphor - this is a theological title emphasizing God's supremacy, not a figurative comparison)
 
 Example 2 - LEGITIMATE PERSONIFICATION (beyond simple speech):
 Hebrew: הָאָרֶץ קָאָה אֶת־יֹשְׁבֶיהָ
 English: the land spewed out its inhabitants
 Analysis: [{{"type": "personification", "hebrew_text": "הָאָרֶץ קָאָה", "english_text": "the land spewed out", "explanation": "The land is given human action of vomiting/spewing, expressing divine judgment through the land itself", "subcategory": "natural", "confidence": 0.9, "speaker": "Moses", "purpose": "emphasize the severity of moral corruption"}}]
 
-Example 3 - SIMILE:
-Hebrew: כַּאֲשֶׁר שָׂשׂ עַל־אֲבֹתֶיךָ
-English: as he delighted in your ancestors
-Analysis: [{{"type": "simile", "hebrew_text": "כַּאֲשֶׁר", "english_text": "as he delighted", "explanation": "Direct comparison using Hebrew כַּאֲשֶׁר (ka-asher) meaning 'as/like'", "subcategory": "comparative", "confidence": 0.9, "speaker": "Moses", "purpose": "emphasize continuity of God's favor"}}]
+Example 3 - TRUE SIMILE (unlike categories):
+Hebrew: כְּכוֹכְבֵי הַשָּׁמַיִם לָרֹב
+English: like the stars of heaven for multitude
+Analysis: [{{"type": "simile", "hebrew_text": "כְּכוֹכְבֵי הַשָּׁמַיִם", "english_text": "like the stars of heaven", "explanation": "True figurative simile comparing people to stars - genuinely unlike things", "subcategory": "celestial", "confidence": 0.95, "speaker": "Moses", "purpose": "emphasize the vast number of descendants promised"}}]
+
+Example 4 - NOT A SIMILE (same category/procedure):
+Hebrew: כַּאֲשֶׁר מֵת אַהֲרֹן אָחִיךָ
+English: as your brother Aaron died
+Analysis: [] (DO NOT mark as simile - this describes the same method/manner of death, not a figurative comparison)
 
 TYPES to identify (only when genuinely figurative):
-- metaphor: Direct comparison without "like/as" (X is Y) - not technical terminology
-- simile: Comparison using "like/as" or Hebrew כְּ/כַּאֲשֶׁר
+- metaphor: Direct comparison without "like/as" (X is Y) - BUT ONLY when X and Y are genuinely different categories used figuratively.
+
+⚠️ DO NOT classify as metaphor if it's:
+• RELIGIOUS/DIVINE TITLES: "God of gods" (אֱלֹהֵי הָאֱלֹהִים) = theological title (NOT metaphor)
+• TECHNICAL RELIGIOUS TERMS: "holy people" (עַם קָדוֹשׁ) = covenantal status (NOT metaphor)
+• RITUAL OBJECTS: "molten calf" (עֵגֶל מַסֵּכָה) = actual idol description (NOT metaphor)
+• LITERAL DESCRIPTIONS: "from the fire, cloud, thick darkness" = actual theophany description (NOT metaphor)
+• EMOTIONAL/PHYSICAL STATES: "with joy and gladness of heart" = literal emotional state (NOT metaphor)
+• GENERATIONAL TERMS: "this evil generation" = descriptive characterization (NOT metaphor)
+• RELIGIOUS ACTIONS: "sinned against YHWH" = literal covenant violation (NOT metaphor)
+• DIVINE ACTIONS: "turned curse into blessing" = actual divine intervention (NOT metaphor)
+
+✅ ONLY mark as metaphor when genuinely different categories are equated figuratively:
+• "YHWH is my shepherd" = God ↔ pastoral role (TRUE metaphor)
+• "you are a stiff-necked people" = people ↔ stubborn animals (TRUE metaphor)
+• "I will make you a light to the nations" = people ↔ illumination (TRUE metaphor)
+- simile: Comparison using "like/as" or Hebrew כְּ/כַּאֲשֶׁר - BUT ONLY when comparing two UNLIKE things figuratively.
+
+⚠️ DO NOT classify as simile if כְּ/כַּאֲשֶׁר is used for:
+• PROCEDURAL/INSTRUCTIONAL: "do X as you do Y" = method instruction (NOT simile)
+• HISTORICAL PRECEDENT: "X will happen as it did with Y" = historical pattern (NOT simile)
+• MANNER DESCRIPTION: "die as brother Aaron died" = describing same method (NOT simile)
+• RITUAL INSTRUCTION: "eat it as gazelle is eaten" = cultic procedure (NOT simile)
+• LEGAL PRECEDENT: "treat him as you treated the other" = legal procedure (NOT simile)
+• TEMPORAL SEQUENCE: "as in the days of..." = time reference (NOT simile)
+
+✅ ONLY mark as simile when כְּ/כַּאֲשֶׁר compares UNLIKE categories:
+• "like the stars of heaven" = people ↔ celestial objects (TRUE simile)
+• "like water" = blood ↔ common liquid (TRUE simile)
+• "as a lion" = person ↔ animal characteristics (TRUE simile)
 - personification: Human characteristics given to non-human entities - NOT simple divine speech
 - idiom: Expressions with meaning different from literal interpretation
 - hyperbole: Deliberate exaggeration for emphasis - be conservative, many distances/numbers are literal
@@ -185,6 +223,22 @@ IMPORTANT PROCESSING NOTES:
 - Identify the SPEAKER: "God", "Moses", "Narrator", "Abraham", etc.
 - Determine the PURPOSE: Why is this figurative language used?
 - Minimum confidence threshold: 0.7 (if lower, do not include)
+
+SUBCATEGORY GUIDANCE - Choose meaningful semantic domains based on the TARGET of the comparison:
+• For metaphors/similes, identify the TARGET DOMAIN (what is being compared TO):
+  - ARCHITECTURAL: fortress, refuge, tower, foundation, house
+  - MILITARY: shield, sword, warrior, battle, victory
+  - GEOLOGICAL: rock, mountain, spring, foundation
+  - ELEMENTAL: fire, wind, water, light
+  - AGRICULTURAL: vineyard, shepherd, flock, harvest
+  - FAMILIAL: father, mother, brother, inheritance
+  - NATURAL: lion, eagle, tree, river
+  - CONCEPTUAL: futility, abomination, wisdom
+  - EMOTIONAL: comfort, terror, joy, anger
+  - TEMPORAL: ancient, eternal, brief
+  - SPATIAL: height, depth, distance
+
+Choose the most specific and analytically useful domain. Avoid generic terms like "divine" or "general."
 
 Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, subcategory, confidence (0.7-1.0), speaker, purpose.
 
