@@ -6,17 +6,28 @@ Main pipeline for Hebrew figurative language processing
 import time
 from typing import Dict, List, Tuple
 from .text_extraction import SefariaClient
+from .text_extraction.hebrew_utils import HebrewTextProcessor
 from .ai_analysis import FigurativeLanguageDetector
+from .ai_analysis.hybrid_detector import HybridFigurativeDetector
 from .database import DatabaseManager
 
 
 class FigurativeLanguagePipeline:
     """Complete pipeline for processing Hebrew figurative language"""
 
-    def __init__(self, db_path: str = 'figurative_language_pipeline.db'):
+    def __init__(self, db_path: str = 'figurative_language_pipeline.db',
+                 use_llm_detection: bool = True, use_actual_llm: bool = False):
         self.sefaria_client = SefariaClient()
-        self.detector = FigurativeLanguageDetector()
+        self.hebrew_processor = HebrewTextProcessor()
         self.db_path = db_path
+        self.use_llm_detection = use_llm_detection
+
+        if use_llm_detection:
+            self.detector = HybridFigurativeDetector(prefer_llm=True, use_actual_llm=use_actual_llm)
+            print(f"    [PIPELINE] Using LLM-based detection (Hebrew+English analysis)")
+        else:
+            self.detector = FigurativeLanguageDetector()
+            print(f"    [PIPELINE] Using rule-based detection (English only)")
 
     def process_verses(self, verses_range: str, drop_existing: bool = False) -> Dict:
         """
@@ -51,36 +62,62 @@ class FigurativeLanguagePipeline:
 
             for verse in verses:
                 try:
+                    # Process Hebrew text
+                    hebrew_stripped = self.hebrew_processor.strip_diacritics(verse['hebrew'])
+                    speaker = self.hebrew_processor.identify_speaker_patterns(verse['english'], verse['hebrew'])
+
+                    # Enhance verse data
+                    enhanced_verse = {
+                        **verse,
+                        'hebrew_stripped': hebrew_stripped,
+                        'speaker': speaker
+                    }
+
                     # Insert verse into database
-                    verse_id = db.insert_verse(verse)
+                    verse_id = db.insert_verse(enhanced_verse)
                     processed_verses += 1
 
-                    # AI analysis for figurative language
-                    detected_type, confidence, pattern = self.detector.detect_figurative_language(
-                        verse['english'], verse['hebrew']
-                    )
-
-                    if detected_type:
-                        # Extract relevant text snippet
-                        text_snippet = self.detector.extract_text_snippet(verse['english'], detected_type)
-
-                        # Prepare figurative language data
-                        figurative_data = {
-                            'text_snippet': text_snippet,
-                            'hebrew_snippet': verse['hebrew'][:50],  # First 50 chars
-                            'type': detected_type,
-                            'confidence': confidence,
-                            'pattern_matched': pattern,
-                            'ai_analysis': f"Detected {detected_type} with {confidence:.2f} confidence using pattern: {pattern}"
-                        }
-
-                        # Insert figurative language record
-                        db.insert_figurative_language(verse_id, figurative_data)
-                        figurative_found += 1
-
-                        print(f"  {verse['reference']}: {detected_type} ({confidence:.2f}) - '{text_snippet[:30]}...'")
+                    # AI analysis for figurative language - now returns a list
+                    if self.use_llm_detection:
+                        # LLM detector expects (english, hebrew) order
+                        detection_results = self.detector.detect_figurative_language(
+                            verse['english'], verse['hebrew']
+                        )
                     else:
-                        print(f"  {verse['reference']}: No figurative language detected")
+                        # Rule-based detector expects (english, hebrew) order but returns different format
+                        detection_results = self.detector.detect_figurative_language(
+                            verse['english'], verse['hebrew']
+                        )
+
+                    if detection_results:
+                        for i, detection_result in enumerate(detection_results):
+                            # Extract relevant text snippet
+                            text_snippet = self.detector.extract_text_snippet(verse['english'], detection_result['type'])
+
+                            # Prepare figurative language data
+                            figurative_data = {
+                                'text_snippet': text_snippet,
+                                'hebrew_snippet': verse['hebrew'][:50],  # First 50 chars
+                                'type': detection_result['type'],
+                                'subcategory': detection_result.get('subcategory'),
+                                'confidence': detection_result['confidence'],
+                                'figurative_text': detection_result.get('figurative_text'),
+                                'explanation': detection_result.get('explanation')
+                            }
+
+                            # Insert figurative language record
+                            db.insert_figurative_language(verse_id, figurative_data)
+                            figurative_found += 1
+
+                            subcategory_text = f" [{detection_result.get('subcategory', 'uncat')}]" if detection_result.get('subcategory') else ""
+                            speaker_text = f" (Speaker: {speaker})" if speaker else ""
+                            instance_text = f" #{i+1}" if len(detection_results) > 1 else ""
+                            print(f"  {verse['reference']}{instance_text}: {detection_result['type']}{subcategory_text} ({detection_result['confidence']:.2f}){speaker_text}")
+                            print(f"    Text: '{detection_result.get('figurative_text', 'N/A')}'")
+                            print(f"    Why: {detection_result.get('explanation', 'N/A')}")
+                    else:
+                        speaker_text = f" (Speaker: {speaker})" if speaker else ""
+                        print(f"  {verse['reference']}: No figurative language detected{speaker_text}")
 
                 except Exception as e:
                     print(f"  ERROR processing {verse.get('reference', 'unknown')}: {e}")
