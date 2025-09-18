@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:developers.sefaria.org)",
+      "WebSearch",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:ar5iv.labs.arxiv.org)",
+      "WebFetch(domain:github.com)",
+      "Bash(cat:*)",
+      "Bash(pip install:*)",
+      "Bash(python test:*)",
+      "Bash(chcp:*)",
+      "Bash(python:*)",
+      "Bash(figurative_language_envScriptsactivate)",
+      "Bash(source:*)",
+      "Bash(mkdir:*)",
+      "Bash(sqlite3:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
