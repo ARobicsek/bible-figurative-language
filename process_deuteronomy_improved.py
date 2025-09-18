@@ -103,10 +103,12 @@ def process_single_verse_direct(pipeline, verse_data: Dict, drop_existing: bool 
                     if fig_type not in valid_types:
                         fig_type = 'other'
 
-                    # Prepare figurative language data
+                    # Prepare figurative language data with two-level subcategories
                     figurative_data = {
                         'type': fig_type,
-                        'subcategory': detection_result.get('subcategory'),
+                        'subcategory': detection_result.get('subcategory'),  # Keep for backward compatibility
+                        'subcategory_level_1': detection_result.get('subcategory_level_1'),
+                        'subcategory_level_2': detection_result.get('subcategory_level_2'),
                         'confidence': detection_result['confidence'],
                         'figurative_text': detection_result.get('figurative_text') or detection_result.get('english_text'),
                         'figurative_text_in_hebrew': detection_result.get('hebrew_source') or detection_result.get('hebrew_text'),
@@ -119,7 +121,9 @@ def process_single_verse_direct(pipeline, verse_data: Dict, drop_existing: bool 
                     db.insert_figurative_language(verse_id, figurative_data)
                     figurative_found += 1
 
-                    print(f"    Found: {fig_type} [{detection_result.get('subcategory', 'uncat')}] ({detection_result['confidence']:.2f}) - {detection_result.get('speaker', 'Unknown')}")
+                    level_1 = detection_result.get('subcategory_level_1', 'N/A')
+                    level_2 = detection_result.get('subcategory_level_2', 'N/A')
+                    print(f"    Found: {fig_type} [{level_1} | {level_2}] ({detection_result['confidence']:.2f}) - {detection_result.get('speaker', 'Unknown')}")
             else:
                 print(f"    No figurative language detected")
 
@@ -143,7 +147,8 @@ def process_deuteronomy_improved():
     print(f"ENHANCEMENTS:")
     print(f"   - Refined simile detection (eliminates procedural false positives)")
     print(f"   - Enhanced metaphor detection (excludes religious terms)")
-    print(f"   - Semantic subcategories (architectural, geological, etc.)")
+    print(f"   - Two-level subcategory system (Level 1 | Level 2)")
+    print(f"   - False positive reduction with specific literal exclusions")
     print(f"Target: 34 chapters, ~959 verses")
     print(f"Output Database: {output_db}")
     print(f"Start Time: {datetime.now()}")
@@ -243,7 +248,8 @@ def process_deuteronomy_improved():
         'enhancements': [
             'refined_simile_detection',
             'enhanced_metaphor_detection',
-            'semantic_subcategories'
+            'two_level_subcategory_system',
+            'false_positive_reduction'
         ],
         'total_verses_attempted': len(verse_refs),
         'total_processed': total_processed,
@@ -264,8 +270,9 @@ def process_deuteronomy_improved():
     print(f"{'='*60}")
     print(f"IMPROVED PIPELINE RESULTS:")
     print(f"   - Refined simile/metaphor detection")
-    print(f"   - Semantic subcategories implemented")
+    print(f"   - Two-level subcategory system implemented")
     print(f"   - False positive reduction achieved")
+    print(f"   - 100% LLM-based detection (no rule fallbacks)")
     print(f"")
     print(f"Verses attempted: {results['total_verses_attempted']}")
     print(f"Verses processed: {results['total_processed']}")
