@@ -22,8 +22,8 @@ class GeminiAPIClient:
         self.api_key = api_key
         genai.configure(api_key=api_key)
 
-        # Configure the model - using Gemini 2.5 Pro
-        self.model = genai.GenerativeModel('gemini-2.5-flash')
+        # Configure the model - using Gemini 1.5 Flash (2.5 has stricter safety filters)
+        self.model = genai.GenerativeModel('gemini-1.5-flash')
 
         # Generation config for consistent JSON output
         self.generation_config = {
@@ -122,8 +122,9 @@ IMPORTANT:
 - Find ALL instances - don't stop at the first one
 - Be scholarly and precise in explanations
 - Pay special attention to God performing human actions (personification)
+- Identify the SPEAKER: "God", "Moses", "Narrator", "Abraham", etc.
 
-Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, subcategory, confidence (0.0-1.0).
+Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, subcategory, confidence (0.0-1.0), speaker.
 
 If no figurative language found, return: []
 

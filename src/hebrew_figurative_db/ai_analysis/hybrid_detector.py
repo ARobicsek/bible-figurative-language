@@ -232,7 +232,8 @@ Analysis:"""
                         'figurative_text': item.get('english_text', ''),
                         'explanation': item.get('explanation', ''),
                         'subcategory': item.get('subcategory', ''),
-                        'hebrew_source': item.get('hebrew_text', '')
+                        'hebrew_source': item.get('hebrew_text', ''),
+                        'speaker': item.get('speaker', '')
                     }
                     results.append(result)
 
