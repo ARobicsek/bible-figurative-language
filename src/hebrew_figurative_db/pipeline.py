@@ -23,8 +23,8 @@ class FigurativeLanguagePipeline:
         self.use_llm_detection = use_llm_detection
 
         if use_llm_detection:
-            self.detector = HybridFigurativeDetector(prefer_llm=True, use_actual_llm=use_actual_llm)
-            print(f"    [PIPELINE] Using LLM-based detection (Hebrew+English analysis)")
+            self.detector = HybridFigurativeDetector(prefer_llm=True, use_actual_llm=use_actual_llm, allow_rule_fallback=False)
+            print(f"    [PIPELINE] Using LLM-only detection (Hebrew+English analysis, no rule-based fallback)")
         else:
             self.detector = FigurativeLanguageDetector()
             print(f"    [PIPELINE] Using rule-based detection (English only)")
@@ -91,17 +91,19 @@ class FigurativeLanguagePipeline:
 
                     if detection_results:
                         for i, detection_result in enumerate(detection_results):
-                            # Extract relevant text snippet
-                            text_snippet = self.detector.extract_text_snippet(verse['english'], detection_result['type'])
+                            # Clean and validate type
+                            fig_type = detection_result['type'].lower().strip()
+                            valid_types = ['metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy']
+                            if fig_type not in valid_types:
+                                fig_type = 'other'
 
                             # Prepare figurative language data
                             figurative_data = {
-                                'text_snippet': text_snippet,
-                                'hebrew_snippet': verse['hebrew'][:50],  # First 50 chars
-                                'type': detection_result['type'],
+                                'type': fig_type,
                                 'subcategory': detection_result.get('subcategory'),
                                 'confidence': detection_result['confidence'],
-                                'figurative_text': detection_result.get('figurative_text'),
+                                'figurative_text': detection_result.get('figurative_text') or detection_result.get('english_text'),  # English figurative text from LLM
+                                'figurative_text_in_hebrew': detection_result.get('hebrew_source') or detection_result.get('hebrew_text'),  # Hebrew figurative text from LLM
                                 'explanation': detection_result.get('explanation')
                             }
 

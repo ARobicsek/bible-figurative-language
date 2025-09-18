@@ -22,8 +22,8 @@ class GeminiAPIClient:
         self.api_key = api_key
         genai.configure(api_key=api_key)
 
-        # Configure the model
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        # Configure the model - using Gemini 2.5 Pro
+        self.model = genai.GenerativeModel('gemini-2.5-flash')
 
         # Generation config for consistent JSON output
         self.generation_config = {
@@ -32,6 +32,11 @@ class GeminiAPIClient:
             'top_k': 40,
             'max_output_tokens': 2048,
         }
+
+        # Usage tracking
+        self.request_count = 0
+        self.total_input_tokens = 0
+        self.total_output_tokens = 0
 
     def analyze_figurative_language(self, hebrew_text: str, english_text: str) -> str:
         """
@@ -52,6 +57,12 @@ class GeminiAPIClient:
                 prompt,
                 generation_config=self.generation_config
             )
+
+            # Track usage
+            self.request_count += 1
+            if hasattr(response, 'usage_metadata'):
+                self.total_input_tokens += getattr(response.usage_metadata, 'prompt_token_count', 0)
+                self.total_output_tokens += getattr(response.usage_metadata, 'candidates_token_count', 0)
 
             # Extract text from response
             if response.text:
@@ -119,6 +130,15 @@ If no figurative language found, return: []
 Analysis:"""
 
         return prompt
+
+    def get_usage_info(self) -> Dict:
+        """Get current usage statistics"""
+        return {
+            'request_count': self.request_count,
+            'total_input_tokens': self.total_input_tokens,
+            'total_output_tokens': self.total_output_tokens,
+            'total_tokens': self.total_input_tokens + self.total_output_tokens
+        }
 
     def test_api_connection(self) -> bool:
         """Test if API connection is working"""

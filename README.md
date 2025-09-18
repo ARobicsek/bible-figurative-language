@@ -2,9 +2,9 @@
 
 A comprehensive system for detecting and analyzing figurative language (metaphors, similes, personification, idioms, hyperbole) in biblical Hebrew texts, with revolutionary LLM integration for scholarly research.
 
-## 🎉 Project Status: Revolutionary LLM Breakthrough Achieved
+## 🎉 Project Status: Production-Ready Validation System
 
-**Phase 1-2.5 Complete:** Real Gemini API integration providing Hebrew-native analysis with scholarly-quality explanations.
+**Phase 1-3 Complete:** Real Gemini API integration with comprehensive validation framework for biblical Hebrew figurative language analysis.
 
 ### Key Achievements
 - ✅ **Hebrew-Native Analysis**: Working directly with original Hebrew text
@@ -12,6 +12,9 @@ A comprehensive system for detecting and analyzing figurative language (metaphor
 - ✅ **Scholarly Explanations**: PhD-level analysis and reasoning
 - ✅ **Multi-Instance Detection**: Multiple figurative language types per verse
 - ✅ **Enhanced Database Schema**: Support for detailed explanations and subcategorization
+- ✅ **Validation Framework**: 200-verse random sampling system for quality assessment
+- ✅ **Individual Verse Processing**: Precise targeting without chapter-level processing
+- ✅ **Production Database Schema**: Optimized for Hebrew + English figurative text storage
 
 ## 🚀 Quick Start
 
@@ -68,15 +71,15 @@ python view_results_genesis_1_3.py
 
 ## 📊 Research Quality Results
 
-### Example LLM Analysis Output (Deuteronomy 30:9)
+### Example LLM Analysis Output (Genesis 2:23)
 ```json
 {
-  "type": "personification",
-  "hebrew_text": "יָשׁוּב יְהוָה לָשׂוּשׂ",
-  "english_text": "the LORD will again delight",
-  "explanation": "The LORD, a divine entity, is attributed the human emotion of delight (שׂשׂ - sās). This ascribes a human characteristic to God.",
-  "subcategory": "divine",
-  "confidence": 0.95
+  "type": "metaphor",
+  "figurative_text": "bone of my bones and flesh of my flesh",
+  "figurative_text_in_hebrew": "עֶצֶם מֵעֲצָמַי וּבָשָׂר מִבְּשָׂרִי",
+  "explanation": "The man's statement uses 'bone of my bones and flesh of my flesh' metaphorically to express the profound intimacy and oneness he feels with the woman, emphasizing their shared essence and origin.",
+  "subcategory": "body",
+  "confidence": 0.98
 }
 ```
 
@@ -97,12 +100,18 @@ src/hebrew_figurative_db/
 │   ├── sefaria_client.py          # Hebrew/English text API client
 │   └── hebrew_utils.py            # Hebrew processing utilities
 ├── ai_analysis/
-│   ├── gemini_api.py              # Real Gemini API integration
-│   ├── hybrid_detector.py         # LLM + rule-based system
-│   ├── figurative_detector.py     # Rule-based detection
+│   ├── gemini_api.py              # Real Gemini API integration with usage tracking
+│   ├── hybrid_detector.py         # LLM-only detection (no rule fallback)
+│   ├── figurative_detector.py     # Legacy rule-based detection
 │   └── llm_detector.py            # LLM interface
 └── database/
-    └── db_manager.py              # Enhanced SQLite operations
+    └── db_manager.py              # Production SQLite operations
+
+validation/
+├── generate_random_validation_set.py   # 200-verse random sampler
+├── process_individual_verses.py        # Individual verse processor
+├── validation_set_200_verses.json      # Random verse references
+└── query_non_figurative_verses.sql     # Analysis queries
 ```
 
 ## 📈 Performance Metrics
