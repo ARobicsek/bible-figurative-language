@@ -1,0 +1,13 @@
+{
+  "total_verses_attempted": 959,
+  "total_processed": 953,
+  "total_figurative_found": 676,
+  "total_errors": 6,
+  "processing_time": 2481.9473361968994,
+  "api_time": 629.9223594665527,
+  "verses_per_second": 0.38397269196706113,
+  "detection_rate": 0.7093389296956978,
+  "error_rate": 0.6256517205422315,
+  "output_database": "deuteronomy_complete_20250918_143211.db",
+  "completion_time": "2025-09-18T15:13:33.404924"
+}
