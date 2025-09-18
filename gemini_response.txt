@@ -1,0 +1,20 @@
+```json
+[
+  {
+    "type": "personification",
+    "hebrew_text": "יָשׁוּב יְהוָה לָשׂוּשׂ",
+    "english_text": "the LORD will again delight",
+    "explanation": "The LORD, a divine entity, is attributed the human emotion of delight (שׂשׂ - sās).  This ascribes a human characteristic to God.",
+    "subcategory": "divine",
+    "confidence": 0.95
+  },
+  {
+    "type": "simile",
+    "hebrew_text": "כַּאֲשֶׁר שָׂשׂ",
+    "english_text": "as he delighted",
+    "explanation": "The phrase uses כַּאֲשֶׁר (ka’asher) to directly compare God's delight in the people to His delight in their ancestors.  This establishes a clear simile.",
+    "subcategory": "comparative",
+    "confidence": 0.98
+  }
+]
+```

@@ -1,0 +1,29 @@
+[
+  {
+    "provider": "claude",
+    "model": "claude-3.5-sonnet",
+    "timestamp": "2025-09-17T22:28:01.951124",
+    "tokens_used": 150,
+    "cost_estimate": 0.00045,
+    "success": true,
+    "response_time": 0.5
+  },
+  {
+    "provider": "claude",
+    "model": "claude-3.5-sonnet",
+    "timestamp": "2025-09-17T22:28:01.952287",
+    "tokens_used": 200,
+    "cost_estimate": 0.0006,
+    "success": true,
+    "response_time": 0.7
+  },
+  {
+    "provider": "gemini",
+    "model": "gemini-pro",
+    "timestamp": "2025-09-17T22:28:01.953301",
+    "tokens_used": 100,
+    "cost_estimate": 5e-05,
+    "success": true,
+    "response_time": 0.3
+  }
+]

@@ -46,7 +46,9 @@ class DatabaseManager:
                 chapter INTEGER NOT NULL,
                 verse INTEGER NOT NULL,
                 hebrew_text TEXT NOT NULL,
+                hebrew_text_stripped TEXT,
                 english_text TEXT NOT NULL,
+                speaker TEXT,
                 word_count INTEGER,
                 processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
@@ -59,29 +61,40 @@ class DatabaseManager:
                 verse_id INTEGER NOT NULL,
                 text_snippet TEXT NOT NULL,
                 hebrew_snippet TEXT,
-                type TEXT NOT NULL CHECK(type IN ('metaphor', 'simile', 'personification', 'other')),
+                type TEXT NOT NULL CHECK(type IN ('metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'other')),
+                subcategory TEXT,
                 confidence REAL NOT NULL CHECK(confidence >= 0.0 AND confidence <= 1.0),
-                pattern_matched TEXT,
-                ai_analysis TEXT,
+                figurative_text TEXT,
+                explanation TEXT,
                 processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (verse_id) REFERENCES verses (id)
             )
         ''')
+
+        # Create indexes for performance
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_verses_reference ON verses (reference)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_verses_book_chapter ON verses (book, chapter)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_verses_speaker ON verses (speaker)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_type ON figurative_language (type)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_subcategory ON figurative_language (subcategory)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_confidence ON figurative_language (confidence)')
 
         self.conn.commit()
 
     def insert_verse(self, verse_data: Dict) -> int:
         """Insert verse and return verse_id"""
         self.cursor.execute('''
-            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, english_text, word_count)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, speaker, word_count)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_data['reference'],
             verse_data['book'],
             verse_data['chapter'],
             verse_data['verse'],
             verse_data['hebrew'],
+            verse_data.get('hebrew_stripped'),
             verse_data['english'],
+            verse_data.get('speaker'),
             verse_data['word_count']
         ))
 
@@ -91,16 +104,17 @@ class DatabaseManager:
         """Insert figurative language finding"""
         self.cursor.execute('''
             INSERT INTO figurative_language
-            (verse_id, text_snippet, hebrew_snippet, type, confidence, pattern_matched, ai_analysis)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            (verse_id, text_snippet, hebrew_snippet, type, subcategory, confidence, figurative_text, explanation)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_id,
             figurative_data['text_snippet'],
             figurative_data['hebrew_snippet'],
             figurative_data['type'],
+            figurative_data.get('subcategory'),
             figurative_data['confidence'],
-            figurative_data['pattern_matched'],
-            figurative_data['ai_analysis']
+            figurative_data.get('figurative_text'),
+            figurative_data.get('explanation')
         ))
 
     def get_statistics(self) -> Dict:
