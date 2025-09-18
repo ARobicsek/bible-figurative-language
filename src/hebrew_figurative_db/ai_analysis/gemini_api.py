@@ -38,7 +38,7 @@ class GeminiAPIClient:
         self.total_input_tokens = 0
         self.total_output_tokens = 0
 
-    def analyze_figurative_language(self, hebrew_text: str, english_text: str) -> str:
+    def analyze_figurative_language(self, hebrew_text: str, english_text: str) -> tuple[str, Optional[str]]:
         """
         Analyze Hebrew text for figurative language using Gemini
 
@@ -47,7 +47,7 @@ class GeminiAPIClient:
             english_text: English translation
 
         Returns:
-            JSON string with analysis results
+            Tuple of (JSON string with analysis results, error message if restricted)
         """
         prompt = self._create_analysis_prompt(hebrew_text, english_text)
 
@@ -64,15 +64,29 @@ class GeminiAPIClient:
                 self.total_input_tokens += getattr(response.usage_metadata, 'prompt_token_count', 0)
                 self.total_output_tokens += getattr(response.usage_metadata, 'candidates_token_count', 0)
 
+            # Check for safety restrictions or blocked content
+            if hasattr(response, 'candidates') and response.candidates:
+                candidate = response.candidates[0]
+                if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
+                    # Check if content was blocked by safety filters or other restrictions
+                    finish_reason = candidate.finish_reason
+                    if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
+                        error_msg = f"Content restricted: {finish_reason.name}"
+                        return "[]", error_msg
+                    elif str(finish_reason) in ['SAFETY', 'RECITATION', 'OTHER']:
+                        error_msg = f"Content restricted: {finish_reason}"
+                        return "[]", error_msg
+
             # Extract text from response
             if response.text:
-                return response.text.strip()
+                return response.text.strip(), None
             else:
-                return "[]"  # Empty result
+                return "[]", "No response text generated"  # Empty result
 
         except Exception as e:
-            print(f"Gemini API error: {e}")
-            return "[]"  # Return empty on error
+            error_msg = f"Gemini API error: {str(e)}"
+            print(error_msg)
+            return "[]", error_msg  # Return empty on error
 
     def _create_analysis_prompt(self, hebrew_text: str, english_text: str) -> str:
         """Create the analysis prompt for Gemini"""
@@ -82,49 +96,97 @@ class GeminiAPIClient:
 Hebrew: {hebrew_text}
 English: {english_text}
 
-EXAMPLES of what to look for:
+⚠️ CRITICAL EXCLUSIONS - DO NOT mark as figurative:
 
-Example 1:
+TECHNICAL RELIGIOUS/CULTIC TERMS (these are literal/technical, not figurative):
+- Holiness designations: קֹדֶשׁ קׇדָשִׁים ("most holy"), "holy to YHWH", שֶׁקֶל הַקֹּדֶשׁ
+- Legal terms: חׇק־עוֹלָם ("perpetual statute"), זִמָּה ("depravity"), תּוֹעֵבָה ("abomination")
+- Sacrificial terminology: "sin offering", "guilt offering", "wave offering", "expiation", קׇרְבָּן
+- Ritual purity terms: טָהוֹר ("clean"), טָמֵא ("unclean")
+- Actual ritual actions: eating sacred offerings, laying hands on sacrifices, measuring offerings
+
+FORMULAIC EXPRESSIONS (standard biblical narrative, not personification):
+- Divine speech introductions: וַיְדַבֵּר יְהוָה ("YHWH spoke"), "Thus says YHWH"
+- Covenant formulas: "I am YHWH your God"
+- Standard narrative: literal actions, movements, locations that actually occur in the text
+
+LITERAL ACTIONS/PLACES/OBJECTS IN ANCIENT CONTEXT (NOT figurative):
+- Physical actions that actually happened: נָקוּמָה וְנֵלֵכָה ("let us arise and go") - literal movement
+- Actual places: מִחוּץ לַמַּחֲנֶה ("outside the camp") - real location
+- Real people/objects: children (טַפֵּנוּ), inheritance shares (נַחֲלָה) - literal entities
+- Ritual gestures: laying hands, stoning, bringing offerings - actual practices
+- Geographic references: Waters of Meribah, specific locations - real places
+- Legal procedures: execution, inheritance laws - actual ancient practices
+
+PROCEDURAL/INSTRUCTIONAL COMPARISONS (NOT figurative):
+- Ritual procedure comparisons: "just as it is removed from the ox" - comparing cultic procedures
+- Legal process comparisons: "as you do with X, so do with Y" - instructional parallels
+- Technical method descriptions: comparing one ritual technique to another
+- Liturgical instructions: procedural steps using comparative language
+
+LITERAL USAGE vs FIGURATIVE:
+- Body parts performing literal functions (hands bringing offerings) = NOT metonymy
+- Place names (Waters of Meribah) = NOT metonymy, they're proper nouns
+- Actual objects/people doing literal things = NOT figurative substitutions
+- Actions that ancient readers understood as real events = NOT metaphorical
+- Procedural comparisons in ritual/legal contexts = NOT similes (they're instructions)
+
+POSITIVE EXAMPLES of genuine figurative language:
+
+Example 1 - METAPHOR:
 Hebrew: יְהוָה רֹעִי לֹא אֶחְסָר
 English: The LORD is my shepherd; I shall not want
-Analysis: [{{"type": "metaphor", "hebrew_text": "יְהוָה רֹעִי", "english_text": "The LORD is my shepherd", "explanation": "God is metaphorically compared to a shepherd who guides and protects his flock", "subcategory": "pastoral", "confidence": 0.95}}]
+Analysis: [{{"type": "metaphor", "hebrew_text": "יְהוָה רֹעִי", "english_text": "The LORD is my shepherd", "explanation": "God is metaphorically compared to a shepherd who guides and protects his flock", "subcategory": "pastoral", "confidence": 0.95, "speaker": "David", "purpose": "express trust and reliance on God's guidance"}}]
 
-Example 2:
-Hebrew: וַיֹּאמֶר אֱלֹהִים
-English: And God said
-Analysis: [{{"type": "personification", "hebrew_text": "וַיֹּאמֶר אֱלֹהִים", "english_text": "And God said", "explanation": "God is given the human characteristic of speech and verbal communication", "subcategory": "divine", "confidence": 0.9}}]
+Example 2 - LEGITIMATE PERSONIFICATION (beyond simple speech):
+Hebrew: הָאָרֶץ קָאָה אֶת־יֹשְׁבֶיהָ
+English: the land spewed out its inhabitants
+Analysis: [{{"type": "personification", "hebrew_text": "הָאָרֶץ קָאָה", "english_text": "the land spewed out", "explanation": "The land is given human action of vomiting/spewing, expressing divine judgment through the land itself", "subcategory": "natural", "confidence": 0.9, "speaker": "Moses", "purpose": "emphasize the severity of moral corruption"}}]
 
-Example 3:
+Example 3 - SIMILE:
 Hebrew: כַּאֲשֶׁר שָׂשׂ עַל־אֲבֹתֶיךָ
 English: as he delighted in your ancestors
-Analysis: [{{"type": "simile", "hebrew_text": "כַּאֲשֶׁר", "english_text": "as he delighted", "explanation": "Direct comparison using Hebrew כַּאֲשֶׁר (ka-asher) meaning 'as/like'", "subcategory": "comparative", "confidence": 0.9}}]
+Analysis: [{{"type": "simile", "hebrew_text": "כַּאֲשֶׁר", "english_text": "as he delighted", "explanation": "Direct comparison using Hebrew כַּאֲשֶׁר (ka-asher) meaning 'as/like'", "subcategory": "comparative", "confidence": 0.9, "speaker": "Moses", "purpose": "emphasize continuity of God's favor"}}]
 
-TYPES to identify:
-- metaphor: Direct comparison without "like/as" (X is Y)
+TYPES to identify (only when genuinely figurative):
+- metaphor: Direct comparison without "like/as" (X is Y) - not technical terminology
 - simile: Comparison using "like/as" or Hebrew כְּ/כַּאֲשֶׁר
-- personification: Human characteristics given to non-human entities (especially God)
+- personification: Human characteristics given to non-human entities - NOT simple divine speech
 - idiom: Expressions with meaning different from literal interpretation
-- hyperbole: Deliberate exaggeration for emphasis
-- metonymy: Substituting name with something closely associated
+- hyperbole: Deliberate exaggeration for emphasis - be conservative, many distances/numbers are literal
+- metonymy: Substituting name with something closely associated - NOT literal usage
 
-SUBCATEGORIES:
-- divine: God's actions, nature, characteristics
-- pastoral: Shepherding, guidance, care imagery
-- body: Human body parts (heart, hand, eye, etc.)
-- natural: Earth, mountains, water, fire elements
-- familial: Family relationships, father/mother/child
-- comparative: Direct comparisons and similes
-- agricultural: Farming, planting, harvest imagery
+⚠️ ANCIENT NEAR EASTERN CONTEXT:
+Remember that ancient readers understood these texts in their historical context:
+- Religious/ritual terminology had specific technical meanings
+- Legal procedures described actual ancient practices
+- Geographic references were to real places
+- Actions described often literally occurred
+- Only mark as figurative what would have been understood as non-literal by ancient audiences
 
-IMPORTANT:
+⚠️ QUALITY CONTROL - BEFORE MARKING AS FIGURATIVE, ASK:
+1. Is this a technical religious/legal term from ancient Israelite practice?
+2. Is this a formulaic expression standard in biblical narrative?
+3. Could this be understood literally in its ancient ritual/legal/historical context?
+4. Would an ancient Near Eastern reader have understood this as a real action/place/object?
+5. Is this a procedural/instructional comparison (ritual technique vs. ritual technique)?
+6. Am I confident this is genuinely figurative (confidence > 0.7)?
+
+If YES to 1-5, or NO to 6 → DO NOT mark as figurative language.
+
+IMPORTANT PROCESSING NOTES:
 - Work primarily from the HEBREW text, using English for context
 - Look for Hebrew-specific patterns like כְּ (simile marker), divine names (יהוה, אלהים)
-- Find ALL instances - don't stop at the first one
+- Find ALL genuine instances - don't stop at the first one
 - Be scholarly and precise in explanations
-- Pay special attention to God performing human actions (personification)
+- Distinguish between technical religious language and genuine figurative language
+- Consider ancient context: what would ancient readers have understood as literal?
+- Only mark personification when God/entities perform actions beyond simple speech
 - Identify the SPEAKER: "God", "Moses", "Narrator", "Abraham", etc.
+- Determine the PURPOSE: Why is this figurative language used?
+- Minimum confidence threshold: 0.7 (if lower, do not include)
 
-Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, subcategory, confidence (0.0-1.0), speaker.
+Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, subcategory, confidence (0.7-1.0), speaker, purpose.
 
 If no figurative language found, return: []
 
@@ -188,10 +250,12 @@ def test_gemini_api():
 
         # Call Gemini API
         start_time = time.time()
-        result = client.analyze_figurative_language(case['hebrew'], case['english'])
+        result, error = client.analyze_figurative_language(case['hebrew'], case['english'])
         api_time = time.time() - start_time
 
         print(f"API Response Time: {api_time:.2f}s")
+        if error:
+            print(f"LLM Restriction Error: {error}")
         print(f"Raw Response: {result}")
 
         # Try to parse JSON

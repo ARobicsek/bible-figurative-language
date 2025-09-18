@@ -25,7 +25,7 @@ class HybridFigurativeDetector:
         else:
             self.rule_detector = None
 
-    def detect_figurative_language(self, english_text: str, hebrew_text: str = "") -> List[Dict]:
+    def detect_figurative_language(self, english_text: str, hebrew_text: str = "") -> tuple[List[Dict], Optional[str]]:
         """
         Detect figurative language using hybrid approach
 
@@ -34,15 +34,16 @@ class HybridFigurativeDetector:
             hebrew_text: Original Hebrew text
 
         Returns:
-            List of detection results
+            Tuple of (detection results, error message if restricted)
         """
         results = []
+        error_msg = None
 
         if self.prefer_llm:
             # Try LLM first
             try:
                 print(f"    [LLM] Analyzing with Hebrew + English...")
-                llm_results = self._analyze_with_llm(hebrew_text, english_text)
+                llm_results, error_msg = self._analyze_with_llm(hebrew_text, english_text)
                 if llm_results:
                     results.extend(llm_results)
                     print(f"    [LLM] Found {len(llm_results)} instances")
@@ -56,6 +57,7 @@ class HybridFigurativeDetector:
                             print(f"    [RULE] Found {len(rule_results)} instances")
 
             except Exception as e:
+                error_msg = f"LLM Error: {e}"
                 print(f"    [LLM] Error: {e}")
                 if self.allow_rule_fallback:
                     print(f"    [LLM] Falling back to rules...")
@@ -68,29 +70,30 @@ class HybridFigurativeDetector:
             rule_results = self._analyze_with_rules(english_text, hebrew_text)
             results.extend(rule_results)
 
-        return results
+        return results, error_msg
 
     def extract_text_snippet(self, verse_text: str, detected_type: str) -> str:
         """Extract relevant text snippet for the detected figurative language"""
         # Use the rule-based detector's snippet extraction
         return self.rule_detector.extract_text_snippet(verse_text, detected_type)
 
-    def _analyze_with_llm(self, hebrew_text: str, english_text: str) -> List[Dict]:
+    def _analyze_with_llm(self, hebrew_text: str, english_text: str) -> tuple[List[Dict], Optional[str]]:
         """Analyze using LLM detector"""
         if not hebrew_text:
-            return []
+            return [], None
 
         # Create a more sophisticated prompt for actual use
         prompt = self._create_analysis_prompt(hebrew_text, english_text)
 
         if self.use_actual_llm:
             # Call real Gemini API
-            response = self._call_gemini_api(hebrew_text, english_text)
+            response, error = self._call_gemini_api(hebrew_text, english_text)
         else:
             # Enhanced simulation based on Hebrew patterns
             response = self._enhanced_simulation(hebrew_text, english_text)
+            error = None
 
-        return self._parse_llm_response(response)
+        return self._parse_llm_response(response), error
 
     def _analyze_with_rules(self, english_text: str, hebrew_text: str) -> List[Dict]:
         """Analyze using rule-based detector"""
@@ -181,7 +184,7 @@ Analysis:"""
 
         return json.dumps(results, ensure_ascii=False, indent=2)
 
-    def _call_gemini_api(self, hebrew_text: str, english_text: str) -> str:
+    def _call_gemini_api(self, hebrew_text: str, english_text: str) -> tuple[str, Optional[str]]:
         """Call real Gemini API"""
         try:
             from .gemini_api import GeminiAPIClient
@@ -190,8 +193,8 @@ Analysis:"""
             api_key = "AIzaSyBjslLjCzAjarNfu0efWby6YHnqAXmaKIk"
             client = GeminiAPIClient(api_key)
 
-            # Make API call
-            response = client.analyze_figurative_language(hebrew_text, english_text)
+            # Make API call (now returns tuple)
+            response, error = client.analyze_figurative_language(hebrew_text, english_text)
 
             # Handle markdown code block wrapper
             if response.startswith("```json"):
@@ -208,32 +211,40 @@ Analysis:"""
                     elif in_json:
                         json_lines.append(line)
 
-                return '\n'.join(json_lines)
+                return '\n'.join(json_lines), error
 
-            return response
+            return response, error
 
         except Exception as e:
-            print(f"Gemini API call failed: {e}")
-            return "[]"  # Return empty result on failure
+            error_msg = f"Gemini API call failed: {e}"
+            print(error_msg)
+            return "[]", error_msg  # Return empty result on failure
 
     def _parse_llm_response(self, response: str) -> List[Dict]:
-        """Parse LLM JSON response"""
+        """Parse LLM JSON response with confidence threshold filtering"""
         try:
             data = json.loads(response)
             results = []
 
             for item in data:
                 if isinstance(item, dict) and item.get('type'):
+                    confidence = float(item.get('confidence', 0.0))
+
+                    # Apply confidence threshold filtering (0.7 minimum)
+                    if confidence < 0.7:
+                        continue
+
                     # Convert to pipeline format
                     result = {
                         'type': item.get('type', '').lower(),
-                        'confidence': float(item.get('confidence', 0.0)),
+                        'confidence': confidence,
                         'pattern': 'llm_detected',
                         'figurative_text': item.get('english_text', ''),
                         'explanation': item.get('explanation', ''),
                         'subcategory': item.get('subcategory', ''),
                         'hebrew_source': item.get('hebrew_text', ''),
-                        'speaker': item.get('speaker', '')
+                        'speaker': item.get('speaker', ''),
+                        'purpose': item.get('purpose', '')
                     }
                     results.append(result)
 
@@ -272,7 +283,10 @@ def test_hybrid_detector():
         print(f"Testing {case['name']}:")
         print(f"English: {case['english']}")
 
-        results = detector.detect_figurative_language(case['english'], case['hebrew'])
+        results, error = detector.detect_figurative_language(case['english'], case['hebrew'])
+
+        if error:
+            print(f"LLM Error: {error}")
 
         if results:
             print(f"Found {len(results)} instances:")

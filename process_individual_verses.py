@@ -128,17 +128,26 @@ def process_single_verse_direct(pipeline, verse_data: Dict, drop_existing: bool 
             # Enhance verse data
             enhanced_verse = {
                 **verse_data,
-                'hebrew_stripped': hebrew_stripped,
-                'speaker': speaker
+                'hebrew_stripped': hebrew_stripped
             }
 
             # Insert verse into database
             verse_id = db.insert_verse(enhanced_verse)
 
             # AI analysis for figurative language
-            detection_results = pipeline.detector.detect_figurative_language(
+            detection_results, llm_error = pipeline.detector.detect_figurative_language(
                 verse_data['english'], verse_data['hebrew']
             )
+
+            # Update verse with LLM restriction error if any
+            if llm_error:
+                print(f"    LLM Restriction: {llm_error}")
+                enhanced_verse['llm_restriction_error'] = llm_error
+                # Update the verse record with the error
+                db.cursor.execute(
+                    'UPDATE verses SET llm_restriction_error = ? WHERE id = ?',
+                    (llm_error, verse_id)
+                )
 
             if detection_results:
                 for i, detection_result in enumerate(detection_results):
@@ -155,7 +164,9 @@ def process_single_verse_direct(pipeline, verse_data: Dict, drop_existing: bool 
                         'confidence': detection_result['confidence'],
                         'figurative_text': detection_result.get('figurative_text') or detection_result.get('english_text'),
                         'figurative_text_in_hebrew': detection_result.get('hebrew_source') or detection_result.get('hebrew_text'),
-                        'explanation': detection_result.get('explanation')
+                        'explanation': detection_result.get('explanation'),
+                        'speaker': detection_result.get('speaker'),
+                        'purpose': detection_result.get('purpose')
                     }
 
                     # Insert figurative language record
