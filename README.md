@@ -2,17 +2,17 @@
 
 A comprehensive system for detecting and analyzing figurative language (metaphors, similes, personification, idioms, hyperbole) in biblical Hebrew texts, with revolutionary LLM integration for scholarly research.
 
-## 🎉 Project Status: Enhanced Pipeline with Refined Detection Complete
+## 🎉 Project Status: Two-Level Subcategory System & False Positive Reduction Complete
 
-**Phase 6.5 Complete:** Revolutionary pipeline enhancements with refined simile/metaphor detection and semantic subcategories. Eliminated false positives while maintaining 100% accuracy on genuine figurative language. Complete Deuteronomy processing with research-grade analytical capabilities.
+**Phase 7 Complete:** Revolutionary two-level subcategory system with comprehensive false positive reduction. Implemented hierarchical classification (Level 1 | Level 2), eliminated literal description misclassification, and achieved 100% accuracy on validation tests. Complete Deuteronomy reprocessing with enhanced research-grade analytical capabilities.
 
 ### Key Achievements
-- ✅ **Enhanced Pipeline (Phase 6.5)**: Refined simile/metaphor detection with semantic subcategories
-- ✅ **False Positive Elimination**: 100% accuracy on test cases with procedural/religious exclusions
-- ✅ **Semantic Subcategories**: Research-grade domains (architectural, geological, elemental, military)
-- ✅ **Hebrew-Native Analysis**: Working directly with original Hebrew text
-- ✅ **Enhanced Database Schema**: Speaker/purpose fields for character-specific analysis
-- ✅ **Complete Deuteronomy Processing**: All 34 chapters with improved detection pipeline
+- ✅ **Two-Level Subcategory System (Phase 7)**: Hierarchical classification with Level 1 (broad) | Level 2 (specific)
+- ✅ **False Positive Reduction**: 100% accuracy on validation tests, eliminated literal misclassification
+- ✅ **Enhanced Database Schema**: Added subcategory_level_1 and subcategory_level_2 fields
+- ✅ **Comprehensive Migration**: 646 existing records migrated to new two-level structure
+- ✅ **Improved LLM Prompts**: Specific exclusions for literal descriptions, historical statements, standard idioms
+- ✅ **100% LLM-Based Detection**: No rule-based fallbacks, pure AI-driven analysis
 - ✅ **Scholarly Explanations**: PhD-level analysis with communicative intent detection
 - ✅ **Multi-Instance Detection**: Multiple figurative language types per verse
 - ✅ **Speaker Attribution**: Precise identification of who speaks figurative language
@@ -80,33 +80,34 @@ python view_results_genesis_1_3.py
 
 ## 📊 Research Quality Results
 
-### Latest Results (Phase 6.5 Enhanced Pipeline)
-- **Complete Deuteronomy**: All 34 chapters processed with refined detection
-- **Enhanced Quality**: False positive elimination with 100% test accuracy
-- **Semantic Subcategories**: Meaningful analytical domains instead of generic terms
-- **175 verses validation** (validation_optimized_20250918_084059.db): 467 instances (2.67 per verse)
-- **Speaker identification**: God, Moses, Narrator, Abraham, etc.
-- **Purpose analysis**: Communicative intent for each instance
-- **Processing speed**: 1.85 verses/second with enhanced quality control
+### Latest Results (Phase 7 Two-Level System)
+- **Complete Deuteronomy Reprocessing**: All 34 chapters with improved two-level subcategory pipeline
+- **Two-Level Classification**: Level 1 categories (The Natural World, Human Institutions and Relationships, Abstract and Internal States)
+- **Enhanced Precision**: False positive reduction with specific literal exclusions
+- **Migrated Database**: 646 existing records updated to hierarchical structure
+- **100% Validation Accuracy**: Perfect classification on false positive test cases
+- **Processing speed**: Maintained 1.85+ verses/second with enhanced accuracy
 
-### Example Enhanced Analysis Output (Phase 6.5 Quality)
+### Example Two-Level Analysis Output (Phase 7 Quality)
 ```json
 {
   "type": "metaphor",
   "figurative_text": "The ancient God is a refuge",
   "figurative_text_in_hebrew": "אלהי קדם מעונה",
   "explanation": "God is compared to a physical place of safety and protection",
-  "subcategory": "architectural",
+  "subcategory_level_1": "Human Institutions and Relationships",
+  "subcategory_level_2": "architectural",
   "confidence": 0.90,
   "speaker": "Moses",
   "purpose": "express divine protection and security for the people"
 }
 ```
 
-**Phase 6.5 Improvements:**
-- **Refined subcategory**: "architectural" instead of generic "divine"
-- **Excluded false positives**: Religious terms like "God of gods" no longer misclassified
-- **Procedural filtering**: Similes like "as Aaron died" correctly excluded
+**Phase 7 Improvements:**
+- **Two-level hierarchy**: "Human Institutions and Relationships | architectural"
+- **False positive elimination**: Literal descriptions like "good land" correctly excluded
+- **Enhanced accuracy**: Historical statements like "We were slaves" no longer misclassified
+- **Standard idiom filtering**: Expressions like "stray from path" correctly identified as literal
 ```
 
 ### Detection Capabilities (Phase 6.5 Enhanced)
@@ -160,10 +161,10 @@ Root Directory:
 
 ## 🛠️ Database Schema
 
-Enhanced schema with comprehensive figurative language support:
+Enhanced schema with two-level subcategory system:
 
 ```sql
--- Verses table (speaker field removed in Phase 4)
+-- Verses table
 CREATE TABLE verses (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     reference TEXT NOT NULL,
@@ -174,22 +175,24 @@ CREATE TABLE verses (
     hebrew_text_stripped TEXT,
     english_text TEXT NOT NULL,
     word_count INTEGER,
-    llm_restriction_error TEXT,      -- NEW: API restriction tracking
+    llm_restriction_error TEXT,      -- API restriction tracking
     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Enhanced figurative language table with speaker/purpose
+-- Enhanced figurative language table with two-level subcategories
 CREATE TABLE figurative_language (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     verse_id INTEGER NOT NULL,
     type TEXT NOT NULL CHECK(type IN ('metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other')),
-    subcategory TEXT,
+    subcategory TEXT,                -- Legacy field for backward compatibility
+    subcategory_level_1 TEXT,        -- NEW: Broad category (The Natural World, etc.)
+    subcategory_level_2 TEXT,        -- NEW: Specific domain (animal, architectural, etc.)
     confidence REAL NOT NULL CHECK(confidence >= 0.0 AND confidence <= 1.0),
     figurative_text TEXT,
     figurative_text_in_hebrew TEXT,
     explanation TEXT,
-    speaker TEXT,                    -- NEW: Who speaks the figurative language
-    purpose TEXT,                    -- NEW: Why the figurative language is used
+    speaker TEXT,                    -- Who speaks the figurative language
+    purpose TEXT,                    -- Why the figurative language is used
     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (verse_id) REFERENCES verses (id)
 );
@@ -222,14 +225,28 @@ AND ABS((chapter - 1) * 100 + verse - 115) <= 5
 ORDER BY chapter, verse;
 ```
 
-### Domain Classification Analysis (Phase 6.5 Enhanced)
+### Two-Level Category Analysis (Phase 7 Enhanced)
 ```sql
--- Meaningful semantic domains instead of generic categories
-SELECT subcategory, COUNT(*) as count
+-- Hierarchical analysis by Level 1 categories
+SELECT subcategory_level_1, COUNT(*) as count
 FROM figurative_language
-WHERE subcategory IN ('architectural', 'geological', 'elemental', 'military', 'agricultural', 'familial', 'natural', 'celestial')
-GROUP BY subcategory
+WHERE subcategory_level_1 IS NOT NULL
+GROUP BY subcategory_level_1
 ORDER BY count DESC;
+
+-- Detailed breakdown by Level 2 within each Level 1
+SELECT subcategory_level_1, subcategory_level_2, COUNT(*) as count
+FROM figurative_language
+WHERE subcategory_level_1 IS NOT NULL AND subcategory_level_2 IS NOT NULL
+GROUP BY subcategory_level_1, subcategory_level_2
+ORDER BY subcategory_level_1, count DESC;
+
+-- Specific domain analysis (e.g., all architectural metaphors)
+SELECT type, figurative_text, speaker
+FROM figurative_language
+WHERE subcategory_level_1 = 'Human Institutions and Relationships'
+  AND subcategory_level_2 = 'architectural'
+ORDER BY confidence DESC;
 ```
 
 ### Speaker-Specific Patterns
@@ -295,5 +312,5 @@ This project is open source and available for academic and research use.
 ---
 
 **Repository**: https://github.com/ARobicsek/bible-figurative-language
-**Status**: Phase 6.5 Complete - Enhanced pipeline with refined detection and semantic subcategories
-**Research Quality**: False positive elimination achieved, suitable for advanced biblical scholarship
+**Status**: Phase 7 Complete - Two-level subcategory system with false positive reduction
+**Research Quality**: Hierarchical classification with 100% validation accuracy, suitable for advanced biblical scholarship

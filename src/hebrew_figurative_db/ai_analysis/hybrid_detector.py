@@ -241,7 +241,9 @@ Analysis:"""
                         'pattern': 'llm_detected',
                         'figurative_text': item.get('english_text', ''),
                         'explanation': item.get('explanation', ''),
-                        'subcategory': item.get('subcategory', ''),
+                        'subcategory': item.get('subcategory', ''),  # Keep for backward compatibility
+                        'subcategory_level_1': item.get('subcategory_level_1', ''),
+                        'subcategory_level_2': item.get('subcategory_level_2', ''),
                         'hebrew_source': item.get('hebrew_text', ''),
                         'speaker': item.get('speaker', ''),
                         'purpose': item.get('purpose', '')
