@@ -80,9 +80,9 @@ def process_individual_validation_verses(verse_refs: List[str], output_db: str =
             total_processed += 1
             total_figurative_found += result.get('figurative_found', 0)
 
-            # Rate limiting - pause between requests
+            # Small delay to be respectful to API
             if i < len(verse_refs):
-                time.sleep(0.5)  # 500ms between requests
+                time.sleep(0.1)  # 100ms between requests (reduced from 500ms)
 
         except Exception as e:
             print(f"  ERROR processing {verse_ref}: {e}")
