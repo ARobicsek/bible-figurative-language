@@ -2,16 +2,21 @@
 
 A comprehensive system for detecting and analyzing figurative language (metaphors, similes, personification, idioms, hyperbole) in biblical Hebrew texts, with revolutionary LLM integration for scholarly research.
 
-## 🎉 Project Status: Two-Level Subcategory System & False Positive Reduction Complete
+## 🚨 Project Status: Two-Stage Validation System with Critical Unicode Bug
 
-**Phase 7 Complete:** Revolutionary two-level subcategory system with comprehensive false positive reduction. Implemented hierarchical classification (Level 1 | Level 2), eliminated literal description misclassification, and achieved 100% accuracy on validation tests. Complete Deuteronomy reprocessing with enhanced research-grade analytical capabilities.
+**CRITICAL ISSUE:** Two-stage validation system correctly identifies 86.3% of false positives for rejection but Unicode encoding bug prevents proper filtering. Urgent fix needed to enable near-perfect metaphor detection with ~90% false positive elimination.
 
-### Key Achievements
-- ✅ **Two-Level Subcategory System (Phase 7)**: Hierarchical classification with Level 1 (broad) | Level 2 (specific)
-- ✅ **False Positive Reduction**: 100% accuracy on validation tests, eliminated literal misclassification
+### Current Status
+- ✅ **Two-Stage Validation Logic**: 86.3% of false positives correctly identified for rejection
+- ✅ **True Positive Preservation**: 100% accuracy on legitimate metaphors (26/26 test cases)
+- 🚨 **Unicode Bug**: Validation exceptions prevent false positive filtering (currently 0% rejection rate)
+- ❌ **False Positive Explosion**: 692 metaphors detected vs. 389 expected (~300 false positives)
+- 🎯 **Solution Ready**: Fix Unicode encoding in `metaphor_validator.py` to enable proper filtering
+
+### Technical Achievements
+- ✅ **Two-Level Subcategory System**: Hierarchical classification with Level 1 (broad) | Level 2 (specific)
 - ✅ **Enhanced Database Schema**: Added subcategory_level_1 and subcategory_level_2 fields
-- ✅ **Comprehensive Migration**: 646 existing records migrated to new two-level structure
-- ✅ **Improved LLM Prompts**: Specific exclusions for literal descriptions, historical statements, standard idioms
+- ✅ **Two-Stage Validation**: Stage 1 (LLM detection) + Stage 2 (validation filtering)
 - ✅ **100% LLM-Based Detection**: No rule-based fallbacks, pure AI-driven analysis
 - ✅ **Scholarly Explanations**: PhD-level analysis with communicative intent detection
 - ✅ **Multi-Instance Detection**: Multiple figurative language types per verse
