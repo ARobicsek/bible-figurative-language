@@ -1,29 +1,47 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Hybrid figurative language detector: LLM-powered with rule-based fallback
+Hybrid figurative language detector: LLM-powered with rule-based fallback and two-stage metaphor validation
 """
 import json
 import time
 from typing import List, Dict, Optional
 from .llm_detector import LLMFigurativeDetector
 from .figurative_detector import FigurativeLanguageDetector
+from .metaphor_validator import MetaphorValidator
 
 
 class HybridFigurativeDetector:
     """
-    Hybrid detector that prioritizes LLM analysis but falls back to rule-based detection
+    Hybrid detector that prioritizes LLM analysis with two-stage metaphor validation
     """
 
-    def __init__(self, prefer_llm: bool = True, use_actual_llm: bool = False, allow_rule_fallback: bool = False):
+    def __init__(self, prefer_llm: bool = True, use_actual_llm: bool = False, allow_rule_fallback: bool = False,
+                 enable_metaphor_validation: bool = True, gemini_api_key: str = None):
         self.prefer_llm = prefer_llm
         self.use_actual_llm = use_actual_llm
         self.allow_rule_fallback = allow_rule_fallback
+        self.enable_metaphor_validation = enable_metaphor_validation
         self.llm_detector = LLMFigurativeDetector()
+
         if allow_rule_fallback:
             self.rule_detector = FigurativeLanguageDetector()
         else:
             self.rule_detector = None
+
+        # Initialize metaphor validator for two-stage validation
+        if enable_metaphor_validation and gemini_api_key and use_actual_llm:
+            self.metaphor_validator = MetaphorValidator(gemini_api_key)
+        else:
+            self.metaphor_validator = None
+
+        # Track validation statistics
+        self.validation_stats = {
+            'metaphors_detected': 0,
+            'metaphors_validated': 0,
+            'metaphors_rejected': 0,
+            'validation_errors': 0
+        }
 
     def detect_figurative_language(self, english_text: str, hebrew_text: str = "") -> tuple[List[Dict], Optional[str]]:
         """
@@ -45,8 +63,10 @@ class HybridFigurativeDetector:
                 print(f"    [LLM] Analyzing with Hebrew + English...")
                 llm_results, error_msg = self._analyze_with_llm(hebrew_text, english_text)
                 if llm_results:
-                    results.extend(llm_results)
-                    print(f"    [LLM] Found {len(llm_results)} instances")
+                    # Apply two-stage validation for metaphors
+                    validated_results = self._validate_metaphors(llm_results, hebrew_text, english_text)
+                    results.extend(validated_results)
+                    print(f"    [LLM] Found {len(llm_results)} instances, {len(validated_results)} after validation")
                 else:
                     print(f"    [LLM] No instances found")
                     if self.allow_rule_fallback:
@@ -255,6 +275,77 @@ Analysis:"""
         except (json.JSONDecodeError, ValueError) as e:
             print(f"Error parsing LLM response: {e}")
             return []
+
+    def _validate_metaphors(self, results: List[Dict], hebrew_text: str, english_text: str) -> List[Dict]:
+        """Apply two-stage validation to detected metaphors"""
+        if not self.metaphor_validator:
+            # No validation enabled, return all results
+            return results
+
+        validated_results = []
+
+        for result in results:
+            if result.get('type') == 'metaphor':
+                self.validation_stats['metaphors_detected'] += 1
+
+                # Extract validation parameters
+                figurative_text = result.get('figurative_text', '')
+                explanation = result.get('explanation', '')
+                confidence = result.get('confidence', 0.0)
+
+                try:
+                    # Validate with stage 2
+                    is_valid, reason, error = self.metaphor_validator.validate_metaphor(
+                        hebrew_text, english_text, figurative_text, explanation, confidence
+                    )
+
+                    if error:
+                        self.validation_stats['validation_errors'] += 1
+                        print(f"    [VALIDATE] Error validating metaphor: {error}")
+                        # On error, keep the metaphor (conservative approach)
+                        validated_results.append(result)
+                    elif is_valid:
+                        self.validation_stats['metaphors_validated'] += 1
+                        print(f"    [VALIDATE] VALID: Metaphor validated: {figurative_text}")
+                        validated_results.append(result)
+                    else:
+                        self.validation_stats['metaphors_rejected'] += 1
+                        print(f"    [VALIDATE] REJECTED: Metaphor rejected: {figurative_text} - {reason}")
+                        # Don't add to validated_results (filter out)
+
+                except Exception as e:
+                    self.validation_stats['validation_errors'] += 1
+                    print(f"    [VALIDATE] Exception during validation: {e}")
+                    # On exception, keep the metaphor (conservative approach)
+                    validated_results.append(result)
+            else:
+                # Non-metaphor types pass through without validation
+                validated_results.append(result)
+
+        return validated_results
+
+    def get_validation_statistics(self) -> Dict:
+        """Get validation statistics"""
+        stats = self.validation_stats.copy()
+        if self.metaphor_validator:
+            validator_stats = self.metaphor_validator.get_validation_stats()
+            stats.update(validator_stats)
+        return stats
+
+    def print_validation_summary(self):
+        """Print a summary of validation results"""
+        stats = self.get_validation_statistics()
+        print(f"\n=== METAPHOR VALIDATION SUMMARY ===")
+        print(f"Metaphors detected: {stats['metaphors_detected']}")
+        print(f"Metaphors validated: {stats['metaphors_validated']}")
+        print(f"Metaphors rejected: {stats['metaphors_rejected']}")
+        print(f"Validation errors: {stats['validation_errors']}")
+
+        if stats['metaphors_detected'] > 0:
+            validation_rate = (stats['metaphors_validated'] / stats['metaphors_detected']) * 100
+            rejection_rate = (stats['metaphors_rejected'] / stats['metaphors_detected']) * 100
+            print(f"Validation rate: {validation_rate:.1f}%")
+            print(f"Rejection rate: {rejection_rate:.1f}%")
 
 
 def test_hybrid_detector():
