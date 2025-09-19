@@ -197,6 +197,14 @@ TYPES to identify (only when genuinely figurative):
 • RELIGIOUS/DIVINE TITLES: "God of gods" (אֱלֹהֵי הָאֱלֹהִים) = theological title (NOT metaphor)
 • TECHNICAL RELIGIOUS TERMS: "holy people" (עַם קָדוֹשׁ) = covenantal status (NOT metaphor)
 • RITUAL OBJECTS: "molten calf" (עֵגֶל מַסֵּכָה) = actual idol description (NOT metaphor)
+• STANDARD DIVINE ACTIONS: "blessed you", "watched over", "was with", "spoke", "heard" = standard biblical divine activity (NOT metaphor)
+• DIVINE ATTRIBUTES: "compassionate God", "Your greatness", "faithful God" = standard divine characteristics (NOT metaphor)
+• COVENANT LANGUAGE: "will not fail you", "will not abandon", "I will be your God" = standard covenant terminology (NOT metaphor)
+• JUDGMENT ACTIONS: "scatter among peoples", "drive out", "destroy", "wipe out" = literal divine judgment (NOT metaphor)
+• QUANTITATIVE DESCRIPTIONS: "scant few", "many", "great nation" = numerical/size descriptions (NOT metaphor)
+• THEOPHANIC DESCRIPTIONS: "mountain ablaze", "fire and cloud", "thunder" = literal divine manifestation (NOT metaphor)
+• GEOGRAPHIC REFERENCES: "great wilderness", "the land", place names = literal locations (NOT metaphor)
+• IDOLATRY TERMS: "sculptured image", "molten idol" = literal prohibition objects (NOT metaphor)
 • LITERAL DESCRIPTIONS: "from the fire, cloud, thick darkness" = actual theophany description (NOT metaphor)
 • EMOTIONAL/PHYSICAL STATES: "with joy and gladness of heart" = literal emotional state (NOT metaphor)
 • GENERATIONAL TERMS: "this evil generation" = descriptive characterization (NOT metaphor)
@@ -208,6 +216,16 @@ TYPES to identify (only when genuinely figurative):
 • "you are a stiff-necked people" = people ↔ stubborn animals (TRUE metaphor)
 • "I will make you a light to the nations" = people ↔ illumination (TRUE metaphor)
 - simile: Comparison using "like/as" or Hebrew כְּ/כַּאֲשֶׁר - BUT ONLY when comparing two UNLIKE things figuratively.
+
+[WARNING] DO NOT classify as simile if it's:
+• HISTORICAL PRECEDENT: "as the Edomites did", "as the Moabites did" = literal historical reference (NOT simile)
+• PROCEDURAL INSTRUCTION: "do X as you do Y", "die as Aaron died" = instructional comparison (NOT simile)
+• MANNER DESCRIPTION: "eat it as gazelle is eaten" = method description (NOT simile)
+
+[WARNING] DO NOT classify as personification if it's:
+• THEOPHANIC MANIFESTATION: "mountain ablaze with fire" = literal divine presence (NOT personification)
+• STANDARD DIVINE SPEECH: "God spoke", "God said" = normal biblical language (NOT personification)
+• NATURAL PHENOMENA WITH DIVINE CAUSE: Fire, clouds, earthquakes in divine context = literal theophanic events (NOT personification)
 
 [WARNING] DO NOT classify as simile if כְּ/כַּאֲשֶׁר is used for:
 • PROCEDURAL/INSTRUCTIONAL: "do X as you do Y" = method instruction (NOT simile)
@@ -302,6 +320,24 @@ For each figurative instance, identify both the VEHICLE (source domain) and TENO
 - VEHICLE: What concrete imagery is used (e.g., "shepherd" in "God is my shepherd")
 - TENOR: What is being described (e.g., "God" in "God is my shepherd")
 
+[ENHANCED CLASSIFICATION GUIDELINES]:
+
+VEHICLE CLASSIFICATION PRECISION:
+- Choose the most SPECIFIC appropriate category
+- Avoid using broad "social" when more precise options exist
+- Use "military" for conquest/warfare imagery (e.g., "tread on their backs" = military, not social)
+- Use "political-legal" for judicial actions (e.g., "hand lays hold on judgment" = political-legal)
+- Reserve "familial" for direct kinship metaphors (father, son, brother)
+- Use "social-status" for hierarchical positioning (head/tail, high above, treading on backs)
+
+TENOR CLASSIFICATION PRECISION:
+- Distinguish between DIVINE PROVISION (God's sustaining care) vs BLESSING (covenant rewards)
+- Use "Idolatry" subcategory for false worship metaphors (sculptured image, no-gods)
+- Use "Moral & Spiritual State" for internal dispositions (harden heart, treacherous breed)
+- Reserve "Israel's Identity" for covenantal status metaphors (children of God, treasured people)
+- Use "Blessing" for material prosperity and social elevation from obedience
+- Use "Curse" for material destitution and humiliation from disobedience
+
 VEHICLE CLASSIFICATION - Two-Level System:
 Choose TWO levels based on the SOURCE domain of the comparison:
 
@@ -309,6 +345,8 @@ VEHICLE LEVEL 1 (Broad Category):
 - "The Natural World" - for imagery from nature, plants, animals, natural phenomena
 - "Human Institutions and Relationships" - for social structures, roles, human activities
 - "Abstract and Internal States" - for psychological, spiritual, temporal, economic concepts
+- "Body and Anatomy" - for human/divine body parts and physiological functions
+- "Ritual and Worship" - for religious practices, ceremonial activities, and covenantal symbols
 
 VEHICLE LEVEL 2 (Specific Domain):
 THE NATURAL WORLD:
@@ -319,21 +357,28 @@ THE NATURAL WORLD:
   - celestial: sky and heavenly bodies (stars, sun, moon, heaven, etc.)
 
 HUMAN INSTITUTIONS AND RELATIONSHIPS:
-  - familial: family relationships (father, mother, brother, inheritance, etc.)
-  - military: warfare, weapons (shield, sword, warrior, battle, etc.)
+  - familial: direct family relationships (father, mother, brother, inheritance, etc.)
+  - military: warfare, weapons (shield, sword, warrior, battle, conquest, etc.)
   - architectural: buildings, structures (fortress, refuge, tower, house, etc.)
-  - social: societal roles, governance (king, judge, nation, people, etc.)
-  - political: power, authority, leadership (dominance, rule, etc.)
-  - sensory: perception, understanding (sight, hearing, touch, etc.)
+  - political-legal: power, authority, leadership, judicial actions (king, judge, dominance, rule, etc.)
+  - interpersonal: general human relationships and interactions (face to face, serve, etc.)
+  - social-status: hierarchical position, social standing (head and tail, high above, treading on backs, etc.)
 
 ABSTRACT AND INTERNAL STATES:
-  - emotional: feelings, mental states (comfort, terror, joy, anger, etc.)
-  - medical: health, disease, affliction (sickness, healing, etc.)
-  - covenantal: spiritual relationship with God (covenant, holiness, etc.)
-  - spiritual: religious/divine concepts beyond covenant (worship, etc.)
+  - psychological-cognitive: mental states, thoughts, understanding (gain insight, harden heart, etc.)
+  - moral-spiritual: sin, righteousness, wickedness (no-gods, treacherous breed, etc.)
   - temporal: time, duration (ancient, eternal, brief, seasons, etc.)
   - economic: trade, prosperity (wealth, poverty, lending, etc.)
   - industrial: craftsmanship, labor (refining, metalwork, etc.)
+
+BODY AND ANATOMY:
+  - anthropomorphic-divine: God's body parts representing power/presence (hand, arm, face, eyes, etc.)
+  - human-body: human body parts for actions/emotions (heart for will, hand for action, etc.)
+
+RITUAL AND WORSHIP:
+  - sacrificial: offerings, ritual sacrifice imagery (in your nostrils, etc.)
+  - priestly: ceremonial functions (Thummim and Urim, etc.)
+  - covenantal: blessing, curse, covenant symbols and practices
 
 TENOR CLASSIFICATION - Two-Level System:
 These represent the major thematic domains of the Pentateuch:
@@ -341,31 +386,43 @@ These represent the major thematic domains of the Pentateuch:
 TENOR LEVEL 1 (Broad Categories):
 - "Divine-Human Relationship" - God's nature, character, actions; humanity/Israel's identity
 - "Covenant & Its Consequences" - blessings for obedience, curses for disobedience
-- "Communal & Moral Realities" - internal/external state of people, moral character, social order
 
 TENOR LEVEL 2 (Specific Subcategories):
 DIVINE-HUMAN RELATIONSHIP:
-  - Divine Sovereignty: God as Creator, ultimate ruler, judge
-  - Divine Presence: God's tangible manifestations and closeness
-  - Divine Covenant-Making: God's acts of establishing/maintaining promises
-  - Divine Nurture & Provision: God as sustainer, provider, deliverer
-  - Humanity's Status: nature and purpose of humanity, created in God's image
-  - Israel's Status: Israel's unique position as YHWH's chosen people
+  - Divine Sovereignty: God as Creator, ultimate ruler, judge, authority
+  - Divine Presence: God's tangible manifestations, closeness, theophany
+  - Divine Provision: God as sustainer, provider, deliverer, nurturer
+  - Israel's Identity: Israel's unique covenantal status as YHWH's chosen people
+  - Humanity's Status: general human nature, purpose, moral character
+  - Moral & Spiritual State: internal spiritual/moral dispositions, heart/soul metaphors
 
 COVENANT & ITS CONSEQUENCES:
-  - Material Blessings: imagery of abundance, fertility, prosperity
-  - Sanctification & Purity: metaphors for holiness, ritual cleanliness, moral purity
-  - Social & Political Elevation: portrayal of Israel as preeminent nation
-  - Impurity & Defilement: metaphors for sin as corrupting force
-  - Hardship & Destitution: imagery of lack, desolation, loss of life
-  - Humiliation & Subjugation: Israel's loss of status, freedom, power
+  - Blessing: rewards of obedience - material prosperity, social elevation
+  - Curse: consequences of disobedience - material destitution, humiliation, subjugation
+  - Idolatry: false worship, spiritual adultery, no-gods
+  - Wisdom & Discernment: understanding, foolishness, intellectual/spiritual insight
 
-COMMUNAL & MORAL REALITIES:
-  - Moral & Spiritual State: "heart" and "soul" metaphors, spiritual/moral dispositions
-  - Wisdom & Discernment: concepts of intellect, foolishness, understanding
-  - Interpersonal Morality: right and wrong behavior within community
-  - Social Order: structure and leadership of Israelite society
-  - Conflict & Foreign Relations: warfare, hostility, relationship with other nations
+[CLASSIFICATION EXAMPLES WITH IMPROVED CATEGORIES]:
+
+Example 1 - Military Vehicle for Divine Action:
+Hebrew: "you shall tread upon their backs"
+Analysis: [{{"type": "metaphor", "vehicle_level_1": "Human Institutions and Relationships", "vehicle_level_2": "military", "tenor_level_1": "Divine-Human Relationship", "tenor_level_2": "Divine Sovereignty", "explanation": "Military imagery of conquest for divine victory"}}]
+
+Example 2 - Anthropomorphic Divine Body Part:
+Hebrew: "My hand lays hold on judgment"
+Analysis: [{{"type": "metaphor", "vehicle_level_1": "Body and Anatomy", "vehicle_level_2": "anthropomorphic-divine", "tenor_level_1": "Divine-Human Relationship", "tenor_level_2": "Divine Sovereignty", "explanation": "God's hand represents divine judicial power"}}]
+
+Example 3 - Social Status for Covenant Blessing:
+Hebrew: "head and not the tail"
+Analysis: [{{"type": "metaphor", "vehicle_level_1": "Human Institutions and Relationships", "vehicle_level_2": "social-status", "tenor_level_1": "Covenant & Its Consequences", "tenor_level_2": "Blessing", "explanation": "Hierarchical positioning metaphor for covenant elevation"}}]
+
+Example 4 - Idolatry Classification:
+Hebrew: "sculptured image"
+Analysis: [{{"type": "metaphor", "vehicle_level_1": "Abstract and Internal States", "vehicle_level_2": "moral-spiritual", "tenor_level_1": "Covenant & Its Consequences", "tenor_level_2": "Idolatry", "explanation": "False worship imagery representing spiritual corruption"}}]
+
+Example 5 - Moral/Spiritual State:
+Hebrew: "harden your heart"
+Analysis: [{{"type": "metaphor", "vehicle_level_1": "Abstract and Internal States", "vehicle_level_2": "psychological-cognitive", "tenor_level_1": "Divine-Human Relationship", "tenor_level_2": "Moral & Spiritual State", "explanation": "Internal disposition metaphor for spiritual rebellion"}}]
 
 Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2, confidence (0.7-1.0), speaker, purpose.
 
