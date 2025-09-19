@@ -23,8 +23,17 @@ class FigurativeLanguagePipeline:
         self.use_llm_detection = use_llm_detection
 
         if use_llm_detection:
-            self.detector = HybridFigurativeDetector(prefer_llm=True, use_actual_llm=use_actual_llm, allow_rule_fallback=False)
-            print(f"    [PIPELINE] Using LLM-only detection (Hebrew+English analysis, no rule-based fallback)")
+            # Get API key for two-stage validation
+            gemini_api_key = "AIzaSyBjslLjCzAjarNfu0efWby6YHnqAXmaKIk" if use_actual_llm else None
+            self.detector = HybridFigurativeDetector(
+                prefer_llm=True,
+                use_actual_llm=use_actual_llm,
+                allow_rule_fallback=False,
+                enable_metaphor_validation=True,
+                gemini_api_key=gemini_api_key
+            )
+            validation_status = "with two-stage validation" if use_actual_llm else "simulation mode"
+            print(f"    [PIPELINE] Using LLM-only detection (Hebrew+English analysis, {validation_status})")
         else:
             self.detector = FigurativeLanguageDetector()
             print(f"    [PIPELINE] Using rule-based detection (English only)")
@@ -79,10 +88,12 @@ class FigurativeLanguagePipeline:
 
                     # AI analysis for figurative language - now returns a list
                     if self.use_llm_detection:
-                        # LLM detector expects (english, hebrew) order
-                        detection_results = self.detector.detect_figurative_language(
+                        # LLM detector expects (english, hebrew) order and returns (results, error)
+                        detection_results, error_msg = self.detector.detect_figurative_language(
                             verse['english'], verse['hebrew']
                         )
+                        if error_msg:
+                            print(f"    [LLM] Error: {error_msg}")
                     else:
                         # Rule-based detector expects (english, hebrew) order but returns different format
                         detection_results = self.detector.detect_figurative_language(
@@ -100,11 +111,16 @@ class FigurativeLanguagePipeline:
                             # Prepare figurative language data
                             figurative_data = {
                                 'type': fig_type,
-                                'subcategory': detection_result.get('subcategory'),
+                                'vehicle_level_1': detection_result.get('vehicle_level_1'),
+                                'vehicle_level_2': detection_result.get('vehicle_level_2'),
+                                'tenor_level_1': detection_result.get('tenor_level_1'),
+                                'tenor_level_2': detection_result.get('tenor_level_2'),
                                 'confidence': detection_result['confidence'],
                                 'figurative_text': detection_result.get('figurative_text') or detection_result.get('english_text'),  # English figurative text from LLM
                                 'figurative_text_in_hebrew': detection_result.get('hebrew_source') or detection_result.get('hebrew_text'),  # Hebrew figurative text from LLM
-                                'explanation': detection_result.get('explanation')
+                                'explanation': detection_result.get('explanation'),
+                                'speaker': detection_result.get('speaker'),
+                                'purpose': detection_result.get('purpose')
                             }
 
                             # Insert figurative language record
@@ -155,7 +171,7 @@ class FigurativeLanguagePipeline:
     def _print_results(self, results: Dict):
         """Print processing results"""
         print(f"\n{'='*60}")
-        print(f"📊 PIPELINE RESULTS")
+        print(f"[STATS] PIPELINE RESULTS")
         print(f"{'='*60}")
         print(f"Verses processed: {results['processed_verses']}")
         print(f"Figurative language instances: {results['figurative_found']}")
@@ -176,6 +192,6 @@ class FigurativeLanguagePipeline:
             print(f"  {ref}: {fig_type} ({confidence:.2f}) - '{snippet[:30]}...'")
 
         if results['success']:
-            print(f"\n✅ Pipeline completed successfully!")
+            print(f"\n[OK] Pipeline completed successfully!")
         else:
-            print(f"\n⚠️ Pipeline completed with warnings (high error rate)")
+            print(f"\n[WARNING] Pipeline completed with warnings (high error rate)")

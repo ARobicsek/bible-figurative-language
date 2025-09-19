@@ -40,7 +40,7 @@ class MetaphorValidator:
                          english_text: str,
                          figurative_text: str,
                          explanation: str,
-                         confidence: float) -> Tuple[bool, str, Optional[str]]:
+                         confidence: float) -> Tuple[bool, str, Optional[str], Optional[str]]:
         """
         Validate whether a detected metaphor is truly figurative
 
@@ -52,7 +52,7 @@ class MetaphorValidator:
             confidence: Original confidence score
 
         Returns:
-            Tuple of (is_valid_metaphor: bool, reason: str, error: Optional[str])
+            Tuple of (is_valid_figurative: bool, reason: str, error: Optional[str], corrected_type: Optional[str])
         """
 
         prompt = self._create_validation_prompt(
@@ -81,25 +81,35 @@ class MetaphorValidator:
                 # Parse the validation response
                 response_text = response.text.strip()
 
-                # Expected format: "VALID: reason" or "INVALID: reason"
+                # Expected format: "VALID: reason" or "INVALID: reason" or "RECLASSIFY: type - reason"
                 if response_text.startswith("VALID:"):
                     reason = response_text[6:].strip()
-                    return True, reason, None
+                    return True, reason, None, None
                 elif response_text.startswith("INVALID:"):
                     reason = response_text[8:].strip()
-                    return False, reason, None
+                    return False, reason, None, None
+                elif response_text.startswith("RECLASSIFY:"):
+                    # Format: "RECLASSIFY: personification - reason"
+                    content = response_text[11:].strip()
+                    if " - " in content:
+                        corrected_type, reason = content.split(" - ", 1)
+                        return True, reason, None, corrected_type.strip()
+                    else:
+                        return True, content, None, "personification"  # Default assumption
                 else:
                     # Fallback parsing
-                    if "VALID" in response_text.upper():
-                        return True, response_text, None
+                    if "RECLASSIFY" in response_text.upper():
+                        return True, response_text, None, "personification"
+                    elif "VALID" in response_text.upper():
+                        return True, response_text, None, None
                     else:
-                        return False, response_text, None
+                        return False, response_text, None, None
             else:
-                return False, "No response generated", "Empty response"
+                return False, "No response generated", "Empty response", None
 
         except Exception as e:
             error_msg = f"Validation API error: {str(e)}"
-            return False, "API error during validation", error_msg
+            return False, "API error during validation", error_msg, None
 
     def _create_validation_prompt(self,
                                  hebrew_text: str,
@@ -120,64 +130,72 @@ Text: "{figurative_text}"
 Explanation: {explanation}
 Original Confidence: {confidence}
 
-🔍 CRITICAL ANALYSIS NEEDED: Distinguish between literal language and genuine metaphorical transfers across conceptual domains.
+[ANALYSIS] CRITICAL ANALYSIS NEEDED: Distinguish between literal language and genuine metaphorical transfers across conceptual domains.
 
-✅ ACCEPT AS VALID METAPHOR:
+[ACCEPT] ACCEPT AS VALID METAPHOR:
 
-🔥 DIVINE ANTHROPOMORPHISM (Always metaphorical - God is incorporeal):
+[DIVINE] DIVINE ANTHROPOMORPHISM (Always metaphorical - God is incorporeal):
 - God's body parts: "mighty hand", "outstretched arm", "God's shoulders", "hide My face"
 - Divine physical actions: "God's sword devours", "My arrows drunk with blood"
 - These are ALWAYS metaphorical since God has no literal body
 
-🌍 CROSS-DOMAIN COMPARISONS:
+[CROSS-DOMAIN] CROSS-DOMAIN COMPARISONS:
 - Places as other things: "Egypt = iron blast furnace" (nation as industrial equipment)
 - People as animals: "Dan = lion's whelp", "stiff-necked people"
 - People as objects: "descendants = stars", "Israel = vine"
 - Abstract as concrete: "anger = fire", "protection = shield"
 
-🌱 METAPHORICAL LANGUAGE TRANSFERS:
+[TRANSFERS] METAPHORICAL LANGUAGE TRANSFERS:
 - Agricultural → Human: "first fruit of vigor" (child as harvest)
 - Spatial → Moral: "turn right/left" (physical direction for spiritual deviation)
 - Military → Divine: divine weapons, battles (God's warfare is metaphorical)
 - Commercial → Spiritual: when economic terms describe non-economic relationships
 
-🛑 REJECT AS LITERAL:
+[REJECT] REJECT AS LITERAL:
 
-📜 STANDARD RELIGIOUS FORMULAS:
+[RELIGIOUS] STANDARD RELIGIOUS FORMULAS:
 - "holy people" = technical covenantal status
 - "I make this covenant" = legal terminology
 - "signs and proofs" = standard covenant language
+- "God spoke/said/heard/saw/came/went" = standard biblical divine actions (NOT figurative)
 
-⚔️ HUMAN MILITARY ACTIONS (but NOT divine warfare):
+[MILITARY] HUMAN MILITARY ACTIONS (but NOT divine warfare):
 - Human soldiers' actions: "defeat them", "march against"
 - Literal human weapons and tactics
 
-🏪 LITERAL COMMERCIAL/LEGAL ACTIONS:
+[COMMERCIAL] LITERAL COMMERCIAL/LEGAL ACTIONS:
 - "honest weights" = actual trade regulation
 - "pull off sandal" = actual legal ritual
 - "pay wages" = literal economic transaction
 
-📍 LITERAL GEOGRAPHIC/HISTORICAL REFERENCES:
+[GEOGRAPHIC] LITERAL GEOGRAPHIC/HISTORICAL REFERENCES:
 - Actual place names and historical events
 - Literal population descriptions without comparison
 
 EXAMPLES OF VALID METAPHORS TO ACCEPT:
-✅ "mighty hand of God" = divine power (God has no literal hand)
-✅ "sword devours flesh" = divine judgment (God's sword is metaphorical)
-✅ "Egypt = iron blast furnace" = nation compared to industrial equipment
-✅ "first fruit of vigor" = child compared to agricultural harvest
-✅ "turn right or left" = moral deviation using spatial metaphor
-✅ "arrows drunk with blood" = divine weapons (God's arrows are metaphorical)
+[VALID] "mighty hand of God" = divine power (God has no literal hand)
+[VALID] "sword devours flesh" = divine judgment (God's sword is metaphorical)
+[VALID] "Egypt = iron blast furnace" = nation compared to industrial equipment
+[VALID] "first fruit of vigor" = child compared to agricultural harvest
+[VALID] "turn right or left" = moral deviation using spatial metaphor
+[VALID] "arrows drunk with blood" = divine weapons (God's arrows are metaphorical)
 
 EXAMPLES TO REJECT:
-❌ "honest weights" = literal commercial regulation (no domain transfer)
-❌ "we were slaves" = literal historical statement
-❌ "holy people" = technical religious status (not comparative)
-❌ "signs and proofs" = standard covenant terminology
+[REJECT] "honest weights" = literal commercial regulation (no domain transfer)
+[REJECT] "we were slaves" = literal historical statement
+[REJECT] "holy people" = technical religious status (not comparative)
+[REJECT] "signs and proofs" = standard covenant terminology
 
 RESPONSE FORMAT:
 If this is a valid metaphor: "VALID: [brief reason why it crosses domains or involves divine anthropomorphism]"
 If this is NOT a metaphor: "INVALID: [specific reason - technical term/literal action/standard formula/etc.]"
+If this is figurative but NOT a metaphor: "RECLASSIFY: [correct_type] - [reason why it should be reclassified]"
+
+RECLASSIFICATION GUIDELINES:
+- Use "RECLASSIFY: personification" when God is given unusual human characteristics but it's not a cross-domain comparison
+- Divine anthropomorphism with body parts (hand, arm, face) = metaphor (God has no body)
+- Standard biblical divine actions are NOT figurative: "God spoke", "God heard", "God saw", "God came", "God went" = normal biblical language
+- Only unusual emotional/physical descriptions are personification: "God's anger burned hot like fire", "God laughed"
 
 Focus on identifying genuine cross-domain comparisons and divine anthropomorphism while filtering out technical religious terminology.
 

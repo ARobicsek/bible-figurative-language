@@ -130,7 +130,7 @@ class LLMUsageMonitor:
 
         # Check if current provider has exceeded limits
         if current_usage['limit_exceeded'] or current_usage['limit_usage_percent'] > 90:
-            print(f"⚠️ {self.current_provider} usage limit approached/exceeded ({current_usage['limit_usage_percent']:.1f}%)")
+            print(f"[WARNING] {self.current_provider} usage limit approached/exceeded ({current_usage['limit_usage_percent']:.1f}%)")
 
             # Find alternative provider
             for provider in sorted(self.provider_config.keys(),
@@ -138,11 +138,11 @@ class LLMUsageMonitor:
                 if provider != self.current_provider:
                     alt_usage = self.get_daily_usage(provider)
                     if not alt_usage['limit_exceeded'] and alt_usage['limit_usage_percent'] < 80:
-                        print(f"🔄 Switching to {provider} (usage: {alt_usage['limit_usage_percent']:.1f}%)")
+                        print(f"[SWITCHING] Switching to {provider} (usage: {alt_usage['limit_usage_percent']:.1f}%)")
                         self.current_provider = provider
                         return provider
 
-            print(f"⚠️ All providers near limits, continuing with {self.current_provider}")
+            print(f"[WARNING] All providers near limits, continuing with {self.current_provider}")
 
         return self.current_provider
 
