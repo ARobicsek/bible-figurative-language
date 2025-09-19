@@ -40,6 +40,7 @@ class HybridFigurativeDetector:
             'metaphors_detected': 0,
             'metaphors_validated': 0,
             'metaphors_rejected': 0,
+            'metaphors_reclassified': 0,
             'validation_errors': 0
         }
 
@@ -261,9 +262,10 @@ Analysis:"""
                         'pattern': 'llm_detected',
                         'figurative_text': item.get('english_text', ''),
                         'explanation': item.get('explanation', ''),
-                        'subcategory': item.get('subcategory', ''),  # Keep for backward compatibility
-                        'subcategory_level_1': item.get('subcategory_level_1', ''),
-                        'subcategory_level_2': item.get('subcategory_level_2', ''),
+                        'vehicle_level_1': item.get('vehicle_level_1', ''),
+                        'vehicle_level_2': item.get('vehicle_level_2', ''),
+                        'tenor_level_1': item.get('tenor_level_1', ''),
+                        'tenor_level_2': item.get('tenor_level_2', ''),
                         'hebrew_source': item.get('hebrew_text', ''),
                         'speaker': item.get('speaker', ''),
                         'purpose': item.get('purpose', '')
@@ -294,8 +296,8 @@ Analysis:"""
                 confidence = result.get('confidence', 0.0)
 
                 try:
-                    # Validate with stage 2
-                    is_valid, reason, error = self.metaphor_validator.validate_metaphor(
+                    # Validate with stage 2 (now returns 4 values)
+                    is_valid, reason, error, corrected_type = self.metaphor_validator.validate_metaphor(
                         hebrew_text, english_text, figurative_text, explanation, confidence
                     )
 
@@ -305,9 +307,16 @@ Analysis:"""
                         # On error, keep the metaphor (conservative approach)
                         validated_results.append(result)
                     elif is_valid:
-                        self.validation_stats['metaphors_validated'] += 1
-                        print(f"    [VALIDATE] VALID: Metaphor validated: {figurative_text}")
-                        validated_results.append(result)
+                        if corrected_type:
+                            # Reclassify the type
+                            self.validation_stats['metaphors_reclassified'] = self.validation_stats.get('metaphors_reclassified', 0) + 1
+                            print(f"    [VALIDATE] RECLASSIFIED: {figurative_text} -> {corrected_type}: {reason}")
+                            result['type'] = corrected_type  # Update the type
+                            validated_results.append(result)
+                        else:
+                            self.validation_stats['metaphors_validated'] += 1
+                            print(f"    [VALIDATE] VALID: Metaphor validated: {figurative_text}")
+                            validated_results.append(result)
                     else:
                         self.validation_stats['metaphors_rejected'] += 1
                         print(f"    [VALIDATE] REJECTED: Metaphor rejected: {figurative_text} - {reason}")
