@@ -184,14 +184,22 @@ Original Confidence: {confidence}
 - "signs and proofs" = standard covenant language
 - "hear you mentioned" = literal reputation spread in ANE context
 
-[MILITARY] HUMAN MILITARY ACTIONS (but NOT divine warfare):
-- Human soldiers' actions: "defeat them", "march against"
+[MILITARY] LITERAL MILITARY ACTIONS & TERMS (NOT figurative):
+- Human soldiers' actions: "defeat them", "march against", "wiping out", "conquered"
+- Military terminology: "shock-troops" (חֲלוּצִים), "warriors" (בְּנֵי־חָֽיִל), "vanguard", "armed men"
 - Literal human weapons and tactics
+- Historical conquest descriptions: "the Caphtorim wiped them out"
+- Actual tribal displacements and military campaigns
 
 [COMMERCIAL] LITERAL COMMERCIAL/LEGAL ACTIONS:
 - "honest weights" = actual trade regulation
 - "pull off sandal" = actual legal ritual
 - "pay wages" = literal economic transaction
+
+[PROCEDURAL] LITERAL PROCEDURAL/TECHNICAL TERMS (NOT figurative):
+- בְּמַסֹּת (trials/tests) = literal plagues and trials in Egypt (NOT metaphorical)
+- Technical ritual terms and procedural language
+- Legal formulations and covenant procedures
 
 [DIVINE JUDGMENT] LITERAL DIVINE JUDGMENT ACTIONS (NOT figurative):
 - "scatter you among the peoples" = literal exile/diaspora (standard ANE practice)
@@ -224,6 +232,14 @@ EXAMPLES OF VALID METAPHORS TO ACCEPT:
 
 EXAMPLES OF RECLASSIFICATION:
 [RECLASSIFY] "dread and fear...put upon peoples" = PERSONIFICATION (abstract concepts acting as agents)
+[RECLASSIFY] "throw them into utter panic" = PERSONIFICATION (divine emotional/psychological action)
+[RECLASSIFY] "God will confuse them" = PERSONIFICATION (divine psychological action on people)
+[RECLASSIFY] "impassioned God" = PERSONIFICATION (divine emotion - God having human feelings like jealousy/passion)
+[RECLASSIFY] "God crossed over" = PERSONIFICATION (divine human-like physical action - God moving like a human)
+[RECLASSIFY] "God filled with wisdom" = PERSONIFICATION (divine psychological action of imbuing mental states)
+[RECLASSIFY] "God will pursue" = PERSONIFICATION (divine action using human behavioral patterns)
+[RECLASSIFY] "God remembers/forgets" = PERSONIFICATION (divine human-like mental processes)
+[RECLASSIFY] "God regretted/changed mind" = PERSONIFICATION (divine human-like emotional/mental changes)
 
 EXAMPLES TO REJECT:
 [REJECT] "honest weights" = literal commercial regulation (no domain transfer)
@@ -245,6 +261,10 @@ EXAMPLES TO REJECT:
 [REJECT] "mountain ablaze with fire" = literal theophanic manifestation (NOT personification)
 [REJECT] "sculptured image" = literal idolatry prohibition (NOT metaphorical)
 [REJECT] "proof of wisdom" = literal demonstration (NOT metaphorical)
+[REJECT] "shock-troops" = literal military terminology (NOT metaphorical)
+[REJECT] "warriors all" = standard military description (NOT metaphorical)
+[REJECT] "wiping out the Horites" = literal historical conquest (NOT metaphorical)
+[REJECT] בְּמַסֹּת (trials/tests) = literal plagues and trials in Egypt (NOT metaphorical)
 
 RESPONSE FORMAT:
 If this is valid figurative language as classified: "VALID: [brief reason why it's genuinely figurative]"
@@ -262,13 +282,18 @@ METAPHOR (cross-domain comparison or divine body parts):
 
 PERSONIFICATION (human traits given to non-human entities):
 - Abstract concepts as agents: "dread and fear...put upon peoples" = PERSONIFICATION
-- God's emotions: "God's anger burned", "God was jealous", "God laughed" = PERSONIFICATION
-- God's psychological actions: "God regretted", "God remembered" = PERSONIFICATION
+- God's emotions: "God's anger burned", "God was jealous", "impassioned God", "God laughed" = PERSONIFICATION
+- God's psychological actions: "God regretted", "God remembered", "God forgot", "God changed mind" = PERSONIFICATION
+- Divine emotional actions on people: "throw into panic", "confuse them", "cause terror" = PERSONIFICATION
+- Divine human-like physical actions: "God crossed over", "God went before", "God pursued" = PERSONIFICATION
+- Divine mental/psychological imbuing: "God filled with wisdom", "God gave understanding" = PERSONIFICATION
 - Natural phenomena acting like humans: "mountains skipped", "sea fled" = PERSONIFICATION
 
 RECLASSIFY when:
 - Abstract concepts acting as agents are labeled "metaphor" but should be "personification" (dread and fear acting)
-- Actions of God are labeled "metaphor" but should be "personification" (emotions, regret, remembering)
+- Divine emotional/psychological actions are labeled "metaphor" but should be "personification" (emotions, regret, remembering, causing panic, confusion)
+- Divine human-like behaviors are labeled "metaphor" but should be "personification" (crossing over, going before, pursuing, filling with wisdom)
+- God having human emotions labeled "metaphor" but should be "personification" (impassioned, jealous, angry, pleased, grieved)
 - Divine body parts are labeled "personification" but should be "metaphor" (hand, arm, face)
 - Natural phenomena acting human-like are labeled "metaphor" but should be "personification"
 
