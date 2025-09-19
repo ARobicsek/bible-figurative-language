@@ -287,8 +287,9 @@ Analysis:"""
         validated_results = []
 
         for result in results:
-            if result.get('type') == 'metaphor':
-                self.validation_stats['metaphors_detected'] += 1
+            if result.get('type') in ['metaphor', 'simile']:
+                fig_type = result.get('type')
+                self.validation_stats[f'{fig_type}s_detected'] = self.validation_stats.get(f'{fig_type}s_detected', 0) + 1
 
                 # Extract validation parameters
                 figurative_text = result.get('figurative_text', '')
@@ -297,38 +298,38 @@ Analysis:"""
 
                 try:
                     # Validate with stage 2 (now returns 4 values)
-                    is_valid, reason, error, corrected_type = self.metaphor_validator.validate_metaphor(
-                        hebrew_text, english_text, figurative_text, explanation, confidence
+                    is_valid, reason, error, corrected_type = self.metaphor_validator.validate_figurative_language(
+                        fig_type, hebrew_text, english_text, figurative_text, explanation, confidence
                     )
 
                     if error:
                         self.validation_stats['validation_errors'] += 1
-                        print(f"    [VALIDATE] Error validating metaphor: {error}")
-                        # On error, keep the metaphor (conservative approach)
+                        print(f"    [VALIDATE] Error validating {fig_type}: {error}")
+                        # On error, keep the figurative language (conservative approach)
                         validated_results.append(result)
                     elif is_valid:
                         if corrected_type:
                             # Reclassify the type
-                            self.validation_stats['metaphors_reclassified'] = self.validation_stats.get('metaphors_reclassified', 0) + 1
+                            self.validation_stats[f'{fig_type}s_reclassified'] = self.validation_stats.get(f'{fig_type}s_reclassified', 0) + 1
                             print(f"    [VALIDATE] RECLASSIFIED: {figurative_text} -> {corrected_type}: {reason}")
                             result['type'] = corrected_type  # Update the type
                             validated_results.append(result)
                         else:
-                            self.validation_stats['metaphors_validated'] += 1
-                            print(f"    [VALIDATE] VALID: Metaphor validated: {figurative_text}")
+                            self.validation_stats[f'{fig_type}s_validated'] = self.validation_stats.get(f'{fig_type}s_validated', 0) + 1
+                            print(f"    [VALIDATE] VALID: {fig_type.capitalize()} validated: {figurative_text}")
                             validated_results.append(result)
                     else:
-                        self.validation_stats['metaphors_rejected'] += 1
-                        print(f"    [VALIDATE] REJECTED: Metaphor rejected: {figurative_text} - {reason}")
+                        self.validation_stats[f'{fig_type}s_rejected'] = self.validation_stats.get(f'{fig_type}s_rejected', 0) + 1
+                        print(f"    [VALIDATE] REJECTED: {fig_type.capitalize()} rejected: {figurative_text} - {reason}")
                         # Don't add to validated_results (filter out)
 
                 except Exception as e:
                     self.validation_stats['validation_errors'] += 1
                     print(f"    [VALIDATE] Exception during validation: {e}")
-                    # On exception, keep the metaphor (conservative approach)
+                    # On exception, keep the figurative language (conservative approach)
                     validated_results.append(result)
             else:
-                # Non-metaphor types pass through without validation
+                # Other figurative language types (personification, idiom, hyperbole, metonymy) pass through without validation
                 validated_results.append(result)
 
         return validated_results

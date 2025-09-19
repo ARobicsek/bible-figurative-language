@@ -1,69 +1,78 @@
-# Phase 10 Complete: Vehicle/Tenor Classification System
+# Phase 10.5 Complete: Enhanced Vehicle/Tenor Classification System
 
 ## Overview
 
-Phase 10 successfully implemented a comprehensive Vehicle/Tenor classification system for metaphor analysis, resolving field population issues from Phase 9 and deploying advanced metaphor structure analysis across all of Deuteronomy.
+Phase 10.5 successfully enhanced the Vehicle/Tenor classification system with improved precision and theological accuracy, implementing scholarly recommendations and reprocessing all of Deuteronomy with the refined categorization guidelines.
 
 ## Key Achievements
 
-### 1. Vehicle/Tenor Schema Implementation ✅
+### 1. Enhanced Vehicle Classification System ✅
 
-**Database Schema Updates:**
-- Added `vehicle_level_1` field for source domain broad categories
-- Added `vehicle_level_2` field for source domain specific domains
-- Added `tenor_level_1` field for target domain broad categories
-- Added `tenor_level_2` field for target domain specific domains
-- Updated all database operations to support new schema
+**New Level 1 Categories Added:**
+- **Body and Anatomy** - for human/divine body parts and physiological functions
+- **Ritual and Worship** - for religious practices, ceremonial activities, and covenantal symbols
 
-**Files Updated:**
-- `src/hebrew_figurative_db/database/db_manager.py` - Complete schema update
-- Database table creation with vehicle/tenor fields and indexes
+**Refined Level 2 Subcategories:**
+- **political-legal**: Combined political and legal domains for judicial actions and authority
+- **interpersonal**: General human relationships and interactions
+- **social-status**: Hierarchical positioning and social standing (head/tail, high above, etc.)
+- **psychological-cognitive**: Mental states, thoughts, understanding
+- **moral-spiritual**: Sin, righteousness, wickedness
+- **anthropomorphic-divine**: God's body parts representing power/presence
+- **human-body**: Human body parts for actions/emotions
 
-### 2. Fixed Field Population Issues ✅
+### 2. Streamlined Tenor Classification System ✅
 
-**Root Cause:** Phase 9 had LLM providing correct subcategory data but pipeline not saving it to database.
+**Simplified Level 1 Categories:**
+- **Divine-Human Relationship** - God's nature, character, actions; humanity/Israel's identity
+- **Covenant & Its Consequences** - blessings for obedience, curses for disobedience
 
-**Solution:**
-- Fixed `pipeline.py` figurative_data dictionary to include vehicle/tenor fields
-- Updated `hybrid_detector.py` field mapping to pass vehicle/tenor data
-- Ensured complete data flow from LLM → hybrid_detector → pipeline → database
+**Enhanced Level 2 Subcategories:**
+- **Divine Sovereignty**: God as Creator, ultimate ruler, judge, authority
+- **Divine Presence**: God's tangible manifestations, closeness, theophany
+- **Divine Provision**: God as sustainer, provider, deliverer, nurturer
+- **Israel's Identity**: Israel's unique covenantal status as YHWH's chosen people
+- **Moral & Spiritual State**: Internal spiritual/moral dispositions, heart/soul metaphors
+- **Blessing**: Rewards of obedience - material prosperity, social elevation
+- **Curse**: Consequences of disobedience - material destitution, humiliation, subjugation
+- **Idolatry**: False worship, spiritual adultery, no-gods
+- **Wisdom & Discernment**: Understanding, foolishness, intellectual/spiritual insight
 
-**Files Fixed:**
-- `src/hebrew_figurative_db/pipeline.py:112-124` - Added vehicle/tenor field mapping
-- `src/hebrew_figurative_db/ai_analysis/hybrid_detector.py:265-268` - Fixed field extraction
+### 3. Enhanced Classification Guidelines ✅
 
-### 3. Enhanced LLM Classification System ✅
+**Vehicle Classification Precision:**
+- Choose the most SPECIFIC appropriate category
+- Avoid using broad "social" when more precise options exist
+- Use "military" for conquest/warfare imagery (e.g., "tread on their backs" = military, not social)
+- Use "political-legal" for judicial actions (e.g., "hand lays hold on judgment" = political-legal)
+- Reserve "familial" for direct kinship metaphors (father, son, brother)
+- Use "social-status" for hierarchical positioning (head/tail, high above, treading on backs)
 
-**Complete Vehicle/Tenor Analysis:**
-```
-Vehicle (Source Domain) - What is being compared:
-Level 1: The Natural World, Human Institutions and Relationships, etc.
-Level 2: architectural, agricultural, military, familial, etc.
+**Tenor Classification Precision:**
+- Distinguish between DIVINE PROVISION (God's sustaining care) vs BLESSING (covenant rewards)
+- Use "Idolatry" subcategory for false worship metaphors (sculptured image, no-gods)
+- Use "Moral & Spiritual State" for internal dispositions (harden heart, treacherous breed)
+- Reserve "Israel's Identity" for covenantal status metaphors (children of God, treasured people)
 
-Tenor (Target Domain) - What is being described:
-Level 1: Divine Attributes, Human Experience, Abstract Concepts, etc.
-Level 2: protection, power, covenant, blessing, etc.
-```
+**Enhanced Examples:**
+- Military vehicle for divine action (treading on backs)
+- Anthropomorphic divine body parts (hand lays hold on judgment)
+- Social status for covenant blessing (head and not tail)
+- Idolatry classification (sculptured image)
+- Moral/spiritual state metaphors (harden your heart)
 
-**Enhanced Personification Guidelines:**
-- Divine emotions (anger, delight, jealousy) = personification
-- Divine body parts (hand, arm, face) = metaphor
-- Resolved classification ambiguities from previous phases
+### 4. Enhanced System Deployment ✅
 
-**Files Enhanced:**
-- `src/hebrew_figurative_db/ai_analysis/gemini_api.py` - Complete vehicle/tenor prompt system
+**Complete Deuteronomy Reprocessing:**
+- Created `run_deuteronomy_enhanced_system.py` for all 34 chapters with enhanced system
+- Launched background processing for complete reanalysis
+- Database: `deuteronomy_enhanced_vehicle_tenor_YYYYMMDD_HHMMSS.db`
 
-### 4. Production Deployment ✅
-
-**Complete Deuteronomy Processing:**
-- Created `run_all_deuteronomy.py` for all 34 chapters
-- Launched background processing for complete analysis
-- Database: `deuteronomy_complete_final.db`
-
-**Cleanup Operations:**
-- Removed test files: `test_deuteronomy_30_32.py`, `run_deuteronomy_30_32_final.py`
-- Cleaned cache directories and temporary databases
-- Streamlined codebase for production use
+**Validation Testing:**
+- Created and executed test scripts validating improved categorization
+- Confirmed military imagery correctly classified as "military" not "social"
+- Verified social status metaphors use "social-status" subcategory
+- Validated enhanced tenor classifications (Blessing, Divine Provision, etc.)
 
 ## Technical Implementation
 
@@ -187,4 +196,4 @@ The system is now ready for:
 
 ## Status: COMPLETE ✅
 
-Phase 10 Vehicle/Tenor Classification System has been successfully implemented and deployed. The system now provides comprehensive metaphor structure analysis with source and target domain identification, resolving all field population issues and enabling advanced biblical scholarship research.
+Phase 10.5 Enhanced Vehicle/Tenor Classification System has been successfully implemented and deployed. The system now provides improved precision and theological accuracy in metaphor structure analysis, with refined categorization guidelines, new vehicle domains, and streamlined tenor classifications enabling advanced biblical scholarship research with enhanced scholarly value.

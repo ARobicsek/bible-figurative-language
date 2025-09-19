@@ -35,16 +35,18 @@ class MetaphorValidator:
 
         self.validation_count = 0
 
-    def validate_metaphor(self,
-                         hebrew_text: str,
-                         english_text: str,
-                         figurative_text: str,
-                         explanation: str,
-                         confidence: float) -> Tuple[bool, str, Optional[str], Optional[str]]:
+    def validate_figurative_language(self,
+                                   fig_type: str,
+                                   hebrew_text: str,
+                                   english_text: str,
+                                   figurative_text: str,
+                                   explanation: str,
+                                   confidence: float) -> Tuple[bool, str, Optional[str], Optional[str]]:
         """
-        Validate whether a detected metaphor is truly figurative
+        Validate whether detected figurative language is truly figurative
 
         Args:
+            fig_type: Type of figurative language (metaphor, simile, etc.)
             hebrew_text: Original Hebrew text
             english_text: English translation
             figurative_text: The detected figurative expression
@@ -56,7 +58,7 @@ class MetaphorValidator:
         """
 
         prompt = self._create_validation_prompt(
-            hebrew_text, english_text, figurative_text, explanation, confidence
+            fig_type, hebrew_text, english_text, figurative_text, explanation, confidence
         )
 
         try:
@@ -112,6 +114,7 @@ class MetaphorValidator:
             return False, "API error during validation", error_msg, None
 
     def _create_validation_prompt(self,
+                                 fig_type: str,
                                  hebrew_text: str,
                                  english_text: str,
                                  figurative_text: str,
@@ -119,20 +122,23 @@ class MetaphorValidator:
                                  confidence: float) -> str:
         """Create the validation prompt"""
 
-        prompt = f"""You are a biblical Hebrew scholar conducting a FINAL VALIDATION of metaphor detection. Your task is to determine if this detected "metaphor" is genuinely figurative or if it's actually literal language.
+        prompt = f"""You are a biblical Hebrew scholar conducting a FINAL VALIDATION of figurative language detection. Your task is to determine if this detected "{fig_type}" is genuinely figurative or if it's actually literal language, and whether the type classification is correct.
 
 CONTEXT:
 Hebrew: {hebrew_text}
 English: {english_text}
 
-DETECTED "METAPHOR":
+DETECTED "{fig_type.upper()}":
 Text: "{figurative_text}"
 Explanation: {explanation}
 Original Confidence: {confidence}
 
-[ANALYSIS] CRITICAL ANALYSIS NEEDED: Distinguish between literal language and genuine metaphorical transfers across conceptual domains.
+[ANALYSIS] CRITICAL ANALYSIS NEEDED:
+1. Distinguish between literal language and genuine figurative language
+2. For SIMILES: Determine if using "as/like" for literal comparison vs. figurative comparison
+3. For METAPHORS vs PERSONIFICATION: Determine correct classification
 
-[ACCEPT] ACCEPT AS VALID METAPHOR:
+[ACCEPT] ACCEPT AS VALID FIGURATIVE LANGUAGE:
 
 [DIVINE] DIVINE ANTHROPOMORPHISM (Always metaphorical - God is incorporeal):
 - God's body parts: "mighty hand", "outstretched arm", "God's shoulders", "hide My face"
@@ -151,13 +157,32 @@ Original Confidence: {confidence}
 - Military → Divine: divine weapons, battles (God's warfare is metaphorical)
 - Commercial → Spiritual: when economic terms describe non-economic relationships
 
+[SIMILE] SIMILE-SPECIFIC VALIDATION:
+- ACCEPT: "like a lion" (animal comparison), "as the stars of heaven" (quantity comparison)
+- REJECT: "as the Edomites did for me" (literal historical precedent, not figurative comparison)
+- REJECT: "do X as you do Y" (instructional comparison, not figurative)
+- REJECT: "die as your brother Aaron died" (manner description, not figurative)
+
 [REJECT] REJECT AS LITERAL:
 
-[RELIGIOUS] STANDARD RELIGIOUS FORMULAS:
+[HISTORICAL] LITERAL HISTORICAL REFERENCES:
+- "as the descendants of Esau did for me" = literal historical precedent (NOT figurative)
+- "as the Moabites did" = actual past events being referenced literally
+- Any reference to what specific peoples actually did historically
+
+[RELIGIOUS] STANDARD BIBLICAL DIVINE ACTIONS & ATTRIBUTES (NOT figurative):
+- "God blessed/has blessed" = standard divine action (NOT metaphorical)
+- "God watched over/has watched over" = standard divine care (NOT metaphorical)
+- "God was/has been with" = standard divine presence (NOT metaphorical)
+- "God spoke/said/heard/saw/came/went" = standard biblical divine actions
+- "compassionate God" = standard divine attribute (NOT metaphorical)
+- "will not fail you" = standard covenant faithfulness (NOT metaphorical)
+- "Your greatness" = standard divine attribute (NOT metaphorical)
+- "great nation" = standard political descriptor (NOT metaphorical)
 - "holy people" = technical covenantal status
 - "I make this covenant" = legal terminology
 - "signs and proofs" = standard covenant language
-- "God spoke/said/heard/saw/came/went" = standard biblical divine actions (NOT figurative)
+- "hear you mentioned" = literal reputation spread in ANE context
 
 [MILITARY] HUMAN MILITARY ACTIONS (but NOT divine warfare):
 - Human soldiers' actions: "defeat them", "march against"
@@ -168,9 +193,26 @@ Original Confidence: {confidence}
 - "pull off sandal" = actual legal ritual
 - "pay wages" = literal economic transaction
 
+[DIVINE JUDGMENT] LITERAL DIVINE JUDGMENT ACTIONS (NOT figurative):
+- "scatter you among the peoples" = literal exile/diaspora (standard ANE practice)
+- "drive you out" = literal forced deportation (NOT metaphorical)
+- "wipe out/destroy" = literal divine judgment (NOT metaphorical)
+- All covenant curses and judgments = literal consequences, not metaphorical
+
+[QUANTITATIVE] LITERAL NUMERICAL/QUANTITATIVE DESCRIPTIONS (NOT figurative):
+- "scant few" = literal numerical description (NOT metaphorical)
+- "many/few" = quantitative, not metaphorical
+- "great/small" when describing size/quantity = literal measurement
+
+[THEOPHANIC] LITERAL DIVINE MANIFESTATION (NOT figurative):
+- "mountain ablaze with fire" = literal theophanic manifestation (NOT personification)
+- Divine fire, clouds, thunder = literal divine presence in ANE context
+- "sculptured image" = literal idolatry prohibition (NOT metaphorical)
+
 [GEOGRAPHIC] LITERAL GEOGRAPHIC/HISTORICAL REFERENCES:
 - Actual place names and historical events
 - Literal population descriptions without comparison
+- "this great wilderness" = geographic location (NOT metaphorical)
 
 EXAMPLES OF VALID METAPHORS TO ACCEPT:
 [VALID] "mighty hand of God" = divine power (God has no literal hand)
@@ -180,22 +222,61 @@ EXAMPLES OF VALID METAPHORS TO ACCEPT:
 [VALID] "turn right or left" = moral deviation using spatial metaphor
 [VALID] "arrows drunk with blood" = divine weapons (God's arrows are metaphorical)
 
+EXAMPLES OF RECLASSIFICATION:
+[RECLASSIFY] "dread and fear...put upon peoples" = PERSONIFICATION (abstract concepts acting as agents)
+
 EXAMPLES TO REJECT:
 [REJECT] "honest weights" = literal commercial regulation (no domain transfer)
 [REJECT] "we were slaves" = literal historical statement
 [REJECT] "holy people" = technical religious status (not comparative)
 [REJECT] "signs and proofs" = standard covenant terminology
+[REJECT] "has blessed you" = standard divine action (NOT metaphorical)
+[REJECT] "has watched over your wanderings" = standard divine care (NOT metaphorical)
+[REJECT] "has been with you" = standard divine presence (NOT metaphorical)
+[REJECT] "this great wilderness" = geographic description (NOT metaphorical)
+[REJECT] "they shall hear you mentioned" = literal reputation spread in ANE context
+[REJECT] "Your greatness" = standard divine attribute (NOT metaphorical)
+[REJECT] "compassionate God" = standard divine attribute (NOT metaphorical)
+[REJECT] "will not fail you" = standard covenant language (NOT metaphorical)
+[REJECT] "great nation" = standard political descriptor (NOT metaphorical)
+[REJECT] "scatter you among peoples" = literal exile/diaspora (NOT metaphorical)
+[REJECT] "drive you out" = literal forced deportation (NOT metaphorical)
+[REJECT] "scant few" = literal numerical description (NOT metaphorical)
+[REJECT] "mountain ablaze with fire" = literal theophanic manifestation (NOT personification)
+[REJECT] "sculptured image" = literal idolatry prohibition (NOT metaphorical)
+[REJECT] "proof of wisdom" = literal demonstration (NOT metaphorical)
 
 RESPONSE FORMAT:
-If this is a valid metaphor: "VALID: [brief reason why it crosses domains or involves divine anthropomorphism]"
-If this is NOT a metaphor: "INVALID: [specific reason - technical term/literal action/standard formula/etc.]"
-If this is figurative but NOT a metaphor: "RECLASSIFY: [correct_type] - [reason why it should be reclassified]"
+If this is valid figurative language as classified: "VALID: [brief reason why it's genuinely figurative]"
+If this is NOT figurative: "INVALID: [specific reason - technical term/literal action/standard formula/historical reference/etc.]"
+If this is figurative but incorrectly classified: "RECLASSIFY: [correct_type] - [reason why it should be reclassified]"
 
 RECLASSIFICATION GUIDELINES:
-- Use "RECLASSIFY: personification" when God is given unusual human characteristics but it's not a cross-domain comparison
-- Divine anthropomorphism with body parts (hand, arm, face) = metaphor (God has no body)
-- Standard biblical divine actions are NOT figurative: "God spoke", "God heard", "God saw", "God came", "God went" = normal biblical language
-- Only unusual emotional/physical descriptions are personification: "God's anger burned hot like fire", "God laughed"
+
+[METAPHOR] vs [PERSONIFICATION] - KEY DISTINCTIONS:
+
+METAPHOR (cross-domain comparison or divine body parts):
+- God's body parts: "mighty hand", "outstretched arm", "hide My face" = METAPHOR (God has no literal body)
+- Cross-domain transfers: "Egypt = iron furnace", "Israel = vine" = METAPHOR
+- A is B statements: "The Lord is my shepherd" = METAPHOR
+
+PERSONIFICATION (human traits given to non-human entities):
+- Abstract concepts as agents: "dread and fear...put upon peoples" = PERSONIFICATION
+- God's emotions: "God's anger burned", "God was jealous", "God laughed" = PERSONIFICATION
+- God's psychological actions: "God regretted", "God remembered" = PERSONIFICATION
+- Natural phenomena acting like humans: "mountains skipped", "sea fled" = PERSONIFICATION
+
+RECLASSIFY when:
+- Abstract concepts acting as agents are labeled "metaphor" but should be "personification" (dread and fear acting)
+- Actions of God are labeled "metaphor" but should be "personification" (emotions, regret, remembering)
+- Divine body parts are labeled "personification" but should be "metaphor" (hand, arm, face)
+- Natural phenomena acting human-like are labeled "metaphor" but should be "personification"
+
+[ANE CONTEXT] ANCIENT NEAR EASTERN LITERARY CONTEXT:
+Consider what would be understood as literal vs figurative by an Ancient Near Eastern reader:
+- "Hear you mentioned" = literal reputation spread (standard ANE concept)
+- Divine blessing, watching, presence = standard divine activities (NOT figurative)
+- Geographic descriptions = typically literal unless explicitly comparative
 
 Focus on identifying genuine cross-domain comparisons and divine anthropomorphism while filtering out technical religious terminology.
 
@@ -265,7 +346,8 @@ def test_metaphor_validator():
         print(f"\n--- {case['name']} ---")
         print(f"Text: {case['figurative_text']}")
 
-        is_valid, reason, error = validator.validate_metaphor(
+        is_valid, reason, error, corrected_type = validator.validate_figurative_language(
+            'metaphor',
             case['hebrew'],
             case['english'],
             case['figurative_text'],
