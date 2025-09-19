@@ -96,7 +96,7 @@ class GeminiAPIClient:
 Hebrew: {hebrew_text}
 English: {english_text}
 
-⚠️ CRITICAL EXCLUSIONS - DO NOT mark as figurative:
+[CRITICAL] CRITICAL EXCLUSIONS - DO NOT mark as figurative:
 
 TECHNICAL RELIGIOUS/CULTIC TERMS (these are literal/technical, not figurative):
 - Holiness designations: קֹדֶשׁ קׇדָשִׁים ("most holy"), "holy to YHWH", שֶׁקֶל הַקֹּדֶשׁ
@@ -124,7 +124,7 @@ PROCEDURAL/INSTRUCTIONAL COMPARISONS (NOT figurative):
 - Technical method descriptions: comparing one ritual technique to another
 - Liturgical instructions: procedural steps using comparative language
 
-🛑 SPECIFIC LITERAL EXPRESSIONS - DO NOT MARK AS FIGURATIVE:
+[LITERAL] SPECIFIC LITERAL EXPRESSIONS - DO NOT MARK AS FIGURATIVE:
 
 LITERAL DESCRIPTIONS (straightforward descriptive language):
 - אֶ֣רֶץ טוֹבָ֑ה ("a good land") = literal description of land quality/fertility
@@ -193,7 +193,7 @@ Analysis: [] (DO NOT mark as simile - this describes the same method/manner of d
 TYPES to identify (only when genuinely figurative):
 - metaphor: Direct comparison without "like/as" (X is Y) - BUT ONLY when X and Y are genuinely different categories used figuratively.
 
-⚠️ DO NOT classify as metaphor if it's:
+[WARNING] DO NOT classify as metaphor if it's:
 • RELIGIOUS/DIVINE TITLES: "God of gods" (אֱלֹהֵי הָאֱלֹהִים) = theological title (NOT metaphor)
 • TECHNICAL RELIGIOUS TERMS: "holy people" (עַם קָדוֹשׁ) = covenantal status (NOT metaphor)
 • RITUAL OBJECTS: "molten calf" (עֵגֶל מַסֵּכָה) = actual idol description (NOT metaphor)
@@ -203,13 +203,13 @@ TYPES to identify (only when genuinely figurative):
 • RELIGIOUS ACTIONS: "sinned against YHWH" = literal covenant violation (NOT metaphor)
 • DIVINE ACTIONS: "turned curse into blessing" = actual divine intervention (NOT metaphor)
 
-✅ ONLY mark as metaphor when genuinely different categories are equated figuratively:
+[OK] ONLY mark as metaphor when genuinely different categories are equated figuratively:
 • "YHWH is my shepherd" = God ↔ pastoral role (TRUE metaphor)
 • "you are a stiff-necked people" = people ↔ stubborn animals (TRUE metaphor)
 • "I will make you a light to the nations" = people ↔ illumination (TRUE metaphor)
 - simile: Comparison using "like/as" or Hebrew כְּ/כַּאֲשֶׁר - BUT ONLY when comparing two UNLIKE things figuratively.
 
-⚠️ DO NOT classify as simile if כְּ/כַּאֲשֶׁר is used for:
+[WARNING] DO NOT classify as simile if כְּ/כַּאֲשֶׁר is used for:
 • PROCEDURAL/INSTRUCTIONAL: "do X as you do Y" = method instruction (NOT simile)
 • HISTORICAL PRECEDENT: "X will happen as it did with Y" = historical pattern (NOT simile)
 • MANNER DESCRIPTION: "die as brother Aaron died" = describing same method (NOT simile)
@@ -217,16 +217,46 @@ TYPES to identify (only when genuinely figurative):
 • LEGAL PRECEDENT: "treat him as you treated the other" = legal procedure (NOT simile)
 • TEMPORAL SEQUENCE: "as in the days of..." = time reference (NOT simile)
 
-✅ ONLY mark as simile when כְּ/כַּאֲשֶׁר compares UNLIKE categories:
+[OK] ONLY mark as simile when כְּ/כַּאֲשֶׁר compares UNLIKE categories:
 • "like the stars of heaven" = people ↔ celestial objects (TRUE simile)
 • "like water" = blood ↔ common liquid (TRUE simile)
 • "as a lion" = person ↔ animal characteristics (TRUE simile)
-- personification: Human characteristics given to non-human entities - NOT simple divine speech
+- personification: Human characteristics given to non-human entities
+
+[CRITICAL] PERSONIFICATION GUIDELINES:
+
+DIVINE PERSONIFICATION (MARK AS PERSONIFICATION):
+• DIVINE EMOTIONS: God angry, wrathful, jealous, loving, pleased, grieved, regretful
+• DIVINE PHYSICAL ACTIONS: God walking, breathing, resting, waking, sleeping
+• DIVINE SENSORY ACTIONS: God seeing (when emphatic), hearing (when emphatic), smelling sacrifices
+• DIVINE HUMAN-LIKE BEHAVIORS: God remembering, forgetting, changing mind, testing
+
+DIVINE BODY PARTS (MARK AS METAPHOR, NOT PERSONIFICATION):
+• God's hand, arm, finger, face, eyes, ears, mouth, nostrils
+• These are metaphors because God is incorporeal - body parts represent divine power/presence
+
+NOT PERSONIFICATION (standard divine actions):
+• God speaking, commanding, saying (standard biblical narrative)
+• God creating, making, establishing (divine prerogatives)
+• God blessing, cursing, judging (covenant functions)
+• God delivering, saving, redeeming (soteriological actions)
+
+HUMAN/ANIMAL ACTIONS (NOT PERSONIFICATION):
+• Humans feeling emotions (fear, trembling, joy) = normal human behavior
+• Animals performing natural functions (locusts eating, birds flying) = normal animal behavior
+• Peoples/nations reacting emotionally = normal group human behavior
+• Enemies showing fear or submission = normal human responses
+
+TRUE NON-DIVINE PERSONIFICATION (MARK AS PERSONIFICATION):
+• Land/earth performing human actions beyond natural processes (land "vomiting" inhabitants)
+• Inanimate objects given human characteristics (mountains singing, trees clapping)
+• Abstract concepts acting as persons (Wisdom speaking, Death swallowing)
+• Natural phenomena with human agency beyond their natural function
 - idiom: Expressions with meaning different from literal interpretation
 - hyperbole: Deliberate exaggeration for emphasis - be conservative, many distances/numbers are literal
 - metonymy: Substituting name with something closely associated - NOT literal usage
 
-⚠️ ANCIENT NEAR EASTERN CONTEXT:
+[CONTEXT] ANCIENT NEAR EASTERN CONTEXT:
 Remember that ancient readers understood these texts in their historical context:
 - Religious/ritual terminology had specific technical meanings
 - Legal procedures described actual ancient practices
@@ -234,7 +264,7 @@ Remember that ancient readers understood these texts in their historical context
 - Actions described often literally occurred
 - Only mark as figurative what would have been understood as non-literal by ancient audiences
 
-⚠️ QUALITY CONTROL - BEFORE MARKING AS FIGURATIVE, ASK:
+[QUALITY] QUALITY CONTROL - BEFORE MARKING AS FIGURATIVE, ASK:
 1. Is this a technical religious/legal term from ancient Israelite practice?
 2. Is this a formulaic expression standard in biblical narrative?
 3. Could this be understood literally in its ancient ritual/legal/historical context?
@@ -249,7 +279,7 @@ Remember that ancient readers understood these texts in their historical context
 
 If YES to 1-10, or NO to 11 → DO NOT mark as figurative language.
 
-🔍 SPECIAL EMPHASIS: Many apparent "metaphors" are actually:
+[EMPHASIS] SPECIAL EMPHASIS: Many apparent "metaphors" are actually:
 - Literal descriptions with strong adjectives (not figurative)
 - Historical statements (factual, not figurative)
 - Standard biblical idioms (conventional, not creative metaphors)
@@ -267,15 +297,20 @@ IMPORTANT PROCESSING NOTES:
 - Determine the PURPOSE: Why is this figurative language used?
 - Minimum confidence threshold: 0.7 (if lower, do not include)
 
-SUBCATEGORY GUIDANCE - Two-Level System:
-Choose TWO levels of subcategories based on the TARGET domain of the comparison:
+VEHICLE/TENOR CLASSIFICATION SYSTEM:
+For each figurative instance, identify both the VEHICLE (source domain) and TENOR (target/subject):
+- VEHICLE: What concrete imagery is used (e.g., "shepherd" in "God is my shepherd")
+- TENOR: What is being described (e.g., "God" in "God is my shepherd")
 
-LEVEL 1 (Broad Category):
+VEHICLE CLASSIFICATION - Two-Level System:
+Choose TWO levels based on the SOURCE domain of the comparison:
+
+VEHICLE LEVEL 1 (Broad Category):
 - "The Natural World" - for imagery from nature, plants, animals, natural phenomena
 - "Human Institutions and Relationships" - for social structures, roles, human activities
 - "Abstract and Internal States" - for psychological, spiritual, temporal, economic concepts
 
-LEVEL 2 (Specific Domain):
+VEHICLE LEVEL 2 (Specific Domain):
 THE NATURAL WORLD:
   - animal: characteristics/behavior of creatures (lion, eagle, sheep, etc.)
   - agricultural: farming, crops, livestock (vineyard, shepherd, harvest, etc.)
@@ -300,9 +335,39 @@ ABSTRACT AND INTERNAL STATES:
   - economic: trade, prosperity (wealth, poverty, lending, etc.)
   - industrial: craftsmanship, labor (refining, metalwork, etc.)
 
-Choose the most specific and analytically useful domains. Avoid generic terms.
+TENOR CLASSIFICATION - Two-Level System:
+These represent the major thematic domains of the Pentateuch:
 
-Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, subcategory_level_1, subcategory_level_2, confidence (0.7-1.0), speaker, purpose.
+TENOR LEVEL 1 (Broad Categories):
+- "Divine-Human Relationship" - God's nature, character, actions; humanity/Israel's identity
+- "Covenant & Its Consequences" - blessings for obedience, curses for disobedience
+- "Communal & Moral Realities" - internal/external state of people, moral character, social order
+
+TENOR LEVEL 2 (Specific Subcategories):
+DIVINE-HUMAN RELATIONSHIP:
+  - Divine Sovereignty: God as Creator, ultimate ruler, judge
+  - Divine Presence: God's tangible manifestations and closeness
+  - Divine Covenant-Making: God's acts of establishing/maintaining promises
+  - Divine Nurture & Provision: God as sustainer, provider, deliverer
+  - Humanity's Status: nature and purpose of humanity, created in God's image
+  - Israel's Status: Israel's unique position as YHWH's chosen people
+
+COVENANT & ITS CONSEQUENCES:
+  - Material Blessings: imagery of abundance, fertility, prosperity
+  - Sanctification & Purity: metaphors for holiness, ritual cleanliness, moral purity
+  - Social & Political Elevation: portrayal of Israel as preeminent nation
+  - Impurity & Defilement: metaphors for sin as corrupting force
+  - Hardship & Destitution: imagery of lack, desolation, loss of life
+  - Humiliation & Subjugation: Israel's loss of status, freedom, power
+
+COMMUNAL & MORAL REALITIES:
+  - Moral & Spiritual State: "heart" and "soul" metaphors, spiritual/moral dispositions
+  - Wisdom & Discernment: concepts of intellect, foolishness, understanding
+  - Interpersonal Morality: right and wrong behavior within community
+  - Social Order: structure and leadership of Israelite society
+  - Conflict & Foreign Relations: warfare, hostility, relationship with other nations
+
+Provide analysis as valid JSON array. Each object must have: type, hebrew_text, english_text, explanation, vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2, confidence (0.7-1.0), speaker, purpose.
 
 If no figurative language found, return: []
 
@@ -340,10 +405,10 @@ def test_gemini_api():
 
     # Test connection
     if not client.test_api_connection():
-        print("❌ API connection failed")
+        print("[ERROR] API connection failed")
         return
 
-    print("✅ API connection successful")
+    print("[OK] API connection successful")
 
     # Test cases
     test_cases = [

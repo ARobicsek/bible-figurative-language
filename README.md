@@ -2,20 +2,22 @@
 
 A comprehensive system for detecting and analyzing figurative language (metaphors, similes, personification, idioms, hyperbole) in biblical Hebrew texts, with revolutionary LLM integration for scholarly research.
 
-## 🚨 Project Status: Two-Stage Validation System with Critical Unicode Bug
+## 🎉 Project Status: Vehicle/Tenor Classification System Complete
 
-**CRITICAL ISSUE:** Two-stage validation system correctly identifies 86.3% of false positives for rejection but Unicode encoding bug prevents proper filtering. Urgent fix needed to enable near-perfect metaphor detection with ~90% false positive elimination.
+**MAJOR BREAKTHROUGH:** Vehicle/Tenor classification system successfully implemented and deployed on complete Deuteronomy, providing comprehensive metaphor analysis with source and target domain identification.
 
 ### Current Status
-- ✅ **Two-Stage Validation Logic**: 86.3% of false positives correctly identified for rejection
-- ✅ **True Positive Preservation**: 100% accuracy on legitimate metaphors (26/26 test cases)
-- 🚨 **Unicode Bug**: Validation exceptions prevent false positive filtering (currently 0% rejection rate)
-- ❌ **False Positive Explosion**: 692 metaphors detected vs. 389 expected (~300 false positives)
-- 🎯 **Solution Ready**: Fix Unicode encoding in `metaphor_validator.py` to enable proper filtering
+- ✅ **Vehicle/Tenor Classification**: Complete source domain (vehicle) and target domain (tenor) analysis
+- ✅ **Enhanced Personification Guidelines**: Proper distinction between divine emotions and body metaphors
+- ✅ **Fixed Field Population**: Resolved subcategory field population issues from Phase 9
+- ✅ **Two-Stage Validation**: Stage 1 (LLM detection) + Stage 2 (validation with type correction)
+- ✅ **Production Database**: Complete Deuteronomy processed with vehicle/tenor system
+- 🎯 **Advanced Analysis Ready**: Rich metaphor structure data for scholarly research
 
 ### Technical Achievements
-- ✅ **Two-Level Subcategory System**: Hierarchical classification with Level 1 (broad) | Level 2 (specific)
-- ✅ **Enhanced Database Schema**: Added subcategory_level_1 and subcategory_level_2 fields
+- ✅ **Vehicle/Tenor Classification**: Complete metaphor structure analysis with source/target domains
+- ✅ **Enhanced Database Schema**: Added vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2 fields
+- ✅ **Fixed Field Population**: Resolved LLM subcategory field mapping issues
 - ✅ **Two-Stage Validation**: Stage 1 (LLM detection) + Stage 2 (validation filtering)
 - ✅ **100% LLM-Based Detection**: No rule-based fallbacks, pure AI-driven analysis
 - ✅ **Scholarly Explanations**: PhD-level analysis with communicative intent detection
@@ -93,15 +95,17 @@ python view_results_genesis_1_3.py
 - **100% Validation Accuracy**: Perfect classification on false positive test cases
 - **Processing speed**: Maintained 1.85+ verses/second with enhanced accuracy
 
-### Example Two-Level Analysis Output (Phase 7 Quality)
+### Example Vehicle/Tenor Analysis Output (Phase 10 Quality)
 ```json
 {
   "type": "metaphor",
   "figurative_text": "The ancient God is a refuge",
   "figurative_text_in_hebrew": "אלהי קדם מעונה",
   "explanation": "God is compared to a physical place of safety and protection",
-  "subcategory_level_1": "Human Institutions and Relationships",
-  "subcategory_level_2": "architectural",
+  "vehicle_level_1": "Human Institutions and Relationships",
+  "vehicle_level_2": "architectural",
+  "tenor_level_1": "Divine Attributes",
+  "tenor_level_2": "protection",
   "confidence": 0.90,
   "speaker": "Moses",
   "purpose": "express divine protection and security for the people"
@@ -184,14 +188,15 @@ CREATE TABLE verses (
     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Enhanced figurative language table with two-level subcategories
+-- Enhanced figurative language table with vehicle/tenor classification
 CREATE TABLE figurative_language (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     verse_id INTEGER NOT NULL,
     type TEXT NOT NULL CHECK(type IN ('metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other')),
-    subcategory TEXT,                -- Legacy field for backward compatibility
-    subcategory_level_1 TEXT,        -- NEW: Broad category (The Natural World, etc.)
-    subcategory_level_2 TEXT,        -- NEW: Specific domain (animal, architectural, etc.)
+    vehicle_level_1 TEXT,            -- NEW: Source domain Level 1 (broad category)
+    vehicle_level_2 TEXT,            -- NEW: Source domain Level 2 (specific domain)
+    tenor_level_1 TEXT,              -- NEW: Target domain Level 1 (broad category)
+    tenor_level_2 TEXT,              -- NEW: Target domain Level 2 (specific domain)
     confidence REAL NOT NULL CHECK(confidence >= 0.0 AND confidence <= 1.0),
     figurative_text TEXT,
     figurative_text_in_hebrew TEXT,
@@ -206,14 +211,12 @@ CREATE TABLE figurative_language (
 ## 🔍 Available Databases
 
 ### Primary Research Database
-- **`deuteronomy_improved_YYYYMMDD_HHMMSS.db`** ⭐ **LATEST** - Complete Deuteronomy with enhanced pipeline
-  - All 34 chapters processed with refined simile/metaphor detection
-  - Semantic subcategories for meaningful analytical research
-  - Eliminated false positives while maintaining genuine detection accuracy
-- **`validation_optimized_20250918_084059.db`** - Enhanced schema with speaker/purpose analysis
-  - 175 verses from across all 5 Pentateuch books
-  - 467 figurative language instances with complete metadata
-  - Speaker attribution and purpose analysis for each instance
+- **`deuteronomy_complete_final.db`** ⭐ **LATEST** - Complete Deuteronomy with Vehicle/Tenor classification
+  - All 34 chapters processed with complete vehicle/tenor analysis
+  - Full metaphor structure classification with source and target domains
+  - Enhanced personification guidelines distinguishing divine emotions from body metaphors
+  - Fixed field population issues from previous phases
+  - Production-ready dataset with advanced metaphor analysis capabilities
 
 ### Key Documentation
 - **`validation_findings.md`** ⭐ **CRITICAL** - Detailed analysis of LLM detection errors
@@ -230,27 +233,35 @@ AND ABS((chapter - 1) * 100 + verse - 115) <= 5
 ORDER BY chapter, verse;
 ```
 
-### Two-Level Category Analysis (Phase 7 Enhanced)
+### Vehicle/Tenor Analysis (Phase 10 Enhanced)
 ```sql
--- Hierarchical analysis by Level 1 categories
-SELECT subcategory_level_1, COUNT(*) as count
+-- Vehicle (source domain) analysis by Level 1 categories
+SELECT vehicle_level_1, COUNT(*) as count
 FROM figurative_language
-WHERE subcategory_level_1 IS NOT NULL
-GROUP BY subcategory_level_1
+WHERE vehicle_level_1 IS NOT NULL
+GROUP BY vehicle_level_1
 ORDER BY count DESC;
 
--- Detailed breakdown by Level 2 within each Level 1
-SELECT subcategory_level_1, subcategory_level_2, COUNT(*) as count
+-- Tenor (target domain) analysis by Level 1 categories
+SELECT tenor_level_1, COUNT(*) as count
 FROM figurative_language
-WHERE subcategory_level_1 IS NOT NULL AND subcategory_level_2 IS NOT NULL
-GROUP BY subcategory_level_1, subcategory_level_2
-ORDER BY subcategory_level_1, count DESC;
+WHERE tenor_level_1 IS NOT NULL
+GROUP BY tenor_level_1
+ORDER BY count DESC;
 
--- Specific domain analysis (e.g., all architectural metaphors)
-SELECT type, figurative_text, speaker
+-- Complete vehicle-tenor mapping analysis
+SELECT vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2, COUNT(*) as count
 FROM figurative_language
-WHERE subcategory_level_1 = 'Human Institutions and Relationships'
-  AND subcategory_level_2 = 'architectural'
+WHERE vehicle_level_1 IS NOT NULL AND tenor_level_1 IS NOT NULL
+GROUP BY vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2
+ORDER BY count DESC;
+
+-- Specific metaphor structure analysis (e.g., architectural metaphors for divine attributes)
+SELECT type, figurative_text, speaker, explanation
+FROM figurative_language
+WHERE vehicle_level_1 = 'Human Institutions and Relationships'
+  AND vehicle_level_2 = 'architectural'
+  AND tenor_level_1 = 'Divine Attributes'
 ORDER BY confidence DESC;
 ```
 
@@ -317,5 +328,5 @@ This project is open source and available for academic and research use.
 ---
 
 **Repository**: https://github.com/ARobicsek/bible-figurative-language
-**Status**: Phase 7 Complete - Two-level subcategory system with false positive reduction
-**Research Quality**: Hierarchical classification with 100% validation accuracy, suitable for advanced biblical scholarship
+**Status**: Phase 10 Complete - Vehicle/Tenor classification system deployed
+**Research Quality**: Production-ready system with advanced metaphor structure analysis, suitable for advanced biblical scholarship

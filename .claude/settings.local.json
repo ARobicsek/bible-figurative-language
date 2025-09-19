@@ -24,7 +24,11 @@
       "Bash(git push:*)",
       "Bash(dir:*)",
       "Bash(del:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(timeout:*)",
+      "Read(//c/**)",
+      "Bash(taskkill:*)",
+      "Bash(wmic:*)"
     ],
     "deny": [],
     "ask": []
