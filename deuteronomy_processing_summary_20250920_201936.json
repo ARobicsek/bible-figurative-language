@@ -1,0 +1,146 @@
+{
+  "database": "deuteronomy_conservative_20250920_200506.db",
+  "log_file": "deuteronomy_conservative_log_20250920_201936.txt",
+  "start_time": "2025-09-20T20:19:36.541595",
+  "end_time": "2025-09-20T20:21:58.806897",
+  "total_time_minutes": 2.3710734208424884,
+  "total_verses": 546,
+  "total_instances": 0,
+  "errors": 0,
+  "chapters_completed": 22,
+  "chapters_failed": 0,
+  "chapter_progress": {
+    "1": {
+      "status": "completed",
+      "verses": 46,
+      "instances": 0,
+      "time_minutes": 0.2065377910931905
+    },
+    "2": {
+      "status": "completed",
+      "verses": 37,
+      "instances": 0,
+      "time_minutes": 0.15903060833613078
+    },
+    "3": {
+      "status": "completed",
+      "verses": 29,
+      "instances": 0,
+      "time_minutes": 0.12538596789042156
+    },
+    "8": {
+      "status": "completed",
+      "verses": 20,
+      "instances": 0,
+      "time_minutes": 0.09533665974934896
+    },
+    "10": {
+      "status": "completed",
+      "verses": 22,
+      "instances": 0,
+      "time_minutes": 0.10049853722254436
+    },
+    "12": {
+      "status": "completed",
+      "verses": 31,
+      "instances": 0,
+      "time_minutes": 0.12671948273976644
+    },
+    "13": {
+      "status": "completed",
+      "verses": 19,
+      "instances": 0,
+      "time_minutes": 0.07815576394399007
+    },
+    "14": {
+      "status": "completed",
+      "verses": 29,
+      "instances": 0,
+      "time_minutes": 0.1200257142384847
+    },
+    "15": {
+      "status": "completed",
+      "verses": 23,
+      "instances": 0,
+      "time_minutes": 0.09953523874282837
+    },
+    "17": {
+      "status": "completed",
+      "verses": 20,
+      "instances": 0,
+      "time_minutes": 0.08654036919275919
+    },
+    "18": {
+      "status": "completed",
+      "verses": 22,
+      "instances": 0,
+      "time_minutes": 0.08722561995188395
+    },
+    "19": {
+      "status": "completed",
+      "verses": 21,
+      "instances": 0,
+      "time_minutes": 0.08106926679611207
+    },
+    "20": {
+      "status": "completed",
+      "verses": 20,
+      "instances": 0,
+      "time_minutes": 0.08239298661549886
+    },
+    "21": {
+      "status": "completed",
+      "verses": 23,
+      "instances": 0,
+      "time_minutes": 0.10130569537480673
+    },
+    "22": {
+      "status": "completed",
+      "verses": 29,
+      "instances": 0,
+      "time_minutes": 0.13570961554845173
+    },
+    "23": {
+      "status": "completed",
+      "verses": 26,
+      "instances": 0,
+      "time_minutes": 0.12955017884572348
+    },
+    "24": {
+      "status": "completed",
+      "verses": 22,
+      "instances": 0,
+      "time_minutes": 0.09230737686157227
+    },
+    "25": {
+      "status": "completed",
+      "verses": 19,
+      "instances": 0,
+      "time_minutes": 0.07393389940261841
+    },
+    "27": {
+      "status": "completed",
+      "verses": 26,
+      "instances": 0,
+      "time_minutes": 0.12096910874048869
+    },
+    "30": {
+      "status": "completed",
+      "verses": 20,
+      "instances": 0,
+      "time_minutes": 0.07857953707377116
+    },
+    "31": {
+      "status": "completed",
+      "verses": 30,
+      "instances": 0,
+      "time_minutes": 0.139669664700826
+    },
+    "34": {
+      "status": "completed",
+      "verses": 12,
+      "instances": 0,
+      "time_minutes": 0.0504194974899292
+    }
+  }
+}

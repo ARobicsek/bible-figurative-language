@@ -1,0 +1,26 @@
+{
+  "processing_summary": {
+    "database": "genesis_multi_model_20250920_210421.db",
+    "log_file": "genesis_multi_model_log_20250920_210421.txt",
+    "start_time": "2025-09-20T21:04:22.285499",
+    "end_time": "2025-09-20T21:06:35.963595",
+    "total_time_seconds": 133.678096,
+    "total_verses": 1533,
+    "total_figurative": 0,
+    "primary_success": 1533,
+    "fallback_used": 0
+  },
+  "api_usage": {
+    "total_requests": 1533,
+    "primary_success": 1533,
+    "fallback_used": 0,
+    "primary_success_rate": 1.0,
+    "fallback_rate": 0.0,
+    "total_input_tokens": 11707,
+    "total_output_tokens": 835,
+    "total_tokens": 12542,
+    "primary_model": "gemini-2.0-flash-exp",
+    "fallback_model": "gemini-1.5-flash",
+    "restriction_reasons": []
+  }
+}
