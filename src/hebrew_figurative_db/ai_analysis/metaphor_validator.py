@@ -13,16 +13,18 @@ from typing import List, Dict, Optional, Tuple
 class MetaphorValidator:
     """Stage 2 validator for metaphor detection to eliminate false positives"""
 
-    def __init__(self, api_key: str, db_manager=None):
+    def __init__(self, api_key: str, db_manager=None, logger=None):
         """
         Initialize the validator with Gemini API
 
         Args:
             api_key: Gemini API key
             db_manager: DatabaseManager instance for logging deliberations
+            logger: Logger instance
         """
         self.api_key = api_key
         self.db_manager = db_manager
+        self.logger = logger
         genai.configure(api_key=api_key)
 
         # Use same model as main detection
@@ -164,6 +166,8 @@ class MetaphorValidator:
 
         except Exception as e:
             error_msg = f"Validation API error: {str(e)}"
+            if self.logger:
+                self.logger.error(f"Validation API error for figurative_language_id {figurative_language_id}: {e}", exc_info=True)
             validation_data['validation_decision'] = 'INVALID'
             validation_data['validation_reason'] = "API error during validation"
             validation_data['validation_error'] = error_msg
@@ -210,9 +214,15 @@ class MetaphorValidator:
                 if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
                     finish_reason = candidate.finish_reason
                     if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
-                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason.name}", None
+                        error_msg = f"Safety restriction: {finish_reason.name}"
+                        if self.logger:
+                            self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: {finish_reason.name}")
+                        return False, "Content restricted by safety filters", error_msg, None
                     elif str(finish_reason) in ['SAFETY', 'RECITATION', 'OTHER']:
-                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason}", None
+                        error_msg = f"Safety restriction: {finish_reason}"
+                        if self.logger:
+                            self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: {finish_reason}")
+                        return False, "Content restricted by safety filters", error_msg, None
 
             if response.text:
                 # Parse the validation response
@@ -253,6 +263,8 @@ class MetaphorValidator:
 
         except Exception as e:
             error_msg = f"Type validation API error: {str(e)}"
+            if self.logger:
+                self.logger.error(f"Type validation API error for '{figurative_text}': {e}", exc_info=True)
             return False, "API error during type validation", error_msg, None
 
     def _create_type_validation_prompt(self,
@@ -520,7 +532,10 @@ VALIDATION:"""
                 self.db_manager.update_validation_data(figurative_language_id, validation_data)
             except Exception as e:
                 # Don't let database logging errors break the validation process
-                print(f"Warning: Failed to log validation data: {e}")
+                if self.logger:
+                    self.logger.warning(f"Failed to log validation data: {e}")
+                else:
+                    print(f"Warning: Failed to log validation data: {e}")
 
     def get_validation_stats(self) -> Dict:
         """Get validation statistics"""

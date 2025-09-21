@@ -179,6 +179,11 @@ class MultiModelGeminiClient:
                     return "[]", error_msg, metadata
 
                 if response_text:
+                    # Debug: Log response length and ending to check for truncation
+                    if self.logger:
+                        self.logger.debug(f"Raw response length: {len(response_text)} characters")
+                        self.logger.debug(f"Response ends with: '{response_text[-100:]}'")
+
                     cleaned_response, all_instances, deliberation = self._clean_response(response_text.strip(), hebrew_text, english_text)
                     metadata['all_detected_instances'] = all_instances
                     metadata['llm_deliberation'] = deliberation
@@ -315,7 +320,7 @@ English: {english_text}
 **FIRST, provide your deliberation in a DELIBERATION section:**
 
 DELIBERATION:
-[You MUST analyze EVERY potential figurative element in this verse. For each phrase/concept, explain:
+[You MUST analyze EVERY potential figurative element in this verse. For each phrase/concept, explain briefly:
 - What you considered (e.g., "considered if 'X' might be metaphor, metonymy, etc"). Note that synechdoche is a type of metonymy.
 - Your reasoning for including/excluding it (e.g., "this is not metaphor, metonymy, etc because...")
 - Any borderline cases you debated
@@ -357,14 +362,23 @@ Analysis:"""
 
         # Extract deliberation section (handle case variations and formatting)
         deliberation = ""
-        deliberation_match = re.search(r'(?:MY\s+)?DELIBERATION\s*(?:SECTION)?\s*:?\s*([\s\S]*?)(?=JSON OUTPUT:|(?:\n\s*\[)|$)', response_text, re.IGNORECASE)
+        # First try to extract deliberation properly, stopping at JSON OUTPUT or array start
+        deliberation_match = re.search(r'(?:MY\s+)?DELIBERATION\s*(?:SECTION)?\s*:?\s*([\s\S]*?)(?=JSON OUTPUT:|---\s*$|\n\s*\[)', response_text, re.IGNORECASE)
         if deliberation_match:
             deliberation = deliberation_match.group(1).strip()
+            # Clean up deliberation by removing any trailing incomplete content
+            deliberation = re.sub(r'\n\s*\d+\.\s*\*\*[^*]*$', '', deliberation)  # Remove incomplete numbered items
         else:
-            # Fallback: extract everything before JSON OUTPUT or the final JSON array
-            fallback_match = re.search(r'^([\s\S]*?)(?=JSON OUTPUT:|(?:\n\s*\[[\s\S]*\])|$)', response_text)
+            # Fallback: extract everything before JSON OUTPUT, --- separator, or the final JSON array
+            fallback_match = re.search(r'^([\s\S]*?)(?=JSON OUTPUT:|---\s*$|\n\s*\[[\s\S]*\])', response_text)
             if fallback_match:
                 deliberation = fallback_match.group(1).strip()
+                # Clean up incomplete numbered content
+                deliberation = re.sub(r'\n\s*\d+\.\s*\*\*[^*]*$', '', deliberation)
+
+        # Count figurative language patterns for debugging
+        excluding_count = len(re.findall(r'therefore.*?excluding.*?figurative', response_text.lower()))
+        including_count = len(re.findall(r'therefore.*?including.*?(?:figurative|metaphor|idiom|simile)', response_text.lower()))
 
         # Use regex to find the JSON block, ignoring conversational text
         json_string = response_text
@@ -372,16 +386,96 @@ Analysis:"""
         if match:
             json_string = match.group(1).strip()
         else:
-            # Try to find JSON array at the end of the response (after deliberation)
-            # Look for JSON OUTPUT: followed by array, or just array at the end
-            json_match = re.search(r'(?:JSON OUTPUT:\s*)?(\[[\s\S]*?\])(?:\s*Analysis:|\s*$)', response_text)
-            if json_match:
-                json_string = json_match.group(1).strip()
+            # Look specifically for JSON OUTPUT: section first
+            json_output_match = re.search(r'JSON OUTPUT:\s*([\s\S]*?)(?:\s*$)', response_text, re.IGNORECASE)
+            if json_output_match:
+                json_section = json_output_match.group(1).strip()
+                # Extract the JSON array from this section
+                array_match = re.search(r'(\[[\s\S]*?\])', json_section)
+                if array_match:
+                    json_string = array_match.group(1).strip()
+                else:
+                    # If no array found in JSON OUTPUT section, it might be empty
+                    json_string = "[]"
             else:
-                # Fallback: look for the last JSON array in the response
-                json_matches = re.findall(r'(\[[\s\S]*?\])', response_text)
-                if json_matches:
-                    json_string = json_matches[-1].strip()
+                # Look for array after the deliberation section ends (marked by ---)
+                # Find the last --- separator and look for JSON after it
+                sections = response_text.split('---')
+                if len(sections) > 1:
+                    # Take the last section after --- separator
+                    last_section = sections[-1].strip()
+                    array_match = re.search(r'(\[[\s\S]*?\])', last_section)
+                    if array_match:
+                        json_string = array_match.group(1).strip()
+                    else:
+                        json_string = "[]"
+                else:
+                    # Check if response indicates no figurative language found
+                    if excluding_count > 0 and including_count == 0:
+                        json_string = "[]"
+                    else:
+                        # Look for standalone JSON array, but be very selective
+                        # Find the start of a JSON array and extract it properly
+                        start_bracket = response_text.find('[')
+                        if start_bracket != -1:
+                            # Use proper bracket matching to find the complete JSON
+                            bracket_count = 0
+                            brace_count = 0
+                            in_string = False
+                            escape_next = False
+                            end_pos = len(response_text)
+
+                            for i in range(start_bracket, len(response_text)):
+                                char = response_text[i]
+
+                                if escape_next:
+                                    escape_next = False
+                                    continue
+
+                                if char == '\\' and in_string:
+                                    escape_next = True
+                                    continue
+
+                                if char == '"' and not escape_next:
+                                    in_string = not in_string
+                                    continue
+
+                                if not in_string:
+                                    if char == '[':
+                                        bracket_count += 1
+                                    elif char == ']':
+                                        bracket_count -= 1
+                                        if bracket_count == 0:
+                                            end_pos = i + 1
+                                            break
+                                    elif char == '{':
+                                        brace_count += 1
+                                    elif char == '}':
+                                        brace_count -= 1
+
+                            candidate_json = response_text[start_bracket:end_pos]
+
+                            # Verify this looks like actual JSON with objects
+                            if '{' in candidate_json and '}' in candidate_json:
+                                json_string = candidate_json.strip()
+                            else:
+                                json_string = "[]"
+                        else:
+                            json_string = "[]"
+
+        # Debug logging for JSON extraction
+        if self.logger and json_string != "[]":
+            self.logger.debug(f"Extracted JSON length: {len(json_string)} characters")
+            if len(json_string) > 500:
+                self.logger.debug(f"JSON extract (first 200 chars): {json_string[:200]}...")
+                self.logger.debug(f"JSON extract (last 200 chars): ...{json_string[-200:]}")
+
+        # If we still don't have valid JSON and the response contains figurative language analysis,
+        # log this for debugging
+        if json_string == "[]" and including_count > 0:
+            if self.logger:
+                self.logger.warning(f"LLM detected figurative language but no JSON found. Including count: {including_count}")
+                self.logger.warning(f"Response snippet: {response_text[:500]}...")
 
         # Try to parse as JSON to validate
         try:
@@ -419,11 +513,103 @@ Analysis:"""
 
             # Return the cleaned and sanitized data as a JSON string, plus all instances and deliberation
             return json.dumps(validated_data), all_instances, deliberation
-        except json.JSONDecodeError:
-            # If not valid JSON, return empty array
+        except json.JSONDecodeError as e:
+            # If not valid JSON, try to repair it if it's just truncated
             if self.logger:
-                self.logger.error(f"Invalid JSON response: {response_text}")
+                self.logger.error(f"JSON decode error at position {e.pos}: {e.msg}")
+                self.logger.error(f"JSON string length: {len(json_string)}")
+                # Show context around the error position
+                error_start = max(0, e.pos - 50)
+                error_end = min(len(json_string), e.pos + 50)
+                self.logger.error(f"JSON context around error: ...{json_string[error_start:error_end]}...")
+                self.logger.error(f"Extracted JSON string (first 800 chars): {json_string[:800]}...")
+                if len(json_string) > 800:
+                    self.logger.error(f"Extracted JSON string (last 300 chars): ...{json_string[-300:]}")
+
+            # Try to repair truncated JSON
+            if "Unterminated string" in e.msg and json_string.startswith('['):
+                if self.logger:
+                    self.logger.info("Attempting to repair truncated JSON...")
+
+                # Find the last complete object
+                repaired_json = self._repair_truncated_json(json_string)
+                if repaired_json:
+                    try:
+                        data = json.loads(repaired_json)
+                        if isinstance(data, list):
+                            if self.logger:
+                                self.logger.info(f"Successfully repaired JSON, recovered {len(data)} items")
+
+                            all_instances = []
+                            validated_data = []
+
+                            for item in data:
+                                # Store original detection types for logging
+                                original_types = []
+                                for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+                                    if item.get(fig_type) == 'yes':
+                                        original_types.append(fig_type)
+
+                                # Ensure all type fields are properly set to yes/no
+                                for fig_type in ['figurative_language', 'simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+                                    if fig_type not in item or item[fig_type] not in ['yes', 'no']:
+                                        item[fig_type] = 'no'
+
+                                # Set figurative_language to 'yes' if any specific type is 'yes'
+                                if any(item.get(fig_type) == 'yes' for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']):
+                                    item['figurative_language'] = 'yes'
+
+                                # Set the original detection types
+                                item['original_detection_types'] = ','.join(original_types) if original_types else ''
+                                all_instances.append(item.copy())
+
+                                # Skip validation in this method - it will be done in insert_and_validate_instances
+                                validated_data.append(item)
+
+                            return json.dumps(validated_data), all_instances, deliberation
+                    except json.JSONDecodeError:
+                        pass  # Fall through to return empty array
+
             return "[]", [], deliberation
+
+    def _repair_truncated_json(self, json_string: str) -> Optional[str]:
+        """Attempt to repair truncated JSON by finding the last complete object and closing the array"""
+        try:
+            # Find the last complete object by looking for the last complete closing brace
+            last_complete_brace = -1
+            brace_count = 0
+            in_string = False
+            escape_next = False
+
+            for i, char in enumerate(json_string):
+                if escape_next:
+                    escape_next = False
+                    continue
+
+                if char == '\\' and in_string:
+                    escape_next = True
+                    continue
+
+                if char == '"' and not escape_next:
+                    in_string = not in_string
+                    continue
+
+                if not in_string:
+                    if char == '{':
+                        brace_count += 1
+                    elif char == '}':
+                        brace_count -= 1
+                        if brace_count == 0:
+                            last_complete_brace = i
+
+            if last_complete_brace > 0:
+                # Extract up to the last complete object and close the array
+                repaired = json_string[:last_complete_brace + 1] + '\n]'
+                return repaired
+
+            return None
+        except Exception:
+            return None
 
     def insert_and_validate_instances(self, verse_id: int, all_instances: List[Dict], hebrew_text: str, english_text: str) -> int:
         """Insert all detected instances into database with validation data"""
