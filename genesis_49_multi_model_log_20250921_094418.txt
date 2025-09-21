@@ -1,0 +1,46 @@
+2025-09-21 09:44:18,569 - INFO - Successfully loaded environment variables from: C:\Users\ariro\OneDrive\Documents\Bible\.env
+2025-09-21 09:44:18,570 - INFO - === PROCESSING GENESIS CHAPTER(S) [49] WITH MULTI-MODEL API ===
+2025-09-21 09:44:18,570 - INFO - Initializing Sefaria client...
+2025-09-21 09:44:18,570 - INFO - Initializing Gemini multi-model API...
+2025-09-21 09:44:18,571 - INFO - Creating database: genesis_49_multi_model_20250921_094418.db
+2025-09-21 09:44:18,861 - INFO - --- Processing Genesis 49 ---
+2025-09-21 09:44:18,862 - INFO - Fetching text for Genesis 49...
+2025-09-21 09:44:19,237 - INFO - Retrieved 33 verses for Genesis 49
+2025-09-21 09:44:19,237 - INFO - Filtering to process 4 selected verse(s): [3, 4, 5, 6]
+2025-09-21 09:44:19,237 - INFO -   Processing Genesis 49:3 (1/4)...
+2025-09-21 09:44:35,326 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 429, 'output_tokens': 432, 'fallback_used': False}
+2025-09-21 09:44:35,343 - INFO -     FOUND: 2 figurative instances
+2025-09-21 09:44:35,345 - INFO -       Instance 1: metaphor - 'My might'
+2025-09-21 09:44:35,346 - INFO -       Instance 2: metaphor - 'and first fruit of my vigor'
+2025-09-21 09:44:35,346 - INFO -   Processing Genesis 49:4 (2/4)...
+2025-09-21 09:44:44,968 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 456, 'output_tokens': 220, 'fallback_used': False}
+2025-09-21 09:44:44,968 - INFO -     FOUND: 1 figurative instances
+2025-09-21 09:44:44,969 - INFO -       Instance 1: simile - 'Unstable as water'
+2025-09-21 09:44:44,970 - INFO -   Processing Genesis 49:5 (3/4)...
+2025-09-21 09:44:52,439 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 395, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 09:44:52,439 - INFO -   Processing Genesis 49:6 (4/4)...
+2025-09-21 09:45:07,906 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 582, 'output_tokens': 272, 'fallback_used': False}
+2025-09-21 09:45:07,907 - INFO -     FOUND: 1 figurative instances
+2025-09-21 09:45:07,908 - INFO -       Instance 1: metaphor - 'And when pleased they maim an ox.'
+2025-09-21 09:45:07,908 - INFO - Genesis 49 COMPLETED: 4 figurative instances from 4 verses
+2025-09-21 09:45:07,933 - INFO - 
+=== GENESIS PROCESSING COMPLETE ===
+2025-09-21 09:45:07,934 - INFO - Database: genesis_49_multi_model_20250921_094418.db
+2025-09-21 09:45:07,934 - INFO - Log file: genesis_49_multi_model_log_20250921_094418.txt
+2025-09-21 09:45:07,934 - INFO - Total verses processed: 4
+2025-09-21 09:45:07,935 - INFO - Total figurative instances: 4
+2025-09-21 09:45:07,935 - INFO - Errors: 0
+2025-09-21 09:45:07,935 - INFO - Processing time: 49.3 seconds
+2025-09-21 09:45:07,935 - INFO - 
+--- Multi-Model API Usage Statistics ---
+2025-09-21 09:45:07,935 - INFO - Total Requests: 4
+2025-09-21 09:45:07,936 - INFO - Primary Success: 4
+2025-09-21 09:45:07,936 - INFO - Fallback Used: 0
+2025-09-21 09:45:07,936 - INFO - Primary Success Rate: 1.0
+2025-09-21 09:45:07,936 - INFO - Fallback Rate: 0.0
+2025-09-21 09:45:07,936 - INFO - Total Input Tokens: 1862
+2025-09-21 09:45:07,937 - INFO - Total Output Tokens: 925
+2025-09-21 09:45:07,937 - INFO - Total Tokens: 2787
+2025-09-21 09:45:07,937 - INFO - Primary Model: gemini-2.5-flash
+2025-09-21 09:45:07,937 - INFO - Fallback Model: gemini-1.5-flash
+2025-09-21 09:45:07,937 - INFO - Restriction Reasons: []
