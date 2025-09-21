@@ -4,6 +4,7 @@
 Real Gemini API integration for figurative language detection
 """
 import google.generativeai as genai
+import os
 import json
 import time
 from typing import List, Dict, Optional
@@ -285,7 +286,10 @@ def test_gemini_api():
     """Test the Gemini API with sample Hebrew text"""
 
     # Initialize client
-    api_key = "AIzaSyBjslLjCzAjarNfu0efWby6YHnqAXmaKIk"
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        raise ValueError("GEMINI_API_KEY environment variable not set. Please set it before running.")
+
     client = GeminiAPIClient(api_key)
 
     print("=== TESTING REAL GEMINI API ===")
