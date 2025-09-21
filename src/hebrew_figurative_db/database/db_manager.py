@@ -51,6 +51,10 @@ class DatabaseManager:
                 word_count INTEGER,
                 llm_restriction_error TEXT,
                 llm_deliberation TEXT,
+                instances_detected INTEGER,
+                instances_recovered INTEGER,
+                instances_lost_to_truncation INTEGER,
+                truncation_occurred TEXT CHECK(truncation_occurred IN ('yes', 'no')) DEFAULT 'no',
                 processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         ''')
@@ -142,8 +146,8 @@ class DatabaseManager:
     def insert_verse(self, verse_data: Dict) -> int:
         """Insert verse and return verse_id"""
         self.cursor.execute('''
-            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error, llm_deliberation)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error, llm_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_data['reference'],
             verse_data['book'],
@@ -154,7 +158,11 @@ class DatabaseManager:
             verse_data['english'],
             verse_data['word_count'],
             verse_data.get('llm_restriction_error'),
-            verse_data.get('llm_deliberation')
+            verse_data.get('llm_deliberation'),
+            verse_data.get('instances_detected'),
+            verse_data.get('instances_recovered'),
+            verse_data.get('instances_lost_to_truncation'),
+            verse_data.get('truncation_occurred', 'no')
         ))
 
         return self.cursor.lastrowid
