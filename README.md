@@ -16,7 +16,9 @@ LATEST BREAKTHROUGH: Deployed an advanced multi-type classification system that 
 ✅ **Complete Audit Trail**: Every detection and validation decision logged with reasoning
 ✅ **Deliberation Capture**: LLM explains what it considered and why for each verse
 ✅ **Validation Transparency**: Clear distinction between detection, reclassification, and rejection
-✅ **Automatic Retry Logic**: Retries on server errors (500s) with exponential backoff
+✅ **Advanced Server Error Recovery**: Exponential backoff for 500 errors with 30-second timeout fallback
+✅ **Intelligent Model Switching**: Automatic fallback to Gemini 1.5 Flash after persistent server errors
+✅ **Comprehensive Error Tracking**: Separate statistics for content restrictions vs server error fallbacks
 ✅ **Interactive Processing**: Analyze any book, chapter, or verse range on demand
 ✅ **Context-Aware Prompting**: Different strategies for creation, legal, poetic, and narrative texts
 ✅ **Robust Error Handling**: Graceful handling of API restrictions, rate limits, and server errors
@@ -26,8 +28,8 @@ LATEST BREAKTHROUGH: Deployed an advanced multi-type classification system that 
 🎯 **Publication Quality**: Advanced validation makes results suitable for peer-reviewed research
 Multi-Model API Achievements
 ✅ Context-Aware Analysis: Uses different prompting strategies for creation_narrative, poetic_blessing, and legal_ceremonial texts to improve accuracy.
-✅ Automated Fallback: Automatically switches from the primary model (e.g., Gemini 2.0 Flash) to a fallback model (e.g., Gemini 1.5 Flash) on content restriction errors.
-✅ Intelligent Retries: Overcomes API rate limits by automatically waiting the recommended duration.
+✅ Automated Fallback: Automatically switches from the primary model (Gemini 2.5 Flash) to a fallback model (Gemini 1.5 Flash) on content restriction errors and persistent server errors.
+✅ Intelligent Retries: Overcomes API rate limits and server errors with exponential backoff and recommended delay parsing.
 ✅ JSON Extraction: Reliably extracts JSON data from "chatty" or conversational LLM responses.
 ✅ Response Recovery: Automatic repair of truncated JSON responses to preserve valid figurative language detections.
 ✅ Multi-Type Detection: Supports simultaneous classification of phrases as multiple figurative types.

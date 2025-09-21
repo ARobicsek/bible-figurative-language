@@ -81,6 +81,7 @@ class MultiModelGeminiClient:
         self.request_count = 0
         self.primary_success_count = 0
         self.fallback_count = 0
+        self.server_error_fallback_count = 0  # Track 500 error fallbacks
         self.total_input_tokens = 0
         self.total_output_tokens = 0
         self.restriction_reasons = []
@@ -108,11 +109,18 @@ class MultiModelGeminiClient:
             hebrew_text, english_text, text_context
         )
 
-        if error and self._is_restriction_error(error):
-            # Fallback to secondary model for content restrictions
+        if error and (self._is_restriction_error(error) or self._is_server_error(error)):
+            fallback_reason = "content restriction" if self._is_restriction_error(error) else "server error"
+
+            # Fallback to secondary model for content restrictions or persistent server errors
             if self.logger:
-                self.logger.info(f"Primary model restricted ({error}), trying fallback...")
-            self.restriction_reasons.append(f"{self.primary_model_name}: {error}")
+                self.logger.info(f"Primary model failed ({fallback_reason}: {error}), trying fallback...")
+
+            if self._is_restriction_error(error):
+                self.restriction_reasons.append(f"{self.primary_model_name}: {error}")
+                self.fallback_count += 1
+            else:
+                self.server_error_fallback_count += 1
 
             result, error, fallback_metadata = self._try_model_analysis(
                 self.fallback_model, self.fallback_config, self.fallback_model_name,
@@ -122,8 +130,9 @@ class MultiModelGeminiClient:
             # Update metadata
             metadata.update(fallback_metadata)
             metadata['fallback_used'] = True
-            metadata['primary_restriction'] = self.restriction_reasons[-1]
-            self.fallback_count += 1
+            metadata['fallback_reason'] = fallback_reason
+            if self._is_restriction_error(error):
+                metadata['primary_restriction'] = self.restriction_reasons[-1]
         elif not error:
             # Only count as success if there was no error (including rate limit errors)
             self.primary_success_count += 1
@@ -139,6 +148,7 @@ class MultiModelGeminiClient:
         metadata = {'model_used': model_name, 'context': context, 'retries': 0}
         max_retries = 5
         backoff_factor = 2
+        start_time = time.time()  # Track total elapsed time
 
         for attempt in range(max_retries):
             try:
@@ -194,24 +204,43 @@ class MultiModelGeminiClient:
 
             except Exception as e:
                 error_msg = f"{model_name} error: {str(e)}"
-                wait_time = 0
+                elapsed_time = time.time() - start_time
 
-                if "429" in error_msg and attempt < max_retries - 1:
-                    # Try to parse the recommended retry delay from the error
+                # Check if we should retry (different logic for 429 vs 500 errors)
+                should_retry = attempt < max_retries - 1
+
+                if "429" in error_msg and should_retry:
+                    # Rate limit error - use recommended delay or exponential backoff
                     retry_after_match = re.search(r'retry_delay {\s*seconds: (\d+)\s*}', error_msg)
                     if retry_after_match:
                         wait_time = int(retry_after_match.group(1))
                     else:
-                        # Fallback to exponential backoff if delay is not specified
                         wait_time = (backoff_factor ** attempt) * 5
 
-                    wait_time += (hash(time.time()) % 1000 / 1000) # Add jitter
+                    wait_time += (hash(time.time()) % 1000 / 1000)  # Add jitter
                     if self.logger:
                         self.logger.info(f"Rate limit hit. Retrying in {wait_time:.2f} seconds... (Attempt {attempt + 1}/{max_retries})")
                     time.sleep(wait_time)
                     metadata['retries'] = attempt + 1
                     continue
 
+                elif "500" in error_msg and should_retry:
+                    # Server error - exponential backoff with 30-second timeout check
+                    if elapsed_time >= 30:
+                        # After 30 seconds of 500 errors, give up and let caller try fallback model
+                        if self.logger:
+                            self.logger.warning(f"Server errors for {elapsed_time:.1f} seconds, giving up on {model_name}")
+                        return "[]", f"Server error timeout after {elapsed_time:.1f}s: {error_msg}", metadata
+
+                    wait_time = min((backoff_factor ** attempt) * 2, 10)  # Cap at 10 seconds per retry
+                    wait_time += (hash(time.time()) % 1000 / 1000)  # Add jitter
+                    if self.logger:
+                        self.logger.info(f"Server error, retrying in {wait_time:.2f} seconds... (Attempt {attempt + 1}/{max_retries}, elapsed: {elapsed_time:.1f}s)")
+                    time.sleep(wait_time)
+                    metadata['retries'] = attempt + 1
+                    continue
+
+                # Non-retryable error or max retries reached
                 if self.logger:
                     self.logger.error(f"API error (non-critical): {error_msg}")
                 return "[]", error_msg, metadata
@@ -339,6 +368,8 @@ Analysis:"""
 
     def _is_restriction_error(self, error_msg: str) -> bool:
         """Check if error indicates content restriction requiring fallback"""
+        if not error_msg:
+            return False
         restriction_indicators = [
             'Content restricted',
             'SAFETY',
@@ -348,6 +379,17 @@ Analysis:"""
             'filtered'
         ]
         return any(indicator.lower() in error_msg.lower() for indicator in restriction_indicators)
+
+    def _is_server_error(self, error_msg: str) -> bool:
+        """Check if error indicates persistent server issues requiring fallback"""
+        if not error_msg:
+            return False
+        server_error_indicators = [
+            'Server error timeout after',
+            '500 An internal error',
+            'Failed after .* retries due to persistent API errors'
+        ]
+        return any(re.search(indicator, error_msg) for indicator in server_error_indicators)
 
     def _is_restriction_reason(self, finish_reason) -> bool:
         """Check if finish reason indicates content restriction"""
@@ -772,12 +814,17 @@ Analysis:"""
 
     def get_usage_info(self) -> Dict:
         """Get comprehensive usage statistics"""
+        total_fallbacks = self.fallback_count + self.server_error_fallback_count
         return {
             'total_requests': self.request_count,
             'primary_success': self.primary_success_count,
-            'fallback_used': self.fallback_count,
+            'content_restriction_fallbacks': self.fallback_count,
+            'server_error_fallbacks': self.server_error_fallback_count,
+            'total_fallbacks': total_fallbacks,
             'primary_success_rate': self.primary_success_count / max(1, self.request_count),
-            'fallback_rate': self.fallback_count / max(1, self.request_count),
+            'content_restriction_rate': self.fallback_count / max(1, self.request_count),
+            'server_error_fallback_rate': self.server_error_fallback_count / max(1, self.request_count),
+            'total_fallback_rate': total_fallbacks / max(1, self.request_count),
             'total_input_tokens': self.total_input_tokens,
             'total_output_tokens': self.total_output_tokens,
             'total_tokens': self.total_input_tokens + self.total_output_tokens,
