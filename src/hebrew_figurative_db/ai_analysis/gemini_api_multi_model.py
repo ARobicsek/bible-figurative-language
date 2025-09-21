@@ -184,9 +184,10 @@ class MultiModelGeminiClient:
                         self.logger.debug(f"Raw response length: {len(response_text)} characters")
                         self.logger.debug(f"Response ends with: '{response_text[-100:]}'")
 
-                    cleaned_response, all_instances, deliberation = self._clean_response(response_text.strip(), hebrew_text, english_text)
+                    cleaned_response, all_instances, deliberation, truncation_info = self._clean_response(response_text.strip(), hebrew_text, english_text)
                     metadata['all_detected_instances'] = all_instances
                     metadata['llm_deliberation'] = deliberation
+                    metadata['truncation_info'] = truncation_info
                     return cleaned_response, None, metadata
                 else:
                     return "[]", "No response text generated", metadata
@@ -320,7 +321,7 @@ English: {english_text}
 **FIRST, provide your deliberation in a DELIBERATION section:**
 
 DELIBERATION:
-[You MUST analyze EVERY potential figurative element in this verse. For each phrase/concept, explain briefly:
+[You MUST analyze EVERY potential figurative element in this verse. For each phrase/concept, explain *briefly*:
 - What you considered (e.g., "considered if 'X' might be metaphor, metonymy, etc"). Note that synechdoche is a type of metonymy.
 - Your reasoning for including/excluding it (e.g., "this is not metaphor, metonymy, etc because...")
 - Any borderline cases you debated
@@ -477,6 +478,14 @@ Analysis:"""
                 self.logger.warning(f"LLM detected figurative language but no JSON found. Including count: {including_count}")
                 self.logger.warning(f"Response snippet: {response_text[:500]}...")
 
+        # Initialize truncation tracking
+        truncation_info = {
+            'instances_detected': 0,
+            'instances_recovered': 0,
+            'instances_lost_to_truncation': 0,
+            'truncation_occurred': 'no'
+        }
+
         # Try to parse as JSON to validate
         try:
             data = json.loads(json_string)
@@ -487,6 +496,12 @@ Analysis:"""
 
             all_instances = []
             validated_data = []
+
+            # Update truncation info for successful parsing
+            truncation_info['instances_detected'] = len(data)
+            truncation_info['instances_recovered'] = len(data)
+            truncation_info['instances_lost_to_truncation'] = 0
+            truncation_info['truncation_occurred'] = 'no'
 
             for item in data:
                 # Store original detection types for logging
@@ -511,8 +526,8 @@ Analysis:"""
                 # Skip validation in this method - it will be done in insert_and_validate_instances
                 validated_data.append(item)
 
-            # Return the cleaned and sanitized data as a JSON string, plus all instances and deliberation
-            return json.dumps(validated_data), all_instances, deliberation
+            # Return the cleaned and sanitized data as a JSON string, plus all instances, deliberation, and truncation info
+            return json.dumps(validated_data), all_instances, deliberation, truncation_info
         except json.JSONDecodeError as e:
             # If not valid JSON, try to repair it if it's just truncated
             if self.logger:
@@ -531,14 +546,27 @@ Analysis:"""
                 if self.logger:
                     self.logger.info("Attempting to repair truncated JSON...")
 
-                # Find the last complete object
+                # Find complete objects and try to repair incomplete ones
                 repaired_json = self._repair_truncated_json(json_string)
                 if repaired_json:
                     try:
                         data = json.loads(repaired_json)
                         if isinstance(data, list):
                             if self.logger:
-                                self.logger.info(f"Successfully repaired JSON, recovered {len(data)} items")
+                                # Check original truncated JSON for potential lost data
+                                truncated_object_count = json_string.count('"figurative_language":')
+                                recovered_count = len(data)
+
+                                # Update truncation info
+                                truncation_info['instances_detected'] = truncated_object_count
+                                truncation_info['instances_recovered'] = recovered_count
+                                truncation_info['instances_lost_to_truncation'] = max(0, truncated_object_count - recovered_count)
+                                truncation_info['truncation_occurred'] = 'yes'
+
+                                if truncated_object_count > recovered_count:
+                                    self.logger.warning(f"JSON repair: recovered {recovered_count} of {truncated_object_count} detected instances - {truncated_object_count - recovered_count} instances lost to truncation")
+                                else:
+                                    self.logger.info(f"Successfully repaired JSON, recovered {recovered_count} items")
 
                             all_instances = []
                             validated_data = []
@@ -566,46 +594,91 @@ Analysis:"""
                                 # Skip validation in this method - it will be done in insert_and_validate_instances
                                 validated_data.append(item)
 
-                            return json.dumps(validated_data), all_instances, deliberation
+                            return json.dumps(validated_data), all_instances, deliberation, truncation_info
                     except json.JSONDecodeError:
                         pass  # Fall through to return empty array
 
-            return "[]", [], deliberation
+            return "[]", [], deliberation, truncation_info
 
     def _repair_truncated_json(self, json_string: str) -> Optional[str]:
-        """Attempt to repair truncated JSON by finding the last complete object and closing the array"""
+        """Attempt to repair truncated JSON by finding complete objects and reconstructing partial ones"""
         try:
-            # Find the last complete object by looking for the last complete closing brace
-            last_complete_brace = -1
+            # First, try to find all complete objects
+            complete_objects = []
+            current_object = ""
             brace_count = 0
             in_string = False
             escape_next = False
+            in_object = False
 
             for i, char in enumerate(json_string):
                 if escape_next:
                     escape_next = False
+                    current_object += char
                     continue
 
                 if char == '\\' and in_string:
                     escape_next = True
+                    current_object += char
                     continue
 
                 if char == '"' and not escape_next:
                     in_string = not in_string
+                    current_object += char
                     continue
+
+                current_object += char
 
                 if not in_string:
                     if char == '{':
                         brace_count += 1
+                        if not in_object:
+                            in_object = True
+                            current_object = '{'
                     elif char == '}':
                         brace_count -= 1
-                        if brace_count == 0:
-                            last_complete_brace = i
+                        if brace_count == 0 and in_object:
+                            # Found a complete object
+                            complete_objects.append(current_object)
+                            current_object = ""
+                            in_object = False
 
-            if last_complete_brace > 0:
-                # Extract up to the last complete object and close the array
-                repaired = json_string[:last_complete_brace + 1] + '\n]'
+            # If we have complete objects, great!
+            if complete_objects:
+                repaired = '[\n' + ',\n'.join(complete_objects) + '\n]'
                 return repaired
+
+            # If no complete objects, try to find the last incomplete object and see if we can salvage it
+            if in_object and current_object and brace_count == 1:
+                # We have one incomplete object - try to close it gracefully
+                # Look for the last complete field
+                lines = current_object.split('\n')
+                salvageable_lines = []
+
+                for line in lines:
+                    line = line.strip()
+                    if not line or line == '{':
+                        salvageable_lines.append(line)
+                        continue
+
+                    # Check if this line looks like a complete field
+                    if (line.endswith(',') or line.endswith('"') or
+                        line.endswith('}') or line.endswith('0') or
+                        line.endswith('1') or line.endswith('true') or
+                        line.endswith('false')):
+                        salvageable_lines.append(line)
+                    else:
+                        # This line is incomplete, stop here
+                        break
+
+                if len(salvageable_lines) > 1:  # More than just the opening brace
+                    # Remove trailing comma if present
+                    if salvageable_lines[-1].endswith(','):
+                        salvageable_lines[-1] = salvageable_lines[-1][:-1]
+
+                    salvaged_object = '\n'.join(salvageable_lines) + '\n}'
+                    repaired = '[\n' + salvaged_object + '\n]'
+                    return repaired
 
             return None
         except Exception:
