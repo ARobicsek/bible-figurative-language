@@ -1,8 +1,8 @@
 Hebrew Figurative Language Database
-A comprehensive system for detecting and analyzing figurative language in biblical Hebrew texts, featuring a robust, context-aware multi-model LLM pipeline with two-stage validation for scholarly research.
+A comprehensive system for detecting and analyzing figurative language in biblical Hebrew texts, featuring a robust, context-aware multi-model LLM pipeline with multi-type classification and intelligent reclassification for scholarly research.
 
-🎉 Project Status: Production-Ready Validation Pipeline
-LATEST BREAKTHROUGH: Deployed a comprehensive two-stage validation system that captures ALL detection deliberations and validation decisions. The system now provides complete audit trails for both accepted AND rejected figurative language instances, enabling deep analysis of detection accuracy and systematic improvement.
+🎉 Project Status: Advanced Multi-Type Classification System
+LATEST BREAKTHROUGH: Deployed an advanced multi-type classification system that allows phrases to be classified as multiple figurative language types simultaneously (e.g., both metaphor AND idiom). The system includes intelligent reclassification capabilities where the validator can correct misclassifications and provides complete audit trails for both initial detection and final validation results.
 
 ## 🧠 Current AI Models
 - **Primary Model**: Gemini 2.5 Flash (latest, most capable)
@@ -10,22 +10,25 @@ LATEST BREAKTHROUGH: Deployed a comprehensive two-stage validation system that c
 - **Validation Model**: Gemini 1.5 Flash (conservative validation)
 
 ## 🎯 Current Status
-✅ **Two-Stage Validation**: Primary detection + secondary validation to eliminate false positives
+✅ **Multi-Type Classification**: Each phrase can be classified as multiple figurative language types
+✅ **Intelligent Reclassification**: Validator can correct misclassifications (e.g., metaphor → simile)
+✅ **Dual-Field Architecture**: Separate tracking of initial detection vs. final validated results
 ✅ **Complete Audit Trail**: Every detection and validation decision logged with reasoning
 ✅ **Deliberation Capture**: LLM explains what it considered and why for each verse
-✅ **Rejected Instance Storage**: Failed validations stored with complete reasoning
+✅ **Validation Transparency**: Clear distinction between detection, reclassification, and rejection
 ✅ **Automatic Retry Logic**: Retries on server errors (500s) with exponential backoff
 ✅ **Interactive Processing**: Analyze any book, chapter, or verse range on demand
 ✅ **Context-Aware Prompting**: Different strategies for creation, legal, poetic, and narrative texts
 ✅ **Robust Error Handling**: Graceful handling of API restrictions, rate limits, and server errors
 ✅ **Research-Grade Data**: Complete metadata for reproducible scholarly analysis
-🎯 **Publication Quality**: Comprehensive validation makes results suitable for peer-reviewed research
+🎯 **Publication Quality**: Advanced validation makes results suitable for peer-reviewed research
 Multi-Model API Achievements
 ✅ Context-Aware Analysis: Uses different prompting strategies for creation_narrative, poetic_blessing, and legal_ceremonial texts to improve accuracy.
 ✅ Automated Fallback: Automatically switches from the primary model (e.g., Gemini 2.0 Flash) to a fallback model (e.g., Gemini 1.5 Flash) on content restriction errors.
 ✅ Intelligent Retries: Overcomes API rate limits by automatically waiting the recommended duration.
 ✅ JSON Extraction: Reliably extracts JSON data from "chatty" or conversational LLM responses.
-✅ Type Sanitization: Prevents database crashes by automatically converting non-standard figurative language types (e.g., "irony") to 'other'.
+✅ Multi-Type Detection: Supports simultaneous classification of phrases as multiple figurative types.
+✅ Intelligent Reclassification: Automatic correction of misclassifications during validation.
 ✅ Scholar Confidence: The robust and transparent pipeline builds confidence in the results for academic use.
 Technical Achievements
 ✅ Context-Aware Prompt Engineering: Tailors prompts based on the biblical text's genre.
@@ -33,7 +36,7 @@ Technical Achievements
 ✅ 100% LLM-Based Detection: Pure AI-driven analysis with robust error handling and data validation.
 ✅ Enhanced Vehicle/Tenor Classification: Improved precision with specific categorization guidelines.
 ✅ Scholarly Explanations: PhD-level analysis with communicative intent detection.
-✅ Multi-Instance Detection: Captures multiple figurative language types per verse.
+✅ Advanced Multi-Type Architecture: Independent tracking of detection vs. validation for each type.
 ✅ Speaker Attribution & Purpose Analysis: Identifies who speaks and why.
 🚀 Quick Start
 Prerequisites
@@ -101,8 +104,8 @@ Root Directory:
 ├── .env                                # ⭐ NEW: Secure file for API key (add to .gitignore)
 ├── requirements.txt                    # Project dependencies (ensure python-dotenv is listed)
 └── ...
-🛠️ Enhanced Database Schema
-The schema supports comprehensive analysis with complete audit trails.
+🛠️ Advanced Multi-Type Database Schema
+The schema supports multi-type classification with comprehensive audit trails.
 
 ```sql
 -- Verses table with deliberation capture
@@ -120,11 +123,29 @@ CREATE TABLE verses (
     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Comprehensive figurative language table with validation tracking
+-- Advanced multi-type figurative language table with reclassification support
 CREATE TABLE figurative_language (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     verse_id INTEGER NOT NULL,
-    type TEXT NOT NULL CHECK(type IN ('metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other')),
+    -- Initial Detection Fields (what the LLM originally detected)
+    figurative_language TEXT CHECK(figurative_language IN ('yes', 'no')) DEFAULT 'no',
+    simile TEXT CHECK(simile IN ('yes', 'no')) DEFAULT 'no',
+    metaphor TEXT CHECK(metaphor IN ('yes', 'no')) DEFAULT 'no',
+    personification TEXT CHECK(personification IN ('yes', 'no')) DEFAULT 'no',
+    idiom TEXT CHECK(idiom IN ('yes', 'no')) DEFAULT 'no',
+    hyperbole TEXT CHECK(hyperbole IN ('yes', 'no')) DEFAULT 'no',
+    metonymy TEXT CHECK(metonymy IN ('yes', 'no')) DEFAULT 'no',
+    other TEXT CHECK(other IN ('yes', 'no')) DEFAULT 'no',
+    -- Final Validation Fields (what passed validation, may include reclassification)
+    final_figurative_language TEXT CHECK(final_figurative_language IN ('yes', 'no')) DEFAULT 'no',
+    final_simile TEXT CHECK(final_simile IN ('yes', 'no')) DEFAULT 'no',
+    final_metaphor TEXT CHECK(final_metaphor IN ('yes', 'no')) DEFAULT 'no',
+    final_personification TEXT CHECK(final_personification IN ('yes', 'no')) DEFAULT 'no',
+    final_idiom TEXT CHECK(final_idiom IN ('yes', 'no')) DEFAULT 'no',
+    final_hyperbole TEXT CHECK(final_hyperbole IN ('yes', 'no')) DEFAULT 'no',
+    final_metonymy TEXT CHECK(final_metonymy IN ('yes', 'no')) DEFAULT 'no',
+    final_other TEXT CHECK(final_other IN ('yes', 'no')) DEFAULT 'no',
+    -- Core Analysis Fields
     vehicle_level_1 TEXT,
     vehicle_level_2 TEXT,
     tenor_level_1 TEXT,
@@ -135,10 +156,22 @@ CREATE TABLE figurative_language (
     explanation TEXT,
     speaker TEXT,
     purpose TEXT,
-    -- Validation audit trail
-    original_detection_type TEXT,    -- Original type before validation
-    validation_decision TEXT CHECK(validation_decision IN ('VALID', 'INVALID', 'RECLASSIFY', NULL)),
-    validation_reason TEXT,          -- Why validator made this decision
+    original_detection_types TEXT,   -- Comma-separated list of originally detected types
+    -- Validation Audit Trail (per type)
+    validation_decision_simile TEXT CHECK(validation_decision_simile IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+    validation_decision_metaphor TEXT CHECK(validation_decision_metaphor IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+    validation_decision_personification TEXT CHECK(validation_decision_personification IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+    validation_decision_idiom TEXT CHECK(validation_decision_idiom IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+    validation_decision_hyperbole TEXT CHECK(validation_decision_hyperbole IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+    validation_decision_metonymy TEXT CHECK(validation_decision_metonymy IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+    validation_decision_other TEXT CHECK(validation_decision_other IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+    validation_reason_simile TEXT,
+    validation_reason_metaphor TEXT,
+    validation_reason_personification TEXT,
+    validation_reason_idiom TEXT,
+    validation_reason_hyperbole TEXT,
+    validation_reason_metonymy TEXT,
+    validation_reason_other TEXT,
     validation_response TEXT,        -- Full validator response
     validation_error TEXT,           -- Any validation errors
     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -146,10 +179,12 @@ CREATE TABLE figurative_language (
 );
 ```
 
-## 📊 Data Completeness
-- **Accepted Instances**: Full detection + validation data
-- **Rejected Instances**: Complete audit trail of why they were rejected
+## 📊 Advanced Data Architecture
+- **Multi-Type Detection**: Each phrase can be simultaneously classified as multiple types
+- **Initial vs. Final Fields**: Clear separation between what was detected vs. what was validated
+- **Reclassification Tracking**: Complete audit trail when validator corrects type assignments
 - **Deliberations**: LLM reasoning about all potential figurative elements per verse
+- **Per-Type Validation**: Independent validation decisions and reasoning for each figurative type
 - **Error Tracking**: Complete logging of API errors and restrictions
 🎯 Use Cases
 Biblical Scholarship
