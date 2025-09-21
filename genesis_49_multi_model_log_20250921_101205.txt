@@ -1,0 +1,86 @@
+2025-09-21 10:12:05,183 - INFO - Successfully loaded environment variables from: C:\Users\ariro\OneDrive\Documents\Bible\.env
+2025-09-21 10:12:05,184 - INFO - === PROCESSING GENESIS CHAPTER(S) [49] WITH MULTI-MODEL API ===
+2025-09-21 10:12:05,184 - INFO - Initializing Sefaria client...
+2025-09-21 10:12:05,185 - INFO - Creating database: genesis_49_multi_model_20250921_101205.db
+2025-09-21 10:12:05,450 - INFO - Initializing Metaphor Validator...
+2025-09-21 10:12:05,450 - INFO - Initializing Gemini multi-model API...
+2025-09-21 10:12:05,450 - INFO - --- Processing Genesis 49 ---
+2025-09-21 10:12:05,451 - INFO - Fetching text for Genesis 49...
+2025-09-21 10:12:05,821 - INFO - Retrieved 33 verses for Genesis 49
+2025-09-21 10:12:05,821 - INFO - Filtering to process 10 selected verse(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+2025-09-21 10:12:05,821 - INFO -   Processing Genesis 49:1 (1/10)...
+2025-09-21 10:12:09,845 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 470, 'output_tokens': 1, 'all_detected_instances': [], 'fallback_used': False}
+2025-09-21 10:12:09,861 - INFO -   Processing Genesis 49:2 (2/10)...
+2025-09-21 10:12:13,349 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 418, 'output_tokens': 1, 'all_detected_instances': [], 'fallback_used': False}
+2025-09-21 10:12:13,349 - INFO -   Processing Genesis 49:3 (3/10)...
+2025-09-21 10:12:26,676 - INFO -     VALIDATING instance: and first fruit of my vigor
+2025-09-21 10:12:27,364 - INFO -       VALIDATION PASSED: Agricultural imagery is transferred to describe the human procreative process.  The firstborn son is not literally the "first fruit" of his father's vigor, but the metaphor effectively conveys the idea of the son being the primary and most significant outcome of his father's strength and vitality.
+2025-09-21 10:12:27,365 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 429, 'output_tokens': 222, 'all_detected_instances': [{'type': 'metaphor', 'hebrew_text': 'וְרֵאשִׁ֣ית אוֹנִ֑י', 'english_text': 'and first fruit of my vigor', 'explanation': "The firstborn son is metaphorically described as the 'first fruit' of the father's procreative strength. This draws on agricultural imagery (first produce of a harvest) to describe the initial and prime manifestation of human procreative power.", 'vehicle_level_1': 'nature', 'vehicle_level_2': 'fruit/produce', 'tenor_level_1': 'people', 'tenor_level_2': 'firstborn son/procreative product', 'confidence': 0.8, 'speaker': 'Jacob', 'purpose': "To emphasize the significance and origin of Reuben as the initial and prime manifestation of Jacob's strength and virility.", 'original_detection_type': 'metaphor'}], 'fallback_used': False}
+2025-09-21 10:12:27,365 - INFO -     DETECTED: 1 instances, VALIDATED: 1 instances
+2025-09-21 10:12:28,063 - INFO -     FINAL: 1 valid instances stored with validation decisions
+2025-09-21 10:12:28,063 - INFO -       Instance 1: metaphor - 'and first fruit of my vigor'
+2025-09-21 10:12:28,063 - INFO -   Processing Genesis 49:4 (4/10)...
+2025-09-21 10:12:35,303 - INFO -     VALIDATING instance: Unstable as water
+2025-09-21 10:12:36,283 - INFO -       VALIDATION PASSED: Simile - This is a genuine simile because it uses "as" to directly compare the subject's instability to the unpredictable nature of water.  It's a cross-domain comparison between a human characteristic (instability) and a natural phenomenon (water), creating a figurative image rather than a literal description. The comparison is not based on a shared quality easily observable in both, but rather on a perceived similarity in behavior (lack of fixed state).
+2025-09-21 10:12:36,283 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 456, 'output_tokens': 211, 'all_detected_instances': [{'type': 'simile', 'hebrew_text': 'פַּ֤חַז כַּמַּ֙יִם֙', 'english_text': 'Unstable as water', 'explanation': "This is a direct comparison (simile) of the character's instability and recklessness to the inherent lack of fixed form or constant movement of water. It's a cross-domain comparison between a human quality and a natural element.", 'vehicle_level_1': 'nature', 'vehicle_level_2': 'water', 'tenor_level_1': 'people', 'tenor_level_2': 'Reuben', 'confidence': 1.0, 'speaker': 'Narrator', 'purpose': "To characterize Reuben's impulsive and unreliable nature, explaining why he will lose his preeminence.", 'original_detection_type': 'simile'}], 'fallback_used': False}
+2025-09-21 10:12:36,284 - INFO -     DETECTED: 1 instances, VALIDATED: 1 instances
+2025-09-21 10:12:37,031 - INFO -     FINAL: 1 valid instances stored with validation decisions
+2025-09-21 10:12:37,032 - INFO -       Instance 1: simile - 'Unstable as water'
+2025-09-21 10:12:37,032 - INFO -   Processing Genesis 49:5 (5/10)...
+2025-09-21 10:12:45,376 - ERROR - Invalid JSON response: This text describes Simeon and Levi and the nature of their weapons.
+
+1.  **שִׁמְע֥וֹן וְלֵוִ֖י אַחִ֑ים** (Simeon and Levi are brothers / a pair): This is a straightforward statement of genealogical relationship. The English "are a pair" captures the sense of their close, perhaps conspiratorial, association, but it remains a literal description of their bond.
+2.  **כְּלֵ֥י חָמָ֖ס מְכֵרֹתֵיהֶֽם** (Their weapons are tools of lawlessness): This phrase describes the character and purpose of their weapons. "Tools of lawlessness" (כְּלֵי חָמָס) is a construct chain where "lawlessness/violence" (חָמָס) characterizes the "tools" (כְּלֵי). While a strong condemnation, it is a direct description of the weapons' function and the intent behind their use, rather than a metaphor comparing them to something else. It's not saying the weapons *are* lawlessness, but that they are *instruments characterized by* or *used for* lawlessness. This is a common and literal descriptive construction in Hebrew.
+
+Given the instructions to be conservative and to look for specific types of figurative language (animal metaphors, nature imagery, cross-domain comparisons, clear metaphorical relationships), this text does not contain genuinely figurative language according to the provided criteria.
+
+[]
+2025-09-21 10:12:45,377 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 395, 'output_tokens': 314, 'all_detected_instances': [], 'fallback_used': False}
+2025-09-21 10:12:45,378 - INFO -   Processing Genesis 49:6 (6/10)...
+2025-09-21 10:13:00,743 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 582, 'output_tokens': 1, 'all_detected_instances': [], 'fallback_used': False}
+2025-09-21 10:13:00,743 - INFO -   Processing Genesis 49:7 (7/10)...
+2025-09-21 10:13:07,444 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 456, 'output_tokens': 1, 'all_detected_instances': [], 'fallback_used': False}
+2025-09-21 10:13:07,445 - INFO -   Processing Genesis 49:8 (8/10)...
+2025-09-21 10:13:21,677 - INFO -     VALIDATING instance: Your hand shall be on the nape of your foes
+2025-09-21 10:13:22,307 - INFO -       VALIDATION PASSED: Cross-domain transfer (military power described in physical terms).  The phrase uses the image of a hand on the nape of the neck to convey complete military dominance and subjugation, not a literal act performed on each individual enemy.
+2025-09-21 10:13:22,308 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 452, 'output_tokens': 269, 'all_detected_instances': [{'type': 'metaphor', 'hebrew_text': 'יָדְךָ֖ בְּעֹ֣רֶף אֹיְבֶ֑יךָ', 'english_text': 'Your hand shall be on the nape of your foes', 'explanation': "This is an idiomatic expression signifying complete victory, dominance, and subjugation over enemies. The 'hand' represents power and control, and being 'on the nape' (a vulnerable spot) symbolizes the enemy's defeat and submission. It is not a literal physical act that will occur for every single foe, but a figurative way to describe Judah's future state of power and conquest.", 'vehicle_level_1': 'human', 'vehicle_level_2': 'hand on nape (physical act of subjugation)', 'tenor_level_1': 'people', 'tenor_level_2': 'dominance/victory/subjugation', 'confidence': 0.9, 'speaker': 'Narrator', 'purpose': "To prophesy Judah's future military and political supremacy and control over its adversaries.", 'original_detection_type': 'metaphor'}], 'fallback_used': False}
+2025-09-21 10:13:22,309 - INFO -     DETECTED: 1 instances, VALIDATED: 1 instances
+2025-09-21 10:13:23,159 - INFO -     FINAL: 1 valid instances stored with validation decisions
+2025-09-21 10:13:23,160 - INFO -       Instance 1: metaphor - 'Your hand shall be on the nape of your foes'
+2025-09-21 10:13:23,161 - INFO -   Processing Genesis 49:9 (9/10)...
+2025-09-21 10:13:34,502 - INFO -     VALIDATING instance: Judah is a lion’s whelp
+2025-09-21 10:13:35,076 - INFO -       VALIDATION PASSED: Cross-domain comparison (people as animals).  The passage uses the lion as a symbol to represent the tribe of Judah's strength and power, not as a literal statement of identity.
+2025-09-21 10:13:35,077 - INFO -     VALIDATING instance: On prey, my son, have you grown.
+2025-09-21 10:13:35,905 - INFO -       VALIDATION PASSED: Cross-domain comparison (animal to human).  The passage uses the lion as a symbol to describe Judah's growth and strength, not as a literal statement about Judah being a lion.  The growth in "prey" directly relates to the success of a predator, creating a figurative comparison of Judah's prosperity to the lion's hunting success.
+2025-09-21 10:13:35,905 - INFO -     VALIDATING instance: He crouches, lies down like a lion,Like a lioness
+2025-09-21 10:13:36,855 - INFO -       VALIDATION PASSED: This is a genuine simile employing a cross-domain comparison (animal to human).  The passage uses "like" (כְּ) to explicitly compare Judah's posture to that of a lion and lioness, creating a figurative image of his strength and untouchability, not merely describing his physical position.  The comparison is not literal; Judah is not literally a lion, but his power and security are compared to that of a lion's.
+2025-09-21 10:13:36,856 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 521, 'output_tokens': 636, 'all_detected_instances': [{'type': 'metaphor', 'hebrew_text': 'גּ֤וּר אַרְיֵה֙ יְהוּדָ֔ה', 'english_text': 'Judah is a lion’s whelp', 'explanation': 'The tribe of Judah is directly identified with a young lion, symbolizing its inherent strength, potential for dominance, and regal character.', 'vehicle_level_1': 'nature', 'vehicle_level_2': "lion's whelp", 'tenor_level_1': 'people', 'tenor_level_2': 'Judah (tribe/person)', 'confidence': 1.0, 'speaker': 'Narrator', 'purpose': 'To characterize Judah as powerful, dominant, and possessing royal potential.', 'original_detection_type': 'metaphor'}, {'type': 'metaphor', 'hebrew_text': 'מִטֶּ֖רֶף בְּנִ֣י עָלִ֑יתָ', 'english_text': 'On prey, my son, have you grown.', 'explanation': "Continuing the lion metaphor, Judah's growth and prosperity are likened to a predator's success in obtaining prey, implying strength gained through conquest or resourcefulness.", 'vehicle_level_1': 'nature', 'vehicle_level_2': "prey/predator's success", 'tenor_level_1': 'people', 'tenor_level_2': 'Judah (tribe/person)', 'confidence': 0.9, 'speaker': 'Narrator', 'purpose': "To describe Judah's rise to power and prosperity through strength and dominance, consistent with the lion imagery.", 'original_detection_type': 'metaphor'}, {'type': 'simile', 'hebrew_text': 'כָּרַ֨ע רָבַ֧ץ כְּאַרְיֵ֛ה וּכְלָבִ֖יא', 'english_text': 'He crouches, lies down like a lion,Like a lioness', 'explanation': "Judah's posture of rest and security is explicitly compared to that of a powerful lion and lioness, emphasizing his formidable and unchallengeable authority even in repose.", 'vehicle_level_1': 'nature', 'vehicle_level_2': 'lion/lioness', 'tenor_level_1': 'people', 'tenor_level_2': 'Judah (tribe/person)', 'confidence': 1.0, 'speaker': 'Narrator', 'purpose': "To illustrate Judah's secure, formidable, and unassailable position, even when at rest.", 'original_detection_type': 'simile'}], 'fallback_used': False}
+2025-09-21 10:13:36,856 - INFO -     DETECTED: 3 instances, VALIDATED: 3 instances
+2025-09-21 10:13:39,123 - INFO -     FINAL: 3 valid instances stored with validation decisions
+2025-09-21 10:13:39,124 - INFO -       Instance 1: metaphor - 'Judah is a lion’s whelp'
+2025-09-21 10:13:39,125 - INFO -       Instance 2: metaphor - 'On prey, my son, have you grown.'
+2025-09-21 10:13:39,125 - INFO -       Instance 3: simile - 'He crouches, lies down like a lion,Like a lioness'
+2025-09-21 10:13:39,125 - INFO -   Processing Genesis 49:10 (10/10)...
+2025-09-21 10:14:18,803 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 523, 'output_tokens': 1, 'all_detected_instances': [], 'fallback_used': False}
+2025-09-21 10:14:18,804 - INFO - Genesis 49 COMPLETED: 6 figurative instances from 10 verses
+2025-09-21 10:14:18,835 - INFO - 
+=== GENESIS PROCESSING COMPLETE ===
+2025-09-21 10:14:18,835 - INFO - Database: genesis_49_multi_model_20250921_101205.db
+2025-09-21 10:14:18,836 - INFO - Log file: genesis_49_multi_model_log_20250921_101205.txt
+2025-09-21 10:14:18,836 - INFO - Total verses processed: 10
+2025-09-21 10:14:18,836 - INFO - Total figurative instances: 6
+2025-09-21 10:14:18,836 - INFO - Errors: 0
+2025-09-21 10:14:18,837 - INFO - Processing time: 133.6 seconds
+2025-09-21 10:14:18,837 - INFO - 
+--- Multi-Model API Usage Statistics ---
+2025-09-21 10:14:18,837 - INFO - Total Requests: 10
+2025-09-21 10:14:18,837 - INFO - Primary Success: 10
+2025-09-21 10:14:18,837 - INFO - Fallback Used: 0
+2025-09-21 10:14:18,837 - INFO - Primary Success Rate: 1.0
+2025-09-21 10:14:18,838 - INFO - Fallback Rate: 0.0
+2025-09-21 10:14:18,838 - INFO - Total Input Tokens: 4702
+2025-09-21 10:14:18,838 - INFO - Total Output Tokens: 1657
+2025-09-21 10:14:18,838 - INFO - Total Tokens: 6359
+2025-09-21 10:14:18,838 - INFO - Primary Model: gemini-2.5-flash
+2025-09-21 10:14:18,838 - INFO - Fallback Model: gemini-1.5-flash
+2025-09-21 10:14:18,839 - INFO - Restriction Reasons: []

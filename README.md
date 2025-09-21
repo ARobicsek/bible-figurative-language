@@ -1,18 +1,25 @@
 Hebrew Figurative Language Database
-A comprehensive system for detecting and analyzing figurative language in biblical Hebrew texts, featuring a robust, context-aware multi-model LLM pipeline for scholarly research.
+A comprehensive system for detecting and analyzing figurative language in biblical Hebrew texts, featuring a robust, context-aware multi-model LLM pipeline with two-stage validation for scholarly research.
 
-🎉 Project Status: Interactive Multi-Model Processing
-LATEST BREAKTHROUGH: Deployed a resilient, context-aware multi-model API client with a new interactive processor. The system now intelligently handles API rate limits, sanitizes LLM responses to prevent data corruption, and allows for targeted analysis of any book, chapter, or verse range.
+🎉 Project Status: Production-Ready Validation Pipeline
+LATEST BREAKTHROUGH: Deployed a comprehensive two-stage validation system that captures ALL detection deliberations and validation decisions. The system now provides complete audit trails for both accepted AND rejected figurative language instances, enabling deep analysis of detection accuracy and systematic improvement.
 
-Current Status
-✅ Interactive Processing: New script (interactive_multi_model_processor.py) to analyze any book, chapter, or verse range.
-✅ Robust API Client: Multi-model system (gemini_api_multi_model.py) with context-aware prompting and automated fallbacks.
-✅ Rate-Limit Handling: Automatically retries on 429 errors by parsing the API's recommended retry_delay.
-✅ Data Sanitization: Intelligently extracts JSON from conversational LLM responses and sanitizes data types to prevent database errors.
-✅ Secure Configuration: API keys are now managed securely using a .env file.
-✅ Complete Data Storage: Every processed verse is stored in the database with full metadata, including any API errors.
-✅ Research-Grade Accuracy: Context-aware system is suitable for published biblical scholarship.
-🎯 Publication Quality: Results are reliable for academic research applications.
+## 🧠 Current AI Models
+- **Primary Model**: Gemini 2.5 Flash (latest, most capable)
+- **Fallback Model**: Gemini 1.5 Flash (automatic fallback for restrictions)
+- **Validation Model**: Gemini 1.5 Flash (conservative validation)
+
+## 🎯 Current Status
+✅ **Two-Stage Validation**: Primary detection + secondary validation to eliminate false positives
+✅ **Complete Audit Trail**: Every detection and validation decision logged with reasoning
+✅ **Deliberation Capture**: LLM explains what it considered and why for each verse
+✅ **Rejected Instance Storage**: Failed validations stored with complete reasoning
+✅ **Automatic Retry Logic**: Retries on server errors (500s) with exponential backoff
+✅ **Interactive Processing**: Analyze any book, chapter, or verse range on demand
+✅ **Context-Aware Prompting**: Different strategies for creation, legal, poetic, and narrative texts
+✅ **Robust Error Handling**: Graceful handling of API restrictions, rate limits, and server errors
+✅ **Research-Grade Data**: Complete metadata for reproducible scholarly analysis
+🎯 **Publication Quality**: Comprehensive validation makes results suitable for peer-reviewed research
 Multi-Model API Achievements
 ✅ Context-Aware Analysis: Uses different prompting strategies for creation_narrative, poetic_blessing, and legal_ceremonial texts to improve accuracy.
 ✅ Automated Fallback: Automatically switches from the primary model (e.g., Gemini 2.0 Flash) to a fallback model (e.g., Gemini 1.5 Flash) on content restriction errors.
@@ -94,12 +101,11 @@ Root Directory:
 ├── .env                                # ⭐ NEW: Secure file for API key (add to .gitignore)
 ├── requirements.txt                    # Project dependencies (ensure python-dotenv is listed)
 └── ...
-🛠️ Database Schema
-The schema supports detailed analysis and error tracking.
+🛠️ Enhanced Database Schema
+The schema supports comprehensive analysis with complete audit trails.
 
-sql
- Show full code block 
--- Verses table
+```sql
+-- Verses table with deliberation capture
 CREATE TABLE verses (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     reference TEXT NOT NULL,
@@ -109,11 +115,12 @@ CREATE TABLE verses (
     hebrew_text TEXT NOT NULL,
     english_text TEXT NOT NULL,
     word_count INTEGER,
-    llm_restriction_error TEXT,      -- Tracks API errors for a given verse
+    llm_restriction_error TEXT,      -- API errors for this verse
+    llm_deliberation TEXT,           -- LLM's reasoning about ALL potential figurative elements
     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Enhanced figurative language table
+-- Comprehensive figurative language table with validation tracking
 CREATE TABLE figurative_language (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     verse_id INTEGER NOT NULL,
@@ -128,8 +135,22 @@ CREATE TABLE figurative_language (
     explanation TEXT,
     speaker TEXT,
     purpose TEXT,
+    -- Validation audit trail
+    original_detection_type TEXT,    -- Original type before validation
+    validation_decision TEXT CHECK(validation_decision IN ('VALID', 'INVALID', 'RECLASSIFY', NULL)),
+    validation_reason TEXT,          -- Why validator made this decision
+    validation_response TEXT,        -- Full validator response
+    validation_error TEXT,           -- Any validation errors
+    processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (verse_id) REFERENCES verses (id)
 );
+```
+
+## 📊 Data Completeness
+- **Accepted Instances**: Full detection + validation data
+- **Rejected Instances**: Complete audit trail of why they were rejected
+- **Deliberations**: LLM reasoning about all potential figurative elements per verse
+- **Error Tracking**: Complete logging of API errors and restrictions
 🎯 Use Cases
 Biblical Scholarship
 Targeted Analysis: Use the interactive script to quickly analyze specific passages, verses, or ranges for research papers or class preparation.

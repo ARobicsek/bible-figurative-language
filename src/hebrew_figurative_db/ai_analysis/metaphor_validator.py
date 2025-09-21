@@ -13,14 +13,16 @@ from typing import List, Dict, Optional, Tuple
 class MetaphorValidator:
     """Stage 2 validator for metaphor detection to eliminate false positives"""
 
-    def __init__(self, api_key: str):
+    def __init__(self, api_key: str, db_manager=None):
         """
         Initialize the validator with Gemini API
 
         Args:
             api_key: Gemini API key
+            db_manager: DatabaseManager instance for logging deliberations
         """
         self.api_key = api_key
+        self.db_manager = db_manager
         genai.configure(api_key=api_key)
 
         # Use same model as main detection
@@ -42,7 +44,8 @@ class MetaphorValidator:
                                    english_text: str,
                                    figurative_text: str,
                                    explanation: str,
-                                   confidence: float) -> Tuple[bool, str, Optional[str], Optional[str]]:
+                                   confidence: float,
+                                   figurative_language_id: Optional[int] = None) -> Tuple[bool, str, Optional[str], Optional[str]]:
         """
         Validate whether detected figurative language is truly figurative
 
@@ -53,6 +56,7 @@ class MetaphorValidator:
             figurative_text: The detected figurative expression
             explanation: Original explanation from stage 1
             confidence: Original confidence score
+            figurative_language_id: ID of the figurative_language record for logging
 
         Returns:
             Tuple of (is_valid_figurative: bool, reason: str, error: Optional[str], corrected_type: Optional[str])
@@ -61,6 +65,14 @@ class MetaphorValidator:
         prompt = self._create_validation_prompt(
             fig_type, hebrew_text, english_text, figurative_text, explanation, confidence
         )
+
+        # Initialize validation data for logging
+        validation_data = {
+            'validation_response': None,
+            'validation_decision': None,
+            'validation_reason': None,
+            'validation_error': None
+        }
 
         try:
             response = self.model.generate_content(
@@ -76,42 +88,79 @@ class MetaphorValidator:
                 if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
                     finish_reason = candidate.finish_reason
                     if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
+                        validation_data['validation_decision'] = 'INVALID'
+                        validation_data['validation_reason'] = "Content restricted by safety filters"
+                        validation_data['validation_error'] = f"Safety restriction: {finish_reason.name}"
+                        self._log_validation_data(figurative_language_id, validation_data)
                         return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason.name}", None
                     elif str(finish_reason) in ['SAFETY', 'RECITATION', 'OTHER']:
+                        validation_data['validation_decision'] = 'INVALID'
+                        validation_data['validation_reason'] = "Content restricted by safety filters"
+                        validation_data['validation_error'] = f"Safety restriction: {finish_reason}"
+                        self._log_validation_data(figurative_language_id, validation_data)
                         return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason}", None
 
             if response.text:
                 # Parse the validation response
                 response_text = response.text.strip()
+                validation_data['validation_response'] = response_text
 
                 # Expected format: "VALID: reason" or "INVALID: reason" or "RECLASSIFY: type - reason"
                 if response_text.startswith("VALID:"):
                     reason = response_text[6:].strip()
+                    validation_data['validation_decision'] = 'VALID'
+                    validation_data['validation_reason'] = reason
+                    self._log_validation_data(figurative_language_id, validation_data)
                     return True, reason, None, None
                 elif response_text.startswith("INVALID:"):
                     reason = response_text[8:].strip()
+                    validation_data['validation_decision'] = 'INVALID'
+                    validation_data['validation_reason'] = reason
+                    self._log_validation_data(figurative_language_id, validation_data)
                     return False, reason, None, None
                 elif response_text.startswith("RECLASSIFY:"):
                     # Format: "RECLASSIFY: personification - reason"
                     content = response_text[11:].strip()
+                    validation_data['validation_decision'] = 'RECLASSIFY'
                     if " - " in content:
                         corrected_type, reason = content.split(" - ", 1)
+                        validation_data['validation_reason'] = reason
+                        self._log_validation_data(figurative_language_id, validation_data)
                         return True, reason, None, corrected_type.strip()
                     else:
+                        validation_data['validation_reason'] = content
+                        self._log_validation_data(figurative_language_id, validation_data)
                         return True, content, None, "personification"  # Default assumption
                 else:
                     # Fallback parsing
                     if "RECLASSIFY" in response_text.upper():
+                        validation_data['validation_decision'] = 'RECLASSIFY'
+                        validation_data['validation_reason'] = response_text
+                        self._log_validation_data(figurative_language_id, validation_data)
                         return True, response_text, None, "personification"
                     elif "VALID" in response_text.upper():
+                        validation_data['validation_decision'] = 'VALID'
+                        validation_data['validation_reason'] = response_text
+                        self._log_validation_data(figurative_language_id, validation_data)
                         return True, response_text, None, None
                     else:
+                        validation_data['validation_decision'] = 'INVALID'
+                        validation_data['validation_reason'] = response_text
+                        self._log_validation_data(figurative_language_id, validation_data)
                         return False, response_text, None, None
             else:
+                validation_data['validation_decision'] = 'INVALID'
+                validation_data['validation_reason'] = "No response generated"
+                validation_data['validation_error'] = "Empty response"
+                self._log_validation_data(figurative_language_id, validation_data)
                 return False, "No response generated", "Empty response", None
 
         except Exception as e:
             error_msg = f"Validation API error: {str(e)}"
+            validation_data['validation_decision'] = 'INVALID'
+            validation_data['validation_reason'] = "API error during validation"
+            validation_data['validation_error'] = error_msg
+            self._log_validation_data(figurative_language_id, validation_data)
             return False, "API error during validation", error_msg, None
 
     def _create_validation_prompt(self,
@@ -268,6 +317,15 @@ Focus on identifying genuine cross-domain comparisons and divine anthropomorphis
 VALIDATION:"""
 
         return prompt
+
+    def _log_validation_data(self, figurative_language_id: Optional[int], validation_data: Dict):
+        """Log validation data to database if database manager is available"""
+        if self.db_manager and figurative_language_id:
+            try:
+                self.db_manager.update_validation_data(figurative_language_id, validation_data)
+            except Exception as e:
+                # Don't let database logging errors break the validation process
+                print(f"Warning: Failed to log validation data: {e}")
 
     def get_validation_stats(self) -> Dict:
         """Get validation statistics"""

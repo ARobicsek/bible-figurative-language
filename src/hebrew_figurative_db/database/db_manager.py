@@ -50,6 +50,7 @@ class DatabaseManager:
                 english_text TEXT NOT NULL,
                 word_count INTEGER,
                 llm_restriction_error TEXT,
+                llm_deliberation TEXT,
                 processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         ''')
@@ -70,6 +71,11 @@ class DatabaseManager:
                 explanation TEXT,
                 speaker TEXT,
                 purpose TEXT,
+                original_detection_type TEXT,
+                validation_decision TEXT CHECK(validation_decision IN ('VALID', 'INVALID', 'RECLASSIFY', NULL)),
+                validation_reason TEXT,
+                validation_response TEXT,
+                validation_error TEXT,
                 processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (verse_id) REFERENCES verses (id)
             )
@@ -87,14 +93,16 @@ class DatabaseManager:
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_confidence ON figurative_language (confidence)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_speaker ON figurative_language (speaker)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_purpose ON figurative_language (purpose)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_validation_decision ON figurative_language (validation_decision)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_original_detection_type ON figurative_language (original_detection_type)')
 
         self.conn.commit()
 
     def insert_verse(self, verse_data: Dict) -> int:
         """Insert verse and return verse_id"""
         self.cursor.execute('''
-            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error, llm_deliberation)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_data['reference'],
             verse_data['book'],
@@ -104,17 +112,18 @@ class DatabaseManager:
             verse_data.get('hebrew_stripped'),
             verse_data['english'],
             verse_data['word_count'],
-            verse_data.get('llm_restriction_error')
+            verse_data.get('llm_restriction_error'),
+            verse_data.get('llm_deliberation')
         ))
 
         return self.cursor.lastrowid
 
-    def insert_figurative_language(self, verse_id: int, figurative_data: Dict):
-        """Insert figurative language finding"""
+    def insert_figurative_language(self, verse_id: int, figurative_data: Dict) -> int:
+        """Insert figurative language finding and return figurative_language_id"""
         self.cursor.execute('''
             INSERT INTO figurative_language
-            (verse_id, type, vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2, confidence, figurative_text, figurative_text_in_hebrew, explanation, speaker, purpose)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            (verse_id, type, vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2, confidence, figurative_text, figurative_text_in_hebrew, explanation, speaker, purpose, original_detection_type, validation_decision, validation_reason, validation_response, validation_error)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_id,
             figurative_data['type'],
@@ -127,7 +136,28 @@ class DatabaseManager:
             figurative_data.get('figurative_text_in_hebrew'),
             figurative_data.get('explanation'),
             figurative_data.get('speaker'),
-            figurative_data.get('purpose')
+            figurative_data.get('purpose'),
+            figurative_data.get('original_detection_type'),
+            figurative_data.get('validation_decision'),
+            figurative_data.get('validation_reason'),
+            figurative_data.get('validation_response'),
+            figurative_data.get('validation_error')
+        ))
+
+        return self.cursor.lastrowid
+
+    def update_validation_data(self, figurative_language_id: int, validation_data: Dict):
+        """Update validation data for an existing figurative language entry"""
+        self.cursor.execute('''
+            UPDATE figurative_language
+            SET validation_decision = ?, validation_reason = ?, validation_response = ?, validation_error = ?
+            WHERE id = ?
+        ''', (
+            validation_data.get('validation_decision'),
+            validation_data.get('validation_reason'),
+            validation_data.get('validation_response'),
+            validation_data.get('validation_error'),
+            figurative_language_id
         ))
 
     def get_statistics(self) -> Dict:

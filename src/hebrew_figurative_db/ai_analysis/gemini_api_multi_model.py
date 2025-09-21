@@ -33,14 +33,20 @@ FALLBACK_MODEL = 'gemini-1.5-flash'
 class MultiModelGeminiClient:
     """Multi-model Gemini API client with context-aware conservative analysis"""
 
-    def __init__(self, api_key: str):
+    def __init__(self, api_key: str, validator=None, logger=None, db_manager=None):
         """
         Initialize multi-model Gemini API client
 
         Args:
             api_key: Gemini API key
+            validator: MetaphorValidator instance
+            logger: Logger instance
+            db_manager: DatabaseManager instance for logging
         """
         self.api_key = api_key
+        self.validator = validator
+        self.logger = logger
+        self.db_manager = db_manager
         genai.configure(api_key=api_key)
 
         # Primary model: Gemini 2.5 Flash
@@ -104,7 +110,8 @@ class MultiModelGeminiClient:
 
         if error and self._is_restriction_error(error):
             # Fallback to secondary model for content restrictions
-            print(f"Primary model restricted ({error}), trying fallback...")
+            if self.logger:
+                self.logger.info(f"Primary model restricted ({error}), trying fallback...")
             self.restriction_reasons.append(f"{self.primary_model_name}: {error}")
 
             result, error, fallback_metadata = self._try_model_analysis(
@@ -166,12 +173,15 @@ class MultiModelGeminiClient:
                         finish_reason_name = candidate.finish_reason.name
                     
                     error_msg = f"Could not access response.text (finish reason: {finish_reason_name}). Error: {e}"
-                    print(f"API WARNING: {error_msg}")
+                    if self.logger:
+                        self.logger.warning(f"API WARNING: {error_msg}")
                     # We will return this as a non-fatal error and continue processing
                     return "[]", error_msg, metadata
 
                 if response_text:
-                    cleaned_response = self._clean_response(response_text.strip())
+                    cleaned_response, all_instances, deliberation = self._clean_response(response_text.strip(), hebrew_text, english_text)
+                    metadata['all_detected_instances'] = all_instances
+                    metadata['llm_deliberation'] = deliberation
                     return cleaned_response, None, metadata
                 else:
                     return "[]", "No response text generated", metadata
@@ -190,12 +200,14 @@ class MultiModelGeminiClient:
                         wait_time = (backoff_factor ** attempt) * 5
 
                     wait_time += (hash(time.time()) % 1000 / 1000) # Add jitter
-                    print(f"Rate limit hit. Retrying in {wait_time:.2f} seconds... (Attempt {attempt + 1}/{max_retries})")
+                    if self.logger:
+                        self.logger.info(f"Rate limit hit. Retrying in {wait_time:.2f} seconds... (Attempt {attempt + 1}/{max_retries})")
                     time.sleep(wait_time)
                     metadata['retries'] = attempt + 1
                     continue
 
-                print(f"API error (non-critical): {error_msg}")
+                if self.logger:
+                    self.logger.error(f"API error (non-critical): {error_msg}")
                 return "[]", error_msg, metadata
 
         return "[]", f"Failed after {max_retries} retries due to persistent API errors.", metadata
@@ -300,7 +312,17 @@ English: {english_text}
 
         return base_prompt + context_rules + """
 
-**JSON OUTPUT (only if genuinely figurative):**
+**FIRST, provide your deliberation in a DELIBERATION section:**
+
+DELIBERATION:
+[You MUST analyze EVERY potential figurative element in this verse. For each phrase/concept, explain:
+- What you considered (e.g., "considered if 'X' might be metaphor, metonymy, etc")
+- Your reasoning for including/excluding it (e.g., "this is not metaphor, metonymy, etc because...")
+- Any borderline cases you debated
+Be explicit about what you examined and why you made each decision.
+IMPORTANT: Include ALL phrases you marked as figurative in the JSON AND explain your reasoning for including them here.]
+
+**THEN provide JSON OUTPUT (only if genuinely figurative):**
 [{"type": "metaphor/personification/simile", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "vehicle_level_1": "nature/human/divine/abstract", "vehicle_level_2": "specific", "tenor_level_1": "God/people/covenant", "tenor_level_2": "specific", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
 
 If no figurative language found: []
@@ -328,13 +350,25 @@ Analysis:"""
         else:
             return str(finish_reason).upper() in restriction_reasons
 
-    def _clean_response(self, response_text: str) -> str:
-        """Clean, validate, and sanitize the JSON response."""
+    def _clean_response(self, response_text: str, hebrew_text: str, english_text: str) -> Tuple[str, List[Dict], str]:
+        """Clean and parse the JSON response, returning valid instances, all instances, and deliberation."""
+
+        # Extract deliberation section
+        deliberation = ""
+        deliberation_match = re.search(r'DELIBERATION:\s*([\s\S]*?)(?=\[|\n\n|\Z)', response_text)
+        if deliberation_match:
+            deliberation = deliberation_match.group(1).strip()
+
         # Use regex to find the JSON block, ignoring conversational text
         json_string = response_text
         match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text)
         if match:
             json_string = match.group(1).strip()
+        else:
+            # Try to find JSON array in the response
+            json_match = re.search(r'(\[[\s\S]*?\])', response_text)
+            if json_match:
+                json_string = json_match.group(1).strip()
 
         # Try to parse as JSON to validate
         try:
@@ -342,22 +376,109 @@ Analysis:"""
 
             # Ensure data is a list
             if not isinstance(data, list):
-                return "[]"
+                return "[]", [], deliberation
 
-            # Sanitize the 'type' field in each object
-            allowed_types = {'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
+            all_instances = []
+            validated_data = []
+
             for item in data:
+                # Store original detection type for logging
+                original_type = item.get('type')
+
+                # First, sanitize the 'type' field
+                allowed_types = {'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
                 if isinstance(item, dict) and 'type' in item and isinstance(item['type'], str):
                     llm_type = item['type'].lower()
                     if llm_type not in allowed_types:
                         item['type'] = 'other'
 
-            # Return the cleaned and sanitized data as a JSON string
-            return json.dumps(data)
+                # Set the original detection type
+                item['original_detection_type'] = original_type
+                all_instances.append(item.copy())
+
+                # For backward compatibility, include validation logic here but don't do database operations
+                if self.validator and self.logger:
+                    self.logger.info(f"    VALIDATING instance: {item.get('english_text')}")
+                    is_valid, reason, error, corrected_type = self.validator.validate_figurative_language(
+                        item.get('type'),
+                        hebrew_text,
+                        english_text,
+                        item.get('english_text'),
+                        item.get('explanation'),
+                        item.get('confidence')
+                    )
+
+                    if error:
+                        self.logger.error(f"      VALIDATION ERROR: {error}")
+                        continue
+
+                    if is_valid:
+                        self.logger.info(f"      VALIDATION PASSED: {reason}")
+                        if corrected_type:
+                            self.logger.info(f"      RECLASSIFIED to: {corrected_type}")
+                            item['type'] = corrected_type
+                        validated_data.append(item)
+                    else:
+                        self.logger.info(f"      VALIDATION FAILED: {reason}")
+                else:
+                    validated_data.append(item)
+
+            # Return the cleaned and sanitized data as a JSON string, plus all instances and deliberation
+            return json.dumps(validated_data), all_instances, deliberation
         except json.JSONDecodeError:
             # If not valid JSON, return empty array
-            print(f"Invalid JSON response: {response_text}")
-            return "[]"
+            if self.logger:
+                self.logger.error(f"Invalid JSON response: {response_text}")
+            return "[]", [], deliberation
+
+    def insert_and_validate_instances(self, verse_id: int, all_instances: List[Dict], hebrew_text: str, english_text: str) -> int:
+        """Insert all detected instances into database with validation data"""
+        if not self.db_manager:
+            return 0
+
+        valid_count = 0
+        for item in all_instances:
+            # Prepare figurative data
+            figurative_data = {
+                'type': item.get('type'),
+                'vehicle_level_1': item.get('vehicle_level_1'),
+                'vehicle_level_2': item.get('vehicle_level_2'),
+                'tenor_level_1': item.get('tenor_level_1'),
+                'tenor_level_2': item.get('tenor_level_2'),
+                'confidence': item.get('confidence'),
+                'figurative_text': item.get('english_text'),
+                'figurative_text_in_hebrew': item.get('hebrew_text'),
+                'explanation': item.get('explanation'),
+                'speaker': item.get('speaker'),
+                'purpose': item.get('purpose'),
+                'original_detection_type': item.get('original_detection_type')
+            }
+
+            # Insert the figurative language record
+            figurative_language_id = self.db_manager.insert_figurative_language(verse_id, figurative_data)
+
+            # Perform validation with database logging
+            if self.validator:
+                is_valid, reason, error, corrected_type = self.validator.validate_figurative_language(
+                    item.get('type'),
+                    hebrew_text,
+                    english_text,
+                    item.get('english_text'),
+                    item.get('explanation'),
+                    item.get('confidence'),
+                    figurative_language_id
+                )
+
+                if is_valid:
+                    valid_count += 1
+                    # Update the type if it was reclassified
+                    if corrected_type and corrected_type != item.get('type'):
+                        self.db_manager.cursor.execute(
+                            'UPDATE figurative_language SET type = ? WHERE id = ?',
+                            (corrected_type, figurative_language_id)
+                        )
+
+        return valid_count
 
     def get_usage_info(self) -> Dict:
         """Get comprehensive usage statistics"""
