@@ -123,7 +123,7 @@ English: {english_text}
 • Procedural language using "as/like"
 
 **BALANCED APPROACH:**
-Strongly avoid false positives but mark CLEAR figurative language.
+Avoid false positives but catch GENUINE figurative language.
 
 📋 **MARK AS FIGURATIVE IF CLEARLY:**
 
@@ -131,18 +131,24 @@ Strongly avoid false positives but mark CLEAR figurative language.
 • "God is shepherd" = divine ↔ pastoral (CLEAR cross-domain)
 • "mighty hand of God" = divine power ↔ human body part (CLEAR)
 • "Israel is vine" = nation ↔ plant (CLEAR cross-domain)
+• "fire is kindled in anger" = emotion ↔ physical fire (CLEAR)
 
 **CLEAR PERSONIFICATION (non-human acting human):**
 • "mountains sing" = geography ↔ human action (CLEAR)
 • "earth reeled" = planet ↔ human movement (CLEAR)
-• Divine emotions: "God angry", "God jealous" (CLEAR anthropomorphism)
+• Divine emotions: "God angry", "God jealous", "God regretted" (CLEAR anthropomorphism)
+• "land vomited out" = geography ↔ human action (CLEAR)
 
 **CLEAR SIMILES (unlike things with "like/as"):**
 • "like an eagle" = person ↔ bird (CLEAR unlike comparison)
 • "numerous as stars" = people ↔ celestial (CLEAR unlike)
+• "like consuming fire" = divine presence ↔ fire (CLEAR)
 
-**AVOID IF UNCLEAR:** When in doubt between figurative/literal → mark as LITERAL.
-**PRIORITIZE:** Avoiding false positives over catching marginal cases.
+**BORDERLINE CASES - MARK IF CONFIDENT:**
+• Divine anthropomorphic actions beyond standard creation/blessing
+• Clear cross-domain imagery outside Creation narratives
+
+**PRIORITIZE:** Genuine detection while avoiding Genesis 1-3 false positives.
 
 **JSON OUTPUT (only if genuinely figurative):**
 [{{"type": "metaphor/personification/simile", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "vehicle_level_1": "nature/human/divine/abstract", "vehicle_level_2": "specific", "tenor_level_1": "God/people/covenant", "tenor_level_2": "specific", "confidence": 0.7-1.0, "speaker": "God/Moses/Narrator", "purpose": "brief purpose"}}]

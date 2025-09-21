@@ -1,0 +1,1744 @@
+{
+  "database_file": "deuteronomy_improved_system_20250919_150838.db",
+  "processing_started": "2025-09-19 15:42:32",
+  "total_processing_time": 2034.0418305397034,
+  "system_improvements": [
+    "Enhanced validator with standard biblical language rejection",
+    "Strengthened initial annotator with false positive prevention",
+    "Simile validation for historical precedent filtering",
+    "Metaphor vs personification reclassification capability",
+    "ANE context consideration for literal vs figurative determination",
+    "Comprehensive divine action/attribute recognition",
+    "Theophanic manifestation literal classification",
+    "Quantitative description literal classification"
+  ],
+  "results": {
+    "chapters_processed": 34,
+    "total_verses_processed": 0,
+    "total_figurative_found": 502,
+    "chapter_details": {
+      "Deuteronomy.1": {
+        "error": "'charmap' codec can't encode characters in position 46-49: character maps to <undefined>"
+      },
+      "Deuteronomy.2": {
+        "error": "'charmap' codec can't encode characters in position 51-54: character maps to <undefined>"
+      },
+      "Deuteronomy.3": {
+        "error": "'charmap' codec can't encode characters in position 54-57: character maps to <undefined>"
+      },
+      "Deuteronomy.4": {
+        "verses_range": "Deuteronomy.4",
+        "processing_time": 171.03310751914978,
+        "api_time": 0.7149388790130615,
+        "processed_verses": 49,
+        "figurative_found": 19,
+        "processing_errors": 3,
+        "error_rate": 6.122448979591836,
+        "statistics": {
+          "total_verses": 161,
+          "total_figurative": 54,
+          "detection_rate": 33.54037267080746,
+          "avg_confidence": 0.8351851851851853,
+          "type_breakdown": {
+            "hyperbole": 2,
+            "metaphor": 38,
+            "metonymy": 2,
+            "personification": 6,
+            "simile": 6
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 4:24",
+            "metaphor",
+            0.95,
+            "a consuming fire"
+          ],
+          [
+            "Deuteronomy 1:31",
+            "simile",
+            0.95,
+            "as a householder carries his son"
+          ],
+          [
+            "Deuteronomy 1:10",
+            "simile",
+            0.95,
+            "as numerous as the stars in the sky"
+          ],
+          [
+            "Deuteronomy 4:36",
+            "metaphor",
+            0.9,
+            "on earth [God] let you see the great divine fire"
+          ],
+          [
+            "Deuteronomy 4:34",
+            "metaphor",
+            0.9,
+            "by a mighty hand and an outstretched arm"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.5": {
+        "verses_range": "Deuteronomy.5",
+        "processing_time": 47.54208421707153,
+        "api_time": 0.9090149402618408,
+        "processed_verses": 30,
+        "figurative_found": 10,
+        "processing_errors": 1,
+        "error_rate": 3.3333333333333335,
+        "statistics": {
+          "total_verses": 191,
+          "total_figurative": 64,
+          "detection_rate": 33.50785340314136,
+          "avg_confidence": 0.83828125,
+          "type_breakdown": {
+            "hyperbole": 3,
+            "metaphor": 44,
+            "metonymy": 2,
+            "personification": 9,
+            "simile": 6
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 4:24",
+            "metaphor",
+            0.95,
+            "a consuming fire"
+          ],
+          [
+            "Deuteronomy 1:31",
+            "simile",
+            0.95,
+            "as a householder carries his son"
+          ],
+          [
+            "Deuteronomy 1:10",
+            "simile",
+            0.95,
+            "as numerous as the stars in the sky"
+          ],
+          [
+            "Deuteronomy 5:23",
+            "metaphor",
+            0.9,
+            "speak out of the fire"
+          ],
+          [
+            "Deuteronomy 5:20",
+            "personification",
+            0.9,
+            "the mountain was ablaze with fire"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.6": {
+        "verses_range": "Deuteronomy.6",
+        "processing_time": 43.390138387680054,
+        "api_time": 0.8131239414215088,
+        "processed_verses": 25,
+        "figurative_found": 9,
+        "processing_errors": 2,
+        "error_rate": 8.0,
+        "statistics": {
+          "total_verses": 216,
+          "total_figurative": 73,
+          "detection_rate": 33.7962962962963,
+          "avg_confidence": 0.8383561643835616,
+          "type_breakdown": {
+            "hyperbole": 3,
+            "metaphor": 52,
+            "metonymy": 2,
+            "personification": 10,
+            "simile": 6
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 4:24",
+            "metaphor",
+            0.95,
+            "a consuming fire"
+          ],
+          [
+            "Deuteronomy 1:31",
+            "simile",
+            0.95,
+            "as a householder carries his son"
+          ],
+          [
+            "Deuteronomy 1:10",
+            "simile",
+            0.95,
+            "as numerous as the stars in the sky"
+          ],
+          [
+            "Deuteronomy 6:11",
+            "metaphor",
+            0.9,
+            "vineyards and olive groves"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.7": {
+        "verses_range": "Deuteronomy.7",
+        "processing_time": 80.05080151557922,
+        "api_time": 0.6309366226196289,
+        "processed_verses": 26,
+        "figurative_found": 18,
+        "processing_errors": 3,
+        "error_rate": 11.538461538461538,
+        "statistics": {
+          "total_verses": 242,
+          "total_figurative": 91,
+          "detection_rate": 37.60330578512397,
+          "avg_confidence": 0.8357142857142856,
+          "type_breakdown": {
+            "hyperbole": 4,
+            "metaphor": 68,
+            "metonymy": 2,
+            "personification": 11,
+            "simile": 6
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 4:24",
+            "metaphor",
+            0.95,
+            "a consuming fire"
+          ],
+          [
+            "Deuteronomy 1:31",
+            "simile",
+            0.95,
+            "as a householder carries his son"
+          ],
+          [
+            "Deuteronomy 1:10",
+            "simile",
+            0.95,
+            "as numerous as the stars in the sky"
+          ],
+          [
+            "Deuteronomy 7:24",
+            "metaphor",
+            0.9,
+            "no one shall stand up to you"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.8": {
+        "verses_range": "Deuteronomy.8",
+        "processing_time": 55.5055034160614,
+        "api_time": 0.6898143291473389,
+        "processed_verses": 20,
+        "figurative_found": 16,
+        "processing_errors": 2,
+        "error_rate": 10.0,
+        "statistics": {
+          "total_verses": 262,
+          "total_figurative": 107,
+          "detection_rate": 40.839694656488554,
+          "avg_confidence": 0.8355140186915888,
+          "type_breakdown": {
+            "hyperbole": 4,
+            "metaphor": 82,
+            "metonymy": 2,
+            "personification": 11,
+            "simile": 8
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 4:24",
+            "metaphor",
+            0.95,
+            "a consuming fire"
+          ],
+          [
+            "Deuteronomy 1:31",
+            "simile",
+            0.95,
+            "as a householder carries his son"
+          ],
+          [
+            "Deuteronomy 1:10",
+            "simile",
+            0.95,
+            "as numerous as the stars in the sky"
+          ],
+          [
+            "Deuteronomy 8:20",
+            "simile",
+            0.9,
+            "like the nations"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.9": {
+        "verses_range": "Deuteronomy.9",
+        "processing_time": 101.11945843696594,
+        "api_time": 0.7431342601776123,
+        "processed_verses": 29,
+        "figurative_found": 26,
+        "processing_errors": 5,
+        "error_rate": 17.24137931034483,
+        "statistics": {
+          "total_verses": 291,
+          "total_figurative": 133,
+          "detection_rate": 45.70446735395189,
+          "avg_confidence": 0.8342105263157895,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 103,
+            "metonymy": 2,
+            "personification": 14,
+            "simile": 8
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 4:24",
+            "metaphor",
+            0.95,
+            "a consuming fire"
+          ],
+          [
+            "Deuteronomy 1:31",
+            "simile",
+            0.95,
+            "as a householder carries his son"
+          ],
+          [
+            "Deuteronomy 1:10",
+            "simile",
+            0.95,
+            "as numerous as the stars in the sky"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.10": {
+        "verses_range": "Deuteronomy.10",
+        "processing_time": 43.59861898422241,
+        "api_time": 0.6591522693634033,
+        "processed_verses": 22,
+        "figurative_found": 10,
+        "processing_errors": 1,
+        "error_rate": 4.545454545454546,
+        "statistics": {
+          "total_verses": 313,
+          "total_figurative": 143,
+          "detection_rate": 45.68690095846645,
+          "avg_confidence": 0.834965034965035,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 111,
+            "metonymy": 2,
+            "personification": 14,
+            "simile": 10
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 4:24",
+            "metaphor",
+            0.95,
+            "a consuming fire"
+          ],
+          [
+            "Deuteronomy 1:31",
+            "simile",
+            0.95,
+            "as a householder carries his son"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.11": {
+        "verses_range": "Deuteronomy.11",
+        "processing_time": 70.21805095672607,
+        "api_time": 0.5725362300872803,
+        "processed_verses": 32,
+        "figurative_found": 24,
+        "processing_errors": 1,
+        "error_rate": 3.125,
+        "statistics": {
+          "total_verses": 345,
+          "total_figurative": 167,
+          "detection_rate": 48.40579710144928,
+          "avg_confidence": 0.8392215568862276,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 126,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 12
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.12": {
+        "verses_range": "Deuteronomy.12",
+        "processing_time": 41.489044189453125,
+        "api_time": 0.678107500076294,
+        "processed_verses": 31,
+        "figurative_found": 8,
+        "processing_errors": 2,
+        "error_rate": 6.451612903225806,
+        "statistics": {
+          "total_verses": 376,
+          "total_figurative": 175,
+          "detection_rate": 46.54255319148936,
+          "avg_confidence": 0.8385714285714285,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 132,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 14
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.13": {
+        "verses_range": "Deuteronomy.13",
+        "processing_time": 40.311017751693726,
+        "api_time": 0.6506781578063965,
+        "processed_verses": 19,
+        "figurative_found": 6,
+        "processing_errors": 3,
+        "error_rate": 15.789473684210526,
+        "statistics": {
+          "total_verses": 395,
+          "total_figurative": 181,
+          "detection_rate": 45.822784810126585,
+          "avg_confidence": 0.8375690607734806,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 138,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 14
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.14": {
+        "verses_range": "Deuteronomy.14",
+        "processing_time": 23.791188955307007,
+        "api_time": 0.5848569869995117,
+        "processed_verses": 29,
+        "figurative_found": 3,
+        "processing_errors": 1,
+        "error_rate": 3.4482758620689653,
+        "statistics": {
+          "total_verses": 424,
+          "total_figurative": 184,
+          "detection_rate": 43.39622641509434,
+          "avg_confidence": 0.8377717391304348,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 141,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 14
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.15": {
+        "verses_range": "Deuteronomy.15",
+        "processing_time": 34.33200263977051,
+        "api_time": 0.7685546875,
+        "processed_verses": 23,
+        "figurative_found": 9,
+        "processing_errors": 0,
+        "error_rate": 0.0,
+        "statistics": {
+          "total_verses": 447,
+          "total_figurative": 193,
+          "detection_rate": 43.17673378076063,
+          "avg_confidence": 0.8378238341968913,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 148,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 16
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.16": {
+        "verses_range": "Deuteronomy.16",
+        "processing_time": 19.18410325050354,
+        "api_time": 0.5728387832641602,
+        "processed_verses": 22,
+        "figurative_found": 3,
+        "processing_errors": 0,
+        "error_rate": 0.0,
+        "statistics": {
+          "total_verses": 469,
+          "total_figurative": 196,
+          "detection_rate": 41.7910447761194,
+          "avg_confidence": 0.8380102040816326,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 151,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 16
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.17": {
+        "verses_range": "Deuteronomy.17",
+        "processing_time": 14.344221830368042,
+        "api_time": 0.633812665939331,
+        "processed_verses": 20,
+        "figurative_found": 2,
+        "processing_errors": 0,
+        "error_rate": 0.0,
+        "statistics": {
+          "total_verses": 489,
+          "total_figurative": 198,
+          "detection_rate": 40.49079754601227,
+          "avg_confidence": 0.8378787878787879,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 153,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 16
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.18": {
+        "verses_range": "Deuteronomy.18",
+        "processing_time": 23.466615438461304,
+        "api_time": 0.6056687831878662,
+        "processed_verses": 22,
+        "figurative_found": 6,
+        "processing_errors": 2,
+        "error_rate": 9.090909090909092,
+        "statistics": {
+          "total_verses": 511,
+          "total_figurative": 204,
+          "detection_rate": 39.92172211350293,
+          "avg_confidence": 0.8387254901960784,
+          "type_breakdown": {
+            "hyperbole": 6,
+            "metaphor": 158,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 17
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.19": {
+        "verses_range": "Deuteronomy.19",
+        "processing_time": 16.682419061660767,
+        "api_time": 0.7755165100097656,
+        "processed_verses": 21,
+        "figurative_found": 3,
+        "processing_errors": 0,
+        "error_rate": 0.0,
+        "statistics": {
+          "total_verses": 532,
+          "total_figurative": 207,
+          "detection_rate": 38.90977443609023,
+          "avg_confidence": 0.8379227053140097,
+          "type_breakdown": {
+            "hyperbole": 7,
+            "metaphor": 160,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 17
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.20": {
+        "verses_range": "Deuteronomy.20",
+        "processing_time": 20.18600368499756,
+        "api_time": 0.7019445896148682,
+        "processed_verses": 20,
+        "figurative_found": 5,
+        "processing_errors": 0,
+        "error_rate": 0.0,
+        "statistics": {
+          "total_verses": 552,
+          "total_figurative": 212,
+          "detection_rate": 38.405797101449274,
+          "avg_confidence": 0.8379716981132076,
+          "type_breakdown": {
+            "hyperbole": 7,
+            "metaphor": 164,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 18
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.21": {
+        "verses_range": "Deuteronomy.21",
+        "processing_time": 13.034749984741211,
+        "api_time": 0.5601017475128174,
+        "processed_verses": 23,
+        "figurative_found": 1,
+        "processing_errors": 0,
+        "error_rate": 0.0,
+        "statistics": {
+          "total_verses": 575,
+          "total_figurative": 213,
+          "detection_rate": 37.04347826086957,
+          "avg_confidence": 0.837793427230047,
+          "type_breakdown": {
+            "hyperbole": 7,
+            "metaphor": 165,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 18
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.22": {
+        "verses_range": "Deuteronomy.22",
+        "processing_time": 26.55675196647644,
+        "api_time": 0.6865179538726807,
+        "processed_verses": 29,
+        "figurative_found": 4,
+        "processing_errors": 1,
+        "error_rate": 3.4482758620689653,
+        "statistics": {
+          "total_verses": 604,
+          "total_figurative": 217,
+          "detection_rate": 35.9271523178808,
+          "avg_confidence": 0.8370967741935484,
+          "type_breakdown": {
+            "hyperbole": 7,
+            "metaphor": 169,
+            "metonymy": 2,
+            "personification": 21,
+            "simile": 18
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.23": {
+        "verses_range": "Deuteronomy.23",
+        "processing_time": 26.714573860168457,
+        "api_time": 0.7324779033660889,
+        "processed_verses": 26,
+        "figurative_found": 6,
+        "processing_errors": 1,
+        "error_rate": 3.8461538461538463,
+        "statistics": {
+          "total_verses": 630,
+          "total_figurative": 223,
+          "detection_rate": 35.3968253968254,
+          "avg_confidence": 0.8360986547085203,
+          "type_breakdown": {
+            "hyperbole": 7,
+            "metaphor": 174,
+            "metonymy": 2,
+            "personification": 22,
+            "simile": 18
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.24": {
+        "verses_range": "Deuteronomy.24",
+        "processing_time": 36.30870008468628,
+        "api_time": 0.7594404220581055,
+        "processed_verses": 22,
+        "figurative_found": 7,
+        "processing_errors": 2,
+        "error_rate": 9.090909090909092,
+        "statistics": {
+          "total_verses": 652,
+          "total_figurative": 230,
+          "detection_rate": 35.2760736196319,
+          "avg_confidence": 0.8354347826086956,
+          "type_breakdown": {
+            "hyperbole": 7,
+            "metaphor": 181,
+            "metonymy": 2,
+            "personification": 22,
+            "simile": 18
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.25": {
+        "verses_range": "Deuteronomy.25",
+        "processing_time": 20.873581409454346,
+        "api_time": 0.47499871253967285,
+        "processed_verses": 19,
+        "figurative_found": 4,
+        "processing_errors": 1,
+        "error_rate": 5.263157894736842,
+        "statistics": {
+          "total_verses": 671,
+          "total_figurative": 234,
+          "detection_rate": 34.873323397913566,
+          "avg_confidence": 0.8352564102564103,
+          "type_breakdown": {
+            "hyperbole": 7,
+            "metaphor": 185,
+            "metonymy": 2,
+            "personification": 22,
+            "simile": 18
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.26": {
+        "verses_range": "Deuteronomy.26",
+        "processing_time": 44.30989861488342,
+        "api_time": 0.7689230442047119,
+        "processed_verses": 19,
+        "figurative_found": 13,
+        "processing_errors": 2,
+        "error_rate": 10.526315789473683,
+        "statistics": {
+          "total_verses": 690,
+          "total_figurative": 247,
+          "detection_rate": 35.79710144927537,
+          "avg_confidence": 0.8352226720647774,
+          "type_breakdown": {
+            "hyperbole": 7,
+            "metaphor": 198,
+            "metonymy": 2,
+            "personification": 22,
+            "simile": 18
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.27": {
+        "verses_range": "Deuteronomy.27",
+        "processing_time": 22.071329832077026,
+        "api_time": 0.9286437034606934,
+        "processed_verses": 26,
+        "figurative_found": 5,
+        "processing_errors": 1,
+        "error_rate": 3.8461538461538463,
+        "statistics": {
+          "total_verses": 716,
+          "total_figurative": 252,
+          "detection_rate": 35.19553072625698,
+          "avg_confidence": 0.835515873015873,
+          "type_breakdown": {
+            "hyperbole": 7,
+            "metaphor": 201,
+            "metonymy": 2,
+            "other": 2,
+            "personification": 22,
+            "simile": 18
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ],
+          [
+            "Deuteronomy 10:22",
+            "simile",
+            0.95,
+            "as the stars of heaven"
+          ],
+          [
+            "Deuteronomy 9:13",
+            "metaphor",
+            0.95,
+            "a stiffnecked people"
+          ],
+          [
+            "Deuteronomy 6:3",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.28": {
+        "verses_range": "Deuteronomy.28",
+        "processing_time": 240.698415517807,
+        "api_time": 0.8879654407501221,
+        "processed_verses": 69,
+        "figurative_found": 86,
+        "processing_errors": 4,
+        "error_rate": 5.797101449275362,
+        "statistics": {
+          "total_verses": 785,
+          "total_figurative": 338,
+          "detection_rate": 43.05732484076433,
+          "avg_confidence": 0.8353550295857989,
+          "type_breakdown": {
+            "hyperbole": 8,
+            "metaphor": 279,
+            "metonymy": 2,
+            "other": 2,
+            "personification": 24,
+            "simile": 23
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 28:62",
+            "simile",
+            0.95,
+            "as numerous as the stars in the skies"
+          ],
+          [
+            "Deuteronomy 28:29",
+            "simile",
+            0.95,
+            "as the blind grope in the dark"
+          ],
+          [
+            "Deuteronomy 28:13",
+            "metaphor",
+            0.95,
+            "the head, not the tail"
+          ],
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ],
+          [
+            "Deuteronomy 11:6",
+            "personification",
+            0.95,
+            "the earth opened her mouth"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.29": {
+        "verses_range": "Deuteronomy.29",
+        "processing_time": 46.73201036453247,
+        "api_time": 0.42333459854125977,
+        "processed_verses": 28,
+        "figurative_found": 17,
+        "processing_errors": 0,
+        "error_rate": 0.0,
+        "statistics": {
+          "total_verses": 813,
+          "total_figurative": 355,
+          "detection_rate": 43.665436654366545,
+          "avg_confidence": 0.8357746478873239,
+          "type_breakdown": {
+            "hyperbole": 8,
+            "metaphor": 289,
+            "metonymy": 2,
+            "other": 2,
+            "personification": 30,
+            "simile": 24
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 29:22",
+            "simile",
+            0.95,
+            "just like the upheaval of Sodom and Gomorrah, Admah and Zeboiim"
+          ],
+          [
+            "Deuteronomy 28:62",
+            "simile",
+            0.95,
+            "as numerous as the stars in the skies"
+          ],
+          [
+            "Deuteronomy 28:29",
+            "simile",
+            0.95,
+            "as the blind grope in the dark"
+          ],
+          [
+            "Deuteronomy 28:13",
+            "metaphor",
+            0.95,
+            "the head, not the tail"
+          ],
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": true
+      },
+      "Deuteronomy.30": {
+        "verses_range": "Deuteronomy.30",
+        "processing_time": 37.97144103050232,
+        "api_time": 0.4652273654937744,
+        "processed_verses": 20,
+        "figurative_found": 11,
+        "processing_errors": 4,
+        "error_rate": 20.0,
+        "statistics": {
+          "total_verses": 833,
+          "total_figurative": 366,
+          "detection_rate": 43.937575030012006,
+          "avg_confidence": 0.8351092896174864,
+          "type_breakdown": {
+            "hyperbole": 9,
+            "metaphor": 299,
+            "metonymy": 2,
+            "other": 2,
+            "personification": 30,
+            "simile": 24
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 29:22",
+            "simile",
+            0.95,
+            "just like the upheaval of Sodom and Gomorrah, Admah and Zeboiim"
+          ],
+          [
+            "Deuteronomy 28:62",
+            "simile",
+            0.95,
+            "as numerous as the stars in the skies"
+          ],
+          [
+            "Deuteronomy 28:29",
+            "simile",
+            0.95,
+            "as the blind grope in the dark"
+          ],
+          [
+            "Deuteronomy 28:13",
+            "metaphor",
+            0.95,
+            "the head, not the tail"
+          ],
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.31": {
+        "verses_range": "Deuteronomy.31",
+        "processing_time": 88.3390839099884,
+        "api_time": 0.4515194892883301,
+        "processed_verses": 30,
+        "figurative_found": 23,
+        "processing_errors": 4,
+        "error_rate": 13.333333333333334,
+        "statistics": {
+          "total_verses": 863,
+          "total_figurative": 389,
+          "detection_rate": 45.07531865585168,
+          "avg_confidence": 0.8352185089974294,
+          "type_breakdown": {
+            "hyperbole": 9,
+            "metaphor": 318,
+            "metonymy": 2,
+            "other": 2,
+            "personification": 33,
+            "simile": 25
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 29:22",
+            "simile",
+            0.95,
+            "just like the upheaval of Sodom and Gomorrah, Admah and Zeboiim"
+          ],
+          [
+            "Deuteronomy 28:62",
+            "simile",
+            0.95,
+            "as numerous as the stars in the skies"
+          ],
+          [
+            "Deuteronomy 28:29",
+            "simile",
+            0.95,
+            "as the blind grope in the dark"
+          ],
+          [
+            "Deuteronomy 28:13",
+            "metaphor",
+            0.95,
+            "the head, not the tail"
+          ],
+          [
+            "Deuteronomy 11:9",
+            "metaphor",
+            0.95,
+            "a land flowing with milk and honey"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.32": {
+        "verses_range": "Deuteronomy.32",
+        "processing_time": 205.8369915485382,
+        "api_time": 0.4712717533111572,
+        "processed_verses": 52,
+        "figurative_found": 88,
+        "processing_errors": 5,
+        "error_rate": 9.615384615384617,
+        "statistics": {
+          "total_verses": 915,
+          "total_figurative": 477,
+          "detection_rate": 52.131147540983605,
+          "avg_confidence": 0.8364779874213837,
+          "type_breakdown": {
+            "hyperbole": 11,
+            "metaphor": 392,
+            "metonymy": 2,
+            "other": 2,
+            "personification": 40,
+            "simile": 30
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 32:15",
+            "metaphor",
+            0.95,
+            "spurned the Rock of their support"
+          ],
+          [
+            "Deuteronomy 32:11",
+            "simile",
+            0.95,
+            "Like an eagle"
+          ],
+          [
+            "Deuteronomy 32:4",
+            "metaphor",
+            0.95,
+            "The Rock"
+          ],
+          [
+            "Deuteronomy 29:22",
+            "simile",
+            0.95,
+            "just like the upheaval of Sodom and Gomorrah, Admah and Zeboiim"
+          ],
+          [
+            "Deuteronomy 28:62",
+            "simile",
+            0.95,
+            "as numerous as the stars in the skies"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.33": {
+        "verses_range": "Deuteronomy.33",
+        "processing_time": 141.46718502044678,
+        "api_time": 0.4679296016693115,
+        "processed_verses": 29,
+        "figurative_found": 56,
+        "processing_errors": 4,
+        "error_rate": 13.793103448275861,
+        "statistics": {
+          "total_verses": 944,
+          "total_figurative": 533,
+          "detection_rate": 56.46186440677966,
+          "avg_confidence": 0.8357410881801125,
+          "type_breakdown": {
+            "hyperbole": 11,
+            "metaphor": 445,
+            "metonymy": 2,
+            "other": 2,
+            "personification": 40,
+            "simile": 33
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 33:20",
+            "simile",
+            0.95,
+            "Poised is he like a lion"
+          ],
+          [
+            "Deuteronomy 32:15",
+            "metaphor",
+            0.95,
+            "spurned the Rock of their support"
+          ],
+          [
+            "Deuteronomy 32:11",
+            "simile",
+            0.95,
+            "Like an eagle"
+          ],
+          [
+            "Deuteronomy 32:4",
+            "metaphor",
+            0.95,
+            "The Rock"
+          ],
+          [
+            "Deuteronomy 29:22",
+            "simile",
+            0.95,
+            "just like the upheaval of Sodom and Gomorrah, Admah and Zeboiim"
+          ]
+        ],
+        "success": false
+      },
+      "Deuteronomy.34": {
+        "verses_range": "Deuteronomy.34",
+        "processing_time": 14.672083854675293,
+        "api_time": 0.352294921875,
+        "processed_verses": 12,
+        "figurative_found": 4,
+        "processing_errors": 0,
+        "error_rate": 0.0,
+        "statistics": {
+          "total_verses": 956,
+          "total_figurative": 537,
+          "detection_rate": 56.17154811715481,
+          "avg_confidence": 0.8357541899441341,
+          "type_breakdown": {
+            "hyperbole": 11,
+            "metaphor": 449,
+            "metonymy": 2,
+            "other": 2,
+            "personification": 40,
+            "simile": 33
+          }
+        },
+        "top_findings": [
+          [
+            "Deuteronomy 33:20",
+            "simile",
+            0.95,
+            "Poised is he like a lion"
+          ],
+          [
+            "Deuteronomy 32:15",
+            "metaphor",
+            0.95,
+            "spurned the Rock of their support"
+          ],
+          [
+            "Deuteronomy 32:11",
+            "simile",
+            0.95,
+            "Like an eagle"
+          ],
+          [
+            "Deuteronomy 32:4",
+            "metaphor",
+            0.95,
+            "The Rock"
+          ],
+          [
+            "Deuteronomy 29:22",
+            "simile",
+            0.95,
+            "just like the upheaval of Sodom and Gomorrah, Admah and Zeboiim"
+          ]
+        ],
+        "success": true
+      }
+    }
+  }
+}
