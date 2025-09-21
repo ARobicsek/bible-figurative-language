@@ -329,3 +329,786 @@
 2025-09-20 23:00:06,592 - INFO -   Processing Deuteronomy 4:19 (19/49)...
 2025-09-20 23:00:07,932 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 501, 'output_tokens': 154, 'fallback_used': False}
 2025-09-20 23:00:07,933 - INFO -   Processing Deuteronomy 4:20 (20/49)...
+2025-09-20 23:01:01,542 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 365, 'output_tokens': 208, 'fallback_used': False}
+2025-09-20 23:01:01,542 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:01:01,543 - INFO -       Instance 1: metaphor - 'iron blast furnace'
+2025-09-20 23:01:01,543 - INFO -   Processing Deuteronomy 4:21 (21/49)...
+2025-09-20 23:01:02,850 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 412, 'output_tokens': 192, 'fallback_used': False}
+2025-09-20 23:01:02,850 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:01:02,851 - INFO -       Instance 1: other - 'Now יהוה was angry with me'
+2025-09-20 23:01:02,851 - INFO -   Processing Deuteronomy 4:22 (22/49)...
+2025-09-20 23:01:03,131 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 370, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:01:03,132 - INFO -   Processing Deuteronomy 4:23 (23/49)...
+2025-09-20 23:01:03,437 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 422, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:01:03,437 - INFO -   Processing Deuteronomy 4:24 (24/49)...
+2025-09-20 23:01:05,663 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 306, 'output_tokens': 341, 'fallback_used': False}
+2025-09-20 23:01:05,664 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:01:05,664 - INFO -       Instance 1: metaphor - 'consuming fire'
+2025-09-20 23:01:05,665 - INFO -       Instance 2: personification - 'an impassioned God'
+2025-09-20 23:01:05,665 - INFO -   Processing Deuteronomy 4:25 (25/49)...
+2025-09-20 23:01:05,998 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 422, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:01:05,999 - INFO -   Processing Deuteronomy 4:26 (26/49)...
+2025-09-20 23:01:07,635 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 465, 'output_tokens': 218, 'fallback_used': False}
+2025-09-20 23:01:07,636 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:01:07,636 - INFO -       Instance 1: personification - 'I call heaven and earth this day to witness against you'
+2025-09-20 23:01:07,636 - INFO -   Processing Deuteronomy 4:27 (27/49)...
+2025-09-20 23:01:10,307 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 367, 'output_tokens': 407, 'fallback_used': False}
+2025-09-20 23:01:10,308 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:01:10,308 - INFO -       Instance 1: metaphor - 'יהוה will scatter you among the peoples'
+2025-09-20 23:01:10,309 - INFO -       Instance 2: other - 'יהוה will drive you'
+2025-09-20 23:01:10,309 - INFO -   Processing Deuteronomy 4:28 (28/49)...
+2025-09-20 23:01:11,867 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 371, 'output_tokens': 237, 'fallback_used': False}
+2025-09-20 23:01:11,867 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:01:11,868 - INFO -       Instance 1: personification - 'that cannot see or hear or eat or smell'
+2025-09-20 23:01:11,868 - INFO -   Processing Deuteronomy 4:29 (29/49)...
+2025-09-20 23:01:12,113 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 356, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:01:12,114 - INFO -   Processing Deuteronomy 4:30 (30/49)...
+2025-09-20 23:01:12,539 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 372, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:01:12,539 - INFO -   Processing Deuteronomy 4:31 (31/49)...
+2025-09-20 23:02:03,916 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 376, 'output_tokens': 556, 'fallback_used': False}
+2025-09-20 23:02:03,917 - INFO -     FOUND: 3 figurative instances
+2025-09-20 23:02:03,917 - INFO -       Instance 1: other - 'For your God יהוה is a compassionate God'
+2025-09-20 23:02:03,918 - INFO -       Instance 2: other - 'will not fail you'
+2025-09-20 23:02:03,918 - INFO -       Instance 3: other - 'will not forget the covenant made on oath with your fathers'
+2025-09-20 23:02:03,919 - INFO -   Processing Deuteronomy 4:32 (32/49)...
+2025-09-20 23:02:05,491 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 478, 'output_tokens': 265, 'fallback_used': False}
+2025-09-20 23:02:05,491 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:02:05,492 - INFO -       Instance 1: hyperbole - 'ever since God created humankind on earth, from one end of heaven to the other'
+2025-09-20 23:02:05,492 - INFO -   Processing Deuteronomy 4:33 (33/49)...
+2025-09-20 23:02:07,560 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 333, 'output_tokens': 314, 'fallback_used': False}
+2025-09-20 23:02:07,560 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:02:07,561 - INFO -       Instance 1: other - 'voice of a god speaking out of a fire'
+2025-09-20 23:02:07,561 - INFO -   Processing Deuteronomy 4:34 (34/49)...
+2025-09-20 23:02:09,321 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 505, 'output_tokens': 240, 'fallback_used': False}
+2025-09-20 23:02:09,321 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:02:09,322 - INFO -       Instance 1: other - 'by a mighty hand and an outstretched arm'
+2025-09-20 23:02:09,322 - INFO -   Processing Deuteronomy 4:35 (35/49)...
+2025-09-20 23:02:09,619 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 335, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:02:09,620 - INFO -   Processing Deuteronomy 4:36 (36/49)...
+2025-09-20 23:02:11,912 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 388, 'output_tokens': 370, 'fallback_used': False}
+2025-09-20 23:02:11,913 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:02:11,913 - INFO -       Instance 1: other - 'let you hear the divine voice'
+2025-09-20 23:02:11,913 - INFO -       Instance 2: other - 'let you see the great divine fire'
+2025-09-20 23:02:11,914 - INFO -   Processing Deuteronomy 4:37 (37/49)...
+2025-09-20 23:02:14,493 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 398, 'output_tokens': 424, 'fallback_used': False}
+2025-09-20 23:02:14,493 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:02:14,494 - INFO -       Instance 1: other - 'personally/with His face/Presence'
+2025-09-20 23:02:14,494 - INFO -       Instance 2: other - 'in great, divine might'
+2025-09-20 23:02:14,494 - INFO -   Processing Deuteronomy 4:38 (38/49)...
+2025-09-20 23:02:16,074 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 370, 'output_tokens': 231, 'fallback_used': False}
+2025-09-20 23:02:16,075 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:02:16,075 - INFO -       Instance 1: metaphor - 'to drive from your path nations'
+2025-09-20 23:02:16,076 - INFO -   Processing Deuteronomy 4:39 (39/49)...
+2025-09-20 23:02:16,346 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 370, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:02:16,347 - INFO -   Processing Deuteronomy 4:40 (40/49)...
+2025-09-20 23:02:16,612 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 466, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:02:16,612 - INFO -   Processing Deuteronomy 4:41 (41/49)...
+2025-09-20 23:02:16,903 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 311, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:02:16,904 - INFO -   Processing Deuteronomy 4:42 (42/49)...
+2025-09-20 23:03:01,211 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 473, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:01,212 - INFO -   Processing Deuteronomy 4:43 (43/49)...
+2025-09-20 23:03:01,480 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 394, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:01,481 - INFO -   Processing Deuteronomy 4:44 (44/49)...
+2025-09-20 23:03:01,749 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 298, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:01,750 - INFO -   Processing Deuteronomy 4:45 (45/49)...
+2025-09-20 23:03:02,008 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 357, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:02,009 - INFO -   Processing Deuteronomy 4:46 (46/49)...
+2025-09-20 23:03:02,253 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 432, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:02,254 - INFO -   Processing Deuteronomy 4:47 (47/49)...
+2025-09-20 23:03:02,507 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 383, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:02,507 - INFO -   Processing Deuteronomy 4:48 (48/49)...
+2025-09-20 23:03:02,824 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 337, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:02,824 - INFO -   Processing Deuteronomy 4:49 (49/49)...
+2025-09-20 23:03:03,087 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 356, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:03,088 - INFO - Deuteronomy 4 COMPLETED: 21 figurative instances from 49 verses
+2025-09-20 23:03:03,103 - INFO - --- Processing Deuteronomy 5 ---
+2025-09-20 23:03:03,104 - INFO - Fetching text for Deuteronomy 5...
+2025-09-20 23:03:03,514 - INFO - Retrieved 30 verses for Deuteronomy 5
+2025-09-20 23:03:03,514 - INFO -   Processing Deuteronomy 5:1 (1/30)...
+2025-09-20 23:03:03,779 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 430, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:03,792 - INFO -   Processing Deuteronomy 5:2 (2/30)...
+2025-09-20 23:03:04,085 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 294, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:04,086 - INFO -   Processing Deuteronomy 5:3 (3/30)...
+2025-09-20 23:03:04,324 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 359, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:03:04,325 - INFO -   Processing Deuteronomy 5:4 (4/30)...
+2025-09-20 23:04:00,090 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 315, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:00,091 - INFO -   Processing Deuteronomy 5:5 (5/30)...
+2025-09-20 23:04:00,377 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 425, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:00,377 - INFO -   Processing Deuteronomy 5:6 (6/30)...
+2025-09-20 23:04:00,667 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 475, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:00,668 - INFO -   Processing Deuteronomy 5:7 (7/30)...
+2025-09-20 23:04:00,944 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 297, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:00,945 - INFO -   Processing Deuteronomy 5:8 (8/30)...
+2025-09-20 23:04:01,197 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 433, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:01,198 - INFO -   Processing Deuteronomy 5:9 (9/30)...
+2025-09-20 23:04:04,594 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 426, 'output_tokens': 533, 'fallback_used': False}
+2025-09-20 23:04:04,594 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:04:04,595 - INFO -       Instance 1: other - 'an impassioned God'
+2025-09-20 23:04:04,595 - INFO -       Instance 2: other - 'visiting the guilt of the parents upon the children, upon the third and upon the fourth generations of those who reject Me'
+2025-09-20 23:04:04,595 - INFO -   Processing Deuteronomy 5:10 (10/30)...
+2025-09-20 23:04:04,856 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 338, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:04,857 - INFO -   Processing Deuteronomy 5:11 (11/30)...
+2025-09-20 23:04:05,167 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 391, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:05,168 - INFO -   Processing Deuteronomy 5:12 (12/30)...
+2025-09-20 23:04:05,449 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 332, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:05,449 - INFO -   Processing Deuteronomy 5:13 (13/30)...
+2025-09-20 23:04:05,720 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 303, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:05,721 - INFO -   Processing Deuteronomy 5:14 (14/30)...
+2025-09-20 23:04:05,990 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 526, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:04:05,990 - INFO -   Processing Deuteronomy 5:15 (15/30)...
+2025-09-20 23:05:01,916 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 487, 'output_tokens': 220, 'fallback_used': False}
+2025-09-20 23:05:01,916 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:05:01,916 - INFO -       Instance 1: other - 'with a mighty hand and an outstretched arm'
+2025-09-20 23:05:01,917 - INFO -   Processing Deuteronomy 5:16 (16/30)...
+2025-09-20 23:05:02,209 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 456, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:05:02,210 - INFO -   Processing Deuteronomy 5:17 (17/30)...
+2025-09-20 23:05:02,582 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 433, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:05:02,582 - INFO -   Processing Deuteronomy 5:18 (18/30)...
+2025-09-20 23:05:02,859 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 484, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:05:02,860 - INFO -   Processing Deuteronomy 5:19 (19/30)...
+2025-09-20 23:05:03,131 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 449, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:05:03,132 - INFO -   Processing Deuteronomy 5:20 (20/30)...
+2025-09-20 23:05:03,398 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 376, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:05:03,399 - INFO -   Processing Deuteronomy 5:21 (21/30)...
+2025-09-20 23:05:06,090 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 424, 'output_tokens': 434, 'fallback_used': False}
+2025-09-20 23:05:06,091 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:05:06,091 - INFO -       Instance 1: other - 'a majestic Presence'
+2025-09-20 23:05:06,091 - INFO -       Instance 2: other - 'we have heard God’s voice out of the fire'
+2025-09-20 23:05:06,092 - INFO -   Processing Deuteronomy 5:22 (22/30)...
+2025-09-20 23:05:07,742 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 392, 'output_tokens': 243, 'fallback_used': False}
+2025-09-20 23:05:07,743 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:05:07,743 - INFO -       Instance 1: metaphor - 'this fearsome fire will consume us'
+2025-09-20 23:05:07,744 - INFO -   Processing Deuteronomy 5:23 (23/30)...
+2025-09-20 23:05:08,010 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 345, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:05:08,010 - INFO -   Processing Deuteronomy 5:24 (24/30)...
+2025-09-20 23:05:08,265 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 417, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:05:08,266 - INFO -   Processing Deuteronomy 5:25 (25/30)...
+2025-09-20 23:05:08,580 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 430, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:05:08,580 - INFO -   Processing Deuteronomy 5:26 (26/30)...
+2025-09-20 23:06:00,079 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 389, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:06:00,080 - INFO -   Processing Deuteronomy 5:27 (27/30)...
+2025-09-20 23:06:00,340 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 287, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:06:00,341 - INFO -   Processing Deuteronomy 5:28 (28/30)...
+2025-09-20 23:06:00,605 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 429, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:06:00,606 - INFO -   Processing Deuteronomy 5:29 (29/30)...
+2025-09-20 23:06:00,917 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 347, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:06:00,917 - INFO -   Processing Deuteronomy 5:30 (30/30)...
+2025-09-20 23:06:01,171 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 408, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:06:01,172 - INFO - Deuteronomy 5 COMPLETED: 6 figurative instances from 30 verses
+2025-09-20 23:06:01,187 - INFO - --- Processing Deuteronomy 6 ---
+2025-09-20 23:06:01,188 - INFO - Fetching text for Deuteronomy 6...
+2025-09-20 23:06:01,648 - INFO - Retrieved 25 verses for Deuteronomy 6
+2025-09-20 23:06:01,649 - INFO -   Processing Deuteronomy 6:1 (1/25)...
+2025-09-20 23:06:02,002 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 411, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:06:02,005 - INFO -   Processing Deuteronomy 6:2 (2/25)...
+2025-09-20 23:06:02,257 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 447, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:06:02,257 - INFO -   Processing Deuteronomy 6:3 (3/25)...
+2025-09-20 23:06:03,665 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 451, 'output_tokens': 225, 'fallback_used': False}
+2025-09-20 23:06:03,666 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:06:03,666 - INFO -       Instance 1: metaphor - 'a land flowing with milk and honey'
+2025-09-20 23:06:03,666 - INFO -   Processing Deuteronomy 6:4 (4/25)...
+2025-09-20 23:06:03,921 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 344, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:06:03,921 - INFO -   Processing Deuteronomy 6:5 (5/25)...
+2025-09-20 23:06:07,385 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 336, 'output_tokens': 589, 'fallback_used': False}
+2025-09-20 23:06:07,385 - INFO -     FOUND: 3 figurative instances
+2025-09-20 23:06:07,386 - INFO -       Instance 1: metaphor - 'with all your heart'
+2025-09-20 23:06:07,387 - INFO -       Instance 2: metaphor - 'with all your soul'
+2025-09-20 23:06:07,388 - INFO -       Instance 3: metaphor - 'with all your might'
+2025-09-20 23:06:07,388 - INFO -   Processing Deuteronomy 6:6 (6/25)...
+2025-09-20 23:06:08,546 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 310, 'output_tokens': 172, 'fallback_used': False}
+2025-09-20 23:06:08,546 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:06:08,547 - INFO -       Instance 1: metaphor - 'to heart'
+2025-09-20 23:06:08,547 - INFO -   Processing Deuteronomy 6:7 (7/25)...
+2025-09-20 23:07:00,710 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 371, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:07:00,711 - INFO -   Processing Deuteronomy 6:8 (8/25)...
+2025-09-20 23:07:02,988 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 347, 'output_tokens': 359, 'fallback_used': False}
+2025-09-20 23:07:02,989 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:07:02,989 - INFO -       Instance 1: metaphor - 'Bind them as a sign on your hand'
+2025-09-20 23:07:02,990 - INFO -       Instance 2: metaphor - 'let them serve as a symbol on your forehead'
+2025-09-20 23:07:02,990 - INFO -   Processing Deuteronomy 6:9 (9/25)...
+2025-09-20 23:07:03,324 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 314, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:07:03,325 - INFO -   Processing Deuteronomy 6:10 (10/25)...
+2025-09-20 23:07:03,622 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 424, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:07:03,623 - INFO -   Processing Deuteronomy 6:11 (11/25)...
+2025-09-20 23:07:03,942 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 405, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:07:03,942 - INFO -   Processing Deuteronomy 6:12 (12/25)...
+2025-09-20 23:07:04,218 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 342, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:07:04,219 - INFO -   Processing Deuteronomy 6:13 (13/25)...
+2025-09-20 23:07:04,481 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 317, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:07:04,482 - INFO -   Processing Deuteronomy 6:14 (14/25)...
+2025-09-20 23:07:04,756 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 318, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:07:04,757 - INFO -   Processing Deuteronomy 6:15 (15/25)...
+2025-09-20 23:07:09,063 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 414, 'output_tokens': 687, 'fallback_used': False}
+2025-09-20 23:07:09,063 - INFO -     FOUND: 3 figurative instances
+2025-09-20 23:07:09,064 - INFO -       Instance 1: other - 'for your God יהוה in your midst is an impassioned God'
+2025-09-20 23:07:09,065 - INFO -       Instance 2: metaphor - 'lest the anger of your God יהוה blaze forth against you'
+2025-09-20 23:07:09,065 - INFO -       Instance 3: metaphor - 'wiping you off the face of the earth'
+2025-09-20 23:07:09,065 - INFO -   Processing Deuteronomy 6:16 (16/25)...
+2025-09-20 23:07:09,357 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 333, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:07:09,358 - INFO -   Processing Deuteronomy 6:17 (17/25)...
+2025-09-20 23:07:09,680 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 330, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:07:09,681 - INFO -   Processing Deuteronomy 6:18 (18/25)...
+2025-09-20 23:08:00,501 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 402, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:00,502 - INFO -   Processing Deuteronomy 6:19 (19/25)...
+2025-09-20 23:08:00,776 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 333, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:00,776 - INFO -   Processing Deuteronomy 6:20 (20/25)...
+2025-09-20 23:08:01,062 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 386, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:01,062 - INFO -   Processing Deuteronomy 6:21 (21/25)...
+2025-09-20 23:08:01,338 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 356, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:01,338 - INFO -   Processing Deuteronomy 6:22 (22/25)...
+2025-09-20 23:08:01,634 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 360, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:01,634 - INFO -   Processing Deuteronomy 6:23 (23/25)...
+2025-09-20 23:08:01,905 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 342, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:01,906 - INFO -   Processing Deuteronomy 6:24 (24/25)...
+2025-09-20 23:08:02,192 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 388, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:02,192 - INFO -   Processing Deuteronomy 6:25 (25/25)...
+2025-09-20 23:08:02,482 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 394, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:02,483 - INFO - Deuteronomy 6 COMPLETED: 10 figurative instances from 25 verses
+2025-09-20 23:08:02,503 - INFO - --- Processing Deuteronomy 7 ---
+2025-09-20 23:08:02,503 - INFO - Fetching text for Deuteronomy 7...
+2025-09-20 23:08:02,959 - INFO - Retrieved 26 verses for Deuteronomy 7
+2025-09-20 23:08:02,960 - INFO -   Processing Deuteronomy 7:1 (1/26)...
+2025-09-20 23:08:03,226 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 527, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:03,229 - INFO -   Processing Deuteronomy 7:2 (2/26)...
+2025-09-20 23:08:03,478 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 365, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:03,478 - INFO -   Processing Deuteronomy 7:3 (3/26)...
+2025-09-20 23:08:03,757 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 333, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:08:03,758 - INFO -   Processing Deuteronomy 7:4 (4/26)...
+2025-09-20 23:09:02,066 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 364, 'output_tokens': 215, 'fallback_used': False}
+2025-09-20 23:09:02,066 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:09:02,067 - INFO -       Instance 1: other - 'יהוה’s anger will blaze forth'
+2025-09-20 23:09:02,068 - INFO -   Processing Deuteronomy 7:5 (5/26)...
+2025-09-20 23:09:02,361 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 396, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:09:02,362 - INFO -   Processing Deuteronomy 7:6 (6/26)...
+2025-09-20 23:09:02,668 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 403, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:09:02,669 - INFO -   Processing Deuteronomy 7:7 (7/26)...
+2025-09-20 23:09:02,973 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 369, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:09:02,973 - INFO -   Processing Deuteronomy 7:8 (8/26)...
+2025-09-20 23:09:04,162 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 446, 'output_tokens': 179, 'fallback_used': False}
+2025-09-20 23:09:04,163 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:09:04,163 - INFO -       Instance 1: other - 'with a mighty hand'
+2025-09-20 23:09:04,164 - INFO -   Processing Deuteronomy 7:9 (9/26)...
+2025-09-20 23:09:06,588 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 401, 'output_tokens': 369, 'fallback_used': False}
+2025-09-20 23:09:06,588 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:09:06,589 - INFO -       Instance 1: other - 'keeps the divine covenant faithfully'
+2025-09-20 23:09:06,589 - INFO -       Instance 2: hyperbole - 'to the thousandth generation'
+2025-09-20 23:09:06,590 - INFO -   Processing Deuteronomy 7:10 (10/26)...
+2025-09-20 23:09:08,508 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 337, 'output_tokens': 271, 'fallback_used': False}
+2025-09-20 23:09:08,509 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:09:08,509 - INFO -       Instance 1: other - 'but who instantly requites with destruction those who reject [God]—'
+2025-09-20 23:09:08,509 - INFO -   Processing Deuteronomy 7:11 (11/26)...
+2025-09-20 23:09:08,831 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 354, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:09:08,831 - INFO -   Processing Deuteronomy 7:12 (12/26)...
+2025-09-20 23:09:09,096 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 416, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:09:09,097 - INFO -   Processing Deuteronomy 7:13 (13/26)...
+2025-09-20 23:09:09,395 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 485, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:09:09,396 - INFO -   Processing Deuteronomy 7:14 (14/26)...
+2025-09-20 23:09:09,636 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 337, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:09:09,636 - INFO -   Processing Deuteronomy 7:15 (15/26)...
+2025-09-20 23:09:12,385 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 390, 'output_tokens': 430, 'fallback_used': False}
+2025-09-20 23:09:12,385 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:09:12,386 - INFO -       Instance 1: other - 'יהוה will ward off from you all sickness'
+2025-09-20 23:09:12,386 - INFO -       Instance 2: other - '[God] will not bring upon you any of the dreadful diseases...but will inflict them upon all your enemies.'
+2025-09-20 23:09:12,387 - INFO -   Processing Deuteronomy 7:16 (16/26)...
+2025-09-20 23:10:00,580 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 424, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:10:00,581 - INFO -   Processing Deuteronomy 7:17 (17/26)...
+2025-09-20 23:10:00,915 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 334, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:10:00,916 - INFO -   Processing Deuteronomy 7:18 (18/26)...
+2025-09-20 23:10:01,199 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 350, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:10:01,200 - INFO -   Processing Deuteronomy 7:19 (19/26)...
+2025-09-20 23:10:03,348 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 477, 'output_tokens': 351, 'fallback_used': False}
+2025-09-20 23:10:03,349 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:10:03,349 - INFO -       Instance 1: other - 'the mighty hand'
+2025-09-20 23:10:03,350 - INFO -       Instance 2: other - 'and the outstretched arm'
+2025-09-20 23:10:03,350 - INFO -   Processing Deuteronomy 7:20 (20/26)...
+2025-09-20 23:10:03,626 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 379, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:10:03,627 - INFO -   Processing Deuteronomy 7:21 (21/26)...
+2025-09-20 23:10:06,255 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 334, 'output_tokens': 446, 'fallback_used': False}
+2025-09-20 23:10:06,255 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:10:06,256 - INFO -       Instance 1: other - 'in your midst'
+2025-09-20 23:10:06,256 - INFO -       Instance 2: other - 'a great and awesome God'
+2025-09-20 23:10:06,257 - INFO -   Processing Deuteronomy 7:22 (22/26)...
+2025-09-20 23:10:07,890 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 391, 'output_tokens': 227, 'fallback_used': False}
+2025-09-20 23:10:07,891 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:10:07,891 - INFO -       Instance 1: other - 'Your God יהוה will dislodge those peoples before you'
+2025-09-20 23:10:07,892 - INFO -   Processing Deuteronomy 7:23 (23/26)...
+2025-09-20 23:10:10,508 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 327, 'output_tokens': 441, 'fallback_used': False}
+2025-09-20 23:10:10,509 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:10:10,509 - INFO -       Instance 1: other - 'Your God יהוה will deliver them up to you'
+2025-09-20 23:10:10,509 - INFO -       Instance 2: metaphor - 'throwing them into utter panic'
+2025-09-20 23:10:10,510 - INFO -   Processing Deuteronomy 7:24 (24/26)...
+2025-09-20 23:10:12,194 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 391, 'output_tokens': 239, 'fallback_used': False}
+2025-09-20 23:10:12,194 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:10:12,195 - INFO -       Instance 1: metaphor - 'and you shall obliterate their name from under the heavens'
+2025-09-20 23:10:12,195 - INFO -   Processing Deuteronomy 7:25 (25/26)...
+2025-09-20 23:10:12,464 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 419, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:10:12,464 - INFO -   Processing Deuteronomy 7:26 (26/26)...
+2025-09-20 23:11:03,684 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 404, 'output_tokens': 553, 'fallback_used': False}
+2025-09-20 23:11:03,685 - INFO -     FOUND: 2 figurative instances
+2025-09-20 23:11:03,686 - INFO -       Instance 1: metaphor - 'or you will be proscribed like it'
+2025-09-20 23:11:03,686 - INFO -       Instance 2: other - 'you must reject it as abominable and abhorrent'
+2025-09-20 23:11:03,686 - INFO - Deuteronomy 7 COMPLETED: 17 figurative instances from 26 verses
+2025-09-20 23:11:03,691 - INFO - --- Processing Deuteronomy 8 ---
+2025-09-20 23:11:03,691 - INFO - Fetching text for Deuteronomy 8...
+2025-09-20 23:11:04,123 - INFO - Retrieved 20 verses for Deuteronomy 8
+2025-09-20 23:11:04,123 - INFO -   Processing Deuteronomy 8:1 (1/20)...
+2025-09-20 23:11:04,532 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 418, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:11:04,534 - INFO -   Processing Deuteronomy 8:2 (2/20)...
+2025-09-20 23:11:04,821 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 460, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:11:04,822 - INFO -   Processing Deuteronomy 8:3 (3/20)...
+2025-09-20 23:11:05,085 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 478, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:11:05,086 - INFO -   Processing Deuteronomy 8:4 (4/20)...
+2025-09-20 23:11:05,348 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 328, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:11:05,349 - INFO -   Processing Deuteronomy 8:5 (5/20)...
+2025-09-20 23:11:07,035 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 371, 'output_tokens': 291, 'fallback_used': False}
+2025-09-20 23:11:07,036 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:11:07,037 - INFO -       Instance 1: simile - 'just as a householder disciplines his son, your God יהוה disciplines you'
+2025-09-20 23:11:07,038 - INFO -   Processing Deuteronomy 8:6 (6/20)...
+2025-09-20 23:11:07,287 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 324, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:11:07,288 - INFO -   Processing Deuteronomy 8:7 (7/20)...
+2025-09-20 23:11:07,552 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 371, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:11:07,553 - INFO -   Processing Deuteronomy 8:8 (8/20)...
+2025-09-20 23:11:07,848 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 330, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:11:07,848 - INFO -   Processing Deuteronomy 8:9 (9/20)...
+2025-09-20 23:11:08,115 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 392, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:11:08,115 - INFO -   Processing Deuteronomy 8:10 (10/20)...
+2025-09-20 23:12:01,307 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 1, 'input_tokens': 345, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:12:01,307 - INFO -   Processing Deuteronomy 8:11 (11/20)...
+2025-09-20 23:12:01,575 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 385, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:12:01,576 - INFO -   Processing Deuteronomy 8:12 (12/20)...
+2025-09-20 23:12:01,833 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 311, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:12:01,833 - INFO -   Processing Deuteronomy 8:13 (13/20)...
+2025-09-20 23:12:02,108 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 333, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:12:02,108 - INFO -   Processing Deuteronomy 8:14 (14/20)...
+2025-09-20 23:12:03,384 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 0, 'input_tokens': 365, 'output_tokens': 182, 'fallback_used': False}
+2025-09-20 23:12:03,385 - INFO -     FOUND: 1 figurative instances
+2025-09-20 23:12:03,386 - INFO -       Instance 1: metaphor - 'your heart grow haughty'
+2025-09-20 23:12:03,386 - INFO -   Processing Deuteronomy 8:15 (15/20)...
+2025-09-20 23:13:20,768 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:13:20,769 - ERROR - API error for Deuteronomy 8:15: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:13:20,769 - INFO -   Processing Deuteronomy 8:16 (16/20)...
+2025-09-20 23:14:38,738 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4, 'input_tokens': 379, 'output_tokens': 2, 'fallback_used': False}
+2025-09-20 23:14:38,739 - INFO -   Processing Deuteronomy 8:17 (17/20)...
+2025-09-20 23:15:55,587 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:15:55,587 - ERROR - API error for Deuteronomy 8:17: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:15:55,588 - INFO -   Processing Deuteronomy 8:18 (18/20)...
+2025-09-20 23:17:14,063 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:17:14,063 - ERROR - API error for Deuteronomy 8:18: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:17:14,063 - INFO -   Processing Deuteronomy 8:19 (19/20)...
+2025-09-20 23:18:30,657 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:18:30,658 - ERROR - API error for Deuteronomy 8:19: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:18:30,658 - INFO -   Processing Deuteronomy 8:20 (20/20)...
+2025-09-20 23:19:48,486 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:19:48,486 - ERROR - API error for Deuteronomy 8:20: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:19:48,487 - INFO - Deuteronomy 8 COMPLETED: 2 figurative instances from 20 verses
+2025-09-20 23:19:48,502 - INFO - --- Processing Deuteronomy 9 ---
+2025-09-20 23:19:48,505 - INFO - Fetching text for Deuteronomy 9...
+2025-09-20 23:19:48,926 - INFO - Retrieved 29 verses for Deuteronomy 9
+2025-09-20 23:19:48,926 - INFO -   Processing Deuteronomy 9:1 (1/29)...
+2025-09-20 23:21:05,790 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:21:05,793 - ERROR - API error for Deuteronomy 9:1: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:21:05,794 - INFO -   Processing Deuteronomy 9:2 (2/29)...
+2025-09-20 23:22:22,843 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:22:22,844 - ERROR - API error for Deuteronomy 9:2: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:22:22,844 - INFO -   Processing Deuteronomy 9:3 (3/29)...
+2025-09-20 23:23:40,576 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:23:40,577 - ERROR - API error for Deuteronomy 9:3: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:23:40,577 - INFO -   Processing Deuteronomy 9:4 (4/29)...
+2025-09-20 23:24:57,352 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:24:57,353 - ERROR - API error for Deuteronomy 9:4: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:24:57,354 - INFO -   Processing Deuteronomy 9:5 (5/29)...
+2025-09-20 23:26:15,644 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:26:15,644 - ERROR - API error for Deuteronomy 9:5: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:26:15,645 - INFO -   Processing Deuteronomy 9:6 (6/29)...
+2025-09-20 23:27:33,093 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:27:33,094 - ERROR - API error for Deuteronomy 9:6: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:27:33,095 - INFO -   Processing Deuteronomy 9:7 (7/29)...
+2025-09-20 23:28:51,073 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:28:51,074 - ERROR - API error for Deuteronomy 9:7: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:28:51,075 - INFO -   Processing Deuteronomy 9:8 (8/29)...
+2025-09-20 23:30:08,404 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:30:08,405 - ERROR - API error for Deuteronomy 9:8: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:30:08,406 - INFO -   Processing Deuteronomy 9:9 (9/29)...
+2025-09-20 23:31:25,751 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:31:25,751 - ERROR - API error for Deuteronomy 9:9: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:31:25,752 - INFO -   Processing Deuteronomy 9:10 (10/29)...
+2025-09-20 23:32:43,029 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:32:43,029 - ERROR - API error for Deuteronomy 9:10: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:32:43,030 - INFO -   Processing Deuteronomy 9:11 (11/29)...
+2025-09-20 23:34:01,226 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:34:01,226 - ERROR - API error for Deuteronomy 9:11: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:34:01,227 - INFO -   Processing Deuteronomy 9:12 (12/29)...
+2025-09-20 23:35:18,861 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:35:18,862 - ERROR - API error for Deuteronomy 9:12: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:35:18,863 - INFO -   Processing Deuteronomy 9:13 (13/29)...
+2025-09-20 23:36:36,414 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:36:36,415 - ERROR - API error for Deuteronomy 9:13: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:36:36,416 - INFO -   Processing Deuteronomy 9:14 (14/29)...
+2025-09-20 23:37:54,361 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:37:54,361 - ERROR - API error for Deuteronomy 9:14: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:37:54,362 - INFO -   Processing Deuteronomy 9:15 (15/29)...
+2025-09-20 23:39:11,384 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:39:11,384 - ERROR - API error for Deuteronomy 9:15: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:39:11,385 - INFO -   Processing Deuteronomy 9:16 (16/29)...
+2025-09-20 23:40:29,570 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:40:29,571 - ERROR - API error for Deuteronomy 9:16: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:40:29,571 - INFO -   Processing Deuteronomy 9:17 (17/29)...
+2025-09-20 23:41:46,603 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:41:46,603 - ERROR - API error for Deuteronomy 9:17: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:41:46,604 - INFO -   Processing Deuteronomy 9:18 (18/29)...
+2025-09-20 23:43:03,863 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:43:03,863 - ERROR - API error for Deuteronomy 9:18: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:43:03,864 - INFO -   Processing Deuteronomy 9:19 (19/29)...
+2025-09-20 23:44:21,180 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:44:21,180 - ERROR - API error for Deuteronomy 9:19: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:44:21,181 - INFO -   Processing Deuteronomy 9:20 (20/29)...
+2025-09-20 23:45:37,187 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:45:37,188 - ERROR - API error for Deuteronomy 9:20: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:45:37,188 - INFO -   Processing Deuteronomy 9:21 (21/29)...
+2025-09-20 23:46:54,403 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:46:54,404 - ERROR - API error for Deuteronomy 9:21: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:46:54,404 - INFO -   Processing Deuteronomy 9:22 (22/29)...
+2025-09-20 23:48:11,434 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:48:11,434 - ERROR - API error for Deuteronomy 9:22: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:48:11,435 - INFO -   Processing Deuteronomy 9:23 (23/29)...
+2025-09-20 23:49:28,072 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:49:28,072 - ERROR - API error for Deuteronomy 9:23: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:49:28,072 - INFO -   Processing Deuteronomy 9:24 (24/29)...
+2025-09-20 23:50:45,062 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:50:45,063 - ERROR - API error for Deuteronomy 9:24: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:50:45,064 - INFO -   Processing Deuteronomy 9:25 (25/29)...
+2025-09-20 23:52:02,982 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:52:02,983 - ERROR - API error for Deuteronomy 9:25: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:52:02,983 - INFO -   Processing Deuteronomy 9:26 (26/29)...
+2025-09-20 23:53:21,033 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:53:21,033 - ERROR - API error for Deuteronomy 9:26: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:53:21,033 - INFO -   Processing Deuteronomy 9:27 (27/29)...
+2025-09-20 23:54:38,601 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:54:38,601 - ERROR - API error for Deuteronomy 9:27: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:54:38,602 - INFO -   Processing Deuteronomy 9:28 (28/29)...
+2025-09-20 23:55:56,628 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:55:56,628 - ERROR - API error for Deuteronomy 9:28: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:55:56,628 - INFO -   Processing Deuteronomy 9:29 (29/29)...
+2025-09-20 23:57:14,037 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:57:14,037 - ERROR - API error for Deuteronomy 9:29: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:57:14,038 - INFO - Deuteronomy 9 COMPLETED: 0 figurative instances from 29 verses
+2025-09-20 23:57:14,067 - INFO - --- Processing Deuteronomy 10 ---
+2025-09-20 23:57:14,067 - INFO - Fetching text for Deuteronomy 10...
+2025-09-20 23:57:14,589 - INFO - Retrieved 22 verses for Deuteronomy 10
+2025-09-20 23:57:14,589 - INFO -   Processing Deuteronomy 10:1 (1/22)...
+2025-09-20 23:58:30,737 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:58:30,748 - ERROR - API error for Deuteronomy 10:1: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:58:30,749 - INFO -   Processing Deuteronomy 10:2 (2/22)...
+2025-09-20 23:59:49,022 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-20 23:59:49,023 - ERROR - API error for Deuteronomy 10:2: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-20 23:59:49,023 - INFO -   Processing Deuteronomy 10:3 (3/22)...
+2025-09-21 00:01:06,538 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-21 00:01:06,539 - ERROR - API error for Deuteronomy 10:3: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-21 00:01:06,540 - INFO -   Processing Deuteronomy 10:4 (4/22)...
+2025-09-21 00:02:24,170 - INFO -     API Metadata: {'model_used': 'gemini-2.0-flash-exp', 'context': 'narrative', 'retries': 4}
+2025-09-21 00:02:24,171 - ERROR - API error for Deuteronomy 10:4: gemini-2.0-flash-exp error: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model_per_day"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel"
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+]
+2025-09-21 00:02:24,171 - INFO -   Processing Deuteronomy 10:5 (5/22)...
