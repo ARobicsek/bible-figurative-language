@@ -4,6 +4,7 @@
 Two-stage metaphor validation system to reduce false positives
 """
 import google.generativeai as genai
+import os
 import json
 import time
 from typing import List, Dict, Optional, Tuple
@@ -75,9 +76,9 @@ class MetaphorValidator:
                 if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
                     finish_reason = candidate.finish_reason
                     if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
-                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason.name}"
+                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason.name}", None
                     elif str(finish_reason) in ['SAFETY', 'RECITATION', 'OTHER']:
-                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason}"
+                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason}", None
 
             if response.text:
                 # Parse the validation response
@@ -320,7 +321,10 @@ def test_metaphor_validator():
     """Test the metaphor validator with known cases"""
 
     # API key (same as main system)
-    api_key = "AIzaSyBjslLjCzAjarNfu0efWby6YHnqAXmaKIk"
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        raise ValueError("GEMINI_API_KEY environment variable not set. Please set it before running.")
+
     validator = MetaphorValidator(api_key)
 
     print("=== TESTING METAPHOR VALIDATOR ===")
@@ -384,6 +388,8 @@ def test_metaphor_validator():
         print(f"Reason: {reason}")
         if error:
             print(f"Error: {error}")
+        if corrected_type:
+            print(f"Corrected Type: {corrected_type}")
 
     stats = validator.get_validation_stats()
     print(f"\nValidation Stats: {stats}")

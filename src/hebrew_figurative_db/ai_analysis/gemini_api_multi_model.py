@@ -5,10 +5,29 @@ Multi-model Gemini API with Gemini 2.5 Flash → Gemini 1.5 Flash fallback
 Context-aware conservative analysis addressing false negative issues
 """
 import google.generativeai as genai
+import os
 import json
 import time
 from typing import List, Dict, Optional, Tuple
 import re
+from enum import Enum
+
+
+class TextContext(Enum):
+    CREATION_NARRATIVE = 'creation_narrative'
+    POETIC_BLESSING = 'poetic_blessing'
+    LEGAL_CEREMONIAL = 'legal_ceremonial'
+    NARRATIVE = 'narrative'
+
+
+class FinishReason(Enum):
+    SAFETY = 'SAFETY'
+    RECITATION = 'RECITATION'
+    OTHER = 'OTHER'
+
+
+PRIMARY_MODEL = 'gemini-2.0-flash-exp'
+FALLBACK_MODEL = 'gemini-1.5-flash'
 
 
 class MultiModelGeminiClient:
@@ -26,16 +45,16 @@ class MultiModelGeminiClient:
 
         # Primary model: Gemini 2.5 Flash
         try:
-            self.primary_model = genai.GenerativeModel('gemini-2.0-flash-exp')
-            self.primary_model_name = 'gemini-2.0-flash-exp'
+            self.primary_model = genai.GenerativeModel(PRIMARY_MODEL)
+            self.primary_model_name = PRIMARY_MODEL
         except Exception:
             # Fallback if 2.5 not available
-            self.primary_model = genai.GenerativeModel('gemini-1.5-flash')
-            self.primary_model_name = 'gemini-1.5-flash'
+            self.primary_model = genai.GenerativeModel(FALLBACK_MODEL)
+            self.primary_model_name = FALLBACK_MODEL
 
         # Fallback model: Gemini 1.5 Flash
-        self.fallback_model = genai.GenerativeModel('gemini-1.5-flash')
-        self.fallback_model_name = 'gemini-1.5-flash'
+        self.fallback_model = genai.GenerativeModel(FALLBACK_MODEL)
+        self.fallback_model_name = FALLBACK_MODEL
 
         # Generation configs
         self.primary_config = {
@@ -84,7 +103,7 @@ class MultiModelGeminiClient:
         )
 
         if error and self._is_restriction_error(error):
-            # Fallback to secondary model
+            # Fallback to secondary model for content restrictions
             print(f"Primary model restricted ({error}), trying fallback...")
             self.restriction_reasons.append(f"{self.primary_model_name}: {error}")
 
@@ -98,7 +117,8 @@ class MultiModelGeminiClient:
             metadata['fallback_used'] = True
             metadata['primary_restriction'] = self.restriction_reasons[-1]
             self.fallback_count += 1
-        else:
+        elif not error:
+            # Only count as success if there was no error (including rate limit errors)
             self.primary_success_count += 1
             metadata['fallback_used'] = False
 
@@ -107,64 +127,84 @@ class MultiModelGeminiClient:
 
     def _try_model_analysis(self, model, config, model_name: str, hebrew_text: str,
                            english_text: str, context: str) -> Tuple[str, Optional[str], Dict]:
-        """Try analysis with a specific model"""
-
+        """Try analysis with a specific model, with robust retry logic."""
         prompt = self._create_context_aware_prompt(hebrew_text, english_text, context)
-        metadata = {'model_used': model_name, 'context': context}
+        metadata = {'model_used': model_name, 'context': context, 'retries': 0}
+        max_retries = 5
+        backoff_factor = 2
 
-        try:
-            response = model.generate_content(prompt, generation_config=config)
+        for attempt in range(max_retries):
+            try:
+                response = model.generate_content(prompt, generation_config=config)
 
-            # Track usage
-            if hasattr(response, 'usage_metadata'):
-                input_tokens = getattr(response.usage_metadata, 'prompt_token_count', 0)
-                output_tokens = getattr(response.usage_metadata, 'candidates_token_count', 0)
-                self.total_input_tokens += input_tokens
-                self.total_output_tokens += output_tokens
-                metadata['input_tokens'] = input_tokens
-                metadata['output_tokens'] = output_tokens
+                # Track usage
+                if hasattr(response, 'usage_metadata'):
+                    input_tokens = getattr(response.usage_metadata, 'prompt_token_count', 0)
+                    output_tokens = getattr(response.usage_metadata, 'candidates_token_count', 0)
+                    self.total_input_tokens += input_tokens
+                    self.total_output_tokens += output_tokens
+                    metadata['input_tokens'] = input_tokens
+                    metadata['output_tokens'] = output_tokens
 
-            # Check for safety restrictions
-            if hasattr(response, 'candidates') and response.candidates:
-                candidate = response.candidates[0]
-                if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
-                    finish_reason = candidate.finish_reason
-                    if self._is_restriction_reason(finish_reason):
-                        error_msg = f"Content restricted: {finish_reason}"
-                        return "[]", error_msg, metadata
+                # Check for safety restrictions
+                if hasattr(response, 'candidates') and response.candidates:
+                    candidate = response.candidates[0]
+                    if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
+                        finish_reason = candidate.finish_reason
+                        if self._is_restriction_reason(finish_reason):
+                            error_msg = f"Content restricted: {finish_reason}"
+                            return "[]", error_msg, metadata
 
-            # Extract and validate response
-            if response.text:
-                cleaned_response = self._clean_response(response.text.strip())
-                return cleaned_response, None, metadata
-            else:
-                return "[]", "No response text generated", metadata
+                # Extract and validate response
+                if response.text:
+                    cleaned_response = self._clean_response(response.text.strip())
+                    return cleaned_response, None, metadata
+                else:
+                    return "[]", "No response text generated", metadata
 
-        except Exception as e:
-            error_msg = f"{model_name} error: {str(e)}"
-            print(f"API error (non-critical): {error_msg}")
-            return "[]", error_msg, metadata
+            except Exception as e:
+                error_msg = f"{model_name} error: {str(e)}"
+                wait_time = 0
+
+                if "429" in error_msg and attempt < max_retries - 1:
+                    # Try to parse the recommended retry delay from the error
+                    retry_after_match = re.search(r'retry_delay {\s*seconds: (\d+)\s*}', error_msg)
+                    if retry_after_match:
+                        wait_time = int(retry_after_match.group(1))
+                    else:
+                        # Fallback to exponential backoff if delay is not specified
+                        wait_time = (backoff_factor ** attempt) * 5
+
+                    wait_time += (hash(time.time()) % 1000 / 1000) # Add jitter
+                    print(f"Rate limit hit. Retrying in {wait_time:.2f} seconds... (Attempt {attempt + 1}/{max_retries})")
+                    time.sleep(wait_time)
+                    metadata['retries'] = attempt + 1
+                    continue
+
+                print(f"API error (non-critical): {error_msg}")
+                return "[]", error_msg, metadata
+
+        return "[]", f"Failed after {max_retries} retries due to persistent API errors.", metadata
 
     def _determine_text_context(self, book: str, chapter: int) -> str:
         """Determine text context for appropriate prompting strategy"""
 
         # Genesis Creation Narratives (most conservative)
-        if book.lower() == 'genesis' and chapter in [1, 2, 3]:
-            return 'creation_narrative'
+        if book.lower() == 'genesis' and chapter in {1, 2, 3}:
+            return TextContext.CREATION_NARRATIVE.value
 
         # Poetic/Blessing texts (balanced approach)
-        elif ((book.lower() == 'genesis' and chapter == 49) or  # Jacob's blessings
-              (book.lower() == 'deuteronomy' and chapter == 32) or  # Song of Moses
-              (book.lower() == 'deuteronomy' and chapter == 33)):  # Moses' blessing
-            return 'poetic_blessing'
+        elif ((book.lower() == 'genesis' and chapter == 49) or
+              (book.lower() == 'deuteronomy' and chapter in {32, 33})):
+            return TextContext.POETIC_BLESSING.value
 
         # Legal/Ceremonial texts (moderate conservative)
-        elif book.lower() in ['leviticus', 'numbers']:
-            return 'legal_ceremonial'
+        elif book.lower() in {'leviticus', 'numbers'}:
+            return TextContext.LEGAL_CEREMONIAL.value
 
         # Narrative texts (standard approach)
         else:
-            return 'narrative'
+            return TextContext.NARRATIVE.value
 
     def _create_context_aware_prompt(self, hebrew_text: str, english_text: str, context: str) -> str:
         """Create context-aware prompt based on text type"""
@@ -176,7 +216,7 @@ English: {english_text}
 
 """
 
-        if context == 'creation_narrative':
+        if context == TextContext.CREATION_NARRATIVE.value:
             # Ultra-conservative for Genesis 1-3
             context_rules = """🚨 **CREATION NARRATIVE - ULTRA CONSERVATIVE** 🚨
 
@@ -191,7 +231,7 @@ English: {english_text}
 • Obvious cross-domain metaphors
 • Clear anthropomorphism beyond standard creation actions"""
 
-        elif context == 'poetic_blessing':
+        elif context == TextContext.POETIC_BLESSING.value:
             # Balanced approach for poetic texts
             context_rules = """📜 **POETIC BLESSING TEXT - BALANCED DETECTION** 📜
 
@@ -211,7 +251,7 @@ English: {english_text}
 • Nature imagery for human qualities
 • Divine emotions and actions"""
 
-        elif context == 'legal_ceremonial':
+        elif context == TextContext.LEGAL_CEREMONIAL.value:
             # Moderate conservative for legal texts
             context_rules = """⚖️ **LEGAL/CEREMONIAL TEXT - MODERATE CONSERVATIVE** ⚖️
 
@@ -263,23 +303,39 @@ Analysis:"""
 
     def _is_restriction_reason(self, finish_reason) -> bool:
         """Check if finish reason indicates content restriction"""
-        restriction_reasons = ['SAFETY', 'RECITATION', 'OTHER']
+        restriction_reasons = {reason.value for reason in FinishReason}
 
         if hasattr(finish_reason, 'name'):
             return finish_reason.name in restriction_reasons
         else:
-            return str(finish_reason) in restriction_reasons
+            return str(finish_reason).upper() in restriction_reasons
 
     def _clean_response(self, response_text: str) -> str:
-        """Clean and validate JSON response"""
-        # Remove markdown wrapper if present
-        response_text = re.sub(r'^```json\s*', '', response_text)
-        response_text = re.sub(r'\s*```$', '', response_text)
+        """Clean, validate, and sanitize the JSON response."""
+        # Use regex to find the JSON block, ignoring conversational text
+        json_string = response_text
+        match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text)
+        if match:
+            json_string = match.group(1).strip()
 
         # Try to parse as JSON to validate
         try:
-            json.loads(response_text)
-            return response_text
+            data = json.loads(json_string)
+
+            # Ensure data is a list
+            if not isinstance(data, list):
+                return "[]"
+
+            # Sanitize the 'type' field in each object
+            allowed_types = {'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
+            for item in data:
+                if isinstance(item, dict) and 'type' in item and isinstance(item['type'], str):
+                    llm_type = item['type'].lower()
+                    if llm_type not in allowed_types:
+                        item['type'] = 'other'
+
+            # Return the cleaned and sanitized data as a JSON string
+            return json.dumps(data)
         except json.JSONDecodeError:
             # If not valid JSON, return empty array
             print(f"Invalid JSON response: {response_text}")
@@ -324,7 +380,10 @@ Analysis:"""
 
 if __name__ == "__main__":
     # Test the multi-model system
-    api_key = "AIzaSyBjslLjCzAjarNfu0efWby6YHnqAXmaKIk"
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        raise ValueError("GEMINI_API_KEY environment variable not set. Please set it before running.")
+
     client = MultiModelGeminiClient(api_key)
 
     print("=== TESTING MULTI-MODEL GEMINI API ===")
