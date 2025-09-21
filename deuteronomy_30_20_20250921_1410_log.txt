@@ -1,0 +1,54 @@
+2025-09-21 14:10:56,662 - INFO - Successfully loaded environment variables from: C:\Users\ariro\OneDrive\Documents\Bible\.env
+2025-09-21 14:10:56,662 - INFO - === PROCESSING DEUTERONOMY CHAPTER(S) [30] WITH MULTI-MODEL API ===
+2025-09-21 14:10:56,672 - INFO - Initializing Sefaria client...
+2025-09-21 14:10:56,672 - INFO - Creating database: deuteronomy_30_20_20250921_1410.db
+2025-09-21 14:10:57,333 - INFO - Initializing Metaphor Validator...
+2025-09-21 14:10:57,333 - INFO - Initializing Gemini multi-model API...
+2025-09-21 14:10:57,333 - INFO - --- Processing Deuteronomy 30 ---
+2025-09-21 14:10:57,334 - INFO - Fetching text for Deuteronomy 30...
+2025-09-21 14:10:57,711 - INFO - Retrieved 20 verses for Deuteronomy 30
+2025-09-21 14:10:57,711 - INFO - Filtering to process 1 selected verse(s): [20]
+2025-09-21 14:10:57,712 - INFO -   Processing Deuteronomy 30:20 (1/1)...
+2025-09-21 14:11:19,501 - ERROR - JSON decode error at position 984: Unterminated string starting at
+2025-09-21 14:11:19,501 - ERROR - Extracted JSON string: [
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "hebrew_text": "לִשְׁמֹ֥עַ בְּקֹל֖וֹ",
+    "english_text": "heeding God’s commands",
+    "explanation": "This is an idiom where 'listening to the voice' (שמע בקול) signifies obeying or heeding commands, rather than literally perceiving an audible sound.",
+    "vehicle_level_1": "human",
+    "vehicle_...
+2025-09-21 14:11:19,501 - ERROR - Full response for debugging: DELIBERATION:
+*   **לְאַֽהֲבָה֙ אֶת־יְהֹוָ֣ה אֱלֹהֶ֔יךָ** (loving your God יהוה): I considered if "loving God" could be figurative, perhaps a metonymy for obedience or a metaphor for devotion. However, love itself is a genuine emotion and action. While its expression can be figurative, the core concept of loving God is a literal spiritual and emotional state commanded in the text. It does not involve a cross-domain comparison or personification of an inanimate object. Therefore, I concluded it is literal.
+
+*   **לִשְׁמֹ֥עַ בְּקֹל֖וֹ** (heeding God’s commands / listening to His voice): I considered if "listening to His voice" (שמע בקולו) should be interpreted literally as hearing an audible sound from God, or figuratively. In biblical Hebrew, "שמע בקול X" is a well-established idiom meaning "to obey X" or "to heed X's words/commands," rather than strictly perceiving an audible sound. While God can speak audibly, in this general hortatory context, the emphasis is on obedience to divine i...
+2025-09-21 14:11:19,502 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'narrative', 'retries': 0, 'input_tokens': 982, 'output_tokens': 1755, 'all_detected_instances': [], 'llm_deliberation': '*   **לְאַֽהֲבָה֙ אֶת־יְהֹוָ֣ה אֱלֹהֶ֔יךָ** (loving your God יהוה): I considered if "loving God" could be figurative, perhaps a metonymy for obedience or a metaphor for devotion. However, love itself is a genuine emotion and action. While its expression can be figurative, the core concept of loving God is a literal spiritual and emotional state commanded in the text. It does not involve a cross-domain comparison or personification of an inanimate object. Therefore, I concluded it is literal.\n\n*   **לִשְׁמֹ֥עַ בְּקֹל֖וֹ** (heeding God’s commands / listening to His voice): I considered if "listening to His voice" (שמע בקולו) should be interpreted literally as hearing an audible sound from God, or figuratively. In biblical Hebrew, "שמע בקול X" is a well-established idiom meaning "to obey X" or "to heed X\'s words/commands," rather than strictly perceiving an audible sound. While God can speak audibly, in this general hortatory context, the emphasis is on obedience to divine instruction. This is a standard biblical idiom for compliance and attentiveness to divine will. Therefore, I classified it as an idiom.\n\n*   **וּלְדׇבְקָה־ב֑וֹ** (and holding fast to [God] / cleaving to Him): I considered if "holding fast to Him" (דבק בו) is a literal physical act or a figurative expression. The verb דבק literally means "to cling, cleave, stick to" in a physical sense. When applied to God, it is clearly not a physical action. Instead, it is a metaphor that uses the physical act of clinging to represent deep spiritual attachment, unwavering loyalty, and devotion to God. It implies an inseparable bond, drawing a comparison between physical adhesion and spiritual commitment. This is a clear cross-domain comparison. Therefore, I classified it as a metaphor.\n\n*   **כִּ֣י ה֤וּא חַיֶּ֙יךָ֙ וְאֹ֣רֶךְ יָמֶ֔יךָ** (For He is your life and the length of your days): I considered if the statements "He is your life" (הוא חייך) and "He is the length of your days" (ואורך ימיך) are literal identifications. God is not literally a biological entity called "life" or a quantifiable duration of "length of days." Instead, these are metaphors where God is equated with the *source* and *sustainer* of life and longevity. God is presented as the embodiment or ultimate provider of these blessings. This is a clear cross-domain comparison, equating the divine being with abstract concepts and outcomes. Therefore, I classified it as a metaphor.\n\n*   **לָשֶׁ֣בֶת עַל־הָאֲדָמָ֗ה** (to dwell upon the soil): I considered if "dwelling upon the soil" could be figurative. However, this is a straightforward, literal description of residing in a physical land. "Soil" (אדמה) here refers to the land itself, not just loose dirt, and the act of dwelling is literal. Therefore, I concluded it is literal.\n\n*   **אֲשֶׁר֩ נִשְׁבַּ֨ע יְהֹוָ֧ה לַאֲבֹתֶ֛יךָ לְאַבְרָהָ֛ם לְיִצְחָ֥ק וּֽלְיַעֲקֹ֖ב לָתֵ֥ת לָהֶֽם** (that יהוה swore to your fathers Abraham, Isaac, and Jacob, to give to them): I considered "יהוה swore" (נִשְׁבַּ֨ע יְהֹוָ֧ה). This is an anthropomorphism, describing God performing an action typically associated with humans (swearing an oath). According to the provided instructions, divine anthropomorphisms are to be treated as literal in the ANE context unless they refer to God\'s body. Since "swearing" is an action and not a reference to a body part, I have treated this as literal.', 'fallback_used': False}
+2025-09-21 14:11:19,507 - INFO - Deuteronomy 30 COMPLETED: 0 figurative instances from 1 verses
+2025-09-21 14:11:19,520 - INFO - 
+=== DEUTERONOMY PROCESSING COMPLETE ===
+2025-09-21 14:11:19,521 - INFO - Database: deuteronomy_30_20_20250921_1410.db
+2025-09-21 14:11:19,521 - INFO - Log file: deuteronomy_30_20_20250921_1410_log.txt
+2025-09-21 14:11:19,521 - INFO - Total verses processed: 1
+2025-09-21 14:11:19,521 - INFO - Total figurative instances: 0
+2025-09-21 14:11:19,521 - INFO - Errors: 0
+2025-09-21 14:11:19,521 - INFO - Processing time: 22.8 seconds
+2025-09-21 14:11:19,522 - INFO - 
+--- Multi-Model API Usage Statistics ---
+2025-09-21 14:11:19,522 - INFO - Total Requests: 1
+2025-09-21 14:11:19,522 - INFO - Primary Success: 1
+2025-09-21 14:11:19,522 - INFO - Fallback Used: 0
+2025-09-21 14:11:19,522 - INFO - Primary Success Rate: 1.0
+2025-09-21 14:11:19,522 - INFO - Fallback Rate: 0.0
+2025-09-21 14:11:19,522 - INFO - Total Input Tokens: 982
+2025-09-21 14:11:19,523 - INFO - Total Output Tokens: 1755
+2025-09-21 14:11:19,523 - INFO - Total Tokens: 2737
+2025-09-21 14:11:19,523 - INFO - Primary Model: gemini-2.5-flash
+2025-09-21 14:11:19,523 - INFO - Fallback Model: gemini-1.5-flash
+2025-09-21 14:11:19,523 - INFO - Restriction Reasons: []
