@@ -211,12 +211,19 @@ def process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_ap
                 else:
                     logger.info(f"    Succeeded after {verse_retry_count} retries")
 
+            # Extract truncation info from metadata
+            truncation_info = final_metadata.get('truncation_info', {}) if final_metadata else {}
+
             verse_data_dict = {
                 'reference': verse_ref, 'book': book_name, 'chapter': chapter,
                 'verse': int(verse_ref.split(':')[1]), 'hebrew': heb_verse,
                 'english': eng_verse, 'word_count': len(heb_verse.split()),
                 'llm_restriction_error': final_error,
-                'llm_deliberation': final_metadata.get('llm_deliberation') if final_metadata else None
+                'llm_deliberation': final_metadata.get('llm_deliberation') if final_metadata else None,
+                'instances_detected': truncation_info.get('instances_detected'),
+                'instances_recovered': truncation_info.get('instances_recovered'),
+                'instances_lost_to_truncation': truncation_info.get('instances_lost_to_truncation'),
+                'truncation_occurred': truncation_info.get('truncation_occurred', 'no')
             }
             verse_id = db_manager.insert_verse(verse_data_dict)
             logger.debug(f"    Verse stored in database with ID: {verse_id}")
@@ -317,7 +324,7 @@ def main():
         db_manager.setup_database()
 
         logger.info("Initializing Metaphor Validator...")
-        validator = MetaphorValidator(api_key, db_manager=db_manager)
+        validator = MetaphorValidator(api_key, db_manager=db_manager, logger=logger)
         logger.info("Initializing Gemini multi-model API...")
         multi_model_api = MultiModelGeminiClient(api_key, validator=validator, logger=logger, db_manager=db_manager)
 
