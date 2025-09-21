@@ -26,7 +26,7 @@ class FinishReason(Enum):
     OTHER = 'OTHER'
 
 
-PRIMARY_MODEL = 'gemini-2.0-flash-exp'
+PRIMARY_MODEL = 'gemini-2.5-flash'
 FALLBACK_MODEL = 'gemini-1.5-flash'
 
 
@@ -61,14 +61,14 @@ class MultiModelGeminiClient:
             'temperature': 0.15,  # Slightly higher for better detection
             'top_p': 0.8,
             'top_k': 25,
-            'max_output_tokens': 2048,
+            'max_output_tokens': 10000,
         }
 
         self.fallback_config = {
             'temperature': 0.10,  # Conservative for fallback
             'top_p': 0.7,
             'top_k': 20,
-            'max_output_tokens': 2048,
+            'max_output_tokens': 10000,
         }
 
         # Usage tracking
@@ -156,8 +156,22 @@ class MultiModelGeminiClient:
                             return "[]", error_msg, metadata
 
                 # Extract and validate response
-                if response.text:
-                    cleaned_response = self._clean_response(response.text.strip())
+                response_text = ""
+                try:
+                    response_text = response.text
+                except Exception as e:
+                    # This will catch the "Invalid operation" error
+                    finish_reason_name = "Unknown"
+                    if 'candidate' in locals() and hasattr(candidate, 'finish_reason') and hasattr(candidate.finish_reason, 'name'):
+                        finish_reason_name = candidate.finish_reason.name
+                    
+                    error_msg = f"Could not access response.text (finish reason: {finish_reason_name}). Error: {e}"
+                    print(f"API WARNING: {error_msg}")
+                    # We will return this as a non-fatal error and continue processing
+                    return "[]", error_msg, metadata
+
+                if response_text:
+                    cleaned_response = self._clean_response(response_text.strip())
                     return cleaned_response, None, metadata
                 else:
                     return "[]", "No response text generated", metadata
@@ -228,8 +242,7 @@ English: {english_text}
 • Geographic descriptions, procedural language
 
 **ONLY MARK IF ABSOLUTELY CLEAR:**
-• Obvious cross-domain metaphors
-• Clear anthropomorphism beyond standard creation actions"""
+• Obvious cross-domain metaphors"""
 
         elif context == TextContext.POETIC_BLESSING.value:
             # Balanced approach for poetic texts
@@ -238,18 +251,18 @@ English: {english_text}
 **MARK AS FIGURATIVE:**
 • Tribal characterizations using animals: "lion", "wolf", "serpent", "eagle"
 • Cross-domain comparisons: "unstable as water", "like a hind let loose"
-• Divine anthropomorphism: emotions, human actions attributed to God
 • Clear metaphorical relationships between people and nature/animals
 
 **BE CONSERVATIVE WITH:**
 • Standard genealogical language
 • Geographic references
 • Historical statements
+• Divine anthropomorphisms (e.g. God went, God was angry, God watched, God fought) - these are LITERAL in the ANE context unless they refer to God's body (God's finger).
+
 
 **LOOK FOR:**
 • Animal metaphors for human characteristics
-• Nature imagery for human qualities
-• Divine emotions and actions"""
+• Nature imagery for human qualities"""
 
         elif context == TextContext.LEGAL_CEREMONIAL.value:
             # Moderate conservative for legal texts
@@ -259,10 +272,10 @@ English: {english_text}
 • Technical religious terms: holy, clean, offering, covenant
 • Procedural instructions and ritual descriptions
 • Legal formulations and standard phrases
+• Divine anthropomorphisms (e.g. God went, God was angry, God watched, God fought) - these are LITERAL in the ANE context unless they refer to God's body (God's finger).
 
 **MARK AS FIGURATIVE:**
 • Clear cross-domain metaphors
-• Divine anthropomorphism (emotions, human characteristics)
 • Obvious similes with "like/as" for unlike things"""
 
         else:  # narrative
@@ -273,17 +286,22 @@ English: {english_text}
 • Standard narrative language
 • Character actions and dialogue
 • Historical and genealogical information
+• Divine anthropomorphisms (e.g. God went, God was angry, God watched, God fought) - these are LITERAL in the ANE context unless they refer to God's body (God's finger).
+• Biblical idions and set phrases (e.g. לְפִי־חָֽרֶב, פִֽי־יְהֹוָ֖ה,פְּנ֥י הָאֲדָמָֽה) - these are IDIOMS
+
+**NEVER MARK AS FIGURATIVE:**
+• Comparisons of role or function, such as 'a prophet like myself' (כָּמֹנִי) or 'a prophet like yourself' (כָּמוֹךָ). These are literal statements of equivalence or similarity in function, not figurative similes.
+• Proportional or behavioral comparisons, such as 'according to the blessing' or 'like all his fellow Levites'.
 
 **MARK AS FIGURATIVE:**
 • Clear metaphors with cross-domain comparisons
 • Personification of non-human entities
-• Divine anthropomorphism
 • Obvious similes"""
 
         return base_prompt + context_rules + """
 
 **JSON OUTPUT (only if genuinely figurative):**
-[{"type": "metaphor/personification/simile", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "vehicle_level_1": "nature/human/divine/abstract", "vehicle_level_2": "specific", "tenor_level_1": "God/people/covenant", "tenor_level_2": "specific", "confidence": 0.7-1.0, "speaker": "God/Moses/Narrator", "purpose": "brief purpose"}]
+[{"type": "metaphor/personification/simile", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "vehicle_level_1": "nature/human/divine/abstract", "vehicle_level_2": "specific", "tenor_level_1": "God/people/covenant", "tenor_level_2": "specific", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
 
 If no figurative language found: []
 

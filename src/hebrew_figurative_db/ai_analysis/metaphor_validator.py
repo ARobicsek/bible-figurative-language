@@ -138,13 +138,12 @@ Original Confidence: {confidence}
 1. Distinguish between literal language and genuine figurative language
 2. For SIMILES: Determine if using "as/like" for literal comparison vs. figurative comparison
 3. For METAPHORS vs PERSONIFICATION: Determine correct classification
+4. For OTHER TYPES: Is this genuinely figurative or standard biblical terminology? We consider DIVINE ANTHROPOMORPHISM to be LITERAL in the ANE context. If it's not figurative, consider it invalid.
 
 [ACCEPT] ACCEPT AS VALID FIGURATIVE LANGUAGE:
 
 [DIVINE] DIVINE ANTHROPOMORPHISM (Always metaphorical - God is incorporeal):
-- God's body parts: "mighty hand", "outstretched arm", "God's shoulders", "hide My face"
-- Divine physical actions: "God's sword devours", "My arrows drunk with blood"
-- These are ALWAYS metaphorical since God has no literal body
+- In most respects treat God as any other human-like figure - God's actions (going, speaking, blessing, smiting, cursing, etc.) are LITERAL in the ANE context. An exception are God's body parts: "mighty hand", "outstretched arm", "God's shoulders", "hide My face". Since God does not have a body, these are metaphors.
 
 [CROSS-DOMAIN] CROSS-DOMAIN COMPARISONS:
 - Places as other things: "Egypt = iron blast furnace" (nation as industrial equipment)
@@ -159,10 +158,16 @@ Original Confidence: {confidence}
 - Commercial → Spiritual: when economic terms describe non-economic relationships
 
 [SIMILE] SIMILE-SPECIFIC VALIDATION:
+- remember that a simile is a figurative comparison of two unlike things using "like" or "as" to create a new, imaginative meaning.
 - ACCEPT: "like a lion" (animal comparison), "as the stars of heaven" (quantity comparison)
 - REJECT: "as the Edomites did for me" (literal historical precedent, not figurative comparison)
 - REJECT: "do X as you do Y" (instructional comparison, not figurative)
 - REJECT: "die as your brother Aaron died" (manner description, not figurative)
+- REJECT: "like all his fellow Levites" (comparison to a peer group, not figurative)
+- REJECT: "a prophet like myself" (comparison of role/function, not figurative)
+- REJECT: "according to the blessing" (a proportional/conditional statement, not a figurative comparison)
+- REJECT: "pour it out like water" (literal, descriptive comparison of a physical action's outcome - both things are liquids being poured)
+- REJECT: "eat it...just like the gazelle and the deer" (comparison of a permitted action/behavior, not figurative)
 
 [REJECT] REJECT AS LITERAL:
 
@@ -171,19 +176,13 @@ Original Confidence: {confidence}
 - "as the Moabites did" = actual past events being referenced literally
 - Any reference to what specific peoples actually did historically
 
-[RELIGIOUS] STANDARD BIBLICAL DIVINE ACTIONS & ATTRIBUTES (NOT figurative):
-- "God blessed/has blessed" = standard divine action (NOT metaphorical)
-- "God watched over/has watched over" = standard divine care (NOT metaphorical)
-- "God was/has been with" = standard divine presence (NOT metaphorical)
-- "God spoke/said/heard/saw/came/went" = standard biblical divine actions
-- "compassionate God" = standard divine attribute (NOT metaphorical)
-- "will not fail you" = standard covenant faithfulness (NOT metaphorical)
-- "Your greatness" = standard divine attribute (NOT metaphorical)
+[RELIGIOUS and DIVINE] STANDARD BIBLICAL DIVINE ACTIONS & ATTRIBUTES (NOT figurative):
+- God's actions are LITERAL in the ANE context, but since God is incorporeal, body parts are metaphorical.
+- God taking actions like speaking, going, blessing, smiting, cursing, battling, watching, remembering, making covenants, etc. are all LITERAL in the ANE context.
+- Note that if God's actions are described METAPHORICALLY by likening God to something God is NOT (e.g. "God is a man of battle", "God is a rock"), these are metaphors.
+- God's attributes like "compassionate", "great", "holy" are standard descriptors (NOT figurative).
 - "great nation" = standard political descriptor (NOT metaphorical)
-- "holy people" = technical covenantal status
-- "I make this covenant" = legal terminology
 - "signs and proofs" = standard covenant language
-- "hear you mentioned" = literal reputation spread in ANE context
 
 [MILITARY] LITERAL MILITARY ACTIONS & TERMS (NOT figurative):
 - Human soldiers' actions: "defeat them", "march against", "wiping out", "conquered"
@@ -224,48 +223,14 @@ Original Confidence: {confidence}
 - "this great wilderness" = geographic location (NOT metaphorical)
 
 EXAMPLES OF VALID METAPHORS TO ACCEPT:
-[VALID] "mighty hand of God" = divine power (God has no literal hand)
-[VALID] "sword devours flesh" = divine judgment (God's sword is metaphorical)
-[VALID] "Egypt = iron blast furnace" = nation compared to industrial equipment
-[VALID] "first fruit of vigor" = child compared to agricultural harvest
+[VALID] "sword devours flesh" = a sword does not literally devour flesh
+[VALID] "Egypt = iron blast furnace" = Egypt was not a literal furnace
+[VALID] "first fruit of vigor" = a child is not literally fruit
 [VALID] "turn right or left" = moral deviation using spatial metaphor
-[VALID] "arrows drunk with blood" = divine weapons (God's arrows are metaphorical)
+[VALID] "arrows drunk with blood" = arrows don't litrally get drunk
 
 EXAMPLES OF RECLASSIFICATION:
 [RECLASSIFY] "dread and fear...put upon peoples" = PERSONIFICATION (abstract concepts acting as agents)
-[RECLASSIFY] "throw them into utter panic" = PERSONIFICATION (divine emotional/psychological action)
-[RECLASSIFY] "God will confuse them" = PERSONIFICATION (divine psychological action on people)
-[RECLASSIFY] "impassioned God" = PERSONIFICATION (divine emotion - God having human feelings like jealousy/passion)
-[RECLASSIFY] "God crossed over" = PERSONIFICATION (divine human-like physical action - God moving like a human)
-[RECLASSIFY] "God filled with wisdom" = PERSONIFICATION (divine psychological action of imbuing mental states)
-[RECLASSIFY] "God will pursue" = PERSONIFICATION (divine action using human behavioral patterns)
-[RECLASSIFY] "God remembers/forgets" = PERSONIFICATION (divine human-like mental processes)
-[RECLASSIFY] "God regretted/changed mind" = PERSONIFICATION (divine human-like emotional/mental changes)
-
-EXAMPLES TO REJECT:
-[REJECT] "honest weights" = literal commercial regulation (no domain transfer)
-[REJECT] "we were slaves" = literal historical statement
-[REJECT] "holy people" = technical religious status (not comparative)
-[REJECT] "signs and proofs" = standard covenant terminology
-[REJECT] "has blessed you" = standard divine action (NOT metaphorical)
-[REJECT] "has watched over your wanderings" = standard divine care (NOT metaphorical)
-[REJECT] "has been with you" = standard divine presence (NOT metaphorical)
-[REJECT] "this great wilderness" = geographic description (NOT metaphorical)
-[REJECT] "they shall hear you mentioned" = literal reputation spread in ANE context
-[REJECT] "Your greatness" = standard divine attribute (NOT metaphorical)
-[REJECT] "compassionate God" = standard divine attribute (NOT metaphorical)
-[REJECT] "will not fail you" = standard covenant language (NOT metaphorical)
-[REJECT] "great nation" = standard political descriptor (NOT metaphorical)
-[REJECT] "scatter you among peoples" = literal exile/diaspora (NOT metaphorical)
-[REJECT] "drive you out" = literal forced deportation (NOT metaphorical)
-[REJECT] "scant few" = literal numerical description (NOT metaphorical)
-[REJECT] "mountain ablaze with fire" = literal theophanic manifestation (NOT personification)
-[REJECT] "sculptured image" = literal idolatry prohibition (NOT metaphorical)
-[REJECT] "proof of wisdom" = literal demonstration (NOT metaphorical)
-[REJECT] "shock-troops" = literal military terminology (NOT metaphorical)
-[REJECT] "warriors all" = standard military description (NOT metaphorical)
-[REJECT] "wiping out the Horites" = literal historical conquest (NOT metaphorical)
-[REJECT] בְּמַסֹּת (trials/tests) = literal plagues and trials in Egypt (NOT metaphorical)
 
 RESPONSE FORMAT:
 If this is valid figurative language as classified: "VALID: [brief reason why it's genuinely figurative]"
@@ -283,18 +248,10 @@ METAPHOR (cross-domain comparison or divine body parts):
 
 PERSONIFICATION (human traits given to non-human entities):
 - Abstract concepts as agents: "dread and fear...put upon peoples" = PERSONIFICATION
-- God's emotions: "God's anger burned", "God was jealous", "impassioned God", "God laughed" = PERSONIFICATION
-- God's psychological actions: "God regretted", "God remembered", "God forgot", "God changed mind" = PERSONIFICATION
-- Divine emotional actions on people: "throw into panic", "confuse them", "cause terror" = PERSONIFICATION
-- Divine human-like physical actions: "God crossed over", "God went before", "God pursued" = PERSONIFICATION
-- Divine mental/psychological imbuing: "God filled with wisdom", "God gave understanding" = PERSONIFICATION
 - Natural phenomena acting like humans: "mountains skipped", "sea fled" = PERSONIFICATION
 
 RECLASSIFY when:
 - Abstract concepts acting as agents are labeled "metaphor" but should be "personification" (dread and fear acting)
-- Divine emotional/psychological actions are labeled "metaphor" but should be "personification" (emotions, regret, remembering, causing panic, confusion)
-- Divine human-like behaviors are labeled "metaphor" but should be "personification" (crossing over, going before, pursuing, filling with wisdom)
-- God having human emotions labeled "metaphor" but should be "personification" (impassioned, jealous, angry, pleased, grieved)
 - Divine body parts are labeled "personification" but should be "metaphor" (hand, arm, face)
 - Natural phenomena acting human-like are labeled "metaphor" but should be "personification"
 
@@ -303,6 +260,8 @@ Consider what would be understood as literal vs figurative by an Ancient Near Ea
 - "Hear you mentioned" = literal reputation spread (standard ANE concept)
 - Divine blessing, watching, presence = standard divine activities (NOT figurative)
 - Geographic descriptions = typically literal unless explicitly comparative
+- Literal "like" in ANE Texts: The particle 'כְּ' (like/as) is frequently used for literal, descriptive purposes such as "like yourself", "like myself","like all his fellow Levites".
+
 
 Focus on identifying genuine cross-domain comparisons and divine anthropomorphism while filtering out technical religious terminology.
 
