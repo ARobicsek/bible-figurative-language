@@ -20,6 +20,7 @@ LATEST BREAKTHROUGH: Deployed an advanced multi-type classification system that 
 ✅ **Interactive Processing**: Analyze any book, chapter, or verse range on demand
 ✅ **Context-Aware Prompting**: Different strategies for creation, legal, poetic, and narrative texts
 ✅ **Robust Error Handling**: Graceful handling of API restrictions, rate limits, and server errors
+✅ **JSON Repair System**: Automatic recovery from truncated LLM responses to preserve partial results
 ✅ **Research-Grade Data**: Complete metadata for reproducible scholarly analysis
 🎯 **Publication Quality**: Advanced validation makes results suitable for peer-reviewed research
 Multi-Model API Achievements
@@ -27,6 +28,7 @@ Multi-Model API Achievements
 ✅ Automated Fallback: Automatically switches from the primary model (e.g., Gemini 2.0 Flash) to a fallback model (e.g., Gemini 1.5 Flash) on content restriction errors.
 ✅ Intelligent Retries: Overcomes API rate limits by automatically waiting the recommended duration.
 ✅ JSON Extraction: Reliably extracts JSON data from "chatty" or conversational LLM responses.
+✅ Response Recovery: Automatic repair of truncated JSON responses to preserve valid figurative language detections.
 ✅ Multi-Type Detection: Supports simultaneous classification of phrases as multiple figurative types.
 ✅ Intelligent Reclassification: Automatic correction of misclassifications during validation.
 ✅ Scholar Confidence: The robust and transparent pipeline builds confidence in the results for academic use.
