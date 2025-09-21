@@ -60,7 +60,22 @@ class DatabaseManager:
             CREATE TABLE IF NOT EXISTS figurative_language (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 verse_id INTEGER NOT NULL,
-                type TEXT NOT NULL CHECK(type IN ('metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other')),
+                figurative_language TEXT CHECK(figurative_language IN ('yes', 'no')) DEFAULT 'no',
+                simile TEXT CHECK(simile IN ('yes', 'no')) DEFAULT 'no',
+                metaphor TEXT CHECK(metaphor IN ('yes', 'no')) DEFAULT 'no',
+                personification TEXT CHECK(personification IN ('yes', 'no')) DEFAULT 'no',
+                idiom TEXT CHECK(idiom IN ('yes', 'no')) DEFAULT 'no',
+                hyperbole TEXT CHECK(hyperbole IN ('yes', 'no')) DEFAULT 'no',
+                metonymy TEXT CHECK(metonymy IN ('yes', 'no')) DEFAULT 'no',
+                other TEXT CHECK(other IN ('yes', 'no')) DEFAULT 'no',
+                final_figurative_language TEXT CHECK(final_figurative_language IN ('yes', 'no')) DEFAULT 'no',
+                final_simile TEXT CHECK(final_simile IN ('yes', 'no')) DEFAULT 'no',
+                final_metaphor TEXT CHECK(final_metaphor IN ('yes', 'no')) DEFAULT 'no',
+                final_personification TEXT CHECK(final_personification IN ('yes', 'no')) DEFAULT 'no',
+                final_idiom TEXT CHECK(final_idiom IN ('yes', 'no')) DEFAULT 'no',
+                final_hyperbole TEXT CHECK(final_hyperbole IN ('yes', 'no')) DEFAULT 'no',
+                final_metonymy TEXT CHECK(final_metonymy IN ('yes', 'no')) DEFAULT 'no',
+                final_other TEXT CHECK(final_other IN ('yes', 'no')) DEFAULT 'no',
                 vehicle_level_1 TEXT,
                 vehicle_level_2 TEXT,
                 tenor_level_1 TEXT,
@@ -71,9 +86,21 @@ class DatabaseManager:
                 explanation TEXT,
                 speaker TEXT,
                 purpose TEXT,
-                original_detection_type TEXT,
-                validation_decision TEXT CHECK(validation_decision IN ('VALID', 'INVALID', 'RECLASSIFY', NULL)),
-                validation_reason TEXT,
+                original_detection_types TEXT,
+                validation_decision_simile TEXT CHECK(validation_decision_simile IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+                validation_decision_metaphor TEXT CHECK(validation_decision_metaphor IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+                validation_decision_personification TEXT CHECK(validation_decision_personification IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+                validation_decision_idiom TEXT CHECK(validation_decision_idiom IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+                validation_decision_hyperbole TEXT CHECK(validation_decision_hyperbole IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+                validation_decision_metonymy TEXT CHECK(validation_decision_metonymy IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+                validation_decision_other TEXT CHECK(validation_decision_other IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
+                validation_reason_simile TEXT,
+                validation_reason_metaphor TEXT,
+                validation_reason_personification TEXT,
+                validation_reason_idiom TEXT,
+                validation_reason_hyperbole TEXT,
+                validation_reason_metonymy TEXT,
+                validation_reason_other TEXT,
                 validation_response TEXT,
                 validation_error TEXT,
                 processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -85,7 +112,22 @@ class DatabaseManager:
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_verses_reference ON verses (reference)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_verses_book_chapter ON verses (book, chapter)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_verses_llm_restriction ON verses (llm_restriction_error)')
-        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_type ON figurative_language (type)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_language ON figurative_language (figurative_language)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_simile ON figurative_language (simile)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_metaphor ON figurative_language (metaphor)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_personification ON figurative_language (personification)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_idiom ON figurative_language (idiom)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_hyperbole ON figurative_language (hyperbole)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_metonymy ON figurative_language (metonymy)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_other ON figurative_language (other)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_figurative_language ON figurative_language (final_figurative_language)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_simile ON figurative_language (final_simile)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_metaphor ON figurative_language (final_metaphor)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_personification ON figurative_language (final_personification)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_idiom ON figurative_language (final_idiom)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_hyperbole ON figurative_language (final_hyperbole)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_metonymy ON figurative_language (final_metonymy)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_other ON figurative_language (final_other)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_vehicle_level_1 ON figurative_language (vehicle_level_1)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_vehicle_level_2 ON figurative_language (vehicle_level_2)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_tenor_level_1 ON figurative_language (tenor_level_1)')
@@ -93,8 +135,7 @@ class DatabaseManager:
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_confidence ON figurative_language (confidence)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_speaker ON figurative_language (speaker)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_purpose ON figurative_language (purpose)')
-        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_validation_decision ON figurative_language (validation_decision)')
-        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_original_detection_type ON figurative_language (original_detection_type)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_original_detection_types ON figurative_language (original_detection_types)')
 
         self.conn.commit()
 
@@ -122,11 +163,30 @@ class DatabaseManager:
         """Insert figurative language finding and return figurative_language_id"""
         self.cursor.execute('''
             INSERT INTO figurative_language
-            (verse_id, type, vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2, confidence, figurative_text, figurative_text_in_hebrew, explanation, speaker, purpose, original_detection_type, validation_decision, validation_reason, validation_response, validation_error)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            (verse_id, figurative_language, simile, metaphor, personification, idiom, hyperbole, metonymy, other,
+             final_figurative_language, final_simile, final_metaphor, final_personification, final_idiom,
+             final_hyperbole, final_metonymy, final_other,
+             vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2, confidence, figurative_text,
+             figurative_text_in_hebrew, explanation, speaker, purpose, original_detection_types)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_id,
-            figurative_data['type'],
+            figurative_data.get('figurative_language', 'no'),
+            figurative_data.get('simile', 'no'),
+            figurative_data.get('metaphor', 'no'),
+            figurative_data.get('personification', 'no'),
+            figurative_data.get('idiom', 'no'),
+            figurative_data.get('hyperbole', 'no'),
+            figurative_data.get('metonymy', 'no'),
+            figurative_data.get('other', 'no'),
+            figurative_data.get('final_figurative_language', 'no'),
+            figurative_data.get('final_simile', 'no'),
+            figurative_data.get('final_metaphor', 'no'),
+            figurative_data.get('final_personification', 'no'),
+            figurative_data.get('final_idiom', 'no'),
+            figurative_data.get('final_hyperbole', 'no'),
+            figurative_data.get('final_metonymy', 'no'),
+            figurative_data.get('final_other', 'no'),
             figurative_data.get('vehicle_level_1'),
             figurative_data.get('vehicle_level_2'),
             figurative_data.get('tenor_level_1'),
@@ -137,11 +197,7 @@ class DatabaseManager:
             figurative_data.get('explanation'),
             figurative_data.get('speaker'),
             figurative_data.get('purpose'),
-            figurative_data.get('original_detection_type'),
-            figurative_data.get('validation_decision'),
-            figurative_data.get('validation_reason'),
-            figurative_data.get('validation_response'),
-            figurative_data.get('validation_error')
+            figurative_data.get('original_detection_types')
         ))
 
         return self.cursor.lastrowid
@@ -150,11 +206,37 @@ class DatabaseManager:
         """Update validation data for an existing figurative language entry"""
         self.cursor.execute('''
             UPDATE figurative_language
-            SET validation_decision = ?, validation_reason = ?, validation_response = ?, validation_error = ?
+            SET validation_decision_simile = ?, validation_decision_metaphor = ?, validation_decision_personification = ?,
+                validation_decision_idiom = ?, validation_decision_hyperbole = ?, validation_decision_metonymy = ?, validation_decision_other = ?,
+                validation_reason_simile = ?, validation_reason_metaphor = ?, validation_reason_personification = ?,
+                validation_reason_idiom = ?, validation_reason_hyperbole = ?, validation_reason_metonymy = ?, validation_reason_other = ?,
+                final_figurative_language = ?, final_simile = ?, final_metaphor = ?, final_personification = ?,
+                final_idiom = ?, final_hyperbole = ?, final_metonymy = ?, final_other = ?,
+                validation_response = ?, validation_error = ?
             WHERE id = ?
         ''', (
-            validation_data.get('validation_decision'),
-            validation_data.get('validation_reason'),
+            validation_data.get('validation_decision_simile'),
+            validation_data.get('validation_decision_metaphor'),
+            validation_data.get('validation_decision_personification'),
+            validation_data.get('validation_decision_idiom'),
+            validation_data.get('validation_decision_hyperbole'),
+            validation_data.get('validation_decision_metonymy'),
+            validation_data.get('validation_decision_other'),
+            validation_data.get('validation_reason_simile'),
+            validation_data.get('validation_reason_metaphor'),
+            validation_data.get('validation_reason_personification'),
+            validation_data.get('validation_reason_idiom'),
+            validation_data.get('validation_reason_hyperbole'),
+            validation_data.get('validation_reason_metonymy'),
+            validation_data.get('validation_reason_other'),
+            validation_data.get('final_figurative_language'),
+            validation_data.get('final_simile'),
+            validation_data.get('final_metaphor'),
+            validation_data.get('final_personification'),
+            validation_data.get('final_idiom'),
+            validation_data.get('final_hyperbole'),
+            validation_data.get('final_metonymy'),
+            validation_data.get('final_other'),
             validation_data.get('validation_response'),
             validation_data.get('validation_error'),
             figurative_language_id
@@ -169,9 +251,11 @@ class DatabaseManager:
         self.cursor.execute('SELECT COUNT(*) FROM figurative_language')
         figurative_count = self.cursor.fetchone()[0]
 
-        # Get type breakdown
-        self.cursor.execute('SELECT type, COUNT(*) FROM figurative_language GROUP BY type')
-        type_counts = dict(self.cursor.fetchall())
+        # Get type breakdown (count of each figurative language type - using final validated results)
+        type_counts = {}
+        for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+            self.cursor.execute(f'SELECT COUNT(*) FROM figurative_language WHERE final_{fig_type} = "yes"')
+            type_counts[fig_type] = self.cursor.fetchone()[0]
 
         # Get average confidence
         self.cursor.execute('SELECT AVG(confidence) FROM figurative_language')
@@ -186,11 +270,13 @@ class DatabaseManager:
         }
 
     def get_top_findings(self, limit: int = 5) -> List[Tuple]:
-        """Get top figurative language findings by confidence"""
+        """Get top figurative language findings by confidence (using final validated results)"""
         self.cursor.execute('''
-            SELECT v.reference, fl.type, fl.confidence, fl.figurative_text
+            SELECT v.reference, fl.final_figurative_language, fl.final_simile, fl.final_metaphor, fl.final_personification,
+                   fl.final_idiom, fl.final_hyperbole, fl.final_metonymy, fl.final_other, fl.confidence, fl.figurative_text
             FROM figurative_language fl
             JOIN verses v ON fl.verse_id = v.id
+            WHERE fl.final_figurative_language = 'yes'
             ORDER BY fl.confidence DESC
             LIMIT ?
         ''', (limit,))
@@ -198,18 +284,22 @@ class DatabaseManager:
         return self.cursor.fetchall()
 
     def get_verses_with_figurative_language(self) -> List[Dict]:
-        """Get all verses with their figurative language findings"""
+        """Get all verses with their figurative language findings (both initial and final)"""
         self.cursor.execute('''
             SELECT
                 v.reference,
                 v.hebrew_text,
                 v.english_text,
                 v.word_count,
-                fl.type,
+                fl.figurative_language,
+                fl.simile, fl.metaphor, fl.personification,
+                fl.idiom, fl.hyperbole, fl.metonymy, fl.other,
+                fl.final_figurative_language,
+                fl.final_simile, fl.final_metaphor, fl.final_personification,
+                fl.final_idiom, fl.final_hyperbole, fl.final_metonymy, fl.final_other,
                 fl.confidence,
-                fl.text_snippet,
-                fl.pattern_matched,
-                fl.ai_analysis
+                fl.figurative_text,
+                fl.explanation
             FROM verses v
             LEFT JOIN figurative_language fl ON v.id = fl.verse_id
             ORDER BY v.chapter, v.verse

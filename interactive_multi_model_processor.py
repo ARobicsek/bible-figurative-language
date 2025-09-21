@@ -85,7 +85,7 @@ def get_user_selection():
                     print("Invalid selection. Please try again.")
         except (ValueError, KeyboardInterrupt):
             print("\nExiting...")
-            return None, None, None
+            return None, None, None, None
 
     max_chapters = books[book_name]
     print(f"\nSelected: {book_name} (1-{max_chapters} chapters available)")
@@ -108,10 +108,11 @@ def get_user_selection():
                 print("Invalid input. Enter a number or 'all'")
         except (ValueError, KeyboardInterrupt):
             print("\nExiting...")
-            return None, None, None
+            return None, None, None, None
 
     # Get verse selection if a single chapter was chosen
     verse_selection = 'all'
+    verse_input_str = 'all'
     if len(chapters) == 1:
         chapter_num = chapters[0]
         print(f"\nFetching verse count for {book_name} {chapter_num}...")
@@ -121,7 +122,7 @@ def get_user_selection():
 
         if max_verses == 0:
             print(f"Could not retrieve verses for {book_name} {chapter_num}. Exiting.")
-            return None, None, None
+            return None, None, None, None
 
         while True:
             try:
@@ -129,14 +130,16 @@ def get_user_selection():
                 selected_verses = parse_verse_selection(verse_input, max_verses)
                 if selected_verses:
                     verse_selection = selected_verses
+                    verse_input_str = verse_input.lower()
                     break
                 else:
                     print(f"Invalid input. Please enter a valid verse, range (1-{max_verses}), or 'all'.")
             except KeyboardInterrupt:
                 print("\nExiting...")
-                return None, None, None
+                return None, None, None, None
 
-    return book_name, chapters, verse_selection
+    return book_name, chapters, verse_selection, verse_input_str
+
 
 def process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_api, db_manager, logger):
     """Process a single chapter"""
@@ -272,16 +275,25 @@ def main():
     dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
     was_loaded = load_dotenv(dotenv_path=dotenv_path)
 
-    book_name, chapters, verse_selection = get_user_selection()
+    book_name, chapters, verse_selection, verse_input_str = get_user_selection()
     if not book_name:
         return
 
-    verse_info = f"verse(s) {verse_selection}" if verse_selection != 'all' else "all verses"
-    print(f"\nProcessing {book_name} chapter(s): {chapters}, {verse_info}")
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    chapter_str = str(chapters[0]) if len(chapters) == 1 else "multi"
-    log_file = f"{book_name.lower()}_{chapter_str}_multi_model_log_{timestamp}.txt"
-    db_name = f"{book_name.lower()}_{chapter_str}_multi_model_{timestamp}.db"
+    # New filename generation
+    book_part = book_name.lower()
+    chapter_part = "all_c" if len(chapters) > 1 else str(chapters[0])
+    verse_part = "all_v" if verse_input_str == 'all' else verse_input_str
+
+    now = datetime.now()
+    date_part = now.strftime("%Y%m%d")
+    time_part = now.strftime("%H%M")
+
+    base_filename = f"{book_part}_{chapter_part}_{verse_part}_{date_part}_{time_part}"
+    log_file = f"{base_filename}_log.txt"
+    db_name = f"{base_filename}.db"
+
+    print(f"\nProcessing {book_name}, chapter(s): {chapter_part}, verse(s): {verse_part}")
+    print(f"Output files will be based on: {base_filename}")
 
     logger = setup_logging(log_file)
     if was_loaded:
@@ -341,6 +353,7 @@ def main():
         logger.error(f"CRITICAL FAILURE: {str(e)}")
         logger.error(f"Traceback: {traceback.format_exc()}")
         raise
+
 
 if __name__ == "__main__":
     try:

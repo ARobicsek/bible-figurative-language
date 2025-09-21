@@ -299,7 +299,7 @@ English: {english_text}
 • Character actions and dialogue
 • Historical and genealogical information
 • Divine anthropomorphisms (e.g. God went, God was angry, God watched, God fought) - these are LITERAL in the ANE context unless they refer to God's body (God's finger).
-• Biblical idions and set phrases (e.g. לְפִי־חָֽרֶב, פִֽי־יְהֹוָ֖ה,פְּנ֥י הָאֲדָמָֽה) - these are IDIOMS
+• Biblical idions and set phrases (e.g. לְפִי־חָֽרֶב, פִֽי־יְהֹוָ֖ה,פְּנ֥י הָאֲדָמָֽה) - these are IDIOMS; classify figurative idioms as "idiom" type.
 
 **NEVER MARK AS FIGURATIVE:**
 • Comparisons of role or function, such as 'a prophet like myself' (כָּמֹנִי) or 'a prophet like yourself' (כָּמוֹךָ). These are literal statements of equivalence or similarity in function, not figurative similes.
@@ -316,14 +316,16 @@ English: {english_text}
 
 DELIBERATION:
 [You MUST analyze EVERY potential figurative element in this verse. For each phrase/concept, explain:
-- What you considered (e.g., "considered if 'X' might be metaphor, metonymy, etc")
+- What you considered (e.g., "considered if 'X' might be metaphor, metonymy, etc"). Note that synechdoche is a type of metonymy.
 - Your reasoning for including/excluding it (e.g., "this is not metaphor, metonymy, etc because...")
 - Any borderline cases you debated
 Be explicit about what you examined and why you made each decision.
 IMPORTANT: Include ALL phrases you marked as figurative in the JSON AND explain your reasoning for including them here.]
 
 **THEN provide JSON OUTPUT (only if genuinely figurative):**
-[{"type": "metaphor/personification/simile", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "vehicle_level_1": "nature/human/divine/abstract", "vehicle_level_2": "specific", "tenor_level_1": "God/people/covenant", "tenor_level_2": "specific", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
+[{"figurative_language": "yes/no", "simile": "yes/no", "metaphor": "yes/no", "personification": "yes/no", "idiom": "yes/no", "hyperbole": "yes/no", "metonymy": "yes/no", "other": "yes/no", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "vehicle_level_1": "nature/human/divine/abstract", "vehicle_level_2": "specific", "tenor_level_1": "God/people/covenant", "tenor_level_2": "specific", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
+
+IMPORTANT: Mark each type field as "yes" or "no". A phrase can be multiple types (e.g., both metaphor and idiom). Set figurative_language to "yes" if ANY figurative language is detected.
 
 If no figurative language found: []
 
@@ -353,11 +355,16 @@ Analysis:"""
     def _clean_response(self, response_text: str, hebrew_text: str, english_text: str) -> Tuple[str, List[Dict], str]:
         """Clean and parse the JSON response, returning valid instances, all instances, and deliberation."""
 
-        # Extract deliberation section
+        # Extract deliberation section (handle case variations and formatting)
         deliberation = ""
-        deliberation_match = re.search(r'DELIBERATION:\s*([\s\S]*?)(?=\[|\n\n|\Z)', response_text)
+        deliberation_match = re.search(r'(?:MY\s+)?DELIBERATION\s*(?:SECTION)?\s*:?\s*([\s\S]*?)(?=JSON OUTPUT:|(?:\n\s*\[)|$)', response_text, re.IGNORECASE)
         if deliberation_match:
             deliberation = deliberation_match.group(1).strip()
+        else:
+            # Fallback: extract everything before JSON OUTPUT or the final JSON array
+            fallback_match = re.search(r'^([\s\S]*?)(?=JSON OUTPUT:|(?:\n\s*\[[\s\S]*\])|$)', response_text)
+            if fallback_match:
+                deliberation = fallback_match.group(1).strip()
 
         # Use regex to find the JSON block, ignoring conversational text
         json_string = response_text
@@ -365,10 +372,16 @@ Analysis:"""
         if match:
             json_string = match.group(1).strip()
         else:
-            # Try to find JSON array in the response
-            json_match = re.search(r'(\[[\s\S]*?\])', response_text)
+            # Try to find JSON array at the end of the response (after deliberation)
+            # Look for JSON OUTPUT: followed by array, or just array at the end
+            json_match = re.search(r'(?:JSON OUTPUT:\s*)?(\[[\s\S]*?\])(?:\s*Analysis:|\s*$)', response_text)
             if json_match:
                 json_string = json_match.group(1).strip()
+            else:
+                # Fallback: look for the last JSON array in the response
+                json_matches = re.findall(r'(\[[\s\S]*?\])', response_text)
+                if json_matches:
+                    json_string = json_matches[-1].strip()
 
         # Try to parse as JSON to validate
         try:
@@ -382,46 +395,27 @@ Analysis:"""
             validated_data = []
 
             for item in data:
-                # Store original detection type for logging
-                original_type = item.get('type')
+                # Store original detection types for logging
+                original_types = []
+                for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+                    if item.get(fig_type) == 'yes':
+                        original_types.append(fig_type)
 
-                # First, sanitize the 'type' field
-                allowed_types = {'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
-                if isinstance(item, dict) and 'type' in item and isinstance(item['type'], str):
-                    llm_type = item['type'].lower()
-                    if llm_type not in allowed_types:
-                        item['type'] = 'other'
+                # Ensure all type fields are properly set to yes/no
+                for fig_type in ['figurative_language', 'simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+                    if fig_type not in item or item[fig_type] not in ['yes', 'no']:
+                        item[fig_type] = 'no'
 
-                # Set the original detection type
-                item['original_detection_type'] = original_type
+                # Set figurative_language to 'yes' if any specific type is 'yes'
+                if any(item.get(fig_type) == 'yes' for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']):
+                    item['figurative_language'] = 'yes'
+
+                # Set the original detection types
+                item['original_detection_types'] = ','.join(original_types) if original_types else ''
                 all_instances.append(item.copy())
 
-                # For backward compatibility, include validation logic here but don't do database operations
-                if self.validator and self.logger:
-                    self.logger.info(f"    VALIDATING instance: {item.get('english_text')}")
-                    is_valid, reason, error, corrected_type = self.validator.validate_figurative_language(
-                        item.get('type'),
-                        hebrew_text,
-                        english_text,
-                        item.get('english_text'),
-                        item.get('explanation'),
-                        item.get('confidence')
-                    )
-
-                    if error:
-                        self.logger.error(f"      VALIDATION ERROR: {error}")
-                        continue
-
-                    if is_valid:
-                        self.logger.info(f"      VALIDATION PASSED: {reason}")
-                        if corrected_type:
-                            self.logger.info(f"      RECLASSIFIED to: {corrected_type}")
-                            item['type'] = corrected_type
-                        validated_data.append(item)
-                    else:
-                        self.logger.info(f"      VALIDATION FAILED: {reason}")
-                else:
-                    validated_data.append(item)
+                # Skip validation in this method - it will be done in insert_and_validate_instances
+                validated_data.append(item)
 
             # Return the cleaned and sanitized data as a JSON string, plus all instances and deliberation
             return json.dumps(validated_data), all_instances, deliberation
@@ -438,9 +432,16 @@ Analysis:"""
 
         valid_count = 0
         for item in all_instances:
-            # Prepare figurative data
+            # Prepare figurative data with multi-type format
             figurative_data = {
-                'type': item.get('type'),
+                'figurative_language': item.get('figurative_language', 'no'),
+                'simile': item.get('simile', 'no'),
+                'metaphor': item.get('metaphor', 'no'),
+                'personification': item.get('personification', 'no'),
+                'idiom': item.get('idiom', 'no'),
+                'hyperbole': item.get('hyperbole', 'no'),
+                'metonymy': item.get('metonymy', 'no'),
+                'other': item.get('other', 'no'),
                 'vehicle_level_1': item.get('vehicle_level_1'),
                 'vehicle_level_2': item.get('vehicle_level_2'),
                 'tenor_level_1': item.get('tenor_level_1'),
@@ -451,32 +452,62 @@ Analysis:"""
                 'explanation': item.get('explanation'),
                 'speaker': item.get('speaker'),
                 'purpose': item.get('purpose'),
-                'original_detection_type': item.get('original_detection_type')
+                'original_detection_types': item.get('original_detection_types', '')
             }
 
             # Insert the figurative language record
             figurative_language_id = self.db_manager.insert_figurative_language(verse_id, figurative_data)
 
-            # Perform validation with database logging
+            # Perform validation for each detected type
             if self.validator:
-                is_valid, reason, error, corrected_type = self.validator.validate_figurative_language(
-                    item.get('type'),
-                    hebrew_text,
-                    english_text,
-                    item.get('english_text'),
-                    item.get('explanation'),
-                    item.get('confidence'),
-                    figurative_language_id
-                )
+                any_valid = False
+                validation_data = {}
 
-                if is_valid:
-                    valid_count += 1
-                    # Update the type if it was reclassified
-                    if corrected_type and corrected_type != item.get('type'):
-                        self.db_manager.cursor.execute(
-                            'UPDATE figurative_language SET type = ? WHERE id = ?',
-                            (corrected_type, figurative_language_id)
+                # Initialize final fields to 'no'
+                for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+                    validation_data[f'final_{fig_type}'] = 'no'
+
+                for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+                    if item.get(fig_type) == 'yes':
+                        is_valid, reason, error, reclassified_type = self.validator.validate_figurative_type(
+                            fig_type,
+                            hebrew_text,
+                            english_text,
+                            item.get('english_text'),
+                            item.get('explanation'),
+                            item.get('confidence')
                         )
+
+                        if reclassified_type:
+                            # This was reclassified to a different type
+                            validation_data[f'validation_decision_{fig_type}'] = 'RECLASSIFIED'
+                            validation_data[f'validation_reason_{fig_type}'] = f"Reclassified to {reclassified_type}: {reason}"
+                            # Don't set final field for original type
+                            # Set final field for reclassified type
+                            validation_data[f'final_{reclassified_type}'] = 'yes'
+                            any_valid = True
+                        elif is_valid:
+                            # Validation confirmed the original type
+                            validation_data[f'validation_decision_{fig_type}'] = 'VALID'
+                            validation_data[f'validation_reason_{fig_type}'] = reason
+                            validation_data[f'final_{fig_type}'] = 'yes'
+                            any_valid = True
+                        else:
+                            # Validation rejected the type
+                            validation_data[f'validation_decision_{fig_type}'] = 'INVALID'
+                            validation_data[f'validation_reason_{fig_type}'] = reason
+
+                        if error:
+                            validation_data['validation_error'] = error
+
+                # Set final_figurative_language based on validation results
+                validation_data['final_figurative_language'] = 'yes' if any_valid else 'no'
+
+                if any_valid:
+                    valid_count += 1
+
+                # Update validation data with final fields
+                self.db_manager.update_validation_data(figurative_language_id, validation_data)
 
         return valid_count
 

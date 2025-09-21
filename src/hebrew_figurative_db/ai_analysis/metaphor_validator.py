@@ -37,6 +37,7 @@ class MetaphorValidator:
         }
 
         self.validation_count = 0
+        self.type_validation_count = 0
 
     def validate_figurative_language(self,
                                    fig_type: str,
@@ -168,6 +169,194 @@ class MetaphorValidator:
             validation_data['validation_error'] = error_msg
             self._log_validation_data(figurative_language_id, validation_data)
             return False, "API error during validation", error_msg, None
+
+    def validate_figurative_type(self,
+                                fig_type: str,
+                                hebrew_text: str,
+                                english_text: str,
+                                figurative_text: str,
+                                explanation: str,
+                                confidence: float) -> Tuple[bool, str, Optional[str], Optional[str]]:
+        """
+        Validate whether a specific figurative language type is correct
+
+        Args:
+            fig_type: Type of figurative language (metaphor, simile, etc.)
+            hebrew_text: Original Hebrew text
+            english_text: English translation
+            figurative_text: The detected figurative expression
+            explanation: Original explanation from stage 1
+            confidence: Original confidence score
+
+        Returns:
+            Tuple of (is_valid_type: bool, reason: str, error: Optional[str], reclassified_type: Optional[str])
+        """
+
+        prompt = self._create_type_validation_prompt(
+            fig_type, hebrew_text, english_text, figurative_text, explanation, confidence
+        )
+
+        try:
+            response = self.model.generate_content(
+                prompt,
+                generation_config=self.generation_config
+            )
+
+            self.type_validation_count += 1
+
+            # Check for safety restrictions
+            if hasattr(response, 'candidates') and response.candidates:
+                candidate = response.candidates[0]
+                if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
+                    finish_reason = candidate.finish_reason
+                    if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
+                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason.name}", None
+                    elif str(finish_reason) in ['SAFETY', 'RECITATION', 'OTHER']:
+                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason}", None
+
+            if response.text:
+                # Parse the validation response
+                response_text = response.text.strip()
+
+                # Expected format: "VALID: reason" or "INVALID: reason" or "RECLASSIFY: new_type - reason"
+                if response_text.startswith("VALID:"):
+                    reason = response_text[6:].strip()
+                    return True, reason, None, None
+                elif response_text.startswith("INVALID:"):
+                    reason = response_text[8:].strip()
+                    return False, reason, None, None
+                elif response_text.startswith("RECLASSIFY:"):
+                    # Parse "RECLASSIFY: new_type - reason" or "RECLASSIFY: new_type"
+                    content = response_text[11:].strip()
+                    parts = content.split(" - ", 1)
+                    potential_type = parts[0].strip().lower().rstrip('.:')
+                    allowed_types = {'simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
+
+                    if potential_type in allowed_types:
+                        reclassified_type = potential_type
+                        reason = parts[1].strip() if len(parts) > 1 else f"Reclassified from {fig_type} to {reclassified_type}"
+                    else:
+                        reclassified_type = "other"
+                        reason = content
+
+                    return False, reason, None, reclassified_type
+                else:
+                    # Fallback parsing
+                    if "RECLASSIFY" in response_text.upper():
+                        return False, response_text, None, "other"
+                    elif "VALID" in response_text.upper():
+                        return True, response_text, None, None
+                    else:
+                        return False, response_text, None, None
+            else:
+                return False, "No response generated", "Empty response", None
+
+        except Exception as e:
+            error_msg = f"Type validation API error: {str(e)}"
+            return False, "API error during type validation", error_msg, None
+
+    def _create_type_validation_prompt(self,
+                                      fig_type: str,
+                                      hebrew_text: str,
+                                      english_text: str,
+                                      figurative_text: str,
+                                      explanation: str,
+                                      confidence: float) -> str:
+        """Create a validation prompt for a specific figurative language type"""
+
+        prompt = f"""You are a biblical Hebrew scholar conducting validation of a specific figurative language type. Your task is to determine if this text is genuinely a "{fig_type.upper()}".
+
+CONTEXT:
+Hebrew: {hebrew_text}
+English: {english_text}
+
+DETECTED "{fig_type.upper()}":
+Text: "{figurative_text}"
+Explanation: {explanation}
+Original Confidence: {confidence}
+
+VALIDATION TASK: Is this text genuinely a {fig_type}?
+
+TYPE-SPECIFIC VALIDATION RULES:
+
+{self._get_type_specific_rules(fig_type)}
+
+RESPONSE FORMAT:
+If this is a valid {fig_type}: "VALID: [brief reason why it's genuinely a {fig_type}]"
+If this is NOT a {fig_type} but IS another type: "RECLASSIFY: [correct_type] - [reason why it should be reclassified]"
+If this is NOT figurative at all: "INVALID: [specific reason why it's not figurative]"
+
+VALIDATION:"""
+
+        return prompt
+
+    def _get_type_specific_rules(self, fig_type: str) -> str:
+        """Get type-specific validation rules"""
+
+        if fig_type == 'metaphor':
+            return """
+METAPHOR VALIDATION:
+- ACCEPT: Cross-domain comparisons where A is described as B (Egypt = iron furnace)
+- ACCEPT: Divine body parts (God's hand, arm, face) - God is incorporeal
+- ACCEPT: Abstract concepts described as concrete (anger = fire)
+- REJECT: Literal comparisons or standard biblical terminology
+- REJECT: Historical precedents or procedural language
+"""
+
+        elif fig_type == 'simile':
+            return """
+SIMILE VALIDATION:
+- ACCEPT: Cross-domain comparisons using "like/as" for unlike things (like a lion)
+- ACCEPT: Figurative quantity comparisons (as the stars of heaven)
+- REJECT: Literal behavioral comparisons (as you do, like your brother did)
+- REJECT: Role/function comparisons (a prophet like myself)
+- REJECT: Historical precedent references (as the Edomites did)
+"""
+
+        elif fig_type == 'personification':
+            return """
+PERSONIFICATION VALIDATION:
+- ACCEPT: Abstract concepts acting as agents (dread and fear...put upon)
+- ACCEPT: Natural phenomena acting human-like (mountains skipped, sea fled)
+- ACCEPT: Objects given human characteristics
+- REJECT: Divine actions (God is a person in ANE context)
+- REJECT: Standard anthropomorphic descriptions
+"""
+
+        elif fig_type == 'idiom':
+            return """
+IDIOM VALIDATION:
+- ACCEPT: Set biblical phrases with non-literal meaning
+- ACCEPT: Cultural expressions with meaning beyond literal words
+- REJECT: Standard terminology or literal expressions
+- REJECT: Technical religious terms
+"""
+
+        elif fig_type == 'hyperbole':
+            return """
+HYPERBOLE VALIDATION:
+- ACCEPT: Deliberate exaggeration for effect
+- ACCEPT: Impossible or extreme claims for emphasis
+- REJECT: Standard biblical descriptions
+- REJECT: Literal divine actions or judgments
+"""
+
+        elif fig_type == 'metonymy':
+            return """
+METONYMY VALIDATION:
+- ACCEPT: Substitution of associated terms (crown for kingship)
+- ACCEPT: Part for whole or whole for part relationships
+- REJECT: Literal references to actual objects
+- REJECT: Standard terminology
+"""
+
+        else:  # 'other'
+            return """
+OTHER FIGURATIVE LANGUAGE VALIDATION:
+- ACCEPT: Genuine figurative language not fitting other categories
+- ACCEPT: Complex figurative expressions
+- REJECT: Literal language or standard terminology
+"""
 
     def _create_validation_prompt(self,
                                  fig_type: str,
@@ -336,7 +525,8 @@ VALIDATION:"""
     def get_validation_stats(self) -> Dict:
         """Get validation statistics"""
         return {
-            'total_validations': self.validation_count
+            'total_validations': self.validation_count,
+            'total_type_validations': self.type_validation_count
         }
 
 
