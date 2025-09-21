@@ -19,6 +19,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 from hebrew_figurative_db.text_extraction.sefaria_client import SefariaClient
 from hebrew_figurative_db.ai_analysis.gemini_api_multi_model import MultiModelGeminiClient
 from hebrew_figurative_db.database.db_manager import DatabaseManager
+from hebrew_figurative_db.ai_analysis.metaphor_validator import MetaphorValidator
 
 def setup_logging(log_file):
     """Setup comprehensive logging"""
@@ -170,25 +171,61 @@ def process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_ap
 
             logger.info(f"  Processing {verse_ref} ({i+1}/{len(verses_to_process)})...")
 
-            result_json, error, metadata = multi_model_api.analyze_figurative_language(
-                heb_verse, eng_verse, book=book_name, chapter=chapter
-            )
-            logger.info(f"    API Metadata: {metadata}")
+            # Retry logic for verses with retryable errors
+            max_verse_retries = 3
+            verse_retry_count = 0
+            final_error = None
+            final_metadata = None
+            result_json = None
+
+            while verse_retry_count < max_verse_retries:
+                result_json, error, metadata = multi_model_api.analyze_figurative_language(
+                    heb_verse, eng_verse, book=book_name, chapter=chapter
+                )
+
+                # Check if this is a retryable error
+                is_retryable = error and ("500" in error or "internal error" in error.lower() or "retry" in error.lower())
+
+                if not error or not is_retryable:
+                    # Success or non-retryable error - stop retrying
+                    final_error = error
+                    final_metadata = metadata
+                    break
+                else:
+                    # Retryable error - log and retry
+                    verse_retry_count += 1
+                    logger.warning(f"    Retryable error on attempt {verse_retry_count}/{max_verse_retries}: {error}")
+                    if verse_retry_count < max_verse_retries:
+                        import time
+                        time.sleep(2)  # Brief delay before retry
+                    final_error = error  # Keep last error in case all retries fail
+                    final_metadata = metadata
+
+            logger.info(f"    API Metadata: {final_metadata}")
+            if verse_retry_count > 0:
+                if final_error:
+                    logger.error(f"    Failed after {verse_retry_count} retries: {final_error}")
+                else:
+                    logger.info(f"    Succeeded after {verse_retry_count} retries")
 
             verse_data_dict = {
                 'reference': verse_ref, 'book': book_name, 'chapter': chapter,
                 'verse': int(verse_ref.split(':')[1]), 'hebrew': heb_verse,
                 'english': eng_verse, 'word_count': len(heb_verse.split()),
-                'llm_restriction_error': error
+                'llm_restriction_error': final_error,
+                'llm_deliberation': final_metadata.get('llm_deliberation') if final_metadata else None
             }
             verse_id = db_manager.insert_verse(verse_data_dict)
             logger.debug(f"    Verse stored in database with ID: {verse_id}")
 
-            if error:
-                logger.error(f"API error for {verse_ref}: {error}")
-                if "Failed after" not in error:
+            if final_error:
+                logger.error(f"API error for {verse_ref}: {final_error}")
+                if "Failed after" not in final_error:
                     chapter_errors += 1
                 continue
+
+            # Use final_metadata instead of metadata for the rest of the processing
+            metadata = final_metadata
 
             if not result_json:
                 logger.warning(f"Empty result for {verse_ref}")
@@ -196,15 +233,27 @@ def process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_ap
 
             try:
                 results = json.loads(result_json)
-                if results:
-                    chapter_instances += len(results)
-                    logger.info(f"    FOUND: {len(results)} figurative instances")
-                    for j, result in enumerate(results):
-                        figurative_data = {k: result.get(k) for k in ['type', 'vehicle_level_1', 'vehicle_level_2', 'tenor_level_1', 'tenor_level_2', 'confidence', 'english_text', 'hebrew_text', 'explanation', 'speaker', 'purpose']}
-                        figurative_data['figurative_text'] = result.get('english_text')
-                        figurative_data['figurative_text_in_hebrew'] = result.get('hebrew_text')
-                        db_manager.insert_figurative_language(verse_id, figurative_data)
-                        logger.info(f"      Instance {j+1}: {result.get('type', 'unknown')} - '{result.get('english_text', 'N/A')}'")
+                validated_count = len(results) if results else 0
+
+                # Get all detected instances from metadata (including rejected ones)
+                all_instances = metadata.get('all_detected_instances', [])
+                total_detected = len(all_instances)
+
+                if all_instances:
+                    logger.info(f"    DETECTED: {total_detected} instances, VALIDATED: {validated_count} instances")
+
+                    # Insert all instances (both valid and rejected) with validation data
+                    valid_count = multi_model_api.insert_and_validate_instances(
+                        verse_id, all_instances, heb_verse, eng_verse
+                    )
+
+                    chapter_instances += valid_count
+                    logger.info(f"    FINAL: {valid_count} valid instances stored with validation decisions")
+
+                    for j, instance in enumerate(all_instances[:3]):  # Show first 3 for brevity
+                        logger.info(f"      Instance {j+1}: {instance.get('type', 'unknown')} - '{instance.get('english_text', 'N/A')}'")
+                    if total_detected > 3:
+                        logger.info(f"      ... and {total_detected - 3} more instances")
                 else:
                     logger.debug(f"    No figurative language detected")
             except json.JSONDecodeError as e:
@@ -249,13 +298,16 @@ def main():
 
         logger.info("Initializing Sefaria client...")
         sefaria = SefariaClient()
-        logger.info("Initializing Gemini multi-model API...")
-        multi_model_api = MultiModelGeminiClient(api_key)
 
         logger.info(f"Creating database: {db_name}")
         db_manager = DatabaseManager(db_name)
         db_manager.connect()
         db_manager.setup_database()
+
+        logger.info("Initializing Metaphor Validator...")
+        validator = MetaphorValidator(api_key, db_manager=db_manager)
+        logger.info("Initializing Gemini multi-model API...")
+        multi_model_api = MultiModelGeminiClient(api_key, validator=validator, logger=logger, db_manager=db_manager)
 
         total_verses, total_instances, total_errors = 0, 0, 0
 

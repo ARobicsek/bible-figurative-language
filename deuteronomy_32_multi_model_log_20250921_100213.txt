@@ -1,0 +1,255 @@
+2025-09-21 10:02:13,056 - INFO - Successfully loaded environment variables from: C:\Users\ariro\OneDrive\Documents\Bible\.env
+2025-09-21 10:02:13,057 - INFO - === PROCESSING DEUTERONOMY CHAPTER(S) [32] WITH MULTI-MODEL API ===
+2025-09-21 10:02:13,057 - INFO - Initializing Sefaria client...
+2025-09-21 10:02:13,058 - INFO - Initializing Metaphor Validator...
+2025-09-21 10:02:13,058 - INFO - Initializing Gemini multi-model API...
+2025-09-21 10:02:13,059 - INFO - Creating database: deuteronomy_32_multi_model_20250921_100213.db
+2025-09-21 10:02:13,263 - INFO - --- Processing Deuteronomy 32 ---
+2025-09-21 10:02:13,263 - INFO - Fetching text for Deuteronomy 32...
+2025-09-21 10:02:13,603 - INFO - Retrieved 52 verses for Deuteronomy 32
+2025-09-21 10:02:13,603 - INFO - Filtering to process 52 selected verse(s): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
+2025-09-21 10:02:13,603 - INFO -   Processing Deuteronomy 32:1 (1/52)...
+2025-09-21 10:02:25,561 - INFO -     VALIDATING instance: Give ear, O heavens
+2025-09-21 10:02:26,509 - INFO -       VALIDATION PASSED: Personification - The heavens and the earth, inanimate objects, are given the human capacity to hear and understand speech.  This is a clear example of assigning human characteristics to non-human entities, fitting the definition of personification.  The context is a divine address, but the attribution of hearing to the heavens and earth is not a standard divine action or attribute in the ANE context; rather, it's a literary device to emphasize the importance and universality of the speaker's words.
+2025-09-21 10:02:26,509 - INFO -     VALIDATING instance: Let the earth hear
+2025-09-21 10:02:27,360 - INFO -       VALIDATION PASSED: Personification - The passage attributes the human capacity of hearing to the heavens and the earth, inanimate objects.  This is a clear example of personification, a common literary device used to emphasize the gravity and importance of God's words.  The ANE audience would have understood this as a stylistic choice to convey the far-reaching impact of God's pronouncements, not a literal claim about the auditory capabilities of celestial bodies.
+2025-09-21 10:02:27,360 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 431, 'output_tokens': 583, 'fallback_used': False}
+2025-09-21 10:02:27,367 - INFO -     FOUND: 2 figurative instances
+2025-09-21 10:02:27,367 - INFO -       Instance 1: personification - 'Give ear, O heavens'
+2025-09-21 10:02:27,368 - INFO -       Instance 2: personification - 'Let the earth hear'
+2025-09-21 10:02:27,368 - INFO -   Processing Deuteronomy 32:2 (2/52)...
+2025-09-21 10:02:41,545 - INFO -     VALIDATING instance: my discourse come down as the rain
+2025-09-21 10:02:42,458 - INFO -       VALIDATION PASSED: Simile - The passage uses "as" to compare the speaker's discourse to rain and dew, creating a vivid image that conveys the desired effect of the words being refreshing, life-giving, and widely received.  This is a figurative comparison of unlike things (discourse and rain/dew) to create a new imaginative meaning, fulfilling the criteria for a simile.  The comparison is not literal; discourse does not literally fall like rain.
+2025-09-21 10:02:42,458 - INFO -     VALIDATING instance: My speech distill as the dew
+2025-09-21 10:02:43,239 - INFO -       VALIDATION PASSED: This is a genuine simile employing a cross-domain comparison.  The speaker's speech is compared to dew, using "as," to convey the desired effect of gentle, pervasive, and nourishing influence.  The comparison is not literal; dew and speech are inherently different, yet the simile creates a vivid image of the desired impact of the speech.
+2025-09-21 10:02:43,240 - INFO -     VALIDATING instance: Like showers on young growth
+2025-09-21 10:02:44,029 - INFO -       VALIDATION PASSED: This is a genuine simile employing a cross-domain comparison.  The passage compares the effect of the speaker's words (abstract) to the beneficial effect of rain and dew on vegetation (concrete).  The "like" is used to create a figurative comparison, highlighting the life-giving and refreshing impact of the words, not a literal description of the words falling like rain.
+2025-09-21 10:02:44,029 - INFO -     VALIDATING instance: Like droplets on the grass
+2025-09-21 10:02:44,845 - INFO -       VALIDATION PASSED: This is a genuine simile employing a cross-domain comparison.  The effect of the speaker's words is compared to the gentle, pervasive effect of dew and rain on vegetation.  This is not a literal comparison; dew and rain do not literally *become* words, but the simile creates a vivid image of the words' desired impact—thorough, gentle, and life-giving.
+2025-09-21 10:02:44,846 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 526, 'output_tokens': 792, 'fallback_used': False}
+2025-09-21 10:02:44,846 - INFO -     FOUND: 4 figurative instances
+2025-09-21 10:02:44,847 - INFO -       Instance 1: simile - 'my discourse come down as the rain'
+2025-09-21 10:02:44,847 - INFO -       Instance 2: simile - 'My speech distill as the dew'
+2025-09-21 10:02:44,847 - INFO -       Instance 3: simile - 'Like showers on young growth'
+2025-09-21 10:02:44,848 - INFO -       Instance 4: simile - 'Like droplets on the grass'
+2025-09-21 10:02:44,848 - INFO -   Processing Deuteronomy 32:3 (3/52)...
+2025-09-21 10:02:52,319 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 412, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:02:52,320 - INFO -   Processing Deuteronomy 32:4 (4/52)...
+2025-09-21 10:02:58,569 - INFO -     VALIDATING instance: The Rock!
+2025-09-21 10:02:59,481 - INFO -       VALIDATION PASSED: Metaphor -  The text uses "The Rock" as a metaphorical descriptor for God, transferring qualities of strength, stability, and permanence from a physical rock to God's character and nature. This is a common and recognized metaphorical usage in biblical literature, not a literal description of God's physical form.  The comparison is between two unlike things (God and a rock) to convey a deeper meaning about God's attributes.
+2025-09-21 10:02:59,481 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 495, 'output_tokens': 202, 'fallback_used': False}
+2025-09-21 10:02:59,482 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:02:59,482 - INFO -       Instance 1: metaphor - 'The Rock!'
+2025-09-21 10:02:59,482 - INFO -   Processing Deuteronomy 32:5 (5/52)...
+2025-09-21 10:03:21,463 - INFO -     VALIDATING instance: crooked, perverse
+2025-09-21 10:03:22,050 - INFO -       VALIDATION PASSED: Cross-domain transfer (Spatial → Moral).  The physical qualities of crookedness and perversity are used to describe the moral state of a generation, a clear metaphorical transfer of meaning understood within the ANE context.
+2025-09-21 10:03:22,051 - INFO -     VALIDATING instance: their baseness
+2025-09-21 10:03:22,804 - INFO -       VALIDATION PASSED: Cross-domain comparison - The Hebrew term 'mum' literally signifies a physical blemish, but it's used here to represent a moral flaw, transferring the concept of physical imperfection to a moral one.  This is a clear shift between the physical and moral domains, fitting the definition of a cross-domain metaphor.
+2025-09-21 10:03:22,805 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 427, 'output_tokens': 436, 'fallback_used': False}
+2025-09-21 10:03:22,805 - INFO -     FOUND: 2 figurative instances
+2025-09-21 10:03:22,805 - INFO -       Instance 1: metaphor - 'crooked, perverse'
+2025-09-21 10:03:22,806 - INFO -       Instance 2: metaphor - 'their baseness'
+2025-09-21 10:03:22,806 - INFO -   Processing Deuteronomy 32:6 (6/52)...
+2025-09-21 10:03:30,731 - INFO -     VALIDATING instance: Father
+2025-09-21 10:03:31,607 - INFO -       VALIDATION PASSED: Metaphor -  The text uses "Father" to describe God's relationship with the people, transferring the familial concept of creation, protection, and sustenance to the divine realm. This is a cross-domain comparison, moving from the human family structure to the relationship between God and his people.  It's not a literal description of God's physical parentage, but a figurative expression of his role as creator and provider.
+2025-09-21 10:03:31,608 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 563, 'output_tokens': 211, 'fallback_used': False}
+2025-09-21 10:03:31,608 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:03:31,609 - INFO -       Instance 1: metaphor - 'Father'
+2025-09-21 10:03:31,609 - INFO -   Processing Deuteronomy 32:7 (7/52)...
+2025-09-21 10:03:34,512 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 474, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:03:34,512 - INFO -   Processing Deuteronomy 32:8 (8/52)...
+2025-09-21 10:03:38,797 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 499, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:03:38,797 - INFO -   Processing Deuteronomy 32:9 (9/52)...
+2025-09-21 10:03:57,320 - ERROR - Invalid JSON response: The provided text states:
+Hebrew: כִּ֛י חֵ֥לֶק יְהֹוָ֖ה עַמּ֑וֹ יַעֲקֹ֖ב חֶ֥בֶל נַחֲלָתֽוֹ
+English: For יהוה’s portion is this people; Jacob, God’s own allotment.
+
+This passage uses the terms "portion" (חֵלֶק) and "allotment" (חֶבֶל נַחֲלָתוֹ) to describe the people of Israel (עַמּוֹ, יַעֲקֹב) in relation to YHWH. While these terms are typically used for land or property, their application to a people is a common theological concept in biblical Hebrew, signifying God's ownership and special relationship with Israel.
+
+According to the guidelines:
+*   We are to "MARK AS FIGURATIVE" for:
+    *   Tribal characterizations using animals (e.g., "lion", "wolf").
+    *   Cross-domain comparisons *like* "unstable as water" or "like a hind let loose" (which involve nature/animals for human qualities).
+    *   Clear metaphorical relationships between people and *nature/animals*.
+*   We are to "BE CONSERVATIVE WITH" standard genealogical language, geographic references, historical statements, and divine anthropomorphisms (unless referring to God's body).
+*   We are to "LOOK FOR" animal metaphors for human characteristics and nature imagery for human qualities.
+
+The terms "portion" and "allotment" do not involve animals or nature imagery. While they represent a conceptual mapping from property to people, this is a deeply ingrained and standard theological idiom for describing God's election and ownership of Israel. It is not a fresh, vivid poetic metaphor of the type exemplified in the "MARK AS FIGURATIVE" section (e.g., "lion," "unstable as water," which involve sensory comparisons to animals or natural phenomena). Given the instruction to "BE CONSERVATIVE" with standard theological/historical statements and to specifically "LOOK FOR" animal/nature imagery, these phrases do not meet the criteria for marking as figurative in this specific analysis.
+
+[]
+2025-09-21 10:03:57,321 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 417, 'output_tokens': 476, 'fallback_used': False}
+2025-09-21 10:03:57,321 - INFO -   Processing Deuteronomy 32:10 (10/52)...
+2025-09-21 10:04:08,783 - INFO -     VALIDATING instance: as the pupil of God’s eye
+2025-09-21 10:04:09,582 - INFO -       VALIDATION PASSED: Genuine cross-domain comparison.  The simile uses "as" (כְּ) to compare God's protective care to the meticulous guarding of the pupil of the eye, two unlike things.  The comparison highlights the intensity and precision of God's protection, creating a vivid image not intended as a literal description.
+2025-09-21 10:04:09,582 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 519, 'output_tokens': 221, 'fallback_used': False}
+2025-09-21 10:04:09,583 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:04:09,583 - INFO -       Instance 1: simile - 'as the pupil of God’s eye'
+2025-09-21 10:04:09,583 - INFO -   Processing Deuteronomy 32:11 (11/52)...
+2025-09-21 10:04:30,107 - INFO -     VALIDATING instance: Like an eagle who rouses its nestlings, Gliding down to its young, So did [God] spread wings and take them, Bear them along on pinions
+2025-09-21 10:04:31,051 - INFO -       VALIDATION PASSED: This is a genuine simile extended into an extended metaphor.  The comparison of God's actions to an eagle's care for its young is not literal; God does not have wings or physically carry his people. The imagery serves to convey God's protective and nurturing nature in a vivid and relatable way for an ANE audience.  The extension of the simile ("spread wings," "bear them along on pinions") further emphasizes the figurative nature of the description.
+2025-09-21 10:04:31,051 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 484, 'output_tokens': 367, 'fallback_used': False}
+2025-09-21 10:04:31,052 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:04:31,052 - INFO -       Instance 1: other - 'Like an eagle who rouses its nestlings, Gliding down to its young, So did [God] spread wings and take them, Bear them along on pinions'
+2025-09-21 10:04:31,053 - INFO -   Processing Deuteronomy 32:12 (12/52)...
+2025-09-21 10:04:34,482 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 409, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:04:34,482 - INFO -   Processing Deuteronomy 32:13 (13/52)...
+2025-09-21 10:04:48,231 - INFO -     VALIDATING instance: honey from the crag
+2025-09-21 10:04:49,206 - INFO -       VALIDATION PASSED: The phrase "honey from the crag" uses a cross-domain comparison, transferring the concept of abundance from an agricultural context (honey) to a harsh, unexpected environment (crag).  Paired with "oil from the flinty rock," it creates a powerful image of God's provision exceeding expectations, highlighting the miraculous nature of divine blessing. The context strongly suggests a figurative interpretation rather than a purely literal one, given the poetic nature of the passage and the emphasis on the unexpected source of sustenance.
+2025-09-21 10:04:49,207 - INFO -     VALIDATING instance: And oil from the flinty rock
+2025-09-21 10:04:50,084 - INFO -       VALIDATION PASSED: This is a genuine metaphor because it uses a cross-domain comparison.  Oil does not literally come from flinty rocks; the image conveys God's miraculous provision, drawing sustenance from an unexpected and seemingly barren source.  This aligns with the established understanding of metaphor as a comparison between unlike things to create a new, imaginative meaning.
+2025-09-21 10:04:50,085 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 520, 'output_tokens': 476, 'fallback_used': False}
+2025-09-21 10:04:50,085 - INFO -     FOUND: 2 figurative instances
+2025-09-21 10:04:50,086 - INFO -       Instance 1: metaphor - 'honey from the crag'
+2025-09-21 10:04:50,086 - INFO -       Instance 2: metaphor - 'And oil from the flinty rock'
+2025-09-21 10:04:50,086 - INFO -   Processing Deuteronomy 32:14 (14/52)...
+2025-09-21 10:05:01,081 - INFO -     VALIDATING instance: kidney fat of wheat
+2025-09-21 10:05:01,831 - INFO -       VALIDATION PASSED: Cross-domain comparison - The phrase uses the "kidney fat" of an animal, known for its richness and quality, to describe the superior quality of wheat.  This is a figurative comparison transferring a culinary/animal term to describe agricultural produce.  Wheat does not possess kidneys or fat.
+2025-09-21 10:05:01,831 - INFO -     VALIDATING instance: grape-blood
+2025-09-21 10:05:02,494 - INFO -       VALIDATION PASSED: Cross-domain comparison - The red color and life-giving properties of wine are compared to blood, creating a vivid image of abundance and vitality.  While wine is literally grape juice, the comparison emphasizes its richness and symbolic significance, not its literal composition.
+2025-09-21 10:05:02,494 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 576, 'output_tokens': 430, 'fallback_used': False}
+2025-09-21 10:05:02,495 - INFO -     FOUND: 2 figurative instances
+2025-09-21 10:05:02,495 - INFO -       Instance 1: metaphor - 'kidney fat of wheat'
+2025-09-21 10:05:02,495 - INFO -       Instance 2: metaphor - 'grape-blood'
+2025-09-21 10:05:02,495 - INFO -   Processing Deuteronomy 32:15 (15/52)...
+2025-09-21 10:05:15,140 - INFO -     VALIDATING instance: So Jeshurun grew fat and kicked
+2025-09-21 10:05:15,817 - INFO -       VALIDATION PASSED: Cross-domain comparison (people as animals).  The passage uses the imagery of a well-fed animal (fat and kicking) to represent Israel's prosperity and subsequent rebellion against God.  This is a clear figurative comparison, not a literal description of Israel's physical state.
+2025-09-21 10:05:15,817 - INFO -     VALIDATING instance: Rock of their support
+2025-09-21 10:05:16,805 - INFO -       VALIDATION PASSED: Metaphor -  The text uses "Rock" as a metaphorical descriptor for God, transferring the qualities of a rock (strength, stability, steadfastness) to describe God's nature and role as a provider of support and salvation for Israel. This is a classic example of a cross-domain comparison, transferring qualities from the physical realm to the divine.  The ANE audience would understand this as figurative language, not a literal claim that God *is* a rock.
+2025-09-21 10:05:16,805 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 523, 'output_tokens': 435, 'fallback_used': False}
+2025-09-21 10:05:16,806 - INFO -     FOUND: 2 figurative instances
+2025-09-21 10:05:16,806 - INFO -       Instance 1: metaphor - 'So Jeshurun grew fat and kicked'
+2025-09-21 10:05:16,807 - INFO -       Instance 2: metaphor - 'Rock of their support'
+2025-09-21 10:05:16,807 - INFO -   Processing Deuteronomy 32:16 (16/52)...
+2025-09-21 10:05:21,252 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 413, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:05:21,252 - INFO -   Processing Deuteronomy 32:17 (17/52)...
+2025-09-21 10:05:27,057 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 532, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:05:27,058 - INFO -   Processing Deuteronomy 32:18 (18/52)...
+2025-09-21 10:05:52,077 - INFO -     VALIDATING instance: Rock
+2025-09-21 10:05:52,756 - INFO -       VALIDATION PASSED: Metaphor -  The text uses "Rock" as a metaphorical descriptor of God, transferring the qualities of strength, stability, and refuge from the physical realm (rocks) to the divine realm.  This is a classic example of a cross-domain comparison, not a literal description.  God is not literally a rock.
+2025-09-21 10:05:52,757 - INFO -     VALIDATING instance: who begot you
+2025-09-21 10:05:53,636 - INFO -       VALIDATION PASSED: Divine Anthropomorphism -  The text uses the act of begetting, a human action, to describe God's creative role.  While God's actions are generally considered literal in the ANE context, attributing the act of begetting to a rock (a metaphor for God) is inherently figurative because rocks do not beget.  This is a clear case of anthropomorphism, where a human characteristic is applied to a divine being.
+2025-09-21 10:05:53,636 - INFO -     VALIDATING instance: who labored to bring you forth
+2025-09-21 10:05:54,546 - INFO -       VALIDATION PASSED: Cross-domain comparison - The passage uses the imagery of human labor and childbirth ("labored to bring you forth") to describe God's act of creation.  This is a genuine figurative comparison between the human experience of bringing forth life and the divine act of creation, emphasizing the effort and intimacy involved.  It's not a literal description of God's creative process in a physical sense, but rather a metaphorical one designed to convey the intensity of God's involvement.
+2025-09-21 10:05:54,546 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 414, 'output_tokens': 606, 'fallback_used': False}
+2025-09-21 10:05:54,547 - INFO -     FOUND: 3 figurative instances
+2025-09-21 10:05:54,547 - INFO -       Instance 1: metaphor - 'Rock'
+2025-09-21 10:05:54,547 - INFO -       Instance 2: other - 'who begot you'
+2025-09-21 10:05:54,548 - INFO -       Instance 3: other - 'who labored to bring you forth'
+2025-09-21 10:05:54,548 - INFO -   Processing Deuteronomy 32:19 (19/52)...
+2025-09-21 10:06:00,399 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 417, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:06:00,399 - INFO -   Processing Deuteronomy 32:20 (20/52)...
+2025-09-21 10:06:14,891 - INFO -     VALIDATING instance: I will hide My countenance from them
+2025-09-21 10:06:15,620 - INFO -       VALIDATION PASSED: Divine anthropomorphism;  God's "countenance" is a body part, and since God is understood as incorporeal in the relevant theological framework, the act of "hiding" it is necessarily a metaphorical representation of withdrawing divine favor and presence.  This aligns with the provided guidelines for classifying divine anthropomorphisms as metaphorical.
+2025-09-21 10:06:15,620 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 505, 'output_tokens': 247, 'fallback_used': False}
+2025-09-21 10:06:15,621 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:06:15,622 - INFO -       Instance 1: metaphor - 'I will hide My countenance from them'
+2025-09-21 10:06:15,622 - INFO -   Processing Deuteronomy 32:21 (21/52)...
+2025-09-21 10:06:25,741 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 514, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:06:25,742 - INFO -   Processing Deuteronomy 32:22 (22/52)...
+2025-09-21 10:06:56,559 - INFO -     VALIDATING instance: a fire has flared in My wrath
+2025-09-21 10:06:57,181 - INFO -       VALIDATION PASSED: Cross-domain comparison -  God's wrath (abstract) is compared to a destructive fire (concrete), emphasizing its intensity and consuming nature.  This is a clear and accepted example of a metaphor within the established guidelines.
+2025-09-21 10:06:57,181 - INFO -     VALIDATING instance: And burned to the bottom of Sheol
+2025-09-21 10:06:58,012 - INFO -       VALIDATION PASSED: Hyperbole - The phrase depicts God's wrath as a fire that extends beyond the physical world, reaching even to the underworld (Sheol).  Burning "to the bottom of Sheol" is an exaggeration emphasizing the all-consuming and inescapable nature of divine judgment, a common literary device used to convey the intensity of God's anger.  The image is clearly figurative, not a literal description of a physical fire.
+2025-09-21 10:06:58,013 - INFO -     VALIDATING instance: Eaten down to the base of the hills
+2025-09-21 10:06:58,731 - INFO -       VALIDATION PASSED: Hyperbole - The image of fire consuming "the base of the hills" is a clear exaggeration used to emphasize the immense and all-encompassing nature of God's wrath.  While fire can damage hillsides, it cannot literally consume their foundations. The hyperbole effectively conveys the devastating power of divine judgment.
+2025-09-21 10:06:58,732 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 506, 'output_tokens': 628, 'fallback_used': False}
+2025-09-21 10:06:58,733 - INFO -     FOUND: 3 figurative instances
+2025-09-21 10:06:58,733 - INFO -       Instance 1: metaphor - 'a fire has flared in My wrath'
+2025-09-21 10:06:58,733 - INFO -       Instance 2: hyperbole - 'And burned to the bottom of Sheol'
+2025-09-21 10:06:58,734 - INFO -       Instance 3: hyperbole - 'Eaten down to the base of the hills'
+2025-09-21 10:06:58,734 - INFO -   Processing Deuteronomy 32:23 (23/52)...
+2025-09-21 10:07:26,870 - ERROR - Invalid JSON response: Based on the provided guidelines for identifying figurative language, particularly the conservative approach to divine anthropomorphisms in the ANE context:
+
+1.  **"I will sweep misfortunes on them" (אַסְפֶּ֥ה עָלֵ֖ימוֹ רָע֑וֹת):** The verb "sweep" (אַסְפֶּה) in this context describes a divine action of bringing or accumulating misfortunes. According to the guidelines, divine anthropomorphisms (like God performing actions) are to be considered LITERAL in the ANE context unless they refer to God's body. This phrase describes an action, not a body part, and is therefore treated as a literal/idiomatic divine action.
+
+2.  **"Use up My arrows on them" (חִצַּ֖י אֲכַלֶּה־בָּֽם):** The phrase "My arrows" (חִצַּ֖י) refers to weapons attributed to God. In the ANE worldview, deities were often depicted as warriors possessing actual weapons. The guideline states that divine anthropomorphisms are LITERAL in the ANE context unless they refer to God's body. "Arrows" are not a part of God's body. Therefore, within the strict interpretation of these guidelines, God possessing "arrows" is considered a literal attribute of the divine warrior, not a figurative expression.
+
+Given these interpretations based on the specific instructions, no figurative language is identified in this text.
+
+[]
+2025-09-21 10:07:26,871 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 406, 'output_tokens': 309, 'fallback_used': False}
+2025-09-21 10:07:26,871 - INFO -   Processing Deuteronomy 32:24 (24/52)...
+2025-09-21 10:07:32,927 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 496, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:07:32,928 - INFO -   Processing Deuteronomy 32:25 (25/52)...
+2025-09-21 10:07:44,257 - INFO -     VALIDATING instance: The sword shall deal death/bereave
+2025-09-21 10:07:45,185 - INFO -       VALIDATION PASSED: Personification - The sword, an inanimate object, is given the human action of "dealing death" (שכל - shakal, which implies bereavement beyond simple killing).  This imbues the sword with agency and emphasizes the devastating, far-reaching consequences of war, going beyond a simple description of the sword's function.  The use of שכל (shakal) further supports this, as it carries connotations of loss and grief typically associated with sentient beings.
+2025-09-21 10:07:45,186 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 467, 'output_tokens': 241, 'fallback_used': False}
+2025-09-21 10:07:45,186 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:07:45,186 - INFO -       Instance 1: personification - 'The sword shall deal death/bereave'
+2025-09-21 10:07:45,186 - INFO -   Processing Deuteronomy 32:26 (26/52)...
+2025-09-21 10:07:53,584 - ERROR - Invalid JSON response: This text describes a direct divine intention to annihilate a group and erase their memory from humankind.
+
+*   **אָמַ֖רְתִּי (amarti) - "I said"**: This is a standard divine anthropomorphism, indicating God's speech or intent. As per instructions, these are considered literal in the ANE context unless they refer to God's body parts.
+*   **אַפְאֵיהֶ֑ם (af'ehem) - "I will reduce them to naught"**: While the precise etymology is debated, the meaning conveys complete destruction or annihilation. This is a direct statement of action, not a figurative comparison.
+*   **אַשְׁבִּ֥יתָה מֵאֱנ֖וֹשׁ זִכְרָֽם (ashbita me'enosh zikhram) - "I will make their memory cease among humankind"**: This is a direct statement of the intended outcome of the destruction – that no trace or remembrance of them will remain. It describes a literal consequence of utter annihilation, not a figurative way of speaking about their characteristics or qualities.
+
+The text does not employ animal metaphors, nature imagery for human qualities, cross-domain comparisons, or other forms of figurative language as defined by the provided criteria.
+
+[]
+2025-09-21 10:07:53,584 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 439, 'output_tokens': 273, 'fallback_used': False}
+2025-09-21 10:07:53,585 - INFO -   Processing Deuteronomy 32:27 (27/52)...
+2025-09-21 10:08:04,529 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 507, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:08:04,529 - INFO -   Processing Deuteronomy 32:28 (28/52)...
+2025-09-21 10:08:09,193 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 434, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:08:09,194 - INFO -   Processing Deuteronomy 32:29 (29/52)...
+2025-09-21 10:08:11,222 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 411, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:08:11,223 - INFO -   Processing Deuteronomy 32:30 (30/52)...
+2025-09-21 10:08:27,761 - INFO -     VALIDATING instance: their Rock
+2025-09-21 10:08:28,452 - INFO -       VALIDATION PASSED: Metaphor -  The text uses "Rock" as a metaphorical descriptor for God, transferring the qualities of strength, stability, and protection associated with a rock to God. This is a common and well-established metaphor in biblical and ancient Near Eastern literature, not a literal description of God's physical form.
+2025-09-21 10:08:28,453 - INFO -     VALIDATING instance: had sold them
+2025-09-21 10:08:29,278 - INFO -       VALIDATION PASSED: Commercial metaphor - The description of God's abandonment of his people as "selling" them is a figurative use of commercial language to convey the idea of a deliberate relinquishment of protection and ownership.  It's not a literal transaction, but a metaphorical one that uses a familiar economic concept to express a spiritual reality.  This fits the "Commercial → Spiritual" transfer category.
+2025-09-21 10:08:29,279 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 500, 'output_tokens': 394, 'fallback_used': False}
+2025-09-21 10:08:29,279 - INFO -     FOUND: 2 figurative instances
+2025-09-21 10:08:29,281 - INFO -       Instance 1: metaphor - 'their Rock'
+2025-09-21 10:08:29,282 - INFO -       Instance 2: metaphor - 'had sold them'
+2025-09-21 10:08:29,283 - INFO -   Processing Deuteronomy 32:31 (31/52)...
+2025-09-21 10:08:43,567 - INFO -     VALIDATING instance: our Rock, their rock
+2025-09-21 10:08:44,437 - INFO -       VALIDATION PASSED: Metaphor -  The passage uses "rock" (צוּר) as a metaphor for divine strength and protection, contrasting the God of Israel ("our Rock") with the false gods or inadequate sources of strength of their enemies ("their rock"). This is a clear cross-domain comparison (divine being compared to a natural object) establishing a figurative contrast rather than a literal one.  The context makes the intended meaning clear.
+2025-09-21 10:08:44,438 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 455, 'output_tokens': 234, 'fallback_used': False}
+2025-09-21 10:08:44,438 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:08:44,439 - INFO -       Instance 1: metaphor - 'our Rock, their rock'
+2025-09-21 10:08:44,439 - INFO -   Processing Deuteronomy 32:32 (32/52)...
+2025-09-21 10:08:58,326 - INFO -     VALIDATING instance: Ah! The vine for them is from Sodom, From the vineyards of Gomorrah; The grapes for them are poison, A bitter growth their clusters.
+2025-09-21 10:08:59,214 - INFO -       VALIDATION PASSED: Extended metaphor employing cross-domain comparison (people as a vine) and agricultural imagery to convey the wickedness and destructive nature of a group of people.  The reference to Sodom and Gomorrah is not literal geographic origin but symbolic of extreme moral corruption.  The "grapes" and "clusters" are not literal fruit but represent the consequences or actions of this group.
+2025-09-21 10:08:59,215 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 496, 'output_tokens': 415, 'fallback_used': False}
+2025-09-21 10:08:59,216 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:08:59,216 - INFO -       Instance 1: metaphor - 'Ah! The vine for them is from Sodom, From the vineyards of Gomorrah; The grapes for them are poison, A bitter growth their clusters.'
+2025-09-21 10:08:59,217 - INFO -   Processing Deuteronomy 32:33 (33/52)...
+2025-09-21 10:09:13,274 - INFO -     VALIDATING instance: Their wine is the venom of asps
+2025-09-21 10:09:14,129 - INFO -       VALIDATION PASSED: Cross-domain comparison - The verse uses "wine" (a consumable substance) to represent the destructive influence of the wicked, directly comparing it to "the venom of asps" (a deadly poison).  This is a genuine metaphor transferring the qualities of poison to the effects of the wicked's actions.
+2025-09-21 10:09:14,129 - INFO -     VALIDATING instance: The pitiless poison of vipers.
+2025-09-21 10:09:14,872 - INFO -       VALIDATION PASSED: Metaphor - The phrase uses the "head of vipers" (an idiom for viper venom) to describe the wine's deadly and cruel nature, creating a figurative comparison between the wine's effect and the venom of vipers.  This is a clear cross-domain comparison (substance/effect to animal product) establishing a metaphorical meaning rather than a literal description.
+2025-09-21 10:09:14,872 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 411, 'output_tokens': 454, 'fallback_used': False}
+2025-09-21 10:09:14,872 - INFO -     FOUND: 2 figurative instances
+2025-09-21 10:09:14,873 - INFO -       Instance 1: metaphor - 'Their wine is the venom of asps'
+2025-09-21 10:09:14,873 - INFO -       Instance 2: metaphor - 'The pitiless poison of vipers.'
+2025-09-21 10:09:14,874 - INFO -   Processing Deuteronomy 32:34 (34/52)...
+2025-09-21 10:09:22,788 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 412, 'output_tokens': 1, 'fallback_used': False}
+2025-09-21 10:09:22,788 - INFO -   Processing Deuteronomy 32:35 (35/52)...
+2025-09-21 10:09:42,441 - INFO -     VALIDATING instance: And destiny rushes upon them.
+2025-09-21 10:09:43,171 - INFO -       VALIDATION PASSED: Personification - The abstract concept of "destiny" or "fate" ("עתידות" - `atidot`) is given the human action of "rushing" (`חָשׁ`), imbuing it with agency and emphasizing its imminent and unstoppable nature.  This is a clear example of personification, fitting within the established criteria for figurative language.
+2025-09-21 10:09:43,172 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 481, 'output_tokens': 673, 'fallback_used': False}
+2025-09-21 10:09:43,172 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:09:43,172 - INFO -       Instance 1: personification - 'And destiny rushes upon them.'
+2025-09-21 10:09:43,173 - INFO -   Processing Deuteronomy 32:36 (36/52)...
+2025-09-21 10:10:00,200 - INFO -     VALIDATING instance: might is gone (lit. hand is gone)
+2025-09-21 10:10:01,048 - INFO -       VALIDATION PASSED: Metonymy - The use of "hand" (יָד) to represent "might" or "strength" is a recognized metonymy.  The depletion of physical strength is used to represent the complete loss of power, a clear figurative transfer from the concrete (hand) to the abstract (might).  This is not a literal description of a missing body part of the people, but a figurative representation of their weakened state.
+2025-09-21 10:10:01,049 - INFO -     VALIDATING instance: neither bond nor free is left (lit. restrained and left/abandoned)
+2025-09-21 10:10:01,799 - INFO -       VALIDATION PASSED: Merism - The phrase uses two contrasting social statuses ("restrained" and "free") to comprehensively describe the complete absence of anyone, regardless of social standing.  This is a figurative use of language to emphasize the utter desolation and lack of anyone remaining.  It's not a literal statement that there are no people in a specific social category.
+2025-09-21 10:10:01,800 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 526, 'output_tokens': 437, 'fallback_used': False}
+2025-09-21 10:10:01,800 - INFO -     FOUND: 2 figurative instances
+2025-09-21 10:10:01,800 - INFO -       Instance 1: metonymy - 'might is gone (lit. hand is gone)'
+2025-09-21 10:10:01,801 - INFO -       Instance 2: other - 'neither bond nor free is left (lit. restrained and left/abandoned)'
+2025-09-21 10:10:01,801 - INFO -   Processing Deuteronomy 32:37 (37/52)...
+2025-09-21 10:10:09,828 - INFO -     VALIDATING instance: The rock
+2025-09-21 10:10:10,527 - INFO -       VALIDATION PASSED: Metaphor - The text uses "rock" to describe false gods, contrasting their perceived strength and security with the true God's role as a rock of refuge.  This is a clear cross-domain comparison (abstract concept of security/strength to a physical object) and ironic juxtaposition, making it a valid metaphor.
+2025-09-21 10:10:10,527 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 405, 'output_tokens': 218, 'fallback_used': False}
+2025-09-21 10:10:10,528 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:10:10,529 - INFO -       Instance 1: metaphor - 'The rock'
+2025-09-21 10:10:10,529 - INFO -   Processing Deuteronomy 32:38 (38/52)...
+2025-09-21 10:10:23,394 - INFO -     VALIDATING instance: And let them be a shield unto you!
+2025-09-21 10:10:23,951 - INFO -       VALIDATION PASSED: Abstract concept (protection) compared to a concrete object (shield) representing a cross-domain comparison.  The context, a rhetorical challenge questioning the efficacy of the pagan gods' protection, strongly supports the figurative interpretation.
+2025-09-21 10:10:23,951 - INFO -     API Metadata: {'model_used': 'gemini-2.5-flash', 'context': 'poetic_blessing', 'retries': 0, 'input_tokens': 495, 'output_tokens': 245, 'fallback_used': False}
+2025-09-21 10:10:23,951 - INFO -     FOUND: 1 figurative instances
+2025-09-21 10:10:23,952 - INFO -       Instance 1: metaphor - 'And let them be a shield unto you!'
+2025-09-21 10:10:23,952 - INFO -   Processing Deuteronomy 32:39 (39/52)...
