@@ -119,18 +119,24 @@ class MetaphorValidator:
                     self._log_validation_data(figurative_language_id, validation_data)
                     return False, reason, None, None
                 elif response_text.startswith("RECLASSIFY:"):
-                    # Format: "RECLASSIFY: personification - reason"
+                    # Handles "RECLASSIFY: type - reason" or "RECLASSIFY: type"
                     content = response_text[11:].strip()
                     validation_data['validation_decision'] = 'RECLASSIFY'
-                    if " - " in content:
-                        corrected_type, reason = content.split(" - ", 1)
-                        validation_data['validation_reason'] = reason
-                        self._log_validation_data(figurative_language_id, validation_data)
-                        return True, reason, None, corrected_type.strip()
+                    
+                    parts = content.split(" - ", 1)
+                    potential_type = parts[0].strip().lower().rstrip('.:')
+                    allowed_types = {'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
+
+                    if potential_type in allowed_types:
+                        corrected_type = potential_type
+                        reason = parts[1].strip() if len(parts) > 1 else f"Reclassified to {corrected_type}"
                     else:
-                        validation_data['validation_reason'] = content
-                        self._log_validation_data(figurative_language_id, validation_data)
-                        return True, content, None, "personification"  # Default assumption
+                        corrected_type = "other"
+                        reason = content
+
+                    validation_data['validation_reason'] = reason
+                    self._log_validation_data(figurative_language_id, validation_data)
+                    return True, reason, None, corrected_type
                 else:
                     # Fallback parsing
                     if "RECLASSIFY" in response_text.upper():
