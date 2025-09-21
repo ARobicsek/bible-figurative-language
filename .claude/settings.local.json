@@ -28,7 +28,12 @@
       "Bash(timeout:*)",
       "Read(//c/**)",
       "Bash(taskkill:*)",
-      "Bash(wmic:*)"
+      "Bash(wmic:*)",
+      "Bash(grep:*)",
+      "WebFetch(domain:www.sefaria.org)",
+      "Bash(powershell:*)",
+      "Bash(tasklist:*)",
+      "Bash(cmd /c:*)"
     ],
     "deny": [],
     "ask": []

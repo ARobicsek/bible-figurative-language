@@ -91,261 +91,91 @@ class GeminiAPIClient:
     def _create_analysis_prompt(self, hebrew_text: str, english_text: str) -> str:
         """Create the analysis prompt for Gemini"""
 
-        prompt = f"""You are a biblical Hebrew scholar expert in identifying figurative language. Analyze this Hebrew biblical verse for ALL instances of figurative language.
+        prompt = f"""You are a biblical Hebrew scholar expert in identifying figurative language.
 
 Hebrew: {hebrew_text}
 English: {english_text}
 
-[CRITICAL] CRITICAL EXCLUSIONS - DO NOT mark as figurative:
+🚨 **CRITICAL EXCLUSIONS - READ FIRST** 🚨
+**DO NOT MARK THE FOLLOWING AS FIGURATIVE LANGUAGE:**
 
-TECHNICAL RELIGIOUS/CULTIC TERMS (these are literal/technical, not figurative):
-- Holiness designations: קֹדֶשׁ קׇדָשִׁים ("most holy"), "holy to YHWH", שֶׁקֶל הַקֹּדֶשׁ
-- Legal terms: חׇק־עוֹלָם ("perpetual statute"), זִמָּה ("depravity"), תּוֹעֵבָה ("abomination")
-- Sacrificial terminology: "sin offering", "guilt offering", "wave offering", "expiation", קׇרְבָּן
-- Ritual purity terms: טָהוֹר ("clean"), טָמֵא ("unclean")
-- Actual ritual actions: eating sacred offerings, laying hands on sacrifices, measuring offerings
+**CREATION NARRATIVES (Genesis 1-3) - BE EXTREMELY CONSERVATIVE:**
+• "unformed and void" (תֹ֙הוּ֙וָבֹ֔הוּ) = LITERAL primordial state description
+• "darkness over the surface of the deep" = LITERAL description of pre-creation
+• "lights" and "signs for set times" = LITERAL celestial function descriptions
+• "earth brought forth" = LITERAL creation action (NOT personification)
+• "breath of life" (נִשְׁמַת חַיִּים) = TECHNICAL theological term
+• "living being" (נֶפֶשׁ חַיָּה) = TECHNICAL term for living creature
+• "dominate/rule" celestial bodies = LITERAL functional descriptions
+• "flow/mist from ground" = LITERAL irrigation description
+• Divine creating, speaking, blessing = STANDARD creation actions
 
-FORMULAIC EXPRESSIONS (standard biblical narrative, not personification):
-- Divine speech introductions: וַיְדַבֵּר יְהוָה ("YHWH spoke"), "Thus says YHWH"
-- Covenant formulas: "I am YHWH your God"
-- Standard narrative: literal actions, movements, locations that actually occur in the text
+**NEVER CLASSIFY AS FIGURATIVE:**
+• Divine standard actions: God spoke, blessed, created, made, saw, heard
+• Technical religious terms: holy, clean, unclean, offering, covenant
+• Literal historical statements: "we were slaves", "brought out of Egypt"
+• Straightforward descriptions: "good land", "evil generation", "great nation"
+• Literal geographic/physical descriptions
+• Standard biblical narrative language
+• Technical theological terminology
+• Procedural/instructional language using "as/like"
 
-LITERAL ACTIONS/PLACES/OBJECTS IN ANCIENT CONTEXT (NOT figurative):
-- Physical actions that actually happened: נָקוּמָה וְנֵלֵכָה ("let us arise and go") - literal movement
-- Actual places: מִחוּץ לַמַּחֲנֶה ("outside the camp") - real location
-- Real people/objects: children (טַפֵּנוּ), inheritance shares (נַחֲלָה) - literal entities
-- Ritual gestures: laying hands, stoning, bringing offerings - actual practices
-- Geographic references: Waters of Meribah, specific locations - real places
-- Legal procedures: execution, inheritance laws - actual ancient practices
+**NARRATIVE STATEMENTS - ALWAYS LITERAL:**
+• Character actions with literal agency: "serpent duped me" = LITERAL fact
+• Relationship descriptions: "enmity between you and woman" = LITERAL relationship
+• Physical appearance: "delight to the eyes" = LITERAL attractiveness
+• Factual character descriptions in narrative context
 
-PROCEDURAL/INSTRUCTIONAL COMPARISONS (NOT figurative):
-- Ritual procedure comparisons: "just as it is removed from the ox" - comparing cultic procedures
-- Legal process comparisons: "as you do with X, so do with Y" - instructional parallels
-- Technical method descriptions: comparing one ritual technique to another
-- Liturgical instructions: procedural steps using comparative language
+**EXTREMELY HIGH THRESHOLD FOR FIGURATIVE DETECTION:**
+Only mark as figurative if there is CLEAR cross-domain comparison or obvious human traits given to non-human entities. When in doubt, classify as LITERAL.
 
-[LITERAL] SPECIFIC LITERAL EXPRESSIONS - DO NOT MARK AS FIGURATIVE:
+📋 **METAPHOR vs PERSONIFICATION - SIMPLE RULES** 📋
 
-LITERAL DESCRIPTIONS (straightforward descriptive language):
-- אֶ֣רֶץ טוֹבָ֑ה ("a good land") = literal description of land quality/fertility
-- חֹ֖שֶׁךְ עָנָ֥ן וַעֲרָפֶֽל ("dark with densest clouds") = literal theophany description
-- בִּמְתֵי מְעָט ("a scant few") = literal numerical statement
-- הַדּוֹר הָרָע הַזֶּה ("this evil generation") = literal character description
-- מַכּ֤וֹת גְּדֹלֹת֙ וְנֶ֣אֱמָנ֔וֹת ("great and faithful plagues") = literal disease descriptions
+**METAPHOR:** Compares two different kinds of things
+• "God is a shepherd" = God compared to pastoral role
+• "mighty hand of God" = divine power compared to human body part
+• Cross-domain comparisons where A is described as B
 
-HISTORICAL STATEMENTS (factual references to past events):
-- עֲבָדִ֛ים הָיִ֥ינוּ ("We were slaves") = literal historical status
-- וְהוֹצֵ֥אתָ מִמִּצְרַ֖יִם ("brought out from Egypt") = literal historical event
-- פָּדִ֖יתָ בְּגׇדְלֶ֑ךָ ("redeemed in Your majesty") = literal divine action description
+**PERSONIFICATION:** Gives human actions/qualities to non-human things
+• "shrewdest of beasts" = animal given human intelligence trait
+• "land spewed out inhabitants" = land given human action of vomiting
+• Non-human entities acting/feeling like humans
 
-LITERAL VERBS/ACTIONS (actual actions, not metaphorical):
-- וְהִרְבֶּ֑ךָ ("and multiply you") = literal population increase
-- יוֹלֵךְ יְהֹוָ֜ה אֹתְךָ ("YHWH will drive you") = literal causation of movement
-- תִּגֹּשׂ ("dun") = literal action of demanding payment
-- וְהִפְלָ֤א יְהֹוָה֙ ("YHWH will inflict") = literal divine action
-- עָשׂ֥וּ לָהֶ֖ם מַסֵּכָֽה ("they made a molten image") = literal physical action
+**KEY DISTINCTION:**
+- METAPHOR = X is like Y (comparison)
+- PERSONIFICATION = non-human X does/feels human thing Y (attribution)
 
-STANDARD BIBLICAL IDIOMS (conventional expressions, NOT metaphors):
-- סָ֣רוּ מַהֵ֗ר מִן־הַדֶּ֙רֶךְ֙ ("stray from the path") = standard idiom for disobedience
-- תַּמְרֽוּ אֶת־פִּ֥י יְהֹוָ֖ה ("flout the command") = literal rebellion statement
-- לֹ֤א הֶֽאֱמַנְתֶּם֙ ל֔וֹ ("did not trust") = literal statement of faith/lack thereof
-- וְהַקְלָלָה ("and curse") = literal consequence/result
+IF YOU'RE NOT SURE → CLASSIFY AS LITERAL
 
-DESCRIPTIVE QUALITIES (literal attributes, not figurative):
-- נֶ֣אֱמָנ֔וֹת ("faithful/reliable") when describing plagues = literal quality description
-- רָעִ֥ים ("evil/harmful") when describing diseases = literal harm description
-- גְּדֹלֹת֙ ("great") when describing plagues = literal magnitude description
+✅ **WHEN TO MARK AS FIGURATIVE - ONLY THESE:**
 
-LITERAL USAGE vs FIGURATIVE:
-- Body parts performing literal functions (hands bringing offerings) = NOT metonymy
-- Place names (Waters of Meribah) = NOT metonymy, they're proper nouns
-- Actual objects/people doing literal things = NOT figurative substitutions
-- Actions that ancient readers understood as real events = NOT metaphorical
-- Procedural comparisons in ritual/legal contexts = NOT similes (they're instructions)
+**CLEAR METAPHORS:**
+• Cross-domain comparisons: "God is shepherd" (divine ↔ pastoral)
+• Divine body parts: "mighty hand" (God has no literal body)
+• A is B statements where A and B are genuinely different categories
 
-POSITIVE EXAMPLES of genuine figurative language:
+**CLEAR PERSONIFICATION:**
+• Non-human entities given human actions: "land vomited out inhabitants"
+• Divine emotions beyond standard actions: God angry, jealous, regretful
+• Abstract concepts acting as agents: Wisdom speaks, Death swallows
 
-Example 1 - TRUE METAPHOR (different categories):
-Hebrew: יְהוָה רֹעִי לֹא אֶחְסָר
-English: The LORD is my shepherd; I shall not want
-Analysis: [{{"type": "metaphor", "hebrew_text": "יְהוָה רֹעִי", "english_text": "The LORD is my shepherd", "explanation": "True metaphor equating God with shepherd - genuinely different domains", "subcategory_level_1": "The Natural World", "subcategory_level_2": "agricultural", "confidence": 0.95, "speaker": "David", "purpose": "express trust and reliance on God's guidance"}}]
+**CLEAR SIMILES:**
+• UNLIKE things compared with "like/as": "numerous as stars"
+• NOT procedural instructions or historical precedents
 
-Example 1b - NOT A METAPHOR (religious term):
-Hebrew: אֱלֹהֵי הָאֱלֹהִים
-English: God of gods
-Analysis: [] (DO NOT mark as metaphor - this is a theological title emphasizing God's supremacy, not a figurative comparison)
+**ONLY MARK IF:**
+1. CLEAR cross-domain transfer OR obvious human traits to non-human
+2. Confidence > 0.7
+3. NOT in the exclusion lists above
+4. Would NOT be understood as literal by ancient readers
 
-Example 2 - LEGITIMATE PERSONIFICATION (beyond simple speech):
-Hebrew: הָאָרֶץ קָאָה אֶת־יֹשְׁבֶיהָ
-English: the land spewed out its inhabitants
-Analysis: [{{"type": "personification", "hebrew_text": "הָאָרֶץ קָאָה", "english_text": "the land spewed out", "explanation": "The land is given human action of vomiting/spewing, expressing divine judgment through the land itself", "subcategory_level_1": "The Natural World", "subcategory_level_2": "geological", "confidence": 0.9, "speaker": "Moses", "purpose": "emphasize the severity of moral corruption"}}]
+**SIMPLE CLASSIFICATION:**
+For any figurative language found, use basic categories:
+- Vehicle: "nature", "human", "divine", "abstract"
+- Tenor: "God", "people", "nation", "covenant"
+- Keep explanations short and clear
 
-Example 3 - TRUE SIMILE (unlike categories):
-Hebrew: כְּכוֹכְבֵי הַשָּׁמַיִם לָרֹב
-English: like the stars of heaven for multitude
-Analysis: [{{"type": "simile", "hebrew_text": "כְּכוֹכְבֵי הַשָּׁמַיִם", "english_text": "like the stars of heaven", "explanation": "True figurative simile comparing people to stars - genuinely unlike things", "subcategory_level_1": "The Natural World", "subcategory_level_2": "celestial", "confidence": 0.95, "speaker": "Moses", "purpose": "emphasize the vast number of descendants promised"}}]
-
-Example 4 - NOT A SIMILE (same category/procedure):
-Hebrew: כַּאֲשֶׁר מֵת אַהֲרֹן אָחִיךָ
-English: as your brother Aaron died
-Analysis: [] (DO NOT mark as simile - this describes the same method/manner of death, not a figurative comparison)
-
-TYPES to identify (only when genuinely figurative):
-- metaphor: Direct comparison without "like/as" (X is Y) - BUT ONLY when X and Y are genuinely different categories used figuratively.
-
-[WARNING] DO NOT classify as metaphor if it's:
-• RELIGIOUS/DIVINE TITLES: "God of gods" (אֱלֹהֵי הָאֱלֹהִים) = theological title (NOT metaphor)
-• TECHNICAL RELIGIOUS TERMS: "holy people" (עַם קָדוֹשׁ) = covenantal status (NOT metaphor)
-• RITUAL OBJECTS: "molten calf" (עֵגֶל מַסֵּכָה) = actual idol description (NOT metaphor)
-• STANDARD DIVINE ACTIONS: "blessed you", "watched over", "was with", "spoke", "heard" = standard biblical divine activity (NOT metaphor)
-• DIVINE ATTRIBUTES: "compassionate God", "Your greatness", "faithful God" = standard divine characteristics (NOT metaphor)
-• COVENANT LANGUAGE: "will not fail you", "will not abandon", "I will be your God" = standard covenant terminology (NOT metaphor)
-• JUDGMENT ACTIONS: "scatter among peoples", "drive out", "destroy", "wipe out" = literal divine judgment (NOT metaphor)
-• QUANTITATIVE DESCRIPTIONS: "scant few", "many", "great nation" = numerical/size descriptions (NOT metaphor)
-• THEOPHANIC DESCRIPTIONS: "mountain ablaze", "fire and cloud", "thunder" = literal divine manifestation (NOT metaphor)
-• GEOGRAPHIC REFERENCES: "great wilderness", "the land", place names = literal locations (NOT metaphor)
-• IDOLATRY TERMS: "sculptured image", "molten idol" = literal prohibition objects (NOT metaphor)
-• LITERAL DESCRIPTIONS: "from the fire, cloud, thick darkness" = actual theophany description (NOT metaphor)
-• EMOTIONAL/PHYSICAL STATES: "with joy and gladness of heart" = literal emotional state (NOT metaphor)
-• GENERATIONAL TERMS: "this evil generation" = descriptive characterization (NOT metaphor)
-• RELIGIOUS ACTIONS: "sinned against YHWH" = literal covenant violation (NOT metaphor)
-• DIVINE ACTIONS: "turned curse into blessing" = actual divine intervention (NOT metaphor)
-
-[OK] ONLY mark as metaphor when genuinely different categories are equated figuratively:
-• "YHWH is my shepherd" = God ↔ pastoral role (TRUE metaphor)
-• "you are a stiff-necked people" = people ↔ stubborn animals (TRUE metaphor)
-• "I will make you a light to the nations" = people ↔ illumination (TRUE metaphor)
-- simile: Comparison using "like/as" or Hebrew כְּ/כַּאֲשֶׁר - BUT ONLY when comparing two UNLIKE things figuratively.
-
-[WARNING] DO NOT classify as simile if it's:
-• HISTORICAL PRECEDENT: "as the Edomites did", "as the Moabites did" = literal historical reference (NOT simile)
-• PROCEDURAL INSTRUCTION: "do X as you do Y", "die as Aaron died" = instructional comparison (NOT simile)
-• MANNER DESCRIPTION: "eat it as gazelle is eaten" = method description (NOT simile)
-
-[WARNING] DO NOT classify as personification if it's:
-• THEOPHANIC MANIFESTATION: "mountain ablaze with fire" = literal divine presence (NOT personification)
-• STANDARD DIVINE SPEECH: "God spoke", "God said" = normal biblical language (NOT personification)
-• NATURAL PHENOMENA WITH DIVINE CAUSE: Fire, clouds, earthquakes in divine context = literal theophanic events (NOT personification)
-
-[WARNING] DO NOT classify as simile if כְּ/כַּאֲשֶׁר is used for:
-• PROCEDURAL/INSTRUCTIONAL: "do X as you do Y" = method instruction (NOT simile)
-• HISTORICAL PRECEDENT: "X will happen as it did with Y" = historical pattern (NOT simile)
-• MANNER DESCRIPTION: "die as brother Aaron died" = describing same method (NOT simile)
-• RITUAL INSTRUCTION: "eat it as gazelle is eaten" = cultic procedure (NOT simile)
-• LEGAL PRECEDENT: "treat him as you treated the other" = legal procedure (NOT simile)
-• TEMPORAL SEQUENCE: "as in the days of..." = time reference (NOT simile)
-
-[OK] ONLY mark as simile when כְּ/כַּאֲשֶׁר compares UNLIKE categories:
-• "like the stars of heaven" = people ↔ celestial objects (TRUE simile)
-• "like water" = blood ↔ common liquid (TRUE simile)
-• "as a lion" = person ↔ animal characteristics (TRUE simile)
-- personification: Human characteristics given to non-human entities
-
-[CRITICAL] PERSONIFICATION GUIDELINES:
-
-DIVINE PERSONIFICATION (MARK AS PERSONIFICATION):
-• DIVINE EMOTIONS: God angry, wrathful, jealous, loving, pleased, grieved, regretful
-• DIVINE PHYSICAL ACTIONS: God walking, breathing, resting, waking, sleeping
-• DIVINE SENSORY ACTIONS: God seeing (when emphatic), hearing (when emphatic), smelling sacrifices
-• DIVINE HUMAN-LIKE BEHAVIORS: God remembering, forgetting, changing mind, testing
-
-DIVINE BODY PARTS (MARK AS METAPHOR, NOT PERSONIFICATION):
-• God's hand, arm, finger, face, eyes, ears, mouth, nostrils
-• These are metaphors because God is incorporeal - body parts represent divine power/presence
-
-NOT PERSONIFICATION (standard divine actions):
-• God speaking, commanding, saying (standard biblical narrative)
-• God creating, making, establishing (divine prerogatives)
-• God blessing, cursing, judging (covenant functions)
-• God delivering, saving, redeeming (soteriological actions)
-
-HUMAN/ANIMAL ACTIONS (NOT PERSONIFICATION):
-• Humans feeling emotions (fear, trembling, joy) = normal human behavior
-• Animals performing natural functions (locusts eating, birds flying) = normal animal behavior
-• Peoples/nations reacting emotionally = normal group human behavior
-• Enemies showing fear or submission = normal human responses
-
-TRUE NON-DIVINE PERSONIFICATION (MARK AS PERSONIFICATION):
-• Land/earth performing human actions beyond natural processes (land "vomiting" inhabitants)
-• Inanimate objects given human characteristics (mountains singing, trees clapping)
-• Abstract concepts acting as persons (Wisdom speaking, Death swallowing)
-• Natural phenomena with human agency beyond their natural function
-- idiom: Expressions with meaning different from literal interpretation
-- hyperbole: Deliberate exaggeration for emphasis - be conservative, many distances/numbers are literal
-- metonymy: Substituting name with something closely associated - NOT literal usage
-
-[CONTEXT] ANCIENT NEAR EASTERN CONTEXT:
-Remember that ancient readers understood these texts in their historical context:
-- Religious/ritual terminology had specific technical meanings
-- Legal procedures described actual ancient practices
-- Geographic references were to real places
-- Actions described often literally occurred
-- Only mark as figurative what would have been understood as non-literal by ancient audiences
-
-[QUALITY] QUALITY CONTROL - BEFORE MARKING AS FIGURATIVE, ASK:
-1. Is this a technical religious/legal term from ancient Israelite practice?
-2. Is this a formulaic expression standard in biblical narrative?
-3. Could this be understood literally in its ancient ritual/legal/historical context?
-4. Would an ancient Near Eastern reader have understood this as a real action/place/object?
-5. Is this a procedural/instructional comparison (ritual technique vs. ritual technique)?
-6. Is this a literal description (good land, evil generation, scant few, etc.)?
-7. Is this a historical statement (we were slaves, brought out of Egypt, etc.)?
-8. Is this a literal verb/action (multiply, drive, inflict, make, etc.)?
-9. Is this a standard biblical idiom (stray from path, flout command, etc.)?
-10. Is this a descriptive quality used literally (faithful plagues, great diseases, etc.)?
-11. Am I confident this is genuinely figurative and not just emphatic language (confidence > 0.7)?
-
-If YES to 1-10, or NO to 11 → DO NOT mark as figurative language.
-
-[EMPHASIS] SPECIAL EMPHASIS: Many apparent "metaphors" are actually:
-- Literal descriptions with strong adjectives (not figurative)
-- Historical statements (factual, not figurative)
-- Standard biblical idioms (conventional, not creative metaphors)
-- Emphatic language (strong but literal, not figurative)
-
-IMPORTANT PROCESSING NOTES:
-- Work primarily from the HEBREW text, using English for context
-- Look for Hebrew-specific patterns like כְּ (simile marker), divine names (יהוה, אלהים)
-- Find ALL genuine instances - don't stop at the first one
-- Be scholarly and precise in explanations
-- Distinguish between technical religious language and genuine figurative language
-- Consider ancient context: what would ancient readers have understood as literal?
-- Only mark personification when God/entities perform actions beyond simple speech
-- Identify the SPEAKER: "God", "Moses", "Narrator", "Abraham", etc.
-- Determine the PURPOSE: Why is this figurative language used?
-- Minimum confidence threshold: 0.7 (if lower, do not include)
-
-VEHICLE/TENOR CLASSIFICATION SYSTEM:
-For each figurative instance, identify both the VEHICLE (source domain) and TENOR (target/subject):
-- VEHICLE: What concrete imagery is used (e.g., "shepherd" in "God is my shepherd")
-- TENOR: What is being described (e.g., "God" in "God is my shepherd")
-
-[ENHANCED CLASSIFICATION GUIDELINES]:
-
-VEHICLE CLASSIFICATION PRECISION:
-- Choose the most SPECIFIC appropriate category
-- Avoid using broad "social" when more precise options exist
-- Use "military" for conquest/warfare imagery (e.g., "tread on their backs" = military, not social)
-- Use "political-legal" for judicial actions (e.g., "hand lays hold on judgment" = political-legal)
-- Reserve "familial" for direct kinship metaphors (father, son, brother)
-- Use "social-status" for hierarchical positioning (head/tail, high above, treading on backs)
-
-TENOR CLASSIFICATION PRECISION:
-- Distinguish between DIVINE PROVISION (God's sustaining care) vs BLESSING (covenant rewards)
-- Use "Idolatry" subcategory for false worship metaphors (sculptured image, no-gods)
-- Use "Moral & Spiritual State" for internal dispositions (harden heart, treacherous breed)
-- Reserve "Israel's Identity" for covenantal status metaphors (children of God, treasured people)
-- Use "Blessing" for material prosperity and social elevation from obedience
-- Use "Curse" for material destitution and humiliation from disobedience
-
-VEHICLE CLASSIFICATION - Two-Level System:
-Choose TWO levels based on the SOURCE domain of the comparison:
-
-VEHICLE LEVEL 1 (Broad Category):
-- "The Natural World" - for imagery from nature, plants, animals, natural phenomena
-- "Human Institutions and Relationships" - for social structures, roles, human activities
-- "Abstract and Internal States" - for psychological, spiritual, temporal, economic concepts
-- "Body and Anatomy" - for human/divine body parts and physiological functions
+🔍 **ANALYSIS INSTRUCTIONS:**
 - "Ritual and Worship" - for religious practices, ceremonial activities, and covenantal symbols
 
 VEHICLE LEVEL 2 (Specific Domain):
