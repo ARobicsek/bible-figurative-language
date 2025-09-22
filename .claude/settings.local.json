@@ -33,7 +33,8 @@
       "WebFetch(domain:www.sefaria.org)",
       "Bash(powershell:*)",
       "Bash(tasklist:*)",
-      "Bash(cmd /c:*)"
+      "Bash(cmd /c:*)",
+      "Bash(git rm:*)"
     ],
     "deny": [],
     "ask": []
