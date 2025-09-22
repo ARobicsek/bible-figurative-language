@@ -358,6 +358,7 @@ HYPERBOLE VALIDATION:
 METONYMY VALIDATION:
 - ACCEPT: Substitution of associated terms (crown for kingship)
 - ACCEPT: Part for whole or whole for part relationships
+- ACCEPT: Synechdoce as metonymy
 - REJECT: Literal references to actual objects
 - REJECT: Standard terminology
 """
@@ -510,6 +511,8 @@ RECLASSIFY when:
 - Abstract concepts acting as agents are labeled "metaphor" but should be "personification" (dread and fear acting)
 - Divine body parts are labeled "personification" but should be "metaphor" (hand, arm, face)
 - Natural phenomena acting human-like are labeled "metaphor" but should be "personification"
+
+DO NOT RECLASSIFY SYNECHDOCHE or MERISM as 'OTHER'. SYNECHDOCE and MERISM should be considered types of METONYMY.
 
 [ANE CONTEXT] ANCIENT NEAR EASTERN LITERARY CONTEXT:
 Consider what would be understood as literal vs figurative by an Ancient Near Eastern reader:

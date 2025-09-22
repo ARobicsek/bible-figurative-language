@@ -80,13 +80,16 @@ class DatabaseManager:
                 final_hyperbole TEXT CHECK(final_hyperbole IN ('yes', 'no')) DEFAULT 'no',
                 final_metonymy TEXT CHECK(final_metonymy IN ('yes', 'no')) DEFAULT 'no',
                 final_other TEXT CHECK(final_other IN ('yes', 'no')) DEFAULT 'no',
+                target_level_1 TEXT,
+                target_specific TEXT,
                 vehicle_level_1 TEXT,
-                vehicle_level_2 TEXT,
-                tenor_level_1 TEXT,
-                tenor_level_2 TEXT,
+                vehicle_specific TEXT,
+                ground_level_1 TEXT,
+                ground_specific TEXT,
                 confidence REAL NOT NULL CHECK(confidence >= 0.0 AND confidence <= 1.0),
                 figurative_text TEXT,
                 figurative_text_in_hebrew TEXT,
+                figurative_text_in_hebrew_stripped TEXT,
                 explanation TEXT,
                 speaker TEXT,
                 purpose TEXT,
@@ -132,10 +135,12 @@ class DatabaseManager:
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_hyperbole ON figurative_language (final_hyperbole)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_metonymy ON figurative_language (final_metonymy)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_final_other ON figurative_language (final_other)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_target_level_1 ON figurative_language (target_level_1)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_target_specific ON figurative_language (target_specific)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_vehicle_level_1 ON figurative_language (vehicle_level_1)')
-        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_vehicle_level_2 ON figurative_language (vehicle_level_2)')
-        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_tenor_level_1 ON figurative_language (tenor_level_1)')
-        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_tenor_level_2 ON figurative_language (tenor_level_2)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_vehicle_specific ON figurative_language (vehicle_specific)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_ground_level_1 ON figurative_language (ground_level_1)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_ground_specific ON figurative_language (ground_specific)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_confidence ON figurative_language (confidence)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_speaker ON figurative_language (speaker)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_purpose ON figurative_language (purpose)')
@@ -174,9 +179,10 @@ class DatabaseManager:
             (verse_id, figurative_language, simile, metaphor, personification, idiom, hyperbole, metonymy, other,
              final_figurative_language, final_simile, final_metaphor, final_personification, final_idiom,
              final_hyperbole, final_metonymy, final_other,
-             vehicle_level_1, vehicle_level_2, tenor_level_1, tenor_level_2, confidence, figurative_text,
-             figurative_text_in_hebrew, explanation, speaker, purpose, original_detection_types)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+             target_level_1, target_specific, vehicle_level_1, vehicle_specific, ground_level_1, ground_specific,
+             confidence, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped,
+             explanation, speaker, purpose, original_detection_types)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_id,
             figurative_data.get('figurative_language', 'no'),
@@ -195,13 +201,16 @@ class DatabaseManager:
             figurative_data.get('final_hyperbole', 'no'),
             figurative_data.get('final_metonymy', 'no'),
             figurative_data.get('final_other', 'no'),
+            figurative_data.get('target_level_1'),
+            figurative_data.get('target_specific'),
             figurative_data.get('vehicle_level_1'),
-            figurative_data.get('vehicle_level_2'),
-            figurative_data.get('tenor_level_1'),
-            figurative_data.get('tenor_level_2'),
+            figurative_data.get('vehicle_specific'),
+            figurative_data.get('ground_level_1'),
+            figurative_data.get('ground_specific'),
             figurative_data['confidence'],
             figurative_data.get('figurative_text'),
             figurative_data.get('figurative_text_in_hebrew'),
+            figurative_data.get('figurative_text_in_hebrew_stripped'),
             figurative_data.get('explanation'),
             figurative_data.get('speaker'),
             figurative_data.get('purpose'),

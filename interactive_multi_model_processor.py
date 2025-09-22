@@ -20,6 +20,7 @@ from hebrew_figurative_db.text_extraction.sefaria_client import SefariaClient
 from hebrew_figurative_db.ai_analysis.gemini_api_multi_model import MultiModelGeminiClient
 from hebrew_figurative_db.database.db_manager import DatabaseManager
 from hebrew_figurative_db.ai_analysis.metaphor_validator import MetaphorValidator
+from hebrew_figurative_db.text_extraction.hebrew_utils import HebrewTextProcessor
 
 def setup_logging(log_file):
     """Setup comprehensive logging"""
@@ -214,9 +215,13 @@ def process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_ap
             # Extract truncation info from metadata
             truncation_info = final_metadata.get('truncation_info', {}) if final_metadata else {}
 
+            # Strip diacritics from Hebrew text
+            hebrew_stripped = HebrewTextProcessor.strip_diacritics(heb_verse)
+
             verse_data_dict = {
                 'reference': verse_ref, 'book': book_name, 'chapter': chapter,
                 'verse': int(verse_ref.split(':')[1]), 'hebrew': heb_verse,
+                'hebrew_stripped': hebrew_stripped,
                 'english': eng_verse, 'word_count': len(heb_verse.split()),
                 'llm_restriction_error': final_error,
                 'llm_deliberation': final_metadata.get('llm_deliberation') if final_metadata else None,
