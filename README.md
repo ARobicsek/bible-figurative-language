@@ -1,8 +1,13 @@
 Hebrew Figurative Language Database
 A comprehensive system for detecting and analyzing figurative language in biblical Hebrew texts, featuring a robust, context-aware multi-model LLM pipeline with multi-type classification and intelligent reclassification for scholarly research.
 
-🎉 Project Status: Advanced Multi-Type Classification System
-LATEST BREAKTHROUGH: Deployed an advanced multi-type classification system that allows phrases to be classified as multiple figurative language types simultaneously (e.g., both metaphor AND idiom). The system includes intelligent reclassification capabilities where the validator can correct misclassifications and provides complete audit trails for both initial detection and final validation results.
+🎉 Project Status: Enhanced Target/Vehicle/Ground Classification System
+LATEST BREAKTHROUGH: Enhanced the Target/Vehicle/Ground classification framework with clearer guidance for the AI classifier. The system now provides explicit definitions and examples to improve the accuracy of figurative language analysis:
+- **TARGET** = WHO/WHAT the figurative speech is ABOUT (the subject being described, e.g. "follow these laws with all your heart and soul" --> target_level_1="Social Group", target_specific="The Israelites")
+- **VEHICLE** = WHAT the target is being LIKENED TO (the comparison/image used, e.g. "do not deviate right or left" --> vehicle_level_1 = "spatial", vehicle_specific = "directions")
+- **GROUND** = WHAT QUALITY of the target is being described (the shared quality or characteristic between the target and the vehicle, e.g. "I carried you on eagle's wings" --> ground_level_1 = "physical quality", ground_specific = "with comfort and safety")
+
+This builds upon our advanced multi-type classification system that allows phrases to be classified as multiple figurative language types simultaneously (e.g., both metaphor AND idiom), with intelligent reclassification capabilities and complete audit trails.
 
 ## 🧠 Current AI Models
 - **Primary Model**: Gemini 2.5 Flash (latest, most capable)
@@ -10,6 +15,7 @@ LATEST BREAKTHROUGH: Deployed an advanced multi-type classification system that 
 - **Validation Model**: Gemini 1.5 Flash (conservative validation)
 
 ## 🎯 Current Status
+✅ **Enhanced Target/Vehicle/Ground Classification**: Clearer guidance for AI classifier with explicit definitions and examples
 ✅ **Multi-Type Classification**: Each phrase can be classified as multiple figurative language types
 ✅ **Intelligent Reclassification**: Validator can correct misclassifications (e.g., metaphor → simile)
 ✅ **Dual-Field Architecture**: Separate tracking of initial detection vs. final validated results
@@ -152,9 +158,11 @@ CREATE TABLE figurative_language (
     final_other TEXT CHECK(final_other IN ('yes', 'no')) DEFAULT 'no',
     -- Core Analysis Fields
     vehicle_level_1 TEXT,
-    vehicle_level_2 TEXT,
-    tenor_level_1 TEXT,
-    tenor_level_2 TEXT,
+    vehicle_specific TEXT,
+    target_level_1 TEXT,
+    target_specific TEXT,
+    ground_level_1 TEXT,
+    ground_specific TEXT,
     confidence REAL NOT NULL,
     figurative_text TEXT,
     figurative_text_in_hebrew TEXT,
@@ -191,6 +199,40 @@ CREATE TABLE figurative_language (
 - **Deliberations**: LLM reasoning about all potential figurative elements per verse
 - **Per-Type Validation**: Independent validation decisions and reasoning for each figurative type
 - **Error Tracking**: Complete logging of API errors and restrictions
+
+## 🏷️ Current Classification Categories
+
+**Target Level 1 Categories** (WHO/WHAT the figurative speech is about):
+- God
+- Social Group
+- Action
+- Geographical or political entity
+- Natural world
+- Created objects
+- Specific person
+- Other thing
+- Other
+
+**Vehicle Level 1 Categories** (WHAT the target is being likened to):
+- natural world
+- human parts
+- human action
+- divine
+- relationships
+- spatial
+- the ancient workplace
+- abstract
+- other
+
+**Ground Level 1 Categories** (WHAT QUALITY is being described):
+- moral quality
+- physical quality
+- psychological quality
+- status
+- essential nature or identity
+- other
+
+Example: "Judah is a lion" → TARGET: target_level_1 = "Specific person", target_specific = "Judah"; VEHICLE: vehicle_level_1="natural world", vehicle_specific ="lion"; GROUND: ground_level_1="physical quality", ground_specific="strength"
 🎯 Use Cases
 Biblical Scholarship
 Targeted Analysis: Use the interactive script to quickly analyze specific passages, verses, or ranges for research papers or class preparation.

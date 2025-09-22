@@ -12,6 +12,16 @@ from typing import List, Dict, Optional, Tuple
 import re
 from enum import Enum
 
+# Import for Hebrew text processing
+try:
+    from ..text_extraction.hebrew_utils import HebrewTextProcessor
+except ImportError:
+    # Fallback for when running as main
+    import sys
+    import os
+    sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+    from text_extraction.hebrew_utils import HebrewTextProcessor
+
 
 class TextContext(Enum):
     CREATION_NARRATIVE = 'creation_narrative'
@@ -358,7 +368,16 @@ Be explicit about what you examined and why you made each decision.
 IMPORTANT: Include ALL phrases you marked as figurative in the JSON AND explain your reasoning for including them here.]
 
 **THEN provide JSON OUTPUT (only if genuinely figurative):**
-[{"figurative_language": "yes/no", "simile": "yes/no", "metaphor": "yes/no", "personification": "yes/no", "idiom": "yes/no", "hyperbole": "yes/no", "metonymy": "yes/no", "other": "yes/no", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "vehicle_level_1": "nature/human/divine/abstract", "vehicle_level_2": "specific", "tenor_level_1": "God/people/covenant", "tenor_level_2": "specific", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
+
+**TARGET/VEHICLE/GROUND CLASSIFICATION GUIDE:**
+- **TARGET** = WHO/WHAT the figurative speech is ABOUT (the subject being described, e.g. "follow these laws with all your heart and soul" --> target_level_1="Social Group", target_specific="The Israelites")
+- **VEHICLE** = WHAT the target is being LIKENED TO (the comparison/image used, e.g. "do not deviate right or left" --> vehicle_level_1 = "spatial", vehicle_specific = "directions")
+- **GROUND** = WHAT QUALITY of the target is being described (the shared quality or characteristic between the target and the vehicle, e.g. "I carried you on eagle's wings" --> ground_level_1 = "physical quality", ground_specific = "with comfort and safety")
+
+Example: "Judah is a lion" → TARGET (i.e. who the metaphor is about): target_level_1 = Specific person, target_specific = Judah; VEHICLE (i.e. what Judah is likened to): vehicle_level_1=natural world, vehicle_specific =lion; GROUND (i.e. what aspect of the target is this metaphor about): ground_level_1=physical quality, ground_specific=strength
+
+[{"figurative_language": "yes/no", "simile": "yes/no", "metaphor": "yes/no", "personification": "yes/no", "idiom": "yes/no", "hyperbole": "yes/no", "metonymy": "yes/no", "other": "yes/no", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "target_level_1": "God/Social Group/Action/Geographical or political entity/Natural world/Created objects/Specific person/Other thing/Other", "target_specific": "specific target", "vehicle_level_1": "natural world/human parts/human action/relationships/spatial/the ancient workplace/abstract/other", "vehicle_specific": "specific vehicle", "ground_level_1": "moral quality/physical quality/psychological quality/status/essential nature or identity/other", "ground_specific": "specific ground", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
+You **must** use **one of categories specified above** for target_level_1, vehicle_level_1, and ground_level_1.
 
 IMPORTANT: Mark each type field as "yes" or "no". A phrase can be multiple types (e.g., both metaphor and idiom). Set figurative_language to "yes" if ANY figurative language is detected.
 
@@ -733,6 +752,11 @@ Analysis:"""
 
         valid_count = 0
         for item in all_instances:
+            # Strip diacritics from Hebrew figurative text if it exists
+            hebrew_figurative_stripped = None
+            if item.get('hebrew_text'):
+                hebrew_figurative_stripped = HebrewTextProcessor.strip_diacritics(item.get('hebrew_text'))
+
             # Prepare figurative data with multi-type format
             figurative_data = {
                 'figurative_language': item.get('figurative_language', 'no'),
@@ -743,13 +767,24 @@ Analysis:"""
                 'hyperbole': item.get('hyperbole', 'no'),
                 'metonymy': item.get('metonymy', 'no'),
                 'other': item.get('other', 'no'),
+                'final_figurative_language': 'no',  # Will be set by validation
+                'final_simile': 'no',
+                'final_metaphor': 'no',
+                'final_personification': 'no',
+                'final_idiom': 'no',
+                'final_hyperbole': 'no',
+                'final_metonymy': 'no',
+                'final_other': 'no',
+                'target_level_1': item.get('target_level_1'),
+                'target_specific': item.get('target_specific'),
                 'vehicle_level_1': item.get('vehicle_level_1'),
-                'vehicle_level_2': item.get('vehicle_level_2'),
-                'tenor_level_1': item.get('tenor_level_1'),
-                'tenor_level_2': item.get('tenor_level_2'),
+                'vehicle_specific': item.get('vehicle_specific'),
+                'ground_level_1': item.get('ground_level_1'),
+                'ground_specific': item.get('ground_specific'),
                 'confidence': item.get('confidence'),
                 'figurative_text': item.get('english_text'),
                 'figurative_text_in_hebrew': item.get('hebrew_text'),
+                'figurative_text_in_hebrew_stripped': hebrew_figurative_stripped,
                 'explanation': item.get('explanation'),
                 'speaker': item.get('speaker'),
                 'purpose': item.get('purpose'),
