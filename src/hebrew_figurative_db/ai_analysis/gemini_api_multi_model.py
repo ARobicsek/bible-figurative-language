@@ -360,10 +360,11 @@ English: {english_text}
 **FIRST, provide your deliberation in a DELIBERATION section:**
 
 DELIBERATION:
-[You MUST analyze EVERY potential figurative element in this verse. For each phrase/concept, explain *briefly*:
+[You MUST briefly analyze EVERY potential figurative element in this verse. For each phrase/concept, explain *briefly*:
 - What you considered (e.g., "considered if 'X' might be metaphor, metonymy, etc"). Note that synechdoche is a type of metonymy.
 - Your reasoning for including/excluding it (e.g., "this is not metaphor, metonymy, etc because...")
 - Any borderline cases you debated
+- Your thinking about the TARGET of the figurative speech (this is the core subject of the figurative language. It's the literal person, object, action or concept being described), the VEHICLE (This is the image or idea used to convey something about the target. It's the "what it's like" part of the comparison) and the GROUND (This is the underlying characteristic of the target that the figurative language is intended to describe. The vehicle tells you that target is [ground]).
 Be explicit about what you examined and why you made each decision.
 IMPORTANT: Include ALL phrases you marked as figurative in the JSON AND explain your reasoning for including them here.]
 
@@ -372,11 +373,11 @@ IMPORTANT: Include ALL phrases you marked as figurative in the JSON AND explain 
 **TARGET/VEHICLE/GROUND CLASSIFICATION GUIDE:**
 - **TARGET** = WHO/WHAT the figurative speech is ABOUT (the subject being described, e.g. "follow these laws with all your heart and soul" --> target_level_1="Social Group", target_specific="The Israelites")
 - **VEHICLE** = WHAT the target is being LIKENED TO (the comparison/image used, e.g. "do not deviate right or left" --> vehicle_level_1 = "spatial", vehicle_specific = "directions")
-- **GROUND** = WHAT QUALITY of the target is being described (the shared quality or characteristic between the target and the vehicle, e.g. "I carried you on eagle's wings" --> ground_level_1 = "physical quality", ground_specific = "with comfort and safety")
+- **GROUND** = WHAT QUALITY of the target is being described (the quality of the target that the vehicle sheds light on, e.g. "I carried you on eagle's wings" --> ground_level_1 = "physical quality", ground_specific = "with comfort and safety")
 
-Example: "Judah is a lion" → TARGET (i.e. who the metaphor is about): target_level_1 = Specific person, target_specific = Judah; VEHICLE (i.e. what Judah is likened to): vehicle_level_1=natural world, vehicle_specific =lion; GROUND (i.e. what aspect of the target is this metaphor about): ground_level_1=physical quality, ground_specific=strength
+Example: "Judah is a lion" → TARGET (i.e. who the metaphor is about): target_level_1 = Specific person, target_specific = Judah; VEHICLE (i.e. what Judah is likened to): vehicle_level_1=natural world, vehicle_specific =lion; GROUND (i.e. this figurative speech tells us that the target has [x] quality): ground_level_1=physical quality, ground_specific=strength
 
-[{"figurative_language": "yes/no", "simile": "yes/no", "metaphor": "yes/no", "personification": "yes/no", "idiom": "yes/no", "hyperbole": "yes/no", "metonymy": "yes/no", "other": "yes/no", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "target_level_1": "God/Social Group/Action/Geographical or political entity/Natural world/Created objects/Specific person/Other thing/Other", "target_specific": "specific target", "vehicle_level_1": "natural world/human parts/human action/relationships/spatial/the ancient workplace/abstract/other", "vehicle_specific": "specific vehicle", "ground_level_1": "moral quality/physical quality/psychological quality/status/essential nature or identity/other", "ground_specific": "specific ground", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
+[{"figurative_language": "yes/no", "simile": "yes/no", "metaphor": "yes/no", "personification": "yes/no", "idiom": "yes/no", "hyperbole": "yes/no", "metonymy": "yes/no", "other": "yes/no", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "target_level_1": "God/social group/action/geographical or political entity/natural world/created objects/specific person/time/state of being/legal, religious or moral concept/other", "target_specific": "specific target", "vehicle_level_1": "natural world/human parts/human action/relationships/spatial/the ancient workplace/warfare/wordplay/abstract/other", "vehicle_specific": "specific vehicle", "ground_level_1": "moral quality/physical quality/psychological quality/status/essential nature or identity/other", "ground_specific": "specific ground", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
 You **must** use **one of categories specified above** for target_level_1, vehicle_level_1, and ground_level_1.
 
 IMPORTANT: Mark each type field as "yes" or "no". A phrase can be multiple types (e.g., both metaphor and idiom). Set figurative_language to "yes" if ANY figurative language is detected.
