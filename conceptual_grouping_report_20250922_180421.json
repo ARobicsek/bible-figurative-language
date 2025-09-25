@@ -1,0 +1,292 @@
+{
+  "generated_at": "2025-09-22 18:04:21",
+  "api_usage": {
+    "total_requests": 26,
+    "cache_hits": 0,
+    "successful_groupings": 21,
+    "cache_hit_rate": 0.0
+  },
+  "target_groupings": {
+    "categories_processed": 9,
+    "total_groups_created": 46,
+    "average_confidence": 0.9555555555555555,
+    "details": {
+      "geographical or political entity": {
+        "total_targets": 61,
+        "groups_created": 5,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "Specific Lands & Defined Regions",
+          "Cities, Towns & Communities",
+          "Political Entities & General Landscapes",
+          "Spatial Scope & Relational Concepts",
+          "Natural Features & Specific Landmarks"
+        ]
+      },
+      "time": {
+        "total_targets": 20,
+        "groups_created": 5,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "Specific Moments & Brief Periods",
+          "Future & Enduring Time",
+          "Durations of Human Experience & Social Conditions",
+          "Durations of Divine Engagement",
+          "Durations of Presence & Tenure"
+        ]
+      },
+      "state of being": {
+        "total_targets": 65,
+        "groups_created": 6,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "Existence & Duration",
+          "Well-being & Provision",
+          "Adversity & Affliction",
+          "Dominion & Servitude",
+          "Inner States & Relationship",
+          "Divine & External Conditions"
+        ]
+      },
+      "psychological quality": {
+        "total_targets": 19,
+        "groups_created": 4,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "Courage & Resolve",
+          "Moral & Volitional Disposition",
+          "Thought & Perception",
+          "Affective States & Desires"
+        ]
+      },
+      "legal, religious or moral concept": {
+        "total_targets": 135,
+        "groups_created": 5,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "Divine Revelation & Instruction",
+          "Covenant, Loyalty & Obedience",
+          "Transgression, Guilt & Impurity",
+          "Divine Judgment & Providence",
+          "Legal, Social & Ritual Structures"
+        ]
+      },
+      "created objects": {
+        "total_targets": 25,
+        "groups_created": 6,
+        "ungrouped_count": 2,
+        "grouping_rate": 0.92,
+        "confidence": 0.95,
+        "group_names": [
+          "False Deities and Idolatrous Objects",
+          "Tools, Weapons, and Implements",
+          "Agricultural Products and Sustenance",
+          "Structures, Boundaries, and Defined Spaces",
+          "Texts, Songs, and Transmitted Knowledge",
+          "Units of Measurement and Value"
+        ]
+      },
+      "God": {
+        "total_targets": 65,
+        "groups_created": 5,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "The Divine Being & Essence",
+          "God's Active Power & Governance",
+          "God's Relational Presence & Favor",
+          "God's Judgment & Displeasure",
+          "False Deities"
+        ]
+      },
+      "specific person": {
+        "total_targets": 53,
+        "groups_created": 5,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 1.0,
+        "group_names": [
+          "Prominent Biblical Figures & Leaders",
+          "Roles, Offices, and Social Functions",
+          "Kinship, Family, and Lineage",
+          "Individuals by Condition, Status, or Legal Standing",
+          "Inner Being, Attributes, and Capacities"
+        ]
+      },
+      "natural world": {
+        "total_targets": 26,
+        "groups_created": 5,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "Celestial Expanse & Luminaries",
+          "Terrestrial Foundation & Waters",
+          "Land's Fertility & Sustenance",
+          "Natural Calamities & Destructive Forces",
+          "Universal Totality & Scope"
+        ]
+      }
+    }
+  },
+  "vehicle_groupings": {
+    "categories_processed": 12,
+    "total_groups_created": 34,
+    "average_confidence": 0.9499999999999998,
+    "details": {
+      "spatial": {
+        "total_vehicles": 81,
+        "groups_created": 5,
+        "ungrouped_count": 1,
+        "grouping_rate": 0.9876543209876543,
+        "confidence": 0.95,
+        "group_names": [
+          "Paths, Movement, and Deviation",
+          "Proximity, Presence, and Frontal Position",
+          "Elevation, Depth, and Verticality",
+          "Internal Spaces and Midst",
+          "Boundaries, Extremes, and General Locales"
+        ]
+      },
+      "created objects": {
+        "total_vehicles": 56,
+        "groups_created": 6,
+        "ungrouped_count": 1,
+        "grouping_rate": 0.9821428571428571,
+        "confidence": 0.95,
+        "group_names": [
+          "Dwellings & Enclosures",
+          "Tools, Weapons & Implements",
+          "Valuables, Provisions & Containers",
+          "Materials & Components",
+          "Symbols, Words & Markers",
+          "Burdens & Constraints"
+        ]
+      },
+      "human parts": {
+        "total_vehicles": 173,
+        "groups_created": 3,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "The Inner Core: Emotion, Will, and Life-Force",
+          "The Agents of Action: Power, Agency, and Movement",
+          "The Channels of Perception, Expression, and Presence"
+        ]
+      },
+      "relationships": {
+        "total_vehicles": 17,
+        "groups_created": 4,
+        "ungrouped_count": 1,
+        "grouping_rate": 0.9411764705882353,
+        "confidence": 0.95,
+        "group_names": [
+          "Direct Familial Bonds",
+          "Parental Nurture & Authority",
+          "Attribution of Nature or Destiny",
+          "Defined Social & Civic Status"
+        ]
+      },
+      "social group": {
+        "total_vehicles": 2,
+        "groups_created": 1,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "Formidable Adversaries & Obstacles"
+        ]
+      },
+      "time": {
+        "total_vehicles": 16,
+        "groups_created": 3,
+        "ungrouped_count": 1,
+        "grouping_rate": 0.9375,
+        "confidence": 0.95,
+        "group_names": [
+          "Temporal Extent & Duration",
+          "Intra-Day Markers & Transitions",
+          "Chronological Anchors & Reference Points"
+        ]
+      },
+      "specific person": {
+        "total_vehicles": 3,
+        "groups_created": 1,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "Figures of Consequence and Loss"
+        ]
+      },
+      "geographical or political entity": {
+        "total_vehicles": 5,
+        "groups_created": 2,
+        "ungrouped_count": 1,
+        "grouping_rate": 0.8,
+        "confidence": 0.95,
+        "group_names": [
+          "Identifiable Nations & Territories",
+          "Named Localities & Strategic Centers"
+        ]
+      },
+      "warfare": {
+        "total_vehicles": 6,
+        "groups_created": 3,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "Instruments of Conflict and Judgment",
+          "Collective Military Force and Scale",
+          "Strategic Military Assets and Power"
+        ]
+      },
+      "the ancient workplace": {
+        "total_vehicles": 5,
+        "groups_created": 2,
+        "ungrouped_count": 1,
+        "grouping_rate": 0.8,
+        "confidence": 0.95,
+        "group_names": [
+          "Menial Labor & Servitude",
+          "Intense Processing & Refinement"
+        ]
+      },
+      "state of being": {
+        "total_vehicles": 3,
+        "groups_created": 3,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "State of Unblemished Purity",
+          "State of Internal Decay and Sickness",
+          "State of Desperate Lack and Longing"
+        ]
+      },
+      "other": {
+        "total_vehicles": 2,
+        "groups_created": 1,
+        "ungrouped_count": 0,
+        "grouping_rate": 1.0,
+        "confidence": 0.95,
+        "group_names": [
+          "States of Vulnerability and Exposure"
+        ]
+      }
+    }
+  }
+}

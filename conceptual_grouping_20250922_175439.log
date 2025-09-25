@@ -1,0 +1,172 @@
+2025-09-22 17:54:39,596 - INFO - ================================================================================
+2025-09-22 17:54:39,596 - INFO - STARTING FULL CONCEPTUAL GROUPING - PHASE 2
+2025-09-22 17:54:39,596 - INFO - ================================================================================
+2025-09-22 17:54:39,596 - INFO - ✓ API key loaded successfully
+2025-09-22 17:54:39,597 - INFO - ✓ Input file found: clean_deuteronomy_data.json
+2025-09-22 17:54:39,654 - INFO - ✓ Loaded 1287 flows for processing
+2025-09-22 17:54:39,654 - INFO - Dataset contains 12 target categories and 15 vehicle categories
+2025-09-22 17:54:39,655 - INFO - Estimated processing time: 5 minutes (27 API calls)
+2025-09-22 17:54:39,655 - INFO - Log file: conceptual_grouping_20250922_175439.log
+2025-09-22 17:54:39,655 - INFO - Initializing ConceptualGrouper...
+2025-09-22 17:54:39,663 - INFO - 
+============================================================
+2025-09-22 17:54:39,663 - INFO - PHASE 2A: TARGET CONCEPTUAL GROUPING
+2025-09-22 17:54:39,664 - INFO - ============================================================
+2025-09-22 17:54:39,664 - INFO - Starting target conceptual grouping by category
+2025-09-22 17:54:39,664 - INFO - Processing target category 'geographical or political entity' with 61 targets (1/12)
+2025-09-22 17:54:39,664 - INFO - Making Gemini API call for conceptual grouping (request #1)
+2025-09-22 17:55:11,041 - INFO - Successfully created conceptual grouping with 5 groups
+2025-09-22 17:55:11,046 - INFO - Saved cache to cache_production\target_groupings.json with 1 entries
+2025-09-22 17:55:11,046 - INFO - Processing target category 'time' with 20 targets (2/12)
+2025-09-22 17:55:11,046 - INFO - Making Gemini API call for conceptual grouping (request #2)
+2025-09-22 17:55:26,154 - INFO - Successfully created conceptual grouping with 5 groups
+2025-09-22 17:55:26,156 - INFO - Saved cache to cache_production\target_groupings.json with 2 entries
+2025-09-22 17:55:26,156 - INFO - Processing target category 'action' with 218 targets (3/12)
+2025-09-22 17:55:26,156 - INFO - Making Gemini API call for conceptual grouping (request #3)
+2025-09-22 17:55:59,264 - ERROR - Gemini API error during grouping: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+2025-09-22 17:55:59,264 - ERROR - Failed to create target grouping for category 'action'
+2025-09-22 17:55:59,264 - INFO - Processing target category 'social group' with 140 targets (4/12)
+2025-09-22 17:55:59,264 - INFO - Making Gemini API call for conceptual grouping (request #4)
+2025-09-22 17:56:38,313 - ERROR - Gemini API error during grouping: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+2025-09-22 17:56:38,313 - ERROR - Failed to create target grouping for category 'social group'
+2025-09-22 17:56:38,313 - INFO - Processing target category 'state of being' with 64 targets (5/12)
+2025-09-22 17:56:38,313 - INFO - Making Gemini API call for conceptual grouping (request #5)
+2025-09-22 17:57:00,391 - INFO - Successfully created conceptual grouping with 6 groups
+2025-09-22 17:57:00,394 - INFO - Saved cache to cache_production\target_groupings.json with 3 entries
+2025-09-22 17:57:00,395 - WARNING - Target grouping validation issues for 'state of being': missing={'destiny, impending future events'}, extra={'impending future events', 'destiny'}
+2025-09-22 17:57:00,395 - INFO - Processing target category 'psychological quality' with 19 targets (6/12)
+2025-09-22 17:57:00,395 - INFO - Making Gemini API call for conceptual grouping (request #6)
+2025-09-22 17:57:20,368 - INFO - Successfully created conceptual grouping with 4 groups
+2025-09-22 17:57:20,372 - INFO - Saved cache to cache_production\target_groupings.json with 4 entries
+2025-09-22 17:57:20,373 - INFO - Processing target category 'legal, religious or moral concept' with 138 targets (7/12)
+2025-09-22 17:57:20,374 - INFO - Making Gemini API call for conceptual grouping (request #7)
+2025-09-22 17:57:44,770 - INFO - Successfully created conceptual grouping with 5 groups
+2025-09-22 17:57:44,775 - INFO - Saved cache to cache_production\target_groupings.json with 5 entries
+2025-09-22 17:57:44,776 - WARNING - Target grouping validation issues for 'legal, religious or moral concept': missing={'adherence to commandments', 'transgression of commandments', 'religious allegiance/worship'}, extra={'transgression of commandments, adherence to commandments'}
+2025-09-22 17:57:44,776 - INFO - Processing target category 'created objects' with 25 targets (8/12)
+2025-09-22 17:57:44,776 - INFO - Making Gemini API call for conceptual grouping (request #8)
+2025-09-22 17:58:02,513 - INFO - Successfully created conceptual grouping with 6 groups
+2025-09-22 17:58:02,518 - INFO - Saved cache to cache_production\target_groupings.json with 6 entries
+2025-09-22 17:58:02,518 - INFO - Processing target category 'God' with 65 targets (9/12)
+2025-09-22 17:58:02,518 - INFO - Making Gemini API call for conceptual grouping (request #9)
+2025-09-22 17:58:26,206 - INFO - Successfully created conceptual grouping with 5 groups
+2025-09-22 17:58:26,210 - INFO - Saved cache to cache_production\target_groupings.json with 7 entries
+2025-09-22 17:58:26,210 - INFO - Processing target category 'specific person' with 50 targets (10/12)
+2025-09-22 17:58:26,210 - INFO - Making Gemini API call for conceptual grouping (request #10)
+2025-09-22 17:59:02,769 - INFO - Successfully created conceptual grouping with 5 groups
+2025-09-22 17:59:02,774 - INFO - Saved cache to cache_production\target_groupings.json with 8 entries
+2025-09-22 17:59:02,774 - WARNING - Target grouping validation issues for 'specific person': missing=set(), extra={'pharaoh (the enemy king)', 'caleb', 'joshua'}
+2025-09-22 17:59:02,774 - INFO - Processing target category 'natural world' with 27 targets (11/12)
+2025-09-22 17:59:02,774 - INFO - Making Gemini API call for conceptual grouping (request #11)
+2025-09-22 17:59:18,762 - INFO - Successfully created conceptual grouping with 5 groups
+2025-09-22 17:59:18,766 - INFO - Saved cache to cache_production\target_groupings.json with 9 entries
+2025-09-22 17:59:18,767 - WARNING - Target grouping validation issues for 'natural world': missing={'offspring of cattle'}, extra=set()
+2025-09-22 17:59:18,767 - INFO - Skipping target category 'other' with only 1 target(s) (12/12)
+2025-09-22 17:59:18,770 - INFO - Saved cache to cache_production\target_groupings.json with 9 entries
+2025-09-22 17:59:18,770 - INFO - Completed target grouping for 9 categories
+2025-09-22 17:59:18,770 - INFO - ✓ Target grouping completed in 279.1 seconds
+2025-09-22 17:59:18,770 - INFO - ✓ Created groupings for 9 target categories
+2025-09-22 17:59:18,770 - INFO - 
+============================================================
+2025-09-22 17:59:18,770 - INFO - PHASE 2B: VEHICLE CONCEPTUAL GROUPING
+2025-09-22 17:59:18,770 - INFO - ============================================================
+2025-09-22 17:59:18,770 - INFO - Starting vehicle conceptual grouping by category
+2025-09-22 17:59:18,771 - INFO - Processing vehicle category 'natural world' with 90 vehicles (1/15)
+2025-09-22 17:59:18,771 - INFO - Making Gemini API call for conceptual grouping (request #12)
+2025-09-22 17:59:56,578 - ERROR - Gemini API error during grouping: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+2025-09-22 17:59:56,578 - ERROR - Failed to create vehicle grouping for category 'natural world'
+2025-09-22 17:59:56,578 - INFO - Processing vehicle category 'abstract' with 70 vehicles (2/15)
+2025-09-22 17:59:56,579 - INFO - Making Gemini API call for conceptual grouping (request #13)
+2025-09-22 18:00:35,836 - ERROR - No valid JSON found in Gemini response
+2025-09-22 18:00:35,837 - ERROR - Failed to create vehicle grouping for category 'abstract'
+2025-09-22 18:00:35,837 - INFO - Processing vehicle category 'spatial' with 82 vehicles (3/15)
+2025-09-22 18:00:35,837 - INFO - Making Gemini API call for conceptual grouping (request #14)
+2025-09-22 18:01:04,064 - INFO - Successfully created conceptual grouping with 5 groups
+2025-09-22 18:01:04,067 - INFO - Saved cache to cache_production\vehicle_groupings.json with 1 entries
+2025-09-22 18:01:04,067 - WARNING - Vehicle grouping validation issues for 'spatial': missing={'physical path/road'}, extra=set()
+2025-09-22 18:01:04,067 - INFO - Processing vehicle category 'human action' with 249 vehicles (4/15)
+2025-09-22 18:01:04,068 - INFO - Making Gemini API call for conceptual grouping (request #15)
+2025-09-22 18:01:38,160 - ERROR - Gemini API error during grouping: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+2025-09-22 18:01:38,160 - ERROR - Failed to create vehicle grouping for category 'human action'
+2025-09-22 18:01:38,161 - INFO - Processing vehicle category 'created objects' with 57 vehicles (5/15)
+2025-09-22 18:01:38,161 - INFO - Making Gemini API call for conceptual grouping (request #16)
+2025-09-22 18:01:56,338 - INFO - Successfully created conceptual grouping with 6 groups
+2025-09-22 18:01:56,344 - INFO - Saved cache to cache_production\vehicle_groupings.json with 2 entries
+2025-09-22 18:01:56,344 - INFO - Processing vehicle category 'human parts' with 177 vehicles (6/15)
+2025-09-22 18:01:56,344 - INFO - Making Gemini API call for conceptual grouping (request #17)
+2025-09-22 18:02:28,507 - INFO - Successfully created conceptual grouping with 3 groups
+2025-09-22 18:02:28,510 - INFO - Saved cache to cache_production\vehicle_groupings.json with 3 entries
+2025-09-22 18:02:28,511 - WARNING - Vehicle grouping validation issues for 'human parts': missing={'hand and its work', 'the life-force, the self', 'human hand'}, extra={'the life-force', 'the self'}
+2025-09-22 18:02:28,511 - INFO - Processing vehicle category 'relationships' with 18 vehicles (7/15)
+2025-09-22 18:02:28,511 - INFO - Making Gemini API call for conceptual grouping (request #18)
+2025-09-22 18:02:44,059 - INFO - Successfully created conceptual grouping with 4 groups
+2025-09-22 18:02:44,062 - INFO - Saved cache to cache_production\vehicle_groupings.json with 4 entries
+2025-09-22 18:02:44,062 - WARNING - Vehicle grouping validation issues for 'relationships': missing={'sons/descendants'}, extra=set()
+2025-09-22 18:02:44,062 - INFO - Processing vehicle category 'social group' with 2 vehicles (8/15)
+2025-09-22 18:02:44,062 - INFO - Making Gemini API call for conceptual grouping (request #19)
+2025-09-22 18:02:49,647 - INFO - Successfully created conceptual grouping with 1 groups
+2025-09-22 18:02:49,650 - INFO - Saved cache to cache_production\vehicle_groupings.json with 5 entries
+2025-09-22 18:02:49,650 - INFO - Processing vehicle category 'time' with 16 vehicles (9/15)
+2025-09-22 18:02:49,650 - INFO - Making Gemini API call for conceptual grouping (request #20)
+2025-09-22 18:03:07,245 - INFO - Successfully created conceptual grouping with 3 groups
+2025-09-22 18:03:07,248 - INFO - Saved cache to cache_production\vehicle_groupings.json with 6 entries
+2025-09-22 18:03:07,248 - WARNING - Vehicle grouping validation issues for 'time': missing={'specific times and locations (home/away, lying down/getting up)'}, extra={'lying down/getting up', 'home/away'}
+2025-09-22 18:03:07,249 - INFO - Processing vehicle category 'specific person' with 3 vehicles (10/15)
+2025-09-22 18:03:07,249 - INFO - Making Gemini API call for conceptual grouping (request #21)
+2025-09-22 18:03:17,743 - INFO - Successfully created conceptual grouping with 1 groups
+2025-09-22 18:03:17,745 - INFO - Saved cache to cache_production\vehicle_groupings.json with 7 entries
+2025-09-22 18:03:17,745 - INFO - Processing vehicle category 'geographical or political entity' with 5 vehicles (11/15)
+2025-09-22 18:03:17,745 - INFO - Making Gemini API call for conceptual grouping (request #22)
+2025-09-22 18:03:33,535 - INFO - Successfully created conceptual grouping with 2 groups
+2025-09-22 18:03:33,539 - INFO - Saved cache to cache_production\vehicle_groupings.json with 8 entries
+2025-09-22 18:03:33,539 - INFO - Processing vehicle category 'warfare' with 6 vehicles (12/15)
+2025-09-22 18:03:33,539 - INFO - Making Gemini API call for conceptual grouping (request #23)
+2025-09-22 18:03:44,093 - INFO - Successfully created conceptual grouping with 3 groups
+2025-09-22 18:03:44,097 - INFO - Saved cache to cache_production\vehicle_groupings.json with 9 entries
+2025-09-22 18:03:44,098 - INFO - Processing vehicle category 'the ancient workplace' with 5 vehicles (13/15)
+2025-09-22 18:03:44,098 - INFO - Making Gemini API call for conceptual grouping (request #24)
+2025-09-22 18:03:57,395 - INFO - Successfully created conceptual grouping with 2 groups
+2025-09-22 18:03:57,399 - INFO - Saved cache to cache_production\vehicle_groupings.json with 10 entries
+2025-09-22 18:03:57,400 - WARNING - Vehicle grouping validation issues for 'the ancient workplace': missing={'woodchopper and waterdrawer (representing menial laborers)'}, extra={'woodchopper and waterdrawer'}
+2025-09-22 18:03:57,400 - INFO - Processing vehicle category 'state of being' with 3 vehicles (14/15)
+2025-09-22 18:03:57,400 - INFO - Making Gemini API call for conceptual grouping (request #25)
+2025-09-22 18:04:15,266 - INFO - Successfully created conceptual grouping with 3 groups
+2025-09-22 18:04:15,271 - INFO - Saved cache to cache_production\vehicle_groupings.json with 11 entries
+2025-09-22 18:04:15,272 - INFO - Processing vehicle category 'other' with 2 vehicles (15/15)
+2025-09-22 18:04:15,272 - INFO - Making Gemini API call for conceptual grouping (request #26)
+2025-09-22 18:04:21,450 - INFO - Successfully created conceptual grouping with 1 groups
+2025-09-22 18:04:21,456 - INFO - Saved cache to cache_production\vehicle_groupings.json with 12 entries
+2025-09-22 18:04:21,460 - INFO - Saved cache to cache_production\vehicle_groupings.json with 12 entries
+2025-09-22 18:04:21,460 - INFO - Completed vehicle grouping for 12 categories
+2025-09-22 18:04:21,460 - INFO - ✓ Vehicle grouping completed in 302.7 seconds
+2025-09-22 18:04:21,461 - INFO - ✓ Created groupings for 12 vehicle categories
+2025-09-22 18:04:21,461 - INFO - 
+============================================================
+2025-09-22 18:04:21,461 - INFO - PHASE 2C: APPLYING GROUPINGS TO FLOWS
+2025-09-22 18:04:21,461 - INFO - ============================================================
+2025-09-22 18:04:21,461 - INFO - Applying conceptual groupings to flow data
+2025-09-22 18:04:21,465 - INFO - Applied groupings to 1287 flows: 668 targets grouped, 710 vehicles grouped
+2025-09-22 18:04:21,465 - INFO - ✓ Groupings applied to 1287 flows in 0.0 seconds
+2025-09-22 18:04:21,466 - INFO - 
+============================================================
+2025-09-22 18:04:21,466 - INFO - PHASE 2D: GENERATING QUALITY REPORT
+2025-09-22 18:04:21,466 - INFO - ============================================================
+2025-09-22 18:04:21,701 - INFO - 
+================================================================================
+2025-09-22 18:04:21,701 - INFO - CONCEPTUAL GROUPING COMPLETED SUCCESSFULLY!
+2025-09-22 18:04:21,701 - INFO - ================================================================================
+2025-09-22 18:04:21,702 - INFO - Total processing time: 9m 42s
+2025-09-22 18:04:21,702 - INFO - Enhanced dataset: clean_deuteronomy_data_grouped_20250922_180421.json
+2025-09-22 18:04:21,702 - INFO - Quality report: conceptual_grouping_report_20250922_180421.json
+2025-09-22 18:04:21,702 - INFO - Detailed groupings: detailed_groupings_20250922_180421.json
+2025-09-22 18:04:21,702 - INFO - 
+📊 FINAL STATISTICS:
+2025-09-22 18:04:21,714 - INFO -   • Total flows processed: 1,287
+2025-09-22 18:04:21,714 - INFO -   • Target categories grouped: 9
+2025-09-22 18:04:21,714 - INFO -   • Vehicle categories grouped: 12
+2025-09-22 18:04:21,715 - INFO -   • Total conceptual groups created: 80
+2025-09-22 18:04:21,715 - INFO -   • API requests made: 26
+2025-09-22 18:04:21,715 - INFO -   • Cache hit rate: 0.0%
+2025-09-22 18:04:21,715 - INFO -   • Average grouping confidence: 0.95
+2025-09-22 18:04:21,715 - INFO - 
+🎯 PHASE 2 COMPLETE - Ready for Phase 3 (Sankey Visualization)

@@ -72,19 +72,19 @@ class MultiModelGeminiClient:
         self.fallback_model = genai.GenerativeModel(FALLBACK_MODEL)
         self.fallback_model_name = FALLBACK_MODEL
 
-        # Generation configs
+        # Generation configs (increased token limits for detailed flexible tagging deliberations)
         self.primary_config = {
             'temperature': 0.15,  # Slightly higher for better detection
             'top_p': 0.8,
             'top_k': 25,
-            'max_output_tokens': 10000,
+            'max_output_tokens': 15000,  # Increased to prevent truncation of detailed deliberations
         }
 
         self.fallback_config = {
             'temperature': 0.10,  # Conservative for fallback
             'top_p': 0.7,
             'top_k': 20,
-            'max_output_tokens': 10000,
+            'max_output_tokens': 15000,  # Increased to prevent truncation of detailed deliberations
         }
 
         # Usage tracking

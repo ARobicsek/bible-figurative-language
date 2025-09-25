@@ -1,11 +1,33 @@
-Hebrew Figurative Language Database
-A comprehensive system for detecting and analyzing figurative language in biblical Hebrew texts, featuring a robust, context-aware multi-model LLM pipeline with multi-type classification and intelligent reclassification for scholarly research.
+# Hebrew Figurative Language Database
+A comprehensive system for detecting and analyzing figurative language in biblical Hebrew texts, featuring **two complementary processing systems**: a proven multi-model pipeline and a revolutionary flexible hierarchical tagging system for advanced scholarly research.
 
-🎉 Project Status: Enhanced Target/Vehicle/Ground Classification System
-LATEST BREAKTHROUGH: Enhanced the Target/Vehicle/Ground classification framework with clearer guidance for the AI classifier. The system now provides explicit definitions and examples to improve the accuracy of figurative language analysis:
-- **TARGET** = WHO/WHAT the figurative speech is ABOUT (the subject being described, e.g. "follow these laws with all your heart and soul" --> target_level_1="Social Group", target_specific="The Israelites")
-- **VEHICLE** = WHAT the target is being LIKENED TO (the comparison/image used, e.g. "do not deviate right or left" --> vehicle_level_1 = "spatial", vehicle_specific = "directions")
-- **GROUND** = WHAT QUALITY of the target is being described (the shared quality or characteristic between the target and the vehicle, e.g. "I carried you on eagle's wings" --> ground_level_1 = "physical quality", ground_specific = "with comfort and safety")
+## 🎉 Project Status: Dual-System Architecture Complete
+**LATEST ACHIEVEMENT**: Successfully implemented **Flexible Hierarchical Tagging System** alongside the original multi-model pipeline, providing scholars with both proven conservative detection and innovative hierarchical categorization capabilities.
+
+**✅ PHASE 1 COMPLETED (Sept 22, 2025)**: Data preprocessing and cleanup successfully completed with comprehensive category normalization and multi-type instance handling.
+
+**🎯 PHASE 2 READY**: LLM-based conceptual grouping to create semantic clusters for intuitive visualization.
+
+### Latest Achievements
+
+**🆕 Flexible Hierarchical Tagging System (Sept 25, 2025)**
+- **Revolutionary Tagging**: Hierarchical arrays for Target/Vehicle/Ground/Posture (e.g., ["specific target", "target category", "general domain"])
+- **Split Deliberations**: Separate LLM reasoning for detection vs. tagging analysis for token efficiency
+- **Enhanced JSON Parsing**: Robust extraction from conversational AI responses with bracket matching
+- **Increased Token Limits**: 15,000 tokens to prevent truncation of complex hierarchical analysis
+- **Database Integration**: Complete schema v3 with JSON storage and validation pipeline compatibility
+- **Proven Results**: 21 instances detected from Deuteronomy 30 with full hierarchical metadata
+
+**✅ Phase 1: Data Preprocessing Pipeline Completed (Sept 22, 2025)**
+- **Category Normalization**: Reduced target categories from 31→12 and vehicle categories from 35→15 through intelligent mapping
+- **Multi-Type Flow Creation**: Expanded 950 figurative instances into 1,287 visualization flows to handle multi-type instances (metaphor+idiom combinations)
+- **Data Export Pipeline**: Created `data_processor.py` with comprehensive SQLite→JSON export including Hebrew text preservation
+- **Quality Validation**: 100% data integrity maintained with enhanced structure for visualization
+
+**Enhanced Target/Vehicle/Ground Classification Framework** with explicit definitions and examples:
+- **TARGET** = WHO/WHAT the figurative speech is ABOUT (the subject being described)
+- **VEHICLE** = WHAT the target is being LIKENED TO (the comparison/image used)
+- **GROUND** = WHAT QUALITY of the target is being described (the shared quality between target and vehicle)
 
 This builds upon our advanced multi-type classification system that allows phrases to be classified as multiple figurative language types simultaneously (e.g., both metaphor AND idiom), with intelligent reclassification capabilities and complete audit trails.
 
@@ -15,7 +37,11 @@ This builds upon our advanced multi-type classification system that allows phras
 - **Validation Model**: Gemini 1.5 Flash (conservative validation)
 
 ## 🎯 Current Status
+✅ **Phase 1: Data Preprocessing Complete** - Ready for visualization development
 ✅ **Enhanced Target/Vehicle/Ground Classification**: Clearer guidance for AI classifier with explicit definitions and examples
+✅ **Category Normalization**: Consistent target (12) and vehicle (15) categories for clean visualization
+✅ **Multi-Type Flow Architecture**: 1,287 flows from 950 instances supporting combined figurative types
+✅ **Rich Metadata Export**: Hebrew text, deliberation, and validation details preserved for hover tooltips
 ✅ **Multi-Type Classification**: Each phrase can be classified as multiple figurative language types
 ✅ **Intelligent Reclassification**: Validator can correct misclassifications (e.g., metaphor → simile)
 ✅ **Dual-Field Architecture**: Separate tracking of initial detection vs. final validated results
@@ -77,9 +103,13 @@ Interactive Processing (Recommended for Targeted Analysis)
 This script allows you to analyze any book, chapter, or specific range of verses.
 
 bash
-# Run the interactive processor
+# NEW: Flexible Hierarchical Tagging System (Revolutionary hierarchical tags)
+python interactive_flexible_tagging_processor.py
+
+# ORIGINAL: Proven Multi-Model System (Conservative detection)
 python interactive_multi_model_processor.py
-The script will guide you through selecting the text you wish to process.
+
+Both scripts will guide you through selecting the text you wish to process.
 
 Batch Processing (Original Scripts)
 These scripts are useful for processing entire books at once.
@@ -233,19 +263,50 @@ CREATE TABLE figurative_language (
 - other
 
 Example: "Judah is a lion" → TARGET: target_level_1 = "Specific person", target_specific = "Judah"; VEHICLE: vehicle_level_1="natural world", vehicle_specific ="lion"; GROUND: ground_level_1="physical quality", ground_specific="strength"
-🎯 Use Cases
-Biblical Scholarship
-Targeted Analysis: Use the interactive script to quickly analyze specific passages, verses, or ranges for research papers or class preparation.
-Character-Specific Patterns: Reliably track how specific characters (e.g., Jacob, Moses) use figurative language across different contexts.
-Cross-Book Comparative Studies: Confidently compare figurative language use across different books, thanks to the consistent and robust pipeline.
-Linguistic Research
-Hebrew Figurative Language Patterns: Study patterns with research-grade accuracy, backed by a resilient data collection method.
-Translation Analysis: Compare the original Hebrew with English translations, using the LLM's analysis as a guide.
-🤝 Contributing
+## 📊 Interactive Sankey Visualization System
+
+### Overview
+We are developing a cutting-edge interactive Sankey diagram to visualize the flow of figurative language patterns from **Target** → **Vehicle** relationships in biblical Hebrew texts. This visualization will transform how scholars explore and analyze figurative language usage.
+
+### Key Features (In Development)
+🎯 **Four-Layer Flow Visualization**: Target Specific → Target Level 1 → Vehicle Level 1 → Vehicle Specific
+🧠 **LLM-Based Conceptual Grouping**: Semantic clustering of targets and vehicles for intuitive exploration
+🖱️ **Rich Interactivity**: Zoom, filter, hover tooltips with full verse context and Hebrew text
+📈 **Real-Time Statistics**: Dynamic analytics based on current view and filters
+📤 **Publication Ready**: Export high-quality figures for academic papers
+🔍 **Advanced Filtering**: By figurative type, confidence score, chapters, and custom criteria
+
+### Current Dataset
+- **950 validated figurative language instances** from Deuteronomy
+- **Multi-type classification** (metaphor, simile, personification, idiom, hyperbole, metonymy)
+- **Complete validation pipeline** with LLM deliberation and confidence scoring
+- **Rich metadata** including Hebrew text, English translation, and scholarly analysis
+
+### Development Roadmap
+See `SANKEY_VISUALIZATION_ROADMAP.md` for detailed project phases, timelines, and implementation plans.
+
+## 🎯 Use Cases
+
+### Biblical Scholarship
+- **Interactive Pattern Discovery**: Explore figurative language relationships through intuitive visual flows
+- **Targeted Analysis**: Use the interactive script to quickly analyze specific passages, verses, or ranges for research papers or class preparation
+- **Character-Specific Patterns**: Reliably track how specific characters (e.g., Jacob, Moses) use figurative language across different contexts
+- **Cross-Book Comparative Studies**: Confidently compare figurative language use across different books, thanks to the consistent and robust pipeline
+- **Publication-Ready Visualizations**: Generate high-quality Sankey diagrams for academic publications
+
+### Linguistic Research
+- **Visual Pattern Recognition**: Identify common Target→Vehicle relationships through flow visualization
+- **Hebrew Figurative Language Patterns**: Study patterns with research-grade accuracy, backed by a resilient data collection method
+- **Translation Analysis**: Compare the original Hebrew with English translations, using the LLM's analysis as a guide
+- **Semantic Domain Analysis**: Explore how different conceptual domains interact in biblical figurative language
+## 🤝 Contributing
 This project is designed for biblical scholarship and linguistic research. Contributions are welcome for:
 
-Enhancing context-aware prompting rules.
-Adding new analysis scripts or features.
-Creating scholarly validation datasets to further refine accuracy.
+- **Visualization Enhancement**: Improving the Sankey diagram interface and user experience
+- **Conceptual Grouping**: Refining LLM-based semantic clustering algorithms
+- **Context-Aware Prompting**: Enhancing prompting rules for different biblical text types
+- **Analysis Scripts**: Adding new analysis scripts or visualization features
+- **Scholarly Validation**: Creating validation datasets to further refine accuracy
+- **Cross-Book Integration**: Extending visualization to Genesis, Exodus, and other books
 📜 License
 This project is open source and available for academic and research use.
