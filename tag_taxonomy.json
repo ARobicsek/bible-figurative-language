@@ -1,0 +1,449 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "created_date": "2024-09-24",
+    "description": "Comprehensive tag taxonomy for biblical figurative language analysis",
+    "source_analysis": "Genesis (1008 instances) + Deuteronomy (950 instances)",
+    "total_instances_analyzed": 1958
+  },
+  "dimensions": {
+    "target": {
+      "description": "What is being described figuratively - the subject or object receiving figurative description",
+      "categories": {
+        "divine": {
+          "id": 1,
+          "name": "Divine Beings & Attributes",
+          "description": "God, divine attributes, divine actions and manifestations",
+          "tags": [
+            {"name": "god", "description": "The God of Israel, Yahweh", "frequency_genesis": 23, "frequency_deuteronomy": 96},
+            {"name": "divine_power", "description": "God's power and active intervention", "aliases": ["divine_strength", "godly_power"]},
+            {"name": "divine_anger", "description": "God's wrath, anger, judgment", "aliases": ["divine_wrath", "godly_anger"]},
+            {"name": "divine_presence", "description": "God's presence, manifestation, glory"},
+            {"name": "spirit_of_god", "description": "The Spirit of God, divine breath/wind"},
+            {"name": "divine_attributes", "description": "Divine characteristics and qualities"}
+          ]
+        },
+        "human_individual": {
+          "id": 2,
+          "name": "Individual People",
+          "description": "Specific persons, individuals, human roles",
+          "tags": [
+            {"name": "patriarch", "description": "Abraham, Isaac, Jacob, Joseph", "examples": ["Jacob", "Joseph", "Abraham"]},
+            {"name": "prophet", "description": "Moses and other prophetic figures"},
+            {"name": "ruler_leader", "description": "Kings, princes, leaders, authority figures"},
+            {"name": "servant", "description": "Servants, slaves, workers"},
+            {"name": "priest", "description": "Religious leaders, priests"},
+            {"name": "specific_person", "description": "Named individuals in biblical text", "frequency_genesis": 156, "frequency_deuteronomy": 54}
+          ]
+        },
+        "human_collective": {
+          "id": 3,
+          "name": "Groups & Communities",
+          "description": "Social groups, nations, peoples, communities",
+          "tags": [
+            {"name": "israel", "description": "The people of Israel, Israelites", "frequency_genesis": 107, "frequency_deuteronomy": 168},
+            {"name": "nation", "description": "Nations, peoples, ethnic groups"},
+            {"name": "family_clan", "description": "Families, clans, households, lineage"},
+            {"name": "generation", "description": "Generational groups, descendants"},
+            {"name": "community", "description": "Local communities, towns, settlements"},
+            {"name": "enemies", "description": "Opposing peoples, adversaries"}
+          ]
+        },
+        "human_action": {
+          "id": 4,
+          "name": "Human Actions & Activities",
+          "description": "Human activities, behaviors, actions being described figuratively",
+          "tags": [
+            {"name": "sexual_intercourse", "description": "Sexual relations, intimate relations", "frequency_genesis": 17, "frequency_deuteronomy": 5},
+            {"name": "worship_action", "description": "Religious practices, worship activities"},
+            {"name": "covenant_action", "description": "Covenant-making, oath-taking"},
+            {"name": "legal_action", "description": "Legal proceedings, judgments"},
+            {"name": "military_action", "description": "Warfare, fighting, conquest"},
+            {"name": "agricultural_action", "description": "Farming, harvesting, cultivation"},
+            {"name": "commercial_action", "description": "Trade, commerce, business dealings"}
+          ]
+        },
+        "state_condition": {
+          "id": 5,
+          "name": "States & Conditions",
+          "description": "Conditions, situations, states of being",
+          "tags": [
+            {"name": "marital_union", "description": "Marriage relationship, marital bond"},
+            {"name": "covenant_relationship", "description": "Covenant bonds, agreements"},
+            {"name": "life_condition", "description": "Life circumstances, living conditions"},
+            {"name": "famine", "description": "Famine conditions, food scarcity", "frequency_genesis": 6},
+            {"name": "prosperity", "description": "Wealth, abundance, flourishing"},
+            {"name": "exile_displacement", "description": "Exile, displacement, separation"},
+            {"name": "death_mortality", "description": "Death, mortality, end of life"}
+          ]
+        },
+        "natural_world": {
+          "id": 6,
+          "name": "Natural World & Creation",
+          "description": "Nature, celestial bodies, geography, created things",
+          "tags": [
+            {"name": "celestial_body", "description": "Sun, moon, stars", "examples": ["sun", "moon", "stars"]},
+            {"name": "earth_land", "description": "Earth, land, ground, soil"},
+            {"name": "water_element", "description": "Waters, seas, rivers, springs"},
+            {"name": "created_things", "description": "All created things, totality of creation"},
+            {"name": "natural_phenomena", "description": "Natural events, weather, natural processes"},
+            {"name": "geography", "description": "Geographic features, locations, territories"}
+          ]
+        },
+        "created_objects": {
+          "id": 7,
+          "name": "Artificial Objects & Structures",
+          "description": "Human-made objects, tools, structures, artifacts",
+          "tags": [
+            {"name": "dwelling", "description": "Houses, tents, dwelling places"},
+            {"name": "container", "description": "Bags, vessels, storage containers"},
+            {"name": "tool_implement", "description": "Tools, implements, equipment"},
+            {"name": "religious_object", "description": "Altars, sacred objects, ritual items"},
+            {"name": "weapon", "description": "Weapons, instruments of war"},
+            {"name": "clothing_garment", "description": "Clothing, garments, coverings"}
+          ]
+        },
+        "abstract_concept": {
+          "id": 8,
+          "name": "Abstract & Legal Concepts",
+          "description": "Ideas, principles, legal/religious/moral concepts",
+          "tags": [
+            {"name": "legal_concept", "description": "Legal principles, laws, regulations", "frequency_genesis": 52, "frequency_deuteronomy": 150},
+            {"name": "moral_concept", "description": "Moral principles, ethical standards"},
+            {"name": "religious_concept", "description": "Religious ideas, spiritual concepts"},
+            {"name": "covenant_concept", "description": "Covenant principles, agreements"},
+            {"name": "justice_concept", "description": "Justice, righteousness, fairness"},
+            {"name": "wisdom_concept", "description": "Wisdom, understanding, knowledge"}
+          ]
+        },
+        "temporal": {
+          "id": 9,
+          "name": "Time & Duration",
+          "description": "Temporal concepts, time periods, duration",
+          "tags": [
+            {"name": "lifetime", "description": "Human lifespan, duration of life"},
+            {"name": "generation_time", "description": "Generational time periods"},
+            {"name": "historical_period", "description": "Historical eras, periods"},
+            {"name": "future_time", "description": "Future periods, coming times"},
+            {"name": "eternal_time", "description": "Eternal, everlasting duration"}
+          ]
+        },
+        "psychological": {
+          "id": 10,
+          "name": "Psychological & Emotional States",
+          "description": "Emotions, psychological qualities, mental states",
+          "tags": [
+            {"name": "fear", "description": "Fear, terror, dread"},
+            {"name": "joy", "description": "Joy, happiness, gladness"},
+            {"name": "anger", "description": "Human anger, wrath"},
+            {"name": "love", "description": "Love, affection, devotion"},
+            {"name": "grief", "description": "Grief, sorrow, mourning"},
+            {"name": "desire", "description": "Desire, longing, craving"}
+          ]
+        }
+      }
+    },
+    "vehicle": {
+      "description": "What imagery is used to describe the target - the source domain providing the figurative language",
+      "categories": {
+        "human_body": {
+          "id": 1,
+          "name": "Human Body Parts",
+          "description": "Human anatomy, body parts, physical human features",
+          "tags": [
+            {"name": "hand", "description": "Hands, palms", "frequency_genesis": 30, "frequency_deuteronomy": 224},
+            {"name": "face", "description": "Face, countenance", "frequency_genesis": 24},
+            {"name": "eyes", "description": "Eyes, sight, vision", "frequency_genesis": 25},
+            {"name": "flesh_body", "description": "Flesh, body, physical being", "frequency_genesis": 12},
+            {"name": "mouth", "description": "Mouth, lips", "frequency_genesis": 5},
+            {"name": "heart", "description": "Heart, inner being"},
+            {"name": "arm", "description": "Arm, strength"},
+            {"name": "foot_leg", "description": "Feet, legs, walking"},
+            {"name": "head", "description": "Head, leadership, top"},
+            {"name": "ear", "description": "Ears, hearing"}
+          ]
+        },
+        "human_activity": {
+          "id": 2,
+          "name": "Human Actions & Behaviors",
+          "description": "Human activities, behaviors, social actions",
+          "tags": [
+            {"name": "lifting_eyes", "description": "Lifting one's eyes, looking up", "frequency_genesis": 6},
+            {"name": "lying_down", "description": "Lying down with someone, reclining", "frequency_genesis": 4},
+            {"name": "governance_rule", "description": "Ruling, governing, dominion"},
+            {"name": "nurturing_care", "description": "Caring, nurturing, protective action"},
+            {"name": "warfare_fighting", "description": "Fighting, battling, military action"},
+            {"name": "walking_journey", "description": "Walking, traveling, journeying"},
+            {"name": "building_construction", "description": "Building, constructing, making"},
+            {"name": "agricultural_work", "description": "Farming, planting, harvesting"},
+            {"name": "commercial_trade", "description": "Trading, buying, selling"}
+          ]
+        },
+        "animal_creature": {
+          "id": 3,
+          "name": "Animals & Creatures",
+          "description": "Animals, birds, creatures, living beings",
+          "tags": [
+            {"name": "bird", "description": "Birds, flying creatures"},
+            {"name": "eagle", "description": "Eagle, raptor imagery"},
+            {"name": "dove", "description": "Dove, gentle bird imagery"},
+            {"name": "lion", "description": "Lion, powerful predator"},
+            {"name": "sheep_lamb", "description": "Sheep, lambs, flock animals"},
+            {"name": "ox_cattle", "description": "Oxen, cattle, domestic animals"},
+            {"name": "wild_beast", "description": "Wild animals, untamed creatures"},
+            {"name": "serpent", "description": "Serpents, snakes"},
+            {"name": "fish", "description": "Fish, aquatic creatures"},
+            {"name": "insect", "description": "Insects, small creatures"}
+          ]
+        },
+        "natural_world": {
+          "id": 4,
+          "name": "Natural World & Elements",
+          "description": "Natural phenomena, elements, geographical features",
+          "tags": [
+            {"name": "fire", "description": "Fire, flame, burning"},
+            {"name": "water_flow", "description": "Flowing water, streams, rivers"},
+            {"name": "wind_breath", "description": "Wind, breath, air movement"},
+            {"name": "rock_stone", "description": "Rock, stone, solid foundation"},
+            {"name": "mountain", "description": "Mountains, heights, elevated places"},
+            {"name": "valley", "description": "Valleys, low places, depressions"},
+            {"name": "desert", "description": "Desert, wilderness, dry places"},
+            {"name": "garden", "description": "Gardens, cultivated places"},
+            {"name": "tree_plant", "description": "Trees, plants, vegetation"},
+            {"name": "seed", "description": "Seeds, small beginnings"}
+          ]
+        },
+        "artificial_objects": {
+          "id": 5,
+          "name": "Created Objects & Tools",
+          "description": "Human-made objects, tools, structures, artifacts",
+          "tags": [
+            {"name": "house_dwelling", "description": "Physical house/dwelling", "frequency_genesis": 4},
+            {"name": "vessel_container", "description": "Vessels, containers, receptacles"},
+            {"name": "weapon_tool", "description": "Weapons, tools, implements"},
+            {"name": "clothing_garment", "description": "Clothing, garments, coverings"},
+            {"name": "rope_cord", "description": "Ropes, cords, binding materials"},
+            {"name": "shield_protection", "description": "Shields, protective equipment"},
+            {"name": "crown_ornament", "description": "Crowns, ornaments, decorative items"},
+            {"name": "altar_structure", "description": "Altars, religious structures"},
+            {"name": "lamp_light", "description": "Lamps, lights, illumination"}
+          ]
+        },
+        "spatial_abstract": {
+          "id": 6,
+          "name": "Spatial & Abstract Concepts",
+          "description": "Spatial relationships, abstract concepts used as imagery",
+          "tags": [
+            {"name": "organized_host", "description": "Army, organized host, disciplined group"},
+            {"name": "pathway_road", "description": "Paths, roads, ways of travel"},
+            {"name": "height_elevation", "description": "Heights, elevated positions"},
+            {"name": "depth_lowness", "description": "Depths, low positions"},
+            {"name": "boundary_limit", "description": "Boundaries, limits, borders"},
+            {"name": "foundation", "description": "Foundations, base support"},
+            {"name": "shadow", "description": "Shadows, shade, protection"},
+            {"name": "light_brightness", "description": "Light, brightness, illumination"}
+          ]
+        },
+        "human_relationships": {
+          "id": 7,
+          "name": "Human Relationships & Roles",
+          "description": "Family relationships, social roles, interpersonal dynamics",
+          "tags": [
+            {"name": "father_child", "description": "Father-child relationship"},
+            {"name": "husband_wife", "description": "Marriage relationship"},
+            {"name": "master_servant", "description": "Authority-subordinate relationship"},
+            {"name": "shepherd_flock", "description": "Shepherd-flock relationship"},
+            {"name": "king_subject", "description": "Royal authority relationship"},
+            {"name": "teacher_student", "description": "Teaching relationship"},
+            {"name": "friend_companion", "description": "Friendship, companionship"},
+            {"name": "enemy_adversary", "description": "Adversarial relationship"}
+          ]
+        },
+        "workplace_activities": {
+          "id": 8,
+          "name": "Workplace & Professional Activities",
+          "description": "Professional activities, crafts, trades, ancient workplace",
+          "tags": [
+            {"name": "metalworking", "description": "Blacksmithing, metalwork"},
+            {"name": "pottery", "description": "Pottery making, clay work"},
+            {"name": "weaving", "description": "Weaving, textile work"},
+            {"name": "carpentry", "description": "Woodworking, building"},
+            {"name": "shepherding", "description": "Pastoral work, tending flocks"},
+            {"name": "agriculture", "description": "Farming, agricultural work"},
+            {"name": "hunting", "description": "Hunting, pursuing prey"},
+            {"name": "fishing", "description": "Fishing, catching fish"}
+          ]
+        }
+      }
+    },
+    "ground": {
+      "description": "The basis of comparison - what quality or relationship connects the target and vehicle",
+      "categories": {
+        "essential_nature": {
+          "id": 1,
+          "name": "Essential Nature & Identity",
+          "description": "Core identity, fundamental characteristics, being",
+          "tags": [
+            {"name": "preparatory_nurturing", "description": "Preparatory and nurturing action/presence"},
+            {"name": "holistic_unity", "description": "Complete unity, inseparable oneness", "examples": ["one flesh", "collective identity"]},
+            {"name": "shared_identity", "description": "Common identity, shared being"},
+            {"name": "fundamental_character", "description": "Core character, essential nature"},
+            {"name": "identity_presence", "description": "Identity/presence, existence"},
+            {"name": "corporeal_mortality", "description": "Corporeal existence/mortality"},
+            {"name": "reproductive_complementarity", "description": "Being a complementary, reproductive pair"},
+            {"name": "covenant_testimony", "description": "Serving as permanent testimony and guarantor of covenant"},
+            {"name": "familial_lineage", "description": "Familial unit/lineage identity"}
+          ]
+        },
+        "physical_qualities": {
+          "id": 2,
+          "name": "Physical Attributes & Spatial Relations",
+          "description": "Physical characteristics, spatial relationships, material properties",
+          "tags": [
+            {"name": "vastness_magnitude", "description": "Vastness, great size, magnitude"},
+            {"name": "order_organization", "description": "Order, organization, disciplined arrangement"},
+            {"name": "proximity_intimacy", "description": "Close proximity, physical intimacy"},
+            {"name": "strength_power", "description": "Physical strength, power, might"},
+            {"name": "fragility_weakness", "description": "Physical weakness, fragility"},
+            {"name": "beauty_appearance", "description": "Beauty, attractive appearance"},
+            {"name": "hardness_durability", "description": "Hardness, durability, lasting quality"},
+            {"name": "softness_gentleness", "description": "Physical softness, gentleness"},
+            {"name": "visibility_prominence", "description": "Visibility, prominence, being seen"}
+          ]
+        },
+        "status_hierarchy": {
+          "id": 3,
+          "name": "Status & Hierarchical Position",
+          "description": "Authority, rank, hierarchical relationships, social position",
+          "tags": [
+            {"name": "primary_authority", "description": "Primary authority, chief position"},
+            {"name": "ordering_influence", "description": "Influence that brings order, organizing power"},
+            {"name": "dominant_control", "description": "Dominion, controlling influence"},
+            {"name": "subordinate_position", "description": "Lower rank, subordinate status"},
+            {"name": "elevated_status", "description": "High position, elevated rank"},
+            {"name": "representative_authority", "description": "Acting as representative, delegated authority"},
+            {"name": "royal_dignity", "description": "Royal status, kingly dignity"},
+            {"name": "servant_humility", "description": "Servant status, humble position"}
+          ]
+        },
+        "relational_qualities": {
+          "id": 4,
+          "name": "Relational & Social Qualities",
+          "description": "Relationships, connections, social bonds, interpersonal dynamics",
+          "tags": [
+            {"name": "protective_care", "description": "Protective, caring relationship"},
+            {"name": "covenant_bond", "description": "Covenant relationship, binding agreement"},
+            {"name": "intimate_connection", "description": "Deep intimacy, close connection"},
+            {"name": "faithful_loyalty", "description": "Faithfulness, loyalty, steadfastness"},
+            {"name": "parental_care", "description": "Parental relationship, nurturing care"},
+            {"name": "marital_unity", "description": "Marriage unity, spousal bond"},
+            {"name": "community_belonging", "description": "Community membership, belonging"},
+            {"name": "hostile_opposition", "description": "Hostile relationship, opposition"},
+            {"name": "dependent_reliance", "description": "Dependence, reliance on another"}
+          ]
+        },
+        "moral_ethical": {
+          "id": 5,
+          "name": "Moral & Ethical Qualities",
+          "description": "Ethical characteristics, moral standards, righteousness",
+          "tags": [
+            {"name": "accountability_responsibility", "description": "Accountability for actions", "frequency_genesis": 3},
+            {"name": "righteousness", "description": "Righteousness, moral uprightness"},
+            {"name": "justice_fairness", "description": "Justice, fairness, equity"},
+            {"name": "faithfulness_reliability", "description": "Faithfulness, reliability, trustworthiness"},
+            {"name": "wisdom_understanding", "description": "Wisdom, understanding, discernment"},
+            {"name": "purity_holiness", "description": "Purity, holiness, sanctity"},
+            {"name": "corruption_evil", "description": "Corruption, evil, moral failure"},
+            {"name": "obedience_submission", "description": "Obedience, submission to authority"}
+          ]
+        },
+        "psychological_emotional": {
+          "id": 6,
+          "name": "Psychological & Emotional Qualities",
+          "description": "Emotional characteristics, psychological states, feelings",
+          "tags": [
+            {"name": "comfort_consolation", "description": "Comfort, consolation, soothing"},
+            {"name": "fear_terror", "description": "Fear, terror, dread"},
+            {"name": "joy_delight", "description": "Joy, delight, happiness"},
+            {"name": "anger_wrath", "description": "Anger, wrath, indignation"},
+            {"name": "love_affection", "description": "Love, affection, tender care"},
+            {"name": "grief_sorrow", "description": "Grief, sorrow, mourning"},
+            {"name": "peace_tranquility", "description": "Peace, tranquility, rest"},
+            {"name": "anxiety_worry", "description": "Anxiety, worry, distress"},
+            {"name": "hope_expectation", "description": "Hope, expectation, anticipation"}
+          ]
+        },
+        "functional_operational": {
+          "id": 7,
+          "name": "Functional & Operational Aspects",
+          "description": "Purpose, function, operational characteristics, how things work",
+          "tags": [
+            {"name": "guidance_direction", "description": "Guidance, direction, leading"},
+            {"name": "protection_security", "description": "Protection, security, safety"},
+            {"name": "provision_sustenance", "description": "Provision, sustenance, supply"},
+            {"name": "communication_revelation", "description": "Communication, revelation, disclosure"},
+            {"name": "transformation_change", "description": "Transformation, change, alteration"},
+            {"name": "creation_generation", "description": "Creation, generation, bringing forth"},
+            {"name": "destruction_judgment", "description": "Destruction, judgment, ending"},
+            {"name": "restoration_renewal", "description": "Restoration, renewal, healing"}
+          ]
+        },
+        "temporal_aspects": {
+          "id": 8,
+          "name": "Temporal Qualities",
+          "description": "Time-related aspects, duration, sequence, permanence",
+          "tags": [
+            {"name": "permanence_eternity", "description": "Permanence, eternal duration"},
+            {"name": "temporary_transient", "description": "Temporary, transient, passing"},
+            {"name": "continuity_ongoing", "description": "Continuity, ongoing nature"},
+            {"name": "immediacy_urgency", "description": "Immediacy, urgency, right now"},
+            {"name": "sequential_order", "description": "Sequential order, proper timing"},
+            {"name": "cyclical_repetitive", "description": "Cyclical, repetitive patterns"},
+            {"name": "beginning_origin", "description": "Beginning, origin, starting point"},
+            {"name": "culmination_completion", "description": "Culmination, completion, fulfillment"}
+          ]
+        },
+        "experiential_qualities": {
+          "id": 9,
+          "name": "Experiential & Lived Reality",
+          "description": "Experiential aspects, lived experience, practical reality",
+          "tags": [
+            {"name": "familiar_known", "description": "Familiar, known, experienced"},
+            {"name": "mysterious_unknown", "description": "Mysterious, unknown, hidden"},
+            {"name": "beneficial_positive", "description": "Beneficial, positive experience"},
+            {"name": "harmful_negative", "description": "Harmful, negative experience"},
+            {"name": "transformative_changing", "description": "Transformative, life-changing"},
+            {"name": "routine_ordinary", "description": "Routine, ordinary, everyday"},
+            {"name": "extraordinary_unique", "description": "Extraordinary, unique, special"},
+            {"name": "communal_shared", "description": "Communal, shared experience"}
+          ]
+        }
+      }
+    }
+  },
+  "validation_rules": {
+    "tag_naming": {
+      "format": "lowercase_with_underscores",
+      "max_length": 30,
+      "no_numbers": true,
+      "descriptive": true
+    },
+    "category_rules": {
+      "min_tags_per_category": 3,
+      "max_tags_per_category": 15,
+      "hierarchical_allowed": true
+    },
+    "assignment_rules": {
+      "min_tags_per_instance": 1,
+      "max_tags_per_instance": 12,
+      "require_primary_tag": true,
+      "allow_cross_category": true
+    }
+  },
+  "normalization_guidelines": {
+    "case_sensitivity": "case_insensitive",
+    "duplicate_handling": "merge_with_most_frequent",
+    "synonym_handling": "map_to_primary_tag",
+    "capitalization_variants": "normalize_to_lowercase"
+  }
+}

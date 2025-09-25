@@ -1,0 +1,214 @@
+{
+  "0015081c7ede7ca9bcc1b74dd81bd0c9": {
+    "groups": [
+      {
+        "name": "Edom's Geographical Domain",
+        "description": "References to the land and political territory associated with Edom, including both its general extent and specific portions with theological or prophetic significance.",
+        "members": [
+          "The land of Edom (specifically, the portion of it that Israel might possess)",
+          "The territory/region of Edom"
+        ],
+        "rationale": "Both targets fundamentally refer to the geographical and political entity of Edom's land. While one specifies a particular portion relevant to Israel's potential inheritance, it remains semantically a part of the broader Edomite territory, making them conceptually linked as aspects of Edom's domain."
+      }
+    ],
+    "ungrouped": [],
+    "confidence": 0.95,
+    "methodology": "Semantic analysis was applied to identify the core entity (Edom's land) and its various representations. Given the limited number of targets and their strong conceptual overlap, they were grouped into a single category representing the geographical and political extent of Edom, encompassing both general and specific, biblically significant references."
+  },
+  "056ab28d6a75a75191189d826fa34714": {
+    "groups": [
+      {
+        "name": "Divine Intervention & Covenant Fulfillment",
+        "description": "Actions where God directly intervenes in human history, often to fulfill His promises or demonstrate His sovereignty.",
+        "members": [
+          "God granting the land to the Israelites",
+          "God's actions in Egypt"
+        ],
+        "rationale": "Both targets describe powerful, direct actions of God that are foundational to Israel's identity and destiny, involving deliverance and the fulfillment of covenant promises regarding the land."
+      },
+      {
+        "name": "Human-Divine Communication",
+        "description": "Actions representing the Israelites' direct communication with God, typically seeking His help, guidance, or mercy.",
+        "members": [
+          "Israelites' appeal to God",
+          "Israelites' prayer/plea"
+        ],
+        "rationale": "These targets are semantically very close, both referring to the act of supplication and direct communication from the people to God, expressing need or devotion."
+      },
+      {
+        "name": "Israelites' Practical Engagement with the Land",
+        "description": "Concrete actions taken by the Israelites in relation to the promised land, involving exploration, preparation, and securing their inheritance.",
+        "members": [
+          "investigating the land",
+          "making the land available/accessible"
+        ],
+        "rationale": "These actions are specific to the Israelites' physical and strategic efforts concerning the land – first exploring it, then actively working to possess and settle it."
+      },
+      {
+        "name": "Reporting & Information Dissemination",
+        "description": "Actions focused on the transmission of facts, findings, or responses within the community.",
+        "members": [
+          "Giving a report or answer",
+          "reporting information"
+        ],
+        "rationale": "Both targets describe the act of conveying information, whether as a formal report of findings or a direct answer to an inquiry, emphasizing the flow of knowledge."
+      },
+      {
+        "name": "Israelites' Internal Challenges & Leadership",
+        "description": "Actions related to the internal struggles, leadership responsibilities, and general activities involved in sustaining and guiding the Israelite community through hardship.",
+        "members": [
+          "The act of managing and enduring the people's difficulties",
+          "The Israelites' efforts and undertakings"
+        ],
+        "rationale": "These targets encompass the broader human effort and responsibility within the Israelite community, dealing with internal governance, perseverance through hardship, and general collective endeavors."
+      },
+      {
+        "name": "Moral Failings & Negative Outcomes",
+        "description": "Actions representing ethical misconduct or significant negative consequences experienced by the Israelites, often linked to disobedience or divine judgment.",
+        "members": [
+          "showing partiality in judgment",
+          "the defeat of the Israelites"
+        ],
+        "rationale": "One target describes a specific moral failure (injustice in judgment), while the other describes a significant negative outcome or consequence, often resulting from such failings or divine displeasure. Both represent critical moments of ethical breach or its direct, adverse result."
+      }
+    ],
+    "ungrouped": [],
+    "confidence": 0.95,
+    "methodology": "Targets were analyzed for semantic similarity and biblical context. An iterative process of identifying core themes, proposing initial groups, and refining group names, descriptions, and member assignments was used. The goal was to create distinct, intuitive categories with at least two members each, ensuring all targets were covered."
+  },
+  "f974932d339cf677f317af394c0a1cd3": {
+    "groups": [
+      {
+        "name": "Other Nations & Pre-Israelite Inhabitants",
+        "description": "Groups distinct from Israel, often depicted as adversaries or those dispossessed from the land.",
+        "members": [
+          "The Amorites (their manner of attack)",
+          "The Emim",
+          "The Horites (who were removed)"
+        ],
+        "rationale": "These targets represent specific non-Israelite peoples who inhabited the land before or alongside Israel, frequently serving as antagonists or examples of nations displaced by divine decree. The parenthetical notes further characterize their role in the biblical narrative."
+      },
+      {
+        "name": "The Israelite Nation: Identity & Demography",
+        "description": "Aspects of the Israelite people as a unified national entity, including their corporate responsibilities and numerical strength.",
+        "members": [
+          "The Israelites (as a collective responsibility)",
+          "The Israelites (their population size)",
+          "The Israelites' population/numbers"
+        ],
+        "rationale": "These targets collectively describe the nation of Israel, focusing on its corporate identity and shared obligations ('collective responsibility') as well as its quantitative aspects ('population size,' 'population/numbers'), which are often significant in biblical narratives (e.g., census, blessings of multitude)."
+      },
+      {
+        "name": "Internal Social Strata & Generational Continuity",
+        "description": "Different segments, roles, and generational aspects within a social group, particularly Israelite society.",
+        "members": [
+          "The appointed leaders",
+          "The children of the Israelites",
+          "descendants/heirs",
+          "people of low and high social status"
+        ],
+        "rationale": "This group encompasses the internal differentiation within a society. 'Appointed leaders' and 'people of low and high social status' highlight social hierarchy and roles. 'The children of the Israelites' and 'descendants/heirs' emphasize lineage, future generations, and the continuity of the social group over time, which is crucial in covenantal theology."
+      }
+    ],
+    "ungrouped": [],
+    "confidence": 0.95,
+    "methodology": "Targets were analyzed for semantic similarity and biblical context. Groups were formed based on overarching themes: external non-Israelite groups, the Israelite nation's corporate and demographic identity, and internal social structures including hierarchy and generational continuity. All targets were assigned to a group with at least two members."
+  },
+  "3878b6391eae672269fd4e75bc4469f2": {
+    "groups": [
+      {
+        "name": "Human-Imposed Burdens",
+        "description": "States of hardship, oppression, or responsibility originating from human actions or societal demands.",
+        "members": [
+          "The Israelites' subjugation to the Amorites",
+          "The difficulties and responsibilities imposed by the people"
+        ],
+        "rationale": "Both targets describe negative conditions or obligations placed upon the Israelites by other human entities, whether external enemies (Amorites) or their own community ('the people'). They represent states of being under human-generated duress or obligation."
+      },
+      {
+        "name": "Divine Favor & Protection",
+        "description": "States of being blessed, supported, and safeguarded through direct divine intervention.",
+        "members": [
+          "Divine support and protection for the Israelites"
+        ],
+        "rationale": "This target uniquely represents a positive state of being that is a direct result of God's active involvement and care for His people, distinct from human-generated conditions or subjective evaluations. It stands alone due to its singular divine source and beneficial nature."
+      },
+      {
+        "name": "Evaluative Stance",
+        "description": "States reflecting the speaker's subjective assessment, approval, or condemnation of a situation, person, or action.",
+        "members": [
+          "Speaker's approval or judgment"
+        ],
+        "rationale": "This target captures the speaker's personal perspective and moral or qualitative assessment, which is a state of being *evaluated* rather than an objective external or divine condition. It encompasses both positive (approval) and negative (judgment) assessments from a subjective viewpoint, making it distinct from the other categories."
+      }
+    ],
+    "ungrouped": [],
+    "confidence": 0.95,
+    "methodology": "Targets were grouped based on the primary source or nature of the 'state of being': whether it is imposed by human entities, granted by divine intervention, or represents a subjective evaluation from a speaker's perspective. This approach creates distinct conceptual categories for visualization."
+  },
+  "12659257ca1d839f9edddf70326134cc": {
+    "groups": [
+      {
+        "name": "Psychological Responses to Adversity",
+        "description": "This group encompasses the internal states of mind and emotional reactions experienced by individuals or groups when facing threats, challenges, or powerful adversaries, including both resilience and apprehension.",
+        "members": [
+          "The Israelites' courage/morale",
+          "Fear",
+          "Intimidation of a person"
+        ],
+        "rationale": "Courage/morale represents the internal strength and resolve to confront danger. Fear is the primary emotional response to perceived threat. Intimidation of a person is an external act designed to induce fear and diminish courage/morale, thus directly influencing these psychological states within the context of adversity. All three targets are deeply interconnected in biblical narratives concerning conflict and divine challenge."
+      }
+    ],
+    "ungrouped": [],
+    "confidence": 0.95,
+    "methodology": "The grouping focused on identifying the core dynamic between these psychological qualities, recognizing that courage, fear, and intimidation are often presented in biblical narratives as interconnected responses or influences in the face of threat or challenge. Given the limited number of targets, a single comprehensive group was formed to best capture their strong semantic and functional relationships, rather than artificially splitting them into less cohesive categories."
+  },
+  "c42f8b3a53cacfa6ac669d41a209d0b4": {
+    "groups": [
+      {
+        "name": "The Divine Word/Command",
+        "description": "Expressions referring to the authoritative communication, instruction, or decree originating directly from God.",
+        "members": [
+          "God's command/word",
+          "The command/word of YHWH"
+        ],
+        "rationale": "These targets are semantically identical, both referring to the divine utterance or instruction. Whether using the general term 'God' or the specific covenant name 'YHWH', they represent the authoritative, often performative, and foundational speech of the divine in biblical thought."
+      }
+    ],
+    "ungrouped": [],
+    "confidence": 0.98,
+    "methodology": "The targets were analyzed for their core semantic meaning within a biblical context. Given their near-synonymous nature, referring to the authoritative communication from the divine, they were grouped together. The specific name 'YHWH' is understood as a direct reference to 'God', making the concepts interchangeable for this grouping purpose. Since only two targets were provided, they naturally form a single, highly cohesive group."
+  },
+  "cf2f780440bee9d3988c9747d8cebded": {
+    "groups": [
+      {
+        "name": "Divine Action and Providence",
+        "description": "Concepts describing God's inherent capacity to act and His specific, ongoing involvement in the world and with His chosen people.",
+        "members": [
+          "God's power and agency",
+          "God's providential care for Israel"
+        ],
+        "rationale": "God's providential care for Israel is a direct and specific expression of His overarching power and agency. Both targets highlight God's active, sovereign engagement in creation and history, demonstrating His will and ability to intervene and sustain."
+      }
+    ],
+    "ungrouped": [],
+    "confidence": 0.95,
+    "methodology": "Identified the core semantic relationship between the two targets, recognizing that 'providential care' is a specific application and manifestation of 'power and agency'. Grouped them under a unifying concept of God's active involvement and rule, ensuring compliance with the '2+ members per group' guideline."
+  },
+  "8e9488371a59f497ab718fb66195f2a5": {
+    "groups": [
+      {
+        "name": "Qualities of Exemplary Leadership and Service",
+        "description": "Attributes, character traits, and preparatory roles that define individuals called to lead and serve God's people.",
+        "members": [
+          "Caleb's devotion and obedience",
+          "Joshua's role/relationship to Moses"
+        ],
+        "rationale": "Caleb's devotion and obedience are foundational character qualities for godly leadership and service. Joshua's role as Moses' servant and successor represents a divinely appointed preparatory position, embodying faithfulness and readiness for leadership. Both targets highlight essential aspects of individuals chosen by God for significant roles."
+      }
+    ],
+    "ungrouped": [],
+    "confidence": 1.0,
+    "methodology": "Analyzed the semantic core of each target, identifying common themes of faithfulness, service, and leadership preparation. Given the constraint of only two targets, they were grouped under a single conceptual umbrella that encompasses these shared aspects, focusing on the attributes and roles that define exemplary figures in biblical leadership."
+  }
+}
