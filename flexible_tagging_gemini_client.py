@@ -277,6 +277,124 @@ Analysis:"""
                 self.logger.error(f"Flexible analysis failed: {error_msg}")
             return None, error_msg, {'error': True}
 
+    def analyze_with_tertiary_fallback(self, hebrew_text: str, english_text: str,
+                                     book: str = "", chapter: int = 0):
+        """
+        Tertiary fallback system: Task decomposition approach for complex verses
+
+        When both primary and secondary models fail, break the task into:
+        1. Detection only (simplified prompt)
+        2. Validation only (if detection succeeds)
+        3. Tagging only (if validation succeeds)
+
+        Returns: Tuple of (response_text, error, metadata)
+        """
+        if self.logger:
+            self.logger.info(f"🔄 TERTIARY FALLBACK: Using task decomposition approach")
+
+        try:
+            # Step 1: Detection only
+            detection_result, detection_error = self._call_detection_only(hebrew_text, english_text, book, chapter)
+            if detection_error or not detection_result.get('has_figurative_language'):
+                if self.logger:
+                    self.logger.info(f"🔍 STEP 1 (Detection): No figurative language detected or failed")
+
+                # Return empty result but mark as tertiary processed
+                metadata = {
+                    'model_used': 'gemini-2.5-pro',
+                    'tertiary_decomposed': True,
+                    'tertiary_step_completed': 'detection',
+                    'flexible_instances': [],
+                    'figurative_detection_deliberation': detection_result.get('deliberation', ''),
+                    'tagging_analysis_deliberation': '',
+                    'instances_count': 0,
+                    'flexible_tagging_used': True,
+                    'truncation_detected': False
+                }
+                return "[]", None, metadata
+
+            if self.logger:
+                self.logger.info(f"🔍 STEP 1 (Detection): Found {len(detection_result.get('instances', []))} potential instances")
+
+            # Step 2: Validation only
+            validation_result, validation_error = self._call_validation_only(detection_result, hebrew_text, english_text)
+            if validation_error or not validation_result.get('validated_instances'):
+                if self.logger:
+                    self.logger.info(f"✅ STEP 2 (Validation): No instances validated or failed")
+
+                metadata = {
+                    'model_used': 'gemini-2.5-pro',
+                    'tertiary_decomposed': True,
+                    'tertiary_step_completed': 'validation',
+                    'flexible_instances': [],
+                    'figurative_detection_deliberation': detection_result.get('deliberation', ''),
+                    'tagging_analysis_deliberation': validation_result.get('validation_deliberation', ''),
+                    'instances_count': 0,
+                    'flexible_tagging_used': True,
+                    'truncation_detected': False
+                }
+                return "[]", None, metadata
+
+            if self.logger:
+                self.logger.info(f"✅ STEP 2 (Validation): {len(validation_result.get('validated_instances', []))} instances validated")
+
+            # Step 3: Tagging only
+            tagging_result, tagging_error = self._call_tagging_only(validation_result, hebrew_text, english_text)
+            if tagging_error:
+                if self.logger:
+                    self.logger.warning(f"🏷️ STEP 3 (Tagging): Failed - {tagging_error}")
+
+                # Return validated instances without hierarchical tags
+                instances = validation_result.get('validated_instances', [])
+                for instance in instances:
+                    instance['target'] = []
+                    instance['vehicle'] = []
+                    instance['ground'] = []
+                    instance['posture'] = []
+
+                metadata = {
+                    'model_used': 'gemini-2.5-pro',
+                    'tertiary_decomposed': True,
+                    'tertiary_step_completed': 'validation',  # Stopped at validation
+                    'flexible_instances': instances,
+                    'figurative_detection_deliberation': detection_result.get('deliberation', ''),
+                    'tagging_analysis_deliberation': validation_result.get('validation_deliberation', ''),
+                    'instances_count': len(instances),
+                    'flexible_tagging_used': True,
+                    'truncation_detected': False
+                }
+                return json.dumps(instances), None, metadata
+
+            if self.logger:
+                self.logger.info(f"🏷️ STEP 3 (Tagging): Successfully tagged {len(tagging_result.get('tagged_instances', []))} instances")
+
+            # Success! Combine all results
+            instances = tagging_result.get('tagged_instances', [])
+            metadata = {
+                'model_used': 'gemini-2.5-pro',
+                'tertiary_decomposed': True,
+                'tertiary_step_completed': 'tagging',  # Completed all steps
+                'flexible_instances': instances,
+                'figurative_detection_deliberation': detection_result.get('deliberation', ''),
+                'tagging_analysis_deliberation': tagging_result.get('tagging_deliberation', ''),
+                'instances_count': len(instances),
+                'flexible_tagging_used': True,
+                'truncation_detected': False
+            }
+
+            return json.dumps(instances), None, metadata
+
+        except Exception as e:
+            error_msg = f"Tertiary fallback failed: {str(e)}"
+            if self.logger:
+                self.logger.error(error_msg)
+            return "[]", error_msg, {
+                'model_used': 'gemini-2.5-pro',
+                'tertiary_decomposed': True,
+                'tertiary_step_completed': 'failed',
+                'error': True
+            }
+
     def _try_model_analysis_with_custom_prompt(self, model, config, model_name, prompt):
         """Try analysis with custom flexible tagging prompt"""
         max_retries = 3
@@ -569,24 +687,37 @@ Analysis:"""
                     "this phrase", "this is", "functions as", "serves as", "represents"
                 ])
 
-                # Check for explicit conclusions about figurative language
-                has_figurative_conclusions = any(term in combined_text for term in [
+                # Check for explicit POSITIVE conclusions about figurative language
+                # Must exclude negative statements like "no figurative language"
+                has_positive_figurative_conclusions = any(term in combined_text for term in [
                     "is a metaphor", "is an idiom", "is hyperbole", "is metonymy",
-                    "biblical idiom", "figurative language", "non-literal"
+                    "biblical idiom", "this is figurative", "contains figurative", "uses figurative"
                 ])
 
+                # Check for negative conclusions that should NOT trigger fallback
+                has_negative_figurative_conclusions = any(term in combined_text for term in [
+                    "no figurative language", "not figurative", "no elements", "does not contain",
+                    "not meet the criteria", "no metaphor", "no idiom", "no hyperbole",
+                    "literal language", "straightforward language"
+                ])
+
+                # Final determination: only positive conclusions count
+                has_figurative_conclusions = has_positive_figurative_conclusions and not has_negative_figurative_conclusions
+
                 # Check for missing TAGGING_ANALYSIS section (indicates truncation)
+                # FIXED: Only trigger when deliberation actually found figurative language
                 missing_tagging_analysis = (
                     figurative_detection.strip() and  # Has FIGURATIVE_DETECTION
                     not tagging_analysis.strip() and  # But missing TAGGING_ANALYSIS
-                    json_string.strip() == "[]"       # And empty JSON result
+                    json_string.strip() == "[]" and   # And empty JSON result
+                    has_figurative_conclusions         # AND deliberation concludes figurative language was found
                 )
 
                 # Multiple criteria for triggering fallback
                 is_likely_truncated = ends_abruptly and has_indicators
                 is_analysis_complete_but_json_empty = (
                     has_indicators and
-                    (has_substantial_analysis or has_figurative_conclusions) and
+                    has_figurative_conclusions and  # FIXED: Only trigger if positive conclusions found
                     has_figurative_analysis
                 )
 
@@ -906,6 +1037,306 @@ Analysis:"""
             return json_str
         except:
             return None
+
+    def _call_detection_only(self, hebrew_text: str, english_text: str, book: str, chapter: int):
+        """
+        Step 1: Detection only - simplified prompt for identifying figurative language
+        """
+        text_context = self._determine_text_context(book, chapter)
+
+        # Create simplified detection-only prompt (no tagging instructions)
+        context_rules = self._get_context_rules(text_context)
+
+        prompt = f"""You are a biblical Hebrew scholar analyzing this text for figurative language.
+
+Hebrew: {hebrew_text}
+English: {english_text}
+
+{context_rules}
+
+**TASK: DETECTION ONLY**
+
+**FIRST, provide your reasoning in a DETECTION_DELIBERATION section:**
+
+DETECTION_DELIBERATION:
+[Analyze EVERY potential figurative element in this verse. For each phrase/concept, explain:
+- What you considered (e.g., "considered if 'X' might be metaphor, metonymy, etc")
+- Your reasoning for including/excluding it
+- Any borderline cases you debated]
+
+**THEN provide STRUCTURED JSON OUTPUT (REQUIRED):**
+
+You MUST output a valid JSON array. Use this exact format:
+
+Example for figurative language found:
+[{{"figurative_language": "yes", "simile": "no", "metaphor": "yes", "personification": "no", "idiom": "no", "hyperbole": "no", "metonymy": "no", "other": "no", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "confidence": 0.8, "speaker": "Speaker name", "purpose": "Purpose"}}]
+
+**CRITICAL**: Use only JSON format. No markdown, no bullet points, no prose.
+**If no figurative language found, output exactly:** []
+
+Analysis:"""
+
+        try:
+            import google.generativeai as genai
+            model = genai.GenerativeModel("gemini-2.5-pro")
+            config = {
+                'temperature': 0.05,  # Very conservative for detection
+                'top_p': 0.7,
+                'top_k': 20,
+                'max_output_tokens': 8000,  # Smaller limit for simpler task
+            }
+
+            response = model.generate_content(prompt, generation_config=config)
+
+            if not response.candidates or not response.candidates[0].content:
+                return {'has_figurative_language': False, 'deliberation': ''}, "No response from model"
+
+            response_text = response.candidates[0].content.parts[0].text
+
+            # Extract deliberation
+            deliberation = ""
+            # Try multiple patterns to match different response formats
+            patterns = [
+                r'DETECTION_DELIBERATION\s*:?\s*(.*?)(?=JSON|Analysis|\[|$)',
+                r'\*\*FIGURATIVE_DETECTION\*\*:?\s*(.*?)(?=JSON|Analysis|\[|$)',
+                r'FIGURATIVE_DETECTION\s*:?\s*(.*?)(?=JSON|Analysis|\[|$)'
+            ]
+
+            for pattern in patterns:
+                detection_match = re.search(pattern, response_text, re.IGNORECASE | re.DOTALL)
+                if detection_match:
+                    deliberation = detection_match.group(1).strip()
+                    break
+
+            # Extract JSON instances
+            json_string = self._extract_json_array(response_text)
+            instances = []
+            if json_string and json_string != "[]":
+                try:
+                    instances = json.loads(json_string)
+                except json.JSONDecodeError:
+                    pass
+
+            has_figurative = len(instances) > 0
+
+            return {
+                'has_figurative_language': has_figurative,
+                'instances': instances,
+                'deliberation': deliberation
+            }, None
+
+        except Exception as e:
+            return {'has_figurative_language': False, 'deliberation': ''}, str(e)
+
+    def _call_validation_only(self, detection_result, hebrew_text: str, english_text: str):
+        """
+        Step 2: Validation only - validate detected figurative language
+        """
+        instances = detection_result.get('instances', [])
+        if not instances:
+            return {'validated_instances': []}, None
+
+        # Create validation-focused prompt
+        instances_text = "\n".join([f"- {inst.get('english_text', '')}: {inst.get('explanation', '')}"
+                                   for inst in instances])
+
+        prompt = f"""You are a biblical Hebrew scholar validating figurative language detections.
+
+Hebrew: {hebrew_text}
+English: {english_text}
+
+**DETECTED INSTANCES TO VALIDATE:**
+{instances_text}
+
+**TASK: VALIDATION ONLY**
+
+**FIRST, provide your reasoning in a VALIDATION_DELIBERATION section:**
+
+VALIDATION_DELIBERATION:
+[For each detected instance, analyze:
+- Is this truly figurative language?
+- Is the classification (metaphor, simile, etc.) correct?
+- Should it be reclassified to a different type?
+- Should it be rejected as not figurative?]
+
+**THEN provide JSON OUTPUT:**
+
+Return only the VALID instances in JSON format. For each valid instance:
+- Keep original fields: figurative_language, simile, metaphor, etc.
+- Add validation_decision: "VALID", "RECLASSIFIED", or "INVALID"
+- If RECLASSIFIED, correct the type fields
+- Include all original metadata
+
+**If no instances are valid, output:** []
+
+Analysis:"""
+
+        try:
+            import google.generativeai as genai
+            model = genai.GenerativeModel("gemini-2.5-pro")
+            config = {
+                'temperature': 0.05,
+                'top_p': 0.7,
+                'top_k': 20,
+                'max_output_tokens': 8000,
+            }
+
+            response = model.generate_content(prompt, generation_config=config)
+
+            if not response.candidates or not response.candidates[0].content:
+                return {'validated_instances': []}, "No response from model"
+
+            response_text = response.candidates[0].content.parts[0].text
+
+            # Extract validation deliberation
+            validation_deliberation = ""
+            validation_match = re.search(r'VALIDATION_DELIBERATION\s*:?\s*(.*?)(?=JSON|Analysis|\[|$)',
+                                        response_text, re.IGNORECASE | re.DOTALL)
+            if validation_match:
+                validation_deliberation = validation_match.group(1).strip()
+
+            # Extract validated instances
+            json_string = self._extract_json_array(response_text)
+            validated_instances = []
+            if json_string and json_string != "[]":
+                try:
+                    validated_instances = json.loads(json_string)
+                except json.JSONDecodeError:
+                    pass
+
+            return {
+                'validated_instances': validated_instances,
+                'validation_deliberation': validation_deliberation
+            }, None
+
+        except Exception as e:
+            return {'validated_instances': []}, str(e)
+
+    def _call_tagging_only(self, validation_result, hebrew_text: str, english_text: str):
+        """
+        Step 3: Tagging only - add hierarchical tags to validated instances
+        """
+        instances = validation_result.get('validated_instances', [])
+        if not instances:
+            return {'tagged_instances': []}, None
+
+        # Create tagging-focused prompt
+        instances_text = "\n".join([f"- {inst.get('english_text', '')}: {inst.get('explanation', '')}"
+                                   for inst in instances])
+
+        prompt = f"""You are a biblical Hebrew scholar adding hierarchical tags to validated figurative language.
+
+Hebrew: {hebrew_text}
+English: {english_text}
+
+**VALIDATED INSTANCES TO TAG:**
+{instances_text}
+
+**TASK: HIERARCHICAL TAGGING ONLY**
+
+**HIERARCHICAL TAGGING GUIDE:**
+- TARGET = WHO/WHAT the figurative speech is ABOUT (specific → category → domain)
+- VEHICLE = WHAT the target is being LIKENED TO (specific → category → domain)
+- GROUND = WHAT QUALITY is being described (specific → type → aspect)
+- POSTURE = SPEAKER ATTITUDE (specific → category → orientation)
+
+**Examples:**
+- target: ["David", "king", "person"]
+- vehicle: ["lion", "predatory animal", "living creature"]
+- ground: ["strength", "physical quality", "attribute"]
+- posture: ["celebration", "praise", "positive sentiment"]
+
+**FIRST, provide your reasoning in a TAGGING_DELIBERATION section:**
+
+TAGGING_DELIBERATION:
+[For each instance, explain your hierarchical tag choices:
+- Why you chose each TARGET level
+- Why you chose each VEHICLE level
+- Why you chose each GROUND level
+- Why you chose each POSTURE level]
+
+**THEN provide JSON OUTPUT:**
+
+Return all instances with added hierarchical tags:
+- Keep ALL original fields unchanged
+- Add: "target": ["specific", "category", "domain"]
+- Add: "vehicle": ["specific", "category", "domain"]
+- Add: "ground": ["specific", "type", "aspect"]
+- Add: "posture": ["specific", "category", "orientation"]
+
+Analysis:"""
+
+        try:
+            import google.generativeai as genai
+            model = genai.GenerativeModel("gemini-2.5-pro")
+            config = {
+                'temperature': 0.05,
+                'top_p': 0.7,
+                'top_k': 20,
+                'max_output_tokens': 8000,
+            }
+
+            response = model.generate_content(prompt, generation_config=config)
+
+            if not response.candidates or not response.candidates[0].content:
+                return {'tagged_instances': []}, "No response from model"
+
+            response_text = response.candidates[0].content.parts[0].text
+
+            # Extract tagging deliberation
+            tagging_deliberation = ""
+            tagging_match = re.search(r'TAGGING_DELIBERATION\s*:?\s*(.*?)(?=JSON|Analysis|\[|$)',
+                                     response_text, re.IGNORECASE | re.DOTALL)
+            if tagging_match:
+                tagging_deliberation = tagging_match.group(1).strip()
+
+            # Extract tagged instances
+            json_string = self._extract_json_array(response_text)
+            tagged_instances = []
+            if json_string and json_string != "[]":
+                try:
+                    tagged_instances = json.loads(json_string)
+                    # Ensure all instances have hierarchical tags
+                    for instance in tagged_instances:
+                        if 'target' not in instance:
+                            instance['target'] = []
+                        if 'vehicle' not in instance:
+                            instance['vehicle'] = []
+                        if 'ground' not in instance:
+                            instance['ground'] = []
+                        if 'posture' not in instance:
+                            instance['posture'] = []
+                except json.JSONDecodeError:
+                    pass
+
+            return {
+                'tagged_instances': tagged_instances,
+                'tagging_deliberation': tagging_deliberation
+            }, None
+
+        except Exception as e:
+            return {'tagged_instances': []}, str(e)
+
+    def _get_context_rules(self, context: str) -> str:
+        """Get context-specific rules for the simplified prompts"""
+        if context == TextContext.CREATION_NARRATIVE.value:
+            return """**CREATION NARRATIVE - ULTRA CONSERVATIVE**
+- NEVER mark divine creation verbs, procedural language, or primordial descriptions as figurative
+- ONLY mark clear cross-domain metaphors"""
+        elif context == TextContext.POETIC_BLESSING.value:
+            return """**POETIC BLESSING - BALANCED DETECTION**
+- MARK tribal animal characterizations, cross-domain comparisons
+- BE CONSERVATIVE with genealogical and historical statements"""
+        elif context == TextContext.LEGAL_CEREMONIAL.value:
+            return """**LEGAL/CEREMONIAL - MODERATE CONSERVATIVE**
+- NEVER mark technical religious terms or procedural instructions
+- MARK clear cross-domain metaphors and obvious similes"""
+        else:
+            return """**NARRATIVE - STANDARD CONSERVATIVE**
+- BE CONSERVATIVE with standard narrative language and divine anthropomorphisms
+- MARK clear metaphors (e.g., "cleave to God" using physical attachment for spiritual devotion)
+- MARK personification and obvious similes
+- MARK physical verbs applied to spiritual/abstract concepts"""
 
 
 if __name__ == "__main__":

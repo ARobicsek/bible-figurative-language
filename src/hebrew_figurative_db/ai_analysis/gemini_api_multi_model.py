@@ -37,7 +37,7 @@ class FinishReason(Enum):
 
 
 PRIMARY_MODEL = 'gemini-2.5-flash'
-FALLBACK_MODEL = 'gemini-1.5-flash'
+FALLBACK_MODEL = 'gemini-1.5-flash-latest'
 
 
 class MultiModelGeminiClient:
@@ -206,7 +206,6 @@ class MultiModelGeminiClient:
 
                     cleaned_response, all_instances, deliberation, truncation_info = self._clean_response(response_text.strip(), hebrew_text, english_text)
                     metadata['all_detected_instances'] = all_instances
-                    metadata['llm_deliberation'] = deliberation
                     metadata['truncation_info'] = truncation_info
                     return cleaned_response, None, metadata
                 else:

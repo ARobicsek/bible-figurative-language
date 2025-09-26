@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS verses (
     instances_lost_to_truncation INTEGER,
     truncation_occurred TEXT CHECK(truncation_occurred IN ('yes', 'no')) DEFAULT 'no',
     both_models_truncated TEXT CHECK(both_models_truncated IN ('yes', 'no')) DEFAULT 'no',  -- Track when both Flash and Pro models fail
+    model_used TEXT DEFAULT 'gemini-2.5-flash',  -- Track which AI model processed this verse
     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
