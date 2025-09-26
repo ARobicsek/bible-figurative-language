@@ -18,8 +18,7 @@ CREATE TABLE IF NOT EXISTS verses (
     english_text TEXT NOT NULL,
     word_count INTEGER,
     llm_restriction_error TEXT,
-    llm_detection_deliberation TEXT,        -- NEW: Reasoning about whether text contains figurative language
-    llm_classification_deliberation TEXT,   -- NEW: Reasoning about how to analyze/tag the figurative language
+    figurative_detection_deliberation TEXT,  -- LLM reasoning about figurative language detection for this verse
     instances_detected INTEGER,
     instances_recovered INTEGER,
     instances_lost_to_truncation INTEGER,
@@ -73,7 +72,6 @@ CREATE TABLE IF NOT EXISTS figurative_language (
     explanation TEXT,
     speaker TEXT,
     purpose TEXT,
-    original_detection_types TEXT,
 
     -- NEW: Enhanced analysis fields
     speaker_posture_primary TEXT,        -- Primary speaker attitude/stance

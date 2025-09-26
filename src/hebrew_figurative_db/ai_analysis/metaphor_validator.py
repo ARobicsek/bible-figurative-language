@@ -7,6 +7,7 @@ import google.generativeai as genai
 import os
 import json
 import time
+import re
 from typing import List, Dict, Optional, Tuple
 
 
@@ -27,19 +28,265 @@ class MetaphorValidator:
         self.logger = logger
         genai.configure(api_key=api_key)
 
-        # Use same model as main detection
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        # Use same model constants as main detection for consistency
+        PRIMARY_MODEL = 'gemini-2.5-flash'
+        FALLBACK_MODEL = 'gemini-1.5-flash'
 
-        # Conservative generation config for validation
+        # Primary model: Gemini 2.5 Flash
+        try:
+            self.model = genai.GenerativeModel(PRIMARY_MODEL)
+            self.model_name = PRIMARY_MODEL
+        except Exception:
+            # Fallback if 2.5 not available
+            self.model = genai.GenerativeModel(FALLBACK_MODEL)
+            self.model_name = FALLBACK_MODEL
+
+        # Fallback model: Gemini 1.5 Flash
+        self.fallback_model = genai.GenerativeModel(FALLBACK_MODEL)
+        self.fallback_model_name = FALLBACK_MODEL
+
+        # Conservative generation config for validation (increased token limit to match main system)
         self.generation_config = {
             'temperature': 0.05,  # Very low temperature for consistency
             'top_p': 0.7,
             'top_k': 20,
-            'max_output_tokens': 1024,
+            'max_output_tokens': 15000,  # Further increased to prevent truncation in complex validation
         }
 
         self.validation_count = 0
         self.type_validation_count = 0
+
+    def validate_verse_instances(self, instances: List[Dict], hebrew_text: str, english_text: str) -> List[Dict]:
+        """Validate all instances found in a single verse with one API call."""
+        if not instances:
+            return []
+
+        # Add a temporary unique ID to each instance for correlation
+        for i, instance in enumerate(instances):
+            instance['instance_id'] = i + 1
+
+        prompt = self._create_bulk_validation_prompt(instances, hebrew_text, english_text)
+
+        try:
+            response = self.model.generate_content(
+                prompt,
+                generation_config=self.generation_config
+            )
+            self.validation_count += 1
+
+            if response.text:
+                # Extract JSON from the response
+                json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response.text, re.DOTALL)
+                if json_match:
+                    json_string = json_match.group(1).strip()
+                    try:
+                        validation_results = json.loads(json_string)
+                        return validation_results
+                    except json.JSONDecodeError as e:
+                        if self.logger:
+                            self.logger.error(f"Failed to parse bulk validation JSON: {e}")
+                        return []
+                else:
+                    if self.logger:
+                        self.logger.error("No JSON block found in bulk validation response.")
+                    return []
+            else:
+                if self.logger:
+                    self.logger.error("Empty response from bulk validation API call.")
+                return []
+
+        except Exception as e:
+            if self.logger:
+                self.logger.error(f"API error during bulk validation: {e}")
+            return []
+
+    def _create_bulk_validation_prompt(self, instances: List[Dict], hebrew_text: str, english_text: str) -> str:
+        """Create a prompt to validate all instances from a verse in a single call."""
+
+        # Prepare a simplified list of instances for the prompt
+        prompt_instances = []
+        for instance in instances:
+            types_to_validate = []
+            for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+                if instance.get(fig_type) == 'yes':
+                    types_to_validate.append(fig_type)
+            
+            prompt_instances.append({
+                "instance_id": instance['instance_id'],
+                "english_text": instance.get('english_text', ''),
+                "explanation": instance.get('explanation', ''),
+                "types": types_to_validate
+            })
+
+        prompt = f"""You are a biblical Hebrew scholar validating a list of detected figurative language instances from a single verse.
+
+CONTEXT:
+Hebrew: {hebrew_text}
+English: {english_text}
+
+DETECTED INSTANCES:
+```json
+{json.dumps(prompt_instances, indent=2)}
+```
+
+TASK:
+Review each instance in the JSON array above. For each instance, validate each of the detected `types`. For each type, you must provide a validation decision.
+
+RESPONSE FORMAT:
+You MUST return a valid JSON array of validation objects inside a JSON code block. Each object in the array must contain:
+1.  `instance_id`: The ID of the instance you are validating.
+2.  `validation_results`: An object where keys are the original figurative types (e.g., "metaphor", "idiom") and values are validation objects with the fields: `decision` (must be "VALID", "INVALID", or "RECLASSIFIED"), `reason` (a brief explanation), and, if reclassifying, `reclassified_type`.
+
+EXAMPLE OUTPUT:
+```json
+[
+  {{
+    "instance_id": 1,
+    "validation_results": {{
+      "metaphor": {{
+        "decision": "VALID",
+        "reason": "This is a valid metaphor because it compares an abstract concept to a concrete object."
+      }},
+      "idiom": {{
+        "decision": "RECLASSIFIED",
+        "reason": "This is not an idiom, but rather a simile because of the use of 'like'.",
+        "reclassified_type": "simile"
+      }}
+    }}
+  }},
+  {{
+    "instance_id": 2,
+    "validation_results": {{
+      "hyperbole": {{
+        "decision": "INVALID",
+        "reason": "This is a literal statement, not an exaggeration."
+      }}
+    }}
+  }}
+]
+```
+
+Provide your validation output below.
+
+VALIDATION:
+"""
+        return prompt
+
+    def validate_verse_instances(self, instances: List[Dict], hebrew_text: str, english_text: str) -> List[Dict]:
+        """Validate all instances found in a single verse with one API call."""
+        if not instances:
+            return []
+
+        # Add a temporary unique ID to each instance for correlation
+        for i, instance in enumerate(instances):
+            instance['instance_id'] = i + 1
+
+        prompt = self._create_bulk_validation_prompt(instances, hebrew_text, english_text)
+
+        try:
+            response = self.model.generate_content(
+                prompt,
+                generation_config=self.generation_config
+            )
+            self.validation_count += 1
+
+            if response.text:
+                # Extract JSON from the response
+                json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response.text, re.DOTALL)
+                if json_match:
+                    json_string = json_match.group(1).strip()
+                    try:
+                        validation_results = json.loads(json_string)
+                        return validation_results
+                    except json.JSONDecodeError as e:
+                        if self.logger:
+                            self.logger.error(f"Failed to parse bulk validation JSON: {e}")
+                        return []
+                else:
+                    if self.logger:
+                        self.logger.error("No JSON block found in bulk validation response.")
+                    return []
+            else:
+                if self.logger:
+                    self.logger.error("Empty response from bulk validation API call.")
+                return []
+
+        except Exception as e:
+            if self.logger:
+                self.logger.error(f"API error during bulk validation: {e}")
+            return []
+
+    def _create_bulk_validation_prompt(self, instances: List[Dict], hebrew_text: str, english_text: str) -> str:
+        """Create a prompt to validate all instances from a verse in a single call."""
+
+        # Prepare a simplified list of instances for the prompt
+        prompt_instances = []
+        for instance in instances:
+            types_to_validate = []
+            for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+                if instance.get(fig_type) == 'yes':
+                    types_to_validate.append(fig_type)
+            
+            prompt_instances.append({
+                "instance_id": instance['instance_id'],
+                "english_text": instance.get('english_text', ''),
+                "explanation": instance.get('explanation', ''),
+                "types": types_to_validate
+            })
+
+        prompt = f"""You are a biblical Hebrew scholar validating a list of detected figurative language instances from a single verse.
+
+CONTEXT:
+Hebrew: {hebrew_text}
+English: {english_text}
+
+DETECTED INSTANCES:
+```json
+{json.dumps(prompt_instances, indent=2)}
+```
+
+TASK:
+Review each instance in the JSON array above. For each instance, validate each of the detected `types`. For each type, you must provide a validation decision.
+
+RESPONSE FORMAT:
+You MUST return a valid JSON array of validation objects inside a JSON code block. Each object in the array must contain:
+1.  `instance_id`: The ID of the instance you are validating.
+2.  `validation_results`: An object where keys are the original figurative types (e.g., "metaphor", "idiom") and values are validation objects with the fields: `decision` (must be "VALID", "INVALID", or "RECLASSIFIED"), `reason` (a brief explanation), and, if reclassifying, `reclassified_type`.
+
+EXAMPLE OUTPUT:
+```json
+[
+  {{
+    "instance_id": 1,
+    "validation_results": {{
+      "metaphor": {{
+        "decision": "VALID",
+        "reason": "This is a valid metaphor because it compares an abstract concept to a concrete object."
+      }},
+      "idiom": {{
+        "decision": "RECLASSIFIED",
+        "reason": "This is not an idiom, but rather a simile because of the use of 'like'.",
+        "reclassified_type": "simile"
+      }}
+    }}
+  }},
+  {{
+    "instance_id": 2,
+    "validation_results": {{
+      "hyperbole": {{
+        "decision": "INVALID",
+        "reason": "This is a literal statement, not an exaggeration."
+      }}
+    }}
+  }}
+]
+```
+
+Provide your validation output below.
+
+VALIDATION:
+"""
+        return prompt
 
     def validate_figurative_language(self,
                                    fig_type: str,
@@ -85,11 +332,40 @@ class MetaphorValidator:
 
             self.validation_count += 1
 
-            # Check for safety restrictions
+            # Check for finish reasons that prevent response.text access
             if hasattr(response, 'candidates') and response.candidates:
                 candidate = response.candidates[0]
                 if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
                     finish_reason = candidate.finish_reason
+                    finish_reason_value = int(finish_reason)
+
+                    # Handle different finish reasons
+                    if finish_reason_value == 2:  # MAX_TOKENS
+                        validation_data['validation_decision'] = 'INVALID'
+                        validation_data['validation_reason'] = "Response truncated due to token limit"
+                        validation_data['validation_error'] = f"MAX_TOKENS: Response was truncated"
+                        self._log_validation_data(figurative_language_id, validation_data)
+                        return False, "Response truncated due to token limit", "MAX_TOKENS: Response was truncated", None
+                    elif finish_reason_value == 3:  # SAFETY
+                        validation_data['validation_decision'] = 'INVALID'
+                        validation_data['validation_reason'] = "Content restricted by safety filters"
+                        validation_data['validation_error'] = f"SAFETY: Content restriction"
+                        self._log_validation_data(figurative_language_id, validation_data)
+                        return False, "Content restricted by safety filters", "SAFETY: Content restriction", None
+                    elif finish_reason_value == 4:  # RECITATION
+                        validation_data['validation_decision'] = 'INVALID'
+                        validation_data['validation_reason'] = "Content restricted due to recitation"
+                        validation_data['validation_error'] = f"RECITATION: Content restriction"
+                        self._log_validation_data(figurative_language_id, validation_data)
+                        return False, "Content restricted due to recitation", "RECITATION: Content restriction", None
+                    elif finish_reason_value == 5:  # OTHER
+                        validation_data['validation_decision'] = 'INVALID'
+                        validation_data['validation_reason'] = "Content restricted for other reasons"
+                        validation_data['validation_error'] = f"OTHER: Content restriction"
+                        self._log_validation_data(figurative_language_id, validation_data)
+                        return False, "Content restricted for other reasons", "OTHER: Content restriction", None
+
+                    # Legacy string-based checking for backward compatibility
                     if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
                         validation_data['validation_decision'] = 'INVALID'
                         validation_data['validation_reason'] = "Content restricted by safety filters"
@@ -200,72 +476,111 @@ class MetaphorValidator:
             fig_type, hebrew_text, english_text, figurative_text, explanation, confidence
         )
 
-        try:
-            response = self.model.generate_content(
-                prompt,
-                generation_config=self.generation_config
-            )
+        # Try primary model first, fallback on API errors
+        for attempt, (model, model_name) in enumerate([(self.model, self.model_name), (self.fallback_model, self.fallback_model_name)]):
+            try:
+                response = model.generate_content(
+                    prompt,
+                    generation_config=self.generation_config
+                )
 
-            self.type_validation_count += 1
+                self.type_validation_count += 1
+                if self.logger and attempt > 0:
+                    self.logger.info(f"Validation succeeded with fallback model: {model_name}")
 
-            # Check for safety restrictions
-            if hasattr(response, 'candidates') and response.candidates:
-                candidate = response.candidates[0]
-                if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
-                    finish_reason = candidate.finish_reason
-                    if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
-                        error_msg = f"Safety restriction: {finish_reason.name}"
-                        if self.logger:
-                            self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: {finish_reason.name}")
-                        return False, "Content restricted by safety filters", error_msg, None
-                    elif str(finish_reason) in ['SAFETY', 'RECITATION', 'OTHER']:
-                        error_msg = f"Safety restriction: {finish_reason}"
-                        if self.logger:
-                            self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: {finish_reason}")
-                        return False, "Content restricted by safety filters", error_msg, None
+                # Check for finish reasons that prevent response.text access
+                if hasattr(response, 'candidates') and response.candidates:
+                    candidate = response.candidates[0]
+                    if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
+                        finish_reason = candidate.finish_reason
+                        finish_reason_value = int(finish_reason)
 
-            if response.text:
-                # Parse the validation response
-                response_text = response.text.strip()
+                        # Handle different finish reasons
+                        if finish_reason_value == 2:  # MAX_TOKENS
+                            error_msg = "MAX_TOKENS: Response was truncated"
+                            if self.logger:
+                                self.logger.warning(f"Response truncated in type validation for '{figurative_text}' due to token limit")
+                            return False, "Response truncated due to token limit", error_msg, None
+                        elif finish_reason_value == 3:  # SAFETY
+                            error_msg = "SAFETY: Content restriction"
+                            if self.logger:
+                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: SAFETY")
+                            return False, "Content restricted by safety filters", error_msg, None
+                        elif finish_reason_value == 4:  # RECITATION
+                            error_msg = "RECITATION: Content restriction"
+                            if self.logger:
+                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: RECITATION")
+                            return False, "Content restricted due to recitation", error_msg, None
+                        elif finish_reason_value == 5:  # OTHER
+                            error_msg = "OTHER: Content restriction"
+                            if self.logger:
+                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: OTHER")
+                            return False, "Content restricted for other reasons", error_msg, None
 
-                # Expected format: "VALID: reason" or "INVALID: reason" or "RECLASSIFY: new_type - reason"
-                if response_text.startswith("VALID:"):
-                    reason = response_text[6:].strip()
-                    return True, reason, None, None
-                elif response_text.startswith("INVALID:"):
-                    reason = response_text[8:].strip()
-                    return False, reason, None, None
-                elif response_text.startswith("RECLASSIFY:"):
-                    # Parse "RECLASSIFY: new_type - reason" or "RECLASSIFY: new_type"
-                    content = response_text[11:].strip()
-                    parts = content.split(" - ", 1)
-                    potential_type = parts[0].strip().lower().rstrip('.:')
-                    allowed_types = {'simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
+                        # Legacy string-based checking for backward compatibility
+                        if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
+                            error_msg = f"Safety restriction: {finish_reason.name}"
+                            if self.logger:
+                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: {finish_reason.name}")
+                            return False, "Content restricted by safety filters", error_msg, None
+                        elif str(finish_reason) in ['SAFETY', 'RECITATION', 'OTHER']:
+                            error_msg = f"Safety restriction: {finish_reason}"
+                            if self.logger:
+                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: {finish_reason}")
+                            return False, "Content restricted by safety filters", error_msg, None
 
-                    if potential_type in allowed_types:
-                        reclassified_type = potential_type
-                        reason = parts[1].strip() if len(parts) > 1 else f"Reclassified from {fig_type} to {reclassified_type}"
+                if response.text:
+                    # Parse the validation response
+                    response_text = response.text.strip()
+
+                    # Expected format: "VALID: reason" or "INVALID: reason" or "RECLASSIFY: new_type - reason"
+                    if response_text.startswith("VALID:"):
+                        reason = response_text[6:].strip()
+                        return True, reason, None, None
+                    elif response_text.startswith("INVALID:"):
+                        reason = response_text[8:].strip()
+                        return False, reason, None, None
+                    elif response_text.startswith("RECLASSIFY:"):
+                        # Parse "RECLASSIFY: new_type - reason" or "RECLASSIFY: new_type"
+                        content = response_text[11:].strip()
+                        parts = content.split(" - ", 1)
+                        potential_type = parts[0].strip().lower().rstrip('.:')
+                        allowed_types = {'simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
+
+                        if potential_type in allowed_types:
+                            reclassified_type = potential_type
+                            reason = parts[1].strip() if len(parts) > 1 else f"Reclassified from {fig_type} to {reclassified_type}"
+                        else:
+                            reclassified_type = "other"
+                            reason = content
+
+                        return False, reason, None, reclassified_type
                     else:
-                        reclassified_type = "other"
-                        reason = content
-
-                    return False, reason, None, reclassified_type
+                        # Fallback parsing
+                        if "RECLASSIFY" in response_text.upper():
+                            return False, response_text, None, "other"
+                        elif "VALID" in response_text.upper():
+                            return True, response_text, None, None
+                        else:
+                            return False, response_text, None, None
                 else:
-                    # Fallback parsing
-                    if "RECLASSIFY" in response_text.upper():
-                        return False, response_text, None, "other"
-                    elif "VALID" in response_text.upper():
-                        return True, response_text, None, None
-                    else:
-                        return False, response_text, None, None
-            else:
-                return False, "No response generated", "Empty response", None
+                    return False, "No response generated", "Empty response", None
 
-        except Exception as e:
-            error_msg = f"Type validation API error: {str(e)}"
-            if self.logger:
-                self.logger.error(f"Type validation API error for '{figurative_text}': {e}", exc_info=True)
-            return False, "API error during type validation", error_msg, None
+            except Exception as e:
+                error_msg = f"Type validation API error: {str(e)}"
+                if self.logger:
+                    self.logger.warning(f"Model {model_name} failed for '{figurative_text}': {e}")
+
+                # If this is the last attempt, return the error
+                if attempt == 1:  # Last attempt (fallback model)
+                    if self.logger:
+                        self.logger.error(f"All models failed for type validation of '{figurative_text}': {e}")
+                    return False, "API error during type validation", error_msg, None
+                # Otherwise continue to fallback model
+                continue
+
+        # Should not reach here, but just in case
+        return False, "All validation models failed", "Exhausted fallback options", None
 
     def _create_type_validation_prompt(self,
                                       fig_type: str,
