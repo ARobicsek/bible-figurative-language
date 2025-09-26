@@ -297,41 +297,41 @@ Analysis:"""
 
                 candidate = response.candidates[0]
 
-                # COMPREHENSIVE LOGGING FOR DEBUGGING
-                if self.logger:
-                    self.logger.info(f"🔍 API Response Debug Info:")
-                    self.logger.info(f"  📊 Total candidates: {len(response.candidates)}")
-                    
+                # OPTIMIZED LOGGING - Only log detailed debug info in debug mode
+                if self.logger and self.logger.level <= logging.DEBUG:
+                    self.logger.debug(f"🔍 API Response Debug Info:")
+                    self.logger.debug(f"  📊 Total candidates: {len(response.candidates)}")
+
                     # Log finish reason
                     finish_reason = getattr(candidate, 'finish_reason', 'NO_FINISH_REASON')
-                    self.logger.info(f"  🏁 Finish reason: {finish_reason}")
-                    self.logger.info(f"  📝 Finish reason type: {type(finish_reason)}")
-                    self.logger.info(f"  📝 Finish reason str: '{str(finish_reason)}'")
+                    self.logger.debug(f"  🏁 Finish reason: {finish_reason}")
+                    self.logger.debug(f"  📝 Finish reason type: {type(finish_reason)}")
+                    self.logger.debug(f"  📝 Finish reason str: '{str(finish_reason)}'")
 
                     # Log usage metadata for token counts
                     if hasattr(response, 'usage_metadata'):
-                        self.logger.info(f"  🪙 Usage Metadata:")
-                        self.logger.info(f"    - Prompt Token Count: {getattr(response.usage_metadata, 'prompt_token_count', 'N/A')}")
-                        self.logger.info(f"    - Candidates Token Count: {getattr(response.usage_metadata, 'candidates_token_count', 'N/A')}")
-                        self.logger.info(f"    - Total Token Count: {getattr(response.usage_metadata, 'total_token_count', 'N/A')}")
+                        self.logger.debug(f"  🪙 Usage Metadata:")
+                        self.logger.debug(f"    - Prompt Token Count: {getattr(response.usage_metadata, 'prompt_token_count', 'N/A')}")
+                        self.logger.debug(f"    - Candidates Token Count: {getattr(response.usage_metadata, 'candidates_token_count', 'N/A')}")
+                        self.logger.debug(f"    - Total Token Count: {getattr(response.usage_metadata, 'total_token_count', 'N/A')}")
                     else:
-                        self.logger.info(f"  🪙 Usage Metadata: Not available")
+                        self.logger.debug(f"  🪙 Usage Metadata: Not available")
 
                     # Check for safety ratings
                     if hasattr(candidate, 'safety_ratings') and candidate.safety_ratings:
-                        self.logger.info(f"  🛡️ Safety ratings: {candidate.safety_ratings}")
+                        self.logger.debug(f"  🛡️ Safety ratings: {candidate.safety_ratings}")
                     else:
-                        self.logger.info(f"  🛡️ Safety ratings: None")
+                        self.logger.debug(f"  🛡️ Safety ratings: None")
 
                     # Check content structure
                     if hasattr(candidate, 'content'):
-                        self.logger.info(f"  📄 Has content: True")
+                        self.logger.debug(f"  📄 Has content: True")
                         if hasattr(candidate.content, 'parts') and candidate.content.parts:
-                            self.logger.info(f"  📄 Content parts count: {len(candidate.content.parts)}")
+                            self.logger.debug(f"  📄 Content parts count: {len(candidate.content.parts)}")
                         else:
-                            self.logger.info(f"  📄 Content parts: None or empty")
+                            self.logger.debug(f"  📄 Content parts: None or empty")
                     else:
-                        self.logger.info(f"  📄 Has content: False")
+                        self.logger.debug(f"  📄 Has content: False")
 
                 # Check for restriction and truncation
                 if hasattr(candidate, 'finish_reason'):
@@ -354,9 +354,9 @@ Analysis:"""
                     if hasattr(candidate, 'content') and candidate.content:
                         if hasattr(candidate.content, 'parts') and candidate.content.parts:
                             response_text = candidate.content.parts[0].text
-                            if self.logger:
-                                self.logger.info(f"  📝 Response text length: {len(response_text)} characters")
-                                self.logger.info(f"  📝 Response ends with: '{response_text[-50:] if len(response_text) > 50 else response_text}'")
+                            if self.logger and self.logger.level <= logging.DEBUG:
+                                self.logger.debug(f"  📝 Response text length: {len(response_text)} characters")
+                                self.logger.debug(f"  📝 Response ends with: '{response_text[-50:] if len(response_text) > 50 else response_text}'")
                                 # Check for abrupt ending patterns
                                 if not response_text.strip().endswith(('.', '!', '?', ']', '}')):
                                     self.logger.warning(f"  ⚠️ Response appears to end abruptly (no proper punctuation)")
@@ -402,11 +402,11 @@ Analysis:"""
         should_trigger_fallback = False
         should_trigger_fallback = False
 
-        if self.logger:
-            self.logger.info(f"🔍 PARSING DEBUG - Starting response parsing:")
-            self.logger.info(f"  📏 Total response length: {len(response_text)}")
-            self.logger.info(f"  📄 Response preview (first 200 chars): '{response_text[:200]}'")
-            self.logger.info(f"  📄 Response ending (last 200 chars): '{response_text[-200:] if len(response_text) > 200 else response_text}'")
+        if self.logger and self.logger.level <= logging.DEBUG:
+            self.logger.debug(f"🔍 PARSING DEBUG - Starting response parsing:")
+            self.logger.debug(f"  📏 Total response length: {len(response_text)}")
+            self.logger.debug(f"  📄 Response preview (first 200 chars): '{response_text[:200]}'")
+            self.logger.debug(f"  📄 Response ending (last 200 chars): '{response_text[-200:] if len(response_text) > 200 else response_text}'")
 
         # Extract figurative detection deliberation (improved pattern matching)
         figurative_detection = ""
@@ -414,12 +414,12 @@ Analysis:"""
                                    response_text, re.IGNORECASE | re.DOTALL)
         if detection_match:
             figurative_detection = detection_match.group(1).strip()
-            if self.logger:
-                self.logger.info(f"  📝 FIGURATIVE_DETECTION extracted: {len(figurative_detection)} chars")
-                self.logger.info(f"  📝 Detection ends with: '{figurative_detection[-100:] if len(figurative_detection) > 100 else figurative_detection}'")
+            if self.logger and self.logger.level <= logging.DEBUG:
+                self.logger.debug(f"  📝 FIGURATIVE_DETECTION extracted: {len(figurative_detection)} chars")
+                self.logger.debug(f"  📝 Detection ends with: '{figurative_detection[-100:] if len(figurative_detection) > 100 else figurative_detection}'")
         else:
-            if self.logger:
-                self.logger.warning(f"  ⚠️ No FIGURATIVE_DETECTION section found")
+            if self.logger and self.logger.level <= logging.DEBUG:
+                self.logger.debug(f"  ⚠️ No FIGURATIVE_DETECTION section found")
 
         # Extract tagging analysis deliberation (improved pattern matching)
         tagging_analysis = ""
@@ -427,11 +427,11 @@ Analysis:"""
                                  response_text, re.IGNORECASE | re.DOTALL)
         if tagging_match:
             tagging_analysis = tagging_match.group(1).strip()
-            if self.logger:
-                self.logger.info(f"  📝 TAGGING_ANALYSIS extracted: {len(tagging_analysis)} chars")
+            if self.logger and self.logger.level <= logging.DEBUG:
+                self.logger.debug(f"  📝 TAGGING_ANALYSIS extracted: {len(tagging_analysis)} chars")
         else:
-            if self.logger:
-                self.logger.warning(f"  ⚠️ No TAGGING_ANALYSIS section found")
+            if self.logger and self.logger.level <= logging.DEBUG:
+                self.logger.debug(f"  ⚠️ No TAGGING_ANALYSIS section found")
 
         # Combine both deliberations for backward compatibility
         combined_deliberation = ""
@@ -444,23 +444,24 @@ Analysis:"""
 
         # Extract JSON using improved parsing logic from multi-model system
         instances = []
-        if self.logger:
-            self.logger.info(f"🔍 JSON EXTRACTION DEBUG:")
+        json_string = ""  # Initialize to prevent undefined variable errors
+        if self.logger and self.logger.level <= logging.DEBUG:
+            self.logger.debug(f"🔍 JSON EXTRACTION DEBUG:")
 
         try:
             # Use more sophisticated JSON extraction
             json_string = self._extract_json_array(response_text)
 
-            if self.logger:
+            if self.logger and self.logger.level <= logging.DEBUG:
                 if json_string:
-                    self.logger.info(f"  📄 JSON string extracted: {len(json_string)} chars")
-                    self.logger.info(f"  📄 JSON preview: '{json_string[:200] if len(json_string) > 200 else json_string}'")
+                    self.logger.debug(f"  📄 JSON string extracted: {len(json_string)} chars")
+                    self.logger.debug(f"  📄 JSON preview: '{json_string[:200] if len(json_string) > 200 else json_string}'")
                     # Log the COMPLETE JSON for debugging malformed content
-                    self.logger.info(f"  📄 COMPLETE JSON CONTENT:")
-                    self.logger.info(f"---JSON-START---")
-                    self.logger.info(json_string)
-                    self.logger.info(f"---JSON-END---")
-                    # Check for problematic characters
+                    self.logger.debug(f"  📄 COMPLETE JSON CONTENT:")
+                    self.logger.debug(f"---JSON-START---")
+                    self.logger.debug(json_string)
+                    self.logger.debug(f"---JSON-END---")
+                    # Check for problematic characters only in debug mode
                     problematic_chars = []
                     for i, char in enumerate(json_string):
                         if ord(char) > 127 or char in ['🎯', '✅', '❌', '📊', '🔍', '⚠️']:
@@ -468,7 +469,10 @@ Analysis:"""
                     if problematic_chars:
                         self.logger.warning(f"  ⚠️ Found problematic characters: {problematic_chars[:10]}")  # Show first 10
                 else:
-                    self.logger.warning(f"  ⚠️ No JSON string extracted from response")
+                    self.logger.debug(f"  ⚠️ No JSON string extracted from response")
+            elif self.logger and json_string:
+                # In INFO mode, just log basic success
+                self.logger.info(f"JSON extracted: {len(json_string)} chars")
 
             if json_string and json_string != "[]":
                 # First try to parse as-is
@@ -528,76 +532,94 @@ Analysis:"""
             instances = []
 
         # Additional check: if no instances found but deliberation suggests figurative language was detected
-        # IMPORTANT: Only trigger fallback if JSON parsing actually FAILED, not if we got a valid empty array
-        if not instances and (figurative_detection or tagging_analysis) and json_str.strip() != "[]":
-            if self.logger:
-                self.logger.info(f"🔍 FALLBACK CHECK - No instances found but have deliberation text")
+        # Check both cases: JSON parsing failed OR we got empty array with analysis
+        should_trigger_fallback = False
+        if not instances and (figurative_detection or tagging_analysis):
+            # Case 1: JSON parsing actually FAILED (not a valid empty array)
+            json_parsing_failed = json_string.strip() != "[]"
+            # Case 2: Got valid empty array but have substantial analysis (potential false negative)
+            empty_array_with_analysis = json_string.strip() == "[]"
 
-            # Check for signs of incomplete response or truncation
-            combined_text = f"{figurative_detection} {tagging_analysis}".lower()
-            truncation_indicators = [
-                "this is", "this phrase is", "is a", "is an", "idiom", "metaphor", "hyperbole", "metonymy",
-                "figurative", "non-literal", "set phrase", "biblical idiom"
-            ]
-
-            has_indicators = any(indicator in combined_text for indicator in truncation_indicators)
-            ends_abruptly = (
-                figurative_detection.strip().endswith('...') or
-                not figurative_detection.strip().endswith('.') or
-                len(figurative_detection.strip()) > 100 and not any(punct in figurative_detection[-20:] for punct in ['.', '!', '?'])
-            )
-
-            if self.logger:
-                self.logger.info(f"  📝 Has figurative indicators: {has_indicators}")
-                self.logger.info(f"  📝 Appears to end abruptly: {ends_abruptly}")
-
-            # Enhanced detection of LLM inconsistency - detailed analysis but empty JSON
-            has_substantial_analysis = len(figurative_detection.strip()) > 500
-            has_figurative_analysis = any(term in combined_text for term in [
-                "reasoning for inclusion", "marked as figurative", "classify", "include",
-                "this phrase", "this is", "functions as", "serves as", "represents"
-            ])
-
-            # Check for explicit conclusions about figurative language
-            has_figurative_conclusions = any(term in combined_text for term in [
-                "is a metaphor", "is an idiom", "is hyperbole", "is metonymy",
-                "biblical idiom", "figurative language", "non-literal"
-            ])
-
-            # Multiple criteria for triggering fallback
-            is_likely_truncated = ends_abruptly and has_indicators
-            is_analysis_complete_but_json_empty = (
-                has_indicators and
-                (has_substantial_analysis or has_figurative_conclusions) and
-                has_figurative_analysis
-            )
-
-            should_trigger_fallback = is_likely_truncated or is_analysis_complete_but_json_empty
-
-            if self.logger:
-                self.logger.info(f"  📝 Has substantial analysis: {has_substantial_analysis}")
-                self.logger.info(f"  📝 Has figurative analysis: {has_figurative_analysis}")
-                self.logger.info(f"  📝 Has figurative conclusions: {has_figurative_conclusions}")
-                self.logger.info(f"  📝 Analysis complete but JSON empty: {is_analysis_complete_but_json_empty}")
-                self.logger.info(f"  📝 Should trigger fallback: {should_trigger_fallback}")
-
-            if should_trigger_fallback:
+            if json_parsing_failed or empty_array_with_analysis:
                 if self.logger:
-                    self.logger.error("❌ API response was truncated. No JSON was found and fallback parsing is disabled.")
-                    self.logger.error("❌ This verse must be re-processed. Returning no instances.")
-                instances = [] # Explicitly set instances to empty
-            else:
-                if self.logger:
-                    self.logger.info(f"  📝 Truncation criteria not met - no fallback parsing attempted")
+                    self.logger.info(f"🔍 FALLBACK CHECK - No instances found but have deliberation text")
 
-        return {
+                # Check for signs of incomplete response or truncation
+                combined_text = f"{figurative_detection} {tagging_analysis}".lower()
+                truncation_indicators = [
+                    "this is", "this phrase is", "is a", "is an", "idiom", "metaphor", "hyperbole", "metonymy",
+                    "figurative", "non-literal", "set phrase", "biblical idiom"
+                ]
+
+                has_indicators = any(indicator in combined_text for indicator in truncation_indicators)
+                ends_abruptly = (
+                    figurative_detection.strip().endswith('...') or
+                    not figurative_detection.strip().endswith('.') or
+                    len(figurative_detection.strip()) > 100 and not any(punct in figurative_detection[-20:] for punct in ['.', '!', '?'])
+                )
+
+                if self.logger:
+                    self.logger.info(f"  📝 Has figurative indicators: {has_indicators}")
+                    self.logger.info(f"  📝 Appears to end abruptly: {ends_abruptly}")
+
+                # Enhanced detection of LLM inconsistency - detailed analysis but empty JSON
+                has_substantial_analysis = len(figurative_detection.strip()) > 500
+                has_figurative_analysis = any(term in combined_text for term in [
+                    "reasoning for inclusion", "marked as figurative", "classify", "include",
+                    "this phrase", "this is", "functions as", "serves as", "represents"
+                ])
+
+                # Check for explicit conclusions about figurative language
+                has_figurative_conclusions = any(term in combined_text for term in [
+                    "is a metaphor", "is an idiom", "is hyperbole", "is metonymy",
+                    "biblical idiom", "figurative language", "non-literal"
+                ])
+
+                # Check for missing TAGGING_ANALYSIS section (indicates truncation)
+                missing_tagging_analysis = (
+                    figurative_detection.strip() and  # Has FIGURATIVE_DETECTION
+                    not tagging_analysis.strip() and  # But missing TAGGING_ANALYSIS
+                    json_string.strip() == "[]"       # And empty JSON result
+                )
+
+                # Multiple criteria for triggering fallback
+                is_likely_truncated = ends_abruptly and has_indicators
+                is_analysis_complete_but_json_empty = (
+                    has_indicators and
+                    (has_substantial_analysis or has_figurative_conclusions) and
+                    has_figurative_analysis
+                )
+
+                should_trigger_fallback = is_likely_truncated or is_analysis_complete_but_json_empty or missing_tagging_analysis
+
+                if self.logger:
+                    self.logger.info(f"  📝 Has substantial analysis: {has_substantial_analysis}")
+                    self.logger.info(f"  📝 Has figurative analysis: {has_figurative_analysis}")
+                    self.logger.info(f"  📝 Has figurative conclusions: {has_figurative_conclusions}")
+                    self.logger.info(f"  📝 Missing TAGGING_ANALYSIS: {missing_tagging_analysis}")
+                    self.logger.info(f"  📝 Analysis complete but JSON empty: {is_analysis_complete_but_json_empty}")
+                    self.logger.info(f"  📝 Should trigger fallback: {should_trigger_fallback}")
+
+                if should_trigger_fallback:
+                    if self.logger:
+                        self.logger.error("❌ API response was truncated. No JSON was found and fallback parsing is disabled.")
+                        self.logger.error("❌ This verse must be re-processed. Returning no instances.")
+                    instances = [] # Explicitly set instances to empty
+                else:
+                    if self.logger:
+                        self.logger.info(f"  📝 Truncation criteria not met - no fallback parsing attempted")
+
+        result = {
             'flexible_instances': instances,
             'figurative_detection_deliberation': figurative_detection,
             'tagging_analysis_deliberation': tagging_analysis,
             'instances_count': len(instances),
             'flexible_tagging_used': True,
-            'truncation_detected': should_trigger_fallback
+            'truncation_detected': should_trigger_fallback if 'should_trigger_fallback' in locals() else False
         }
+        # NOTE: This method preserves the model_used field by not overwriting it
+        # The model_used field is set in analyze_figurative_language_flexible and should not be overwritten
+        return result
 
     def _extract_json_array(self, response_text: str) -> str:
         """Extract JSON array using robust logic adapted from multi-model system"""
