@@ -1,4 +1,6 @@
 """AI analysis module for figurative language detection"""
-from .figurative_detector import FigurativeLanguageDetector
+# Current production modules
+from .gemini_api_multi_model import MultiModelGeminiClient
+from .metaphor_validator import MetaphorValidator
 
-__all__ = ['FigurativeLanguageDetector']
+__all__ = ['MultiModelGeminiClient', 'MetaphorValidator']
