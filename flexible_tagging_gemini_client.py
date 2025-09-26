@@ -528,7 +528,8 @@ Analysis:"""
             instances = []
 
         # Additional check: if no instances found but deliberation suggests figurative language was detected
-        if not instances and (figurative_detection or tagging_analysis):
+        # IMPORTANT: Only trigger fallback if JSON parsing actually FAILED, not if we got a valid empty array
+        if not instances and (figurative_detection or tagging_analysis) and json_str.strip() != "[]":
             if self.logger:
                 self.logger.info(f"🔍 FALLBACK CHECK - No instances found but have deliberation text")
 
