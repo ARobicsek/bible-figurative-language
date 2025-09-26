@@ -213,6 +213,8 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
         truncation_occurred = metadata.get('truncation_detected', False)
         pro_model_used = False
         both_models_truncated = False
+        tertiary_decomposed = False
+
         if truncation_occurred:
             if logger.level <= logging.WARNING:
                 logger.warning(f"Worker {worker_id}: Truncation detected in {verse_ref}, retrying with Pro model")
@@ -227,7 +229,30 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
             both_models_truncated = pro_truncation_occurred
             if pro_truncation_occurred:
                 if logger.level <= logging.WARNING:
-                    logger.warning(f"Worker {worker_id}: Pro model also truncated for {verse_ref} - extremely complex verse - BOTH MODELS FAILED")
+                    logger.warning(f"Worker {worker_id}: Pro model also truncated for {verse_ref} - trying tertiary decomposition fallback")
+
+                # Tertiary fallback: task decomposition
+                try:
+                    result_text, error, metadata = flexible_client.analyze_with_tertiary_fallback(
+                        heb_verse, eng_verse, book=book_name, chapter=chapter
+                    )
+                    tertiary_decomposed = True
+
+                    step_completed = metadata.get('tertiary_step_completed', 'unknown')
+                    instances_found = metadata.get('instances_count', 0)
+
+                    if logger.level <= logging.INFO:
+                        logger.info(f"Worker {worker_id}: Tertiary fallback completed for {verse_ref} - "
+                                   f"Step: {step_completed}, Instances: {instances_found}")
+
+                    # Update tracking
+                    both_models_truncated = (step_completed == 'failed')
+
+                except Exception as tertiary_error:
+                    if logger.level <= logging.ERROR:
+                        logger.error(f"Worker {worker_id}: Tertiary fallback failed for {verse_ref}: {tertiary_error}")
+                    both_models_truncated = True
+
                 # Keep truncation_occurred as True to indicate the verse had truncation issues
                 truncation_occurred = True
 
@@ -235,6 +260,13 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
         hebrew_stripped = HebrewTextProcessor.strip_diacritics(heb_verse)
         instances_count = len(metadata.get('flexible_instances', []))
         figurative_detection = metadata.get('figurative_detection_deliberation', '')
+
+        # Determine final model used
+        final_model_used = metadata.get('model_used', 'gemini-2.5-flash')
+        if tertiary_decomposed:
+            final_model_used = 'gemini-2.5-pro-decomposed'
+        elif pro_model_used:
+            final_model_used = 'gemini-2.5-pro'
 
         verse_result = {
             'reference': verse_ref,
@@ -252,10 +284,11 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
             'instances_lost_to_truncation': 0,
             'truncation_occurred': 'yes' if truncation_occurred else 'no',
             'both_models_truncated': 'yes' if both_models_truncated else 'no',
+            'model_used': final_model_used,  # Add to verse-level tracking
             'worker_id': worker_id,
             'instances': metadata.get('flexible_instances', []),
             'tagging_analysis': metadata.get('tagging_analysis_deliberation', ''),
-            'model_used': metadata.get('model_used', 'gemini-2.5-pro' if pro_model_used else 'gemini-2.5-flash')
+            'tertiary_decomposed': tertiary_decomposed
         }
 
         if logger.level <= logging.INFO:
@@ -310,7 +343,8 @@ def process_verses_parallel(verses_to_process, book_name, chapter, flexible_clie
                                 'instance_number': j + 1,
                                 'instance_data': instance,
                                 'tagging_analysis': verse_result.get('tagging_analysis', ''),
-                                'model_used': verse_result.get('model_used', 'gemini-2.5-flash')
+                                'model_used': verse_result.get('model_used', 'gemini-2.5-flash'),
+                                'tertiary_decomposed': verse_result.get('tertiary_decomposed', False)
                             }
                             all_instance_results.append(instance_result)
 
@@ -333,7 +367,7 @@ def process_verses_parallel(verses_to_process, book_name, chapter, flexible_clie
         try:
             # Store verse
             verse_data = {k: v for k, v in verse_result.items()
-                         if k not in ['instances', 'tagging_analysis', 'model_used', 'worker_id']}
+                         if k not in ['instances', 'tagging_analysis', 'worker_id', 'tertiary_decomposed']}
             verse_id = db_manager.insert_verse(verse_data)
             verses_stored += 1
 
@@ -552,12 +586,14 @@ def main():
         print(f"Total verses processed: {total_verses}")
         print(f"Total instances found: {total_instances}")
         print(f"Total processing time: {total_time:.1f} seconds")
-        print(f"Average time per verse: {total_time/total_verses:.2f} seconds")
-        print(f"Workers used: {max_workers}")
-
         if total_verses > 0:
+            print(f"Average time per verse: {total_time/total_verses:.2f} seconds")
             detection_rate = (total_instances / total_verses) * 100
             print(f"Figurative language detection rate: {detection_rate:.1f}%")
+        else:
+            print(f"Average time per verse: N/A (no verses processed)")
+            print(f"Figurative language detection rate: N/A")
+        print(f"Workers used: {max_workers}")
 
         # Save basic results summary
         summary = {
