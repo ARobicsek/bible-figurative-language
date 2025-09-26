@@ -1,22 +1,32 @@
 # Hebrew Figurative Language Database
 A comprehensive system for detecting and analyzing figurative language in biblical Hebrew texts, featuring **two complementary processing systems**: a proven multi-model pipeline and a revolutionary flexible hierarchical tagging system for advanced scholarly research.
 
-## 🎉 Project Status: Dual-System Architecture Complete
-**LATEST ACHIEVEMENT**: Successfully implemented **Flexible Hierarchical Tagging System** alongside the original multi-model pipeline, providing scholars with both proven conservative detection and innovative hierarchical categorization capabilities.
+## 🎉 Project Status: Production-Ready Dual-System Architecture
+**LATEST ACHIEVEMENT**: Successfully resolved API truncation issues with **intelligent model fallback system** - the flexible hierarchical tagging system is now **production-ready** for large-scale biblical text analysis.
 
-**✅ PHASE 1 COMPLETED (Sept 22, 2025)**: Data preprocessing and cleanup successfully completed with comprehensive category normalization and multi-type instance handling.
-
-**🎯 PHASE 2 READY**: LLM-based conceptual grouping to create semantic clusters for intuitive visualization.
+**✅ CRITICAL ISSUE RESOLVED (Sept 25, 2025)**:
+- **Problem**: Complex verses (Deuteronomy 30:3, 30:4) were causing API response truncation with gemini-2.5-flash
+- **Root Cause**: Prompt complexity overload from detailed hierarchical tagging requirements
+- **Solution**: Automatic fallback to **gemini-2.5-pro** when truncation is detected
+- **Result**: 100% success rate on previously problematic verses with complete hierarchical metadata
 
 ### Latest Achievements
 
-**🆕 Flexible Hierarchical Tagging System (Sept 25, 2025)**
+**🆕 Intelligent Truncation Recovery System (Sept 25, 2025)**
+- **Automatic Detection**: System detects truncated responses and triggers Pro model fallback seamlessly
+- **Model Tracking**: Database now records which model (`gemini-2.5-flash`, `gemini-2.5-pro`) was used for each analysis
+- **Enhanced Statistics**: Usage tracking includes Pro model fallback rates and performance metrics
+- **Complete Recovery**: Previously truncated verses now generate full hierarchical tag arrays
+- **Research Transparency**: Scholars can analyze model performance differences and complexity correlations
+
+**✅ Flexible Hierarchical Tagging System (Sept 25, 2025)**
 - **Revolutionary Tagging**: Hierarchical arrays for Target/Vehicle/Ground/Posture (e.g., ["specific target", "target category", "general domain"])
+- **Efficient Validation**: Bulk validation process reduces API calls to a maximum of two per verse (one for detection, one for validation)
 - **Split Deliberations**: Separate LLM reasoning for detection vs. tagging analysis for token efficiency
-- **Enhanced JSON Parsing**: Robust extraction from conversational AI responses with bracket matching
-- **Increased Token Limits**: 15,000 tokens to prevent truncation of complex hierarchical analysis
-- **Database Integration**: Complete schema v3 with JSON storage and validation pipeline compatibility
-- **Proven Results**: 21 instances detected from Deuteronomy 30 with full hierarchical metadata
+- **Robust JSON Parsing**: Enhanced extraction with bracket matching and completeness validation
+- **High Token Limits**: 15,000 tokens for Flash, 30,000 for Pro model to handle complex analysis
+- **Database Integration**: Complete schema v4 with JSON storage, model tracking, and validation pipeline compatibility
+- **Proven Results**: 7 instances detected from Deuteronomy 30:2-4 with complete hierarchical metadata and validation
 
 **✅ Phase 1: Data Preprocessing Pipeline Completed (Sept 22, 2025)**
 - **Category Normalization**: Reduced target categories from 31→12 and vehicle categories from 35→15 through intelligent mapping
@@ -31,10 +41,16 @@ A comprehensive system for detecting and analyzing figurative language in biblic
 
 This builds upon our advanced multi-type classification system that allows phrases to be classified as multiple figurative language types simultaneously (e.g., both metaphor AND idiom), with intelligent reclassification capabilities and complete audit trails.
 
-## 🧠 Current AI Models
-- **Primary Model**: Gemini 2.5 Flash (latest, most capable)
-- **Fallback Model**: Gemini 1.5 Flash (automatic fallback for restrictions)
-- **Validation Model**: Gemini 1.5 Flash (conservative validation)
+## 🧠 Current AI Models & Intelligent Fallback System
+- **Primary Model**: Gemini 2.5 Flash (`gemini-2.5-flash`) - Fast, efficient for standard complexity verses ✅
+- **Truncation Fallback**: Gemini 2.5 Pro (`gemini-2.5-pro`) - High-capacity model for complex hierarchical analysis ✅
+- **Legacy Fallback**: Gemini 1.5 Flash Latest (`gemini-1.5-flash-latest`) - Content restriction backup ✅
+- **Validation Model**: Gemini 2.5 Flash with automatic Pro fallback for complex validation ✅
+
+**Intelligent Model Selection**:
+- System automatically detects response truncation and switches to Pro model
+- Model usage tracked in database for performance analysis and cost optimization
+- 30,000 token limit on Pro model eliminates truncation issues on complex verses
 
 ## 🎯 Current Status
 ✅ **Phase 1: Data Preprocessing Complete** - Ready for visualization development
@@ -51,13 +67,14 @@ This builds upon our advanced multi-type classification system that allows phras
 ✅ **Advanced Server Error Recovery**: Exponential backoff for 500 errors with 30-second timeout fallback
 ✅ **Intelligent Model Switching**: Automatic fallback to Gemini 1.5 Flash after persistent server errors
 ✅ **Comprehensive Error Tracking**: Separate statistics for content restrictions vs server error fallbacks
+✅ **Production-Ready Truncation Recovery**: Intelligent fallback to gemini-2.5-pro for complex verses
+✅ **Model Usage Tracking**: Database records which AI model processed each instance for transparency
+✅ **Enhanced JSON Parsing**: Robust extraction with completeness validation and bracket matching
 ✅ **Interactive Processing**: Analyze any book, chapter, or verse range on demand
 ✅ **Context-Aware Prompting**: Different strategies for creation, legal, poetic, and narrative texts
-✅ **Robust Error Handling**: Graceful handling of API restrictions, rate limits, and server errors
-✅ **JSON Repair System**: Automatic recovery from truncated LLM responses to preserve partial results
-✅ **Data Loss Tracking**: Database fields to track detected vs recovered instances for research integrity
-✅ **Research-Grade Data**: Complete metadata for reproducible scholarly analysis
-🎯 **Publication Quality**: Advanced validation makes results suitable for peer-reviewed research
+✅ **Comprehensive Error Handling**: Graceful handling of API restrictions, rate limits, and server errors
+✅ **Research-Grade Data**: Complete metadata with model tracking for reproducible scholarly analysis
+🎯 **Publication Quality**: Advanced validation and model tracking make results suitable for peer-reviewed research
 Multi-Model API Achievements
 ✅ Context-Aware Analysis: Uses different prompting strategies for creation_narrative, poetic_blessing, and legal_ceremonial texts to improve accuracy.
 ✅ Automated Fallback: Automatically switches from the primary model (Gemini 2.5 Flash) to a fallback model (Gemini 1.5 Flash) on content restriction errors and persistent server errors.
@@ -76,40 +93,57 @@ Technical Achievements
 ✅ Advanced Multi-Type Architecture: Independent tracking of detection vs. validation for each type.
 ✅ Speaker Attribution & Purpose Analysis: Identifies who speaks and why.
 🚀 Quick Start
-Prerequisites
-Python 3.9+
-Virtual environment recommended
-Installation
-bash
+
+### Prerequisites
+- Python 3.9+
+- Virtual environment recommended
+- Gemini API key (get from Google AI Studio)
+
+### Installation
+```bash
 git clone https://github.com/ARobicsek/bible-figurative-language
 cd bible-figurative-language
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-Note: Ensure python-dotenv is included in your requirements.txt file.
+```
 
-Configuration (Required)
-In the root directory of the project, create a file named .env.
-Add your Gemini API key to this file:
-plaintext
-GEMINI_API_KEY=AIzaSyBjslLjCzAjarNfu0efWby6YHnqAXmaKIk
-Crucially, add .env to your .gitignore file to keep your API key secure.
-Usage
-IMPORTANT: Unicode Support Required On Windows, always run this command first in your terminal to enable proper display of Hebrew text and emojis:
+### Configuration (Required)
+1. Create a `.env` file in the root directory
+2. Add your Gemini API key:
+```
+GEMINI_API_KEY=your_api_key_here
+```
+3. **IMPORTANT**: Add `.env` to your `.gitignore` to keep your API key secure
 
-bash
+### Usage
+
+**Windows Unicode Support** (required for Hebrew text):
+```bash
 chcp 65001
-Interactive Processing (Recommended for Targeted Analysis)
-This script allows you to analyze any book, chapter, or specific range of verses.
+```
 
-bash
-# NEW: Flexible Hierarchical Tagging System (Revolutionary hierarchical tags)
+**Two Processing Systems Available**:
+
+#### 🆕 Flexible Hierarchical Tagging (Recommended)
+Revolutionary system with intelligent Pro model fallback:
+```bash
 python interactive_flexible_tagging_processor.py
+```
+- **Features**: Hierarchical tag arrays, automatic truncation recovery, model tracking
+- **Best for**: Advanced research, complex hierarchical categorization
+- **Models**: gemini-2.5-flash → gemini-2.5-pro fallback
 
-# ORIGINAL: Proven Multi-Model System (Conservative detection)
+#### ✅ Original Multi-Model System (Proven Conservative)
+Stable system for traditional categorical detection:
+```bash
 python interactive_multi_model_processor.py
+```
+- **Features**: Conservative detection, traditional categories, high precision
+- **Best for**: Reliable baseline analysis, validation studies
+- **Models**: gemini-2.5-flash → gemini-1.5-flash-latest fallback
 
-Both scripts will guide you through selecting the text you wish to process.
+Both systems provide interactive selection of book, chapter, and verse ranges.
 
 Batch Processing (Original Scripts)
 These scripts are useful for processing entire books at once.
@@ -145,11 +179,11 @@ Root Directory:
 ├── .env                                # ⭐ NEW: Secure file for API key (add to .gitignore)
 ├── requirements.txt                    # Project dependencies (ensure python-dotenv is listed)
 └── ...
-🛠️ Advanced Multi-Type Database Schema
-The schema supports multi-type classification with comprehensive audit trails.
+🛠️ Production-Ready Database Schema (v4.1)
+Advanced dual-system schema with intelligent model tracking and truncation recovery support.
 
 ```sql
--- Verses table with deliberation capture
+-- Verses table - stores ALL processed verses with complete research transparency
 CREATE TABLE verses (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     reference TEXT NOT NULL,
@@ -157,17 +191,23 @@ CREATE TABLE verses (
     chapter INTEGER NOT NULL,
     verse INTEGER NOT NULL,
     hebrew_text TEXT NOT NULL,
+    hebrew_text_stripped TEXT,
     english_text TEXT NOT NULL,
     word_count INTEGER,
-    llm_restriction_error TEXT,      -- API errors for this verse
-    llm_deliberation TEXT,           -- LLM's reasoning about ALL potential figurative elements
+    llm_restriction_error TEXT,                    -- API errors for this verse
+    figurative_detection_deliberation TEXT,       -- LLM reasoning for ALL verses
+    instances_detected INTEGER,
+    instances_recovered INTEGER,
+    instances_lost_to_truncation INTEGER,
+    truncation_occurred TEXT CHECK(truncation_occurred IN ('yes', 'no')) DEFAULT 'no',
     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Advanced multi-type figurative language table with reclassification support
+-- Figurative language table - stores ONLY verses WITH figurative language detected
 CREATE TABLE figurative_language (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     verse_id INTEGER NOT NULL,
+
     -- Initial Detection Fields (what the LLM originally detected)
     figurative_language TEXT CHECK(figurative_language IN ('yes', 'no')) DEFAULT 'no',
     simile TEXT CHECK(simile IN ('yes', 'no')) DEFAULT 'no',
@@ -177,6 +217,7 @@ CREATE TABLE figurative_language (
     hyperbole TEXT CHECK(hyperbole IN ('yes', 'no')) DEFAULT 'no',
     metonymy TEXT CHECK(metonymy IN ('yes', 'no')) DEFAULT 'no',
     other TEXT CHECK(other IN ('yes', 'no')) DEFAULT 'no',
+
     -- Final Validation Fields (what passed validation, may include reclassification)
     final_figurative_language TEXT CHECK(final_figurative_language IN ('yes', 'no')) DEFAULT 'no',
     final_simile TEXT CHECK(final_simile IN ('yes', 'no')) DEFAULT 'no',
@@ -186,20 +227,32 @@ CREATE TABLE figurative_language (
     final_hyperbole TEXT CHECK(final_hyperbole IN ('yes', 'no')) DEFAULT 'no',
     final_metonymy TEXT CHECK(final_metonymy IN ('yes', 'no')) DEFAULT 'no',
     final_other TEXT CHECK(final_other IN ('yes', 'no')) DEFAULT 'no',
-    -- Core Analysis Fields
-    vehicle_level_1 TEXT,
-    vehicle_specific TEXT,
-    target_level_1 TEXT,
-    target_specific TEXT,
-    ground_level_1 TEXT,
-    ground_specific TEXT,
+
+    -- 🆕 FLEXIBLE SYSTEM: Hierarchical JSON arrays
+    target TEXT,   -- e.g., ["David", "king", "person"]
+    vehicle TEXT,  -- e.g., ["lion", "predatory animal", "living creature"]
+    ground TEXT,   -- e.g., ["strength", "physical quality", "attribute"]
+    posture TEXT,  -- e.g., ["celebration", "praise", "positive sentiment"]
+
+    -- ORIGINAL SYSTEM: Categorical fields (preserved for compatibility)
+    target_level_1 TEXT,       -- e.g., "God", "Social Group", "Natural world"
+    target_specific TEXT,      -- e.g., "David", "Israelites", "mountain"
+    vehicle_level_1 TEXT,      -- e.g., "natural world", "human parts", "divine"
+    vehicle_specific TEXT,     -- e.g., "lion", "heart", "shepherd"
+    ground_level_1 TEXT,       -- e.g., "moral quality", "physical quality", "status"
+    ground_specific TEXT,      -- e.g., "strength", "courage", "leadership"
+
+    -- Core metadata
     confidence REAL NOT NULL,
     figurative_text TEXT,
     figurative_text_in_hebrew TEXT,
+    figurative_text_in_hebrew_stripped TEXT,
     explanation TEXT,
     speaker TEXT,
     purpose TEXT,
-    original_detection_types TEXT,   -- Comma-separated list of originally detected types
+
+    -- 🆕 Split deliberation system (token-efficient)
+    tagging_analysis_deliberation TEXT,  -- LLM reasoning about hierarchical tag selection
     -- Validation Audit Trail (per type)
     validation_decision_simile TEXT CHECK(validation_decision_simile IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
     validation_decision_metaphor TEXT CHECK(validation_decision_metaphor IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
@@ -215,20 +268,32 @@ CREATE TABLE figurative_language (
     validation_reason_hyperbole TEXT,
     validation_reason_metonymy TEXT,
     validation_reason_other TEXT,
-    validation_response TEXT,        -- Full validator response
-    validation_error TEXT,           -- Any validation errors
+    validation_response TEXT,                         -- Full validator response
+    validation_error TEXT,                            -- Any validation errors
+    model_used TEXT DEFAULT 'gemini-2.5-flash',      -- 🆕 Track which model processed this instance
     processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (verse_id) REFERENCES verses (id)
 );
 ```
 
-## 📊 Advanced Data Architecture
-- **Multi-Type Detection**: Each phrase can be simultaneously classified as multiple types
-- **Initial vs. Final Fields**: Clear separation between what was detected vs. what was validated
-- **Reclassification Tracking**: Complete audit trail when validator corrects type assignments
-- **Deliberations**: LLM reasoning about all potential figurative elements per verse
-- **Per-Type Validation**: Independent validation decisions and reasoning for each figurative type
-- **Error Tracking**: Complete logging of API errors and restrictions
+## 📊 Production-Ready Data Architecture (v4.1)
+- **🤖 Intelligent Model Tracking**: Every instance records which AI model (`gemini-2.5-flash`, `gemini-2.5-pro`) processed it
+- **🔍 Complete Research Transparency**: `figurative_detection_deliberation` stored for ALL verses, not just figurative ones
+- **🏷️ Dual Classification Systems**: Original categorical + flexible hierarchical JSON arrays
+- **🧠 Split Deliberation Architecture**: Separate reasoning for detection vs. tagging analysis
+- **🔄 Multi-Type Detection**: Each phrase can be simultaneously classified as multiple types
+- **✅ Initial vs. Final Fields**: Clear separation between what was detected vs. what was validated
+- **🔧 Reclassification Tracking**: Complete audit trail when validator corrects type assignments
+- **📊 Per-Type Validation**: Independent validation decisions and reasoning for each figurative type
+- **🚨 Comprehensive Error Tracking**: Complete logging of API errors, restrictions, and truncation recovery
+
+### Key Architecture Benefits:
+- **Model Performance Analysis**: Compare detection quality between Flash and Pro models
+- **Complexity Correlation**: Identify which verses require high-capacity Pro model processing
+- **Cost Optimization**: Track expensive Pro model usage for budget planning
+- **Research Completeness**: Scholars can analyze why LLM rejected certain verses as non-figurative
+- **False Negative Analysis**: Identify patterns in detection gaps for system improvement
+- **System Compatibility**: Supports both proven categorical and revolutionary hierarchical approaches
 
 ## 🏷️ Current Classification Categories
 
