@@ -55,6 +55,7 @@ class DatabaseManager:
                 instances_recovered INTEGER,
                 instances_lost_to_truncation INTEGER,
                 truncation_occurred TEXT CHECK(truncation_occurred IN ('yes', 'no')) DEFAULT 'no',
+                both_models_truncated TEXT CHECK(both_models_truncated IN ('yes', 'no')) DEFAULT 'no',
                 processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         ''')
@@ -146,8 +147,8 @@ class DatabaseManager:
     def insert_verse(self, verse_data: Dict) -> int:
         """Insert verse and return verse_id"""
         self.cursor.execute('''
-            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error, figurative_detection_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error, figurative_detection_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred, both_models_truncated)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_data['reference'],
             verse_data['book'],
@@ -162,7 +163,8 @@ class DatabaseManager:
             verse_data.get('instances_detected'),
             verse_data.get('instances_recovered'),
             verse_data.get('instances_lost_to_truncation'),
-            verse_data.get('truncation_occurred', 'no')
+            verse_data.get('truncation_occurred', 'no'),
+            verse_data.get('both_models_truncated', 'no')
         ))
 
         return self.cursor.lastrowid
@@ -319,10 +321,190 @@ class DatabaseManager:
 
         return self.cursor.fetchall()
 
+    def batch_insert_verses(self, verse_data_list: List[Dict]) -> List[int]:
+        """Batch insert multiple verses and return their IDs"""
+        if not verse_data_list:
+            return []
+
+        verse_ids = []
+        try:
+            # Use executemany for efficient batch insert
+            verse_tuples = []
+            for verse_data in verse_data_list:
+                verse_tuples.append((
+                    verse_data['reference'],
+                    verse_data['book'],
+                    verse_data['chapter'],
+                    verse_data['verse'],
+                    verse_data['hebrew'],
+                    verse_data.get('hebrew_stripped'),
+                    verse_data['english'],
+                    verse_data['word_count'],
+                    verse_data.get('llm_restriction_error'),
+                    verse_data.get('figurative_detection_deliberation'),
+                    verse_data.get('instances_detected'),
+                    verse_data.get('instances_recovered'),
+                    verse_data.get('instances_lost_to_truncation'),
+                    verse_data.get('truncation_occurred', 'no')
+                ))
+
+            self.cursor.executemany('''
+                INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error, figurative_detection_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ''', verse_tuples)
+
+            # Get the IDs of inserted verses
+            for verse_data in verse_data_list:
+                self.cursor.execute('SELECT id FROM verses WHERE reference = ?', (verse_data['reference'],))
+                result = self.cursor.fetchone()
+                if result:
+                    verse_ids.append(result[0])
+
+        except Exception as e:
+            # Fallback to individual inserts if batch fails
+            verse_ids = []
+            for verse_data in verse_data_list:
+                verse_id = self.insert_verse(verse_data)
+                verse_ids.append(verse_id)
+
+        return verse_ids
+
+    def batch_insert_figurative_language(self, instance_data_list: List[Tuple[int, Dict]]) -> List[int]:
+        """Batch insert multiple figurative language instances and return their IDs"""
+        if not instance_data_list:
+            return []
+
+        instance_ids = []
+        try:
+            # Prepare tuples for batch insert
+            instance_tuples = []
+            for verse_id, figurative_data in instance_data_list:
+                instance_tuples.append((
+                    verse_id,
+                    figurative_data.get('figurative_language', 'no'),
+                    figurative_data.get('simile', 'no'),
+                    figurative_data.get('metaphor', 'no'),
+                    figurative_data.get('personification', 'no'),
+                    figurative_data.get('idiom', 'no'),
+                    figurative_data.get('hyperbole', 'no'),
+                    figurative_data.get('metonymy', 'no'),
+                    figurative_data.get('other', 'no'),
+                    figurative_data.get('final_figurative_language', 'no'),
+                    figurative_data.get('final_simile', 'no'),
+                    figurative_data.get('final_metaphor', 'no'),
+                    figurative_data.get('final_personification', 'no'),
+                    figurative_data.get('final_idiom', 'no'),
+                    figurative_data.get('final_hyperbole', 'no'),
+                    figurative_data.get('final_metonymy', 'no'),
+                    figurative_data.get('final_other', 'no'),
+                    figurative_data.get('target', '[]'),
+                    figurative_data.get('vehicle', '[]'),
+                    figurative_data.get('ground', '[]'),
+                    figurative_data.get('posture', '[]'),
+                    figurative_data['confidence'],
+                    figurative_data.get('figurative_text'),
+                    figurative_data.get('figurative_text_in_hebrew'),
+                    figurative_data.get('figurative_text_in_hebrew_stripped'),
+                    figurative_data.get('explanation'),
+                    figurative_data.get('speaker'),
+                    figurative_data.get('purpose'),
+                    figurative_data.get('tagging_analysis_deliberation', ''),
+                    figurative_data.get('model_used', 'gemini-2.5-flash')
+                ))
+
+            self.cursor.executemany('''
+                INSERT INTO figurative_language
+                (verse_id, figurative_language, simile, metaphor, personification, idiom, hyperbole, metonymy, other,
+                 final_figurative_language, final_simile, final_metaphor, final_personification, final_idiom,
+                 final_hyperbole, final_metonymy, final_other,
+                 target, vehicle, ground, posture,
+                 confidence, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped,
+                 explanation, speaker, purpose,
+                 tagging_analysis_deliberation, model_used)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ''', instance_tuples)
+
+            # Get the IDs of inserted instances
+            start_id = self.cursor.lastrowid - len(instance_tuples) + 1
+            instance_ids = list(range(start_id, start_id + len(instance_tuples)))
+
+        except Exception as e:
+            # Fallback to individual inserts if batch fails
+            instance_ids = []
+            for verse_id, figurative_data in instance_data_list:
+                instance_id = self.insert_figurative_language(verse_id, figurative_data)
+                instance_ids.append(instance_id)
+
+        return instance_ids
+
+    def batch_update_validation_data(self, validation_updates: List[Tuple[int, Dict]]):
+        """Batch update validation data for multiple figurative language entries"""
+        if not validation_updates:
+            return
+
+        try:
+            # Prepare tuples for batch update
+            update_tuples = []
+            for figurative_language_id, validation_data in validation_updates:
+                update_tuples.append((
+                    validation_data.get('validation_decision_simile'),
+                    validation_data.get('validation_decision_metaphor'),
+                    validation_data.get('validation_decision_personification'),
+                    validation_data.get('validation_decision_idiom'),
+                    validation_data.get('validation_decision_hyperbole'),
+                    validation_data.get('validation_decision_metonymy'),
+                    validation_data.get('validation_decision_other'),
+                    validation_data.get('validation_reason_simile'),
+                    validation_data.get('validation_reason_metaphor'),
+                    validation_data.get('validation_reason_personification'),
+                    validation_data.get('validation_reason_idiom'),
+                    validation_data.get('validation_reason_hyperbole'),
+                    validation_data.get('validation_reason_metonymy'),
+                    validation_data.get('validation_reason_other'),
+                    validation_data.get('final_figurative_language'),
+                    validation_data.get('final_simile'),
+                    validation_data.get('final_metaphor'),
+                    validation_data.get('final_personification'),
+                    validation_data.get('final_idiom'),
+                    validation_data.get('final_hyperbole'),
+                    validation_data.get('final_metonymy'),
+                    validation_data.get('final_other'),
+                    validation_data.get('validation_response'),
+                    validation_data.get('validation_error'),
+                    figurative_language_id
+                ))
+
+            self.cursor.executemany('''
+                UPDATE figurative_language
+                SET validation_decision_simile = ?, validation_decision_metaphor = ?, validation_decision_personification = ?,
+                    validation_decision_idiom = ?, validation_decision_hyperbole = ?, validation_decision_metonymy = ?, validation_decision_other = ?,
+                    validation_reason_simile = ?, validation_reason_metaphor = ?, validation_reason_personification = ?,
+                    validation_reason_idiom = ?, validation_reason_hyperbole = ?, validation_reason_metonymy = ?, validation_reason_other = ?,
+                    final_figurative_language = ?, final_simile = ?, final_metaphor = ?, final_personification = ?,
+                    final_idiom = ?, final_hyperbole = ?, final_metonymy = ?, final_other = ?,
+                    validation_response = ?, validation_error = ?
+                WHERE id = ?
+            ''', update_tuples)
+
+        except Exception as e:
+            # Fallback to individual updates if batch fails
+            for figurative_language_id, validation_data in validation_updates:
+                self.update_validation_data(figurative_language_id, validation_data)
+
+    def begin_transaction(self):
+        """Start a database transaction for batch operations"""
+        if self.conn:
+            self.cursor.execute('BEGIN TRANSACTION')
+
     def commit(self):
         """Commit changes"""
         if self.conn:
             self.conn.commit()
+
+    def rollback(self):
+        """Rollback changes"""
+        if self.conn:
+            self.conn.rollback()
 
     def close(self):
         """Close database connection"""
