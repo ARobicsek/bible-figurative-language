@@ -67,7 +67,7 @@ def get_user_selection():
     }
 
     print("\n=== HEBREW FIGURATIVE LANGUAGE FLEXIBLE TAGGING PROCESSOR ===")
-    print("🚀 Revolutionary hierarchical tag generation system")
+    print("Revolutionary hierarchical tag generation system")
     print("\nAvailable books:")
     for i, (book, chapters) in enumerate(books.items(), 1):
         print(f"  {i}. {book} ({chapters} chapters)")
@@ -184,6 +184,16 @@ def process_chapter_flexible(book_name, chapter, verse_selection, sefaria, flexi
                 heb_verse, eng_verse, book=book_name, chapter=chapter
             )
 
+            truncation_occurred = metadata.get('truncation_detected', False)
+            if truncation_occurred:
+                logger.warning(f"  ⚠️ Truncation detected in initial analysis of {verse_ref}. Retrying with fallback model.")
+                # Retry with fallback model
+                result_text, error, metadata = flexible_client.analyze_figurative_language_flexible(
+                    heb_verse, eng_verse, book=book_name, chapter=chapter, model_override="gemini-2.5-pro"
+                )
+                logger.info(f"    📊 Fallback Analysis Metadata: {metadata.get('model_used', 'unknown')} | "
+                           f"Instances: {metadata.get('instances_count', 0)}")
+
             logger.info(f"    📊 Flexible Tagging Metadata: {metadata.get('model_used', 'unknown')} | "
                        f"Instances: {metadata.get('instances_count', 0)} | "
                        f"Fallback: {metadata.get('fallback_used', False)}")
@@ -193,6 +203,10 @@ def process_chapter_flexible(book_name, chapter, verse_selection, sefaria, flexi
 
             # Store complete verse data in database with all required fields
             instances_count = len(metadata.get('flexible_instances', []))
+
+            # Extract deliberation data that should be stored with verse
+            figurative_detection = metadata.get('figurative_detection_deliberation', '')
+
             verse_data_dict = {
                 'reference': verse_ref,
                 'book': book_name,
@@ -203,11 +217,11 @@ def process_chapter_flexible(book_name, chapter, verse_selection, sefaria, flexi
                 'english': eng_verse,
                 'word_count': len(heb_verse.split()),
                 'llm_restriction_error': error,
-                'llm_deliberation': metadata.get('llm_deliberation', ''),
+                'figurative_detection_deliberation': figurative_detection,  # Store with every verse
                 'instances_detected': instances_count,
                 'instances_recovered': instances_count,  # Same as detected for flexible tagging
-                'instances_lost_to_truncation': 0,  # No truncation handling yet in flexible system
-                'truncation_occurred': 'no'
+                'instances_lost_to_truncation': 1 if truncation_occurred and not instances_count else 0,
+                'truncation_occurred': 'yes' if truncation_occurred else 'no'
             }
             verse_id = db_manager.insert_verse(verse_data_dict)
             logger.debug(f"    💾 Verse stored in database with ID: {verse_id}")
@@ -219,9 +233,7 @@ def process_chapter_flexible(book_name, chapter, verse_selection, sefaria, flexi
 
             # Process flexible tagging results
             flexible_instances = metadata.get('flexible_instances', [])
-            figurative_detection = metadata.get('figurative_detection_deliberation', '')
             tagging_analysis = metadata.get('tagging_analysis_deliberation', '')
-            llm_deliberation = metadata.get('llm_deliberation', '')
 
             # Log deliberation for debugging
             if figurative_detection:
@@ -234,22 +246,15 @@ def process_chapter_flexible(book_name, chapter, verse_selection, sefaria, flexi
             if flexible_instances:
                 logger.info(f"    ✅ DETECTED: {len(flexible_instances)} flexible instances")
 
+                # First, insert all detected instances and get their DB IDs
+                instances_with_db_ids = []
                 for j, instance in enumerate(flexible_instances):
-                    # Handle cases where instance might be a string instead of dict
-                    if isinstance(instance, str):
-                        logger.warning(f"    ⚠️ Instance {j+1} is string instead of dict: {instance[:100]}...")
-                        continue
-
                     if not isinstance(instance, dict):
-                        logger.warning(f"    ⚠️ Instance {j+1} is unexpected type: {type(instance)}")
+                        logger.warning(f"    ⚠️ Instance {j+1} is not a dict, skipping.")
                         continue
 
-                    # Store instance in database first (following proven pattern)
-                    # Extract figurative text fields with proper fallbacks
                     hebrew_text = instance.get('hebrew_text', '')
                     english_text = instance.get('english_text', '')
-
-                    # Strip diacritics from Hebrew figurative text if present
                     hebrew_stripped = HebrewTextProcessor.strip_diacritics(hebrew_text) if hebrew_text else ''
 
                     flexible_data = {
@@ -267,117 +272,88 @@ def process_chapter_flexible(book_name, chapter, verse_selection, sefaria, flexi
                         'other': instance.get('other', 'no'),
                         'explanation': instance.get('explanation', ''),
                         'confidence': instance.get('confidence', ''),
-                        # Hierarchical tag fields - store as JSON arrays
                         'target': json.dumps(instance.get('target', [])) if instance.get('target') else '[]',
                         'vehicle': json.dumps(instance.get('vehicle', [])) if instance.get('vehicle') else '[]',
                         'ground': json.dumps(instance.get('ground', [])) if instance.get('ground') else '[]',
                         'posture': json.dumps(instance.get('posture', [])) if instance.get('posture') else '[]',
                         'speaker': instance.get('speaker', ''),
                         'purpose': instance.get('purpose', ''),
-                        # Database-expected figurative text fields
-                        'figurative_text': english_text,  # Store English text as figurative_text
-                        'figurative_text_in_hebrew': hebrew_text,  # Store Hebrew text
-                        'figurative_text_in_hebrew_stripped': hebrew_stripped,  # Store stripped Hebrew
-                        # Split deliberation fields (more efficient than storing combined deliberation)
-                        'figurative_detection_deliberation': figurative_detection,
-                        'tagging_analysis_deliberation': tagging_analysis
+                        'figurative_text': english_text,
+                        'figurative_text_in_hebrew': hebrew_text,
+                        'figurative_text_in_hebrew_stripped': hebrew_stripped,
+                        'tagging_analysis_deliberation': tagging_analysis,
+                        'model_used': metadata.get('model_used', 'gemini-2.5-flash')
                     }
 
-                    # Insert the figurative language record to get ID
                     figurative_language_id = db_manager.insert_figurative_language(verse_id, flexible_data)
                     logger.debug(f"        💾 Flexible instance stored with ID: {figurative_language_id}")
+                    
+                    # Keep track of instance and its new DB ID
+                    instance['db_id'] = figurative_language_id
+                    instances_with_db_ids.append(instance)
 
-                    # VALIDATION STEP - Use exact pattern from proven system
-                    if validator:
+                # VALIDATION STEP - New bulk validation call
+                if validator and instances_with_db_ids:
+                    logger.info(f"    🔍 Starting bulk validation for {len(instances_with_db_ids)} instances...")
+                    bulk_validation_results = validator.validate_verse_instances(instances_with_db_ids, heb_verse, eng_verse)
+
+                    # Create a mapping from instance_id to db_id for easy lookup
+                    instance_id_to_db_id = {inst.get('instance_id'): inst.get('db_id') for inst in instances_with_db_ids}
+
+                    # Process the bulk results
+                    for validation_result in bulk_validation_results:
+                        instance_id = validation_result.get('instance_id')
+                        results = validation_result.get('validation_results', {})
+                        
+                        db_id = instance_id_to_db_id.get(instance_id)
+                        
+                        if not db_id:
+                            logger.error(f"Could not find DB ID for validation result with instance_id {instance_id}")
+                            continue
+
                         any_valid = False
                         validation_data = {}
-
-                        # Initialize final fields to 'no'
                         for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
                             validation_data[f'final_{fig_type}'] = 'no'
 
-                        for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
-                            if instance.get(fig_type) == 'yes':
-                                logger.info(f"        🔍 Validating {fig_type}...")
-                                is_valid, reason, val_error, reclassified_type = validator.validate_figurative_type(
-                                    fig_type,
-                                    heb_verse,
-                                    eng_verse,
-                                    instance.get('english_text', ''),
-                                    instance.get('explanation', ''),
-                                    float(instance.get('confidence', 0.7))
-                                )
+                        for fig_type, result in results.items():
+                            decision = result.get('decision')
+                            reason = result.get('reason', '')
+                            reclassified_type = result.get('reclassified_type')
 
-                                if reclassified_type:
-                                    # This was reclassified to a different type
-                                    validation_data[f'validation_decision_{fig_type}'] = 'RECLASSIFIED'
-                                    validation_data[f'validation_reason_{fig_type}'] = f"Reclassified to {reclassified_type}: {reason}"
-                                    # Set final field for reclassified type
-                                    validation_data[f'final_{reclassified_type}'] = 'yes'
-                                    any_valid = True
-                                    logger.info(f"        🔄 RECLASSIFIED: {fig_type} → {reclassified_type} - {reason}")
-                                elif is_valid:
-                                    # Validation confirmed the original type
-                                    validation_data[f'validation_decision_{fig_type}'] = 'VALID'
-                                    validation_data[f'validation_reason_{fig_type}'] = reason
-                                    validation_data[f'final_{fig_type}'] = 'yes'
-                                    any_valid = True
-                                    logger.info(f"        ✅ VALID: {fig_type} - {reason}")
-                                else:
-                                    # Validation rejected the type
-                                    validation_data[f'validation_decision_{fig_type}'] = 'INVALID'
-                                    validation_data[f'validation_reason_{fig_type}'] = reason
-                                    logger.info(f"        ❌ INVALID: {fig_type} - {reason}")
+                            if decision == 'RECLASSIFIED' and reclassified_type:
+                                validation_data[f'validation_decision_{fig_type}'] = 'RECLASSIFIED'
+                                validation_data[f'validation_reason_{fig_type}'] = f"Reclassified to {reclassified_type}: {reason}"
+                                validation_data[f'final_{reclassified_type}'] = 'yes'
+                                any_valid = True
+                                logger.info(f"        🔄 RECLASSIFIED: {fig_type} → {reclassified_type} - {reason}")
+                            elif decision == 'VALID':
+                                validation_data[f'validation_decision_{fig_type}'] = 'VALID'
+                                validation_data[f'validation_reason_{fig_type}'] = reason
+                                validation_data[f'final_{fig_type}'] = 'yes'
+                                any_valid = True
+                                logger.info(f"        ✅ VALID: {fig_type} - {reason}")
+                            else: # INVALID
+                                validation_data[f'validation_decision_{fig_type}'] = 'INVALID'
+                                validation_data[f'validation_reason_{fig_type}'] = reason
+                                logger.info(f"        ❌ INVALID: {fig_type} - {reason}")
 
-                                if val_error:
-                                    validation_data['validation_error'] = val_error
-
-                        # Set final_figurative_language based on validation results
                         validation_data['final_figurative_language'] = 'yes' if any_valid else 'no'
+                        
+                        db_manager.update_validation_data(db_id, validation_data)
+                        logger.debug(f"        💾 Bulk validation data updated for ID: {db_id}")
 
-                        # Update validation data with final fields (following proven pattern)
-                        db_manager.update_validation_data(figurative_language_id, validation_data)
-                        logger.debug(f"        💾 Validation data updated for ID: {figurative_language_id}")
-
-                    # Prepare data for JSON output (with validation results for display)
-                    display_data = flexible_data.copy()
-                    display_data['target'] = instance.get('target', [])
-                    display_data['vehicle'] = instance.get('vehicle', [])
-                    display_data['ground'] = instance.get('ground', [])
-                    display_data['posture'] = instance.get('posture', [])
-                    display_data['figurative_language_id'] = figurative_language_id
+                # Prepare data for JSON output
+                for instance in instances_with_db_ids:
+                    display_data = instance.copy()
+                    # Clean up internal IDs before final output
+                    display_data.pop('db_id', None)
+                    display_data.pop('instance_id', None)
+                    display_data['figurative_language_id'] = instance['db_id'] # Ensure the final JSON has the db id
                     display_data['metadata'] = metadata
-
-                    # Add to results for JSON output
                     all_flexible_results.append(display_data)
 
-                    logger.info(f"      🏷️  Instance {j+1}: {instance.get('type', 'unknown')} - "
-                               f"'{instance.get('english_text', 'N/A')}'")
-
-                    # Log hierarchical tags
-                    target = instance.get('target', [])
-                    vehicle = instance.get('vehicle', [])
-                    ground = instance.get('ground', [])
-                    posture = instance.get('posture', [])
-
-                    if target:
-                        logger.info(f"        TARGET: {target}")
-                    if vehicle:
-                        logger.info(f"        VEHICLE: {vehicle}")
-                    if ground:
-                        logger.info(f"        GROUND: {ground}")
-                    if posture:
-                        logger.info(f"        POSTURE: {posture}")
-
-                    # Log types detected
-                    types_detected = []
-                    for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
-                        if instance.get(fig_type) == 'yes':
-                            types_detected.append(fig_type)
-                    if types_detected:
-                        logger.info(f"        TYPES: {', '.join(types_detected)}")
-
-                chapter_instances += len(flexible_instances)
+                chapter_instances += len(instances_with_db_ids)
             else:
                 logger.debug(f"    ⚪ No figurative language detected")
 
@@ -547,5 +523,5 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\n\n⏹️  Processing interrupted by user.")
     except Exception as e:
-        print(f"\n❌ An error occurred: {e}")
+        print(f"An error occurred: {e}")
         print("Check the log file for detailed error information.")

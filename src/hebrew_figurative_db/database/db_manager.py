@@ -50,7 +50,7 @@ class DatabaseManager:
                 english_text TEXT NOT NULL,
                 word_count INTEGER,
                 llm_restriction_error TEXT,
-                llm_deliberation TEXT,
+                figurative_detection_deliberation TEXT,  -- LLM reasoning about figurative language detection for this verse
                 instances_detected INTEGER,
                 instances_recovered INTEGER,
                 instances_lost_to_truncation INTEGER,
@@ -91,8 +91,6 @@ class DatabaseManager:
                 explanation TEXT,
                 speaker TEXT,
                 purpose TEXT,
-                original_detection_types TEXT,
-                figurative_detection_deliberation TEXT,  -- LLM reasoning about figurative language detection and typing
                 tagging_analysis_deliberation TEXT,      -- LLM reasoning about hierarchical tag selection
                 validation_decision_simile TEXT CHECK(validation_decision_simile IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
                 validation_decision_metaphor TEXT CHECK(validation_decision_metaphor IN ('VALID', 'INVALID', 'RECLASSIFIED', NULL)),
@@ -110,6 +108,7 @@ class DatabaseManager:
                 validation_reason_other TEXT,
                 validation_response TEXT,
                 validation_error TEXT,
+                model_used TEXT DEFAULT 'gemini-2.5-flash',  -- Track which model was used for analysis
                 processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY (verse_id) REFERENCES verses (id)
             )
@@ -140,14 +139,14 @@ class DatabaseManager:
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_confidence ON figurative_language (confidence)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_speaker ON figurative_language (speaker)')
         self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_purpose ON figurative_language (purpose)')
-        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_original_detection_types ON figurative_language (original_detection_types)')
+        self.cursor.execute('CREATE INDEX IF NOT EXISTS idx_figurative_model_used ON figurative_language (model_used)')
 
         self.conn.commit()
 
     def insert_verse(self, verse_data: Dict) -> int:
         """Insert verse and return verse_id"""
         self.cursor.execute('''
-            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error, llm_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred)
+            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error, figurative_detection_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_data['reference'],
@@ -159,7 +158,7 @@ class DatabaseManager:
             verse_data['english'],
             verse_data['word_count'],
             verse_data.get('llm_restriction_error'),
-            verse_data.get('llm_deliberation'),
+            verse_data.get('figurative_detection_deliberation'),
             verse_data.get('instances_detected'),
             verse_data.get('instances_recovered'),
             verse_data.get('instances_lost_to_truncation'),
@@ -177,9 +176,9 @@ class DatabaseManager:
              final_hyperbole, final_metonymy, final_other,
              target, vehicle, ground, posture,
              confidence, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped,
-             explanation, speaker, purpose, original_detection_types,
-             figurative_detection_deliberation, tagging_analysis_deliberation)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+             explanation, speaker, purpose,
+             tagging_analysis_deliberation, model_used)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_id,
             figurative_data.get('figurative_language', 'no'),
@@ -209,9 +208,8 @@ class DatabaseManager:
             figurative_data.get('explanation'),
             figurative_data.get('speaker'),
             figurative_data.get('purpose'),
-            figurative_data.get('original_detection_types'),
-            figurative_data.get('figurative_detection_deliberation', ''),
-            figurative_data.get('tagging_analysis_deliberation', '')
+            figurative_data.get('tagging_analysis_deliberation', ''),
+            figurative_data.get('model_used', 'gemini-2.5-flash')
         ))
 
         return self.cursor.lastrowid
