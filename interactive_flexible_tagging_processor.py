@@ -185,14 +185,18 @@ def process_chapter_flexible(book_name, chapter, verse_selection, sefaria, flexi
             )
 
             truncation_occurred = metadata.get('truncation_detected', False)
+            pro_model_recovery_successful = False
             if truncation_occurred:
                 logger.warning(f"  ⚠️ Truncation detected in initial analysis of {verse_ref}. Retrying with fallback model.")
                 # Retry with fallback model
                 result_text, error, metadata = flexible_client.analyze_figurative_language_flexible(
                     heb_verse, eng_verse, book=book_name, chapter=chapter, model_override="gemini-2.5-pro"
                 )
+                # Check if Pro model successfully recovered (no truncation in second attempt)
+                pro_model_recovery_successful = not metadata.get('truncation_detected', False)
                 logger.info(f"    📊 Fallback Analysis Metadata: {metadata.get('model_used', 'unknown')} | "
-                           f"Instances: {metadata.get('instances_count', 0)}")
+                           f"Instances: {metadata.get('instances_count', 0)} | "
+                           f"Recovery successful: {pro_model_recovery_successful}")
 
             logger.info(f"    📊 Flexible Tagging Metadata: {metadata.get('model_used', 'unknown')} | "
                        f"Instances: {metadata.get('instances_count', 0)} | "
@@ -220,7 +224,7 @@ def process_chapter_flexible(book_name, chapter, verse_selection, sefaria, flexi
                 'figurative_detection_deliberation': figurative_detection,  # Store with every verse
                 'instances_detected': instances_count,
                 'instances_recovered': instances_count,  # Same as detected for flexible tagging
-                'instances_lost_to_truncation': 1 if truncation_occurred and not instances_count else 0,
+                'instances_lost_to_truncation': 1 if truncation_occurred and not pro_model_recovery_successful else 0,
                 'truncation_occurred': 'yes' if truncation_occurred else 'no'
             }
             verse_id = db_manager.insert_verse(verse_data_dict)
