@@ -46,6 +46,39 @@ class HebrewDivineNamesModifier:
 
         return modified_text
 
+    def modify_english_with_hebrew_terms(self, english_text: str) -> str:
+        """Apply divine name modifications to English text that contains Hebrew terms"""
+        if not english_text or not isinstance(english_text, str):
+            return english_text
+
+        # This method applies the same Hebrew divine name modifications
+        # but to English text that may contain Hebrew terms
+        modified_text = english_text
+
+        # Apply the same modifications as Hebrew text
+        # The patterns should work the same way since we're looking for Hebrew characters
+
+        # 1. Tetragrammaton: יהוה → ה׳
+        modified_text = self._modify_tetragrammaton(modified_text)
+
+        # 2. El Shaddai: שַׁדַּי → שַׁקַּי (before general patterns)
+        modified_text = self._modify_el_shaddai(modified_text)
+
+        # 3. Elohim family: replace ה with ק in divine names
+        modified_text = self._modify_elohim_family(modified_text)
+
+        # 4. El with tzere: אֵל → קֵל (NOT preposition אֶל)
+        modified_text = self._modify_el_tzere(modified_text)
+
+        # 5. Tzevaot: צְבָאוֹת → צְבָקוֹת
+        modified_text = self._modify_tzevaot(modified_text)
+
+        # Log if text changed
+        if modified_text != english_text:
+            self.logger.debug(f"English text with Hebrew divine names modified")
+
+        return modified_text
+
     def _modify_tetragrammaton(self, text: str) -> str:
         """Replace יהוה with ה׳"""
         # Match both voweled and unvoweled forms
@@ -95,17 +128,18 @@ class HebrewDivineNamesModifier:
         return modified
 
     def _modify_el_tzere(self, text: str) -> str:
-        """Replace אֵל (with tzere) with קֵל, but NOT אֶל (with segol)"""
-        # Pattern: א with tzere (ֵ) followed by ל, with optional cantillation marks
-        # Use Hebrew word boundaries - not followed by Hebrew letters (but allow vowels/cantillation)
-        pattern = r'אֵ[\u0591-\u05C7]*ל(?![\u05D0-\u05EA])'  # Hebrew letters range
-        replacement = r'קֵ\1ל'  # Preserve any cantillation marks between א and ל
+        """Replace אֵל (with tzere) with קֵל, but NOT אֶל (with segol) or when part of other words"""
+        # Use a simple approach: match אֵל that is preceded by space, hyphen, or start of string
+        # and followed by space, hyphen, end of string, or only vowels/cantillation
 
-        # Alternative simpler approach - just match אֵל with any following marks
-        pattern = r'אֵ([^\u05D0-\u05EA]*)ל'  # Match אֵ, capture non-Hebrew-letter marks, then ל
-        replacement = r'קֵ\1ל'
+        pattern = r'(^|[\s\-\u05BE])אֵ([\u0591-\u05C7]*)ל(?=[\s\-\u05BE]|$)'
 
-        modified = re.sub(pattern, replacement, text)
+        def replacer(match):
+            prefix = match.group(1)
+            cantillation = match.group(2)
+            return f"{prefix}קֵ{cantillation}ל"
+
+        modified = re.sub(pattern, replacer, text)
         if modified != text:
             self.logger.debug(f"El (tzere) modified: אֵל → קֵל")
 
@@ -155,9 +189,9 @@ class HebrewDivineNamesModifier:
 
         return modified
 
-    def has_divine_names(self, hebrew_text: str) -> bool:
-        """Check if text contains any divine names that would be modified"""
-        if not hebrew_text:
+    def has_divine_names(self, text: str) -> bool:
+        """Check if text (Hebrew or English with Hebrew terms) contains any divine names that would be modified"""
+        if not text:
             return False
 
         patterns = [
@@ -166,7 +200,7 @@ class HebrewDivineNamesModifier:
             r'אלהים',  # Elohim (unvoweled)
             r'א[\u0591-\u05C7]*[ֱ]?[\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ]?[\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶָ]',  # Elohim (voweled with cantillation)
             r'ה[\u0591-\u05C7]*[ָ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*[ֱ]?[\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ]?[\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶָ]',  # Ha-Elohim with cantillation
-            r'אֵ([^\u05D0-\u05EA]*)ל',  # El with tzere (matches our modifier pattern)
+            r'(^|[\s\-\u05BE])אֵ[\u0591-\u05C7]*ל(?=[\s\-\u05BE]|$)',  # El with tzere (standalone word only)
             r'צבאות',  # Tzevaot (unvoweled)
             r'צ[\u0591-\u05C7]*[ְ]?[\u0591-\u05C7]*ב[\u0591-\u05C7]*[ָ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*[וֹ]?[\u0591-\u05C7]*ת',  # Tzevaot (voweled with cantillation)
             r'שדי',  # Shaddai (unvoweled)
@@ -174,7 +208,7 @@ class HebrewDivineNamesModifier:
         ]
 
         for pattern in patterns:
-            if re.search(pattern, hebrew_text):
+            if re.search(pattern, text):
                 return True
 
         return False

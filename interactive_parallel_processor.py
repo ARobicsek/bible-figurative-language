@@ -260,6 +260,7 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
         # Prepare verse data
         hebrew_stripped = HebrewTextProcessor.strip_diacritics(heb_verse)
         hebrew_non_sacred = divine_names_modifier.modify_divine_names(heb_verse)
+        english_non_sacred = divine_names_modifier.modify_english_with_hebrew_terms(eng_verse)
         instances_count = len(metadata.get('flexible_instances', []))
         figurative_detection = metadata.get('figurative_detection_deliberation', '')
 
@@ -279,6 +280,7 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
             'hebrew_stripped': hebrew_stripped,
             'hebrew_text_non_sacred': hebrew_non_sacred,
             'english': eng_verse,
+            'english_text_non_sacred': english_non_sacred,
             'word_count': len(heb_verse.split()),
             'llm_restriction_error': error,
             'figurative_detection_deliberation': figurative_detection,
