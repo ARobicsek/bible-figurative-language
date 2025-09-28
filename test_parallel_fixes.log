@@ -1,0 +1,59 @@
+2025-09-26 09:24:19,654 - INFO - Initializing components...
+2025-09-26 09:24:23,881 - INFO - --- TESTING: Deuteronomy 30:2-4 (known complex verses) ---
+2025-09-26 09:24:24,305 - INFO - Testing 3 verses...
+2025-09-26 09:24:24,305 - INFO -   - Deuteronomy 30:2
+2025-09-26 09:24:24,306 - INFO -   - Deuteronomy 30:3
+2025-09-26 09:24:24,306 - INFO -   - Deuteronomy 30:4
+2025-09-26 09:24:24,306 - INFO - Starting parallel processing: 3 verses with 3 workers
+2025-09-26 09:24:24,307 - INFO - Worker 1: Processing Deuteronomy 30:2
+2025-09-26 09:24:24,309 - INFO - Worker 2: Processing Deuteronomy 30:3
+2025-09-26 09:24:24,309 - INFO - Worker 3: Processing Deuteronomy 30:4
+2025-09-26 09:24:48,919 - WARNING -   ⚠️ Response appears to end abruptly (no proper punctuation)
+2025-09-26 09:24:49,011 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 09:24:49,014 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 09:24:49,017 - INFO -       📄 Array content: '[God]'
+2025-09-26 09:24:49,019 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 09:24:49,021 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 09:24:49,023 - INFO -       📄 Attempting sophisticated bracket matching from position 1849
+2025-09-26 09:24:49,025 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 09:24:49,027 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 09:24:49,028 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 09:24:49,030 - INFO - Worker 3: Completed Deuteronomy 30:4 - 0 instances
+2025-09-26 09:24:50,083 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 09:24:50,086 - INFO -       📄 Found JSON-like array: 537 chars
+2025-09-26 09:24:50,088 - INFO -       📄 Array content: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "hebrew_text": "וְשַׁבְתָּ֞ עַד־יְהֹוָ֤ה אֱלֹהֶ֙יךָ֙",
+    "english_text": "and you return to your God יהוה",
+    "explanation": "This is a common biblical idiom for repentance and spiritual re-orientation towards God, not a literal physical return.",
+    "target": ["repentance", "spiritual turning", "human action", "religious concept"]'
+2025-09-26 09:24:50,092 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 09:24:50,096 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 09:24:50,099 - INFO -       📄 Attempting sophisticated bracket matching from position 2524
+2025-09-26 09:24:50,103 - INFO -       📄 Bracket matching found: 2811 chars
+2025-09-26 09:24:50,106 - INFO -       ✅ Bracket-matched array contains objects
+2025-09-26 09:24:50,112 - WARNING -   ⚠️ Found problematic characters: ["'ו' (ord=1493) at pos 215", "'ְ' (ord=1456) at pos 216", "'ש' (ord=1513) at pos 217", "'ׁ' (ord=1473) at pos 218", "'ַ' (ord=1463) at pos 219", "'ב' (ord=1489) at pos 220", "'ְ' (ord=1456) at pos 221", "'ת' (ord=1514) at pos 222", "'ּ' (ord=1468) at pos 223", "'ָ' (ord=1464) at pos 224"]
+2025-09-26 09:24:50,115 - INFO -   ✅ JSON parsing succeeded on first attempt
+2025-09-26 09:24:50,118 - INFO - Worker 1: Completed Deuteronomy 30:2 - 3 instances
+2025-09-26 09:24:59,475 - WARNING -   ⚠️ Response appears to end abruptly (no proper punctuation)
+2025-09-26 09:24:59,479 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 09:24:59,481 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 09:24:59,483 - INFO -       📄 Array content: '[God]'
+2025-09-26 09:24:59,485 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 09:24:59,487 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 09:24:59,489 - INFO -       📄 Attempting sophisticated bracket matching from position 1869
+2025-09-26 09:24:59,489 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 09:24:59,490 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 09:24:59,491 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 09:24:59,492 - INFO - Worker 2: Completed Deuteronomy 30:3 - 0 instances
+2025-09-26 09:24:59,492 - INFO - Progress: 3/3 verses completed
+2025-09-26 09:24:59,493 - INFO - Storing results in database...
+2025-09-26 09:25:11,479 - INFO - === CHECKING DATABASE RESULTS ===

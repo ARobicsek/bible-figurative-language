@@ -1,0 +1,178 @@
+2025-09-26 08:40:06,557 - INFO - Processing Deuteronomy 30:2
+2025-09-26 08:40:34,924 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:40:34,925 - INFO -       📄 Found JSON-like array: 649 chars
+2025-09-26 08:40:34,925 - INFO -       📄 Array content: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "hebrew_text": "וְשַׁבְתָּ֞ עַד־יְהֹוָ֤ה אֱלֹהֶ֙יךָ֙",
+    "english_text": "and you return to your God יהוה",
+    "explanation": "The verb 'שׁוּב' (to return) when used in the context of 'returning to God' is a well-established biblical idiom for spiritual repentance and turning back to God's covenant, not a physical movement.",
+    "target": [
+      "repentance",
+      "spiritual turning",
+      "covenant restoration",
+      "human action"
+    ]'
+2025-09-26 08:40:34,938 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:40:34,940 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:40:34,940 - INFO -       📄 Attempting sophisticated bracket matching from position 2748
+2025-09-26 08:40:34,941 - INFO -       📄 Bracket matching found: 3524 chars
+2025-09-26 08:40:34,941 - INFO -       ✅ Bracket-matched array contains objects
+2025-09-26 08:40:34,941 - INFO - JSON extracted: 3524 chars
+2025-09-26 08:40:34,941 - INFO -   ✅ JSON parsing succeeded on first attempt
+2025-09-26 08:40:34,980 - INFO - Processing Deuteronomy 30:3
+2025-09-26 08:41:14,240 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:41:14,241 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:41:14,241 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:41:14,241 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:41:14,242 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:41:14,242 - INFO -       📄 Attempting sophisticated bracket matching from position 2469
+2025-09-26 08:41:14,242 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:41:14,242 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:41:14,243 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:41:14,243 - INFO - JSON extracted: 2 chars
+2025-09-26 08:41:14,243 - WARNING - Attempt 1 failed: name 'json_str' is not defined
+2025-09-26 08:41:43,835 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:41:43,835 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:41:43,835 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:41:43,835 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:41:43,835 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:41:43,836 - INFO -       📄 Attempting sophisticated bracket matching from position 2106
+2025-09-26 08:41:43,836 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:41:43,836 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:41:43,836 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:41:43,836 - INFO - JSON extracted: 2 chars
+2025-09-26 08:41:43,836 - WARNING - Attempt 2 failed: name 'json_str' is not defined
+2025-09-26 08:42:20,688 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:42:20,688 - INFO -       📄 Found JSON-like array: 741 chars
+2025-09-26 08:42:20,688 - INFO -       📄 Array content: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "hebrew_text": "וְשָׁ֨ב יְהֹוָ֧ה אֱלֹהֶ֛יךָ אֶת־שְׁבוּתְךָ֖",
+    "english_text": "your God יהוה will restore your fortunes",
+    "explanation": "The phrase 'שוב שבות' (shuv shvut), formed by the verb 'שוב' (to return/restore) and the noun 'שבות' (captivity/fortunes), is a well-established biblical idiom. It signifies a comprehensive reversal of misfortune, exile, or captivity, leading to restoration and well-being.",
+    "target": [
+      "Israel's national restoration",
+      "reversal of exile/captivity",
+      "divine promise"
+    ]'
+2025-09-26 08:42:20,688 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:42:20,688 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:42:20,688 - INFO -       📄 Attempting sophisticated bracket matching from position 3213
+2025-09-26 08:42:20,689 - INFO -       📄 Bracket matching found: 1285 chars
+2025-09-26 08:42:20,689 - INFO -       ✅ Bracket-matched array contains objects
+2025-09-26 08:42:20,689 - INFO - JSON extracted: 1285 chars
+2025-09-26 08:42:20,689 - INFO -   ✅ JSON parsing succeeded on first attempt
+2025-09-26 08:42:20,690 - INFO - Processing Deuteronomy 30:4
+2025-09-26 08:42:51,099 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:42:51,100 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:42:51,100 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:42:51,100 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:42:51,100 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:42:51,101 - INFO -       📄 Attempting sophisticated bracket matching from position 2763
+2025-09-26 08:42:51,101 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:42:51,101 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:42:51,101 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:42:51,101 - INFO - JSON extracted: 2 chars
+2025-09-26 08:42:51,101 - WARNING - Attempt 1 failed: name 'json_str' is not defined
+2025-09-26 08:43:17,297 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:43:17,297 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:43:17,298 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:43:17,298 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:43:17,298 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:43:17,298 - INFO -       📄 Attempting sophisticated bracket matching from position 1767
+2025-09-26 08:43:17,299 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:43:17,299 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:43:17,299 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:43:17,299 - INFO - JSON extracted: 2 chars
+2025-09-26 08:43:17,299 - WARNING - Attempt 2 failed: name 'json_str' is not defined
+2025-09-26 08:43:40,873 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:43:40,874 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:43:40,874 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:43:40,874 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:43:40,874 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:43:40,874 - INFO -       📄 Attempting sophisticated bracket matching from position 2287
+2025-09-26 08:43:40,874 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:43:40,874 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:43:40,874 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:43:40,874 - INFO - JSON extracted: 2 chars
+2025-09-26 08:43:40,874 - WARNING - Attempt 3 failed: name 'json_str' is not defined
+2025-09-26 08:53:29,946 - INFO - Processing Deuteronomy 30:2
+2025-09-26 08:54:04,206 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:54:04,207 - INFO -       📄 Found JSON-like array: 635 chars
+2025-09-26 08:54:04,207 - INFO -       📄 Array content: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "yes",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "hebrew_text": "וְשַׁבְתָּ֞ עַד־יְהֹוָ֤ה אֱלֹהֶ֙יךָ֙",
+    "english_text": "and you return to your God יהוה",
+    "explanation": "The act of 'returning to God' is a metaphor for spiritual repentance and a turning away from sin, not a physical movement. It is also a common biblical idiom for repentance (תְּשׁוּבָה).",
+    "target": [
+      "spiritual turning",
+      "repentance",
+      "human action",
+      "religious concept"
+    ]'
+2025-09-26 08:54:04,208 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:54:04,209 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:54:04,209 - INFO -       📄 Attempting sophisticated bracket matching from position 3159
+2025-09-26 08:54:04,209 - INFO -       📄 Bracket matching found: 3349 chars
+2025-09-26 08:54:04,209 - INFO -       ✅ Bracket-matched array contains objects
+2025-09-26 08:54:04,210 - INFO - JSON extracted: 3349 chars
+2025-09-26 08:54:04,210 - INFO -   ✅ JSON parsing succeeded on first attempt
+2025-09-26 08:54:04,259 - INFO - Processing Deuteronomy 30:3
+2025-09-26 08:54:39,702 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:54:39,703 - INFO -       📄 Found JSON-like array: 4 chars
+2025-09-26 08:54:39,703 - INFO -       📄 Array content: '[He]'
+2025-09-26 08:54:39,704 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:54:39,704 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:54:39,704 - INFO -       📄 Attempting sophisticated bracket matching from position 2092
+2025-09-26 08:54:39,704 - INFO -       📄 Bracket matching found: 4 chars
+2025-09-26 08:54:39,705 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:54:39,705 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:54:39,705 - INFO - JSON extracted: 2 chars
+2025-09-26 08:54:39,705 - WARNING - Attempt 1 failed: name 'json_str' is not defined
+2025-09-26 08:55:13,843 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:55:13,844 - INFO -       📄 Found JSON-like array: 765 chars
+2025-09-26 08:55:13,844 - INFO -       📄 Array content: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "hebrew_text": "וְשָׁ֨ב יְהֹוָ֧ה אֱלֹהֶ֛יךָ אֶת־שְׁבוּתְךָ֖",
+    "english_text": "then your God יהוה will restore your fortunes",
+    "explanation": "The phrase 'שׁוּב שְׁבוּת' (shuv shvut) is a well-established biblical idiom. It signifies a comprehensive reversal of a negative state, a restoration of well-being, or a return from exile and distress, rather than a simple literal 'return of captivity.' Its meaning is conventionalized and goes beyond the sum of its individual words.",
+    "target": ["Israel's fortunes", "national well-being", "human condition"]'
+2025-09-26 08:55:13,845 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:55:13,845 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:55:13,846 - INFO -       📄 Attempting sophisticated bracket matching from position 3391
+2025-09-26 08:55:13,847 - INFO -       📄 Bracket matching found: 1272 chars
+2025-09-26 08:55:13,847 - INFO -       ✅ Bracket-matched array contains objects
+2025-09-26 08:55:13,847 - INFO - JSON extracted: 1272 chars
+2025-09-26 08:55:13,847 - INFO -   ✅ JSON parsing succeeded on first attempt
+2025-09-26 08:55:13,848 - INFO - Processing Deuteronomy 30:4

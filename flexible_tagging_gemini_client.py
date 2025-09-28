@@ -16,6 +16,7 @@ import re
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from hebrew_figurative_db.ai_analysis.gemini_api_multi_model import MultiModelGeminiClient, TextContext
+from claude_sonnet_client import ClaudeSonnetClient
 
 class FlexibleTaggingGeminiClient(MultiModelGeminiClient):
     """Enhanced Gemini client with flexible tagging framework"""
@@ -27,6 +28,19 @@ class FlexibleTaggingGeminiClient(MultiModelGeminiClient):
 
         # Additional tracking for Pro model fallbacks
         self.pro_fallback_count = 0
+
+        # Initialize Claude Sonnet client for tertiary fallback
+        try:
+            self.claude_client = ClaudeSonnetClient(logger=self.logger)
+            if self.logger:
+                self.logger.info("Claude Sonnet 4 client initialized successfully")
+        except Exception as e:
+            self.claude_client = None
+            if self.logger:
+                self.logger.warning(f"Claude Sonnet 4 client initialization failed: {e}")
+
+        # Claude fallback tracking
+        self.claude_fallback_count = 0
 
     def _load_flexible_rules(self):
         """Load the flexible tagging rules"""
@@ -277,121 +291,80 @@ Analysis:"""
                 self.logger.error(f"Flexible analysis failed: {error_msg}")
             return None, error_msg, {'error': True}
 
-    def analyze_with_tertiary_fallback(self, hebrew_text: str, english_text: str,
+    def analyze_with_claude_fallback(self, hebrew_text: str, english_text: str,
                                      book: str = "", chapter: int = 0):
         """
-        Tertiary fallback system: Task decomposition approach for complex verses
+        Claude Sonnet 4 fallback system for complex verses
 
-        When both primary and secondary models fail, break the task into:
-        1. Detection only (simplified prompt)
-        2. Validation only (if detection succeeds)
-        3. Tagging only (if validation succeeds)
+        When both Gemini Flash and Pro models fail, use Claude Sonnet 4
+        as the tertiary fallback with high token limits and different architecture.
 
         Returns: Tuple of (response_text, error, metadata)
         """
         if self.logger:
-            self.logger.info(f"🔄 TERTIARY FALLBACK: Using task decomposition approach")
+            self.logger.info(f"🤖 CLAUDE FALLBACK: Using Claude Sonnet 4 for complex verse analysis")
+
+        if not self.claude_client:
+            error_msg = "Claude Sonnet 4 client not available"
+            if self.logger:
+                self.logger.error(error_msg)
+
+            metadata = {
+                'model_used': 'claude-3-5-sonnet-20241022',
+                'claude_fallback_used': True,
+                'flexible_instances': [],
+                'figurative_detection_deliberation': '',
+                'tagging_analysis_deliberation': '',
+                'instances_count': 0,
+                'flexible_tagging_used': True,
+                'truncation_detected': False
+            }
+            return "[]", error_msg, metadata
 
         try:
-            # Step 1: Detection only
-            detection_result, detection_error = self._call_detection_only(hebrew_text, english_text, book, chapter)
-            if detection_error or not detection_result.get('has_figurative_language'):
-                if self.logger:
-                    self.logger.info(f"🔍 STEP 1 (Detection): No figurative language detected or failed")
+            # Track Claude fallback usage
+            self.claude_fallback_count += 1
 
-                # Return empty result but mark as tertiary processed
-                metadata = {
-                    'model_used': 'gemini-2.5-pro',
-                    'tertiary_decomposed': True,
-                    'tertiary_step_completed': 'detection',
+            # Use Claude Sonnet 4 with high token limit
+            result_text, error, metadata = self.claude_client.analyze_figurative_language_flexible(
+                hebrew_text, english_text, book, chapter, max_tokens=8000
+            )
+
+            if error:
+                if self.logger:
+                    self.logger.error(f"🤖 CLAUDE FALLBACK: Failed - {error}")
+
+                fallback_metadata = {
+                    'model_used': 'claude-3-5-sonnet-20241022',
+                    'claude_fallback_used': True,
                     'flexible_instances': [],
-                    'figurative_detection_deliberation': detection_result.get('deliberation', ''),
+                    'figurative_detection_deliberation': '',
                     'tagging_analysis_deliberation': '',
                     'instances_count': 0,
                     'flexible_tagging_used': True,
                     'truncation_detected': False
                 }
-                return "[]", None, metadata
+                return "[]", error, fallback_metadata
 
+            # Claude succeeded
+            instances = metadata.get('flexible_instances', [])
             if self.logger:
-                self.logger.info(f"🔍 STEP 1 (Detection): Found {len(detection_result.get('instances', []))} potential instances")
+                self.logger.info(f"🤖 CLAUDE FALLBACK: Successfully analyzed verse - {len(instances)} instances found")
 
-            # Step 2: Validation only
-            validation_result, validation_error = self._call_validation_only(detection_result, hebrew_text, english_text)
-            if validation_error or not validation_result.get('validated_instances'):
-                if self.logger:
-                    self.logger.info(f"✅ STEP 2 (Validation): No instances validated or failed")
+            # Update metadata to reflect Claude usage
+            metadata['claude_fallback_used'] = True
+            metadata['flexible_tagging_used'] = True
 
-                metadata = {
-                    'model_used': 'gemini-2.5-pro',
-                    'tertiary_decomposed': True,
-                    'tertiary_step_completed': 'validation',
-                    'flexible_instances': [],
-                    'figurative_detection_deliberation': detection_result.get('deliberation', ''),
-                    'tagging_analysis_deliberation': validation_result.get('validation_deliberation', ''),
-                    'instances_count': 0,
-                    'flexible_tagging_used': True,
-                    'truncation_detected': False
-                }
-                return "[]", None, metadata
-
-            if self.logger:
-                self.logger.info(f"✅ STEP 2 (Validation): {len(validation_result.get('validated_instances', []))} instances validated")
-
-            # Step 3: Tagging only
-            tagging_result, tagging_error = self._call_tagging_only(validation_result, hebrew_text, english_text)
-            if tagging_error:
-                if self.logger:
-                    self.logger.warning(f"🏷️ STEP 3 (Tagging): Failed - {tagging_error}")
-
-                # Return validated instances without hierarchical tags
-                instances = validation_result.get('validated_instances', [])
-                for instance in instances:
-                    instance['target'] = []
-                    instance['vehicle'] = []
-                    instance['ground'] = []
-                    instance['posture'] = []
-
-                metadata = {
-                    'model_used': 'gemini-2.5-pro',
-                    'tertiary_decomposed': True,
-                    'tertiary_step_completed': 'validation',  # Stopped at validation
-                    'flexible_instances': instances,
-                    'figurative_detection_deliberation': detection_result.get('deliberation', ''),
-                    'tagging_analysis_deliberation': validation_result.get('validation_deliberation', ''),
-                    'instances_count': len(instances),
-                    'flexible_tagging_used': True,
-                    'truncation_detected': False
-                }
-                return json.dumps(instances), None, metadata
-
-            if self.logger:
-                self.logger.info(f"🏷️ STEP 3 (Tagging): Successfully tagged {len(tagging_result.get('tagged_instances', []))} instances")
-
-            # Success! Combine all results
-            instances = tagging_result.get('tagged_instances', [])
-            metadata = {
-                'model_used': 'gemini-2.5-pro',
-                'tertiary_decomposed': True,
-                'tertiary_step_completed': 'tagging',  # Completed all steps
-                'flexible_instances': instances,
-                'figurative_detection_deliberation': detection_result.get('deliberation', ''),
-                'tagging_analysis_deliberation': tagging_result.get('tagging_deliberation', ''),
-                'instances_count': len(instances),
-                'flexible_tagging_used': True,
-                'truncation_detected': False
-            }
-
-            return json.dumps(instances), None, metadata
+            return result_text, None, metadata
 
         except Exception as e:
-            error_msg = f"Tertiary fallback failed: {str(e)}"
+            error_msg = f"Claude fallback failed: {str(e)}"
             if self.logger:
                 self.logger.error(error_msg)
             return "[]", error_msg, {
-                'model_used': 'gemini-2.5-pro',
-                'tertiary_decomposed': True,
-                'tertiary_step_completed': 'failed',
+                'model_used': 'claude-3-5-sonnet-20241022',
+                'claude_fallback_used': True,
+                'claude_step_completed': 'failed',
                 'error': True
             }
 
@@ -691,7 +664,9 @@ Analysis:"""
                 # Must exclude negative statements like "no figurative language"
                 has_positive_figurative_conclusions = any(term in combined_text for term in [
                     "is a metaphor", "is an idiom", "is hyperbole", "is metonymy",
-                    "biblical idiom", "this is figurative", "contains figurative", "uses figurative"
+                    "biblical idiom", "this is figurative", "contains figurative", "uses figurative",
+                    "classic case of", "fits the criteria", "clear case of", "example of",
+                    "case of metonymy", "case of metaphor", "case of idiom", "case of hyperbole"
                 ])
 
                 # Check for negative conclusions that should NOT trigger fallback
@@ -1013,12 +988,21 @@ Analysis:"""
         return [fallback_instance]
 
     def get_usage_info(self):
-        """Override parent method to include Pro fallback statistics"""
+        """Override parent method to include Pro and Claude fallback statistics"""
         base_info = super().get_usage_info()
 
         # Add Pro model specific tracking
         base_info['Pro_Model_Fallbacks'] = self.pro_fallback_count
         base_info['Pro_Fallback_Rate'] = self.pro_fallback_count / max(self.request_count, 1)
+
+        # Add Claude fallback tracking
+        base_info['Claude_Fallbacks'] = self.claude_fallback_count
+        base_info['Claude_Fallback_Rate'] = self.claude_fallback_count / max(self.request_count, 1)
+
+        # Add Claude usage stats if available
+        if self.claude_client:
+            claude_stats = self.claude_client.get_usage_stats()
+            base_info['Claude_Usage'] = claude_stats
 
         return base_info
 

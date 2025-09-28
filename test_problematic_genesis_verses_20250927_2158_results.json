@@ -1,0 +1,160 @@
+{
+  "test_info": {
+    "timestamp": "2025-09-27T21:58:51.232476",
+    "total_verses_tested": 11,
+    "processing_time_seconds": 279.96342635154724,
+    "max_workers": 12
+  },
+  "results": [
+    {
+      "reference": "Genesis 14:20",
+      "original_issue": "Tertiary fallback; LLM found fig language, was truncated in its deliberations, did NOT get recorded as fig language",
+      "truncation_occurred": "yes",
+      "both_models_truncated": "yes",
+      "model_used": "claude-3-5-sonnet-20241022",
+      "tertiary_decomposed": true,
+      "instances_detected": 0,
+      "figurative_detection_deliberation": "**DETECTION DELIBERATION:**\n\nLet's analyze each potential figurative element:\n\n1. \"מִגֵּן צָרֶ֖יךָ בְּיָדֶ֑ךָ\" (delivered/shielded your foes into your hand):\n- The verb מִגֵּן (from גנן) literally means \"to shield/deliver/protect\"\n- \"into your hand\" (בְּיָדֶ֑ךָ) is a clear Hebrew idiom for \"into your power/control\"\n- This qualifies as figurative language (idiom)\n\n2. \"אֵ֣ל עֶלְי֔וֹן\" (God Most High):\n- Although this is a divine title, it uses conventional theological language\n- Not marked as figu...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 35:13",
+      "original_issue": "Tertiary fallback",
+      "truncation_occurred": "yes",
+      "both_models_truncated": "yes",
+      "model_used": "claude-3-5-sonnet-20241022",
+      "tertiary_decomposed": true,
+      "instances_detected": 0,
+      "figurative_detection_deliberation": "**DETECTION DELIBERATION:**\n\nLet's analyze the key elements:\n\n1. וַיַּ֥עַל (vaya'al) - \"went up/ascended/departed\"\n2. מֵעָלָ֖יו (me'alav) - \"from upon him\"\n\nThis verse contains spatial movement language applied to God's presence. While this could potentially be considered anthropomorphic, following our conservative guidelines, I would argue this falls under standard narrative language for divine-human encounters rather than clear figurative language. Here's why:\n\n1. The Hebrew uses common direct...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 2:17",
+      "original_issue": "Tertiary fallback; LLM figurative deliberation field was empty",
+      "truncation_occurred": "no",
+      "both_models_truncated": "no",
+      "model_used": "gemini-2.5-flash",
+      "tertiary_decomposed": false,
+      "instances_detected": 0,
+      "figurative_detection_deliberation": "I have carefully analyzed every phrase in Genesis 2:17 according to the provided ultra-conservative guidelines, which emphasize literal interpretations and require \"absolutely clear\" and \"obvious cross-domain metaphors\" for any figurative marking.\n\n1.  **\"וּמֵעֵ֗ץ הַדַּ֙עַת֙ ט֣וֹב וָרָ֔ע\" / \"the tree of knowledge of good and bad\"**:\n    *   **Considered**: I considered if \"tree of knowledge\" or \"knowledge of good and bad\" might be metaphorical.\n    *   **Reasoning**: The \"tree\" (עֵץ) is understo...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 17:8",
+      "original_issue": "Tertiary fallback; LLM figurative deliberation field was empty",
+      "truncation_occurred": "no",
+      "both_models_truncated": "no",
+      "model_used": "gemini-2.5-flash",
+      "tertiary_decomposed": false,
+      "instances_detected": 0,
+      "figurative_detection_deliberation": "I have analyzed the provided Hebrew text, \"וְנָתַתִּ֣י לְ֠ךָ֠ וּלְזַרְעֲךָ֨ אַחֲרֶ֜יךָ אֵ֣ת&thinsp;׀ אֶ֣רֶץ מְגֻרֶ֗יךָ אֵ֚ת כׇּל־אֶ֣רֶץ כְּנַ֔עַן לַאֲחֻזַּ֖ת עוֹלָ֑ם וְהָיִ֥יתִי לָהֶ֖ם לֵאלֹהִֽים\" (I assign the land you sojourn in to you and your offspring to come, all the land of Canaan, as an everlasting holding. I will be their God.), for figurative language according to the provided guidelines.\n\n1.  **\"וְנָתַתִּ֣י לְ֠ךָ֠ וּלְזַרְעֲךָ֨ אַחֲרֶ֜יךָ\" (I assign to you and your offspring to come):...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 18:29",
+      "original_issue": "Tertiary fallback; LLM figurative deliberation field was empty",
+      "truncation_occurred": "no",
+      "both_models_truncated": "no",
+      "model_used": "gemini-2.5-flash",
+      "tertiary_decomposed": false,
+      "instances_detected": 1,
+      "figurative_detection_deliberation": "I examined the entire verse for any potential figurative language.\n\n1.  **\"וַיֹּ֨סֶף ע֜וֹד לְדַבֵּ֤ר אֵלָיו֙ וַיֹּאמַ֔ר\" (But he spoke up again, and said):** I considered if this standard narrative introduction to dialogue could be an idiom or a set phrase. However, it is a straightforward description of an action (speaking) and a transition to direct speech. It is standard narrative language and not figurative.\n\n2.  **\"אוּלַ֛י יִמָּצְא֥וּן שָׁ֖ם אַרְבָּעִ֑ים\" (What if forty should be found ther...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 24:65",
+      "original_issue": "Tertiary fallback; LLM figurative deliberation field was empty",
+      "truncation_occurred": "no",
+      "both_models_truncated": "no",
+      "model_used": "gemini-2.5-flash",
+      "tertiary_decomposed": false,
+      "instances_detected": 0,
+      "figurative_detection_deliberation": "I have carefully analyzed every phrase and concept in the provided Hebrew text and its English translation for potential figurative language, adhering strictly to the conservative guidelines provided.\n\n*   **\"וַתֹּ֣אמֶר אֶל־הָעֶ֗בֶד\" (and said to the servant):** I considered if the act of \"saying\" could be a metonymy for communication in a broader sense. However, this is a direct, literal description of speech between two individuals. No figurative language is present.\n*   **\"מִֽי־הָאִ֤ישׁ הַלָּ...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 24:4",
+      "original_issue": "Tertiary fallback",
+      "truncation_occurred": "no",
+      "both_models_truncated": "no",
+      "model_used": "gemini-2.5-flash",
+      "tertiary_decomposed": false,
+      "instances_detected": 0,
+      "figurative_detection_deliberation": "I have analyzed every phrase and concept in the verse \"כִּ֧י אֶל־אַרְצִ֛י וְאֶל־מוֹלַדְתִּ֖י תֵּלֵ֑ךְ וְלָקַחְתָּ֥ אִשָּׁ֖ה לִבְנִ֥י לְיִצְחָֽק\" (but will go to the land of my birth and get a wife for my son Isaac) for potential figurative language.\n\n1.  **\"אֶל־אַרְצִ֛י\" (to my land)**:\n    *   **Considered**: I considered if \"land\" might be used metonymically to refer to the people or culture of the land.\n    *   **Reasoning for exclusion**: In this context, Abraham is giving a direct instructi...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 48:10",
+      "original_issue": "Tertiary fallback; LLM figurative deliberation field was truncated",
+      "truncation_occurred": "yes",
+      "both_models_truncated": "yes",
+      "model_used": "claude-3-5-sonnet-20241022",
+      "tertiary_decomposed": true,
+      "instances_detected": 0,
+      "figurative_detection_deliberation": "**DETECTION DELIBERATION:**\n\n1. כָּבְד֣וּ (were heavy/dim) - This is a potential metaphorical usage as the verb כבד (to be heavy) is applied to eyes to indicate diminished vision. However, this appears to be a conventional expression in Biblical Hebrew for failing eyesight, similar to modern English \"dim.\"\n\n2. \"Israel's eyes\" - While this could be analyzed as synecdoche (part representing whole), it's better classified as straightforward anatomical reference in context.\n\n3. The remaining verbs (...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 30:6",
+      "original_issue": "Tertiary fallback",
+      "truncation_occurred": "no",
+      "both_models_truncated": "no",
+      "model_used": "gemini-2.5-flash",
+      "tertiary_decomposed": false,
+      "instances_detected": 1,
+      "figurative_detection_deliberation": "*   **\"God has vindicated me\" (דָּנַ֣נִּי אֱלֹהִ֔ים)**: I considered if this phrase might be a metaphor for God acting as a judge or legal advocate. However, in the ANE context, God is literally understood to perform judicial functions, including vindication. The verb דָּנַן (danan) directly means \"to judge\" or \"to vindicate.\" While there is a clear wordplay (paronomasia) between \"dananni\" and the name \"Dan,\" this is a literary device rather than a figurative expression like a metaphor or simile...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 29:16",
+      "original_issue": "Tertiary fallback",
+      "truncation_occurred": "no",
+      "both_models_truncated": "no",
+      "model_used": "gemini-2.5-flash",
+      "tertiary_decomposed": false,
+      "instances_detected": 0,
+      "figurative_detection_deliberation": "I have carefully analyzed the provided Hebrew text: \"וּלְלָבָ֖ן שְׁתֵּ֣י בָנ֑וֹת שֵׁ֤ם הַגְּדֹלָה֙ לֵאָ֔ה וְשֵׁ֥ם הַקְּטַנָּ֖ה רָחֵֽל\" (Now Laban had two daughters; the name of the older one was Leah, and the name of the younger was Rachel).\n\n1.  **\"וּלְלָבָ֖ן שְׁתֵּ֣י בָנ֑וֹת\" (Now Laban had two daughters):**\n    *   **Considered:** If this phrase might contain any hidden metaphor, metonymy, or idiom.\n    *   **Reasoning:** This is a direct, factual statement describing a familial relationship ...",
+      "llm_restriction_error": null
+    },
+    {
+      "reference": "Genesis 22:8",
+      "original_issue": "API issue with Gemini 1.5",
+      "truncation_occurred": "no",
+      "both_models_truncated": "no",
+      "model_used": "gemini-2.5-flash",
+      "tertiary_decomposed": false,
+      "instances_detected": 0,
+      "figurative_detection_deliberation": "",
+      "llm_restriction_error": "404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+    }
+  ],
+  "usage_statistics": {
+    "total_requests": 13,
+    "primary_success": 10,
+    "content_restriction_fallbacks": 3,
+    "server_error_fallbacks": 0,
+    "total_fallbacks": 3,
+    "primary_success_rate": 0.7692307692307693,
+    "content_restriction_rate": 0.23076923076923078,
+    "server_error_fallback_rate": 0.0,
+    "total_fallback_rate": 0.23076923076923078,
+    "total_input_tokens": 17482,
+    "total_output_tokens": 9339,
+    "total_tokens": 26821,
+    "primary_model": "gemini-2.5-flash",
+    "fallback_model": "gemini-1.5-flash-latest",
+    "restriction_reasons": [],
+    "Pro_Model_Fallbacks": 3,
+    "Pro_Fallback_Rate": 0.23076923076923078,
+    "Claude_Fallbacks": 3,
+    "Claude_Fallback_Rate": 0.23076923076923078,
+    "Claude_Usage": {
+      "total_requests": 3,
+      "successful_requests": 3,
+      "failed_requests": 0,
+      "total_input_tokens": 2053,
+      "total_output_tokens": 1524,
+      "total_tokens": 3577
+    }
+  }
+}

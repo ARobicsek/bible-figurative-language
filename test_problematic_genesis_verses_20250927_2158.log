@@ -1,0 +1,1057 @@
+2025-09-27 21:58:51,233 - INFO - Successfully loaded environment variables from: C:\Users\ariro\OneDrive\Documents\Bible\.env
+2025-09-27 21:58:51,233 - INFO - === TESTING PROBLEMATIC GENESIS VERSES ===
+2025-09-27 21:58:51,233 - INFO - Verses to test: 11
+2025-09-27 21:58:51,233 - INFO - Initializing Sefaria client...
+2025-09-27 21:58:51,234 - INFO - Creating database: test_problematic_genesis_verses_20250927_2158.db
+2025-09-27 21:58:51,336 - INFO - Initializing MetaphorValidator...
+2025-09-27 21:58:51,336 - INFO - Initializing Flexible Tagging Gemini Client...
+2025-09-27 21:58:51,625 - INFO - Claude Sonnet 4 client initialized successfully
+2025-09-27 21:58:51,625 - INFO - --- PROCESSING: Genesis 14 ---
+2025-09-27 21:58:51,630 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 21:58:51,924 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.14 HTTP/1.1" 200 None
+2025-09-27 21:58:51,977 - INFO - Processing 1 problematic verses from Genesis 14
+2025-09-27 21:58:51,978 - INFO - Worker 1: Processing Genesis 14:20
+2025-09-27 21:59:08,023 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 21:59:08,026 - DEBUG -   📊 Total candidates: 1
+2025-09-27 21:59:08,027 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 21:59:08,028 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 21:59:08,029 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 21:59:08,029 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 21:59:08,030 - DEBUG -     - Prompt Token Count: 1343
+2025-09-27 21:59:08,030 - DEBUG -     - Candidates Token Count: 797
+2025-09-27 21:59:08,030 - DEBUG -     - Total Token Count: 3807
+2025-09-27 21:59:08,030 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 21:59:08,031 - DEBUG -   📄 Has content: True
+2025-09-27 21:59:08,032 - DEBUG -   📄 Content parts count: 1
+2025-09-27 21:59:08,032 - DEBUG -   📝 Response text length: 2728 characters
+2025-09-27 21:59:08,033 - DEBUG -   📝 Response ends with: 'ing the success to divine intervention."
+  }
+]
+```'
+2025-09-27 21:59:08,034 - WARNING -   ⚠️ Response appears to end abruptly (no proper punctuation)
+2025-09-27 21:59:08,034 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 21:59:08,035 - DEBUG -   📏 Total response length: 2728
+2025-09-27 21:59:08,036 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+1.  **"אֵ֣ל עֶלְי֔וֹן" (God Most High):** I considered if "Most High" could be a form of hyperbole or a metaphorical title. However, "El Elyon" is a standard theological title fo'
+2025-09-27 21:59:08,037 - DEBUG -   📄 Response ending (last 200 chars): 'nfidence": 0.9,
+    "speaker": "Melchizedek",
+    "purpose": "To emphasize God's role in granting Abram victory and control over his enemies, attributing the success to divine intervention."
+  }
+]
+```'
+2025-09-27 21:59:08,039 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 1226 chars
+2025-09-27 21:59:08,040 - DEBUG -   📝 Detection ends with: 'nd metonymy. I am including this phrase as figurative.
+3.  **"וַיִּתֶּן־ל֥וֹ מַעֲשֵׂ֖ר מִכֹּֽל" (And'
+2025-09-27 21:59:08,041 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 21:59:08,042 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 21:59:08,043 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 21:59:08,043 - INFO -       📄 Found JSON-like array: 7 chars
+2025-09-27 21:59:08,044 - INFO -       📄 Array content: '[Abram]'
+2025-09-27 21:59:08,045 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 21:59:08,046 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 21:59:08,046 - INFO -       📄 Attempting sophisticated bracket matching from position 1249
+2025-09-27 21:59:08,047 - INFO -       📄 Bracket matching found: 7 chars
+2025-09-27 21:59:08,048 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 21:59:08,048 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-27 21:59:08,049 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 21:59:08,050 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 21:59:08,050 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 21:59:08,051 - DEBUG - ---JSON-START---
+2025-09-27 21:59:08,051 - DEBUG - []
+2025-09-27 21:59:08,051 - DEBUG - ---JSON-END---
+2025-09-27 21:59:08,051 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 21:59:08,052 - INFO -   📝 Has figurative indicators: True
+2025-09-27 21:59:08,052 - INFO -   📝 Appears to end abruptly: True
+2025-09-27 21:59:08,053 - INFO -   📝 Has substantial analysis: True
+2025-09-27 21:59:08,054 - INFO -   📝 Has figurative analysis: True
+2025-09-27 21:59:08,054 - INFO -   📝 Has figurative conclusions: True
+2025-09-27 21:59:08,055 - INFO -   📝 Missing TAGGING_ANALYSIS: True
+2025-09-27 21:59:08,056 - INFO -   📝 Analysis complete but JSON empty: True
+2025-09-27 21:59:08,056 - INFO -   📝 Should trigger fallback: True
+2025-09-27 21:59:08,057 - ERROR - ❌ API response was truncated. No JSON was found and fallback parsing is disabled.
+2025-09-27 21:59:08,058 - ERROR - ❌ This verse must be re-processed. Returning no instances.
+2025-09-27 21:59:08,058 - WARNING - Worker 1: Truncation detected in Genesis 14:20, retrying with Pro model
+2025-09-27 21:59:08,058 - INFO - Using model override: gemini-2.5-pro
+2025-09-27 21:59:38,963 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 21:59:38,966 - DEBUG -   📊 Total candidates: 1
+2025-09-27 21:59:38,968 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 21:59:38,970 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 21:59:38,972 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 21:59:38,973 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 21:59:38,976 - DEBUG -     - Prompt Token Count: 1343
+2025-09-27 21:59:38,976 - DEBUG -     - Candidates Token Count: 864
+2025-09-27 21:59:38,976 - DEBUG -     - Total Token Count: 5059
+2025-09-27 21:59:38,976 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 21:59:38,978 - DEBUG -   📄 Has content: True
+2025-09-27 21:59:38,980 - DEBUG -   📄 Content parts count: 1
+2025-09-27 21:59:38,983 - DEBUG -   📝 Response text length: 3099 characters
+2025-09-27 21:59:38,985 - DEBUG -   📝 Response ends with: 'hasize the completeness of the deliverance."
+  }
+]'
+2025-09-27 21:59:38,987 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 21:59:38,989 - DEBUG -   📏 Total response length: 3099
+2025-09-27 21:59:38,991 - DEBUG -   📄 Response preview (first 200 chars): '**FIGURATIVE_DETECTION:**
+1.  `וּבָרוּךְ֙ אֵ֣ל עֶלְי֔וֹן` (And blessed be God Most High): I considered the epithet `אֵל עֶלְי֔וֹן` (God Most High). This is a title describing God's supreme status. Wit'
+2025-09-27 21:59:38,993 - DEBUG -   📄 Response ending (last 200 chars): ' "Melchizedek",
+    "purpose": "To praise God for granting Abram a total and decisive victory over his enemies, using a conventional expression to emphasize the completeness of the deliverance."
+  }
+]'
+2025-09-27 21:59:38,995 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 1535 chars
+2025-09-27 21:59:38,997 - DEBUG -   📝 Detection ends with: 's primary classification under the given rules is "idiom." This is the phrase I have included in the'
+2025-09-27 21:59:38,999 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 21:59:39,001 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 21:59:39,003 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 21:59:39,005 - INFO -       📄 Found JSON-like array: 7 chars
+2025-09-27 21:59:39,007 - INFO -       📄 Array content: '[Abram]'
+2025-09-27 21:59:39,008 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 21:59:39,010 - INFO -       📄 Found JSON OUTPUT section: 1529 chars
+2025-09-27 21:59:39,013 - WARNING -       ⚠️ JSON appears incomplete in OUTPUT section
+2025-09-27 21:59:39,014 - INFO -       📄 Attempting sophisticated bracket matching from position 1616
+2025-09-27 21:59:39,016 - INFO -       📄 Bracket matching found: 7 chars
+2025-09-27 21:59:39,018 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 21:59:39,020 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-27 21:59:39,021 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 21:59:39,023 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 21:59:39,025 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 21:59:39,027 - DEBUG - ---JSON-START---
+2025-09-27 21:59:39,027 - DEBUG - []
+2025-09-27 21:59:39,027 - DEBUG - ---JSON-END---
+2025-09-27 21:59:39,027 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 21:59:39,029 - INFO -   📝 Has figurative indicators: True
+2025-09-27 21:59:39,032 - INFO -   📝 Appears to end abruptly: True
+2025-09-27 21:59:39,033 - INFO -   📝 Has substantial analysis: True
+2025-09-27 21:59:39,035 - INFO -   📝 Has figurative analysis: True
+2025-09-27 21:59:39,037 - INFO -   📝 Has figurative conclusions: True
+2025-09-27 21:59:39,039 - INFO -   📝 Missing TAGGING_ANALYSIS: True
+2025-09-27 21:59:39,041 - INFO -   📝 Analysis complete but JSON empty: True
+2025-09-27 21:59:39,043 - INFO -   📝 Should trigger fallback: True
+2025-09-27 21:59:39,044 - ERROR - ❌ API response was truncated. No JSON was found and fallback parsing is disabled.
+2025-09-27 21:59:39,047 - ERROR - ❌ This verse must be re-processed. Returning no instances.
+2025-09-27 21:59:39,049 - WARNING - Worker 1: Pro model also truncated for Genesis 14:20 - trying tertiary decomposition fallback
+2025-09-27 21:59:39,049 - INFO - 🤖 CLAUDE FALLBACK: Using Claude Sonnet 4 for complex verse analysis
+2025-09-27 21:59:39,051 - INFO - Making request to Claude Sonnet 4 for figurative language analysis
+2025-09-27 21:59:39,053 - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-6cd0a831-8720-4a39-b53b-e3b540f971b4', 'json_data': {'max_tokens': 8000, 'messages': [{'role': 'user', 'content': 'You are an expert in biblical Hebrew linguistics and figurative language analysis. I need you to analyze a verse from Genesis 14 for figurative language using a CONSERVATIVE approach.\n\n**Hebrew Text:** וּבָרוּךְ֙ אֵ֣ל עֶלְי֔וֹן אֲשֶׁר־מִגֵּ֥ן צָרֶ֖יךָ בְּיָדֶ֑ךָ וַיִּתֶּן־ל֥וֹ מַעֲשֵׂ֖ר מִכֹּֽל\n**English Translation:** And blessed be God Most High,Who has delivered your foes into your hand.” And [Abram] gave him a tenth of everything.\n\n**TASK:** Identify ALL instances of figurative language in this verse using these guidelines:\n\n**CONSERVATIVE DETECTION GUIDELINES:**\n1. **MARK** physical verbs/concepts applied to spiritual/abstract concepts\n2. **MARK** clear metaphors, similes, personification, idioms, hyperbole, metonymy\n3. **BE CONSERVATIVE** with divine anthropomorphisms (only mark if clearly figurative beyond standard narrative language)\n4. **EXCLUDE** proper names, standard titles, conventional expressions unless clearly figurative\n5. **FOCUS** on Hebrew text primarily, use English for clarification\n\n**OUTPUT FORMAT:**\nFirst provide your **DETECTION DELIBERATION** - explain what you considered and why you included/excluded each potential figurative element.\n\nThen provide **HIERARCHICAL TAGGING ANALYSIS** for any instances you found.\n\nFinally, provide a **JSON array** with this structure for each instance:\n```json\n[\n  {\n    "instance_id": 1,\n    "figurative_language": "yes",\n    "simile": "yes/no",\n    "metaphor": "yes/no",\n    "personification": "yes/no",\n    "idiom": "yes/no",\n    "hyperbole": "yes/no",\n    "metonymy": "yes/no",\n    "other": "yes/no",\n    "confidence": 0.8,\n    "english_text": "the relevant English phrase",\n    "hebrew_text": "the relevant Hebrew phrase",\n    "explanation": "detailed explanation of the figurative language",\n    "speaker": "who is speaking",\n    "purpose": "why this figurative language is used",\n    "target": ["specific target", "target category", "general domain"],\n    "vehicle": ["specific vehicle", "vehicle category", "general domain"],\n    "ground": ["specific quality", "quality category", "general domain"],\n    "posture": ["specific attitude", "attitude category", "general domain"]\n  }\n]\n```\n\n**If NO figurative language is found, return an empty array: []**\n\nBegin your analysis:'}], 'model': 'claude-3-5-sonnet-20241022'}}
+2025-09-27 21:59:39,117 - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-09-27 21:59:39,117 - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-09-27 21:59:39,130 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FDDBF65400>
+2025-09-27 21:59:39,130 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FDDBEBCA70> server_hostname='api.anthropic.com' timeout=5.0
+2025-09-27 21:59:39,138 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FDDBE1FC50>
+2025-09-27 21:59:39,139 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-09-27 21:59:39,139 - DEBUG - send_request_headers.complete
+2025-09-27 21:59:39,139 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-09-27 21:59:39,139 - DEBUG - send_request_body.complete
+2025-09-27 21:59:39,139 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-09-27 21:59:48,291 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 28 Sep 2025 01:59:48 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Content-Encoding', b'gzip'), (b'anthropic-ratelimit-input-tokens-limit', b'40000'), (b'anthropic-ratelimit-input-tokens-remaining', b'40000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-09-28T01:59:40Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'7000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-09-28T01:59:52Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-09-28T01:59:40Z'), (b'anthropic-ratelimit-tokens-limit', b'48000'), (b'anthropic-ratelimit-tokens-remaining', b'47000'), (b'anthropic-ratelimit-tokens-reset', b'2025-09-28T01:59:40Z'), (b'request-id', b'req_011CTZyLMn4Vjenhwb9DNwHD'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'224d8e00-c63e-4f31-b7f9-b80cca99cc00'), (b'x-envoy-upstream-service-time', b'9103'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'985fa4851add8fbd-BOS')])
+2025-09-27 21:59:48,292 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-27 21:59:48,292 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-09-27 21:59:48,293 - DEBUG - receive_response_body.complete
+2025-09-27 21:59:48,293 - DEBUG - response_closed.started
+2025-09-27 21:59:48,293 - DEBUG - response_closed.complete
+2025-09-27 21:59:48,293 - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Sun, 28 Sep 2025 01:59:48 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'content-encoding': 'gzip', 'anthropic-ratelimit-input-tokens-limit': '40000', 'anthropic-ratelimit-input-tokens-remaining': '40000', 'anthropic-ratelimit-input-tokens-reset': '2025-09-28T01:59:40Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '7000', 'anthropic-ratelimit-output-tokens-reset': '2025-09-28T01:59:52Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-09-28T01:59:40Z', 'anthropic-ratelimit-tokens-limit': '48000', 'anthropic-ratelimit-tokens-remaining': '47000', 'anthropic-ratelimit-tokens-reset': '2025-09-28T01:59:40Z', 'request-id': 'req_011CTZyLMn4Vjenhwb9DNwHD', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'anthropic-organization-id': '224d8e00-c63e-4f31-b7f9-b80cca99cc00', 'x-envoy-upstream-service-time': '9103', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '985fa4851add8fbd-BOS'})
+2025-09-27 21:59:48,294 - DEBUG - request_id: req_011CTZyLMn4Vjenhwb9DNwHD
+2025-09-27 21:59:48,312 - ERROR - Failed to parse JSON from Claude Sonnet response: Expecting ',' delimiter: line 21 column 67 (char 713)
+2025-09-27 21:59:48,313 - DEBUG - Raw JSON text: [
+  {
+    "instance_id": 1,
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "yes",
+    "other": "no",
+    "confidence": 0.9,
+    "english_text": "into your hand",
+    "hebrew_text": "בְּיָדֶ֑ךָ",
+    "explanation": "Common Hebrew idiom using 'hand' to represent power or control",
+    "speaker": "Melchizedek",
+    "purpose": "To express divine enabling of victory",
+    "target": ["victory", "military success", "control"],
+    "vehicle": ["hand", "body part", "physical domain"],
+    "ground": ["control", "power", "authority"],
+    "posture": ["thanksgiving", "blessing", "religious discourse"]
+2025-09-27 21:59:48,391 - INFO - Claude Sonnet 4 analysis completed successfully: 0 instances found
+2025-09-27 21:59:48,391 - INFO - 🤖 CLAUDE FALLBACK: Successfully analyzed verse - 0 instances found
+2025-09-27 21:59:48,393 - INFO - Worker 1: Claude fallback completed for Genesis 14:20 - Success: True, Instances: 0
+2025-09-27 21:59:48,394 - INFO - Worker 1: Completed Genesis 14:20 - 0 instances
+2025-09-27 21:59:48,398 - INFO - Completed Genesis 14:20: Truncation=yes, BothTruncated=yes, Model=claude-3-5-sonnet-20241022, Instances=0
+2025-09-27 21:59:48,403 - INFO - --- PROCESSING: Genesis 35 ---
+2025-09-27 21:59:48,405 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 21:59:49,082 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.35 HTTP/1.1" 200 None
+2025-09-27 21:59:49,110 - INFO - Processing 1 problematic verses from Genesis 35
+2025-09-27 21:59:49,111 - INFO - Worker 1: Processing Genesis 35:13
+2025-09-27 21:59:56,857 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 21:59:56,860 - DEBUG -   📊 Total candidates: 1
+2025-09-27 21:59:56,862 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 21:59:56,864 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 21:59:56,867 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 21:59:56,868 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 21:59:56,870 - DEBUG -     - Prompt Token Count: 1306
+2025-09-27 21:59:56,870 - DEBUG -     - Candidates Token Count: 367
+2025-09-27 21:59:56,870 - DEBUG -     - Total Token Count: 2613
+2025-09-27 21:59:56,871 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 21:59:56,874 - DEBUG -   📄 Has content: True
+2025-09-27 21:59:56,877 - DEBUG -   📄 Content parts count: 1
+2025-09-27 21:59:56,879 - DEBUG -   📝 Response text length: 1504 characters
+2025-09-27 21:59:56,881 - DEBUG -   📝 Response ends with: 'figurative language is detected in this verse.
+
+[]'
+2025-09-27 21:59:56,883 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 21:59:56,886 - DEBUG -   📏 Total response length: 1504
+2025-09-27 21:59:56,888 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+I considered two potential elements for figurative language in this verse:
+
+1.  **"וַיַּ֥עַל מֵעָלָ֖יו אֱלֹהִ֑ים" (God parted from him / God went up from him):** I considered if '
+2025-09-27 21:59:56,889 - DEBUG -   📄 Response ending (last 200 chars): ' to be treated as literal in this context.
+
+Based on the strict conservative guidelines provided, particularly regarding divine anthropomorphisms, no figurative language is detected in this verse.
+
+[]'
+2025-09-27 21:59:56,891 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 818 chars
+2025-09-27 21:59:56,893 - DEBUG -   📝 Detection ends with: 'erpreted as a literal narrative description of God's action.
+
+2.  **"אֲשֶׁר־דִּבֶּ֥ר אִתּֽוֹ" (where'
+2025-09-27 21:59:56,896 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 21:59:56,898 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 21:59:56,900 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 21:59:56,902 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-27 21:59:56,904 - INFO -       📄 Array content: '[God]'
+2025-09-27 21:59:56,906 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 21:59:56,909 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 21:59:56,913 - INFO -       📄 Attempting sophisticated bracket matching from position 841
+2025-09-27 21:59:56,915 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-27 21:59:56,916 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 21:59:56,918 - INFO -       📄 Empty array pattern detected
+2025-09-27 21:59:56,920 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 21:59:56,921 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 21:59:56,923 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 21:59:56,925 - DEBUG - ---JSON-START---
+2025-09-27 21:59:56,926 - DEBUG - []
+2025-09-27 21:59:56,926 - DEBUG - ---JSON-END---
+2025-09-27 21:59:56,926 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 21:59:56,930 - INFO -   📝 Has figurative indicators: True
+2025-09-27 21:59:56,933 - INFO -   📝 Appears to end abruptly: True
+2025-09-27 21:59:56,937 - INFO -   📝 Has substantial analysis: True
+2025-09-27 21:59:56,939 - INFO -   📝 Has figurative analysis: True
+2025-09-27 21:59:56,941 - INFO -   📝 Has figurative conclusions: False
+2025-09-27 21:59:56,943 - INFO -   📝 Missing TAGGING_ANALYSIS: False
+2025-09-27 21:59:56,945 - INFO -   📝 Analysis complete but JSON empty: False
+2025-09-27 21:59:56,947 - INFO -   📝 Should trigger fallback: True
+2025-09-27 21:59:56,950 - ERROR - ❌ API response was truncated. No JSON was found and fallback parsing is disabled.
+2025-09-27 21:59:56,953 - ERROR - ❌ This verse must be re-processed. Returning no instances.
+2025-09-27 21:59:56,956 - WARNING - Worker 1: Truncation detected in Genesis 35:13, retrying with Pro model
+2025-09-27 21:59:56,956 - INFO - Using model override: gemini-2.5-pro
+2025-09-27 22:00:12,279 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:00:12,281 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:00:12,284 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:00:12,286 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:00:12,288 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:00:12,290 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:00:12,293 - DEBUG -     - Prompt Token Count: 1306
+2025-09-27 22:00:12,293 - DEBUG -     - Candidates Token Count: 367
+2025-09-27 22:00:12,293 - DEBUG -     - Total Token Count: 2930
+2025-09-27 22:00:12,293 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:00:12,296 - DEBUG -   📄 Has content: True
+2025-09-27 22:00:12,299 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:00:12,302 - DEBUG -   📝 Response text length: 1577 characters
+2025-09-27 22:00:12,305 - DEBUG -   📝 Response ends with: ' no figurative language to mark in this verse.
+
+[]'
+2025-09-27 22:00:12,309 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:00:12,315 - DEBUG -   📏 Total response length: 1577
+2025-09-27 22:00:12,320 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+- **וַיַּ֥עַל מֵעָלָ֖יו אֱלֹהִ֑ים (God parted from him / God went up from upon him)**: I considered if this phrase is a metaphor for the cessation of a divine revelation or a spi'
+2025-09-27 22:00:12,323 - DEBUG -   📄 Response ending (last 200 chars): 'ive element here.
+
+Based on the conservative guidelines provided, which treat divine anthropomorphic actions as literal within the narrative, there is no figurative language to mark in this verse.
+
+[]'
+2025-09-27 22:00:12,326 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 949 chars
+2025-09-27 22:00:12,329 - DEBUG -   📝 Detection ends with: 'tive language per the project guidelines.
+- **בַּמָּק֖וֹם אֲשֶׁר־דִּבֶּ֥ר אִתּֽוֹ (at the spot where'
+2025-09-27 22:00:12,332 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:00:12,340 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:00:12,342 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:00:12,343 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-27 22:00:12,347 - INFO -       📄 Array content: '[God]'
+2025-09-27 22:00:12,350 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:00:12,353 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 22:00:12,356 - INFO -       📄 Attempting sophisticated bracket matching from position 972
+2025-09-27 22:00:12,359 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-27 22:00:12,362 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 22:00:12,365 - INFO -       📄 Empty array pattern detected
+2025-09-27 22:00:12,370 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 22:00:12,372 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 22:00:12,375 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:00:12,378 - DEBUG - ---JSON-START---
+2025-09-27 22:00:12,379 - DEBUG - []
+2025-09-27 22:00:12,379 - DEBUG - ---JSON-END---
+2025-09-27 22:00:12,379 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 22:00:12,382 - INFO -   📝 Has figurative indicators: True
+2025-09-27 22:00:12,384 - INFO -   📝 Appears to end abruptly: True
+2025-09-27 22:00:12,388 - INFO -   📝 Has substantial analysis: True
+2025-09-27 22:00:12,390 - INFO -   📝 Has figurative analysis: True
+2025-09-27 22:00:12,393 - INFO -   📝 Has figurative conclusions: True
+2025-09-27 22:00:12,400 - INFO -   📝 Missing TAGGING_ANALYSIS: True
+2025-09-27 22:00:12,403 - INFO -   📝 Analysis complete but JSON empty: True
+2025-09-27 22:00:12,404 - INFO -   📝 Should trigger fallback: True
+2025-09-27 22:00:12,407 - ERROR - ❌ API response was truncated. No JSON was found and fallback parsing is disabled.
+2025-09-27 22:00:12,410 - ERROR - ❌ This verse must be re-processed. Returning no instances.
+2025-09-27 22:00:12,415 - WARNING - Worker 1: Pro model also truncated for Genesis 35:13 - trying tertiary decomposition fallback
+2025-09-27 22:00:12,415 - INFO - 🤖 CLAUDE FALLBACK: Using Claude Sonnet 4 for complex verse analysis
+2025-09-27 22:00:12,419 - INFO - Making request to Claude Sonnet 4 for figurative language analysis
+2025-09-27 22:00:12,420 - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-9ba6bd71-3c96-4b08-a70b-94cae39c8ce7', 'json_data': {'max_tokens': 8000, 'messages': [{'role': 'user', 'content': 'You are an expert in biblical Hebrew linguistics and figurative language analysis. I need you to analyze a verse from Genesis 35 for figurative language using a CONSERVATIVE approach.\n\n**Hebrew Text:** וַיַּ֥עַל מֵעָלָ֖יו אֱלֹהִ֑ים בַּמָּק֖וֹם אֲשֶׁר־דִּבֶּ֥ר אִתּֽוֹ\n**English Translation:** God parted from him at the spot where [God] had spoken to him;\n\n**TASK:** Identify ALL instances of figurative language in this verse using these guidelines:\n\n**CONSERVATIVE DETECTION GUIDELINES:**\n1. **MARK** physical verbs/concepts applied to spiritual/abstract concepts\n2. **MARK** clear metaphors, similes, personification, idioms, hyperbole, metonymy\n3. **BE CONSERVATIVE** with divine anthropomorphisms (only mark if clearly figurative beyond standard narrative language)\n4. **EXCLUDE** proper names, standard titles, conventional expressions unless clearly figurative\n5. **FOCUS** on Hebrew text primarily, use English for clarification\n\n**OUTPUT FORMAT:**\nFirst provide your **DETECTION DELIBERATION** - explain what you considered and why you included/excluded each potential figurative element.\n\nThen provide **HIERARCHICAL TAGGING ANALYSIS** for any instances you found.\n\nFinally, provide a **JSON array** with this structure for each instance:\n```json\n[\n  {\n    "instance_id": 1,\n    "figurative_language": "yes",\n    "simile": "yes/no",\n    "metaphor": "yes/no",\n    "personification": "yes/no",\n    "idiom": "yes/no",\n    "hyperbole": "yes/no",\n    "metonymy": "yes/no",\n    "other": "yes/no",\n    "confidence": 0.8,\n    "english_text": "the relevant English phrase",\n    "hebrew_text": "the relevant Hebrew phrase",\n    "explanation": "detailed explanation of the figurative language",\n    "speaker": "who is speaking",\n    "purpose": "why this figurative language is used",\n    "target": ["specific target", "target category", "general domain"],\n    "vehicle": ["specific vehicle", "vehicle category", "general domain"],\n    "ground": ["specific quality", "quality category", "general domain"],\n    "posture": ["specific attitude", "attitude category", "general domain"]\n  }\n]\n```\n\n**If NO figurative language is found, return an empty array: []**\n\nBegin your analysis:'}], 'model': 'claude-3-5-sonnet-20241022'}}
+2025-09-27 22:00:12,426 - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-09-27 22:00:12,426 - DEBUG - close.started
+2025-09-27 22:00:12,427 - DEBUG - close.complete
+2025-09-27 22:00:12,427 - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-09-27 22:00:12,442 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FDDC4991D0>
+2025-09-27 22:00:12,442 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FDDBEBCA70> server_hostname='api.anthropic.com' timeout=5.0
+2025-09-27 22:00:12,456 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FDDBE90FC0>
+2025-09-27 22:00:12,457 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-09-27 22:00:12,457 - DEBUG - send_request_headers.complete
+2025-09-27 22:00:12,458 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-09-27 22:00:12,458 - DEBUG - send_request_body.complete
+2025-09-27 22:00:12,458 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-09-27 22:00:20,116 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 28 Sep 2025 02:00:20 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Content-Encoding', b'gzip'), (b'anthropic-ratelimit-input-tokens-limit', b'40000'), (b'anthropic-ratelimit-input-tokens-remaining', b'40000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-09-28T02:00:13Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'8000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-09-28T02:00:22Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-09-28T02:00:13Z'), (b'anthropic-ratelimit-tokens-limit', b'48000'), (b'anthropic-ratelimit-tokens-remaining', b'48000'), (b'anthropic-ratelimit-tokens-reset', b'2025-09-28T02:00:13Z'), (b'request-id', b'req_011CTZyNpMXPZ8gQb7XQD5P2'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'224d8e00-c63e-4f31-b7f9-b80cca99cc00'), (b'x-envoy-upstream-service-time', b'7581'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'985fa5555dad8fcc-BOS')])
+2025-09-27 22:00:20,116 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-27 22:00:20,117 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-09-27 22:00:20,117 - DEBUG - receive_response_body.complete
+2025-09-27 22:00:20,118 - DEBUG - response_closed.started
+2025-09-27 22:00:20,118 - DEBUG - response_closed.complete
+2025-09-27 22:00:20,118 - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Sun, 28 Sep 2025 02:00:20 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'content-encoding': 'gzip', 'anthropic-ratelimit-input-tokens-limit': '40000', 'anthropic-ratelimit-input-tokens-remaining': '40000', 'anthropic-ratelimit-input-tokens-reset': '2025-09-28T02:00:13Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '8000', 'anthropic-ratelimit-output-tokens-reset': '2025-09-28T02:00:22Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-09-28T02:00:13Z', 'anthropic-ratelimit-tokens-limit': '48000', 'anthropic-ratelimit-tokens-remaining': '48000', 'anthropic-ratelimit-tokens-reset': '2025-09-28T02:00:13Z', 'request-id': 'req_011CTZyNpMXPZ8gQb7XQD5P2', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'anthropic-organization-id': '224d8e00-c63e-4f31-b7f9-b80cca99cc00', 'x-envoy-upstream-service-time': '7581', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '985fa5555dad8fcc-BOS'})
+2025-09-27 22:00:20,118 - DEBUG - request_id: req_011CTZyNpMXPZ8gQb7XQD5P2
+2025-09-27 22:00:20,119 - WARNING - JSON response does not have proper array format
+2025-09-27 22:00:20,119 - INFO - Claude Sonnet 4 analysis completed successfully: 0 instances found
+2025-09-27 22:00:20,119 - INFO - 🤖 CLAUDE FALLBACK: Successfully analyzed verse - 0 instances found
+2025-09-27 22:00:20,122 - INFO - Worker 1: Claude fallback completed for Genesis 35:13 - Success: True, Instances: 0
+2025-09-27 22:00:20,122 - INFO - Worker 1: Completed Genesis 35:13 - 0 instances
+2025-09-27 22:00:20,137 - INFO - Completed Genesis 35:13: Truncation=yes, BothTruncated=yes, Model=claude-3-5-sonnet-20241022, Instances=0
+2025-09-27 22:00:20,143 - INFO - --- PROCESSING: Genesis 2 ---
+2025-09-27 22:00:20,145 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 22:00:20,797 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.2 HTTP/1.1" 200 None
+2025-09-27 22:00:20,848 - INFO - Processing 1 problematic verses from Genesis 2
+2025-09-27 22:00:20,850 - INFO - Worker 1: Processing Genesis 2:17
+2025-09-27 22:00:34,528 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:00:34,530 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:00:34,531 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:00:34,533 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:00:34,534 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:00:34,535 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:00:34,536 - DEBUG -     - Prompt Token Count: 1199
+2025-09-27 22:00:34,537 - DEBUG -     - Candidates Token Count: 871
+2025-09-27 22:00:34,537 - DEBUG -     - Total Token Count: 3582
+2025-09-27 22:00:34,537 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:00:34,538 - DEBUG -   📄 Has content: True
+2025-09-27 22:00:34,539 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:00:34,540 - DEBUG -   📝 Response text length: 3498 characters
+2025-09-27 22:00:34,541 - DEBUG -   📝 Response ends with: 'shold for being marked as figurative language.
+
+[]'
+2025-09-27 22:00:34,541 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:00:34,542 - DEBUG -   📏 Total response length: 3498
+2025-09-27 22:00:34,543 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+I have carefully analyzed every phrase in Genesis 2:17 according to the provided ultra-conservative guidelines, which emphasize literal interpretations and require "absolutely cl'
+2025-09-27 22:00:34,544 - DEBUG -   📄 Response ending (last 200 chars): 'ething else from a different domain. Therefore, it is not marked as figurative.
+
+Based on the strict criteria, no elements in this verse meet the threshold for being marked as figurative language.
+
+[]'
+2025-09-27 22:00:34,544 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 3472 chars
+2025-09-27 22:00:34,545 - DEBUG -   📝 Detection ends with: 'rict criteria, no elements in this verse meet the threshold for being marked as figurative language.'
+2025-09-27 22:00:34,546 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:00:34,546 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:00:34,547 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:00:34,548 - INFO -       📄 Found JSON-like array: 2 chars
+2025-09-27 22:00:34,548 - INFO -       📄 Array content: '[]'
+2025-09-27 22:00:34,549 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:00:34,550 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 22:00:34,550 - INFO -       📄 Attempting sophisticated bracket matching from position 3496
+2025-09-27 22:00:34,551 - INFO -       📄 Bracket matching found: 2 chars
+2025-09-27 22:00:34,552 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 22:00:34,552 - INFO -       📄 Empty array pattern detected
+2025-09-27 22:00:34,553 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 22:00:34,554 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 22:00:34,554 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:00:34,555 - DEBUG - ---JSON-START---
+2025-09-27 22:00:34,555 - DEBUG - []
+2025-09-27 22:00:34,555 - DEBUG - ---JSON-END---
+2025-09-27 22:00:34,555 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 22:00:34,556 - INFO -   📝 Has figurative indicators: True
+2025-09-27 22:00:34,556 - INFO -   📝 Appears to end abruptly: False
+2025-09-27 22:00:34,557 - INFO -   📝 Has substantial analysis: True
+2025-09-27 22:00:34,558 - INFO -   📝 Has figurative analysis: True
+2025-09-27 22:00:34,558 - INFO -   📝 Has figurative conclusions: False
+2025-09-27 22:00:34,559 - INFO -   📝 Missing TAGGING_ANALYSIS: False
+2025-09-27 22:00:34,560 - INFO -   📝 Analysis complete but JSON empty: False
+2025-09-27 22:00:34,561 - INFO -   📝 Should trigger fallback: False
+2025-09-27 22:00:34,562 - INFO -   📝 Truncation criteria not met - no fallback parsing attempted
+2025-09-27 22:00:34,562 - INFO - Worker 1: Completed Genesis 2:17 - 0 instances
+2025-09-27 22:00:34,564 - INFO - Completed Genesis 2:17: Truncation=no, BothTruncated=no, Model=gemini-2.5-flash, Instances=0
+2025-09-27 22:00:34,568 - INFO - --- PROCESSING: Genesis 17 ---
+2025-09-27 22:00:34,570 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 22:00:34,893 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.17 HTTP/1.1" 200 None
+2025-09-27 22:00:34,897 - INFO - Processing 1 problematic verses from Genesis 17
+2025-09-27 22:00:34,898 - INFO - Worker 1: Processing Genesis 17:8
+2025-09-27 22:00:47,573 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:00:47,575 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:00:47,577 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:00:47,579 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:00:47,580 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:00:47,581 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:00:47,583 - DEBUG -     - Prompt Token Count: 1399
+2025-09-27 22:00:47,583 - DEBUG -     - Candidates Token Count: 783
+2025-09-27 22:00:47,583 - DEBUG -     - Total Token Count: 3267
+2025-09-27 22:00:47,583 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:00:47,585 - DEBUG -   📄 Has content: True
+2025-09-27 22:00:47,588 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:00:47,590 - DEBUG -   📝 Response text length: 2709 characters
+2025-09-27 22:00:47,592 - DEBUG -   📝 Response ends with: 'al statement of a divine promise and covenant.
+
+[]'
+2025-09-27 22:00:47,594 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:00:47,596 - DEBUG -   📏 Total response length: 2709
+2025-09-27 22:00:47,598 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+I have analyzed the provided Hebrew text, "וְנָתַתִּ֣י לְ֠ךָ֠ וּלְזַרְעֲךָ֨ אַחֲרֶ֜יךָ אֵ֣ת&thinsp;׀ אֶ֣רֶץ מְגֻרֶ֗יךָ אֵ֚ת כׇּל־אֶ֣רֶץ כְּנַ֔עַן לַאֲחֻזַּ֖ת עוֹלָ֑ם וְהָיִ֥יתִי '
+2025-09-27 22:00:47,599 - DEBUG -   📄 Response ending (last 200 chars): 'ration of each phrase against the provided criteria, I have determined that this verse contains no figurative language. It is a straightforward, literal statement of a divine promise and covenant.
+
+[]'
+2025-09-27 22:00:47,600 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 2683 chars
+2025-09-27 22:00:47,601 - DEBUG -   📝 Detection ends with: 'no figurative language. It is a straightforward, literal statement of a divine promise and covenant.'
+2025-09-27 22:00:47,603 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:00:47,604 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:00:47,605 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:00:47,607 - INFO -       📄 Found JSON-like array: 2 chars
+2025-09-27 22:00:47,608 - INFO -       📄 Array content: '[]'
+2025-09-27 22:00:47,609 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:00:47,611 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 22:00:47,612 - INFO -       📄 Attempting sophisticated bracket matching from position 2707
+2025-09-27 22:00:47,614 - INFO -       📄 Bracket matching found: 2 chars
+2025-09-27 22:00:47,615 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 22:00:47,617 - INFO -       📄 Empty array pattern detected
+2025-09-27 22:00:47,618 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 22:00:47,620 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 22:00:47,622 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:00:47,623 - DEBUG - ---JSON-START---
+2025-09-27 22:00:47,623 - DEBUG - []
+2025-09-27 22:00:47,623 - DEBUG - ---JSON-END---
+2025-09-27 22:00:47,623 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 22:00:47,625 - INFO -   📝 Has figurative indicators: True
+2025-09-27 22:00:47,626 - INFO -   📝 Appears to end abruptly: False
+2025-09-27 22:00:47,628 - INFO -   📝 Has substantial analysis: True
+2025-09-27 22:00:47,629 - INFO -   📝 Has figurative analysis: True
+2025-09-27 22:00:47,630 - INFO -   📝 Has figurative conclusions: False
+2025-09-27 22:00:47,631 - INFO -   📝 Missing TAGGING_ANALYSIS: False
+2025-09-27 22:00:47,633 - INFO -   📝 Analysis complete but JSON empty: False
+2025-09-27 22:00:47,634 - INFO -   📝 Should trigger fallback: False
+2025-09-27 22:00:47,635 - INFO -   📝 Truncation criteria not met - no fallback parsing attempted
+2025-09-27 22:00:47,636 - INFO - Worker 1: Completed Genesis 17:8 - 0 instances
+2025-09-27 22:00:47,641 - INFO - Completed Genesis 17:8: Truncation=no, BothTruncated=no, Model=gemini-2.5-flash, Instances=0
+2025-09-27 22:00:47,647 - INFO - --- PROCESSING: Genesis 18 ---
+2025-09-27 22:00:47,649 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 22:00:48,171 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.18 HTTP/1.1" 200 None
+2025-09-27 22:00:48,223 - INFO - Processing 1 problematic verses from Genesis 18
+2025-09-27 22:00:48,224 - INFO - Worker 1: Processing Genesis 18:29
+2025-09-27 22:01:01,952 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:01:01,955 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:01:01,959 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:01:01,962 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:01:01,965 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:01:01,967 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:01:01,969 - DEBUG -     - Prompt Token Count: 1383
+2025-09-27 22:01:01,969 - DEBUG -     - Candidates Token Count: 989
+2025-09-27 22:01:01,973 - DEBUG -     - Total Token Count: 3969
+2025-09-27 22:01:01,973 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:01:01,977 - DEBUG -   📄 Has content: True
+2025-09-27 22:01:01,979 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:01:01,982 - DEBUG -   📝 Response text length: 3651 characters
+2025-09-27 22:01:01,984 - DEBUG -   📝 Response ends with: 'e, relying on contextual understanding."
+  }
+]
+```'
+2025-09-27 22:01:01,986 - WARNING -   ⚠️ Response appears to end abruptly (no proper punctuation)
+2025-09-27 22:01:01,989 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:01:01,990 - DEBUG -   📏 Total response length: 3651
+2025-09-27 22:01:01,992 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+I examined the entire verse for any potential figurative language.
+
+1.  **"וַיֹּ֨סֶף ע֜וֹד לְדַבֵּ֤ר אֵלָיו֙ וַיֹּאמַ֔ר" (But he spoke up again, and said):** I considered if this'
+2025-09-27 22:01:01,994 - DEBUG -   📄 Response ending (last 200 chars): '  "purpose": "To concisely refer to the specific group of righteous individuals being discussed without explicitly stating 'righteous people' each time, relying on contextual understanding."
+  }
+]
+```'
+2025-09-27 22:01:01,997 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 2415 chars
+2025-09-27 22:01:01,999 - DEBUG -   📝 Detection ends with: '.
+
+No other elements in the verse appear to be figurative based on the provided guidelines.
+
+```json'
+2025-09-27 22:01:02,002 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:01:02,004 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:01:02,006 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:01:02,008 - INFO -       📄 Found JSON-like array: 653 chars
+2025-09-27 22:01:02,010 - INFO -       📄 Array content: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "no",
+    "hyperbole": "no",
+    "metonymy": "yes",
+    "other": "no",
+    "hebrew_text": "אַרְבָּעִ֑ים",
+    "english_text": "forty",
+    "explanation": "The number 'forty' stands metonymically for 'forty righteous people.' In the context of Abraham's negotiation with God, the numbers refer to the specific quantity of righteous individuals whose presence would determine the fate of Sodom. The number represents the qualified group.",
+    "target": [
+      "righteous people",
+      "moral individuals",
+      "humanity"
+    ]'
+2025-09-27 22:01:02,012 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:01:02,014 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 22:01:02,016 - INFO -       📄 Attempting sophisticated bracket matching from position 2438
+2025-09-27 22:01:02,018 - INFO -       📄 Bracket matching found: 1209 chars
+2025-09-27 22:01:02,020 - INFO -       ✅ Bracket-matched array contains objects
+2025-09-27 22:01:02,022 - DEBUG -   📄 JSON string extracted: 1209 chars
+2025-09-27 22:01:02,024 - DEBUG -   📄 JSON preview: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "no",
+    "hyperbole": "no",
+    "metonymy": "yes",
+    "other": "no",
+    "'
+2025-09-27 22:01:02,026 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:01:02,027 - DEBUG - ---JSON-START---
+2025-09-27 22:01:02,028 - DEBUG - [
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "no",
+    "hyperbole": "no",
+    "metonymy": "yes",
+    "other": "no",
+    "hebrew_text": "אַרְבָּעִ֑ים",
+    "english_text": "forty",
+    "explanation": "The number 'forty' stands metonymically for 'forty righteous people.' In the context of Abraham's negotiation with God, the numbers refer to the specific quantity of righteous individuals whose presence would determine the fate of Sodom. The number represents the qualified group.",
+    "target": [
+      "righteous people",
+      "moral individuals",
+      "humanity"
+    ],
+    "vehicle": [
+      "number forty",
+      "numerical quantity",
+      "abstract concept"
+    ],
+    "ground": [
+      "numerical representation",
+      "quantity",
+      "group characteristic"
+    ],
+    "posture": [
+      "intercession",
+      "pleading",
+      "negotiation",
+      "persuasion"
+    ],
+    "confidence": 0.9,
+    "speaker": "Abraham",
+    "purpose": "To concisely refer to the specific group of righteous individuals being discussed without explicitly stating 'righteous people' each time, relying on contextual understanding."
+  }
+]
+2025-09-27 22:01:02,029 - DEBUG - ---JSON-END---
+2025-09-27 22:01:02,030 - WARNING -   ⚠️ Found problematic characters: ["'א' (ord=1488) at pos 215", "'ַ' (ord=1463) at pos 216", "'ר' (ord=1512) at pos 217", "'ְ' (ord=1456) at pos 218", "'ב' (ord=1489) at pos 219", "'ּ' (ord=1468) at pos 220", "'ָ' (ord=1464) at pos 221", "'ע' (ord=1506) at pos 222", "'ִ' (ord=1460) at pos 223", "'֑' (ord=1425) at pos 224"]
+2025-09-27 22:01:02,033 - INFO -   ✅ JSON parsing succeeded on first attempt
+2025-09-27 22:01:02,035 - INFO - Worker 1: Completed Genesis 18:29 - 1 instances
+2025-09-27 22:01:02,039 - INFO - Completed Genesis 18:29: Truncation=no, BothTruncated=no, Model=gemini-2.5-flash, Instances=1
+2025-09-27 22:01:02,045 - INFO - --- PROCESSING: Genesis 24 ---
+2025-09-27 22:01:02,047 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 22:01:02,740 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.24 HTTP/1.1" 200 None
+2025-09-27 22:01:02,796 - INFO - Processing 2 problematic verses from Genesis 24
+2025-09-27 22:01:02,802 - INFO - Worker 1: Processing Genesis 24:4
+2025-09-27 22:01:02,807 - INFO - Worker 2: Processing Genesis 24:65
+2025-09-27 22:01:13,078 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:01:13,081 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:01:13,083 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:01:13,085 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:01:13,086 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:01:13,090 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:01:13,093 - DEBUG -     - Prompt Token Count: 1407
+2025-09-27 22:01:13,094 - DEBUG -     - Candidates Token Count: 671
+2025-09-27 22:01:13,094 - DEBUG -     - Total Token Count: 3544
+2025-09-27 22:01:13,094 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:01:13,096 - DEBUG -   📄 Has content: True
+2025-09-27 22:01:13,098 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:01:13,100 - DEBUG -   📝 Response text length: 2660 characters
+2025-09-27 22:01:13,102 - DEBUG -   📝 Response ends with: 'is detected according to the given guidelines.
+
+[]'
+2025-09-27 22:01:13,104 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:01:13,105 - DEBUG -   📏 Total response length: 2660
+2025-09-27 22:01:13,107 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+I have carefully analyzed every phrase and concept in the provided Hebrew text and its English translation for potential figurative language, adhering strictly to the conservativ'
+2025-09-27 22:01:13,110 - DEBUG -   📄 Response ending (last 200 chars): 're no biblical idioms or set phrases present in this specific segment that would warrant classification as "idiom." Therefore, no figurative language is detected according to the given guidelines.
+
+[]'
+2025-09-27 22:01:13,113 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 2634 chars
+2025-09-27 22:01:13,115 - DEBUG -   📝 Detection ends with: 'ication as "idiom." Therefore, no figurative language is detected according to the given guidelines.'
+2025-09-27 22:01:13,116 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:01:13,118 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:01:13,120 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:01:13,122 - INFO -       📄 Found JSON-like array: 2 chars
+2025-09-27 22:01:13,125 - INFO -       📄 Array content: '[]'
+2025-09-27 22:01:13,127 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:01:13,130 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 22:01:13,132 - INFO -       📄 Attempting sophisticated bracket matching from position 2658
+2025-09-27 22:01:13,134 - INFO -       📄 Bracket matching found: 2 chars
+2025-09-27 22:01:13,136 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 22:01:13,138 - INFO -       📄 Empty array pattern detected
+2025-09-27 22:01:13,139 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 22:01:13,142 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 22:01:13,144 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:01:13,146 - DEBUG - ---JSON-START---
+2025-09-27 22:01:13,146 - DEBUG - []
+2025-09-27 22:01:13,147 - DEBUG - ---JSON-END---
+2025-09-27 22:01:13,147 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 22:01:13,149 - INFO -   📝 Has figurative indicators: True
+2025-09-27 22:01:13,150 - INFO -   📝 Appears to end abruptly: False
+2025-09-27 22:01:13,152 - INFO -   📝 Has substantial analysis: True
+2025-09-27 22:01:13,154 - INFO -   📝 Has figurative analysis: True
+2025-09-27 22:01:13,156 - INFO -   📝 Has figurative conclusions: False
+2025-09-27 22:01:13,158 - INFO -   📝 Missing TAGGING_ANALYSIS: False
+2025-09-27 22:01:13,159 - INFO -   📝 Analysis complete but JSON empty: False
+2025-09-27 22:01:13,161 - INFO -   📝 Should trigger fallback: False
+2025-09-27 22:01:13,163 - INFO -   📝 Truncation criteria not met - no fallback parsing attempted
+2025-09-27 22:01:13,165 - INFO - Worker 2: Completed Genesis 24:65 - 0 instances
+2025-09-27 22:01:13,168 - INFO - Completed Genesis 24:65: Truncation=no, BothTruncated=no, Model=gemini-2.5-flash, Instances=0
+2025-09-27 22:01:19,549 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:01:19,551 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:01:19,553 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:01:19,555 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:01:19,557 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:01:19,559 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:01:19,561 - DEBUG -     - Prompt Token Count: 1329
+2025-09-27 22:01:19,561 - DEBUG -     - Candidates Token Count: 898
+2025-09-27 22:01:19,561 - DEBUG -     - Total Token Count: 4629
+2025-09-27 22:01:19,562 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:01:19,564 - DEBUG -   📄 Has content: True
+2025-09-27 22:01:19,566 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:01:19,569 - DEBUG -   📝 Response text length: 3321 characters
+2025-09-27 22:01:19,571 - DEBUG -   📝 Response ends with: 'ions of actions, locations, or relationships.
+
+[
+]'
+2025-09-27 22:01:19,573 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:01:19,575 - DEBUG -   📏 Total response length: 3321
+2025-09-27 22:01:19,577 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+I have analyzed every phrase and concept in the verse "כִּ֧י אֶל־אַרְצִ֛י וְאֶל־מוֹלַדְתִּ֖י תֵּלֵ֑ךְ וְלָקַחְתָּ֥ אִשָּׁ֖ה לִבְנִ֥י לְיִצְחָֽק" (but will go to the land of my bi'
+2025-09-27 22:01:19,580 - DEBUG -   📄 Response ending (last 200 chars): 'presented as borderline cases for figurative language based on the strict conservative guidelines provided. All elements appear to be literal descriptions of actions, locations, or relationships.
+
+[
+]'
+2025-09-27 22:01:19,582 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 3294 chars
+2025-09-27 22:01:19,584 - DEBUG -   📝 Detection ends with: 'es provided. All elements appear to be literal descriptions of actions, locations, or relationships.'
+2025-09-27 22:01:19,586 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:01:19,588 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:01:19,589 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:01:19,591 - INFO -       📄 Found JSON-like array: 3 chars
+2025-09-27 22:01:19,593 - INFO -       📄 Array content: '[
+]'
+2025-09-27 22:01:19,594 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:01:19,597 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 22:01:19,599 - INFO -       📄 Attempting sophisticated bracket matching from position 3318
+2025-09-27 22:01:19,600 - INFO -       📄 Bracket matching found: 3 chars
+2025-09-27 22:01:19,602 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 22:01:19,604 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-27 22:01:19,605 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 22:01:19,606 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 22:01:19,607 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:01:19,609 - DEBUG - ---JSON-START---
+2025-09-27 22:01:19,609 - DEBUG - []
+2025-09-27 22:01:19,609 - DEBUG - ---JSON-END---
+2025-09-27 22:01:19,609 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 22:01:19,611 - INFO -   📝 Has figurative indicators: True
+2025-09-27 22:01:19,613 - INFO -   📝 Appears to end abruptly: False
+2025-09-27 22:01:19,615 - INFO -   📝 Has substantial analysis: True
+2025-09-27 22:01:19,617 - INFO -   📝 Has figurative analysis: True
+2025-09-27 22:01:19,618 - INFO -   📝 Has figurative conclusions: False
+2025-09-27 22:01:19,620 - INFO -   📝 Missing TAGGING_ANALYSIS: False
+2025-09-27 22:01:19,621 - INFO -   📝 Analysis complete but JSON empty: False
+2025-09-27 22:01:19,623 - INFO -   📝 Should trigger fallback: False
+2025-09-27 22:01:19,625 - INFO -   📝 Truncation criteria not met - no fallback parsing attempted
+2025-09-27 22:01:19,628 - INFO - Worker 1: Completed Genesis 24:4 - 0 instances
+2025-09-27 22:01:19,628 - INFO - Completed Genesis 24:4: Truncation=no, BothTruncated=no, Model=gemini-2.5-flash, Instances=0
+2025-09-27 22:01:19,644 - INFO - --- PROCESSING: Genesis 48 ---
+2025-09-27 22:01:19,646 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 22:01:20,301 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.48 HTTP/1.1" 200 None
+2025-09-27 22:01:20,353 - INFO - Processing 1 problematic verses from Genesis 48
+2025-09-27 22:01:20,354 - INFO - Worker 1: Processing Genesis 48:10
+2025-09-27 22:01:27,395 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:01:27,397 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:01:27,401 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:01:27,404 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:01:27,407 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:01:27,413 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:01:27,415 - DEBUG -     - Prompt Token Count: 1378
+2025-09-27 22:01:27,415 - DEBUG -     - Candidates Token Count: 583
+2025-09-27 22:01:27,415 - DEBUG -     - Total Token Count: 2863
+2025-09-27 22:01:27,415 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:01:27,417 - DEBUG -   📄 Has content: True
+2025-09-27 22:01:27,419 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:01:27,421 - DEBUG -   📝 Response text length: 1875 characters
+2025-09-27 22:01:27,423 - DEBUG -   📝 Response ends with: 'n this verse based on the provided guidelines.
+
+[]'
+2025-09-27 22:01:27,425 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:01:27,427 - DEBUG -   📏 Total response length: 1875
+2025-09-27 22:01:27,428 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+1.  **"וְעֵינֵ֤י יִשְׂרָאֵל֙ כָּבְד֣וּ מִזֹּ֔קֶן" / "Now Israel’s eyes were dim with age"**:
+    *   **Considered**: I considered if "כָּבְד֣וּ" (kavdu, "were heavy" or "were dim'
+2025-09-27 22:01:27,430 - DEBUG -   📄 Response ending (last 200 chars): 'physical action.
+    *   **Reasoning**: It is a literal description of Joseph's action. It is not figurative.
+
+No figurative language was identified in this verse based on the provided guidelines.
+
+[]'
+2025-09-27 22:01:27,432 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 1165 chars
+2025-09-27 22:01:27,434 - DEBUG -   📝 Detection ends with: 'sequence of the previous description. It is not figurative.
+3.  **"וַיַּגֵּ֤שׁ אֹתָם֙ אֵלָ֔יו" / "So'
+2025-09-27 22:01:27,436 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:01:27,438 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:01:27,440 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:01:27,442 - INFO -       📄 Found JSON-like array: 8 chars
+2025-09-27 22:01:27,444 - INFO -       📄 Array content: '[Joseph]'
+2025-09-27 22:01:27,445 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:01:27,448 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 22:01:27,450 - INFO -       📄 Attempting sophisticated bracket matching from position 1188
+2025-09-27 22:01:27,453 - INFO -       📄 Bracket matching found: 8 chars
+2025-09-27 22:01:27,456 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 22:01:27,458 - INFO -       📄 Empty array pattern detected
+2025-09-27 22:01:27,460 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 22:01:27,462 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 22:01:27,463 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:01:27,465 - DEBUG - ---JSON-START---
+2025-09-27 22:01:27,465 - DEBUG - []
+2025-09-27 22:01:27,465 - DEBUG - ---JSON-END---
+2025-09-27 22:01:27,465 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 22:01:27,467 - INFO -   📝 Has figurative indicators: True
+2025-09-27 22:01:27,469 - INFO -   📝 Appears to end abruptly: True
+2025-09-27 22:01:27,472 - INFO -   📝 Has substantial analysis: True
+2025-09-27 22:01:27,474 - INFO -   📝 Has figurative analysis: True
+2025-09-27 22:01:27,476 - INFO -   📝 Has figurative conclusions: False
+2025-09-27 22:01:27,478 - INFO -   📝 Missing TAGGING_ANALYSIS: False
+2025-09-27 22:01:27,480 - INFO -   📝 Analysis complete but JSON empty: False
+2025-09-27 22:01:27,482 - INFO -   📝 Should trigger fallback: True
+2025-09-27 22:01:27,483 - ERROR - ❌ API response was truncated. No JSON was found and fallback parsing is disabled.
+2025-09-27 22:01:27,485 - ERROR - ❌ This verse must be re-processed. Returning no instances.
+2025-09-27 22:01:27,487 - WARNING - Worker 1: Truncation detected in Genesis 48:10, retrying with Pro model
+2025-09-27 22:01:27,487 - INFO - Using model override: gemini-2.5-pro
+2025-09-27 22:01:48,450 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:01:48,452 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:01:48,455 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:01:48,457 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:01:48,458 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:01:48,460 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:01:48,462 - DEBUG -     - Prompt Token Count: 1378
+2025-09-27 22:01:48,462 - DEBUG -     - Candidates Token Count: 757
+2025-09-27 22:01:48,462 - DEBUG -     - Total Token Count: 3972
+2025-09-27 22:01:48,463 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:01:48,464 - DEBUG -   📄 Has content: True
+2025-09-27 22:01:48,466 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:01:48,468 - DEBUG -   📝 Response text length: 2495 characters
+2025-09-27 22:01:48,470 - DEBUG -   📝 Response ends with: 'e where he relies on touch rather than sight."
+}
+]'
+2025-09-27 22:01:48,471 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:01:48,473 - DEBUG -   📏 Total response length: 2495
+2025-09-27 22:01:48,475 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+- **`וְעֵינֵ֤י יִשְׂרָאֵל֙ כָּבְד֣וּ מִזֹּ֔קֶן` (Now Israel’s eyes were heavy from age):** I considered if "eyes were heavy" (כָּבְד֣וּ) is literal or figurative. Literally, the '
+2025-09-27 22:01:48,477 - DEBUG -   📄 Response ending (last 200 chars): 'ence": 0.9,
+  "speaker": "Narrator",
+  "purpose": "To explain Jacob's failing eyesight, which is a crucial plot point for the subsequent blessing scene where he relies on touch rather than sight."
+}
+]'
+2025-09-27 22:01:48,479 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 820 chars
+2025-09-27 22:01:48,480 - DEBUG -   📝 Detection ends with: 'a conventional metaphor used to describe failing eyesight. I have included this as a metaphor in the'
+2025-09-27 22:01:48,482 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:01:48,484 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:01:48,486 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:01:48,488 - INFO -       📄 Found JSON-like array: 8 chars
+2025-09-27 22:01:48,490 - INFO -       📄 Array content: '[Joseph]'
+2025-09-27 22:01:48,492 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:01:48,494 - INFO -       📄 Found JSON OUTPUT section: 1641 chars
+2025-09-27 22:01:48,496 - WARNING -       ⚠️ JSON appears incomplete in OUTPUT section
+2025-09-27 22:01:48,497 - INFO -       📄 Attempting sophisticated bracket matching from position 1116
+2025-09-27 22:01:48,499 - INFO -       📄 Bracket matching found: 8 chars
+2025-09-27 22:01:48,501 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 22:01:48,503 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-27 22:01:48,505 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 22:01:48,506 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 22:01:48,508 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:01:48,508 - DEBUG - ---JSON-START---
+2025-09-27 22:01:48,509 - DEBUG - []
+2025-09-27 22:01:48,509 - DEBUG - ---JSON-END---
+2025-09-27 22:01:48,509 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 22:01:48,510 - INFO -   📝 Has figurative indicators: True
+2025-09-27 22:01:48,511 - INFO -   📝 Appears to end abruptly: True
+2025-09-27 22:01:48,513 - INFO -   📝 Has substantial analysis: True
+2025-09-27 22:01:48,515 - INFO -   📝 Has figurative analysis: True
+2025-09-27 22:01:48,517 - INFO -   📝 Has figurative conclusions: True
+2025-09-27 22:01:48,518 - INFO -   📝 Missing TAGGING_ANALYSIS: True
+2025-09-27 22:01:48,519 - INFO -   📝 Analysis complete but JSON empty: True
+2025-09-27 22:01:48,520 - INFO -   📝 Should trigger fallback: True
+2025-09-27 22:01:48,521 - ERROR - ❌ API response was truncated. No JSON was found and fallback parsing is disabled.
+2025-09-27 22:01:48,523 - ERROR - ❌ This verse must be re-processed. Returning no instances.
+2025-09-27 22:01:48,524 - WARNING - Worker 1: Pro model also truncated for Genesis 48:10 - trying tertiary decomposition fallback
+2025-09-27 22:01:48,524 - INFO - 🤖 CLAUDE FALLBACK: Using Claude Sonnet 4 for complex verse analysis
+2025-09-27 22:01:48,525 - INFO - Making request to Claude Sonnet 4 for figurative language analysis
+2025-09-27 22:01:48,525 - DEBUG - Request options: {'method': 'post', 'url': '/v1/messages', 'timeout': Timeout(connect=5.0, read=600, write=600, pool=600), 'files': None, 'idempotency_key': 'stainless-python-retry-9e63436f-259e-417f-86ce-c0f096ca1203', 'json_data': {'max_tokens': 8000, 'messages': [{'role': 'user', 'content': 'You are an expert in biblical Hebrew linguistics and figurative language analysis. I need you to analyze a verse from Genesis 48 for figurative language using a CONSERVATIVE approach.\n\n**Hebrew Text:** וְעֵינֵ֤י יִשְׂרָאֵל֙ כָּבְד֣וּ מִזֹּ֔קֶן לֹ֥א יוּכַ֖ל לִרְא֑וֹת וַיַּגֵּ֤שׁ אֹתָם֙ אֵלָ֔יו וַיִּשַּׁ֥ק לָהֶ֖ם וַיְחַבֵּ֥ק לָהֶֽם\n**English Translation:** Now Israel’s eyes were dim with age; he could not see. So [Joseph] brought them close to him, and he kissed them and embraced them.\n\n**TASK:** Identify ALL instances of figurative language in this verse using these guidelines:\n\n**CONSERVATIVE DETECTION GUIDELINES:**\n1. **MARK** physical verbs/concepts applied to spiritual/abstract concepts\n2. **MARK** clear metaphors, similes, personification, idioms, hyperbole, metonymy\n3. **BE CONSERVATIVE** with divine anthropomorphisms (only mark if clearly figurative beyond standard narrative language)\n4. **EXCLUDE** proper names, standard titles, conventional expressions unless clearly figurative\n5. **FOCUS** on Hebrew text primarily, use English for clarification\n\n**OUTPUT FORMAT:**\nFirst provide your **DETECTION DELIBERATION** - explain what you considered and why you included/excluded each potential figurative element.\n\nThen provide **HIERARCHICAL TAGGING ANALYSIS** for any instances you found.\n\nFinally, provide a **JSON array** with this structure for each instance:\n```json\n[\n  {\n    "instance_id": 1,\n    "figurative_language": "yes",\n    "simile": "yes/no",\n    "metaphor": "yes/no",\n    "personification": "yes/no",\n    "idiom": "yes/no",\n    "hyperbole": "yes/no",\n    "metonymy": "yes/no",\n    "other": "yes/no",\n    "confidence": 0.8,\n    "english_text": "the relevant English phrase",\n    "hebrew_text": "the relevant Hebrew phrase",\n    "explanation": "detailed explanation of the figurative language",\n    "speaker": "who is speaking",\n    "purpose": "why this figurative language is used",\n    "target": ["specific target", "target category", "general domain"],\n    "vehicle": ["specific vehicle", "vehicle category", "general domain"],\n    "ground": ["specific quality", "quality category", "general domain"],\n    "posture": ["specific attitude", "attitude category", "general domain"]\n  }\n]\n```\n\n**If NO figurative language is found, return an empty array: []**\n\nBegin your analysis:'}], 'model': 'claude-3-5-sonnet-20241022'}}
+2025-09-27 22:01:48,527 - DEBUG - Sending HTTP Request: POST https://api.anthropic.com/v1/messages
+2025-09-27 22:01:48,527 - DEBUG - close.started
+2025-09-27 22:01:48,527 - DEBUG - close.complete
+2025-09-27 22:01:48,528 - DEBUG - connect_tcp.started host='api.anthropic.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-09-27 22:01:48,536 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FDDBE91940>
+2025-09-27 22:01:48,536 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FDDBEBCA70> server_hostname='api.anthropic.com' timeout=5.0
+2025-09-27 22:01:48,550 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FDDBF05FD0>
+2025-09-27 22:01:48,551 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-09-27 22:01:48,551 - DEBUG - send_request_headers.complete
+2025-09-27 22:01:48,551 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-09-27 22:01:48,551 - DEBUG - send_request_body.complete
+2025-09-27 22:01:48,552 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-09-27 22:01:58,485 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 28 Sep 2025 02:01:58 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Content-Encoding', b'gzip'), (b'anthropic-ratelimit-input-tokens-limit', b'40000'), (b'anthropic-ratelimit-input-tokens-remaining', b'40000'), (b'anthropic-ratelimit-input-tokens-reset', b'2025-09-28T02:01:49Z'), (b'anthropic-ratelimit-output-tokens-limit', b'8000'), (b'anthropic-ratelimit-output-tokens-remaining', b'7000'), (b'anthropic-ratelimit-output-tokens-reset', b'2025-09-28T02:02:02Z'), (b'anthropic-ratelimit-requests-limit', b'50'), (b'anthropic-ratelimit-requests-remaining', b'49'), (b'anthropic-ratelimit-requests-reset', b'2025-09-28T02:01:49Z'), (b'anthropic-ratelimit-tokens-limit', b'48000'), (b'anthropic-ratelimit-tokens-remaining', b'47000'), (b'anthropic-ratelimit-tokens-reset', b'2025-09-28T02:01:49Z'), (b'request-id', b'req_011CTZyVu6iyG9NgKTL5Dn3V'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'anthropic-organization-id', b'224d8e00-c63e-4f31-b7f9-b80cca99cc00'), (b'x-envoy-upstream-service-time', b'9875'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Robots-Tag', b'none'), (b'Server', b'cloudflare'), (b'CF-RAY', b'985fa7adfeab9053-BOS')])
+2025-09-27 22:01:58,486 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-27 22:01:58,486 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-09-27 22:01:58,487 - DEBUG - receive_response_body.complete
+2025-09-27 22:01:58,487 - DEBUG - response_closed.started
+2025-09-27 22:01:58,487 - DEBUG - response_closed.complete
+2025-09-27 22:01:58,488 - DEBUG - HTTP Response: POST https://api.anthropic.com/v1/messages "200 OK" Headers({'date': 'Sun, 28 Sep 2025 02:01:58 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'content-encoding': 'gzip', 'anthropic-ratelimit-input-tokens-limit': '40000', 'anthropic-ratelimit-input-tokens-remaining': '40000', 'anthropic-ratelimit-input-tokens-reset': '2025-09-28T02:01:49Z', 'anthropic-ratelimit-output-tokens-limit': '8000', 'anthropic-ratelimit-output-tokens-remaining': '7000', 'anthropic-ratelimit-output-tokens-reset': '2025-09-28T02:02:02Z', 'anthropic-ratelimit-requests-limit': '50', 'anthropic-ratelimit-requests-remaining': '49', 'anthropic-ratelimit-requests-reset': '2025-09-28T02:01:49Z', 'anthropic-ratelimit-tokens-limit': '48000', 'anthropic-ratelimit-tokens-remaining': '47000', 'anthropic-ratelimit-tokens-reset': '2025-09-28T02:01:49Z', 'request-id': 'req_011CTZyVu6iyG9NgKTL5Dn3V', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'anthropic-organization-id': '224d8e00-c63e-4f31-b7f9-b80cca99cc00', 'x-envoy-upstream-service-time': '9875', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'x-robots-tag': 'none', 'server': 'cloudflare', 'cf-ray': '985fa7adfeab9053-BOS'})
+2025-09-27 22:01:58,488 - DEBUG - request_id: req_011CTZyVu6iyG9NgKTL5Dn3V
+2025-09-27 22:01:58,489 - ERROR - Failed to parse JSON from Claude Sonnet response: Expecting ',' delimiter: line 21 column 77 (char 839)
+2025-09-27 22:01:58,489 - DEBUG - Raw JSON text: [
+  {
+    "instance_id": 1,
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "yes",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "confidence": 0.6,
+    "english_text": "eyes were dim",
+    "hebrew_text": "עֵינֵי...כָּבְדוּ",
+    "explanation": "Uses concept of 'heaviness' to describe diminished vision, though this may be a conventional expression rather than active metaphor",
+    "speaker": "narrator",
+    "purpose": "describe physical condition of aging",
+    "target": ["vision loss", "physical impairment", "bodily function"],
+    "vehicle": ["heaviness", "weight", "physical property"],
+    "ground": ["diminished capability", "reduced function", "limitation"],
+    "posture": ["neutral description", "medical condition", "aging process"]
+2025-09-27 22:01:58,496 - INFO - Claude Sonnet 4 analysis completed successfully: 0 instances found
+2025-09-27 22:01:58,497 - INFO - 🤖 CLAUDE FALLBACK: Successfully analyzed verse - 0 instances found
+2025-09-27 22:01:58,499 - INFO - Worker 1: Claude fallback completed for Genesis 48:10 - Success: True, Instances: 0
+2025-09-27 22:01:58,500 - INFO - Worker 1: Completed Genesis 48:10 - 0 instances
+2025-09-27 22:01:58,513 - INFO - Completed Genesis 48:10: Truncation=yes, BothTruncated=yes, Model=claude-3-5-sonnet-20241022, Instances=0
+2025-09-27 22:01:58,518 - INFO - --- PROCESSING: Genesis 30 ---
+2025-09-27 22:01:58,520 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 22:01:59,196 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.30 HTTP/1.1" 200 None
+2025-09-27 22:01:59,248 - INFO - Processing 1 problematic verses from Genesis 30
+2025-09-27 22:01:59,249 - INFO - Worker 1: Processing Genesis 30:6
+2025-09-27 22:02:16,326 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:02:16,328 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:02:16,329 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:02:16,331 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:02:16,332 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:02:16,334 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:02:16,335 - DEBUG -     - Prompt Token Count: 1383
+2025-09-27 22:02:16,335 - DEBUG -     - Candidates Token Count: 841
+2025-09-27 22:02:16,335 - DEBUG -     - Total Token Count: 4545
+2025-09-27 22:02:16,335 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:02:16,337 - DEBUG -   📄 Has content: True
+2025-09-27 22:02:16,338 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:02:16,340 - DEBUG -   📝 Response text length: 2993 characters
+2025-09-27 22:02:16,341 - DEBUG -   📝 Response ends with: 'sponsiveness to her prayer for a child."
+  }
+]
+```'
+2025-09-27 22:02:16,342 - WARNING -   ⚠️ Response appears to end abruptly (no proper punctuation)
+2025-09-27 22:02:16,343 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:02:16,344 - DEBUG -   📏 Total response length: 2993
+2025-09-27 22:02:16,344 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+*   **"God has vindicated me" (דָּנַ֣נִּי אֱלֹהִ֔ים)**: I considered if this phrase might be a metaphor for God acting as a judge or legal advocate. However, in the ANE context, '
+2025-09-27 22:02:16,345 - DEBUG -   📄 Response ending (last 200 chars): '    "positive sentiment"
+    ],
+    "confidence": 0.9,
+    "speaker": "Rachel",
+    "purpose": "To express Rachel's gratitude and acknowledge God's responsiveness to her prayer for a child."
+  }
+]
+```'
+2025-09-27 22:02:16,346 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 1858 chars
+2025-09-27 22:02:16,346 - DEBUG -   📝 Detection ends with: 'metaphor, simile, or other specified type of figurative language. Therefore, I excluded it.
+
+```json'
+2025-09-27 22:02:16,347 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:02:16,348 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:02:16,348 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:02:16,349 - INFO -       📄 Found JSON-like array: 261 chars
+2025-09-27 22:02:16,350 - INFO -       📄 Array content: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "hebrew_text": "שָׁמַ֣ע בְּקֹלִ֔י",
+    "english_text": "[God]'
+2025-09-27 22:02:16,350 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:02:16,351 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 22:02:16,352 - INFO -       📄 Attempting sophisticated bracket matching from position 1881
+2025-09-27 22:02:16,353 - INFO -       📄 Bracket matching found: 1108 chars
+2025-09-27 22:02:16,353 - INFO -       ✅ Bracket-matched array contains objects
+2025-09-27 22:02:16,354 - DEBUG -   📄 JSON string extracted: 1108 chars
+2025-09-27 22:02:16,355 - DEBUG -   📄 JSON preview: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "'
+2025-09-27 22:02:16,355 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:02:16,356 - DEBUG - ---JSON-START---
+2025-09-27 22:02:16,356 - DEBUG - [
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "hebrew_text": "שָׁמַ֣ע בְּקֹלִ֔י",
+    "english_text": "[God] has heeded my plea",
+    "explanation": "This is a common biblical idiom meaning 'to listen to and respond favorably to a request or prayer,' rather than a literal description of the physical act of hearing. It conveys God's responsiveness to Rachel's supplication.",
+    "target": [
+      "God's favorable response to prayer",
+      "divine responsiveness",
+      "divine action"
+    ],
+    "vehicle": [
+      "hearing a voice",
+      "auditory perception",
+      "sensory action"
+    ],
+    "ground": [
+      "attentiveness and action",
+      "responsiveness",
+      "divine care"
+    ],
+    "posture": [
+      "gratitude",
+      "thankfulness",
+      "positive sentiment"
+    ],
+    "confidence": 0.9,
+    "speaker": "Rachel",
+    "purpose": "To express Rachel's gratitude and acknowledge God's responsiveness to her prayer for a child."
+  }
+]
+2025-09-27 22:02:16,357 - DEBUG - ---JSON-END---
+2025-09-27 22:02:16,357 - WARNING -   ⚠️ Found problematic characters: ["'ש' (ord=1513) at pos 215", "'ׁ' (ord=1473) at pos 216", "'ָ' (ord=1464) at pos 217", "'מ' (ord=1502) at pos 218", "'ַ' (ord=1463) at pos 219", "'֣' (ord=1443) at pos 220", "'ע' (ord=1506) at pos 221", "'ב' (ord=1489) at pos 223", "'ּ' (ord=1468) at pos 224", "'ְ' (ord=1456) at pos 225"]
+2025-09-27 22:02:16,357 - INFO -   ✅ JSON parsing succeeded on first attempt
+2025-09-27 22:02:16,358 - INFO - Worker 1: Completed Genesis 30:6 - 1 instances
+2025-09-27 22:02:16,360 - INFO - Completed Genesis 30:6: Truncation=no, BothTruncated=no, Model=gemini-2.5-flash, Instances=1
+2025-09-27 22:02:16,365 - INFO - --- PROCESSING: Genesis 29 ---
+2025-09-27 22:02:16,366 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 22:02:16,660 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.29 HTTP/1.1" 200 None
+2025-09-27 22:02:16,711 - INFO - Processing 1 problematic verses from Genesis 29
+2025-09-27 22:02:16,712 - INFO - Worker 1: Processing Genesis 29:16
+2025-09-27 22:02:22,768 - DEBUG - 🔍 API Response Debug Info:
+2025-09-27 22:02:22,769 - DEBUG -   📊 Total candidates: 1
+2025-09-27 22:02:22,770 - DEBUG -   🏁 Finish reason: 1
+2025-09-27 22:02:22,770 - DEBUG -   📝 Finish reason type: <enum 'FinishReason'>
+2025-09-27 22:02:22,771 - DEBUG -   📝 Finish reason str: '1'
+2025-09-27 22:02:22,772 - DEBUG -   🪙 Usage Metadata:
+2025-09-27 22:02:22,772 - DEBUG -     - Prompt Token Count: 1328
+2025-09-27 22:02:22,772 - DEBUG -     - Candidates Token Count: 551
+2025-09-27 22:02:22,772 - DEBUG -     - Total Token Count: 2477
+2025-09-27 22:02:22,772 - DEBUG -   🛡️ Safety ratings: None
+2025-09-27 22:02:22,773 - DEBUG -   📄 Has content: True
+2025-09-27 22:02:22,774 - DEBUG -   📄 Content parts count: 1
+2025-09-27 22:02:22,774 - DEBUG -   📝 Response text length: 1927 characters
+2025-09-27 22:02:22,775 - DEBUG -   📝 Response ends with: ' personifications, or biblical idioms present.
+
+[]'
+2025-09-27 22:02:22,776 - DEBUG - 🔍 PARSING DEBUG - Starting response parsing:
+2025-09-27 22:02:22,776 - DEBUG -   📏 Total response length: 1927
+2025-09-27 22:02:22,777 - DEBUG -   📄 Response preview (first 200 chars): 'FIGURATIVE_DETECTION:
+I have carefully analyzed the provided Hebrew text: "וּלְלָבָ֖ן שְׁתֵּ֣י בָנ֑וֹת שֵׁ֤ם הַגְּדֹלָה֙ לֵאָ֔ה וְשֵׁ֥ם הַקְּטַנָּ֖ה רָחֵֽל" (Now Laban had two daughters; the name of t'
+2025-09-27 22:02:22,777 - DEBUG -   📄 Response ending (last 200 chars): 'genealogical information, which, according to the instructions, should be treated conservatively and literally. There are no clear metaphors, similes, personifications, or biblical idioms present.
+
+[]'
+2025-09-27 22:02:22,778 - DEBUG -   📝 FIGURATIVE_DETECTION extracted: 1901 chars
+2025-09-27 22:02:22,779 - DEBUG -   📝 Detection ends with: ' and literally. There are no clear metaphors, similes, personifications, or biblical idioms present.'
+2025-09-27 22:02:22,779 - DEBUG -   ⚠️ No TAGGING_ANALYSIS section found
+2025-09-27 22:02:22,780 - DEBUG - 🔍 JSON EXTRACTION DEBUG:
+2025-09-27 22:02:22,781 - INFO -     🔍 JSON Array Extraction:
+2025-09-27 22:02:22,782 - INFO -       📄 Found JSON-like array: 2 chars
+2025-09-27 22:02:22,783 - INFO -       📄 Array content: '[]'
+2025-09-27 22:02:22,783 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-27 22:02:22,784 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-27 22:02:22,784 - INFO -       📄 Attempting sophisticated bracket matching from position 1925
+2025-09-27 22:02:22,785 - INFO -       📄 Bracket matching found: 2 chars
+2025-09-27 22:02:22,786 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-27 22:02:22,786 - INFO -       📄 Empty array pattern detected
+2025-09-27 22:02:22,787 - DEBUG -   📄 JSON string extracted: 2 chars
+2025-09-27 22:02:22,788 - DEBUG -   📄 JSON preview: '[]'
+2025-09-27 22:02:22,788 - DEBUG -   📄 COMPLETE JSON CONTENT:
+2025-09-27 22:02:22,789 - DEBUG - ---JSON-START---
+2025-09-27 22:02:22,789 - DEBUG - []
+2025-09-27 22:02:22,789 - DEBUG - ---JSON-END---
+2025-09-27 22:02:22,789 - INFO - 🔍 FALLBACK CHECK - No instances found but have deliberation text
+2025-09-27 22:02:22,790 - INFO -   📝 Has figurative indicators: True
+2025-09-27 22:02:22,790 - INFO -   📝 Appears to end abruptly: False
+2025-09-27 22:02:22,791 - INFO -   📝 Has substantial analysis: True
+2025-09-27 22:02:22,791 - INFO -   📝 Has figurative analysis: True
+2025-09-27 22:02:22,792 - INFO -   📝 Has figurative conclusions: False
+2025-09-27 22:02:22,793 - INFO -   📝 Missing TAGGING_ANALYSIS: False
+2025-09-27 22:02:22,793 - INFO -   📝 Analysis complete but JSON empty: False
+2025-09-27 22:02:22,794 - INFO -   📝 Should trigger fallback: False
+2025-09-27 22:02:22,795 - INFO -   📝 Truncation criteria not met - no fallback parsing attempted
+2025-09-27 22:02:22,796 - INFO - Worker 1: Completed Genesis 29:16 - 0 instances
+2025-09-27 22:02:22,797 - INFO - Completed Genesis 29:16: Truncation=no, BothTruncated=no, Model=gemini-2.5-flash, Instances=0
+2025-09-27 22:02:22,800 - INFO - --- PROCESSING: Genesis 22 ---
+2025-09-27 22:02:22,801 - DEBUG - Starting new HTTPS connection (1): www.sefaria.org:443
+2025-09-27 22:02:23,144 - DEBUG - https://www.sefaria.org:443 "GET /api/texts/Genesis.22 HTTP/1.1" 200 None
+2025-09-27 22:02:23,195 - INFO - Processing 1 problematic verses from Genesis 22
+2025-09-27 22:02:23,196 - INFO - Worker 1: Processing Genesis 22:8
+2025-09-27 22:02:51,645 - WARNING - Attempt 1 failed: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+2025-09-27 22:03:10,248 - WARNING - Attempt 2 failed: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+2025-09-27 22:03:30,909 - WARNING - Attempt 3 failed: 500 An internal error has occurred. Please retry or report in https://developers.generativeai.google/guide/troubleshooting
+2025-09-27 22:03:30,910 - INFO - Primary model failed, trying fallback...
+2025-09-27 22:03:30,981 - WARNING - Attempt 1 failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-09-27 22:03:31,120 - WARNING - Attempt 2 failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-09-27 22:03:31,189 - WARNING - Attempt 3 failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-09-27 22:03:31,189 - INFO - Worker 1: Completed Genesis 22:8 - 0 instances
+2025-09-27 22:03:31,192 - INFO - Completed Genesis 22:8: Truncation=no, BothTruncated=no, Model=gemini-2.5-flash, Instances=0
+2025-09-27 22:03:31,199 - INFO - === TEST COMPLETE ===
+2025-09-27 22:03:31,199 - INFO - Tested 11 problematic verses
+2025-09-27 22:03:31,270 - DEBUG - close.started
+2025-09-27 22:03:31,271 - DEBUG - close.complete

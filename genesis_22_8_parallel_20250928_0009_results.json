@@ -1,0 +1,50 @@
+{
+  "processing_info": {
+    "book": "Genesis",
+    "chapters": [
+      22
+    ],
+    "verse_selection": [
+      8
+    ],
+    "max_workers": 1,
+    "timestamp": "2025-09-28T00:09:25.559731",
+    "total_verses": 1,
+    "total_instances": 1,
+    "processing_time_seconds": 96.11848735809326,
+    "avg_time_per_verse": 96.11848735809326
+  },
+  "usage_statistics": {
+    "total_requests": 1,
+    "primary_success": 0,
+    "content_restriction_fallbacks": 0,
+    "server_error_fallbacks": 0,
+    "total_fallbacks": 0,
+    "primary_success_rate": 0.0,
+    "content_restriction_rate": 0.0,
+    "server_error_fallback_rate": 0.0,
+    "total_fallback_rate": 0.0,
+    "total_input_tokens": 1358,
+    "total_output_tokens": 858,
+    "total_tokens": 2216,
+    "primary_model": "gemini-2.5-flash",
+    "fallback_model": "gemini-2.5-pro",
+    "restriction_reasons": [],
+    "Pro_Model_Fallbacks": 0,
+    "Pro_Fallback_Rate": 0.0,
+    "Claude_Fallbacks": 0,
+    "Claude_Fallback_Rate": 0.0,
+    "Claude_Usage": {
+      "total_requests": 0,
+      "successful_requests": 0,
+      "failed_requests": 0,
+      "total_input_tokens": 0,
+      "total_output_tokens": 0,
+      "total_tokens": 0
+    }
+  },
+  "validation_statistics": {
+    "total_validations": 1,
+    "total_type_validations": 0
+  }
+}
