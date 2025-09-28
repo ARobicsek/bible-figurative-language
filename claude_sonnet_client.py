@@ -9,14 +9,20 @@ import os
 import json
 import re
 import logging
-from typing import Dict, List, Optional, Tuple, Any
+from typing import Dict, List, Optional, Tuple, Any, Callable
 
 
 class ClaudeSonnetClient:
     """Claude Sonnet 4 client for figurative language analysis"""
 
-    def __init__(self, api_key: str = None, logger: logging.Logger = None):
-        """Initialize Claude Sonnet client"""
+    def __init__(self, api_key: str = None, logger: logging.Logger = None, prompt_generator: Callable = None):
+        """Initialize Claude Sonnet client
+
+        Args:
+            api_key: Anthropic API key
+            logger: Logger instance
+            prompt_generator: Function to generate prompts (should be the Gemini client's _create_flexible_tagging_prompt method)
+        """
         self.api_key = api_key or os.environ.get("ANTHROPIC_API_KEY")
         if not self.api_key:
             raise ValueError("ANTHROPIC_API_KEY not found in environment variables")
@@ -24,6 +30,7 @@ class ClaudeSonnetClient:
         self.client = anthropic.Anthropic(api_key=self.api_key)
         self.logger = logger or logging.getLogger(__name__)
         self.model_name = "claude-sonnet-4-20250514"
+        self.prompt_generator = prompt_generator  # Function to generate prompts from Gemini client
 
         # Usage tracking
         self.usage_stats = {
@@ -48,7 +55,11 @@ class ClaudeSonnetClient:
         Returns: (result_text, error, metadata)
         """
 
-        prompt = self._create_flexible_analysis_prompt(hebrew_text, english_text, book, chapter)
+        # Use the shared prompt generator if available, otherwise fall back to local method
+        if self.prompt_generator:
+            prompt = self.prompt_generator(hebrew_text, english_text, self._determine_text_context(book, chapter))
+        else:
+            prompt = self._create_flexible_analysis_prompt(hebrew_text, english_text, book, chapter)
 
         try:
             self.usage_stats["total_requests"] += 1
@@ -73,8 +84,8 @@ class ClaudeSonnetClient:
 
             self.usage_stats["successful_requests"] += 1
 
-            # Extract JSON and metadata from response
-            instances, deliberation, tagging_analysis = self._extract_json_and_metadata(response_text)
+            # Extract JSON and metadata from response using Gemini's parsing logic
+            instances, deliberation, tagging_analysis = self._parse_flexible_response(response_text)
 
             metadata = {
                 "flexible_instances": instances,
@@ -121,6 +132,31 @@ class ClaudeSonnetClient:
             }
 
             return "", error_msg, metadata
+
+    def _determine_text_context(self, book: str, chapter: int) -> str:
+        """Determine text context for context-aware analysis (matching Gemini implementation)"""
+        from hebrew_figurative_db.ai_analysis.gemini_api_multi_model import TextContext
+
+        # Same logic as in the Gemini client
+        book_lower = book.lower()
+
+        # Creation narratives
+        if book_lower == "genesis" and chapter == 1:
+            return TextContext.CREATION_NARRATIVE.value
+
+        # Poetic blessings
+        if (book_lower == "genesis" and chapter in [9, 27, 49]) or \
+           (book_lower == "deuteronomy" and chapter == 33):
+            return TextContext.POETIC_BLESSING.value
+
+        # Legal/ceremonial texts
+        if book_lower in ["leviticus", "numbers"] or \
+           (book_lower == "deuteronomy" and chapter in range(12, 27)) or \
+           (book_lower == "exodus" and chapter in range(20, 32)):
+            return TextContext.LEGAL_CEREMONIAL.value
+
+        # Default to narrative
+        return TextContext.NARRATIVE.value
 
     def _create_flexible_analysis_prompt(self, hebrew_text: str, english_text: str, book: str, chapter: int) -> str:
         """Create the analysis prompt for Claude Sonnet 4"""
@@ -175,99 +211,166 @@ Finally, provide a **JSON array** with this structure for each instance:
 
 Begin your analysis:"""
 
-    def _extract_json_and_metadata(self, response_text: str) -> Tuple[List[Dict], str, str]:
-        """Extract JSON instances and metadata from Claude's response"""
+    def _parse_flexible_response(self, response_text: str) -> Tuple[List[Dict], str, str]:
+        """Parse flexible tagging response format using Gemini's parsing logic"""
+        should_trigger_fallback = False
 
-        # Split response into sections
-        lines = response_text.split('\n')
+        if self.logger and self.logger.level <= logging.DEBUG:
+            self.logger.debug(f"🔍 PARSING DEBUG - Starting response parsing:")
+            self.logger.debug(f"  📏 Total response length: {len(response_text)}")
+            self.logger.debug(f"  📄 Response preview (first 200 chars): '{response_text[:200]}'")
+            self.logger.debug(f"  📄 Response ending (last 200 chars): '{response_text[-200:] if len(response_text) > 200 else response_text}'")
 
-        deliberation_lines = []
-        tagging_lines = []
-        json_started = False
-        json_lines = []
+        # Extract figurative detection deliberation (improved pattern matching)
+        figurative_detection = ""
+        detection_match = re.search(r'FIGURATIVE_DETECTION\s*:?\s*(.*?)(?=TAGGING_ANALYSIS|STRUCTURED JSON OUTPUT|JSON OUTPUT|\[|$)',
+                                   response_text, re.IGNORECASE | re.DOTALL)
+        if detection_match:
+            figurative_detection = detection_match.group(1).strip()
+            if self.logger and self.logger.level <= logging.DEBUG:
+                self.logger.debug(f"  📝 FIGURATIVE_DETECTION extracted: {len(figurative_detection)} chars")
+        else:
+            if self.logger and self.logger.level <= logging.DEBUG:
+                self.logger.debug(f"  ⚠️ No FIGURATIVE_DETECTION section found")
 
-        current_section = "deliberation"
-        bracket_count = 0
+        # Extract tagging analysis deliberation (improved pattern matching)
+        tagging_analysis = ""
+        tagging_match = re.search(r'TAGGING_ANALYSIS\s*:?\s*(.*?)(?=STRUCTURED JSON OUTPUT|JSON OUTPUT|\[|$)',
+                                 response_text, re.IGNORECASE | re.DOTALL)
+        if tagging_match:
+            tagging_analysis = tagging_match.group(1).strip()
+            if self.logger and self.logger.level <= logging.DEBUG:
+                self.logger.debug(f"  📝 TAGGING_ANALYSIS extracted: {len(tagging_analysis)} chars")
+        else:
+            if self.logger and self.logger.level <= logging.DEBUG:
+                self.logger.debug(f"  ⚠️ No TAGGING_ANALYSIS section found")
 
-        for line in lines:
-            line_stripped = line.strip()
-
-            # Look for section markers
-            if "hierarchical tagging" in line_stripped.lower() or "tagging analysis" in line_stripped.lower():
-                current_section = "tagging"
-                continue
-            elif line_stripped.startswith('[') or line_stripped.startswith('```json'):
-                current_section = "json"
-                json_started = True
-                if line_stripped.startswith('['):
-                    json_lines.append(line)
-                    # Count brackets for proper closure detection
-                    bracket_count += line_stripped.count('[') - line_stripped.count(']')
-                continue
-            elif line_stripped == '```' and json_started:
-                break
-
-            # Collect lines for each section
-            if current_section == "deliberation" and not json_started:
-                deliberation_lines.append(line)
-            elif current_section == "tagging" and not json_started:
-                tagging_lines.append(line)
-            elif current_section == "json" and json_started:
-                json_lines.append(line)
-                # Count brackets to detect proper closure
-                bracket_count += line.count('[') - line.count(']')
-                if bracket_count <= 0 and ']' in line:
-                    break
-
-        deliberation = '\n'.join(deliberation_lines).strip()
-        tagging_analysis = '\n'.join(tagging_lines).strip()
-        json_text = '\n'.join(json_lines).strip()
-
-        # Extract and parse JSON with robust handling
+        # Extract JSON using Gemini's parsing logic
         instances = []
-        if json_text:
-            try:
-                # Clean up JSON text
-                json_text = re.sub(r'^```json\s*', '', json_text)
-                json_text = re.sub(r'\s*```$', '', json_text)
-                json_text = json_text.strip()
+        json_string = ""
+        if self.logger and self.logger.level <= logging.DEBUG:
+            self.logger.debug(f"🔍 JSON EXTRACTION DEBUG:")
 
-                # Attempt to repair incomplete JSON
-                if json_text.startswith('[') and not json_text.endswith(']'):
-                    # Check if we have complete objects but missing closing bracket
-                    brace_count = json_text.count('{') - json_text.count('}')
-                    if brace_count == 0:  # All objects are complete
-                        json_text += '\n]'
-                        self.logger.info("Repaired incomplete JSON array by adding closing bracket")
-                    else:
-                        # Try to close incomplete objects
-                        json_text += '\n' + '  }' * brace_count + '\n]'
-                        self.logger.info(f"Repaired incomplete JSON by adding {brace_count} closing braces and array bracket")
+        try:
+            json_string = self._extract_json_array(response_text)
 
-                if json_text.startswith('['):
-                    instances = json.loads(json_text)
-                    self.logger.debug(f"Successfully parsed {len(instances)} instances from Claude Sonnet response")
-                else:
-                    self.logger.warning("JSON response does not have proper array format")
+            if self.logger and self.logger.level <= logging.DEBUG:
+                if json_string:
+                    self.logger.debug(f"  📄 JSON string extracted: {len(json_string)} chars")
+                    self.logger.debug(f"  📄 JSON preview: '{json_string[:200] if len(json_string) > 200 else json_string}'")
 
-            except json.JSONDecodeError as e:
-                self.logger.error(f"Failed to parse JSON from Claude Sonnet response: {e}")
-                self.logger.debug(f"Raw JSON text: {json_text}")
-
-                # Try aggressive repair approach
+            if json_string and json_string != "[]":
                 try:
-                    # Extract just the JSON content using regex
-                    json_match = re.search(r'\[\s*\{.*?\}\s*\]', response_text, re.DOTALL)
-                    if json_match:
-                        json_text = json_match.group(0)
-                        instances = json.loads(json_text)
-                        self.logger.info(f"Successfully repaired and parsed {len(instances)} instances using regex extraction")
+                    instances = json.loads(json_string)
+                    if self.logger:
+                        self.logger.info(f"  ✅ JSON parsing succeeded")
+                except json.JSONDecodeError as parse_error:
+                    if self.logger:
+                        self.logger.error(f"  ❌ JSON parsing failed: {parse_error}")
+                    # Try to fix common JSON issues
+                    fixed_json = self._fix_json_format(json_string)
+                    if fixed_json:
+                        try:
+                            instances = json.loads(fixed_json)
+                            if self.logger:
+                                self.logger.info("  ✅ JSON parsing succeeded after format repair")
+                        except json.JSONDecodeError:
+                            instances = []
                     else:
-                        self.logger.warning("Could not extract valid JSON array from response")
-                except:
-                    self.logger.error("All JSON repair attempts failed")
+                        instances = []
+            else:
+                instances = []
 
-        return instances, deliberation, tagging_analysis
+        except Exception as e:
+            if self.logger:
+                self.logger.error(f"Unexpected error parsing flexible response: {e}")
+            instances = []
+
+        return instances, figurative_detection, tagging_analysis
+
+    def _extract_json_array(self, response_text: str) -> str:
+        """Extract JSON array using robust logic adapted from Gemini system"""
+
+        if self.logger:
+            self.logger.info(f"    🔍 JSON Array Extraction:")
+
+        # First try to find complete JSON array with proper bracket matching
+        json_match = re.search(r'\[.*?\]', response_text, re.DOTALL)
+        if json_match:
+            json_str = json_match.group(0).strip()
+            if self.logger:
+                self.logger.info(f"      📄 Found JSON-like array: {len(json_str)} chars")
+            # Validate this looks like proper JSON with objects
+            if '{' in json_str and '}' in json_str:
+                if self.logger:
+                    self.logger.info(f"      ✅ Array contains objects - using this match")
+                return json_str
+
+        # Use sophisticated bracket matching for standalone arrays
+        start_bracket = response_text.find('[')
+        if start_bracket != -1:
+            bracket_count = 0
+            in_string = False
+            escape_next = False
+            end_pos = len(response_text)
+
+            for i in range(start_bracket, len(response_text)):
+                char = response_text[i]
+
+                if escape_next:
+                    escape_next = False
+                    continue
+
+                if char == '\\' and in_string:
+                    escape_next = True
+                    continue
+
+                if char == '"' and not escape_next:
+                    in_string = not in_string
+                    continue
+
+                if not in_string:
+                    if char == '[':
+                        bracket_count += 1
+                    elif char == ']':
+                        bracket_count -= 1
+                        if bracket_count == 0:
+                            end_pos = i + 1
+                            break
+
+            candidate_json = response_text[start_bracket:end_pos]
+
+            # Verify this contains objects
+            if '{' in candidate_json and '}' in candidate_json:
+                if self.logger:
+                    self.logger.info(f"      ✅ Bracket-matched array contains objects")
+                return candidate_json.strip()
+
+        # Check if empty array is indicated
+        if '[]' in response_text or 'no figurative language found' in response_text.lower():
+            if self.logger:
+                self.logger.info(f"      📄 Empty array pattern detected")
+            return "[]"
+
+        if self.logger:
+            self.logger.warning(f"      ❌ No valid JSON array found - returning empty")
+        return "[]"
+
+    def _fix_json_format(self, json_str: str) -> str:
+        """Attempt to fix common JSON formatting issues"""
+        try:
+            # Remove any trailing commas before closing brackets/braces
+            json_str = re.sub(r',\s*}', '}', json_str)
+            json_str = re.sub(r',\s*]', ']', json_str)
+
+            # Fix missing quotes around field names
+            json_str = re.sub(r'(\w+):', r'"\1":', json_str)
+
+            # Try to parse again
+            json.loads(json_str)
+            return json_str
+        except:
+            return None
 
     def get_usage_stats(self) -> Dict[str, Any]:
         """Get usage statistics"""
