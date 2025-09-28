@@ -49,6 +49,7 @@ class DatabaseManager:
                 hebrew_text_stripped TEXT,
                 hebrew_text_non_sacred TEXT,  -- Hebrew text with divine names modified for traditional Jews
                 english_text TEXT NOT NULL,
+                english_text_non_sacred TEXT,  -- English text with Hebrew divine names modified for traditional Jews
                 word_count INTEGER,
                 llm_restriction_error TEXT,
                 figurative_detection_deliberation TEXT,  -- LLM reasoning about figurative language detection for this verse
@@ -150,8 +151,8 @@ class DatabaseManager:
     def insert_verse(self, verse_data: Dict) -> int:
         """Insert verse and return verse_id"""
         self.cursor.execute('''
-            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, hebrew_text_non_sacred, english_text, word_count, llm_restriction_error, figurative_detection_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred, both_models_truncated, model_used)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, hebrew_text_non_sacred, english_text, english_text_non_sacred, word_count, llm_restriction_error, figurative_detection_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred, both_models_truncated, model_used)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_data['reference'],
             verse_data['book'],
@@ -161,6 +162,7 @@ class DatabaseManager:
             verse_data.get('hebrew_stripped'),
             verse_data.get('hebrew_text_non_sacred'),
             verse_data['english'],
+            verse_data.get('english_text_non_sacred'),
             verse_data['word_count'],
             verse_data.get('llm_restriction_error'),
             verse_data.get('figurative_detection_deliberation'),
@@ -344,19 +346,23 @@ class DatabaseManager:
                     verse_data['verse'],
                     verse_data['hebrew'],
                     verse_data.get('hebrew_stripped'),
+                    verse_data.get('hebrew_text_non_sacred'),
                     verse_data['english'],
+                    verse_data.get('english_text_non_sacred'),
                     verse_data['word_count'],
                     verse_data.get('llm_restriction_error'),
                     verse_data.get('figurative_detection_deliberation'),
                     verse_data.get('instances_detected'),
                     verse_data.get('instances_recovered'),
                     verse_data.get('instances_lost_to_truncation'),
-                    verse_data.get('truncation_occurred', 'no')
+                    verse_data.get('truncation_occurred', 'no'),
+                    verse_data.get('both_models_truncated', 'no'),
+                    verse_data.get('model_used', 'gemini-2.5-flash')
                 ))
 
             self.cursor.executemany('''
-                INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, english_text, word_count, llm_restriction_error, figurative_detection_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, hebrew_text_non_sacred, english_text, english_text_non_sacred, word_count, llm_restriction_error, figurative_detection_deliberation, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred, both_models_truncated, model_used)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', verse_tuples)
 
             # Get the IDs of inserted verses

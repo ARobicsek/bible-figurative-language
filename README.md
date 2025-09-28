@@ -69,7 +69,7 @@ This builds upon our advanced multi-type classification system that allows phras
 - **Server Error Handling**: Exponential backoff and intelligent fallback for persistent API issues
 - **Perfect Integration**: Full validation pipeline compatibility with all three models and parallel architecture
 - **🔧 Hardcoded Fallback Fix**: Resolved deprecated model references ensuring reliable fallback processing
-- **🕊️ Hebrew Divine Names Modifier**: Automatic generation of non-sacred Hebrew text for traditional Jewish use
+- **🕊️ Hebrew Divine Names Modifier**: Automatic generation of non-sacred Hebrew and English text for traditional Jewish use
 
 ### **🕊️ Hebrew Divine Names Modifier (Sept 28, 2025)**
 Production-ready system for creating non-sacred versions of Hebrew text following traditional Jewish requirements:
@@ -81,16 +81,24 @@ Production-ready system for creating non-sacred versions of Hebrew text followin
 - **Tzevaot**: `צְבָאוֹת` → `צְבָקוֹת` (replace א with ק)
 - **El Shaddai**: `שַׁדַּי` → `שַׁקַּי` (replace ד with ק)
 
+**🆕 English Text Support (Sept 28, 2025):**
+- **Dual-Language Processing**: Modifies Hebrew divine names in both Hebrew and English text
+- **Mixed-Language Support**: Handles English translations containing Hebrew terms
+- **Example**: "In the beginning אלהים created" → "In the beginning אלקים created"
+- **Intelligent Detection**: Only modifies Hebrew divine names, preserves all English content
+
 **Technical Capabilities:**
 - **Robust Pattern Matching**: Handles all vowel markings and cantillation marks
 - **Context-Aware**: Distinguishes divine names from similar words (e.g., אֵל vs אֶל)
 - **Complete Unicode Support**: Works with any Hebrew manuscript tradition
-- **Database Integration**: Stores both original and non-sacred versions
+- **Dual-Language Integration**: Processes both Hebrew and English text seamlessly
+- **Database Integration**: Stores both original and non-sacred versions for both languages
 - **Zero Performance Impact**: Integrated into parallel processing pipeline
 
 **Database Fields Added:**
-- `hebrew_text_non_sacred` (verse-level)
-- `figurative_text_in_hebrew_non_sacred` (instance-level)
+- `hebrew_text_non_sacred` (verse-level Hebrew)
+- `english_text_non_sacred` (verse-level English)
+- `figurative_text_in_hebrew_non_sacred` (instance-level Hebrew)
 
 ## 🎯 Current Status
 ✅ **Phase 1: Data Preprocessing Complete** - Ready for visualization development
@@ -252,6 +260,7 @@ CREATE TABLE verses (
     hebrew_text_stripped TEXT,
     hebrew_text_non_sacred TEXT,                       -- Hebrew text with divine names modified for traditional Jews
     english_text TEXT NOT NULL,
+    english_text_non_sacred TEXT,                      -- English text with Hebrew divine names modified for traditional Jews
     word_count INTEGER,
     llm_restriction_error TEXT,                    -- API errors for this verse
     figurative_detection_deliberation TEXT,       -- LLM reasoning for ALL verses
@@ -347,7 +356,7 @@ CREATE TABLE figurative_language (
 - **📊 Per-Type Validation**: Independent validation decisions and reasoning for each figurative type
 - **🚨 Comprehensive Error Tracking**: Complete logging of API errors, restrictions, and truncation recovery
 - **🆕 Dual-Model Failure Tracking**: New `both_models_truncated` field identifies extremely complex verses that challenge both Flash and Pro models
-- **🕊️ Hebrew Divine Names Modifier**: Automatic generation of non-sacred Hebrew text fields for traditional Jewish scholarly use
+- **🕊️ Hebrew Divine Names Modifier**: Automatic generation of non-sacred Hebrew and English text fields for traditional Jewish scholarly use
 
 ### Key Architecture Benefits:
 - **Model Performance Analysis**: Compare detection quality between Flash and Pro models
