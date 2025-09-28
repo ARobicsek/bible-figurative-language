@@ -456,6 +456,37 @@ CREATE TABLE figurative_language (
 - other
 
 Example: "Judah is a lion" → TARGET: target_level_1 = "Specific person", target_specific = "Judah"; VEHICLE: vehicle_level_1="natural world", vehicle_specific ="lion"; GROUND: ground_level_1="physical quality", ground_specific="strength"
+## 🌐 **NEW: Interactive HTML Interface (Sept 28, 2025)**
+
+### ✅ **Production-Ready Web Interface**
+A comprehensive HTML-based interface for exploring and analyzing your biblical figurative language database with advanced filtering, search, and visualization capabilities.
+
+**🎯 Key Features Implemented:**
+- **📖 Dual-Column Display**: Hebrew (RTL) and English text side-by-side with proper Unicode support
+- **🕊️ Sacred/Non-Sacred Toggle**: Switch between original and traditional Jewish text versions for both Hebrew and English
+- **🎨 Color-Coded Annotations**: 7 distinct colors for figurative language types with horizontal underlines
+- **🔍 Advanced Search & Filtering**: Multi-field search with Hebrew text, Target/Vehicle/Ground/Posture metadata
+- **📱 Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **⚡ Real-Time Data**: Live connection to your SQLite database with pagination support
+- **🔗 Interactive Details**: Click verses for AI deliberations, click annotations for detailed analysis
+
+**📁 Interface Files:**
+- `biblical_figurative_interface.html` - Complete frontend interface
+- `api_server.py` - Flask backend with full database integration
+- `interface_requirements.txt` - Python dependencies
+- `INTERFACE_SETUP.md` - Comprehensive setup and usage guide
+
+**🚀 Quick Start:**
+```bash
+pip install -r interface_requirements.txt
+python api_server.py
+# Open http://localhost:5000 in browser
+```
+
+**🎉 Current Status:** **FULLY OPERATIONAL** - Ready for scholarly research and exploration
+
+---
+
 ## 📊 Interactive Sankey Visualization System
 
 ### Overview
@@ -470,7 +501,7 @@ We are developing a cutting-edge interactive Sankey diagram to visualize the flo
 🔍 **Advanced Filtering**: By figurative type, confidence score, chapters, and custom criteria
 
 ### Current Dataset
-- **950 validated figurative language instances** from Deuteronomy
+- **592 validated figurative language instances** from Leviticus & Numbers
 - **Multi-type classification** (metaphor, simile, personification, idiom, hyperbole, metonymy)
 - **Complete validation pipeline** with LLM deliberation and confidence scoring
 - **Rich metadata** including Hebrew text, English translation, and scholarly analysis
