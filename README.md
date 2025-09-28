@@ -69,6 +69,28 @@ This builds upon our advanced multi-type classification system that allows phras
 - **Server Error Handling**: Exponential backoff and intelligent fallback for persistent API issues
 - **Perfect Integration**: Full validation pipeline compatibility with all three models and parallel architecture
 - **🔧 Hardcoded Fallback Fix**: Resolved deprecated model references ensuring reliable fallback processing
+- **🕊️ Hebrew Divine Names Modifier**: Automatic generation of non-sacred Hebrew text for traditional Jewish use
+
+### **🕊️ Hebrew Divine Names Modifier (Sept 28, 2025)**
+Production-ready system for creating non-sacred versions of Hebrew text following traditional Jewish requirements:
+
+**Supported Divine Name Transformations:**
+- **Tetragrammaton**: `יהוה` → `ה׳` (complete replacement with Heh + geresh)
+- **Elohim Family**: Replace `ה` with `ק` in `אֱלֹהִים`, `אֱלֹהֶיךָ`, etc.
+- **El with Tzere**: `אֵל` → `קֵל` (divine name only, NOT preposition `אֶל`)
+- **Tzevaot**: `צְבָאוֹת` → `צְבָקוֹת` (replace א with ק)
+- **El Shaddai**: `שַׁדַּי` → `שַׁקַּי` (replace ד with ק)
+
+**Technical Capabilities:**
+- **Robust Pattern Matching**: Handles all vowel markings and cantillation marks
+- **Context-Aware**: Distinguishes divine names from similar words (e.g., אֵל vs אֶל)
+- **Complete Unicode Support**: Works with any Hebrew manuscript tradition
+- **Database Integration**: Stores both original and non-sacred versions
+- **Zero Performance Impact**: Integrated into parallel processing pipeline
+
+**Database Fields Added:**
+- `hebrew_text_non_sacred` (verse-level)
+- `figurative_text_in_hebrew_non_sacred` (instance-level)
 
 ## 🎯 Current Status
 ✅ **Phase 1: Data Preprocessing Complete** - Ready for visualization development
@@ -80,6 +102,7 @@ This builds upon our advanced multi-type classification system that allows phras
 ✅ **Intelligent Reclassification**: Validator can correct misclassifications (e.g., metaphor → simile)
 ✅ **Dual-Field Architecture**: Separate tracking of initial detection vs. final validated results
 ✅ **Complete Audit Trail**: Every detection and validation decision logged with reasoning
+✅ **🕊️ Hebrew Divine Names Modifier**: Production-ready system for traditional Jewish non-sacred text generation
 ✅ **Deliberation Capture**: LLM explains what it considered and why for each verse
 ✅ **Validation Transparency**: Clear distinction between detection, reclassification, and rejection
 ✅ **Advanced Server Error Recovery**: Exponential backoff for 500 errors with 30-second timeout fallback
@@ -214,8 +237,8 @@ Root Directory:
 ├── .env                                # ⭐ NEW: Secure file for API key (add to .gitignore)
 ├── requirements.txt                    # Project dependencies (ensure python-dotenv is listed)
 └── ...
-🛠️ Production-Ready Database Schema (v4.1)
-Advanced dual-system schema with intelligent model tracking and truncation recovery support.
+🛠️ Production-Ready Database Schema (v4.2)
+Advanced dual-system schema with intelligent model tracking, truncation recovery, and Hebrew divine names modification support.
 
 ```sql
 -- Verses table - stores ALL processed verses with complete research transparency
@@ -227,6 +250,7 @@ CREATE TABLE verses (
     verse INTEGER NOT NULL,
     hebrew_text TEXT NOT NULL,
     hebrew_text_stripped TEXT,
+    hebrew_text_non_sacred TEXT,                       -- Hebrew text with divine names modified for traditional Jews
     english_text TEXT NOT NULL,
     word_count INTEGER,
     llm_restriction_error TEXT,                    -- API errors for this verse
@@ -282,6 +306,7 @@ CREATE TABLE figurative_language (
     figurative_text TEXT,
     figurative_text_in_hebrew TEXT,
     figurative_text_in_hebrew_stripped TEXT,
+    figurative_text_in_hebrew_non_sacred TEXT,         -- Hebrew figurative text with divine names modified
     explanation TEXT,
     speaker TEXT,
     purpose TEXT,
@@ -311,7 +336,7 @@ CREATE TABLE figurative_language (
 );
 ```
 
-## 📊 Production-Ready Data Architecture (v4.1 - Enhanced Sept 26, 2025)
+## 📊 Production-Ready Data Architecture (v4.2 - Enhanced Sept 28, 2025)
 - **🤖 Intelligent Model Tracking**: Every instance records which AI model (`gemini-2.5-flash`, `gemini-2.5-pro`) processed it
 - **🔍 Complete Research Transparency**: `figurative_detection_deliberation` stored for ALL verses, not just figurative ones
 - **🏷️ Dual Classification Systems**: Original categorical + flexible hierarchical JSON arrays
@@ -322,6 +347,7 @@ CREATE TABLE figurative_language (
 - **📊 Per-Type Validation**: Independent validation decisions and reasoning for each figurative type
 - **🚨 Comprehensive Error Tracking**: Complete logging of API errors, restrictions, and truncation recovery
 - **🆕 Dual-Model Failure Tracking**: New `both_models_truncated` field identifies extremely complex verses that challenge both Flash and Pro models
+- **🕊️ Hebrew Divine Names Modifier**: Automatic generation of non-sacred Hebrew text fields for traditional Jewish scholarly use
 
 ### Key Architecture Benefits:
 - **Model Performance Analysis**: Compare detection quality between Flash and Pro models

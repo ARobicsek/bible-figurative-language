@@ -21,6 +21,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 from hebrew_figurative_db.text_extraction.sefaria_client import SefariaClient
 from hebrew_figurative_db.database.db_manager import DatabaseManager
 from hebrew_figurative_db.text_extraction.hebrew_utils import HebrewTextProcessor
+from hebrew_figurative_db.text_extraction.hebrew_divine_names_modifier import HebrewDivineNamesModifier
 from hebrew_figurative_db.ai_analysis.metaphor_validator import MetaphorValidator
 
 # Import our flexible tagging client
@@ -194,7 +195,7 @@ def get_user_selection():
         'enable_debug': enable_debug
     }
 
-def process_single_verse(verse_data, book_name, chapter, flexible_client, validator, logger, worker_id):
+def process_single_verse(verse_data, book_name, chapter, flexible_client, validator, divine_names_modifier, logger, worker_id):
     """Process a single verse for parallel execution"""
     try:
         verse_ref = verse_data['reference']
@@ -258,6 +259,7 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
 
         # Prepare verse data
         hebrew_stripped = HebrewTextProcessor.strip_diacritics(heb_verse)
+        hebrew_non_sacred = divine_names_modifier.modify_divine_names(heb_verse)
         instances_count = len(metadata.get('flexible_instances', []))
         figurative_detection = metadata.get('figurative_detection_deliberation', '')
 
@@ -275,6 +277,7 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
             'verse': int(verse_ref.split(':')[1]),
             'hebrew': heb_verse,
             'hebrew_stripped': hebrew_stripped,
+            'hebrew_text_non_sacred': hebrew_non_sacred,
             'english': eng_verse,
             'word_count': len(heb_verse.split()),
             'llm_restriction_error': error,
@@ -302,7 +305,7 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
             logger.error(error_msg)
         return None, error_msg
 
-def process_verses_parallel(verses_to_process, book_name, chapter, flexible_client, validator, db_manager, logger, max_workers):
+def process_verses_parallel(verses_to_process, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers):
     """Process verses in parallel and store results"""
 
     logger.info(f"Starting parallel processing: {len(verses_to_process)} verses with {max_workers} workers")
@@ -319,7 +322,7 @@ def process_verses_parallel(verses_to_process, book_name, chapter, flexible_clie
             worker_id = (i % max_workers) + 1
             future = executor.submit(
                 process_single_verse, verse_data, book_name, chapter,
-                flexible_client, validator, logger, worker_id
+                flexible_client, validator, divine_names_modifier, logger, worker_id
             )
             future_to_verse[future] = verse_data
 
@@ -395,6 +398,7 @@ def process_verses_parallel(verses_to_process, book_name, chapter, flexible_clie
                     'figurative_text': instance_data.get('english_text', ''),
                     'figurative_text_in_hebrew': instance_data.get('hebrew_text', ''),
                     'figurative_text_in_hebrew_stripped': HebrewTextProcessor.strip_diacritics(instance_data.get('hebrew_text', '')),
+                    'figurative_text_in_hebrew_non_sacred': divine_names_modifier.modify_divine_names(instance_data.get('hebrew_text', '')),
                     'explanation': instance_data.get('explanation', ''),
                     'speaker': instance_data.get('speaker', ''),
                     'purpose': instance_data.get('purpose', ''),
@@ -543,6 +547,9 @@ def main():
         logger.info("Initializing Flexible Tagging Gemini Client...")
         flexible_client = FlexibleTaggingGeminiClient(api_key, validator=validator, logger=logger, db_manager=db_manager)
 
+        logger.info("Initializing Hebrew Divine Names Modifier...")
+        divine_names_modifier = HebrewDivineNamesModifier(logger=logger)
+
         total_verses, total_instances, total_errors = 0, 0, 0
         all_results = []
 
@@ -565,7 +572,7 @@ def main():
 
             # Process verses in parallel
             v, i, processing_time, total_attempted = process_verses_parallel(
-                verses_to_process, book_name, chapter, flexible_client, validator, db_manager, logger, max_workers
+                verses_to_process, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers
             )
 
             total_verses += v
