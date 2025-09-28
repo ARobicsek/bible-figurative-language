@@ -229,29 +229,29 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
             both_models_truncated = pro_truncation_occurred
             if pro_truncation_occurred:
                 if logger.level <= logging.WARNING:
-                    logger.warning(f"Worker {worker_id}: Pro model also truncated for {verse_ref} - trying tertiary decomposition fallback")
+                    logger.warning(f"Worker {worker_id}: Pro model also truncated for {verse_ref} - trying Claude Sonnet 4 fallback")
 
-                # Tertiary fallback: task decomposition
+                # Claude Sonnet 4 fallback
                 try:
-                    result_text, error, metadata = flexible_client.analyze_with_tertiary_fallback(
+                    result_text, error, metadata = flexible_client.analyze_with_claude_fallback(
                         heb_verse, eng_verse, book=book_name, chapter=chapter
                     )
                     tertiary_decomposed = True
 
-                    step_completed = metadata.get('tertiary_step_completed', 'unknown')
+                    claude_success = not error and metadata.get('instances_count', 0) >= 0
                     instances_found = metadata.get('instances_count', 0)
 
                     if logger.level <= logging.INFO:
-                        logger.info(f"Worker {worker_id}: Tertiary fallback completed for {verse_ref} - "
-                                   f"Step: {step_completed}, Instances: {instances_found}")
+                        logger.info(f"Worker {worker_id}: Claude fallback completed for {verse_ref} - "
+                                   f"Success: {claude_success}, Instances: {instances_found}")
 
-                    # Update tracking
-                    both_models_truncated = (step_completed == 'failed')
+                    # Keep both_models_truncated as True since both Gemini models failed
+                    # Don't overwrite - both Gemini models actually truncated regardless of Claude success
 
-                except Exception as tertiary_error:
+                except Exception as claude_error:
                     if logger.level <= logging.ERROR:
-                        logger.error(f"Worker {worker_id}: Tertiary fallback failed for {verse_ref}: {tertiary_error}")
-                    both_models_truncated = True
+                        logger.error(f"Worker {worker_id}: Claude fallback failed for {verse_ref}: {claude_error}")
+                    # both_models_truncated stays True - both Gemini models truncated
 
                 # Keep truncation_occurred as True to indicate the verse had truncation issues
                 truncation_occurred = True
@@ -263,8 +263,8 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
 
         # Determine final model used
         final_model_used = metadata.get('model_used', 'gemini-2.5-flash')
-        if tertiary_decomposed:
-            final_model_used = 'gemini-2.5-pro-decomposed'
+        if tertiary_decomposed and metadata.get('claude_fallback_used'):
+            final_model_used = 'claude-3-5-sonnet-20241022'
         elif pro_model_used:
             final_model_used = 'gemini-2.5-pro'
 

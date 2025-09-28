@@ -37,7 +37,7 @@ class FinishReason(Enum):
 
 
 PRIMARY_MODEL = 'gemini-2.5-flash'
-FALLBACK_MODEL = 'gemini-1.5-flash-latest'
+FALLBACK_MODEL = 'gemini-2.5-pro'
 
 
 class MultiModelGeminiClient:
