@@ -34,116 +34,234 @@ def setup_logging(log_file):
     )
     return logging.getLogger(__name__)
 
-def parse_verse_selection(input_str, max_verses):
-    """Parse user input for verse selection (e.g., '5', '10-15', 'all')."""
+def parse_selection(input_str, max_value, selection_type="item"):
+    """Parse user input for flexible selection (e.g., '5', '10-15', '1,3,5-7', 'all')."""
     input_str = input_str.strip().lower()
     if input_str == 'all':
-        return list(range(1, max_verses + 1))
+        return list(range(1, max_value + 1))
 
-    # Range of verses (e.g., 10-15)
-    range_match = re.match(r'^(\d+)-(\d+)$', input_str)
-    if range_match:
-        start = int(range_match.group(1))
-        end = int(range_match.group(2))
-        if 1 <= start <= end <= max_verses:
-            return list(range(start, end + 1))
+    selected = set()
 
-    # Single verse
-    if input_str.isdigit():
-        verse = int(input_str)
-        if 1 <= verse <= max_verses:
-            return [verse]
+    # Split by commas for multiple selections
+    parts = [part.strip() for part in input_str.split(',')]
 
-    return None # Invalid input
+    for part in parts:
+        if not part:
+            continue
+
+        # Range (e.g., 10-15)
+        range_match = re.match(r'^(\d+)-(\d+)$', part)
+        if range_match:
+            start = int(range_match.group(1))
+            end = int(range_match.group(2))
+            if 1 <= start <= end <= max_value:
+                selected.update(range(start, end + 1))
+            else:
+                print(f"Invalid range {part}: must be between 1 and {max_value}")
+                return None
+        # Single number
+        elif part.isdigit():
+            num = int(part)
+            if 1 <= num <= max_value:
+                selected.add(num)
+            else:
+                print(f"Invalid {selection_type} {num}: must be between 1 and {max_value}")
+                return None
+        else:
+            print(f"Invalid format: {part}")
+            return None
+
+    return sorted(list(selected)) if selected else None
 
 def get_user_selection():
-    """Get book, chapter, and verse selection from user"""
+    """Get flexible book, chapter, and verse selection from user"""
     books = {
         "Genesis": 50, "Exodus": 40, "Leviticus": 27,
         "Numbers": 36, "Deuteronomy": 34
     }
 
     print("\n=== HEBREW FIGURATIVE LANGUAGE INTERACTIVE MULTI-MODEL PROCESSOR ===")
+    print("Enhanced version with flexible multi-book, multi-chapter, multi-verse selection")
     print("\nAvailable books:")
     for i, (book, chapters) in enumerate(books.items(), 1):
         print(f"  {i}. {book} ({chapters} chapters)")
 
     # Get book selection
+    selected_books = []
     while True:
         try:
-            choice = input(f"\nSelect book (1-{len(books)}) or type book name: ").strip()
-            if choice.isdigit():
-                choice_num = int(choice)
-                if 1 <= choice_num <= len(books):
-                    book_name = list(books.keys())[choice_num - 1]
-                    break
-            else:
-                matched_book = next((b for b in books if b.lower() == choice.lower()), None)
-                if matched_book:
-                    book_name = matched_book
-                    break
-                else:
-                    print("Invalid selection. Please try again.")
-        except (ValueError, KeyboardInterrupt):
-            print("\nExiting...")
-            return None, None, None, None
+            print("\nBook Selection Examples:")
+            print("  - Single: 'Genesis' or '1'")
+            print("  - Multiple: 'Genesis,Exodus' or '1,2'")
+            print("  - Range: '1-3' (Genesis through Leviticus)")
+            print("  - Mixed: '1,3,5' (Genesis, Leviticus, Deuteronomy)")
+            print("  - All: 'all'")
 
-    max_chapters = books[book_name]
-    print(f"\nSelected: {book_name} (1-{max_chapters} chapters available)")
+            choice = input(f"\nSelect books: ").strip()
 
-    # Get chapter selection
-    while True:
-        try:
-            chapter_input = input(f"Enter chapter number (1-{max_chapters}) or 'all' for all chapters: ").strip().lower()
-            if chapter_input == 'all':
-                chapters = list(range(1, max_chapters + 1))
+            if choice.lower() == 'all':
+                selected_books = list(books.keys())
                 break
-            elif chapter_input.isdigit():
-                chapter = int(chapter_input)
-                if 1 <= chapter <= max_chapters:
-                    chapters = [chapter]
-                    break
+
+            # Parse book selection
+            book_parts = [part.strip() for part in choice.split(',')]
+            temp_books = []
+
+            for part in book_parts:
+                if not part:
+                    continue
+
+                # Range of book numbers (e.g., 1-3)
+                range_match = re.match(r'^(\d+)-(\d+)$', part)
+                if range_match:
+                    start = int(range_match.group(1))
+                    end = int(range_match.group(2))
+                    if 1 <= start <= end <= len(books):
+                        book_list = list(books.keys())
+                        temp_books.extend(book_list[start-1:end])
+                    else:
+                        print(f"Invalid book range {part}: must be between 1 and {len(books)}")
+                        temp_books = []
+                        break
+                # Single book number
+                elif part.isdigit():
+                    book_num = int(part)
+                    if 1 <= book_num <= len(books):
+                        temp_books.append(list(books.keys())[book_num - 1])
+                    else:
+                        print(f"Invalid book number {book_num}: must be between 1 and {len(books)}")
+                        temp_books = []
+                        break
+                # Book name
                 else:
-                    print(f"Chapter must be between 1 and {max_chapters}")
+                    matched_book = next((b for b in books if b.lower() == part.lower()), None)
+                    if matched_book:
+                        temp_books.append(matched_book)
+                    else:
+                        print(f"Invalid book name: {part}")
+                        temp_books = []
+                        break
+
+            if temp_books:
+                # Remove duplicates and maintain order
+                seen = set()
+                selected_books = []
+                for book in temp_books:
+                    if book not in seen:
+                        selected_books.append(book)
+                        seen.add(book)
+                break
             else:
-                print("Invalid input. Enter a number or 'all'")
+                print("Please try again with valid book selection.")
+
         except (ValueError, KeyboardInterrupt):
             print("\nExiting...")
-            return None, None, None, None
+            return None
 
-    # Get verse selection if a single chapter was chosen
-    verse_selection = 'all'
-    verse_input_str = 'all'
-    if len(chapters) == 1:
-        chapter_num = chapters[0]
-        print(f"\nFetching verse count for {book_name} {chapter_num}...")
-        temp_sefaria = SefariaClient()
-        verses_data, _ = temp_sefaria.extract_hebrew_text(f"{book_name}.{chapter_num}")
-        max_verses = len(verses_data)
+    print(f"\nSelected books: {', '.join(selected_books)}")
 
-        if max_verses == 0:
-            print(f"Could not retrieve verses for {book_name} {chapter_num}. Exiting.")
-            return None, None, None, None
+    # Get chapter and verse selections for each book
+    book_selections = {}
 
+    for book_name in selected_books:
+        max_chapters = books[book_name]
+        print(f"\n--- {book_name} ({max_chapters} chapters available) ---")
+
+        # Get chapter selection for this book
         while True:
             try:
-                verse_input = input(f"Enter verse, range (e.g. 5-10), or 'all' for all {max_verses} verses: ").strip()
-                selected_verses = parse_verse_selection(verse_input, max_verses)
-                if selected_verses:
-                    verse_selection = selected_verses
-                    verse_input_str = verse_input.lower()
+                print("Chapter Selection Examples:")
+                print(f"  - Single: '5'")
+                print(f"  - Multiple: '1,3,7'")
+                print(f"  - Range: '5-10'")
+                print(f"  - Mixed: '1,3,5-7,10'")
+                print(f"  - All chapters: 'all'")
+                print(f"  - ALL CHAPTERS & VERSES: 'full' (processes entire book)")
+
+                chapter_input = input(f"Enter chapters for {book_name} (1-{max_chapters}): ").strip().lower()
+
+                if chapter_input == 'full':
+                    # Process entire book - all chapters, all verses
+                    print(f"Selected: FULL BOOK ({book_name} - all chapters, all verses)")
+                    print(f"  Will process all {max_chapters} chapters with all verses")
+
+                    # Use special marker 'ALL' to indicate full book processing
+                    book_selections[book_name] = 'FULL_BOOK'
+                    break
+
+                selected_chapters = parse_selection(chapter_input, max_chapters, "chapter")
+
+                if selected_chapters is not None:
                     break
                 else:
-                    print(f"Invalid input. Please enter a valid verse, range (1-{max_verses}), or 'all'.")
+                    print(f"Please enter valid chapters (1-{max_chapters})")
+
             except KeyboardInterrupt:
                 print("\nExiting...")
-                return None, None, None, None
+                return None
 
-    return book_name, chapters, verse_selection, verse_input_str
+        # Skip individual chapter processing if 'full' was selected
+        if chapter_input == 'full':
+            continue
+
+        print(f"Selected chapters for {book_name}: {selected_chapters}")
+
+        # Get verse selection for each chapter
+        chapter_verse_map = {}
+
+        # Ask if user wants all verses for all selected chapters
+        if len(selected_chapters) > 1:
+            all_verses_choice = input(f"\nProcess ALL verses for all {len(selected_chapters)} chapters? (y/n): ").strip().lower()
+            if all_verses_choice == 'y':
+                # Use special marker for all chapters/all verses
+                chapter_verse_map = {chapter: 'ALL_VERSES' for chapter in selected_chapters}
+                print(f"  Will process all verses for all {len(selected_chapters)} chapters")
+                book_selections[book_name] = chapter_verse_map
+                continue
+
+        for chapter in selected_chapters:
+            print(f"\n  Chapter {chapter}:")
+
+            # Fetch verse count for this chapter
+            print(f"    Fetching verse count for {book_name} {chapter}...")
+            temp_sefaria = SefariaClient()
+            verses_data, _ = temp_sefaria.extract_hebrew_text(f"{book_name}.{chapter}")
+            max_verses = len(verses_data)
+
+            if max_verses == 0:
+                print(f"    Could not retrieve verses for {book_name} {chapter}. Skipping.")
+                continue
+
+            while True:
+                try:
+                    print("    Verse Selection Examples:")
+                    print(f"      - Single: '5'")
+                    print(f"      - Multiple: '1,3,7'")
+                    print(f"      - Range: '5-10'")
+                    print(f"      - Mixed: '1,3,5-7,10'")
+                    print(f"      - All: 'all'")
+
+                    verse_input = input(f"    Enter verses for {book_name} {chapter} (1-{max_verses}): ").strip()
+                    selected_verses = parse_selection(verse_input, max_verses, "verse")
+
+                    if selected_verses is not None:
+                        chapter_verse_map[chapter] = selected_verses
+                        print(f"    Selected verses for {book_name} {chapter}: {selected_verses}")
+                        break
+                    else:
+                        print(f"    Please enter valid verses (1-{max_verses})")
+
+                except KeyboardInterrupt:
+                    print("\nExiting...")
+                    return None
+
+        book_selections[book_name] = chapter_verse_map
+
+    return book_selections
 
 
 def process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_api, db_manager, logger):
-    """Process a single chapter"""
+    """Process a single chapter with selected verses"""
     logger.info(f"--- Processing {book_name} {chapter} ---")
 
     logger.info(f"Fetching text for {book_name} {chapter}...")
@@ -155,12 +273,13 @@ def process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_ap
 
     logger.info(f"Retrieved {len(verses_data)} verses for {book_name} {chapter}")
 
-    # Filter verses based on user selection
-    if verse_selection != 'all':
-        verses_to_process = [v for v in verses_data if int(v['reference'].split(':')[1]) in verse_selection]
-        logger.info(f"Filtering to process {len(verses_to_process)} selected verse(s): {verse_selection}")
-    else:
+    # Handle verse selection
+    if verse_selection == 'ALL_VERSES':
         verses_to_process = verses_data
+        logger.info(f"Processing all {len(verses_to_process)} verses")
+    else:
+        verses_to_process = [v for v in verses_data if int(v['reference'].split(':')[1]) in verse_selection]
+        logger.info(f"Processing {len(verses_to_process)} selected verse(s): {verse_selection}")
 
     chapter_verses = 0
     chapter_instances = 0
@@ -283,36 +402,110 @@ def process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_ap
     logger.info(f"{book_name} {chapter} COMPLETED: {chapter_instances} figurative instances from {chapter_verses} verses")
     return chapter_verses, chapter_instances, chapter_errors
 
-def main():
-    dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-    was_loaded = load_dotenv(dotenv_path=dotenv_path)
-
-    book_name, chapters, verse_selection, verse_input_str = get_user_selection()
-    if not book_name:
-        return
-
-    # New filename generation
-    book_part = book_name.lower()
-    chapter_part = "all_c" if len(chapters) > 1 else str(chapters[0])
-    verse_part = "all_v" if verse_input_str == 'all' else verse_input_str
-
+def generate_filename_from_selections(book_selections):
+    """Generate filename from flexible book selections"""
     now = datetime.now()
     date_part = now.strftime("%Y%m%d")
     time_part = now.strftime("%H%M")
 
+    if len(book_selections) == 1:
+        # Single book
+        book_name = list(book_selections.keys())[0]
+        book_part = book_name.lower()
+
+        chapters = list(book_selections[book_name].keys())
+        if len(chapters) == 1:
+            chapter_part = str(chapters[0])
+            verses = book_selections[book_name][chapters[0]]
+            if len(verses) == 1:
+                verse_part = str(verses[0])
+            else:
+                verse_part = f"v{len(verses)}"
+        else:
+            chapter_part = f"c{len(chapters)}"
+            verse_part = "multi_v"
+    else:
+        # Multiple books
+        book_part = f"{len(book_selections)}books"
+        total_chapters = sum(len(chapters) for chapters in book_selections.values())
+        chapter_part = f"c{total_chapters}"
+        verse_part = "multi_v"
+
     base_filename = f"{book_part}_{chapter_part}_{verse_part}_{date_part}_{time_part}"
+    return base_filename
+
+def main():
+    dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+    was_loaded = load_dotenv(dotenv_path=dotenv_path)
+
+    book_selections = get_user_selection()
+    if not book_selections:
+        return
+
+    # Generate filename from selections
+    base_filename = generate_filename_from_selections(book_selections)
     log_file = f"{base_filename}_log.txt"
     db_name = f"{base_filename}.db"
 
-    print(f"\nProcessing {book_name}, chapter(s): {chapter_part}, verse(s): {verse_part}")
-    print(f"Output files will be based on: {base_filename}")
+    # Create summary of what will be processed
+    books = {
+        "Genesis": 50, "Exodus": 40, "Leviticus": 27,
+        "Numbers": 36, "Deuteronomy": 34
+    }
+
+    total_tasks = 0
+    summary_lines = []
+
+    for book_name, chapters in book_selections.items():
+        if chapters == 'FULL_BOOK':
+            # Estimate verses for full book (approximate)
+            verse_estimates = {
+                "Genesis": 1533, "Exodus": 1213, "Leviticus": 859,
+                "Numbers": 1288, "Deuteronomy": 959
+            }
+            estimated_verses = verse_estimates.get(book_name, 1000)  # Default estimate
+            total_tasks += estimated_verses
+            summary_lines.append(f"  {book_name}: FULL BOOK (~{estimated_verses} verses)")
+        else:
+            for chapter, verses in chapters.items():
+                if verses == 'ALL_VERSES':
+                    # Estimate verses per chapter (approximate)
+                    estimated_verses = 25  # Average verses per chapter
+                    total_tasks += estimated_verses
+                    summary_lines.append(f"  {book_name} {chapter}: all verses (~{estimated_verses})")
+                else:
+                    total_tasks += len(verses)
+                    summary_lines.append(f"  {book_name} {chapter}: verses {verses}")
+
+    print(f"\n=== PROCESSING SUMMARY ===")
+    print(f"Books: {len(book_selections)}")
+    print(f"Estimated verses to process: ~{total_tasks}")
+    for line in summary_lines[:10]:  # Show first 10 for brevity
+        print(line)
+    if len(summary_lines) > 10:
+        print(f"  ... and {len(summary_lines) - 10} more chapter/verse combinations")
+    print(f"\nOutput files: {base_filename}.*")
+    print(f"\nNote: This script uses single-threaded processing.")
+    print(f"For parallel processing with worker selection, use: interactive_parallel_processor.py")
+
+    proceed = input("\nProceed with processing? (y/n): ").strip().lower()
+    if proceed != 'y':
+        print("Processing cancelled.")
+        return
 
     logger = setup_logging(log_file)
     if was_loaded:
         logger.info(f"Successfully loaded environment variables from: {dotenv_path}")
     else:
         logger.warning(f"Warning: .env file not found at {dotenv_path}. Relying on system environment variables.")
-    logger.info(f"=== PROCESSING {book_name.upper()} CHAPTER(S) {chapters} WITH MULTI-MODEL API ===")
+
+    # Log processing summary
+    logger.info(f"=== MULTI-BOOK PROCESSING STARTED ===")
+    logger.info(f"Total books: {len(book_selections)}")
+    logger.info(f"Total verses: {total_tasks}")
+    for book_name, chapters in book_selections.items():
+        logger.info(f"Book: {book_name} - Chapters: {list(chapters.keys())}")
+
     start_time = time.time()
 
     try:
@@ -335,23 +528,46 @@ def main():
 
         total_verses, total_instances, total_errors = 0, 0, 0
 
-        for chapter in chapters:
-            v, i, e = process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_api, db_manager, logger)
-            total_verses += v
-            total_instances += i
-            total_errors += e
-            db_manager.conn.commit()
+        # Process each book, chapter, and verse selection
+        for book_name, chapters in book_selections.items():
+            logger.info(f"\n=== PROCESSING BOOK: {book_name.upper()} ===")
+
+            if chapters == 'FULL_BOOK':
+                # Process entire book - all chapters, all verses
+                books = {
+                    "Genesis": 50, "Exodus": 40, "Leviticus": 27,
+                    "Numbers": 36, "Deuteronomy": 34
+                }
+                max_chapters = books[book_name]
+                logger.info(f"Processing full book: all {max_chapters} chapters with all verses")
+
+                for chapter in range(1, max_chapters + 1):
+                    v, i, e = process_chapter(book_name, chapter, 'ALL_VERSES', sefaria, multi_model_api, db_manager, logger)
+                    total_verses += v
+                    total_instances += i
+                    total_errors += e
+                    db_manager.conn.commit()
+            else:
+                # Process specific chapters and verses
+                for chapter, verse_selection in chapters.items():
+                    v, i, e = process_chapter(book_name, chapter, verse_selection, sefaria, multi_model_api, db_manager, logger)
+                    total_verses += v
+                    total_instances += i
+                    total_errors += e
+                    db_manager.conn.commit()
 
         total_time = time.time() - start_time
         db_manager.close()
 
-        logger.info(f"\n=== {book_name.upper()} PROCESSING COMPLETE ===")
+        logger.info(f"\n=== MULTI-BOOK PROCESSING COMPLETE ===")
         logger.info(f"Database: {db_name}")
         logger.info(f"Log file: {log_file}")
+        logger.info(f"Books processed: {len(book_selections)}")
         logger.info(f"Total verses processed: {total_verses}")
         logger.info(f"Total figurative instances: {total_instances}")
         logger.info(f"Errors: {total_errors}")
         logger.info(f"Processing time: {total_time:.1f} seconds")
+        logger.info(f"Average time per verse: {total_time/total_verses:.2f} seconds")
 
         logger.info("\n--- Multi-Model API Usage Statistics ---")
         usage_stats = multi_model_api.get_usage_info()
@@ -360,6 +576,8 @@ def main():
 
         print(f"\n✅ Processing complete! See {log_file} for details.")
         print(f"📁 Database: {db_name}")
+        print(f"📊 Processed {total_verses} verses from {len(book_selections)} books")
+        print(f"⏱️  Total time: {total_time:.1f} seconds")
 
     except Exception as e:
         logger.error(f"CRITICAL FAILURE: {str(e)}")
