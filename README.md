@@ -10,11 +10,12 @@ A comprehensive production-ready system for detecting and analyzing figurative l
 - **📚 ULTRA-FAST 'FULL' MODE**: Process entire books with single command - no more tedious chapter-by-chapter selection
 - **🎯 INSTANT SELECTION**: Eliminated API delays during book/chapter/verse selection for immediate workflow
 - **🔧 CONFIGURABLE WORKERS**: User-selectable parallel worker count (1-12) for optimal performance tuning
+- **🔄 UNIFIED PROMPT SYSTEM**: All three AI models (Flash, Pro, Claude) now use identical comprehensive instructions for consistent analysis
 - **⚡ PARALLEL PROCESSING**: Successfully implemented configurable parallel processing with 5-8x performance improvement
-- **🚀 CLAUDE SONNET 4 UPGRADE**: Successfully integrated `claude-sonnet-4-20250514` as tertiary fallback model
+- **🚀 CLAUDE SONNET 4 UPGRADE**: Successfully integrated `claude-sonnet-4-20250514` as tertiary fallback model with shared prompts
 - **✅ COMPLETE VALIDATION PIPELINE**: End-to-end validation system working perfectly with all three AI models
 - **📊 DATABASE INTEGRITY**: Full audit trail from detection → validation → final classification for scholarly transparency
-- **Result**: **Revolutionary multi-book processing** with flexible selection and intelligent parallel architecture
+- **Result**: **Revolutionary multi-book processing** with unified AI architecture and intelligent parallel processing
 
 ### Latest Achievements
 
@@ -51,21 +52,24 @@ A comprehensive production-ready system for detecting and analyzing figurative l
 
 This builds upon our advanced multi-type classification system that allows phrases to be classified as multiple figurative language types simultaneously (e.g., both metaphor AND idiom), with intelligent reclassification capabilities and complete audit trails.
 
-## 🧠 Advanced Three-Tier AI Architecture with Parallel Processing
-### **Production-Ready Model Hierarchy**
+## 🧠 Advanced Three-Tier AI Architecture with Unified Prompts
+### **Production-Ready Model Hierarchy with Consistent Instructions**
 - **Primary Model**: Gemini 2.5 Flash (`gemini-2.5-flash`) - Fast, efficient for 85%+ of verses (15,000 tokens) ✅
 - **Secondary Fallback**: Gemini 2.5 Pro (`gemini-2.5-pro`) - High-capacity model for complex hierarchical analysis (30,000 tokens) ✅
 - **🚀 Tertiary Fallback**: Claude Sonnet 4 (`claude-sonnet-4-20250514`) - **LATEST MODEL** with enhanced reasoning for extremely complex verses (8,000 tokens) ✅
+- **🔄 Unified Instructions**: All three models now use identical comprehensive flexible tagging prompts for consistent analysis ✅
 - **Validation Model**: Gemini 2.5 Flash with automatic Pro fallback for complex validation ✅
 
 ### **Intelligent Three-Tier Processing Pipeline**
 1. **Flash Processing**: Handles standard complexity verses with fast turnaround and cost efficiency
 2. **Pro Escalation**: Automatic fallback when Flash truncates or hits token limits on complex verses
 3. **🚀 Claude Escalation**: Final fallback for extremely complex theological content requiring enhanced reasoning
-4. **Parallel Architecture**: 12-worker parallel processing with intelligent load balancing and error recovery
-5. **Complete Coverage**: Advanced fallback system ensures 100% verse coverage regardless of complexity
+4. **🔄 Unified Prompt System**: All three models now use the same comprehensive flexible tagging instructions for consistency
+5. **Parallel Architecture**: 12-worker parallel processing with intelligent load balancing and error recovery
+6. **Complete Coverage**: Advanced fallback system ensures 100% verse coverage regardless of complexity
 
 ### **Technical Features**
+- **🔄 Unified Prompt Architecture**: All three AI models (Flash, Pro, Claude) use identical comprehensive instructions for consistent analysis
 - **Parallel Processing**: 12-worker ThreadPoolExecutor with intelligent task distribution
 - **Model Usage Tracking**: Complete database logging of which AI model processed each instance
 - **Enhanced JSON Recovery**: Robust parsing with automatic repair for incomplete responses

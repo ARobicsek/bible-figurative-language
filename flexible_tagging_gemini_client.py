@@ -31,9 +31,13 @@ class FlexibleTaggingGeminiClient(MultiModelGeminiClient):
 
         # Initialize Claude Sonnet client for tertiary fallback
         try:
-            self.claude_client = ClaudeSonnetClient(logger=self.logger)
+            # Pass our prompt generator to Claude so it uses the same instructions
+            self.claude_client = ClaudeSonnetClient(
+                logger=self.logger,
+                prompt_generator=self._create_flexible_tagging_prompt
+            )
             if self.logger:
-                self.logger.info("Claude Sonnet 4 client initialized successfully")
+                self.logger.info("Claude Sonnet 4 client initialized successfully with shared prompt generator")
         except Exception as e:
             self.claude_client = None
             if self.logger:
@@ -95,13 +99,14 @@ English: {english_text}
 • Nature imagery for human qualities"""
 
         elif context == TextContext.LEGAL_CEREMONIAL.value:
-            context_rules = """⚖️ **LEGAL/CEREMONIAL TEXT - MODERATE CONSERVATIVE** ⚖️
+            context_rules = """⚖️ **LEGAL/CEREMONIAL/RITUAL TEXT - MODERATE CONSERVATIVE** ⚖️
 
 **NEVER MARK AS FIGURATIVE:**
 • Technical religious terms: holy, clean, offering, covenant
 • Procedural instructions and ritual descriptions
 • Legal formulations and standard phrases
 • Divine anthropomorphisms (e.g. God went, God was angry, God watched, God fought) - these are LITERAL in the ANE context unless they refer to God's body (God's finger).
+• Ritual procedural comparisons (e.g. כַּֽחַטָּאת֙ כָּֽאָשָׁ֔ם)
 
 **MARK AS FIGURATIVE:**
 • Clear cross-domain metaphors
