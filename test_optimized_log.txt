@@ -1,0 +1,99 @@
+2025-09-26 08:43:43,873 - INFO - Processing Deuteronomy 30:2
+2025-09-26 08:44:16,503 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:44:16,503 - INFO -       📄 Found JSON-like array: 619 chars
+2025-09-26 08:44:16,503 - INFO -       📄 Array content: '[
+  {
+    "figurative_language": "yes",
+    "simile": "no",
+    "metaphor": "no",
+    "personification": "no",
+    "idiom": "yes",
+    "hyperbole": "no",
+    "metonymy": "no",
+    "other": "no",
+    "hebrew_text": "וְשַׁבְתָּ֞ עַד־יְהֹוָ֤ה אֱלֹהֶ֙יךָ֙",
+    "english_text": "and you return to your God יהוה",
+    "explanation": "This phrase is an idiom for repentance and spiritual reorientation towards God, signifying renewed covenant loyalty rather than a literal physical return to a location.",
+    "target": [
+      "repentance",
+      "spiritual turning",
+      "religious action",
+      "covenant renewal"
+    ]'
+2025-09-26 08:44:16,504 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:44:16,504 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:44:16,504 - INFO -       📄 Attempting sophisticated bracket matching from position 2541
+2025-09-26 08:44:16,505 - INFO -       📄 Bracket matching found: 3193 chars
+2025-09-26 08:44:16,505 - INFO -       ✅ Bracket-matched array contains objects
+2025-09-26 08:44:16,505 - INFO - JSON extracted: 3193 chars
+2025-09-26 08:44:16,505 - INFO -   ✅ JSON parsing succeeded on first attempt
+2025-09-26 08:44:16,505 - INFO - Processing Deuteronomy 30:3
+2025-09-26 08:44:48,431 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:44:48,431 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:44:48,432 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:44:48,432 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:44:48,432 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:44:48,433 - INFO -       📄 Attempting sophisticated bracket matching from position 2301
+2025-09-26 08:44:48,433 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:44:48,433 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:44:48,433 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:44:48,433 - INFO - JSON extracted: 2 chars
+2025-09-26 08:44:48,433 - WARNING - Attempt 1 failed: name 'json_str' is not defined
+2025-09-26 08:45:24,665 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:45:24,665 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:45:24,665 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:45:24,665 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:45:24,666 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:45:24,666 - INFO -       📄 Attempting sophisticated bracket matching from position 1666
+2025-09-26 08:45:24,666 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:45:24,666 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:45:24,666 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:45:24,666 - INFO - JSON extracted: 2 chars
+2025-09-26 08:45:24,667 - WARNING - Attempt 2 failed: name 'json_str' is not defined
+2025-09-26 08:45:48,243 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:45:48,244 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:45:48,244 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:45:48,244 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:45:48,244 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:45:48,245 - INFO -       📄 Attempting sophisticated bracket matching from position 1952
+2025-09-26 08:45:48,245 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:45:48,245 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:45:48,245 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:45:48,245 - INFO - JSON extracted: 2 chars
+2025-09-26 08:45:48,246 - WARNING - Attempt 3 failed: name 'json_str' is not defined
+2025-09-26 08:45:48,246 - INFO - Processing Deuteronomy 30:4
+2025-09-26 08:46:13,884 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:46:13,885 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:46:13,885 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:46:13,885 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:46:13,886 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:46:13,886 - INFO -       📄 Attempting sophisticated bracket matching from position 1615
+2025-09-26 08:46:13,887 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:46:13,887 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:46:13,887 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:46:13,887 - INFO - JSON extracted: 2 chars
+2025-09-26 08:46:13,887 - WARNING - Attempt 1 failed: name 'json_str' is not defined
+2025-09-26 08:46:31,026 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:46:31,027 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:46:31,027 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:46:31,027 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:46:31,028 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:46:31,028 - INFO -       📄 Attempting sophisticated bracket matching from position 853
+2025-09-26 08:46:31,029 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:46:31,029 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:46:31,029 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:46:31,029 - INFO - JSON extracted: 2 chars
+2025-09-26 08:46:31,029 - WARNING - Attempt 2 failed: name 'json_str' is not defined
+2025-09-26 08:46:54,033 - INFO -     🔍 JSON Array Extraction:
+2025-09-26 08:46:54,034 - INFO -       📄 Found JSON-like array: 5 chars
+2025-09-26 08:46:54,034 - INFO -       📄 Array content: '[God]'
+2025-09-26 08:46:54,034 - INFO -       ⚠️ Array doesn't contain objects - continuing search
+2025-09-26 08:46:54,034 - INFO -       ⚠️ No JSON OUTPUT section found
+2025-09-26 08:46:54,034 - INFO -       📄 Attempting sophisticated bracket matching from position 1822
+2025-09-26 08:46:54,034 - INFO -       📄 Bracket matching found: 5 chars
+2025-09-26 08:46:54,035 - INFO -       ⚠️ Bracket-matched array doesn't contain objects
+2025-09-26 08:46:54,035 - WARNING -       ❌ No valid JSON array found - returning empty
+2025-09-26 08:46:54,035 - INFO - JSON extracted: 2 chars
+2025-09-26 08:46:54,035 - WARNING - Attempt 3 failed: name 'json_str' is not defined
+2025-09-26 08:46:54,055 - INFO - Batch inserted 3 verses
+2025-09-26 08:46:54,057 - INFO - Batch inserted 3 instances
