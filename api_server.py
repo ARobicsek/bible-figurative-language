@@ -143,6 +143,7 @@ def get_verses():
         chapters_str = request.args.get('chapters', '')
         verses_str = request.args.get('verses', '')
         figurative_types = request.args.get('figurative_types', '').split(',') if request.args.get('figurative_types') else []
+        show_not_figurative = request.args.get('show_not_figurative', 'false').lower() == 'true'
         search_hebrew = request.args.get('search_hebrew', '')
         search_english = request.args.get('search_english', '')
         search_target = request.args.get('search_target', '')
@@ -153,9 +154,9 @@ def get_verses():
         limit = int(request.args.get('limit', 50))
         offset = int(request.args.get('offset', 0))
 
-        # Build base query
+        # Build simple query with LEFT JOIN - keeps it consistent and working
         base_query = """
-        SELECT DISTINCT
+        SELECT
             v.id, v.reference, v.book, v.chapter, v.verse,
             v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
             v.english_text, v.english_text_non_sacred,
@@ -202,21 +203,34 @@ def get_verses():
                 conditions.append(f"v.verse IN ({placeholders})")
                 params.extend(verses)
 
-        # Hebrew text search
+        # Handle figurative language filtering
+        if show_not_figurative and (not figurative_types or figurative_types == ['']):
+            # Show only verses WITHOUT figurative language
+            conditions.append("fl.id IS NULL")
+        elif figurative_types and figurative_types != ['']:
+            if show_not_figurative:
+                # Show both figurative and non-figurative verses
+                # This means we don't add any fl-related restrictions
+                pass
+            else:
+                # Show only verses WITH specified figurative language types
+                figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                conditions.append(figurative_filter)
+                conditions.append("fl.id IS NOT NULL")  # Only verses with figurative language
+        elif not show_not_figurative:
+            # If no figurative types selected and not showing non-figurative, show nothing
+            # This will be handled by the frontend now
+            pass
+
+        # Text search conditions (applied AFTER figurative filtering)
+        # These should work regardless of figurative language filtering
         if search_hebrew:
             conditions.append("v.hebrew_text_stripped LIKE ?")
             params.append(f"%{search_hebrew}%")
 
-        # English text search
         if search_english:
             conditions.append("v.english_text LIKE ?")
             params.append(f"%{search_english}%")
-
-        # Figurative type filter (only show verses with figurative language if types specified)
-        if figurative_types and figurative_types != ['']:
-            figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
-            conditions.append(figurative_filter)
-            conditions.append("fl.id IS NOT NULL")  # Only verses with figurative language
 
         # Metadata search
         metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
@@ -230,6 +244,9 @@ def get_verses():
         # Add conditions to query
         if conditions:
             base_query += " AND " + " AND ".join(conditions)
+
+        # Add GROUP BY to handle potential duplicates from JOIN
+        base_query += " GROUP BY v.id"
 
         # Add ordering and pagination (order books biblically)
         base_query += """ ORDER BY
@@ -247,11 +264,17 @@ def get_verses():
         # Execute query
         verses = db_manager.execute_query(base_query, tuple(params))
 
-        # Get annotations for each verse
-        for verse in verses:
-            annotations_query = """
+        # Optimize annotation fetching - get all annotations in bulk rather than N+1 queries
+        verse_ids = [verse['id'] for verse in verses]
+        all_annotations = {}
+
+        # Only fetch annotations if we need them (not for non-figurative only queries)
+        if verse_ids and not (show_not_figurative and (not figurative_types or figurative_types == [''])):
+            # Build bulk annotation query
+            placeholders = ','.join(['?' for _ in verse_ids])
+            annotations_query = f"""
             SELECT
-                figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_non_sacred,
+                verse_id, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_non_sacred,
                 final_metaphor, final_simile, final_personification, final_idiom,
                 final_hyperbole, final_metonymy, final_other,
                 target, vehicle, ground, posture,
@@ -260,12 +283,12 @@ def get_verses():
                 validation_reason_idiom, validation_reason_hyperbole, validation_reason_metonymy,
                 validation_reason_other
             FROM figurative_language
-            WHERE verse_id = ?
+            WHERE verse_id IN ({placeholders})
             """
 
             # Apply figurative type filter to annotations if specified
-            if figurative_types and figurative_types != ['']:
-                # Note: no 'fl.' alias needed here since we're querying figurative_language directly
+            annotation_params = list(verse_ids)
+            if figurative_types and figurative_types != [''] and not show_not_figurative:
                 fig_conditions = []
                 for fig_type in figurative_types:
                     if fig_type in ['metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
@@ -274,7 +297,25 @@ def get_verses():
                 if fig_conditions:
                     annotations_query += f" AND ({' OR '.join(fig_conditions)})"
 
-            annotations = db_manager.execute_query(annotations_query, (verse['id'],))
+            bulk_annotations = db_manager.execute_query(annotations_query, tuple(annotation_params))
+
+            # Group annotations by verse_id
+            for annotation in bulk_annotations:
+                verse_id = annotation['verse_id']
+                if verse_id not in all_annotations:
+                    all_annotations[verse_id] = []
+                all_annotations[verse_id].append(annotation)
+
+        # Process verses and their annotations
+        for verse in verses:
+            verse_id = verse['id']
+
+            # For non-figurative only queries, we don't need to process annotations
+            if show_not_figurative and (not figurative_types or figurative_types == ['']):
+                verse['annotations'] = []
+                continue
+
+            annotations = all_annotations.get(verse_id, [])
 
             # Process annotations
             processed_annotations = []
@@ -315,78 +356,88 @@ def get_verses():
                     if reason:
                         validation_reasons[type_name] = reason
 
-                # Clean contaminated figurative text fields
-                def clean_figurative_text(text):
+                # Minimal cleaning for Hebrew figurative text (database is clean, so minimal processing needed)
+                def clean_hebrew_figurative_text(text):
                     if not text:
                         return ''
 
-                    # Remove common contamination patterns from figurative text
+                    # Since database Hebrew text is clean, only remove obvious JSON artifacts if any
                     cleaned = text
-                    # Remove deliberation patterns
-                    cleaned = re.sub(r'\*+[^*]*\*+', '', cleaned)  # Remove asterisk blocks
-                    cleaned = re.sub(r'I considered[^.]*\.', '', cleaned)  # Remove "I considered..."
-                    cleaned = re.sub(r'This is a[^.]*\.', '', cleaned)  # Remove "This is a..."
-                    cleaned = re.sub(r'\([^)]*(?:head by head|specifically|synecdoche)[^)]*\)', '', cleaned)
-                    cleaned = re.sub(r'"[^"]*"', '', cleaned)  # Remove quoted text
-                    cleaned = re.sub(r'\\n\d*\.?\s*', '', cleaned)  # Remove \n patterns
-                    cleaned = re.sub(r'(?:Considered|Reasoning|Phrase):[^*]*(?=\*|$)', '', cleaned)
+                    # Remove only clear JSON contamination patterns
                     cleaned = re.sub(r'json","[^"]*"', '', cleaned)  # Remove JSON fragments
-                    cleaned = re.sub(r'\b(?:metonymy|synecdoche|figurative|literal|language|person|individual)\b', '', cleaned, flags=re.IGNORECASE)
+                    cleaned = re.sub(r'verse_model_used[^}]*', '', cleaned)  # Remove JSON artifacts
 
-                    # Keep only if it has Hebrew characters or is short English phrase
-                    import unicodedata
-                    hebrew_chars = sum(1 for c in cleaned if '\u0590' <= c <= '\u05FF')
-                    total_chars = len(cleaned.replace(' ', ''))
+                    # Clean up excessive whitespace
+                    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
 
-                    if total_chars > 0:
-                        if hebrew_chars / total_chars > 0.3 or total_chars < 30:  # Mostly Hebrew or short phrase
-                            return cleaned.strip()
+                    # Return the text with minimal changes since database is clean
+                    return cleaned
 
-                    return ''
+                # Minimal cleaning for English explanations and validation reasons
+                def clean_english_explanation(text):
+                    if not text:
+                        return ''
+
+                    # Minimal cleaning - only remove obvious JSON artifacts
+                    cleaned = text
+                    # Remove only clear JSON contamination patterns
+                    cleaned = re.sub(r'json","[^"]*"', '', cleaned)  # Remove JSON fragments
+
+                    # Clean up excessive whitespace
+                    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+
+                    # Accept any reasonable content (much more permissive than before)
+                    if len(cleaned) > 3 and len(cleaned) < 2000:  # Much more permissive bounds
+                        return cleaned
+
+                    return text.strip()  # If somehow it doesn't meet criteria, return original stripped
 
                 processed_annotations.append({
-                    'figurative_text': clean_figurative_text(annotation['figurative_text']),
-                    'figurative_text_in_hebrew': clean_figurative_text(annotation['figurative_text_in_hebrew']),
-                    'figurative_text_in_hebrew_non_sacred': clean_figurative_text(annotation['figurative_text_in_hebrew_non_sacred']),
+                    'figurative_text': annotation['figurative_text'] or '',  # Keep English figurative text as-is
+                    'figurative_text_in_hebrew': clean_hebrew_figurative_text(annotation['figurative_text_in_hebrew']),
+                    'figurative_text_in_hebrew_non_sacred': clean_hebrew_figurative_text(annotation['figurative_text_in_hebrew_non_sacred']),
                     'types': types,
                     'target': target,
                     'vehicle': vehicle,
                     'ground': ground,
                     'posture': posture,
-                    'explanation': clean_figurative_text(annotation['explanation']) if annotation['explanation'] else '',
+                    'explanation': clean_english_explanation(annotation['explanation']) if annotation['explanation'] else '',
                     'speaker': annotation['speaker'] or '',
                     'confidence': annotation['confidence'] or 0.0,
                     'validation_reasons': validation_reasons,
-                    # Individual validation reason fields for frontend compatibility
-                    'validation_reason_metaphor': annotation.get('validation_reason_metaphor'),
-                    'validation_reason_simile': annotation.get('validation_reason_simile'),
-                    'validation_reason_personification': annotation.get('validation_reason_personification'),
-                    'validation_reason_idiom': annotation.get('validation_reason_idiom'),
-                    'validation_reason_hyperbole': annotation.get('validation_reason_hyperbole'),
-                    'validation_reason_metonymy': annotation.get('validation_reason_metonymy'),
-                    'validation_reason_other': annotation.get('validation_reason_other')
+                    # Individual validation reason fields for frontend compatibility - using fixed cleaning
+                    'validation_reason_metaphor': clean_english_explanation(annotation.get('validation_reason_metaphor')) if annotation.get('validation_reason_metaphor') else '',
+                    'validation_reason_simile': clean_english_explanation(annotation.get('validation_reason_simile')) if annotation.get('validation_reason_simile') else '',
+                    'validation_reason_personification': clean_english_explanation(annotation.get('validation_reason_personification')) if annotation.get('validation_reason_personification') else '',
+                    'validation_reason_idiom': clean_english_explanation(annotation.get('validation_reason_idiom')) if annotation.get('validation_reason_idiom') else '',
+                    'validation_reason_hyperbole': clean_english_explanation(annotation.get('validation_reason_hyperbole')) if annotation.get('validation_reason_hyperbole') else '',
+                    'validation_reason_metonymy': clean_english_explanation(annotation.get('validation_reason_metonymy')) if annotation.get('validation_reason_metonymy') else '',
+                    'validation_reason_other': clean_english_explanation(annotation.get('validation_reason_other')) if annotation.get('validation_reason_other') else ''
                 })
 
             verse['annotations'] = processed_annotations
 
-        # Get total count for pagination - build a simpler count query
+        # Get total count for pagination - use optimized subquery to avoid DISTINCT on large result sets
         count_query = """
-        SELECT COUNT(DISTINCT v.id) as count
-        FROM verses v
-        LEFT JOIN figurative_language fl ON v.id = fl.verse_id
-        WHERE 1=1
+        SELECT COUNT(*) as count FROM (
+            SELECT v.id
+            FROM verses v
+            LEFT JOIN figurative_language fl ON v.id = fl.verse_id
+            WHERE 1=1
         """
 
         # Add the same conditions to count query
         if conditions:
             count_query += " AND " + " AND ".join(conditions)
 
+        count_query += " GROUP BY v.id) as subquery"
+
         # Remove limit and offset from params for count query
         count_params = params[:-2]
         count_result = db_manager.execute_query(count_query, tuple(count_params))
         total_count = count_result[0]['count'] if count_result else 0
 
-        # Get total figurative instances for filtered results
+        # Get total figurative instances for filtered results - simplified query
         figurative_count_query = """
         SELECT COUNT(fl.id) as count
         FROM verses v
