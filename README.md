@@ -496,13 +496,29 @@ A comprehensive HTML-based interface for exploring and analyzing your biblical f
 - **🎯 Smart Navigation**: Clear "Load Next X Verses" button with exact counts and completion status
 - **📊 Detailed Statistics**: Complete figurative language instance counts and database transparency
 
-**🆕 Latest Interface Enhancements (Sept 29, 2025):**
-- **🎭 "Not Figurative" Filtering**: Revolutionary new option to view verses WITHOUT figurative language
-  - Added "Not Figurative" checkbox to figurative language type selector
-  - Fixed "Clear All" behavior to show NO verses instead of ALL verses (user-requested improvement)
-  - Enhanced user control: show only figurative, only non-figurative, or all verses
-  - Yellow highlighting now always appears regardless of filter selections for better UX
-- **🔧 Backend API Enhancement**: Updated server to handle `show_not_figurative` parameter with intelligent filtering logic
+**🆕 Latest Interface Enhancements (Sept 29, 2025 - Major UX Update):**
+- **🎨 Improved UI Layout & Design**:
+  - **Compact Hebrew Keyboard**: Redesigned to 9-column rectangular layout with smaller keys (0.9rem) - fits perfectly in sidebar without scrolling
+  - **Enhanced Search Controls**: English button on left, Hebrew button (עברית) on right with native label
+  - **Grey Refresh Icon**: Replaced red X with subtle grey circular arrow (↻) for clearing searches
+  - **Clear Search Button**: Auto-shows/hides based on input with smooth transitions
+  - **Biblical Book Ordering**: All 5 books (Genesis through Deuteronomy) now properly ordered in selector
+
+- **🔍 Advanced Search Highlighting**:
+  - **Pink Search Highlighting**: Search terms now highlighted in pink (#ffb3d9) distinct from yellow figurative highlighting
+  - **Hebrew Text Support**: Full Hebrew search highlighting with vowel-point awareness - strips marks for matching but highlights complete words
+  - **Nested Highlighting**: Search terms highlighted in pink EVEN inside yellow figurative text with yellow border for visual distinction
+  - **Language-Specific Matching**: English uses case-insensitive matching, Hebrew uses vowel-flexible matching
+
+- **🎭 Enhanced "Not Figurative" Filtering**:
+  - **Fixed OR Logic**: When "Not Figurative" + other types checked, shows verses WITH those types OR without any figurative language
+  - **Proper SQL Filtering**: `({figurative_filter} OR fl.id IS NULL)` ensures correct verse filtering
+  - **Pagination Reset**: Automatically resets offset when filters change to prevent stale results
+
+- **⚡ Performance & Bug Fixes**:
+  - Fixed text search ordering to apply before figurative filtering
+  - Reset pagination offset in `filterAndRenderVerses()` to fix second-search bugs
+  - Improved `updateBookOptions()` to preserve biblical ordering and prevent dynamic reordering
 
 **🆕 Previous Interface Enhancements (Sept 28, 2025):**
 - **🎨 Refined Visual Design**: Updated color scheme with dark gradient headers (#0a1930 → #020408)
