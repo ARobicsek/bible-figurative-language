@@ -442,10 +442,18 @@
             }
         }
 
-        /* Search Highlighting */
+        /* Search Highlighting - pink for search matches */
         .search-highlight {
-            background-color: #fff3cd;
+            background-color: #ffb3d9;
             font-weight: 600;
+            padding: 1px 2px;
+            border-radius: 2px;
+        }
+
+        /* When search highlight is inside figurative highlight, pink takes priority */
+        .figurative-highlight .search-highlight {
+            background-color: #ffb3d9;
+            box-shadow: 0 0 0 2px #fff3cd; /* Yellow border to show it's also figurative */
         }
 
         /* Stats Bar */
@@ -522,10 +530,10 @@
 
         .hebrew-keyboard {
             display: none;
-            grid-template-columns: repeat(10, 1fr);
-            gap: 0.25rem;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 0.15rem;
             margin: 0.5rem 0;
-            padding: 0.5rem;
+            padding: 0.4rem;
             background: #f8f9fa;
             border-radius: 4px;
             border: 1px solid var(--border-color);
@@ -536,23 +544,37 @@
         }
 
         .hebrew-key {
-            padding: 0.5rem;
+            padding: 0.3rem 0.2rem;
             background: white;
             border: 1px solid var(--border-color);
-            border-radius: 3px;
+            border-radius: 2px;
             cursor: pointer;
             text-align: center;
             font-family: 'Noto Sans Hebrew', serif;
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             transition: background-color 0.1s ease;
+            min-height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .hebrew-key:hover {
             background-color: #e9ecef;
         }
 
+        .hebrew-key.wide {
+            grid-column: span 2;
+        }
+
+        .hebrew-key.action {
+            font-size: 0.75rem;
+            font-family: 'Crimson Text', serif;
+        }
+
         .search-input-container {
             position: relative;
+            margin-bottom: 0.5rem;
         }
 
         .keyboard-toggle {
@@ -568,10 +590,43 @@
             border-radius: 3px;
             padding: 2px 6px;
             transition: all 0.2s ease;
+            z-index: 1;
         }
 
         .keyboard-toggle:hover {
             background-color: #f8f9fa;
+        }
+
+        /* Ensure keyboard doesn't overlap with search input */
+        #search-input {
+            margin-bottom: 0;
+            padding-right: 4rem; /* Make room for both keyboard and clear buttons */
+        }
+
+        .clear-search-btn {
+            position: absolute;
+            right: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border: 1px solid #6c757d;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #6c757d;
+            border-radius: 3px;
+            padding: 3px 6px;
+            transition: all 0.2s ease;
+            z-index: 1;
+            display: none;
+        }
+
+        .clear-search-btn.active {
+            display: block;
+        }
+
+        .clear-search-btn:hover {
+            background-color: #6c757d;
+            color: white;
         }
     </style>
 </head>
@@ -590,8 +645,11 @@
                 <h3>Text Selection</h3>
                 <label for="book-select">Books:</label>
                 <select id="book-select" multiple>
+                    <option value="genesis">Genesis</option>
+                    <option value="exodus">Exodus</option>
                     <option value="leviticus">Leviticus</option>
                     <option value="numbers">Numbers</option>
+                    <option value="deuteronomy">Deuteronomy</option>
                 </select>
                 <label for="chapter-input">Chapters:</label>
                 <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
@@ -645,6 +703,11 @@
                     <span class="filter-color other"></span>
                     Other
                 </label>
+                <label>
+                    <input type="checkbox" value="not_figurative">
+                    <span class="filter-color" style="background-color: #6c757d;"></span>
+                    Not Figurative
+                </label>
             </section>
 
             <!-- Text Version Toggle -->
@@ -668,18 +731,20 @@
 
                 <!-- Search Type Toggle -->
                 <div class="search-type-toggle">
-                    <button class="toggle-btn active" id="hebrew-toggle" onclick="toggleSearchType('hebrew')">Hebrew</button>
                     <button class="toggle-btn" id="english-toggle" onclick="toggleSearchType('english')">English</button>
+                    <button class="toggle-btn active" id="hebrew-toggle" onclick="toggleSearchType('hebrew')">עברית</button>
                 </div>
 
-                <!-- Search Input with Keyboard Toggle -->
+                <!-- Search Input with Clear and Keyboard Toggle -->
                 <div class="search-input-container">
-                    <input type="text" id="search-input" placeholder="Search Hebrew text..." style="padding-right: 2rem;">
+                    <input type="text" id="search-input" placeholder="Search Hebrew text...">
+                    <button class="clear-search-btn" id="clear-search-btn" onclick="clearTextSearch()" title="Clear Search">↻</button>
                     <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()" title="Toggle Hebrew Keyboard">⌨</button>
                 </div>
 
-                <!-- Hebrew Virtual Keyboard -->
+                <!-- Hebrew Virtual Keyboard - Compact rectangular layout -->
                 <div class="hebrew-keyboard" id="hebrew-keyboard">
+                    <!-- Row 1: 9 letters -->
                     <div class="hebrew-key" onclick="insertHebrew('א')">א</div>
                     <div class="hebrew-key" onclick="insertHebrew('ב')">ב</div>
                     <div class="hebrew-key" onclick="insertHebrew('ג')">ג</div>
@@ -689,6 +754,7 @@
                     <div class="hebrew-key" onclick="insertHebrew('ז')">ז</div>
                     <div class="hebrew-key" onclick="insertHebrew('ח')">ח</div>
                     <div class="hebrew-key" onclick="insertHebrew('ט')">ט</div>
+                    <!-- Row 2: 9 letters -->
                     <div class="hebrew-key" onclick="insertHebrew('י')">י</div>
                     <div class="hebrew-key" onclick="insertHebrew('כ')">כ</div>
                     <div class="hebrew-key" onclick="insertHebrew('ל')">ל</div>
@@ -698,6 +764,7 @@
                     <div class="hebrew-key" onclick="insertHebrew('ע')">ע</div>
                     <div class="hebrew-key" onclick="insertHebrew('פ')">פ</div>
                     <div class="hebrew-key" onclick="insertHebrew('צ')">צ</div>
+                    <!-- Row 3: 9 letters (4 regular + 5 final forms) -->
                     <div class="hebrew-key" onclick="insertHebrew('ק')">ק</div>
                     <div class="hebrew-key" onclick="insertHebrew('ר')">ר</div>
                     <div class="hebrew-key" onclick="insertHebrew('ש')">ש</div>
@@ -707,9 +774,10 @@
                     <div class="hebrew-key" onclick="insertHebrew('ן')">ן</div>
                     <div class="hebrew-key" onclick="insertHebrew('ף')">ף</div>
                     <div class="hebrew-key" onclick="insertHebrew('ץ')">ץ</div>
-                    <div class="hebrew-key" onclick="clearSearch()">Clear</div>
-                    <div class="hebrew-key" onclick="insertHebrew(' ')">Space</div>
-                    <div class="hebrew-key" onclick="deleteLastChar()">⌫</div>
+                    <!-- Row 4: Action keys -->
+                    <div class="hebrew-key action" onclick="clearSearch()" style="grid-column: span 2;">Clear</div>
+                    <div class="hebrew-key" onclick="insertHebrew(' ')" style="grid-column: span 5;">Space</div>
+                    <div class="hebrew-key action" onclick="deleteLastChar()" style="grid-column: span 2;">⌫</div>
                 </div>
 
                 <h4 style="color: #2b394f; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">Search for Tag</h4>
@@ -719,8 +787,8 @@
                     <input type="text" id="ground-search" placeholder="Ground...">
                     <input type="text" id="posture-search" placeholder="Posture...">
                     <select id="search-operator">
-                        <option value="AND">AND</option>
                         <option value="OR">OR</option>
+                        <option value="AND">AND</option>
                     </select>
                 </div>
             </section>
@@ -768,6 +836,7 @@
             verses: [],
             filteredVerses: [],
             selectedTypes: new Set(['metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']),
+            showNotFigurative: false,
             hebrewVersion: 'sacred',
             englishVersion: 'sacred',
             searchType: 'hebrew', // 'hebrew' or 'english'
@@ -777,7 +846,7 @@
                 vehicle: '',
                 ground: '',
                 posture: '',
-                operator: 'AND'
+                operator: 'OR'
             },
             pagination: {
                 limit: 50,
@@ -815,10 +884,14 @@
             // Type filter checkboxes
             document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
                 checkbox.addEventListener('change', function() {
-                    if (this.checked) {
-                        appState.selectedTypes.add(this.value);
+                    if (this.value === 'not_figurative') {
+                        appState.showNotFigurative = this.checked;
                     } else {
-                        appState.selectedTypes.delete(this.value);
+                        if (this.checked) {
+                            appState.selectedTypes.add(this.value);
+                        } else {
+                            appState.selectedTypes.delete(this.value);
+                        }
                     }
                     filterAndRenderVerses();
                 });
@@ -840,7 +913,10 @@
             });
 
             // Search inputs
-            document.getElementById('search-input').addEventListener('input', debounce(handleSearch, 300));
+            document.getElementById('search-input').addEventListener('input', function() {
+                updateClearButtonVisibility();
+                debounce(handleSearch, 300)();
+            });
             document.getElementById('target-search').addEventListener('input', debounce(handleSearch, 300));
             document.getElementById('vehicle-search').addEventListener('input', debounce(handleSearch, 300));
             document.getElementById('ground-search').addEventListener('input', debounce(handleSearch, 300));
@@ -856,7 +932,11 @@
                 document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
                     if (!checkbox.checked) {
                         checkbox.checked = true;
-                        appState.selectedTypes.add(checkbox.value);
+                        if (checkbox.value === 'not_figurative') {
+                            appState.showNotFigurative = true;
+                        } else {
+                            appState.selectedTypes.add(checkbox.value);
+                        }
                     }
                 });
                 filterAndRenderVerses();
@@ -866,7 +946,11 @@
                 document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
                     if (checkbox.checked) {
                         checkbox.checked = false;
-                        appState.selectedTypes.delete(checkbox.value);
+                        if (checkbox.value === 'not_figurative') {
+                            appState.showNotFigurative = false;
+                        } else {
+                            appState.selectedTypes.delete(checkbox.value);
+                        }
                     }
                 });
                 filterAndRenderVerses();
@@ -939,11 +1023,20 @@
             input.value = value.substring(0, cursorPos) + char + value.substring(cursorPos);
             input.setSelectionRange(cursorPos + char.length, cursorPos + char.length);
             input.focus();
+            updateClearButtonVisibility();
             handleSearch();
         }
 
         function clearSearch() {
             document.getElementById('search-input').value = '';
+            updateClearButtonVisibility();
+            handleSearch();
+        }
+
+        function clearTextSearch() {
+            const input = document.getElementById('search-input');
+            input.value = '';
+            updateClearButtonVisibility();
             handleSearch();
         }
 
@@ -951,7 +1044,18 @@
             const input = document.getElementById('search-input');
             if (input.value.length > 0) {
                 input.value = input.value.slice(0, -1);
+                updateClearButtonVisibility();
                 handleSearch();
+            }
+        }
+
+        function updateClearButtonVisibility() {
+            const input = document.getElementById('search-input');
+            const clearBtn = document.getElementById('clear-search-btn');
+            if (input.value.length > 0) {
+                clearBtn.classList.add('active');
+            } else {
+                clearBtn.classList.remove('active');
             }
         }
 
@@ -991,20 +1095,30 @@
 
         function updateBookOptions(books) {
             const bookSelect = document.getElementById('book-select');
-            bookSelect.innerHTML = '';
-            books.forEach(book => {
-                const option = document.createElement('option');
-                option.value = book.toLowerCase();
-                option.textContent = book;
-                option.selected = true; // Select all by default
-                bookSelect.appendChild(option);
-            });
+
+            // Only update if the book select is empty or has different books
+            if (bookSelect.options.length === 0) {
+                bookSelect.innerHTML = '';
+                // Biblical order
+                const biblicalOrder = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy'];
+                biblicalOrder.forEach(book => {
+                    if (books.includes(book)) {
+                        const option = document.createElement('option');
+                        option.value = book.toLowerCase();
+                        option.textContent = book;
+                        option.selected = true; // Select all by default
+                        bookSelect.appendChild(option);
+                    }
+                });
+            }
         }
 
         async function loadDefaultVerses() {
+            // Load all books in biblical order by default
             await loadVersesFromAPI({
-                books: 'leviticus,numbers',
+                books: 'genesis,exodus,leviticus,numbers,deuteronomy',
                 figurative_types: Array.from(appState.selectedTypes).join(','),
+                show_not_figurative: appState.showNotFigurative,
                 limit: 20,
                 offset: 0
             });
@@ -1060,6 +1174,22 @@
         }
 
         function filterAndRenderVerses() {
+            // Check if user has selected nothing (clear all scenario)
+            if (appState.selectedTypes.size === 0 && !appState.showNotFigurative) {
+                // Show NO verses when clear all is pressed (user's request)
+                elements.versesContainer.innerHTML = '<div class="loading"><p>No figurative language types selected. Please select at least one type to see verses.</p></div>';
+                elements.statsBar.innerHTML = `
+                    <div class="stats-text">
+                        No verses displayed - no figurative language types selected
+                    </div>
+                    <div></div>
+                `;
+                return;
+            }
+
+            // Reset pagination offset when filter changes
+            appState.pagination.offset = 0;
+
             // Since filtering is now done server-side, we just need to reload with current filters
             const params = buildAPIParams();
             loadVersesFromAPI(params);
@@ -1075,6 +1205,7 @@
                 chapters: chapters || 'all',
                 verses: verses || 'all',
                 figurative_types: Array.from(appState.selectedTypes).join(','),
+                show_not_figurative: appState.showNotFigurative,
                 search_hebrew: appState.searchType === 'hebrew' ? appState.currentSearch.text : '',
                 search_english: appState.searchType === 'english' ? appState.currentSearch.text : '',
                 search_target: appState.currentSearch.target,
@@ -1138,6 +1269,60 @@
             return text;
         }
 
+        function highlightSearchTerms(text, searchTerm, isHebrew = false) {
+            if (!searchTerm || !text) return text;
+
+            // For Hebrew, we need to match with and without vowel points/cantillation
+            if (isHebrew) {
+                // Function to strip Hebrew vowel points and cantillation marks
+                const stripHebrewMarks = (str) => str.replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '');
+
+                // Split by HTML tags to avoid highlighting inside tag attributes
+                const parts = text.split(/(<[^>]+>)/);
+
+                return parts.map((part, index) => {
+                    // Don't modify HTML tags (including attributes)
+                    if (part.startsWith('<') && part.endsWith('>')) {
+                        return part;
+                    }
+
+                    // Strip marks from both search term and text for comparison
+                    const strippedPart = stripHebrewMarks(part);
+                    const strippedTerm = stripHebrewMarks(searchTerm);
+
+                    if (strippedPart.includes(strippedTerm)) {
+                        // Find all occurrences with marks stripped, but highlight with original marks
+                        const escapedTerm = strippedTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        // Create regex that allows vowel points between each letter
+                        const flexiblePattern = escapedTerm.split('').join('[\\u0591-\\u05C7\\u05F0-\\u05F4]*');
+                        const regex = new RegExp(`(${flexiblePattern})`, 'g');
+                        return part.replace(regex, '<span class="search-highlight">$1</span>');
+                    }
+
+                    return part;
+                }).join('');
+            } else {
+                // English highlighting - now works inside figurative text too
+                const parts = text.split(/(<[^>]+>)/);
+
+                return parts.map((part, index) => {
+                    // Don't modify HTML tags (including attributes)
+                    if (part.startsWith('<') && part.endsWith('>')) {
+                        return part;
+                    }
+
+                    // Apply highlighting to all matching text
+                    if (searchTerm && part.toLowerCase().includes(searchTerm.toLowerCase())) {
+                        const escapedTerm = searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        const regex = new RegExp(`(${escapedTerm})`, 'gi');
+                        return part.replace(regex, '<span class="search-highlight">$1</span>');
+                    }
+
+                    return part;
+                }).join('');
+            }
+        }
+
         function renderVerses() {
             if (appState.filteredVerses.length === 0) {
                 elements.versesContainer.innerHTML = '<div class="loading"><p>No verses match your current filters.</p></div>';
@@ -1170,6 +1355,20 @@
                     verse_model_used: verse.model_used
                 }));
 
+                // Apply figurative highlighting first, then search highlighting
+                let processedEnglish = highlightAnnotations(englishText, annotationsWithVerseInfo, 'english');
+                let processedHebrew = highlightAnnotations(hebrewText, annotationsWithVerseInfo, 'hebrew');
+
+                // Apply search term highlighting (pink) - with language-specific handling
+                const searchTerm = appState.currentSearch.text;
+                if (searchTerm) {
+                    if (appState.searchType === 'english') {
+                        processedEnglish = highlightSearchTerms(processedEnglish, searchTerm, false);
+                    } else if (appState.searchType === 'hebrew') {
+                        processedHebrew = highlightSearchTerms(processedHebrew, searchTerm, true);
+                    }
+                }
+
                 return `
                     <div class="verse-container">
                         <div class="verse-header" onclick="showVerseDetails('${verse.reference}', ${verse.id})">
@@ -1177,10 +1376,10 @@
                         </div>
                         <div class="verse-content">
                             <div class="english-text">
-                                ${highlightAnnotations(englishText, annotationsWithVerseInfo, 'english')}
+                                ${processedEnglish}
                             </div>
                             <div class="hebrew-text">
-                                ${highlightAnnotations(hebrewText, annotationsWithVerseInfo, 'hebrew')}
+                                ${processedHebrew}
                             </div>
                         </div>
                     </div>
@@ -1201,9 +1400,10 @@
 
         function createSimpleHighlight(matchedText, cleanAnnotation) {
 
-            // Simple yellow highlighting approach - works for all cases
-            const visibleTypes = cleanAnnotation.types?.filter(type => appState.selectedTypes.has(type)) || [];
+            // ALWAYS show highlighting regardless of selection - as requested by user
+            const visibleTypes = cleanAnnotation.types || [];
 
+            // Always show highlighting even if no types are selected
             if (visibleTypes.length === 0) {
                 return matchedText;
             }
