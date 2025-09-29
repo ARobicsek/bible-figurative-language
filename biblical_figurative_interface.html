@@ -1090,71 +1090,52 @@
         function cleanHebrewText(text) {
             if (!text) return text;
 
-            // Strategy: Extract only Hebrew text by finding Hebrew character sequences
-            // and common Hebrew text markers
 
-            // First, remove HTML entities
+            // CONSERVATIVE approach: Since API returns clean data, do minimal cleaning
+
+            // Check if text is already clean Hebrew (>80% Hebrew characters)
+            const hebrewChars = (text.match(/[\u0590-\u05FF]/g) || []).length;
+            const totalChars = text.replace(/\s/g, '').length;
+
+            if (totalChars > 0 && hebrewChars / totalChars > 0.8) {
+                // Text is already clean Hebrew, just do basic HTML entity cleanup
+                return text
+                    .replace(/&nbsp;/g, ' ')
+                    .replace(/&amp;/g, '&')
+                    .replace(/&lt;/g, '<')
+                    .replace(/&gt;/g, '>')
+                    .replace(/&quot;/g, '"')
+                    .replace(/&#x?\d+;/g, '')
+                    .replace(/\s{2,}/g, ' ')
+                    .trim();
+            }
+
+            // Only if text appears contaminated, do more aggressive cleaning
             let processed = text
+                // Basic HTML entity cleanup
                 .replace(/&nbsp;/g, ' ')
                 .replace(/&amp;/g, '&')
                 .replace(/&lt;/g, '<')
                 .replace(/&gt;/g, '>')
                 .replace(/&quot;/g, '"')
-                .replace(/&#x?\d+;/g, '');
-
-            // Split text into segments and keep only those with significant Hebrew content
-            const segments = processed.split(/[\n\r]+/);
-            const hebrewSegments = [];
-
-            for (let segment of segments) {
-                // Clean segment of obvious contamination patterns
-                let cleanSegment = segment
-                    // Remove everything within asterisks
-                    .replace(/\*+[^*]*\*+/g, '')
-                    // Remove parenthetical English explanations
-                    .replace(/\([^)]*(?:head by head|specifically|synecdoche)[^)]*\)/g, '')
-                    // Remove quoted translations
-                    .replace(/\s*"[^"]*"\s*/g, ' ')
-                    // Remove backslash-n patterns
-                    .replace(/\\n\d*\.?\s*/g, '')
-                    // Remove common deliberation starters
-                    .replace(/(?:I considered|This is a|If |The part |It is a common|Therefore|Reasoning:|Considered:|Phrase:)[^.]*\.?/g, '')
-                    // Remove JSON-like patterns
-                    .replace(/json","[^"]*"/g, '')
-                    .replace(/verse_model_used[^}]*/g, '')
-                    // Remove stand-alone English words that are clearly not Hebrew
-                    .replace(/\b(?:metonymy|synecdoche|figurative|literal|language|person|individual|counting|census|army|military|service|eligibility|procedural|formulation|guidelines|instructions)\b/gi, '')
-                    .trim();
-
-                // Count Hebrew characters in this cleaned segment
-                const hebrewChars = (cleanSegment.match(/[\u0590-\u05FF]/g) || []).length;
-                const totalChars = cleanSegment.replace(/\s/g, '').length;
-
-                // Keep segment if it has substantial Hebrew content (>50%) and some actual content
-                if (totalChars > 3 && hebrewChars / totalChars > 0.5) {
-                    hebrewSegments.push(cleanSegment);
-                }
-            }
-
-            // Join the Hebrew segments
-            let result = hebrewSegments.join(' ').trim();
-
-            // Final cleanup
-            result = result
-                .replace(/\s{2,}/g, ' ')  // Multiple spaces to single
-                .replace(/^\s*[*\-•]\s*/gm, '')  // Remove bullet points
-                .replace(/\s*[{}]\s*/g, ' ')  // Remove stray braces
+                .replace(/&#x?\d+;/g, '')
+                // Remove only clearly problematic patterns
+                .replace(/json","[^"]*"/g, '')
+                .replace(/verse_model_used[^}]*/g, '')
+                .replace(/\\n\s*/g, ' ')
+                .replace(/\s{2,}/g, ' ')
                 .trim();
 
-            // If result is too short or still contaminated, return empty for fallback
-            const finalHebrewChars = (result.match(/[\u0590-\u05FF]/g) || []).length;
-            const finalTotalChars = result.replace(/\s/g, '').length;
+            // If result contains substantial Hebrew content, return it
+            const cleanedHebrewChars = (processed.match(/[\u0590-\u05FF]/g) || []).length;
+            const cleanedTotalChars = processed.replace(/\s/g, '').length;
 
-            if (finalTotalChars < 5 || (finalTotalChars > 0 && finalHebrewChars / finalTotalChars < 0.7)) {
-                return '';  // Let fallback mechanism handle this
+            if (cleanedTotalChars > 0 && cleanedHebrewChars / cleanedTotalChars > 0.3) {
+                return processed;
             }
 
-            return result;
+            // If still problematic, return original text (let display handle it)
+            return text;
         }
 
         function renderVerses() {
@@ -1164,36 +1145,18 @@
             }
 
             const versesHTML = appState.filteredVerses.map(verse => {
-                // Debug logging for problematic verses
-                if (verse.reference === 'Numbers 1:22') {
-                    console.log('=== DEBUGGING Numbers 1:22 ===');
-                    console.log('verse.hebrew_text:', verse.hebrew_text);
-                    console.log('verse.hebrew_text_stripped:', verse.hebrew_text_stripped);
-                    console.log('verse.hebrew_text_non_sacred:', verse.hebrew_text_non_sacred);
-                    console.log('Raw before cleaning:', appState.hebrewVersion === 'sacred' ? verse.hebrew_text : verse.hebrew_text_non_sacred);
-                }
 
                 let hebrewText = cleanHebrewText(appState.hebrewVersion === 'sacred' ? verse.hebrew_text : verse.hebrew_text_non_sacred);
 
-                // Debug logging continued
-                if (verse.reference === 'Numbers 1:22') {
-                    console.log('After cleanHebrewText:', hebrewText);
-                }
 
                 // If Hebrew text is empty after cleaning (heavily contaminated), try the stripped version
                 if (!hebrewText && verse.hebrew_text_stripped) {
                     hebrewText = cleanHebrewText(verse.hebrew_text_stripped);
-                    if (verse.reference === 'Numbers 1:22') {
-                        console.log('Using stripped version:', hebrewText);
-                    }
                 }
 
                 // If still empty, show a placeholder
                 if (!hebrewText) {
                     hebrewText = '[Hebrew text unavailable - contaminated data]';
-                    if (verse.reference === 'Numbers 1:22') {
-                        console.log('Using placeholder');
-                    }
                 }
 
                 const englishText = appState.englishVersion === 'sacred' ? verse.english_text : verse.english_text_non_sacred;
@@ -1237,6 +1200,7 @@
         }
 
         function createSimpleHighlight(matchedText, cleanAnnotation) {
+
             // Simple yellow highlighting approach - works for all cases
             const visibleTypes = cleanAnnotation.types?.filter(type => appState.selectedTypes.has(type)) || [];
 
@@ -1252,7 +1216,22 @@
 
             const tooltip = `<div class="type-tooltip">${typeIndicators}</div>`;
 
-            return `<span class="figurative-highlight" data-annotation='${JSON.stringify(cleanAnnotation).replace(/'/g, "&apos;")}'>${matchedText}${tooltip}</span>`;
+            // Create minimal annotation object for data-annotation (exclude large text fields)
+            const minimalAnnotation = {
+                figurative_text: cleanAnnotation.figurative_text,
+                types: cleanAnnotation.types,
+                target: cleanAnnotation.target,
+                vehicle: cleanAnnotation.vehicle,
+                ground: cleanAnnotation.ground,
+                posture: cleanAnnotation.posture,
+                speaker: cleanAnnotation.speaker,
+                confidence: cleanAnnotation.confidence,
+                verse_reference: cleanAnnotation.verse_reference,
+                verse_id: cleanAnnotation.verse_id
+                // Exclude: explanation, validation_reason_*, verse_deliberation (large fields)
+            };
+
+            return `<span class="figurative-highlight" data-annotation='${JSON.stringify(minimalAnnotation).replace(/'/g, "&apos;")}'>${matchedText}${tooltip}</span>`;
         }
 
         // Function removed - using simple highlighting approach instead
@@ -1587,28 +1566,28 @@
 
                     // Create a clean annotation object without circular references and contaminated data
                     const cleanAnnotation = {
-                        figurative_text: cleanHebrewText(annotation.figurative_text) || annotation.figurative_text,
-                        figurative_text_in_hebrew: cleanHebrewText(annotation.figurative_text_in_hebrew),
-                        figurative_text_in_hebrew_non_sacred: cleanHebrewText(annotation.figurative_text_in_hebrew_non_sacred),
+                        figurative_text: annotation.figurative_text || '', // Keep English figurative text as-is
+                        figurative_text_in_hebrew: cleanHebrewText(annotation.figurative_text_in_hebrew), // Clean Hebrew fields
+                        figurative_text_in_hebrew_non_sacred: cleanHebrewText(annotation.figurative_text_in_hebrew_non_sacred), // Clean Hebrew fields
                         types: annotation.types,
                         target: annotation.target,
                         vehicle: annotation.vehicle,
                         ground: annotation.ground,
                         posture: annotation.posture,
-                        explanation: cleanHebrewText(annotation.explanation) || '', // Clean explanation field
+                        explanation: annotation.explanation || '', // Keep English explanation as-is - don't apply Hebrew cleaning
                         speaker: annotation.speaker,
                         confidence: annotation.confidence,
-                        validation_reason_metaphor: cleanHebrewText(annotation.validation_reason_metaphor) || '',
-                        validation_reason_simile: cleanHebrewText(annotation.validation_reason_simile) || '',
-                        validation_reason_personification: cleanHebrewText(annotation.validation_reason_personification) || '',
-                        validation_reason_idiom: cleanHebrewText(annotation.validation_reason_idiom) || '',
-                        validation_reason_hyperbole: cleanHebrewText(annotation.validation_reason_hyperbole) || '',
-                        validation_reason_metonymy: cleanHebrewText(annotation.validation_reason_metonymy) || '',
-                        validation_reason_other: cleanHebrewText(annotation.validation_reason_other) || '',
+                        validation_reason_metaphor: annotation.validation_reason_metaphor || '', // Keep English validation reasons as-is - don't apply Hebrew cleaning
+                        validation_reason_simile: annotation.validation_reason_simile || '',
+                        validation_reason_personification: annotation.validation_reason_personification || '',
+                        validation_reason_idiom: annotation.validation_reason_idiom || '',
+                        validation_reason_hyperbole: annotation.validation_reason_hyperbole || '',
+                        validation_reason_metonymy: annotation.validation_reason_metonymy || '',
+                        validation_reason_other: annotation.validation_reason_other || '',
                         // Add verse information for synchronization
                         verse_reference: annotation.verse_reference,
                         verse_id: annotation.verse_id,
-                        verse_deliberation: cleanHebrewText(annotation.verse_deliberation) || '',
+                        verse_deliberation: annotation.verse_deliberation || '', // Keep English deliberation as-is - don't apply Hebrew cleaning
                         verse_model_used: annotation.verse_model_used
                     };
 
@@ -1649,23 +1628,33 @@
             mainContent.classList.add('panel-open');
         }
 
-        function showAnnotationDetails(annotation) {
-            // Update verse deliberation to match the annotation's verse
-            if (annotation.verse_reference && annotation.verse_deliberation) {
-                elements.selectedVerse.textContent = annotation.verse_reference;
-                elements.deliberationText.textContent = annotation.verse_deliberation;
-                elements.modelUsed.textContent = annotation.verse_model_used || 'Unknown';
+        function showAnnotationDetails(minimalAnnotation) {
+            // Find the full annotation data from appState.verses
+            const verse = appState.verses.find(v => v.id === minimalAnnotation.verse_id);
+            let fullAnnotation = minimalAnnotation;
+
+            if (verse) {
+                // Find the full annotation that matches this minimal one
+                fullAnnotation = verse.annotations.find(ann =>
+                    ann.figurative_text === minimalAnnotation.figurative_text &&
+                    JSON.stringify(ann.types) === JSON.stringify(minimalAnnotation.types)
+                ) || minimalAnnotation;
+
+                // Update verse deliberation
+                elements.selectedVerse.textContent = verse.reference;
+                elements.deliberationText.textContent = verse.figurative_detection_deliberation || '';
+                elements.modelUsed.textContent = verse.model_used || 'Unknown';
             }
 
-            // Format validation reasons
+            // Format validation reasons using fullAnnotation
             const validationReasons = [];
-            if (annotation.validation_reason_metaphor) validationReasons.push(`Metaphor: ${annotation.validation_reason_metaphor}`);
-            if (annotation.validation_reason_simile) validationReasons.push(`Simile: ${annotation.validation_reason_simile}`);
-            if (annotation.validation_reason_personification) validationReasons.push(`Personification: ${annotation.validation_reason_personification}`);
-            if (annotation.validation_reason_idiom) validationReasons.push(`Idiom: ${annotation.validation_reason_idiom}`);
-            if (annotation.validation_reason_hyperbole) validationReasons.push(`Hyperbole: ${annotation.validation_reason_hyperbole}`);
-            if (annotation.validation_reason_metonymy) validationReasons.push(`Metonymy: ${annotation.validation_reason_metonymy}`);
-            if (annotation.validation_reason_other) validationReasons.push(`Other: ${annotation.validation_reason_other}`);
+            if (fullAnnotation.validation_reason_metaphor) validationReasons.push(`Metaphor: ${fullAnnotation.validation_reason_metaphor}`);
+            if (fullAnnotation.validation_reason_simile) validationReasons.push(`Simile: ${fullAnnotation.validation_reason_simile}`);
+            if (fullAnnotation.validation_reason_personification) validationReasons.push(`Personification: ${fullAnnotation.validation_reason_personification}`);
+            if (fullAnnotation.validation_reason_idiom) validationReasons.push(`Idiom: ${fullAnnotation.validation_reason_idiom}`);
+            if (fullAnnotation.validation_reason_hyperbole) validationReasons.push(`Hyperbole: ${fullAnnotation.validation_reason_hyperbole}`);
+            if (fullAnnotation.validation_reason_metonymy) validationReasons.push(`Metonymy: ${fullAnnotation.validation_reason_metonymy}`);
+            if (fullAnnotation.validation_reason_other) validationReasons.push(`Other: ${fullAnnotation.validation_reason_other}`);
 
             const validationHTML = validationReasons.length > 0 ?
                 `<div style="margin-bottom: 1rem;">
@@ -1682,36 +1671,36 @@
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
                         <div>
                             <strong>Target:</strong><br>
-                            <small>${Array.isArray(annotation.target) ? annotation.target.join(' → ') : (annotation.target || 'N/A')}</small>
+                            <small>${Array.isArray(fullAnnotation.target) ? fullAnnotation.target.join(' → ') : (fullAnnotation.target || 'N/A')}</small>
                         </div>
                         <div>
                             <strong>Vehicle:</strong><br>
-                            <small>${Array.isArray(annotation.vehicle) ? annotation.vehicle.join(' → ') : (annotation.vehicle || 'N/A')}</small>
+                            <small>${Array.isArray(fullAnnotation.vehicle) ? fullAnnotation.vehicle.join(' → ') : (fullAnnotation.vehicle || 'N/A')}</small>
                         </div>
                         <div>
                             <strong>Ground:</strong><br>
-                            <small>${Array.isArray(annotation.ground) ? annotation.ground.join(' → ') : (annotation.ground || 'N/A')}</small>
+                            <small>${Array.isArray(fullAnnotation.ground) ? fullAnnotation.ground.join(' → ') : (fullAnnotation.ground || 'N/A')}</small>
                         </div>
                         <div>
                             <strong>Posture:</strong><br>
-                            <small>${Array.isArray(annotation.posture) ? annotation.posture.join(' → ') : (annotation.posture || 'N/A')}</small>
+                            <small>${Array.isArray(fullAnnotation.posture) ? fullAnnotation.posture.join(' → ') : (fullAnnotation.posture || 'N/A')}</small>
                         </div>
                         <div>
                             <strong>Types:</strong><br>
-                            <small>${annotation.types.join(', ')}</small>
+                            <small>${fullAnnotation.types.join(', ')}</small>
                         </div>
                     </div>
 
                     <div style="margin-bottom: 1rem;">
                         <strong>Explanation:</strong><br>
-                        <p style="margin-top: 0.5rem;">${annotation.explanation || 'No explanation available'}</p>
+                        <p style="margin-top: 0.5rem;">${fullAnnotation.explanation || 'No explanation available'}</p>
                     </div>
 
                     ${validationHTML}
 
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div><strong>Speaker:</strong> ${annotation.speaker || 'N/A'}</div>
-                        <div><strong>Confidence:</strong> ${annotation.confidence ? (annotation.confidence * 100).toFixed(1) + '%' : 'N/A'}</div>
+                        <div><strong>Speaker:</strong> ${fullAnnotation.speaker || 'N/A'}</div>
+                        <div><strong>Confidence:</strong> ${fullAnnotation.confidence ? (fullAnnotation.confidence * 100).toFixed(1) + '%' : 'N/A'}</div>
                     </div>
                 </div>
             `;
