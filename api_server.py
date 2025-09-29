@@ -203,27 +203,7 @@ def get_verses():
                 conditions.append(f"v.verse IN ({placeholders})")
                 params.extend(verses)
 
-        # Handle figurative language filtering
-        if show_not_figurative and (not figurative_types or figurative_types == ['']):
-            # Show only verses WITHOUT figurative language
-            conditions.append("fl.id IS NULL")
-        elif figurative_types and figurative_types != ['']:
-            if show_not_figurative:
-                # Show both figurative and non-figurative verses
-                # This means we don't add any fl-related restrictions
-                pass
-            else:
-                # Show only verses WITH specified figurative language types
-                figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
-                conditions.append(figurative_filter)
-                conditions.append("fl.id IS NOT NULL")  # Only verses with figurative language
-        elif not show_not_figurative:
-            # If no figurative types selected and not showing non-figurative, show nothing
-            # This will be handled by the frontend now
-            pass
-
-        # Text search conditions (applied AFTER figurative filtering)
-        # These should work regardless of figurative language filtering
+        # Text search conditions (applied FIRST, independently of figurative filtering)
         if search_hebrew:
             conditions.append("v.hebrew_text_stripped LIKE ?")
             params.append(f"%{search_hebrew}%")
@@ -231,6 +211,25 @@ def get_verses():
         if search_english:
             conditions.append("v.english_text LIKE ?")
             params.append(f"%{search_english}%")
+
+        # Handle figurative language filtering (applied AFTER text search)
+        if show_not_figurative and (not figurative_types or figurative_types == ['']):
+            # Show ONLY verses WITHOUT figurative language (and matching text search if any)
+            conditions.append("fl.id IS NULL")
+        elif figurative_types and figurative_types != ['']:
+            if show_not_figurative:
+                # Show verses WITH specified figurative types OR verses WITHOUT any figurative language
+                figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                conditions.append(f"({figurative_filter} OR fl.id IS NULL)")
+            else:
+                # Show ONLY verses WITH specified figurative language types (and matching text search if any)
+                figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                conditions.append(figurative_filter)
+                conditions.append("fl.id IS NOT NULL")  # Only verses with figurative language
+        elif not show_not_figurative:
+            # If no figurative types selected and not showing non-figurative, show nothing
+            # This will be handled by the frontend now
+            pass
 
         # Metadata search
         metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
