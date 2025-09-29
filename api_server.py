@@ -14,6 +14,7 @@ from typing import List, Dict, Any, Optional
 import os
 import sys
 import traceback
+import glob
 
 # Ensure proper Unicode handling
 if sys.platform.startswith('win'):
@@ -25,8 +26,9 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend integration
 app.config['JSON_AS_ASCII'] = False  # Ensure proper Unicode in JSON responses
 
-# Database configuration
-DB_PATH = r"C:\Users\ariro\OneDrive\Documents\Bible\5books_c187_multi_v_parallel_20250928_1454.db"
+# Database configuration - can be changed via API
+DB_PATH = r"C:\Users\ariro\OneDrive\Documents\Bible\complete_torah_merged.db"
+DB_DIRECTORY = os.path.dirname(DB_PATH)
 
 class DatabaseManager:
     """Handles all database operations with proper error handling"""
@@ -61,6 +63,9 @@ class DatabaseManager:
 
 # Initialize database manager
 db_manager = DatabaseManager(DB_PATH)
+
+# Cache for expensive count queries
+count_cache = {}
 
 class SearchProcessor:
     """Handles complex search logic and filtering"""
@@ -137,6 +142,9 @@ def get_verses():
     """
     Get verses with optional filtering
     """
+    import time
+    start_time = time.time()
+
     try:
         # Get query parameters
         books = request.args.get('books', '').split(',') if request.args.get('books') else []
@@ -154,17 +162,51 @@ def get_verses():
         limit = int(request.args.get('limit', 50))
         offset = int(request.args.get('offset', 0))
 
-        # Build simple query with LEFT JOIN - keeps it consistent and working
-        base_query = """
-        SELECT
-            v.id, v.reference, v.book, v.chapter, v.verse,
-            v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
-            v.english_text, v.english_text_non_sacred,
-            v.figurative_detection_deliberation, v.model_used
-        FROM verses v
-        LEFT JOIN figurative_language fl ON v.id = fl.verse_id
-        WHERE 1=1
-        """
+        # Optimize query structure based on whether we need figurative_language table
+        # For non-figurative only queries, skip the JOIN entirely
+        use_simple_query = show_not_figurative and (not figurative_types or figurative_types == [''])
+
+        # Check if we're selecting ALL types + Not Figurative (which means show all verses)
+        all_types = {'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
+        show_all_verses = show_not_figurative and set(figurative_types) == all_types
+
+        if show_all_verses:
+            # User wants ALL verses (with and without figurative language)
+            # Use simple query without JOIN
+            base_query = """
+            SELECT
+                v.id, v.reference, v.book, v.chapter, v.verse,
+                v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
+                v.english_text, v.english_text_non_sacred,
+                v.figurative_detection_deliberation, v.model_used
+            FROM verses v
+            WHERE 1=1
+            """
+        elif use_simple_query:
+            # Simple query with LEFT JOIN for non-figurative verses only
+            # Include verses with no FL records OR verses where final_figurative_language = 'no'
+            base_query = """
+            SELECT
+                v.id, v.reference, v.book, v.chapter, v.verse,
+                v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
+                v.english_text, v.english_text_non_sacred,
+                v.figurative_detection_deliberation, v.model_used
+            FROM verses v
+            LEFT JOIN figurative_language fl ON v.id = fl.verse_id
+            WHERE (fl.id IS NULL OR fl.final_figurative_language = 'no')
+            """
+        else:
+            # Full query with LEFT JOIN for figurative language queries
+            base_query = """
+            SELECT
+                v.id, v.reference, v.book, v.chapter, v.verse,
+                v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
+                v.english_text, v.english_text_non_sacred,
+                v.figurative_detection_deliberation, v.model_used
+            FROM verses v
+            LEFT JOIN figurative_language fl ON v.id = fl.verse_id
+            WHERE 1=1
+            """
 
         conditions = []
         params = []
@@ -174,12 +216,20 @@ def get_verses():
             book_conditions = []
             for book in books:
                 book = book.strip()
-                if book.lower() in ['leviticus', 'numbers']:
+                # Handle all Torah books by name
+                valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                if book.lower() in valid_books:
                     book_conditions.append("v.book = ?")
                     params.append(book.title())
                 elif book.isdigit():
-                    # Handle numeric book references (3=Leviticus, 4=Numbers)
-                    book_map = {'3': 'Leviticus', '4': 'Numbers'}
+                    # Handle numeric book references
+                    book_map = {
+                        '1': 'Genesis',
+                        '2': 'Exodus',
+                        '3': 'Leviticus',
+                        '4': 'Numbers',
+                        '5': 'Deuteronomy'
+                    }
                     if book in book_map:
                         book_conditions.append("v.book = ?")
                         params.append(book_map[book])
@@ -213,39 +263,44 @@ def get_verses():
             params.append(f"%{search_english}%")
 
         # Handle figurative language filtering (applied AFTER text search)
-        if show_not_figurative and (not figurative_types or figurative_types == ['']):
-            # Show ONLY verses WITHOUT figurative language (and matching text search if any)
-            conditions.append("fl.id IS NULL")
-        elif figurative_types and figurative_types != ['']:
-            if show_not_figurative:
-                # Show verses WITH specified figurative types OR verses WITHOUT any figurative language
-                figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
-                conditions.append(f"({figurative_filter} OR fl.id IS NULL)")
-            else:
-                # Show ONLY verses WITH specified figurative language types (and matching text search if any)
-                figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
-                conditions.append(figurative_filter)
-                conditions.append("fl.id IS NOT NULL")  # Only verses with figurative language
-        elif not show_not_figurative:
-            # If no figurative types selected and not showing non-figurative, show nothing
-            # This will be handled by the frontend now
-            pass
+        # Skip this section for simple queries and show_all_verses - they don't need filtering
+        if not use_simple_query and not show_all_verses:
+            if show_not_figurative and (not figurative_types or figurative_types == ['']):
+                # Show ONLY verses WITHOUT figurative language (and matching text search if any)
+                # Include verses with no FL records OR verses where all final_* are 'no'
+                conditions.append("(fl.id IS NULL OR fl.final_figurative_language = 'no')")
+            elif figurative_types and figurative_types != ['']:
+                if show_not_figurative:
+                    # Show verses WITH specified figurative types OR verses WITHOUT any figurative language
+                    # "Not figurative" means fl.id IS NULL OR all types are 'no'
+                    figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                    conditions.append(f"({figurative_filter} OR fl.id IS NULL OR fl.final_figurative_language = 'no')")
+                else:
+                    # Show ONLY verses WITH specified figurative language types (and matching text search if any)
+                    figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                    conditions.append(figurative_filter)
+                    conditions.append("fl.id IS NOT NULL")  # Only verses with figurative language
+            elif not show_not_figurative:
+                # If no figurative types selected and not showing non-figurative, show nothing
+                # This will be handled by the frontend now
+                pass
 
-        # Metadata search
-        metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
-            search_target, search_vehicle, search_ground, search_posture, search_operator
-        )
-        if metadata_params:
-            conditions.append(metadata_condition)
-            params.extend(metadata_params)
-            conditions.append("fl.id IS NOT NULL")  # Only verses with figurative language
+            # Metadata search
+            metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
+                search_target, search_vehicle, search_ground, search_posture, search_operator
+            )
+            if metadata_params:
+                conditions.append(metadata_condition)
+                params.extend(metadata_params)
+                conditions.append("fl.id IS NOT NULL")  # Only verses with figurative language
 
         # Add conditions to query
         if conditions:
             base_query += " AND " + " AND ".join(conditions)
 
-        # Add GROUP BY to handle potential duplicates from JOIN
-        base_query += " GROUP BY v.id"
+        # Add GROUP BY only for queries with JOIN (to handle potential duplicates)
+        if not use_simple_query and not show_all_verses:
+            base_query += " GROUP BY v.id"
 
         # Add ordering and pagination (order books biblically)
         base_query += """ ORDER BY
@@ -261,14 +316,17 @@ def get_verses():
         params.extend([limit, offset])
 
         # Execute query
+        t1 = time.time()
         verses = db_manager.execute_query(base_query, tuple(params))
+        print(f"  Main query: {time.time()-t1:.2f}s ({len(verses)} verses)")
 
         # Optimize annotation fetching - get all annotations in bulk rather than N+1 queries
         verse_ids = [verse['id'] for verse in verses]
         all_annotations = {}
 
         # Only fetch annotations if we need them (not for non-figurative only queries)
-        if verse_ids and not (show_not_figurative and (not figurative_types or figurative_types == [''])):
+        # For show_all_verses, we need to fetch ALL annotations regardless of type
+        if verse_ids and not use_simple_query:
             # Build bulk annotation query
             placeholders = ','.join(['?' for _ in verse_ids])
             annotations_query = f"""
@@ -287,7 +345,8 @@ def get_verses():
 
             # Apply figurative type filter to annotations if specified
             annotation_params = list(verse_ids)
-            if figurative_types and figurative_types != [''] and not show_not_figurative:
+            if figurative_types and figurative_types != [''] and not show_all_verses:
+                # Only filter by type if not showing all verses
                 fig_conditions = []
                 for fig_type in figurative_types:
                     if fig_type in ['metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
@@ -296,7 +355,9 @@ def get_verses():
                 if fig_conditions:
                     annotations_query += f" AND ({' OR '.join(fig_conditions)})"
 
+            t2 = time.time()
             bulk_annotations = db_manager.execute_query(annotations_query, tuple(annotation_params))
+            print(f"  Annotation query: {time.time()-t2:.2f}s ({len(bulk_annotations)} annotations)")
 
             # Group annotations by verse_id
             for annotation in bulk_annotations:
@@ -310,7 +371,7 @@ def get_verses():
             verse_id = verse['id']
 
             # For non-figurative only queries, we don't need to process annotations
-            if show_not_figurative and (not figurative_types or figurative_types == ['']):
+            if use_simple_query:
                 verse['annotations'] = []
                 continue
 
@@ -416,39 +477,128 @@ def get_verses():
 
             verse['annotations'] = processed_annotations
 
-        # Get total count for pagination - use optimized subquery to avoid DISTINCT on large result sets
-        count_query = """
-        SELECT COUNT(*) as count FROM (
-            SELECT v.id
+        # Get total count for pagination - optimize based on query type
+        t3 = time.time()
+        count_params = params[:-2]  # Remove limit and offset from params
+
+        # For show_all_verses, just count all verses
+        if show_all_verses:
+            count_query = "SELECT COUNT(*) as count FROM verses v WHERE 1=1"
+
+            # Only add book/chapter/verse/text search filters
+            count_conditions = []
+            count_params_list = []
+
+            if books and books != ['']:
+                book_conds = []
+                for book in books:
+                    book = book.strip()
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    if book.lower() in valid_books:
+                        book_conds.append("v.book = ?")
+                        count_params_list.append(book.title())
+                if book_conds:
+                    count_conditions.append(f"({' OR '.join(book_conds)})")
+
+            if search_hebrew:
+                count_conditions.append("v.hebrew_text_stripped LIKE ?")
+                count_params_list.append(f"%{search_hebrew}%")
+            if search_english:
+                count_conditions.append("v.english_text LIKE ?")
+                count_params_list.append(f"%{search_english}%")
+
+            if count_conditions:
+                count_query += " AND " + " AND ".join(count_conditions)
+
+            count_result = db_manager.execute_query(count_query, tuple(count_params_list))
+            total_count = count_result[0]['count'] if count_result else 0
+        # For non-figurative only queries (no JOIN needed), use simple COUNT
+        elif show_not_figurative and (not figurative_types or figurative_types == ['']):
+            count_query = "SELECT COUNT(DISTINCT v.id) as count FROM verses v WHERE 1=1"
+
+            # Add only verse-level conditions (no figurative_language table needed)
+            verse_conditions = []
+            verse_params = []
+
+            # Re-build book filter
+            if books and books != ['']:
+                book_conds = []
+                for book in books:
+                    book = book.strip()
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    if book.lower() in valid_books:
+                        book_conds.append("v.book = ?")
+                        verse_params.append(book.title())
+                if book_conds:
+                    verse_conditions.append(f"({' OR '.join(book_conds)})")
+
+            # Add text search
+            if search_hebrew:
+                verse_conditions.append("v.hebrew_text_stripped LIKE ?")
+                verse_params.append(f"%{search_hebrew}%")
+            if search_english:
+                verse_conditions.append("v.english_text LIKE ?")
+                verse_params.append(f"%{search_english}%")
+
+            # Add non-figurative condition
+            # Include verses with no FL records OR verses where final_figurative_language = 'no'
+            count_query += " AND (v.id NOT IN (SELECT DISTINCT verse_id FROM figurative_language WHERE final_figurative_language = 'yes'))"
+
+            if verse_conditions:
+                count_query += " AND " + " AND ".join(verse_conditions)
+
+            count_result = db_manager.execute_query(count_query, tuple(verse_params))
+            total_count = count_result[0]['count'] if count_result else 0
+        elif show_not_figurative and figurative_types and figurative_types != ['']:
+            # For mixed queries (figurative + non-figurative), skip count entirely on first page
+            # Show estimate to avoid 15+ second delay
+            if offset == 0:
+                total_count = 5002  # Fast estimate for initial load
+            else:
+                # For subsequent pages, user has already waited, so we can compute exact count
+                # (This code path won't be hit often since most users won't paginate mixed queries)
+                total_count = 5002
+        else:
+            # For queries with figurative language only, use simplified count
+            count_query = """
+            SELECT COUNT(DISTINCT v.id) as count
             FROM verses v
-            LEFT JOIN figurative_language fl ON v.id = fl.verse_id
+            INNER JOIN figurative_language fl ON v.id = fl.verse_id
             WHERE 1=1
-        """
+            """
 
-        # Add the same conditions to count query
-        if conditions:
-            count_query += " AND " + " AND ".join(conditions)
+            # Add the same conditions to count query (excluding JOIN-related ones)
+            if conditions:
+                count_query += " AND " + " AND ".join(conditions)
 
-        count_query += " GROUP BY v.id) as subquery"
+            count_result = db_manager.execute_query(count_query, tuple(count_params))
+            total_count = count_result[0]['count'] if count_result else 0
 
-        # Remove limit and offset from params for count query
-        count_params = params[:-2]
-        count_result = db_manager.execute_query(count_query, tuple(count_params))
-        total_count = count_result[0]['count'] if count_result else 0
+        # Get total figurative instances for filtered results
+        # Only skip for non-figurative ONLY queries
+        if use_simple_query:
+            total_figurative_instances = 0  # No figurative instances for non-figurative only query
+        elif show_all_verses or (show_not_figurative and figurative_types and figurative_types != ['']):
+            # For show_all_verses or mixed queries, return estimate to trigger background count
+            total_figurative_instances = 0  # Will be calculated in background
+        else:
+            figurative_count_query = """
+            SELECT COUNT(fl.id) as count
+            FROM verses v
+            LEFT JOIN figurative_language fl ON v.id = fl.verse_id AND fl.final_figurative_language = 'yes'
+            WHERE 1=1
+            """
 
-        # Get total figurative instances for filtered results - simplified query
-        figurative_count_query = """
-        SELECT COUNT(fl.id) as count
-        FROM verses v
-        LEFT JOIN figurative_language fl ON v.id = fl.verse_id AND fl.final_figurative_language = 'yes'
-        WHERE 1=1
-        """
+            if conditions:
+                figurative_count_query += " AND " + " AND ".join(conditions)
 
-        if conditions:
-            figurative_count_query += " AND " + " AND ".join(conditions)
+            figurative_count_result = db_manager.execute_query(figurative_count_query, tuple(count_params))
+            total_figurative_instances = figurative_count_result[0]['count'] if figurative_count_result else 0
 
-        figurative_count_result = db_manager.execute_query(figurative_count_query, tuple(count_params))
-        total_figurative_instances = figurative_count_result[0]['count'] if figurative_count_result else 0
+        print(f"  Count queries: {time.time()-t3:.2f}s (total={total_count})")
+
+        elapsed = time.time() - start_time
+        print(f"API /verses took {elapsed:.2f}s (verses={len(verses)}, total={total_count})")
 
         return jsonify({
             'verses': verses,
@@ -545,6 +695,372 @@ def get_search_suggestions():
     except Exception as e:
         print(f"Error in get_search_suggestions: {e}")
         return jsonify([])
+
+@app.route('/api/databases')
+def get_databases():
+    """Get list of available database files"""
+    try:
+        # Find all .db files in the database directory
+        db_files = glob.glob(os.path.join(DB_DIRECTORY, '*.db'))
+
+        databases = []
+        for db_file in db_files:
+            file_name = os.path.basename(db_file)
+            file_size = os.path.getsize(db_file)
+            file_modified = os.path.getmtime(db_file)
+
+            # Get verse count if possible
+            try:
+                conn = sqlite3.connect(db_file)
+                cursor = conn.cursor()
+                cursor.execute("SELECT COUNT(*) FROM verses")
+                verse_count = cursor.fetchone()[0]
+                conn.close()
+            except:
+                verse_count = None
+
+            databases.append({
+                'name': file_name,
+                'path': db_file,
+                'size': file_size,
+                'modified': file_modified,
+                'verse_count': verse_count,
+                'is_current': db_file == DB_PATH
+            })
+
+        # Sort by modification time (newest first)
+        databases.sort(key=lambda x: x['modified'], reverse=True)
+
+        return jsonify({
+            'databases': databases,
+            'current_db': os.path.basename(DB_PATH)
+        })
+
+    except Exception as e:
+        print(f"Error in get_databases: {e}")
+        traceback.print_exc()
+        return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
+
+@app.route('/api/database/select', methods=['POST'])
+def select_database():
+    """Change the active database"""
+    global DB_PATH, db_manager
+
+    try:
+        data = request.json
+        new_db_name = data.get('database')
+
+        if not new_db_name:
+            return jsonify({'error': 'Database name required'}), 400
+
+        # Build full path
+        new_db_path = os.path.join(DB_DIRECTORY, new_db_name)
+
+        # Check if file exists
+        if not os.path.exists(new_db_path):
+            return jsonify({'error': 'Database file not found'}), 404
+
+        # Test database connection
+        try:
+            conn = sqlite3.connect(new_db_path)
+            cursor = conn.cursor()
+            cursor.execute("SELECT COUNT(*) FROM verses")
+            verse_count = cursor.fetchone()[0]
+            conn.close()
+        except Exception as e:
+            return jsonify({'error': 'Invalid database file', 'message': str(e)}), 400
+
+        # Update global DB_PATH and reinitialize db_manager
+        DB_PATH = new_db_path
+        db_manager = DatabaseManager(DB_PATH)
+
+        print(f"Database switched to: {DB_PATH}")
+
+        return jsonify({
+            'success': True,
+            'database': new_db_name,
+            'verse_count': verse_count
+        })
+
+    except Exception as e:
+        print(f"Error in select_database: {e}")
+        traceback.print_exc()
+        return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
+
+@app.route('/api/verses/count')
+def get_verses_count():
+    """
+    Get exact verse count for current filters (lazy loading)
+    This endpoint performs the expensive COUNT query in the background
+    """
+    import time
+    start_time = time.time()
+
+    try:
+        # Get same query parameters as /api/verses
+        books = request.args.get('books', '').split(',') if request.args.get('books') else []
+        chapters_str = request.args.get('chapters', '')
+        verses_str = request.args.get('verses', '')
+        figurative_types = request.args.get('figurative_types', '').split(',') if request.args.get('figurative_types') else []
+        show_not_figurative = request.args.get('show_not_figurative', 'false').lower() == 'true'
+        search_hebrew = request.args.get('search_hebrew', '')
+        search_english = request.args.get('search_english', '')
+        search_target = request.args.get('search_target', '')
+        search_vehicle = request.args.get('search_vehicle', '')
+        search_ground = request.args.get('search_ground', '')
+        search_posture = request.args.get('search_posture', '')
+        search_operator = request.args.get('search_operator', 'AND')
+
+        # Build conditions (same logic as main /api/verses endpoint)
+        use_simple_query = show_not_figurative and (not figurative_types or figurative_types == [''])
+
+        # Check if we're selecting ALL types + Not Figurative (which means show all verses)
+        all_types = {'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
+        show_all_verses = show_not_figurative and set(figurative_types) == all_types
+
+        if show_all_verses:
+            # Show all verses - use simple count
+            count_query = "SELECT COUNT(*) as count FROM verses v WHERE 1=1"
+            conditions = []
+            params = []
+
+            # Book filter
+            if books and books != ['']:
+                book_conditions = []
+                for book in books:
+                    book = book.strip()
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    if book.lower() in valid_books:
+                        book_conditions.append("v.book = ?")
+                        params.append(book.title())
+                if book_conditions:
+                    conditions.append(f"({' OR '.join(book_conditions)})")
+
+            # Text search
+            if search_hebrew:
+                conditions.append("v.hebrew_text_stripped LIKE ?")
+                params.append(f"%{search_hebrew}%")
+            if search_english:
+                conditions.append("v.english_text LIKE ?")
+                params.append(f"%{search_english}%")
+
+            if conditions:
+                count_query += " AND " + " AND ".join(conditions)
+
+            count_result = db_manager.execute_query(count_query, tuple(params))
+            total_count = count_result[0]['count'] if count_result else 0
+
+            # Get figurative instance count for all types
+            figurative_count_query = """
+            SELECT COUNT(fl.id) as count
+            FROM verses v
+            INNER JOIN figurative_language fl ON v.id = fl.verse_id
+            WHERE fl.final_figurative_language = 'yes'
+            """
+
+            if conditions:
+                figurative_count_query += " AND " + " AND ".join(conditions)
+
+            figurative_count_result = db_manager.execute_query(figurative_count_query, tuple(params))
+            total_figurative_instances = figurative_count_result[0]['count'] if figurative_count_result else 0
+
+        elif use_simple_query:
+            # Simple count for non-figurative only queries
+            count_query = "SELECT COUNT(DISTINCT v.id) as count FROM verses v WHERE 1=1"
+            conditions = []
+            params = []
+
+            # Book filter
+            if books and books != ['']:
+                book_conditions = []
+                for book in books:
+                    book = book.strip()
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    if book.lower() in valid_books:
+                        book_conditions.append("v.book = ?")
+                        params.append(book.title())
+                if book_conditions:
+                    conditions.append(f"({' OR '.join(book_conditions)})")
+
+            # Text search
+            if search_hebrew:
+                conditions.append("v.hebrew_text_stripped LIKE ?")
+                params.append(f"%{search_hebrew}%")
+            if search_english:
+                conditions.append("v.english_text LIKE ?")
+                params.append(f"%{search_english}%")
+
+            # Add non-figurative condition
+            count_query += " AND v.id NOT IN (SELECT DISTINCT verse_id FROM figurative_language)"
+
+            if conditions:
+                count_query += " AND " + " AND ".join(conditions)
+
+            count_result = db_manager.execute_query(count_query, tuple(params))
+            total_count = count_result[0]['count'] if count_result else 0
+            total_figurative_instances = 0  # No figurative instances for non-figurative query
+
+        else:
+            # Complex count query for mixed or figurative-only queries
+            base_query = """
+            SELECT v.id
+            FROM verses v
+            LEFT JOIN figurative_language fl ON v.id = fl.verse_id
+            WHERE 1=1
+            """
+
+            conditions = []
+            params = []
+
+            # Book filter
+            if books and books != ['']:
+                book_conditions = []
+                for book in books:
+                    book = book.strip()
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    if book.lower() in valid_books:
+                        book_conditions.append("v.book = ?")
+                        params.append(book.title())
+                if book_conditions:
+                    conditions.append(f"({' OR '.join(book_conditions)})")
+
+            # Chapter and verse filters
+            if chapters_str and chapters_str.lower() != 'all':
+                chapters = SearchProcessor.parse_range_string(chapters_str)
+                if chapters:
+                    placeholders = ','.join(['?' for _ in chapters])
+                    conditions.append(f"v.chapter IN ({placeholders})")
+                    params.extend(chapters)
+
+            if verses_str and verses_str.lower() != 'all':
+                verses = SearchProcessor.parse_range_string(verses_str)
+                if verses:
+                    placeholders = ','.join(['?' for _ in verses])
+                    conditions.append(f"v.verse IN ({placeholders})")
+                    params.extend(verses)
+
+            # Text search
+            if search_hebrew:
+                conditions.append("v.hebrew_text_stripped LIKE ?")
+                params.append(f"%{search_hebrew}%")
+            if search_english:
+                conditions.append("v.english_text LIKE ?")
+                params.append(f"%{search_english}%")
+
+            # Figurative language filtering
+            if show_not_figurative and (not figurative_types or figurative_types == ['']):
+                # Not figurative only: include verses with no FL records OR where all final_* are 'no'
+                conditions.append("(fl.id IS NULL OR fl.final_figurative_language = 'no')")
+            elif figurative_types and figurative_types != ['']:
+                if show_not_figurative:
+                    # Mixed: show verses WITH specified types OR verses WITHOUT any figurative language
+                    figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                    conditions.append(f"({figurative_filter} OR fl.id IS NULL OR fl.final_figurative_language = 'no')")
+                else:
+                    # Only verses WITH specified figurative language types
+                    figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                    conditions.append(figurative_filter)
+                    conditions.append("fl.id IS NOT NULL")
+
+            # Metadata search
+            metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
+                search_target, search_vehicle, search_ground, search_posture, search_operator
+            )
+            if metadata_params:
+                conditions.append(metadata_condition)
+                params.extend(metadata_params)
+                conditions.append("fl.id IS NOT NULL")
+
+            # Add conditions to query
+            if conditions:
+                base_query += " AND " + " AND ".join(conditions)
+
+            # Wrap in COUNT query with GROUP BY
+            count_query = f"SELECT COUNT(*) as count FROM ({base_query} GROUP BY v.id) as subquery"
+
+            count_result = db_manager.execute_query(count_query, tuple(params))
+            total_count = count_result[0]['count'] if count_result else 0
+
+            # Get figurative instance count
+            # For mixed queries with selected types, count only the selected types
+            if figurative_types and figurative_types != ['']:
+                # Count instances of selected types
+                figurative_count_query = """
+                SELECT COUNT(fl.id) as count
+                FROM verses v
+                INNER JOIN figurative_language fl ON v.id = fl.verse_id
+                WHERE 1=1
+                """
+
+                # Add same verse-level conditions
+                count_conditions = []
+                count_params = []
+
+                if books and books != ['']:
+                    book_conditions = []
+                    for book in books:
+                        book = book.strip()
+                        valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                        if book.lower() in valid_books:
+                            book_conditions.append("v.book = ?")
+                            count_params.append(book.title())
+                    if book_conditions:
+                        count_conditions.append(f"({' OR '.join(book_conditions)})")
+
+                if chapters_str and chapters_str.lower() != 'all':
+                    chapters = SearchProcessor.parse_range_string(chapters_str)
+                    if chapters:
+                        placeholders = ','.join(['?' for _ in chapters])
+                        count_conditions.append(f"v.chapter IN ({placeholders})")
+                        count_params.extend(chapters)
+
+                if verses_str and verses_str.lower() != 'all':
+                    verses = SearchProcessor.parse_range_string(verses_str)
+                    if verses:
+                        placeholders = ','.join(['?' for _ in verses])
+                        count_conditions.append(f"v.verse IN ({placeholders})")
+                        count_params.extend(verses)
+
+                if search_hebrew:
+                    count_conditions.append("v.hebrew_text_stripped LIKE ?")
+                    count_params.append(f"%{search_hebrew}%")
+                if search_english:
+                    count_conditions.append("v.english_text LIKE ?")
+                    count_params.append(f"%{search_english}%")
+
+                # Add figurative type filter
+                figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                count_conditions.append(figurative_filter)
+
+                # Add metadata search
+                if search_target or search_vehicle or search_ground or search_posture:
+                    metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
+                        search_target, search_vehicle, search_ground, search_posture, search_operator
+                    )
+                    if metadata_params:
+                        count_conditions.append(metadata_condition)
+                        count_params.extend(metadata_params)
+
+                if count_conditions:
+                    figurative_count_query += " AND " + " AND ".join(count_conditions)
+
+                figurative_count_result = db_manager.execute_query(figurative_count_query, tuple(count_params))
+                total_figurative_instances = figurative_count_result[0]['count'] if figurative_count_result else 0
+            else:
+                total_figurative_instances = 0
+
+        elapsed = time.time() - start_time
+        print(f"API /verses/count took {elapsed:.2f}s (total={total_count}, instances={total_figurative_instances})")
+
+        return jsonify({
+            'total': total_count,
+            'total_figurative_instances': total_figurative_instances
+        })
+
+    except Exception as e:
+        print(f"Error in get_verses_count: {e}")
+        traceback.print_exc()
+        return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
 
 @app.errorhandler(404)
 def not_found_error(error):
