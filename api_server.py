@@ -26,7 +26,7 @@ CORS(app)  # Enable CORS for frontend integration
 app.config['JSON_AS_ASCII'] = False  # Ensure proper Unicode in JSON responses
 
 # Database configuration
-DB_PATH = r"C:\Users\ariro\OneDrive\Documents\Bible\2books_c63_multi_v_parallel_20250928_0934.db"
+DB_PATH = r"C:\Users\ariro\OneDrive\Documents\Bible\5books_c187_multi_v_parallel_20250928_1454.db"
 
 class DatabaseManager:
     """Handles all database operations with proper error handling"""
@@ -144,6 +144,7 @@ def get_verses():
         verses_str = request.args.get('verses', '')
         figurative_types = request.args.get('figurative_types', '').split(',') if request.args.get('figurative_types') else []
         search_hebrew = request.args.get('search_hebrew', '')
+        search_english = request.args.get('search_english', '')
         search_target = request.args.get('search_target', '')
         search_vehicle = request.args.get('search_vehicle', '')
         search_ground = request.args.get('search_ground', '')
@@ -156,7 +157,7 @@ def get_verses():
         base_query = """
         SELECT DISTINCT
             v.id, v.reference, v.book, v.chapter, v.verse,
-            v.hebrew_text, v.hebrew_text_non_sacred,
+            v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
             v.english_text, v.english_text_non_sacred,
             v.figurative_detection_deliberation, v.model_used
         FROM verses v
@@ -206,6 +207,11 @@ def get_verses():
             conditions.append("v.hebrew_text_stripped LIKE ?")
             params.append(f"%{search_hebrew}%")
 
+        # English text search
+        if search_english:
+            conditions.append("v.english_text LIKE ?")
+            params.append(f"%{search_english}%")
+
         # Figurative type filter (only show verses with figurative language if types specified)
         if figurative_types and figurative_types != ['']:
             figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
@@ -225,8 +231,17 @@ def get_verses():
         if conditions:
             base_query += " AND " + " AND ".join(conditions)
 
-        # Add ordering and pagination
-        base_query += " ORDER BY v.book, v.chapter, v.verse LIMIT ? OFFSET ?"
+        # Add ordering and pagination (order books biblically)
+        base_query += """ ORDER BY
+            CASE v.book
+                WHEN 'Genesis' THEN 1
+                WHEN 'Exodus' THEN 2
+                WHEN 'Leviticus' THEN 3
+                WHEN 'Numbers' THEN 4
+                WHEN 'Deuteronomy' THEN 5
+                ELSE 99
+            END, v.chapter, v.verse
+            LIMIT ? OFFSET ?"""
         params.extend([limit, offset])
 
         # Execute query
@@ -300,33 +315,90 @@ def get_verses():
                     if reason:
                         validation_reasons[type_name] = reason
 
+                # Clean contaminated figurative text fields
+                def clean_figurative_text(text):
+                    if not text:
+                        return ''
+
+                    # Remove common contamination patterns from figurative text
+                    cleaned = text
+                    # Remove deliberation patterns
+                    cleaned = re.sub(r'\*+[^*]*\*+', '', cleaned)  # Remove asterisk blocks
+                    cleaned = re.sub(r'I considered[^.]*\.', '', cleaned)  # Remove "I considered..."
+                    cleaned = re.sub(r'This is a[^.]*\.', '', cleaned)  # Remove "This is a..."
+                    cleaned = re.sub(r'\([^)]*(?:head by head|specifically|synecdoche)[^)]*\)', '', cleaned)
+                    cleaned = re.sub(r'"[^"]*"', '', cleaned)  # Remove quoted text
+                    cleaned = re.sub(r'\\n\d*\.?\s*', '', cleaned)  # Remove \n patterns
+                    cleaned = re.sub(r'(?:Considered|Reasoning|Phrase):[^*]*(?=\*|$)', '', cleaned)
+                    cleaned = re.sub(r'json","[^"]*"', '', cleaned)  # Remove JSON fragments
+                    cleaned = re.sub(r'\b(?:metonymy|synecdoche|figurative|literal|language|person|individual)\b', '', cleaned, flags=re.IGNORECASE)
+
+                    # Keep only if it has Hebrew characters or is short English phrase
+                    import unicodedata
+                    hebrew_chars = sum(1 for c in cleaned if '\u0590' <= c <= '\u05FF')
+                    total_chars = len(cleaned.replace(' ', ''))
+
+                    if total_chars > 0:
+                        if hebrew_chars / total_chars > 0.3 or total_chars < 30:  # Mostly Hebrew or short phrase
+                            return cleaned.strip()
+
+                    return ''
+
                 processed_annotations.append({
-                    'figurative_text': annotation['figurative_text'] or '',
-                    'figurative_text_in_hebrew': annotation['figurative_text_in_hebrew'] or '',
-                    'figurative_text_in_hebrew_non_sacred': annotation['figurative_text_in_hebrew_non_sacred'] or '',
+                    'figurative_text': clean_figurative_text(annotation['figurative_text']),
+                    'figurative_text_in_hebrew': clean_figurative_text(annotation['figurative_text_in_hebrew']),
+                    'figurative_text_in_hebrew_non_sacred': clean_figurative_text(annotation['figurative_text_in_hebrew_non_sacred']),
                     'types': types,
                     'target': target,
                     'vehicle': vehicle,
                     'ground': ground,
                     'posture': posture,
-                    'explanation': annotation['explanation'] or '',
+                    'explanation': clean_figurative_text(annotation['explanation']) if annotation['explanation'] else '',
                     'speaker': annotation['speaker'] or '',
                     'confidence': annotation['confidence'] or 0.0,
-                    'validation_reasons': validation_reasons
+                    'validation_reasons': validation_reasons,
+                    # Individual validation reason fields for frontend compatibility
+                    'validation_reason_metaphor': annotation.get('validation_reason_metaphor'),
+                    'validation_reason_simile': annotation.get('validation_reason_simile'),
+                    'validation_reason_personification': annotation.get('validation_reason_personification'),
+                    'validation_reason_idiom': annotation.get('validation_reason_idiom'),
+                    'validation_reason_hyperbole': annotation.get('validation_reason_hyperbole'),
+                    'validation_reason_metonymy': annotation.get('validation_reason_metonymy'),
+                    'validation_reason_other': annotation.get('validation_reason_other')
                 })
 
             verse['annotations'] = processed_annotations
 
-        # Get total count for pagination
-        count_query = base_query.replace(
-            "SELECT DISTINCT\n            v.id, v.reference, v.book, v.chapter, v.verse,\n            v.hebrew_text, v.hebrew_text_non_sacred,\n            v.english_text, v.english_text_non_sacred,\n            v.figurative_detection_deliberation, v.model_used",
-            "SELECT COUNT(DISTINCT v.id) as count"
-        ).replace(" ORDER BY v.book, v.chapter, v.verse LIMIT ? OFFSET ?", "")
+        # Get total count for pagination - build a simpler count query
+        count_query = """
+        SELECT COUNT(DISTINCT v.id) as count
+        FROM verses v
+        LEFT JOIN figurative_language fl ON v.id = fl.verse_id
+        WHERE 1=1
+        """
+
+        # Add the same conditions to count query
+        if conditions:
+            count_query += " AND " + " AND ".join(conditions)
 
         # Remove limit and offset from params for count query
         count_params = params[:-2]
         count_result = db_manager.execute_query(count_query, tuple(count_params))
         total_count = count_result[0]['count'] if count_result else 0
+
+        # Get total figurative instances for filtered results
+        figurative_count_query = """
+        SELECT COUNT(fl.id) as count
+        FROM verses v
+        LEFT JOIN figurative_language fl ON v.id = fl.verse_id AND fl.final_figurative_language = 'yes'
+        WHERE 1=1
+        """
+
+        if conditions:
+            figurative_count_query += " AND " + " AND ".join(conditions)
+
+        figurative_count_result = db_manager.execute_query(figurative_count_query, tuple(count_params))
+        total_figurative_instances = figurative_count_result[0]['count'] if figurative_count_result else 0
 
         return jsonify({
             'verses': verses,
@@ -334,7 +406,8 @@ def get_verses():
                 'limit': limit,
                 'offset': offset,
                 'total': total_count,
-                'has_more': offset + limit < total_count
+                'has_more': offset + limit < total_count,
+                'total_figurative_instances': total_figurative_instances
             }
         })
 
@@ -353,8 +426,12 @@ def get_statistics():
         # Total figurative instances
         total_instances = db_manager.execute_query("SELECT COUNT(*) as count FROM figurative_language")[0]['count']
 
-        # Books
-        books = db_manager.execute_query("SELECT DISTINCT book FROM verses ORDER BY book")
+        # Books in biblical order
+        biblical_order = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy']
+        books_query = db_manager.execute_query("SELECT DISTINCT book FROM verses")
+        available_books = [book['book'] for book in books_query]
+        # Order books according to biblical sequence
+        books = [{'book': book} for book in biblical_order if book in available_books]
 
         # Figurative type counts
         type_counts = {}
