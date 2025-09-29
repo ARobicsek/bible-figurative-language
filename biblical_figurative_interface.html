@@ -43,15 +43,16 @@
         .app-container {
             display: grid;
             grid-template-columns: 300px 1fr;
-            grid-template-rows: auto 1fr auto;
+            grid-template-rows: auto 1fr;
             min-height: 100vh;
             max-height: 100vh;
+            position: relative;
         }
 
         /* Header */
         .header {
             grid-column: 1 / -1;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0a1930 0%, #020408 100%);
             color: white;
             padding: 1rem 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -85,8 +86,8 @@
             font-size: 1.1rem;
             font-weight: 600;
             margin-bottom: 1rem;
-            color: var(--accent-color);
-            border-bottom: 2px solid var(--accent-color);
+            color: #2b394f;
+            border-bottom: 2px solid #2b394f;
             padding-bottom: 0.3rem;
         }
 
@@ -115,7 +116,17 @@
         /* Type Filter Colors */
         .type-filters label {
             position: relative;
-            padding-left: 1.5rem;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .type-filters input[type="checkbox"] {
+            position: relative;
+            z-index: 2;
+            margin-right: 0;
         }
 
         .type-filters input[type="checkbox"]:checked + .filter-color {
@@ -123,13 +134,12 @@
         }
 
         .filter-color {
-            position: absolute;
-            left: 1.2rem;
-            top: 0.1rem;
-            width: 12px;
-            height: 12px;
-            border-radius: 2px;
-            opacity: 0.3;
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            opacity: 0.4;
+            border: 1px solid rgba(0,0,0,0.1);
+            flex-shrink: 0;
         }
 
         .filter-color.metaphor { background-color: var(--metaphor-color); }
@@ -143,6 +153,7 @@
         /* Main Content Area */
         .main-content {
             padding: 1.5rem;
+            padding-bottom: 120px; /* Space for fixed stats bar */
             overflow-y: auto;
             max-height: calc(100vh - 120px);
         }
@@ -197,78 +208,137 @@
             padding-bottom: 1rem;
         }
 
-        /* Annotated Text */
-        .annotated-text {
-            position: relative;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-        }
+        /* Old annotation CSS removed - using simple highlighting approach */
 
-        .annotated-text:hover {
-            background-color: #fff3cd;
-        }
-
-        /* Annotation Lines */
-        .annotation-line {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
+        /* Simple Figurative Text Highlighting */
+        .figurative-highlight {
+            background-color: #fff3cd; /* Light yellow highlighting */
+            padding: 1px 2px;
             border-radius: 2px;
-            transition: opacity 0.2s ease;
+            cursor: pointer;
+            position: relative;
         }
 
-        .annotation-line.metaphor {
+        .figurative-highlight:hover {
+            background-color: #ffeaa7; /* Slightly more yellow on hover */
+        }
+
+        /* Tooltip for showing figurative types */
+        .type-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            white-space: nowrap;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+            margin-bottom: 5px;
+        }
+
+        .type-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .figurative-highlight:hover .type-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Type indicator squares in tooltip */
+        .type-indicator {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 8px;
+        }
+
+        .type-indicator:last-child {
+            margin-right: 0;
+        }
+
+        .type-color-square {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            margin-right: 4px;
+            display: inline-block;
+        }
+
+        .type-color-square.metaphor {
             background-color: var(--metaphor-color);
-            bottom: 8px;
         }
 
-        .annotation-line.simile {
+        .type-color-square.simile {
             background-color: var(--simile-color);
-            bottom: 14px;
         }
 
-        .annotation-line.personification {
+        .type-color-square.personification {
             background-color: var(--personification-color);
-            bottom: 20px;
         }
 
-        .annotation-line.idiom {
+        .type-color-square.idiom {
             background-color: var(--idiom-color);
-            bottom: 26px;
         }
 
-        .annotation-line.hyperbole {
+        .type-color-square.hyperbole {
             background-color: var(--hyperbole-color);
-            bottom: 32px;
         }
 
-        .annotation-line.metonymy {
+        .type-color-square.metonymy {
             background-color: var(--metonymy-color);
-            bottom: 38px;
         }
 
-        .annotation-line.other {
+        .type-color-square.other {
             background-color: var(--other-color);
-            bottom: 44px;
         }
+
+        /* Old annotation line CSS removed */
 
         /* Bottom Detail Panel */
         .detail-panel {
-            grid-column: 1 / -1;
+            position: fixed;
+            bottom: 0;
+            left: 300px;
+            right: 0;
             background-color: white;
             border-top: 1px solid var(--border-color);
             padding: 1.5rem;
-            max-height: 300px;
+            max-height: 40vh;
             overflow-y: auto;
             transform: translateY(100%);
             transition: transform 0.3s ease;
-            position: relative;
+            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+            z-index: 1000;
         }
 
         .detail-panel.active {
             transform: translateY(0);
+        }
+
+        /* Larger panel for annotation details */
+        .detail-panel.annotation-details {
+            max-height: 60vh;
+        }
+
+        /* Adjust main content when panel is open */
+        .main-content.panel-open {
+            padding-bottom: 40vh;
+        }
+
+        .main-content.panel-open-large {
+            padding-bottom: 60vh;
         }
 
         .panel-header {
@@ -344,7 +414,7 @@
         @media (max-width: 768px) {
             .app-container {
                 grid-template-columns: 1fr;
-                grid-template-rows: auto auto 1fr auto;
+                grid-template-rows: auto auto 1fr;
             }
 
             .sidebar {
@@ -361,6 +431,15 @@
             .hebrew-text {
                 order: -1;
             }
+
+            .detail-panel {
+                left: 0;
+                max-height: 50vh;
+            }
+
+            .main-content.panel-open {
+                padding-bottom: 50vh;
+            }
         }
 
         /* Search Highlighting */
@@ -372,10 +451,127 @@
         /* Stats Bar */
         .stats-bar {
             background-color: #f8f9fa;
-            padding: 0.5rem 1rem;
-            border-bottom: 1px solid var(--border-color);
-            font-size: 0.9rem;
+            padding: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.95rem;
             color: #6c757d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stats-text {
+            flex: 1;
+        }
+
+        .nav-button {
+            background: linear-gradient(135deg, #0a1930 0%, #2b394f 100%);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-button:hover {
+            background: linear-gradient(135deg, #2b394f 0%, #0a1930 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        /* Hebrew Keyboard Styles */
+        .search-type-toggle {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .toggle-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid #2b394f;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            color: #2b394f;
+        }
+
+        .toggle-btn:hover {
+            background-color: #f8f9fa;
+        }
+
+        .toggle-btn.active {
+            background-color: #2b394f;
+            color: white;
+            border-color: #2b394f;
+        }
+
+        .hebrew-keyboard {
+            display: none;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 0.25rem;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .hebrew-keyboard.active {
+            display: grid;
+        }
+
+        .hebrew-key {
+            padding: 0.5rem;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 3px;
+            cursor: pointer;
+            text-align: center;
+            font-family: 'Noto Sans Hebrew', serif;
+            font-size: 1.1rem;
+            transition: background-color 0.1s ease;
+        }
+
+        .hebrew-key:hover {
+            background-color: #e9ecef;
+        }
+
+        .search-input-container {
+            position: relative;
+        }
+
+        .keyboard-toggle {
+            position: absolute;
+            right: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            border: 1px solid #2b394f;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #2b394f;
+            border-radius: 3px;
+            padding: 2px 6px;
+            transition: all 0.2s ease;
+        }
+
+        .keyboard-toggle:hover {
+            background-color: #f8f9fa;
         }
     </style>
 </head>
@@ -383,7 +579,7 @@
     <div class="app-container">
         <!-- Header -->
         <header class="header">
-            <h1>📚 Biblical Figurative Language Interface</h1>
+            <h1>Biblical Figurative Language Interface</h1>
             <p>Interactive analysis of figurative language in Hebrew biblical texts</p>
         </header>
 
@@ -391,7 +587,7 @@
         <aside class="sidebar">
             <!-- Book/Chapter Selection -->
             <section class="book-selection">
-                <h3>📖 Text Selection</h3>
+                <h3>Text Selection</h3>
                 <label for="book-select">Books:</label>
                 <select id="book-select" multiple>
                     <option value="leviticus">Leviticus</option>
@@ -401,12 +597,19 @@
                 <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
                 <label for="verse-input">Verses:</label>
                 <input type="text" id="verse-input" placeholder="e.g., 1-5,10,15 or 'all'">
-                <button id="load-verses" class="btn btn-primary" style="width: 100%; padding: 0.5rem; background: var(--accent-color); color: white; border: none; border-radius: 4px; cursor: pointer; margin-top: 0.5rem;">Load Verses</button>
+                <button id="load-verses" class="btn btn-primary" style="width: 100%; padding: 0.5rem; background: #2b394f; color: white; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; margin-top: 0.5rem; transition: all 0.2s ease;">Load Verses</button>
             </section>
 
             <!-- Figurative Type Filters -->
             <section class="type-filters">
-                <h3>🎭 Figurative Language Types</h3>
+                <h3>Figurative Language Types</h3>
+
+                <!-- Select All / Clear All Buttons -->
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                    <button id="select-all-types" style="flex: 1; padding: 0.4rem 0.8rem; background: #2b394f; color: white; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;">Select All</button>
+                    <button id="clear-all-types" style="flex: 1; padding: 0.4rem 0.8rem; background: white; color: #2b394f; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;">Clear All</button>
+                </div>
+
                 <label>
                     <input type="checkbox" value="metaphor" checked>
                     <span class="filter-color metaphor"></span>
@@ -446,7 +649,7 @@
 
             <!-- Text Version Toggle -->
             <section class="text-options">
-                <h3>📜 Text Version</h3>
+                <h3>Text Version</h3>
                 <div style="margin-bottom: 1rem;">
                     <strong>Hebrew:</strong><br>
                     <label><input type="radio" name="hebrew-version" value="sacred" checked> Sacred Names</label>
@@ -461,9 +664,56 @@
 
             <!-- Advanced Search -->
             <section class="advanced-search">
-                <h3>🔍 Search</h3>
-                <input type="text" id="hebrew-search" placeholder="Search Hebrew text...">
-                <div class="metadata-search" style="margin-top: 1rem;">
+                <h3>Search Biblical Text</h3>
+
+                <!-- Search Type Toggle -->
+                <div class="search-type-toggle">
+                    <button class="toggle-btn active" id="hebrew-toggle" onclick="toggleSearchType('hebrew')">Hebrew</button>
+                    <button class="toggle-btn" id="english-toggle" onclick="toggleSearchType('english')">English</button>
+                </div>
+
+                <!-- Search Input with Keyboard Toggle -->
+                <div class="search-input-container">
+                    <input type="text" id="search-input" placeholder="Search Hebrew text..." style="padding-right: 2rem;">
+                    <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()" title="Toggle Hebrew Keyboard">⌨</button>
+                </div>
+
+                <!-- Hebrew Virtual Keyboard -->
+                <div class="hebrew-keyboard" id="hebrew-keyboard">
+                    <div class="hebrew-key" onclick="insertHebrew('א')">א</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ב')">ב</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ג')">ג</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ד')">ד</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ה')">ה</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ו')">ו</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ז')">ז</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ח')">ח</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ט')">ט</div>
+                    <div class="hebrew-key" onclick="insertHebrew('י')">י</div>
+                    <div class="hebrew-key" onclick="insertHebrew('כ')">כ</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ל')">ל</div>
+                    <div class="hebrew-key" onclick="insertHebrew('מ')">מ</div>
+                    <div class="hebrew-key" onclick="insertHebrew('נ')">נ</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ס')">ס</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ע')">ע</div>
+                    <div class="hebrew-key" onclick="insertHebrew('פ')">פ</div>
+                    <div class="hebrew-key" onclick="insertHebrew('צ')">צ</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ק')">ק</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ר')">ר</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ש')">ש</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ת')">ת</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ך')">ך</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ם')">ם</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ן')">ן</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ף')">ף</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ץ')">ץ</div>
+                    <div class="hebrew-key" onclick="clearSearch()">Clear</div>
+                    <div class="hebrew-key" onclick="insertHebrew(' ')">Space</div>
+                    <div class="hebrew-key" onclick="deleteLastChar()">⌫</div>
+                </div>
+
+                <h4 style="color: #2b394f; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">Search for Tag</h4>
+                <div class="metadata-search" style="margin-top: 0.5rem;">
                     <input type="text" id="target-search" placeholder="Target...">
                     <input type="text" id="vehicle-search" placeholder="Vehicle...">
                     <input type="text" id="ground-search" placeholder="Ground...">
@@ -478,15 +728,16 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <div class="stats-bar" id="stats-bar">
-                Loading...
-            </div>
-
             <div id="verses-container">
                 <div class="loading">
                     <div class="spinner"></div>
                     <p>Loading verses...</p>
                 </div>
+            </div>
+
+            <!-- Stats and Navigation Bar at Bottom -->
+            <div class="stats-bar" id="stats-bar">
+                Loading...
             </div>
         </main>
 
@@ -519,8 +770,9 @@
             selectedTypes: new Set(['metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']),
             hebrewVersion: 'sacred',
             englishVersion: 'sacred',
+            searchType: 'hebrew', // 'hebrew' or 'english'
             currentSearch: {
-                hebrew: '',
+                text: '',
                 target: '',
                 vehicle: '',
                 ground: '',
@@ -588,7 +840,7 @@
             });
 
             // Search inputs
-            document.getElementById('hebrew-search').addEventListener('input', debounce(handleSearch, 300));
+            document.getElementById('search-input').addEventListener('input', debounce(handleSearch, 300));
             document.getElementById('target-search').addEventListener('input', debounce(handleSearch, 300));
             document.getElementById('vehicle-search').addEventListener('input', debounce(handleSearch, 300));
             document.getElementById('ground-search').addEventListener('input', debounce(handleSearch, 300));
@@ -598,6 +850,27 @@
             // Panel controls
             elements.closePanel.addEventListener('click', closeDetailPanel);
             elements.loadBtn.addEventListener('click', loadVerses);
+
+            // Select All / Clear All buttons for figurative language types
+            document.getElementById('select-all-types').addEventListener('click', function() {
+                document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
+                    if (!checkbox.checked) {
+                        checkbox.checked = true;
+                        appState.selectedTypes.add(checkbox.value);
+                    }
+                });
+                filterAndRenderVerses();
+            });
+
+            document.getElementById('clear-all-types').addEventListener('click', function() {
+                document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
+                    if (checkbox.checked) {
+                        checkbox.checked = false;
+                        appState.selectedTypes.delete(checkbox.value);
+                    }
+                });
+                filterAndRenderVerses();
+            });
         }
 
         function debounce(func, wait) {
@@ -614,7 +887,7 @@
 
         function handleSearch() {
             appState.currentSearch = {
-                hebrew: document.getElementById('hebrew-search').value,
+                text: document.getElementById('search-input').value,
                 target: document.getElementById('target-search').value,
                 vehicle: document.getElementById('vehicle-search').value,
                 ground: document.getElementById('ground-search').value,
@@ -622,6 +895,64 @@
                 operator: document.getElementById('search-operator').value
             };
             filterAndRenderVerses();
+        }
+
+        // Hebrew Keyboard Functions
+        function toggleSearchType(type) {
+            appState.searchType = type;
+            const hebrewToggle = document.getElementById('hebrew-toggle');
+            const englishToggle = document.getElementById('english-toggle');
+            const searchInput = document.getElementById('search-input');
+            const keyboardToggle = document.getElementById('keyboard-toggle');
+
+            if (type === 'hebrew') {
+                hebrewToggle.classList.add('active');
+                englishToggle.classList.remove('active');
+                searchInput.placeholder = 'Search Hebrew text...';
+                searchInput.style.direction = 'rtl';
+                searchInput.style.textAlign = 'right';
+                keyboardToggle.style.display = 'block';
+            } else {
+                englishToggle.classList.add('active');
+                hebrewToggle.classList.remove('active');
+                searchInput.placeholder = 'Search English text...';
+                searchInput.style.direction = 'ltr';
+                searchInput.style.textAlign = 'left';
+                keyboardToggle.style.display = 'none';
+                document.getElementById('hebrew-keyboard').classList.remove('active');
+            }
+
+            // Clear search when switching types
+            searchInput.value = '';
+            handleSearch();
+        }
+
+        function toggleHebrewKeyboard() {
+            const keyboard = document.getElementById('hebrew-keyboard');
+            keyboard.classList.toggle('active');
+        }
+
+        function insertHebrew(char) {
+            const input = document.getElementById('search-input');
+            const cursorPos = input.selectionStart;
+            const value = input.value;
+            input.value = value.substring(0, cursorPos) + char + value.substring(cursorPos);
+            input.setSelectionRange(cursorPos + char.length, cursorPos + char.length);
+            input.focus();
+            handleSearch();
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            handleSearch();
+        }
+
+        function deleteLastChar() {
+            const input = document.getElementById('search-input');
+            if (input.value.length > 0) {
+                input.value = input.value.slice(0, -1);
+                handleSearch();
+            }
         }
 
         // API Functions
@@ -689,7 +1020,11 @@
                 const data = await makeAPICall('/verses', params);
                 if (data) {
                     appState.verses = data.verses;
-                    appState.pagination = data.pagination;
+                    // Convert API response to frontend format
+                    appState.pagination = {
+                        ...data.pagination,
+                        hasMore: data.pagination.has_more // Convert snake_case to camelCase
+                    };
                     appState.filteredVerses = appState.verses; // API already filters
                     renderVerses();
                     updateStats();
@@ -717,7 +1052,7 @@
             elements.versesContainer.innerHTML = `
                 <div class="loading">
                     <p style="color: #e74c3c;">⚠️ ${message}</p>
-                    <button onclick="loadDefaultVerses()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: var(--accent-color); color: white; border: none; border-radius: 4px; cursor: pointer;">
+                    <button onclick="loadDefaultVerses()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: #2b394f; color: white; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; transition: all 0.2s ease;">
                         Try Again
                     </button>
                 </div>
@@ -740,7 +1075,8 @@
                 chapters: chapters || 'all',
                 verses: verses || 'all',
                 figurative_types: Array.from(appState.selectedTypes).join(','),
-                search_hebrew: appState.currentSearch.hebrew,
+                search_hebrew: appState.searchType === 'hebrew' ? appState.currentSearch.text : '',
+                search_english: appState.searchType === 'english' ? appState.currentSearch.text : '',
                 search_target: appState.currentSearch.target,
                 search_vehicle: appState.currentSearch.vehicle,
                 search_ground: appState.currentSearch.ground,
@@ -751,6 +1087,76 @@
             };
         }
 
+        function cleanHebrewText(text) {
+            if (!text) return text;
+
+            // Strategy: Extract only Hebrew text by finding Hebrew character sequences
+            // and common Hebrew text markers
+
+            // First, remove HTML entities
+            let processed = text
+                .replace(/&nbsp;/g, ' ')
+                .replace(/&amp;/g, '&')
+                .replace(/&lt;/g, '<')
+                .replace(/&gt;/g, '>')
+                .replace(/&quot;/g, '"')
+                .replace(/&#x?\d+;/g, '');
+
+            // Split text into segments and keep only those with significant Hebrew content
+            const segments = processed.split(/[\n\r]+/);
+            const hebrewSegments = [];
+
+            for (let segment of segments) {
+                // Clean segment of obvious contamination patterns
+                let cleanSegment = segment
+                    // Remove everything within asterisks
+                    .replace(/\*+[^*]*\*+/g, '')
+                    // Remove parenthetical English explanations
+                    .replace(/\([^)]*(?:head by head|specifically|synecdoche)[^)]*\)/g, '')
+                    // Remove quoted translations
+                    .replace(/\s*"[^"]*"\s*/g, ' ')
+                    // Remove backslash-n patterns
+                    .replace(/\\n\d*\.?\s*/g, '')
+                    // Remove common deliberation starters
+                    .replace(/(?:I considered|This is a|If |The part |It is a common|Therefore|Reasoning:|Considered:|Phrase:)[^.]*\.?/g, '')
+                    // Remove JSON-like patterns
+                    .replace(/json","[^"]*"/g, '')
+                    .replace(/verse_model_used[^}]*/g, '')
+                    // Remove stand-alone English words that are clearly not Hebrew
+                    .replace(/\b(?:metonymy|synecdoche|figurative|literal|language|person|individual|counting|census|army|military|service|eligibility|procedural|formulation|guidelines|instructions)\b/gi, '')
+                    .trim();
+
+                // Count Hebrew characters in this cleaned segment
+                const hebrewChars = (cleanSegment.match(/[\u0590-\u05FF]/g) || []).length;
+                const totalChars = cleanSegment.replace(/\s/g, '').length;
+
+                // Keep segment if it has substantial Hebrew content (>50%) and some actual content
+                if (totalChars > 3 && hebrewChars / totalChars > 0.5) {
+                    hebrewSegments.push(cleanSegment);
+                }
+            }
+
+            // Join the Hebrew segments
+            let result = hebrewSegments.join(' ').trim();
+
+            // Final cleanup
+            result = result
+                .replace(/\s{2,}/g, ' ')  // Multiple spaces to single
+                .replace(/^\s*[*\-•]\s*/gm, '')  // Remove bullet points
+                .replace(/\s*[{}]\s*/g, ' ')  // Remove stray braces
+                .trim();
+
+            // If result is too short or still contaminated, return empty for fallback
+            const finalHebrewChars = (result.match(/[\u0590-\u05FF]/g) || []).length;
+            const finalTotalChars = result.replace(/\s/g, '').length;
+
+            if (finalTotalChars < 5 || (finalTotalChars > 0 && finalHebrewChars / finalTotalChars < 0.7)) {
+                return '';  // Let fallback mechanism handle this
+            }
+
+            return result;
+        }
+
         function renderVerses() {
             if (appState.filteredVerses.length === 0) {
                 elements.versesContainer.innerHTML = '<div class="loading"><p>No verses match your current filters.</p></div>';
@@ -758,30 +1164,48 @@
             }
 
             const versesHTML = appState.filteredVerses.map(verse => {
-                const hebrewText = appState.hebrewVersion === 'sacred' ? verse.hebrew_text : verse.hebrew_text_non_sacred;
+                // Debug logging for problematic verses
+                if (verse.reference === 'Numbers 1:22') {
+                    console.log('=== DEBUGGING Numbers 1:22 ===');
+                    console.log('verse.hebrew_text:', verse.hebrew_text);
+                    console.log('verse.hebrew_text_stripped:', verse.hebrew_text_stripped);
+                    console.log('verse.hebrew_text_non_sacred:', verse.hebrew_text_non_sacred);
+                    console.log('Raw before cleaning:', appState.hebrewVersion === 'sacred' ? verse.hebrew_text : verse.hebrew_text_non_sacred);
+                }
+
+                let hebrewText = cleanHebrewText(appState.hebrewVersion === 'sacred' ? verse.hebrew_text : verse.hebrew_text_non_sacred);
+
+                // Debug logging continued
+                if (verse.reference === 'Numbers 1:22') {
+                    console.log('After cleanHebrewText:', hebrewText);
+                }
+
+                // If Hebrew text is empty after cleaning (heavily contaminated), try the stripped version
+                if (!hebrewText && verse.hebrew_text_stripped) {
+                    hebrewText = cleanHebrewText(verse.hebrew_text_stripped);
+                    if (verse.reference === 'Numbers 1:22') {
+                        console.log('Using stripped version:', hebrewText);
+                    }
+                }
+
+                // If still empty, show a placeholder
+                if (!hebrewText) {
+                    hebrewText = '[Hebrew text unavailable - contaminated data]';
+                    if (verse.reference === 'Numbers 1:22') {
+                        console.log('Using placeholder');
+                    }
+                }
+
                 const englishText = appState.englishVersion === 'sacred' ? verse.english_text : verse.english_text_non_sacred;
 
-                const annotationsHTML = verse.annotations.map(annotation => {
-                    const visibleTypes = annotation.types.filter(type => appState.selectedTypes.has(type));
-                    if (visibleTypes.length === 0) return '';
-
-                    const annotationLinesHTML = visibleTypes.map(type =>
-                        `<div class="annotation-line ${type}"></div>`
-                    ).join('');
-
-                    const hebrewFigText = appState.hebrewVersion === 'sacred' ?
-                        annotation.figurative_text_in_hebrew :
-                        annotation.figurative_text_in_hebrew_non_sacred;
-
-                    return `
-                        <div class="annotation-container">
-                            <span class="annotated-text" data-annotation='${JSON.stringify(annotation)}'>
-                                ${annotation.figurative_text}
-                            </span>
-                            ${annotationLinesHTML}
-                        </div>
-                    `;
-                }).join('');
+                // Add verse information to each annotation for synchronization
+                const annotationsWithVerseInfo = verse.annotations.map(annotation => ({
+                    ...annotation,
+                    verse_reference: verse.reference,
+                    verse_id: verse.id,
+                    verse_deliberation: verse.figurative_detection_deliberation,
+                    verse_model_used: verse.model_used
+                }));
 
                 return `
                     <div class="verse-container">
@@ -790,10 +1214,10 @@
                         </div>
                         <div class="verse-content">
                             <div class="english-text">
-                                ${highlightAnnotations(englishText, verse.annotations, 'english')}
+                                ${highlightAnnotations(englishText, annotationsWithVerseInfo, 'english')}
                             </div>
                             <div class="hebrew-text">
-                                ${highlightAnnotations(hebrewText, verse.annotations, 'hebrew')}
+                                ${highlightAnnotations(hebrewText, annotationsWithVerseInfo, 'hebrew')}
                             </div>
                         </div>
                     </div>
@@ -802,8 +1226,8 @@
 
             elements.versesContainer.innerHTML = versesHTML;
 
-            // Add click listeners to annotated text
-            document.querySelectorAll('.annotated-text').forEach(element => {
+            // Add click listeners to highlighted figurative text
+            document.querySelectorAll('.figurative-highlight').forEach(element => {
                 element.addEventListener('click', function(e) {
                     e.stopPropagation();
                     const annotation = JSON.parse(this.dataset.annotation);
@@ -812,26 +1236,393 @@
             });
         }
 
+        function createSimpleHighlight(matchedText, cleanAnnotation) {
+            // Simple yellow highlighting approach - works for all cases
+            const visibleTypes = cleanAnnotation.types?.filter(type => appState.selectedTypes.has(type)) || [];
+
+            if (visibleTypes.length === 0) {
+                return matchedText;
+            }
+
+            // Create tooltip content with type indicators
+            const typeIndicators = visibleTypes.map(type => {
+                const typeDisplayName = type.charAt(0).toUpperCase() + type.slice(1);
+                return `<span class="type-indicator"><span class="type-color-square ${type}"></span>${typeDisplayName}</span>`;
+            }).join('');
+
+            const tooltip = `<div class="type-tooltip">${typeIndicators}</div>`;
+
+            return `<span class="figurative-highlight" data-annotation='${JSON.stringify(cleanAnnotation).replace(/'/g, "&apos;")}'>${matchedText}${tooltip}</span>`;
+        }
+
+        // Function removed - using simple highlighting approach instead
+
         function highlightAnnotations(text, annotations, language) {
+            if (!text || !annotations || annotations.length === 0) {
+                return text || '';
+            }
+
             let highlightedText = text;
 
-            annotations.forEach(annotation => {
-                const figurativeText = language === 'hebrew' ?
+            // Simple helper to handle divine name differences for English non-sacred text
+            function handleDivineNameVariations(figText, verseText, lang) {
+                if (lang === 'english' && appState.englishVersion === 'non-sacred') {
+                    // For English non-sacred, figurative_text might have יהוה but english_text_non_sacred has ה׳
+                    return figText.replace(/יהוה/g, 'ה׳');
+                }
+                return figText;
+            }
+
+            // Helper function to extract core text from explanatory phrases
+            function extractCoreText(figText) {
+                if (!figText) return '';
+
+                // Remove parenthetical explanations like "(lit. 'his hand reaches')"
+                let coreText = figText.replace(/\s*\([^)]*\)/g, '');
+
+                // Remove bracketed explanations
+                coreText = coreText.replace(/\s*\[[^\]]*\]/g, '');
+
+                // Clean up whitespace
+                return coreText.replace(/\s+/g, ' ').trim();
+            }
+
+            // Filter annotations to only those that match the language and have visible types
+            const relevantAnnotations = annotations.filter(annotation => {
+                const rawFigurativeText = language === 'hebrew' ?
                     (appState.hebrewVersion === 'sacred' ? annotation.figurative_text_in_hebrew : annotation.figurative_text_in_hebrew_non_sacred) :
                     annotation.figurative_text;
+                const figurativeText = language === 'hebrew' ? cleanHebrewText(rawFigurativeText) : rawFigurativeText;
 
-                if (figurativeText && highlightedText.includes(figurativeText)) {
-                    const visibleTypes = annotation.types.filter(type => appState.selectedTypes.has(type));
-                    if (visibleTypes.length > 0) {
-                        const annotationLinesHTML = visibleTypes.map(type =>
-                            `<div class="annotation-line ${type}"></div>`
-                        ).join('');
+                const visibleTypes = annotation.types.filter(type => appState.selectedTypes.has(type));
 
-                        highlightedText = highlightedText.replace(
-                            figurativeText,
-                            `<span class="annotated-text" data-annotation='${JSON.stringify(annotation).replace(/'/g, "&apos;")}'>${figurativeText}${annotationLinesHTML}</span>`
-                        );
+                if (!figurativeText || visibleTypes.length === 0) {
+                    return false;
+                }
+
+                // Try exact match first (should work in most cases)
+                if (highlightedText.includes(figurativeText)) {
+                    return true;
+                }
+
+                // For Hebrew, also try matching with HTML tags and entities removed
+                if (language === 'hebrew') {
+                    const textWithoutHTML = highlightedText
+                        .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
+                        .replace(/<[^>]*>/g, '') // Remove other HTML tags
+                        .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
+                        .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
+                        .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
+                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                        .replace(/־/g, ' ') // Replace Hebrew hyphens with spaces
+                        .replace(/\s+/g, ' ') // Normalize whitespace
+                        .trim();
+
+                    // Also normalize the figurative text for comparison
+                    const normalizedFigText = figurativeText
+                        .replace(/־/g, ' ') // Replace Hebrew hyphens with spaces
+                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                        .replace(/\s+/g, ' ')
+                        .trim();
+
+                    if (textWithoutHTML.includes(figurativeText) || textWithoutHTML.includes(normalizedFigText)) {
+                        return true;
                     }
+                }
+
+                // Handle divine name variations for English non-sacred
+                const adjustedFigText = handleDivineNameVariations(figurativeText, highlightedText, language);
+                if (adjustedFigText !== figurativeText && highlightedText.includes(adjustedFigText)) {
+                    return true;
+                }
+
+                // Extract core text (remove parenthetical explanations) and try matching
+                const coreText = extractCoreText(figurativeText);
+                if (coreText && coreText !== figurativeText) {
+                    if (highlightedText.includes(coreText)) {
+                        return true;
+                    }
+                    // For Hebrew, also try core text with HTML tags and entities removed
+                    if (language === 'hebrew') {
+                        const textWithoutHTML = highlightedText
+                            .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
+                        .replace(/<[^>]*>/g, '') // Remove other HTML tags
+                            .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
+                            .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
+                            .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
+                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                            .replace(/־/g, ' ') // Replace Hebrew hyphens with spaces
+                            .replace(/\s+/g, ' ') // Normalize whitespace
+                            .trim();
+
+                        const normalizedCoreText = coreText
+                            .replace(/־/g, ' ') // Replace Hebrew hyphens with spaces
+                            .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                            .replace(/\s+/g, ' ')
+                            .trim();
+
+                        if (textWithoutHTML.includes(coreText) || textWithoutHTML.includes(normalizedCoreText)) {
+                            return true;
+                        }
+                    }
+                }
+
+                // Case-insensitive match for English
+                if (language === 'english' && highlightedText.toLowerCase().includes(figurativeText.toLowerCase())) {
+                    return true;
+                }
+
+                // Case-insensitive match for core text in English
+                if (language === 'english' && coreText && highlightedText.toLowerCase().includes(coreText.toLowerCase())) {
+                    return true;
+                }
+
+                return false;
+            });
+
+            // Get verse reference for debugging (extract from current verse context)
+            let verseRef = 'Unknown';
+            try {
+                const verseContainer = document.querySelector('.verse-container:has(.hebrew-text)');
+                if (verseContainer) {
+                    const headerElement = verseContainer.querySelector('.verse-header');
+                    if (headerElement) {
+                        verseRef = headerElement.textContent.trim();
+                    }
+                }
+            } catch (e) {
+                // Fallback: extract from text if possible
+                if (annotations.length > 0 && annotations[0].verse_reference) {
+                    verseRef = annotations[0].verse_reference;
+                }
+            }
+
+            console.log(`[${verseRef}] Language: ${language}, Found ${relevantAnnotations.length} relevant annotations for text: "${text.substring(0, 50)}..."`);
+
+            // Debug specific phrases - enhanced debugging for Leviticus 1:13 and 1:17
+            if (text.includes('רֵיחַ') || text.includes('נִיחֹחַ') || text.includes('ליהוה') || text.includes('ליה') || verseRef.includes('Leviticus 1:1')) {
+                console.log(`[${verseRef}] *** Debugging divine name phrase ***`);
+                console.log(`[${verseRef}] Text:`, text);
+                console.log(`[${verseRef}] Hebrew version:`, appState.hebrewVersion);
+                annotations.forEach((ann, i) => {
+                    const figText = language === 'hebrew' ?
+                        (appState.hebrewVersion === 'sacred' ? ann.figurative_text_in_hebrew : ann.figurative_text_in_hebrew_non_sacred) :
+                        ann.figurative_text;
+                    console.log(`[${verseRef}] Annotation ${i+1}: "${figText}"`);
+                    console.log(`[${verseRef}] Match test: ${text.includes(figText || '')}`);
+
+                    // Test normalized matching
+                    if (language === 'hebrew' && figText) {
+                        const textWithoutHTML = text
+                            .replace(/<[^>]*>/g, '')
+                            .replace(/&nbsp;/g, ' ')
+                            .replace(/&[a-zA-Z0-9#]+;/g, ' ')
+                            .replace(/\{[^}]*\}/g, '')
+                            .replace(/־/g, ' ')
+                            .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                            .replace(/\s+/g, ' ')
+                            .trim();
+
+                        const normalizedFigText = figText
+                            .replace(/־/g, ' ')
+                            .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                            .replace(/\s+/g, ' ')
+                            .trim();
+
+                        console.log(`[${verseRef}] Normalized text: "${textWithoutHTML}"`);
+                        console.log(`[${verseRef}] Original figText: "${figText}"`);
+                        console.log(`[${verseRef}] Normalized figText: "${normalizedFigText}"`);
+                        console.log(`[${verseRef}] Normalized match test: ${textWithoutHTML.includes(figText)} || ${textWithoutHTML.includes(normalizedFigText)}`);
+                    }
+                });
+            }
+
+            // Debug line break issues
+            if (text.includes('<') || text.includes('ונשא')) {
+                console.log(`[${verseRef}] *** Debugging potential line breaks ***`);
+                console.log(`[${verseRef}] Raw text:`, text);
+                console.log(`[${verseRef}] Text without HTML:`, text.replace(/<[^>]*>/g, ''));
+            }
+
+            // Sort by length (longest first) to avoid replacement conflicts
+            relevantAnnotations.sort((a, b) => {
+                const rawTextA = language === 'hebrew' ?
+                    (appState.hebrewVersion === 'sacred' ? a.figurative_text_in_hebrew : a.figurative_text_in_hebrew_non_sacred) :
+                    a.figurative_text;
+                const rawTextB = language === 'hebrew' ?
+                    (appState.hebrewVersion === 'sacred' ? b.figurative_text_in_hebrew : b.figurative_text_in_hebrew_non_sacred) :
+                    b.figurative_text;
+                const textA = language === 'hebrew' ? cleanHebrewText(rawTextA) : rawTextA;
+                const textB = language === 'hebrew' ? cleanHebrewText(rawTextB) : rawTextB;
+                return (textB || '').length - (textA || '').length;
+            });
+
+            relevantAnnotations.forEach((annotation, annIndex) => {
+                const rawFigurativeText = language === 'hebrew' ?
+                    (appState.hebrewVersion === 'sacred' ? annotation.figurative_text_in_hebrew : annotation.figurative_text_in_hebrew_non_sacred) :
+                    annotation.figurative_text;
+                const figurativeText = language === 'hebrew' ? cleanHebrewText(rawFigurativeText) : rawFigurativeText;
+
+                // Debug logging for Numbers 1:22 annotations
+                if (text.includes('לִבְנֵ֣י שִׁמְע֔וֹן')) {
+                    console.log('=== ANNOTATION DEBUG ===');
+                    console.log('Raw figurative text:', rawFigurativeText);
+                    console.log('Cleaned figurative text:', figurativeText);
+                    console.log('Full annotation object:', annotation);
+                }
+
+                // Find the best match in the actual text using simple logic
+                let matchedText = null;
+                const trimmedFigText = (figurativeText || '').trim();
+
+                if (trimmedFigText) {
+                    // Try exact match first (should work in most cases)
+                    if (highlightedText.includes(trimmedFigText)) {
+                        matchedText = trimmedFigText;
+                    }
+                    // For Hebrew, try matching with text that has HTML tags and entities removed
+                    else if (language === 'hebrew') {
+                        // Remove HTML tags and entities from the verse text for matching
+                        const textWithoutHTML = highlightedText
+                            .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
+                        .replace(/<[^>]*>/g, '') // Remove other HTML tags
+                            .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
+                            .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
+                            .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
+                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                            .replace(/־/g, ' ') // Replace Hebrew hyphens with spaces
+                            .replace(/\s+/g, ' ') // Normalize whitespace
+                            .trim();
+
+                        // Also normalize the figurative text
+                        const normalizedFigText = trimmedFigText
+                            .replace(/־/g, ' ')
+                            .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                            .replace(/\s+/g, ' ')
+                            .trim();
+
+                        if (textWithoutHTML.includes(trimmedFigText) || textWithoutHTML.includes(normalizedFigText)) {
+                            // Found a match, now find the original text with HTML
+                            // Try with the version that matched
+                            const figTextToUse = textWithoutHTML.includes(trimmedFigText) ? trimmedFigText : normalizedFigText;
+                            const escapedFig = figTextToUse.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                            // Allow HTML tags, line breaks, entities, hyphens, Hebrew diacritics, and whitespace between each character
+                            const flexiblePattern = escapedFig.split('').join('(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4]|\\s)*');
+                            const regex = new RegExp(flexiblePattern, 'g');
+                            const match = highlightedText.match(regex);
+                            if (match) {
+                                matchedText = match[0];
+                            }
+                        }
+                    }
+                    // Try divine name variation for English non-sacred
+                    else if (language === 'english' && appState.englishVersion === 'non-sacred') {
+                        const adjustedFigText = trimmedFigText.replace(/יהוה/g, 'ה׳');
+                        if (highlightedText.includes(adjustedFigText)) {
+                            matchedText = adjustedFigText;
+                        }
+                    }
+
+                    // Try core text (without parenthetical explanations)
+                    if (!matchedText) {
+                        const coreText = trimmedFigText.replace(/\s*\([^)]*\)/g, '').replace(/\s*\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
+                        if (coreText && coreText !== trimmedFigText) {
+                            if (highlightedText.includes(coreText)) {
+                                matchedText = coreText;
+                            }
+                            // For Hebrew, also try core text with HTML tag and entity handling
+                            else if (language === 'hebrew') {
+                                const textWithoutHTML = highlightedText
+                                    .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
+                        .replace(/<[^>]*>/g, '') // Remove other HTML tags
+                                    .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
+                                    .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
+                                    .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
+                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                                    .replace(/\s+/g, ' ') // Normalize whitespace
+                                    .trim();
+                                if (textWithoutHTML.includes(coreText)) {
+                                    const escapedCore = coreText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                                    const flexiblePattern = escapedCore.split('').join('(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4]|\\s)*');
+                                    const regex = new RegExp(flexiblePattern, 'g');
+                                    const match = highlightedText.match(regex);
+                                    if (match) {
+                                        matchedText = match[0];
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // Try case-insensitive for English
+                    if (!matchedText && language === 'english') {
+                        const lowerText = highlightedText.toLowerCase();
+                        const lowerFig = trimmedFigText.toLowerCase();
+                        if (lowerText.includes(lowerFig)) {
+                            // Find the actual case-preserved match
+                            const regex = new RegExp(trimmedFigText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
+                            const match = highlightedText.match(regex);
+                            if (match) {
+                                matchedText = match[0];
+                            }
+                        }
+                        // Try case-insensitive with core text
+                        else {
+                            const coreText = trimmedFigText.replace(/\s*\([^)]*\)/g, '').replace(/\s*\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
+                            if (coreText && lowerText.includes(coreText.toLowerCase())) {
+                                const regex = new RegExp(coreText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
+                                const match = highlightedText.match(regex);
+                                if (match) {
+                                    matchedText = match[0];
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if (matchedText) {
+                    const visibleTypes = annotation.types.filter(type => appState.selectedTypes.has(type));
+
+                    // No longer needed - using simple highlighting approach
+
+                    // Create a clean annotation object without circular references and contaminated data
+                    const cleanAnnotation = {
+                        figurative_text: cleanHebrewText(annotation.figurative_text) || annotation.figurative_text,
+                        figurative_text_in_hebrew: cleanHebrewText(annotation.figurative_text_in_hebrew),
+                        figurative_text_in_hebrew_non_sacred: cleanHebrewText(annotation.figurative_text_in_hebrew_non_sacred),
+                        types: annotation.types,
+                        target: annotation.target,
+                        vehicle: annotation.vehicle,
+                        ground: annotation.ground,
+                        posture: annotation.posture,
+                        explanation: cleanHebrewText(annotation.explanation) || '', // Clean explanation field
+                        speaker: annotation.speaker,
+                        confidence: annotation.confidence,
+                        validation_reason_metaphor: cleanHebrewText(annotation.validation_reason_metaphor) || '',
+                        validation_reason_simile: cleanHebrewText(annotation.validation_reason_simile) || '',
+                        validation_reason_personification: cleanHebrewText(annotation.validation_reason_personification) || '',
+                        validation_reason_idiom: cleanHebrewText(annotation.validation_reason_idiom) || '',
+                        validation_reason_hyperbole: cleanHebrewText(annotation.validation_reason_hyperbole) || '',
+                        validation_reason_metonymy: cleanHebrewText(annotation.validation_reason_metonymy) || '',
+                        validation_reason_other: cleanHebrewText(annotation.validation_reason_other) || '',
+                        // Add verse information for synchronization
+                        verse_reference: annotation.verse_reference,
+                        verse_id: annotation.verse_id,
+                        verse_deliberation: cleanHebrewText(annotation.verse_deliberation) || '',
+                        verse_model_used: annotation.verse_model_used
+                    };
+
+                    try {
+                        // Enhanced multi-line aware replacement
+                        const replacement = createSimpleHighlight(matchedText, cleanAnnotation);
+                        highlightedText = highlightedText.replace(matchedText, replacement);
+
+                        console.log(`Successfully highlighted annotation ${annIndex + 1}: "${matchedText}" in ${language}`);
+                    } catch (error) {
+                        console.error(`Error highlighting annotation ${annIndex + 1}:`, error);
+                    }
+                } else {
+                    console.log(`Skipping annotation ${annIndex + 1}: "${trimmedFigText}" not found in ${language} text`);
                 }
             });
 
@@ -846,10 +1637,44 @@
             elements.deliberationText.textContent = verse.figurative_detection_deliberation;
             elements.modelUsed.textContent = verse.model_used;
 
+            // Clear any previous annotation details when showing verse details
+            elements.annotationDetails.innerHTML = '';
+
+            // Remove annotation-details class and use regular panel
+            elements.detailPanel.classList.remove('annotation-details');
             elements.detailPanel.classList.add('active');
+
+            const mainContent = document.querySelector('.main-content');
+            mainContent.classList.remove('panel-open-large');
+            mainContent.classList.add('panel-open');
         }
 
         function showAnnotationDetails(annotation) {
+            // Update verse deliberation to match the annotation's verse
+            if (annotation.verse_reference && annotation.verse_deliberation) {
+                elements.selectedVerse.textContent = annotation.verse_reference;
+                elements.deliberationText.textContent = annotation.verse_deliberation;
+                elements.modelUsed.textContent = annotation.verse_model_used || 'Unknown';
+            }
+
+            // Format validation reasons
+            const validationReasons = [];
+            if (annotation.validation_reason_metaphor) validationReasons.push(`Metaphor: ${annotation.validation_reason_metaphor}`);
+            if (annotation.validation_reason_simile) validationReasons.push(`Simile: ${annotation.validation_reason_simile}`);
+            if (annotation.validation_reason_personification) validationReasons.push(`Personification: ${annotation.validation_reason_personification}`);
+            if (annotation.validation_reason_idiom) validationReasons.push(`Idiom: ${annotation.validation_reason_idiom}`);
+            if (annotation.validation_reason_hyperbole) validationReasons.push(`Hyperbole: ${annotation.validation_reason_hyperbole}`);
+            if (annotation.validation_reason_metonymy) validationReasons.push(`Metonymy: ${annotation.validation_reason_metonymy}`);
+            if (annotation.validation_reason_other) validationReasons.push(`Other: ${annotation.validation_reason_other}`);
+
+            const validationHTML = validationReasons.length > 0 ?
+                `<div style="margin-bottom: 1rem;">
+                    <strong>Validation Reasons:</strong>
+                    <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                        ${validationReasons.map(reason => `<li>${reason}</li>`).join('')}
+                    </ul>
+                </div>` : '';
+
             const detailsHTML = `
                 <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
                     <h4 style="color: var(--accent-color); margin-bottom: 1rem;">Annotation Details</h4>
@@ -857,15 +1682,19 @@
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
                         <div>
                             <strong>Target:</strong><br>
-                            <small>${Array.isArray(annotation.target) ? annotation.target.join(' → ') : annotation.target}</small>
+                            <small>${Array.isArray(annotation.target) ? annotation.target.join(' → ') : (annotation.target || 'N/A')}</small>
                         </div>
                         <div>
                             <strong>Vehicle:</strong><br>
-                            <small>${Array.isArray(annotation.vehicle) ? annotation.vehicle.join(' → ') : annotation.vehicle}</small>
+                            <small>${Array.isArray(annotation.vehicle) ? annotation.vehicle.join(' → ') : (annotation.vehicle || 'N/A')}</small>
                         </div>
                         <div>
                             <strong>Ground:</strong><br>
-                            <small>${Array.isArray(annotation.ground) ? annotation.ground.join(' → ') : annotation.ground}</small>
+                            <small>${Array.isArray(annotation.ground) ? annotation.ground.join(' → ') : (annotation.ground || 'N/A')}</small>
+                        </div>
+                        <div>
+                            <strong>Posture:</strong><br>
+                            <small>${Array.isArray(annotation.posture) ? annotation.posture.join(' → ') : (annotation.posture || 'N/A')}</small>
                         </div>
                         <div>
                             <strong>Types:</strong><br>
@@ -875,33 +1704,51 @@
 
                     <div style="margin-bottom: 1rem;">
                         <strong>Explanation:</strong><br>
-                        <p style="margin-top: 0.5rem;">${annotation.explanation}</p>
+                        <p style="margin-top: 0.5rem;">${annotation.explanation || 'No explanation available'}</p>
                     </div>
 
+                    ${validationHTML}
+
                     <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div><strong>Speaker:</strong> ${annotation.speaker}</div>
-                        <div><strong>Confidence:</strong> ${(annotation.confidence * 100).toFixed(1)}%</div>
+                        <div><strong>Speaker:</strong> ${annotation.speaker || 'N/A'}</div>
+                        <div><strong>Confidence:</strong> ${annotation.confidence ? (annotation.confidence * 100).toFixed(1) + '%' : 'N/A'}</div>
                     </div>
                 </div>
             `;
 
             elements.annotationDetails.innerHTML = detailsHTML;
-            elements.detailPanel.classList.add('active');
+            elements.detailPanel.classList.add('active', 'annotation-details');
+
+            // Remove previous panel classes and add large panel class
+            const mainContent = document.querySelector('.main-content');
+            mainContent.classList.remove('panel-open');
+            mainContent.classList.add('panel-open-large');
         }
 
         function closeDetailPanel() {
-            elements.detailPanel.classList.remove('active');
+            elements.detailPanel.classList.remove('active', 'annotation-details');
             elements.annotationDetails.innerHTML = '';
+
+            const mainContent = document.querySelector('.main-content');
+            mainContent.classList.remove('panel-open', 'panel-open-large');
         }
 
-        function updateStats() {
+        async function updateStats() {
             const currentVerses = appState.verses.length;
             const totalAnnotations = appState.verses.reduce((sum, verse) => sum + verse.annotations.length, 0);
             const totalCount = appState.pagination.total;
+            const totalFigurativeInstances = appState.pagination.total_figurative_instances || 0;
+
+            const remainingVerses = totalCount - (appState.pagination.offset + currentVerses);
+            const nextButton = appState.pagination.hasMore ?
+                `<button class="nav-button" onclick="loadMore()">Load Next ${Math.min(appState.pagination.limit, remainingVerses)} Verses</button>` :
+                '<span style="color: #28a745; font-weight: 600;">✓ All verses loaded</span>';
 
             elements.statsBar.innerHTML = `
-                Showing ${currentVerses} of ${totalCount} verses with ${totalAnnotations} figurative language instances
-                ${appState.pagination.hasMore ? ' <button onclick="loadMore()" style="margin-left: 1rem; padding: 0.25rem 0.5rem; background: var(--accent-color); color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 0.8rem;">Load More</button>' : ''}
+                <div class="stats-text">
+                    Showing ${currentVerses} verses (${totalAnnotations} figurative language instances) of ${totalCount} verses (${totalFigurativeInstances} figurative language instances)
+                </div>
+                <div>${nextButton}</div>
             `;
         }
 
@@ -915,7 +1762,11 @@
                     const data = await makeAPICall('/verses', params);
                     if (data) {
                         appState.verses = [...appState.verses, ...data.verses];
-                        appState.pagination = data.pagination;
+                        // Convert API response to frontend format
+                        appState.pagination = {
+                            ...data.pagination,
+                            hasMore: data.pagination.has_more // Convert snake_case to camelCase
+                        };
                         appState.filteredVerses = appState.verses;
                         renderVerses();
                         updateStats();

@@ -456,23 +456,50 @@ CREATE TABLE figurative_language (
 - other
 
 Example: "Judah is a lion" → TARGET: target_level_1 = "Specific person", target_specific = "Judah"; VEHICLE: vehicle_level_1="natural world", vehicle_specific ="lion"; GROUND: ground_level_1="physical quality", ground_specific="strength"
-## 🌐 **NEW: Interactive HTML Interface (Sept 28, 2025)**
+## 🌐 **Enhanced Interactive HTML Interface (Sept 28, 2025 - Latest Updates)**
 
-### ✅ **Production-Ready Web Interface**
+### ✅ **Production-Ready Web Interface with Advanced Features**
 A comprehensive HTML-based interface for exploring and analyzing your biblical figurative language database with advanced filtering, search, and visualization capabilities.
 
 **🎯 Key Features Implemented:**
 - **📖 Dual-Column Display**: Hebrew (RTL) and English text side-by-side with proper Unicode support
 - **🕊️ Sacred/Non-Sacred Toggle**: Switch between original and traditional Jewish text versions for both Hebrew and English
-- **🎨 Color-Coded Annotations**: 7 distinct colors for figurative language types with horizontal underlines
-- **🔍 Advanced Search & Filtering**: Multi-field search with Hebrew text, Target/Vehicle/Ground/Posture metadata
+- **✨ Universal Highlighting System**: Simple yellow highlighting with hover tooltips showing figurative types with colored squares
+- **⌨️ Hebrew Virtual Keyboard**: On-screen Hebrew keyboard with all letters including final forms
+- **🔍 Dual-Language Search**: Toggle between Hebrew and English text search with auto-detection
+- **🔍 Advanced Metadata Filtering**: Multi-field search with Target/Vehicle/Ground/Posture metadata using AND/OR logic
 - **📱 Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **⚡ Real-Time Data**: Live connection to your SQLite database with pagination support
-- **🔗 Interactive Details**: Click verses for AI deliberations, click annotations for detailed analysis
+- **⚡ Real-Time Data**: Live connection to your SQLite database with intelligent pagination
+- **🔗 Enhanced Interactive Details**:
+  - Click verses for AI deliberations and model information
+  - Click highlighted text for comprehensive analysis including validation reasons
+  - Hover over highlights for instant type information with colored indicators
+  - Dynamic panel sizing for optimal content viewing
+- **🎯 Smart Navigation**: Clear "Load Next X Verses" button with exact counts and completion status
+- **📊 Detailed Statistics**: Complete figurative language instance counts and database transparency
+
+**🆕 Latest Interface Enhancements (Sept 28, 2025):**
+- **🎨 Refined Visual Design**: Updated color scheme with dark gradient headers (#0a1930 → #020408)
+- **✅ Revolutionary Highlighting System**: Replaced complex multi-line annotation system with universal yellow highlighting
+- **🎯 Reliable Multi-Line Support**: Works perfectly for phrases spanning multiple lines regardless of figurative type count
+- **💡 Intelligent Hover Tooltips**: Show figurative language types with corresponding colored squares on hover
+- **📏 Enhanced Panel System**: Dynamic sizing with larger panels for annotation details (60vh vs 40vh)
+- **⌨️ Hebrew Keyboard Integration**: Full virtual keyboard with clear, space, and backspace functions
+- **🔍 Robust Text Matching**: Multiple matching strategies including case-insensitive and whitespace normalization
+- **📱 Mobile Optimization**: Improved responsive design for all device sizes
+- **🎛️ Better Checkbox Layout**: Fixed overlapping issues in figurative type filters
+- **📊 Enhanced Statistics Display**: Clear formatting showing "X verses (Y instances) of Z total verses (W total instances)"
+- **🚀 Fixed Navigation Controls**: Navigation bar now properly positioned at bottom of screen with "Load Next X Verses" button
+- **📖 Biblical Book Ordering**: Books now appear in biblical sequence (Genesis, Exodus, Leviticus, Numbers, Deuteronomy) instead of alphabetical
+- **🧹 Data Contamination Cleanup**: Comprehensive cleaning system removes AI deliberation text mixed into Hebrew verse display
+- **🎯 Consistent Button Styling**: All interface buttons now use unified color scheme matching the Hebrew/English toggle buttons
+- **📝 Header Updates**: "Search Hebrew Text" updated to "Search Biblical Text" and added "Search for Tag" section header
+- **🔧 Fixed Validation Display**: Validation reason fields now properly display in annotation details panel
+- **📍 Fixed Stats Bar**: Statistics bar now stays permanently fixed at bottom of screen with no gaps
 
 **📁 Interface Files:**
-- `biblical_figurative_interface.html` - Complete frontend interface
-- `api_server.py` - Flask backend with full database integration
+- `biblical_figurative_interface.html` - Complete frontend interface with all enhancements
+- `api_server.py` - Flask backend with Hebrew/English search support and full database integration
 - `interface_requirements.txt` - Python dependencies
 - `INTERFACE_SETUP.md` - Comprehensive setup and usage guide
 
@@ -483,7 +510,17 @@ python api_server.py
 # Open http://localhost:5000 in browser
 ```
 
-**🎉 Current Status:** **FULLY OPERATIONAL** - Ready for scholarly research and exploration
+**🔧 How to Use:**
+1. **Start Interface**: Run `python api_server.py` and open http://localhost:5000
+2. **Hebrew Search**: Click "Hebrew" toggle, use keyboard button (⌨) for virtual keyboard
+3. **English Search**: Click "English" toggle for standard English text search
+4. **View Details**: Click verse headers for AI deliberations, click highlighted text for annotation analysis
+5. **Navigate**: Use prominent "Load Next X Verses" button for seamless browsing
+6. **Filter**: Use checkboxes and metadata search for precise filtering
+
+**🎉 Current Status:** **FULLY OPERATIONAL** - Professional-grade interface with universal highlighting system
+
+**✅ Multi-Line Issue Resolved (Sept 28, 2025):** Successfully replaced complex annotation system with reliable yellow highlighting approach - works perfectly for all scenarios
 
 ---
 
