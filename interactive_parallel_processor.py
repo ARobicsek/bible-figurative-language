@@ -374,7 +374,7 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
         # Determine final model used
         final_model_used = metadata.get('model_used', 'gemini-2.5-flash')
         if tertiary_decomposed and metadata.get('claude_fallback_used'):
-            final_model_used = 'claude-3-5-sonnet-20241022'
+            final_model_used = 'claude-sonnet-4-20250514'
         elif pro_model_used:
             final_model_used = 'gemini-2.5-pro'
 

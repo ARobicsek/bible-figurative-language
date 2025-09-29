@@ -315,7 +315,7 @@ Analysis:"""
                 self.logger.error(error_msg)
 
             metadata = {
-                'model_used': 'claude-3-5-sonnet-20241022',
+                'model_used': 'claude-sonnet-4-20250514',
                 'claude_fallback_used': True,
                 'flexible_instances': [],
                 'figurative_detection_deliberation': '',
@@ -340,7 +340,7 @@ Analysis:"""
                     self.logger.error(f"🤖 CLAUDE FALLBACK: Failed - {error}")
 
                 fallback_metadata = {
-                    'model_used': 'claude-3-5-sonnet-20241022',
+                    'model_used': 'claude-sonnet-4-20250514',
                     'claude_fallback_used': True,
                     'flexible_instances': [],
                     'figurative_detection_deliberation': '',
@@ -367,7 +367,7 @@ Analysis:"""
             if self.logger:
                 self.logger.error(error_msg)
             return "[]", error_msg, {
-                'model_used': 'claude-3-5-sonnet-20241022',
+                'model_used': 'claude-sonnet-4-20250514',
                 'claude_fallback_used': True,
                 'claude_step_completed': 'failed',
                 'error': True
