@@ -628,6 +628,11 @@
             background-color: #6c757d;
             color: white;
         }
+
+        #clear-metadata-btn:hover {
+            color: #495057 !important;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -640,6 +645,18 @@
 
         <!-- Sidebar -->
         <aside class="sidebar">
+            <!-- Database Selection -->
+            <section class="database-selection">
+                <h3>Database</h3>
+                <label for="database-select">Select Database:</label>
+                <select id="database-select" style="font-size: 0.85rem;">
+                    <option value="">Loading...</option>
+                </select>
+                <div id="database-info" style="font-size: 0.8rem; color: #6c757d; margin-top: 0.5rem;">
+                    <!-- Database info will be inserted here -->
+                </div>
+            </section>
+
             <!-- Book/Chapter Selection -->
             <section class="book-selection">
                 <h3>Text Selection</h3>
@@ -780,7 +797,10 @@
                     <div class="hebrew-key action" onclick="deleteLastChar()" style="grid-column: span 2;">⌫</div>
                 </div>
 
-                <h4 style="color: #2b394f; margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1rem;">Search for Tag</h4>
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; margin-bottom: 0.5rem;">
+                    <h4 style="color: #2b394f; margin: 0; font-size: 1rem;">Search for Tag</h4>
+                    <button id="clear-metadata-btn" onclick="clearMetadataSearch()" style="background: none; border: none; color: #6c757d; font-size: 1.2rem; cursor: pointer; padding: 0; margin: 0; opacity: 0; transition: opacity 0.2s;" title="Clear tag search">↻</button>
+                </div>
                 <div class="metadata-search" style="margin-top: 0.5rem;">
                     <input type="text" id="target-search" placeholder="Target...">
                     <input type="text" id="vehicle-search" placeholder="Vehicle...">
@@ -852,9 +872,14 @@
                 limit: 50,
                 offset: 0,
                 total: 0,
-                hasMore: false
+                hasMore: false,
+                total_figurative_instances: 0,
+                countIsEstimate: false  // Track if count is an estimate
             },
-            loading: false
+            loading: false,
+            requestCounter: 0,  // Track request order to handle race conditions
+            countRequestCounter: 0,  // Track background count requests
+            currentDatabase: null
         };
 
         // API Configuration
@@ -876,11 +901,19 @@
         // Initialize Application
         document.addEventListener('DOMContentLoaded', function() {
             initializeEventListeners();
+            loadDatabases();
             loadStatistics();
-            loadDefaultVerses();
+            // loadDefaultVerses will be called after database is loaded
         });
 
         function initializeEventListeners() {
+            // Database selector
+            document.getElementById('database-select').addEventListener('change', function() {
+                if (this.value) {
+                    selectDatabase(this.value);
+                }
+            });
+
             // Type filter checkboxes
             document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
                 checkbox.addEventListener('change', function() {
@@ -917,10 +950,23 @@
                 updateClearButtonVisibility();
                 debounce(handleSearch, 300)();
             });
-            document.getElementById('target-search').addEventListener('input', debounce(handleSearch, 300));
-            document.getElementById('vehicle-search').addEventListener('input', debounce(handleSearch, 300));
-            document.getElementById('ground-search').addEventListener('input', debounce(handleSearch, 300));
-            document.getElementById('posture-search').addEventListener('input', debounce(handleSearch, 300));
+            // Metadata search listeners with clear button update
+            document.getElementById('target-search').addEventListener('input', function() {
+                updateMetadataClearButtonVisibility();
+                debounce(handleSearch, 300)();
+            });
+            document.getElementById('vehicle-search').addEventListener('input', function() {
+                updateMetadataClearButtonVisibility();
+                debounce(handleSearch, 300)();
+            });
+            document.getElementById('ground-search').addEventListener('input', function() {
+                updateMetadataClearButtonVisibility();
+                debounce(handleSearch, 300)();
+            });
+            document.getElementById('posture-search').addEventListener('input', function() {
+                updateMetadataClearButtonVisibility();
+                debounce(handleSearch, 300)();
+            });
             document.getElementById('search-operator').addEventListener('change', handleSearch);
 
             // Panel controls
@@ -1007,8 +1053,14 @@
             }
 
             // Clear search when switching types
+            const hadSearch = searchInput.value !== '';
             searchInput.value = '';
-            handleSearch();
+            updateClearButtonVisibility();
+
+            // Only trigger search if there was actually a search term to clear
+            if (hadSearch) {
+                handleSearch();
+            }
         }
 
         function toggleHebrewKeyboard() {
@@ -1059,6 +1111,35 @@
             }
         }
 
+        function updateMetadataClearButtonVisibility() {
+            const targetInput = document.getElementById('target-search');
+            const vehicleInput = document.getElementById('vehicle-search');
+            const groundInput = document.getElementById('ground-search');
+            const postureInput = document.getElementById('posture-search');
+            const clearBtn = document.getElementById('clear-metadata-btn');
+
+            // Show button if any metadata field has content
+            const hasContent = targetInput.value.length > 0 ||
+                               vehicleInput.value.length > 0 ||
+                               groundInput.value.length > 0 ||
+                               postureInput.value.length > 0;
+
+            if (hasContent) {
+                clearBtn.style.opacity = '1';
+            } else {
+                clearBtn.style.opacity = '0';
+            }
+        }
+
+        function clearMetadataSearch() {
+            document.getElementById('target-search').value = '';
+            document.getElementById('vehicle-search').value = '';
+            document.getElementById('ground-search').value = '';
+            document.getElementById('posture-search').value = '';
+            updateMetadataClearButtonVisibility();
+            handleSearch();
+        }
+
         // API Functions
         async function makeAPICall(endpoint, params = {}) {
             try {
@@ -1077,6 +1158,80 @@
             } catch (error) {
                 console.error('API call failed:', error);
                 return null;
+            }
+        }
+
+        async function loadDatabases() {
+            try {
+                const data = await makeAPICall('/databases');
+                if (data && data.databases) {
+                    const dbSelect = document.getElementById('database-select');
+                    dbSelect.innerHTML = '';
+
+                    // Check localStorage for last selected database
+                    const lastDb = localStorage.getItem('selectedDatabase');
+
+                    data.databases.forEach(db => {
+                        const option = document.createElement('option');
+                        option.value = db.name;
+                        option.textContent = `${db.name} (${db.verse_count || 'N/A'} verses)`;
+
+                        // Select the current database or last selected
+                        if (db.is_current || (lastDb && db.name === lastDb)) {
+                            option.selected = true;
+                            appState.currentDatabase = db.name;
+                            updateDatabaseInfo(db);
+                        }
+
+                        dbSelect.appendChild(option);
+                    });
+
+                    // Load verses for current database
+                    loadDefaultVerses();
+                }
+            } catch (error) {
+                console.error('Failed to load databases:', error);
+                // Fallback to default verses
+                loadDefaultVerses();
+            }
+        }
+
+        async function selectDatabase(dbName) {
+            try {
+                showLoading();
+
+                const response = await fetch(`${API_BASE}/database/select`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ database: dbName })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    appState.currentDatabase = dbName;
+                    localStorage.setItem('selectedDatabase', dbName);
+
+                    // Update database info
+                    updateDatabaseInfo({ name: dbName, verse_count: data.verse_count });
+
+                    // Reload verses for new database
+                    loadDefaultVerses();
+                } else {
+                    alert(`Error switching database: ${data.error || 'Unknown error'}`);
+                }
+            } catch (error) {
+                console.error('Failed to select database:', error);
+                alert('Failed to switch database. Please try again.');
+            }
+        }
+
+        function updateDatabaseInfo(db) {
+            const infoDiv = document.getElementById('database-info');
+            if (db && db.verse_count) {
+                infoDiv.innerHTML = `<strong>${db.verse_count.toLocaleString()}</strong> verses`;
+            } else {
+                infoDiv.innerHTML = '';
             }
         }
 
@@ -1125,31 +1280,87 @@
         }
 
         async function loadVersesFromAPI(params = {}) {
-            if (appState.loading) return;
+            // Increment request counter to track this specific request
+            appState.requestCounter++;
+            const thisRequestId = appState.requestCounter;
 
             appState.loading = true;
             showLoading();
 
             try {
                 const data = await makeAPICall('/verses', params);
-                if (data) {
+
+                // Only process results if this is still the most recent request
+                // This prevents race conditions where an older request completes after a newer one
+                if (thisRequestId === appState.requestCounter && data) {
                     appState.verses = data.verses;
                     // Convert API response to frontend format
                     appState.pagination = {
                         ...data.pagination,
-                        hasMore: data.pagination.has_more // Convert snake_case to camelCase
+                        hasMore: data.pagination.has_more, // Convert snake_case to camelCase
+                        total_figurative_instances: data.pagination.total_figurative_instances || 0
                     };
+
+                    // Check if count is an estimate (0 instances = mixed query estimate)
+                    // This happens when show_all_verses or show_not_figurative is enabled
+                    const show_all_verses = appState.selectedTypes.size === 7 && appState.showNotFigurative;
+                    const show_not_figurative = appState.showNotFigurative;
+                    const isEstimate = (data.pagination.total_figurative_instances === 0 && (show_all_verses || show_not_figurative));
+                    appState.pagination.countIsEstimate = isEstimate;
+
                     appState.filteredVerses = appState.verses; // API already filters
                     renderVerses();
                     updateStats();
-                } else {
+
+                    // Trigger lazy count loading if estimate
+                    if (isEstimate) {
+                        loadExactCount(params);
+                    }
+                } else if (thisRequestId !== appState.requestCounter) {
+                    // This request was superseded by a newer one, ignore results
+                    console.log(`Ignoring stale API response (request ${thisRequestId}, current ${appState.requestCounter})`);
+                } else if (!data) {
                     showError('Failed to load verses. Please ensure the API server is running.');
                 }
             } catch (error) {
-                console.error('Failed to load verses:', error);
-                showError('Failed to load verses. Please check your connection and try again.');
+                // Only show error if this is still the most recent request
+                if (thisRequestId === appState.requestCounter) {
+                    console.error('Failed to load verses:', error);
+                    showError('Failed to load verses. Please check your connection and try again.');
+                }
             } finally {
-                appState.loading = false;
+                // Only clear loading state if this is still the most recent request
+                if (thisRequestId === appState.requestCounter) {
+                    appState.loading = false;
+                }
+            }
+        }
+
+        async function loadExactCount(params) {
+            // Increment count request counter
+            appState.countRequestCounter++;
+            const thisCountRequestId = appState.countRequestCounter;
+
+            try {
+                // Build params for count endpoint (exclude limit and offset)
+                const countParams = { ...params };
+                delete countParams.limit;
+                delete countParams.offset;
+
+                console.log('Loading exact count in background...');
+                const data = await makeAPICall('/verses/count', countParams);
+
+                // Only update if this is still the most recent count request
+                if (thisCountRequestId === appState.countRequestCounter && data) {
+                    appState.pagination.total = data.total;
+                    appState.pagination.total_figurative_instances = data.total_figurative_instances;
+                    appState.pagination.countIsEstimate = false;
+                    updateStats(); // Refresh display with exact count
+                    console.log(`Exact count loaded: ${data.total} verses, ${data.total_figurative_instances} instances`);
+                }
+            } catch (error) {
+                console.error('Failed to load exact count:', error);
+                // Silently fail - estimate is good enough
             }
         }
 
@@ -1933,23 +2144,40 @@
                 `<button class="nav-button" onclick="loadMore()">Load Next ${Math.min(appState.pagination.limit, remainingVerses)} Verses</button>` :
                 '<span style="color: #28a745; font-weight: 600;">✓ All verses loaded</span>';
 
-            elements.statsBar.innerHTML = `
-                <div class="stats-text">
-                    Showing ${currentVerses} verses (${totalAnnotations} figurative language instances) of ${totalCount} verses (${totalFigurativeInstances} figurative language instances)
-                </div>
-                <div>${nextButton}</div>
-            `;
+            // Check if we're showing an estimate
+            if (appState.pagination.countIsEstimate) {
+                elements.statsBar.innerHTML = `
+                    <div class="stats-text">
+                        Showing ${currentVerses} verses (${totalAnnotations} figurative language instances)
+                        <span style="color: #6c757d; font-style: italic;">(calculating total...)</span>
+                    </div>
+                    <div>${nextButton}</div>
+                `;
+            } else {
+                elements.statsBar.innerHTML = `
+                    <div class="stats-text">
+                        Showing ${currentVerses} verses (${totalAnnotations} figurative language instances) of ${totalCount.toLocaleString()} verses (${totalFigurativeInstances.toLocaleString()} figurative language instances)
+                    </div>
+                    <div>${nextButton}</div>
+                `;
+            }
         }
 
         async function loadMore() {
             if (appState.pagination.hasMore && !appState.loading) {
+                // Increment request counter to track this specific request
+                appState.requestCounter++;
+                const thisRequestId = appState.requestCounter;
+
                 const params = buildAPIParams();
                 params.offset = appState.pagination.offset + appState.pagination.limit;
 
                 appState.loading = true;
                 try {
                     const data = await makeAPICall('/verses', params);
-                    if (data) {
+
+                    // Only process results if this is still the most recent request
+                    if (thisRequestId === appState.requestCounter && data) {
                         appState.verses = [...appState.verses, ...data.verses];
                         // Convert API response to frontend format
                         appState.pagination = {
@@ -1959,11 +2187,17 @@
                         appState.filteredVerses = appState.verses;
                         renderVerses();
                         updateStats();
+                    } else if (thisRequestId !== appState.requestCounter) {
+                        console.log(`Ignoring stale loadMore response (request ${thisRequestId}, current ${appState.requestCounter})`);
                     }
                 } catch (error) {
-                    console.error('Failed to load more verses:', error);
+                    if (thisRequestId === appState.requestCounter) {
+                        console.error('Failed to load more verses:', error);
+                    }
                 } finally {
-                    appState.loading = false;
+                    if (thisRequestId === appState.requestCounter) {
+                        appState.loading = false;
+                    }
                 }
             }
         }

@@ -2,11 +2,41 @@
 A comprehensive production-ready system for detecting and analyzing figurative language in biblical Hebrew texts, featuring an **advanced three-tier AI architecture** with intelligent fallback processing and complete validation pipeline for scholarly research.
 
 ## 🎉 Project Status: Production-Ready Advanced AI Architecture
-**LATEST ACHIEVEMENT**: Successfully completed **parallel processing integration** with hardcoded fallback fixes - the system now features high-performance parallel analysis with 100% verse coverage and comprehensive validation.
+**LATEST ACHIEVEMENT**: Successfully completed **lazy background counting** and **database selector** features - the interface now loads instantly with 50-60x faster performance for mixed queries, and users can easily switch between databases.
 
 **✅ MAJOR BREAKTHROUGHS (Sept 27-29, 2025)**:
+- **🔧 LAZY COUNT ESTIMATE FIX (Sept 29 - Latest)**: Fixed frontend estimate detection to work with all query types
+  - **Issue**: Stats bar showed "(calculating total...)" indefinitely or displayed 0 instances instead of correct count
+  - **Root cause**: Estimate detection only triggered when `total === 5002`, but text searches returned different totals (e.g., 14)
+  - **Solution**: Changed detection to trigger whenever `total_figurative_instances === 0` and "show all verses" or "show not figurative" enabled
+  - **Result**: Lazy background counting now works correctly for text searches and all filter combinations
+- **⚡ LAZY BACKGROUND COUNTING (Sept 29)**: Implemented intelligent lazy loading for expensive count queries
+  - **Initial page load**: Shows "(calculating total...)" and loads verses instantly (~0.3s)
+  - **Background counting**: Exact counts calculated asynchronously without blocking UI (2-3s)
+  - **Smart detection**: Automatically triggers for mixed queries (figurative + non-figurative)
+  - **Result**: 50-60x faster perceived performance with seamless count updates
+- **🗄️ DATABASE SELECTOR (Sept 29 - Latest)**: Added dynamic database switching in web interface
+  - **Dropdown selector**: Shows all `.db` files with verse counts
+  - **Persistent selection**: Remembers last selected database in localStorage
+  - **Default database**: `complete_torah_merged.db` (5,846 verses - complete Torah)
+  - **Hot switching**: Change databases without restarting server
+  - **Result**: Easy access to different analysis datasets for research
+- **⚡ MASSIVE PERFORMANCE BOOST (Sept 29 - Latest)**: Achieved **50-60x speedup** for mixed queries (figurative + non-figurative)
+  - Non-figurative only: 19.6s → 0.33s (60x faster)
+  - All types + "Not Figurative": 15-20s → 0.34s (50x faster)
+  - **Root cause**: Expensive `figurative_count_query` with LEFT JOIN across entire table
+  - **Solution**: Skip expensive counts for mixed queries, use fast estimates for total count
+  - **Result**: Instant, responsive UI for all filter combinations
 - **🔍 TEXT SEARCH FIX (Sept 29)**: Resolved critical bug where text search didn't work with "Not Figurative" filter - now properly filters non-figurative verses by search terms
-- **⚡ PERFORMANCE OPTIMIZATION (Sept 29)**: Major database query optimizations - 3-5x faster page loads with bulk annotation fetching and improved query structure
+- **🎯 SEARCH RACE CONDITION FIX (Sept 29)**: Fixed bug where rapid searches would display wrong results
+  - **Root cause**: Concurrent API requests completing out of order
+  - **Solution**: Request counter system ensures only most recent search displays
+  - **Result**: Search always shows correct, current results
+- **📖 GENESIS FIRST FIX (Sept 29)**: Corrected initial page load to show Genesis instead of Leviticus
+  - **Root cause**: Book filter only recognized Leviticus/Numbers, ignored other books
+  - **Solution**: Updated book filter to handle all 5 Torah books
+  - **Result**: Interface loads in proper biblical order (Genesis → Deuteronomy)
+- **🎨 METADATA SEARCH CLEAR BUTTON (Sept 29)**: Added grey refresh icon to clear all tag search fields at once
 - **🔧 HEBREW TEXT CONTAMINATION FIX (Sept 29)**: Resolved critical frontend contamination where massive deliberation text (4,000+ chars) was corrupting Hebrew text display through oversized HTML data attributes
 - **🚀 ENHANCED MULTI-BOOK SELECTION**: Revolutionary flexible selection system for processing multiple books simultaneously
 - **⚡ NON-CONTIGUOUS PROCESSING**: Support for comma-separated, range-based chapter and verse selection (e.g., "1,3,5-7,10")
@@ -567,17 +597,24 @@ python api_server.py
 
 **🎉 Current Status:** **FULLY OPERATIONAL** - Professional-grade interface with comprehensive filtering options
 
-**✅ TEXT SEARCH & PERFORMANCE FIXES (Sept 29, 2025 - LATEST)**:
-- **🔍 Search Functionality Fixed**: Text search now works correctly with "Not Figurative" filter - users can search within non-figurative verses
-- **⚡ Major Performance Boost**: 3-5x faster page loads through database query optimizations:
+**✅ TEXT SEARCH & PERFORMANCE FIXES (Sept 29, 2025)**:
+- **🔍 Search Functionality**: Text search works correctly with all filter combinations including "Not Figurative"
+- **⚡ Query Optimizations**:
   - Bulk annotation fetching (single query vs N+1 queries)
   - Optimized JOIN operations and GROUP BY usage
-  - Improved count query performance
-- **✅ Complete Testing**: Verified with multiple search terms - all filter combinations working perfectly
+  - Lazy background counting for expensive mixed queries
+- **📊 Accurate Stats Display**:
+  - Shows "(calculating total...)" during background count
+  - Updates seamlessly with exact counts when ready
+  - Correct figurative instance counts for all filter combinations
+- **✅ Complete Testing**: Verified with multiple search terms and filter combinations
 
-**✅ Enhanced Filtering System (Sept 29, 2025):** Added "Not Figurative" option for complete control over verse display - users can now view only figurative verses, only non-figurative verses, or all verses combined
+**✅ Enhanced Filtering System (Sept 29, 2025)**:
+- Added "Not Figurative" option for complete control over verse display
+- Users can view: only figurative verses, only non-figurative verses, or all verses combined
+- Proper handling of verses with invalidated figurative language (detected but rejected during validation)
 
-**✅ Multi-Line Issue Resolved (Sept 28, 2025):** Successfully replaced complex annotation system with reliable yellow highlighting approach - works perfectly for all scenarios
+**✅ Multi-Line Issue Resolved (Sept 28, 2025)**: Successfully replaced complex annotation system with reliable yellow highlighting approach - works perfectly for all scenarios
 
 ---
 
