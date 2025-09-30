@@ -515,7 +515,7 @@ A comprehensive HTML-based interface for exploring and analyzing your biblical f
   - Yellow highlighting always appears regardless of filter selections
 - **⌨️ Hebrew Virtual Keyboard**: On-screen Hebrew keyboard with all letters including final forms
 - **🔍 Dual-Language Search**: Toggle between Hebrew and English text search with auto-detection
-- **🔍 Advanced Metadata Filtering**: Multi-field search with Target/Vehicle/Ground/Posture metadata using AND/OR logic
+- **🔍 Advanced Metadata Filtering**: Multi-term search with Target/Vehicle/Ground/Posture metadata - supports semicolon-separated terms with OR logic
 - **📱 Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **⚡ Real-Time Data**: Live connection to your SQLite database with intelligent pagination
 - **🔗 Enhanced Interactive Details**:
@@ -533,12 +533,21 @@ A comprehensive HTML-based interface for exploring and analyzing your biblical f
   - **Grey Refresh Icon**: Replaced red X with subtle grey circular arrow (↻) for clearing searches
   - **Clear Search Button**: Auto-shows/hides based on input with smooth transitions
   - **Biblical Book Ordering**: All 5 books (Genesis through Deuteronomy) now properly ordered in selector
+  - **"Search for Tag" Header**: Added horizontal underline matching other section headers for visual consistency
 
 - **🔍 Advanced Search Highlighting**:
   - **Pink Search Highlighting**: Search terms now highlighted in pink (#ffb3d9) distinct from yellow figurative highlighting
   - **Hebrew Text Support**: Full Hebrew search highlighting with vowel-point awareness - strips marks for matching but highlights complete words
   - **Nested Highlighting**: Search terms highlighted in pink EVEN inside yellow figurative text with yellow border for visual distinction
   - **Language-Specific Matching**: English uses case-insensitive matching, Hebrew uses vowel-flexible matching
+
+- **🎯 Multi-Term Metadata Search (Latest)**:
+  - **Semicolon-Separated Terms**: Enter multiple search terms in Target/Vehicle/Ground/Posture fields separated by semicolons
+  - **OR Logic**: All terms are combined with OR - search finds verses matching ANY of the specified terms
+  - **Example**: Target: "God;Divine;glory of god" finds verses with 'god' OR 'divine' OR 'glory of god'
+  - **Cross-Field Search**: Searches across all fields with OR logic - finds verses matching Target terms OR Vehicle terms OR Ground terms OR Posture terms
+  - **Case-Insensitive**: All searches are case-insensitive with partial matching
+  - **Removed AND/OR Selector**: Simplified interface - always uses OR logic for intuitive multi-term searching
 
 - **🎭 Enhanced "Not Figurative" Filtering**:
   - **Fixed OR Logic**: When "Not Figurative" + other types checked, shows verses WITH those types OR without any figurative language
@@ -593,7 +602,12 @@ python api_server.py
 4. **English Search**: Click "English" toggle for standard English text search
 5. **View Details**: Click verse headers for AI deliberations, click highlighted text for annotation analysis
 6. **Navigate**: Use prominent "Load Next X Verses" button for seamless browsing
-7. **Advanced Filter**: Use metadata search fields for Target/Vehicle/Ground/Posture filtering
+7. **Advanced Metadata Filter**: Search for figurative language by metadata tags:
+   - **Single Term**: Enter one search term per field (e.g., Target: "God")
+   - **Multiple Terms**: Separate terms with semicolons (e.g., Target: "God;Divine;glory of god;Being")
+   - **Cross-Field Search**: Terms from ALL fields combined with OR logic
+   - **Example**: Target: "God;Divine" + Vehicle: "Man;Woman" finds verses where Target includes 'god'/'divine' OR Vehicle includes 'man'/'woman'
+   - All searches are case-insensitive with partial matching
 
 **🎉 Current Status:** **FULLY OPERATIONAL** - Professional-grade interface with comprehensive filtering options
 
