@@ -31,9 +31,9 @@ Yes! Both the interface and database are freely available under open licenses:
 
 The Hebrew Figurative Language Explorer was created by Ari Robicsek as a research tool for exploring biblical figurative language using modern AI capabilities.
 
-### What does "Project Pardes" mean?
+### What does "The Pardes Project" mean?
 
-"Pardes" (פרד״ס) is a Hebrew acronym representing four levels of biblical interpretation in Jewish tradition. The interface uses this as its internal title, though the public name is "Hebrew Figurative Language Explorer."
+"Pardes" (פרד״ס) is a Hebrew acronym representing four levels of biblical interpretation in Jewish tradition: Peshat (literal), Remez (hinted), Derash (interpretive), and Sod (mystical). The project name reflects this multi-layered approach to understanding biblical text.
 
 ### Can I use this for my research or teaching?
 
