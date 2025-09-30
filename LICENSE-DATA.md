@@ -135,7 +135,8 @@ If you modify the data, indicate what was changed:
 
 The database builds upon:
 
-- **Hebrew and English Biblical Text**: Sourced from Sefaria.org (William Davidson digital edition of the Koren Noé Tanakh). Original texts are in the public domain.
+- **Hebrew Biblical Text**: Miqra According to the Masorah (MAM) via Sefaria.org
+- **English Biblical Translation**: Jewish Publication Society, 2006 via Sefaria.org
 - **AI Analysis**: Generated using Google Gemini 2.5 Flash/Pro and Anthropic Claude Sonnet 4 models
 - **Classification Framework**: Original methodology by Ari Robicsek
 
