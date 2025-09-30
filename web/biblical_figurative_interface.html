@@ -56,6 +56,13 @@
             color: white;
             padding: 1rem 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            flex: 1;
         }
 
         .header h1 {
@@ -67,6 +74,15 @@
         .header p {
             opacity: 0.9;
             font-size: 1.3rem;
+        }
+
+        .header-attribution {
+            font-size: 0.75rem;
+            color: white;
+            opacity: 0.8;
+            text-align: right;
+            line-height: 1.4;
+            max-width: 350px;
         }
 
         /* Sidebar */
@@ -639,8 +655,13 @@
     <div class="app-container">
         <!-- Header -->
         <header class="header">
-            <h1>The Pardes Project</h1>
-            <p>A concordance of figurative language in the bible</p>
+            <div class="header-left">
+                <h1>The Pardes Project</h1>
+                <p>A concordance of figurative language in the bible</p>
+            </div>
+            <div class="header-attribution">
+                Text from Sefaria.org.<br>Hebrew: Miqra According to the Masorah (MAM).<br>English: Jewish Publication Society, 2006.
+            </div>
         </header>
 
         <!-- Sidebar -->
