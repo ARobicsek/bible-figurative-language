@@ -35,7 +35,11 @@
       "Bash(tasklist:*)",
       "Bash(cmd /c:*)",
       "Bash(git rm:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(move:*)",
+      "Bash(move api_server.py web )",
+      "Bash(move interface_requirements.txt webrequirements.txt)",
+      "Bash(curl -s \"http://localhost:5000/api/statistics\")"
     ],
     "deny": [],
     "ask": []
