@@ -44,5 +44,8 @@ test_*.db
 # Personal documents
 Documents/
 
+# Private processing code (not for public release)
+private/
+
 # Claude settings (keep for development)
 # .claude/
