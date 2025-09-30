@@ -1,0 +1,113 @@
+# License Information
+
+This repository uses a **dual-license structure** to appropriately cover both software and data:
+
+---
+
+## Code License: MIT License
+
+**Applies to:** All source code, scripts, interface files, and software components.
+
+**File:** [LICENSE-CODE.md](LICENSE-CODE.md)
+
+**Summary:** You may freely use, modify, and distribute the code, including for commercial purposes, as long as you include the original copyright notice.
+
+**What's covered:**
+- HTML, CSS, JavaScript interface files
+- Python server code
+- Database schema files
+- Build scripts and configuration files
+
+---
+
+## Data License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+**Applies to:** Database content, AI analysis, figurative language classifications, and all derived datasets.
+
+**File:** [LICENSE-DATA.md](LICENSE-DATA.md)
+
+**Summary:** You may freely use, share, and adapt the data, including for commercial purposes, as long as you provide appropriate attribution.
+
+**What's covered:**
+- All data in `database/torah_figurative_language.db`
+- Figurative language classifications
+- AI-generated analysis and explanations
+- Target/Vehicle/Ground/Posture metadata
+- Validation reasoning and confidence scores
+
+---
+
+## Quick Reference
+
+| Component | License | Can I use commercially? | Attribution required? |
+|-----------|---------|------------------------|----------------------|
+| **Code** (interface, scripts) | MIT | ✅ Yes | ✅ Yes (copyright notice) |
+| **Data** (database, analysis) | CC BY 4.0 | ✅ Yes | ✅ Yes (full citation) |
+
+---
+
+## Attribution Examples
+
+### For Code Use
+
+```
+Based on Hebrew Figurative Language Explorer
+Copyright (c) 2025 Ari Robicsek
+Licensed under the MIT License
+https://github.com/[username]/bible-figurative-language-concordance
+```
+
+### For Data Use
+
+```bibtex
+@software{robicsek_hebrew_figurative_2025,
+  author = {Robicsek, Ari},
+  title = {Hebrew Figurative Language Explorer: An AI-Analyzed Database of Torah Figurative Language},
+  year = {2025},
+  url = {https://github.com/[username]/bible-figurative-language-concordance},
+  note = {Version 1.0}
+}
+```
+
+Or:
+
+```
+Data from Hebrew Figurative Language Explorer by Ari Robicsek
+Licensed under CC BY 4.0
+https://github.com/[username]/bible-figurative-language-concordance
+```
+
+---
+
+## Why Dual License?
+
+We use separate licenses for code and data because:
+
+1. **Code** (MIT): Permissive license encouraging wide reuse and integration with other projects
+2. **Data** (CC BY 4.0): Specifically designed for creative works and datasets, ensuring proper attribution while allowing maximum reuse
+
+This approach is common in academic and research projects that combine software and data.
+
+---
+
+## Full License Texts
+
+- **MIT License (Code)**: [LICENSE-CODE.md](LICENSE-CODE.md)
+- **CC BY 4.0 (Data)**: [LICENSE-DATA.md](LICENSE-DATA.md)
+
+---
+
+## Questions?
+
+If you have questions about licensing or permitted uses:
+
+- 📖 Read the full license files linked above
+- 💬 Open a [GitHub Discussion](https://github.com/[username]/bible-figurative-language-concordance/discussions)
+- 🐛 Create an issue with the "question" label
+
+---
+
+Hebrew Figurative Language Explorer
+Copyright (c) 2025 Ari Robicsek
+
+Code: MIT License | Data: CC BY 4.0
