@@ -112,10 +112,11 @@ class SearchProcessor:
             """Parse semicolon-separated search terms and trim whitespace"""
             if not search_str:
                 return []
+            # Strip whitespace and filter out empty strings
             return [term.strip() for term in search_str.split(';') if term.strip()]
 
         # Handle target field with multi-term OR logic
-        if target:
+        if target and target.strip():
             target_terms = parse_search_terms(target)
             if target_terms:
                 target_conditions = []
@@ -126,7 +127,7 @@ class SearchProcessor:
                     conditions.append(f"({' OR '.join(target_conditions)})")
 
         # Handle vehicle field with multi-term OR logic
-        if vehicle:
+        if vehicle and vehicle.strip():
             vehicle_terms = parse_search_terms(vehicle)
             if vehicle_terms:
                 vehicle_conditions = []
@@ -137,7 +138,7 @@ class SearchProcessor:
                     conditions.append(f"({' OR '.join(vehicle_conditions)})")
 
         # Handle ground field with multi-term OR logic
-        if ground:
+        if ground and ground.strip():
             ground_terms = parse_search_terms(ground)
             if ground_terms:
                 ground_conditions = []
@@ -148,7 +149,7 @@ class SearchProcessor:
                     conditions.append(f"({' OR '.join(ground_conditions)})")
 
         # Handle posture field with multi-term OR logic
-        if posture:
+        if posture and posture.strip():
             posture_terms = parse_search_terms(posture)
             if posture_terms:
                 posture_conditions = []
@@ -158,11 +159,12 @@ class SearchProcessor:
                 if posture_conditions:
                     conditions.append(f"({' OR '.join(posture_conditions)})")
 
-        if not conditions:
-            return "1=1", []
-
         # All fields are combined with OR (as per user requirement)
-        return f"({' OR '.join(conditions)})", params
+        if conditions:
+            return f"({' OR '.join(conditions)})", params
+        else:
+            # No search terms - return empty to indicate no metadata filter should be applied
+            return "", []
 
 # API Routes
 
@@ -195,13 +197,19 @@ def get_verses():
         limit = int(request.args.get('limit', 50))
         offset = int(request.args.get('offset', 0))
 
+        # Check if metadata search is active FIRST (before deciding query structure)
+        # This is needed to determine if we can use simple queries or need the JOIN
+        has_any_metadata = bool(search_target or search_vehicle or search_ground or search_posture)
+
         # Optimize query structure based on whether we need figurative_language table
         # For non-figurative only queries, skip the JOIN entirely
-        use_simple_query = show_not_figurative and (not figurative_types or figurative_types == [''])
+        # BUT: if metadata search is active, we MUST use the JOIN
+        use_simple_query = show_not_figurative and (not figurative_types or figurative_types == ['']) and not has_any_metadata
 
         # Check if we're selecting ALL types + Not Figurative (which means show all verses)
+        # BUT: if metadata search is active, we can't skip the filtering logic
         all_types = {'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
-        show_all_verses = show_not_figurative and set(figurative_types) == all_types
+        show_all_verses = show_not_figurative and set(figurative_types) == all_types and not has_any_metadata
 
         if show_all_verses:
             # User wants ALL verses (with and without figurative language)
@@ -298,7 +306,28 @@ def get_verses():
         # Handle figurative language filtering (applied AFTER text search)
         # Skip this section for simple queries and show_all_verses - they don't need filtering
         if not use_simple_query and not show_all_verses:
-            if show_not_figurative and (not figurative_types or figurative_types == ['']):
+            # Check if metadata search is active
+            metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
+                search_target, search_vehicle, search_ground, search_posture
+            )
+            has_metadata_search = bool(metadata_condition)
+
+            # METADATA SEARCH OVERRIDES EVERYTHING
+            # If metadata search is active, ONLY show figurative verses matching the search
+            # Ignore "Not Figurative" checkbox entirely (non-figurative verses have no metadata)
+            if has_metadata_search:
+                # Only figurative verses
+                conditions.append("fl.id IS NOT NULL")
+                # Must match selected figurative types (if any specified)
+                if figurative_types and figurative_types != ['']:
+                    figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                    conditions.append(figurative_filter)
+                # Must match metadata search
+                conditions.append(metadata_condition)
+                params.extend(metadata_params)
+
+            # NO METADATA SEARCH - apply normal filtering logic
+            elif show_not_figurative and (not figurative_types or figurative_types == ['']):
                 # Show ONLY verses WITHOUT figurative language (and matching text search if any)
                 # Include verses with no FL records OR verses where all final_* are 'no'
                 conditions.append("(fl.id IS NULL OR fl.final_figurative_language = 'no')")
@@ -317,15 +346,6 @@ def get_verses():
                 # If no figurative types selected and not showing non-figurative, show nothing
                 # This will be handled by the frontend now
                 pass
-
-            # Metadata search
-            metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
-                search_target, search_vehicle, search_ground, search_posture
-            )
-            if metadata_params:
-                conditions.append(metadata_condition)
-                params.extend(metadata_params)
-                conditions.append("fl.id IS NOT NULL")  # Only verses with figurative language
 
         # Add conditions to query
         if conditions:
@@ -844,11 +864,15 @@ def get_verses_count():
         search_posture = request.args.get('search_posture', '')
 
         # Build conditions (same logic as main /api/verses endpoint)
-        use_simple_query = show_not_figurative and (not figurative_types or figurative_types == [''])
+        # Check if metadata search is active FIRST
+        has_any_metadata = bool(search_target or search_vehicle or search_ground or search_posture)
+
+        use_simple_query = show_not_figurative and (not figurative_types or figurative_types == ['']) and not has_any_metadata
 
         # Check if we're selecting ALL types + Not Figurative (which means show all verses)
+        # BUT: if metadata search is active, we can't skip the filtering logic
         all_types = {'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
-        show_all_verses = show_not_figurative and set(figurative_types) == all_types
+        show_all_verses = show_not_figurative and set(figurative_types) == all_types and not has_any_metadata
 
         if show_all_verses:
             # Show all verses - use simple count
@@ -979,8 +1003,27 @@ def get_verses_count():
                 conditions.append("v.english_text LIKE ?")
                 params.append(f"%{search_english}%")
 
-            # Figurative language filtering
-            if show_not_figurative and (not figurative_types or figurative_types == ['']):
+            # Check if metadata search is active
+            metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
+                search_target, search_vehicle, search_ground, search_posture
+            )
+            has_metadata_search = bool(metadata_condition)
+
+            # METADATA SEARCH OVERRIDES EVERYTHING
+            # If metadata search is active, ONLY show figurative verses matching the search
+            if has_metadata_search:
+                # Only figurative verses
+                conditions.append("fl.id IS NOT NULL")
+                # Must match selected figurative types (if any specified)
+                if figurative_types and figurative_types != ['']:
+                    figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                    conditions.append(figurative_filter)
+                # Must match metadata search
+                conditions.append(metadata_condition)
+                params.extend(metadata_params)
+
+            # NO METADATA SEARCH - apply normal filtering logic
+            elif show_not_figurative and (not figurative_types or figurative_types == ['']):
                 # Not figurative only: include verses with no FL records OR where all final_* are 'no'
                 conditions.append("(fl.id IS NULL OR fl.final_figurative_language = 'no')")
             elif figurative_types and figurative_types != ['']:
@@ -993,15 +1036,6 @@ def get_verses_count():
                     figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
                     conditions.append(figurative_filter)
                     conditions.append("fl.id IS NOT NULL")
-
-            # Metadata search
-            metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
-                search_target, search_vehicle, search_ground, search_posture
-            )
-            if metadata_params:
-                conditions.append(metadata_condition)
-                params.extend(metadata_params)
-                conditions.append("fl.id IS NOT NULL")
 
             # Add conditions to query
             if conditions:
@@ -1069,7 +1103,7 @@ def get_verses_count():
                     metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
                         search_target, search_vehicle, search_ground, search_posture
                     )
-                    if metadata_params:
+                    if metadata_condition:  # Non-empty string means we have search terms
                         count_conditions.append(metadata_condition)
                         count_params.extend(metadata_params)
 

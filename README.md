@@ -548,16 +548,22 @@ A comprehensive HTML-based interface for exploring and analyzing your biblical f
   - **Cross-Field Search**: Searches across all fields with OR logic - finds verses matching Target terms OR Vehicle terms OR Ground terms OR Posture terms
   - **Case-Insensitive**: All searches are case-insensitive with partial matching
   - **Removed AND/OR Selector**: Simplified interface - always uses OR logic for intuitive multi-term searching
+  - **🔧 Metadata Search Priority**: When metadata search is active, it takes priority and filters out non-figurative verses (since they have no metadata to match)
+  - **Grey Refresh Button**: Always-visible grey refresh arrow (↻) for clearing all tag search fields
+  - **Improved Placeholder Text**: Shows "for multiple, separate with ;" in smaller text below each search field
 
 - **🎭 Enhanced "Not Figurative" Filtering**:
   - **Fixed OR Logic**: When "Not Figurative" + other types checked, shows verses WITH those types OR without any figurative language
   - **Proper SQL Filtering**: `({figurative_filter} OR fl.id IS NULL)` ensures correct verse filtering
   - **Pagination Reset**: Automatically resets offset when filters change to prevent stale results
+  - **🔧 Metadata Override**: When tag search is active, "Not Figurative" checkbox is ignored to prevent showing all verses
 
 - **⚡ Performance & Bug Fixes**:
   - Fixed text search ordering to apply before figurative filtering
   - Reset pagination offset in `filterAndRenderVerses()` to fix second-search bugs
   - Improved `updateBookOptions()` to preserve biblical ordering and prevent dynamic reordering
+  - **🔧 Fixed Tag Search Bug**: Resolved issue where tag search would return all verses after multiple searches
+  - **🔧 Fixed "Show All Verses" Override**: Metadata search now prevents the "show all verses" optimization from being used
 
 **🆕 Previous Interface Enhancements (Sept 28, 2025):**
 - **🎨 Refined Visual Design**: Updated color scheme with dark gradient headers (#0a1930 → #020408)
