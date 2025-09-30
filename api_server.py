@@ -103,32 +103,66 @@ class SearchProcessor:
         return f"({' OR '.join(conditions)})" if conditions else "1=1"
 
     @staticmethod
-    def build_metadata_search(target: str, vehicle: str, ground: str, posture: str, operator: str) -> tuple:
-        """Build SQL conditions for metadata search with AND/OR logic"""
+    def build_metadata_search(target: str, vehicle: str, ground: str, posture: str) -> tuple:
+        """Build SQL conditions for metadata search with OR logic and semicolon-separated multi-term support"""
         conditions = []
         params = []
 
+        def parse_search_terms(search_str: str) -> List[str]:
+            """Parse semicolon-separated search terms and trim whitespace"""
+            if not search_str:
+                return []
+            return [term.strip() for term in search_str.split(';') if term.strip()]
+
+        # Handle target field with multi-term OR logic
         if target:
-            conditions.append("fl.target LIKE ?")
-            params.append(f"%{target}%")
+            target_terms = parse_search_terms(target)
+            if target_terms:
+                target_conditions = []
+                for term in target_terms:
+                    target_conditions.append("fl.target LIKE ?")
+                    params.append(f"%{term}%")
+                if target_conditions:
+                    conditions.append(f"({' OR '.join(target_conditions)})")
 
+        # Handle vehicle field with multi-term OR logic
         if vehicle:
-            conditions.append("fl.vehicle LIKE ?")
-            params.append(f"%{vehicle}%")
+            vehicle_terms = parse_search_terms(vehicle)
+            if vehicle_terms:
+                vehicle_conditions = []
+                for term in vehicle_terms:
+                    vehicle_conditions.append("fl.vehicle LIKE ?")
+                    params.append(f"%{term}%")
+                if vehicle_conditions:
+                    conditions.append(f"({' OR '.join(vehicle_conditions)})")
 
+        # Handle ground field with multi-term OR logic
         if ground:
-            conditions.append("fl.ground LIKE ?")
-            params.append(f"%{ground}%")
+            ground_terms = parse_search_terms(ground)
+            if ground_terms:
+                ground_conditions = []
+                for term in ground_terms:
+                    ground_conditions.append("fl.ground LIKE ?")
+                    params.append(f"%{term}%")
+                if ground_conditions:
+                    conditions.append(f"({' OR '.join(ground_conditions)})")
 
+        # Handle posture field with multi-term OR logic
         if posture:
-            conditions.append("fl.posture LIKE ?")
-            params.append(f"%{posture}%")
+            posture_terms = parse_search_terms(posture)
+            if posture_terms:
+                posture_conditions = []
+                for term in posture_terms:
+                    posture_conditions.append("fl.posture LIKE ?")
+                    params.append(f"%{term}%")
+                if posture_conditions:
+                    conditions.append(f"({' OR '.join(posture_conditions)})")
 
         if not conditions:
             return "1=1", []
 
-        joiner = " AND " if operator.upper() == "AND" else " OR "
-        return f"({joiner.join(conditions)})", params
+        # All fields are combined with OR (as per user requirement)
+        return f"({' OR '.join(conditions)})", params
 
 # API Routes
 
@@ -158,7 +192,6 @@ def get_verses():
         search_vehicle = request.args.get('search_vehicle', '')
         search_ground = request.args.get('search_ground', '')
         search_posture = request.args.get('search_posture', '')
-        search_operator = request.args.get('search_operator', 'AND')
         limit = int(request.args.get('limit', 50))
         offset = int(request.args.get('offset', 0))
 
@@ -287,7 +320,7 @@ def get_verses():
 
             # Metadata search
             metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
-                search_target, search_vehicle, search_ground, search_posture, search_operator
+                search_target, search_vehicle, search_ground, search_posture
             )
             if metadata_params:
                 conditions.append(metadata_condition)
@@ -809,7 +842,6 @@ def get_verses_count():
         search_vehicle = request.args.get('search_vehicle', '')
         search_ground = request.args.get('search_ground', '')
         search_posture = request.args.get('search_posture', '')
-        search_operator = request.args.get('search_operator', 'AND')
 
         # Build conditions (same logic as main /api/verses endpoint)
         use_simple_query = show_not_figurative and (not figurative_types or figurative_types == [''])
@@ -964,7 +996,7 @@ def get_verses_count():
 
             # Metadata search
             metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
-                search_target, search_vehicle, search_ground, search_posture, search_operator
+                search_target, search_vehicle, search_ground, search_posture
             )
             if metadata_params:
                 conditions.append(metadata_condition)
@@ -1035,7 +1067,7 @@ def get_verses_count():
                 # Add metadata search
                 if search_target or search_vehicle or search_ground or search_posture:
                     metadata_condition, metadata_params = SearchProcessor.build_metadata_search(
-                        search_target, search_vehicle, search_ground, search_posture, search_operator
+                        search_target, search_vehicle, search_ground, search_posture
                     )
                     if metadata_params:
                         count_conditions.append(metadata_condition)
