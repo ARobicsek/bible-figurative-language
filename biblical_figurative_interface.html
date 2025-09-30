@@ -798,18 +798,14 @@
                 </div>
 
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; margin-bottom: 0.5rem;">
-                    <h4 style="color: #2b394f; margin: 0; font-size: 1rem;">Search for Tag</h4>
-                    <button id="clear-metadata-btn" onclick="clearMetadataSearch()" style="background: none; border: none; color: #6c757d; font-size: 1.2rem; cursor: pointer; padding: 0; margin: 0; opacity: 0; transition: opacity 0.2s;" title="Clear tag search">↻</button>
+                    <h4 style="color: #2b394f; margin: 0; font-size: 1rem; border-bottom: 2px solid #2b394f; padding-bottom: 0.3rem; flex: 1;">Search for Tag</h4>
+                    <button id="clear-metadata-btn" onclick="clearMetadataSearch()" style="background: none; border: none; color: #6c757d; font-size: 1.2rem; cursor: pointer; padding: 0; margin: 0 0 0 0.5rem; opacity: 0; transition: opacity 0.2s;" title="Clear tag search">↻</button>
                 </div>
                 <div class="metadata-search" style="margin-top: 0.5rem;">
-                    <input type="text" id="target-search" placeholder="Target...">
-                    <input type="text" id="vehicle-search" placeholder="Vehicle...">
-                    <input type="text" id="ground-search" placeholder="Ground...">
-                    <input type="text" id="posture-search" placeholder="Posture...">
-                    <select id="search-operator">
-                        <option value="OR">OR</option>
-                        <option value="AND">AND</option>
-                    </select>
+                    <input type="text" id="target-search" placeholder="Target (separate with ;)">
+                    <input type="text" id="vehicle-search" placeholder="Vehicle (separate with ;)">
+                    <input type="text" id="ground-search" placeholder="Ground (separate with ;)">
+                    <input type="text" id="posture-search" placeholder="Posture (separate with ;)">
                 </div>
             </section>
         </aside>
@@ -865,8 +861,7 @@
                 target: '',
                 vehicle: '',
                 ground: '',
-                posture: '',
-                operator: 'OR'
+                posture: ''
             },
             pagination: {
                 limit: 50,
@@ -967,7 +962,6 @@
                 updateMetadataClearButtonVisibility();
                 debounce(handleSearch, 300)();
             });
-            document.getElementById('search-operator').addEventListener('change', handleSearch);
 
             // Panel controls
             elements.closePanel.addEventListener('click', closeDetailPanel);
@@ -1021,8 +1015,7 @@
                 target: document.getElementById('target-search').value,
                 vehicle: document.getElementById('vehicle-search').value,
                 ground: document.getElementById('ground-search').value,
-                posture: document.getElementById('posture-search').value,
-                operator: document.getElementById('search-operator').value
+                posture: document.getElementById('posture-search').value
             };
             filterAndRenderVerses();
         }
@@ -1423,7 +1416,6 @@
                 search_vehicle: appState.currentSearch.vehicle,
                 search_ground: appState.currentSearch.ground,
                 search_posture: appState.currentSearch.posture,
-                search_operator: appState.currentSearch.operator,
                 limit: appState.pagination.limit,
                 offset: appState.pagination.offset
             };
