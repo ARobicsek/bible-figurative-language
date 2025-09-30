@@ -1,5 +1,5 @@
-# Hebrew Figurative Language Database
-A comprehensive production-ready system for detecting and analyzing figurative language in biblical Hebrew texts, featuring an **advanced three-tier AI architecture** with intelligent fallback processing and complete validation pipeline for scholarly research.
+# Project Pardes
+A concordance of figurative language in the bible
 
 ## 🎉 Project Status: Production-Ready Advanced AI Architecture
 **LATEST ACHIEVEMENT**: Successfully completed **lazy background counting** and **database selector** features - the interface now loads instantly with 50-60x faster performance for mixed queries, and users can easily switch between databases.

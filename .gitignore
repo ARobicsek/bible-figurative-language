@@ -1,4 +1,48 @@
-Documents/
-*.db-journal
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Environment
 .env
+.env.local
+
+# Databases (except the main database)
+*.db
+*.db-journal
+!database/torah_figurative_language.db
+
+# Logs
+*.log
+*.log.*
+*_log.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Cache
+cache_*/
+
+# Temporary
+tmp/
+temp/
+test_*.db
+*_test.db
+
+# JSON processing files
+*_results.json
+*_processing_summary_*.json
+
+# Personal documents
+Documents/
+
+# Claude settings (keep for development)
+# .claude/
