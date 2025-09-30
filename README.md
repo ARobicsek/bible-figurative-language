@@ -223,8 +223,8 @@ If you use this tool or database in your research, please cite:
 - RESTful API via Supabase
 
 **Data Source:**
-- Hebrew text: Sefaria.org (open-source Jewish texts)
-- English translation: Sefaria.org
+- Hebrew text: Miqra According to the Masorah (MAM) via Sefaria.org
+- English translation: Jewish Publication Society, 2006 via Sefaria.org
 - AI Analysis: Gemini 2.5 Flash/Pro + Claude Sonnet 4
 
 ---

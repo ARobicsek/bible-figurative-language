@@ -123,8 +123,8 @@ See [METHODOLOGY.md](METHODOLOGY.md#classification-framework) for detailed expla
 ### Where does the Hebrew and English text come from?
 
 All source texts are from **Sefaria.org**, an open-source repository of Jewish texts:
-- Hebrew text with vowel points (nikud)
-- English translations
+- **Hebrew text**: Miqra According to the Masorah (MAM) with vowel points (nikud)
+- **English translation**: Jewish Publication Society, 2006
 - Consistent versification
 
 **Sefaria is community-vetted** and widely used in digital biblical scholarship.
