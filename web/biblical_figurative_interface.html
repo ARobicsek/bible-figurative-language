@@ -691,10 +691,15 @@
                     <option value="deuteronomy" selected>Deuteronomy</option>
                     <option value="psalms" selected>Psalms</option>
                 </select>
-                <small style="font-size: 0.85rem; opacity: 0.7; display: block; margin-top: 0.25rem;">Tip: Selecting fewer books = faster searches</small>
-                <label for="chapter-input">Chapters:</label>
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.75rem;">
+                    <label for="chapter-input">Chapters:</label>
+                    <button onclick="document.getElementById('chapter-input').value='all'; filterAndRenderVerses();" style="background: none; border: none; color: #6c757d; font-size: 1.1rem; cursor: pointer; padding: 0; margin: 0;" title="Reset to all chapters">↻</button>
+                </div>
                 <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
-                <label for="verse-input">Verses:</label>
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
+                    <label for="verse-input">Verses:</label>
+                    <button onclick="document.getElementById('verse-input').value='all'; filterAndRenderVerses();" style="background: none; border: none; color: #6c757d; font-size: 1.1rem; cursor: pointer; padding: 0; margin: 0;" title="Reset to all verses">↻</button>
+                </div>
                 <input type="text" id="verse-input" placeholder="e.g., 1-5,10,15 or 'all'">
                 <button id="load-verses" class="btn btn-primary" style="width: 100%; padding: 0.5rem; background: #2b394f; color: white; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; margin-top: 0.5rem; transition: all 0.2s ease;">Load Verses</button>
             </section>
@@ -825,15 +830,12 @@
                     <h4 style="color: #2b394f; margin: 0; font-size: 1rem; border-bottom: 2px solid #2b394f; padding-bottom: 0.3rem; flex: 1;">Search for Tag</h4>
                     <button id="clear-metadata-btn" onclick="clearMetadataSearch()" style="background: none; border: none; color: #6c757d; font-size: 1.2rem; cursor: pointer; padding: 0; margin: 0 0 0 0.5rem;" title="Clear tag search">↻</button>
                 </div>
-                <div class="metadata-search" style="margin-top: 0.5rem;">
+                <div style="font-size: 0.85rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.75rem;">For multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
+                <div class="metadata-search" style="margin-top: 0;">
                     <input type="text" id="target-search" placeholder="Target">
-                    <div style="font-size: 0.6em; color: #6c757d; margin-top: -0.3rem; margin-bottom: 0.5rem;">for multiple, separate with ;</div>
                     <input type="text" id="vehicle-search" placeholder="Vehicle">
-                    <div style="font-size: 0.6em; color: #6c757d; margin-top: -0.3rem; margin-bottom: 0.5rem;">for multiple, separate with ;</div>
                     <input type="text" id="ground-search" placeholder="Ground">
-                    <div style="font-size: 0.6em; color: #6c757d; margin-top: -0.3rem; margin-bottom: 0.5rem;">for multiple, separate with ;</div>
                     <input type="text" id="posture-search" placeholder="Posture">
-                    <div style="font-size: 0.6em; color: #6c757d; margin-top: -0.3rem; margin-bottom: 0.5rem;">for multiple, separate with ;</div>
                 </div>
             </section>
         </aside>
@@ -1634,34 +1636,16 @@
                     return false;
                 }
 
-                // Try exact match first (should work in most cases)
-                if (highlightedText.includes(figurativeText)) {
+                // For Hebrew, be more lenient - if annotation has text and visible types, include it
+                // The highlighting logic will handle the actual matching with normalization
+                if (language === 'hebrew') {
+                    // Hebrew has visible types and text, so include it for highlighting attempt
                     return true;
                 }
 
-                // For Hebrew, also try matching with HTML tags and entities removed
-                if (language === 'hebrew') {
-                    const textWithoutHTML = highlightedText
-                        .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
-                        .replace(/<[^>]*>/g, '') // Remove other HTML tags
-                        .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
-                        .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
-                        .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
-                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
-                        .replace(/־/g, ' ') // Replace Hebrew hyphens with spaces
-                        .replace(/\s+/g, ' ') // Normalize whitespace
-                        .trim();
-
-                    // Also normalize the figurative text for comparison
-                    const normalizedFigText = figurativeText
-                        .replace(/־/g, ' ') // Replace Hebrew hyphens with spaces
-                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
-                        .replace(/\s+/g, ' ')
-                        .trim();
-
-                    if (textWithoutHTML.includes(figurativeText) || textWithoutHTML.includes(normalizedFigText)) {
-                        return true;
-                    }
+                // For English, check if the text is actually present
+                if (highlightedText.includes(figurativeText)) {
+                    return true;
                 }
 
                 // Handle divine name variations for English non-sacred
@@ -2161,8 +2145,10 @@
             const totalFigurativeInstances = appState.pagination.total_figurative_instances || 0;
 
             const remainingVerses = Math.max(0, totalCount - (appState.pagination.offset + currentVerses));
+            const nextStart = currentVerses + 1;
+            const nextEnd = Math.min(currentVerses + appState.pagination.limit, totalCount);
             const nextButton = appState.pagination.hasMore ?
-                `<button class="nav-button" onclick="loadMore()">Load Next ${Math.min(appState.pagination.limit, remainingVerses)} Verses</button>` :
+                `<button class="nav-button" onclick="loadMore()">Load verses ${nextStart}-${nextEnd}</button>` :
                 '<span style="color: #28a745; font-weight: 600;">✓ All verses loaded</span>';
 
             // Check if we're showing an estimate
