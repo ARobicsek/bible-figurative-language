@@ -26,10 +26,10 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend integration
 app.config['JSON_AS_ASCII'] = False  # Ensure proper Unicode in JSON responses
 
-# Database configuration - can be changed via API
+# Database configuration
 # Get the project root directory (parent of web/)
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_PATH = os.path.join(PROJECT_ROOT, 'database', 'torah_figurative_language.db')
+DB_PATH = os.path.join(PROJECT_ROOT, 'database', 'Pentateuch_Psalms_fig_language.db')
 DB_DIRECTORY = os.path.join(PROJECT_ROOT, 'database')
 
 class DatabaseManager:
@@ -220,7 +220,7 @@ def get_verses():
             SELECT
                 v.id, v.reference, v.book, v.chapter, v.verse,
                 v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
-                v.english_text, v.english_text_non_sacred,
+                v.english_text_clean, v.english_text_clean_non_sacred,
                 v.figurative_detection_deliberation, v.model_used
             FROM verses v
             WHERE 1=1
@@ -232,7 +232,7 @@ def get_verses():
             SELECT
                 v.id, v.reference, v.book, v.chapter, v.verse,
                 v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
-                v.english_text, v.english_text_non_sacred,
+                v.english_text_clean, v.english_text_clean_non_sacred,
                 v.figurative_detection_deliberation, v.model_used
             FROM verses v
             LEFT JOIN figurative_language fl ON v.id = fl.verse_id
@@ -244,7 +244,7 @@ def get_verses():
             SELECT
                 v.id, v.reference, v.book, v.chapter, v.verse,
                 v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
-                v.english_text, v.english_text_non_sacred,
+                v.english_text_clean, v.english_text_clean_non_sacred,
                 v.figurative_detection_deliberation, v.model_used
             FROM verses v
             LEFT JOIN figurative_language fl ON v.id = fl.verse_id
@@ -259,8 +259,8 @@ def get_verses():
             book_conditions = []
             for book in books:
                 book = book.strip()
-                # Handle all Torah books by name
-                valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                # Handle all books by name
+                valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
                 if book.lower() in valid_books:
                     book_conditions.append("v.book = ?")
                     params.append(book.title())
@@ -302,7 +302,7 @@ def get_verses():
             params.append(f"%{search_hebrew}%")
 
         if search_english:
-            conditions.append("v.english_text LIKE ?")
+            conditions.append("v.english_text_clean LIKE ?")
             params.append(f"%{search_english}%")
 
         # Handle figurative language filtering (applied AFTER text search)
@@ -365,6 +365,7 @@ def get_verses():
                 WHEN 'Leviticus' THEN 3
                 WHEN 'Numbers' THEN 4
                 WHEN 'Deuteronomy' THEN 5
+                WHEN 'Psalms' THEN 6
                 ELSE 99
             END, v.chapter, v.verse
             LIMIT ? OFFSET ?"""
@@ -548,7 +549,7 @@ def get_verses():
                 book_conds = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
                     if book.lower() in valid_books:
                         book_conds.append("v.book = ?")
                         count_params_list.append(book.title())
@@ -580,7 +581,7 @@ def get_verses():
                 book_conds = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
                     if book.lower() in valid_books:
                         book_conds.append("v.book = ?")
                         verse_params.append(book.title())
@@ -751,96 +752,8 @@ def get_search_suggestions():
         print(f"Error in get_search_suggestions: {e}")
         return jsonify([])
 
-@app.route('/api/databases')
-def get_databases():
-    """Get list of available database files"""
-    try:
-        # Find all .db files in the database directory
-        db_files = glob.glob(os.path.join(DB_DIRECTORY, '*.db'))
-
-        databases = []
-        for db_file in db_files:
-            file_name = os.path.basename(db_file)
-            file_size = os.path.getsize(db_file)
-            file_modified = os.path.getmtime(db_file)
-
-            # Get verse count if possible
-            try:
-                conn = sqlite3.connect(db_file)
-                cursor = conn.cursor()
-                cursor.execute("SELECT COUNT(*) FROM verses")
-                verse_count = cursor.fetchone()[0]
-                conn.close()
-            except:
-                verse_count = None
-
-            databases.append({
-                'name': file_name,
-                'path': db_file,
-                'size': file_size,
-                'modified': file_modified,
-                'verse_count': verse_count,
-                'is_current': db_file == DB_PATH
-            })
-
-        # Sort by modification time (newest first)
-        databases.sort(key=lambda x: x['modified'], reverse=True)
-
-        return jsonify({
-            'databases': databases,
-            'current_db': os.path.basename(DB_PATH)
-        })
-
-    except Exception as e:
-        print(f"Error in get_databases: {e}")
-        traceback.print_exc()
-        return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
-
-@app.route('/api/database/select', methods=['POST'])
-def select_database():
-    """Change the active database"""
-    global DB_PATH, db_manager
-
-    try:
-        data = request.json
-        new_db_name = data.get('database')
-
-        if not new_db_name:
-            return jsonify({'error': 'Database name required'}), 400
-
-        # Build full path
-        new_db_path = os.path.join(DB_DIRECTORY, new_db_name)
-
-        # Check if file exists
-        if not os.path.exists(new_db_path):
-            return jsonify({'error': 'Database file not found'}), 404
-
-        # Test database connection
-        try:
-            conn = sqlite3.connect(new_db_path)
-            cursor = conn.cursor()
-            cursor.execute("SELECT COUNT(*) FROM verses")
-            verse_count = cursor.fetchone()[0]
-            conn.close()
-        except Exception as e:
-            return jsonify({'error': 'Invalid database file', 'message': str(e)}), 400
-
-        # Update global DB_PATH and reinitialize db_manager
-        DB_PATH = new_db_path
-        db_manager = DatabaseManager(DB_PATH)
-
-        print(f"Database switched to: {DB_PATH}")
-
-        return jsonify({
-            'success': True,
-            'database': new_db_name,
-            'verse_count': verse_count
-        })
-
-    except Exception as e:
-        print(f"Error in select_database: {e}")
-        traceback.print_exc()
-        return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
+# Database selection endpoints removed - now using fixed database
+# These endpoints have been disabled as the application now uses a single fixed database
 
 @app.route('/api/verses/count')
 def get_verses_count():
@@ -887,7 +800,7 @@ def get_verses_count():
                 book_conditions = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
                     if book.lower() in valid_books:
                         book_conditions.append("v.book = ?")
                         params.append(book.title())
@@ -933,7 +846,7 @@ def get_verses_count():
                 book_conditions = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
                     if book.lower() in valid_books:
                         book_conditions.append("v.book = ?")
                         params.append(book.title())
@@ -975,7 +888,7 @@ def get_verses_count():
                 book_conditions = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
                     if book.lower() in valid_books:
                         book_conditions.append("v.book = ?")
                         params.append(book.title())
@@ -1068,7 +981,7 @@ def get_verses_count():
                     book_conditions = []
                     for book in books:
                         book = book.strip()
-                        valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy']
+                        valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
                         if book.lower() in valid_books:
                             book_conditions.append("v.book = ?")
                             count_params.append(book.title())
