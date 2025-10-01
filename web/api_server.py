@@ -48,8 +48,13 @@ class DatabaseManager:
 
     def get_connection(self):
         """Create database connection with proper configuration"""
-        conn = sqlite3.connect(self.db_path)
+        conn = sqlite3.connect(self.db_path, timeout=30.0)
         conn.row_factory = sqlite3.Row  # Enable dict-like access to rows
+        # Optimize for read-heavy workload
+        conn.execute("PRAGMA cache_size = -64000")  # 64MB cache
+        conn.execute("PRAGMA temp_store = MEMORY")
+        conn.execute("PRAGMA journal_mode = WAL")
+        conn.execute("PRAGMA synchronous = NORMAL")
         return conn
 
     def execute_query(self, query: str, params: tuple = ()) -> List[Dict]:
