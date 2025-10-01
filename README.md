@@ -1,6 +1,8 @@
-# Hebrew Figurative Language Explorer
+# Tzafun
 
-**An interactive web-based tool for exploring AI-analyzed figurative language in the Hebrew Bible (Torah)**
+**A concordance of Biblical figurative language**
+
+*"Tzafun" (צָפַן) means "hidden" or "concealed" and also implies treasure, as in Psalms 31:20: "How abundant is the good that You have in store (צָפַ֢נְתָּ) for those who fear You" and Psalm 119:11: "I have treasured (צָפַ֣נְתִּי) Your word in my heart."*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE-CODE.md)
 [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA.md)
@@ -9,7 +11,7 @@
 
 ## 🌟 Overview
 
-The Hebrew Figurative Language Explorer is a comprehensive research tool that provides access to 5,846 verses from the Torah (Genesis through Deuteronomy), analyzed for figurative language using advanced AI models. It originated with the question - couldn't we use powerful AI tools to compile a 'concordance' of biblical figurative speech? The database now contains 3,020 validated instances of figurative language, including metaphors, similes, personifications, idioms, hyperboles, and metonymies from across the Pentateuch.
+Tzafun is a comprehensive research tool that provides access to 8,373 verses from the Torah (Genesis through Deuteronomy) and Psalms, analyzed for figurative language using advanced AI models. It originated with the question - couldn't we use powerful AI tools to compile a 'concordance' of biblical figurative speech? The database now contains 5,865 validated instances of figurative language, including metaphors, similes, personifications, idioms, hyperboles, and metonymies from across the Pentateuch and all 150 chapters of Psalms.
 
 **Key Features:**
 - 🔍 Interactive search across Hebrew and English text
@@ -29,25 +31,25 @@ The Hebrew Figurative Language Explorer is a comprehensive research tool that pr
 
 ## 📈 Database Statistics
 
-The database provides comprehensive coverage of the Torah with validated AI analysis:
+The database provides comprehensive coverage of the Torah and Psalms with validated AI analysis:
 
 | Metric | Count |
 |--------|-------|
-| **Total verses analyzed** | 5,846 |
-| **Verses with figurative language** | 2,307 (39.5%) |
-| **Total figurative instances** | 3,020 |
+| **Total verses analyzed** | 8,373 |
+| **Verses with figurative language** | 4,214 (50.3%) |
+| **Total figurative instances** | 5,865 |
 
 ### By Figurative Type
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| **Idioms** | 1,814 | 60.1% |
-| **Metonymies** | 978 | 32.4% |
-| **Metaphors** | 880 | 29.1% |
-| **Personifications** | 208 | 6.9% |
-| **Similes** | 117 | 3.9% |
-| **Hyperboles** | 96 | 3.2% |
-| **Other** | 5 | 0.2% |
+| **Idioms** | 2,785 | 47.5% |
+| **Metaphors** | 2,214 | 37.7% |
+| **Metonymies** | 1,720 | 29.3% |
+| **Personifications** | 528 | 9.0% |
+| **Similes** | 323 | 5.5% |
+| **Hyperboles** | 187 | 3.2% |
+| **Other** | 7 | 0.1% |
 
 *Note: Percentages sum to more than 100% because phrases can be classified as multiple types simultaneously*
 
@@ -124,8 +126,8 @@ Simply visit our [live demo](#) to start exploring immediately. No installation 
 
 ```bash
 # Clone the repository
-git clone https://github.com/[username]/bible-figurative-language-concordance.git
-cd bible-figurative-language-concordance
+git clone https://github.com/[username]/tzafun.git
+cd tzafun
 
 # Install dependencies
 pip install -r web/requirements.txt
@@ -197,11 +199,11 @@ The analysis uses a structured metadata system to characterize each figurative i
 If you use this tool or database in your research, please cite:
 
 ```bibtex
-@software{robicsek_hebrew_figurative_2025,
+@software{robicsek_tzafun_2025,
   author = {Robicsek, Ari},
-  title = {Hebrew Figurative Language Explorer: An AI-Analyzed Database of Torah Figurative Language},
+  title = {Tzafun: A Concordance of Biblical Figurative Language},
   year = {2025},
-  url = {https://github.com/[username]/bible-figurative-language-concordance},
+  url = {https://github.com/[username]/tzafun},
   note = {Version 1.0}
 }
 ```
@@ -283,8 +285,8 @@ You are free to:
 
 ## 📞 Contact & Support
 
-- **Issues & Bug Reports**: [GitHub Issues](https://github.com/[username]/bible-figurative-language-concordance/issues)
-- **Feature Requests**: [GitHub Discussions](https://github.com/[username]/bible-figurative-language-concordance/discussions)
+- **Issues & Bug Reports**: [GitHub Issues](https://github.com/[username]/tzafun/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/[username]/tzafun/discussions)
 - **General Questions**: Open an issue with the "question" label
 
 ---
@@ -300,7 +302,8 @@ You are free to:
 ## 🗺️ Roadmap
 
 ### Current (v1.0)
-- ✅ Complete Torah database (5,846 verses)
+- ✅ Complete Torah database (8,373 verses)
+- ✅ All 150 chapters of Psalms
 - ✅ Interactive web interface
 - ✅ Advanced filtering and search
 - ✅ Sacred/non-sacred text toggle
@@ -314,7 +317,7 @@ You are free to:
 - 🔜 API access for programmatic queries
 
 ### Future Considerations
-- Expansion to Prophets and Writings
+- Expansion to Prophets and other Writings
 - Multi-language interface support
 - Community validation system
 - Integration with Bible study software

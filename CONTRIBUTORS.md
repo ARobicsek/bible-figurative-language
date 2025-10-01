@@ -1,6 +1,6 @@
 # Contributors
 
-**Acknowledgments for The Pardes Project (Hebrew Figurative Language Explorer)**
+**Acknowledgments for Tzafun**
 
 ---
 
@@ -97,8 +97,8 @@ This project uses:
 ## Contact
 
 To discuss contributions or ask questions:
-- **GitHub Issues**: [Report bugs or ask questions](https://github.com/[username]/bible-figurative-language-concordance/issues)
-- **GitHub Discussions**: [Feature requests and community discussion](https://github.com/[username]/bible-figurative-language-concordance/discussions)
+- **GitHub Issues**: [Report bugs or ask questions](https://github.com/[username]/tzafun/issues)
+- **GitHub Discussions**: [Feature requests and community discussion](https://github.com/[username]/tzafun/discussions)
 
 ---
 

@@ -45,25 +45,25 @@ When using this data, you must provide attribution. Here are acceptable formats:
 ### For Academic Papers
 
 ```bibtex
-@software{robicsek_hebrew_figurative_2025,
+@software{robicsek_tzafun_2025,
   author = {Robicsek, Ari},
-  title = {Hebrew Figurative Language Explorer: An AI-Analyzed Database of Torah Figurative Language},
+  title = {Tzafun: A Concordance of Biblical Figurative Language},
   year = {2025},
-  url = {https://github.com/[username]/bible-figurative-language-concordance},
+  url = {https://github.com/[username]/tzafun},
   note = {Version 1.0}
 }
 ```
 
 ### For Publications
 
-> Robicsek, A. (2025). *Hebrew Figurative Language Explorer: An AI-Analyzed Database of Torah Figurative Language* (Version 1.0) [Database]. https://github.com/[username]/bible-figurative-language-concordance
+> Robicsek, A. (2025). *Tzafun: A Concordance of Biblical Figurative Language* (Version 1.0) [Database]. https://github.com/[username]/tzafun
 
 ### For Websites or Apps
 
 ```
-Data from Hebrew Figurative Language Explorer by Ari Robicsek
+Data from Tzafun by Ari Robicsek
 Licensed under CC BY 4.0
-https://github.com/[username]/bible-figurative-language-concordance
+https://github.com/[username]/tzafun
 ```
 
 ### Minimal Attribution
@@ -71,7 +71,7 @@ https://github.com/[username]/bible-figurative-language-concordance
 If space is limited (e.g., social media), you may use:
 
 ```
-Data: Hebrew Figurative Language Explorer by Ari Robicsek (CC BY 4.0)
+Data: Tzafun by Ari Robicsek (CC BY 4.0)
 ```
 
 ## What Changes Should Be Indicated
@@ -199,8 +199,8 @@ Commercial use is explicitly permitted under CC BY 4.0, including:
 If you have questions about how to properly attribute this work or whether your intended use is permitted:
 
 - 📖 Read the [full CC BY 4.0 license text](http://creativecommons.org/licenses/by/4.0/legalcode)
-- 💬 Open a [GitHub Discussion](https://github.com/[username]/bible-figurative-language-concordance/discussions)
-- 🐛 Create a [GitHub Issue](https://github.com/[username]/bible-figurative-language-concordance/issues) with the "question" label
+- 💬 Open a [GitHub Discussion](https://github.com/[username]/tzafun/discussions)
+- 🐛 Create a [GitHub Issue](https://github.com/[username]/tzafun/issues) with the "question" label
 
 ---
 
@@ -210,13 +210,13 @@ If you have questions about how to properly attribute this work or whether your 
 
 **Attribution Format:**
 ```
-Data from Hebrew Figurative Language Explorer by Ari Robicsek
+Data from Tzafun by Ari Robicsek
 Licensed under CC BY 4.0
-https://github.com/[username]/bible-figurative-language-concordance
+https://github.com/[username]/tzafun
 ```
 
 ---
 
-Hebrew Figurative Language Explorer Database
+Tzafun Database
 Copyright (c) 2025 Ari Robicsek
 Licensed under CC BY 4.0

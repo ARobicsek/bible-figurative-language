@@ -1,6 +1,6 @@
 # Frequently Asked Questions (FAQ)
 
-**Common questions about the Hebrew Figurative Language Explorer**
+**Common questions about Tzafun**
 
 ---
 
@@ -17,9 +17,9 @@
 
 ## General Questions
 
-### What is the Hebrew Figurative Language Explorer?
+### What is Tzafun?
 
-An interactive web-based tool providing access to 5,846 Torah verses analyzed for figurative language using advanced AI models. The database contains 3,020 validated instances of metaphors, similes, personifications, idioms, hyperboles, and metonymies.
+Tzafun ("hidden" or "concealed," also implying treasure) is an interactive web-based concordance providing access to 8,373 verses from the Torah and Psalms analyzed for figurative language using advanced AI models. The database contains 5,865 validated instances of metaphors, similes, personifications, idioms, hyperboles, and metonymies.
 
 ### Is this tool free to use?
 
@@ -308,8 +308,8 @@ See [DATABASE_SCHEMA.md](DATABASE_SCHEMA.md#migration-to-postgresql) for migrati
 **Database file:** ~35 MB
 
 **Contents:**
-- 5,846 verses
-- 3,020 figurative instances
+- 8,373 verses
+- 5,865 figurative instances
 - Complete Hebrew/English text
 - All AI deliberations and metadata
 
