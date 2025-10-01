@@ -1643,21 +1643,23 @@
 
                 // For Hebrew, try normalized matching (strip diacritics from both texts)
                 if (language === 'hebrew') {
-                    // Normalize the verse text by removing diacritics and whitespace
+                    // Normalize the verse text by removing diacritics but PRESERVING word boundaries
                     const normalizedVerseText = highlightedText
+                        .normalize('NFD')  // Unicode normalization to handle different combining character sequences
                         .replace(/<[^>]*>/g, '') // Remove HTML tags
                         .replace(/&nbsp;/g, ' ') // Remove entities
-                        .replace(/&[a-zA-Z0-9#]+;/g, '')
-                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics
-                        .replace(/־/g, '')
-                        .replace(/\s+/g, '')
+                        .replace(/&[a-zA-Z0-9#]+;/g, ' ')
+                        .replace(/־/g, ' ')  // CRITICAL: Replace maqaf (U+05BE) BEFORE removing diacritics!
+                        .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics (excluding U+05BE)
+                        .replace(/\s+/g, ' ')  // Normalize whitespace to single spaces
                         .trim();
 
                     // Normalize the figurative text
                     const normalizedFigText = figurativeText
-                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics
-                        .replace(/־/g, '')
-                        .replace(/\s+/g, '')
+                        .normalize('NFD')  // Unicode normalization to handle different combining character sequences
+                        .replace(/־/g, ' ')  // CRITICAL: Replace maqaf (U+05BE) BEFORE removing diacritics!
+                        .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics (excluding U+05BE)
+                        .replace(/\s+/g, ' ')  // Normalize whitespace to single spaces
                         .trim();
 
                     if (normalizedVerseText.includes(normalizedFigText)) {
@@ -1832,20 +1834,22 @@
                     if (language === 'hebrew') {
                         // Remove HTML tags and entities from the verse text for matching
                         const textWithoutHTML = highlightedText
+                            .normalize('NFD')  // Unicode normalization
                             .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
                         .replace(/<[^>]*>/g, '') // Remove other HTML tags
                             .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
                             .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
                             .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
-                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
-                            .replace(/־/g, ' ') // Replace Hebrew hyphens with spaces
+                            .replace(/־/g, ' ') // CRITICAL: Replace maqaf (U+05BE) with space BEFORE removing diacritics!
+                            .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics (excluding U+05BE maqaf)
                             .replace(/\s+/g, ' ') // Normalize whitespace
                             .trim();
 
                         // Also normalize the figurative text
                         const normalizedFigText = trimmedFigText
-                            .replace(/־/g, ' ')
-                            .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                            .normalize('NFD')  // Unicode normalization
+                            .replace(/־/g, ' ') // CRITICAL: Replace maqaf BEFORE removing diacritics!
+                            .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics (excluding U+05BE maqaf)
                             .replace(/\s+/g, ' ')
                             .trim();
 
@@ -1853,11 +1857,25 @@
                             // Found a match, now find the original text with HTML
                             // Try with the version that matched
                             const figTextToUse = textWithoutHTML.includes(trimmedFigText) ? trimmedFigText : normalizedFigText;
-                            const escapedFig = figTextToUse.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                            // Allow HTML tags, line breaks, entities, hyphens, Hebrew diacritics, and whitespace between each character
-                            const flexiblePattern = escapedFig.split('').join('(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4]|\\s)*');
+
+                            // Build regex pattern character by character
+                            // For each character, allow diacritics/HTML between them
+                            // For spaces, match space OR hyphen (since we normalized hyphens to spaces)
+                            let flexiblePattern = '';
+                            for (let i = 0; i < figTextToUse.length; i++) {
+                                const char = figTextToUse[i];
+                                if (char === ' ') {
+                                    // Space should match: space, hyphen, diacritics, HTML tags, entities
+                                    flexiblePattern += '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4]|\\s)+';
+                                } else {
+                                    // Escape special regex chars, then allow diacritics after
+                                    const escapedChar = char.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                                    flexiblePattern += escapedChar + '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4])*';
+                                }
+                            }
                             const regex = new RegExp(flexiblePattern, 'g');
                             const match = highlightedText.match(regex);
+
                             if (match) {
                                 matchedText = match[0];
                             }
