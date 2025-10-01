@@ -214,6 +214,10 @@ def get_verses():
         search_vehicle = request.args.get('search_vehicle', '')
         search_ground = request.args.get('search_ground', '')
         search_posture = request.args.get('search_posture', '')
+
+        # Debug logging for metadata searches
+        if search_vehicle:
+            print(f"Vehicle search: '{search_vehicle}'")
         limit = int(request.args.get('limit', 50))
         offset = int(request.args.get('offset', 0))
 
