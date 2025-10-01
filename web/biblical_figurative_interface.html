@@ -892,7 +892,7 @@
                 posture: ''
             },
             pagination: {
-                limit: 50,
+                limit: 25,
                 offset: 0,
                 total: 0,
                 hasMore: false,
@@ -1827,12 +1827,8 @@
                         return quotesBeforeMatch > closingQuotesBeforeMatch;
                     };
 
-                    // Try exact match first (should work in most cases)
-                    if (highlightedText.includes(trimmedFigText) && !checkIfInAttribute(highlightedText, trimmedFigText)) {
-                        matchedText = trimmedFigText;
-                    }
-                    // For Hebrew, try matching with text that has HTML tags and entities removed
-                    else if (language === 'hebrew') {
+                    // For Hebrew, always use normalized matching (skip exact match)
+                    if (language === 'hebrew') {
                         // Remove HTML tags and entities from the verse text for matching
                         const textWithoutHTML = highlightedText
                             .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
@@ -1866,11 +1862,17 @@
                             }
                         }
                     }
-                    // Try divine name variation for English non-sacred
-                    else if (language === 'english' && appState.englishVersion === 'non-sacred') {
-                        const adjustedFigText = trimmedFigText.replace(/יהוה/g, 'ה׳');
-                        if (highlightedText.includes(adjustedFigText)) {
-                            matchedText = adjustedFigText;
+                    // For English, try exact match first
+                    else if (language === 'english') {
+                        if (highlightedText.includes(trimmedFigText) && !checkIfInAttribute(highlightedText, trimmedFigText)) {
+                            matchedText = trimmedFigText;
+                        }
+                        // Try divine name variation for non-sacred version
+                        else if (appState.englishVersion === 'non-sacred') {
+                            const adjustedFigText = trimmedFigText.replace(/יהוה/g, 'ה׳');
+                            if (highlightedText.includes(adjustedFigText)) {
+                                matchedText = adjustedFigText;
+                            }
                         }
                     }
 
@@ -2158,7 +2160,7 @@
             const totalCount = appState.pagination.total;
             const totalFigurativeInstances = appState.pagination.total_figurative_instances || 0;
 
-            const remainingVerses = totalCount - (appState.pagination.offset + currentVerses);
+            const remainingVerses = Math.max(0, totalCount - (appState.pagination.offset + currentVerses));
             const nextButton = appState.pagination.hasMore ?
                 `<button class="nav-button" onclick="loadMore()">Load Next ${Math.min(appState.pagination.limit, remainingVerses)} Verses</button>` :
                 '<span style="color: #28a745; font-weight: 600;">✓ All verses loaded</span>';
