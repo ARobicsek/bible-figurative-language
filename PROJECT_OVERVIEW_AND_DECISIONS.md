@@ -96,62 +96,47 @@ complete_torah_merged.db (SQLite)
 - Single-user only
 - Not accessible to non-technical users
 
-### Planned (Public Deployment)
+### ✅ Production Deployment (IMPLEMENTED - Oct 1, 2025)
 
-#### Option A: Netlify + Supabase (RECOMMENDED)
-
-```
-User Browser
-     ↓
-Netlify (Static HTML + JS)
-     ↓
-Supabase Client (JavaScript SDK)
-     ↓
-Supabase PostgreSQL (Hosted Database)
-```
-
-**Pros:**
-- **Zero cost** for expected traffic (free tier: 500MB DB, 5GB bandwidth/month)
-- No server management required
-- Global CDN for fast loading
-- Automatic HTTPS
-- Database automatically generates REST API
-- Row-level security for read-only public access
-
-**Cons:**
-- Need to migrate SQLite → PostgreSQL
-- Frontend code changes required (add Supabase client)
-- Small vendor lock-in (but easy to export)
-
-#### Option B: Netlify + Supabase + Netlify Functions (Hybrid)
+#### Selected: Render.com + Flask + SQLite
 
 ```
 User Browser
      ↓
-Netlify (Static HTML)
+Render.com (Flask + Gunicorn)
      ↓
-Netlify Functions (Serverless API)
-     ↓
-Supabase PostgreSQL
+SQLite Database (49MB)
 ```
 
-**Pros:**
-- Keeps Flask-like API structure
-- More control over queries
-- Can add custom logic/validation
+**Why We Chose This:**
+- **Zero cost** on Render.com free tier (512MB RAM)
+- **No migration needed** - kept SQLite database
+- **Minimal code changes** - kept Flask backend intact
+- **Fast deployment** - working in production same day
+- **Simple maintenance** - familiar tech stack
 
-**Cons:**
-- More complex to set up
-- Additional code to maintain
-- Slightly slower (extra hop)
+**Production Status:**
+- **Live URL**: https://tzafun.onrender.com
+- **Performance**: 100-1300x speedup through database optimization
+- **Stability**: Optimized for 512MB RAM with proper worker configuration
+- **Cold starts**: 30-60 seconds after inactivity (acceptable for free tier)
 
-**When to use:** If we need server-side processing or want to abstract database details
+**Configuration:**
+- Gunicorn: 1 worker, 2 threads, 120s timeout
+- SQLite cache: 8MB (down from 64MB for memory constraints)
+- Database optimizations: Indexes + query caching
 
-#### Option C: Alternative Stacks (Not Recommended for Now)
+#### Alternative Options (Considered but not implemented)
 
-- **Vercel + PlanetScale**: Similar to Netlify + Supabase, MySQL instead of PostgreSQL
-- **GitHub Pages + JSON**: Export database to static JSON (simple but slow, large file)
-- **AWS Free Tier**: More complex, requires more technical knowledge
+**Option A: Netlify + Supabase**
+- Would require SQLite → PostgreSQL migration
+- Would require frontend rewrite to use Supabase client
+- Not chosen due to migration complexity
+
+**Option B: Vercel + PlanetScale**
+- Similar to Netlify + Supabase approach
+- MySQL instead of PostgreSQL
+- Not chosen due to migration requirements
 
 ---
 
@@ -192,214 +177,116 @@ Supabase PostgreSQL
 
 ## 📋 Decision Points for Discussion
 
-### DECISION 1: License Choice
+### ✅ DECISION 1: License Choice (IMPLEMENTED - Oct 1, 2025)
 
-**Why it matters:** Determines how others can use your work and whether you get credit.
+**Decision:** **MIT License + CC BY 4.0** (dual licensing)
 
-**Options:**
+**Implementation:**
+- **LICENSE-CODE.txt**: MIT License for all code
+  - Applies to: Python scripts, HTML/CSS/JS, Flask API, deployment files
+  - Copyright: Ari Robicsek, 2025
+  - Most permissive, allows commercial use with attribution
 
-#### Option A: MIT License + CC BY 4.0 (RECOMMENDED)
-- **MIT License** for code (interface, scripts)
-  - Most permissive
-  - Allows commercial use
-  - Only requires attribution
-  - Used by most open-source projects
-- **CC BY 4.0** for database and documentation
-  - Requires attribution when used in research
-  - Standard for academic data sharing
-  - Allows commercial use with credit
+- **LICENSE-DATA.txt**: CC BY 4.0 for database and annotations
+  - Applies to: SQLite database, AI classifications, metadata
+  - Requires attribution in research
+  - Includes source text attribution (Sefaria MAM + JPS 2006)
+  - AI model transparency (Gemini + Claude)
 
-**Pros:**
+**Why This Choice:**
 - Maximum accessibility and reuse
+- Standard for open-source academic projects
 - Encourages adoption and citation
-- Industry standard
 - Compatible with academic integrity requirements
-
-**Cons:**
-- Someone could commercialize without sharing profits (but must credit you)
-- Cannot prevent misuse (but attribution required)
-
-#### Option B: GPL v3 + CC BY-SA 4.0
-- **GPL v3** for code
-  - "Copyleft" - derivatives must also be open source
-  - Prevents proprietary forks
-- **CC BY-SA 4.0** for database
-  - "ShareAlike" - derivatives must use same license
-
-**Pros:**
-- Ensures improvements stay open source
-- Prevents proprietary commercial use
-- Aligns with free software philosophy
-
-**Cons:**
-- More restrictive, may reduce adoption
-- Not compatible with some academic uses
-- Harder for commercial collaboration
-
-#### Option C: Custom License
-- Write your own terms
-
-**Pros:**
-- Complete control
-
-**Cons:**
-- Not standard, may confuse users
-- Legal review recommended
-- Lower trust from community
-
-**Recommendation:** **MIT + CC BY 4.0** for maximum academic impact while ensuring attribution.
+- Clear separation between code and data licensing
 
 ---
 
-### DECISION 2: Repository Name
+### ✅ DECISION 2: Repository Name (IMPLEMENTED)
 
-**Why it matters:** First impression, discoverability, branding.
+**Decision:** `bible-figurative-language`
 
-**Options:**
+**Repository URL:** https://github.com/ARobicsek/bible-figurative-language
 
-#### Option A: `hebrew-figurative-language-explorer` (RECOMMENDED)
-**Pros:**
-- Descriptive and clear
-- Good for SEO and search
+**Why This Choice:**
+- Shorter than "hebrew-figurative-language-explorer"
+- Clear and descriptive
 - Professional tone
+- "Bible" instead of "Hebrew" allows for future expansion (already includes Psalms)
+- Easy to remember and type
 
-**Cons:**
-- Long URL
-- Not catchy/memorable
-
-#### Option B: `torah-rhetoric-database`
-**Pros:**
-- Shorter
-- Academic tone
-- Emphasizes content
-
-**Cons:**
-- "Rhetoric" is less specific than "figurative language"
-- May not be immediately clear what it contains
-
-#### Option C: `biblical-hebrew-figures`
-**Pros:**
-- Short and memorable
-- Broad appeal
-
-**Cons:**
-- Less specific
-- Could be misunderstood
-
-#### Option D: `hebrew-bible-ai-analysis`
-**Pros:**
-- Emphasizes AI innovation
-- Broader scope (allows future expansion)
-
-**Cons:**
-- Less focused on figurative language specifically
-
-**Recommendation:** **`hebrew-figurative-language-explorer`** - Clear, professional, descriptive.
-
-**Note:** GitHub allows you to change repository name later, but it breaks existing links.
+**Project Name:** "Tzafun" (צָפֻן) - means "hidden" or "treasure"
+- Used in the interface and documentation
+- Memorable and meaningful Hebrew name
+- References Psalms 31:20 and 119:11
 
 ---
 
-### DECISION 3: Attribution & Credit
+### ✅ DECISION 3: Attribution & Credit (IMPLEMENTED - Oct 1, 2025)
 
-**Why it matters:** How you're credited in academic papers, how to contact you, building reputation.
+**Decision:** Real name with GitHub as primary contact method
 
-**What to decide:**
+**Implementation:**
 
-1. **Your name/affiliation:**
-   - Real name vs. pseudonym?
-   - Include current affiliation (institution, if applicable)?
-   - Professional title or credentials?
+1. **Name/Affiliation:**
+   - Author: Ari Robicsek
+   - No institutional affiliation listed (independent researcher)
+   - Copyright holder for both licenses
 
-2. **Citation format:**
-   ```bibtex
-   @software{hebrew_figurative_language_2025,
-     author = {[YOUR NAME]},
-     title = {Hebrew Figurative Language Explorer: An AI-Analyzed Database of Torah Figurative Language},
-     year = {2025},
-     url = {https://github.com/[username]/hebrew-figurative-language-explorer},
-     note = {Version 1.0}
-   }
-   ```
+2. **Citation Formats Provided:**
+   - **BibTeX format:**
+     ```bibtex
+     @software{robicsek_tzafun_2025,
+       author = {Robicsek, Ari},
+       title = {Tzafun: A Concordance of Figurative Language in the Torah and Psalms},
+       year = {2025},
+       url = {https://github.com/ARobicsek/bible-figurative-language},
+       note = {Version 1.0}
+     }
+     ```
+   - **APA format** included in README.md
+   - **MLA format** included in README.md
+   - **CITATION.cff** file for GitHub citation feature
 
-3. **Contact method:**
-   - GitHub issues only (most private)?
-   - Professional email?
-   - LinkedIn?
-   - Academic profile page?
+3. **Contact Methods:**
+   - Primary: GitHub Issues
+   - Also: GitHub Discussions for feature requests
+   - No personal email or phone listed
 
 4. **Acknowledgments:**
-   - Mention collaborators/advisors?
-   - Funding sources?
-   - Inspiration/prior work?
-
-**Considerations:**
-- **Academic career**: If you plan to publish papers using this, ensure proper citation format
-- **Privacy**: GitHub username already public, but email/affiliation is optional
-- **Collaboration**: If you want partnerships, provide professional contact method
-- **Credit sharing**: If others contributed significantly, acknowledge them
+   - Sefaria.org for source texts (MAM + JPS 2006)
+   - Google Gemini and Anthropic Claude for AI models
+   - No specific collaborators or advisors listed
 
 ---
 
-### DECISION 4: Frontend Architecture (Flask vs. Direct Supabase)
+### ✅ DECISION 4: Deployment Architecture (IMPLEMENTED - Oct 1, 2025)
 
-**Why it matters:** Determines deployment complexity, maintenance burden, and what you need to learn.
+**Decision:** Keep Flask + SQLite, deploy to Render.com
 
-#### Option A: Direct Supabase Client (RECOMMENDED)
+**Implementation:**
+- **Backend**: Flask API server with Gunicorn
+- **Database**: SQLite (49MB) - no migration needed
+- **Hosting**: Render.com free tier (512MB RAM)
+- **Frontend**: HTML/CSS/JavaScript served by Flask
 
-**Architecture:**
-```javascript
-// In HTML file, directly call Supabase
-const { data, error } = await supabase
-  .from('verses')
-  .select('*')
-  .eq('book', 'Genesis');
-```
+**Why This Choice:**
+- **No code rewrite needed**: Kept existing Flask backend
+- **No database migration**: SQLite works perfectly for read-only access
+- **Fast deployment**: Production-ready in one day
+- **Familiar stack**: No new technologies to learn
+- **Zero cost**: Render.com free tier sufficient for expected traffic
+- **Performance optimized**: Achieved 100-1300x speedup through database indexes
 
-**Pros:**
-- **Simpler deployment**: Just HTML + Supabase (no backend server)
-- **Lower latency**: One fewer hop
-- **Less code to maintain**: No Flask server
-- **Auto-generated API**: Supabase creates REST/GraphQL APIs automatically
-- **Built-in features**: Real-time subscriptions, automatic caching
+**Configuration:**
+- Gunicorn: 1 worker, 2 threads, 120s timeout
+- SQLite optimizations: 8MB cache, indexes, query optimization
+- Memory-conscious: Tuned for 512MB RAM limit
 
-**Cons:**
-- **Frontend changes required**: Rewrite all API calls
-- **Less abstraction**: Database structure somewhat exposed
-- **Learning curve**: Need to learn Supabase SDK (not difficult)
-
-**When to use:** For most use cases. Recommended unless you need custom server logic.
-
-#### Option B: Keep Flask + Supabase Backend
-
-**Architecture:**
-```
-Frontend → Netlify Functions (Flask-like) → Supabase
-```
-
-**Pros:**
-- **Minimal frontend changes**: Keep existing API calls mostly intact
-- **Custom logic**: Can add validation, rate limiting, custom queries
-- **Abstraction**: Hide database details from frontend
-- **Familiar**: You already know Flask
-
-**Cons:**
-- **More complex**: Need to port Flask → Netlify Functions
-- **Extra hop**: Slight latency increase
-- **More code**: Additional layer to maintain
-- **Serverless limits**: Functions have timeout/memory limits
-
-**When to use:** If you need custom server-side logic or want to keep database structure hidden.
-
-#### Option C: Hybrid Approach
-
-**Architecture:**
-- Simple queries: Direct Supabase client
-- Complex queries: Netlify Functions
-
-**When to use:** Best of both worlds, but most complex to set up.
-
-**Recommendation:** **Option A (Direct Supabase)** - Simplest and most maintainable. The frontend changes are straightforward, and Supabase handles everything else.
+**Trade-offs Accepted:**
+- Cold start: 30-60 seconds after 15 minutes inactivity
+- Limited concurrent users on free tier
+- Single-worker deployment (acceptable for read-only database)
 
 ---
 
@@ -552,12 +439,16 @@ Frontend → Netlify Functions (Flask-like) → Supabase
 
 ## 🚀 Launch Strategy
 
-### Pre-Launch
+### Pre-Launch (COMPLETED - Oct 1, 2025)
 1. ✅ Complete repository cleanup
 2. ✅ Create comprehensive documentation
-3. ✅ Deploy to Netlify + Supabase
+   - README.md (public-facing)
+   - LICENSE-CODE.txt (MIT)
+   - LICENSE-DATA.txt (CC BY 4.0)
+   - CITATION.cff (GitHub citation)
+3. ✅ Deploy to production (Render.com)
 4. ✅ Test all features
-5. ✅ Create demo video
+5. ✅ Optimize performance (100-1300x speedup)
 
 ### Launch Week
 1. **Day 1**: Make repository public
@@ -666,6 +557,10 @@ The combination of rigorous methodology, cultural sensitivity, and accessibility
 
 ---
 
-**Document Version:** 1.0 (September 29, 2025)
-**Status:** Ready for discussion and decision-making
-**Next Review:** After decisions are made and before execution begins
+**Document Version:** 2.0 (October 1, 2025)
+**Status:** All decisions implemented - Ready for public release
+**Updates:**
+- All 4 major decisions implemented (licensing, repository name, attribution, architecture)
+- Production deployment complete on Render.com
+- Public-facing documentation created (README, licenses, citation file)
+- Repository ready to be made public
