@@ -1184,12 +1184,12 @@
         }
 
         async function loadDefaultVerses() {
-            // Load all books in biblical order by default
+            // Load all books in biblical order by default - reduced limit for faster initial load
             await loadVersesFromAPI({
                 books: 'genesis,exodus,leviticus,numbers,deuteronomy,psalms',
                 figurative_types: Array.from(appState.selectedTypes).join(','),
                 show_not_figurative: appState.showNotFigurative,
-                limit: 20,
+                limit: 10,
                 offset: 0
             });
         }
