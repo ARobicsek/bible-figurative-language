@@ -1,8 +1,108 @@
-# Project Pardes
+# Tzafun (formerly Project Pardes)
 A concordance of figurative language in the bible
 
-## 🎉 Project Status: Production-Ready Advanced AI Architecture
-**LATEST ACHIEVEMENT**: Successfully resolved **English text footnote contamination** issue - all 8,373 verses now have clean English text with Sefaria API footnotes properly removed.
+## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
+**LATEST ACHIEVEMENT**: Successfully deployed to production at **https://tzafun.onrender.com** with optimized performance for free tier hosting (512MB RAM).
+
+**DEPLOYMENT SUCCESS (Oct 1, 2025)**: Tzafun is now publicly accessible with 8,373 analyzed verses (Torah + Psalms) and 5,865 figurative language instances.
+
+---
+
+## 🌐 PRODUCTION DEPLOYMENT (Oct 1, 2025)
+
+### **Deployment Architecture**
+- **Platform**: Render.com (free tier)
+- **URL**: https://tzafun.onrender.com
+- **Backend**: Flask + Gunicorn (Python 3.11)
+- **Database**: SQLite (49MB) with 8,373 verses
+- **Repository**: GitHub.com/ARobicsek/bible-figurative-language
+
+### **Key Deployment Challenges & Solutions**
+
+#### **1. Worker Timeout Issues (502 Bad Gateway)**
+- **Problem**: Default 30s gunicorn timeout caused worker kills on complex queries
+- **Solution**: Increased timeout to 120s, reduced workers to 1 with 2 threads (gthread)
+- **Config**: `gunicorn --timeout 120 --workers 1 --threads 2 --worker-class gthread`
+
+#### **2. Memory Constraints (512MB RAM Limit)**
+- **Problem**: 64MB SQLite cache caused Out-Of-Memory crashes and worker restarts
+- **Root Cause**: Free tier has only 512MB RAM; 64MB cache + Python overhead exceeded limit
+- **Solution**: Reduced cache from 64MB → 8MB, added 30MB memory-mapped I/O
+- **Result**: Stable worker, no more OOM kills
+- **Code**: `PRAGMA cache_size = -8000` + `PRAGMA mmap_size = 30000000`
+
+#### **3. Database Path Resolution**
+- **Problem**: `cd web && gunicorn` broke relative path calculations for database
+- **Solution**: Use `gunicorn --chdir web` instead to maintain correct working directory
+- **Result**: Database found correctly at `../database/Pentateuch_Psalms_fig_language.db`
+
+#### **4. API URL Configuration**
+- **Problem**: Frontend hardcoded `http://localhost:5000/api` causing connection failures
+- **Solution**: Changed to relative URL `/api` with `window.location.origin` base
+- **Result**: Works on both localhost and production without configuration
+
+#### **5. Cold Start Performance**
+- **Problem**: Free tier spins down after 15 min inactivity; first load takes 30-60 seconds
+- **Solution**: Added UI message "First load may take up to 1 minute" to set expectations
+- **Trade-off**: Acceptable for free hosting; upgrades available if needed
+
+#### **6. Complex Query Optimization**
+- **Problem**: Metadata searches with "Not Figurative" + all types caused timeouts
+- **Solution**: Auto-uncheck "Not Figurative" when user types in metadata fields
+- **Rationale**: Metadata only exists for figurative verses, so including non-figurative is logically unnecessary
+- **Result**: Fast metadata searches, no more 502 errors
+
+### **Production Configuration Files**
+
+**`render.yaml`** (Render.com deployment config):
+```yaml
+services:
+  - type: web
+    name: tzafun
+    env: python
+    plan: free
+    buildCommand: pip install -r web/requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --chdir web --timeout 120 --workers 1 --threads 2 --worker-class gthread api_server:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+```
+
+**`web/requirements.txt`**:
+```
+Flask==3.0.0
+Flask-CORS==4.0.0
+gunicorn==21.2.0
+```
+
+### **Performance Characteristics (Free Tier)**
+- **Cold Start**: 30-60 seconds (after 15 min inactivity)
+- **Warm Queries**: < 1 second for most searches
+- **Initial Page Load**: 10 verses, ~2-3 seconds
+- **Metadata Search**: Fast (< 1s) when limited to figurative types
+- **Concurrent Users**: Limited on free tier; may need upgrade for high traffic
+
+### **Public Release Preparations**
+- ✅ Made analysis pipeline public (removed `private/` from `.gitignore`)
+- ✅ Added `.env.example` template for API keys (Gemini + Anthropic)
+- ✅ Ensured no API keys exposed (all use environment variables)
+- ✅ Verified database file tracked in git (49MB within GitHub limits)
+- ✅ Production-ready Flask configuration with PORT and FLASK_ENV support
+- ✅ Debug logging for troubleshooting production issues
+
+### **Known Limitations (Free Tier)**
+1. **15-minute sleep**: Service spins down after inactivity
+2. **512MB RAM**: Limited to smaller cache sizes and fewer workers
+3. **Shared CPU**: Performance varies based on server load
+4. **No persistent disk**: Database is read-only from git repo
+
+### **Future Scaling Options**
+- **Paid Tier ($7/mo)**: 512MB → 2GB RAM, no sleep, faster performance
+- **Database Migration**: SQLite → PostgreSQL for better concurrent access
+- **CDN**: Add Cloudflare for static asset caching
+- **Connection Pooling**: Implement persistent connections for faster queries
+
+---
 
 **✅ MAJOR BREAKTHROUGHS (Sept 27-30, 2025)**:
 - **📖 ENGLISH TEXT FOOTNOTE CLEANUP (Sept 30 - Latest)**: Completely resolved footnote contamination in English verse text
