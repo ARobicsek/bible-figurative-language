@@ -54,10 +54,10 @@ You are free to:
 When using or distributing this code, include:
 
 ```
-Based on Hebrew Figurative Language Explorer
+Based on Tzafun
 Copyright (c) 2025 Ari Robicsek
 Licensed under the MIT License
-https://github.com/[username]/bible-figurative-language-concordance
+https://github.com/[username]/tzafun
 ```
 
 ---

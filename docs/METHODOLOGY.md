@@ -1,6 +1,6 @@
 # AI Analysis Methodology
 
-**How the Hebrew Figurative Language Database Was Created**
+**How the Tzafun Database Was Created**
 
 This document explains the AI analysis pipeline used to identify and classify figurative language in the Torah (Genesis through Deuteronomy).
 
@@ -20,10 +20,10 @@ This document explains the AI analysis pipeline used to identify and classify fi
 
 ## Overview
 
-The database contains **5,846 verses** from the Torah, analyzed using advanced AI language models to identify and classify figurative language. The analysis identified **3,020 figurative language instances** across **2,307 verses** (39.5% of the corpus).
+The database contains **8,373 verses** from the Torah and Psalms, analyzed using advanced AI language models to identify and classify figurative language. The analysis identified **5,865 figurative language instances** across **4,214 verses** (50.3% of the corpus).
 
 **Goals of this methodology:**
-- Systematic identification of figurative language across the entire Torah
+- Systematic identification of figurative language across the Torah and Psalms
 - Consistent classification using established linguistic categories
 - Transparent AI reasoning with full audit trails
 - Validation and quality assurance to minimize false positives

@@ -1,6 +1,6 @@
 # Setup Guide
 
-Complete setup instructions for the Hebrew Figurative Language Explorer.
+Complete setup instructions for Tzafun.
 
 ---
 
@@ -16,7 +16,7 @@ Complete setup instructions for the Hebrew Figurative Language Explorer.
 
 ## Option 1: Use the Hosted Version (Recommended)
 
-The easiest way to use the Hebrew Figurative Language Explorer is through our hosted version.
+The easiest way to use Tzafun is through our hosted version.
 
 **[Access the live demo →](#)** *(Link will be added after deployment)*
 

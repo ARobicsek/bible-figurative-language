@@ -8,8 +8,8 @@ Complete technical reference for the Hebrew Figurative Language Explorer databas
 
 The database uses SQLite 3 with a two-table design:
 
-1. **`verses`** - All analyzed verses (5,846 verses from Torah)
-2. **`figurative_language`** - Figurative language instances found in verses (3,020 instances)
+1. **`verses`** - All analyzed verses (8,373 verses from Torah and Psalms)
+2. **`figurative_language`** - Figurative language instances found in verses (5,865 instances)
 
 **Relationship:** One-to-Many (one verse can have multiple figurative language instances)
 
@@ -75,6 +75,7 @@ CREATE TABLE verses (
 - Leviticus (Vayikra)
 - Numbers (Bamidbar)
 - Deuteronomy (Devarim)
+- Psalms (Tehillim) - all 150 chapters
 
 ### Example Row
 
@@ -472,10 +473,10 @@ WHERE target LIKE '%shepherd%';
 
 ## Database Size and Performance
 
-**Database File:** `torah_figurative_language.db`
-**Size:** ~35 MB
-**Total Verses:** 5,846
-**Figurative Instances:** 3,020
+**Database File:** `Pentateuch_Psalms_fig_language.db`
+**Size:** ~50 MB
+**Total Verses:** 8,373
+**Figurative Instances:** 5,865
 
 **Performance Notes:**
 - All indexes created for common query patterns
