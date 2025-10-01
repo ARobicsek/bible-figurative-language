@@ -1129,7 +1129,8 @@
         // API Functions
         async function makeAPICall(endpoint, params = {}) {
             try {
-                const url = new URL(`${API_BASE}${endpoint}`);
+                // Build URL with query parameters - use relative URL directly with fetch
+                const url = new URL(`${API_BASE}${endpoint}`, window.location.origin);
                 Object.keys(params).forEach(key => {
                     if (params[key] !== '' && params[key] !== null && params[key] !== undefined) {
                         url.searchParams.append(key, params[key]);
