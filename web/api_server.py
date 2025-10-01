@@ -28,9 +28,17 @@ app.config['JSON_AS_ASCII'] = False  # Ensure proper Unicode in JSON responses
 
 # Database configuration
 # Get the project root directory (parent of web/)
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Use __file__ to get the directory of this script, then go up one level
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 DB_PATH = os.path.join(PROJECT_ROOT, 'database', 'Pentateuch_Psalms_fig_language.db')
 DB_DIRECTORY = os.path.join(PROJECT_ROOT, 'database')
+
+# Debug logging for production troubleshooting
+print(f"Script directory: {SCRIPT_DIR}")
+print(f"Project root: {PROJECT_ROOT}")
+print(f"Database path: {DB_PATH}")
+print(f"Database exists: {os.path.exists(DB_PATH)}")
 
 class DatabaseManager:
     """Handles all database operations with proper error handling"""
