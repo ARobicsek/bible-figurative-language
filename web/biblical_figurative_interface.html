@@ -903,8 +903,8 @@
             countRequestCounter: 0  // Track background count requests
         };
 
-        // API Configuration
-        const API_BASE = 'http://localhost:5000/api';
+        // API Configuration - use relative URL to work in both dev and production
+        const API_BASE = '/api';
 
         // DOM Elements
         const elements = {
