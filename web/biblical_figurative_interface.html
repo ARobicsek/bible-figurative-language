@@ -187,7 +187,7 @@
         }
 
         .about-page p {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             line-height: 1.8;
             font-size: 1.1rem;
         }
@@ -931,13 +931,13 @@
 
                 <!-- Search Type Toggle -->
                 <div class="search-type-toggle">
-                    <button class="toggle-btn" id="english-toggle" onclick="toggleSearchType('english')">English</button>
-                    <button class="toggle-btn active" id="hebrew-toggle" onclick="toggleSearchType('hebrew')">עברית</button>
+                    <button class="toggle-btn active" id="english-toggle" onclick="toggleSearchType('english')">English</button>
+                    <button class="toggle-btn" id="hebrew-toggle" onclick="toggleSearchType('hebrew')">עברית</button>
                 </div>
 
                 <!-- Search Input with Clear and Keyboard Toggle -->
                 <div class="search-input-container">
-                    <input type="text" id="search-input" placeholder="Search Hebrew text...">
+                    <input type="text" id="search-input" placeholder="Search English text...">
                     <button class="clear-search-btn" id="clear-search-btn" onclick="clearTextSearch()" title="Clear Search">↻</button>
                     <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()" title="Toggle Hebrew Keyboard">⌨</button>
                 </div>
@@ -1019,6 +1019,7 @@
                 <ul>
                     <li><a href="#section-tzafun">Tzafun</a></li>
                     <li><a href="#section-information">The information in Tzafun</a></li>
+                    <li><a href="#section-sacred">Sacred Names</a></li>
                     <li><a href="#section-documentation">More documentation</a></li>
                     <li><a href="#section-acknowledgements">Acknowledgements</a></li>
                 </ul>
@@ -1028,7 +1029,8 @@
             <div class="about-content">
                 <h2 id="section-tzafun">Tzafun</h2>
                 <p>"Tzafun" (צָפֻן) means "hidden" or "concealed" and also implies treasure, as in Psalms 31:20: "How abundant is the good that You have in store (צָפַ֢נְתָּ) for those who fear You" and Psalm 119:11: "I have treasured (צָפַ֣נְתִּי) Your word in my heart."</p>
-                <p>Tzafun originated with the question - couldn't we use powerful AI tools to compile a 'concordance' of biblical figurative speech? Tzafun was created by having large language models "read" the text of the Bible verse by verse, in English and Hebrew, and tag instances of figurative speech, including similes, metaphors, hyperbole, idioms, personification and metonymy.</p>
+                <p>The Biblical text is a treasure house of rich figurative language, sometimes clear, sometimes mysterious. It's an essential part of the text's power and eternality. Often, the student's work would benefit from a wide search for some element of figurative speech across a wide corpus of Biblical texts, in the same way as one can search for a particular word or root in a Concordance. Creating a database to enable this would be a great deal of work for humans. Tzafun started with the question: couldn't we use modern Large Language Models (LLMs) to help compile this 'concordance' of biblical figurative speech?</p>
+                <p>Tzafun was created by having LLMs "read" the text of the Bible verse by verse, in English and Hebrew, and tag instances of figurative speech, including similes, metaphors, hyperbole, idioms, personification and metonymy.</p>
                 <p>This is a two-stage process. A first AI agent reads the verse, deliberates and identifies figurative speech. A second AI agent reviews the work of the first, validating, invalidating or reclassifying the initial tags. Tzafun records the final result, as well as the deliberations of both agents.</p>
 
                 <h2 id="section-information">The information in Tzafun</h2>
@@ -1045,6 +1047,9 @@
                 <p><strong>Confidence</strong> The LLM's level of confidence that this is figurative language.</p>
                 <p><strong>Name of the model</strong> Most verses were processed by Gemini-2.5-flash. However, this model struggled to process about 10% of verses, and it returned incomplete deliberations. When this happened, we used Gemini-2.5-pro as a fallback. When this failed (well under 1% of the time), Claude-Sonnet-4 was used.</p>
 
+                <h2 id="section-sacred">Sacred Names</h2>
+                <p>Traditional Jews who are printing results from Tzafun may wish to avoid printing Divine names that they consider sacred. They can select 'Traditional Jewish' versions of the verses, which replace divine Names with traditional abbreviations.</p>
+
                 <h2 id="section-documentation">More documentation</h2>
                 <p>[We'll add to this later.]</p>
 
@@ -1052,6 +1057,7 @@
                 <p>Text from Sefaria.org.</p>
                 <p>Hebrew: Miqra According to the Masorah (MAM).</p>
                 <p>English: Jewish Publication Society, 2006.</p>
+                <p>&copy; 2025 Ari Robicsek</p>
             </div>
         </div>
 
@@ -1085,7 +1091,7 @@
             showNotFigurative: false,
             hebrewVersion: 'sacred',
             englishVersion: 'sacred',
-            searchType: 'hebrew', // 'hebrew' or 'english'
+            searchType: 'english', // 'hebrew' or 'english'
             currentSearch: {
                 text: '',
                 target: '',
