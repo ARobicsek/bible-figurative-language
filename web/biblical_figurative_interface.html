@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Pardes Project</title>
+    <title>Tzafun</title>
     <style>
         /* Hebrew Font Support */
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;600&family=Crimson+Text:wght@400;600&display=swap');
@@ -69,11 +69,23 @@
             font-size: 2.07rem;
             font-weight: 600;
             margin-bottom: 0.25rem;
+            line-height: 1;
         }
 
         .header p {
             opacity: 0.9;
             font-size: 1.3rem;
+            margin-bottom: 0.25rem;
+            line-height: 1;
+        }
+
+        .header-hebrew-quote {
+            font-family: 'Noto Sans Hebrew', serif;
+            font-size: 1.048rem !important;
+            opacity: 0.9;
+            direction: ltr;
+            text-align: left;
+            line-height: 1;
         }
 
         .header-attribution {
@@ -656,8 +668,9 @@
         <!-- Header -->
         <header class="header">
             <div class="header-left">
-                <h1>The Pardes Project</h1>
-                <p>A concordance of figurative language in the bible</p>
+                <h1>Tzafun</h1>
+                <p>A concordance of Biblical figurative language</p>
+                <p class="header-hebrew-quote">מה רב־טובך אשר־צפנת ליראיך (Psalms 31:20)</p>
             </div>
             <div class="header-attribution">
                 Text from Sefaria.org.<br>Hebrew: Miqra According to the Masorah (MAM).<br>English: Jewish Publication Society, 2006.
@@ -666,18 +679,6 @@
 
         <!-- Sidebar -->
         <aside class="sidebar">
-            <!-- Database Selection -->
-            <section class="database-selection">
-                <h3>Database</h3>
-                <label for="database-select">Select Database:</label>
-                <select id="database-select" style="font-size: 0.85rem;">
-                    <option value="">Loading...</option>
-                </select>
-                <div id="database-info" style="font-size: 0.8rem; color: #6c757d; margin-top: 0.2rem;">
-                    <!-- Database info will be inserted here -->
-                </div>
-            </section>
-
             <!-- Book/Chapter Selection -->
             <section class="book-selection">
                 <h3>Text Selection</h3>
@@ -688,6 +689,7 @@
                     <option value="leviticus">Leviticus</option>
                     <option value="numbers">Numbers</option>
                     <option value="deuteronomy">Deuteronomy</option>
+                    <option value="psalms">Psalms</option>
                 </select>
                 <label for="chapter-input">Chapters:</label>
                 <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
@@ -898,8 +900,7 @@
             },
             loading: false,
             requestCounter: 0,  // Track request order to handle race conditions
-            countRequestCounter: 0,  // Track background count requests
-            currentDatabase: null
+            countRequestCounter: 0  // Track background count requests
         };
 
         // API Configuration
@@ -921,19 +922,11 @@
         // Initialize Application
         document.addEventListener('DOMContentLoaded', function() {
             initializeEventListeners();
-            loadDatabases();
             loadStatistics();
-            // loadDefaultVerses will be called after database is loaded
+            loadDefaultVerses(); // Load verses immediately
         });
 
         function initializeEventListeners() {
-            // Database selector
-            document.getElementById('database-select').addEventListener('change', function() {
-                if (this.value) {
-                    selectDatabase(this.value);
-                }
-            });
-
             // Type filter checkboxes
             document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
                 checkbox.addEventListener('change', function() {
@@ -1154,79 +1147,7 @@
             }
         }
 
-        async function loadDatabases() {
-            try {
-                const data = await makeAPICall('/databases');
-                if (data && data.databases) {
-                    const dbSelect = document.getElementById('database-select');
-                    dbSelect.innerHTML = '';
-
-                    // Check localStorage for last selected database
-                    const lastDb = localStorage.getItem('selectedDatabase');
-
-                    data.databases.forEach(db => {
-                        const option = document.createElement('option');
-                        option.value = db.name;
-                        option.textContent = `${db.name} (${db.verse_count || 'N/A'} verses)`;
-
-                        // Select the current database or last selected
-                        if (db.is_current || (lastDb && db.name === lastDb)) {
-                            option.selected = true;
-                            appState.currentDatabase = db.name;
-                            updateDatabaseInfo(db);
-                        }
-
-                        dbSelect.appendChild(option);
-                    });
-
-                    // Load verses for current database
-                    loadDefaultVerses();
-                }
-            } catch (error) {
-                console.error('Failed to load databases:', error);
-                // Fallback to default verses
-                loadDefaultVerses();
-            }
-        }
-
-        async function selectDatabase(dbName) {
-            try {
-                showLoading();
-
-                const response = await fetch(`${API_BASE}/database/select`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ database: dbName })
-                });
-
-                const data = await response.json();
-
-                if (data.success) {
-                    appState.currentDatabase = dbName;
-                    localStorage.setItem('selectedDatabase', dbName);
-
-                    // Update database info
-                    updateDatabaseInfo({ name: dbName, verse_count: data.verse_count });
-
-                    // Reload verses for new database
-                    loadDefaultVerses();
-                } else {
-                    alert(`Error switching database: ${data.error || 'Unknown error'}`);
-                }
-            } catch (error) {
-                console.error('Failed to select database:', error);
-                alert('Failed to switch database. Please try again.');
-            }
-        }
-
-        function updateDatabaseInfo(db) {
-            const infoDiv = document.getElementById('database-info');
-            if (db && db.verse_count) {
-                infoDiv.innerHTML = `<strong>${db.verse_count.toLocaleString()}</strong> verses`;
-            } else {
-                infoDiv.innerHTML = '';
-            }
-        }
+        // Database selection functions removed - now using fixed database
 
         async function loadStatistics() {
             try {
@@ -1248,7 +1169,7 @@
             if (bookSelect.options.length === 0) {
                 bookSelect.innerHTML = '';
                 // Biblical order
-                const biblicalOrder = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy'];
+                const biblicalOrder = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Psalms'];
                 biblicalOrder.forEach(book => {
                     if (books.includes(book)) {
                         const option = document.createElement('option');
@@ -1264,7 +1185,7 @@
         async function loadDefaultVerses() {
             // Load all books in biblical order by default
             await loadVersesFromAPI({
-                books: 'genesis,exodus,leviticus,numbers,deuteronomy',
+                books: 'genesis,exodus,leviticus,numbers,deuteronomy,psalms',
                 figurative_types: Array.from(appState.selectedTypes).join(','),
                 show_not_figurative: appState.showNotFigurative,
                 limit: 20,
@@ -1547,7 +1468,7 @@
                     hebrewText = '[Hebrew text unavailable - contaminated data]';
                 }
 
-                const englishText = appState.englishVersion === 'sacred' ? verse.english_text : verse.english_text_non_sacred;
+                const englishText = appState.englishVersion === 'sacred' ? verse.english_text_clean : verse.english_text_clean_non_sacred;
 
                 // Add verse information to each annotation for synchronization
                 const annotationsWithVerseInfo = verse.annotations.map(annotation => ({
@@ -1634,7 +1555,13 @@
                 // Exclude: explanation, validation_reason_*, verse_deliberation (large fields)
             };
 
-            return `<span class="figurative-highlight" data-annotation='${JSON.stringify(minimalAnnotation).replace(/'/g, "&apos;")}'>${matchedText}${tooltip}</span>`;
+            // Escape the JSON for use in HTML attribute
+            // Use single quotes as delimiter and escape single quotes in JSON as &#39;
+            const escapedJson = JSON.stringify(minimalAnnotation)
+                .replace(/&/g, '&amp;')
+                .replace(/'/g, '&#39;');
+
+            return `<span class="figurative-highlight" data-annotation='${escapedJson}'>${matchedText}${tooltip}</span>`;
         }
 
         // Function removed - using simple highlighting approach instead
@@ -1858,8 +1785,25 @@
                 const trimmedFigText = (figurativeText || '').trim();
 
                 if (trimmedFigText) {
+                    // CRITICAL FIX: Check if the match would be inside a data-annotation attribute
+                    // by verifying it's not between single quotes in an attribute
+                    const checkIfInAttribute = (text, searchTerm) => {
+                        const index = text.indexOf(searchTerm);
+                        if (index === -1) return false;
+
+                        // Look backwards from the match to see if we're inside a data-annotation attribute
+                        const before = text.substring(Math.max(0, index - 500), index);
+
+                        // Count single quotes before the match
+                        // If odd number, we're inside an attribute value
+                        const quotesBeforeMatch = (before.match(/data-annotation='/g) || []).length;
+                        const closingQuotesBeforeMatch = (before.match(/'>/g) || []).length;
+
+                        return quotesBeforeMatch > closingQuotesBeforeMatch;
+                    };
+
                     // Try exact match first (should work in most cases)
-                    if (highlightedText.includes(trimmedFigText)) {
+                    if (highlightedText.includes(trimmedFigText) && !checkIfInAttribute(highlightedText, trimmedFigText)) {
                         matchedText = trimmedFigText;
                     }
                     // For Hebrew, try matching with text that has HTML tags and entities removed
@@ -1963,7 +1907,26 @@
                 }
 
                 if (matchedText) {
+                    // CRITICAL: Skip if matchedText contains HTML tags or attributes
+                    // This prevents matching text inside previously-highlighted spans
+                    if (matchedText.includes('<') || matchedText.includes('data-annotation') ||
+                        matchedText.includes('"speaker"') || matchedText.includes('"confidence"') ||
+                        matchedText.includes('&#39;')) {
+                        console.warn(`[WARNING] Skipping annotation ${annIndex + 1}: matchedText contains HTML/JSON - likely matched inside existing highlight`);
+                        return; // Skip this annotation
+                    }
+
                     const visibleTypes = annotation.types.filter(type => appState.selectedTypes.has(type));
+
+                    // DEBUG: Log what we're about to highlight
+                    console.log(`[DEBUG] About to highlight:`, {
+                        matchedText: matchedText,
+                        matchedTextLength: matchedText.length,
+                        hasHTMLTags: matchedText.includes('<'),
+                        hasDataAnnotation: matchedText.includes('data-annotation'),
+                        hasJSONChars: matchedText.includes('"speaker"') || matchedText.includes('"confidence"'),
+                        figurativeText: annotation.figurative_text
+                    });
 
                     // No longer needed - using simple highlighting approach
 
@@ -1997,8 +1960,47 @@
                     try {
                         // Enhanced multi-line aware replacement
                         const replacement = createSimpleHighlight(matchedText, cleanAnnotation);
-                        highlightedText = highlightedText.replace(matchedText, replacement);
 
+                        // DEBUG: Log the replacement
+                        console.log(`[DEBUG] Replacement HTML:`, replacement.substring(0, 200));
+
+                        const beforeLength = highlightedText.length;
+
+                        // CRITICAL FIX: Find the match position, but ensure it's not inside an attribute
+                        let firstIndex = -1;
+                        let searchStart = 0;
+
+                        while (true) {
+                            const foundIndex = highlightedText.indexOf(matchedText, searchStart);
+                            if (foundIndex === -1) break;
+
+                            // Check if this occurrence is inside a data-annotation attribute
+                            const before = highlightedText.substring(Math.max(0, foundIndex - 1000), foundIndex);
+                            const openAttr = (before.match(/data-annotation='/g) || []).length;
+                            const closeAttr = (before.match(/'>/g) || []).length;
+
+                            if (openAttr === closeAttr) {
+                                // This occurrence is NOT inside an attribute - use it!
+                                firstIndex = foundIndex;
+                                console.log(`[DEBUG] Found match at index ${firstIndex}, NOT in attribute (open=${openAttr}, close=${closeAttr})`);
+                                break;
+                            } else {
+                                // This occurrence IS inside an attribute - skip it
+                                console.log(`[DEBUG] Skipping match at index ${foundIndex}, IS in attribute (open=${openAttr}, close=${closeAttr})`);
+                                searchStart = foundIndex + matchedText.length;
+                            }
+                        }
+
+                        if (firstIndex === -1) {
+                            console.warn(`[WARNING] matchedText "${matchedText}" not found in visible text (only in attributes)!`);
+                        } else {
+                            // Replace only the first valid occurrence
+                            highlightedText = highlightedText.substring(0, firstIndex) + replacement + highlightedText.substring(firstIndex + matchedText.length);
+                        }
+
+                        const afterLength = highlightedText.length;
+
+                        console.log(`[DEBUG] Text length changed from ${beforeLength} to ${afterLength}`);
                         console.log(`Successfully highlighted annotation ${annIndex + 1}: "${matchedText}" in ${language}`);
                     } catch (error) {
                         console.error(`Error highlighting annotation ${annIndex + 1}:`, error);
