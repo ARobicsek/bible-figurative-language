@@ -2,7 +2,7 @@
 
 **A concordance of Biblical figurative language**
 
-*"Tzafun" (צָפַן) means "hidden" or "concealed" and also implies treasure, as in Psalms 31:20: "How abundant is the good that You have in store (צָפַ֢נְתָּ) for those who fear You" and Psalm 119:11: "I have treasured (צָפַ֣נְתִּי) Your word in my heart."*
+*"Tzafun" (צָפֻן) means "hidden" or "concealed" and also implies treasure, as in Psalms 31:20: "How abundant is the good that You have in store (צָפַ֢נְתָּ) for those who fear You" and Psalm 119:11: "I have treasured (צָפַ֣נְתִּי) Your word in my heart."*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE-CODE.md)
 [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA.md)
@@ -25,7 +25,9 @@ Tzafun is a comprehensive research tool that provides access to 8,373 verses fro
 
 ## 🚀 Live Demo
 
-**[Try it now](#)** *(Demo link will be added after deployment)*
+**[Try it now at https://tzafun.onrender.com](https://tzafun.onrender.com)**
+
+*Note: The free tier deployment may take 30-60 seconds to wake up after periods of inactivity.*
 
 ---
 
@@ -114,7 +116,7 @@ The database provides comprehensive coverage of the Torah and Psalms with valida
 
 ### Option 1: Use the Hosted Version (Recommended)
 
-Simply visit our [live demo](#) to start exploring immediately. No installation required!
+Simply visit [https://tzafun.onrender.com](https://tzafun.onrender.com) to start exploring immediately. No installation required!
 
 ### Option 2: Run Locally
 
@@ -126,31 +128,27 @@ Simply visit our [live demo](#) to start exploring immediately. No installation 
 
 ```bash
 # Clone the repository
-git clone https://github.com/[username]/tzafun.git
-cd tzafun
+git clone https://github.com/ARobicsek/bible-figurative-language.git
+cd bible-figurative-language
 
 # Install dependencies
 pip install -r web/requirements.txt
 
 # Start the server
-python web/api_server.py
+cd web
+python api_server.py
 ```
 
 Then open http://localhost:5000 in your browser.
-
-**See [SETUP.md](SETUP.md) for detailed installation and deployment instructions.**
 
 ---
 
 ## 📖 Documentation
 
-- **[SETUP.md](SETUP.md)** - Installation and deployment guide
-- **[docs/DATABASE_SCHEMA.md](docs/DATABASE_SCHEMA.md)** - Database structure and queries
-- **[docs/METHODOLOGY.md](docs/METHODOLOGY.md)** - AI analysis methodology
-- **[docs/FEATURES.md](docs/FEATURES.md)** - Complete interface guide
-- **[docs/FAQ.md](docs/FAQ.md)** - Frequently asked questions
-- **[docs/NON_SACRED_HEBREW.md](docs/NON_SACRED_HEBREW.md)** - Hebrew divine name modifications
-- **[CONTRIBUTING.md](CONTRIBUTING.md)** - How to contribute
+For detailed documentation on the project's methodology, database schema, and technical architecture, see:
+- [PROJECT_OVERVIEW_AND_DECISIONS.md](PROJECT_OVERVIEW_AND_DECISIONS.md) - Complete project overview and strategic decisions
+- [README_INTERNAL.md](README_INTERNAL.md) - Development history and technical achievements
+- **About Page** - Visit the live application and click "About" for end-user documentation
 
 ---
 
@@ -201,11 +199,21 @@ If you use this tool or database in your research, please cite:
 ```bibtex
 @software{robicsek_tzafun_2025,
   author = {Robicsek, Ari},
-  title = {Tzafun: A Concordance of Biblical Figurative Language},
+  title = {Tzafun: A Concordance of Figurative Language in the Torah and Psalms},
   year = {2025},
-  url = {https://github.com/[username]/tzafun},
+  url = {https://github.com/ARobicsek/bible-figurative-language},
   note = {Version 1.0}
 }
+```
+
+**APA Format:**
+```
+Robicsek, A. (2025). Tzafun: A Concordance of Figurative Language in the Torah and Psalms (Version 1.0) [Computer software]. https://github.com/ARobicsek/bible-figurative-language
+```
+
+**MLA Format:**
+```
+Robicsek, Ari. Tzafun: A Concordance of Figurative Language in the Torah and Psalms. Version 1.0, 2025, https://github.com/ARobicsek/bible-figurative-language.
 ```
 
 ---
@@ -214,15 +222,15 @@ If you use this tool or database in your research, please cite:
 
 **Frontend:**
 - Pure HTML/CSS/JavaScript
-- Direct Supabase client integration
 - Responsive design for all devices
 - Hebrew (RTL) and English display
+- Flask backend with REST API
 
 **Backend:**
-- Supabase PostgreSQL database
-- Row-level security for read-only public access
+- Flask (Python) server
+- SQLite database (49MB)
 - Optimized queries with intelligent indexing
-- RESTful API via Supabase
+- Deployed on Render.com free tier
 
 **Data Source:**
 - Hebrew text: Miqra According to the Masorah (MAM) via Sefaria.org
@@ -241,7 +249,7 @@ We welcome contributions! Areas where you can help:
 - **Bug Reports**: Report issues or unexpected behavior
 - **Translations**: Help translate the interface to other languages
 
-**See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.**
+Please open an issue on GitHub to discuss your contribution before starting work.
 
 ---
 
@@ -285,8 +293,8 @@ You are free to:
 
 ## 📞 Contact & Support
 
-- **Issues & Bug Reports**: [GitHub Issues](https://github.com/[username]/tzafun/issues)
-- **Feature Requests**: [GitHub Discussions](https://github.com/[username]/tzafun/discussions)
+- **Issues & Bug Reports**: [GitHub Issues](https://github.com/ARobicsek/bible-figurative-language/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/ARobicsek/bible-figurative-language/discussions)
 - **General Questions**: Open an issue with the "question" label
 
 ---
@@ -295,7 +303,7 @@ You are free to:
 
 **Version:** 1.0.0 (Public Release)
 **Status:** ✅ Production Ready
-**Last Updated:** September 30, 2025
+**Last Updated:** October 1, 2025
 
 ---
 
