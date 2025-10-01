@@ -9,14 +9,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;600&family=Crimson+Text:wght@400;600&display=swap');
 
         :root {
-            /* Figurative Language Colors */
-            --metaphor-color: #e74c3c;
-            --simile-color: #3498db;
-            --personification-color: #9b59b6;
-            --idiom-color: #f39c12;
-            --hyperbole-color: #e67e22;
-            --metonymy-color: #1abc9c;
-            --other-color: #95a5a6;
+            /* Figurative Language Colors - Elegant but distinct palette */
+            --metaphor-color: #a0695f;
+            --simile-color: #5a8ca8;
+            --personification-color: #9370a8;
+            --idiom-color: #c9a255;
+            --hyperbole-color: #c17a61;
+            --metonymy-color: #5d9b82;
+            --other-color: #7a8896;
 
             /* Layout Colors */
             --sidebar-bg: #f8f9fa;
@@ -89,12 +89,153 @@
         }
 
         .header-attribution {
-            font-size: 0.75rem;
+            font-size: 1.3rem;
             color: white;
-            opacity: 0.8;
+            opacity: 0.9;
             text-align: right;
             line-height: 1.4;
             max-width: 350px;
+        }
+
+        .header-attribution a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .header-attribution a:hover {
+            text-decoration: underline;
+        }
+
+        .header h1 {
+            cursor: pointer;
+        }
+
+        .header h1:hover {
+            opacity: 0.8;
+        }
+
+        /* About Page Styles */
+        .about-page {
+            display: none;
+            overflow-y: auto;
+            height: calc(100vh - 120px);
+            grid-column: 1 / -1;
+        }
+
+        .about-page.active {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 2rem;
+        }
+
+        .about-toc {
+            padding: 2rem 1.5rem;
+            background-color: #f8f9fa;
+            border-right: 1px solid #dee2e6;
+            position: sticky;
+            top: 0;
+            height: fit-content;
+        }
+
+        .about-toc h3 {
+            font-size: 1rem;
+            color: #2b394f;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #2b394f;
+        }
+
+        .about-toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .about-toc li {
+            margin-bottom: 0.75rem;
+        }
+
+        .about-toc a {
+            color: #495057;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .about-toc a:hover {
+            color: #2b394f;
+            text-decoration: underline;
+        }
+
+        .about-content {
+            padding: 2rem;
+            max-width: 900px;
+        }
+
+        .about-page h2 {
+            font-size: 1.8rem;
+            color: #2b394f;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #2b394f;
+            padding-bottom: 0.5rem;
+        }
+
+        .about-page h2:first-child {
+            margin-top: 0;
+        }
+
+        .about-page p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .about-page strong {
+            font-weight: 600;
+            color: #2b394f;
+            font-size: 1.3em;
+        }
+
+        /* Tooltip styles */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 220px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1000;
+            bottom: 125%;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 20px;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
         }
 
         /* Sidebar */
@@ -117,6 +258,10 @@
             color: #2b394f;
             border-bottom: 2px solid #2b394f;
             padding-bottom: 0.3rem;
+        }
+
+        .sidebar h3.tooltip {
+            display: block;
         }
 
         .sidebar label {
@@ -668,12 +813,12 @@
         <!-- Header -->
         <header class="header">
             <div class="header-left">
-                <h1>Tzafun</h1>
+                <h1 onclick="showMainPage()">Tzafun</h1>
                 <p>A concordance of Biblical figurative language</p>
                 <p class="header-hebrew-quote">מה רב־טובך אשר־צפנת ליראיך (Psalms 31:20)</p>
             </div>
             <div class="header-attribution">
-                Text from Sefaria.org.<br>Hebrew: Miqra According to the Masorah (MAM).<br>English: Jewish Publication Society, 2006.
+                <a onclick="showAboutPage()">about</a>
             </div>
         </header>
 
@@ -714,40 +859,47 @@
                     <button id="clear-all-types" style="flex: 1; padding: 0.4rem 0.8rem; background: white; color: #2b394f; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;">Clear All</button>
                 </div>
 
-                <label>
+                <label class="tooltip">
                     <input type="checkbox" value="metaphor" checked>
                     <span class="filter-color metaphor"></span>
                     Metaphor
+                    <span class="tooltiptext">A comparison where one thing is said to be another (e.g., "God is my rock")</span>
                 </label>
-                <label>
+                <label class="tooltip">
                     <input type="checkbox" value="simile" checked>
                     <span class="filter-color simile"></span>
                     Simile
+                    <span class="tooltiptext">A comparison using "like" or "as" (e.g., "like a deer pants for water")</span>
                 </label>
-                <label>
+                <label class="tooltip">
                     <input type="checkbox" value="personification" checked>
                     <span class="filter-color personification"></span>
                     Personification
+                    <span class="tooltiptext">Giving human qualities to non-human things (e.g., "the mountains skipped like rams")</span>
                 </label>
-                <label>
+                <label class="tooltip">
                     <input type="checkbox" value="idiom" checked>
                     <span class="filter-color idiom"></span>
                     Idiom
+                    <span class="tooltiptext">A phrase with a meaning different from its literal words (e.g., "fruit of the womb")</span>
                 </label>
-                <label>
+                <label class="tooltip">
                     <input type="checkbox" value="hyperbole" checked>
                     <span class="filter-color hyperbole"></span>
                     Hyperbole
+                    <span class="tooltiptext">Exaggeration for emphasis (e.g., "rivers of tears flow from my eyes")</span>
                 </label>
-                <label>
+                <label class="tooltip">
                     <input type="checkbox" value="metonymy" checked>
                     <span class="filter-color metonymy"></span>
                     Metonymy
+                    <span class="tooltiptext">Using one thing to represent another closely related thing (e.g., "the sword" for war)</span>
                 </label>
-                <label>
+                <label class="tooltip">
                     <input type="checkbox" value="other" checked>
                     <span class="filter-color other"></span>
                     Other
+                    <span class="tooltiptext">Other forms of figurative language not fitting the main categories</span>
                 </label>
                 <label>
                     <input type="checkbox" value="not_figurative">
@@ -758,7 +910,9 @@
 
             <!-- Text Version Toggle -->
             <section class="text-options">
-                <h3>Text Version</h3>
+                <h3 class="tooltip">Text Version
+                    <span class="tooltiptext">See About section for details</span>
+                </h3>
                 <div style="margin-bottom: 1rem;">
                     <strong>Hebrew:</strong><br>
                     <label><input type="radio" name="hebrew-version" value="sacred" checked> Sacred Names</label>
@@ -827,7 +981,9 @@
                 </div>
 
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; margin-bottom: 0.5rem;">
-                    <h4 style="color: #2b394f; margin: 0; font-size: 1rem; border-bottom: 2px solid #2b394f; padding-bottom: 0.3rem; flex: 1;">Search for Tag</h4>
+                    <h4 class="tooltip" style="color: #2b394f; margin: 0; font-size: 1rem; border-bottom: 2px solid #2b394f; padding-bottom: 0.3rem; flex: 1;">Search for Tag
+                        <span class="tooltiptext">See About section for details</span>
+                    </h4>
                     <button id="clear-metadata-btn" onclick="clearMetadataSearch()" style="background: none; border: none; color: #6c757d; font-size: 1.2rem; cursor: pointer; padding: 0; margin: 0 0 0 0.5rem;" title="Clear tag search">↻</button>
                 </div>
                 <div style="font-size: 0.85rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.75rem;">For multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
@@ -841,7 +997,7 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="main-content">
+        <main class="main-content" id="main-content">
             <div id="verses-container">
                 <div class="loading">
                     <div class="spinner"></div>
@@ -854,6 +1010,50 @@
                 Loading...
             </div>
         </main>
+
+        <!-- About Page -->
+        <div class="about-page" id="about-page">
+            <!-- Table of Contents -->
+            <div class="about-toc">
+                <h3>Contents</h3>
+                <ul>
+                    <li><a href="#section-tzafun">Tzafun</a></li>
+                    <li><a href="#section-information">The information in Tzafun</a></li>
+                    <li><a href="#section-documentation">More documentation</a></li>
+                    <li><a href="#section-acknowledgements">Acknowledgements</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="about-content">
+                <h2 id="section-tzafun">Tzafun</h2>
+                <p>"Tzafun" (צָפֻן) means "hidden" or "concealed" and also implies treasure, as in Psalms 31:20: "How abundant is the good that You have in store (צָפַ֢נְתָּ) for those who fear You" and Psalm 119:11: "I have treasured (צָפַ֣נְתִּי) Your word in my heart."</p>
+                <p>Tzafun originated with the question - couldn't we use powerful AI tools to compile a 'concordance' of biblical figurative speech? Tzafun was created by having large language models "read" the text of the Bible verse by verse, in English and Hebrew, and tag instances of figurative speech, including similes, metaphors, hyperbole, idioms, personification and metonymy.</p>
+                <p>This is a two-stage process. A first AI agent reads the verse, deliberates and identifies figurative speech. A second AI agent reviews the work of the first, validating, invalidating or reclassifying the initial tags. Tzafun records the final result, as well as the deliberations of both agents.</p>
+
+                <h2 id="section-information">The information in Tzafun</h2>
+                <p>Each verse is shown in Hebrew (Masoretic) and English (JPS 2006). Examples of figurative speech that were identified by the first agent and validated by the second are highlighted. If you click on the header above any verse, you can see the LLM's deliberations. If you click on a highlighted example of figurative speech, you can also see the following information:</p>
+                <p><strong>Target</strong> what or who the figurative speech is about</p>
+                <p><strong>Vehicle</strong> what the target is being likened to</p>
+                <p><strong>Ground</strong> what quality of the target is being illuminated by the figurative speech</p>
+                <p><strong>Posture</strong> purpose of the speech; emotional valence</p>
+                <p>Example: "כִּֽי־עָפָ֣ר אַ֔תָּה"/ "For dust you are" (Gen 3:19). Target = humans; Vehicle = dust; Ground = humble origin, ephemerality; Posture = solemn declaration</p>
+                <p>To make these easier to search, the LLM was instructed to generate a hierarchy of tags for each of these fields. For example, if the vehicle of the metaphor is bees, the LLM will record "bees → insects → animals". A search for any of these terms will identify Psalms 118:12 "סַבּ֤וּנִי כִדְבוֹרִ֗ים"/ "They have beset me like bees".</p>
+                <p><strong>Explanation</strong> The LLM's explanation of the figurative speech.</p>
+                <p><strong>Validation reasons</strong> The second agent's deliberations about whether to validate/invalidate/reclassify a phrase tagged by the first agent as figurative speech.</p>
+                <p><strong>Speaker</strong> The LLM's assessment of who is speaking the figurative language.</p>
+                <p><strong>Confidence</strong> The LLM's level of confidence that this is figurative language.</p>
+                <p><strong>Name of the model</strong> Most verses were processed by Gemini-2.5-flash. However, this model struggled to process about 10% of verses, and it returned incomplete deliberations. When this happened, we used Gemini-2.5-pro as a fallback. When this failed (well under 1% of the time), Claude-Sonnet-4 was used.</p>
+
+                <h2 id="section-documentation">More documentation</h2>
+                <p>[We'll add to this later.]</p>
+
+                <h2 id="section-acknowledgements">Acknowledgements</h2>
+                <p>Text from Sefaria.org.</p>
+                <p>Hebrew: Miqra According to the Masorah (MAM).</p>
+                <p>English: Jewish Publication Society, 2006.</p>
+            </div>
+        </div>
 
         <!-- Bottom Detail Panel -->
         <div class="detail-panel" id="detail-panel">
@@ -908,6 +1108,20 @@
 
         // API Configuration - use relative URL to work in both dev and production
         const API_BASE = '/api';
+
+        // Page Navigation Functions
+        function showAboutPage() {
+            document.getElementById('main-content').style.display = 'none';
+            document.querySelector('.sidebar').style.display = 'none';
+            document.getElementById('about-page').classList.add('active');
+            document.getElementById('about-page').style.gridColumn = '1 / -1';
+        }
+
+        function showMainPage() {
+            document.getElementById('main-content').style.display = 'block';
+            document.querySelector('.sidebar').style.display = 'block';
+            document.getElementById('about-page').classList.remove('active');
+        }
 
         // DOM Elements
         const elements = {
@@ -1209,12 +1423,12 @@
         }
 
         async function loadDefaultVerses() {
-            // Load all books in biblical order by default - reduced limit for faster initial load
+            // Load all books in biblical order by default
             await loadVersesFromAPI({
                 books: 'genesis,exodus,leviticus,numbers,deuteronomy,psalms',
                 figurative_types: Array.from(appState.selectedTypes).join(','),
                 show_not_figurative: appState.showNotFigurative,
-                limit: 10,
+                limit: 25,
                 offset: 0
             });
         }
