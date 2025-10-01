@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+type: software
+title: "Tzafun: A Concordance of Figurative Language in the Torah and Psalms"
+version: 1.0.0
+date-released: 2025-01-01
+url: "https://github.com/ARobicsek/bible-figurative-language"
+repository-code: "https://github.com/ARobicsek/bible-figurative-language"
+license:
+  - MIT
+  - CC-BY-4.0
+authors:
+  - family-names: "Robicsek"
+    given-names: "Ari"
+keywords:
+  - "biblical studies"
+  - "figurative language"
+  - "Hebrew Bible"
+  - "Torah"
+  - "Psalms"
+  - "digital humanities"
+  - "natural language processing"
+  - "AI analysis"
+  - "metaphor"
+  - "computational linguistics"
+abstract: >-
+  Tzafun is a comprehensive research tool providing access to 8,373 verses
+  from the Torah (Genesis through Deuteronomy) and Psalms, analyzed for
+  figurative language using advanced AI models. The database contains 5,933
+  validated instances of figurative language, including metaphors, similes,
+  personifications, idioms, hyperboles, and metonymies. Each classification
+  includes complete AI reasoning, validation records, and rich metadata
+  (Target/Vehicle/Ground/Posture). The project features an interactive web
+  interface with Hebrew and English dual-language display, advanced filtering,
+  and a sacred/non-sacred text toggle for traditional Jewish scholarship.
+  Tzafun demonstrates innovative application of AI in digital humanities while
+  maintaining complete transparency and cultural sensitivity.
+references:
+  - type: website
+    title: "Sefaria - A Living Library of Jewish Texts"
+    url: "https://www.sefaria.org"
+    notes: "Source for Hebrew (Miqra According to the Masorah) and English (JPS 2006) biblical texts"
+preferred-citation:
+  type: software
+  title: "Tzafun: A Concordance of Figurative Language in the Torah and Psalms"
+  version: 1.0.0
+  authors:
+    - family-names: "Robicsek"
+      given-names: "Ari"
+  year: 2025
+  url: "https://github.com/ARobicsek/bible-figurative-language"
+  notes: "AI-analyzed database of biblical figurative language with interactive web interface"

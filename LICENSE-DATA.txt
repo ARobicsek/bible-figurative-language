@@ -1,0 +1,79 @@
+Creative Commons Attribution 4.0 International License (CC BY 4.0)
+
+Copyright (c) 2025 Ari Robicsek
+
+This license applies to the database content and AI-generated annotations in this
+repository, including:
+- The SQLite database file and all data contained within
+- AI-generated figurative language classifications and metadata
+- AI deliberation records and validation reasoning
+- Target/Vehicle/Ground/Posture categorizations
+- All derived data exports and visualizations
+
+---
+
+You are free to:
+
+  * Share — copy and redistribute the material in any medium or format
+  * Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially
+
+Under the following terms:
+
+  * Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+
+  * No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing anything
+    the license permits.
+
+---
+
+RECOMMENDED ATTRIBUTION:
+
+When using this data in research or publications, please cite:
+
+  Robicsek, A. (2025). Tzafun: A Concordance of Figurative Language in the
+  Torah and Psalms (Version 1.0) [Computer software].
+  https://github.com/ARobicsek/bible-figurative-language
+
+---
+
+SOURCE TEXTS ATTRIBUTION:
+
+The underlying Hebrew and English biblical texts are sourced from Sefaria.org:
+
+  * Hebrew text: Miqra According to the Masorah (MAM)
+    Licensed under CC0 1.0 Universal (Public Domain)
+
+  * English translation: Jewish Publication Society, 2006
+    Licensed under CC-BY-SA
+
+For more information about source texts, visit: https://www.sefaria.org
+
+---
+
+AI MODELS USED:
+
+  * Primary analysis: Google Gemini 2.5 Flash and Gemini 2.5 Pro
+  * Fallback analysis: Anthropic Claude Sonnet 4
+
+The AI-generated classifications, while produced using advanced language models,
+are provided for research and educational purposes. Users are encouraged to
+validate classifications for critical scholarly work.
+
+---
+
+FULL LICENSE TEXT:
+
+For the complete Creative Commons Attribution 4.0 International License text,
+see: https://creativecommons.org/licenses/by/4.0/legalcode
+
+A human-readable summary is available at:
+https://creativecommons.org/licenses/by/4.0/
+
+---
+
+For code and software licensing, see LICENSE-CODE.txt (MIT License)
