@@ -175,6 +175,11 @@ def serve_frontend():
     """Serve the main HTML interface"""
     return send_from_directory('.', 'biblical_figurative_interface.html')
 
+@app.route('/favicon.ico')
+def favicon():
+    """Return 204 No Content for favicon to prevent 404 errors"""
+    return '', 204
+
 @app.route('/api/verses')
 def get_verses():
     """
