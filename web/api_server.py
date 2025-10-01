@@ -7,6 +7,7 @@ Serves data from the SQLite database with advanced filtering and search capabili
 
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
+from flask_caching import Cache
 import sqlite3
 import json
 import re
@@ -25,6 +26,13 @@ if sys.platform.startswith('win'):
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend integration
 app.config['JSON_AS_ASCII'] = False  # Ensure proper Unicode in JSON responses
+
+# Configure caching for performance optimization
+# Using simple memory cache with 5-minute TTL for repeated queries
+# This dramatically speeds up repeated searches and statistics requests
+app.config['CACHE_TYPE'] = 'SimpleCache'  # Memory-based cache
+app.config['CACHE_DEFAULT_TIMEOUT'] = 300  # 5 minutes (300 seconds)
+cache = Cache(app)
 
 # Database configuration
 # Get the project root directory (parent of web/)
@@ -193,6 +201,7 @@ def favicon():
     return '', 204
 
 @app.route('/api/verses')
+@cache.cached(timeout=300, query_string=True)  # Cache for 5 minutes, unique per query string
 def get_verses():
     """
     Get verses with optional filtering
@@ -694,6 +703,7 @@ def get_verses():
         return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
 
 @app.route('/api/statistics')
+@cache.cached(timeout=300)  # Cache for 5 minutes (statistics rarely change)
 def get_statistics():
     """Get database statistics"""
     try:
@@ -777,6 +787,7 @@ def get_search_suggestions():
 # These endpoints have been disabled as the application now uses a single fixed database
 
 @app.route('/api/verses/count')
+@cache.cached(timeout=300, query_string=True)  # Cache for 5 minutes, unique per query string
 def get_verses_count():
     """
     Get exact verse count for current filters (lazy loading)
