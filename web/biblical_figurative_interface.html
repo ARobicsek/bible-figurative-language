@@ -964,16 +964,29 @@
                 debounce(handleSearch, 300)();
             });
             // Metadata search listeners
+            // Metadata search event listeners - auto-uncheck "Not Figurative" when metadata search is active
             document.getElementById('target-search').addEventListener('input', function() {
+                if (this.value.trim()) {
+                    uncheckNotFigurativeForMetadataSearch();
+                }
                 debounce(handleSearch, 300)();
             });
             document.getElementById('vehicle-search').addEventListener('input', function() {
+                if (this.value.trim()) {
+                    uncheckNotFigurativeForMetadataSearch();
+                }
                 debounce(handleSearch, 300)();
             });
             document.getElementById('ground-search').addEventListener('input', function() {
+                if (this.value.trim()) {
+                    uncheckNotFigurativeForMetadataSearch();
+                }
                 debounce(handleSearch, 300)();
             });
             document.getElementById('posture-search').addEventListener('input', function() {
+                if (this.value.trim()) {
+                    uncheckNotFigurativeForMetadataSearch();
+                }
                 debounce(handleSearch, 300)();
             });
 
@@ -1021,6 +1034,15 @@
                 clearTimeout(timeout);
                 timeout = setTimeout(later, wait);
             };
+        }
+
+        function uncheckNotFigurativeForMetadataSearch() {
+            // Auto-uncheck "Not Figurative" when metadata search is active to avoid complex queries
+            const notFigCheckbox = document.querySelector('input[value="not_figurative"]');
+            if (notFigCheckbox && notFigCheckbox.checked) {
+                notFigCheckbox.checked = false;
+                appState.showNotFigurative = false;
+            }
         }
 
         function handleSearch() {
@@ -1284,6 +1306,7 @@
                 <div class="loading">
                     <div class="spinner"></div>
                     <p>Loading verses...</p>
+                    <p style="font-size: 0.9rem; opacity: 0.7; margin-top: 0.5rem;">First load may take up to 1 minute</p>
                 </div>
             `;
         }
