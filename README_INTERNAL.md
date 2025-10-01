@@ -10,6 +10,30 @@ A concordance of figurative language in the bible
 
 **✅ HEBREW HIGHLIGHTING FIXED (Oct 1, 2025)**: Resolved critical bug where Hebrew text with maqaf (־) hyphens wasn't being highlighted. Root cause: Unicode range `\u0591-\u05C7` was removing maqaf (U+05BE) before it could be replaced with space, breaking word boundary matching. Solution: Modified normalization order to replace maqaf with space BEFORE removing diacritics, and updated regex pattern to match space OR hyphen. All Hebrew verses now highlight correctly including Psalms 6:8, Genesis 3:1, 3:16-19.
 
+**🎨 UI ENHANCEMENTS & ABOUT PAGE (Oct 1, 2025)**: Comprehensive UI polish and documentation improvements:
+- **📖 About Page**: Created professional About page with comprehensive project documentation
+  - Table of contents with clickable navigation
+  - Detailed explanation of Tzafun's AI-powered two-stage analysis process
+  - Complete field documentation (Target, Vehicle, Ground, Posture, Explanation, Validation reasons, Speaker, Confidence, Model)
+  - Information about model usage (Gemini-2.5-flash, Gemini-2.5-pro, Claude-Sonnet-4)
+  - Acknowledgements section for data sources (Sefaria.org, MAM, JPS 2006)
+  - Fixed Hebrew vowel: צָפַן → צָפֻן (patach to kubutz under Peh)
+- **🎨 Color Palette Refinement**: Updated figurative language type colors to elegant, distinct palette
+  - Replaced bright primary colors with sophisticated earthy tones
+  - Metaphor: `#a0695f` (terracotta), Simile: `#5a8ca8` (slate blue), Personification: `#9370a8` (purple)
+  - Idiom: `#c9a255` (golden), Hyperbole: `#c17a61` (coral), Metonymy: `#5d9b82` (jade), Other: `#7a8896` (gray)
+  - Colors maintain distinction while providing classier aesthetic
+- **💡 Tooltip Enhancements**: Added helpful tooltips with definitions for all figurative language types
+  - Metaphor: "A comparison where one thing is said to be another"
+  - Simile: "A comparison using 'like' or 'as'"
+  - Personification: "Giving human qualities to non-human things"
+  - Idiom: "A phrase with a meaning different from its literal words"
+  - Hyperbole: "Exaggeration for emphasis"
+  - Metonymy: "Using one thing to represent another closely related thing"
+  - Fixed tooltip positioning to prevent off-screen display
+- **📊 Verse Loading**: Updated initial page load from 10 to 25 verses for better user experience
+- **🔧 Header Navigation**: Made "Tzafun" title clickable to return home from About page
+
 ---
 
 ## 🌐 PRODUCTION DEPLOYMENT (Oct 1, 2025)
