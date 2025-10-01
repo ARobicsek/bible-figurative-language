@@ -2399,10 +2399,10 @@
             const totalCount = appState.pagination.total;
             const totalFigurativeInstances = appState.pagination.total_figurative_instances || 0;
 
-            const remainingVerses = Math.max(0, totalCount - (appState.pagination.offset + currentVerses));
+            const remainingVerses = Math.max(0, totalCount - currentVerses);
             const nextStart = currentVerses + 1;
-            const nextEnd = Math.min(currentVerses + appState.pagination.limit, totalCount);
-            const nextButton = appState.pagination.hasMore ?
+            const nextEnd = Math.min(nextStart + appState.pagination.limit - 1, totalCount);
+            const nextButton = (appState.pagination.hasMore && remainingVerses > 0) ?
                 `<button class="nav-button" onclick="loadMore()">Load verses ${nextStart}-${nextEnd}</button>` :
                 '<span style="color: #28a745; font-weight: 600;">✓ All verses loaded</span>';
 
