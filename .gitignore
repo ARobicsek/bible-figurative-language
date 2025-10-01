@@ -12,10 +12,11 @@ ENV/
 .env
 .env.local
 
-# Databases (except the main database)
+# Databases (except the main production databases)
 *.db
 *.db-journal
 !database/torah_figurative_language.db
+!database/Pentateuch_Psalms_fig_language.db
 
 # Logs
 *.log
@@ -44,8 +45,8 @@ test_*.db
 # Personal documents
 Documents/
 
-# Private processing code (not for public release)
-private/
+# Note: private/ folder is now public (contains analysis pipeline)
+# Only actual .env files with API keys are kept secret
 
 # Claude settings (keep for development)
 # .claude/

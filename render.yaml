@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tzafun
+    env: python
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: pip install -r web/requirements.txt
+    startCommand: cd web && gunicorn --bind 0.0.0.0:$PORT api_server:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0

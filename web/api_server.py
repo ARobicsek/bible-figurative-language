@@ -1060,7 +1060,16 @@ if __name__ == '__main__':
 
     print("Starting Biblical Figurative Language API Server...")
     print(f"Database: {DB_PATH}")
-    print("Access the interface at: http://localhost:5000")
-    print("API Statistics: http://localhost:5000/api/statistics")
 
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Use environment variable to determine if we're in production
+    debug_mode = os.environ.get('FLASK_ENV') != 'production'
+    port = int(os.environ.get('PORT', 5000))
+
+    if debug_mode:
+        print("Running in DEBUG mode")
+        print("Access the interface at: http://localhost:5000")
+        print("API Statistics: http://localhost:5000/api/statistics")
+    else:
+        print("Running in PRODUCTION mode")
+
+    app.run(debug=debug_mode, host='0.0.0.0', port=port)
