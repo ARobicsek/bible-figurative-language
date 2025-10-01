@@ -1636,16 +1636,33 @@
                     return false;
                 }
 
-                // For Hebrew, be more lenient - if annotation has text and visible types, include it
-                // The highlighting logic will handle the actual matching with normalization
-                if (language === 'hebrew') {
-                    // Hebrew has visible types and text, so include it for highlighting attempt
+                // Try exact match first (should work in most cases)
+                if (highlightedText.includes(figurativeText)) {
                     return true;
                 }
 
-                // For English, check if the text is actually present
-                if (highlightedText.includes(figurativeText)) {
-                    return true;
+                // For Hebrew, try normalized matching (strip diacritics from both texts)
+                if (language === 'hebrew') {
+                    // Normalize the verse text by removing diacritics and whitespace
+                    const normalizedVerseText = highlightedText
+                        .replace(/<[^>]*>/g, '') // Remove HTML tags
+                        .replace(/&nbsp;/g, ' ') // Remove entities
+                        .replace(/&[a-zA-Z0-9#]+;/g, '')
+                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics
+                        .replace(/־/g, '')
+                        .replace(/\s+/g, '')
+                        .trim();
+
+                    // Normalize the figurative text
+                    const normalizedFigText = figurativeText
+                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics
+                        .replace(/־/g, '')
+                        .replace(/\s+/g, '')
+                        .trim();
+
+                    if (normalizedVerseText.includes(normalizedFigText)) {
+                        return true;
+                    }
                 }
 
                 // Handle divine name variations for English non-sacred
