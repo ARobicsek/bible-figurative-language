@@ -2,9 +2,22 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: Production-Ready Advanced AI Architecture
-**LATEST ACHIEVEMENT**: Successfully completed **lazy background counting** and **database selector** features - the interface now loads instantly with 50-60x faster performance for mixed queries, and users can easily switch between databases.
+**LATEST ACHIEVEMENT**: Successfully resolved **English text footnote contamination** issue - all 8,373 verses now have clean English text with Sefaria API footnotes properly removed.
 
-**✅ MAJOR BREAKTHROUGHS (Sept 27-29, 2025)**:
+**✅ MAJOR BREAKTHROUGHS (Sept 27-30, 2025)**:
+- **📖 ENGLISH TEXT FOOTNOTE CLEANUP (Sept 30 - Latest)**: Completely resolved footnote contamination in English verse text
+  - **Issue**: English text displaying with inline footnote markers from Sefaria API (e.g., "cMeaning of Heb. uncertain", "*Others 'In the beginning...'")
+  - **Root cause**: Sefaria API returns footnotes embedded as HTML tags; previous cleaning only removed tags but left footnote TEXT inline
+  - **Discovery**: Found 230+ verses with "Meaning of Heb", 302+ with "Lit.", affecting Psalms and Genesis differently
+  - **Solution**:
+    - Enhanced `sefaria_client.py _clean_text()` to handle BOTH footnote formats (Psalms letter-style + Genesis asterisk-style with nested `<b>` tags)
+    - Created new database columns: `english_text_clean` and `english_text_clean_non_sacred`
+    - Fetched fresh English text from Sefaria API for all 8,373 verses (337 API calls, ~2 minutes)
+    - Applied improved footnote removal + divine names transformation
+    - Updated web interface to use clean columns
+  - **Result**: **100% clean English text** - zero footnotes in display, problematic verses (Psalms 2:11-12, Genesis 1:1) fully fixed
+  - **Files Modified**: `sefaria_client.py:67-86`, `api_server.py:223,235,247,305+`, `biblical_figurative_interface.html:1471`
+  - **Script**: `refresh_english_text.py` (can re-run anytime to refresh from Sefaria API)
 - **🔧 LAZY COUNT ESTIMATE FIX (Sept 29 - Latest)**: Fixed frontend estimate detection to work with all query types
   - **Issue**: Stats bar showed "(calculating total...)" indefinitely or displayed 0 instances instead of correct count
   - **Root cause**: Estimate detection only triggered when `total === 5002`, but text searches returned different totals (e.g., 14)
@@ -63,7 +76,9 @@ A concordance of figurative language in the bible
 - **🎯 FALSE POSITIVE ELIMINATION (Sept 26 Evening)**: Fixed truncation detection logic to distinguish between legitimate "no figurative language" responses vs actual truncation, eliminating unnecessary Pro model calls
 - **🆕 FALSE NEGATIVE ELIMINATION (Sept 27)**: Enhanced pattern detection to catch deliberations with phrases like "classic case of", "fits the criteria", eliminating false negatives like Genesis 14:20 metonymy detection
 
-**🔧 Hebrew Text Display Contamination Resolution (Sept 29, 2025)**
+**🔧 Text Display Contamination Resolution (Sept 29-30, 2025)**
+
+**Hebrew Text Contamination (Sept 29, 2025)**:
 - **Critical Issue**: Hebrew text display was contaminated with English deliberation text (4,268+ characters) and validation reasons
 - **Root Cause**: Massive annotation objects with large text fields were being serialized into HTML `data-annotation` attributes, causing display corruption
 - **Solution**: Implemented minimal annotation storage system - only essential fields (target, vehicle, ground, types, etc.) stored in HTML attributes
@@ -71,6 +86,20 @@ A concordance of figurative language in the bible
 - **Performance Impact**: Reduced HTML attribute size from 4,000+ to ~200 characters per annotation, eliminating display contamination
 - **Functionality Preserved**: All features working - Hebrew text clean, validation reasons display correctly, explanations intact
 - **Result**: **Production-ready Hebrew text display** with zero contamination and full interactive functionality
+
+**English Text Contamination (Sept 30, 2025)**:
+- **Critical Issue**: English text in Psalms (31:20, 143:7, others) showing JSON metadata as visible text (e.g., `ment"],"speaker":"Narrator","confidence":0.9...`)
+- **Root Cause**: Sequential highlighting passes were matching text INSIDE previously-created `data-annotation` attributes instead of only in visible text
+- **Specific Example**: When highlighting "men" as third annotation, `indexOf()` would find "men" inside the JSON string `"figurative_text":"men"` from an earlier annotation's attribute, causing replacement at wrong position and JSON leakage
+- **Solution**: Implemented attribute-aware replacement logic that:
+  1. Searches for ALL occurrences of matched text using `indexOf()` in a loop
+  2. For each occurrence, counts opening (`data-annotation='`) vs closing (`'>`) patterns before the match
+  3. Skips occurrences where counts are unequal (= inside an attribute)
+  4. Only replaces occurrences where counts are equal (= in visible text)
+- **Code Location**: `web/biblical_figurative_interface.html` lines 1969-1999
+- **Debug Logging**: Added comprehensive logging to track match positions and attribute detection (kept for future debugging)
+- **Testing**: Verified fix works for all verses with multiple overlapping annotations in both English and Hebrew
+- **Result**: **Zero contamination** - JSON metadata stays in attributes, never leaks into visible text
 
 **✅ Flexible Hierarchical Tagging System (Sept 25, 2025)**
 - **Revolutionary Tagging**: Hierarchical arrays for Target/Vehicle/Ground/Posture (e.g., ["specific target", "target category", "general domain"])
