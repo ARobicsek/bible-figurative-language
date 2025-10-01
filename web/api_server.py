@@ -50,10 +50,10 @@ class DatabaseManager:
         """Create database connection with proper configuration"""
         conn = sqlite3.connect(self.db_path, timeout=30.0, check_same_thread=False)
         conn.row_factory = sqlite3.Row  # Enable dict-like access to rows
-        # Optimize for read-heavy workload (read-only optimizations)
-        conn.execute("PRAGMA cache_size = -64000")  # 64MB cache
+        # Optimize for read-heavy workload (minimal memory footprint for 512MB RAM)
+        conn.execute("PRAGMA cache_size = -8000")  # 8MB cache (was 64MB - too large for free tier)
         conn.execute("PRAGMA temp_store = MEMORY")
-        # Skip WAL mode - may cause issues on some filesystems
+        conn.execute("PRAGMA mmap_size = 30000000")  # 30MB memory-mapped I/O for faster reads
         return conn
 
     def execute_query(self, query: str, params: tuple = ()) -> List[Dict]:
