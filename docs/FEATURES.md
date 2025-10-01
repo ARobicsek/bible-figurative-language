@@ -1,6 +1,6 @@
 # Interface Features Guide
 
-**Complete guide to using the Hebrew Figurative Language Explorer**
+**Complete guide to using Tzafun**
 
 This document explains all features and functionality of the interactive web interface.
 

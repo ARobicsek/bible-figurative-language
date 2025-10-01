@@ -64,4 +64,4 @@ If this PR updates figurative language classifications:
 
 ---
 
-**Thank you for contributing to the Hebrew Figurative Language Explorer!**
+**Thank you for contributing to Tzafun!**

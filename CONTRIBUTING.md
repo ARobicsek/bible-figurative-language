@@ -1,4 +1,4 @@
-# Contributing to Hebrew Figurative Language Explorer
+# Contributing to Tzafun
 
 Thank you for your interest in contributing! This project benefits from community involvement in validation, feature development, bug reporting, and documentation.
 
