@@ -8,7 +8,7 @@ A concordance of figurative language in the bible
 
 **⚡ PERFORMANCE BREAKTHROUGH (Oct 1, 2025)**: Achieved **100-1300x speedup** through database indexes and query caching! Metadata searches: 0.011-0.033s (was 1-5s). Complex JOINs: 0.015-0.017s (was 5-20s). System is fast and stable on free tier.
 
-**🐛 KNOWN ISSUE (Oct 1, 2025)**: Hebrew text highlighting currently broken for some verses. Psalms 6:8 and Genesis 3:16-19 have figurative language in database but don't show yellow highlights. Root cause: Filter normalization logic not handling subtle diacritics differences. See `HEBREW_HIGHLIGHTING_DEBUG.md` and `NEXT_SESSION_PROMPT.md` for debugging details.
+**✅ HEBREW HIGHLIGHTING FIXED (Oct 1, 2025)**: Resolved critical bug where Hebrew text with maqaf (־) hyphens wasn't being highlighted. Root cause: Unicode range `\u0591-\u05C7` was removing maqaf (U+05BE) before it could be replaced with space, breaking word boundary matching. Solution: Modified normalization order to replace maqaf with space BEFORE removing diacritics, and updated regex pattern to match space OR hyphen. All Hebrew verses now highlight correctly including Psalms 6:8, Genesis 3:1, 3:16-19.
 
 ---
 
