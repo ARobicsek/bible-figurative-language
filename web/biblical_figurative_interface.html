@@ -1523,6 +1523,18 @@
                 summary.push(`<strong>Books:</strong> ${selectedBooks.join(', ')}`);
             }
 
+            // Get selected chapters
+            const chapterInput = document.getElementById('chapter-input').value;
+            if (chapterInput && chapterInput.trim() !== '' && chapterInput.trim().toLowerCase() !== 'all') {
+                summary.push(`<strong>Chapters:</strong> ${chapterInput}`);
+            }
+
+            // Get selected verses
+            const verseInput = document.getElementById('verse-input').value;
+            if (verseInput && verseInput.trim() !== '' && verseInput.trim().toLowerCase() !== 'all') {
+                summary.push(`<strong>Verses:</strong> ${verseInput}`);
+            }
+
             // Get figurative types
             const selectedTypes = Array.from(appState.selectedTypes);
             const typeLabels = {
