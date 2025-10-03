@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test Psalms 84:4 Highlighting</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; direction: rtl; }
+        .hebrew { font-size: 24px; line-height: 2; }
+        .highlight { background-color: yellow; }
+        .result { margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+        .success { background-color: #d4edda; }
+        .error { background-color: #f8d7da; }
+    </style>
+</head>
+<body>
+    <h1>Testing Psalms 84:4 Highlighting Fix</h1>
+
+    <div id="test-container">
+        <h2>Test Case:</h2>
+        <p><strong>Verse text (contains &amp;thinsp;):</strong></p>
+        <div class="hebrew" id="verse-text"></div>
+
+        <p><strong>Figurative text to highlight (also contains &amp;thinsp;):</strong></p>
+        <div class="hebrew" id="fig-text"></div>
+
+        <h2>Result:</h2>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        // Test data (from Psalms 84:4)
+        const verseText = 'גַּם־צִפּ֨וֹר מָ֪צְאָה בַ֡יִת וּדְר֤וֹר&thinsp;׀ קֵ֥ן לָהּ֮ אֲשֶׁר־שָׁ֢תָה אֶפְרֹ֫חֶ֥יהָ אֶֽת־מִ֭זְבְּחוֹתֶיךָ יְהֹוָ֣ה צְבָא֑וֹת מַ֝לְכִּ֗י וֵאלֹהָֽי';
+        const figText = 'גַּם־צִפּ֨וֹר מָ֪צְאָה בַ֡יִת וּדְר֤וֹר&thinsp;׀ קֵ֥ן לָהּ֮ אֲשֶׁר־שָׁ֢תָה אֶפְרֹ֫חֶ֥יהָ אֶֽת־מִ֭זְבְּחוֹתֶיךָ';
+
+        // Display original texts
+        document.getElementById('verse-text').textContent = verseText;
+        document.getElementById('fig-text').textContent = figText;
+
+        // Test the new highlighting logic
+        function testHighlighting() {
+            const trimmedFigText = figText.trim();
+
+            // Normalize text for matching (remove HTML entities)
+            const textWithoutHTML = verseText
+                .normalize('NFD')
+                .replace(/<br\s*\/?>/gi, ' ')
+                .replace(/<[^>]*>/g, '')
+                .replace(/&nbsp;/g, ' ')
+                .replace(/&[a-zA-Z0-9#]+;/g, ' ')
+                .replace(/\{[^}]*\}/g, '')
+                .replace(/־/g, ' ')
+                .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '')
+                .replace(/\s+/g, ' ')
+                .trim();
+
+            const normalizedFigText = trimmedFigText
+                .normalize('NFD')
+                .replace(/־/g, ' ')
+                .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '')
+                .replace(/&[a-zA-Z0-9#]+;/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+
+            console.log('Text without HTML:', textWithoutHTML);
+            console.log('Normalized fig text:', normalizedFigText);
+            console.log('Match found:', textWithoutHTML.includes(normalizedFigText));
+
+            if (textWithoutHTML.includes(normalizedFigText)) {
+                // Build regex pattern, handling HTML entities as units
+                let flexiblePattern = '';
+                let i = 0;
+                while (i < trimmedFigText.length) {
+                    // Check if we're at the start of an HTML entity
+                    if (trimmedFigText[i] === '&') {
+                        const entityMatch = trimmedFigText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
+                        if (entityMatch) {
+                            // Found complete HTML entity - escape it and add to pattern
+                            const entity = entityMatch[0];
+                            const escapedEntity = entity.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                            flexiblePattern += escapedEntity + '(?:<br\\s*\\/??>|<[^>]*>|\\{[^}]*\\}|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4])*';
+                            i += entity.length;
+                            continue;
+                        }
+                    }
+
+                    // Regular character handling
+                    const char = trimmedFigText[i];
+                    if (char === ' ') {
+                        flexiblePattern += '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4]|\\s)+';
+                    } else {
+                        const escapedChar = char.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                        flexiblePattern += escapedChar + '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4])*';
+                    }
+                    i++;
+                }
+
+                console.log('Regex pattern:', flexiblePattern);
+
+                const regex = new RegExp(flexiblePattern, 'g');
+                const match = verseText.match(regex);
+
+                console.log('Match result:', match);
+
+                if (match) {
+                    // Apply highlighting
+                    const highlightedText = verseText.replace(regex, '<span class="highlight">$&</span>');
+
+                    const resultDiv = document.getElementById('result');
+                    resultDiv.className = 'result success';
+                    resultDiv.innerHTML = `
+                        <h3>✅ SUCCESS!</h3>
+                        <p>The highlighting fix works correctly.</p>
+                        <p><strong>Highlighted text:</strong></p>
+                        <div class="hebrew">${highlightedText}</div>
+                        <p><strong>Matched portion:</strong> ${match[0].substring(0, 50)}...</p>
+                    `;
+                } else {
+                    const resultDiv = document.getElementById('result');
+                    resultDiv.className = 'result error';
+                    resultDiv.innerHTML = `
+                        <h3>❌ FAILED</h3>
+                        <p>Regex did not match the text.</p>
+                    `;
+                }
+            } else {
+                const resultDiv = document.getElementById('result');
+                resultDiv.className = 'result error';
+                resultDiv.innerHTML = `
+                    <h3>❌ FAILED</h3>
+                    <p>Normalized text does not contain figurative text.</p>
+                `;
+            }
+        }
+
+        // Run test on page load
+        testHighlighting();
+    </script>
+</body>
+</html>
