@@ -8,9 +8,10 @@ Complete setup instructions for Tzafun.
 
 1. [Option 1: Use the Hosted Version](#option-1-use-the-hosted-version-recommended)
 2. [Option 2: Run Locally](#option-2-run-locally)
-3. [Option 3: Deploy Your Own](#option-3-deploy-your-own)
-4. [Troubleshooting](#troubleshooting)
-5. [System Requirements](#system-requirements)
+3. [Option 3: Run the AI Analysis Pipeline](#option-3-run-the-ai-analysis-pipeline)
+4. [Option 4: Deploy Your Own](#option-4-deploy-your-own)
+5. [Troubleshooting](#troubleshooting)
+6. [System Requirements](#system-requirements)
 
 ---
 
@@ -114,7 +115,287 @@ If you have multiple database files in the `database/` directory:
 
 ---
 
-## Option 3: Deploy Your Own
+## Option 3: Run the AI Analysis Pipeline
+
+Generate your own figurative language analysis using the AI pipeline with your own API keys.
+
+### What This Does
+
+This option allows you to:
+- Run the complete AI analysis pipeline on Biblical texts
+- Generate new databases with figurative language analysis
+- Use your own Gemini and Claude API keys
+- Process entire books or specific chapters/verses
+- Leverage parallel processing for faster analysis
+
+**Note:** This is for researchers who want to generate new analysis data. If you just want to explore existing data, use [Option 1](#option-1-use-the-hosted-version-recommended) or [Option 2](#option-2-run-locally).
+
+### Prerequisites
+
+**Required:**
+- **Python 3.9 or higher**
+- **Google Gemini API Key** - Get yours at [Google AI Studio](https://makersuite.google.com/app/apikey)
+- **Anthropic Claude API Key** - Get yours at [Anthropic Console](https://console.anthropic.com/)
+- 200 MB free disk space
+
+**API Costs:**
+- Gemini API: Free tier available (60 requests/minute for Flash model)
+- Claude API: Pay-as-you-go pricing (used as fallback for complex verses)
+
+### Installation Steps
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/[username]/bible-figurative-language-concordance.git
+cd bible-figurative-language-concordance
+```
+
+#### 2. Install Pipeline Dependencies
+
+```bash
+# Navigate to the private folder
+cd private
+
+# Install required packages
+pip install -r requirements.txt
+```
+
+**Required packages:**
+- `google-generativeai` - Gemini API client
+- `anthropic` - Claude API client
+- `python-dotenv` - Environment variable management
+- `requests` - HTTP requests for Sefaria API
+
+#### 3. Configure API Keys
+
+```bash
+# Copy the example environment file
+cp .env.example .env
+
+# Edit .env and add your API keys
+```
+
+Edit the `.env` file with your actual API keys:
+
+```bash
+# Google Gemini API Key (for primary AI analysis)
+GEMINI_API_KEY=your_actual_gemini_api_key_here
+
+# Anthropic Claude API Key (for fallback analysis on complex verses)
+ANTHROPIC_API_KEY=your_actual_anthropic_api_key_here
+```
+
+**Security Note:** Never commit your `.env` file to version control. The `.gitignore` file is already configured to exclude it.
+
+#### 4. Run the Interactive Pipeline
+
+```bash
+# Make sure you're in the private folder
+cd private
+
+# Run the interactive processor
+python interactive_parallel_processor.py
+```
+
+### Using the Interactive Processor
+
+The pipeline will guide you through an interactive setup:
+
+#### Step 1: Select Books
+
+```
+Available books:
+  1. Genesis (50 chapters)
+  2. Exodus (40 chapters)
+  3. Leviticus (27 chapters)
+  4. Numbers (36 chapters)
+  5. Deuteronomy (34 chapters)
+  6. Psalms (150 chapters)
+
+Book Selection Examples:
+  - Single: 'Genesis' or '1'
+  - Multiple: 'Genesis,Exodus' or '1,2'
+  - Range: '1-3' (Genesis through Leviticus)
+  - All: 'all'
+
+Select books:
+```
+
+#### Step 2: Select Chapters
+
+For each book selected:
+
+```
+--- Genesis (50 chapters available) ---
+Chapter Selection Examples:
+  - Single: '5'
+  - Range: '5-10'
+  - Multiple: '1,3,7'
+  - All chapters: 'all'
+  - Full book (all chapters & verses): 'full'
+
+Enter chapters for Genesis (1-50):
+```
+
+#### Step 3: Select Verses
+
+For each chapter:
+
+```
+  Chapter 1:
+    Verse Selection Examples:
+      - Single: '5'
+      - Range: '5-10'
+      - Multiple: '1,3,7'
+      - All: 'all'
+
+    Enter verses for Genesis 1:
+```
+
+#### Step 4: Configure Parallel Processing
+
+```
+PARALLEL PROCESSING SETTINGS:
+Recommended: 6-8 workers (balance of speed vs API limits)
+Conservative: 2-4 workers (slower but more reliable)
+Aggressive: 8-12 workers (faster but may hit rate limits)
+
+Enter max parallel workers (1-12, default: 6):
+```
+
+#### Step 5: Review and Confirm
+
+```
+=== PARALLEL PROCESSING SUMMARY ===
+Books: 1
+Estimated verses to process: ~1533
+  Genesis: FULL BOOK (~1533 verses)
+
+Parallel workers: 6
+Debug logging: disabled
+Output files: genesis_full_full_parallel_20241003_1430.*
+
+Proceed with parallel processing? (y/n):
+```
+
+### Understanding the AI Pipeline
+
+The pipeline uses a **three-tier AI validation system**:
+
+1. **Primary Detection (Gemini 2.5 Flash)**
+   - Fast initial analysis
+   - Identifies potential figurative language
+   - Classifies types (metaphor, simile, idiom, etc.)
+
+2. **Secondary Validation (Gemini 2.5 Pro)**
+   - Fallback for complex verses that truncate
+   - More robust analysis
+   - Higher accuracy
+
+3. **Tertiary Fallback (Claude Sonnet 4)**
+   - Final fallback for verses that truncate in both Gemini models
+   - Handles the most complex passages
+   - Ensures complete analysis
+
+### Output Files
+
+After processing, you'll get three files:
+
+```
+genesis_full_full_parallel_20241003_1430.db          # SQLite database
+genesis_full_full_parallel_20241003_1430_log.txt     # Processing log
+genesis_full_full_parallel_20241003_1430_results.json # Summary statistics
+```
+
+### Viewing Your Results
+
+#### Option A: Using DB Browser for SQLite (Recommended)
+
+1. Download [DB Browser for SQLite](https://sqlitebrowser.org/)
+2. Open your generated `.db` file
+3. Browse the `verses` and `figurative_language` tables
+4. Run custom SQL queries
+
+#### Option B: Using the Web Interface
+
+```bash
+# Move your database to the database folder
+mv your_generated.db ../database/
+
+# Start the web server
+cd ../web
+python api_server.py
+
+# Access at http://localhost:5000
+# Select your database from the dropdown
+```
+
+#### Option C: Using Python/SQL
+
+```python
+import sqlite3
+
+conn = sqlite3.connect('your_generated.db')
+cursor = conn.cursor()
+
+# Query verses with figurative language
+cursor.execute('''
+    SELECT v.reference, v.english_text, f.figurative_text, f.explanation
+    FROM verses v
+    JOIN figurative_language f ON v.id = f.verse_id
+    WHERE f.final_metaphor = 'yes'
+    LIMIT 10
+''')
+
+for row in cursor.fetchall():
+    print(row)
+```
+
+### Processing Time Estimates
+
+Based on typical performance with 6 parallel workers:
+
+| Scope | Verses | Estimated Time |
+|-------|--------|----------------|
+| Single chapter | ~25 | 2-5 minutes |
+| Full book (Genesis) | ~1,533 | 2-4 hours |
+| Full Torah | ~5,852 | 10-20 hours |
+| Torah + Psalms | ~8,373 | 14-28 hours |
+
+**Tips for faster processing:**
+- Use 8-12 workers if you have API quota available
+- Process during off-peak hours to avoid rate limits
+- Process books separately to avoid long single sessions
+
+### Troubleshooting Pipeline Issues
+
+**Problem**: `GEMINI_API_KEY not found`
+- **Solution**: Ensure `.env` file exists in project root (not in `private/`)
+- Check that API keys are correctly formatted without quotes
+
+**Problem**: API rate limit errors
+- **Solution**: Reduce parallel workers to 2-4
+- Wait a few minutes and retry
+- Check your API quota in Google AI Studio
+
+**Problem**: `ModuleNotFoundError`
+- **Solution**: Install dependencies: `pip install -r private/requirements.txt`
+- Ensure you're using Python 3.9+
+
+**Problem**: Database errors during processing
+- **Solution**: Ensure write permissions in the current directory
+- Check disk space availability
+- Review log file for detailed error messages
+
+**Problem**: "Both models truncated" in logs
+- **Solution**: This is normal for very complex verses
+- Claude fallback will handle these automatically
+- Check the log for "Claude fallback completed" messages
+
+---
+
+## Option 4: Deploy Your Own
 
 Deploy your own instance using Supabase (database) and Netlify (hosting).
 
