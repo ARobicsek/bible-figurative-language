@@ -2,7 +2,9 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
-**LATEST ACHIEVEMENT (Oct 2, 2025)**: Fixed divine names modifier bug and added Eloah support. All non-sacred Hebrew text fields regenerated with corrected modifier.
+**LATEST ACHIEVEMENT (Oct 3, 2025)**: Fixed HTML entity highlighting bug affecting verses with `&thinsp;` entities. Psalms 84:4 and similar verses now highlight correctly.
+
+**PREVIOUS ACHIEVEMENT (Oct 2, 2025)**: Fixed divine names modifier bug and added Eloah support. All non-sacred Hebrew text fields regenerated with corrected modifier.
 
 **DEPLOYMENT SUCCESS (Oct 1, 2025)**: Tzafun is now publicly accessible at **https://tzafun.onrender.com** with 8,373 analyzed verses (Torah + Psalms) and 5,933 figurative language instances.
 
@@ -33,6 +35,93 @@ A concordance of figurative language in the bible
   - Fixed tooltip positioning to prevent off-screen display
 - **📊 Verse Loading**: Updated initial page load from 10 to 25 verses for better user experience
 - **🔧 Header Navigation**: Made "Tzafun" title clickable to return home from About page
+
+---
+
+## 🐛 HTML ENTITY HIGHLIGHTING FIX (Oct 3, 2025)
+
+### **Problem: Verses with HTML Entities Not Highlighting**
+
+Hebrew verses containing HTML entities like `&thinsp;` (thin space) were not being highlighted even though they had valid figurative language annotations:
+- ❌ Psalms 84:4: No highlighting despite having metaphor annotation
+- ❌ Other verses with `&thinsp;` entities were affected
+
+### **Root Cause**
+
+**File**: `web/biblical_figurative_interface.html`
+
+The regex pattern builder was processing the figurative text character-by-character, treating `&thinsp;` as 8 individual characters (`&`, `t`, `h`, `i`, `n`, `s`, `p`, `;`) instead of as a single HTML entity unit. This caused the regex to fail to match text containing these entities.
+
+**Specific Issue:**
+- Lines 2105-2120: The original code used a simple `for` loop that iterated through each character
+- When it encountered `&thinsp;`, it would escape the `&` character and try to match it, followed by escaping `t`, etc.
+- This broke the matching logic because the regex expected individual characters with optional diacritics between them, not a complete HTML entity
+
+### **Solution**
+
+**Enhanced the regex pattern builder to handle HTML entities as complete units:**
+
+1. **Main highlighting logic (lines 2092-2142):**
+   - Changed from simple `for` loop to `while` loop with index tracking
+   - Added entity detection: when encountering `&`, check if it starts a complete HTML entity using regex `/^&[a-zA-Z0-9#]+;/`
+   - If an HTML entity is found, escape it as a complete unit and add to the pattern
+   - Skip ahead by the entity length to avoid processing individual characters
+
+2. **Core text fallback logic (lines 2176-2207):**
+   - Applied the same fix to the "core text" matching fallback
+   - Ensures consistent behavior across all matching strategies
+
+### **Technical Details**
+
+**Before (broken):**
+```javascript
+for (let i = 0; i < figTextToUse.length; i++) {
+    const char = figTextToUse[i];
+    const escapedChar = char.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    flexiblePattern += escapedChar + '(?:...)*';
+}
+```
+This would turn `&thinsp;` into: `\&(?:...)* t(?:...)* h(?:...)* ...` (broken)
+
+**After (fixed):**
+```javascript
+while (i < trimmedFigText.length) {
+    if (trimmedFigText[i] === '&') {
+        const entityMatch = trimmedFigText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
+        if (entityMatch) {
+            const entity = entityMatch[0];
+            const escapedEntity = entity.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            flexiblePattern += escapedEntity + '(?:...)*';
+            i += entity.length;
+            continue;
+        }
+    }
+    // Regular character handling...
+}
+```
+This correctly treats `&thinsp;` as a single unit: `\&thinsp\;(?:...)*` (correct)
+
+### **Verification**
+
+Created verification scripts to test the fix:
+- `test_psalms_84_4.py` - Database validation showing figurative text matches verse text
+- `verify_fix.py` - Regex pattern testing confirming successful matching
+
+**Test Results:**
+- ✅ Psalms 84:4 metaphor now highlights correctly
+- ✅ HTML entity `&thinsp;` properly handled in regex pattern
+- ✅ Both sacred and non-sacred versions work correctly
+- ✅ Pattern successfully matches 110 characters of figurative text
+
+### **Files Modified**
+- `web/biblical_figurative_interface.html` (lines 2092-2142, 2176-2207) - Enhanced regex pattern builder
+- `test_psalms_84_4.py` - Database verification script
+- `verify_fix.py` - Regex pattern verification script
+
+### **Impact**
+- All verses with HTML entities (`&thinsp;`, `&nbsp;`, etc.) now highlight correctly
+- Improved robustness of highlighting system for edge cases
+- No performance impact - regex patterns are built once per annotation
 
 ---
 

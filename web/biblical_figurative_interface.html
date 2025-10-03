@@ -2089,25 +2089,39 @@
                             .replace(/\s+/g, ' ') // Normalize whitespace
                             .trim();
 
-                        // Also normalize the figurative text
+                        // Also normalize the figurative text (but keep HTML entities for pattern building)
                         const normalizedFigText = trimmedFigText
                             .normalize('NFD')  // Unicode normalization
                             .replace(/־/g, ' ') // CRITICAL: Replace maqaf BEFORE removing diacritics!
                             .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics (excluding U+05BE maqaf)
+                            .replace(/&[a-zA-Z0-9#]+;/g, ' ')  // Replace HTML entities with spaces for matching
                             .replace(/\s+/g, ' ')
                             .trim();
 
                         if (textWithoutHTML.includes(trimmedFigText) || textWithoutHTML.includes(normalizedFigText)) {
-                            // Found a match, now find the original text with HTML
-                            // Try with the version that matched
-                            const figTextToUse = textWithoutHTML.includes(trimmedFigText) ? trimmedFigText : normalizedFigText;
+                            // Found a match, now build regex from ORIGINAL trimmedFigText (which may contain &thinsp; etc)
+                            // We need to handle HTML entities as complete units
 
-                            // Build regex pattern character by character
-                            // For each character, allow diacritics/HTML between them
-                            // For spaces, match space OR hyphen (since we normalized hyphens to spaces)
+                            // Build regex pattern, handling HTML entities as units
                             let flexiblePattern = '';
-                            for (let i = 0; i < figTextToUse.length; i++) {
-                                const char = figTextToUse[i];
+                            let i = 0;
+                            while (i < trimmedFigText.length) {
+                                // Check if we're at the start of an HTML entity
+                                if (trimmedFigText[i] === '&') {
+                                    const entityMatch = trimmedFigText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
+                                    if (entityMatch) {
+                                        // Found complete HTML entity - escape it and add to pattern
+                                        const entity = entityMatch[0];
+                                        const escapedEntity = entity.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                                        // Entity can be followed by diacritics/HTML
+                                        flexiblePattern += escapedEntity + '(?:<br\\s*\\/??>|<[^>]*>|\\{[^}]*\\}|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4])*';
+                                        i += entity.length;
+                                        continue;
+                                    }
+                                }
+
+                                // Regular character handling
+                                const char = trimmedFigText[i];
                                 if (char === ' ') {
                                     // Space should match: space, hyphen, diacritics, HTML tags, entities
                                     flexiblePattern += '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4]|\\s)+';
@@ -2116,7 +2130,9 @@
                                     const escapedChar = char.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
                                     flexiblePattern += escapedChar + '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4])*';
                                 }
+                                i++;
                             }
+
                             const regex = new RegExp(flexiblePattern, 'g');
                             const match = highlightedText.match(regex);
 
@@ -2158,8 +2174,31 @@
                                     .replace(/\s+/g, ' ') // Normalize whitespace
                                     .trim();
                                 if (textWithoutHTML.includes(coreText)) {
-                                    const escapedCore = coreText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                                    const flexiblePattern = escapedCore.split('').join('(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4]|\\s)*');
+                                    // Build pattern handling HTML entities as units
+                                    let flexiblePattern = '';
+                                    let i = 0;
+                                    while (i < coreText.length) {
+                                        // Check for HTML entity
+                                        if (coreText[i] === '&') {
+                                            const entityMatch = coreText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
+                                            if (entityMatch) {
+                                                const entity = entityMatch[0];
+                                                const escapedEntity = entity.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                                                flexiblePattern += escapedEntity + '(?:<br\\s*\\/??>|<[^>]*>|\\{[^}]*\\}|[\\u0591-\\u05C7\\u05F0-\\u05F4])*';
+                                                i += entity.length;
+                                                continue;
+                                            }
+                                        }
+                                        // Regular character
+                                        const char = coreText[i];
+                                        const escapedChar = char.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                                        if (char === ' ') {
+                                            flexiblePattern += '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4]|\\s)+';
+                                        } else {
+                                            flexiblePattern += escapedChar + '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4])*';
+                                        }
+                                        i++;
+                                    }
                                     const regex = new RegExp(flexiblePattern, 'g');
                                     const match = highlightedText.match(regex);
                                     if (match) {
