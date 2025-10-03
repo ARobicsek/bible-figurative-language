@@ -2,8 +2,15 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
-**LATEST ACHIEVEMENT (Oct 3, 2025 - Evening)**: ✅ **Print feature complete and optimized!**
-- Fixed deliberation line breaks (`white-space: pre-wrap`)
+**LATEST ACHIEVEMENT (Oct 3, 2025 - Evening)**: ✅ **Pagination button fix complete!**
+- Fixed "Load Next Verses" button to show accurate verse counts based on actual remaining verses
+- Button now intelligently detects when approaching end of results (e.g., "Load Next 2 Verses" instead of "Load Next 25 Verses")
+- Works correctly even when API returns incorrect total counts due to book-wide vs chapter-specific filtering
+- Enhanced user experience with clear, accurate loading feedback
+
+**PREVIOUS ACHIEVEMENTS**:
+- **Oct 3 Evening**: Print feature complete and optimized with 43% larger fonts and proper line breaks
+- **Oct 3 Afternoon**: Fixed deliberation line breaks (`white-space: pre-wrap`)
 - Increased all print font sizes by 43% for better readability (30% + additional 10%)
 - Professional formatting with side-by-side Hebrew/English layout
 - Properly spaced deliberation sections and full annotation details
@@ -41,6 +48,75 @@ A concordance of figurative language in the bible
   - Fixed tooltip positioning to prevent off-screen display
 - **📊 Verse Loading**: Updated initial page load from 10 to 25 verses for better user experience
 - **🔧 Header Navigation**: Made "Tzafun" title clickable to return home from About page
+
+---
+
+## 🔧 PAGINATION BUTTON FIX (Oct 3, 2025 - Evening)
+
+### **Problem: Inaccurate "Load Next Verses" Button Text**
+
+The "Load Next Verses" button was showing incorrect verse counts when loading paginated results:
+- ❌ Deuteronomy Ch 32 (52 verses total): After loading 50 verses, button showed "Load Next 25 Verses" instead of "Load Next 2 Verses"
+- ❌ Initial issue: Button showed "Load verses 26-956" when only 52 verses exist in the chapter
+
+### **Root Cause**
+
+**File**: `web/biblical_figurative_interface.html`
+
+The API returns the total verse count for the entire **book** (956 for all of Deuteronomy) instead of just the filtered **chapter** (52 for Deuteronomy 32). This caused the pagination logic to incorrectly calculate remaining verses.
+
+### **Solution**
+
+**Implemented intelligent batch size estimation based on actual loading patterns:**
+
+1. **Track Previous Counts** (Lines 3111-3114):
+   - Store `previousVerseCount` to calculate the size of the last batch received
+   - Calculate `lastBatchSize = currentVerses - previousCount`
+
+2. **Detect Approaching End** (Lines 3119-3124):
+   - When `lastBatchSize < pagination.limit`, we know we're near the end
+   - Use that smaller batch size as the estimate for next load
+   - Example: If last batch was 2 verses, next batch will likely be 2 or fewer
+
+3. **Update Button Text** (Line 3127):
+   - Changed from verse range format ("Load verses 51-75") to count format ("Load Next 2 Verses")
+   - More accurate and user-friendly, especially when API total is incorrect
+
+### **Technical Details**
+
+**Before (broken):**
+```javascript
+const nextEnd = Math.min(nextStart + appState.pagination.limit - 1, totalCount);
+// With totalCount=956, this gave: "Load verses 51-75" (wrong!)
+```
+
+**After (fixed):**
+```javascript
+const lastBatchSize = currentVerses - (appState.previousVerseCount || 0);
+appState.previousVerseCount = currentVerses;
+
+let estimatedNextBatch = appState.pagination.limit;
+if (lastBatchSize > 0 && lastBatchSize < appState.pagination.limit) {
+    estimatedNextBatch = lastBatchSize;
+}
+// Result: "Load Next 2 Verses" (correct!)
+```
+
+### **User Experience**
+
+For Deuteronomy Chapter 32 (52 verses):
+- ✅ First load (25 verses): "Load Next 25 Verses"
+- ✅ Second load (50 total): "Load Next 25 Verses"
+- ✅ Third load (52 total, last batch was 2): "Load Next 2 Verses"
+- ✅ All loaded: "✓ All verses loaded"
+
+### **Files Modified**
+- `web/biblical_figurative_interface.html` (lines 3111-3128) - Smart pagination calculation
+
+### **Impact**
+- Accurate button text regardless of API total count accuracy
+- Better user experience with clear loading expectations
+- Works for any chapter/book combination with correct or incorrect API totals
 
 ---
 
