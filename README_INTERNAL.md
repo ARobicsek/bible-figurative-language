@@ -2,7 +2,11 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
-**LATEST ACHIEVEMENT (Oct 3, 2025 - Evening)**: Added comprehensive print feature with professional formatting, side-by-side Hebrew/English layout, and clean deliberation display.
+**LATEST ACHIEVEMENT (Oct 3, 2025 - Evening)**: ✅ **Print feature complete and optimized!**
+- Fixed deliberation line breaks (`white-space: pre-wrap`)
+- Increased all print font sizes by 43% for better readability (30% + additional 10%)
+- Professional formatting with side-by-side Hebrew/English layout
+- Properly spaced deliberation sections and full annotation details
 
 **PREVIOUS ACHIEVEMENTS**:
 - **Oct 3 Morning**: Fixed HTML entity highlighting bug affecting verses with `&thinsp;` entities. Psalms 84:4 and similar verses now highlight correctly.
@@ -101,47 +105,56 @@ Comprehensive `@media print` styles including:
 - Comprehensive print CSS with side-by-side layout
 - Filter summary generation
 - Hebrew/English text displayed at top in columns
+- ✅ **Deliberation line breaks now working** (fixed Oct 3, 2025 - Evening)
 - Footnote filtering (partial - some patterns still getting through)
 - Duplicate verse text hidden (only top version shows)
 - Annotation details with side-by-side phrase display
 
-❌ **Issues Remaining**:
-1. **Deliberation Line Breaks NOT Working** (PRIORITY)
-   - **Issue**: Deliberation items running together without spacing between sections
-   - **Expected**: Clear visual breaks between "Phrase/Concept:", "Considered:", and "Reasoning:" sections
-   - **Current Code**: Lines 2960-2968 add `<br><br>` before labels, CSS has 20px margin-bottom on `.deliberation-item`
-   - **Problem**: Line breaks not appearing in print output despite proper HTML structure
-   - **Screenshot Evidence**: User provided screenshot showing text running together vs UI showing proper spacing
-   - **Next Step**: Debug why `<br>` tags and CSS margins aren't creating visual spacing in print
+✅ **Critical Issues Resolved**:
+1. **Deliberation Line Breaks FIXED** (Oct 3, 2025 - Evening)
+   - **Issue**: Deliberation items running together without spacing between sections in some verses (e.g., Gen 1:1)
+   - **Root Cause**: Print CSS was missing `white-space: pre-wrap;` property that UI CSS had (line 555)
+   - **Solution**: Added `white-space: pre-wrap;` to `.print-deliberation .deliberation-content` (Line 1000)
+   - **Result**: Print output now preserves line breaks and spacing just like UI display
+   - **Works for**: All verses including Gen 1:1, Psalms 84:1, and others
 
-2. **Footnote Filtering Incomplete** (LOWER PRIORITY - SKIPPED FOR NOW)
+❌ **Known Minor Issues** (LOWER PRIORITY):
+1. **Footnote Filtering Incomplete** (SKIPPED FOR NOW)
    - **Issue**: Some footnote patterns still visible in English text
    - **Example**: Gen 4:1 shows ", often in a sexual sense." and other explanatory text
    - **Current Filter**: Catches quoted footnotes and some comma-separated patterns
-   - **Next Step**: Enhance regex patterns to catch more edge cases
+   - **Next Step**: Enhance regex patterns to catch more edge cases (if needed in future)
 
 ### **Files Modified**
 - `web/biblical_figurative_interface.html`:
   - Lines 854-856: Print link in header
   - Lines 843-1135: Print CSS styles
+  - Lines 1000: **FIX #1** - Added `white-space: pre-wrap;` to `.print-deliberation .deliberation-content`
+  - Lines 877-1101: **FIX #2 & #3** - Increased all print font sizes by 43% total (30% + 10%) for readability:
+    - Headers: 34pt/23pt (was 24pt/16pt)
+    - Verse headers: 20pt (was 14pt)
+    - Body text: 15pt (was 11pt)
+    - Deliberation: 18pt heading, 14pt content (was 12pt/10pt)
+    - Annotations: 15pt phrases, 14pt details (was 11pt/10pt)
+    - Model badge: 13pt (was 9pt)
   - Lines 1451-1465: Footnote removal function
   - Lines 1467-1736: Print JavaScript functions
   - Lines 2274: Footnote filtering application
-  - Lines 2960-2968: Deliberation formatting enhancement (NOT WORKING YET)
+  - Lines 2960-2968: Deliberation formatting enhancement
 
-### **Next Session Priorities**
+### **Print Feature Now Complete and Optimized**
 
-1. **FIX DELIBERATION LINE BREAKS** (CRITICAL)
-   - Debug why `<br><br>` tags aren't creating spacing in print
-   - Verify `formatDeliberationText()` is being called correctly
-   - Check if CSS `.deliberation-item` margin is being applied
-   - Test with different approaches: `<p>` tags instead of `<br>`, `display: block` on labels, etc.
-   - Compare print HTML output vs screen HTML output to identify differences
+✅ All critical print features working correctly:
+- Professional page layout with header and filter summary
+- Side-by-side Hebrew/English text columns
+- Properly formatted deliberation with line breaks
+- **43% larger, highly readable fonts throughout**
+- Complete annotation details
+- Color-preserved highlighting and type indicators
+- Sacred/Traditional Jewish text selection support
 
-2. **Improve Footnote Filtering** (if time permits)
-   - Enhance regex to catch ", often in..." patterns
-   - Handle nested footnotes with multiple quoted sections
-   - Test with problematic verses: Gen 4:1, Gen 5:29
+**Optional Future Enhancement**:
+- Improve footnote filtering to catch additional edge case patterns (Gen 4:1, etc.)
 
 ### **Testing Recommendations**
 - Test print with various filter combinations
