@@ -114,9 +114,11 @@ class HebrewDivineNamesModifier:
             self.logger.debug("Elohim (unvoweled) modified: אלהים → אלקים")
 
         # Pattern 2: Voweled Elohim patterns with cantillation marks
-        # Must have: א + hataf segol + ל + holam + ה + hiriq + (ם|ים|יך etc.)
-        # The key vowels (hataf segol, holam, hiriq) MUST be present for Elohim
-        elohim_pattern = r'א[\u0591-\u05C7]*[ֱ][\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִ][\u0591-\u05C7]*[םיּךֶ]'
+        # Must have: א + hataf segol + ל + holam + ה + any vowel + suffix
+        # Covers: אֱלֹהִים (Elohim), אֱלֹהֶיךָ (Elohekha), אֱלֹהֵיכֶם (Eloheikhem),
+        #         אֱלֹהַי (Elohai - my God), אֱלֹהָיו (Elohav - his God), etc.
+        # Vowels include: hiriq (ִ), tzere (ֵ), segol (ֶ), patah (ַ), qamatz (ָ)
+        elohim_pattern = r'א[\u0591-\u05C7]*[ֱ][\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶַָ][\u0591-\u05C7]*[םיּךֶָו]'
         def elohim_replacer(match):
             return match.group().replace('ה', 'ק')
 
@@ -126,12 +128,22 @@ class HebrewDivineNamesModifier:
             modified = new_modified
 
         # Pattern 3: With definite article הָאֱלֹהִים (with cantillation marks)
-        # Must have: ה + vowel + א + hataf segol + ל + holam + ה + hiriq + ים
-        # This ensures we match the actual word Elohim, not just any word starting with ה + א
-        ha_elohim_pattern = r'ה[\u0591-\u05C7]*[ָ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*[ֱ][\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִ][\u0591-\u05C7]*[םיּ]'
+        # Must have: ה + vowel + א + hataf segol + ל + holam + ה + any vowel + suffix
+        # Covers forms with definite article
+        ha_elohim_pattern = r'ה[\u0591-\u05C7]*[ָ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*[ֱ][\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶַָ][\u0591-\u05C7]*[םיּךֶָו]'
         new_modified = re.sub(ha_elohim_pattern, elohim_replacer, modified)
         if new_modified != modified:
             self.logger.debug(f"Ha-Elohim modified")
+            modified = new_modified
+
+        # Pattern 4: Construct form with vav-holam: אֱלוֹהֵי (Elohei - "God of")
+        # This is a variant spelling where the 'o' is spelled with vav-holam instead of just holam
+        # Example: אֱלוֹהֵ֥י יִשְׁעִֽי (Elohei yish'i - "God of my salvation", Psalms 18:47)
+        # Pattern: א + hataf segol + ל + vav + holam + ה + vowel
+        elohei_construct_pattern = r'א[\u0591-\u05C7]*[ֱ][\u0591-\u05C7]*ל[\u0591-\u05C7]*ו[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶַָ]'
+        new_modified = re.sub(elohei_construct_pattern, elohim_replacer, modified)
+        if new_modified != modified:
+            self.logger.debug(f"Elohim construct (vav-holam) modified")
             modified = new_modified
 
         return modified
