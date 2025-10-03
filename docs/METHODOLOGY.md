@@ -180,6 +180,214 @@ All changes are documented in the validation reasoning fields.
 
 ---
 
+## Complete AI Prompts
+
+For full transparency and reproducibility, the complete prompts used for both detection and validation stages are provided below.
+
+### Stage 1: Detection Prompt (Classifier)
+
+The detection system uses context-aware prompts that vary based on the type of biblical text being analyzed. All prompts follow this structure:
+
+**Base Prompt Template:**
+```
+You are a biblical Hebrew scholar analyzing this text for figurative language.
+
+Hebrew: [Hebrew text]
+English: [English text]
+
+[Context-specific rules - see below]
+
+**FIRST, provide your deliberation in a DELIBERATION section:**
+
+DELIBERATION:
+[You MUST briefly analyze EVERY potential figurative element in this verse. For each phrase/concept, explain *briefly*:
+- What you considered (e.g., "considered if 'X' might be metaphor, metonymy, etc"). Note that synechdoche is a type of metonymy.
+- Your reasoning for including/excluding it (e.g., "this is not metaphor, metonymy, etc because...")
+- Any borderline cases you debated
+- Your thinking about the TARGET of the figurative speech (this is the core subject of the figurative language. It's the literal person, object, action or concept being described), the VEHICLE (This is the image or idea used to convey something about the target. It's the "what it's like" part of the comparison) and the GROUND (This is the underlying characteristic of the target that the figurative language is intended to describe. The vehicle tells you that target is [ground]).
+Be explicit about what you examined and why you made each decision.
+IMPORTANT: Include ALL phrases you marked as figurative in the JSON AND explain your reasoning for including them here.]
+
+**THEN provide JSON OUTPUT (only if genuinely figurative):**
+
+**TARGET/VEHICLE/GROUND CLASSIFICATION GUIDE:**
+- **TARGET** = WHO/WHAT the figurative speech is ABOUT (the subject being described, e.g. "follow these laws with all your heart and soul" --> target_level_1="Social Group", target_specific="The Israelites")
+- **VEHICLE** = WHAT the target is being LIKENED TO (the comparison/image used, e.g. "do not deviate right or left" --> vehicle_level_1 = "spatial", vehicle_specific = "directions")
+- **GROUND** = WHAT QUALITY of the target is being described (the quality of the target that the vehicle sheds light on, e.g. "I carried you on eagle's wings" --> ground_level_1 = "physical quality", ground_specific = "with comfort and safety")
+
+Example: "Judah is a lion" → TARGET (i.e. who the metaphor is about): target_level_1 = Specific person, target_specific = Judah; VEHICLE (i.e. what Judah is likened to): vehicle_level_1=natural world, vehicle_specific =lion; GROUND (i.e. this figurative speech tells us that the target has [x] quality): ground_level_1=physical quality, ground_specific=strength
+
+[{"figurative_language": "yes/no", "simile": "yes/no", "metaphor": "yes/no", "personification": "yes/no", "idiom": "yes/no", "hyperbole": "yes/no", "metonymy": "yes/no", "other": "yes/no", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "target_level_1": "God/social group/action/geographical or political entity/natural world/created objects/specific person/time/state of being/legal, religious or moral concept/other", "target_specific": "specific target", "vehicle_level_1": "natural world/human parts/human action/relationships/spatial/the ancient workplace/warfare/wordplay/abstract/other", "vehicle_specific": "specific vehicle", "ground_level_1": "moral quality/physical quality/psychological quality/status/essential nature or identity/other", "ground_specific": "specific ground", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
+You **must** use **one of categories specified above** for target_level_1, vehicle_level_1, and ground_level_1.
+
+IMPORTANT: Mark each type field as "yes" or "no". A phrase can be multiple types (e.g., both metaphor and idiom). Set figurative_language to "yes" if ANY figurative language is detected.
+
+If no figurative language found: []
+
+Analysis:
+```
+
+**Context-Specific Rules:**
+
+The system adjusts its detection sensitivity based on the biblical text type:
+
+**1. Creation Narrative (Genesis 1-3) - Ultra Conservative:**
+```
+🚨 **CREATION NARRATIVE - ULTRA CONSERVATIVE** 🚨
+
+**NEVER MARK AS FIGURATIVE:**
+• "unformed and void", "darkness over surface" = LITERAL primordial descriptions
+• "lights for signs", "earth brought forth" = LITERAL creation functions
+• Divine actions: spoke, blessed, created, made, saw = STANDARD creation verbs
+• "breath of life", "living being" = TECHNICAL theological terms
+• Geographic descriptions, procedural language
+
+**ONLY MARK IF ABSOLUTELY CLEAR:**
+• Obvious cross-domain metaphors
+```
+
+**2. Poetic Blessing Texts - Balanced Detection:**
+```
+📜 **POETIC BLESSING TEXT - BALANCED DETECTION** 📜
+
+**MARK AS FIGURATIVE:**
+• Tribal characterizations using animals: "lion", "wolf", "serpent", "eagle"
+• Cross-domain comparisons: "unstable as water", "like a hind let loose"
+• Clear metaphorical relationships between people and nature/animals
+
+**BE CONSERVATIVE WITH:**
+• Standard genealogical language
+• Geographic references
+• Historical statements
+• Divine anthropomorphisms (e.g. God went, God was angry, God watched, God fought) - these are LITERAL in the ANE context unless they refer to God's body (God's finger).
+
+**LOOK FOR:**
+• Animal metaphors for human characteristics
+• Nature imagery for human qualities
+```
+
+**3. Legal/Ceremonial Texts - Moderate Conservative:**
+```
+⚖️ **LEGAL/CEREMONIAL TEXT - MODERATE CONSERVATIVE** ⚖️
+
+**NEVER MARK AS FIGURATIVE:**
+• Technical religious terms: holy, clean, offering, covenant
+• Procedural instructions and ritual descriptions
+• Legal formulations and standard phrases
+• Divine anthropomorphisms (e.g. God went, God was angry, God watched, God fought) - these are LITERAL in the ANE context unless they refer to God's body (God's finger).
+
+**MARK AS FIGURATIVE:**
+• Clear cross-domain metaphors
+• Obvious similes with "like/as" for unlike things
+```
+
+**4. Narrative Texts - Standard Conservative:**
+```
+📖 **NARRATIVE TEXT - STANDARD CONSERVATIVE** 📖
+
+**BE CONSERVATIVE WITH:**
+• Standard narrative language
+• Character actions and dialogue
+• Historical and genealogical information
+• Divine anthropomorphisms (e.g. God went, God was angry, God watched, God fought) - these are LITERAL in the ANE context unless they refer to God's body (God's finger).
+• Biblical idioms and set phrases (e.g. לְפִי־חָֽרֶב, פִֽי־יְהֹוָ֖ה, פְּנ֥י הָאֲדָמָֽה) - these are IDIOMS; classify figurative idioms as "idiom" type.
+
+**NEVER MARK AS FIGURATIVE:**
+• Comparisons of role or function, such as 'a prophet like myself' (כָּמֹנִי) or 'a prophet like yourself' (כָּמוֹךָ). These are literal statements of equivalence or similarity in function, not figurative similes.
+• Proportional or behavioral comparisons, such as 'according to the blessing' or 'like all his fellow Levites'.
+
+**MARK AS FIGURATIVE:**
+• Clear metaphors with cross-domain comparisons
+• Personification of non-human entities
+• Obvious similes
+```
+
+### Stage 2: Validation Prompt (Validator)
+
+After the initial detection, all detected instances are validated in bulk with a single API call per verse:
+
+```
+You are a biblical Hebrew scholar validating a list of detected figurative language instances from a single verse.
+
+CONTEXT:
+Hebrew: [Hebrew text]
+English: [English text]
+
+DETECTED INSTANCES:
+```json
+[
+  {
+    "instance_id": 1,
+    "english_text": "[detected phrase]",
+    "explanation": "[initial explanation]",
+    "types": ["metaphor", "idiom"]
+  },
+  ...
+]
+```
+
+TASK:
+Review each instance in the JSON array above. For each instance, validate each of the detected `types`. For each type, you must provide a validation decision.
+
+RESPONSE FORMAT:
+You MUST return a valid JSON array of validation objects inside a JSON code block. Each object in the array must contain:
+1.  `instance_id`: The ID of the instance you are validating.
+2.  `validation_results`: An object where keys are the original figurative types (e.g., "metaphor", "idiom") and values are validation objects with the fields: `decision` (must be "VALID", "INVALID", or "RECLASSIFIED"), `reason` (a brief explanation), and, if reclassifying, `reclassified_type`.
+
+EXAMPLE OUTPUT:
+```json
+[
+  {
+    "instance_id": 1,
+    "validation_results": {
+      "metaphor": {
+        "decision": "VALID",
+        "reason": "This is a valid metaphor because it compares an abstract concept to a concrete object."
+      },
+      "idiom": {
+        "decision": "RECLASSIFIED",
+        "reason": "This is not an idiom, but rather a simile because of the use of 'like'.",
+        "reclassified_type": "simile"
+      }
+    }
+  },
+  {
+    "instance_id": 2,
+    "validation_results": {
+      "hyperbole": {
+        "decision": "INVALID",
+        "reason": "This is a literal statement, not an exaggeration."
+      }
+    }
+  }
+]
+```
+
+Provide your validation output below.
+
+VALIDATION:
+```
+
+**Model Configuration:**
+
+**Detection Stage (Gemini 2.5 Flash):**
+- Temperature: 0.15 (slightly higher for better detection)
+- Top-p: 0.8
+- Top-k: 25
+- Max output tokens: 15,000
+
+**Validation Stage (Gemini 2.5 Flash):**
+- Temperature: 0.05 (very low for consistency)
+- Top-p: 0.7
+- Top-k: 20
+- Max output tokens: 15,000
+
+**Fallback Models:**
+- If Gemini 2.5 Flash fails → Gemini 2.5 Pro
+- If both Gemini models fail → Claude Sonnet 4
+
+---
+
 ## Transparency and Reproducibility
 
 ### Complete Deliberation Records
