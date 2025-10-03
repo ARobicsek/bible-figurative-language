@@ -3108,11 +3108,23 @@
             const totalCount = appState.pagination.total;
             const totalFigurativeInstances = appState.pagination.total_figurative_instances || 0;
 
-            const remainingVerses = Math.max(0, totalCount - currentVerses);
-            const nextStart = currentVerses + 1;
-            const nextEnd = Math.min(nextStart + appState.pagination.limit - 1, totalCount);
-            const nextButton = (appState.pagination.hasMore && remainingVerses > 0) ?
-                `<button class="nav-button" onclick="loadMore()">Load verses ${nextStart}-${nextEnd}</button>` :
+            // Track the previous count to determine last batch size
+            const previousCount = appState.previousVerseCount || 0;
+            const lastBatchSize = currentVerses - previousCount;
+            appState.previousVerseCount = currentVerses;
+
+            // Estimate next batch size
+            let estimatedNextBatch = appState.pagination.limit;
+
+            // If the last batch was smaller than the limit, it means we're approaching the end
+            // The next batch will be even smaller or non-existent
+            if (lastBatchSize > 0 && lastBatchSize < appState.pagination.limit) {
+                // Assume similar or smaller batch next time
+                estimatedNextBatch = lastBatchSize;
+            }
+
+            const nextButton = appState.pagination.hasMore ?
+                `<button class="nav-button" onclick="loadMore()">Load Next ${estimatedNextBatch} Verses</button>` :
                 '<span style="color: #28a745; font-weight: 600;">✓ All verses loaded</span>';
 
             // Check if we're showing an estimate
