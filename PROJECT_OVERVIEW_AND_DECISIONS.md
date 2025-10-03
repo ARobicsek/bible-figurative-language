@@ -558,9 +558,92 @@ The combination of rigorous methodology, cultural sensitivity, and accessibility
 ---
 
 **Document Version:** 2.0 (October 1, 2025)
-**Status:** All decisions implemented - Ready for public release
+**Status:** All decisions implemented - Repository cleanup needed before making public
 **Updates:**
 - All 4 major decisions implemented (licensing, repository name, attribution, architecture)
 - Production deployment complete on Render.com
 - Public-facing documentation created (README, licenses, citation file)
-- Repository ready to be made public
+
+---
+
+## ⚠️ REPOSITORY CLEANUP NEEDED BEFORE GOING PUBLIC
+
+The repository is currently **private** at https://github.com/ARobicsek/bible-figurative-language
+
+Before making it public, the following files should be removed (internal development notes):
+
+### Files to Remove:
+1. **HEBREW_HIGHLIGHTING_DEBUG.md** - Debug notes from development
+2. **NEXT_SESSION_HANDOFF.md** - Session handoff notes
+3. **NEXT_SESSION_PROMPT.md** - Session planning notes
+4. **EXECUTION_CHECKLIST_NEXT_SESSION.md** - Development checklist
+5. **PERFORMANCE_OPTIMIZATION_SUMMARY.md** - Internal optimization notes (optional - could keep)
+6. **.claude/settings.local.json** - Personal Claude Code settings
+
+### Files to Keep (Good for Public):
+- ✅ `README.md` - Public-facing documentation
+- ✅ `README_INTERNAL.md` - Development history (useful for contributors)
+- ✅ `PROJECT_OVERVIEW_AND_DECISIONS.md` - Strategic overview (this file)
+- ✅ `LICENSE-CODE.txt` / `LICENSE-DATA.txt` - Licensing
+- ✅ `CITATION.cff` - Academic citation
+- ✅ `private/` folder - Analysis pipeline (properly organized)
+- ✅ `web/` folder - Production interface
+- ✅ `database/` folder - Database files
+
+### Steps to Complete:
+1. Remove the files listed above
+2. Add them to `.gitignore` to prevent future inclusion
+3. Commit the cleanup
+4. Make repository public via GitHub Settings → Danger Zone → Change visibility → Make public
+5. Update About page in web interface to link to public repository
+
+---
+
+## 📝 Development Log
+
+### Session 2025-10-02: UI Improvements & Divine Names Bug Fix (Partial)
+
+#### ✅ Completed
+1. **Improved Figurative Detection Deliberation Display**
+   - Added CSS styling for professional formatting with numbered lists, bold/italic text
+   - Created `formatDeliberationText()` function to parse markdown-style formatting
+   - Deliberation now displays cleanly instead of raw text
+
+2. **Consolidated Text Version Controls**
+   - Replaced separate Hebrew/English radio buttons with single "Text Version" control
+   - Updated state management to use unified `textVersion` variable
+   - Both Hebrew and English texts now switch together consistently
+
+3. **Added Divine Names Support for Deliberation**
+   - Database: Added `figurative_detection_deliberation_non_sacred` column to verses table
+   - Processing: Modified `interactive_parallel_processor.py` to generate non-sacred deliberation
+   - API: Updated all SQL queries to return both deliberation versions
+   - Frontend: Added `updateDeliberationDisplay()` to swap based on text version
+   - **Regenerated**: All 8,368 verses with corrected non-sacred deliberation
+
+4. **Fixed Divine Names Modifier (Code Only)**
+   - File: `private/src/hebrew_figurative_db/text_extraction/hebrew_divine_names_modifier.py`
+   - Fixed Pattern 2 (line 113): Made Elohim vowels required instead of optional
+   - Fixed Pattern 3 (line 124): Tightened definite article + Elohim pattern
+   - Created test suite (`test_divine_modifier.py`) to verify fix
+   - **Issue**: Regex was matching non-divine words like `הָאִשָּׁה` (the woman) and `הַנָּחָשׁ` (the serpent)
+   - **Solution**: Required specific vowel patterns (hataf segol, holam, hiriq) for Elohim
+
+#### ⚠️ Known Issues - CRITICAL BUG
+**Divine names modifier fix not applied to Hebrew text in database**
+- The code fix for the divine names modifier is complete and working
+- However, the `hebrew_text_non_sacred` column in the database still contains OLD buggy data
+- Also affects: `figurative_text_in_hebrew_non_sacred` in figurative_language table
+- **Symptom**: Genesis 3:14 shows `קַנָּחָשׁ` instead of `הַנָּחָשׁ` (serpent incorrectly modified)
+- **Next Step**: Regenerate all Hebrew non-sacred text using the fixed modifier
+- **See**: `NEXT_SESSION_PROMPT.md` for detailed fix instructions
+
+#### Files Modified
+- `web/biblical_figurative_interface.html` - UI improvements and text version control
+- `private/src/hebrew_figurative_db/text_extraction/hebrew_divine_names_modifier.py` - Fixed regex patterns
+- `private/src/hebrew_figurative_db/database/db_manager.py` - Added deliberation_non_sacred column
+- `private/interactive_parallel_processor.py` - Generate non-sacred deliberation
+- `web/api_server.py` - Return both deliberation versions
+- `database/Pentateuch_Psalms_fig_language.db` - Schema update + deliberation regeneration
+
+**Status:** User wants to handle other items first before cleanup

@@ -550,6 +550,39 @@
             margin-bottom: 0.5rem;
         }
 
+        #deliberation-text {
+            line-height: 1.8;
+            white-space: pre-wrap;
+            font-size: 0.95rem;
+        }
+
+        #deliberation-text .deliberation-item {
+            margin-bottom: 1.2rem;
+            padding-left: 1.5rem;
+            text-indent: -1.5rem;
+        }
+
+        #deliberation-text .deliberation-number {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-right: 0.5rem;
+        }
+
+        #deliberation-text .deliberation-bold {
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        #deliberation-text .deliberation-italic {
+            font-style: italic;
+            color: #555;
+        }
+
+        #deliberation-text .deliberation-label {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
         .model-badge {
             display: inline-block;
             background-color: #e9ecef;
@@ -913,15 +946,9 @@
                 <h3 class="tooltip">Text Version
                     <span class="tooltiptext">See About section for details</span>
                 </h3>
-                <div style="margin-bottom: 1rem;">
-                    <strong>Hebrew:</strong><br>
-                    <label><input type="radio" name="hebrew-version" value="sacred" checked> Sacred Names</label>
-                    <label><input type="radio" name="hebrew-version" value="non-sacred"> Traditional Jewish</label>
-                </div>
                 <div>
-                    <strong>English:</strong><br>
-                    <label><input type="radio" name="english-version" value="sacred" checked> Sacred Names</label>
-                    <label><input type="radio" name="english-version" value="non-sacred"> Traditional Jewish</label>
+                    <label><input type="radio" name="text-version" value="sacred" checked> Sacred Names</label>
+                    <label><input type="radio" name="text-version" value="non-sacred"> Traditional Jewish</label>
                 </div>
             </section>
 
@@ -1089,8 +1116,7 @@
             filteredVerses: [],
             selectedTypes: new Set(['metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']),
             showNotFigurative: false,
-            hebrewVersion: 'sacred',
-            englishVersion: 'sacred',
+            textVersion: 'sacred', // 'sacred' or 'non-sacred' - applies to all text fields
             searchType: 'english', // 'hebrew' or 'english'
             currentSearch: {
                 text: '',
@@ -1167,17 +1193,15 @@
             });
 
             // Text version radio buttons
-            document.querySelectorAll('input[name="hebrew-version"]').forEach(radio => {
+            document.querySelectorAll('input[name="text-version"]').forEach(radio => {
                 radio.addEventListener('change', function() {
-                    appState.hebrewVersion = this.value;
+                    appState.textVersion = this.value;
                     renderVerses();
-                });
-            });
-
-            document.querySelectorAll('input[name="english-version"]').forEach(radio => {
-                radio.addEventListener('change', function() {
-                    appState.englishVersion = this.value;
-                    renderVerses();
+                    // Update deliberation text if a verse is currently shown
+                    const currentVerse = appState.verses.find(v => v.reference === elements.selectedVerse.textContent);
+                    if (currentVerse) {
+                        updateDeliberationDisplay(currentVerse);
+                    }
                 });
             });
 
@@ -1702,7 +1726,7 @@
 
             const versesHTML = appState.filteredVerses.map(verse => {
 
-                let hebrewText = cleanHebrewText(appState.hebrewVersion === 'sacred' ? verse.hebrew_text : verse.hebrew_text_non_sacred);
+                let hebrewText = cleanHebrewText(appState.textVersion === 'sacred' ? verse.hebrew_text : verse.hebrew_text_non_sacred);
 
 
                 // If Hebrew text is empty after cleaning (heavily contaminated), try the stripped version
@@ -1715,7 +1739,7 @@
                     hebrewText = '[Hebrew text unavailable - contaminated data]';
                 }
 
-                const englishText = appState.englishVersion === 'sacred' ? verse.english_text_clean : verse.english_text_clean_non_sacred;
+                const englishText = appState.textVersion === 'sacred' ? verse.english_text_clean : verse.english_text_clean_non_sacred;
 
                 // Add verse information to each annotation for synchronization
                 const annotationsWithVerseInfo = verse.annotations.map(annotation => ({
@@ -1822,7 +1846,7 @@
 
             // Simple helper to handle divine name differences for English non-sacred text
             function handleDivineNameVariations(figText, verseText, lang) {
-                if (lang === 'english' && appState.englishVersion === 'non-sacred') {
+                if (lang === 'english' && appState.textVersion === 'non-sacred') {
                     // For English non-sacred, figurative_text might have יהוה but english_text_non_sacred has ה׳
                     return figText.replace(/יהוה/g, 'ה׳');
                 }
@@ -1846,7 +1870,7 @@
             // Filter annotations to only those that match the language and have visible types
             const relevantAnnotations = annotations.filter(annotation => {
                 const rawFigurativeText = language === 'hebrew' ?
-                    (appState.hebrewVersion === 'sacred' ? annotation.figurative_text_in_hebrew : annotation.figurative_text_in_hebrew_non_sacred) :
+                    (appState.textVersion === 'sacred' ? annotation.figurative_text_in_hebrew : annotation.figurative_text_in_hebrew_non_sacred) :
                     annotation.figurative_text;
                 const figurativeText = language === 'hebrew' ? cleanHebrewText(rawFigurativeText) : rawFigurativeText;
 
@@ -1960,10 +1984,10 @@
             if (text.includes('רֵיחַ') || text.includes('נִיחֹחַ') || text.includes('ליהוה') || text.includes('ליה') || verseRef.includes('Leviticus 1:1')) {
                 console.log(`[${verseRef}] *** Debugging divine name phrase ***`);
                 console.log(`[${verseRef}] Text:`, text);
-                console.log(`[${verseRef}] Hebrew version:`, appState.hebrewVersion);
+                console.log(`[${verseRef}] Hebrew version:`, appState.textVersion);
                 annotations.forEach((ann, i) => {
                     const figText = language === 'hebrew' ?
-                        (appState.hebrewVersion === 'sacred' ? ann.figurative_text_in_hebrew : ann.figurative_text_in_hebrew_non_sacred) :
+                        (appState.textVersion === 'sacred' ? ann.figurative_text_in_hebrew : ann.figurative_text_in_hebrew_non_sacred) :
                         ann.figurative_text;
                     console.log(`[${verseRef}] Annotation ${i+1}: "${figText}"`);
                     console.log(`[${verseRef}] Match test: ${text.includes(figText || '')}`);
@@ -2004,10 +2028,10 @@
             // Sort by length (longest first) to avoid replacement conflicts
             relevantAnnotations.sort((a, b) => {
                 const rawTextA = language === 'hebrew' ?
-                    (appState.hebrewVersion === 'sacred' ? a.figurative_text_in_hebrew : a.figurative_text_in_hebrew_non_sacred) :
+                    (appState.textVersion === 'sacred' ? a.figurative_text_in_hebrew : a.figurative_text_in_hebrew_non_sacred) :
                     a.figurative_text;
                 const rawTextB = language === 'hebrew' ?
-                    (appState.hebrewVersion === 'sacred' ? b.figurative_text_in_hebrew : b.figurative_text_in_hebrew_non_sacred) :
+                    (appState.textVersion === 'sacred' ? b.figurative_text_in_hebrew : b.figurative_text_in_hebrew_non_sacred) :
                     b.figurative_text;
                 const textA = language === 'hebrew' ? cleanHebrewText(rawTextA) : rawTextA;
                 const textB = language === 'hebrew' ? cleanHebrewText(rawTextB) : rawTextB;
@@ -2016,7 +2040,7 @@
 
             relevantAnnotations.forEach((annotation, annIndex) => {
                 const rawFigurativeText = language === 'hebrew' ?
-                    (appState.hebrewVersion === 'sacred' ? annotation.figurative_text_in_hebrew : annotation.figurative_text_in_hebrew_non_sacred) :
+                    (appState.textVersion === 'sacred' ? annotation.figurative_text_in_hebrew : annotation.figurative_text_in_hebrew_non_sacred) :
                     annotation.figurative_text;
                 const figurativeText = language === 'hebrew' ? cleanHebrewText(rawFigurativeText) : rawFigurativeText;
 
@@ -2107,7 +2131,7 @@
                             matchedText = trimmedFigText;
                         }
                         // Try divine name variation for non-sacred version
-                        else if (appState.englishVersion === 'non-sacred') {
+                        else if (appState.textVersion === 'non-sacred') {
                             const adjustedFigText = trimmedFigText.replace(/יהוה/g, 'ה׳');
                             if (highlightedText.includes(adjustedFigText)) {
                                 matchedText = adjustedFigText;
@@ -2279,12 +2303,57 @@
             return highlightedText;
         }
 
+        function updateDeliberationDisplay(verse) {
+            if (!verse) return;
+
+            const deliberation = appState.textVersion === 'sacred'
+                ? verse.figurative_detection_deliberation
+                : verse.figurative_detection_deliberation_non_sacred;
+
+            elements.deliberationText.innerHTML = formatDeliberationText(deliberation);
+        }
+
+        function formatDeliberationText(text) {
+            if (!text) return '';
+
+            // Convert markdown-style formatting to HTML
+            let formatted = text;
+
+            // Replace **bold** with spans
+            formatted = formatted.replace(/\*\*([^*]+)\*\*/g, '<span class="deliberation-bold">$1</span>');
+
+            // Replace *italic* with spans (but not part of **)
+            formatted = formatted.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<span class="deliberation-italic">$1</span>');
+
+            // Replace common labels with styled versions
+            formatted = formatted.replace(/\*\*Phrase\/Concept:\*\*/g, '<span class="deliberation-label">Phrase/Concept:</span>');
+            formatted = formatted.replace(/\*\*Considered:\*\*/g, '<span class="deliberation-label">Considered:</span>');
+            formatted = formatted.replace(/\*\*Reasoning for (including|excluding):\*\*/g, '<span class="deliberation-label">Reasoning for $1:</span>');
+
+            // Split into numbered items
+            const lines = formatted.split(/(?=\d+\.\s+\*\*)/);
+
+            if (lines.length > 1) {
+                // Has numbered items - format them
+                return lines.map(line => {
+                    const match = line.match(/^(\d+)\.\s+(.+)$/s);
+                    if (match) {
+                        const [, num, content] = match;
+                        return `<div class="deliberation-item"><span class="deliberation-number">${num}.</span>${content.trim()}</div>`;
+                    }
+                    return line.trim() ? `<div>${line.trim()}</div>` : '';
+                }).filter(Boolean).join('');
+            }
+
+            return formatted;
+        }
+
         function showVerseDetails(reference, verseId) {
             const verse = appState.verses.find(v => v.id === verseId);
             if (!verse) return;
 
             elements.selectedVerse.textContent = reference;
-            elements.deliberationText.textContent = verse.figurative_detection_deliberation;
+            updateDeliberationDisplay(verse);
             elements.modelUsed.textContent = verse.model_used;
 
             // Clear any previous annotation details when showing verse details
@@ -2313,7 +2382,7 @@
 
                 // Update verse deliberation
                 elements.selectedVerse.textContent = verse.reference;
-                elements.deliberationText.textContent = verse.figurative_detection_deliberation || '';
+                updateDeliberationDisplay(verse);
                 elements.modelUsed.textContent = verse.model_used || 'Unknown';
             }
 

@@ -40,6 +40,9 @@ class HebrewDivineNamesModifier:
         # 5. Tzevaot: צְבָאוֹת → צְבָקוֹת
         modified_text = self._modify_tzevaot(modified_text)
 
+        # 6. Eloah: אֱלוֹהַּ → אֱלוֹקַּ
+        modified_text = self._modify_eloah(modified_text)
+
         # Log if text changed
         if modified_text != hebrew_text:
             self.logger.debug(f"Divine names modified: '{hebrew_text}' → '{modified_text}'")
@@ -72,6 +75,9 @@ class HebrewDivineNamesModifier:
 
         # 5. Tzevaot: צְבָאוֹת → צְבָקוֹת
         modified_text = self._modify_tzevaot(modified_text)
+
+        # 6. Eloah: אֱלוֹהַּ → אֱלוֹקַּ
+        modified_text = self._modify_eloah(modified_text)
 
         # Log if text changed
         if modified_text != english_text:
@@ -108,8 +114,9 @@ class HebrewDivineNamesModifier:
             self.logger.debug("Elohim (unvoweled) modified: אלהים → אלקים")
 
         # Pattern 2: Voweled Elohim patterns with cantillation marks
-        # Look for א followed by vowels/cantillation, then לה with vowels/cantillation, then ים or י + suffix
-        elohim_pattern = r'א[\u0591-\u05C7]*[ֱ]?[\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ]?[\u0591-\u05C7]*ה[\u0591-\u05C7]*([ִֵֶָ][\u0591-\u05C7]*[^\s]*)'
+        # Must have: א + hataf segol + ל + holam + ה + hiriq + (ם|ים|יך etc.)
+        # The key vowels (hataf segol, holam, hiriq) MUST be present for Elohim
+        elohim_pattern = r'א[\u0591-\u05C7]*[ֱ][\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִ][\u0591-\u05C7]*[םיּךֶ]'
         def elohim_replacer(match):
             return match.group().replace('ה', 'ק')
 
@@ -119,7 +126,9 @@ class HebrewDivineNamesModifier:
             modified = new_modified
 
         # Pattern 3: With definite article הָאֱלֹהִים (with cantillation marks)
-        ha_elohim_pattern = r'ה[\u0591-\u05C7]*[ָ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*[ֱ]?[\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ]?[\u0591-\u05C7]*ה[\u0591-\u05C7]*([ִֵֶָ][\u0591-\u05C7]*[^\s]*)'
+        # Must have: ה + vowel + א + hataf segol + ל + holam + ה + hiriq + ים
+        # This ensures we match the actual word Elohim, not just any word starting with ה + א
+        ha_elohim_pattern = r'ה[\u0591-\u05C7]*[ָ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*[ֱ][\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִ][\u0591-\u05C7]*[םיּ]'
         new_modified = re.sub(ha_elohim_pattern, elohim_replacer, modified)
         if new_modified != modified:
             self.logger.debug(f"Ha-Elohim modified")
@@ -189,6 +198,39 @@ class HebrewDivineNamesModifier:
 
         return modified
 
+    def _modify_eloah(self, text: str) -> str:
+        """Replace ה with ק in אֱלוֹהַּ (Eloah - singular form of Elohim)"""
+        # Unvoweled form
+        if 'אלוה' in text:
+            modified = text.replace('אלוה', 'אלוק')
+            if modified != text:
+                self.logger.debug("Eloah (unvoweled) modified: אלוה → אלוק")
+        else:
+            modified = text
+
+        # Voweled form with cantillation marks
+        # Must have: א + hataf segol + ל + vav + holam + ה + patah/qamatz + dagesh
+        # Example: אֱל֣וֹהַּ (from Psalms 114:7)
+        # Pattern breakdown:
+        # - א followed by optional cantillation/vowels
+        # - ֱ (hataf segol) - required for Eloah
+        # - ל followed by optional cantillation
+        # - ו (vav) followed by optional cantillation
+        # - ֹ (holam) - required for Eloah
+        # - ה followed by optional cantillation
+        # - ַ (patah) - required for Eloah
+        # - Optional dagesh and other marks
+        eloah_pattern = r'א[\u0591-\u05C7]*ֱ[\u0591-\u05C7]*ל[\u0591-\u05C7]*ו[\u0591-\u05C7]*ֹ[\u0591-\u05C7]*ה[\u0591-\u05C7]*ַ[\u0591-\u05C7]*'
+        def eloah_replacer(match):
+            return match.group().replace('ה', 'ק')
+
+        new_modified = re.sub(eloah_pattern, eloah_replacer, modified)
+        if new_modified != modified:
+            self.logger.debug(f"Eloah (voweled) modified")
+            modified = new_modified
+
+        return modified
+
     def has_divine_names(self, text: str) -> bool:
         """Check if text (Hebrew or English with Hebrew terms) contains any divine names that would be modified"""
         if not text:
@@ -204,7 +246,9 @@ class HebrewDivineNamesModifier:
             r'צבאות',  # Tzevaot (unvoweled)
             r'צ[\u0591-\u05C7]*[ְ]?[\u0591-\u05C7]*ב[\u0591-\u05C7]*[ָ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*[וֹ]?[\u0591-\u05C7]*ת',  # Tzevaot (voweled with cantillation)
             r'שדי',  # Shaddai (unvoweled)
-            r'ש[\u0591-\u05C7]*[ַׁ]?[\u0591-\u05C7]*ד[\u0591-\u05C7]*[ַּ]?[\u0591-\u05C7]*י'   # Shaddai (voweled with cantillation)
+            r'ש[\u0591-\u05C7]*[ַׁ]?[\u0591-\u05C7]*ד[\u0591-\u05C7]*[ַּ]?[\u0591-\u05C7]*י',  # Shaddai (voweled with cantillation)
+            r'אלוה',  # Eloah (unvoweled)
+            r'א[\u0591-\u05C7]*ֱ[\u0591-\u05C7]*ל[\u0591-\u05C7]*ו[\u0591-\u05C7]*ֹ[\u0591-\u05C7]*ה[\u0591-\u05C7]*ַ[\u0591-\u05C7]*'  # Eloah (voweled with cantillation)
         ]
 
         for pattern in patterns:

@@ -350,6 +350,7 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
         english_non_sacred = divine_names_modifier.modify_english_with_hebrew_terms(eng_verse)
         instances_count = len(metadata.get('flexible_instances', []))
         figurative_detection = metadata.get('figurative_detection_deliberation', '')
+        figurative_detection_non_sacred = divine_names_modifier.modify_divine_names(figurative_detection) if figurative_detection else ''
 
         # SAFEGUARD: Ensure we don't have truncated deliberation from fallback scenarios
         # If we used Pro model or Claude fallback, verify the deliberation is complete
@@ -391,6 +392,7 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
             'word_count': len(heb_verse.split()),
             'llm_restriction_error': error,
             'figurative_detection_deliberation': figurative_detection,
+            'figurative_detection_deliberation_non_sacred': figurative_detection_non_sacred,
             'instances_detected': instances_count,
             'instances_recovered': instances_count,
             'instances_lost_to_truncation': 0,

@@ -39,7 +39,14 @@
       "Bash(move:*)",
       "Bash(move api_server.py web )",
       "Bash(move interface_requirements.txt webrequirements.txt)",
-      "Bash(curl -s \"http://localhost:5000/api/statistics\")"
+      "Bash(curl -s \"http://localhost:5000/api/statistics\")",
+      "Bash(git archive:*)",
+      "Bash(tar:*)",
+      "Bash(cp:*)",
+      "Bash(git log:*)",
+      "Bash(curl:*)",
+      "Bash(start /B python:*)",
+      "Bash(netstat:*)"
     ],
     "deny": [],
     "ask": []
