@@ -251,7 +251,7 @@ def get_verses():
                 v.id, v.reference, v.book, v.chapter, v.verse,
                 v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
                 v.english_text_clean, v.english_text_clean_non_sacred,
-                v.figurative_detection_deliberation, v.model_used
+                v.figurative_detection_deliberation, v.figurative_detection_deliberation_non_sacred, v.model_used
             FROM verses v
             WHERE 1=1
             """
@@ -263,7 +263,7 @@ def get_verses():
                 v.id, v.reference, v.book, v.chapter, v.verse,
                 v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
                 v.english_text_clean, v.english_text_clean_non_sacred,
-                v.figurative_detection_deliberation, v.model_used
+                v.figurative_detection_deliberation, v.figurative_detection_deliberation_non_sacred, v.model_used
             FROM verses v
             LEFT JOIN figurative_language fl ON v.id = fl.verse_id
             WHERE (fl.id IS NULL OR fl.final_figurative_language = 'no')
@@ -275,7 +275,7 @@ def get_verses():
                 v.id, v.reference, v.book, v.chapter, v.verse,
                 v.hebrew_text, v.hebrew_text_stripped, v.hebrew_text_non_sacred,
                 v.english_text_clean, v.english_text_clean_non_sacred,
-                v.figurative_detection_deliberation, v.model_used
+                v.figurative_detection_deliberation, v.figurative_detection_deliberation_non_sacred, v.model_used
             FROM verses v
             LEFT JOIN figurative_language fl ON v.id = fl.verse_id
             WHERE 1=1
