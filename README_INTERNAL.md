@@ -2,9 +2,11 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
-**LATEST ACHIEVEMENT (Oct 3, 2025)**: Fixed HTML entity highlighting bug affecting verses with `&thinsp;` entities. Psalms 84:4 and similar verses now highlight correctly.
+**LATEST ACHIEVEMENT (Oct 3, 2025 - Evening)**: Added comprehensive print feature with professional formatting, side-by-side Hebrew/English layout, and clean deliberation display.
 
-**PREVIOUS ACHIEVEMENT (Oct 2, 2025)**: Fixed divine names modifier bug and added Eloah support. All non-sacred Hebrew text fields regenerated with corrected modifier.
+**PREVIOUS ACHIEVEMENTS**:
+- **Oct 3 Morning**: Fixed HTML entity highlighting bug affecting verses with `&thinsp;` entities. Psalms 84:4 and similar verses now highlight correctly.
+- **Oct 2, 2025**: Fixed divine names modifier bug and added Eloah support. All non-sacred Hebrew text fields regenerated with corrected modifier.
 
 **DEPLOYMENT SUCCESS (Oct 1, 2025)**: Tzafun is now publicly accessible at **https://tzafun.onrender.com** with 8,373 analyzed verses (Torah + Psalms) and 5,933 figurative language instances.
 
@@ -35,6 +37,118 @@ A concordance of figurative language in the bible
   - Fixed tooltip positioning to prevent off-screen display
 - **📊 Verse Loading**: Updated initial page load from 10 to 25 verses for better user experience
 - **🔧 Header Navigation**: Made "Tzafun" title clickable to return home from About page
+
+---
+
+## 🖨️ PRINT FEATURE IMPLEMENTATION (Oct 3, 2025 - Evening)
+
+### **Feature: Professional Print Output for Research and Sharing**
+
+Added comprehensive print functionality to the Tzafun web interface, allowing users to generate clean, professional printouts of their selected verses with full annotation details.
+
+### **Implementation Details**
+
+**File**: `web/biblical_figurative_interface.html`
+
+#### **1. Print Link in Header** (Lines 854-856)
+- Added "print" link below "about" in top-right header
+- Triggers `printPage()` function when clicked
+
+#### **2. Print-Specific CSS** (Lines 843-1135)
+Comprehensive `@media print` styles including:
+- **Layout Controls**: Hide sidebar, header, stats bar, navigation during print
+- **Side-by-Side Text Layout**: Hebrew (left) | thin divider | English (right) in elegant columns
+- **Deliberation Formatting**: Styled matching the UI with proper spacing, colored labels, and model badges
+- **Annotation Details**: Professional formatting with Hebrew/English phrase columns
+- **Color Preservation**: `print-color-adjust: exact` ensures highlights and type indicators print in color
+- **Page Breaks**: Intelligent `page-break-inside: avoid` for verse containers and deliberation items
+
+#### **3. JavaScript Print Functions** (Lines 1451-1733)
+
+**Filter Summary Generation** (`generatePrintSummary()` - Lines 1467-1520):
+- Captures all active filters: selected books, figurative types, text version, search terms, metadata filters
+- Formats professional summary showing exactly what the user selected
+- Displays verse count for transparency
+
+**Content Preparation** (`preparePrintContent()` - Lines 1522-1609):
+- Creates print header with filter summary
+- Duplicates Hebrew/English text in side-by-side columns at top of each verse
+- Adds formatted deliberation with model name badge
+- Generates detailed annotation sections for each figurative phrase
+- Respects "Traditional Jewish" setting for non-sacred text versions
+
+**Annotation Formatting** (`createPrintAnnotation()` - Lines 1611-1722):
+- Side-by-side Hebrew/English phrase display
+- Color-coded type indicators
+- Complete metadata: Target, Vehicle, Ground, Posture, Confidence, Speaker, Purpose, Explanation
+- Validation reasons for each figurative type
+- Hierarchical array display (e.g., "term1 → term2 → term3")
+
+**Print Dialog** (`printPage()` - Lines 1724-1736):
+- Prepares content, triggers browser print dialog
+- Cleans up temporary print elements after 1 second
+
+#### **4. Footnote Filtering** (`removeFootnotes()` - Lines 1451-1465)
+- Client-side filtering of English translation footnotes
+- Removes quoted phrases with indicators like "lit.", "cf.", "trad.", "NJPS", "uncertain", etc.
+- Applied during verse rendering (Line 2274)
+- Cleans up spacing and punctuation
+
+### **Current Status & Known Issues**
+
+✅ **Working Features**:
+- Print link accessible in header
+- Comprehensive print CSS with side-by-side layout
+- Filter summary generation
+- Hebrew/English text displayed at top in columns
+- Footnote filtering (partial - some patterns still getting through)
+- Duplicate verse text hidden (only top version shows)
+- Annotation details with side-by-side phrase display
+
+❌ **Issues Remaining**:
+1. **Deliberation Line Breaks NOT Working** (PRIORITY)
+   - **Issue**: Deliberation items running together without spacing between sections
+   - **Expected**: Clear visual breaks between "Phrase/Concept:", "Considered:", and "Reasoning:" sections
+   - **Current Code**: Lines 2960-2968 add `<br><br>` before labels, CSS has 20px margin-bottom on `.deliberation-item`
+   - **Problem**: Line breaks not appearing in print output despite proper HTML structure
+   - **Screenshot Evidence**: User provided screenshot showing text running together vs UI showing proper spacing
+   - **Next Step**: Debug why `<br>` tags and CSS margins aren't creating visual spacing in print
+
+2. **Footnote Filtering Incomplete** (LOWER PRIORITY - SKIPPED FOR NOW)
+   - **Issue**: Some footnote patterns still visible in English text
+   - **Example**: Gen 4:1 shows ", often in a sexual sense." and other explanatory text
+   - **Current Filter**: Catches quoted footnotes and some comma-separated patterns
+   - **Next Step**: Enhance regex patterns to catch more edge cases
+
+### **Files Modified**
+- `web/biblical_figurative_interface.html`:
+  - Lines 854-856: Print link in header
+  - Lines 843-1135: Print CSS styles
+  - Lines 1451-1465: Footnote removal function
+  - Lines 1467-1736: Print JavaScript functions
+  - Lines 2274: Footnote filtering application
+  - Lines 2960-2968: Deliberation formatting enhancement (NOT WORKING YET)
+
+### **Next Session Priorities**
+
+1. **FIX DELIBERATION LINE BREAKS** (CRITICAL)
+   - Debug why `<br><br>` tags aren't creating spacing in print
+   - Verify `formatDeliberationText()` is being called correctly
+   - Check if CSS `.deliberation-item` margin is being applied
+   - Test with different approaches: `<p>` tags instead of `<br>`, `display: block` on labels, etc.
+   - Compare print HTML output vs screen HTML output to identify differences
+
+2. **Improve Footnote Filtering** (if time permits)
+   - Enhance regex to catch ", often in..." patterns
+   - Handle nested footnotes with multiple quoted sections
+   - Test with problematic verses: Gen 4:1, Gen 5:29
+
+### **Testing Recommendations**
+- Test print with various filter combinations
+- Verify Sacred vs Traditional Jewish text selection works correctly
+- Check annotation details for phrases with multiple types
+- Ensure page breaks work properly for long verse lists
+- Test on different browsers (Chrome, Firefox, Safari)
 
 ---
 

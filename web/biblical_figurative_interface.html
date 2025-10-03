@@ -839,6 +839,340 @@
             color: #495057 !important;
             transform: scale(1.1);
         }
+
+        /* Print Styles */
+        @media print {
+            /* Hide non-print elements */
+            .sidebar,
+            .header,
+            .stats-bar,
+            .detail-panel,
+            .navigation,
+            .about-page {
+                display: none !important;
+            }
+
+            /* Reset layout for print */
+            .app-container {
+                display: block;
+                max-height: none;
+            }
+
+            .main-content {
+                padding: 0;
+                max-height: none;
+                overflow: visible;
+            }
+
+            /* Print header section */
+            .print-header {
+                display: block !important;
+                padding: 20px;
+                border-bottom: 2px solid #000;
+                margin-bottom: 30px;
+                page-break-after: avoid;
+            }
+
+            .print-header h1 {
+                font-size: 24pt;
+                margin-bottom: 10px;
+                color: #000;
+            }
+
+            .print-header h2 {
+                font-size: 16pt;
+                margin-top: 15px;
+                margin-bottom: 8px;
+                color: #000;
+                border-bottom: 1px solid #666;
+                padding-bottom: 3px;
+            }
+
+            .print-header p {
+                font-size: 11pt;
+                margin: 3px 0;
+                line-height: 1.4;
+            }
+
+            .print-header .filter-summary {
+                margin-top: 10px;
+            }
+
+            /* Verse containers for print */
+            .verse-container {
+                page-break-inside: avoid;
+                margin-bottom: 30px;
+                border: 1px solid #000;
+                padding: 15px;
+            }
+
+            .verse-header {
+                font-size: 14pt;
+                font-weight: bold;
+                margin-bottom: 10px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #333;
+                background-color: transparent;
+            }
+
+            .verse-content {
+                display: block;
+                padding: 0;
+            }
+
+            /* Hide the original Hebrew/English text in print (we show them at top in verse-text-columns) */
+            .verse-content > .hebrew-text,
+            .verse-content > .english-text {
+                display: none !important;
+            }
+
+            /* Text columns at top */
+            .verse-text-columns {
+                display: grid !important;
+                grid-template-columns: 1fr 2px 1fr;
+                gap: 15px;
+                padding: 15px 0;
+                margin-bottom: 20px;
+                align-items: start;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .verse-text-columns::after {
+                content: '';
+                grid-column: 2;
+                width: 1px;
+                height: 100%;
+                background-color: #999;
+                justify-self: center;
+            }
+
+            .hebrew-text {
+                grid-column: 1;
+                font-size: 11pt;
+                line-height: 1.6;
+                direction: rtl;
+                text-align: right;
+            }
+
+            .english-text {
+                grid-column: 3;
+                font-size: 11pt;
+                line-height: 1.6;
+            }
+
+            /* Preserve highlighting in print */
+            .figurative-highlight {
+                background-color: #ffeb3b !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                padding: 2px;
+            }
+
+            .search-highlight {
+                background-color: #ffb3d9 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            /* Print-specific sections */
+            .print-deliberation {
+                display: block !important;
+                margin: 15px 0;
+                padding: 15px;
+                background-color: #f9f9f9 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                border-left: 3px solid #007bff;
+                page-break-inside: avoid;
+                grid-column: 1 / -1;
+            }
+
+            .print-deliberation h4 {
+                font-size: 12pt;
+                margin-bottom: 12px;
+                color: #007bff;
+                font-weight: 600;
+            }
+
+            .print-deliberation .deliberation-content {
+                font-size: 10pt;
+                line-height: 1.8;
+            }
+
+            .print-deliberation .deliberation-item {
+                display: block;
+                margin-bottom: 20px;
+                padding-left: 15px;
+                text-indent: -15px;
+                page-break-inside: avoid;
+            }
+
+            .print-deliberation .deliberation-item:last-child {
+                margin-bottom: 0;
+            }
+
+            .print-deliberation .deliberation-number {
+                font-weight: 600;
+                color: #007bff;
+                margin-right: 5px;
+            }
+
+            .print-deliberation .deliberation-bold {
+                font-weight: 600;
+                color: #000;
+            }
+
+            .print-deliberation .deliberation-italic {
+                font-style: italic;
+                color: #555;
+            }
+
+            .print-deliberation .deliberation-label {
+                font-weight: 600;
+                color: #007bff;
+            }
+
+            .print-deliberation .model-badge {
+                display: inline-block;
+                background-color: #007bff !important;
+                color: white !important;
+                padding: 3px 8px;
+                border-radius: 3px;
+                font-size: 9pt;
+                font-weight: 500;
+                margin-left: 8px;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .print-annotation {
+                display: block !important;
+                margin: 15px 0;
+                padding: 10px;
+                border: 1px solid #999;
+                page-break-inside: avoid;
+                grid-column: 1 / -1;
+            }
+
+            .print-annotation h5 {
+                font-size: 11pt;
+                margin-bottom: 8px;
+                color: #000;
+            }
+
+            .print-annotation p {
+                font-size: 10pt;
+                line-height: 1.4;
+                margin: 4px 0;
+            }
+
+            .print-annotation .annotation-phrase {
+                display: grid;
+                grid-template-columns: 1fr 2px 1fr;
+                gap: 10px;
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+                border-bottom: 1px solid #ddd;
+                align-items: center;
+            }
+
+            .print-annotation .annotation-phrase::after {
+                content: '';
+                grid-column: 2;
+                width: 1px;
+                height: 100%;
+                background-color: #999;
+                justify-self: center;
+            }
+
+            .print-annotation .annotation-phrase-hebrew {
+                grid-column: 1;
+                direction: rtl;
+                text-align: right;
+                font-family: 'Noto Sans Hebrew', serif;
+                font-weight: bold;
+                font-size: 11pt;
+            }
+
+            .print-annotation .annotation-phrase-english {
+                grid-column: 3;
+                font-weight: bold;
+                font-size: 11pt;
+            }
+
+            .print-annotation .type-indicator {
+                display: inline-block;
+                margin-right: 8px;
+                padding: 2px 6px;
+                border: 1px solid #000;
+            }
+
+            /* Type color preservation */
+            .type-indicator.metaphor {
+                background-color: var(--metaphor-color) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .type-indicator.simile {
+                background-color: var(--simile-color) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .type-indicator.personification {
+                background-color: var(--personification-color) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .type-indicator.idiom {
+                background-color: var(--idiom-color) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .type-indicator.hyperbole {
+                background-color: var(--hyperbole-color) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .type-indicator.metonymy {
+                background-color: var(--metonymy-color) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .type-indicator.other {
+                background-color: var(--other-color) !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            /* Hide tooltips in print */
+            .type-tooltip,
+            .tooltiptext {
+                display: none !important;
+            }
+
+            /* Page breaks */
+            .verse-container {
+                page-break-inside: avoid;
+            }
+
+            h4, h5 {
+                page-break-after: avoid;
+            }
+        }
+
+        /* Hide print sections on screen */
+        .print-header,
+        .print-deliberation,
+        .print-annotation,
+        .verse-text-columns {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -851,7 +1185,8 @@
                 <p class="header-hebrew-quote">מה רב־טובך אשר־צפנת ליראיך (Psalms 31:20)</p>
             </div>
             <div class="header-attribution">
-                <a onclick="showAboutPage()">about</a>
+                <a onclick="showAboutPage()">about</a><br>
+                <a onclick="printPage()">print</a>
             </div>
         </header>
 
@@ -1025,6 +1360,11 @@
 
         <!-- Main Content -->
         <main class="main-content" id="main-content">
+            <!-- Print Header (hidden on screen, shown when printing) -->
+            <div class="print-header" id="print-header">
+                <!-- Will be populated by JavaScript when printing -->
+            </div>
+
             <div id="verses-container">
                 <div class="loading">
                     <div class="spinner"></div>
@@ -1153,6 +1493,256 @@
             document.getElementById('main-content').style.display = 'block';
             document.querySelector('.sidebar').style.display = 'block';
             document.getElementById('about-page').classList.remove('active');
+        }
+
+        // Print Functions
+        function removeFootnotes(text) {
+            if (!text) return text;
+
+            // Remove content within quotes that appears to be footnotes/annotations
+            // Pattern matches quoted phrases that contain explanatory text like "lit.", "cf.", "trad.", etc.
+            let cleaned = text.replace(/"[^"]*(?:lit\.|cf\.|trad\.|NJPS|uncertain|connected with|often in)[^"]*"/gi, '');
+
+            // Clean up any double spaces left behind
+            cleaned = cleaned.replace(/\s{2,}/g, ' ');
+
+            // Clean up spaces before punctuation
+            cleaned = cleaned.replace(/\s+([,.])/g, '$1');
+
+            return cleaned.trim();
+        }
+
+        function generatePrintSummary() {
+            const summary = [];
+
+            // Get selected books
+            const bookSelect = document.getElementById('book-select');
+            const selectedBooks = Array.from(bookSelect.selectedOptions).map(opt => opt.text);
+            if (selectedBooks.length > 0) {
+                summary.push(`<strong>Books:</strong> ${selectedBooks.join(', ')}`);
+            }
+
+            // Get figurative types
+            const selectedTypes = Array.from(appState.selectedTypes);
+            const typeLabels = {
+                'metaphor': 'Metaphor',
+                'simile': 'Simile',
+                'personification': 'Personification',
+                'idiom': 'Idiom',
+                'hyperbole': 'Hyperbole',
+                'metonymy': 'Metonymy',
+                'other': 'Other'
+            };
+            const typeNames = selectedTypes.map(t => typeLabels[t]);
+            if (appState.showNotFigurative) {
+                typeNames.push('Not Figurative');
+            }
+            if (typeNames.length > 0) {
+                summary.push(`<strong>Figurative Types:</strong> ${typeNames.join(', ')}`);
+            }
+
+            // Get text version
+            const textVersion = document.querySelector('input[name="text-version"]:checked').value;
+            summary.push(`<strong>Text Version:</strong> ${textVersion === 'sacred' ? 'Sacred Names' : 'Traditional Jewish'}`);
+
+            // Get search terms
+            if (appState.currentSearch.text) {
+                const searchType = appState.searchType === 'hebrew' ? 'Hebrew' : 'English';
+                summary.push(`<strong>${searchType} Search:</strong> "${appState.currentSearch.text}"`);
+            }
+
+            // Get metadata search terms
+            const metadataTerms = [];
+            if (appState.currentSearch.target) {
+                metadataTerms.push(`Target: "${appState.currentSearch.target}"`);
+            }
+            if (appState.currentSearch.vehicle) {
+                metadataTerms.push(`Vehicle: "${appState.currentSearch.vehicle}"`);
+            }
+            if (appState.currentSearch.ground) {
+                metadataTerms.push(`Ground: "${appState.currentSearch.ground}"`);
+            }
+            if (appState.currentSearch.posture) {
+                metadataTerms.push(`Posture: "${appState.currentSearch.posture}"`);
+            }
+            if (metadataTerms.length > 0) {
+                summary.push(`<strong>Metadata Search:</strong> ${metadataTerms.join('; ')}`);
+            }
+
+            // Get verse count
+            const verseCount = appState.filteredVerses ? appState.filteredVerses.length : 0;
+            summary.push(`<strong>Verses Displayed:</strong> ${verseCount}`);
+
+            return summary;
+        }
+
+        function preparePrintContent() {
+            const textVersion = document.querySelector('input[name="text-version"]:checked').value;
+            const useNonSacred = textVersion === 'non-sacred';
+
+            // Generate filter summary header
+            const summaryItems = generatePrintSummary();
+            const summaryHTML = `
+                <h1>Tzafun: Biblical Figurative Language Analysis</h1>
+                <p style="font-style: italic;">A concordance of Biblical figurative language</p>
+                <h2>Applied Filters and Selections</h2>
+                <div class="filter-summary">
+                    ${summaryItems.map(item => `<p>${item}</p>`).join('')}
+                </div>
+            `;
+            document.getElementById('print-header').innerHTML = summaryHTML;
+
+            // Get all verse containers
+            const verseContainers = document.querySelectorAll('.verse-container');
+
+            // For each verse, add print-specific content
+            appState.filteredVerses.forEach((verse, index) => {
+                const verseElement = verseContainers[index];
+                if (!verseElement) return;
+
+                // Remove any existing print elements
+                verseElement.querySelectorAll('.print-deliberation, .print-annotation, .verse-text-columns').forEach(el => el.remove());
+
+                // Get the Hebrew and English text from the existing display
+                const hebrewTextElement = verseElement.querySelector('.hebrew-text');
+                const englishTextElement = verseElement.querySelector('.english-text');
+
+                // Create a wrapper for the text columns at the top
+                if (hebrewTextElement && englishTextElement) {
+                    const textColumnsHTML = `
+                        <div class="verse-text-columns">
+                            <div class="hebrew-text">${hebrewTextElement.innerHTML}</div>
+                            <div class="english-text">${englishTextElement.innerHTML}</div>
+                        </div>
+                    `;
+                    verseElement.querySelector('.verse-content').insertAdjacentHTML('afterbegin', textColumnsHTML);
+                }
+
+                // Add deliberation section
+                const deliberationField = useNonSacred ?
+                    (verse.figurative_detection_deliberation_non_sacred || verse.figurative_detection_deliberation) :
+                    verse.figurative_detection_deliberation;
+
+                if (deliberationField) {
+                    const modelName = verse.model_used || 'Unknown Model';
+                    const formattedDeliberation = formatDeliberationText(deliberationField);
+                    const deliberationHTML = `
+                        <div class="print-deliberation">
+                            <h4>Figurative Detection Deliberation<span class="model-badge">${modelName}</span></h4>
+                            <div class="deliberation-content">${formattedDeliberation}</div>
+                        </div>
+                    `;
+                    verseElement.querySelector('.verse-content').insertAdjacentHTML('beforeend', deliberationHTML);
+                }
+
+                // Add annotation details for each figurative instance
+                if (verse.annotations && verse.annotations.length > 0) {
+                    verse.annotations.forEach(annotation => {
+                        const annotationHTML = createPrintAnnotation(annotation, useNonSacred);
+                        verseElement.querySelector('.verse-content').insertAdjacentHTML('beforeend', annotationHTML);
+                    });
+                }
+            });
+        }
+
+        function createPrintAnnotation(annotation, useNonSacred) {
+            const hebrewPhrase = useNonSacred ?
+                (annotation.figurative_text_in_hebrew_non_sacred || annotation.figurative_text_in_hebrew) :
+                annotation.figurative_text_in_hebrew;
+            const englishPhrase = annotation.figurative_text;
+
+            // Get all active types
+            const activeTypes = annotation.types || [];
+            const typeLabels = {
+                'metaphor': 'Metaphor',
+                'simile': 'Simile',
+                'personification': 'Personification',
+                'idiom': 'Idiom',
+                'hyperbole': 'Hyperbole',
+                'metonymy': 'Metonymy',
+                'other': 'Other'
+            };
+
+            const typeIndicators = activeTypes.map(type =>
+                `<span class="type-indicator ${type}">${typeLabels[type]}</span>`
+            ).join(' ');
+
+            // Build annotation details
+            const details = [];
+
+            if (annotation.target) {
+                const targetValue = Array.isArray(annotation.target) ? annotation.target.join(' → ') : annotation.target;
+                details.push(`<strong>Target:</strong> ${targetValue}`);
+            }
+
+            if (annotation.vehicle) {
+                const vehicleValue = Array.isArray(annotation.vehicle) ? annotation.vehicle.join(' → ') : annotation.vehicle;
+                details.push(`<strong>Vehicle:</strong> ${vehicleValue}`);
+            }
+
+            if (annotation.ground) {
+                const groundValue = Array.isArray(annotation.ground) ? annotation.ground.join(' → ') : annotation.ground;
+                details.push(`<strong>Ground:</strong> ${groundValue}`);
+            }
+
+            if (annotation.posture) {
+                const postureValue = Array.isArray(annotation.posture) ? annotation.posture.join(' → ') : annotation.posture;
+                details.push(`<strong>Posture:</strong> ${postureValue}`);
+            }
+
+            if (annotation.confidence !== undefined) {
+                details.push(`<strong>Confidence:</strong> ${annotation.confidence}`);
+            }
+
+            if (annotation.speaker) {
+                details.push(`<strong>Speaker:</strong> ${annotation.speaker}`);
+            }
+
+            if (annotation.purpose) {
+                details.push(`<strong>Purpose:</strong> ${annotation.purpose}`);
+            }
+
+            if (annotation.explanation) {
+                details.push(`<strong>Explanation:</strong> ${annotation.explanation}`);
+            }
+
+            // Add validation reasons for each type
+            const validationReasons = [];
+            activeTypes.forEach(type => {
+                const reasonKey = `validation_reason_${type}`;
+                if (annotation[reasonKey]) {
+                    validationReasons.push(`<strong>${typeLabels[type]} Validation:</strong> ${annotation[reasonKey]}`);
+                }
+            });
+
+            return `
+                <div class="print-annotation">
+                    <h5>Annotation Details</h5>
+                    <div class="annotation-phrase">
+                        <div class="annotation-phrase-hebrew">${hebrewPhrase || ''}</div>
+                        <div class="annotation-phrase-english">${englishPhrase || ''}</div>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <strong>Figurative Types:</strong> ${typeIndicators}
+                    </div>
+                    ${details.map(detail => `<p>${detail}</p>`).join('')}
+                    ${validationReasons.length > 0 ? '<div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #ccc;">' + validationReasons.map(reason => `<p>${reason}</p>`).join('') + '</div>' : ''}
+                </div>
+            `;
+        }
+
+        function printPage() {
+            // Prepare the content for printing
+            preparePrintContent();
+
+            // Trigger the browser's print dialog
+            window.print();
+
+            // Clean up print-specific content after printing
+            setTimeout(() => {
+                document.querySelectorAll('.print-deliberation, .print-annotation').forEach(el => el.remove());
+                document.getElementById('print-header').innerHTML = '';
+            }, 1000);
         }
 
         // DOM Elements
@@ -1739,7 +2329,10 @@
                     hebrewText = '[Hebrew text unavailable - contaminated data]';
                 }
 
-                const englishText = appState.textVersion === 'sacred' ? verse.english_text_clean : verse.english_text_clean_non_sacred;
+                let englishText = appState.textVersion === 'sacred' ? verse.english_text_clean : verse.english_text_clean_non_sacred;
+
+                // Remove footnotes from English text
+                englishText = removeFootnotes(englishText);
 
                 // Add verse information to each annotation for synchronization
                 const annotationsWithVerseInfo = verse.annotations.map(annotation => ({
@@ -2364,13 +2957,18 @@
             // Replace *italic* with spans (but not part of **)
             formatted = formatted.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<span class="deliberation-italic">$1</span>');
 
-            // Replace common labels with styled versions
-            formatted = formatted.replace(/\*\*Phrase\/Concept:\*\*/g, '<span class="deliberation-label">Phrase/Concept:</span>');
-            formatted = formatted.replace(/\*\*Considered:\*\*/g, '<span class="deliberation-label">Considered:</span>');
-            formatted = formatted.replace(/\*\*Reasoning for (including|excluding):\*\*/g, '<span class="deliberation-label">Reasoning for $1:</span>');
+            // Replace common labels with styled versions - and add paragraph breaks before them
+            formatted = formatted.replace(/\s*<span class="deliberation-label">Phrase\/Concept:<\/span>/g, '<br><br><span class="deliberation-label">Phrase/Concept:</span>');
+            formatted = formatted.replace(/\s*<span class="deliberation-label">Considered:<\/span>/g, '<br><br><span class="deliberation-label">Considered:</span>');
+            formatted = formatted.replace(/\s*<span class="deliberation-label">Reasoning for (including|excluding):<\/span>/g, '<br><br><span class="deliberation-label">Reasoning for $1:</span>');
+
+            // Also handle the original pattern replacement
+            formatted = formatted.replace(/\*\*Phrase\/Concept:\*\*/g, '<br><br><span class="deliberation-label">Phrase/Concept:</span>');
+            formatted = formatted.replace(/\*\*Considered:\*\*/g, '<br><br><span class="deliberation-label">Considered:</span>');
+            formatted = formatted.replace(/\*\*Reasoning for (including|excluding):\*\*/g, '<br><br><span class="deliberation-label">Reasoning for $1:</span>');
 
             // Split into numbered items
-            const lines = formatted.split(/(?=\d+\.\s+\*\*)/);
+            const lines = formatted.split(/(?=\d+\.\s+(?:\*\*|<span))/);
 
             if (lines.length > 1) {
                 // Has numbered items - format them
@@ -2378,7 +2976,9 @@
                     const match = line.match(/^(\d+)\.\s+(.+)$/s);
                     if (match) {
                         const [, num, content] = match;
-                        return `<div class="deliberation-item"><span class="deliberation-number">${num}.</span>${content.trim()}</div>`;
+                        // Remove leading <br> tags from the start of content
+                        const cleanContent = content.trim().replace(/^(?:<br>)+/, '');
+                        return `<div class="deliberation-item"><span class="deliberation-number">${num}.</span> ${cleanContent}</div>`;
                     }
                     return line.trim() ? `<div>${line.trim()}</div>` : '';
                 }).filter(Boolean).join('');
