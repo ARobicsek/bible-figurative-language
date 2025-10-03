@@ -2,9 +2,9 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
-**LATEST ACHIEVEMENT**: Successfully deployed to production at **https://tzafun.onrender.com** with optimized performance for free tier hosting (512MB RAM).
+**LATEST ACHIEVEMENT (Oct 2, 2025)**: Fixed divine names modifier bug and added Eloah support. All non-sacred Hebrew text fields regenerated with corrected modifier.
 
-**DEPLOYMENT SUCCESS (Oct 1, 2025)**: Tzafun is now publicly accessible with 8,373 analyzed verses (Torah + Psalms) and 5,933 figurative language instances.
+**DEPLOYMENT SUCCESS (Oct 1, 2025)**: Tzafun is now publicly accessible at **https://tzafun.onrender.com** with 8,373 analyzed verses (Torah + Psalms) and 5,933 figurative language instances.
 
 **⚡ PERFORMANCE BREAKTHROUGH (Oct 1, 2025)**: Achieved **100-1300x speedup** through database indexes and query caching! Metadata searches: 0.011-0.033s (was 1-5s). Complex JOINs: 0.015-0.017s (was 5-20s). System is fast and stable on free tier.
 
@@ -33,6 +33,77 @@ A concordance of figurative language in the bible
   - Fixed tooltip positioning to prevent off-screen display
 - **📊 Verse Loading**: Updated initial page load from 10 to 25 verses for better user experience
 - **🔧 Header Navigation**: Made "Tzafun" title clickable to return home from About page
+
+---
+
+## 🐛 DIVINE NAMES MODIFIER FIX (Oct 2, 2025)
+
+### **Problem: Non-Divine Words Incorrectly Modified**
+
+The Hebrew divine names modifier had a critical bug causing non-divine words to be modified in "Traditional Jewish" text mode:
+- ❌ `הַנָּחָשׁ` (the serpent) → `קַנָּחָשׁ` (WRONG)
+- ❌ `הָאִשָּׁה` (the woman) → `קָאִשָּׁק` (WRONG)
+
+### **Root Cause**
+
+**File**: `private/src/hebrew_figurative_db/text_extraction/hebrew_divine_names_modifier.py`
+
+The Elohim regex patterns had **optional vowel matching** that was too permissive:
+- Line 113 (Pattern 2): `א[\u0591-\u05C7]*[ֱ]?...` - hataf segol was optional
+- Line 124 (Pattern 3): Similar issue with definite article pattern
+
+This caused the modifier to match any word starting with definite article + alef/hei, not just the divine name Elohim.
+
+### **Solution**
+
+**Made Elohim vowels REQUIRED instead of optional:**
+- Line 113: `א[\u0591-\u05C7]*[ֱ]...` - hataf segol now required
+- Line 124: Tightened pattern to require specific Elohim vowels
+
+**Added support for Eloah (אֱלוֹהַּ):**
+- New `_modify_eloah()` method handles singular form of Elohim
+- Example: Psalms 114:7 `אֱל֣וֹהַּ` → `אֱל֣וֹקַּ`
+- Pattern: `א[\u0591-\u05C7]*ֱ[\u0591-\u05C7]*ל[\u0591-\u05C7]*ו[\u0591-\u05C7]*ֹ[\u0591-\u05C7]*ה[\u0591-\u05C7]*ַ[\u0591-\u05C7]*`
+
+### **Database Regeneration**
+
+Created `regenerate_hebrew_non_sacred.py` script to regenerate all three non-sacred Hebrew text fields:
+
+1. **`verses.hebrew_text_non_sacred`** - 8,373 verses
+   - Full Hebrew verse text with divine names modified
+   - Committed every 500 updates to avoid database locks
+
+2. **`figurative_language.figurative_text_in_hebrew_non_sacred`** - 5,933 annotations
+   - Hebrew text excerpts for figurative language instances
+   - Uses same modifier as verse text
+
+3. **`verses.figurative_detection_deliberation_non_sacred`** - 8,368 verses
+   - English deliberation text containing Hebrew terms
+   - Uses `modify_english_with_hebrew_terms()` method
+
+### **Verification**
+
+Created test scripts to verify the fix:
+- `test_divine_modifier.py` - Unit tests for modifier patterns
+- `check_psalms_eloah.py` - Specific test for Psalms 114:7 Eloah
+
+**Test Results:**
+- ✅ Genesis 3:14 serpent: `הַנָּחָשׁ` preserved (not modified)
+- ✅ Genesis 3:1 woman: `הָאִשָּׁה` preserved (not modified)
+- ✅ Genesis 1:1 Elohim: `אֱלֹקִ֑ים` correctly modified (with ק)
+- ✅ Psalms 114:7 Eloah: `אֱל֣וֹקַּ` correctly modified (new feature)
+
+### **Files Modified**
+- `private/src/hebrew_figurative_db/text_extraction/hebrew_divine_names_modifier.py` - Fixed patterns, added Eloah
+- `regenerate_hebrew_non_sacred.py` - Script to regenerate database fields
+- `database/Pentateuch_Psalms_fig_language.db` - Regenerated all non-sacred fields (76.6 MB)
+- `test_divine_modifier.py`, `test_results.txt` - Test verification
+
+### **Impact**
+- All "Traditional Jewish" text now displays correctly
+- Non-divine words are preserved as-is
+- Divine names properly modified across all three field types
+- New support for Eloah divine name (singular form)
 
 ---
 
