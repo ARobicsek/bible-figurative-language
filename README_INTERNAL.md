@@ -145,8 +145,9 @@ Comprehensive `@media print` styles including:
 
 #### **3. JavaScript Print Functions** (Lines 1451-1733)
 
-**Filter Summary Generation** (`generatePrintSummary()` - Lines 1467-1520):
-- Captures all active filters: selected books, figurative types, text version, search terms, metadata filters
+**Filter Summary Generation** (`generatePrintSummary()` - Lines 1516-1578):
+- Captures all active filters: selected books, chapters, verses, figurative types, text version, search terms, metadata filters
+- **Chapter/Verse Display**: Shows selected chapters and verses in filter summary (unless set to "all")
 - Formats professional summary showing exactly what the user selected
 - Displays verse count for transparency
 
