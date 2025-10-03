@@ -48,25 +48,5 @@ Documents/
 # Note: private/ folder is now public (contains analysis pipeline)
 # Only actual .env files with API keys are kept secret
 
-# Claude settings (personal workspace settings)
-.claude/
-
-# Development/debug files (don't commit)
-*_DEBUG.md
-*_SESSION_*.md
-test_*.py
-test_*.html
-verify_*.py
-*_results.txt
-
-# Utility scripts (one-off cleanup/regeneration scripts)
-clean_*.py
-regenerate_*.py
-force_*.py
-stop_*.py
-
-# SQLite browser project files
-*.sqbpro
-
-# Excel working files
-*.xlsx
+# Claude settings (keep for development)
+# .claude/
