@@ -16,9 +16,10 @@ This document explains all features and functionality of the interactive web int
 6. [Metadata Search](#metadata-search)
 7. [Viewing Results](#viewing-results)
 8. [Verse Details Panel](#verse-details-panel)
-9. [Navigation and Pagination](#navigation-and-pagination)
-10. [Tips and Best Practices](#tips-and-best-practices)
-11. [Keyboard Shortcuts](#keyboard-shortcuts)
+9. [Printing Results](#printing-results)
+10. [Navigation and Pagination](#navigation-and-pagination)
+11. [Tips and Best Practices](#tips-and-best-practices)
+12. [Keyboard Shortcuts](#keyboard-shortcuts)
 
 ---
 
@@ -61,8 +62,9 @@ When you first open the interface:
 - Leviticus (Vayikra)
 - Numbers (Bamidbar)
 - Deuteronomy (Devarim)
+- Psalms (Tehillim) - All 150 chapters
 
-**Example:** Select Genesis + Exodus to explore only the first two books.
+**Example:** Select Genesis + Exodus to explore only the first two books of the Torah.
 
 ### Filter by Chapter
 
@@ -113,16 +115,16 @@ The interface will:
 
 Each type is color-coded for easy identification:
 
-| Type | Color | Description |
-|------|-------|-------------|
-| **Metaphor** | 🔴 Red | Direct comparison without "like/as" |
-| **Simile** | 🔵 Blue | Comparison with "like/as" |
-| **Personification** | 🟣 Purple | Human qualities to non-human entities |
-| **Idiom** | 🟠 Orange | Fixed non-literal expressions |
-| **Hyperbole** | 🟤 Brown-Orange | Deliberate exaggeration |
-| **Metonymy** | 🟢 Teal | Substitution of associated concept |
-| **Other** | ⚫ Gray | Other figurative types |
-| **Not Figurative** | ⚪ Light Gray | Verses without figurative language |
+| Type | Color (Hex) | Description |
+|------|-------------|-------------|
+| **Metaphor** | `#a0695f` (Warm Brown) | Direct comparison without "like/as" |
+| **Simile** | `#5a8ca8` (Steel Blue) | Comparison with "like/as" |
+| **Personification** | `#9370a8` (Muted Purple) | Human qualities to non-human entities |
+| **Idiom** | `#c9a255` (Golden) | Fixed non-literal expressions |
+| **Hyperbole** | `#c17a61` (Terracotta) | Deliberate exaggeration |
+| **Metonymy** | `#5d9b82` (Sage Green) | Substitution of associated concept |
+| **Other** | `#7a8896` (Slate Gray) | Other figurative types |
+| **Not Figurative** | Light Gray | Verses without figurative language |
 
 ### How to Filter
 
@@ -429,6 +431,71 @@ If you clicked a specific figurative instance, additional details appear:
 
 ---
 
+## Printing Results
+
+**Location:** Header → "print" link
+
+### Print Functionality
+
+The interface includes a browser-friendly print feature that formats your current results for printing.
+
+**To print:**
+1. Load and filter the verses you want to print
+2. Click the **"print"** link in the header
+3. Use your browser's print dialog to:
+   - Save as PDF
+   - Print to paper
+   - Adjust print settings
+
+### What Gets Printed
+
+The print view includes:
+- **Header**: Title, subtitle, and attribution
+- **All currently loaded verses** with:
+  - Verse references
+  - English and Hebrew text
+  - Figurative language highlighting preserved
+  - Deliberations for verses with open detail panels
+  - Annotation details for clicked instances
+- **Footer**: Page numbers and project information
+
+### What Gets Hidden in Print
+
+To improve readability, these elements are hidden:
+- Sidebar filters and controls
+- Navigation buttons
+- Interactive elements (keyboards, toggles)
+- Background colors (except highlights)
+- About page overlay
+
+### Print Tips
+
+**For best results:**
+1. **Select your text version first**
+   - Choose Sacred or Traditional Jewish before printing
+   - Traditional Jewish text is designed for respectful printing
+2. **Load all desired results**
+   - Use "Load More" to include additional pages
+   - Print shows all currently loaded verses
+3. **Open details you want printed**
+   - Click verse headers to include deliberations in print
+   - Click figurative text to include annotation details
+4. **Use landscape orientation**
+   - Recommended for dual-language layout
+   - Set in browser print dialog
+5. **Save as PDF for archival**
+   - More portable than paper
+   - Preserves formatting and highlighting
+
+### Print Limitations
+
+- **Maximum verses**: Only verses currently loaded in browser (not entire database)
+- **Highlighting**: Color-coded types appear as underlined text in grayscale printing
+- **Hebrew fonts**: Ensure your printer/PDF renderer supports Hebrew fonts
+- **File size**: Large result sets may produce large PDFs
+
+---
+
 ## Navigation and Pagination
 
 **Location:** Bottom of screen (fixed stats bar)
@@ -703,8 +770,8 @@ The interface includes:
 
 Found a bug or have a feature suggestion?
 
-**Report it:** [GitHub Issues](https://github.com/[username]/bible-figurative-language-concordance/issues)
+**Report it:** [GitHub Issues](https://github.com/ARobicsek/bible-figurative-language/issues)
 
-**Suggest features:** [GitHub Discussions](https://github.com/[username]/bible-figurative-language-concordance/discussions)
+**Suggest features:** Use GitHub Issues with the "enhancement" label
 
 We welcome all feedback to improve the interface!
