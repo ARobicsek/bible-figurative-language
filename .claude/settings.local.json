@@ -46,7 +46,8 @@
       "Bash(git log:*)",
       "Bash(curl:*)",
       "Bash(start /B python:*)",
-      "Bash(netstat:*)"
+      "Bash(netstat:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []
