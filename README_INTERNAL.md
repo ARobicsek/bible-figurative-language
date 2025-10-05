@@ -2,20 +2,31 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
-**LATEST ACHIEVEMENT (Oct 3, 2025 - Evening)**: ✅ **Pagination button fix complete!**
-- Fixed "Load Next Verses" button to show accurate verse counts based on actual remaining verses
-- Button now intelligently detects when approaching end of results (e.g., "Load Next 2 Verses" instead of "Load Next 25 Verses")
-- Works correctly even when API returns incorrect total counts due to book-wide vs chapter-specific filtering
-- Enhanced user experience with clear, accurate loading feedback
+**LATEST ACHIEVEMENT (Oct 5, 2025)**: ✅ **Hebrew highlighting vowel mismatch bug FIXED!**
+- **Fixed Systematic Highlighting Bug**: Hebrew verses with vowel point differences between database and source text now highlight correctly
+  - **Root cause**: Highlighting logic built regex patterns from database text with specific vowels (e.g., tzere ֵ), which failed to match verse text with different vowels (e.g., segol ֶ)
+  - **Example**: Deuteronomy 32:50 phrase "וַיֵּאָ֖סֶף אֶל־עַמָּֽיו" wasn't highlighting because database had tzere (ֵ) under samekh but verse had segol (ֶ)
+  - **Impact**: Any verse where AI analysis used different vowel than source text would fail to highlight
+  - **Solution**: Complete rewrite of Hebrew highlighting to strip ALL diacritics, match on consonants only, then map back to original positions
+  - **Technical approach**: Build position mapping (normalized → original), find match in vowel-stripped text, extract from original WITH diacritics
+  - **Result**: 100% reliable highlighting regardless of vowel point variations - matches based purely on consonants and word structure
+
+**PREVIOUS ACHIEVEMENT (Oct 5, 2025)**: ✅ **Shaddai pattern fix & figurative_text_non_sacred field complete!**
+- **Fixed Shaddai Pattern**: Divine name "Shaddai" (שַׁדַּי) now only modified when standalone, not inside other words
+  - Updated regex to allow cantillation marks after final letter before word boundary
+  - Pattern now matches שַׁדַּי֙ (with pashta mark) correctly
+  - Genesis 28:3 and 35:11 now display correctly as שַׁקַּי֙ in Traditional Jewish mode
+- **New figurative_text_non_sacred Field**: Added English non-sacred text for figurative phrases
+  - Created new database field in figurative_language table
+  - Regenerated all 6 non-sacred fields (was 5, now includes figurative_text_non_sacred)
+  - 209 English figurative phrases modified with divine name transformations
+  - Web interface now uses non-sacred English phrases when "Traditional Jewish" selected
+  - Complete sacred/non-sacred support across all text types
 
 **PREVIOUS ACHIEVEMENTS**:
+- **Oct 3 Evening**: Pagination button fix complete with accurate verse counts
 - **Oct 3 Evening**: Print feature complete and optimized with 43% larger fonts and proper line breaks
 - **Oct 3 Afternoon**: Fixed deliberation line breaks (`white-space: pre-wrap`)
-- Increased all print font sizes by 43% for better readability (30% + additional 10%)
-- Professional formatting with side-by-side Hebrew/English layout
-- Properly spaced deliberation sections and full annotation details
-
-**PREVIOUS ACHIEVEMENTS**:
 - **Oct 3 Morning**: Fixed HTML entity highlighting bug affecting verses with `&thinsp;` entities. Psalms 84:4 and similar verses now highlight correctly.
 - **Oct 2, 2025**: Fixed divine names modifier bug and added Eloah support. All non-sacred Hebrew text fields regenerated with corrected modifier.
 
@@ -397,6 +408,175 @@ Created test scripts to verify the fix:
 - Non-divine words are preserved as-is
 - Divine names properly modified across all three field types
 - New support for Eloah divine name (singular form)
+
+---
+
+## 🐛 SHADDAI PATTERN FIX & FIGURATIVE_TEXT_NON_SACRED FIELD (Oct 5, 2025)
+
+### **Problem 1: Shaddai Pattern Not Matching Standalone Divine Names**
+
+The Shaddai divine name (שַׁדַּי) was not being modified in "Traditional Jewish" mode even when it appeared as a standalone divine name:
+- ❌ Genesis 28:3: `וְאֵ֤ל שַׁדַּי֙` → Should be `שַׁקַּי֙` but remained unmodified
+- ❌ Genesis 35:11: `אֲנִ֨י אֵ֤ל שַׁדַּי֙` → Should be `שַׁקַּי֙` but remained unmodified
+
+### **Problem 2: Missing English Non-Sacred Field for Figurative Phrases**
+
+When users selected "Traditional Jewish" mode, the English translation of figurative phrases in the Annotation Details panel still showed sacred divine names because there was no non-sacred version of the `figurative_text` field.
+
+### **Root Cause (Problem 1)**
+
+**File**: `private/src/hebrew_figurative_db/text_extraction/hebrew_divine_names_modifier.py`
+
+The Shaddai regex pattern required a word boundary immediately after the final yud (י), but in Biblical Hebrew with cantillation marks, the marks appear AFTER the letters. So שַׁדַּי֙ has the pashta mark (֙, U+0599) after the yud, preventing the pattern from matching.
+
+**Original broken pattern:**
+```regex
+(?=[\s\-\u05BE.,;:!?]|$)  # Requires immediate word boundary after yud
+```
+
+This failed to match `שַׁדַּי֙` because the pashta (֙) comes between the yud and the space.
+
+### **Solution**
+
+**Updated Shaddai pattern to allow cantillation marks after final letter:**
+
+Lines 198, 212 in `hebrew_divine_names_modifier.py`:
+```regex
+# Before (broken):
+(?=[\s\-\u05BE.,;:!?]|$)
+
+# After (fixed):
+(?=[\u0591-\u05C7]*(?:[\s\-\u05BE.,;:!?]|$))
+```
+
+This allows optional cantillation marks (`[\u0591-\u05C7]*`) after the yud before checking for the word boundary.
+
+**Pattern now correctly matches:**
+- `שַׁדַּי֙ ` (with pashta before space)
+- `שַׁדַּי֙.` (with pashta before punctuation)
+- `שַׁדַּי` (without cantillation)
+- `שדי ` (unvoweled with space)
+
+**Still correctly rejects:**
+- `בשדי` (part of another word - ב prefix)
+- `שדיך` (has extra letter after)
+- `משדים` (different word entirely)
+
+### **Solution (Problem 2)**
+
+**Created new `figurative_text_non_sacred` field and complete regeneration pipeline:**
+
+1. **Database Schema** - Added new field:
+   ```sql
+   ALTER TABLE figurative_language
+   ADD COLUMN figurative_text_non_sacred TEXT
+   ```
+
+2. **Regeneration Script** - Updated `regenerate_all_non_sacred_fields.py`:
+   - Now processes **6 non-sacred fields** (was 5):
+     1. `verses.hebrew_text_non_sacred`
+     2. `verses.english_text_non_sacred`
+     3. `verses.english_text_clean_non_sacred`
+     4. `verses.figurative_detection_deliberation_non_sacred`
+     5. `figurative_language.figurative_text_in_hebrew_non_sacred`
+     6. **`figurative_language.figurative_text_non_sacred` (NEW!)**
+
+3. **API Updates** (`web/api_server.py`):
+   - Line 420: Added `figurative_text_non_sacred` to SELECT query
+   - Line 543: Added field to processed annotation objects
+
+4. **Frontend Updates** (`web/biblical_figurative_interface.html`):
+   - Line 1683-1685: Print function now uses non-sacred field when `useNonSacred=true`
+   - Lines 2500, 2617, 2658, 2661, 2670: Highlighting logic selects correct English field based on `textVersion`
+
+### **Database Regeneration Results**
+
+Ran `regenerate_all_non_sacred_fields.py` with improved Shaddai pattern:
+
+**Comparison with previous run:**
+- `verses.hebrew_text_non_sacred`: 2738 modified (was 2736, +2 verses with Shaddai fix)
+- `figurative_language.figurative_text_non_sacred`: 209 modified (NEW field!)
+
+The +2 additional Hebrew verses modified are Genesis 28:3 and 35:11, confirming the Shaddai fix works.
+
+### **Verification**
+
+**Genesis 28:3 (before fix):**
+```
+hebrew_text_non_sacred: וְאֵ֤ל שַׁדַּי֙ יְבָרֵ֣ךְ...
+                              ^^^^^ WRONG - should be שַׁקַּי֙
+```
+
+**Genesis 28:3 (after fix):**
+```
+hebrew_text_non_sacred: וְאֵ֤ל שַׁקַּי֙ יְבָרֵ֣ךְ...
+                              ^^^^^ CORRECT!
+```
+
+**Genesis 35:11 verification:**
+```
+hebrew_text_non_sacred: וַיֹּ֩אמֶר֩ ל֨וֹ אֱלֹקִ֜ים אֲנִ֨י קֵ֤ל שַׁקַּי֙ פְּרֵ֣ה וּרְבֵ֔ה...
+                                                        ^^^^^ CORRECT!
+```
+
+**Test suite verification:**
+```python
+# Standalone divine names (should modify):
+'וְאֵ֤ל שַׁדַּי֙ יְבָרֵ֣ךְ' → 'וְאֵ֤ל שַׁקַּי֙ יְבָרֵ֣ךְ' ✓
+'שדי '                    → 'שקי '                    ✓
+
+# Non-divine words (should NOT modify):
+'בשדי'                    → 'בשדי'                    ✓
+'שדיך'                    → 'שדיך'                    ✓
+```
+
+### **Files Modified**
+
+**Core modifier:**
+- `private/src/hebrew_figurative_db/text_extraction/hebrew_divine_names_modifier.py` (lines 198, 212, 272-273)
+  - Fixed Shaddai pattern to allow cantillation marks before word boundary
+  - Updated both voweled and unvoweled patterns
+  - Updated `has_divine_names()` method
+
+**Regeneration script:**
+- `regenerate_all_non_sacred_fields.py`
+  - Added `figurative_text_non_sacred` field creation
+  - Added regeneration for new field (209 instances modified)
+  - Updated field count documentation (6 fields total)
+
+**API server:**
+- `web/api_server.py` (lines 420, 543)
+  - Added new field to SELECT query
+  - Added field to annotation response objects
+
+**Web interface:**
+- `web/biblical_figurative_interface.html` (lines 1683-1685, 2500, 2617, 2658, 2661, 2670)
+  - Print function uses non-sacred field for Traditional Jewish mode
+  - Highlighting logic selects correct English field based on text version
+  - All display modes now respect sacred/non-sacred selection
+
+**Database:**
+- `database/Pentateuch_Psalms_fig_language.db`
+  - New column added to `figurative_language` table
+  - All 6 non-sacred fields regenerated with improved modifier
+  - 2738 Hebrew verses modified (includes Shaddai fixes)
+  - 209 English figurative phrases modified
+
+### **Impact**
+
+**Complete Sacred/Non-Sacred Support:**
+- ✅ All standalone Shaddai divine names now correctly modified (Genesis 28:3, 35:11, etc.)
+- ✅ Shaddai pattern only modifies standalone divine names, not partial matches inside words
+- ✅ English figurative phrases now have non-sacred versions in database
+- ✅ Web interface displays non-sacred English phrases when "Traditional Jewish" selected
+- ✅ Print function outputs non-sacred text for both Hebrew and English
+- ✅ Complete consistency across all 6 non-sacred fields
+
+**Technical Robustness:**
+- Cantillation-aware regex patterns handle all Biblical Hebrew text
+- Word boundary detection works with vowels, marks, and punctuation
+- Pattern correctly distinguishes divine names from similar letter sequences
+- All test cases pass for both modification and preservation scenarios
 
 ---
 
