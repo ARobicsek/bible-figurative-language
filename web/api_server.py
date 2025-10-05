@@ -417,7 +417,7 @@ def get_verses():
             placeholders = ','.join(['?' for _ in verse_ids])
             annotations_query = f"""
             SELECT
-                verse_id, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_non_sacred,
+                verse_id, figurative_text, figurative_text_non_sacred, figurative_text_in_hebrew, figurative_text_in_hebrew_non_sacred,
                 final_metaphor, final_simile, final_personification, final_idiom,
                 final_hyperbole, final_metonymy, final_other,
                 target, vehicle, ground, posture,
@@ -539,7 +539,8 @@ def get_verses():
                     return text.strip()  # If somehow it doesn't meet criteria, return original stripped
 
                 processed_annotations.append({
-                    'figurative_text': annotation['figurative_text'] or '',  # Keep English figurative text as-is
+                    'figurative_text': annotation['figurative_text'] or '',  # English figurative text (sacred)
+                    'figurative_text_non_sacred': annotation['figurative_text_non_sacred'] or '',  # English figurative text (non-sacred)
                     'figurative_text_in_hebrew': clean_hebrew_figurative_text(annotation['figurative_text_in_hebrew']),
                     'figurative_text_in_hebrew_non_sacred': clean_hebrew_figurative_text(annotation['figurative_text_in_hebrew_non_sacred']),
                     'types': types,
@@ -586,11 +587,25 @@ def get_verses():
                 if book_conds:
                     count_conditions.append(f"({' OR '.join(book_conds)})")
 
+            if chapters_str and chapters_str.lower() != 'all':
+                chapters = SearchProcessor.parse_range_string(chapters_str)
+                if chapters:
+                    placeholders = ','.join(['?' for _ in chapters])
+                    count_conditions.append(f"v.chapter IN ({placeholders})")
+                    count_params_list.extend(chapters)
+
+            if verses_str and verses_str.lower() != 'all':
+                verses = SearchProcessor.parse_range_string(verses_str)
+                if verses:
+                    placeholders = ','.join(['?' for _ in verses])
+                    count_conditions.append(f"v.verse IN ({placeholders})")
+                    count_params_list.extend(verses)
+
             if search_hebrew:
                 count_conditions.append("v.hebrew_text_stripped LIKE ?")
                 count_params_list.append(f"%{search_hebrew}%")
             if search_english:
-                count_conditions.append("v.english_text LIKE ?")
+                count_conditions.append("v.english_text_clean LIKE ?")
                 count_params_list.append(f"%{search_english}%")
 
             if count_conditions:
@@ -618,12 +633,27 @@ def get_verses():
                 if book_conds:
                     verse_conditions.append(f"({' OR '.join(book_conds)})")
 
+            # Add chapter and verse filters
+            if chapters_str and chapters_str.lower() != 'all':
+                chapters = SearchProcessor.parse_range_string(chapters_str)
+                if chapters:
+                    placeholders = ','.join(['?' for _ in chapters])
+                    verse_conditions.append(f"v.chapter IN ({placeholders})")
+                    verse_params.extend(chapters)
+
+            if verses_str and verses_str.lower() != 'all':
+                verses = SearchProcessor.parse_range_string(verses_str)
+                if verses:
+                    placeholders = ','.join(['?' for _ in verses])
+                    verse_conditions.append(f"v.verse IN ({placeholders})")
+                    verse_params.extend(verses)
+
             # Add text search
             if search_hebrew:
                 verse_conditions.append("v.hebrew_text_stripped LIKE ?")
                 verse_params.append(f"%{search_hebrew}%")
             if search_english:
-                verse_conditions.append("v.english_text LIKE ?")
+                verse_conditions.append("v.english_text_clean LIKE ?")
                 verse_params.append(f"%{search_english}%")
 
             # Add non-figurative condition
@@ -692,7 +722,7 @@ def get_verses():
                 'limit': limit,
                 'offset': offset,
                 'total': total_count,
-                'has_more': offset + limit < total_count,
+                'has_more': offset + len(verses) < total_count,
                 'total_figurative_instances': total_figurative_instances
             }
         })
@@ -844,7 +874,7 @@ def get_verses_count():
                 conditions.append("v.hebrew_text_stripped LIKE ?")
                 params.append(f"%{search_hebrew}%")
             if search_english:
-                conditions.append("v.english_text LIKE ?")
+                conditions.append("v.english_text_clean LIKE ?")
                 params.append(f"%{search_english}%")
 
             if conditions:
@@ -890,7 +920,7 @@ def get_verses_count():
                 conditions.append("v.hebrew_text_stripped LIKE ?")
                 params.append(f"%{search_hebrew}%")
             if search_english:
-                conditions.append("v.english_text LIKE ?")
+                conditions.append("v.english_text_clean LIKE ?")
                 params.append(f"%{search_english}%")
 
             # Add non-figurative condition
@@ -947,7 +977,7 @@ def get_verses_count():
                 conditions.append("v.hebrew_text_stripped LIKE ?")
                 params.append(f"%{search_hebrew}%")
             if search_english:
-                conditions.append("v.english_text LIKE ?")
+                conditions.append("v.english_text_clean LIKE ?")
                 params.append(f"%{search_english}%")
 
             # Check if metadata search is active
@@ -1038,7 +1068,7 @@ def get_verses_count():
                     count_conditions.append("v.hebrew_text_stripped LIKE ?")
                     count_params.append(f"%{search_hebrew}%")
                 if search_english:
-                    count_conditions.append("v.english_text LIKE ?")
+                    count_conditions.append("v.english_text_clean LIKE ?")
                     count_params.append(f"%{search_english}%")
 
                 # Add figurative type filter
