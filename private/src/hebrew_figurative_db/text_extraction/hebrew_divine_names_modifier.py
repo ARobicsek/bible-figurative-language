@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Hebrew Divine Names Modifier (Improved Version)
+Hebrew Divine Names Modifier (Improved Version)  
 
 Modifies Hebrew text to render divine names in non-sacred format for traditional Jews,
 with support for both voweled and unvoweled text.
