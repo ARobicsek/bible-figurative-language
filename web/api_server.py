@@ -56,12 +56,23 @@ class DatabaseManager:
 
     def get_connection(self):
         """Create database connection with proper configuration"""
-        conn = sqlite3.connect(self.db_path, timeout=30.0, check_same_thread=False)
+        # In production, connect in read-only mode to avoid "attempt to write a readonly database" errors.
+        if os.environ.get('FLASK_ENV') == 'production':
+            # Use URI format for read-only connection.
+            db_uri = f"file:{self.db_path}?mode=ro"
+            conn = sqlite3.connect(db_uri, uri=True, timeout=30.0, check_same_thread=False)
+        else:
+            conn = sqlite3.connect(self.db_path, timeout=30.0, check_same_thread=False)
+
         conn.row_factory = sqlite3.Row  # Enable dict-like access to rows
-        # Optimize for read-heavy workload (minimal memory footprint for 512MB RAM)
-        conn.execute("PRAGMA cache_size = -8000")  # 8MB cache (was 64MB - too large for free tier)
-        conn.execute("PRAGMA temp_store = MEMORY")
-        conn.execute("PRAGMA mmap_size = 30000000")  # 30MB memory-mapped I/O for faster reads
+
+        # Only apply performance PRAGMAs in a writable environment (not production).
+        # These can fail on read-only filesystems like Render.com.
+        if os.environ.get('FLASK_ENV') != 'production':
+            conn.execute("PRAGMA cache_size = -8000")  # 8MB cache
+            conn.execute("PRAGMA temp_store = MEMORY")
+            conn.execute("PRAGMA mmap_size = 30000000")  # 30MB memory-mapped I/O
+
         return conn
 
     def execute_query(self, query: str, params: tuple = ()) -> List[Dict]:
