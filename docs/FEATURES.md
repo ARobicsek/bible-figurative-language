@@ -115,16 +115,16 @@ The interface will:
 
 Each type is color-coded for easy identification:
 
-| Type | Color (Hex) | Description |
-|------|-------------|-------------|
-| **Metaphor** | `#a0695f` (Warm Brown) | Direct comparison without "like/as" |
-| **Simile** | `#5a8ca8` (Steel Blue) | Comparison with "like/as" |
-| **Personification** | `#9370a8` (Muted Purple) | Human qualities to non-human entities |
-| **Idiom** | `#c9a255` (Golden) | Fixed non-literal expressions |
-| **Hyperbole** | `#c17a61` (Terracotta) | Deliberate exaggeration |
-| **Metonymy** | `#5d9b82` (Sage Green) | Substitution of associated concept |
-| **Other** | `#7a8896` (Slate Gray) | Other figurative types |
-| **Not Figurative** | Light Gray | Verses without figurative language |
+| Type | Color | Description |
+|------|-------|-------------|
+| **Metaphor** | ![#a0695f](https://via.placeholder.com/15/a0695f/a0695f.png) Warm Brown | Direct comparison without "like/as" |
+| **Simile** | ![#5a8ca8](https://via.placeholder.com/15/5a8ca8/5a8ca8.png) Steel Blue | Comparison with "like/as" |
+| **Personification** | ![#9370a8](https://via.placeholder.com/15/9370a8/9370a8.png) Muted Purple | Human qualities to non-human entities |
+| **Idiom** | ![#c9a255](https://via.placeholder.com/15/c9a255/c9a255.png) Golden | Fixed non-literal expressions |
+| **Hyperbole** | ![#c17a61](https://via.placeholder.com/15/c17a61/c17a61.png) Terracotta | Deliberate exaggeration |
+| **Metonymy** | ![#5d9b82](https://via.placeholder.com/15/5d9b82/5d9b82.png) Sage Green | Substitution of associated concept |
+| **Other** | ![#7a8896](https://via.placeholder.com/15/7a8896/7a8896.png) Slate Gray | Other figurative types |
+| **Not Figurative** | ![#d3d3d3](https://via.placeholder.com/15/d3d3d3/d3d3d3.png) Light Gray | Verses without figurative language |
 
 ### How to Filter
 
@@ -156,7 +156,6 @@ When checked, this shows verses where the AI found **no figurative language**.
 
 The interface provides traditional Jewish text options that modify how divine names appear.
 
-### Hebrew Text Options
 
 **Sacred Names** (default)
 - Displays Hebrew text with full divine names as they appear in the original
@@ -168,24 +167,12 @@ The interface provides traditional Jewish text options that modify how divine na
 - Example: `ה'` or `אלקים` instead of full forms
 - See [NON_SACRED_HEBREW.md](NON_SACRED_HEBREW.md) for complete details
 
-### English Text Options
-
-**Sacred Names** (default)
-- Standard English translation from Sefaria
-- Example: "the LORD" or "God"
-
-**Traditional Jewish**
-- Modified English following traditional conventions
-- Example: "Hashem" or "the L-rd"
-
 ### When to Use Non-Sacred Text
 
 **Recommended for:**
 - Traditional Jewish study environments
 - Printing for educational use in Orthodox contexts
 - Respecting cultural sensitivities
-
-**Important:** Non-sacred text is AI-modified and should be reviewed by qualified authorities for ritual use.
 
 ---
 
