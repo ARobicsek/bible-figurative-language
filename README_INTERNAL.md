@@ -2,7 +2,27 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
-**LATEST ACHIEVEMENT (Oct 5, 2025)**: ✅ **Hebrew highlighting vowel mismatch bug FIXED!**
+**LATEST ACHIEVEMENT (Oct 5, 2025)**: ✅ **Complete pagination system overhaul - accurate counts and button text!**
+- **Fixed Multiple Pagination Bugs**: Comprehensive fix for pagination counting and display issues
+  - **Bug 1 - has_more calculation**: Changed from `offset + limit < total` to `offset + len(verses) < total`
+    - Example: After loading 50 of 52 verses, API now correctly returns `has_more=False` instead of `True`
+  - **Bug 2 - Missing chapter/verse filters in count queries**: Added chapter and verse filters to all count query branches
+    - Root cause: Count queries were counting all of Deuteronomy (956 verses) instead of just chapter 32 (52 verses)
+    - Fixed in both `show_all_verses` and `show_not_figurative` count query branches
+  - **Bug 3 - Incorrect button text estimation**: Changed from last-batch-size tracking to remaining-verses calculation
+    - Formula: `Math.min(pagination.limit, totalCount - currentVerses)`
+    - Example: After loading 50 of 52 verses, button now shows "Load Next 2 Verses" instead of "Load Next 25 Verses"
+  - **Bug 4 - total_figurative_instances overwritten on loadMore**: Preserved count from initial load (updated by background count)
+    - Added preservation of both `total` and `total_figurative_instances` in loadMore function
+  - **Bug 5 - Inconsistent text search fields**: Fixed all instances of `english_text` → `english_text_clean`
+    - Root cause: Count endpoint searched `english_text` (39 results) while main endpoint searched `english_text_clean` (35 results)
+    - Replaced all 3 remaining instances in count queries for consistency
+- **Files Modified**:
+  - `web/api_server.py` (lines 590-602, 636-649, 696): Count query fixes and has_more calculation
+  - `web/biblical_figurative_interface.html` (lines 3194-3198, 3239-3248): Button text and loadMore preservation
+- **Result**: Perfect pagination - accurate counts, correct button text, proper "All verses loaded" detection
+
+**PREVIOUS ACHIEVEMENT (Oct 5, 2025)**: ✅ **Hebrew highlighting vowel mismatch bug FIXED!**
 - **Fixed Systematic Highlighting Bug**: Hebrew verses with vowel point differences between database and source text now highlight correctly
   - **Root cause**: Highlighting logic built regex patterns from database text with specific vowels (e.g., tzere ֵ), which failed to match verse text with different vowels (e.g., segol ֶ)
   - **Example**: Deuteronomy 32:50 phrase "וַיֵּאָ֖סֶף אֶל־עַמָּֽיו" wasn't highlighting because database had tzere (ֵ) under samekh but verse had segol (ֶ)

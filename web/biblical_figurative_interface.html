@@ -3191,20 +3191,11 @@
             const totalCount = appState.pagination.total;
             const totalFigurativeInstances = appState.pagination.total_figurative_instances || 0;
 
-            // Track the previous count to determine last batch size
-            const previousCount = appState.previousVerseCount || 0;
-            const lastBatchSize = currentVerses - previousCount;
-            appState.previousVerseCount = currentVerses;
+            // Calculate how many verses remain to be loaded
+            const remainingVerses = totalCount - currentVerses;
 
-            // Estimate next batch size
-            let estimatedNextBatch = appState.pagination.limit;
-
-            // If the last batch was smaller than the limit, it means we're approaching the end
-            // The next batch will be even smaller or non-existent
-            if (lastBatchSize > 0 && lastBatchSize < appState.pagination.limit) {
-                // Assume similar or smaller batch next time
-                estimatedNextBatch = lastBatchSize;
-            }
+            // Estimate next batch size based on remaining verses
+            let estimatedNextBatch = Math.min(appState.pagination.limit, remainingVerses);
 
             const nextButton = appState.pagination.hasMore ?
                 `<button class="nav-button" onclick="loadMore()">Load Next ${estimatedNextBatch} Verses</button>` :
@@ -3245,10 +3236,15 @@
                     // Only process results if this is still the most recent request
                     if (thisRequestId === appState.requestCounter && data) {
                         appState.verses = [...appState.verses, ...data.verses];
+                        // Preserve total and total_figurative_instances from initial load (may have been updated by background count)
+                        const preservedTotal = appState.pagination.total;
+                        const preservedFigurativeInstances = appState.pagination.total_figurative_instances;
                         // Convert API response to frontend format
                         appState.pagination = {
                             ...data.pagination,
-                            hasMore: data.pagination.has_more // Convert snake_case to camelCase
+                            hasMore: data.pagination.has_more, // Convert snake_case to camelCase
+                            total: preservedTotal || data.pagination.total,
+                            total_figurative_instances: preservedFigurativeInstances || data.pagination.total_figurative_instances
                         };
                         appState.filteredVerses = appState.verses;
                         renderVerses();
