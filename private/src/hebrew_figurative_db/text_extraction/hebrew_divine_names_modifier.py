@@ -189,19 +189,31 @@ class HebrewDivineNamesModifier:
         return modified
 
     def _modify_el_shaddai(self, text: str) -> str:
-        """Replace ד with ק in שַׁדַּי"""
-        # Unvoweled form
-        if 'שדי' in text:
-            modified = text.replace('שדי', 'שקי')
-            if modified != text:
-                self.logger.debug("El Shaddai (unvoweled) modified: שדי → שקי")
-        else:
-            modified = text
+        """Replace ד with ק in שַׁדַּי (only when it's a standalone divine name, not part of another word)"""
+        modified = text
 
-        # Voweled form with cantillation marks
-        shaddai_pattern = r'ש[\u0591-\u05C7]*[ַׁ]?[\u0591-\u05C7]*ד[\u0591-\u05C7]*[ַּ]?[\u0591-\u05C7]*י'
+        # Unvoweled form - only match when preceded/followed by word boundary
+        # Word boundaries: start/end of string, space, hyphen (maqaf), or common punctuation
+        # Allow optional cantillation marks after the yud before the word boundary
+        unvoweled_pattern = r'(^|[\s\-\u05BE.,;:!?])שדי(?=[\u0591-\u05C7]*(?:[\s\-\u05BE.,;:!?]|$))'
+        def unvoweled_replacer(match):
+            prefix = match.group(1)
+            return f"{prefix}שקי"
+
+        new_modified = re.sub(unvoweled_pattern, unvoweled_replacer, modified)
+        if new_modified != modified:
+            self.logger.debug("El Shaddai (unvoweled) modified: שדי → שקי")
+            modified = new_modified
+
+        # Voweled form with cantillation marks - only match standalone word
+        # Pattern: shin + (vowels/marks) + dalet + (vowels/marks) + yud + (optional cantillation after)
+        # Must be preceded by word boundary, and followed by cantillation+word boundary
+        # The yud can have cantillation marks after it, so we allow [\u0591-\u05C7]* after the final י
+        shaddai_pattern = r'(^|[\s\-\u05BE.,;:!?])ש[\u0591-\u05C7]*[ַׁ]?[\u0591-\u05C7]*ד[\u0591-\u05C7]*[ַּ]?[\u0591-\u05C7]*י(?=[\u0591-\u05C7]*(?:[\s\-\u05BE.,;:!?]|$))'
         def shaddai_replacer(match):
-            return match.group().replace('ד', 'ק')
+            prefix = match.group(1)
+            modified_word = match.group()[len(prefix):].replace('ד', 'ק')
+            return f"{prefix}{modified_word}"
 
         new_modified = re.sub(shaddai_pattern, shaddai_replacer, modified)
         if new_modified != modified:
@@ -257,8 +269,8 @@ class HebrewDivineNamesModifier:
             r'(^|[\s\-\u05BE])אֵ[\u0591-\u05C7]*ל(?=[\s\-\u05BE]|$)',  # El with tzere (standalone word only)
             r'צבאות',  # Tzevaot (unvoweled)
             r'צ[\u0591-\u05C7]*[ְ]?[\u0591-\u05C7]*ב[\u0591-\u05C7]*[ָ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*[וֹ]?[\u0591-\u05C7]*ת',  # Tzevaot (voweled with cantillation)
-            r'שדי',  # Shaddai (unvoweled)
-            r'ש[\u0591-\u05C7]*[ַׁ]?[\u0591-\u05C7]*ד[\u0591-\u05C7]*[ַּ]?[\u0591-\u05C7]*י',  # Shaddai (voweled with cantillation)
+            r'(^|[\s\-\u05BE.,;:!?])שדי(?=[\u0591-\u05C7]*(?:[\s\-\u05BE.,;:!?]|$))',  # Shaddai (unvoweled) - standalone only
+            r'(^|[\s\-\u05BE.,;:!?])ש[\u0591-\u05C7]*[ַׁ]?[\u0591-\u05C7]*ד[\u0591-\u05C7]*[ַּ]?[\u0591-\u05C7]*י(?=[\u0591-\u05C7]*(?:[\s\-\u05BE.,;:!?]|$))',  # Shaddai (voweled) - standalone only
             r'אלוה',  # Eloah (unvoweled)
             r'א[\u0591-\u05C7]*ֱ[\u0591-\u05C7]*ל[\u0591-\u05C7]*ו[\u0591-\u05C7]*ֹ[\u0591-\u05C7]*ה[\u0591-\u05C7]*ַ[\u0591-\u05C7]*'  # Eloah (voweled with cantillation)
         ]

@@ -119,15 +119,23 @@ class MultiModelGeminiClient:
             hebrew_text, english_text, text_context
         )
 
-        if error and (self._is_restriction_error(error) or self._is_server_error(error)):
-            fallback_reason = "content restriction" if self._is_restriction_error(error) else "server error"
+        if error and (self._is_restriction_error(error) or self._is_server_error(error) or self._is_truncation_error(error)):
+            # Determine fallback reason
+            if self._is_restriction_error(error):
+                fallback_reason = "content restriction"
+            elif self._is_truncation_error(error):
+                fallback_reason = "deliberation truncation"
+            else:
+                fallback_reason = "server error"
 
-            # Fallback to secondary model for content restrictions or persistent server errors
+            # Fallback to secondary model for content restrictions, truncation, or persistent server errors
             if self.logger:
                 self.logger.info(f"Primary model failed ({fallback_reason}: {error}), trying fallback...")
 
             if self._is_restriction_error(error):
                 self.restriction_reasons.append(f"{self.primary_model_name}: {error}")
+                self.fallback_count += 1
+            elif self._is_truncation_error(error):
                 self.fallback_count += 1
             else:
                 self.server_error_fallback_count += 1
@@ -207,6 +215,16 @@ class MultiModelGeminiClient:
                     cleaned_response, all_instances, deliberation, truncation_info = self._clean_response(response_text.strip(), hebrew_text, english_text)
                     metadata['all_detected_instances'] = all_instances
                     metadata['truncation_info'] = truncation_info
+
+                    # Check for deliberation truncation
+                    if self._is_deliberation_truncated(deliberation, len(all_instances)):
+                        error_msg = f"Deliberation truncation detected (length: {len(deliberation)}, instances: {len(all_instances)})"
+                        if self.logger:
+                            self.logger.warning(f"{model_name}: {error_msg}")
+                            self.logger.warning(f"Deliberation content: {deliberation[:200]}")
+                        # Return error to trigger fallback
+                        return "[]", error_msg, metadata
+
                     return cleaned_response, None, metadata
                 else:
                     return "[]", "No response text generated", metadata
@@ -399,6 +417,12 @@ Analysis:"""
         ]
         return any(indicator.lower() in error_msg.lower() for indicator in restriction_indicators)
 
+    def _is_truncation_error(self, error_msg: str) -> bool:
+        """Check if error message indicates deliberation truncation"""
+        if not error_msg:
+            return False
+        return "Deliberation truncation detected" in error_msg
+
     def _is_server_error(self, error_msg: str) -> bool:
         """Check if error indicates persistent server issues requiring fallback"""
         if not error_msg:
@@ -418,6 +442,69 @@ Analysis:"""
             return finish_reason.name in restriction_reasons
         else:
             return str(finish_reason).upper() in restriction_reasons
+
+    def _is_deliberation_truncated(self, deliberation: str, instances_found: int) -> bool:
+        """
+        Check if deliberation appears to be truncated.
+
+        A deliberation is considered truncated if:
+        1. It's very short (< 100 chars) AND no instances were found
+        2. It ends mid-sentence or mid-word
+        3. It's empty but we expected analysis
+        4. It ends with incomplete instructions like "THEN provide" or "JSON OUTPUT:"
+
+        Args:
+            deliberation: The extracted deliberation text
+            instances_found: Number of figurative language instances found
+
+        Returns:
+            True if deliberation appears truncated
+        """
+        # Empty deliberation is suspicious if no instances found
+        if not deliberation:
+            return True
+
+        # Check for mid-instruction truncation (applies regardless of length)
+        # These patterns indicate the LLM was cut off while giving instructions
+        mid_instruction_patterns = [
+            r'THEN provide\s*$',  # Ends with "THEN provide"
+            r'(?:now|then|finally)\s+(?:provide|output|return)\s*$',  # Ends with instruction start
+            r'JSON OUTPUT:\s*$',  # Ends with JSON OUTPUT: but no JSON
+            r'(?:provide|output|return)\s+(?:the|a|an)\s+\w*$',  # Ends mid-instruction
+        ]
+
+        if any(re.search(pattern, deliberation, re.IGNORECASE) for pattern in mid_instruction_patterns):
+            return True
+
+        # Very short deliberation with no instances is likely truncated
+        if len(deliberation) < 100 and instances_found == 0:
+            # Check if it ends mid-sentence or mid-word
+            # Common truncation patterns:
+            # - Ends with incomplete markdown: **"
+            # - Ends mid-word without punctuation
+            # - Ends with just a number and formatting: "1.  **"
+            truncation_patterns = [
+                r'\*\*["\']?\s*$',  # Ends with ** or **" or **'
+                r'\d+\.\s+\*\*\s*$',  # Ends with number and **
+                r'[a-zA-Z]\s*$',  # Ends mid-word
+                r'^\s*$',  # Empty or whitespace only
+            ]
+
+            if any(re.search(pattern, deliberation) for pattern in truncation_patterns):
+                return True
+
+            # Also check if deliberation is suspiciously short without proper conclusion
+            # A complete "no figurative language" analysis should be at least a few sentences
+            if len(deliberation) < 150 and instances_found == 0:
+                # Check if it lacks typical completion markers
+                has_completion = any(marker in deliberation.lower() for marker in [
+                    'therefore', 'thus', 'in conclusion', 'no figurative',
+                    'excluding', 'literal', 'none found'
+                ])
+                if not has_completion:
+                    return True
+
+        return False
 
     def _clean_response(self, response_text: str, hebrew_text: str, english_text: str) -> Tuple[str, List[Dict], str]:
         """Clean and parse the JSON response, returning valid instances, all instances, and deliberation."""
