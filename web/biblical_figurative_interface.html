@@ -1680,7 +1680,9 @@
             const hebrewPhrase = useNonSacred ?
                 (annotation.figurative_text_in_hebrew_non_sacred || annotation.figurative_text_in_hebrew) :
                 annotation.figurative_text_in_hebrew;
-            const englishPhrase = annotation.figurative_text;
+            const englishPhrase = useNonSacred ?
+                (annotation.figurative_text_non_sacred || annotation.figurative_text) :
+                annotation.figurative_text;
 
             // Get all active types
             const activeTypes = annotation.types || [];
@@ -2495,7 +2497,7 @@
             const relevantAnnotations = annotations.filter(annotation => {
                 const rawFigurativeText = language === 'hebrew' ?
                     (appState.textVersion === 'sacred' ? annotation.figurative_text_in_hebrew : annotation.figurative_text_in_hebrew_non_sacred) :
-                    annotation.figurative_text;
+                    (appState.textVersion === 'sacred' ? annotation.figurative_text : annotation.figurative_text_non_sacred);
                 const figurativeText = language === 'hebrew' ? cleanHebrewText(rawFigurativeText) : rawFigurativeText;
 
                 const visibleTypes = annotation.types.filter(type => appState.selectedTypes.has(type));
@@ -2612,7 +2614,7 @@
                 annotations.forEach((ann, i) => {
                     const figText = language === 'hebrew' ?
                         (appState.textVersion === 'sacred' ? ann.figurative_text_in_hebrew : ann.figurative_text_in_hebrew_non_sacred) :
-                        ann.figurative_text;
+                        (appState.textVersion === 'sacred' ? ann.figurative_text : ann.figurative_text_non_sacred);
                     console.log(`[${verseRef}] Annotation ${i+1}: "${figText}"`);
                     console.log(`[${verseRef}] Match test: ${text.includes(figText || '')}`);
 
@@ -2653,10 +2655,10 @@
             relevantAnnotations.sort((a, b) => {
                 const rawTextA = language === 'hebrew' ?
                     (appState.textVersion === 'sacred' ? a.figurative_text_in_hebrew : a.figurative_text_in_hebrew_non_sacred) :
-                    a.figurative_text;
+                    (appState.textVersion === 'sacred' ? a.figurative_text : a.figurative_text_non_sacred);
                 const rawTextB = language === 'hebrew' ?
                     (appState.textVersion === 'sacred' ? b.figurative_text_in_hebrew : b.figurative_text_in_hebrew_non_sacred) :
-                    b.figurative_text;
+                    (appState.textVersion === 'sacred' ? b.figurative_text : b.figurative_text_non_sacred);
                 const textA = language === 'hebrew' ? cleanHebrewText(rawTextA) : rawTextA;
                 const textB = language === 'hebrew' ? cleanHebrewText(rawTextB) : rawTextB;
                 return (textB || '').length - (textA || '').length;
@@ -2665,7 +2667,7 @@
             relevantAnnotations.forEach((annotation, annIndex) => {
                 const rawFigurativeText = language === 'hebrew' ?
                     (appState.textVersion === 'sacred' ? annotation.figurative_text_in_hebrew : annotation.figurative_text_in_hebrew_non_sacred) :
-                    annotation.figurative_text;
+                    (appState.textVersion === 'sacred' ? annotation.figurative_text : annotation.figurative_text_non_sacred);
                 const figurativeText = language === 'hebrew' ? cleanHebrewText(rawFigurativeText) : rawFigurativeText;
 
                 // Debug logging for Numbers 1:22 annotations
@@ -2698,70 +2700,121 @@
                         return quotesBeforeMatch > closingQuotesBeforeMatch;
                     };
 
-                    // For Hebrew, always use normalized matching (skip exact match)
+                    // For Hebrew, always use normalized matching (strip ALL diacritics)
                     if (language === 'hebrew') {
-                        // Remove HTML tags and entities from the verse text for matching
-                        const textWithoutHTML = highlightedText
-                            .normalize('NFD')  // Unicode normalization
-                            .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
-                        .replace(/<[^>]*>/g, '') // Remove other HTML tags
-                            .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
-                            .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
-                            .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
-                            .replace(/־/g, ' ') // CRITICAL: Replace maqaf (U+05BE) with space BEFORE removing diacritics!
-                            .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics (excluding U+05BE maqaf)
-                            .replace(/\s+/g, ' ') // Normalize whitespace
-                            .trim();
-
-                        // Also normalize the figurative text (but keep HTML entities for pattern building)
+                        // Normalize the figurative text - strip ALL diacritics
                         const normalizedFigText = trimmedFigText
                             .normalize('NFD')  // Unicode normalization
-                            .replace(/־/g, ' ') // CRITICAL: Replace maqaf BEFORE removing diacritics!
-                            .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew diacritics (excluding U+05BE maqaf)
-                            .replace(/&[a-zA-Z0-9#]+;/g, ' ')  // Replace HTML entities with spaces for matching
+                            .replace(/־/g, ' ') // Replace maqaf with space BEFORE removing diacritics
+                            .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove ALL Hebrew diacritics
+                            .replace(/&[a-zA-Z0-9#]+;/g, ' ')  // Replace HTML entities with spaces
                             .replace(/\s+/g, ' ')
                             .trim();
 
-                        if (textWithoutHTML.includes(trimmedFigText) || textWithoutHTML.includes(normalizedFigText)) {
-                            // Found a match, now build regex from ORIGINAL trimmedFigText (which may contain &thinsp; etc)
-                            // We need to handle HTML entities as complete units
+                        // Build a mapping of original highlightedText positions to normalized positions
+                        // This allows us to find where the match occurs in the original text
+                        const normalizedToOriginalMap = [];
+                        let normalizedText = '';
+                        let tempText = highlightedText;
 
-                            // Build regex pattern, handling HTML entities as units
-                            let flexiblePattern = '';
-                            let i = 0;
-                            while (i < trimmedFigText.length) {
-                                // Check if we're at the start of an HTML entity
-                                if (trimmedFigText[i] === '&') {
-                                    const entityMatch = trimmedFigText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
-                                    if (entityMatch) {
-                                        // Found complete HTML entity - escape it and add to pattern
-                                        const entity = entityMatch[0];
-                                        const escapedEntity = entity.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                                        // Entity can be followed by diacritics/HTML
-                                        flexiblePattern += escapedEntity + '(?:<br\\s*\\/??>|<[^>]*>|\\{[^}]*\\}|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4])*';
-                                        i += entity.length;
+                        for (let i = 0; i < tempText.length; i++) {
+                            const char = tempText[i];
+
+                            // Check if this is a diacritic or HTML/entity we should skip
+                            const isDiacritic = /[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/.test(char);
+
+                            if (!isDiacritic) {
+                                // Check for HTML tags
+                                if (char === '<') {
+                                    const tagMatch = tempText.substring(i).match(/^<[^>]*>/);
+                                    if (tagMatch) {
+                                        i += tagMatch[0].length - 1; // Skip the tag (minus 1 because loop will increment)
                                         continue;
                                     }
                                 }
 
-                                // Regular character handling
-                                const char = trimmedFigText[i];
-                                if (char === ' ') {
-                                    // Space should match: space, hyphen, diacritics, HTML tags, entities
-                                    flexiblePattern += '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4]|\\s)+';
-                                } else {
-                                    // Escape special regex chars, then allow diacritics after
-                                    const escapedChar = char.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                                    flexiblePattern += escapedChar + '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|[\\u0591-\\u05BD\\u05BF-\\u05C7\\u05F0-\\u05F4])*';
+                                // Check for HTML entities
+                                if (char === '&') {
+                                    const entityMatch = tempText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
+                                    if (entityMatch) {
+                                        normalizedText += ' ';
+                                        normalizedToOriginalMap.push(i);
+                                        i += entityMatch[0].length - 1; // Skip the entity
+                                        continue;
+                                    }
                                 }
-                                i++;
+
+                                // Check for maqaf
+                                if (char === '־') {
+                                    normalizedText += ' ';
+                                    normalizedToOriginalMap.push(i);
+                                } else {
+                                    normalizedText += char;
+                                    normalizedToOriginalMap.push(i);
+                                }
+                            }
+                        }
+
+                        // Normalize whitespace
+                        normalizedText = normalizedText.replace(/\s+/g, ' ').trim();
+
+                        // Find the normalized figurative text in the normalized verse
+                        const matchPos = normalizedText.indexOf(normalizedFigText);
+
+                        if (matchPos >= 0) {
+                            // Map back to original positions
+                            // Account for whitespace normalization by finding actual match position
+                            let searchText = normalizedText;
+                            let searchPos = matchPos;
+
+                            // Simple approach: rebuild without whitespace normalization for accurate mapping
+                            normalizedText = '';
+                            normalizedToOriginalMap.length = 0;
+
+                            for (let i = 0; i < tempText.length; i++) {
+                                const char = tempText[i];
+                                const isDiacritic = /[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/.test(char);
+
+                                if (!isDiacritic) {
+                                    if (char === '<') {
+                                        const tagMatch = tempText.substring(i).match(/^<[^>]*>/);
+                                        if (tagMatch) {
+                                            i += tagMatch[0].length - 1;
+                                            continue;
+                                        }
+                                    }
+
+                                    if (char === '&') {
+                                        const entityMatch = tempText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
+                                        if (entityMatch) {
+                                            normalizedText += ' ';
+                                            normalizedToOriginalMap.push(i);
+                                            i += entityMatch[0].length - 1;
+                                            continue;
+                                        }
+                                    }
+
+                                    normalizedText += (char === '־' ? ' ' : char);
+                                    normalizedToOriginalMap.push(i);
+                                }
                             }
 
-                            const regex = new RegExp(flexiblePattern, 'g');
-                            const match = highlightedText.match(regex);
+                            // Find match in the non-whitespace-normalized version
+                            const finalMatchPos = normalizedText.indexOf(normalizedFigText);
 
-                            if (match) {
-                                matchedText = match[0];
+                            if (finalMatchPos >= 0 && normalizedToOriginalMap[finalMatchPos] !== undefined) {
+                                const startPos = normalizedToOriginalMap[finalMatchPos];
+                                const endCharIndex = Math.min(finalMatchPos + normalizedFigText.length, normalizedToOriginalMap.length - 1);
+                                const endPos = normalizedToOriginalMap[endCharIndex];
+
+                                // Extract from original text, including any diacritics
+                                // We need to extend endPos to include trailing diacritics
+                                let actualEndPos = endPos + 1;
+                                while (actualEndPos < tempText.length && /[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/.test(tempText[actualEndPos])) {
+                                    actualEndPos++;
+                                }
+
+                                matchedText = tempText.substring(startPos, actualEndPos);
                             }
                         }
                     }
