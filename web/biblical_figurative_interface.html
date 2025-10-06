@@ -541,8 +541,96 @@
             color: var(--text-color);
         }
 
-        .deliberation-section {
+        .annotation-details:not(:empty) {
+            border: 1px solid var(--border-color);
+            padding: 1rem;
             margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .annotation-phrase {
+            display: grid;
+            grid-template-columns: 1fr 2px 1fr;
+            gap: 10px;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            align-items: center;
+        }
+
+        .annotation-phrase::after {
+            content: '';
+            grid-column: 2;
+            width: 1px;
+            height: 100%;
+            background-color: #999;
+            justify-self: center;
+        }
+
+        .annotation-phrase-hebrew {
+            grid-column: 1;
+            direction: rtl;
+            text-align: right;
+            font-family: 'Noto Sans Hebrew', serif;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .annotation-phrase-english {
+            grid-column: 3;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .type-badges {
+            margin-bottom: 1rem;
+        }
+
+        .type-indicator {
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 4px;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+        }
+
+        .type-indicator.metaphor {
+            background-color: var(--metaphor-color);
+        }
+
+        .type-indicator.simile {
+            background-color: var(--simile-color);
+        }
+
+        .type-indicator.personification {
+            background-color: var(--personification-color);
+        }
+
+        .type-indicator.idiom {
+            background-color: var(--idiom-color);
+        }
+
+        .type-indicator.hyperbole {
+            background-color: var(--hyperbole-color);
+        }
+
+        .type-indicator.metonymy {
+            background-color: var(--metonymy-color);
+        }
+
+        .type-indicator.other {
+            background-color: var(--other-color);
+        }
+
+        .deliberation-section {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-left: 3px solid var(--accent-color);
+            border-radius: 0 4px 4px 0;
         }
 
         .deliberation-section h4 {
@@ -1035,12 +1123,12 @@
 
             .print-deliberation .model-badge {
                 display: inline-block;
-                background-color: #007bff !important;
-                color: white !important;
+                background-color: #e9ecef !important;
+                color: #495057 !important;
                 padding: 3px 8px;
                 border-radius: 3px;
                 font-size: 13pt;
-                font-weight: 500;
+                font-weight: 600;
                 margin-left: 8px;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
@@ -1455,14 +1543,14 @@
             </div>
 
             <div class="panel-content">
+                <div class="annotation-details" id="annotation-details">
+                    <!-- Dynamically populated when annotation is clicked -->
+                </div>
+
                 <div class="deliberation-section">
                     <h4>Figurative Detection Deliberation</h4>
                     <p id="deliberation-text">Click on a verse to see the AI's deliberation process...</p>
                     <span class="model-badge" id="model-used"></span>
-                </div>
-
-                <div class="annotation-details" id="annotation-details">
-                    <!-- Dynamically populated when annotation is clicked -->
                 </div>
             </div>
         </div>
@@ -1649,7 +1737,15 @@
                     verseElement.querySelector('.verse-content').insertAdjacentHTML('afterbegin', textColumnsHTML);
                 }
 
-                // Add deliberation section
+                // Add annotation details for each figurative instance FIRST (on top)
+                if (verse.annotations && verse.annotations.length > 0) {
+                    verse.annotations.forEach(annotation => {
+                        const annotationHTML = createPrintAnnotation(annotation, useNonSacred);
+                        verseElement.querySelector('.verse-content').insertAdjacentHTML('beforeend', annotationHTML);
+                    });
+                }
+
+                // Add deliberation section AFTER annotations (on bottom)
                 const deliberationField = useNonSacred ?
                     (verse.figurative_detection_deliberation_non_sacred || verse.figurative_detection_deliberation) :
                     verse.figurative_detection_deliberation;
@@ -1664,14 +1760,6 @@
                         </div>
                     `;
                     verseElement.querySelector('.verse-content').insertAdjacentHTML('beforeend', deliberationHTML);
-                }
-
-                // Add annotation details for each figurative instance
-                if (verse.annotations && verse.annotations.length > 0) {
-                    verse.annotations.forEach(annotation => {
-                        const annotationHTML = createPrintAnnotation(annotation, useNonSacred);
-                        verseElement.querySelector('.verse-content').insertAdjacentHTML('beforeend', annotationHTML);
-                    });
                 }
             });
         }
@@ -3127,44 +3215,70 @@
                     </ul>
                 </div>` : '';
 
+            // Get Hebrew and English phrases (respect non-sacred setting)
+            const useNonSacred = appState.textVersion === 'non-sacred';
+            const hebrewPhrase = useNonSacred ?
+                (fullAnnotation.figurative_text_in_hebrew_non_sacred || fullAnnotation.figurative_text_in_hebrew) :
+                fullAnnotation.figurative_text_in_hebrew;
+            const englishPhrase = useNonSacred ?
+                (fullAnnotation.figurative_text_non_sacred || fullAnnotation.figurative_text) :
+                fullAnnotation.figurative_text;
+
+            // Create type badges
+            const typeLabels = {
+                'metaphor': 'Metaphor',
+                'simile': 'Simile',
+                'personification': 'Personification',
+                'idiom': 'Idiom',
+                'hyperbole': 'Hyperbole',
+                'metonymy': 'Metonymy',
+                'other': 'Other'
+            };
+            const typeBadges = fullAnnotation.types.map(type =>
+                `<span class="type-indicator ${type}">${typeLabels[type]}</span>`
+            ).join('');
+
             const detailsHTML = `
-                <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
-                    <h4 style="color: var(--accent-color); margin-bottom: 1rem;">Annotation Details</h4>
+                <h4 style="color: var(--accent-color); margin-bottom: 1rem;">Annotation Details</h4>
 
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
-                        <div>
-                            <strong>Target:</strong><br>
-                            <small>${Array.isArray(fullAnnotation.target) ? fullAnnotation.target.join(' → ') : (fullAnnotation.target || 'N/A')}</small>
-                        </div>
-                        <div>
-                            <strong>Vehicle:</strong><br>
-                            <small>${Array.isArray(fullAnnotation.vehicle) ? fullAnnotation.vehicle.join(' → ') : (fullAnnotation.vehicle || 'N/A')}</small>
-                        </div>
-                        <div>
-                            <strong>Ground:</strong><br>
-                            <small>${Array.isArray(fullAnnotation.ground) ? fullAnnotation.ground.join(' → ') : (fullAnnotation.ground || 'N/A')}</small>
-                        </div>
-                        <div>
-                            <strong>Posture:</strong><br>
-                            <small>${Array.isArray(fullAnnotation.posture) ? fullAnnotation.posture.join(' → ') : (fullAnnotation.posture || 'N/A')}</small>
-                        </div>
-                        <div>
-                            <strong>Types:</strong><br>
-                            <small>${fullAnnotation.types.join(', ')}</small>
-                        </div>
+                <div class="annotation-phrase">
+                    <div class="annotation-phrase-hebrew">${hebrewPhrase || ''}</div>
+                    <div class="annotation-phrase-english">${englishPhrase || ''}</div>
+                </div>
+
+                <div class="type-badges">
+                    ${typeBadges}
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
+                    <div>
+                        <strong>Target:</strong><br>
+                        <small>${Array.isArray(fullAnnotation.target) ? fullAnnotation.target.join(' → ') : (fullAnnotation.target || 'N/A')}</small>
                     </div>
-
-                    <div style="margin-bottom: 1rem;">
-                        <strong>Explanation:</strong><br>
-                        <p style="margin-top: 0.5rem;">${fullAnnotation.explanation || 'No explanation available'}</p>
+                    <div>
+                        <strong>Vehicle:</strong><br>
+                        <small>${Array.isArray(fullAnnotation.vehicle) ? fullAnnotation.vehicle.join(' → ') : (fullAnnotation.vehicle || 'N/A')}</small>
                     </div>
-
-                    ${validationHTML}
-
-                    <div style="display: flex; justify-content: space-between; align-items: center;">
-                        <div><strong>Speaker:</strong> ${fullAnnotation.speaker || 'N/A'}</div>
-                        <div><strong>Confidence:</strong> ${fullAnnotation.confidence ? (fullAnnotation.confidence * 100).toFixed(1) + '%' : 'N/A'}</div>
+                    <div>
+                        <strong>Ground:</strong><br>
+                        <small>${Array.isArray(fullAnnotation.ground) ? fullAnnotation.ground.join(' → ') : (fullAnnotation.ground || 'N/A')}</small>
                     </div>
+                    <div>
+                        <strong>Posture:</strong><br>
+                        <small>${Array.isArray(fullAnnotation.posture) ? fullAnnotation.posture.join(' → ') : (fullAnnotation.posture || 'N/A')}</small>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <strong>Explanation:</strong><br>
+                    <p style="margin-top: 0.5rem;">${fullAnnotation.explanation || 'No explanation available'}</p>
+                </div>
+
+                ${validationHTML}
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div><strong>Speaker:</strong> ${fullAnnotation.speaker || 'N/A'}</div>
+                    <div><strong>Confidence:</strong> ${fullAnnotation.confidence ? (fullAnnotation.confidence * 100).toFixed(1) + '%' : 'N/A'}</div>
                 </div>
             `;
 
