@@ -77,7 +77,10 @@ class SefariaClient:
         # Pattern 2: End footnote markers (e.g., <sup class="endFootnote">-c</sup>)
         clean_text = re.sub(r'<sup class="endFootnote">[^<]*</sup>', '', clean_text)
 
-        # Remove all remaining HTML tags (including <br>, <small>, <b>, etc.)
+        # Replace line breaks with spaces BEFORE removing other HTML tags
+        clean_text = re.sub(r'<br\s*/?>', ' ', clean_text)
+
+        # Remove all remaining HTML tags (including <small>, <b>, etc.)
         clean_text = re.sub(r'<[^>]+>', '', clean_text)
 
         # Remove special Hebrew punctuation

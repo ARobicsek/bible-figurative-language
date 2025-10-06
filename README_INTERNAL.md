@@ -2,7 +2,19 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
-**LATEST ACHIEVEMENT (Oct 5, 2025 - Evening)**: ✅ **UI Bottom Panel Enhancements - Professional annotation display matching print version!**
+**LATEST ACHIEVEMENT (Oct 5, 2025 - Evening)**: ✅ **English Text Spacing Fix - Proper word spacing after line breaks!**
+- **Fixed Missing Spaces Bug**: English text with line breaks (`<br>` tags) now has proper spacing between words
+  - **Root cause**: HTML `<br>` tags were being removed without replacement, causing words to run together (e.g., "said:Let" instead of "said: Let")
+  - **Examples fixed**: Deuteronomy 33:8 "said:Let Your Thummim" → "said: Let Your Thummim", Deuteronomy 33:4 "TeachingAs the heritage" → "Teaching As the heritage"
+  - **Solution**: Modified `_clean_text()` in `sefaria_client.py` to replace `<br>` tags with spaces BEFORE removing other HTML tags
+  - **Database Refresh**: Re-fetched all 8,373 English verses from Sefaria API (337 API calls, ~4 minutes) with corrected spacing
+- **Files Modified**:
+  - `private/src/hebrew_figurative_db/text_extraction/sefaria_client.py` (line 81): Added `<br>` → space replacement
+  - `refresh_english_text_auto.py`: New non-interactive refresh script
+  - `database/Pentateuch_Psalms_fig_language.db`: All english_text_clean and english_text_clean_non_sacred fields updated
+- **Result**: Professional, readable English text with proper spacing throughout the entire database
+
+**PREVIOUS ACHIEVEMENT (Oct 5, 2025 - Evening)**: ✅ **UI Bottom Panel Enhancements - Professional annotation display matching print version!**
 - **Enhanced Bottom Panel Display**: Replicated print version features in the interactive UI for consistent, professional presentation
   - **Annotation Details Positioning**: Moved annotation details ABOVE figurative detection deliberation (when present) for better information hierarchy
   - **Hebrew/English Phrase Display**: Added side-by-side bilingual phrase display at top of annotation details with vertical divider
