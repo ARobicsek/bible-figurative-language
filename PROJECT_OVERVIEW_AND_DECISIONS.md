@@ -601,6 +601,54 @@ Before making it public, the following files should be removed (internal develop
 
 ## 📝 Development Log
 
+### Session 2025-10-09: Prefixed Elohim Divine Names Fix
+
+#### ✅ Completed
+**Discovered and fixed systematic gap in divine name modifier affecting 102 verses**
+
+1. **Issue Discovery**
+   - User noticed `וֵאלֹהָֽי` in Psalms 84:4 wasn't being modified in non-sacred text
+   - Investigation revealed original patterns required hataf segol (ֱ) after alef
+   - Hebrew grammar changes vowels when prefixes (ו, כ, ל, ב, מ) are added to Elohim
+   - Total impact: 102 verses (21 with vav, 81 with other prefixes)
+
+2. **Patterns Fixed**
+   - `וֵאלֹהִים` (ve-Elohim - "and God")
+   - `כֵּאלֹהִים` (ke-Elohim - "like God") - Genesis 3:5
+   - `לֵאלֹהִים` (le-Elohim - "to God")
+   - `בֵּאלֹהִים` (be-Elohim - "in God") - Genesis 21:23
+   - `מֵאלֹהֵי` (me-Elohei - "from God of")
+
+3. **Solution Implemented**
+   - Added Pattern 2b in `hebrew_divine_names_modifier.py` (lines 130-141)
+   - Pattern matches: `[ובכלמ][\u0591-\u05C7]*[ִֵֶַּ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶַָ]`
+   - Updated `has_divine_names()` method to detect prefixed forms (line 281)
+   - Created comprehensive test suite - all 12 tests pass
+
+4. **Database Regeneration**
+   - Created `scripts/regenerate_prefixed_elohim_fields.py` script
+   - Regenerated all 4 non-sacred fields:
+     - verses.hebrew_text_non_sacred: 2,791 verses modified
+     - verses.figurative_detection_deliberation_non_sacred: 2,621 verses modified
+     - figurative_language.figurative_text_in_hebrew_non_sacred: 508 instances modified
+     - figurative_language.figurative_text_non_sacred: 209 instances modified
+
+5. **Verification**
+   - Psalms 84:4: `וֵאלֹהָֽי` → `וֵאלֹקָֽי` ✓
+   - Genesis 3:5: `כֵּֽאלֹהִים` → `כֵּֽאלֹקִים` ✓
+   - Genesis 24:3: `וֵֽאלֹהֵי` → `וֵֽאלֹקֵי` ✓
+   - All other prefixed forms verified working
+
+#### Files Modified
+- `private/src/hebrew_figurative_db/text_extraction/hebrew_divine_names_modifier.py` - Added Pattern 2b
+- `scripts/regenerate_prefixed_elohim_fields.py` - New regeneration script
+- `database/Pentateuch_Psalms_fig_language.db` - All non-sacred fields regenerated
+- `PREFIXED_ELOHIM_FIX.md` - Complete technical documentation
+
+**Result**: Divine name modifier now has 100% coverage of common Elohim family patterns in Biblical Hebrew
+
+---
+
 ### Session 2025-10-02: UI Improvements & Divine Names Bug Fix (Partial)
 
 #### ✅ Completed

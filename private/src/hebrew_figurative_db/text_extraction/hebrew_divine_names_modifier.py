@@ -127,6 +127,19 @@ class HebrewDivineNamesModifier:
             self.logger.debug(f"Elohim (voweled) modified")
             modified = new_modified
 
+        # Pattern 2b: Prefixed Elohim forms (וֵאלֹהִים, כֵּאלֹהִים, לֵאלֹהִים, בֵּאלֹהִים, מֵאלֹהִים)
+        # When a prefix (ו, כ, ל, ב, מ) is added to Elohim, hataf segol is often replaced by other vowels
+        # Pattern: prefix + vowel + alef + lamed + holam + heh + vowel + (optional suffix)
+        # Covers: וֵאלֹהִים (ve-Elohim - "and God"), כֵּאלֹהִים (ke-Elohim - "like God"),
+        #         לֵאלֹהִים (le-Elohim - "to God"), בֵּאלֹהִים (be-Elohim - "in God"),
+        #         מֵאלֹהֵי (me-Elohei - "from God of"), וֵאלֹהָי (ve-Elohai - "and my God"), etc.
+        # Note: Using character class [ובכלמ] for common prefixes
+        prefixed_elohim_pattern = r'[ובכלמ][\u0591-\u05C7]*[ִֵֶַּ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶַָ]'
+        new_modified = re.sub(prefixed_elohim_pattern, elohim_replacer, modified)
+        if new_modified != modified:
+            self.logger.debug(f"Prefixed Elohim (voweled) modified")
+            modified = new_modified
+
         # Pattern 3: With definite article הָאֱלֹהִים (with cantillation marks)
         # Must have: ה + vowel + א + hataf segol + ל + holam + ה + any vowel + suffix
         # Covers forms with definite article
@@ -265,6 +278,7 @@ class HebrewDivineNamesModifier:
             r'יְ?[\u0591-\u05C7]*הֹ?[\u0591-\u05C7]*וָ?[\u0591-\u05C7]*ה',  # Tetragrammaton (voweled with cantillation)
             r'אלהים',  # Elohim (unvoweled)
             r'א[\u0591-\u05C7]*[ֱ]?[\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ]?[\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶָ]',  # Elohim (voweled with cantillation)
+            r'[ובכלמ][\u0591-\u05C7]*[ִֵֶַּ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ][\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶַָ]',  # Prefixed Elohim forms
             r'ה[\u0591-\u05C7]*[ָ]?[\u0591-\u05C7]*א[\u0591-\u05C7]*[ֱ]?[\u0591-\u05C7]*ל[\u0591-\u05C7]*[ֹ]?[\u0591-\u05C7]*ה[\u0591-\u05C7]*[ִֵֶָ]',  # Ha-Elohim with cantillation
             r'(^|[\s\-\u05BE])אֵ[\u0591-\u05C7]*ל(?=[\s\-\u05BE]|$)',  # El with tzere (standalone word only)
             r'צבאות',  # Tzevaot (unvoweled)
