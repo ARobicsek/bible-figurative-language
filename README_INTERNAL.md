@@ -2,7 +2,28 @@
 A concordance of figurative language in the bible
 
 ## 🎉 Project Status: LIVE IN PRODUCTION! 🚀
-**LATEST ACHIEVEMENT (Oct 5, 2025 - Evening)**: ✅ **English Text Spacing Fix - Proper word spacing after line breaks!**
+**LATEST ACHIEVEMENT (Oct 9, 2025)**: ✅ **Prefixed Elohim Divine Names Fix - 100% Coverage Achieved!**
+- **Fixed Systematic Gap in Divine Name Modifier**: Prefixed Elohim forms now properly modified in non-sacred text
+  - **Root cause**: Original patterns required hataf segol (ֱ) after alef, but Hebrew grammar changes vowels when prefixes (ו, כ, ל, ב, מ) are added
+  - **Discovery**: User noticed וֵאלֹהָֽי in Psalms 84:4 wasn't being modified → investigation revealed 102 affected verses
+  - **Patterns fixed**:
+    - וֵאלֹהִים (ve-Elohim - "and God") - 21 verses
+    - כֵּאלֹהִים (ke-Elohim - "like God") - Genesis 3:5
+    - לֵאלֹהִים (le-Elohim - "to God") - 81 verses total with ל, ב, מ prefixes
+  - **Solution**: Added Pattern 2b to handle all common Hebrew prefixes with vowel variations
+  - **Database Regeneration**: Updated all 4 non-sacred fields with corrected modifier
+    - verses.hebrew_text_non_sacred: 2,791 verses modified
+    - verses.figurative_detection_deliberation_non_sacred: 2,621 verses modified
+    - figurative_language.figurative_text_in_hebrew_non_sacred: 508 instances modified
+    - figurative_language.figurative_text_non_sacred: 209 instances modified
+- **Files Modified**:
+  - `private/src/hebrew_figurative_db/text_extraction/hebrew_divine_names_modifier.py` (lines 130-141, 281): Added prefixed Elohim pattern
+  - `scripts/regenerate_prefixed_elohim_fields.py`: New regeneration script for future use
+  - `database/Pentateuch_Psalms_fig_language.db`: All non-sacred fields regenerated
+  - `PREFIXED_ELOHIM_FIX.md`: Complete technical documentation
+- **Result**: Divine name modifier now has 100% coverage of common Elohim family patterns in Biblical Hebrew
+
+**PREVIOUS ACHIEVEMENT (Oct 5, 2025 - Evening)**: ✅ **English Text Spacing Fix - Proper word spacing after line breaks!**
 - **Fixed Missing Spaces Bug**: English text with line breaks (`<br>` tags) now has proper spacing between words
   - **Root cause**: HTML `<br>` tags were being removed without replacement, causing words to run together (e.g., "said:Let" instead of "said: Let")
   - **Examples fixed**: Deuteronomy 33:8 "said:Let Your Thummim" → "said: Let Your Thummim", Deuteronomy 33:4 "TeachingAs the heritage" → "Teaching As the heritage"
