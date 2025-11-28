@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 """
-Enhanced MultiModelGeminiClient with Flexible Tagging Framework Integration
+Enhanced Multi-Model LLM Client with Flexible Tagging Framework Integration
 
-This extends the existing MultiModelGeminiClient to use our revolutionary
+This extends the MultiModelGeminiClient (which now uses UnifiedLLMClient) to add
 flexible tag-based taxonomy instead of rigid categorical classifications.
+
+Now supports:
+- GPT-5.1 (Primary via UnifiedLLMClient)
+- Claude Opus 4.5 (Fallback 1 via UnifiedLLMClient)
+- Gemini 3.0 Pro (Fallback 2 via UnifiedLLMClient)
 """
 
 import sys
@@ -16,32 +21,56 @@ import re
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from hebrew_figurative_db.ai_analysis.gemini_api_multi_model import MultiModelGeminiClient, TextContext
-from claude_sonnet_client import ClaudeSonnetClient
+
+# Try to import Claude Sonnet client (optional fallback)
+try:
+    from claude_sonnet_client import ClaudeSonnetClient
+    CLAUDE_AVAILABLE = True
+except ImportError:
+    CLAUDE_AVAILABLE = False
 
 class FlexibleTaggingGeminiClient(MultiModelGeminiClient):
-    """Enhanced Gemini client with flexible tagging framework"""
+    """
+    Enhanced multi-model LLM client with flexible tagging framework
+
+    Inherits from MultiModelGeminiClient which delegates to UnifiedLLMClient,
+    providing access to GPT-5.1, Claude Opus 4.5, and Gemini 3.0 Pro.
+    """
 
     def __init__(self, api_key: str, validator=None, logger=None, db_manager=None):
-        """Initialize with flexible tagging capabilities"""
+        """
+        Initialize with flexible tagging capabilities
+
+        Args:
+            api_key: Legacy parameter (kept for compatibility)
+            validator: MetaphorValidator instance
+            logger: Logger instance
+            db_manager: DatabaseManager instance
+        """
+        # Initialize parent class (which uses UnifiedLLMClient)
         super().__init__(api_key, validator, logger, db_manager)
+
+        # Load flexible tagging rules
         self.flexible_rules = self._load_flexible_rules()
 
-        # Additional tracking for Pro model fallbacks
+        # Additional tracking for Pro model fallbacks (legacy)
         self.pro_fallback_count = 0
 
-        # Initialize Claude Sonnet client for tertiary fallback
-        try:
-            # Pass our prompt generator to Claude so it uses the same instructions
-            self.claude_client = ClaudeSonnetClient(
-                logger=self.logger,
-                prompt_generator=self._create_flexible_tagging_prompt
-            )
-            if self.logger:
-                self.logger.info("Claude Sonnet 4 client initialized successfully with shared prompt generator")
-        except Exception as e:
-            self.claude_client = None
-            if self.logger:
-                self.logger.warning(f"Claude Sonnet 4 client initialization failed: {e}")
+        # Initialize Claude Sonnet client for tertiary fallback (if available)
+        self.claude_client = None
+        if CLAUDE_AVAILABLE:
+            try:
+                # Pass our prompt generator to Claude so it uses the same instructions
+                self.claude_client = ClaudeSonnetClient(
+                    logger=self.logger,
+                    prompt_generator=self._create_flexible_tagging_prompt
+                )
+                if self.logger:
+                    self.logger.info("✅ Claude Sonnet 4 client initialized for flexible tagging")
+            except Exception as e:
+                self.claude_client = None
+                if self.logger:
+                    self.logger.warning(f"⚠️ Claude Sonnet 4 client initialization failed: {e}")
 
         # Claude fallback tracking
         self.claude_fallback_count = 0

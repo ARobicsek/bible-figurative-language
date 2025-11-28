@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 Two-stage metaphor validation system to reduce false positives
+
+Updated to work with the new multi-model LLM architecture.
+Continues to use Gemini for validation for cost-efficiency.
 """
 import google.generativeai as genai
 import os
@@ -12,45 +15,69 @@ from typing import List, Dict, Optional, Tuple
 
 
 class MetaphorValidator:
-    """Stage 2 validator for metaphor detection to eliminate false positives"""
+    """
+    Stage 2 validator for metaphor detection to eliminate false positives
 
-    def __init__(self, api_key: str, db_manager=None, logger=None):
+    Note: This validator continues to use Gemini for cost-efficiency.
+    The primary detection uses the expensive multi-model chain (GPT-5.1 → Claude → Gemini),
+    while validation uses faster/cheaper Gemini models.
+    """
+
+    def __init__(self, api_key: str = None, db_manager=None, logger=None):
         """
         Initialize the validator with Gemini API
 
         Args:
-            api_key: Gemini API key
+            api_key: Gemini API key (optional - will read from env if not provided)
             db_manager: DatabaseManager instance for logging deliberations
             logger: Logger instance
         """
-        self.api_key = api_key
         self.db_manager = db_manager
         self.logger = logger
+
+        # Get API key from parameter or environment
+        if api_key is None:
+            api_key = os.getenv("GEMINI_API_KEY")
+            if not api_key:
+                raise ValueError("GEMINI_API_KEY not found in environment or parameters")
+
+        self.api_key = api_key
         genai.configure(api_key=api_key)
 
-        # Use same model constants as main detection for consistency
-        PRIMARY_MODEL = 'gemini-2.5-flash'
-        FALLBACK_MODEL = 'gemini-1.5-flash'
+        # Use Gemini 3.0 Pro if available, otherwise fall back to 2.5 Pro
+        PRIMARY_MODEL = 'gemini-3.0-pro'
+        FALLBACK_MODEL = 'gemini-2.5-pro'
 
-        # Primary model: Gemini 2.5 Flash
+        # Primary model: Gemini 3.0 Pro (or 2.5 Pro)
         try:
             self.model = genai.GenerativeModel(PRIMARY_MODEL)
             self.model_name = PRIMARY_MODEL
+            if self.logger:
+                self.logger.info(f"✅ MetaphorValidator initialized with {PRIMARY_MODEL}")
         except Exception:
-            # Fallback if 2.5 not available
-            self.model = genai.GenerativeModel(FALLBACK_MODEL)
-            self.model_name = FALLBACK_MODEL
+            try:
+                self.model = genai.GenerativeModel("gemini-3-pro")
+                self.model_name = "gemini-3-pro"
+                if self.logger:
+                    self.logger.info(f"✅ MetaphorValidator initialized with gemini-3-pro")
+            except Exception:
+                # Fallback if 3.0 not available
+                self.model = genai.GenerativeModel(FALLBACK_MODEL)
+                self.model_name = FALLBACK_MODEL
+                if self.logger:
+                    self.logger.info(f"✅ MetaphorValidator initialized with {FALLBACK_MODEL} (fallback)")
 
-        # Fallback model: Gemini 1.5 Flash
+        # Fallback model
         self.fallback_model = genai.GenerativeModel(FALLBACK_MODEL)
         self.fallback_model_name = FALLBACK_MODEL
 
-        # Conservative generation config for validation (increased token limit to match main system)
+        # Conservative generation config for validation
         self.generation_config = {
             'temperature': 0.05,  # Very low temperature for consistency
             'top_p': 0.7,
             'top_k': 20,
-            'max_output_tokens': 15000,  # Further increased to prevent truncation in complex validation
+            'max_output_tokens': 15000,
+            # Note: Gemini 3.0 Pro defaults to thinking_level="high"
         }
 
         self.validation_count = 0
