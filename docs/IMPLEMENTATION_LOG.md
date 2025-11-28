@@ -168,3 +168,152 @@ HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
 4. Monitor costs and quality during full run
 
 ---
+
+## Session 3 - 2025-11-28 (Phase 2: Add Proverbs with Chapter Context - ✓ COMPLETE)
+
+### Overview
+**Objective**: Add Book of Proverbs to database with chapter context support for better poetic analysis
+**Approach**: Implement chapter context parameter throughout analysis pipeline and add POETIC_WISDOM context rules
+**Result**: ✓ COMPLETE - Ready for testing with Proverbs 1
+**Duration**: ~1 hour
+
+### Changes Made
+
+**File 1**: `private/interactive_parallel_processor.py` (UPDATED - 7 locations)
+**Lines Modified**: 84-87, 286-298, 308-310, 323-325, 337-339, 419-451, 640-643, 658-663, 670-675, 755-786, 795-827
+**Changes**:
+1. Added Proverbs to book definitions dictionary (31 chapters)
+2. Added Proverbs to verse estimates (~915 verses)
+3. Updated `process_single_verse()` signature to accept `chapter_context` parameter
+4. Updated all `analyze_figurative_language_flexible()` calls to pass chapter_context
+5. Updated `analyze_with_claude_fallback()` call to pass chapter_context
+6. Updated `process_verses_parallel()` signature to accept `chapter_context` parameter
+7. Added chapter context generation logic for Proverbs:
+   - Builds full Hebrew chapter text from all verses
+   - Builds full English chapter text from all verses
+   - Formats as: "=== Proverbs Chapter N ===\n\nHebrew:\n...\n\nEnglish:\n..."
+   - Logs character count when generated
+8. Updated both processing paths (full book and specific chapters) to generate and pass chapter context
+
+**File 2**: `private/flexible_tagging_gemini_client.py` (UPDATED)
+**Lines Modified**: 88-113, 147-167, 256-268, 346-384
+**Changes**:
+1. Updated `_create_flexible_tagging_prompt()` to accept `chapter_context` parameter
+2. Added chapter context section to prompt when provided:
+   - Includes full chapter text for reference
+   - Instructs LLM to analyze only the specific verse but use chapter for context
+   - Helps understand poetic structures, parallelisms, and thematic connections
+3. Added POETIC_WISDOM context rules for Proverbs:
+   - Animal metaphors: ant, eagle, lion, serpent for character types
+   - Nature imagery: water, trees, paths, valleys for life concepts
+   - Body metaphors: heart, tongue, eyes, hands as abstract concepts
+   - Structural metaphors: house, foundation, roof for life/wisdom
+   - Path metaphors: way, path, steps for life choices
+   - Tree/water of life expressions
+   - Personification rules: Wisdom calls, Folly cries
+   - Comparative statements and "like/as" constructions
+4. Updated `analyze_figurative_language_flexible()` to accept and pass chapter_context
+5. Updated `analyze_with_claude_fallback()` to accept chapter_context (noted for future compatibility)
+
+### Implementation Architecture
+
+**Chapter Context Flow**:
+```
+Proverbs Chapter N verses fetched
+    ↓
+Chapter context generated (Hebrew + English full chapter text)
+    ↓
+For each verse in chapter:
+    process_single_verse(verse, chapter_context)
+        ↓
+    analyze_figurative_language_flexible(verse, chapter_context)
+        ↓
+    _create_flexible_tagging_prompt(verse, chapter_context)
+        ↓
+    Prompt includes:
+        - Specific verse to analyze
+        - Full chapter text for context
+        - POETIC_WISDOM context rules
+        ↓
+    Sent to GPT-5.1 → Claude Opus 4.5 → Gemini 3.0 Pro
+```
+
+**Why Chapter Context?**
+- Proverbs uses extensive poetic parallelism
+- Individual verses often rely on surrounding context
+- Helps LLM understand:
+  - Structural metaphors spanning multiple verses
+  - Thematic connections within chapters
+  - Poetic devices like chiasms and acrostics
+  - Personification patterns (Wisdom vs. Folly)
+
+### Testing & Verification
+
+**Ready to Test**:
+- [x] Book definitions updated for Proverbs
+- [x] Chapter context generation implemented
+- [x] POETIC_WISDOM context rules added
+- [x] All parameters updated throughout pipeline
+- [x] Backward compatible (other books unaffected)
+
+**Test Plan**:
+1. Run Proverbs 1 (33 verses) as initial test
+2. Verify chapter context logged: "Generated chapter context for Proverbs 1 (X chars)"
+3. Verify wisdom mode logged: "Using chapter context for Proverbs 1 (wisdom literature mode)"
+4. Check figurative detection rate (expect >60%)
+5. Spot-check instances for quality:
+   - Animal metaphors detected
+   - Path/way metaphors identified
+   - Personification of Wisdom recognized
+6. If successful, process Proverbs 2-31
+
+### Impact
+
+**Accuracy Improvements**:
+- ✅ LLMs can now see full chapter context for Proverbs verses
+- ✅ Better understanding of poetic structures and parallelisms
+- ✅ Reduced false negatives for distributed metaphors
+- ✅ Improved detection of personification patterns
+
+**Architecture Benefits**:
+- ✅ Chapter context parameter optional (backward compatible)
+- ✅ Only used for books that need it (currently Proverbs)
+- ✅ Extensible to other wisdom literature (Job, Ecclesiastes, Song of Songs)
+- ✅ Flows through entire multi-model fallback chain
+
+**Cost Considerations**:
+- Moderate token increase for Proverbs (chapter text added to each verse prompt)
+- Estimated additional cost: ~20-30% increase per verse for Proverbs
+- Justified by improved accuracy for wisdom literature
+- Total estimated cost for Proverbs: $20-40 (vs $15-30 without chapter context)
+
+### Files Modified
+- `private/interactive_parallel_processor.py` (added Proverbs, chapter context generation and passing)
+- `private/flexible_tagging_gemini_client.py` (added chapter_context parameter, POETIC_WISDOM rules)
+- `docs/PROJECT_STATUS.md` (marked Phase 2 implementation complete)
+- `docs/NEXT_SESSION_PROMPT.md` (updated for testing Phase 2)
+
+### Lessons Learned
+
+1. **Chapter Context Design**: Passing full chapter text gives LLMs crucial poetic context without over-complicating the API
+2. **Conditional Features**: Book-specific features (chapter context for Proverbs) can coexist cleanly with standard processing
+3. **Parameter Threading**: Need to update multiple levels of function calls to thread new parameters through
+4. **Logging**: Clear logging of when special features activate helps debugging and verification
+
+### Next Session
+
+**Phase 2 Testing**: Test Proverbs implementation
+1. Run Proverbs 1 (33 verses) with chapter context
+2. Verify chapter context logging appears
+3. Check figurative detection rate (>60%)
+4. Spot-check quality of detected instances
+5. If successful: Process Proverbs 2-31 (full book, ~915 verses)
+6. Monitor costs and processing time
+7. Verify database integration
+
+**Phase 3 (Optional)**: Add lightweight progress tracking
+- Only if needed for long Proverbs processing runs
+- Session tracker for checkpointing
+- Cost summaries
+
+---

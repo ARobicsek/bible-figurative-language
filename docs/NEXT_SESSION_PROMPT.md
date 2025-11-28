@@ -4,33 +4,64 @@
 
 ## Where We Are
 
-**Current Phase**: Phase 1 - Multi-Model LLM Client ✅ COMPLETE
-**Next Phase**: Phase 2 - Add Book of Proverbs
+**Current Phase**: Phase 2 - Add Proverbs ✅ IMPLEMENTATION COMPLETE
+**Next Phase**: Phase 2 Testing or Phase 3 - Progress Tracking
 
 ## What to Do Next
 
-Start Phase 2 by adding Proverbs to the database:
+### Option A: Test Phase 2 Implementation (RECOMMENDED)
 
-1. **Update book definitions** in `private/interactive_parallel_processor.py`:
-   - Add "Proverbs": 31 to books dictionary (~line 84-86)
-   - Add "Proverbs": 915 to verse_estimates (~line 639-642)
-   - Update other book references as needed
+Test the Proverbs implementation with chapter context:
 
-2. **Configure POETIC_WISDOM context** for Proverbs:
-   - Already added to UnifiedLLMClient in Phase 1
-   - Context provides balanced figurative detection for wisdom literature
-   - Includes animal metaphors, nature imagery, personification rules
+1. **Test with Proverbs 1** (33 verses):
+   ```bash
+   cd "C:\Users\ariro\OneDrive\Documents\Bible"
+   python private/interactive_parallel_processor.py
+   ```
+   - Select: Book = Proverbs (or 7)
+   - Select: Chapters = 1
+   - Select: Verses = all
+   - Workers: 6 (recommended)
 
-3. **Test with Proverbs 1** (31 verses):
-   - Run: `python private/interactive_parallel_processor.py`
-   - Select: Book = Proverbs, Chapter = 1
-   - Verify: High figurative detection rate (>60%)
-   - Check: Database integration works correctly
+2. **Verify Chapter Context Working**:
+   - Check logs for: "Generated chapter context for Proverbs 1 (X chars)"
+   - Check logs for: "Using chapter context for Proverbs 1 (wisdom literature mode)"
+   - Confirm chapter text included in prompts
 
-4. **Process full Proverbs** (if test succeeds):
-   - Process all 31 chapters (~915 verses)
-   - Monitor model usage and costs
-   - Verify quality with spot-checks
+3. **Check Results Quality**:
+   - Figurative detection rate should be >60%
+   - Spot-check instances:
+     - Animal metaphors (lion, etc.) detected?
+     - Path/way metaphors identified?
+     - Personification of Wisdom recognized?
+   - Review database entries for completeness
+
+4. **If Test Succeeds**: Process Proverbs 2-31
+   - Run full book: Select "Proverbs", Chapters = "all"
+   - Monitor processing time and costs
+   - Track model usage (GPT-5.1 vs Claude vs Gemini)
+   - Verify database integration for all 915 verses
+
+### Option B: Proceed to Phase 3 (Optional)
+
+Only needed if Proverbs processing runs are very long:
+- Create session_tracker.py for checkpointing
+- Add cost summaries
+- Add error recovery messages
+
+## Implementation Complete
+
+**Phase 2 Changes**:
+- ✅ Added Proverbs to book definitions (31 chapters, ~915 verses)
+- ✅ Implemented chapter context parameter throughout pipeline
+- ✅ Added POETIC_WISDOM context rules to flexible tagging client
+- ✅ Chapter context generation for Proverbs (Hebrew + English full chapter)
+- ✅ Updated all analysis methods to accept and pass chapter_context
+- ✅ Backward compatible (other books unaffected)
+
+**Files Modified**:
+- `private/interactive_parallel_processor.py` (7 locations updated)
+- `private/flexible_tagging_gemini_client.py` (chapter context support + POETIC_WISDOM rules)
 
 ## Blockers
 

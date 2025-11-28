@@ -83,7 +83,8 @@ def get_user_selection():
     """Get flexible book, chapter, and verse selection from user with parallel settings"""
     books = {
         "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-        "Numbers": 36, "Deuteronomy": 34, "Psalms": 150
+        "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
+        "Proverbs": 31
     }
 
     print("\n=== INTERACTIVE PARALLEL HEBREW FIGURATIVE LANGUAGE PROCESSOR ===")
@@ -282,8 +283,20 @@ def get_user_selection():
         'enable_debug': enable_debug
     }
 
-def process_single_verse(verse_data, book_name, chapter, flexible_client, validator, divine_names_modifier, logger, worker_id):
-    """Process a single verse for parallel execution"""
+def process_single_verse(verse_data, book_name, chapter, flexible_client, validator, divine_names_modifier, logger, worker_id, chapter_context=None):
+    """Process a single verse for parallel execution
+
+    Args:
+        verse_data: Dict with verse reference, hebrew, and english text
+        book_name: Name of the book being processed
+        chapter: Chapter number
+        flexible_client: FlexibleTaggingGeminiClient instance
+        validator: MetaphorValidator instance
+        divine_names_modifier: HebrewDivineNamesModifier instance
+        logger: Logger instance
+        worker_id: Worker thread ID
+        chapter_context: Optional full chapter text for context (used for Proverbs and other wisdom literature)
+    """
     try:
         verse_ref = verse_data['reference']
         heb_verse = verse_data['hebrew']
@@ -292,9 +305,9 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
         if logger.level <= logging.INFO:
             logger.info(f"Worker {worker_id}: Processing {verse_ref}")
 
-        # Use flexible tagging analysis
+        # Use flexible tagging analysis (with chapter context for Proverbs)
         result_text, error, metadata = flexible_client.analyze_figurative_language_flexible(
-            heb_verse, eng_verse, book=book_name, chapter=chapter
+            heb_verse, eng_verse, book=book_name, chapter=chapter, chapter_context=chapter_context
         )
 
         # Handle truncation fallback
@@ -308,7 +321,8 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
                 logger.warning(f"Worker {worker_id}: Truncation detected in {verse_ref}, retrying with Pro model")
 
             result_text, error, metadata = flexible_client.analyze_figurative_language_flexible(
-                heb_verse, eng_verse, book=book_name, chapter=chapter, model_override="gemini-2.5-pro"
+                heb_verse, eng_verse, book=book_name, chapter=chapter, model_override="gemini-2.5-pro",
+                chapter_context=chapter_context
             )
             pro_model_used = True
 
@@ -322,7 +336,7 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
                 # Claude Sonnet 4 fallback
                 try:
                     result_text, error, metadata = flexible_client.analyze_with_claude_fallback(
-                        heb_verse, eng_verse, book=book_name, chapter=chapter
+                        heb_verse, eng_verse, book=book_name, chapter=chapter, chapter_context=chapter_context
                     )
                     tertiary_decomposed = True
 
@@ -416,10 +430,25 @@ def process_single_verse(verse_data, book_name, chapter, flexible_client, valida
             logger.error(error_msg)
         return None, error_msg
 
-def process_verses_parallel(verses_to_process, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers):
-    """Process verses in parallel and store results"""
+def process_verses_parallel(verses_to_process, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers, chapter_context=None):
+    """Process verses in parallel and store results
+
+    Args:
+        verses_to_process: List of verse data dicts
+        book_name: Name of the book
+        chapter: Chapter number
+        flexible_client: FlexibleTaggingGeminiClient instance
+        validator: MetaphorValidator instance
+        divine_names_modifier: HebrewDivineNamesModifier instance
+        db_manager: DatabaseManager instance
+        logger: Logger instance
+        max_workers: Number of parallel workers
+        chapter_context: Optional full chapter text for context (used for Proverbs)
+    """
 
     logger.info(f"Starting parallel processing: {len(verses_to_process)} verses with {max_workers} workers")
+    if chapter_context:
+        logger.info(f"Using chapter context for {book_name} {chapter} (wisdom literature mode)")
 
     all_verse_results = []
     all_instance_results = []
@@ -433,7 +462,7 @@ def process_verses_parallel(verses_to_process, book_name, chapter, flexible_clie
             worker_id = (i % max_workers) + 1
             future = executor.submit(
                 process_single_verse, verse_data, book_name, chapter,
-                flexible_client, validator, divine_names_modifier, logger, worker_id
+                flexible_client, validator, divine_names_modifier, logger, worker_id, chapter_context
             )
             future_to_verse[future] = verse_data
 
@@ -638,7 +667,8 @@ def main():
                 if chapters == 'FULL_BOOK':
                     books_info = {
                         "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-                        "Numbers": 36, "Deuteronomy": 34
+                        "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
+                        "Proverbs": 31
                     }
                     total_chapters += books_info.get(book_name, 25)
                 else:
@@ -657,7 +687,8 @@ def main():
     # Create summary of what will be processed
     books_info = {
         "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-        "Numbers": 36, "Deuteronomy": 34
+        "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
+        "Proverbs": 31
     }
 
     total_tasks = 0
@@ -668,7 +699,8 @@ def main():
             # Estimate verses for full book (approximate)
             verse_estimates = {
                 "Genesis": 1533, "Exodus": 1213, "Leviticus": 859,
-                "Numbers": 1288, "Deuteronomy": 959
+                "Numbers": 1288, "Deuteronomy": 959, "Psalms": 2461,
+                "Proverbs": 915
             }
             estimated_verses = verse_estimates.get(book_name, 1000)  # Default estimate
             total_tasks += estimated_verses
@@ -754,7 +786,8 @@ def main():
                 # Process entire book - all chapters, all verses
                 books_info = {
                     "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-                    "Numbers": 36, "Deuteronomy": 34
+                    "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
+                    "Proverbs": 31
                 }
                 max_chapters = books_info[book_name]
                 logger.info(f"Processing full book: all {max_chapters} chapters with all verses")
@@ -770,9 +803,18 @@ def main():
 
                     logger.info(f"Processing all {len(verses_data)} verses from {book_name} {chapter}")
 
+                    # Generate chapter context for Proverbs (wisdom literature needs full chapter context)
+                    chapter_context_text = None
+                    if book_name == "Proverbs":
+                        # Build full chapter text from all verses
+                        hebrew_chapter = "\n".join([v['hebrew'] for v in verses_data])
+                        english_chapter = "\n".join([v['english'] for v in verses_data])
+                        chapter_context_text = f"=== {book_name} Chapter {chapter} ===\n\nHebrew:\n{hebrew_chapter}\n\nEnglish:\n{english_chapter}"
+                        logger.info(f"Generated chapter context for Proverbs {chapter} ({len(chapter_context_text)} chars)")
+
                     # Process verses in parallel
                     v, i, processing_time, total_attempted = process_verses_parallel(
-                        verses_data, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers
+                        verses_data, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers, chapter_context_text
                     )
 
                     total_verses += v
@@ -813,9 +855,18 @@ def main():
                             verses_to_process = verses_data
                             logger.info(f"Processing all {len(verses_to_process)} verses from {book_name} {chapter}")
 
+                    # Generate chapter context for Proverbs (wisdom literature needs full chapter context)
+                    chapter_context_text = None
+                    if book_name == "Proverbs":
+                        # Build full chapter text from all verses
+                        hebrew_chapter = "\n".join([v['hebrew'] for v in verses_data])
+                        english_chapter = "\n".join([v['english'] for v in verses_data])
+                        chapter_context_text = f"=== {book_name} Chapter {chapter} ===\n\nHebrew:\n{hebrew_chapter}\n\nEnglish:\n{english_chapter}"
+                        logger.info(f"Generated chapter context for Proverbs {chapter} ({len(chapter_context_text)} chars)")
+
                     # Process verses in parallel
                     v, i, processing_time, total_attempted = process_verses_parallel(
-                        verses_to_process, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers
+                        verses_to_process, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers, chapter_context_text
                     )
 
                     total_verses += v
