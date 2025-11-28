@@ -85,15 +85,32 @@ class FlexibleTaggingGeminiClient(MultiModelGeminiClient):
                 self.logger.warning("tag_taxonomy_rules.json not found, using default rules")
             return {}
 
-    def _create_flexible_tagging_prompt(self, hebrew_text: str, english_text: str, context: str) -> str:
-        """Create enhanced prompt using proven multi-model instructions adapted for flexible tagging"""
+    def _create_flexible_tagging_prompt(self, hebrew_text: str, english_text: str, context: str, chapter_context: str = None) -> str:
+        """Create enhanced prompt using proven multi-model instructions adapted for flexible tagging
+
+        Args:
+            hebrew_text: The specific verse Hebrew text
+            english_text: The specific verse English text
+            context: The text context type (POETIC_WISDOM, etc.)
+            chapter_context: Optional full chapter text for context (used for wisdom literature like Proverbs)
+        """
 
         base_prompt = f"""You are a biblical Hebrew scholar analyzing this text for figurative language.
 
 Hebrew: {hebrew_text}
 English: {english_text}
-
 """
+
+        # Add chapter context for wisdom literature (helps parse poetic structures)
+        if chapter_context:
+            base_prompt += f"""
+CHAPTER CONTEXT (for understanding the verse in its poetic structure):
+{chapter_context}
+
+IMPORTANT: Analyze ONLY the verse shown above (Hebrew/English), but use the chapter context to better understand the poetic structure, parallelisms, and thematic connections.
+"""
+
+        base_prompt += "\n"
 
         # Use EXACT proven context rules from multi-model system
         if context == TextContext.CREATION_NARRATIVE.value:
@@ -126,6 +143,28 @@ English: {english_text}
 **LOOK FOR:**
 • Animal metaphors for human characteristics
 • Nature imagery for human qualities"""
+
+        elif context == TextContext.POETIC_WISDOM.value:
+            context_rules = """📖 **WISDOM LITERATURE (PROVERBS) - BALANCED DETECTION** 📖
+
+**MARK AS FIGURATIVE - HIGH CONFIDENCE:**
+• Animal metaphors: "ant", "eagle", "lion", "serpent" for character types
+• Nature imagery: "water", "trees", "paths", "valleys" for life concepts
+• Body metaphors: "heart", "tongue", "eyes", "hands" as abstract concepts
+• Structural metaphors: "house", "foundation", "roof" for life/wisdom
+• Path metaphors: "way", "path", "steps" for life choices
+• Tree/water of life: Clear figurative expressions
+
+**MARK WITH CARE:**
+• Personification: "Wisdom calls", "Folly cries" - clear personification
+• Comparative statements: Often genuinely figurative in Proverbs
+• "Like/as" constructions: High percentage are true similes
+
+**BE CONSERVATIVE WITH:**
+• Standard genealogical language
+• Geographic references
+• Historical statements
+• Divine anthropomorphisms (e.g. God went, God was angry, God watched, God fought) - these are LITERAL in the ANE context unless they refer to God's body (God's finger)."""
 
         elif context == TextContext.LEGAL_CEREMONIAL.value:
             context_rules = """⚖️ **LEGAL/CEREMONIAL/RITUAL TEXT - MODERATE CONSERVATIVE** ⚖️
@@ -237,7 +276,8 @@ Analysis:"""
         return base_prompt + context_rules + flexible_instructions
 
     def analyze_figurative_language_flexible(self, hebrew_text: str, english_text: str,
-                                           book: str = "", chapter: int = 0, model_override: str = None):
+                                           book: str = "", chapter: int = 0, model_override: str = None,
+                                           chapter_context: str = None):
         """
         Analyze using flexible tagging framework
 
@@ -246,8 +286,8 @@ Analysis:"""
         # Determine text context
         text_context = self._determine_text_context(book, chapter)
 
-        # Generate flexible tagging prompt
-        prompt = self._create_flexible_tagging_prompt(hebrew_text, english_text, text_context)
+        # Generate flexible tagging prompt (with chapter context if provided)
+        prompt = self._create_flexible_tagging_prompt(hebrew_text, english_text, text_context, chapter_context)
 
         # Use existing model infrastructure but with new prompt
         try:
@@ -326,7 +366,7 @@ Analysis:"""
             return None, error_msg, {'error': True}
 
     def analyze_with_claude_fallback(self, hebrew_text: str, english_text: str,
-                                     book: str = "", chapter: int = 0):
+                                     book: str = "", chapter: int = 0, chapter_context: str = None):
         """
         Claude Sonnet 4 fallback system for complex verses
 
@@ -360,6 +400,7 @@ Analysis:"""
             self.claude_fallback_count += 1
 
             # Use Claude Sonnet 4 with high token limit
+            # Note: Pass chapter_context if Claude client supports it (for future compatibility)
             result_text, error, metadata = self.claude_client.analyze_figurative_language_flexible(
                 hebrew_text, english_text, book, chapter, max_tokens=8000
             )
