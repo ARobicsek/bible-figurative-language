@@ -317,3 +317,130 @@ For each verse in chapter:
 - Cost summaries
 
 ---
+
+## Session 4 - 2025-11-29 (Emergency Debugging & Fixes - PARTIAL)
+
+### Overview
+**Objective**: Test Proverbs chapter context implementation from Session 3
+**Reality**: Discovered and fixed 5 critical bugs, but uncovered architecture flaw
+**Result**: PARTIAL - System works but flexible tagging prompt not being used
+**Duration**: ~2.5 hours
+
+### Critical Issues Discovered & Resolved
+
+#### 1. AttributeError: 'FlexibleTaggingGeminiClient' has no attribute 'primary_model'
+- **Cause**: Session 3's UnifiedLLMClient migration broke FlexibleTaggingGeminiClient
+- **Fix**: Rewrote `analyze_figurative_language_flexible()` to delegate to `unified_client.analyze_figurative_language()`
+- **Files**: [flexible_tagging_gemini_client.py](file:///c:/Users/ariro/OneDrive/Documents/Bible/private/flexible_tagging_gemini_client.py#278-322)
+
+#### 2. Chapter Context Not Passed to UnifiedLLMClient
+- **Cause**: UnifiedLLMClient methods didn't accept `chapter_context` parameter
+- **Fix**: Added `chapter_context` parameter to `analyze_figurative_language()` and `_build_prompt()`
+- **Result**: Chapter context now flows through GPT-5.1 → Claude → Gemini chain
+- **Files**: [unified_llm_client.py](file:///c:/Users/ariro/OneDrive/Documents/Bible/private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py#158-181)
+
+#### 3. Unicode Encoding Errors (Windows Console)
+- **Cause**: Emoji characters in logging (✅, ⚠️, ❌, 🚀, ⚡, 🤖) 
+- **Fix**: Replaced all emojis with ASCII equivalents ([OK], [WARNING], [ERROR], ==>, **, [CLAUDE])
+- **Files**: unified_llm_client.py, metaphor_validator.py, flexible_tagging_gemini_client.py, interactive_parallel_processor.py
+
+#### 4. GPT-5.1 API Error: temperature parameter not supported
+- **Error**: `'temperature' does not support 0.15 with this model. Only the default (1) value is supported.`
+- **Fix**: Removed temperature parameter from GPT-5.1 API call
+- **Note**: GPT-5.1 only supports temperature=1 (default)
+- **Files**: [unified_llm_client.py](file:///c:/Users/ariro/OneDrive/Documents/Bible/private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py#241-249)
+
+#### 5. Claude Opus 4.5 Streaming Requirement Error
+- **Error**: `Streaming is required for operations that may take longer than 10 minutes`
+- **Fix**: Added `timeout=540.0` (9 minutes) to Claude API call
+- **Files**: [unified_llm_client.py](file:///c:/Users/ariro/OneDrive/Documents/Bible/private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py#307-311)
+
+### Test Results
+
+#### Proverbs 1 Test (33 verses)
+- **Result**: 0% detection rate (0/33 instances) - CRITICAL FAILURE
+- **Processing Time**: 8.5 minutes total, 15.4s per verse average
+- **Chapter Context**: Generated and used (5002 chars)
+- **API Performance**: All GPT-5.1 calls successful (HTTP 200)
+- **Cost**: ~$2.40 for 33 verses
+
+#### Proverbs 3:18 Debug Test (Single Verse)
+- **Verse**: "She is a tree of life to those who grasp her" 
+- **Result**: ✓ 3 instances detected (metaphors)
+  1. "tree of life" metaphor (confidence: 0.98)
+  2. "grasp her" metaphor (confidence: 0.93)
+  3. "hold her fast" metaphor (confidence: 0.92)
+- **Processing Time**: 96 seconds
+- **Cost**: $0.072 per verse
+- **Conclusion**: GPT-5.1 IS detecting figurative language correctly
+
+### Root Cause: Architecture Flaw Discovered
+
+**The Problem**:
+FlexibleTaggingGeminiClient's custom `_build_prompt()` override is never called because:
+1. `FlexibleTaggingGeminiClient.analyze_figurative_language_flexible()`
+2. → calls `self.unified_client.analyze_figurative_language()`
+3. → which calls `UnifiedLLMClient._build_prompt()` (standard prompt)
+4. → FlexibleTaggingGeminiClient's `_build_prompt()` override is in wrong class layer
+
+**Evidence**: Debug logging showed standard UnifiedLLMClient prompt being sent, not flexible tagging prompt
+
+**Impact**: System works but uses generic prompt instead of specialized flexible tagging format
+
+**Status**: NOT FIXED - Requires architectural redesign
+
+### Files Modified This Session
+
+1. `private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py`
+   - Added chapter_context parameter support
+   - Removed GPT-5.1 temperature parameter
+   - Added Claude Opus 4.5 timeout
+   - Replaced emoji characters with ASCII
+
+2. `private/flexible_tagging_gemini_client.py`
+   - Rewrote analyze_figurative_language_flexible() to use UnifiedLLMClient
+   - Added _build_prompt() override (NOT WORKING - wrong layer)
+   - Replaced emoji characters with ASCII
+
+3. `private/src/hebrew_figurative_db/ai_analysis/metaphor_validator.py`
+   - Replaced emoji characters with ASCII
+
+4. `private/interactive_parallel_processor.py`
+   - Replaced emoji characters with ASCII
+
+5. `test_proverbs_3_18.py` (NEW)
+   - Created debug test script with UTF-8 encoding fix
+
+### Key Learnings
+
+1. **GPT-5.1 Performance**: 
+   - reasoning_effort="high" works well (~96s per verse)
+   - No temperature control (locked to 1.0)
+   - Expensive: ~$0.07 per verse
+
+2. **Windows Unicode Issues**:
+   - Python 3.13 on Windows needs `sys.stdout.reconfigure(encoding='utf-8')`
+   - Emoji characters in logging cause crashes on Windows console
+
+3. **Architecture Lesson**:
+   - Method overrides don't work across delegation boundaries
+   - Need to pass custom prompt builder as parameter, not override
+
+### Next Session Tasks
+
+**CRITICAL**:
+1. Fix FlexibleTaggingGeminiClient architecture to use custom prompt
+   - Option A: Pass prompt_builder function to UnifiedLLMClient
+   - Option B: Build prompt in FlexibleTaggingGeminiClient, pass to UnifiedLLMClient
+   - Option C: Add custom_prompt parameter to analyze_figurative_language()
+
+2. Re-test Proverbs 3:18 to verify flexible tagging prompt is used
+
+3. Re-run Proverbs 1 with working flexible tagging
+
+**Performance Considerations**:
+- At $0.07/verse, processing 915 verses = ~$64
+- At 96s/verse with 6 workers, 915 verses = ~2.5 hours
+- Consider reducing to single test chapter before full run
+
+---

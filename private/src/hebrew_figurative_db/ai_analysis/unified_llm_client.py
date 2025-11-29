@@ -88,13 +88,13 @@ class UnifiedLLMClient:
                 if openai_api_key:
                     self.openai_client = OpenAI(api_key=openai_api_key)
                     if self.logger:
-                        self.logger.info("✅ OpenAI GPT-5.1 client initialized")
+                        self.logger.info("[OK] OpenAI GPT-5.1 client initialized")
                 else:
                     if self.logger:
-                        self.logger.warning("⚠️ OPENAI_API_KEY not found in environment")
+                        self.logger.warning("[WARNING] OPENAI_API_KEY not found in environment")
             except Exception as e:
                 if self.logger:
-                    self.logger.error(f"❌ Failed to initialize OpenAI client: {e}")
+                    self.logger.error(f"[ERROR] Failed to initialize OpenAI client: {e}")
 
         # Initialize Anthropic client (Claude Opus 4.5)
         self.anthropic_client = None
@@ -104,13 +104,13 @@ class UnifiedLLMClient:
                 if anthropic_api_key:
                     self.anthropic_client = Anthropic(api_key=anthropic_api_key)
                     if self.logger:
-                        self.logger.info("✅ Anthropic Claude Opus 4.5 client initialized")
+                        self.logger.info("[OK] Anthropic Claude Opus 4.5 client initialized")
                 else:
                     if self.logger:
-                        self.logger.warning("⚠️ ANTHROPIC_API_KEY not found in environment")
+                        self.logger.warning("[WARNING] ANTHROPIC_API_KEY not found in environment")
             except Exception as e:
                 if self.logger:
-                    self.logger.error(f"❌ Failed to initialize Anthropic client: {e}")
+                    self.logger.error(f"[ERROR] Failed to initialize Anthropic client: {e}")
 
         # Initialize Google Gemini client (Gemini 3.0 Pro)
         self.gemini_client = None
@@ -133,13 +133,13 @@ class UnifiedLLMClient:
                             self.gemini_model_name = "gemini-2.5-pro"
 
                     if self.logger:
-                        self.logger.info(f"✅ Google Gemini client initialized ({self.gemini_model_name})")
+                        self.logger.info(f"[OK] Google Gemini client initialized ({self.gemini_model_name})")
                 else:
                     if self.logger:
-                        self.logger.warning("⚠️ GEMINI_API_KEY not found in environment")
+                        self.logger.warning("[WARNING] GEMINI_API_KEY not found in environment")
             except Exception as e:
                 if self.logger:
-                    self.logger.error(f"❌ Failed to initialize Gemini client: {e}")
+                    self.logger.error(f"[ERROR] Failed to initialize Gemini client: {e}")
 
         # Usage tracking
         self.request_count = 0
@@ -156,7 +156,7 @@ class UnifiedLLMClient:
         self.gemini_tokens = {'input': 0, 'output': 0}
 
     def analyze_figurative_language(self, hebrew_text: str, english_text: str,
-                                   book: str = "", chapter: int = 0) -> Tuple[str, Optional[str], Dict]:
+                                   book: str = "", chapter: int = 0, chapter_context: str = None) -> Tuple[str, Optional[str], Dict]:
         """
         Analyze Hebrew text for figurative language using three-tier fallback chain
 
@@ -167,6 +167,7 @@ class UnifiedLLMClient:
             english_text: English translation
             book: Book name for context-aware prompting
             chapter: Chapter number for context-aware prompting
+            chapter_context: Optional full chapter text for context (used for wisdom literature)
 
         Returns:
             Tuple of (JSON string with analysis results, error message if any, metadata dict)
@@ -177,7 +178,7 @@ class UnifiedLLMClient:
         text_context = self._determine_text_context(book, chapter)
 
         # Build the analysis prompt (shared across all models)
-        prompt = self._build_prompt(hebrew_text, english_text, text_context)
+        prompt = self._build_prompt(hebrew_text, english_text, text_context, chapter_context)
 
         # Try GPT-5.1 first
         if self.openai_client:
@@ -189,7 +190,7 @@ class UnifiedLLMClient:
                 return result, None, metadata
             else:
                 if self.logger:
-                    self.logger.warning(f"⚠️ GPT-5.1 failed: {error}. Trying Claude Opus 4.5...")
+                    self.logger.warning(f"[WARNING] GPT-5.1 failed: {error}. Trying Claude Opus 4.5...")
                 self.gpt_fallback_count += 1
 
         # Fallback to Claude Opus 4.5
@@ -203,7 +204,7 @@ class UnifiedLLMClient:
                 return result, None, metadata
             else:
                 if self.logger:
-                    self.logger.warning(f"⚠️ Claude Opus 4.5 failed: {error}. Trying Gemini 3.0 Pro...")
+                    self.logger.warning(f"[WARNING] Claude Opus 4.5 failed: {error}. Trying Gemini 3.0 Pro...")
                 self.claude_fallback_count += 1
 
         # Final fallback to Gemini 3.0 Pro
@@ -217,7 +218,7 @@ class UnifiedLLMClient:
                 return result, None, metadata
             else:
                 if self.logger:
-                    self.logger.error(f"❌ All three models failed. Last error: {error}")
+                    self.logger.error(f"[ERROR] All three models failed. Last error: {error}")
 
         # All models failed
         return "[]", "All models failed", {
@@ -244,8 +245,7 @@ class UnifiedLLMClient:
                         {"role": "user", "content": prompt}
                     ],
                     max_completion_tokens=65536,  # 64K max
-                    reasoning_effort="high",  # CRITICAL - defaults to "none"!
-                    temperature=0.15
+                    reasoning_effort="high"  # CRITICAL - defaults to "none"! Note: GPT-5.1 only supports temperature=1 (default)
                 )
 
                 # Extract token usage
@@ -308,6 +308,7 @@ class UnifiedLLMClient:
                     model="claude-opus-4-5-20251101",
                     max_tokens=64000,
                     messages=[{"role": "user", "content": prompt}],
+                    timeout=540.0,  # 9 minutes (must be <10 min or streaming required)
                     # Note: effort parameter may not be in all SDK versions yet
                     # If not available, Claude will use default high-quality processing
                 )
@@ -460,16 +461,35 @@ class UnifiedLLMClient:
         else:
             return TextContext.NARRATIVE.value
 
-    def _build_prompt(self, hebrew_text: str, english_text: str, context: str) -> str:
+    def _build_prompt(self, hebrew_text: str, english_text: str, context: str, chapter_context: str = None) -> str:
         """
         Build the analysis prompt with context-aware rules
 
         Uses the proven prompt structure from the existing multi-model system
+
+        Args:
+            hebrew_text: The specific verse Hebrew text
+            english_text: The specific verse English text
+            context: The text context type (POETIC_WISDOM, etc.)
+            chapter_context: Optional full chapter text for context (used for wisdom literature)
         """
         base_prompt = f"""You are a biblical Hebrew scholar analyzing this text for figurative language.
 
 Hebrew: {hebrew_text}
 English: {english_text}
+"""
+
+        # Add chapter context if provided (for wisdom literature like Proverbs)
+        if chapter_context:
+            base_prompt += f"""
+FULL CHAPTER CONTEXT (for understanding literary patterns and themes):
+{chapter_context}
+
+NOTE: The above chapter context is provided to help you understand the verse in its literary context.
+Analyze the specific verse above, but use the chapter context to inform your understanding of:
+- Recurring metaphorical patterns (e.g., path/way imagery, animal metaphors)
+- Personification themes (e.g., Wisdom, Folly)
+- The overall poetic and rhetorical structure
 
 """
 
