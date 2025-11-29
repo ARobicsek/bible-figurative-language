@@ -1,8 +1,8 @@
 # Project Status: LLM Migration & Proverbs Integration
 
-**Last Updated**: 2025-11-28
-**Current Phase**: Phase 2 - Add Proverbs
-**Overall Progress**: 2/3 phases complete ✅
+**Last Updated**: 2025-11-29
+**Current Phase**: Phase 2 - Add Proverbs (BLOCKED - Architecture Issue)
+**Overall Progress**: 1.5/3 phases complete (Phase 1 partially broken)
 
 ## Phase Checklist
 
@@ -30,23 +30,42 @@
 
 ## Current Session Summary
 
-**Session**: 3 (Phase 2 Implementation Complete)
-**Date**: 2025-11-28
-**Tasks Completed**:
-- ✅ Added Proverbs to book definitions (31 chapters, ~915 verses)
-- ✅ Implemented chapter context parameter throughout pipeline
-- ✅ Added POETIC_WISDOM context rules to flexible tagging client
-- ✅ Modified processor to generate and pass full chapter text for Proverbs
-- ✅ Updated all analysis methods to accept chapter_context parameter
-- ✅ Chapter context flows through entire fallback chain (GPT-5.1 → Claude → Gemini)
+**Session**: 4 (Debugging & Emergency Fixes)
+**Date**: 2025-11-29
+**Time**: 2.5 hours
 
-**Next Steps**:
-- Test Phase 2: Run Proverbs 1 (33 verses) to verify chapter context works
-- If test successful: Process Proverbs 2-31 (full book, ~915 verses)
-- Monitor figurative detection rate (expect >60% for wisdom literature)
-- Verify database integration and quality
+### Critical Issues Discovered & Fixed:
+1. ✅ **AttributeError Fixed**: 'FlexibleTaggingGeminiClient' has no attribute 'primary_model'
+   - Phase 1 migration broke FlexibleTaggingGeminiClient architecture
+   - Rewrote `analyze_figurative_language_flexible()` to use UnifiedLLMClient
+2. ✅ **Chapter Context Support Added**: Added `chapter_context` parameter to UnifiedLLMClient
+3. ✅ **Unicode Encoding Errors Fixed**: Replaced all emoji characters with ASCII equivalents
+4. ✅ **GPT-5.1 API Error Fixed**: Removed temperature parameter (only supports default of 1)
+5. ✅ **Claude Opus 4.5 Timeout Fixed**: Added 540-second timeout to avoid streaming requirement
 
-**Blockers**: None
+### Test Results (Proverbs 1):
+- ❌ **0% Detection Rate** (0/33 verses) - CRITICAL FAILURE
+- Test completed successfully (no crashes)
+- Chapter context generated and used (5002 chars)
+- Processing time: 8.5 minutes (15.4s per verse average)
+- All API calls successful (GPT-5.1 working)
+
+### Root Cause Analysis (Proverbs 3:18 Debug Test):
+- ✅ GPT-5.1 IS detecting figurative language (3 instances found)
+- ❌ **Architecture Issue**: Flexible tagging prompt NOT being used
+- `FlexibleTaggingGeminiClient._build_prompt()` override never called
+- `UnifiedLLMClient._build_prompt()` is called instead (standard prompt)
+- Standard prompt works but lacks flexible tagging format
+
+### Performance Data (Proverbs 3:18):
+- Detection: 3 metaphors (tree of life, grasp her, hold her fast)
+- Processing time: 96 seconds (~1.6 minutes)
+- Cost: $0.072 per verse
+- Reasoning tokens: 0 (using output tokens for extended thinking)
+
+**Blockers**:
+- **CRITICAL**: FlexibleTaggingGeminiClient architecture broken - custom prompt not used
+- Need to fix prompt routing so flexible tagging prompt reaches GPT-5.1/Claude/Gemini
 
 ## Phase 1 Implementation Details
 

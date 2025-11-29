@@ -1,98 +1,138 @@
 # Next Session Prompt
 
-**Last Updated**: 2025-11-28
+**Last Updated**: 2025-11-29
+**Session**: 5
+**Priority**: CRITICAL - Architecture Fix Required
 
-## Where We Are
+## CRITICAL Issue to Fix
 
-**Current Phase**: Phase 2 - Add Proverbs ✅ IMPLEMENTATION COMPLETE
-**Next Phase**: Phase 2 Testing or Phase 3 - Progress Tracking
+**Problem**: FlexibleTaggingGeminiClient's custom prompt is not being used
 
-## What to Do Next
+### Root Cause
+The `_build_prompt()` override in FlexibleTaggingGeminiClient is never called because:
+1. `FlexibleTaggingGeminiClient.analyze_figurative_language_flexible()`
+2. → delegates to `self.unified_client.analyze_figurative_language()`
+3. → which calls `UnifiedLLMClient._build_prompt()` (standard prompt)
+4. → The override in FlexibleTaggingGeminiClient is in the wrong class layer and never executes
 
-### Option A: Test Phase 2 Implementation (RECOMMENDED)
+### Evidence
+- Proverbs 1 test: 0% detection (0/33 verses)
+- Proverbs 3:18 debug test revealed standard prompt being sent (not flexible tagging)
+- Debug logging confirmed GPT-5.1 received UnifiedLLMClient prompt with emojis still in it
 
-Test the Proverbs implementation with chapter context:
+### Impact
+- System runs without crashes
+- GPT-5.1 is working correctly
+- **But**: Flexible tagging format not being used (TARGET/VEHICLE/GROUND taxonomy missing)
 
-1. **Test with Proverbs 1** (33 verses):
-   ```bash
-   cd "C:\Users\ariro\OneDrive\Documents\Bible"
-   python private/interactive_parallel_processor.py
-   ```
-   - Select: Book = Proverbs (or 7)
-   - Select: Chapters = 1
-   - Select: Verses = all
-   - Workers: 6 (recommended)
+## Solution Options
 
-2. **Verify Chapter Context Working**:
-   - Check logs for: "Generated chapter context for Proverbs 1 (X chars)"
-   - Check logs for: "Using chapter context for Proverbs 1 (wisdom literature mode)"
-   - Confirm chapter text included in prompts
+### Option A: Pass Custom Prompt to UnifiedLLMClient (RECOMMENDED)
+Build the flexible tagging prompt in FlexibleTaggingGeminiClient, then pass it directly:
 
-3. **Check Results Quality**:
-   - Figurative detection rate should be >60%
-   - Spot-check instances:
-     - Animal metaphors (lion, etc.) detected?
-     - Path/way metaphors identified?
-     - Personification of Wisdom recognized?
-   - Review database entries for completeness
+```python
+# In FlexibleTaggingGeminiClient.analyze_figurative_language_flexible()
+text_context = self._determine_text_context(book, chapter)
+custom_prompt = self._create_flexible_tagging_prompt(
+    hebrew_text, english_text, text_context, chapter_context
+)
 
-4. **If Test Succeeds**: Process Proverbs 2-31
-   - Run full book: Select "Proverbs", Chapters = "all"
-   - Monitor processing time and costs
-   - Track model usage (GPT-5.1 vs Claude vs Gemini)
-   - Verify database integration for all 915 verses
+# Pass the pre-built prompt to UnifiedLLMClient
+result, error, metadata = self.unified_client.analyze_with_custom_prompt(
+    custom_prompt, hebrew_text, english_text
+)
+```
 
-### Option B: Proceed to Phase 3 (Optional)
+Add new method to UnifiedLLMClient:
+```python
+def analyze_with_custom_prompt(self, custom_prompt: str, hebrew_text: str,
+                               english_text: str) -> Tuple[str, Optional[str], Dict]:
+    """Analyze using a custom pre-built prompt instead of _build_prompt()"""
+    # Try GPT-5.1, Claude, Gemini with the custom_prompt
+```
 
-Only needed if Proverbs processing runs are very long:
-- Create session_tracker.py for checkpointing
-- Add cost summaries
-- Add error recovery messages
+### Option B: Prompt Builder Callback
+Pass the prompt builder function as a parameter to UnifiedLLMClient constructor.
 
-## Implementation Complete
+### Option C: Add custom_prompt Parameter
+Add optional `custom_prompt` parameter to `analyze_figurative_language()`.
 
-**Phase 2 Changes**:
-- ✅ Added Proverbs to book definitions (31 chapters, ~915 verses)
-- ✅ Implemented chapter context parameter throughout pipeline
-- ✅ Added POETIC_WISDOM context rules to flexible tagging client
-- ✅ Chapter context generation for Proverbs (Hebrew + English full chapter)
-- ✅ Updated all analysis methods to accept and pass chapter_context
-- ✅ Backward compatible (other books unaffected)
+## Task List for Next Session
 
-**Files Modified**:
-- `private/interactive_parallel_processor.py` (7 locations updated)
-- `private/flexible_tagging_gemini_client.py` (chapter context support + POETIC_WISDOM rules)
+### 1. Fix Architecture (30-45 minutes)
+- [ ] Implement Option A (analyze_with_custom_prompt)
+- [ ] Update FlexibleTaggingGeminiClient to use it
+- [ ] Test with Proverbs 3:18 to verify flexible tagging prompt is used
+
+### 2. Verify Fix (15 minutes)
+- [ ] Run Proverbs 3:18 test again
+- [ ] Check debug logs confirm flexible tagging prompt sent
+- [ ] Verify TARGET/VEHICLE/GROUND fields in output
+
+### 3. Re-run Proverbs Test (optional - only if time permits)
+- [ ] Run Proverbs 1 again (33 verses, ~$2.40, 8-10 minutes)
+- [ ] Expect >60% detection rate for wisdom literature
+- [ ] Verify results look correct
+
+## Important Reminders
+
+### UTF-8 Encoding for Test Scripts
+**ALWAYS add this at the top of test scripts to avoid Unicode errors on Windows:**
+
+```python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Script description"""
+
+import sys
+
+# Fix Windows console encoding - MUST BE BEFORE ANY PRINT STATEMENTS
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
+```
+
+### API Configuration Notes
+- GPT-5.1: NO temperature parameter (only supports default of 1)
+- GPT-5.1: reasoning_effort="high" is critical
+- Claude Opus 4.5: timeout=540.0 to avoid streaming requirement
+- Gemini 3.0 Pro: Works as final fallback
+
+### Performance Metrics (from Proverbs 3:18 test)
+- GPT-5.1 processing time: ~96 seconds per verse
+- Cost: ~$0.072 per verse
+- For 915 verses (full Proverbs): ~$64, ~2.5 hours with 6 workers
+
+## Files to Modify
+
+1. **`private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py`**
+   - Add `analyze_with_custom_prompt()` method
+
+2. **`private/flexible_tagging_gemini_client.py`**
+   - Update `analyze_figurative_language_flexible()` to use custom prompt method
+
+## Testing Strategy
+
+**Step 1**: Quick test with Proverbs 3:18
+```bash
+cd "C:\Users\ariro\OneDrive\Documents\Bible"
+python test_proverbs_3_18.py
+```
+
+**Step 2**: If successful, consider Proverbs 1 re-test
+- Only run if architecture fix is confirmed working
+- Costs ~$2.40 for 33 verses
+
+**Step 3**: Full Proverbs processing
+- **DON'T RUN** until user approves cost (~$64)
+- Requires ~2.5 hours processing time
 
 ## Blockers
 
-None currently.
+None - clear path forward with Option A
 
-## Phase 1 Accomplishments
+## Reference Files
 
-✅ Created unified_llm_client.py with three-model fallback chain
-✅ Updated all dependent files (gemini_api_multi_model.py, metaphor_validator.py, flexible_tagging_gemini_client.py)
-✅ Tested and verified API connections for GPT-5.1, Claude Opus 4.5, Gemini 3.0 Pro
-✅ Maintained backward compatibility with existing code
-✅ All API keys configured in .env
-
-## Critical Configuration Reminders
-
-⚠️ **GPT-5.1**: `reasoning_effort` DEFAULTS TO "none" - must explicitly set to "high"!
-✅ **Claude Opus 4.5**: `effort="high"`, model ID: `"claude-opus-4-5-20251101"`
-✅ **Gemini 3.0 Pro**: `thinking_level="high"` (defaults to "high", good!)
-
-## Reference Materials
-
-- **Implementation Plan**: `C:\Users\ariro\.claude\plans\dazzling-squishing-brooks.md`
-- **Psalms Project Reference**: `C:\Users\ariro\OneDrive\Documents\Psalms\docs\IMPLEMENTATION_LOG.md`
-  - Session 143: GPT-5.1 implementation
-  - Session 145: Claude Opus 4.5 integration
-
-## API Keys Required
-
-Ensure `.env` contains:
-```
-OPENAI_API_KEY=sk-...
-ANTHROPIC_API_KEY=sk-ant-...
-GEMINI_API_KEY=...  # Existing
-```
+- Test script: [test_proverbs_3_18.py](file:///c:/Users/ariro/OneDrive/Documents/Bible/test_proverbs_3_18.py)
+- Implementation log: [docs/IMPLEMENTATION_LOG.md](file:///c:/Users/ariro/OneDrive/Documents/Bible/docs/IMPLEMENTATION_LOG.md)
+- Project status: [docs/PROJECT_STATUS.md](file:///c:/Users/ariro/OneDrive/Documents/Bible/docs/PROJECT_STATUS.md)

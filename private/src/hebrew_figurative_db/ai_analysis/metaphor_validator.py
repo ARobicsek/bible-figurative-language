@@ -53,19 +53,19 @@ class MetaphorValidator:
             self.model = genai.GenerativeModel(PRIMARY_MODEL)
             self.model_name = PRIMARY_MODEL
             if self.logger:
-                self.logger.info(f"✅ MetaphorValidator initialized with {PRIMARY_MODEL}")
+                self.logger.info(f"[OK] MetaphorValidator initialized with {PRIMARY_MODEL}")
         except Exception:
             try:
                 self.model = genai.GenerativeModel("gemini-3-pro")
                 self.model_name = "gemini-3-pro"
                 if self.logger:
-                    self.logger.info(f"✅ MetaphorValidator initialized with gemini-3-pro")
+                    self.logger.info(f"[OK] MetaphorValidator initialized with gemini-3-pro")
             except Exception:
                 # Fallback if 3.0 not available
                 self.model = genai.GenerativeModel(FALLBACK_MODEL)
                 self.model_name = FALLBACK_MODEL
                 if self.logger:
-                    self.logger.info(f"✅ MetaphorValidator initialized with {FALLBACK_MODEL} (fallback)")
+                    self.logger.info(f"[OK] MetaphorValidator initialized with {FALLBACK_MODEL} (fallback)")
 
         # Fallback model
         self.fallback_model = genai.GenerativeModel(FALLBACK_MODEL)

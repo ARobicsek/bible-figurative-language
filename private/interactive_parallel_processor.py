@@ -897,8 +897,8 @@ def main():
             print(f"Average time per verse: N/A (no verses processed)")
             print(f"Figurative language detection rate: N/A")
         print(f"Workers used: {max_workers}")
-        print(f"\n🚀 Processed {total_verses} verses from {len(book_selections)} books")
-        print(f"⚡ Total time: {total_time:.1f} seconds with {max_workers} parallel workers")
+        print(f"\n==> Processed {total_verses} verses from {len(book_selections)} books")
+        print(f"** Total time: {total_time:.1f} seconds with {max_workers} parallel workers")
 
         # Save basic results summary
         summary = {

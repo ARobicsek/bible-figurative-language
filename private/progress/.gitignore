@@ -1,0 +1,6 @@
+# Ignore session files
+*.json
+current_session.json
+
+# Keep tracker code
+!session_tracker.py

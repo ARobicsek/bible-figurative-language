@@ -66,11 +66,11 @@ class FlexibleTaggingGeminiClient(MultiModelGeminiClient):
                     prompt_generator=self._create_flexible_tagging_prompt
                 )
                 if self.logger:
-                    self.logger.info("✅ Claude Sonnet 4 client initialized for flexible tagging")
+                    self.logger.info("[OK] Claude Sonnet 4 client initialized for flexible tagging")
             except Exception as e:
                 self.claude_client = None
                 if self.logger:
-                    self.logger.warning(f"⚠️ Claude Sonnet 4 client initialization failed: {e}")
+                    self.logger.warning(f"[WARNING] Claude Sonnet 4 client initialization failed: {e}")
 
         # Claude fallback tracking
         self.claude_fallback_count = 0
@@ -275,88 +275,44 @@ Analysis:"""
 
         return base_prompt + context_rules + flexible_instructions
 
+    def _build_prompt(self, hebrew_text: str, english_text: str, context: str, chapter_context: str = None) -> str:
+        """
+        Override parent's _build_prompt to use flexible tagging framework
+
+        Args:
+            hebrew_text: The specific verse Hebrew text
+            english_text: The specific verse English text
+            context: The text context type (POETIC_WISDOM, etc.)
+            chapter_context: Optional full chapter text for context (used for wisdom literature)
+
+        Returns:
+            The flexible tagging prompt
+        """
+        return self._create_flexible_tagging_prompt(hebrew_text, english_text, context, chapter_context)
+
     def analyze_figurative_language_flexible(self, hebrew_text: str, english_text: str,
                                            book: str = "", chapter: int = 0, model_override: str = None,
                                            chapter_context: str = None):
         """
-        Analyze using flexible tagging framework
+        Analyze using flexible tagging framework with GPT-5.1 → Claude Opus 4.5 → Gemini 3.0 Pro fallback
 
-        Returns: Tuple of (response_text, raw_json, parsed_flexible_data)
+        Args:
+            hebrew_text: Original Hebrew text
+            english_text: English translation
+            book: Book name for context-aware prompting
+            chapter: Chapter number for context-aware prompting
+            model_override: DEPRECATED - Ignored (kept for backward compatibility)
+            chapter_context: Optional full chapter text for context (used for wisdom literature)
+
+        Returns:
+            Tuple of (response_text, error, metadata)
         """
-        # Determine text context
-        text_context = self._determine_text_context(book, chapter)
-
-        # Generate flexible tagging prompt (with chapter context if provided)
-        prompt = self._create_flexible_tagging_prompt(hebrew_text, english_text, text_context, chapter_context)
-
-        # Use existing model infrastructure but with new prompt
         try:
-            if model_override:
-                if self.logger:
-                    self.logger.info(f"Using model override: {model_override}")
-
-                # Handle gemini-2.5-pro as a special high-capacity fallback model
-                if "2.5-pro" in model_override:
-                    try:
-                        import google.generativeai as genai
-                        model_to_use = genai.GenerativeModel("gemini-2.5-pro")
-                        config_to_use = {
-                            'temperature': 0.10,  # Conservative for complex analysis
-                            'top_p': 0.7,
-                            'top_k': 20,
-                            'max_output_tokens': 30000,  # Higher limit for Pro model
-                        }
-                        model_name_to_use = "gemini-2.5-pro"
-                    except Exception as e:
-                        if self.logger:
-                            self.logger.error(f"Failed to initialize gemini-2.5-pro: {e}")
-                        # Fallback to 1.5 flash if Pro not available
-                        model_to_use = self.fallback_model
-                        config_to_use = self.fallback_config
-                        model_name_to_use = self.fallback_model_name
-                elif "1.5" in model_override:
-                    model_to_use = self.fallback_model
-                    config_to_use = self.fallback_config
-                    model_name_to_use = self.fallback_model_name
-                else:
-                    model_to_use = self.primary_model
-                    config_to_use = self.primary_config
-                    model_name_to_use = self.primary_model_name
-
-                result, error, metadata = self._try_model_analysis_with_custom_prompt(
-                    model_to_use, config_to_use, model_name_to_use,
-                    prompt
-                )
-                metadata['fallback_used'] = "pro" in model_override or "1.5" in model_override
-                metadata['pro_model_used'] = "2.5-pro" in model_override
-
-                # Track Pro model fallbacks in usage statistics
-                if "2.5-pro" in model_override:
-                    self.fallback_count += 1
-                    self.pro_fallback_count += 1
-            else:
-                # Try primary model
-                result, error, metadata = self._try_model_analysis_with_custom_prompt(
-                    self.primary_model, self.primary_config, self.primary_model_name,
-                    prompt
-                )
-
-                if error and (self._is_restriction_error(error) or self._is_server_error(error)):
-                    # Fallback to secondary model
-                    if self.logger:
-                        self.logger.info(f"Primary model failed, trying fallback...")
-
-                    result, error, fallback_metadata = self._try_model_analysis_with_custom_prompt(
-                        self.fallback_model, self.fallback_config, self.fallback_model_name,
-                        prompt
-                    )
-
-                    metadata.update(fallback_metadata)
-                    metadata['fallback_used'] = True
-                else:
-                    metadata['fallback_used'] = False
-                    self.primary_success_count += 1
-
+            # Use parent's analyze_figurative_language which now uses UnifiedLLMClient
+            # The _build_prompt override above will inject our flexible tagging prompt
+            result, error, metadata = self.unified_client.analyze_figurative_language(
+                hebrew_text, english_text, book, chapter, chapter_context
+            )
             return result, error, metadata
 
         except Exception as e:
@@ -376,7 +332,7 @@ Analysis:"""
         Returns: Tuple of (response_text, error, metadata)
         """
         if self.logger:
-            self.logger.info(f"🤖 CLAUDE FALLBACK: Using Claude Sonnet 4 for complex verse analysis")
+            self.logger.info(f"[CLAUDE] CLAUDE FALLBACK: Using Claude Sonnet 4 for complex verse analysis")
 
         if not self.claude_client:
             error_msg = "Claude Sonnet 4 client not available"
@@ -407,7 +363,7 @@ Analysis:"""
 
             if error:
                 if self.logger:
-                    self.logger.error(f"🤖 CLAUDE FALLBACK: Failed - {error}")
+                    self.logger.error(f"[CLAUDE] CLAUDE FALLBACK: Failed - {error}")
 
                 fallback_metadata = {
                     'model_used': 'claude-sonnet-4-20250514',
@@ -424,7 +380,7 @@ Analysis:"""
             # Claude succeeded
             instances = metadata.get('flexible_instances', [])
             if self.logger:
-                self.logger.info(f"🤖 CLAUDE FALLBACK: Successfully analyzed verse - {len(instances)} instances found")
+                self.logger.info(f"[CLAUDE] CLAUDE FALLBACK: Successfully analyzed verse - {len(instances)} instances found")
 
             # Update metadata to reflect Claude usage
             metadata['claude_fallback_used'] = True
@@ -508,12 +464,12 @@ Analysis:"""
                     # Check for MAX_TOKENS truncation
                     elif str(candidate.finish_reason) == 'FinishReason.MAX_TOKENS' or str(candidate.finish_reason) == '2':
                         if self.logger:
-                            self.logger.warning("⚠️ RESPONSE TRUNCATED DUE TO TOKEN LIMIT - will attempt fallback parsing")
+                            self.logger.warning("[WARNING] RESPONSE TRUNCATED DUE TO TOKEN LIMIT - will attempt fallback parsing")
                         # Continue to extract what we have and use fallback parsing
                     # Check for other concerning finish reasons
                     elif str(candidate.finish_reason) not in ['FinishReason.STOP', '1', 'STOP', None]:
                         if self.logger:
-                            self.logger.warning(f"⚠️ UNUSUAL FINISH REASON: {candidate.finish_reason} - may indicate truncation or filtering")
+                            self.logger.warning(f"[WARNING] UNUSUAL FINISH REASON: {candidate.finish_reason} - may indicate truncation or filtering")
 
                 # Extract response text safely (using the same pattern as original)
                 try:
@@ -525,15 +481,15 @@ Analysis:"""
                                 self.logger.debug(f"  📝 Response ends with: '{response_text[-50:] if len(response_text) > 50 else response_text}'")
                                 # Check for abrupt ending patterns
                                 if not response_text.strip().endswith(('.', '!', '?', ']', '}')):
-                                    self.logger.warning(f"  ⚠️ Response appears to end abruptly (no proper punctuation)")
+                                    self.logger.warning(f"  [WARNING] Response appears to end abruptly (no proper punctuation)")
                         else:
                             response_text = str(candidate.content)
                             if self.logger:
-                                self.logger.warning(f"  ⚠️ No content parts - using string conversion")
+                                self.logger.warning(f"  [WARNING] No content parts - using string conversion")
                     else:
                         response_text = "[]"
                         if self.logger:
-                            self.logger.warning(f"  ⚠️ No content found - using empty array")
+                            self.logger.warning(f"  [WARNING] No content found - using empty array")
                 except Exception as e:
                     response_text = "[]"
                     if self.logger:
@@ -585,7 +541,7 @@ Analysis:"""
                 self.logger.debug(f"  📝 Detection ends with: '{figurative_detection[-100:] if len(figurative_detection) > 100 else figurative_detection}'")
         else:
             if self.logger and self.logger.level <= logging.DEBUG:
-                self.logger.debug(f"  ⚠️ No FIGURATIVE_DETECTION section found")
+                self.logger.debug(f"  [WARNING] No FIGURATIVE_DETECTION section found")
 
         # Extract tagging analysis deliberation (improved pattern matching)
         tagging_analysis = ""
@@ -597,7 +553,7 @@ Analysis:"""
                 self.logger.debug(f"  📝 TAGGING_ANALYSIS extracted: {len(tagging_analysis)} chars")
         else:
             if self.logger and self.logger.level <= logging.DEBUG:
-                self.logger.debug(f"  ⚠️ No TAGGING_ANALYSIS section found")
+                self.logger.debug(f"  [WARNING] No TAGGING_ANALYSIS section found")
 
         # Combine both deliberations for backward compatibility
         combined_deliberation = ""
@@ -630,12 +586,12 @@ Analysis:"""
                     # Check for problematic characters only in debug mode
                     problematic_chars = []
                     for i, char in enumerate(json_string):
-                        if ord(char) > 127 or char in ['🎯', '✅', '❌', '📊', '🔍', '⚠️']:
+                        if ord(char) > 127 or char in ['🎯', '[OK]', '❌', '📊', '🔍', '[WARNING]']:
                             problematic_chars.append(f"'{char}' (ord={ord(char)}) at pos {i}")
                     if problematic_chars:
-                        self.logger.warning(f"  ⚠️ Found problematic characters: {problematic_chars[:10]}")  # Show first 10
+                        self.logger.warning(f"  [WARNING] Found problematic characters: {problematic_chars[:10]}")  # Show first 10
                 else:
-                    self.logger.debug(f"  ⚠️ No JSON string extracted from response")
+                    self.logger.debug(f"  [WARNING] No JSON string extracted from response")
             elif self.logger and json_string:
                 # In INFO mode, just log basic success
                 self.logger.info(f"JSON extracted: {len(json_string)} chars")
@@ -645,7 +601,7 @@ Analysis:"""
                 try:
                     instances = json.loads(json_string)
                     if self.logger:
-                        self.logger.info(f"  ✅ JSON parsing succeeded on first attempt")
+                        self.logger.info(f"  [OK] JSON parsing succeeded on first attempt")
                 except json.JSONDecodeError as parse_error:
                     if self.logger:
                         self.logger.error(f"  ❌ Initial JSON parsing failed: {parse_error}")
@@ -657,7 +613,7 @@ Analysis:"""
                         try:
                             instances = json.loads(fixed_json)
                             if self.logger:
-                                self.logger.info("  ✅ JSON parsing succeeded after format repair")
+                                self.logger.info("  [OK] JSON parsing succeeded after format repair")
                         except json.JSONDecodeError as repair_error:
                             if self.logger:
                                 self.logger.error(f"  ❌ JSON format repair also failed: {repair_error}")
@@ -818,10 +774,10 @@ Analysis:"""
             # Validate this looks like proper JSON with objects
             if '{' in json_str and '}' in json_str:
                 if self.logger:
-                    self.logger.info(f"      ✅ Array contains objects - using this match")
+                    self.logger.info(f"      [OK] Array contains objects - using this match")
                 return json_str
             elif self.logger:
-                self.logger.info(f"      ⚠️ Array doesn't contain objects - continuing search")
+                self.logger.info(f"      [WARNING] Array doesn't contain objects - continuing search")
 
         # Look for JSON OUTPUT section specifically
         json_output_match = re.search(r'(?:STRUCTURED )?JSON OUTPUT\s*:?\s*(.*?)(?:\s*$)', response_text, re.IGNORECASE | re.DOTALL)
@@ -836,14 +792,14 @@ Analysis:"""
                 # Check if the JSON appears complete by looking for proper structure
                 if self._is_json_complete(candidate_json):
                     if self.logger:
-                        self.logger.info(f"      ✅ Found complete array in JSON OUTPUT section")
+                        self.logger.info(f"      [OK] Found complete array in JSON OUTPUT section")
                     return candidate_json
                 else:
                     if self.logger:
-                        self.logger.warning(f"      ⚠️ JSON appears incomplete in OUTPUT section")
+                        self.logger.warning(f"      [WARNING] JSON appears incomplete in OUTPUT section")
                     # Continue to other extraction methods
         elif self.logger:
-            self.logger.info(f"      ⚠️ No JSON OUTPUT section found")
+            self.logger.info(f"      [WARNING] No JSON OUTPUT section found")
 
         # Use sophisticated bracket matching for standalone arrays
         start_bracket = response_text.find('[')
@@ -888,12 +844,12 @@ Analysis:"""
             # Verify this contains objects
             if '{' in candidate_json and '}' in candidate_json:
                 if self.logger:
-                    self.logger.info(f"      ✅ Bracket-matched array contains objects")
+                    self.logger.info(f"      [OK] Bracket-matched array contains objects")
                 return candidate_json.strip()
             elif self.logger:
-                self.logger.info(f"      ⚠️ Bracket-matched array doesn't contain objects")
+                self.logger.info(f"      [WARNING] Bracket-matched array doesn't contain objects")
         elif self.logger:
-            self.logger.info(f"      ⚠️ No opening bracket '[' found in response")
+            self.logger.info(f"      [WARNING] No opening bracket '[' found in response")
 
         # Check if empty array is indicated
         if '[]' in response_text or 'no figurative language found' in response_text.lower():
