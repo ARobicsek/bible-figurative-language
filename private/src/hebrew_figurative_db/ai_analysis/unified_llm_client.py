@@ -155,6 +155,71 @@ class UnifiedLLMClient:
         self.claude_tokens = {'input': 0, 'output': 0, 'thinking': 0}
         self.gemini_tokens = {'input': 0, 'output': 0}
 
+    def analyze_with_custom_prompt(self, custom_prompt: str) -> Tuple[str, Optional[str], Dict]:
+        """
+        Analyze using a custom pre-built prompt (for FlexibleTaggingGeminiClient)
+
+        This method allows external clients to provide their own prompt instead of using
+        the default _build_prompt() method. Used by FlexibleTaggingGeminiClient to inject
+        hierarchical tagging instructions.
+
+        Args:
+            custom_prompt: Pre-built prompt string
+
+        Returns:
+            Tuple of (response_text, error, metadata)
+        """
+        # Try GPT-5.1 first
+        if self.openai_client:
+            result, error, metadata = self._call_gpt51_with_prompt(custom_prompt)
+            if not error:
+                self.gpt_success_count += 1
+                metadata['primary_model'] = 'gpt-5.1'
+                metadata['fallback_used'] = False
+                metadata['total_cost'] = self.total_cost
+                return result, None, metadata
+            else:
+                if self.logger:
+                    self.logger.warning(f"[WARNING] GPT-5.1 failed: {error}. Trying Claude Opus 4.5...")
+                self.gpt_fallback_count += 1
+
+        # Fallback to Claude Opus 4.5
+        if self.anthropic_client:
+            result, error, metadata = self._call_claude_opus45_with_prompt(custom_prompt)
+            if not error:
+                self.claude_success_count += 1
+                metadata['primary_model'] = 'claude-opus-4-5'
+                metadata['fallback_used'] = True
+                metadata['fallback_reason'] = 'gpt_failure'
+                metadata['total_cost'] = self.total_cost
+                return result, None, metadata
+            else:
+                if self.logger:
+                    self.logger.warning(f"[WARNING] Claude Opus 4.5 failed: {error}. Trying Gemini 3.0 Pro...")
+                self.claude_fallback_count += 1
+
+        # Final fallback to Gemini 3.0 Pro
+        if self.gemini_client:
+            result, error, metadata = self._call_gemini3_pro_with_prompt(custom_prompt)
+            if not error:
+                self.gemini_success_count += 1
+                metadata['primary_model'] = self.gemini_model_name
+                metadata['fallback_used'] = True
+                metadata['fallback_reason'] = 'gpt_and_claude_failure'
+                metadata['total_cost'] = self.total_cost
+                return result, None, metadata
+            else:
+                if self.logger:
+                    self.logger.error(f"[ERROR] All three models failed. Last error: {error}")
+
+        # All models failed
+        return "[]", "All models failed", {
+            'error': True,
+            'fallback_used': True,
+            'all_models_failed': True,
+            'total_cost': self.total_cost
+        }
+
     def analyze_figurative_language(self, hebrew_text: str, english_text: str,
                                    book: str = "", chapter: int = 0, chapter_context: str = None) -> Tuple[str, Optional[str], Dict]:
         """
@@ -187,6 +252,7 @@ class UnifiedLLMClient:
                 self.gpt_success_count += 1
                 metadata['primary_model'] = 'gpt-5.1'
                 metadata['fallback_used'] = False
+                metadata['total_cost'] = self.total_cost
                 return result, None, metadata
             else:
                 if self.logger:
@@ -201,6 +267,7 @@ class UnifiedLLMClient:
                 metadata['primary_model'] = 'claude-opus-4-5'
                 metadata['fallback_used'] = True
                 metadata['fallback_reason'] = 'gpt_failure'
+                metadata['total_cost'] = self.total_cost
                 return result, None, metadata
             else:
                 if self.logger:
@@ -215,6 +282,7 @@ class UnifiedLLMClient:
                 metadata['primary_model'] = self.gemini_model_name
                 metadata['fallback_used'] = True
                 metadata['fallback_reason'] = 'gpt_and_claude_failure'
+                metadata['total_cost'] = self.total_cost
                 return result, None, metadata
             else:
                 if self.logger:
@@ -226,6 +294,18 @@ class UnifiedLLMClient:
             'fallback_used': True,
             'all_models_failed': True
         }
+
+    def _call_gpt51_with_prompt(self, custom_prompt: str) -> Tuple[str, Optional[str], Dict]:
+        """Wrapper for custom prompt calls"""
+        return self._call_gpt51(custom_prompt, "", "")
+
+    def _call_claude_opus45_with_prompt(self, custom_prompt: str) -> Tuple[str, Optional[str], Dict]:
+        """Wrapper for custom prompt calls"""
+        return self._call_claude_opus45(custom_prompt, "", "")
+
+    def _call_gemini3_pro_with_prompt(self, custom_prompt: str) -> Tuple[str, Optional[str], Dict]:
+        """Wrapper for custom prompt calls"""
+        return self._call_gemini3_pro(custom_prompt, "", "")
 
     def _call_gpt51(self, prompt: str, hebrew_text: str, english_text: str) -> Tuple[str, Optional[str], Dict]:
         """
@@ -587,17 +667,54 @@ DELIBERATION:
 Be explicit about what you examined and why you made each decision.
 IMPORTANT: Include ALL phrases you marked as figurative in the JSON AND explain your reasoning for including them here.]
 
-**THEN provide JSON OUTPUT (only if genuinely figurative):**
+**THEN provide STRUCTURED JSON OUTPUT (REQUIRED):**
 
-**TARGET/VEHICLE/GROUND CLASSIFICATION GUIDE:**
-- **TARGET** = WHO/WHAT the figurative speech is ABOUT (the subject being described, e.g. "follow these laws with all your heart and soul" --> target_level_1="Social Group", target_specific="The Israelites")
-- **VEHICLE** = WHAT the target is being LIKENED TO (the comparison/image used, e.g. "do not deviate right or left" --> vehicle_level_1 = "spatial", vehicle_specific = "directions")
-- **GROUND** = WHAT QUALITY of the target is being described (the quality of the target that the vehicle sheds light on, e.g. "I carried you on eagle's wings" --> ground_level_1 = "physical quality", ground_specific = "with comfort and safety")
+**HIERARCHICAL TAGGING GUIDE - CRITICAL FOR SCHOLAR SEARCH:**
+- TARGET = WHO/WHAT the figurative speech is ABOUT (generate hierarchical tags from specific to general)
+- VEHICLE = WHAT the target is being LIKENED TO (generate hierarchical tags from specific to general)
+- GROUND = WHAT QUALITY of the target is being described (generate hierarchical tags from specific to general)
+- POSTURE = SPEAKER ATTITUDE/STANCE (generate hierarchical tags from specific to general)
 
-Example: "Judah is a lion" → TARGET (i.e. who the metaphor is about): target_level_1 = Specific person, target_specific = Judah; VEHICLE (i.e. what Judah is likened to): vehicle_level_1=natural world, vehicle_specific =lion; GROUND (i.e. this figurative speech tells us that the target has [x] quality): ground_level_1=physical quality, ground_specific=strength
+**HIERARCHY SEARCH PRINCIPLES:**
+Your tags MUST enable scholars to find instances at ANY level of specificity:
+- SPECIFIC searches: "David as lion" → ["David", "king", "person"]
+- CATEGORY searches: "king metaphors" → ["David", "king", "person"]
+- BROAD searches: "person metaphors" → ["David", "king", "person"]
 
-[{"figurative_language": "yes/no", "simile": "yes/no", "metaphor": "yes/no", "personification": "yes/no", "idiom": "yes/no", "hyperbole": "yes/no", "metonymy": "yes/no", "other": "yes/no", "hebrew_text": "Hebrew phrase", "english_text": "English phrase", "explanation": "Brief explanation", "target_level_1": "God/social group/action/geographical or political entity/natural world/created objects/specific person/time/state of being/legal, religious or moral concept/other", "target_specific": "specific target", "vehicle_level_1": "natural world/human parts/human action/relationships/spatial/the ancient workplace/warfare/wordplay/abstract/other", "vehicle_specific": "specific vehicle", "ground_level_1": "moral quality/physical quality/psychological quality/status/essential nature or identity/other", "ground_specific": "specific ground", "confidence": 0.7-1.0, "speaker": "Narrator/name of character", "purpose": "brief purpose"}]
-You **must** use **one of categories specified above** for target_level_1, vehicle_level_1, and ground_level_1.
+**HIERARCHICAL STRUCTURE REQUIREMENTS:**
+- Array index 0: MOST SPECIFIC (exact subject/image/quality)
+- Array index 1: CATEGORY LEVEL (type/class/group)
+- Array index 2: BROADEST DOMAIN (general field/realm)
+- Always provide 2-4 levels per dimension for maximum searchability
+
+**POSTURE HIERARCHY EXAMPLES:**
+- Positive: ["celebration", "praise", "positive sentiment"] or ["blessing", "approval", "positive stance"]
+- Negative: ["condemnation", "anger", "negative sentiment"] or ["frustration", "disappointment", "negative stance"]
+- Neutral: ["instruction", "teaching", "neutral stance"] or ["description", "explanation", "neutral stance"]
+
+**REQUIRED JSON FORMAT:**
+[
+{
+  "figurative_language": "yes",
+  "simile": "no",
+  "metaphor": "yes",
+  "personification": "no",
+  "idiom": "no",
+  "hyperbole": "no",
+  "metonymy": "no",
+  "other": "no",
+  "hebrew_text": "Hebrew phrase here",
+  "english_text": "English phrase here",
+  "explanation": "Brief explanation of the figurative language",
+  "target": ["specific target", "target category", "general domain"],
+  "vehicle": ["specific vehicle", "vehicle category", "source domain"],
+  "ground": ["specific quality", "quality type", "broad aspect"],
+  "posture": ["specific attitude", "attitude category", "general orientation"],
+  "confidence": 0.9,
+  "speaker": "Speaker name or Narrator",
+  "purpose": "Purpose of the figurative language"
+}
+]
 
 IMPORTANT: Mark each type field as "yes" or "no". A phrase can be multiple types (e.g., both metaphor and idiom). Set figurative_language to "yes" if ANY figurative language is detected.
 
@@ -741,12 +858,10 @@ Analysis:"""
                 'final_hyperbole': 'no',
                 'final_metonymy': 'no',
                 'final_other': 'no',
-                'target_level_1': item.get('target_level_1'),
-                'target_specific': item.get('target_specific'),
-                'vehicle_level_1': item.get('vehicle_level_1'),
-                'vehicle_specific': item.get('vehicle_specific'),
-                'ground_level_1': item.get('ground_level_1'),
-                'ground_specific': item.get('ground_specific'),
+                'target': json.dumps(item.get('target', [])) if item.get('target') else None,
+                'vehicle': json.dumps(item.get('vehicle', [])) if item.get('vehicle') else None,
+                'ground': json.dumps(item.get('ground', [])) if item.get('ground') else None,
+                'posture': json.dumps(item.get('posture', [])) if item.get('posture') else None,
                 'confidence': item.get('confidence'),
                 'figurative_text': item.get('english_text'),
                 'figurative_text_in_hebrew': item.get('hebrew_text'),

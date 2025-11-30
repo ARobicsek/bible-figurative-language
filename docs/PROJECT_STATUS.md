@@ -1,8 +1,10 @@
 # Project Status: LLM Migration & Proverbs Integration
 
-**Last Updated**: 2025-11-29
-**Current Phase**: Phase 2 - Add Proverbs (BLOCKED - Architecture Issue)
-**Overall Progress**: 1.5/3 phases complete (Phase 1 partially broken)
+**Last Updated**: 2025-11-30
+**Current Phase**: Phase 2 - Add Proverbs (Testing & Optimization)
+**Overall Progress**: 2/3 phases complete
+
+---
 
 ## Phase Checklist
 
@@ -13,112 +15,197 @@
 - [x] Update metaphor_validator.py
 - [x] Update flexible_tagging_gemini_client.py
 - [x] Test fallback chain
+- [x] Fix architecture (analyze_with_custom_prompt)
+- [x] Fix cost tracking bug
 
-### Phase 2: Add Proverbs ✅ COMPLETE (Implementation Ready)
+### Phase 2: Add Proverbs ⚡ IN PROGRESS
 - [x] Update book definitions (interactive_parallel_processor.py)
 - [x] Configure POETIC_WISDOM context
 - [x] Add chapter context support for wisdom literature
-- [ ] Process Proverbs 1 (test) - READY TO TEST
-- [ ] Process Proverbs 2-31 (full run)
-- [ ] Verify database integration
+- [x] Fix delegation architecture (FlexibleTaggingGeminiClient)
+- [x] Verify NEW hierarchical format (target/vehicle/ground/posture as JSON arrays)
+- [x] Test Proverbs 3:11-18 with batched processing
+- [ ] Optimize cost (current: $0.09/verse, target: $0.01-0.02/verse)
+- [ ] Add validation step (MetaphorValidator integration)
+- [ ] Process Proverbs 1-31 (full run)
 
-### Phase 3: Progress Tracking ⬜
+### Phase 3: Progress Tracking ⬜ NOT STARTED
 - [ ] Create session_tracker.py
 - [ ] Integrate with processor
 - [ ] Add error recovery messages
 - [ ] Add cost summary
 
+---
+
 ## Current Session Summary
 
-**Session**: 4 (Debugging & Emergency Fixes)
-**Date**: 2025-11-29
-**Time**: 2.5 hours
+**Session**: 5 (Architecture Fix & Cost Analysis)
+**Date**: 2025-11-30
+**Duration**: ~3 hours
 
-### Critical Issues Discovered & Fixed:
-1. ✅ **AttributeError Fixed**: 'FlexibleTaggingGeminiClient' has no attribute 'primary_model'
-   - Phase 1 migration broke FlexibleTaggingGeminiClient architecture
-   - Rewrote `analyze_figurative_language_flexible()` to use UnifiedLLMClient
-2. ✅ **Chapter Context Support Added**: Added `chapter_context` parameter to UnifiedLLMClient
-3. ✅ **Unicode Encoding Errors Fixed**: Replaced all emoji characters with ASCII equivalents
-4. ✅ **GPT-5.1 API Error Fixed**: Removed temperature parameter (only supports default of 1)
-5. ✅ **Claude Opus 4.5 Timeout Fixed**: Added 540-second timeout to avoid streaming requirement
+### Major Achievements:
+1. ✅ **Fixed Critical Architecture Issue**
+   - Problem: FlexibleTaggingGeminiClient's `_build_prompt()` override not being called
+   - Solution: Created `analyze_with_custom_prompt()` method in UnifiedLLMClient
+   - Files: unified_llm_client.py, flexible_tagging_gemini_client.py
 
-### Test Results (Proverbs 1):
-- ❌ **0% Detection Rate** (0/33 verses) - CRITICAL FAILURE
-- Test completed successfully (no crashes)
-- Chapter context generated and used (5002 chars)
-- Processing time: 8.5 minutes (15.4s per verse average)
-- All API calls successful (GPT-5.1 working)
+2. ✅ **Fixed Cost Tracking Bug**
+   - Problem: metadata showed $0.0000 instead of actual costs
+   - Solution: Added `metadata['total_cost'] = self.total_cost` to all return paths
+   - File: unified_llm_client.py (lines 190, 205, 220)
 
-### Root Cause Analysis (Proverbs 3:18 Debug Test):
-- ✅ GPT-5.1 IS detecting figurative language (3 instances found)
-- ❌ **Architecture Issue**: Flexible tagging prompt NOT being used
-- `FlexibleTaggingGeminiClient._build_prompt()` override never called
-- `UnifiedLLMClient._build_prompt()` is called instead (standard prompt)
-- Standard prompt works but lacks flexible tagging format
+3. ✅ **Confirmed NEW Hierarchical Format**
+   - target/vehicle/ground/posture stored as JSON arrays (not flat level_1/specific fields)
+   - Matches Pentateuch_Psalms_fig_language.db schema perfectly
+   - Example: `["YHWH as loving disciplinarian", "God of Israel", "deity"]`
 
-### Performance Data (Proverbs 3:18):
-- Detection: 3 metaphors (tree of life, grasp her, hold her fast)
-- Processing time: 96 seconds (~1.6 minutes)
-- Cost: $0.072 per verse
-- Reasoning tokens: 0 (using output tokens for extended thinking)
+4. ✅ **Cost Analysis Completed**
+   - HIGH reasoning: $0.0882/verse
+   - MEDIUM reasoning: $0.0155/verse (83% cheaper but 0% detection)
+   - Full Proverbs projection: $80.70 with HIGH reasoning
 
-**Blockers**:
-- **CRITICAL**: FlexibleTaggingGeminiClient architecture broken - custom prompt not used
-- Need to fix prompt routing so flexible tagging prompt reaches GPT-5.1/Claude/Gemini
+### Test Results (Proverbs 3:11-18, 8 verses):
 
-## Phase 1 Implementation Details
+| Test | Cost/Verse | Total Cost | Time/Verse | Detections | Format |
+|------|-----------|------------|------------|------------|---------|
+| HIGH reasoning | $0.0882 | $0.7055 | 43.0s | 3/8 (38%) | ✅ NEW |
+| MEDIUM reasoning | $0.0155 | $0.1243 | 23.4s | 0/8 (0%) | ✅ NEW |
 
-### Files Created
-1. **`private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py`** (~876 lines)
-   - UnifiedLLMClient class supporting three models
-   - GPT-5.1 primary with `reasoning_effort="high"` (CRITICAL parameter)
-   - Claude Opus 4.5 fallback with `effort="high"`
-   - Gemini 3.0 Pro final fallback with `thinking_level="high"`
-   - Comprehensive error handling and retry logic
-   - Token tracking and cost calculation for all models
+### Performance Metrics:
+- **Detection Rate**: 0.4 instances/verse (target: 1.5/verse)
+- **Processing Time**: 43s/verse with 6 workers (slower than expected)
+- **Cost**: $80.70 projected for full Proverbs (915 verses)
 
-### Files Modified
-1. **`private/src/hebrew_figurative_db/ai_analysis/gemini_api_multi_model.py`** (rewritten as wrapper, ~230 lines)
-   - Now delegates all operations to UnifiedLLMClient
-   - Maintains backward compatibility with existing code
-   - Legacy properties and methods preserved as stubs
+### Blockers & Next Steps:
+- ⚠️ **Cost too high**: Need to reduce from $80 to $10-15
+- ⚠️ **Detection rate low**: Expected ~1.5/verse, getting 0.4/verse
+- 🎯 **Next**: Implement two-tier strategy (Gemini Flash detection + GPT-5.1 validation)
 
-2. **`private/src/hebrew_figurative_db/ai_analysis/metaphor_validator.py`** (minimal updates)
-   - Updated to use Gemini 3.0 Pro (with fallback to 2.5 Pro)
-   - Made api_key parameter optional (reads from environment)
-   - Keeps validation cost-efficient while detection uses expensive models
+---
 
-3. **`private/flexible_tagging_gemini_client.py`** (header updates)
-   - Updated documentation to reflect new multi-model architecture
-   - Inherits from MultiModelGeminiClient (which now uses UnifiedLLMClient)
-   - Preserves all flexible tagging functionality
+## Implementation Status
 
-### API Connection Test Results
-All three models successfully initialized and tested:
-- ✅ OpenAI GPT-5.1: Connected and tested
-- ✅ Anthropic Claude Opus 4.5: Connected and tested
-- ✅ Google Gemini 3.0 Pro: Connected and tested
+### Files Modified (Session 5):
+1. **unified_llm_client.py**
+   - Added `analyze_with_custom_prompt()` method (lines 158-221)
+   - Added helper methods for custom prompts (lines 298-308)
+   - Added `total_cost` to metadata returns (lines 190, 205, 220)
+   - Updated prompt to use hierarchical arrays (lines 593-640)
+   - Updated database insertion to use JSON arrays (lines 784-787)
 
-## Phase 2 Implementation Details
+2. **flexible_tagging_gemini_client.py**
+   - Updated `analyze_figurative_language_flexible()` to build and pass custom prompt (lines 310-336)
+   - Now calls `unified_client.analyze_with_custom_prompt()` instead of `analyze_figurative_language()`
+   - Parses response to extract `flexible_instances` with NEW format
 
-### Files Modified
-1. **`private/interactive_parallel_processor.py`**
-   - Added Proverbs to book definitions (7 locations updated)
-   - Added chapter context generation for Proverbs (full Hebrew + English chapter text)
-   - Updated `process_single_verse()` to accept and pass chapter_context
-   - Updated `process_verses_parallel()` to accept and pass chapter_context
-   - Chapter context logged when generated
+### Database Schema Verification:
+✅ Confirmed schema matches production (Pentateuch_Psalms_fig_language.db):
+- target, vehicle, ground, posture: TEXT (JSON arrays)
+- validation_decision_*, validation_reason_*: TEXT
+- final_*: TEXT (yes/no)
+- ❌ NO target_level_1, vehicle_level_1, ground_level_1 (old format removed)
 
-2. **`private/flexible_tagging_gemini_client.py`**
-   - Added chapter_context parameter to `_create_flexible_tagging_prompt()`
-   - Added chapter_context parameter to `analyze_figurative_language_flexible()`
-   - Added chapter_context parameter to `analyze_with_claude_fallback()`
-   - Added POETIC_WISDOM context rules with Proverbs-specific guidance
-   - Chapter context included in prompt when provided
+### API Models in Use:
+- **Primary**: GPT-5.1 with `reasoning_effort="high"` (most expensive, best quality)
+- **Fallback 1**: Claude Opus 4.5 with `timeout=540`
+- **Fallback 2**: Gemini 3.0 Pro
+- **Validation**: MetaphorValidator (not yet integrated in tests)
 
-### Key Features Added
-- **Chapter Context for Wisdom Literature**: Full chapter text (Hebrew + English) provided to LLM for each verse in Proverbs
-- **POETIC_WISDOM Context**: Specialized rules for animal metaphors, nature imagery, body metaphors, path metaphors, personification
-- **Multi-Model Chapter Context**: Chapter context flows through GPT-5.1, Claude Opus 4.5, and Gemini 3.0 Pro
-- **Logging**: Clear logging when chapter context is generated and used
+---
+
+## Cost Analysis & Optimization Plan
+
+### Current Costs (GPT-5.1 HIGH):
+- Per verse: $0.0882
+- Full Proverbs (915 verses): **$80.70**
+- Processing time: ~1.8 hours (6 workers)
+
+### Proposed Two-Tier Strategy:
+1. **Gemini 2.5 Flash** for detection: $0.002/verse
+2. **GPT-5.1 or Gemini Pro** for validation: $0.010/verse
+3. **Projected cost**: $11-15 (81-87% savings)
+
+### Alternative (Cheaper):
+1. **Gemini Flash** detection: $0.002/verse
+2. **Gemini Pro** validation: $0.003/verse
+3. **Projected cost**: $4-5 (94% savings)
+
+---
+
+## Quality Benchmarks
+
+### Target Metrics:
+- Detection rate: ≥1.0 instance/verse (Pentateuch/Psalms average: 1.5)
+- False positive rate: ≤10%
+- Hierarchical arrays: 3-4 levels complete
+- Validation: VALID decisions ≥70%
+
+### Current Quality:
+- ✅ Hierarchical format: Working perfectly
+- ✅ Cost tracking: Working correctly
+- ⚠️ Detection rate: 0.4/verse (needs improvement)
+- ⚠️ Processing speed: Slower than expected
+
+---
+
+## Next Session Priority
+
+**Focus**: Optimize cost while maintaining quality
+
+1. **Test Gemini Flash detection** (30-45 min)
+   - Add Gemini Flash client
+   - Test on Proverbs 3:11-18
+   - Expected cost: ~$0.001 for 8 verses
+
+2. **Implement two-tier validation** (45-60 min)
+   - Flash detection → GPT-5.1/Pro validation
+   - Measure cost vs quality trade-off
+
+3. **Add MetaphorValidator** (30 min)
+   - Integrate validation step
+   - Populate final_* fields
+
+4. **Full Proverbs run** (if cost optimized)
+   - Only if two-tier approach successful
+   - Get user approval first
+
+---
+
+## Technical Notes
+
+### UTF-8 Encoding (Windows):
+Always add to test scripts:
+```python
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
+```
+
+### Output Directory:
+All test outputs → `output/` directory (not root)
+
+### Key Files:
+- Production pipeline: `private/interactive_parallel_processor.py`
+- Detection client: `private/flexible_tagging_gemini_client.py`
+- LLM client: `private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py`
+- Validator: `private/src/hebrew_figurative_db/ai_analysis/metaphor_validator.py`
+
+---
+
+## Recent Test Results
+
+**Latest Test**: Proverbs 3:11-18 (8 verses, 6 workers, HIGH reasoning)
+- Output: `output/proverbs_3_11-18_batched_20251130_075050_results.json`
+- Logs: `output/proverbs_3_11-18_batched_20251130_075050_log.txt`
+- Cost: $0.7055 total, $0.0882/verse
+- Detection: 3/8 instances with perfect hierarchical format
+
+**Example Output** (Proverbs 3:12):
+```json
+{
+  "target": ["YHWH as loving disciplinarian", "God of Israel (YHWH)", "deity"],
+  "vehicle": ["human father of a favored son", "parental figure in a household", "human family relationship"],
+  "ground": ["loving discipline expressed through corrective rebuke", "beneficial correction motivated by affection", "moral and educational care"],
+  "posture": ["encouragement to accept divine discipline positively", "instruction and reassurance", "positive pedagogical stance"]
+}
+```
