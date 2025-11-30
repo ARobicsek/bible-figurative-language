@@ -444,3 +444,222 @@ FlexibleTaggingGeminiClient's custom `_build_prompt()` override is never called 
 - Consider reducing to single test chapter before full run
 
 ---
+
+## Session 5 - 2025-11-30 (Architecture Fix & Format Migration - ✓ COMPLETE)
+
+### Overview
+**Objective**: Fix FlexibleTaggingGeminiClient architecture to use custom prompt and migrate to NEW hierarchical format
+**Approach**: Create custom prompt method in UnifiedLLMClient, update to hierarchical JSON arrays, test cost/quality with batched processing
+**Result**: ✓ COMPLETE - Architecture fixed, NEW format verified, cost analysis completed
+**Duration**: ~3 hours
+
+### Changes Made
+
+**File 1**: `private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py` (UPDATED)
+**Lines Modified**: 158-221, 298-308, 190, 205, 220, 593-640, 784-787
+**Changes**:
+1. **Added `analyze_with_custom_prompt()` method** (lines 158-221)
+   - Accepts pre-built custom prompt from FlexibleTaggingGeminiClient
+   - Bypasses standard `_build_prompt()` method
+   - Implements same three-tier fallback (GPT-5.1 → Claude Opus 4.5 → Gemini 3.0 Pro)
+   - Returns result, error, and metadata with total_cost field
+
+2. **Added helper methods for custom prompts** (lines 298-308)
+   - `_call_gpt51_with_prompt()`: GPT-5.1 call with custom prompt
+   - `_call_claude_opus45_with_prompt()`: Claude call with custom prompt
+   - `_call_gemini3_pro_with_prompt()`: Gemini call with custom prompt
+
+3. **Fixed cost tracking bug** (lines 190, 205, 220)
+   - Problem: `metadata.get('total_cost', 0.0)` always returned 0.0
+   - Root cause: `self.total_cost` was calculated but never added to metadata
+   - Solution: Added `metadata['total_cost'] = self.total_cost` before all return statements
+
+4. **Migrated to NEW hierarchical format** (lines 593-640)
+   - OLD format: `target_level_1`, `target_specific` (flat structure)
+   - NEW format: `target`, `vehicle`, `ground`, `posture` (JSON arrays)
+   - Arrays have 2-4 levels: [specific, category, broad domain]
+   - Added POSTURE dimension (was missing in old format)
+   - Updated prompt to request hierarchical arrays
+
+5. **Updated database insertion** (lines 784-787)
+   - Changed to store JSON arrays as TEXT
+   - Matches Pentateuch_Psalms_fig_language.db schema
+   - Removed all target_level_1/vehicle_level_1 references
+
+**File 2**: `private/flexible_tagging_gemini_client.py` (UPDATED)
+**Lines Modified**: 310-336
+**Changes**:
+1. **Updated `analyze_figurative_language_flexible()`** to build and pass custom prompt
+   - Calls `_create_flexible_tagging_prompt()` to build flexible tagging prompt
+   - Passes custom prompt to `unified_client.analyze_with_custom_prompt()`
+   - Parses response to extract `flexible_instances` with NEW hierarchical format
+   - Preserves all metadata including total_cost
+
+2. **Architecture Fix**:
+   - Before: FlexibleTaggingGeminiClient → UnifiedLLMClient → standard prompt
+   - After: FlexibleTaggingGeminiClient builds prompt → passes to UnifiedLLMClient
+   - Result: Custom flexible tagging prompt now actually used
+
+**File 3**: `test_proverbs_3_11_18_batched.py` (NEW - 316 lines)
+**Purpose**: Batched processing test with 6 parallel workers
+**Key Features**:
+- Filters Sefaria results to verses 11-18 only (8 verses)
+- Generates full chapter context (Hebrew + English) ONCE
+- Uses ThreadPoolExecutor with 6 workers
+- Each worker shares same chapter context for efficiency
+- Logs detailed cost and detection results
+- Outputs to `output/` directory with timestamp
+- UTF-8 encoding fixes for Windows
+
+**File 4**: `test_proverbs_medium_effort.py` (NEW - 311 lines)
+**Purpose**: Test MEDIUM reasoning effort for cost comparison
+**Key Pattern**: Monkey-patched `_call_gpt51()` to use `reasoning_effort="medium"`
+**Result**: 83% cheaper but 0% detection rate
+
+**File 5**: `docs/PROJECT_STATUS.md` (UPDATED)
+**Changes**: Consolidated all session information, test results, cost analysis, and next steps
+
+### Testing & Verification
+
+#### Test 1: HIGH Reasoning Effort (Proverbs 3:11-18, 8 verses, 6 workers)
+**Results**:
+- Total cost: $0.7055 ($0.0882/verse)
+- Processing time: 344s total (43.0s/verse average)
+- Detections: 3/8 verses (38% detection rate)
+- Detection density: 0.4 instances/verse
+- Format: ✓ NEW hierarchical format working perfectly
+
+**Example Detection** (Proverbs 3:12):
+```json
+{
+  "target": ["YHWH as loving disciplinarian", "God of Israel (YHWH)", "deity"],
+  "vehicle": ["human father of a favored son", "parental figure in a household", "human family relationship"],
+  "ground": ["loving discipline expressed through corrective rebuke", "beneficial correction motivated by affection", "moral and educational care"],
+  "posture": ["encouragement to accept divine discipline positively", "instruction and reassurance", "positive pedagogical stance"]
+}
+```
+
+**Output Files**:
+- `output/proverbs_3_11-18_batched_20251130_075050_results.json`
+- `output/proverbs_3_11-18_batched_20251130_075050_log.txt`
+
+#### Test 2: MEDIUM Reasoning Effort (Proverbs 3:11-18, 8 verses, 6 workers)
+**Results**:
+- Total cost: $0.1243 ($0.0155/verse) - 83% cheaper than HIGH
+- Processing time: 187s total (23.4s/verse average)
+- Detections: 0/8 verses (0% detection rate)
+- Conclusion: Too conservative, not usable for wisdom literature
+
+**Output Files**:
+- `output/proverbs_medium_20251129_193819_results.json`
+- `output/proverbs_medium_20251129_193819_log.txt`
+
+#### Database Schema Verification
+✓ Confirmed production schema matches NEW format (Pentateuch_Psalms_fig_language.db):
+- target, vehicle, ground, posture: TEXT (JSON arrays)
+- validation_decision_*, validation_reason_*: TEXT
+- final_*: TEXT (yes/no)
+- ❌ NO target_level_1, vehicle_level_1, ground_level_1 fields
+
+### Cost Analysis
+
+#### Full Proverbs Projections (915 verses):
+| Reasoning | Cost/Verse | Total Cost | Processing Time | Workers | Wall Time |
+|-----------|-----------|------------|-----------------|---------|-----------|
+| HIGH      | $0.0882   | $80.70     | ~10.9 hours     | 6       | ~1.8 hours|
+| MEDIUM    | $0.0155   | $14.18     | ~5.9 hours      | 6       | ~1.0 hour |
+
+**Trade-off**: MEDIUM saves $66.52 (83%) but 0% detection rate makes it unusable
+
+#### Model Pricing (per 1M tokens):
+- GPT-5.1: $1.25 input + $10.00 output (reasoning tokens included in output)
+- Claude Opus 4.5: $5.00 input + $25.00 output + $25.00 thinking
+- Gemini 3.0 Pro: ~$0.50 input + ~$2.00 output
+
+### Issues Discovered & Resolved
+
+#### 1. Architecture Issue: Custom Prompt Not Being Used
+- **Problem**: FlexibleTaggingGeminiClient's `_build_prompt()` override never called
+- **Root Cause**: unified_client is separate object, not in inheritance chain
+- **Solution**: Created `analyze_with_custom_prompt()` method in UnifiedLLMClient
+- **Result**: Custom flexible tagging prompt now actually used
+
+#### 2. Cost Tracking Bug
+- **Problem**: metadata showed $0.0000 instead of actual costs
+- **Root Cause**: `self.total_cost` calculated but never added to returned metadata
+- **Solution**: Added `metadata['total_cost'] = self.total_cost` to all return points
+- **Result**: Accurate cost tracking ($0.7055 total for 8 verses)
+
+#### 3. Detection Rate Lower Than Expected
+- **Problem**: 0.4 instances/verse vs expected ~1.5 instances/verse
+- **Probable Causes**:
+  - GPT-5.1 reasoning mode may be too conservative
+  - Chapter context (5364 chars) might be overwhelming
+  - Prompt may need adjustment for wisdom literature
+- **Status**: Pending optimization
+
+### Impact
+
+**Architecture Benefits**:
+- ✅ Delegation pattern now works correctly with custom prompts
+- ✅ FlexibleTaggingGeminiClient can build specialized prompts
+- ✅ UnifiedLLMClient remains generic and reusable
+- ✅ Backward compatible with standard analyze_figurative_language()
+
+**Format Migration Success**:
+- ✅ NEW hierarchical format working perfectly
+- ✅ Database schema matches production (Pentateuch_Psalms_fig_language.db)
+- ✅ JSON arrays with 2-4 levels (specific → category → broad)
+- ✅ POSTURE dimension added and populated
+- ✅ Ready for seamless integration with existing database
+
+**Cost Insights**:
+- HIGH reasoning: $80.70 projected for full Proverbs (too expensive)
+- MEDIUM reasoning: $14.18 projected but 0% detection (unusable)
+- Need alternative: Two-tier strategy (cheap detection + expensive validation)
+- Target cost: $10-15 for full Proverbs (87% reduction from current)
+
+### Files Modified
+- `private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py` (custom prompt method, cost tracking, NEW format)
+- `private/flexible_tagging_gemini_client.py` (custom prompt building and passing)
+- `test_proverbs_3_11_18_batched.py` (NEW - batched processing test)
+- `test_proverbs_medium_effort.py` (NEW - cost comparison test)
+- `docs/PROJECT_STATUS.md` (consolidated session information)
+
+### Key Learnings
+
+1. **Delegation Pattern**: Method overrides don't work across delegation boundaries. Solution: Pass custom-built prompt as parameter, not via override.
+
+2. **Cost vs Quality**: GPT-5.1 MEDIUM is 83% cheaper but completely fails to detect figurative language in wisdom literature. HIGH reasoning is necessary but expensive.
+
+3. **Format Verification Critical**: Always verify database schema before implementing. OLD format (level_1/specific) was deprecated, NEW format (hierarchical arrays) is production standard.
+
+4. **Batched Processing**: Providing chapter context ONCE to workers is more efficient than regenerating it per verse.
+
+5. **Unicode on Windows**: Always add UTF-8 encoding fixes for Windows console output.
+
+### Next Session Priority
+
+**CRITICAL: Optimize Cost While Maintaining Quality**
+
+Current costs are too high ($80.70 for Proverbs) but MEDIUM reasoning doesn't work. Need two-tier strategy:
+
+**Proposed Approach**:
+1. **Gemini 2.5 Flash** for initial detection (~$0.002/verse)
+2. **GPT-5.1 HIGH** or **Gemini Pro** for validation (~$0.010/verse)
+3. **Expected cost**: $11-15 total (81-87% savings)
+
+**Implementation Tasks**:
+1. Add Gemini Flash client to flexible_tagging_gemini_client.py
+2. Create `detect_with_gemini_flash()` method
+3. Create `validate_with_gpt51()` method for pre-detected instances
+4. Test on Proverbs 3:11-18 to measure quality vs cost
+5. Add MetaphorValidator integration for validation_decision_*/final_* fields
+6. If successful: Run full Proverbs (915 verses) with user approval
+
+**Success Criteria**:
+- Cost: ≤$15 for full Proverbs (vs $81 current)
+- Quality: ≥1.0 instance/verse detection rate
+- Format: NEW hierarchical arrays with validation results
+
+---

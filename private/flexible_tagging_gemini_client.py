@@ -308,11 +308,25 @@ Analysis:"""
             Tuple of (response_text, error, metadata)
         """
         try:
-            # Use parent's analyze_figurative_language which now uses UnifiedLLMClient
-            # The _build_prompt override above will inject our flexible tagging prompt
-            result, error, metadata = self.unified_client.analyze_figurative_language(
-                hebrew_text, english_text, book, chapter, chapter_context
+            # Build our own flexible tagging prompt with hierarchical arrays
+            text_context = self._determine_text_context(book, chapter)
+            custom_prompt = self._create_flexible_tagging_prompt(
+                hebrew_text, english_text, text_context, chapter_context
             )
+
+            # Pass the pre-built prompt to UnifiedLLMClient
+            result, error, metadata = self.unified_client.analyze_with_custom_prompt(custom_prompt)
+
+            # Parse the result to extract flexible_instances with NEW hierarchical format
+            if result and not error:
+                parsed_data = self._parse_flexible_response(result)
+                metadata.update({
+                    'flexible_instances': parsed_data.get('flexible_instances', []),
+                    'figurative_detection_deliberation': parsed_data.get('figurative_detection_deliberation', ''),
+                    'tagging_analysis_deliberation': parsed_data.get('tagging_analysis_deliberation', ''),
+                    'instances_count': len(parsed_data.get('flexible_instances', []))
+                })
+
             return result, error, metadata
 
         except Exception as e:
