@@ -63,6 +63,12 @@ class MetaphorValidator:
         # Tracking counters
         self.validation_count = 0
         self.type_validation_count = 0
+        self.chapter_validation_count = 0
+        self.verse_validation_count = 0
+        self.validation_success_count = 0
+        self.validation_failure_count = 0
+        self.json_extraction_successes = {"strategy_1": 0, "strategy_2": 0, "strategy_3": 0, "strategy_4": 0, "strategy_5": 0, "strategy_6": 0}
+        self.validation_errors = []  # Track recent validation errors for debugging
 
     def validate_chapter_instances(self, chapter_instances: List[Dict]) -> List[Dict]:
         """Validate all instances from all verses in a chapter with one API call using GPT-5.1 MEDIUM."""
@@ -76,6 +82,10 @@ class MetaphorValidator:
         prompt = self._create_chapter_validation_prompt(chapter_instances)
 
         try:
+            self.chapter_validation_count += 1
+            if self.logger:
+                self.logger.info(f"[CHAPTER VALIDATION] Starting validation for {len(chapter_instances)} instances from multiple verses")
+
             response = self.openai_client.chat.completions.create(
                 model="gpt-5.1",
                 messages=[
@@ -89,20 +99,23 @@ class MetaphorValidator:
 
             if response.choices and response.choices[0].message.content:
                 response_text = response.choices[0].message.content
-                # Extract JSON from the response
-                json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text, re.DOTALL)
-                if json_match:
-                    json_string = json_match.group(1).strip()
-                    try:
-                        validation_results = json.loads(json_string)
-                        return validation_results
-                    except json.JSONDecodeError as e:
-                        if self.logger:
-                            self.logger.error(f"Failed to parse chapter validation JSON: {e}")
-                        return []
-                else:
+                if self.logger:
+                    self.logger.debug(f"Chapter validation response length: {len(response_text)} characters")
+                    self.logger.debug(f"Response preview: {response_text[:200]}...{response_text[-200:] if len(response_text) > 400 else response_text[-200:]}")
+
+                # Enhanced JSON extraction with multiple fallback strategies
+                validation_results = self._extract_json_with_fallbacks(response_text, "chapter validation")
+                if validation_results is not None:
+                    self.validation_success_count += 1
                     if self.logger:
-                        self.logger.error("No JSON block found in chapter validation response.")
+                        self.logger.info(f"[CHAPTER VALIDATION] SUCCESS: Validated {len(validation_results)} instances")
+                    return validation_results
+                else:
+                    # All extraction strategies failed
+                    self.validation_failure_count += 1
+                    if self.logger:
+                        self.logger.error("[CHAPTER VALIDATION] FAILED: All JSON extraction strategies failed")
+                        self.logger.error(f"Raw response: {response_text}")
                     return []
             else:
                 if self.logger:
@@ -110,9 +123,48 @@ class MetaphorValidator:
                 return []
 
         except Exception as e:
+            # Enhanced error handling with detailed context and structured error results
+            from datetime import datetime
+            self.validation_failure_count += 1
+
+            error_details = {
+                'error_type': type(e).__name__,
+                'error_message': str(e),
+                'chapter_context': chapter_instances[0].get('verse_reference', 'unknown') if chapter_instances else 'unknown',
+                'instances_count': len(chapter_instances),
+                'timestamp': datetime.now().isoformat(),
+                'model': self.model_name,
+                'reasoning_effort': self.reasoning_effort
+            }
+
+            # Track error for debugging
+            self.validation_errors.append({
+                'timestamp': error_details['timestamp'],
+                'context': 'chapter_validation',
+                'error': error_details
+            })
+
+            # Keep only recent 10 errors to avoid memory bloat
+            if len(self.validation_errors) > 10:
+                self.validation_errors = self.validation_errors[-10:]
+
             if self.logger:
-                self.logger.error(f"API error during chapter validation: {e}")
-            return []
+                self.logger.error(f"[CRITICAL] Chapter validation failed with {error_details['error_type']}: {error_details['error_message']}")
+                self.logger.error(f"Context: {error_details['chapter_context']}, Instances: {error_details['instances_count']}")
+                self.logger.error(f"Model: {error_details['model']}, Reasoning Effort: {error_details['reasoning_effort']}")
+                self.logger.error(f"Timestamp: {error_details['timestamp']}")
+                self.logger.error(f"Success Rate: {self.get_success_rate():.1%} ({self.validation_success_count}/{self.validation_success_count + self.validation_failure_count})")
+                # Log the full exception for debugging
+                import traceback
+                self.logger.error(f"Full traceback: {traceback.format_exc()}")
+
+            # Return structured error results instead of empty list
+            # This allows the calling code to detect and handle validation failures
+            return [{
+                'error': error_details,
+                'fallback_validation': 'FAILED',
+                'validation_results': {}
+            }]
 
     def validate_verse_instances(self, instances: List[Dict], hebrew_text: str, english_text: str) -> List[Dict]:
         """Validate all instances found in a single verse with one API call using GPT-5.1 MEDIUM."""
@@ -139,20 +191,17 @@ class MetaphorValidator:
 
             if response.choices and response.choices[0].message.content:
                 response_text = response.choices[0].message.content
-                # Extract JSON from the response
-                json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text, re.DOTALL)
-                if json_match:
-                    json_string = json_match.group(1).strip()
-                    try:
-                        validation_results = json.loads(json_string)
-                        return validation_results
-                    except json.JSONDecodeError as e:
-                        if self.logger:
-                            self.logger.error(f"Failed to parse bulk validation JSON: {e}")
-                        return []
+                if self.logger:
+                    self.logger.debug(f"Bulk validation response length: {len(response_text)} characters")
+
+                # Enhanced JSON extraction with multiple fallback strategies
+                validation_results = self._extract_json_with_fallbacks(response_text, "bulk validation")
+                if validation_results is not None:
+                    return validation_results
                 else:
+                    # All extraction strategies failed
                     if self.logger:
-                        self.logger.error("No JSON block found in bulk validation response.")
+                        self.logger.error("All JSON extraction strategies failed for bulk validation")
                     return []
             else:
                 if self.logger:
@@ -793,12 +842,219 @@ VALIDATION:"""
                 else:
                     print(f"Warning: Failed to log validation data: {e}")
 
+    def _extract_json_with_fallbacks(self, response_text: str, context: str) -> Optional[List[Dict]]:
+        """Extract JSON from response text using multiple fallback strategies"""
+
+        # Strategy 1: Standard markdown JSON block extraction
+        json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text, re.DOTALL)
+        if json_match:
+            json_string = json_match.group(1).strip()
+            try:
+                validation_results = json.loads(json_string)
+                self.json_extraction_successes["strategy_1"] += 1
+                if self.logger:
+                    self.logger.debug(f"Strategy 1 (markdown JSON) successful for {context}")
+                return validation_results
+            except json.JSONDecodeError as e:
+                if self.logger:
+                    self.logger.warning(f"Strategy 1 failed for {context}: {e}")
+
+        # Strategy 2: Code block without json specifier
+        json_match = re.search(r'```\s*([\s\S]*?)\s*```', response_text, re.DOTALL)
+        if json_match:
+            json_string = json_match.group(1).strip()
+            try:
+                validation_results = json.loads(json_string)
+                self.json_extraction_successes["strategy_2"] += 1
+                if self.logger:
+                    self.logger.debug(f"Strategy 2 (generic code block) successful for {context}")
+                return validation_results
+            except json.JSONDecodeError as e:
+                if self.logger:
+                    self.logger.warning(f"Strategy 2 failed for {context}: {e}")
+
+        # Strategy 3: Bracket counting algorithm - find JSON array directly
+        first_bracket = response_text.find('[')
+        if first_bracket != -1:
+            bracket_count = 1
+            pos = first_bracket + 1
+            while pos < len(response_text) and bracket_count > 0:
+                if response_text[pos] == '[':
+                    bracket_count += 1
+                elif response_text[pos] == ']':
+                    bracket_count -= 1
+                pos += 1
+
+            if bracket_count == 0:
+                json_string = response_text[first_bracket:pos]
+                try:
+                    validation_results = json.loads(json_string)
+                    self.json_extraction_successes["strategy_3"] += 1
+                    if self.logger:
+                        self.logger.debug(f"Strategy 3 (bracket counting) successful for {context}")
+                    return validation_results
+                except json.JSONDecodeError as e:
+                    if self.logger:
+                        self.logger.warning(f"Strategy 3 failed for {context}: {e}")
+
+        # Strategy 4: Greedy JSON array matching
+        json_pattern = r'\[\s*\{[\s\S]*\}\s*\]'  # More permissive pattern
+        json_match = re.search(json_pattern, response_text)
+        if json_match:
+            json_string = json_match.group(0)
+            try:
+                validation_results = json.loads(json_string)
+                self.json_extraction_successes["strategy_4"] += 1
+                if self.logger:
+                    self.logger.debug(f"Strategy 4 (greedy matching) successful for {context}")
+                return validation_results
+            except json.JSONDecodeError as e:
+                if self.logger:
+                    self.logger.warning(f"Strategy 4 failed for {context}: {e}")
+
+        # Strategy 5: JSON repair attempt for truncated responses
+        if self.logger:
+            self.logger.info(f"Attempting JSON repair for {context}")
+
+        # Try to find truncated JSON and complete it
+        first_bracket = response_text.find('[')
+        if first_bracket != -1:
+            truncated_json = response_text[first_bracket:]
+
+            # Count braces and brackets to identify missing closings
+            open_braces = truncated_json.count('{')
+            close_braces = truncated_json.count('}')
+            open_brackets = truncated_json.count('[')
+            close_brackets = truncated_json.count(']')
+
+            if self.logger:
+                self.logger.debug(f"JSON structure analysis for {context}: "
+                               f"{open_braces} {{ vs {close_braces} }}, "
+                               f"{open_brackets} [ vs {close_brackets} ]")
+
+            # Add missing closing brackets and braces
+            missing_braces = open_braces - close_braces
+            missing_brackets = open_brackets - close_brackets
+
+            repaired_json = truncated_json
+            # Add closing brackets first (inner structures)
+            for _ in range(missing_brackets):
+                repaired_json += ']'
+            # Add closing braces (outer structures)
+            for _ in range(missing_braces):
+                repaired_json += '}'
+
+            try:
+                validation_results = json.loads(repaired_json)
+                self.json_extraction_successes["strategy_5"] += 1
+                if self.logger:
+                    self.logger.info(f"Strategy 5 (JSON repair) successful for {context} "
+                                   f"- added {missing_brackets} ] and {missing_braces} }}")
+                return validation_results
+            except json.JSONDecodeError as e:
+                if self.logger:
+                    self.logger.warning(f"Strategy 5 failed for {context}: {e}")
+
+        # Strategy 6: Last resort - try to extract individual objects manually
+        if self.logger:
+            self.logger.info(f"Attempting manual object extraction for {context}")
+
+        try:
+            # Look for individual objects in the response
+            object_pattern = r'\{\s*"instance_id"\s*:\s*\d+[\s\S]*?\}'
+            objects = re.findall(object_pattern, response_text)
+
+            if objects:
+                # Try to parse each object individually
+                valid_objects = []
+                for i, obj_str in enumerate(objects):
+                    try:
+                        # Try to complete the object if truncated
+                        if not obj_str.rstrip().endswith('}'):
+                            obj_str += '}'
+                        obj = json.loads(obj_str)
+                        obj['instance_id'] = i + 1  # Ensure sequential IDs
+                        valid_objects.append(obj)
+                    except json.JSONDecodeError:
+                        continue
+
+                if valid_objects:
+                    # Create validation results structure manually
+                    validation_results = []
+                    for obj in valid_objects:
+                        validation_results.append({
+                            'instance_id': obj.get('instance_id', 1),
+                            'validation_results': obj.get('validation_results', {})
+                        })
+
+                    self.json_extraction_successes["strategy_6"] += 1
+                    if self.logger:
+                        self.logger.info(f"Strategy 6 (manual extraction) successful for {context} "
+                                       f"- extracted {len(validation_results)} objects")
+                    return validation_results
+
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 6 failed for {context}: {e}")
+
+        # All strategies failed
+        if self.logger:
+            self.logger.error(f"All JSON extraction strategies failed for {context}")
+            self.logger.error(f"Response length: {len(response_text)} characters")
+            self.logger.error(f"Response preview: {response_text[:500]}...{response_text[-500:] if len(response_text) > 1000 else response_text[-500:]}")
+
+        return None
+
     def get_validation_stats(self) -> Dict:
-        """Get validation statistics"""
+        """Get comprehensive validation statistics"""
         return {
             'total_validations': self.validation_count,
-            'total_type_validations': self.type_validation_count
+            'total_type_validations': self.type_validation_count,
+            'chapter_validations': self.chapter_validation_count,
+            'verse_validations': self.verse_validation_count,
+            'validation_successes': self.validation_success_count,
+            'validation_failures': self.validation_failure_count,
+            'success_rate': self.get_success_rate(),
+            'json_extraction_strategies': self.json_extraction_successes.copy(),
+            'recent_errors': self.validation_errors[-5:] if self.validation_errors else []
         }
+
+    def get_success_rate(self) -> float:
+        """Calculate validation success rate as percentage"""
+        total_attempts = self.validation_success_count + self.validation_failure_count
+        if total_attempts == 0:
+            return 0.0
+        return (self.validation_success_count / total_attempts) * 100
+
+    def get_detailed_health_report(self) -> str:
+        """Generate a detailed health report for validation system"""
+        success_rate = self.get_success_rate()
+        total_extractions = sum(self.json_extraction_successes.values())
+
+        report = f"""
+=== METAPHOR VALIDATOR HEALTH REPORT ===
+Success Rate: {success_rate:.1f}%
+Total Validations: {self.validation_count}
+- Chapter Validations: {self.chapter_validation_count}
+- Verse Validations: {self.verse_validation_count}
+- Type Validations: {self.type_validation_count}
+
+Successes: {self.validation_success_count}
+Failures: {self.validation_failure_count}
+
+JSON Extraction Strategy Usage:
+"""
+        for strategy, count in self.json_extraction_successes.items():
+            strategy_name = strategy.replace('_', ' ').title()
+            percentage = (count / total_extractions * 100) if total_extractions > 0 else 0
+            report += f"  {strategy_name}: {count} ({percentage:.1f}%)\n"
+
+        if self.validation_errors:
+            report += "\nRecent Errors (Last 5):\n"
+            for error in self.validation_errors[-5:]:
+                report += f"  {error['timestamp']}: {error['error']['error_type']} - {error['error']['error_message'][:80]}...\n"
+
+        return report
 
 
 def test_metaphor_validator():

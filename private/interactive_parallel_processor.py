@@ -344,7 +344,19 @@ English:
 
 Analyze EACH of the {len(verses_data)} verses above for figurative language.
 
-IMPORTANT: A single verse may contain MULTIPLE distinct figurative language instances. Detect ALL instances, not just the most prominent one. For example, a verse might have both a metaphor AND personification, or multiple metaphors.
+CRITICAL MULTI-INSTANCE DETECTION REQUIREMENTS:
+
+For EACH verse, you MUST explicitly determine and report:
+1. ZERO instances: No figurative language detected - provide EMPTY "instances" array []
+2. ONE instance: Single figurative language expression - provide ONE object in "instances" array
+3. MULTIPLE instances: Multiple DISTINCT expressions - provide MULTIPLE objects in "instances" array
+
+ESSENTIAL GUIDELINES:
+- Do NOT default to finding exactly one instance per verse
+- Some verses may have ZERO figurative language instances - this is VALID
+- Some verses may have SEVERAL figurative language instances - this is VALID
+- Each instance must represent a DISTINCT figurative expression, NOT different aspects of the same expression
+- Multiple expressions in the same verse can be of the same type (e.g., two metaphors) or different types
 
 For each verse, briefly analyze what you considered and include it in the "deliberation" field of the JSON. Then detect instances of:
 - Metaphor
@@ -384,12 +396,18 @@ Return a JSON array with ONE object per verse. Each object should have:
 - "deliberation": Your brief analysis for THIS VERSE ONLY - what you considered and your reasoning
 - "instances": array of detected figurative language instances (empty array if none)
 
-Example structure:
+Example structure showing ZERO, ONE, and MULTIPLE instances:
 [
   {{
     "verse": 1,
     "reference": "{book_name} {chapter}:1",
-    "deliberation": "Considered 'discipline' (מוּסַר) as potential metaphor. The term combines instructional and corrective elements, representing divine guidance as both teaching and nurturing. The metaphorical framing emphasizes God's discipline as loving correction rather than punishment.",
+    "deliberation": "Analyzed verse for figurative language. Found no metaphors, similes, or other figurative expressions. The language appears to be literal and straightforward.",
+    "instances": []  // ZERO instances - empty array when no figurative language detected
+  }},
+  {{
+    "verse": 2,
+    "reference": "{book_name} {chapter}:2",
+    "deliberation": "Identified one clear metaphor comparing divine discipline to a shepherd's guidance. No other figurative expressions present.",
     "instances": [
       {{
         "figurative_language": "yes",
@@ -406,12 +424,54 @@ Example structure:
         "vehicle": ["specific", "category", "domain"],
         "ground": ["specific", "category", "domain"],
         "posture": ["specific", "category", "domain"],
-        "explanation": "...",
+        "explanation": "Divine guidance compared to shepherd's care",
         "confidence": 0.9
       }}
     ]
   }},
-  ...
+  {{
+    "verse": 3,
+    "reference": "{book_name} {chapter}:3",
+    "deliberation": "Found two distinct figurative expressions: 1) wisdom personified as a woman calling out, and 2) the heart described as a pathway. Both are separate figurative devices in the same verse.",
+    "instances": [
+      {{
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "...",
+        "english_text": "...",
+        "target": ["specific", "category", "domain"],
+        "vehicle": ["specific", "category", "domain"],
+        "ground": ["specific", "category", "domain"],
+        "posture": ["specific", "category", "domain"],
+        "explanation": "Wisdom personified as calling woman",
+        "confidence": 0.95
+      }},
+      {{
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "...",
+        "english_text": "...",
+        "target": ["specific", "category", "domain"],
+        "vehicle": ["specific", "category", "domain"],
+        "ground": ["specific", "category", "domain"],
+        "posture": ["specific", "category", "domain"],
+        "explanation": "Heart described metaphorically as a pathway",
+        "confidence": 0.85
+      }}
+    ]
+  }}
 ]
 
 IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis for that specific verse, not for other verses.
