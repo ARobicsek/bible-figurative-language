@@ -346,7 +346,7 @@ Analyze EACH of the {len(verses_data)} verses above for figurative language.
 
 IMPORTANT: A single verse may contain MULTIPLE distinct figurative language instances. Detect ALL instances, not just the most prominent one. For example, a verse might have both a metaphor AND personification, or multiple metaphors.
 
-For each verse, detect instances of:
+For each verse, briefly analyze what you considered and include it in the "deliberation" field of the JSON. Then detect instances of:
 - Metaphor
 - Simile
 - Personification
@@ -376,20 +376,12 @@ For each detected instance, provide:
 
 === OUTPUT FORMAT ===
 
-**FIRST, provide your deliberation in a DELIBERATION section:**
-
-DELIBERATION:
-[You MUST briefly analyze EVERY potential figurative element for ALL verses. For each phrase/concept, explain *briefly*:
-- What you considered (e.g., "Verse 1: considered if 'X' might be metaphor...").
-- Your reasoning for including/excluding it.
-- Any borderline cases you debated.
-Be explicit about what you examined and why you made each decision for each verse.]
-
-**THEN provide STRUCTURED JSON OUTPUT (REQUIRED):**
+**Provide STRUCTURED JSON OUTPUT (REQUIRED):**
 
 Return a JSON array with ONE object per verse. Each object should have:
 - "verse": verse number
 - "reference": "{book_name} {chapter}:X"
+- "deliberation": Your brief analysis for THIS VERSE ONLY - what you considered and your reasoning
 - "instances": array of detected figurative language instances (empty array if none)
 
 Example structure:
@@ -397,6 +389,7 @@ Example structure:
   {{
     "verse": 1,
     "reference": "{book_name} {chapter}:1",
+    "deliberation": "Considered 'discipline' (מוּסַר) as potential metaphor. The term combines instructional and corrective elements, representing divine guidance as both teaching and nurturing. The metaphorical framing emphasizes God's discipline as loving correction rather than punishment.",
     "instances": [
       {{
         "figurative_language": "yes",
@@ -420,6 +413,8 @@ Example structure:
   }},
   ...
 ]
+
+IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis for that specific verse, not for other verses.
 """
 
     # Call GPT-5.1 MEDIUM
@@ -463,21 +458,8 @@ Example structure:
         # Store original streaming text in case fallback overwrites it
         original_streaming_text = response_text
 
-        # Extract deliberation from original streaming response BEFORE fallback logic
-        chapter_deliberation = ""
-        # Look for DELIBERATION section - more flexible patterns to handle real responses
-        # Pattern 1: DELIBERATION followed by JSON array
-        deliberation_match = re.search(r'DELIBERATION\s*:?\s*([\s\S]*?)(?=\s*\[)', original_streaming_text, re.IGNORECASE)
-        if not deliberation_match:
-            # Pattern 2: DELIBERATION followed by "STRUCTURED JSON OUTPUT" or similar
-            deliberation_match = re.search(r'DELIBERATION\s*:?\s*([\s\S]*?)(?=STRUCTURED|JSON OUTPUT|```json)', original_streaming_text, re.IGNORECASE)
-        if not deliberation_match:
-            # Pattern 3: DELIBERATION followed by markdown code block
-            deliberation_match = re.search(r'DELIBERATION\s*:?\s*([\s\S]*?)(?=```)', original_streaming_text, re.IGNORECASE)
-
-        if deliberation_match:
-            chapter_deliberation = deliberation_match.group(1).strip()
-            logger.info(f"Captured chapter-level deliberation: {len(chapter_deliberation)} chars (from original streaming response)")
+        # Deliberation is now extracted from verse-specific JSON fields, no need to extract separate deliberation section
+        logger.info("Deliberation will be extracted from verse-specific JSON fields")
 
         # For streaming responses, we need to make a separate call to get usage data
         # or estimate based on typical patterns
@@ -563,20 +545,10 @@ Example structure:
                 logger.error(f"Fallback request failed: {fallback_error}")
                 logger.warning("Proceeding with possibly truncated response")
 
-        # If we didn't get deliberation from original streaming, try fallback response
-        if not chapter_deliberation:
-            deliberation_match = re.search(r'DELIBERATION\s*:\s*([\s\S]*?)(?=STRUCTURED JSON OUTPUT)', response_text, re.IGNORECASE)
-            if deliberation_match:
-                chapter_deliberation = deliberation_match.group(1).strip()
-                logger.info(f"Found deliberation in fallback response: {len(chapter_deliberation)} chars")
-
-        if chapter_deliberation:
-            logger.info(f"Using deliberation: {len(chapter_deliberation)} chars")
-        else:
-            logger.warning("Could not find deliberation section in any response.")
+        # Deliberation extraction is now handled per-verse in JSON parsing
 
         # Modify for non-sacred version (replace divine names)
-        chapter_deliberation_non_sacred = divine_names_modifier.modify_english_with_hebrew_terms(chapter_deliberation) if chapter_deliberation else ''
+        # chapter_deliberation_non_sacred is no longer needed since deliberation is now verse-specific
 
         # Extract JSON array from response (handle markdown wrappers)
         json_text = response_text.strip()
@@ -752,6 +724,14 @@ Example structure:
             reference = vr.get('reference', f'{book_name} {chapter}:{verse_num}')
             instances = vr.get('instances', [])
 
+            # Extract verse-specific deliberation from JSON
+            verse_specific_deliberation = vr.get('deliberation', '')
+            if verse_specific_deliberation:
+                logger.debug(f"Found verse-specific deliberation for {reference}: {len(verse_specific_deliberation)} chars")
+            else:
+                logger.warning(f"No deliberation found for {reference}, using empty string")
+                verse_specific_deliberation = None  # Use null as requested
+
             # Find original verse data
             original_verse = next((v for v in verses_data if v['verse'] == verse_num), None)
             if not original_verse:
@@ -762,6 +742,9 @@ Example structure:
             hebrew_stripped = HebrewTextProcessor.strip_diacritics(original_verse['hebrew'])
             hebrew_non_sacred = divine_names_modifier.modify_divine_names(original_verse['hebrew'])
             english_non_sacred = divine_names_modifier.modify_english_with_hebrew_terms(original_verse['english'])
+
+            # Apply divine names modification to deliberation if present
+            verse_specific_deliberation_non_sacred = divine_names_modifier.modify_english_with_hebrew_terms(verse_specific_deliberation) if verse_specific_deliberation else None
 
             # Calculate word count
             hebrew_words = original_verse['hebrew'].split()
@@ -779,8 +762,8 @@ Example structure:
                 'english_text_non_sacred': english_non_sacred,  # Fixed: Match db_manager field name
                 'word_count': word_count,
                 'instances_detected': len(instances),
-                'figurative_detection_deliberation': chapter_deliberation,  # Chapter-level GPT-5.1 reasoning
-                'figurative_detection_deliberation_non_sacred': chapter_deliberation_non_sacred,
+                'figurative_detection_deliberation': verse_specific_deliberation,  # Verse-specific deliberation
+                'figurative_detection_deliberation_non_sacred': verse_specific_deliberation_non_sacred,
                 'model_used': 'gpt-5.1-medium-batched',
                 'truncation_occurred': 'no',  # Batched mode doesn't have truncation issues
                 'pro_model_used': 'no',
