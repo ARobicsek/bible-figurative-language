@@ -1,270 +1,209 @@
 # Next Session Prompt
 
-**Last Updated**: 2025-11-30
-**Session**: 6
-**Priority**: OPTIMIZE COST - Detection Quality is Good, But Too Expensive
+**Last Updated**: 2025-12-02 (End of Session 16)
+**Session**: 17
+**Priority**: 🎯 NEXT TASK - Extract Verse-Specific Deliberation Content
 
 ---
 
-## ✅ COMPLETED IN LAST SESSION
+## ✅ MAJOR BREAKTHROUGH - ALL CRITICAL ISSUES RESOLVED IN SESSION 16!
 
-1. **Fixed Architecture**: FlexibleTaggingGeminiClient now uses `analyze_with_custom_prompt()`
-2. **Fixed Cost Tracking**: metadata now shows actual costs (`total_cost` field added)
-3. **Confirmed NEW Format**: Hierarchical arrays working perfectly (target/vehicle/ground/posture)
-4. **Cost Analysis**: HIGH reasoning = $0.09/verse, MEDIUM = $0.02/verse
+### Deliberation Field Truncation Issue COMPLETELY FIXED
+**Status**: ✅ RESOLVED - Root cause identified and fixed
 
-**Key Files Modified**:
-- [unified_llm_client.py](../private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py) - Added custom prompt method
-- [flexible_tagging_gemini_client.py](../private/flexible_tagging_gemini_client.py) - Now builds and passes custom prompt
+**Session 16 Investigation Results**:
+1. **Root Cause Found**: FALSE POSITIVE truncation detection was triggering unnecessary fallback requests
+2. **Deliberation Extraction RESOLVED**: ✅ Successfully capturing 5,301+ character deliberation content
+3. **Truncation Logic FIXED**: ✅ Updated to handle markdown code block markers correctly
+4. **Extraction Logic IMPROVED**: ✅ Multiple regex patterns for robust deliberation extraction
 
----
+**Key Findings**:
+- **Original assessment wrong**: Deliberation extraction was actually working correctly
+- **Real issue**: False positive truncation detection due to markdown code block markers (```)
+- **Streaming responses**: Were complete and being captured successfully (19,499 chars)
+- **Fallback overwrites**: Happened due to false positive truncation detection, not extraction failure
 
-## 🎯 CRITICAL NEXT STEPS
+**What Now Works**:
+- ✅ Streaming responses capture full JSON (19,499+ chars confirmed)
+- ✅ Deliberation extraction working: `Captured chapter-level deliberation: 5301 chars`
+- ✅ No false positive truncation detection
+- ✅ Robust regex patterns handle real LLM response formats
+- ✅ Batching working efficiently: $0.0505 for 8 verses ($0.006/verse)
 
-### Priority 1: Implement Cost-Effective Detection Strategy
-
-**Problem**: GPT-5.1 costs $80.70 for full Proverbs (915 verses)
-
-**Solution**: Two-tier approach:
-1. **Gemini 2.5 Flash** for initial detection ($0.00004/1K tokens)
-2. **GPT-5.1** for validation of detected instances only
-
-**Expected Cost**: $1-2 for detection + ~$10-15 for validation = **~$11-17 total** (vs $81 current)
-
-**Implementation**:
-```python
-# In flexible_tagging_gemini_client.py:
-
-def analyze_figurative_language_flexible(...):
-    # Step 1: Fast detection with Gemini Flash
-    flash_result = self.gemini_flash_client.detect(custom_prompt)
-
-    # Step 2: If instances found, validate with GPT-5.1
-    if flash_instances:
-        validated = self.unified_client.validate_with_custom_prompt(
-            custom_prompt, flash_instances
-        )
-        return validated
-
-    return flash_result
+**Evidence from Session 16 Test**:
+```
+Streaming completed in 109.5s (5298 chunks)
+Total response length: 19499 characters
+Captured chapter-level deliberation: 5301 chars (from original streaming response)
+Estimated cost: $0.0505
+Detected 10 instances (1.25 instances/verse)
+Using deliberation: 5301 chars
 ```
 
-**Files to Create/Modify**:
-1. Add Gemini Flash client initialization in flexible_tagging_gemini_client.py
-2. Create validation-only method in unified_llm_client.py
-3. Update test script to use two-tier approach
+**Previous Session (15) Misdiagnosis**:
+- ❌ "Deliberation extraction broken" → **Actually working**
+- ❌ "Regex patterns failing" → **Actually robust with multiple fallbacks**
+- ❌ "Fallback overwriting" → **Only triggered by false positive detection**
+
+**Session 16 Fixes Applied**:
+1. **Fixed truncation detection**: Removed markdown code block markers before checking for truncation
+2. **Improved deliberation extraction**: Added 3-tier regex patterns for different LLM response formats
+3. **Verified batching efficiency**: Confirmed $0.006/verse vs expected $0.007/verse
+
+**Session 16 Accomplishments Summary**:
+- ✅ **False positive truncation detection eliminated** - fixed markdown code block handling
+- ✅ **Complete deliberation capture restored** - 5,301+ characters captured successfully
+- ✅ **Batching efficiency confirmed** - $0.006/verse working perfectly
+- ✅ **All major blocking issues resolved** - pipeline fully operational
 
 ---
 
-### Priority 2: Add Validation Step to Pipeline
+## 🎯 NEXT SESSION TASK - VERSE-SPECIFIC DELIBERATION EXTRACTION
 
-**Missing**: MetaphorValidator integration in test scripts
+### Current Issue
+**Problem**: The `figurative_detection_deliberation` field currently contains chapter-level deliberation (all verses combined) for each verse record in the database.
 
-**Current Test Flow**:
+**Need**: Each verse should contain only the deliberation content specific to that individual verse.
+
+### Current Behavior
+- **Deliberation content**: Contains full chapter deliberation (5,301 characters)
+- **Database field**: Same chapter-level content copied to every verse record
+- **Example**: Verse 11 contains deliberation for verses 11-18 (should be just verse 11)
+
+### Desired Behavior
+- **Verse 11**: Only deliberation content about "מוּסַר יְהוָה" and "בְתוֹכַחְתּוֹ"
+- **Verse 12**: Only deliberation content about "כִּי אֶת־אֲשֶׁר יֶאֱהַב" and simile "וּכְאָב אֶת־בֵּן"
+- **Verse 18**: Only deliberation content about "עֵץ־חַיִּים הִיא" metaphor
+
+### Implementation Approach
+1. **Parse chapter deliberation**: Split full deliberation by verse sections
+2. **Extract verse-specific content**: Map each deliberation section to its verse number
+3. **Update database population**: Assign verse-specific deliberation to each verse record
+4. **Maintain fallback handling**: Preserve existing chapter-level for validation if needed
+
+### Technical Requirements
+- **Regex pattern parsing**: Identify "Verse X:" delimiters in deliberation text
+- **Content extraction**: Extract deliberation content for each specific verse
+- **Database update**: Modify verse insertion logic to use verse-specific deliberation
+- **Quality assurance**: Ensure each verse gets appropriate deliberation content
+
+---
+
+## ✅ COMPLETED IN SESSION 14
+
+### Major Achievement - JSON Truncation Issue RESOLVED! ✅
+
+1.  **RESOLVED JSON Truncation in Batched Processing**
+    *   **Problem**: JSON responses from GPT-5.1 were being truncated at exactly 1,023 characters due to client-side buffering limits in the OpenAI Python SDK.
+    *   **Solution**: Implemented response streaming with chunk collection to capture complete responses.
+    *   **Results**:
+      - **Streaming approach**: 22,342 characters captured (+2,084% improvement)
+      - **Non-streaming fallback**: 20,999 characters captured (+1,951% improvement)
+      - **Previous issue**: 1,023 characters (confirmed resolved)
+    *   **Additional Fixes**: Enhanced JSON extraction logic (changed from non-greedy to greedy regex), comprehensive truncation detection, and multiple fallback mechanisms.
+    *   **Impact**: **BATCHED PROCESSING NOW FULLY FUNCTIONAL** - Ready for full-scale Proverbs processing!
+
+---
+
+## ✅ COMPLETED IN SESSION 11
+
+### Major Achievement - Initial Bug Fixes! ✅
+
+1.  **Fixed Field Name Mismatch (Issue #3)**
+    *   Corrected `hebrew_non_sacred` → `hebrew_text_non_sacred` and `english_non_sacred` → `english_text_non_sacred` in the `verse_data` dictionary to match database schema.
+    *   **Fixes NULL values in the database for non-sacred fields.**
+
+2.  **Enhanced Detection Prompt (Issue #1)**
+    *   Added an explicit instruction: "A single verse may contain MULTIPLE distinct figurative language instances."
+    *   **Addresses low detection rates** by encouraging the model to find all instances, not just the most prominent one.
+
+---
+
+## 🎯 SESSION 15 PRIORITY: FULL PROVERBS PROCESSING - TRUNCATION RESOLVED!
+
+### Current Status After Session 14 ✅
+
+**MAJOR BREAKTHROUGH ACHIEVED!** The JSON truncation issue has been completely resolved!
+
+**Problem SOLVED:**
+1.  ✅ **JSON truncation resolved with streaming** - captures 22,342+ characters
+2.  ✅ **Enhanced JSON extraction logic** - greedy regex and bracket counting
+3.  ✅ **Comprehensive truncation detection** - multiple fallback mechanisms
+4.  ✅ **Production testing verified** - ready for full-scale processing
+
+**Test Evidence (Session 14):**
+*   **Streaming approach**: 22,342 characters captured (+2,084% improvement from 1,023 chars)
+*   **Non-streaming fallback**: 20,999 characters captured (+1,951% improvement)
+*   **Performance**: Streaming completed in 166.3s with 5,847 chunks collected
+*   **Validation**: Both approaches now capture complete responses
+*   **Status**: BATCHED PROCESSING PIPELINE FULLY OPERATIONAL
+
+**All Previous Completed:**
+1.  ✅ Batched processing integrated into production pipeline.
+2.  ✅ Batched validation working with GPT-5.1 MEDIUM.
+3.  ✅ All previous bugs fixed (field names, deliberation capture, prompt enhancement).
+4.  ✅ **JSON truncation completely resolved** with streaming approach.
+5.  ✅ **Enhanced JSON extraction** and truncation detection implemented.
+
+**Ready for Next Steps:**
+1.  ✅ **JSON truncation fixed** - MAJOR BREAKTHROUGH!
+2.  ✅ **Test complete batched processing** with Proverbs 3:11-18
+3.  🎯 **Run full Proverbs Chapter 3** (35 verses) as validation
+4.  🎯 **Proceed with full Proverbs** (31 chapters, 915 verses, ~$7.69 total)
+
+---
+
+## 📋 SESSION 16 CRITICAL TASKS
+
+### 🔴 Task 1: FIX Deliberation Extraction Logic (CRITICAL)
+
+**Problem**: Deliberation extraction regex failing, fallback overwrites original streaming text.
+
+**Root Cause Analysis Required**:
+1. **Examine original streaming response**: Check if deliberation section exists in full streaming text
+2. **Debug regex pattern**: Test `r'DELIBERATION\s*:?\s*([\s\S]*?)(?=\s*\[)'` against actual content
+3. **Analyze fallback logic**: Understand why fallback overwrites original deliberation
+4. **Review extraction timing**: Move extraction before fallback processing
+
+**Debugging Approach**:
+```bash
+# Add extensive logging to see the actual streaming content
+# Test regex patterns against real response text
+# Verify deliberation section format from LLM
 ```
-Detection → Database (incomplete)
+
+**Expected Fix**: Complete deliberation text (600+ chars) captured and stored correctly in database.
+
+### Task 2: Test and Verify Deliberation Fix
+
+**Validation Steps**:
+```bash
+python test_proverbs_3_11-18_batched_validated.py
+# Check database for complete deliberation text
+# Verify no truncation or identical text across verses
+# Confirm extraction works for both streaming and fallback scenarios
 ```
 
-**Production Flow** (from Pentateuch/Psalms):
-```
-Detection → Validation → Database (complete with final_* fields)
-```
+**Expected Results**:
+- ✅ Full deliberation captured from streaming response
+- ✅ No overwriting by fallback logic
+- ✅ Database contains unique, complete deliberation text
+- ✅ All 8 verses have proper deliberation content
 
-**Implementation**:
-```python
-# In test script:
+### Task 3: Full Proverbs Processing (After Fix)
 
-from hebrew_figurative_db.ai_analysis.metaphor_validator import MetaphorValidator
+Only proceed after deliberation extraction is working correctly:
 
-# After detection:
-validator = MetaphorValidator()
-validation_results = validator.validate_verse_instances(
-    instances, hebrew_text, english_text
-)
-
-# Update instances with validation results:
-for instance in instances:
-    validation = validation_results[instance['id']]
-    instance['validation_decision_*'] = validation['decision']
-    instance['validation_reason_*'] = validation['reason']
-    if validation['decision'] == 'VALID':
-        instance['final_*'] = 'yes'
+```bash
+python private/interactive_parallel_processor.py
+# Select: Proverbs, FULL BOOK (after verification)
 ```
 
-**Files to Modify**:
-- test_proverbs_3_11_18_batched.py - Add validation step
-- Create new test: test_proverbs_with_validation.py
+## 🎯 LONG-TERM GOALS (After Critical Fix)
+
+1.  **Complete Proverbs processing** with working deliberation extraction
+2.  **Begin Psalms analysis** with validated pipeline
+3.  **Academic publication preparation** with complete dataset
+4.  **Performance optimization** for larger biblical books
 
 ---
-
-### Priority 3: Optimize Chapter Context
-
-**Current**: 5364 chars (full Hebrew + English chapter)
-**Issue**: May be overwhelming the model, slowing processing
-
-**Proposed Optimization**:
-```python
-# Instead of full chapter, provide:
-1. Theme summary (100-200 chars)
-2. Surrounding verses (±2 verses)
-3. Total: ~1000 chars
-
-Example for Proverbs 3:13:
-"""
-Proverbs 3 Theme: The value of wisdom and God's discipline
-
-...
-3:11 Do not reject the LORD's discipline
-3:12 For whom the LORD loves, He rebukes
-3:13 Happy is the man who finds wisdom  ← ANALYZING THIS VERSE
-3:14 Her value is better than silver
-3:15 She is more precious than rubies
-...
-"""
-```
-
-**Expected Benefits**:
-- Faster processing (less tokens to process)
-- Better focus (model isn't distracted by full chapter)
-- Lower cost (fewer input tokens)
-
-**Files to Modify**:
-- interactive_parallel_processor.py - Update chapter context generation
-- flexible_tagging_gemini_client.py - Accept compressed context
-
----
-
-## 📋 TASK LIST FOR NEXT SESSION
-
-### Phase 1: Test Gemini Flash Detection (30-45 minutes)
-- [ ] Add Gemini Flash (2.5) client to flexible_tagging_gemini_client.py
-- [ ] Create method: `detect_with_gemini_flash()`
-- [ ] Test on Proverbs 3:11-18 to measure detection quality
-- [ ] Compare with GPT-5.1 HIGH results
-- [ ] Expected cost: ~$0.001 for 8 verses
-
-### Phase 2: Implement Two-Tier Validation (45-60 minutes)
-- [ ] Create `validate_with_gpt51()` method that only validates pre-detected instances
-- [ ] Test: Gemini Flash detection → GPT-5.1 validation
-- [ ] Measure total cost vs current approach
-- [ ] Expected cost: ~$0.005-0.010 for 8 verses
-
-### Phase 3: Add MetaphorValidator Integration (30 minutes)
-- [ ] Import MetaphorValidator in test script
-- [ ] Call `validate_verse_instances()` after detection
-- [ ] Store validation results in output JSON
-- [ ] Verify `final_*` fields are populated
-
-### Phase 4: Run Full Proverbs Test (If Time Permits)
-- [ ] **ONLY IF** two-tier approach shows good quality AND low cost
-- [ ] Estimate: 915 verses × $0.015/verse = ~$14
-- [ ] Processing time: ~2-3 hours with 6 workers
-- [ ] **Get user approval before running**
-
----
-
-## 🚨 IMPORTANT REMINDERS
-
-### UTF-8 Encoding
-Always add to test scripts:
-```python
-if sys.platform == 'win32':
-    sys.stdout.reconfigure(encoding='utf-8')
-    sys.stderr.reconfigure(encoding='utf-8')
-```
-
-### Output Directory
-All test outputs go to `output/` directory (not root)
-
-### Database Schema
-Final output must match Pentateuch_Psalms_fig_language.db schema:
-- target, vehicle, ground, posture: JSON arrays
-- validation_decision_*, validation_reason_*: From MetaphorValidator
-- final_*: Post-validation classifications
-
----
-
-## 📊 COST PROJECTIONS
-
-### Current Approach (GPT-5.1 HIGH):
-- Cost/verse: $0.0882
-- Full Proverbs: **$80.70**
-- Time: ~1.8 hours (6 workers)
-
-### Proposed Approach (Gemini Flash + GPT-5.1 Validation):
-- Detection (Flash): $0.002/verse
-- Validation (GPT-5.1): $0.010/verse (only detected instances)
-- Full Proverbs: **~$11-15**
-- Savings: **$65-70 (81-87% reduction)**
-
-### Even Cheaper Approach (Gemini Flash + Gemini Pro Validation):
-- Detection (Flash): $0.002/verse
-- Validation (Pro): $0.003/verse
-- Full Proverbs: **~$4-5**
-- Savings: **~$75 (94% reduction)**
-- Trade-off: Slightly lower validation quality
-
----
-
-## 🎯 SUCCESS CRITERIA
-
-### Quality Benchmarks:
-- Detection rate: ≥1.0 instance/verse (target: 1.5 like Pentateuch/Psalms)
-- False positive rate: ≤10%
-- Hierarchical arrays: Complete (3-4 levels each)
-- Validation: VALID decisions ≥70%
-
-### Cost Benchmarks:
-- Target: ≤$15 for full Proverbs (915 verses)
-- Stretch goal: ≤$10 for full Proverbs
-
-### Speed Benchmarks:
-- ≤30s per verse average (including validation)
-- Total time ≤2 hours for full Proverbs (6 workers)
-
----
-
-## 📁 REFERENCE FILES
-
-### Code:
-- Production pipeline: [interactive_parallel_processor.py](../private/interactive_parallel_processor.py)
-- Detection client: [flexible_tagging_gemini_client.py](../private/flexible_tagging_gemini_client.py)
-- LLM client: [unified_llm_client.py](../private/src/hebrew_figurative_db/ai_analysis/unified_llm_client.py)
-- Validator: [metaphor_validator.py](../private/src/hebrew_figurative_db/ai_analysis/metaphor_validator.py)
-
-### Documentation:
-- This session: [SESSION_SUMMARY.md](SESSION_SUMMARY.md)
-- Issues found: [ISSUES_FOUND_AND_FIXES.md](ISSUES_FOUND_AND_FIXES.md)
-- Database schema: [DATABASE_SCHEMA.md](DATABASE_SCHEMA.md)
-
-### Test Results:
-- HIGH reasoning: [output/proverbs_3_11-18_batched_20251130_075050_results.json](../output/proverbs_3_11-18_batched_20251130_075050_results.json)
-- MEDIUM reasoning: [output/proverbs_medium_20251129_193819_results.json](../output/proverbs_medium_20251129_193819_results.json)
-
----
-
-## 🎓 NOTES FOR NEXT SESSION
-
-1. **Gemini Flash Pricing**: $0.000040/1K input, $0.000120/1K output (200x cheaper than GPT-5.1)
-2. **Quality vs Cost**: Flash detection quality needs testing - may need GPT-5.1 for complex verses
-3. **Validation Approach**: Can validate in bulk (all instances in a verse at once) for efficiency
-4. **Context Optimization**: Test with shorter context first to verify quality doesn't suffer
-
----
-
-## 💡 IF THINGS GO WRONG
-
-### If Gemini Flash Detection Quality is Poor:
-- Try Gemini Pro (2.5) instead (10x cheaper than GPT-5.1, better than Flash)
-- Use GPT-5.1 MEDIUM reasoning for detection (83% cheaper than HIGH)
-- Hybrid: Flash for simple verses, GPT-5.1 for complex wisdom literature
-
-### If Validation Costs Too Much:
-- Use Gemini Pro for validation instead of GPT-5.1
-- Skip validation for high-confidence detections (>0.9)
-- Batch validation (multiple verses at once)
-
-### If Detection Rate Still Low:
-- Add more Proverbs-specific examples to prompt
-- Reduce reasoning effort but add explicit criteria
-- Try different temperature/sampling settings
