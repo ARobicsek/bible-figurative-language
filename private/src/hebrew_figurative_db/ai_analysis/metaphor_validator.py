@@ -3,32 +3,39 @@
 """
 Two-stage metaphor validation system to reduce false positives
 
-Updated to work with the new multi-model LLM architecture.
-Continues to use Gemini for validation for cost-efficiency.
+Updated to use GPT-5.1 with reasoning_effort="medium" for validation.
+This provides better quality validation with reasonable cost-effectiveness.
 """
-import google.generativeai as genai
 import os
 import json
 import time
 import re
 from typing import List, Dict, Optional, Tuple
 
+# OpenAI imports for GPT-5.1
+try:
+    from openai import OpenAI
+    OPENAI_AVAILABLE = True
+except ImportError:
+    OPENAI_AVAILABLE = False
+    raise ImportError("OpenAI library not available. Please install: pip install openai")
+
 
 class MetaphorValidator:
     """
     Stage 2 validator for metaphor detection to eliminate false positives
 
-    Note: This validator continues to use Gemini for cost-efficiency.
-    The primary detection uses the expensive multi-model chain (GPT-5.1 → Claude → Gemini),
-    while validation uses faster/cheaper Gemini models.
+    Updated to use GPT-5.1 with reasoning_effort="medium" for validation.
+    This provides the preferred classification approach (conservative, holistic)
+    with reasonable cost-effectiveness.
     """
 
     def __init__(self, api_key: str = None, db_manager=None, logger=None):
         """
-        Initialize the validator with Gemini API
+        Initialize the validator with GPT-5.1
 
         Args:
-            api_key: Gemini API key (optional - will read from env if not provided)
+            api_key: OpenAI API key (optional - will read from env if not provided)
             db_manager: DatabaseManager instance for logging deliberations
             logger: Logger instance
         """
@@ -37,54 +44,78 @@ class MetaphorValidator:
 
         # Get API key from parameter or environment
         if api_key is None:
-            api_key = os.getenv("GEMINI_API_KEY")
+            api_key = os.getenv("OPENAI_API_KEY")
             if not api_key:
-                raise ValueError("GEMINI_API_KEY not found in environment or parameters")
+                raise ValueError("OPENAI_API_KEY not found in environment or parameters")
 
+        if not OPENAI_AVAILABLE:
+            raise ImportError("OpenAI library not available. Please install: pip install openai")
+
+        # Initialize OpenAI client for GPT-5.1
         self.api_key = api_key
-        genai.configure(api_key=api_key)
+        self.openai_client = OpenAI(api_key=api_key)
+        self.model_name = "gpt-5.1"
+        self.reasoning_effort = "medium"  # User preferred setting based on Session 8 testing
 
-        # Use Gemini 3.0 Pro if available, otherwise fall back to 2.5 Pro
-        PRIMARY_MODEL = 'gemini-3.0-pro'
-        FALLBACK_MODEL = 'gemini-2.5-pro'
+        if self.logger:
+            self.logger.info(f"[OK] MetaphorValidator initialized with GPT-5.1 (reasoning_effort={self.reasoning_effort})")
 
-        # Primary model: Gemini 3.0 Pro (or 2.5 Pro)
-        try:
-            self.model = genai.GenerativeModel(PRIMARY_MODEL)
-            self.model_name = PRIMARY_MODEL
-            if self.logger:
-                self.logger.info(f"[OK] MetaphorValidator initialized with {PRIMARY_MODEL}")
-        except Exception:
-            try:
-                self.model = genai.GenerativeModel("gemini-3-pro")
-                self.model_name = "gemini-3-pro"
-                if self.logger:
-                    self.logger.info(f"[OK] MetaphorValidator initialized with gemini-3-pro")
-            except Exception:
-                # Fallback if 3.0 not available
-                self.model = genai.GenerativeModel(FALLBACK_MODEL)
-                self.model_name = FALLBACK_MODEL
-                if self.logger:
-                    self.logger.info(f"[OK] MetaphorValidator initialized with {FALLBACK_MODEL} (fallback)")
-
-        # Fallback model
-        self.fallback_model = genai.GenerativeModel(FALLBACK_MODEL)
-        self.fallback_model_name = FALLBACK_MODEL
-
-        # Conservative generation config for validation
-        self.generation_config = {
-            'temperature': 0.05,  # Very low temperature for consistency
-            'top_p': 0.7,
-            'top_k': 20,
-            'max_output_tokens': 15000,
-            # Note: Gemini 3.0 Pro defaults to thinking_level="high"
-        }
-
+        # Tracking counters
         self.validation_count = 0
         self.type_validation_count = 0
 
+    def validate_chapter_instances(self, chapter_instances: List[Dict]) -> List[Dict]:
+        """Validate all instances from all verses in a chapter with one API call using GPT-5.1 MEDIUM."""
+        if not chapter_instances:
+            return []
+
+        # Add a temporary unique ID to each instance for correlation
+        for i, instance in enumerate(chapter_instances):
+            instance['instance_id'] = i + 1
+
+        prompt = self._create_chapter_validation_prompt(chapter_instances)
+
+        try:
+            response = self.openai_client.chat.completions.create(
+                model="gpt-5.1",
+                messages=[
+                    {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language validation for an entire chapter."},
+                    {"role": "user", "content": prompt}
+                ],
+                max_completion_tokens=15000,
+                reasoning_effort=self.reasoning_effort
+            )
+            self.validation_count += 1
+
+            if response.choices and response.choices[0].message.content:
+                response_text = response.choices[0].message.content
+                # Extract JSON from the response
+                json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text, re.DOTALL)
+                if json_match:
+                    json_string = json_match.group(1).strip()
+                    try:
+                        validation_results = json.loads(json_string)
+                        return validation_results
+                    except json.JSONDecodeError as e:
+                        if self.logger:
+                            self.logger.error(f"Failed to parse chapter validation JSON: {e}")
+                        return []
+                else:
+                    if self.logger:
+                        self.logger.error("No JSON block found in chapter validation response.")
+                    return []
+            else:
+                if self.logger:
+                    self.logger.error("Empty response from chapter validation API call.")
+                return []
+
+        except Exception as e:
+            if self.logger:
+                self.logger.error(f"API error during chapter validation: {e}")
+            return []
+
     def validate_verse_instances(self, instances: List[Dict], hebrew_text: str, english_text: str) -> List[Dict]:
-        """Validate all instances found in a single verse with one API call."""
+        """Validate all instances found in a single verse with one API call using GPT-5.1 MEDIUM."""
         if not instances:
             return []
 
@@ -95,15 +126,21 @@ class MetaphorValidator:
         prompt = self._create_bulk_validation_prompt(instances, hebrew_text, english_text)
 
         try:
-            response = self.model.generate_content(
-                prompt,
-                generation_config=self.generation_config
+            response = self.openai_client.chat.completions.create(
+                model="gpt-5.1",
+                messages=[
+                    {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language validation."},
+                    {"role": "user", "content": prompt}
+                ],
+                max_completion_tokens=15000,
+                reasoning_effort=self.reasoning_effort
             )
             self.validation_count += 1
 
-            if response.text:
+            if response.choices and response.choices[0].message.content:
+                response_text = response.choices[0].message.content
                 # Extract JSON from the response
-                json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response.text, re.DOTALL)
+                json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text, re.DOTALL)
                 if json_match:
                     json_string = json_match.group(1).strip()
                     try:
@@ -127,37 +164,47 @@ class MetaphorValidator:
                 self.logger.error(f"API error during bulk validation: {e}")
             return []
 
-    def _create_bulk_validation_prompt(self, instances: List[Dict], hebrew_text: str, english_text: str) -> str:
-        """Create a prompt to validate all instances from a verse in a single call."""
+    def _create_chapter_validation_prompt(self, chapter_instances: List[Dict]) -> str:
+        """Create a prompt to validate all instances from all verses in a chapter in a single call."""
 
-        # Prepare a simplified list of instances for the prompt
+        # Prepare a simplified list of instances for the prompt, including verse context
         prompt_instances = []
-        for instance in instances:
+        for instance in chapter_instances:
             types_to_validate = []
             for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
                 if instance.get(fig_type) == 'yes':
                     types_to_validate.append(fig_type)
-            
+
             prompt_instances.append({
                 "instance_id": instance['instance_id'],
+                "verse_reference": instance.get('verse_reference', ''),
+                "hebrew_text": instance.get('hebrew_text', ''),
+                "english_text": instance.get('english_text', ''),
+                "figurative_text": instance.get('figurative_text', ''),
                 "english_text": instance.get('english_text', ''),
                 "explanation": instance.get('explanation', ''),
+                "confidence": instance.get('confidence', 0.0),
                 "types": types_to_validate
             })
 
-        prompt = f"""You are a biblical Hebrew scholar validating a list of detected figurative language instances from a single verse.
+        prompt = f"""You are a biblical Hebrew scholar validating a list of detected figurative language instances from an entire chapter.
 
-CONTEXT:
-Hebrew: {hebrew_text}
-English: {english_text}
-
-DETECTED INSTANCES:
+DETECTED INSTANCES FROM ALL VERSES:
 ```json
 {json.dumps(prompt_instances, indent=2)}
 ```
 
 TASK:
 Review each instance in the JSON array above. For each instance, validate each of the detected `types`. For each type, you must provide a validation decision.
+
+VALIDATION GUIDELINES:
+- Cross-domain comparisons where A is described as B (Egypt = iron furnace) are VALID METAPHORS
+- Divine body parts (God's hand, arm, face) are VALID METAPHORS (God is incorporeal)
+- Abstract concepts acting as agents (dread and fear...put upon) are VALID PERSONIFICATION
+- Natural phenomena acting human-like (mountains skipped, sea fled) are VALID PERSONIFICATION
+- Similes using "like/as" for unlike things (like a lion) are VALID SIMILES
+- Literal historical references, standard biblical terminology, and technical religious terms are INVALID
+- Divine actions (speaking, blessing, smiting) are LITERAL in ANE context, not figurative
 
 RESPONSE FORMAT:
 You MUST return a valid JSON array of validation objects inside a JSON code block. Each object in the array must contain:
@@ -198,50 +245,6 @@ Provide your validation output below.
 VALIDATION:
 """
         return prompt
-
-    def validate_verse_instances(self, instances: List[Dict], hebrew_text: str, english_text: str) -> List[Dict]:
-        """Validate all instances found in a single verse with one API call."""
-        if not instances:
-            return []
-
-        # Add a temporary unique ID to each instance for correlation
-        for i, instance in enumerate(instances):
-            instance['instance_id'] = i + 1
-
-        prompt = self._create_bulk_validation_prompt(instances, hebrew_text, english_text)
-
-        try:
-            response = self.model.generate_content(
-                prompt,
-                generation_config=self.generation_config
-            )
-            self.validation_count += 1
-
-            if response.text:
-                # Extract JSON from the response
-                json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response.text, re.DOTALL)
-                if json_match:
-                    json_string = json_match.group(1).strip()
-                    try:
-                        validation_results = json.loads(json_string)
-                        return validation_results
-                    except json.JSONDecodeError as e:
-                        if self.logger:
-                            self.logger.error(f"Failed to parse bulk validation JSON: {e}")
-                        return []
-                else:
-                    if self.logger:
-                        self.logger.error("No JSON block found in bulk validation response.")
-                    return []
-            else:
-                if self.logger:
-                    self.logger.error("Empty response from bulk validation API call.")
-                return []
-
-        except Exception as e:
-            if self.logger:
-                self.logger.error(f"API error during bulk validation: {e}")
-            return []
 
     def _create_bulk_validation_prompt(self, instances: List[Dict], hebrew_text: str, english_text: str) -> str:
         """Create a prompt to validate all instances from a verse in a single call."""
@@ -352,63 +355,21 @@ VALIDATION:
         }
 
         try:
-            response = self.model.generate_content(
-                prompt,
-                generation_config=self.generation_config
+            response = self.openai_client.chat.completions.create(
+                model="gpt-5.1",
+                messages=[
+                    {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language validation."},
+                    {"role": "user", "content": prompt}
+                ],
+                max_completion_tokens=15000,
+                reasoning_effort=self.reasoning_effort
             )
 
             self.validation_count += 1
 
-            # Check for finish reasons that prevent response.text access
-            if hasattr(response, 'candidates') and response.candidates:
-                candidate = response.candidates[0]
-                if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
-                    finish_reason = candidate.finish_reason
-                    finish_reason_value = int(finish_reason)
-
-                    # Handle different finish reasons
-                    if finish_reason_value == 2:  # MAX_TOKENS
-                        validation_data['validation_decision'] = 'INVALID'
-                        validation_data['validation_reason'] = "Response truncated due to token limit"
-                        validation_data['validation_error'] = f"MAX_TOKENS: Response was truncated"
-                        self._log_validation_data(figurative_language_id, validation_data)
-                        return False, "Response truncated due to token limit", "MAX_TOKENS: Response was truncated", None
-                    elif finish_reason_value == 3:  # SAFETY
-                        validation_data['validation_decision'] = 'INVALID'
-                        validation_data['validation_reason'] = "Content restricted by safety filters"
-                        validation_data['validation_error'] = f"SAFETY: Content restriction"
-                        self._log_validation_data(figurative_language_id, validation_data)
-                        return False, "Content restricted by safety filters", "SAFETY: Content restriction", None
-                    elif finish_reason_value == 4:  # RECITATION
-                        validation_data['validation_decision'] = 'INVALID'
-                        validation_data['validation_reason'] = "Content restricted due to recitation"
-                        validation_data['validation_error'] = f"RECITATION: Content restriction"
-                        self._log_validation_data(figurative_language_id, validation_data)
-                        return False, "Content restricted due to recitation", "RECITATION: Content restriction", None
-                    elif finish_reason_value == 5:  # OTHER
-                        validation_data['validation_decision'] = 'INVALID'
-                        validation_data['validation_reason'] = "Content restricted for other reasons"
-                        validation_data['validation_error'] = f"OTHER: Content restriction"
-                        self._log_validation_data(figurative_language_id, validation_data)
-                        return False, "Content restricted for other reasons", "OTHER: Content restriction", None
-
-                    # Legacy string-based checking for backward compatibility
-                    if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
-                        validation_data['validation_decision'] = 'INVALID'
-                        validation_data['validation_reason'] = "Content restricted by safety filters"
-                        validation_data['validation_error'] = f"Safety restriction: {finish_reason.name}"
-                        self._log_validation_data(figurative_language_id, validation_data)
-                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason.name}", None
-                    elif str(finish_reason) in ['SAFETY', 'RECITATION', 'OTHER']:
-                        validation_data['validation_decision'] = 'INVALID'
-                        validation_data['validation_reason'] = "Content restricted by safety filters"
-                        validation_data['validation_error'] = f"Safety restriction: {finish_reason}"
-                        self._log_validation_data(figurative_language_id, validation_data)
-                        return False, "Content restricted by safety filters", f"Safety restriction: {finish_reason}", None
-
-            if response.text:
+            if response.choices and response.choices[0].message.content:
                 # Parse the validation response
-                response_text = response.text.strip()
+                response_text = response.choices[0].message.content.strip()
                 validation_data['validation_response'] = response_text
 
                 # Expected format: "VALID: reason" or "INVALID: reason" or "RECLASSIFY: type - reason"
@@ -503,111 +464,61 @@ VALIDATION:
             fig_type, hebrew_text, english_text, figurative_text, explanation, confidence
         )
 
-        # Try primary model first, fallback on API errors
-        for attempt, (model, model_name) in enumerate([(self.model, self.model_name), (self.fallback_model, self.fallback_model_name)]):
-            try:
-                response = model.generate_content(
-                    prompt,
-                    generation_config=self.generation_config
-                )
+        try:
+            response = self.openai_client.chat.completions.create(
+                model="gpt-5.1",
+                messages=[
+                    {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language type validation."},
+                    {"role": "user", "content": prompt}
+                ],
+                max_completion_tokens=15000,
+                reasoning_effort=self.reasoning_effort
+            )
 
-                self.type_validation_count += 1
-                if self.logger and attempt > 0:
-                    self.logger.info(f"Validation succeeded with fallback model: {model_name}")
+            self.type_validation_count += 1
 
-                # Check for finish reasons that prevent response.text access
-                if hasattr(response, 'candidates') and response.candidates:
-                    candidate = response.candidates[0]
-                    if hasattr(candidate, 'finish_reason') and candidate.finish_reason:
-                        finish_reason = candidate.finish_reason
-                        finish_reason_value = int(finish_reason)
+            if response.choices and response.choices[0].message.content:
+                # Parse the validation response
+                response_text = response.choices[0].message.content.strip()
 
-                        # Handle different finish reasons
-                        if finish_reason_value == 2:  # MAX_TOKENS
-                            error_msg = "MAX_TOKENS: Response was truncated"
-                            if self.logger:
-                                self.logger.warning(f"Response truncated in type validation for '{figurative_text}' due to token limit")
-                            return False, "Response truncated due to token limit", error_msg, None
-                        elif finish_reason_value == 3:  # SAFETY
-                            error_msg = "SAFETY: Content restriction"
-                            if self.logger:
-                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: SAFETY")
-                            return False, "Content restricted by safety filters", error_msg, None
-                        elif finish_reason_value == 4:  # RECITATION
-                            error_msg = "RECITATION: Content restriction"
-                            if self.logger:
-                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: RECITATION")
-                            return False, "Content restricted due to recitation", error_msg, None
-                        elif finish_reason_value == 5:  # OTHER
-                            error_msg = "OTHER: Content restriction"
-                            if self.logger:
-                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: OTHER")
-                            return False, "Content restricted for other reasons", error_msg, None
+                # Expected format: "VALID: reason" or "INVALID: reason" or "RECLASSIFY: new_type - reason"
+                if response_text.startswith("VALID:"):
+                    reason = response_text[6:].strip()
+                    return True, reason, None, None
+                elif response_text.startswith("INVALID:"):
+                    reason = response_text[8:].strip()
+                    return False, reason, None, None
+                elif response_text.startswith("RECLASSIFY:"):
+                    # Parse "RECLASSIFY: new_type - reason" or "RECLASSIFY: new_type"
+                    content = response_text[11:].strip()
+                    parts = content.split(" - ", 1)
+                    potential_type = parts[0].strip().lower().rstrip('.:')
+                    allowed_types = {'simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
 
-                        # Legacy string-based checking for backward compatibility
-                        if hasattr(finish_reason, 'name') and finish_reason.name in ['SAFETY', 'RECITATION', 'OTHER']:
-                            error_msg = f"Safety restriction: {finish_reason.name}"
-                            if self.logger:
-                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: {finish_reason.name}")
-                            return False, "Content restricted by safety filters", error_msg, None
-                        elif str(finish_reason) in ['SAFETY', 'RECITATION', 'OTHER']:
-                            error_msg = f"Safety restriction: {finish_reason}"
-                            if self.logger:
-                                self.logger.warning(f"Content restricted in type validation for '{figurative_text}'. Reason: {finish_reason}")
-                            return False, "Content restricted by safety filters", error_msg, None
-
-                if response.text:
-                    # Parse the validation response
-                    response_text = response.text.strip()
-
-                    # Expected format: "VALID: reason" or "INVALID: reason" or "RECLASSIFY: new_type - reason"
-                    if response_text.startswith("VALID:"):
-                        reason = response_text[6:].strip()
-                        return True, reason, None, None
-                    elif response_text.startswith("INVALID:"):
-                        reason = response_text[8:].strip()
-                        return False, reason, None, None
-                    elif response_text.startswith("RECLASSIFY:"):
-                        # Parse "RECLASSIFY: new_type - reason" or "RECLASSIFY: new_type"
-                        content = response_text[11:].strip()
-                        parts = content.split(" - ", 1)
-                        potential_type = parts[0].strip().lower().rstrip('.:')
-                        allowed_types = {'simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other'}
-
-                        if potential_type in allowed_types:
-                            reclassified_type = potential_type
-                            reason = parts[1].strip() if len(parts) > 1 else f"Reclassified from {fig_type} to {reclassified_type}"
-                        else:
-                            reclassified_type = "other"
-                            reason = content
-
-                        return False, reason, None, reclassified_type
+                    if potential_type in allowed_types:
+                        reclassified_type = potential_type
+                        reason = parts[1].strip() if len(parts) > 1 else f"Reclassified from {fig_type} to {reclassified_type}"
                     else:
-                        # Fallback parsing
-                        if "RECLASSIFY" in response_text.upper():
-                            return False, response_text, None, "other"
-                        elif "VALID" in response_text.upper():
-                            return True, response_text, None, None
-                        else:
-                            return False, response_text, None, None
+                        reclassified_type = "other"
+                        reason = content
+
+                    return False, reason, None, reclassified_type
                 else:
-                    return False, "No response generated", "Empty response", None
+                    # Fallback parsing
+                    if "RECLASSIFY" in response_text.upper():
+                        return False, response_text, None, "other"
+                    elif "VALID" in response_text.upper():
+                        return True, response_text, None, None
+                    else:
+                        return False, response_text, None, None
+            else:
+                return False, "No response generated", "Empty response", None
 
-            except Exception as e:
-                error_msg = f"Type validation API error: {str(e)}"
-                if self.logger:
-                    self.logger.warning(f"Model {model_name} failed for '{figurative_text}': {e}")
-
-                # If this is the last attempt, return the error
-                if attempt == 1:  # Last attempt (fallback model)
-                    if self.logger:
-                        self.logger.error(f"All models failed for type validation of '{figurative_text}': {e}")
-                    return False, "API error during type validation", error_msg, None
-                # Otherwise continue to fallback model
-                continue
-
-        # Should not reach here, but just in case
-        return False, "All validation models failed", "Exhausted fallback options", None
+        except Exception as e:
+            error_msg = f"Type validation API error: {str(e)}"
+            if self.logger:
+                self.logger.error(f"Type validation failed for '{figurative_text}': {e}")
+            return False, "API error during type validation", error_msg, None
 
     def _create_type_validation_prompt(self,
                                       fig_type: str,
@@ -891,12 +802,12 @@ VALIDATION:"""
 
 
 def test_metaphor_validator():
-    """Test the metaphor validator with known cases"""
+    """Test the metaphor validator with known cases using GPT-5.1 MEDIUM"""
 
     # API key (same as main system)
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
-        raise ValueError("GEMINI_API_KEY environment variable not set. Please set it before running.")
+        raise ValueError("OPENAI_API_KEY environment variable not set. Please set it before running.")
 
     validator = MetaphorValidator(api_key)
 

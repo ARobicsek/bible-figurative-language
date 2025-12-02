@@ -356,6 +356,8 @@ class UnifiedLLMClient:
                 metadata['all_detected_instances'] = all_instances
                 metadata['truncation_info'] = truncation_info
                 metadata['retries'] = attempt
+                metadata['raw_response'] = response_text  # Full model response
+                metadata['deliberation'] = deliberation   # Extracted deliberation section
 
                 return cleaned_response, None, metadata
 
@@ -420,6 +422,8 @@ class UnifiedLLMClient:
                 metadata['all_detected_instances'] = all_instances
                 metadata['truncation_info'] = truncation_info
                 metadata['retries'] = attempt
+                metadata['raw_response'] = response_text  # Full model response
+                metadata['deliberation'] = deliberation   # Extracted deliberation section
 
                 return cleaned_response, None, metadata
 
@@ -496,6 +500,8 @@ class UnifiedLLMClient:
                 metadata['all_detected_instances'] = all_instances
                 metadata['truncation_info'] = truncation_info
                 metadata['retries'] = attempt
+                metadata['raw_response'] = response_text  # Full model response
+                metadata['deliberation'] = deliberation   # Extracted deliberation section
 
                 return cleaned_response, None, metadata
 
@@ -786,7 +792,11 @@ Analysis:"""
             return "[]", [], deliberation, truncation_info
 
     def _extract_json_array(self, response_text: str) -> str:
-        """Extract JSON array from response text"""
+        """
+        Extract JSON array from response text
+
+        FIXED: Now finds the LAST/LARGEST array with content, not the first empty array
+        """
 
         # Try to find JSON in code block first
         json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text)
@@ -797,18 +807,50 @@ Analysis:"""
         json_output_match = re.search(r'JSON OUTPUT:\s*([\s\S]*?)(?:\s*$)', response_text, re.IGNORECASE)
         if json_output_match:
             json_section = json_output_match.group(1).strip()
-            array_match = re.search(r'(\[[\s\S]*?\])', json_section)
+            array_match = re.search(r'(\[[\s\S]*\])', json_section)  # Changed to greedy
             if array_match:
                 return array_match.group(1).strip()
 
-        # Look for standalone array
-        array_match = re.search(r'\[[\s\S]*?\]', response_text)
-        if array_match:
-            candidate = array_match.group(0)
-            if '{' in candidate and '}' in candidate:
-                return candidate.strip()
+        # BUG FIX #2: Use proper bracket matching to find complete arrays
+        # Find ALL opening brackets, then match each with proper closing bracket
+        def find_complete_arrays(text):
+            """Find all complete JSON arrays using bracket counting"""
+            arrays = []
+            i = 0
+            while i < len(text):
+                if text[i] == '[':
+                    # Found opening bracket, find matching closing bracket
+                    bracket_count = 1
+                    j = i + 1
+                    while j < len(text) and bracket_count > 0:
+                        if text[j] == '[':
+                            bracket_count += 1
+                        elif text[j] == ']':
+                            bracket_count -= 1
+                        j += 1
 
-        # Check for empty array
+                    if bracket_count == 0:  # Found complete array
+                        array_text = text[i:j]
+                        arrays.append((i, array_text))
+                i += 1
+            return arrays
+
+        all_arrays = find_complete_arrays(response_text)
+
+        if all_arrays:
+            # Separate arrays with objects from empty/simple arrays
+            content_arrays = [(pos, arr) for pos, arr in all_arrays if '{' in arr and '}' in arr]
+
+            # Prefer the LAST array with objects (usually the final JSON output)
+            if content_arrays:
+                return content_arrays[-1][1].strip()
+
+            # If no content arrays, check for explicit empty array
+            empty_arrays = [(pos, arr) for pos, arr in all_arrays if arr.strip() == '[]']
+            if empty_arrays:
+                return "[]"
+
+        # Check for empty array or "no figurative language" statement
         if '[]' in response_text or 'no figurative language' in response_text.lower():
             return "[]"
 
