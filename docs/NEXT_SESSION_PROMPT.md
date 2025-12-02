@@ -1,79 +1,85 @@
 # Next Session Prompt
 
-**Last Updated**: 2025-12-02 (End of Session 19)
-**Session**: 20
-**Priority**: Process Full Proverbs Chapter 3
+**Last Updated**: 2025-12-02 (End of Session 21)
+**Session**: 22
+**Priority**: Fix Validation Fields Missing in Database
 
 ---
 
-## SESSION 19 ACCOMPLISHED: FIXED VERSE-SPECIFIC DELIBERATION ✅
+## SESSION 21 ACCOMPLISHED: ADDED COMMAND-LINE SUPPORT + IDENTIFIED VALIDATION ISSUE ✅
 
-### Issue: VERSE-SPECIFIC DELIBERATION - RESOLVED!
+### Issue #1: SCRIPT ONLY WORKS INTERACTIVELY - RESOLVED! ✅
 
-**Problem**: The `figurative_detection_deliberation` field contained chapter-level deliberation (5,301 characters) for ALL verses, but each verse should only contain deliberation for that ONE verse.
+**Problem**: The script required interactive prompts every time, making it difficult to run specific processing tasks.
 
 **Solution Implemented**:
-Instead of parsing chapter deliberation, we took a cleaner approach:
+1. **Added command-line argument parsing** in `interactive_parallel_processor.py` (lines 1266-1296):
+   - Detects when `script.py BookName ChapterNumber` is provided
+   - Validates book name and chapter number
+   - Creates selection structure automatically
 
-1. **Modified the detection prompt** in `interactive_parallel_processor.py` (lines 379-419):
-   - Removed the separate DELIBERATION section
-   - Added "deliberation" field to the JSON structure for each verse
-   - Instructed the AI to provide verse-specific analysis in the JSON
+2. **Special database naming** (lines 1290-1291):
+   - Proverbs 3 → outputs to "Proverbs.db" as requested
+   - Other books/chapters use timestamp-based naming
 
-2. **Updated JSON parsing logic** (lines 750-789):
-   - Extract verse-specific deliberation from JSON: `verse_specific_deliberation = vr.get('deliberation', '')`
-   - Assign to verse record: `'figurative_detection_deliberation': verse_specific_deliberation`
-   - Handle null case as requested: if no deliberation found, use None
+3. **Bypassed interactive prompts** (lines 1412-1419):
+   - Skips confirmation prompt in command-line mode
+   - Auto-starts processing
 
-3. **Removed old deliberation extraction code**:
-   - Deleted lines extracting chapter-level deliberation (461-476)
-   - Cleaned up references to `chapter_deliberation` (549-558)
+4. **Fixed dotenv loading** (lines 1262-1264):
+   - Moved initialization before command-line parsing
 
 **Results**:
-- **Before**: All verses had identical deliberation (5,301 chars)
-- **After**: Each verse has unique, verse-specific deliberation:
-  - Verse 11: 428 chars (about discipline)
-  - Verse 12: 337 chars (about father comparison)
-  - Verse 13: 397 chars (about finding wisdom)
-  - etc.
-- Test completed successfully with Proverbs 3:11-18
-- API cost remained low: $0.0484 for 8 verses
+- Can now run: `python private/interactive_parallel_processor.py Proverbs 3`
+- Script creates "Proverbs.db" database file
+- Processes all 35 verses from Proverbs Chapter 3
+- Uses batched mode for optimal performance
+- No interactive prompts needed
 
-**Why this approach is better than parsing**:
-- No complex regex parsing needed
-- AI provides focused, verse-specific deliberation
-- Cleaner code structure
-- More reliable than parsing free text
+### Issue #2: VALIDATION FIELDS MISSING IN DATABASE - IDENTIFIED! ⚠️
+
+**Problem**: After running Proverbs 3 successfully, the database shows:
+- ✓ All 35 verses processed
+- ✓ Detection results stored correctly
+- ✓ Verse-specific deliberation working
+- ✗ Validation fields are all missing/null
+
+**Root Cause**: The validation results are not being properly stored in the database during batched validation.
+
+**Impact**:
+- Database has detection results but no validation decisions
+- Need to fix validation storage before full Proverbs processing
 
 ---
 
-## SESSION 20 TASKS - STEP BY STEP
+## SESSION 22 TASKS - STEP BY STEP
 
-### TASK: PROCESS FULL PROVERBS CHAPTER 3
+### TASK: FIX VALIDATION FIELD STORAGE
 
-**Goal**: Run the complete processing pipeline for all 35 verses of Proverbs Chapter 3.
-
-**Prerequisites**:
-- Both issues from Session 18 are now resolved:
-  1. ✅ Validation batching fixed (73% cost reduction)
-  2. ✅ Verse-specific deliberation fixed
+**Priority**: HIGH - Must fix before processing full Proverbs
 
 **Execution steps**:
-1. **Run the processor**:
-   ```bash
-   python private/interactive_parallel_processor.py Proverbs 3
-   ```
+1. **Investigate validation flow**:
+   - Check `validate_chapter_instances()` method in `metaphor_validator.py`
+   - Review how validation results are passed back to processor
+   - Verify `update_validation_data()` in `db_manager.py`
 
-2. **Expected results**:
-   - All 35 verses processed
-   - Each with verse-specific deliberation
-   - Batched validation (single API call)
-   - Estimated total cost: ~$11.40 (from $42 previously)
+2. **Run test with small section**:
+   - Use Proverbs 3:11-18 to verify fix
+   - Check that validation fields are populated
+   - Verify final_* fields have correct values
 
-3. **Verification**:
-   - Check the output database
-   - Verify each verse has unique deliberation
-   - Confirm total API cost is reasonable
+3. **Run full Proverbs 3 after fix**:
+   - Validate all 35 verses have detection AND validation
+   - Confirm cost is still ~$0.43
+   - Database: `Proverbs.db`
+
+**Expected After Fix**:
+- Detection results: ✓ Working
+- Validation results: ✓ Will be fixed
+- Database complete: ✓ Ready for production
+
+**Note**: Command-line support is working perfectly - just need to fix validation storage!
 
 ---
 

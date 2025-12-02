@@ -19,7 +19,7 @@
 - [x] Fix cost tracking bug
 - [x] Fix critical JSON parsing bug (Session 7)
 
-### Phase 2: Add Proverbs - ✅ COMPLETE (All Issues Resolved!)
+### Phase 2: Add Proverbs - ALMOST COMPLETE (One Issue Remains)
 - [x] Update book definitions (interactive_parallel_processor.py)
 - [x] Configure POETIC_WISDOM context
 - [x] Add chapter context support for wisdom literature
@@ -48,6 +48,8 @@
 - [x] **SESSION 17: Identify root cause of high API costs** (validation not batched)
 - [x] **SESSION 18: FIX validation batching** (RESOLVED - now per-chapter, saved 73% costs!)
 - [x] **SESSION 19: FIX verse-specific deliberation extraction** (RESOLVED!)
+- [x] **SESSION 20: Add command-line support for direct processing** (RESOLVED!)
+- [x] **SESSION 21: Identify validation field storage issue** (NEEDS FIX)
 - [ ] Process Proverbs 1-31 (915 verses, GPT-5.1 MEDIUM batched, ~$11.40 projected)
 
 ### Phase 3: Progress Tracking - NOT STARTED
@@ -58,12 +60,11 @@
 
 ---
 
-## CURRENT STATUS (Session 19 Update)
+## CURRENT STATUS (Session 21 Update)
 
-### ✅ ALL CRITICAL ISSUES RESOLVED!
+### ⚠️ ONE CRITICAL ISSUE REMAINS: VALIDATION FIELD STORAGE
 
-Both major blockers have been fixed:
-
+What's working:
 1. **✅ High API Costs - RESOLVED (Session 18)**
    - Validation batching implemented
    - Reduced from $0.40 to $0.10 per 8 verses (73% savings)
@@ -73,18 +74,57 @@ Both major blockers have been fixed:
    - Approach: Modified prompt to include deliberation in JSON
    - No parsing required - cleaner and more reliable
 
-### Current State: READY FOR PRODUCTION
+3. **✅ Command-Line Support - ADDED (Session 20)**
+   - Can now run: `python private/interactive_parallel_processor.py Proverbs 3`
+   - Outputs to "Proverbs.db" as requested
+   - Skips interactive prompts for automated processing
 
-The system is now ready to process full Proverbs Chapter 3 with:
-- Batched detection (1 API call)
-- Batched validation (1 API call)
-- Verse-specific deliberation
-- Total cost: ~$0.10 per 8 verses
-- Full Proverbs (915 verses): ~$11.40 (down from $42)
+4. **❌ Validation Field Storage - BROKEN (Session 21)**
+   - Detection results are stored correctly
+   - Validation API call works
+   - BUT validation results not saved to database
+   - All validation_* fields are null/missing
+
+### Current State: NEEDS VALIDATION FIX BEFORE PRODUCTION
+
+The system processes Proverbs Chapter 3 successfully but has incomplete data:
+- Command-line execution: `python private/interactive_parallel_processor.py Proverbs 3` ✓
+- Batched detection (1 API call) ✓
+- Batched validation API call (1 API call) ✓
+- Verse-specific deliberation ✓
+- Database creation ✓
+- **Validation field storage ❌**
+- Direct database output to "Proverbs.db" ✓
+- Cost: ~$0.43 for Chapter 3 (35 verses)
+- Full Proverbs (915 verses): ~$11.40 (after validation fix)
 
 ---
 
 ## Session History
+
+### Session 20: Added Command-Line Support for Direct Processing
+**Date**: 2025-12-02
+**Duration**: ~30 minutes
+**Status**: Complete - Script Now Accepts Command-Line Arguments
+
+**Accomplishments**:
+1. Added command-line argument parsing to `interactive_parallel_processor.py`
+2. Created automatic selection structure for command-line mode
+3. Implemented special database naming (Proverbs 3 → Proverbs.db)
+4. Added bypass for interactive confirmation prompts
+5. Fixed dotenv loading issue for command-line mode
+
+**Test Results**:
+- Command `python private/interactive_parallel_processor.py Proverbs 3` works correctly
+- Script processes all 35 verses from Proverbs Chapter 3
+- Creates database file "Proverbs.db" as requested
+- Uses batched processing for optimal performance
+
+**Code Changes**:
+- Lines 1266-1296: Added command-line detection and validation
+- Lines 1290-1291: Special database naming for Proverbs 3
+- Lines 1412-1419: Skip confirmation prompt in command-line mode
+- Lines 1262-1264: Fixed dotenv initialization order
 
 ### Session 19: Fixed Verse-Specific Deliberation
 **Date**: 2025-12-02

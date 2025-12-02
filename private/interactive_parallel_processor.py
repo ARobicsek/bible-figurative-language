@@ -1263,16 +1263,55 @@ def main():
     dotenv_path = os.path.join(project_root, '.env')
     was_loaded = load_dotenv(dotenv_path=dotenv_path)
 
-    # Get user selection
-    selection = get_user_selection()
-    if not selection:
-        return
+    # Check for command-line arguments
+    if len(sys.argv) == 3:
+        # Command-line mode: python script.py BookName ChapterNumber
+        book_name = sys.argv[1]
+        chapter_num = int(sys.argv[2])
+
+        # Validate book name
+        valid_books = {
+            "Genesis": 50, "Exodus": 40, "Leviticus": 27,
+            "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
+            "Proverbs": 31
+        }
+
+        if book_name not in valid_books:
+            print(f"Error: Book '{book_name}' not supported. Valid books: {', '.join(valid_books.keys())}")
+            return
+
+        if not 1 <= chapter_num <= valid_books[book_name]:
+            print(f"Error: Chapter {chapter_num} not valid for {book_name} (1-{valid_books[book_name]})")
+            return
+
+        # Create selection structure for command-line mode
+        selection = {
+            'book_selections': {book_name: {chapter_num: 'ALL_VERSES'}},
+            'max_workers': 6,
+            'enable_debug': False
+        }
+
+        # Special database name for Proverbs 3
+        if book_name == "Proverbs" and chapter_num == 3:
+            db_name = "Proverbs.db"
+        else:
+            # Generate filename as usual
+            base_filename = f"{book_name.lower()}_c{chapter_num}_all_v_batched_{datetime.now().strftime('%Y%m%d_%H%M')}"
+            db_name = f"{base_filename}.db"
+    else:
+        # Interactive mode
+        selection = get_user_selection()
+        if not selection:
+            return
+
+        # Will generate filename later in interactive mode
+        db_name = None
 
     book_selections = selection['book_selections']
     max_workers = selection['max_workers']
     enable_debug = selection['enable_debug']
 
-    # Generate filename from selections (similar to the single-threaded version)
+    # Generate filename from selections (for interactive mode or if not set above)
     def generate_filename_from_selections(book_selections):
         now = datetime.now()
         date_part = now.strftime("%Y%m%d")
@@ -1318,10 +1357,17 @@ def main():
         base_filename = f"{book_part}_{chapter_part}_{verse_part}_parallel_{date_part}_{time_part}"
         return base_filename
 
-    base_filename = generate_filename_from_selections(book_selections)
-    log_file = f"{base_filename}_log.txt"
-    db_name = f"{base_filename}.db"
-    json_file = f"{base_filename}_results.json"
+    # Use provided db_name or generate one
+    if db_name is None:
+        base_filename = generate_filename_from_selections(book_selections)
+        db_name = f"{base_filename}.db"
+        log_file = f"{base_filename}_log.txt"
+        json_file = f"{base_filename}_results.json"
+    else:
+        # For command-line mode with specific db_name
+        base_filename = db_name.replace('.db', '')
+        log_file = f"{base_filename}_log.txt"
+        json_file = f"{base_filename}_results.json"
 
     # Create summary of what will be processed
     books_info = {
@@ -1366,11 +1412,16 @@ def main():
     print(f"\nParallel workers: {max_workers}")
     print(f"Debug logging: {'enabled' if enable_debug else 'disabled'}")
     print(f"Output files: {base_filename}.*")
+    print(f"Database: {db_name}")
 
-    proceed = input("\nProceed with parallel processing? (y/n): ").strip().lower()
-    if proceed != 'y':
-        print("Processing cancelled.")
-        return
+    # Skip confirmation for command-line mode
+    if len(sys.argv) == 3:
+        print(f"\nProcessing {book_name} {chapter_num} (command-line mode)...")
+    else:
+        proceed = input("\nProceed with parallel processing? (y/n): ").strip().lower()
+        if proceed != 'y':
+            print("Processing cancelled.")
+            return
 
     logger = setup_logging(log_file, enable_debug)
 
