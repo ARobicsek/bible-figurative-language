@@ -842,75 +842,88 @@ Example structure:
                     'instances': instances_with_db_ids
                 }
 
-        # BATCHED VALIDATION - Validate all instances from all verses in the chapter
+        # BATCHED VALIDATION - Validate all instances from all verses in a single API call
         if validator and verse_to_instances_map:
-            logger.info(f"[BATCHED VALIDATION] Validating {sum(len(v['instances']) for v in verse_to_instances_map.values())} instances from {len(verse_to_instances_map)} verses")
+            total_instances = sum(len(v['instances']) for v in verse_to_instances_map.values())
+            logger.info(f"[BATCHED VALIDATION] Validating {total_instances} instances from {len(verse_to_instances_map)} verses in ONE API call")
 
             validation_start = time.time()
 
-            # Validate each verse's instances (validator already batches by verse)
+            # Collect all instances from all verses with their context
+            all_chapter_instances = []
+
             for verse_ref, verse_info in verse_to_instances_map.items():
-                try:
-                    instances = verse_info['instances']
-                    hebrew_text = verse_info['hebrew']
-                    english_text = verse_info['english']
+                instances = verse_info['instances']
+                hebrew_text = verse_info['hebrew']
+                english_text = verse_info['english']
 
-                    logger.debug(f"Validating {len(instances)} instances from {verse_ref}")
+                logger.debug(f"Preparing {len(instances)} instances from {verse_ref} for batch validation")
 
-                    # Call validator (which uses GPT-5.1 MEDIUM in batched mode)
-                    bulk_validation_results = validator.validate_verse_instances(
-                        instances, hebrew_text, english_text
-                    )
+                for instance in instances:
+                    # Add verse context to each instance
+                    instance['verse_reference'] = verse_ref
+                    instance['hebrew_text'] = hebrew_text
+                    instance['english_text'] = english_text
+                    all_chapter_instances.append(instance)
 
-                    # Create mapping from instance_id to db_id
-                    instance_id_to_db_id = {inst.get('instance_id'): inst.get('db_id') for inst in instances}
+            # Make a single validation call for all instances in the chapter
+            try:
+                logger.info(f"Making single validation API call for {len(all_chapter_instances)} instances")
+                bulk_validation_results = validator.validate_chapter_instances(all_chapter_instances)
 
-                    # Process validation results
-                    for validation_result in bulk_validation_results:
-                        instance_id = validation_result.get('instance_id')
-                        results = validation_result.get('validation_results', {})
+                # Create mapping from instance_id to db_id (validator assigns instance_id)
+                instance_id_to_db_id = {}
+                for instance in all_chapter_instances:
+                    instance_id_to_db_id[instance.get('instance_id')] = instance.get('db_id')
 
-                        db_id = instance_id_to_db_id.get(instance_id)
+                # Process validation results
+                for validation_result in bulk_validation_results:
+                    instance_id = validation_result.get('instance_id')
+                    results = validation_result.get('validation_results', {})
 
-                        if not db_id:
-                            logger.error(f"Could not find DB ID for validation result with instance_id {instance_id}")
-                            continue
+                    db_id = instance_id_to_db_id.get(instance_id)
 
-                        any_valid = False
-                        validation_data = {}
-                        for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
-                            validation_data[f'final_{fig_type}'] = 'no'
+                    if not db_id:
+                        logger.error(f"Could not find DB ID for validation result with instance_id {instance_id}")
+                        continue
 
-                        for fig_type, result in results.items():
-                            decision = result.get('decision')
-                            reason = result.get('reason', '')
-                            reclassified_type = result.get('reclassified_type')
+                    any_valid = False
+                    validation_data = {}
+                    for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+                        validation_data[f'final_{fig_type}'] = 'no'
 
-                            if decision == 'RECLASSIFIED' and reclassified_type:
-                                validation_data[f'validation_decision_{fig_type}'] = 'RECLASSIFIED'
-                                validation_data[f'validation_reason_{fig_type}'] = f"Reclassified to {reclassified_type}: {reason}"
-                                validation_data[f'final_{reclassified_type}'] = 'yes'
-                                any_valid = True
-                                logger.debug(f"RECLASSIFIED: {fig_type} → {reclassified_type}")
-                            elif decision == 'VALID':
-                                validation_data[f'validation_decision_{fig_type}'] = 'VALID'
-                                validation_data[f'validation_reason_{fig_type}'] = reason
-                                validation_data[f'final_{fig_type}'] = 'yes'
-                                any_valid = True
-                                logger.debug(f"VALID: {fig_type}")
-                            else:  # INVALID
-                                validation_data[f'validation_decision_{fig_type}'] = 'INVALID'
-                                validation_data[f'validation_reason_{fig_type}'] = reason
-                                logger.debug(f"INVALID: {fig_type}")
+                    for fig_type, result in results.items():
+                        decision = result.get('decision')
+                        reason = result.get('reason', '')
+                        reclassified_type = result.get('reclassified_type')
 
-                        validation_data['final_figurative_language'] = 'yes' if any_valid else 'no'
+                        if decision == 'RECLASSIFIED' and reclassified_type:
+                            validation_data[f'validation_decision_{fig_type}'] = 'RECLASSIFIED'
+                            validation_data[f'validation_reason_{fig_type}'] = f"Reclassified to {reclassified_type}: {reason}"
+                            validation_data[f'final_{reclassified_type}'] = 'yes'
+                            any_valid = True
+                            logger.debug(f"RECLASSIFIED: {fig_type} → {reclassified_type}")
+                        elif decision == 'VALID':
+                            validation_data[f'validation_decision_{fig_type}'] = 'VALID'
+                            validation_data[f'validation_reason_{fig_type}'] = reason
+                            validation_data[f'final_{fig_type}'] = 'yes'
+                            any_valid = True
+                            logger.debug(f"VALID: {fig_type}")
+                        else:  # INVALID
+                            validation_data[f'validation_decision_{fig_type}'] = 'INVALID'
+                            validation_data[f'validation_reason_{fig_type}'] = reason
+                            logger.debug(f"INVALID: {fig_type}")
 
-                        # Update database with validation results
-                        db_manager.update_validation_data(db_id, validation_data)
-                        logger.debug(f"Validation data updated for ID: {db_id}")
+                    validation_data['final_figurative_language'] = 'yes' if any_valid else 'no'
 
-                except Exception as e:
-                    logger.error(f"Validation failed for {verse_ref}: {e}")
+                    # Update database with validation results
+                    db_manager.update_validation_data(db_id, validation_data)
+                    logger.debug(f"Validation data updated for ID: {db_id}")
+
+                logger.info(f"[BATCHED VALIDATION] Completed single API call for {total_instances} instances")
+
+            except Exception as e:
+                logger.error(f"Batch validation failed for chapter {chapter}: {e}")
 
             validation_time = time.time() - validation_start
             logger.info(f"[BATCHED VALIDATION] Completed in {validation_time:.1f}s")
