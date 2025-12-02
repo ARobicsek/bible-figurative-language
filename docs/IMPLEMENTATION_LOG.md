@@ -4,6 +4,129 @@ This log tracks all major implementation work, decisions, and technical details 
 
 ---
 
+## Session 21: Command-Line Success + Validation Field Issue Identified (2025-12-02)
+
+### Overview
+**Objective**: Test the newly added command-line support and identify any remaining issues.
+**Approach**: Ran `python private/interactive_parallel_processor.py Proverbs 3` and analyzed results.
+**Result**: ✓ Command-line works perfectly, ❌ validation fields missing in database.
+**Duration**: ~30 minutes
+
+### Issues Found & Identified
+
+#### Issue #1: Command-line support - RESOLVED! ✅
+**Expected**: Script should accept book and chapter as command-line arguments.
+**Actual**: Script works perfectly with `python private/interactive_parallel_processor.py Proverbs 3`.
+**Results**:
+- Script processes all 35 verses from Proverbs Chapter 3
+- Creates "Proverbs.db" database file as requested
+- Uses batched processing for optimal performance
+- No interactive prompts needed
+
+#### Issue #2: Validation fields missing - IDENTIFIED! ❌
+**Expected**: Database should contain both detection and validation results.
+**Actual**: All validation_* fields are null/missing in the database.
+**Root Cause**: Validation results are not being properly stored during batched validation.
+
+**Analysis**:
+- Detection API call works ✓
+- Detection results stored correctly ✓
+- Validation API call works ✓
+- Validation results not saved to database ❌
+- Verse-specific deliberation working ✓
+
+### Technical Details
+
+#### What's Working:
+1. **Command-line parsing**: Successfully parses `Proverbs 3`
+2. **Database creation**: Creates `Proverbs.db` correctly
+3. **Batched detection**: Single API call processes all verses
+4. **Verse processing**: All 35 verses processed
+5. **Cost efficiency**: Estimated cost ~$0.43
+
+#### What's Broken:
+1. **Validation field storage**: `validate_chapter_instances()` not saving to database
+2. **Database schema mismatch**: Validation results not mapped to database fields
+3. **Missing data**: `validation_decision_*`, `validation_reason_*`, `final_*` fields all null
+
+### Next Session
+
+**Priority**: Fix validation field storage before processing full Proverbs.
+**Tasks**:
+1. Investigate validation flow in `metaphor_validator.py`
+2. Review `update_validation_data()` in `db_manager.py`
+3. Test fix with Proverbs 3:11-18
+4. Re-run full Proverbs 3 after fix
+
+---
+
+## Session 20: Added Command-Line Support for Direct Processing (2025-12-02)
+
+### Overview
+**Objective**: Enable direct command-line execution for processing specific books and chapters without interactive prompts.
+**Approach**: Modified `interactive_parallel_processor.py` to accept command-line arguments for book and chapter.
+**Result**: ✓ COMPLETE - Can now run `python private/interactive_parallel_processor.py Proverbs 3` directly.
+**Duration**: ~30 minutes
+
+### Issues Found & Fixed
+
+#### Issue #1: Script only works in interactive mode
+**Expected**: Should be able to run script directly with book and chapter arguments.
+**Actual**: Script requires interactive prompts for every run.
+**Root Cause**: No command-line argument handling in main() function.
+
+**Fix**:
+1. **Added command-line parsing** to detect when script.py BookName ChapterNumber is provided.
+2. **Created automatic selection structure** for command-line mode.
+3. **Special database naming** - Proverbs 3 outputs to "Proverbs.db" as requested.
+4. **Skip interactive confirmation** when running in command-line mode.
+
+### Technical Details
+
+#### Code Changes Summary
+
+1. **Command-Line Detection** (`interactive_parallel_processor.py` lines 1266-1296):
+   - Check `len(sys.argv) == 3` for book and chapter arguments
+   - Validate book name against supported books
+   - Validate chapter number is within range
+   - Create selection structure automatically
+
+2. **Database Naming** (`interactive_parallel_processor.py` lines 1290-1291):
+   ```python
+   if book_name == "Proverbs" and chapter_num == 3:
+       db_name = "Proverbs.db"
+   ```
+
+3. **Confirmation Bypass** (`interactive_parallel_processor.py` lines 1412-1419):
+   - Skip "Proceed with parallel processing?" prompt in command-line mode
+   - Auto-start processing
+
+4. **Fixed dotenv Loading** (`interactive_parallel_processor.py` lines 1262-1264):
+   - Moved `was_loaded` initialization before command-line parsing to fix NameError
+
+### Testing & Verification
+
+**Test Command**:
+```bash
+python private/interactive_parallel_processor.py Proverbs 3
+```
+
+**Test Results**:
+- ✓ Script accepts command-line arguments
+- ✓ Creates "Proverbs.db" database file
+- ✓ Processes all 35 verses from Proverbs Chapter 3
+- ✓ Uses batched mode (single API call for detection)
+- ✓ Estimated processing shows correct book/chapter selection
+
+### Next Session
+
+**Status**: Ready for full Proverbs Chapter 3 processing.
+**Command**: `python private/interactive_parallel_processor.py Proverbs 3`
+**Expected Cost**: ~$11.40 for full Proverbs (915 verses)
+**Expected Cost for Chapter 3**: ~$0.43
+
+---
+
 ## Session 19: Fixed Verse-Specific Deliberation (2025-12-02)
 
 ### Overview
