@@ -914,6 +914,33 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                 logger.info(f"Making single validation API call for {len(all_chapter_instances)} instances")
                 bulk_validation_results = validator.validate_chapter_instances(all_chapter_instances)
 
+                # VALIDATION PREVENTION MEASURES: Check for validation system failures
+                validation_success_count = 0
+                validation_failure_count = 0
+                validation_bypass_detected = False
+
+                if len(bulk_validation_results) == 0:
+                    logger.error(f"VALIDATION FAILURE: No validation results returned for {len(all_chapter_instances)} instances")
+                    validation_bypass_detected = True
+                elif len(bulk_validation_results) != len(all_chapter_instances):
+                    logger.error(f"VALIDATION MISMATCH: Expected {len(all_chapter_instances)} results, got {len(bulk_validation_results)}")
+                    validation_bypass_detected = True
+
+                # Check for structured error results
+                for result in bulk_validation_results:
+                    if 'error' in result or 'fallback_validation' in result:
+                        validation_failure_count += 1
+                        logger.warning(f"Validation error detected for instance {result.get('instance_id', 'unknown')}")
+                    else:
+                        validation_success_count += 1
+
+                # Log validation health metrics
+                logger.info(f"VALIDATION HEALTH: Successes: {validation_success_count}, Failures: {validation_failure_count}, Total expected: {len(all_chapter_instances)}")
+
+                if validation_bypass_detected or validation_failure_count > 0:
+                    logger.error(f"VALIDATION SYSTEM ISSUE DETECTED - Consider running universal_validation_recovery.py on this database")
+                    # Don't fail processing, but log the issue for later recovery
+
                 # Create mapping from instance_id to db_id (validator assigns instance_id)
                 instance_id_to_db_id = {}
                 for instance in all_chapter_instances:
@@ -965,8 +992,24 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
 
                 logger.info(f"[BATCHED VALIDATION] Completed single API call for {total_instances} instances")
 
+                # VALIDATION PREVENTION MEASURES: Post-update verification checkpoint
+                try:
+                    # Quick verification that validation data was actually written to database
+                    verification_results = db_manager.verify_validation_data_for_chapter(book_name, chapter)
+
+                    if verification_results['validation_coverage_rate'] < 95.0:
+                        logger.error(f"VALIDATION COVERAGE WARNING: Only {verification_results['validation_coverage_rate']:.1f}% of instances have validation data")
+                        logger.error(f"Expected: {len(all_chapter_instances)} instances, With validation: {verification_results['instances_with_validation']}")
+                        logger.error(f"RECOMMENDATION: Run universal_validation_recovery.py --database {{db_path}} --chapters {chapter}")
+                    else:
+                        logger.info(f"VALIDATION VERIFICATION PASSED: {verification_results['validation_coverage_rate']:.1f}% coverage")
+
+                except Exception as verify_error:
+                    logger.warning(f"Could not perform validation verification checkpoint: {verify_error}")
+
             except Exception as e:
                 logger.error(f"Batch validation failed for chapter {chapter}: {e}")
+                logger.error(f"RECOMMENDATION: Run universal_validation_recovery.py on this database after processing completes")
 
             validation_time = time.time() - validation_start
             logger.info(f"[BATCHED VALIDATION] Completed in {validation_time:.1f}s")

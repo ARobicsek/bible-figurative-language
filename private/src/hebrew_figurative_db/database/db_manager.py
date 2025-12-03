@@ -266,6 +266,96 @@ class DatabaseManager:
             figurative_language_id
         ))
 
+    def verify_validation_data_for_chapter(self, book_name: str, chapter: int) -> Dict:
+        """
+        Verify validation data coverage for a specific chapter.
+
+        Returns:
+            Dict with verification statistics including:
+            - total_instances: Total figurative instances in chapter
+            - instances_with_validation: Instances with validation data
+            - validation_coverage_rate: Percentage of instances with validation
+            - final_fields_consistency: Whether final_* fields match validation decisions
+        """
+        try:
+            # Get total instances and validation coverage
+            self.cursor.execute("""
+                SELECT
+                    COUNT(*) as total_instances,
+                    COUNT(CASE WHEN fl.validation_response IS NOT NULL AND fl.validation_response != '' THEN 1 END) as instances_with_validation,
+                    COUNT(CASE WHEN
+                        fl.validation_decision_simile IS NOT NULL OR
+                        fl.validation_decision_metaphor IS NOT NULL OR
+                        fl.validation_decision_personification IS NOT NULL OR
+                        fl.validation_decision_idiom IS NOT NULL OR
+                        fl.validation_decision_hyperbole IS NOT NULL OR
+                        fl.validation_decision_metonymy IS NOT NULL OR
+                        fl.validation_decision_other IS NOT NULL
+                    THEN 1 END) as instances_with_decisions,
+                    COUNT(CASE WHEN
+                        fl.final_figurative_language IS NOT NULL AND fl.final_figurative_language != ''
+                    THEN 1 END) as instances_with_final_fields
+                FROM figurative_language fl
+                JOIN verses v ON fl.verse_id = v.id
+                WHERE v.book = ? AND v.chapter = ?
+            """, (book_name, chapter))
+
+            result = self.cursor.fetchone()
+
+            total_instances = result['total_instances']
+            instances_with_validation = result['instances_with_validation']
+            instances_with_decisions = result['instances_with_decisions']
+            instances_with_final_fields = result['instances_with_final_fields']
+
+            # Calculate coverage rates
+            validation_coverage_rate = (instances_with_validation / total_instances * 100) if total_instances > 0 else 100
+            decision_coverage_rate = (instances_with_decisions / total_instances * 100) if total_instances > 0 else 100
+            final_fields_coverage_rate = (instances_with_final_fields / total_instances * 100) if total_instances > 0 else 100
+
+            # Check for final fields consistency issues
+            self.cursor.execute("""
+                SELECT COUNT(*) as inconsistent_final_fields
+                FROM figurative_language fl
+                JOIN verses v ON fl.verse_id = v.id
+                WHERE v.book = ? AND v.chapter = ?
+                AND (
+                    (fl.validation_response IS NOT NULL AND fl.validation_response != '') AND
+                    (fl.final_figurative_language IS NULL OR fl.final_figurative_language = '')
+                )
+            """, (book_name, chapter))
+
+            inconsistent_final = self.cursor.fetchone()['inconsistent_final_fields']
+
+            verification_results = {
+                'book': book_name,
+                'chapter': chapter,
+                'total_instances': total_instances,
+                'instances_with_validation': instances_with_validation,
+                'instances_with_decisions': instances_with_decisions,
+                'instances_with_final_fields': instances_with_final_fields,
+                'validation_coverage_rate': validation_coverage_rate,
+                'decision_coverage_rate': decision_coverage_rate,
+                'final_fields_coverage_rate': final_fields_coverage_rate,
+                'inconsistent_final_fields': inconsistent_final,
+                'needs_recovery': (
+                    validation_coverage_rate < 95.0 or
+                    decision_coverage_rate < 95.0 or
+                    final_fields_coverage_rate < 95.0 or
+                    inconsistent_final > 0
+                )
+            }
+
+            return verification_results
+
+        except Exception as e:
+            # Return error information
+            return {
+                'book': book_name,
+                'chapter': chapter,
+                'error': str(e),
+                'needs_recovery': True  # Assume recovery needed if we can't verify
+            }
+
     def get_statistics(self) -> Dict:
         """Get processing statistics"""
         # Count records

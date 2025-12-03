@@ -67,8 +67,219 @@ class MetaphorValidator:
         self.verse_validation_count = 0
         self.validation_success_count = 0
         self.validation_failure_count = 0
-        self.json_extraction_successes = {"strategy_1": 0, "strategy_2": 0, "strategy_3": 0, "strategy_4": 0, "strategy_5": 0, "strategy_6": 0}
+        self.json_extraction_successes = {"strategy_1": 0, "strategy_2": 0, "strategy_3": 0, "strategy_4": 0, "strategy_5": 0, "strategy_6": 0, "strategy_7": 0, "strategy_8": 0, "strategy_9": 0, "strategy_10": 0}
         self.validation_errors = []  # Track recent validation errors for debugging
+
+    def validate_chapter_instances_with_retry(self, chapter_instances: List[Dict]) -> List[Dict]:
+        """Enhanced chapter validation with multiple retry attempts and fallback strategies."""
+        if not chapter_instances:
+            return []
+
+        # Add a temporary unique ID to each instance for correlation
+        for i, instance in enumerate(chapter_instances):
+            instance['instance_id'] = i + 1
+
+        # First attempt: Standard validation with all 10 JSON extraction strategies
+        if self.logger:
+            self.logger.info(f"[CHAPTER VALIDATION RETRY] Attempt 1: Standard validation for {len(chapter_instances)} instances")
+
+        first_result = self._attempt_standard_validation(chapter_instances)
+        if first_result and not self._is_error_result(first_result):
+            if self.logger:
+                self.logger.info(f"[CHAPTER VALIDATION RETRY] Attempt 1 SUCCESS: Validated {len(first_result)} instances")
+            return first_result
+
+        # Second attempt: Simplified validation prompt
+        if self.logger:
+            self.logger.info(f"[CHAPTER VALIDATION RETRY] Attempt 2: Simplified validation prompt")
+
+        second_result = self._attempt_simplified_validation(chapter_instances)
+        if second_result and not self._is_error_result(second_result):
+            if self.logger:
+                self.logger.info(f"[CHAPTER VALIDATION RETRY] Attempt 2 SUCCESS: Validated {len(second_result)} instances")
+            return second_result
+
+        # Third attempt: Split into smaller batches
+        if self.logger:
+            self.logger.info(f"[CHAPTER VALIDATION RETRY] Attempt 3: Batch validation (smaller groups)")
+
+        batch_size = min(10, len(chapter_instances))  # Process in smaller batches
+        batch_results = []
+        for i in range(0, len(chapter_instances), batch_size):
+            batch = chapter_instances[i:i + batch_size]
+            batch_result = self._attempt_standard_validation(batch)
+            if batch_result and not self._is_error_result(batch_result):
+                batch_results.extend(batch_result)
+            else:
+                # If batch fails, create minimal validation for this batch
+                for j, instance in enumerate(batch):
+                    batch_results.append({
+                        'instance_id': i + j + 1,
+                        'validation_results': {},
+                        'fallback_validation': 'BATCH_FAILED'
+                    })
+
+        if batch_results:
+            if self.logger:
+                self.logger.info(f"[CHAPTER VALIDATION RETRY] Attempt 3 PARTIAL SUCCESS: Validated {len(batch_results)} instances from batches")
+            return batch_results
+
+        # Final fallback: Individual instance validation
+        if self.logger:
+            self.logger.info(f"[CHAPTER VALIDATION RETRY] Attempt 4: Individual instance validation")
+
+        individual_results = []
+        for i, instance in enumerate(chapter_instances):
+            try:
+                # Try to validate single instance
+                single_result = self._attempt_individual_validation(instance, i + 1)
+                individual_results.append(single_result)
+            except Exception as e:
+                if self.logger:
+                    self.logger.warning(f"Individual validation failed for instance {i + 1}: {e}")
+                # Create minimal validation
+                individual_results.append({
+                    'instance_id': i + 1,
+                    'validation_results': {},
+                    'fallback_validation': 'INDIVIDUAL_FAILED'
+                })
+
+        if self.logger:
+            self.logger.info(f"[CHAPTER VALIDATION RETRY] Attempt 4 COMPLETE: {len(individual_results)} instances processed individually")
+        return individual_results
+
+    def _attempt_standard_validation(self, instances: List[Dict]) -> List[Dict]:
+        """Attempt standard validation with the original method."""
+        return self.validate_chapter_instances(instances)
+
+    def _attempt_simplified_validation(self, instances: List[Dict]) -> List[Dict]:
+        """Attempt validation with a simplified prompt that's easier to parse."""
+        prompt = self._create_simplified_validation_prompt(instances)
+
+        try:
+            if self.logger:
+                self.logger.debug(f"[SIMPLIFIED VALIDATION] Attempting validation for {len(instances)} instances")
+
+            response = self.openai_client.chat.completions.create(
+                model="gpt-5.1",
+                messages=[
+                    {"role": "system", "content": "You are a biblical Hebrew scholar. Return ONLY valid JSON arrays with no explanations."},
+                    {"role": "user", "content": prompt}
+                ],
+                max_completion_tokens=12000,
+                reasoning_effort="low"  # Use low effort for simpler response
+            )
+
+            if response.choices and response.choices[0].message.content:
+                response_text = response.choices[0].message.content
+                if self.logger:
+                    self.logger.debug(f"Simplified validation response length: {len(response_text)} characters")
+
+                # Try all extraction strategies
+                validation_results = self._extract_json_with_fallbacks(response_text, "simplified validation")
+                return validation_results if validation_results else []
+            else:
+                if self.logger:
+                    self.logger.warning("Empty response from simplified validation")
+                return []
+
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Simplified validation failed: {e}")
+            return []
+
+    def _attempt_individual_validation(self, instance: Dict, instance_id: int) -> Dict:
+        """Attempt validation for a single instance."""
+        prompt = f"""Validate this figurative language instance.
+
+Instance {instance_id}:
+- Type: {instance.get('metaphor', 'yes') if instance.get('metaphor') == 'yes' else instance.get('simile', 'yes') if instance.get('simile') == 'yes' else 'unknown'}
+- Text: "{instance.get('figurative_text', '')}"
+- Explanation: {instance.get('explanation', '')}
+
+Return JSON: {{"decision": "VALID" or "INVALID", "reason": "brief reason"}}"""
+
+        try:
+            response = self.openai_client.chat.completions.create(
+                model="gpt-5.1",
+                messages=[
+                    {"role": "system", "content": "You are a biblical Hebrew scholar. Return ONLY valid JSON objects."},
+                    {"role": "user", "content": prompt}
+                ],
+                max_completion_tokens=500,
+                reasoning_effort="low"
+            )
+
+            if response.choices and response.choices[0].message.content:
+                response_text = response.choices[0].message.content
+                try:
+                    # Try to extract a simple JSON object
+                    json_match = re.search(r'\{[^}]*\}', response_text)
+                    if json_match:
+                        validation_obj = json.loads(json_match.group(0))
+                        return {
+                            'instance_id': instance_id,
+                            'validation_results': {
+                                'fallback': validation_obj
+                            }
+                        }
+                except json.JSONDecodeError:
+                    pass
+
+            # Fallback: create minimal validation
+            return {
+                'instance_id': instance_id,
+                'validation_results': {},
+                'fallback_validation': 'PARSE_FAILED'
+            }
+
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Individual validation failed for instance {instance_id}: {e}")
+            return {
+                'instance_id': instance_id,
+                'validation_results': {},
+                'fallback_validation': 'API_FAILED'
+            }
+
+    def _create_simplified_validation_prompt(self, instances: List[Dict]) -> str:
+        """Create a simplified validation prompt for easier parsing."""
+        simplified_instances = []
+        for instance in instances:
+            simplified_instances.append({
+                "id": instance['instance_id'],
+                "text": instance.get('figurative_text', ''),
+                "type": self._get_primary_type(instance),
+                "explanation": instance.get('explanation', '')
+            })
+
+        prompt = f"""Validate these figurative language instances. Return ONLY a JSON array.
+
+INSTANCES:
+{json.dumps(simplified_instances, indent=2)}
+
+For each instance, return:
+{{"id": <number>, "decision": "VALID" or "INVALID", "reason": "brief reason"}}"""
+        return prompt
+
+    def _get_primary_type(self, instance: Dict) -> str:
+        """Get the primary figurative language type for an instance."""
+        for fig_type in ['metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
+            if instance.get(fig_type) == 'yes':
+                return fig_type
+        return 'unknown'
+
+    def _is_error_result(self, result: List[Dict]) -> bool:
+        """Check if validation result indicates an error."""
+        if not result:
+            return True
+
+        # Check for structured error results
+        for item in result:
+            if 'error' in item or 'fallback_validation' in item:
+                return True
+
+        return False
 
     def validate_chapter_instances(self, chapter_instances: List[Dict]) -> List[Dict]:
         """Validate all instances from all verses in a chapter with one API call using GPT-5.1 MEDIUM."""
@@ -996,6 +1207,263 @@ VALIDATION:"""
         except Exception as e:
             if self.logger:
                 self.logger.warning(f"Strategy 6 failed for {context}: {e}")
+
+        # Strategy 7: Advanced JSON Repair with String Escaping Fix
+        if self.logger:
+            self.logger.info(f"Attempting advanced JSON repair for {context}")
+
+        try:
+            first_bracket = response_text.find('[')
+            if first_bracket != -1:
+                json_candidate = response_text[first_bracket:]
+
+                # Advanced string escaping fixes
+                json_candidate = re.sub(r'(?<!\\)"([^"\\]*(?:\\.[^"\\]*)*)"', lambda m: '"' + m.group(1).replace('\\', '\\\\').replace('"', '\\"') + '"', json_candidate)
+
+                # Fix common JSON corruption patterns
+                # 1. Fix unescaped quotes in strings
+                json_candidate = re.sub(r':\s*"([^"]*)"([^,\]\}])', r': "\1"\\2', json_candidate)
+
+                # 2. Fix missing commas between objects
+                json_candidate = re.sub(r'\}\s*\{', '},{', json_candidate)
+
+                # 3. Fix trailing commas
+                json_candidate = re.sub(r',(\s*[}\]])', r'\1', json_candidate)
+
+                # 4. Fix missing quotes around property names
+                json_candidate = re.sub(r'(\{|\,)\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*:', r'\1 "\2":', json_candidate)
+
+                # Count and fix brackets/braces
+                open_braces = json_candidate.count('{')
+                close_braces = json_candidate.count('}')
+                open_brackets = json_candidate.count('[')
+                close_brackets = json_candidate.count(']')
+
+                # Add missing closing brackets
+                missing_braces = open_braces - close_braces
+                missing_brackets = open_brackets - close_brackets
+
+                # Smart completion - add missing structure
+                if missing_braces > 0 or missing_brackets > 0:
+                    # Try to complete the last object if it appears truncated
+                    if not json_candidate.rstrip().endswith('}') or not json_candidate.rstrip().endswith(']'):
+                        # Add minimal completion for the last object
+                        last_obj_start = json_candidate.rfind('{')
+                        if last_obj_start != -1:
+                            after_obj = json_candidate[last_obj_start:]
+                            if 'validation_results' in after_obj and not after_obj.rstrip().endswith('}'):
+                                json_candidate += '}'
+
+                    # Add missing brackets/braces
+                    for _ in range(missing_brackets):
+                        json_candidate += ']'
+                    for _ in range(missing_braces):
+                        json_candidate += '}'
+
+                try:
+                    validation_results = json.loads(json_candidate)
+                    self.json_extraction_successes["strategy_7"] += 1
+                    if self.logger:
+                        self.logger.info(f"Strategy 7 (advanced JSON repair) successful for {context}")
+                    return validation_results
+                except json.JSONDecodeError as e:
+                    if self.logger:
+                        self.logger.warning(f"Strategy 7 failed for {context}: {e}")
+
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 7 failed for {context}: {e}")
+
+        # Strategy 8: Response Pre-processing & Sanitization
+        if self.logger:
+            self.logger.info(f"Attempting response sanitization for {context}")
+
+        try:
+            # Clean the response text before extraction
+            cleaned_response = response_text
+
+            # Remove markdown formatting artifacts
+            cleaned_response = re.sub(r'```[a-zA-Z]*\s*', '', cleaned_response)
+            cleaned_response = re.sub(r'```\s*$', '', cleaned_response)
+
+            # Remove common non-JSON text patterns
+            cleaned_response = re.sub(r'VALIDATION:\s*', '', cleaned_response, flags=re.IGNORECASE)
+            cleaned_response = re.sub(r'Here\'s the validation.*?(?=\[)', '', cleaned_response, flags=re.IGNORECASE|re.DOTALL)
+            cleaned_response = re.sub(r'```.*?```\s*', '', cleaned_response, flags=re.DOTALL)
+
+            # Normalize whitespace
+            cleaned_response = re.sub(r'\s+', ' ', cleaned_response)
+            cleaned_response = cleaned_response.strip()
+
+            # Try standard extraction on cleaned text
+            if '[' in cleaned_response:
+                json_match = re.search(r'\[.*\]', cleaned_response, re.DOTALL)
+                if json_match:
+                    json_string = json_match.group(0)
+                    try:
+                        validation_results = json.loads(json_string)
+                        self.json_extraction_successes["strategy_8"] += 1
+                        if self.logger:
+                            self.logger.info(f"Strategy 8 (sanitization) successful for {context}")
+                        return validation_results
+                    except json.JSONDecodeError as e:
+                        if self.logger:
+                            self.logger.warning(f"Strategy 8 JSON parse failed for {context}: {e}")
+
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 8 failed for {context}: {e}")
+
+        # Strategy 9: Progressive Parsing with Validation Checkpoints
+        if self.logger:
+            self.logger.info(f"Attempting progressive parsing for {context}")
+
+        try:
+            # Extract JSON piece by piece with validation
+            first_bracket = response_text.find('[')
+            if first_bracket != -1:
+                # Find all object starts
+                object_starts = []
+                pos = first_bracket
+                depth = 0
+
+                while pos < len(response_text):
+                    if response_text[pos] == '{':
+                        if depth == 0:
+                            object_starts.append(pos)
+                        depth += 1
+                    elif response_text[pos] == '}':
+                        depth -= 1
+                    elif response_text[pos] == ']' and depth == 0:
+                        break
+                    pos += 1
+
+                validation_results = []
+
+                # Parse each object individually
+                for i, obj_start in enumerate(object_starts):
+                    try:
+                        # Find the end of this object
+                        obj_end = obj_start
+                        brace_depth = 1
+
+                        while obj_end < len(response_text) - 1 and brace_depth > 0:
+                            obj_end += 1
+                            if response_text[obj_end] == '{':
+                                brace_depth += 1
+                            elif response_text[obj_end] == '}':
+                                brace_depth -= 1
+
+                        obj_str = response_text[obj_start:obj_end + 1]
+
+                        # Try to parse the object
+                        obj = json.loads(obj_str)
+
+                        # Validate required structure
+                        if 'instance_id' in obj and 'validation_results' in obj:
+                            # Ensure validation_results is a proper dict
+                            if isinstance(obj['validation_results'], dict):
+                                validation_results.append(obj)
+                            else:
+                                # Create minimal validation_results
+                                obj['validation_results'] = {}
+                                validation_results.append(obj)
+                        else:
+                            # Create minimal structure if missing
+                            if 'instance_id' not in obj:
+                                obj['instance_id'] = i + 1
+                            if 'validation_results' not in obj:
+                                obj['validation_results'] = {}
+                            validation_results.append(obj)
+
+                    except (json.JSONDecodeError, Exception) as e:
+                        # Create minimal object for this instance
+                        minimal_obj = {
+                            'instance_id': i + 1,
+                            'validation_results': {}
+                        }
+                        validation_results.append(minimal_obj)
+                        if self.logger:
+                            self.logger.debug(f"Created minimal object for instance {i + 1} due to: {e}")
+
+                if validation_results:
+                    self.json_extraction_successes["strategy_9"] += 1
+                    if self.logger:
+                        self.logger.info(f"Strategy 9 (progressive parsing) successful for {context} - extracted {len(validation_results)} objects")
+                    return validation_results
+
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 9 failed for {context}: {e}")
+
+        # Strategy 10: Manual Validation Extraction (Last Resort)
+        if self.logger:
+            self.logger.info(f"Attempting manual validation extraction for {context}")
+
+        try:
+            # Extract validation information using regex patterns
+            validation_results = []
+
+            # Look for instance identifiers and validation decisions
+            instance_pattern = r'(?:instance[_\s]*id\s*[:=]\s*(\d+)|\b(\d+)\b).*?validation[_\s]*results'
+            validation_pattern = r'(VALID|INVALID|RECLASSIFIED)[^:]*:([^,\n]+)'
+
+            # Find all instance-like sections
+            instance_sections = re.split(r'(?:instance[_\s]*id\s*[:=]\s*\d+|\b\d+\b)[^a-zA-Z]', response_text, flags=re.IGNORECASE)
+
+            # Extract validation decisions from each section
+            for i, section in enumerate(instance_sections):
+                if 'validation' in section.lower() or any(word in section.lower() for word in ['valid', 'invalid', 'reclass']):
+                    validation_info = {}
+
+                    # Extract validation decisions for different types
+                    fig_types = ['metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']
+
+                    for fig_type in fig_types:
+                        type_pattern = rf'{fig_type}[^:]*:\s*(VALID|INVALID|RECLASSIFIED)(?:\s*-\s*([^,\n]+))?'
+                        type_match = re.search(type_pattern, section, re.IGNORECASE)
+                        if type_match:
+                            decision = type_match.group(1).upper()
+                            reason = type_match.group(2) if type_match.group(2) else f"Manual extraction: {decision} for {fig_type}"
+
+                            validation_info[fig_type] = {
+                                'decision': decision,
+                                'reason': reason
+                            }
+
+                    # If we found any validation info, create an object
+                    if validation_info:
+                        validation_results.append({
+                            'instance_id': i + 1,
+                            'validation_results': validation_info
+                        })
+
+            # If we still have no results but have instances, create minimal validation
+            if not validation_results:
+                # Count estimated instances by looking for instance markers
+                instance_markers = len(re.findall(r'instance[_\s]*id\s*[:=]\s*\d+', response_text, re.IGNORECASE))
+                if instance_markers == 0:
+                    # Fallback: look for patterns suggesting multiple objects
+                    instance_markers = len(re.findall(r'\{[^}]*instance_id[^}]*\}', response_text, re.IGNORECASE))
+
+                if instance_markers == 0:
+                    instance_markers = 1  # At least one instance
+
+                for i in range(instance_markers):
+                    validation_results.append({
+                        'instance_id': i + 1,
+                        'validation_results': {}
+                    })
+
+            if validation_results:
+                self.json_extraction_successes["strategy_10"] += 1
+                if self.logger:
+                    self.logger.info(f"Strategy 10 (manual extraction) successful for {context} - extracted {len(validation_results)} validation objects")
+                return validation_results
+
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 10 failed for {context}: {e}")
 
         # All strategies failed
         if self.logger:

@@ -1,0 +1,44 @@
+{
+  "recovery_summary": {
+    "start_time": "2025-12-02 20:34:59.685155",
+    "end_time": "2025-12-02 20:35:28.126601",
+    "database_analyzed": true,
+    "chapters_needing_recovery": [
+      {
+        "book": "Proverbs",
+        "chapter": 9,
+        "total_instances": 13,
+        "needs_validation_recovery": true,
+        "needs_final_fields_update": false,
+        "validation_coverage_rate": 0.0
+      },
+      {
+        "book": "Proverbs",
+        "chapter": 10,
+        "total_instances": 1,
+        "needs_validation_recovery": true,
+        "needs_final_fields_update": false,
+        "validation_coverage_rate": 0.0
+      }
+    ],
+    "total_instances": 107,
+    "instances_needing_validation": 14,
+    "instances_needing_final_fields": 0,
+    "validation_recovery_attempts": 1,
+    "validation_recovery_successes": 1,
+    "final_fields_updated": 0,
+    "backup_created": true,
+    "database_path": "proverbs_c6_multi_v_parallel_20251202_1834.db",
+    "backup_path": "proverbs_c6_multi_v_parallel_20251202_1834_universal_recovery_20251202_203459.db",
+    "errors": [],
+    "warnings": []
+  },
+  "duration_minutes": 0.4740241,
+  "success_rate": 100.0,
+  "recommendations": [
+    "Implement real-time validation monitoring in processing pipeline",
+    "Add automatic validation checkpoints after each chapter",
+    "Create enhanced error handling for validation system bypasses",
+    "Consider implementing validation retry queues for failed chapters"
+  ]
+}
