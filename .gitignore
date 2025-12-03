@@ -49,4 +49,5 @@ Documents/
 # Only actual .env files with API keys are kept secret
 
 # Claude settings (keep for development)
-.claude/settings.local.json
+.claude/settings.local.jsonbackup_final/
+*.zip
