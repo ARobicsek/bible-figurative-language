@@ -16,6 +16,7 @@ import os
 import json
 import logging
 import re
+from typing import Optional, Dict
 
 # Add source path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
@@ -74,6 +75,23 @@ class FlexibleTaggingGeminiClient(MultiModelGeminiClient):
 
         # Claude fallback tracking
         self.claude_fallback_count = 0
+
+        # Initialize JSON extraction success tracking for enhanced detection
+        self.json_extraction_successes = {
+            "strategy_1": 0,  # Markdown JSON block extraction
+            "strategy_2": 0,  # Generic code block extraction
+            "strategy_3": 0,  # Enhanced bracket counting
+            "strategy_4": 0,  # Greedy JSON array matching
+            "strategy_5": 0,  # JSON repair for truncated responses
+            "strategy_6": 0,  # Manual object extraction
+            "strategy_7": 0,  # Advanced JSON repair with string escaping
+            "strategy_8": 0,  # Response pre-processing & sanitization
+            "strategy_9": 0,  # Progressive parsing with validation checkpoints
+            "strategy_10": 0   # Manual detection extraction (last resort)
+        }
+
+        # Feature flag for enhanced JSON extraction (gradual rollout)
+        self.use_enhanced_json_extraction = True  # Set to False for fallback during testing
 
     def _load_flexible_rules(self):
         """Load the flexible tagging rules"""
@@ -585,8 +603,17 @@ Analysis:"""
             self.logger.debug(f"🔍 JSON EXTRACTION DEBUG:")
 
         try:
-            # Use more sophisticated JSON extraction
-            json_string = self._extract_json_array(response_text)
+            # Use enhanced JSON extraction with 10 strategies (if enabled)
+            if self.use_enhanced_json_extraction:
+                json_string = self._extract_json_with_fallbacks(response_text, context="_fallback_parse_from_deliberation")
+                if json_string is None:
+                    # Enhanced extraction failed, fall back to old method
+                    if self.logger:
+                        self.logger.warning("Enhanced JSON extraction failed, falling back to legacy method")
+                    json_string = self._extract_json_array(response_text)
+            else:
+                # Use legacy extraction method
+                json_string = self._extract_json_array(response_text)
 
             if self.logger and self.logger.level <= logging.DEBUG:
                 if json_string:
@@ -893,6 +920,561 @@ Analysis:"""
         except:
             return False
 
+    def _extract_json_with_fallbacks(self, response_text: str, context: str = "detection") -> Optional[str]:
+        """
+        Extract JSON from response text using 10 robust fallback strategies adapted from validation system.
+
+        This method implements the same 10-strategy approach that has proven successful in the
+        validation phase, adapted for detection-phase JSON structure (figurative language instances).
+
+        Args:
+            response_text: The API response text containing JSON
+            context: Context description for logging (e.g., verse reference)
+
+        Returns:
+            JSON string if successful, None if all strategies fail
+        """
+
+        if self.logger:
+            self.logger.info(f"🔍 Enhanced JSON Extraction with 10 strategies for {context}")
+
+        # Strategy 1: Standard markdown JSON block extraction
+        json_match = re.search(r'```json\s*([\s\S]*?)\s*```', response_text, re.DOTALL)
+        if json_match:
+            json_string = json_match.group(1).strip()
+            try:
+                # Validate it looks like detection JSON (contains figurative language fields)
+                if self._validate_detection_json(json_string):
+                    self.json_extraction_successes["strategy_1"] += 1
+                    if self.logger:
+                        self.logger.info(f"  ✅ Strategy 1 (markdown JSON) successful for {context}")
+                    return json_string
+                else:
+                    if self.logger:
+                        self.logger.debug(f"Strategy 1 JSON doesn't match detection structure for {context}")
+            except Exception as e:
+                if self.logger:
+                    self.logger.warning(f"Strategy 1 failed for {context}: {e}")
+
+        # Strategy 2: Generic code block extraction (without json specifier)
+        json_match = re.search(r'```\s*([\s\S]*?)\s*```', response_text, re.DOTALL)
+        if json_match:
+            json_string = json_match.group(1).strip()
+            try:
+                if self._validate_detection_json(json_string):
+                    self.json_extraction_successes["strategy_2"] += 1
+                    if self.logger:
+                        self.logger.info(f"  ✅ Strategy 2 (generic code block) successful for {context}")
+                    return json_string
+                else:
+                    if self.logger:
+                        self.logger.debug(f"Strategy 2 JSON doesn't match detection structure for {context}")
+            except Exception as e:
+                if self.logger:
+                    self.logger.warning(f"Strategy 2 failed for {context}: {e}")
+
+        # Strategy 3: Enhanced bracket counting algorithm (use existing sophisticated logic)
+        try:
+            result = self._extract_with_enhanced_bracket_counting(response_text, context)
+            if result:
+                return result
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 3 failed for {context}: {e}")
+
+        # Strategy 4: Greedy JSON array matching
+        json_pattern = r'\[\s*\{[\s\S]*\}\s*\]'  # More permissive pattern for large arrays
+        json_match = re.search(json_pattern, response_text)
+        if json_match:
+            json_string = json_match.group(0)
+            try:
+                if self._validate_detection_json(json_string):
+                    self.json_extraction_successes["strategy_4"] += 1
+                    if self.logger:
+                        self.logger.info(f"  ✅ Strategy 4 (greedy matching) successful for {context}")
+                    return json_string
+                else:
+                    if self.logger:
+                        self.logger.debug(f"Strategy 4 JSON doesn't match detection structure for {context}")
+            except Exception as e:
+                if self.logger:
+                    self.logger.warning(f"Strategy 4 failed for {context}: {e}")
+
+        # Strategy 5: JSON repair for truncated responses
+        try:
+            result = self._repair_truncated_json(response_text, context)
+            if result:
+                return result
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 5 failed for {context}: {e}")
+
+        # Strategy 6: Manual object extraction
+        try:
+            result = self._extract_detection_objects_manually(response_text, context)
+            if result:
+                return result
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 6 failed for {context}: {e}")
+
+        # Strategy 7: Advanced JSON repair with string escaping
+        try:
+            result = self._advanced_json_repair(response_text, context)
+            if result:
+                return result
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 7 failed for {context}: {e}")
+
+        # Strategy 8: Response pre-processing & sanitization
+        try:
+            result = self._sanitize_and_extract(response_text, context)
+            if result:
+                return result
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 8 failed for {context}: {e}")
+
+        # Strategy 9: Progressive parsing with validation checkpoints
+        try:
+            result = self._progressive_parsing(response_text, context)
+            if result:
+                return result
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 9 failed for {context}: {e}")
+
+        # Strategy 10: Manual detection extraction (last resort)
+        try:
+            result = self._manual_detection_extraction(response_text, context)
+            if result:
+                return result
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Strategy 10 failed for {context}: {e}")
+
+        # All strategies failed
+        if self.logger:
+            self.logger.error(f"❌ All 10 JSON extraction strategies failed for {context}")
+            self.logger.error(f"Response length: {len(response_text)} characters")
+            self.logger.error(f"Response preview: {response_text[:200]}...{response_text[-200:] if len(response_text) > 400 else response_text[-200:]}")
+
+        return None
+
+    def _validate_detection_json(self, json_string: str) -> bool:
+        """
+        Validate that JSON string matches detection-phase structure.
+
+        Detection JSON should contain figurative language instances with fields like:
+        - figurative_language, metaphor, simile, personification, etc.
+        - target, vehicle, ground, posture arrays
+        - confidence, explanation
+        """
+        try:
+            # Quick validation by loading and checking structure
+            parsed = json.loads(json_string)
+
+            if not isinstance(parsed, list):
+                return False
+
+            # Check at least one object has detection-like fields
+            detection_fields = ['figurative_language', 'metaphor', 'simile', 'confidence', 'target']
+
+            for obj in parsed:
+                if isinstance(obj, dict) and any(field in obj for field in detection_fields):
+                    return True
+
+            return False
+
+        except json.JSONDecodeError:
+            return False
+        except Exception:
+            return False
+
+    def _extract_with_enhanced_bracket_counting(self, response_text: str, context: str) -> Optional[str]:
+        """Strategy 3: Enhanced bracket counting with string awareness (adapted from existing logic)"""
+
+        if self.logger:
+            self.logger.debug(f"  🔧 Strategy 3: Enhanced bracket counting for {context}")
+
+        start_bracket = response_text.find('[')
+        if start_bracket != -1:
+            bracket_count = 0
+            in_string = False
+            escape_next = False
+            end_pos = len(response_text)
+
+            for i in range(start_bracket, len(response_text)):
+                char = response_text[i]
+
+                if escape_next:
+                    escape_next = False
+                    continue
+
+                if char == '\\' and in_string:
+                    escape_next = True
+                    continue
+
+                if char == '"' and not escape_next:
+                    in_string = not in_string
+                    continue
+
+                if not in_string:
+                    if char == '[':
+                        bracket_count += 1
+                    elif char == ']':
+                        bracket_count -= 1
+                        if bracket_count == 0:
+                            end_pos = i + 1
+                            break
+
+            candidate_json = response_text[start_bracket:end_pos]
+
+            # Verify this contains detection-like objects
+            if '{' in candidate_json and any(field in candidate_json for field in ['figurative_language', 'metaphor', 'confidence']):
+                if self._validate_detection_json(candidate_json):
+                    self.json_extraction_successes["strategy_3"] += 1
+                    if self.logger:
+                        self.logger.info(f"  ✅ Strategy 3 (enhanced bracket counting) successful for {context}")
+                    return candidate_json.strip()
+
+        return None
+
+    def _repair_truncated_json(self, response_text: str, context: str) -> Optional[str]:
+        """Strategy 5: JSON repair for truncated responses"""
+
+        if self.logger:
+            self.logger.debug(f"  🔧 Strategy 5: JSON repair for {context}")
+
+        first_bracket = response_text.find('[')
+        if first_bracket != -1:
+            truncated_json = response_text[first_bracket:]
+
+            # Count braces and brackets to identify missing closings
+            open_braces = truncated_json.count('{')
+            close_braces = truncated_json.count('}')
+            open_brackets = truncated_json.count('[')
+            close_brackets = truncated_json.count(']')
+
+            if self.logger:
+                self.logger.debug(f"  JSON structure analysis for {context}: "
+                               f"{open_braces} {{ vs {close_braces} }}, "
+                               f"{open_brackets} [ vs {close_brackets} ]")
+
+            # Add missing closing brackets and braces
+            missing_braces = open_braces - close_braces
+            missing_brackets = open_brackets - close_brackets
+
+            repaired_json = truncated_json
+            # Add closing brackets first (inner structures)
+            for _ in range(missing_brackets):
+                repaired_json += ']'
+            # Add closing braces (outer structures)
+            for _ in range(missing_braces):
+                repaired_json += '}'
+
+            if self._validate_detection_json(repaired_json):
+                self.json_extraction_successes["strategy_5"] += 1
+                if self.logger:
+                    self.logger.info(f"  ✅ Strategy 5 (JSON repair) successful for {context} "
+                                   f"- added {missing_brackets} ] and {missing_braces} }}")
+                return repaired_json
+
+        return None
+
+    def _extract_detection_objects_manually(self, response_text: str, context: str) -> Optional[str]:
+        """Strategy 6: Manual object extraction adapted for detection structure"""
+
+        if self.logger:
+            self.logger.debug(f"  🔧 Strategy 6: Manual object extraction for {context}")
+
+        try:
+            # Look for individual detection objects in the response
+            object_pattern = r'\{\s*"(?:figurative_language|metaphor|simile|confidence)"\s*:[\s\S]*?\}'
+            objects = re.findall(object_pattern, response_text)
+
+            if objects:
+                # Try to parse each object individually
+                valid_objects = []
+                for i, obj_str in enumerate(objects):
+                    try:
+                        # Try to complete the object if truncated
+                        if not obj_str.rstrip().endswith('}'):
+                            obj_str += '}'
+                        obj = json.loads(obj_str)
+
+                        # Ensure it has detection-like structure
+                        if any(field in obj for field in ['figurative_language', 'metaphor', 'simile', 'confidence']):
+                            valid_objects.append(obj)
+
+                    except json.JSONDecodeError:
+                        continue
+
+                if valid_objects:
+                    self.json_extraction_successes["strategy_6"] += 1
+                    if self.logger:
+                        self.logger.info(f"  ✅ Strategy 6 (manual extraction) successful for {context} "
+                                       f"- extracted {len(valid_objects)} objects")
+                    return json.dumps(valid_objects)
+
+        except Exception as e:
+            if self.logger:
+                self.logger.debug(f"Strategy 6 extraction error: {e}")
+
+        return None
+
+    def _advanced_json_repair(self, response_text: str, context: str) -> Optional[str]:
+        """Strategy 7: Advanced JSON repair with string escaping fixes"""
+
+        if self.logger:
+            self.logger.debug(f"  🔧 Strategy 7: Advanced JSON repair for {context}")
+
+        try:
+            first_bracket = response_text.find('[')
+            if first_bracket != -1:
+                json_candidate = response_text[first_bracket:]
+
+                # Advanced string escaping fixes for detection JSON
+                # Fix unescaped quotes in figurative text fields
+                json_candidate = re.sub(
+                    r'("(?:figurative_text|explanation|hebrew_text|english_text)"\s*:\s*")([^"]*)"([^,\]\}])',
+                    lambda m: m.group(1) + m.group(2).replace('\\', '\\\\').replace('"', '\\"') + '"' + m.group(3),
+                    json_candidate
+                )
+
+                # Fix common JSON corruption patterns
+                # 1. Fix missing commas between objects
+                json_candidate = re.sub(r'\}\s*\{', '},{', json_candidate)
+                # 2. Fix trailing commas
+                json_candidate = re.sub(r',(\s*[}\]])', r'\1', json_candidate)
+                # 3. Fix missing quotes around property names
+                json_candidate = re.sub(r'(\{|\,)\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*:', r'\1 "\2":', json_candidate)
+
+                # Count and fix brackets/braces
+                open_braces = json_candidate.count('{')
+                close_braces = json_candidate.count('}')
+                open_brackets = json_candidate.count('[')
+                close_brackets = json_candidate.count(']')
+
+                # Add missing closing brackets
+                missing_braces = open_braces - close_braces
+                missing_brackets = open_brackets - close_brackets
+
+                # Smart completion
+                if missing_braces > 0 or missing_brackets > 0:
+                    for _ in range(missing_brackets):
+                        json_candidate += ']'
+                    for _ in range(missing_braces):
+                        json_candidate += '}'
+
+                if self._validate_detection_json(json_candidate):
+                    self.json_extraction_successes["strategy_7"] += 1
+                    if self.logger:
+                        self.logger.info(f"  ✅ Strategy 7 (advanced JSON repair) successful for {context}")
+                    return json_candidate
+
+        except Exception as e:
+            if self.logger:
+                self.logger.debug(f"Strategy 7 error: {e}")
+
+        return None
+
+    def _sanitize_and_extract(self, response_text: str, context: str) -> Optional[str]:
+        """Strategy 8: Response pre-processing & sanitization"""
+
+        if self.logger:
+            self.logger.debug(f"  🔧 Strategy 8: Response sanitization for {context}")
+
+        try:
+            # Clean the response text before extraction
+            cleaned_response = response_text
+
+            # Remove markdown formatting artifacts
+            cleaned_response = re.sub(r'```[a-zA-Z]*\s*', '', cleaned_response)
+            cleaned_response = re.sub(r'```\s*$', '', cleaned_response)
+
+            # Remove common non-JSON text patterns for detection
+            cleaned_response = re.sub(r'DETECTION\s*RESULTS?\s*:', '', cleaned_response, flags=re.IGNORECASE)
+            cleaned_response = re.sub(r'Figurative language.*?(?=\[)', '', cleaned_response, flags=re.IGNORECASE|re.DOTALL)
+            cleaned_response = re.sub(r'```.*?```\s*', '', cleaned_response, flags=re.DOTALL)
+
+            # Normalize whitespace but preserve structure
+            cleaned_response = re.sub(r'\s+', ' ', cleaned_response)
+            cleaned_response = cleaned_response.strip()
+
+            # Try standard extraction on cleaned text
+            if '[' in cleaned_response:
+                json_match = re.search(r'\[[\s\S]*\]', cleaned_response, re.DOTALL)
+                if json_match:
+                    json_string = json_match.group(0)
+                    if self._validate_detection_json(json_string):
+                        self.json_extraction_successes["strategy_8"] += 1
+                        if self.logger:
+                            self.logger.info(f"  ✅ Strategy 8 (sanitization) successful for {context}")
+                        return json_string
+
+        except Exception as e:
+            if self.logger:
+                self.logger.debug(f"Strategy 8 error: {e}")
+
+        return None
+
+    def _progressive_parsing(self, response_text: str, context: str) -> Optional[str]:
+        """Strategy 9: Progressive parsing with validation checkpoints"""
+
+        if self.logger:
+            self.logger.debug(f"  🔧 Strategy 9: Progressive parsing for {context}")
+
+        try:
+            first_bracket = response_text.find('[')
+            if first_bracket != -1:
+                # Find all object starts
+                object_starts = []
+                pos = first_bracket
+                depth = 0
+
+                while pos < len(response_text):
+                    if response_text[pos] == '{':
+                        if depth == 0:
+                            object_starts.append(pos)
+                        depth += 1
+                    elif response_text[pos] == '}':
+                        depth -= 1
+                    elif response_text[pos] == ']' and depth == 0:
+                        break
+                    pos += 1
+
+                detection_results = []
+
+                # Parse each object individually
+                for i, obj_start in enumerate(object_starts):
+                    try:
+                        # Find the end of this object
+                        obj_end = obj_start
+                        brace_depth = 1
+
+                        while obj_end < len(response_text) - 1 and brace_depth > 0:
+                            obj_end += 1
+                            if response_text[obj_end] == '{':
+                                brace_depth += 1
+                            elif response_text[obj_end] == '}':
+                                brace_depth -= 1
+
+                        obj_str = response_text[obj_start:obj_end + 1]
+
+                        # Try to parse the object
+                        obj = json.loads(obj_str)
+
+                        # Validate it's a detection object
+                        if any(field in obj for field in ['figurative_language', 'metaphor', 'simile', 'confidence']):
+                            # Ensure required fields with defaults
+                            if 'figurative_language' not in obj:
+                                obj['figurative_language'] = 'no' if any(obj.get(t) == 'yes' for t in ['metaphor', 'simile', 'personification']) else 'yes'
+                            if 'confidence' not in obj:
+                                obj['confidence'] = 0.8
+
+                            detection_results.append(obj)
+
+                    except (json.JSONDecodeError, Exception) as e:
+                        # Create minimal detection object for this instance
+                        minimal_obj = {
+                            'figurative_language': 'no',
+                            'confidence': 0.5,
+                            'metaphor': 'no',
+                            'simile': 'no',
+                            'personification': 'no',
+                            'idiom': 'no',
+                            'hyperbole': 'no',
+                            'metonymy': 'no',
+                            'other': 'no',
+                            'explanation': f'Progressive parsing fallback: {str(e)[:100]}'
+                        }
+                        detection_results.append(minimal_obj)
+                        if self.logger:
+                            self.logger.debug(f"Created minimal object for instance {i + 1} due to: {e}")
+
+                if detection_results:
+                    self.json_extraction_successes["strategy_9"] += 1
+                    if self.logger:
+                        self.logger.info(f"  ✅ Strategy 9 (progressive parsing) successful for {context} - extracted {len(detection_results)} objects")
+                    return json.dumps(detection_results)
+
+        except Exception as e:
+            if self.logger:
+                self.logger.debug(f"Strategy 9 error: {e}")
+
+        return None
+
+    def _manual_detection_extraction(self, response_text: str, context: str) -> Optional[str]:
+        """Strategy 10: Manual detection extraction (last resort)"""
+
+        if self.logger:
+            self.logger.debug(f"  🔧 Strategy 10: Manual detection extraction for {context}")
+
+        try:
+            # Create minimal detection results based on text analysis
+            detection_results = []
+
+            # Look for indicators of figurative language in the text
+            figurative_indicators = [
+                'metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy',
+                'like', 'as', 'compare', 'comparison', 'figure', 'image', 'symbol'
+            ]
+
+            has_figurative_language = any(indicator.lower() in response_text.lower() for indicator in figurative_indicators)
+
+            if has_figurative_language:
+                # Create a minimal detection object
+                detection_results.append({
+                    'figurative_language': 'yes',
+                    'confidence': 0.6,
+                    'metaphor': 'yes' if 'metaphor' in response_text.lower() else 'no',
+                    'simile': 'yes' if 'like' in response_text.lower() or 'as' in response_text.lower() else 'no',
+                    'personification': 'no',
+                    'idiom': 'no',
+                    'hyperbole': 'no',
+                    'metonymy': 'no',
+                    'other': 'no',
+                    'figurative_text': 'Manual extraction from corrupted response',
+                    'explanation': 'Fallback extraction due to JSON corruption - requires manual review',
+                    'target': ['unknown'],
+                    'vehicle': ['unknown'],
+                    'ground': ['unknown'],
+                    'posture': ['unknown']
+                })
+            else:
+                # No figurative language detected
+                detection_results.append({
+                    'figurative_language': 'no',
+                    'confidence': 0.9,
+                    'metaphor': 'no',
+                    'simile': 'no',
+                    'personification': 'no',
+                    'idiom': 'no',
+                    'hyperbole': 'no',
+                    'metonymy': 'no',
+                    'other': 'no',
+                    'figurative_text': '',
+                    'explanation': 'No figurative language detected in manual extraction',
+                    'target': [],
+                    'vehicle': [],
+                    'ground': [],
+                    'posture': []
+                })
+
+            if detection_results:
+                self.json_extraction_successes["strategy_10"] += 1
+                if self.logger:
+                    self.logger.info(f"  ✅ Strategy 10 (manual extraction) successful for {context} - created fallback object")
+                return json.dumps(detection_results)
+
+        except Exception as e:
+            if self.logger:
+                self.logger.debug(f"Strategy 10 error: {e}")
+
+        return None
+
     def _validate_instance_format(self, instance: dict):
         """Ensure instance has all required fields with proper defaults"""
         required_fields = {
@@ -1051,6 +1633,33 @@ Analysis:"""
 
         return base_info
 
+    def get_json_extraction_stats(self) -> Dict:
+        """Get comprehensive JSON extraction statistics for the enhanced detection system"""
+        total_extractions = sum(self.json_extraction_successes.values())
+
+        if total_extractions == 0:
+            return {
+                'total_extractions': 0,
+                'strategy_usage': self.json_extraction_successes.copy(),
+                'most_successful_strategy': 'None',
+                'success_rate': 0.0
+            }
+
+        # Find most successful strategy
+        most_successful = max(self.json_extraction_successes.items(), key=lambda x: x[1])
+
+        return {
+            'total_extractions': total_extractions,
+            'strategy_usage': self.json_extraction_successes.copy(),
+            'most_successful_strategy': f"{most_successful[0]} ({most_successful[1]} uses)",
+            'enhanced_extraction_enabled': self.use_enhanced_json_extraction,
+            'strategy_success_rates': {
+                strategy: count / total_extractions * 100
+                for strategy, count in self.json_extraction_successes.items()
+                if count > 0
+            }
+        }
+
     def _fix_json_format(self, json_str: str) -> str:
         """Attempt to fix common JSON formatting issues"""
         try:
@@ -1137,8 +1746,17 @@ Analysis:"""
                     deliberation = detection_match.group(1).strip()
                     break
 
-            # Extract JSON instances
-            json_string = self._extract_json_array(response_text)
+            # Extract JSON instances using enhanced extraction (if enabled)
+            if self.use_enhanced_json_extraction:
+                json_string = self._extract_json_with_fallbacks(response_text, context=f"_call_detection_only ({book} {chapter}:{0})")
+                if json_string is None:
+                    # Enhanced extraction failed, fall back to old method
+                    if self.logger:
+                        self.logger.warning("Enhanced JSON extraction failed in _call_detection_only, falling back to legacy method")
+                    json_string = self._extract_json_array(response_text)
+            else:
+                # Use legacy extraction method
+                json_string = self._extract_json_array(response_text)
             instances = []
             if json_string and json_string != "[]":
                 try:
@@ -1224,8 +1842,17 @@ Analysis:"""
             if validation_match:
                 validation_deliberation = validation_match.group(1).strip()
 
-            # Extract validated instances
-            json_string = self._extract_json_array(response_text)
+            # Extract validated instances using enhanced extraction (if enabled)
+            if self.use_enhanced_json_extraction:
+                json_string = self._extract_json_with_fallbacks(response_text, context="_call_validation_only")
+                if json_string is None:
+                    # Enhanced extraction failed, fall back to old method
+                    if self.logger:
+                        self.logger.warning("Enhanced JSON extraction failed in _call_validation_only, falling back to legacy method")
+                    json_string = self._extract_json_array(response_text)
+            else:
+                # Use legacy extraction method
+                json_string = self._extract_json_array(response_text)
             validated_instances = []
             if json_string and json_string != "[]":
                 try:
@@ -1319,8 +1946,17 @@ Analysis:"""
             if tagging_match:
                 tagging_deliberation = tagging_match.group(1).strip()
 
-            # Extract tagged instances
-            json_string = self._extract_json_array(response_text)
+            # Extract tagged instances using enhanced extraction (if enabled)
+            if self.use_enhanced_json_extraction:
+                json_string = self._extract_json_with_fallbacks(response_text, context="_call_tagging_only")
+                if json_string is None:
+                    # Enhanced extraction failed, fall back to old method
+                    if self.logger:
+                        self.logger.warning("Enhanced JSON extraction failed in _call_tagging_only, falling back to legacy method")
+                    json_string = self._extract_json_array(response_text)
+            else:
+                # Use legacy extraction method
+                json_string = self._extract_json_array(response_text)
             tagged_instances = []
             if json_string and json_string != "[]":
                 try:
