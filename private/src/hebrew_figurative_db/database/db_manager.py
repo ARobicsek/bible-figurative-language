@@ -180,91 +180,347 @@ class DatabaseManager:
 
     def insert_figurative_language(self, verse_id: int, figurative_data: Dict) -> int:
         """Insert figurative language finding and return figurative_language_id"""
-        self.cursor.execute('''
-            INSERT INTO figurative_language
-            (verse_id, figurative_language, simile, metaphor, personification, idiom, hyperbole, metonymy, other,
-             final_figurative_language, final_simile, final_metaphor, final_personification, final_idiom,
-             final_hyperbole, final_metonymy, final_other,
-             target, vehicle, ground, posture,
-             confidence, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped, figurative_text_in_hebrew_non_sacred,
-             explanation, speaker, purpose,
-             tagging_analysis_deliberation, model_used)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ''', (
-            verse_id,
-            figurative_data.get('figurative_language', 'no'),
-            figurative_data.get('simile', 'no'),
-            figurative_data.get('metaphor', 'no'),
-            figurative_data.get('personification', 'no'),
-            figurative_data.get('idiom', 'no'),
-            figurative_data.get('hyperbole', 'no'),
-            figurative_data.get('metonymy', 'no'),
-            figurative_data.get('other', 'no'),
-            figurative_data.get('final_figurative_language', 'no'),
-            figurative_data.get('final_simile', 'no'),
-            figurative_data.get('final_metaphor', 'no'),
-            figurative_data.get('final_personification', 'no'),
-            figurative_data.get('final_idiom', 'no'),
-            figurative_data.get('final_hyperbole', 'no'),
-            figurative_data.get('final_metonymy', 'no'),
-            figurative_data.get('final_other', 'no'),
-            figurative_data.get('target', '[]'),  # Hierarchical JSON array
-            figurative_data.get('vehicle', '[]'),  # Hierarchical JSON array
-            figurative_data.get('ground', '[]'),  # Hierarchical JSON array
-            figurative_data.get('posture', '[]'),  # Hierarchical JSON array
-            figurative_data['confidence'],
-            figurative_data.get('figurative_text'),
-            figurative_data.get('figurative_text_in_hebrew'),
-            figurative_data.get('figurative_text_in_hebrew_stripped'),
-            figurative_data.get('figurative_text_in_hebrew_non_sacred'),
-            figurative_data.get('explanation'),
-            figurative_data.get('speaker'),
-            figurative_data.get('purpose'),
-            figurative_data.get('tagging_analysis_deliberation', ''),
-            figurative_data.get('model_used', 'gemini-2.5-flash')
-        ))
+        try:
+            # Sanitize data to ensure database constraints are met
+            sanitized_data = self._sanitize_figurative_data(figurative_data)
 
-        return self.cursor.lastrowid
+            self.cursor.execute('''
+                INSERT INTO figurative_language
+                (verse_id, figurative_language, simile, metaphor, personification, idiom, hyperbole, metonymy, other,
+                 final_figurative_language, final_simile, final_metaphor, final_personification, final_idiom,
+                 final_hyperbole, final_metonymy, final_other,
+                 target, vehicle, ground, posture,
+                 confidence, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped, figurative_text_in_hebrew_non_sacred,
+                 explanation, speaker, purpose,
+                 tagging_analysis_deliberation, model_used)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ''', (
+                verse_id,
+                sanitized_data.get('figurative_language', 'no'),
+                sanitized_data.get('simile', 'no'),
+                sanitized_data.get('metaphor', 'no'),
+                sanitized_data.get('personification', 'no'),
+                sanitized_data.get('idiom', 'no'),
+                sanitized_data.get('hyperbole', 'no'),
+                sanitized_data.get('metonymy', 'no'),
+                sanitized_data.get('other', 'no'),
+                sanitized_data.get('final_figurative_language', 'no'),
+                sanitized_data.get('final_simile', 'no'),
+                sanitized_data.get('final_metaphor', 'no'),
+                sanitized_data.get('final_personification', 'no'),
+                sanitized_data.get('final_idiom', 'no'),
+                sanitized_data.get('final_hyperbole', 'no'),
+                sanitized_data.get('final_metonymy', 'no'),
+                sanitized_data.get('final_other', 'no'),
+                sanitized_data.get('target', '[]'),  # Hierarchical JSON array
+                sanitized_data.get('vehicle', '[]'),  # Hierarchical JSON array
+                sanitized_data.get('ground', '[]'),  # Hierarchical JSON array
+                sanitized_data.get('posture', '[]'),  # Hierarchical JSON array
+                sanitized_data['confidence'],
+                sanitized_data.get('figurative_text'),
+                sanitized_data.get('figurative_text_in_hebrew'),
+                sanitized_data.get('figurative_text_in_hebrew_stripped'),
+                sanitized_data.get('figurative_text_in_hebrew_non_sacred'),
+                sanitized_data.get('explanation'),
+                sanitized_data.get('speaker'),
+                sanitized_data.get('purpose'),
+                sanitized_data.get('tagging_analysis_deliberation', ''),
+                sanitized_data.get('model_used', 'gemini-2.5-flash')
+            ))
+
+            return self.cursor.lastrowid
+
+        except Exception as e:
+            # Log the constraint violation with details
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.error(f"Database constraint violation during insert_figurative_language: {e}")
+            logger.error(f"Verse ID: {verse_id}")
+            logger.error(f"Figurative data: {figurative_data}")
+
+            # For integrity errors, try with minimal safe data
+            if "CHECK constraint failed" in str(e) or "IntegrityError" in str(e):
+                logger.warning("Attempting to insert with minimal safe data after constraint violation")
+                try:
+                    minimal_data = self._create_minimal_safe_data(figurative_data)
+                    self.cursor.execute('''
+                        INSERT INTO figurative_language
+                        (verse_id, figurative_language, simile, metaphor, personification, idiom, hyperbole, metonymy, other,
+                         final_figurative_language, final_simile, final_metaphor, final_personification, final_idiom,
+                         final_hyperbole, final_metonymy, final_other,
+                         target, vehicle, ground, posture,
+                         confidence, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped, figurative_text_in_hebrew_non_sacred,
+                         explanation, speaker, purpose,
+                         tagging_analysis_deliberation, model_used)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ''', (
+                        verse_id,
+                        minimal_data.get('figurative_language', 'no'),
+                        minimal_data.get('simile', 'no'),
+                        minimal_data.get('metaphor', 'no'),
+                        minimal_data.get('personification', 'no'),
+                        minimal_data.get('idiom', 'no'),
+                        minimal_data.get('hyperbole', 'no'),
+                        minimal_data.get('metonymy', 'no'),
+                        minimal_data.get('other', 'no'),
+                        minimal_data.get('final_figurative_language', 'no'),
+                        minimal_data.get('final_simile', 'no'),
+                        minimal_data.get('final_metaphor', 'no'),
+                        minimal_data.get('final_personification', 'no'),
+                        minimal_data.get('final_idiom', 'no'),
+                        minimal_data.get('final_hyperbole', 'no'),
+                        minimal_data.get('final_metonymy', 'no'),
+                        minimal_data.get('final_other', 'no'),
+                        '[]',  # target
+                        '[]',  # vehicle
+                        '[]',  # ground
+                        '[]',  # posture
+                        minimal_data['confidence'],
+                        minimal_data.get('figurative_text', ''),
+                        minimal_data.get('figurative_text_in_hebrew', ''),
+                        minimal_data.get('figurative_text_in_hebrew_stripped', ''),
+                        minimal_data.get('figurative_text_in_hebrew_non_sacred', ''),
+                        minimal_data.get('explanation', ''),
+                        minimal_data.get('speaker', ''),
+                        minimal_data.get('purpose', ''),
+                        'Constraint violation recovery',
+                        minimal_data.get('model_used', 'gemini-2.5-flash')
+                    ))
+                    logger.info("Successfully inserted with minimal safe data after constraint violation")
+                    return self.cursor.lastrowid
+
+                except Exception as e2:
+                    logger.error(f"Failed to insert even with minimal data: {e2}")
+                    raise e2
+            else:
+                raise e
+
+    def _sanitize_figurative_data(self, figurative_data: Dict) -> Dict:
+        """Sanitize figurative data to ensure it meets database constraints"""
+        sanitized = figurative_data.copy()
+
+        # Ensure all enum fields are either 'yes' or 'no'
+        enum_fields = [
+            'figurative_language', 'simile', 'metaphor', 'personification', 'idiom',
+            'hyperbole', 'metonymy', 'other',
+            'final_figurative_language', 'final_simile', 'final_metaphor',
+            'final_personification', 'final_idiom', 'final_hyperbole',
+            'final_metonymy', 'final_other'
+        ]
+
+        for field in enum_fields:
+            if field in sanitized:
+                value = str(sanitized[field]).strip().lower()
+                sanitized[field] = 'yes' if value == 'yes' else 'no'
+            else:
+                sanitized[field] = 'no'
+
+        # Ensure confidence is a valid float
+        if 'confidence' in sanitized:
+            try:
+                sanitized['confidence'] = float(sanitized['confidence'])
+            except (ValueError, TypeError):
+                sanitized['confidence'] = 0.0
+
+        return sanitized
+
+    def _create_minimal_safe_data(self, figurative_data: Dict) -> Dict:
+        """Create minimal safe data when constraint violations occur"""
+        return {
+            'figurative_language': 'no',
+            'simile': 'no',
+            'metaphor': 'no',
+            'personification': 'no',
+            'idiom': 'no',
+            'hyperbole': 'no',
+            'metonymy': 'no',
+            'other': 'no',
+            'final_figurative_language': 'no',
+            'final_simile': 'no',
+            'final_metaphor': 'no',
+            'final_personification': 'no',
+            'final_idiom': 'no',
+            'final_hyperbole': 'no',
+            'final_metonymy': 'no',
+            'final_other': 'no',
+            'confidence': 0.0,
+            'figurative_text': '',
+            'figurative_text_in_hebrew': '',
+            'figurative_text_in_hebrew_stripped': '',
+            'figurative_text_in_hebrew_non_sacred': '',
+            'explanation': '',
+            'speaker': '',
+            'purpose': '',
+            'model_used': figurative_data.get('model_used', 'gemini-2.5-flash')
+        }
 
     def update_validation_data(self, figurative_language_id: int, validation_data: Dict):
         """Update validation data for an existing figurative language entry"""
-        self.cursor.execute('''
-            UPDATE figurative_language
-            SET validation_decision_simile = ?, validation_decision_metaphor = ?, validation_decision_personification = ?,
-                validation_decision_idiom = ?, validation_decision_hyperbole = ?, validation_decision_metonymy = ?, validation_decision_other = ?,
-                validation_reason_simile = ?, validation_reason_metaphor = ?, validation_reason_personification = ?,
-                validation_reason_idiom = ?, validation_reason_hyperbole = ?, validation_reason_metonymy = ?, validation_reason_other = ?,
-                final_figurative_language = ?, final_simile = ?, final_metaphor = ?, final_personification = ?,
-                final_idiom = ?, final_hyperbole = ?, final_metonymy = ?, final_other = ?,
-                validation_response = ?, validation_error = ?
-            WHERE id = ?
-        ''', (
-            validation_data.get('validation_decision_simile'),
-            validation_data.get('validation_decision_metaphor'),
-            validation_data.get('validation_decision_personification'),
-            validation_data.get('validation_decision_idiom'),
-            validation_data.get('validation_decision_hyperbole'),
-            validation_data.get('validation_decision_metonymy'),
-            validation_data.get('validation_decision_other'),
-            validation_data.get('validation_reason_simile'),
-            validation_data.get('validation_reason_metaphor'),
-            validation_data.get('validation_reason_personification'),
-            validation_data.get('validation_reason_idiom'),
-            validation_data.get('validation_reason_hyperbole'),
-            validation_data.get('validation_reason_metonymy'),
-            validation_data.get('validation_reason_other'),
-            validation_data.get('final_figurative_language'),
-            validation_data.get('final_simile'),
-            validation_data.get('final_metaphor'),
-            validation_data.get('final_personification'),
-            validation_data.get('final_idiom'),
-            validation_data.get('final_hyperbole'),
-            validation_data.get('final_metonymy'),
-            validation_data.get('final_other'),
-            validation_data.get('validation_response'),
-            validation_data.get('validation_error'),
-            figurative_language_id
-        ))
+        try:
+            # Sanitize validation data to ensure database constraints are met
+            sanitized_data = self._sanitize_validation_data(validation_data)
+
+            self.cursor.execute('''
+                UPDATE figurative_language
+                SET validation_decision_simile = ?, validation_decision_metaphor = ?, validation_decision_personification = ?,
+                    validation_decision_idiom = ?, validation_decision_hyperbole = ?, validation_decision_metonymy = ?, validation_decision_other = ?,
+                    validation_reason_simile = ?, validation_reason_metaphor = ?, validation_reason_personification = ?,
+                    validation_reason_idiom = ?, validation_reason_hyperbole = ?, validation_reason_metonymy = ?, validation_reason_other = ?,
+                    final_figurative_language = ?, final_simile = ?, final_metaphor = ?, final_personification = ?,
+                    final_idiom = ?, final_hyperbole = ?, final_metonymy = ?, final_other = ?,
+                    validation_response = ?, validation_error = ?
+                WHERE id = ?
+            ''', (
+                sanitized_data.get('validation_decision_simile'),
+                sanitized_data.get('validation_decision_metaphor'),
+                sanitized_data.get('validation_decision_personification'),
+                sanitized_data.get('validation_decision_idiom'),
+                sanitized_data.get('validation_decision_hyperbole'),
+                sanitized_data.get('validation_decision_metonymy'),
+                sanitized_data.get('validation_decision_other'),
+                sanitized_data.get('validation_reason_simile'),
+                sanitized_data.get('validation_reason_metaphor'),
+                sanitized_data.get('validation_reason_personification'),
+                sanitized_data.get('validation_reason_idiom'),
+                sanitized_data.get('validation_reason_hyperbole'),
+                sanitized_data.get('validation_reason_metonymy'),
+                sanitized_data.get('validation_reason_other'),
+                sanitized_data.get('final_figurative_language'),
+                sanitized_data.get('final_simile'),
+                sanitized_data.get('final_metaphor'),
+                sanitized_data.get('final_personification'),
+                sanitized_data.get('final_idiom'),
+                sanitized_data.get('final_hyperbole'),
+                sanitized_data.get('final_metonymy'),
+                sanitized_data.get('final_other'),
+                sanitized_data.get('validation_response'),
+                sanitized_data.get('validation_error'),
+                figurative_language_id
+            ))
+
+        except Exception as e:
+            # Log the constraint violation with details
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.error(f"Database constraint violation during update_validation_data: {e}")
+            logger.error(f"Figurative language ID: {figurative_language_id}")
+            logger.error(f"Validation data: {validation_data}")
+
+            # For integrity errors, try with minimal safe data
+            if "CHECK constraint failed" in str(e) or "IntegrityError" in str(e):
+                logger.warning("Attempting to update with minimal safe data after constraint violation")
+                try:
+                    minimal_data = self._create_minimal_validation_data(validation_data)
+                    self.cursor.execute('''
+                        UPDATE figurative_language
+                        SET validation_decision_simile = ?, validation_decision_metaphor = ?, validation_decision_personification = ?,
+                            validation_decision_idiom = ?, validation_decision_hyperbole = ?, validation_decision_metonymy = ?, validation_decision_other = ?,
+                            validation_reason_simile = ?, validation_reason_metaphor = ?, validation_reason_personification = ?,
+                            validation_reason_idiom = ?, validation_reason_hyperbole = ?, validation_reason_metonymy = ?, validation_reason_other = ?,
+                            final_figurative_language = ?, final_simile = ?, final_metaphor = ?, final_personification = ?,
+                            final_idiom = ?, final_hyperbole = ?, final_metonymy = ?, final_other = ?,
+                            validation_response = ?, validation_error = ?
+                        WHERE id = ?
+                    ''', (
+                        minimal_data.get('validation_decision_simile'),
+                        minimal_data.get('validation_decision_metaphor'),
+                        minimal_data.get('validation_decision_personification'),
+                        minimal_data.get('validation_decision_idiom'),
+                        minimal_data.get('validation_decision_hyperbole'),
+                        minimal_data.get('validation_decision_metonymy'),
+                        minimal_data.get('validation_decision_other'),
+                        minimal_data.get('validation_reason_simile'),
+                        minimal_data.get('validation_reason_metaphor'),
+                        minimal_data.get('validation_reason_personification'),
+                        minimal_data.get('validation_reason_idiom'),
+                        minimal_data.get('validation_reason_hyperbole'),
+                        minimal_data.get('validation_reason_metonymy'),
+                        minimal_data.get('validation_reason_other'),
+                        minimal_data.get('final_figurative_language'),
+                        minimal_data.get('final_simile'),
+                        minimal_data.get('final_metaphor'),
+                        minimal_data.get('final_personification'),
+                        minimal_data.get('final_idiom'),
+                        minimal_data.get('final_hyperbole'),
+                        minimal_data.get('final_metonymy'),
+                        minimal_data.get('final_other'),
+                        'Constraint violation recovery',
+                        f'Original error: {e}',
+                        figurative_language_id
+                    ))
+                    logger.info("Successfully updated with minimal safe data after constraint violation")
+
+                except Exception as e2:
+                    logger.error(f"Failed to update even with minimal data: {e2}")
+                    raise e2
+            else:
+                raise e
+
+    def _sanitize_validation_data(self, validation_data: Dict) -> Dict:
+        """Sanitize validation data to ensure it meets database constraints"""
+        sanitized = validation_data.copy()
+
+        # Ensure final_* fields are either 'yes' or 'no'
+        final_fields = [
+            'final_figurative_language', 'final_simile', 'final_metaphor',
+            'final_personification', 'final_idiom', 'final_hyperbole',
+            'final_metonymy', 'final_other'
+        ]
+
+        for field in final_fields:
+            if field in sanitized:
+                value = str(sanitized[field]).strip().lower()
+                sanitized[field] = 'yes' if value == 'yes' else 'no'
+            else:
+                sanitized[field] = 'no'
+
+        # Ensure validation_decision_* fields are valid enum values
+        decision_fields = [
+            'validation_decision_simile', 'validation_decision_metaphor',
+            'validation_decision_personification', 'validation_decision_idiom',
+            'validation_decision_hyperbole', 'validation_decision_metonymy',
+            'validation_decision_other'
+        ]
+
+        valid_decisions = {'VALID', 'INVALID', 'RECLASSIFIED', None, ''}
+        for field in decision_fields:
+            if field in sanitized:
+                value = sanitized[field]
+                if value not in valid_decisions:
+                    sanitized[field] = None
+            else:
+                sanitized[field] = None
+
+        return sanitized
+
+    def _create_minimal_validation_data(self, validation_data: Dict) -> Dict:
+        """Create minimal safe validation data when constraint violations occur"""
+        return {
+            'validation_decision_simile': None,
+            'validation_decision_metaphor': None,
+            'validation_decision_personification': None,
+            'validation_decision_idiom': None,
+            'validation_decision_hyperbole': None,
+            'validation_decision_metonymy': None,
+            'validation_decision_other': None,
+            'validation_reason_simile': '',
+            'validation_reason_metaphor': '',
+            'validation_reason_personification': '',
+            'validation_reason_idiom': '',
+            'validation_reason_hyperbole': '',
+            'validation_reason_metonymy': '',
+            'validation_reason_other': '',
+            'final_figurative_language': 'no',
+            'final_simile': 'no',
+            'final_metaphor': 'no',
+            'final_personification': 'no',
+            'final_idiom': 'no',
+            'final_hyperbole': 'no',
+            'final_metonymy': 'no',
+            'final_other': 'no',
+            'validation_response': '',
+            'validation_error': 'Constraint violation recovery'
+        }
 
     def verify_validation_data_for_chapter(self, book_name: str, chapter: int) -> Dict:
         """

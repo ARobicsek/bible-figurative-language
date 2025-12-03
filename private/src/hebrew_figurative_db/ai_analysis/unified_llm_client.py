@@ -767,10 +767,19 @@ Analysis:"""
             truncation_info['instances_recovered'] = len(data)
 
             for item in data:
-                # Ensure all type fields are properly set
+                # Ensure all type fields are properly set with enhanced validation
                 for fig_type in ['figurative_language', 'simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
-                    if fig_type not in item or item[fig_type] not in ['yes', 'no']:
+                    if fig_type not in item:
                         item[fig_type] = 'no'
+                    else:
+                        # Enhanced validation: handle various invalid values
+                        value = str(item[fig_type]).strip().lower()
+                        if value not in ['yes', 'no']:
+                            # Log the invalid value for debugging
+                            self.logger.warning(f"Invalid value '{item[fig_type]}' for {fig_type} in verse processing, defaulting to 'no'")
+                            item[fig_type] = 'no'
+                        else:
+                            item[fig_type] = value
 
                 # Set figurative_language to 'yes' if any specific type is 'yes'
                 if any(item.get(fig_type) == 'yes' for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']):
