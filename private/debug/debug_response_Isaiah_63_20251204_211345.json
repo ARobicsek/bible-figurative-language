@@ -1,0 +1,674 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 63:1",
+    "deliberation": "I examined whether the coming from Edom/Bozrah is literal geography or symbolic, and whether the clothed/majestic warrior is literal or an image of YHWH. I concluded that the verse presents a divine warrior metaphor and also uses Edom/Bozrah metonymically for hostile nations.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִי־זֶה בָּא מֵאֱדוֹם חֲמוּץ בְּגָדִים מִבׇּצְרָה זֶה הָדוּר בִּלְבוּשׁוֹ צֹעֶה בְּרֹב כֹּחוֹ",
+        "english_text": "Who is this coming from Edom, in crimsoned garments from Bozrah—who is this, majestic in attire, pressing forward with great might?",
+        "target": ["YHWH as judge and savior", "divine character/action", "theological"],
+        "vehicle": ["a human warrior returning from battle with blood-stained garments", "warrior imagery", "military"],
+        "ground": ["victory, power, and having just executed judgment", "shared qualities between warrior and deity", "evaluative"],
+        "posture": ["awe-filled interrogation of God's appearance", "rhetorical stance of the onlooker", "prophetic vision"],
+        "explanation": "YHWH is portrayed as a majestic warrior returning from battle with bloodied clothing, using human battle imagery to communicate divine judgment and salvation.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מֵאֱדוֹם ... מִבׇּצְרָה",
+        "english_text": "from Edom ... from Bozrah",
+        "target": ["hostile nations/opponents of YHWH and Israel", "collective enemies", "geo-political"],
+        "vehicle": ["Edom and its chief city Bozrah", "nation/city names", "geographical"],
+        "ground": ["Edom’s traditional role as an arch-enemy symbolizes all hostile powers", "representative exemplar", "typological"],
+        "posture": ["prophetic characterization of the enemies under judgment", "interpretive framing", "judgment oracle"],
+        "explanation": "Edom and Bozrah function as metonymy for the broader hostile world powers that YHWH has just judged.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 63:2",
+    "deliberation": "I looked for explicit comparison markers (כְּ) and for any hyperbolic or symbolic use of color. The main device is a simile comparing the stained garments to those of a grape-treader.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְגָדֶיךָ כְּדֹרֵךְ בְּגַת",
+        "english_text": "Your garments [are] like those of someone who treads grapes in the winepress",
+        "target": ["the appearance of YHWH’s garments after judgment", "divine warrior’s visible state", "theophany imagery"],
+        "vehicle": ["a grape-treader spattered with juice in a winepress", "wine-making activity", "agricultural"],
+        "ground": ["deep red staining and splattering from violent treading", "visual similarity, intensity of action", "sensory/experiential"],
+        "posture": ["questioning shock at the bloody-looking garments", "rhetorical probing", "interpretive inquiry"],
+        "explanation": "The red-stained garments are compared to those of a person trampling grapes, highlighting the visual effect of blood-like splatter from divine judgment.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 63:3",
+    "deliberation": "I checked whether the winepress language is literal or an image for judgment. The entire verse extends the winepress metaphor: peoples are treated as grapes whose ‘juice’ (blood) spatters the divine warrior.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פּוּרָה דָּרַכְתִּי לְבַדִּי ... וְאֶדְרְכֵם בְּאַפִּי וְאֶרְמְסֵם בַּחֲמָתִי וְיֵז נִצְחָם עַל־בְּגָדַי וְכׇל־מַלְבּוּשַׁי אֶגְאָלְתִּי",
+        "english_text": "I trod out a vintage alone ... I trod them down in My anger, trampled them in My rage; their life-blood bespattered My garments, and all My clothing was stained.",
+        "target": ["YHWH’s act of judging the nations", "divine judgment", "theological"],
+        "vehicle": ["treading grapes in a winepress, with juice splattering the presser", "winepress activity", "agricultural/violent"],
+        "ground": ["crushing, total overpowering, and the resulting red liquid covering the presser", "severity and thoroughness of judgment", "moral-evaluative"],
+        "posture": ["self-presentation as a solitary, resolute judge", "divine first-person declaration", "judicial/theophanic"],
+        "explanation": "The nations are metaphorically treated as grapes in a winepress, crushed by YHWH’s wrath so that their blood splashes His garments, expressing the violence and completeness of judgment.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 63:4",
+    "deliberation": "I considered if ‘day/year’ are simply temporal or symbolic, and whether ‘in my heart’ is anthropomorphic. The main figure is anthropomorphic: YHWH depicted with a ‘heart’ harboring a scheduled ‘day/year’ of vengeance/redemption.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי יוֹם נָקָם בְּלִבִּי וּשְׁנַת גְּאוּלַי בָּאָה",
+        "english_text": "For a day of vengeance was in My heart, and My year of redemption arrived.",
+        "target": ["God’s inner resolve and timing for judgment and salvation", "divine intention and timetable", "theological"],
+        "vehicle": ["a human heart harboring a marked ‘day’ and ‘year’ for action", "human inner life and calendar time", "anthropological/temporal"],
+        "ground": ["concealed intention awaiting its appointed moment", "planning and emotional resolve", "psychological/volitional"],
+        "posture": ["emphasis on God’s deliberate, long-held purpose", "author’s theological assertion", "prophetic explanation"],
+        "explanation": "God is pictured as having a ‘heart’ where a specific day and year for vengeance and redemption are kept, using human inner-life and calendar imagery to depict divine resolve and appointed timing.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 63:5",
+    "deliberation": "I checked if ‘arm’ is literal or a stock figure for power, and whether wrath ‘supporting’ God is literal. ‘Arm’ is a metonymy for divine power; wrath is personified as a helper that upholds God’s action.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתּוֹשַׁע־לִי זְרֹעִי",
+        "english_text": "So My own arm wrought the triumph for Me",
+        "target": ["God’s effective power to save", "divine efficacy", "theological"],
+        "vehicle": ["an arm exerting physical strength", "body part representing strength", "anthropological"],
+        "ground": ["ability to act and exert force to accomplish a task", "power, capability", "functional"],
+        "posture": ["insistence that salvation comes from God alone", "theological emphasis", "polemic against reliance on others"],
+        "explanation": "God’s ‘arm’ stands metonymically for His power, using a human body part as a figure for divine saving strength.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַחֲמָתִי הִיא סְמָכָתְנִי",
+        "english_text": "and My rage—it was My aid/support.",
+        "target": ["the internal driving force behind God’s judgment", "divine motivation", "theological/psychological"],
+        "vehicle": ["a supporter or ally who props someone up", "helping person/force", "social/relational"],
+        "ground": ["providing needed support or energy for decisive action", "empowerment", "causal"],
+        "posture": ["portraying divine wrath as actively energizing judgment", "intensifying description", "rhetorical emphasis"],
+        "explanation": "God’s wrath is personified/metaphorically depicted as a supporter that ‘upholds’ Him, highlighting wrath as the empowering force for His judging activity.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 63:6",
+    "deliberation": "I separated three different images: trampling peoples, making them drunk in wrath, and casting their ‘glory/strength’ to the ground. Each uses a different figurative domain for judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאָבוּס עַמִּים בְּאַפִּי",
+        "english_text": "I trampled peoples in My anger",
+        "target": ["God’s subjugation and destruction of nations", "divine judgment", "political/theological"],
+        "vehicle": ["stamping or trampling something underfoot", "crushing action", "physical/violent"],
+        "ground": ["complete overpowering and humiliation under superior force", "domination and destruction", "military/moral"],
+        "posture": ["graphic depiction of God’s victorious judgment", "prophetic warning", "oracular"],
+        "explanation": "The peoples are depicted as something underfoot that God tramples, portraying judgment as crushing and humiliating defeat.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַאֲשַׁכְּרֵם בַּחֲמָתִי",
+        "english_text": "I made them drunk with My rage",
+        "target": ["the disorienting effect of God’s judgment on the nations", "experience of being judged", "psychological/political"],
+        "vehicle": ["a person becoming drunk from strong drink", "intoxication", "bodily/experiential"],
+        "ground": ["loss of control, staggering, confusion brought on by an overpowering influence", "disorientation and incapacity", "experiential"],
+        "posture": ["stressing the incapacitating force of divine wrath", "intensifying rhetoric", "prophetic denunciation"],
+        "explanation": "God’s wrath is likened to an intoxicant that makes the nations ‘drunk’, emphasizing how judgment overwhelms and disorients them.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאוֹרִיד לָאָרֶץ נִצְחָם",
+        "english_text": "and I hurled their glory/strength down to the earth.",
+        "target": ["the downfall of the nations’ power and prestige", "status of the enemies", "political"],
+        "vehicle": ["something being cast down from height to the ground", "vertical movement downward", "spatial"],
+        "ground": ["moving from high to low symbolizes humiliation and loss of status", "reversal and abasement", "social/evaluative"],
+        "posture": ["assertion of complete humiliation of the enemies", "taunt-like judgment", "prophetic rhetoric"],
+        "explanation": "The nations’ ‘glory/strength’ is cast down to the earth, using spatial descent as a metaphor and metonymy for humiliation and loss of power.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 63:7",
+    "deliberation": "I considered if ‘house of Israel’ is purely genealogical or figurative. It functions as a standard metonymy/collective metaphor, ‘house’ for the people descended from Israel.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְבֵית יִשְׂרָאֵל",
+        "english_text": "to the House of Israel",
+        "target": ["the people descended from Jacob/Israel", "national community", "ethnic/covenantal"],
+        "vehicle": ["a household or ‘house’ as a unit", "family/household structure", "social"],
+        "ground": ["a ‘house’ stands for the family or lineage associated with it", "collective representation", "sociological"],
+        "posture": ["liturgical recollection of God’s goodness to His covenant family", "worshipful narration", "praise/confession"],
+        "explanation": "‘House of Israel’ uses the image of a household to represent the entire people descended from Israel.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 63:8",
+    "deliberation": "I asked whether ‘children’ (בָּנִים) is biological or relationally figurative here. In apposition to ‘my people,’ it functions as a covenantal metaphor of God as parent and Israel as children expected to be faithful.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַמִּי הֵמָּה בָּנִים לֹא יְשַׁקֵּרוּ",
+        "english_text": "Surely they are My people, children who will not play false",
+        "target": ["Israel’s covenant relationship and expected loyalty to YHWH", "divine–human relationship", "theological"],
+        "vehicle": ["children in a family bound to honor their parent", "parent–child relationship", "family/social"],
+        "ground": ["expected trust, loyalty, and obedience from dependents to a caring authority", "relational commitment", "moral"],
+        "posture": ["recounting God’s hopeful expectation of filial faithfulness", "retrospective narration", "lamenting irony"],
+        "explanation": "Israel is metaphorically called God’s ‘children,’ highlighting a familial covenant in which they are expected not to lie or be disloyal to Him.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 63:9",
+    "deliberation": "I noted three distinct figures: (1) God sharing Israel’s distress (anthropopathic), (2) ‘angel of his presence’ using ‘face’ as metonymy for God Himself, and (3) God lifting and carrying Israel, a parental/shepherding metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּכׇל־צָרָתָם ... צָר",
+        "english_text": "In all their troubles [He] was troubled",
+        "target": ["God’s empathetic involvement with Israel’s suffering", "divine emotional stance", "theological/experiential"],
+        "vehicle": ["a person who feels distress when others suffer", "human emotional response", "psychological"],
+        "ground": ["sharing in another’s pain as a sign of deep relational solidarity", "empathy, co-suffering", "relational"],
+        "posture": ["affirmation of God’s compassionate identification with His people", "consolatory theology", "pastoral"],
+        "explanation": "God is described as being ‘troubled’ in all their trouble, an anthropopathic metaphor portraying Him as emotionally sharing Israel’s distress.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּמַלְאַךְ פָּנָיו הוֹשִׁיעָם",
+        "english_text": "and the angel of His presence delivered them",
+        "target": ["God Himself acting to save, mediated or manifested", "divine agency", "theological"],
+        "vehicle": ["His ‘face/presence’ as represented by an angelic messenger", "spatial nearness and representation", "theophanic"],
+        "ground": ["God’s ‘face’ stands for His personal presence; the angel represents that presence in action", "representation and proximity", "symbolic"],
+        "posture": ["highlighting the immediacy of God’s personal involvement in their salvation", "liturgical remembrance", "praise"],
+        "explanation": "‘Angel of His presence’ uses ‘face’ as metonymy for the personal presence of God, embodied in a messenger who saves them.",
+        "confidence": 0.84
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְנַטְּלֵם וַיְנַשְּׂאֵם כׇּל־יְמֵי עוֹלָם",
+        "english_text": "He raised them and carried them all the days of old",
+        "target": ["God’s protective and sustaining care for Israel", "divine guidance and preservation", "historical/theological"],
+        "vehicle": ["someone lifting and carrying another (parent, shepherd, rescuer)", "supportive bearer", "familial/pastoral"],
+        "ground": ["providing support, bearing burdens, and ensuring safety through carrying", "care and protection", "relational"],
+        "posture": ["celebratory remembrance of God’s tender, sustained care", "praiseful reflection", "worship"],
+        "explanation": "God is pictured as physically lifting and carrying His people, a metaphor that evokes parental or shepherd-like care over time.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 63:10",
+    "deliberation": "I checked whether ‘Holy Spirit’ is given human emotions. The key figure is that Israel ‘grieved’ God’s holy spirit—personifying the spirit as capable of emotional pain.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעִצְּבוּ אֶת־רוּחַ קׇדְשׁוֹ",
+        "english_text": "and they grieved His holy spirit",
+        "target": ["the effect of Israel’s rebellion on their relationship with God’s Spirit", "divine relational response", "theological"],
+        "vehicle": ["a person whose feelings are hurt or grieved", "human emotional experience", "psychological"],
+        "ground": ["relational offense causes emotional pain, signaling broken fellowship", "sorrow over betrayal", "moral/relational"],
+        "posture": ["underscoring the seriousness of rebellion as personally wounding God", "moral exhortation", "warning"],
+        "explanation": "The Holy Spirit is personified as one who can be grieved, using human emotional language to depict the relational rupture caused by Israel’s rebellion.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 63:11",
+    "deliberation": "I focused on ‘shepherd of his flock’ applied to Moses/leadership. This is classic leadership-as-shepherd metaphor; other elements are more historical than figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵת רֹעֵי צֹאנֹו",
+        "english_text": "along with the shepherd of this flock",
+        "target": ["Moses (and possibly other leaders) guiding Israel", "human leadership", "social/religious"],
+        "vehicle": ["a shepherd caring for and guiding a flock of sheep", "shepherding", "pastoral/agricultural"],
+        "ground": ["guidance, protection, and responsibility for vulnerable dependents", "care and oversight", "relational/functional"],
+        "posture": ["nostalgic recall of God-provided leadership during the Exodus", "liturgical remembrance", "lamenting loss"],
+        "explanation": "Moses is portrayed as a ‘shepherd’ and Israel as God’s ‘flock,’ using pastoral imagery to describe leadership and care.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 63:12",
+    "deliberation": "I noted the ‘glorious arm’ at Moses’ right hand as a body-part metonymy for power, and ‘to make for Himself an everlasting name’ where ‘name’ stands for reputation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מוֹלִיךְ לִימִין מֹשֶׁה זְרֹועַ תִּפְאַרְתּוֹ",
+        "english_text": "whose glorious arm was made to march at the right hand of Moses",
+        "target": ["God’s powerful, glorious assistance to Moses", "divine enabling power", "theological"],
+        "vehicle": ["an arm manifesting strength and honor", "body part as symbol of strength", "anthropological"],
+        "ground": ["an arm exercises strength and accomplishes work", "effective power and honor", "functional/evaluative"],
+        "posture": ["crediting Israel’s deliverance to God’s own power", "theological interpretation", "praise"],
+        "explanation": "God’s ‘arm’ is a metonymy for His powerful action, here described as ‘glorious’ and accompanying Moses.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לַעֲשׂוֹת לוֹ שֵׁם עוֹלָם",
+        "english_text": "to make for Himself a name for all time",
+        "target": ["God’s enduring reputation and renown", "divine reputation", "theological/social"],
+        "vehicle": ["a ‘name’ that someone has", "personal name as public identity", "linguistic/social"],
+        "ground": ["a name stands for the honor and reputation associated with it", "identity and fame", "symbolic"],
+        "posture": ["asserting that God’s acts in history serve to establish His renown", "didactic reflection", "worship/teaching"],
+        "explanation": "‘Name’ is used metonymically for God’s reputation; making an ‘everlasting name’ means securing enduring fame and honor.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Isaiah 63:13",
+    "deliberation": "I observed the explicit כְּ (‘as’) marking a simile: God’s leading Israel ‘through the deeps’ is likened to a horse in the desert that does not stumble.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מוֹלִיכָם בַּתְּהֹמוֹת כַּסּוּס בַּמִּדְבָּר לֹא יִכָּשֵׁלוּ",
+        "english_text": "Who led them through the deeps so that they did not stumble—like a horse in a desert",
+        "target": ["Israel’s safe passage through dangerous waters", "collective experience of deliverance", "historical/theological"],
+        "vehicle": ["a surefooted horse moving in the desert without stumbling", "animal movement", "natural"],
+        "ground": ["smooth, unhindered, secure movement through potentially treacherous terrain", "safety and steadiness", "experiential"],
+        "posture": ["praising the steadiness of God’s guidance", "liturgical remembrance", "praise"],
+        "explanation": "Israel’s being led through the ‘deeps’ is compared to a horse that does not stumble in the wilderness, stressing the secure, unhindered nature of God’s guidance.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Isaiah 63:14",
+    "deliberation": "I distinguished the explicit simile ‘like cattle descending to the plain’ from the broader shepherding/leading metaphor: God’s Spirit giving rest and ‘leading’ the people as a shepherd.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כַּבְּהֵמָה בַּבִּקְעָה תֵרֵד",
+        "english_text": "Like a beast descending to the plain",
+        "target": ["Israel’s movement into a place of rest and safety", "collective historical experience", "historical/theological"],
+        "vehicle": ["cattle going down into a fertile valley", "animal movement toward pasture", "agricultural"],
+        "ground": ["moving into a level, nourishing, restful place", "relief and provision", "experiential"],
+        "posture": ["evoking a pastoral picture of God’s care", "reassuring imagery", "praise"],
+        "explanation": "Israel’s transition to rest is compared to cattle going down into a valley, suggesting ease, safety, and provision.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רוּחַ יְהוָה תְּנִיחֶנּוּ כֵּן נִהַגְתָּ עַמְּךָ",
+        "english_text": "the spirit of the LORD gave them rest; thus did You shepherd/lead Your people",
+        "target": ["God’s guidance and granting of rest to His people", "divine leadership", "theological"],
+        "vehicle": ["a shepherd leading a flock to rest and pasture", "shepherding care", "pastoral/agricultural"],
+        "ground": ["guiding dependents to places of safety and rest, ensuring their well-being", "care, guidance, provision", "relational/functional"],
+        "posture": ["praising God as a gentle, competent leader of His people", "worshipful acknowledgment", "praise"],
+        "explanation": "The LORD’s Spirit is portrayed as giving rest and God as ‘leading’ His people, extending the shepherd metaphor of caring guidance.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Isaiah 63:15",
+    "deliberation": "I noted several anthropomorphisms, especially ‘the yearning of Your bowels and Your mercies’ being ‘withheld.’ This uses bodily organs as the seat of compassion and pictures that compassion as being restrained.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲמוֹן מֵעֶיךָ וְרַחֲמֶיךָ אֵלַי הִתְאַפָּקוּ",
+        "english_text": "Your yearning and Your love [lit. tumult of Your innards and Your compassions] are being withheld from me",
+        "target": ["God’s compassion and affection toward His people", "divine emotional disposition", "theological"],
+        "vehicle": ["inner organs (bowels) stirred and then restrained", "bodily seat of emotion", "anthropological"],
+        "ground": ["strong inner stirring symbolizes intense compassion, and restraining it signifies refraining from acting in mercy", "inner feeling and self-restraint", "psychological/moral"],
+        "posture": ["lamenting the apparent withdrawal of God’s felt compassion", "complaint in prayer", "lament"],
+        "explanation": "God’s compassion is portrayed in anthropomorphic terms as inner organs in tumult, yet ‘held back,’ expressing the sense that His mercy is presently restrained.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Isaiah 63:16",
+    "deliberation": "I focused on two figures: (1) calling God ‘our Father’ as a relational metaphor and (2) ‘Your name is our Redeemer’ where ‘name’ stands metonymically for God’s identity/role as Redeemer.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־אַתָּה אָבִינוּ ... אַתָּה יְהוָה אָבִינוּ",
+        "english_text": "Surely You are our Father ... You, O LORD, are our Father",
+        "target": ["YHWH’s covenant relationship, authority, and care toward Israel", "divine–people relationship", "theological"],
+        "vehicle": ["a human father’s relationship to children", "parental role", "family/social"],
+        "ground": ["origin, care, protection, discipline, and identity given by a father", "authority and loving care", "relational/moral"],
+        "posture": ["appeal to God’s paternal responsibility and affection", "petition grounded in relationship", "prayer"],
+        "explanation": "God is addressed as ‘our Father,’ a metaphor that frames Israel’s relationship with Him in terms of familial care and authority, especially when human patriarchs would not recognize them.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "גֹּאֲלֵנוּ מֵעוֹלָם שְׁמֶךָ",
+        "english_text": "From of old, Your name is ‘Our Redeemer’",
+        "target": ["God’s identity and role as Redeemer", "divine saving character", "theological"],
+        "vehicle": ["God’s ‘name’ as the label by which He is known", "personal name as identity marker", "linguistic/social"],
+        "ground": ["a name stands for the person’s recognized character and role", "identity/reputation", "symbolic"],
+        "posture": ["reminding God of His long-established role as Redeemer", "covenantal appeal", "prayer"],
+        "explanation": "‘Your name is Our Redeemer’ uses ‘name’ metonymically to refer to God’s established identity and reputation as the one who redeems His people.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Isaiah 63:17",
+    "deliberation": "I identified two standard conceptual metaphors: (1) ‘ways’ as moral paths from which Israel wanders, and (2) the ‘hardening of the heart’ as a figure for inner stubbornness or insensitivity to God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָמָּה תַתְעֵנוּ יְהוָה מִדְּרָכֶיךָ",
+        "english_text": "Why, O LORD, do You make us stray from Your ways?",
+        "target": ["Israel’s deviation from God’s will and commandments", "moral/spiritual conduct", "ethical/theological"],
+        "vehicle": ["wandering off from a path or road", "travel along and away from a way", "spatial/motion"],
+        "ground": ["deviating from an established path corresponds to disobedience or loss of right direction", "misdirection and straying", "moral"],
+        "posture": ["lamenting spiritual misdirection and attributing it paradoxically to God", "conflicted petition", "lament"],
+        "explanation": "God’s ‘ways’ are metaphorical paths representing His will; to ‘stray’ from them is to deviate morally/spiritually.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תַקְשִׁיחַ לִבֵּנוּ מִיִּרְאָתֶךָ",
+        "english_text": "You harden our heart from revering You",
+        "target": ["Israel’s inner disposition toward God, especially lack of reverence", "human inner life", "psychological/spiritual"],
+        "vehicle": ["a heart becoming hard and unyielding", "physical hardness", "material/physical"],
+        "ground": ["hardness suggests resistance, insensitivity, and unwillingness to be shaped", "stubbornness and insensibility", "moral/psychological"],
+        "posture": ["describing spiritual callousness in concrete, bodily terms", "confessional lament", "prayer"],
+        "explanation": "The ‘heart’ is portrayed as being hardened, a metaphor for becoming resistant and insensitive to God’s fear and will.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Isaiah 63:18",
+    "deliberation": "I checked ‘trampled Your sanctuary’ and the brief possession language to see if they are metaphoric. Given the context of conquest and defilement, this can be read quite literally—enemies physically trampling the temple—so I did not treat it as clearly figurative.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Isaiah 63:19 (Hebrew 64:1a)",
+    "deliberation": "I identified multiple figures: (1) being ‘called by Your name’ as metonymy for covenant identity, (2) tearing the heavens as a dramatic metaphor for divine intervention, and (3) mountains quaking/melting before God as hyperbolic theophany imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לֹא־נִקְרָא שִׁמְךָ עֲלֵיהֶם",
+        "english_text": "Your name was never called upon them",
+        "target": ["belonging to YHWH as His covenant people", "covenantal identity", "theological/social"],
+        "vehicle": ["having God’s ‘name’ called upon a group", "naming/labeling", "linguistic/social"],
+        "ground": ["bearing someone’s name signifies ownership, relationship, and representation", "belonging and association", "symbolic"],
+        "posture": ["contrasting Israel’s identity with that of other nations", "self-description in lament", "prayerful reflection"],
+        "explanation": "‘Your name called upon them’ is a metonymy for being under YHWH’s rule and ownership; saying it never happened defines those outsiders as non-covenantal.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֽוּא־קָרַעְתָּ שָׁמַיִם יָרַדְתָּ",
+        "english_text": "If only You would tear open the heavens and come down",
+        "target": ["a dramatic, unmistakable intervention of God into history", "divine action", "theological"],
+        "vehicle": ["ripping the heavens like a curtain and descending through", "violent tearing of a barrier", "cosmic/physical"],
+        "ground": ["tearing a barrier symbolizes breaking through distance and inaccessibility", "sudden, forceful entry", "experiential"],
+        "posture": ["urgent longing for a conspicuous theophany", "intense petition", "lament/prayer"],
+        "explanation": "God’s intervention is pictured as physically ripping open the sky and coming down, a vivid metaphor and mild hyperbole for a manifest theophany.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִפָּנֶיךָ הָרִים נָזֹלוּ",
+        "english_text": "so that mountains would quake [melt/flow] before You",
+        "target": ["the overwhelming effect of God’s presence on creation and human powers", "impact of theophany", "theological/cosmic"],
+        "vehicle": ["mountains shaking or flowing away in God’s presence", "violent geological disturbance", "natural"],
+        "ground": ["immovable things being shaken or dissolved signifies irresistible power and awe", "destabilization before superior force", "symbolic/experiential"],
+        "posture": ["heightening the imagined impact of God’s coming", "vivid, awe-seeking description", "prayerful hyperbole"],
+        "explanation": "Mountains ‘quaking/melting’ before God is hyperbolic metaphorical language expressing how utterly overwhelming His manifested presence would be.",
+        "confidence": 0.94
+      }
+    ]
+  }
+]

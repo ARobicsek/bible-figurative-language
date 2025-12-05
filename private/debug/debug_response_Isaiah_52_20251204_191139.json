@@ -1,0 +1,787 @@
+```json
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 52:1",
+    "deliberation": "Noted repeated imperatives to Zion/Jerusalem in the feminine singular, treating the city as a woman who can wake up and get dressed. The command to 'put on strength' and 'garments of splendor' is clearly metaphorical. The statement that no 'uncircumcised and unclean' will 'enter you' again uses personification of the city and metonymy for foreign/impure people. I treat the dressing imagery as one extended personifying metaphor, and the 'uncircumcised and impure' clause as a distinct metonymic/personifying expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עוּרִי עוּרִי לִבְשִׁי עֻזֵּךְ צִיּוֹן לִבְשִׁי בִּגְדֵי תִפְאַרְתֵּךְ יְרוּשָׁלַ͏ִם עִיר הַקֹּדֶשׁ",
+        "english_text": "Awake, awake, O Zion! Clothe yourself in splendor; Put on your robes of majesty, Jerusalem, holy city!",
+        "target": [
+          "Zion/Jerusalem’s restored condition and calling",
+          "community/state of the people",
+          "theological-soteriological"
+        ],
+        "vehicle": [
+          "waking up and putting on strength and splendid garments",
+          "actions of a woman dressing in fine clothes",
+          "everyday/social life"
+        ],
+        "ground": [
+          "moving from inertia and humiliation to visible honor, dignity, and readiness",
+          "shared qualities of alertness, preparedness, and conspicuous beauty",
+          "conceptual mapping of social elevation to clothing imagery"
+        ],
+        "posture": [
+          "prophetic exhortation that encourages the community to embrace restored status",
+          "imperative, hopeful rhetoric",
+          "prophetic discourse"
+        ],
+        "explanation": "Zion/Jerusalem is personified as a woman who can wake up and get dressed; her renewed strength and glory are depicted metaphorically as splendid garments she must put on, with 'awake' functioning idiomatically for spiritual/political revival.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי לֹא יוֹסִיף יָבֹא־בָךְ עוֹד עָרֵל וְטָמֵא",
+        "english_text": "For the uncircumcised and the impure shall never enter you again.",
+        "target": [
+          "future security and holiness of Jerusalem",
+          "state of the city/community",
+          "theological-eschatological"
+        ],
+        "vehicle": [
+          "no uncircumcised or impure persons entering a woman/city",
+          "ritual/physical categories of outsiders and the act of entering",
+          "ritual and civic boundary imagery"
+        ],
+        "ground": [
+          "exclusion of those who are foreign or defiling from sharing in the city’s life",
+          "shared idea of separation between holy and profane/outsider",
+          "conceptualization of community purity via purity-status language"
+        ],
+        "posture": [
+          "promise of permanent exclusion of defilers/oppressors",
+          "assuring, protective declaration",
+          "prophetic consolation"
+        ],
+        "explanation": "Jerusalem is personified as a female body or city that can be 'entered'; 'uncircumcised and impure' stands metonymically for foreign, idolatrous, or defiling peoples, expressing the promise that such agents of defilement/oppression will no longer invade the community.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 52:2",
+    "deliberation": "The verse continues the feminine address to Jerusalem/Zion, commanding her to shake off dust and loose chains from her neck. Dust and chains image humiliation and captivity; the commands are metaphorical for release from exile and mourning. 'Daughter Zion' is a standard personification/metonymy. I regard the dust-rising imagery and the chains/‘captive daughter Zion’ wording as two related but distinct figurative complexes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִתְנַעֲרִי מֵעָפָר קוּמִי שְּׁבִי יְרוּשָׁלָ͏ִם",
+        "english_text": "Arise, shake off the dust, Sit [on your throne], Jerusalem!",
+        "target": [
+          "Jerusalem’s transition from humiliation/exile to restored dignity and rule",
+          "communal/spiritual condition",
+          "theological-historical"
+        ],
+        "vehicle": [
+          "a woman shaking dust from herself and rising to sit (on a seat/throne)",
+          "bodily actions of getting up from the ground and sitting in a dignified place",
+          "mourning-to-honor social behavior"
+        ],
+        "ground": [
+          "moving from abject, dusty mourning on the ground to an elevated, settled position",
+          "shared ideas of status change signaled by posture and cleanliness",
+          "conceptual mapping of political/spiritual restoration as change of bodily posture/location"
+        ],
+        "posture": [
+          "encouragement to embrace freedom and restored status",
+          "uplifting, imperative tone",
+          "prophetic exhortation"
+        ],
+        "explanation": "Jerusalem is personified as a woman sitting in dust (mourning/humiliation) who is told to shake off the dust and rise to a seat. This idiomatically depicts the end of exile and the assumption of restored, dignified status.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "[הִתְפַּתְּחִי] מוֹסְרֵי צַוָּארֵךְ שְׁבִיָּה בַּת־צִיּוֹן",
+        "english_text": "Loose the bonds from your neck, O captive one, Fair (captive) daughter Zion!",
+        "target": [
+          "Zion’s bondage under foreign domination",
+          "political/spiritual oppression of the people",
+          "historical-theological"
+        ],
+        "vehicle": [
+          "iron bonds around the neck of a captive woman (daughter Zion)",
+          "physical shackles and the captive female",
+          "imagery of slavery and imprisonment"
+        ],
+        "ground": [
+          "restriction, pain, and subjugation versus release and freedom",
+          "shared idea of constraint that prevents free movement/action",
+          "conceptual mapping of political oppression as physical chaining"
+        ],
+        "posture": [
+          "call to experience divine liberation from captivity",
+          "hopeful, liberating summons",
+          "prophetic consolation and command"
+        ],
+        "explanation": "Zion is personified as a captive daughter with bonds around her neck; these bonds metaphorically represent the political and spiritual oppression of exile, and 'daughter Zion' is a metonym for the whole city/people.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 52:3",
+    "deliberation": "The verse uses commercial language ('sold,' 'redeemed,' 'without money') of Israel’s exile and restoration. This does not describe a literal slave sale with payment, but reinterprets historical judgment and salvation in marketplace terms. I treat it as one extended metaphor of covenantal fate as a commercial transaction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חִנָּם נִמְכַּרְתֶּם וְלֹא בְכֶסֶף תִּגָּאֵלוּ",
+        "english_text": "You were sold for no price, And shall be redeemed without money.",
+        "target": [
+          "Israel’s exile and subsequent divine deliverance",
+          "covenantal-historical condition of the people",
+          "theological-historical"
+        ],
+        "vehicle": [
+          "being sold and then bought back without money in a marketplace",
+          "economic transaction of selling and redeeming slaves/property",
+          "commercial life"
+        ],
+        "ground": [
+          "transfer of ownership/control and subsequent reversal without financial exchange",
+          "shared ideas of loss and restoration framed as change in ownership status",
+          "conceptual mapping of divine judgment and rescue onto market redemption"
+        ],
+        "posture": [
+          "explanation that Israel’s fate is under God’s sovereign, gratuitous control",
+          "didactic, interpretive speech",
+          "prophetic theological interpretation"
+        ],
+        "explanation": "Exile is portrayed as Israel being 'sold' for nothing, and restoration as being 'redeemed' without money; this metaphor casts God’s dealings with Israel in commercial terms to highlight the gratuitous, non-economic nature of both judgment and deliverance.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 52:4",
+    "deliberation": "The verse recounts historical movement to Egypt and oppression by Assyria. 'Went down to Egypt to sojourn there' and 'Assyria oppressed them without cause' can be read in a straightforward historical sense. Any metaphorical extension (e.g., Assyria ‘robbing’ them) aligns with literal plunder under imperial rule. I do not detect a clear, necessary figurative device of the types requested.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 52:5",
+    "deliberation": "I considered whether 'taken for nothing' is purely metaphorical, but it can be read as literal unjust seizure. The key figurative elements are (1) 'my name is reviled,' where 'name' stands metonymically for God’s reputation/being, and (2) 'continually, all the day,' which is a temporal hyperbole for incessant blasphemy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שְׁמִי מִנֹּאָץ",
+        "english_text": "My name is reviled.",
+        "target": [
+          "God’s own reputation and honor among the nations",
+          "divine identity as perceived by others",
+          "theological"
+        ],
+        "vehicle": [
+          "God’s 'name' being treated with contempt",
+          "use of the name as stand-in for the person/reputation",
+          "linguistic representation"
+        ],
+        "ground": [
+          "dishonoring the name equates to dishonoring the person",
+          "shared idea that a name encapsulates a person’s character and status",
+          "conceptual mapping of reputation onto the name"
+        ],
+        "posture": [
+          "lament that God’s honor is being publicly dishonored due to Israel’s situation",
+          "indignant, sorrowful tone",
+          "prophetic complaint"
+        ],
+        "explanation": "The 'name' of God stands metonymically for God Himself and His reputation; to revile the name is to blaspheme God’s character and status.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְתָמִיד כׇּל־הַיּוֹם",
+        "english_text": "constantly, unceasingly [lit. 'continually, all the day']",
+        "target": [
+          "frequency of the reviling of God’s name",
+          "repeated blasphemous actions",
+          "ethical-religious behavior"
+        ],
+        "vehicle": [
+          "an entire day filled with uninterrupted action",
+          "continuous time-span as measure of repetition",
+          "temporal imagery"
+        ],
+        "ground": [
+          "emphasizing unrelenting regularity, not a single literal day",
+          "shared idea that 'all day' intensifies the sense of persistence",
+          "use of temporal exaggeration to convey constancy"
+        ],
+        "posture": [
+          "stressing the scandalous extent of the blasphemy",
+          "emphatic, accusatory tone",
+          "prophetic indictment"
+        ],
+        "explanation": "The phrase 'continually, all the day' is a conventional hyperbole meaning incessantly or very frequently, not strictly every moment of a literal 24-hour period.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 52:6",
+    "deliberation": "The main potential figure is again 'my people shall know my name.' This parallels v.5 and clearly uses 'name' as a metonym for God’s revealed character and reality. The rest of the verse affords strong anthropomorphic immediacy ('I am he who speaks, here I am') but can be taken as straightforward divine speech rather than a distinct metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לָכֵן יֵדַע עַמִּי שְׁמִי",
+        "english_text": "Assuredly, My people shall learn My name.",
+        "target": [
+          "Israel’s true knowledge of who God is",
+          "cognitive and relational awareness of God",
+          "theological-epistemic"
+        ],
+        "vehicle": [
+          "knowing God’s 'name'",
+          "knowledge of a name as access to identity",
+          "linguistic-cognitive"
+        ],
+        "ground": [
+          "to know someone’s name is to know their identity and character",
+          "shared idea that 'name' stands for the person’s essence and reputation",
+          "conceptual mapping of divine self-revelation to name-recognition"
+        ],
+        "posture": [
+          "promise of deeper, experiential recognition of God’s true identity",
+          "assuring, future-oriented tone",
+          "prophetic promise"
+        ],
+        "explanation": "Here 'my name' again functions metonymically for God’s revealed character and presence; to 'know my name' is to truly recognize and acknowledge who YHWH is.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 52:7",
+    "deliberation": "The central image is 'beautiful feet' on the mountains bringing good news. The messenger’s feet are singled out as 'beautiful' because of the message they carry—this is a synecdoche/metonymy where a body part stands for the whole messenger and his good tidings, and 'beauty' stands for welcome. I treat this as one figurative expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "מַה־נָּאו֨וּ עַל־הֶהָרִ֜ים רַגְלֵ֣י מְבַשֵּׂר",
+        "english_text": "How welcome on the mountain are the footsteps [lit. 'feet'] of the herald",
+        "target": [
+          "the bearer and content of the good news about God’s reign",
+          "the messenger and his salvific proclamation",
+          "prophetic-salvific announcement"
+        ],
+        "vehicle": [
+          "the feet of a runner seen approaching over the mountains",
+          "a single body part representing the approaching messenger",
+          "everyday physical movement"
+        ],
+        "ground": [
+          "the arrival of the messenger (signaled by his feet) brings joy and relief",
+          "shared idea that the first visible sign of good news (feet) is cherished",
+          "conceptual mapping where part (feet) and their appearance stand for the whole event of good news"
+        ],
+        "posture": [
+          "celebration of the coming announcement of salvation and divine kingship",
+          "joyful, laudatory tone",
+          "prophetic praise of the herald"
+        ],
+        "explanation": "The 'feet' of the herald on the mountains function as a synecdoche/metonymy for the whole messenger and his message; their 'beauty' reflects the welcome character of the news of peace, good, and salvation.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 52:8",
+    "deliberation": "Two main figurative elements: (1) 'eye to eye they will see' is an idiomatic phrase for direct, unmistakable perception, not literally eyeballs touching; (2) 'when YHWH returns to Zion' anthropomorphically portrays God as a king/warrior physically coming back to his city. I treat these as two distinct figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי עַיִן בְּעַיִן יִרְאוּ",
+        "english_text": "For every eye shall behold [lit. 'for eye to eye they will see']",
+        "target": [
+          "clarity and directness of the watchmen’s perception of God’s action",
+          "mode of perception/experience",
+          "cognitive-epistemic"
+        ],
+        "vehicle": [
+          "one eye facing another eye, or eyes seeing straight on",
+          "intense face-to-face visual contact",
+          "sensory perception imagery"
+        ],
+        "ground": [
+          "emphasis on immediacy and certainty of seeing",
+          "shared idea that 'eye to eye' expresses unmediated, clear encounter",
+          "use of vivid visual idiom to stress direct knowledge"
+        ],
+        "posture": [
+          "assurance that the restoration will be plainly evident",
+          "comforting, emphatic tone",
+          "prophetic reassurance"
+        ],
+        "explanation": "The expression 'eye to eye' is an idiom, hyperbolically intensifying the certainty and directness of what will be seen, rather than describing a literal physical arrangement of eyes.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּשׁוּב יְהוָה צִיּוֹן",
+        "english_text": "GOD’s return to Zion.",
+        "target": [
+          "God’s renewed favor and manifest presence in Jerusalem",
+          "divine relational stance toward the city",
+          "theological-presence"
+        ],
+        "vehicle": [
+          "a king or warrior physically returning to his city",
+          "geographical movement and arrival",
+          "royal/military procession"
+        ],
+        "ground": [
+          "restoration of relationship and protection signaled by a ruler’s return",
+          "shared idea that a king’s presence equals security and blessing",
+          "conceptual mapping of divine favor onto spatial return"
+        ],
+        "posture": [
+          "depicts salvation as God’s personal coming back to dwell with his people",
+          "reassuring, triumphant tone",
+          "prophetic promise of return"
+        ],
+        "explanation": "YHWH is personified as a ruler who can physically 'return' to his city; this metaphoric language depicts the restoration of God’s favor and presence with Zion.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 52:9",
+    "deliberation": "The imperative addresses 'ruins of Jerusalem' and commands them to 'break forth' and 'sing.' Ruins cannot literally sing; this is a classic personification (and apostrophe) of the ruined cityscape sharing in the joy of redemption. I treat this as one primary figurative instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פִּצְחוּ רַנְּנוּ יַחְדָּו חׇרְבוֹת יְרוּשָׁלָ͏ִם",
+        "english_text": "Raise a shout together, O ruins of Jerusalem!",
+        "target": [
+          "the devastated city and its community responding to redemption",
+          "physical desolation and the people identified with it",
+          "historical-restorative context"
+        ],
+        "vehicle": [
+          "ruined places acting as persons who can cry out and sing",
+          "granting agency and voice to inanimate ruins",
+          "person-like behavior attributed to landscape"
+        ],
+        "ground": [
+          "the physical ruins embody the city’s suffering and therefore its joy at restoration",
+          "shared idea that the state of the city reflects the fate of its inhabitants",
+          "conceptual mapping of corporate experience onto the built environment"
+        ],
+        "posture": [
+          "dramatic summoning of the desolate city to join in praise",
+          "exultant, poetic tone",
+          "prophetic consolation and celebration"
+        ],
+        "explanation": "The 'ruins of Jerusalem' are personified and directly addressed as if capable of breaking into song, vividly portraying the transformation of desolation into shared joy.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 52:10",
+    "deliberation": "Two clear figures: (1) 'YHWH has bared his holy arm' is an anthropomorphic battle metaphor for God’s power revealed in action; (2) 'all the ends of the earth shall see the salvation of our God' uses 'ends of the earth' as a globalizing idiom/hyperbole, and 'see salvation' as experiential seeing. I treat 'baring the arm' and 'ends of the earth seeing' as two distinct instances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חָשַׂף יְהוָה אֶת־זְר֣וֹעַ קׇדְשׁוֹ",
+        "english_text": "GOD will bare a holy arm",
+        "target": [
+          "God’s powerful, holy intervention on behalf of his people",
+          "divine saving action",
+          "theological-salvific"
+        ],
+        "vehicle": [
+          "a warrior baring his arm for battle",
+          "human bodily preparation for combat or strenuous action",
+          "martial imagery"
+        ],
+        "ground": [
+          "display of strength and readiness to act",
+          "shared idea that a bared arm symbolizes exerted power",
+          "conceptual mapping of divine power to a warrior’s exposed arm"
+        ],
+        "posture": [
+          "portrays salvation as God’s visible, forceful intervention before the nations",
+          "triumphant, revelatory tone",
+          "prophetic theophany imagery"
+        ],
+        "explanation": "God is anthropomorphically depicted as a warrior who rolls up his sleeve and bares his arm; this metaphor signals the public display of His holy power in salvation.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְרָאוּ כׇּל־אַפְסֵי־אָ֔רֶץ אֵ֖ת יְשׁוּעַת אֱלֹהֵינוּ",
+        "english_text": "And the very ends of earth shall see the victory [salvation] of our God.",
+        "target": [
+          "universal recognition of God’s saving work",
+          "scope and audience of the salvation",
+          "theological-cosmic"
+        ],
+        "vehicle": [
+          "the 'ends of the earth' seeing something",
+          "geographical extremities and visual perception",
+          "cosmic/earth imagery"
+        ],
+        "ground": [
+          "emphasizes universality and public visibility of the event",
+          "shared idea that 'ends of the earth' is hyperbolic idiom for all peoples everywhere",
+          "conceptual mapping of experiential knowledge to the act of seeing"
+        ],
+        "posture": [
+          "asserts that God’s salvation will be globally manifest and undeniable",
+          "expansive, proclamatory tone",
+          "prophetic universalism"
+        ],
+        "explanation": "The phrase 'all the ends of the earth' is a hyperbolic idiom for the whole world, and their 'seeing' salvation metaphorically denotes publicly experiencing and recognizing God’s saving victory.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 52:11",
+    "deliberation": "The commands to 'depart,' 'touch no unclean,' 'be pure,' and 'you who bear the vessels of YHWH' can all be read in a literal cultic and physical sense concerning exiles/priestly bearers leaving an unclean place (likely Babylon) with temple vessels. The feminine pronominal 'from her midst' is normal for cities and does not introduce a new, marked personification beyond standard grammar. I therefore do not identify a distinct figurative expression of the requested types.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 52:12",
+    "deliberation": "The contrast with departing 'in haste' or 'in flight' echoes the exodus but is primarily temporal/experiential. The key figurative element is the portrayal of YHWH 'going before you' and 'being your rear guard'—a military escort image applied to God. I treat this as one metaphorical complex of God as protective leader and rear guard.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּֽי־הֹלֵךְ לִפְנֵיכֶם יְהוָה וּמְאַסִּפְכֶם אֱלֹהֵי יִשְׂרָאֵל",
+        "english_text": "For GOD is marching before you, The God of Israel is your rear guard.",
+        "target": [
+          "God’s guidance and protection of the returning exiles",
+          "divine leadership and safeguarding",
+          "theological-exodus motif"
+        ],
+        "vehicle": [
+          "a military column with a commander in front and a rear guard behind",
+          "army movement and protective formation",
+          "martial/travel imagery"
+        ],
+        "ground": [
+          "comprehensive protection and ordered movement provided by a leader and rear guard",
+          "shared idea that having forces before and behind ensures safety and direction",
+          "conceptual mapping of God’s providence to a military escort"
+        ],
+        "posture": [
+          "assures the exiles of safe, dignified return under divine escort",
+          "comforting, confidence-building tone",
+          "prophetic re-application of exodus imagery"
+        ],
+        "explanation": "YHWH is personified and metaphorically depicted as both the one who marches in front of the people and their rear guard, evoking a military escort that leads and protects from behind.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Isaiah 52:13",
+    "deliberation": "The servant is said to 'be exalted and raised and very high.' These are height terms used metaphorically for status and honor rather than literal physical elevation. 'My servant' itself is a title but not a figure in this verse. I treat the triple height language as one composite exaltation metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יָר֧וּם וְנִשָּׂ֛א וְגָבַ֖הּ מְאֹֽד",
+        "english_text": "Be exalted and raised to great heights [lit. 'he shall be high and lifted up and very high']",
+        "target": [
+          "the servant’s future honor and success",
+          "status and reputation of the servant",
+          "theological-salvific agent"
+        ],
+        "vehicle": [
+          "being physically high, lifted up, and very elevated",
+          "vertical elevation of a person",
+          "spatial height imagery"
+        ],
+        "ground": [
+          "greater height signifies greater honor and prominence",
+          "shared idea that up/down language encodes status hierarchies",
+          "conceptual mapping of social-spiritual exaltation to physical height"
+        ],
+        "posture": [
+          "announces dramatic, climactic vindication of the servant",
+          "exultant, promissory tone",
+          "prophetic exaltation formula"
+        ],
+        "explanation": "The cluster of verbs 'high, lifted up, very high' uses physical height metaphorically and idiomatically to express supreme exaltation and honor of the servant.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Isaiah 52:14",
+    "deliberation": "The verse describes the servant’s appearance as 'marred from a man' and his form 'from the sons of man.' Whether or not one takes the disfigurement as literal, the phrasing pushes toward hyperbolic expression ('beyond human semblance' in many translations). I treat the intensity of 'so marred… unlike that of a person' as a rhetorical hyperbole emphasizing shocking deformity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֵּן־מִשְׁחַ֥ת מֵאִ֖ישׁ מַרְאֵ֑הוּ וְתֹאֲר֖וֹ מִבְּנֵ֥י אָדָֽם",
+        "english_text": "So marred was his appearance, unlike that of a person, His form, beyond human semblance.",
+        "target": [
+          "the servant’s extreme suffering and degradation as seen in his appearance",
+          "degree of physical/visible disfigurement",
+          "suffering-servant motif"
+        ],
+        "vehicle": [
+          "an appearance so ruined it scarcely seems human",
+          "comparison to and contrast with normal human form",
+          "visual extremity imagery"
+        ],
+        "ground": [
+          "emphasis on shocking, almost unimaginable deformity",
+          "shared idea that describing someone as 'beyond human' is rhetorical overstatement",
+          "use of exaggerated comparison to stress severity"
+        ],
+        "posture": [
+          "conveys horror and astonishment at the servant’s suffering",
+          "somber, startling tone",
+          "prophetic pathos"
+        ],
+        "explanation": "The description that his appearance and form are marred 'from a man/from the sons of men' is an intensified way of saying he looks hardly human, a hyperbolic expression underscoring the extremity of his suffering.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Isaiah 52:15",
+    "deliberation": "I considered the debated verb יַזֶּה ('sprinkle' vs. 'startle'). In either case the line is figurative: if 'sprinkle,' it is cultic purification imagery; if 'startle,' it vividly portrays nations being shocked. Also present are (1) 'kings shall shut their mouths,' an idiom for being rendered speechless in awe, and (2) 'they will see what was not told them, and understand what they had not heard,' which uses sensory verbs for cognitive/spiritual perception. I treat these as three distinct figurative instances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כֵּ֤ן יַזֶּה֙ גּוֹיִ֣ם רַבִּ֔ים",
+        "english_text": "Just so he shall sprinkle/startle many nations.",
+        "target": [
+          "the impact of the servant’s work on many nations",
+          "transformation or profound effect on the nations",
+          "universal-salvific scope"
+        ],
+        "vehicle": [
+          "ritual sprinkling with sacrificial blood/water (or intense startling)",
+          "cultic purification act or sudden shock response",
+          "priestly/ritual or emotional imagery"
+        ],
+        "ground": [
+          "sprinkling cleanses and consecrates; startling profoundly affects perception",
+          "shared idea that a single act can powerfully change the status or awareness of many",
+          "conceptual mapping of the servant’s mission onto purification or astonishment"
+        ],
+        "posture": [
+          "presents the servant’s suffering/exaltation as having priestly or transformative world effect",
+          "solemn yet far-reaching tone",
+          "prophetic vision of international impact"
+        ],
+        "explanation": "The verb יַזֶּה evokes cultic sprinkling (metaphorically purifying many nations) or intense startling; in either reading, it figuratively portrays the servant’s work as exerting a profound, quasi-ritual effect upon the nations.",
+        "confidence": 0.85
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָלָיו יִקְפְּצ֥וּ מְלָכִ֖ים פִּיהֶ֑ם",
+        "english_text": "Kings shall be silenced [lit. 'shall shut their mouths'] because of him.",
+        "target": [
+          "the kings’ reaction of awed, stunned silence to the servant",
+          "emotional and rhetorical response of rulers",
+          "political response"
+        ],
+        "vehicle": [
+          "literally closing one’s mouth tightly",
+          "physical act of shutting the mouth",
+          "bodily gesture imagery"
+        ],
+        "ground": [
+          "closed mouth signifies being unable or unwilling to speak due to awe or shock",
+          "shared idea that 'shutting the mouth' is idiomatic for silence and submission",
+          "conceptual mapping of inner astonishment to external gesture"
+        ],
+        "posture": [
+          "depicts powerful rulers humbled and rendered speechless before the servant’s revelation",
+          "reversal, humbling tone",
+          "prophetic inversion of worldly power"
+        ],
+        "explanation": "The phrase 'kings shall shut their mouths' idiomatically depicts rulers being struck dumb with awe or shock, a metaphor for total silence and humbled recognition.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֠י אֲשֶׁ֨ר לֹֽא־סֻפַּ֤ר לָהֶם֙ רָא֔וּ וַאֲשֶׁ֥ר לֹא־שָׁמְע֖וּ הִתְבּוֹנָֽנוּ",
+        "english_text": "For they shall see what has not been told them, Shall behold what they never have heard.",
+        "target": [
+          "the nations’ and kings’ new understanding of God’s work through the servant",
+          "cognitive/spiritual perception of previously unknown truth",
+          "theological-revelatory experience"
+        ],
+        "vehicle": [
+          "seeing what was not told and hearing/understanding what was not heard before",
+          "acts of physical sight and hearing functioning as deep comprehension",
+          "sensory perception imagery"
+        ],
+        "ground": [
+          "to 'see' and 'hear' something is to grasp and internalize it",
+          "shared idea that sensory verbs are often used for understanding and revelation",
+          "conceptual mapping of cognition onto sense-perception"
+        ],
+        "posture": [
+          "emphasizes the unexpected, revelatory nature of the servant’s impact",
+          "astonished, revelatory tone",
+          "prophetic unveiling of mystery"
+        ],
+        "explanation": "The verbs of seeing and hearing are used metaphorically for coming to understand and reflect upon realities that had not previously been reported to these nations and kings.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]
+```

@@ -1,0 +1,741 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 59:1",
+    "deliberation": "Considered whether 'hand' and 'ear' of YHWH are literal or anthropomorphic metaphors. In prophetic style these are standard bodily metaphors for power and attentiveness. Two parallel but distinct images: shortened hand (inability to save) and heavy ear (inability to hear).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "hebrew_text": "לֹא־קָצְרָה יַד־יְהוָה מֵהוֹשִׁיעַ",
+        "english_text": "GOD’s arm is not too short to save",
+        "target": ["YHWH’s ability to save", "divine power", "theology"],
+        "vehicle": ["a shortened arm/hand that cannot reach", "impaired human limb", "human body/strength"],
+        "ground": ["capacity to reach and rescue", "effectiveness versus limitation", "power and control"],
+        "posture": ["asserting that God is not limited", "reassuring stance", "polemic against doubting God’s power"],
+        "explanation": "God’s saving power is described in terms of a human arm that might be too short to reach; a bodily image (hand) stands metonymically for effective power.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "hebrew_text": "וְלֹא־כָבְדָה אׇזְנוֹ מִשְּׁמֹעַ",
+        "english_text": "Or ear too dull to hear",
+        "target": ["YHWH’s attentiveness to prayer", "divine responsiveness", "theology"],
+        "vehicle": ["a heavy/dull ear that cannot hear", "impaired sense organ", "human body/senses"],
+        "ground": ["ability or inability to perceive pleas", "alertness versus unresponsiveness", "communication/reception"],
+        "posture": ["denying that God is unresponsive", "corrective stance", "defense of divine attentiveness"],
+        "explanation": "God’s responsiveness is depicted as if he had an ‘ear’ that might be too heavy to hear, a bodily organ standing for the act of listening.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 59:2",
+    "deliberation": "Looked for metaphorical description of the effect of sin. Found (1) sins as a separating barrier between people and God, and (2) the idiomatic metaphor of God’s face being hidden, for withdrawal of favor and refusal to hear.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֲוֹנֹתֵיכֶם הָיוּ מַבְדִּלִים בֵּינֵכֶם לְבֵין אֱלֹהֵיכֶם",
+        "english_text": "your iniquities have been a barrier between you and your God",
+        "target": ["The relational rupture caused by sin", "spiritual/moral separation", "covenant relationship"],
+        "vehicle": ["a barrier or dividing wall", "physical obstruction", "spatial relations/building"],
+        "ground": ["preventing access and nearness", "blocked interaction", "distance/exclusion"],
+        "posture": ["warning about the relational cost of sin", "didactic stance", "moral exhortation"],
+        "explanation": "The verse depicts iniquities as if they were a physical barrier standing between the people and God, conveying spiritual distance through spatial imagery.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְחַטֹּאותֵיכֶם הִסְתִּירוּ פָנִים מִכֶּם מִשְּׁמֹעַ",
+        "english_text": "Your sins have turned the divine face away in refusal to hear you",
+        "target": ["God’s withdrawal of favor and attention", "divine response to sin", "theology/judgment"],
+        "vehicle": ["a face being hidden or turned away", "facial movement/visibility", "human body/gesture"],
+        "ground": ["turning one’s face away signals refusal and displeasure", "visibility versus concealment", "relational openness/closedness"],
+        "posture": ["portrays God as justly refusing to heed", "judicial stance", "covenant lawsuit rhetoric"],
+        "explanation": "The idiom of God ‘hiding his face’ uses facial orientation as a metonym for favor and attention; sins cause God to avert his ‘face,’ i.e., to refuse to hear.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 59:3",
+    "deliberation": "Examined whether the blood and body parts are literal or figurative. The verse uses hands, fingers, lips, and tongue to stand for the people’s actions and speech, a synecdoche/metonymy rather than simple literal anatomy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כַפֵּיכֶם נְגֹאֲלוּ בַדָּם וְאֶצְבְּעוֹתֵיכֶם בֶּעָוֹן שִׂפְתֹתֵיכֶם דִּבְּרוּ־שֶׁקֶר לְשׁוֹנְכֶם עַוְלָה תֶהְגֶּה",
+        "english_text": "your hands are defiled with crime and your fingers with iniquity; your lips speak falsehood, your tongue utters treachery",
+        "target": ["The whole person’s violent and deceitful behavior", "moral agency", "ethical conduct"],
+        "vehicle": ["hands, fingers, lips, tongue stained or active in wrongdoing", "body parts as agents", "human anatomy"],
+        "ground": ["bodily members are the instruments of action and speech", "part representing whole agent", "expression of inward character through outward members"],
+        "posture": ["indicting the people comprehensively", "accusatory stance", "prophetic lawsuit"],
+        "explanation": "Hands/fingers/lips/tongue function as synecdoche and metonymy for the people’s violent deeds and deceitful speech, portraying guilt as if inscribed on their very members.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 59:4",
+    "deliberation": "Looked for non-literal expressions. The core figurative element is the pregnancy/birth metaphor: conceiving mischief and giving birth to iniquity, describing the origin and outcome of evil as gestation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָרוֹ עָמָל וְהוֹלֵיד אָוֶן",
+        "english_text": "Conceiving wrong and begetting evil",
+        "target": ["The planning and execution of wicked schemes", "moral process", "ethical conduct"],
+        "vehicle": ["conception and birth of a child", "reproductive process", "family/biology"],
+        "ground": ["hidden beginning leading to inevitable, visible result", "development from small start to full outcome", "origin–offspring relationship"],
+        "posture": ["emphasizing how evil is intentionally nurtured", "critical stance", "moral exposure"],
+        "explanation": "Plotting evil is portrayed as conceiving and giving birth, suggesting deliberate nurturing of wrongdoing that inevitably issues in manifest iniquity.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 59:5",
+    "deliberation": "Verse piles up vivid images. Distinct metaphors: (1) hatching adder’s eggs for bringing forth deadly schemes; (2) weaving spider webs for spinning fragile yet harmful intrigues. Both depict the outcome and nature of their plans.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בֵּיצֵי צִפְעוֹנִי בִּקֵּעוּ ... הָאֹכֵל מִבֵּיצֵיהֶם יָמוּת וְהַזּוּרֶה תִּבָּקַע אֶפְעֶה",
+        "english_text": "They hatch adder’s eggs ... Whoever eats of those eggs will die, and if one is crushed, it hatches out a viper",
+        "target": ["Their wicked plans and their effects on others", "harmful schemes", "social injustice/violence"],
+        "vehicle": ["adder’s eggs that kill when eaten and become vipers when crushed", "venomous offspring", "dangerous animals/nature"],
+        "ground": ["their schemes are intrinsically deadly, whatever one does with them", "hidden danger in seemingly small things", "destructive consequences"],
+        "posture": ["denouncing the lethal nature of their plotting", "alarm-raising stance", "prophetic warning"],
+        "explanation": "The people’s schemes are likened to snake eggs whose every use results in death; the metaphor stresses that their plans are inherently and unavoidably destructive.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְקוּרֵי עַכָּבִישׁ יֶאֱרֹגוּ",
+        "english_text": "And weave spider webs",
+        "target": ["Their attempts to build security or schemes of deceit", "futile projects/plots", "moral and social behavior"],
+        "vehicle": ["spider webs being woven", "fragile entangling fabric", "small creatures and webs"],
+        "ground": ["intricate yet fragile and useless as real covering", "ability to ensnare but not protect", "appearance versus substance"],
+        "posture": ["exposing the futility and deceitfulness of their efforts", "critical stance", "moral satire of their schemes"],
+        "explanation": "Their works are compared to spider webs, intricate but fragile, highlighting the deceptive and ultimately useless character of their efforts.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 59:6",
+    "deliberation": "Continues the web imagery. Distinct figures: (1) webs as garments that cannot clothe—metaphor for futile attempts to cover themselves with their deeds; (2) ‘violence is in their hands’ uses ‘hands’ metonymically for their concrete violent actions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "קֻורֵיהֶם לֹא־יִהְיוּ לְבֶגֶד וְלֹא יִתְכַּסּוּ בְּמַעֲשֵׂיהֶם",
+        "english_text": "Their webs will not serve as a garment, what they make cannot serve as clothing",
+        "target": ["Their supposed moral or social ‘covering’ from their works", "self-justification and security", "religious/moral standing"],
+        "vehicle": ["garments or clothing that cover the body", "protective covering", "daily material culture"],
+        "ground": ["just as webs cannot function as real clothing, their deeds cannot provide real protection or justification", "inadequate covering", "false sense of security"],
+        "posture": ["undermining their confidence in their own works", "critical stance", "prophetic exposure of hypocrisy"],
+        "explanation": "Their deeds are implicitly likened to spider webs that cannot become garments, stressing that their supposed protections or merits are flimsy and ineffective.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּפֹעַל חָמָס בְּכַפֵּיהֶם",
+        "english_text": "Their hands commit lawless acts",
+        "target": ["Their concrete acts of violence", "wrongful behavior", "ethical conduct"],
+        "vehicle": ["hands as the locus of action", "body part as agent", "human anatomy"],
+        "ground": ["hands perform deeds and so can represent a person’s actions", "part-for-whole representation", "instrumentality"],
+        "posture": ["highlighting the tangible, physical nature of their violence", "condemnatory stance", "moral accusation"],
+        "explanation": "‘Hands’ functions as a metonymy/synecdoche for the people themselves in the act of doing violence, making their guilt vivid and concrete.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 59:7",
+    "deliberation": "Searched for bodily or path imagery. Found (1) ‘feet run to evil’ as a body-part-for-agent image depicting eagerness to do wrong, and (2) ‘destruction and injury are in their roads’—paths as metaphor for the course of life saturated with violence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "רַגְלֵיהֶם לָרַע יָרֻצוּ וִימַהֲרוּ לִשְׁפֹּךְ דָּם נָקִי",
+        "english_text": "Their feet run after evil, they hasten to shed the blood of the innocent",
+        "target": ["Their eagerness and swift readiness to do evil", "moral disposition and action", "ethical behavior"],
+        "vehicle": ["feet running swiftly", "rapid bodily movement", "human locomotion"],
+        "ground": ["speed of feet expresses eagerness and intent", "movement toward a goal", "directed energy"],
+        "posture": ["emphasizing the zeal with which they pursue wrongdoing", "condemnatory stance", "intensifying their guilt"],
+        "explanation": "Feet are a metonym for the whole person’s movement; describing them as running to evil depicts their active, eager pursuit of wrongdoing.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שֹׁד וָשֶׁבֶר בִּמְסִלּוֹתָם",
+        "english_text": "Destructiveness and injury are on their roads",
+        "target": ["The habitual course of their life and society", "patterns of behavior", "collective conduct"],
+        "vehicle": ["roads/paths that carry certain conditions", "travel routes", "geographical infrastructure"],
+        "ground": ["a road represents a way of life or habitual course; these are filled with ruin", "environment saturated with danger", "trajectory filled with consequences"],
+        "posture": ["depicting their whole way of life as destructive", "critical stance", "social diagnosis"],
+        "explanation": "Their ‘roads’ metaphorically denote their ways of living; those ways are characterized by ruin and destruction that accompany them wherever they go.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 59:8",
+    "deliberation": "The verse is dominated by ‘way/path’ language for conduct. Considered whether to break into many; decided it is one extended path metaphor: moral integrity and justice as a way or path, which they make crooked and in which no one finds peace.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דֶּרֶךְ שָׁלוֹם לֹא יָדָעוּ וְאֵין מִשְׁפָּט בְּמַעְגְּלוֹתָם נְתִיבוֹתֵיהֶם עִקְּשׁוּ לָהֶם כֹּל דֹּרֵךְ בָּהּ לֹא יָדַע שָׁלוֹם",
+        "english_text": "They do not care for the way of integrity, there is no justice on their paths. They make their courses crooked, no one who walks in them cares for integrity.",
+        "target": ["Their moral conduct and social practice", "behavioral patterns", "ethical life"],
+        "vehicle": ["way, paths, courses that can be straight or crooked and walked in", "routes of travel", "geographical movement"],
+        "ground": ["conduct is like traveling along a path, which can be straight/peaceful or crooked/unjust", "direction and destination imagery", "habitual patterns as routes"],
+        "posture": ["condemning their chosen ‘route’ in life as hostile to peace", "admonitory stance", "wisdom-style contrast of paths"],
+        "explanation": "Abstract qualities (peace, justice) and behavior are cast as a ‘way’ or ‘paths’ that one walks, a standard metaphor for patterns of life in Hebrew thought.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 59:9",
+    "deliberation": "Detected two main figurative clusters: (1) justice and righteousness portrayed with spatial language (far, not reaching) that borders on personification; (2) the light/darkness imagery for salvation versus distress.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־כֵּן רָחַק מִשְׁפָּט מִמֶּנוּ וְלֹא תַשִּׂיגֵנוּ צְדָקָה",
+        "english_text": "That is why redress is far from us, and vindication does not reach us",
+        "target": ["The experience of justice and vindication", "judicial/moral state", "covenant blessings"],
+        "vehicle": ["things or persons that are spatially far away and do not reach someone", "distance in space", "movement/proximity"],
+        "ground": ["distance and failure to reach signify inaccessibility and absence", "remoteness from benefit", "lack of contact"],
+        "posture": ["lamenting the absence of justice", "complaint stance", "acknowledging consequences of sin"],
+        "explanation": "Justice and righteousness are spoken of as if they were entities that could be far away or fail to catch up, lightly personifying them via spatial and pursuit language.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נְקַוֶּה לָאוֹר וְהִנֵּה־חֹשֶׁךְ לִנְגֹהוֹת בָּאֲפֵלוֹת נְהַלֵּךְ",
+        "english_text": "We hope for light, and lo! there is darkness; for a gleam, and we must walk in gloom",
+        "target": ["Expectation of deliverance and the actual condition of oppression/confusion", "spiritual and social state", "salvation vs. judgment"],
+        "vehicle": ["light, brightness, darkness, gloom, and walking in them", "conditions of illumination", "natural environment/vision"],
+        "ground": ["light suggests clarity, joy, and salvation; darkness suggests confusion, danger, and distress", "ability/inability to see and move safely", "hope vs. disappointment"],
+        "posture": ["expressing deep lament over the reversal of expectations", "mournful stance", "confessional realism"],
+        "explanation": "The terms ‘light’ and ‘darkness’ are metaphors for hoped-for deliverance versus actual calamity, and ‘walking in gloom’ depicts living under ongoing affliction.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 59:10",
+    "deliberation": "This verse is a chain of similes: (1) groping like the blind/without eyes; (2) stumbling at noon as if at twilight; (3) being like the dead among the robust. Each comparison has a distinct image and ground.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נְגַשְׁשָׁה כַּעִוְרִים קִיר וּכְאֵין עֵינַיִם נְגַשֵּׁשָׁה",
+        "english_text": "We grope, like the blind along a wall; like those without eyes we grope",
+        "target": ["Their moral and spiritual confusion and helplessness", "inner state and behavior", "covenant community experience"],
+        "vehicle": ["blind people groping along a wall, those without eyes seeking their way", "sensory disability scenario", "human impairment"],
+        "ground": ["inability to see one’s way and need to feel along speaks to disorientation and vulnerability", "lack of guidance", "dependence on touch alone"],
+        "posture": ["confessing their incapacitated state", "lamenting stance", "acknowledgment of judgment’s effects"],
+        "explanation": "Their condition under judgment is likened to blind persons feeling their way along a wall, capturing extreme disorientation and vulnerability.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כָּשַׁלְנוּ בַצׇּהֳרַיִם כַּנֶּשֶׁף",
+        "english_text": "We stumble at noon, as if in darkness",
+        "target": ["Their inability to function even when conditions should favor them", "practical and moral failure", "national situation"],
+        "vehicle": ["people stumbling at noon as if it were dusk/twilight", "misstep in full daylight", "time-of-day contrast"],
+        "ground": ["stumbling in broad daylight suggests abnormal, intensified blindness or confusion", "expectation reversal", "incongruity between environment and performance"],
+        "posture": ["heightening the sense of abnormal calamity", "poetic exaggeration stance", "intensified lament"],
+        "explanation": "They are compared to people who stumble at mid-day as though it were dark, a simile emphasizing how deep their confusion is despite ‘daylight’ conditions.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בָּאַשְׁמַנִּים כַּמֵּתִים",
+        "english_text": "Among the sturdy, we are like the dead",
+        "target": ["Their weakness and near-ruin compared to others’ apparent vigor", "relative condition", "community strength"],
+        "vehicle": ["dead people among the fat/sturdy ones", "corpse among the robust", "life vs. death contrast"],
+        "ground": ["deadness signifies complete incapacity and loss, sharply contrasted with robust health", "powerlessness vs. vigor", "social marginalization"],
+        "posture": ["underscoring the extremity of their plight", "self-abasing stance", "dramatic lament"],
+        "explanation": "They portray themselves as like dead men in the presence of the ‘fat’ or sturdy, highlighting their utter powerlessness and loss.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 59:11",
+    "deliberation": "Checked the animal imagery. Found two explicit similes comparing their sounds of grief to bear growls and dove moans—distinct animal-voice images conveying the character of their lament.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נֶהֱמֶה כַדֻּבִּים כֻּלָּנוּ",
+        "english_text": "We all growl like bears",
+        "target": ["Their loud, anguished complaining", "expression of distress", "communal lament"],
+        "vehicle": ["the growling of bears", "aggressive animal vocalization", "wild animals"],
+        "ground": ["bear growls are deep, harsh, and unsettling, mirroring intense human anguish", "unrestrained sound", "threatening overtones"],
+        "posture": ["dramatizing their emotional turmoil", "expressive stance", "heightened lament"],
+        "explanation": "Their cries under judgment are likened to the growls of bears, suggesting raw, harsh expressions of pain and frustration.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַיּוֹנִים הָגֹה נֶהְגֶּה",
+        "english_text": "And moan like doves",
+        "target": ["Their softer, plaintive sorrow", "emotional state", "lamentation"],
+        "vehicle": ["the cooing or moaning of doves", "gentle bird vocalization", "birds"],
+        "ground": ["dove sounds evoke plaintive, mournful tones", "gentle yet persistent lament", "sad, repetitive calls"],
+        "posture": ["showing the pathos and helplessness of their grief", "sympathetic yet honest stance", "poetic coloring"],
+        "explanation": "Their lament is also compared to the moaning of doves, emphasizing the plaintive and mournful quality of their cries.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 59:12",
+    "deliberation": "Looked especially at courtroom imagery. The key figure is personification: their guilt ‘testifies’ against them as though it were a legal witness in court.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְחַטֹּאותֵינוּ עָנְתָה בָּנוּ",
+        "english_text": "Our guilt testifies against us",
+        "target": ["The evidential force of their sins before God", "moral status in judgment", "covenant lawsuit setting"],
+        "vehicle": ["a witness speaking or answering in court", "legal testimony", "judicial process"],
+        "ground": ["sins themselves function as undeniable evidence, as if they spoke against the sinner", "self-incriminating facts", "voice of deeds"],
+        "posture": ["acknowledging the inescapable proof of their guilt", "confessional stance", "acceptance of judgment’s justice"],
+        "explanation": "Their sins are personified as a witness that ‘answers’ or testifies against them, casting their situation in forensic/judicial terms.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Isaiah 59:13",
+    "deliberation": "Assessed idiomatic and spatial language. The notable figure is ‘turning away from following our God’—a spatial/path metaphor for apostasy, using physical movement as image for spiritual defection.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָסוֹג מֵאַחַר אֱלֹהֵינוּ",
+        "english_text": "And turning away from our God",
+        "target": ["Spiritual and covenantal unfaithfulness", "religious allegiance", "relationship with God"],
+        "vehicle": ["stepping back or withdrawing from following someone", "bodily movement on a path", "spatial orientation"],
+        "ground": ["moving away physically pictures desertion and abandonment", "ceasing to follow a leader", "loss of proximity and guidance"],
+        "posture": ["branding their behavior as deliberate desertion", "accusatory stance", "covenant-breaking imagery"],
+        "explanation": "Apostasy is described as ‘withdrawing from after our God,’ using the common idiom of following/turning back to represent loyalty or its violation.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Isaiah 59:14",
+    "deliberation": "Found multiple personifications: (1) justice and righteousness moving/standing at a distance; (2) truth stumbling in the street and uprightness barred from entry. These abstract qualities act as persons in public space.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהֻסַּג אָחוֹר מִשְׁפָּט וּצְדָקָה מֵרָחוֹק תַּעֲמֹד",
+        "english_text": "And so redress is turned back and vindication stays afar",
+        "target": ["The presence and operation of just judgment in society", "social-legal reality", "public justice"],
+        "vehicle": ["a person being pushed back and another standing far away", "bodily movement/position", "human spatial behavior"],
+        "ground": ["being driven back or standing afar signifies exclusion and non-participation", "absence from the scene", "social marginalization"],
+        "posture": ["lamenting the banishment of justice", "critical stance", "prophetic social critique"],
+        "explanation": "Justice and righteousness are personified as if they were people driven away and forced to stand far off, depicting their exclusion from public life.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־כָשְׁלָה בָרְחוֹב אֱמֶת וּנְכֹחָה לֹא־תוּכַל לָבוֹא",
+        "english_text": "Because honesty stumbles in the public square and uprightness cannot enter",
+        "target": ["Truthfulness and uprightness in the communal sphere", "ethical norms", "public discourse"],
+        "vehicle": ["a person stumbling in the street and another barred from entry", "pedestrian mishap and gate exclusion", "urban movement/social access"],
+        "ground": ["stumbling denotes weakness and failure; inability to enter implies being shut out", "lack of footing and admission", "obstruction in public life"],
+        "posture": ["depicting public space as hostile to truth", "indignant stance", "social lament"],
+        "explanation": "Truth is pictured as a person stumbling in the street, and uprightness as one who cannot gain entry, dramatizing how these virtues are excluded from public life.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Isaiah 59:15",
+    "deliberation": "Checked for figurative expressions. The clause about one turning from evil becoming ‘prey’ uses hunting/predation imagery. Other elements are fairly literal descriptions of God’s seeing and displeasure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְסָר מֵרָע מִשְׁתּוֹלֵל",
+        "english_text": "Whoever turns away from evil is despoiled / becomes prey",
+        "target": ["The treatment of those who reject evil", "fate of the righteous", "social dynamics"],
+        "vehicle": ["prey that is despoiled or plundered", "hunted victim", "predation/violence"],
+        "ground": ["being prey suggests vulnerability to attack and exploitation", "one-sided victimization", "power imbalance"],
+        "posture": ["indicting a society where righteousness is punished", "shocked stance", "moral protest"],
+        "explanation": "The one who turns from evil is depicted as prey that is attacked or plundered, conveying how perverse the social order has become.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Isaiah 59:16",
+    "deliberation": "Distinguished two main anthropomorphic/metaphorical clauses: (1) God’s ‘arm’ bringing salvation; (2) God’s ‘righteousness’ supporting him, like a prop. Both depict divine attributes as bodily or structural supports.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתּוֹשַׁע־לוֹ זְרֹעוֹ",
+        "english_text": "Then God’s own arm did win triumph",
+        "target": ["God’s effective intervention to save", "divine agency", "salvation history"],
+        "vehicle": ["an arm accomplishing deliverance", "strong human limb", "body/strength imagery"],
+        "ground": ["an arm performs powerful deeds and thus represents might", "instrument of action", "force and capability"],
+        "posture": ["highlighting God as sole effective savior", "assertive stance", "theological emphasis on divine initiative"],
+        "explanation": "God’s ‘arm’ stands metonymically and metaphorically for his powerful, saving action on behalf of his people.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְצִדְקָתוֹ הִיא סְמָכָתְהוּ",
+        "english_text": "The victorious right hand gave support / his righteousness, it supported him",
+        "target": ["The inner basis and stability of God’s saving action", "divine attribute", "justice/faithfulness of God"],
+        "vehicle": ["a support or prop that holds someone up", "structural/bodily support", "architecture/body mechanics"],
+        "ground": ["a support keeps one standing firm; righteousness functions as the inner strength of God’s acts", "stability and reliability", "foundation and backbone"],
+        "posture": ["portraying God’s righteousness as the sustaining force of salvation", "explanatory stance", "theological grounding of deliverance"],
+        "explanation": "God’s righteousness is personified as a support that upholds him, a metaphor for his just character undergirding his saving work.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Isaiah 59:17",
+    "deliberation": "The whole verse is a unitary armor/clothing metaphor: righteousness, salvation, vengeance, and zeal are cast as pieces of armor or garments that God dons. Treated as one extended metaphor rather than many separate micro-instances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיִּלְבַּשׁ צְדָקָה כַּשִּׁרְיָן וְכֹובַע יְשׁוּעָה בְּרֹאשׁוֹ וַיִּלְבַּשׁ בִּגְדֵי נָקָם תִּלְבֹּשֶׁת וַיַּעַט כַּמְעִיל קִנְאָה",
+        "english_text": "[God] donned victory like a coat of mail, wearing a helmet of triumph—dressing in garments of retribution, wrapped in zeal like a robe.",
+        "target": ["God’s attributes and actions in judgment and salvation", "divine character in warfare", "theophanic intervention"],
+        "vehicle": ["breastplate, helmet, garments, robe worn by a warrior", "armor and clothing", "ancient warfare/apparel"],
+        "ground": ["armor equips for battle and expresses purpose; virtues like righteousness and zeal similarly equip God for judgment and deliverance", "protective and offensive readiness", "visible expression of inner intent"],
+        "posture": ["depicting God as a divine warrior armed with his own moral qualities", "majestic and awe-inspiring stance", "theological poeticization of judgment"],
+        "explanation": "Righteousness, salvation, vengeance, and zeal are metaphorically portrayed as pieces of armor and clothing that YHWH puts on, casting him as a divine warrior whose ‘gear’ is his moral character.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Isaiah 59:18",
+    "deliberation": "Language of repayment is largely literal judicial metaphor extended from legal to divine context; the main implicit figure is geographical metonymy: ‘coastlands/islands’ for the distant nations that will receive recompense.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לָאִיִּים גְּמוּל יְשַׁלֵּם",
+        "english_text": "Requital to the distant lands (coastlands)",
+        "target": ["Distant peoples and nations opposed to God", "collective human groups", "political entities"],
+        "vehicle": ["‘islands’ or ‘coastlands’ as places", "geographical regions", "landscape/territory"],
+        "ground": ["landed regions stand for their inhabitants or political communities", "place-for-people association", "metonymic shorthand for nations"],
+        "posture": ["asserting that even distant peoples will not escape judgment", "universalizing stance", "geopolitical scope of divine justice"],
+        "explanation": "‘Coastlands/islands’ functions as a metonymy for the far-off nations and their inhabitants, who will also receive divine recompense.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Isaiah 59:19",
+    "deliberation": "Detected (1) a merism with west/east (‘from the west’ / ‘from the rising of the sun’) for universal scope, and (2) a simile/metaphor of God’s coming like a flood/river driven by YHWH’s wind, expressing overwhelming intervention.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְיִרְאוּ מִמַּעֲרָב ... וּמִמִּזְרַח־שֶׁמֶשׁ",
+        "english_text": "From the west, they shall revere GOD’s name, and from the east, the divine Presence",
+        "target": ["All peoples across the world", "humanity at large", "international recognition of God"],
+        "vehicle": ["west and east / setting and rising of the sun", "opposite compass points and daily solar path", "cosmic geography"],
+        "ground": ["mentioning opposite extremes implies the whole in between (merism)", "sun’s path from east to west covers all directions", "totality through polar terms"],
+        "posture": ["asserting universal acknowledgment of YHWH", "expansive stance", "vision of worldwide reverence"],
+        "explanation": "‘From the west’ and ‘from the rising of the sun’ form a merism, a rhetorical figure in which two extremes stand for the totality of the earth.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי־יָבוֹא כַנָּהָר צָר רוּחַ יְהוָה נֹסְסָה בוֹ",
+        "english_text": "For [God] shall come like a hemmed-in stream that the wind of the ETERNAL drives on",
+        "target": ["God’s powerful, irresistible intervention in judgment or salvation", "divine action", "theophany/judgment"],
+        "vehicle": ["a constrained river/flood driven forward by a strong wind", "overwhelming natural force", "water and wind dynamics"],
+        "ground": ["a driven flood is unstoppable and sweeps all before it, mirroring the irresistible force of God’s coming", "pressure and surge", "overrunning opposition"],
+        "posture": ["portraying God’s intervention as overwhelming and unstoppable", "awe-inspiring stance", "warning and reassurance simultaneously"],
+        "explanation": "YHWH’s coming is likened to a river in constriction swept along by a divine wind, a simile-metaphor emphasizing the unstoppable, forceful character of his action.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Isaiah 59:20",
+    "deliberation": "Examined whether ‘redeemer’ is purely metaphorical or covenant-legal language. The clearer figures here are geographical metonymies: ‘Zion’ and ‘Jacob’ standing for the people who inhabit/descend from them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּבָא לְצִיּוֹן גּוֹאֵל וּלְשָׁבֵי פֶשַׁע בְּיַעֲקֹב",
+        "english_text": "[God] shall come as redeemer to Zion, to those in Jacob who turn back from sin",
+        "target": ["The people of Jerusalem and Israel who repent", "covenant community", "ethnic-religious group"],
+        "vehicle": ["‘Zion’ (the hill/city) and ‘Jacob’ (the patriarch)", "place-name and ancestor-name", "geography/ancestry"],
+        "ground": ["the city/ancestor stands for the people associated with them", "place-for-inhabitants and forefather-for-descendants", "identity linkage"],
+        "posture": ["emphasizing that the promised redemption is for the covenant people who repent", "hopeful yet conditional stance", "covenant particularism"],
+        "explanation": "‘Zion’ and ‘Jacob’ function metonymically for their inhabitants/descendants—the people of Jerusalem and Israel who turn from transgression.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Isaiah 59:21",
+    "deliberation": "Looked at Spirit ‘upon’ and words ‘in your mouth’. Treated especially ‘I have placed in your mouth’ as an idiomatic metaphor: God’s words as if physically put into the mouth, with ‘mouth’ a synecdoche for speech and proclamation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דְּבָרַי אֲשֶׁר־שַׂמְתִּי בְּפִיךָ ... לֹא־יָמוּשׁוּ מִפִּיךָ",
+        "english_text": "the words that I have placed in your mouth shall not be absent from your mouth",
+        "target": ["The prophet’s and community’s ongoing proclamation and internalization of God’s message", "speech and memory", "prophetic vocation"],
+        "vehicle": ["putting something into a mouth and it not departing from the mouth", "feeding/placing objects in the mouth", "bodily ingestion/speech organ"],
+        "ground": ["placing in the mouth symbolizes giving and authorizing speech; non-departure signifies continual presence and use", "source-controlled utterance", "internalization as if ingested"],
+        "posture": ["assuring the permanence of God’s word in the community", "promissory stance", "covenant guarantee"],
+        "explanation": "God ‘putting’ words in the mouth is an idiomatic metaphor for endowing and commissioning speech, with ‘mouth’ metonymically representing speech itself.",
+        "confidence": 0.95
+      }
+    ]
+  }
+]

@@ -1,0 +1,401 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 61:1",
+    "deliberation": "Looked for metaphorical and idiomatic uses in the commissioning language. Considered ‘anointed’ as possibly literal (ritual) or metaphorical, and ‘captives’ as possibly spiritual, but those are not clearly figurative in this verse. Identified (1) the Spirit of the Lord being 'upon' the speaker as a spatial metaphor for empowerment, and (2) ‘binding up the broken-hearted’ as a medical/healing metaphor and conventional idiom for emotional healing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "ר֛וּחַ אֲדֹנָ֥י יֱהֹוִ֖ה עָלָ֑י",
+        "english_text": "The spirit of my Sovereign GOD is upon me",
+        "target": ["the speaker’s prophetic empowerment/commission", "divinely given authority and enablement", "spiritual-vocational domain"],
+        "vehicle": ["a tangible substance or presence resting upon someone", "spatial covering/overshadowing", "physical-spatial domain"],
+        "ground": ["being surrounded, controlled, and enabled by a powerful presence", "effective empowerment and authorization", "relation between divine presence and human agent"],
+        "posture": ["confident acceptance of a bestowed role", "positive evaluation of divine empowerment", "worship/commissioning stance"],
+        "explanation": "The Spirit of the Lord is pictured as something that can be ‘upon’ a person, using spatial language to metaphorically express divine empowerment and authorization.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לַחֲבֹ֣שׁ לְנִשְׁבְּרֵי־לֵב",
+        "english_text": "to bind up the wounded/broken of heart",
+        "target": ["those who are emotionally and spiritually devastated", "inner emotional state of the afflicted", "psychological-spiritual domain"],
+        "vehicle": ["a physically broken/wounded body part being bandaged", "medical treatment of an injury", "physical-healing domain"],
+        "ground": ["damage needing careful treatment and gradual healing", "restoration through attentive care", "analogy between bodily and emotional healing"],
+        "posture": ["compassionate concern for the afflicted", "hopeful assurance of thorough restoration", "pastoral/consolatory stance"],
+        "explanation": "The ‘heart’ is not literally broken, and ‘binding’ evokes medical bandaging. This is a conventional idiom and metaphor for healing deep emotional/spiritual wounds.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 61:2",
+    "deliberation": "Examined the temporal expressions and mourning language. ‘Comfort all who mourn’ can be literal consolation. The key figurative elements are ‘year of favor’ and ‘day of vengeance’, which depict divine action as if it were a calendrical period/event—blending metaphor and metonymy. I treat the ‘year’ phrase and the ‘day’ phrase as two parallel but distinct expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לִקְרֹ֤א שְׁנַת־רָצוֹן֙ לַֽיהֹוָ֔ה",
+        "english_text": "to proclaim a year of GOD’s favor",
+        "target": ["an extended period of divine goodwill and restoration", "epoch of gracious divine activity", "salvation-history domain"],
+        "vehicle": ["a literal calendar year", "bounded measured time-unit", "chronological domain"],
+        "ground": ["a defined, official, and structured period marked by a particular character", "a season set apart for a special purpose", "analogy between festival/appointed years and eras of God’s action"],
+        "posture": ["hopeful proclamation of coming grace", "positive valuation of that appointed time", "prophetic-promissory stance"],
+        "explanation": "The era of divine favor is spoken of as a ‘year’, using the concrete notion of a calendar year as a metaphor and metonymy for a distinct, divinely appointed season of grace.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְי֥וֹם נָקָ֖ם לֵאלֹהֵ֑ינוּ",
+        "english_text": "and a day of vindication/vengeance by our God",
+        "target": ["a decisive act or season of God’s judgment", "moment/phase of punitive justice", "salvation-judgment domain"],
+        "vehicle": ["a literal day", "a short, specific point in time", "chronological domain"],
+        "ground": ["a sharply defined time characterized by a single dominant event", "suddenness and definiteness", "analogy between a calendar day and a climactic judgment-event"],
+        "posture": ["sober but confident expectation of justice", "assertion of God’s righting of wrongs", "judicial/prophetic stance"],
+        "explanation": "God’s act of judgment is portrayed as a ‘day’ belonging to Him, using a literal day as a metaphor and metonymy for a focused, decisive intervention of divine justice.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 61:3",
+    "deliberation": "Reviewed the three ‘instead of’ phrases and the tree/planting imagery. The clothing/grooming terms contrast with ashes, mourning, and a faint spirit, expressing inner restoration with outer adornment imagery—three distinct but parallel metaphors. Then the people are titled ‘oaks of righteousness’ and ‘planting of YHWH’, extending an arboreal metaphor of stability and divine establishment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פְּאֵ֜ר תַּ֣חַת אֵ֗פֶר",
+        "english_text": "a turban/garland of beauty instead of ashes",
+        "target": ["the people’s restored honor and joy", "reversal of humiliation and grief", "social-emotional restoration domain"],
+        "vehicle": ["festive head-adornment replacing dirt/ashes", "change in visible appearance from disfigurement to beauty", "clothing/cosmetic domain"],
+        "ground": ["transition from visible shame to visible honor", "publicly recognizable change in status", "analogy between outward adornment and inner condition"],
+        "posture": ["celebration of radical reversal", "assurance of dignifying restoration", "consolatory-promissory stance"],
+        "explanation": "While ashes were literally used in mourning, the exchange of ashes for a beautiful headdress functions as a metaphor for the move from humiliation and grief to public honor and joy.",
+        "confidence": 0.89
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שֶׁ֤מֶן שָׂשׂוֹן֙ תַּ֣חַת אֵ֔בֶל",
+        "english_text": "the oil of gladness instead of mourning",
+        "target": ["the experience of renewed joy granted by God", "replacement of sorrow with rejoicing", "emotional-spiritual restoration domain"],
+        "vehicle": ["anointing with fragrant oil at festal occasions", "cosmetic/festive oil contrasting with disfiguring mourning practices", "ritual and grooming domain"],
+        "ground": ["joy that is both sensed and socially marked, like anointing oil", "transition from sombre grief to festivity", "analogy between pleasant fragrance and gladdened spirit"],
+        "posture": ["hopeful promise of inner and communal celebration", "positive valuation of God’s restorative action", "liturgical-celebratory stance"],
+        "explanation": "‘Oil of gladness’ uses the cultural practice of anointing with oil at joyous occasions as a metaphor for a God-given state of rejoicing replacing mourning.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַעֲטֵ֣ה תְהִלָּ֔ה תַּ֖חַת ר֣וּחַ כֵּהָ֑ה",
+        "english_text": "a garment/mantle of praise instead of a drooping/faint spirit",
+        "target": ["the community’s renewed disposition of praise", "inner vitality and worshipful attitude", "emotional-liturgical domain"],
+        "vehicle": ["a cloak or mantle worn on the body", "outer garment replacing a weak, languishing ‘spirit’", "clothing domain"],
+        "ground": ["praise becoming as visible and encompassing as a cloak", "exchange of weakness for robust, outwardly evident worship", "analogy between clothing and one’s enveloping inner state"],
+        "posture": ["exultant anticipation of open, public praise", "affirmation of God’s ability to transform inner dejection", "worshipful stance"],
+        "explanation": "Inner dejection (‘faint spirit’) is contrasted with a ‘mantle of praise,’ using clothing imagery as a metaphor for a new, all-encompassing attitude of praise.",
+        "confidence": 0.91
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְקֹרָ֤א לָהֶם֙ אֵילֵ֣י הַצֶּ֔דֶק",
+        "english_text": "they shall be called terebinths/oaks of righteousness",
+        "target": ["the restored people of Zion", "their character and standing as righteous", "covenant-community domain"],
+        "vehicle": ["strong, long-lived trees (terebinths/oaks)", "sturdy, deeply rooted plants", "natural-arboreal domain"],
+        "ground": ["stability, strength, and prominence associated with great trees", "visibility and permanence of their righteousness", "analogy between robust trees and an established righteous community"],
+        "posture": ["approving, honorific designation", "celebration of their divinely given stability", "commendatory stance"],
+        "explanation": "The community is metaphorically named ‘oaks of righteousness,’ likening their divinely restored righteousness to the strength and stability of great trees.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַטַּ֥ע יְהֹוָ֖ה לְהִתְפָּאֵֽר",
+        "english_text": "the planting of GOD, for Him to be glorified",
+        "target": ["the same restored people as God’s handiwork", "their divinely initiated and sustained existence", "covenant-community domain"],
+        "vehicle": ["a cultivated planting established by a gardener", "intentional agricultural planting", "agricultural-horticultural domain"],
+        "ground": ["God’s deliberate establishment and care, like a gardener’s planting", "their existence as a display of His skill and glory", "analogy between a well-tended planting and a community shaped by God"],
+        "posture": ["attribution of all credit to God", "viewing the community as a showcase of divine glory", "theological-explanatory stance"],
+        "explanation": "Calling them ‘the planting of YHWH’ extends the arboreal imagery, presenting the people as a carefully established planting whose very existence displays God’s glory.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 61:4",
+    "deliberation": "The verse speaks of building ancient ruins, raising desolations, and renewing ruined cities. These terms can function symbolically for social and spiritual restoration, but the imagery is architectural and urban and can be taken quite straightforwardly as (promised) literal rebuilding after devastation. There is no clear, discrete metaphor or simile marked in the wording itself, so I do not isolate any necessary figurative expression here.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 61:5",
+    "deliberation": "Considered whether ‘strangers pasturing your flocks’ and ‘aliens your plowmen and vinedressers’ might be primarily symbolic/metonymic for economic dominance. However, in context they plausibly describe literal service roles in an agrarian society, expressing reversal of status without requiring a distinct metaphor beyond that social picture. No explicit simile, metaphor, or personification is lexically flagged, so I treat the verse as primarily literal.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 61:6",
+    "deliberation": "Examined titles (‘priests of YHWH’) and economic language. The priest/servant language may be literal or role-based rather than figurative. The phrase ‘you shall eat the wealth of nations’ clearly uses consumption imagery for enjoying foreign resources, a conventional metaphor/idiom that is distinct within the verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "חֵ֤יל גּוֹיִם֙ תֹּאכֵ֔לוּ",
+        "english_text": "You shall eat the wealth of nations",
+        "target": ["Israel’s enjoyment and use of other nations’ resources", "economic benefit and enrichment", "socio-economic domain"],
+        "vehicle": ["eating food for sustenance and satisfaction", "ingesting something into one’s body", "bodily-consumption domain"],
+        "ground": ["taking in and benefiting from something, as with food", "complete appropriation and enjoyment of resources", "analogy between consuming food and utilizing wealth"],
+        "posture": ["celebratory assertion of reversal and abundance", "approval of God-given prosperity", "prophetic-promissory stance"],
+        "explanation": "To ‘eat’ the nations’ wealth is an idiomatic metaphor: consumption of food stands for fully enjoying and appropriating the material resources of other peoples.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 61:7",
+    "deliberation": "Looked at the ‘double’ shame/portion language and ‘everlasting joy’. The ‘double’ language may echo inheritance practices and rhetorical contrast without clear figurative mapping in itself. ‘Joy everlasting’ overstates duration in human terms and functions as hyperbolic assurance of unending gladness in salvation-history perspective, which I treat as a distinct hyperbolic expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִׂמְחַ֥ת עוֹלָ֖ם תִּהְיֶ֥ה לָהֶֽם",
+        "english_text": "Joy shall be theirs for all time / everlasting joy shall be theirs",
+        "target": ["the community’s future experience of gladness", "stable, secure rejoicing in the restoration", "emotional-spiritual domain"],
+        "vehicle": ["an unending, limitless stretch of time", "eternity or absolute permanence", "temporal-infinity domain"],
+        "ground": ["the idea that their joy will be so secure and lasting as to seem endless", "emphasis on permanence and irreversibility", "analogy between infinite duration and supreme security"],
+        "posture": ["strong assurance intended to comfort and embolden", "heightened, emphatic promise", "rhetorical-encouraging stance"],
+        "explanation": "Describing their joy as ‘everlasting’ functions hyperbolically (from a human temporal perspective) to stress the unshakable, enduring nature of the promised rejoicing.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 61:8",
+    "deliberation": "Considered ‘love justice’ and ‘hate robbery’ as possible anthropopathisms, but these are standard covenant-theological expressions. The key figurative element is ‘I will give them their work/wages in truth’, where divine recompense is framed in terms of an employer paying laborers—a metaphor/metonymy for God’s just reward.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּ֤י פְעֻלָּתָם֙ בֶּאֱמֶ֔ת",
+        "english_text": "I will pay them their wages faithfully / in truth",
+        "target": ["God’s fair recompense for His people’s faithfulness", "the outcomes and benefits granted by God", "covenantal-reward domain"],
+        "vehicle": ["an employer giving wages for completed work", "economic transaction of paying laborers", "work-and-pay domain"],
+        "ground": ["correspondence between labor and payment", "certainty and fairness of receiving what is due", "analogy between just employment practices and God’s justice"],
+        "posture": ["assurance of God’s reliability and justice", "positive evaluation of His covenant faithfulness", "juridical-promissory stance"],
+        "explanation": "God’s recompense is described with wage-paying language, an idiomatic metaphor/metonymy portraying His just rewards in terms of an employer paying workers what they have earned.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 61:9",
+    "deliberation": "The verse emphasizes recognition of descendants among the nations. ‘Seed’ (זֶרַע) is agriculturally derived but in Hebrew is a conventional term for offspring. This remains a figurative extension—metonymy/synecdoche from physical seed to a family line. I isolate that as the main figurative element.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֛י הֵ֥ם זֶ֖רַע בֵּרַ֥ךְ יְהֹוָֽה",
+        "english_text": "that they are a stock/seed that GOD has blessed",
+        "target": ["the descendants of God’s people as a recognizable lineage", "the covenant family line", "genealogical-community domain"],
+        "vehicle": ["seed used for sowing plants", "agricultural reproductive grain or kernel", "agricultural-reproductive domain"],
+        "ground": ["continuity, propagation, and origin associated with seed", "growth from a source into a visible, fruitful outcome", "analogy between agricultural seed and a family’s generational continuity"],
+        "posture": ["honoring the lineage as God-originated and God-endorsed", "highlighting visible evidence of blessing", "commendatory-identificational stance"],
+        "explanation": "Using ‘seed/stock’ for descendants is a conventional metonymic and metaphorical extension from the agricultural domain, emphasizing their origin, continuity, and blessed fruitfulness as a family line.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 61:10",
+    "deliberation": "Identified two clothing metaphors (‘garments of salvation’, ‘robe of righteousness’) in parallel, where abstract benefits are treated as attire. Then noted two explicit similes: God’s adorning work is likened to a bridegroom and bride preparing themselves, grounding the earlier metaphors in familiar wedding imagery. These are four distinct but closely related figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֤י הִלְבִּישַׁ֙נִי֙ בִּגְדֵי־יֶ֔שַׁע",
+        "english_text": "for He has clothed me with garments of salvation",
+        "target": ["the speaker’s experience of being saved and restored by God", "divinely granted status and security", "soteriological-spiritual domain"],
+        "vehicle": ["beautiful garments worn on the body", "being dressed by another in special clothing", "clothing-adornment domain"],
+        "ground": ["protection, honor, and new status conferred by what one wears", "visibility and completeness of the salvation experience", "analogy between being clothed and being fully encompassed by salvation"],
+        "posture": ["joyful gratitude for a bestowed status", "public exultation in God’s saving act", "worshipful-testimonial stance"],
+        "explanation": "‘Garments of salvation’ treats salvation as if it were clothing that God puts on the speaker, a metaphor expressing the completeness and public visibility of God’s saving work.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מְעִ֥יל צְדָקָ֖ה יְעָטָ֑נִי",
+        "english_text": "He has wrapped me in a robe of righteousness",
+        "target": ["the speaker’s righteous standing or vindication before God", "ethical and judicial rightness conferred by God", "legal-moral-spiritual domain"],
+        "vehicle": ["a robe or mantle wrapped around a person", "enveloping outer garment", "clothing-protection domain"],
+        "ground": ["being entirely covered and identified by what one wears", "safeguard and honor surrounding a person like a robe", "analogy between being robed and being fully enclosed in righteousness"],
+        "posture": ["celebratory confidence in God-given righteousness", "assurance of honorable standing", "liturgical-rejoicing stance"],
+        "explanation": "The ‘robe of righteousness’ continues the clothing metaphor, picturing righteousness as an enveloping garment that defines and protects the wearer.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֶֽחָתָן֙ יְכַהֵ֣ן פְּאֵ֔ר",
+        "english_text": "like a bridegroom adorned with a turban/garland",
+        "target": ["the speaker’s (or Zion’s) divinely given adornment and joy", "the experience of being splendidly prepared by God", "spiritual-celebratory domain"],
+        "vehicle": ["a bridegroom putting on splendid headgear for his wedding", "festal self-adornment on a wedding day", "marriage-ceremony domain"],
+        "ground": ["festive beauty, honor, and joyful anticipation associated with a bridegroom’s attire", "special, once-for-all celebratory preparation", "analogy between bridal adornment and God’s lavish adornment of His people"],
+        "posture": ["exultant comparison emphasizing dignity and joy", "warm, affectionate valuation of God’s act", "poetic-celebratory stance"],
+        "explanation": "The explicit ‘like’ (כ) introduces a simile: God’s adorning work is compared to a bridegroom splendidly dressing himself for his wedding.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַכַּלָּ֖ה תַּעְדֶּ֥ה כֵלֶֽיהָ",
+        "english_text": "and like a bride bedecked/adorned with her finery",
+        "target": ["the speaker’s (or Zion’s) state of God-given beauty and joy", "the fullness of adornment granted by God", "spiritual-celebratory domain"],
+        "vehicle": ["a bride adorning herself with her jewelry/finery", "female bridal preparation for marriage", "marriage-ceremony domain"],
+        "ground": ["maximum beautification, care, and joy at a wedding", "being as adorned and prepared as possible", "analogy between a bride’s jewelry and the honors God places on His people"],
+        "posture": ["delighted, emphatic portrayal of honor and beauty", "celebratory appreciation of God’s lavishness", "poetic-joyous stance"],
+        "explanation": "Again with ‘like’ (כ), the text compares the speaker’s God-given adornment to a bride carefully ornamenting herself, intensifying the sense of beauty and joy.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 61:11",
+    "deliberation": "The verse is structured as an ‘as…so…’ comparison: earth/garden producing growth is paralleled with the Lord causing righteousness and praise to ‘sprout.’ The earth and garden are spoken of as active producers (mild personification), and righteousness/praise are treated as vegetation. Because these elements form one integrated agricultural image, I treat them together as a single extended instance that is both metaphorical and cast as a simile.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֤י כָאָ֙רֶץ֙ תּוֹצִ֣יא צִמְחָ֔הּ וּכְגַנָּ֖ה זֵרוּעֶ֣יהָ תַצְמִ֑יחַ כֵּ֣ן׀ אֲדֹנָ֣י יֱהֹוִ֗ה יַצְמִ֤יחַ צְדָקָה֙ וּתְהִלָּ֔ה",
+        "english_text": "For as the earth brings forth her growth and a garden makes the seed shoot up, so my Sovereign GOD will make righteousness and renown/praise shoot up",
+        "target": ["God’s bringing forth of righteousness and praise among the nations", "the emergence and flourishing of just conduct and worship", "moral-spiritual and liturgical domain"],
+        "vehicle": ["earth and garden causing plants and seed to sprout", "natural process of vegetation growing from the soil", "agricultural-natural domain"],
+        "ground": ["gradual, organic, visible emergence and spread", "fruitfulness and inevitability of growth given the right source", "analogy between plant growth from soil and the arising of righteousness and praise from God’s action"],
+        "posture": ["confident, hopeful assurance of fruitful divine work", "positive evaluation of God’s life-giving power", "prophetic-promissory stance using creation imagery"],
+        "explanation": "Using an explicit ‘as…so…’ structure, the verse compares God’s causing righteousness and praise to ‘sprout’ with the earth and a garden making plants grow, personifying the earth/garden and metaphorically treating righteousness and praise as vegetation.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]

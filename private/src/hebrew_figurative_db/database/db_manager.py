@@ -4,8 +4,11 @@
 Database manager for figurative language storage and retrieval
 """
 import sqlite3
+import logging
 from typing import Dict, List, Tuple, Optional
 from datetime import datetime
+
+logger = logging.getLogger(__name__)
 
 
 class DatabaseManager:
@@ -29,6 +32,7 @@ class DatabaseManager:
     def connect(self):
         """Establish database connection"""
         self.conn = sqlite3.connect(self.db_path)
+        self.conn.row_factory = sqlite3.Row  # Enable row_factory for dictionary-like access
         self.cursor = self.conn.cursor()
 
     def setup_database(self, drop_existing: bool = False):
@@ -557,6 +561,23 @@ class DatabaseManager:
             """, (book_name, chapter))
 
             result = self.cursor.fetchone()
+
+            # Ensure we have a valid result
+            if not result:
+                logger.warning(f"No instances found for {book_name} chapter {chapter}")
+                return {
+                    'book': book_name,
+                    'chapter': chapter,
+                    'total_instances': 0,
+                    'instances_with_validation': 0,
+                    'instances_with_decisions': 0,
+                    'instances_with_final_fields': 0,
+                    'validation_coverage_rate': 100.0,
+                    'decision_coverage_rate': 100.0,
+                    'final_fields_coverage_rate': 100.0,
+                    'inconsistent_final_fields': 0,
+                    'needs_recovery': False
+                }
 
             total_instances = result['total_instances']
             instances_with_validation = result['instances_with_validation']

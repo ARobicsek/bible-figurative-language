@@ -1,0 +1,713 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 65:1",
+    "deliberation": "Considered whether the language is purely propositional (God answering undeserving people) or uses conceptual metaphors and metonymy. Detected (1) the relational metaphor of seeking/finding God, and (2) 'calling on my name' as a metonymy where 'name' stands for God's person/authority.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִמְצֵאתִי לְלֹא בִקְשֻׁנִי",
+        "english_text": "I was found by those who did not seek Me",
+        "target": ["God's self-revelation to an unresponsive people", "divine–human relationship", "religious-covenantal domain"],
+        "vehicle": ["Someone (or thing) being found by a seeker", "search/locating scenario", "everyday spatial-experiential domain"],
+        "ground": ["Unexpected availability and initiative of the one found, despite lack of searching", "unasked-for accessibility", "experiential-psychological domain"],
+        "posture": ["God's gracious initiative toward those indifferent to Him", "divine grace over against human negligence", "theological-evaluative domain"],
+        "explanation": "Relating to God is depicted in terms of humans 'seeking' and 'finding,' using the common experiential metaphor of searching for and locating someone to describe spiritual responsiveness and divine self-disclosure.",
+        "confidence": 0.87
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶל־גּוֹי לֹא־קֹרָא בִשְׁמִי",
+        "english_text": "To a nation that did not invoke My name",
+        "target": ["Failure to worship/appeal to YHWH Himself", "religious allegiance and prayer", "religious-covenantal domain"],
+        "vehicle": ["'My name' standing for YHWH's person, presence, and authority", "name-as-person representation", "linguistic-symbolic domain"],
+        "ground": ["Using a person's name to access or acknowledge the person", "calling a name as shorthand for addressing the person", "social-conventional domain"],
+        "posture": ["Critique of the nation's refusal to acknowledge YHWH as God", "divine indictment of misplaced or absent worship", "theological-evaluative domain"],
+        "explanation": "The 'name' of God stands metonymically for God's own person and authority; not calling on His name means not relating to Him in worship or dependence.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 65:2",
+    "deliberation": "Looked for gesture imagery and path imagery. Found (1) an anthropomorphic/metaphorical gesture of outstretched hands representing persistent invitation or appeal, and (2) the common Hebrew metaphor of 'walking in a way' for moral conduct.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פֵּרַשְׂתִּי יָדַי כׇּל־הַיּוֹם אֶל־עַם סוֹרֵר",
+        "english_text": "I constantly spread out My hands to a disloyal people",
+        "target": ["God's ongoing appeal and availability to rebellious Israel", "divine initiative in relationship", "religious-covenantal domain"],
+        "vehicle": ["A person standing with arms outstretched toward another", "welcoming/pleading gesture", "embodied-interpersonal domain"],
+        "ground": ["Open arms signal invitation, appeal, and readiness to receive", "nonverbal gesture of welcome and entreaty", "social-communicative domain"],
+        "posture": ["God portrayed as persistently inviting despite Israel's stubbornness", "divine patience and pleading", "theological-evaluative domain"],
+        "explanation": "God has no literal arms; the phrase uses the idiomatic human gesture of outstretched hands to picture His persistent readiness to receive and plead with a stubborn people.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַהֹלְכִים הַדֶּרֶךְ לֹא־טוֹב אַחַר מַחְשְׁבֹתֵיהֶם",
+        "english_text": "Who walk the way that is not good, following their own designs",
+        "target": ["The people's moral and spiritual conduct", "ethical behavior and life choices", "ethical-spiritual domain"],
+        "vehicle": ["Walking along a path that is bad", "journey/path scenario", "spatial-journey domain"],
+        "ground": ["Life choices resemble taking a path, with direction, destination, and quality (good/bad)", "course of life as a road one walks", "conceptual-structuring domain"],
+        "posture": ["Negative evaluation of their chosen 'path' as intrinsically harmful and misguided", "prophetic moral critique", "theological-evaluative domain"],
+        "explanation": "Their behavior is conceptualized as 'walking' on a 'way' that is not good, using the standard biblical path metaphor for one's manner of life and choices.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 65:3",
+    "deliberation": "Most elements (sacrificing in gardens, burning incense on bricks) are literal descriptions of illicit cult. The main figurative element is the idiomatic expression 'to provoke me to my face continually,' which pictures their sin as brazen confrontation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַמַּכְעִסִים אֹתִי עַל־פָּנַי תָּמִיד",
+        "english_text": "Who provoke My anger, to My very face, continually",
+        "target": ["The people's open, defiant idolatry before God", "mode of sinning (brazen vs. hidden)", "ethical-spiritual domain"],
+        "vehicle": ["Offending someone 'to his face' over and over", "direct personal affront scenario", "interpersonal-conflict domain"],
+        "ground": ["Doing something offensive in another's presence shows contempt and lack of shame; 'continually' intensifies the pattern", "brazen, repeated insult", "social-evaluative domain"],
+        "posture": ["Portrays their worship practices as shameless, incessant provocation against God", "heightened condemnation of their religious rebellion", "prophetic-judicial domain"],
+        "explanation": "The idiom 'to my face' depicts their idolatry as a direct, brazen insult in God's very presence, with 'continually' functioning hyperbolically to stress the ongoing nature of the offense.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 65:4",
+    "deliberation": "The verse lists concrete necromantic/ritually impure practices (sitting in tombs, eating swine, unclean broth). Though religiously loaded, the language itself is descriptive, not figurative in the technical sense requested.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 65:5",
+    "deliberation": "The first half quotes the arrogant speech of the offenders, which is straightforward. The second half uses vivid sensory imagery—smoke in the nose and a continually burning fire—to depict God's anger. These form two parallel metaphors for divine displeasure, with hyperbolic duration 'all day.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵלֶּה עָשָׁן בְּאַפִּי",
+        "english_text": "These are smoke in My nose",
+        "target": ["The people and their arrogant, impure practices as experienced by God", "offenders provoking divine anger", "religious-judicial domain"],
+        "vehicle": ["Irritating smoke entering someone's nostrils", "unpleasant sensory irritation", "physical-experiential domain"],
+        "ground": ["Both produce intense discomfort and aversion in the one affected", "sharp, offensive irritation calling for removal", "experiential-evaluative domain"],
+        "posture": ["Stresses how intolerable and aggravating their conduct is to God", "divine disgust and anger at their self-righteous impurity", "theological-evaluative domain"],
+        "explanation": "Their presence and behavior are likened to acrid smoke in someone's nostrils, a metaphor that vividly portrays the offense and irritation their sin causes God.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵשׁ יֹקֶדֶת כׇּל־הַיּוֹם",
+        "english_text": "A fire blazing all day long",
+        "target": ["The intensity and persistence of God's anger at the offenders", "divine wrath", "religious-judicial domain"],
+        "vehicle": ["A constantly burning fire that never goes out during the day", "unquenchable flame", "natural-physical domain"],
+        "ground": ["Both are intense, consuming, and enduring in effect", "sustained, devouring force rather than momentary irritation", "experiential-energetic domain"],
+        "posture": ["Portrays God's wrath as a continuous, consuming response to their sin", "heightened warning of severe, ongoing judgment", "prophetic-judicial domain"],
+        "explanation": "Divine anger is compared to a fire that keeps burning without relief 'all day,' a hyperbolic image emphasizing the sustained, consuming nature of God's judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 65:6",
+    "deliberation": "Examined judicial and bodily imagery. Found (1) a metaphor of sin as an entry in a written record placed 'before' God, and (2) the idiomatic metaphor of repaying 'into their bosom,' picturing recompense as something measured out and poured into one's lap.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה כְתוּבָה לְפָנָי",
+        "english_text": "See, this is recorded before Me",
+        "target": ["God's full awareness and remembrance of their sins", "divine knowledge and memory of guilt", "religious-judicial domain"],
+        "vehicle": ["A written document lying openly before a judge", "record/book of deeds", "legal-administrative domain"],
+        "ground": ["A written record preserves and presents information for judicial action; nothing is forgotten or lost", "permanent, reviewable record as basis for judgment", "cognitive-judicial domain"],
+        "posture": ["Warns that their sins are officially 'on file' with God and will be acted upon", "imminent judicial response", "prophetic-judicial domain"],
+        "explanation": "Their sins are depicted as if inscribed in a document placed before God, using courtroom record imagery to stress that guilt is preserved and ready for judgment.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשִׁלַּמְתִּי עַל־חֵיקָם",
+        "english_text": "I will repay [it] into their bosom",
+        "target": ["The reception of deserved punishment by the guilty", "experience of judgment/recompense", "religious-judicial domain"],
+        "vehicle": ["Placing or pouring something into someone's lap/bosom", "receiving a measured allotment close to the body", "economic-distributive domain"],
+        "ground": ["Receiving something in the bosom implies personal, inescapable possession of one's allotted portion", "intimate, unavoidable reception of due share", "experiential-ownership domain"],
+        "posture": ["God will ensure they personally and fully receive the consequences of their actions", "emphasis on personal, fitting retribution", "theological-judicial domain"],
+        "explanation": "The idiom of paying 'into the bosom' pictures their punishment as an allotted portion delivered right into their lap, highlighting the personal and unavoidable nature of divine recompense.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 65:7",
+    "deliberation": "Most of the verse is literal description of idolatrous offerings on hills. The figurative element is again the idiom of 'measuring' or 'apportioning' their deeds 'into their bosom,' extending the repayment-as-allotment metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמַדֹּתִי פְעֻלָּתָם רִאשֹׁנָה אֶל־חֵיקָם",
+        "english_text": "I will count out their recompense in full into their bosoms",
+        "target": ["The imposition of full consequences for their and their ancestors' deeds", "divine retribution", "religious-judicial domain"],
+        "vehicle": ["Measuring out and placing a portion into someone's lap", "allotment/distribution action", "economic-distributive domain"],
+        "ground": ["Both involve a carefully measured, personally received share corresponding to prior action or status", "precise, fitting apportionment", "justice-equivalence domain"],
+        "posture": ["Highlights the exactness and personal arrival of their recompense", "divine insistence on just, proportionate repayment", "theological-judicial domain"],
+        "explanation": "God's retribution is pictured as measured portions placed into their bosom, an idiomatic metaphor emphasizing that they will receive a full and fitting share of judgment.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 65:8",
+    "deliberation": "The verse explicitly uses a כ...כן comparison between a cluster with some good juice and God's treatment of the nation for His servants' sake. This is a formal simile illustrating preservation of a remnant within a larger whole.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כַּאֲשֶׁר יִמָּצֵא הַתִּירוֹשׁ בָּאֶשְׁכּוֹל וְאָמַר אַל־תַּשְׁחִיתֵהוּ כִּי בְרָכָה בּוֹ כֵּן אֶעֱשֶׂה לְמַעַן עֲבָדַי לְבִלְתִּי הַשְׁחִית הַכֹּל",
+        "english_text": "As, when new wine is present in the cluster and one says, 'Don’t destroy it; there’s good in it,' so will I do for the sake of My servants, and not destroy everything.",
+        "target": ["God's decision to spare a faithful remnant within Israel from total destruction", "selective preservation in judgment", "religious-judicial domain"],
+        "vehicle": ["A grape cluster that still contains good wine, so it is not destroyed entirely", "agricultural preservation scenario", "agrarian-experiential domain"],
+        "ground": ["In both, a valuable element within a larger whole leads to restraint from total destruction", "presence of 'blessing' justifies preserving the whole for the sake of the part", "valuation-judgment domain"],
+        "posture": ["Emphasizes God's mercy toward His servants as the reason the nation is not completely wiped out", "divine forbearance grounded in remnant faithfulness", "theological-evaluative domain"],
+        "explanation": "Using an explicit simile, God compares His treatment of Israel to a farmer who spares an entire cluster because of the good wine in it, illustrating preservation of the whole for the sake of a blessed remnant.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 65:9",
+    "deliberation": "The language about offspring and inheritance is straightforward. The phrase 'heirs to my mountains' uses 'mountains' metonymically for the promised territory/Zion as a whole.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּמִיהוּדָה יוֹרֵשׁ הָרָי",
+        "english_text": "From Judah [I will bring forth] heirs to My mountains",
+        "target": ["The land of Judah/Zion in its entirety as an inheritance", "territorial possession", "geographical-covenantal domain"],
+        "vehicle": ["'My mountains'—the elevated parts of the land, especially Zion", "prominent topographical features", "physical-geographical domain"],
+        "ground": ["The mountains, especially Zion, are the salient features representing the whole land and its sacred center", "part/feature representing the whole territory and its sanctity", "symbolic-landscape domain"],
+        "posture": ["Stresses that God's chosen offspring will inherit the full promised territory centered on Zion", "assurance of restored possession of the holy land", "theological-promissory domain"],
+        "explanation": "The 'mountains' (especially Zion) stand metonymically for the whole promised land; heirs to 'my mountains' are inheriting the entire sacred territory.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 65:10",
+    "deliberation": "Describes restoration of specific regions as pastures. Likely literal, but the named regions Sharon and Achor function as representative parts of the land. I treat this as a synecdoche-type use, where key locales stand for the broader restoration of the land for 'my people who seek me.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהָיָה הַשָּׁרוֹן לִנְוֵה־צֹאן וְעֵמֶק עָכוֹר לְרֵבֶץ בָּקָר",
+        "english_text": "Sharon shall become a pasture for flocks, and the Valley of Achor a place for cattle to lie down",
+        "target": ["The full restoration and peace of the land for God's people", "national-territorial renewal", "covenantal-geographical domain"],
+        "vehicle": ["Specific regions (Sharon plain, Valley of Achor) flourishing as secure pastures", "exemplary locales", "regional-landscape domain"],
+        "ground": ["These emblematic regions represent the wider land; their transformation signals comprehensive restoration", "particular areas functioning as synecdochic signs of the whole land's peace and fertility", "symbolic-representative domain"],
+        "posture": ["Assures those who seek God that the entire land, represented by these named zones, will be safe and fruitful", "promise of broad blessing conveyed through key examples", "theological-promissory domain"],
+        "explanation": "Sharon and the Valley of Achor, geographically specific places, function synecdochically as representative samples of the land's overall restoration as peaceful pasture.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 65:11",
+    "deliberation": "The verse contrasts forsaking YHWH with serving deities of Fate. The phrase 'my holy mountain' functions metonymically for the temple-mount and its worship, i.e., God's cultic presence and rule centered in Zion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַשְּׁכֵחִים אֶת־הַר קׇדְשִׁי",
+        "english_text": "Who ignore My holy mountain",
+        "target": ["Forsaking God's cultic presence and ordained worship", "rejection of true worship and allegiance", "religious-covenantal domain"],
+        "vehicle": ["'My holy mountain'—Zion/Moriah where the temple stands", "sacred hill as shrine site", "geographical-cultic domain"],
+        "ground": ["The mountain is the visible locus of God's presence and worship, so 'forgetting' it equates to ignoring Him and His ordained worship", "place representing divine presence and covenant institutions", "symbolic-space domain"],
+        "posture": ["Indicts them for turning from the true center of worship to set tables for pagan deities of fate", "covenantal unfaithfulness expressed through geographic metonymy", "prophetic-judicial domain"],
+        "explanation": "The 'holy mountain' stands metonymically for the temple and the entire system of true worship centered there; to forget it is to forsake YHWH Himself.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 65:12",
+    "deliberation": "Looked for judgment imagery. Found (1) 'appointing to the sword' where 'sword' stands metonymically for violent death/war, and (2) 'you will all kneel down to slaughter' as a metaphor likening the people to animals brought to be butchered.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּמָנִיתִי אֶתְכֶם לַחֶרֶב",
+        "english_text": "I will destine you for the sword",
+        "target": ["The people's experience of violent death in judgment", "national destruction in war", "historical-judicial domain"],
+        "vehicle": ["The 'sword' as the instrument of killing in battle", "weapon of warfare", "military-violent domain"],
+        "ground": ["The sword is the standard emblem of battle and killing; it stands for the whole experience of violent defeat and death", "instrument representing the event and outcome", "symbolic-judgment domain"],
+        "posture": ["Announces that God has assigned them to a fate of violent destruction", "declaration of determined judgment through warfare", "prophetic-judicial domain"],
+        "explanation": "The 'sword' functions metonymically for violent death in war; to be 'destined to the sword' is to be consigned to such a fate.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכֻלְּכֶם לַטֶּבַח תִּכְרָעוּ",
+        "english_text": "You will all kneel down, to be slaughtered",
+        "target": ["The people's complete subjugation and killing in judgment", "national humiliation and death", "historical-judicial domain"],
+        "vehicle": ["Animals being made to crouch or kneel at the place of slaughter", "sacrificial/butchery scene", "ritual-agrarian domain"],
+        "ground": ["Both depict powerless victims bent down before inevitable killing", "posture of helpless submission prior to being slain", "social-status domain"],
+        "posture": ["Underscores their utter helplessness and the totality of judgment ('all of you')", "grim warning of comprehensive, humiliating destruction", "prophetic-judicial domain"],
+        "explanation": "By picturing them as all 'kneeling to slaughter' like animals at a slaughterhouse or altar, the text metaphorically conveys complete, powerless exposure to coming death; 'all of you' adds hyperbolic totality.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Isaiah 65:13",
+    "deliberation": "The contrasts (eat vs hunger, drink vs thirst, rejoice vs shame) function as covenant-blessing imagery. They likely have both literal and figurative force, but at least serve as a metaphor of spiritual/salvific satisfaction versus deprivation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה עֲבָדַי יֹאכֵלוּ וְאַתֶּם תִּרְעָבוּ ... עֲבָדַי יִשְׁתּוּ וְאַתֶּם תִּצְמָאוּ ... עֲבָדַי יִשְׂמָחוּ וְאַתֶּם תֵּבֹשׁוּ",
+        "english_text": "My servants shall eat, and you shall hunger; My servants shall drink, and you shall thirst; My servants shall rejoice, and you shall be shamed",
+        "target": ["The ultimate well-being vs. deprivation of the faithful and the faithless", "experience of salvation vs. judgment", "religious-eschatological domain"],
+        "vehicle": ["States of fullness vs hunger, satiation vs thirst, joy vs shame", "bodily and emotional conditions", "physical-psychological domain"],
+        "ground": ["Physical satisfaction and joy mirror comprehensive blessing, while hunger, thirst, and shame mirror judgment and lack", "bodily/emotional conditions as experiential summaries of fortune", "symbolic-experiential domain"],
+        "posture": ["Divides humanity into God's servants and rejecters, highlighting starkly different fates", "promissory comfort and warning through embodied imagery", "theological-evaluative domain"],
+        "explanation": "Eating/drinking versus hunger/thirst, and rejoicing versus shame, function metaphorically (even if also literally) as images of the profound contrast between those blessed with God's salvation and those left in want and disgrace.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Isaiah 65:14",
+    "deliberation": "Identified emotional-physical imagery: 'pain of heart' and 'broken spirit.' These do not describe literal physical damage but use bodily breakage and pain to convey inner anguish.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תִּצְעֲקוּ מִכְּאֵב לֵב וּמִשֵּׁבֶר רוּחַ תְּיֵלִילוּ",
+        "english_text": "You shall cry out in anguish, howling in heartbreak (from pain of heart and from a broken spirit)",
+        "target": ["The inner psychological and spiritual torment of the judged", "emotional-spiritual suffering", "psychological-judicial domain"],
+        "vehicle": ["A heart in pain and a spirit that is broken", "bodily injury and structural breakage", "physical-somatic domain"],
+        "ground": ["Physical pain and breakage vividly express intense inner distress, helplessness, and collapse", "damage to core faculties symbolizes deep affliction", "experiential-structural domain"],
+        "posture": ["Highlights the depth of suffering that will replace former arrogance", "graphic portrayal of emotional ruin as result of judgment", "prophetic-judicial domain"],
+        "explanation": "Inner anguish is portrayed through bodily metaphors—'pain of heart' and 'broken spirit'—using physical injury to communicate severe emotional and spiritual collapse.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Isaiah 65:15",
+    "deliberation": "Assessed potential figurative use of 'name.' The threat that they will leave their 'name' for a curse means their memory/reputation becomes a formula of malediction. This uses 'name' metonymically for remembered identity and example.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִנַּחְתֶּם שִׁמְכֶם לִשְׁבוּעָה לִבְחִירָי",
+        "english_text": "You shall leave behind your name by which My chosen ones shall curse",
+        "target": ["Their enduring reputation as an example of divine judgment", "posthumous memory as a warning", "social-judicial domain"],
+        "vehicle": ["Their 'name' as the spoken formula used in oaths and curses", "naming-expression", "linguistic-symbolic domain"],
+        "ground": ["A person's name stands for that person's remembered character and fate, which can be invoked in speech", "name as shorthand for a paradigmatic story", "cultural-memory domain"],
+        "posture": ["Signals that they will become a negative example, invoked as a curse among the faithful", "turns their identity into a proverb of doom", "theological-evaluative domain"],
+        "explanation": "Here 'name' stands metonymically for their remembered identity and fate; leaving their name 'for an oath' means their story becomes a standard formula for cursing.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Isaiah 65:16",
+    "deliberation": "The main focus is on blessing and swearing by the 'God of Amen' (true God), largely literal. The phrase 'the former troubles shall be forgotten and hidden from My eyes' uses 'eyes' metonymically for God's attention/awareness, depicting troubles as removed from His regard.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי נִשְׁכְּחוּ הַצָּרוֹת הָרִאשֹׁנוֹת וְכִי נִסְתְּרוּ מֵעֵינָי",
+        "english_text": "The former troubles shall be forgotten, shall be hidden from My eyes",
+        "target": ["God's cessation of remembering and regarding past afflictions/judgments", "divine posture toward former troubles", "religious-eschatological domain"],
+        "vehicle": ["Something hidden from a person's eyes, out of sight and thus out of active attention", "visual concealment", "perceptual domain"],
+        "ground": ["What is out of sight is no longer attended to or acted upon; God 'not seeing' troubles means He no longer regards them as present realities", "visual inattention as a model for non-regard", "cognitive-evaluative domain"],
+        "posture": ["Announces a new era in which previous troubles are no longer before God as issues to be maintained", "emphasis on radical discontinuity with past distress", "theological-promissory domain"],
+        "explanation": "God's 'eyes' represent His active awareness; saying former troubles are 'hidden from My eyes' uses an idiomatic visual metaphor to express that they are no longer objects of His regard or action.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Isaiah 65:17",
+    "deliberation": "The creation of new heavens and new earth may be literal or cosmic-figurative, but that is a macro-level question. At the smaller linguistic level, the idiom 'shall not come up on the heart' is clearly figurative for 'will not even be thought about.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא תַעֲלֶינָה עַל־לֵב",
+        "english_text": "They shall never come to mind (literally: shall not go up upon [the] heart)",
+        "target": ["The act of mentally recalling former things", "human remembering and thinking", "cognitive domain"],
+        "vehicle": ["Something ascending and resting upon the heart", "upward movement to a central organ", "spatial-bodily domain"],
+        "ground": ["The 'heart' in Hebrew anthropology is the seat of thought; something 'rising upon' it pictures an idea entering conscious reflection", "spatial movement as a model for cognitive emergence", "conceptual-structuring domain"],
+        "posture": ["Assures that the old order will not even surface in conscious thought in the renewed reality", "emphasis on complete mental/emotional break from the past", "eschatological-promissory domain"],
+        "explanation": "The idiom of something 'coming up on the heart' uses spatial movement toward a bodily center to describe an idea's emergence into thought; here it negates any such recollection of former things.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Isaiah 65:18",
+    "deliberation": "The imperative to rejoice is straightforward. The statement 'I am creating Jerusalem a joy, and her people a gladness' depicts the city/people as embodiments or sources of joy, a clear metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי הִנְנִי בוֹרֵא אֶת־יְרוּשָׁלִַם גִּילָה וְעַמָּהּ מָשׂוֹשׂ",
+        "english_text": "For I am creating Jerusalem as a joy, and her people as a delight",
+        "target": ["The transformed state and reputation of Jerusalem and her inhabitants", "community's renewed condition", "social-eschatological domain"],
+        "vehicle": ["Joy and delight as quasi-substantial qualities embodied in a city and people", "abstract emotion reified", "emotional-experiential domain"],
+        "ground": ["The future Jerusalem will be so characterized by joy that she can be spoken of as 'joy' itself; likewise her people as 'gladness'", "identity defined by a pervasive emotional quality", "evaluative-identity domain"],
+        "posture": ["Highlights the radical redefinition of Jerusalem from a place of mourning to a locus and embodiment of joy", "promise of deep communal transformation", "theological-promissory domain"],
+        "explanation": "Jerusalem and her people are not literally the emotion 'joy,' but are metaphorically identified with it to stress that unbroken delight will characterize the renewed community.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Isaiah 65:19",
+    "deliberation": "Most of the verse (God rejoicing in Jerusalem, absence of weeping) can be taken straightforwardly as describing divine emotion and social conditions. There is no distinct small-scale metaphor, simile, or idiom beyond general anthropomorphic language for God's rejoicing.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Isaiah 65:20",
+    "deliberation": "The verse describes remarkably long lifespans and the evaluation of a hundred-year-old as a 'youth.' It is visionary and may be idealized, but it functions as a straightforward eschatological description rather than a compact metaphor, simile, or idiom of the types requested.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Isaiah 65:21",
+    "deliberation": "The building of houses and planting of vineyards so as to enjoy their fruit is covenant-blessing language. It can serve as a concrete synecdoche for stable, secure life, but the verse itself reads as a direct promise without a clear, compact figurative expression distinguishable from literal meaning.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Isaiah 65:22",
+    "deliberation": "Detected (1) an explicit simile comparing the lifespan of God's people to that of a tree, and (2) the metaphor 'my chosen ones shall wear out the work of their hands,' which treats their products like garments that can be outlasted/used up.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־כִימֵי הָעֵץ יְמֵי עַמִּי",
+        "english_text": "For the days of My people shall be as long as the days of a tree",
+        "target": ["The longevity and stability of God's people", "lifespan and endurance of the community", "social-eschatological domain"],
+        "vehicle": ["The long-lived days of a tree", "arboreal longevity", "natural-physical domain"],
+        "ground": ["Trees, especially large ones, endure many years; comparing lifespans to a tree highlights durability and long continuance", "perceived stability and age of trees as model for human enduringness", "experiential-analogical domain"],
+        "posture": ["Promises that God's people will enjoy a secure, extended life in the land", "emphasis on lastingness of blessing", "theological-promissory domain"],
+        "explanation": "The explicit 'as the days of a tree' simile uses the perceived long life of a tree to illustrate the extended, stable life God's people will enjoy.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמַעֲשֵׂה יְדֵיהֶם יְבַלּוּ בְחִירָי",
+        "english_text": "My chosen ones shall outlast (wear out) the work of their hands",
+        "target": ["The relationship between the lives of God's people and the things they produce", "relative endurance of people vs. their works", "social-economic domain"],
+        "vehicle": ["Wearing something out through long use so that it decays before the user", "garment/tool wearing out", "material-use domain"],
+        "ground": ["If a person 'wears out' their own work, they must have lived longer than the lifespan of what they made", "object decaying before its owner as sign of owner's longevity", "experiential-analogical domain"],
+        "posture": ["Promises that God's people will enjoy the fruits of their labor for so long that their works will perish before they do", "reversal of previous curses where others consumed their work", "theological-promissory domain"],
+        "explanation": "Describing the chosen ones as 'wearing out' the work of their hands metaphorically portrays them as outliving and outusing what they build, emphasizing durability of their lives and security of their labors.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Isaiah 65:23",
+    "deliberation": "Considered whether 'toil in vain' and 'bear children for terror' are purely literal. The phrase 'not labor for emptiness' (לָרִיק) is a conventional idiom/metaphor, picturing work as producing a 'container' that can turn out empty (futile).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא יִיגְעוּ לָרִיק",
+        "english_text": "They shall not toil to no purpose (literally: for emptiness)",
+        "target": ["The outcome of the people's efforts and labors", "fruitfulness vs. futility of work", "social-economic domain"],
+        "vehicle": ["Working to produce something that turns out to be 'empty' or void", "container/product with nothing in it", "material-result domain"],
+        "ground": ["An empty product represents wasted effort; labor is evaluated by whether it yields substance or 'emptiness'", "emptiness symbolizing lack of payoff", "evaluative-analogical domain"],
+        "posture": ["Assures that in the renewed order, their labors will have real, enduring results rather than futility", "promise of meaningful, blessed work", "theological-promissory domain"],
+        "explanation": "The idiom 'to labor for emptiness' pictures work as directed toward some 'thing' that could prove to be empty; it uses physical emptiness as a metaphor for futility.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Isaiah 65:24",
+    "deliberation": "The verse portrays extreme promptness of divine response—answering before they call, hearing while they are still speaking. This temporal inversion is best read as hyperbolic language for God's eagerness and readiness to respond.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָה טֶרֶם־יִקְרָאוּ וַאֲנִי אֶעֱנֶה עוֹד הֵם מְדַבְּרִים וַאֲנִי אֶשְׁמָע",
+        "english_text": "Before they pray, I will answer; while they are still speaking, I will respond",
+        "target": ["God's readiness and eagerness to respond to His people", "divine attentiveness to prayer", "religious-relational domain"],
+        "vehicle": ["Answering someone even before they finish—or even begin—speaking", "preemptive reply in conversation", "interpersonal-communication domain"],
+        "ground": ["Exaggerated timing conveys extreme promptness and attentiveness; God is portrayed as already poised to respond to any call", "temporal priority as sign of eagerness and care", "experiential-analogical domain"],
+        "posture": ["Reassures the restored community of God's intimate, anticipatory responsiveness", "depicts a radically close divine-human relationship", "theological-promissory domain"],
+        "explanation": "Stating that God answers before the call and hears while words are still being formed is deliberate hyperbole, dramatizing His unprecedented promptness and attentiveness to His people's prayers.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Isaiah 65:25",
+    "deliberation": "The verse is full of peaceable-animal imagery. Even if one sees a literal transformed creation, it at least functions symbolically: (1) wolf and lamb grazing together as an image of reconciled enemies, (2) lion eating straw 'like the ox' as an explicit simile of ferocity tamed, (3) serpent eating dust recalling Gen 3 as metaphor for permanent humiliation/harmlessness, and (4) 'my holy mountain' as metonymy for the full sphere of God's peaceful rule.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "זְאֵב וְטָלֶה יִרְעוּ כְאֶחָד",
+        "english_text": "The wolf and the lamb shall graze together",
+        "target": ["Formerly hostile parties living in peace under God's reign", "end of predation/oppression", "social-eschatological domain"],
+        "vehicle": ["A wolf and a lamb peacefully feeding side by side", "predator–prey coexistence", "animal-behavior domain"],
+        "ground": ["The image inverts natural enmity; natural enemies at peace depict the cessation of aggression and fear", "peaceful coexistence of those once in danger", "symbolic-analogical domain"],
+        "posture": ["Announces a transformed order in which predatory violence is abolished", "vision of comprehensive shalom", "theological-eschatological domain"],
+        "explanation": "Wolf and lamb, natural enemies, are pictured grazing together to symbolize the removal of hostility and fear in the renewed creation.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַרְיֵה כַּבָּקָר יֹאכַל־תֶּבֶן",
+        "english_text": "And the lion shall eat straw like the ox",
+        "target": ["The taming of destructive power in the new order", "transformation of violent forces", "social-eschatological domain"],
+        "vehicle": ["A lion eating straw in the same way as an ox", "predator adopting herbivore diet/behavior", "animal-diet domain"],
+        "ground": ["The fiercest predator behaving like a harmless herbivore signals complete removal of its threat", "change in nature from violent to gentle", "symbolic-analogical domain"],
+        "posture": ["Portrays a world where even the strongest, most dangerous powers are rendered harmless", "emphasis on total pacification", "theological-eschatological domain"],
+        "explanation": "The explicit simile ('like the ox') pictures the lion sharing the ox's harmless diet, symbolizing the radical transformation of ferocity into gentleness.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָחָשׁ עָפָר לַחְמוֹ",
+        "english_text": "And the serpent’s food shall be earth (dust)",
+        "target": ["The enduring humiliation and limitation of evil or harmful forces", "status of the serpent/evil in the new order", "religious-eschatological domain"],
+        "vehicle": ["A serpent whose allotted food is dust", "creature confined to eating the earth", "animal-diet/curse domain"],
+        "ground": ["Eating dust is a biblical image of humiliation and abasement (cf. Gen 3:14); it signifies low, constrained status", "lowly, cursed existence close to the ground", "symbolic-curse domain"],
+        "posture": ["Signals that whatever the serpent symbolizes will remain in a humbled, non-threatening state", "assurance of evil's contained and humiliated status", "theological-eschatological domain"],
+        "explanation": "By assigning the serpent dust as its food, the verse evokes the curse imagery of Genesis, metaphorically portraying the serpent in a permanently humbled, limited condition.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּכׇל־הַר קׇדְשִׁי",
+        "english_text": "In all My sacred mount",
+        "target": ["The entire realm of God's restored rule and presence", "community and sphere under divine kingship", "religious-eschatological domain"],
+        "vehicle": ["'My holy mountain'—Zion as a physical and cultic center", "sacred hill", "geographical-cultic domain"],
+        "ground": ["Zion, as God's holy mountain, represents the total sphere where He reigns and is worshiped", "central place standing for the whole domain of God's people", "symbolic-space domain"],
+        "posture": ["Affirms that throughout the whole range of God's holy domain no harm or destruction will occur", "universalization of peace from the cultic center outward", "theological-promissory domain"],
+        "explanation": "The 'holy mountain' stands metonymically for the full scope of God's sanctified realm; saying no harm will occur there declares comprehensive peace in God's domain.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

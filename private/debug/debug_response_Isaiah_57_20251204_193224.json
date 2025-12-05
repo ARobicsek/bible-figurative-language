@@ -1,0 +1,652 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 57:1",
+    "deliberation": "I checked for imagery beyond the basic statement that the righteous die. The only clearly figurative expression is the idiom שָׂם עַל־לֵב, ‘to put upon the heart,’ for ‘to pay attention / consider.’ Other elements (perishing, being gathered) can be read straightforwardly.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֵין אִישׁ שָׂם עַל־לֵב",
+        "english_text": "and no one puts [it] upon [his] heart",
+        "target": ["people’s reflective response to the death of the righteous", "mental-attentive state", "human inner life"],
+        "vehicle": ["placing an object upon the heart", "physical placing on the body", "embodied action"],
+        "ground": ["focused attention / serious consideration", "cognitive-emotional engagement", "psychology"],
+        "posture": ["prophetic critique of their lack of concern", "negative moral evaluation", "rhetorical stance"],
+        "explanation": "The idiom ‘to put upon the heart’ figuratively portrays attentive consideration as if something were physically placed on the heart, the seat of thought and feeling.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 57:2",
+    "deliberation": "I looked for imagery around ‘peace,’ ‘rest,’ and ‘walking.’ The verse uses (1) death of the righteous as peaceful rest on a couch/bed, and (2) ‘walking straight’ as a path metaphor for upright conduct.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יָבֹא שָׁלוֹם יָנוּחוּ עַל־מִשְׁכְּבוֹתָם",
+        "english_text": "He shall come to peace; they shall rest on their beds",
+        "target": ["the state of the righteous after death", "post-mortem condition", "human destiny"],
+        "vehicle": ["coming to peace and resting on a bed", "peaceful repose after labor", "domestic/embodied experience"],
+        "ground": ["tranquility, freedom from turmoil and suffering", "emotional-circumstantial stability", "well-being"],
+        "posture": ["reassuring portrayal of the righteous’ fate", "positive evaluative depiction", "pastoral rhetoric"],
+        "explanation": "The verse depicts the death of the righteous as ‘coming to peace’ and ‘resting on beds,’ a metaphor likening death to entering a peaceful rest after toil.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֹלֵךְ נְכֹחוֹ",
+        "english_text": "one who walked straightforward",
+        "target": ["ethical and religious conduct", "behavioral pattern", "moral life"],
+        "vehicle": ["walking on a straight way", "movement along a path", "spatial journey"],
+        "ground": ["directness, integrity, lack of deviation", "moral rectitude vs. crookedness", "ethics"],
+        "posture": ["commendation of upright conduct", "positive moral evaluation", "didactic stance"],
+        "explanation": "‘Walking straightforward’ is a standard path metaphor in Hebrew, picturing righteous conduct as walking on a straight road without deviation.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 57:3",
+    "deliberation": "I examined the familial labels. The audience is not literally born of a sorceress, adulterer, or prostitute; these are evaluative metaphors describing their character and religious infidelity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּנֵי עֹנְנָה",
+        "english_text": "you children of a sorceress",
+        "target": ["the addressed people and their spiritual identity", "community identity", "Israel/Judah"],
+        "vehicle": ["children of a sorceress", "offspring of a practitioner of occult arts", "family relationship"],
+        "ground": ["participation in forbidden magical/religious practices, inherited pattern of rebellion", "moral likeness to an impure parent", "ethics/religion"],
+        "posture": ["sharp prophetic denunciation of their religious practices", "negative polemical labeling", "judgment rhetoric"],
+        "explanation": "Calling them ‘children of a sorceress’ metaphorically characterizes the people as morally and religiously descended from sorcery, emphasizing their complicity in occult practices.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "זֶרַע מְנָאֵף וַתִּזְנֶה",
+        "english_text": "offspring of an adulterer and a whore",
+        "target": ["the same community’s moral-religious character", "collective identity", "Israel/Judah"],
+        "vehicle": ["offspring (seed) of an adulterer and a prostitute", "children of sexually immoral parents", "family relationship"],
+        "ground": ["unfaithfulness, promiscuity, covenant-breaking", "moral degradation associated with adultery and prostitution", "ethics"],
+        "posture": ["accusation of spiritual adultery and moral corruption", "condemnatory description", "judgment rhetoric"],
+        "explanation": "Describing them as ‘offspring of an adulterer and a whore’ metaphorically equates their spiritual and ethical infidelity with gross sexual unfaithfulness.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 57:4",
+    "deliberation": "The gestures (opening the mouth, sticking out the tongue) can be literal signs of mockery. The clearly figurative elements are the genealogical labels ‘children of iniquity’ and ‘seed of falsehood,’ personifying sin and falsehood as parents.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲלוֹא־אַתֶּם יִלְדֵי־פֶשַׁע",
+        "english_text": "Surely you are children of iniquity",
+        "target": ["the people’s moral identity", "community character", "Israel/Judah"],
+        "vehicle": ["children born of iniquity", "offspring of a personified sin", "family relationship / personified abstraction"],
+        "ground": ["being generated and shaped by wrongdoing, thoroughly characterized by it", "complete moral derivation from sin", "ethics"],
+        "posture": ["strong denunciation, framing them as essentially produced by sin", "negative moral judgment", "prophetic rebuke"],
+        "explanation": "‘Children of iniquity’ metaphorically makes iniquity their parent, personifying wrongdoing and portraying the people as its offspring, wholly formed by it.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "זֶרַע שָׁקֶר",
+        "english_text": "offspring (seed) of falsehood",
+        "target": ["their propensity to deceit and treachery", "moral character", "ethics/social behavior"],
+        "vehicle": ["seed/offspring of falsehood", "children of a personified lie", "family relationship / personified abstraction"],
+        "ground": ["being produced by and saturated with lying and treachery", "deep-rooted deceitfulness", "ethics"],
+        "posture": ["condemnation of their pervasive dishonesty", "negative characterization", "prophetic polemic"],
+        "explanation": "Calling them ‘seed of falsehood’ personifies ‘falsehood’ as a progenitor and metaphorically depicts the people as its offspring, emphasizing that deceit defines their nature.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 57:5",
+    "deliberation": "The child sacrifice and locations (wadis, clefts of the rocks) are presented as actual cultic practices. The expression ‘under every green tree’ is a conventional hyperbolic-idiomatic formula in prophetic texts for widespread idolatrous worship rather than literally every tree.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "תַּחַת כׇּל־עֵץ רַעֲנָן",
+        "english_text": "under every verdant tree",
+        "target": ["the extent and ubiquity of their idolatrous practices", "spatial spread of sin", "religious life of the people"],
+        "vehicle": ["being under every flourishing tree", "multiple shady cult-trees scattered in the land", "natural landscape"],
+        "ground": ["widespread occurrence, many cult sites, habitual practice", "extensiveness and regularity", "socioreligious pattern"],
+        "posture": ["emphatic condemnation of pervasive idolatry", "rhetorical exaggeration", "prophetic critique"],
+        "explanation": "‘Under every green tree’ is a stock prophetic hyperbole and idiom for pervasive illicit worship at many cult sites, not literally at every single tree.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 57:6",
+    "deliberation": "I focused on ‘smooth stones of the wadi’ as ‘your portion/lot.’ ‘Portion’ and ‘lot’ are covenantal terms for one’s deity/inheritance (often YHWH). Here the stones (idol-objects) are said to be their portion, which is a metaphorical inversion of covenant inheritance language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּחַלְּקֵי־נַחַל חֶלְקֵךְ הֵם הֵם גּוֹרָלֵךְ",
+        "english_text": "Among the smooth [stones] of the wadi is your share; they, they are your lot",
+        "target": ["the people’s chosen deity and ultimate allegiance", "religious object of trust", "Israel/Judah’s covenant status"],
+        "vehicle": ["smooth stones of the wadi as ‘portion’ and ‘lot’", "inherited share in land/deity", "inheritance system"],
+        "ground": ["exclusive attachment and identification with an allotted share, treating idols as the true inheritance instead of YHWH", "replacement of rightful heirship", "covenant theology"],
+        "posture": ["ironic exposure of their idolatry as a perverse ‘inheritance’", "critical inversion of covenant language", "prophetic sarcasm"],
+        "explanation": "By calling the smooth stones ‘your share’ and ‘your lot,’ the text metaphorically transfers covenant-inheritance language (normally of YHWH) to inanimate idol-stones, showing where their true allegiance lies.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 57:7",
+    "deliberation": "I considered whether the ‘couch/bed’ is literal furniture at a high place or symbolic. Given the sexualized language in the surrounding context, the ‘bed’ on a high hill functions metaphorically for cultic/adulterous liaisons (spiritual adultery) at the high places.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל הַר־גָּבֹהַּ וְנִשָּׂא שַׂמְתְּ מִשְׁכָּבֵךְ",
+        "english_text": "On a high and lofty hill you have set your couch",
+        "target": ["Israel/Judah’s idolatrous worship and alliances", "religious-political infidelity", "covenant relationship"],
+        "vehicle": ["a lover’s bed set on a high hill", "adulterous trysting place", "sexual/erotic setting"],
+        "ground": ["intimate, illicit, exposed and shameless union", "unfaithfulness and pursuit of forbidden partners", "marital/sexual domain"],
+        "posture": ["depicting idolatry as brazen adultery", "moral condemnation via sexual imagery", "prophetic polemic"],
+        "explanation": "The ‘couch’ placed on a high hill metaphorically represents Israel’s idolatrous cult on the high places, cast as an adulterous bed where she betrays YHWH.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 57:8",
+    "deliberation": "The verse is saturated with sexual imagery (‘you uncovered yourself from me,’ ‘you widened your bed,’ ‘you loved their bed’), used elsewhere in prophets for spiritual adultery. I treat this cluster as a single extended adultery metaphor for idolatry and foreign alliances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי מֵאִתִּי גִּלִּית וַתַּעֲלִי הִרְחַבְתְּ מִשְׁכָּבֵךְ ... אָהַבְתְּ מִשְׁכָּבָם",
+        "english_text": "For, abandoning Me, you uncovered yourself and went up; you made your couch wide ... you loved their bed",
+        "target": ["Israel’s idolatry and political-religious betrayals", "covenant unfaithfulness", "relationship with YHWH vs. other powers"],
+        "vehicle": ["an unfaithful woman widening her bed and loving adulterous beds", "promiscuous sexual behavior", "marital/sexual conduct"],
+        "ground": ["eager pursuit of multiple forbidden partners, betrayal of exclusive covenant, shameless intimacy with others", "unfaithfulness and promiscuity", "marriage and sexuality"],
+        "posture": ["depicts their religious/political compromises as shameless adultery against God", "severe moral indictment", "prophetic accusation"],
+        "explanation": "By speaking of uncovering herself, widening the bed, and loving others’ beds, the verse metaphorically casts Israel’s idolatry and alliances as sexual adultery against YHWH.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 57:9",
+    "deliberation": "I weighed whether actions toward ‘the king’ are literal diplomacy or figurative. The climactic phrase ‘you abased yourself down to Sheol’ goes beyond political description into hyperbolic downward imagery, portraying extreme self-humiliation as a descent to the realm of the dead.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתַּשְׁפִּילִי עַד־שְׁאוֹל",
+        "english_text": "and you abased yourself down to Sheol",
+        "target": ["the extent of Israel’s degrading efforts to court foreign power/idols", "degree of self-humiliation", "political-religious behavior"],
+        "vehicle": ["descending in humiliation to Sheol, the realm of the dead", "extreme downward movement into the underworld", "cosmic geography of death"],
+        "ground": ["utter abasement, going to the lowest possible level, self-destructive compromise", "extremity and degradation", "ethics/social standing"],
+        "posture": ["condemns their alliances as self-debasing to the point of figurative death", "shaming rhetoric", "prophetic warning"],
+        "explanation": "‘You abased yourself down to Sheol’ hyperbolically and metaphorically portrays their political-religious self-humiliation as a descent into the realm of the dead.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 57:10",
+    "deliberation": "I examined the imagery of ‘many ways’ and weariness. The verse uses a journey metaphor for their policies/pursuits, and the phrase ‘life of your hand’ is idiomatic/metaphorical for the vitality/benefit they obtain, sustaining their efforts.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּרֹב דַּרְכֵּךְ יָגַעַתְּ ... חַיַּת יָדֵךְ מָצָאת",
+        "english_text": "Though wearied by the abundance of your ways ... you found the life of your hand",
+        "target": ["their manifold political-religious pursuits and the motivation they draw from them", "behavioral strategies and inner drive", "social-religious action"],
+        "vehicle": ["many ‘ways’ as long journeys that cause physical weariness; ‘life of your hand’ as revived bodily vigor", "travel and bodily fatigue/energy", "embodied journeying"],
+        "ground": ["exertion in pursuing schemes, yet renewed motivation because they find some benefit/satisfaction", "effort and reward dynamics", "human behavior"],
+        "posture": ["critical depiction of relentless, self-serving striving", "exposure of their stubborn persistence", "prophetic critique"],
+        "explanation": "Their ‘ways’ are metaphorical roads of policy or idolatry that tire them like travel, while ‘the life of your hand’ idiomatically portrays renewed vigor/benefit that keeps them from giving up.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 57:11",
+    "deliberation": "I again checked for idioms and metaphors. The key figurative expression is the repeated idiom ‘you did not put [it] upon [your] heart’ for failing to reckon with God. Other elements (God’s silence, their fear of others) can be read literally.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא־שַׂמְתְּ עַל־לִבֵּךְ",
+        "english_text": "you did not put [it] upon your heart",
+        "target": ["their failure to remember and fear God", "cognitive-moral attention", "human inner response to God"],
+        "vehicle": ["placing something upon the heart", "physical laying of an object on the chest", "embodied action"],
+        "ground": ["intent, focused consideration and concern", "attentive engagement versus neglect", "psychology"],
+        "posture": ["rebuke for thoughtless disregard of God’s patience", "negative moral evaluation", "prophetic admonition"],
+        "explanation": "The idiom pictures truly taking God into account as if setting something on the heart, metaphorically using a physical act for mental-emotional attention.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 57:12",
+    "deliberation": "The phrase ‘your righteousness’ (צִדְקָתֵךְ) appears in a context of judgment where these ‘righteous acts’ are condemned as useless. This is best read as ironic—the term usually positive is used sarcastically, undercutting their supposed righteousness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֲנִי אַגִּיד צִדְקָתֵךְ ... וְלֹא יוֹעִילוּךְ",
+        "english_text": "I will declare your righteousness and your deeds, but they shall not profit you",
+        "target": ["their self-perceived pious deeds and claims of righteousness", "religious self-understanding", "cultic/moral performance"],
+        "vehicle": ["the word ‘righteousness’ applied to them in a context of exposure and condemnation", "praise-terminology used in a derisive way", "evaluative label"],
+        "ground": ["discrepancy between their claim and God’s evaluation; the supposed ‘righteousness’ is in fact worthless", "contrast and reversal", "pragmatics of irony"],
+        "posture": ["sarcastic undermining of their pretended righteousness", "ironic denunciation", "prophetic sarcasm"],
+        "explanation": "Calling their works ‘your righteousness’ while declaring that these will not help them is an ironic use of the term, exposing their ‘righteousness’ as illusory.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Isaiah 57:13",
+    "deliberation": "I looked at the fate of their ‘gatherings’ and the contrast with those who trust in God. The phrase ‘a wind shall lift them up, a breath shall carry them away’ metaphorically depicts the utter transience and powerlessness of their supports (idols/allies).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֶת־כֻּלָּם יִשָּׂא־רוּחַ יִקַּח־הָבֶל",
+        "english_text": "and all of them a wind shall lift up, a breath shall carry away",
+        "target": ["their ‘gatherings’ or collections (of idols/supporters) and their hoped-for help", "false supports", "religious-political securities"],
+        "vehicle": ["chaff-like objects borne off effortlessly by wind/breath", "light debris scattered by air currents", "natural forces"],
+        "ground": ["frailty, ephemerality, and inability to withstand trial", "instability and impotence", "existential condition"],
+        "posture": ["disparaging their supports as weightless and transient", "warning of certain, easy removal", "prophetic threat"],
+        "explanation": "The supports they rely on are pictured as insubstantial things that a mere wind or breath can carry away, highlighting their total helplessness compared to those who trust in YHWH.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Isaiah 57:14",
+    "deliberation": "I considered whether the road-building is literal or figurative. In Isaiah’s usage (‘prepare the way’), the commands to build up the road and remove obstacles form a metaphor for preparing access to salvation/God, where ‘stumbling blocks’ represent spiritual or practical hindrances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "סֹלּוּ־סֹלּוּ פַּנּוּ־דָרֶךְ הָרִימוּ מִכְשׁוֹל מִדֶּרֶךְ עַמִּי",
+        "english_text": "Build up, build up a highway! Clear a road! Remove every obstacle from the road of My people!",
+        "target": ["the process of restoring God’s people to relationship and to their land", "salvific renewal and return", "covenant restoration"],
+        "vehicle": ["constructing and clearing a road, removing physical obstacles", "road engineering and path-clearing", "infrastructure/transport"],
+        "ground": ["eliminating hindrances, creating free access, making movement easy and direct", "facilitated approach", "movement/relationship dynamics"],
+        "posture": ["encouragement and command to remove barriers to restoration", "positive, hopeful exhortation", "prophetic promise"],
+        "explanation": "The commands to build and clear a highway metaphorically describe removing spiritual and practical hindrances so that God’s people can freely advance into His promised restoration.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Isaiah 57:15",
+    "deliberation": "I noted two main figurative patterns: (1) God’s exaltation portrayed by spatial height (‘high and lifted up,’ dwelling in the height), and (2) the ‘reviving’ of the broken spirit/heart, which uses life imagery for spiritual restoration and treats ‘spirit/heart’ as the inner person.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי כֹה אָמַר רָם וְנִשָּׂא ... מָרוֹם וְקָדוֹשׁ אֶשְׁכּוֹן",
+        "english_text": "For thus says the One who is high and lifted up ... ‘In the high and holy place I dwell’",
+        "target": ["God’s incomparable transcendence and holiness", "divine status", "theology of God"],
+        "vehicle": ["being high and lifted up, dwelling in the height", "elevated spatial position", "vertical space"],
+        "ground": ["supremacy, separation from ordinary creatures, majesty", "superiority and inaccessibility", "status and power"],
+        "posture": ["assertion of God’s exalted nature as the backdrop for His mercy", "theological proclamation", "doxological rhetoric"],
+        "explanation": "God’s transcendence is portrayed through vertical-spatial imagery—being ‘high and lifted up,’ dwelling in the ‘height’—a metaphor for supreme exaltation and holiness.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְהַחֲיוֹת רוּחַ שְׁפָלִים וּלְהַחֲיוֹת לֵב נִדְכָּאִים",
+        "english_text": "to revive the spirit of the lowly and to revive the heart of the crushed",
+        "target": ["the inner condition of humbled, broken people", "spiritual-psychological state", "penitent humans"],
+        "vehicle": ["reviving a spirit/heart that has lost life", "bringing something dead/near death back to life", "vital biological processes"],
+        "ground": ["restoring vitality, hope, and strength where there was collapse and despair", "renewed liveliness vs. deadness", "life vs. death"],
+        "posture": ["gracious assurance of deep inward restoration", "comforting promise", "pastoral rhetoric"],
+        "explanation": "‘Revive the spirit/heart’ metaphorically portrays God’s work as giving life again to the inner person whose courage and hope have been crushed.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Isaiah 57:16",
+    "deliberation": "I looked for metaphors and idioms. The main figurative feature is the use of ‘spirit’ and ‘souls’ (נשׁמות) to denote human beings collectively; that is a metonymy. The rest (God’s contention and anger) can be read in straightforward covenantal-legal terms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי־רוּחַ מִלְּפָנַי יַעֲטוֹף וּנְשָׁמוֹת אֲנִי עָשִׂיתִי",
+        "english_text": "for a spirit would grow faint before Me, and souls are what I have made",
+        "target": ["human beings who are subject to God’s judgment", "the human population", "humanity/Israel"],
+        "vehicle": ["spirit and souls as the inner-breath/life of persons", "non-material life-principle terms", "anthropological concepts"],
+        "ground": ["the life given by God that can be exhausted by His wrath", "dependence and fragility of human life", "creatureliness"],
+        "posture": ["stressing God’s compassion based on human frailty", "mitigating tone in judgment", "theological rationale"],
+        "explanation": "‘Spirit’ and ‘souls’ stand metonymically for the human beings God has made, whose inner life would be crushed by unending wrath.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Isaiah 57:17",
+    "deliberation": "The key figurative element is ‘he went backsliding in the way of his heart’—the ‘way of the heart’ is a path metaphor for following one’s inner inclinations rather than God’s way.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיֵּלֶךְ שׁוֹבָב בְּדֶרֶךְ לִבּוֹ",
+        "english_text": "and he went, backsliding, in the way of his heart",
+        "target": ["the person/people’s self-directed sinful conduct", "behavioral pattern", "Israel’s moral life"],
+        "vehicle": ["walking along a ‘way’ that belongs to the heart", "taking a path determined by inner impulses", "journey imagery"],
+        "ground": ["persistent pursuit of one’s own desires, turning from God’s path", "self-willed direction vs. obedience", "ethics"],
+        "posture": ["depicts their stubbornness as choosing their own road over God’s", "negative moral evaluation", "prophetic rebuke"],
+        "explanation": "The ‘way of his heart’ is a metaphor where inner desires (‘heart’) map onto a roadway that the sinner travels, highlighting self-directed backsliding.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Isaiah 57:18",
+    "deliberation": "Two main figures appear: (1) ‘his ways’ (דרכיו) as the now-familiar path metaphor for conduct, and (2) ‘I will heal him’ using sickness/healing imagery for spiritual-moral restoration and forgiveness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דְּרָכָיו רָאִיתִי",
+        "english_text": "I have seen his ways",
+        "target": ["the person/people’s patterns of life and conduct", "behavioral trajectories", "moral-religious life"],
+        "vehicle": ["‘ways’ as literal roads/routes walked", "travel paths", "spatial movement"],
+        "ground": ["a habitual course taken repeatedly, directionality, and destination", "pattern and orientation of life", "ethics"],
+        "posture": ["acknowledgment of their actual behavior, as a basis for mercy", "realistic assessment", "prophetic narration"],
+        "explanation": "‘Ways’ metaphorically denotes their conduct, likening their moral choices to roads along which they travel.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֶרְפָּאֵהוּ",
+        "english_text": "and I will heal him",
+        "target": ["their damaged spiritual/moral condition and broken relationship with God", "inner and communal brokenness", "covenant standing"],
+        "vehicle": ["healing an ill or wounded body", "medical restoration from sickness", "physical health"],
+        "ground": ["removal of dysfunction, restoration to wholeness and well-being", "repair and renewal", "health vs. disease"],
+        "posture": ["tender promise of restorative grace after judgment", "comforting assurance", "salvific rhetoric"],
+        "explanation": "God’s forgiveness and restoration are portrayed as ‘healing,’ mapping spiritual-moral brokenness onto bodily sickness that the divine Physician cures.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Isaiah 57:19",
+    "deliberation": "I noted three distinct figures: (1) ‘fruit/produce of the lips’ (ניב שפתים) for spoken words, (2) ‘peace, peace to the far and to the near’ as a merism for all whom God restores, and (3) ‘I will heal him’ continuing the healing metaphor for spiritual restoration.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בּוֹרֵא נִיב שְׂפָתָיִם",
+        "english_text": "creating the fruit (produce) of the lips",
+        "target": ["the words of peace/healing that God causes to be spoken", "verbal expressions", "speech/praise"],
+        "vehicle": ["fruit/produce growing from lips as from a plant", "agricultural yield", "plant life"],
+        "ground": ["that speech issues forth from a source and can be abundant, beneficial output", "productivity and result", "communication"],
+        "posture": ["depicts God as author of restorative speech and praise", "theological affirmation", "worship rhetoric"],
+        "explanation": "‘Fruit of the lips’ metaphorically describes spoken words (especially praise and peace-proclamations) as produce that lips ‘grow,’ emphasizing God’s role in generating them.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "שָׁלוֹם שָׁלוֹם לָרָחוֹק וְלַקָּרוֹב",
+        "english_text": "Peace, peace to the far and to the near",
+        "target": ["all those whom God restores, regardless of distance/status", "beneficiaries of salvation", "people in relation to God"],
+        "vehicle": ["the pair ‘far’ and ‘near’ spanning extremes of distance", "spatial polarities", "space"],
+        "ground": ["total inclusiveness across the spectrum, from one extreme to the other", "comprehensiveness", "scope of grace"],
+        "posture": ["emphasizes the wide reach of God’s peace", "inclusive promise", "comforting rhetoric"],
+        "explanation": "‘To the far and to the near’ functions as a merism, using spatial extremes to signify all whom God calls into His peace, whether distant or close.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּרְפָאתִיו",
+        "english_text": "and I will heal him",
+        "target": ["the spiritual-moral wounds of those far and near", "inner and communal brokenness", "covenant relationship"],
+        "vehicle": ["healing of illness or injury", "medical restoration", "physical health"],
+        "ground": ["repairing damage, restoring wholeness and functionality", "cure and renewal", "health vs. disease"],
+        "posture": ["affirms concrete restorative action accompanying the proclamation of peace", "reassuring promise", "salvific rhetoric"],
+        "explanation": "As in v.18, ‘I will heal him’ uses bodily healing as a metaphor for God’s restorative work on the spiritually and communally broken.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Isaiah 57:20",
+    "deliberation": "The verse contains an explicit simile—‘the wicked are like the troubled sea’—and then personifies the sea (it cannot rest; its waters drive out mire and mud), extending the image of restless wickedness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָרְשָׁעִים כַּיָּם נִגְרָשׁ",
+        "english_text": "But the wicked are like the troubled sea that cannot rest",
+        "target": ["the inner and outward condition of the wicked", "moral-psychological state", "impious humans"],
+        "vehicle": ["a storm-tossed sea driven and churned", "restless, agitated body of water", "natural phenomenon (sea)"],
+        "ground": ["constant agitation, lack of rest, inability to be calm", "restlessness and turmoil", "psychology/ethics"],
+        "posture": ["sharp characterization of wickedness as inherently chaotic", "negative moral portrayal", "prophetic warning"],
+        "explanation": "The wicked are explicitly likened to a driven, stormy sea—this simile captures their inner unrest and unstable behavior.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי הַשְׁקֵט לֹא יוּכַל וַיִּגְרְשׁוּ מֵימָיו רֶפֶשׁ וָטִיט",
+        "english_text": "for it cannot be still, and its waters toss up mire and mud",
+        "target": ["again, the nature and effects of wickedness", "ongoing activity and consequences of the wicked", "moral conduct and its fallout"],
+        "vehicle": ["a sea that ‘cannot rest’ and whose waters ‘drive out’ muck", "sea acting with will and force", "natural element endowed with agency"],
+        "ground": ["inability to cease harmful activity and the continual production of moral filth and harm", "ceaseless, polluting activity", "ethics/social impact"],
+        "posture": ["vividly condemns the unceasing and polluting activity of the wicked", "intensified negative portrayal", "prophetic invective"],
+        "explanation": "The sea is personified as an agent that cannot rest and that actively hurls out dirt, mirroring how the wicked inexorably churn out moral and social pollution.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Isaiah 57:21",
+    "deliberation": "‘There is no peace for the wicked’ is a proverbial, but essentially straightforward, theological statement. Though ‘peace’ (שָׁלוֹם) is rich in meaning, the sentence itself does not employ a distinct metaphor, simile, or other figure beyond standard abstract language.",
+    "instances": []
+  }
+]
