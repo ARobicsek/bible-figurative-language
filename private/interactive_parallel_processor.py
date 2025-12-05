@@ -30,6 +30,39 @@ from flexible_tagging_gemini_client import FlexibleTaggingGeminiClient
 # OpenAI import for batched processing
 from openai import OpenAI
 
+def has_corrupted_hebrew(text):
+    """Check if Hebrew text contains corruption patterns"""
+    # Look for common corruption patterns seen in the logs
+    corruption_patterns = [
+        'x�',      # x followed by replacement character
+        '\x00',    # Null bytes
+        'x\\',     # x followed by backslash (incomplete escape)
+        'x"',      # x followed by quote (incomplete sequence)
+        'x\x7f',   # x followed by control characters
+    ]
+
+    # Also check for sequences that look like corrupted UTF-8
+    # Hebrew text should be in the range \u0590-\u05FF
+    # Corrupted sequences often have x followed by non-Hebrew chars
+    # Pattern: x followed by any combination of non-Hebrew chars and special symbols
+    corrupted_pattern = re.compile(r'x[^\u0590-\u05FFa-zA-Z0-9\s\.,;:\'"!?()\[\]{}\-]*[^\u0590-\u05FFa-zA-Z0-9\s\.,;:\'"!?()\[\]{}\-]')
+
+    # Check for known corruption patterns
+    for pattern in corruption_patterns:
+        if pattern in text:
+            return True
+
+    # Check for the corrupted Hebrew pattern
+    if corrupted_pattern.search(text):
+        return True
+
+    # Check for excessive non-printable characters (except newlines and tabs)
+    non_printable = sum(1 for c in text if ord(c) < 32 and c not in '\n\r\t')
+    if non_printable > len(text) * 0.1:  # More than 10% non-printable
+        return True
+
+    return False
+
 def setup_logging(log_file, enable_debug=False):
     """Setup optimized logging with level filtering"""
     log_level = logging.DEBUG if enable_debug else logging.INFO
@@ -87,7 +120,7 @@ def get_user_selection():
     books = {
         "Genesis": 50, "Exodus": 40, "Leviticus": 27,
         "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-        "Proverbs": 31
+        "Proverbs": 31, "Isaiah": 66
     }
 
     print("\n=== INTERACTIVE PARALLEL HEBREW FIGURATIVE LANGUAGE PROCESSOR ===")
@@ -285,6 +318,243 @@ def get_user_selection():
         'max_workers': max_workers,
         'enable_debug': enable_debug
     }
+
+def save_raw_response(response_text, book_name, chapter):
+    """Save raw API response for debugging"""
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"debug_response_{book_name}_{chapter}_{timestamp}.json"
+    filepath = os.path.join("debug", filename)
+
+    os.makedirs("debug", exist_ok=True)
+
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(response_text)
+
+    return filepath
+
+def extract_individual_verses(json_text, logger):
+    """Extract individual verse objects from malformed JSON"""
+    verses = []
+
+    # Look for verse patterns in the JSON
+    verse_pattern = r'"verse":\s*(\d+)'
+    verse_matches = list(re.finditer(verse_pattern, json_text))
+
+    logger.info(f"Found {len(verse_matches)} verse patterns in malformed JSON")
+
+    for i, match in enumerate(verse_matches):
+        verse_num = match.group(1)
+        start_pos = match.start()
+
+        # Find the start of this verse object
+        obj_start = json_text.rfind('{', 0, start_pos)
+
+        # Find the end of this verse object
+        if i < len(verse_matches) - 1:
+            next_match = verse_matches[i + 1]
+            obj_end = json_text.rfind('}', 0, next_match.start())
+        else:
+            obj_end = json_text.rfind('}', start_pos)
+
+        if obj_start != -1 and obj_end != -1 and obj_end > obj_start:
+            verse_json = json_text[obj_start:obj_end + 1]
+
+            # Try to complete this object
+            open_braces = verse_json.count('{')
+            close_braces = verse_json.count('}')
+
+            for _ in range(open_braces - close_braces):
+                verse_json += '}'
+
+            try:
+                verse_obj = json.loads(verse_json)
+                verses.append(verse_obj)
+                logger.debug(f"Successfully extracted verse {verse_num}")
+            except json.JSONDecodeError:
+                # Try to repair common issues
+                verse_json = verse_json.rstrip(',').rstrip()
+                try:
+                    verse_obj = json.loads(verse_json)
+                    verses.append(verse_obj)
+                    logger.debug(f"Successfully extracted verse {verse_num} after repair")
+                except:
+                    logger.warning(f"Could not parse verse {verse_num} object")
+
+    return verses
+
+def process_validation_result(validation_result: Dict, instance_id_to_db_id: Dict,
+                               db_manager, logger) -> Tuple[bool, Optional[int]]:
+    """
+    Process a single validation result and update the database.
+
+    Args:
+        validation_result: Dict with 'instance_id' and 'validation_results'
+        instance_id_to_db_id: Mapping from instance_id to database ID
+        db_manager: DatabaseManager instance
+        logger: Logger instance
+
+    Returns:
+        Tuple of (success: bool, db_id: Optional[int])
+    """
+    instance_id = validation_result.get('instance_id')
+    results = validation_result.get('validation_results', {})
+
+    db_id = instance_id_to_db_id.get(instance_id)
+    if not db_id:
+        logger.error(f"Could not find DB ID for instance_id {instance_id}")
+        return False, None
+
+    any_valid = False
+    validation_data = {}
+
+    # Initialize all final fields to 'no'
+    for fig_type in ['simile', 'metaphor', 'personification', 'idiom',
+                     'hyperbole', 'metonymy', 'other']:
+        validation_data[f'final_{fig_type}'] = 'no'
+
+    # Process each figurative type result
+    for fig_type, result in results.items():
+        decision = result.get('decision')
+        reason = result.get('reason', '')
+        reclassified_type = result.get('reclassified_type')
+
+        if decision == 'RECLASSIFIED' and reclassified_type:
+            validation_data[f'validation_decision_{fig_type}'] = 'RECLASSIFIED'
+            validation_data[f'validation_reason_{fig_type}'] = f"Reclassified to {reclassified_type}: {reason}"
+            validation_data[f'final_{reclassified_type}'] = 'yes'
+            any_valid = True
+            logger.debug(f"RECLASSIFIED: {fig_type} → {reclassified_type}")
+        elif decision == 'VALID':
+            validation_data[f'validation_decision_{fig_type}'] = 'VALID'
+            validation_data[f'validation_reason_{fig_type}'] = reason
+            validation_data[f'final_{fig_type}'] = 'yes'
+            any_valid = True
+            logger.debug(f"VALID: {fig_type}")
+        else:  # INVALID
+            validation_data[f'validation_decision_{fig_type}'] = 'INVALID'
+            validation_data[f'validation_reason_{fig_type}'] = reason
+            logger.debug(f"INVALID: {fig_type}")
+
+    validation_data['final_figurative_language'] = 'yes' if any_valid else 'no'
+    validation_data['validation_response'] = json.dumps({
+        'instance_id': instance_id,
+        'validation_results': results,
+        'timestamp': datetime.now().isoformat()
+    })
+    validation_data['validation_error'] = None
+
+    # Update database
+    db_manager.update_validation_data(db_id, validation_data)
+    logger.debug(f"Validation data updated for DB ID: {db_id}")
+
+    return True, db_id
+
+
+def recover_missing_validations(db_manager, validator, book_name: str, chapter: int,
+                                 logger) -> Dict:
+    """
+    Identify and recover missing validation data for a chapter.
+
+    Args:
+        db_manager: DatabaseManager instance
+        validator: MetaphorValidator instance
+        book_name: Book name
+        chapter: Chapter number
+        logger: Logger instance
+
+    Returns:
+        Dict with recovery statistics
+    """
+    stats = {
+        'total_missing': 0,
+        'recovered': 0,
+        'failed': 0
+    }
+
+    logger.info(f"[RECOVERY] Checking for missing validations in {book_name} {chapter}")
+
+    # Query for instances missing validation
+    db_manager.cursor.execute("""
+        SELECT fl.id, fl.verse_id, fl.figurative_text, fl.figurative_text_in_hebrew,
+               fl.explanation, fl.confidence,
+               fl.simile, fl.metaphor, fl.personification,
+               fl.idiom, fl.hyperbole, fl.metonymy, fl.other,
+               v.hebrew_text, v.english_text, v.reference
+        FROM figurative_language fl
+        JOIN verses v ON fl.verse_id = v.id
+        WHERE v.book = ? AND v.chapter = ?
+        AND (
+            fl.validation_decision_simile IS NULL AND
+            fl.validation_decision_metaphor IS NULL AND
+            fl.validation_decision_personification IS NULL AND
+            fl.validation_decision_idiom IS NULL AND
+            fl.validation_decision_hyperbole IS NULL AND
+            fl.validation_decision_metonymy IS NULL AND
+            fl.validation_decision_other IS NULL
+        )
+    """, (book_name, chapter))
+
+    missing_instances = db_manager.cursor.fetchall()
+    stats['total_missing'] = len(missing_instances)
+
+    if not missing_instances:
+        logger.info(f"[RECOVERY] No missing validations found for {book_name} {chapter}")
+        return stats
+
+    logger.warning(f"[RECOVERY] Found {len(missing_instances)} instances missing validation")
+
+    # Prepare instances for validation
+    instances_to_validate = []
+    id_mapping = {}  # instance_id -> db_id
+
+    for i, row in enumerate(missing_instances):
+        instance_id = i + 1
+        id_mapping[instance_id] = row['id']
+
+        instance = {
+            'instance_id': instance_id,
+            'verse_reference': row['reference'],
+            'hebrew_text': row['hebrew_text'],
+            'english_text': row['english_text'],
+            'figurative_text': row['figurative_text'] or '',
+            'explanation': row['explanation'] or '',
+            'simile': row['simile'],
+            'metaphor': row['metaphor'],
+            'personification': row['personification'],
+            'idiom': row['idiom'],
+            'hyperbole': row['hyperbole'],
+            'metonymy': row['metonymy'],
+            'other': row['other']
+        }
+        instances_to_validate.append(instance)
+
+    # Validate in batches of 10
+    batch_size = 10
+    for i in range(0, len(instances_to_validate), batch_size):
+        batch = instances_to_validate[i:i + batch_size]
+        logger.info(f"[RECOVERY] Validating batch {i//batch_size + 1} ({len(batch)} instances)")
+
+        try:
+            validation_results = validator.validate_chapter_instances(batch)
+
+            for result in validation_results:
+                success, db_id = process_validation_result(
+                    result, id_mapping, db_manager, logger
+                )
+                if success:
+                    stats['recovered'] += 1
+                else:
+                    stats['failed'] += 1
+
+        except Exception as e:
+            logger.error(f"[RECOVERY] Batch validation failed: {e}")
+            stats['failed'] += len(batch)
+
+    db_manager.commit()
+
+    logger.info(f"[RECOVERY] Complete: {stats['recovered']} recovered, {stats['failed']} failed")
+    return stats
+
 
 def process_chapter_batched(verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger):
     """Process an entire chapter in a single batched API call (GPT-5.1 MEDIUM)
@@ -486,34 +756,120 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
 
         # Use streaming to avoid the 1023-character truncation issue
         # This ensures we capture the complete response without buffering limits
-        stream = openai_client.chat.completions.create(
-            model="gpt-5.1",
-            messages=[
-                {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language analysis."},
-                {"role": "user", "content": batched_prompt}
-            ],
-            max_completion_tokens=65536,
-            reasoning_effort="medium",
-            stream=True  # Enable streaming to avoid truncation
-        )
-
-        # Collect the streamed response
+        # Enhanced with corruption detection and recovery
+        max_stream_retries = 3
         response_text = ""
-        chunk_count = 0
+        skipped_verses = set()  # Track which verses had corruption
+        corrupted_chunks = 0    # Count total corrupted chunks
 
-        for chunk in stream:
-            if chunk.choices and chunk.choices[0].delta.content:
-                response_text += chunk.choices[0].delta.content
-                chunk_count += 1
+        for stream_attempt in range(max_stream_retries):
+            try:
+                logger.info(f"Stream attempt {stream_attempt + 1}/{max_stream_retries}")
+                stream = openai_client.chat.completions.create(
+                    model="gpt-5.1",
+                    messages=[
+                        {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language analysis."},
+                        {"role": "user", "content": batched_prompt}
+                    ],
+                    max_completion_tokens=65536,
+                    reasoning_effort="medium",
+                    stream=True  # Enable streaming to avoid truncation
+                )
 
-                # Log progress every 100 chunks
-                if chunk_count % 100 == 0:
-                    logger.debug(f"Received {chunk_count} chunks, response length: {len(response_text)} chars")
+                # Collect the streamed response with corruption detection
+                response_text = ""
+                chunk_count = 0
+                last_valid_content = ""
+                current_verse = None  # Track which verse we're currently parsing
+
+                for chunk in stream:
+                    if chunk.choices and chunk.choices[0].delta.content:
+                        content = chunk.choices[0].delta.content
+
+                        # Check for corruption patterns
+                        if '\x00' in content or '�' in content or 'x�' in content:
+                            logger.warning(f"Detected corrupted chunk at chunk {chunk_count} - skipping")
+                            corrupted_chunks += 1
+
+                            # Try to identify which verse was affected
+                            # Look for verse patterns in recent content
+                            verse_match = re.search(r'"verse":\s*(\d+)', last_valid_content[-200:] if last_valid_content else "")
+                            if verse_match:
+                                current_verse = int(verse_match.group(1))
+                                skipped_verses.add(current_verse)
+                                logger.warning(f"Marked verse {current_verse} as potentially corrupted")
+                            continue  # Skip corrupted chunk
+
+                        # Validate UTF-8 encoding
+                        try:
+                            content.encode('utf-8').decode('utf-8')
+
+                            # Additional Hebrew text validation
+                            if has_corrupted_hebrew(content):
+                                logger.warning(f"Hebrew corruption detected in chunk {chunk_count} - skipping")
+                                corrupted_chunks += 1
+                                continue
+
+                            response_text += content
+                            last_valid_content = response_text
+                            chunk_count += 1
+
+                            # Track current verse for better error reporting
+                            verse_match = re.search(r'"verse":\s*(\d+)', content)
+                            if verse_match:
+                                current_verse = int(verse_match.group(1))
+
+                        except UnicodeError as e:
+                            logger.warning(f"Unicode error in chunk {chunk_count}: {e}")
+                            corrupted_chunks += 1
+                            if current_verse:
+                                skipped_verses.add(current_verse)
+                            continue
+
+                        # Log progress every 100 chunks
+                        if chunk_count % 100 == 0:
+                            logger.debug(f"Received {chunk_count} chunks, response length: {len(response_text)} chars")
+
+                # If we get here, streaming completed successfully
+                logger.info(f"Streaming completed in attempt {stream_attempt + 1}")
+                break  # Exit retry loop on success
+
+            except Exception as e:
+                logger.error(f"Streaming error on attempt {stream_attempt + 1}: {e}")
+                if stream_attempt < max_stream_retries - 1:
+                    logger.info(f"Retrying in 5 seconds...")
+                    time.sleep(5)
+                    continue
+                else:
+                    # All retries failed, try non-streaming fallback
+                    logger.warning("All streaming attempts failed - falling back to non-streaming mode")
+                    try:
+                        logger.info("Making non-streaming API call as fallback...")
+                        response = openai_client.chat.completions.create(
+                            model="gpt-5.1",
+                            messages=[
+                                {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language analysis."},
+                                {"role": "user", "content": batched_prompt}
+                            ],
+                            max_completion_tokens=65536,
+                            reasoning_effort="medium",
+                            stream=False
+                        )
+                        response_text = response.choices[0].message.content
+                        logger.info("Non-streaming fallback successful")
+                    except Exception as fallback_error:
+                        logger.error(f"Non-streaming fallback also failed: {fallback_error}")
+                        response_text = last_valid_content if last_valid_content else ""
+                        logger.warning(f"Using last known good state ({len(response_text)} chars)")
 
         api_time = time.time() - api_start
 
         logger.info(f"Streaming completed in {api_time:.1f}s ({chunk_count} chunks)")
         logger.info(f"Total response length: {len(response_text)} characters")
+
+        # Save raw response for debugging
+        saved_file = save_raw_response(response_text, book_name, chapter)
+        logger.info(f"Saved raw response to {saved_file}")
 
         # Store original streaming text in case fallback overwrites it
         original_streaming_text = response_text
@@ -566,7 +922,7 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
         ]
 
         if any(truncation_indicators):
-            logger.error("⚠️  TRUNCATION DETECTED! Response shows signs of being cut off")
+            logger.error("TRUNCATION DETECTED! Response shows signs of being cut off")
             logger.error(f"Response length: {len(response_text)} characters")
             logger.error(f"Ends with: {repr(response_text[-50:])}")
 
@@ -676,7 +1032,16 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
             verse_results = json.loads(json_text)
         except json.JSONDecodeError as e:
             logger.error(f"JSON parsing failed: {e}")
+            logger.error(f"Error at line {e.lineno}, column {e.colno}")
             logger.error(f"JSON text length: {len(json_text)} chars")
+
+            # Show context around error
+            error_pos = e.colno - 1
+            context_start = max(0, error_pos - 100)
+            context_end = min(len(json_text), error_pos + 100)
+
+            logger.error(f"Context around error:")
+            logger.error(f"...{json_text[context_start:error_pos]}<ERROR>{json_text[error_pos:context_end]}...")
             logger.error(f"JSON text (first 1000 chars): {json_text[:1000]}")
             logger.error(f"JSON text (last 1000 chars): {json_text[-1000:] if len(json_text) > 1000 else json_text}")
 
@@ -697,7 +1062,28 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                 logger.info(f"Structure analysis: {open_braces} {{ vs {close_braces} }}, {open_brackets} [ vs {close_brackets} ]")
 
                 # Find the last valid position in the JSON
-                if e.msg == "Expecting ',' delimiter":
+                if e.msg == "Unterminated string":
+                    logger.info("Attempting to fix unterminated string...")
+                    error_pos = e.colno - 1
+
+                    # Simple fix: just insert a quote at the error position
+                    # This is a common issue where the closing quote is missing
+                    repaired_json = repaired_json[:error_pos] + '"' + repaired_json[error_pos:]
+                    logger.info(f"Inserted quote at position {error_pos} to fix unterminated string")
+
+                    # Now close the structure
+                    missing_braces = open_braces - close_braces
+                    missing_brackets = open_brackets - close_brackets
+
+                    # Add closing brackets first (inner structures)
+                    for _ in range(missing_brackets):
+                        repaired_json += ']'
+
+                    # Add closing braces (outer structures)
+                    for _ in range(missing_braces):
+                        repaired_json += '}'
+
+                elif e.msg == "Expecting ',' delimiter":
                     # Try to complete the current object/array
                     pos = e.colno - 1  # Adjust for 0-based indexing
                     # Look for the last complete property or value
@@ -758,12 +1144,40 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                     logger.error(f"Basic JSON repair failed: {e2}")
                     logger.error(f"Repaired JSON (first 1000 chars): {repaired_json[:1000]}")
                     logger.error(f"Repaired JSON (last 1000 chars): {repaired_json[-1000:] if len(repaired_json) > 1000 else repaired_json}")
-                    raise
+
+                    # If all repair attempts fail, try verse-level extraction
+                    logger.warning("JSON repair failed, attempting verse-level extraction...")
+                    verse_results = extract_individual_verses(json_text, logger)
+
+                    if verse_results:
+                        logger.info(f"Successfully extracted {len(verse_results)} verses using fallback method")
+                    else:
+                        logger.error("All JSON parsing strategies failed")
+                        raise ValueError("Could not parse JSON response with any strategy")
 
         if not isinstance(verse_results, list):
             raise ValueError(f"Expected JSON array, got {type(verse_results)}")
 
         logger.info(f"Parsed {len(verse_results)} verse results")
+
+        # Validate verse results before processing
+        if not verse_results:
+            raise ValueError("No verse results parsed from response")
+
+        # Validate verse structure
+        valid_verses = []
+        for vr in verse_results:
+            if 'verse' in vr and isinstance(vr['verse'], int):
+                valid_verses.append(vr)
+            else:
+                logger.warning(f"Skipping invalid verse result: {vr}")
+
+        verse_results = valid_verses
+
+        if not verse_results:
+            raise ValueError("No valid verse results found after filtering")
+
+        logger.info(f"After validation: {len(verse_results)} valid verses")
 
         # Calculate detection statistics
         total_instances = sum(len(vr.get('instances', [])) for vr in verse_results)
@@ -946,63 +1360,58 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                 for instance in all_chapter_instances:
                     instance_id_to_db_id[instance.get('instance_id')] = instance.get('db_id')
 
-                # Process validation results
+                # Track validation processing using shared function
+                processed_validation_ids = set()
+
+                # Process validation results using shared function
                 for validation_result in bulk_validation_results:
-                    instance_id = validation_result.get('instance_id')
-                    results = validation_result.get('validation_results', {})
+                    success, db_id = process_validation_result(
+                        validation_result, instance_id_to_db_id, db_manager, logger
+                    )
+                    if success:
+                        processed_validation_ids.add(validation_result.get('instance_id'))
 
-                    db_id = instance_id_to_db_id.get(instance_id)
+                # Check for missing validation IDs
+                expected_instance_ids = set(instance_id_to_db_id.keys())
+                missing_validation_ids = expected_instance_ids - processed_validation_ids
 
-                    if not db_id:
-                        logger.error(f"Could not find DB ID for validation result with instance_id {instance_id}")
-                        continue
+                if missing_validation_ids:
+                    logger.error(f"VALIDATION GAP: {len(missing_validation_ids)} instances missing validation results")
+                    logger.error(f"Missing instance IDs: {sorted(missing_validation_ids)}")
+                    logger.error(f"This indicates a validation API response parsing issue")
 
-                    any_valid = False
-                    validation_data = {}
-                    for fig_type in ['simile', 'metaphor', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
-                        validation_data[f'final_{fig_type}'] = 'no'
-
-                    for fig_type, result in results.items():
-                        decision = result.get('decision')
-                        reason = result.get('reason', '')
-                        reclassified_type = result.get('reclassified_type')
-
-                        if decision == 'RECLASSIFIED' and reclassified_type:
-                            validation_data[f'validation_decision_{fig_type}'] = 'RECLASSIFIED'
-                            validation_data[f'validation_reason_{fig_type}'] = f"Reclassified to {reclassified_type}: {reason}"
-                            validation_data[f'final_{reclassified_type}'] = 'yes'
-                            any_valid = True
-                            logger.debug(f"RECLASSIFIED: {fig_type} → {reclassified_type}")
-                        elif decision == 'VALID':
-                            validation_data[f'validation_decision_{fig_type}'] = 'VALID'
-                            validation_data[f'validation_reason_{fig_type}'] = reason
-                            validation_data[f'final_{fig_type}'] = 'yes'
-                            any_valid = True
-                            logger.debug(f"VALID: {fig_type}")
-                        else:  # INVALID
-                            validation_data[f'validation_decision_{fig_type}'] = 'INVALID'
-                            validation_data[f'validation_reason_{fig_type}'] = reason
-                            logger.debug(f"INVALID: {fig_type}")
-
-                    validation_data['final_figurative_language'] = 'yes' if any_valid else 'no'
-
-                    # Update database with validation results
-                    db_manager.update_validation_data(db_id, validation_data)
-                    logger.debug(f"Validation data updated for ID: {db_id}")
+                    # Log details for debugging
+                    for missing_id in sorted(missing_validation_ids):
+                        db_id = instance_id_to_db_id.get(missing_id)
+                        logger.error(f"  Instance ID {missing_id} (DB ID: {db_id}) did not receive validation")
 
                 logger.info(f"[BATCHED VALIDATION] Completed single API call for {total_instances} instances")
+                logger.info(f"[BATCHED VALIDATION] Processed {len(processed_validation_ids)} validation results")
+                if missing_validation_ids:
+                    logger.error(f"[BATCHED VALIDATION] WARNING: {len(missing_validation_ids)} instances did not receive validation")
+                    logger.info(f"[BATCHED VALIDATION] Auto-recovery will run at end of processing session")
 
                 # VALIDATION PREVENTION MEASURES: Post-update verification checkpoint
                 try:
                     # Quick verification that validation data was actually written to database
                     verification_results = db_manager.verify_validation_data_for_chapter(book_name, chapter)
 
-                    if verification_results['validation_coverage_rate'] < 95.0:
-                        logger.error(f"VALIDATION COVERAGE WARNING: Only {verification_results['validation_coverage_rate']:.1f}% of instances have validation data")
-                        logger.error(f"Expected: {len(all_chapter_instances)} instances, With validation: {verification_results['instances_with_validation']}")
-                        logger.error(f"RECOMMENDATION: Run universal_validation_recovery.py --database {{db_path}} --chapters {chapter}")
+                    # Check if we got valid results
+                    if 'error' in verification_results:
+                        logger.error(f"Verification failed: {verification_results['error']}")
                     else:
-                        logger.info(f"VALIDATION VERIFICATION PASSED: {verification_results['validation_coverage_rate']:.1f}% coverage")
+                        # Use decision coverage as primary metric, response coverage as secondary
+                        coverage_rate = max(
+                            verification_results.get('validation_coverage_rate', 0),  # Based on validation_response
+                            verification_results.get('decision_coverage_rate', 0)      # Based on validation_decision_*
+                        )
+
+                        if coverage_rate < 95.0:
+                            logger.error(f"VALIDATION COVERAGE WARNING: Only {coverage_rate:.1f}% of instances have validation data")
+                            logger.error(f"Expected: {len(all_chapter_instances)} instances, With validation: {verification_results.get('instances_with_decisions', verification_results.get('instances_with_validation', 0))}")
+                            logger.error(f"RECOMMENDATION: Run universal_validation_recovery.py --database {{db_path}} --chapters {chapter}")
+                        else:
+                            logger.info(f"VALIDATION VERIFICATION PASSED: {coverage_rate:.1f}% coverage")
 
                 except Exception as verify_error:
                     logger.warning(f"Could not perform validation verification checkpoint: {verify_error}")
@@ -1016,6 +1425,18 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
 
         processing_time = time.time() - start_time
         total_cost = token_metadata.get('cost', 0)
+
+        # Log corruption and skipped verses summary
+        if corrupted_chunks > 0:
+            logger.warning(f"STREAM CORRUPTION DETECTED: {corrupted_chunks} corrupted chunks were skipped during streaming")
+
+        if skipped_verses:
+            sorted_skipped = sorted(skipped_verses)
+            logger.warning(f"VERSES WITH CORRUPTION: The following verses may have incomplete data due to corrupted chunks: {sorted_skipped}")
+            logger.warning(f"   Total affected verses: {len(sorted_skipped)} out of {len(verses_data)}")
+            logger.info("   Recommendation: Review these verses manually or reprocess this chapter")
+        elif corrupted_chunks == 0:
+            logger.info("No corruption detected - all verses processed successfully")
 
         return verses_stored, instances_stored, processing_time, len(verses_data), total_cost
 
@@ -1348,8 +1769,16 @@ def process_verses_parallel(verses_to_process, book_name, chapter, flexible_clie
 
                         validation_data['final_figurative_language'] = 'yes' if any_valid else 'no'
 
-                        db_manager.update_validation_data(db_id, validation_data)
-                        logger.debug(f"Validation data updated for ID: {db_id}")
+                    # Store the complete validation response for verification
+                    validation_data['validation_response'] = json.dumps({
+                        'instance_id': instance_id,
+                        'validation_results': results,
+                        'timestamp': datetime.now().isoformat()
+                    })
+                    validation_data['validation_error'] = None  # Explicitly set to None when successful
+
+                    db_manager.update_validation_data(db_id, validation_data)
+                    logger.debug(f"Validation data updated for ID: {db_id}")
 
                 except Exception as e:
                     logger.error(f"Validation failed for {verse_result['reference']}: {e}")
@@ -1376,7 +1805,7 @@ def main():
         valid_books = {
             "Genesis": 50, "Exodus": 40, "Leviticus": 27,
             "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-            "Proverbs": 31
+            "Proverbs": 31, "Isaiah": 66
         }
 
         if book_name not in valid_books:
@@ -1449,7 +1878,7 @@ def main():
                     books_info = {
                         "Genesis": 50, "Exodus": 40, "Leviticus": 27,
                         "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-                        "Proverbs": 31
+                        "Proverbs": 31, "Isaiah": 66
                     }
                     total_chapters += books_info.get(book_name, 25)
                 else:
@@ -1476,7 +1905,7 @@ def main():
     books_info = {
         "Genesis": 50, "Exodus": 40, "Leviticus": 27,
         "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-        "Proverbs": 31
+        "Proverbs": 31, "Isaiah": 66
     }
 
     total_tasks = 0
@@ -1488,7 +1917,7 @@ def main():
             verse_estimates = {
                 "Genesis": 1533, "Exodus": 1213, "Leviticus": 859,
                 "Numbers": 1288, "Deuteronomy": 959, "Psalms": 2461,
-                "Proverbs": 915
+                "Proverbs": 915, "Isaiah": 1292
             }
             estimated_verses = verse_estimates.get(book_name, 1000)  # Default estimate
             total_tasks += estimated_verses
@@ -1571,6 +2000,7 @@ def main():
 
         total_verses, total_instances, total_errors = 0, 0, 0
         all_results = []
+        failed_chapters = []  # Track chapters that failed processing
 
         # Process each book, chapter, and verse selection
         for book_name, chapters in book_selections.items():
@@ -1581,7 +2011,7 @@ def main():
                 books_info = {
                     "Genesis": 50, "Exodus": 40, "Leviticus": 27,
                     "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-                    "Proverbs": 31
+                    "Proverbs": 31, "Isaiah": 66
                 }
                 max_chapters = books_info[book_name]
                 logger.info(f"Processing full book: all {max_chapters} chapters with all verses")
@@ -1593,12 +2023,18 @@ def main():
                     verses_data, _ = sefaria.extract_hebrew_text(f"{book_name}.{chapter}")
                     if not verses_data:
                         logger.error(f"Failed to get text for {book_name} {chapter}")
+                        failed_chapters.append({
+                            'book': book_name,
+                            'chapter': chapter,
+                            'verses_attempted': 0,
+                            'reason': 'Sefaria API failed to return text'
+                        })
                         continue
 
                     logger.info(f"Processing all {len(verses_data)} verses from {book_name} {chapter}")
 
-                    # Use BATCHED processing for Proverbs (GPT-5.1 MEDIUM)
-                    if book_name == "Proverbs":
+                    # Use BATCHED processing for Proverbs and Isaiah (GPT-5.1 MEDIUM)
+                    if book_name in ["Proverbs", "Isaiah"]:
                         logger.info(f"[BATCHED MODE ENABLED] Using GPT-5.1 MEDIUM for {book_name} {chapter}")
 
                         v, i, processing_time, total_attempted, chapter_cost = process_chapter_batched(
@@ -1611,6 +2047,16 @@ def main():
                         logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s (Cost: ${chapter_cost:.4f})")
                         if total_attempted > 0:
                             logger.info(f"Average processing time: {processing_time/total_attempted:.2f}s per verse")
+
+                        # Track failed chapters
+                        if v == 0 and total_attempted > 0:
+                            failed_chapters.append({
+                                'book': book_name,
+                                'chapter': chapter,
+                                'verses_attempted': total_attempted,
+                                'reason': 'Batched processing returned 0 verses (likely JSON parsing failure)'
+                            })
+                            logger.error(f"CHAPTER FAILED: {book_name} {chapter} - 0 verses stored from {total_attempted} attempted")
 
                         db_manager.commit()
                     else:
@@ -1646,6 +2092,12 @@ def main():
                     verses_data, _ = sefaria.extract_hebrew_text(f"{book_name}.{chapter}")
                     if not verses_data:
                         logger.error(f"Failed to get text for {book_name} {chapter}")
+                        failed_chapters.append({
+                            'book': book_name,
+                            'chapter': chapter,
+                            'verses_attempted': 0,
+                            'reason': 'Sefaria API failed to return text'
+                        })
                         continue
 
                     # Filter verses based on user selection
@@ -1667,8 +2119,8 @@ def main():
                             verses_to_process = verses_data
                             logger.info(f"Processing all {len(verses_to_process)} verses from {book_name} {chapter}")
 
-                    # Use BATCHED processing for Proverbs (GPT-5.1 MEDIUM)
-                    if book_name == "Proverbs":
+                    # Use BATCHED processing for Proverbs and Isaiah (GPT-5.1 MEDIUM)
+                    if book_name in ["Proverbs", "Isaiah"]:
                         logger.info(f"[BATCHED MODE ENABLED] Using GPT-5.1 MEDIUM for {book_name} {chapter}")
 
                         v, i, processing_time, total_attempted, chapter_cost = process_chapter_batched(
@@ -1681,6 +2133,16 @@ def main():
                         logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s (Cost: ${chapter_cost:.4f})")
                         if total_attempted > 0:
                             logger.info(f"Average processing time: {processing_time/total_attempted:.2f}s per verse")
+
+                        # Track failed chapters
+                        if v == 0 and total_attempted > 0:
+                            failed_chapters.append({
+                                'book': book_name,
+                                'chapter': chapter,
+                                'verses_attempted': total_attempted,
+                                'reason': 'Batched processing returned 0 verses (likely JSON parsing failure)'
+                            })
+                            logger.error(f"CHAPTER FAILED: {book_name} {chapter} - 0 verses stored from {total_attempted} attempted")
 
                         db_manager.commit()
                     else:
@@ -1703,9 +2165,8 @@ def main():
                         db_manager.commit()
 
         total_time = time.time() - start_time
-        db_manager.close()
 
-        # Generate summary
+        # Generate summary - keep database open for validation check
         print(f"\n=== PARALLEL PROCESSING COMPLETE ===")
         print(f"Database: {db_name}")
         print(f"Log file: {log_file}")
@@ -1724,6 +2185,123 @@ def main():
         print(f"\n==> Processed {total_verses} verses from {len(book_selections)} books")
         print(f"** Total time: {total_time:.1f} seconds with {max_workers} parallel workers")
 
+        # Display validation error summary
+        validation_issues = []
+
+        # Check validation coverage for all processed chapters
+        if validator and db_manager and total_verses > 0:
+            print(f"\n{'='*60}")
+            print(f"VALIDATION COVERAGE CHECK")
+            print(f"{'='*60}")
+
+            for book_name, chapters in book_selections.items():
+                if chapters == 'FULL_BOOK':
+                    books_info = {
+                        "Genesis": 50, "Exodus": 40, "Leviticus": 27,
+                        "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
+                        "Proverbs": 31, "Isaiah": 66
+                    }
+                    max_chapters = books_info[book_name]
+                    chapters_to_check = range(1, max_chapters + 1)
+                else:
+                    chapters_to_check = chapters.keys()
+
+                for chapter in chapters_to_check:
+                    try:
+                        verification = db_manager.verify_validation_data_for_chapter(book_name, chapter)
+                        if verification.get('needs_recovery', False):
+                            # Use decision coverage as primary metric, response coverage as secondary
+                            coverage_rate = max(
+                                verification.get('validation_coverage_rate', 0),  # Based on validation_response
+                                verification.get('decision_coverage_rate', 0)      # Based on validation_decision_*
+                            )
+                            validation_issues.append({
+                                'book': book_name,
+                                'chapter': chapter,
+                                'coverage': coverage_rate,
+                                'total': verification.get('total_instances', 0),
+                                'validated': verification.get('instances_with_decisions', verification.get('instances_with_validation', 0))
+                            })
+                    except:
+                        # Skip chapters that couldn't be verified
+                        pass
+
+            if validation_issues:
+                print(f"\nVALIDATION ISSUES FOUND IN {len(validation_issues)} CHAPTER(S)")
+                print(f"{'='*60}")
+                for issue in validation_issues[:10]:
+                    print(f"  {issue['book']} Chapter {issue['chapter']}:")
+                    print(f"     Coverage: {issue['coverage']:.1f}% ({issue['validated']}/{issue['total']} instances)")
+                if len(validation_issues) > 10:
+                    print(f"  ... and {len(validation_issues) - 10} more")
+
+                # AUTOMATIC RECOVERY
+                print(f"\n[AUTO-RECOVERY] Attempting to recover missing validations...")
+                print(f"{'='*60}")
+
+                total_recovered = 0
+                total_failed = 0
+
+                for issue in validation_issues:
+                    recovery_stats = recover_missing_validations(
+                        db_manager, validator, issue['book'], issue['chapter'], logger
+                    )
+                    total_recovered += recovery_stats['recovered']
+                    total_failed += recovery_stats['failed']
+
+                print(f"\n[AUTO-RECOVERY] Results:")
+                print(f"   Recovered: {total_recovered}")
+                print(f"   Failed: {total_failed}")
+
+                # Re-verify after recovery
+                if total_recovered > 0:
+                    print(f"\n[POST-RECOVERY VERIFICATION]")
+                    still_missing = 0
+                    for issue in validation_issues:
+                        recheck = db_manager.verify_validation_data_for_chapter(
+                            issue['book'], issue['chapter']
+                        )
+                        if recheck.get('needs_recovery', False):
+                            coverage = max(
+                                recheck.get('validation_coverage_rate', 0),
+                                recheck.get('decision_coverage_rate', 0)
+                            )
+                            print(f"   {issue['book']} {issue['chapter']}: {coverage:.1f}% coverage")
+                            still_missing += 1
+
+                    if still_missing == 0:
+                        print(f"   All validation issues resolved!")
+                    else:
+                        print(f"\n   WARNING: {still_missing} chapters still have issues")
+                        print(f"   Manual intervention may be required")
+
+                print(f"{'='*60}")
+
+                logger.info(f"AUTO-RECOVERY: {total_recovered} recovered, {total_failed} failed")
+            else:
+                print(f"All processed chapters have healthy validation coverage (>95%)")
+                print(f"{'='*60}")
+
+        # Display failed chapters summary
+        if failed_chapters:
+            print(f"\n{'='*60}")
+            print(f"WARNING: {len(failed_chapters)} CHAPTER(S) FAILED TO PROCESS")
+            print(f"{'='*60}")
+            for failure in failed_chapters:
+                print(f"  • {failure['book']} Chapter {failure['chapter']}")
+                print(f"    Verses attempted: {failure['verses_attempted']}")
+                print(f"    Reason: {failure['reason']}")
+            print(f"{'='*60}")
+            print(f"To retry failed chapters, run the processor again with:")
+            for failure in failed_chapters:
+                print(f"  python interactive_parallel_processor.py {failure['book']} {failure['chapter']}")
+            print(f"{'='*60}")
+            logger.error(f"FAILED CHAPTERS SUMMARY: {len(failed_chapters)} chapter(s) failed")
+            for failure in failed_chapters:
+                logger.error(f"  - {failure['book']} {failure['chapter']}: {failure['reason']}")
+        else:
+            print(f"\nAll chapters processed successfully!")
+
         # Save basic results summary
         summary = {
             'processing_info': {
@@ -1736,6 +2314,7 @@ def main():
                 'processing_time_seconds': total_time,
                 'avg_time_per_verse': total_time/total_verses if total_verses > 0 else 0
             },
+            'failed_chapters': failed_chapters,
             'usage_statistics': flexible_client.get_usage_info(),
             'validation_statistics': validator.get_validation_stats() if validator else {}
         }
@@ -1744,6 +2323,10 @@ def main():
             json.dump(summary, f, indent=2, ensure_ascii=False)
 
         print(f"Summary saved: {json_file}")
+
+        # Close database connection
+        if db_manager:
+            db_manager.close()
 
         logger.info(f"=== PARALLEL PROCESSING COMPLETE ===")
         logger.info(f"Final stats: {total_instances} instances from {total_verses} verses")
