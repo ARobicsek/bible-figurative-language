@@ -1,0 +1,348 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 50:1",
+    "deliberation": "The verse frames Israel’s exile in terms of divorce and debt-slavery. I distinguished between the marriage/divorce imagery (mother, bill of divorce, sending away) and the sale-to-creditors imagery (selling the people, being sold for sins). Both are standard prophetic metaphors for covenant rupture and exile, not literal legal transactions. I treated these as two distinct figurative complexes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֵי זֶה סֵפֶר כְּרִיתוּת אִמְּכֶם אֲשֶׁר שִׁלַּחְתִּיהָ ... וּבְפִשְׁעֵיכֶם שֻׁלְּחָה אִמְּכֶם",
+        "english_text": "Where is the bill of divorce of your mother whom I dismissed? … And your mother was dismissed for your crimes.",
+        "target": ["Zion/Israel’s covenant relationship with YHWH and its rupture (exile)", "covenant community and status", "religious–social domain"],
+        "vehicle": ["A wife/mother being given a bill of divorce and sent away", "marital divorce procedure", "family/legal domain"],
+        "ground": ["Legal termination of an intimate covenant bond because of offense", "rupture and dismissal of a partner", "shared concept of broken relationship due to fault"],
+        "posture": ["Negative portrayal of Israel’s condition and guilt", "moral evaluation", "theological judgment"],
+        "explanation": "Israel/Zion is portrayed as a ‘mother’ divorced and sent away; the covenant rupture and exile are figuratively cast as a marital divorce, with ‘mother’ functioning metonymically for the people as a whole.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אוֹ מִי מִנּוֹשַׁי אֲשֶׁר־מָכַרְתִּי אֶתְכֶם לוֹ ... הֵן בַּעֲוֺנֹתֵיכֶם נִמְכַּרְתֶּם",
+        "english_text": "And which of My creditors was it to whom I sold you off? … You were sold off for your sins.",
+        "target": ["Israel’s loss of freedom and subjection in exile because of sin", "national calamity and punishment", "historical–theological domain"],
+        "vehicle": ["A debtor selling his children/servants to a creditor", "debt-slavery and commercial sale", "economic/legal domain"],
+        "ground": ["Being transferred into bondage as a consequence of obligation or wrongdoing", "loss of freedom because of incurred liability", "shared idea of punishment by enforced servitude"],
+        "posture": ["Explanatory and accusatory stance toward Israel’s situation", "didactic re-interpretation of history", "prophetic indictment"],
+        "explanation": "Israel’s exile is figured as being sold into slavery to a creditor; the ‘sale’ is not literal but a metaphor for entering bondage as a consequence of the people’s sins.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 50:2",
+    "deliberation": "I checked the rhetorical questions and the power imagery. ‘My hand too short to redeem’ is a known idiomatic metaphor for weakness. The description of YHWH’s rebuke drying up seas and turning rivers into desert is cosmic power imagery; it combines metaphor (his ‘rebuke’ acting as a physical force) with hyperbole about drying seas and rivers.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲקָצוֹר קָצְרָה יָדִי מִפְּדוּת",
+        "english_text": "Is my arm, then, too short to rescue?",
+        "target": ["YHWH’s ability to save and intervene", "divine power and effectiveness", "theological domain"],
+        "vehicle": ["A person’s shortened arm that cannot reach out to help", "bodily incapacity to reach or grasp", "physical/anthropomorphic domain"],
+        "ground": ["Inability to reach the object in need", "limitations preventing successful rescue", "shared notion of insufficient reach indicating weakness"],
+        "posture": ["Denial of any limitation in God", "defensive and self-vindicating stance", "rhetorical reassurance"],
+        "explanation": "God’s saving power is figuratively questioned by picturing him as if he had a ‘short arm’ unable to reach; the idiom expresses supposed weakness, which the verse rejects.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵן בְּגַעֲרָתִי אַחֲרִיב יָם אָשִׂים נְהָרוֹת מִדְבָּר",
+        "english_text": "With a mere rebuke I dry up the sea, and turn rivers into desert.",
+        "target": ["The overwhelming effectiveness of YHWH’s word of judgment or command", "divine speech/command", "theological domain"],
+        "vehicle": ["A verbal rebuke that physically evaporates a sea and desolates rivers", "speech acting as a catastrophic natural force", "cosmic/natural domain"],
+        "ground": ["Immediate and irresistible effects proceeding from a single authoritative word", "capacity to overturn natural orders", "shared idea of overwhelming efficacy"],
+        "posture": ["Heightening portrayal of God’s power", "awe-inducing description", "rhetorical amplification"],
+        "explanation": "God’s ‘rebuke’ is portrayed as if it directly dries seas and turns rivers into desert; this hyperbolic metaphor emphasizes the irresistible and cosmic scope of his power.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 50:3",
+    "deliberation": "The verse uses clothing language for the heavens. This is not literal; the skies do not wear garments. The darkening of the heavens is expressed by metaphor and personification, with sackcloth evoking mourning.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַלבִּישׁ שָׁמַיִם קַדְרוּת וְשַׂק אָשִׂים כְּסוּתָם",
+        "english_text": "I clothe the skies in blackness and make their raiment sackcloth.",
+        "target": ["Cosmic gloom and judgment signaled by darkened heavens", "state of the sky as omen of judgment", "cosmic/theological domain"],
+        "vehicle": ["A person dressed in black sackcloth for mourning", "mourning attire worn by humans", "social/ritual domain"],
+        "ground": ["External appearance signaling grief and calamity", "dark, rough garments indicating mourning and humiliation", "shared visual sign of sorrow and judgment"],
+        "posture": ["Solemn depiction of impending judgment", "negative evaluation of the situation", "prophetic warning"],
+        "explanation": "The heavens are personified as if they were clothed in black sackcloth, a human mourning garment, to picture cosmic mourning and judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 50:4",
+    "deliberation": "I considered whether the ‘tongue of those who are taught’ and the ‘awakening of the ear’ are literal. Both use body parts to stand for communicative and receptive capacities. ‘Tongue’ is a synecdoche/metonymy for speech ability; ‘awakening the ear’ is a metaphor for making the servant attentive, with ‘ear’ as metonymy for obedience.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "נָתַן לִי לְשׁוֹן לִמּוּדִים",
+        "english_text": "My Sovereign GOD gave me a skilled tongue (a tongue of disciples).",
+        "target": ["The servant’s God-given ability to speak fitting, instructive words", "verbal and teaching capacity", "human communicative domain"],
+        "vehicle": ["The ‘tongue’ as the physical organ of speech belonging to learners/disciples", "body part representing its function", "anatomical domain"],
+        "ground": ["The tongue as the instrument by which speech occurs", "association of the organ with its communicative function", "part–whole relation (synecdoche)"],
+        "posture": ["Affirmation of divinely equipped speech", "positive evaluation", "vocational description"],
+        "explanation": "‘Tongue’ stands metonymically/synecdochically for the capacity and gift of speech shaped by divine instruction (‘of those who are taught’).",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יָעִיר בַּבֹּקֶר בַּבֹּקֶר יָעִיר לִי אֹזֶן לִשְׁמֹעַ כַּלִּמּוּדִים",
+        "english_text": "Morning by morning He rouses me, rousing my ear to give heed like disciples.",
+        "target": ["The servant’s growing receptivity and obedience to God’s instruction", "spiritual attentiveness", "religious/inner-life domain"],
+        "vehicle": ["An ear being awakened from sleep so that it can hear", "arousing a bodily organ to active function", "bodily/experiential domain"],
+        "ground": ["Transition from unresponsiveness to alert attentiveness", "becoming ready and able to receive messages", "shared idea of being ‘woken up’ to hear/obey"],
+        "posture": ["Positive depiction of teachability", "commendation of obedient listening", "formational emphasis"],
+        "explanation": "God is said to ‘awaken the ear’—a metaphor for making the servant attentive and obedient, with ‘ear’ functioning metonymically for the whole listening-and-obeying person.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 50:5",
+    "deliberation": "The central image is God ‘opening the ear’. This is not anatomical surgery but an idiomatic metaphor for making someone willing and obedient. The ‘ear’ again stands synecdochically for attentive obedience.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲדֹנָי יְהֹוִה פָּתַח־לִי אֹזֶן",
+        "english_text": "My Sovereign GOD opened my ears.",
+        "target": ["The servant’s readiness to hear and obey God’s word", "inner obedience and receptivity", "religious/psychological domain"],
+        "vehicle": ["An ear being opened so that sound can enter", "removing a blockage from a bodily organ", "physical/anatomical domain"],
+        "ground": ["Transition from closed/unresponsive to open/receptive", "enabling communication to be received", "shared concept of accessibility to messages"],
+        "posture": ["Affirmation of obedient response to God", "positive evaluation", "covenantal loyalty"],
+        "explanation": "‘Opening the ear’ is a stock idiom for making someone receptive and obedient to instruction; ‘ear’ stands metonymically for the person’s obedient hearing.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 50:6",
+    "deliberation": "The verse describes physical abuse: back to floggers, cheeks to hair-pluckers, face not hidden from insult and spitting. These read as straightforward descriptions of suffering without clear metaphor, simile, or other figurative devices beyond normal concrete language. While ‘back’ and ‘cheeks’ could be taken as synecdoches for the whole person, in this context they are the literal body parts being attacked, so I did not count them as distinct figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 50:7",
+    "deliberation": "The key figurative element is ‘I have set my face like flint’—an explicit simile and idiomatic expression for unyielding resolve. Other clauses (‘will help me’, ‘I shall not be shamed’) are straightforward.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־כֵּן שַׂמְתִּי פָנַי כַּחַלָּמִישׁ",
+        "english_text": "Therefore I have set my face like flint.",
+        "target": ["The servant’s steadfast, unflinching determination in the face of opposition", "inner resolve and courage", "psychological/moral domain"],
+        "vehicle": ["Flint, a very hard stone that does not easily break or change shape", "hard, unyielding rock", "physical/material domain"],
+        "ground": ["Hardness, resistance to pressure, and inability to be easily altered", "steadfastness despite blows", "shared quality of unyielding firmness"],
+        "posture": ["Strongly positive valuation of determined obedience", "commendation of firmness", "exemplary stance"],
+        "explanation": "The servant’s resolve is compared to ‘flint’ using a simile; this idiomatic metaphor conveys hardness and unyielding determination not to be turned aside by shame or opposition.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 50:8",
+    "deliberation": "The verse is saturated with legal/courtroom language (‘my Vindicator,’ ‘contend,’ ‘stand up together,’ ‘my opponent,’ ‘approach me’). The conflict is framed as a lawsuit before a judge; God is described as one who justifies. I treat the legal-litigational framing as a single extended metaphor for vindication in the divine court.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "קָרוֹב מַצְדִּיקִי מִי־יָרִיב אִתִּי נַעַמְדָה יָּחַד מִי־בַעַל מִשְׁפָּטִי יִגַּשׁ אֵלָי",
+        "english_text": "My Vindicator is at hand—Who dares contend with me? Let us stand up together! Who would be my opponent? Let them approach me!",
+        "target": ["The servant’s opposition and ultimate vindication before God", "spiritual/moral conflict and its resolution", "theological-judicial domain"],
+        "vehicle": ["A law-court setting with a justifier, litigants, an opponent, and formal contention", "legal dispute and litigation", "juridical/social domain"],
+        "ground": ["Issues being decided by an authoritative judgment, with one party declared in the right", "formal confrontation leading to a verdict", "shared concept of adjudicated vindication"],
+        "posture": ["Confident assertion of innocence and trust in divine justification", "bold, challenging tone", "forensic rhetoric"],
+        "explanation": "The servant’s situation is metaphorically cast as a lawsuit: God is the ‘vindicator’ (one who justifies), and opponents are imagined as courtroom adversaries who may ‘approach’ to contend.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 50:9",
+    "deliberation": "After affirming God’s help, the verse depicts opponents as transient: they ‘will all wear out like a garment’ and ‘the moth shall consume them’. These are two related but distinct images: a simile likening them to a wearing-out garment, and a metaphor picturing them as being eaten by moths.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵן כֻּלָּם כַּבֶּגֶד יִבְלוּ",
+        "english_text": "They shall all wear out like a garment.",
+        "target": ["The servant’s adversaries and their eventual demise or insignificance", "hostile persons and their fate", "social/theological domain"],
+        "vehicle": ["A garment that gradually decays and wears out with use", "worn-out clothing", "material/household domain"],
+        "ground": ["Gradual decay and loss of usefulness over time", "inevitable deterioration and disappearance", "shared notion of transience and perishability"],
+        "posture": ["Dismissive of the enemies’ lasting power", "reassuring the servant of their impermanence", "comforting outlook"],
+        "explanation": "Opponents are compared via simile to a garment that wears out, highlighting their temporary and fragile status.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָשׁ יֹאכְלֵם",
+        "english_text": "The moth shall consume them.",
+        "target": ["The same adversaries and their destruction", "hostile persons and their fate", "social/theological domain"],
+        "vehicle": ["A moth eating through fabric until it is destroyed", "insect damage to clothing", "natural/material domain"],
+        "ground": ["Silent, gradual, often unnoticed destruction from within", "frailty before small agents of decay", "shared sense of vulnerability and eventual ruin"],
+        "posture": ["Further diminishes the perceived solidity of the enemies", "underscores inevitability of their end", "poetic intensification"],
+        "explanation": "By picturing the enemies as if they were garments eaten by moths, the metaphor stresses how fragile and easily undone they are before God’s judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 50:10",
+    "deliberation": "Two main figures appear. ‘Walking in darkness and having no light’ is a metaphor for a believer’s experience of distress/confusion. ‘Trust in the name of YHWH’ uses ‘name’ metonymically for God’s character and reliable self-revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר הָלַךְ חֲשֵׁכִים וְאֵין נֹגַהּ לוֹ",
+        "english_text": "Though walking in darkness and having no light.",
+        "target": ["The situation of a God-fearing person who lacks clarity, comfort, or visible help", "spiritual/experiential distress and uncertainty", "religious/psychological domain"],
+        "vehicle": ["A person physically walking in the dark without any light", "travel in literal darkness", "spatial/visual domain"],
+        "ground": ["Lack of visibility, guidance, and security; vulnerability to missteps", "inability to see the way ahead", "shared idea of confusion and danger"],
+        "posture": ["Empathetic acknowledgment of the believer’s hard condition", "pastoral sensitivity", "exhortative framing"],
+        "explanation": "The inner and outer hardships of the God-fearing person are portrayed as ‘walking in darkness with no light’, a metaphor for confusion and vulnerability without visible guidance.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יִבְטַח בְּשֵׁם יְהוָה",
+        "english_text": "Let them trust in the name of GOD.",
+        "target": ["YHWH himself as trustworthy, and his revealed character and promises", "object of faith", "theological domain"],
+        "vehicle": ["The ‘name’ of YHWH", "designation standing for the person and reputation", "linguistic/social domain"],
+        "ground": ["A name represents and evokes the person’s character, authority, and reliability", "invoking the name is functionally relying on the person", "shared metonymic link between name and bearer"],
+        "posture": ["Encouragement of faith in God’s dependable character", "positive exhortation", "pastoral instruction"],
+        "explanation": "‘Name’ stands metonymically for YHWH himself—his character, presence, and promises—so trusting in his ‘name’ means relying on him.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 50:11",
+    "deliberation": "The whole verse uses fire imagery for self-made guidance or schemes: kindling fire, girding with sparks, walking in the light of one’s own fire. This is metaphorical for self-reliant, rebellious reliance on human plans and also carries ironic force, since the invited ‘walking’ in their fire leads to lying down in torment. I treated this cluster as one extended metaphor with ironic posture.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הֵן כֻּלְּכֶם קֹדְחֵי אֵשׁ מְאַזְּרֵי זִיקוֹת לְכוּ בְּאוּר אֶשְׁכֶם וּבְזִיקוֹת בִּעַרְתֶּם ... לְמַעֲצֵבָה תִּשְׁכָּבוּן",
+        "english_text": "But you are all kindlers of fire, girding on firebrands. Walk by the blaze of your fire, by the brands that you have lit! … You shall lie down in pain.",
+        "target": ["The people’s self-made schemes, false sources of guidance, and rebellious self-reliance, and the misery they reap", "human counsel and autonomy opposed to God", "ethical/theological domain"],
+        "vehicle": ["Kindling a fire, surrounding oneself with sparks, and walking in the light of that self-made fire", "self-produced illumination and heat", "natural/experiential domain"],
+        "ground": ["Depending on one’s own manufactured ‘light’ instead of true external light; temporary, dangerous illumination that ends in harm", "initiative that seems helpful but leads to burning and exhaustion", "shared idea that self-generated guidance can be deceptive and destructive"],
+        "posture": ["Ironically invites them to pursue their path to expose its folly, culminating in announced pain", "sarcastic and judgmental stance", "prophetic irony"],
+        "explanation": "Those who reject trusting God are depicted as people who light their own fire and walk in its blaze—an ironic metaphor for self-reliant schemes that will end in ‘lying down in pain’. The language functions as both metaphor and biting irony.",
+        "confidence": 0.94
+      }
+    ]
+  }
+]

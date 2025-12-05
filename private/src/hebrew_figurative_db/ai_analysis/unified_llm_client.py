@@ -57,6 +57,7 @@ class TextContext(Enum):
     POETIC_WISDOM = 'poetic_wisdom'
     LEGAL_CEREMONIAL = 'legal_ceremonial'
     NARRATIVE = 'narrative'
+    PROPHETIC = 'prophetic'
 
 
 class UnifiedLLMClient:
@@ -543,6 +544,10 @@ class UnifiedLLMClient:
         elif book.lower() in {'leviticus', 'numbers'}:
             return TextContext.LEGAL_CEREMONIAL.value
 
+        # Prophetic Literature - Isaiah (balanced accuracy)
+        elif book.lower() == 'isaiah':
+            return TextContext.PROPHETIC.value
+
         # Narrative texts (standard approach)
         else:
             return TextContext.NARRATIVE.value
@@ -640,6 +645,38 @@ Analyze the specific verse above, but use the chapter context to inform your und
 **MARK AS FIGURATIVE:**
 • Clear cross-domain metaphors
 • Obvious similes with "like/as" for unlike things"""
+
+        elif context == TextContext.PROPHETIC.value:
+            context_rules = """📜 **PROPHETIC LITERATURE (ISAIAH) - BALANCED ACCURACY** 📜
+
+**MARK AS FIGURATIVE (Don't Miss These - High Recall):**
+• Courtroom/lawsuit imagery: legal language applied to divine judgment
+• Agricultural metaphors: vineyard, planting, harvest for Israel/nations
+• Body/sickness metaphors: disease, healing, blindness/sight for spiritual states
+• Color/purity metaphors: scarlet/crimson → white as snow transformation
+• Personification: Zion/Jerusalem/Israel as woman, bride, daughter, mother
+• Divine Warrior imagery: God as fighter, judge, king
+• Servant imagery: Israel/Messiah as servant
+• Nature transformation: wilderness blooming, mountains made low, seas drying
+• Animal comparisons: ox, donkey, lion, eagle representing nations/people
+• Metallurgical imagery: refining, dross removal, silver/gold purification
+
+**NEVER MARK AS FIGURATIVE (Avoid False Positives - High Precision):**
+• Prophetic formulas: "Thus says the LORD", "The word of the LORD came to..."
+• Direct divine commands and instructions
+• Place names (Zion, Jerusalem, Judah) when referring to actual locations
+• Historical narrative sections (especially chapters 36-39)
+• Literal descriptions of visions (the vision itself, not symbolic interpretation)
+• Names of actual nations (Assyria, Egypt, Babylon) as political entities
+• Standard verbs of speaking, seeing, hearing in prophetic context
+
+**CONTEXT MATTERS (Examples):**
+• "Daughter of Zion" = FIGURATIVE (personification)
+• "Go up to Zion" = LITERAL (location)
+• "Israel my servant" = FIGURATIVE (servant metaphor)
+• "King of Assyria besieged" = LITERAL (historical event)
+• "Your sins are as scarlet" = FIGURATIVE (color metaphor)
+• "The vision of Isaiah" = LITERAL (prophetic introduction)"""
 
         else:  # narrative
             context_rules = """📖 **NARRATIVE TEXT - STANDARD CONSERVATIVE** 📖

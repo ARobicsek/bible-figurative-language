@@ -1,0 +1,390 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 56:1",
+    "deliberation": "Checked imperative clauses and temporal clauses. Focused on the verbs applied to abstract nouns: 'My salvation shall come' and 'My righteousness to be revealed.' Both treat abstract divine actions as if they were entities that move or are unveiled, which is standard prophetic metaphor/personification. No similes, idioms, or hyperbole detected.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קְרוֹבָה יְשׁוּעָתִי לָבוֹא",
+        "english_text": "For soon My salvation shall come",
+        "target": ["YHWH’s future act of delivering His people", "divine saving action / eschatological intervention", "theological / redemptive history"],
+        "vehicle": ["something that comes/approaches in space", "arriving person or object", "movement in physical space"],
+        "ground": ["nearness in time conceived as nearness in space", "imminence / approach", "time conceptualized as motion"],
+        "posture": ["prophetic assurance of imminent help", "encouraging, hopeful stance", "divine‑human covenant discourse"],
+        "explanation": "The abstract reality 'My salvation' is portrayed as an entity that can draw near and arrive, personifying salvation and using a spatial motion metaphor to express temporal imminence.",
+        "confidence": 0.84
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְצִדְקָתִי לְהִגָּלוֹת",
+        "english_text": "And My deliverance [lit. righteousness] be revealed",
+        "target": ["YHWH’s righteous saving intervention", "divine righteousness as action", "theological / covenant faithfulness"],
+        "vehicle": ["something previously hidden that is uncovered", "a veiled object now revealed", "visual concealment vs. disclosure"],
+        "ground": ["previously unseen becoming visible/public", "manifestation of what was already there", "knowledge/experience conceptualized as sight"],
+        "posture": ["promise of manifest vindication", "assuring, future‑oriented stance", "prophetic reassurance of God’s justice"],
+        "explanation": "God’s 'righteousness'—His saving justice—is depicted as something hidden that will be 'revealed', employing a visual metaphor of unveiling to speak about public manifestation of divine action.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 56:2",
+    "deliberation": "Examined beatitude formula and Sabbath language; these are standard legal/cultic terms. The notable figurative element is 'keeping his hand from doing any evil,' where 'hand' stands for the person’s actions or agency. No metaphors of comparison, no personification, and no hyperbole.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְשֹׁמֵר יָדוֹ מֵעֲשׂוֹת כׇּל־רָע",
+        "english_text": "And holds back his hand from doing any evil",
+        "target": ["the person’s concrete deeds and harmful behavior", "human actions / moral conduct", "ethics / daily life"],
+        "vehicle": ["the hand as the acting body part", "body part representing agency", "human body / physical capability"],
+        "ground": ["the hand is the usual organ of action, so it stands for what a person does", "association of hand with power and deeds", "part‑for‑whole representation (synecdoche)"],
+        "posture": ["moral exhortation to total restraint from evil", "didactic, exhortative stance", "wisdom/prophetic instruction"],
+        "explanation": "'Hand' functions metonymically (and as synecdoche) for a person’s actions. To 'keep his hand from doing evil' means to refrain from any evil deeds, not only from literal actions of the hand.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 56:3",
+    "deliberation": "Considered whether the 'foreigner joined to YHWH' is figurative; the verb 'join' is metaphorical at a deep level but has become standard covenant language. The explicitly vivid figure is the eunuch’s self-description as 'a dry tree', clearly a metaphor of barrenness and lack of posterity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵן אֲנִי עֵץ יָבֵשׁ",
+        "english_text": "Behold, I am a withered [dry] tree",
+        "target": ["the eunuch’s childless, marginalized condition", "personal status / lack of progeny", "human family and social standing"],
+        "vehicle": ["a dry, withered tree", "barren, lifeless plant", "vegetation / nature imagery"],
+        "ground": ["lack of fruit and growth, perceived uselessness", "barrenness, inability to produce offspring", "life and fertility conceptualized as plant fruitfulness"],
+        "posture": ["self‑pitying lament about exclusion", "negative, despairing self‑evaluation", "social and emotional complaint before God"],
+        "explanation": "The eunuch equates himself with 'a dry tree', using plant imagery to express his sense of barrenness and lack of descendants; the tree’s dryness parallels his perceived fruitlessness.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 56:4",
+    "deliberation": "Most expressions are covenantal and cultic and can be taken straightforwardly. The phrase 'hold fast to My covenant' applies gripping language to an abstract agreement, which is a conventional but still figurative metaphor of loyalty as physical grasping.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמַחֲזִיקִים בִּבְרִיתִי",
+        "english_text": "And who hold fast to My covenant",
+        "target": ["faithful adherence to God’s covenant", "loyal commitment / obedience", "divine‑human relationship"],
+        "vehicle": ["physically grasping and holding something", "firm grip that does not let go", "bodily action of holding"],
+        "ground": ["steadfast adherence likened to not letting go of something in one’s hand", "stability, tenacity", "commitment conceptualized as physical attachment"],
+        "posture": ["commendation of loyal devotion", "positive evaluative stance", "covenant exhortation and promise"],
+        "explanation": "Loyal covenant commitment is portrayed as physically 'holding fast' to an object. This conventional idiom uses a bodily grip metaphor to express steadfast faithfulness.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 56:5",
+    "deliberation": "Examined temple imagery ('my house', 'my walls') as largely literal for the temple precincts. The key figurative phrases are (1) 'a yad and a shem' – an idiomatic pair meaning a monumental memorial – and (2) an 'everlasting name' that 'shall not be cut off', where 'name' stands for enduring remembrance/lineage, using cutting imagery for extinction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּבֵיתִי וּבְחֹמֹתַי יָד וָשֵׁם",
+        "english_text": "In My House and within My walls, a monument and a name",
+        "target": ["the eunuchs’ honored and secure remembrance before God", "enduring status / memorial", "religious and communal recognition"],
+        "vehicle": ["a 'hand' and a 'name' as memorial inscription or monument", "monumental marker with an inscribed name", "architectural memorial in sacred space"],
+        "ground": ["permanent placement and naming signify lasting honor", "publicly fixed sign standing for a remembered person", "memory conceptualized as an erected structure"],
+        "posture": ["promise of full inclusion and honor", "reassuring, elevating stance toward the marginalized", "covenant restoration and consolation"],
+        "explanation": "The idiomatic pair 'yad vashem' (literally 'a hand and a name') denotes a lasting memorial monument. Physical structures and inscriptions stand metonymically for enduring remembrance and honor in God’s temple.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שֵׁם עוֹלָם אֶתֵּן־לוֹ אֲשֶׁר לֹא יִכָּרֵת",
+        "english_text": "I will give them an everlasting name that shall not be cut off",
+        "target": ["the eunuchs’ perpetual remembrance and covenant place", "lasting reputation / covenant identity", "community membership and legacy"],
+        "vehicle": ["a 'name' that can be 'cut off' or continue", "lineage or inscription subject to erasure", "plant or line imagery subject to being cut"],
+        "ground": ["to 'cut off' something is to end or annihilate it; a name not cut off endures", "memory/status treated as a continuable or terminable line", "continuity/termination conceptualized as cutting or preserving"],
+        "posture": ["strong assurance against obliteration or oblivion", "comforting, future‑oriented stance", "promissory covenant rhetoric"],
+        "explanation": "'Name' functions metonymically for reputation and covenant identity, and is further depicted via a cutting metaphor: unlike a line cut off, their name will not be terminated but will endure forever.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 56:6",
+    "deliberation": "Looked at three repeated expressions: foreigners 'joining themselves' to YHWH, 'loving the name of YHWH', and again 'holding fast My covenant'. Each uses a different figurative mapping: physical attachment for allegiance, 'name' as metonymy for God/his reputation, and grip for loyalty. No explicit similes or hyperbole.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְנֵי הַנֵּכָר הַנִּלְוִים עַל־יְהֹוָה",
+        "english_text": "And the foreigners who are joined to the LORD",
+        "target": ["foreigners’ covenant allegiance to YHWH", "religious attachment / conversion", "divine‑human relationship"],
+        "vehicle": ["physically attaching or clinging to someone", "close bodily joining", "spatial proximity and adhesion"],
+        "ground": ["relational loyalty likened to tight physical attachment", "closeness, solidarity, dependence", "relationship conceptualized as spatial nearness and bonding"],
+        "posture": ["inclusive embrace of foreigners in covenant", "positive, welcoming stance", "theology of Gentile inclusion"],
+        "explanation": "Foreigners’ allegiance to YHWH is portrayed as 'joining themselves' to Him, using the bodily metaphor of physical attachment to express covenantal commitment.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּלְאַהֲבָה אֶת־שֵׁם יְהֹוָה",
+        "english_text": "To love the name of the LORD",
+        "target": ["love and reverence for YHWH Himself", "religious devotion / piety", "worship and covenant loyalty"],
+        "vehicle": ["the 'name' of YHWH", "designation standing for the person and reputation", "linguistic sign / fame as representative"],
+        "ground": ["a name represents the person, especially honor and reputation", "addressing or loving the name equates to devotion to the bearer", "person conceptualized via their name"],
+        "posture": ["highlighting the affective dimension of worship", "warm, devotional stance", "cultic piety and reverence"],
+        "explanation": "The 'name of the LORD' stands metonymically for YHWH Himself and His reputation. To 'love His name' means to cherish and revere God, not merely the syllables of the name.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמַחֲזִיקִים בִּבְרִיתִי",
+        "english_text": "And who hold fast to My covenant",
+        "target": ["ongoing faithful adherence to God’s covenant", "loyal obedience / commitment", "divine‑human agreement"],
+        "vehicle": ["firmly holding an object in one’s grasp", "unrelenting physical grip", "manual control and retention"],
+        "ground": ["steadfast commitment likened to not letting go of something held", "tenacity, security, refusal to release", "fidelity conceptualized as a physical hold"],
+        "posture": ["commendation of tenacious faithfulness", "affirmative, covenant‑valuing stance", "prophetic vision of proper devotion"],
+        "explanation": "As in v.4, dedication to the covenant is depicted as physically 'holding fast' to it, using a grip metaphor to express unwavering loyalty.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 56:7",
+    "deliberation": "Reviewed 'My holy mountain', 'My house of prayer', and cultic terms for offerings and altar. While these phrases carry rich theological associations, in context they primarily denote the literal temple mount and its function as a prayer center. No clear metaphors, similes, personification, or idioms beyond standard cultic language were identified.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 56:8",
+    "deliberation": "Considered whether 'gathering the dispersed of Israel' and 'I will gather still more to those already gathered' are metaphorical. Given the exile/return context, 'gather' here straightforwardly describes bringing scattered people back, either physically or communally, and is standard prophetic terminology. No distinct figurative image beyond normal usage was isolated.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 56:9",
+    "deliberation": "The vocative summons to 'all wild beasts of the field' to come and devour functions within prophetic judgment imagery. In context with vv.10–12 (corrupt leaders as negligent watchmen), these 'beasts' represent hostile powers invited to consume the unprotected people. This is a metaphor, not literal zoological address.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֹּל חַיְתוֹ שָׂדָי אֵתָיוּ לֶאֱכֹל כָּל־חַיְתוֹ בַּיָּעַר",
+        "english_text": "All you wild beasts, come and devour, all you beasts of the forest!",
+        "target": ["hostile nations or destructive forces attacking Israel", "foreign invaders / instruments of judgment", "political‑military threat"],
+        "vehicle": ["wild beasts of the field and forest that devour prey", "predatory animals", "animal predation in nature"],
+        "ground": ["both are dangerous, consume and destroy the vulnerable", "ferocity, lack of restraint, threat to the flock", "military devastation conceptualized as animal predation"],
+        "posture": ["announcement of judgment due to failed leadership", "grim, judicial stance", "prophetic orchestration of coming disaster"],
+        "explanation": "The 'wild beasts' summoned to devour symbolize invading powers or destructive agents that will ravage the unprotected people, likening national judgment to the ravages of predatory animals.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 56:10",
+    "deliberation": "Here the text piles images on the leaders: 'watchmen' who are 'blind', and then 'all of them dumb dogs that cannot bark, dreaming, lying down, loving to slumber.' This uses (1) sensory disability of watchmen as a metaphor for spiritual ignorance, and (2) an extended canine image (in simile form with כ־) for their failure and laziness. No hyperbole beyond the natural exaggeration of the image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צֹפָיו עִוְרִים כֻּלָּם לֹא יָדָעוּ",
+        "english_text": "His lookouts are blind, all of them; they perceive nothing",
+        "target": ["Israel’s leaders/prophets responsible for vigilance", "religious/political leadership", "community oversight and guidance"],
+        "vehicle": ["blind watchmen who do not see", "visually impaired sentries", "security imagery of lookout duty"],
+        "ground": ["a blind lookout cannot detect danger; likewise these leaders lack discernment", "failure to perceive and warn", "spiritual/mental incapacity conceptualized as physical blindness"],
+        "posture": ["sharp denunciation of leadership failure", "critical, accusatory stance", "prophetic indictment of negligence"],
+        "explanation": "Leaders, portrayed as 'watchmen', are called 'blind' to depict their spiritual and moral ignorance; like blind sentries, they cannot see or understand threats to the people.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֻּלָּם כְּלָבִים אִלְּמִים לֹא יוּכְלוּ לִנְבֹּחַ הֹזִים שֹׁכְבִים אֹהֲבֵי לָנוּם",
+        "english_text": "They are all dumb dogs that cannot bark; dreaming, lying down, loving to slumber",
+        "target": ["the same negligent leaders/watchmen", "corrupt leadership", "religious and civic authorities"],
+        "vehicle": ["mute, lazy dogs that do not bark or guard but only dream and sleep", "useless watchdogs", "domestic animal imagery"],
+        "ground": ["failure to sound warning and persistent laziness", "uselessness, self‑indulgence, neglect of duty", "leadership dereliction conceptualized as watchdogs that will not bark"],
+        "posture": ["biting sarcasm and mockery", "derisive, condemnatory stance", "prophetic rhetoric aimed at shaming leaders"],
+        "explanation": "Using a canine simile, the leaders are likened to watchdogs that neither bark nor stay alert, instead lying about in dream‑filled sleep; this vividly portrays their negligence and is rhetorically exaggerated for effect.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 56:11",
+    "deliberation": "This verse continues and extends the imagery from v.10. The leaders are still 'dogs', now described as greedy and never satisfied; then they are called 'shepherds' who lack understanding—a common metaphor for rulers; finally, 'they have all turned to their own way, each to his gain' uses the path metaphor for conduct/self‑interest.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהַכְּלָבִים עַזֵּי־נֶפֶשׁ לֹא יָדְעוּ שָׂבְעָה",
+        "english_text": "Moreover, the dogs are greedy; they never know satiety",
+        "target": ["leaders’ insatiable greed and self‑interest", "corrupt desire of officials", "moral character of leadership"],
+        "vehicle": ["dogs with fierce appetite that never feel full", "voracious scavenger animals", "animal hunger and craving"],
+        "ground": ["unchecked desire and relentless craving", "insatiability, lack of restraint", "greed conceptualized as animal appetite that cannot be satisfied"],
+        "posture": ["heightened condemnation of covetousness", "morally indignant stance", "prophetic exposure of corruption"],
+        "explanation": "Keeping the dog metaphor, the leaders are portrayed as ever‑hungry animals whose craving is never satisfied, a hyperbolic image of their limitless greed.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהֵמָּה רֹעִים לֹא יָדְעוּ הָבִין",
+        "english_text": "And as for the shepherds, they know not what it is to give heed",
+        "target": ["the same political/religious leaders", "community rulers / overseers", "governance of the people"],
+        "vehicle": ["shepherds who lack understanding", "incompetent flock‑tenders", "pastoral caregivers"],
+        "ground": ["shepherds are supposed to guide and care wisely; ignorant ones fail their flocks", "duty of oversight and discernment", "leadership conceptualized as shepherding a flock"],
+        "posture": ["exposure of ironic contradiction between title and behavior", "critical, disapproving stance", "prophetic critique of failed pastoral care"],
+        "explanation": "Leaders are metaphorically called 'shepherds' but are said to lack understanding, highlighting the contrast between their title and their inept performance in guiding and protecting the people.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֻּלָּם לְדַרְכָּם פָּנוּ אִישׁ לְבִצְעוֹ",
+        "english_text": "Everyone has turned their own way, every last one seeks their own advantage",
+        "target": ["leaders’ pursuit of self‑interest instead of public good", "moral orientation / behavior", "ethical conduct of individuals"],
+        "vehicle": ["turning to one’s own way", "choosing a particular path/direction", "movement along a road or path"],
+        "ground": ["life choices likened to traveling along a chosen path", "orientation and goal‑seeking expressed as direction of movement", "moral conduct conceptualized as journeying on a road"],
+        "posture": ["lament and accusation about universal self‑seeking", "sorrowful yet condemnatory stance", "prophetic moral evaluation"],
+        "explanation": "The idiom of turning to 'one’s own way' uses the path metaphor for conduct, depicting each leader as choosing and walking his own path of gain rather than the way of responsible service.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 56:12",
+    "deliberation": "Most of the language is literal about drinking and expectation of more of the same. The key rhetorical device is the boast 'Tomorrow will be like today, great, exceedingly so', which overstates the certainty and magnitude of ongoing revelry and prosperity—a form of hyperbolic self‑assurance in the mouths of the corrupt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָה כָזֶה יוֹם מָחָר גָּדוֹל יֶתֶר מְאֹד",
+        "english_text": "And tomorrow will be just the same, or even much grander!",
+        "target": ["the leaders’ expectation of continued indulgence and prosperity", "future circumstances / security", "time and fortune"],
+        "vehicle": ["a tomorrow that is 'great, exceedingly' like today", "exaggerated projection of increase", "amplified repetition of current pleasures"],
+        "ground": ["overconfident assumption that good times will not only continue but intensify", "boastful exaggeration of future well‑being", "certainty conceptualized as guaranteed, ever‑greater enjoyment"],
+        "posture": ["self‑indulgent complacency and denial of impending judgment", "arrogant, carefree stance", "prophetic portrayal of folly through exaggerated speech"],
+        "explanation": "The speakers exaggerate the certainty and degree of their future enjoyment, claiming that tomorrow will match or exceed today’s 'greatness'; this rhetorical overstatement functions as hyperbole exposing their complacent folly.",
+        "confidence": 0.82
+      }
+    ]
+  }
+]

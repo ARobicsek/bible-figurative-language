@@ -1,0 +1,833 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 62:1",
+    "deliberation": "I examined the parallel cola and imagery. Found two clear similes in the B‑cola (righteousness like dawn, salvation like a blazing torch), each also personifying abstract qualities with vivid physical behavior, plus a place‑for‑people metonymy in 'Zion/Jerusalem'.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַד־יֵצֵא כַנֹּגַהּ צִדְקָהּ",
+        "english_text": "Till her righteousness/victory emerge resplendent (like the dawn)",
+        "target": [
+          "Zion's righteousness/vindication",
+          "restored moral and legal standing of Jerusalem",
+          "covenant community / soteriological"
+        ],
+        "vehicle": [
+          "the brightness of dawn (נֹגַהּ)",
+          "growing natural light at daybreak",
+          "cosmic / meteorological"
+        ],
+        "ground": [
+          "sudden, unmistakable, life-giving visibility",
+          "the quality of being observable and transformative after darkness",
+          "experiential / perceptual"
+        ],
+        "posture": [
+          "confident assurance that Zion's vindication will become obvious to all",
+          "positive evaluative stance toward the coming salvation",
+          "prophetic / eschatological"
+        ],
+        "explanation": "Zion's abstract 'righteousness' is likened to the bright light of dawn emerging, picturing her vindication as something conspicuous and illuminating; the abstract is also personified as 'going out'.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וִישׁוּעָתָהּ כְּלַפִּיד יִבְעָר",
+        "english_text": "and her salvation like a flaming torch shall burn",
+        "target": [
+          "Zion's salvation/deliverance",
+          "experienced rescue and restoration",
+          "covenant community / soteriological"
+        ],
+        "vehicle": [
+          "a blazing torch",
+          "bright, burning firebrand",
+          "ritual / everyday object"
+        ],
+        "ground": [
+          "conspicuous, energetic light piercing surrounding darkness",
+          "being both illuminating and consuming",
+          "experiential / emotional"
+        ],
+        "posture": [
+          "presents salvation as vigorous, radiant, and unstoppable",
+          "assuring and celebratory stance",
+          "prophetic / eschatological"
+        ],
+        "explanation": "Her 'salvation' is compared to a torch that burns, suggesting visible, energetic, and guiding deliverance; the abstract salvation is personified as something that can burn.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְמַעַן צִיּוֹן ... וּלְמַעַן יְרוּשָׁלִַם",
+        "english_text": "For the sake of Zion … for the sake of Jerusalem",
+        "target": [
+          "the people/community associated with Zion/Jerusalem",
+          "inhabitants and their spiritual-political condition",
+          "covenant community"
+        ],
+        "vehicle": [
+          "the geographical place-names 'Zion' and 'Jerusalem'",
+          "city as emblem of its people",
+          "urban / territorial"
+        ],
+        "ground": [
+          "close identification between a city and its inhabitants",
+          "using a place-name to stand for the community and its fate",
+          "cultural-linguistic convention"
+        ],
+        "posture": [
+          "focuses concern on the community by naming its sacred center",
+          "expresses intimate attachment to the city-as-people",
+          "prophetic / pastoral"
+        ],
+        "explanation": "The names 'Zion' and 'Jerusalem' do not refer merely to walls and streets but to the whole people whose destiny is in view, a standard place-for-people metonymy.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 62:2",
+    "deliberation": "I checked 'seeing' righteousness and glory (could be metaphorical for recognition) and the 'new name'. The clearest figures are: (1) the new 'name' as metonymy for a changed status/identity, and (2) 'the mouth of YHWH' as anthropomorphic metonymy for God's authoritative speech.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְקֹרָא לָךְ שֵׁם חָדָשׁ",
+        "english_text": "And you shall be called by a new name",
+        "target": [
+          "Zion/Jerusalem's status and identity",
+          "communal reputation and role",
+          "covenant community"
+        ],
+        "vehicle": [
+          "a 'new name'",
+          "an altered designation or label",
+          "linguistic / social"
+        ],
+        "ground": [
+          "names culturally encode identity, status, and destiny",
+          "changing a name signals a transformed condition",
+          "social-conventional"
+        ],
+        "posture": [
+          "promises a divinely conferred change of status",
+          "reassuring and honor-restoring",
+          "prophetic / restorative"
+        ],
+        "explanation": "The 'new name' does not merely change phonetics but stands metonymically for a new, honored identity before the nations.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר פִּי יְהוָה יִקֳּבֶנּוּ",
+        "english_text": "which the mouth of the LORD shall bestow/declare",
+        "target": [
+          "YHWH's authoritative act of naming and decreeing",
+          "divine speech-act",
+          "theological"
+        ],
+        "vehicle": [
+          "'the mouth of YHWH'",
+          "a human speech organ",
+          "human body / communication"
+        ],
+        "ground": [
+          "the mouth is the bodily source of words",
+          "God's will expressed through speech is portrayed via a human bodily part",
+          "anthropomorphic / metonymic"
+        ],
+        "posture": [
+          "underscores the authority and reliability of the promise",
+          "solemn, oath-like stance",
+          "prophetic"
+        ],
+        "explanation": "God is pictured with a 'mouth,' a human feature standing metonymically for His speaking; this anthropomorphism stresses the personal, authoritative nature of the naming.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 62:3",
+    "deliberation": "Here the city/people are twice likened to royal headgear in God's hand—a compact, extended metaphor—with parallel phrases functioning as two distinct but closely related images.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיִית עֲטֶרֶת תִּפְאֶרֶת בְּיַד־יְהוָה",
+        "english_text": "You shall be a glorious crown in the hand of the LORD",
+        "target": [
+          "Zion/people of God",
+          "restored covenant community",
+          "covenant community"
+        ],
+        "vehicle": [
+          "a 'glorious crown' held in a hand",
+          "royal headpiece signifying honor",
+          "monarchical / ceremonial"
+        ],
+        "ground": [
+          "a crown is precious, beautiful, and confers honor on its wearer",
+          "the community is portrayed as an ornament of God's royal splendor",
+          "social-symbolic"
+        ],
+        "posture": [
+          "elevates the community's worth and beauty before God",
+          "laudatory and affectionate",
+          "prophetic / doxological"
+        ],
+        "explanation": "The people are not literally a crown; their honor and beauty before God are depicted as if they were a royal ornament in His hand.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּצְנִיף מְלוּכָה בְּכַף־אֱלֹהָיִךְ",
+        "english_text": "and a royal diadem in the palm of your God",
+        "target": [
+          "Zion/people of God",
+          "restored covenant community",
+          "covenant community"
+        ],
+        "vehicle": [
+          "a royal diadem in the palm",
+          "second piece of royal regalia",
+          "monarchical / ceremonial"
+        ],
+        "ground": [
+          "a diadem is an intimate symbol of kingship, close to the king's person",
+          "the community is depicted as the emblem and treasure of God's reign",
+          "social-political"
+        ],
+        "posture": [
+          "stresses intimate, treasured status in God's grasp",
+          "highly honoring and protective",
+          "prophetic / doxological"
+        ],
+        "explanation": "Again, the community is metaphorically equated with royal regalia, emphasizing their value as a sign of God’s kingship.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 62:4",
+    "deliberation": "I noted the renaming pattern ('Forsaken'/'Desolate' vs. 'My-delight-in-her'/'Married') and the explicit 'your land shall be married'. These form an extended marital metaphor/personification for Zion and the land, with the names functioning metonymically for covenant status.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לֹא־יֵאָמֵר לָךְ עוֹד עֲזוּבָה ... כִּי לָךְ יִקָּרֵא חֶפְצִי־בָהּ וּלְאַרְצֵךְ בְּעוּלָה",
+        "english_text": "Nevermore shall you be called 'Forsaken,' nor shall your land be called 'Desolate'; but you shall be called 'I delight in her,' and your land 'Espoused.'",
+        "target": [
+          "Zion and its land in their covenant status",
+          "the community and territory's relationship to God",
+          "covenant community / land"
+        ],
+        "vehicle": [
+          "female social labels: 'Forsaken', 'Desolate', 'My-Delight-Is-in-Her', 'Married'",
+          "the changing marital status of a woman",
+          "family / marital"
+        ],
+        "ground": [
+          "a woman's marital status signifies whether she is cherished or abandoned",
+          "Zion's condition is portrayed as like a woman shifting from rejection to favored marriage",
+          "relational / emotional"
+        ],
+        "posture": [
+          "reverses shame into honor by promising a new, delighted relationship",
+          "consolatory and honor-restoring",
+          "prophetic / pastoral"
+        ],
+        "explanation": "City and land are personified as a woman whose names capture her relational status; the older names indicate abandonment, the new names express YHWH’s renewed delight and covenant-like bond.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַרְצֵךְ תִּבָּעֵל",
+        "english_text": "and your land shall be espoused/married",
+        "target": [
+          "the land of Zion",
+          "territory as object of attachment",
+          "geographical / communal"
+        ],
+        "vehicle": [
+          "a woman being married (verb בָּעַל)",
+          "marital union and possession",
+          "family / marital"
+        ],
+        "ground": [
+          "marriage implies permanent, exclusive belonging and delight",
+          "the land’s restoration is likened to entering a secure, joyful marital bond",
+          "relational / covenantal"
+        ],
+        "posture": [
+          "depicts restoration as a joyous, covenant-like union with the land",
+          "affirmative and hopeful",
+          "prophetic / restorative"
+        ],
+        "explanation": "The inanimate land is personified as a bride who will be married, expressing permanent reattachment and enjoyment by God and His people.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 62:5",
+    "deliberation": "I observed two parallel comparisons: sons' relationship to Zion likened to a youth marrying a maiden, and God's joy over Zion likened to a bridegroom's joy over his bride. Both are marital similes with strong personification of Zion (as a bride) and anthropomorphic portrayal of God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־יִבְעַל בָּחוּר בְּתוּלָה יִבְעָלוּךְ בָּנָיִךְ",
+        "english_text": "As a youth espouses a maiden, your sons shall espouse you",
+        "target": [
+          "Zion/land in relation to its inhabitants",
+          "bond between the people and their city/land",
+          "social / territorial"
+        ],
+        "vehicle": [
+          "a young man marrying a virgin",
+          "joyful first marriage",
+          "family / marital"
+        ],
+        "ground": [
+          "eager, affectionate, committing attachment",
+          "the restored bond of sons to their city is likened to first-marriage devotion",
+          "relational / emotional"
+        ],
+        "posture": [
+          "celebrates renewed closeness between inhabitants and their land",
+          "positive and affectionate",
+          "prophetic / restorative"
+        ],
+        "explanation": "Zion, a city, is personified as a bride; the intense attachment of young bridegroom to virgin bride is used to picture how closely her sons will be joined to her.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמְשׂוֹשׂ חָתָן עַל־כַּלָּה יָשִׂישׂ עָלַיִךְ אֱלֹהָיִךְ",
+        "english_text": "and as the bridegroom rejoices over the bride, so will your God rejoice over you",
+        "target": [
+          "YHWH's joy in Zion",
+          "divine emotional attitude toward the community",
+          "theological / emotional"
+        ],
+        "vehicle": [
+          "a bridegroom's joy over his bride",
+          "wedding rejoicing",
+          "family / marital"
+        ],
+        "ground": [
+          "marital joy is intense, exclusive, and publicly celebrated",
+          "God's delight in Zion is likened to exuberant wedding happiness",
+          "emotional / relational"
+        ],
+        "posture": [
+          "assures hearers of God's passionate delight in them",
+          "tender and celebratory",
+          "prophetic / pastoral"
+        ],
+        "explanation": "God is anthropomorphically compared to a bridegroom; His joy over Zion is depicted with the emotional intensity of wedding rejoicing.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 62:6",
+    "deliberation": "I weighed whether the watchmen are literal guards or a metaphor. Given they are called 'remembrancers of YHWH' and exhorted not to be silent, these 'watchmen' function as a metaphor for prophetic/prayer intercessors. The 'reminding' of YHWH is an anthropomorphic personification of God as one whose memory is jogged.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־חוֹמֹתַיִךְ יְרוּשָׁלִַם הִפְקַדְתִּי שֹׁמְרִים כׇּל־הַיּוֹם וְכׇל־הַלַּיְלָה תָּמִיד לֹא יֶחֱשׁוּ",
+        "english_text": "Upon your walls, O Jerusalem, I have set sentries, who shall never be silent by day or by night",
+        "target": [
+          "prophets/intercessors commissioned for Jerusalem",
+          "human agents of prayer and proclamation",
+          "religious leadership"
+        ],
+        "vehicle": [
+          "military watchmen posted on city walls",
+          "vigilant sentries",
+          "military / civic security"
+        ],
+        "ground": [
+          "watchmen keep constant vigil and sound warnings for the city's safety",
+          "prophetic intercession is likened to nonstop guarding and alerting",
+          "functional / protective"
+        ],
+        "posture": [
+          "highlights the seriousness and constancy of intercession on Jerusalem’s behalf",
+          "urgent and protective",
+          "prophetic / exhortative"
+        ],
+        "explanation": "Those who pray and proclaim for Jerusalem are portrayed metaphorically as watchmen on her walls, emphasizing vigilance and unceasing speech.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַמַּזְכִּירִים אֶת־יְהוָה",
+        "english_text": "you who remind the LORD",
+        "target": [
+          "the act of intercessory prayer toward God",
+          "petitioning activity",
+          "religious practice"
+        ],
+        "vehicle": [
+          "reminding someone who might forget",
+          "prompting another’s memory",
+          "cognitive / interpersonal"
+        ],
+        "ground": [
+          "petitioners keep an issue before a superior as if 'reminding' them",
+          "prayer is depicted as jogging God's memory of His promises",
+          "relational / communicative"
+        ],
+        "posture": [
+          "sanctions bold, persistent address to God",
+          "familial yet insistent stance",
+          "devotional / liturgical"
+        ],
+        "explanation": "God is described as one whom His servants can 'remind', an anthropomorphic personification that encourages persistent intercession.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 62:7",
+    "deliberation": "I observed two figurative moves: exhorting not to 'give rest' to God (anthropomorphic personification of divine response under relentless prayer), and making 'Jerusalem' into 'a praise in the earth', equating a city with the abstract notion of praise (metaphor, with Jerusalem standing for its people and reputation).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַל־תִּתְּנוּ דֳמִי לוֹ",
+        "english_text": "and give Him no rest",
+        "target": [
+          "YHWH's timing and willingness to act for Jerusalem",
+          "divine response to prayer",
+          "theological"
+        ],
+        "vehicle": [
+          "rest or respite denied to a human superior by constant appeals",
+          "state of being left in peace",
+          "human experience / social"
+        ],
+        "ground": [
+          "unceasing requests can disturb someone's rest and compel attention",
+          "prayer is pictured as preventing God from 'resting' until He acts",
+          "relational / procedural"
+        ],
+        "posture": [
+          "encourages insistent, even importunate prayer",
+          "bold, urgent stance toward God",
+          "devotional / exhortative"
+        ],
+        "explanation": "God is personified as one who might rest but can be kept from rest by the relentless petitions of His people.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְעַד־יָשִׂים אֶת־יְרוּשָׁלִַם תְּהִלָּה בָּאָרֶץ",
+        "english_text": "until He makes Jerusalem a praise in the earth",
+        "target": [
+          "Jerusalem’s reputation among the nations",
+          "the community’s standing as evidence of God's work",
+          "social / religious"
+        ],
+        "vehicle": [
+          "a 'praise' (תְּהִלָּה) as a thing one can become",
+          "object/occasion of laudation",
+          "liturgical / evaluative"
+        ],
+        "ground": [
+          "that which is most admired becomes synonymous with the praise it evokes",
+          "Jerusalem is equated with the praise directed to God because of her",
+          "symbolic / reputational"
+        ],
+        "posture": [
+          "envisions the city as embodiment of God's praiseworthy action",
+          "exalting and hopeful",
+          "prophetic / doxological"
+        ],
+        "explanation": "The city (standing metonymically for its people) is metaphorically made into 'praise' itself, personifying Jerusalem as the living occasion of worldwide doxology.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 62:8",
+    "deliberation": "I considered grain/wine language (largely literal, with possible minor synecdoche). The clearest figure is the oath formula: YHWH swears 'by His right hand and by His mighty arm'—anthropomorphism with body parts as metonymy for divine power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נִשְׁבַּע יְהוָה בִּימִינוֹ וּבִזְרֹועַ עֻזּוֹ",
+        "english_text": "The LORD has sworn by His right hand and by His mighty arm",
+        "target": [
+          "YHWH's power and reliability in making an oath",
+          "divine capacity to act in strength",
+          "theological"
+        ],
+        "vehicle": [
+          "a 'right hand' and a 'mighty arm'",
+          "limbs used for strength in battle",
+          "human body / martial"
+        ],
+        "ground": [
+          "hands and arms are instruments of human strength and action",
+          "God's power and resolve are portrayed through human bodily imagery",
+          "anthropomorphic / metonymic"
+        ],
+        "posture": [
+          "underscores the firmness and power behind the promise",
+          "solemn and reassuring",
+          "prophetic / covenantal"
+        ],
+        "explanation": "God is said to swear by His own 'hand' and 'arm', human body parts that stand metonymically for His powerful action; this is standard anthropomorphic oath language.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 62:9",
+    "deliberation": "I tested whether 'those who harvest shall eat' and 'drink it in My holy courts' involve figurative devices. Here the reversal is expressed literally: the actual harvesters will literally consume in the literal temple courts. Any symbolism of the temple as God's presence is backgrounded, so I judge no clear, discrete figurative expression in this verse itself.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 62:10",
+    "deliberation": "The verse chains a series of imperatives about gates, roads, highways, stones, and a banner. Within Isaiah these function as metaphors for removing obstacles to restoration and visibly signaling salvation to the nations. I isolate: (1) the 'highway' imagery for facilitating the people's return, and (2) the 'banner' raised over peoples as a metaphor for a public saving signal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פַּנּוּ דֶּרֶךְ הָעָם סֹלּוּ סֹלּוּ הַמְסִלָּה סַקְּלוּ מֵאֶבֶן",
+        "english_text": "Clear the road for the people; build up, build up the highway; remove the rocks!",
+        "target": [
+          "removal of obstacles to the people's restoration",
+          "facilitating return from exile and renewed access to God",
+          "historical-salvific process"
+        ],
+        "vehicle": [
+          "preparing and smoothing a highway",
+          "civil engineering of a road for travelers",
+          "infrastructure / travel"
+        ],
+        "ground": [
+          "making a straight, unobstructed way allows free movement",
+          "God's saving work is portrayed as clearing a route for His people",
+          "process / logistical"
+        ],
+        "posture": [
+          "calls for active cooperation with God's restorative work",
+          "mobilizing and anticipatory",
+          "prophetic / exhortative"
+        ],
+        "explanation": "The concrete commands to clear and raise a road function metaphorically for getting rid of spiritual/political impediments so the people can return under God’s salvation.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָרִימוּ נֵס עַל־הָעַמִּים",
+        "english_text": "Raise a banner over/for the peoples!",
+        "target": [
+          "public announcement and rallying of the nations to God's saving act",
+          "universal summons to observe/participate in restoration",
+          "missional / eschatological"
+        ],
+        "vehicle": [
+          "a raised banner or signal standard",
+          "conspicuous rallying flag",
+          "military / ceremonial"
+        ],
+        "ground": [
+          "banners serve as visible signs that gather and direct people",
+          "God's salvation is portrayed as a signal that draws nations together",
+          "symbolic / communicative"
+        ],
+        "posture": [
+          "imagines salvation as something openly displayed among the nations",
+          "expansive and triumphal",
+          "prophetic / missionary"
+        ],
+        "explanation": "The lifting of a 'banner' is a military/ceremonial image used metaphorically for a visible, rallying sign of God's salvation among the peoples.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 62:11",
+    "deliberation": "I identified three figures: (1) 'daughter of Zion' personifying the city/people as a young woman, (2) 'your salvation is coming' where 'salvation' is personified and functions metonymically for the saving agent, and (3) 'to the end of the earth' as conventional spatial hyperbole for universal scope.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִמְרוּ לְבַת־צִיּוֹן",
+        "english_text": "Announce to the daughter of Zion",
+        "target": [
+          "the community associated with Zion",
+          "inhabitants of Jerusalem",
+          "covenant community"
+        ],
+        "vehicle": [
+          "a 'daughter' named Zion",
+          "human female offspring",
+          "family / kinship"
+        ],
+        "ground": [
+          "a daughter is a cherished, vulnerable family member",
+          "Zion is portrayed as a person in filial relationship to God",
+          "relational"
+        ],
+        "posture": [
+          "addresses the city in intimate, familial terms",
+          "consoling and affectionate",
+          "prophetic / pastoral"
+        ],
+        "explanation": "Zion is personified as a 'daughter', expressing closeness and tenderness rather than a mere place-name.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנֵּה יִשְׁעֵךְ בָּא הִנֵּה שְׂכָרוֹ אִתּוֹ וּפְעֻלָּתוֹ לְפָנָיו",
+        "english_text": "See, your salvation is coming! See, his reward is with him, and his recompense before him.",
+        "target": [
+          "the agent of Zion's deliverance (God or His appointed deliverer)",
+          "divine saving intervention",
+          "soteriological"
+        ],
+        "vehicle": [
+          "'salvation' portrayed as a person who comes with reward",
+          "an arriving royal or warrior figure bearing recompense",
+          "personal / royal"
+        ],
+        "ground": [
+          "abstract salvation is embodied in a concrete deliverer who arrives with rewards",
+          "the coming of a person makes salvation visible and tangible",
+          "theological / experiential"
+        ],
+        "posture": [
+          "presents deliverance as imminent and personal",
+          "hopeful and urgent",
+          "prophetic / eschatological"
+        ],
+        "explanation": "The abstract 'salvation' is personified and further specified with masculine pronouns and 'his reward', functioning metonymically for the saving person God sends (or God Himself).",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֶל־קְצֵה הָאָרֶץ",
+        "english_text": "to the end of the earth",
+        "target": [
+          "the universal scope of God's proclamation",
+          "all nations and distant regions",
+          "geographical / ethnological"
+        ],
+        "vehicle": [
+          "the 'end of the earth' as farthest conceivable regions",
+          "extreme boundary of land",
+          "cosmic / geographic"
+        ],
+        "ground": [
+          "speaking of extremes conveys the idea of comprehensiveness",
+          "hyperbolic distance expresses global reach",
+          "rhetorical / spatial"
+        ],
+        "posture": [
+          "magnifies the reach of the announcement",
+          "expansive and emphatic",
+          "prophetic / universalistic"
+        ],
+        "explanation": "The phrase is a conventional hyperbole: there is no literal edge to the earth here, but the expression signals that the proclamation extends to all peoples.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 62:12",
+    "deliberation": "I analyzed the titles given: 'The Holy People, YHWH's Redeemed' (largely theological descriptors) and 'Sought Out, a City Not Forsaken'. The latter clusters personification (city as a sought, not‑abandoned subject) with metaphorical naming, the names standing metonymically for securely favored status.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלָךְ יִקָּרֵא דְרוּשָׁה עִיר לֹא נֶעֱזָבָה",
+        "english_text": "and you shall be called, 'Sought Out, A City Not Forsaken.'",
+        "target": [
+          "Zion/Jerusalem in her restored condition",
+          "the community and its city",
+          "covenant community / urban"
+        ],
+        "vehicle": [
+          "a sought-after and not-forsaken city/person",
+          "social status of being desired rather than abandoned",
+          "relational / social-status"
+        ],
+        "ground": [
+          "one who is sought after and not left alone enjoys favor, attention, and security",
+          "Zion's renewal is portrayed as newfound desirability and permanent care",
+          "relational / reputational"
+        ],
+        "posture": [
+          "replaces former stigma of abandonment with honorific titles",
+          "consoling and honor-restoring",
+          "prophetic / pastoral"
+        ],
+        "explanation": "The city is personified as someone who can be 'sought' or 'forsaken'; these metaphorical names function metonymically for a new state of being desired and securely kept by God.",
+        "confidence": 0.95
+      }
+    ]
+  }
+]

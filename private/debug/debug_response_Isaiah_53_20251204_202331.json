@@ -1,0 +1,409 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 53:1",
+    "deliberation": "Checked the rhetorical questions for hyperbole or irony; they are straightforward. The only clear figurative expression is the idiomatic phrase 'the arm of YHWH', a standard metaphor/metonymy for God's effective power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּזְר֥וֹעַ יְהֹוָ֖ה",
+        "english_text": "the arm of GOD",
+        "target": ["God’s effective power in history", "divine power/action", "theology / divine intervention"],
+        "vehicle": ["arm", "strong human limb used for work and combat", "human body / physical strength"],
+        "ground": ["capacity to act with strength, to strike, to save", "effective agency and might", "power / agency"],
+        "posture": ["lament that this power is hidden from most", "questioning / astonishment", "prophetic lament and wonder"],
+        "explanation": "The phrase ‘arm of YHWH’ does not refer to a literal limb but metaphorically (and metonymically) to God’s powerful, saving action manifested in history.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 53:2",
+    "deliberation": "Looked for similes introduced by כ- and for any hyperbole in the description of appearance. Found two explicit botanical similes describing the servant’s growth and vulnerability. The rest of the verse’s lack-of-beauty language is evaluative but not clearly figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיַּ֨עַל כַּיּוֹנֵ֜ק לְפָנָ֗יו",
+        "english_text": "he grew like a sapling/young plant before Him",
+        "target": ["the servant’s emergence and development", "his vulnerable beginnings", "suffering/redeeming figure in history"],
+        "vehicle": ["יּוֹנֵק (young plant/sapling)", "tender, easily damaged plant shoot", "botanical growth in nature"],
+        "ground": ["tenderness, vulnerability, unimpressive outward appearance", "frailty and dependence on environment", "growth under adverse or precarious conditions"],
+        "posture": ["sympathetic highlighting of lowly origins", "emphasis on weakness rather than grandeur", "prophetic portrayal of paradoxical servant status"],
+        "explanation": "The servant’s growth is explicitly compared to a tender plant, stressing his vulnerability and lack of outward impressiveness.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַשֹּׁ֙רֶשׁ֙ מֵאֶ֣רֶץ צִיָּ֔ה",
+        "english_text": "and like a root out of arid ground",
+        "target": ["the servant’s existence and perseverance", "his survival in hostile conditions", "suffering/redeeming figure in history"],
+        "vehicle": ["root out of dry ground", "plant root struggling in parched soil", "botanical survival imagery"],
+        "ground": ["struggle to live with minimal sustenance or support", "hiddenness and lack of visible beauty, yet persistence", "existence against odds in a barren environment"],
+        "posture": ["underscoring improbability of his flourishing", "emphasis on obscurity and hardship", "prophetic stress on paradox of God’s work through weakness"],
+        "explanation": "The servant is likened to a root in dry soil, picturing him as unlikely to thrive and devoid of visible glory, yet still present.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 53:3",
+    "deliberation": "Searched for similes and metaphorical epithets. Found (1) the title ‘a man of pains and acquainted with sickness’ as a metaphorical characterization and (2) an explicit simile comparing him to one from whom people hide their faces. The rest (despised, unesteemed) is literal social evaluation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אִ֥ישׁ מַכְאֹב֖וֹת וִיד֣וּעַ חֹ֑לִי",
+        "english_text": "a man of suffering, familiar with disease",
+        "target": ["the servant’s inner and social identity", "his characteristic experience", "suffering redeemer figure"],
+        "vehicle": ["‘man of pains’ and ‘knowing sickness’", "person defined by continual bodily affliction", "embodiment of suffering and illness"],
+        "ground": ["constant exposure to pain and affliction", "being thoroughly acquainted with suffering as a life-mark", "total identification with the experience of suffering"],
+        "posture": ["emphasizing his stigma and marginalization", "highlighting extremity of suffering as defining feature", "prophetic portrayal of the servant as embodying affliction"],
+        "explanation": "Calling him ‘a man of pains’ and ‘knowing sickness’ goes beyond stating he suffers; it metaphorically makes suffering and sickness his defining identity.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּכְמַסְתֵּ֤ר פָּנִים֙ מִמֶּ֔נּוּ",
+        "english_text": "as one who hides his face from us",
+        "target": ["the community’s rejection of the servant", "their avoidance and shame response", "social perception of the suffering figure"],
+        "vehicle": ["one from whom people hide their face", "a person so repulsive people turn away", "socially shunned individual"],
+        "ground": ["repulsion, shame, and refusal of eye contact", "instinctive withdrawal from what is disgraceful", "social ostracism and avoidance"],
+        "posture": ["self-indicting acknowledgment of prior rejection", "tone of regret and confession", "community’s retrospective recognition of their misjudgment"],
+        "explanation": "The servant is compared to someone from whom people avert their faces, symbolizing the community’s deep shame and rejection of him.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 53:4",
+    "deliberation": "Considered whether ‘sickness’ and ‘pains’ are strictly physical or stand for sins and their consequences. The verse closely parallels v.5 (sins/iniquities) and uses ‘bearing’ language, so I treated this as metaphorical, with illness imagery metonymically representing guilt borne by the servant.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אָכֵ֤ן חֳלָיֵ֙נוּ֙ ה֣וּא נָשָׂ֔א וּמַכְאֹבֵ֖ינוּ סְבָלָ֑ם",
+        "english_text": "Yet it was our sickness that he was bearing, our suffering that he endured",
+        "target": ["the servant’s substitutionary bearing of guilt and its consequences", "human sin and its burdens", "theological concept of vicarious suffering"],
+        "vehicle": ["‘sicknesses’ and ‘pains’ borne or carried", "a person carrying heavy diseases or bodily afflictions", "burdensome physical illnesses and torments"],
+        "ground": ["transferable, weighty, debilitating burden placed on another", "one person suffering what belongs to others", "the oppressiveness and costliness of affliction"],
+        "posture": ["confessional recognition that the burden was actually ours", "corrective explanation of a misjudged sufferer", "theological insight into the servant’s role"],
+        "explanation": "The ‘sicknesses’ and ‘pains’ he ‘carries’ are not merely his own ailments but metaphorically and metonymically represent the community’s sins and their consequences, depicted as transferable burdens of disease.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 53:5",
+    "deliberation": "Weighed whether the violent verbs are literal torture or figurative. Regardless of possible literal suffering, the climactic clause ‘by his bruises we were healed’ clearly uses medical-healing imagery for spiritual/moral restoration, making at least one unambiguous metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מוּסַ֤ר שְׁלוֹמֵ֙נוּ֙ עָלָ֔יו וּבַחֲבֻרָת֖וֹ נִרְפָּא־לָֽנוּ",
+        "english_text": "He bore the chastisement that made us whole, and by his bruises we were healed",
+        "target": ["the community’s restoration to peace with God", "forensic and relational reconciliation", "salvation / justification imagery"],
+        "vehicle": ["disciplinary blows and bruises that produce healing", "medical process where wounds lead to cure", "physical punishment and bodily welts"],
+        "ground": ["his suffering becomes the means of our well-being", "pain leading paradoxically to healing for others", "one body’s injury resulting in another’s health"],
+        "posture": ["grateful recognition of the paradoxical means of healing", "theological interpretation of suffering as redemptive", "affirmation of vicarious atonement through pain"],
+        "explanation": "‘Healing’ here extends beyond physical cure to comprehensive well-being and peace with God; the servant’s bruises and chastisement are metaphorically and metonymically portrayed as the means by which others are ‘healed’.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 53:6",
+    "deliberation": "Identified (1) an explicit simile comparing the people to straying sheep, (2) the usual metaphorical use of ‘way’ for a pattern of life, and (3) the metaphor of iniquity being laid upon the servant as if it were a transferable burden.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֻּלָּ֙נוּ֙ כַּצֹּ֣אן תָּעִ֔ינוּ",
+        "english_text": "We all went astray like sheep",
+        "target": ["the moral and spiritual wandering of the people", "corporate disobedience", "human sin and estrangement from God"],
+        "vehicle": ["sheep that wander off", "domestic animals prone to stray without guidance", "pastoral imagery of flock behavior"],
+        "ground": ["aimless, vulnerable misdirection; need of guidance", "collective folly and susceptibility to danger", "failure to stay on a safe, intended path"],
+        "posture": ["corporate self-indictment", "penitential acknowledgment of folly", "prophetic use of humble pastoral imagery to expose sin"],
+        "explanation": "The people’s sin is likened to sheep going astray, highlighting their collective foolishness and vulnerability apart from proper guidance.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אִ֥ישׁ לְדַרְכּ֖וֹ פָּנִ֑ינוּ",
+        "english_text": "Each of us going our own way",
+        "target": ["individual conduct and life-choices", "personal moral direction", "human ethical behavior"],
+        "vehicle": ["‘way’ (דֶּרֶךְ)", "path or road one travels", "spatial journeying"],
+        "ground": ["a continuous course one follows, chosen direction", "life understood as a path with moral orientation", "movement toward a goal, whether right or wrong"],
+        "posture": ["emphasizing personal responsibility within corporate guilt", "illustrating stubborn self-direction", "prophetic critique of individual moral autonomy"],
+        "explanation": "‘Way’ is used metaphorically and metonymically for a person’s pattern of life and moral behavior, not for a literal road.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיהֹוָה֙ הִפְגִּ֣יעַ בּ֔וֹ אֵ֖ת עֲוֺ֥ן כֻּלָּֽנוּ",
+        "english_text": "And GOD visited upon him the guilt of all of us",
+        "target": ["the assignment of the people’s guilt to the servant", "forensic liability and its consequences", "atonement / judgment dynamic"],
+        "vehicle": ["iniquity being caused to meet/laid upon someone", "a weight or charge placed on a person", "transferable burden or legal liability"],
+        "ground": ["guilt conceptualized as something that can be placed on another", "one person carrying or being charged with others’ wrongdoing", "transfer of responsibility and its penalty"],
+        "posture": ["solemn theological assertion of substitution", "explanatory tone clarifying divine action", "prophetic interpretation of the servant’s suffering"],
+        "explanation": "The iniquity of ‘all of us’ is portrayed as something GOD causes to fall upon the servant, a metaphorical and metonymical depiction of vicarious bearing of guilt.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 53:7",
+    "deliberation": "Looked at the repeated ‘he did not open his mouth’ for hyperbole but it can be taken straightforwardly. The verse contains two parallel animal similes (lamb to slaughter, ewe before shearers) that clearly structure the verse’s imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כַּשֶּׂה֙ לַטֶּ֣בַח יוּבָ֔ל",
+        "english_text": "Like a sheep being led to slaughter",
+        "target": ["the servant’s submissive acceptance of suffering/death", "his non-resistance to unjust treatment", "his demeanor under persecution"],
+        "vehicle": ["sheep led to slaughter", "docile animal taken to be killed", "sacrificial livestock imagery"],
+        "ground": ["silent, unresisting yielding to a fate imposed by others", "vulnerability and passivity under control of handlers", "absence of protest in the face of death"],
+        "posture": ["highlighting innocence and meekness", "evoking pathos through sacrificial imagery", "prophetic accent on non-violence"],
+        "explanation": "The servant’s demeanor is likened to a sheep led to be slaughtered, stressing his quiet, unresisting submission under mortal threat.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּכְרָחֵ֕ל לִפְנֵ֥י גֹזְזֶ֖יהָ נֶאֱלָמָ֑ה",
+        "english_text": "Like a ewe, dumb before those who shear her",
+        "target": ["the servant’s silence under humiliation", "his refusal to defend himself verbally", "his attitude during unjust treatment"],
+        "vehicle": ["ewe silent before shearers", "female sheep quietly submitting to shearing", "pastoral scene of compliant animal"],
+        "ground": ["quietness, lack of protest, acceptance of imposed action", "being acted upon without resistance", "apparent powerlessness yet dignified silence"],
+        "posture": ["emphasizing his voluntary restraint", "eliciting sympathy and admiration", "prophetic modeling of patient suffering"],
+        "explanation": "The servant’s silence is compared to a ewe’s silence during shearing, conveying his quiet acceptance of humiliation and loss.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 53:8",
+    "deliberation": "Examined legal/judicial terms and especially the phrase ‘cut off from the land of the living’. That expression is a well-attested Biblical idiom: a metaphor comparing death (especially violent removal) to being severed from a country of the living.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֤י נִגְזַר֙ מֵאֶ֣רֶץ חַיִּ֔ים",
+        "english_text": "For he was cut off from the land of the living",
+        "target": ["the servant’s death and removal from human society", "cessation of earthly life", "judicially inflicted or violent death"],
+        "vehicle": ["being cut off from a land of the living", "severing a person from a territory", "exile or removal from a populated domain"],
+        "ground": ["sudden, decisive termination of membership in the living community", "violent or judicial exclusion from normal life", "loss of place and status among the living"],
+        "posture": ["sober portrayal of the extremity of injustice", "highlighting the finality of the sentence", "prophetic lament over the servant’s fate"],
+        "explanation": "The phrase presents death as being ‘cut off’ from a ‘land of the living’, metaphorically depicting death as forcible removal from a realm of life.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 53:9",
+    "deliberation": "Considered whether ‘with the rich in his death’ or ‘with the wicked his grave’ are symbolic pairings (merism or metaphor). They can naturally be read as literal social categories describing where and with whom he was buried. No clear, necessary figurative device stood out; the verse is essentially narrative/judicial description.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 53:10",
+    "deliberation": "Looked at possible anthropopathic language about God’s ‘pleasure’; this is traditional anthropomorphism but hard to isolate as a distinct figure per the given categories. The clearest figurative element is the cultic metaphor in which the servant’s ‘soul’ (life) is described as a ‘guilt offering’ (אָשָׁם).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אִם־תָּשִׂ֤ים אָשָׁם֙ נַפְשׁ֔וֹ",
+        "english_text": "If he made himself an offering for guilt",
+        "target": ["the servant’s life given over to deal with sin", "his self-surrender unto death", "atoning role of the servant"],
+        "vehicle": ["אָשָׁם (guilt offering)", "sacrificial animal offered for guilt", "Levitical sacrificial ritual"],
+        "ground": ["his life functions like a sacrificial offering that atones for guilt", "costly, consecrated giving up of life to restore relationship with God", "substitutionary death with cultic efficacy"],
+        "posture": ["cultic/theological interpretation of his death", "elevating his suffering into priestly-sacrificial category", "prophetic recasting of his death in temple imagery"],
+        "explanation": "The servant’s ‘soul’ (metonymy for his life) is metaphorically identified with a guilt offering, drawing on sacrificial-cult imagery to interpret his self-giving as atonement.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 53:11",
+    "deliberation": "Assessed ‘seeing’ and ‘being satisfied’ as possibly metaphorical, but they can be taken straightforwardly as experiential results. The clearest figurative element is again the standard ‘bearing of iniquities’ motif, where sins are treated as burdens carried by the servant.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַעֲוֺנֹתָ֖ם ה֥וּא יִסְבֹּֽל",
+        "english_text": "It is their punishment [iniquities] that he bears",
+        "target": ["the servant’s assumption of others’ guilt and its penalty", "judicial and moral liability of the many", "atoning suffering"],
+        "vehicle": ["bearing (סבל) iniquities", "carrying a heavy load", "burden-bearing labor"],
+        "ground": ["sins conceptualized as weight or load that can be carried by another", "he experiences the consequences that belong to others", "transfer and endurance of an oppressive burden"],
+        "posture": ["explanatory statement of how he ‘makes many righteous’", "doctrinal emphasis on substitutionary bearing", "prophetic elucidation of the mechanism of justification"],
+        "explanation": "The servant is said to ‘bear’ their iniquities, metaphorically and idiomatically treating guilt as a heavy burden borne on behalf of others.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 53:12",
+    "deliberation": "Noted several images: (1) sharing spoil with the strong as victory-exaltation imagery, (2) ‘poured out his soul to death’ as a vivid metaphor of total self-expending, and (3) again the ‘bearing of sin’ motif. All three are distinct and recurrent figures in the verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲחַלֶּק־ל֣וֹ בָרַבִּ֗ים וְאֶת־עֲצוּמִים֮ יְחַלֵּ֣ק שָׁלָל",
+        "english_text": "I will give him the many as his portion, he shall receive the multitude as his spoil",
+        "target": ["the servant’s exaltation and reward", "his post-suffering honor and influence", "eschatological vindication"],
+        "vehicle": ["dividing spoil with the many/strong", "victorious warrior sharing plunder after battle", "ancient war booty imagery"],
+        "ground": ["triumph after costly struggle", "receiving a rich share as acknowledgment of victory", "publicly recognized honor and dominion"],
+        "posture": ["celebratory declaration of his vindication", "military metaphor used to magnify his reward", "prophetic assurance of ultimate triumph after humiliation"],
+        "explanation": "The servant’s reward is pictured in military terms as sharing spoils, metaphorically representing honor, influence, and the ‘many’ themselves as his portion.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁ֨ר הֶעֱרָ֤ה לַמָּ֙וֶת֙ נַפְשׁ֔וֹ",
+        "english_text": "For he exposed/poured out himself to death",
+        "target": ["the servant’s self-giving unto death", "his voluntary acceptance of a lethal destiny", "extent of his sacrificial commitment"],
+        "vehicle": ["pouring out the soul", "emptying out a liquid or life-force", "complete expenditure of one’s inner being"],
+        "ground": ["total, voluntary self-expenditure, holding nothing back", "life treated as something that can be poured out until gone", "willingness to be completely spent even unto death"],
+        "posture": ["highlighting the extremity and voluntariness of his sacrifice", "framing his death as a deliberate self-offering", "prophetic emphasis on whole-hearted devotion"],
+        "explanation": "His ‘soul’ (life) is depicted as something poured out, a metaphor and idiom for total self-expenditure culminating in death.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהוּא֙ חֵטְא־רַבִּ֣ים נָשָׂ֔א",
+        "english_text": "Whereas he bore the guilt of the many",
+        "target": ["the servant’s assumption of others’ sins", "corporate guilt of ‘the many’", "atoning function of his suffering/death"],
+        "vehicle": ["bearing sin (חֵטְא) of many", "carrying a heavy burden or load", "beast of burden imagery applied to guilt"],
+        "ground": ["sin conceptualized as a load that can be carried by another", "substitutionary endurance of what rightfully belongs to the many", "transferable burden of moral failure and its penalty"],
+        "posture": ["affirming his intercessory and substitutionary role", "closing summary of his representative function", "prophetic reiteration of vicarious bearing imagery"],
+        "explanation": "Again, the servant is said to ‘bear’ others’ sin, metaphorically and idiomatically treating guilt as a burden he carries on their behalf.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]

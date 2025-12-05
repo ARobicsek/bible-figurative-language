@@ -1,0 +1,719 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 51:1",
+    "deliberation": "Considered the imperatives 'listen' and 'look' as conventional for attention. The dominant image is the 'rock' and 'quarry' as the source from which Israel was hewn, which is a clear metaphor for their ancestral origins (later specified as Abraham/Sarah). Treated that complex as one figurative instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַבִּ֙יטוּ֙ אֶל־צ֣וּר חֻצַּבְתֶּ֔ם וְאֶל־מַקֶּ֥בֶת בּ֖וֹר נֻקַּרְתֶּֽם",
+        "english_text": "Look to the rock you were hewn from, To the quarry you were dug from.",
+        "target": ["Israel's origins and identity", "collective ancestry", "people of God"],
+        "vehicle": ["rock/quarry", "stone source", "geology/construction"],
+        "ground": ["being shaped and derived from a solid source", "stability and continuity", "origins/foundations"],
+        "posture": ["call to remember origins", "exhortation", "restoration prophecy"],
+        "explanation": "Israel’s ancestral origin is depicted as stone cut from a rock and quarry, evoking solidity and deliberate shaping; the rock/quarry stands for Abraham/Sarah and the founding promises.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 51:2",
+    "deliberation": "Abraham as 'your father' and Sarah as one who 'bore you' are genealogically true from Israel’s perspective; 'one' being made 'many' refers to literal multiplication of descendants. Any conceptual metaphor of corporate ancestry is very conventional. No distinct, marked figurative expression beyond normal kinship language.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 51:3",
+    "deliberation": "Zion and her ruins are treated as a comforted entity, implying personification. The wilderness/desert becoming like Eden/‘the garden of YHWH’ is a clear paired simile. 'Thanksgiving and the sound of music' function metonymically for worshipful life in the city.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי־נִחַ֨ם יְהוָה צִיּוֹן נִחַם כׇּל־חׇרְבֹתֶיהָ",
+        "english_text": "Truly the LORD has comforted Zion, Comforted all her ruins—",
+        "target": ["Zion and her ruins", "city/landscape", "people of God / Jerusalem"],
+        "vehicle": ["comforted person", "human recipient of consolation", "interpersonal care"],
+        "ground": ["ability to experience sorrow and receive comfort", "emotional restoration", "restoration after loss"],
+        "posture": ["consolation", "encouragement", "restoration prophecy"],
+        "explanation": "Zion and its physical ruins are spoken of as if they were a person who can be comforted, personifying the city and its desolate places.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיָּשֶׂם מִדְבָּרָהּ כְּעֵדֶן וְעַרְבָתָהּ כְּגַן־יְהוָה",
+        "english_text": "Made her wilderness like Eden, Her desert like the Garden of the LORD.",
+        "target": ["Zion’s wilderness and desert", "devastated land", "restoration of the land"],
+        "vehicle": ["Eden / Garden of the LORD", "lush paradisal garden", "paradise imagery"],
+        "ground": ["fertility, beauty, delight", "reversal from desolation to abundance", "ideal blessing"],
+        "posture": ["promise of transformation", "hope-giving imagery", "restoration prophecy"],
+        "explanation": "The once-barren land around Zion is explicitly compared to Eden and the garden of the LORD, depicting the restoration as paradisal.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שָׂשׂוֹן וְשִׂמְחָה יִמָּצֵא בָהּ תּוֹדָה וְקוֹל זִמְרָה",
+        "english_text": "Gladness and joy shall abide there, Thanksgiving and the sound of music.",
+        "target": ["life and worship in restored Zion", "community activities", "covenant community"],
+        "vehicle": ["thanksgiving and sound of singing", "acts/sounds of worship", "cultic celebration"],
+        "ground": ["audible expressions indicate inner joy and corporate worship", "ritual stands for whole life of praise", "worship as marker of restoration"],
+        "posture": ["depiction of outcome", "celebratory tone", "restoration prophecy"],
+        "explanation": "‘Thanksgiving’ and ‘sound of singing’ stand metonymically for the whole restored worship and joyful communal life in Zion.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 51:4",
+    "deliberation": "Looked at ‘give ear’ as conventional. Identified two separate metaphors: Torah “going out” from God as if it were a dispatched entity, and God’s justice functioning as ‘light’ for peoples.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי תוֹרָה מֵאִתִּי תֵצֵא",
+        "english_text": "For teaching shall go forth from Me",
+        "target": ["God’s instruction", "revelatory word", "divine communication"],
+        "vehicle": ["something that goes forth", "emissary/stream", "movement through space"],
+        "ground": ["originating at God and moving outward to recipients", "dynamic outreach", "communication as sending"],
+        "posture": ["assurance of revelation", "authoritative declaration", "prophetic discourse"],
+        "explanation": "Torah is portrayed as something that ‘goes forth’ from God, as if a dispatched agent or flowing stream, emphasizing its dynamic spread.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִשְׁפָּטִי לְאוֹר עַמִּים אַרְגִּיעַ",
+        "english_text": "My way [justice] for the light of peoples. In a moment I will bring it.",
+        "target": ["God’s justice / legal order", "normative way", "divine governance"],
+        "vehicle": ["light", "illumination/guidance", "cosmic imagery"],
+        "ground": ["revealing, guiding, making paths clear", "dispelling ignorance or darkness", "order vs. chaos"],
+        "posture": ["promise of guidance", "universal scope emphasis", "prophetic discourse"],
+        "explanation": "God’s justice is presented as ‘light’ for peoples, likening its effect to illumination that guides and clarifies.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 51:5",
+    "deliberation": "Focused on the phrase ‘my arms’ judging and the coastlands hoping ‘for my arm.’ This is anthropomorphic and metonymic for divine power in action, a standard Isaiah image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּזְרֹעַי עַמִּים יִשְׁפֹּטוּ ... וְאֶל־זְרֹעִי יְיַחֵלֽוּן",
+        "english_text": "My arms shall provide for the peoples; ... They shall look to My arm.",
+        "target": ["God’s saving and judging power", "divine action", "YHWH’s effective agency"],
+        "vehicle": ["arm(s)", "limb used for strength/warfare", "human body imagery"],
+        "ground": ["strength, reach, capacity to act decisively", "power that protects and judges", "embodied agency"],
+        "posture": ["assurance of powerful intervention", "anthropomorphic depiction", "prophetic encouragement"],
+        "explanation": "God’s ‘arm(s)’ stand metonymically for His powerful action; people trusting in His ‘arm’ trust His might to judge and save.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 51:6",
+    "deliberation": "Noted two explicit similes: heavens vanishing ‘like smoke’ and earth wearing out ‘like a garment.’ They contrast the transient cosmos with God’s enduring salvation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־שָׁמַיִם כֶּעָשָׁן נִמְלָחוּ",
+        "english_text": "Though the heavens should melt away like smoke",
+        "target": ["the heavens", "cosmic order", "created world-above"],
+        "vehicle": ["smoke that dissipates", "ephemeral vapor", "ephemeral phenomena"],
+        "ground": ["transience, disappearance, insubstantiality", "passing away", "impermanence"],
+        "posture": ["contrastive emphasis", "apocalyptic-style hyperbole", "theological assurance"],
+        "explanation": "The heavens are compared to smoke that vanishes, a hyperbolic simile stressing their impermanence relative to God’s salvation.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָאָרֶץ כַּבֶּגֶד תִּבְלֶה",
+        "english_text": "And the earth wear out like a garment",
+        "target": ["the earth", "terrestrial creation", "created world-below"],
+        "vehicle": ["a worn-out garment", "clothing that ages and frays", "domestic object imagery"],
+        "ground": ["susceptible to aging and decay", "finite lifespan", "replaceability"],
+        "posture": ["contrastive emphasis", "apocalyptic-style hyperbole", "theological assurance"],
+        "explanation": "The earth is likened to clothing that wears out, emphasizing that even seemingly solid creation is temporary compared with God’s enduring salvation.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 51:7",
+    "deliberation": "The key figurative element is ‘my Torah in their heart,’ using ‘heart’ as the seat of inner cognition/will and picturing instruction as something housed within. Treated this as one metaphor; insults/jeers are literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַם תּוֹרָתִי בְלִבָּם",
+        "english_text": "O people who lay My instruction to heart!",
+        "target": ["internalized obedience/knowledge", "inner disposition", "covenant loyalty"],
+        "vehicle": ["Torah located in the heart", "physical placement in an organ", "body imagery"],
+        "ground": ["deep internalization and constant remembrance", "center of thought and decision", "integration into the self"],
+        "posture": ["commendation of true piety", "didactic emphasis", "prophetic exhortation"],
+        "explanation": "Having Torah ‘in the heart’ metaphorically pictures God’s teaching as placed within the inner self, not merely externally known.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 51:8",
+    "deliberation": "Identified two parallel similes: enemies consumed by moth and by worm as garments/wool are. These depict the fragility of human opponents. God’s enduring righteousness is stated straightforwardly.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי כַבֶּגֶד יֹאכְלֵם עָשׁ",
+        "english_text": "For the moth shall eat them up like a garment",
+        "target": ["the human persecutors/insulters", "hostile people", "opponents of the righteous"],
+        "vehicle": ["a moth eating a garment", "insect damage to cloth", "domestic decay imagery"],
+        "ground": ["quiet, inevitable deterioration", "being easily destroyed", "fragility against small forces"],
+        "posture": ["warning and reassurance", "diminishing enemies’ power", "prophetic encouragement"],
+        "explanation": "The enemies’ demise is compared to a moth’s slow consumption of clothing, stressing how fragile and temporary they are.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַצֶּמֶר יֹאכְלֵם סָס",
+        "english_text": "The worm shall eat them up like wool.",
+        "target": ["the same human persecutors", "hostile people", "opponents of the righteous"],
+        "vehicle": ["worm eating wool", "parasite damaging fabric", "domestic decay imagery"],
+        "ground": ["vulnerability, perishability", "gradual but sure destruction", "insignificant agents undoing the proud"],
+        "posture": ["warning and reassurance", "diminishing enemies’ power", "prophetic encouragement"],
+        "explanation": "The hostile people are likened to wool devoured by worms, reinforcing the idea that they will be quietly but completely destroyed.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 51:9",
+    "deliberation": "Two main figurative complexes: (1) the ‘arm of YHWH’ addressed and told to awaken and clothe itself with strength—anthropomorphic personification of divine power; (2) the references to ‘Rahab’ and ‘the dragon’ as mythic sea monsters representing a chaos/oppressor power cut down by God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עוּרִי עוּרִי לִבְשִׁי־עֹז זְרֹועַ יְהוָה",
+        "english_text": "Awake, awake, clothe yourself with splendor, O arm of the LORD!",
+        "target": ["God’s saving power in history", "divine agency", "YHWH’s might"],
+        "vehicle": ["an arm that awakens and puts on strength", "warrior’s limb dressing for battle", "human body/warfare imagery"],
+        "ground": ["capacity to act forcefully in battle", "ability to be aroused to action", "equipping oneself with strength"],
+        "posture": ["urgent appeal", "liturgical invocation", "prophetic prayer"],
+        "explanation": "God’s power is portrayed as His ‘arm,’ which is summoned to awake and put on strength like a warrior, both anthropomorphizing and personifying divine might.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "הֲלֹוא אַתְּ־הִיא הַמַּחְצֶבֶת רַהַב מְחוֹלֶלֶת תַּנִּין",
+        "english_text": "It was you that hacked Rahab in pieces, That pierced the Dragon.",
+        "target": ["the historical/primeval oppressor opposed by God", "chaos and imperial powers", "forces hostile to YHWH and His people"],
+        "vehicle": ["Rahab and the Dragon (tannin)", "mythic sea monsters/chaos beasts", "ancient Near Eastern chaos imagery"],
+        "ground": ["dangerous, proud, chaotic power defeated by divine might", "violent opposition to order", "subjugation by a greater warrior"],
+        "posture": ["reminder of past victories", "mythopoetic argument for future salvation", "prophetic reassurance"],
+        "explanation": "‘Rahab’ and ‘the Dragon’ are mythic sea-monster figures, metaphorically representing an arrogant, chaotic oppressor that God previously shattered.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 51:10",
+    "deliberation": "Most of the verse retells the Red Sea event, which in context is treated as historical miracle. The key figurative term is ‘the redeemed’ (גְּאוּלִים), a metaphor drawn from the law of redemption.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "דֶּרֶךְ לַעֲבֹר גְּאוּלִים",
+        "english_text": "A road the redeemed might walk.",
+        "target": ["Israel delivered from bondage", "rescued people", "covenant community"],
+        "vehicle": ["those who have been legally redeemed", "persons bought back by a kinsman", "legal/economic imagery"],
+        "ground": ["having been released from prior claim or bondage by an act of purchase/rescue", "new status of freedom", "belonging to the redeemer"],
+        "posture": ["honorific designation", "theological framing", "salvation proclamation"],
+        "explanation": "The people who passed through the sea are called ‘the redeemed,’ applying the legal image of purchase/redemption to God’s act of deliverance.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 51:11",
+    "deliberation": "Saw two main figurative elements: joy portrayed as something resting upon the head like a crown, and sorrow/sighing personified as fleeing away from the redeemed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשִׂמְחַת עוֹלָם עַל־רֹאשָׁם",
+        "english_text": "Crowned with joy everlasting [literally: everlasting joy upon their heads].",
+        "target": ["the inner and social state of the returning exiles", "emotional condition", "redeemed community"],
+        "vehicle": ["something resting on the head (crown/garland)", "ornamental headdress", "honor-symbol imagery"],
+        "ground": ["conspicuous, exalted joy marking them out", "honor and festivity visible to all", "joy as their distinguishing adornment"],
+        "posture": ["celebratory promise", "exaltation of the redeemed", "restoration prophecy"],
+        "explanation": "Joy is pictured as resting upon their heads like a crown, suggesting that unending joy will be their visible honor and adornment.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נָסוּ יָגוֹן וַאֲנָחָה",
+        "english_text": "While sorrow and sighing flee.",
+        "target": ["sorrow and sighing", "negative emotional states", "experience of suffering"],
+        "vehicle": ["persons who flee", "runaway fugitives", "human action imagery"],
+        "ground": ["sudden departure and removal", "no longer present or threatening", "complete reversal of situation"],
+        "posture": ["encouragement", "vivid depiction of relief", "restoration prophecy"],
+        "explanation": "Sorrow and sighing are personified as people who run away, emphasizing their complete removal from the redeemed.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 51:12",
+    "deliberation": "Identified the comparison of humans to grass—a conventional biblical simile stressing mortality. Other elements are straightforward.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִבֶּן־אָדָם חָצִיר יִנָּתֵן",
+        "english_text": "Mortals who fare like grass",
+        "target": ["human beings", "mortal oppressors", "all flesh"],
+        "vehicle": ["grass", "fragile vegetation", "nature imagery"],
+        "ground": ["frailty, brevity of life, susceptibility to withering", "insignificance before God", "quick passing"],
+        "posture": ["minimizing fear of humans", "didactic reminder", "prophetic reassurance"],
+        "explanation": "Humans are explicitly compared to grass, highlighting their transience and unworthiness of fear.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Isaiah 51:13",
+    "deliberation": "‘Stretching out the heavens’ and ‘founding the earth’ use building/tenting imagery for creation, a standard metaphor in Isaiah. The dread of the oppressor is literal fear; ‘where is the wrath’ is rhetorical, not figurative in itself.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "נוֹטֶה שָׁמַיִם וְיֹסֵד אָרֶץ",
+        "english_text": "Who stretched out the skies and made firm the earth!",
+        "target": ["God’s act of creation", "cosmic origination", "world-order"],
+        "vehicle": ["stretching and founding a structure", "tenting/building work", "construction imagery"],
+        "ground": ["deliberate craftsmanship, stability, ordering", "effort of laying out and fixing a dwelling", "authority as architect/owner"],
+        "posture": ["reminder of creator power", "argument against fear", "theological grounding"],
+        "explanation": "Creating heavens and earth is pictured as stretching out a tent and laying a foundation, using construction/tent imagery for God’s cosmic work.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Isaiah 51:14",
+    "deliberation": "The verse promises the quick release of the one who crouches/bends (a prisoner). The imagery may be vivid but can be read as literal description of a captive’s posture and liberation from a literal ‘pit’ and hunger. No clearly marked figurative expression distinct from the straightforward sense.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Isaiah 51:15",
+    "deliberation": "‘Stirs up the sea so that its waves roar’ uses storm imagery. While God’s control of the literal sea is likely in view, in Isaiah this often also evokes His mastery over chaos; still, the language itself is metaphorical: God as one who agitates a great body of water like a person.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "רֹגַע הַיָּם וַיֶּהֱמוּ גַּלָּיו",
+        "english_text": "Who stirs up the sea into roaring waves",
+        "target": ["God’s sovereign power", "His ability to control creation and nations", "divine kingship"],
+        "vehicle": ["a person agitating the sea and its waves", "master of stormy waters", "chaos-control imagery"],
+        "ground": ["command over great, potentially chaotic forces", "capacity to arouse or still tumult", "authority over what terrifies humans"],
+        "posture": ["assertion of power", "ground for consolation", "theological proclamation"],
+        "explanation": "God is depicted as the one who causes the sea and its waves to roar, evoking a metaphor of His active mastery over chaotic forces.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Isaiah 51:16",
+    "deliberation": "Found three distinct metaphors: (1) God ‘putting’ His words in someone’s mouth; (2) covering them ‘in the shadow of my hand’; and (3) ‘planting the heavens’ and ‘founding the earth’—creation as planting/building. All are standard but clearly figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וָאָשִׂם דְּבָרַי בְּפִיךָ",
+        "english_text": "I have put My words in your mouth",
+        "target": ["prophetic inspiration / message-bearing", "communication role", "prophetic office / faithful community"],
+        "vehicle": ["placing an object into a mouth", "feeding/inserting words", "physical transfer imagery"],
+        "ground": ["God directly supplies what is spoken", "no self-originated message", "intimate, internal reception"],
+        "posture": ["authorization", "assurance of divine guidance", "prophetic commissioning"],
+        "explanation": "God’s giving of a message is portrayed as physically placing words into the prophet’s mouth, emphasizing direct inspiration.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְצֵל יָדִי כִּסִּיתִיךָ",
+        "english_text": "And sheltered you with My hand",
+        "target": ["God’s protection of His servant/people", "security", "covenant preservation"],
+        "vehicle": ["shadow of a hand providing cover", "being covered by someone’s hand", "body-part shelter imagery"],
+        "ground": ["closeness, protection from harm, shielding", "being encompassed by a stronger party", "security in proximity"],
+        "posture": ["reassurance", "tender care", "prophetic encouragement"],
+        "explanation": "Protection is depicted as being hidden under the shadow of God’s hand, a bodily metaphor for close, encompassing care.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לִנְטֹעַ שָׁמַיִם וְלִיסֹד אָרֶץ",
+        "english_text": "I, who planted the skies and made firm the earth",
+        "target": ["divine creation of cosmos", "origin of heavens and earth", "cosmic ordering"],
+        "vehicle": ["planting and founding", "agricultural and construction work", "human labor imagery"],
+        "ground": ["intentional establishment, stability, rootedness", "effortful, skillful work", "ownership and authority"],
+        "posture": ["assertion of creator authority", "support for identity claim", "theological grounding"],
+        "explanation": "God’s creation of heavens and earth is portrayed as planting and laying foundations, borrowing images from gardening and building.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Isaiah 51:17",
+    "deliberation": "Two intertwined figures: Jerusalem personified as a woman told to wake up and rise, and the ‘cup of wrath’/‘bowl of reeling’—a metaphor for experiencing divine judgment like intoxication.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִתְעוֹרְרִי הִתְעוֹרְרִי קוּמִי יְרוּשָׁלַ͏ִם",
+        "english_text": "Rouse, rouse yourself! Arise, O Jerusalem,",
+        "target": ["Jerusalem/Zion as community", "city and inhabitants", "covenant people"],
+        "vehicle": ["a sleeping woman who can awaken and stand up", "individual person", "human body/action imagery"],
+        "ground": ["capacity to change state from passivity to alertness", "moral/spiritual awakening", "agency and response"],
+        "posture": ["urgent exhortation", "call to respond to salvation", "prophetic summons"],
+        "explanation": "Jerusalem is addressed as a person who can wake up and stand, personifying the city and its people as a woman needing to rouse herself.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר שָׁתִית מִיַּד יְהוָה אֶת־כּוֹס חֲמָתוֹ ... כּוֹס הַתַּרְעֵלָה שָׁתִית מָצִית",
+        "english_text": "You who from the LORD’s hand have drunk His wrath-filled cup, ... the bowl, the cup of reeling you have drained to the dregs.",
+        "target": ["experience of divine judgment", "national suffering", "covenant curses"],
+        "vehicle": ["cup/bowl of intoxicating drink causing reeling", "drinking an allotted portion", "banquet/intoxication imagery"],
+        "ground": ["overwhelming, disorienting effect imposed by another", "having to accept a measured portion of fate", "loss of stability and control"],
+        "posture": ["interpretation of past suffering", "theological explanation", "prophetic indictment and transition to comfort"],
+        "explanation": "God’s wrath is pictured as a cup of intoxicating drink that Jerusalem has drunk to the last drop, causing her staggering—an extended metaphor for severe judgment.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Isaiah 51:18",
+    "deliberation": "Jerusalem (fem. ‘she’) is depicted as a mother with children who should guide or hold her hand, but none do. This continues the city-as-woman personification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֵין־מְנַהֵל לָהּ מִכָּל־בָּנִים יָלָדָה וְאֵין מַחֲזִיק בְּיָדָהּ מִכָּל־בָּנִים גִּדֵּלָה",
+        "english_text": "She has none to guide her of all the children she bore; none takes her by the hand, of all the children she reared.",
+        "target": ["Jerusalem/Zion and its inhabitants", "city as mother of citizens", "covenant community"],
+        "vehicle": ["a forsaken mother with unguiding children", "family scene of abandonment", "kinship imagery"],
+        "ground": ["vulnerability, abandonment, lack of support from those she raised", "reversal of expected filial duty", "social and emotional desolation"],
+        "posture": ["lamenting condition", "heightening pathos", "prophetic dirge transitioning to comfort"],
+        "explanation": "The city is personified as a mother whose children do not lead or hold her hand, dramatizing Jerusalem’s utter abandonment.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Isaiah 51:19",
+    "deliberation": "Continues addressing Zion as ‘you’ (fem.), with calamities ‘befalling’ her and the question ‘who can comfort you’—again city personification. The pairing ‘famine and sword’ likely functions as a merism for comprehensive disaster.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "שְׁתַּיִם הֵנָּה קֹרְאֹתַיִךְ ... מִי אֲנַחֲמֵךְ",
+        "english_text": "These two things have befallen you ... how shall I comfort you?",
+        "target": ["Jerusalem/Zion", "city as sufferer", "covenant community"],
+        "vehicle": ["an individual woman suffering multiple blows needing comfort", "victim of calamities", "human emotional subject"],
+        "ground": ["capacity to undergo misfortune and receive consolation", "personalized suffering and need", "intimate relationship with God as comforter"],
+        "posture": ["lament intensifying the need", "prelude to consolation", "prophetic rhetoric"],
+        "explanation": "Zion is treated as a person to whom calamities ‘happen’ and who needs to be comforted, personifying the city and its disasters.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Isaiah 51:20",
+    "deliberation": "Identified one explicit simile: sons lying at every street corner are ‘like an antelope caught in a net.’ ‘Filled with the wrath of YHWH’ continues the wrath-as-liquid/cup metaphor, but the clearest marked figure here is the simile.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּתֹא מִכְמָר",
+        "english_text": "Like an antelope caught in a net",
+        "target": ["Jerusalem’s sons lying in the streets", "defeated inhabitants", "victims of judgment"],
+        "vehicle": ["an antelope caught in a net", "ensnared animal", "hunt imagery"],
+        "ground": ["helplessness, entrapment, inability to escape", "vulnerability to the hunter", "prostration and exhaustion"],
+        "posture": ["evoking pity and horror", "underscoring severity of judgment", "prophetic lament"],
+        "explanation": "The fainting sons are compared to a trapped antelope, highlighting their utter helplessness under divine judgment and foreign power.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Isaiah 51:21",
+    "deliberation": "Jerusalem is addressed as ‘afflicted’ and ‘drunk, but not with wine.’ This is a metaphor of spiritual/social stupor due to God’s wrath rather than literal intoxication.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֲנִיָּה וּשְׁכֻרַת וְלֹא מִיָּיִן",
+        "english_text": "Unhappy one, who are drunk, but not with wine!",
+        "target": ["Jerusalem/Zion under judgment", "collective condition", "covenant people"],
+        "vehicle": ["a drunk person (not from wine)", "intoxicated, staggering individual", "human bodily state"],
+        "ground": ["disorientation, loss of control, staggering under an influence", "inability to function properly", "overwhelming effect of what has been ‘taken in’"],
+        "posture": ["tender address plus rebuke", "interpretation of suffering", "transition from judgment to comfort"],
+        "explanation": "The city is personified as a woman drunk—not from wine but from God’s dealings—portraying her judgment-induced stupor as intoxication.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Isaiah 51:22",
+    "deliberation": "The ‘cup of reeling’ and ‘cup of my wrath’ in her hand that she will not drink again continues the extended cup-of-wrath metaphor, now with removal of the cup as the end of judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לָקַחְתִּי מִיָּדֵךְ אֶת־כּוֹס הַתַּרְעֵלָה אֶת־קֻבַּעַת כּוֹס חֲמָתִי לֹא־תוֹסִיפִי לִשְׁתּוֹתָהּ עוֹד",
+        "english_text": "Herewith I take from your hand the cup of reeling, the bowl, the cup of My wrath; you shall never drink it again.",
+        "target": ["experience of divine wrath/judgment", "national suffering under God’s anger", "covenant curse now ending"],
+        "vehicle": ["cup/bowl of intoxicating drink causing staggering", "drinking an assigned cup", "banquet/intoxication imagery"],
+        "ground": ["judgment as something handed over and consumed, producing staggering and distress", "having to accept one’s allotted fate", "possibility of its removal"],
+        "posture": ["promise of relief", "reversal of judgment", "comfort oracle"],
+        "explanation": "God’s wrath is again represented as a cup that Jerusalem has had to drink; taking the cup away symbolizes the end of her judgment.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Isaiah 51:23",
+    "deliberation": "Main image is the oppressors walking over the bowed victim, and Jerusalem’s back made ‘like the ground’ and ‘like a street’—a strong simile/hyperbole for humiliation. I focus on that explicit ‘like’ imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתָּשִׂימִי כָאָרֶץ גֵּוֵךְ וְכַחוּץ לַעֹבְרִים",
+        "english_text": "So that you made your back like the ground, like a street for passersby.",
+        "target": ["Jerusalem/Zion under oppression", "humiliated people", "covenant community"],
+        "vehicle": ["ground and a street trampled by passersby", "surface walked upon", "urban thoroughfare imagery"],
+        "ground": ["complete subjugation and humiliation", "being walked over and treated as nothing", "loss of dignity and autonomy"],
+        "posture": ["vivid indictment of oppressors", "evocation of extreme humiliation", "prophetic protest and promise of reversal"],
+        "explanation": "Jerusalem’s back is compared to ground and a street trampled by others, a hyperbolic simile portraying utter humiliation under her tormentors.",
+        "confidence": 0.98
+      }
+    ]
+  }
+]

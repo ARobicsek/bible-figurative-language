@@ -1,0 +1,686 @@
+[
+  {
+    "verse": 1,
+    "reference": "Isaiah 41:1",
+    "deliberation": "Considered whether the verse is purely summons language or figurative. Detected (1) personification in addressing the 'coastlands' as if they could hear and obey, and (2) the extended legal-courtroom metaphor in 'approach' and 'come near together for judgment'.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַחֲרִישׁוּ אֵלַי אִיִים",
+        "english_text": "Stand silent before Me, coastlands",
+        "target": ["distant maritime peoples/nations", "collective foreign nations", "international political world"],
+        "vehicle": ["coastlands as listening, obedient subjects", "personified geographical regions", "physical geography"],
+        "ground": ["capacity to respond to command", "moral responsibility and accountability", "relationship to divine summons"],
+        "posture": ["summoning them to judgment", "divine judicial stance", "theological governance over nations"],
+        "explanation": "The inanimate 'coastlands' are addressed as if they were persons capable of hearing and obeying God's command to be silent, personifying distant lands/the peoples who inhabit them.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "יַחֲלִיפוּ כֹחַ ... יַחְדָּו לַמִּשְׁפָּט נִקְרָבָה",
+        "english_text": "let nations renew their strength ... let us come forward together for argument / for judgment",
+        "target": ["dispute between YHWH and the nations/idols", "theological controversy", "divine–human relationship"],
+        "vehicle": ["legal contest in a courtroom where parties renew strength and present a case", "lawsuit/judicial scene", "ancient legal practice"],
+        "ground": ["formal evaluation with evidence and arguments", "adversarial testing to determine truth/right", "judgment and vindication"],
+        "posture": ["inviting rational evaluation of claims", "polemic against idols framed as a trial", "theological apologetic"],
+        "explanation": "The language of 'renewing strength' to 'approach' for 'judgment/argument' casts God's dispute with the nations and their idols as a courtroom contest, a judicial metaphor structuring the whole scene.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Isaiah 41:2",
+    "deliberation": "Looked for explicit comparison markers and conceptual metaphors. Detected two clear similes describing the victor's weapons/impact on enemies: swords like dust and bows like wind-blown chaff.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יִתֵּן כֶּעָפָר חַרְבּוֹ",
+        "english_text": "has rendered their swords like dust",
+        "target": ["the effect of the victor’s sword on nations", "military conquest", "socio-political domination"],
+        "vehicle": ["dust easily scattered and insignificant", "minuscule fragile particles", "natural world imagery"],
+        "ground": ["total pulverization and insignificance of the defeated", "lack of resistance and permanence", "overwhelming superiority"],
+        "posture": ["emphasizing the conqueror’s devastating power", "divine orchestration of history", "theological assertion of sovereignty"],
+        "explanation": "The enemies defeated by the sword are compared to dust, stressing how completely they are crushed and rendered insignificant; a hyperbolic simile of destruction.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְקַשׁ נִדָּף קַשְׁתּוֹ",
+        "english_text": "their bows [are] like wind-blown straw",
+        "target": ["the fate of those attacked by the victor’s bow", "defeated nations and rulers", "political entities overthrown"],
+        "vehicle": ["wind-driven chaff/stubble", "light agricultural waste blown away", "agricultural refuse"],
+        "ground": ["weightlessness, lack of stability and durability", "being driven away effortlessly", "utter vulnerability before stronger force"],
+        "posture": ["underscoring the inevitability of their downfall", "portraying divine judgment as irresistible", "theological demonstration of power"],
+        "explanation": "Those struck down are likened to chaff or straw driven by the wind, highlighting their utter helplessness and the ease with which the conqueror (raised up by God) dispatches them.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Isaiah 41:3",
+    "deliberation": "The verse narrates pursuit and unhindered progress. I considered whether this might be purely literal military description. The expression about passing safely on a path his feet have not previously trodden reads as a metaphor/idiom for unprecedented, unopposed success.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יַעֲבֹר שָׁלוֹם אֹרַח בְּרַגְלָיו לֹא יָבוֹא",
+        "english_text": "he passes on in peace, by a path his feet have not come [before]",
+        "target": ["the conqueror’s campaign and progress", "historical advance of the divinely-raised ruler", "military movement"],
+        "vehicle": ["walking an untrodden path peacefully", "unhindered travel", "journey imagery"],
+        "ground": ["unopposed, unhindered success despite novelty of the route", "absence of obstacles or resistance", "ease and security in movement"],
+        "posture": ["highlighting the remarkable ease of his victories", "emphasizing divine guidance of history", "theological assurance of ordained success"],
+        "explanation": "Describing the campaign as peaceful travel on a previously untrodden path functions as an idiomatic metaphor for smooth, unprecedented success in conquest, not merely a literal travel note.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Isaiah 41:4",
+    "deliberation": "The focus is on God's creative and providential action. The phrase 'I am first and with the last' is a classic merism expressing totality in time, not just ordinal position.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֲנִי יְהוָה רִאשׁוֹן וְאֶת־אַחֲרֹנִים אֲנִי־הוּא",
+        "english_text": "I, YHWH, [am] first, and with the last I am He",
+        "target": ["God’s existence and sovereignty across time", "divine eternity", "theological identity of YHWH"],
+        "vehicle": ["being first and last in a sequence", "extreme endpoints of a series", "temporal ordering imagery"],
+        "ground": ["encompassing all stages from beginning to end", "unbroken continuity and supremacy", "total temporal scope"],
+        "posture": ["asserting exclusive divine sovereignty", "contrasting YHWH with transient idols", "theological polemic"],
+        "explanation": "Calling Himself 'first' and 'with the last' forms a merism: by naming both ends of the temporal spectrum, God claims comprehensive existence and rule over all time.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Isaiah 41:5",
+    "deliberation": "Searched for non-literal uses. The 'coastlands' and 'ends of the earth' are portrayed as seeing, fearing, trembling, and coming—personifying regions, and 'ends of the earth' functions as a synecdoche/merism for all peoples.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "רָאוּ אִיִים וְיִרָאוּ קְצוֹת הָאָרֶץ יֶחֱרָדוּ קָרְבוּ וַיֶּאֱתָיוּן",
+        "english_text": "The coastlands look on in fear, the ends of the earth tremble; they draw near and come",
+        "target": ["distant nations confronted by God’s acts", "peoples at the margins of the known world", "international community"],
+        "vehicle": ["coastlands and earth-ends as seeing, fearing, trembling, approaching", "personified geographical extremities", "global extremities imagery"],
+        "ground": ["universal human reaction of fear and response to a great intervention", "solidarity of all regions in being affected", "comprehensive scope of impact"],
+        "posture": ["depicting awe and dread before God’s historical work", "emphasizing worldwide implications", "theological universality"],
+        "explanation": "Inanimate geographical zones are treated as persons who see, fear, tremble, and come, personifying the distant nations. The phrase 'ends of the earth' also hyperbolically/meristically represents all people everywhere.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Isaiah 41:6",
+    "deliberation": "The verse depicts mutual encouragement among craftsmen. Mostly straightforward narrative, but 'be strong' / 'take courage' is an idiomatic use of strength language for inner resolve, a common metaphorical idiom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּלְאָחִיו יֹאמַר חֲזָק",
+        "english_text": "saying to his fellow, “Take courage” (lit. “Be strong”)",
+        "target": ["inner courage and determination", "psychological state of the craftsmen", "human emotional condition"],
+        "vehicle": ["physical strength", "bodily power", "human physical condition"],
+        "ground": ["robustness, capacity to withstand pressure", "ability to endure and act decisively", "resilience"],
+        "posture": ["encouraging steadfastness in idol-making efforts", "ironically bolstering a futile enterprise", "polemical narrative tone"],
+        "explanation": "The exhortation literally says 'be strong', but it refers to mental/inner courage, using physical strength as an idiomatic metaphor for emotional fortitude.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Isaiah 41:7",
+    "deliberation": "At first glance this is a literal description of idol manufacture. However, the punchline 'that it may not topple' has an ironic edge, implicitly mocking the impotence of the idol that must be nailed down to stand.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַיְחַזְּקֵהוּ בְמַסְמְרִים לֹא יִמּוֹט",
+        "english_text": "And he fixes it with nails, that it may not topple",
+        "target": ["the status and power of the idol", "the supposed deity represented by the image", "religious object of worship"],
+        "vehicle": ["a constructed object that must be nailed down to keep from tottering", "unstable piece of furniture/statue", "fragile artifact"],
+        "ground": ["dependence, instability, inability to stand on its own", "contrast to a truly powerful being", "inherent weakness"],
+        "posture": ["ironically exposing the idol’s impotence", "critique of idolatry through mockery", "theological polemic"],
+        "explanation": "Though literally describing a craftsman preventing an idol from falling, the verse uses this image ironically to highlight that a so‑called god must be physically nailed down just to remain upright.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Isaiah 41:8",
+    "deliberation": "Examined covenant titles. The key figurative expression is 'Israel, my servant', treating the nation as a servant in a royal household; 'seed of Abraham' is standard for descendants and functions almost lexically.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יִשְׂרָאֵל עַבְדִּי",
+        "english_text": "Israel, My servant",
+        "target": ["the people of Israel", "covenant nation", "human community"],
+        "vehicle": ["servant of a great master", "royal household functionary", "social role in ancient court"],
+        "ground": ["belonging, obligation, and commissioned service to a superior", "dependence and delegated tasks", "relational status under authority"],
+        "posture": ["affirming election and intimate relationship", "honoring Israel’s role despite lowliness", "theological covenant emphasis"],
+        "explanation": "Calling the nation 'my servant' portrays Israel metaphorically as a royal servant devoted to YHWH, emphasizing chosen status and mission.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Isaiah 41:9",
+    "deliberation": "Looked for imagery beyond geographical reference. The main non-literal element is 'from the ends of the earth' and 'from its extremities', which function as a merism/synecdoche for the entire world from which Israel has been drawn.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִקְצוֹת הָאָרֶץ וּמֵאֲצִילֶיהָ",
+        "english_text": "from the ends of the earth and from its far corners",
+        "target": ["the scope of God’s choosing and gathering of Israel", "geographical spread of his people", "historical dispersion context"],
+        "vehicle": ["ends and extremities of the earth", "outermost geographical limits", "cosmic edges imagery"],
+        "ground": ["completeness of reach, no place beyond God’s grasp", "from every possible location", "total inclusiveness"],
+        "posture": ["emphasizing the thoroughness of divine choice", "comforting scattered Israel", "theological assurance of God’s reach"],
+        "explanation": "By pairing 'ends' and 'extremities' of the earth, the text uses meristic and hyperbolic language to express God’s worldwide reach in choosing and gathering His servant.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Isaiah 41:10",
+    "deliberation": "Explored whether the support language is figurative. 'I will uphold you with my right hand of righteousness' is clearly anthropomorphic: 'right hand' stands for God’s powerful help, a metaphor/metonymy for divine power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַף־תְּמַכְתִּיךָ בִּימִין צִדְקִי",
+        "english_text": "I will uphold you with My righteous right hand",
+        "target": ["God’s effective support and saving action for Israel", "divine intervention", "theological agency"],
+        "vehicle": ["right hand that upholds", "strong arm/hand of a helper", "human bodily power to sustain"],
+        "ground": ["strength, reliability, and active assistance", "ability to hold someone up and keep from falling", "protective power"],
+        "posture": ["giving reassurance and security", "portraying God as powerful protector", "pastoral/theological comfort"],
+        "explanation": "God does not have a literal limb; 'right hand' functions as a metaphor and metonymy for His powerful, just help that sustains Israel and prevents collapse.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Isaiah 41:11",
+    "deliberation": "Here the fate of Israel’s adversaries is described. 'They shall be as nothing' uses 'nothingness' metaphorically/hyperbolically for complete defeat and insignificance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יִהְיוּ כְאַיִן",
+        "english_text": "They shall become as naught",
+        "target": ["Israel’s opponents and litigants", "hostile people/groups", "political/military adversaries"],
+        "vehicle": ["nothingness, non-existence", "zero value/void", "abstract negation"],
+        "ground": ["total lack of power, consequence, or enduring presence", "being rendered utterly ineffective and forgotten", "erasure from significance"],
+        "posture": ["promising comprehensive vindication for Israel", "declaring the futility of opposition", "theological assurance of judgment"],
+        "explanation": "The enemies do not literally cease to exist; 'be as nothing' is a hyperbolic metaphor indicating they will be rendered powerless and insignificant.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Isaiah 41:12",
+    "deliberation": "Very similar to v.11. The adversaries are said to become 'as nothing and as non-existence', a strongly hyperbolic metaphor of annihilation/irrelevance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יִהְיוּ כְאַיִן וּכְאֶפֶס אַנְשֵׁי מִלְחַמְתֶּךָ",
+        "english_text": "Less than nothing shall be the men who battle against you (lit. they will be as nothing and as non-existence)",
+        "target": ["those waging war against Israel", "military enemies", "hostile nations"],
+        "vehicle": ["nothing and non-existence", "complete void", "abstract absence"],
+        "ground": ["utter lack of effect, presence, or legacy", "total defeat such that they no longer matter", "removal from the stage of history"],
+        "posture": ["heightening the promise of deliverance", "intensifying the contrast with God-supported Israel", "theological encouragement"],
+        "explanation": "By pairing 'nothing' and 'non-existence', the verse employs a hyperbolic metaphor to depict Israel’s enemies as completely nullified in their opposition.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Isaiah 41:13",
+    "deliberation": "Again, anthropomorphic imagery: God 'grasps your right hand' as an image of intimate, protective help, not a literal hand-holding.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מַחֲזִיק יְמִינֶךָ",
+        "english_text": "who grasped your right hand",
+        "target": ["God’s supportive relationship to Israel", "divine assistance", "theology of help"],
+        "vehicle": ["taking someone’s right hand", "a strong, guiding grasp", "human gesture of help/comfort"],
+        "ground": ["close presence, guidance, and stabilizing support", "reassurance in fear", "practical aid in difficulty"],
+        "posture": ["expressing tender yet powerful care", "transforming fear into trust", "pastoral encouragement"],
+        "explanation": "Depicting God as grasping Israel’s right hand anthropomorphically portrays His intimate, stabilizing aid and guidance.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Isaiah 41:14",
+    "deliberation": "The striking phrase is 'worm Jacob', clearly non-literal, casting Jacob/Israel as a tiny, vulnerable creature. Considered also 'Redeemer' as metaphor, but the primary vivid figure is the worm-image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַל־תִּירְאִי תּוֹלַעַת יַעֲקֹב",
+        "english_text": "Fear not, O worm Jacob",
+        "target": ["Jacob/Israel as a people", "covenant nation", "human community"],
+        "vehicle": ["worm", "small, defenseless creature", "animal world"],
+        "ground": ["extreme weakness and powerlessness in face of larger forces", "easily crushed, insignificant", "social/political vulnerability"],
+        "posture": ["acknowledging lowliness yet promising aid", "contrast between Israel’s weakness and God’s strength", "pastoral and polemical tone"],
+        "explanation": "Israel is metaphorically addressed as a 'worm' to highlight their vulnerability and insignificance, making God’s promise of help and redemption all the more striking.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Isaiah 41:15",
+    "deliberation": "The verse is rich in agricultural and geological imagery. Detected (1) Israel as a 'threshing-sledge', and (2) the hyperbolic depiction of threshing mountains and turning hills into chaff—enemies/powers pictured as grain.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה שַׂמְתִּיךְ לְמוֹרַג חָרוּץ חָדָשׁ בַּעַל פִּיפִיּוֹת",
+        "english_text": "Behold, I will make of you a threshing board, a new sharp threshing sledge with many teeth",
+        "target": ["Israel as an agent of God’s judgment", "the restored community", "covenant people’s historical role"],
+        "vehicle": ["sharp, toothed threshing-sledge", "powerful agricultural implement", "tool of separation and crushing"],
+        "ground": ["capacity to crush and separate, inflict decisive damage", "instrumentality in executing a process", "effectiveness and sharpness"],
+        "posture": ["empowering the formerly weak people", "reversing their status from 'worm' to powerful tool", "theological theme of transformation"],
+        "explanation": "Israel is metaphorically transformed into a sharp threshing-sledge, symbolizing their God-given power to break and separate the nations/powers opposing them.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תָּד֤וּשׁ הָרִים וְתָדֹק וּגְבָעוֹת כַּמֹּץ תָּשִׂים",
+        "english_text": "You shall thresh mountains and crush them, and make hills like chaff",
+        "target": ["great hostile powers/obstacles before Israel", "oppressive nations and structures", "geo-political opposition"],
+        "vehicle": ["mountains and hills treated as grain, reduced to chaff", "agricultural threshing and winnowing", "landscape being ground down"],
+        "ground": ["apparently immovable forces being shattered and dispersed", "total dismantling and lightness after crushing", "from solidity to insignificance"],
+        "posture": ["celebrating God-enabled victory over formidable foes", "using vivid hyperbole to reassure Israel", "theological assertion of radical reversal"],
+        "explanation": "The 'mountains' and 'hills' stand for massive powers/obstacles that Israel will, by God’s empowerment, crush as if threshing grain, turning them into weightless chaff—an extravagant metaphor of complete victory.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Isaiah 41:16",
+    "deliberation": "Continues the threshing imagery. 'You shall winnow them, the wind shall carry them off, and the whirlwind shall scatter them' extends the agricultural metaphor, with enemies pictured as chaff blown away.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תִּזְרֵם וְרוּחַ תִּשָּׂאֵם וּסְעָרָה תָּפִיץ אוֹתָם",
+        "english_text": "You shall winnow them, and the wind shall carry them off, and the whirlwind shall scatter them",
+        "target": ["the defeated foes/powers represented by the 'mountains' and 'hills'", "enemies of Israel", "oppressive structures"],
+        "vehicle": ["chaff or light particles winnowed and blown away by wind and storm", "agricultural winnowing process", "meteorological dispersal"],
+        "ground": ["lightness, impermanence, and disposability after judgment", "irresistible dispersion by a stronger force", "complete removal from the scene"],
+        "posture": ["displaying the totality and ease of God’s deliverance", "encouraging Israel to rejoice in YHWH", "theological victory motif"],
+        "explanation": "Enemies are implicitly likened to chaff winnowed and driven away by wind and storm, an extension of the grain-threshing metaphor portraying their utter, irrevocable dispersion.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Isaiah 41:17",
+    "deliberation": "The verse describes literal-sounding need for water and thirst of the poor and needy. While one could read symbolic overtones (spiritual thirst), the wording itself is straightforward physical imagery; I did not identify a clear, distinct figurative expression within the verse.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Isaiah 41:18",
+    "deliberation": "The transformation of geography (rivers on bare heights, desert into pools) can be read as literal eschatological blessing, but within prophetic poetry it also functions as a metaphor/hyperbole for radical reversal and restoration of Israel’s condition.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶפְתַּח עַל־שְׁפָיִים נְהָרוֹת ... אָשִׂים מִדְבָּר לַאֲגַם־מַיִם וְאֶרֶץ צִיָּה לְמוֹצָאֵי מָיִם",
+        "english_text": "I will open up streams on the bare hills ... I will turn the desert into ponds, the arid land into springs of water",
+        "target": ["Israel’s desolate condition and its restoration", "the life situation of the poor/needy community", "covenant community’s fortunes"],
+        "vehicle": ["barren highlands becoming rivered, desert turning into pools and springs", "dramatic hydrological transformation", "lush irrigated landscape"],
+        "ground": ["change from barrenness to abundance, from lack to overflowing supply", "unexpected life in places of death", "reversal of fortunes"],
+        "posture": ["promising extravagant restoration", "depicting God as a life-giving transformer of environments", "theological hope imagery"],
+        "explanation": "The turning of deserts into water-rich landscapes functions as a hyperbolic metaphor for God’s power to reverse Israel’s dire circumstances into abundant blessing.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Isaiah 41:19",
+    "deliberation": "Again, luxuriant trees in wilderness and steppe can have a literal dimension, but within the poetic context they serve as a sustained image of unlikely fertility and blessing in previously barren places.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶתֵּן בַּמִּדְבָּר אֶרֶז שִׁטָּה וַהֲדַס וְעֵץ שָׁמֶן ... בָּעֲרָבָה בְּרוֹשׁ תִּדְהָר וּתְאַשּׁוּר יַחְדָּו",
+        "english_text": "I will plant cedars in the wilderness, acacias and myrtles and oleasters; I will set cypresses in the desert, box trees and elms as well",
+        "target": ["the renewal of Israel’s environment and fortunes", "the historically barren condition of the people", "covenant community’s experience"],
+        "vehicle": ["diverse noble trees flourishing in wilderness and desert", "forestation of arid places", "horticultural transformation"],
+        "ground": ["unexpected richness and stability in formerly barren, inhospitable contexts", "beauty, strength, and enduring life", "contrast between past desolation and future fertility"],
+        "posture": ["celebrating overflowing blessing", "signaling God’s restorative power", "theological aesthetics of renewal"],
+        "explanation": "The catalog of fine trees thriving in desert and steppe paints a hyperbolic metaphor of radical, multi-faceted restoration in places previously devoid of life and stability.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Isaiah 41:20",
+    "deliberation": "Here the key figurative element is 'the hand of YHWH', an anthropomorphism where 'hand' functions as a metonym for God’s effective power and action.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי יַד־יְהוָה עָשְׂתָה זֹּאת",
+        "english_text": "that YHWH’s hand has done this",
+        "target": ["God’s causative role in the restoration described", "divine agency", "theological explanation of events"],
+        "vehicle": ["hand that performs deeds", "human limb as instrument of action", "embodied agency"],
+        "ground": ["ability to effect, create, and manipulate conditions", "direct, intentional exertion of power", "authorship of an action"],
+        "posture": ["drawing attention to God as the true actor behind events", "inviting recognition and worship", "theological attribution of causality"],
+        "explanation": "God’s 'hand' is a metaphor/metonymy for His effective power; by attributing the transformation to His hand, the verse emphasizes personal, intentional divine action.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Isaiah 41:21",
+    "deliberation": "This verse uses courtroom terminology: 'bring your case' and 'present your arguments'. It extends the legal metaphor from v.1, now directly addressing the opponents/idols.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "קָרְבוּ רִיבְכֶם ... הַגִּישׁוּ עֲצֻמֹתֵיכֶם",
+        "english_text": "Submit your case ... Offer your pleas",
+        "target": ["the dispute between YHWH and the idols/their worshipers", "theological truth-claim contest", "religious controversy"],
+        "vehicle": ["legal case and pleas in a courtroom", "forensic proceedings", "juridical process"],
+        "ground": ["presentation of evidence and arguments for adjudication", "formal decision between competing claims", "vindication or condemnation"],
+        "posture": ["challenging idols to defend themselves rationally", "framing the issue as a justiciable matter", "polemical yet judicial stance"],
+        "explanation": "By inviting opponents to 'submit your case' and 'offer your pleas', God portrays the theological confrontation as a court trial, a sustained metaphor structuring this disputation.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Isaiah 41:22",
+    "deliberation": "Mostly legal-challenge language. The main figurative feature is the idiom 'we will set [it] upon our heart' for attentive consideration, using 'heart' metaphorically for the seat of thought/attention.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַגִּידוּ וְנָשִׂימָה לִבֵּנוּ",
+        "english_text": "Tell [it], and we will take note of it (lit. 'and we will set [it] upon our heart')",
+        "target": ["human act of careful reflection and remembering", "mental attention", "cognitive process"],
+        "vehicle": ["placing something upon the heart", "locating information on an inner organ", "bodily spatial imagery"],
+        "ground": ["internalizing, holding onto, and giving weight to information", "intentional focus", "valuing in one’s inner self"],
+        "posture": ["offering to evaluate claims seriously", "demanding evidential content from idols", "rhetorical openness coupled with critique"],
+        "explanation": "The idiom 'set [it] upon our heart' uses a spatial metaphor of placing something on the heart to express careful mental attention and consideration.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Isaiah 41:23",
+    "deliberation": "The verse is primarily a direct challenge for idols to foretell or do anything. Expressions like 'do good or do evil' are literal in this context, and 'that we may be awed and see' describes natural reactions. I did not isolate a clear figurative expression distinct from the straightforward argument.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Isaiah 41:24",
+    "deliberation": "Identified evaluative language: 'you are from nothing' and 'your work from utter non-entity'. This uses 'nothingness' metaphorically/hyperbolically to characterize idols’ worth and effect.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵן־אַתֶּם מֵאַיִן וּפׇעׇלְכֶם מֵאָפַע",
+        "english_text": "Why, you are less than nothing, your effect is less than nullity (lit. you are from nothing, and your work from utter non-entity)",
+        "target": ["the idols and their efficacy", "false gods’ reality and power", "religious objects and their cult"],
+        "vehicle": ["nothing and utter non-entity", "absolute void/non-being", "abstract negation"],
+        "ground": ["complete lack of true existence, power, or beneficial effect", "total futility", "worthlessness"],
+        "posture": ["denouncing idolatry in the strongest terms", "ridiculing their supposed divinity", "theological polemic of negation"],
+        "explanation": "Calling the idols and their work 'from nothing' and 'from utter non-entity' is a hyperbolic metaphor asserting their absolute lack of real being or effect.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Isaiah 41:25",
+    "deliberation": "Here the raised-up ruler 'tramples rulers like mud, like a potter treading clay'—a double simile portraying human rulers as lowly, malleable material beneath his feet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיָבֹא סְגָנִים כְּמוֹ־חֹמֶר וּכְמוֹ יוֹצֵר יִרְמַס־טִיט",
+        "english_text": "And he has trampled rulers like mud, like a potter treading clay",
+        "target": ["earthly rulers subjected to the divinely-raised conqueror", "political leaders", "human authorities"],
+        "vehicle": ["mud and clay trampled or worked by a potter", "cheap, malleable material underfoot", "workshop/raw-material imagery"],
+        "ground": ["lowliness, susceptibility to being shaped or crushed, lack of resistance", "ease with which they are handled", "insignificance compared to the agent"],
+        "posture": ["emphasizing the conqueror’s superiority as God’s instrument", "diminishing human rulers’ pretensions", "theological statement of God’s control over kings"],
+        "explanation": "Rulers are likened to mud and potter’s clay underfoot, a hyperbolic simile portraying their utter subjection and insignificance before the one whom God has stirred up.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Isaiah 41:26",
+    "deliberation": "This verse consists of rhetorical questions about foretelling events. The language is argumentative but literal: no metaphors, similes, or personifications stand out beyond standard speech about speaking and hearing.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Isaiah 41:27",
+    "deliberation": "The verse refers to predictions to Zion and a bearer of good news to Jerusalem. 'Herald' is a literal messenger figure here for prophetic speech; there is no marked figurative reshaping within the verse itself distinct from normal prophetic language.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Isaiah 41:28",
+    "deliberation": "God says He 'looks' and finds no counselor. Though divine seeing and questioning are anthropomorphic at a broad theological level, here they function as standard narrative verbs. I did not identify a discrete, rhetorically foregrounded figurative expression in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 29,
+    "reference": "Isaiah 41:29",
+    "deliberation": "The verse climaxes the idol polemic: 'all of them are delusion; their works are nothing; their molten images are wind and tohu.' The strongest metaphor is the last phrase, casting idols as 'wind and chaos', non-substantial emptiness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רוּחַ וָתֹהוּ נִסְכֵּיהֶם",
+        "english_text": "their statues are naught and nil (lit. their molten images are wind and chaos)",
+        "target": ["the cast images/idols themselves", "their supposed divine reality", "objects of worship"],
+        "vehicle": ["wind and tohu (formless waste/emptiness)", "insubstantial, chaotic nothingness", "cosmic emptiness imagery"],
+        "ground": ["lack of solidity, reliability, or structured being", "ephemeral, insubstantial, and useless nature", "utter vanity"],
+        "posture": ["condemning and ridiculing idolatry", "underscoring the contrast with the true Creator", "theological negation"],
+        "explanation": "By labeling the idols 'wind and tohu', the prophet uses a hyperbolic metaphor to depict them as utterly empty and formless, devoid of reality or power.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]
