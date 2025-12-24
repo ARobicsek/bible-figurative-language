@@ -2657,6 +2657,7 @@ def main():
             print(f"Average time per verse: N/A (no verses processed)")
             print(f"Figurative language detection rate: N/A")
         print(f"Workers used: {max_workers}")
+        print(f"** TOTAL COST: ${run_context.total_cost:.4f}")
         print(f"\n==> Processed {total_verses} verses from {len(book_selections)} books")
         print(f"** Total time: {total_time:.1f} seconds with {max_workers} parallel workers")
 
@@ -2847,6 +2848,7 @@ def main():
         logger.info(f"=== PARALLEL PROCESSING COMPLETE ===")
         logger.info(f"Run ID: {run_context.run_id}")
         logger.info(f"Final stats: {total_instances} instances from {total_verses} verses")
+        logger.info(f"TOTAL COST: ${run_context.total_cost:.4f}")
 
     except Exception as e:
         logger.error(f"CRITICAL FAILURE: {str(e)}")
