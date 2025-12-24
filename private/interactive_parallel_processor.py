@@ -72,10 +72,17 @@ except ImportError:
 # JSON Schema Models for LLM Response Validation
 if PYDANTIC_AVAILABLE:
     class FigurativeInstance(BaseModel):
-        """Schema for a single figurative language instance from LLM."""
-        verse: int = Field(..., ge=1, description="Verse number")
-        figurative_text: str = Field(..., min_length=1, description="The figurative expression")
-        explanation: str = Field(..., min_length=10, description="Explanation of the figurative language")
+        """Schema for a single figurative language instance from LLM.
+
+        NOTE: For batched mode, the verse field is at the parent (verse result) level,
+        not at the instance level. Instances use 'english_text' not 'figurative_text'.
+        This schema validates the INSTANCE structure only (within verse.instances[]).
+        """
+        figurative_language: Optional[str] = Field(default="yes")
+        # The batched mode uses 'english_text' for the figurative expression text
+        english_text: Optional[str] = Field(default="", description="The figurative expression in English")
+        hebrew_text: Optional[str] = Field(default="", description="The figurative expression in Hebrew")
+        explanation: str = Field(..., min_length=1, description="Explanation of the figurative language")
         confidence: float = Field(..., ge=0.0, le=1.0, description="Confidence score 0-1")
         metaphor: Optional[Literal["yes", "no"]] = Field(default="no")
         simile: Optional[Literal["yes", "no"]] = Field(default="no")
@@ -84,6 +91,11 @@ if PYDANTIC_AVAILABLE:
         hyperbole: Optional[Literal["yes", "no"]] = Field(default="no")
         metonymy: Optional[Literal["yes", "no"]] = Field(default="no")
         other: Optional[Literal["yes", "no"]] = Field(default="no")
+        # Optional hierarchical tagging fields
+        target: Optional[List[str]] = Field(default_factory=list)
+        vehicle: Optional[List[str]] = Field(default_factory=list)
+        ground: Optional[List[str]] = Field(default_factory=list)
+        posture: Optional[List[str]] = Field(default_factory=list)
 
     class ChapterResponse(BaseModel):
         """Schema for the complete chapter response from LLM."""
@@ -112,7 +124,11 @@ if PYDANTIC_AVAILABLE:
         return valid_instances, errors
 else:
     def validate_llm_response(response_data: List[Dict], logger=None) -> Tuple[List[Dict], List[str]]:
-        """Fallback validation when pydantic is not available."""
+        """Fallback validation when pydantic is not available.
+
+        For batched mode, validates instance structure (verse is at parent level,
+        instances use english_text/hebrew_text not figurative_text).
+        """
         # Basic validation without pydantic
         valid_instances = []
         errors = []
@@ -122,13 +138,9 @@ else:
                 errors.append(f"Instance {i}: Not a dictionary")
                 continue
 
-            # Check required fields
-            if 'verse' not in item:
-                errors.append(f"Instance {i}: Missing 'verse' field")
-                continue
-
-            if 'figurative_text' not in item or not item.get('figurative_text'):
-                errors.append(f"Instance {i}: Missing or empty 'figurative_text'")
+            # Check for required field: explanation
+            if 'explanation' not in item or not item.get('explanation'):
+                errors.append(f"Instance {i}: Missing or empty 'explanation'")
                 continue
 
             # Normalize confidence
@@ -139,6 +151,16 @@ else:
                         item['confidence'] = max(0.0, min(1.0, conf))
                 except (TypeError, ValueError):
                     item['confidence'] = 0.5
+            else:
+                item['confidence'] = 0.5  # Default if not provided
+
+            # Ensure figurative_language is set
+            if 'figurative_language' not in item:
+                item['figurative_language'] = 'yes'
+
+            # Map english_text to figurative_text if missing (for DB compatibility)
+            if 'figurative_text' not in item and 'english_text' in item:
+                item['figurative_text'] = item['english_text']
 
             valid_instances.append(item)
 
