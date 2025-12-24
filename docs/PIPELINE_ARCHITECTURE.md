@@ -2,7 +2,7 @@
 
 **Part 1 Documentation: Data Generation Pipeline**
 
-*Last Updated: December 2025*
+*Last Updated: December 2025 (v2.2.0)*
 
 ---
 
@@ -56,17 +56,21 @@ python interactive_parallel_processor.py Proverbs 15
 
 ### Supported Books
 
+**v2.2.0: All books now use batched chapter-level processing with parallel chapter support.**
+
 | Book | Chapters | Processing Mode |
 |------|----------|-----------------|
-| Genesis | 50 | Per-verse parallel |
-| Exodus | 40 | Per-verse parallel |
-| Leviticus | 27 | Per-verse parallel |
-| Numbers | 36 | Per-verse parallel |
-| Deuteronomy | 34 | Per-verse parallel |
-| Psalms | 150 | Per-verse parallel |
+| Genesis | 50 | **Batched (GPT-5.1)** |
+| Exodus | 40 | **Batched (GPT-5.1)** |
+| Leviticus | 27 | **Batched (GPT-5.1)** |
+| Numbers | 36 | **Batched (GPT-5.1)** |
+| Deuteronomy | 34 | **Batched (GPT-5.1)** |
+| Psalms | 150 | **Batched (GPT-5.1)** |
 | Proverbs | 31 | **Batched (GPT-5.1)** |
 | Isaiah | 66 | **Batched (GPT-5.1)** |
 | Jeremiah | 52 | **Batched (GPT-5.1)** |
+
+**Chapter-Level Parallelization:** Multiple chapters can be processed simultaneously (default: 3 parallel chapters).
 
 ---
 
@@ -278,45 +282,44 @@ SQLite database manager for:
 
 ## Processing Modes
 
-### Mode 1: Per-Verse Parallel Processing
+### Batched Chapter Processing with Parallel Chapters (v2.2.0)
 
-**Used for:** Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Psalms
+**Used for:** All supported books (Genesis through Jeremiah)
 
-**Flow:**
-1. Fetch all verses for chapter via Sefaria API
-2. Submit verses to ThreadPoolExecutor (default: 6 workers)
-3. Each verse processed independently through LLM chain
-4. Results collected and stored as they complete
-5. Validation performed per-verse
-
-**Advantages:**
-- Faster for narrative text
-- Better isolation of errors
-- Configurable parallelism (1-12 workers)
-
----
-
-### Mode 2: Batched Chapter Processing
-
-**Used for:** Proverbs, Isaiah
+**Architecture:**
+- Each chapter is processed as a single batched API call
+- Multiple chapters can be processed in parallel (default: 3 parallel chapters)
+- Thread-safe database operations via locking
 
 **Flow:**
-1. Fetch all verses for chapter via Sefaria API
-2. Build single prompt with ALL verses in chapter
-3. Single GPT-5.1 API call with streaming
-4. Parse JSON array with verse-by-verse results
-5. Bulk validation in single API call
+1. Build list of all chapter tasks from user selection
+2. Submit chapters to ThreadPoolExecutor (default: 3 workers)
+3. Each worker processes one chapter:
+   a. Fetch all verses for chapter via Sefaria API (with caching)
+   b. Build single prompt with ALL verses in chapter
+   c. Single GPT-5.1 API call with streaming
+   d. Parse JSON array with verse-by-verse results
+   e. Bulk validation in single API call
+   f. Thread-safe database commits
+4. Results aggregated across all parallel workers
 
 **Advantages:**
-- 95% token savings vs. per-verse
-- Better context for wisdom literature
+- 95% token savings vs. per-verse processing
+- Chapter-level parallelization for speed
+- Better context for all biblical literature
 - Chapter-wide thematic understanding
-- Single deliberation field per verse in JSON
+- Configurable parallelism (1-6 parallel chapters)
 
 **Risks:**
 - More complex JSON parsing required
-- Single-point-of-failure for entire chapter
+- Single-point-of-failure for entire chapter (mitigated by parallel retry capability)
 - Truncation handling more complex
+
+### Legacy: Per-Verse Parallel Processing
+
+**Status:** Deprecated in v2.2.0 - all books now use batched mode for cost efficiency.
+
+The per-verse parallel processing mode is still available in the codebase but is no longer used by default.
 
 ---
 
@@ -559,10 +562,10 @@ For complete schema details, see `docs/DATABASE_SCHEMA.md`.
 
 | Parameter | Default | Location | Description |
 |-----------|---------|----------|-------------|
-| `max_workers` | 6 | CLI input | Parallel workers (1-12) |
+| `max_workers` | 3 | CLI input | Parallel chapters (1-6) - v2.2.0 changed from per-verse to per-chapter parallelization |
 | `enable_debug` | False | CLI input | Verbose logging |
 | `reasoning_effort` | "medium" | metaphor_validator.py:58 | GPT-5.1 reasoning level |
-| `max_completion_tokens` | 65536 | interactive_parallel_processor.py:600 | Batched mode token limit |
+| `max_completion_tokens` | 65536 | interactive_parallel_processor.py | Batched mode token limit (100000 for prophetic books) |
 
 ### Output Files
 
@@ -673,6 +676,46 @@ SUPPORTED_BOOKS = {"Genesis": 50, ..., "Jeremiah": 52}
 BATCHED_PROCESSING_BOOKS = ["Proverbs", "Isaiah", "Jeremiah"]
 MAX_COMPLETION_TOKENS_DEFAULT = 65536
 MAX_COMPLETION_TOKENS_PROPHETIC = 100000
+```
+
+---
+
+## Version 2.2.0 Features (December 2024)
+
+### Major Changes
+
+#### 1. All Books Use Batched Processing
+- **Breaking Change**: All supported books now use chapter-level batched processing
+- Previously only Proverbs, Isaiah, and Jeremiah used batched mode
+- This provides ~95% cost savings for ALL books
+
+#### 2. Chapter-Level Parallelization
+- Multiple chapters can now be processed simultaneously
+- Default: 3 parallel chapters (configurable 1-6)
+- Each chapter still uses a single GPT-5.1 API call (preserving cost advantages)
+- Thread-safe database operations via locking
+
+#### 3. New Functions
+
+```python
+# Process multiple chapters in parallel
+process_chapters_parallel(chapter_tasks, sefaria_cache, sefaria_client,
+                          validator, divine_names_modifier, db_manager, logger,
+                          max_workers, run_context)
+
+# Process a single chapter (used by parallel executor)
+process_single_chapter_task(task_data, sefaria_cache, validator,
+                            divine_names_modifier, db_manager, logger, run_context)
+```
+
+### Configuration Constants (v2.2.0)
+
+```python
+PIPELINE_VERSION = "2.2.0"
+SUPPORTED_BOOKS = {"Genesis": 50, ..., "Jeremiah": 52}
+BATCHED_PROCESSING_BOOKS = list(SUPPORTED_BOOKS.keys())  # ALL books
+MAX_COMPLETION_TOKENS_DEFAULT = 65536
+MAX_COMPLETION_TOKENS_PROPHETIC = 100000  # For Isaiah, Jeremiah
 ```
 
 ---

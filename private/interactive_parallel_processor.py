@@ -17,6 +17,7 @@ import re
 import uuid
 import hashlib
 import concurrent.futures
+import threading
 from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
@@ -25,7 +26,7 @@ from typing import List, Dict, Tuple, Optional, Any
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 # Pipeline version for tracking
-PIPELINE_VERSION = "2.1.0"
+PIPELINE_VERSION = "2.2.0"  # Added chapter-level parallelization + all books use batched mode
 
 # Books configuration - centralized definition
 SUPPORTED_BOOKS = {
@@ -34,8 +35,9 @@ SUPPORTED_BOOKS = {
     "Proverbs": 31, "Isaiah": 66, "Jeremiah": 52
 }
 
-# Books that use batched processing (prophetic/wisdom literature)
-BATCHED_PROCESSING_BOOKS = ["Proverbs", "Isaiah", "Jeremiah"]
+# Books that use batched processing - NOW ALL BOOKS use chapter-level batching
+# This provides significant cost savings (~95% token reduction vs per-verse)
+BATCHED_PROCESSING_BOOKS = list(SUPPORTED_BOOKS.keys())  # All supported books
 
 # Verse count estimates for progress reporting
 VERSE_ESTIMATES = {
@@ -704,26 +706,29 @@ def get_user_selection():
 
         book_selections[book_name] = chapter_verse_map
 
-    # Get parallelization settings
-    print(f"\nPARALLEL PROCESSING SETTINGS:")
-    print(f"Recommended: 6-8 workers (balance of speed vs API limits)")
-    print(f"Conservative: 2-4 workers (slower but more reliable)")
-    print(f"Aggressive: 8-12 workers (faster but may hit rate limits)")
+    # Get parallelization settings - now for CHAPTER-LEVEL parallelization
+    print(f"\nCHAPTER-LEVEL PARALLEL PROCESSING:")
+    print(f"Each chapter is processed in a single API call (batched mode).")
+    print(f"Multiple chapters can be processed simultaneously.")
+    print(f"")
+    print(f"Recommended: 3-4 parallel chapters (balance of speed vs API limits)")
+    print(f"Conservative: 1-2 parallel chapters (slower but more reliable)")
+    print(f"Aggressive: 5-6 parallel chapters (faster but may hit rate limits)")
 
     while True:
         try:
-            max_workers_input = input(f"\nEnter max parallel workers (1-12, default: 6): ").strip()
+            max_workers_input = input(f"\nEnter max parallel chapters (1-6, default: 3): ").strip()
             if not max_workers_input:
-                max_workers = 6  # Default
+                max_workers = 3  # Default - conservative for chapter-level
                 break
             elif max_workers_input.isdigit():
                 max_workers = int(max_workers_input)
-                if 1 <= max_workers <= 12:
+                if 1 <= max_workers <= 6:
                     break
                 else:
-                    print("Max workers must be between 1 and 12")
+                    print("Max parallel chapters must be between 1 and 6")
             else:
-                print("Please enter a number or press Enter for default (6)")
+                print("Please enter a number or press Enter for default (3)")
         except KeyboardInterrupt:
             print("\nExiting...")
             return None
@@ -802,7 +807,7 @@ def extract_individual_verses(json_text, logger):
     return verses
 
 def process_validation_result(validation_result: Dict, instance_id_to_db_id: Dict,
-                               db_manager, logger) -> Tuple[bool, Optional[int]]:
+                               db_manager, logger, db_lock: threading.Lock = None) -> Tuple[bool, Optional[int]]:
     """
     Process a single validation result and update the database.
 
@@ -811,6 +816,7 @@ def process_validation_result(validation_result: Dict, instance_id_to_db_id: Dic
         instance_id_to_db_id: Mapping from instance_id to database ID
         db_manager: DatabaseManager instance
         logger: Logger instance
+        db_lock: Optional threading.Lock for thread-safe database operations
 
     Returns:
         Tuple of (success: bool, db_id: Optional[int])
@@ -862,8 +868,12 @@ def process_validation_result(validation_result: Dict, instance_id_to_db_id: Dic
     })
     validation_data['validation_error'] = None
 
-    # Update database
-    db_manager.update_validation_data(db_id, validation_data)
+    # Update database (thread-safe with optional lock)
+    if db_lock:
+        with db_lock:
+            db_manager.update_validation_data(db_id, validation_data)
+    else:
+        db_manager.update_validation_data(db_id, validation_data)
     logger.debug(f"Validation data updated for DB ID: {db_id}")
 
     return True, db_id
@@ -980,7 +990,229 @@ def recover_missing_validations(db_manager, validator, book_name: str, chapter: 
     return stats
 
 
-def process_chapter_batched(verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger, run_context: RunContext = None):
+# Global lock for thread-safe database operations
+_db_lock = threading.Lock()
+
+
+def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divine_names_modifier,
+                                 db_manager, logger, run_context: RunContext = None) -> Dict:
+    """
+    Process a single chapter - designed to be called from ThreadPoolExecutor.
+
+    This wrapper handles:
+    - Fetching verse data from Sefaria (with caching)
+    - Calling process_chapter_batched
+    - Thread-safe database commits using a lock
+    - Error handling and result aggregation
+
+    Args:
+        task_data: Dict with 'book', 'chapter', 'verses' (optional filter)
+        sefaria_cache: SefariaCache instance
+        validator: MetaphorValidator instance
+        divine_names_modifier: HebrewDivineNamesModifier instance
+        db_manager: DatabaseManager instance
+        logger: Logger instance
+        run_context: Optional RunContext for failure tracking
+
+    Returns:
+        Dict with processing results
+    """
+    book_name = task_data['book']
+    chapter = task_data['chapter']
+    verse_selection = task_data.get('verses', 'ALL_VERSES')
+    worker_id = task_data.get('worker_id', 0)
+    sefaria_client = task_data.get('sefaria_client')
+
+    result = {
+        'book': book_name,
+        'chapter': chapter,
+        'verses_stored': 0,
+        'instances_stored': 0,
+        'processing_time': 0,
+        'cost': 0.0,
+        'success': False,
+        'error': None
+    }
+
+    start_time = time.time()
+
+    try:
+        logger.info(f"[Worker {worker_id}] Starting {book_name} {chapter}")
+
+        # Fetch verses (with caching)
+        reference = f"{book_name}.{chapter}"
+        cached = sefaria_cache.get(reference)
+
+        if cached and cached[0]:
+            verses_data = cached[0]
+            logger.info(f"[Worker {worker_id}] Using cached Sefaria data for {reference}")
+        else:
+            verses_data, _ = sefaria_client.extract_hebrew_text(reference)
+            if verses_data:
+                sefaria_cache.set(reference, verses_data)
+                logger.debug(f"[Worker {worker_id}] Cached Sefaria data for {reference}")
+
+        if not verses_data:
+            raise ValueError(f"Failed to get text from Sefaria for {reference}")
+
+        # Filter verses if needed
+        if verse_selection != 'ALL_VERSES' and isinstance(verse_selection, str):
+            max_verses = len(verses_data)
+            parsed_verses = parse_selection(verse_selection, max_verses, "verse")
+            if parsed_verses:
+                verses_data = [v for v in verses_data if int(v['reference'].split(':')[1]) in parsed_verses]
+                logger.info(f"[Worker {worker_id}] Filtered to {len(verses_data)} verses")
+
+        logger.info(f"[Worker {worker_id}] Processing {len(verses_data)} verses from {book_name} {chapter}")
+
+        # Process chapter using batched mode
+        # Use lock for database operations within process_chapter_batched
+        v, i, proc_time, total_attempted, chapter_cost = process_chapter_batched(
+            verses_data, book_name, chapter, validator, divine_names_modifier,
+            db_manager, logger, run_context, db_lock=_db_lock
+        )
+
+        # Thread-safe commit
+        with _db_lock:
+            db_manager.commit()
+
+        result['verses_stored'] = v
+        result['instances_stored'] = i
+        result['processing_time'] = time.time() - start_time
+        result['cost'] = chapter_cost
+        result['success'] = v > 0 or total_attempted == 0  # Success if we stored verses or there were none to store
+
+        if v == 0 and total_attempted > 0:
+            result['error'] = 'Batched processing returned 0 verses'
+            if run_context:
+                run_context.add_chapter_failure(
+                    book_name, chapter,
+                    'Batched processing returned 0 verses (likely JSON parsing failure)',
+                    verses_attempted=total_attempted,
+                    error_type='json_parsing_failure'
+                )
+        else:
+            if run_context:
+                run_context.record_chapter_success(
+                    book_name, chapter, v, i,
+                    result['processing_time'], chapter_cost,
+                    'gpt-5.1-medium-batched'
+                )
+
+        logger.info(f"[Worker {worker_id}] Completed {book_name} {chapter}: {i} instances from {v} verses in {result['processing_time']:.1f}s (Cost: ${chapter_cost:.4f})")
+
+    except Exception as e:
+        result['error'] = str(e)
+        result['processing_time'] = time.time() - start_time
+        logger.error(f"[Worker {worker_id}] Error processing {book_name} {chapter}: {e}")
+
+        if run_context:
+            run_context.add_chapter_failure(
+                book_name, chapter, str(e),
+                error_type='exception'
+            )
+
+    return result
+
+
+def process_chapters_parallel(chapter_tasks: List[Dict], sefaria_cache, sefaria_client,
+                               validator, divine_names_modifier, db_manager, logger,
+                               max_workers: int, run_context: RunContext = None) -> Dict:
+    """
+    Process multiple chapters in parallel using ThreadPoolExecutor.
+
+    Each chapter is processed in a single API call (batched mode), so this achieves
+    both the cost savings of batched processing AND the speed of parallelization.
+
+    Args:
+        chapter_tasks: List of dicts with 'book', 'chapter', optional 'verses'
+        sefaria_cache: SefariaCache instance for caching Sefaria responses
+        sefaria_client: SefariaClient instance for fetching text
+        validator: MetaphorValidator instance
+        divine_names_modifier: HebrewDivineNamesModifier instance
+        db_manager: DatabaseManager instance
+        logger: Logger instance
+        max_workers: Maximum number of parallel chapter processors
+        run_context: Optional RunContext for tracking
+
+    Returns:
+        Dict with aggregated results
+    """
+    total_results = {
+        'total_chapters': len(chapter_tasks),
+        'successful_chapters': 0,
+        'failed_chapters': 0,
+        'total_verses': 0,
+        'total_instances': 0,
+        'total_time': 0,
+        'total_cost': 0.0,
+        'chapter_results': []
+    }
+
+    if not chapter_tasks:
+        return total_results
+
+    logger.info(f"[PARALLEL CHAPTERS] Starting parallel processing of {len(chapter_tasks)} chapters with {max_workers} workers")
+
+    start_time = time.time()
+
+    # Add worker IDs and sefaria_client to tasks
+    for i, task in enumerate(chapter_tasks):
+        task['worker_id'] = (i % max_workers) + 1
+        task['sefaria_client'] = sefaria_client
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        # Submit all chapter processing tasks
+        future_to_task = {
+            executor.submit(
+                process_single_chapter_task,
+                task, sefaria_cache, validator, divine_names_modifier,
+                db_manager, logger, run_context
+            ): task
+            for task in chapter_tasks
+        }
+
+        # Collect results as they complete
+        for future in concurrent.futures.as_completed(future_to_task):
+            task = future_to_task[future]
+            try:
+                result = future.result()
+                total_results['chapter_results'].append(result)
+
+                if result['success']:
+                    total_results['successful_chapters'] += 1
+                    total_results['total_verses'] += result['verses_stored']
+                    total_results['total_instances'] += result['instances_stored']
+                else:
+                    total_results['failed_chapters'] += 1
+
+                total_results['total_cost'] += result['cost']
+
+                # Progress update
+                completed = total_results['successful_chapters'] + total_results['failed_chapters']
+                logger.info(f"[PARALLEL CHAPTERS] Progress: {completed}/{len(chapter_tasks)} chapters completed")
+
+            except Exception as e:
+                logger.error(f"[PARALLEL CHAPTERS] Task failed for {task['book']} {task['chapter']}: {e}")
+                total_results['failed_chapters'] += 1
+                total_results['chapter_results'].append({
+                    'book': task['book'],
+                    'chapter': task['chapter'],
+                    'success': False,
+                    'error': str(e)
+                })
+
+    total_results['total_time'] = time.time() - start_time
+
+    logger.info(f"[PARALLEL CHAPTERS] Complete: {total_results['successful_chapters']} succeeded, "
+                f"{total_results['failed_chapters']} failed, "
+                f"{total_results['total_instances']} instances from {total_results['total_verses']} verses, "
+                f"Cost: ${total_results['total_cost']:.4f}")
+
+    return total_results
+
+
+def process_chapter_batched(verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger, run_context: RunContext = None, db_lock: threading.Lock = None):
     """Process an entire chapter in a single batched API call (GPT-5.1 MEDIUM)
 
     This approach sends all verses in ONE API call, achieving 95% token savings
@@ -995,6 +1227,7 @@ def process_chapter_batched(verses_data, book_name, chapter, validator, divine_n
         db_manager: DatabaseManager instance
         logger: Logger instance
         run_context: Optional RunContext for failure tracking
+        db_lock: Optional threading.Lock for thread-safe database operations
 
     Returns:
         Tuple of (verses_stored, instances_stored, processing_time, total_attempted, total_cost)
@@ -1004,8 +1237,9 @@ def process_chapter_batched(verses_data, book_name, chapter, validator, divine_n
     if not verses_data:
         return 0, 0, 0, 0, 0.0
 
-    # Use increased token limit for prophetic books (Jeremiah, Isaiah)
-    max_tokens = MAX_COMPLETION_TOKENS_PROPHETIC if book_name in BATCHED_PROCESSING_BOOKS else MAX_COMPLETION_TOKENS_DEFAULT
+    # Use increased token limit for prophetic books (Jeremiah, Isaiah) which have longer chapters
+    PROPHETIC_BOOKS = ["Isaiah", "Jeremiah"]
+    max_tokens = MAX_COMPLETION_TOKENS_PROPHETIC if book_name in PROPHETIC_BOOKS else MAX_COMPLETION_TOKENS_DEFAULT
 
     logger.info(f"[BATCHED MODE] Processing {book_name} {chapter} with {len(verses_data)} verses in SINGLE API call")
     logger.info(f"[BATCHED MODE] Using max_completion_tokens={max_tokens}")
@@ -1633,9 +1867,22 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
         all_instances_for_validation = []
         verse_to_instances_map = {}  # Map verse_ref to list of instances
 
-        # Store results in database
+        # Store results in database (thread-safe with optional lock)
         verses_stored = 0
         instances_stored = 0
+
+        # Helper for thread-safe database operations
+        def db_insert_verse(verse_data):
+            if db_lock:
+                with db_lock:
+                    return db_manager.insert_verse(verse_data)
+            return db_manager.insert_verse(verse_data)
+
+        def db_insert_figurative_language(verse_id, figurative_data):
+            if db_lock:
+                with db_lock:
+                    return db_manager.insert_figurative_language(verse_id, figurative_data)
+            return db_manager.insert_figurative_language(verse_id, figurative_data)
 
         for vr in verse_results:
             verse_num = vr.get('verse')
@@ -1690,8 +1937,8 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
             }
 
             logger.debug(f"Verse data for insertion: {json.dumps(verse_data, indent=2, ensure_ascii=False)}")
-            # Insert verse into database
-            verse_id = db_manager.insert_verse(verse_data)
+            # Insert verse into database (thread-safe)
+            verse_id = db_insert_verse(verse_data)
             verses_stored += 1
 
             # Process instances for this verse
@@ -1724,8 +1971,8 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                     'model_used': 'gpt-5.1-medium-batched'
                 }
 
-                # Insert instance into database
-                figurative_language_id = db_manager.insert_figurative_language(verse_id, figurative_data)
+                # Insert instance into database (thread-safe)
+                figurative_language_id = db_insert_figurative_language(verse_id, figurative_data)
                 instances_stored += 1
 
                 # Keep track for validation
@@ -1807,10 +2054,10 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                 # Track validation processing using shared function
                 processed_validation_ids = set()
 
-                # Process validation results using shared function
+                # Process validation results using shared function (thread-safe)
                 for validation_result in bulk_validation_results:
                     success, db_id = process_validation_result(
-                        validation_result, instance_id_to_db_id, db_manager, logger
+                        validation_result, instance_id_to_db_id, db_manager, logger, db_lock
                     )
                     if success:
                         processed_validation_ids.add(validation_result.get('instance_id'))
@@ -2268,9 +2515,10 @@ def main():
             return
 
         # Create selection structure for command-line mode
+        # Note: For single chapter, max_workers doesn't matter much (only 1 chapter to process)
         selection = {
             'book_selections': {book_name: {chapter_num: 'ALL_VERSES'}},
-            'max_workers': 6,
+            'max_workers': 3,  # Default for chapter-level parallelization
             'enable_debug': False
         }
 
@@ -2470,213 +2718,68 @@ def main():
         all_results = []
         failed_chapters = []  # Track chapters that failed processing
 
-        # Process each book, chapter, and verse selection
+        # Build list of all chapter tasks from book_selections
+        # All books now use batched chapter-level processing
+        chapter_tasks = []
+
         for book_name, chapters in book_selections.items():
-            logger.info(f"\n=== PROCESSING BOOK: {book_name.upper()} ===")
+            logger.info(f"\n=== PREPARING CHAPTERS FOR: {book_name.upper()} ===")
 
             if chapters == 'FULL_BOOK':
-                # Use centralized config
+                # Process all chapters in the book
                 max_chapters = SUPPORTED_BOOKS[book_name]
-                logger.info(f"Processing full book: all {max_chapters} chapters with all verses")
-
+                logger.info(f"Queuing full book: all {max_chapters} chapters")
                 for chapter in range(1, max_chapters + 1):
-                    logger.info(f"--- PROCESSING: {book_name} {chapter} (FULL BOOK) ---")
-
-                    # Fetch all verses for the chapter (with caching)
-                    reference = f"{book_name}.{chapter}"
-                    cached = sefaria_cache.get(reference)
-                    if cached and cached[0]:
-                        verses_data = cached[0]
-                        logger.info(f"Using cached Sefaria data for {reference}")
-                    else:
-                        verses_data, _ = sefaria.extract_hebrew_text(reference)
-                        if verses_data:
-                            sefaria_cache.set(reference, verses_data)
-                            logger.debug(f"Cached Sefaria data for {reference}")
-
-                    if not verses_data:
-                        logger.error(f"Failed to get text for {book_name} {chapter}")
-                        failed_chapters.append({
-                            'book': book_name,
-                            'chapter': chapter,
-                            'verses_attempted': 0,
-                            'reason': 'Sefaria API failed to return text'
-                        })
-                        run_context.add_chapter_failure(
-                            book_name, chapter,
-                            'Sefaria API failed to return text',
-                            error_type='sefaria_api_failure'
-                        )
-                        continue
-
-                    logger.info(f"Processing all {len(verses_data)} verses from {book_name} {chapter}")
-
-                    # Use BATCHED processing for prophetic/wisdom books
-                    if book_name in BATCHED_PROCESSING_BOOKS:
-                        logger.info(f"[BATCHED MODE ENABLED] Using GPT-5.1 MEDIUM for {book_name} {chapter}")
-
-                        v, i, processing_time, total_attempted, chapter_cost = process_chapter_batched(
-                            verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger, run_context
-                        )
-
-                        total_verses += v
-                        total_instances += i
-
-                        logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s (Cost: ${chapter_cost:.4f})")
-                        if total_attempted > 0:
-                            logger.info(f"Average processing time: {processing_time/total_attempted:.2f}s per verse")
-
-                        # Track failed chapters
-                        if v == 0 and total_attempted > 0:
-                            failed_chapters.append({
-                                'book': book_name,
-                                'chapter': chapter,
-                                'verses_attempted': total_attempted,
-                                'reason': 'Batched processing returned 0 verses (likely JSON parsing failure)'
-                            })
-                            run_context.add_chapter_failure(
-                                book_name, chapter,
-                                'Batched processing returned 0 verses (likely JSON parsing failure)',
-                                verses_attempted=total_attempted,
-                                error_type='json_parsing_failure'
-                            )
-                            logger.error(f"CHAPTER FAILED: {book_name} {chapter} - 0 verses stored from {total_attempted} attempted")
-                        else:
-                            # Record success
-                            run_context.record_chapter_success(
-                                book_name, chapter, v, i,
-                                processing_time, chapter_cost,
-                                'gpt-5.1-medium-batched'
-                            )
-
-                        db_manager.commit()
-                    else:
-                        # Use per-verse parallel processing for other books
-                        # Generate chapter context for Proverbs (wisdom literature needs full chapter context)
-                        chapter_context_text = None
-                        if book_name == "Proverbs":
-                            # Build full chapter text from all verses
-                            hebrew_chapter = "\n".join([v['hebrew'] for v in verses_data])
-                            english_chapter = "\n".join([v['english'] for v in verses_data])
-                            chapter_context_text = f"=== {book_name} Chapter {chapter} ===\n\nHebrew:\n{hebrew_chapter}\n\nEnglish:\n{english_chapter}"
-                            logger.info(f"Generated chapter context for Proverbs {chapter} ({len(chapter_context_text)} chars)")
-
-                        # Process verses in parallel
-                        v, i, processing_time, total_attempted, parallel_validation_cost = process_verses_parallel(
-                            verses_data, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers, chapter_context_text
-                        )
-
-                        total_verses += v
-                        total_instances += i
-
-                        logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s (Validation cost: ${parallel_validation_cost:.4f})")
-                        if total_attempted > 0:
-                            logger.info(f"Average processing time: {processing_time/total_attempted:.2f}s per verse")
-
-                        # Track validation cost in run_context
-                        # Note: Parallel mode doesn't currently track detection costs from Gemini API
-                        # This is a known limitation - only validation costs are tracked for parallel mode
-                        run_context.total_cost += parallel_validation_cost
-
-                        db_manager.commit()
+                    chapter_tasks.append({
+                        'book': book_name,
+                        'chapter': chapter,
+                        'verses': 'ALL_VERSES'
+                    })
             else:
                 # Process specific chapters and verses
                 for chapter, verse_selection in chapters.items():
-                    logger.info(f"--- PROCESSING: {book_name} {chapter} ---")
+                    chapter_tasks.append({
+                        'book': book_name,
+                        'chapter': chapter,
+                        'verses': verse_selection
+                    })
+                    logger.info(f"Queued {book_name} {chapter} (verses: {verse_selection})")
 
-                    # Fetch verses for the chapter
-                    verses_data, _ = sefaria.extract_hebrew_text(f"{book_name}.{chapter}")
-                    if not verses_data:
-                        logger.error(f"Failed to get text for {book_name} {chapter}")
-                        failed_chapters.append({
-                            'book': book_name,
-                            'chapter': chapter,
-                            'verses_attempted': 0,
-                            'reason': 'Sefaria API failed to return text'
-                        })
-                        continue
+        logger.info(f"\n{'='*60}")
+        logger.info(f"PARALLEL CHAPTER PROCESSING")
+        logger.info(f"{'='*60}")
+        logger.info(f"Total chapters to process: {len(chapter_tasks)}")
+        logger.info(f"Parallel workers: {max_workers}")
+        logger.info(f"Processing mode: Batched (one API call per chapter)")
+        logger.info(f"{'='*60}\n")
 
-                    # Filter verses based on user selection
-                    if verse_selection == 'ALL_VERSES':
-                        verses_to_process = verses_data
-                        logger.info(f"Processing all {len(verses_to_process)} verses from {book_name} {chapter}")
-                    else:
-                        # Parse the verse selection string
-                        max_verses = len(verses_data)
-                        if isinstance(verse_selection, str) and verse_selection.lower() != 'all':
-                            parsed_verses = parse_selection(verse_selection, max_verses, "verse")
-                            if parsed_verses:
-                                verses_to_process = [v for v in verses_data if int(v['reference'].split(':')[1]) in parsed_verses]
-                                logger.info(f"Processing {len(verses_to_process)} selected verses: {parsed_verses}")
-                            else:
-                                logger.error(f"Invalid verse selection: {verse_selection}")
-                                continue
-                        else:
-                            verses_to_process = verses_data
-                            logger.info(f"Processing all {len(verses_to_process)} verses from {book_name} {chapter}")
+        # Process all chapters in parallel using batched mode
+        parallel_results = process_chapters_parallel(
+            chapter_tasks,
+            sefaria_cache,
+            sefaria,  # sefaria_client
+            validator,
+            divine_names_modifier,
+            db_manager,
+            logger,
+            max_workers,
+            run_context
+        )
 
-                    # Use BATCHED processing for Proverbs and Isaiah (GPT-5.1 MEDIUM)
-                    if book_name in ["Proverbs", "Isaiah", "Jeremiah"]:
-                        logger.info(f"[BATCHED MODE ENABLED] Using GPT-5.1 MEDIUM for {book_name} {chapter}")
+        # Aggregate results
+        total_verses = parallel_results['total_verses']
+        total_instances = parallel_results['total_instances']
+        run_context.total_cost = parallel_results['total_cost']
 
-                        v, i, processing_time, total_attempted, chapter_cost = process_chapter_batched(
-                            verses_to_process, book_name, chapter, validator, divine_names_modifier, db_manager, logger
-                        )
-
-                        total_verses += v
-                        total_instances += i
-
-                        logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s (Cost: ${chapter_cost:.4f})")
-                        if total_attempted > 0:
-                            logger.info(f"Average processing time: {processing_time/total_attempted:.2f}s per verse")
-
-                        # Track failed chapters
-                        if v == 0 and total_attempted > 0:
-                            failed_chapters.append({
-                                'book': book_name,
-                                'chapter': chapter,
-                                'verses_attempted': total_attempted,
-                                'reason': 'Batched processing returned 0 verses (likely JSON parsing failure)'
-                            })
-                            run_context.add_chapter_failure(
-                                book_name, chapter,
-                                'Batched processing returned 0 verses (likely JSON parsing failure)',
-                                verses_attempted=total_attempted,
-                                error_type='json_parsing_failure'
-                            )
-                            logger.error(f"CHAPTER FAILED: {book_name} {chapter} - 0 verses stored from {total_attempted} attempted")
-                        else:
-                            # Record success with cost tracking
-                            run_context.record_chapter_success(
-                                book_name, chapter, v, i,
-                                processing_time, chapter_cost,
-                                'gpt-5.1-medium-batched'
-                            )
-
-                        db_manager.commit()
-                    else:
-                        # Use per-verse parallel processing for other books
-                        # Generate chapter context for other wisdom literature if needed
-                        chapter_context_text = None
-
-                        # Process verses in parallel
-                        v, i, processing_time, total_attempted, parallel_validation_cost = process_verses_parallel(
-                            verses_to_process, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers, chapter_context_text
-                        )
-
-                        total_verses += v
-                        total_instances += i
-
-                        logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s (Validation cost: ${parallel_validation_cost:.4f})")
-                        if total_attempted > 0:
-                            logger.info(f"Average processing time: {processing_time/total_attempted:.2f}s per verse")
-
-                        # Track validation cost in run_context
-                        # Note: Parallel mode doesn't currently track detection costs from Gemini API
-                        # This is a known limitation - only validation costs are tracked for parallel mode
-                        run_context.total_cost += parallel_validation_cost
-
-                        db_manager.commit()
+        # Track failed chapters from parallel results
+        for result in parallel_results['chapter_results']:
+            if not result.get('success'):
+                failed_chapters.append({
+                    'book': result['book'],
+                    'chapter': result['chapter'],
+                    'verses_attempted': result.get('verses_stored', 0),
+                    'reason': result.get('error', 'Unknown error')
+                })
 
         total_time = time.time() - start_time
 
@@ -2695,10 +2798,10 @@ def main():
         else:
             print(f"Average time per verse: N/A (no verses processed)")
             print(f"Figurative language detection rate: N/A")
-        print(f"Workers used: {max_workers}")
+        print(f"Parallel chapters: {max_workers}")
         print(f"** TOTAL COST: ${run_context.total_cost:.4f}")
-        print(f"\n==> Processed {total_verses} verses from {len(book_selections)} books")
-        print(f"** Total time: {total_time:.1f} seconds with {max_workers} parallel workers")
+        print(f"\n==> Processed {total_verses} verses from {len(book_selections)} books ({len(chapter_tasks)} chapters)")
+        print(f"** Total time: {total_time:.1f} seconds with {max_workers} parallel chapter workers")
 
         # Display validation error summary
         validation_issues = []
