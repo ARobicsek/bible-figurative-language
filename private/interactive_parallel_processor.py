@@ -887,7 +887,8 @@ def recover_missing_validations(db_manager, validator, book_name: str, chapter: 
     stats = {
         'total_missing': 0,
         'recovered': 0,
-        'failed': 0
+        'failed': 0,
+        'cost': 0.0
     }
 
     logger.info(f"[RECOVERY] Checking for missing validations in {book_name} {chapter}")
@@ -954,7 +955,11 @@ def recover_missing_validations(db_manager, validator, book_name: str, chapter: 
         logger.info(f"[RECOVERY] Validating batch {i//batch_size + 1} ({len(batch)} instances)")
 
         try:
-            validation_results = validator.validate_chapter_instances(batch)
+            validation_results, validation_cost_metadata = validator.validate_chapter_instances(batch)
+            batch_cost = validation_cost_metadata.get('cost', 0)
+            stats['cost'] += batch_cost
+
+            logger.debug(f"[RECOVERY] Batch {i//batch_size + 1} cost: ${batch_cost:.4f}")
 
             for result in validation_results:
                 success, db_id = process_validation_result(
@@ -971,7 +976,7 @@ def recover_missing_validations(db_manager, validator, book_name: str, chapter: 
 
     db_manager.commit()
 
-    logger.info(f"[RECOVERY] Complete: {stats['recovered']} recovered, {stats['failed']} failed")
+    logger.info(f"[RECOVERY] Complete: {stats['recovered']} recovered, {stats['failed']} failed, Cost: ${stats['cost']:.4f}")
     return stats
 
 
@@ -1765,7 +1770,7 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
             # Make a single validation call for all instances in the chapter
             try:
                 logger.info(f"Making single validation API call for {len(all_chapter_instances)} instances")
-                bulk_validation_results = validator.validate_chapter_instances(all_chapter_instances)
+                bulk_validation_results, validation_cost_metadata = validator.validate_chapter_instances(all_chapter_instances)
 
                 # VALIDATION PREVENTION MEASURES: Check for validation system failures
                 validation_success_count = 0
@@ -1861,9 +1866,16 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
 
             validation_time = time.time() - validation_start
             logger.info(f"[BATCHED VALIDATION] Completed in {validation_time:.1f}s")
+        else:
+            # No validation performed, zero cost
+            validation_cost_metadata = {'cost': 0, 'input_tokens': 0, 'output_tokens': 0, 'reasoning_tokens': 0}
 
         processing_time = time.time() - start_time
-        total_cost = token_metadata.get('cost', 0)
+        detection_cost = token_metadata.get('cost', 0)
+        validation_cost = validation_cost_metadata.get('cost', 0)
+        total_cost = detection_cost + validation_cost
+
+        logger.info(f"[COST BREAKDOWN] Detection: ${detection_cost:.4f}, Validation: ${validation_cost:.4f}, Total: ${total_cost:.4f}")
 
         # Log corruption and skipped verses summary
         if corrupted_chunks > 0:
@@ -2107,6 +2119,7 @@ def process_verses_parallel(verses_to_process, book_name, chapter, flexible_clie
 
     verses_stored = 0
     instances_stored = 0
+    total_validation_cost = 0.0
 
     for verse_result in all_verse_results:
         try:
@@ -2163,7 +2176,9 @@ def process_verses_parallel(verses_to_process, book_name, chapter, flexible_clie
             if validator and instances_with_db_ids:
                 try:
                     logger.debug(f"Starting validation for {len(instances_with_db_ids)} instances in {verse_result['reference']}")
-                    bulk_validation_results = validator.validate_verse_instances(instances_with_db_ids, verse_result['hebrew'], verse_result['english'])
+                    bulk_validation_results, verse_validation_cost_metadata = validator.validate_verse_instances(instances_with_db_ids, verse_result['hebrew'], verse_result['english'])
+                    verse_validation_cost = verse_validation_cost_metadata.get('cost', 0)
+                    total_validation_cost += verse_validation_cost
 
                     # Create a mapping from instance_id to db_id for easy lookup
                     instance_id_to_db_id = {inst.get('instance_id'): inst.get('db_id') for inst in instances_with_db_ids}
@@ -2225,7 +2240,8 @@ def process_verses_parallel(verses_to_process, book_name, chapter, flexible_clie
         except Exception as e:
             logger.error(f"Error storing {verse_result['reference']}: {e}")
 
-    return verses_stored, instances_stored, processing_time, len(verses_to_process)
+    logger.info(f"[PARALLEL VALIDATION] Total validation cost: ${total_validation_cost:.4f}")
+    return verses_stored, instances_stored, processing_time, len(verses_to_process), total_validation_cost
 
 def main():
     """Main execution function"""
@@ -2546,16 +2562,21 @@ def main():
                             logger.info(f"Generated chapter context for Proverbs {chapter} ({len(chapter_context_text)} chars)")
 
                         # Process verses in parallel
-                        v, i, processing_time, total_attempted = process_verses_parallel(
+                        v, i, processing_time, total_attempted, parallel_validation_cost = process_verses_parallel(
                             verses_data, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers, chapter_context_text
                         )
 
                         total_verses += v
                         total_instances += i
 
-                        logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s")
+                        logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s (Validation cost: ${parallel_validation_cost:.4f})")
                         if total_attempted > 0:
                             logger.info(f"Average processing time: {processing_time/total_attempted:.2f}s per verse")
+
+                        # Track validation cost in run_context
+                        # Note: Parallel mode doesn't currently track detection costs from Gemini API
+                        # This is a known limitation - only validation costs are tracked for parallel mode
+                        run_context.total_cost += parallel_validation_cost
 
                         db_manager.commit()
             else:
@@ -2639,16 +2660,21 @@ def main():
                         chapter_context_text = None
 
                         # Process verses in parallel
-                        v, i, processing_time, total_attempted = process_verses_parallel(
+                        v, i, processing_time, total_attempted, parallel_validation_cost = process_verses_parallel(
                             verses_to_process, book_name, chapter, flexible_client, validator, divine_names_modifier, db_manager, logger, max_workers, chapter_context_text
                         )
 
                         total_verses += v
                         total_instances += i
 
-                        logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s")
+                        logger.info(f"Chapter {chapter} completed: {i} instances from {v} verses in {processing_time:.1f}s (Validation cost: ${parallel_validation_cost:.4f})")
                         if total_attempted > 0:
                             logger.info(f"Average processing time: {processing_time/total_attempted:.2f}s per verse")
+
+                        # Track validation cost in run_context
+                        # Note: Parallel mode doesn't currently track detection costs from Gemini API
+                        # This is a known limitation - only validation costs are tracked for parallel mode
+                        run_context.total_cost += parallel_validation_cost
 
                         db_manager.commit()
 
@@ -2725,6 +2751,7 @@ def main():
 
                 total_recovered = 0
                 total_failed = 0
+                total_recovery_cost = 0.0
 
                 for issue in validation_issues:
                     recovery_stats = recover_missing_validations(
@@ -2732,10 +2759,14 @@ def main():
                     )
                     total_recovered += recovery_stats['recovered']
                     total_failed += recovery_stats['failed']
+                    recovery_cost = recovery_stats.get('cost', 0)
+                    total_recovery_cost += recovery_cost
+                    run_context.total_cost += recovery_cost  # Add recovery costs to total
 
                 print(f"\n[AUTO-RECOVERY] Results:")
                 print(f"   Recovered: {total_recovered}")
                 print(f"   Failed: {total_failed}")
+                print(f"   Recovery Cost: ${total_recovery_cost:.4f}")
 
                 # Re-verify after recovery
                 if total_recovered > 0:
