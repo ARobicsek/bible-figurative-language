@@ -2,7 +2,7 @@
 
 **Part 1 Documentation: Data Generation Pipeline**
 
-*Last Updated: December 2024*
+*Last Updated: December 2025*
 
 ---
 
@@ -66,6 +66,7 @@ python interactive_parallel_processor.py Proverbs 15
 | Psalms | 150 | Per-verse parallel |
 | Proverbs | 31 | **Batched (GPT-5.1)** |
 | Isaiah | 66 | **Batched (GPT-5.1)** |
+| Jeremiah | 52 | **Batched (GPT-5.1)** |
 
 ---
 
@@ -608,8 +609,72 @@ python scripts/validation_health_check.py --database path/to/database.db
 | Claude Opus 4.5 | $15.00 | $75.00 |
 | Gemini 3.0 Pro | $2.00 | $8.00 |
 
-**Note:** Batched processing achieves ~95% cost savings vs. per-verse for Proverbs/Isaiah.
+**Note:** Batched processing achieves ~95% cost savings vs. per-verse for Proverbs/Isaiah/Jeremiah.
 
 ---
 
-*Document generated from codebase analysis. For schema details, see `DATABASE_SCHEMA.md`. For methodology, see `METHODOLOGY.md`.*
+## Version 2.1.0 Features (December 2024)
+
+### New Capabilities
+
+#### 1. Jeremiah Support
+- Added Jeremiah (52 chapters, ~1,364 verses) to supported books
+- Uses batched GPT-5.1 processing like Isaiah
+
+#### 2. Enhanced Failure Tracking
+- **Run Context**: Each processing run gets a unique ID (e.g., `20241223_143052_a1b2c3d4`)
+- **Failure Manifest**: `*_failures.json` with structured error taxonomy
+- **Processing Manifest**: `*_manifest.json` with full run metadata
+- **Verse-level tracking**: Failed verses tracked individually, not just chapters
+
+#### 3. Improved Robustness
+- **Pydantic schema validation**: LLM responses validated against typed schemas
+- **Increased token limits**: Prophetic books use 100,000 tokens (vs 65,536 default)
+- **Sefaria caching**: `.sefaria_cache/` directory caches API responses for faster reruns
+
+#### 4. Smart Batching
+```python
+# Get recommended batches for a book
+from interactive_parallel_processor import get_recommended_batches, print_batch_recommendations
+
+# For Jeremiah (52 chapters):
+batches = get_recommended_batches("Jeremiah")
+# Returns: [(1,10), (11,20), (21,30), (31,40), (41,52)]
+
+print_batch_recommendations("Jeremiah")
+# Prints detailed batching strategy with cost/time estimates
+```
+
+#### 5. Database Tracking
+New `processing_runs` table tracks all runs:
+```sql
+SELECT run_id, book, verses_processed, instances_detected,
+       estimated_cost, pipeline_version
+FROM processing_runs
+ORDER BY started_at DESC;
+```
+
+### Output Files (v2.1.0)
+
+| File | Description |
+|------|-------------|
+| `{book}_c{chapter}_*.db` | SQLite database |
+| `{book}_c{chapter}_*_log.txt` | Processing log with run ID |
+| `{book}_c{chapter}_*_results.json` | Summary statistics |
+| `{book}_c{chapter}_*_failures.json` | **NEW**: Structured failure manifest |
+| `{book}_c{chapter}_*_manifest.json` | **NEW**: Processing metadata |
+| `.sefaria_cache/*.json` | **NEW**: Cached Sefaria responses |
+
+### Configuration Constants
+
+```python
+PIPELINE_VERSION = "2.1.0"
+SUPPORTED_BOOKS = {"Genesis": 50, ..., "Jeremiah": 52}
+BATCHED_PROCESSING_BOOKS = ["Proverbs", "Isaiah", "Jeremiah"]
+MAX_COMPLETION_TOKENS_DEFAULT = 65536
+MAX_COMPLETION_TOKENS_PROPHETIC = 100000
+```
+
+---
+
+*Document generated from codebase analysis. For schema details, see `DATABASE_SCHEMA.md`. For methodology, see `METHODOLOGY.md`. For Jeremiah-specific guidance, see `JEREMIAH_PROCESSING.md`.*

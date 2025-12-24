@@ -3,6 +3,9 @@
 """
 Interactive Parallel Flexible Tagging Processor
 User-friendly interface with high-performance parallel processing
+
+Version: 2.1.0
+Last Updated: December 2024
 """
 import sys
 import os
@@ -11,12 +14,39 @@ import traceback
 import json
 import time
 import re
+import uuid
+import hashlib
 import concurrent.futures
 from datetime import datetime
+from pathlib import Path
 from dotenv import load_dotenv
-from typing import List, Dict, Tuple, Optional
+from typing import List, Dict, Tuple, Optional, Any
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+
+# Pipeline version for tracking
+PIPELINE_VERSION = "2.1.0"
+
+# Books configuration - centralized definition
+SUPPORTED_BOOKS = {
+    "Genesis": 50, "Exodus": 40, "Leviticus": 27,
+    "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
+    "Proverbs": 31, "Isaiah": 66, "Jeremiah": 52
+}
+
+# Books that use batched processing (prophetic/wisdom literature)
+BATCHED_PROCESSING_BOOKS = ["Proverbs", "Isaiah", "Jeremiah"]
+
+# Verse count estimates for progress reporting
+VERSE_ESTIMATES = {
+    "Genesis": 1533, "Exodus": 1213, "Leviticus": 859,
+    "Numbers": 1288, "Deuteronomy": 959, "Psalms": 2461,
+    "Proverbs": 915, "Isaiah": 1292, "Jeremiah": 1364
+}
+
+# Token limits - increased for prophetic books with longer chapters
+MAX_COMPLETION_TOKENS_DEFAULT = 65536
+MAX_COMPLETION_TOKENS_PROPHETIC = 100000  # Higher limit for Jeremiah, Isaiah
 
 from hebrew_figurative_db.text_extraction.sefaria_client import SefariaClient
 from hebrew_figurative_db.database.db_manager import DatabaseManager
@@ -29,6 +59,376 @@ from flexible_tagging_gemini_client import FlexibleTaggingGeminiClient
 
 # OpenAI import for batched processing
 from openai import OpenAI
+
+# Pydantic for JSON schema validation
+try:
+    from pydantic import BaseModel, Field, ValidationError
+    from typing import Literal
+    PYDANTIC_AVAILABLE = True
+except ImportError:
+    PYDANTIC_AVAILABLE = False
+
+
+# JSON Schema Models for LLM Response Validation
+if PYDANTIC_AVAILABLE:
+    class FigurativeInstance(BaseModel):
+        """Schema for a single figurative language instance from LLM."""
+        verse: int = Field(..., ge=1, description="Verse number")
+        figurative_text: str = Field(..., min_length=1, description="The figurative expression")
+        explanation: str = Field(..., min_length=10, description="Explanation of the figurative language")
+        confidence: float = Field(..., ge=0.0, le=1.0, description="Confidence score 0-1")
+        metaphor: Optional[Literal["yes", "no"]] = Field(default="no")
+        simile: Optional[Literal["yes", "no"]] = Field(default="no")
+        personification: Optional[Literal["yes", "no"]] = Field(default="no")
+        idiom: Optional[Literal["yes", "no"]] = Field(default="no")
+        hyperbole: Optional[Literal["yes", "no"]] = Field(default="no")
+        metonymy: Optional[Literal["yes", "no"]] = Field(default="no")
+        other: Optional[Literal["yes", "no"]] = Field(default="no")
+
+    class ChapterResponse(BaseModel):
+        """Schema for the complete chapter response from LLM."""
+        instances: List[FigurativeInstance] = Field(default_factory=list)
+
+    def validate_llm_response(response_data: List[Dict], logger=None) -> Tuple[List[Dict], List[str]]:
+        """
+        Validate LLM response against Pydantic schema.
+
+        Returns:
+            Tuple of (valid_instances, validation_errors)
+        """
+        valid_instances = []
+        errors = []
+
+        for i, item in enumerate(response_data):
+            try:
+                validated = FigurativeInstance(**item)
+                valid_instances.append(validated.model_dump())
+            except ValidationError as e:
+                error_msg = f"Instance {i}: {e.errors()}"
+                errors.append(error_msg)
+                if logger:
+                    logger.warning(f"[SCHEMA VALIDATION] {error_msg}")
+
+        return valid_instances, errors
+else:
+    def validate_llm_response(response_data: List[Dict], logger=None) -> Tuple[List[Dict], List[str]]:
+        """Fallback validation when pydantic is not available."""
+        # Basic validation without pydantic
+        valid_instances = []
+        errors = []
+
+        for i, item in enumerate(response_data):
+            if not isinstance(item, dict):
+                errors.append(f"Instance {i}: Not a dictionary")
+                continue
+
+            # Check required fields
+            if 'verse' not in item:
+                errors.append(f"Instance {i}: Missing 'verse' field")
+                continue
+
+            if 'figurative_text' not in item or not item.get('figurative_text'):
+                errors.append(f"Instance {i}: Missing or empty 'figurative_text'")
+                continue
+
+            # Normalize confidence
+            if 'confidence' in item:
+                try:
+                    conf = float(item['confidence'])
+                    if conf < 0 or conf > 1:
+                        item['confidence'] = max(0.0, min(1.0, conf))
+                except (TypeError, ValueError):
+                    item['confidence'] = 0.5
+
+            valid_instances.append(item)
+
+        return valid_instances, errors
+
+
+class RunContext:
+    """Context object for tracking a processing run's state and failures."""
+
+    def __init__(self, book_selections: Dict, output_dir: str = "."):
+        self.run_id = f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_{uuid.uuid4().hex[:8]}"
+        self.started_at = datetime.now().isoformat()
+        self.book_selections = book_selections
+        self.output_dir = output_dir
+
+        # Failure tracking
+        self.failed_chapters: List[Dict] = []
+        self.failed_verses: List[Dict] = []
+        self.validation_issues: List[Dict] = []
+        self.streaming_corruptions: List[Dict] = []
+
+        # Success tracking
+        self.processed_chapters: List[Dict] = []
+        self.total_verses_processed = 0
+        self.total_instances_detected = 0
+        self.total_cost = 0.0
+
+        # Model tracking
+        self.models_used: Dict[str, int] = {}
+
+    def add_chapter_failure(self, book: str, chapter: int, reason: str,
+                           verses_attempted: int = 0, raw_response_file: str = None,
+                           error_type: str = "unknown"):
+        """Record a chapter-level failure."""
+        self.failed_chapters.append({
+            "type": "chapter_complete_failure",
+            "book": book,
+            "chapter": chapter,
+            "reason": reason,
+            "error_type": error_type,
+            "verses_attempted": verses_attempted,
+            "raw_response_file": raw_response_file,
+            "retry_command": f"python interactive_parallel_processor.py {book} {chapter}",
+            "timestamp": datetime.now().isoformat()
+        })
+
+    def add_verse_failure(self, book: str, chapter: int, verse: int, reason: str,
+                         error_type: str = "unknown"):
+        """Record a verse-level failure."""
+        self.failed_verses.append({
+            "type": "verse_failure",
+            "book": book,
+            "chapter": chapter,
+            "verse": verse,
+            "reason": reason,
+            "error_type": error_type,
+            "timestamp": datetime.now().isoformat()
+        })
+
+    def add_streaming_corruption(self, book: str, chapter: int,
+                                 corrupted_chunks: int, affected_verses: List[int]):
+        """Record streaming corruption events."""
+        self.streaming_corruptions.append({
+            "book": book,
+            "chapter": chapter,
+            "corrupted_chunks": corrupted_chunks,
+            "affected_verses": affected_verses,
+            "timestamp": datetime.now().isoformat()
+        })
+
+    def add_validation_issue(self, book: str, chapter: int,
+                            coverage_rate: float, total_instances: int,
+                            validated_instances: int):
+        """Record validation coverage issues."""
+        self.validation_issues.append({
+            "book": book,
+            "chapter": chapter,
+            "coverage_rate": coverage_rate,
+            "total_instances": total_instances,
+            "validated_instances": validated_instances,
+            "missing_count": total_instances - validated_instances,
+            "timestamp": datetime.now().isoformat()
+        })
+
+    def record_chapter_success(self, book: str, chapter: int,
+                               verses_stored: int, instances_stored: int,
+                               processing_time: float, cost: float,
+                               model_used: str):
+        """Record successful chapter processing."""
+        self.processed_chapters.append({
+            "book": book,
+            "chapter": chapter,
+            "verses_stored": verses_stored,
+            "instances_stored": instances_stored,
+            "processing_time": processing_time,
+            "cost": cost,
+            "model_used": model_used,
+            "timestamp": datetime.now().isoformat()
+        })
+        self.total_verses_processed += verses_stored
+        self.total_instances_detected += instances_stored
+        self.total_cost += cost
+
+        # Track model usage
+        self.models_used[model_used] = self.models_used.get(model_used, 0) + 1
+
+    def track_model_usage(self, model: str):
+        """Track which models were used."""
+        self.models_used[model] = self.models_used.get(model, 0) + 1
+
+    def get_failure_manifest(self) -> Dict:
+        """Generate the structured failure manifest."""
+        return {
+            "run_id": self.run_id,
+            "pipeline_version": PIPELINE_VERSION,
+            "started_at": self.started_at,
+            "completed_at": datetime.now().isoformat(),
+            "summary": {
+                "total_chapters_attempted": len(self.processed_chapters) + len(self.failed_chapters),
+                "successful_chapters": len(self.processed_chapters),
+                "failed_chapters": len(self.failed_chapters),
+                "failed_verses": len(self.failed_verses),
+                "validation_issues": len(self.validation_issues),
+                "streaming_corruptions": len(self.streaming_corruptions),
+                "total_verses_processed": self.total_verses_processed,
+                "total_instances_detected": self.total_instances_detected,
+                "total_cost": round(self.total_cost, 4),
+                "models_used": self.models_used
+            },
+            "failed_items": self.failed_chapters + self.failed_verses,
+            "validation_issues": self.validation_issues,
+            "streaming_corruptions": self.streaming_corruptions,
+            "retry_commands": [f["retry_command"] for f in self.failed_chapters]
+        }
+
+    def save_failure_manifest(self, base_filename: str) -> str:
+        """Save the failure manifest to a JSON file."""
+        manifest = self.get_failure_manifest()
+        manifest_file = f"{base_filename}_failures.json"
+        manifest_path = os.path.join(self.output_dir, manifest_file)
+
+        with open(manifest_path, 'w', encoding='utf-8') as f:
+            json.dump(manifest, f, indent=2, ensure_ascii=False)
+
+        return manifest_path
+
+    def get_processing_manifest(self) -> Dict:
+        """Generate the processing manifest for documentation."""
+        return {
+            "run_id": self.run_id,
+            "pipeline_version": PIPELINE_VERSION,
+            "started_at": self.started_at,
+            "completed_at": datetime.now().isoformat(),
+            "configuration": {
+                "book_selections": {
+                    k: "FULL_BOOK" if v == "FULL_BOOK" else list(v.keys())
+                    for k, v in self.book_selections.items()
+                },
+                "max_completion_tokens_default": MAX_COMPLETION_TOKENS_DEFAULT,
+                "max_completion_tokens_prophetic": MAX_COMPLETION_TOKENS_PROPHETIC,
+                "batched_processing_books": BATCHED_PROCESSING_BOOKS
+            },
+            "results": {
+                "total_verses_processed": self.total_verses_processed,
+                "total_instances_detected": self.total_instances_detected,
+                "detection_rate": round(self.total_instances_detected / max(1, self.total_verses_processed), 3),
+                "total_cost": round(self.total_cost, 4),
+                "models_used": self.models_used,
+                "success_rate": round(
+                    len(self.processed_chapters) /
+                    max(1, len(self.processed_chapters) + len(self.failed_chapters)) * 100,
+                    1
+                )
+            },
+            "chapters_processed": self.processed_chapters,
+            "failures_summary": {
+                "chapter_failures": len(self.failed_chapters),
+                "verse_failures": len(self.failed_verses),
+                "validation_issues": len(self.validation_issues)
+            }
+        }
+
+    def save_processing_manifest(self, base_filename: str) -> str:
+        """Save the processing manifest to a JSON file."""
+        manifest = self.get_processing_manifest()
+        manifest_file = f"{base_filename}_manifest.json"
+        manifest_path = os.path.join(self.output_dir, manifest_file)
+
+        with open(manifest_path, 'w', encoding='utf-8') as f:
+            json.dump(manifest, f, indent=2, ensure_ascii=False)
+
+        return manifest_path
+
+
+class SefariaCache:
+    """Simple file-based cache for Sefaria API responses."""
+
+    def __init__(self, cache_dir: str = ".sefaria_cache"):
+        self.cache_dir = Path(cache_dir)
+        self.cache_dir.mkdir(exist_ok=True)
+
+    def _get_cache_key(self, reference: str) -> str:
+        """Generate a cache key from a reference."""
+        return hashlib.md5(reference.encode()).hexdigest()
+
+    def _get_cache_path(self, reference: str) -> Path:
+        """Get the cache file path for a reference."""
+        return self.cache_dir / f"{self._get_cache_key(reference)}.json"
+
+    def get(self, reference: str) -> Optional[Tuple[List[Dict], Any]]:
+        """Get cached data for a reference."""
+        cache_path = self._get_cache_path(reference)
+        if cache_path.exists():
+            try:
+                with open(cache_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    return data.get('verses_data'), data.get('metadata')
+            except (json.JSONDecodeError, KeyError):
+                return None
+        return None
+
+    def set(self, reference: str, verses_data: List[Dict], metadata: Any = None):
+        """Cache data for a reference."""
+        cache_path = self._get_cache_path(reference)
+        with open(cache_path, 'w', encoding='utf-8') as f:
+            json.dump({
+                'reference': reference,
+                'verses_data': verses_data,
+                'metadata': metadata,
+                'cached_at': datetime.now().isoformat()
+            }, f, ensure_ascii=False, indent=2)
+
+    def has(self, reference: str) -> bool:
+        """Check if a reference is cached."""
+        return self._get_cache_path(reference).exists()
+
+
+def get_recommended_batches(book_name: str, total_chapters: int = None, batch_size: int = 10) -> List[Tuple[int, int]]:
+    """
+    Get recommended chapter batches for processing a book.
+
+    For large books like Jeremiah (52 chapters), returns batches of ~10 chapters
+    to reduce risk of complete run failure.
+
+    Args:
+        book_name: Name of the book
+        total_chapters: Override chapter count (uses SUPPORTED_BOOKS if None)
+        batch_size: Target chapters per batch (default 10)
+
+    Returns:
+        List of (start_chapter, end_chapter) tuples
+    """
+    if total_chapters is None:
+        total_chapters = SUPPORTED_BOOKS.get(book_name, 1)
+
+    batches = []
+    start = 1
+    while start <= total_chapters:
+        end = min(start + batch_size - 1, total_chapters)
+        batches.append((start, end))
+        start = end + 1
+
+    return batches
+
+
+def print_batch_recommendations(book_name: str):
+    """Print recommended batching strategy for a book."""
+    total_chapters = SUPPORTED_BOOKS.get(book_name, 0)
+    if total_chapters == 0:
+        print(f"Book '{book_name}' not found in supported books.")
+        return
+
+    batches = get_recommended_batches(book_name)
+    estimated_verses = VERSE_ESTIMATES.get(book_name, total_chapters * 25)
+
+    print(f"\n=== RECOMMENDED BATCHING FOR {book_name.upper()} ===")
+    print(f"Total chapters: {total_chapters}")
+    print(f"Estimated verses: ~{estimated_verses}")
+    print(f"Recommended batches: {len(batches)}")
+    print()
+
+    for i, (start, end) in enumerate(batches, 1):
+        chapters_in_batch = end - start + 1
+        estimated_batch_verses = int(estimated_verses * chapters_in_batch / total_chapters)
+        print(f"  Batch {i}: Chapters {start}-{end} ({chapters_in_batch} chapters, ~{estimated_batch_verses} verses)")
+
+    print(f"\nEstimated cost: ${len(batches) * 0.8:.2f} - ${len(batches) * 1.5:.2f}")
+    print(f"Estimated time: {len(batches) * 15}-{len(batches) * 30} minutes")
+    print()
+
 
 def has_corrupted_hebrew(text):
     """Check if Hebrew text contains corruption patterns"""
@@ -117,13 +517,10 @@ def parse_selection(input_str, max_value, selection_type="item"):
 
 def get_user_selection():
     """Get flexible book, chapter, and verse selection from user with parallel settings"""
-    books = {
-        "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-        "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-        "Proverbs": 31, "Isaiah": 66
-    }
+    # Use centralized books configuration
+    books = SUPPORTED_BOOKS
 
-    print("\n=== INTERACTIVE PARALLEL HEBREW FIGURATIVE LANGUAGE PROCESSOR ===")
+    print(f"\n=== INTERACTIVE PARALLEL HEBREW FIGURATIVE LANGUAGE PROCESSOR v{PIPELINE_VERSION} ===")
     print("Enhanced version with flexible multi-book, multi-chapter, multi-verse selection + parallel processing")
     print("\nAvailable books:")
     for i, (book, chapters) in enumerate(books.items(), 1):
@@ -556,7 +953,7 @@ def recover_missing_validations(db_manager, validator, book_name: str, chapter: 
     return stats
 
 
-def process_chapter_batched(verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger):
+def process_chapter_batched(verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger, run_context: RunContext = None):
     """Process an entire chapter in a single batched API call (GPT-5.1 MEDIUM)
 
     This approach sends all verses in ONE API call, achieving 95% token savings
@@ -570,6 +967,7 @@ def process_chapter_batched(verses_data, book_name, chapter, validator, divine_n
         divine_names_modifier: HebrewDivineNamesModifier instance
         db_manager: DatabaseManager instance
         logger: Logger instance
+        run_context: Optional RunContext for failure tracking
 
     Returns:
         Tuple of (verses_stored, instances_stored, processing_time, total_attempted, total_cost)
@@ -579,7 +977,11 @@ def process_chapter_batched(verses_data, book_name, chapter, validator, divine_n
     if not verses_data:
         return 0, 0, 0, 0, 0.0
 
+    # Use increased token limit for prophetic books (Jeremiah, Isaiah)
+    max_tokens = MAX_COMPLETION_TOKENS_PROPHETIC if book_name in BATCHED_PROCESSING_BOOKS else MAX_COMPLETION_TOKENS_DEFAULT
+
     logger.info(f"[BATCHED MODE] Processing {book_name} {chapter} with {len(verses_data)} verses in SINGLE API call")
+    logger.info(f"[BATCHED MODE] Using max_completion_tokens={max_tokens}")
 
     # Build full chapter context (Hebrew + English)
     chapter_hebrew = "\n".join([f"{v['verse']}. {v['hebrew']}" for v in verses_data])
@@ -768,10 +1170,10 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                 stream = openai_client.chat.completions.create(
                     model="gpt-5.1",
                     messages=[
-                        {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language analysis."},
+                        {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language analysis. Always return valid JSON."},
                         {"role": "user", "content": batched_prompt}
                     ],
-                    max_completion_tokens=65536,
+                    max_completion_tokens=max_tokens,  # Use dynamic token limit
                     reasoning_effort="medium",
                     stream=True  # Enable streaming to avoid truncation
                 )
@@ -848,10 +1250,10 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                         response = openai_client.chat.completions.create(
                             model="gpt-5.1",
                             messages=[
-                                {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language analysis."},
+                                {"role": "system", "content": "You are a biblical Hebrew scholar specializing in figurative language analysis. Always return valid JSON."},
                                 {"role": "user", "content": batched_prompt}
                             ],
-                            max_completion_tokens=65536,
+                            max_completion_tokens=max_tokens,  # Use dynamic token limit
                             reasoning_effort="medium",
                             stream=False
                         )
@@ -1164,20 +1566,35 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
         if not verse_results:
             raise ValueError("No verse results parsed from response")
 
-        # Validate verse structure
+        # Validate verse structure with enhanced pydantic validation
         valid_verses = []
+        schema_errors = []
         for vr in verse_results:
             if 'verse' in vr and isinstance(vr['verse'], int):
+                # Validate instances within each verse using pydantic
+                if 'instances' in vr and vr['instances']:
+                    validated_instances, instance_errors = validate_llm_response(vr['instances'], logger)
+                    if instance_errors:
+                        schema_errors.extend(instance_errors)
+                    vr['instances'] = validated_instances
                 valid_verses.append(vr)
             else:
                 logger.warning(f"Skipping invalid verse result: {vr}")
+                schema_errors.append(f"Verse missing 'verse' field: {vr}")
 
         verse_results = valid_verses
+
+        if schema_errors:
+            logger.warning(f"[SCHEMA VALIDATION] {len(schema_errors)} validation errors found")
+            for err in schema_errors[:5]:  # Log first 5 errors
+                logger.warning(f"  - {err}")
+            if len(schema_errors) > 5:
+                logger.warning(f"  ... and {len(schema_errors) - 5} more errors")
 
         if not verse_results:
             raise ValueError("No valid verse results found after filtering")
 
-        logger.info(f"After validation: {len(verse_results)} valid verses")
+        logger.info(f"After validation: {len(verse_results)} valid verses (schema errors: {len(schema_errors)})")
 
         # Calculate detection statistics
         total_instances = sum(len(vr.get('instances', [])) for vr in verse_results)
@@ -1801,12 +2218,8 @@ def main():
         book_name = sys.argv[1]
         chapter_num = int(sys.argv[2])
 
-        # Validate book name
-        valid_books = {
-            "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-            "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-            "Proverbs": 31, "Isaiah": 66
-        }
+        # Use centralized books configuration
+        valid_books = SUPPORTED_BOOKS
 
         if book_name not in valid_books:
             print(f"Error: Book '{book_name}' not supported. Valid books: {', '.join(valid_books.keys())}")
@@ -1858,29 +2271,25 @@ def main():
                 chapter_part = "full"
                 verse_part = "full"
             else:
-                chapters = list(book_selections[book_name].keys())
+                chapters = sorted(list(book_selections[book_name].keys()))
                 if len(chapters) == 1:
-                    chapter_part = str(chapters[0])
+                    chapter_part = f"ch{chapters[0]}"
                     verses = book_selections[book_name][chapters[0]]
                     if verses == 'ALL_VERSES':
                         verse_part = "all_v"
                     else:
                         verse_part = f"custom_v"
                 else:
-                    chapter_part = f"c{len(chapters)}"
-                    verse_part = "multi_v"
+                    # Use range format: ch1-10 instead of c10
+                    chapter_part = f"ch{chapters[0]}-{chapters[-1]}"
+                    verse_part = "all_v"
         else:
             # Multiple books
             book_part = f"{len(book_selections)}books"
             total_chapters = 0
             for book_name, chapters in book_selections.items():
                 if chapters == 'FULL_BOOK':
-                    books_info = {
-                        "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-                        "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-                        "Proverbs": 31, "Isaiah": 66
-                    }
-                    total_chapters += books_info.get(book_name, 25)
+                    total_chapters += SUPPORTED_BOOKS.get(book_name, 25)
                 else:
                     total_chapters += len(chapters)
             chapter_part = f"c{total_chapters}"
@@ -1901,25 +2310,16 @@ def main():
         log_file = f"{base_filename}_log.txt"
         json_file = f"{base_filename}_results.json"
 
-    # Create summary of what will be processed
-    books_info = {
-        "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-        "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-        "Proverbs": 31, "Isaiah": 66
-    }
+    # Create summary of what will be processed (use centralized configs)
+    books_info = SUPPORTED_BOOKS
 
     total_tasks = 0
     summary_lines = []
 
     for book_name, chapters in book_selections.items():
         if chapters == 'FULL_BOOK':
-            # Estimate verses for full book (approximate)
-            verse_estimates = {
-                "Genesis": 1533, "Exodus": 1213, "Leviticus": 859,
-                "Numbers": 1288, "Deuteronomy": 959, "Psalms": 2461,
-                "Proverbs": 915, "Isaiah": 1292
-            }
-            estimated_verses = verse_estimates.get(book_name, 1000)  # Default estimate
+            # Use centralized verse estimates
+            estimated_verses = VERSE_ESTIMATES.get(book_name, 1000)  # Default estimate
             total_tasks += estimated_verses
             summary_lines.append(f"  {book_name}: FULL BOOK (~{estimated_verses} verses)")
         else:
@@ -1962,8 +2362,13 @@ def main():
     else:
         logger.warning(f"Warning: .env file not found at {dotenv_path}")
 
-    # Log processing summary
+    # Initialize run context for tracking
+    run_context = RunContext(book_selections, output_dir=os.path.dirname(db_name) if db_name else ".")
+
+    # Log processing summary with run ID
     logger.info(f"=== MULTI-BOOK PARALLEL PROCESSING STARTED ===")
+    logger.info(f"Run ID: {run_context.run_id}")
+    logger.info(f"Pipeline Version: {PIPELINE_VERSION}")
     logger.info(f"Total books: {len(book_selections)}")
     logger.info(f"Estimated verses: ~{total_tasks}")
     logger.info(f"Workers: {max_workers}")
@@ -1974,6 +2379,9 @@ def main():
             logger.info(f"Book: {book_name} - Chapters: {list(chapters.keys())}")
 
     start_time = time.time()
+
+    # Initialize Sefaria cache for faster reruns
+    sefaria_cache = SefariaCache()
 
     try:
         api_key = os.environ.get("GEMINI_API_KEY")
@@ -1987,6 +2395,28 @@ def main():
         db_manager = DatabaseManager(db_name)
         db_manager.connect()
         db_manager.setup_database()
+
+        # Add processing_runs table for tracking
+        db_manager.cursor.execute("""
+            CREATE TABLE IF NOT EXISTS processing_runs (
+                id INTEGER PRIMARY KEY,
+                run_id TEXT,
+                book TEXT,
+                chapter_start INTEGER,
+                chapter_end INTEGER,
+                started_at TEXT,
+                completed_at TEXT,
+                model_used TEXT,
+                reasoning_effort TEXT,
+                verses_processed INTEGER,
+                instances_detected INTEGER,
+                validation_coverage_rate REAL,
+                estimated_cost REAL,
+                failures_count INTEGER,
+                pipeline_version TEXT
+            )
+        """)
+        db_manager.commit()
 
         logger.info("Initializing MetaphorValidator with GPT-5.1 MEDIUM...")
         # MetaphorValidator now uses OpenAI GPT-5.1, not Gemini
@@ -2007,20 +2437,25 @@ def main():
             logger.info(f"\n=== PROCESSING BOOK: {book_name.upper()} ===")
 
             if chapters == 'FULL_BOOK':
-                # Process entire book - all chapters, all verses
-                books_info = {
-                    "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-                    "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-                    "Proverbs": 31, "Isaiah": 66
-                }
-                max_chapters = books_info[book_name]
+                # Use centralized config
+                max_chapters = SUPPORTED_BOOKS[book_name]
                 logger.info(f"Processing full book: all {max_chapters} chapters with all verses")
 
                 for chapter in range(1, max_chapters + 1):
                     logger.info(f"--- PROCESSING: {book_name} {chapter} (FULL BOOK) ---")
 
-                    # Fetch all verses for the chapter
-                    verses_data, _ = sefaria.extract_hebrew_text(f"{book_name}.{chapter}")
+                    # Fetch all verses for the chapter (with caching)
+                    reference = f"{book_name}.{chapter}"
+                    cached = sefaria_cache.get(reference)
+                    if cached and cached[0]:
+                        verses_data = cached[0]
+                        logger.info(f"Using cached Sefaria data for {reference}")
+                    else:
+                        verses_data, _ = sefaria.extract_hebrew_text(reference)
+                        if verses_data:
+                            sefaria_cache.set(reference, verses_data)
+                            logger.debug(f"Cached Sefaria data for {reference}")
+
                     if not verses_data:
                         logger.error(f"Failed to get text for {book_name} {chapter}")
                         failed_chapters.append({
@@ -2029,16 +2464,21 @@ def main():
                             'verses_attempted': 0,
                             'reason': 'Sefaria API failed to return text'
                         })
+                        run_context.add_chapter_failure(
+                            book_name, chapter,
+                            'Sefaria API failed to return text',
+                            error_type='sefaria_api_failure'
+                        )
                         continue
 
                     logger.info(f"Processing all {len(verses_data)} verses from {book_name} {chapter}")
 
-                    # Use BATCHED processing for Proverbs and Isaiah (GPT-5.1 MEDIUM)
-                    if book_name in ["Proverbs", "Isaiah"]:
+                    # Use BATCHED processing for prophetic/wisdom books
+                    if book_name in BATCHED_PROCESSING_BOOKS:
                         logger.info(f"[BATCHED MODE ENABLED] Using GPT-5.1 MEDIUM for {book_name} {chapter}")
 
                         v, i, processing_time, total_attempted, chapter_cost = process_chapter_batched(
-                            verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger
+                            verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger, run_context
                         )
 
                         total_verses += v
@@ -2056,7 +2496,20 @@ def main():
                                 'verses_attempted': total_attempted,
                                 'reason': 'Batched processing returned 0 verses (likely JSON parsing failure)'
                             })
+                            run_context.add_chapter_failure(
+                                book_name, chapter,
+                                'Batched processing returned 0 verses (likely JSON parsing failure)',
+                                verses_attempted=total_attempted,
+                                error_type='json_parsing_failure'
+                            )
                             logger.error(f"CHAPTER FAILED: {book_name} {chapter} - 0 verses stored from {total_attempted} attempted")
+                        else:
+                            # Record success
+                            run_context.record_chapter_success(
+                                book_name, chapter, v, i,
+                                processing_time, chapter_cost,
+                                'gpt-5.1-medium-batched'
+                            )
 
                         db_manager.commit()
                     else:
@@ -2120,7 +2573,7 @@ def main():
                             logger.info(f"Processing all {len(verses_to_process)} verses from {book_name} {chapter}")
 
                     # Use BATCHED processing for Proverbs and Isaiah (GPT-5.1 MEDIUM)
-                    if book_name in ["Proverbs", "Isaiah"]:
+                    if book_name in ["Proverbs", "Isaiah", "Jeremiah"]:
                         logger.info(f"[BATCHED MODE ENABLED] Using GPT-5.1 MEDIUM for {book_name} {chapter}")
 
                         v, i, processing_time, total_attempted, chapter_cost = process_chapter_batched(
@@ -2196,12 +2649,7 @@ def main():
 
             for book_name, chapters in book_selections.items():
                 if chapters == 'FULL_BOOK':
-                    books_info = {
-                        "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-                        "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-                        "Proverbs": 31, "Isaiah": 66
-                    }
-                    max_chapters = books_info[book_name]
+                    max_chapters = SUPPORTED_BOOKS[book_name]
                     chapters_to_check = range(1, max_chapters + 1)
                 else:
                     chapters_to_check = chapters.keys()
@@ -2302,8 +2750,10 @@ def main():
         else:
             print(f"\nAll chapters processed successfully!")
 
-        # Save basic results summary
+        # Save basic results summary (enhanced with run context)
         summary = {
+            'run_id': run_context.run_id,
+            'pipeline_version': PIPELINE_VERSION,
             'processing_info': {
                 'books_processed': len(book_selections),
                 'book_selections': {k: 'FULL_BOOK' if v == 'FULL_BOOK' else list(v.keys()) for k, v in book_selections.items()},
@@ -2324,11 +2774,56 @@ def main():
 
         print(f"Summary saved: {json_file}")
 
+        # Save failure manifest (always save, even if no failures, for documentation)
+        failure_manifest_path = run_context.save_failure_manifest(base_filename)
+        print(f"Failure manifest saved: {failure_manifest_path}")
+        logger.info(f"Failure manifest saved: {failure_manifest_path}")
+
+        # Save processing manifest for documentation
+        processing_manifest_path = run_context.save_processing_manifest(base_filename)
+        print(f"Processing manifest saved: {processing_manifest_path}")
+        logger.info(f"Processing manifest saved: {processing_manifest_path}")
+
+        # Record processing run in database
+        try:
+            db_manager.cursor.execute("""
+                INSERT INTO processing_runs (
+                    run_id, book, chapter_start, chapter_end,
+                    started_at, completed_at, model_used, reasoning_effort,
+                    verses_processed, instances_detected, validation_coverage_rate,
+                    estimated_cost, failures_count, pipeline_version
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """, (
+                run_context.run_id,
+                list(book_selections.keys())[0] if len(book_selections) == 1 else 'multiple',
+                min([c for book_chapters in book_selections.values()
+                     for c in (range(1, SUPPORTED_BOOKS.get(book, 1) + 1) if book_chapters == 'FULL_BOOK' else book_chapters.keys())
+                     for book in book_selections.keys()], default=1),
+                max([c for book_chapters in book_selections.values()
+                     for c in (range(1, SUPPORTED_BOOKS.get(book, 1) + 1) if book_chapters == 'FULL_BOOK' else book_chapters.keys())
+                     for book in book_selections.keys()], default=1),
+                run_context.started_at,
+                datetime.now().isoformat(),
+                'gpt-5.1-medium-batched',
+                'medium',
+                total_verses,
+                total_instances,
+                100.0 if not validation_issues else (100.0 - len(validation_issues) * 5),  # Rough estimate
+                run_context.total_cost,
+                len(failed_chapters),
+                PIPELINE_VERSION
+            ))
+            db_manager.commit()
+            logger.info(f"Processing run recorded in database with run_id: {run_context.run_id}")
+        except Exception as db_error:
+            logger.warning(f"Could not record processing run in database: {db_error}")
+
         # Close database connection
         if db_manager:
             db_manager.close()
 
         logger.info(f"=== PARALLEL PROCESSING COMPLETE ===")
+        logger.info(f"Run ID: {run_context.run_id}")
         logger.info(f"Final stats: {total_instances} instances from {total_verses} verses")
 
     except Exception as e:
