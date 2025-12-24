@@ -1907,6 +1907,9 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
             hebrew_stripped = HebrewTextProcessor.strip_diacritics(original_verse['hebrew'])
             hebrew_non_sacred = divine_names_modifier.modify_divine_names(original_verse['hebrew'])
             english_non_sacred = divine_names_modifier.modify_english_with_hebrew_terms(original_verse['english'])
+            # english_text_clean is the same as english from Sefaria (already has footnotes removed)
+            english_text_clean = original_verse['english']
+            english_text_clean_non_sacred = divine_names_modifier.modify_english_with_hebrew_terms(english_text_clean)
 
             # Apply divine names modification to deliberation if present
             verse_specific_deliberation_non_sacred = divine_names_modifier.modify_english_with_hebrew_terms(verse_specific_deliberation) if verse_specific_deliberation else None
@@ -1924,6 +1927,8 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                 'hebrew_stripped': hebrew_stripped,
                 'hebrew_text_non_sacred': hebrew_non_sacred,  # Fixed: Match db_manager field name
                 'english': original_verse['english'],
+                'english_text_clean': english_text_clean,  # Clean English text (footnotes removed by Sefaria)
+                'english_text_clean_non_sacred': english_text_clean_non_sacred,  # Clean English with divine names modified
                 'english_text_non_sacred': english_non_sacred,  # Fixed: Match db_manager field name
                 'word_count': word_count,
                 'instances_detected': len(instances),
@@ -1946,6 +1951,10 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
 
             for j, instance in enumerate(instances):
                 # Prepare instance data for database
+                # Get figurative text and apply divine names transformation
+                figurative_text = instance.get('english_text', '')
+                figurative_text_non_sacred = divine_names_modifier.modify_english_with_hebrew_terms(figurative_text) if figurative_text else ''
+
                 figurative_data = {
                     'figurative_language': instance.get('figurative_language', 'no'),
                     'simile': instance.get('simile', 'no'),
@@ -1956,7 +1965,8 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                     'metonymy': instance.get('metonymy', 'no'),
                     'other': instance.get('other', 'no'),
                     'confidence': instance.get('confidence', 0.5),
-                    'figurative_text': instance.get('english_text', ''),
+                    'figurative_text': figurative_text,
+                    'figurative_text_non_sacred': figurative_text_non_sacred,  # English figurative text with divine names modified
                     'figurative_text_in_hebrew': instance.get('hebrew_text', ''),
                     'figurative_text_in_hebrew_stripped': HebrewTextProcessor.strip_diacritics(instance.get('hebrew_text', '')),
                     'figurative_text_in_hebrew_non_sacred': divine_names_modifier.modify_divine_names(instance.get('hebrew_text', '')),

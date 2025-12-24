@@ -53,6 +53,8 @@ class DatabaseManager:
                 hebrew_text_stripped TEXT,
                 hebrew_text_non_sacred TEXT,  -- Hebrew text with divine names modified for traditional Jews
                 english_text TEXT NOT NULL,
+                english_text_clean TEXT,  -- English text with footnotes removed
+                english_text_clean_non_sacred TEXT,  -- Clean English text with Hebrew divine names modified
                 english_text_non_sacred TEXT,  -- English text with Hebrew divine names modified for traditional Jews
                 word_count INTEGER,
                 llm_restriction_error TEXT,
@@ -95,6 +97,7 @@ class DatabaseManager:
                 posture TEXT,  -- Hierarchical tag array as JSON
                 confidence REAL NOT NULL CHECK(confidence >= 0.0 AND confidence <= 1.0),
                 figurative_text TEXT,
+                figurative_text_non_sacred TEXT,  -- English figurative text with divine names modified
                 figurative_text_in_hebrew TEXT,
                 figurative_text_in_hebrew_stripped TEXT,
                 figurative_text_in_hebrew_non_sacred TEXT,  -- Hebrew figurative text with divine names modified
@@ -156,8 +159,8 @@ class DatabaseManager:
     def insert_verse(self, verse_data: Dict) -> int:
         """Insert verse and return verse_id"""
         self.cursor.execute('''
-            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, hebrew_text_non_sacred, english_text, english_text_non_sacred, word_count, llm_restriction_error, figurative_detection_deliberation, figurative_detection_deliberation_non_sacred, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred, both_models_truncated, model_used)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, hebrew_text_non_sacred, english_text, english_text_clean, english_text_clean_non_sacred, english_text_non_sacred, word_count, llm_restriction_error, figurative_detection_deliberation, figurative_detection_deliberation_non_sacred, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred, both_models_truncated, model_used)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             verse_data['reference'],
             verse_data['book'],
@@ -167,6 +170,8 @@ class DatabaseManager:
             verse_data.get('hebrew_stripped'),
             verse_data.get('hebrew_text_non_sacred'),
             verse_data['english'],
+            verse_data.get('english_text_clean'),  # Clean English text (footnotes removed)
+            verse_data.get('english_text_clean_non_sacred'),  # Clean English with divine names modified
             verse_data.get('english_text_non_sacred'),
             verse_data['word_count'],
             verse_data.get('llm_restriction_error'),
@@ -194,10 +199,10 @@ class DatabaseManager:
                  final_figurative_language, final_simile, final_metaphor, final_personification, final_idiom,
                  final_hyperbole, final_metonymy, final_other,
                  target, vehicle, ground, posture,
-                 confidence, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped, figurative_text_in_hebrew_non_sacred,
+                 confidence, figurative_text, figurative_text_non_sacred, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped, figurative_text_in_hebrew_non_sacred,
                  explanation, speaker, purpose,
                  tagging_analysis_deliberation, model_used)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (
                 verse_id,
                 sanitized_data.get('figurative_language', 'no'),
@@ -222,6 +227,7 @@ class DatabaseManager:
                 sanitized_data.get('posture', '[]'),  # Hierarchical JSON array
                 sanitized_data['confidence'],
                 sanitized_data.get('figurative_text'),
+                sanitized_data.get('figurative_text_non_sacred'),  # English figurative text with divine names modified
                 sanitized_data.get('figurative_text_in_hebrew'),
                 sanitized_data.get('figurative_text_in_hebrew_stripped'),
                 sanitized_data.get('figurative_text_in_hebrew_non_sacred'),
@@ -253,10 +259,10 @@ class DatabaseManager:
                          final_figurative_language, final_simile, final_metaphor, final_personification, final_idiom,
                          final_hyperbole, final_metonymy, final_other,
                          target, vehicle, ground, posture,
-                         confidence, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped, figurative_text_in_hebrew_non_sacred,
+                         confidence, figurative_text, figurative_text_non_sacred, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped, figurative_text_in_hebrew_non_sacred,
                          explanation, speaker, purpose,
                          tagging_analysis_deliberation, model_used)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     ''', (
                         verse_id,
                         minimal_data.get('figurative_language', 'no'),
@@ -281,6 +287,7 @@ class DatabaseManager:
                         '[]',  # posture
                         minimal_data['confidence'],
                         minimal_data.get('figurative_text', ''),
+                        minimal_data.get('figurative_text_non_sacred', ''),  # English figurative text with divine names modified
                         minimal_data.get('figurative_text_in_hebrew', ''),
                         minimal_data.get('figurative_text_in_hebrew_stripped', ''),
                         minimal_data.get('figurative_text_in_hebrew_non_sacred', ''),
@@ -349,6 +356,7 @@ class DatabaseManager:
             'final_other': 'no',
             'confidence': 0.0,
             'figurative_text': '',
+            'figurative_text_non_sacred': '',
             'figurative_text_in_hebrew': '',
             'figurative_text_in_hebrew_stripped': '',
             'figurative_text_in_hebrew_non_sacred': '',
@@ -717,6 +725,8 @@ class DatabaseManager:
                     verse_data.get('hebrew_stripped'),
                     verse_data.get('hebrew_text_non_sacred'),
                     verse_data['english'],
+                    verse_data.get('english_text_clean'),
+                    verse_data.get('english_text_clean_non_sacred'),
                     verse_data.get('english_text_non_sacred'),
                     verse_data['word_count'],
                     verse_data.get('llm_restriction_error'),
@@ -731,8 +741,8 @@ class DatabaseManager:
                 ))
 
             self.cursor.executemany('''
-                INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, hebrew_text_non_sacred, english_text, english_text_non_sacred, word_count, llm_restriction_error, figurative_detection_deliberation, figurative_detection_deliberation_non_sacred, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred, both_models_truncated, model_used)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO verses (reference, book, chapter, verse, hebrew_text, hebrew_text_stripped, hebrew_text_non_sacred, english_text, english_text_clean, english_text_clean_non_sacred, english_text_non_sacred, word_count, llm_restriction_error, figurative_detection_deliberation, figurative_detection_deliberation_non_sacred, instances_detected, instances_recovered, instances_lost_to_truncation, truncation_occurred, both_models_truncated, model_used)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', verse_tuples)
 
             # Get the IDs of inserted verses
@@ -785,8 +795,10 @@ class DatabaseManager:
                     figurative_data.get('posture', '[]'),
                     figurative_data['confidence'],
                     figurative_data.get('figurative_text'),
+                    figurative_data.get('figurative_text_non_sacred'),
                     figurative_data.get('figurative_text_in_hebrew'),
                     figurative_data.get('figurative_text_in_hebrew_stripped'),
+                    figurative_data.get('figurative_text_in_hebrew_non_sacred'),
                     figurative_data.get('explanation'),
                     figurative_data.get('speaker'),
                     figurative_data.get('purpose'),
@@ -800,10 +812,10 @@ class DatabaseManager:
                  final_figurative_language, final_simile, final_metaphor, final_personification, final_idiom,
                  final_hyperbole, final_metonymy, final_other,
                  target, vehicle, ground, posture,
-                 confidence, figurative_text, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped,
+                 confidence, figurative_text, figurative_text_non_sacred, figurative_text_in_hebrew, figurative_text_in_hebrew_stripped, figurative_text_in_hebrew_non_sacred,
                  explanation, speaker, purpose,
                  tagging_analysis_deliberation, model_used)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', instance_tuples)
 
             # Get the IDs of inserted instances
