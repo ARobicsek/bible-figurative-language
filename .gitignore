@@ -41,6 +41,9 @@ test_*.db
 # JSON processing files
 *_results.json
 *_processing_summary_*.json
+*_failures.json
+*_manifest.json
+debug/debug_response_*.json
 
 # Personal documents
 Documents/
