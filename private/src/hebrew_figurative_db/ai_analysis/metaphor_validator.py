@@ -150,7 +150,8 @@ class MetaphorValidator:
 
     def _attempt_standard_validation(self, instances: List[Dict]) -> List[Dict]:
         """Attempt standard validation with the original method."""
-        return self.validate_chapter_instances(instances)
+        results, _ = self.validate_chapter_instances(instances)  # Ignore cost metadata in retry logic
+        return results
 
     def _attempt_simplified_validation(self, instances: List[Dict]) -> List[Dict]:
         """Attempt validation with a simplified prompt that's easier to parse."""
@@ -281,10 +282,14 @@ For each instance, return:
 
         return False
 
-    def validate_chapter_instances(self, chapter_instances: List[Dict]) -> List[Dict]:
-        """Validate all instances from all verses in a chapter with one API call using GPT-5.1 MEDIUM."""
+    def validate_chapter_instances(self, chapter_instances: List[Dict]) -> Tuple[List[Dict], Dict]:
+        """Validate all instances from all verses in a chapter with one API call using GPT-5.1 MEDIUM.
+
+        Returns:
+            Tuple of (validation_results, cost_metadata)
+        """
         if not chapter_instances:
-            return []
+            return [], {'cost': 0, 'input_tokens': 0, 'output_tokens': 0, 'reasoning_tokens': 0}
 
         # Add a temporary unique ID to each instance for correlation
         for i, instance in enumerate(chapter_instances):
@@ -308,30 +313,34 @@ For each instance, return:
             )
             self.validation_count += 1
 
+            # Extract cost metadata from response
+            cost_metadata = self._extract_cost_metadata(response)
+
             if response.choices and response.choices[0].message.content:
                 response_text = response.choices[0].message.content
                 if self.logger:
                     self.logger.debug(f"Chapter validation response length: {len(response_text)} characters")
                     self.logger.debug(f"Response preview: {response_text[:200]}...{response_text[-200:] if len(response_text) > 400 else response_text[-200:]}")
+                    self.logger.debug(f"Validation cost: ${cost_metadata['cost']:.4f} ({cost_metadata['input_tokens']} in, {cost_metadata['output_tokens']} out)")
 
                 # Enhanced JSON extraction with multiple fallback strategies
                 validation_results = self._extract_json_with_fallbacks(response_text, "chapter validation")
                 if validation_results is not None:
                     self.validation_success_count += 1
                     if self.logger:
-                        self.logger.info(f"[CHAPTER VALIDATION] SUCCESS: Validated {len(validation_results)} instances")
-                    return validation_results
+                        self.logger.info(f"[CHAPTER VALIDATION] SUCCESS: Validated {len(validation_results)} instances (Cost: ${cost_metadata['cost']:.4f})")
+                    return validation_results, cost_metadata
                 else:
                     # All extraction strategies failed
                     self.validation_failure_count += 1
                     if self.logger:
                         self.logger.error("[CHAPTER VALIDATION] FAILED: All JSON extraction strategies failed")
                         self.logger.error(f"Raw response: {response_text}")
-                    return []
+                    return [], cost_metadata
             else:
                 if self.logger:
                     self.logger.error("Empty response from chapter validation API call.")
-                return []
+                return [], cost_metadata
 
         except Exception as e:
             # Enhanced error handling with detailed context and structured error results
@@ -369,18 +378,21 @@ For each instance, return:
                 import traceback
                 self.logger.error(f"Full traceback: {traceback.format_exc()}")
 
-            # Return structured error results instead of empty list
-            # This allows the calling code to detect and handle validation failures
+            # Return structured error results with zero cost
             return [{
                 'error': error_details,
                 'fallback_validation': 'FAILED',
                 'validation_results': {}
-            }]
+            }], {'cost': 0, 'input_tokens': 0, 'output_tokens': 0, 'reasoning_tokens': 0}
 
-    def validate_verse_instances(self, instances: List[Dict], hebrew_text: str, english_text: str) -> List[Dict]:
-        """Validate all instances found in a single verse with one API call using GPT-5.1 MEDIUM."""
+    def validate_verse_instances(self, instances: List[Dict], hebrew_text: str, english_text: str) -> Tuple[List[Dict], Dict]:
+        """Validate all instances found in a single verse with one API call using GPT-5.1 MEDIUM.
+
+        Returns:
+            Tuple of (validation_results, cost_metadata)
+        """
         if not instances:
-            return []
+            return [], {'cost': 0, 'input_tokens': 0, 'output_tokens': 0, 'reasoning_tokens': 0}
 
         # Add a temporary unique ID to each instance for correlation
         for i, instance in enumerate(instances):
@@ -400,29 +412,33 @@ For each instance, return:
             )
             self.validation_count += 1
 
+            # Extract cost metadata from response
+            cost_metadata = self._extract_cost_metadata(response)
+
             if response.choices and response.choices[0].message.content:
                 response_text = response.choices[0].message.content
                 if self.logger:
                     self.logger.debug(f"Bulk validation response length: {len(response_text)} characters")
+                    self.logger.debug(f"Verse validation cost: ${cost_metadata['cost']:.4f}")
 
                 # Enhanced JSON extraction with multiple fallback strategies
                 validation_results = self._extract_json_with_fallbacks(response_text, "bulk validation")
                 if validation_results is not None:
-                    return validation_results
+                    return validation_results, cost_metadata
                 else:
                     # All extraction strategies failed
                     if self.logger:
                         self.logger.error("All JSON extraction strategies failed for bulk validation")
-                    return []
+                    return [], cost_metadata
             else:
                 if self.logger:
                     self.logger.error("Empty response from bulk validation API call.")
-                return []
+                return [], cost_metadata
 
         except Exception as e:
             if self.logger:
                 self.logger.error(f"API error during bulk validation: {e}")
-            return []
+            return [], {'cost': 0, 'input_tokens': 0, 'output_tokens': 0, 'reasoning_tokens': 0}
 
     def _create_chapter_validation_prompt(self, chapter_instances: List[Dict]) -> str:
         """Create a prompt to validate all instances from all verses in a chapter in a single call."""
@@ -1472,6 +1488,36 @@ VALIDATION:"""
             self.logger.error(f"Response preview: {response_text[:500]}...{response_text[-500:] if len(response_text) > 1000 else response_text[-500:]}")
 
         return None
+
+    def _extract_cost_metadata(self, response) -> Dict:
+        """Extract cost metadata from OpenAI API response.
+
+        Args:
+            response: OpenAI API response object
+
+        Returns:
+            Dict with cost, input_tokens, output_tokens, reasoning_tokens
+        """
+        cost_metadata = {
+            'input_tokens': 0,
+            'output_tokens': 0,
+            'reasoning_tokens': 0,
+            'cost': 0.0
+        }
+
+        if hasattr(response, 'usage'):
+            usage = response.usage
+            cost_metadata['input_tokens'] = getattr(usage, 'prompt_tokens', 0)
+            cost_metadata['output_tokens'] = getattr(usage, 'completion_tokens', 0)
+            cost_metadata['reasoning_tokens'] = getattr(usage, 'reasoning_tokens', 0)
+
+            # GPT-5.1 pricing: $1.25/M input + $10.00/M output
+            cost_metadata['cost'] = (
+                cost_metadata['input_tokens'] / 1_000_000 * 1.25 +
+                cost_metadata['output_tokens'] / 1_000_000 * 10.0
+            )
+
+        return cost_metadata
 
     def get_validation_stats(self) -> Dict:
         """Get comprehensive validation statistics"""
