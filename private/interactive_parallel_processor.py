@@ -2617,7 +2617,20 @@ def main():
                                 'verses_attempted': total_attempted,
                                 'reason': 'Batched processing returned 0 verses (likely JSON parsing failure)'
                             })
+                            run_context.add_chapter_failure(
+                                book_name, chapter,
+                                'Batched processing returned 0 verses (likely JSON parsing failure)',
+                                verses_attempted=total_attempted,
+                                error_type='json_parsing_failure'
+                            )
                             logger.error(f"CHAPTER FAILED: {book_name} {chapter} - 0 verses stored from {total_attempted} attempted")
+                        else:
+                            # Record success with cost tracking
+                            run_context.record_chapter_success(
+                                book_name, chapter, v, i,
+                                processing_time, chapter_cost,
+                                'gpt-5.1-medium-batched'
+                            )
 
                         db_manager.commit()
                     else:
