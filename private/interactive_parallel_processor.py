@@ -29,10 +29,39 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 PIPELINE_VERSION = "2.2.0"  # Added chapter-level parallelization + all books use batched mode
 
 # Books configuration - centralized definition
-SUPPORTED_BOOKS = {
+# Torah (Pentateuch)
+TORAH_BOOKS = {
     "Genesis": 50, "Exodus": 40, "Leviticus": 27,
-    "Numbers": 36, "Deuteronomy": 34, "Psalms": 150,
-    "Proverbs": 31, "Isaiah": 66, "Jeremiah": 52
+    "Numbers": 36, "Deuteronomy": 34
+}
+# Ketuvim (Writings)
+KETUVIM_BOOKS = {
+    "Psalms": 150, "Proverbs": 31
+}
+# Former Prophets (Nevi'im Rishonim)
+FORMER_PROPHETS = {
+    "Joshua": 24, "Judges": 21,
+    "1_Samuel": 31, "2_Samuel": 24,
+    "1_Kings": 22, "2_Kings": 25
+}
+# Latter Prophets (Nevi'im Acharonim) - Major
+MAJOR_PROPHETS = {
+    "Isaiah": 66, "Jeremiah": 52, "Ezekiel": 48
+}
+# Latter Prophets (Nevi'im Acharonim) - The Twelve (Minor Prophets)
+MINOR_PROPHETS = {
+    "Hosea": 14, "Joel": 3, "Amos": 9, "Obadiah": 1,
+    "Jonah": 4, "Micah": 7, "Nahum": 3, "Habakkuk": 3,
+    "Zephaniah": 3, "Haggai": 2, "Zechariah": 14, "Malachi": 4
+}
+
+# All supported books
+SUPPORTED_BOOKS = {
+    **TORAH_BOOKS,
+    **KETUVIM_BOOKS,
+    **FORMER_PROPHETS,
+    **MAJOR_PROPHETS,
+    **MINOR_PROPHETS
 }
 
 # Books that use batched processing - NOW ALL BOOKS use chapter-level batching
@@ -41,9 +70,21 @@ BATCHED_PROCESSING_BOOKS = list(SUPPORTED_BOOKS.keys())  # All supported books
 
 # Verse count estimates for progress reporting
 VERSE_ESTIMATES = {
+    # Torah (Pentateuch)
     "Genesis": 1533, "Exodus": 1213, "Leviticus": 859,
-    "Numbers": 1288, "Deuteronomy": 959, "Psalms": 2461,
-    "Proverbs": 915, "Isaiah": 1292, "Jeremiah": 1364
+    "Numbers": 1288, "Deuteronomy": 959,
+    # Ketuvim (Writings)
+    "Psalms": 2461, "Proverbs": 915,
+    # Former Prophets
+    "Joshua": 658, "Judges": 618,
+    "1_Samuel": 810, "2_Samuel": 695,
+    "1_Kings": 816, "2_Kings": 719,
+    # Major Prophets
+    "Isaiah": 1292, "Jeremiah": 1364, "Ezekiel": 1273,
+    # Minor Prophets (The Twelve)
+    "Hosea": 197, "Joel": 73, "Amos": 146, "Obadiah": 21,
+    "Jonah": 48, "Micah": 105, "Nahum": 47, "Habakkuk": 56,
+    "Zephaniah": 53, "Haggai": 38, "Zechariah": 211, "Malachi": 55
 }
 
 # Token limits - increased for prophetic books with longer chapters
@@ -995,7 +1036,7 @@ _db_lock = threading.Lock()
 
 
 def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divine_names_modifier,
-                                 db_manager, logger, run_context: RunContext = None) -> Dict:
+                                 db_path: str, logger, run_context: RunContext = None) -> Dict:
     """
     Process a single chapter - designed to be called from ThreadPoolExecutor.
 
@@ -1005,12 +1046,16 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
     - Thread-safe database commits using a lock
     - Error handling and result aggregation
 
+    Each worker thread creates its own DatabaseManager instance to avoid SQLite threading issues.
+    SQLite prohibits sharing connection objects across threads, but multiple connections
+    to the same database file are safe due to SQLite's internal file locking.
+
     Args:
         task_data: Dict with 'book', 'chapter', 'verses' (optional filter)
         sefaria_cache: SefariaCache instance
         validator: MetaphorValidator instance
         divine_names_modifier: HebrewDivineNamesModifier instance
-        db_manager: DatabaseManager instance
+        db_path: Path to the database file (each worker creates its own connection)
         logger: Logger instance
         run_context: Optional RunContext for failure tracking
 
@@ -1035,6 +1080,12 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
     }
 
     start_time = time.time()
+
+    # Create thread-local DatabaseManager instance to avoid SQLite threading issues
+    # SQLite prohibits sharing connection objects across threads
+    db_manager = DatabaseManager(db_path)
+    db_manager.connect()
+    db_manager.setup_database(drop_existing=False)
 
     try:
         logger.info(f"[Worker {worker_id}] Starting {book_name} {chapter}")
@@ -1065,14 +1116,16 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
 
         logger.info(f"[Worker {worker_id}] Processing {len(verses_data)} verses from {book_name} {chapter}")
 
-        # Process chapter using batched mode
-        # Use lock for database operations within process_chapter_batched
+        # Process chapter using batched mode WITHOUT holding the lock during API calls
+        # This allows multiple workers to make API calls in parallel
+        # Database inserts inside process_chapter_batched() are protected by db_lock
         v, i, proc_time, total_attempted, chapter_cost = process_chapter_batched(
             verses_data, book_name, chapter, validator, divine_names_modifier,
             db_manager, logger, run_context, db_lock=_db_lock
         )
 
-        # Thread-safe commit
+        # Commit changes for this thread's database connection with lock protection
+        # Only the commit is serialized, not the entire API call
         with _db_lock:
             db_manager.commit()
 
@@ -1111,6 +1164,9 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
                 book_name, chapter, str(e),
                 error_type='exception'
             )
+    finally:
+        # Always close this thread's database connection
+        db_manager.close()
 
     return result
 
@@ -1124,13 +1180,15 @@ def process_chapters_parallel(chapter_tasks: List[Dict], sefaria_cache, sefaria_
     Each chapter is processed in a single API call (batched mode), so this achieves
     both the cost savings of batched processing AND the speed of parallelization.
 
+    Each worker thread creates its own DatabaseManager instance to avoid SQLite threading issues.
+
     Args:
         chapter_tasks: List of dicts with 'book', 'chapter', optional 'verses'
         sefaria_cache: SefariaCache instance for caching Sefaria responses
         sefaria_client: SefariaClient instance for fetching text
         validator: MetaphorValidator instance
         divine_names_modifier: HebrewDivineNamesModifier instance
-        db_manager: DatabaseManager instance
+        db_manager: DatabaseManager instance (used to get db_path for workers)
         logger: Logger instance
         max_workers: Maximum number of parallel chapter processors
         run_context: Optional RunContext for tracking
@@ -1152,6 +1210,9 @@ def process_chapters_parallel(chapter_tasks: List[Dict], sefaria_cache, sefaria_
     if not chapter_tasks:
         return total_results
 
+    # Get database path to pass to workers (each worker creates its own DatabaseManager)
+    db_path = db_manager.db_path
+
     logger.info(f"[PARALLEL CHAPTERS] Starting parallel processing of {len(chapter_tasks)} chapters with {max_workers} workers")
 
     start_time = time.time()
@@ -1163,11 +1224,12 @@ def process_chapters_parallel(chapter_tasks: List[Dict], sefaria_cache, sefaria_
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
         # Submit all chapter processing tasks
+        # Pass db_path instead of db_manager so each worker creates its own DatabaseManager
         future_to_task = {
             executor.submit(
                 process_single_chapter_task,
                 task, sefaria_cache, validator, divine_names_modifier,
-                db_manager, logger, run_context
+                db_path, logger, run_context
             ): task
             for task in chapter_tasks
         }
@@ -1237,8 +1299,17 @@ def process_chapter_batched(verses_data, book_name, chapter, validator, divine_n
     if not verses_data:
         return 0, 0, 0, 0, 0.0
 
-    # Use increased token limit for prophetic books (Jeremiah, Isaiah) which have longer chapters
-    PROPHETIC_BOOKS = ["Isaiah", "Jeremiah"]
+    # Use increased token limit for prophetic books which have longer chapters
+    # Includes Former Prophets and Latter Prophets (Major and Minor)
+    PROPHETIC_BOOKS = [
+        # Former Prophets
+        "Joshua", "Judges", "1_Samuel", "2_Samuel", "1_Kings", "2_Kings",
+        # Latter Prophets - Major
+        "Isaiah", "Jeremiah", "Ezekiel",
+        # Latter Prophets - The Twelve (Minor Prophets)
+        "Hosea", "Joel", "Amos", "Obadiah", "Jonah", "Micah", "Nahum",
+        "Habakkuk", "Zephaniah", "Haggai", "Zechariah", "Malachi"
+    ]
     max_tokens = MAX_COMPLETION_TOKENS_PROPHETIC if book_name in PROPHETIC_BOOKS else MAX_COMPLETION_TOKENS_DEFAULT
 
     logger.info(f"[BATCHED MODE] Processing {book_name} {chapter} with {len(verses_data)} verses in SINGLE API call")
@@ -1689,6 +1760,11 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
 
         logger.debug(f"Final JSON text length: {len(json_text)} chars")
         logger.debug(f"JSON text preview: {json_text[:200]}...{json_text[-200:] if len(json_text) > 400 else json_text[-200:]}")
+
+        # Normalize line endings to prevent JSON parsing failures on Windows
+        # Windows line endings (\r\n) can cause json.loads() to fail with misleading errors
+        json_text = json_text.replace('\r\n', '\n').replace('\r', '\n')
+        logger.debug(f"Normalized line endings in JSON text")
 
         # Parse JSON with error handling
         try:
