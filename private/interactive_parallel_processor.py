@@ -91,6 +91,10 @@ VERSE_ESTIMATES = {
 MAX_COMPLETION_TOKENS_DEFAULT = 65536
 MAX_COMPLETION_TOKENS_PROPHETIC = 100000  # Higher limit for Jeremiah, Isaiah
 
+# Output directory for all pipeline outputs (databases, logs, manifests, debug files)
+# Located at project root level: Bible/output/
+OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "output"))
+
 from hebrew_figurative_db.text_extraction.sefaria_client import SefariaClient
 from hebrew_figurative_db.database.db_manager import DatabaseManager
 from hebrew_figurative_db.text_extraction.hebrew_utils import HebrewTextProcessor
@@ -788,9 +792,10 @@ def save_raw_response(response_text, book_name, chapter):
     """Save raw API response for debugging"""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     filename = f"debug_response_{book_name}_{chapter}_{timestamp}.json"
-    filepath = os.path.join("debug", filename)
+    debug_dir = os.path.join(OUTPUT_DIR, "debug")
+    filepath = os.path.join(debug_dir, filename)
 
-    os.makedirs("debug", exist_ok=True)
+    os.makedirs(debug_dir, exist_ok=True)
 
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(response_text)
@@ -2626,13 +2631,17 @@ def main():
             'enable_debug': False
         }
 
+        # Ensure output directory exists
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+
         # Special database name for Proverbs 3
         if book_name == "Proverbs" and chapter_num == 3:
-            db_name = "Proverbs.db"
+            base_filename = "Proverbs"
+            db_name = os.path.join(OUTPUT_DIR, "Proverbs.db")
         else:
             # Generate filename as usual
             base_filename = f"{book_name.lower()}_c{chapter_num}_all_v_batched_{datetime.now().strftime('%Y%m%d_%H%M')}"
-            db_name = f"{base_filename}.db"
+            db_name = os.path.join(OUTPUT_DIR, f"{base_filename}.db")
     else:
         # Interactive mode
         selection = get_user_selection()
@@ -2688,17 +2697,20 @@ def main():
         base_filename = f"{book_part}_{chapter_part}_{verse_part}_parallel_{date_part}_{time_part}"
         return base_filename
 
+    # Ensure output directory exists
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
     # Use provided db_name or generate one
     if db_name is None:
         base_filename = generate_filename_from_selections(book_selections)
-        db_name = f"{base_filename}.db"
-        log_file = f"{base_filename}_log.txt"
-        json_file = f"{base_filename}_results.json"
+        db_name = os.path.join(OUTPUT_DIR, f"{base_filename}.db")
+        log_file = os.path.join(OUTPUT_DIR, f"{base_filename}_log.txt")
+        json_file = os.path.join(OUTPUT_DIR, f"{base_filename}_results.json")
     else:
         # For command-line mode with specific db_name
-        base_filename = db_name.replace('.db', '')
-        log_file = f"{base_filename}_log.txt"
-        json_file = f"{base_filename}_results.json"
+        base_filename = os.path.basename(db_name).replace('.db', '')
+        log_file = os.path.join(OUTPUT_DIR, f"{base_filename}_log.txt")
+        json_file = os.path.join(OUTPUT_DIR, f"{base_filename}_results.json")
 
     # Create summary of what will be processed (use centralized configs)
     books_info = SUPPORTED_BOOKS
@@ -2753,7 +2765,7 @@ def main():
         logger.warning(f"Warning: .env file not found at {dotenv_path}")
 
     # Initialize run context for tracking
-    run_context = RunContext(book_selections, output_dir=os.path.dirname(db_name) if db_name else ".")
+    run_context = RunContext(book_selections, output_dir=OUTPUT_DIR)
 
     # Log processing summary with run ID
     logger.info(f"=== MULTI-BOOK PARALLEL PROCESSING STARTED ===")

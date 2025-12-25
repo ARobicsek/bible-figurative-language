@@ -54,3 +54,6 @@ Documents/
 # Claude settings (keep for development)
 .claude/settings.local.jsonbackup_final/
 *.zip
+
+# Output directory (pipeline outputs)
+output/
