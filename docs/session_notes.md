@@ -394,6 +394,117 @@ Bible/
 
 ---
 
+## Session 4: 2024-12-25 (Later)
+
+**Focus:** Eliminate database lock contention with WriteQueue architecture
+
+### Problem
+
+Running Hosea 1-14 with 3 parallel workers: 10/14 chapters (71%) failed with `database_lock_timeout`.
+
+Pattern analysis showed that in each "wave" of 3 workers finishing API calls around the same time, ~2 failed and ~1 succeeded due to lock contention.
+
+Root cause: With the current architecture, each worker acquires `_db_lock` for every single insert operation:
+- Each `insert_verse()` call acquires lock
+- Each `insert_figurative_language()` call acquires lock
+- Final `commit()` acquires lock
+
+For a chapter with 15 verses and 20 instances = 35+ lock acquisitions. With 3 workers finishing simultaneously, 100+ lock contentions in a short window.
+
+### Solution: WriteQueue Architecture ✅
+
+**Pipeline Version:** 2.2.1
+
+Replaced direct database writes with a queue-based system:
+- Workers put chapter results in a thread-safe queue
+- A dedicated writer thread handles ALL database operations
+- Zero lock contention (only one thread ever writes)
+
+#### Architecture Diagram
+```
+Workers (3 threads)              Write Queue            Writer Thread
+    |                               |                       |
+    |-- API call (parallel) --------|                       |
+    |                               |                       |
+    |-- put(chapter_data) --------->|                       |
+    |                               |<-- get() -------------|
+    |                               |                       |
+    |                               |       insert all ---->|
+    |                               |       commit -------->|
+    |                               |                       |
+    |-- API call (parallel) --------|                       |
+```
+
+#### Key Benefits
+1. **Parallel API calls preserved** - Workers make LLM calls concurrently (3x speedup)
+2. **Zero database contention** - Only writer thread touches database
+3. **Atomic chapter commits** - Writer inserts all verses+instances, then commits
+4. **No single-verse risk** - Entire chapter succeeds or fails as unit
+
+### Files Modified
+
+| File | Changes |
+|------|---------|
+| `private/interactive_parallel_processor.py` | Added ChapterWriteQueue class, modified process_chapter_batched(), process_single_chapter_task(), process_chapters_parallel() |
+
+### New Classes
+
+#### ChapterWriteQueue
+```python
+class ChapterWriteQueue:
+    """Thread-safe queue for chapter write operations with dedicated writer thread."""
+
+    def __init__(self, db_path, logger, validator=None, divine_names_modifier=None)
+    def start_writer(self)
+    def stop_writer(self, timeout=300.0)
+    def submit_chapter(self, book, chapter, verses_data, instances_data, metadata) -> chapter_key
+    def wait_for_result(self, chapter_key, timeout=300.0) -> result_dict
+```
+
+### Usage
+
+WriteQueue is enabled by default. To use legacy mode (backward compatibility):
+```python
+results = process_chapters_parallel(..., use_write_queue=False)
+```
+
+### Bug Fix: `total_cost` Variable Reference Error
+
+Initial test (Joel 1-3) failed with:
+```
+cannot access local variable 'total_cost' where it is not associated with a value
+```
+
+**Root Cause:** In the `return_data_only` code path, the function returned before `total_cost` was calculated (it's computed later from `token_metadata` + validation cost).
+
+**Fix:** Use `detection_cost = token_metadata.get('cost', 0)` in the early return path.
+
+```python
+# Before (broken)
+return collected_verses_data, collected_instances_data, processing_time, len(verses_data), total_cost, None
+
+# After (fixed)
+detection_cost = token_metadata.get('cost', 0)
+return collected_verses_data, collected_instances_data, processing_time, len(verses_data), detection_cost, None
+```
+
+**File:** `private/interactive_parallel_processor.py:2511-2514`
+
+### Expected Results
+
+With WriteQueue:
+- 0 `database_lock_timeout` failures (from 71% failure rate)
+- Same total processing time (API calls still parallel)
+- Same data integrity (atomic chapter commits maintained)
+
+### Commit
+
+```
+55f3182 feat: Add WriteQueue architecture to eliminate database lock contention (v2.2.1)
+```
+
+---
+
 ## Related Documentation
 
 - [PARALLEL_PROCESSING_ISSUES.md](PARALLEL_PROCESSING_ISSUES.md) - Detailed technical analysis

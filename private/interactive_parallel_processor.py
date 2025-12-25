@@ -18,6 +18,7 @@ import uuid
 import hashlib
 import concurrent.futures
 import threading
+import queue
 from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
@@ -26,7 +27,7 @@ from typing import List, Dict, Tuple, Optional, Any
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 # Pipeline version for tracking
-PIPELINE_VERSION = "2.2.0"  # Added chapter-level parallelization + all books use batched mode
+PIPELINE_VERSION = "2.2.1"  # Added WriteQueue architecture to eliminate database lock contention
 
 # Books configuration - centralized definition
 # Torah (Pentateuch)
@@ -1036,33 +1037,298 @@ def recover_missing_validations(db_manager, validator, book_name: str, chapter: 
     return stats
 
 
-# Global lock for thread-safe database operations
+# Global lock for thread-safe database operations (kept for backward compatibility)
 _db_lock = threading.Lock()
 
 
+class ChapterWriteQueue:
+    """
+    Thread-safe queue for chapter write operations with a dedicated writer thread.
+
+    This eliminates database lock contention by ensuring only ONE thread ever writes
+    to the database, while allowing multiple worker threads to make API calls in parallel.
+
+    Architecture:
+    - Worker threads call submit_chapter() to queue chapter data
+    - Single writer thread processes queue, inserting all verses/instances and committing
+    - Workers can wait_for_result() to get write confirmation
+    """
+
+    def __init__(self, db_path: str, logger, validator=None, divine_names_modifier=None):
+        self.db_path = db_path
+        self.logger = logger
+        self.validator = validator
+        self.divine_names_modifier = divine_names_modifier
+        self.queue = queue.Queue()
+        self.results = {}  # chapter_key -> result dict
+        self.results_lock = threading.Lock()
+        self.results_ready = {}  # chapter_key -> threading.Event
+        self.writer_thread = None
+        self.stop_event = threading.Event()
+        self.db_manager = None
+
+    def start_writer(self):
+        """Start the dedicated writer thread with its own database connection."""
+        self.stop_event.clear()
+        self.writer_thread = threading.Thread(target=self._writer_loop, daemon=True)
+        self.writer_thread.start()
+        self.logger.info("[WriteQueue] Writer thread started")
+
+    def stop_writer(self, timeout: float = 300.0):
+        """Signal writer to stop after processing remaining items, wait for completion."""
+        self.logger.info("[WriteQueue] Signaling writer to stop...")
+        self.stop_event.set()
+        if self.writer_thread and self.writer_thread.is_alive():
+            self.writer_thread.join(timeout=timeout)
+            if self.writer_thread.is_alive():
+                self.logger.error("[WriteQueue] Writer thread did not stop within timeout")
+            else:
+                self.logger.info("[WriteQueue] Writer thread stopped")
+
+    def submit_chapter(self, book: str, chapter: int, verses_data: list,
+                       instances_data: list, metadata: dict) -> str:
+        """
+        Submit chapter data for writing.
+
+        Args:
+            book: Book name
+            chapter: Chapter number
+            verses_data: List of prepared verse dicts ready for insert_verse()
+            instances_data: List of (verse_index, instance_dict) tuples
+            metadata: Dict with processing metadata (cost, time, etc.)
+
+        Returns:
+            chapter_key: Unique key to retrieve result later
+        """
+        chapter_key = f"{book}_{chapter}_{uuid.uuid4().hex[:8]}"
+
+        # Create event for this chapter's result
+        with self.results_lock:
+            self.results_ready[chapter_key] = threading.Event()
+
+        # Queue the work item
+        self.queue.put({
+            'chapter_key': chapter_key,
+            'book': book,
+            'chapter': chapter,
+            'verses_data': verses_data,
+            'instances_data': instances_data,
+            'metadata': metadata
+        })
+
+        self.logger.debug(f"[WriteQueue] Submitted {book} {chapter} as {chapter_key}")
+        return chapter_key
+
+    def wait_for_result(self, chapter_key: str, timeout: float = 300.0) -> dict:
+        """
+        Wait for write result.
+
+        Returns:
+            dict with 'success', 'verses_stored', 'instances_stored', 'error' (if any)
+        """
+        with self.results_lock:
+            event = self.results_ready.get(chapter_key)
+
+        if not event:
+            return {'success': False, 'error': f'Unknown chapter_key: {chapter_key}'}
+
+        # Wait for writer to process this chapter
+        if not event.wait(timeout=timeout):
+            return {'success': False, 'error': 'Timeout waiting for write result'}
+
+        with self.results_lock:
+            return self.results.get(chapter_key, {'success': False, 'error': 'Result not found'})
+
+    def _writer_loop(self):
+        """Main loop for the writer thread - processes queue items sequentially."""
+        from hebrew_figurative_db.database.db_manager import DatabaseManager
+
+        # Create dedicated database connection for this thread
+        self.db_manager = DatabaseManager(self.db_path)
+        self.db_manager.connect()
+        self.db_manager.setup_database(drop_existing=False)
+
+        self.logger.info("[WriteQueue] Writer thread database connection established")
+
+        try:
+            while True:
+                try:
+                    # Check for stop signal with timeout to allow graceful shutdown
+                    try:
+                        item = self.queue.get(timeout=1.0)
+                    except queue.Empty:
+                        if self.stop_event.is_set() and self.queue.empty():
+                            self.logger.info("[WriteQueue] Stop signal received, queue empty, exiting")
+                            break
+                        continue
+
+                    # Process the write request
+                    chapter_key = item['chapter_key']
+                    book = item['book']
+                    chapter = item['chapter']
+
+                    self.logger.info(f"[WriteQueue] Processing write for {book} {chapter}")
+
+                    result = self._write_chapter(item)
+
+                    # Store result and signal completion
+                    with self.results_lock:
+                        self.results[chapter_key] = result
+                        if chapter_key in self.results_ready:
+                            self.results_ready[chapter_key].set()
+
+                    self.queue.task_done()
+
+                    if result['success']:
+                        self.logger.info(f"[WriteQueue] Wrote {book} {chapter}: "
+                                        f"{result['verses_stored']} verses, {result['instances_stored']} instances")
+                    else:
+                        self.logger.error(f"[WriteQueue] Failed to write {book} {chapter}: {result.get('error')}")
+
+                except Exception as e:
+                    self.logger.error(f"[WriteQueue] Error in writer loop: {e}")
+                    import traceback
+                    traceback.print_exc()
+
+        finally:
+            # Close database connection
+            if self.db_manager:
+                self.db_manager.close()
+                self.logger.info("[WriteQueue] Writer thread database connection closed")
+
+    def _write_chapter(self, item: dict) -> dict:
+        """
+        Write a single chapter's data to the database.
+
+        This runs in the writer thread - no locks needed since it's the only writer.
+        """
+        book = item['book']
+        chapter = item['chapter']
+        verses_data = item['verses_data']
+        instances_data = item['instances_data']
+        metadata = item['metadata']
+
+        verses_stored = 0
+        instances_stored = 0
+        validation_instances = []  # For batched validation
+
+        try:
+            # Insert all verses and their instances
+            for verse_idx, verse_dict in enumerate(verses_data):
+                # Insert verse
+                verse_id = self.db_manager.insert_verse(verse_dict)
+                verses_stored += 1
+
+                # Insert instances for this verse
+                verse_instances = [inst for v_idx, inst in instances_data if v_idx == verse_idx]
+                for instance_dict in verse_instances:
+                    fig_lang_id = self.db_manager.insert_figurative_language(verse_id, instance_dict)
+                    instances_stored += 1
+
+                    # Track for validation
+                    if self.validator:
+                        validation_instances.append({
+                            'db_id': fig_lang_id,
+                            'verse_ref': verse_dict['reference'],
+                            'instance_data': instance_dict,
+                            'hebrew_text': verse_dict['hebrew'],
+                            'english_text': verse_dict['english']
+                        })
+
+            # Commit all inserts
+            self.db_manager.commit()
+            self.logger.debug(f"[WriteQueue] Committed {verses_stored} verses, {instances_stored} instances for {book} {chapter}")
+
+            # Run batched validation if validator available
+            if self.validator and validation_instances:
+                self._run_validation(book, chapter, validation_instances)
+
+            return {
+                'success': True,
+                'verses_stored': verses_stored,
+                'instances_stored': instances_stored,
+                'cost': metadata.get('cost', 0.0)
+            }
+
+        except Exception as e:
+            self.logger.error(f"[WriteQueue] Error writing {book} {chapter}: {e}")
+            import traceback
+            traceback.print_exc()
+            return {
+                'success': False,
+                'verses_stored': verses_stored,
+                'instances_stored': instances_stored,
+                'error': str(e)
+            }
+
+    def _run_validation(self, book: str, chapter: int, validation_instances: list):
+        """Run batched validation for all instances in a chapter."""
+        try:
+            self.logger.info(f"[WriteQueue] Running validation for {len(validation_instances)} instances in {book} {chapter}")
+
+            # Prepare instances for validation API
+            all_chapter_instances = []
+            instance_id_to_db_id = {}
+
+            for idx, vi in enumerate(validation_instances):
+                instance = vi['instance_data'].copy()
+                instance['verse_reference'] = vi['verse_ref']
+                instance['hebrew_text'] = vi['hebrew_text']
+                instance['english_text'] = vi['english_text']
+                instance['instance_id'] = idx + 1
+                instance['db_id'] = vi['db_id']
+                all_chapter_instances.append(instance)
+                instance_id_to_db_id[idx + 1] = vi['db_id']
+
+            # Call validator
+            bulk_validation_results, validation_cost_metadata = self.validator.validate_chapter_instances(all_chapter_instances)
+
+            # Process validation results
+            for validation_result in bulk_validation_results:
+                process_validation_result(
+                    validation_result, instance_id_to_db_id,
+                    self.db_manager, self.logger, db_lock=None  # No lock needed - single writer
+                )
+
+            # Commit validation updates
+            self.db_manager.commit()
+
+            self.logger.info(f"[WriteQueue] Validation complete for {book} {chapter}")
+
+        except Exception as e:
+            self.logger.error(f"[WriteQueue] Validation error for {book} {chapter}: {e}")
+
+
 def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divine_names_modifier,
-                                 db_path: str, logger, run_context: RunContext = None) -> Dict:
+                                 db_path: str, logger, run_context: RunContext = None,
+                                 write_queue: ChapterWriteQueue = None) -> Dict:
     """
     Process a single chapter - designed to be called from ThreadPoolExecutor.
 
     This wrapper handles:
     - Fetching verse data from Sefaria (with caching)
     - Calling process_chapter_batched
-    - Thread-safe database commits using a lock
+    - Submitting data to WriteQueue (if provided) OR direct database writes with locks
     - Error handling and result aggregation
 
-    Each worker thread creates its own DatabaseManager instance to avoid SQLite threading issues.
-    SQLite prohibits sharing connection objects across threads, but multiple connections
-    to the same database file are safe due to SQLite's internal file locking.
+    When write_queue is provided (recommended for parallel processing):
+    - No thread-local DatabaseManager is created
+    - Data is submitted to the WriteQueue for sequential writing
+    - This eliminates database lock contention entirely
+
+    When write_queue is None (backward compatibility):
+    - Each worker thread creates its own DatabaseManager instance
+    - Uses _db_lock for thread-safe database operations
 
     Args:
         task_data: Dict with 'book', 'chapter', 'verses' (optional filter)
         sefaria_cache: SefariaCache instance
         validator: MetaphorValidator instance
         divine_names_modifier: HebrewDivineNamesModifier instance
-        db_path: Path to the database file (each worker creates its own connection)
+        db_path: Path to the database file
         logger: Logger instance
         run_context: Optional RunContext for failure tracking
+        write_queue: Optional ChapterWriteQueue for lock-free parallel processing
 
     Returns:
         Dict with processing results
@@ -1086,11 +1352,14 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
 
     start_time = time.time()
 
-    # Create thread-local DatabaseManager instance to avoid SQLite threading issues
-    # SQLite prohibits sharing connection objects across threads
-    db_manager = DatabaseManager(db_path)
-    db_manager.connect()
-    db_manager.setup_database(drop_existing=False)
+    # Only create thread-local DatabaseManager if NOT using write_queue
+    db_manager = None
+    if not write_queue:
+        # Create thread-local DatabaseManager instance to avoid SQLite threading issues
+        # SQLite prohibits sharing connection objects across threads
+        db_manager = DatabaseManager(db_path)
+        db_manager.connect()
+        db_manager.setup_database(drop_existing=False)
 
     try:
         logger.info(f"[Worker {worker_id}] Starting {book_name} {chapter}")
@@ -1121,30 +1390,21 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
 
         logger.info(f"[Worker {worker_id}] Processing {len(verses_data)} verses from {book_name} {chapter}")
 
-        # Process chapter using batched mode WITHOUT holding the lock during API calls
-        # This allows multiple workers to make API calls in parallel
-        # Database inserts inside process_chapter_batched() are protected by db_lock
-        v, i, proc_time, total_attempted, chapter_cost, batch_error = process_chapter_batched(
-            verses_data, book_name, chapter, validator, divine_names_modifier,
-            db_manager, logger, run_context, db_lock=_db_lock
-        )
+        if write_queue:
+            # NEW: Use WriteQueue for lock-free parallel processing
+            # Process chapter and get prepared data (no database writes yet)
+            collected_verses, collected_instances, proc_time, total_attempted, chapter_cost, batch_error = process_chapter_batched(
+                verses_data, book_name, chapter, validator, divine_names_modifier,
+                None, logger, run_context, db_lock=None, return_data_only=True
+            )
 
-        # Commit changes for this thread's database connection with lock protection
-        # Only the commit is serialized, not the entire API call
-        with _db_lock:
-            db_manager.commit()
-
-        result['verses_stored'] = v
-        result['instances_stored'] = i
-        result['processing_time'] = time.time() - start_time
-        result['cost'] = chapter_cost
-        result['success'] = v > 0 or total_attempted == 0  # Success if we stored verses or there were none to store
-
-        if v == 0 and total_attempted > 0:
-            # Determine error type from the actual error message
             if batch_error:
+                # API call or JSON parsing failed
                 result['error'] = batch_error
-                # Classify the error type based on the actual error message
+                result['processing_time'] = time.time() - start_time
+                result['cost'] = chapter_cost
+
+                # Classify error type
                 if 'database is locked' in batch_error.lower():
                     error_type = 'database_lock_timeout'
                     reason = f'Database lock timeout: {batch_error}'
@@ -1153,28 +1413,124 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
                     reason = f'Database error: {batch_error}'
                 else:
                     error_type = 'json_parsing_failure'
-                    reason = 'Batched processing returned 0 verses (likely JSON parsing failure)'
-            else:
+                    reason = f'Batched processing failed: {batch_error}'
+
+                if run_context:
+                    run_context.add_chapter_failure(
+                        book_name, chapter, reason,
+                        verses_attempted=total_attempted, error_type=error_type
+                    )
+            elif not collected_verses and total_attempted > 0:
+                # No verses collected but we tried - parsing failure
                 result['error'] = 'Batched processing returned 0 verses'
-                error_type = 'json_parsing_failure'
-                reason = 'Batched processing returned 0 verses (likely JSON parsing failure)'
+                result['processing_time'] = time.time() - start_time
+                result['cost'] = chapter_cost
 
-            if run_context:
-                run_context.add_chapter_failure(
+                if run_context:
+                    run_context.add_chapter_failure(
+                        book_name, chapter,
+                        'Batched processing returned 0 verses (likely JSON parsing failure)',
+                        verses_attempted=total_attempted, error_type='json_parsing_failure'
+                    )
+            else:
+                # Success! Submit data to write queue
+                chapter_key = write_queue.submit_chapter(
                     book_name, chapter,
-                    reason,
-                    verses_attempted=total_attempted,
-                    error_type=error_type
-                )
-        else:
-            if run_context:
-                run_context.record_chapter_success(
-                    book_name, chapter, v, i,
-                    result['processing_time'], chapter_cost,
-                    'gpt-5.1-medium-batched'
+                    collected_verses, collected_instances,
+                    {'cost': chapter_cost, 'processing_time': proc_time}
                 )
 
-        logger.info(f"[Worker {worker_id}] Completed {book_name} {chapter}: {i} instances from {v} verses in {result['processing_time']:.1f}s (Cost: ${chapter_cost:.4f})")
+                # Wait for write to complete
+                logger.info(f"[Worker {worker_id}] Submitted {book_name} {chapter} to WriteQueue, waiting for write...")
+                write_result = write_queue.wait_for_result(chapter_key, timeout=300.0)
+
+                if write_result['success']:
+                    result['verses_stored'] = write_result['verses_stored']
+                    result['instances_stored'] = write_result['instances_stored']
+                    result['processing_time'] = time.time() - start_time
+                    result['cost'] = chapter_cost
+                    result['success'] = True
+
+                    if run_context:
+                        run_context.record_chapter_success(
+                            book_name, chapter,
+                            write_result['verses_stored'], write_result['instances_stored'],
+                            result['processing_time'], chapter_cost,
+                            'gpt-5.1-medium-batched'
+                        )
+
+                    logger.info(f"[Worker {worker_id}] Completed {book_name} {chapter}: "
+                               f"{result['instances_stored']} instances from {result['verses_stored']} verses "
+                               f"in {result['processing_time']:.1f}s (Cost: ${chapter_cost:.4f})")
+                else:
+                    # Write failed
+                    result['error'] = write_result.get('error', 'Write failed')
+                    result['processing_time'] = time.time() - start_time
+                    result['cost'] = chapter_cost
+
+                    if run_context:
+                        run_context.add_chapter_failure(
+                            book_name, chapter,
+                            f"WriteQueue error: {write_result.get('error')}",
+                            verses_attempted=total_attempted, error_type='database_error'
+                        )
+
+        else:
+            # LEGACY: Direct database writes with locks (backward compatibility)
+            # Process chapter using batched mode WITHOUT holding the lock during API calls
+            # This allows multiple workers to make API calls in parallel
+            # Database inserts inside process_chapter_batched() are protected by db_lock
+            v, i, proc_time, total_attempted, chapter_cost, batch_error = process_chapter_batched(
+                verses_data, book_name, chapter, validator, divine_names_modifier,
+                db_manager, logger, run_context, db_lock=_db_lock
+            )
+
+            # Commit changes for this thread's database connection with lock protection
+            # Only the commit is serialized, not the entire API call
+            with _db_lock:
+                db_manager.commit()
+
+            result['verses_stored'] = v
+            result['instances_stored'] = i
+            result['processing_time'] = time.time() - start_time
+            result['cost'] = chapter_cost
+            result['success'] = v > 0 or total_attempted == 0  # Success if we stored verses or there were none to store
+
+            if v == 0 and total_attempted > 0:
+                # Determine error type from the actual error message
+                if batch_error:
+                    result['error'] = batch_error
+                    # Classify the error type based on the actual error message
+                    if 'database is locked' in batch_error.lower():
+                        error_type = 'database_lock_timeout'
+                        reason = f'Database lock timeout: {batch_error}'
+                    elif 'locked' in batch_error.lower() or 'sqlite' in batch_error.lower():
+                        error_type = 'database_error'
+                        reason = f'Database error: {batch_error}'
+                    else:
+                        error_type = 'json_parsing_failure'
+                        reason = 'Batched processing returned 0 verses (likely JSON parsing failure)'
+                else:
+                    result['error'] = 'Batched processing returned 0 verses'
+                    error_type = 'json_parsing_failure'
+                    reason = 'Batched processing returned 0 verses (likely JSON parsing failure)'
+
+                if run_context:
+                    run_context.add_chapter_failure(
+                        book_name, chapter,
+                        reason,
+                        verses_attempted=total_attempted,
+                        error_type=error_type
+                    )
+            else:
+                if run_context:
+                    run_context.record_chapter_success(
+                        book_name, chapter, v, i,
+                        result['processing_time'], chapter_cost,
+                        'gpt-5.1-medium-batched'
+                    )
+
+            logger.info(f"[Worker {worker_id}] Completed {book_name} {chapter}: {i} instances from {v} verses in {result['processing_time']:.1f}s (Cost: ${chapter_cost:.4f})")
 
     except Exception as e:
         result['error'] = str(e)
@@ -1187,22 +1543,27 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
                 error_type='exception'
             )
     finally:
-        # Always close this thread's database connection
-        db_manager.close()
+        # Always close this thread's database connection (if we created one)
+        if db_manager:
+            db_manager.close()
 
     return result
 
 
 def process_chapters_parallel(chapter_tasks: List[Dict], sefaria_cache, sefaria_client,
                                validator, divine_names_modifier, db_manager, logger,
-                               max_workers: int, run_context: RunContext = None) -> Dict:
+                               max_workers: int, run_context: RunContext = None,
+                               use_write_queue: bool = True) -> Dict:
     """
     Process multiple chapters in parallel using ThreadPoolExecutor.
 
     Each chapter is processed in a single API call (batched mode), so this achieves
     both the cost savings of batched processing AND the speed of parallelization.
 
-    Each worker thread creates its own DatabaseManager instance to avoid SQLite threading issues.
+    NEW in v2.2.1: Uses WriteQueue architecture by default to eliminate database lock contention.
+    - Workers make API calls in parallel (3x speedup maintained)
+    - A single writer thread handles all database operations (zero lock contention)
+    - Atomic chapter commits maintained (whole chapter written before commit)
 
     Args:
         chapter_tasks: List of dicts with 'book', 'chapter', optional 'verses'
@@ -1210,10 +1571,12 @@ def process_chapters_parallel(chapter_tasks: List[Dict], sefaria_cache, sefaria_
         sefaria_client: SefariaClient instance for fetching text
         validator: MetaphorValidator instance
         divine_names_modifier: HebrewDivineNamesModifier instance
-        db_manager: DatabaseManager instance (used to get db_path for workers)
+        db_manager: DatabaseManager instance (used to get db_path)
         logger: Logger instance
         max_workers: Maximum number of parallel chapter processors
         run_context: Optional RunContext for tracking
+        use_write_queue: If True (default), use WriteQueue for lock-free writes.
+                        If False, use legacy per-worker database connections.
 
     Returns:
         Dict with aggregated results
@@ -1232,10 +1595,14 @@ def process_chapters_parallel(chapter_tasks: List[Dict], sefaria_cache, sefaria_
     if not chapter_tasks:
         return total_results
 
-    # Get database path to pass to workers (each worker creates its own DatabaseManager)
+    # Get database path
     db_path = db_manager.db_path
 
     logger.info(f"[PARALLEL CHAPTERS] Starting parallel processing of {len(chapter_tasks)} chapters with {max_workers} workers")
+    if use_write_queue:
+        logger.info(f"[PARALLEL CHAPTERS] Using WriteQueue architecture (lock-free writes)")
+    else:
+        logger.info(f"[PARALLEL CHAPTERS] Using legacy per-worker database connections")
 
     start_time = time.time()
 
@@ -1244,47 +1611,60 @@ def process_chapters_parallel(chapter_tasks: List[Dict], sefaria_cache, sefaria_
         task['worker_id'] = (i % max_workers) + 1
         task['sefaria_client'] = sefaria_client
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        # Submit all chapter processing tasks
-        # Pass db_path instead of db_manager so each worker creates its own DatabaseManager
-        future_to_task = {
-            executor.submit(
-                process_single_chapter_task,
-                task, sefaria_cache, validator, divine_names_modifier,
-                db_path, logger, run_context
-            ): task
-            for task in chapter_tasks
-        }
+    # Create WriteQueue if enabled (eliminates database lock contention)
+    write_queue = None
+    if use_write_queue:
+        write_queue = ChapterWriteQueue(db_path, logger, validator=validator, divine_names_modifier=divine_names_modifier)
+        write_queue.start_writer()
+        logger.info("[PARALLEL CHAPTERS] WriteQueue writer thread started")
 
-        # Collect results as they complete
-        for future in concurrent.futures.as_completed(future_to_task):
-            task = future_to_task[future]
-            try:
-                result = future.result()
-                total_results['chapter_results'].append(result)
+    try:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+            # Submit all chapter processing tasks
+            future_to_task = {
+                executor.submit(
+                    process_single_chapter_task,
+                    task, sefaria_cache, validator, divine_names_modifier,
+                    db_path, logger, run_context, write_queue
+                ): task
+                for task in chapter_tasks
+            }
 
-                if result['success']:
-                    total_results['successful_chapters'] += 1
-                    total_results['total_verses'] += result['verses_stored']
-                    total_results['total_instances'] += result['instances_stored']
-                else:
+            # Collect results as they complete
+            for future in concurrent.futures.as_completed(future_to_task):
+                task = future_to_task[future]
+                try:
+                    result = future.result()
+                    total_results['chapter_results'].append(result)
+
+                    if result['success']:
+                        total_results['successful_chapters'] += 1
+                        total_results['total_verses'] += result['verses_stored']
+                        total_results['total_instances'] += result['instances_stored']
+                    else:
+                        total_results['failed_chapters'] += 1
+
+                    total_results['total_cost'] += result.get('cost', 0)
+
+                    # Progress update
+                    completed = total_results['successful_chapters'] + total_results['failed_chapters']
+                    logger.info(f"[PARALLEL CHAPTERS] Progress: {completed}/{len(chapter_tasks)} chapters completed")
+
+                except Exception as e:
+                    logger.error(f"[PARALLEL CHAPTERS] Task failed for {task['book']} {task['chapter']}: {e}")
                     total_results['failed_chapters'] += 1
+                    total_results['chapter_results'].append({
+                        'book': task['book'],
+                        'chapter': task['chapter'],
+                        'success': False,
+                        'error': str(e)
+                    })
 
-                total_results['total_cost'] += result['cost']
-
-                # Progress update
-                completed = total_results['successful_chapters'] + total_results['failed_chapters']
-                logger.info(f"[PARALLEL CHAPTERS] Progress: {completed}/{len(chapter_tasks)} chapters completed")
-
-            except Exception as e:
-                logger.error(f"[PARALLEL CHAPTERS] Task failed for {task['book']} {task['chapter']}: {e}")
-                total_results['failed_chapters'] += 1
-                total_results['chapter_results'].append({
-                    'book': task['book'],
-                    'chapter': task['chapter'],
-                    'success': False,
-                    'error': str(e)
-                })
+    finally:
+        # Stop the WriteQueue writer thread
+        if write_queue:
+            logger.info("[PARALLEL CHAPTERS] Stopping WriteQueue writer thread...")
+            write_queue.stop_writer(timeout=300.0)
 
     total_results['total_time'] = time.time() - start_time
 
@@ -1296,7 +1676,7 @@ def process_chapters_parallel(chapter_tasks: List[Dict], sefaria_cache, sefaria_
     return total_results
 
 
-def process_chapter_batched(verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger, run_context: RunContext = None, db_lock: threading.Lock = None):
+def process_chapter_batched(verses_data, book_name, chapter, validator, divine_names_modifier, db_manager, logger, run_context: RunContext = None, db_lock: threading.Lock = None, return_data_only: bool = False):
     """Process an entire chapter in a single batched API call (GPT-5.1 MEDIUM)
 
     This approach sends all verses in ONE API call, achieving 95% token savings
@@ -1308,18 +1688,26 @@ def process_chapter_batched(verses_data, book_name, chapter, validator, divine_n
         chapter: Chapter number
         validator: MetaphorValidator instance (uses GPT-5.1 MEDIUM)
         divine_names_modifier: HebrewDivineNamesModifier instance
-        db_manager: DatabaseManager instance
+        db_manager: DatabaseManager instance (not used when return_data_only=True)
         logger: Logger instance
         run_context: Optional RunContext for failure tracking
         db_lock: Optional threading.Lock for thread-safe database operations
+        return_data_only: If True, return prepared data instead of writing to DB.
+                         Used by WriteQueue architecture to eliminate lock contention.
 
     Returns:
-        Tuple of (verses_stored, instances_stored, processing_time, total_attempted, total_cost)
+        If return_data_only=False (default):
+            Tuple of (verses_stored, instances_stored, processing_time, total_attempted, total_cost, error_msg)
+        If return_data_only=True:
+            Tuple of (verses_data_list, instances_data_list, processing_time, total_attempted, total_cost, error_msg)
+            where instances_data_list is List[(verse_index, instance_dict)]
     """
     start_time = time.time()
 
     if not verses_data:
-        return 0, 0, 0, 0, 0.0
+        if return_data_only:
+            return [], [], 0, 0, 0.0, None
+        return 0, 0, 0, 0, 0.0, None
 
     # Use increased token limit for prophetic books which have longer chapters
     # Includes Former Prophets and Latter Prophets (Major and Minor)
@@ -1965,11 +2353,15 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
         all_instances_for_validation = []
         verse_to_instances_map = {}  # Map verse_ref to list of instances
 
+        # For return_data_only mode: collect prepared data instead of writing
+        collected_verses_data = []  # List of verse dicts ready for insert_verse()
+        collected_instances_data = []  # List of (verse_index, instance_dict) tuples
+
         # Store results in database (thread-safe with optional lock)
         verses_stored = 0
         instances_stored = 0
 
-        # Helper for thread-safe database operations
+        # Helper for thread-safe database operations (only used when not return_data_only)
         def db_insert_verse(verse_data):
             if db_lock:
                 with db_lock:
@@ -2040,9 +2432,19 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
             }
 
             logger.debug(f"Verse data for insertion: {json.dumps(verse_data, indent=2, ensure_ascii=False)}")
-            # Insert verse into database (thread-safe)
-            verse_id = db_insert_verse(verse_data)
-            verses_stored += 1
+
+            # Track current verse index for return_data_only mode
+            current_verse_index = len(collected_verses_data)
+
+            if return_data_only:
+                # Collect verse data for later writing by WriteQueue
+                collected_verses_data.append(verse_data)
+                verses_stored += 1
+                verse_id = None  # Not written yet
+            else:
+                # Insert verse into database (thread-safe)
+                verse_id = db_insert_verse(verse_data)
+                verses_stored += 1
 
             # Process instances for this verse
             instances_with_db_ids = []
@@ -2079,24 +2481,37 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
                     'model_used': 'gpt-5.1-medium-batched'
                 }
 
-                # Insert instance into database (thread-safe)
-                figurative_language_id = db_insert_figurative_language(verse_id, figurative_data)
-                instances_stored += 1
+                if return_data_only:
+                    # Collect instance data for later writing by WriteQueue
+                    collected_instances_data.append((current_verse_index, figurative_data))
+                    instances_stored += 1
+                else:
+                    # Insert instance into database (thread-safe)
+                    figurative_language_id = db_insert_figurative_language(verse_id, figurative_data)
+                    instances_stored += 1
 
-                # Keep track for validation
-                instance_copy = instance.copy()
-                instance_copy['db_id'] = figurative_language_id
-                instance_copy['verse_ref'] = reference
-                instance_copy['instance_id'] = j + 1
-                instances_with_db_ids.append(instance_copy)
+                    # Keep track for validation
+                    instance_copy = instance.copy()
+                    instance_copy['db_id'] = figurative_language_id
+                    instance_copy['verse_ref'] = reference
+                    instance_copy['instance_id'] = j + 1
+                    instances_with_db_ids.append(instance_copy)
 
-            # Map this verse to its instances for batched validation
-            if instances_with_db_ids:
+            # Map this verse to its instances for batched validation (only when not return_data_only)
+            if not return_data_only and instances_with_db_ids:
                 verse_to_instances_map[reference] = {
                     'hebrew': original_verse['hebrew'],
                     'english': original_verse['english'],
                     'instances': instances_with_db_ids
                 }
+
+        # For return_data_only mode: return the collected data now (validation handled by WriteQueue)
+        if return_data_only:
+            processing_time = time.time() - start_time
+            # Note: total_cost not computed yet in this path, use detection cost from token_metadata
+            detection_cost = token_metadata.get('cost', 0)
+            logger.info(f"[BATCHED MODE] Prepared {verses_stored} verses with {instances_stored} instances for queue write (Cost: ${detection_cost:.4f})")
+            return collected_verses_data, collected_instances_data, processing_time, len(verses_data), detection_cost, None
 
         # BATCHED VALIDATION - Validate all instances from all verses in a single API call
         if validator and verse_to_instances_map:
@@ -2251,6 +2666,8 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
         logger.error(f"Error during batched processing of {book_name} {chapter}: {error_msg}")
         import traceback
         traceback.print_exc()
+        if return_data_only:
+            return [], [], time.time() - start_time, len(verses_data), 0.0, error_msg
         return 0, 0, time.time() - start_time, len(verses_data), 0.0, error_msg
 
 def process_single_verse(verse_data, book_name, chapter, flexible_client, validator, divine_names_modifier, logger, worker_id, chapter_context=None):
