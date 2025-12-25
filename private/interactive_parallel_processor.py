@@ -1119,7 +1119,7 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
         # Process chapter using batched mode WITHOUT holding the lock during API calls
         # This allows multiple workers to make API calls in parallel
         # Database inserts inside process_chapter_batched() are protected by db_lock
-        v, i, proc_time, total_attempted, chapter_cost = process_chapter_batched(
+        v, i, proc_time, total_attempted, chapter_cost, batch_error = process_chapter_batched(
             verses_data, book_name, chapter, validator, divine_names_modifier,
             db_manager, logger, run_context, db_lock=_db_lock
         )
@@ -1136,13 +1136,30 @@ def process_single_chapter_task(task_data: Dict, sefaria_cache, validator, divin
         result['success'] = v > 0 or total_attempted == 0  # Success if we stored verses or there were none to store
 
         if v == 0 and total_attempted > 0:
-            result['error'] = 'Batched processing returned 0 verses'
+            # Determine error type from the actual error message
+            if batch_error:
+                result['error'] = batch_error
+                # Classify the error type based on the actual error message
+                if 'database is locked' in batch_error.lower():
+                    error_type = 'database_lock_timeout'
+                    reason = f'Database lock timeout: {batch_error}'
+                elif 'locked' in batch_error.lower() or 'sqlite' in batch_error.lower():
+                    error_type = 'database_error'
+                    reason = f'Database error: {batch_error}'
+                else:
+                    error_type = 'json_parsing_failure'
+                    reason = 'Batched processing returned 0 verses (likely JSON parsing failure)'
+            else:
+                result['error'] = 'Batched processing returned 0 verses'
+                error_type = 'json_parsing_failure'
+                reason = 'Batched processing returned 0 verses (likely JSON parsing failure)'
+
             if run_context:
                 run_context.add_chapter_failure(
                     book_name, chapter,
-                    'Batched processing returned 0 verses (likely JSON parsing failure)',
+                    reason,
                     verses_attempted=total_attempted,
-                    error_type='json_parsing_failure'
+                    error_type=error_type
                 )
         else:
             if run_context:
@@ -2222,13 +2239,14 @@ IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis fo
         elif corrupted_chunks == 0:
             logger.info("No corruption detected - all verses processed successfully")
 
-        return verses_stored, instances_stored, processing_time, len(verses_data), total_cost
+        return verses_stored, instances_stored, processing_time, len(verses_data), total_cost, None
 
     except Exception as e:
-        logger.error(f"Error during batched processing of {book_name} {chapter}: {e}")
+        error_msg = str(e)
+        logger.error(f"Error during batched processing of {book_name} {chapter}: {error_msg}")
         import traceback
         traceback.print_exc()
-        return 0, 0, time.time() - start_time, len(verses_data), 0.0
+        return 0, 0, time.time() - start_time, len(verses_data), 0.0, error_msg
 
 def process_single_verse(verse_data, book_name, chapter, flexible_client, validator, divine_names_modifier, logger, worker_id, chapter_context=None):
     """Process a single verse for parallel execution
