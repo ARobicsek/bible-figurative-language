@@ -29,11 +29,11 @@ class DatabaseManager:
         if self.conn:
             self.conn.close()
 
-    def connect(self, timeout: float = 30.0):
+    def connect(self, timeout: float = 60.0):
         """Establish database connection
 
         Args:
-            timeout: Seconds to wait for lock to be released (default 30.0 for multi-threaded access)
+            timeout: Seconds to wait for lock to be released (default 60.0 for multi-threaded access)
         """
         self.conn = sqlite3.connect(self.db_path, timeout=timeout)
         # Enable WAL mode for better concurrent access (allows multiple readers + one writer)
