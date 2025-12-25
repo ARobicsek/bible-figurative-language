@@ -328,6 +328,72 @@ Function now returns 6-tuple including error message for proper classification.
 
 ---
 
+## Session 3: 2024-12-25
+
+**Focus:** Centralize pipeline output to dedicated output directory
+
+### Goal
+
+Move all pipeline output files from `private/` to a dedicated `output/` directory at project root, and gitignore the outputs.
+
+### Changes Made
+
+#### 1. Added OUTPUT_DIR constant ✅
+```python
+# Located at project root level: Bible/output/
+OUTPUT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "output"))
+```
+**File:** `private/interactive_parallel_processor.py:94-96`
+
+#### 2. Updated file paths to use OUTPUT_DIR ✅
+
+All output files now saved to `output/`:
+- Database files (`.db`)
+- Log files (`_log.txt`)
+- Results JSON (`_results.json`)
+- Failure manifests (`_failures.json`)
+- Processing manifests (`_manifest.json`)
+- Debug files (`output/debug/debug_response_*.json`)
+
+**Files modified:**
+- `private/interactive_parallel_processor.py:2634-2644` - Command-line mode paths
+- `private/interactive_parallel_processor.py:2700-2713` - Interactive mode paths
+- `private/interactive_parallel_processor.py:791-798` - Debug file paths
+- `private/interactive_parallel_processor.py:2768` - RunContext output_dir
+
+#### 3. Updated .gitignore ✅
+```
+# Output directory (pipeline outputs)
+output/
+```
+**File:** `.gitignore:58-59`
+
+### Directory Structure
+
+```
+Bible/
+├── output/                    # NEW - All pipeline outputs go here
+│   ├── *.db                   # Database files
+│   ├── *_log.txt              # Processing logs
+│   ├── *_results.json         # Summary statistics
+│   ├── *_failures.json        # Failure manifests
+│   ├── *_manifest.json        # Processing manifests
+│   └── debug/                 # Debug response files
+│       └── debug_response_*.json
+├── private/                   # Pipeline source code (no outputs)
+├── database/                  # Production databases (tracked)
+└── docs/                      # Documentation
+```
+
+### Benefits
+
+1. **Clean separation** - Source code in `private/`, outputs in `output/`
+2. **Git-friendly** - All outputs ignored, no accidental commits of large files
+3. **Easy cleanup** - Delete `output/` to clear all pipeline outputs
+4. **Consistent paths** - All outputs in one predictable location
+
+---
+
 ## Related Documentation
 
 - [PARALLEL_PROCESSING_ISSUES.md](PARALLEL_PROCESSING_ISSUES.md) - Detailed technical analysis
