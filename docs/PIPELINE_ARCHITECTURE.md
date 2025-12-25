@@ -2,7 +2,7 @@
 
 **Part 1 Documentation: Data Generation Pipeline**
 
-*Last Updated: December 2025 (v2.2.0)*
+*Last Updated: December 2025 (v2.2.1)*
 
 ---
 
@@ -282,26 +282,43 @@ SQLite database manager for:
 
 ## Processing Modes
 
-### Batched Chapter Processing with Parallel Chapters (v2.2.0)
+### Batched Chapter Processing with Parallel Chapters (v2.2.0+)
 
 **Used for:** All supported books (Genesis through Jeremiah)
 
-**Architecture:**
+**Architecture (v2.2.1 - WriteQueue):**
 - Each chapter is processed as a single batched API call
 - Multiple chapters can be processed in parallel (default: 3 parallel chapters)
-- Thread-safe database operations via locking
+- **WriteQueue architecture** eliminates database lock contention (new in v2.2.1)
 
-**Flow:**
+**Flow (v2.2.1):**
 1. Build list of all chapter tasks from user selection
-2. Submit chapters to ThreadPoolExecutor (default: 3 workers)
-3. Each worker processes one chapter:
+2. Start WriteQueue with dedicated writer thread
+3. Submit chapters to ThreadPoolExecutor (default: 3 workers)
+4. Each worker processes one chapter:
    a. Fetch all verses for chapter via Sefaria API (with caching)
    b. Build single prompt with ALL verses in chapter
    c. Single GPT-5.1 API call with streaming
    d. Parse JSON array with verse-by-verse results
-   e. Bulk validation in single API call
-   f. Thread-safe database commits
-4. Results aggregated across all parallel workers
+   e. **Submit prepared data to WriteQueue** (no direct DB writes)
+   f. Wait for write confirmation
+5. Writer thread processes queue sequentially (zero lock contention)
+6. Results aggregated across all parallel workers
+
+**WriteQueue Architecture Diagram (v2.2.1):**
+```
+Workers (3 threads)              Write Queue            Writer Thread
+    |                               |                       |
+    |-- API call (parallel) --------|                       |
+    |                               |                       |
+    |-- put(chapter_data) --------->|                       |
+    |                               |<-- get() -------------|
+    |                               |                       |
+    |                               |       insert all ---->|
+    |                               |       commit -------->|
+    |                               |                       |
+    |-- API call (parallel) --------|                       |
+```
 
 **Advantages:**
 - 95% token savings vs. per-verse processing
@@ -720,4 +737,72 @@ MAX_COMPLETION_TOKENS_PROPHETIC = 100000  # For Isaiah, Jeremiah
 
 ---
 
-*Document generated from codebase analysis. For schema details, see `DATABASE_SCHEMA.md`. For methodology, see `METHODOLOGY.md`. For Jeremiah-specific guidance, see `JEREMIAH_PROCESSING.md`.*
+## Version 2.2.1 Features (December 2025)
+
+### Major Changes
+
+#### 1. WriteQueue Architecture - Eliminates Database Lock Contention
+
+**Problem Solved:** Running parallel workers caused 70%+ chapter failures due to `database_lock_timeout`. Multiple workers finishing API calls simultaneously all competed for database locks.
+
+**Solution:** WriteQueue architecture with dedicated writer thread.
+
+```python
+class ChapterWriteQueue:
+    """Thread-safe queue for chapter write operations with dedicated writer thread."""
+
+    def __init__(self, db_path, logger, validator=None, divine_names_modifier=None)
+    def start_writer(self)
+    def stop_writer(self, timeout=300.0)
+    def submit_chapter(self, book, chapter, verses_data, instances_data, metadata) -> chapter_key
+    def wait_for_result(self, chapter_key, timeout=300.0) -> result_dict
+```
+
+**Key Benefits:**
+- **Zero database lock contention** - Only writer thread touches database
+- **Parallel API calls preserved** - Workers make LLM calls concurrently (3x speedup)
+- **Atomic chapter commits** - Writer inserts all verses+instances, then commits
+- **No single-verse failure risk** - Entire chapter succeeds or fails as unit
+
+#### 2. Modified Functions
+
+```python
+# process_chapter_batched() now supports return_data_only mode
+def process_chapter_batched(..., return_data_only: bool = False):
+    # When True: returns prepared data instead of writing to DB
+    # Used by WriteQueue architecture
+
+# process_single_chapter_task() now accepts write_queue parameter
+def process_single_chapter_task(..., write_queue: ChapterWriteQueue = None):
+    # When write_queue provided: submits to queue instead of direct writes
+
+# process_chapters_parallel() uses WriteQueue by default
+def process_chapters_parallel(..., use_write_queue: bool = True):
+    # Set use_write_queue=False for legacy behavior
+```
+
+#### 3. Backward Compatibility
+
+Legacy mode (direct database writes with locking) is still available:
+
+```python
+results = process_chapters_parallel(..., use_write_queue=False)
+```
+
+### Configuration Constants (v2.2.1)
+
+```python
+PIPELINE_VERSION = "2.2.1"
+# WriteQueue enabled by default in process_chapters_parallel()
+```
+
+### Performance Comparison
+
+| Configuration | Failure Rate | Notes |
+|---------------|--------------|-------|
+| v2.2.0 (lock-based) | ~70% with 3 workers | Database lock timeout |
+| v2.2.1 (WriteQueue) | ~0% with 3 workers | Zero lock contention |
+
+---
+
+*Document generated from codebase analysis. For schema details, see `DATABASE_SCHEMA.md`. For methodology, see `METHODOLOGY.md`. For session notes, see `session_notes.md`.*
