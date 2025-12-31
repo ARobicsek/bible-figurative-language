@@ -1,0 +1,493 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 47:1",
+    "deliberation": "I checked whether the verse is a purely historical heading or if it uses any stock prophetic formulas that are figurative. I judged (1) the formula 'the word of YHWH ... to Jeremiah' as a mild but genuine metaphor/personification of God's message, and (2) 'Pharaoh struck Gaza' as using the city-name metonymically for its inhabitants. No similes, hyperbole, or irony appear.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁ֨ר הָיָ֧ה דְבַר־יְהֹוָ֛ה אֶל־יִרְמְיָ֥הוּ",
+        "english_text": "the word of YHWH that came to Jeremiah",
+        "target": [
+          "God’s prophetic message to Jeremiah",
+          "prophetic revelation",
+          "divine–human communication"
+        ],
+        "vehicle": [
+          "a concrete 'word' that comes to someone",
+          "moving object / emissary",
+          "spatial movement / messenger imagery"
+        ],
+        "ground": [
+          "the message reaches Jeremiah as if an entity arrives to him",
+          "arrival / approach",
+          "experiential structure of receiving a visitor or object"
+        ],
+        "posture": [
+          "presents Jeremiah’s words as directly authorized by YHWH",
+          "assertion of revelatory authority",
+          "theological / prophetic framing"
+        ],
+        "explanation": "God’s abstract communication is depicted as a concrete 'word' that comes to Jeremiah like an arriving entity or emissary, a conventional prophetic metaphor that personifies the divine message.",
+        "confidence": 0.87
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יַכֶּ֥ה פַרְעֹ֖ה אֶת־עַזָּֽה",
+        "english_text": "Pharaoh conquered/struck Gaza",
+        "target": [
+          "the people and political power of Gaza",
+          "inhabitants and leadership of a city",
+          "war and international politics"
+        ],
+        "vehicle": [
+          "the place-name 'Gaza'",
+          "city / geographic location",
+          "geography / urban space"
+        ],
+        "ground": [
+          "the city-name stands for those who live and rule there",
+          "association of place with its population",
+          "conventional place-for-people metonymy"
+        ],
+        "posture": [
+          "reports a historical act of conquest using compact language",
+          "succinct historical notation",
+          "narrative / historical framing"
+        ],
+        "explanation": "The phrase speaks of Pharaoh striking the city 'Gaza', but the intended referent is its inhabitants and regime; the city-name is used metonymically for the people.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 47:2",
+    "deliberation": "I noted the rising 'waters from the north' and their becoming a 'raging torrent' that flood land, city, and inhabitants—this is the standard prophetic flood-metaphor for an invading army. I also examined the phrase 'land and its fullness, city and its inhabitants' as a meristic way of saying 'everything', and 'all the inhabitants of the land shall howl' as a probable rhetorical universal (hyperbole). There are no explicit similes ('like/as'), and no irony.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה־מַ֜יִם עֹלִ֤ים מִצָּפוֹן֙ וְהָיוּ֙ לְנַ֣חַל שׁוֹטֵ֔ף וְיִשְׁטְפוּ֙ אֶ֣רֶץ וּמְלוֹאָ֔הּ עִ֖יר וְיֹ֣שְׁבֵי בָ֑הּ",
+        "english_text": "See, waters are rising from the north, they shall become a raging torrent, they shall flood the land and its fullness, the town and those who live in it",
+        "target": [
+          "the invading force/judgment coming from the north (e.g., Babylonian army)",
+          "military invasion as divine judgment",
+          "war and historical catastrophe"
+        ],
+        "vehicle": [
+          "rising waters that become a raging, overflowing torrent",
+          "floodwaters / inundation",
+          "natural disaster / hydrological imagery"
+        ],
+        "ground": [
+          "both an invading army and a flood arrive from elsewhere and overwhelm, cover, and destroy everything in their path",
+          "overwhelming, unstoppable, all-encompassing destruction",
+          "shared experiential pattern of being overrun"
+        ],
+        "posture": [
+          "warns hearers of the terrifying, inescapable nature of the coming judgment",
+          "threatening prophetic warning",
+          "theological interpretation of invasion as divinely sent disaster"
+        ],
+        "explanation": "The northern invader is depicted as floodwaters that rise and become a torrent engulfing land, town, and inhabitants, a sustained metaphor portraying the invasion as an overwhelming inundation.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֶ֣רֶץ וּמְלוֹאָ֔הּ עִ֖יר וְיֹ֣שְׁבֵי בָ֑הּ",
+        "english_text": "the land and its fullness, the town and those who live in it",
+        "target": [
+          "everything in the affected territory—people, goods, and settlements",
+          "totality of the land and its contents",
+          "society and environment as a whole"
+        ],
+        "vehicle": [
+          "paired elements: land // its fullness; town // its inhabitants",
+          "meristic/synecdochic pair",
+          "rhetorical enumeration of parts to indicate the whole"
+        ],
+        "ground": [
+          "naming land with its 'fullness' and town with its residents implies nothing is excluded",
+          "comprehensiveness / inclusiveness",
+          "using parts/aspects to evoke the totality"
+        ],
+        "posture": [
+          "emphasizes the exhaustive scope of what the flood/judgment will reach",
+          "intensifying and totalizing description",
+          "prophetic rhetoric of complete devastation"
+        ],
+        "explanation": "By coupling 'land and its fullness' with 'town and those who live in it', the verse uses a meristic, synecdochic expression to signify that every aspect of the territory and its population is included.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֹּ֖ל יוֹשֵׁ֥ב הָאָֽרֶץ",
+        "english_text": "all the inhabitants of the land",
+        "target": [
+          "the population affected by the coming disaster (Philistine territory and neighboring peoples)",
+          "large numbers of people in the region",
+          "society under judgment"
+        ],
+        "vehicle": [
+          "the universal expression 'all the inhabitants of the land'",
+          "totalizing quantifier phrase",
+          "rhetorical universals"
+        ],
+        "ground": [
+          "literal totality is overstated to convey that suffering will be extremely widespread",
+          "extreme breadth / near universality",
+          "hyperbolic expansion of scope for emotional effect"
+        ],
+        "posture": [
+          "heightens the sense of horror and universality of the lamentation",
+          "emotional intensification through exaggeration",
+          "prophetic pathos"
+        ],
+        "explanation": "The phrase likely exaggerates for effect, using a rhetorical universal to suggest that virtually everyone in the land will be howling in distress.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 47:3",
+    "deliberation": "I distinguished between vivid but literal battle sound-imagery and actual figures of speech. The lists of 'stamping hoofs', 'noise of chariots', and 'rumbling of wheels' are concrete. The clause 'fathers will not turn to sons' is a strong expression of panic; I treat it as rhetorical hyperbole. The phrase 'from the slackness of hands' is a recognized Hebrew idiom/metaphor for helplessness or loss of courage.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מֵרִפְי֖וֹן יָדָֽיִם",
+        "english_text": "out of slackness of hands",
+        "target": [
+          "the parents’ utter helplessness and loss of will to act",
+          "discouragement / paralysis of action",
+          "emotional and psychological state in war"
+        ],
+        "vehicle": [
+          "hands that are slack/weak",
+          "physical weakness of limbs",
+          "body imagery"
+        ],
+        "ground": [
+          "slack hands cannot grasp, hold, or act, just as the terrified people feel unable to act",
+          "inability / loss of strength and resolve",
+          "mapping physical limpness to psychological collapse"
+        ],
+        "posture": [
+          "vividly conveys the inner collapse produced by the invading army",
+          "dramatic description of panic",
+          "prophetic evocation of terror"
+        ],
+        "explanation": "The idiom portrays psychological and moral collapse in terms of physically slack hands, a bodily metaphor for helplessness and fear.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא־הִפְנ֤וּ אָבוֹת֙ אֶל־בָּנִ֔ים",
+        "english_text": "fathers shall not turn to their children",
+        "target": [
+          "the extreme disruption of normal parental concern due to terror",
+          "family bonds under overwhelming fear",
+          "social behavior in crisis"
+        ],
+        "vehicle": [
+          "the statement that fathers will not even look toward their sons",
+          "negation of an expected parental response",
+          "family-relational image"
+        ],
+        "ground": [
+          "such neglect of one’s own children expresses a level of panic so great that self-preservation overwhelms natural affection",
+          "extreme degree of fear and disorientation",
+          "using an unthinkable scenario to convey intensity"
+        ],
+        "posture": [
+          "underscores the horror of the coming invasion by exaggerating its psychological impact",
+          "shock-oriented exaggeration",
+          "prophetic rhetoric of catastrophe"
+        ],
+        "explanation": "The saying likely overstates for impact: it paints a picture of panic so intense that even fathers supposedly ignore their children, a hyperbolic way to express utter terror.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 47:4",
+    "deliberation": "I looked for whether 'the day that is coming' functions more than temporally, and whether YHWH’s role as 'ravager' is anthropomorphic. 'The day that is coming to ravage' personifies a time-period as an approaching plunderer, a metonymic personification for the judgment-event. 'YHWH will ravage the Philistines' depicts God as a human warrior/plunderer acting through invading forces, a central warrior metaphor; I did not count 'cut off every helper' as a separate figure but as standard lexical usage.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־הַיּ֗וֹם הַבָּא֙ לִשְׁד֣וֹד אֶת־כׇּל־פְּלִשְׁתִּ֔ים",
+        "english_text": "Because of the day that is coming for ravaging all the Philistines",
+        "target": [
+          "the future period/event of Philistine judgment by invading powers",
+          "appointed time of national catastrophe",
+          "history under divine providence"
+        ],
+        "vehicle": [
+          "a 'day' that is coming to plunder",
+          "personified time as an approaching plunderer",
+          "temporal concept treated as an acting agent"
+        ],
+        "ground": [
+          "a fixed time for judgment approaches inevitably like an advancing raider who will strip and destroy",
+          "inevitability and nearness of a destructive event",
+          "shared notion of something drawing near and bringing loss"
+        ],
+        "posture": [
+          "casts the looming judgment as an unavoidable, scheduled event that advances toward the Philistines",
+          "foreboding prophetic announcement",
+          "theological framing of history as divinely appointed 'day'"
+        ],
+        "explanation": "The 'day' is a metonym for the event of judgment and is personified as an oncoming ravager, blending temporal language with attacker imagery to stress the certainty and approach of catastrophe.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּֽי־שֹׁדֵ֤ד יְהֹוָה֙ אֶת־פְּלִשְׁתִּ֔ים",
+        "english_text": "For YHWH will ravage the Philistines",
+        "target": [
+          "YHWH’s act of bringing military disaster upon the Philistines (likely via human armies)",
+          "divine judgment executed through warfare",
+          "theological interpretation of international events"
+        ],
+        "vehicle": [
+          "YHWH portrayed as a 'ravager' or plundering warrior",
+          "human warrior / raider",
+          "warfare imagery"
+        ],
+        "ground": [
+          "both a warrior-plunderer and YHWH’s judgment strip, despoil, and overpower their targets",
+          "violent overpowering and despoiling of the enemy",
+          "shared features of power, aggression, and taking spoil"
+        ],
+        "posture": [
+          "asserts that behind the human military action stands YHWH acting as the true attacking warrior",
+          "reframing disaster as divinely orchestrated",
+          "theological, not merely political, explanation"
+        ],
+        "explanation": "God is depicted in human warrior terms as one who 'ravages' the Philistines, a metaphorical and anthropomorphic way of describing his judgment carried out through military defeat.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 47:5",
+    "deliberation": "I examined whether 'baldness' and 'Ashkelon is destroyed/silenced' are literal or figurative. 'Baldness has come upon Gaza' treats the city as a mourning person whose head is shaved, a personification/metaphor for communal grief and desolation. 'Ashkelon is nidmeta' also treats the city as a person whose voice/life is cut off, another personification. The self-gashing is a literal mourning practice, so I did not treat it as figurative here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בָּ֤אָה קׇרְחָה֙ אֶל־עַזָּ֔ה",
+        "english_text": "Baldness has come upon Gaza",
+        "target": [
+          "the devastated and grieving condition of Gaza’s populace/city",
+          "communal mourning and desolation",
+          "urban community under judgment"
+        ],
+        "vehicle": [
+          "a person upon whom baldness has come (shaved head in mourning)",
+          "mourner with a shaved/bald head",
+          "body and mourning customs"
+        ],
+        "ground": [
+          "a bereaved person shaves the head as a visible sign of grief, just as the city’s devastation makes it figuratively 'bald'",
+          "visible, disfiguring sign of calamity and sorrow",
+          "mapping physical bareness to social/urban emptiness"
+        ],
+        "posture": [
+          "laments Gaza’s fate in the language of mourning rites applied to the city itself",
+          "mournful, elegiac tone",
+          "prophetic poetry of city-as-person"
+        ],
+        "explanation": "The city of Gaza is personified as a mourner whose head has become bald, using the cultural sign of shaved heads in grief as a metaphor for the city’s devastated state.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִדְמְתָ֥ה אַשְׁקְל֖וֹן",
+        "english_text": "Ashkelon is destroyed/silenced",
+        "target": [
+          "the destruction and depopulation of Ashkelon",
+          "city’s downfall",
+          "urban ruin through warfare"
+        ],
+        "vehicle": [
+          "a person who has been silenced or brought to nothing",
+          "silenced/destroyed living being",
+          "voice and life imagery"
+        ],
+        "ground": [
+          "a destroyed, depopulated city is like a person whose voice and life have been cut off",
+          "cessation of activity compared to deathly silence",
+          "absence of sound and life as markers of ruin"
+        ],
+        "posture": [
+          "dramatizes the city’s ruin by treating it as a silenced person",
+          "poetic lamentation over the city",
+          "prophetic pathos toward urban destruction"
+        ],
+        "explanation": "Ashkelon is personified as someone struck dumb or annihilated; its destruction is described as if the city itself has been silenced, emphasizing the finality of its fall.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 47:6",
+    "deliberation": "I assessed whether the address to the 'sword of YHWH' is merely symbolic or actively personifying. The verse vocatively addresses the sword, asks when it will be quiet, and commands it to withdraw into its sheath and rest—clearly personifying the sword and using it as a metaphor/metonymy for the ongoing war/judgment. There is no simile or hyperbole distinct from this extended figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "ה֗וֹי חֶ֚רֶב לַיהֹוָ֔ה עַד־אָ֖נָה לֹ֣א תִשְׁקֹ֑טִי הֵאָֽסְפִי֙ אֶל־תַּעְרֵ֔ךְ הֵרָגְעִ֖י וָדֹֽמִּי",
+        "english_text": "O sword of YHWH, when will you be quiet at last? Withdraw into your sheath; rest and be still!",
+        "target": [
+          "the ongoing warfare/judgment YHWH is carrying out (e.g., through Babylon) against the Philistines",
+          "divine judgment expressed in military violence",
+          "historical catastrophe under divine control"
+        ],
+        "vehicle": [
+          "a sword belonging to YHWH that can be restless, quiet, sheathed, or at rest",
+          "personified weapon / agent",
+          "martial implement in action and repose"
+        ],
+        "ground": [
+          "just as a drawn sword actively kills until returned to its sheath, the current warfare persists until YHWH ceases his judgment",
+          "continuity and cessation of destructive activity",
+          "shared notions of being active vs. at rest under a higher will"
+        ],
+        "posture": [
+          "voices a plea that the divine instrument of judgment might cease its work and be put away",
+          "lament and intercession for an end to violence",
+          "theological reflection on God’s agency in war"
+        ],
+        "explanation": "The 'sword of YHWH' is a metaphor and metonymy for the destructive war he is allowing; it is personified as a restless agent addressed directly and urged to return to its sheath and rest.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 47:7",
+    "deliberation": "I read this as a direct continuation of the sword image from v. 6. The pronoun 'her' refers back to the personified sword, which here is said to have received orders and an assignment from YHWH against Ashkelon and the seacoast. That maintains the metaphor of war as YHWH’s sword and intensifies its personification as an obedient agent. There are no separate similes, hyperboles, or ironies.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֵ֣יךְ תִּשְׁקֹ֔טִי וַיהֹוָ֖ה צִוָּה־לָ֑הּ אֶֽל־אַשְׁקְל֛וֹן וְאֶל־ח֥וֹף הַיָּ֖ם שָׁ֥ם יְעָדָֽהּ",
+        "english_text": "How can it be quiet when YHWH has given it orders against Ashkelon and the seacoast, given it assignment there?",
+        "target": [
+          "the divinely directed campaign of judgment against Ashkelon and the Philistine coast",
+          "military action as execution of divine commission",
+          "warfare under God’s sovereign directive"
+        ],
+        "vehicle": [
+          "a 'she' (the sword) that has been commanded and assigned a mission",
+          "obedient agent/soldier carrying out orders",
+          "military subordinate imagery"
+        ],
+        "ground": [
+          "like a commissioned agent cannot rest until its task is complete, the divinely mandated warfare cannot cease until YHWH’s purpose is fulfilled",
+          "necessity and continuation of action under command",
+          "shared pattern of mission, obedience, and completion"
+        ],
+        "posture": [
+          "explains why the destructive activity cannot stop: it is under divine orders and appointment",
+          "resigned acknowledgment of inevitable judgment",
+          "theological rationale for ongoing calamity"
+        ],
+        "explanation": "Continuing the sword metaphor, the verse speaks of 'her' (the sword) as having received commands and an assignment from YHWH against Ashkelon and the coast, personifying the war as an obedient agent under divine orders.",
+        "confidence": 0.95
+      }
+    ]
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 48:1",
+    "deliberation": "This verse is a technical boundary description with toponyms and cardinal directions. I checked phrases like 'from the eastern border to the sea' and 'at the northern end' for possible idiomatic or metaphorical usage, but they function purely geographically. No metaphor, simile, personification, or other figure is signaled in the Hebrew.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 48:2",
+    "deliberation": "The verse continues the schematic allotment formula 'from the eastern border to the western border' with the name of a tribe. This is straightforward territorial description without figurative expressions. I considered whether 'border' might be used metonymically, but here it clearly means literal boundary.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 48:3",
+    "deliberation": "Same formulaic geographic language as vv. 1–2: literal boundaries and tribal name. No idioms or evaluative language; it is cadastral prose. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 48:4",
+    "deliberation": "Again we have a repetitive distribution formula—tribal name + literal borders. I checked for any metaphorical use of 'border' or 'face/side' (פְּאַת), but in this context they function as technical spatial terms. No figures of speech.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 48:5",
+    "deliberation": "This verse mirrors the pattern of the preceding verses with no evaluative, emotional, or non-literal language. It is a literal allocation statement only.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 48:6",
+    "deliberation": "Once more a literal geographical allotment using standard boundary terminology. I considered whether the east–west span could be a merism for totality, but it clearly describes actual spatial extent rather than 'everywhere.'",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 48:7",
+    "deliberation": "Identical structural pattern to vv. 2–6: one tribe, literal borders. No metaphor, simile, personification, idiom, or other figure in the Hebrew phrasing.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 48:8",
+    "deliberation": "The verse introduces the 'terumah' (reserve/contribution) and gives literal measurements, also stating that 'the sanctuary shall be in its midst.' 'In the middle' (בְּתוֹכוֹ) is spatial, not metaphorical, and 'terumah' here is a technical term for set-apart land. I considered whether 'reserve that you lift up' (אֲשֶׁר־תָּרִימוּ) was figurative, but in priestly diction it is conventional cultic terminology rather than a live metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 48:9",
+    "deliberation": "Continues literal measurements of the 'reserve' for YHWH. The language is entirely technical (length/width numbers) with a straightforward dative 'for YHWH'. No figurative device is employed.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 48:10",
+    "deliberation": "Further detailed measurements, specifying cardinal directions and the sanctuary 'in the middle'. All terms are spatial and cultic in a literal sense. I checked for merism in listing directions, but here they are precise sides of a rectangle, not a stylistic totality figure.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 48:11",
+    "deliberation": "This verse shifts from spatial to behavioral description. The key expression is 'did not go astray' (לֹא־תָעוּ) contrasted with 'when the Israelites went astray' and 'as the Levites went astray.' The root תעה literally means to wander off/err as from a path and is here applied to covenantal unfaithfulness. That is a conventional metaphor/idiom for apostasy. 'Kept my charge' is technical priestly language and is less clearly a live metaphor, so I treat only 'go astray' as figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁ֥ר שָׁמְר֖וּ מִשְׁמַרְתִּ֑י אֲשֶׁ֣ר לֹֽא־תָע֗וּ בִּתְעוֹת֙ בְּנֵ֣י יִשְׂרָאֵ֔ל כַּאֲשֶׁ֥ר תָּע֖וּ הַלְוִיִּֽם",
+        "english_text": "who kept My charge and did not go astray, as the Levites did when the people of Israel went astray.",
+        "target": [
+          "Israel’s and the Levites’ covenant unfaithfulness",
+          "moral/spiritual behavior",
+          "religious obedience and apostasy"
+        ],
+        "vehicle": [
+          "straying from a physical path or way",
+          "wandering movement off the correct road",
+          "spatial movement/orientation"
+        ],
+        "ground": [
+          "deviation from an established course or standard",
+          "being misdirected, in error, leaving the correct route",
+          "contrast between norm and deviation"
+        ],
+        "posture": [
+          "negative evaluation of unfaithfulness contrasted with praise for fidelity",
+          "divine moral/judicial stance",
+          "theological judgment on obedience vs. apostasy"
+        ],
+        "explanation": "The verb 'go astray' literally describes physical wandering but is here used metaphorically and idiomatically for religious and moral deviation from God’s commands.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 48:12",
+    "deliberation": "Describes the Zadokite priests’ portion as a 'most holy' reserve adjacent to the Levites. 'Most holy' (קֹדֶשׁ קֳדָשִׁים) is technical cultic terminology for degree of sanctity, not a metaphor; it classifies, not compares. No figurative language is present.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 48:13",
+    "deliberation": "Strictly quantitative description of the Levites’ land: length, width, alignment relative to the priests. No non-literal usage of terms like 'border' or 'before/alongside'; it functions as survey language.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 48:14",
+    "deliberation": "Legal-prohibitive wording about sale or transfer of land. 'The choicest of the land' (רֵאשִׁית הָאָרֶץ) uses רֵאשִׁית in a standard lexical sense 'first/best portion'; this is a conventional term, not a live metaphor of 'head' for 'best.' The sanctity statement 'for it is holy to YHWH' is declarative, not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 48:15",
+    "deliberation": "Designates a remaining strip as 'common' (חֹל) for city use, with 'dwellings and pasture' and the city 'in its middle.' Holiness terminology (holy/common) is used in its technical cultic sense. No imagery or figurative turn; it is spatial and legal description.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 48:16",
+    "deliberation": "Lists the four equal sides of the city, all 4,500 cubits. While mentioning all four directions can sometimes be used as a merism for totality, here the context is precise city planning; the numbers are specific, so the list is architectural, not rhetorical. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 48:17",
+    "deliberation": "Measures the pasture land extending from the city on each side. 'Pasture' and the distances are entirely literal. I examined whether 'migrash' (open land) might carry symbolic overtones, but here it is plainly functional land use, not metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 48:18",
+    "deliberation": "Describes remaining land strips and their produce as food for city workers. The agricultural terms 'produce' and 'bread/food' are literal in context; no metaphor of 'bread' for something spiritual is implied. No idioms beyond literal usage.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 48:19",
+    "deliberation": "States that workers from all tribes will cultivate the land. Both 'work' (עבד) and 'cultivate' are used in their plain, agricultural/administrative senses. No personification or other figures appear.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 48:20",
+    "deliberation": "Summarizes the size of the 'entire reserve' as a square. The mathematical description is literal; 'reserve of holiness' is a technical cultic classification as in earlier verses. I saw no idiomatic or metaphorical expression.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 48:21",
+    "deliberation": "Defines what 'remains' for the prince around the holy reserve and city, using spatial relations ('from the border of...', 'to the eastern boundary') and mentions the temple sanctuary 'in its midst.' This continues the cadastral description without rhetorical flourish. Even though the prince’s central location has symbolic import, the linguistic form itself is not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 48:22",
+    "deliberation": "Clarifies that the Levites’ and city’s holdings lie 'in the middle' of the prince’s area, between Judah and Benjamin. 'In the middle,' 'between,' and 'belong to' (יִהְיֶה) are basic spatial/possessive terms. No metaphors or idioms are employed.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 48:23",
+    "deliberation": "Resumes the formulaic tribal allotment description: 'From the eastern border to the western border: Benjamin—one.' This is straightforward and literal with no figural element.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 48:24",
+    "deliberation": "Same allotment formula 'on the border of Benjamin... Simeon—one.' This is purely spatial assignment. I checked for any idiomatic use of 'border' (גְּב֣וּל), but it retains its concrete geographic sense.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 48:25",
+    "deliberation": "Again, literal spatial allocation of territory 'on the border of Simeon' to Issachar. No metaphoric or symbolic usage is signaled by the wording.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 48:26",
+    "deliberation": "Continues the same distribution pattern: tribe names and cardinal boundaries. All terms are used lexically, not figuratively.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 48:27",
+    "deliberation": "Repeats the east–west border formula for Gad. I examined whether the series of tribal names might function as a merism for 'all Israel,' but here they are itemized allocations, not a stylistic totality expression.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 48:28",
+    "deliberation": "Specifies Gad’s southern border with references to Tamar, the 'Waters of Meribath-kadesh,' the wadi of Egypt, and the Great Sea. These are toponyms; 'Waters of Meribah(-kadesh)' is historically meaningful but functions here as a proper name. The boundary verbs are literal. No figurative device is active in the phrasing.",
+    "instances": []
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 48:29",
+    "deliberation": "Summarizes: 'This is the land which you shall cause to fall as an inheritance to the tribes of Israel, and these are their portions.' The key phrase תַּפִּילוּ מִנַּחֲלָה literally 'you shall cause [it] to fall for an inheritance' reflects an idiom rooted in lot-casting ('cause a lot to fall'). Even without the explicit noun 'lot,' 'cause to fall' functions idiomatically for 'allot, distribute as inheritance,' drawing on the idea of a lot falling to someone. This is a mild figurative/idiomatic usage.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "זֹ֥את הָאָ֛רֶץ אֲשֶׁר־תַּפִּ֥ילוּ מִֽנַּחֲלָ֖ה לְשִׁבְטֵ֣י יִשְׂרָאֵ֑ל",
+        "english_text": "That is the land that you shall allot as a heritage to the tribes of Israel",
+        "target": [
+          "the act of apportioning land to the tribes",
+          "distribution of an inheritance",
+          "legal allocation of territory"
+        ],
+        "vehicle": [
+          "something falling to someone (e.g., a lot)",
+          "a physical object’s downward motion and landing",
+          "concrete physical events"
+        ],
+        "ground": [
+          "a result that comes to someone decisively",
+          "an outcome determined and received rather than chosen",
+          "link between an event (falling) and final assignment"
+        ],
+        "posture": [
+          "neutral legal-administrative description",
+          "formal covenantal register",
+          "juridical framing of land distribution"
+        ],
+        "explanation": "The idiom 'cause [the land] to fall as an inheritance' reflects the practice of lot-casting, where a lot ‘falls’ to someone, and stands metonymically for assigning the land to the tribes.",
+        "confidence": 0.65
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 48:30",
+    "deliberation": "Introduces the city’s 'exits' on the north side and gives precise measurement. 'Exits' (תּוֹצְאוֹת) is used in its straightforward sense of points of egress. No figurative sense (such as 'results' or 'offspring') is intended here.",
+    "instances": []
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 48:31",
+    "deliberation": "Describes three city gates on the north, each named for a tribe. Naming the gates after tribes carries symbolic meaning but linguistically it is simply a naming convention, not a rhetorical figure like metaphor or metonymy in this sentence. The phrase 'on the names of the tribes' (עַל־שְׁמוֹת שִׁבְטֵי יִשְׂרָאֵל) indicates that the gates bear those names literally.",
+    "instances": []
+  },
+  {
+    "verse": 32,
+    "reference": "Ezekiel 48:32",
+    "deliberation": "Similar to v. 31, this verse enumerates east-side gates with tribal names. The language is literal architectural description; I considered if 'gate of X' might be metonymic for the people, but here it denotes actual gate designations.",
+    "instances": []
+  },
+  {
+    "verse": 33,
+    "reference": "Ezekiel 48:33",
+    "deliberation": "Repeats the same pattern for the south side: measurement plus three named gates. Again, the wording is literal and technical; any symbolism is conceptual rather than a figure of speech in the Hebrew.",
+    "instances": []
+  },
+  {
+    "verse": 34,
+    "reference": "Ezekiel 48:34",
+    "deliberation": "Completes the city plan with west-side gates and their names. No unusual idioms, comparisons, or personifications are used; it's a straightforward list.",
+    "instances": []
+  },
+  {
+    "verse": 35,
+    "reference": "Ezekiel 48:35",
+    "deliberation": "Gives the total circumference and then the city’s eschatological name 'YHWH is there' (יְהוָה שָׁמָּה). The circumference statement is literal. The name, however, is a theologically loaded predicate: it describes YHWH as 'there' in a spatial sense, applying human-like localization to God. The city’s name functions metonymically for the enduring reality of divine presence, and the predicate 'is there' uses a spatial metaphor for covenantal nearness. I treat this as a metaphor with a metonymic naming function.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשֵׁם־הָעִ֥יר מִיּ֖וֹם יְהֹוָ֥ה׀ שָׁמָּה",
+        "english_text": "and the name of the city from that day on shall be “GOD Is There.”",
+        "target": [
+          "the restored city/community and its experience of God",
+          "the state of covenantal restoration and divine favor",
+          "the relationship between YHWH and His people in the eschatological future"
+        ],
+        "vehicle": [
+          "a city where someone is physically present or resides",
+          "spatial nearness and localized presence",
+          "ordinary human dwelling and proximity"
+        ],
+        "ground": [
+          "closeness implies protection, accessibility, and relationship",
+          "to be ‘there’ with someone is to be available and supportive",
+          "spatial nearness as a way to express relational nearness"
+        ],
+        "posture": [
+          "hopeful and celebratory affirmation",
+          "theological promise of enduring presence",
+          "prophetic assurance of restored relationship"
+        ],
+        "explanation": "Calling the city 'YHWH is there' metaphorically portrays God as spatially present in the city, using human-like localized presence to express covenantal nearness; the name itself stands metonymically for the lasting reality of that presence.",
+        "confidence": 0.92
+      }
+    ]
+  }
+]

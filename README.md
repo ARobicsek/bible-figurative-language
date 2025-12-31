@@ -11,7 +11,7 @@
 
 ## 🌟 Overview
 
-Tzafun is a comprehensive research tool that provides access to 8,373 verses from the Torah (Genesis through Deuteronomy) and Psalms, analyzed for figurative language using advanced AI models. It originated with the question - couldn't we use powerful AI tools to compile a 'concordance' of biblical figurative speech? The database now contains 5,865 validated instances of figurative language, including metaphors, similes, personifications, idioms, hyperboles, and metonymies from across the Pentateuch and all 150 chapters of Psalms.
+Tzafun is a comprehensive research tool that provides access to over 13,500 verses from 13 biblical books, analyzed for figurative language using advanced AI models (GPT-5.1, Claude Opus 4.5, Gemini 3.0). It originated with the question - couldn't we use powerful AI tools to compile a 'concordance' of biblical figurative speech? The database now contains over 11,000 validated instances of figurative language, including metaphors, similes, personifications, idioms, hyperboles, and metonymies from across the Torah (Pentateuch), Psalms, Proverbs, and major prophets.
 
 **Key Features:**
 - 🔍 Interactive search across Hebrew and English text
@@ -33,25 +33,34 @@ Tzafun is a comprehensive research tool that provides access to 8,373 verses fro
 
 ## 📈 Database Statistics
 
-The database provides comprehensive coverage of the Torah and Psalms with validated AI analysis:
+The database provides comprehensive coverage across 13 biblical books with validated AI analysis:
 
 | Metric | Count |
 |--------|-------|
-| **Total verses analyzed** | 8,373 |
-| **Verses with figurative language** | 4,214 (50.3%) |
-| **Total figurative instances** | 5,865 |
+| **Total verses analyzed** | 13,548 |
+| **Total figurative instances** | 11,119 |
+| **Books covered** | 13 |
+
+### Coverage by Book Category
+
+| Category | Books | Verses |
+|----------|-------|--------|
+| **Torah (Pentateuch)** | Genesis, Exodus, Leviticus, Numbers, Deuteronomy | 5,846 |
+| **Wisdom Literature** | Psalms, Proverbs | 3,380 |
+| **Major Prophets** | Isaiah, Jeremiah, Ezekiel | 3,927 |
+| **Minor Prophets** | Hosea, Joel, Amos | 395 |
 
 ### By Figurative Type
 
 | Type | Count | Percentage |
 |------|-------|------------|
-| **Idioms** | 2,785 | 47.5% |
-| **Metaphors** | 2,214 | 37.7% |
-| **Metonymies** | 1,720 | 29.3% |
-| **Personifications** | 528 | 9.0% |
-| **Similes** | 323 | 5.5% |
-| **Hyperboles** | 187 | 3.2% |
-| **Other** | 7 | 0.1% |
+| **Metaphors** | 5,368 | 48.3% |
+| **Idioms** | 3,919 | 35.2% |
+| **Metonymies** | 3,213 | 28.9% |
+| **Personifications** | 1,223 | 11.0% |
+| **Similes** | 849 | 7.6% |
+| **Hyperboles** | 784 | 7.1% |
+| **Other** | 185 | 1.7% |
 
 *Note: Percentages sum to more than 100% because phrases can be classified as multiple types simultaneously*
 

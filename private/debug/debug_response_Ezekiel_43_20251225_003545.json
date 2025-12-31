@@ -1,0 +1,502 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 43:1",
+    "deliberation": "Checked for metaphors (e.g., gate as something else), idioms, or symbolic directions. The verse simply narrates movement to a literal gate facing east; no non-literal use of key terms is evident.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 43:2",
+    "deliberation": "Looked at כבוד as possible metonymy and noted the explicit simile with כְקוֹל. Also considered whether the earth being lit is hyperbolic; in Ezekiel's theophanies it functions as literal visionary brightness, so I did not treat it as figurative. Two clear figurative expressions remain.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְקוֹל֗וֹ כְּקוֹל֙ מַ֣יִם רַבִּ֔ים",
+        "english_text": "with a roar like the roar of mighty waters",
+        "target": ["the sound of the God of Israel’s approach", "divine communication/theophanic sound", "religious experience"],
+        "vehicle": ["roar of many waters", "powerful natural sound", "nature"],
+        "ground": ["overwhelming volume and awe‑inspiring power", "auditory intensity and majesty", "shared sensory qualities"],
+        "posture": ["reverent portrayal of divine majesty", "awe‑filled evaluation", "worship/theology"],
+        "explanation": "The approach of God’s glory is compared explicitly to the sound of many waters to convey its power and overwhelming loudness.",
+        "confidence": 0.99
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כְּבוֹד אֱלֹהֵי יִשְׂרָאֵל בָּא מִדֶּרֶךְ הַקָּדִים",
+        "english_text": "the Presence (glory) of the God of Israel was coming from the east",
+        "target": ["the God of Israel in his manifested presence", "divine person", "theology"],
+        "vehicle": ["‘glory’ (כָּבוֹד)", "attribute/visible radiance", "abstract quality"],
+        "ground": ["the visible/weighty manifestation stands for the personal presence of God", "attribute representing its bearer", "conceptual association"],
+        "posture": ["reverent cultic description", "technical theological usage", "priestly/theophanic discourse"],
+        "explanation": "כָּבוֹד (‘glory’) here does not just mean an abstract quality but stands metonymically for God’s manifested presence, almost functioning as a personal agent approaching from the east.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 43:3",
+    "deliberation": "The repeated כְמַרְאֵה merely compares this vision with earlier visions; that is a literal comparison of similar experiences, not a figurative mapping to a different domain. However, “I fell on my face” is a stereotyped formula for prostration in awe; while he can literally fall, the phrase functions idiomatically for a worship posture.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וָאֶפֹּל אֶל־פָּנָי",
+        "english_text": "I fell on my face",
+        "target": ["Ezekiel’s act of worshipful prostration", "reverent response", "religious behavior"],
+        "vehicle": ["falling onto one’s face", "bodily collapse posture", "physical movement"],
+        "ground": ["complete submission and awe expressed through being down on one’s face", "physical lowliness signifying humility and fear", "body posture symbolizing inner attitude"],
+        "posture": ["reverent narrative depiction", "pious self‑humbling", "prophetic worship context"],
+        "explanation": "In biblical narrative, “falling on one’s face” is a conventional idiom for total prostration in awe or worship, highlighting attitude more than the mechanics of literally tripping and hitting the ground.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 43:4",
+    "deliberation": "Again considered whether ‘glory’ is abstract or a metonym for God’s presence. Within Ezekiel’s visions, כבוד יהוה functions as a quasi‑personal, mobile presence; that is a standard metonymic/anthropomorphic usage.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּכְב֥וֹד יְהוָה בָּא אֶל־הַבָּיִת",
+        "english_text": "The Presence (glory) of GOD entered the temple",
+        "target": ["YHWH himself in his indwelling presence", "divine person", "theology"],
+        "vehicle": ["‘glory’ (כָּבוֹד) as something that can move and enter", "quasi‑personal radiant presence", "manifestation/attribute"],
+        "ground": ["the visible, weighty radiance stands for God’s personal entry", "attribute treated as an acting agent", "representation of the unseen by a seen form"],
+        "posture": ["reverent cultic/theophanic description", "affirmation of restored presence", "temple theology"],
+        "explanation": "כְּבוֹד יְהוָה (‘the glory of YHWH’) is an attribute term used metonymically and almost personified as it ‘enters’ the temple, representing YHWH’s own return.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 43:5",
+    "deliberation": "Examined רוּחַ (‘spirit’) to see if it is personified wind; within Ezekiel it usually denotes the Spirit of God as a real agent, so I treated it as literal in the visionary context. The statement that the house was ‘filled with the glory of YHWH’ again uses כָבוֹד in a metonymic/anthropomorphic way.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהִנֵּה מָלֵא כְּבוֹד־יְהוָה הַבָּיִת",
+        "english_text": "lo, the Presence (glory) of GOD filled the temple",
+        "target": ["the actual indwelling of YHWH in the temple", "divine presence", "theology"],
+        "vehicle": ["‘glory’ (כָּבוֹד) conceived as a filling substance", "radiant fullness", "spatially filling phenomenon"],
+        "ground": ["God’s presence is conceived as filling space like a tangible brightness or weight", "attribute used for person/place occupancy", "spatial imagery for presence"],
+        "posture": ["celebratory affirmation of God’s return", "positive evaluative stance", "restoration theology"],
+        "explanation": "The ‘glory of YHWH’ functions metonymically for YHWH’s presence and is described as ‘filling’ the house, a quasi‑physical and personifying way to depict divine indwelling.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 43:6",
+    "deliberation": "The verse simply states that a voice spoke from the house while a man stood beside Ezekiel. No non‑literal body‑part terms, no similes, no idioms beyond standard narrative reporting.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 43:7",
+    "deliberation": "Noted several non‑literal expressions: the temple described as God’s throne/footstool (anthropomorphic metaphor), ‘defile my holy name’ (metonymy: name for reputation/being), and ‘their harlotry’ (metaphor for idolatry). Treated these as three distinct figurative instances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֶת־מְקוֹם כִּסְאִי וְאֶת־מְקוֹם כַּפּוֹת רַגְלַי אֲשֶׁר אֶשְׁכָּן־שָׁם",
+        "english_text": "this is the place of My throne and the place for the soles of My feet, where I will dwell",
+        "target": ["the temple as locus of God’s rule and presence", "cultic institution/place", "religion"],
+        "vehicle": ["throne and footstool of a king", "royal furniture/body parts", "ancient Near Eastern kingship"],
+        "ground": ["just as a throne and footstool mark where a king sits and places his feet, so the temple marks God’s ruling presence resting among Israel", "spatial seat of authority", "concept of sovereignty and nearness"],
+        "posture": ["majestic self‑presentation", "affirmation of divine kingship", "royal theology"],
+        "explanation": "God uses royal and bodily imagery—throne and footstool—to metaphorically construe the temple as the place where his sovereign presence ‘sits’ and ‘rests’ among Israel.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לֹא יְטַמְּאוּ עוֹד בֵּית־יִשְׂרָאֵל שֵׁם קׇדְשִׁי",
+        "english_text": "The House of Israel ... must not again defile My holy name",
+        "target": ["God’s reputation and holiness", "divine identity", "theology"],
+        "vehicle": ["‘name’ (שֵׁם) of God", "label/renown", "linguistic/sign identity"],
+        "ground": ["defiling the ‘name’ stands for disgracing God himself, since the name represents the person and reputation", "part (name) for whole (person)", "cultural association of name with honor"],
+        "posture": ["warning about desecration", "negative moral evaluation", "covenant ethics"],
+        "explanation": "God’s ‘holy name’ functions metonymically for God himself and his reputation; to defile the name is to bring dishonor upon God’s person.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בִּזְנוּתָם",
+        "english_text": "by their apostasy (harlotry)",
+        "target": ["Israel’s idolatrous and covenant‑breaking behavior", "religious/moral conduct", "ethics and worship"],
+        "vehicle": ["sexual prostitution/adultery", "illicit sexual behavior", "family/marital life"],
+        "ground": ["idolatry is like marital infidelity—betrayal of an exclusive covenant bond", "unfaithfulness and illicit intimacy", "social image of treachery"],
+        "posture": ["indignant condemnation", "morally charged accusation", "prophetic lawsuit rhetoric"],
+        "explanation": "The term ‘harlotry’ is a common prophetic metaphor for idolatry, casting Israel’s religious betrayal as sexual unfaithfulness to a covenant partner.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 43:8",
+    "deliberation": "Considered doorposts/thresholds as possibly symbolic; in context they refer concretely to royal or idolatrous buildings abutting the temple. The striking figurative element is ‘I consumed them in my anger’, with אכל used metaphorically for total destruction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וָאֲכַל אֹתָם בְּאַפִּי",
+        "english_text": "and I consumed them in My anger",
+        "target": ["God’s act of judging the people/kings", "divine punishment", "theology/ethics"],
+        "vehicle": ["eating/consuming something in anger", "devouring with the mouth", "bodily action of destroying food"],
+        "ground": ["just as eating consumes and makes something disappear, so God’s wrath brings about complete destruction", "thorough removal and overpowering force", "intensity and finality of the act"],
+        "posture": ["wrathful denunciation", "severe negative evaluation", "judgment oracle"],
+        "explanation": "The verb ‘I consumed (ate) them’ is a metaphor, with some hyperbolic force, for God’s annihilating judgment; people are not literally eaten but utterly destroyed.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 43:9",
+    "deliberation": "Again, ‘harlotry’ is used metaphorically for idolatry. The command to ‘put it far from Me’ uses spatial language for relational/moral distance, but that is tightly bound to the harlotry metaphor; I focus on the main lexical metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "זְנוּתָם מִמֶּנִּי",
+        "english_text": "their apostasy (harlotry) [far] from Me",
+        "target": ["Israel’s idolatrous practices", "religious/moral behavior", "covenant faithfulness"],
+        "vehicle": ["sexual harlotry/adultery", "illicit sexual activity", "family/marital domain"],
+        "ground": ["idolatry is conceptualized as sexual betrayal of a partner, implying intimacy, exclusivity, and treachery", "unfaithfulness and pollution", "social stigma of prostitution"],
+        "posture": ["call to repentant separation from sin", "moral exhortation", "covenant restoration"],
+        "explanation": "The term ‘harlotry’ again metaphorically labels idolatry as sexual infidelity toward God, the covenant partner, from whom such ‘harlotry’ must be put far away.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 43:10",
+    "deliberation": "The verse commands Ezekiel to describe the temple so the house of Israel can measure its plan and become ashamed of their iniquities. ‘Be ashamed’ is an emotional state, not figurative here; the rest is straightforward architectural language.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 43:11",
+    "deliberation": "The verse catalogs features of the temple plan with no metaphorical body‑part terms (other than ordinary ‘entrances’ and ‘exits’), no similes, and no idioms beyond normal instructions. It is literal architectural/procedural description.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 43:12",
+    "deliberation": "Describes the ‘instruction of the house’ and its boundaries as ‘most holy.’ ‘Most holy’ (קֹדֶשׁ קָדָשִׁים) is a technical cultic superlative, not figurative in context; it sets status, not a metaphorical mapping.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 43:13",
+    "deliberation": "Dimensions are mainly literal. The phrase גַּב הַמִּזְבֵּחַ (‘back of the altar’) uses a body‑part term for a structural feature; that is a lexicalized metaphor mapping human/animal anatomy onto architecture.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְזֶה גַּב הַמִּזְבֵּחַ",
+        "english_text": "And this is the height/back of the altar",
+        "target": ["a particular structural part or height of the altar", "architectural feature", "material objects"],
+        "vehicle": ["‘back’ (גַּב) of a body", "body part/anatomy", "human/animal body"],
+        "ground": ["as a back is the rear/upright part of a body, so this section is the raised part of the altar", "shape and positional similarity", "using bodily terms to structure space"],
+        "posture": ["neutral technical description", "architectural clarity", "cultic instruction"],
+        "explanation": "The altar is described using the anatomical term ‘back’, a conventional metaphor that personifies the structure by borrowing human/animal body terminology.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 43:14",
+    "deliberation": "The key phrase מֵחֵיק הָאָרֶץ (‘from the bosom of the earth’) is an obvious metaphor/personification of the earth as having a chest or lap; the rest of the verse lists literal measurements.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּמֵחֵיק הָאָרֶץ",
+        "english_text": "From the trench in the ground (lit. from the bosom of the earth)",
+        "target": ["the lowest recessed level of the altar in the ground", "architectural starting point", "physical structure"],
+        "vehicle": ["‘bosom’ (חֵיק) of the earth", "chest/lap of a person", "human body"],
+        "ground": ["as a bosom is an inner, enfolding part of a person, so the earth’s surface is pictured as an embracing recess that holds the altar’s base", "interior enfolding and support", "body‑based spatial schema"],
+        "posture": ["vivid spatial description", "mildly poetic but technical", "cultic/architectural discourse"],
+        "explanation": "The earth is personified as having a bosom or lap from which the altar rises, using bodily imagery to describe the base level in spatial terms.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 43:15",
+    "deliberation": "The term ‘horns’ (קְרָנוֹת) for the four projections of the altar is a standard architectural metaphor drawn from animal horns; it is first specified here. The rest is literal measurement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלְמַעְלָה הַקְּרָנוֹת אַרְבַּע",
+        "english_text": "with four horns projecting upward",
+        "target": ["the corner projections of the altar", "architectural elements", "cultic objects"],
+        "vehicle": ["animal horns", "protruding bony structures", "animal anatomy"],
+        "ground": ["both are pointed projections extending from a main body, visually and functionally reminiscent of horns", "shape and prominence", "shared visual schema"],
+        "posture": ["technical cultic terminology", "neutral descriptive stance", "temple architecture"],
+        "explanation": "Calling the altar’s corner projections ‘horns’ is a conventional metaphor based on resemblance to animal horns.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 43:16",
+    "deliberation": "Specifies length, breadth, and squareness of the hearth (אֲרִיאֵל); no explicit figurative comparisons or body‑part terms beyond the already lexicalized name of the section. I treat it as architectural description.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 43:17",
+    "deliberation": "Describes dimensions, border, trench, and the orientation of the steps. Terms like ‘border’ and ‘steps’ are literal; no metaphor, simile, or idiom appears here.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 43:18",
+    "deliberation": "Introduces ‘these are the statutes of the altar’ and mentions offering burnt offerings and dashing blood. Within cultic law this is literal procedure; no special metaphorical language beyond standard ritual vocabulary.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 43:19",
+    "deliberation": "Mentions priests ‘who are near to Me’ serving God. In temple idiom this nearness is spatially literal within the sanctuary; the rest describes a literal bull for a sin offering. I did not isolate a clear cross‑domain metaphor beyond standard cultic locutions.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 43:20",
+    "deliberation": "The actions on the altar—‘thus you shall purge it and perform atonement for it’—treat the inanimate altar as bearing sin requiring purgation/atonement. This is a personifying metaphor mapping moral cleansing onto ritual procedures on an object.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְחִטֵּאתָ אֹתוֹ וְכִפַּרְתָּהוּ",
+        "english_text": "thus you shall purge it and perform purification upon it",
+        "target": ["the altar’s ritual/moral status", "cultic object needing cleansing", "ritual system"],
+        "vehicle": ["purging/atoning for a sinner", "moral purification", "ethical/moral domain"],
+        "ground": ["the altar is conceptualized as if it could bear impurity like a person and thus be ‘de‑sinned’ and atoned for", "transfer of sin and cleansing to an object", "shared notion of impurity removable by prescribed action"],
+        "posture": ["ritual‑theological explanation", "sacral concern for purity", "priestly worldview"],
+        "explanation": "Language normally used for morally culpable persons (‘purge, atone for’) is applied to the altar, personifying it and metaphorically construing ritual impurity as removable ‘sin’.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 43:21",
+    "deliberation": "Describes taking the bull of the sin offering and burning it in a designated area outside the sanctuary. All terminology is standard ritual instruction used literally.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 43:22",
+    "deliberation": "As in v.20, the altar is said to be ‘purged’ (חִטְּאוּ אֶת־הַמִּזְבֵּחַ) by the offering, personifying it as if it carried sin. I treat this as a repeated but distinct occurrence of the same metaphor/personification in this verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְחִטְּאוּ אֶת־הַמִּזְבֵּחַ כַּאֲשֶׁר חִטְּאוּ בַּפָּר",
+        "english_text": "and the altar shall be purged [with it] just as it was purged with the bull",
+        "target": ["the altar’s impure state from prior use or presence of sin", "ritual impurity of an object", "cultic system"],
+        "vehicle": ["purging sin from a person", "moral cleansing", "ethical/religious domain"],
+        "ground": ["the altar is treated as if it can be ‘sinned’ and then ‘de‑sinned’ like a person, so ritual defilement is mapped onto a moral impurity schema", "impurity as removable contamination", "shared concept of cleansing through sacrifice"],
+        "posture": ["didactic ritual explanation", "concern for restored purity", "priestly legislation"],
+        "explanation": "The verb ‘to purge/de‑sin’ is applied to the altar, personifying it and employing the moral metaphor of sin as defilement removable through prescribed sacrifice.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 43:23",
+    "deliberation": "Speaks of completing the purging and then offering unblemished animals. The purging in this verse is a summary of the same concept already treated in v.20, but the wording here (‘when you have finished purging’) is procedural, with no additional figurative expression beyond that already captured in the earlier verse.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 43:24",
+    "deliberation": "Instructs offering animals, putting salt on them, and offering as a burnt offering. These are literal ritual actions; no cross‑domain metaphor or special idiom appears.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 43:25",
+    "deliberation": "Lists the daily sequence of offerings for seven days. The number seven has symbolic resonance elsewhere, but here it functions as an actual prescribed duration in a ritual; there is no explicit figurative language in the verse itself.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 43:26",
+    "deliberation": "Again has the altar as the object of ‘atonement’ and ‘purification’ (personifying metaphor as in vv.20,22). Additionally, the idiom ‘fill its hand’ (וּמִלְאוּ יָדָו) is used for consecration—an established technical idiom in priestly texts.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "שִׁבְעַת יָמִים יְכַפְּרוּ אֶת־הַמִּזְבֵּחַ וְטִהֲרוּ אֹתוֹ",
+        "english_text": "Seven days they shall purge the altar and purify it",
+        "target": ["the altar’s state of consecration/impurity", "cultic object’s status", "ritual system"],
+        "vehicle": ["atoning and purifying a person from sin or uncleanness", "moral/spiritual cleansing", "ethical/religious life"],
+        "ground": ["the altar is conceptualized as if it can be cleansed and atoned for like a person, again mapping sin/impurity onto an inanimate object", "contamination removable by ritual process", "shared ideas of purity and atonement"],
+        "posture": ["solemn ritual requirement", "priestly concern for holiness", "cultic theology"],
+        "explanation": "The verbs ‘atone for’ and ‘purify’ are applied to the altar, personifying it and using moral cleansing language for a physical object.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּמִלְאוּ יָדָו",
+        "english_text": "thus shall it be consecrated (lit. they will fill its hand)",
+        "target": ["the act of installing/consecrating the altar for service", "ritual inauguration", "cultic practice"],
+        "vehicle": ["filling someone’s hand with something", "placing objects into a hand", "bodily interaction"],
+        "ground": ["as a filled hand is equipped or supplied for a task, so the altar is fully equipped/authorized for its service", "equipping/empowering through what is placed in the hand", "gesture symbolizing authorization and readiness"],
+        "posture": ["technical consecration idiom", "formal ritual language", "priestly legal style"],
+        "explanation": "The idiom ‘fill the hand’ is used formulaically for consecration; it likely originated in the literal act of placing offerings in the priest’s hands but has become a technical expression for ordaining or dedicating, here applied to the altar.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 43:27",
+    "deliberation": "The phrase ‘I will accept you’ (וְרָצִיתִי אֶתְכֶם) expresses divine favor in terms of acceptance/pleasure; it builds on sacrificial ‘acceptability’ and extends it to the people themselves. This is a relational metaphor drawn from the cult of pleasing offerings.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְרָצִיתִי אֶתְכֶם",
+        "english_text": "and I will extend My favor to you (lit. I will accept you)",
+        "target": ["God’s renewed relationship with the people", "divine favor and reconciliation", "covenant relationship"],
+        "vehicle": ["accepting an offering as pleasing", "favorable reception", "cultic evaluation of sacrifice"],
+        "ground": ["as an acceptable offering meets the standard and is received with pleasure, so the people will be received into God’s favor", "status of being pleasing/approved", "from cultic acceptability to relational approval"],
+        "posture": ["gracious promise of restored favor", "positive evaluative stance", "salvific assurance"],
+        "explanation": "The verb רצה, often used of an acceptable sacrifice, is applied metonymically and metaphorically to the people themselves: they will be like an accepted offering, signifying God’s renewed favor.",
+        "confidence": 0.88
+      }
+    ]
+  }
+]

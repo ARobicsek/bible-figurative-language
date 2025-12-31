@@ -1,0 +1,799 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 25:1",
+    "deliberation": "Looked for metaphors, personifications, and idioms in the prophetic introduction. The formula 'the word of YHWH came to me' uses a motion verb with an abstract noun, which is a conventional idiom grounded in a personifying/metaphorical image of God's message as an arriving entity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "divine communication to Ezekiel",
+          "prophetic revelation",
+          "religion/theology"
+        ],
+        "vehicle": [
+          "a 'word' that comes/arrives to someone",
+          "moving object or visiting person",
+          "physical motion in space"
+        ],
+        "ground": [
+          "an externally initiated encounter that reaches the prophet",
+          "onset and impact of an experience",
+          "human experience of receiving messages"
+        ],
+        "posture": [
+          "solemn presentation of revelation",
+          "authoritative proclamation",
+          "prophetic discourse"
+        ],
+        "explanation": "God’s message is depicted as a concrete entity that ‘comes’ to the prophet, personifying the divine word and using spatial-motion imagery for revelation.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 25:2",
+    "deliberation": "Checked the vocative 'son of man' and the command to prophesy; these are straightforward. The phrase 'set your face toward the Ammonites' is a bodily-orientation idiom/metaphor for directing prophetic attention and hostility.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִׂים פָּנֶיךָ אֶל־בְּנֵי עַמּוֹן",
+        "english_text": "set your face toward the Ammonites",
+        "target": [
+          "Ezekiel’s prophetic focus and stance against Ammon",
+          "directed hostility/attention",
+          "prophetic activity"
+        ],
+        "vehicle": [
+          "turning one’s face toward someone",
+          "bodily orientation toward an opponent",
+          "human spatial posture"
+        ],
+        "ground": [
+          "what you face is what you confront or address",
+          "direction of the body reflects focus and opposition",
+          "embodied cognition of attention as orientation"
+        ],
+        "posture": [
+          "hostile, confrontational stance",
+          "judgmental orientation",
+          "divine condemnation mediated by prophet"
+        ],
+        "explanation": "Physical orientation of the face is used metaphorically/idiomatically for adopting a posture of focused confrontation toward Ammon.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 25:3",
+    "deliberation": "Reviewed the reported taunt over sanctuary, land, and exile. The interjection 'Aha' is emotional but not figurative. The key non-literal expression is 'House of Judah', a standard metonymy for the people/kingdom of Judah rather than an actual building.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יְהוּדָה",
+        "english_text": "the House of Judah",
+        "target": [
+          "the people and kingdom of Judah",
+          "national community",
+          "political-religious entity"
+        ],
+        "vehicle": [
+          "a 'house' or household",
+          "architectural/familial unit",
+          "domestic space/social structure"
+        ],
+        "ground": [
+          "a house contains and represents its family or dynasty",
+          "physical structure stands for those belonging to it",
+          "common use of dwelling imagery for lineage and polity"
+        ],
+        "posture": [
+          "referential, descriptive label",
+          "neutral naming within a judgment speech",
+          "prophetic historical reference"
+        ],
+        "explanation": "The term 'House of Judah' uses a building/household to stand metonymically for the people and polity of Judah.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 25:4",
+    "deliberation": "Considered whether deliverance to the 'sons of the east' and their encampments is figurative; it can be literal conquest imagery. The phrase about eating 'your fruit' and drinking 'your milk' uses specific agricultural products as a synecdoche/metonymy for all of Ammon’s resources.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "הֵמָּה יֹאכְלוּ פִרְיֵךְ וְהֵמָּה יִשְׁתּוּ חֲלָבֵךְ",
+        "english_text": "they shall eat your produce and they shall drink your milk",
+        "target": [
+          "Ammon’s wealth and economic output",
+          "national resources",
+          "socio-economic life"
+        ],
+        "vehicle": [
+          "fruit and milk consumed by conquerors",
+          "primary agricultural products",
+          "agrarian produce"
+        ],
+        "ground": [
+          "key foodstuffs represent the total yield of the land",
+          "part of agricultural output stands for the whole economy",
+          "synecdochic use of staple goods for all resources"
+        ],
+        "posture": [
+          "threatening depiction of dispossession",
+          "judgmental announcement",
+          "prophetic warning of loss"
+        ],
+        "explanation": "‘Fruit’ and ‘milk’ function as a synecdoche for all the economic benefits of Ammon that invaders will consume.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 25:5",
+    "deliberation": "Checked whether the images of camels and sheep are purely literal or function as desolation imagery. Turning a capital city and a people into animal pastures is a standard metaphor for their complete ruin and depopulation, so I treat Rabbah and Ammon-as-a-whole as targets of desolation metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי אֶת־רַבָּה לִנְוֵה גְמַלִּים",
+        "english_text": "I will make Rabbah a pasture for camels",
+        "target": [
+          "the city of Rabbah in its future ruined state",
+          "devastated urban center",
+          "political/urban landscape"
+        ],
+        "vehicle": [
+          "a pasture or habitation for camels",
+          "open grazing ground for animals",
+          "rural/steppe environment"
+        ],
+        "ground": [
+          "a ruined, emptied city resembles open ground usable only by animals",
+          "loss of human habitation signaled by animal occupation",
+          "association of desolation with wilderness pastures"
+        ],
+        "posture": [
+          "judgmental portrayal of humiliation and ruin",
+          "ironic reversal of former status",
+          "prophetic threat"
+        ],
+        "explanation": "Rabbah’s coming desolation is pictured as its becoming nothing more than a camel pasture, a metaphor for total ruin and loss of urban life.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֶת־בְּנֵי עַמּוֹן לְמִרְבַּץ־צֹאן",
+        "english_text": "and Ammon a place for sheep to lie down",
+        "target": [
+          "the territory and people of Ammon in their future state",
+          "ruined national land",
+          "geo-political entity"
+        ],
+        "vehicle": [
+          "a resting-place for sheep",
+          "animal lying ground",
+          "pastoral scene"
+        ],
+        "ground": [
+          "a once-settled land reduced to serving only as animal rest-area signifies devastation",
+          "contrast between former inhabited nation and mere grazing/rest land",
+          "humiliation through pastoral imagery"
+        ],
+        "posture": [
+          "derisive depiction of downfall",
+          "emphatically judgmental",
+          "prophetic mockery of former power"
+        ],
+        "explanation": "Ammon’s future condition is portrayed as nothing more than a sheep-resting ground, a metaphor for its complete desolation and loss of status.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 25:6",
+    "deliberation": "Evaluated the description of clapping hands, stamping feet, and rejoicing. These gestures may have been literal but are used representatively for inner contempt, making them gesture-metonymies/idiomatic for gloating hostility rather than just neutral actions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יַעַן מַחְאֲךָ יָד וְרַקְעֲךָ בְּרָגֶל",
+        "english_text": "Because you clapped your hands and stamped your feet",
+        "target": [
+          "Ammon’s rejoicing and contempt over Israel’s misfortune",
+          "hostile emotional reaction",
+          "inter-national relations"
+        ],
+        "vehicle": [
+          "the physical acts of hand-clapping and foot-stamping",
+          "expressive body gestures",
+          "human bodily movement"
+        ],
+        "ground": [
+          "specific gestures stand for and reveal inner scorn and gloating",
+          "visible actions metonymically express emotional attitude",
+          "common cultural link between such gestures and derision"
+        ],
+        "posture": [
+          "condemning description of mockery",
+          "morally evaluative",
+          "prophetic censure"
+        ],
+        "explanation": "The gestures of clapping and stamping function metonymically and idiomatically to represent Ammon’s gloating contempt over Israel’s land.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 25:7",
+    "deliberation": "Checked several violent expressions. 'Stretching out my hand' is a standard anthropomorphic metaphor for divine action in judgment. 'Wiping you out from among the countries' uses spatial-removal imagery for extermination, distinct from the hand metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִי נָטִיתִי אֶת־יָדִי עָלֶיךָ",
+        "english_text": "I will stretch out My hand against you",
+        "target": [
+          "YHWH’s act of bringing judgment on Ammon",
+          "divine punitive intervention",
+          "theology/judgment"
+        ],
+        "vehicle": [
+          "a person stretching out a hand against an enemy",
+          "human act of initiating a physical strike",
+          "combat/violence imagery"
+        ],
+        "ground": [
+          "extending the hand is the prelude to striking or seizing",
+          "human aggression used to conceptualize divine action",
+          "shared sense of active, forceful engagement"
+        ],
+        "posture": [
+          "threatening, confrontational declaration",
+          "judgment-laden anthropomorphism",
+          "prophetic warning"
+        ],
+        "explanation": "God’s judgment is portrayed in human-warrior terms as stretching out a hand to attack, a metaphorical anthropomorphism.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהַאֲבַדְתִּיךָ מִן־הָאֲרָצוֹת",
+        "english_text": "I will wipe you out from among the countries",
+        "target": [
+          "Ammon’s existence as a people among the nations",
+          "national continuity",
+          "geo-political standing"
+        ],
+        "vehicle": [
+          "removing/wiping something away from a place",
+          "erasure of a physical object from a surface or area",
+          "physical deletion/cleansing"
+        ],
+        "ground": [
+          "to utterly destroy is likened to erasing something from a region",
+          "loss of political presence conceptualized as removal from a map",
+          "association of non-existence with being wiped away"
+        ],
+        "posture": [
+          "absolute-sounding threat of eradication",
+          "intensified judgment rhetoric",
+          "prophetic hyperbole"
+        ],
+        "explanation": "The threat to destroy Ammon uses the metaphor of being ‘wiped out’ from among the lands, an erasure image that hyperbolically expresses total removal.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 25:8",
+    "deliberation": "Moab and Seir’s statement is largely literal evaluation. The comparison 'like all the nations' is a straightforward claim of sameness, not a poetic simile. The expression 'House of Judah' again functions as a metonymy for the people/nation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יְהוּדָה",
+        "english_text": "the House of Judah",
+        "target": [
+          "the Judahite people and kingdom",
+          "national community",
+          "political-religious group"
+        ],
+        "vehicle": [
+          "a household/house",
+          "dwelling that represents a family or dynasty",
+          "domestic building"
+        ],
+        "ground": [
+          "a house stands for the family or dynasty it shelters",
+          "built structure used to designate social group",
+          "metonymic link between domicile and its occupants"
+        ],
+        "posture": [
+          "neutral designation within hostile speech",
+          "referential but value-laden context",
+          "international polemic"
+        ],
+        "explanation": "Again, 'House of Judah' uses a house as metonymy for the Judahite people and polity.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 25:9",
+    "deliberation": "Examined 'opening the shoulder of Moab' and 'the glory of the land'. 'Shoulder/flank of Moab' is an anatomical metaphor for the vulnerable side/border of the land being laid bare. 'The glory/beauty of the land' for the list of towns is another metaphor, personifying the towns as the land’s splendor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פֹּתֵחַ אֶת־כֶּתֶף מוֹאָב",
+        "english_text": "I will lay bare the flank [shoulder] of Moab",
+        "target": [
+          "Moab’s border regions and fortified cities",
+          "defensive perimeter",
+          "geographical-political structure"
+        ],
+        "vehicle": [
+          "the 'shoulder/flank' of a body being opened or exposed",
+          "vulnerable side of a person",
+          "human anatomy"
+        ],
+        "ground": [
+          "as a bared flank exposes a person to attack, so opened borders expose a land",
+          "vulnerability and exposure conceptualized via bodily side",
+          "shared notion of protective outer side being breached"
+        ],
+        "posture": [
+          "violent, invasive imagery",
+          "threatening exposure",
+          "prophetic judgment description"
+        ],
+        "explanation": "Moab’s borders and cities are depicted as a bodily 'flank' that God will open, an anatomical metaphor for exposing the country to invasion.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צְבִי אֶרֶץ",
+        "english_text": "the glory [beauty] of the country",
+        "target": [
+          "the named Moabite cities (Beth-jeshimoth, Baal-meon, Kiriathaim)",
+          "elite urban centers",
+          "regional assets"
+        ],
+        "vehicle": [
+          "the 'beauty' or 'glory' of a land (lit. gazelle-like splendor)",
+          "aesthetic excellence",
+          "value/attractiveness imagery"
+        ],
+        "ground": [
+          "these cities epitomize what is splendid in the land",
+          "most attractive part used to characterize the whole territory",
+          "association of prime locations with beauty and honor"
+        ],
+        "posture": [
+          "emphasis on the impressiveness of what will be struck",
+          "heightening the sense of loss",
+          "prophetic lament-like description within judgment"
+        ],
+        "explanation": "The principal Moabite cities are called the 'glory of the land', a metaphor that personifies the land as possessing visible splendor concentrated in these towns.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 25:10",
+    "deliberation": "The transfer to the 'sons of the east' is military-political and can be literal. The statement that the sons of Ammon will not be remembered among the nations uses memory-erasure imagery and is rhetorically hyperbolic for total removal from the international scene.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְמַעַן לֹא־תִזָּכֵר בְּנֵי־עַמּוֹן בַּגּוֹיִם",
+        "english_text": "Thus Ammon shall not be remembered among the nations",
+        "target": [
+          "Ammon’s continued existence and significance as a nation",
+          "national identity and reputation",
+          "international status"
+        ],
+        "vehicle": [
+          "being (or not being) remembered in the minds of people",
+          "presence or absence in collective memory",
+          "cognitive memory domain"
+        ],
+        "ground": [
+          "ceasing to exist or matter is likened to being erased from memory",
+          "political extinction conceptualized as total forgetfulness",
+          "shared notion that what no one remembers effectively does not count"
+        ],
+        "posture": [
+          "maximal, absolute-sounding threat",
+          "rhetorically intensified judgment",
+          "prophetic hyperbole about annihilation"
+        ],
+        "explanation": "Ammon’s destruction is depicted as its no longer being 'remembered among the nations', a metaphorical and hyperbolic way of expressing total removal from the international stage.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 25:11",
+    "deliberation": "Surveyed 'I will execute judgments in Moab' and 'they shall know that I am YHWH'. Both are standard legal and theological formulations and can be taken straightforwardly; they do not rely on a distinct imaginative image beyond conventional legal terminology.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 25:12",
+    "deliberation": "Reviewed the verse for figurative devices. 'Acted vengefully', 'wreaking revenge', and 'incurred guilt' are legal-moral descriptions without an obvious metaphor beyond ordinary legal language, and no clear similes, personifications, or merisms are present.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 25:13",
+    "deliberation": "Again 'stretch out my hand' is the usual anthropomorphic metaphor for divine judgment. The phrase 'they shall fall by the sword' is an idiom where 'sword' stands metonymically for warfare and 'fall' euphemistically denotes death in battle.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָטִתִּי יָדִי עַל־אֱדוֹם",
+        "english_text": "I will stretch out My hand against Edom",
+        "target": [
+          "God’s punitive intervention against Edom",
+          "act of judgment",
+          "divine governance"
+        ],
+        "vehicle": [
+          "stretching out a hand to strike or seize",
+          "offensive action by a human warrior",
+          "physical combat gesture"
+        ],
+        "ground": [
+          "both depict an initiating, forceful attack",
+          "God’s action is conceptualized through a human-warrior movement",
+          "shared sense of deliberate, aggressive engagement"
+        ],
+        "posture": [
+          "hostile, martial stance toward Edom",
+          "threatening pronouncement",
+          "prophetic warfare imagery"
+        ],
+        "explanation": "YHWH’s judgment on Edom is pictured as a human-like stretching out of the hand in attack, an anthropomorphic metaphor for divine action.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בַּחֶרֶב יִפֹּלוּ",
+        "english_text": "they shall fall by the sword",
+        "target": [
+          "the people of Edom from Tema to Dedan who will die in war",
+          "battle casualties",
+          "military fate"
+        ],
+        "vehicle": [
+          "falling by the sword",
+          "being struck down by a weapon",
+          "battlefield killing"
+        ],
+        "ground": [
+          "death in battle is conceptualized as 'falling' to a weapon",
+          "the sword stands metonymically for warfare as a whole",
+          "shared association between weapons and violent death"
+        ],
+        "posture": [
+          "grim, formulaic description of slaughter",
+          "judgment-oriented battlefield idiom",
+          "prophetic announcement of military defeat"
+        ],
+        "explanation": "The idiom 'fall by the sword' uses 'sword' as metonymy for warfare and 'fall' as a figurative way to speak of dying in battle.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 25:14",
+    "deliberation": "Looked for non-literal constructions. The central idiom is 'I will put my vengeance in Edom in the hand of my people Israel' (rendered 'through My people Israel'), which treats vengeance as a transferable object and 'hand' as a metonym for agency/instrument.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי אֶת־נִקְמָתִי בֶּאֱדוֹם בְּיַד עַמִּי יִשְׂרָאֵל",
+        "english_text": "I will wreak My vengeance on Edom through My people Israel (lit. 'put my vengeance in Edom in the hand of My people Israel')",
+        "target": [
+          "God’s use of Israel as the instrument of judgment on Edom",
+          "mediated divine retribution",
+          "theology of agency"
+        ],
+        "vehicle": [
+          "placing an object (vengeance) into someone’s hand",
+          "hand as the organ of action and power",
+          "concrete transfer of a tool or weapon"
+        ],
+        "ground": [
+          "authored but mediated action is like putting a weapon in someone’s hand to wield",
+          "the 'hand' stands metonymically for active power and execution",
+          "vengeance conceptualized as a concrete implement of punishment"
+        ],
+        "posture": [
+          "assertive portrayal of Israel as God’s agent",
+          "emphasis on controlled, divinely directed violence",
+          "prophetic explanation of coming hostilities"
+        ],
+        "explanation": "The idiom of placing vengeance ‘in the hand’ of Israel treats vengeance as a transferable object and the hand as a metonym for agency, depicting Israel as the wielded instrument of divine retribution.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 25:15",
+    "deliberation": "Examined the language of vengeance and hatred. The notable figure is 'everlasting enmity', which hyperbolically characterizes the Philistine hostility as timeless, intensifying its severity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵיבַת עוֹלָם",
+        "english_text": "ancient hatred (lit. 'everlasting enmity')",
+        "target": [
+          "the long-standing hostility of the Philistines toward Israel",
+          "inter-ethnic animosity",
+          "historical relations"
+        ],
+        "vehicle": [
+          "enmity described as 'everlasting'",
+          "time without end",
+          "temporal infinity"
+        ],
+        "ground": [
+          "a very long, deep-rooted hatred is portrayed as if eternal",
+          "duration and intensity are exaggerated to convey implacability",
+          "association of 'forever' with unsurpassed continuity"
+        ],
+        "posture": [
+          "moral indictment of Philistine hostility",
+          "rhetorically heightened accusation",
+          "prophetic censure"
+        ],
+        "explanation": "The phrase 'everlasting enmity' is hyperbolic, exaggerating the age and persistence of Philistine hatred to stress its depth and culpability.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 25:16",
+    "deliberation": "Identified the recurring anthropomorphic idiom 'stretch out my hand' as metaphorical. The phrase 'the remnant of the seacoast' uses 'seacoast' metonymically for the coastal population, so destroying this 'remnant' is a figurative way to speak of depopulating that region.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִי נוֹטֶה יָדִי עַל־פְּלִשְׁתִּים",
+        "english_text": "I will stretch out My hand against the Philistines",
+        "target": [
+          "God’s decisive action against the Philistines",
+          "act of judgment",
+          "divine intervention in history"
+        ],
+        "vehicle": [
+          "stretching out a hand toward an adversary",
+          "human gesture of striking or seizing",
+          "combat/action movement"
+        ],
+        "ground": [
+          "both express intentional, forceful engagement against an enemy",
+          "human physical aggression used to conceptualize divine judgment",
+          "shared sense of directed power"
+        ],
+        "posture": [
+          "strongly adversarial stance toward Philistia",
+          "threat-laden anthropomorphic imagery",
+          "prophetic warfare idiom"
+        ],
+        "explanation": "The expression depicts YHWH as a human combatant stretching out His hand to strike the Philistines, an anthropomorphic metaphor for divine judgment.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהַאֲבַדְתִּי אֶת־שְׁאֵרִית חוֹף הַיָּם",
+        "english_text": "and I will wipe out the last survivors of the seacoast",
+        "target": [
+          "the remaining Philistine coastal inhabitants",
+          "surviving population",
+          "regional community"
+        ],
+        "vehicle": [
+          "the 'remnant of the seacoast'",
+          "territorial edge (coast) used to denote its people",
+          "geographical feature"
+        ],
+        "ground": [
+          "inhabitants are identified by the region they occupy",
+          "the coastal strip stands metonymically for its coastal population",
+          "link between landform and the people living on it"
+        ],
+        "posture": [
+          "threat of complete depopulation",
+          "emphatic judgment rhetoric",
+          "prophetic doom on the coastal powers"
+        ],
+        "explanation": "The phrase 'remnant of the seacoast' uses the coastal region metonymically for its surviving inhabitants, whose destruction is threatened.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 25:17",
+    "deliberation": "Considered whether 'great vengeance' and 'furious rebukes' are distinct images; they cluster around the same conceptual metaphor of vengeance as a concrete force inflicted. The idiom 'when I put my vengeance upon them' likewise treats vengeance as something placed on/into them, expressing judgment through object-transfer imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעָשִׂיתִי בָם נְקָמוֹת גְּדֹלוֹת בְּתוֹכְחוֹת חֵמָה ... בְּתִתִּי אֶת־נִקְמָתִי בָּם",
+        "english_text": "I will wreak frightful [great] vengeance upon them by furious punishment; and when I inflict My vengeance upon them",
+        "target": [
+          "the severe judgments God will bring on the Philistines",
+          "experiences of punishment",
+          "divine retribution"
+        ],
+        "vehicle": [
+          "vengeance as a 'great' thing executed and put upon them, with 'rebukes of wrath'",
+          "a heavy, concrete burden or blow inflicted on someone",
+          "physical force/weight domain"
+        ],
+        "ground": [
+          "punishment is conceptualized as a tangible force or burden imposed on victims",
+          "intensity conveyed by describing vengeance as 'great' and 'furious'",
+          "shared sense of something forcefully laid upon a person"
+        ],
+        "posture": [
+          "heightened, fear-inducing portrayal of judgment",
+          "rhetorically intensified threat",
+          "prophetic emphasis on the terror of divine vengeance"
+        ],
+        "explanation": "The verse depicts God’s vengeance as a great, furious thing that He actively executes and 'puts upon' them, treating retribution as a tangible force inflicted on the Philistines and heightening it with hyperbole.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

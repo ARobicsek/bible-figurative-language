@@ -1,0 +1,621 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 11:1",
+    "deliberation": "Checked for metaphors, idioms, and personification. The key non-literal element is the 'spirit' lifting and bringing Ezekiel, depicting the divine Spirit as an active moving force. This is conventional prophetic language but still personifies the ruach. The rest (place names, number of men, titles) is straightforward narrative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּשָּׂ֨א אֹתִ֜י ר֗וּחַ וַתָּבֵ֣א אֹתִי",
+        "english_text": "Then a spirit lifted me up and brought me",
+        "target": ["Ezekiel’s reception and transport in prophetic vision", "prophetic experience", "religious experience"],
+        "vehicle": ["a lifting and carrying agent", "physical mover / bearer", "physical movement & transport"],
+        "ground": ["being overpowered and moved by a force beyond oneself", "external agency exerting control", "divine agency affecting humans"],
+        "posture": ["Ezekiel presents his experience as being carried by God’s Spirit", "humble receptivity to overpowering divine action", "prophetic submission to divine initiative"],
+        "explanation": "The divine Spirit (רוּחַ) is depicted as an agent that can physically lift and carry Ezekiel, personifying the Spirit as a mover rather than describing a merely inner feeling.",
+        "confidence": 0.79
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 11:2",
+    "deliberation": "The verse labels the men as those who 'plan iniquity' and 'give evil counsel.' These are literal descriptions of their moral and political activity, not figurative expressions; no metaphors, idioms, or personifications are present.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 11:3",
+    "deliberation": "Looked for slogans, metaphors, and idioms. The clause about not building houses is debated but likely a straightforward assertion. The explicit copular statements 'she is the pot' and 'we are the meat' are two linked but distinct metaphors: Jerusalem as a pot, the people as meat protected inside it.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִיא הַסִּיר",
+        "english_text": "This [city] is the pot",
+        "target": ["Jerusalem as a political community", "city as collective entity", "covenant people / Israel"],
+        "vehicle": ["a cooking pot", "cooking vessel / container", "household food-preparation domain"],
+        "ground": ["enclosed space thought to protect contents from outside threats", "containment and relative safety", "perceived security in face of siege/judgment"],
+        "posture": ["self-assured boast of Jerusalem’s leaders", "false confidence and complacency", "rebellious attitude toward divine warning"],
+        "explanation": "The speakers equate Jerusalem with a cooking pot, implying it is a secure container that will protect those inside from the 'fire' of external danger.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַאֲנַחְנוּ הַבָּשָׂר",
+        "english_text": "and we are the meat",
+        "target": ["the ruling group in Jerusalem", "city inhabitants (esp. leaders)", "covenant people / Israel"],
+        "vehicle": ["meat in a pot", "food item to be cooked", "culinary / sacrificial domain"],
+        "ground": ["being inside the pot and therefore supposedly protected from the fire", "valuable contents enjoying the pot’s protection", "claim of being the select core that will be preserved"],
+        "posture": ["arrogant self-identification as the protected core", "elitist sense of invulnerability", "presumptuous stance toward God’s judgment"],
+        "explanation": "They portray themselves as the meat inside the protective pot (the city), claiming privileged and secure status in contrast to others exposed to danger.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 11:4",
+    "deliberation": "Command to prophesy, with vocative 'son of man / mortal.' This is standard prophetic diction and vocative, not figurative in itself in this context. No metaphors, similes, or idioms beyond normal address formula.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 11:5",
+    "deliberation": "Examined 'spirit of YHWH fell upon me' and 'ascents of your spirit.' Both construe non-physical realities through physical imagery. The Spirit 'falling' is personification of divine inspiration as a descending force. 'Ascents of your spirit' is a metaphor for inner thoughts rising up.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּפֹּל עָלַי רוּחַ יְהוָה",
+        "english_text": "Thereupon the spirit of GOD fell upon me",
+        "target": ["Ezekiel’s experience of being seized by divine inspiration", "prophetic inspiration", "religious experience"],
+        "vehicle": ["something that falls upon a person (e.g., a weight or garment)", "descending physical object/force", "physical dynamics of impact"],
+        "ground": ["suddenness and overpowering nature of the experience", "external force coming down and taking hold", "God’s initiative overwhelming the prophet"],
+        "posture": ["Ezekiel depicts himself as passive under divine onset", "acknowledgment of being overtaken by God", "submissive prophetic stance toward divine power"],
+        "explanation": "The Spirit of YHWH is portrayed as a thing that can physically fall on someone, personifying the Spirit as a descending force that overtakes the prophet.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמַעֲלוֹת רוּחֲכֶם אֲנִי יְדַעְתִּיהָ",
+        "english_text": "I know what comes into your mind (lit. 'the ascents of your spirit')",
+        "target": ["the inner thoughts and plans of Israel", "human mental activity", "human inner life"],
+        "vehicle": ["'ascents' rising in the spirit", "upward movements in an inner space", "spatial movement domain (up/down)"],
+        "ground": ["thoughts emerging or rising up from within", "invisible processes conceptualized as movements", "dynamic, developing character of inner deliberations"],
+        "posture": ["divine critique of their inner schemes", "emphasis on God’s full awareness of hidden plans", "exposing human interiority to divine scrutiny"],
+        "explanation": "Their thoughts are depicted as 'ascents' within the spirit, using spatial upward movement as a metaphor for ideas or plans that arise internally.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 11:6",
+    "deliberation": "Considered whether the language of multiplying slain and filling the streets is literal description or rhetorical hyperbole. 'You have filled its streets with corpses' is typical prophetic exaggeration to convey vast bloodshed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִלֵּאתֶם חוּצֹתֶיהָ חָלָל",
+        "english_text": "you have filled its streets with corpses",
+        "target": ["the extent of killings in Jerusalem", "scale of bloodshed", "social violence in the city"],
+        "vehicle": ["streets literally filled up with dead bodies", "complete saturation of a space", "spatial fullness imagery"],
+        "ground": ["extreme abundance of slain people", "widespread presence of death everywhere", "shocking magnitude of violence"],
+        "posture": ["prophetic condemnation of murderous leadership", "heightened rhetoric to underscore guilt", "divine moral outrage at violence"],
+        "explanation": "The streets are said to be 'filled' with corpses, an exaggeration of spatial saturation to emphasize the enormity of the bloodshed.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 11:7",
+    "deliberation": "This verse deliberately turns the pot/meat slogan of v.3 against the leaders. It repeats the pot/meat imagery but now applies 'meat' to the corpses and states that those addressed will be removed. There are two copular metaphors: corpses as meat and city as pot, used in ironic reversal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "חַלְלֵיכֶם ... הֵמָּה הַבָּשָׂר",
+        "english_text": "The corpses that you have piled up in it are the meat",
+        "target": ["the slain in Jerusalem", "victims of the leaders’ violence", "judged members of the community"],
+        "vehicle": ["meat in a cooking pot", "food item prepared in a vessel", "culinary / sacrificial domain"],
+        "ground": ["being inside the city as if inside a pot exposed to the 'fire' of judgment", "consumable objects of a destructive process", "victims who bear the brunt of the leaders’ choices"],
+        "posture": ["divine inversion of the leaders’ boastful metaphor", "ironic exposure of their violence", "judgmental stance toward oppressive rulers"],
+        "explanation": "God reassigns the leaders’ own image, calling the slain (not the leaders) the 'meat', thus ironically exposing the deadly consequences of their policies.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִיא הַסִּיר",
+        "english_text": "and it is the pot",
+        "target": ["Jerusalem city", "urban community as political-religious center", "covenant people / Zion"],
+        "vehicle": ["cooking pot", "protective vessel over a fire", "household cooking domain"],
+        "ground": ["being a container in which the contents are subjected to heat", "enclosed setting where destructive process occurs", "locus where judgment is experienced"],
+        "posture": ["God redefines the meaning of the 'pot' image", "shift from assumed protection to an instrument of cooking/judgment", "critical stance toward misplaced confidence in the city"],
+        "explanation": "The city is again likened to a pot, but instead of guaranteeing safety, it is the vessel in which the 'meat' (the slain) undergoes the destructive process of judgment, undercutting the leaders’ earlier sense of security.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 11:8",
+    "deliberation": "Checked for metaphorical uses. 'You feared the sword, and a sword I will bring' uses 'sword' as a standard metonym for war/violent death. No other clear figurative devices.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "חֶרֶב יְרֵאתֶם וְחֶרֶב אָבִיא עֲלֵיכֶם",
+        "english_text": "You feared the sword, and the sword I will bring upon you",
+        "target": ["coming military defeat and violent death", "experience of war as divine judgment", "national catastrophe"],
+        "vehicle": ["the sword", "weapon of killing in battle", "warfare / instruments of violence"],
+        "ground": ["the sword as emblematic of warfare and slaughter", "instrument representing the whole phenomenon", "physical marker of violent judgment"],
+        "posture": ["divine answer to their misplaced fear", "threat of realized judgment using their own terms", "stern judicial stance toward their disobedience"],
+        "explanation": "The 'sword' stands for war and violent death more generally, a metonymic use in which the instrument signifies the larger reality of military judgment.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 11:9",
+    "deliberation": "Looked for idioms and metonymies. 'Give you into the hand of strangers' is a conventional idiom where 'hand' stands metonymically for power/control. 'Execute judgments' is standard judicial language but not necessarily figurative in context.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי אֶתְכֶם בְּיַד־זָרִים",
+        "english_text": "and deliver you into the hands of strangers",
+        "target": ["Israel’s subjection to foreign powers", "political domination by other nations", "experience of exile and oppression"],
+        "vehicle": ["the hand of strangers", "controlling grip of another’s hand", "body-part domain as image of power"],
+        "ground": ["hand as the organ of grasping and control", "being in someone’s hand equates to being under their power", "loss of autonomy and vulnerability"],
+        "posture": ["presentation of foreign domination as divinely decreed", "emphasis on total loss of self-determination", "judicial handing over to others’ power"],
+        "explanation": "The phrase 'into the hand of strangers' is an idiom using 'hand' metonymically for power and control, expressing that they will be subjected to foreign domination.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 11:10",
+    "deliberation": "Reviewed expressions for idiomatic usage. 'You shall fall by the sword' is a common idiom meaning 'be killed in battle.' 'Judge you at the border of Israel' uses judicial language but is concrete in this prophetic context.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בַּחֶרֶב תִּפֹּלוּ",
+        "english_text": "You shall fall by the sword",
+        "target": ["their death in conflict", "experience of being killed in warfare", "outcome of divine judgment through battle"],
+        "vehicle": ["falling by the sword", "physical collapse under a weapon’s blow", "battlefield death imagery"],
+        "ground": ["falling as a sign of being struck down", "sword as metonym for violent combat", "complete defeat ending in death"],
+        "posture": ["stern judicial declaration of their fate", "graphic but formulaic depiction of judgment", "warning against their present course"],
+        "explanation": "The phrase 'fall by the sword' is an idiomatic way to speak of dying in battle; 'sword' again stands metonymically for warfare and violent death.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 11:11",
+    "deliberation": "The verse negates the pot/meat imagery but still relies on the same metaphoric mapping from v.3 and v.7. 'It will not be for you as a pot' and 'you will be in it [not] as meat' are two metaphorical predications, now denied to overturn their slogan.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִיא לֹא־תִהְיֶה לָכֶם לְסִיר",
+        "english_text": "This [city] shall not be a pot for you",
+        "target": ["Jerusalem as perceived refuge for its leaders", "the leaders’ political environment", "covenant center / city"],
+        "vehicle": ["a cooking pot providing shelter from the fire", "protective vessel over heat", "culinary container domain"],
+        "ground": ["enclosure that seems to shield contents from direct flame", "illusion of safety inside a container", "separation from immediate danger outside"],
+        "posture": ["divine rejection of their protective self-image", "ironic denial of their security metaphor", "exposure of their false trust in the city"],
+        "explanation": "God explicitly denies that the city will function for them as the 'pot' they imagined, overturning their metaphor of security and thus using the same image in an ironic way.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְאַתֶּם תִּהְיוּ בְתוֹכָהּ לְבָשָׂר",
+        "english_text": "nor you the meat in it",
+        "target": ["the addressed leaders in Jerusalem", "ruling elite of the city", "covenant community’s power holders"],
+        "vehicle": ["meat inside a pot", "cooking flesh", "food-preparation domain"],
+        "ground": ["being contents of a vessel under controlled conditions", "status as something to be preserved or prepared", "central, valued element inside the container"],
+        "posture": ["divine subversion of their claim to be protected 'meat'", "denunciation of their privileged self-conception", "assertion that they will not be shielded from judgment"],
+        "explanation": "The leaders will not be the 'meat' safely inside the pot; the phrase denies the status they arrogantly claimed, continuing the earlier imagery but in ironic negation.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 11:12",
+    "deliberation": "Searched for conceptual metaphors. 'In my statutes you did not walk' uses the pervasive biblical metaphor of living/obeying as walking on a path. The rest is straightforward contrast with the nations’ rules.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר בְּחֻקַּי לֹא הֲלַכְתֶּם",
+        "english_text": "whose laws you did not follow (lit. 'in my statutes you did not walk')",
+        "target": ["Israel’s pattern of behavior with respect to God’s commands", "ethical and religious conduct", "covenant obedience"],
+        "vehicle": ["walking in a path marked by statutes", "journeying along a prescribed way", "travel / pathway domain"],
+        "ground": ["life as a journey along a route", "obedience as keeping to a particular path", "deviance as stepping off the appointed way"],
+        "posture": ["divine evaluation of their conduct as going off-path", "framing disobedience as refusal to walk in God’s road", "moral indictment in spatial terms"],
+        "explanation": "To 'walk' in God’s statutes conceptualizes obedience as following a path, a common biblical metaphor for moral and covenantal conduct.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 11:13",
+    "deliberation": "The narrative death of Pelatiah is literal within the vision. The cry 'Are you making a full end of the remnant of Israel?' likely uses 'making a full end' as rhetorical exaggeration expressing fear of total annihilation. This functions as hyperbolic language of lament, even if Ezekiel genuinely fears it.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כָּלָה אַתָּה עֹשֶׂה אֵת שְׁאֵרִית יִשְׂרָאֵל",
+        "english_text": "You are wiping out the remnant of Israel (lit. 'making a full end of the remnant of Israel')",
+        "target": ["extent of Israel’s impending judgment", "fate of the surviving community", "future prospects of the people"],
+        "vehicle": ["making a complete end", "total eradication", "language of absolute destruction"],
+        "ground": ["treating the judged group as if none would survive", "complete removal as the imagined outcome", "maximal, all-encompassing scope of disaster"],
+        "posture": ["Ezekiel’s anguished fear of total loss", "pleading protest against what seems like excessive judgment", "emotional overstatement born of grief"],
+        "explanation": "Ezekiel voices the fear that God is making a 'full end' of the remnant, using absolute language characteristic of lament to express the terrifying prospect of total annihilation.",
+        "confidence": 0.72
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 11:14",
+    "deliberation": "The formula 'the word of YHWH came to me' is standard prophetic diction that personifies God’s message as something that 'comes.' It is conventional but still a figurative representation of revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי לֵאמֹר",
+        "english_text": "Then the word of GOD came to me",
+        "target": ["the event of divine revelation to Ezekiel", "prophetic communication", "God’s self-disclosure in speech"],
+        "vehicle": ["a 'word' that can come to someone", "a moving messenger-like entity", "communication conceived as a traveling object"],
+        "ground": ["message as something that arrives from outside", "initiative belonging to the sender, not the recipient", "dynamic encounter rather than static information"],
+        "posture": ["portrayal of revelation as God’s active approach", "emphasis on Ezekiel’s receptivity, not authorship", "affirmation of the authority of the message"],
+        "explanation": "The 'word' of YHWH is personified and treated metonymically for God’s message, depicted as an entity that can come to the prophet.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 11:15",
+    "deliberation": "The crucial phrase is 'keep far from YHWH' spoken by Jerusalem’s inhabitants about the exiles. This uses spatial distance as a metaphor for alienation from God. The rest (kinsmen, inheritance of the land) is literal covenantal language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רַחֲקוּ מֵעַל יְהוָה",
+        "english_text": "‘Keep far from GOD’",
+        "target": ["the exiles’ supposed disqualification from God’s favor", "status of certain Israelites in relation to God", "covenantal nearness or farness"],
+        "vehicle": ["spatial distance from a person", "being far away from someone’s presence", "locative separation domain"],
+        "ground": ["remoteness as a picture of disfavor or exclusion", "nearness as privilege vs. distance as loss", "place-relative imagery for relational status"],
+        "posture": ["Jerusalemites’ arrogant claim to exclusive nearness", "dismissive stance toward the exiles", "misjudgment of where God’s presence truly lies"],
+        "explanation": "To be 'far from YHWH' uses physical distance as a metaphor for being excluded from God’s favor and presence, expressing the Jerusalemites’ contempt for the exiles.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 11:16",
+    "deliberation": "Examined 'scattered among the countries' and 'a little sanctuary.' Scattering is literal exile imagery. 'I have been to them a little sanctuary in the countries' is clearly metaphorical: God himself is described as a 'sanctuary' for the exiles, not a physical building.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וָאֶהִי לָהֶם לְמִקְדָּשׁ מְעַט",
+        "english_text": "and I have become to them a diminished sanctity (lit. 'a little sanctuary')",
+        "target": ["God’s protective and worship-inviting presence among exiles", "experience of God outside the temple", "continuing covenant relationship in dispersion"],
+        "vehicle": ["a sanctuary (miqdash)", "sacred dwelling-place/temple", "cultic/temple domain"],
+        "ground": ["sanctuary as locus of divine presence, protection, and worship", "God providing what the temple was supposed to provide", "portable access to the holy in foreign lands"],
+        "posture": ["assurance of God’s nearness despite exile", "redefinition of sacred space around God rather than buildings", "comforting stance toward scattered people"],
+        "explanation": "God metaphorically calls Himself a 'little sanctuary' for the exiles, using temple imagery to express His ongoing presence and protection outside Jerusalem.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 11:17",
+    "deliberation": "Gathering from the peoples and giving the land of Israel are central restoration promises that can be taken quite literally in the exilic context. While 'gather' often has metaphorical resonance (like gathering sheep), here it most naturally denotes actual regathering from exile; I do not isolate a distinct figurative expression.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 11:18",
+    "deliberation": "The verse speaks of removing 'detestable things' and 'abominations'—standard terms for idols and cult objects. Though evaluative, they are not figurative here but refer directly to illicit religious items/practices. No clear metaphor or idiom beyond conventional value language.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 11:19",
+    "deliberation": "This verse is rich in inner-life metaphors: 'one heart,' 'new spirit,' 'heart of stone,' 'heart of flesh.' These construe inner disposition in bodily terms and contrast hardness vs. responsiveness. I group 'one heart/new spirit' as one metaphor of unified, renewed will, and treat the 'heart of stone' vs 'heart of flesh' pair as another, more specific metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי לָהֶם לֵב אֶחָד וְרוּחַ חֲדָשָׁה אֶתֵּן בְּקִרְבְּכֶם",
+        "english_text": "I will give them one heart and put a new spirit in them",
+        "target": ["the renewed inner disposition of the restored people", "corporate unity of will and devotion", "spiritual/moral transformation of Israel"],
+        "vehicle": ["one heart and a new spirit inside them", "single, unified center of feeling/will and a fresh animating breath", "body-organ and breath imagery"],
+        "ground": ["heart as seat of will and emotion, spirit as life-principle", "unity and newness represented by a shared inner organ and a new animating force", "internal, holistic change rather than external reform only"],
+        "posture": ["promise of deep internal renewal", "emphasis on God’s sovereign re-creation of their inner life", "hopeful stance toward the future community"],
+        "explanation": "God portrays inner transformation and corporate unity as giving them 'one heart' and a 'new spirit,' using bodily and breath imagery to depict a unified, renewed will and life-principle.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַהֲסִרֹתִי לֵב הָאֶבֶן מִבְּשָׂרָם וְנָתַתִּי לָהֶם לֵב בָּשָׂר",
+        "english_text": "I will remove the heart of stone from their bodies and give them a heart of flesh",
+        "target": ["Israel’s present stubborn inner state and its future responsiveness", "moral/spiritual character of the people", "covenantal posture toward God"],
+        "vehicle": ["a heart of stone vs. a heart of flesh", "rock-like organ contrasted with living tissue", "material hardness vs. softness domain"],
+        "ground": ["stone suggests hardness, unresponsiveness, lifelessness; flesh suggests softness, sensitivity, livingness", "stubborn resistance vs. receptive obedience", "inflexible vs. pliable interior state"],
+        "posture": ["strong critique of current obstinacy", "promise of God-given sensitivity and obedience", "dramatic imagery to convey radical change"],
+        "explanation": "The people’s inner stubbornness is pictured as a 'heart of stone,' which God will remove and replace with a 'heart of flesh,' a vivid metaphor for moving from hard, unresponsive resistance to soft, living responsiveness.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 11:20",
+    "deliberation": "The expression 'walk in my statutes' repeats the metaphor from v.12 of obedience as walking a path. 'They shall be my people, and I will be their God' is covenant formula, arguably metaphorical of belonging, but is a fixed legal-theological expression; I focus on the clearer path metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּחֻקֹּתַי יֵלֵכוּ",
+        "english_text": "that they may follow My laws (lit. 'walk in my statutes')",
+        "target": ["their future pattern of obedience", "ongoing way of life under God’s commands", "covenant faithfulness"],
+        "vehicle": ["walking in statutes", "moving along a designated path", "journey/travel domain"],
+        "ground": ["life as a path and obedience as staying on that path", "statutes as the road laid out by God", "directional movement equated with moral choice"],
+        "posture": ["positive portrayal of renewed obedience", "depiction of everyday faithfulness as a way of walking", "invitation to steady, habitual alignment with God"],
+        "explanation": "Again, obedience is conceptualized as 'walking' in God’s statutes, using the path/journey metaphor to depict a way of life aligned with His commands.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 11:21",
+    "deliberation": "Detected two figurative expressions: (1) 'their heart goes after their detestable things' uses movement of the heart as a metaphor for inner desire pursuing idols; (2) 'I will put their way upon their head' is an idiom for requiting them with their own conduct, picturing their deeds falling back on them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֶל־לֵב שִׁקּוּצֵיהֶם וְתוֹעֲבוֹתֵיהֶם לִבָּם הֹלֵךְ",
+        "english_text": "as for them whose heart is set upon (lit. 'their heart goes after') their detestable things and their abominations",
+        "target": ["their idolatrous desires and loyalties", "inner orientation of the people", "emotional/volitional attachment to idols"],
+        "vehicle": ["a heart going after something", "an inner organ walking/pursuing", "movement pursuit domain"],
+        "ground": ["following after what one loves or desires", "movement toward an object representing attraction and pursuit", "internal inclination pictured as active following"],
+        "posture": ["condemnation of misdirected love and loyalty", "depiction of their innermost self chasing idols", "highlighting willful devotion to abominations"],
+        "explanation": "The 'heart' is personified as going after detestable things, a metaphor for their inner desires actively pursuing idolatry.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דַּרְכָּם בְּרֹאשָׁם נָתַתִּי",
+        "english_text": "I will repay them for their conduct (lit. 'their way I will put on their head')",
+        "target": ["the consequences they will suffer for their behavior", "divine retribution for their lifestyle ('way')", "outcome of their moral choices"],
+        "vehicle": ["putting their way upon their head", "laying something on a person’s head", "burden or blow falling on the head"],
+        "ground": ["head as the place where blows or burdens fall", "one’s actions coming back down upon oneself", "being made to carry the weight of one’s own conduct"],
+        "posture": ["assertion of strict, fitting recompense", "judicial principle of deeds returning on the doer", "emphasis on moral responsibility"],
+        "explanation": "The idiom 'I will put their way on their head' pictures their conduct as a load or blow that falls upon their own head, a metaphor for just retribution.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 11:22",
+    "deliberation": "Describes elements of Ezekiel’s vision: cherubs, wheels, wings, and the glory of the God of Israel above them. Within the visionary framework, these are not functioning as figures of speech but as components of a symbolic vision; no separate figurative wording is singled out here.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 11:23",
+    "deliberation": "Here 'the glory of YHWH' goes up from the midst of the city and stands on the mountain to the east. In Ezekiel, 'glory' is a radiant manifestation but is still an abstract quality treated as a moving, standing entity; this personifies God’s glory as if it were a mobile person or object.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיַּעַל כְּבוֹד יְהוָה מֵעַל תּוֹךְ הָעִיר וַיַּעֲמֹד עַל־הָהָר",
+        "english_text": "The Presence (glory) of GOD ascended from the midst of the city and stood on the hill",
+        "target": ["the departure and relocation of God’s presence from Jerusalem", "change in divine relationship to the city", "theological reality of God’s withdrawal of favor"],
+        "vehicle": ["glory ascending and standing on a mountain", "a person-like figure moving and taking a stand", "spatial relocation and posture domain"],
+        "ground": ["a personal agent who can move away and take up a position elsewhere", "leaving one place as sign of forsaking it", "standing on a height as a visible, decisive stance"],
+        "posture": ["solemn portrayal of God’s withdrawal from the city", "emphasis on the decisiveness of His departure", "warning that the city is abandoned to judgment"],
+        "explanation": "God’s 'glory'—an abstract manifestation—is personified and metonymically stands for God’s presence, described as moving away from the city and 'standing' on a nearby mountain.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 11:24",
+    "deliberation": "Again, the 'spirit' lifts and brings Ezekiel in a vision, mirroring v.1. This portrays the divine Spirit as an active carrier. Within the narrative, it is visionary transport but linguistically it personifies the ruach as a moving agent.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְרוּחַ נְשָׂאתְנִי וַתְּבִאֵנִי ... בַּמַּרְאֶה בְּרוּחַ אֱלֹהִים",
+        "english_text": "A spirit carried me away and brought me in a vision by the spirit of God",
+        "target": ["Ezekiel’s visionary transport to the exiles", "prophetic experience of being shown distant realities", "mode of receiving revelation"],
+        "vehicle": ["being carried and brought by a spirit", "transport by an invisible agent", "movement and conveyance domain"],
+        "ground": ["being moved by a power beyond oneself", "involuntary, directed transport", "Spirit acting like a carrier or guide"],
+        "posture": ["Ezekiel’s self-presentation as led by God’s Spirit", "stress on divine initiative in revelation", "humble, receptive prophetic stance"],
+        "explanation": "The ruach is depicted as one who 'carries' and 'brings' Ezekiel, personifying the Spirit as an active transporter in the visionary experience.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 11:25",
+    "deliberation": "Narrates Ezekiel speaking to the exiles all the words of YHWH that God had shown him. Though 'words' being 'shown' blends vision and speech, in context it summarizes the combined visionary-message experience rather than functioning as a discrete figure of speech. No clear, isolated figurative expression is detected.",
+    "instances": []
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 15:1",
+    "deliberation": "Considered whether this standard prophetic formula is purely literal or uses figurative devices. The phrase treats YHWH’s “word” as a quasi-entity that moves toward the prophet, and uses “word” metonymically for revelation. I therefore treat the whole clause as one conventional idiomatic expression combining metonymy and personification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהֹוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "The word of GOD came to me:",
+        "target": [
+          "Ezekiel’s reception of divine revelation",
+          "prophetic communication event",
+          "divine–human interaction"
+        ],
+        "vehicle": [
+          "“the word of YHWH” coming to the prophet",
+          "a spoken word treated as a moving entity that approaches someone",
+          "human communication and spatial movement"
+        ],
+        "ground": [
+          "God’s initiative in sending a specific, directed message to Ezekiel",
+          "intentional transmission of information",
+          "communication"
+        ],
+        "posture": [
+          "presents Ezekiel’s message as directly originating from YHWH and therefore authoritative",
+          "authorization / legitimation of the prophetic speech",
+          "prophetic discourse"
+        ],
+        "explanation": "“Word of YHWH” stands metonymically for God’s revelatory message, and this ‘word’ is personified as something that can ‘come’ to the prophet—an idiomatic prophetic way of portraying revelation.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 15:2",
+    "deliberation": "The vine image here still functions on the literal level of the mashal (parable); its figurative application to Jerusalem only becomes explicit in verse 6. The clearly non-literal element is the vocative בֶּן־אָדָם, which functions idiomatically for “mortal / human” and highlights Ezekiel’s humanity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָ֕ם",
+        "english_text": "O mortal (lit. son of man)",
+        "target": [
+          "Ezekiel understood as a finite human being",
+          "individual human person",
+          "humanity / mortality"
+        ],
+        "vehicle": [
+          "“son of man” as a descendant of humankind",
+          "kinship/genealogical expression",
+          "family / genealogy"
+        ],
+        "ground": [
+          "shared human nature and limitation in contrast to God",
+          "mortality and low status",
+          "anthropology / theology"
+        ],
+        "posture": [
+          "addresses and humbles the prophet by emphasizing his mere humanity before divine speech",
+          "humbling vocative in a prophetic address",
+          "prophetic address conventions"
+        ],
+        "explanation": "“Son of man” is an idiomatic metonymy for a human being, emphasizing creaturely, mortal status rather than literal parentage.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 15:3",
+    "deliberation": "Although this verse belongs to a parabolic discourse, its wording simply describes what one literally can or cannot do with vine wood. No explicit or implicit non-literal transfer (to Israel/Jerusalem) is made in this verse itself, and no stock idioms or anthropomorphisms appear.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 15:4",
+    "deliberation": "The verse continues the literal description of the vine wood’s behavior in fire within the mashal. Fire consuming the ends and charring the middle is a realistic scenario. The figurative application to Jerusalem’s fate is still not stated here, so at the level of wording the expressions are literal, not independent metaphors or idioms.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 15:5",
+    "deliberation": "This line further develops the practical uselessness of vine wood even before and certainly after burning. The assertions concern the physical properties of such wood and remain within the literal source domain of the parable; no separate figurative idioms, personifications, or explicit comparisons to people are introduced in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 15:6",
+    "deliberation": "Here the figurative mapping is finally made explicit: the previous description of vine wood becomes a vehicle for describing Jerusalem. The clause introduced by כַּאֲשֶׁר … כֵּן forms a clear simile comparing Jerusalem’s inhabitants to useless vine wood destined for burning.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כַּאֲשֶׁ֤ר עֵץ־הַגֶּ֙פֶן֙ בְּעֵ֣ץ הַיַּ֔עַר אֲשֶׁר־נְתַתִּ֥יו לָאֵ֖שׁ לְאׇכְלָ֑ה כֵּ֣ן נָתַ֔תִּי אֶת־יֹשְׁבֵ֖י יְרוּשָׁלִָֽם",
+        "english_text": "Like the wood of the grapevine among the trees of the forest, which I have designated to be fuel for fire, so will I treat the inhabitants of Jerusalem.",
+        "target": [
+          "the inhabitants of Jerusalem under divine judgment",
+          "covenant community destined for punishment",
+          "human society / theology"
+        ],
+        "vehicle": [
+          "vine wood among forest trees given to the fire for consumption",
+          "low‑quality, unserviceable wood suitable only for burning",
+          "botany / combustion"
+        ],
+        "ground": [
+          "their lack of perceived usefulness and their suitability only for destruction",
+          "worthlessness leading to destruction",
+          "evaluation / retribution"
+        ],
+        "posture": [
+          "casts Jerusalem in a sharply negative light, justifying their coming destruction by likening them to useless vine wood",
+          "condemnatory comparison in judgment speech",
+          "prophetic judgment rhetoric"
+        ],
+        "explanation": "The inhabitants of Jerusalem are explicitly compared (with כַּאֲשֶׁר … כֵּן) to useless vine wood that is fit only to be burned, highlighting their moral worthlessness and destiny of destruction.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 15:7",
+    "deliberation": "This verse contains two distinct figurative elements: (1) the anthropomorphic idiom “I will set my face against them” for God’s hostile stance, and (2) the ‘fire’ from which they escape and by which they are later ‘eaten/consumed,’ which functions as a metaphor (with personifying language) for devastating judgment rather than only literal flames.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתִּ֤י אֶת־פָּנַי֙ בָּהֶ֔ם",
+        "english_text": "I will set My face against them",
+        "target": [
+          "YHWH’s hostile stance toward the people",
+          "divine judgment posture",
+          "theology"
+        ],
+        "vehicle": [
+          "turning or setting one’s face against someone",
+          "physical orientation of a human face expressing opposition",
+          "human relational behavior / bodily orientation"
+        ],
+        "ground": [
+          "personal, deliberate opposition and rejection",
+          "relational hostility",
+          "social interaction"
+        ],
+        "posture": [
+          "presents God’s judgment as intensely personal and resolute, not impersonal misfortune",
+          "intensification of threat through anthropomorphic imagery",
+          "prophetic warning rhetoric"
+        ],
+        "explanation": "God’s attitude of judgment is described anthropomorphically as ‘setting [his] face against’ the people, an idiom drawing on human bodily behavior to express divine hostility.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מֵהָאֵ֣שׁ יָצָ֔אוּ וְהָאֵ֖שׁ תֹּאכְלֵ֑ם",
+        "english_text": "they escaped from fire, but fire shall consume them",
+        "target": [
+          "the people’s earlier and forthcoming experiences of calamity and judgment",
+          "historical disasters befalling Judah/Jerusalem",
+          "history / divine judgment"
+        ],
+        "vehicle": [
+          "escaping one fire yet being consumed by another fire",
+          "literal conflagration that can burn and ‘eat’ victims",
+          "natural destructive forces"
+        ],
+        "ground": [
+          "the inescapable, devouring nature of the coming punishment",
+          "total consuming destruction",
+          "danger / punitive retribution"
+        ],
+        "posture": [
+          "underscores the inevitability and thoroughness of divine judgment, even for those who survived earlier troubles",
+          "emphatic warning about unavoidable destruction",
+          "prophetic exhortation"
+        ],
+        "explanation": "‘Fire’ here functions as a metaphor (and is personified as something that can ‘eat/consume’ them) for devastating judgment—likely war and destruction—from which some previously escaped but which will ultimately overtake them.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 15:8",
+    "deliberation": "The statement about making the land a desolation because of trespass describes the covenant curse in straightforward terms. ‘Land’ most naturally refers to the actual territory, and ‘desolation’ to real ruin; no idiomatic or metaphorical wording beyond standard legal–prophetic diction is evident.",
+    "instances": []
+  }
+]

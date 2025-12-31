@@ -1,0 +1,469 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 38:1",
+    "deliberation": "This verse simply lists officials and reports that they heard Jeremiah speaking to the people. I checked for idioms, metaphors, or metonymies, but all expressions (names, kinship terms, hearing, speaking) are straightforward and literal.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 38:2",
+    "deliberation": "The judgment formula with sword, famine, and pestilence is literal here. The notable figurative expression is the idiom 'his life shall be to him for spoil', which metaphorically likens survival to plunder taken in war.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיְתָה־לּוֹ נַפְשׁוֹ לְשָׁלָל",
+        "english_text": "he shall at least gain his life [his life shall be to him for spoil]",
+        "target": ["The person's life/soul (נַפְשׁוֹ)", "individual survival", "human fate under divine judgment"],
+        "vehicle": ["Spoil/booty taken in war (שָׁלָל)", "war plunder", "military conflict and its gains"],
+        "ground": ["Being barely preserved out of general loss, as something snatched from destruction", "minimal but valuable gain after catastrophe", "deliverance in judgment conceived as salvaged property"],
+        "posture": ["Prophetic portrayal of survival as a narrow, almost shameful escape", "realistic, somber framing of obedience as only a small 'profit'", "divine evaluation of surrender as the sole way to 'salvage' life"],
+        "explanation": "Jeremiah uses a war image: the only 'gain' from surrender is that one's life is preserved like plunder taken from a battlefield—survival is pictured as spoil snatched from disaster.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 38:3",
+    "deliberation": "The main figurative element is the idiom 'be given into the hand of', where 'hand' stands metonymically for power or control. The city and army references themselves are literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנָּתֹן תִּנָּתֵן הָעִיר הַזֹּאת בְּיַד חֵיל מֶלֶךְ־בָּבֶל",
+        "english_text": "This city shall be delivered into the hands of the king of Babylon’s army",
+        "target": ["The power and control exercised by Babylon’s army over the city", "political-military dominance", "human authority and conquest"],
+        "vehicle": ["The 'hand' (יָד) of the army", "body part as locus of grasping and control", "physical exertion and grasp"],
+        "ground": ["Ability to seize, hold, and control something", "effective control likened to physically grasping an object", "dominion conceptualized as a firm grip"],
+        "posture": ["Prophetic depiction of conquest as a transfer of control", "matter-of-fact but vivid representation of political fate as being 'in someone’s hand'", "underscoring the inescapable power of Babylon"],
+        "explanation": "The phrase 'given into the hand' uses 'hand' metonymically for power and control, picturing the city as an object placed into Babylon’s controlling grasp.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 38:4",
+    "deliberation": "I looked especially for idioms describing morale and well-being. The clear figurative expression is 'weakening the hands' of the warriors, an idiom/metaphor for discouraging or demoralizing them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הוּא־מְרַפֵּא אֶת־יְדֵי אַנְשֵׁי הַמִּלְחָמָה ... וְאֵת יְדֵי כׇל־הָעָם",
+        "english_text": "for he disheartens the soldiers ... and all the people",
+        "target": ["The courage and resolve of the soldiers and the people", "inner strength / morale", "psychological state in crisis"],
+        "vehicle": ["Hands being weakened or made slack (מְרַפֵּא אֶת־יָדַיִם)", "loss of physical strength or grip", "bodily incapacity"],
+        "ground": ["Loss of ability and readiness, whether physical or mental", "discouragement portrayed as limbs losing strength", "from firm, ready hands to slack, powerless ones"],
+        "posture": ["Officials’ hostile framing of Jeremiah’s message as destructive to national strength", "emotional state conceptualized through bodily imagery", "emphasis on the crippling effect of his words"],
+        "explanation": "The idiom 'to weaken the hands' metaphorically portrays discouragement as making someone’s hands slack, turning inward morale into a physical image of lost strength and readiness.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 38:5",
+    "deliberation": "The king’s statement contains the idiom 'he is in your hand', where 'hand' again stands for power or control. The rest is straightforward speech.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנֵּה־הוּא בְּיֶדְכֶם",
+        "english_text": "He is in your hands",
+        "target": ["Jeremiah’s fate and treatment", "control over a person’s destiny", "juridical and physical power"],
+        "vehicle": ["The 'hand' (יָד) of the officials", "body part used to seize and manipulate", "physical grasp"],
+        "ground": ["To be at someone’s disposal or under their power, like an object in hand", "dominion pictured as literal holding", "ability to act freely upon another’s person or situation"],
+        "posture": ["Zedekiah’s abdication of responsibility is couched in a conventional image of power", "portrays Jeremiah as an object controlled by their 'hand'", "highlights the imbalance of authority"],
+        "explanation": "Saying 'he is in your hand' uses 'hand' metonymically for power, picturing Jeremiah as if he were something physically held and controlled by the officials.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 38:6",
+    "deliberation": "This verse narrates Jeremiah’s literal descent into a physical cistern with literal mud, where he literally sinks. Although later reused metaphorically in v.22, here the pit and mud are concrete, not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 38:7",
+    "deliberation": "The verse only reports that Ebed-melech, a Cushite eunuch, heard of Jeremiah’s situation while the king sat at a gate. No idioms or metaphorical expressions appear beyond normal narrative description.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 38:8",
+    "deliberation": "This is a simple narrative transition: Ebed-melech went out and spoke to the king. I found no non-literal uses of key terms or idiomatic phrases beyond standard prose.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 38:9",
+    "deliberation": "The language of wicked action, throwing into the pit, and dying of hunger is all literal in context. The phrase 'there is no more bread in the city' refers to an actual siege shortage, not a metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 38:10",
+    "deliberation": "The command to take thirty men and lift Jeremiah out is straightforward. The phrase 'take with you' (קַח בְּיָדְךָ) is a common construction that here functions literally, not as a distinct figurative idiom.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 38:11",
+    "deliberation": "All elements—men, palace, treasury, rags, ropes—are concrete and described literally. I did not find metaphor, metonymy, or idiomatic usage beyond ordinary narrative detail.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 38:12",
+    "deliberation": "The instructions about placing rags under Jeremiah’s armpits under the ropes are purely practical and literal. No figurative language devices are employed here.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 38:13",
+    "deliberation": "The verse recounts Jeremiah’s literal extraction from the pit and his relocation to the court of the guard. Though rich symbolically in the narrative, the wording itself is not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 38:14",
+    "deliberation": "Zedekiah’s summons of Jeremiah to the third entrance of the Temple and his request not to conceal anything are literal actions and speech. No idioms or metaphorical phrases emerge as such in this wording.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 38:15",
+    "deliberation": "Jeremiah’s statement includes strong expectation language ('you will surely kill me', 'you will not listen'), but given the context of real danger, it is not clearly hyperbolic. I treat it as literal, not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 38:16",
+    "deliberation": "Two figurative features stand out: (1) the oath formula 'as YHWH lives', a conventional idiom invoking God’s life; and (2) 'those who seek your life', an idiom where 'seeking the life' stands for seeking to kill the person.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "חַי־יְהוָה",
+        "english_text": "As GOD lives",
+        "target": ["The solemnity and binding nature of the king’s oath", "oath-taking / promise-making", "legal-religious affirmation"],
+        "vehicle": ["The 'life' of YHWH", "divine vitality as a standard of truth", "God conceived in terms of 'living' being"],
+        "ground": ["Appeal to the highest conceivable certainty and reality", "invoking God’s own 'life' as guarantor of the oath’s truthfulness", "linking the stability of the promise to God’s enduring existence"],
+        "posture": ["Conventional, reverent oath-formula within Israelite religion", "Zedekiah seeks to reassure Jeremiah with maximum solemnity", "linguistically formulaic rather than creatively metaphorical, yet still non-literal"],
+        "explanation": "The stock oath 'as YHWH lives' is an idiomatic way of swearing by God’s life, using divine 'life' as a guarantor of the promise, rather than making a literal claim about observing God’s vital signs.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הָאֲנָשִׁים הָאֵלֶּה אֲשֶׁר מְבַקְשִׁים אֶת־נַפְשֶׁךָ",
+        "english_text": "those who seek your life",
+        "target": ["The intention to kill Jeremiah", "hostile murderous intent", "threats against a person’s existence"],
+        "vehicle": ["'Seeking the life/soul' (מְבַקְשִׁים אֶת־נַפְשׁ)", "a search for something valuable one wants to obtain", "pursuit imagery"],
+        "ground": ["Relentless pursuit of a valued object, here the victim’s life", "to kill someone is to 'go after' their life itself", "life (נֶפֶשׁ) stands metonymically for the whole person"],
+        "posture": ["Idiomatic, vivid phrasing of murderous hostility", "stresses the preciousness of the life they are pursuing", "underscores the danger Jeremiah faces"],
+        "explanation": "The idiom 'seek your life' uses 'life/soul' metonymically for the person and depicts enemies as hunting that life down, meaning they aim to kill him.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 38:17",
+    "deliberation": "The verse presents a conditional promise: surrender and you will live; the city will not be burned. These are literal outcomes of political and military choices, without figurative phrasing in this line.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 38:18",
+    "deliberation": "Here 'the city will be given into the hand of the Chaldeans' and 'you will not escape from their hand' both employ the idiom of 'hand' as metonymy for power or control, forming two distinct but related expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנִתְּנָה הָעִיר הַזֹּאת בְּיַד הַכַּשְׂדִּים",
+        "english_text": "this city will be delivered into the hands of the Chaldeans",
+        "target": ["The transfer of political-military control over Jerusalem", "conquest and domination", "historical outcome of siege"],
+        "vehicle": ["The 'hand' (יָד) of the Chaldeans", "physical grasping organ", "bodily control imagery"],
+        "ground": ["Control conceptualized as physically holding something in one’s hand", "loss of autonomy likened to being an object in someone’s grip", "hand as metonymy for effective power"],
+        "posture": ["Prophetic framing of defeat as loss of control to foreign power", "underscores the helplessness of the city under Babylon’s 'grasp'", "matter-of-fact yet vivid idiom of submission"],
+        "explanation": "As in v.3, 'given into the hand' uses 'hand' metonymically for control, portraying Babylon as taking Jerusalem into its grasp.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאַתָּה לֹא־תִמָּלֵט מִיָּדָם",
+        "english_text": "and you will not escape from their hand",
+        "target": ["Zedekiah’s ability to escape Babylonian control", "personal freedom vs. captivity", "king’s political and physical fate"],
+        "vehicle": ["'Hand' (יָדָם) of the Chaldeans", "grasp of a person’s hand", "instrument of seizing/holding"],
+        "ground": ["To be under someone’s power is like being held fast in their hand", "escape pictured as slipping out of a grasp", "hand again stands for the agents’ controlling power"],
+        "posture": ["Intensifies the threat by making escape depend on the impossibility of slipping free from a strong grip", "presents Zedekiah as a captive object already within their reach", "links his personal fate to the same 'hand' imagery as the city’s"],
+        "explanation": "The phrase 'escape from their hand' uses 'hand' metonymically for the Chaldeans’ power, portraying Zedekiah as someone trapped in their grip with no way out.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 38:19",
+    "deliberation": "The king’s fear is expressed in part by the idiom 'Judeans who have fallen to the Chaldeans', where 'fall to' is a conventional way of describing desertion or surrender.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַיְּהוּדִים אֲשֶׁר נָפְלוּ אֶל־הַכַּשְׂדִּים",
+        "english_text": "the Judeans who have defected [fallen] to the Chaldeans",
+        "target": ["The act of defecting or surrendering to the enemy", "political/military realignment", "change of allegiance in wartime"],
+        "vehicle": ["'Falling to' someone (נָפַל אֶל)", "a body dropping downward toward another", "uncontrolled descent imagery"],
+        "ground": ["Loss of former position and status, coming down to the enemy side", "surrender seen as a kind of collapse or downfall", "movement toward the enemy conceptualized as a fall"],
+        "posture": ["From Zedekiah’s perspective, defection is a degrading collapse", "the idiom conveys shame and vulnerability", "it highlights how low the defectors have 'fallen' in his estimation"],
+        "explanation": "The idiom 'fall to' uses vertical movement imagery for political defection, picturing those who change sides as people who have collapsed or dropped themselves into the enemy’s camp.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 38:20",
+    "deliberation": "Two idiomatic expressions appear: 'listen to the voice of YHWH', where 'voice' stands metonymically for God’s command/message, and 'it will be good for you', a stock formula for things going well. The more salient figure is 'voice of YHWH'.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שְׁמַע־נָא בְּקוֹל יְהוָה לַאֲשֶׁר אֲנִי דֹּבֵר אֵלֶיךָ",
+        "english_text": "Listen to GOD’s voice, to what I tell you",
+        "target": ["Obedience to God’s revealed will through Jeremiah", "response to divine command", "prophetic instruction"],
+        "vehicle": ["The 'voice' (קוֹל) of YHWH", "audible speech as a sensory phenomenon", "sound as medium of instruction"],
+        "ground": ["Revelation conceptualized as something spoken and heard", "God’s will metonymically presented as His 'voice'", "to obey is to 'listen' attentively to that voice"],
+        "posture": ["Stresses personal, relational aspect of obedience (hearing a voice)", "highlights Jeremiah as mediator of that voice", "presents surrender as simple heeding of divine speech"],
+        "explanation": "The expression 'listen to the voice of YHWH' uses 'voice' metonymically for God’s message or command; Jeremiah’s own words are thereby identified as the medium of that divine 'voice'.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 38:21",
+    "deliberation": "This verse introduces a vision ('this is the thing that YHWH has shown me'), but the language of showing is standard for prophetic revelation and is not itself figurative in this context.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 38:22",
+    "deliberation": "This verse contains a brief taunt-song with several figurative elements: (1) 'men of your peace' as idiom for allies; (2) 'they have sunk your feet in the mire' as metaphor for being trapped in disastrous circumstances (evoking v.6); and (3) 'they have turned back' as metaphor for betrayal and desertion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַנְשֵׁי שְׁלֹמֶךָ",
+        "english_text": "Those who were your friends [lit. the men of your peace]",
+        "target": ["Zedekiah’s trusted allies and advisers", "political and personal supporters", "his network of friendly relationships"],
+        "vehicle": ["'Men of your peace' (אַנְשֵׁי שְׁלוֹם)", "people associated with well-being/peace", "state of shalom (wholeness, welfare)"],
+        "ground": ["Friends are those who seek and promote another’s peace/welfare", "peace (שָׁלוֹם) stands metonymically for overall well-being", "those bound to him by relations of shalom are his inner circle"],
+        "posture": ["Ironic emphasis that those defined by 'peace' have in fact harmed him", "underscores false security based on human alliances", "poetic compactness of the expression serves taunting function"],
+        "explanation": "Calling advisers 'men of your peace' is an idiomatic, metonymic way of saying 'your friends/allies', defining them by the peace (shalom) they ideally promote for the king.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הׇטְבְּעוּ בַבֹּץ רַגְלֶךָ",
+        "english_text": "they have sunk your feet in the mire",
+        "target": ["Zedekiah’s political and personal predicament brought on by his advisers", "being trapped in an inescapable crisis", "the king’s compromised position in the siege"],
+        "vehicle": ["Feet stuck in mud/mire (בֹּץ)", "a person whose legs are bogged down and cannot move", "swampy, clinging ground"],
+        "ground": ["Inability to move or extricate oneself from a bad situation", "counsel that leaves one mired in trouble", "paralysis and vulnerability pictured as physical bogging down"],
+        "posture": ["A sharply vivid metaphor that echoes Jeremiah’s own literal experience in v.6", "poetic accusation that the advisers have trapped the king", "suggests humiliation and helplessness"],
+        "explanation": "The women taunt Zedekiah by saying his allies have 'sunk [his] feet in the mire', a metaphor for how their counsel has left him stuck in disaster with no way to move or escape.",
+        "confidence": 0.99
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נָסֹגוּ אָחוֹר",
+        "english_text": "They have turned their backs [on you] [lit. 'have drawn back']",
+        "target": ["The advisers’ betrayal and abandonment of Zedekiah", "relational and political desertion", "withdrawal of support and loyalty"],
+        "vehicle": ["Turning/drawing back (נָסֹג אָחוֹר)", "physical retreat of a person moving backward", "bodily movement away from someone"],
+        "ground": ["To withdraw loyalty is like physically stepping backwards away from a person", "retreat in battle parallels desertion in relationship", "turning one’s back signifies rejection"],
+        "posture": ["Poetic, compressed way of accusing his friends of cowardly retreat", "connects his plight to their failure of loyalty", "strengthens the taunting, reproachful tone"],
+        "explanation": "The phrase 'they have turned back' metaphorically depicts the advisers’ betrayal as a physical retreat, stepping away from the king instead of standing with him.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 38:23",
+    "deliberation": "In addition to literal predictions about capture and burning the city, the verse uses again the idiom of 'hand' for power—both 'you will not escape from their hand' and 'you will be captured in the hand of the king of Babylon'.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאַתָּה לֹא־תִמָּלֵט מִיָּדָם",
+        "english_text": "and you yourself will not escape from them [lit. from their hand]",
+        "target": ["Zedekiah’s inability to evade Babylonian control and that of their agents", "lack of escape from enemy power", "personal outcome of judgment"],
+        "vehicle": ["The 'hand' (יָדָם) of the Chaldeans", "physical grasp of a hand", "instrument of seizing and holding"],
+        "ground": ["Power and custody conceptualized as somebody’s grip", "to be 'in their hand' is to be under their control", "escaping is like slipping out of a grasp"],
+        "posture": ["Emphasizes inevitability of his capture in concrete bodily terms", "deepens the sense of being overpowered", "aligns with repeated 'hand' imagery in the chapter"],
+        "explanation": "The expression 'escape from their hand' again uses 'hand' metonymically for controlling power, picturing Zedekiah as someone unable to slip free from the enemy’s grasp.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי בְיַד מֶלֶךְ־בָּבֶל תִּתָּפֵשׂ",
+        "english_text": "for you will be captured by [lit. in the hand of] the king of Babylon",
+        "target": ["Zedekiah’s coming capture by the Babylonian king", "royal custody and control", "political subjugation"],
+        "vehicle": ["The 'hand' (בְיַד) of the king of Babylon", "a ruler’s hand as symbol of power", "physical act of taking hold"],
+        "ground": ["Custody described as being literally in someone’s hand", "capture as an act of seizing with the hand", "royal authority conceived as the king’s grasp"],
+        "posture": ["Portrays Nebuchadnezzar’s authority in personal, bodily terms", "heightens sense of humiliation—Israel’s king in a foreign king’s hand", "echoes the broader 'hand' motif in Jeremiah’s oracles"],
+        "explanation": "The phrase 'in the hand of the king of Babylon' uses 'hand' metonymically for his power, representing Zedekiah’s capture as being seized and held by that royal hand.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 38:24",
+    "deliberation": "Zedekiah’s warning not to let anyone know about the conversation is direct and literal. There are no idioms or images functioning as figurative language here.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 38:25",
+    "deliberation": "The reported potential speech of the officials is straightforward interrogation and threat. Phrases like 'hide nothing from us or we’ll kill you' are brutally literal in this context, not hyperbolic or metaphorical.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 38:26",
+    "deliberation": "The key figurative idiom is 'I was casting my supplication before the king', using the verb 'to cause to fall' for presenting a plea, picturing prayer or petition as something laid down at a superior’s feet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַפִּיל־אֲנִי תְחִנָּתִי לִפְנֵי הַמֶּלֶךְ",
+        "english_text": "I was presenting [lit. causing to fall] my petition before the king",
+        "target": ["Jeremiah’s act of humbly pleading with the king", "petitionary speech", "the relational dynamic of supplicant to ruler"],
+        "vehicle": ["Making something fall or casting it down (מַפִּיל)", "an object dropped or laid at someone’s feet", "physical placement in front of a superior"],
+        "ground": ["Submitting a request likened to laying an object down before someone in authority", "downward movement suggests humility and dependence", "petition conceptualized as something concrete placed in the king’s presence"],
+        "posture": ["Depicts Jeremiah as a lowly petitioner rather than a proud adversary", "expresses deference in bodily terms", "shows how carefully crafted the cover story is"],
+        "explanation": "The idiom 'cause my supplication to fall before the king' metaphorically portrays a petition as something dropped or laid at the king’s feet, conveying humility and dependence.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 38:27",
+    "deliberation": "This verse narrates the officials’ questioning and Jeremiah’s reply, matching the wording of the agreed cover statement. It is a literal report; no extra figurative expressions appear beyond the idiom already noted in v.26.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 38:28",
+    "deliberation": "The verse notes Jeremiah’s continued stay in the court of the guard until Jerusalem was captured. The capture of the city is a literal military event; no figurative or idiomatic expressions stand out here.",
+    "instances": []
+  }
+]

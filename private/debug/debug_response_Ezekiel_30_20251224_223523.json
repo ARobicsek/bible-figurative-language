@@ -1,0 +1,739 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 30:1",
+    "deliberation": "Checked for imagery beyond the standard prophetic formula. The only potentially figurative element is 'the word of YHWH came to me', which personifies 'word' as if it travels. This is a conventional prophetic personification/metaphor for receiving revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "The word of GOD came to me",
+        "target": ["Prophetic revelation received by Ezekiel", "Divine communication", "Theological"],
+        "vehicle": ["A mobile, approaching 'word' or messenger", "Animated message/being that comes", "Physical/relational"],
+        "ground": ["Initiative and directed movement from sender to recipient", "Active arrival and encounter", "Communication dynamics"],
+        "posture": ["Stresses the divine initiative and authority of the message", "Highlights solemn, revelatory character", "Theological/judicial stance"],
+        "explanation": "The 'word' of YHWH is personified and metaphorically portrayed as something that comes to Ezekiel like a visiting entity, expressing the experiential reality of receiving revelation.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 30:2",
+    "deliberation": "Looked for metaphors or personifications in the command to prophesy and to wail. The only figurative nuance is in 'for the day', where 'day' stands for the coming event/judgment, a standard prophetic metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֵילִילוּ הָהּ לַיּוֹם",
+        "english_text": "Wail, alas for the day!",
+        "target": ["Impending judgment on Egypt (and related nations)", "Historical catastrophe", "Historical-theological"],
+        "vehicle": ["A specific 'day' or date", "Temporal point in time", "Temporal"],
+        "ground": ["Association of a time-point with a defining event", "Focusing the entire complex of disaster into a single imminent occasion", "Event-time linkage"],
+        "posture": ["Urgent lament over the coming disaster", "Emotional and theological warning posture", "Exhortative/judicial"],
+        "explanation": "The 'day' is not just a literal calendar day but stands metonymically for the full complex of coming calamities; the audience is told to lament that event by referring to it as 'the day'.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 30:3",
+    "deliberation": "Multiple 'day' expressions appear. I distinguished the technical 'day of YHWH' (time for divine judgment) as metonymy, and 'day of cloud' as a metaphor that likens the judgment day to a dark, stormy day.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "קָרוֹב יוֹם לַיהוָה",
+        "english_text": "A day of GOD is near",
+        "target": ["Divine judgment/intervention by YHWH", "Judgment event", "Theological-historical"],
+        "vehicle": ["A 'day' belonging to YHWH", "Designated time-period", "Temporal"],
+        "ground": ["A specific time that is characterized by decisive action of its owner", "Concentration of complex events into one appointed occasion", "Ownership and determination of time"],
+        "posture": ["Announces the imminence and certainty of YHWH’s intervention", "Threatening/judicial stance", "Theological"],
+        "explanation": "The 'day of YHWH' is a standard prophetic metonymy, where 'day' stands for the extended event of divine judgment rather than a mere 24-hour period.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יוֹם עָנָן",
+        "english_text": "a day of cloud",
+        "target": ["The nature of the coming judgment-day", "Emotional and experiential quality of the event", "Theological-historical"],
+        "vehicle": ["A dark, cloudy day", "Storm/darkness imagery", "Natural/weather"],
+        "ground": ["Darkness, obscurity, foreboding, and fear", "Lack of clarity and joy", "Negative experiential qualities"],
+        "posture": ["Presents the judgment as ominous and oppressive", "Conveys dread and sorrow", "Threatening/judicial"],
+        "explanation": "Calling it 'a day of cloud' metaphorically depicts the judgment as dark and threatening, evoking imagery of storm and gloom rather than literal weather forecast.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 30:4",
+    "deliberation": "Considered whether 'sword' and 'foundations' are literal. 'Sword' is standard metonymy for warfare/military attack. 'Her foundations are overthrown' treats Egypt as a building whose foundations are destroyed, a structural metaphor for the collapse of basic institutions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּבָאָה חֶרֶב בְּמִצְרַיִם",
+        "english_text": "A sword shall [come] into Egypt",
+        "target": ["Military invasion and warfare against Egypt", "Violent conflict", "Socio-political/military"],
+        "vehicle": ["A literal sword", "Weapon/instrument of killing", "Material/violent"],
+        "ground": ["Instrument of lethal force and warfare", "Association of sword with battle and death", "Instrument-action linkage"],
+        "posture": ["Announces divinely ordained warfare against Egypt", "Judicial and threatening stance", "Theological-military"],
+        "explanation": "The 'sword' is a metonymy for warfare and invading armies, not a single physical blade entering the land.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנֶהֶרְסוּ יְסֹדוֹתֶיהָ",
+        "english_text": "and her foundations are overthrown",
+        "target": ["Egypt’s basic social, political, and economic structures", "National stability and order", "Socio-political"],
+        "vehicle": ["The foundations of a building being demolished", "Architectural base structure", "Physical/structural"],
+        "ground": ["What supports and holds up the whole entity is destroyed, leading to collapse", "Radical destabilization", "Loss of support and security"],
+        "posture": ["Portrays Egypt’s collapse as total and structural, not superficial", "Emphasizes severity of judgment", "Judicial/destructive"],
+        "explanation": "Egypt is metaphorically portrayed as a building whose very foundations are demolished, signaling the destruction of its underlying systems.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 30:5",
+    "deliberation": "Names of nations are literal. The phrase 'fall by the sword' is a conventional idiom where 'sword' stands metonymically for death in battle.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אִתָּם בַּחֶרֶב יִפֹּלוּ",
+        "english_text": "shall fall by the sword with them",
+        "target": ["The deaths of these allied peoples in war", "Fatal war losses", "Military/historical"],
+        "vehicle": ["The sword as a killing weapon", "Instrument of warfare", "Physical/violent"],
+        "ground": ["Swords are primary tools of killing in battle", "Association of 'sword' with violent death", "Instrument-result linkage"],
+        "posture": ["Depicts their fate as violent and ignominious", "Judgment through warfare", "Theological-military"],
+        "explanation": "To 'fall by the sword' uses 'sword' metonymically for violent death in warfare; it is not about literal tripping over a weapon.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 30:6",
+    "deliberation": "I considered 'supporters of Egypt' and 'her proud strength shall come down'. The former can be literal allies. 'Proud strength shall sink/go down' is metaphorical, using vertical movement to depict humiliation. 'From Migdol to Syene' is a spatial merism for all Egypt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיָרַד גְּאוֹן עֻזָּהּ",
+        "english_text": "And her proud strength shall sink",
+        "target": ["Egypt’s power and arrogance", "National/military prestige and self-exaltation", "Socio-political"],
+        "vehicle": ["Something high that descends or collapses downward", "Vertical movement from height to low place", "Spatial"],
+        "ground": ["Loss of exalted status; humiliation and weakening", "From high and secure to low and vulnerable", "Status-loss correspondence"],
+        "posture": ["Depicts Egypt’s pride as being humbled by divine judgment", "Negative evaluative stance toward that pride", "Judicial/theological"],
+        "explanation": "Egypt’s arrogant power is portrayed as something elevated that is forced to go down, a spatial metaphor for humiliation.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִמִּגְדֹּל סְוֵנֵה",
+        "english_text": "From Migdol to Syene",
+        "target": ["The entire geographic span of Egypt", "Total territorial extent", "Geographical/political"],
+        "vehicle": ["Two extreme boundary towns (north and south)", "Endpoints of a range", "Spatial"],
+        "ground": ["Naming extremities to imply inclusion of everything between", "Boundary-as-totality expression", "Range-covering logic"],
+        "posture": ["Stresses totality of the judgment across all Egypt", "Comprehensive judicial stance", "Theological-geographical"],
+        "explanation": "The pairing of the northern and southern extremities functions as a merism, expressing that the whole land in between is included in the judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 30:7",
+    "deliberation": "The verse uses superlative language: 'most desolate of desolate lands' and 'most ruined of cities'. That is an intensifying hyperbole rather than a precise, literal measure of desolation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָשַׁמּוּ בְּתוֹךְ אֲרָצוֹת נְשַׁמּוֹת וְעָרָיו בְּתוֹךְ־עָרִים נַחֲרָבוֹת תִּהְיֶינָה",
+        "english_text": "They shall be the most desolate of desolate lands, and her cities shall be the most ruined of cities",
+        "target": ["The degree of devastation that will befall Egypt and its cities", "Extent of ruin", "Historical-judicial"],
+        "vehicle": ["Superlative comparison among all desolate lands and ruined cities", "Exaggerated ranking", "Evaluative"],
+        "ground": ["Use of extreme language to emphasize extraordinary desolation", "Not literal statistics but emphatic intensity", "Rhetorical overstatement"],
+        "posture": ["Highlights the severity of judgment by overstating desolation", "Heightened negative evaluation", "Prophetic/judicial"],
+        "explanation": "By calling Egypt the most desolate among desolate lands and its cities the most ruined among ruined cities, the text uses hyperbolic superlatives to underscore the extremity of devastation.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 30:8",
+    "deliberation": "Examined whether 'fire' is literal. The phrase 'I set fire to Egypt' in this broader oracle functions as a stock metaphor for devastating judgment (war, destruction), not merely literal burning.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּתִתִּי־אֵשׁ בְּמִצְרַיִם",
+        "english_text": "when I set fire to Egypt",
+        "target": ["Divine judgment and large-scale destruction in Egypt", "National catastrophe/warfare", "Theological-historical"],
+        "vehicle": ["A consuming fire burning through Egypt", "Conflagration", "Physical/destructive"],
+        "ground": ["Fire consumes, destroys, and leaves desolation", "Associates judgment with rapid, unstoppable devastation", "Destructive power parallel"],
+        "posture": ["Presents the judgment as fierce and consuming", "Threatening judicial stance", "Theological"],
+        "explanation": "Fire is used metaphorically for the destructive force of divine judgment (likely via invading armies), not for a single literal blaze covering all Egypt.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 30:9",
+    "deliberation": "Messengers in ships can be literal. 'Egypt’s day' is shorthand for its day of doom, a time-for-event metonymy similar to 'day of YHWH'.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּיוֹם מִצְרַיִם",
+        "english_text": "on Egypt’s day",
+        "target": ["Egypt’s appointed time of calamity", "National overthrow/judgment", "Historical-theological"],
+        "vehicle": ["A specific 'day' belonging to Egypt", "Time designation", "Temporal"],
+        "ground": ["Using a day to encapsulate the defining event that characterizes it", "Time-standing-for-event", "Event-temporal association"],
+        "posture": ["Frames Egypt’s downfall as an appointed, inevitable moment", "Judicial inevitability", "Theological"],
+        "explanation": "‘Egypt’s day’ is a metonymy in which a temporal point stands for the catastrophic event that defines it—Egypt’s day of doom.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 30:10",
+    "deliberation": "Considered 'I will cause the hāmōn of Egypt to cease'. Though 'hāmōn' can be pomp/multitude/wealth, the verse can straightforwardly refer to ending Egypt’s population/pomp through Nebuchadnezzar. The language can be read literally without clear figurative mechanism, so I treat it as non-figurative here.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 30:11",
+    "deliberation": "Looked at 'unsheathe the sword' and 'fill the land with the slain'. The latter is clearly hyperbolic; the land cannot literally be filled, but this exaggerates the number of corpses.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמָלְאוּ אֶת־הָאָרֶץ חָלָל",
+        "english_text": "and they shall fill the land with the slain",
+        "target": ["The extent of deaths caused by the invasion", "Casualty level", "Historical-military"],
+        "vehicle": ["A land being filled up with corpses as with objects or material", "Physical filling imagery", "Spatial/quantitative"],
+        "ground": ["Overwhelming number and omnipresence of the dead", "Exaggeration to convey vast scale", "Quantity-intensity link"],
+        "posture": ["Drives home the horror and scale of the bloodshed", "Emphatically negative/judicial", "Prophetic warning"],
+        "explanation": "The statement that the land will be ‘filled’ with the slain is hyperbolic imagery, overstating to stress the enormity of the slaughter.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 30:12",
+    "deliberation": "Distinguished literal from figurative. Drying up the channels could be literal or symbolic. 'I will sell the land into the hand of evildoers' uses commercial language for political transfer of control, a metaphorical idiom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמָכַרְתִּי אֶת־הָאָרֶץ בְּיַד־רָעִים",
+        "english_text": "and I will sell the land into the hands of evildoers",
+        "target": ["Transfer of Egypt’s control to wicked foreign rulers", "Political domination", "Socio-political"],
+        "vehicle": ["A commercial sale of land to buyers", "Market transaction", "Economic/legal"],
+        "ground": ["Deliberate transfer of ownership/rights from one party to another", "Loss of former owner’s control and benefit", "Ownership/control parallel"],
+        "posture": ["Portrays Egypt’s loss of sovereignty as YHWH’s deliberate disposal of it", "Judicial and dispossessing stance", "Theological-political"],
+        "explanation": "Using sale language metaphorically, God depicts handing Egypt over to wicked rulers as if the land were a commodity sold into their hands.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 30:13",
+    "deliberation": "Idol destruction and absence of a prince are literal. 'I will put fear in the land of Egypt' uses 'land' for its inhabitants (metonymy) and treats the land as the seat of fear, a mild personification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי יִרְאָה בְּאֶרֶץ מִצְרָיִם",
+        "english_text": "and I will strike the land of Egypt with fear / I will put fear in the land of Egypt",
+        "target": ["The people of Egypt experiencing pervasive terror", "Collective emotional state", "Social-psychological"],
+        "vehicle": ["The land of Egypt as a container into which fear is placed", "Territory as a fearful subject", "Spatial/personified"],
+        "ground": ["The inhabitants are so identified with the land that the land can stand for them and be described as filled with fear", "Fear being pervasive throughout the territory", "Container-content association"],
+        "posture": ["Depicts fear as God’s imposed judgment on Egypt", "Judicial and humbling stance", "Theological"],
+        "explanation": "The ‘land’ stands metonymically for its inhabitants, and it is personified as a realm into which God places fear, conveying an all-pervasive terror among the people.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 30:14",
+    "deliberation": "Laying Pathros waste, setting fire to Zoan, and executing judgments in No can all be read in straightforward military-conquest terms; no necessary figurative device beyond ordinary description. I treat them as literal.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 30:15",
+    "deliberation": "The key figurative expression is 'I will pour out my wrath', a common biblical metaphor conceptualizing anger as a liquid that can be poured upon someone.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשָׁפַכְתִּי חֲמָתִי עַל־סִין מָעוֹז מִצְרַיִם",
+        "english_text": "I will pour out my anger upon Sin, the stronghold of Egypt",
+        "target": ["God’s enactment of punitive judgment on the city of Sin", "Divine wrath as enacted judgment", "Theological-judicial"],
+        "vehicle": ["Liquid being poured out from a container", "Outpoured substance", "Physical/material"],
+        "ground": ["Abundant, directed release that covers the object", "Unrestrained outflow that affects the recipient completely", "Quantity-direction parallel"],
+        "posture": ["Stresses the intensity and intentionality of God’s punitive action", "Severe judicial stance", "Theological"],
+        "explanation": "Wrath is metaphorically treated as a liquid that God pours out on Sin, portraying the judgment as abundant, directed, and overwhelming.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 30:16",
+    "deliberation": "Two distinct figures: (1) 'I will set fire to Egypt' again uses fire metaphorically for judgment. (2) 'Sin shall writhe in anguish' personifies the city as a suffering human, using a verb often used for labor pains or severe distress.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי אֵשׁ בְּמִצְרַיִם",
+        "english_text": "I will set fire to Egypt",
+        "target": ["The comprehensive devastation that will come upon Egypt", "National judgment", "Theological-historical"],
+        "vehicle": ["A consuming fire within Egypt", "Conflagration", "Physical/destructive"],
+        "ground": ["Fire’s ability to consume and devastate extensively", "Sudden, destructive judgment leaving ruin", "Destruction-intensity parallel"],
+        "posture": ["Depicts judgment as fierce and all-consuming", "Threatening and punitive stance", "Theological"],
+        "explanation": "As in v. 8, fire symbolizes the destructive power of divine judgment, likely mediated through war and invasion.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תָּחוּל סִין",
+        "english_text": "Sin shall writhe in anguish",
+        "target": ["The city of Sin and its experience under judgment", "Urban community’s distress", "Socio-political"],
+        "vehicle": ["A person writhing in pain (often childbirth or mortal anguish)", "Suffering human body", "Physical/emotional"],
+        "ground": ["Intense, uncontrollable suffering and fear", "Convulsive reaction to severe pain or terror", "Distress parallel"],
+        "posture": ["Presents the city’s fate as deeply agonizing", "Emphasizes horror of judgment", "Prophetic/judicial"],
+        "explanation": "The city of Sin is personified as a human writhing in severe pain, conveying the extremity of its distress under divine judgment.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 30:17",
+    "deliberation": "The towns and young men are literal. The phrase 'fall by the sword' again uses 'sword' metonymically for death in battle.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בַּחֶרֶב יִפֹּלוּ",
+        "english_text": "shall fall by the sword",
+        "target": ["The killing of the young men of Aven and Pi-beseth", "Battle deaths", "Military/historical"],
+        "vehicle": ["The sword as implement of killing", "Weapon of war", "Physical/violent"],
+        "ground": ["Swords as standard tools of warfare and killing", "Short-hand for violent death in combat", "Instrument-result association"],
+        "posture": ["Depicts their fate as violent and military in nature", "Judicial through warfare", "Theological-military"],
+        "explanation": "As elsewhere, 'fall by the sword' uses 'sword' as a metonymy for violent death in battle.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 30:18",
+    "deliberation": "This verse is rich in imagery: (1) 'The day shall be dark' uses darkness for calamity. (2) 'I break the bars/staves of Egypt' is a power-as-support metaphor. (3) '[The city] itself shall be covered with cloud' uses cloud as gloom/judgment image. (4) 'Her daughter towns' treats dependent towns as daughters, a kinship metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבִתְחַפְנְחֵס חָשַׂךְ הַיּוֹם",
+        "english_text": "In Tehaphnehes daylight shall be withheld / the day shall grow dark",
+        "target": ["The overall condition of calamity and loss in Tehaphnehes", "City’s experience of disaster", "Socio-historical"],
+        "vehicle": ["A day becoming dark, loss of light", "Darkened daylight", "Natural/light"],
+        "ground": ["Darkness connotes misfortune, fear, and the end of joy", "Loss of clarity, hope, and normalcy", "Light–prosperity vs. dark–calamity"],
+        "posture": ["Frames the judgment as turning a bright day into gloom", "Strongly negative/judicial stance", "Theological"],
+        "explanation": "The darkened day is metaphorical for the city’s transition from normal life to disaster and anguish, using darkness as a symbol of calamity.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּשִׁבְרִי־שָׁם אֶת־מֹטוֹת מִצְרַיִם",
+        "english_text": "when I break there the bars/staffs of Egypt",
+        "target": ["Egypt’s supporting power structures (military, political strength)", "National power and stability", "Socio-political"],
+        "vehicle": ["Bars or staffs that support and uphold something", "Supportive rods", "Physical/structural"],
+        "ground": ["Breaking supporting bars causes collapse or inability to bear weight", "Loss of structural support parallels loss of power", "Support–power correspondence"],
+        "posture": ["Depicts God as shattering Egypt’s ability to sustain itself", "Judicial and dismantling stance", "Theological"],
+        "explanation": "Egypt’s power is metaphorically represented as ‘bars’ or ‘staffs’ that support it; breaking them describes the dismantling of its strength.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִיא עָנָן יְכַסֶּנָּה",
+        "english_text": "[The city] itself shall be covered with cloud",
+        "target": ["The state of Tehaphnehes under judgment", "City’s condition of gloom and confusion", "Socio-historical"],
+        "vehicle": ["A cloud covering a person or place", "Dark, overshadowing cloud", "Natural/weather"],
+        "ground": ["Cloud-cover implies gloom, obscurity, and overshadowing trouble", "Loss of brightness and visibility corresponds to distress and uncertainty", "Gloom–trouble parallel"],
+        "posture": ["Portrays the city as under a pall of divine judgment", "Somber and threatening stance", "Theological"],
+        "explanation": "The city is personified as being covered by a cloud, using the image of cloud-cover to depict pervasive gloom and judgment.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְנוֹתֶיהָ בַּשְּׁבִי תֵלַכְנָה",
+        "english_text": "and its daughter towns shall go into captivity",
+        "target": ["Dependent settlements around Tehaphnehes", "Satellite/local towns", "Geographical-political"],
+        "vehicle": ["Daughters in relation to a mother city", "Human kinship relation", "Familial/social"],
+        "ground": ["Close, dependent relationship of smaller towns to a primary city parallels daughters to a mother", "Shared fate with subordinate status", "Dependency analogy"],
+        "posture": ["Shows the spread of judgment from the main city to its dependents", "Warns of comprehensive impact", "Prophetic/judicial"],
+        "explanation": "The smaller towns are metaphorically called the city’s ‘daughters’, personifying the urban network as a family, to show that the whole ‘family’ goes into captivity.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 30:19",
+    "deliberation": "The verse summarizes: 'I will execute judgments on Egypt; and they shall know that I am YHWH.' This is theological but not figurative; no metaphors, similes, or personifications are required to understand it.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 30:20",
+    "deliberation": "Same prophetic formula as v. 1: 'the word of YHWH came to me'. Again this personifies the 'word' and metaphorically depicts revelation as something that comes to the prophet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָיָה דְבַר־יְהוָה אֵלַי",
+        "english_text": "the word of GOD came to me",
+        "target": ["Prophetic revelation received by Ezekiel", "Divine speech act", "Theological"],
+        "vehicle": ["A word that travels and arrives at a person", "Visiting messenger-like entity", "Relational/kinetic"],
+        "ground": ["Active movement from sender to receiver expresses initiative and encounter", "Revelation as an event of coming", "Communication dynamics"],
+        "posture": ["Stresses the authoritative, God-initiated character of the message", "Solemn revelatory stance", "Theological"],
+        "explanation": "As in v. 1, the phrase personifies and metaphorically animates the divine word as coming to Ezekiel, expressing the experience of receiving revelation.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 30:21",
+    "deliberation": "The entire verse develops an extended metaphor: Pharaoh’s 'arm' broken, unbandaged, unable to grasp the sword. 'Arm' stands for military/political strength, and its breaking for crippling that power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶת־זְרוֹעַ פַּרְעֹה מֶלֶךְ־מִצְרַיִם שָׁבַרְתִּי ... לְחַזְקָהּ לִתְפֹּשׂ בֶּחָרֶב",
+        "english_text": "I have broken the arm of Pharaoh king of Egypt; it has not been bound up ... to make it strong enough to grasp the sword",
+        "target": ["Pharaoh’s military and political strength/capacity", "Ruling power", "Socio-political"],
+        "vehicle": ["A human arm that is broken, unhealed, and unable to hold a weapon", "Injured body part", "Physical"],
+        "ground": ["A broken arm removes the ability to fight effectively", "Incapacity, weakness, vulnerability", "Function-loss parallel"],
+        "posture": ["Highlights Pharaoh’s irreversible loss of effective power as God’s judgment", "Humbling and disabling stance", "Theological-judicial"],
+        "explanation": "Pharaoh’s 'arm' is a metonymy for his power and is metaphorically described as broken and unhealed, portraying his military impotence.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 30:22",
+    "deliberation": "Continues the arm imagery: God will break both of Pharaoh’s arms and cause the sword to fall from his hand. This extends the same metaphor of military power as arms that wield a sword.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשָׁבַרְתִּי אֶת־זְרֹעֹתָיו ... וְהִפַּלְתִּי אֶת־הַחֶרֶב מִיָּדוֹ",
+        "english_text": "I will break his arms, both the sound one and the injured, and make the sword drop from his hand",
+        "target": ["Pharaoh’s remaining capacity for resistance and warfare", "Total military-political power", "Socio-political"],
+        "vehicle": ["Both arms of a warrior being broken so he drops his sword", "Disabled fighter", "Physical/martial"],
+        "ground": ["Without functioning arms one cannot hold or wield a weapon, implying total incapacity", "Complete removal of combat ability", "Strength–weapon linkage"],
+        "posture": ["Depicts God as decisively and completely disabling Pharaoh’s power", "Totalizing judicial stance", "Theological"],
+        "explanation": "Both 'arms' are Pharaoh’s powers, and the image of breaking them so that he drops the sword powerfully depicts his total military collapse.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 30:23",
+    "deliberation": "The verbs 'scatter' and 'disperse' present exile as scattering objects (like seed) across lands. This is a conventional metaphor for forced diaspora.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַהֲפִצוֹתִי אֶת־מִצְרַיִם בַּגּוֹיִם וְזֵרִיתִם בָּאֲרָצוֹת",
+        "english_text": "I will scatter the Egyptians among the nations and disperse them throughout the countries",
+        "target": ["The forced exile and diaspora of Egyptians", "Population displacement", "Socio-political"],
+        "vehicle": ["Scattering and winnowing objects like seed or chaff by hand or wind", "Dispersal of particles", "Agricultural/physical"],
+        "ground": ["Loss of cohesion and concentration; being spread out and separated", "From unity in one place to scattered many places", "Spatial-distribution parallel"],
+        "posture": ["Presents the exile as a divinely driven dispersal, not random", "Judicial and disintegrative stance", "Theological"],
+        "explanation": "The exiles are metaphorically portrayed as objects scattered and winnowed among nations, depicting the loss of national cohesion.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 30:24",
+    "deliberation": "Two figures: (1) 'Strengthen the arms of the king of Babylon' is the positive counterpart to the Pharaoh-arm metaphor—arms for power. (2) 'He shall groan with the groans of one struck down' compares Pharaoh’s lament to that of a mortally wounded man, an implicit simile/metaphor of extreme distress.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְחִזַּקְתִּי אֶת־זְרֹעוֹת מֶלֶךְ בָּבֶל וְנָתַתִּי אֶת־חַרְבִּי בְּיָדוֹ",
+        "english_text": "I will strengthen the arms of the king of Babylon and put My sword in his hand",
+        "target": ["The empowerment of the Babylonian king as agent of God’s judgment", "Military and political effectiveness", "Socio-political/theological"],
+        "vehicle": ["Strong arms holding a sword", "Well-armed, capable warrior", "Physical/martial"],
+        "ground": ["Strong arms wielding a weapon signify effective fighting power", "Equipping with a sword implies authorization and capacity", "Strength–weapon–agency linkage"],
+        "posture": ["Portrays Babylon’s might as divinely granted for purposes of judgment", "Affirmative toward Babylon as instrument, judicial toward Egypt", "Theological-judicial"],
+        "explanation": "The Babylonian king’s political-military power is depicted as strong arms holding God’s own sword, a metaphor for God empowering him as His instrument.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָאַק נַאֲקוֹת חָלָל לְפָנָיו",
+        "english_text": "and he shall groan before him with the groans of one struck down",
+        "target": ["Pharaoh’s anguish and humiliation before the Babylonian king", "Emotional and political defeat", "Psychological/socio-political"],
+        "vehicle": ["The groaning of a mortally wounded man", "Death-throes of the slain", "Physical/emotional"],
+        "ground": ["Deep, involuntary cries of pain and defeat", "Ultimate vulnerability and powerlessness", "Suffering-intensity parallel"],
+        "posture": ["Depicts Pharaoh’s fall as utterly devastating", "Strongly negative/judicial stance toward Egypt", "Theological"],
+        "explanation": "Pharaoh’s lament is likened to the groans of a slain man, an implicit simile/metaphor for his extreme agony and absolute defeat.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 30:25",
+    "deliberation": "Reiterates the arm-and-sword imagery: Babylon’s arms made firm, Pharaoh’s arms falling, God’s sword in Babylon’s hand stretched out against Egypt. This is one coherent martial metaphor for divinely empowered vs. disabled power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהַחֲזַקְתִּי אֶת־זְרֹעוֹת מֶלֶךְ בָּבֶל וּזְרֹעוֹת פַּרְעֹה תִּפֹּלְנָה ... בְּתִתִּי חַרְבִּי בְּיַד מֶלֶךְ־בָּבֶל וְנָטָה אוֹתָהּ אֶל־אֶרֶץ מִצְרָיִם",
+        "english_text": "I will make firm the arms of the king of Babylon, but the arms of Pharaoh shall fail ... when I put My sword into the hand of the king of Babylon, and he lifts it against the land of Egypt",
+        "target": ["Relative empowerment of Babylon and disempowerment of Egypt", "Contrasted political-military fortunes", "Socio-political/theological"],
+        "vehicle": ["Strong vs. failing arms and a sword stretched out against a foe", "Contrasting warriors, one armed with God’s sword", "Physical/martial"],
+        "ground": ["Strong arms with a sword imply effective, victorious power; failing arms without a sword imply incapacity and defeat", "Directing a sword against someone signifies attack and judgment", "Strength–weapon–victory correspondence"],
+        "posture": ["Affirms Babylon as God’s instrument while depicting Egypt as judged and helpless", "Asymmetrical judicial stance", "Theological"],
+        "explanation": "Arms symbolize political-military strength, and God’s sword in Babylon’s hand portrays Babylon as the empowered executor of God’s judgment over a powerless Pharaoh.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 30:26",
+    "deliberation": "Repeats v. 23’s exile language. Again, 'scatter' and 'disperse' are metaphors presenting the forced dispersion of Egypt’s population as scattering objects across countries.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַהֲפִצוֹתִי אֶת־מִצְרַיִם בַּגּוֹיִם וְזֵרִיתִי אוֹתָם בָּאֲרָצוֹת",
+        "english_text": "I will scatter the Egyptians among the nations and disperse them throughout the countries",
+        "target": ["The exile and diaspora of Egyptians", "Population fragmentation", "Socio-political"],
+        "vehicle": ["Scattering objects (like seed or chaff) widely", "Spreading particles", "Agricultural/physical"],
+        "ground": ["From a compact group to widely separated individuals in different places", "Loss of unity and coherence", "Distribution/disintegration parallel"],
+        "posture": ["Presents exile as a deliberate act of divine judgment causing national disintegration", "Judicial and disintegrative stance", "Theological"],
+        "explanation": "Egypt’s people are portrayed metaphorically as items scattered abroad, vividly depicting the breaking up of the nation through exile.",
+        "confidence": 0.94
+      }
+    ]
+  }
+]

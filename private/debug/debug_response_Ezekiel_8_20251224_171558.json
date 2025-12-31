@@ -1,0 +1,595 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 8:1",
+    "deliberation": "The verse is mostly chronological narrative. The one potentially figurative element is the idiom 'the hand of the Lord GOD fell upon me', a standard prophetic formula for overpowering divine influence, using anthropomorphic and metonymic language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתִּפֹּל עָלַי שָׁם יַד אֲדֹנָי יְהוִה",
+        "english_text": "and there the hand of the Sovereign GOD fell upon me",
+        "target": [
+          "the overpowering prophetic influence Ezekiel experiences",
+          "divine inspiration/compulsion",
+          "divine–human interaction"
+        ],
+        "vehicle": [
+          "a physical hand suddenly falling heavily on someone",
+          "bodily pressure and grasp",
+          "human bodily action"
+        ],
+        "ground": [
+          "sense of being overpowered and seized, loss of control to another's power",
+          "force, intensity, directness",
+          "experiential structure of physical control"
+        ],
+        "posture": [
+          "Ezekiel's self-description of his call and vision onset",
+          "first-person prophetic testimony",
+          "prophetic narrative perspective"
+        ],
+        "explanation": "The phrase pictures God's influence as a heavy hand falling on Ezekiel, using 'hand' metonymically for power and a bodily metaphor for being seized by divine inspiration.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 8:2",
+    "deliberation": "The verse is a theophanic description. It repeatedly uses explicit comparison markers כ־ ('like/as') to liken the divine figure to fire, brightness, and glowing metal. These are clear similes, not merely literal description.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דְמוּת כְּמַרְאֵה־אֵשׁ",
+        "english_text": "a figure that had the appearance of fire",
+        "target": [
+          "the overall appearance of the visionary figure",
+          "manifestation of the divine presence",
+          "divine revelation/theophany"
+        ],
+        "vehicle": [
+          "fire in its visible form",
+          "blazing, consuming flame",
+          "natural destructive/illuminating force"
+        ],
+        "ground": [
+          "radiance, power, consuming intensity",
+          "overwhelming, dangerous, luminous quality",
+          "shared experiential sense of awe and fear"
+        ],
+        "posture": [
+          "Ezekiel's attempt to describe an ineffable vision using familiar imagery",
+          "prophetic descriptive strategy",
+          "human conceptualization of divine appearance"
+        ],
+        "explanation": "Ezekiel explicitly compares the figure to fire, using a simile to convey its blazing, intense, and overwhelming appearance.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִמׇּתְנָיו וּלְמַעְלָה כְּמַרְאֵה־זֹהַר",
+        "english_text": "and from the loins up, the appearance was like brightness",
+        "target": [
+          "the upper part of the divine figure",
+          "manifestation of divine glory",
+          "divine revelation/theophany"
+        ],
+        "vehicle": [
+          "brightness",
+          "radiant shining light",
+          "luminous phenomenon"
+        ],
+        "ground": [
+          "brilliance, clarity, dazzling quality",
+          "visually overpowering radiance",
+          "sensory impression of intense light"
+        ],
+        "posture": [
+          "Ezekiel selecting visual imagery to render the vision communicable",
+          "descriptive analogical perception",
+          "human perception of superhuman brightness"
+        ],
+        "explanation": "The upper part of the figure is compared to 'brightness', using an explicit simile to express overwhelming radiance.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּעֵין הַחַשְׁמַלָה",
+        "english_text": "with the look of amber/electrum",
+        "target": [
+          "the color and sheen of the upper part of the figure",
+          "visible aspect of divine glory",
+          "divine manifestation in visual terms"
+        ],
+        "vehicle": [
+          "chashmal (bright, gleaming metal/amber)",
+          "polished, glowing metal/amber-like substance",
+          "precious, shining material object"
+        ],
+        "ground": [
+          "gleam, metallic glow, rich color",
+          "attractive, awe‑inspiring brilliance",
+          "visual qualities of polished metal"
+        ],
+        "posture": [
+          "Ezekiel using known materials to approximate an unknown heavenly reality",
+          "analogical description",
+          "human mapping from material to spiritual appearance"
+        ],
+        "explanation": "The visionary figure's appearance is likened to gleaming metal (chashmal), another simile that conveys shine and preciousness.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 8:3",
+    "deliberation": "The vision describes a 'form of a hand' that grabs Ezekiel and a 'spirit' that lifts him. Both are anthropomorphic/animating depictions of divine agency: a hand reaching and a spirit lifting. These are figurative in that they portray God's power in human and quasi-personal terms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיִּשְׁלַח תַּבְנִית יָד וַיִּקָּחֵנִי בְּצִיצִת רֹאשִׁי",
+        "english_text": "The form of a hand stretched out, and took me by the hair of my head",
+        "target": [
+          "God's act of seizing and transporting Ezekiel in the vision",
+          "divine control over the prophet",
+          "divine agency"
+        ],
+        "vehicle": [
+          "a human hand reaching out and grabbing someone by the hair",
+          "forceful physical seizure",
+          "human bodily action"
+        ],
+        "ground": [
+          "directness, force, and total control of the one seized",
+          "invasiveness and compulsion",
+          "bodily experience of being gripped and moved"
+        ],
+        "posture": [
+          "Ezekiel conceptualizing God's action in familiar human bodily terms",
+          "anthropomorphic description",
+          "human vantage trying to narrate divine seizure"
+        ],
+        "explanation": "God's action is portrayed as a 'form of a hand' grabbing Ezekiel, using an anthropomorphic metaphor in which a hand (metonymy for human agency) stands for divine power.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּשָּׂא אֹתִי רוּחַ בֵּין־הָאָרֶץ וּבֵין הַשָּׁמַיִם",
+        "english_text": "A spirit lifted me up between heaven and earth",
+        "target": [
+          "the force that transports Ezekiel in the vision",
+          "divine enabling power",
+          "divine agency/spirit"
+        ],
+        "vehicle": [
+          "a personal agent that picks someone up and carries him",
+          "lifting, carrying subject",
+          "personal volitional agent"
+        ],
+        "ground": [
+          "ability to initiate movement and carry another",
+          "active, directional, purposeful action",
+          "agency and control associated with a person"
+        ],
+        "posture": [
+          "Ezekiel experiencing 'ruach' as an acting subject",
+          "perception of the spirit/wind in agentive terms",
+          "prophetic phenomenology of divine power"
+        ],
+        "explanation": "The 'spirit' (ruach) is grammatically and narratively treated as a personal agent that lifts Ezekiel, personifying what is elsewhere 'wind/breath/spirit' as an acting subject.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 8:4",
+    "deliberation": "The verse recalls the appearance of 'the glory of the God of Israel' and compares it to a previous vision. Although 'glory' is an abstract theological term, here it functions as a technical term for a visible manifestation, and the comparison is between two literal visions, not between unlike domains. I judge there is no distinct figurative expression in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 8:5",
+    "deliberation": "The key candidate is 'lift up your eyes northward' (שָׂא־נָא עֵינֶיךָ), a common Hebrew idiom. It expresses directing attention, using upward eye movement metaphorically for mental focus. The rest of the verse is spatial description of the idol's location.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָם שָׂא־נָא עֵינֶיךָ דֶּרֶךְ צָפֹנָה",
+        "english_text": "O mortal, turn/lift your eyes northward",
+        "target": [
+          "Ezekiel's act of attending to what God wants to show him",
+          "mental focus and perception",
+          "human cognition/attention"
+        ],
+        "vehicle": [
+          "physically lifting and directing one's eyes",
+          "visible eye movement",
+          "human bodily orientation"
+        ],
+        "ground": [
+          "eye direction correlating with where one pays attention",
+          "alignment of body and focus",
+          "embodied link between seeing and knowing"
+        ],
+        "posture": [
+          "God commanding Ezekiel using embodied language for attention",
+          "directive speech from God to prophet",
+          "didactic, instructional context"
+        ],
+        "explanation": "The idiom uses the bodily act of lifting and turning the eyes as a metaphor for concentrating one's attention on the specified direction.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 8:6",
+    "deliberation": "The verse speaks of abominations that the house of Israel does 'to drive Me far from My sanctuary.' This portrays sin as physically pushing or expelling God from his temple, an anthropomorphic spatial metaphor for loss of divine presence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "תּוֹעֵבוֹת גְּדֹלוֹת אֲשֶׁר בֵּית יִשְׂרָאֵל ... עֹשִׂים פֹּה לְרָחֳקָה מֵעַל מִקְדָּשִׁי",
+        "english_text": "the terrible abominations that the House of Israel is practicing here, to drive Me far from My Sanctuary",
+        "target": [
+          "the effect of Israel's idolatry on God's favorable relationship to the temple",
+          "withdrawal of divine presence and protection",
+          "covenantal standing/divine–human relationship"
+        ],
+        "vehicle": [
+          "physically driving or pushing a person far away from a place",
+          "forcible expulsion from a location",
+          "human social–spatial interaction"
+        ],
+        "ground": [
+          "incompatibility and rejection leading to separation",
+          "distance as a sign of relational rupture",
+          "spatial removal mirroring relational alienation"
+        ],
+        "posture": [
+          "God describing His own response in human spatial and emotional terms",
+          "anthropomorphic divine speech",
+          "theological explanation cast in relational imagery"
+        ],
+        "explanation": "God depicts their sins as if they physically push Him away from His sanctuary, using spatial and relational metaphor and treating the temple metonymically as the locus of His presence.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 8:7",
+    "deliberation": "The verse simply narrates being brought to the entrance of the court and seeing a hole in the wall. No comparisons, idioms, or anthropomorphic depictions stand out as figurative. The 'hole in the wall' functions literally in the visionary scene.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 8:8",
+    "deliberation": "God commands, 'dig/break through the wall', and Ezekiel does so and finds an opening. This is straightforward action within the vision without evident metaphorical language or conventional idiom beyond the literal description.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 8:9",
+    "deliberation": "God says, 'Enter and see the vile abominations that they are practicing here.' 'Abominations' is evaluative but not figurative, and the verbs 'enter' and 'see' are literal imperatives in the vision. I do not detect a distinct figurative expression.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 8:10",
+    "deliberation": "The verse describes literal images of creeping things, beasts, and 'all the gillulim of the house of Israel.' The term גִּלּוּלִים is a pejorative metaphor for idols (probably related to 'dung, pellets'), functioning as a derogatory label rather than a neutral term; this is the primary figurative element.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְכׇל־גִּלּוּלֵי בֵּית יִשְׂרָאֵל",
+        "english_text": "and all the fetishes/idols of the House of Israel",
+        "target": [
+          "the idols worshiped by the house of Israel",
+          "false gods/objects of worship",
+          "religious practice"
+        ],
+        "vehicle": [
+          "dung‑pellets or filthy refuse (likely etymology of 'gillulim')",
+          "disgusting waste product",
+          "unclean physical substance"
+        ],
+        "ground": [
+          "worthlessness, filth, and disgust",
+          "moral and ritual impurity associated with idols",
+          "evaluative stance of rejection and contempt"
+        ],
+        "posture": [
+          "prophetic polemic against idolatry using a derisive nickname",
+          "rhetorical denunciation",
+          "covenantal critique of false worship"
+        ],
+        "explanation": "The term 'gillulim' metaphorically labels idols as 'dung‑things', a contemptuous image that equates them with excrement to express their impurity and worthlessness.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 8:11",
+    "deliberation": "Seventy elders stand before the images with censers; a thick cloud of incense ascends. The 'cloud of incense' is concrete description of smoke, standard cultic imagery, not a metaphor in this context. No distinct figurative expressions appear.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 8:12",
+    "deliberation": "Possible candidates: 'in the darkness' could symbolically resonate with secrecy/evil, but it likely refers concretely to hidden rooms. The explicit figurative concept is in the elders' statement, 'YHWH has abandoned the land', portraying God's withdrawal as if a person physically leaves a territory.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עָזַב יְהוָה אֶת־הָאָרֶץ",
+        "english_text": "GOD has abandoned the country",
+        "target": [
+          "God's perceived withdrawal of care and oversight",
+          "loss of divine protection and attention",
+          "divine–land/people relationship"
+        ],
+        "vehicle": [
+          "a person leaving or forsaking a territory",
+          "physical departure and desertion",
+          "human spatial movement and relational abandonment"
+        ],
+        "ground": [
+          "absence implying lack of concern or protection",
+          "spatial separation signaling relational rupture",
+          "experience of being left without help"
+        ],
+        "posture": [
+          "the elders' cynical theology voiced in human terms",
+          "human misinterpretation of God's actions",
+          "speech expressing despair and justification for sin"
+        ],
+        "explanation": "The elders conceptualize God's withdrawal as if He physically 'abandons the land', using human abandonment of a place as a metaphor for the cessation of divine care, with 'land' metonymically including its people.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 8:13",
+    "deliberation": "God simply tells Ezekiel he will see greater abominations. The phrase is evaluative and comparative but not figurative; there is no metaphor, simile, or idiom beyond literal intensification.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 8:14",
+    "deliberation": "Women are described as sitting and weeping for Tammuz at the gate. This reflects a literal cultic practice; the language itself is straightforward narrative without figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 8:15",
+    "deliberation": "Again, God tells Ezekiel that he will see abominations greater than these. The comparative 'greater' is literal evaluation, not an image or idiom. No figurative language is evident.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 8:16",
+    "deliberation": "The verse describes twenty‑five men with their backs to the temple and faces to the east, bowing to the sun. The posture is symbolically loaded, but linguistically it is a plain description of idolatrous behavior with no explicit figurative devices.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 8:17",
+    "deliberation": "This verse has several figurative elements: (1) 'they have filled the land with violence' uses a filling-container image for pervasive injustice, with hyperbolic scope; (2) 'to provoke Me to anger' anthropopathically depicts God in human emotional terms; (3) 'they thrust the branch to their nostrils' is an obscure idiom, likely for an insulting or idolatrous gesture, clearly non-literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי־מָלְאוּ אֶת־הָאָרֶץ חָמָס",
+        "english_text": "for they have filled the country with lawlessness/violence",
+        "target": [
+          "the extent and pervasiveness of Judah's violent injustice",
+          "moral and social corruption",
+          "ethical condition of society"
+        ],
+        "vehicle": [
+          "a container or space being completely filled with a substance",
+          "physical filling of a land or vessel",
+          "spatial quantity image"
+        ],
+        "ground": [
+          "widespread, saturating presence leaving no empty space",
+          "overabundance and overflow",
+          "completeness and pervasiveness"
+        ],
+        "posture": [
+          "God assessing Judah's sins through an image of saturation",
+          "prophetic hyperbolic indictment",
+          "judicial evaluation framed in spatial terms"
+        ],
+        "explanation": "Violence is portrayed as a substance that has 'filled' the land like a container, a hyperbolic metaphor stressing the pervasiveness of injustice, with 'land' metonymically representing its inhabitants and institutions.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיָּשֻׁבוּ לְהַכְעִיסֵנִי",
+        "english_text": "and they return to provoke Me [to anger]",
+        "target": [
+          "God's reaction to Judah's persistent sins",
+          "divine judgment and displeasure",
+          "divine–human relational state"
+        ],
+        "vehicle": [
+          "a human being being provoked to anger by repeated offense",
+          "emotional irritation and provocation",
+          "human psychological response"
+        ],
+        "ground": [
+          "ongoing offense evoking intensified displeasure",
+          "cause‑and‑effect between provocation and anger",
+          "relational strain escalating to wrath"
+        ],
+        "posture": [
+          "God speaking of Himself in human emotional terms",
+          "anthropopathic portrayal",
+          "relational covenant rhetoric"
+        ],
+        "explanation": "God describes Himself as being 'provoked' like a human repeatedly offended, a metaphorical, anthropopathic way of expressing the seriousness of their continued rebellion.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִנָּם שֹׁלְחִים אֶת־הַזְּמוֹרָה אֶל־אַפָּם",
+        "english_text": "and see, they thrust the branch to their nostrils",
+        "target": [
+          "a contemptuous or idolatrous gesture performed by the people",
+          "their brazen defiance in worship practices",
+          "religious/moral attitude"
+        ],
+        "vehicle": [
+          "putting or thrusting a branch to one's nose",
+          "a bizarre, possibly cultic bodily gesture",
+          "ritual or insulting bodily action"
+        ],
+        "ground": [
+          "offensive, insolent posture before God",
+          "association of the gesture with idolatrous ritual or mockery",
+          "nonverbal expression of disdain or false worship"
+        ],
+        "posture": [
+          "God highlighting a culturally known but opaque idiomatic gesture",
+          "rhetorical intensification of their insolence",
+          "description of outward signs of inward rebellion"
+        ],
+        "explanation": "The phrase is an idiomatic, obscure image for some offensive or idolatrous act; it is clearly not meant literally but as a set expression signaling brazen defiance before God.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 8:18",
+    "deliberation": "The verse depicts God's response in wrath and includes the idiom 'my eye will not spare' alongside 'I will not have compassion'. The 'eye' stands metonymically for compassion, and 'sparing' is metaphorically mapped onto seeing, forming a conventional anthropomorphic idiom for withholding mercy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לֹא־תָחֹוס עֵינִי וְלֹא אֶחְמֹל",
+        "english_text": "I will show no pity or compassion (literally: my eye will not spare, and I will not have compassion)",
+        "target": [
+          "God's decision not to relent or show mercy in judgment",
+          "withholding of compassion",
+          "divine judicial stance"
+        ],
+        "vehicle": [
+          "an eye that does not spare/pity someone",
+          "gaze associated with mercy or lack thereof",
+          "human organ standing for emotional response"
+        ],
+        "ground": [
+          "inner compassion being reflected in how one looks upon someone",
+          "connection between seeing and sparing in human experience",
+          "use of bodily faculty to represent emotional/judicial disposition"
+        ],
+        "posture": [
+          "God depicting His judgment in familiar human, bodily-emotional idiom",
+          "anthropomorphic self‑presentation",
+          "judicial decree expressed through embodied language"
+        ],
+        "explanation": "The idiom 'my eye will not spare' uses the eye metonymically for compassion and frames mercy in terms of sparing vision, an anthropomorphic metaphor for God's unrelenting judgment.",
+        "confidence": 0.92
+      }
+    ]
+  }
+]

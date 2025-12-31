@@ -1,0 +1,462 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 4:1",
+    "deliberation": "The verse gives instructions for a sign‑act: a brick with Jerusalem engraved on it. The language itself is descriptive, but the brick clearly stands for the city and its fate. I treat that representational use as metonymic/symbolic figurative language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "קַח־לְךָ לְבֵנָה ... וְחַקּוֹתָ עָלֶיהָ עִיר אֶת־יְרוּשָׁלִָם",
+        "english_text": "take a brick … and incise on it a city, Jerusalem",
+        "target": ["Jerusalem and its coming siege", "city under divine judgment", "covenant community in Jerusalem"],
+        "vehicle": ["brick with an engraved city", "miniature model object", "physical representation"],
+        "ground": ["the brick depicts and stands for the city and its fate", "symbolic correspondence/modeling", "representation/signification"],
+        "posture": ["prophetic warning to visualize judgment", "symbolic sign‑act", "prophetic communication"],
+        "explanation": "The brick functions as a physical stand‑in for Jerusalem: a metonymic/symbolic representation used in a sign‑act to depict the city’s situation.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 4:2",
+    "deliberation": "The verse describes siege works erected against the engraved city on the brick. Literally it is about the model, but the enacted siege plainly represents the coming historical siege. I treat the model siege as a figurative representation of the real siege.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתָּ עָלֶיהָ מָצוֹר ... וְשִׂים־עָלֶיהָ כָּרִים סָבִיב",
+        "english_text": "Set up a siege against it … and bring up battering rams round about it.",
+        "target": ["future Babylonian siege of Jerusalem", "military judgment on the city", "historical catastrophe"],
+        "vehicle": ["miniature siege laid against the brick", "model military operations", "symbolic performance"],
+        "ground": ["correspondence between model siege and real siege (encirclement, attack, pressure)", "iconic similarity", "symbolic enactment of judgment"],
+        "posture": ["dramatic visualization to warn", "symbolic pre‑enactment of disaster", "prophetic performance"],
+        "explanation": "The siege conducted against the brick is a symbolic enactment of the real siege that will befall Jerusalem, mapping the model military action onto future historical events.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 4:3",
+    "deliberation": "Two clear figurative elements: (1) the iron plate as an 'iron wall' between prophet and city, symbolizing an impenetrable barrier; (2) 'set your face against it', a conventional idiom for determined, hostile resolve. Both are part of the sign‑act.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתָּה אוֹתָהּ קִיר בַרְזֶל בֵּינְךָ וּבֵין הָעִיר",
+        "english_text": "place it as an iron wall between yourself and the city",
+        "target": ["separation and alienation between God (via his prophet) and Jerusalem", "blocked access to divine favor", "relationship under judgment"],
+        "vehicle": ["iron wall / iron plate barrier", "impenetrable defensive structure", "physical obstruction"],
+        "ground": ["impenetrability, unapproachability, separation", "blocked contact and protection", "experience of being cut off"],
+        "posture": ["emphatic portrayal of judgment and distance", "symbolic hardening of relations", "prophetic condemnation"],
+        "explanation": "The iron plate as an 'iron wall' between Ezekiel and the city symbolizes an unbreakable barrier between God and Jerusalem, representing their estrangement and the inevitability of the siege.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַהֲכִינֹתָה אֶת־פָּנֶיךָ אֵלֶיהָ",
+        "english_text": "set your face against it",
+        "target": ["YHWH’s determined hostility to Jerusalem (embodied in the prophet)", "stance of judgment", "divine will"],
+        "vehicle": ["face turned resolutely toward an object", "physical orientation of the visage", "bodily posture"],
+        "ground": ["firm resolve, hostile attention, unyielding focus", "orientation as expression of intent", "embodied determination"],
+        "posture": ["threatening, confrontational stance", "declaration of hostility", "judicial warning"],
+        "explanation": "The idiom 'set your face against' uses the direction of the face metonymically to express firm, hostile resolve toward Jerusalem.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 4:4",
+    "deliberation": "The central figurative element is conceptual: Israel’s 'iniquity' is something Ezekiel can 'place' on his side and 'bear'. This treats sin/punishment as a burden resting on and carried by the prophet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְשַׂמְתָּ אֶת־עֲוֹן בֵּית־יִשְׂרָאֵל עָלָיו ... תִּשָּׂא אֶת־עֲוֹנָם",
+        "english_text": "let it bear the punishment of the House of Israel … you shall bear their punishment",
+        "target": ["guilt and punishment of the northern kingdom", "consequences of Israel’s sin", "national iniquity"],
+        "vehicle": ["a burden placed on and carried by a person’s body", "load borne on one’s side", "weight to be carried over time"],
+        "ground": ["onerous, oppressive, enduring responsibility", "transfer of consequences onto a bearer", "vicarious suffering/representation"],
+        "posture": ["solemn dramatization of judgment", "prophetic identification with the people’s guilt", "didactic sign‑act"],
+        "explanation": "Israel’s iniquity is pictured as a heavy burden that can be laid on Ezekiel’s side and carried, a standard biblical metaphor of guilt/punishment as a load to bear, dramatized through the sign‑act.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 4:5",
+    "deliberation": "The verse reiterates the idea of 'bearing' Israel’s iniquity, now tied to a specific number of days. The main figurative element remains the burden metaphor; the counting of days itself is quantitative, not figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנָשָׂאתָ עֲוֹן בֵּית־יִשְׂרָאֵל",
+        "english_text": "and so you shall bear the punishment for the House of Israel",
+        "target": ["longstanding punishment due to the northern kingdom", "accumulated guilt", "national judgment"],
+        "vehicle": ["carrying a load over an extended period", "sustained physical bearing of weight", "burden‑bearing activity"],
+        "ground": ["ongoing, exhausting responsibility and suffering", "endurance under a weight corresponding to past guilt", "vicarious representation through time"],
+        "posture": ["underscoring the severity and duration of guilt", "didactic emphasis on accumulated sin", "prophetic embodiment of consequences"],
+        "explanation": "Again, Israel’s punishment is conceptualized as a burden Ezekiel must carry, reinforcing the metaphor of guilt as a load borne by a representative figure.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 4:6",
+    "deliberation": "Two figurative aspects appear: (1) 'bear the iniquity of the house of Judah' continues the burden metaphor; (2) 'a day for a year' is a symbolic equivalence where each day in the sign‑act stands for a year of historical guilt/punishment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנָשָׂאתָ אֶת־עֲוֹן בֵּית־יְהוּדָה",
+        "english_text": "and bear the punishment of the House of Judah",
+        "target": ["guilt and punishment of Judah", "southern kingdom’s iniquity", "covenant violation"],
+        "vehicle": ["a load carried by an individual", "burden borne on the body", "weight‑bearing work"],
+        "ground": ["transferred responsibility, heaviness, suffering", "tangible experience of otherwise abstract guilt", "representative burden‑bearing"],
+        "posture": ["warning of Judah’s culpability", "embodied portrayal of judgment", "prophetic solidarity with the judged people"],
+        "explanation": "Judah’s punishment is again treated as a burden that can be carried, extending the metaphor of iniquity as a load borne by Ezekiel.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אַרְבָּעִים יוֹם יוֹם לַשָּׁנָה יוֹם לַשָּׁנָה נְתַתִּיו לָךְ",
+        "english_text": "forty days, a day for each year, a day for each year I impose on you",
+        "target": ["forty years of Judah’s guilt/punishment", "historical period of iniquity", "time span of sin and judgment"],
+        "vehicle": ["forty days of lying on the side", "shorter time units in the sign‑act", "symbolic days"],
+        "ground": ["one‑to‑one symbolic correspondence, representational timescale", "compression of years into days", "numerical symbolism of judgment"],
+        "posture": ["emphasis on measured, deliberate judgment", "didactic clarity about historical guilt", "symbolic encoding of time in the sign‑act"],
+        "explanation": "Each day of Ezekiel’s action symbolically stands for a year of Judah’s guilt, a metaphorical compression of time functioning as prophetic numerical symbolism.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 4:7",
+    "deliberation": "Two idiomatic/figurative bodily expressions: (1) 'set your face toward besieged Jerusalem' as a stance of hostile resolve; (2) 'with bared arm' as a metonymy for ready, active power/judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְאֶל־מְצוֹר יְרוּשָׁלִַם תָּכִין פָּנֶיךָ",
+        "english_text": "set your face toward besieged Jerusalem",
+        "target": ["prophetic (and divine) hostility toward Jerusalem", "stance of judgment against the city", "intent to pronounce and enact doom"],
+        "vehicle": ["face deliberately directed toward an object", "bodily orientation of the countenance", "fixed gaze/posture"],
+        "ground": ["focused, deliberate, confrontational resolve", "unwavering attention to an adversary", "embodied indication of purpose"],
+        "posture": ["confrontational and accusatory", "signals stern judgment", "public warning posture"],
+        "explanation": "The idiom uses Ezekiel’s 'face' as a metonym for his (and God’s) determined, hostile intent toward Jerusalem, dramatized in bodily orientation.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּזְרֹעֲךָ חֲשׂוּפָה",
+        "english_text": "with bared arm",
+        "target": ["ready exercise of prophetic/divine power in judgment", "active intervention against Jerusalem", "execution of the siege oracle"],
+        "vehicle": ["bare arm prepared for work or battle", "uncovered limb ready for action", "physical strength on display"],
+        "ground": ["readiness, strength, energetic action", "lack of hindrance to exerting power", "visual signal of impending activity"],
+        "posture": ["urgent readiness to act in judgment", "dramatic emphasis on power", "heightened seriousness of the prophecy"],
+        "explanation": "The exposed arm stands metonymically for the prophet’s (and God’s) power and readiness to act, a bodily symbol of imminent, forceful intervention.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 4:8",
+    "deliberation": "The cords may be literal in the vision, but their function is symbolic: Ezekiel’s enforced immobility parallels the fixed, inescapable state of the siege. I treat the imposed cords as a figurative sign‑act of unavoidable judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנֵּה נָתַתִּי עָלֶיךָ עֲבוֹתִים וְלֹא־תֵהָפֵךְ מִצִּדְּךָ אֶל־צִדֶּךָ עַד־כַּלּוֹתְךָ יְמֵי מְצוּרֶךָ",
+        "english_text": "Now I put cords upon you, so that you cannot turn from side to side until you complete your days of siege.",
+        "target": ["the inevitability and fixed duration of Jerusalem’s siege", "inability to escape judgment", "unrelenting conditions of the coming catastrophe"],
+        "vehicle": ["a bound man unable to turn because of cords", "physical restraint by ropes", "forced immobility"],
+        "ground": ["restriction, helplessness, lack of alternatives", "being held fast until a set term is fulfilled", "inescapable confinement"],
+        "posture": ["grim portrayal of inescapable judgment", "didactic emphasis on the siege’s fixed course", "prophetic dramatization of bondage"],
+        "explanation": "The cords restraining Ezekiel function as a metaphorical and symbolic depiction of Jerusalem’s helplessness under an unavoidable, time‑fixed siege.",
+        "confidence": 0.72
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 4:9",
+    "deliberation": "All items (grains/legumes) are literal, but combining them into one vessel for bread is an unnatural, poor‑man’s mixture, functioning in context as a sign of scarcity and degradation under siege. I treat the mixed bread as symbolic/figurative within the sign‑act.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתָּ אוֹתָם בִּכְלִי אֶחָד וְעָשִׂיתָ אוֹתָם לְךָ לְלָחֶם",
+        "english_text": "Put them into one vessel and bake them into bread for yourself",
+        "target": ["future conditions of scarcity and poor diet in the siege/exile", "degraded sustenance of Israel", "economic and ritual deterioration"],
+        "vehicle": ["improvised bread from a mixture of grains and legumes", "adulterated, low‑status bread", "unusual composite loaf"],
+        "ground": ["makeshift, impoverished food, lacking purity or abundance", "sign of hardship and lack of choice", "visual cue of deprivation"],
+        "posture": ["warning about dire living conditions", "dramatic evocation of poverty and siege", "prophetic indictment through food symbolism"],
+        "explanation": "The unusual mixed bread functions metonymically and symbolically for the meager, degraded sustenance God’s people will have under siege and in exile.",
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 4:10",
+    "deliberation": "The instruction to eat food 'by weight' at a small daily ration is literal for Ezekiel’s sign‑act but symbolic of famine‑like rationing. I treat this ration‑by‑weight motif as a figurative sign of scarcity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "מַאֲכָלְךָ אֲשֶׁר תֹּאכְלֶנּוּ בְּמִשְׁקֹל עֶשְׂרִים שֶׁקֶל לַיּוֹם",
+        "english_text": "The food that you eat shall be by weight, twenty shekels a day",
+        "target": ["coming famine‑like scarcity in Jerusalem", "restricted access to sustenance", "siege conditions"],
+        "vehicle": ["measured, weighed daily ration", "strict portioning of food", "limited allowance"],
+        "ground": ["tight control, insufficiency, anxiety about provision", "absence of abundance or freedom in eating", "visible sign of shortage"],
+        "posture": ["sobering warning of deprivation", "didactic dramatization of famine conditions", "intensification of judgment imagery"],
+        "explanation": "The meticulous weighing of small food portions in the sign‑act symbolizes the rationing and scarcity that will characterize Jerusalem under judgment.",
+        "confidence": 0.68
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 4:11",
+    "deliberation": "Similarly to v.10, measured water rations are literal instructions within the sign‑act but symbolically depict extreme scarcity and anxiety. This is a parallel sign of deprivation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּמַיִם בִּמְשׂוּרָה תִשְׁתֶּה שִׁשִּׁית הַהִין",
+        "english_text": "And you shall drink water by measure; a sixth of a hin you shall drink",
+        "target": ["future lack of water in siege/exile", "life‑threatening scarcity of basic resources", "conditions of fear and want"],
+        "vehicle": ["strictly measured small quantity of water", "rationed drink", "minimal allowance of water"],
+        "ground": ["insecurity, insufficiency, constraint", "loss of normal ease in drinking", "visible sign of crisis"],
+        "posture": ["warning of severe hardship", "didactic portrayal of siege conditions", "heightening the sense of dread"],
+        "explanation": "The carefully measured, meager water ration symbolizes the severe scarcity and anxiety the people will experience under judgment.",
+        "confidence": 0.67
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 4:12",
+    "deliberation": "Baking the barley cake over human excrement is literal within the sign‑act, but it functions symbolically to depict ritual/ceremonial defilement of food in exile. The shocking fuel choice is the figurative element.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהִיא בְּגֶלְלֵי צֵאת הָאָדָם תְּעֻגֶנָה לְעֵינֵיהֶם",
+        "english_text": "you shall bake it on human excrement before their eyes",
+        "target": ["defiled food practices of Israel in exile", "ritual and cultural pollution among the nations", "loss of covenant purity"],
+        "vehicle": ["baking bread on human excrement", "use of unclean fuel associated with filth", "publicly visible disgusting practice"],
+        "ground": ["impurity, revulsion, loss of holiness", "forced abandonment of dietary/ritual standards", "shamefully defiled sustenance"],
+        "posture": ["indignant warning, shock to conscience", "graphic dramatization of impurity", "prophetic protest against coming defilement"],
+        "explanation": "The command to bake bread over human dung is a symbolic act metonymically portraying the ritual and cultural defilement that will mark Israel’s life among the nations.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 4:13",
+    "deliberation": "Here the Lord explicitly interprets the sign: Israel will eat 'their bread, impure, among the nations.' The primary figurative element is 'bread' as a metonym for their overall sustenance and way of life in exile; 'impure' is literal in ritual terms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כָּכָה יֹאכְלוּ בְנֵי־יִשְׂרָאֵל אֶת־לַחְמָם טָמֵא בַּגּוֹיִם",
+        "english_text": "thus shall the people of Israel eat their bread, impure, among the nations",
+        "target": ["Israel’s entire diet and daily sustenance in exile", "their lived existence among the nations", "covenant life under defiled conditions"],
+        "vehicle": ["'bread' as the staple food item", "basic food supply", "everyday eating"],
+        "ground": ["bread stands for overall nourishment and daily life", "defiled bread implies a defiled way of living", "violation of holiness in ordinary sustenance"],
+        "posture": ["lamenting prediction of profaned daily life", "warning about loss of ritual distinctiveness", "judicial explanation of the sign‑act"],
+        "explanation": "By speaking of their 'bread' as impure among the nations, the text uses 'bread' metonymically for all their sustenance and daily life, indicating comprehensive ritual and cultural defilement.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 4:14",
+    "deliberation": "Ezekiel protests that he has never eaten carcass or torn meat. The terms for carcass, torn animal, and 'foul flesh' are technical/ritual and used literally. I see no clear metaphor, idiom, or other figurative device here; it is straightforward autobiographical protest.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 4:15",
+    "deliberation": "The substitution of cow dung for human excrement modifies but does not cancel the defilement symbolism. Cow dung is still an unusual, humbling fuel for bread, and continues the sign‑act’s symbolic portrayal of degraded conditions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "נָתַתִּי לְךָ אֶת־צְפִיעֵי הַבָּקָר תַּחַת גֶּלְלֵי הָאָדָם וְעָשִׂיתָ אֶת־לַחְמְךָ עֲלֵיהֶם",
+        "english_text": "I allow you cow’s dung instead of human excrement; prepare your bread on that.",
+        "target": ["continued but mitigated ritual and social defilement", "humbling of Israel’s status", "uncomfortable living conditions under judgment"],
+        "vehicle": ["baking bread over cow dung instead of human dung", "using animal waste as fuel", "unsavory cooking method"],
+        "ground": ["poverty, lack of normal fuel, social humiliation", "association with uncleanness and discomfort", "departure from ideal purity though less extreme than human waste"],
+        "posture": ["somewhat compassionate concession yet still judgmental", "maintains symbolic force while easing extremity", "didactic moderation of the sign‑act"],
+        "explanation": "Using cow dung as fuel remains a symbolic act of degraded, uncomfortable existence, metonymically depicting the humbling and defiling conditions Israel will face.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 4:16",
+    "deliberation": "A key lexical metaphor appears: 'I am going to break the staff of bread in Jerusalem.' 'Staff' evokes a walking stick that supports, so 'staff of bread' pictures food as the support of life. Breaking it signifies removing that support. The rest (eating by weight, drinking by measure) is literal description of siege rationing, though thematically echoing earlier symbolic acts.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנְנִי שֹׁבֵר מַטֵּה־לֶחֶם בִּירוּשָׁלִַם",
+        "english_text": "I am going to break the staff of bread in Jerusalem",
+        "target": ["Jerusalem’s food supply and means of survival", "basic economic support of the population", "life‑sustaining provision from God"],
+        "vehicle": ["a staff that one leans on for support", "walking stick", "supporting rod"],
+        "ground": ["dependence on bread for life as one depends on a staff for support", "removal of support leads to collapse", "vulnerability when the prop is broken"],
+        "posture": ["solemn announcement of life‑threatening judgment", "emphasis on God’s control over sustenance", "warning of impending famine and collapse"],
+        "explanation": "By calling bread the 'staff' and announcing that this staff will be broken, the verse metaphorically portrays God’s removal of the people’s basic support and sustenance.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 4:17",
+    "deliberation": "The people will lack bread and water (literal), 'be appalled/stunned' at one another (emotional reaction, largely literal), and 'waste away in their iniquity.' The last expression uses the verb for physical wasting/melting to describe the consuming effect of guilt, a standard metaphor of sin as a wasting disease.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָמַקּוּ בַּעֲוֹנָם",
+        "english_text": "and they shall waste away in their iniquity",
+        "target": ["the people’s experience under the weight of their sin", "effects of guilt and judgment on Israel", "inner and outer deterioration due to iniquity"],
+        "vehicle": ["a body wasting away or melting", "progressive physical decay", "disease‑like deterioration"],
+        "ground": ["gradual weakening and destruction caused by sin, like a wasting illness", "consuming, corrosive nature of iniquity", "helpless decline under an internal burden"],
+        "posture": ["somber, diagnostic portrayal of sin’s consequences", "didactic warning about self‑destructive guilt", "judicial explanation of suffering"],
+        "explanation": "The phrase pictures guilt as something that causes people to 'waste away' like a body decaying from disease, a metaphor for the consuming, destructive effect of iniquity.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

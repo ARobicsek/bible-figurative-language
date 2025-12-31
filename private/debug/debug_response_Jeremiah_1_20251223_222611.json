@@ -1,0 +1,639 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 1:1",
+    "deliberation": "Checked for figurative uses of “words,” possible metonymy for message or ministry, and any symbolic place-names. The verse functions as a straightforward superscription giving genealogy and geography; all terms (words, priests, Anathoth, Benjamin) are literal.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 1:2",
+    "deliberation": "Examined the prophetic formula אֲשֶׁר הָיָה דְבַר־יְהוָה אֵלָיו (“the word of YHWH came to him”) for figurative content. This is a stock prophetic idiom in which an abstract ‘word’ is treated as something that can ‘come’ to a person, combining metonymy (word for message) and personification (the word as an active agent). The chronological details are literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הָיָה דְבַר־יְהוָה אֵלָיו",
+        "english_text": "The word of GOD came to him",
+        "target": [
+          "The prophetic revelation Jeremiah receives",
+          "Divine communication to a prophet",
+          "Religious / revelatory domain"
+        ],
+        "vehicle": [
+          "An abstract ‘word’ that comes to someone",
+          "A message depicted as a visiting, acting entity",
+          "Movement / agency domain"
+        ],
+        "ground": [
+          "Just as a person approaches another, a message reaches a recipient; the arrival suggests initiative and encounter",
+          "Arrival and directedness of communication",
+          "Communication conceptualized as spatial movement"
+        ],
+        "posture": [
+          "Narrator’s description of Jeremiah’s call experience using conventional prophetic diction",
+          "Matter‑of‑fact report that still underscores the authority and initiative of the divine message",
+          "Narrative / prophetic‑call context"
+        ],
+        "explanation": "The abstract ‘word of YHWH’ is portrayed as something that can ‘come’ to Jeremiah, personifying divine speech and using ‘word’ metonymically for the whole revelatory event.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 1:3",
+    "deliberation": "Considered whether the temporal markers are figurative and focused on the phrase ‘when Jerusalem went into exile’ (עַד־גְּלוֹת יְרוּשָׁלַ͏ִם). The city name stands for its inhabitants and their deportation, a common city‑for‑people metonymy with a mild personifying feel (a city ‘going’ into exile).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַד־גְּלוֹת יְרוּשָׁלַ͏ִם",
+        "english_text": "when Jerusalem went into exile",
+        "target": [
+          "The exile of Jerusalem’s inhabitants",
+          "The community of people from the city being deported",
+          "Socio‑historical / national catastrophe domain"
+        ],
+        "vehicle": [
+          "‘Jerusalem’ as if the city itself went into exile",
+          "A place‑name representing its population and their fate",
+          "Geographical / urban domain"
+        ],
+        "ground": [
+          "The fate of the city is bound up with that of its residents; speaking of the city’s exile succinctly conveys the people’s deportation",
+          "Identification of city and inhabitants",
+          "Mapping of place onto community"
+        ],
+        "posture": [
+          "Narrator’s solemn historical marker using compact, evocative language",
+          "Underlines the gravity of the event by letting the whole city ‘go’ into exile",
+          "Historical reporting with theological weight"
+        ],
+        "explanation": "‘Jerusalem’ stands metonymically for its people, and is mildly personified as undergoing exile, condensing the communal disaster into a single city‑image.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 1:4",
+    "deliberation": "Again considered the standard prophetic formula וַיְהִי דְבַר־יְהוָה אֵלַי (“the word of YHWH came to me”). As in v.2, this treats ‘the word’ as an active entity that can ‘come’ to someone, combining personification of the word and metonymy for the whole revelatory encounter.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָ֖ה אֵלַ֥י",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "Jeremiah’s experience of receiving divine speech",
+          "Prophetic inspiration / revelation",
+          "Religious / revelatory domain"
+        ],
+        "vehicle": [
+          "A ‘word’ that comes to a person",
+          "An abstract message spoken of as a visiting agent",
+          "Movement / interpersonal encounter domain"
+        ],
+        "ground": [
+          "Like a person entering someone’s presence, the message arrives and confronts Jeremiah",
+          "Initiative and directedness of divine communication",
+          "Spatial and interpersonal imagery for inner experience"
+        ],
+        "posture": [
+          "Prophet’s own report of his call in conventional prophetic language",
+          "Stresses divine initiative and authority while describing an interior experience in external, event‑like terms",
+          "Autobiographical prophetic narrative"
+        ],
+        "explanation": "The phrase portrays the ‘word of GOD’ as an entity that can ‘come’ to Jeremiah, personifying the word and using it metonymically for the full revelatory act.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 1:5",
+    "deliberation": "Assessed ‘I knew you’ and ‘I consecrated you’ for metaphorical senses (know = choose, etc.). These are semantic extensions but function here as standard covenantal verbs describing God’s relational choice and setting apart, not vivid figurative imagery. References to ‘womb’ and ‘birth’ are literal. No clear metaphor, simile, or other marked figure in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 1:6",
+    "deliberation": "Looked at Jeremiah’s self‑description: ‘I do not know how to speak, for I am a boy.’ The term ‘boy’ is likely literal or near‑literal (youth). The phrase לֹא־יָדַעְתִּי דַּבֵּר (‘I don’t know how to speak’) is idiomatic and somewhat hyperbolic—he clearly can speak but feels inadequate as a public spokesman.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה לֹֽא־יָדַ֖עְתִּי דַּבֵּ֑ר",
+        "english_text": "Behold, I don’t know how to speak",
+        "target": [
+          "Jeremiah’s sense of lacking rhetorical ability",
+          "Perceived inadequacy for prophetic speaking",
+          "Psychological / vocational domain"
+        ],
+        "vehicle": [
+          "Total ignorance of how to speak at all",
+          "Claim of having no knowledge as an idiom for incompetence",
+          "Cognitive‑ability domain"
+        ],
+        "ground": [
+          "One who lacks skill in a field may say they ‘don’t know’ it at all",
+          "Exaggeration of deficiency to express inexperience and insecurity",
+          "Use of absolute language for relative lack"
+        ],
+        "posture": [
+          "Jeremiah’s self‑deprecating protest in response to his call",
+          "Expresses reluctance and fear rather than a factual inability",
+          "Dialogue / objection in call narrative"
+        ],
+        "explanation": "Jeremiah uses an idiomatic and hyperbolic expression of ‘not knowing how to speak’ to convey his perceived lack of competence as a prophetic spokesman.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 1:7",
+    "deliberation": "Reviewed ‘go wherever I send you’ and ‘speak whatever I command you’ for metaphorical travel or speech imagery. Here they directly describe the prophetic commission in literal terms; no distinctive figurative expression beyond normal verb usage.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 1:8",
+    "deliberation": "Considered ‘Do not fear before them’ and ‘I am with you to deliver you’ for personification or metaphor. These are conventional ways of expressing protection and presence; no highly marked image (no comparison to objects, animals, etc.). The vocabulary is straightforward covenant reassurance.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 1:9",
+    "deliberation": "Evaluated the anthropomorphic imagery (‘YHWH stretched out His hand and touched my mouth’) and the phrase ‘I have put my words in your mouth.’ The hand language is standard anthropomorphism. The key figurative core is ‘putting words in the mouth’: speech depicted as a tangible object placed physically in Jeremiah’s mouth, symbolizing divinely given utterance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּ֛ה נָתַ֥תִּי דְבָרַ֖י בְּפִֽיךָ",
+        "english_text": "Herewith I put My words into your mouth",
+        "target": [
+          "Jeremiah’s reception of prophetic messages to proclaim",
+          "Divinely granted capacity and content for speech",
+          "Religious / communicative domain"
+        ],
+        "vehicle": [
+          "Placing concrete objects directly into someone’s mouth",
+          "Physical insertion as an image for impartation",
+          "Bodily / tactile domain"
+        ],
+        "ground": [
+          "As food placed in the mouth becomes part of a person, so divinely given words become Jeremiah’s own speech",
+          "Direct, intimate imparting and internalization of what is supplied",
+          "Transfer from giver to recipient resulting in embodiment"
+        ],
+        "posture": [
+          "Divine assurance that Jeremiah’s speech will be entirely supplied by God",
+          "Authoritative commissioning using a vivid, concrete image",
+          "Visionary‑symbolic call scene"
+        ],
+        "explanation": "Jeremiah’s prophetic speech is portrayed as if God literally puts tangible ‘words’ into his mouth, a metaphor for God directly supplying and internalizing the message within the prophet.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 1:10",
+    "deliberation": "Focused on the infinitive chain ‘to uproot and to pull down, to destroy and to overthrow, to build and to plant.’ These verbs describe physical, agricultural, and architectural actions, but here they characterize Jeremiah’s prophetic mission over nations. It is a sustained metaphor of prophetic word as a tool that demolishes and rebuilds.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לִנְת֥וֹשׁ וְלִנְת֖וֹץ וּלְהַאֲבִ֣יד וְלַהֲר֑וֹס לִבְנ֖וֹת וְלִנְטֽוֹעַ",
+        "english_text": "To uproot and to pull down, To destroy and to overthrow, To build and to plant",
+        "target": [
+          "Jeremiah’s impact through prophecy on nations and kingdoms (judgment and restoration)",
+          "The effects of the prophetic word on political and social structures",
+          "Historical / political and spiritual domain"
+        ],
+        "vehicle": [
+          "Uprooting plants, tearing down, destroying and overthrowing structures, and then building and planting",
+          "Agricultural and construction/demolition work",
+          "Agrarian and architectural domains"
+        ],
+        "ground": [
+          "Like uprooting and demolishing, Jeremiah’s words will dismantle existing arrangements; like building and planting, they will establish new realities",
+          "Radical removal followed by foundational renewal",
+          "Processes of tearing down and rebuilding applied to nations"
+        ],
+        "posture": [
+          "Divine commissioning that magnifies the power of the prophetic word",
+          "Presents Jeremiah’s preaching as a decisive, world‑shaping force",
+          "Programmatic statement of prophetic vocation"
+        ],
+        "explanation": "Physical acts of uprooting, demolishing, building, and planting are applied metaphorically to Jeremiah’s prophetic mission, portraying his words as instruments of both destruction and reconstruction among nations.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 1:11",
+    "deliberation": "Jeremiah simply reports his visionary sight: ‘a rod/branch of an almond tree’ (מַקֵּל שָׁקֵד). The figurative significance (pun with שֹׁקֵד ‘watchful’) is not yet stated here but in v.12. Within this verse alone, the language is a literal description of the vision object; the symbolic meaning is supplied in the following verse.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 1:12",
+    "deliberation": "Here the vision of the almond branch is interpreted with a wordplay: שָׁקֵד (‘almond’) and שֹׁקֵד (‘watchful’). The almond rod is a symbolic vehicle for God’s vigilance over His word. This is a metaphor grounded in paronomasia rather than visual resemblance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּֽי־שֹׁקֵ֥ד אֲנִ֛י עַל־דְּבָרִ֖י לַעֲשֹׂתֽוֹ",
+        "english_text": "For I am watchful over My word to bring it to pass",
+        "target": [
+          "God’s vigilant fulfillment of His prophetic word",
+          "Divine attentiveness and swift execution of promises/threats",
+          "Theological / divine‑action domain"
+        ],
+        "vehicle": [
+          "Watchfulness evoked by the almond (שָׁקֵד) seen in the vision and the verb שֹׁקֵד",
+          "An alert, wakeful observer who does not sleep on his duties",
+          "Human watchfulness / attentiveness domain"
+        ],
+        "ground": [
+          "Just as a watchful person stays alert to act promptly, God is depicted as constantly attentive to carrying out His word; the pun on almond/watchful reinforces this",
+          "Alertness, readiness, and lack of delay",
+          "Vigilant oversight applied to divine faithfulness"
+        ],
+        "posture": [
+          "God’s self‑revelation in a reassuring explanation of the sign‑vision",
+          "Strengthens Jeremiah’s confidence that spoken oracles will surely be fulfilled",
+          "Interpretive oracle attached to a symbolic vision"
+        ],
+        "explanation": "Using a pun between ‘almond’ and ‘watchful,’ God interprets the almond‑rod vision as a metaphor for His vigilant readiness to perform His word.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 1:13",
+    "deliberation": "Analyzed the vision of a ‘boiling pot, facing away from the north’ (סִיר נָפוּחַ … וּפָנָיו מִפְּנֵי צָפוֹנָה). The pot is not about literal cookware but symbolically represents an impending, heated calamity tilting from the north toward Judah. This is a visionary metaphor/symbol.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "סִ֤יר נָפ֙וּחַ֙ אֲנִ֣י רֹאֶ֔ה וּפָנָ֖יו מִפְּנֵ֥י צָפֽוֹנָה",
+        "english_text": "I see a steaming [boiling] pot, tipped away from the north",
+        "target": [
+          "The coming northern invasion and turmoil that will engulf Judah",
+          "Impending national disaster and warfare",
+          "Historical / military catastrophe domain"
+        ],
+        "vehicle": [
+          "A boiling, seething pot tipped from the north",
+          "Overheated, unstable vessel threatening to spill its contents",
+          "Domestic / physical‑danger imagery"
+        ],
+        "ground": [
+          "Like a boiling pot about to spill scalding contents, the northern powers are about to pour destructive force onto the land",
+          "Imminence, intensity, and directional flow of danger",
+          "Transfer of domestic hazard imagery to geopolitical threat"
+        ],
+        "posture": [
+          "Divinely granted image preparing Jeremiah to understand the nature and direction of judgment",
+          "Heightens the emotional impact of the coming calamity",
+          "Symbolic vision preceding its verbal interpretation"
+        ],
+        "explanation": "The overheated pot, tilted from the north, visually and metaphorically represents the intense, impending disaster that will pour down from northern invaders onto Judah.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 1:14",
+    "deliberation": "Looked at ‘From the north shall disaster be opened/break loose upon all the inhabitants of the land’ (מִצָּפוֹן תִּפָּתַח הָרָעָה). ‘Evil/disaster’ is treated like something pent up that can be ‘opened’ or unleashed from a direction; this personifies calamity and uses a metaphor of opening a gate or source.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִצָּפוֹן֙ תִּפָּתַ֣ח הָרָעָ֔ה עַ֥ל כׇּל־יֹשְׁבֵ֖י הָאָֽרֶץ",
+        "english_text": "From the north shall disaster break loose upon all the inhabitants of the land",
+        "target": [
+          "The outbreak of invading judgment from the north against Judah",
+          "The onset and spread of national calamity",
+          "Historical / political disaster domain"
+        ],
+        "vehicle": [
+          "‘Evil/disaster’ that is ‘opened’ from a direction as though released from a source or gate",
+          "Something stored or restrained that, once opened, pours out over people",
+          "Physical release / flood‑like imagery"
+        ],
+        "ground": [
+          "Like opening a gate or source so that stored contents pour out, the invasion will suddenly and widely spread over the land",
+          "Suddenness, irreversibility, and wide diffusion of the judgment",
+          "Conceiving abstract calamity as a quasi‑substance"
+        ],
+        "posture": [
+          "God’s interpretive explanation of the boiling‑pot vision using vivid, quasi‑material language",
+          "Emphasizes inevitability and scope of the coming judgment",
+          "Prophetic pronouncement of doom"
+        ],
+        "explanation": "Calamity is personified and metaphorically depicted as something ‘opened’ from the north, like a gate or flooded source releasing destructive force onto all the inhabitants.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 1:15",
+    "deliberation": "Considered whether ‘families of the kingdoms of the north’ or ‘each shall set his throne at the entrance of the gates of Jerusalem’ are figurative. These describe actual political entities and siege/judgment practices in concrete terms (kings setting up thrones at conquered city gates). Any metonymy (‘throne’ for royal authority) is minimal and functions almost literally here.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 1:16",
+    "deliberation": "Examined ‘they have worshiped the works of their hands’ (וַיִּֽשְׁתַּחֲו֖וּ לְמַעֲשֵׂ֥י יְדֵיהֶם). This is a set prophetic expression where ‘works of their hands’ is a metonymy for idols—artifacts humans have fashioned. It underscores their folly by focusing on the human‑made character of what they worship.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיִּֽשְׁתַּחֲו֖וּ לְמַעֲשֵׂ֥י יְדֵיהֶֽם",
+        "english_text": "And they bowed down to the works of their hands",
+        "target": [
+          "The idols to which the people give worship",
+          "Man‑made cult objects as false gods",
+          "Religious / idolatry domain"
+        ],
+        "vehicle": [
+          "‘The works of their hands’—things they themselves have crafted",
+          "Human handiwork presented in place of the idols’ usual designations",
+          "Labor / craftsmanship domain"
+        ],
+        "ground": [
+          "Idols are in fact products of human craftsmanship; highlighting this exposes the absurdity of worshiping them",
+          "Identity of object as human manufacture rather than divine being",
+          "Using origin (their work) to stand for the object (the idol)"
+        ],
+        "posture": [
+          "God’s judicial accusation highlighting the irrationality of idolatry",
+          "Critically frames idolatry by stressing the man‑made nature of the gods",
+          "Forensic / prosecutorial rhetoric"
+        ],
+        "explanation": "The phrase ‘works of their hands’ stands metonymically for idols, calling attention to their human manufacture and sharpening the charge of idolatry.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 1:17",
+    "deliberation": "Identified the idiom תֶּאְזֹר מׇתְנֶיךָ (‘gird up your loins’) as clearly figurative: it comes from literal belt‑girding before exertion but here commands mental and spiritual readiness. Considered also the verb אֲחִתְּךָ (‘I will shatter/dismay you’) as metaphorical for emotional breakdown, but the primary, marked figure is ‘gird up your loins.’",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַתָּה֙ תֶּאְזֹ֣ר מׇתְנֶ֔יךָ",
+        "english_text": "But you, gird up your loins",
+        "target": [
+          "Jeremiah’s need to prepare himself resolutely for his prophetic task",
+          "Inner readiness, courage, and alertness",
+          "Psychological / vocational preparedness domain"
+        ],
+        "vehicle": [
+          "Physically girding one’s loins by tucking up a long garment for running or fighting",
+          "A pre‑action bodily preparation",
+          "Bodily / military‑or‑journey preparation domain"
+        ],
+        "ground": [
+          "As one girds up clothing to move freely and act decisively, Jeremiah must ready himself in resolve and courage for his mission",
+          "Readiness, removal of encumbrances, and determination",
+          "Transferring physical preparation imagery to mental/spiritual preparation"
+        ],
+        "posture": [
+          "God’s urgent command, exhorting Jeremiah to active obedience",
+          "Motivational and strengthening, yet serious and demanding",
+          "Parenetic (exhortational) instruction in the call narrative"
+        ],
+        "explanation": "The literal act of girding one’s loins before strenuous activity is used metaphorically and idiomatically to tell Jeremiah to prepare himself inwardly for his challenging prophetic mission.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 1:18",
+    "deliberation": "This verse piles up images: ‘a fortified city,’ ‘an iron pillar,’ and ‘bronze walls’ applied to Jeremiah himself. These are three closely related but distinct metaphors all conveying his divinely granted strength and unassailability in the face of opposition.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נְתַתִּ֣יךָ הַיּ֗וֹם לְעִ֨יר מִבְצָ֜ר",
+        "english_text": "I make you this day a fortified city",
+        "target": [
+          "Jeremiah’s overall stability and defense against attack",
+          "His God‑given resilience and protection",
+          "Psychological / spiritual fortitude domain"
+        ],
+        "vehicle": [
+          "A fortified city with strong defenses",
+          "A heavily defended urban stronghold that withstands siege",
+          "Military / urban fortification domain"
+        ],
+        "ground": [
+          "Like a fortified city, Jeremiah will be difficult to overcome despite sustained assaults",
+          "Security, endurance under siege, and inaccessibility to enemies",
+          "Projecting physical impregnability onto a person’s vocation"
+        ],
+        "posture": [
+          "God’s encouraging reassurance about Jeremiah’s divinely backed invincibility",
+          "Strengthens the prophet’s courage by magnifying his God‑given defenses",
+          "Promissory rhetoric within the call narrative"
+        ],
+        "explanation": "Jeremiah is likened to a fortified city whose defenses cannot easily be breached, expressing his divinely guaranteed resilience under hostile pressure.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּלְעַמּ֥וּד בַּרְזֶ֛ל",
+        "english_text": "and an iron pillar",
+        "target": [
+          "Jeremiah’s inner firmness and unbending stance",
+          "His unwavering support and stability in his role",
+          "Moral / psychological steadfastness domain"
+        ],
+        "vehicle": [
+          "An iron pillar",
+          "A rigid, load‑bearing support made of iron",
+          "Structural / metallic strength domain"
+        ],
+        "ground": [
+          "As an iron pillar stands firm and resists bending, Jeremiah will stand unyielding under pressure",
+          "Rigidity, strength, and reliability as support",
+          "Transferring mechanical strength to human resolve"
+        ],
+        "posture": [
+          "God’s portrayal of the prophet as unshakeable in the face of opposition",
+          "Intends to counter Jeremiah’s fear of collapsing under pressure",
+          "Reassuring, image‑rich promise"
+        ],
+        "explanation": "The comparison of Jeremiah to an iron pillar underscores his God‑given rigidity and reliability, presenting him as an unbending support amid opposition.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּלְחֹמ֥וֹת נְחֹ֖שֶׁת עַל־כׇּל־הָאָ֑רֶץ",
+        "english_text": "and bronze walls against the whole land",
+        "target": [
+          "Jeremiah’s role as a barrier resisting hostile powers in Judah",
+          "His protective, separating function and resistance",
+          "Relational / conflict‑resistance domain"
+        ],
+        "vehicle": [
+          "Bronze walls surrounding a city",
+          "Thick, metallic defensive barriers",
+          "Fortification / barrier domain"
+        ],
+        "ground": [
+          "Like bronze walls, Jeremiah will stand as a hard, resistant barrier that opponents cannot easily breach",
+          "Impenetrability and durable opposition to assault",
+          "Physical barrier mapped onto a human vocation"
+        ],
+        "posture": [
+          "Divine promise that Jeremiah will not be overcome despite being surrounded by opposition",
+          "Intends to embolden him by picturing his calling in strongly defensive terms",
+          "Prophetic empowerment through stacked metaphors"
+        ],
+        "explanation": "By calling Jeremiah ‘bronze walls,’ God depicts him as an impenetrable barrier set against the opposition of kings, officials, priests, and people throughout the land.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 1:19",
+    "deliberation": "Reviewed ‘They will fight against you, but they shall not overcome you’ (וְנִלְחֲמ֥וּ אֵלֶ֖יךָ וְלֹא־י֣וּכְלוּ לָ֑ךְ). While Jeremiah does face real hostilities, the language frames opposition to his message in the vocabulary of battle and victory/defeat, extending warfare imagery to encompass broader contention. This functions as a conflict metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנִלְחֲמ֥וּ אֵלֶ֖יךָ וְלֹא־י֣וּכְלוּ לָ֑ךְ",
+        "english_text": "They will fight against you, but they shall not overcome you",
+        "target": [
+          "Opposition to Jeremiah and his message from various groups in Judah",
+          "Social, political, and religious conflict directed at the prophet",
+          "Interpersonal / sociopolitical opposition domain"
+        ],
+        "vehicle": [
+          "Combat in which one side fights and seeks to prevail over the other",
+          "Warfare with victory and defeat outcomes",
+          "Military conflict domain"
+        ],
+        "ground": [
+          "As in battle where opponents try to overpower an enemy, Jeremiah’s adversaries will strive to overcome him but fail",
+          "Intensity, organized resistance, and the notion of ‘prevailing’ or ‘winning’",
+          "Mapping military struggle onto prophetic controversy"
+        ],
+        "posture": [
+          "God’s realistic yet encouraging forecast of opposition framed in martial terms",
+          "Assures Jeremiah of ultimate safety and success despite fierce conflict",
+          "Consolatory promise completing the call narrative"
+        ],
+        "explanation": "Opposition to Jeremiah is cast in the imagery of battle and victory/defeat, portraying his conflict with opponents as a kind of warfare in which, thanks to God’s presence, they cannot ‘prevail’ over him.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

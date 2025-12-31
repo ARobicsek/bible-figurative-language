@@ -1,0 +1,597 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 15:1",
+    "deliberation": "I checked for metaphors, personification, idioms, and metonymy. The main figurative elements are anthropopathic language about God's 'soul' being turned away from the people and the idiom of sending them away 'from before my face' for exclusion from His presence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֵין נַפְשִׁי אֶל־הָעָם הַזֶּה",
+        "english_text": "I would not be won over to that people (lit. 'my soul is not toward this people')",
+        "target": ["God's disposition toward Judah", "divine favor or willingness to relent", "divine–human relationship"],
+        "vehicle": ["'soul' turned toward/away from someone", "human inner self and emotional orientation", "human psychology"],
+        "ground": ["lack of desire, affection, or inclination toward them", "emotional withdrawal / refusal", "attitudinal stance"],
+        "posture": ["YHWH's declared rejection of the people", "negative evaluative stance", "judicial posture"],
+        "explanation": "God's 'soul' not being toward the people uses human inner-life language for God's favor; 'soul' stands metonymically for desire and relational inclination, presenting divine rejection in human emotional terms.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שַׁלַּח מֵעַל־פָּנַי",
+        "english_text": "Dismiss them from My presence (lit. 'send [them] from upon my face')",
+        "target": ["access to God's presence and favor", "covenantal standing", "divine–human spatial imagery"],
+        "vehicle": ["being before someone's face / being sent away from it", "physical proximity and exclusion from a person", "interpersonal space"],
+        "ground": ["nearness as acceptance vs. distance as rejection", "loss of intimate audience or standing", "relational separation"],
+        "posture": ["judicial expulsion of the people", "exclusionary stance", "judgment"],
+        "explanation": "God's 'face' stands metonymically for His presence; to be sent away from His face is a metaphor for being expelled from His favor and audience.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 15:2",
+    "deliberation": "I looked for metaphors, metonymy, and hyperbole. The repeated formula assigns people to 'death, sword, famine, captivity'; sword and famine function metonymically as concrete agents standing for kinds of divine judgment/fate, not just literal objects.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֲשֶׁר לַמָּוֶת לַמָּוֶת וַאֲשֶׁר לַחֶרֶב לַחֶרֶב וַאֲשֶׁר לָרָעָב לָרָעָב וַאֲשֶׁר לַשְּׁבִי לַשֶּׁבִי",
+        "english_text": "Those destined for the plague, to the plague; those destined for the sword, to the sword; those destined for famine, to famine; those destined for captivity, to captivity.",
+        "target": ["the various destinies of the people under judgment", "modes of divine punishment", "national fate"],
+        "vehicle": ["'death', 'sword', 'famine', 'captivity' as labels of fate", "concrete agents/events of destruction", "calamity imagery"],
+        "ground": ["each term names a characteristic kind of catastrophic end", "brief labels summarize complex experiences of judgment", "categorization of outcomes"],
+        "posture": ["categorical, fated assignment by God", "ineluctable judicial decree", "doom-laden pronouncement"],
+        "explanation": "Here 'sword', 'famine', and 'captivity' function as metonymies for the larger experiences of war, starvation, and exile—the labeled agents stand for whole complexes of suffering and death to which different groups are consigned.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 15:3",
+    "deliberation": "I checked whether the 'four kinds'—sword, dogs, birds, beasts—are symbolic or metaphorical. In context these are the very real agents that will desecrate and consume the corpses after battle, which fits standard covenant-curse imagery literally. No clear metaphor, simile, or hyperbole is required to make sense of the verse.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 15:4",
+    "deliberation": "I examined whether making them a 'horror' is literal or figurative. The people are not literally transformed into a feeling but become an 'object of horror' to others, which is metaphorical language for their reputation and the reaction they provoke.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּנְתַתִּים לְזַעֲוָה לְכֹל מַמְלְכוֹת הָאָרֶץ",
+        "english_text": "I will make them a horror to all the kingdoms of the earth",
+        "target": ["Judah/its people as perceived by the nations", "collective reputation and status", "international perception"],
+        "vehicle": ["'a horror', an object that causes terror and revulsion", "emotional reaction objectified", "fear-inducing spectacle"],
+        "ground": ["they will be looked at with dread and revulsion", "they serve as a shocking example", "moral and physical ruin provoking horror"],
+        "posture": ["God's turning them into a cautionary example", "negative exemplary status", "judgmental display"],
+        "explanation": "The people are metaphorically turned into 'a horror', i.e., an object that elicits horror; this portrays their future condition as a warning spectacle to other kingdoms.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 15:5",
+    "deliberation": "I considered rhetorical questions and the address to 'Jerusalem.' The questions themselves are rhetorical but not figurative. However, 'Jerusalem' functions metonymically for its inhabitants, not just the geographical city.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִי־יַחְמֹל עָלַיִךְ יְרוּשָׁלִַם",
+        "english_text": "Who will pity you, O Jerusalem?",
+        "target": ["the people who live in Jerusalem/Judah", "inhabitants of the city", "covenant community"],
+        "vehicle": ["the place-name 'Jerusalem'", "geographical entity", "urban space"],
+        "ground": ["city stands for its people", "corporate identity tied to locale", "location as shorthand for community"],
+        "posture": ["lament over the community's abandonment", "rhetorical highlighting of lack of comforters", "judgment-tinged sorrow"],
+        "explanation": "The city-name 'Jerusalem' is used metonymically for the populace who will not find pity; the questions concern people, not walls and stones.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 15:6",
+    "deliberation": "I looked for metaphor and anthropomorphic personification. 'You go backward' is moral-spiritual language expressed as spatial movement, and God 'stretching out His hand' is a standard anthropomorphic metaphor for decisive action in judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָחוֹר תֵּלֵכִי",
+        "english_text": "You go ever backward",
+        "target": ["Judah's covenant behavior and spiritual state", "moral and religious fidelity", "human conduct"],
+        "vehicle": ["walking backward instead of forward", "spatial movement and orientation", "physical locomotion"],
+        "ground": ["regress instead of progress", "turning away from proper direction", "backsliding and refusal to advance"],
+        "posture": ["divine criticism of their regression", "negative moral evaluation", "reproof"],
+        "explanation": "Moving 'backward' is a metaphor (and idiom) for spiritual and moral backsliding—reversing direction away from God instead of advancing toward Him.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וָאַט אֶת־יָדִי עָלַיִךְ וָאַשְׁחִיתֵךְ",
+        "english_text": "So I have stretched out My hand to destroy you",
+        "target": ["God's active intervention in judgment", "exercise of divine power", "divine agency in history"],
+        "vehicle": ["a person stretching out a hand to strike", "human bodily action in combat or punishment", "physical force"],
+        "ground": ["direct, forceful attack or smiting", "decisive exertion of power against someone", "hostile engagement"],
+        "posture": ["hostile judicial action", "punitive stance", "retributive resolve"],
+        "explanation": "The image of God stretching out His hand is an anthropomorphic metaphor for decisive, forceful intervention in judgment, like a human raising a hand to strike.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 15:7",
+    "deliberation": "I tested whether 'winnowing' is purely descriptive or figurative. The verb with the winnowing-fork at the gates of the land uses an agricultural process metaphorically for scattering people into exile.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וָאֶזְרֵם בְּמִזְרֶה בְּשַׁעֲרֵי הָאָרֶץ",
+        "english_text": "I will scatter them as with a winnowing fork through the settlements of the earth",
+        "target": ["the dispersal of the people from the land", "exile and social dislocation", "national community"],
+        "vehicle": ["winnowing chaff with a winnowing fork at the threshing floor", "agricultural separation process", "farming practice"],
+        "ground": ["separating and scattering unwanted material by tossing it into the wind", "removal from the place of origin", "loss of cohesion"],
+        "posture": ["judicial purging and scattering", "punitive removal", "severe discipline"],
+        "explanation": "Exile is pictured as winnowing: God, like a farmer with a winnowing fork, throws them up so they are scattered by forces beyond their control.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 15:8",
+    "deliberation": "I focused on numerical imagery and expressions of terror. 'Widows more than the sands of the seas' is a stock hyperbolic comparison for incalculable number; the other clauses can be taken literally as sudden daylight attack producing panic.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָצְמוּ־לִי אַלְמְנוֹתָו מֵחוֹל יַמִּים",
+        "english_text": "Their widows shall be more numerous than the sands of the seas",
+        "target": ["the number of widows left in the nation", "extent of bereavement", "social devastation"],
+        "vehicle": ["'the sands of the seas'", "a vast, uncountable quantity in nature", "natural multitude"],
+        "ground": ["extreme, effectively innumerable quantity", "beyond normal counting", "overwhelming scale"],
+        "posture": ["lamenting yet threatening description of coming loss", "intensification of judgment", "evocation of horror"],
+        "explanation": "The comparison to 'the sands of the seas' is deliberate numerical hyperbole, evoking an unimaginably large number of widows as a result of judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 15:9",
+    "deliberation": "I examined 'she who bore seven' and 'her sun has set while it is still day.' The former may be literal or proverbial for fullness of children, but the latter is a clear death/ruin metaphor, not a description of astronomy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בָּא שִׁמְשָׁהּ בְּעֹד יוֹמָם",
+        "english_text": "Her sun has set while it is still day",
+        "target": ["the life, joy, and hope of the mother who bore seven", "personal fortune and vitality", "individual human condition"],
+        "vehicle": ["the sun setting unexpectedly at midday", "cosmic light going dark prematurely", "celestial phenomenon"],
+        "ground": ["sudden, premature end of what should have lasted longer", "transition from light to darkness", "catastrophic reversal"],
+        "posture": ["poetic lament over tragic reversal", "sympathetic portrayal of devastation", "heightened pathos"],
+        "explanation": "The woman's life and joy are likened to a sun that goes down at noon—a metaphor for a premature, shocking end to what should have been a full, bright day.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 15:10",
+    "deliberation": "I looked for metaphor and hyperbole in Jeremiah's self-lament. Calling himself 'a man of conflict and strife to all the land' and saying 'everyone curses me' express his role and opposition in exaggerated, emotive terms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִישׁ רִיב וְאִישׁ מָדוֹן לְכָל־הָאָרֶץ",
+        "english_text": "A man of conflict and strife with all the land",
+        "target": ["Jeremiah's prophetic vocation and social experience", "his relational stance toward society", "prophet's role"],
+        "vehicle": ["a person characterized as nothing but quarrel and contention", "embodiment of conflict", "social antagonism"],
+        "ground": ["he is constantly embroiled in disputes", "his message provokes contention everywhere", "pervasive opposition"],
+        "posture": ["self-pitying yet realistic complaint", "perception of universal antagonism", "lament"],
+        "explanation": "Jeremiah depicts himself hyperbolically as 'a man of strife' to the whole land, as though his entire identity were conflict; this is an idiomatic metaphor for his constant embroilment in disputes due to his message.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֻּלֹּה מְקַלְלַוְנִי",
+        "english_text": "Yet everyone curses me",
+        "target": ["the number of Jeremiah's opponents", "social hostility directed at him", "community response"],
+        "vehicle": ["'everyone'", "the totality of people without exception", "universal set"],
+        "ground": ["Jeremiah feels cursed by almost all around him", "opposition is extremely widespread", "social isolation"],
+        "posture": ["intense personal lament", "expressive exaggeration of rejection", "complaint to God"],
+        "explanation": "Saying 'everyone curses me' is hyperbolic idiom; he does not mean literally every living person, but conveys overwhelming, near-universal hostility.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 15:11",
+    "deliberation": "The Hebrew of this verse is difficult, but on any of the main textual reconstructions the sense is straightforward promise/threat about sparing Jeremiah and dealing with the enemy in bad times. I did not find a clear metaphor, simile, or marked idiom beyond standard verbs of 'cause to meet', so I treat the verse as functionally literal.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 15:12",
+    "deliberation": "I assessed the interrogative about iron and bronze. It functions as a metaphorical riddle: ordinary iron cannot break 'iron from the north and bronze', an image for the superior strength of the northern enemy's power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲיָרֹעַ בַּרְזֶל בַּרְזֶל מִצָּפוֹן וּנְחֹשֶׁת",
+        "english_text": "Can iron break iron from the north and bronze?",
+        "target": ["the relative strength of Judah versus the northern invader (Babylon)", "political-military power", "international conflict"],
+        "vehicle": ["ordinary iron versus superior northern iron and bronze", "interaction of different metals", "material strength comparison"],
+        "ground": ["inferior material cannot shatter superior metal", "Judah is weaker than the northern power", "inevitable inability to overcome stronger force"],
+        "posture": ["sobering reminder of Judah's helplessness", "rhetorical undercutting of resistance hopes", "judgment realism"],
+        "explanation": "The metals stand metaphorically for relative political-military strength: 'iron from the north and bronze' evokes the enemy's invincible power compared to Judah's.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 15:13",
+    "deliberation": "The handing over of wealth as spoil is literal war language. The phrase 'throughout your territory' uses 'borders' as a metonym for the entire land and its inhabitants, but the figurative force is light.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּכָל־חַטֹּאתֶיךָ וּבְכָל־גְּבוּלֶיךָ",
+        "english_text": "because of all your sins throughout your territory (lit. 'in all your borders')",
+        "target": ["the entire extent of Judah's land and population involved in sin", "comprehensive national guilt", "corporate transgression"],
+        "vehicle": ["'all your borders'", "geopolitical boundaries", "spatial margins of a territory"],
+        "ground": ["borders represent everything within them", "location stands for land plus inhabitants", "total coverage"],
+        "posture": ["comprehensive indictment", "emphasis on universality of sin", "judicial summation"],
+        "explanation": "The 'borders' function metonymically for everything inside them—land and people—underscoring that sin pervades the whole territory.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 15:14",
+    "deliberation": "I looked especially at the 'fire' language. The 'fire kindled in my wrath/nostrils' that will burn against them is a standard metaphor for divine anger, making God's wrath like a consuming blaze.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי־אֵשׁ קָדְחָה בְאַפִּי עֲלֵיכֶם תּוּקָד",
+        "english_text": "For a fire has flared in My wrath, it blazes against you",
+        "target": ["God's wrath directed at the people", "divine anger and judgment", "divine emotional-judicial response"],
+        "vehicle": ["a fire kindled and blazing", "intense consuming flame", "destructive heat"],
+        "ground": ["intensity, heat, and destructive power of wrath", "spreading, consuming effect on its objects", "irresistible force"],
+        "posture": ["threatening portrayal of judgment", "angry determination", "punitive resolve"],
+        "explanation": "God's anger is depicted as a fire kindled in His 'nose/wrath' that burns against the people; 'nose' is a metonym for anger, and the blaze is a metaphor for the fierce, consuming nature of His judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 15:15",
+    "deliberation": "I examined the plea about God's 'long nose' (patience) and Jeremiah 'bearing reproach.' 'Length of nose' is a Hebrew idiom/metaphor for being slow to anger, and 'to bear reproach' figuratively treats insult as a burden carried for God's sake.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַל־לְאֶרֶךְ אַפְּךָ תִּקָּחֵנִי",
+        "english_text": "Do not [let me perish] in Your patience (lit. 'in the length of Your nose')",
+        "target": ["God's patient restraint from anger", "divine forbearance", "emotional-temporal attribute"],
+        "vehicle": ["having a 'long nose'", "physical bodily feature", "facet of a face"],
+        "ground": ["a long nose symbolizes delayed flaring of nostrils, hence slow anger", "extended time before outburst", "measured response"],
+        "posture": ["urgent plea that God not let forbearance imply Jeremiah's abandonment", "request for timely vindication", "appeal to God's character"],
+        "explanation": "The idiom 'length of nose' uses the nose (metonym for anger) in a metaphor: a longer 'nose' means anger is slower to flare, i.e., God is patient.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דַּע שְׂאֵתִי עָלֶיךָ חֶרְפָּה",
+        "english_text": "Consider how I have borne insult on Your account",
+        "target": ["Jeremiah's experience of hostility for God's sake", "prophetic suffering", "human emotional load"],
+        "vehicle": ["bearing or carrying a load ('borne reproach')", "physical transport of weight", "burden-bearing"],
+        "ground": ["enduring something heavy and unpleasant over time", "sustained pressure and strain", "unwelcome load shouldered for another"],
+        "posture": ["loyal yet aggrieved servant appealing for recognition", "self-presentation as burden-bearer", "plea for vindication"],
+        "explanation": "Reproach is pictured as a burden that Jeremiah 'bears' for God, a metaphor expressing the weight and cost of his calling.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 15:16",
+    "deliberation": "I checked for metaphor in Jeremiah's relationship to God's words. 'I devoured them' is a clear metaphor of eating for internalizing God's message; joy in the heart is straightforward emotive language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִמְצְאוּ דְבָרֶיךָ וָאֹכְלֵם",
+        "english_text": "When Your words were offered, I devoured them (lit. 'Your words were found and I ate them')",
+        "target": ["Jeremiah's reception and appropriation of God's message", "prophetic internalization of revelation", "human cognitive-spiritual process"],
+        "vehicle": ["eating and devouring food", "physical ingestion", "bodily nourishment"],
+        "ground": ["taking something into oneself so it becomes part of one", "satisfaction and nourishment from what is taken in", "eager consumption"],
+        "posture": ["positive, eager embrace of God's word", "delight in revelation", "devotional response"],
+        "explanation": "Jeremiah describes receiving God's words as 'eating' them, an idiomatic metaphor for internalizing and being nourished by divine revelation.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 15:17",
+    "deliberation": "I looked at 'Your hand' and 'You have filled me with fury.' 'Hand' is a metonym for God's active influence, and being 'filled' with wrath uses a container metaphor for Jeremiah's inner emotional state.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִפְּנֵי יָדְךָ בָּדָד יָשַׁבְתִּי",
+        "english_text": "I have sat lonely because of Your hand upon me",
+        "target": ["God's compelling influence on Jeremiah's life", "divine constraint over the prophet", "agency shaping his isolation"],
+        "vehicle": ["a hand resting upon or pressing someone", "physical touch and pressure", "bodily control"],
+        "ground": ["direct, exerted control that alters a person's situation", "guiding or restraining force", "felt burden from above"],
+        "posture": ["reluctant acceptance of God's heavy call", "lament over imposed solitude", "submissive complaint"],
+        "explanation": "God's 'hand' is a metonym for His powerful, constraining influence: Jeremiah's enforced solitude is attributed to this figurative hand resting on him.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־זַעַם מִלֵּאתָנִי",
+        "english_text": "For You have filled me with gloom/indignation",
+        "target": ["Jeremiah's inner emotional experience", "his affective state", "human psyche"],
+        "vehicle": ["a vessel being filled up with a substance", "container and contents", "physical volume"],
+        "ground": ["emotion occupying and dominating the inner self", "no empty space left for other feelings", "overwhelming saturation"],
+        "posture": ["expression of being dominated by divinely induced anger/sorrow", "complaint of emotional burden", "psychological strain"],
+        "explanation": "Jeremiah portrays himself as a vessel God has 'filled' with wrathful sorrow; the container metaphor depicts his inner being as saturated with this emotion.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 15:18",
+    "deliberation": "I noted two figurative strands: (1) Jeremiah's 'pain' and 'wound' that will not heal, a medical metaphor for ongoing affliction, and (2) the explicit simile of God as a deceptive spring or unreliable waters.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָמָּה הָיָה כְאֵבִי נֶצַח וּמַכָּתִי אֲנוּשָׁה מֵאֲנָה הֵרָפֵא",
+        "english_text": "Why must my pain be endless, my wound incurable, resistant to healing?",
+        "target": ["Jeremiah's total experience of anguish and opposition", "ongoing affliction in his vocation", "life condition"],
+        "vehicle": ["endless pain and an incurable wound", "chronic medical injury", "bodily ailment"],
+        "ground": ["persistent, unrelieved suffering that will not mend", "sense of hopelessness about improvement", "prolonged injury"],
+        "posture": ["intense complaint and near-despair", "perception of unending trouble", "emotive exaggeration"],
+        "explanation": "Jeremiah uses bodily pain and an incurable wound as a metaphor for his ongoing, unhealed affliction, with 'endless' heightening the sense of hyperbolic, unrelieved suffering.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָיוֹ תִהְיֶה לִי כְּמוֹ אַכְזָב מַיִם לֹא נֶאֱמָנוּ",
+        "english_text": "You have been to me like a spring that fails, like waters that cannot be relied on",
+        "target": ["God's perceived reliability and support toward Jeremiah", "divine faithfulness as Jeremiah experiences it", "theological trust"],
+        "vehicle": ["a deceptive/failed spring and unreliable waters", "source of water that dries up or disappoints", "natural water-supply"],
+        "ground": ["initial expectation of refreshment and life that is disappointed", "critical dependence leading to greater distress when the source fails", "unreliability in time of need"],
+        "posture": ["bold, accusatory lament directed at God", "expression of felt betrayal", "deep crisis of trust"],
+        "explanation": "Using explicit similes, Jeremiah compares God to a deceptive spring and untrustworthy waters, expressing his sense that the One he relied on has failed him.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 15:19",
+    "deliberation": "I examined 'stand before Me' and 'produce what is noble out of the worthless.' The former is cultic/court language and may be literal. The latter is metaphorical, picturing Jeremiah's speech or ministry as extracting something precious from dross.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאִם־תּוֹצִיא יָקָר מִזּוֹלֵל כְּפִי תִּהְיֶה",
+        "english_text": "If you produce what is noble out of the worthless, you shall be My spokesman (lit. 'like My mouth you shall be')",
+        "target": ["Jeremiah's prophetic discourse and discernment", "quality of his words/message", "prophetic function"],
+        "vehicle": ["extracting something precious from something vile (like refining metal or separating valuable from refuse)", "purification and selection process", "metallurgical or sifting imagery"],
+        "ground": ["distinguishing and preserving what is truly valuable from what is base or corrupt", "purging away the unworthy elements", "purified output"],
+        "posture": ["divine requirement for prophetic integrity", "call to refine his words and stance", "conditional restoration"],
+        "explanation": "God uses refining imagery: Jeremiah must bring forth 'precious' from 'worthless'—a metaphor for separating sound, God-honoring content from base, compromised elements in his words or orientation to become 'like My mouth.'",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 15:20",
+    "deliberation": "I focused on the promise to make Jeremiah 'a fortified wall of bronze.' This is a straightforward metaphor, not that he literally becomes architecture, but that his person and mission will have the strength and invulnerability of such a wall.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּנְתַתִּיךָ לָעָם הַזֶּה לְחוֹמַת נְחֹשֶׁת בְּצוּרָה",
+        "english_text": "Against this people I will make you as a fortified wall of bronze",
+        "target": ["Jeremiah's resilience and defensibility against opposition", "prophet's inner strength and protection", "individual steadfastness"],
+        "vehicle": ["a fortified bronze wall", "strong defensive structure", "military architecture"],
+        "ground": ["difficult or impossible to break through", "withstanding repeated assaults", "durable, unyielding strength"],
+        "posture": ["reassuring promise of protection amidst hostility", "encouragement to stand firm", "divine backing"],
+        "explanation": "Jeremiah is metaphorically likened to a fortified bronze wall: under God's protection, he will be as resistant to attack as such a wall is in warfare.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 15:21",
+    "deliberation": "I examined 'hand' and 'palm/clutches' of the wicked. These body parts function as metonymy for power and control rather than literal anatomical rescue imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִיַּד רָעִים ... מִכַּף עָרִצִים",
+        "english_text": "from the hands of the wicked and from the clutches of the violent",
+        "target": ["the power and control exercised by wicked and violent people over Jeremiah", "oppressive dominance", "human agency in persecution"],
+        "vehicle": ["hand and palm/clutch as grasping organs", "bodily instruments of seizing and holding", "grip imagery"],
+        "ground": ["having someone in one's hand or palm means having power over them", "ability to harm or restrain", "dominating grasp"],
+        "posture": ["promise of liberation from oppressive control", "divine commitment to break their grip", "protective assurance"],
+        "explanation": "The 'hand' and 'palm' of the wicked stand metonymically for their power and grasp; God promises to rescue Jeremiah from their controlling grip.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

@@ -1,0 +1,1123 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 2:1",
+    "deliberation": "Formulaic prophetic introduction. Considered whether 'the word of YHWH came' is purely idiomatic or figurative. It pictures God's communication as an entity that can 'come,' which is a mild personification/metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהֹוָ֖ה אֵלַ֥י",
+        "english_text": "The word of GOD came to me",
+        "target": ["Divine communication to the prophet", "prophetic revelation", "religious/theological"],
+        "vehicle": ["A 'word' that travels and arrives", "animated message/agent", "linguistic/relational"],
+        "ground": ["Initiated encounter, directed from sender to recipient", "intentional, active communication", "relational/theological"],
+        "posture": ["Stresses divine initiative and authority of the message", "authorizing stance", "rhetorical"],
+        "explanation": "God’s communication is portrayed as a concrete entity that ‘comes’ to the prophet, personifying the divine word and metaphorically depicting revelation as spatial movement.",
+        "confidence": 0.64
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 2:2",
+    "deliberation": "The verse uses marital/bridal language ('devotion of your youth,' 'love of your espousals') for Israel’s early covenant fidelity. This is an extended metaphor of Israel as YHWH’s bride following Him through the wilderness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חֶ֣סֶד נְעוּרַ֔יִךְ אַהֲבַ֖ת כְּלוּלֹתָ֑יִךְ לֶכְתֵּ֤ךְ אַֽחֲרַי֙ בַּמִּדְבָּ֔ר",
+        "english_text": "The devotion of your youth, your love as a bride— how you followed Me in the wilderness",
+        "target": ["Israel’s early covenant loyalty", "national relationship to God", "religious/theological"],
+        "vehicle": ["A young bride devotedly following her husband", "marital attachment and trust", "family/social"],
+        "ground": ["Exclusive affection, trust, and willingness to follow into hardship", "faithful attachment and dependence", "moral/relational"],
+        "posture": ["Nostalgic and approving evaluation of former loyalty", "commendatory stance", "rhetorical/pastoral"],
+        "explanation": "Israel’s youthful faithfulness is pictured as bridal love and trust, casting the covenant as a marriage in which Israel, like a bride, followed YHWH into the wilderness.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 2:3",
+    "deliberation": "The verse treats Israel as consecrated produce ('firstfruits of his harvest'); those who 'eat' Israel are guilty. This yields two related metaphors: Israel as firstfruits, and enemies as eaters of that consecrated produce.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קֹ֤דֶשׁ יִשְׂרָאֵל֙ לַיהֹוָ֔ה רֵאשִׁ֖ית תְּבוּאָתֹ֑ה",
+        "english_text": "Israel was holy to GOD, the first fruits of God’s harvest.",
+        "target": ["Israel’s special covenant status", "the people of Israel", "religious/theological"],
+        "vehicle": ["Holy firstfruits set apart from a harvest", "consecrated agricultural produce", "agrarian/cultic"],
+        "ground": ["Belonging exclusively to God, inviolable, bringing blessing and danger if misused", "set-apartness and sacred claim", "religious/moral"],
+        "posture": ["Affirms Israel’s privileged and protected status before God", "valuing stance", "rhetorical/theological"],
+        "explanation": "Israel is portrayed as the consecrated first portion of a harvest, emphasizing sacredness and divine ownership.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כׇל־אֹכְלָ֣יו יֶאְשָׁ֔מוּ",
+        "english_text": "All who ate of it were held guilty",
+        "target": ["Nations that attack or exploit Israel", "foreign aggressors", "historical/political"],
+        "vehicle": ["People eating consecrated produce", "improper consumption of holy food", "agrarian/cultic"],
+        "ground": ["To consume what belongs to God is a profaning act that incurs guilt", "violation of what is sacred", "moral/religious"],
+        "posture": ["Warns that harming Israel is like sacrilege that attracts judgment", "threatening stance", "rhetorical/forensic"],
+        "explanation": "Foreign powers who harm Israel are metaphorically described as people who ‘eat’ God’s holy firstfruits, a metonymic way of describing conquest as consumption that brings guilt.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 2:4",
+    "deliberation": "Address formula 'House of Jacob' / 'families of the House of Israel'. These are metonymies where 'house' stands for descendants or nation. No further imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּ֣ית יַעֲקֹ֑ב וְכׇֽל־מִשְׁפְּח֖וֹת בֵּ֥ית יִשְׂרָאֵֽל",
+        "english_text": "O House of Jacob, every clan of the House of Israel",
+        "target": ["The people descended from Jacob/Israel", "Israelite nation and tribes", "social/historical"],
+        "vehicle": ["A 'house' or household", "family unit/lineage", "social"],
+        "ground": ["Belonging to a common ancestor, unity as one familial entity", "corporate identity through descent", "social/genealogical"],
+        "posture": ["Emphasizes shared ancestry and covenant identity", "summoning stance", "rhetorical"],
+        "explanation": "‘House of Jacob/Israel’ uses a family-household term as a metonymy for the entire people descended from Jacob.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 2:5",
+    "deliberation": "The verse says they 'went after the hevel (vanity/emptiness)' and 'became vain'. This treats idols/delusions as 'hevel' and speaks of 'going after' and becoming like them—metaphorical and idiomatic.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיֵּ֥לְכ֛וּ אַחֲרֵ֥י הַהֶ֖בֶל",
+        "english_text": "and went after delusion",
+        "target": ["Israel’s pursuit of idols and false securities", "spiritual apostasy", "religious/theological"],
+        "vehicle": ["Chasing after 'hevel' (breath/vanity)", "pursuit of empty vapor", "natural/physical"],
+        "ground": ["Pointlessness, insubstantiality, inability to give real benefit", "futility and emptiness", "evaluative/moral"],
+        "posture": ["Scornful of idol pursuit as utterly empty", "derogatory stance", "polemical"],
+        "explanation": "Idols and false hopes are labeled ‘hevel’ (vanity/breath), and pursuing them is pictured as chasing after emptiness.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיֶּהְבָּֽלוּ",
+        "english_text": "and were deluded (became vain)",
+        "target": ["The moral/spiritual state of the people", "inner character of Israel", "moral/spiritual"],
+        "vehicle": ["Becoming like 'hevel' (vanity)", "turning into emptiness", "natural/abstract"],
+        "ground": ["They take on the worthless, insubstantial character of what they follow", "assimilation to object of worship", "moral/psychological"],
+        "posture": ["Highlights the degrading effect of idolatry on the people", "warning stance", "prophetic"],
+        "explanation": "Israel is said to ‘become vanity’ like the emptiness they pursued, a metaphor for moral/spiritual hollowness.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 2:6",
+    "deliberation": "Mostly literal recollection of the exodus route. However, 'land of צִיָּה וְצַלְמָוֶת (drought and deep darkness / death-shadow)' heightens the desert image, and 'a land where no man passed/dwelt' is exaggerated for effect.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּאֶ֙רֶץ֙ צִיָּ֣ה וְצַלְמָ֔וֶת",
+        "english_text": "in a land of drought and darkness (deep shadow of death)",
+        "target": ["The dangers and hardships of the wilderness journey", "Israel’s historical experience", "historical/geographical"],
+        "vehicle": ["A realm of deathly darkness and desolation", "threatening death-shadow landscape", "cosmic/natural"],
+        "ground": ["Life-threatening, terrifying, inhospitable conditions", "extreme peril and deprivation", "emotive/experiential"],
+        "posture": ["Magnifies God’s saving power through such a fearful place", "laudatory toward divine deliverance", "rhetorical"],
+        "explanation": "The wilderness is portrayed with the intensified language of ‘drought and death-shadow,’ conveying extremity and danger beyond bare geography.",
+        "confidence": 0.78
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּאֶ֗רֶץ לֹא־עָ֤בַר בָּהּ֙ אִ֔ישׁ וְלֹא־יָשַׁ֥ב אָדָ֖ם שָֽׁם",
+        "english_text": "a land nobody had traversed, where no human being had dwelt",
+        "target": ["Sparsity of settlement and travel in the desert region", "the population pattern of the wilderness", "historical/geographical"],
+        "vehicle": ["Absolute lack of any human passage or habitation", "total emptiness", "quantitative"],
+        "ground": ["Extreme remoteness and hostility to settled life", "practical impossibility and danger", "experiential"],
+        "posture": ["Rhetorically stresses the miraculous nature of Israel’s journey", "emphasizing stance", "apologetic/proclamatory"],
+        "explanation": "The claim that no one ever passed or lived there is an exaggeration to highlight how inhospitable the route was and thus how great God’s guidance was.",
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 2:7",
+    "deliberation": "The verse shifts between literal land and cultic language: 'defiled my land,' 'my inheritance you made an abomination.' Land is treated as a cultic object and 'inheritance' is metonymy for the land/people entrusted by God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתְּטַמְּא֣וּ אֶת־אַרְצִ֔י",
+        "english_text": "you came and defiled My land",
+        "target": ["The moral and cultic corruption of the community in the land", "Israel’s conduct in the territory", "religious/social"],
+        "vehicle": ["Ritually defiling a sacred object or place", "cultic impurity", "religious/cultic"],
+        "ground": ["Sin breeds impurity and makes a holy gift unfit for God’s presence", "polluting effect of wrongdoing", "moral/religious"],
+        "posture": ["Depicts their behavior as a desecration of something sacred", "indignant stance", "prophetic"],
+        "explanation": "The land given by God is portrayed as a holy object that can be ritually ‘defiled’ by Israel’s conduct, personifying the land as a cultic entity.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנַחֲלָתִ֥י שַׂמְתֶּ֖ם לְתוֹעֵבָֽה",
+        "english_text": "You made My possession (inheritance) abhorrent",
+        "target": ["The people/land allotted by God to Himself", "Israel in its land", "religious/historical"],
+        "vehicle": ["An 'inheritance' or allotted property", "legal share/possession", "legal/social"],
+        "ground": ["What belongs to someone in a special way and represents their interest and honor", "personal stake and value", "social/legal"],
+        "posture": ["Highlights that they have turned God’s own cherished allotment into something detestable", "accusatory stance", "prophetic"],
+        "explanation": "‘My inheritance’ stands metonymically for the people/land that are God’s special property, now treated as abominable.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 2:8",
+    "deliberation": "Three key figurative expressions: 'shepherds' for political leaders, 'holders of the Torah' as metonymy for teachers/jurists, and 'went after what profits not' as an idiomatic metaphor for pursuing useless idols.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהָרֹעִ֖ים פָּ֣שְׁעוּ בִ֑י",
+        "english_text": "And the rulers (shepherds) rebelled against Me",
+        "target": ["Kings and political leaders of Israel/Judah", "national leadership", "social/political"],
+        "vehicle": ["Shepherds who care for a flock", "pastoral caregiver", "agrarian/social"],
+        "ground": ["Responsibility to guide, protect, and provide for the people", "care and oversight", "moral/social"],
+        "posture": ["Criticizes leaders for failing in a pastoral duty toward God’s flock", "condemnatory stance", "prophetic"],
+        "explanation": "Political rulers are metaphorically called ‘shepherds,’ highlighting their duty to care for the people as a flock.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְתֹפְשֵׂ֤י הַתּוֹרָה֙ לֹ֣א יְדָע֔וּנִי",
+        "english_text": "The guardians (holders) of the Teaching ignored Me",
+        "target": ["Priests/scribes responsible for instruction", "Torah specialists", "religious/institutional"],
+        "vehicle": ["Those who 'grasp' or 'hold' Torah", "holders of a scroll or body of law", "textual/legal"],
+        "ground": ["Expert custodianship implying knowledge and responsibility", "possession implying authority", "social/professional"],
+        "posture": ["Ironically contrasts their formal role as Torah-keepers with their failure to know God", "critical stance", "prophetic"],
+        "explanation": "‘Holders of the Torah’ is a metonymic idiom for those entrusted with its teaching and application.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַחֲרֵ֥י לֹֽא־יוֹעִ֖לוּ הָלָֽכוּ",
+        "english_text": "and followed what can do no good",
+        "target": ["Idols and futile objects of trust", "false objects of reliance", "religious/political"],
+        "vehicle": ["Going behind something as a follower", "pursuing a leader or guide", "social/kinetic"],
+        "ground": ["Wholehearted pursuit and loyalty to a guide, though here to useless things", "direction-determining allegiance", "moral/relational"],
+        "posture": ["Mocks the leaders for earnestly pursuing what is intrinsically useless", "derisive stance", "polemical"],
+        "explanation": "Israel’s leaders are said to ‘go after’ things that do not profit, an idiomatic metaphor for devoting themselves to worthless idols and alliances.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 2:9",
+    "deliberation": "God says, 'I will contend (ariv) with you,' invoking lawsuit language with God as litigant. This is a legal metaphor for covenant prosecution, though phrased in normal forensic terms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "עֹ֛ד אָרִ֥יב אִתְּכֶ֖ם",
+        "english_text": "I will go on accusing/contending with you",
+        "target": ["God’s covenantal response to Israel’s unfaithfulness", "divine judgment process", "religious/theological"],
+        "vehicle": ["A human party prosecuting a lawsuit", "forensic contention in court", "legal/social"],
+        "ground": ["Presentation of charges, demand for justice, formal dispute resolution", "structured accountability", "moral/legal"],
+        "posture": ["Frames the relationship as a legal case that Israel is losing", "judicial stance", "forensic/prophetic"],
+        "explanation": "God depicts Himself as a litigant prosecuting Israel in a covenant lawsuit, a legal metaphor that personifies divine judgment in human judicial terms.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 2:10",
+    "deliberation": "Instruction to look to Kittim and Kedar is geographic and literal, serving rhetorical comparison but not itself metaphorical. No clear figurative expressions beyond normal rhetoric.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 2:11",
+    "deliberation": "Key phrase: 'My people has exchanged its glory (kevodo) for what does not profit.' 'Glory' functions as a metonymy for God Himself, and the 'exchange' imagery evokes commercial metaphor but is lexical. I treat 'glory' as metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְעַמִּ֛י הֵמִ֥יר כְּבוֹד֖וֹ בְּל֥וֹא יוֹעִֽיל",
+        "english_text": "But My people has exchanged its glory for what can do no good.",
+        "target": ["The true God whom Israel possesses in covenant", "Israel’s relationship to YHWH", "religious/theological"],
+        "vehicle": ["‘Glory’ (kavod) as a designation of God", "honor/majesty as a name", "evaluative/religious"],
+        "ground": ["God is the ultimate source of honor and splendor for His people", "gloriousness as defining attribute", "theological"],
+        "posture": ["Highlights the folly of trading the truly glorious God for worthless idols", "indignant, incredulous stance", "polemical"],
+        "explanation": "‘Their glory’ is a metonymy for God Himself; the people are said to have exchanged the living God for useless non-gods.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 2:12",
+    "deliberation": "The heavens are summoned to react emotionally ('be appalled, shudder, be very desolate'). This clearly personifies the heavens as witnesses in a cosmic courtroom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "שֹׁ֥מּוּ שָׁמַ֖יִם עַל־זֹ֑את וְשַׂעֲר֛וּ חׇרְב֥וּ מְאֹ֖ד",
+        "english_text": "Be appalled, O heavens, at this; be horrified, utterly dazed!",
+        "target": ["The magnitude of Israel’s apostasy", "the outrageousness of their behavior", "religious/moral"],
+        "vehicle": ["The heavens reacting in shock like sentient observers", "cosmic witnesses in a trial", "cosmic/legal"],
+        "ground": ["If even inanimate heavens should be stunned, the act is exceedingly shocking", "extreme moral offense", "evaluative"],
+        "posture": ["Emphasizes the enormity of Israel’s sin by calling the whole cosmos to react", "heightening stance", "rhetorical/forensic"],
+        "explanation": "Heavens are personified as courtroom witnesses who can ‘be appalled’ and ‘shudder,’ underscoring the cosmic scandal of Israel’s behavior.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 2:13",
+    "deliberation": "Two core metaphors: God as 'fount of living waters' and the people’s alternative sources (idols/political trusts) as 'broken cisterns that cannot hold water.' Both are sustained, explicit metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֹתִ֨י עָזְב֜וּ מְק֣וֹר מַ֣יִם חַיִּ֗ים",
+        "english_text": "They have forsaken Me, the Fount of living waters",
+        "target": ["God’s role as life-giver and sustainer", "divine provision and presence", "religious/theological"],
+        "vehicle": ["A spring/fountain of living (flowing) water", "perennial water source", "natural"],
+        "ground": ["Continuous, life-giving, refreshing, reliable supply", "sustaining and satisfying qualities", "experiential/spiritual"],
+        "posture": ["Presents reliance on God as the only truly life-giving option", "positive, invitational stance", "theological"],
+        "explanation": "God is metaphorically depicted as a spring of fresh, living water, highlighting His role as the only true source of spiritual life.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לַחְצֹ֤ב לָהֶם֙ בֹּאר֔וֹת בֹּארֹת֙ נִשְׁבָּרִ֔ים אֲשֶׁ֥ר לֹֽא־יָכִ֖לוּ הַמָּֽיִם",
+        "english_text": "And hewed out for themselves cisterns, broken cisterns, that cannot even hold water",
+        "target": ["Idols and human political/military schemes", "false sources of security", "religious/political"],
+        "vehicle": ["Broken cisterns that cannot retain water", "defective water storage pits", "material/technological"],
+        "ground": ["Labor-intensive yet useless, fail at the crucial moment, unable to sustain life", "futility and unreliability", "pragmatic/evaluative"],
+        "posture": ["Ridicules the alternative trusts as structurally incapable of giving life", "derisive stance", "polemical"],
+        "explanation": "Israel’s substitutes for God are portrayed as cracked cisterns: costly to make yet incapable of holding the water they are meant to provide.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 2:14",
+    "deliberation": "Rhetorical questions about Israel as a slave/born-in-house servant and being for plunder. These are literal socio-legal categories applied rhetorically; no distinct metaphor beyond normal usage.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 2:15",
+    "deliberation": "Foreign invaders are described as 'lions' roaring over Israel. This is a standard predator metaphor for attacking nations.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָלָיו֙ יִשְׁאֲג֣וּ כְפִרִ֔ים נָתְנ֖וּ קוֹלָ֑ם",
+        "english_text": "Lions have roared over him, have raised their cries.",
+        "target": ["Conquering powers attacking Israel", "enemy nations/armies", "historical/political"],
+        "vehicle": ["Young lions roaring over prey", "predatory beasts", "animal/natural"],
+        "ground": ["Ferocity, dominance, terrifying power over a helpless victim", "violent aggression", "emotive/moral"],
+        "posture": ["Presents Israel as prey and the invaders as savage predators", "lamenting and accusatory stance", "prophetic"],
+        "explanation": "The invading nations are metaphorically portrayed as young lions roaring triumphantly over their prey (Israel).",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 2:16",
+    "deliberation": "Expression 'they will lay bare your head' (or strike/shave the crown) from Egyptian cities Noph and Tahpanhes is an idiom for humiliation and injury, using the head as focal point.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יִרְע֖וּךְ קׇדְקֹֽד",
+        "english_text": "will lay bare your head (strike the crown of your head)",
+        "target": ["National disgrace and injury inflicted by Egypt", "humiliation of Judah", "historical/political"],
+        "vehicle": ["Exposed/struck crown of the head", "head as the most vulnerable/honored part", "bodily"],
+        "ground": ["Public humiliation, vulnerability, and defeat", "stripping of honor and protection", "social/emotive"],
+        "posture": ["Warns that dependence on Egypt will end in shameful wounding", "warning stance", "prophetic"],
+        "explanation": "The Egyptians are said to treat Judah’s ‘crown of the head’ harshly, an idiomatic metaphor for deep humiliation and harm.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 2:17",
+    "deliberation": "Highlights self-inflicted harm for forsaking YHWH 'who led you in the way.' The 'way' is both literal exodus path and a standard path metaphor for life/guidance. I treat 'leading in the way' as a guidance metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּעֵ֖ת מוֹלִכֵ֥ךְ בַּדָּֽרֶךְ",
+        "english_text": "Who led you in the way",
+        "target": ["God’s ongoing moral and providential guidance of Israel", "divine guidance", "religious/theological"],
+        "vehicle": ["Leading someone along a road or path", "travel guidance", "spatial/experiential"],
+        "ground": ["Showing the right route, protecting from danger, ensuring arrival", "direction-giving and care", "moral/practical"],
+        "posture": ["Underscores the folly of abandoning a reliable guide", "admonitory stance", "prophetic"],
+        "explanation": "God’s comprehensive guidance is portrayed as leading Israel along a road, using the path metaphor common for moral and spiritual direction.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 2:18",
+    "deliberation": "Going to Egypt/Assyria 'to drink the waters' of their rivers is metaphorical for seeking political help/alliance and sustenance from them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מַה־לָּךְ֙ לְדֶ֣רֶךְ מִצְרַ֔יִם לִשְׁתּ֖וֹת מֵ֣י שִׁח֑וֹר וּמַה־לָּךְ֙ לְדֶ֣רֶךְ אַשּׁ֔וּר לִשְׁתּ֖וֹת מֵ֥י נָהָֽר",
+        "english_text": "What is the good of your going to Egypt to drink the waters of the Nile? And ... to Assyria to drink the waters of the Euphrates?",
+        "target": ["Judah’s search for security through foreign alliances", "political dependence", "political/historical"],
+        "vehicle": ["Traveling to drink foreign river water", "sustenance from distant rivers", "natural/political"],
+        "ground": ["Seeking life-sustaining resources and security from another source, becoming dependent on it", "external nourishment/support", "pragmatic/political"],
+        "posture": ["Derides reliance on foreign powers as misplaced thirst that should be quenched in God", "critical stance", "prophetic"],
+        "explanation": "Pursuing Egyptian and Assyrian help is portrayed as going to drink their river waters, a metaphor for seeking life and security from them.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 2:19",
+    "deliberation": "Evil and backsliding are said to 'discipline' and 'reprove' the people—clear personification of abstract moral states as teachers/punishers.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תְּיַסְּרֵ֣ךְ רָעָתֵ֗ךְ וּמְשֻׁבוֹתַ֙יִךְ֙ תּֽוֹכִחֻ֔ךְ",
+        "english_text": "Let your misfortune (evil) reprove you, let your afflictions (backslidings) rebuke you",
+        "target": ["The consequences of Israel’s sin", "experience of judgment", "moral/historical"],
+        "vehicle": ["A disciplinarian or teacher who rebukes a student", "corrective instructor", "social/pedagogical"],
+        "ground": ["Painful experience serves as instruction and proof of wrongdoing", "learning through consequences", "moral/experiential"],
+        "posture": ["Invites them to read their suffering as moral instruction rather than accident", "didactic stance", "prophetic"],
+        "explanation": "Their own evil and apostasies are personified as agents that discipline and rebuke them, framing judgment as instruction.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 2:20",
+    "deliberation": "Two strong metaphors: breaking the 'yoke' and tether-cords is a slavery/service metaphor for rejecting God’s rule; and reclining as a whore on every high hill and under every green tree is an adultery/prostitution image for idolatrous worship.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שָׁבַ֣רְתִּי עֻלֵּ֗ךְ נִתַּ֙קְתִּי֙ מוֹסְרוֹתַ֔יִךְ וַתֹּאמְרִ֖י לֹ֣א אֶעֱב֑וֹר",
+        "english_text": "long ago you broke your yoke, tore off your yoke-bands, and said, 'I will not serve/transgress'",
+        "target": ["Israel’s refusal of covenant obedience to God", "rejection of divine authority", "religious/theological"],
+        "vehicle": ["An animal or slave throwing off a yoke and bonds", "beast of burden/service under a yoke", "agrarian/social"],
+        "ground": ["Casting off imposed service and constraint, seeking autonomy", "rebellion against rightful control", "moral/social"],
+        "posture": ["Depicts their disobedience as deliberate rebellion against rightful, liberating rule", "condemnatory stance", "prophetic"],
+        "explanation": "Israel is likened to a yoked animal or servant that violently throws off its yoke, symbolizing rejection of God’s service.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֣י עַֽל־כׇּל־גִּבְעָ֞ה גְּבֹהָ֗ה וְתַ֙חַת֙ כׇּל־עֵ֣ץ רַעֲנָ֔ן אַ֖תְּ צֹעָ֥ה זֹנָֽה",
+        "english_text": "On every high hill and under every verdant tree, you recline as a whore",
+        "target": ["Israel’s idolatrous worship at high places", "spiritual apostasy", "religious/theological"],
+        "vehicle": ["A prostitute spreading herself in public places", "sexual promiscuity", "sexual/social"],
+        "ground": ["Unfaithful, indiscriminate giving of oneself to many partners", "betrayal of exclusive covenant bond", "moral/relational"],
+        "posture": ["Denounces idolatry as shameless covenant infidelity", "shaming, condemnatory stance", "prophetic"],
+        "explanation": "Israel’s participation in pagan worship is portrayed as a woman prostituting herself everywhere, equating idolatry with marital infidelity.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 2:21",
+    "deliberation": "Extended vineyard metaphor: Israel planted as a choice vine from true seed, but turned into a degenerate, foreign vine. One coherent metaphor of cultivation gone wrong.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נְטַעְתִּ֣יךְ שׂוֹרֵ֔ק כֻּלֹּ֖ה זֶ֣רַע אֱמֶ֑ת וְאֵיךְ֙ נֶהְפַּ֣כְתְּ לִ֔י סוּרֵ֖י הַגֶּ֥פֶן נׇכְרִיָּֽה",
+        "english_text": "I planted you with noble vines, all with choicest seed; alas, I find you changed into a base, an alien vine!",
+        "target": ["The moral and spiritual character of Israel", "the nation’s covenant quality", "religious/moral"],
+        "vehicle": ["A carefully planted choice vine that degenerates into a wild, foreign species", "vineyard cultivation", "agrarian"],
+        "ground": ["Initial investment and high quality contrasted with later corruption and foreignness", "betrayal of origin and purpose", "evaluative/moral"],
+        "posture": ["Expresses shock and disappointment at Israel’s degeneration", "lamenting yet accusatory stance", "prophetic"],
+        "explanation": "Israel is compared to a choice vine that has inexplicably become a degenerate foreign vine, a metaphor for their moral and religious corruption.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 2:22",
+    "deliberation": "Language of washing with natron/lye but guilt remaining 'stained/engraved' before God. This clearly depicts sin as an indelible stain that washing cannot remove.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֤י אִם־תְּכַבְּסִי֙ בַּנֶּ֔תֶר וְתַרְבִּי־לָ֖ךְ בֹּרִ֑ית נִכְתָּ֤ם עֲוֺנֵךְ֙ לְפָנַ֔י",
+        "english_text": "Though you wash with natron and use much lye, your guilt is ingrained before Me",
+        "target": ["The people’s moral guilt", "state of sin", "moral/religious"],
+        "vehicle": ["A stain that persists despite strong cleansing agents", "indelible marking", "material/ritual"],
+        "ground": ["Sin leaves a deep, visible mark that human efforts cannot erase", "stubbornness and visibility of guilt", "moral/perceptual"],
+        "posture": ["Denies the adequacy of superficial or self-devised cleansings", "exposing, critical stance", "prophetic"],
+        "explanation": "Guilt is portrayed as an ingrained stain that even caustic cleansers cannot remove, stressing its depth and God’s awareness.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 2:23",
+    "deliberation": "After denying defilement, Judah is told to look at her ways, then compared explicitly to a 'lustful she-camel, restlessly running about.' This is a vivid simile of restless, driven desire.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בִּכְרָ֥ה קַלָּ֖ה מְשָׂרֶ֥כֶת דְּרָכֶֽיהָ",
+        "english_text": "Like a lustful she-camel, restlessly running about",
+        "target": ["Judah’s frantic pursuit of other gods/lovers", "spiritual infidelity", "religious/moral"],
+        "vehicle": ["A young female camel in heat, twisting her ways", "restless, heat-driven animal", "animal/natural"],
+        "ground": ["Uncontrolled, erratic movements driven by sexual desire", "compulsive pursuit without restraint", "psychological/moral"],
+        "posture": ["Strongly shames their behavior as animalistic and uncontrolled", "denunciatory stance", "prophetic"],
+        "explanation": "Judah’s idolatrous pursuits are compared to a lust-driven she-camel running in tangled paths, highlighting frantic, uncontrolled desire.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 2:24",
+    "deliberation": "Continues the animal-heat imagery, now describing a 'wild ass used to the desert' sniffing the wind in her passion, none can restrain her. This is a metaphor (without explicit 'like') of unrestrained lustful pursuit.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פֶּ֣רֶה לִמֻּ֣ד מִדְבָּ֗ר בְּאַוַּ֤ת נַפְשָׁהּ֙ שָׁאֲפָ֣ה ר֔וּחַ תַּאֲנָתָ֖הּ מִ֣י יְשִׁיבֶ֑נָּה",
+        "english_text": "A wild ass used to the desert, snuffing the wind in her eagerness; whose passion none can restrain",
+        "target": ["Judah’s unrestrained drive for illicit unions (idolatry/alliances)", "spiritual/moral compulsion", "religious/political"],
+        "vehicle": ["A wild female donkey in heat in the desert, sniffing the wind and unstoppable", "untamed heat-driven animal", "animal/natural"],
+        "ground": ["Untamed, compulsive, and unrestrainable pursuit of desire", "wildness and lack of self-control", "moral/psychological"],
+        "posture": ["Intensifies the shaming portrayal of Judah’s pursuits as beyond rational control", "severe, accusatory stance", "prophetic"],
+        "explanation": "Judah’s behavior is depicted as that of a wild ass in heat whose passion cannot be turned back, a metaphor for uncontrollable, degrading desire.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 2:25",
+    "deliberation": "Two images: 'withhold your foot from going barefoot and your throat from thirst'—a bodily metaphor/idiom for ceasing the exhausting chase after lovers; and 'I have loved strangers, after them I will go' continues the adultery/lovers metaphor for idols/foreign powers.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִנְעִ֤י רַגְלֵךְ֙ מִיָּחֵ֔ף וּגְרוֹנֵ֖ךְ מִצִּמְאָ֑ה",
+        "english_text": "Save your foot from going bare, and your throat from thirst",
+        "target": ["Judah’s strenuous pursuit of illicit alliances/idols", "self-destructive chasing", "religious/political"],
+        "vehicle": ["A traveler running until barefoot and parched", "exhausting physical journey", "bodily/experiential"],
+        "ground": ["Costly exertion leading to exhaustion and pain", "wasteful overexertion", "pragmatic/moral"],
+        "posture": ["Pleads for them to stop their self-harming chase", "admonitory stance", "prophetic"],
+        "explanation": "Their political-spiritual pursuits are pictured as running until the feet are bare and the throat is thirsty, urging them to cease this exhausting, futile course.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָהַ֥בְתִּי זָרִ֖ים וְאַחֲרֵיהֶ֥ם אֵלֵֽךְ",
+        "english_text": "No, I love the strangers, and after them I must go",
+        "target": ["Attachment to foreign gods/powers", "idolatrous/political infatuation", "religious/political"],
+        "vehicle": ["A lover passionately attached to foreign partners and chasing them", "romantic/marital pursuit", "family/relational"],
+        "ground": ["Emotionally driven attachment leading to active pursuit, despite warnings", "infatuated unfaithfulness", "psychological/moral"],
+        "posture": ["Highlights stubborn, self-confessed love for illegitimate partners", "exposing, ironic stance", "prophetic"],
+        "explanation": "Judah speaks as an unfaithful lover who insists on loving and pursuing ‘strangers,’ a metaphor for foreign gods or powers.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 2:26",
+    "deliberation": "Explicit simile: 'Like the shame of a thief when he is found, so is the shame of the House of Israel.' House is metonymic, but main device is simile equating their embarrassment with that of a caught thief.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כְּבֹ֤שֶׁת גַּנָּב֙ כִּ֣י יִמָּצֵ֔א כֵּ֥ן הֹבִ֖ישׁוּ בֵּ֣ית יִשְׂרָאֵ֑ל",
+        "english_text": "Like a thief chagrined when caught, so is the House of Israel chagrined",
+        "target": ["Israel’s exposed guilt and shame", "corporate humiliation", "moral/social"],
+        "vehicle": ["A thief discovered in the act and ashamed", "caught criminal", "social/legal"],
+        "ground": ["Sudden exposure of wrongdoing producing acute shame", "public disgrace and self-consciousness", "emotive/moral"],
+        "posture": ["Equates Israel’s situation with obvious criminal guilt", "condemnatory stance", "prophetic"],
+        "explanation": "The nation’s shame is compared to the shame of a thief caught in the act, making their guilt vivid and undeniable.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 2:27",
+    "deliberation": "Two central figurative moves: idols of wood/stone treated as progenitors ('you are my father,' 'you gave birth to us'); and Israel 'turning the back and not the face' to God, an idiom/metaphor for rejection.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֹמְרִ֨ים לָעֵ֜ץ אָ֣בִי אַ֗תָּה וְלָאֶ֙בֶן֙ אַ֣תְּ יְלִדְתָּ֔נוּ",
+        "english_text": "They said to wood, 'You are my father,' to stone, 'You gave birth to me'",
+        "target": ["The relationship Israel ascribes to its idols", "false religious dependence", "religious/theological"],
+        "vehicle": ["Human parents who beget and give life", "father and mother imagery", "family/biological"],
+        "ground": ["Source of existence, identity, and care", "attributed origin and dependency", "moral/religious"],
+        "posture": ["Mocks the absurdity of crediting lifeless idols with life-giving roles", "sarcastic/polemical stance", "prophetic"],
+        "explanation": "Wood and stone idols are personified and treated as parents, ridiculing Israel’s claim that these lifeless objects generated them.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּֽי־פָנ֥וּ אֵלַ֛י עֹ֖רֶף וְלֹ֣א פָנִ֑ים",
+        "english_text": "While to Me they turned their backs and not their faces",
+        "target": ["Israel’s attitude and stance toward God", "spiritual rejection", "religious/moral"],
+        "vehicle": ["Turning one’s back instead of one’s face to someone", "body orientation in social interaction", "bodily/social"],
+        "ground": ["Refusal of engagement, disrespect, and deliberate avoidance", "relational distancing", "social/moral"],
+        "posture": ["Depicts their behavior as a willful snubbing of God", "accusatory stance", "prophetic"],
+        "explanation": "Their spiritual rejection of God is portrayed as literally turning their back rather than their face to Him, an idiom for contemptuous avoidance.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 2:28",
+    "deliberation": "States 'your gods have become as many as your towns'—a likely hyperbolic way to stress proliferation of cults; and challenges idols to 'arise and save,' which is ironic since they cannot. I treat the numeric statement as hyperbole.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּ֚י מִסְפַּ֣ר עָרֶ֔יךָ הָי֥וּ אֱלֹהֶ֖יךָ יְהוּדָֽה",
+        "english_text": "For your gods have become, O Judah, as many as your towns",
+        "target": ["The extent of Judah’s idolatry", "number of cult sites/objects", "religious/social"],
+        "vehicle": ["Having a distinct god for every town", "one-to-one correspondence in number", "quantitative"],
+        "ground": ["Overwhelming proliferation and normalization of idolatry", "extreme saturation", "evaluative"],
+        "posture": ["Highlights the scandalous spread of idolatry everywhere", "shocking, condemning stance", "prophetic"],
+        "explanation": "The claim that Judah’s gods match the number of its towns is likely hyperbole to emphasize how ubiquitous idolatry has become.",
+        "confidence": 0.79
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 2:29",
+    "deliberation": "Question 'Why do you contend with Me?' reuses lawsuit imagery (rîb) as in v.9, portraying Israel as suing God though they are the guilty party. This is a legal metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לָ֥מָּה תָרִ֖יבוּ אֵלָ֑י",
+        "english_text": "Why do you call Me to account? (Why do you contend with Me?)",
+        "target": ["Israel’s complaints and disputes against God", "human challenge to divine justice", "religious/theological"],
+        "vehicle": ["Bringing a legal case or lawsuit", "forensic contention", "legal/social"],
+        "ground": ["Formal accusation against a party, demanding justification", "structured, adversarial dispute", "moral/legal"],
+        "posture": ["Exposes the perversity of the guilty party suing the wronged judge", "indignant stance", "forensic/prophetic"],
+        "explanation": "Israel’s complaints are portrayed as litigating against God in court, an ironic legal metaphor given their rebellion.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 2:30",
+    "deliberation": "Two images: 'your sword has devoured your prophets' personifies the sword as an eater; 'like a ravening lion' is an explicit simile comparing this devouring to a lion’s.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אָכְלָ֧ה חַרְבְּכֶ֛ם נְבִיאֵיכֶ֖ם",
+        "english_text": "Your sword has devoured your prophets",
+        "target": ["The killing of prophets by the people or rulers", "violent persecution of God’s messengers", "historical/religious"],
+        "vehicle": ["A sword that eats victims", "devouring mouth", "instrumental/bodily"],
+        "ground": ["Swift, lethal consumption, leaving nothing", "total destruction by violence", "experiential/moral"],
+        "posture": ["Accuses them of consuming their own spiritual guides", "severe, condemnatory stance", "prophetic"],
+        "explanation": "The instrument of killing (sword) is personified as a devourer that eats the prophets, highlighting the people’s culpability in their destruction.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּאַרְיֵ֥ה מַשְׁחִֽית",
+        "english_text": "like a ravening lion",
+        "target": ["The nature of the violence against the prophets", "ferocity of the killings", "moral/historical"],
+        "vehicle": ["A destroying lion attacking prey", "predatory beast", "animal/natural"],
+        "ground": ["Relentless, merciless tearing apart of victims", "savage, terrifying destruction", "emotive/moral"],
+        "posture": ["Intensifies the horror of their violence", "heightened accusatory stance", "prophetic"],
+        "explanation": "The devouring of the prophets is compared to a destroying lion’s attack, underlining its ferocity.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 2:31",
+    "deliberation": "God asks if He has been 'a wilderness' or 'a land of deep gloom' to Israel. These are metaphors depicting God as if He were an inhospitable, dark land, which He denies.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲמִדְבָּ֤ר הָיִ֙יתִי֙ לְיִשְׂרָאֵ֔ל אִ֛ם אֶ֥רֶץ מַאְפֵּ֖לְיָ֑ה",
+        "english_text": "Have I been like a desert to Israel, or like a land of deep gloom?",
+        "target": ["God’s dealings with Israel", "quality of divine provision", "religious/theological"],
+        "vehicle": ["A desert and a land of deep darkness", "barren and gloomy landscape", "natural/cosmic"],
+        "ground": ["Harshness, danger, lack of sustenance and light", "unwelcome, life-threatening environment", "experiential/emotive"],
+        "posture": ["Refutes any claim that life with God is harsh or joyless", "defensive yet reproving stance", "prophetic"],
+        "explanation": "God rhetorically denies having been to Israel what a desert or deeply dark land would be to travelers, i.e., a hostile, life-denying environment.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Jeremiah 2:32",
+    "deliberation": "Uses analogy: can a maiden/bride forget her ornaments? Yet My people have forgotten Me 'days without number.' Comparison between treasured adornments and God as something they should never forget.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲתִשְׁכַּ֤ח בְּתוּלָה֙ עֶדְיָ֔הּ כַּלָּ֖ה קִשֻּׁרֶ֑יהָ וְעַמִּ֣י שְׁכֵח֔וּנִי יָמִ֖ים אֵ֥ין מִסְפָּֽר",
+        "english_text": "Can a maiden forget her jewels, a bride her adornments? Yet My people have forgotten Me—days without number.",
+        "target": ["Israel’s forgetfulness of God", "neglect of covenant relationship", "religious/moral"],
+        "vehicle": ["A young woman/bride forgetting her ornaments", "valued personal adornments", "family/social"],
+        "ground": ["One does not forget what is precious and central to one’s identity", "implausibility of such forgetfulness", "emotive/evaluative"],
+        "posture": ["Expresses incredulity and grief over their prolonged neglect", "lamenting, reproachful stance", "prophetic"],
+        "explanation": "The people’s forgetfulness of God is compared to a bride forgetting her ornaments—something unthinkable—emphasizing how absurd and grievous their neglect is.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 33,
+    "reference": "Jeremiah 2:33",
+    "deliberation": "Two figurative elements: 'How well you prepare/beautify your way to seek love'—path metaphor and love as illicit alliances; and 'you have even taught wicked women your ways'—hyperbole portraying Judah as surpassing even the worst in corruption.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַה־תֵּיטִ֥בִי דַרְכֵּ֖ךְ לְבַקֵּ֣שׁ אַהֲבָ֑ה",
+        "english_text": "How skillfully you plan your way to seek out love!",
+        "target": ["Judah’s scheming to secure idolatrous/political liaisons", "strategic pursuit of illicit partners", "religious/political"],
+        "vehicle": ["Improving/adorning a path in order to find love", "beautifying a way/journey", "spatial/relational"],
+        "ground": ["Calculated self-presentation and maneuvering to attract partners", "crafty seduction and planning", "moral/social"],
+        "posture": ["Ironically comments on their expertise in pursuing forbidden loves", "sarcastic, critical stance", "prophetic"],
+        "explanation": "Their political-religious maneuvering is portrayed as artfully beautifying a path to seek lovers, merging path and love metaphors.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָכֵן֙ גַּ֣ם אֶת־הָרָע֔וֹת לִמַּ֖דְתְּ אֶת־דְּרָכָֽיִךְ",
+        "english_text": "Why, you have even taught the worst of women your ways.",
+        "target": ["The extremity of Judah’s corrupt behavior", "their moral leadership in evil", "moral/religious"],
+        "vehicle": ["Teaching evil women how to behave", "instructing the already-wicked", "social/educational"],
+        "ground": ["Going beyond the standard of evil so far as to become a teacher of it", "surpassing others in depravity", "evaluative/moral"],
+        "posture": ["Hyperbolically portrays Judah as a mentor in wickedness", "intensely critical stance", "prophetic"],
+        "explanation": "It is exaggerated that Judah has 'taught the evil women' her ways, to stress that she outdoes even the worst in corrupt practice.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 34,
+    "reference": "Jeremiah 2:34",
+    "deliberation": "States that on Judah’s 'wings/garments' is found the blood of innocent poor. Likely metaphor/metonymy: blood on clothing as visible proof of guilt rather than literal forensic detail, recalling legal imagery of bloody hands/clothes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "גַּ֤ם בִּכְנָפַ֙יִךְ֙ נִמְצְא֔וּ דַּ֛ם נַפְשׁ֥וֹת אֶבְיוֹנִ֖ים נְקִיִּ֑ים",
+        "english_text": "Moreover, on your garments is found the lifeblood of the innocent poor",
+        "target": ["Judah’s responsibility for the death of the innocent", "social injustice and violence", "moral/social"],
+        "vehicle": ["Bloodstains on the edges of a garment", "visible, incriminating stain", "bodily/legal"],
+        "ground": ["Guilt that clings visibly and cannot be hidden", "clear evidence of murder/oppression", "legal/moral"],
+        "posture": ["Openly accuses them of bloodguilt toward the poor", "forensic, condemning stance", "prophetic"],
+        "explanation": "The image of blood on the hems of garments serves as a metonymic metaphor for undeniable guilt in oppressing and killing the innocent poor.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 35,
+    "reference": "Jeremiah 2:35",
+    "deliberation": "They say, 'I have been acquitted ... I have not sinned,' but God responds by promising judgment precisely for that claim. This ironic reversal exposes their self-justification; main device is irony.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַתֹּֽאמְרִי֙ כִּ֣י נִקֵּ֔יתִי ... עַל־אׇמְרֵ֖ךְ לֹ֥א חָטָֽאתִי",
+        "english_text": "You say, 'I have been acquitted ... I have not sinned.' Lo, I will bring you to judgment for saying, 'I have not sinned.'",
+        "target": ["Judah’s self-perception and God’s evaluation", "claim of innocence vs. real guilt", "moral/religious"],
+        "vehicle": ["Legal acquittal vs. actual impending judgment", "courtroom verdict imagery", "legal"],
+        "ground": ["Claiming innocence when guilty invites, rather than avoids, condemnation", "reversal of expected outcome", "moral/logical"],
+        "posture": ["Uses irony to unmask self-deception and heighten guilt", "sarcastic yet serious stance", "prophetic"],
+        "explanation": "It is ironic that the very assertion 'I have not sinned' becomes the cause for judgment, exposing the falseness of their claimed acquittal.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 36,
+    "reference": "Jeremiah 2:36",
+    "deliberation": "Speaks of Judah 'going about greatly to change your way' and being shamed by Egypt as by Assyria. 'Way' again is conduct/policy metaphor; the change of course pictures shifting alliances as path changes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַה־תֵּזְלִ֥י מְאֹ֖ד לְשַׁנּ֣וֹת אֶת־דַּרְכֵּ֑ךְ",
+        "english_text": "How you cheapen yourself, by changing your course (your way)!",
+        "target": ["Judah’s foreign policy and religious posture", "unstable strategy and allegiance", "political/religious"],
+        "vehicle": ["Changing one’s road or way repeatedly", "wandering from path to path", "spatial/experiential"],
+        "ground": ["Inconstancy, lack of firm direction, opportunistic shifting", "restless, degrading instability", "moral/political"],
+        "posture": ["Critiques their fickle alliances as morally cheap and disreputable", "disapproving stance", "prophetic"],
+        "explanation": "Judah’s shifting alliances and loyalties are portrayed as restlessly changing one’s path, a metaphor for unstable and debasing policy.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 37,
+    "reference": "Jeremiah 2:37",
+    "deliberation": "Two figurative elements: leaving 'with your hands on your head'—an idiom for grief/captivity/shame; and 'the LORD has rejected your trusts'—'trusts' as a metonymy for the allies/objects relied on.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְיָדַ֖יִךְ עַל־רֹאשֵׁ֑ךְ",
+        "english_text": "with your hands on your head",
+        "target": ["The experience of defeat, humiliation, and grief in exile", "emotional/physical posture of the people", "historical/emotive"],
+        "vehicle": ["Gesture of placing hands on the head", "mourning/captive posture", "bodily/social"],
+        "ground": ["Visible sign of distress, shame, and helplessness", "public acknowledgement of disaster", "emotive/social"],
+        "posture": ["Predicts a state of utter humiliation", "warning, somber stance", "prophetic"],
+        "explanation": "Exiles leaving with hands on their heads is an idiomatic image for grief and shame in defeat.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּֽי־מָאַ֤ס יְהֹוָה֙ בְּמִבְטַחַ֔יִךְ",
+        "english_text": "For GOD has rejected those you trust",
+        "target": ["The foreign powers/strategies Judah relies on", "objects of misplaced confidence", "political/religious"],
+        "vehicle": ["'Trusts' (things relied upon)", "abstracted objects of confidence", "psychological/social"],
+        "ground": ["Named by the function they serve (what is trusted in)", "relationship-defined designation", "pragmatic"],
+        "posture": ["Declares God’s disapproval and nullification of their chosen supports", "judgmental stance", "prophetic"],
+        "explanation": "The term 'your trusts' stands metonymically for the actual allies or devices they rely upon, which God rejects.",
+        "confidence": 0.82
+      }
+    ]
+  }
+]

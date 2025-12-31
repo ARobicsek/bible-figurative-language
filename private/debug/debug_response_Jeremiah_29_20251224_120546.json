@@ -1,0 +1,591 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 29:1",
+    "deliberation": "The verse is a historical heading describing Jeremiah’s letter and its addressees. No comparisons, idioms, personifications, or other non‑literal uses beyond normal prose. All terms (elders, priests, prophets, exile, Jerusalem, Babylon) are straightforward and literal.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 29:2",
+    "deliberation": "This verse simply lists groups of people who went into exile (king, queen mother, eunuchs, officials, artisans, smiths). No metaphor, simile, idiom, or personification is used; the language is descriptive and literal.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 29:3",
+    "deliberation": "The narrative explains the transmission of the letter. The only potentially figurative element is the idiom בְּיַד (\"by the hand of\"), which uses a body part metonymically for agency/mediation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּיַד אֶלְעָשָׂה בֶן־שָׁפָן וּגְמַרְיָה בֶּן־חִלְקִיָּה",
+        "english_text": "[The letter was sent] through Elasah son of Shaphan and Gemariah son of Hilkiah",
+        "target": ["the transmission/mediation of Jeremiah's letter", "means of communication", "social/communicative domain"],
+        "vehicle": ["\"hand\" of Elasah and Gemariah", "body-part as instrument", "physical/bodily domain"],
+        "ground": ["agency and instrumentality in carrying something", "instrument/agent relationship", "cognitive/conceptual domain"],
+        "posture": ["prophetic narrator’s conventional phrasing", "stylistic idiom", "linguistic/conventional domain"],
+        "explanation": "The phrase \"by the hand of\" uses \"hand\" metonymically as an idiom for the agency of the messengers through whom the letter is delivered.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 29:4",
+    "deliberation": "The verse is a divine speech introduction. The epithet \"YHWH of Hosts\" (יְהוָה צְבָאוֹת) is a fixed, metaphorically loaded title that pictures God as commander over vast 'hosts' (armies/celestial or earthly), functioning metonymically to highlight His power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יְהֹוָה צְבָאוֹת",
+        "english_text": "GOD of Hosts",
+        "target": ["YHWH as sovereign over all powers", "divine kingship/might", "theological domain"],
+        "vehicle": ["\"hosts\" (armies/companies)", "military forces", "military/cosmic domain"],
+        "ground": ["authority to command, martial power, vast resources", "command-and-control relationship", "social-political domain"],
+        "posture": ["prophetic honorific for God", "reverent exaltation", "religious-discursive domain"],
+        "explanation": "The title \"YHWH of Hosts\" metaphorically and metonymically presents God as the commander of vast armies (heavenly or earthly), emphasizing His supreme power.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 29:5",
+    "deliberation": "On the surface, the commands to build houses, dwell, plant gardens, and eat their fruit are literal. Collectively, however, they function synecdochically as a compact picture of settled, long‑term life in exile, representing the broader idea of establishing stable existence there.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּנ֥וּ בָתִּ֖ים וְשֵׁ֑בוּ וְנִטְע֣וּ גַנּ֔וֹת וְאִכְל֖וּ אֶת־פִּרְיָֽן",
+        "english_text": "Build houses and live in them, plant gardens and eat their fruit.",
+        "target": ["the exiles’ entire settled life in Babylon", "long-term stability and flourishing", "social/exilic domain"],
+        "vehicle": ["houses, gardens, and their fruit", "domestic and agricultural activities", "everyday livelihood domain"],
+        "ground": ["permanence, rootedness, productivity in one place", "part-for-whole representation of normal life", "cognitive/conceptual domain"],
+        "posture": ["divine encouragement to accept long exile", "pastoral, corrective instruction", "prophetic-exilic domain"],
+        "explanation": "The concrete acts of building houses and planting gardens function as a synecdoche for fully settling and establishing long‑term life in Babylon, rather than expecting a quick return.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 29:6",
+    "deliberation": "Commands about taking wives, having children, and multiplying are literal instructions, echoing creation language but without a clear, discrete metaphor, idiom, or personification beyond that. The emphasis is on actual procreation, not a figurative increase.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 29:7",
+    "deliberation": "The central phrase is \"seek the welfare of the city\" and \"in its welfare you will have welfare.\" Here \"city\" functions metonymically for its inhabitants/structures, and \"welfare/shalom\" is a holistic concept but used straightforwardly. The main figurative device is the city-as-people metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שְׁלוֹם הָעִיר אֲשֶׁר הִגְלֵיתִי אֶתְכֶם שָׁמָּה ... כִּי בִשְׁלוֹמָהּ יִהְיֶה לָכֶם שָׁלוֹם",
+        "english_text": "the welfare of the city to which I have exiled you ... for in its prosperity you shall prosper.",
+        "target": ["the wellbeing of Babylon’s inhabitants and systems", "social/political condition of the host society", "socio-political domain"],
+        "vehicle": ["\"the city\" (הָעִיר)", "geographical-political entity", "spatial/political domain"],
+        "ground": ["a city stands for the community that lives and functions within it", "container-for-contents relation", "cognitive/conceptual domain"],
+        "posture": ["divine directive reorienting the exiles' attitude to Babylon", "surprising call to solidarity", "prophetic-instructional domain"],
+        "explanation": "The term \"city\" is used metonymically to refer not to the walls and buildings but to the entire community and its welfare, on which the exiles’ own shalom depends.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 29:8",
+    "deliberation": "The verse warns against deception by prophets, diviners, and self‑generated dreams. The expressions are straightforward; \"dreams they dream\" is not a special idiom beyond the literal act of dreaming. No clear metaphor, simile, or idiom stands out.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 29:9",
+    "deliberation": "The statement about false prophecy is direct. 'Prophesy falsely in My name' is literal description of their activity. No figurative comparisons, idioms, or personifications appear.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 29:10",
+    "deliberation": "The verse speaks of seventy years and returning to the place; these are temporal and spatial statements. The notable figurative element is the verb פָּקַד (\"I will visit/take note of you\"), which in this covenant context is an idiom for decisive divine intervention, not physical visiting.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶפְקֹד אֶתְכֶם",
+        "english_text": "I will take note of you / I will visit you",
+        "target": ["YHWH’s decisive redemptive action for the exiles", "divine intervention in history", "theological/redemptive domain"],
+        "vehicle": ["\"visit\" language", "social visitation", "everyday relational domain"],
+        "ground": ["a personal visit stands for purposeful engagement and action toward someone", "event-for-intervention relation", "cognitive/conceptual domain"],
+        "posture": ["covenantal reassurance", "promissory idiom", "prophetic-theological domain"],
+        "explanation": "The verb פקד in this context is an idiom using \"visiting\" metonymically for God’s concrete intervention on their behalf, not a literal physical visit.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 29:11",
+    "deliberation": "This verse attributes \"thoughts/plans\" to God and speaks of a \"future and hope.\" These are standard anthropomorphic and abstract terms within biblical theology, but no sharply delimited metaphor, simile, or idiom is formed beyond conventional God‑as‑planner language.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 29:12",
+    "deliberation": "Prayer language ('call,' 'come,' 'pray,' 'I will listen') is standard and not used in a strikingly figurative way here. It describes actual petition and divine response without a distinct metaphor or idiom that stands out.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 29:13",
+    "deliberation": "Two conceptual metaphors are present: (1) seeking and finding God, and (2) \"with all your heart\" as an idiom. The clearest discrete figurative expression is 'with all your heart,' where 'heart' stands metonymically for the inner self/whole person, functioning as an idiom for total commitment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּכׇל־לְבַבְכֶם",
+        "english_text": "wholeheartedly / with all your heart",
+        "target": ["the exiles’ entire inner commitment and will", "human inner life/personhood", "psychological/spiritual domain"],
+        "vehicle": ["\"heart\" (לֵבָב)", "central bodily organ", "physical/bodily domain"],
+        "ground": ["the heart as the perceived center of thought, will, and emotion stands for the whole inner person", "part-for-whole mapping", "cognitive/conceptual domain"],
+        "posture": ["call to undivided devotion", "intensifying exhortation", "prophetic-exhortative domain"],
+        "explanation": "The phrase \"with all your heart\" is an idiomatic metaphor where the heart stands metonymically for the entire inner person, expressing total, undivided seeking of God.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 29:14",
+    "deliberation": "The verse describes gathering from nations and returning—primarily literal restoration imagery. The phrase \"restore your fortunes\" / \"turn your captivity\" (וְשַׁבְתִּי אֶת־שְׁבוּתְכֶם/שביתכם) is a well-known Hebrew idiom for reversing a people’s condition, not literally handing back physical goods or prisoners.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשַׁבְתִּי אֶת־[שְׁבוּתְכֶם] (שביתכם)",
+        "english_text": "I will restore your fortunes / I will restore your captivity",
+        "target": ["the exiles’ overall changed situation for the better", "national restoration", "historical/social domain"],
+        "vehicle": ["\"turning\" or \"restoring\" captivity/fortune", "reversal of a captive state", "political/status domain"],
+        "ground": ["reversing captivity symbolizes a complete change from misfortune to wellbeing", "state-change mapping", "cognitive/conceptual domain"],
+        "posture": ["covenantal promise formula", "assurance of comprehensive reversal", "prophetic-promissory domain"],
+        "explanation": "The idiom \"restore your fortunes\" (literally, \"turn your captivity\") uses captivity/fortune metonymically for the people’s overall condition, promising a total reversal of their state.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 29:15",
+    "deliberation": "The people claim that YHWH has \"raised up\" prophets for them. The verb הֵקִים (\"raise up\") used with \"prophets\" is an idiom/metaphor for appointing or bringing into office, not literal physical lifting.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵקִים לָ֧נוּ יְהֹוָ֛ה נְבִאִ֖ים",
+        "english_text": "GOD has raised up prophets for us",
+        "target": ["the appointment/commissioning of prophets", "installation into prophetic office", "religious-institutional domain"],
+        "vehicle": ["\"raising up\" someone", "vertical lifting/causing to stand", "physical/spatial domain"],
+        "ground": ["to cause someone to stand up evokes bringing them into prominence or function", "activation/elevation mapping", "cognitive/conceptual domain"],
+        "posture": ["popular interpretation of events", "assertive, but mistaken, claim", "social-discursive domain"],
+        "explanation": "The phrase \"raise up prophets\" metaphorically and idiomatically describes God’s appointing and commissioning of prophets, using physical \"raising\" as an image for installing into office.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 29:16",
+    "deliberation": "The verse addresses the king \"who sits on the throne of David\" and the people in the city. The key figurative element is \"throne of David\" as a metonym/metaphor for the Davidic kingship and dynasty, not just the physical chair.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַמֶּ֙לֶךְ֙ הַיּוֹשֵׁב֙ אֶל־כִּסֵּ֣א דָוִד",
+        "english_text": "the king who sits on the throne of David",
+        "target": ["the current Davidic kingship and royal authority", "institution of the Davidic monarchy", "political/theological domain"],
+        "vehicle": ["\"throne of David\"", "royal seat associated with David", "royal-symbolic domain"],
+        "ground": ["a throne symbolizes and stands for rule, authority, and dynastic continuity", "object-for-institution relation", "cognitive/conceptual domain"],
+        "posture": ["prophetic address invoking covenantal kingship", "reminder of dynastic responsibilities", "prophetic-political domain"],
+        "explanation": "The \"throne of David\" uses the physical royal seat as a metonymic and metaphorical expression for the Davidic kingship and its authority.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 29:17",
+    "deliberation": "Two figurative elements stand out: (1) the triad \"sword, famine, and pestilence\" as a stock metonymic formula for comprehensive covenant judgment; (2) the explicit simile likening the people to loathsome figs that cannot be eaten.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַחֶ֖רֶב אֶת־הָרָעָ֣ב וְאֶת־הַדָּ֑בֶר",
+        "english_text": "sword, famine, and pestilence",
+        "target": ["YHWH’s comprehensive judgment on the remaining population", "national calamity and defeat", "historical/theological domain"],
+        "vehicle": ["sword, famine, pestilence", "warfare and disaster agents", "military/natural domain"],
+        "ground": ["these are emblematic tools by which a people is destroyed or disciplined", "instrument-for-effect mapping", "cognitive/conceptual domain"],
+        "posture": ["covenant-curse formula", "solemn threat", "prophetic-judicial domain"],
+        "explanation": "The triad \"sword, famine, pestilence\" is a stereotyped formula functioning metonymically for thoroughgoing covenant judgment upon a nation.",
+        "confidence": 0.91
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּ֣י אוֹתָ֗ם כַּתְּאֵנִים֙ הַשֹּׁ֣עָרִ֔ים אֲשֶׁ֥ר לֹא־תֵאָכַ֖לְנָה מֵרֹֽעַ",
+        "english_text": "and I will treat them as loathsome figs, so bad that they cannot be eaten.",
+        "target": ["the people remaining in Jerusalem", "morally and spiritually corrupt community", "ethical/theological domain"],
+        "vehicle": ["\"loathsome figs\" that are inedible", "rotten, spoiled fruit", "agricultural/food domain"],
+        "ground": ["disgust, uselessness, and destined disposal", "shared quality of being unfit for consumption/acceptance", "cognitive/conceptual domain"],
+        "posture": ["divine evaluation of the remnant", "vivid condemnatory imagery", "prophetic-judicial domain"],
+        "explanation": "The people are explicitly compared to repulsive figs that cannot be eaten, a simile (and hyperbolic image) stressing their utter unacceptability and impending rejection.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 29:18",
+    "deliberation": "Again the triad \"sword, famine, pestilence\" appears as covenant-judgment metonymy. Additionally, the statement that God will \"make them a horror, an execration, a desolation, a hissing, and a reproach\" metaphorically turns the people into embodiments of these responses/conditions, a hyperbolic image of extreme disgrace.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בַּחֶ֖רֶב בָּרָעָ֣ב וּבַדָּ֑בֶר",
+        "english_text": "with the sword, with famine, and with pestilence",
+        "target": ["YHWH’s comprehensive punitive action", "national judgment", "historical/theological domain"],
+        "vehicle": ["sword, famine, pestilence", "means of destruction", "military/natural domain"],
+        "ground": ["these are representative instruments through which destruction is experienced", "instrument-for-outcome mapping", "cognitive/conceptual domain"],
+        "posture": ["intensified curse language", "legal-covenantal rhetoric", "prophetic-judicial domain"],
+        "explanation": "As in v.17, the triad functions as a stereotyped metonymic expression for full-spectrum covenant judgment.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּנְתַתִּ֨ים ... לְזַעֲוָ֜ה ... לְאָלָ֤ה וּלְשַׁמָּה֙ וְלִשְׁרֵקָ֣ה וּלְחֶרְפָּ֔ה",
+        "english_text": "and I will make them a horror ... an execration and an object of horror and hissing and scorn",
+        "target": ["the reputation and symbolic status of the judged people", "their role as a warning example", "social/moral domain"],
+        "vehicle": ["horror, execration, desolation, hissing, reproach", "extreme reactions and conditions", "emotional/social domain"],
+        "ground": ["they will so embody calamity that they become a living symbol provoking horror and mockery", "embodiment of response mapping", "cognitive/conceptual domain"],
+        "posture": ["heightened, hyperbolic warning", "rhetoric of exemplary punishment", "prophetic-judicial domain"],
+        "explanation": "The people are metaphorically made into \"a horror, an execration, a desolation, a hissing, and a reproach\"—a hyperbolic image of them as walking symbols of curse and disgrace among the nations.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 29:19",
+    "deliberation": "The key figurative phrase is the idiom \"rising early and sending\" (הַשְׁכֵּם וְשָׁלֹחַ) used of God sending prophets. It anthropomorphically pictures God as persistently getting up early to send messengers, a vivid idiom for repeated, diligent initiative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר֩ שָׁלַ֨חְתִּי אֲלֵיהֶ֜ם אֶת־עֲבָדַ֤י הַנְּבִאִים֙ הַשְׁכֵּ֣ם וְשָׁלֹ֔חַ",
+        "english_text": "when I persistently sent to them My servants, the prophets (literally, \"rising early and sending\")",
+        "target": ["God’s repeated initiatives through prophets", "divine persistence in warning", "theological/communicative domain"],
+        "vehicle": ["rising early and sending messengers", "diligent human routine", "daily-life domain"],
+        "ground": ["getting up early to send someone suggests earnestness, priority, and repetition", "habitual-effort mapping", "cognitive/conceptual domain"],
+        "posture": ["emphatic self‑defense by God", "highlighting His zeal and patience", "prophetic-apologetic domain"],
+        "explanation": "The idiom \"rising early and sending\" personifies God as a diligent human who repeatedly gets up early to send messengers, a metaphorical way of stressing His persistent warnings through the prophets.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 29:20",
+    "deliberation": "This is an exhortation formula: 'hear the word of YHWH.' The phrase is standard prophetic diction; 'word' stands for message, but this is minimal, conventional metonymy. No stronger, distinctive figurative expression stands out.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 29:21",
+    "deliberation": "The verse introduces judgment on two false prophets. The phrase \"I am giving them into the hand of Nebuchadrezzar\" (נֹתֵן אֹתָם בְּיַד) is a common idiom/metonymy where \"hand\" stands for power or control.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נֹתֵ֣ן אֹתָ֗ם בְּיַד֙ נְבֽוּכַדְרֶאצַּ֣ר מֶֽלֶךְ־בָּבֶ֔ל",
+        "english_text": "I am going to deliver them into the hands of King Nebuchadrezzar of Babylon",
+        "target": ["their being subjected to Nebuchadrezzar’s power", "political/military control", "political/military domain"],
+        "vehicle": ["\"hand\" of Nebuchadrezzar", "controlling hand as seat of power", "bodily/agency domain"],
+        "ground": ["the hand is used for grasping and controlling, so it stands for power over someone", "body-part-for-power mapping", "cognitive/conceptual domain"],
+        "posture": ["judicial pronouncement", "emphasis on total subjection", "prophetic-judicial domain"],
+        "explanation": "The idiom \"give into the hand\" uses \"hand\" metonymically for a person’s power and control, signifying that the false prophets will be fully subject to Nebuchadrezzar.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 29:22",
+    "deliberation": "Their fate becomes a template for a curse formula. The key figurative element is \"a curse shall be taken from them\" (וְלֻקַּח מֵהֶם קְלָלָה), where their names/events are metonymically turned into a proverbial curse expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֻקַּ֤ח מֵהֶם֙ קְלָלָ֔ה",
+        "english_text": "And the whole community of Judah in Babylonia shall use a curse derived from their fate",
+        "target": ["the use of their fate as a curse formula", "proverbialized negative example", "linguistic/social domain"],
+        "vehicle": ["\"a curse\" taken from them", "verbal malediction", "speech-act domain"],
+        "ground": ["their story becomes shorthand for an extreme, dreaded fate", "name/event-for-curse mapping", "cognitive/conceptual domain"],
+        "posture": ["prediction of proverbial notoriety", "didactic warning to hearers", "prophetic-judicial domain"],
+        "explanation": "The phrase pictures the community \"taking\" a curse from them—using their fate metonymically as the content of later curse formulas (\"May God make you like Zedekiah and Ahab\").",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 29:23",
+    "deliberation": "Their sins (adultery, false prophecy) are described literally. God's self‑description \"I am the one who knows and bears witness\" is straightforward; it attributes knowing and witnessing to God but not in a distinctive figurative expression beyond standard theology.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 29:24",
+    "deliberation": "This is a simple narrative transition introducing Shemaiah the Nehelamite. No metaphor, idiom, or personification appears; 'you shall say' is literal instruction.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 29:25",
+    "deliberation": "The verse recounts Shemaiah sending letters 'in your own name' and addresses Zephaniah and the priests. The divine title recurs, but no new distinctive figurative constructions appear beyond formulaic language.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 29:26",
+    "deliberation": "Shemaiah describes those who \"prophesy\" as \"every maniac\" (כׇּל־אִישׁ מְשֻׁגָּע וּמִתְנַבֵּא), equating prophetic behavior with madness—a hostile metaphor, arguably hyperbolic, casting genuine prophets as lunatics.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְכׇל־אִ֥ישׁ מְשֻׁגָּ֖ע וּמִתְנַבֵּ֑א",
+        "english_text": "over every maniac who wants to play the prophet",
+        "target": ["true and would‑be prophets (especially Jeremiah)", "their prophetic activity", "religious/social domain"],
+        "vehicle": ["\"maniac\" / madman", "mentally deranged person", "psychological/health domain"],
+        "ground": ["from Shemaiah’s viewpoint, prophetic behavior seems irrational or frenzied", "perceived irrationality mapping", "cognitive/conceptual domain"],
+        "posture": ["derisive polemic against Jeremiah", "delegitimizing rhetoric", "intra‑prophetic conflict domain"],
+        "explanation": "Shemaiah metaphorically labels those prophesying as \"maniacs,\" a hyperbolic comparison that equates prophetic speech with insanity to discredit Jeremiah and others.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 29:27",
+    "deliberation": "Shemaiah asks why Zephaniah has not rebuked Jeremiah. 'Jeremiah the Anathothite' and 'who prophesies to you' are literal descriptions; no figurative language is present beyond the polemical context already captured in v.26.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 29:28",
+    "deliberation": "Shemaiah reports Jeremiah’s message: 'It will be a long time. Build houses and live in them, plant gardens and eat their fruit.' As in v.5, these concrete activities function synecdochically for settling in for the long haul in Babylon.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּנ֤וּ בָתִּים֙ וְשֵׁ֔בוּ וְנִטְע֣וּ גַנּ֔וֹת וְאִכְל֖וּ אֶת־פְּרִיהֶֽן",
+        "english_text": "Build houses and live in them, plant gardens and enjoy their fruit.",
+        "target": ["the exiles’ long-term, settled existence in Babylon", "adjustment and rootedness in exile", "social/exilic domain"],
+        "vehicle": ["building houses, planting and eating from gardens", "domestic and agricultural acts", "everyday livelihood domain"],
+        "ground": ["these acts are emblematic of permanent settlement and normal life", "part-for-whole representation", "cognitive/conceptual domain"],
+        "posture": ["quoted summary of Jeremiah’s counsel", "statement provoking opposition", "prophetic-conflict domain"],
+        "explanation": "Here, as in v.5, house‑building and gardening serve as a synecdoche for fully settling into Babylonian life for a long period, rather than expecting an imminent return.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 29:29",
+    "deliberation": "Zephaniah reads the letter \"in the hearing\" (literally \"in the ears\") of Jeremiah. This is a common Hebrew way of saying someone heard, and in this narrative setting it reflects actual auditory reception, not a marked figure beyond light body‑part metonymy. No distinct figurative expression stands out.",
+    "instances": []
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 29:30",
+    "deliberation": "The formula \"the word of YHWH came to Jeremiah\" personifies the divine word as an active agent that 'comes' to the prophet. It is a standard prophetic idiom combining metonymy (word for message) and personification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַֽיְהִי֙ דְּבַר־יְהֹוָ֔ה אֶֽל־יִרְמְיָ֖הוּ",
+        "english_text": "the word of GOD came to Jeremiah",
+        "target": ["the reception of a prophetic revelation by Jeremiah", "prophetic inspiration", "theological/communicative domain"],
+        "vehicle": ["\"word\" that \"comes\"", "mobile speaking entity", "linguistic/agentive domain"],
+        "ground": ["a message is depicted as an active emissary arriving to someone", "message-as-messenger mapping", "cognitive/conceptual domain"],
+        "posture": ["formal introduction of new oracle", "authoritative framing", "prophetic-liturgical domain"],
+        "explanation": "The expression personifies the divine \"word\" as if it were an agent that can come to Jeremiah, an idiomatic way of describing prophetic revelation.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 29:31",
+    "deliberation": "The key figurative phrase is \"made you trust in a lie\" (וַיַּבְטַח אֶתְכֶם עַל־שָׁקֶר). Trust is pictured as resting 'on' something, here 'a lie,' creating a spatial metaphor of relying on a faulty foundation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיַּבְטַ֥ח אֶתְכֶ֖ם עַל־שָֽׁקֶר",
+        "english_text": "and made you false promises / made you trust in a lie",
+        "target": ["the people’s misplaced confidence in Shemaiah’s message", "act of relying on false assurances", "cognitive/faith domain"],
+        "vehicle": ["trusting \"on\" a lie as on a support", "standing or resting on something unstable", "spatial/physical domain"],
+        "ground": ["confidence is conceptualized as being supported by or resting upon something; a lie is an unreliable foundation", "support/foundation mapping", "cognitive/conceptual domain"],
+        "posture": ["divine critique of false prophecy", "exposure of deceptive security", "prophetic-judicial domain"],
+        "explanation": "The phrase uses a spatial metaphor, picturing trust as resting upon a foundation; in this case, the 'foundation' is a lie, highlighting the precariousness of their confidence.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Jeremiah 29:32",
+    "deliberation": "God declares that Shemaiah will not have a descendant \"dwelling\" among the people and that he will not \"see the good\" which God does. The latter phrase \"see the good\" (לֹא־יִרְאֶה בַטּוֹב) uses seeing metaphorically for experiencing/participating in blessing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹֽא־יִרְאֶ֥ה בַטּ֛וֹב אֲשֶׁר־אֲנִ֥י עֹשֶֽׂה־לְעַמִּ֖י",
+        "english_text": "and [he] shall not see the good things I am going to do for My people",
+        "target": ["Shemaiah’s exclusion from experiencing future blessing", "participation in national restoration", "historical/theological domain"],
+        "vehicle": ["\"seeing\" the good", "visual perception of beneficial things", "sensory/experiential domain"],
+        "ground": ["to see something is to encounter or experience it firsthand", "perception-for-experience mapping", "cognitive/conceptual domain"],
+        "posture": ["final exclusionary judgment", "denial of share in promised good", "prophetic-judicial domain"],
+        "explanation": "The idiom \"not see the good\" uses sight as a metaphor for personal experience, meaning Shemaiah will not personally partake in the blessings God will bring to His people.",
+        "confidence": 0.93
+      }
+    ]
+  }
+]

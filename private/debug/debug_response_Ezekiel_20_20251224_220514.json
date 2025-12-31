@@ -1,0 +1,1075 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 20:1",
+    "deliberation": "Checked for metaphors, idioms, personification. The narrative dating is literal. The phrase “to inquire of YHWH” is a conventional cultic idiom, since they are physically inquiring of a prophet, not literally interrogating God face to face.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לִדְרֹשׁ אֶת־יְהוָה",
+        "english_text": "to inquire of GOD",
+        "target": ["seeking a prophetic/oracular answer through Ezekiel", "religious consultation", "religious practice"],
+        "vehicle": ["inquiring of a person directly", "legal/royal petition", "social interaction"],
+        "ground": ["seeking guidance and an authoritative response", "requesting a decision", "communication"],
+        "posture": ["conventional covenant idiom for prophetic consultation", "non-ironic affirmation", "prophetic narrative"],
+        "explanation": "The elders come to Ezekiel, but the act is described as ‘inquiring of YHWH,’ using an idiom and metonymy (YHWH for His revealed will through the prophet).",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 20:2",
+    "deliberation": "Looked for personification and metonymy. The expression that the ‘word of YHWH came’ treats the divine word as an agent that moves; this standard prophetic formula is figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "And the word of GOD came to me",
+        "target": ["the prophetic message Ezekiel receives", "divine revelation", "communication"],
+        "vehicle": ["a ‘word’ that travels and arrives like a messenger", "animated agent", "personal encounter"],
+        "ground": ["initiative belongs to God; Ezekiel passively receives", "the message approaches him from outside", "authoritative address"],
+        "posture": ["prophetic formula portraying revelation as a dynamic event", "affirmative description", "prophetic discourse"],
+        "explanation": "The ‘word’ is personified as coming to Ezekiel, a metaphorical way of speaking about divine revelation and a metonymy for God’s speech.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 20:3",
+    "deliberation": "Checked ‘ben-adam,’ ‘to inquire of me,’ and ‘as I live.’ The main figurative element is the oath formula ‘as I live,’ an idiomatic self-imprecation rather than a literal comment on God’s existence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "חַי־אָ֙נִי֙",
+        "english_text": "As I live",
+        "target": ["the solemn certainty of God’s refusal to be consulted", "divine oath", "speech-act"],
+        "vehicle": ["appeal to one’s own life as guarantee", "oath formula", "legal rhetoric"],
+        "ground": ["strengthening the assertion by invoking what is most certain", "binding oneself verbally", "emphatic assurance"],
+        "posture": ["oath idiom used to heighten seriousness", "non-ironic but formulaic", "covenant lawsuit style"],
+        "explanation": "The phrase ‘As I live’ is an idiomatic divine oath, not a literal statement about existence, intensifying the resolve not to be inquired of.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 20:4",
+    "deliberation": "Considered ‘judge’ language and ‘abominations.’ The verse is forensic and literal: Ezekiel is told to judge and to make them know their fathers’ abominations. No clear metaphor or idiom beyond standard legal terminology.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 20:5",
+    "deliberation": "Looked at ‘chose Israel,’ ‘lifted my hand,’ and ‘made myself known.’ The act of ‘lifting my hand’ is a gesture-metonymy/idiom for swearing an oath.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וָאֶשָּׂ֣א יָדִ֗י לְזֶ֙רַע֙ בֵּ֣ית יַעֲקֹב",
+        "english_text": "I gave My oath to the stock of the House of Jacob (lit. ‘I lifted my hand’)",
+        "target": ["God’s act of swearing a covenantal promise", "oath-taking", "legal-religious commitment"],
+        "vehicle": ["raising one’s hand in a solemn gesture", "courtroom or treaty ceremony", "social ritual"],
+        "ground": ["public, binding affirmation", "visible gesture representing an internal pledge", "formality and seriousness"],
+        "posture": ["conventional anthropomorphic idiom for divine oath", "affirmative", "covenant narrative"],
+        "explanation": "‘Lifting the hand’ is a physical gesture used metonymically and idiomatically to denote taking an oath.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 20:6",
+    "deliberation": "Two expressions are figurative: again ‘lifting my hand’ for swearing, and ‘a land flowing with milk and honey,’ a stock metaphor/hyperbole for extraordinary fertility and prosperity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "נָשָׂ֤אתִי יָדִי֙ לָהֶ֔ם לְהוֹצִיאָ֖ם מֵאֶ֣רֶץ מִצְרָ֑יִם",
+        "english_text": "that same day I swore to them (lit. ‘I lifted my hand to them’) to take them out of the land of Egypt",
+        "target": ["God’s promise to bring Israel out of Egypt", "oath/promise", "salvific action"],
+        "vehicle": ["hand-lifting gesture as in human oath ceremonies", "visible sign", "social-legal act"],
+        "ground": ["formal, binding, intentional commitment", "publicly signaled promise", "authority behind the pledge"],
+        "posture": ["standard anthropomorphic oath formula", "affirmed", "covenant discourse"],
+        "explanation": "The ‘lifting of the hand’ functions as an idiomatic metonymy for a sworn divine oath.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶל־אֶ֜רֶץ אֲשֶׁר־תַּ֣רְתִּי לָהֶ֗ם זָבַ֤ת חָלָב֙ וּדְבַ֔שׁ צְבִ֥י הִ֖יא לְכׇל־הָאֲרָצֽוֹת",
+        "english_text": "into a land flowing with milk and honey, the fairest of all lands",
+        "target": ["the goodness and abundance of the promised land", "national homeland", "blessing/provision"],
+        "vehicle": ["a land literally gushing with milk and honey, surpassing all others", "overflowing food-source", "idealized fertile landscape"],
+        "ground": ["extraordinary fruitfulness and desirability", "rich sustenance", "pleasing, life-supporting environment"],
+        "posture": ["exaggerated, picturesque promise formula", "positive hyperbolic metaphor", "covenant promise rhetoric"],
+        "explanation": "The land is metaphorically depicted as ‘flowing with milk and honey,’ a hyperbolic idiom for great fertility and prosperity.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 20:7",
+    "deliberation": "Noted ‘detestable things of their eyes’ and ‘do not defile yourselves.’ The first is a metonymy for idols desired by sight. ‘Defile’ is a purity metaphor extended to moral/idolatrous behavior.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אִישׁ שִׁקּוּצֵ֤י עֵינָיו֙ הַשְׁלִ֔יכוּ",
+        "english_text": "Cast away, every one of you, the detestable things that you are drawn to (lit. ‘the detestable things of his eyes’)",
+        "target": ["Israel’s cherished idols and images", "objects of worship", "idolatry"],
+        "vehicle": ["things associated with the eyes", "objects of visual attraction", "sensory focus"],
+        "ground": ["what they eagerly look at and desire", "visual fascination leading to attachment", "orientation of desire"],
+        "posture": ["condemning their visually-driven attachment to idols", "negative evaluation", "prophetic indictment"],
+        "explanation": "‘Detestable things of his eyes’ uses the eye metonymically for what one looks at with desire, referring to idols and images.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּבְגִלּוּלֵ֥י מִצְרַ֖יִם אַל־תִּטַּמָּ֑אוּ",
+        "english_text": "do not defile yourselves with the fetishes of Egypt",
+        "target": ["Israel’s moral and cultic corruption through idolatry", "spiritual state", "religious fidelity"],
+        "vehicle": ["ritual impurity/defilement associated with contact with unclean things", "pollution", "dirt/contamination"],
+        "ground": ["idolatry makes them unfit for God’s presence like impurity makes one unfit for the sanctuary", "loss of holiness", "need for separation/cleansing"],
+        "posture": ["using purity-impurity metaphor for spiritual unfaithfulness", "warning", "covenant purity rhetoric"],
+        "explanation": "The verb ‘defile yourselves’ extends the ritual purity system metaphorically to ethical-religious behavior, treating idolatry as contaminating filth.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 20:8",
+    "deliberation": "Considered expressions of anger. The key figurative phrase is ‘to pour out my fury,’ treating divine wrath as a liquid that can be spilled out onto people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וָאֹמַ֞ר לִשְׁפֹּ֧ךְ חֲמָתִ֣י עֲלֵיהֶ֗ם לְכַלּ֤וֹת אַפִּי֙ בָּהֶ֔ם",
+        "english_text": "Then I resolved to pour out My fury upon them, to vent all My anger upon them",
+        "target": ["God’s execution of judgment on Israel", "divine punitive action", "judgment"],
+        "vehicle": ["liquid being poured out until finished", "container emptied of contents", "physical spilling"],
+        "ground": ["wrath can inundate and overwhelm like a poured liquid", "completeness and intensity of the outpouring", "unrestrained release"],
+        "posture": ["vivid judicial-threat metaphor", "serious, non-ironic", "covenant curse imagery"],
+        "explanation": "God’s anger is pictured as a liquid ‘poured out’ to completion, conveying total and overwhelming judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 20:9",
+    "deliberation": "Looked at ‘for the sake of My name’ and ‘in the sight/eyes of the nations.’ The main figurative element is ‘My name’ as metonymy for God’s reputation and public honor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וָאַ֙עַשׂ֙ לְמַ֣עַן שְׁמִ֔י לְבִלְתִּ֥י הֵחֵ֛ל לְעֵינֵ֥י הַגּוֹיִ֖ם",
+        "english_text": "But I acted for the sake of My name, that it might not be profaned in the sight of the nations",
+        "target": ["God’s public honor and reputation among the nations", "divine status", "international perception"],
+        "vehicle": ["‘name’ as a person’s public identity and reputation", "label representing character", "social standing"],
+        "ground": ["profaning the reputation is like profaning the ‘name’", "the name stands for the person’s perceived character", "concern for honor/shame"],
+        "posture": ["metonymic reasoning for divine restraint", "affirmative", "theological explanation"],
+        "explanation": "‘My name’ stands metonymically for God’s reputation; He acts to protect His honor before the nations.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 20:10",
+    "deliberation": "Describes the exodus and entry into the wilderness in straightforward historical terms without clear figurative extensions in this verse alone.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 20:11",
+    "deliberation": "Examined ‘which if a human does, he shall live by them.’ Though ‘live’ can carry theological fullness, here it can be taken literally (life/prosperity) in covenant terms. No explicit image vehicle; treated as literal within covenant-legal idiom.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 20:12",
+    "deliberation": "Considered whether ‘sabbaths as a sign’ is figurative; in covenant-legal discourse ‘sign’ is an actual instituted marker, not a metaphor. No clear metaphor or personification in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 20:13",
+    "deliberation": "Looked at ‘profaned my sabbaths very much’ and ‘pour out my fury.’ Profaning sabbaths is literal cultic language. The anger expression repeats the ‘pouring out’ metaphor of v.8.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וָאֹמַ֞ר לִשְׁפֹּ֨ךְ חֲמָתִ֧י עֲלֵיהֶ֛ם בַּמִּדְבָּ֖ר לְכַלּוֹתָֽם",
+        "english_text": "Then I thought to pour out My fury upon them in the wilderness and to make an end of them",
+        "target": ["God’s threatened destruction of Israel in the wilderness", "judgment", "covenant curse"],
+        "vehicle": ["liquid forcefully poured out until none remains", "flooding/emptying a vessel", "physical outpouring"],
+        "ground": ["total, overwhelming execution of wrath", "no restraint in distribution", "bringing to an end"],
+        "posture": ["strong warning image", "non-ironic", "judgment rhetoric"],
+        "explanation": "Again divine wrath is imaged as a liquid poured out, emphasizing the devastating and complete nature of the contemplated judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 20:14",
+    "deliberation": "Same motif as v.9. ‘For the sake of My name’ is metonymy for concern for God’s public honor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וָאֶעֱשֶׂ֖ה לְמַ֣עַן שְׁמִ֑י לְבִלְתִּ֤י הֵחֵל֙ לְעֵינֵ֣י הַגּוֹיִ֔ם",
+        "english_text": "but I acted for the sake of My name, that it might not be profaned in the sight of the nations",
+        "target": ["God’s reputation among the nations", "divine honor", "international perception"],
+        "vehicle": ["‘name’ as representation of person and status", "public label", "social reputation"],
+        "ground": ["profaning the name equals dishonoring the person", "name carries the weight of character", "concern for how one is viewed"],
+        "posture": ["explanatory metonymy", "affirmative", "theological motive statement"],
+        "explanation": "Once more ‘My name’ stands for God’s reputation; He acts to prevent His name from being degraded before the nations.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 20:15",
+    "deliberation": "We again have ‘I lifted my hand’ (oath idiom) and ‘land flowing with milk and honey’ (fertility metaphor). Both are reused covenantal figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "נָשָׂ֧אתִי יָדִ֛י לָהֶ֖ם בַּמִּדְבָּ֑ר",
+        "english_text": "However, I swore to them in the wilderness (lit. ‘I lifted my hand to them’)",
+        "target": ["God’s solemn negative oath not to bring a generation into the land", "oath", "judicial decision"],
+        "vehicle": ["raised hand in human oath-taking", "formal gesture", "legal/cultic ceremony"],
+        "ground": ["a visible, solemn sign of commitment", "binding oneself to a stated outcome", "legal seriousness"],
+        "posture": ["anthropomorphic idiom for divine oath", "non-ironic", "covenant lawsuit context"],
+        "explanation": "The phrase ‘I lifted my hand’ is again idiomatic for swearing an oath, here of exclusion from the land.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶל־הָאָ֣רֶץ אֲשֶׁר־נָתַ֗תִּי זָבַ֤ת חָלָב֙ וּדְבַ֔שׁ צְבִ֥י הִ֖יא לְכׇל־הָאֲרָצֽוֹת",
+        "english_text": "into the land flowing with milk and honey, the fairest of all lands",
+        "target": ["the extraordinary desirability of the promised land", "national inheritance", "divine blessing"],
+        "vehicle": ["land literally gushing milk and honey, surpassing all others", "ideal, lush terrain", "overabundant food-source"],
+        "ground": ["superabundant fertility and sweetness", "ease and richness of life", "uniquely attractive territory"],
+        "posture": ["hyperbolic praise of the land", "affirmative", "covenant promise style"],
+        "explanation": "The description ‘flowing with milk and honey’ is a vivid, hyperbolic metaphor for exceptional fertility and pleasantness.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 20:16",
+    "deliberation": "Key figurative element is the inner life conceptualized as a walking heart: ‘after their fetishes their heart was going.’ Basic path metaphor for desire.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּ֛י אַחֲרֵ֥י גִלּוּלֵיהֶ֖ם לִבָּ֥ם הֹלֵֽךְ",
+        "english_text": "for their hearts followed after their fetishes (lit. ‘their heart was going after their idols’)",
+        "target": ["Israel’s inner desires and loyalties", "affective orientation", "spiritual allegiance"],
+        "vehicle": ["a heart/person walking after someone or something", "pursuit on a path", "follower trailing a leader"],
+        "ground": ["active pursuit and attachment", "orientation of will and desire towards an object", "movement toward a goal"],
+        "posture": ["metaphorical portrayal of idolatrous desire", "negative evaluation", "covenant unfaithfulness image"],
+        "explanation": "The heart is personified as walking after idols, a metaphor for the people’s inner attachment and pursuit of other gods.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 20:17",
+    "deliberation": "The phrase ‘my eye spared/pitied them’ is an anthropomorphic idiom: the ‘eye’ stands for God’s compassion and regard.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַתָּ֧חׇס עֵינִ֛י עֲלֵיהֶ֖ם",
+        "english_text": "But I had pity on them (lit. ‘my eye spared them’)",
+        "target": ["God’s compassionate decision not to destroy Israel", "divine mercy", "judicial restraint"],
+        "vehicle": ["an eye that looks with pity and refrains from destroying", "human emotional response", "facial expression of compassion"],
+        "ground": ["seeing someone in distress leads to pity", "the eye represents attentive regard", "inner mercy expressed outwardly"],
+        "posture": ["anthropomorphic idiom for divine compassion", "affirmed", "mercy/judgment tension"],
+        "explanation": "God’s ‘eye’ is personified and used metonymically for His compassionate regard, indicating that He refrained from total destruction.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 20:18",
+    "deliberation": "Identified the recurrence of the purity metaphor: ‘do not defile yourselves with their fetishes.’ Also ‘walk in the statutes of your fathers’ could be a path metaphor, but here the main clear image is defilement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּבְגִלּוּלֵיהֶ֖ם אַל־תִּטַּמָּֽאוּ",
+        "english_text": "and do not defile yourselves with their fetishes",
+        "target": ["the children’s potential moral-spiritual corruption by idolatry", "religious state", "holiness status"],
+        "vehicle": ["ritual/physical defilement by contact with unclean things", "staining, pollution", "impurity"],
+        "ground": ["idolatry renders them unfit for relationship with God like impurity bars entry to the sanctuary", "loss of purity/holiness", "need for cleansing"],
+        "posture": ["purity metaphor warning against idolatry", "negative", "covenant exhortation"],
+        "explanation": "Again, ‘defile yourselves’ frames idolatry in terms of impurity and pollution, using ritual categories metaphorically.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 20:19",
+    "deliberation": "The phrase ‘walk in my statutes’ uses the common biblical path metaphor, conceptualizing obedience as walking along a path laid out by God’s laws.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּחֻקּוֹתַ֖י לֵ֑כוּ",
+        "english_text": "Follow My laws (lit. ‘walk in My statutes’)",
+        "target": ["Israel’s pattern of conduct in response to God’s commands", "moral lifestyle", "covenant obedience"],
+        "vehicle": ["walking on a path or road", "journey", "physical movement"],
+        "ground": ["continuous progress and direction over time", "choosing a route set by another", "staying within boundaries"],
+        "posture": ["conventional ethical path metaphor", "positive exhortation", "wisdom/torah imagery"],
+        "explanation": "Obedience is cast as ‘walking’ in God’s statutes, a metaphor for shaping one’s life-course by His commands.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 20:20",
+    "deliberation": "Sabbaths as a ‘sign’ between God and Israel is covenantal language where the Sabbath functions literally as the ritual marker. No clear additional metaphor beyond that established legal meaning.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 20:21",
+    "deliberation": "Repeated motifs: ‘walk in statutes,’ ‘profane sabbaths,’ and ‘pour out my fury.’ The last again uses the wrath-as-liquid metaphor; here it is the main figurative phrase.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וָאֹמַ֞ר לִשְׁפֹּ֧ךְ חֲמָתִ֣י עֲלֵיהֶ֗ם לְכַלּ֥וֹת אַפִּ֛י בָּ֖ם",
+        "english_text": "Then I resolved to pour out My fury upon them, to vent all My anger upon them",
+        "target": ["the threatened execution of judgment on the second generation", "divine punishment", "wrath event"],
+        "vehicle": ["liquid poured or emptied out", "container discharged of contents", "flooding out"],
+        "ground": ["unrestrained, overwhelming expression of anger", "complete exhaustion of wrath", "intense impact"],
+        "posture": ["judgment metaphor reused", "serious", "covenant curse imagery"],
+        "explanation": "God’s fury is again depicted as something poured out, highlighting its intensity and totality.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 20:22",
+    "deliberation": "Two idiomatic anthropomorphisms: ‘I turned back My hand’ for restraining action, and ‘for My name’s sake’ for protecting His reputation. Both are distinct figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַהֲשִׁבֹ֙תִי֙ אֶת־יָדִ֔י",
+        "english_text": "But I held back My hand",
+        "target": ["God’s decision not to carry out full judgment", "divine restraint", "withholding punishment"],
+        "vehicle": ["a human hand pulled back from striking or acting", "suspended blow", "physical retraction"],
+        "ground": ["refraining from an intended action at the last moment", "delayed or mitigated harm", "control over power"],
+        "posture": ["anthropomorphic idiom of self-restraint", "affirmative", "mercy within judgment"],
+        "explanation": "God’s ‘hand’ symbolizes His power; ‘turning it back’ is an idiomatic way to speak of restraining the execution of wrath.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וָאַ֖עַשׂ לְמַ֣עַן שְׁמִ֑י",
+        "english_text": "and I acted for the sake of My name",
+        "target": ["God’s concern for His public honor before the nations", "reputation", "status"],
+        "vehicle": ["‘name’ as representation of a person’s fame and honor", "social label", "renown"],
+        "ground": ["harm to the name equals harm to reputation", "protecting the name equals upholding honor", "name stands for public perception"],
+        "posture": ["metonymic rationale", "affirmative", "theological explanation"],
+        "explanation": "As elsewhere, ‘My name’ is metonymy for God’s reputation, for which He preserves Israel.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 20:23",
+    "deliberation": "The phrase ‘I lifted my hand to them in the wilderness to scatter them’ again uses the oath idiom of raised hand. ‘Scatter among the nations’ can be literal exile; focus on the oath figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "גַּם־אֲנִ֗י נָשָׂ֧אתִי אֶת־יָדִ֛י לָהֶ֖ם בַּמִּדְבָּ֑ר",
+        "english_text": "However, I swore to them in the wilderness (lit. ‘I lifted my hand to them’)",
+        "target": ["God’s solemn declaration to scatter them", "divine oath", "covenant curse commitment"],
+        "vehicle": ["raised hand gesture as in treaty/oath rituals", "formal bodily sign", "legal ceremony"],
+        "ground": ["external gesture indicates binding internal resolve", "public seriousness", "commitment to a course of action"],
+        "posture": ["anthropomorphic oath idiom", "affirmed", "legal-covenantal rhetoric"],
+        "explanation": "‘Lifting the hand’ is again an idiomatic, metonymic description of swearing an oath, here regarding scattering.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 20:24",
+    "deliberation": "The phrase ‘their eyes were after the fetishes of their fathers’ uses ‘eyes’ metonymically for desire and focus of attention.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְאַֽחֲרֵי֙ גִּלּוּלֵ֣י אֲבוֹתָ֔ם הָי֖וּ עֵינֵיהֶֽם",
+        "english_text": "and looked with longing to the fetishes of their ancestors (lit. ‘their eyes were after the idols of their fathers’)",
+        "target": ["the people’s desire and orientation toward ancestral idols", "inner inclination", "religious preference"],
+        "vehicle": ["eyes following after something", "visual tracking", "gaze as indicator of interest"],
+        "ground": ["where the eyes fix reveals what the heart desires", "following with the eyes parallels following with the heart", "attention equals attraction"],
+        "posture": ["metonymic description of idolatrous desire", "negative", "prophetic critique"],
+        "explanation": "The ‘eyes’ are used metonymically for desire; their gaze ‘after’ idols expresses inner attachment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 20:25",
+    "deliberation": "This difficult statement ‘I gave them statutes that were not good’ is best read as rhetorical irony or judicial handing-over language rather than a literal claim that God’s torah is evil.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְגַם־אֲנִי֙ נָתַ֣תִּי לָהֶ֔ם חֻקִּ֖ים לֹ֣א טוֹבִ֑ים וּמִ֨שְׁפָּטִ֔ים לֹ֥א יִֽחְי֖וּ בָּהֶֽם",
+        "english_text": "Moreover, I gave them laws that were not good and rules by which they could not live",
+        "target": ["God’s judicial act of leaving Israel to destructive practices/laws", "judgment", "consequence of rebellion"],
+        "vehicle": ["speaking as though God Himself authored ‘not good’ statutes", "shocking reversal of normal torah valuation", "paradoxical statement"],
+        "ground": ["emphasizes that what they embraced leads to death, not life", "God’s ‘giving’ is letting them experience the results", "ironic inversion to underscore judgment"],
+        "posture": ["rhetorical irony or judicial-metonymic language", "shocking, not flatly literal", "prophetic polemic"],
+        "explanation": "The verse uses ironic/judicial language, speaking as if God ‘gave’ bad laws, to express that He handed them over to destructive ordinances as punishment.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 20:26",
+    "deliberation": "Focused on ‘I defiled them by their gifts’ tied to child sacrifice. This uses the impurity metaphor: their sacrificial ‘gifts’ become a source of their own defilement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וָאֲטַמֵּ֤א אוֹתָם֙ בְּמַתְּנוֹתָ֔ם",
+        "english_text": "I defiled them by their very gifts",
+        "target": ["Israel’s moral and cultic ruination through child sacrifice", "spiritual condition", "judicial consequence"],
+        "vehicle": ["ritual/tangible defilement resulting from contact with forbidden things", "pollution", "stain"],
+        "ground": ["their ‘gifts’ render them unclean before God", "worship intended to honor becomes the source of contamination", "reversal of expected consecration"],
+        "posture": ["strong negative purity metaphor", "judgmental", "prophetic denunciation"],
+        "explanation": "Their idolatrous ‘gifts’ are portrayed as defiling them, using impurity imagery to show how their worship corrupts them.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 20:27",
+    "deliberation": "Terms ‘affronted Me’ and ‘committed trespass’ use legal/covenant language in their standard senses. No distinct metaphorical image beyond normal treaty idiom.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 20:28",
+    "deliberation": "Looked at ‘high hill,’ ‘leafy tree,’ and ‘pleasing odors.’ The locations are literal cult sites. ‘Pleasing odor’ is the main figurative sacrificial idiom, presenting sacrifices in terms of a fragrance that brings pleasure to a deity (here ironically misdirected).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַיָּשִׂ֣ימוּ שָׁ֗ם רֵ֚יחַ נִיח֣וֹחֵיהֶ֔ם",
+        "english_text": "there they produced their pleasing odors",
+        "target": ["their sacrificial worship aimed at pleasing a deity", "act of worship", "religious relationship"],
+        "vehicle": ["fragrant smell rising and delighting someone", "incense or aroma enjoyed by a person", "sensory pleasure"],
+        "ground": ["sacrifices are envisioned as giving pleasure like a sweet aroma to the recipient", "upward movement toward deity", "acceptance signaled by delight"],
+        "posture": ["standard sacrificial metaphor here applied to idolatry", "implicitly ironic/critical", "cultic rhetoric"],
+        "explanation": "Sacrifices are described as ‘pleasing odors,’ a metaphorical, anthropomorphic idiom in which deities are thought of as enjoying fragrance; here this language is applied to illegitimate worship.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 20:29",
+    "deliberation": "The verse exploits a pun between ‘bamah’ (high place) and ‘mah’ (what). This rhetorical wordplay is a figurative device, though not a metaphor in the strict sense.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מָ֣ה הַבָּמָ֔ה ... וַיִּקָּרֵ֤א שְׁמָהּ֙ בָּמָ֔ה",
+        "english_text": "What is this shrine (bamah) that you visit? Therefore such a [shrine] is called bamah to this day",
+        "target": ["the idolatrous high places Israel frequents", "cultic sites", "false worship"],
+        "vehicle": ["phonetic play between ‘bamah’ and ‘mah’ (‘what’)", "etymological pun", "sound-based association"],
+        "ground": ["the similar sound invites a mocking question about the nature and worth of the place", "wordplay casts doubt and ridicule", "naming as critique"],
+        "posture": ["rhetorical pun used polemically", "mildly sarcastic", "prophetic derision of high places"],
+        "explanation": "Ezekiel uses a pun between ‘bamah’ and ‘mah’ to question the very identity and legitimacy of the high-place shrines.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 20:30",
+    "deliberation": "Two figures: ‘in the way of your fathers’ (path metaphor for behavior), and especially ‘you are whoring after their detestable things,’ which uses sexual infidelity as a metaphor for idolatry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְאַחֲרֵ֥י שִׁקּֽוּצֵיהֶ֖ם אַתֶּ֥ם זֹנִֽים",
+        "english_text": "and go astray after their detestable things (lit. ‘you are whoring after their detestable things’)",
+        "target": ["Israel’s religious unfaithfulness in following idols", "covenant disloyalty", "idolatrous worship"],
+        "vehicle": ["a woman’s sexual promiscuity or prostitution", "marital infidelity", "illicit sexual relations"],
+        "ground": ["betrayal of an exclusive relationship", "giving oneself to multiple partners/‘lovers’", "shameful, degrading behavior"],
+        "posture": ["strong metaphor depicting idolatry as spiritual adultery", "morally charged", "prophetic accusation"],
+        "explanation": "The verb ‘to whore’ is used metaphorically for idolatry, portraying Israel’s pursuit of other gods as sexual infidelity to YHWH.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 20:31",
+    "deliberation": "The child sacrifice reference is literal horror. The phrase ‘you defile yourselves’ reprises the impurity metaphor for idolatry. The repeated oath ‘I will not be inquired of by you’ is more of a speech act than an image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אַתֶּם֩ נִטְמְאִ֤ים לְכׇל־גִּלּֽוּלֵיכֶם֙ עַד־הַיּ֔וֹם",
+        "english_text": "you defile yourselves with all your fetishes to this very day",
+        "target": ["their ongoing moral-spiritual corruption through idolatry", "religious state", "relationship to God"],
+        "vehicle": ["ritual defilement by contact with unclean things", "pollution, stain", "uncleanness"],
+        "ground": ["idolatry makes them unfit for God like impurity excludes from holiness", "inner degradation pictured as outward filth", "necessity of purification"],
+        "posture": ["continued use of purity metaphor", "condemnatory", "covenant accusation"],
+        "explanation": "Idolatry is again portrayed as ‘defilement,’ extending cultic impurity language to describe their spiritual condition.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Ezekiel 20:32",
+    "deliberation": "Saw two main figures: (1) ‘what comes up upon your spirit’—an idiomatic metaphor for intentions/ideas arising in the inner person; (2) ‘serve wood and stone’—metonymy for idols as materials representing deities.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהָֽעֹלָה֙ עַל־ר֣וּחֲכֶ֔ם",
+        "english_text": "And what you have in mind (lit. ‘what comes up upon your spirit’)",
+        "target": ["their inner plans and desires to be like the nations", "intention", "mental resolve"],
+        "vehicle": ["something rising up onto the ‘spirit’ like an object ascending", "emergence into view", "upward motion"],
+        "ground": ["plans and desires emerge into consciousness like something rising", "movement from hidden to evident", "formation of intent"],
+        "posture": ["inner-life metaphor", "corrective (this will not happen)", "prophetic psychology language"],
+        "explanation": "Thoughts and plans are depicted as ‘coming up upon the spirit,’ a metaphorical idiom for intentions arising within.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לְשָׁרֵ֖ת עֵ֥ץ וָאָֽבֶן",
+        "english_text": "worshiping wood and stone",
+        "target": ["the worship of manufactured idols/deities", "idolatrous cult", "false religion"],
+        "vehicle": ["the raw materials (wood, stone) of which idols are made", "inanimate objects", "physical matter"],
+        "ground": ["idols are materially nothing more than wood and stone", "exposes the folly of treating lifeless materials as gods", "material stands for finished idol"],
+        "posture": ["metonymic, implicitly derisive depiction of idolatry", "negative", "polemical rhetoric"],
+        "explanation": "‘Wood and stone’ stands metonymically for idols, underlining their lifeless material and mocking the idea of serving them.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 33,
+    "reference": "Ezekiel 20:33",
+    "deliberation": "Key figures: ‘with a strong hand and an outstretched arm’ (anthropomorphic idiom for powerful intervention) and ‘with overflowing fury’ (anger as poured-out substance). I treat the arm-hand phrase and the anger phrase as two related but distinct images.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּיָ֨ד חֲזָקָ֜ה וּבִזְר֧וֹעַ נְטוּיָ֛ה",
+        "english_text": "with a strong hand and with an outstretched arm",
+        "target": ["God’s decisive exercise of power over Israel", "sovereign intervention", "kingly rule"],
+        "vehicle": ["a powerful human hand and arm stretched out to act", "warrior-king exerting force", "physical strength"],
+        "ground": ["visible, effective power to act and control", "readiness to strike or rescue", "strength and authority"],
+        "posture": ["anthropomorphic royal-warrior metaphor", "emphatic", "exodus/judgment motif reused"],
+        "explanation": "God’s intervention is depicted as that of a mighty person with a strong hand and an outstretched arm, an idiomatic metaphor for overwhelming power.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּבְחֵמָ֥ה שְׁפוּכָ֖ה",
+        "english_text": "and with overflowing fury (lit. ‘poured-out wrath’)",
+        "target": ["the intensity of God’s wrath in reigning over them", "judgment mode", "emotional aspect of rule"],
+        "vehicle": ["wrath as a liquid poured out to overflowing", "spilling until nothing is left", "flood-like outpouring"],
+        "ground": ["unrestrained, abundant expression of anger", "completeness and force", "overwhelming impact"],
+        "posture": ["heightened wrath metaphor", "threatening", "covenant curse imagery"],
+        "explanation": "God’s fury is described as ‘poured out,’ intensifying the picture of His reign as accompanied by overwhelming judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 34,
+    "reference": "Ezekiel 20:34",
+    "deliberation": "Reiterates the formula ‘with a strong hand, an outstretched arm, and poured-out wrath.’ Here I treat the clustered phrase as one composite metaphor for powerful, wrathful intervention.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּיָ֤ד חֲזָקָה֙ וּבִזְר֣וֹעַ נְטוּיָ֔ה וּבְחֵמָ֖ה שְׁפוּכָֽה",
+        "english_text": "With a strong hand and an outstretched arm and overflowing fury",
+        "target": ["God’s act of regathering Israel from the nations with decisive power and judgment", "salvation-judgment intervention", "divine kingship"],
+        "vehicle": ["a powerful figure using hand and arm, accompanied by poured-out anger like a deluge", "warrior-king imagery", "physical might plus storm of wrath"],
+        "ground": ["irresistible, forceful action", "active engagement rather than passivity", "simultaneous mercy (gathering) and judgment (wrath)"],
+        "posture": ["composite anthropomorphic/judicial metaphor", "emphatic", "exodus-new exodus imagery"],
+        "explanation": "The repeated formula combines anthropomorphic power (‘hand/arm’) with the wrath-as-liquid image to depict God’s mighty, wrathful regathering.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 35,
+    "reference": "Ezekiel 20:35",
+    "deliberation": "Two figures: ‘wilderness of the peoples’—a metaphorical designation of an exile/judgment setting among nations; and ‘face to face’ as an idiom for direct, unmediated encounter.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֶל־מִדְבַּ֖ר הָעַמִּ֑ים",
+        "english_text": "into the wilderness of the peoples",
+        "target": ["the context of dispersion/exile and renewed judgment among foreign nations", "historical situation", "setting of divine encounter"],
+        "vehicle": ["a wilderness, desolate place", "uninhabited, harsh landscape", "testing ground"],
+        "ground": ["isolation, vulnerability, and testing like in a literal wilderness", "separation from settled life", "place of confrontation with God"],
+        "posture": ["metaphorical extension of exodus ‘wilderness’ to exilic context", "solemn", "judgment and renewal motif"],
+        "explanation": "The phrase ‘wilderness of the peoples’ depicts the exilic/judgment context among nations as a new symbolic wilderness where God will deal with Israel.",
+        "confidence": 0.84
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "פָּנִ֖ים אֶל־פָּנִֽים",
+        "english_text": "face to face",
+        "target": ["the immediacy and directness of God’s judgment of Israel", "mode of encounter", "relational stance"],
+        "vehicle": ["two persons physically confronting each other face to face", "direct interpersonal meeting", "no mediator between"],
+        "ground": ["openness, intensity, and inescapability of direct confrontation", "no hiding or distance", "personal engagement"],
+        "posture": ["idiom for direct encounter, anthropomorphic", "serious", "covenant lawsuit scene"],
+        "explanation": "God’s judgment is said to occur ‘face to face,’ an idiomatic anthropomorphic metaphor for an immediate, unmediated encounter and reckoning.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 36,
+    "reference": "Ezekiel 20:36",
+    "deliberation": "‘Enter into judgment’ and ‘wilderness of the land of Egypt’ are straightforward in context, recalling past events. No additional distinct figurative expression beyond the already-noted wilderness motif in v.35.",
+    "instances": []
+  },
+  {
+    "verse": 37,
+    "reference": "Ezekiel 20:37",
+    "deliberation": "Two strong metaphors: (1) ‘I will make you pass under the rod’—shepherd imagery for inspection and separation; (2) ‘I will bring you into the bond of the covenant’—covenant as a binding tether or fetter.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהַעֲבַרְתִּ֥י אֶתְכֶ֖ם תַּ֣חַת הַשָּׁ֑בֶט",
+        "english_text": "I will make you pass under the shepherd’s staff",
+        "target": ["God’s examination and sorting of His people", "purification and counting of Israel", "covenant enforcement"],
+        "vehicle": ["sheep passing under a shepherd’s rod for counting and inspection", "flock management", "pastoral practice"],
+        "ground": ["individual scrutiny and inclusion/exclusion", "ownership and oversight", "separation of acceptable from unacceptable animals"],
+        "posture": ["shepherd metaphor for divine governance and judgment", "serious", "purification/restoration process"],
+        "explanation": "Passing ‘under the rod’ evokes a shepherd counting and inspecting sheep, a metaphor for God’s careful examination and sorting of His people.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהֵבֵאתִ֥י אֶתְכֶ֖ם בְּמָסֹ֥רֶת הַבְּרִֽית",
+        "english_text": "and I will bring you into the bond of the covenant",
+        "target": ["Israel’s renewed binding commitment to the covenant", "covenantal relationship", "obligation to God"],
+        "vehicle": ["a physical bond, fetter, or yoke binding someone", "restraint/rope", "constraining tie"],
+        "ground": ["covenant imposes binding obligations like a physical bond restricts movement", "security plus constraint", "enduring attachment"],
+        "posture": ["metaphor of covenant as a binding device", "both solemn and restorative", "legal-relational imagery"],
+        "explanation": "The ‘bond of the covenant’ treats the covenant as a tether or fetter into which God will again bring His people, highlighting its binding force.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 38,
+    "reference": "Ezekiel 20:38",
+    "deliberation": "Language of ‘purging’ rebels and not bringing them into the land functions in a literal judicial sense here. No separate metaphorical vehicles beyond legal removal.",
+    "instances": []
+  },
+  {
+    "verse": 39,
+    "reference": "Ezekiel 20:39",
+    "deliberation": "Two aspects: the imperative ‘Go, each one, serve his idols’ has an ironic flavor—a rhetorical permission intended as condemnation; also ‘My holy name’ again metonymy for God’s reputation. The irony stands out as the main rhetorical figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אִ֤ישׁ גִּלּוּלָיו֙ לְכ֣וּ עֲבֹ֔דוּ",
+        "english_text": "Go, every one of you, and worship your fetishes",
+        "target": ["Israel’s stubborn commitment to idolatry", "their refusal to heed God", "moral stance"],
+        "vehicle": ["a permissive command seemingly granting them license to sin", "sarcastic invitation", "rhetorical concession"],
+        "ground": ["by ‘allowing’ what He condemns, God exposes their obstinacy", "command form used to highlight futility and doom", "irony between words and true will"],
+        "posture": ["verbal irony/sarcasm", "sharply critical", "prophetic polemic"],
+        "explanation": "God’s command ‘go, serve your idols’ is ironic, not actual approval; it is a sarcastic exposure of their determination to continue in idolatry.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 40,
+    "reference": "Ezekiel 20:40",
+    "deliberation": "‘My holy mountain, lofty mount of Israel’ functions as a metonymy for Zion as the central worship site and for the restored community’s worship life. The mountain symbolizes the whole cultic reality.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּהַר־קׇדְשִׁ֞י בְּהַ֣ר מְר֣וֹם יִשְׂרָאֵ֗ל",
+        "english_text": "on My holy mountain, on the lofty mount of Israel",
+        "target": ["the restored center of YHWH worship and His dwelling with Israel", "Zion and its cult", "community worship life"],
+        "vehicle": ["a high, holy mountain", "elevated sacred place", "imposing geographic feature"],
+        "ground": ["height and holiness symbolize exalted status and nearness to God", "mountain stands for the entire cultic complex and people gathered there", "stability and prominence"],
+        "posture": ["symbolic-geographic metonymy", "positive and hopeful", "restoration imagery"],
+        "explanation": "‘My holy mountain/the mount of Israel’ stands metonymically for Zion as the place and system of true worship in the restored future.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 41,
+    "reference": "Ezekiel 20:41",
+    "deliberation": "The primary figure is ‘as a pleasing odor I will accept you,’ sacrificial aroma metaphor applied to the people themselves; also ‘I will be sanctified in you before the nations’ continues the reputation motif.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּרֵ֣יחַ נִיחֹ֘חַ֮ אֶרְצֶ֣ה אֶתְכֶם֒",
+        "english_text": "I will accept you as a pleasing odor",
+        "target": ["God’s favorable acceptance of restored Israel", "relational reconciliation", "divine pleasure"],
+        "vehicle": ["a sweet, soothing fragrance brought near to someone", "sacrificial aroma", "sensory delight"],
+        "ground": ["acceptance and pleasure conceptualized as delight in fragrance", "upward movement and nearness", "restful satisfaction"],
+        "posture": ["positive sacrificial metaphor applied to people", "restorative", "worship/reconciliation imagery"],
+        "explanation": "God says He will accept the people ‘as a pleasing odor,’ extending the sacrificial ‘pleasing aroma’ metaphor to express His restored delight in them.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 42,
+    "reference": "Ezekiel 20:42",
+    "deliberation": "Describes being brought to the land sworn to their fathers; oath language ‘lifted my hand’ is implied from earlier, but not repeated explicitly here. No new figurative expressions in this verse alone.",
+    "instances": []
+  },
+  {
+    "verse": 43,
+    "reference": "Ezekiel 20:43",
+    "deliberation": "Two path/purity metaphors: ‘your ways’ (derekh) for patterns of conduct, and ‘by which you defiled yourselves’ for moral impurity. The path metaphor (‘your ways’) is especially clear as a standard image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֶת־דַּרְכֵיכֶם֙ ... אֲשֶׁ֥ר נִטְמֵאתֶ֖ם בָּ֑ם",
+        "english_text": "your ways and all the acts by which you defiled yourselves",
+        "target": ["Israel’s habitual behaviors and sinful acts", "moral conduct", "spiritual state"],
+        "vehicle": ["‘ways’ as paths one walks on; ‘defilement’ as impurity from contact with filth", "road and dirt imagery", "journey plus pollution"],
+        "ground": ["behavior is like a chosen path one travels", "sin leaves one polluted/unclean", "lifestyle results in a condition requiring cleansing"],
+        "posture": ["combined path and purity metaphors", "penitential", "self-recognition of guilt"],
+        "explanation": "Their ‘ways’ depict their conduct as a path they have walked, and ‘defiled yourselves’ again uses impurity language for their sins.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 44,
+    "reference": "Ezekiel 20:44",
+    "deliberation": "Again ‘for My name’s sake’ is metonymy for acting for the sake of God’s reputation rather than according to their evil ways. This closes the unit with the same figure used earlier.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְמַ֣עַן שְׁמִ֑י לֹא֩ כְדַרְכֵיכֶ֨ם הָרָעִ֜ים",
+        "english_text": "for My name’s sake—not in accordance with your evil ways",
+        "target": ["God’s motive grounded in His own reputation and character", "basis of His gracious action", "theological rationale"],
+        "vehicle": ["‘name’ as stand-in for character and reputation", "public identity", "honor"],
+        "ground": ["to act ‘for the name’ is to act to preserve one’s reputation", "name encapsulates how He is known", "contrast between their ways and His concern for His name"],
+        "posture": ["metonymic explanation of grace", "affirmative", "covenant theology"],
+        "explanation": "‘For My name’s sake’ again uses ‘name’ metonymically for God’s reputation, explaining that His gracious dealing is grounded in His own honor, not their merit.",
+        "confidence": 0.95
+      }
+    ]
+  }
+]

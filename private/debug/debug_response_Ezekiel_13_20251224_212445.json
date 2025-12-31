@@ -1,0 +1,976 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 13:1",
+    "deliberation": "Considered whether the standard prophetic formula is purely technical or also figurative. The phrase 'the word of YHWH came to me' personifies 'word' as a moving agent and uses 'word' metonymically for divine revelation, so I treat it as figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "the prophetic revelation Ezekiel receives",
+          "divine message",
+          "religious communication between God and prophet"
+        ],
+        "vehicle": [
+          "a 'word' that comes/arrives to someone",
+          "an approaching agent or visitor",
+          "human movement and interpersonal encounter"
+        ],
+        "ground": [
+          "God’s initiative and purposeful communication",
+          "a message that actively reaches a recipient",
+          "the dynamic, relational character of revelation"
+        ],
+        "posture": [
+          "reverent, authoritative description of revelation",
+          "prophetic commissioning formula",
+          "theological portrayal of God as actively speaking"
+        ],
+        "explanation": "The abstract 'word' is personified as an entity that physically 'comes' to Ezekiel, and 'word' stands metonymically for the whole revelatory event.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 13:2",
+    "deliberation": "Looked at the vocative 'son of man' and the phrase 'prophesy out of their own heart'. Both are conventional but still function figuratively: one as an idiomatic designation of human frailty, the other as metonymy for inner thoughts as source of prophecy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal (literally, 'son of man')",
+        "target": [
+          "Ezekiel in his role as addressed prophet",
+          "an individual human being",
+          "humanity in its frailty before God"
+        ],
+        "vehicle": [
+          "'son of man' (offspring of Adam/man)",
+          "family/lineage designation",
+          "human genealogy and kinship"
+        ],
+        "ground": [
+          "mortality and creatureliness in contrast to God",
+          "lowly status and limitation",
+          "anthropological distance between divine and human"
+        ],
+        "posture": [
+          "humbling mode of address",
+          "prophetic reminder of the speaker’s humanity",
+          "theological emphasis on God’s transcendence"
+        ],
+        "explanation": "The idiom 'son of man' stands metonymically for a human being in general, stressing Ezekiel’s mortal condition over literal parentage.",
+        "confidence": 0.7
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לִנְבִיאֵי מִלִּבָּם",
+        "english_text": "to the prophets who prophesy out of their own heart",
+        "target": [
+          "the inner source of the false prophecies",
+          "the prophets’ own thoughts and desires",
+          "human psychological/spiritual motivation"
+        ],
+        "vehicle": [
+          "the 'heart' as the place from which prophecy comes",
+          "an anatomical organ as seat of thought and will",
+          "the human body"
+        ],
+        "ground": [
+          "origin in the inner self rather than in God",
+          "subjective, self-generated messages",
+          "contrast between human interiority and divine source"
+        ],
+        "posture": [
+          "critical exposure of false authority",
+          "prophetic denunciation of self-originated oracles",
+          "theological insistence on revelation’s true source"
+        ],
+        "explanation": "The physical 'heart' is used metonymically and idiomatically for the inner mind/will as the source of their messages.",
+        "confidence": 0.76
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 13:3",
+    "deliberation": "Considered whether 'degenerate/foolish prophets' contains metaphor; it is mostly lexical. The clear figurative expression is 'who walk after their own spirit', which uses journey language and personifies 'spirit' as a leader they follow.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֹלְכִים אַחַר רוּחָם",
+        "english_text": "who follow their own fancy/spirit",
+        "target": [
+          "the false prophets’ self-directed behavior",
+          "their chosen guidance and source of direction",
+          "moral and spiritual decision-making"
+        ],
+        "vehicle": [
+          "walking after one’s own spirit",
+          "a person physically following a leader on a path",
+          "travel and guidance in physical space"
+        ],
+        "ground": [
+          "being led and directed by something",
+          "choosing a guide and course of action",
+          "dependence on a source of orientation"
+        ],
+        "posture": [
+          "critical depiction of self-guidance",
+          "prophetic censure of inner impulses as guides",
+          "theological warning against self-authorized leadership"
+        ],
+        "explanation": "Their 'spirit' is personified as something they can 'follow', and life is conceptualized as walking a path behind a guide, here their own inner impulse rather than God.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 13:4",
+    "deliberation": "This verse contains a very explicit animal comparison: prophets likened to jackals among ruins, capturing their opportunism amid national disaster.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּשֻׁעָלִים בַּחֳרָבוֹת נְבִיאֶיךָ יִשְׂרָאֵל הָיוּ",
+        "english_text": "Your prophets, O Israel, have been like jackals among ruins.",
+        "target": [
+          "Israel’s false prophets",
+          "corrupt spiritual leaders",
+          "human religious leadership"
+        ],
+        "vehicle": [
+          "jackals among ruins",
+          "scavenging animals operating amid destruction",
+          "animal life in a devastated landscape"
+        ],
+        "ground": [
+          "cunning, scavenging, exploiting desolate conditions",
+          "preying on weakness and ruin",
+          "morally parasitic behavior"
+        ],
+        "posture": [
+          "sharply critical, condemnatory portrayal",
+          "prophetic denunciation via contemptuous comparison",
+          "ethical warning about predatory leadership"
+        ],
+        "explanation": "By comparing the prophets to jackals prowling ruins, the verse depicts them as opportunistic scavengers feeding on Israel’s calamity.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 13:5",
+    "deliberation": "The primary imagery is military-architectural: breaches and walls used for the prophets’ spiritual duty. Also, 'the day of YHWH' is a conventional idiom for a time of divine judgment, functioning metonymically.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לֹא עֲלִיתֶם בַּפְּרָצוֹת וַתִּגְדְּרוּ גָדֵר עַל־בֵּית יִשְׂרָאֵל",
+        "english_text": "You did not enter the breaches and repair the walls for the House of Israel",
+        "target": [
+          "the prophets’ responsibility to protect and strengthen Israel",
+          "spiritual and political leadership/intercession",
+          "the security and integrity of the covenant community"
+        ],
+        "vehicle": [
+          "entering breaches and building a wall around a house/city",
+          "military defense and fortification repair",
+          "urban warfare and protective architecture"
+        ],
+        "ground": [
+          "standing in vulnerable gaps to protect others",
+          "creating a barrier against attack",
+          "taking costly, frontline responsibility"
+        ],
+        "posture": [
+          "accusatory evaluation of prophetic failure",
+          "prophetic call to protective solidarity",
+          "theological expectation of leaders as guardians"
+        ],
+        "explanation": "The prophets’ failure to protect and strengthen Israel is pictured as not standing in gaps of a city wall and not repairing its defenses.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּיוֹם יְהוָה",
+        "english_text": "in the day of GOD",
+        "target": [
+          "the time of God’s decisive judgment on Israel",
+          "historical crisis as divine visitation",
+          "theological event of judgment/deliverance"
+        ],
+        "vehicle": [
+          "a 'day' belonging to YHWH",
+          "a calendrical time period attributed to a person",
+          "temporal imagery"
+        ],
+        "ground": [
+          "a specific, appointed time controlled by God",
+          "a concentrated occasion of action and decision",
+          "God’s sovereign ownership of history"
+        ],
+        "posture": [
+          "warning about inevitable judgment",
+          "prophetic eschatological idiom",
+          "theological framing of history as God’s time"
+        ],
+        "explanation": "The idiom 'day of GOD' uses 'day' metonymically for a period of decisive divine intervention, not a mere 24-hour span.",
+        "confidence": 0.74
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 13:6",
+    "deliberation": "Checked whether 'false vision' or 'lying divination' were metaphorical; they function as literal descriptors of content. The verbs for speaking, sending, and hoping are used straightforwardly. No distinct figurative expressions stand out.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 13:7",
+    "deliberation": "Again examined 'vision of falsehood' and 'lying divination'. These are evaluative but not structurally figurative; the language is essentially literal accusation about their practices.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 13:8",
+    "deliberation": "Considered whether 'I am against you' should be treated as figurative spatial language, but here it functions as a direct statement of opposition without a developed image. No clear metaphor, simile, or personification is present.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 13:9",
+    "deliberation": "Identified 'My hand will be against the prophets' as a stock but still figurative way of describing divine action and opposition, using body-part metonymy and power metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהָיְתָה יָדִי אֶל־הַנְּבִיאִים",
+        "english_text": "My hand will be against the prophets",
+        "target": [
+          "God’s active opposition to the false prophets",
+          "divine judgment and punitive power",
+          "the relationship between God and deceptive leaders"
+        ],
+        "vehicle": [
+          "YHWH’s 'hand' turned against someone",
+          "a physical hand applying pressure or harm",
+          "human bodily action and power"
+        ],
+        "ground": [
+          "power and agency exercised against a target",
+          "ability to control, strike, or restrain",
+          "God’s capability to enact judgment"
+        ],
+        "posture": [
+          "threatening judicial stance",
+          "prophetic warning of impending punishment",
+          "theological assertion of God’s sovereign power"
+        ],
+        "explanation": "God’s 'hand' stands metonymically for His power and action, and His being 'against' them metaphorically depicts decisive opposition and judgment.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 13:10",
+    "deliberation": "Noted the contrast 'peace, when there is no peace' as a factual contradiction rather than structured irony. The primary figurative element is the flimsy wall being built and whitewashed, representing fragile policy and false assurance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהוּא בֹּנֶה חַיִץ וְהִנָּם טָחִים אֹתוֹ תָּפֵל",
+        "english_text": "the people were building a flimsy wall, and they daubed it with plaster",
+        "target": [
+          "the people’s unsound policies and defenses, and the prophets’ deceptive support",
+          "Israel’s false sense of security",
+          "the social-political and spiritual condition of the nation"
+        ],
+        "vehicle": [
+          "a shoddy wall being constructed and whitewashed",
+          "poorly built masonry covered with superficial plaster",
+          "construction and cosmetic repair work"
+        ],
+        "ground": [
+          "outward appearance that hides structural weakness",
+          "temporary, cosmetic fixes instead of real stability",
+          "deception about actual safety and durability"
+        ],
+        "posture": [
+          "derisive exposure of false assurances",
+          "prophetic critique of superficial remedies",
+          "theological insistence on genuine security from God"
+        ],
+        "explanation": "The flimsy wall and its whitewash picture the people’s fragile defenses and the prophets’ deceptive assurances that make it look solid while remaining unsafe.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 13:11",
+    "deliberation": "The verse continues the wall imagery and introduces violent weather as the agent of its collapse; this commonly symbolizes divine judgment. Hailstones are also addressed directly in the second person, giving a degree of personification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הָיָה גֶּשֶׁם שׁוֹטֵף ... וְר֥וּחַ סְעָרוֹת תְּבַקֵּעַ",
+        "english_text": "a driving rain shall descend … and a hurricane wind shall rend it",
+        "target": [
+          "God’s destructive judgment against the false security",
+          "the forces that will test and destroy Israel’s fragile defenses",
+          "historical calamity as divine action"
+        ],
+        "vehicle": [
+          "torrential rain and hurricane wind breaking a wall",
+          "a violent storm battering a structure",
+          "extreme weather phenomena"
+        ],
+        "ground": [
+          "irresistible, overwhelming force",
+          "exposure of structural weakness under stress",
+          "sudden, destructive impact"
+        ],
+        "posture": [
+          "threatening, vivid warning",
+          "prophetic visualization of coming catastrophe",
+          "theological portrayal of God’s wrath as a storm"
+        ],
+        "explanation": "The storm imagery functions as a metaphor for the overwhelming judgment that will expose and destroy the flimsy, whitewashed 'wall' of false security.",
+        "confidence": 0.8
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַתֵּנָה אַבְנֵי אֶלְגָּבִישׁ תִּפֹּלְנָה",
+        "english_text": "and you, O great hailstones, shall fall",
+        "target": [
+          "the destructive agents of judgment (hailstones)",
+          "forces used by God to destroy the wall",
+          "natural phenomena as instruments"
+        ],
+        "vehicle": [
+          "hailstones addressed as 'you' and commanded",
+          "persons being spoken to and acting on command",
+          "human agents under orders"
+        ],
+        "ground": [
+          "hail falling in obedience to God’s will",
+          "agency and responsiveness",
+          "hail as an instrument wielded intentionally"
+        ],
+        "posture": [
+          "dramatic personification stressing divine control",
+          "prophetic rhetoric enlivening the scene",
+          "theological assertion of God’s sovereignty over nature"
+        ],
+        "explanation": "By addressing the hailstones in the second person, the text personifies them as obedient agents carrying out God’s destructive purpose.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 13:12",
+    "deliberation": "The imagery continues the earlier wall/plaster figure and uses a rhetorical question to highlight its failure. The wall still symbolizes false security; there is no new, distinct image beyond that.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִנֵּה נָפַל הַקִּיר ... אַיֵּה הַטִּיחַ אֲשֶׁר טַחְתֶּם",
+        "english_text": "Then, when the wall collapses, you will be asked, ‘What became of the plaster you daubed on?’",
+        "target": [
+          "the collapse of Israel’s deceptive defenses and assurances",
+          "the exposure of false prophecy and policy",
+          "the community’s trust-structure"
+        ],
+        "vehicle": [
+          "a wall that falls and loses its plaster",
+          "failed construction and ruined cosmetic coating",
+          "building craftsmanship subjected to stress"
+        ],
+        "ground": [
+          "inability of superficial fixes to withstand reality",
+          "public exposure of shoddy work",
+          "embarrassment and accountability after failure"
+        ],
+        "posture": [
+          "mocking, accusatory stance",
+          "prophetic anticipation of humiliating exposure",
+          "theological insistence that falsehood will not stand"
+        ],
+        "explanation": "The question about the fallen, whitewashed wall vividly portrays how the prophets’ superficial assurances will be exposed as worthless when judgment comes.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 13:13",
+    "deliberation": "This verse repeats and intensifies the storm imagery, explicitly linking it with divine wrath. The meteorological language continues to function as a metaphor for God’s comprehensive, destructive judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּבִקַּעְתִּי רוּחַ־סְעָרוֹת בַּחֲמָתִי וְגֶשֶׁם שֹׁטֵף בְּאַפִּי ... וְאַבְנֵי אֶלְגָּבִישׁ בְּחֵמָה לְכָלָה",
+        "english_text": "In My fury I will let loose hurricane winds; in My anger a driving rain shall descend, and great hailstones in destructive fury.",
+        "target": [
+          "God’s fierce judgment against the false prophets and their system",
+          "the historical calamity that will devastate Israel",
+          "divine punitive action"
+        ],
+        "vehicle": [
+          "raging storm winds, torrential rain, and smashing hail",
+          "catastrophic weather obliterating what stands in its way",
+          "nature’s most violent forces"
+        ],
+        "ground": [
+          "irresistible, comprehensive destruction",
+          "alignment of natural violence with divine wrath",
+          "suddenness and intensity of the event"
+        ],
+        "posture": [
+          "graphic, fearful warning",
+          "prophetic dramatization of judgment",
+          "theological portrayal of wrath as a natural cataclysm"
+        ],
+        "explanation": "Storm winds, driving rain, and hailstones symbolize the overwhelming and total nature of God’s wrathful judgment that will annihilate the false structure.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 13:14",
+    "deliberation": "Still within the same extended picture: the wall being torn down to its foundations, with people perishing in its collapse, represents the destruction of the false system they relied on.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהָרַסְתִּי אֶת־הַקִּיר אֲשֶׁר־טַחְתֶּם תָּפֵל ... וְנִגְלָה יְסֹדוֹ וְנָפְלָה וּכְלִיתֶם בְּתוֹכָהּ",
+        "english_text": "I will throw down the wall that you daubed with plaster … so that its foundation is exposed; and when it falls, you shall perish in its midst",
+        "target": [
+          "the collapse of the false prophetic system and its adherents",
+          "Israel’s illusory security structure",
+          "the community’s reliance on deceptive assurances"
+        ],
+        "vehicle": [
+          "a plastered wall demolished to the ground, exposing its foundation, with people dying in its fall",
+          "structural failure of a building under stress",
+          "architectural ruin"
+        ],
+        "ground": [
+          "total failure of what seemed to protect",
+          "exposure of what lies beneath appearances",
+          "shared ruin of both the structure and those attached to it"
+        ],
+        "posture": [
+          "severe, judicial tone",
+          "prophetic unveiling and destruction of false refuge",
+          "theological insistence that trust in lies leads to ruin"
+        ],
+        "explanation": "The wall and its exposed foundation continue to represent the collapse and unmasking of Israel’s deceptive defenses, carrying its builders down with it.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 13:15",
+    "deliberation": "Here God speaks of spending His fury on the wall and its daubers, still treating the wall as the emblem of the whole deceptive enterprise. The wall has become a symbolic object of wrath.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְכִלֵּיתִי אֶת־חֲמָתִי בַּקִּיר וּבַטָּחִים אֹתוֹ תָּפֵל",
+        "english_text": "And when I have spent My fury upon the wall and upon those who daubed it with plaster",
+        "target": [
+          "God’s termination of the false prophetic system and its proponents",
+          "the objects of divine anger (system and people)",
+          "the nexus of deception in Israel"
+        ],
+        "vehicle": [
+          "pouring out and exhausting wrath on a wall and its plasterers",
+          "anger directed at a physical structure embodying a project",
+          "judicial demolition of a building"
+        ],
+        "ground": [
+          "completely removing what provokes wrath",
+          "treating the constructed system as the focus of judgment",
+          "identification of people with their work"
+        ],
+        "posture": [
+          "final, conclusive judgment",
+          "prophetic declaration that nothing of the false edifice remains",
+          "theological assertion of God’s thorough justice"
+        ],
+        "explanation": "The wall serves metonymically for the entire deceptive enterprise; God’s wrath is pictured as being poured out on it and its makers until both are gone.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 13:16",
+    "deliberation": "The key element is the claim of a 'vision of peace' when there is no peace; the figure lies in the biting contradiction between proclaimed shalom and actual conditions, which functions as irony rather than a new metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהַחֹזִים לָהּ חֲזוֹן שָׁלוֹם וְאֵין שָׁלוֹם",
+        "english_text": "who see a vision of well-being for her when there is no well-being",
+        "target": [
+          "the false prophetic assurances about Jerusalem",
+          "the content of their oracles",
+          "Jerusalem’s actual situation"
+        ],
+        "vehicle": [
+          "a 'vision of peace' contrasted with the reality of no peace",
+          "claiming to see a state of shalom that does not exist",
+          "visionary language"
+        ],
+        "ground": [
+          "stark discrepancy between proclamation and reality",
+          "self-deluding or deceptive optimism",
+          "ironic reversal of expected correlation between vision and truth"
+        ],
+        "posture": [
+          "ironical exposure of false prophecy",
+          "prophetic discrediting of their claimed visions",
+          "theological insistence on the difference between divine and false shalom"
+        ],
+        "explanation": "The phrase functions ironically: they claim a 'vision of peace' precisely where peace is absent, highlighting the falsity of their visions.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 13:17",
+    "deliberation": "The unusual expression 'set your face against' is idiomatic and metaphorical, using bodily orientation to represent determined opposition.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִׂים פָּנֶיךָ אֶל־בְּנוֹת עַמֶּךָ",
+        "english_text": "set your face against the women of your people",
+        "target": [
+          "Ezekiel’s prophetic stance of opposition toward the women",
+          "his commission to confront them",
+          "interpersonal prophetic confrontation"
+        ],
+        "vehicle": [
+          "directing one’s face against someone",
+          "turning one’s countenance toward an adversary",
+          "physical orientation in conflict"
+        ],
+        "ground": [
+          "firm, intentional, public opposition",
+          "readiness to confront and not turn away",
+          "visible determination"
+        ],
+        "posture": [
+          "commanding Ezekiel to take an adversarial posture",
+          "prophetic boldness in denouncing wrongdoing",
+          "theological legitimacy of confronting false spirituality"
+        ],
+        "explanation": "The idiom pictures Ezekiel’s calling as turning his face like an adversary toward these women, representing his role as their open opponent.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 13:18",
+    "deliberation": "The sewing of magical objects may be literal, but the key figurative expression is 'to hunt down lives/souls', which compares their manipulative activity to hunting prey.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְצוֹדֵד נְפָשׁוֹת ... הַנְּפָשׁוֹת תְּצוֹדֵדְנָה לְעַמִּי",
+        "english_text": "in order to entrap! Can you hunt down lives among My people",
+        "target": [
+          "the women’s deceptive, harmful influence over people",
+          "their spiritual exploitation of others",
+          "the status of individuals they control"
+        ],
+        "vehicle": [
+          "hunting/ensnaring lives like prey",
+          "capturing animals in traps or nets",
+          "the domain of hunting and capture"
+        ],
+        "ground": [
+          "actively pursuing and capturing victims",
+          "treating people as objects to be trapped",
+          "predatory, exploitative behavior"
+        ],
+        "posture": [
+          "strong moral condemnation",
+          "prophetic exposure of predatory spirituality",
+          "theological defense of God’s people from exploitation"
+        ],
+        "explanation": "Their harmful spiritual practices are depicted as hunting down human lives, treating them like animals to be trapped and controlled.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 13:19",
+    "deliberation": "Examined the economic images and death/life contrasts; these are largely literal. The main figurative element is in the idea of 'profaning My name', where 'name' stands metonymically for God’s reputation and revealed character.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתְּחַלֶּלְנָה אֹתִי אֶל־עַמִּי (rendered: 'My name')",
+        "english_text": "You have profaned My name among My people",
+        "target": [
+          "God’s reputation and holiness as perceived by His people",
+          "the honor due to YHWH",
+          "theological understanding of God"
+        ],
+        "vehicle": [
+          "God’s 'name' being profaned",
+          "a personal name representing one’s honor",
+          "linguistic designation of identity"
+        ],
+        "ground": [
+          "actions toward the name affecting regard for the person",
+          "reputation being damaged by misrepresentation",
+          "link between worship practice and God’s perceived holiness"
+        ],
+        "posture": [
+          "indignant accusation",
+          "prophetic defense of God’s holiness",
+          "theological assertion that God’s honor is bound to His people’s conduct"
+        ],
+        "explanation": "God’s 'name' functions metonymically for His person and reputation; by their deceit, they treat His name as common or defiled before the people.",
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 13:20",
+    "deliberation": "The repeated language of hunting lives, with lives portrayed as flying creatures to be snared and released, clearly forms a metaphor of people as birds caught and freed from traps.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּסְּתוֹתֵיכֶנָה אֲשֶׁר אַתֵּנָה מְצֹדְדוֹת שָׁם אֶת־הַנְּפָשׁוֹת לְפֹרְחֹת ... וְשִׁלַּחְתִּי אֶת־הַנְּפָשׁוֹת אֲשֶׁר אַתֶּם מְצֹדְד֥וֹת אֶת־נְפָשִׁים לְפֹרְחֹת",
+        "english_text": "your pads, by which you hunt down lives like birds … and free the persons whose lives you hunt down like birds",
+        "target": [
+          "the people whose lives are being spiritually ensnared and then freed",
+          "victims of the women’s practices",
+          "the vulnerable members of the community"
+        ],
+        "vehicle": [
+          "birds being hunted, trapped, and then released to fly",
+          "snared flying creatures escaping from a net",
+          "the domain of bird-hunting"
+        ],
+        "ground": [
+          "vulnerability to being captured and controlled",
+          "sudden liberation from confinement",
+          "light, mobile beings easily trapped but also freed"
+        ],
+        "posture": [
+          "condemnation of manipulative captivity",
+          "promise of divine rescue",
+          "theological assurance that God will free His people from spiritual snares"
+        ],
+        "explanation": "Human lives are depicted as birds that these women hunt and snare with their devices, while God promises to tear the snares away and let the 'birds' go free.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 13:21",
+    "deliberation": "The language of God rescuing His people 'from your hand' and them no longer being 'prey' in that hand extends the hunting/capture metaphor: hand as power, people as prey-animals.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִצַּלְתִּי אֶת־עַמִּי מִיֶּדְכֶן וְלֹא־יִהְיוּ עוֹד בְּיֶדְכֶן לִמְצוּדָה",
+        "english_text": "I will rescue My people from your hands, and they shall no longer be prey in your hands",
+        "target": [
+          "God’s people under the women’s control",
+          "their state of oppression and vulnerability",
+          "the power dynamic between deceivers and victims"
+        ],
+        "vehicle": [
+          "prey animals held in a hunter’s hand",
+          "captured creatures no longer in the grasp of a captor",
+          "hunting and capture imagery"
+        ],
+        "ground": [
+          "being in someone’s grip as being under their power",
+          "victims treated as objects to catch and keep",
+          "deliverance as removal from an oppressor’s grasp"
+        ],
+        "posture": [
+          "reassuring promise of liberation",
+          "prophetic portrayal of God as rescuer of prey",
+          "theological assertion that oppressive power will be broken"
+        ],
+        "explanation": "The women’s 'hand' stands metonymically for their power, and God’s people are portrayed as prey held in that hand until He rescues them.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 13:22",
+    "deliberation": "Two idiomatic metaphors appear: 'saddening/striking the heart of the righteous' with lies, and 'strengthening the hands of the wicked', both using body parts for inner states and capacity for action.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יַעַן הַכְאוֹת לֵב־צַדִּיק שֶׁקֶר",
+        "english_text": "Because you saddened (struck) the heart of the innocent with lies",
+        "target": [
+          "the inner emotional state of the righteous",
+          "their confidence and comfort before God",
+          "psychological well-being"
+        ],
+        "vehicle": [
+          "the 'heart' being struck or hurt",
+          "a physical blow to an internal organ",
+          "bodily injury imagery"
+        ],
+        "ground": [
+          "deep inner pain and discouragement",
+          "vulnerability of the core self to harm",
+          "lies as causing real inner damage"
+        ],
+        "posture": [
+          "moral outrage at inflicted emotional/spiritual harm",
+          "prophetic empathy with the righteous",
+          "theological concern for the wounded heart"
+        ],
+        "explanation": "The 'heart' stands metonymically for the inner life, and describing it as 'struck' by lies metaphorically portrays the deep hurt caused by false prophecy.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּלְחַזֵּק יְדֵי רָשָׁע לְבִלְתִּי־שׁוּב מִדַּרְכּוֹ הָרָע",
+        "english_text": "and encouraged (strengthened) the hands of the wicked so that they do not turn from their evil way",
+        "target": [
+          "the wicked’s ability and resolve to continue in evil",
+          "their encouragement and empowerment",
+          "moral agency in wrongdoing"
+        ],
+        "vehicle": [
+          "strengthening someone’s hands",
+          "giving increased physical power to a person’s hands",
+          "bodily strength and capacity for work or fighting"
+        ],
+        "ground": [
+          "equipping and emboldening for action",
+          "making it easier to carry on harmful deeds",
+          "supporting someone’s efforts"
+        ],
+        "posture": [
+          "condemnation of enabling wickedness",
+          "prophetic critique of those who make evil easier",
+          "theological emphasis on responsibility for others’ sin"
+        ],
+        "explanation": "The 'hands' of the wicked stand metonymically for their capacity to act; to 'strengthen' them is a metaphor for encouraging and enabling their evil behavior.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 13:23",
+    "deliberation": "The main figurative element is again God rescuing His people 'from your hand', with 'hand' as metonymy for oppressive power and captivity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִצַּלְתִּי אֶת־עַמִּי מִיֶּדְכֶן",
+        "english_text": "I will save My people from your hands",
+        "target": [
+          "God’s people under the power of the false prophetesses",
+          "their state of subjugation to deceptive leadership",
+          "social-spiritual bondage"
+        ],
+        "vehicle": [
+          "being in someone’s 'hand' and being taken out of it",
+          "a physical grasp from which someone is rescued",
+          "bodily control and release"
+        ],
+        "ground": [
+          "control and dominance as a grasp",
+          "liberation as being pulled out of another’s grip",
+          "dependence of the weak on a stronger rescuer"
+        ],
+        "posture": [
+          "promise of deliverance",
+          "prophetic assurance that oppressive control will end",
+          "theological portrayal of God as savior from human oppressors"
+        ],
+        "explanation": "The women’s 'hand' metonymically represents their oppressive power, and God’s 'saving' His people from that hand is a metaphor for liberation from their control.",
+        "confidence": 0.88
+      }
+    ]
+  }
+]

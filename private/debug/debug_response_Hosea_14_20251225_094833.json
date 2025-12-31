@@ -1,0 +1,854 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 14:1",
+    "deliberation": "I checked for metaphors, similes, personification, idioms, and metonymy. The violence described (falling by the sword, infants dashed, pregnant women ripped) is likely literal ANE war-language, not hyperbole by default. The main figurative features are (1) \"Samaria\" as the city standing for the whole kingdom/people, and (2) the idiomatic expression \"fall by the sword,\" where \"sword\" stands metonymically for violent military death.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "תֶּאְשַׁם שֹׁמְרוֹן כִּי מָרְתָה בֵּאלֹהֶיהָ",
+        "english_text": "Samaria must bear her guilt, for she has defied her God.",
+        "target": [
+          "the inhabitants/kingdom of Samaria (the northern Israelite polity)",
+          "collective people represented by their capital",
+          "political-theological"
+        ],
+        "vehicle": [
+          "the city of Samaria as a place-name",
+          "capital city standing for its population and regime",
+          "geopolitical"
+        ],
+        "ground": [
+          "the capital embodies and represents the whole kingdom",
+          "association of a place with the people who live and rule there",
+          "conceptual mapping: place ↔ people"
+        ],
+        "posture": [
+          "judicial accusation against the northern kingdom",
+          "condemning stance toward corporate rebellion",
+          "prophetic indictment"
+        ],
+        "explanation": "The name \"Samaria\" does not refer merely to the physical city but metonymically to the entire northern kingdom and its people, who are said to have rebelled against God.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בַּחֶרֶב יִפֹּלוּ",
+        "english_text": "They shall fall by the sword",
+        "target": [
+          "the people of Samaria being killed in war",
+          "violent military defeat and death",
+          "historical-judgment"
+        ],
+        "vehicle": [
+          "falling by the sword",
+          "death in battle by a weapon",
+          "military/combat"
+        ],
+        "ground": [
+          "being struck down and losing life through armed conflict",
+          "the sword as an emblem of warfare and execution",
+          "conceptual mapping: weapon ↔ violent death"
+        ],
+        "posture": [
+          "announcement of severe judgment",
+          "warning of inescapable destruction",
+          "prophetic threat"
+        ],
+        "explanation": "The idiom \"fall by the sword\" uses \"sword\" metonymically for warfare and execution, and \"fall\" metaphorically for being killed, forming a conventional expression for violent military death.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 14:2",
+    "deliberation": "I examined the imperatives and causal clause. \"Return to YHWH\" uses physical movement as a metaphor for repentance/relational restoration. \"You have stumbled because of your iniquity\" uses bodily stumbling as a metaphor for moral/spiritual failure. Both are standard Hoseanic metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שׁוּבָה יִשְׂרָאֵל עַד יְהוָה אֱלֹהֶיךָ",
+        "english_text": "Return, O Israel, to the ETERNAL your God",
+        "target": [
+          "Israel’s covenant relationship and obedience toward God",
+          "moral-spiritual repentance and renewed loyalty",
+          "theological/covenant"
+        ],
+        "vehicle": [
+          "physically returning to a person or place",
+          "reversal of direction and coming back to a prior location",
+          "spatial movement"
+        ],
+        "ground": [
+          "both repentance and physical return involve turning back from a wrong path to a rightful place",
+          "image of restoring broken relationship as going back to someone",
+          "conceptual mapping: spatial return ↔ relational/moral return"
+        ],
+        "posture": [
+          "urgent prophetic appeal for repentance",
+          "invitation to restoration rather than mere condemnation",
+          "pastoral-exhortative"
+        ],
+        "explanation": "The verb \"return\" is not about literal travel but about turning back to God in covenant faithfulness; physical movement is used metaphorically for spiritual and relational restoration.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי כָשַׁלְתָּ בַּעֲוֹנֶךָ",
+        "english_text": "For you have fallen/stumbled because of your sin",
+        "target": [
+          "Israel’s downfall due to sin",
+          "moral/spiritual failure and its consequences",
+          "ethical/theological"
+        ],
+        "vehicle": [
+          "stumbling and falling while walking",
+          "loss of physical balance resulting in a fall",
+          "bodily movement"
+        ],
+        "ground": [
+          "sin disrupts stability and leads to ruin, like an obstacle causing a person to trip",
+          "both stumbling and sin-induced failure involve loss of security and forward progress",
+          "conceptual mapping: physical stumbling ↔ moral/spiritual collapse"
+        ],
+        "posture": [
+          "diagnosis of Israel’s condition",
+          "explaining calamity as morally caused rather than accidental",
+          "didactic/judgmental"
+        ],
+        "explanation": "Israel’s sin is portrayed as an obstacle that causes them to stumble and fall, using the physical experience of tripping as a metaphor for spiritual and national collapse.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 14:3",
+    "deliberation": "I looked at \"take words,\" \"return,\" and especially \"we will pay bulls [of] our lips.\" The verse frames speech as something carried and offered like sacrifice. There are two distinct but related metaphors: (1) \"take words\" treating words as portable objects, and (2) \"pay the bulls of our lips\" equating verbal confession/praise with sacrificial animals.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קְחוּ עִמָּכֶם דְּבָרִים וְשׁוּבוּ אֶל־יְהוָה",
+        "english_text": "Take words with you and return to GOD",
+        "target": [
+          "Israel’s act of repentance and prayer",
+          "verbal confession as an approach to God",
+          "liturgical/theological"
+        ],
+        "vehicle": [
+          "carrying physical objects on a journey to present them",
+          "portable items brought as an offering or gift",
+          "ritual/material"
+        ],
+        "ground": [
+          "words are treated as if they were tangible offerings to be brought before God",
+          "both offerings and words are deliberately prepared and presented",
+          "conceptual mapping: verbal confession ↔ carried sacrificial gift"
+        ],
+        "posture": [
+          "instruction in how to repent properly",
+          "emphasis on sincere speech rather than mere ritual",
+          "didactic/pastoral"
+        ],
+        "explanation": "The prophet pictures Israelites \"taking\" words as if they were physical items to bring on the journey back to God, metaphorically framing confession as a carried offering.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּנְשַׁלְּמָה פָרִים שְׂפָתֵינוּ",
+        "english_text": "Instead of bulls we will pay [the offering of] our lips / we will pay the bulls of our lips",
+        "target": [
+          "Israel’s prayers, confessions, and words of praise",
+          "verbal worship offered to God",
+          "liturgical/theological"
+        ],
+        "vehicle": [
+          "bulls brought as sacrificial payment/offerings",
+          "costly animals surrendered at the altar",
+          "cultic/sacrificial"
+        ],
+        "ground": [
+          "both sacrificial bulls and sincere words are costly offerings given to God in worship",
+          "speech, like sacrifice, is presented and \"paid\" to restore relationship",
+          "conceptual mapping: lips’ offerings ↔ sacrificial animals"
+        ],
+        "posture": [
+          "reorientation from external ritual to heartfelt worship",
+          "valuing confession and praise over mere animal sacrifice",
+          "reformist/theological"
+        ],
+        "explanation": "The phrase equates the offerings of the lips—prayer and praise—with bulls given in sacrifice, treating verbal worship as a sacrificial payment to God.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 14:4",
+    "deliberation": "I considered whether \"Assyria shall not save us\" or \"ride on horses\" are figurative; they are mainly literal references to political-military reliance. The clearly figurative expression is \"the work of our hands\" used for idols, a metonymy where what is produced stands for the cult objects themselves.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא־נֹאמַר עוֹד אֱלֹהֵינוּ לְמַעֲשֵׂה יָדֵינוּ",
+        "english_text": "Nor ever again will we call our handiwork our god",
+        "target": [
+          "the idols Israel has made and worshiped",
+          "man-made cult objects treated as deities",
+          "religious/cultic"
+        ],
+        "vehicle": [
+          "\"the work of our hands\"",
+          "products of human craftsmanship",
+          "labor/product"
+        ],
+        "ground": [
+          "idols are in fact human artifacts, the result of their handiwork",
+          "focusing on their manufactured origin exposes the folly of calling them \"our god\"",
+          "conceptual mapping: manufactured object ↔ idol"
+        ],
+        "posture": [
+          "repudiation of idolatry and self-made deities",
+          "humbling acknowledgment of human limitation",
+          "confessional/penitential"
+        ],
+        "explanation": "The phrase \"work of our hands\" stands metonymically for the idols themselves, highlighting that what they have worshiped as gods are merely human-crafted objects.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 14:5",
+    "deliberation": "I looked at \"I will heal their backsliding\" and \"my anger has turned away\". The first uses medical imagery for spiritual restoration, and the second personifies divine anger as something that can \"turn away\" from a person. Both are conventional but still clearly figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶרְפָּא מְשׁוּבָתָם",
+        "english_text": "I will heal their affliction / I will heal their backsliding",
+        "target": [
+          "Israel’s apostasy and covenant unfaithfulness",
+          "spiritual-moral sickness and alienation",
+          "theological/ethical"
+        ],
+        "vehicle": [
+          "a sick or wounded condition that needs healing",
+          "illness cured by a physician",
+          "medical"
+        ],
+        "ground": [
+          "apostasy weakens and corrupts like a disease, and restoration is like healing",
+          "both involve a move from damaged to whole condition by an expert healer",
+          "conceptual mapping: spiritual infidelity ↔ disease; divine forgiveness ↔ healing"
+        ],
+        "posture": [
+          "promise of compassionate restoration",
+          "portraying God as a healer rather than only a judge",
+          "pastoral/consolatory"
+        ],
+        "explanation": "The Lord describes Israel’s waywardness as something to be \"healed,\" using medical imagery for the process of forgiveness and spiritual restoration.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי שָׁב אַפִּי מִמֶּנּוּ",
+        "english_text": "For My anger has turned away from him",
+        "target": [
+          "the cessation of God’s punitive wrath toward Israel",
+          "change in God’s stance from opposition to favor",
+          "theological"
+        ],
+        "vehicle": [
+          "anger (lit. \"my nose\") turning back or away like a person changing direction",
+          "an attacking force or hostile face that turns aside",
+          "spatial/relational movement"
+        ],
+        "ground": [
+          "when anger turns away, the threat is removed, like an attacker withdrawing",
+          "both involve a shift in orientation from confrontation to non-confrontation",
+          "conceptual mapping: emotional stance ↔ spatial orientation"
+        ],
+        "posture": [
+          "announcing the end of divine hostility",
+          "reassuring the audience of renewed favor",
+          "consolatory/theological"
+        ],
+        "explanation": "God’s \"anger\" is personified as something that can turn away from someone, depicting the end of judgment as the withdrawal of a hostile presence.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 14:6",
+    "deliberation": "I noted three explicit similes marked by כ-: God \"like dew\" to Israel, Israel \"blossom like the lily,\" and Israel \"strike root like Lebanon.\" These use agricultural and botanical imagery to portray divine blessing, beauty, and stability.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶהְיֶה כַטַּל לְיִשְׂרָאֵל",
+        "english_text": "I will be to Israel like dew",
+        "target": [
+          "YHWH’s life-giving influence on Israel",
+          "divine blessing and renewal",
+          "theological"
+        ],
+        "vehicle": [
+          "dew that falls gently on plants in a dry climate",
+          "quiet, regular moisture that sustains growth",
+          "natural/agricultural"
+        ],
+        "ground": [
+          "both dew and divine favor provide gentle, essential refreshment leading to life and growth",
+          "image of unobtrusive yet vital nourishment",
+          "conceptual mapping: dew ↔ God’s sustaining grace"
+        ],
+        "posture": [
+          "comforting promise of tender care",
+          "emphasis on gentleness rather than harshness",
+          "pastoral/consolatory"
+        ],
+        "explanation": "God compares himself to dew, highlighting the quiet, steady, life-sustaining quality of his restorative presence toward Israel.",
+        "confidence": 0.99
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יִפְרַח כַּשּׁוֹשַׁנָּה",
+        "english_text": "He shall blossom like the lily",
+        "target": [
+          "restored Israel (collective people)",
+          "Israel’s renewed vitality and attractiveness",
+          "national/theological"
+        ],
+        "vehicle": [
+          "a lily blossoming",
+          "a flower’s fresh and visible bloom",
+          "botanical"
+        ],
+        "ground": [
+          "both blooming flowers and renewed Israel display visible beauty and life after a dormant or damaged period",
+          "emphasis on freshness and aesthetic appeal",
+          "conceptual mapping: floral blossoming ↔ national/spiritual flourishing"
+        ],
+        "posture": [
+          "optimistic portrayal of Israel’s future",
+          "highlighting beauty rather than shame",
+          "restorative/pastoral"
+        ],
+        "explanation": "Israel is likened to a lily in bloom, picturing the community’s renewed life and beauty after repentance and healing.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְיַךְ שָׁרָשָׁיו כַּלְּבָנון",
+        "english_text": "He shall strike root like a Lebanon tree",
+        "target": [
+          "Israel’s stability and deep-rootedness after restoration",
+          "firmness and enduring strength of the nation",
+          "national/theological"
+        ],
+        "vehicle": [
+          "trees of Lebanon (especially cedars) with deep, strong roots",
+          "a well-rooted, majestic forest tree",
+          "botanical/geographical"
+        ],
+        "ground": [
+          "cedars of Lebanon are renowned for strength and permanence; a deeply rooted tree resists storms",
+          "similarly, a restored Israel will be stable and enduring",
+          "conceptual mapping: strong tree roots ↔ national durability"
+        ],
+        "posture": [
+          "assurance of long-term security",
+          "countering previous images of uprooting and judgment",
+          "reassuring/theological"
+        ],
+        "explanation": "Lebanon (its famous trees) serves as the comparison point for Israel’s renewed rootedness, depicting the nation as firmly established like a mighty cedar.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 14:7",
+    "deliberation": "I observed a continued arboreal imagery: shoots going forth, beauty like an olive tree, fragrance like Lebanon. The first treats Israel as a tree whose new growth spreads; the next two are explicit similes of splendor and aroma drawn from olive and Lebanon’s forests.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יֵלְכוּ יֹנְקוֹתָיו",
+        "english_text": "His boughs/shoots shall spread out",
+        "target": [
+          "the expansion and vitality of restored Israel (people, influence, descendants)",
+          "growth in numbers, influence, and blessing",
+          "national/theological"
+        ],
+        "vehicle": [
+          "young shoots of a tree growing and extending outward",
+          "vigorous new branches spreading from a trunk",
+          "botanical"
+        ],
+        "ground": [
+          "both spreading shoots and national revival involve increase and outward extension",
+          "image of organic, continual growth rather than sudden change",
+          "conceptual mapping: tree’s new growth ↔ community’s expansion"
+        ],
+        "posture": [
+          "hopeful vision of future flourishing",
+          "stressing organic, God-given growth",
+          "consolatory/prophetic"
+        ],
+        "explanation": "Israel is depicted as a tree whose young shoots go forth, portraying the people’s renewed vigor and expanding life.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וִיהִי כַזַּיִת הוֹדוֹ",
+        "english_text": "His beauty shall be like the olive tree’s",
+        "target": [
+          "the attractiveness or honor of restored Israel",
+          "Israel’s external splendor and esteem",
+          "social/theological"
+        ],
+        "vehicle": [
+          "the olive tree’s beauty (evergreen, fruitful)",
+          "a dignified, valuable tree in the landscape",
+          "botanical/agricultural"
+        ],
+        "ground": [
+          "both an olive tree and a restored nation are marked by enduring vitality and valued presence",
+          "emphasis on steady, fruitful attractiveness rather than fleeting glamour",
+          "conceptual mapping: attractive tree ↔ honored community"
+        ],
+        "posture": [
+          "reversal of previous shame and disfigurement",
+          "affirmation of restored dignity",
+          "restorative"
+        ],
+        "explanation": "Israel’s renewed honor is compared to the beauty of an olive tree, a symbol of enduring, fruitful attractiveness.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְרֵיחַ לוֹ כַּלְּבָנון",
+        "english_text": "His fragrance like that of Lebanon",
+        "target": [
+          "the pleasing effect and reputation of Israel",
+          "the community’s attractive presence and influence",
+          "social/theological"
+        ],
+        "vehicle": [
+          "the fragrance of Lebanon’s forests (cedars, etc.)",
+          "a delightful, refreshing natural aroma",
+          "geographical/botanical"
+        ],
+        "ground": [
+          "a fragrant forest gives pleasure to those near it; a restored Israel will be similarly pleasing to others (and to God)",
+          "both evoke delight and attraction rather than repulsion",
+          "conceptual mapping: pleasant scent ↔ favorable impact/reputation"
+        ],
+        "posture": [
+          "portraying Israel as a source of delight",
+          "countering earlier imagery of stench associated with judgment",
+          "reassuring/restorative"
+        ],
+        "explanation": "By likening Israel’s \"fragrance\" to that of Lebanon, the text uses the well-known aroma of Lebanon’s woods as a simile for the community’s renewed, pleasing reputation.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 14:8",
+    "deliberation": "I noted continuing tree imagery: those who sit in his shade, blossoming like the vine, remembrance like the wine of Lebanon. \"Sitting in shade\" metaphorically conveys protection and benefit; the latter two are explicit similes linking flourishing and renown to vineyard and wine imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יָשֻׁבוּ יֹשְׁבֵי בְצִלּוֹ",
+        "english_text": "They who sit in his shade shall return",
+        "target": [
+          "those under the protection and beneficent influence of the restored Israel (or of God pictured as the tree’s owner)",
+          "beneficiaries of covenant restoration",
+          "social/theological"
+        ],
+        "vehicle": [
+          "people sitting in the shade of a large tree",
+          "resting securely under protective cover from heat",
+          "environmental/botanical"
+        ],
+        "ground": [
+          "both shade-dwellers and protected people experience relief, security, and refreshment",
+          "shade shelters from oppressive heat as God’s favor shelters from harm",
+          "conceptual mapping: tree’s shade ↔ protective care"
+        ],
+        "posture": [
+          "depicting restored community as a place of refuge",
+          "encouraging trust in the renewed order",
+          "pastoral/invitational"
+        ],
+        "explanation": "Those who benefit from Israel’s restoration are pictured as people sitting in the shade of a tree, an image of protection and refreshment.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיִפְרְחוּ כַגָּפֶן",
+        "english_text": "They shall blossom like the vine",
+        "target": [
+          "the community’s renewed fruitfulness and joy",
+          "those sheltered under the restored order flourishing",
+          "social/theological"
+        ],
+        "vehicle": [
+          "a grapevine blossoming and bearing fruit",
+          "productive, luxuriant vineyard growth",
+          "viticultural/botanical"
+        ],
+        "ground": [
+          "both a flourishing vine and a restored people show evident, fruitful growth",
+          "image of abundance and festal joy associated with vineyards",
+          "conceptual mapping: vine’s blossoming ↔ communal prosperity"
+        ],
+        "posture": [
+          "celebratory vision of future abundance",
+          "promoting hope after devastation",
+          "consolatory"
+        ],
+        "explanation": "Those under this shade will flourish as a vine does, suggesting a life of abundance and joy comparable to a thriving vineyard.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "זִכְרוֹ כְּיֵין לְבָנון",
+        "english_text": "His memory/fame shall be like the wine of Lebanon",
+        "target": [
+          "the lasting reputation and remembered character of the restored figure/community",
+          "public perception and remembrance",
+          "social/theological"
+        ],
+        "vehicle": [
+          "wine of Lebanon with its aroma and quality",
+          "a well-regarded, delightful vintage",
+          "culinary/geographical"
+        ],
+        "ground": [
+          "both fine wine and good reputation are long-remembered, cherished, and enjoyed",
+          "emphasis on pleasant, enduring impact",
+          "conceptual mapping: fine wine ↔ desirable renown"
+        ],
+        "posture": [
+          "affirmation of a positive, enduring legacy",
+          "contrasting former notoriety with future honor",
+          "restorative"
+        ],
+        "explanation": "By comparing his remembrance to the wine of Lebanon, the text likens the community’s future reputation to a prized, enjoyable wine, emphasizing pleasant and enduring renown.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 14:9",
+    "deliberation": "I focused on God’s self-description: \"I am like a verdant cypress\" and \"from me your fruit is found.\" The first is an explicit simile using an evergreen tree for God’s protective, life-giving character; the second uses \"fruit\" metaphorically for benefits/blessings that come from God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲנִי כִּבְרוֹשׁ רַעֲנָן",
+        "english_text": "I am like a verdant cypress",
+        "target": [
+          "YHWH’s protective, life-giving presence",
+          "God’s enduring vitality and sheltering role",
+          "theological"
+        ],
+        "vehicle": [
+          "a green, luxuriant cypress tree",
+          "an evergreen providing shade and visual prominence",
+          "botanical"
+        ],
+        "ground": [
+          "both a verdant cypress and God are characterized by enduring life, stability, and the ability to provide shelter",
+          "image of constancy and protection",
+          "conceptual mapping: evergreen tree ↔ steadfast divine protector"
+        ],
+        "posture": [
+          "self-revelation of God as a life-giving refuge",
+          "inviting trust away from idols",
+          "polemical/pastoral"
+        ],
+        "explanation": "God likens himself to a flourishing cypress, emphasizing his constant, sheltering, and life-sustaining nature in contrast to lifeless idols.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִמֶּנִּי פֶּרְיְךָ נִמְצָא",
+        "english_text": "Your fruit is provided by Me / From Me your fruit is found",
+        "target": [
+          "the benefits, prosperity, and moral/spiritual outcomes Israel experiences",
+          "all good results in Israel’s life",
+          "theological/ethical"
+        ],
+        "vehicle": [
+          "fruit produced by a tree",
+          "visible, edible produce of a plant",
+          "agricultural"
+        ],
+        "ground": [
+          "fruit is the natural outcome of a tree’s life; blessings and good deeds are the outcome of God’s enabling grace",
+          "both are dependent on a prior source for their existence",
+          "conceptual mapping: fruit ↔ results/blessings"
+        ],
+        "posture": [
+          "reorienting Israel to recognize God as the sole source of all good",
+          "undermining trust in idols or self-sufficiency",
+          "theological/exhortative"
+        ],
+        "explanation": "The verse uses \"fruit\" as a metaphor for all beneficial outcomes in Israel’s life, attributing them to God as the true source, just as fruit comes from a tree.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 14:10",
+    "deliberation": "I examined the wisdom appeal and especially the expressions about \"the paths/ways of YHWH\" being straight, the righteous walking in them, and transgressors stumbling. This is a sustained path/walk metaphor: God’s will as a road, obedience as walking, and disobedience as stumbling. I treat the three clauses as distinct figurative instances within one conceptual field.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־יְשָׁרִים דַּרְכֵי יְהוָה",
+        "english_text": "For the paths/ways of GOD are smooth/straight",
+        "target": [
+          "God’s moral will and covenantal directives",
+          "the divinely ordained pattern of life",
+          "theological/ethical"
+        ],
+        "vehicle": [
+          "straight/smooth roads or paths",
+          "a roadway with no crookedness or obstacles",
+          "spatial/journeys"
+        ],
+        "ground": [
+          "straight paths are reliable and safe; God’s ways are morally right and trustworthy",
+          "both suggest predictability, integrity, and non-deviousness",
+          "conceptual mapping: moral order ↔ roadway geometry"
+        ],
+        "posture": [
+          "commending confidence in God’s standards",
+          "presenting divine instruction as inherently sound, not treacherous",
+          "wisdom/didactic"
+        ],
+        "explanation": "God’s \"ways\" are depicted as \"straight\" paths, a metaphor that portrays his moral will as a reliable, non-crooked road for life.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְצַדִּקִים יֵלְכוּ בָם",
+        "english_text": "The righteous can walk on them",
+        "target": [
+          "the conduct and life-course of righteous people",
+          "ongoing obedience and faithful living",
+          "ethical/spiritual"
+        ],
+        "vehicle": [
+          "walking along a path or road",
+          "deliberate forward movement on a way",
+          "bodily movement/journeys"
+        ],
+        "ground": [
+          "just as a traveler progresses by walking a path, the righteous advance in life by following God’s ways",
+          "both involve steady, purposeful progression within a defined route",
+          "conceptual mapping: moral conduct ↔ walking"
+        ],
+        "posture": [
+          "encouraging adherence to God’s ways as practicable and livable",
+          "portraying righteousness as a journey rather than a momentary act",
+          "didactic/exhortative"
+        ],
+        "explanation": "The righteous are said to \"walk\" in God’s ways, using the act of traveling on a path as a metaphor for living in obedience.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּפֹשְׁעִים יִכָּשְׁלוּ בָם",
+        "english_text": "While sinners/transgressors stumble on them",
+        "target": [
+          "the failure and downfall of those who rebel against God",
+          "spiritual and ethical collapse under God’s standards",
+          "ethical/theological"
+        ],
+        "vehicle": [
+          "stumbling while walking along a path",
+          "tripping and falling due to inability or unwillingness to walk rightly",
+          "bodily movement/journeys"
+        ],
+        "ground": [
+          "transgressors trip over the very standards meant for good, like clumsy travelers stumbling on a road",
+          "both involve inability to navigate a path properly, resulting in harm",
+          "conceptual mapping: moral failure ↔ physical stumbling"
+        ],
+        "posture": [
+          "warning that resistance to God’s ways brings self-injury",
+          "highlighting the paradox that what is right becomes a stumbling block to the wicked",
+          "admonitory/wisdom"
+        ],
+        "explanation": "The verse portrays rebels as stumbling on God’s paths, turning the road meant for secure walking into a site of their own fall, a metaphor for moral and spiritual ruin.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

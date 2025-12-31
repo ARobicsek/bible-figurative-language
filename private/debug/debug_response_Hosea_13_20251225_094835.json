@@ -1,0 +1,885 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 13:1",
+    "deliberation": "Considered whether the verse is purely historical or uses figurative language. Detected (1) 'Ephraim' as metonymy for the northern kingdom and (2) 'he died' as a metaphor for national/spiritual ruin rather than literal physical death of a single person. No similes or hyperbole present.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶפְרַיִם",
+        "english_text": "Ephraim",
+        "target": [
+          "the northern kingdom of Israel as a whole",
+          "political-religious community",
+          "human community / covenant people"
+        ],
+        "vehicle": [
+          "the tribe/territory of Ephraim",
+          "subgroup name within Israel",
+          "ethnic-geographical designation"
+        ],
+        "ground": [
+          "Ephraim’s prominence representing the whole kingdom",
+          "using a leading tribe to stand for the entire nation",
+          "part–whole political representation"
+        ],
+        "posture": [
+          "prophetic address to the whole northern kingdom under the name ‘Ephraim’",
+          "collective indictment",
+          "prophetic discourse / covenant lawsuit"
+        ],
+        "explanation": "The proper name 'Ephraim' stands not merely for the individual ancestor or single tribe but for the entire northern kingdom, a standard prophetic metonymy/ synecdoche.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיֶּאְשַׁם בַּבַּעַל וַיָּמֹת",
+        "english_text": "he incurred guilt through Baal, and so he died",
+        "target": [
+          "Ephraim/Israel’s national and spiritual condition",
+          "covenant status / existence as God’s people",
+          "religious-political life of the nation"
+        ],
+        "vehicle": [
+          "an individual ‘dying’",
+          "cessation of life",
+          "human mortality"
+        ],
+        "ground": [
+          "loss of true life and vitality because of idolatry",
+          "guilt leading to ruin like sin leading to physical death",
+          "judgment conceived as death of a person"
+        ],
+        "posture": [
+          "condemnation of idolatry as self-destruction",
+          "warning about the lethal consequences of apostasy",
+          "prophetic judgment speech"
+        ],
+        "explanation": "The clause presents Ephraim’s Baal-guilt as resulting in his ‘death’. This refers not to the literal death of a single person but to the nation’s spiritual and political ruin, using death as a metaphor for covenantal collapse.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 13:2",
+    "deliberation": "Most of the verse describes literal idolatrous practices and man-made images. The unusual cultic phrase about kissing calves is probably literal but framed with prophetic sarcasm, functioning as an ironic exposure of their folly. I therefore mark one instance of irony/satire rather than metaphor or simile.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לָהֶם הֵם אֹמְרִים זֹבְחֵי אָדָם עֲגָלִים יִשָּׁקוּן",
+        "english_text": "For these they say, ‘Those who sacrifice, kiss the calves!’",
+        "target": [
+          "Israel’s idolatrous worshippers and their cultic devotion",
+          "religious behavior / misplaced piety",
+          "covenant infidelity"
+        ],
+        "vehicle": [
+          "humans kissing calf-idols they themselves have made",
+          "servile, demeaning gesture toward animals/objects",
+          "ritual gestures of submission"
+        ],
+        "ground": [
+          "absurdity and degradation of worshiping what they manufactured",
+          "reversal of proper worship (Creator vs. creature)",
+          "shameful dependence on powerless objects"
+        ],
+        "posture": [
+          "prophetic mockery and ironic exposure of idolatry",
+          "satirical stance toward their cult",
+          "rhetorical irony in judgment oracle"
+        ],
+        "explanation": "Hosea’s report ‘Those who sacrifice, kiss the calves!’ is framed as biting irony: it exposes the ridiculous inversion of true worship by highlighting people fawning over calf-idols made from their own silver. The force is satirical rather than literal commendation.",
+        "confidence": 0.74
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 13:3",
+    "deliberation": "The verse is built almost entirely out of similes with כ (ke-) comparing Israel’s fate to transient natural phenomena and agricultural waste. I identify four distinct but parallel similes: morning cloud, early dew, chaff from the threshing floor, and smoke from a lattice.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יִהְיוּ כַּעֲנַן־בֹּקֶר",
+        "english_text": "they shall be like morning clouds",
+        "target": [
+          "the people of Israel and their prosperity/existence",
+          "collective national condition",
+          "human community / covenant people"
+        ],
+        "vehicle": [
+          "‘morning cloud’ that quickly dissipates",
+          "short-lived atmospheric phenomenon",
+          "natural world / weather"
+        ],
+        "ground": [
+          "brevity and insubstantiality of existence",
+          "quick disappearance after brief appearance",
+          "transience"
+        ],
+        "posture": [
+          "announcement of the fleeting nature of Israel’s apparent stability",
+          "warning and judgment",
+          "prophetic denunciation"
+        ],
+        "explanation": "Israel’s future state is compared to a morning cloud that appears briefly and then vanishes, emphasizing the transience of their current prosperity.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַטַּל מַשְׁכִּים הֹלֵךְ",
+        "english_text": "and like dew, early gone",
+        "target": [
+          "Israel’s presence and security",
+          "national stability",
+          "social-political existence"
+        ],
+        "vehicle": [
+          "early morning dew that evaporates",
+          "fleeting moisture on the ground",
+          "natural world / weather"
+        ],
+        "ground": [
+          "rapid vanishing after sunrise",
+          "lack of lasting substance or endurance",
+          "ephemeral quality"
+        ],
+        "posture": [
+          "reinforcement of the theme of rapid disappearance",
+          "intensifying the warning",
+          "prophetic imagery of judgment"
+        ],
+        "explanation": "The people are likened to early morning dew that quickly disappears, again underscoring how swiftly they will vanish under judgment.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּמֹץ יְסֹעֵר מִגֹּרֶן",
+        "english_text": "like chaff whirled away from the threshing floor",
+        "target": [
+          "Israel’s people under judgment",
+          "those to be removed / exiled",
+          "community under divine discipline"
+        ],
+        "vehicle": [
+          "chaff blown off the threshing floor",
+          "worthless husks separated from grain",
+          "agricultural waste"
+        ],
+        "ground": [
+          "lightness and worthlessness carried off by wind",
+          "being separated and scattered from place of belonging",
+          "judgment as removal of the useless"
+        ],
+        "posture": [
+          "portraying Israel as worthless residue to be swept away",
+          "severe condemnation",
+          "prophetic threat of scattering"
+        ],
+        "explanation": "Comparing Israel to chaff emphasizes both their worthlessness before God and their impending scattering like agricultural waste blown away by the wind.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּכְעָשָׁן מֵאֲרֻבָּה",
+        "english_text": "and like smoke from a lattice",
+        "target": [
+          "Israel’s visible presence and institutions",
+          "social-political existence",
+          "covenant community"
+        ],
+        "vehicle": [
+          "smoke escaping through a window/lattice",
+          "visible but quickly dissipating vapor",
+          "natural/household phenomenon"
+        ],
+        "ground": [
+          "visible for a moment, then gone",
+          "lack of solidity or permanence",
+          "inevitable dispersal"
+        ],
+        "posture": [
+          "summarizing image of Israel’s vanishing under judgment",
+          "lamenting yet condemning stance",
+          "prophetic warning"
+        ],
+        "explanation": "The image of smoke escaping from a lattice or window highlights how Israel’s presence will quickly dissipate, leaving nothing substantial behind.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 13:4",
+    "deliberation": "The verse asserts exclusive monotheism and God’s unique role as savior from Egypt onward. Expressions like 'know' and 'helper' are standard covenant language used literally in context. I did not detect clear metaphors, similes, or other marked figures that rise above normal theological description.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 13:5",
+    "deliberation": "Examined 'I knew you in the wilderness, in a land of drought/afflictions.' Though 'knew' in Hebrew often has relational nuance, here it is conventional covenantal language rather than a marked figure. 'Land of tal’uvot' describes harsh physical conditions literally. No distinct metaphor, simile, or personification beyond normal idiom.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 13:6",
+    "deliberation": "The verse mixes pastoral imagery and an idiomatic expression for pride. Detected (1) metaphor of Israel as animals grazing in a pasture, describing prosperity, and (2) idiom 'their heart was lifted up' for becoming proud. Other elements ('they forgot me') are conceptually strong but linguistically straightforward.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּמַרְעִיתָם וַיִּשְׂבָּעוּ שָׂבְעוּ",
+        "english_text": "When they grazed, they were sated; when they were sated, they were filled",
+        "target": [
+          "Israel’s material prosperity and security",
+          "economic and social well-being",
+          "national life under God’s provision"
+        ],
+        "vehicle": [
+          "animals grazing in abundant pasture and becoming full",
+          "well-fed flock",
+          "pastoral/agrarian life"
+        ],
+        "ground": [
+          "dependence on supplied food/resources",
+          "contentment and complacency arising from abundance",
+          "nourishment leading to physical fullness"
+        ],
+        "posture": [
+          "depicting God as provider of pasture-like abundance that ironically leads to complacency",
+          "critical reflection on prosperity’s spiritual dangers",
+          "prophetic admonition"
+        ],
+        "explanation": "Israel’s prosperity is portrayed as animals grazing in good pasture and becoming full, a metaphor highlighting God’s generous provision and the complacency that followed.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיָּרׇם לִבָּם",
+        "english_text": "their heart was lifted up",
+        "target": [
+          "Israel’s inner attitude",
+          "pride/arrogance",
+          "moral-spiritual disposition"
+        ],
+        "vehicle": [
+          "a heart raised high",
+          "elevated physical position",
+          "spatial height"
+        ],
+        "ground": [
+          "height associated with exaltation and self-importance",
+          "elevation symbolizing arrogance before God",
+          "upward movement as image of self-exaltation"
+        ],
+        "posture": [
+          "condemnation of pride emerging from prosperity",
+          "moral evaluation of their inner stance toward God",
+          "prophetic critique"
+        ],
+        "explanation": "The idiom 'their heart was lifted up' uses vertical elevation of the heart as a metaphor for arrogance, expressing how prosperity led Israel to proud self-exaltation.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 13:7",
+    "deliberation": "The verse explicitly uses two כ (ke-) comparisons describing God as a lion and a leopard, both clear similes. These depict divine judgment in predatory terms, not literal animal transformation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וָאֱהִי לָהֶם כְּמוֹ־שָׁחַל",
+        "english_text": "So I am become like a lion to them",
+        "target": [
+          "YHWH’s mode of acting toward Israel in judgment",
+          "divine agency in punishment",
+          "God’s covenantal response to sin"
+        ],
+        "vehicle": [
+          "a lion attacking prey",
+          "powerful predatory animal",
+          "wild beast"
+        ],
+        "ground": [
+          "sudden, violent, overpowering attack",
+          "inescapable strength and terror",
+          "lethal judgment"
+        ],
+        "posture": [
+          "portraying God as fierce against his own people because of their sin",
+          "severe warning of dangerous judgment",
+          "prophetic threat"
+        ],
+        "explanation": "God says he will be 'like a lion' to Israel, not literally an animal but acting with the lion’s fierce, inescapable violence in judgment.",
+        "confidence": 0.99
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּנָמֵר עַל־דֶּרֶךְ אָשׁוּר",
+        "english_text": "like a leopard I lurk on the way",
+        "target": [
+          "YHWH’s impending judgment on Israel along its life-paths",
+          "divine ambush of the nation",
+          "God’s role as judge"
+        ],
+        "vehicle": [
+          "a leopard lying in wait by the road",
+          "stealthy predator",
+          "wild beast"
+        ],
+        "ground": [
+          "stealth, watchfulness, sudden pounce",
+          "unexpected but deadly ambush",
+          "danger hidden along ordinary routes"
+        ],
+        "posture": [
+          "intensifying the threat of divine attack as sudden and unavoidable",
+          "heightening fear of judgment",
+          "prophetic warning"
+        ],
+        "explanation": "God likens himself to a leopard lurking by the road, conveying the stealthy and sudden nature of the coming judgment on Israel.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 13:8",
+    "deliberation": "This verse continues the animal-judgment imagery. It contains (1) a simile of God as a bereaved bear, (2) a violent, highly figurative description of tearing the 'enclosure of their heart,' and (3) another simile of devouring like a lion with wild beasts tearing them, which extends the metaphor of enemies/judgment as beasts.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶפְגְּשֵׁם כְּדֹב שַׁכּוּל",
+        "english_text": "I will meet them like a bear robbed of her young",
+        "target": [
+          "YHWH’s confronting Israel in judgment",
+          "experience of divine attack",
+          "covenant punishment"
+        ],
+        "vehicle": [
+          "a bereaved mother bear attacking",
+          "enraged, dangerous animal",
+          "wild beast"
+        ],
+        "ground": [
+          "intense, almost irrational fury and ferocity",
+          "dangerous protectiveness turned to vengeance",
+          "violent, unstoppable assault"
+        ],
+        "posture": [
+          "depicting God’s judgment as terrifyingly fierce",
+          "severe warning designed to shock",
+          "prophetic rhetoric of threat"
+        ],
+        "explanation": "God says he will confront Israel 'like a bear robbed of her cubs,' a simile conveying extreme, almost uncontrollable ferocity in his judgment, bordering on hyperbolic vividness.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֶקְרַע סְגוֹר לִבָּם",
+        "english_text": "and I will rip open the casing/enclosure of their hearts",
+        "target": [
+          "Israel’s inner life and security",
+          "their courage, will, and sense of safety",
+          "psychological/spiritual core of the people"
+        ],
+        "vehicle": [
+          "a physical chest/heart enclosure being torn open",
+          "violent disembowelment or rending",
+          "gruesome bodily attack"
+        ],
+        "ground": [
+          "total vulnerability and exposure",
+          "utter destruction of what sustains life and courage",
+          "intense pain and devastation"
+        ],
+        "posture": [
+          "emphasizing the thoroughness and horror of judgment",
+          "shocking imagery to provoke repentance",
+          "prophetic hyperbolic description"
+        ],
+        "explanation": "The phrase pictures God tearing open the 'enclosure of their heart,' a metaphor for destroying Israel’s innermost security and life, expressed in hyperbolically violent anatomical terms.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֹכְלֵם שָׁם כְּלָבִיא חַיַּת הַשָּׂדֶה תְּבַקְּעֵם",
+        "english_text": "I will devour them there like a lion; the beasts of the field shall mangle them",
+        "target": [
+          "Israel’s experience of invasion and destruction",
+          "national downfall through hostile powers",
+          "historical judgment mediated by enemies"
+        ],
+        "vehicle": [
+          "a lion devouring prey and wild animals tearing a carcass",
+          "ferocious predation by beasts",
+          "animal world violence"
+        ],
+        "ground": [
+          "total overpowering, consumption, and dismemberment",
+          "sense of helpless prey under many attackers",
+          "thorough, humiliating destruction"
+        ],
+        "posture": [
+          "framing foreign invaders and divine judgment as wild beasts devouring Israel",
+          "underscoring the completeness of coming ruin",
+          "prophetic terror imagery"
+        ],
+        "explanation": "By saying he will devour them 'like a lion' and that 'the beasts of the field shall mangle them,' God depicts the coming invasions and judgments as a savage animal attack that leaves Israel torn and consumed.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 13:9",
+    "deliberation": "The verse states Israel’s ruin and the fact that God was their only help. While the theology is profound, the expressions themselves are relatively straightforward. 'Israel' functions as a normal national designation here, not an especially marked metonymy, and 'help' is a literal role. I did not identify a discrete metaphor, simile, or other figure.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 13:10",
+    "deliberation": "The key feature is the rhetorical question 'Where now is your king? Let him save you!' which is not a real information request but an ironic taunt. This constitutes rhetorical irony rather than a metaphor or simile. No other clear figures detected.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֱהִי מַלְכְּךָ אֵפוֹא וְיוֹשִׁיעֲךָ בְּכׇל־עָרֶיךָ",
+        "english_text": "Where now is your king, that he may save you in all your towns?",
+        "target": [
+          "Israel’s misplaced trust in human kings and officials",
+          "political reliance on monarchy",
+          "human leadership vs. divine kingship"
+        ],
+        "vehicle": [
+          "a king expected to appear and save but now absent or powerless",
+          "disappointed political savior figure",
+          "failed human protector"
+        ],
+        "ground": [
+          "contrast between former confidence in the king and present inability to deliver",
+          "exposure of the futility of human dependence apart from God",
+          "mocking the collapse of their political hopes"
+        ],
+        "posture": [
+          "ironic, taunting stance highlighting the folly of demanding a king",
+          "divine critique of their request 'Give me a king and princes'",
+          "prophetic rhetorical irony"
+        ],
+        "explanation": "The question 'Where now is your king, that he may save you?' is rhetorical and ironic, exposing the impotence of the monarchy they had demanded compared to God’s saving power.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Hosea 13:11",
+    "deliberation": "God declares that he gave and removed a king in anger and wrath. These are direct descriptions of historical acts and divine emotions. They are strong but not obviously metaphorical or simile-based, and 'anger/wrath' are standard anthropopathic terms in covenant texts. I did not isolate a specific figurative expression beyond normal theological language.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Hosea 13:12",
+    "deliberation": "The verse speaks of Ephraim’s iniquity being 'bound up' and his sin 'stored away'—two parallel metaphors using physical handling of objects to picture sin as preserved for later reckoning. Both are distinct images though conceptually related.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צָרוּר עֲוֹן אֶפְרָיִם",
+        "english_text": "Ephraim’s guilt is bound up",
+        "target": [
+          "Ephraim’s guilt as remembered by God for judgment",
+          "record of sin",
+          "moral liability before God"
+        ],
+        "vehicle": [
+          "something tied up or bundled",
+          "a packet or bundle securely fastened",
+          "physical object handling"
+        ],
+        "ground": [
+          "securing something so it is kept together and not lost",
+          "preservation for later use or reference",
+          "sin not being forgotten or scattered"
+        ],
+        "posture": [
+          "depicting God as carefully preserving record of guilt",
+          "warning that sin remains stored for future judgment",
+          "prophetic indictment"
+        ],
+        "explanation": "Ephraim’s iniquity is pictured as an object bound up in a bundle, a metaphor for guilt being securely preserved and not forgotten by God.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צְפוּנָה חַטָּאתוֹ",
+        "english_text": "his sin is stored away",
+        "target": [
+          "Ephraim’s sin awaiting divine response",
+          "unresolved transgression",
+          "moral record"
+        ],
+        "vehicle": [
+          "something hidden/treasured in store",
+          "item kept in storage or reserve",
+          "stored goods"
+        ],
+        "ground": [
+          "that which is hidden away but retained",
+          "preservation for a future moment of use or reckoning",
+          "delayed but certain recall"
+        ],
+        "posture": [
+          "reinforcing that sin remains safely ‘kept’ for judgment",
+          "heightening the seriousness of their stored-up guilt",
+          "prophetic threat"
+        ],
+        "explanation": "His sin is depicted as an item stored away or hidden in reserve, indicating that though judgment may be delayed, the record of sin is securely kept for the day of reckoning.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Hosea 13:13",
+    "deliberation": "The verse constitutes one extended childbirth metaphor: Israel/Ephraim is an unwise son who, though birth pangs have come, fails to present himself at the critical opening for birth. All elements work together as a single figurative scenario rather than multiple different images.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חֶבְלֵי יוֹלֵדָה יָבֹאוּ לוֹ הוּא־בֵן לֹא חָכָם כִּי־עֵת לֹא־יַעֲמֹד בְּמִשְׁבַּר בָּנִים",
+        "english_text": "Pangs of childbirth assail him, and the babe is not wise—for this is no time to survive at the birthstool of babes",
+        "target": [
+          "Israel/Ephraim’s crisis point and failure to respond rightly",
+          "national opportunity for deliverance/repentance",
+          "covenant people at a decisive historical moment"
+        ],
+        "vehicle": [
+          "labor pains, an unwise son, and the birthstool",
+          "difficult childbirth scenario",
+          "human birth process"
+        ],
+        "ground": [
+          "a critical, painful transition requiring timely action",
+          "folly of a child that does not emerge when it is time to be born",
+          "nearness to a new life that is squandered by inaction"
+        ],
+        "posture": [
+          "depicting Israel as foolish in the face of imminent salvation/judgment",
+          "lamenting and rebuking their failure to seize the moment of grace",
+          "prophetic exhortation through vivid metaphor"
+        ],
+        "explanation": "Israel is portrayed as a foolish child in the womb during hard labor, refusing to be born at the critical moment. The childbirth scene metaphorically represents a crisis in which repentance and deliverance are possible, but Israel fails to act wisely.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Hosea 13:14",
+    "deliberation": "This verse is dense with figurative language: Death and Sheol are personified as powers with a ‘hand’ and with ‘plagues/destructions,’ whom God can taunt. Also, 'compassion shall be hidden from my eyes' is a metaphor for refusing mercy. I mark (1) personification of Sheol as captor, (2) personification of Death/Sheol as agents with plagues/destruction, and (3) the metaphor of compassion being hidden from God’s eyes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִיַּד שְׁאוֹל אֶפְדֵּם",
+        "english_text": "From the hand of Sheol I will save them",
+        "target": [
+          "God’s rescue of his people from the power of death",
+          "deliverance from ultimate destruction or exile",
+          "salvific act toward Israel"
+        ],
+        "vehicle": [
+          "the ‘hand’ of Sheol holding captives",
+          "a personified realm of the dead as a captor",
+          "jailer or kidnapper figure"
+        ],
+        "ground": [
+          "death as a power that seizes and holds people",
+          "God’s ability to snatch from a strong grasp",
+          "rescue from an otherwise inescapable domain"
+        ],
+        "posture": [
+          "asserting God’s supremacy over death itself",
+          "offering hope of profound deliverance",
+          "prophetic promise (even if contextually tensioned by judgment)"
+        ],
+        "explanation": "Sheol is personified as having a ‘hand’ that holds people captive; God declares he will ransom them from this grasp, a metaphorical way of portraying deliverance from the power of death.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֱהִי דְבָרֶיךָ מָוֶת אֱהִי קׇטְבְּךָ שְׁאוֹל",
+        "english_text": "Where, O Death, are your plagues? Where, O Sheol, is your destruction?",
+        "target": [
+          "the threat death poses to God’s people",
+          "death’s capacity to harm or annihilate",
+          "ultimate enemies of God’s covenant purposes"
+        ],
+        "vehicle": [
+          "Death and Sheol addressed as wielders of plagues and destruction",
+          "personified hostile powers subject to taunt",
+          "defeated enemies on a battlefield"
+        ],
+        "ground": [
+          "God’s triumph over formerly terrifying powers",
+          "the impotence of Death/Sheol before YHWH’s redeeming action",
+          "mockery of once-dreaded foes now disarmed"
+        ],
+        "posture": [
+          "taunting, victory-cry over Death and Sheol",
+          "proclaiming divine supremacy in salvation or judgment",
+          "prophetic/doxological rhetoric"
+        ],
+        "explanation": "Death and Sheol are addressed as if they were agents that possess plagues and a power of destruction; God’s rhetorical questions mock their impotence in the face of his redeeming authority.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נֹחַם יִסָּתֵר מֵעֵינָי",
+        "english_text": "Compassion shall be hidden from my eyes",
+        "target": [
+          "God’s exercise (or non-exercise) of mercy toward Israel",
+          "decision not to show pity",
+          "divine emotional response"
+        ],
+        "vehicle": [
+          "compassion being hidden from someone’s eyes",
+          "concealed object outside one’s field of vision",
+          "visual inaccessibility"
+        ],
+        "ground": [
+          "what is unseen does not influence action",
+          "concealment implying refusal to be moved by pity",
+          "deliberate withdrawal of merciful regard"
+        ],
+        "posture": [
+          "asserting the suspension of mercy in favor of judgment",
+          "solemn and fearful declaration",
+          "prophetic pronouncement of wrath"
+        ],
+        "explanation": "The idiomatic expression of compassion being 'hidden from my eyes' metaphorically conveys that God will no longer regard Israel with pity or allow mercy to affect his actions.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Hosea 13:15",
+    "deliberation": "The verse combines agricultural and meteorological imagery. I identify (1) 'he flourishes among brothers' as metaphor of fruitfulness for prosperity, and (2) the 'east wind, wind of YHWH' drying up his spring and fountain as an extended metaphor (likely for an invading power like Assyria) that devastates Israel’s life-source.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי הוּא בֵּין אַחִים יַפְרִיא",
+        "english_text": "For though he flourish among brothers",
+        "target": [
+          "Ephraim/Israel’s prosperity relative to neighboring peoples",
+          "national strength and success",
+          "social-economic flourishing"
+        ],
+        "vehicle": [
+          "a plant or tree bearing fruit among others",
+          "fruitful growth in a group setting",
+          "agricultural fertility"
+        ],
+        "ground": [
+          "visible vigor and productivity",
+          "standing out as especially fruitful or thriving",
+          "abundant yield compared to peers"
+        ],
+        "posture": [
+          "acknowledging current prosperity prior to judgment",
+          "setting up contrast between flourishing and impending ruin",
+          "prophetic tension between blessing and curse"
+        ],
+        "explanation": "The phrase depicts Israel’s prosperity using the imagery of fruitfulness among brothers, a metaphor that likens the nation to a particularly productive plant in the midst of others.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יָבוֹא קָדִים רוּחַ יְהוָה מִמִּדְבָּר עֹלֶה וְיֵבֹשׁ מְקוֹרוֹ וְיֶחֱרַב מַעְיָנוֹ הוּא יִשְׁסֶה אוֹצַר כׇּל־כְּלִי חֶמְדָּה",
+        "english_text": "A blast, a wind of the LORD, shall come up from the wilderness; his fountain shall be parched, his spring dried up; that [wind] shall plunder treasures, every lovely object.",
+        "target": [
+          "the coming judgment on Israel, likely through an invading power",
+          "destruction of Israel’s life, resources, and wealth",
+          "national devastation"
+        ],
+        "vehicle": [
+          "an east wind of YHWH drying up a fountain and spring and plundering treasures",
+          "hot, destructive desert wind acting like a raider",
+          "meteorological-force-as-invader"
+        ],
+        "ground": [
+          "an overpowering force from outside that withers life-sources",
+          "parching and desiccation symbolizing loss of vitality and resources",
+          "a single destructive agent stripping away what is precious"
+        ],
+        "posture": [
+          "depicting God’s judgment as both natural disaster and invading force",
+          "emphasizing the total stripping of Israel’s life and wealth",
+          "prophetic threat with vivid, hyperbolic imagery"
+        ],
+        "explanation": "The 'east wind, the wind of the LORD' is a metaphor for a devastating judgment (likely an invading empire) that dries up Israel’s life-giving sources (spring, fountain) and plunders its treasures, using the destructive power of a desert wind as the vehicle.",
+        "confidence": 0.94
+      }
+    ]
+  }
+]

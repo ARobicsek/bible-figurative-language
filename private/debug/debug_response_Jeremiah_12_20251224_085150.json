@@ -1,0 +1,606 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 12:1",
+    "deliberation": "Looked for legal (lawsuit) imagery and path imagery. Identified (1) a covenant-lawsuit metaphor where Jeremiah speaks of contending with God, and (2) the conventional metaphor of 'way' for moral conduct. No clear similes or personifications here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֥י אָרִ֖יב אֵלֶ֑יךָ אַ֤ךְ מִשְׁפָּטִים֙ אֲדַבֵּ֣ר אֹתָ֔ךְ",
+        "english_text": "for I will contend with You; yet I shall present charges against You",
+        "target": ["Jeremiah’s protest against God’s governance", "prophetic complaint", "theological-moral discourse"],
+        "vehicle": ["a human court case between litigants", "lawsuit / legal dispute", "legal-judicial domain"],
+        "ground": ["formal confrontation seeking judgment and justification", "dispute over justice", "social-legal processes"],
+        "posture": ["bold yet reverent challenge to God’s justice", "lament framed as litigation", "prophetic stance toward divine justice"],
+        "explanation": "Jeremiah frames his prayer as if he were bringing a lawsuit against God, using legal language of contending and presenting judgments.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַדּ֗וּעַ דֶּ֤רֶךְ רְשָׁעִים֙ צָלֵ֔חָה",
+        "english_text": "Why does the way of the wicked prosper?",
+        "target": ["the lifestyle and career of wicked people", "moral conduct / life course", "ethical-spiritual life"],
+        "vehicle": ["a road or pathway one travels", "path / journey", "spatial movement"],
+        "ground": ["a continuous course with a direction and outcome", "one’s ongoing pattern of behavior", "life understood as a journey"],
+        "posture": ["perplexed observation of moral disorder", "questioning evaluation of the wicked’s ‘path’", "contemplative stance on providence"],
+        "explanation": "The ‘way’ of the wicked is a conventional metaphor in Hebrew for their whole manner of life and conduct, conceived as a path they travel.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 12:2",
+    "deliberation": "Noted strong plant imagery for the wicked’s success and spatial/body imagery for superficial versus inner relation to God. Identified (1) an agricultural growth metaphor and (2) a proximity / organ metonymy-metaphor for outward vs inward piety.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נְטַעְתָּם֙ גַּם־שֹׁרָ֔שׁוּ יֵלְכ֖וּ גַּם־עָ֣שׂוּ פֶ֑רִי",
+        "english_text": "You have planted them, and they have taken root, they spread, they even bear fruit.",
+        "target": ["the wicked whom God allows to thrive", "human individuals / community", "social-moral sphere"],
+        "vehicle": ["well-planted, rooting, fruit-bearing plants", "cultivated trees / crops", "agricultural growth"],
+        "ground": ["establishment, stability, and visible productivity over time", "successful flourishing under favorable conditions", "growth and prosperity"],
+        "posture": ["bewildered recognition of their flourishing", "critical observation of undeserved prosperity", "lament over moral disorder"],
+        "explanation": "The wicked are described as if they were plants God has planted, rooted, and caused to bear fruit, a metaphor for their secure and productive status.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "קָר֤וֹב אַתָּה֙ בְּפִיהֶ֔ם וְרָח֖וֹק מִכִּלְיוֹתֵיהֶֽם",
+        "english_text": "You are near in their mouth, but far from their inward parts.",
+        "target": ["the wicked’s inner versus outer relation to God", "human sincerity / hypocrisy", "spiritual-moral state"],
+        "vehicle": ["physical nearness to the mouth and distance from the kidneys (inner organs)", "spatial proximity of body parts", "bodily-spatial configuration"],
+        "ground": ["contrast between outward speech and inner disposition", "surface closeness versus inner alienation", "alignment or misalignment of exterior and interior"],
+        "posture": ["critical exposure of hypocrisy", "negative evaluation of superficial piety", "prophetic denunciation of insincerity"],
+        "explanation": "God’s name on their lips but far from their ‘kidneys’ uses spatial imagery, and ‘kidneys’ metonymically for the inner self, to picture outward religiosity without inner loyalty.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 12:3",
+    "deliberation": "Considered anthropomorphic testing language; main explicit figures are sacrificial-slaughter imagery. Identified (1) a simile likening the wicked to sheep led to slaughter and (2) cultic language of ‘consecrating’ them for a day of killing, used metaphorically and with ironic coloring.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַתִּקֵם֙ כְּצֹ֣אן לְטִבְחָ֔ה",
+        "english_text": "Drive them out like sheep to the slaughter.",
+        "target": ["the wicked Jeremiah wants judged", "hostile human group", "social-moral sphere"],
+        "vehicle": ["sheep led to be slaughtered", "sacrificial / butchered animals", "cultic and agricultural killing"],
+        "ground": ["helplessness and inevitability of violent death", "being herded toward unavoidable destruction", "total vulnerability to the one wielding power"],
+        "posture": ["imprecatory desire for decisive judgment", "harsh, punitive outlook toward the wicked", "prophetic cry for vindicating justice"],
+        "explanation": "The enemies are compared explicitly to sheep driven to slaughter, a simile emphasizing their coming helpless destruction under divine judgment.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהַקְדִּשֵׁ֖ם לְי֥וֹם הֲרֵגָֽה",
+        "english_text": "Prepare (consecrate) them for the day of slaying.",
+        "target": ["the wicked appointed for judgment", "hostile human group", "judicial-punitive sphere"],
+        "vehicle": ["objects consecrated for a sacred use or day", "cultically set-apart offerings", "ritual-sacrificial domain"],
+        "ground": ["being specially designated and reserved for a specific, solemn outcome", "irrevocable dedication to a purpose", "set-apart status under higher authority"],
+        "posture": ["bitterly ironic call for their ‘consecration’ to destruction", "use of sacred language to heighten the horror of judgment", "prophetic rhetoric intensifying the gravity of punishment"],
+        "explanation": "The verb ‘consecrate’ is metaphorically and ironically applied to the wicked, as if they were offerings set apart for a sacred ‘day of slaughter’.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 12:4",
+    "deliberation": "Checked ecological language for literal vs figurative use. Drought and animal loss can be literal covenant curses, but the statement that the land ‘mourns’ is personification. Chose that as the key figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַד־מָתַי֙ תֶּאֱבַ֣ל הָאָ֔רֶץ",
+        "english_text": "How long must the land mourn?",
+        "target": ["the devastated land of Judah", "physical land", "geographical-environmental realm"],
+        "vehicle": ["a bereaved person who mourns", "human mourner", "emotional-social behavior"],
+        "ground": ["visible signs of distress and loss arising from calamity", "suffering and grief in response to destruction", "reacting affectively to misfortune"],
+        "posture": ["empathetic view of creation sharing in human judgment", "heightened sense of cosmic sorrow", "prophetic sensitivity to the land’s plight"],
+        "explanation": "The land is portrayed as a person who mourns, giving the inanimate ground a human emotional response to the sins of its inhabitants.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 12:5",
+    "deliberation": "Recognized proverbial parallelism using two images: racing with runners vs horses, and a peaceful land vs the ‘pride of the Jordan’. Both contrast lesser and greater difficulties as metaphors for Jeremiah’s present and future trials.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֣י אֶת־רַגְלִ֥ים רַ֙צְתָּה֙ וַיַּלְא֔וּךָ וְאֵ֥יךְ תְּתַחֲרֶ֖ה אֶת־הַסּוּסִ֑ים",
+        "english_text": "If you race with the foot-runners and they exhaust you, how then can you compete with horses?",
+        "target": ["Jeremiah’s current and future challenges", "prophetic endurance under persecution", "experiential-spiritual testing"],
+        "vehicle": ["humans running on foot versus racing against horses", "competitive running with stronger opponents", "athletic / military exertion"],
+        "ground": ["relative intensity and difficulty of tasks", "need for greater strength to face greater trials", "increasing demands outstripping current capacity"],
+        "posture": ["admonitory preparation for harsher trials", "divine challenge to greater resilience", "toughening prophetic perspective"],
+        "explanation": "Current opposition is likened to racing with runners, while coming troubles are like racing horses, a hyperbolic metaphor emphasizing how much greater the future strain will be.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּבְאֶ֤רֶץ שָׁלוֹם֙ אַתָּ֣ה בוֹטֵ֔חַ וְאֵ֥יךְ תַּעֲשֶׂ֖ה בִּגְא֥וֹן הַיַּרְדֵּֽן",
+        "english_text": "If you are secure only in a tranquil land, how will you fare in the pride (thickets) of the Jordan?",
+        "target": ["Jeremiah’s situation in relatively calm times versus times of crisis", "level of external threat", "historical-political experience"],
+        "vehicle": ["a peaceful, safe land versus the wild ‘pride of the Jordan’ thickets", "secure open country versus dangerous river jungle", "geographical environments of varying danger"],
+        "ground": ["contrast between safety and danger, ease and threat", "increasing hazard demanding greater courage", "transition from calm to crisis"],
+        "posture": ["warning that worse conditions (‘Jordan thickets’) are coming", "urging inner readiness for intensified peril", "prophetic tough-love exhortation"],
+        "explanation": "The ‘land of peace’ represents relatively safe circumstances, while the ‘pride of the Jordan’—its dangerous thickets—is a metaphor for far more threatening times Jeremiah will face.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 12:6",
+    "deliberation": "Examined kinship betrayal language for idioms or metaphors. References to brothers and the father’s house being treacherous, crying after Jeremiah, and speaking good things appear to be straightforward descriptions of familial betrayal, not figurative extensions. No clear metaphor, simile, or personification rises above normal literal usage.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 12:7",
+    "deliberation": "Considered how ‘house’, ‘inheritance’, and ‘beloved of my soul’ function. They clearly stand for God’s people, not a literal building or tract. Also noted ‘into the hand of her enemies’ as a power metonymy. Treated these as two distinct figures: covenant-relationship metaphors and ‘hand’ for power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָזַ֙בְתִּי֙ אֶת־בֵּיתִ֔י נָטַ֖שְׁתִּי אֶת־נַחֲלָתִ֑י נָתַ֛תִּי אֶת־יְדִד֥וּת נַפְשִׁ֖י",
+        "english_text": "I have abandoned My house, I have deserted My possession, I have given over My dearly beloved (of My soul).",
+        "target": ["the people of Judah/Israel (and perhaps the temple) under judgment", "covenant community as God’s own", "religious-national entity"],
+        "vehicle": ["a house, an inherited property, a dearly loved one", "household/estate and beloved family member", "domestic and relational sphere"],
+        "ground": ["strong sense of ownership, intimacy, and affection now relinquished", "painful severing of a close, cherished relationship", "loss of what is one’s own household and beloved"],
+        "posture": ["sorrowful yet resolute distancing from a faithless people", "emotional intensity in declaring judgment", "divine pathos and wrath intertwined"],
+        "explanation": "God’s ‘house’, ‘inheritance’, and ‘beloved of my soul’ are metaphors for His people and their covenant relationship, emphasizing how drastic it is for Him to abandon them.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּכַ֥ף אֹיְבֶֽיהָ",
+        "english_text": "into the hand of her enemies",
+        "target": ["Judah’s subjection to hostile powers", "political-military vulnerability", "geo-political reality"],
+        "vehicle": ["being in someone’s hand", "physical grasp / control", "bodily agency and strength"],
+        "ground": ["being under another’s control and power", "having one’s fate determined by another", "total vulnerability to another’s actions"],
+        "posture": ["depiction of humiliating defeat", "graphic portrayal of being dominated by foes", "judgmental disclosure of consequences"],
+        "explanation": "‘Hand’ stands metonymically for the power and control of the enemies; to be given into their hand is to be delivered into their power.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 12:8",
+    "deliberation": "Saw inheritance language again, now zoomed into an animal image: the inheritance becomes like a lion in the forest, roaring against God. This is introduced with explicit ‘like’, and the inheritance acts as a roaring animal—simile plus personification, but both serve one composite image so treated as one instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָיְתָה־לִּ֥י נַחֲלָתִ֖י כְּאַרְיֵ֣ה בַיָּ֑עַר נָתְנָ֥ה עָלַ֛י בְּקוֹלָ֖הּ",
+        "english_text": "My inheritance has become to Me like a lion in the forest; she raised her voice against Me.",
+        "target": ["God’s people (His inheritance) in rebellion", "covenant community as adversary", "religious-national entity"],
+        "vehicle": ["a roaring lion in the forest attacking or threatening", "wild, dangerous predator", "animal / wilderness sphere"],
+        "ground": ["hostility, threat, and fear-inducing aggression toward God", "turning from domesticated to wild and dangerous", "no longer safe or submissive but actively opposed"],
+        "posture": ["expression of divine revulsion and rejection", "depicting Israel as a dangerous aggressor, not a loyal flock", "heightened rhetoric of estrangement"],
+        "explanation": "Israel, God’s ‘inheritance’, is compared to a wild lion that roars against Him, personifying the people as a hostile predator to justify divine rejection.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 12:9",
+    "deliberation": "The verse is dense with predatory-animal imagery. Identified (1) Judah as a strange bird of prey (or hyena) drawing further predators and (2) the summons of ‘all the wild beasts of the field’ to devour her, representing enemy nations.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הַעַ֨יִט צָב֤וּעַ נַֽחֲלָתִי֙ לִ֔י הַעַ֖יִט סָבִ֣יב עָלֶ֑יהָ",
+        "english_text": "Is My inheritance to Me a speckled bird of prey? Birds of prey are all around her.",
+        "target": ["Judah/Israel as an object of hostility and attack", "covenant people in a compromised state", "religious-national entity"],
+        "vehicle": ["a conspicuous speckled bird of prey attracting other raptors", "odd, vulnerable carrion-bird surrounded by predators", "avian scavenger / predator world"],
+        "ground": ["being marked out, exposed, and surrounded by threats", "standing out in such a way that draws hostile attention", "becoming prey in a violent ecosystem"],
+        "posture": ["lamenting and judging Judah’s state as both culpable and pitiable", "portraying her as doomed within a predatory environment", "prophetic indictment with tragic overtones"],
+        "explanation": "God’s ‘inheritance’ is metaphorically a strange bird of prey that has become an object of attack by other raptors, picturing Judah as both abnormal and besieged.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְכ֗וּ אִסְפ֛וּ כׇּל־חַיַּ֥ת הַשָּׂדֶ֖ה הֵתָ֥יוּ לְאׇכְלָֽה",
+        "english_text": "Go, gather all the wild beasts of the field, bring them to devour!",
+        "target": ["the nations and forces that will attack Judah", "hostile foreign powers / invaders", "geo-political agents of judgment"],
+        "vehicle": ["wild beasts of the field called to devour prey", "predatory animals feasting on carcasses", "animal predation"],
+        "ground": ["violent, uncontrollable hostility and consumption of the weak", "merciless tearing apart of the victim", "being used as instruments of a higher will to execute judgment"],
+        "posture": ["summons to judgment against Judah via foreign powers", "graphic envisioning of total devastation", "divine orchestration of predatory agents"],
+        "explanation": "The wild beasts summoned to devour represent invading nations unleashed to consume Judah, employing animal predation imagery for geopolitical destruction.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 12:10",
+    "deliberation": "Observed pastoral-vineyard imagery. Detected (1) ‘shepherds’ as a metaphor for rulers/overseers and (2) ‘my vineyard/field/pleasant portion’ as metaphors for God’s people/land turned into wilderness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רֹעִ֤ים רַבִּים֙ שִׁחֲת֣וּ כַרְמִ֔י",
+        "english_text": "Many shepherds have destroyed My vineyard.",
+        "target": ["foreign (or local) leaders who ravage Judah", "political/military leaders", "governing powers"],
+        "vehicle": ["shepherds tending or destroying flocks and fields", "pastoral caretakers who instead despoil", "agrarian leadership roles"],
+        "ground": ["those in charge of care and oversight using their role destructively", "responsibility for the condition of what is tended", "misuse of authority entrusted for protection"],
+        "posture": ["condemnation of leaders as abusive shepherds", "sharp critique of failed guardianship", "prophetic blame directed at rulers"],
+        "explanation": "‘Shepherds’ functions as a stock metaphor for rulers; here they are leaders who, instead of caring for the flock/vineyard, destroy it.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כַרְמִ֔י ... חֶלְקָתִ֑י ... חֶלְקַ֥ת חֶמְדָּתִ֖י לְמִדְבַּ֥ר שְׁמָמָֽה",
+        "english_text": "My vineyard, My field, My delightful field they have made a desolate wilderness.",
+        "target": ["Israel/Judah and its land as God’s special possession", "covenant people and their territory", "religious-national community in its land"],
+        "vehicle": ["a cherished vineyard/field turned into desert", "agricultural property once fertile, now waste", "agrarian landscape transformation"],
+        "ground": ["transition from cultivated, valued, and fruitful to ruined and desolate", "loss of something carefully tended and enjoyed", "judgment expressed as environmental devastation"],
+        "posture": ["lamenting but also justifying the desolation", "depicting judgment as the ruin of what was delightful", "mournful yet accusatory tone toward the destroyers"],
+        "explanation": "God’s people/land are depicted as His own vineyard and pleasant field that has been trampled into wilderness, a metaphor highlighting the tragedy and severity of their devastation.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 12:11",
+    "deliberation": "Identified (1) the land as a desolate ‘she’ who mourns to God—clear personification—and (2) ‘no one lays it to heart’ as an idiomatic way to speak of inward attention, drawing on heart-as-center metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שָׂמָהּ֙ לִשְׁמָמָ֔ה אָבְלָ֥ה עָלַ֖י שְׁמֵמָ֑ה",
+        "english_text": "They have made her a desolation; desolate, she mourns to Me.",
+        "target": ["the land of Judah as devastated", "physical land", "geographical-environmental realm"],
+        "vehicle": ["a desolate woman mourning before God", "bereaved female mourner", "human emotional actor"],
+        "ground": ["responding to devastation with grief and lament", "being relationally engaged with God in sorrow", "exhibiting emotional pain over ruin"],
+        "posture": ["empathetic portrayal of the land as sharing in judgment", "heightening the pathos of the situation", "prophetic evocation of cosmic lament"],
+        "explanation": "The land, grammatically feminine, is personified as a woman who, in her desolation, ‘mourns’ before God.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּ֛י אֵ֥ין אִ֖ישׁ שָׂ֥ם עַל־לֵֽב",
+        "english_text": "for no one lays it to heart.",
+        "target": ["people’s lack of serious concern for the land’s desolation", "human inner response (or lack thereof)", "psychological-moral state"],
+        "vehicle": ["placing something upon the heart", "heart as a locus of concern and attention", "bodily organ as metaphorical center"],
+        "ground": ["directing inner focus and caring about something", "taking a matter seriously and internalizing it", "engaging one’s inner core with an issue"],
+        "posture": ["critique of apathy and hardness", "exposing inner indifference to obvious judgment", "prophetic condemnation of moral insensitivity"],
+        "explanation": "The idiom ‘lay to heart’ uses the heart as the metaphorical center of attention and concern, saying no one seriously considers or cares about the devastation.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 12:12",
+    "deliberation": "Checked three candidates: (1) the ‘sword of YHWH’ that ‘devours’ is a personifying war metaphor; (2) ‘from one end of the land to the other’ is a merism for totality; (3) ‘all flesh’ is a synecdoche for all living humans. Treated each as a distinct figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כִּ֣י חֶ֤רֶב לַֽיהֹוָה֙ אֹֽכְלָ֔ה",
+        "english_text": "For a sword of the LORD devours",
+        "target": ["divine judgment executed through warfare", "military devastation as God’s action", "historical-judicial events"],
+        "vehicle": ["a sword that eats/devours like a living creature", "weapon personified as a voracious consumer", "instrument of violence acting like an animal"],
+        "ground": ["deadly, consuming effect of war on people and land", "unstoppable, voracious destruction", "God’s agency mediated through instruments of death"],
+        "posture": ["grim portrayal of judgment’s severity", "depicting war as an almost autonomous devouring force under God", "prophetic warning of total devastation"],
+        "explanation": "‘Sword of the LORD’ is a metonymy for divinely sent warfare; it is personified as devouring, a metaphor for the consuming nature of violent judgment.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִקְצֵה־אֶ֖רֶץ וְעַד־קְצֵ֣ה הָאָ֑רֶץ",
+        "english_text": "from one end of the land to the other",
+        "target": ["the geographic extent of devastation", "scope of judgment", "spatial-historical reality"],
+        "vehicle": ["both extreme ends of the land as boundaries", "polar extremities of a territory", "spatial poles"],
+        "ground": ["inclusiveness covering everything between two extremes", "totality expressed by naming the endpoints", "no part excluded"],
+        "posture": ["emphasis on the completeness of judgment", "stressing that no region will be spared", "intensifying the warning through comprehensive scope"],
+        "explanation": "This is a merism: naming both ends of the land to indicate the whole territory is affected by the devouring sword.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֵ֥ין שָׁל֖וֹם לְכׇל־בָּשָֽׂר",
+        "english_text": "No peace to all flesh.",
+        "target": ["all human beings in the land under threat", "human population", "anthropological domain"],
+        "vehicle": ["‘flesh’ as a designation for living humans", "bodily substance standing for the person", "corporeal aspect of humanity"],
+        "ground": ["physical, vulnerable existence subject to harm", "embodied life as the bearer of suffering or peace", "using the body to represent the whole person"],
+        "posture": ["universalizing the lack of safety", "underscoring human frailty before judgment", "somber pronouncement over all inhabitants"],
+        "explanation": "‘All flesh’ is a standard synecdoche/metonymy in Hebrew for all living humans; it stresses the vulnerability of embodied life that will have no peace.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 12:13",
+    "deliberation": "Assessed sowing and reaping language. While agriculture could be partly literal, ‘sowing wheat and reaping thorns’ functions proverbially as an ironic reversal image for labor vs outcome. Highlighted that as a metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "זָרְע֤וּ חִטִּים֙ וְקֹצִ֣ים קָצָ֔רוּ",
+        "english_text": "They have sown wheat and reaped thorns.",
+        "target": ["the people’s efforts and their disastrous results", "human labor and its moral-spiritual outcome", "ethical and experiential sphere"],
+        "vehicle": ["planting desirable grain but harvesting harmful thorns", "failed agricultural cycle with inverted expectations", "farming endeavor gone wrong"],
+        "ground": ["expectation of good return contrasted with harmful outcome", "disproportion between effort and reward due to divine judgment", "mismatch between intentions and experienced results"],
+        "posture": ["judgmental interpretation of their frustration", "portraying futility as morally deserved", "prophetic warning about the consequences of sin"],
+        "explanation": "The image of sowing wheat but reaping thorns metaphorically expresses that their strenuous efforts yield only harmful, disappointing results because of God’s wrath.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 12:14",
+    "deliberation": "Focused on the verb ‘uproot’ (נתש) used of peoples on their soil. This draws on plant imagery for nations being removed from their land, a recurring Jeremiah metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנְנִ֤י נֹֽתְשָׁם֙ מֵעַ֣ל אַדְמָתָ֔ם וְאֶת־בֵּ֥ית יְהוּדָ֖ה אֶתּ֥וֹשׁ מִתּוֹכָֽם",
+        "english_text": "I am going to uproot them from their soil, and I will uproot the House of Judah out of the midst of them.",
+        "target": ["the neighboring nations and Judah being removed from their lands", "political entities / peoples", "geo-political-historical realm"],
+        "vehicle": ["plants being uprooted from the soil", "vegetation torn out of the ground", "agricultural / botanical action"],
+        "ground": ["forcible removal from a place of growth and stability", "loss of rootedness and support", "sudden, disruptive dislocation"],
+        "posture": ["decisive announcement of judgment", "portraying exile and dispossession as deracination", "prophetic framing of historical upheaval in organic terms"],
+        "explanation": "Nations and Judah are described as being ‘uprooted’ from their soil, a plant metaphor for forced removal and loss of stability.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 12:15",
+    "deliberation": "The same plant-uprooting image continues, now paired with restoration. The prior ‘uprooting’ is explicitly recalled, so the metaphor of nations as plants remains operative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהָיָ֗ה אַֽחֲרֵי֙ נׇתְשִׁ֣י אוֹתָ֔ם",
+        "english_text": "Then, after I have uprooted them, I will take them back into favor…",
+        "target": ["the nations (and Judah) previously torn from their land", "exiled peoples", "geo-political communities"],
+        "vehicle": ["plants that have been uprooted and could be replanted or cared for again", "deracinated vegetation under renewed care", "agricultural stock under a gardener’s control"],
+        "ground": ["their prior removal from a place of growth and the possibility of renewed establishment", "dependence on the one who uproots and restores", "organic vulnerability and reversibility"],
+        "posture": ["tempered judgment with promised mercy", "portraying restoration as horticultural re-care", "prophetic assurance of eventual reestablishment"],
+        "explanation": "The earlier plant metaphor is recalled: after ‘uprooting’ the nations, God will again show compassion, suggesting the possibility of renewed planting or establishment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 12:16",
+    "deliberation": "Saw two figures: (1) ‘ways of My people’ continues the path-for-conduct metaphor; (2) ‘they shall be built up in the midst of My people’ uses building imagery for secure inclusion and strengthening.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִם־לָמֹ֣ד יִלְמְדוּ֩ אֶת־דַּֽרְכֵ֨י עַמִּ֜י",
+        "english_text": "If they truly learn the ways of My people",
+        "target": ["the religious and ethical patterns of Israel’s life", "covenant practices and behavior", "spiritual-ethical lifestyle"],
+        "vehicle": ["‘ways’ as paths or routes one walks", "pathways of conduct", "spatial routes"],
+        "ground": ["a habitual course that can be followed or learned", "direction and pattern in behavior", "life framed as walking a path"],
+        "posture": ["inviting nations into Israel’s covenant pattern", "portraying true conversion as adopting a new ‘way’", "didactic framing of ethics as a walkable path"],
+        "explanation": "‘Ways’ is a standard metaphor for conduct and lifestyle; the nations’ learning Israel’s ‘ways’ means adopting her covenantal pattern of life.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנִבְנ֖וּ בְּת֥וֹךְ עַמִּֽי",
+        "english_text": "then they shall be built up in the midst of My people.",
+        "target": ["the status and stability of formerly hostile nations among Israel", "their communal establishment and flourishing", "socio-religious standing"],
+        "vehicle": ["being built up like a structure", "construction and strengthening of a building", "architectural process"],
+        "ground": ["being firmly established, strengthened, and integrated", "gaining stability and permanence", "orderly incorporation into a larger edifice"],
+        "posture": ["positive vision of inclusion and stability for outsiders", "portraying restored nations as part of God’s built community", "hopeful, constructive outlook on their future"],
+        "explanation": "The nations are promised that they will be ‘built up’ within God’s people, a building metaphor for being firmly established and integrated into the covenant community.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 12:17",
+    "deliberation": "The key image reprises the plant-uprooting metaphor for nations that refuse to listen. ‘I will tear out that nation’ (נתש) continues the deracination figure as total removal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנָ֨תַשְׁתִּ֜י אֶת־הַגּ֥וֹי הַה֛וּא נָת֥וֹשׁ",
+        "english_text": "I will tear out (uproot) that nation, tear it out and destroy it.",
+        "target": ["any nation that does not listen", "recalcitrant foreign nation", "political community"],
+        "vehicle": ["a plant forcefully uprooted from the ground", "vegetation torn up and discarded", "agricultural removal"],
+        "ground": ["complete removal from its natural place of growth and life", "loss of stability, support, and continuity", "unstoppable act by a stronger hand"],
+        "posture": ["threat of uncompromising judgment", "final warning of irreversible removal", "prophetic insistence on the consequences of refusal"],
+        "explanation": "The nation is pictured as a plant to be uprooted, a metaphor for total displacement and destruction under divine judgment.",
+        "confidence": 0.95
+      }
+    ]
+  }
+]

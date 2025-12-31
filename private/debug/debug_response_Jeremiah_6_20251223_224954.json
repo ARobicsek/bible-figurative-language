@@ -1,0 +1,822 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 6:1",
+    "deliberation": "Considered trumpet and signal language as literal military warning. Detected two figurative elements: (1) abstract 'evil' approaching from the north as a personified/militarized calamity for the Babylonian invasion; (2) 'north' functioning as a metonym for the imperial power rather than merely a compass direction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֥י רָעָ֛ה נִשְׁקְפָ֥ה מִצָּפ֖וֹן",
+        "english_text": "For evil is appearing from the north",
+        "target": ["the coming Babylonian invasion of Judah", "national calamity/judgment", "historical-political"],
+        "vehicle": ["a looming/present person or army approaching from a direction", "approaching hostile figure/force", "military/embodied agent"],
+        "ground": ["approach from a specific quarter, threatening presence, inevitability", "impending, visible, directional threat", "experiential/emotional"],
+        "posture": ["warning of impending judgment", "prophetic announcement", "theological/moral"],
+        "explanation": "The abstract 'evil' is personified as a visible force looming from the north, and it metonymically represents the Babylonian military power that will invade from that direction.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִצָּפוֹן",
+        "english_text": "from the north",
+        "target": ["Babylonian/foreign imperial power", "hostile nation", "historical-political"],
+        "vehicle": ["the geographical direction ‘north’", "cardinal direction/location", "spatial/geographical"],
+        "ground": ["customary direction of invasion into Judah, symbolic source of danger", "origination point of threat", "geopolitical-symbolic"],
+        "posture": ["identifying source of judgment", "prophetic geo-symbolism", "theological-political"],
+        "explanation": "‘The north’ functions as a metonym for the northern imperial power (Babylon/Chaldea), a standard Jeremianic shorthand for Judah’s enemy.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 6:2",
+    "deliberation": "This verse is condensed Hebrew but clearly likens Zion to a pampered young woman. Detected a dominant metaphor/personification of Zion as 'daughter Zion,' lovely and delicate, which structures the verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַנָּוָה וְהַמְּעֻנָּגָה דָּמִיתִי בַּת־צִיּוֹן",
+        "english_text": "Fair Zion, the lovely and delicate, I have likened to a daughter",
+        "target": ["Jerusalem/Zion as a community", "covenant people/city", "social-religious"],
+        "vehicle": ["a lovely and pampered daughter", "young woman of high status and luxury", "family/gender roles"],
+        "ground": ["beauty, delicacy, privileged status yet vulnerability to harm", "cosseted but exposed to harsh treatment", "social/emotional"],
+        "posture": ["announcing coming humiliation of the city", "prophetic lament and judgment", "theological/moral"],
+        "explanation": "Zion is personified and metaphorically depicted as a pampered daughter whose beauty and delicacy underscore how severe her coming devastation will be.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 6:3",
+    "deliberation": "Shepherds and flocks surround ‘her’ (Zion). In context of siege, this is standard prophetic imagery for invading rulers and their armies. Identified one extended metaphor: shepherds = kings/commanders, flocks = troops.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵלֶיהָ יָבֹאוּ רֹעִים וְעֶדְרֵיהֶם תָּקְעוּ עָלֶיהָ אֹהָלִים סָבִיב רָעוּ אִישׁ אֶת־יָדוֹ",
+        "english_text": "Against her come shepherds with their flocks, they pitch tents all around her; each grazes the sheep under his care.",
+        "target": ["invading kings and their armies around Jerusalem", "foreign military leadership and troops", "historical-political"],
+        "vehicle": ["shepherds and their grazing flocks encamped around a pasture", "pastoral scene of shepherding", "agricultural/pastoral"],
+        "ground": ["surrounding, overseeing, and exploiting a territory as shepherds do a field, controlled movement, allocation of ‘grazing’ resources", "complete encirclement and systematic consumption", "strategic/military"],
+        "posture": ["depicting the siege in vivid imagery", "prophetic description of judgment", "theological-historical"],
+        "explanation": "Foreign rulers and their armies are metaphorically portrayed as shepherds with flocks encamped around a field, emphasizing their total control and exploitation of Jerusalem.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 6:4",
+    "deliberation": "Looked for explicit comparisons or personification. The time-of-day imagery is literal in the invaders’ speech. Detected one idiomatic cultic expression: ‘sanctify war’ used for mustering troops and declaring holy war, functioning as an idiom/metaphorical extension of consecration language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קַדְּשׁוּ עָלֶיהָ מִלְחָמָה",
+        "english_text": "Prepare (sanctify) for battle against her",
+        "target": ["military mobilization against Jerusalem", "act of initiating war", "historical-political"],
+        "vehicle": ["cultic consecration/sanctifying a sacred activity", "ritual setting apart for sacred use", "religious/cultic"],
+        "ground": ["setting something apart with solemnity, giving it special status, engaging in a dedicated undertaking", "formal, ritualized preparation", "social-religious"],
+        "posture": ["depicting the attackers’ resolve in religious terms", "prophetic portrayal of judgment as ‘holy war’", "theological-military"],
+        "explanation": "The verb ‘sanctify’ is used idiomatically for mustering troops for war; warfare is metaphorically framed as a consecrated, quasi-cultic action.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 6:5",
+    "deliberation": "Commands to rise, attack at night, and destroy fortresses are straightforward military language with no clear figurative overlay beyond normal war diction.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 6:6",
+    "deliberation": "The siege instructions are literal. The evaluative clause calls Jerusalem ‘the city visited/punished’ and says ‘all of her is oppression in her midst.’ This uses metonymy (city for inhabitants) and hyperbolic totalization (‘all of her’ = pervasive injustice), functioning together in one expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִיא הָעִיר הׇפְקַד כֻּלָּהּ עֹשֶׁק בְּקִרְבָּהּ",
+        "english_text": "She is the city destined for punishment; only fraud/oppression is found in her midst.",
+        "target": ["the people of Jerusalem as moral agents", "urban population under judgment", "social-religious"],
+        "vehicle": ["the city as a single entity filled entirely with one substance (oppression)", "a container wholly filled with something", "spatial/material"],
+        "ground": ["pervasiveness and dominance of injustice, city and inhabitants treated as one moral unit", "no area free from wrongdoing", "moral-evaluative"],
+        "posture": ["total condemnation of the city’s ethics", "prophetic indictment", "theological/moral"],
+        "explanation": "‘City’ stands metonymically for its people, and the claim that ‘all of her is oppression’ hyperbolically portrays injustice as universally pervasive in Jerusalem.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 6:7",
+    "deliberation": "The verse contains an explicit comparison introduced by כ־ (‘as/like’): as a well continuously brings up water, so Jerusalem brings up evil. This is a clear simile using hydrological imagery for moral outflow.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּהָקִיר ... מֵימֶיהָ כֵּן הֵקֵרָה רָעָתָהּ",
+        "english_text": "As a well keeps its water flowing, so she lets her wickedness flow.",
+        "target": ["Jerusalem’s continual production of wickedness", "moral behavior of the city", "social-religious"],
+        "vehicle": ["a well that constantly brings up water", "spring/flow of water from a cistern or well", "natural/hydrological"],
+        "ground": ["unending outflow, ease and naturalness of production, abundance", "spontaneous and continual emergence of what is within", "behavioral/moral"],
+        "posture": ["intensifying the sense of ingrained evil", "prophetic moral indictment", "theological/moral"],
+        "explanation": "Jerusalem’s evil is likened to water continually welling up from a spring, emphasizing that wrongdoing flows from her as naturally and incessantly as water from a well.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 6:8",
+    "deliberation": "The command to accept discipline is literal. The phrase ‘lest my soul be torn away/loosened from you’ applies human-like inner-life language to God, expressing relational withdrawal through bodily metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פֶּן־תֵּקַע נַפְשִׁי מִמֵּךְ",
+        "english_text": "Lest my soul be torn away from you",
+        "target": ["YHWH’s relationship and attitude toward Jerusalem", "divine favor or rejection", "theological"],
+        "vehicle": ["a person’s ‘soul’ pulling away from another", "inner self physically separating from someone", "psychological/bodily experience"],
+        "ground": ["emotional alienation, loss of affection, decisive withdrawal", "breaking of intimate attachment", "relational/moral"],
+        "posture": ["warning of potential rejection", "prophetic appeal", "theological/moral"],
+        "explanation": "God’s relational rejection is expressed through anthropopathic metaphor: His ‘soul’ (inner being) pulling away from Jerusalem like a person emotionally breaking off a close relationship.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 6:9",
+    "deliberation": "Imagery of gleaning a vine and a vintager passing his hand over the branches is used for the treatment of the remnant of Israel. This is one extended simile/metaphor cluster for the thoroughness of judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "potential",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עוֹלֵל יְעוֹלְלוּ כַגֶּפֶן שְׁאֵרִית יִשְׂרָאֵל הָשֵׁב יָדְךָ כְּבוֹצֵר עַל־סַלְסִלּוֹת",
+        "english_text": "Let them glean over and over, as a vine, the remnant of Israel. Pass your hand again, like a vintager, over its branches.",
+        "target": ["the remaining people of Israel under repeated judgment", "the remnant of the nation", "social-religious"],
+        "vehicle": ["a vine being thoroughly gleaned by a vintager repeatedly passing his hand over the branches", "agricultural grape harvest", "agrarian/economic"],
+        "ground": ["systematic, repeated stripping, leaving nothing, thorough searching", "no escape from being ‘picked over’", "experiential/judicial"],
+        "posture": ["portraying severity and completeness of judgment", "prophetic threat", "theological/moral"],
+        "explanation": "The remnant of Israel is compared to a vine repeatedly gleaned by a vintager, conveying the exhaustive and repeated nature of coming judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 6:10",
+    "deliberation": "Key phrase is ‘their ears are uncircumcised,’ combining ritual-surgical imagery with listening. This is a conceptual metaphor (ear as organ needing circumcision) and a metonymy (ear = capacity/act of obedience).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנֵּה עֲרֵלָה אׇזְנָם וְלֹא יוּכְלוּ לְהַקְשִׁיב",
+        "english_text": "See, their ears are uncircumcised, and they cannot listen.",
+        "target": ["the people’s stubborn unwillingness to heed God’s word", "spiritual/moral insensitivity", "theological-moral"],
+        "vehicle": ["an uncircumcised organ that bears a blocking foreskin", "ritually unacceptable bodily state", "ritual/bodily"],
+        "ground": ["blocked access, impurity, incapacity, unwillingness to undergo required change", "moral and spiritual obstruction", "ethical/spiritual"],
+        "posture": ["diagnosing inner resistance to revelation", "prophetic complaint", "theological/moral"],
+        "explanation": "Their refusal to listen is depicted as having ‘uncircumcised ears’—ears with a figurative foreskin that ritually and functionally blocks hearing, using ear as a metonym for obedient response.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 6:11",
+    "deliberation": "Examined if the pouring of wrath on age groups is figurative; it mainly describes scope. Detected one conceptual metaphor in Jeremiah’s experience: being ‘filled’ with the wrath of YHWH as with a liquid, unable to contain it.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֵת חֲמַת יְהוָה מָלֵאתִי נִלְאֵיתִי הָכִיל שְׁפֹךְ",
+        "english_text": "I am filled with the wrath of GOD, I am weary of holding it in; pour it out…",
+        "target": ["Jeremiah’s inner compulsion to announce judgment", "the prophetic burden of divine anger", "theological/experiential"],
+        "vehicle": ["a container filled with liquid that can no longer be held in and must be poured out", "vessel and fluid dynamics", "material/physical"],
+        "ground": ["internal pressure, lack of capacity to retain, inevitability of outflow", "overwhelming compulsion to express what is within", "psychological/emotional"],
+        "posture": ["justifying uncompromising proclamation of judgment", "prophetic self-description", "theological/moral"],
+        "explanation": "Jeremiah describes himself as a vessel filled with divine wrath to the point he can no longer ‘contain’ it, using the liquid-in-container metaphor to portray prophetic urgency.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 6:12",
+    "deliberation": "Loss of houses, fields, and wives is literal consequence imagery. The phrase ‘I will stretch out my hand’ is a standard anthropomorphic metaphor for God’s active intervention in judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־אַטֶּה אֶת־יָדִי עַל־יֹשְׁבֵי הָאָרֶץ",
+        "english_text": "For I will stretch out My hand against the inhabitants of the land",
+        "target": ["God’s decisive action in judgment on the people", "divine punitive intervention", "theological/judicial"],
+        "vehicle": ["a human extending his hand to strike or act", "bodily gesture initiating impactful action", "bodily/kinetic"],
+        "ground": ["initiating force, personal engagement, directed effort", "direct, powerful intervention", "experiential/moral"],
+        "posture": ["threat of direct divine action", "prophetic judgment oracle", "theological/moral"],
+        "explanation": "God’s judgment is portrayed in anthropomorphic terms as His ‘hand’ being stretched out against the people, evoking a human striking or acting decisively.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 6:13",
+    "deliberation": "Two range expressions appear: ‘from the smallest to the greatest’ and ‘from prophet to priest.’ Together they form merisms conveying totality of corruption. Treated as one meristic figure emphasizing universality.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִקְּטַנָּם וְעַד־גְּדוֹלָם ... וּמִנָּבִיא וְעַד־כֹּהֵן",
+        "english_text": "From the smallest to the greatest… and from prophet to priest",
+        "target": ["all segments of Judahite society, including religious leadership", "entire populace and leadership", "social-religious"],
+        "vehicle": ["polar pairs spanning a spectrum (small/great, prophet/priest)", "range endpoints indicating inclusiveness", "cognitive structuring/merism"],
+        "ground": ["no exception in between the stated extremes; universality", "everyone within the spectrum is implicated", "logical/moral"],
+        "posture": ["stressing universality of greed and deceit", "prophetic indictment", "theological/moral"],
+        "explanation": "The paired extremes ‘from smallest to greatest’ and ‘from prophet to priest’ form merisms that hyperbolically assert that all social and religious strata are corrupt.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 6:14",
+    "deliberation": "Here ‘the fracture of my people’ and ‘they healed’ are medical metaphors for national/spiritual damage and prophetic ministry. Detected one extended metaphor of Israel as an injured body treated superficially.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְרַפְּאוּ אֶת־שֶׁבֶר עַמִּי עַל־נְקַלָּה לֵאמֹר שָׁלוֹם שָׁלוֹם וְאֵין שָׁלוֹם",
+        "english_text": "They offer healing offhand for the fracture of My people, saying, ‘Peace, peace,’ when there is no peace.",
+        "target": ["the deep moral and social crisis of Israel and false prophetic reassurance", "national-spiritual condition and leadership response", "social-religious"],
+        "vehicle": ["a bodily fracture superficially treated by healers claiming wellness", "injured body and negligent medical care", "medical/physical"],
+        "ground": ["serious underlying damage masked by shallow treatment, misleading declaration of health", "appearance of wholeness vs. actual brokenness", "moral/diagnostic"],
+        "posture": ["exposing the falseness of official reassurance", "prophetic critique", "theological/moral"],
+        "explanation": "Israel’s deep crisis is depicted as a bodily fracture that false prophets ‘heal lightly’ by proclaiming ‘peace’ while no real healing has occurred, a medical metaphor heightened by irony and hyperbole.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 6:15",
+    "deliberation": "Main imagery is of falling and stumbling at judgment. In Hebrew idiom, ‘fall’ often denotes being slain in battle. Treated ‘they shall fall among the falling’ as an idiomatic metaphor for being swept up in mass judgment/death.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָכֵן יִפְּלוּ בַנֹּפְלִים ... יִכָּשְׁלוּ",
+        "english_text": "Therefore they shall fall among the falling; at the time that I punish them, they shall stumble.",
+        "target": ["the wicked leaders/people under divine punishment", "those subject to national judgment", "social-religious"],
+        "vehicle": ["people physically falling and stumbling, as in battle or disaster", "bodily collapse/loss of footing", "kinetic/physical"],
+        "ground": ["defeat, loss of stability, being overthrown with others", "shared downfall amidst catastrophe", "judicial/moral"],
+        "posture": ["predicting inescapable judgment", "prophetic warning", "theological/moral"],
+        "explanation": "‘Falling among the falling’ uses battle-death idiom: their ‘fall’ metaphorically denotes being killed or ruined in the collective collapse when God punishes.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 6:16",
+    "deliberation": "The vocabulary of roads, ancient paths, and the good way is standard biblical metaphor for life-conduct and covenant obedience. Detected one extended path metaphor with ‘finding rest for your souls’ as its result.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עִמְדוּ עַל־דְּרָכִים וּרְאוּ וְשַׁאֲלוּ לִנְתִבוֹת עוֹלָם אֵי־זֶה דֶרֶךְ הַטּוֹב וּלְכוּ־בָהּ וּמִצְאוּ מַרְגּוֹעַ לְנַפְשְׁכֶם",
+        "english_text": "Stand by the roads and consider, inquire about ancient paths: Which is the good way? Walk in it, and find rest for yourselves.",
+        "target": ["Israel’s moral and spiritual choices", "patterns of life and obedience", "ethical/spiritual"],
+        "vehicle": ["roads, paths, and a good way that travelers can choose and walk on to find rest", "journey with alternative routes", "spatial/movement"],
+        "ground": ["life as a journey requiring chosen direction; tradition as ancient paths; obedience leading to rest", "orientation, guidance, destination", "moral/cognitive"],
+        "posture": ["inviting return to traditional covenantal ways", "prophetic exhortation", "theological/moral"],
+        "explanation": "Covenant faithfulness is depicted as choosing and walking on the ‘good way’ among many roads, with ‘ancient paths’ symbolizing longstanding divine instruction and ‘rest’ the blessed outcome.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 6:17",
+    "deliberation": "Watchmen and the sound of the shofar function as images for prophetic warning. Identified one metaphor: prophets as watchmen and their message as trumpet-sound calling for response.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַהֲקִמֹתִי עֲלֵיכֶם צֹפִים הַקְשִׁיבוּ לְקוֹל שׁוֹפָר",
+        "english_text": "And I raised up lookouts for you: ‘Listen to the sound of the horn!’",
+        "target": ["prophetic warning ministries to Israel", "prophets and their calls to repentance", "theological/communicative"],
+        "vehicle": ["military watchmen shouting and a trumpet blast signaling danger", "city sentries and alarm system", "military/defensive"],
+        "ground": ["vigilance, early detection of danger, urgent public warning", "responsibility to heed alarms", "social/moral"],
+        "posture": ["highlighting ignored warnings", "prophetic rebuke", "theological/moral"],
+        "explanation": "Prophets are metaphorically presented as watchmen, and their messages as the shofar’s alarm; ‘sound of the horn’ metonymically stands for the content of their warning that the people refuse to heed.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 6:18",
+    "deliberation": "This verse summons nations and an ‘assembly’ to hear and know. While it participates in a broader courtroom motif, the wording itself is largely literal; there is no distinct compact metaphor, simile, or idiom beyond formal legal address.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 6:19",
+    "deliberation": "Detected two figures: (1) address to the earth to ‘hear,’ personifying creation as a witness in a cosmic lawsuit; (2) ‘fruit of their plans’ as a metaphor for the consequences of their schemes, using agricultural fruit imagery for outcomes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִׁמְעִי הָאָרֶץ",
+        "english_text": "Hear, O earth!",
+        "target": ["the created order as witness to God’s lawsuit against His people", "cosmic audience to judgment", "theological/cosmic"],
+        "vehicle": ["a listening, responsive person summoned to hear testimony", "courtroom witness", "legal/social"],
+        "ground": ["capacity to register and attest to events, being called to pay attention", "universal scope and seriousness of the case", "forensic/theological"],
+        "posture": ["framing judgment as a cosmic lawsuit", "prophetic legal summons", "theological/judicial"],
+        "explanation": "The inanimate earth is personified and summoned to ‘hear’ God’s pronouncement, casting creation as a witness in the divine lawsuit against Israel.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פְּרִי מַחְשְׁבוֹתָם",
+        "english_text": "the fruit of their plans",
+        "target": ["the consequences and outcomes of the people’s schemes", "results of wicked deliberations", "moral/causal"],
+        "vehicle": ["fruit produced by a plant", "agricultural yield", "agrarian"],
+        "ground": ["what grows naturally from a seed, inherent outcome of what is sown", "inevitable result emerging from prior causes", "logical/moral"],
+        "posture": ["showing that disaster is self-generated", "prophetic explanation of judgment", "theological/moral"],
+        "explanation": "Their coming disaster is framed as ‘the fruit’ of their thoughts, depicting consequences as the natural harvest of their own designs.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 6:20",
+    "deliberation": "The mention of frankincense and cane is literal cultic criticism. The claim that offerings and sacrifices ‘are not pleasing’ uses sensory language of taste/pleasure for divine acceptance; this is a conventional metaphor of worship as something enjoyed or displeasing to God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עֹלוֹתֵיכֶם לֹא לְרָצוֹן וְזִבְחֵיכֶם לֹא־עָרְבוּ לִי",
+        "english_text": "Your burnt offerings are not acceptable and your sacrifices are not pleasing to Me.",
+        "target": ["God’s evaluation of the people’s ritual offerings", "acceptance/rejection of worship", "theological/cultic"],
+        "vehicle": ["food/drink that is or is not pleasing to someone’s taste", "gustatory enjoyment or displeasure", "sensory/experiential"],
+        "ground": ["relational favor or disfavor conceptualized as enjoying or rejecting something presented", "divine approval as ‘liking’ and disapproval as ‘disliking’ a gift", "social/moral"],
+        "posture": ["denouncing empty ritual without obedience", "prophetic critique", "theological/moral"],
+        "explanation": "Acceptance of sacrifices is described with the metaphor of something being (or not) ‘pleasing’ to the taste, anthropomorphically portraying God as a host who rejects an unpalatable offering.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 6:21",
+    "deliberation": "God declares He will set ‘stumbling blocks’ before the people. This is a metaphor for occasions of downfall and disaster; people will ‘stumble’ over them in judgment. The language is not about literal rocks but about divinely placed causes of ruin.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִי נֹתֵן אֶל־הָעָם הַזֶּה מִכְשֹׁלִים וְכָשְׁלוּ בָם",
+        "english_text": "I shall put before this people stumbling blocks over which they shall stumble",
+        "target": ["events and circumstances that will bring their judgment and ruin", "national downfall", "historical/judicial"],
+        "vehicle": ["stones or obstacles in a path that cause a traveler to trip and fall", "hazards on a road", "spatial/kinetic"],
+        "ground": ["unexpected hindrance leading to a fall, inability to proceed safely", "judgment as divinely arranged hindrance and collapse", "moral/judicial"],
+        "posture": ["announcing divinely caused calamity", "prophetic threat", "theological/moral"],
+        "explanation": "God’s judgments are portrayed as ‘stumbling blocks’ placed in Israel’s path so that they trip and fall, emphasizing His active role in their ruin.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 6:22",
+    "deliberation": "A people from the north and a great nation from the ends of the earth are described. The ‘north’ again functions as shorthand for the imperial invader rather than only a compass point, a metonymy consistent in Jeremiah.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַם בָּא מֵאֶרֶץ צָפוֹן וְגוֹי גָּדוֹל יֵעוֹר מִיַּרְכְּתֵי־אָרֶץ",
+        "english_text": "A people comes from the northland, a great nation is roused from the remotest parts of the earth.",
+        "target": ["the specific invading empire (Babylon and allies)", "hostile foreign powers", "historical-political"],
+        "vehicle": ["the geographical ‘northland’ and ‘remotest parts of the earth’", "distant edges of the earth", "spatial/geographical"],
+        "ground": ["distance, foreignness, ominous source of threat", "vagueness yet dread of far-off powers", "geopolitical-symbolic"],
+        "posture": ["framing the invader as ominously distant and powerful", "prophetic warning", "theological-political"],
+        "explanation": "‘Northland’ and ‘remotest parts of the earth’ function metonymically and somewhat hyperbolically for the distant imperial powers that will invade Judah.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 6:23",
+    "deliberation": "Identified two figures: (1) explicit simile ‘their sound is like the sea’ for the terrifying noise of the army; (2) ‘daughter Zion’ again personifies the city as a woman, continuing the metaphor from v.2.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קוֹלָם כַּיָּם יֶהֱמֶה",
+        "english_text": "The sound of them is like the roaring sea.",
+        "target": ["the noise and presence of the invading army", "military threat experienced by Judah", "historical-experiential"],
+        "vehicle": ["the roaring/heaving of the sea", "stormy ocean surf", "natural/environmental"],
+        "ground": ["loud, overwhelming, continuous, frightening sound and motion", "awe-inspiring, uncontrollable force", "emotional/sensory"],
+        "posture": ["evoking terror of invasion", "prophetic vivid description", "theological/moral"],
+        "explanation": "The army’s approach is compared to the roaring sea, highlighting its overwhelming power and the fear it provokes.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָלַיִךְ בַּת־צִיּוֹן",
+        "english_text": "Against you, O daughter Zion!",
+        "target": ["Jerusalem and its inhabitants", "covenant city/community", "social-religious"],
+        "vehicle": ["a daughter, a female person", "young woman/daughter figure", "family/gender roles"],
+        "ground": ["vulnerability, relational bond, identity as a cherished yet wayward member of God’s household", "exposure to assault", "social/emotional"],
+        "posture": ["underscoring intimacy and tragedy of the attack", "prophetic lament/judgment", "theological/moral"],
+        "explanation": "Jerusalem is addressed as ‘daughter Zion,’ personifying the city as a vulnerable young woman under assault, emphasizing the personal tragedy of the invasion.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 6:24",
+    "deliberation": "Found two figures: (1) ‘our hands hang limp’ as idiom/metaphor for loss of courage; (2) ‘anguish like a woman in childbirth’ as explicit simile for severe fear-pain.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רָפוּ יָדֵינוּ",
+        "english_text": "Our hands fail (grow limp).",
+        "target": ["the courage and capacity of the people to act", "inner resolve in the face of threat", "psychological/emotional"],
+        "vehicle": ["hands becoming weak and hanging down", "loss of physical strength in the limbs", "bodily/kinetic"],
+        "ground": ["inability to act, paralysis, demoralization", "inner fear expressed as bodily weakness", "experiential"],
+        "posture": ["expressing utter demoralization under threat", "prophetic portrayal of reaction", "theological/moral"],
+        "explanation": "The idiom ‘our hands fail’ metaphorically depicts the loss of courage and capacity to respond, as if physical strength in the hands has vanished.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חִיל כַּיּוֹלֵדָה",
+        "english_text": "Agony like a woman in childbirth.",
+        "target": ["the terror and anguish gripping the people", "emotional/physical distress at the report", "experiential/emotional"],
+        "vehicle": ["the pains of a woman in labor", "childbirth contractions and anguish", "bodily/reproductive"],
+        "ground": ["intense, unavoidable, wave-like pain accompanied by fear", "inescapable and productive suffering", "emotional/physical"],
+        "posture": ["emphasizing extremity of fear", "prophetic vivid depiction of distress", "theological/moral"],
+        "explanation": "Their dread is compared to a woman’s labor pains, highlighting the severity, inevitability, and overwhelming nature of the anguish.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 6:25",
+    "deliberation": "Detected two figures: (1) ‘sword of the enemy’ as a metonymy for military violence; (2) ‘terror on every side’ as a stereotyped Jeremianic phrase functioning as an idiomatic metaphor for pervasive threat.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי חֶרֶב לְאֹיֵב",
+        "english_text": "For the sword of the enemy is there.",
+        "target": ["enemy warfare and killing power", "military attack", "historical-political"],
+        "vehicle": ["a sword as a weapon", "instrument of killing", "military/object"],
+        "ground": ["ability to kill, symbol of warfare and threat", "presence of lethal force", "social/military"],
+        "posture": ["warning of lethal danger on the roads", "prophetic caution", "theological/historical"],
+        "explanation": "‘Sword’ stands metonymically for the enemy’s military violence and killing capacity waiting outside the city.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מָגוֹר מִסָּבִיב",
+        "english_text": "Terror on every side.",
+        "target": ["the people’s situation of pervasive threat and fear", "state of continual endangerment", "experiential/social"],
+        "vehicle": ["being surrounded on all sides by terror", "encirclement by threatening forces", "spatial/psychological"],
+        "ground": ["complete lack of safe direction, fear from all quarters", "inescapability of danger", "emotional/moral"],
+        "posture": ["underscoring total insecurity", "prophetic hyperbolic slogan of judgment", "theological/moral"],
+        "explanation": "The idiomatic phrase ‘terror on every side’ metaphorically pictures fear and danger encircling the people, leaving no avenue of escape.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 6:26",
+    "deliberation": "Two key figures: (1) ‘daughter of my people’ personifies the nation as a daughter; (2) ‘mourn as for an only child’ is a simile comparing the grief to the most intense bereavement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בַּת־עַמִּי",
+        "english_text": "Daughter of my people",
+        "target": ["Israel/Judah as a covenant community", "the nation in relationship to God and prophet", "social-religious"],
+        "vehicle": ["a daughter belonging to someone", "female child in a family", "family/gender roles"],
+        "ground": ["intimacy, affection, vulnerability, obligation to protect and mourn", "close familial bond with one endangered", "social/emotional"],
+        "posture": ["expressing tender concern in the midst of warning", "prophetic lament", "theological/moral"],
+        "explanation": "The community is personified as ‘daughter of my people,’ highlighting its vulnerability and the deep attachment God (and the prophet) has to her despite impending judgment.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵבֶל יָחִיד עֲשִׂי לָךְ",
+        "english_text": "Mourn, as for an only child.",
+        "target": ["the intensity of mourning Judah is called to undertake", "depth of grief over coming destruction", "emotional/ritual"],
+        "vehicle": ["mourning the death of an only child", "extreme parental bereavement", "family/emotional"],
+        "ground": ["maximum grief, irretrievable loss, bitterness", "no replacement, unique cherished relationship", "emotional/moral"],
+        "posture": ["preparing people for unparalleled loss", "prophetic exhortation to lament", "theological/moral"],
+        "explanation": "The people’s lament is to match the extremity of grief at losing an only child, a simile that underscores the catastrophic nature of the impending disaster.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 6:27",
+    "deliberation": "Jeremiah is made an ‘assayer’ and ‘fortress’ to test the people’s ways. This continues metallurgical imagery developed in the next verses. Detected one metaphor: prophet as metal-tester/refiner examining ore (the people).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בָּחוֹן נְתַתִּיךָ בְעַמִּי מִבְצָר וְתֵדַע וּבָחַנְתָּ אֶת־דַּרְכָּם",
+        "english_text": "I have made you an assayer among My people —a fortress— that you may know and assay their ways.",
+        "target": ["Jeremiah’s evaluative prophetic role toward Israel", "prophetic testing and exposing of character", "theological/prophetic"],
+        "vehicle": ["a metal assayer/refiner in a fortified testing place examining ore", "metallurgist and testing facility", "technical/economic"],
+        "ground": ["subjecting material to examination, separating genuine from worthless, secure vantage point", "discernment of quality under scrutiny", "moral/diagnostic"],
+        "posture": ["authorizing prophetic discernment and exposure", "prophetic commissioning", "theological/moral"],
+        "explanation": "Jeremiah is metaphorically appointed as a metal assayer in a stronghold to test his people’s ways, assessing their moral ‘purity’ or worth.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 6:28",
+    "deliberation": "After Jeremiah’s assayer role, the people are called ‘bronze and iron.’ This is a metaphor equating their moral character with base/hard metals, suggesting stubbornness and lack of preciousness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נְחֹשֶׁת וּבַרְזֶל כֻּלָּם",
+        "english_text": "They are all copper and iron.",
+        "target": ["the moral and spiritual quality of the people", "their inner character", "ethical/spiritual"],
+        "vehicle": ["copper and iron as less precious, hard metals", "base metals compared to silver/gold", "metallurgical/material"],
+        "ground": ["hardness, resistance to change, lack of higher value compared to noble metals", "moral stubbornness and worthlessness", "moral/evaluative"],
+        "posture": ["declaring their incorrigibility", "prophetic diagnosis", "theological/moral"],
+        "explanation": "By calling them ‘copper and iron,’ the text metaphorically depicts the people as morally hard and lacking the preciousness God seeks, in contrast to refined silver or gold.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 6:29",
+    "deliberation": "This verse continues the metallurgical scene: bellows, fire, lead, refining ‘in vain.’ While such apparatus could be literal, here it allegorizes attempts to refine the people. Detected one extended metaphor of failed refining as prophetic/judicial efforts that do not separate out the wicked.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נָחַר מַפֻּחַ ... לַשָּׁוְא צָרַף צָרוֹף וְרָעִים לֹא נִתָּקוּ",
+        "english_text": "The bellows puff; the lead is consumed by fire. Yet the smelter smelts to no purpose— the wicked are not separated out.",
+        "target": ["God’s and the prophet’s efforts to purify the people", "process of judgment and discipline", "theological/judicial"],
+        "vehicle": ["metal refining with bellows, fire, lead, and smelting process that fails to remove dross", "smelting workshop", "technical/metallurgical"],
+        "ground": ["intense effort to purify, high heat, costly expenditure, yet no improvement because material is too corrupt", "ineffectiveness of discipline due to incorrigibility", "moral/evaluative"],
+        "posture": ["lamenting the failure of purification", "prophetic commentary on judgment’s limits", "theological/moral"],
+        "explanation": "Refining imagery is used to describe how, despite intense ‘smelting’ efforts, the wicked are not removed, showing the people’s resistance to purification.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 6:30",
+    "deliberation": "Concludes the refining metaphor: they are called ‘rejected silver’ because YHWH has rejected them. Clear metaphor equating the people with silver that has been rejected by the refiner as worthless.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֶּסֶף נִמְאָס קָרְאוּ לָהֶם כִּי־מָאַס יְהוָה בָּהֶם",
+        "english_text": "They are called ‘rejected silver,’ for GOD has rejected them.",
+        "target": ["the people of Judah under divine rejection", "their status before God", "theological/judicial"],
+        "vehicle": ["rejected silver—metal deemed impure/valueless by a refiner", "worthless scrap metal", "metallurgical/economic"],
+        "ground": ["failure to meet standards, being cast aside as unusable, loss of intended value", "divine rejection due to impurity/unfaithfulness", "moral/evaluative"],
+        "posture": ["issuing final verdict on the people’s condition", "prophetic condemnation", "theological/moral"],
+        "explanation": "The people are metaphorically labeled ‘rejected silver,’ tying back to the refining imagery and signifying that God, the refiner, has found them unfit and discarded them.",
+        "confidence": 0.98
+      }
+    ]
+  }
+]

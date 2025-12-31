@@ -1,0 +1,483 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 35:1",
+    "deliberation": "Checked the standard prophetic formula for any figurative construal. The only non-literal element is the depiction of \"the word\" as something that can \"come\" to the prophet, which treats the divine message as a moving entity. This is a conventional metaphor/personification and idiomatic prophetic phrase.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהֹוָ֖ה אֵלַ֥י",
+        "english_text": "The word of YHWH came to me",
+        "target": ["The event of Ezekiel receiving divine revelation", "Prophetic inspiration", "Religious experience"],
+        "vehicle": ["A 'word' that comes to someone", "Message as a moving object", "Communication-as-transfer metaphor"],
+        "ground": ["A message originates with a sender and arrives at a recipient", "Transfer from source to target", "Patterns of communication and reception"],
+        "posture": ["Asserting prophetic authority by using a recognized formula", "Authoritative reporting stance", "Prophetic discourse convention"],
+        "explanation": "The divine message is depicted as a concrete 'word' that can move and 'come' to the prophet, personifying the message and metaphorically framing revelation as an object in motion.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 35:2",
+    "deliberation": "Examined vocative 'ben-adam', the command to 'set your face' and the address to 'Mount Seir'. 'Ben-adam' functions as a literal designation of human mortality. Two expressions are clearly figurative: the idiom 'set your face against' for determined opposition, and 'Mount Seir' standing metonymically for the people/nation of Edom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שִׂ֥ים פָּנֶ֖יךָ עַל־הַ֣ר שֵׂעִ֑יר",
+        "english_text": "set your face against Mount Seir",
+        "target": ["Ezekiel’s prophetic stance of opposition toward Edom", "Hostile attitude/posture", "Prophetic judgment activity"],
+        "vehicle": ["Turning one’s face toward an opponent", "Body orientation as stance", "Embodied-orientation metaphor"],
+        "ground": ["Facing someone signals focus and confrontation", "Physical orientation mirrors relational stance", "Embodied experience of opposition"],
+        "posture": ["Commanding firm, hostile engagement", "Confrontational stance", "Judicial-prophetic rhetoric"],
+        "explanation": "The prophet is told to 'set [his] face against' Mount Seir, an idiomatic metaphor where physical orientation of the face represents determined, hostile opposition.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־הַ֣ר שֵׂעִ֑יר ... וְהִנָּבֵ֖א עָלָֽיו",
+        "english_text": "against Mount Seir and prophesy against it",
+        "target": ["The nation/people of Edom", "A collective political entity", "Geo-political reality"],
+        "vehicle": ["'Mount Seir' as a geographical feature", "Place-name standing for inhabitants", "Toponymic reference"],
+        "ground": ["A people are identified with their homeland", "Territory represents its population and polity", "Place-for-people association"],
+        "posture": ["Focusing judgment oracles on Edom via its chief landmark", "Representational stance", "Prophetic naming of nations by territories"],
+        "explanation": "The prophecy is directed at 'Mount Seir', but the intent is the people and polity of Edom. The mountain stands metonymically for the nation inhabiting it.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 35:3",
+    "deliberation": "Considered the formula 'Thus says', the address to Mount Seir, the phrase 'I am against you', 'I will stretch out my hand', and 'make you a desolation'. The clearly figurative elements are the anthropomorphic idiom 'stretch out my hand' for active intervention/judgment, and again the metonymic use of 'Mount Seir' for the Edomite nation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָטִ֤יתִי יָדִי֙ עָלֶ֔יךָ",
+        "english_text": "I will stretch out My hand against you",
+        "target": ["YHWH’s act of bringing judgment on Edom", "Divine punitive intervention", "Divine governance"],
+        "vehicle": ["Stretching out a hand against someone", "Human act of striking or seizing", "Embodied action of attack/punishment"],
+        "ground": ["Extending the hand initiates forceful action", "Physical gesture indicates taking action against another", "Embodied pattern of exerting power"],
+        "posture": ["Threatening decisive, hostile action", "Punitive stance", "Covenant-judicial rhetoric"],
+        "explanation": "God’s exercise of judgment is depicted as stretching out a hand to strike, using human bodily action as a metaphor and personification for divine intervention. The phrase is also an idiomatic expression for judgment.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנְנִ֥י אֵלֶ֖יךָ הַר־שֵׂעִ֑יר",
+        "english_text": "I am going to deal with you, Mount Seir",
+        "target": ["The Edomite people and polity", "Nation under judgment", "Geo-political entity"],
+        "vehicle": ["'Mount Seir' as a mountain", "Place-name for nation", "Geographical feature"],
+        "ground": ["The people are identified with their chief territory", "Place-name regularly stands for its inhabitants", "Place-for-people association"],
+        "posture": ["Directing judgment at the nation via its terrain name", "Summons/indictment stance", "Prophetic address to nations by their lands"],
+        "explanation": "The mountain is named, but the real object of divine opposition is the people of Edom; the place stands for the population as a metonymy.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 35:4",
+    "deliberation": "Assessed 'I will turn your towns into ruins', 'you shall be a desolation', and 'you shall know that I am YHWH'. All describe literal devastation and its cognitive result; no clear metaphor, simile, personification, or idiom beyond normal prophetic usage. 'Know that I am YHWH' is a theological formula but not strongly figurative here.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 35:5",
+    "deliberation": "Reviewed 'ancient hatred', the verb for 'harbored', and the phrase 'handed ... over to the sword'. The hatred language is literal. 'To the sword' is a conventional metonymy/idiom in biblical Hebrew for causing someone to be killed in war rather than literally handing them an implement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתַּגֵּ֥ר אֶת־בְּנֵֽי־יִשְׂרָאֵ֖ל עַל־יְדֵי־חָ֑רֶב",
+        "english_text": "and handed the people of Israel over to the sword",
+        "target": ["Delivering Israel up to lethal violence", "Causing their death in warfare", "Military destruction of a people"],
+        "vehicle": ["Putting someone into the hand of a 'sword'", "Weapon standing for killing", "Instrument of war"],
+        "ground": ["The sword is the typical instrument of killing in battle", "Referring to the weapon evokes the act of killing", "Part-for-act association"],
+        "posture": ["Indicting Edom for complicity in Israel’s slaughter", "Accusatory stance", "Judicial rhetoric about war crimes"],
+        "explanation": "The 'sword' stands metonymically for killing in war, and the phrase 'handed ... over to the sword' is an idiom for delivering someone to death, not literally transferring them to a physical blade.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 35:6",
+    "deliberation": "Considered the oath formula 'as I live', the repeated 'blood' language, and 'blood will pursue you'. 'As I live' is a standard divine oath. The key figurative elements are: (1) 'make you for blood' / 'blood' as bloodshed or guilt (metonymy), and (2) 'blood will pursue you', personifying bloodshed as a pursuer or avenger. These are related but distinct: one is a substitution of term; the other an image of active pursuit.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּֽי־לְדָ֥ם אֶעֶשְׂךָ֖",
+        "english_text": "I will doom you with blood [lit. make you for blood]",
+        "target": ["Edom’s destiny of violent death and bloodshed", "Outcome of divine judgment", "National fate in war"],
+        "vehicle": ["Being made 'for blood'", "Blood as emblem of killing/guilt", "Concrete bodily substance"],
+        "ground": ["Spilled blood is the visible sign of killing and guilt", "Blood evokes the reality of death and violence", "Effect standing for its violent cause"],
+        "posture": ["Announcing a fate dominated by violence and guilt", "Threatening stance", "Oracular pronouncement of doom"],
+        "explanation": "Here 'blood' stands metonymically for bloodshed and guilt, and the idiom 'make you for blood' metaphorically describes Edom’s future as characterized entirely by violent death.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְדָ֣ם יִרְדְּפֶ֑ךָ ... וְדָ֥ם יִרְדְּפֶֽךָ",
+        "english_text": "and blood shall pursue you ... and blood shall pursue you",
+        "target": ["The inescapable consequences of Edom’s violence", "Retributive judgment", "Moral-judicial outcome"],
+        "vehicle": ["Blood as a pursuer or hunter", "Avenger chasing a fugitive", "Personified abstract agent"],
+        "ground": ["A pursuer relentlessly tracks down the one who flees", "Consequences of violence catch up with the perpetrator", "Dynamic of retribution mirroring pursuit"],
+        "posture": ["Emphasizing the inevitability of retribution", "Warning stance", "Vivid judicial portrayal of consequences"],
+        "explanation": "Bloodshed and guilt are personified as an active pursuer hunting Edom, a metaphor that intensifies the certainty and closeness of retributive judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 35:7",
+    "deliberation": "Looked at 'make Mount Seir a desolation' and 'I will cut off from it passer and returner'. The desolation language is literal. 'Cut off' is idiomatic for removing/destroying. The pair 'passer and returner' is a stereotyped merism for all movement/persons. 'Mount Seir' again functions metonymically for Edom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִכְרַתִּ֥י מִמֶּ֖נּוּ עֹבֵ֥ר וָשָֽׁב",
+        "english_text": "and I will cut off from it passer and returner",
+        "target": ["The complete cessation of normal traffic and inhabitants", "Total depopulation", "Societal collapse"],
+        "vehicle": ["'Passer and returner' as two opposite movements", "Pairing of coming and going", "Stereotyped formula"],
+        "ground": ["Mentioning both directions (passing and returning) implies all movement", "Eliminating both kinds of travelers means no one is left", "Meristic expression of totality"],
+        "posture": ["Portraying absolute desolation and isolation", "Emphatic stance", "Rhetoric of total judgment"],
+        "explanation": "The phrase 'passer and returner' forms a merism, indicating everyone who might travel through; together with the idiom 'cut off', it figuratively depicts total cessation of human presence and movement.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶת־הַ֣ר שֵׂעִ֔יר לְשִֽׁמְמָ֖ה",
+        "english_text": "make Mount Seir an utter waste",
+        "target": ["The people and polity of Edom", "Nation under judgment", "Collective socio-political entity"],
+        "vehicle": ["'Mount Seir' as terrain", "Landmark representing inhabitants", "Topographical name"],
+        "ground": ["The nation is identified with its mountainous homeland", "Place-name stands for the community", "Place-for-people association"],
+        "posture": ["Announcing judgment on Edom via its landform name", "Summons/indictment stance", "Prophetic convention in naming nations"],
+        "explanation": "Again, 'Mount Seir' is used metonymically for the Edomite nation as a whole; the geographical term stands for the people who will experience the waste.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 35:8",
+    "deliberation": "Weighed 'fill its mountains with the slain', the list of hills/valleys/channels, and 'slain of the sword'. The imagery of bodies over terrain is vivid but still literal wartime description. 'Slain of the sword' uses 'sword' metonymically for violent death. The topographical list functions as a near-merism/synecdoche for the entire landscape.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "חַלְלֵי־חֶ֖רֶב יִפְּל֥וּ בָהֶֽם",
+        "english_text": "those slain by the sword shall fall in them",
+        "target": ["Those killed in battle", "Victims of warfare", "Human casualties"],
+        "vehicle": ["'Sword' as the killing instrument", "Weapon representing fighting and death", "Concrete object"],
+        "ground": ["The sword is the primary instrument of ancient warfare", "Referring to the sword evokes combat deaths", "Instrument-for-act association"],
+        "posture": ["Emphasizing violent, military nature of the deaths", "Grim descriptive stance", "War-judgment imagery"],
+        "explanation": "The phrase 'slain of the sword' uses 'sword' metonymically for violent death in battle rather than focusing on the literal metal blade.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הָרָ֖יו ... גִּבְעוֹתֶ֤יךָ וְגֵיאוֹתֶ֙יךָ֙ וְכׇל־אֲפִיקֶ֔יךָ",
+        "english_text": "its mountains ... your hills and your valleys and all your watercourses",
+        "target": ["The entirety of Edom’s land", "Total territorial extent", "Physical environment"],
+        "vehicle": ["Listing distinct landforms (mountains, hills, valleys, channels)", "Representative parts of the landscape", "Topographical variety"],
+        "ground": ["Naming the main types of terrain implies coverage of the whole", "The varied features collectively stand for the total land", "Part-whole/scope association"],
+        "posture": ["Stressing that no part of the land will escape the slaughter", "Comprehensive stance", "Total judgment over the territory"],
+        "explanation": "The catalogue of landforms functions like a meristic synecdoche: by naming various features, the verse evokes the whole landscape as filled with corpses.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 35:9",
+    "deliberation": "Reviewed 'everlasting desolations', 'your cities shall not be inhabited', and 'you shall know that I am YHWH'. The cities clause is literal. 'Everlasting desolations' uses 'olam' in a rhetorically intense way typical for prophetic threats, functioning as hyperbolic for an indefinitely long ruin.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִֽׁמְמ֤וֹת עוֹלָם֙ אֶתֶּנְךָ֔",
+        "english_text": "I will make you a desolation for all time [everlasting desolations]",
+        "target": ["The duration of Edom’s devastated state", "Future condition of the land/nation", "Historical fate"],
+        "vehicle": ["'Everlasting' desolations", "Endless time span", "Absolute duration"],
+        "ground": ["A very long period is portrayed as unending", "Irreversibility is expressed as eternity", "Exaggeration of time to underscore seriousness"],
+        "posture": ["Intensifying the threat to stress its severity and near-irreversibility", "Emphatic stance", "Rhetorical overstatement in judgment oracle"],
+        "explanation": "The phrase 'everlasting desolations' is hyperbolic, using the idiomatic force of 'olam' to signify an extremely long, effectively irreversible ruin rather than a strictly infinite duration.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 35:10",
+    "deliberation": "Examined 'the two nations and the two lands' and 'YHWH was there'. The claim itself is literal arrogance. 'Two nations and two lands' refers to Israel and Judah using their territories as stand-ins for the peoples and polities—metonymy. 'YHWH was there' reflects theological presence but is a conventional way of speaking about divine dwelling, not a marked figure here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶת־שְׁנֵ֨י הַגּוֹיִ֜ם וְאֶת־שְׁתֵּ֧י הָאֲרָצ֛וֹת לִ֥י תִהְיֶ֖ינָה",
+        "english_text": "The two nations and the two lands shall be mine",
+        "target": ["The peoples and their political entities (Israel and Judah)", "Two kingdoms", "Collective national identities"],
+        "vehicle": ["'Nations' and 'lands' as territorial units", "Geographical-political zones", "Spatial entities"],
+        "ground": ["A people is naturally associated with its territory", "Land can stand for the community and sovereignty rooted in it", "Place-for-people/government association"],
+        "posture": ["Expressing greedy ambition to control Israel’s peoples via their lands", "Covetous stance", "Political arrogance framed spatially"],
+        "explanation": "By speaking of 'two nations' and especially 'two lands' as objects to be possessed, the verse uses territory metonymically for the peoples and their sovereignty that Edom plans to take over.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 35:11",
+    "deliberation": "Checked 'I will act with the same anger and passion', 'from your hatred', and 'I will make Myself known among them when I judge you'. These are conceptually rich but expressed straightforwardly in abstract terms (anger, jealousy, judgment, knowledge). No clear metaphorical image, idiom, or personification beyond standard legal-theological language.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 35:12",
+    "deliberation": "Assessed 'mountains of Israel', 'they are desolate', and 'given to us for food/prey'. 'Mountains of Israel' is the familiar metonymy for the whole land/people. The statement that they are given 'for prey/food' is metaphorical: the land/people are likened to game or food to be consumed by the conquerors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־הָרֵ֥י יִשְׂרָאֵ֖ל",
+        "english_text": "against the hills [mountains] of Israel",
+        "target": ["The land and inhabitants of Israel", "Covenant people and their territory", "National-religious entity"],
+        "vehicle": ["'Hills/mountains' as physical highlands", "Prominent terrain", "Geographical feature"],
+        "ground": ["The mountainous backbone characterizes the land of Israel", "The terrain stands for those dwelling on it", "Place-for-people/land association"],
+        "posture": ["Focusing contempt on Israel via its prominent geography", "Derisive stance", "Prophetic shorthand for the whole nation-land complex"],
+        "explanation": "The 'mountains of Israel' are used as a metonymy for the whole land and its people; insults 'against the mountains' are effectively against Israel as a nation.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לָ֥נוּ נִתְּנ֖וּ לְאׇכְלָֽה",
+        "english_text": "they have been given to us as prey [for food]",
+        "target": ["Israel’s land and resources (and implicitly people) available for exploitation", "Spoils of conquest", "Object of rapacious desire"],
+        "vehicle": ["Food or prey given to be eaten", "Victim-animals consumed by hunters", "Consumable object"],
+        "ground": ["Conquerors treat defeated lands like prey to devour", "Eating expresses total appropriation and enjoyment", "Consumption metaphor for exploitation"],
+        "posture": ["Exposing Edom’s predatory gloating over Israel’s ruin", "Condemnatory stance", "Moral critique via predation imagery"],
+        "explanation": "Describing the desolated hills as 'given to us for food/prey' metaphorically casts Israel’s land (and implicitly wealth) as something to be devoured, an idiomatic image of total exploitation and plunder.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 35:13",
+    "deliberation": "Reviewed 'you magnified yourselves against Me with your mouth' and 'you multiplied your words against Me'. Both use imagery: 'magnify against' is a metaphor for arrogant boasting, with 'mouth' as metonymy for speech, and 'multiply words' idiomatically/hyperbolically portrays excessive hostile speech.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתַּגְדִּ֤ילוּ עָלַי֙ בְּפִיכֶ֔ם",
+        "english_text": "you spoke arrogantly against Me with your mouth [you magnified against Me with your mouth]",
+        "target": ["Edom’s arrogant, blasphemous speech against God", "Hostile verbal posture", "Relational stance toward YHWH"],
+        "vehicle": ["'Magnifying' oneself against someone", "Mouth as organ of enlargement", "Growth in size"],
+        "ground": ["Growing large over someone evokes superiority and pride", "The mouth stands for speech acts", "Size metaphor for self-exaltation"],
+        "posture": ["Reproving Edom’s boastful defiance", "Accusatory stance", "Moral condemnation through pride imagery"],
+        "explanation": "The verb 'magnify' used with 'mouth' forms an idiom: Edom’s proud speech is pictured as inflating itself over God, with 'mouth' metonymically representing the act of speaking.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהַעְתַּרְתֶּ֥ם עָלַ֖י דִּבְרֵיכֶ֑ם",
+        "english_text": "and you multiplied your words against Me",
+        "target": ["The abundance and intensity of Edom’s hostile talk", "Excessive blasphemy", "Verbal opposition"],
+        "vehicle": ["Multiplying words", "Increase in number as measure of intensity", "Quantitative growth"],
+        "ground": ["A great quantity of words suggests persistent and intense hostility", "More speech equals more offense", "Number metaphor for degree"],
+        "posture": ["Highlighting the excessive nature of the offense", "Intensifying stance", "Hyperbolic framing of their blasphemy"],
+        "explanation": "Saying they 'multiplied' their words is an idiomatic, mildly hyperbolic way of emphasizing the profusion of hostile speech, not a mathematical description.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 35:14",
+    "deliberation": "Looked closely at 'when all the earth rejoices' and 'I will make you desolation'. The desolation clause is literal. 'All the earth rejoices' is both hyperbolic (the whole earth) and personification, since the earth is said to rejoice like a living being; it likely refers to the surrounding world/nations rejoicing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּשְׂמֹ֙חַ֙ כׇּל־הָאָ֔רֶץ",
+        "english_text": "When the whole earth rejoices",
+        "target": ["The widespread rejoicing of peoples at Edom’s downfall", "International response to judgment", "Collective human reaction"],
+        "vehicle": ["'All the earth' as a rejoicing subject", "The planet/landmass depicted as celebrating", "Cosmic-scale participant"],
+        "ground": ["The inhabited earth stands for its peoples and nations", "Describing the earth as rejoicing personifies the collective joy of its inhabitants", "World-for-nations association plus human emotion ascribed to land"],
+        "posture": ["Portraying Edom’s downfall as universally welcomed", "Dramatic stance", "Cosmicizing the scope of rejoicing through hyperbole"],
+        "explanation": "The phrase personifies 'the earth' as if it could rejoice, using hyperbolic, metonymic language ('all the earth') for the worldwide human response to Edom’s judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 35:15",
+    "deliberation": "Considered 'you rejoiced over the inheritance of the house of Israel', 'heritage', 'Mount Seir', and 'all Edom'. 'Inheritance of the house of Israel' is a standard metonymy for the land given by God. 'Mount Seir' again stands for the nation of Edom; 'all Edom, all of it' is emphatic but literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נַחֲלַ֧ת בֵּֽית־יִשְׂרָאֵ֛ל",
+        "english_text": "the heritage [inheritance] of the House of Israel",
+        "target": ["Israel’s land and covenant blessings", "Territorial allotment and status", "The concrete gift of the promised land"],
+        "vehicle": ["'Inheritance' as what is allotted to heirs", "Family estate/portion", "Legal patrimony"],
+        "ground": ["The land is conceptualized as YHWH’s gift, like an inheritance from a father", "Inheritance stands for the concrete territory and privileges given", "Legal-gift concept representing land and status"],
+        "posture": ["Highlighting the sacred, God-given character of Israel’s land", "Evaluative stance", "Covenant theology framing of geography"],
+        "explanation": "Calling the land 'the inheritance of the house of Israel' is a metonymy using legal-family language of inheritance for the land and privileges granted by God.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שְׁמָמָ֨ה תִהְיֶ֤ה הַר־שֵׂעִיר֙",
+        "english_text": "desolation shall you be, Mount Seir",
+        "target": ["The nation of Edom", "Collective people and polity", "Regional power"],
+        "vehicle": ["'Mount Seir' as geographical feature", "Terrain name", "Mountain range"],
+        "ground": ["The Edomite nation is identified with its mountain region", "The place-name stands for its people", "Place-for-people association"],
+        "posture": ["Pronouncing doom on Edom in terms of its emblematic mountain", "Judgmental stance", "Prophetic address via toponym"],
+        "explanation": "As elsewhere, 'Mount Seir' functions metonymically: the geographic term represents the Edomites who will become a desolation.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

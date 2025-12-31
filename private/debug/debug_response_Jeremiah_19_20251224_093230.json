@@ -1,0 +1,544 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 19:1",
+    "deliberation": "Checked for metaphors or idioms in the command to buy a potter’s jug and take elders. Although the jug will later become symbolic, in this verse the commands are purely preparatory and descriptive; no figurative language in the wording itself.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 19:2",
+    "deliberation": "Examined references to the Valley of Ben-hinnom and the Harsith Gate. These are geographical/proper names. The act of going out and proclaiming is literal prophetic behavior with no figurative phrasing in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 19:3",
+    "deliberation": "Looked for metaphors and idioms in the proclamation formula. The key expression is that the ears of everyone who hears will ‘tingle,’ which is a conventional Hebrew idiom for intense shock or horror, not a literal physical symptom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁ֥ר כׇּל־שֹׁמְעָ֖הּ תִּצַּ֥לְנָה אׇזְנָֽיו",
+        "english_text": "such disaster upon this place that the ears of all who hear about it will tingle",
+        "target": [
+          "the hearer’s emotional/psychological reaction to the news of disaster",
+          "inner response/state",
+          "human experience"
+        ],
+        "vehicle": [
+          "ears tingling from a sudden intense sensation",
+          "bodily sensory reaction",
+          "physical/sensory domain"
+        ],
+        "ground": [
+          "sudden, sharp, unsettling impact on the hearer",
+          "intensity/shock",
+          "shared human embodiment (link between body sensation and emotion)"
+        ],
+        "posture": [
+          "depicts the coming judgment as uniquely horrifying and shocking",
+          "heightened negative evaluation",
+          "theological-prophetic judgment"
+        ],
+        "explanation": "The idiom of ears ‘tingling’ metaphorically expresses the overwhelming shock and horror people will feel when they hear of the coming calamity, exaggerating bodily reaction to convey the extremity of the news.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 19:4",
+    "deliberation": "Considered whether ‘have made this place alien’ and ‘filled this place with the blood of the innocent’ are figurative. The killings and bloodshed are real, but the phrase ‘have made this place alien’ conceptualizes the cultic and covenantal distortion of the site as if the place itself had been turned into something foreign.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַֽיְנַכְּר֞וּ אֶת־הַמָּק֤וֹם הַזֶּה֙",
+        "english_text": "and have made this place alien [to Me]",
+        "target": [
+          "the cultic and covenantal status of the site and its worshipers",
+          "religious allegiance/relationship to YHWH",
+          "theological-covenantal domain"
+        ],
+        "vehicle": [
+          "something (or someone) made foreign/alien",
+          "outsider/foreign status",
+          "social-ethnic domain"
+        ],
+        "ground": [
+          "no longer belonging to its proper owner, estranged and inappropriate",
+          "estrangement and otherness",
+          "breach of rightful relationship"
+        ],
+        "posture": [
+          "condemns the site’s worship as completely estranged from YHWH",
+          "negative evaluation of idolatrous practice",
+          "covenantal judgment"
+        ],
+        "explanation": "The ‘place’ stands metonymically for its cultic use and community, and their idolatrous practices are described metaphorically as making the place ‘foreign,’ signaling estrangement from YHWH as if the area had changed national or covenantal identity.",
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 19:5",
+    "deliberation": "The child sacrifice and building of high places are tragically literal. The figurative element is the closing statement ‘which never came to My mind/heart,’ which uses anthropomorphic metaphor for God’s intentions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹ֥א עָלְתָ֖ה עַל־לִבִּֽי",
+        "english_text": "and which never came to My mind [lit. ‘never arose upon My heart’]",
+        "target": [
+          "God’s will and intention regarding acceptable worship",
+          "divine volition",
+          "theological domain"
+        ],
+        "vehicle": [
+          "a thought arising in a human heart/mind",
+          "human cognitive-emotional process",
+          "human psychological experience"
+        ],
+        "ground": [
+          "what one truly plans or desires is pictured as a thought forming in the heart",
+          "intention/desire",
+          "shared conceptual link between heart and will"
+        ],
+        "posture": [
+          "emphatically denies any divine sanction for child sacrifice",
+          "moral repudiation",
+          "covenantal-theological clarification"
+        ],
+        "explanation": "God’s ‘heart’ is used anthropomorphically, and His intention is described in terms of a human thought that might ‘arise’ there. The idiom stresses that such practices were never even remotely within God’s will.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 19:6",
+    "deliberation": "Focused on the renaming of the place from Topheth/Valley of Ben-hinnom to ‘Valley of Slaughter.’ This new name is a prophetic, figurative designation that characterizes the valley by its destined function as a place of mass killing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֖י אִם־גֵּ֥יא הַהֲרֵגָֽה",
+        "english_text": "but [it shall be called] the Valley of Slaughter",
+        "target": [
+          "the future fate and history of the valley and its people",
+          "impending judgment event",
+          "historical-theological domain"
+        ],
+        "vehicle": [
+          "a valley characterized by slaughter/killing",
+          "place defined by carnage",
+          "violence/warfare domain"
+        ],
+        "ground": [
+          "the place will be filled with killing so that slaughter becomes its defining trait",
+          "identity by dominant function/outcome",
+          "curse imagery of battlefield devastation"
+        ],
+        "posture": [
+          "labels the site as under total, bloody judgment",
+          "pronouncement of curse",
+          "prophetic doom"
+        ],
+        "explanation": "The prophetic renaming functions metaphorically and metonymically: the valley is defined by the slaughter that will occur there, so the event of mass killing becomes its very name and identity.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 19:7",
+    "deliberation": "Identified (1) the verb ‘I will baqqōtî their counsel’ as metaphorical, drawn from ‘emptying out’ a container, also playing on the word for jug; and (2) ‘fall by the sword’ as metonymy where ‘sword’ stands for violent warfare/death in battle.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּ֠בַקֹּתִ֠י אֶת־עֲצַ֨ת יְהוּדָ֤ה וִירוּשָׁלַ֙͏ִם֙",
+        "english_text": "And I will frustrate [lit. ‘empty out’] the counsel of Judah and Jerusalem",
+        "target": [
+          "the political and strategic plans of Judah and Jerusalem",
+          "human planning/counsel",
+          "socio-political domain"
+        ],
+        "vehicle": [
+          "a container/jug being emptied out or made void",
+          "emptied vessel",
+          "material/physical domain"
+        ],
+        "ground": [
+          "what is emptied is rendered useless and ineffective",
+          "nullification/voiding",
+          "failure of plans"
+        ],
+        "posture": [
+          "depicts their counsel as utterly futile under divine judgment",
+          "disparagement of human schemes",
+          "prophetic critique of self-reliance"
+        ],
+        "explanation": "The verb from the root בק״ק (‘to empty out’) is applied to ‘counsel,’ picturing their plans as if they were a jug being poured out to nothing. This likely plays on the earlier ‘jug’ (בַקְבֻּק) and is both metaphor and paronomastic wordplay.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִפַּלְתִּ֤ים בַּחֶ֙רֶב֙ לִפְנֵ֣י אֹֽיְבֵיהֶ֔ם",
+        "english_text": "I will cause them to fall by the sword before their enemies",
+        "target": [
+          "the violent death of the people in war",
+          "defeat and killing in battle",
+          "military-historical domain"
+        ],
+        "vehicle": [
+          "the ‘sword’ as a weapon",
+          "instrument of killing",
+          "warfare domain"
+        ],
+        "ground": [
+          "sword use is emblematic of warfare and violent death",
+          "instrument stands for the whole process of battle",
+          "conventional martial idiom"
+        ],
+        "posture": [
+          "announces their complete defeat in war",
+          "judgment imagery",
+          "covenantal curse realization"
+        ],
+        "explanation": "‘By the sword’ is a standard Hebrew idiom where ‘sword’ stands metonymically for warfare and violent death in battle, not narrowly for a particular blade.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 19:8",
+    "deliberation": "Noted two clear figures: (1) the city made ‘a desolation and a hissing,’ where hissing is a gesture standing for derision and horror; and (2) ‘all its wounds,’ which personifies the city as a body afflicted with blows.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשַׂמְתִּי֙ אֶת־הָעִ֣יר הַזֹּ֔את לְשַׁמָּ֖ה וְלִשְׁרֵקָ֑ה כֹּ֚ל עֹבֵ֣ר עָלֶ֔יהָ יִשֹּׁ֥ם וְיִשְׁרֹ֖ק",
+        "english_text": "I will make this city an object of horror and hissing; everyone who passes by it will be appalled and will hiss",
+        "target": [
+          "the reputation and perception of the devastated city",
+          "public reaction to its downfall",
+          "social-communicative domain"
+        ],
+        "vehicle": [
+          "hissing as a gesture of derision or astonished scorn",
+          "nonverbal sign of contempt/horror",
+          "body-language/expressive domain"
+        ],
+        "ground": [
+          "visible expression of shock, mockery, and dismay",
+          "public display of abhorrence",
+          "social shaming"
+        ],
+        "posture": [
+          "presents the city as a warning spectacle to others",
+          "didactic judgment sign",
+          "prophetic rhetoric of shame"
+        ],
+        "explanation": "The city is characterized as a ‘hissing,’ where the physical gesture of hissing functions metonymically and metaphorically for the contemptuous and horrified reaction of onlookers.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיִשְׁרֹ֖ק עַל־כׇּל־מַכֹּתֶֽהָ",
+        "english_text": "and will hiss over all its wounds",
+        "target": [
+          "the various calamities and damages suffered by the city",
+          "disasters/judgment events affecting Jerusalem",
+          "historical-theological domain"
+        ],
+        "vehicle": [
+          "‘wounds’ on a body",
+          "injuries/blows inflicted on a living organism",
+          "biological/medical domain"
+        ],
+        "ground": [
+          "multiple discrete blows that leave visible marks",
+          "accumulated damage and suffering",
+          "analogical mapping of city to human body"
+        ],
+        "posture": [
+          "underscores the city’s condition as grievously and repeatedly struck",
+          "intensified portrayal of judgment",
+          "lament/judgment imagery"
+        ],
+        "explanation": "The city is personified as a body covered with ‘wounds,’ i.e., the various disasters that have struck it; observers hiss in astonishment and derision at the extent of its injuries.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 19:9",
+    "deliberation": "Considered whether the cannibalism language might be purely figurative. In light of parallel siege-curse texts and historical siege conditions, the text intends literal, though extreme, behavior under famine, not a metaphor. Therefore, no distinct figurative expression is isolated here.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 19:10",
+    "deliberation": "The command for Jeremiah to smash the jug in front of the witnesses is a symbolic act in the narrative, but the wording itself is entirely literal description of the action; the figurative meaning is given explicitly in the next verse.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 19:11",
+    "deliberation": "This verse verbally interprets the sign-act. There is an explicit comparison: ‘So will I smash this people and this city, as one smashes a potter’s vessel,’ making the breaking of a ceramic vessel a simile (and underlying metaphor) for the irreversible shattering of the people and the city.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כָּ֣כָה אֶשְׁבֹּ֞ר אֶת־הָעָ֤ם הַזֶּה֙ וְאֶת־הָעִ֣יר הַזֹּ֔את כַּאֲשֶׁ֤ר יִשְׁבֹּר֙ אֶת־כְּלִ֣י הַיּוֹצֵ֔ר אֲשֶׁ֛ר לֹא־יוּכַ֥ל לְהֵרָפֵ֖ה עוֹד",
+        "english_text": "So will I smash this people and this city, as one smashes a potter’s vessel, which can never be mended",
+        "target": [
+          "the destruction of the people of Judah and the city of Jerusalem",
+          "national/community ruin under judgment",
+          "historical-theological domain"
+        ],
+        "vehicle": [
+          "a potter’s clay vessel smashed beyond repair",
+          "fragile object irreversibly broken",
+          "material/handicraft domain"
+        ],
+        "ground": [
+          "once shattered, the object cannot be restored to its prior wholeness",
+          "irreversibility and totality of breakage",
+          "finality of judgment"
+        ],
+        "posture": [
+          "emphasizes that the coming judgment will be complete and irreversible",
+          "severe, uncompromising warning",
+          "prophetic doom oracle"
+        ],
+        "explanation": "Using an explicit ‘as’ comparison, God likens His breaking of the people and city to the shattering of a potter’s vessel that cannot be repaired, a vivid hyperbolic simile conveying the total and final nature of the judgment.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 19:12",
+    "deliberation": "Here God says He will make ‘this city like Topheth,’ an explicit simile likening Jerusalem as a whole to the infamous, defiled site of burning and burial in the valley.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלָתֵ֛ת אֶת־הָעִ֥יר הַזֹּ֖את כְּתֹֽפֶת",
+        "english_text": "I will make this city like Topheth",
+        "target": [
+          "the future state and reputation of Jerusalem",
+          "city-wide judgment condition",
+          "urban-historical domain"
+        ],
+        "vehicle": [
+          "Topheth, the polluted site of burning and burial",
+          "place of defilement and mass death",
+          "cultic-judgment site"
+        ],
+        "ground": [
+          "both become associated with defilement, burning, and graves",
+          "equivalence in cursed status",
+          "shared role as emblem of divine wrath"
+        ],
+        "posture": [
+          "declares that Jerusalem will share the same abominable, cursed character as Topheth",
+          "intensification of warning",
+          "rhetoric of contamination"
+        ],
+        "explanation": "Topheth stands metonymically for a place of abomination and judgment; Jerusalem is explicitly likened to it, so that the city’s coming fate mirrors the notorious valley.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 19:13",
+    "deliberation": "Saw two figures: (1) ‘the houses of Jerusalem and the houses of the kings of Judah shall be like the place Topheth, unclean’—another simile extending the Topheth image; (2) ‘the whole host of heaven’ as a standard metaphor, picturing celestial bodies/divine beings as an army/host.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהָי֞וּ בָּתֵּ֣י יְרוּשָׁלַ֗͏ִם וּבָתֵּי֙ מַלְכֵ֣י יְהוּדָ֔ה כִּמְק֥וֹם הַתֹּ֖פֶת הַטְּמֵאִ֑ים",
+        "english_text": "the houses of Jerusalem and the houses of the kings of Judah shall be impure, like that place Topheth",
+        "target": [
+          "the ritual and moral status of Jerusalem’s and the kings’ houses",
+          "defilement of dwellings",
+          "cultic-moral domain"
+        ],
+        "vehicle": [
+          "Topheth as an unclean, defiled cultic site",
+          "place characterized by impurity and abomination",
+          "cursed cultic locale"
+        ],
+        "ground": [
+          "both are made unclean by idolatrous rites and contact with death",
+          "shared impurity and abominable usage",
+          "parity in defiled status"
+        ],
+        "posture": [
+          "equates even royal and urban houses with the most defiled site",
+          "shocking leveling judgment",
+          "prophetic denunciation of widespread idolatry"
+        ],
+        "explanation": "The houses are explicitly likened to Topheth; Topheth itself functions metonymically for extreme cultic defilement, so the simile transfers that polluted identity to every house involved in illicit worship.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְכֹל֙ צְבָ֣א הַשָּׁמַ֔יִם",
+        "english_text": "to the whole host of heaven",
+        "target": [
+          "the celestial bodies/deities being worshiped",
+          "objects of astral worship",
+          "religious/cosmic domain"
+        ],
+        "vehicle": [
+          "a ‘host’ or army arrayed in ranks",
+          "military formation",
+          "warfare/social organization domain"
+        ],
+        "ground": [
+          "a numerous, organized group under an implied commander",
+          "ordered multiplicity",
+          "regimented structure attributed to celestial phenomena"
+        ],
+        "posture": [
+          "depicts the heavenly bodies as an organized host wrongly receiving worship",
+          "critique of astral/angelic cult",
+          "theological polemic"
+        ],
+        "explanation": "The phrase ‘host of heaven’ metaphorically and metonymically portrays the array of celestial bodies (and perhaps associated beings) as a military host, an ‘army’ in the sky, a conventional biblical image for the ordered multiplicity of the heavens.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 19:14",
+    "deliberation": "Narrative description of Jeremiah’s movements—from Topheth to the court of the House of YHWH—and his speaking to the people. ‘House of YHWH’ is a standard designation for the temple but also literally a building; no distinct figurative expression is foregrounded here.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 19:15",
+    "deliberation": "The idiom ‘they have stiffened their necks’ is a well-known metaphor for stubbornness, picturing people as draft animals resisting the yoke. This is the key figurative expression in the verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֤י הִקְשׁוּ֙ אֶת־עׇרְפָּ֔ם לְבִלְתִּ֖י שְׁמ֥וֹעַ אֶת־דְּבָרָֽי",
+        "english_text": "for they have stiffened their necks so as not to heed My words",
+        "target": [
+          "the people’s obstinate refusal to obey God",
+          "stubbornness and rebellion",
+          "ethical-theological domain"
+        ],
+        "vehicle": [
+          "an animal stiffening its neck against a yoke",
+          "resistant draft animal",
+          "agricultural/animal labor domain"
+        ],
+        "ground": [
+          "unyielding resistance to guidance and control",
+          "refusal to submit",
+          "analogy between physical rigidity and moral stubbornness"
+        ],
+        "posture": [
+          "condemns their disobedience as willful and animal-like obstinacy",
+          "moral censure",
+          "covenant lawsuit rhetoric"
+        ],
+        "explanation": "The neck (a body part, metonymy for the whole person) is pictured as deliberately stiffened like that of a draft animal resisting the yoke, a vivid metaphor for hardened, unteachable refusal to listen to God.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

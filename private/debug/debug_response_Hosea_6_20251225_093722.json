@@ -1,0 +1,827 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 6:1",
+    "deliberation": "I looked for non‑literal uses of bodily and spatial language. The call to “return” to YHWH uses movement language for repentance, and the sequence “he tore/struck… heal/bind us” uses violent and medical imagery for God’s disciplinary judgment and restoration, which are best taken as metaphors rather than literal attack and medical treatment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְכוּ וְנָשׁוּבָה אֶל־יְהוָה",
+        "english_text": "Come, let us turn back to the LORD",
+        "target": [
+          "Israel’s act of repentance and renewed allegiance to YHWH",
+          "moral–spiritual change of direction",
+          "divine–human covenant relationship"
+        ],
+        "vehicle": [
+          "physically turning and going back to a person/place",
+          "spatial movement and reorientation",
+          "journey/space domain"
+        ],
+        "ground": [
+          "changing one’s orientation and direction in relation to another",
+          "leaving a wrong path to re‑enter right relationship",
+          "mapping moral/spiritual state onto spatial distance/orientation"
+        ],
+        "posture": [
+          "inviting the community to decisive relational reorientation toward God",
+          "exhortational/penitential tone",
+          "covenant renewal appeal"
+        ],
+        "explanation": "The verb for “turn back” uses the image of physically returning to describe repentance and relational restoration with God.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי הוּא טָרָף וְיִרְפָּאֵנוּ יַךְ וְיַחְבְּשֵׁנוּ",
+        "english_text": "For he has torn, and he will heal us; he has struck, and he will bind us up",
+        "target": [
+          "YHWH’s judgment on Israel and his subsequent restoration of them",
+          "national–covenantal discipline and healing",
+          "God’s governance of Israel’s history"
+        ],
+        "vehicle": [
+          "a predator tearing prey and a healer/doctor binding up wounds",
+          "violent attack and medical treatment of bodily injuries",
+          "animal predation and healing/care domain"
+        ],
+        "ground": [
+          "painful, bodily harm followed by remedial care that repairs damage",
+          "severe affliction as a means to eventual restoration and wholeness",
+          "mapping historical calamities and restoration onto physical wounding and healing"
+        ],
+        "posture": [
+          "acknowledging both the severity and the restorative purpose of God’s actions",
+          "penitential yet hopeful trust in God’s healing after judgment",
+          "theology of redemptive discipline"
+        ],
+        "explanation": "God’s infliction of covenant curses and his restoration are portrayed as an animal’s tearing and a healer’s binding of wounds, using concrete bodily imagery for historical judgment and renewal.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 6:2",
+    "deliberation": "I examined whether this is literal resurrection or figurative corporate restoration. The verbs 'revive' and 'raise up' are bodily-life terms used for national renewal, and the 'two days / third day' time frame functions like an idiomatic way of saying 'after a short, set time,' not a precise schedule.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יְחַיֵּנוּ … בַּיּוֹם הַשְּׁלִישִׁי יְקִימֵנוּ וְנִחְיֶה לְפָנָיו",
+        "english_text": "He will revive us… on the third day he will raise us up, and we shall live before him",
+        "target": [
+          "Israel’s corporate restoration after judgment",
+          "national renewal and renewed standing before God",
+          "post‑judgment covenant restoration"
+        ],
+        "vehicle": [
+          "reviving the dead and raising someone up to life to stand before another",
+          "bodily resurrection and restored vitality",
+          "life/death and resurrection domain"
+        ],
+        "ground": [
+          "transition from a state akin to death to one of active life and presence",
+          "restoration of capacity to stand in someone’s presence",
+          "mapping national collapse and recovery onto death and reanimation"
+        ],
+        "posture": [
+          "expressing strong hope in God’s power to reverse Israel’s near‑death condition",
+          "confident expectation of speedy restoration",
+          "trust in God’s life‑giving sovereignty"
+        ],
+        "explanation": "The people’s post‑judgment restoration is depicted using resurrection imagery—being revived and raised up—to express a dramatic reversal from near‑death to renewed life before God.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִיֹּמָיִם … בַּיּוֹם הַשְּׁלִישִׁי",
+        "english_text": "in two days… on the third day",
+        "target": [
+          "the duration before God restores Israel",
+          "short but determinate waiting period",
+          "experience of divine delay and intervention"
+        ],
+        "vehicle": [
+          "a small, fixed count of literal days (two and then three)",
+          "concrete chronological expression",
+          "time‑reckoning domain"
+        ],
+        "ground": [
+          "brevity and definiteness (a little while that is clearly bounded)",
+          "assurance that the period of affliction is limited",
+          "using a small, precise time span to signify a brief, set interval"
+        ],
+        "posture": [
+          "reassuring the audience that judgment will not be prolonged indefinitely",
+          "hopeful minimization of the delay before restoration",
+          "pastoral encouragement through temporal imagery"
+        ],
+        "explanation": "The pairing of 'two days' and 'on the third day' works idiomatically to signal a brief, set period rather than a literal schedule, emphasizing the shortness and certainty of the wait for restoration.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 6:3",
+    "deliberation": "I looked for figurative pursuit and natural imagery. 'Pursue to know YHWH' treats knowledge of God as a quarry to be chased; then two explicit similes compare God’s coming to dawn and to rain (including 'latter rain'), all using predictable and life‑giving natural phenomena as vehicles.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנֵדְעָה נִרְדְּפָה לָדַעַת אֶת־יְהוָה",
+        "english_text": "Let us know; let us pursue to know the LORD",
+        "target": [
+          "Israel’s effort to gain true relational knowledge of YHWH",
+          "spiritual and covenantal devotion",
+          "divine–human knowledge/relationship"
+        ],
+        "vehicle": [
+          "chasing or pursuing something or someone",
+          "vigorous physical pursuit/hunting",
+          "movement and quest domain"
+        ],
+        "ground": [
+          "intense, sustained effort and focus toward a goal",
+          "refusal to be passive; active striving for closeness",
+          "mapping spiritual seeking onto physical pursuit of a quarry"
+        ],
+        "posture": [
+          "urging zealous, persistent commitment to know God",
+          "positive exhortation toward wholehearted seeking",
+          "call to energetic covenant faithfulness"
+        ],
+        "explanation": "Knowing YHWH is depicted as something to be physically pursued, using the imagery of chase or hunt for the spiritual quest for God.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּשַׁחַר נָכוֹן מֹצָאוֹ",
+        "english_text": "His going forth is sure like the dawn",
+        "target": [
+          "YHWH’s future appearance/intervention on behalf of his people",
+          "divine self‑manifestation and action",
+          "experience of God’s saving presence"
+        ],
+        "vehicle": [
+          "the daily breaking of dawn",
+          "regular, predictable natural phenomenon of sunrise",
+          "cosmic/order of day and night"
+        ],
+        "ground": [
+          "predictability, certainty, and regular arrival after darkness",
+          "bringing of light after a period of night",
+          "mapping God’s reliable coming onto sunrise after night"
+        ],
+        "posture": [
+          "assuring the audience of God’s reliability and faithfulness",
+          "hopeful confidence in the inevitability of divine help",
+          "comfort rooted in the ordered rhythms of creation"
+        ],
+        "explanation": "God’s coming is explicitly compared to dawn, highlighting its certainty and its role in dispelling darkness.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיָבוֹא כַּגֶּשֶׁם לָנוּ כְּמַלְקוֹשׁ יֹרֶה אָרֶץ",
+        "english_text": "He will come to us like the rain, like the latter rain that waters the earth",
+        "target": [
+          "the beneficial effects of God’s renewed presence and action",
+          "spiritual and communal refreshment and fruitfulness",
+          "covenant blessing and renewal"
+        ],
+        "vehicle": [
+          "falling rain, especially the latter seasonal rains",
+          "life‑giving precipitation that waters the land",
+          "agricultural and hydrological domain"
+        ],
+        "ground": [
+          "bringing refreshment, fertility, and growth to a dry land",
+          "descending from above to nourish what is below",
+          "mapping God’s blessing and renewal onto nourishing rainfall"
+        ],
+        "posture": [
+          "depicting God’s coming as gentle, life‑sustaining rather than destructive",
+          "evoking longing for refreshing divine visitation",
+          "pastoral, hope‑filled imagery"
+        ],
+        "explanation": "God’s future coming is likened to rain, especially the latter rain that ensures the harvest, portraying his presence as nourishing and life‑giving.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 6:4",
+    "deliberation": "I tested the rhetorical questions and the images for loyalty. The questions themselves are rhetorical but not figurative. The core figurative language is in the two explicit similes comparing Israel’s covenant love/loyalty to morning cloud and early‑vanishing dew, stressing transience and unreliability.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְחַסְדְּכֶם כַּעֲנַן־בֹּקֶר",
+        "english_text": "Your loyalty is like a morning cloud",
+        "target": [
+          "Israel’s covenant loyalty (ḥesed) toward God",
+          "moral–relational reliability and steadfastness",
+          "behavior of the covenant people"
+        ],
+        "vehicle": [
+          "a morning cloud that soon dissipates",
+          "ephemeral atmospheric phenomenon",
+          "weather/sky domain"
+        ],
+        "ground": [
+          "brief appearance followed by rapid disappearance",
+          "unreliable, insubstantial nature of what seems promising",
+          "mapping moral inconsistency onto transient cloudiness"
+        ],
+        "posture": [
+          "expressing divine frustration at superficial, short‑lived loyalty",
+          "critical evaluation of Israel’s faithfulness",
+          "lament over fickle devotion"
+        ],
+        "explanation": "Israel’s loyalty is compared to a morning cloud that quickly disappears, highlighting its fleeting, unreliable character.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַטַּל מַשְׁכִּים הֹלֵךְ",
+        "english_text": "and like the dew that early goes away",
+        "target": [
+          "the duration and reliability of Israel’s devotion",
+          "stability of covenant commitment",
+          "inner disposition of the people"
+        ],
+        "vehicle": [
+          "early morning dew that evaporates quickly",
+          "transient moisture on the ground",
+          "natural hydrological cycle on a small scale"
+        ],
+        "ground": [
+          "appears briefly and then vanishes as soon as the sun rises",
+          "initial freshness without lasting presence",
+          "mapping religious enthusiasm onto short‑lived dew"
+        ],
+        "posture": [
+          "underscoring how quickly Israel’s piety evaporates",
+          "intensifying the critique begun with the cloud image",
+          "divine disappointment in insubstantial devotion"
+        ],
+        "explanation": "The people’s loyalty is likened to dew that vanishes early, emphasizing its extreme short‑livedness.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 6:5",
+    "deliberation": "I differentiated literal and figurative description of prophetic activity and judgment. 'Hewn by the prophets' and 'slain with the words of my mouth' obviously use violent physical imagery for prophetic pronouncement. 'My judgments go forth as light' portrays legal/moral decisions as light that shines forth; the abstract 'judgments' are also slightly personified as going out.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־כֵּן חָצַבְתִּי בַּנְּבִיאִים",
+        "english_text": "Therefore I have hewn [them] by the prophets",
+        "target": [
+          "God’s confronting and cutting down Israel through prophetic messages",
+          "spiritual/moral judgment delivered via prophecy",
+          "divine communication and discipline"
+        ],
+        "vehicle": [
+          "hewing or chiseling with a tool",
+          "forceful cutting and shaping of stone/wood",
+          "craft/labor and destructive force domain"
+        ],
+        "ground": [
+          "forceful removal of what stands, shaping or cutting it down to size",
+          "decisive, painful impact on the object being cut",
+          "mapping prophetic rebuke onto the action of hewing with a tool"
+        ],
+        "posture": [
+          "portraying prophetic words as severe and penetrating, not gentle",
+          "emphasizing the drastic nature of God’s dealings via prophets",
+          "warning tone concerning the force of divine speech"
+        ],
+        "explanation": "God’s use of the prophets is depicted as 'hewing' Israel, using the image of cutting with tools to portray the severe impact of prophetic judgment.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲרַגְתִּים בְּאִמְרֵי־פִי",
+        "english_text": "I have slain them with the words of my mouth",
+        "target": [
+          "the destructive, condemning effect of God’s spoken word through prophets on the people",
+          "spiritual and communal ruin produced by divine pronouncement",
+          "experience of divine judgment via speech"
+        ],
+        "vehicle": [
+          "physically killing someone with a weapon",
+          "lethal action causing death",
+          "violence and warfare domain"
+        ],
+        "ground": [
+          "producing outcomes as decisive and final as physical death",
+          "communication that brings about ruin, not mere information",
+          "mapping prophetic oracles onto lethal blows"
+        ],
+        "posture": [
+          "warning that divine speech is deadly serious and can destroy",
+          "heightening the gravity of ignoring prophecy",
+          "judicial severity in God’s rhetoric"
+        ],
+        "explanation": "The impact of God’s spoken words is portrayed as slaying people, a hyperbolic metaphor emphasizing the lethal seriousness of divine judgment pronounced by the prophets.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִשְׁפָּטֶיךָ אוֹר יֵצֵא",
+        "english_text": "and my judgments go forth as light",
+        "target": [
+          "the manifestation and execution of God’s judgments",
+          "revelation and implementation of divine justice",
+          "moral–legal activity of God"
+        ],
+        "vehicle": [
+          "light that goes forth or dawns",
+          "shining illumination spreading outward",
+          "light/darkness and visibility domain"
+        ],
+        "ground": [
+          "exposing what was hidden and clarifying what is right",
+          "spreading in an unmistakable, public way",
+          "mapping God’s judgments onto light that reveals and pervades"
+        ],
+        "posture": [
+          "asserting that God’s justice is clear, public, and inescapable",
+          "encouraging recognition of divine judgment as illuminating reality",
+          "affirmation of the transparency of God’s justice"
+        ],
+        "explanation": "God’s judgments are depicted as light going forth, personifying them as an active agent and metaphorically likening their clarity and public manifestation to illumination.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 6:6",
+    "deliberation": "I evaluated whether 'mercy not sacrifice' involves imagery beyond simple value contrast. The terms themselves are literal cultic and ethical categories, but the absolute negation of sacrifice to affirm mercy employs typical Hebrew hyperbolic contrast (not X but Y) to stress priority, not an absolute ban.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי חֶסֶד חָפַצְתִּי וְלֹא־זָבַח וְדַעַת אֱלֹהִים מֵעֹלוֹת",
+        "english_text": "For I desire mercy, not sacrifice; and knowledge of God rather than burnt offerings",
+        "target": [
+          "the relative value of ethical loyalty versus ritual performance in God’s sight",
+          "God’s priorities for Israel’s worship and life",
+          "covenantal obedience and cultic practice"
+        ],
+        "vehicle": [
+          "an absolute negation of one category (sacrifice/burnt offerings) in favor of another (mercy/knowledge of God)",
+          "rhetorical overstatement for contrast",
+          "semantic pattern of 'not X but Y' in Hebrew rhetoric"
+        ],
+        "ground": [
+          "using absolute language to express comparative preference and priority",
+          "downplaying the secondary in order to elevate the primary",
+          "mapping a graded hierarchy of values onto a stark either–or statement"
+        ],
+        "posture": [
+          "strongly rebuking empty ritualism and elevating ethical fidelity",
+          "didactic insistence on the heart of the covenant",
+          "prophetic sharpening of priorities through overstatement"
+        ],
+        "explanation": "The claim that God desires mercy 'not' sacrifice and knowledge of God 'rather than' burnt offerings is hyperbolic contrast, using absolute language to stress the priority of covenant loyalty over ritual, not a literal total rejection of all sacrifice.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 6:7",
+    "deliberation": "I noted the comparison 'like Adam/like men' and the verb 'transgress the covenant.' The כ preposition introduces a simile comparing Israel’s breach to typical human/Adam‑like behavior. The phrase 'transgressed the covenant' literally means 'crossed over a covenant,' an idiomatic metaphor of crossing a boundary to depict covenant violation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהֵמָּה כְּאָדָם עָבְרוּ בְרִית",
+        "english_text": "But they, like Adam / like men, have transgressed the covenant",
+        "target": [
+          "Israel’s act of breaking God’s covenant",
+          "covenantal unfaithfulness of this people",
+          "collective moral conduct of Israel"
+        ],
+        "vehicle": [
+          "Adam’s/typical humans’ proclivity to break God’s command",
+          "paradigmatic or common human behavior",
+          "anthropological/human‑nature domain"
+        ],
+        "ground": [
+          "acting in a way characteristic of fallen humanity rather than distinctively faithful",
+          "repeating an earlier or common pattern of disobedience",
+          "mapping Israel’s covenant breach onto a known model of human failure"
+        ],
+        "posture": [
+          "ironically leveling Israel with ordinary unfaithful humanity",
+          "condemning Israel for failing to transcend 'merely human' disobedience",
+          "prophetic disappointment at their Adam‑like unfaithfulness"
+        ],
+        "explanation": "Israel’s covenant violation is explicitly compared to Adam’s or typical human behavior using 'like Adam/like men,' highlighting that they repeat a familiar pattern of human unfaithfulness.",
+        "confidence": 0.84
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָבְרוּ בְרִית",
+        "english_text": "they have transgressed the covenant",
+        "target": [
+          "Israel’s violation of the terms of God’s covenant",
+          "moral–legal overstepping of stipulated boundaries",
+          "covenant obligations"
+        ],
+        "vehicle": [
+          "crossing over a line or boundary",
+          "spatial movement beyond a limit",
+          "boundary/territory domain"
+        ],
+        "ground": [
+          "passing beyond what is permitted or assigned",
+          "leaving a proper domain to enter a forbidden one",
+          "mapping legal/moral violation onto spatial trespass"
+        ],
+        "posture": [
+          "framing sin as unauthorized crossing of God’s set limits",
+          "emphasizing the willful nature of covenant breach",
+          "juridical description of disobedience"
+        ],
+        "explanation": "The verb 'transgress' literally means 'cross over,' so 'transgress the covenant' uses spatial boundary crossing as an idiomatic metaphor for violating covenant stipulations.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 6:8",
+    "deliberation": "I checked whether 'city of evildoers' is merely descriptive or figurative and focused on 'tracked with blood.' 'Gilead' and 'city' stand for its inhabitants (metonymy). 'Tracked/stained with blood' uses imagery of bloody footprints or saturation to depict pervasive violence, more than stating literal pavement conditions, thus functioning as a vivid metaphor (with a hyperbolic edge).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "גִּלְעָד קִרְיַת פֹּעֲלֵי אָוֶן",
+        "english_text": "Gilead is a city of evildoers",
+        "target": [
+          "the inhabitants of Gilead and their moral character",
+          "population characterized by wrongdoing",
+          "societal behavior of that region"
+        ],
+        "vehicle": [
+          "the geographical name 'Gilead' and the term 'city'",
+          "place names and urban entities",
+          "spatial/geographical domain"
+        ],
+        "ground": [
+          "identifying people by the place they inhabit",
+          "associating collective character with a locale",
+          "mapping the identity of residents onto the name of their city/region"
+        ],
+        "posture": [
+          "indicting the whole community through its place name",
+          "prophetic stigmatization of the city as morally corrupt",
+          "collective condemnation"
+        ],
+        "explanation": "The place name 'Gilead' and 'city' are used metonymically to refer to its inhabitants, whose defining trait is doing iniquity.",
+        "confidence": 0.8
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֲקֻבָּה מִדָּם",
+        "english_text": "tracked/stained with blood",
+        "target": [
+          "the extent and severity of violent bloodshed in Gilead",
+          "moral guilt of the city for killings",
+          "community’s murderous behavior"
+        ],
+        "vehicle": [
+          "a place covered with bloody footprints or stained thoroughly with blood",
+          "visible, thick traces of blood on the ground",
+          "physical contamination and staining domain"
+        ],
+        "ground": [
+          "pervasive, conspicuous evidence of killing",
+          "a place so marked by violence that it is figuratively covered in blood",
+          "mapping widespread guilt and violence onto a blood‑tracked landscape"
+        ],
+        "posture": [
+          "dramatically exposing the gravity of Gilead’s violence",
+          "using shocking imagery to condemn the city",
+          "prophetic denunciation through graphic metaphor"
+        ],
+        "explanation": "The city is described as 'tracked with blood,' a graphic metaphor (with hyperbolic force) that pictures the place as saturated with the evidence of killings, conveying pervasive violence and guilt.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 6:9",
+    "deliberation": "I considered the comparison of priests with bandits and whether there is irony. The phrase 'like the ambush of bands' clearly is a simile, portraying priests as a murderous gang. The irony lies in priests, expected to guard holiness, acting like criminals, but the main identifiable figure is the explicit simile.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּכְחַכֵּי אִישׁ גְּדוּדִים חֶבֶר כֹּהֲנִים",
+        "english_text": "And like the lurking of bands is the company of priests",
+        "target": [
+          "the behavior and character of the priestly group",
+          "priests’ violent and predatory conduct",
+          "religious leadership of Israel"
+        ],
+        "vehicle": [
+          "the ambush or lurking place of bandits/raiders",
+          "a murderous gang lying in wait on the road",
+          "crime/brigandage domain"
+        ],
+        "ground": [
+          "predatory, concealed violence against unsuspecting travelers",
+          "betrayal of trust by those who ought to be safe",
+          "mapping priestly treachery onto the behavior of highway brigands"
+        ],
+        "posture": [
+          "sharply condemning the priests through shocking comparison",
+          "deploying ironic reversal (holy men as bandits)",
+          "prophetic exposure of religious corruption"
+        ],
+        "explanation": "The group of priests is explicitly compared to an ambush of bandits, a simile that, with ironic force, portrays religious leaders as behaving like violent criminals.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 6:10",
+    "deliberation": "I looked for Hosea’s characteristic sexual and purity imagery. 'House of Israel' is a common metonymy for the people. 'Fornication' is Hosea’s signature metaphor for idolatry/apostasy, and 'Israel has become defiled' uses ritual impurity as metaphor for moral and religious corruption.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּבֵית יִשְׂרָאֵל",
+        "english_text": "in the house of Israel",
+        "target": [
+          "the people/nation of Israel collectively",
+          "the covenant community as a familial unit",
+          "corporate identity of Israel"
+        ],
+        "vehicle": [
+          "a 'house' as a household or dynasty",
+          "architectural/familial unit",
+          "domestic/social structure domain"
+        ],
+        "ground": [
+          "referring to a family or group via its 'house'",
+          "using the image of a household for a larger community",
+          "mapping the nation onto a single extended household"
+        ],
+        "posture": [
+          "framing Israel as one family in covenant with God",
+          "setting the stage for describing internal corruption",
+          "covenantal household imagery"
+        ],
+        "explanation": "The phrase 'house of Israel' uses 'house' metonymically for the people/family of Israel as a whole.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שָׁם זְנוּת לְאֶפְרָיִם",
+        "english_text": "There is harlotry/fornication in Ephraim",
+        "target": [
+          "Ephraim’s idolatry and covenant infidelity",
+          "spiritual apostasy of the northern kingdom",
+          "religious behavior of Israel"
+        ],
+        "vehicle": [
+          "sexual harlotry/fornication",
+          "marital/sexual unfaithfulness",
+          "marriage and sexual ethics domain"
+        ],
+        "ground": [
+          "betrayal of an exclusive relational bond for other partners",
+          "unfaithful seeking of intimacy/help outside the rightful spouse",
+          "mapping idolatrous worship and political alliances onto marital infidelity"
+        ],
+        "posture": [
+          "morally charging idolatry with the shame of sexual betrayal",
+          "evoking emotional pain and disgust at unfaithfulness",
+          "prophetic denunciation of spiritual adultery"
+        ],
+        "explanation": "Ephraim’s idolatry is portrayed as 'harlotry,' a central Hoseanic metaphor that equates spiritual unfaithfulness with sexual adultery.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִטְמָא יִשְׂרָאֵל",
+        "english_text": "Israel has become defiled",
+        "target": [
+          "Israel’s moral and religious corruption",
+          "state of being unfit for God’s presence",
+          "covenant breach manifested in sin"
+        ],
+        "vehicle": [
+          "ritual/ceremonial defilement or impurity",
+          "unclean condition according to cultic law",
+          "purity/impurity domain"
+        ],
+        "ground": [
+          "being in a state that bars approach to the holy",
+          "pollution that separates from God and community",
+          "mapping moral sin and idolatry onto cultic uncleanness"
+        ],
+        "posture": [
+          "classifying Israel as unclean and excluded from holy fellowship",
+          "highlighting the gravity of sin in ritual terms the audience understands",
+          "pronouncing a verdict of impurity on the nation"
+        ],
+        "explanation": "Israel’s sin is described as becoming 'defiled,' employing ritual impurity as a metaphor for moral and religious pollution.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Hosea 6:11",
+    "deliberation": "I assessed 'harvest' in relation to Judah. In prophetic usage 'harvest' often functions metaphorically for the time of judgment or recompense, not a literal crop. Here 'a harvest is set for you' for Judah is best read as a metaphor for the appointed time when God will repay or judge, set within a broader restoration context.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "גַּם־יְהוּדָה שָׁת קָצִיר לָךְ",
+        "english_text": "Also, O Judah, a harvest is appointed/set for you",
+        "target": [
+          "Judah’s coming experience of recompense (judgment or reward) from God",
+          "the future outcome of Judah’s behavior fixed by God",
+          "time of divine response to Judah’s deeds"
+        ],
+        "vehicle": [
+          "the agricultural harvest at the end of a growing season",
+          "reaping what has been sown",
+          "agricultural cycle and harvest domain"
+        ],
+        "ground": [
+          "a future time when what was sown earlier is gathered in",
+          "inevitability of reaping results corresponding to prior sowing",
+          "mapping moral causality and divine recompense onto agricultural harvest"
+        ],
+        "posture": [
+          "warning Judah that its actions are moving toward an inevitable outcome",
+          "framing judgment as the just 'reaping' of earlier behavior",
+          "prophetic use of agrarian imagery for moral accountability"
+        ],
+        "explanation": "Judah’s appointed time of recompense is depicted as a 'harvest,' using the imagery of reaping what has been sown to convey the certainty and appropriateness of coming divine response.",
+        "confidence": 0.88
+      }
+    ]
+  }
+]

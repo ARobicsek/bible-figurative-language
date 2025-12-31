@@ -1,0 +1,580 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 10:1",
+    "deliberation": "Noted the opening nominal clause 'גפן בוקק ישראל' as a clear metaphor equating Israel with a vine. Also considered whether 'fruit' and 'goodness of his land' are literal or stand metonymically for prosperity; concluded they function figuratively as prosperity language tied to idolatrous expansion, so treated as a separate metonymic expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "גֶּ֤פֶן בּוֹקֵק֙ יִשְׂרָאֵ֔ל",
+        "english_text": "Israel is a ravaged/luxuriant vine",
+        "target": [
+          "Israel as a nation (people and polity)",
+          "covenant community",
+          "religion/politics"
+        ],
+        "vehicle": [
+          "a ravaged / luxuriant vine",
+          "cultivated plant that produces fruit",
+          "agriculture/nature"
+        ],
+        "ground": [
+          "fruitfulness that results in depletion and misuse",
+          "unfaithful use of prosperity",
+          "moral/spiritual condition"
+        ],
+        "posture": [
+          "critical portrayal of Israel’s prosperity as self‑destructive",
+          "negative moral evaluation",
+          "prophetic judgment"
+        ],
+        "explanation": "Israel is depicted not literally as a plant but as a vine whose (misused) fruitfulness leads to spiritual ruin, framing the nation’s prosperity as agricultural growth gone wrong.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כְּרֹ֣ב לְפִרְי֗וֹ ... כְּט֣וֹב לְאַרְצ֔וֹ",
+        "english_text": "When his fruit was plentiful … When his land was bountiful",
+        "target": [
+          "Israel’s material prosperity and political success",
+          "economic and social well‑being",
+          "socio‑economic life"
+        ],
+        "vehicle": [
+          "fruit and the goodness of the land",
+          "agricultural yield and soil quality",
+          "agriculture"
+        ],
+        "ground": [
+          "visible abundance and productivity",
+          "material increase",
+          "outward flourishing"
+        ],
+        "posture": [
+          "critical view of prosperity as fueling idolatrous expansion",
+          "warning about the misuse of blessings",
+          "prophetic admonition"
+        ],
+        "explanation": "‘Fruit’ and ‘the goodness of his land’ stand for Israel’s broader prosperity; this agricultural language functions as a metonymy for economic and political success that enabled more altars and pillars.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 10:2",
+    "deliberation": "Examined whether heart language is literal or figurative. 'חלק לבם' is not a physical description but a conventional way to speak of inner duplicity. It combines the heart as metonym for inner allegiance with a metaphor of division/smoothness. The altar destruction language can be literal judgment, so I did not treat it as figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "חָלַ֥ק לִבָּ֖ם",
+        "english_text": "Their heart is divided / faithless",
+        "target": [
+          "Israel’s inner loyalty and will",
+          "moral-spiritual disposition",
+          "human interior life"
+        ],
+        "vehicle": [
+          "a divided / slippery heart",
+          "a split or duplicitous organ",
+          "body/physical partition"
+        ],
+        "ground": [
+          "instability and duplicity in commitment",
+          "lack of integrity or wholeheartedness",
+          "unreliable allegiance"
+        ],
+        "posture": [
+          "condemnation of Israel’s inner double‑mindedness",
+          "negative ethical assessment",
+          "prophetic accusation"
+        ],
+        "explanation": "The ‘heart’ metonymically represents Israel’s inner allegiance, and describing it as ‘divided/smooth’ metaphorically portrays their loyalty as split and unreliable; this is also a semi‑fixed idiom in biblical Hebrew for faithless intent.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 10:3",
+    "deliberation": "Considered the rhetorical question ('What can a king do for us?') and the statement about lacking a king. These function rhetorically and theologically but do not depend on imagery or non‑literal comparison; there is no clear metaphor, simile, or personification here, only direct speech and irony of belief vs. reality, which is conceptual rather than a verbal irony trope in this line.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 10:4",
+    "deliberation": "Most of the verse is literal description of deceitful speech and covenant‑breaking. The clause 'וּפָרַח כָּרֹאשׁ מִשְׁפָּט עַל תַּלְמֵי שָׂדָי' uses an explicit כ‑comparison, picturing justice as a poisonous plant sprouting in fields. This is a clear simile and botanical metaphor for perverted justice.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּפָרַ֤ח כָּרֹאשׁ֙ מִשְׁפָּ֔ט עַל־תַּלְמֵ֥י שָׂדָֽי",
+        "english_text": "And justice blooms like poisonous weeds on the furrows of the field",
+        "target": [
+          "the nation’s system of justice",
+          "legal and judicial practice",
+          "social order"
+        ],
+        "vehicle": [
+          "poisonous plant (rosh) sprouting on furrows",
+          "harmful weed infestation in a field",
+          "agriculture/nature"
+        ],
+        "ground": [
+          "spreading, corrupting presence that harms rather than nourishes",
+          "pervasiveness and toxicity",
+          "destructive consequences"
+        ],
+        "posture": [
+          "strong denunciation of perverted justice",
+          "negative moral evaluation",
+          "prophetic warning"
+        ],
+        "explanation": "Justice is compared to a poisonous weed growing across the fields, using a simile to depict Israel’s judicial system as something toxic and invasive rather than life‑giving.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 10:5",
+    "deliberation": "Observed the phrase 'עגלות בית און' where 'Beth‑aven' is a polemical renaming of Bethel ('house of God') as 'house of wickedness/vanity', and the 'calf' stands for the idolatrous cult. This is a compressed complex of metonymy and ironic renaming. The mourning language around it can be taken literally (they mourn when the idol is taken), so I focused on the cultic expression itself.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לְעֶגְלוֹת֙ בֵּ֣ית אָ֔וֶן",
+        "english_text": "for the calf of Beth-aven",
+        "target": [
+          "the idolatrous cult at Bethel and its deity-symbol",
+          "false worship practiced by the northern kingdom",
+          "religious life"
+        ],
+        "vehicle": [
+          "calf(s) of Beth-aven ('house of wickedness')",
+          "cult statue at a pejoratively renamed shrine",
+          "cultic imagery"
+        ],
+        "ground": [
+          "the calf image embodies the whole false religious system",
+          "Beth-aven name highlights worthlessness and guilt",
+          "association of object and place with idolatry"
+        ],
+        "posture": [
+          "mocking, polemical stance toward the shrine and its worshipers",
+          "ironic exposure of idolatry’s emptiness",
+          "prophetic satire"
+        ],
+        "explanation": "The ‘calf of Beth-aven’ stands metonymically for the entire idolatrous system at Bethel, and the name ‘Beth-aven’ itself is an ironic twist on ‘Bethel,’ branding the sanctuary as a ‘house of wickedness’ instead of a house of God.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 10:6",
+    "deliberation": "Most elements here—being carried to Assyria as tribute, Ephraim and Israel feeling shame—can be taken straightforwardly as historical-political prediction. While there is standard tribal/national metonymy in 'Ephraim' and 'Israel' for the northern kingdom, this is conventional referential usage rather than a crafted figurative image in this verse, so I did not count a distinct figurative instance.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 10:7",
+    "deliberation": "Identified 'כְקֶצֶף עַל־פְּנֵי־מָיִם' as an explicit simile comparing Samaria’s king to foam on water. The main clause 'נִדְמֶה שֹׁמְרוֹן מַלְכָּהּ' is interpreted in light of this; the simile provides the figurative coloring, emphasizing ephemerality and worthlessness of the monarchy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִדְמֶ֥ה שֹׁמְר֖וֹן מַלְכָּ֑הּ כְּקֶ֖צֶף עַל־פְּנֵי־מָֽיִם",
+        "english_text": "Samaria’s monarchy is vanishing like foam upon water",
+        "target": [
+          "the monarchy of Samaria (king and royal house)",
+          "political leadership",
+          "state power"
+        ],
+        "vehicle": [
+          "foam on the surface of water",
+          "light, insubstantial scum that quickly disappears",
+          "nature"
+        ],
+        "ground": [
+          "transience, instability, and lack of substance",
+          "easy, rapid disappearance",
+          "fragility"
+        ],
+        "posture": [
+          "dismissive assessment of the king’s power and permanence",
+          "prophetic derision of false security in monarchy",
+          "judgment pronouncement"
+        ],
+        "explanation": "By likening the monarchy to foam on water, the verse portrays Samaria’s king as ephemeral and insubstantial, destined to vanish quickly and leaving nothing of weight behind.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 10:8",
+    "deliberation": "Considered whether 'thorns and thistles on their altars' is figurative or simply a literal sign of desolation; it can be literal, so I did not isolate it as a separate trope. The cry to mountains and hills, however, clearly personifies the landscape and uses hyperbolic language expressing a wish for annihilation to escape judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאָמְר֤וּ לֶהָרִים֙ כַּסּ֔וּנוּ וְלַגְּבָע֖וֹת נִפְל֥וּ עָלֵֽינוּ",
+        "english_text": "They shall call to the mountains, “Bury us!” and to the hills, “Fall on us!”",
+        "target": [
+          "the people of Israel under intense divine judgment",
+          "the community’s experience of terror and shame",
+          "human response to catastrophe"
+        ],
+        "vehicle": [
+          "speaking to mountains and hills, asking them to fall",
+          "being buried by collapsing landscape",
+          "cosmic catastrophe imagery"
+        ],
+        "ground": [
+          "desire to escape by being overwhelmed and obliterated",
+          "overpowering dread and hopelessness",
+          "extreme emotional distress"
+        ],
+        "posture": [
+          "dramatic portrayal meant to shock and warn",
+          "emphatic intensification of judgment’s horror",
+          "prophetic rhetoric"
+        ],
+        "explanation": "The people are depicted as addressing inanimate mountains and hills as if they could respond, and their wish to be buried by them exaggerates their longing for death as an escape from judgment, combining personification with hyperbolic self‑destructive desire.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 10:9",
+    "deliberation": "The verse recalls the historical sin at Gibeah and compares Israel’s current sinfulness to that period. While there is temporal and moral comparison, there is no explicit non‑literal image (no as/like comparison with a concrete vehicle, no anthropomorphizing beyond standard language). 'There they stand' can be taken as a straightforward statement about persistence. I therefore did not identify a clear figurative trope here.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 10:10",
+    "deliberation": "Hebrew text is difficult; the MT reads of binding them to their 'two iniquities,' while some renderings (reflected in the supplied English) understand 'breaking them in, harnessing them for two furrows.' In either case, the binding/yoking language functions figuratively for God’s act of disciplinary constraint and punishment, anticipating the heifer/plowing imagery of v.11. I treat the binding expression as a metaphor of being yoked to the consequences of sin.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּאַוָּתִ֖י וְאֶסֳּרֵ֑ם ... בְּאׇסְרָ֖ם לִשְׁתֵּ֥י עוֹנֹתָֽם",
+        "english_text": "When I choose, I will bind them … when they are bound to their two iniquities / broken in for two furrows",
+        "target": [
+          "Israel under divine discipline",
+          "the nation’s experience of judgment and constraint",
+          "covenant relationship/judgment"
+        ],
+        "vehicle": [
+          "being bound or harnessed (like animals or prisoners)",
+          "yoked creatures or captives in fetters",
+          "agricultural/labor and punishment imagery"
+        ],
+        "ground": [
+          "loss of freedom and subjection to imposed burden",
+          "inescapable consequences of wrongdoing",
+          "controlled, constrained movement"
+        ],
+        "posture": [
+          "authoritative depiction of God’s control over Israel’s fate",
+          "warning of unavoidable punitive bondage",
+          "prophetic threat"
+        ],
+        "explanation": "The language of binding/harnessing does not describe literal ropes but portrays Israel as being yoked—either to their guilt or to a punishing task—conveying divine judgment in terms of animals or prisoners forced into service.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Hosea 10:11",
+    "deliberation": "The entire verse is dominated by a sustained agricultural metaphor: Ephraim is a trained heifer that loves to thresh; God places a yoke on her neck and assigns plowing tasks to Ephraim, Judah, and Jacob. This is a single extended image where the nations/tribes are work animals under God’s direction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֶפְרַ֜יִם עֶגְלָ֤ה מְלֻמָּדָה֙ אֹהַ֣בְתִּי לָד֔וּשׁ ... אַרְכִּ֤יב אֶפְרַ֙יִם֙ יַחֲר֣וֹשׁ יְהוּדָ֔ה יְשַׂדֶּד־ל֖וֹ יַעֲקֹֽב",
+        "english_text": "Ephraim became a trained heifer, that I loved to thresh; I placed a yoke upon her fair neck. I will make Ephraim do advance plowing; Judah shall plow, Jacob shall do final plowing.",
+        "target": [
+          "Ephraim, Judah, and Jacob as the covenant people under God",
+          "the tribes/nation and their assigned roles and burdens",
+          "Israel’s historical and spiritual service"
+        ],
+        "vehicle": [
+          "trained heifer and draft animals plowing and threshing under a yoke",
+          "beasts of burden performing stages of agricultural work",
+          "agricultural labor"
+        ],
+        "ground": [
+          "being directed, controlled, and made to work by a master",
+          "mixture of privilege (easy threshing) and hard labor (plowing)",
+          "discipline, training, and imposed service"
+        ],
+        "posture": [
+          "portrayal of God as master assigning both blessing and harder discipline",
+          "ambivalent tone: past favor now turning to heavier yoke",
+          "didactic admonition"
+        ],
+        "explanation": "The tribes are not literally cattle; they are likened to a trained heifer and other draft animals, whose work (threshing vs. plowing) symbolizes differing experiences of ease and hardship under God’s governance and impending discipline.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Hosea 10:12",
+    "deliberation": "The verse is framed entirely in agricultural terms applied to moral and spiritual behavior. I distinguish two closely related figurative moves: (1) commands to sow, reap, and break up ground as a metaphor for practicing righteousness and seeking God; (2) God ‘raining righteousness’ as a complementary image of divine response.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "זִרְע֨וּ לָכֶ֤ם לִצְדָקָה֙ קִצְר֣וּ לְפִי־חֶ֔סֶד נִ֥ירוּ לָכֶ֖ם נִ֑יר וְעֵת֙ לִדְר֣וֹשׁ אֶת־יְהוָה",
+        "english_text": "Sow righteousness for yourselves; reap according to kindness; break up for yourselves fallow ground, for it is time to seek the LORD",
+        "target": [
+          "Israel’s ethical and spiritual choices",
+          "moral conduct and religious devotion",
+          "human behavior before God"
+        ],
+        "vehicle": [
+          "sowing seed, reaping harvest, breaking up fallow ground",
+          "agricultural preparation and harvest cycles",
+          "farming/agriculture"
+        ],
+        "ground": [
+          "actions now produce corresponding outcomes later",
+          "deliberate preparation is needed for desired results",
+          "effort invested leads to proportionate return"
+        ],
+        "posture": [
+          "urgent exhortation to deliberate, positive moral ‘cultivation’",
+          "hopeful call to repentance and renewal",
+          "didactic encouragement"
+        ],
+        "explanation": "Commands to sow, reap, and prepare soil are not about literal farming but about practicing righteousness and covenant loyalty so as to enjoy the corresponding ‘harvest’ of covenant blessing.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַד־יָב֕וֹא וְיֹרֶ֥ה צֶ֖דֶק לָכֶֽם",
+        "english_text": "until He comes and rains righteousness upon you",
+        "target": [
+          "God’s bestowal of blessing and just favor",
+          "divine response to repentance",
+          "covenant blessing"
+        ],
+        "vehicle": [
+          "rain falling on fields",
+          "beneficial precipitation enabling growth",
+          "weather/agriculture"
+        ],
+        "ground": [
+          "life-giving, nourishing provision from above",
+          "dependence on an external source for growth",
+          "abundant, encompassing outpouring"
+        ],
+        "posture": [
+          "hopeful portrayal of God’s generous readiness to bless",
+          "positive incentive for repentance",
+          "prophetic promise"
+        ],
+        "explanation": "God’s granting of righteousness and blessing is pictured as rain falling on cultivated fields, emphasizing its life‑giving, abundant, and externally sourced character.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Hosea 10:13",
+    "deliberation": "This verse inverts the agricultural metaphor of v.12: instead of sowing righteousness, they have plowed wickedness, reaped injustice, and eaten the fruit of lies. These coordinated images form one extended metaphor of moral farming, where their evil actions are pictured as agricultural work yielding corrupt produce.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חֲרַשְׁתֶּם־רֶ֛שַׁע עַוְלָ֥תָה קְצַרְתֶּ֖ם אֲכַלְתֶּ֣ם פְּרִי־כָ֑חַשׁ",
+        "english_text": "You have plowed wickedness, you have reaped iniquity; you have eaten the fruit of treachery",
+        "target": [
+          "Israel’s sinful choices and their consequences",
+          "moral cause-and-effect in the nation’s life",
+          "ethical behavior and its outcomes"
+        ],
+        "vehicle": [
+          "plowing, reaping, and eating fruit",
+          "stages of agricultural labor and consumption",
+          "farming/harvest imagery"
+        ],
+        "ground": [
+          "what is sown and cultivated determines what is harvested and consumed",
+          "actions lead to matching results (evil seeds → evil fruit)",
+          "inescapable linkage between process and outcome"
+        ],
+        "posture": [
+          "indictment showing that their current misery is self‑produced",
+          "didactic warning about the ‘harvest’ of sin",
+          "prophetic rebuke"
+        ],
+        "explanation": "Their wicked deeds are portrayed as plowing and sowing, and the resulting injustice and treachery as the harvest and fruit they themselves must eat, encapsulating a moral law of sowing and reaping; ‘fruit of lies’ also reads like an idiomatic way of saying the bitter outcome of deceit.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Hosea 10:14",
+    "deliberation": "Most of the verse graphically describes literal warfare. The explicit כ-phrase 'כְּשֹׁד שַׁלְמַן בֵּית אַרְבֵאל' is a simile comparing the coming devastation to a known historical slaughter, but without additional metaphorical vehicle beyond that event itself.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּשֹׁ֧ד שַֽׁלְמַ֛ן בֵּ֥ית אַֽרְבֵ֖אל בְּי֣וֹם מִלְחָמָ֑ה",
+        "english_text": "as Beth-arbel was ravaged by Shalman on a day of battle",
+        "target": [
+          "the future destruction of Israel’s fortresses and people",
+          "impending national catastrophe",
+          "historical judgment event"
+        ],
+        "vehicle": [
+          "the past sack of Beth-arbel by Shalman",
+          "a notorious episode of brutal conquest",
+          "historical warfare"
+        ],
+        "ground": [
+          "similar scale and brutality of destruction",
+          "sudden, overwhelming military defeat",
+          "horror of civilians, even mothers and children, massacred"
+        ],
+        "posture": [
+          "heightening the threat by invoking a remembered atrocity",
+          "sobering prophetic warning",
+          "didactic comparison"
+        ],
+        "explanation": "The coming devastation is likened to the known historical destruction of Beth-arbel, using a simile to evoke the same level of horror and completeness of ruin.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Hosea 10:15",
+    "deliberation": "Looked for imagery beyond the simple prediction of the monarchy’s end. The phrase 'כָּכָה עָשָׂה לָכֶם בֵּית־אֵל' attributes agency to Bethel, a place/shrine, which stands for the idolatrous cult and is personified as an actor that ‘has done’ this evil to them. This is metonymic personification rather than literal location acting.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כָּ֗כָה עָשָׂ֤ה לָכֶם֙ בֵּֽית־אֵ֔ל",
+        "english_text": "Thus Bethel has done to you",
+        "target": [
+          "the corrupt cult and practices centered at Bethel",
+          "Israel’s own idolatry and false worship",
+          "religious behavior"
+        ],
+        "vehicle": [
+          "Bethel as an acting subject that 'does' something to them",
+          "a place/shrine treated as a personal agent",
+          "cultic site"
+        ],
+        "ground": [
+          "Bethel’s worship is the effective cause of their downfall",
+          "what happens there shapes the people’s fate",
+          "center’s influence extends to adherents"
+        ],
+        "posture": [
+          "assigning blame to the Bethel cult in vivid, personalized terms",
+          "warning against trust in that shrine",
+          "prophetic polemic"
+        ],
+        "explanation": "Bethel, a location and shrine, is personified and made the subject of the verb ‘has done,’ standing metonymically for the idolatrous practices there that have brought disaster on Israel.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

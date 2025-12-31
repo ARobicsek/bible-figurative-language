@@ -1,0 +1,251 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 46:1",
+    "deliberation": "Considered whether “six working days” (שֵׁשֶׁת יְמֵי הַמַּעֲשֶׂה) is an idiom or merism and whether the gate “facing east” (הַפֹּנֶה קָדִים) personifies the gate. In priestly-legal style this is straightforward calendrical and architectural description: gate literally closed on workdays, opened on sabbath and new moon. No metaphor, simile, personification, metonymy, or other figurative device appears beyond normal literal usage.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 46:2",
+    "deliberation": "Examined the prince’s entering “by way of the vestibule,” standing “at the gatepost,” bowing “at the threshold,” and the gate staying open until evening for possible symbolic or personifying language. All these are concrete cultic procedures and spatial descriptions. No idiomatic or figurative expressions beyond literal ritual choreography.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 46:3",
+    "deliberation": "Considered לִפְנֵי יְהוָה (“before YHWH”) for metonymy or idiom. In this temple-vision context it denotes literal cultic approach into YHWH’s presence at the gate, and עַם־הָאָרֶץ (“people of the land”) is a social label, not figurative. No metaphor, simile, or personification appears; the language is procedural and spatial.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 46:4",
+    "deliberation": "The verse lists the exact animals and their condition (“without blemish”) for the burnt offering. Checked for symbolic use of animals as metaphors but here they function as literal sacrificial prescriptions, typical of priestly law. No figurative language devices detected.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 46:5",
+    "deliberation": "Reviewed measures and offerings for idioms or body-part metaphors. The phrase מַתַּת יָדוֹ (“the gift of his hand”) is an idiomatic metonymy: the hand stands for the person’s economic capacity or ability to give, not for a literal manual action. Other elements are quantitative and literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִנְחָה מַתַּת יָדוֹ",
+        "english_text": "a grain offering, as much as he wishes (lit. a gift of his hand)",
+        "target": [
+          "the extent/amount of the prince’s grain offering for the lambs",
+          "economic capacity or ability to contribute",
+          "cultic/economic practice"
+        ],
+        "vehicle": [
+          "his hand (יָד)",
+          "body part as source of action/giving",
+          "human anatomy / agency"
+        ],
+        "ground": [
+          "the hand is the usual instrument of giving and work, hence associated with ability and resources",
+          "association of physical capability with economic capacity",
+          "conceptual link between bodily agency and social power"
+        ],
+        "posture": [
+          "conventional idiomatic phrasing in cultic law; not marked as poetic",
+          "lexicalized metonymy used neutrally",
+          "routine legal-cultic register"
+        ],
+        "explanation": "The expression “gift of his hand” uses the hand metonymically for the worshiper’s capacity or resources, meaning he may give according to what he is able, not literally what his hand can physically hold.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 46:6",
+    "deliberation": "The verse prescribes animals for new moon offerings. Tested whether “bull of the herd” or “without blemish” function symbolically here; they are standard sacrificial terminology and literal requirements, not metaphoric vehicles. No idiom or personification beyond technical cultic language.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 46:7",
+    "deliberation": "The measures are literal, but the clause וְלַכְּבָשִׂים כַּאֲשֶׁר תַּשִּׂיג יָדוֹ (“for the lambs, as much as he can afford,” lit. as his hand attains) is an idiomatic metonymy: the hand “attaining” stands for a person’s material ability. Other phrases are straightforwardly descriptive.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלַכְּבָשִׂים כַּאֲשֶׁר תַּשִּׂיג יָדוֹ",
+        "english_text": "and for the lambs, as much as he can afford (lit. as his hand attains)",
+        "target": [
+          "the degree of the offerer’s financial ability to supply grain with the lambs",
+          "material/economic capacity",
+          "cultic-economic obligations"
+        ],
+        "vehicle": [
+          "his hand attaining (תַּשִּׂיג יָדוֹ)",
+          "hand as instrument of reaching/obtaining",
+          "human bodily agency"
+        ],
+        "ground": [
+          "what the hand can reach or obtain represents what a person has within their means",
+          "association between physical reach and available resources",
+          "link between bodily action and economic power"
+        ],
+        "posture": [
+          "neutral legal idiom specifying flexibility according to means",
+          "conventional metonymic usage rather than creative metaphor",
+          "priestly/ritual register"
+        ],
+        "explanation": "“As his hand attains” uses the hand, the organ of grasping and acquiring, to stand metonymically for what the worshiper is actually able to provide financially, indicating that the amount varies with his means.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 46:8",
+    "deliberation": "Describes the prince’s entrance and exit route. Checked whether coming and going by the same way has a symbolic or idiomatic function (e.g., proverbial), but here it is precise architectural instruction in context of temple movement rules. No figurative language identified.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 46:9",
+    "deliberation": "Examined the requirement to exit by the gate opposite the one of entry for symbolic mirroring or metaphor of transformation. However, the verse functions as concrete traffic pattern regulation for worshipers on festivals. Phrases like לְהִשְׁתַּחֲוֹת (“to bow low”) and לִפְנֵי יְהוָה (“before YHWH”) are literal cultic actions/locations here, not figurative. No metaphors, similes, or idioms beyond standard legal prose.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 46:10",
+    "deliberation": "States that the prince enters and exits with the people. Considered whether this is metaphor for solidarity or leadership roles, but within the legal-cultic description it describes literal synchronized movement in the temple precinct. No figurative device detected.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 46:11",
+    "deliberation": "Quantities for offerings on festivals are mostly literal. The phrase וְלַכְּבָשִׂים מַתַּת יָדוֹ repeats the idiomatic metonymy found in verse 5: the “gift of his hand” stands for the prince’s variable financial capacity, not a manual action. No additional figures occur.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלַכְּבָשִׂים מַתַּת יָדוֹ",
+        "english_text": "and for the lambs, as much as he wishes (lit. the gift of his hand)",
+        "target": [
+          "the amount of grain the prince chooses or is able to offer with the lambs",
+          "voluntary economic contribution within one’s means",
+          "cultic/economic practice"
+        ],
+        "vehicle": [
+          "his hand (יָד) as the source of the gift",
+          "body part as representative of giving and capability",
+          "human anatomy / agency"
+        ],
+        "ground": [
+          "the hand is the organ of giving and work, so it easily represents personal ability and resources",
+          "association between physical act of giving and underlying capacity",
+          "habitual mapping of bodily agency to economic power"
+        ],
+        "posture": [
+          "conventional, neutral cultic idiom",
+          "fixed legal-expression rather than creative poetic imagery",
+          "priestly rule formulation"
+        ],
+        "explanation": "As in verses 5 and 7, “gift of his hand” uses the hand metonymically for the prince’s capacity or willingness to give, so the amount of the grain offering is scaled to his means, not limited to what could literally be held in a hand.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 46:12",
+    "deliberation": "Describes opening the east gate for the prince’s freewill offerings, paralleling sabbath procedure. Considered whether the eastward orientation carries symbolic or metaphorical import here (e.g., light, glory), but in this technical context it functions as pure spatial designation. All actions (offering, exiting, closing the gate) are literal cultic instructions.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 46:13",
+    "deliberation": "The daily lamb, its age, and condition are specified, with repetition “morning by morning” for regularity. This is iterative emphasis, not a simile or hyperbole. No metaphorical use of “lamb” beyond its standard sacrificial role. Hence no figurative language identified.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 46:14",
+    "deliberation": "Measured quantities and technical terms (“to moisten the flour,” חֻקּוֹת עוֹלָם תָּמִיד) are literal cultic regulations. Explored whether “everlasting statutes continually” constitutes hyperbole; in priestly idiom this expresses the intended ongoing validity of the ordinance, not rhetorical overstatement. No metaphor or personification present.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 46:15",
+    "deliberation": "Summarizes the daily offering routine. The duplication “morning by morning” underlines regularity but is not a figurative contrast or merism. No idiomatic expressions like the ‘hand’ phrases occur here. The wording remains strictly procedural.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 46:16",
+    "deliberation": "Regulates inheritance gifts by the prince to his sons. Terms like נַחֲלָה (inheritance) and אֲחֻזָּה (holding) are technical legal vocabulary, not metaphors. No personification of land or abstract entities; no merism or hyperbole. Language is juridical and literal.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 46:17",
+    "deliberation": "Specifies that gifts to servants last only until the year of release, then revert to the prince. The “year of deror” is a legal term echoing Jubilee legislation, not a metaphor. The verb שָׁבַת (“shall return, cease”) is used legally, not figuratively. No metaphor, irony, or other figure detected.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 46:18",
+    "deliberation": "The prohibition against the prince seizing people’s property uses verbs like לָקַח (“take”), לְהוֹנֹתָם (“oppress/defraud”), and יָפֻצוּ (“be scattered”). While “scattered” often appears metaphorically elsewhere, here it refers concretely to people being physically forced off their land. The whole verse is straightforward legal-ethical instruction with no clear figurative constructions.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 46:19",
+    "deliberation": "Architectural movement is described: the entrance “on the shoulder of the gate” (עַל־כֶּתֶף הַשַּׁעַר) and priestly chambers facing north, with a space at the “rear” (בַּיַּרְכָתַיִם). Though these terms derive from body-part words (“shoulder,” “hind parts”), in Biblical Hebrew they function as standard spatial nouns for sides/rear portions of structures and are not felt as live metaphors. No other figurative devices occur.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 46:20",
+    "deliberation": "Explains the purpose of the priestly cooking area, “so as not to take them into the outer court and make the people consecrated” (לְקַדֵּשׁ אֶת־הָעָם). Here “consecrate” is a technical cultic effect of contact with holy food, not metaphorical moral language. The verbs “boil” and “bake” are literal. No metaphor, personification, or irony appears.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 46:21",
+    "deliberation": "Describes being led to the four corners of the outer court with enclosures at each corner. Considered whether “four corners” evokes a merism for completeness, but in this visionary architectural context it literally describes the layout. No figurative language identified.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 46:22",
+    "deliberation": "Gives dimensions of the corner courts and notes they share one measurement. All measurements and terms (length, breadth) are literal. The phrase חֲצֵרוֹת קְטֻרוֹת likely means enclosed/cornered courts; no metaphor or idiom is indicated. No figurative expressions detected.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 46:23",
+    "deliberation": "Mentions a masonry row with cooking hearths beneath. Looked for metaphorical use of “row” (טוּר) or “around them” as symbolic encircling, but context is purely functional and architectural. No figurative language in the description.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 46:24",
+    "deliberation": "Identifies these structures as בֵּית הַמְבַשְּׁלִים (“the house of the cooks”), where temple servants boil the people’s sacrifices. While “house” can be metonymic elsewhere, here it literally denotes kitchen structures. The servants and sacrifices are actual cultic personnel and offerings, not metaphors. No figurative devices present.",
+    "instances": []
+  }
+]

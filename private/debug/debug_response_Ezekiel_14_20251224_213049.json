@@ -1,0 +1,1419 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 14:1",
+    "deliberation": "The verse narrates elders coming and sitting before Ezekiel. Expressions are spatial and actional with no obvious metaphor, personification, or idiom beyond normal narrative description.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 14:2",
+    "deliberation": "Considered whether this is purely formulaic or also figurative. The phrase ‘the word of YHWH came to me’ personifies the divine message as a moving entity and uses ‘word’ metonymically for revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "And the word of GOD came to me:",
+        "target": [
+          "YHWH’s act of revealing a message to Ezekiel",
+          "divine communication",
+          "theological"
+        ],
+        "vehicle": [
+          "a ‘word’ that travels and arrives like a person or object",
+          "movement and arrival of a messenger",
+          "physical-spatial"
+        ],
+        "ground": [
+          "the message originates with God and reaches the prophet at a particular moment",
+          "transmission and reception of communication",
+          "relational-communicative"
+        ],
+        "posture": [
+          "formal prophetic formula marking authority",
+          "neutral-revelatory stance",
+          "prophetic discourse"
+        ],
+        "explanation": "‘Word’ stands metonymically for God’s revelation, and it is personified as something that ‘comes’ to the prophet, a conventional anthropomorphic metaphor for divine speech.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 14:3",
+    "deliberation": "Looked for metaphors in the heart/face language. Found two vivid idiomatic metaphors: idols ‘on the heart’ and the ‘stumbling block of iniquity’ set before the face.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֶעֱל֤וּ גִלּֽוּלֵיהֶם֙ עַל־לִבָּ֔ם",
+        "english_text": "these men have turned their thoughts upon their fetishes (lit. ‘have brought up their idols upon their heart’)",
+        "target": [
+          "their inner loyalties and thoughts",
+          "human mental/spiritual focus",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "placing physical idols ‘upon the heart’",
+          "location of objects on a bodily organ",
+          "physical-spatial"
+        ],
+        "ground": [
+          "what dominates the ‘heart’ governs the person",
+          "domination/occupation by what one places at the center",
+          "control/priority"
+        ],
+        "posture": [
+          "condemnation of inward idolatry",
+          "negative moral evaluation",
+          "prophetic-ethical"
+        ],
+        "explanation": "Inner devotion is depicted metaphorically as physically placing idols on the heart, an idiom for fixing one’s mind and allegiance on them.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִכְשׁ֣וֹל עֲוֺנָ֔ם נָתְנ֖וּ נֹ֣כַח פְּנֵיהֶ֑ם",
+        "english_text": "and [they] set the stumbling block of their sin before their faces",
+        "target": [
+          "their sinful idols and practices that lead to ruin",
+          "moral offence / source of judgment",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "a stumbling block placed directly in front of someone’s face",
+          "obstacle causing a fall in one’s path",
+          "physical-movement"
+        ],
+        "ground": [
+          "their chosen sin is the very thing that makes them fall and is kept constantly before them",
+          "self-caused harm through what one continually faces",
+          "cause-effect in moral choices"
+        ],
+        "posture": [
+          "rebuke for self-destructive idolatry",
+          "warning tone",
+          "prophetic-ethical"
+        ],
+        "explanation": "Their sin, especially idolatry, is portrayed as a ‘stumbling block’ they themselves put in front of their own faces, a metaphor for self-imposed spiritual ruin.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 14:4",
+    "deliberation": "Verse repeats and generalizes the prior imagery: idols ‘on the heart’ and the ‘stumbling block’ before the face, now in conditional form. Both are again distinct metaphors/idioms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יַעֲלֶ֨ה אֶת־גִּלּוּלָ֜יו אֶל־לִבּ֗וֹ",
+        "english_text": "turns their thoughts upon their fetishes (lit. ‘brings up his idols upon his heart’)",
+        "target": [
+          "an Israelite’s inward devotion and planning",
+          "inner disposition/intention",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "lifting idols onto the heart",
+          "placing objects onto an organ",
+          "physical-spatial"
+        ],
+        "ground": [
+          "fixing something firmly in one’s inner core as central",
+          "internalization/centralization of what one values",
+          "priority of allegiance"
+        ],
+        "posture": [
+          "exposing hidden idolatry",
+          "judgmental descriptive stance",
+          "prophetic-ethical"
+        ],
+        "explanation": "To ‘bring up idols upon the heart’ is an idiomatic metaphor for making idols the focus of one’s inner life and trust.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִכְשׁ֤וֹל עֲוֺנוֹ֙ יָשִׂים֙ נֹ֣כַח פָּנָ֔יו",
+        "english_text": "and sets his mind upon the sin through which he stumbled (lit. ‘puts the stumbling block of his iniquity before his face’)",
+        "target": [
+          "the person’s chosen sinful practice",
+          "habitual sin/idolatry",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "an obstacle placed right before the face on one’s path",
+          "stumbling block in one’s way",
+          "physical-movement"
+        ],
+        "ground": [
+          "one’s own sin is both ever-present and the cause of downfall",
+          "obstacle one continually confronts and trips over",
+          "self-sabotaging behavior"
+        ],
+        "posture": [
+          "emphasizing culpability for chosen sin",
+          "condemnatory tone",
+          "prophetic-ethical"
+        ],
+        "explanation": "Sin is metaphorically a ‘stumbling block’ placed before the person’s own face, highlighting their responsibility for their own downfall.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 14:5",
+    "deliberation": "Key phrase is ‘to seize the house of Israel in their heart’, plus estrangement language. Both are figurative: God ‘seizing’ hearts and Israel ‘being estranged’ from Him.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְמַ֛עַן תְּפֹ֥שׂ אֶת־בֵּֽית־יִשְׂרָאֵ֖ל בְּלִבָּ֑ם",
+        "english_text": "Thus I will hold the House of Israel to account for their thoughts (lit. ‘that I may seize the house of Israel by their heart’)",
+        "target": [
+          "Israel’s inner motives and culpability",
+          "moral responsibility at the level of intention",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "seizing or catching someone by the heart",
+          "physical capture of a person by a body part",
+          "physical-control"
+        ],
+        "ground": [
+          "God’s judgment reaches the innermost seat of will and desire",
+          "total control/exposure of what is inside",
+          "accountability"
+        ],
+        "posture": [
+          "threat of penetrating judgment",
+          "forensic tone",
+          "prophetic-legal"
+        ],
+        "explanation": "God’s exposing and judging Israel’s inner thoughts is pictured as grabbing them ‘by their heart’, a metaphor for total inward accountability.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁ֤ר נָזֹ֙רוּ֙ מֵֽעָלַ֔י בְּגִלּוּלֵיהֶ֖ם כֻּלָּֽם",
+        "english_text": "because they have all been estranged from Me through their fetishes",
+        "target": [
+          "Israel’s broken covenant relationship with YHWH",
+          "relational alienation",
+          "covenantal/theological"
+        ],
+        "vehicle": [
+          "becoming a nazir-like separated one from ‘upon’ God",
+          "spatial separation and withdrawal",
+          "relational-distance"
+        ],
+        "ground": [
+          "idolatry removes them from God’s sphere and presence",
+          "distance as an image of relational rupture",
+          "alienation"
+        ],
+        "posture": [
+          "lamenting and condemning their unfaithfulness",
+          "negative evaluative stance",
+          "prophetic-ethical"
+        ],
+        "explanation": "Their covenant betrayal is depicted as becoming ‘estranged’ or ‘separated’ from God, using spatial separation as a metaphor for relational rupture.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 14:6",
+    "deliberation": "Looked for repentance imagery. The commands to ‘turn back from your fetishes’ and ‘turn your faces from your abominations’ use motion/orientation metaphors for repentance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שׁ֣וּבוּ וְהָשִׁ֔יבוּ מֵעַ֖ל גִּלּוּלֵיכֶ֑ם",
+        "english_text": "Repent, and turn back from your fetishes",
+        "target": [
+          "change of allegiance away from idols",
+          "moral/spiritual repentance",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "turning back / away from something spatially",
+          "reversal of physical direction",
+          "movement/orientation"
+        ],
+        "ground": [
+          "repentance involves a reversal of course and orientation",
+          "changing direction as an image of changing loyalty",
+          "conversion/return"
+        ],
+        "posture": [
+          "urgently calling for a decisive break with idolatry",
+          "exhortative tone",
+          "prophetic-call"
+        ],
+        "explanation": "Repentance is described as physically ‘turning back from’ idols, mapping moral change onto a change in travel direction.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמֵעַ֥ל כׇּל־תּוֹעֲבֹתֵיכֶ֖ם הָשִׁ֥יבוּ פְנֵיכֶֽם",
+        "english_text": "and turn your minds (lit. ‘your faces’) away from all your abominations",
+        "target": [
+          "their focus and attention toward or away from abominable practices",
+          "direction of inner and outer life",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "turning the face away from something",
+          "bodily orientation of the face",
+          "physical-orientation"
+        ],
+        "ground": [
+          "to turn one’s face away is to reject and no longer regard something",
+          "attention and direction aligned with facial orientation",
+          "rejection/avoidance"
+        ],
+        "posture": [
+          "demanding visible rejection of abominations",
+          "exhortative and corrective",
+          "prophetic-ethical"
+        ],
+        "explanation": "They must turn their ‘faces’ away from abominations, an embodied metaphor for withdrawing attention and approval from sinful practices.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 14:7",
+    "deliberation": "Saw three idiomatic metaphors: ‘separates himself from following Me’, idols on the heart, and the stumbling block of iniquity before the face. All depict spiritual stance via spatial images.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיִנָּזֵ֣ר מֵאַחֲרַ֗י",
+        "english_text": "breaks away from Me (lit. ‘separates himself from after Me’)",
+        "target": [
+          "abandoning covenant loyalty to YHWH",
+          "loss of discipleship/following",
+          "covenantal relationship"
+        ],
+        "vehicle": [
+          "no longer walking ‘behind’ someone, but separating oneself",
+          "movement on a path relative to a leader",
+          "journey/following"
+        ],
+        "ground": [
+          "faithfulness is like following behind a leader; breaking away is ceasing to follow",
+          "physical distance as image of relational disloyalty",
+          "alienation/defection"
+        ],
+        "posture": [
+          "strong censure of apostasy",
+          "negative moral evaluation",
+          "prophetic-ethical"
+        ],
+        "explanation": "Covenant loyalty is conceptualized as walking ‘after’ God; to ‘separate from after’ Him is a spatial metaphor for apostasy.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיַ֤עַל גִּלּוּלָיו֙ אֶל־לִבּ֔וֹ",
+        "english_text": "and turns their thoughts upon their fetishes (lit. ‘brings up his idols upon his heart’)",
+        "target": [
+          "inner fixation on idols",
+          "mental focus/desire",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "lifting idols onto the heart",
+          "placing objects on an inner organ",
+          "physical-spatial"
+        ],
+        "ground": [
+          "what one installs on the heart governs the self",
+          "internalizing an external object of devotion",
+          "control/attachment"
+        ],
+        "posture": [
+          "exposing hidden idolatry of motives",
+          "critical stance",
+          "prophetic-ethical"
+        ],
+        "explanation": "Again, devotion to idols is imaged as physically putting them ‘upon the heart’, an idiom for inward enthronement of idols.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִכְשׁ֣וֹל עֲוֺנ֔וֹ יָשִׂ֖ים נֹ֣כַח פָּנָ֑יו",
+        "english_text": "and sets their mind upon the sins through which they stumbled (lit. ‘puts the stumbling block of his iniquity before his face’)",
+        "target": [
+          "his pet sin/idolatry that brings judgment",
+          "habitual sin",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "stumbling block placed directly before the face",
+          "obstacle in one’s path",
+          "movement/path"
+        ],
+        "ground": [
+          "his own chosen sin is constantly before him and causes his fall",
+          "confronting and tripping over what one chooses to face",
+          "self-inflicted harm"
+        ],
+        "posture": [
+          "warning about self-caused stumbling",
+          "rebuking tone",
+          "prophetic-ethical"
+        ],
+        "explanation": "The sinner is pictured as putting the very obstacle that ruins him directly before his face—an image of deliberate, self-destructive fixation on sin.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 14:8",
+    "deliberation": "Found three idiomatic/judicial metaphors: God setting His face against someone, making them a sign and a proverb, and cutting them off from among the people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּ֨י פָנַ֜י בָּאִ֣ישׁ הַה֗וּא",
+        "english_text": "I will set My face against that party",
+        "target": [
+          "YHWH’s hostile stance and judgment toward a person",
+          "divine attitude and action",
+          "theological/judicial"
+        ],
+        "vehicle": [
+          "turning one’s face against someone",
+          "facial orientation signaling favor or hostility",
+          "relational-body language"
+        ],
+        "ground": [
+          "face orientation embodies relational stance (for or against)",
+          "to set one’s face against is to oppose decisively",
+          "opposition/rejection"
+        ],
+        "posture": [
+          "threatening direct opposition",
+          "judgmental tone",
+          "prophetic-legal"
+        ],
+        "explanation": "God’s adverse judgment is depicted as turning His ‘face’ against the person, a bodily metaphor and metonymy for attitude and action.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַהֲשִׂמֹתִ֙יהוּ֙ לְא֣וֹת וְלִמְשָׁלִ֔ים",
+        "english_text": "and make them a sign and a byword",
+        "target": [
+          "the punished individual and their fate",
+          "example/warning to others",
+          "social-didactic"
+        ],
+        "vehicle": [
+          "a ‘sign’ and ‘proverbs’ spoken about",
+          "public object lesson and proverbial saying",
+          "symbolic-communicative"
+        ],
+        "ground": [
+          "their fate will function as a visible warning and a stock example in speech",
+          "individual stands for a general lesson",
+          "exemplarity"
+        ],
+        "posture": [
+          "using judgment pedagogically",
+          "didactic-cautionary tone",
+          "prophetic-teaching"
+        ],
+        "explanation": "The doomed person is turned into a ‘sign’ and ‘byword’: their fate becomes a symbolic example and a proverbial expression, a metaphor and metonymy for exemplary punishment.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהִכְרַתִּ֖יו מִתּ֣וֹךְ עַמִּ֑י",
+        "english_text": "and I will cut them off from the midst of My people",
+        "target": [
+          "removal of the person from the covenant community (often via death or expulsion)",
+          "exclusion/judgment",
+          "social-covenantal"
+        ],
+        "vehicle": [
+          "cutting off something from the middle of a body",
+          "amputation/severing",
+          "physical-violent"
+        ],
+        "ground": [
+          "excommunication or death separates a person from the body of the people",
+          "severing as image of radical removal",
+          "disjunction/exclusion"
+        ],
+        "posture": [
+          "threatening ultimate exclusion",
+          "severe judicial stance",
+          "prophetic-legal"
+        ],
+        "explanation": "To ‘cut off’ someone ‘from the midst of my people’ is an idiomatic metaphor of amputation for total exclusion or destruction.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 14:9",
+    "deliberation": "The central figurative phrase is God ‘stretching out His hand’ upon the prophet, an anthropomorphic metaphor for active judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָטִ֤יתִי אֶת־יָדִי֙ עָלָ֔יו",
+        "english_text": "I will stretch out My hand against him",
+        "target": [
+          "God’s decisive punitive action against the deceived prophet",
+          "exercise of divine power in judgment",
+          "theological/judicial"
+        ],
+        "vehicle": [
+          "a person extending a hand over someone to strike or seize",
+          "bodily gesture of attack or intervention",
+          "physical-violent"
+        ],
+        "ground": [
+          "the extended hand is a conventional sign of exerting power and initiating action",
+          "human striking as image of divine judgment",
+          "forceful intervention"
+        ],
+        "posture": [
+          "asserting God’s direct agency in judgment",
+          "threatening, authoritative stance",
+          "prophetic-legal"
+        ],
+        "explanation": "God’s judgment is anthropomorphically described as stretching out His ‘hand’ against the prophet, a standard metaphor for exercising power.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 14:10",
+    "deliberation": "The phrase ‘they shall bear their punishment/iniquity’ uses a burden metaphor for guilt. No other strong figures appear.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָשְׂא֖וּ עֲוֺנָ֑ם",
+        "english_text": "Thus they shall bear their punishment (lit. ‘their iniquity’)",
+        "target": [
+          "experiencing the consequences of one’s guilt",
+          "legal/moral liability",
+          "judicial"
+        ],
+        "vehicle": [
+          "carrying a heavy load on oneself",
+          "burden-bearing",
+          "physical-weight"
+        ],
+        "ground": [
+          "guilt is like a load one must carry and cannot offload",
+          "effort and suffering of bearing weight map onto enduring punishment",
+          "responsibility/burden"
+        ],
+        "posture": [
+          "underscoring personal responsibility",
+          "forensic declarative tone",
+          "prophetic-legal"
+        ],
+        "explanation": "Guilt and its punishment are conceptualized as a load that must be ‘borne’, an idiomatic burden metaphor for personal responsibility.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 14:11",
+    "deliberation": "Noted two figurative elements: Israel ‘straying from after’ God (journey metaphor) and ‘defiling themselves’ with transgressions (ritual impurity image applied morally).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא־יִתְע֨וּ עוֹד בֵּֽית־יִשְׂרָאֵל֙ מֵֽאַחֲרַ֔י",
+        "english_text": "so that the House of Israel may never again stray from Me (lit. ‘wander from after Me’)",
+        "target": [
+          "Israel’s tendency to abandon covenant loyalty",
+          "spiritual infidelity",
+          "covenantal relationship"
+        ],
+        "vehicle": [
+          "wandering off the path instead of following behind a leader",
+          "straying in travel",
+          "movement/journey"
+        ],
+        "ground": [
+          "covenant faithfulness likened to following a path behind God; apostasy to straying off",
+          "direction of walking maps onto loyalty or disloyalty",
+          "guidance/followership"
+        ],
+        "posture": [
+          "desiring an end to their wandering",
+          "corrective and hopeful tone",
+          "prophetic-ethical"
+        ],
+        "explanation": "Their religious unfaithfulness is figured as wandering off from following behind God, a journey metaphor for apostasy.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא־יִטַּמְּא֥וּ עוֹד בְּכׇל־פִּשְׁעֵיהֶ֑ם",
+        "english_text": "and [that they] not defile themselves anymore with all their transgressions",
+        "target": [
+          "their moral and covenantal corruption",
+          "sinful conduct",
+          "moral-spiritual"
+        ],
+        "vehicle": [
+          "ritual/physical impurity (being made unclean)",
+          "contamination/soiling",
+          "cultic/physical"
+        ],
+        "ground": [
+          "sin makes them unfit for God’s presence like dirt or impurity makes one unfit for worship",
+          "pollution as image of moral defilement",
+          "unfitness/contamination"
+        ],
+        "posture": [
+          "seeking their purification from sin",
+          "restorative hope",
+          "prophetic-ethical"
+        ],
+        "explanation": "Their transgressions are portrayed as causing ritual-like ‘defilement’, mapping moral wrongdoing onto cultic impurity.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 14:12",
+    "deliberation": "Same prophetic formula as v.2: ‘the word of YHWH came to me’. Again a personifying, metonymic idiom for divine revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "The word of GOD came to me:",
+        "target": [
+          "YHWH’s act of disclosing His will",
+          "prophetic revelation",
+          "theological"
+        ],
+        "vehicle": [
+          "a ‘word’ that comes/arrives to someone",
+          "approach of a messenger or object",
+          "physical-spatial"
+        ],
+        "ground": [
+          "God’s message originates with Him and reaches the prophet like an arriving envoy",
+          "arrival indicates initiation and reception",
+          "communication event"
+        ],
+        "posture": [
+          "marking the authority of what follows",
+          "neutral-revelatory stance",
+          "prophetic discourse"
+        ],
+        "explanation": "The ‘word’ stands metonymically for the revelation itself, and is personified as coming to the prophet, an idiomatic anthropomorphic metaphor.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 14:13",
+    "deliberation": "Saw three figures: God ‘stretching out His hand’ (anthropomorphic action), ‘breaking the staff of bread’ (bread as support of life), and the merism ‘man and beast’.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָטִ֤יתִי יָדִי֙ עָלֶ֔יהָ",
+        "english_text": "and I stretched out My hand against it",
+        "target": [
+          "God’s active judgment on the land",
+          "exercise of divine power",
+          "theological/judicial"
+        ],
+        "vehicle": [
+          "a person extending a hand over something to strike or seize",
+          "bodily gesture of intervention",
+          "physical-violent"
+        ],
+        "ground": [
+          "extended hand symbolizes deliberate, forceful action",
+          "human striking as image of divine judgment",
+          "decisive intervention"
+        ],
+        "posture": [
+          "threatening sovereign action",
+          "judgmental declaration",
+          "prophetic-legal"
+        ],
+        "explanation": "God’s judgment is anthropomorphically pictured as stretching out His ‘hand’ against the land.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשָׁבַ֥רְתִּי לָ֖הּ מַטֵּה־לָ֑חֶם",
+        "english_text": "and [I] broke its staff of bread",
+        "target": [
+          "the land’s food supply and economic sustenance",
+          "means of physical survival",
+          "economic/physical"
+        ],
+        "vehicle": [
+          "a staff that supports someone, here called ‘bread’",
+          "walking staff / support structure",
+          "physical-support"
+        ],
+        "ground": [
+          "food sustains life like a staff supports a walking person",
+          "breaking the staff equals removing support",
+          "dependence/vulnerability"
+        ],
+        "posture": [
+          "emphasizing utter dependence on God for sustenance",
+          "warning of severe deprivation",
+          "prophetic-judgment"
+        ],
+        "explanation": "Bread is metaphorically called a ‘staff’, portraying the food supply as a support for life that God can ‘break’.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִכְרַתִּ֥י מִמֶּ֖נָּה אָדָ֥ם וּבְהֵמָֽה",
+        "english_text": "and cut off from it human and animal",
+        "target": [
+          "all living creatures in the land that suffer judgment",
+          "total population of living beings",
+          "ecological/human"
+        ],
+        "vehicle": [
+          "pairing ‘human and beast’ as a comprehensive pair",
+          "meristic expression of totality",
+          "rhetorical listing"
+        ],
+        "ground": [
+          "humans and beasts together represent all life that populates the land",
+          "two extremes encompass the whole set",
+          "completeness"
+        ],
+        "posture": [
+          "stressing the comprehensive scope of judgment",
+          "emphatically inclusive tone",
+          "prophetic-judgment"
+        ],
+        "explanation": "The pair ‘human and animal’ is a merism: by naming both, the verse conveys the total removal of all life from the land.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 14:14",
+    "deliberation": "Most of the verse is literal hypothetical, but ‘they will save their soul/life’ uses נֶפֶשׁ as a synecdoche for the whole person/life.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "הֵ֤מָּה בְצִדְקָתָם֙ יְנַצְּל֣וּ נַפְשָׁ֔ם",
+        "english_text": "they would by their righteousness save only themselves (lit. ‘their soul’)",
+        "target": [
+          "the persons’ own lives/existence",
+          "individual human life",
+          "anthropological"
+        ],
+        "vehicle": [
+          "the ‘soul’ (נֶפֶשׁ) as an aspect of the person",
+          "inner life/breath as representative part",
+          "psychic-vital"
+        ],
+        "ground": [
+          "the ‘soul’ stands for the whole living person",
+          "part/inner aspect used for the whole entity",
+          "representative identity"
+        ],
+        "posture": [
+          "emphasizing limited scope of deliverance",
+          "sobering, restrictive tone",
+          "prophetic-judgment"
+        ],
+        "explanation": "נַפְשָׁם (‘their soul’) functions as a synecdoche/metonymy for their own lives as whole persons.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 14:15",
+    "deliberation": "Wild beasts depopulating the land and leaving it desolate is presented straightforwardly as a possible judgment scenario; imagery is vivid but not clearly figurative beyond literal description.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 14:16",
+    "deliberation": "The judgment statement is literal, but ‘sons and daughters’ functions as a merism for all offspring/descendants they might save.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אִם־בָּנִ֥ים וְאִם־בָּנ֖וֹת יַצִּ֑ילוּ",
+        "english_text": "they would save neither sons nor daughters",
+        "target": [
+          "all children/descendants of those three men",
+          "offspring as a group",
+          "family/genealogical"
+        ],
+        "vehicle": [
+          "the pair ‘sons and daughters’",
+          "meristic pair covering both genders",
+          "rhetorical listing"
+        ],
+        "ground": [
+          "naming male and female children together conveys the whole category of offspring",
+          "two poles encompass the total set",
+          "completeness"
+        ],
+        "posture": [
+          "emphasizing that no children whatsoever will be spared",
+          "absolute, categorical tone",
+          "prophetic-judgment"
+        ],
+        "explanation": "‘Sons and daughters’ is a merism: by mentioning both, the text asserts that none of their offspring of any kind would be saved.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 14:17",
+    "deliberation": "Identified two figures: ‘bringing a sword upon the land’ (sword as metonymy for war) and again the merism ‘man and beast’.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "א֛וֹ חֶ֥רֶב אָבִ֖יא עַל־הָאָ֣רֶץ הַהִ֑יא וְאָמַרְתִּ֗י חֶ֚רֶב תַּעֲבֹ֣ר בָּאָ֔רֶץ",
+        "english_text": "Or, if I were to bring the sword upon that land and say, “Let a sword sweep through the land”",
+        "target": [
+          "the experience of war and invasion in the land",
+          "military conflict",
+          "political-military"
+        ],
+        "vehicle": [
+          "the ‘sword’ as the instrument of killing",
+          "weapon representing warfare",
+          "concrete object"
+        ],
+        "ground": [
+          "war is carried out with swords; the instrument stands for the whole conflict",
+          "metonymic substitution of part/tool for whole event",
+          "instrumentality"
+        ],
+        "posture": [
+          "depicting war as YHWH’s judicial instrument",
+          "threatening tone",
+          "prophetic-judgment"
+        ],
+        "explanation": "‘Sword’ here is a metonymy for war itself; to ‘bring a sword upon the land’ is an idiom for sending war/invasion as judgment.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִכְרַתִּ֥י מִמֶּ֖נָּה אָדָ֥ם וּבְהֵמָֽה",
+        "english_text": "so that I may cut off from it human and animal",
+        "target": [
+          "all living inhabitants of the land",
+          "total population of people and animals",
+          "ecological/human"
+        ],
+        "vehicle": [
+          "pair ‘human and beast’ as a totality",
+          "meristic pair",
+          "rhetorical listing"
+        ],
+        "ground": [
+          "mentioning both humans and animals signals comprehensive destruction of all life",
+          "two categories encompass all land-dwellers",
+          "completeness"
+        ],
+        "posture": [
+          "stressing the total scope of the devastation",
+          "emphatically exhaustive tone",
+          "prophetic-judgment"
+        ],
+        "explanation": "The expression ‘human and animal’ functions as a merism to convey complete depopulation of life in the land.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 14:18",
+    "deliberation": "As in v.16, the hypothetical is literal, but ‘sons and daughters’ again serves as a merism for all their children.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לֹ֥א יַצִּ֖ילוּ בָּנִ֣ים וּבָנ֑וֹת",
+        "english_text": "they would save neither sons nor daughters",
+        "target": [
+          "all possible offspring of those men",
+          "their children collectively",
+          "family/genealogical"
+        ],
+        "vehicle": [
+          "the two categories ‘sons’ and ‘daughters’",
+          "meristic male/female pair",
+          "rhetorical listing"
+        ],
+        "ground": [
+          "mentioning both male and female children expresses the totality of offspring",
+          "the pair covers the entire category",
+          "completeness"
+        ],
+        "posture": [
+          "emphasizing that no children of any kind are exempt",
+          "categorical exclusion",
+          "prophetic-judgment"
+        ],
+        "explanation": "‘Sons and daughters’ here is a merism for all children; none of them would be delivered.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 14:19",
+    "deliberation": "Detected two figures: ‘pouring out My fury upon it in blood’ (wrath as liquid) and again the merism ‘man and beast’.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשָׁפַכְתִּ֨י חֲמָתִ֤י עָלֶ֙יהָ֙ בְּדָ֔ם",
+        "english_text": "and poured out My fury upon it in blood",
+        "target": [
+          "God’s intense punitive anger expressed in deadly judgment",
+          "divine wrath as an event",
+          "theological/judicial"
+        ],
+        "vehicle": [
+          "a liquid (wrath) being poured out, resulting in bloodshed",
+          "outpouring of fluid causing death",
+          "physical-substance"
+        ],
+        "ground": [
+          "wrath overwhelms like a deluge, resulting in widespread bloodshed",
+          "pouring liquid maps to unleashing stored-up anger",
+          "overabundance/intensity"
+        ],
+        "posture": [
+          "depicting judgment as overwhelming and deadly",
+          "vivid, fearful tone",
+          "prophetic-judgment"
+        ],
+        "explanation": "God’s wrath is metaphorically a liquid poured out, and ‘in blood’ metonymically connects that outpouring with fatal violence.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְהַכְרִ֥ית מִמֶּ֖נָּה אָדָ֥ם וּבְהֵמָֽה",
+        "english_text": "cutting off from it human and animal",
+        "target": [
+          "all life inhabiting the land",
+          "comprehensive living population",
+          "ecological/human"
+        ],
+        "vehicle": [
+          "the dual phrase ‘human and beast’",
+          "meristic pair",
+          "rhetorical listing"
+        ],
+        "ground": [
+          "together, humans and beasts represent the whole living community of the land",
+          "naming both signals completeness",
+          "completeness"
+        ],
+        "posture": [
+          "highlighting the all-encompassing nature of the plague",
+          "emphatically total tone",
+          "prophetic-judgment"
+        ],
+        "explanation": "As elsewhere, ‘human and animal’ is a merism indicating that all living creatures are included in the destruction.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 14:20",
+    "deliberation": "Two figures parallel earlier verses: ‘sons and daughters’ as a merism for all offspring and ‘save their soul’ as synecdoche/metonymy for saving their own lives.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אִם־בֵּ֥ן אִם־בַּ֖ת יַצִּ֑ילוּ",
+        "english_text": "they would save neither son nor daughter",
+        "target": [
+          "all children/descendants of Noah, Daniel, and Job hypothetically present",
+          "offspring collectively",
+          "family/genealogical"
+        ],
+        "vehicle": [
+          "the complementary pair ‘son’ and ‘daughter’",
+          "merism of male/female offspring",
+          "rhetorical listing"
+        ],
+        "ground": [
+          "by mentioning both genders the text communicates that no child of any kind would escape",
+          "two poles encompass the whole range",
+          "completeness"
+        ],
+        "posture": [
+          "underscoring the absolute non-transferability of their righteousness",
+          "categorical denial",
+          "prophetic-judgment"
+        ],
+        "explanation": "‘Son’ and ‘daughter’ form a merism, indicating that none of their offspring at all would be delivered.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "הֵ֥מָּה בְצִדְקָתָ֖ם יַצִּ֥ילוּ נַפְשָֽׁם",
+        "english_text": "they would save themselves alone by their righteousness (lit. ‘their soul’)",
+        "target": [
+          "their own lives as whole persons",
+          "individual self-preservation",
+          "anthropological"
+        ],
+        "vehicle": [
+          "‘soul’ as the life-principle or personal self",
+          "inner life/breath standing for entire person",
+          "psychic-vital"
+        ],
+        "ground": [
+          "saving one’s ‘soul’ equates to preserving one’s life",
+          "part/inner aspect represents the whole person",
+          "identity/life"
+        ],
+        "posture": [
+          "limiting the effect of personal righteousness to self",
+          "sobering, restrictive tone",
+          "prophetic-judgment"
+        ],
+        "explanation": "נַפְשָׁם (‘their soul’) again functions as synecdoche/metonymy for their own lives: they save only themselves.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 14:21",
+    "deliberation": "Two main figures: the four disasters (‘sword, famine, wild beast, pestilence’) as personified ‘my four evil judgments’ (metonymy for God’s punitive actions), and the merism ‘man and beast’.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַרְבַּ֣עַת שְׁפָטַ֣י הָרָעִים חֶ֠רֶב וְרָעָ֞ב וְחַיָּ֤ה רָעָה֙ וָדֶ֔בֶר",
+        "english_text": "all four of My terrible punishments—the sword, famine, wild beasts, and pestilence",
+        "target": [
+          "God’s comprehensive program of punitive dealings with Jerusalem",
+          "divine judgments as actions",
+          "theological/judicial"
+        ],
+        "vehicle": [
+          "four personified ‘judgments’ named by disaster types",
+          "agents/instruments (sword, famine, beasts, plague)",
+          "concrete calamities"
+        ],
+        "ground": [
+          "these calamities are instruments by which divine judgment is executed",
+          "effect stands metonymically for the judicial act",
+          "agency/tool of punishment"
+        ],
+        "posture": [
+          "stress on the severe, multi-faceted nature of judgment",
+          "intensely threatening tone",
+          "prophetic-judgment"
+        ],
+        "explanation": "The four calamities are called ‘My four evil judgments,’ personifying them as agents and using them metonymically for God’s punitive actions.",
+        "confidence": 0.91
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְהַכְרִ֥ית מִמֶּ֖נָּה אָדָ֥ם וּבְהֵמָֽה",
+        "english_text": "to cut off from it human and animal",
+        "target": [
+          "all life inhabiting Jerusalem",
+          "total living population",
+          "ecological/human"
+        ],
+        "vehicle": [
+          "meristic pair ‘human and beast’",
+          "two-part list expressing totality",
+          "rhetorical listing"
+        ],
+        "ground": [
+          "naming both humans and animals signals that all life is encompassed",
+          "two representative categories cover the whole",
+          "completeness"
+        ],
+        "posture": [
+          "underscoring the all-encompassing effect of the judgments",
+          "emphatic totality",
+          "prophetic-judgment"
+        ],
+        "explanation": "Again, ‘human and animal’ is a merism expressing comprehensive destruction of all living creatures in Jerusalem.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 14:22",
+    "deliberation": "Noted two figurative elements: ‘ways and deeds’ as a meristic expression for total conduct, and ‘the evil I brought on Jerusalem’ where ‘evil’ stands metonymically for disaster.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּרְאִיתֶ֥ם אֶת־דַּרְכָּ֖ם וְאֶת־עֲלִילוֹתָ֑ם",
+        "english_text": "and when you see their ways and their deeds",
+        "target": [
+          "the survivors’ whole pattern of life and behavior",
+          "moral conduct and actions",
+          "moral-social"
+        ],
+        "vehicle": [
+          "‘way’ as a path one walks; paired with ‘deeds’",
+          "journey metaphor plus meristic pair",
+          "movement/behavior"
+        ],
+        "ground": [
+          "one’s life-course is like a path (‘way’) marked by actions (‘deeds’), and the pair conveys total behavior",
+          "path plus acts together summarize conduct",
+          "life-pattern"
+        ],
+        "posture": [
+          "inviting observation to understand justice of judgment",
+          "explanatory, reflective tone",
+          "prophetic-theodicy"
+        ],
+        "explanation": "‘Way’ is a journey metaphor for lifestyle, and together with ‘deeds’ forms a meristic pair summing up their entire conduct.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־הָרָעָה֙ אֲשֶׁ֤ר הֵבֵ֙אתִי֙ עַל־יְר֣וּשָׁלַ֔͏ִם",
+        "english_text": "for the disaster (lit. ‘the evil’) that I brought on Jerusalem",
+        "target": [
+          "the calamity/judgment that befell Jerusalem",
+          "historical catastrophe",
+          "historical-theological"
+        ],
+        "vehicle": [
+          "the term ‘evil’ (רָעָה) describing the event",
+          "moral quality word applied to a calamity",
+          "evaluative descriptor"
+        ],
+        "ground": [
+          "a disastrous event is labeled ‘evil’ because of its harmful effect",
+          "result/harm stands for the event itself",
+          "harmfulness"
+        ],
+        "posture": [
+          "acknowledging severity but framing as just judgment",
+          "somber explanatory tone",
+          "prophetic-theodicy"
+        ],
+        "explanation": "‘The evil’ is a metonymy for the calamity/disaster that God brought on Jerusalem, using a moral term to denote a harmful event.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 14:23",
+    "deliberation": "The central repeated phrase is ‘their ways and their deeds,’ again using ‘way’ as a path metaphor and the pair as a merism for total conduct. No other strong figures beyond that.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כִּֽי־תִרְא֥וּ אֶת־דַּרְכָּ֖ם וְאֶת־עֲלִילוֹתָ֑ם",
+        "english_text": "when you see their ways and their deeds",
+        "target": [
+          "the survivors’ entire pattern of life and behavior",
+          "character and conduct",
+          "moral-social"
+        ],
+        "vehicle": [
+          "‘way’ as an ongoing path; paired with ‘deeds’",
+          "journey metaphor plus meristic expression",
+          "movement/behavior"
+        ],
+        "ground": [
+          "a person’s life is like a road (‘way’) marked by concrete ‘deeds’; the pair summarizes all behavior",
+          "path plus actions together depict character",
+          "life-pattern"
+        ],
+        "posture": [
+          "using their conduct as evidence of divine justice",
+          "argumentative-theodic tone",
+          "prophetic-theodicy"
+        ],
+        "explanation": "‘Way’ metaphorically denotes lifestyle, and together with ‘deeds’ forms a meristic/hendiadic expression for total behavior, which will demonstrate God’s justice.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

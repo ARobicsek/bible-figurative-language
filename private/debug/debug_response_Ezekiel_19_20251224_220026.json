@@ -1,0 +1,678 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 19:1",
+    "deliberation": "Considered whether the verse is purely literal (instruction to recite a lament) or if the collocation 'שָׂא קִינָה' functions idiomatically. Hebrew frequently uses נָשָׂא + abstract noun ('lift a voice/cry') for 'utter'. Here 'lift a dirge' is an idiom for 'intoning/reciting a lament', not a literal physical lifting, so I treat it as a mild idiom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שָׂא קִינָה אֶל־נְשִׂיאֵי יִשְׂרָאֵל",
+        "english_text": "take up / intone a dirge over the princes of Israel",
+        "target": [
+          "uttering a prophetic lament over the princes of Israel",
+          "a speech act of mourning/judgment",
+          "prophetic discourse about Judah’s rulers"
+        ],
+        "vehicle": [
+          "physically lifting or carrying something heavy (שָׂא)",
+          "bodily action of bearing a load",
+          "concrete physical exertion"
+        ],
+        "ground": [
+          "exertion and burden involved in pronounced lamentation",
+          "association of intense speech with carrying a weight",
+          "conceptual mapping of speech as a burden one bears"
+        ],
+        "posture": [
+          "solemn, mournful framing of the prophetic message",
+          "emotional-intentional stance (lament, not neutral report)",
+          "prophetic rhetoric emphasizing the heaviness of judgment"
+        ],
+        "explanation": "The phrase 'שָׂא קִינָה' literally means 'lift up a dirge' but functions as an idiom for 'utter/intonate a lament', using the physical act of lifting a burden to describe performing a heavy, mournful speech act.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 19:2",
+    "deliberation": "This verse launches the extended leonine imagery. 'Your mother' is portrayed as a lioness among lions, rearing cubs. The mother here represents Judah/the Davidic dynasty, not a literal lioness. The entire lioness-and-cubs scene is a unified metaphor for the royal line.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מָה אִמְּךָ לְבִיָּא בֵּין אֲרָיוֹת רָבָצָה בְּתוֹךְ כְּפִרִים רִבְּתָה גוּרֶיהָ",
+        "english_text": "What a lioness was your mother among the lions! Crouching among the great beasts, she reared her cubs.",
+        "target": [
+          "‘your mother’ (Judah / the Davidic royal house) and her raising of princes",
+          "the dynastic community that produces and nurtures kings",
+          "the political-national entity of Judah"
+        ],
+        "vehicle": [
+          "a lioness lying among lions and rearing her cubs",
+          "a powerful predatory animal family group",
+          "the animal world of lions and their offspring"
+        ],
+        "ground": [
+          "strength, dominance, and capacity to raise formidable offspring",
+          "fierce protection and predatory power associated with lion families",
+          "a community that produces strong, fearsome leaders"
+        ],
+        "posture": [
+          "ambivalent admiration shading into ominous critique",
+          "evaluative description within a lament (both grandeur and danger)",
+          "prophetic portrayal of royal power as impressive yet morally troubling"
+        ],
+        "explanation": "The mother (Judah/the dynasty) is not literally a lioness; she is metaphorically depicted as one among other lions, raising cubs, to convey the strength and predatory character of the royal house and its princes.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 19:3",
+    "deliberation": "The verse describes one cub becoming a young lion who learns to tear prey and devour humans. This continues the leonine metaphor but now focuses on a specific prince. The actions of hunting prey and eating humans are figurative for oppressive, violent rule.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתַּעַל אֶחָד מִגֻּרֶיהָ כְּפִיר הָיָה וַיִּלְמַד לִטְרׇף־טֶרֶף אָדָם אָכָל",
+        "english_text": "She raised up one of her cubs; he became a young lion. He learned to hunt prey; he devoured people.",
+        "target": [
+          "a particular Davidic prince (likely Jehoahaz) and his rule over people",
+          "an individual human king exercising political-military power",
+          "the sphere of human kingship and governance in Judah"
+        ],
+        "vehicle": [
+          "a young lion that learns to tear prey and eat humans",
+          "a dangerous predatory animal in the act of hunting",
+          "the animal world of carnivorous violence"
+        ],
+        "ground": [
+          "predatory violence, ruthlessness, and destruction of lives",
+          "a ruler’s exploitation and killing of subjects likened to a lion’s kill",
+          "the terror and harm inflicted on others by unchecked power"
+        ],
+        "posture": [
+          "strong negative moral judgment on the prince",
+          "condemnatory rhetorical stance highlighting cruelty",
+          "prophetic critique of oppressive political leadership"
+        ],
+        "explanation": "The prince is not literally a lion devouring human flesh; his oppressive and violent rule is metaphorically portrayed as a young lion’s predation on people.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 19:4",
+    "deliberation": "The verse uses capture imagery: nations catch him in 'their pit' and drag him with hooks to Egypt. This draws on animal-hunting imagery (pit, hooks) applied to the political defeat and deportation of the king.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּשַׁחְתָּם נִתְפָּשׂ וַיְבִאֻהוּ בַחַחִים אֶל־אֶרֶץ מִצְרָיִם",
+        "english_text": "He was caught in their pit; they dragged him off with hooks to the land of Egypt.",
+        "target": [
+          "the king’s political defeat and deportation by foreign nations",
+          "the capture and removal of a human ruler",
+          "international warfare and exile involving Judah’s monarchy"
+        ],
+        "vehicle": [
+          "a wild animal caught in a pit and dragged away with hooks",
+          "techniques of trapping and transporting dangerous beasts",
+          "the domain of hunting and animal control"
+        ],
+        "ground": [
+          "helpless capture, humiliation, and forced removal",
+          "the irresistible, degrading nature of being overpowered",
+          "treatment of the king as something dangerous yet subdued"
+        ],
+        "posture": [
+          "portrayal of the king’s downfall as deserved humiliation",
+          "lamenting but also vindicatory framing of his end",
+          "prophetic exposition of divine judgment through foreign powers"
+        ],
+        "explanation": "Foreign powers did not literally trap the king in an animal pit and drag him with iron hooks; this hunting imagery metaphorically depicts his subjugation and humiliating deportation.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 19:5",
+    "deliberation": "The verse returns to the lioness and her cubs: when hope in one cub is lost, she takes another and makes him a young lion. This continues the same conceptual metaphor of Judah/the dynasty as lioness and individual kings as lion-cubs raised for predatory power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּקַּח אֶחָד מִגֻּרֶיהָ כְּפִיר שָׂמָתְהוּ",
+        "english_text": "She took another of her cubs and set him up as a young lion.",
+        "target": [
+          "the installation of another Davidic prince as king",
+          "succession within the royal house of Judah",
+          "the process of raising and enthroning human rulers"
+        ],
+        "vehicle": [
+          "a lioness taking one of her cubs and making him a young lion",
+          "the nurturing and promotion of a predatory animal to full strength",
+          "the animal life-cycle of lions maturing into hunters"
+        ],
+        "ground": [
+          "deliberate grooming and empowering of a strong, potentially dangerous leader",
+          "continuity of predatory traits across generations",
+          "the dynasty’s persistence in producing similar kinds of rulers"
+        ],
+        "posture": [
+          "sorrowful yet critical portrayal of royal succession",
+          "lament colored by a sense of inevitability of further harm",
+          "prophetic stance seeing ongoing rule as repetition of violence"
+        ],
+        "explanation": "The succession from one king to another is metaphorically described as a lioness selecting another cub and making him into a young lion, highlighting the continuity of predatory, oppressive leadership.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 19:6",
+    "deliberation": "Again the second prince is depicted as a young lion walking among lions and devouring people. This is an extension of the lion-king metaphor, with his hunting behavior representing violent oppression of people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיִּתְהַלֵּךְ בְּתוֹךְ־אֲרָיוֹת כְּפִיר הָיָה וַיִּלְמַד לִטְרׇף־טֶרֶף אָדָם אָכָל",
+        "english_text": "He stalked among the lions, he was a young lion; he learned to hunt prey—he devoured people.",
+        "target": [
+          "the conduct of the second Davidic king in relation to surrounding powers and his own subjects",
+          "a human ruler’s exercise of aggressive political and military power",
+          "the broader sphere of monarchic behavior"
+        ],
+        "vehicle": [
+          "a young lion moving among other lions, learning to tear prey and eat humans",
+          "a predatory animal embedded in a pride of similar predators",
+          "the animal kingdom’s imagery of coordinated, violent hunters"
+        ],
+        "ground": [
+          "peer status among other powerful rulers (lions) and shared predatory violence",
+          "cruelty and bloodshed against people likened to devouring prey",
+          "the menace and terror evoked by a lion in its environment"
+        ],
+        "posture": [
+          "sharply condemnatory depiction of the king’s brutality",
+          "rhetorical emphasis on moral outrage and lament",
+          "prophetic denunciation of systemic violence by rulers"
+        ],
+        "explanation": "The description of the king as a young lion walking among lions and devouring people figuratively portrays his oppressive, violent conduct in animal-predation terms.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 19:7",
+    "deliberation": "Parts of the verse may be literal (sexual exploitation, city destruction). Two distinct figurative elements stand out: (1) the ongoing lion-roar imagery for the king’s terrifying impact, and (2) the phrase 'the land and its fullness' as a totalizing merism/synecdoche for everything in the land.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִקּוֹל שַׁאֲגָתוֹ",
+        "english_text": "at the sound of his roaring",
+        "target": [
+          "the king’s threatening voice and oppressive presence over the land",
+          "the impact of royal decrees and military intimidation",
+          "human political authority exercised violently"
+        ],
+        "vehicle": [
+          "the roar of a lion",
+          "a loud, fear-inducing animal vocalization",
+          "acoustic phenomena from predatory animals"
+        ],
+        "ground": [
+          "the capacity to terrify and paralyze others through sound alone",
+          "the broadcast of dominance and aggression",
+          "the way both a lion’s roar and a tyrant’s voice spread fear and upheaval"
+        ],
+        "posture": [
+          "negative, highlighting the king’s terrorizing influence",
+          "lament mixed with accusation against destructive authority",
+          "prophetic exposure of the harm caused by abusive power"
+        ],
+        "explanation": "The king’s intimidating proclamations and presence are figuratively described as the roaring of a lion, extending the earlier lion-king metaphor to his acoustic impact.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַתֵּשַׁם אֶרֶץ וּמְלֹאָהּ",
+        "english_text": "The land and all in it were appalled / laid waste",
+        "target": [
+          "the total population, resources, and structures within the territory",
+          "the entire socio-economic and ecological system of Judah",
+          "the national life of the people and their land"
+        ],
+        "vehicle": [
+          "the phrase 'the land and its fullness'",
+          "a meristic/synecdochic expression of totality",
+          "geographical language standing for inhabitants and contents"
+        ],
+        "ground": [
+          "using land plus what fills it to denote everything without remainder",
+          "holistic reference to a territory and all it contains",
+          "the idea that nothing in the land escaped devastation"
+        ],
+        "posture": [
+          "emphasis on comprehensive devastation",
+          "intensifying the lament by stressing total ruin",
+          "prophetic highlighting of the far-reaching consequences of tyranny"
+        ],
+        "explanation": "The phrase 'the land and its fullness' functions as a merism/synecdoche, using the land and what fills it to represent the totality of people, cities, and resources that have been devastated.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 19:8",
+    "deliberation": "Nations surround him, spread their net, and he is caught in their pit. The hunting/trapping imagery continues to depict the king’s political capture using animal-snaring metaphors (nets and pits).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיִּפְרְשׂוּ עָלָיו רִשְׁתָּם בְּשַׁחְתָּם נִתְפָּשׂ",
+        "english_text": "They spread their net over him; he was caught in their snare.",
+        "target": [
+          "the coalition’s successful capture and subjugation of the king",
+          "the military-political entrapment of a human ruler",
+          "international power dynamics affecting Judah’s monarchy"
+        ],
+        "vehicle": [
+          "spreading a net and catching something in a pit/snare",
+          "animal trapping and hunting practices",
+          "the domain of capturing wild creatures"
+        ],
+        "ground": [
+          "strategic entrapment, inevitability of capture, and loss of freedom",
+          "being overpowered by coordinated external forces",
+          "the sense of being hunted down and caught"
+        ],
+        "posture": [
+          "portraying the king’s defeat as complete and inescapable",
+          "lamenting yet underlining the just outcome of his violence",
+          "prophetic depiction of divine judgment through foreign powers"
+        ],
+        "explanation": "The hostile nations did not literally spread hunting nets over an animal; the language of nets and pits metaphorically describes how they entrapped and subdued the king.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 19:9",
+    "deliberation": "The imagery of hooks, cage, and nets continues the captured-lion metaphor for the deported king whose 'roar' will no longer be heard. Additionally, 'the mountains of Israel' functions as a metonymy for the whole land/people of Israel.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיִּתְּנֻהוּ בַסּוּגַר בַּחַחִים ... יְבִאֻהוּ בַמְּצֹדוֹת לְמַעַן לֹא־יִשָּׁמַע קוֹלוֹ עוֹד",
+        "english_text": "With hooks he was put in a cage; they carried him off to the king of Babylon and confined him in a fortress, so that never again should his roar be heard",
+        "target": [
+          "the deported king’s imprisonment and permanent political silencing",
+          "the removal and neutralization of royal power in Judah",
+          "the domain of human kingship under foreign domination"
+        ],
+        "vehicle": [
+          "a captured wild beast placed in a cage with hooks and confined in nets",
+          "animal-transport and incarceration imagery",
+          "the treatment of dangerous animals to prevent further harm"
+        ],
+        "ground": [
+          "loss of freedom, containment, and the end of threatening activity (roaring)",
+          "public silencing of a once-dominant, fear-inspiring presence",
+          "the radical change from roaming predator to caged captive"
+        ],
+        "posture": [
+          "somber acknowledgment of the end of Judah’s monarchic roar",
+          "lament tinged with the sense of fitting retribution",
+          "prophetic framing of political collapse as divinely orchestrated"
+        ],
+        "explanation": "The king is figuratively portrayed as a wild beast put in a cage and silenced, using animal-capture imagery to describe his imprisonment and the cessation of his tyrannical influence.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶל־הָרֵי יִשְׂרָאֵל",
+        "english_text": "on the hills / mountains of Israel",
+        "target": [
+          "the entire land and population over which the king once ruled",
+          "the national territory of Israel along with its inhabitants",
+          "the political-religious community of Israel"
+        ],
+        "vehicle": [
+          "the physical mountains/hills of Israel",
+          "prominent topographical features of the land",
+          "geographical terminology"
+        ],
+        "ground": [
+          "using the land’s characteristic high places to stand for the whole country",
+          "the association of mountains with the nation’s identity and life",
+          "representing the total sphere where the king’s rule was heard"
+        ],
+        "posture": [
+          "emphasizing the complete cessation of royal dominion in Israel",
+          "rhetorical focus on national scope of the change",
+          "prophetic concern for the fate of the entire community"
+        ],
+        "explanation": "The 'mountains of Israel' stand metonymically for the whole land and people of Israel, the arena where the king’s 'roar'—his rule and impact—used to be heard.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 19:10",
+    "deliberation": "The imagery shifts: 'your mother' is now compared to a vine planted by abundant waters, fruitful and full of branches. The explicit כ ('like') marks this as a simile, with the vine representing the flourishing of Judah/the dynasty under favorable conditions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִמְּךָ כַּגֶּפֶן בְּדָמְךָ עַל־מַיִם שְׁתוּלָה פֹּרִיָּה וַעֲנֵפָה הָיְתָה מִמַּיִם רַבִּים",
+        "english_text": "Your mother was like a vine in your blood, planted beside streams, with luxuriant boughs and branches thanks to abundant waters.",
+        "target": [
+          "‘your mother’ (Judah / the Davidic house) in its earlier flourishing state",
+          "the community/dynasty’s vitality and growth",
+          "the political and national life of Judah"
+        ],
+        "vehicle": [
+          "a vine planted by abundant waters, fruitful and full of branches",
+          "a well-watered, thriving plant",
+          "the domain of viticulture and luxuriant vegetation"
+        ],
+        "ground": [
+          "fertility, vigor, and prolific growth under favorable conditions",
+          "being well-supplied and therefore expansive and productive",
+          "the sense of prosperity and strength spreading outward"
+        ],
+        "posture": [
+          "nostalgic recollection of former prosperity",
+          "lamenting contrast between past flourishing and present ruin",
+          "prophetic use of pastoral imagery to heighten the pathos of decline"
+        ],
+        "explanation": "The dynasty/nation is explicitly compared to a vine thriving by abundant waters, using agricultural imagery to depict its earlier prosperity and strength.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 19:11",
+    "deliberation": "Within the vine frame, strong 'rods' suitable as 'scepters of rulers' grow from the vine and tower above other trees. The rods represent powerful kings; the vine imagery remains figurative for the dynasty. This is a metaphor of rulers as strong vine-rods/scepters.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיִּֽהְיוּ־לָהּ מַטּוֹת עֹז אֶל־שִׁבְטֵי מֹשְׁלִים וַתִּגְבַּהּ קוֹמָתוֹ עַל־בֵּין עֲבֹתִים",
+        "english_text": "And she had strong rods fit for a ruler’s scepter. It towered highest among the leafy trees.",
+        "target": [
+          "the powerful kings produced by the dynasty",
+          "individual royal authorities arising from Judah",
+          "the institution of monarchic rule in Judah"
+        ],
+        "vehicle": [
+          "strong vine-rods that can serve as scepters, towering above trees",
+          "sturdy branches used as symbols of authority (scepters)",
+          "plant growth imagery combined with regalia imagery"
+        ],
+        "ground": [
+          "strength, prominence, and suitability for rule (like a robust scepter)",
+          "being elevated above others in status (height over other trees)",
+          "visible, conspicuous dominance in the landscape of powers"
+        ],
+        "posture": [
+          "recognition of former royal strength and exaltation",
+          "lamenting loss by first emphasizing past greatness",
+          "prophetic technique of heightening contrast between then and now"
+        ],
+        "explanation": "The 'strong rods' that function as scepters grow from the vine and stand for the dynasty’s powerful kings; the rods-as-scepters are a metonymy for royal authority within the broader vine metaphor.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 19:12",
+    "deliberation": "The vine is uprooted in fury, thrown to the ground; an east wind withers its fruit; its strong rod is consumed by fire. These are not literal horticultural events but figurative depictions of Judah’s judgment and the destruction of its royal power (east wind as hostile power, fire as consuming judgment) within the vine metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתֻּתַּשׁ בְּחֵמָה לָאָרֶץ הֻשְׁלָכָה וְרוּחַ הַקָּדִים הוֹבִישׁ פִּרְיָהּ ... מַטֵּה עֻזָּהּ אֵשׁ אֲכָלָתְהוּ",
+        "english_text": "But plucked up in a fury, she was hurled to the ground. The east wind withered her branches; they broke apart and dried up; and her mighty rod was consumed by fire.",
+        "target": [
+          "the downfall of Judah and the destruction of its royal strength",
+          "national catastrophe and loss of kingship",
+          "the historical experience of judgment (invasion, exile)"
+        ],
+        "vehicle": [
+          "a vine violently uprooted, withered by an east wind, and its strong branch burned by fire",
+          "agricultural and climatic disasters affecting a plant",
+          "natural forces (wind, fire) acting on vulnerable vegetation"
+        ],
+        "ground": [
+          "sudden, forceful removal from a place of security (uprooting)",
+          "desiccation and fruitlessness under hostile conditions (east wind)",
+          "irreversible loss of structural strength (rod consumed by fire)"
+        ],
+        "posture": [
+          "portraying divine wrath and its effects in vivid, natural imagery",
+          "lamenting the depth of the calamity while affirming its justice",
+          "prophetic interpretation of historical disaster as withering judgment"
+        ],
+        "explanation": "The uprooted, withered, and burned vine represents Judah’s destruction and the end of its royal power; east wind and fire are metaphorical agents of divine judgment, not merely weather events.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 19:13",
+    "deliberation": "The vine is now said to be planted in the wilderness, in a dry and thirsty land. Within the ongoing vine metaphor, this depicts Judah’s transfer into conditions of exile and barrenness rather than literal replanting of a physical vine.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעַתָּה שְׁתוּלָה בַמִּדְבָּר בְּאֶרֶץ צִיָּה וְצָמָא",
+        "english_text": "Now she is planted in the desert, in ground that is arid and parched.",
+        "target": [
+          "Judah/the dynasty in its exilic, post-judgment condition",
+          "the community’s new, inhospitable circumstances",
+          "the historical situation of displacement and barrenness"
+        ],
+        "vehicle": [
+          "a vine planted in a wilderness, in a dry and thirsty land",
+          "a cultivated plant relocated to hostile, unfruitful soil",
+          "the environmental domain of desert conditions"
+        ],
+        "ground": [
+          "lack of resources and inability to flourish",
+          "being out of place and unable to bear fruit",
+          "ongoing vulnerability and diminished prospects"
+        ],
+        "posture": [
+          "emphasizing the bleakness of Judah’s new state",
+          "evoking pity and sorrow within the lament",
+          "prophetic highlighting of the consequences of prior unfaithfulness"
+        ],
+        "explanation": "The statement that 'she is planted in the desert' is metaphorical for Judah’s relocation into exile and spiritual/political barrenness, continuing the vine imagery.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 19:14",
+    "deliberation": "Within the vine frame, fire goes out from one of its rods and consumes its fruit—self-destructive leadership—and no strong rod/scepter remains. Two figurative elements stand out: (1) the inner-rod fire consuming the vine (metaphor for internal, royal-caused ruin) and (2) 'scepter' as a metonymy for royal authority.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתֵּצֵא אֵשׁ מִמַּטֵּה בַדֶּיהָ פִּרְיָהּ אָכָלָה",
+        "english_text": "Fire has issued from her twig-laden branch and has consumed her boughs.",
+        "target": [
+          "the dynasty’s internal self-destruction through its own leaders",
+          "the collapse of the royal house caused by its own members",
+          "the political-spiritual implosion of Judah’s monarchy"
+        ],
+        "vehicle": [
+          "fire emerging from a branch (rod) of the vine and consuming its own growth",
+          "self-originating conflagration within a plant that destroys it",
+          "the natural image of fire as a consuming, destructive force"
+        ],
+        "ground": [
+          "destruction arising from within rather than from outside enemies",
+          "a source designed for strength becoming the cause of ruin",
+          "the idea that leadership meant to support life instead consumes it"
+        ],
+        "posture": [
+          "emphatic critique of internal royal failure and betrayal",
+          "lamenting the tragic irony of self-inflicted devastation",
+          "prophetic insistence that the dynasty’s end is, in part, self-caused"
+        ],
+        "explanation": "The picture of fire coming out from one of the vine’s own rods and devouring its fruit metaphorically represents the dynasty’s self-destruction through its own corrupt rulers.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא־הָיָה בָהּ מַטֵּה־עֹז שֵׁבֶט לִמְשׁוֹל",
+        "english_text": "She is left without a mighty rod, a scepter to rule with.",
+        "target": [
+          "the absence of any effective royal authority in Judah",
+          "the end of legitimate, strong kingship",
+          "the institution of monarchy as a governing power"
+        ],
+        "vehicle": [
+          "a mighty rod / scepter used for ruling",
+          "royal staff as emblem of sovereignty",
+          "physical regalia representing authority"
+        ],
+        "ground": [
+          "using the physical scepter to stand for the abstract reality of kingship",
+          "the close association between the object and the function it symbolizes",
+          "the idea that without the emblem, the power itself has disappeared"
+        ],
+        "posture": [
+          "underscoring the finality of royal collapse",
+          "intensifying the lament by stressing that no strong ruler remains",
+          "prophetic acknowledgment of the cessation of Davidic rule (for the time)"
+        ],
+        "explanation": "The 'mighty rod, a scepter to rule with' is a metonymy for royal authority itself; the statement that none remains signifies the end of effective kingship in Judah.",
+        "confidence": 0.93
+      }
+    ]
+  }
+]

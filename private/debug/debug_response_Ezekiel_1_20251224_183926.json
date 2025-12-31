@@ -1,0 +1,598 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 1:1",
+    "deliberation": "Checked the chronological and geographical data (literal) and the vision formula. The sole non-literal phrasing is \"the heavens were opened,\" which personifies heaven to express the onset of revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִפְתְּחוּ הַשָּׁמַיִם",
+        "english_text": "the heavens opened",
+        "target": ["Ezekiel’s experience of receiving revelation", "prophetic revelation event", "divine–human communication"],
+        "vehicle": ["heavens opening like a door or curtain", "spatial opening", "physical world"],
+        "ground": ["sudden transition from hidden to visible/accessibility", "change from closed to open", "perception of access"],
+        "posture": ["vision-reporting language framing an inner experience as an external opening", "epistemic stance of the seer", "prophetic discourse"],
+        "explanation": "Heaven is personified as something that can be \"opened\" to convey the sudden accessibility of divine realities to the prophet.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 1:2",
+    "deliberation": "The verse is a bare chronological note giving a date in Jehoiachin’s exile, with no non-literal expressions.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 1:3",
+    "deliberation": "Examined standard prophetic formulas. Found (1) \"word of YHWH came\" as a metonymy for divine communication, and (2) \"hand of YHWH was upon him\" as an anthropomorphic metaphor/personification for God’s powerful influence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הָיֹה הָיָה דְבַר־יְהוָה אֶל־יְחֶזְקֵאל",
+        "english_text": "the word of the LORD came to Ezekiel",
+        "target": ["God’s act of communicating with Ezekiel", "prophetic revelation", "divine–human communication"],
+        "vehicle": ["\"word\" (דָּבָר)", "speech / verbal message", "linguistic communication"],
+        "ground": ["a message is something spoken or said, so \"word\" can stand for the whole act of communicating", "content plus authority", "communication"],
+        "posture": ["fixed prophetic formula stressing that the source is YHWH, not the prophet", "institutionalized language of prophecy", "prophetic discourse"],
+        "explanation": "The concrete \"word\" stands metonymically for the whole revelatory act in which God communicates His will to Ezekiel.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתְּהִי עָלָיו שָׁם יַד־יְהוָה",
+        "english_text": "and the hand of the LORD came upon him there",
+        "target": ["God’s powerful influence over Ezekiel", "divine empowerment and control", "divine agency"],
+        "vehicle": ["\"hand\" of YHWH", "human limb / instrument of action", "human embodiment"],
+        "ground": ["a hand exerts control, power, and guidance, so God’s influence is pictured as a hand resting on someone", "capacity to grasp and direct", "agency and power"],
+        "posture": ["anthropomorphic and experiential language to make divine action intelligible", "accommodating theological speech", "prophetic discourse"],
+        "explanation": "God is described as having a \"hand\" that comes upon Ezekiel, a metaphorical personification conveying overpowering divine control and guidance.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 1:4",
+    "deliberation": "Most elements (storm-wind, cloud, fire) function as visionary but are linguistically literal. The explicit comparative marker כ introduces a simile likening the inner radiance to the appearance of ḥashmal (amber/electrum).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִתּוֹכָהּ כְּעֵין הַחַשְׁמַל מִתּוֹךְ הָאֵשׁ",
+        "english_text": "and in the center of it, in the center of the fire, a gleam as of amber",
+        "target": ["the central radiance within the storm-cloud fire", "manifested divine glory in the vision", "divine realm phenomena"],
+        "vehicle": ["the appearance of ḥashmal (amber/electrum)", "shining metallic/precious substance", "physical materials"],
+        "ground": ["brilliant, glowing, metallic-like luminosity", "intense gleam and color", "visual perception"],
+        "posture": ["epistemic hedging (\"like the appearance\") indicating approximation to something ineffable", "vision-report strategy", "prophetic discourse"],
+        "explanation": "Ezekiel uses a simile, comparing the difficult-to-describe inner radiance to the recognizable gleam of ḥashmal.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 1:5",
+    "deliberation": "The term דְּמוּת (likeness/figure) signals that the description is analogical rather than strictly literal. The creatures are described by likeness to a human form, functioning as an anthropomorphic metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "דְּמוּת אַרְבַּע חַיּוֹת ... דְּמוּת אָדָם לָהֵנָּה",
+        "english_text": "the figures of four creatures... They had the figures of human beings",
+        "target": ["the four living creatures", "heavenly beings", "divine realm beings"],
+        "vehicle": ["human form", "human body-shape", "human realm"],
+        "ground": ["upright, humanoid bodily configuration that makes them intelligible to the seer", "form similarity and recognizability", "visual perception"],
+        "posture": ["cautious \"likeness\" language marking partial but not total identity with human form", "visionary approximation", "prophetic discourse"],
+        "explanation": "The otherwise unknown creatures are characterized by analogy to human form using \"likeness\" language, functioning as an anthropomorphic metaphor.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 1:6",
+    "deliberation": "This verse is an anomalous but straightforward anatomical description of the creatures in the vision (four faces and four wings), with no explicit comparative markers or conventional figurative idioms.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 1:7",
+    "deliberation": "The creatures’ single straight leg is literal within the vision. Two expressions with כ introduce explicit similes: feet like a calf’s hoof and their sparkle like burnished bronze.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַף רַגְלֵיהֶם כְּכַף רֶגֶל עֵגֶל",
+        "english_text": "and the feet of each were like a single calf’s hoof",
+        "target": ["the feet of the living creatures", "anatomical feature", "heavenly beings"],
+        "vehicle": ["a calf’s hoof", "animal limb", "animal realm"],
+        "ground": ["similar split, rounded shape and perhaps firmness", "morphological resemblance", "visual perception"],
+        "posture": ["use of familiar animal anatomy to describe an unfamiliar heavenly form", "visionary approximation", "prophetic discourse"],
+        "explanation": "The creatures’ feet are compared to a calf’s hoof to convey their shape by a familiar animal image.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנֹצְצִים כְּעֵין נְחֹשֶׁת קָלָל",
+        "english_text": "and their sparkle was like the luster of burnished bronze",
+        "target": ["the visual surface of the creatures’ legs/feet", "apparent brightness", "heavenly beings"],
+        "vehicle": ["burnished bronze", "highly polished metal", "physical materials"],
+        "ground": ["shiny, reflective, dazzling appearance", "brightness and luster", "visual perception"],
+        "posture": ["analogy to a known polished metal to capture extraordinary brilliance", "visionary approximation", "prophetic discourse"],
+        "explanation": "Their shine is likened to polished bronze, a simile conveying intense metallic brilliance.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 1:8",
+    "deliberation": "The description of human hands under wings and placement of faces and wings is fantastic but presented straightforwardly without comparative particles or figurative idioms.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 1:9",
+    "deliberation": "Movement and non-turning are literal within the vision. The phrase \"woman to her sister\" is a conventional idiom for close pairing or adjacency, functioning figuratively.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "חֹבְרֹת אִשָּׁה אֶל־אֲחוֹתָהּ כַּנְפֵיהֶם",
+        "english_text": "each one’s wings touched those of the other (lit. \"a woman to her sister were their wings\")",
+        "target": ["mutual joining of the creatures’ wings", "spatial adjacency of wings", "heavenly beings’ arrangement"],
+        "vehicle": ["a woman to her sister", "close sisterly relationship", "human family relations"],
+        "ground": ["intimate nearness and pairing, side by side", "closeness and connection", "social relationship"],
+        "posture": ["use of a conventional Semitic idiom for items joined in pairs", "formulaic descriptive device", "narrative discourse"],
+        "explanation": "The idiom \"a woman to her sister\" is used figuratively to describe how closely their wings adjoin one another.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 1:10",
+    "deliberation": "Although the composite faces (human, lion, ox, eagle) are symbolically loaded, the language itself is simple predication without explicit comparative or idiomatic markers.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 1:11",
+    "deliberation": "The verse elaborates wing configuration and body covering literally within the logic of the vision; it uses no similes, metaphors, or idioms.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 1:12",
+    "deliberation": "Movement \"wherever the spirit would go\" may reflect theology of divine impulse, but it is expressed straightforwardly without explicit figurative devices as defined here.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 1:13",
+    "deliberation": "This verse explicitly uses כ to compare the creatures’ appearance and the fiery phenomena to burning coals and to torches. Both are similes intended to capture visual quality and motion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דְּמוּת הַחַיּוֹת מַרְאֵיהֶם כְּגַחֲלֵי־אֵשׁ בֹּעֲרוֹת",
+        "english_text": "the appearance of the creatures was like burning coals of fire",
+        "target": ["the appearance of the living creatures (or their associated fiery aspect)", "visual impression of the beings", "heavenly beings"],
+        "vehicle": ["burning coals of fire", "glowing embers", "natural fiery phenomena"],
+        "ground": ["glowing, intense heat and light, ember-like quality", "fiery brightness and heat", "visual and thermal perception"],
+        "posture": ["simile marking approximation of unfamiliar beings to familiar fiery coals", "visionary descriptive strategy", "prophetic discourse"],
+        "explanation": "The creatures’ appearance is likened to burning coals, emphasizing their glowing, ember-like intensity.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּמַרְאֵה הַלַּפִּדִים",
+        "english_text": "like the appearance of torches",
+        "target": ["the moving fire among the creatures", "dynamic fiery movement", "heavenly phenomena"],
+        "vehicle": ["torches", "handheld flames", "human artifacts with fire"],
+        "ground": ["flickering, darting, mobile light", "dynamic flame movement", "visual perception"],
+        "posture": ["analogy to a familiar portable flame to express motion and form", "vision-report approximation", "prophetic discourse"],
+        "explanation": "The fire moving among the creatures is likened to torches, conveying flickering, mobile flames.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 1:14",
+    "deliberation": "The movement \"ran and returned\" is literal within the sequence; the explicit כ introduces a single simile comparing their motion to lightning.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהַחַיּוֹת רָצוֹא וָשׁוֹב כְּמַרְאֵה הַבָּזָק",
+        "english_text": "and the creatures sped to and fro, like the appearance of lightning",
+        "target": ["the speed and manner of the creatures’ movement", "kinematic behavior", "heavenly beings"],
+        "vehicle": ["lightning flash", "sudden luminous bolt", "natural meteorological phenomenon"],
+        "ground": ["extreme rapidity and sudden, darting motion", "instantaneous appearing/disappearing", "visual perception"],
+        "posture": ["simile to convey otherwise inexpressible speed", "vision-report strategy", "prophetic discourse"],
+        "explanation": "Their dashing motion is compared to a lightning flash to highlight its incredible speed and suddenness.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 1:15",
+    "deliberation": "This is a narrative notice of the prophet seeing a wheel beside each creature; language is descriptive, not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 1:16",
+    "deliberation": "The structure \"a wheel within a wheel\" is unusual but literal in the vision. The phrase כְעֵין תַּרְשִׁישׁ is a clear simile likening the wheels’ appearance to beryl.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַרְאֵה הָאוֹפַנִּים וּמַעֲשֵׂיהֶם כְּעֵין תַּרְשִׁישׁ",
+        "english_text": "as for the appearance and structure of the wheels, they gleamed like beryl",
+        "target": ["appearance of the wheels", "visual quality of the chariot wheels", "heavenly vehicle"],
+        "vehicle": ["beryl (tarshish stone)", "precious gemstone", "physical materials"],
+        "ground": ["gleaming, translucent, colored luster", "gem-like shine and hue", "visual perception"],
+        "posture": ["use of a known precious stone to describe extraordinary appearance", "visionary approximation", "prophetic discourse"],
+        "explanation": "The wheels are compared to beryl to describe their gem-like, gleaming appearance.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 1:17",
+    "deliberation": "Directional movement and non-turning of wheels are described literally with no comparative or idiomatic expressions.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 1:18",
+    "deliberation": "Though eyes covering the rims are symbolically suggestive, within the vision they are presented as literal features; the verse contains no similes, metaphors, or idioms by form.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 1:19",
+    "deliberation": "This synchronizes movement of creatures and wheels, using straightforward narrative description without figurative markers.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 1:20",
+    "deliberation": "The \"spirit\" in the wheels can be theologically rich, but linguistically it is a direct assertion, not framed as metaphor, simile, or idiom in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 1:21",
+    "deliberation": "Reiterates the coordination of creatures and wheels, still in plain descriptive prose with no figurative forms detectable.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 1:22",
+    "deliberation": "The expanse above the creatures’ heads is likened explicitly to awesome crystal/ice by כְעֵין, constituting a simile; the rest is literal spatial description.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רָקִיעַ כְּעֵין הַקֶּרַח הַנּוֹרָא",
+        "english_text": "an expanse, with an awe-inspiring gleam as of crystal",
+        "target": ["the firmament-like expanse over the creatures’ heads", "cosmic platform in the vision", "heavenly architecture"],
+        "vehicle": ["awesome ice/crystal", "transparent, glittering solid", "natural/mineral phenomenon"],
+        "ground": ["clear, sparkling, hard, awe-inducing appearance", "dazzling transparency and solidity", "visual perception and emotion"],
+        "posture": ["simile highlighting both look and terror of the expanse", "visionary approximation", "prophetic discourse"],
+        "explanation": "The expanse is compared to awe-inspiring crystal/ice to express its terrifying, glittering clarity.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 1:23",
+    "deliberation": "Details about wings extended toward one another and covering bodies function as literal features of the visionary beings; no explicit figurative devices occur.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 1:24",
+    "deliberation": "This verse is rich in auditory similes, comparing the sound of the wings to (1) many waters, (2) the sound of Shaddai, and (3) the tumult of an army. All are coded by כ.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "ק֣וֹל כַּנְפֵיהֶם כְּקוֹל מַיִם רַבִּים",
+        "english_text": "the sound of their wings was like the sound of mighty waters",
+        "target": ["sound of the creatures’ wings in motion", "auditory effect", "heavenly phenomena"],
+        "vehicle": ["sound of many waters", "roar of great waters", "natural hydrological phenomenon"],
+        "ground": ["loud, continuous, overwhelming roar", "sheer volume and power", "auditory perception"],
+        "posture": ["simile that anchors a novel sound in a familiar natural roar", "visionary approximation", "prophetic discourse"],
+        "explanation": "The wings’ sound is likened to roaring waters to convey its overwhelming, powerful volume.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּקוֹל־שַׁדַּי",
+        "english_text": "like the sound of Shaddai",
+        "target": ["the same wing-sound", "auditory effect", "heavenly phenomena"],
+        "vehicle": ["the sound/voice of Shaddai", "divine voice", "divine realm"],
+        "ground": ["majestic, authoritative, awe-inspiring sound", "sense of divine presence and power", "theological–auditory perception"],
+        "posture": ["simile that explicitly aligns the sound with God’s own voice", "theological intensification", "prophetic discourse"],
+        "explanation": "The wings’ sound is compared to the voice of Shaddai, stressing its divine, majestic character.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "ק֥וֹל הֲמֻלָּה כְּקוֹל מַחֲנֶה",
+        "english_text": "a tumult like the din of an army",
+        "target": ["the composite roaring tumult of the wings", "auditory effect", "heavenly phenomena"],
+        "vehicle": ["din of an army camp", "noise of troops and military activity", "social/military scene"],
+        "ground": ["multi-source, organized tumult and loudness", "clashing, shouting, rumbling", "social–auditory perception"],
+        "posture": ["simile using military soundscape to portray the ordered yet tumultuous noise", "visionary approximation", "prophetic discourse"],
+        "explanation": "The noise is likened to an army’s din to convey the loud, many-sourced, and imposing character of the sound.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 1:25",
+    "deliberation": "A \"voice\" from above the expanse is mentioned without any comparative or idiomatic embellishment; language is direct and literal within the vision.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 1:26",
+    "deliberation": "Two figurative elements appear: (1) the throne’s appearance is compared to sapphire (simile), and (2) the one upon it is described as \"likeness as appearance of a man,\" an anthropomorphic metaphor for the divine presence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּמַרְאֵה אֶבֶן־סַפִּיר דְּמוּת כִּסֵּא",
+        "english_text": "the semblance of a throne, in appearance like sapphire",
+        "target": ["the appearance of the heavenly throne", "divine throne", "divine realm furniture"],
+        "vehicle": ["sapphire stone", "precious blue gemstone", "physical materials"],
+        "ground": ["deep blue, luminous, precious quality", "beauty and value", "visual perception"],
+        "posture": ["simile to render a transcendent throne intelligible via a known gemstone", "visionary approximation", "prophetic discourse"],
+        "explanation": "The throne’s look is compared to sapphire to emphasize its brilliant, precious, blue radiance.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְעַל דְּמוּת הַכִּסֵּא דְּמוּת כְּמַרְאֵה אָדָם עָלָיו מִלְמָעְלָה",
+        "english_text": "and upon this semblance of a throne, there was the semblance of a human form seated above",
+        "target": ["the enthroned divine presence", "manifested form of God", "divine being"],
+        "vehicle": ["human form", "human figure seated on a throne", "human realm"],
+        "ground": ["recognizable bodily form, capacity for relationship and rule", "form, posture of enthronement", "visual/theological perception"],
+        "posture": ["intentionally cautious anthropomorphic metaphor (\"likeness as appearance\") signaling both similarity and otherness", "theological accommodation", "prophetic discourse"],
+        "explanation": "The transcendent God is portrayed in the likeness of a human figure on a throne, an anthropomorphic metaphor expressing kingship and relationality.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 1:27",
+    "deliberation": "This verse piles up כ-phrases: the upper part is like the appearance of ḥashmal and like the appearance of fire within a frame, and the lower part is like the appearance of fire. These are three distinct but related similes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּעֵין חַשְׁמַל",
+        "english_text": "a gleam as of amber",
+        "target": ["the upper-body appearance of the enthroned figure", "visual quality of divine glory", "divine manifestation"],
+        "vehicle": ["ḥashmal (amber/electrum)", "gleaming metallic/stone substance", "physical materials"],
+        "ground": ["glowing, metallic, multicolored shine", "intense radiance", "visual perception"],
+        "posture": ["simile groping for language for indescribable brightness", "visionary approximation", "prophetic discourse"],
+        "explanation": "The upper part of the figure looks like ḥashmal, a simile conveying intense metallic gleam.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּמַרְאֵה־אֵשׁ בֵּית־לָהּ סָבִיב",
+        "english_text": "like the appearance of fire encased in a frame all around",
+        "target": ["the structured radiance around the upper torso", "form of the divine glory", "divine manifestation"],
+        "vehicle": ["fire within a frame or enclosure", "contained flame", "fiery phenomenon shaped by an object"],
+        "ground": ["intense fire constrained within definite boundaries", "concentrated, shaped energy", "visual perception"],
+        "posture": ["simile elaborating the form of the radiance, not just its brightness", "visionary approximation", "prophetic discourse"],
+        "explanation": "The radiance is compared to fire enclosed in a frame, highlighting both its fiery nature and its defined shape.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִמַּרְאֵה מׇתְנָיו וּלְמַטָּה רָאִיתִי כְּמַרְאֵה־אֵשׁ",
+        "english_text": "and from what appeared as the loins down, I saw what looked like fire",
+        "target": ["the lower-body appearance of the enthroned figure", "visual quality of divine glory", "divine manifestation"],
+        "vehicle": ["fire", "flame", "natural fiery phenomenon"],
+        "ground": ["fiery brightness, possibly connoting energy and judgment", "glow, heat, movement", "visual/theological perception"],
+        "posture": ["simile simplifying the description of the lower half purely to \"fire\"", "visionary approximation", "prophetic discourse"],
+        "explanation": "The lower part of the figure is likened to fire, emphasizing unmediated fiery radiance.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 1:28",
+    "deliberation": "Detected two related figurative moves: (1) a simile comparing the surrounding radiance to a rainbow in a rain-cloud, and (2) the statement that this was the \"appearance of the likeness of the glory of YHWH,\" which metaphorically identifies the visible vision with God’s intangible glory.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּמַרְאֵה הַקֶּשֶׁת אֲשֶׁר יִהְיֶה בֶעָנָן בְּיוֹם הַגֶּשֶׁם כֵּן מַרְאֵה הַנֹּגַהּ סָבִיב",
+        "english_text": "like the appearance of the bow that is in the cloud on a day of rain, such was the appearance of the surrounding radiance",
+        "target": ["the surrounding radiance around the enthroned figure", "visible glory-field", "divine manifestation"],
+        "vehicle": ["rainbow in the cloud on a rainy day", "multicolored bow after rain", "natural meteorological phenomenon"],
+        "ground": ["arched, multicolored, luminous beauty after a storm, often associated with covenant", "colorful brightness and hope after judgment", "visual/theological perception"],
+        "posture": ["simile that both describes appearance and evokes covenantal associations of the rainbow", "visionary and intertextual strategy", "prophetic discourse"],
+        "explanation": "The radiance is likened to a rainbow, conveying its multicolored brilliance and likely evoking covenantal overtones.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הוּא מַרְאֵה דְּמוּת כְּבוֹד־יְהוָה",
+        "english_text": "that was the appearance of the semblance of the Presence (glory) of the LORD",
+        "target": ["the total visionary phenomenon Ezekiel has just described", "visible manifestation", "divine self-revelation"],
+        "vehicle": ["the glory (כָּבוֹד) of YHWH", "God’s weighty majesty and presence", "divine attribute"],
+        "ground": ["the vision conveys overwhelming majesty, holiness, and presence characteristic of God’s \"glory\"", "radiant weightiness and awe", "theological–experiential perception"],
+        "posture": ["highly cautious metaphor using \"appearance\" and \"likeness\" to avoid direct identification of God with the image", "reverent theological restraint", "prophetic discourse"],
+        "explanation": "Ezekiel identifies the vision as the \"appearance of the likeness of the glory of YHWH,\" a guarded metaphor equating the visible display with God’s otherwise invisible majesty.",
+        "confidence": 0.93
+      }
+    ]
+  }
+]

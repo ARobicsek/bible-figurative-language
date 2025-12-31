@@ -1,0 +1,1425 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 16:1",
+    "deliberation": "Checked for figurative elements in the prophetic intro formula. The key expression is 'the word of YHWH came to me,' which treats the divine word as an acting entity that can 'come.' This is a conventional personification/metaphor for revelation, not literal physical motion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָ֖ה אֵלַ֥י",
+        "english_text": "The word of GOD came to me",
+        "target": ["YHWH’s act of revealing a message to Ezekiel", "divine communication", "theological"],
+        "vehicle": ["a concrete 'word' that moves toward someone", "moving object/event", "physical/spatial"],
+        "ground": ["initiative, arrival, encounter between speaker and hearer", "communication event", "relational"],
+        "posture": ["prophetic formula underscoring objective, authoritative revelation", "affirming stance", "rhetorical/theological"],
+        "explanation": "The divine message is depicted as a concrete entity that can 'come' to the prophet, personifying and metaphorically describing the experience of revelation.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 16:2",
+    "deliberation": "Considered 'son of man' and the command to 'make known' abominations. 'Son of man' is an idiomatic designation for a human, not a literal genealogical claim, and thus functions as a figurative idiom/metonymy for 'mere human.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָ֕ם",
+        "english_text": "O mortal (lit. son of man)",
+        "target": ["Ezekiel as a human prophet", "human individual", "anthropological"],
+        "vehicle": ["'son of man' as a descendant of humanity/Adam", "kinship term", "social/familial"],
+        "ground": ["human frailty, mortality, non-divine status", "creatureliness", "theological/anthropological"],
+        "posture": ["emphasizing the prophet’s humanness in contrast to God", "humbling address", "rhetorical"],
+        "explanation": "The idiom 'son of man' stands metonymically for a human being, highlighting Ezekiel’s mortal, non-divine nature.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 16:3",
+    "deliberation": "This verse attributes to Jerusalem Canaanite parentage ('father Amorite, mother Hittite'). Historically Israel’s ancestors are not literally Amorites/Hittites; here the familial language is a metaphor for moral-spiritual lineage and cultural identity, with some ethnic metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מְכֹרֹתַ֙יִךְ֙ וּמֹ֣לְדֹתַ֔יִךְ מֵאֶ֖רֶץ הַֽכְּנַעֲנִ֑י אָבִ֥יךְ הָאֱמֹרִ֖י וְאִמֵּ֥ךְ חִתִּֽית",
+        "english_text": "By origin and birth you are from the land of the Canaanites—your father was an Amorite and your mother a Hittite.",
+        "target": ["Jerusalem/Israel’s moral and religious origins", "covenant people’s character", "theological/historical"],
+        "vehicle": ["having Amorite and Hittite parents from Canaan", "ethnic parentage", "social/ethnic"],
+        "ground": ["sharing the same corrupt, pagan traits as Canaanite peoples", "moral resemblance/kinship", "ethical/religious"],
+        "posture": ["denouncing Jerusalem’s supposed separateness by assigning her a pagan family tree", "accusatory stance", "prophetic polemic"],
+        "explanation": "Jerusalem is metaphorically given Canaanite parents; Amorite and Hittite stand metonymically for pagan, idolatrous culture and morals.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 16:4",
+    "deliberation": "Describes a newborn whose cord is not cut, not washed, salted, or swaddled. Within the chapter’s extended allegory, this imagery does not narrate an actual baby but Jerusalem’s early, vulnerable condition. So the birth scene functions as a metaphor for the city’s neglected beginnings.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּי֨וֹם הוּלֶּ֤דֶת אוֹתָךְ֙ לֹא־כׇרַּ֣ת שׇׁרֵּ֔ךְ וּבְמַ֥יִם לֹא־רֻחַ֖צְתְּ ... וְהׇחְתֵּ֖ל לֹ֥א חֻתָּֽלְתְּ",
+        "english_text": "On the day you were born your navel cord was not cut, and you were not bathed in water… nor were you swaddled.",
+        "target": ["Jerusalem in her earliest national beginnings", "the people’s formative state", "historical/theological"],
+        "vehicle": ["an uncared-for newborn with uncut cord, unwashed, unswaddled", "abandoned infant", "familial/body"],
+        "ground": ["utter vulnerability, lack of human care, social rejection", "neglect, exposure", "social/emotional"],
+        "posture": ["lamenting and dramatizing Jerusalem’s wretched start to highlight God’s later grace", "pity-evoking stance", "prophetic rhetoric"],
+        "explanation": "The neglected newborn is an allegorical metaphor for Jerusalem’s vulnerable and uncared-for early condition.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 16:5",
+    "deliberation": "The whole birth-exposure picture continues the allegory. Additionally, 'no eye pitied you' personifies the eye for the person and is idiomatic. Being 'thrown on the face of the field' is part of the same abandoned-infant metaphor rather than a separate image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לֹא־חָ֨סָה עָלַ֜יִךְ עַ֗יִן",
+        "english_text": "No eye pitied you",
+        "target": ["people who might have cared for Jerusalem in her beginnings", "potential helpers/benefactors", "social"],
+        "vehicle": ["the 'eye' that pities or spares", "body part for the whole person", "physical/body"],
+        "ground": ["complete absence of compassion or concern", "lack of sympathetic regard", "emotional/social"],
+        "posture": ["emphasizing Jerusalem’s total abandonment in order to magnify later divine compassion", "dramatic, accusatory", "prophetic"],
+        "explanation": "The 'eye' is a metonymy/personification for people who could have pitied; the expression idiomatically conveys utter lack of compassion, within the broader abandoned-baby metaphor.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 16:6",
+    "deliberation": "God passes by and sees the foundling 'wallowing in your blood' and says 'Live!' This vision is not about a literal infant but is a metaphor for Jerusalem’s near-death, polluted state. The 'blood' stands for life-threatening distress and perhaps guilt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "מִתְבּוֹסֶ֖סֶת בְּדָמָ֑יִךְ ... בְּדָמַ֣יִךְ חֲיִ֔י",
+        "english_text": "wallowing in your blood … Live despite your blood",
+        "target": ["Jerusalem’s desperate, degraded condition", "national/spiritual state", "theological/historical"],
+        "vehicle": ["a newborn wallowing in its own blood, yet commanded to live", "bleeding infant", "body/life"],
+        "ground": ["proximity to death, defilement, utter helplessness, yet preserved by sheer divine fiat", "rescued-from-death", "existential/theological"],
+        "posture": ["stressing God’s sovereign, life-giving intervention in a hopeless situation", "gracious yet indicting", "prophetic"],
+        "explanation": "The infant in blood is a metaphor for Jerusalem’s near-fatal, polluted condition; 'blood' metonymically represents mortal danger and possibly guilt, from which God nevertheless grants life.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 16:7",
+    "deliberation": "Two images: (1) 'I made you myriad like the plant of the field' is a simile/metaphor for numerical growth and flourishing; (2) the maturation of the girl’s body continues the woman-figure for the city. 'Naked and bare' still functions metaphorically for unprotected, unadorned status.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "רְבָבָ֗ה כְּצֶ֤מַח הַשָּׂדֶה֙ נְתַתִּ֔יךְ",
+        "english_text": "I let you grow in multitudes like the plants of the field",
+        "target": ["Jerusalem/Israel’s population and prosperity", "community growth", "historical/social"],
+        "vehicle": ["abundant plants of the open field", "luxuriant vegetation", "nature/agricultural"],
+        "ground": ["rapid multiplication, vitality, flourishing without human cultivation", "fecundity, abundance", "biological/economic"],
+        "posture": ["celebrating how God caused Israel to flourish abundantly", "laudatory but preparing for contrast", "prophetic narrative"],
+        "explanation": "Israel’s growth is likened to field plants in number and vigor, a simile/metaphor (and mild hyperbole) for abundant increase, within the broader woman-as-city allegory.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 16:8",
+    "deliberation": "This is central to the allegory: God as husband, Jerusalem as bride. 'Time of love,' 'I spread my skirt over you,' 'I covered your nakedness,' and 'I entered into a covenant with you' all treat the city as a marriage partner. 'Spread my skirt' is a known marital idiom/metaphor for taking a wife.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וָאֶפְרֹ֤שׂ כְּנָפִי֙ עָלַ֔יִךְ וָאֲכַסֶּ֖ה עֶרְוָתֵ֑ךְ ... וָאָב֨וֹא בִבְרִ֜ית אֹתָ֗ךְ",
+        "english_text": "So I spread My robe over you and covered your nakedness, and I entered into a covenant with you",
+        "target": ["YHWH’s covenantal relationship with Jerusalem/Israel", "divine–people relationship", "theological"],
+        "vehicle": ["a man spreading his garment over a woman and marrying her", "marriage/espousal", "social/familial"],
+        "ground": ["exclusive commitment, protection, provision, legal and emotional bond", "marital fidelity and care", "ethical/relational"],
+        "posture": ["portraying the covenant as a loving marriage to heighten the horror of later infidelity", "tender yet solemn", "prophetic allegory"],
+        "explanation": "God depicts the covenant with Jerusalem as a marriage, using the idiom of spreading one’s garment as a metaphor for taking her as wife and covering her shame.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 16:9",
+    "deliberation": "Bathing, washing blood, and anointing with oil are bridal-preparation acts in the story, but they metaphorically depict God’s cleansing and consecration of Israel. The actions themselves are literal in the narrative but figurative in their reference.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וָאֶרְחָצֵ֣ךְ בַּמַּ֔יִם וָאֶשְׁטֹ֥ף דָּמַ֖יִךְ מֵעָלָ֑יִךְ וָאֲסֻכֵ֖ךְ בַּשָּֽׁמֶן",
+        "english_text": "I bathed you in water, and washed the blood off you, and anointed you with oil.",
+        "target": ["Israel’s purification and consecration by God", "spiritual/moral renewal", "theological"],
+        "vehicle": ["washing bodily filth and blood; anointing with perfumed oil", "ritual bath and cosmetic anointing", "ritual/body care"],
+        "ground": ["removal of defilement and preparation for honored status", "cleansing, beautification, sanctification", "cultic/social"],
+        "posture": ["emphasizing God’s gracious beautifying work on a formerly despised people", "celebratory, preparatory", "prophetic narrative"],
+        "explanation": "The physical washing and anointing of the young woman functions metaphorically for God’s cleansing and consecrating Israel for covenant relationship.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 16:10",
+    "deliberation": "Clothing and adorning the girl with fine garments symbolizes God’s bestowal of honor, status, and wealth on Jerusalem. The apparel is literal within the story but metaphorical for national prosperity and dignity. No separate simile or idiom appears.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וָאַלְבִּישֵׁ֣ךְ רִקְמָ֔ה ... וָאֶחְבְּשֵׁ֣ךְ בַּשֵּׁ֔שׁ וַאֲכַסֵּ֖ךְ מֶֽשִׁי",
+        "english_text": "I clothed you with embroidered garments … wound fine linen about your head, and dressed you in silks.",
+        "target": ["Jerusalem’s exalted status and prosperity under God’s care", "national honor and wealth", "social/political"],
+        "vehicle": ["luxurious embroidered garments, fine linen, and silk", "high-status clothing", "material culture"],
+        "ground": ["beauty, honor, wealth, social elevation", "splendor and privilege", "aesthetic/social"],
+        "posture": ["recalling lavish divine generosity toward Jerusalem", "affirming, preparatory to reproach", "prophetic"],
+        "explanation": "The fine clothes are a metaphor and metonymy for the honor, wealth, and elevated status God bestowed on Jerusalem.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 16:11",
+    "deliberation": "Jewelry (bracelets, chain) continues the adornment motif. These items symbolize honor and privilege; the narrative jewelry is metaphorical for God’s gifts and favors to Jerusalem.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וָאֶעְדֵּ֖ךְ עֶ֑דִי וָאֶתְּנָ֤ה צְמִידִים֙ עַל־יָדַ֔יִךְ וְרָבִ֖יד עַל־גְּרוֹנֵֽךְ",
+        "english_text": "I decked you out in finery and put bracelets on your arms and a chain around your neck.",
+        "target": ["divine endowments and honors given to Jerusalem", "privileges/gifts", "theological/social"],
+        "vehicle": ["finery, bracelets, neck-chain", "ornamental jewelry", "material culture"],
+        "ground": ["beautification, preciousness, high status", "being treasured and adorned", "aesthetic/social"],
+        "posture": ["emphasizing the contrast between God’s lavish adorning and Jerusalem’s later infidelity", "heightening coming rebuke", "prophetic"],
+        "explanation": "The jewelry functions as a metaphorical representation of God’s honors and gifts bestowed on the city.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 16:12",
+    "deliberation": "Nose-ring, earrings, and 'a splendid crown' continue the woman-as-city allegory. The 'crown' especially is a metaphor for royal status given to Jerusalem (fit for kingship).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַעֲטֶ֥רֶת תִּפְאֶ֖רֶת בְּרֹאשֵֽׁךְ",
+        "english_text": "and a splendid crown on your head.",
+        "target": ["Jerusalem’s royal dignity and central status among nations", "political/spiritual preeminence", "social/political"],
+        "vehicle": ["a beautiful crown placed on a woman’s head", "royal diadem", "monarchical"],
+        "ground": ["sovereignty, honor, elevated position", "royalty and glory", "social/political"],
+        "posture": ["recalling how God exalted Jerusalem to royal prominence", "affirming but ironic in view of later betrayal", "prophetic narrative"],
+        "explanation": "The crown is a metaphor/metonymy for the royal honor and preeminence God gave Jerusalem in the covenant story.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 16:13",
+    "deliberation": "Specific luxuries (gold, silver, fine linen, rich food) symbolize comprehensive prosperity. 'You became fit for royalty' expresses metaphorically Jerusalem’s elevation to quasi-royal status. The material items metonymically represent overall blessing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתִּ֙יפִי֙ בִּמְאֹ֣ד מְאֹ֔ד וַֽתִּצְלְחִ֖י לִמְלוּכָֽה",
+        "english_text": "You grew more and more beautiful, and became fit for royalty.",
+        "target": ["Jerusalem’s flourishing condition under God", "national wellbeing and prestige", "social/political"],
+        "vehicle": ["a woman whose beauty increases until she is suitable for kingship", "exceptionally beautiful royal consort", "familial/royal"],
+        "ground": ["excellence, attractiveness, worthiness of high status", "prosperity and prestige", "aesthetic/social"],
+        "posture": ["highlighting the peak of divine blessing to make the later fall more shocking", "heightening contrast", "prophetic rhetoric"],
+        "explanation": "Jerusalem’s flourishing is pictured as a woman whose beauty becomes fit for royalty; the phrase hyperbolically and metaphorically portrays her exalted status and prosperity.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 16:14",
+    "deliberation": "Jerusalem’s 'name' going out among the nations is metonymy for fame or reputation. Her beauty is 'perfect' through the splendor God put on her—still within the woman-city metaphor, but here focused on renown. No simile or explicit hyperbole beyond intensification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיֵּ֨צֵא לָ֥ךְ שֵׁ֛ם בַּגּוֹיִ֖ם בְּיׇפְיֵ֑ךְ כִּ֣י כָּלִ֣יל ה֗וּא בַּהֲדָרִי֙ אֲשֶׁר־שַׂ֣מְתִּי עָלַ֔יִךְ",
+        "english_text": "Your beauty won you fame among the nations, for it was perfected through the splendor that I set upon you",
+        "target": ["Jerusalem’s international reputation", "collective esteem of the city", "social/political"],
+        "vehicle": ["a woman whose beauty spreads her reputation abroad", "famous beauty", "social/aesthetic"],
+        "ground": ["public admiration, widespread renown based on visible glory", "magnificence recognized by others", "social"],
+        "posture": ["crediting God as the source of Jerusalem’s perfected beauty while preparing to indict her pride", "ironic-anticipatory", "prophetic"],
+        "explanation": "Her 'name' going out is metonymy for reputation, and the perfected beauty continues the metaphor of Jerusalem as a splendidly adorned woman celebrated among nations.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 16:15",
+    "deliberation": "Explicitly shifts to the 'whoring' metaphor: trusting in beauty, 'playing the whore' on her fame, and 'pouring out' whorings on every passerby. This is sexual language used figuratively for idolatry and political promiscuity. 'Every passerby' is broad hyperbole for many partners.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתִּבְטְחִ֣י בְיׇפְיֵ֔ךְ וַתִּזְנִ֖י עַל־שְׁמֵ֑ךְ וַתִּשְׁפְּכִ֧י אֶת־תַּזְנוּתַ֛יִךְ עַל־כׇּל־עוֹבֵ֖ר",
+        "english_text": "But confident in your beauty and fame, you played the whore: you lavished your favors on every passerby",
+        "target": ["Jerusalem’s idolatrous practices and foreign alliances", "national spiritual-political unfaithfulness", "theological/political"],
+        "vehicle": ["a beautiful woman prostituting herself to every man who passes by", "promiscuous prostitute", "sexual/social"],
+        "ground": ["exploiting attractiveness, unfaithfulness, promiscuity, indiscriminate partners", "betrayal of an exclusive relationship", "ethical/relational"],
+        "posture": ["strongly condemning Jerusalem’s use of God-given beauty for spiritual adultery", "indignant and graphic", "prophetic invective"],
+        "explanation": "Sexual whoring language metaphorically represents Jerusalem’s idolatry and courting of many nations; 'every passerby' is hyperbole for many indiscriminate partners.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 16:16",
+    "deliberation": "She takes her garments to make 'tapestried high places' and 'fornicates on them.' This uses the whore metaphor for idolatrous worship locations, with clothing standing metonymically for God’s gifts misused.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַתִּקְחִ֣י מִבְּגָדַ֗יִךְ וַתַּֽעֲשִׂי־לָךְ֙ בָּמ֣וֹת טְלֻא֔וֹת וַתִּזְנִ֖י עֲלֵיהֶ֑ם",
+        "english_text": "You even took some of your cloths and made yourself tapestried platforms and fornicated on them.",
+        "target": ["Jerusalem’s construction and use of idolatrous shrines", "cultic practices", "religious"],
+        "vehicle": ["a prostitute using her own fine garments to prepare beds for fornication", "ornamented beds for sexual acts", "domestic/sexual"],
+        "ground": ["misuse of privileged gifts, deliberate preparation for illicit unions", "self-financed infidelity", "ethical/religious"],
+        "posture": ["exposing the perversity of taking God-given adornments to create sites of spiritual adultery", "shocking, accusatory", "prophetic"],
+        "explanation": "Garments given by God are used to make decorated high places where she 'fornicates', a metaphor for idolatrous worship; the clothing metonymically stands for divine blessings turned to sin.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 16:17",
+    "deliberation": "She makes 'male images' from gold and silver and 'whores' with them. This is vivid sexual metaphor for idolatry: phallic idols as illicit lovers. The precious metals again metonymically stand for God’s provisions twisted into idolatrous objects.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַתַּעֲשִׂי־לָ֖ךְ צַלְמֵ֣י זָכָ֑ר וַתִּזְנִי־בָֽם",
+        "english_text": "and you made yourself phallic images and fornicated with them.",
+        "target": ["Jerusalem’s relation to idols fashioned from God’s gifts", "idolatrous devotion", "religious"],
+        "vehicle": ["a woman engaging in sexual acts with male images/phallic figures", "sexual union with lifeless statues", "sexual/body"],
+        "ground": ["perversion of intimacy, one-sided devotion to something lifeless, obscene misuse", "spiritual adultery and degradation", "ethical/religious"],
+        "posture": ["ridiculing and condemning idolatry by sexualizing the relationship to idols", "mocking, scornful", "prophetic satire"],
+        "explanation": "Treating idols as sexual partners, she 'fornicates with them'—a metaphor and personification that casts idolatry as obscene adultery with lifeless images made from God’s own silver and gold.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 16:18",
+    "deliberation": "She covers the idols with embroidered clothes and offers 'my oil and my incense.' The sexual metaphor is implicit from the preceding verses; here the focus is on misdirected cultic offerings—God’s gifts used in idolatrous worship, with 'my oil/incense' metonymic for legitimate worship resources.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְשַׁמְנִי֙ וּקְטׇרְתִּ֔י נָתַ֖תְּ לִפְנֵיהֶֽם",
+        "english_text": "and you set My oil and My incense before them.",
+        "target": ["proper worship and gifts due to YHWH", "cultic devotion", "religious"],
+        "vehicle": ["oil and incense placed before idols", "cultic offerings", "ritual"],
+        "ground": ["diverting what belongs to God to other objects of devotion", "sacrilegious misappropriation", "ethical/religious"],
+        "posture": ["underscoring the betrayal involved in taking divine resources and dedicating them to idols", "indignant", "prophetic"],
+        "explanation": "God’s oil and incense metonymically represent rightful worship; placing them before idols continues the adultery/whoring metaphor as misdirected devotion.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 16:19",
+    "deliberation": "Her food (flour, oil, honey) given by God is offered to idols 'for a pleasing odor.' This transfers sacrificial terminology (a 'pleasing odor' normally for God) to idolatrous rites. These items metonymically represent God’s provisions; the whole continues the metaphor of giving marital resources to lovers.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּנְתַתִּ֧יהוּ לִפְנֵיהֶ֛ם לְרֵ֥יחַ נִיחֹ֖חַ",
+        "english_text": "you set it before them for a pleasing odor.",
+        "target": ["idolatrous sacrifices and offerings of Jerusalem", "cultic misdirected worship", "religious"],
+        "vehicle": ["sacrificial food ascending as a 'pleasing odor' to gods", "accepted sacrifice", "ritual/sensory"],
+        "ground": ["seeking approval and favor from idols with what God provided", "misplaced devotion and gratitude", "ethical/religious"],
+        "posture": ["ironizing official sacrificial language by applying it to offerings to idols", "sarcastic-accusatory", "prophetic"],
+        "explanation": "Using standard sacrificial language ('pleasing odor') for offerings to idols personifies them as recipients of worship and extends the metaphor of unfaithful giving of God’s gifts to other lovers.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 16:20",
+    "deliberation": "Children 'born to Me' are sacrificed 'to them for food.' Literally this refers to child sacrifice, but in the allegorical frame, these are 'My children'—God claims ownership. The notion of them as 'food' for idols is a stark metaphor expressing total consumption by the false gods.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַתִּזְבָּחִ֥ים לָהֶ֖ם לֶאֱכ֑וֹל",
+        "english_text": "and sacrificed them to those [images] as food",
+        "target": ["Jerusalem’s offering of her children in child sacrifice", "extreme idolatrous practice", "ethical/religious"],
+        "vehicle": ["feeding living children as food to gods", "sacrificial meal for deities", "ritual/body"],
+        "ground": ["complete giving over of what is most precious, treating children as consumables for idols", "ultimate betrayal and cruelty", "ethical/emotional"],
+        "posture": ["using shocking imagery to condemn the extremity of Jerusalem’s idolatry", "horrified, denunciatory", "prophetic"],
+        "explanation": "Children are depicted as 'food' for idols, a hyperbolically graphic metaphor that personifies the idols as consumers and stresses the horror of child sacrifice.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 16:21",
+    "deliberation": "God calls them 'My children' whom she slaughtered and 'gave them in passing them over to them.' 'Passing them over' alludes to the cult of Molech; the metaphorical ground is the transfer of God’s own children to another power as if through fire, continuing the adultery/treason motif.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַֽתִּשְׁחֲטִ֖י אֶת־בָּנָ֑י וַֽתִּתְּנִ֔ים בְּהַעֲבִ֥יר אוֹתָ֖ם לָהֶֽם",
+        "english_text": "you slaughtered My children and presented them as offerings to them!",
+        "target": ["covenant children of Israel offered in pagan rites", "community’s future and covenant line", "theological/social"],
+        "vehicle": ["slaughtered offspring belonging to God, transferred to another", "sacrificial victims to rival claimants", "cultic/forensic"],
+        "ground": ["ultimate disloyalty, giving what is God’s own to others, bloodguilt", "treason and murder", "ethical/theological"],
+        "posture": ["highlighting the enormity of calling them 'My children' to intensify the sense of betrayal", "deeply accusatory", "prophetic"],
+        "explanation": "By calling the victims 'My children', God stresses the covenant relationship; their slaughter and 'passing over' to other gods continues the metaphor of adultery as treason.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 16:22",
+    "deliberation": "Reiterates 'days of your youth' and 'naked and bare, wallowing in your blood.' This recalls earlier metaphor of the abandoned infant and uses those concrete images to rebuke forgetfulness. No new figure beyond that recalled allegory.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בִּֽהְיוֹתֵךְ֙ עֵירֹ֣ם וְעֶרְיָ֔ה מִתְבּוֹסֶ֥סֶת בְּדָמֵ֖ךְ הָיִֽית",
+        "english_text": "when you were naked and bare, and lay wallowing in your blood.",
+        "target": ["Jerusalem’s early helpless, unadorned, endangered condition", "national beginnings", "historical/theological"],
+        "vehicle": ["a naked infant wallowing in its own blood", "exposed, bleeding baby", "body/life"],
+        "ground": ["shame, vulnerability, mortal danger, lack of protection", "depth of need and dependence", "emotional/existential"],
+        "posture": ["shaming Jerusalem for forgetting the extremity of her former misery despite God’s rescue", "rebuking", "prophetic"],
+        "explanation": "The naked, bleeding infant image is again used metaphorically to represent Jerusalem’s original destitution, which she has failed to remember.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 16:23",
+    "deliberation": "This verse is mostly transitional, summing up 'after all your wickedness' and pronouncing 'woe, woe to you.' 'Woe' is a prophetic lament/interjection, not itself a metaphor; no additional figurative imagery appears here beyond the larger context.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 16:24",
+    "deliberation": "She builds for herself a 'gav' and a 'ramah' in every street—terms for cultic platforms/high places that are part of the adultery/idolatry metaphor. The structures themselves are literal in the story, but function collectively as symbols of shameless public prostitution/idolatry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַתִּבְנִי־לָ֖ךְ גָּ֑ב וַתַּעֲשִׂי־לָ֥ךְ רָמָ֖ה בְּכׇל־רְחֽוֹב",
+        "english_text": "you built yourself an eminence and made yourself a mound in every square.",
+        "target": ["Jerusalem’s proliferation of idolatrous/prostitutional sites", "public idolatry and lewdness", "religious/social"],
+        "vehicle": ["elevated platforms/mounds set up all over a city", "high places/brothel-like stands", "architectural"],
+        "ground": ["brazenly public display, omnipresence of sin, deliberate preparation for illicit acts", "shamelessness and ubiquity", "ethical/social"],
+        "posture": ["emphasizing the wide spread and public visibility of Jerusalem’s idolatry/prostitution", "indignant, accusatory", "prophetic"],
+        "explanation": "The 'eminence' and 'mound' are cultic structures that metonymically and metaphorically represent public, shameless idolatry and spiritual prostitution everywhere in the city.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 16:25",
+    "deliberation": "Explicit sexual metaphor: 'you spread your legs to every passerby' for whoredom. Also 'you sullied your beauty'—marring moral/spiritual beauty. 'Every passerby' is hyperbolic. The mound at every crossroads continues public-brothel imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתְּתַֽעֲבִי֙ אֶת־יׇפְיֵ֔ךְ וַתְּפַשְּׂקִ֥י אֶת־רַגְלַ֖יִךְ לְכׇל־עוֹבֵ֑ר",
+        "english_text": "you sullied your beauty and spread your legs to every passerby",
+        "target": ["Jerusalem’s idolatrous alliances and spiritual infidelities", "national unfaithfulness", "theological/political"],
+        "vehicle": ["a woman who defiles her own beauty by brazenly spreading her legs to all men passing by", "shameless street prostitute", "sexual/social"],
+        "ground": ["self-degradation, open availability, indiscriminate partners, loss of honor", "utter promiscuity and shame", "ethical/relational"],
+        "posture": ["maximizing the sense of moral revulsion at Jerusalem’s behavior", "graphic, condemnatory", "prophetic invective"],
+        "explanation": "Spreading the legs to every passerby is a crude sexual metaphor for Jerusalem’s indiscriminate idolatrous and political liaisons; 'sullying beauty' frames it as willful self-degradation.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 16:26",
+    "deliberation": "Egyptians are described as 'neighbors, great of flesh'—likely sexual imagery (large genitals) within the whoring metaphor; 'you multiplied your whoredoms to anger Me' applies the sexual metaphor to specific political-idolatrous engagements with Egypt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַתִּזְנִ֧י אֶל־בְּנֵי־מִצְרַ֛יִם שְׁכֵנַ֖יִךְ גִּדְלֵ֣י בָשָׂ֑ר",
+        "english_text": "You played the whore with your neighbors, the lustful Egyptians (lit. great of flesh)",
+        "target": ["Judah’s political and religious entanglements with Egypt", "foreign alliances and idolatries", "political/religious"],
+        "vehicle": ["sex with well-endowed neighbors characterized by large flesh", "sexually potent lovers", "sexual/body"],
+        "ground": ["attraction to perceived power/virility, intense but corrupt desire", "lust-driven reliance on foreign powers", "emotional/political"],
+        "posture": ["mocking Jerusalem’s attraction to Egypt by sexualizing their perceived strength", "scornful, derisive", "prophetic satire"],
+        "explanation": "Calling the Egyptians 'great of flesh' sexualizes and caricatures them as potent lovers; 'playing the whore' with them metaphorically depicts Judah’s alliances and idolatries with Egypt.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 16:27",
+    "deliberation": "God 'stretches out His hand' against her—a common metaphor/anthropomorphism for active judgment. 'Philistine daughters' shocked at her ways is personifying neighboring nations as scandalized women, continuing the sexualized frame.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נָטִ֤יתִי יָדִי֙ עָלַ֔יִךְ",
+        "english_text": "I will stretch out My hand against you",
+        "target": ["God’s act of punishing and restraining Jerusalem", "divine judgment", "theological"],
+        "vehicle": ["a person extending a hand against someone to strike or seize", "hostile physical action", "body/violence"],
+        "ground": ["active opposition, intervention to harm or restrain", "decisive punitive action", "forensic"],
+        "posture": ["depicting God’s judgment in vivid, anthropomorphic terms to make it tangible", "threatening", "prophetic warning"],
+        "explanation": "God’s 'hand' is a metaphorical anthropomorphism; stretching it out 'against' her pictures His active, hostile intervention in judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 16:28",
+    "deliberation": "Again uses 'played the whore with the Assyrians' as sexual metaphor for alliances/idolatry. 'Yet you were not satisfied' personifies lust and uses hyperbolic language for insatiable appetite. No additional distinct image beyond the whoring metaphor applied to Assyria.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתִּזְנִי֙ אֶל־בְּנֵ֣י אַשּׁ֔וּר ... וְגַ֖ם לֹ֥א שָׂבָֽעַתְּ",
+        "english_text": "you also played the whore with the Assyrians … but were still unsated.",
+        "target": ["Judah’s engagement with Assyria for protection/idolatry", "foreign reliance and syncretism", "political/religious"],
+        "vehicle": ["a prostitute taking more lovers yet never feeling satisfied", "insatiable harlot", "sexual/emotional"],
+        "ground": ["ever-increasing, never-fulfilled craving, compulsive unfaithfulness", "spiritual and political addiction", "psychological/ethical"],
+        "posture": ["diagnosing Jerusalem’s behavior as pathologically unfaithful, not merely opportunistic", "condemning", "prophetic"],
+        "explanation": "Whoring with Assyria is another instance of the sexual metaphor for alliances and idolatry; the note of not being 'sated' hyperbolically portrays Jerusalem’s lust as insatiable.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 16:29",
+    "deliberation": "Again 'multiplied your whoredoms' with Chaldea. Chaldea as 'land of traders' hints at economic dependence. The continued whore metaphor plus 'even with this you were not satisfied' repeats the image of insatiable sexual appetite for political-idolatrous partners.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתַּרְבִּ֧י אֶת־תַּזְנוּתֵ֛ךְ אֶל־אֶ֥רֶץ כְּנַ֖עַן כַּשְׂדִּ֑ימָה וְגַם־בְּזֹ֖את לֹ֥א שָׂבָֽעַתְּ",
+        "english_text": "You multiplied your whoredoms with Chaldea … yet even with this you were not satisfied.",
+        "target": ["Judah’s deepening entanglement with Babylon/Chaldea", "foreign dependency/idolatry", "political/religious"],
+        "vehicle": ["a prostitute seeking more clients and still not satisfied", "ever-whoring woman", "sexual"],
+        "ground": ["escalating unfaithfulness without contentment, compulsive behavior", "moral and spiritual addiction", "ethical/psychological"],
+        "posture": ["depicting Jerusalem’s orientation toward foreign powers as pathologically promiscuous", "critical, diagnostic", "prophetic"],
+        "explanation": "The whoring metaphor is applied to Chaldea, and her continued lack of satisfaction hyperbolically conveys compulsive, insatiable unfaithfulness.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 16:30",
+    "deliberation": "God asks 'How sick was your heart' and calls her behavior 'the deeds of a domineering whore.' 'Sick heart' is metaphor for deeply corrupted inner disposition; 'domineering whore' further characterizes Jerusalem within the sexual metaphor as aggressive rather than passive, morally inverted.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מָ֤ה אֲמֻלָה֙ לִבָּתֵ֔ךְ ... מַעֲשֵׂ֥ה אִשָּֽׁה־זוֹנָ֖ה שַׁלָּֽטֶת",
+        "english_text": "How sick was your heart … when you did all those things, the acts of a self-willed whore",
+        "target": ["Jerusalem’s inner moral-spiritual condition", "disposition of the community", "ethical/psychological"],
+        "vehicle": ["a diseased heart; an assertive, domineering prostitute", "pathological organ; aggressive harlot", "medical/sexual"],
+        "ground": ["deep-seated corruption and willful, domineering pursuit of sin", "inner sickness manifested in brazen unfaithfulness", "ethical/psychological"],
+        "posture": ["morally diagnosing Jerusalem’s core as diseased and aggressively adulterous", "shocked, condemnatory", "prophetic"],
+        "explanation": "The 'sick heart' metaphor depicts Jerusalem’s inner corruption, while calling her a 'self-willed whore' intensifies the adultery metaphor by casting her as aggressively initiating sin.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 16:31",
+    "deliberation": "Again speaks of building a 'gav' and 'ramah' at every crossroad; then, 'you were not like a prostitute, for you scorned hire.' This is ironic reversal: unlike normal prostitutes who are paid, she pays. The comparison to a prostitute is metaphor; the twist is ironic and hyperbolic.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלֹא־הָיִ֥ית כַּזּוֹנָ֖ה לְקַלֵּ֥ס אֶתְנָֽן",
+        "english_text": "Yet you were not like a prostitute, for you spurned fees.",
+        "target": ["Jerusalem’s pattern of unfaithful alliances and idolatries", "behavior of the city", "ethical/religious"],
+        "vehicle": ["a prostitute compared with another woman who refuses payment and instead pays", "inverted harlot", "social/sexual"],
+        "ground": ["behaving worse than a normal prostitute—seeking sin at her own cost rather than for gain", "extreme, irrational unfaithfulness", "ethical/psychological"],
+        "posture": ["using ironic comparison to intensify moral outrage by showing she is worse than ordinary prostitutes", "bitterly ironic", "prophetic satire"],
+        "explanation": "Jerusalem is compared to a prostitute but ironically declared 'not like' one because she rejects fees; the metaphor and ironic contrast portray her as more depraved than common harlots.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Ezekiel 16:32",
+    "deliberation": "Defines her as 'the adulterous wife who takes strangers instead of her husband.' This is a direct metaphor: Jerusalem is an unfaithful wife; 'strangers' stand for foreign gods and nations. No simile (it’s an identification), but it extends the marriage/adultery metaphor clearly.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הָאִשָּׁ֖ה הַמְּנָאָ֑פֶת תַּ֣חַת אִישָׁ֔הּ תִּקַּ֖ח אֶת־זָרִֽים",
+        "english_text": "the adulterous wife who welcomes strangers instead of her husband.",
+        "target": ["Jerusalem’s covenant infidelity to YHWH", "spiritual adultery of the people", "theological"],
+        "vehicle": ["a married woman who replaces her husband with other men", "unfaithful wife", "familial/sexual"],
+        "ground": ["betrayal of exclusive covenant, preferring outsiders to rightful partner", "faithlessness and disloyalty", "ethical/relational"],
+        "posture": ["clarifying the nature of Jerusalem’s sin in stark relational terms", "indicting", "prophetic"],
+        "explanation": "Jerusalem is directly called an adulterous wife, a metaphor that personifies the city and equates idolatry and foreign alliances with marital infidelity to God.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 33,
+    "reference": "Ezekiel 16:33",
+    "deliberation": "States that 'gifts are given to all prostitutes, but you gave gifts to all your lovers, and bribed them.' This continues the inverted-prostitute irony: she pays instead of being paid. It is metaphor (she = prostitute) and contains ironic reversal and hyperbole ('all prostitutes', 'all your lovers').",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְכׇל־זֹנ֖וֹת יִתְּנוּ־נֵ֑דֶה וְאַ֨תְּ נָתַ֤תְּ אֶת־נְדָנַ֙יִךְ֙ לְכׇל־מְאַֽהֲבַ֔יִךְ וַתִּשְׁחֳדִ֣י אוֹתָ֗ם",
+        "english_text": "Gifts are made to all prostitutes, but you made gifts to all your lovers, and bribed them to come to you",
+        "target": ["Jerusalem’s solicitations of foreign powers and idols", "foreign entanglements and worship", "political/religious"],
+        "vehicle": ["a prostitute who reverses roles by paying her clients", "paying harlot", "economic/sexual"],
+        "ground": ["unnatural inversion of expected roles, eagerness to sin even at financial loss", "extreme willingness to betray covenant", "ethical/psychological"],
+        "posture": ["using ironic economic reversal to heighten the absurdity and wickedness of Jerusalem’s behavior", "sarcastic, stinging", "prophetic satire"],
+        "explanation": "By paying her lovers instead of being paid, Jerusalem is portrayed as an inverted prostitute—a metaphor that uses irony and hyperbole to underscore her excessive, irrational unfaithfulness.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 34,
+    "reference": "Ezekiel 16:34",
+    "deliberation": "Summarizes: 'in you it was the opposite from other women in your whorings.' This explicitly names the inversion as 'the opposite,' reinforcing the metaphor of prostitution and the ironic reversal of normal patterns. No new imagery; it’s meta-commentary on the previous metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַיְהִי־בָ֨ךְ הֵ֤פֶךְ מִן־הַנָּשִׁים֙ בְּתַזְנוּתַ֔יִךְ",
+        "english_text": "You were the opposite of other women in your whorings",
+        "target": ["Jerusalem’s pattern of unfaithfulness", "collective behavior of the city", "ethical/religious"],
+        "vehicle": ["a woman whose behavior is the exact reverse of all other prostitutes", "utterly abnormal harlot", "social/sexual"],
+        "ground": ["exceeding the bounds of typical sin, an extreme and unique perversity", "total inversion of expected norms", "ethical"],
+        "posture": ["emphasizing Jerusalem’s extraordinary corruption by claiming she is the opposite of others", "condemnatory, hyperbolic", "prophetic"],
+        "explanation": "Calling her 'the opposite' of other women (prostitutes) hyperbolically intensifies the prostitution metaphor, marking Jerusalem’s unfaithfulness as uniquely perverse.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 35,
+    "reference": "Ezekiel 16:35",
+    "deliberation": "Vocative 'O whore, hear the word of YHWH.' The address 'whore' is itself metaphorical for Jerusalem as the unfaithful city; no additional imagery beyond the direct label and the earlier noted 'word of YHWH' formula.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָכֵ֣ן זוֹנָ֔ה שִׁמְעִ֖י דְּבַר־יְהוָֽה",
+        "english_text": "Now, O whore, hear the word of GOD.",
+        "target": ["Jerusalem as the covenant community", "the city/people", "social/theological"],
+        "vehicle": ["a prostitute addressed directly", "whore", "sexual/social"],
+        "ground": ["persistent, flagrant unfaithfulness to a rightful partner", "moral degradation and infidelity", "ethical"],
+        "posture": ["publicly shaming Jerusalem through this label before announcing judgment", "confrontational", "prophetic"],
+        "explanation": "Calling Jerusalem 'whore' is a metaphor that personifies the city as an unfaithful prostitute, summing up the extended adultery imagery.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 36,
+    "reference": "Ezekiel 16:36",
+    "deliberation": "'Your bronze has been poured out' (likely 'your shamelessness' / 'your lust') and 'your nakedness exposed' to lovers and idols, along with 'blood of your children.' Exposed nakedness continues the sexual/shame metaphor; 'blood of your children' is metonymic for child sacrifice. The core figure is public exposure as punishment for whoring.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "יַ֣עַן הִשָּׁפֵ֤ךְ נְחֻשְׁתֵּךְ֙ וַתִּגָּלֶ֣ה עֶרְוָתֵ֔ךְ בְּתַזְנוּתַ֖יִךְ",
+        "english_text": "Because of your brazen effrontery, offering your nakedness to your lovers for whoring",
+        "target": ["Jerusalem’s shameless openness in idolatry and alliances", "spiritual-moral brazenness", "ethical/religious"],
+        "vehicle": ["a woman whose nakedness is exposed and offered to many lovers", "shameless nude prostitute", "sexual/body"],
+        "ground": ["lack of modesty or restraint, public exposure, readiness for illicit relations", "bold, shameless sin", "ethical"],
+        "posture": ["condemning the brazenness of Jerusalem’s sin by emphasizing exposed nakedness", "indignant", "prophetic"],
+        "explanation": "Her 'nakedness' exposed to lovers is a metaphor for shameless, public spiritual adultery; the 'blood of your children' mentioned alongside evokes child sacrifice as part of this abominable worship.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 37,
+    "reference": "Ezekiel 16:37",
+    "deliberation": "God will 'gather all your lovers' and 'expose your nakedness to them' so they see it. This continues the sexual/shame metaphor; public stripping as judicial humiliation for an adulteress, here applied to Jerusalem’s political partners turned accusers.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְגִלֵּיתִ֤י עֶרְוָתֵךְ֙ אֲלֵהֶ֔ם וְרָא֖וּ אֶת־כׇּל־עֶרְוָתֵֽךְ",
+        "english_text": "I will expose your nakedness to them, and they shall see all your nakedness.",
+        "target": ["Jerusalem’s disgrace, guilt, and vulnerability before nations", "political-spiritual shame", "social/theological"],
+        "vehicle": ["a woman stripped naked before all her former lovers", "judicially exposed adulteress", "sexual/legal"],
+        "ground": ["total humiliation, exposure of hidden shame to those once involved, reversal of roles", "public disgrace", "social/ethical"],
+        "posture": ["portraying God’s judgment as shaming the unfaithful city before her former allies", "retributive, dramatic", "prophetic"],
+        "explanation": "Exposing 'nakedness' is a metaphor for public humiliation and full disclosure of guilt before the very nations with whom Jerusalem committed spiritual adultery.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 38,
+    "reference": "Ezekiel 16:38",
+    "deliberation": "God will judge her with 'judgments of adulteresses and shedders of blood' and 'give you blood of wrath and jealousy.' The legal phrase extends the adulteress metaphor; 'blood of wrath and jealousy' uses blood as metonymy for violent punishment moved by divine jealous anger.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּשְׁפַטְתִּיךְ֙ מִשְׁפְּטֵ֣י נֹאֲפ֔וֹת וְשֹׁפְכֹ֖ת דָּ֑ם וּנְתַתִּ֕יךְ דַּ֥ם חֵמָ֖ה וְקִנְאָֽה",
+        "english_text": "I will inflict upon you the punishment of women who commit adultery and murder, and I will direct bloody and impassioned fury against you.",
+        "target": ["God’s punitive action against Jerusalem", "divine judgment", "theological/forensic"],
+        "vehicle": ["legal penalties for adulterous, murderous women; blood associated with wrath and jealousy", "capital punishment imagery", "legal/violent"],
+        "ground": ["severity and fittingness of punishment, driven by jealous concern for covenant fidelity", "retributive justice", "ethical/theological"],
+        "posture": ["framing Jerusalem’s fate as the just penalty for an adulterous murderer, invoking powerful emotional language of jealousy and wrath", "solemn and threatening", "prophetic"],
+        "explanation": "Judging Jerusalem by 'judgments of adulteresses and murderers' extends the adulteress metaphor; 'blood of wrath and jealousy' uses blood metonymically for violent, passionate punishment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 39,
+    "reference": "Ezekiel 16:39",
+    "deliberation": "Her lovers will tear down her 'eminence' and 'mounds,' strip her clothes and take jewelry, leaving her 'naked and bare.' This pictures conquering nations, but in the allegory, it’s the stripping of a prostitute as punishment—metaphor for political collapse and loss of glory.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהִפְשִׁ֤יטוּ אוֹתָךְ֙ בְּגָדַ֔יִךְ וְלָקְח֖וּ כְּלֵ֣י תִפְאַרְתֵּ֑ךְ וְהִנִּיח֖וּךְ עֵירֹ֥ם וְעֶרְיָֽה",
+        "english_text": "they shall strip you of your clothing and take away your dazzling jewels, leaving you naked and bare.",
+        "target": ["Jerusalem’s loss of protection, wealth, and honor through conquest", "political and religious despoiling", "social/political"],
+        "vehicle": ["a woman/prostitute publicly stripped of garments and ornaments", "stripped harlot", "sexual/social"],
+        "ground": ["total deprivation of honor and security, shaming exposure", "complete humiliation and dispossession", "social/ethical"],
+        "posture": ["depicting the coming destruction as the just unmasking of a whore’s false splendor", "retributive, vivid", "prophetic"],
+        "explanation": "The stripping of clothes and jewelry to leave her naked is a metaphor for Jerusalem’s total humiliation and loss of status at the hands of the nations.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 40,
+    "reference": "Ezekiel 16:40",
+    "deliberation": "A 'crowd' will stone her and thrust her through with swords—imagery paralleling legal execution for adulterous/murderous women, applied to the city. While these might correspond to real siege violence, the legal-stoning imagery clearly continues the adulteress-judgment metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְרָגְמ֥וּ אוֹתָ֖ךְ בָּאָ֑בֶן וּבִתְּק֖וּךְ בְּחַרְבוֹתָֽם",
+        "english_text": "to pelt you with stones and pierce you with their swords.",
+        "target": ["the violent destruction and execution-like judgment on Jerusalem", "city’s downfall", "political/military"],
+        "vehicle": ["stoning and stabbing an adulterous woman by a mob", "public execution", "legal/violent"],
+        "ground": ["collective, lethal punishment, social rejection, finality", "extreme judgment for grave offense", "ethical/forensic"],
+        "posture": ["equating the city’s destruction with the legal execution of a condemned adulteress", "grim, juridical", "prophetic"],
+        "explanation": "Stoning and stabbing by a crowd applies the execution imagery of an adulteress to Jerusalem, metaphorically characterizing the city’s fall as judicial killing.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 41,
+    "reference": "Ezekiel 16:41",
+    "deliberation": "They will burn her houses and carry out judgments 'in the sight of many women' and thus 'I will put a stop to your whoring.' The 'many women' are other cities/nations; this is personification of cities as women and continues the prostitution metaphor for idolatry/alliances being halted by judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְעָשׂוּ־בָ֣ךְ שְׁפָטִ֔ים לְעֵינֵ֖י נָשִׁ֣ים רַבּ֑וֹת וְהִשְׁבַּתִּיךְ֙ מִזּוֹנָ֔ה",
+        "english_text": "execute punishment upon you in the sight of many women; thus I will put a stop to your whoring",
+        "target": ["Jerusalem’s public judgment before neighboring nations and the end of her idolatrous dealings", "inter-national spectacle and cessation of sin", "social/political"],
+        "vehicle": ["a whore punished before many women, after which her prostitution ceases", "public shaming among peers", "social/sexual"],
+        "ground": ["deterrent shame, example to others, forced cessation of illicit activity", "didactic and punitive function of judgment", "ethical/social"],
+        "posture": ["presenting Jerusalem’s fate as a cautionary spectacle to surrounding nations (women)", "didactic, retributive", "prophetic"],
+        "explanation": "Other cities/nations are personified as 'many women' watching the punished adulteress; stopping her 'whoring' is metaphor for ending idolatry and corrupt alliances through judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 42,
+    "reference": "Ezekiel 16:42",
+    "deliberation": "God will 'satisfy My fury in you,' 'My jealousy shall depart from you,' 'I will be calm.' These are anthropopathic metaphors, attributing human emotions and their resolution to God; His wrath is pictured like a passion that can be exhausted and leave Him quiet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַהֲנִחֹתִ֤י חֲמָתִי֙ בָּ֔ךְ וְסָ֥רָה קִנְאָתִ֖י מִמֵּ֑ךְ וְשָׁ֣קַטְתִּ֔י",
+        "english_text": "When I have satisfied My fury upon you and My rage has departed from you, then I will be tranquil",
+        "target": ["the completion and cessation of God’s punitive judgment", "divine emotional stance post-judgment", "theological"],
+        "vehicle": ["an angry, jealous person whose fury is vented and then calms down", "cooling of human anger", "emotional/psychological"],
+        "ground": ["intensity and then cessation of hostility, transition from agitated to peaceful state", "closure after punishment", "emotional"],
+        "posture": ["communicating in human emotional terms the idea that judgment will reach a definite endpoint", "reassuring yet solemn", "prophetic"],
+        "explanation": "God’s fury and jealousy are depicted in human emotional terms that can be 'satisfied' and 'depart', a metaphorical anthropopathism describing the completion of judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 43,
+    "reference": "Ezekiel 16:43",
+    "deliberation": "Mentions not remembering the days of youth and God 'putting your way upon your head.' The latter is idiomatic/metaphorical for retribution—having one’s conduct recoil on oneself. 'Did you not commit lewdness on top of all your abominations?' uses 'on top of' as stacking image for cumulative guilt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "גַּם־אֲנִ֨י הֵ֜א דַּרְכֵּ֣ךְ בְּרֹ֣אשׁ נָתַ֗תִּי",
+        "english_text": "I will pay you back for your conduct (lit. I put your way on your head)",
+        "target": ["the consequences of Jerusalem’s behavior", "retributive outcome", "ethical/theological"],
+        "vehicle": ["placing one’s own path/way upon one’s head", "burden falling back on the person", "spatial/body"],
+        "ground": ["having one’s actions return upon oneself as burden or harm", "poetic justice", "ethical"],
+        "posture": ["stressing the measure-for-measure nature of the coming judgment", "retributive, emphatic", "prophetic"],
+        "explanation": "The idiom 'put your way on your head' metaphorically expresses retributive justice: Jerusalem’s own conduct will come back down upon her as punishment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 44,
+    "reference": "Ezekiel 16:44",
+    "deliberation": "Cites a proverb: 'Like mother, like daughter.' This is a simile-based proverb, mapping Jerusalem’s behavior to that of her 'mother' (v.3,45) and functioning figuratively, not about biological likeness but moral resemblance and inherited patterns of sin.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כְּאִמָּ֖ה בִּתָּֽהּ",
+        "english_text": "Like mother, like daughter.",
+        "target": ["Jerusalem’s character and behavior", "moral/spiritual traits of the city", "ethical"],
+        "vehicle": ["a daughter resembling her mother", "family resemblance", "social/familial"],
+        "ground": ["continuity and likeness in behavior and disposition across generations", "inherited patterns of evil", "ethical/social"],
+        "posture": ["using a common proverb to underscore Jerusalem’s likeness to her corrupt 'mother' (Canaanite ancestry)", "didactic, reproachful", "prophetic wisdom"],
+        "explanation": "The proverb uses familial simile to assert that Jerusalem behaves just like her morally corrupt 'mother,' continuing the parentage metaphor of v.3.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 45,
+    "reference": "Ezekiel 16:45",
+    "deliberation": "Continues the familial metaphor: 'you are the daughter of your mother' who loathed husband and children; 'sister of your sisters' with similar loathing; 'your mother was a Hittite and your father an Amorite.' These are metaphors for moral-ethnic character, not literal genealogy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בַּת־אִמֵּ֣ךְ אַ֔תְּ גֹּעֶ֥לֶת אִישָׁ֖הּ וּבָנֶ֑יהָ ... אִמְּכֶ֣ן חִתִּ֔ית וַאֲבִיכֶ֖ן אֱמֹרִֽי",
+        "english_text": "You are the daughter of your mother, who rejected her husband and children… your mother was a Hittite and your father an Amorite.",
+        "target": ["Jerusalem’s moral and spiritual lineage and kinship with other wicked cities", "identity and alliances", "ethical/theological"],
+        "vehicle": ["family relations (mother, father, sisters) among Hittite and Amorite stock", "corrupt family tree", "social/ethnic"],
+        "ground": ["shared pattern of rejecting rightful partners and children, continuity of Canaanite-like sin", "moral-ethnic resemblance and solidarity", "ethical/social"],
+        "posture": ["shaming Jerusalem by placing her within a family of despised, unfaithful peoples", "accusatory", "prophetic"],
+        "explanation": "Calling Jerusalem the daughter of a Hittite mother and Amorite father with sisters who despise husbands/children is a metaphorical family portrait expressing her Canaanite-like moral character and alliances.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 46,
+    "reference": "Ezekiel 16:46",
+    "deliberation": "Samaria is called the 'elder sister' and Sodom the 'younger sister.' This is personification and metaphor of cities/nations as sisters in a family, spatially located left/right; their 'daughters' are dependent towns. It expresses kinship of behavior and fate rather than biology.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַאֲחוֹתֵ֨ךְ הַגְּדוֹלָ֤ה שֹׁמְרוֹן֙ הִ֣יא וּבְנוֹתֶ֔יהָ ... וַאֲחוֹתֵ֞ךְ הַקְּטַנָּ֣ה ... סְדֹ֖ם וּבְנוֹתֶֽיהָ",
+        "english_text": "Your elder sister was Samaria, who lived with her daughters to the north of you; your younger sister was Sodom, who lived with her daughters to the south of you.",
+        "target": ["relationship between Jerusalem, Samaria, and Sodom", "comparative moral/historical positioning", "historical/theological"],
+        "vehicle": ["a family of sisters (older, younger) and their daughters", "sibling group", "social/familial"],
+        "ground": ["shared traits and destinies, relative seniority and junior status, neighborhood closeness", "kinship in sin and judgment", "ethical/historical"],
+        "posture": ["placing Jerusalem into a morally notorious sisterhood to emphasize her likeness and responsibility", "shaming, comparative", "prophetic"],
+        "explanation": "Samaria and Sodom are personified as Jerusalem’s sisters with daughters (their cities), a metaphor highlighting shared moral character and related fates.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 47,
+    "reference": "Ezekiel 16:47",
+    "deliberation": "States that Jerusalem walked not only in their ways but 'corrupted yourself more than they in all your ways.' 'Walked in their ways' is a common metaphor for adopting behaviors; 'corrupted yourself' personifies moral failure as self-damage, no additional imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹ֤א בְדַרְכֵיהֶן֙ הָלַ֔כְתְּ ... וַתַּשְׁחִ֥תִי מֵהֵ֖ן בְּכׇל־דְּרָכָֽיִךְ",
+        "english_text": "Did you not walk in their ways and practice their abominations? Why, you were almost more corrupt than they in all your ways.",
+        "target": ["Jerusalem’s adoption and surpassing of Sodom and Samaria’s sins", "moral conduct", "ethical/theological"],
+        "vehicle": ["walking in someone’s ways; becoming more corrupt", "path-following and ruining oneself", "spatial/moral"],
+        "ground": ["imitating and then exceeding others’ behaviors, making one’s path worse", "progression in evil", "ethical"],
+        "posture": ["emphasizing that Jerusalem not only imitated but outdid notorious sinners", "sharply condemnatory", "prophetic"],
+        "explanation": "To 'walk in their ways' is a moral metaphor for imitating behavior; 'corrupting yourself more than they' underscores, with hyperbole, Jerusalem’s surpassing wickedness.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 48,
+    "reference": "Ezekiel 16:48",
+    "deliberation": "God swears 'as I live' and states Sodom did not do as Jerusalem did. Primarily a comparison, not a new figure beyond the established sister metaphor. The force is intensification, but language itself is straightforward.",
+    "instances": []
+  },
+  {
+    "verse": 49,
+    "reference": "Ezekiel 16:49",
+    "deliberation": "Lists Sodom’s sin: arrogance, abundance, and failure to support poor and needy. 'Hand of poor and needy' is synecdoche/metonymy; 'supporting hand' is a bodily metaphor for practical aid. Otherwise enumeration is literal moral description.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְיַד־עָנִ֥י וְאֶבְי֖וֹן לֹ֥א הֶחֱזִֽיקָה",
+        "english_text": "yet she did not support the hand of the poor and the needy.",
+        "target": ["care and aid owed to the poor and needy", "social justice actions", "ethical/social"],
+        "vehicle": ["supporting someone’s hand", "helping by strengthening a hand", "body/action"],
+        "ground": ["providing practical assistance and empowerment to those in need", "active solidarity", "social/ethical"],
+        "posture": ["emphasizing tangible neglect of the vulnerable as a core sin of Sodom", "didactic, moralizing", "prophetic"],
+        "explanation": "The 'hand' of the poor is metonymy for their capacity and need; to 'support' that hand is a metaphorical idiom for giving active help.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 50,
+    "reference": "Ezekiel 16:50",
+    "deliberation": "They 'became haughty' and 'did abomination before Me' and God 'removed them as I saw.' These are conventional moral and judicial terms; 'removed' could metaphorically mean annihilation, but it’s standard covenantal language. No distinct, vivid new figurative image here.",
+    "instances": []
+  },
+  {
+    "verse": 51,
+    "reference": "Ezekiel 16:51",
+    "deliberation": "Samaria did not sin 'even half' Jerusalem’s sins—hyperbolic comparison. 'You made your sisters appear righteous' is an ironic metaphor: by comparison, their notorious wickedness looks righteous. No new imagery besides this comparative irony.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַתְּצַדְּקִי֙ אֶת־אֲחוֹתַ֔יִךְ בְּכׇל־תּוֹעֲבֹתַ֖יִךְ",
+        "english_text": "by all the abominations that you committed you made your sisters look righteous.",
+        "target": ["moral standing of Sodom and Samaria relative to Jerusalem", "comparative righteousness", "ethical/theological"],
+        "vehicle": ["declaring someone righteous by contrast", "forensic acquittal imagery", "legal"],
+        "ground": ["extreme guilt of one party makes others appear relatively innocent", "comparative vindication", "ethical"],
+        "posture": ["using ironic legal language to shame Jerusalem by saying she 'justifies' Sodom and Samaria", "sarcastic, accusatory", "prophetic"],
+        "explanation": "Jerusalem’s greater abominations metaphorically 'justify' her sisters—that is, make them look righteous by comparison—an ironic legal metaphor and hyperbolic comparison.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 52,
+    "reference": "Ezekiel 16:52",
+    "deliberation": "She must 'bear your disgrace' and 'they appear righteous from you.' Bearing shame is a metaphor of carrying a load; again her worse sin makes sisters 'righteous' by comparison. The central figure is the burden/shame metaphor and comparative irony.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "גַּם־אַ֣תְּ שְׂאִ֣י כְלִמָּתֵ֗ךְ ... תִּצְדַּ֣קְנָה מִמֵּ֑ךְ",
+        "english_text": "Truly, you must bear the disgrace … they appear righteous in comparison to you.",
+        "target": ["Jerusalem’s shame and its effect on the evaluation of other cities", "moral standing", "ethical/theological"],
+        "vehicle": ["carrying disgrace as a burden; others being 'justified' over against you", "load-bearing and legal acquittal", "physical/legal"],
+        "ground": ["owning one’s shame as a heavy responsibility; others seem vindicated when one is worse", "moral burden and comparative vindication", "ethical"],
+        "posture": ["urging Jerusalem to accept her disgrace while highlighting the bitter irony of making Sodom/Samaria look righteous", "admonitory and ironic", "prophetic"],
+        "explanation": "To 'bear disgrace' is a metaphor for experiencing shame as a burden; again Jerusalem’s greater sin makes her sisters seem righteous, an ironic, hyperbolic evaluation.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 53,
+    "reference": "Ezekiel 16:53",
+    "deliberation": "God will 'turn the captivity/restore the fortunes' of Sodom, Samaria, and Jerusalem. The idiom for restoration is a set phrase; within this context it anticipates reversal but is not strongly pictorial. No vivid new metaphor beyond that idiom.",
+    "instances": []
+  },
+  {
+    "verse": 54,
+    "reference": "Ezekiel 16:54",
+    "deliberation": "Again 'you shall bear your disgrace and be ashamed.' As in v.52, bearing disgrace is metaphor for carrying shame as a burden. No additional imagery besides this repeated metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְמַ֙עַן֙ תִּשְׂאִ֣י כְלִמָּתֵ֔ךְ",
+        "english_text": "Thus you shall bear your disgrace",
+        "target": ["Jerusalem’s experience of shame over past deeds", "moral/emotional state", "ethical/psychological"],
+        "vehicle": ["carrying disgrace like a load", "burden-bearing", "physical"],
+        "ground": ["ongoing weight and inescapability of shame", "enduring consequences of sin", "ethical/emotional"],
+        "posture": ["framing shame as something Jerusalem must carry as part of her restoration process", "sober, admonitory", "prophetic"],
+        "explanation": "Disgrace is pictured as a burden to be borne, a metaphor for the lasting weight of shame Jerusalem must carry.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 55,
+    "reference": "Ezekiel 16:55",
+    "deliberation": "Speaks of Sodom, Samaria, and Jerusalem 'returning to their former state.' This is conceptual but not particularly figurative—it indicates restoration. No overt metaphor or simile beyond temporal-reversal language.",
+    "instances": []
+  },
+  {
+    "verse": 56,
+    "reference": "Ezekiel 16:56",
+    "deliberation": "Sodom was not 'for a report' in your mouth in your day of pride. 'For a report'/'byword' has faint metonymic sense (reputation as topic of speech), but the verse mostly notes attitude; no strong figurative image beyond speech as container of reputation.",
+    "instances": []
+  },
+  {
+    "verse": 57,
+    "reference": "Ezekiel 16:57",
+    "deliberation": "Daughters of Aram and Philistines 'despising you all around' and 'time of your reproach' treat neighboring peoples as mocking women, echoing the earlier 'women' language. Reproach 'surrounding' Jerusalem personifies shame as environment; the primary figure is nations as derisive daughters.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כְּמ֗וֹ עֵ֚ת חֶרְפַּ֣ת בְּנוֹת־אֲרָ֔ם ... בְּנ֣וֹת פְּלִשְׁתִּ֑ים הַשָּׁאט֥וֹת אוֹתָ֖ךְ מִסָּבִֽיב",
+        "english_text": "the time of the mockery of the daughters of Aram and all her neighbors, the daughters of Philistia who jeer at you on every side.",
+        "target": ["hostile neighboring nations’ attitude toward Jerusalem", "international contempt", "social/political"],
+        "vehicle": ["daughters of nations jeering and mocking a shamed woman", "mocking women", "social/gendered"],
+        "ground": ["public scorn, derision, humiliating reputation", "loss of honor in others’ eyes", "social"],
+        "posture": ["showing that the one who mocked others now becomes the object of surrounding nations’ derision", "retributive, ironic", "prophetic"],
+        "explanation": "Aram and Philistia are personified as 'daughters' who mock Jerusalem, continuing the depiction of cities as women and portraying Jerusalem as surrounded by female scorners.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 58,
+    "reference": "Ezekiel 16:58",
+    "deliberation": "Again: 'You have borne your lewdness and your abominations.' The 'bearing' metaphor (carrying as a burden) is reused for guilt and shame. No other new imagery in this short verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶת־זִמָּתֵ֥ךְ וְאֶת־תּוֹעֲבוֹתַ֖יִךְ אַ֣תְּ נְשָׂאתִ֑ים",
+        "english_text": "You yourself must bear your depravity and your abominations",
+        "target": ["Jerusalem’s responsibility and experience of her sins’ consequences", "guilt and punishment", "ethical/theological"],
+        "vehicle": ["carrying depravity and abominations as a load", "burden-bearing", "physical"],
+        "ground": ["enduring and owning the weight and consequences of sin", "inescapable responsibility", "ethical"],
+        "posture": ["underscoring that Jerusalem cannot escape the weight of what she has done", "solemn", "prophetic"],
+        "explanation": "Lewdness and abominations are pictured as burdens she must carry, a metaphor for bearing guilt and its consequences.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 59,
+    "reference": "Ezekiel 16:59",
+    "deliberation": "God will 'do to you as you have done,' for you 'despised the oath, breaking the covenant.' This is retributive correspondence, but expressed straightforwardly; no distinct metaphor beyond measure-for-measure justice, already seen earlier.",
+    "instances": []
+  },
+  {
+    "verse": 60,
+    "reference": "Ezekiel 16:60",
+    "deliberation": "God will 'remember' the covenant and 'establish' an everlasting covenant. 'Remember' is anthropopathic but standard; 'establish covenant' is legal metaphor of making firm. Given the chapter’s marriage imagery, this also resonates with restoring a broken marriage, though not explicit here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְזָכַרְתִּ֨י אֲנִ֧י אֶת־בְּרִיתִ֛י ... וַהֲקִימוֹתִ֥י לָ֖ךְ בְּרִ֥ית עוֹלָֽם",
+        "english_text": "Nevertheless, I will remember the covenant I made with you … and I will establish it with you as an everlasting covenant.",
+        "target": ["God’s faithful commitment to His relationship with Israel", "covenant bond", "theological"],
+        "vehicle": ["a person recalling and solemnly re-establishing a binding agreement", "remembering and confirming a pact", "legal/relational"],
+        "ground": ["continuity of commitment, renewal after breach, firmness over time", "steadfast faithfulness", "ethical/theological"],
+        "posture": ["balancing severe judgment with a promise of renewed, enduring commitment", "gracious, restorative", "prophetic"],
+        "explanation": "God’s 'remembering' and 'establishing' the covenant is anthropopathic/legal metaphor, depicting His unshaken commitment in personal, relational terms.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 61,
+    "reference": "Ezekiel 16:61",
+    "deliberation": "Jerusalem will 'remember your ways and be ashamed'; God will give her sisters as 'daughters.' Remembering ways and feeling shame is cognitive-emotional but not strongly pictorial; sisters as 'daughters' extends the family metaphor, indicating changed hierarchical relationships among peoples.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתִּ֨י אֶתְהֶ֥ן לָ֛ךְ לְבָנ֖וֹת",
+        "english_text": "and I give them to you as daughters",
+        "target": ["future relationship of Sodom and Samaria to restored Jerusalem", "inter-community status", "social/theological"],
+        "vehicle": ["sisters becoming daughters in a family relationship", "family reordering", "social/familial"],
+        "ground": ["change in status, Jerusalem’s restored prominence, inclusion under her care/authority", "reversal and integration", "social/theological"],
+        "posture": ["portraying eschatological realignment of relationships in familial terms", "hopeful, reordering", "prophetic"],
+        "explanation": "Former 'sisters' (other cities) will be given to Jerusalem as 'daughters', extending the family metaphor to depict a future hierarchical yet reconciled relationship.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 62,
+    "reference": "Ezekiel 16:62",
+    "deliberation": "God will 'establish My covenant with you, and you shall know that I am YHWH.' The 'know that I am YHWH' formula is covenantal and experiential, not strongly figurative; covenant-establishing is legal metaphor already noted. No new distinct image here.",
+    "instances": []
+  },
+  {
+    "verse": 63,
+    "reference": "Ezekiel 16:63",
+    "deliberation": "Jerusalem will 'remember and be ashamed' and have 'no more opening of mouth because of your shame' when God makes atonement. 'Opening of mouth' is idiomatic for speaking/defending oneself; shame silencing speech is mild metaphor. Remembering and blushing are emotional but straightforward.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְלֹ֨א יִֽהְיֶה־לָּ֥ךְ עוֹד֙ פִּתְח֣וֹן פֶּ֔ה מִפְּנֵ֖י כְּלִמָּתֵ֑ךְ",
+        "english_text": "you shall be too abashed to open your mouth again because of your shame",
+        "target": ["Jerusalem’s self-justification and speech before God", "defense/apology", "forensic/psychological"],
+        "vehicle": ["having an 'opening of mouth' but losing it due to shame", "silenced speaker", "body/action"],
+        "ground": ["profound shame removes the ability or right to speak in one’s defense", "silence as acknowledgment of guilt", "ethical/psychological"],
+        "posture": ["depicting restored relationship as one in which Jerusalem is forgiven yet permanently humbled", "humbling, restorative", "prophetic"],
+        "explanation": "The idiom 'opening of mouth' for speaking is denied because of shame, a metonymic-idiomatic way to say that Jerusalem will no longer protest or justify herself once God forgives her.",
+        "confidence": 0.88
+      }
+    ]
+  }
+]

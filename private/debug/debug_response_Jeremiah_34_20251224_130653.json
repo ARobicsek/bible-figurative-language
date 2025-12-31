@@ -1,0 +1,473 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 34:1",
+    "deliberation": "Looked for metaphors, hyperbole, and metonymy in the siege description. Most is straightforward narrative, but the phrase 'all the kingdoms of the earth' with 'all the peoples under his sway' is conventional royal hyperbole and not literally exhaustive.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכׇל־מַמְלְכ֣וֹת אֶ֩רֶץ֩ מֶמְשֶׁ֨לֶת יָד֜וֹ וְכׇל־הָעַמִּ֗ים",
+        "english_text": "and all the kingdoms of the earth and all the peoples under his sway",
+        "target": ["The scope of Nebuchadrezzar’s political power", "extent of imperial dominion", "historical-political"],
+        "vehicle": ["\"all the kingdoms of the earth\" and \"all the peoples\"", "totalizing quantity language", "rhetorical/numerical"],
+        "ground": ["Very wide, effectively unrivaled dominance in the region", "exaggerated comprehensiveness", "royal/propagandistic"],
+        "posture": ["Emphasizing the overwhelming threat against Judah", "heightened seriousness of the situation", "prophetic warning"],
+        "explanation": "The expression 'all the kingdoms of the earth' is conventional hyperbole to describe the very broad, though not literally universal, reach of Babylon’s power.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 34:2",
+    "deliberation": "Checked the judgment oracle for metaphor, especially body-part imagery. The key figurative element is the idiom 'give this city into the hand of the king of Babylon', using 'hand' as a metaphor/metonym for power and control.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנְנִ֨י נֹתֵ֜ן אֶת־הָעִ֤יר הַזֹּאת֙ בְּיַ֣ד מֶֽלֶךְ־בָּבֶ֔ל",
+        "english_text": "I am going to deliver this city into the hands of the king of Babylon",
+        "target": ["Jerusalem’s subjugation to Babylon", "political defeat and control", "historical-political"],
+        "vehicle": ["\"hand\" of the king of Babylon", "body part as locus of power", "anthropological/embodied"],
+        "ground": ["Being under someone’s effective power and disposal", "control and dominance", "social-political"],
+        "posture": ["Portrays Babylon’s conquest as YHWH’s own decisive act of judgment", "theological interpretation of military events", "religious-prophetic"],
+        "explanation": "The city is not literally placed into a physical hand; 'hand' figuratively represents the king’s power and control, a fixed biblical idiom for being given over to someone’s power.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 34:3",
+    "deliberation": "Most of the verse is a literal prediction (capture, seeing the king, going to Babylon). Again the repeated 'from his hand' / 'into his hand' uses the 'hand' idiom for power/control.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאַתָּ֗ה לֹ֤א תִמָּלֵט֙ מִיָּד֔וֹ ... וּבְיָד֖וֹ תִּנָּתֵ֑ן",
+        "english_text": "And you will not escape from him; you will be captured and handed over to him",
+        "target": ["Zedekiah’s unavoidable capture and subjugation", "political defeat", "historical-political"],
+        "vehicle": ["escape from / be given into someone’s \"hand\"", "body part as symbol of power and grasp", "anthropological/embodied"],
+        "ground": ["Being within someone’s grasp and unable to get free", "total control and inability to escape", "social-political"],
+        "posture": ["Stresses the inevitability of divine judgment through Babylon", "inescapability of the foretold fate", "prophetic warning"],
+        "explanation": "As in v.2, 'hand' functions figuratively as the place of power. Zedekiah cannot escape Nebuchadrezzar’s 'hand'—that is, his power and control.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 34:4",
+    "deliberation": "The verse contrasts Zedekiah’s fate with death by violence. The phrase 'die by the sword' is an idiomatic metonymy for violent death in war, not literally being killed by a single sword.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לֹ֥א תָמ֖וּת בֶּחָֽרֶב",
+        "english_text": "You will not die by the sword",
+        "target": ["The mode of Zedekiah’s death", "violent vs. nonviolent death", "human life-cycle"],
+        "vehicle": ["\"the sword\"", "instrument of war standing for violent death", "military"],
+        "ground": ["Association of the sword with battlefield killing", "violent, dishonorable death in war", "social-martial"],
+        "posture": ["Promises a different, more peaceful end despite general judgment", "mitigation of punishment", "prophetic assurance"],
+        "explanation": "Here 'sword' stands metonymically for violent military death; the expression is a fixed idiom marking a type of fate rather than specifying the literal instrument.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 34:5",
+    "deliberation": "Considered whether 'die in peace' and the description of funeral rites are figurative. The burning and lamentation are literal royal funerary customs, but 'in peace you shall die' functions as a conventional idiom for a non-violent, orderly death at the end of life.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּשָׁל֣וֹם תָּמ֗וּת",
+        "english_text": "You will die a peaceful death",
+        "target": ["The character and circumstances of Zedekiah’s death", "quality of death (violent vs. tranquil)", "human life-cycle"],
+        "vehicle": ["\"peace\" as the surrounding condition of death", "state of well-being/harmony", "social-relational"],
+        "ground": ["Absence of turmoil, violence, or disgrace at death", "orderly and honorable end of life", "cultural-religious"],
+        "posture": ["Frames his death as relatively blessed compared to others under judgment", "consolatory assurance", "prophetic consolation"],
+        "explanation": "The phrase is a conventional idiom: 'peace' describes not literal absence of all conflict, but a non-violent, socially honored kind of death, contrasted with death 'by the sword'.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 34:6",
+    "deliberation": "This is a straightforward narrative statement about Jeremiah relaying the words to Zedekiah. No metaphors, idioms, or other figurative devices beyond standard prophetic formulae appear.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 34:7",
+    "deliberation": "Describes literal military activity and lists specific cities. 'Fortified towns' and 'waging war' are concrete, not figurative here. No non-literal expressions detected.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 34:8",
+    "deliberation": "The verse recounts a covenant being 'cut' and liberty being proclaimed. The idiom 'cut a covenant' (כרת ברית) is figurative, since the verb 'cut' no longer refers directly to an actual cutting act here, but has become an idiom for concluding a covenant.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַחֲרֵ֡י כְּרֹת֩ הַמֶּ֨לֶךְ צִדְקִיָּ֜הוּ בְּרִ֗ית",
+        "english_text": "after King Zedekiah had made a covenant",
+        "target": ["The act of entering into a covenantal agreement", "legal-religious commitment", "social-religious"],
+        "vehicle": ["\"cutting\" a covenant", "ritual cutting as emblem of treaty-making", "ceremonial/ritual"],
+        "ground": ["Covenant-making associated with cutting sacrificial animals in two", "binding seriousness signified by a cutting act", "covenant ritual"],
+        "posture": ["Alludes to solemn, binding nature of the promise they made", "heightens moral responsibility", "prophetic critique context"],
+        "explanation": "The verb 'cut' in 'cut a covenant' is a conventional metaphorical idiom derived from older rituals involving the cutting of animals to ratify treaties.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 34:9",
+    "deliberation": "The verse spells out the content of the covenant—freeing Hebrew slaves. Expressions like 'set free' and 'keep enslaved' are literal in this social-legal context; no clear figurative usage stands out.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 34:10",
+    "deliberation": "Narrative summary that the people obeyed and released slaves. The wording is straightforward legal and narrative language without obvious metaphor or idiom beyond ordinary usage.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 34:11",
+    "deliberation": "Examined whether 'they turned about' and 'forced them' are literal or figurative. The key is 'turned about' (שבו), which here is not physical movement but a metaphor for moral and volitional reversal of a prior decision.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיָּשׁ֙וּבוּ֙ אַחֲרֵי־כֵ֔ן",
+        "english_text": "But afterward they turned about",
+        "target": ["The people’s change of mind and will", "moral and volitional reversal", "inner human disposition"],
+        "vehicle": ["\"turning back\"", "change of physical direction", "spatial/motion"],
+        "ground": ["Reversal of course as analogous to turning around on a path", "going back on a previously chosen way", "moral/behavioral"],
+        "posture": ["Critiques their fickleness and unfaithfulness", "negative evaluation of reversal", "prophetic rebuke"],
+        "explanation": "The verb 'turn back' is used figuratively for reversing a decision or moral stance, not for literal movement in space.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 34:12",
+    "deliberation": "Formulaic statement about the word of YHWH coming to Jeremiah. Although one could see a conceptual metaphor of a 'coming' word, this has become a fixed prophetic formula and functions as straightforward narrative rather than evocative imagery here.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 34:13",
+    "deliberation": "This verse recalls the exodus and the covenant. 'House of bondage' is a literal description of Egypt as a place of slavery. The one clear figurative element is again the idiom 'I cut a covenant' (כָרַתִּי בְרִית).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָנֹכִ֗י כָּרַ֤תִּֽי בְרִית֙ אֶת־אֲב֣וֹתֵיכֶ֔ם",
+        "english_text": "I made a covenant with your ancestors",
+        "target": ["YHWH’s establishment of a binding relationship with Israel", "covenantal act", "theological-legal"],
+        "vehicle": ["\"cutting\" a covenant", "ritual cutting language", "ceremonial/ritual"],
+        "ground": ["Covenant-making conceptualized through the older cutting ritual", "seriousness and binding nature of the agreement", "covenant symbolism"],
+        "posture": ["Recalls the solemn origin of Israel’s obligations", "underscores gravity of later violation", "prophetic indictment background"],
+        "explanation": "As in v.8, 'cut a covenant' is an idiomatic metaphor alluding to covenant rituals, not to literal cutting in this immediate context.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 34:14",
+    "deliberation": "Most of the verse restates legal provisions literally. The phrase 'they did not incline their ear' is a standard biblical metaphor/idiom for refusing to listen obediently, using bodily posture for internal responsiveness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹֽא־שָׁמְע֤וּ אֲבֽוֹתֵיכֶם֙ אֵלַ֔י וְלֹ֥א הִטּ֖וּ אֶת־אׇזְנָֽם",
+        "english_text": "But your ancestors would not obey Me or give ear",
+        "target": ["The ancestors’ refusal to heed God’s command", "disobedience / inattentiveness", "moral-spiritual state"],
+        "vehicle": ["\"inclining the ear\"", "physical movement of the ear toward sound", "bodily posture/perception"],
+        "ground": ["Attentive, willing listening likened to leaning in with the ear", "lack of such posture signifying stubborn refusal", "cognitive/volitional"],
+        "posture": ["Highlights their culpable stubbornness", "negative moral judgment", "prophetic critique"],
+        "explanation": "Ears are treated metonymically for the faculty of obedience, and 'incline the ear' is a metaphorical idiom for listening responsively to God.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 34:15",
+    "deliberation": "Looked for metaphor in 'you turned', and in 'the House that bears My name.' Both are well-known figurative idioms: returning as moral change, and a house 'called by My name' as metonymy for ownership and presence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתָּשֻׁ֨בוּ אַתֶּ֜ם הַיּ֗וֹם וַתַּעֲשׂ֤וּ אֶת־הַיָּשָׁר֙ בְּעֵינַ֔י",
+        "english_text": "Lately you turned about and did what is proper in My sight",
+        "target": ["The people’s change toward temporarily right behavior", "moral/volitional turning", "ethical-spiritual state"],
+        "vehicle": ["\"turning\" (שוב)", "change of physical direction", "spatial/motion"],
+        "ground": ["Changing one’s course of action likened to turning onto a different path", "reorientation of behavior", "moral/metaphorical journey"],
+        "posture": ["Acknowledges a brief positive shift before condemning relapse", "evaluative but briefly affirming", "prophetic assessment"],
+        "explanation": "The verb 'turn' is used figuratively for moral and behavioral change, not for literal movement in space.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בַּבַּ֕יִת אֲשֶׁר־נִקְרָ֥א שְׁמִ֖י עָלָֽיו",
+        "english_text": "in the House that bears My name",
+        "target": ["The Jerusalem temple as YHWH’s dwelling and possession", "cultic center", "religious-institutional"],
+        "vehicle": ["\"House upon which My name is called\"", "name as representation of person/ownership", "linguistic/legal"],
+        "ground": ["A name standing for the person and their claim", "building identified with and belonging to the deity", "social-religious"],
+        "posture": ["Underscores sacredness and divine ownership of the temple", "heightens seriousness of covenant made there", "prophetic emphasis"],
+        "explanation": "God’s 'name' stands metonymically for His person and authority; to have His name 'called upon' the house is an idiom signaling His ownership and presence.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 34:16",
+    "deliberation": "Again 'you turned back' is used morally, not spatially. 'You have profaned My name' is also figurative, using 'name' metonymically for God’s reputation and honor, and 'profane' metaphorically for treating as common what is sacred.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתָּשֻׁ֙בוּ֙",
+        "english_text": "But now you have turned back",
+        "target": ["The people’s relapse into disobedience", "moral/spiritual reversal", "ethical state"],
+        "vehicle": ["\"turning back\"", "reversing physical direction on a path", "spatial/motion"],
+        "ground": ["Abandoning a right way likened to turning back from a chosen route", "reversal from good to bad course", "moral journey imagery"],
+        "posture": ["Strongly condemns their regression", "negative evaluative stance", "prophetic rebuke"],
+        "explanation": "As elsewhere in Jeremiah, 'turn back' is a metaphorical idiom for moral and religious backsliding, not literal movement.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתְּחַלְּל֣וּ אֶת־שְׁמִ֔י",
+        "english_text": "and have profaned My name",
+        "target": ["God’s reputation and holiness as affected by their behavior", "divine honor", "theological-moral"],
+        "vehicle": ["\"My name\"", "name as representative of person and reputation", "linguistic/social"],
+        "ground": ["Treating God’s reputation as common or defiled through unjust actions", "disgracing the One whom the name denotes", "ethical-religious"],
+        "posture": ["Charges them with sacrilege, not mere legal breach", "intensifies moral accusation", "prophetic indictment"],
+        "explanation": "God’s 'name' functions metonymically for His person and honor; 'profaning' it is metaphorical for treating the holy as common through injustice.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 34:17",
+    "deliberation": "This verse contains a punning irony: since they would not 'proclaim liberty' to one another, YHWH 'proclaims liberty' to sword, pestilence, and famine to act against them. Also 'I will make you a horror' is metaphorical, turning the people into an object lesson of terror.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "הִנְנִ֣י קֹרֵא֩ לָכֶ֨ם דְּר֜וֹר ... אֶל־הַחֶ֙רֶב֙ אֶל־הַדֶּ֣בֶר וְאֶל־הָרָעָ֔ב",
+        "english_text": "Lo! I proclaim your release … to the sword, to pestilence, and to famine",
+        "target": ["The unleashing of destructive judgments on Judah", "experience of disaster and death", "historical-theological"],
+        "vehicle": ["\"proclaiming release\" to sword, pestilence, famine", "legal emancipation language directed to forces of judgment", "legal/judicial imagery"],
+        "ground": ["Instead of freeing slaves, God grants free rein to destructive agents", "ironic reversal of 'liberty' terminology", "semantic inversion"],
+        "posture": ["Ironic and punitive; highlights measure-for-measure justice", "judgmental and sarcastic in tone", "prophetic irony"],
+        "explanation": "The legal term 'proclaim liberty' is ironically reapplied: God figuratively 'frees' the sword, pestilence, and famine to operate against them, personifying these forces as recipients of a legal release.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתִּ֤י אֶתְכֶם֙ לְזַעֲוָ֔ה לְכֹ֖ל מַמְלְכ֥וֹת הָאָֽרֶץ",
+        "english_text": "and I will make you a horror to all the kingdoms of the earth",
+        "target": ["Judah’s reputation and fate among the nations", "object of dread and example of judgment", "international perception"],
+        "vehicle": ["\"a horror\" (לְזַעֲוָה)", "terrifying spectacle", "emotional/affective response"],
+        "ground": ["Their punishment will cause others to shudder and recoil", "they become an exemplum of what to fear and avoid", "didactic-judicial"],
+        "posture": ["Uses exaggerated scope to underline severity of the coming judgment", "threatening and didactic tone", "prophetic warning"],
+        "explanation": "They are not literally transformed into an abstract 'horror'; rather, their condition will be so dreadful that they figuratively become a horror and warning sign to others. The 'all the kingdoms of the earth' again has hyperbolic force.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 34:18",
+    "deliberation": "The verse recalls a ritual of cutting a calf and passing between its pieces, which was literal, but God says He will make covenant-breakers 'the calf they cut in two'—that is, like that calf. This is an implicit simile/metaphor of self-imprecatory judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתִּ֣י אֶת־הָאֲנָשִׁ֗ים הָעֹֽבְרִים֙ אֶת־בְּרִתִ֔י ... הָעֵ֙גֶל֙ אֲשֶׁ֣ר כָּרְת֣וּ לִשְׁנַ֔יִם וַיַּעַבְר֖וּ בֵּ֥ין בְּתָרָֽיו",
+        "english_text": "I will make the parties who violated My covenant … [like] the calf that they cut in two so as to pass between the halves",
+        "target": ["The fate of the covenant-breakers", "their coming violent judgment", "historical-theological"],
+        "vehicle": ["the calf cut in two with people passing between its halves", "slaughtered, divided animal in treaty ritual", "sacrificial/ritual"],
+        "ground": ["As they enacted a ritual implying, 'May we be like this calf if we break the covenant,' so their own bodies/fate will correspond to the curse", "symbolic equivalence between calf’s fate and theirs", "covenant curse logic"],
+        "posture": ["Presents their judgment as fulfillment of their own self-imposed curse", "heightens the horror and justice of punishment", "prophetic threat"],
+        "explanation": "The syntax implies a simile: those who transgressed the covenant will be made like the calf they cut in two; the ritual symbol becomes a metaphor for their own impending dismemberment or destruction.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 34:19",
+    "deliberation": "This continues the description by listing the groups who passed between the pieces. Here it functions as historical description of their participation in the ritual already interpreted in v.18; no additional figurative expression beyond that prior symbol is introduced.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 34:20",
+    "deliberation": "Looked at 'handed over to their enemies' and 'those who seek their life.' The latter is a clear idiom/metonymy for people intending to kill them, not literally seeking life to preserve it.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּיַ֣ד אֹֽיְבֵיהֶ֔ם וּבְיַ֖ד מְבַקְשֵׁ֣י נַפְשָׁ֑ם",
+        "english_text": "to their enemies, to those who seek to kill them (lit. seek their life)",
+        "target": ["The hostile pursuers who will cause their death", "deadly opposition", "social-political violence"],
+        "vehicle": ["\"seek their life\" (מְבַקְשֵׁי נַפְשָׁם)", "searching for someone’s life", "cognitive/volitional action"],
+        "ground": ["Those intent on killing are described as pursuing the very life of a person", "life stands for the whole person’s existence", "metonymic substitution"],
+        "posture": ["Depicts enemies as relentless and lethal", "intensifies the sense of threat", "prophetic warning"],
+        "explanation": "The idiom 'seek someone’s life' uses 'life' metonymically for the person’s existence; it actually means 'to attempt to kill them,' not to look for their life in a benevolent sense.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 34:21",
+    "deliberation": "Closely parallels v.20. Here I focus on the repeated idiom 'into the hand of their enemies', again using 'hand' figuratively for power and control.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶתֵּן֙ בְּיַ֣ד אֹֽיְבֵיהֶ֔ם וּבְיַ֖ד מְבַקְשֵׁ֣י נַפְשָׁ֑ם",
+        "english_text": "I will hand over King Zedekiah of Judah and his officers to their enemies, who seek to kill them",
+        "target": ["Zedekiah’s and his officials’ subjection to hostile powers", "political defeat/judgment", "historical-political"],
+        "vehicle": ["being given into someone’s \"hand\"", "hand as symbol of power and grasp", "anthropological/embodied"],
+        "ground": ["To be in someone’s hand is to be at their mercy and control", "total domination by the enemy", "social-political"],
+        "posture": ["Presents Babylon’s victory as YHWH’s deliberate handing over", "judicial tone", "prophetic interpretation of events"],
+        "explanation": "The phrase 'give into the hand' is a stock biblical metaphor/idiom where 'hand' stands for power; they are not literally placed in a palm but subjected to enemy control.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 34:22",
+    "deliberation": "Describes God commanding the Babylonian forces to return, fight, capture, burn, and make the towns desolate. Although the desolation is severe, the language corresponds to literal historical devastation rather than figurative imagery here.",
+    "instances": []
+  }
+]

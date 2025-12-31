@@ -1,0 +1,1341 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 34:1",
+    "deliberation": "Considered whether the prophetic formula is purely literal. The phrase 'the word of YHWH came to me' personifies 'word' as an active agent that can 'come,' and uses 'word' metonymically for God's act of communication. No other figures appear.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהֹוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "YHWH’s act of revealing a message to the prophet",
+          "divine communication",
+          "theological/revelatory domain"
+        ],
+        "vehicle": [
+          "a concrete 'word' that moves toward and arrives at someone",
+          "moving object/visiting messenger",
+          "physical/spatial motion and interpersonal encounter"
+        ],
+        "ground": [
+          "a message originates from one party and reaches another as an intentional act",
+          "transmission and arrival of a communication",
+          "communication dynamics"
+        ],
+        "posture": [
+          "formal prophetic commissioning formula, neutral in tone",
+          "authoritative/solemn",
+          "prophetic discourse convention"
+        ],
+        "explanation": "The 'word' of YHWH is personified and treated as if it were an entity that can 'come' to Ezekiel; 'word' also stands metonymically for God's revelation itself.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 34:2",
+    "deliberation": "The verse contains the vocative 'ben-adam' (son of man) as a conventional idiom for 'mortal,' and it introduces the central shepherd/flock metaphor where Israel’s leaders are called 'shepherds' and the people 'flock.' These are two distinct figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בֶּן־אָדָ֕ם",
+        "english_text": "O mortal (lit. 'son of man')",
+        "target": [
+          "Ezekiel as a human being characterized by mortality and frailty",
+          "individual human person",
+          "human condition"
+        ],
+        "vehicle": [
+          "a 'son' born from 'man' (אָדָם)",
+          "kinship/ancestry expression",
+          "family/human lineage domain"
+        ],
+        "ground": [
+          "sharing the nature of humankind, dependent and finite in contrast to God",
+          "membership in humanity and mortal status",
+          "anthropology/theology of human limitation"
+        ],
+        "posture": [
+          "reminding the prophet of his human status before God",
+          "humbling/contrastive (human vs. divine)",
+          "prophetic address convention"
+        ],
+        "explanation": "‘Ben-adam’ is an idiomatic expression (with synecdochic flavor) for a human being, emphasizing Ezekiel’s mortal, human nature in contrast to the divine speaker.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "עַל־רוֹעֵ֣י יִשְׂרָאֵ֑ל ... הֲל֣וֹא הַצֹּ֔אן יִרְע֖וּ הָרֹעִֽים",
+        "english_text": "against the shepherds of Israel ... Is it not the flock that the shepherds ought to tend?",
+        "target": [
+          "Israel’s political and religious leaders and the people under their authority",
+          "human leadership and community",
+          "social-political life of Israel"
+        ],
+        "vehicle": [
+          "shepherds who tend a flock of sheep",
+          "shepherding/pastoral caretaking",
+          "agricultural/animal husbandry"
+        ],
+        "ground": [
+          "shepherds and leaders both have responsibility to feed, protect, and guide those dependent on them",
+          "care, oversight, and accountability for the vulnerable",
+          "ethics of authority and governance"
+        ],
+        "posture": [
+          "indignant accusation of failed, self-serving leadership",
+          "negative-evaluative/prophetic judgment",
+          "covenant lawsuit rhetoric"
+        ],
+        "explanation": "Calling Israel’s leaders 'shepherds' and the people 'flock' is a sustained metaphor that frames leadership as pastoral care which should be directed toward the people rather than toward self-indulgence.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 34:3",
+    "deliberation": "The verse elaborates the shepherd metaphor: eating fat, wearing wool, slaughtering fatlings versus tending the flock. These are concrete shepherding actions used figuratively for leaders exploiting their people, but they form one coherent metaphorical picture.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶת־הַחֵ֤לֶב תֹּאכֵ֙לוּ֙ וְאֶת־הַצֶּ֣מֶר תִּלְבָּ֔שׁוּ הַבְּרִיאָ֖ה תִּזְבָּ֑חוּ הַצֹּ֖אן לֹ֥א תִרְעֽוּ",
+        "english_text": "You partake of the fat, you clothe yourselves with the wool, and you slaughter the fatlings; but you do not tend the flock.",
+        "target": [
+          "corrupt leaders enriching themselves at the expense of their people",
+          "exploitative human leadership",
+          "social-ethical conduct of rulers"
+        ],
+        "vehicle": [
+          "shepherds consuming their sheep’s fat, wool, and lives while neglecting care",
+          "abusive shepherding practices",
+          "agricultural exploitation of animals"
+        ],
+        "ground": [
+          "in both cases those in power take resources and life from those entrusted to them instead of providing care",
+          "self-indulgent consumption of dependents rather than protection of them",
+          "injustice and abuse of entrusted authority"
+        ],
+        "posture": [
+          "strong moral condemnation of parasitic leadership",
+          "negative-evaluative/accusatory",
+          "prophetic denunciation"
+        ],
+        "explanation": "The shepherds’ actions are metaphorical for leaders who live off the people (taking their resources and lives) while failing to provide proper governance and care.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 34:4",
+    "deliberation": "The entire verse continues the pastoral imagery of injured, sick, strayed, and lost sheep and contrasts it with harsh driving. This is figurative language for various categories of vulnerable or wayward people and abusive leadership.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֶת־הַנַּחְלוֹת֩ לֹ֨א חִזַּקְתֶּ֜ם וְאֶת־הַחוֹלָ֣ה לֹֽא־רִפֵּאתֶ֗ם וְלַנִּשְׁבֶּ֙רֶת֙ לֹ֣א חֲבַשְׁתֶּ֔ם וְאֶת־הַנִּדַּ֙חַת֙ לֹ֣א הֲשֵׁבֹתֶ֔ם וְאֶת־הָאֹבֶ֖דֶת לֹ֣א בִקַּשְׁתֶּ֑ם וּבְחׇזְקָ֛ה רְדִיתֶ֥ם אֹתָ֖ם וּבְפָֽרֶךְ",
+        "english_text": "You have not sustained the weak, healed the sick, or bandaged the injured; you have not brought back the strayed, or looked for the lost; but you have driven them with harsh rigor.",
+        "target": [
+          "different classes of vulnerable, suffering, or wayward Israelites and the leaders’ treatment of them",
+          "socially and spiritually needy people under authority",
+          "community life and governance"
+        ],
+        "vehicle": [
+          "weak, sick, injured, strayed, and lost sheep driven harshly by a shepherd",
+          "sheep in various states of need under a negligent shepherd",
+          "pastoral/animal-care domain"
+        ],
+        "ground": [
+          "both sheep and people in these categories depend on attentive care and search; harsh driving wounds them further",
+          "need for restorative care versus oppressive treatment of the vulnerable",
+          "ethics of compassion and responsibility"
+        ],
+        "posture": [
+          "indicting leaders for cruelty and negligence toward the weak",
+          "strongly negative, justice-oriented",
+          "covenant lawsuit/judgment oracle"
+        ],
+        "explanation": "The catalog of weak, sick, injured, strayed, and lost sheep is a pastoral metaphor for vulnerable or erring members of the community whom the leaders should have supported and restored instead of oppressing.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 34:5",
+    "deliberation": "The verse describes sheep scattered without a shepherd, becoming food for every wild beast. Within the ongoing pastoral metaphor, this pictures Israel as unprotected and exploited by hostile powers. I treat the scattering and predation as one integrated metaphorical scene.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַתְּפוּצֶ֖ינָה מִבְּלִ֣י רֹעֶ֑ה וַתִּהְיֶ֧ינָה לְאׇכְלָ֛ה לְכׇל־חַיַּ֥ת הַשָּׂדֶ֖ה",
+        "english_text": "and they have been scattered for want of anyone to tend them; scattered, they have become prey for every wild beast.",
+        "target": [
+          "Israel’s people exposed to danger and exploitation by surrounding powers because of failed leadership",
+          "vulnerable community without protection",
+          "historical-political situation of Israel/Judah"
+        ],
+        "vehicle": [
+          "sheep scattered without a shepherd and eaten by every wild animal",
+          "unprotected flock devoured by predators",
+          "pastoral and wild-animal world"
+        ],
+        "ground": [
+          "both unguarded sheep and ungoverned people become easy targets for predators/oppressors",
+          "lack of protective oversight leads to scattering and destruction",
+          "consequences of absent leadership"
+        ],
+        "posture": [
+          "lamenting the consequences and implicitly condemning those responsible",
+          "tragic/accusatory",
+          "prophetic explanation of calamity"
+        ],
+        "explanation": "Israel is depicted as a scattered flock devoured by 'every wild beast'—a hyperbolic pastoral metaphor for the many hostile forces that prey on an unprotected people.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 34:6",
+    "deliberation": "Continues the sheep imagery: 'My sheep' stray on all mountains and high hills and are scattered over 'all the face of the earth.' This combines the flock metaphor with a meristic, hyperbolic description of total dispersion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "יִשְׁגּ֤וּ צֹאנִי֙ בְּכׇל־הֶ֣הָרִ֔ים וְעַ֖ל כׇּל־גִּבְעָ֣ה רָמָ֑ה וְעַ֨ל כׇּל־פְּנֵ֤י הָאָ֙רֶץ֙ נָפֹ֣צוּ צֹאנִ֔י",
+        "english_text": "My sheep stray through all the mountains and over every lofty hill; My flock is scattered all over the face of the earth",
+        "target": [
+          "Israelites dispersed geographically and spiritually with no one seeking them",
+          "exiled and alienated people",
+          "national dispersion and dislocation"
+        ],
+        "vehicle": [
+          "sheep wandering over every mountain and high hill, scattered over all the earth’s surface",
+          "roaming flock without boundaries or shepherd",
+          "pastoral landscape and geographic extremes"
+        ],
+        "ground": [
+          "both images involve extensive, uncontrolled wandering and isolation without guidance",
+          "total lack of rootedness and care leading to dispersion",
+          "effects of abandonment by responsible guardians"
+        ],
+        "posture": [
+          "sorrowful yet accusatory portrayal of abandonment",
+          "lament/judgment blend",
+          "prophetic depiction of exile’s extent"
+        ],
+        "explanation": "The people’s dispersion is portrayed as sheep straying across 'all the mountains' and 'all the face of the earth,' a hyperbolic merism intensifying the metaphor of total scattering.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 34:7",
+    "deliberation": "The verse is an address to 'shepherds'—still metaphorical for leaders—but contains no additional imagery beyond that, and 'hear the word of YHWH' is the standard prophetic formula. I treat the shepherd designation itself as the figurative element here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָכֵ֣ן רֹעִ֔ים שִׁמְע֖וּ אֶת־דְּבַ֥ר יְהֹוָֽה",
+        "english_text": "Hear then, O shepherds, the word of GOD!",
+        "target": [
+          "Israel’s leaders being summoned to hear God’s judgment",
+          "political/religious authorities",
+          "national leadership"
+        ],
+        "vehicle": [
+          "shepherds addressed as responsible for a flock",
+          "shepherd as leadership role",
+          "pastoral vocation"
+        ],
+        "ground": [
+          "both shepherds and leaders are accountable caretakers whose actions affect those under them",
+          "responsibility and accountability for oversight",
+          "authority and care roles"
+        ],
+        "posture": [
+          "solemn summoning of leaders under their pastoral title for judgment",
+          "judicial/authoritative",
+          "covenant-lawsuit rhetoric"
+        ],
+        "explanation": "Calling the leaders 'shepherds' continues the established metaphor, framing them as pastoral caretakers being called to account.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 34:8",
+    "deliberation": "This verse restates the flock metaphor: 'My flock has been a spoil,' 'prey for all the wild beasts,' and 'shepherds tended themselves.' The imagery of spoil and prey, and of shepherds feeding on the flock, forms one extended metaphor of exploitation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "יַ֣עַן הֱיֽוֹת־צֹאנִ֣י לָבַ֡ז וַתִּהְיֶ֩ינָה֩ צֹאנִ֨י לְאׇכְלָ֜ה לְכׇל־חַיַּ֤ת הַשָּׂדֶה֙ ... וַיִּרְע֤וּ הָרֹעִים֙ אוֹתָ֔ם וְאֶת־צֹאנִ֖י לֹ֥א רָעֽוּ",
+        "english_text": "Because My flock has been a spoil—My flock has been a prey for all the wild beasts ... for the shepherds tended themselves instead of tending the flock",
+        "target": [
+          "Israel’s people plundered by enemies and exploited by their own leaders",
+          "oppressed and victimized community",
+          "political and social vulnerability"
+        ],
+        "vehicle": [
+          "a flock of sheep taken as loot and eaten by all wild beasts while their shepherds feed themselves",
+          "prey animals abandoned and consumed",
+          "war plunder and predation imagery in a pastoral frame"
+        ],
+        "ground": [
+          "both a looted flock and an oppressed populace are treated as objects to consume rather than beings to protect",
+          "total exposure to predators due to guardian failure",
+          "injustice, plunder, and neglect"
+        ],
+        "posture": [
+          "outraged divine evaluation of leaders’ self-interest and people’s suffering",
+          "indignant/judicial",
+          "covenant indictment"
+        ],
+        "explanation": "Describing the people as 'spoil' and 'prey for all the wild beasts,' and the leaders as shepherds who feed themselves, intensifies the pastoral metaphor into a picture of total exploitation and plunder.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 34:9",
+    "deliberation": "A brief command to the 'shepherds' to hear God’s word. The only figurative element is again the designation 'shepherds' for leaders.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָכֵן֙ הָרֹעִ֔ים שִׁמְע֖וּ דְּבַר־יְהֹוָֽה",
+        "english_text": "hear indeed, O shepherds, the word of GOD:",
+        "target": [
+          "Israel’s leaders being addressed for judgment",
+          "ruling authorities",
+          "national governance"
+        ],
+        "vehicle": [
+          "shepherds addressed as if they were tending a flock",
+          "shepherd as leadership image",
+          "pastoral work"
+        ],
+        "ground": [
+          "leaders and shepherds both stand in responsible relation to those under their care",
+          "accountability and oversight",
+          "authority structures"
+        ],
+        "posture": [
+          "formal judicial summons under the pastoral metaphor",
+          "serious/authoritative",
+          "prophetic courtroom scene"
+        ],
+        "explanation": "Calling the leaders 'shepherds' keeps the metaphorical frame of pastoral responsibility as God confronts them.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 34:10",
+    "deliberation": "The key figurative element is 'I will rescue My flock from their mouths,' depicting leaders as predators devouring sheep. This sharpens the shepherd imagery into predatory animal imagery applied to the leaders.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִצַּלְתִּ֤י צֹאנִי֙ מִפִּיהֶ֔ם וְלֹא־תִֽהְיֶ֥יןָ לָהֶ֖ם לְאׇכְלָֽה",
+        "english_text": "for I will rescue My flock from their mouths, and it shall not be their prey.",
+        "target": [
+          "God’s people whom He will deliver from oppressive leaders",
+          "oppressed populace under exploitation",
+          "social-political victims"
+        ],
+        "vehicle": [
+          "sheep being pulled out of the mouths of animals that are eating them",
+          "prey rescued from predators",
+          "animal predation scenario"
+        ],
+        "ground": [
+          "both prey and oppressed people are in the process of being consumed by those stronger than they are",
+          "immediate, life-threatening exploitation requiring divine intervention",
+          "rescue from violent oppression"
+        ],
+        "posture": [
+          "promising decisive rescue and judgment against devouring leaders",
+          "protective and punitive",
+          "salvation-and-judgment oracle"
+        ],
+        "explanation": "Leaders are implicitly likened to beasts whose mouths are full of sheep; God will snatch His 'flock' from their jaws so they are no longer 'prey.'",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 34:11",
+    "deliberation": "God says He will 'seek' His flock and 'take thought' for them, continuing the shepherd metaphor with Himself as the true shepherd. No additional figures such as similes or hyperbole appear here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִי־אָ֕נִי וְדָרַשְׁתִּ֥י אֶת־צֹאנִ֖י וּבִקַּרְתִּֽים",
+        "english_text": "Here am I! I am going to take thought for My flock and I will seek them out.",
+        "target": [
+          "YHWH’s renewed, active care for His people",
+          "divine leadership over the community",
+          "covenant relationship"
+        ],
+        "vehicle": [
+          "a shepherd personally seeking and inspecting his flock",
+          "shepherd’s attentive oversight",
+          "pastoral practice"
+        ],
+        "ground": [
+          "both actions involve personal initiative to locate, evaluate, and care for those entrusted",
+          "intentional, searching care and oversight",
+          "faithful guardianship"
+        ],
+        "posture": [
+          "reassuring promise that God Himself will be the true shepherd",
+          "positive/restorative",
+          "salvation oracle"
+        ],
+        "explanation": "God portrays Himself as a shepherd who will actively seek out and inspect His flock, a metaphor for His direct, restorative involvement with His scattered people.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 34:12",
+    "deliberation": "This verse has an explicit simile comparing God’s action to a shepherd seeking his separated flock. It also mentions a 'day of cloud and gloom,' a stock metaphor for a time of judgment or calamity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כְּבַקָּרַת֩ רֹעֶ֨ה עֶדְר֜וֹ בְּיוֹם־הֱיוֹת֤וֹ בְתוֹךְ־צֹאנוֹ֙ נִפְרָשׁ֔וֹת כֵּ֖ן אֲבַקֵּ֣ר אֶת־צֹאנִ֑י",
+        "english_text": "As shepherds seek out their flock when some in their flock have gotten separated, so I will seek out My flock",
+        "target": [
+          "God’s future action to gather and care for His scattered people",
+          "divine restoration of the community",
+          "salvation-history for Israel"
+        ],
+        "vehicle": [
+          "a shepherd searching out and inspecting scattered sheep from his flock",
+          "diligent shepherding behavior",
+          "pastoral work"
+        ],
+        "ground": [
+          "both involve a responsible caretaker proactively seeking dispersed dependents to restore them",
+          "intentional search, recognition, and retrieval of the separated",
+          "careful oversight and reclaiming"
+        ],
+        "posture": [
+          "reassuring comparison that underscores God’s thoroughness",
+          "comforting/assuring",
+          "didactic simile"
+        ],
+        "explanation": "The simile directly likens God’s future seeking of His people to a shepherd’s diligent search for separated sheep, clarifying the mode of His care.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּי֥וֹם עָנָ֖ן וַעֲרָפֶֽל",
+        "english_text": "on a day of cloud and gloom",
+        "target": [
+          "the time of Israel’s calamity and judgment (exile/defeat)",
+          "period of national disaster and divine judgment",
+          "historical experience of crisis"
+        ],
+        "vehicle": [
+          "a day characterized by dark cloud and thick gloom",
+          "stormy, dark weather conditions",
+          "meteorological phenomena"
+        ],
+        "ground": [
+          "both dark storm and severe crisis share obscurity, fear, and threat to wellbeing",
+          "oppressive, obscuring conditions that bring distress",
+          "experience of darkness and danger"
+        ],
+        "posture": [
+          "viewing the time of judgment as a dark, ominous atmosphere",
+          "sober/ominous",
+          "prophetic-apocalyptic imagery"
+        ],
+        "explanation": "The phrase 'day of cloud and gloom' metaphorically characterizes the historical time of scattering as a dark, threatening day, a common biblical image for judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 34:13",
+    "deliberation": "The verse mixes relatively literal restoration (bringing them from peoples and lands to 'their own land') with pastoral imagery of pasturing on mountains and by watercourses. Given the sustained metaphor, pasturing here is figurative for God’s comprehensive care in the land.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּרְעִיתִים֙ אֶל־הָרֵ֣י יִשְׂרָאֵ֔ל בָּאֲפִיקִ֕ים וּבְכֹ֖ל מוֹשְׁבֵ֥י הָאָֽרֶץ",
+        "english_text": "and will pasture them on the mountains of Israel, by the watercourses and in all the settled portions of the land.",
+        "target": [
+          "God’s provision and security for His restored people in their land",
+          "national wellbeing and stability",
+          "post-exilic or ideal future community"
+        ],
+        "vehicle": [
+          "shepherd pasturing sheep on mountains, by streams, and in all dwellings of the land",
+          "sheep grazing in varied, good locations",
+          "pastoral-geographic setting"
+        ],
+        "ground": [
+          "as sheep well pastured in all terrains have sustenance and safety, so a restored nation enjoys provision and security throughout its territory",
+          "ample, well-distributed provision and care",
+          "landed security and nourishment"
+        ],
+        "posture": [
+          "promissory and nurturing, in contrast to earlier neglect",
+          "hopeful/positive",
+          "restoration oracle"
+        ],
+        "explanation": "To 'pasture' the people on the mountains and by streams continues the sheep metaphor, portraying the restored community as well-fed and securely settled under God’s shepherding.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 34:14",
+    "deliberation": "This verse elaborates good pasture and rich grazing on the 'lofty hills of Israel.' The lying down and feeding language continues the extended shepherd/flock metaphor for safety, rest, and abundance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּמִרְעֶה־טּוֹב֙ אֶרְעֶ֣ה אֹתָ֔ם ... שָׁ֤ם תִּרְבַּ֙צְנָה֙ בְּנָ֣וֶה טּ֔וֹב וּמִרְעֶ֥ה שָׁמֵ֛ן תִּרְעֶ֖ינָה",
+        "english_text": "I will feed them in good grazing land ... There they shall lie down in a good pasture and shall feed on rich grazing land.",
+        "target": [
+          "the people’s experience of peace, rest, and material sufficiency under God’s rule",
+          "communal flourishing",
+          "social-economic wellbeing of Israel"
+        ],
+        "vehicle": [
+          "sheep lying down and feeding in good, fat pasture on high hills",
+          "contented flock in rich grazing",
+          "pastoral abundance"
+        ],
+        "ground": [
+          "both depictions involve security, rest, and ample nourishment under trustworthy care",
+          "state of unthreatened satisfaction and provision",
+          "shalom-like wellbeing"
+        ],
+        "posture": [
+          "warm promise of abundant care, reversing previous deprivation",
+          "comforting/reassuring",
+          "restoration-promising rhetoric"
+        ],
+        "explanation": "Good and 'fat' pasture with sheep lying down functions as a metaphor for a secure, well-provided life for the restored community under God’s shepherding.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 34:15",
+    "deliberation": "God states directly that He will 'graze' His flock and make them lie down, explicitly casting Himself as a shepherd. This is a straightforward continuation of the central metaphor without additional figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲנִ֨י אֶרְעֶ֤ה צֹאנִי֙ וַאֲנִ֣י אַרְבִּיצֵ֔ם",
+        "english_text": "I Myself will graze My flock, and I Myself will let them lie down",
+        "target": [
+          "YHWH’s direct governance and care for His people",
+          "divine leadership over Israel",
+          "covenantal relationship"
+        ],
+        "vehicle": [
+          "a shepherd feeding his sheep and causing them to lie down to rest",
+          "shepherding care and provision",
+          "pastoral life"
+        ],
+        "ground": [
+          "both involve a responsible caretaker providing food and rest for those under his charge",
+          "providing sustenance and secure rest",
+          "protective guardianship"
+        ],
+        "posture": [
+          "emphatic assurance of personal divine involvement in care",
+          "reassuring/solemn",
+          "self-involving divine promise"
+        ],
+        "explanation": "By saying He will 'graze' His flock and make them 'lie down,' God uses the shepherd metaphor to promise direct, tender oversight and rest for His people.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 34:16",
+    "deliberation": "The verse contrasts God’s care for the lost, strayed, injured, and weak with His destruction of the 'fat and strong.' All are sheep-images applied to people, continuing the pastoral metaphor with a moral/judicial twist.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֶת־הָאֹבֶ֤דֶת אֲבַקֵּשׁ֙ ... וְאֶת־הַחוֹלָ֖ה אֲחַזֵּ֑ק וְאֶת־הַשְּׁמֵנָ֧ה וְאֶת־הַחֲזָקָ֛ה אַשְׁמִ֖יד אֶרְעֶ֥נָּה בְמִשְׁפָּֽט",
+        "english_text": "I will look for the lost, and I will bring back the strayed; I will bandage the injured, and I will sustain the weak; and the fat and healthy ones I will destroy. I will tend them rightly.",
+        "target": [
+          "various groups within Israel (vulnerable vs. oppressive) and God’s differing treatment of them",
+          "socially/spiritually needy versus powerful and abusive individuals",
+          "intra-community justice"
+        ],
+        "vehicle": [
+          "lost, strayed, injured, weak, and fat/strong sheep cared for or culled by a shepherd",
+          "differential treatment of sheep according to condition",
+          "pastoral management"
+        ],
+        "ground": [
+          "as a good shepherd seeks the weak and culls the dangerously dominant, so God restores the vulnerable and judges the powerful oppressors",
+          "compassion and corrective justice in care for a flock",
+          "ethics of protection and discipline"
+        ],
+        "posture": [
+          "balancing tender care with firm judgment within the flock",
+          "both consoling and threatening",
+          "judicial-restorative stance"
+        ],
+        "explanation": "Lost, weak, and strong sheep symbolize different human conditions; God’s care and destruction in this pastoral frame portray restorative justice within His people.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 34:17",
+    "deliberation": "God announces judgment 'between sheep and sheep, between rams and bucks.' This figuratively describes judgment among different groups/individuals within Israel. It is one coherent metaphorical image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנְנִ֤י שֹׁפֵט֙ בֵּֽין־שֶׂ֣ה לָשֶׂ֔ה לָאֵילִ֖ים וְלָעַתּוּדִֽים",
+        "english_text": "I am going to judge between one animal and another, between the rams and the bucks",
+        "target": [
+          "different categories or statuses of people within Israel whom God will distinguish and judge",
+          "intra-community groups (strong vs. weak, oppressors vs. victims)",
+          "social-religious strata of the nation"
+        ],
+        "vehicle": [
+          "sheep, rams, and goats within a flock being distinguished by a shepherd-judge",
+          "intra-flock differentiation",
+          "pastoral/animal grouping"
+        ],
+        "ground": [
+          "just as a shepherd can distinguish and deal differently with various animals, so God can and will differentiate between kinds of people in His judgment",
+          "discernment and differentiated treatment of members of one group",
+          "judicial discrimination between cases"
+        ],
+        "posture": [
+          "asserting God’s impartial, internal justice among His people",
+          "firm and judicial",
+          "judgment proclamation"
+        ],
+        "explanation": "The imagery of judging between sheep, rams, and goats metaphorically portrays God’s discernment and judgment among different people or factions in Israel.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 34:18",
+    "deliberation": "The verse uses animal behavior (grazing, trampling pasture, drinking and muddying water) to depict dominant members of the flock spoiling resources for others. This metaphorically indicts stronger members of the community who ruin common goods for the weaker.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הַמְעַ֣ט מִכֶּ֗ם הַמִּרְעֶ֤ה הַטּוֹב֙ תִּרְע֔וּ וְיֶ֙תֶר֙ מִרְעֵיכֶ֔ם תִּרְמְס֖וּ בְּרַגְלֵיכֶ֑ם וּמִשְׁקַע־מַ֣יִם תִּשְׁתּ֔וּ וְאֵת֙ הַנּ֣וֹתָרִ֔ים בְּרַגְלֵיכֶ֖ם תִּרְפֹּשֽׂוּן",
+        "english_text": "Is it not enough for you to graze on choice grazing ground, but you must also trample with your feet what is left from your grazing? And is it not enough for you to drink clear water, but you must also muddy with your feet what is left?",
+        "target": [
+          "powerful individuals/groups in Israel who consume the best resources and spoil what remains for others",
+          "social elites abusing shared goods",
+          "economic and social injustice"
+        ],
+        "vehicle": [
+          "animals that eat the best pasture and trample the rest, drink clear water and muddy what is left with their feet",
+          "greedy, inconsiderate flock members",
+          "animal behavior around common resources"
+        ],
+        "ground": [
+          "both pictures involve taking more than needed and degrading remaining resources so others cannot benefit",
+          "selfish consumption and active harming of the common good",
+          "injustice and lack of regard for the weak"
+        ],
+        "posture": [
+          "sharp moral rebuke of the strong for wrecking provision for others",
+          "indignant/accusatory",
+          "social-justice critique"
+        ],
+        "explanation": "The description of animals trampling pasture and muddying water functions as a metaphor for community members whose greed and behavior ruin what remains for the rest.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 34:19",
+    "deliberation": "This rhetorical question reiterates the image from verse 18, focusing on the flock forced to eat trampled pasture and drink muddied water. It is the same metaphor of the oppressed consuming degraded resources because of the strong.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְצֹאנִ֑י מִרְמַ֤ס רַגְלֵיכֶם֙ תִּרְעֶ֔ינָה וּמִרְפַּ֥שׂ רַגְלֵיכֶ֖ם תִּשְׁתֶּֽינָה",
+        "english_text": "And must My flock graze on what your feet have trampled and drink what your feet have muddied?",
+        "target": [
+          "the disadvantaged members of Israel forced to live on what the powerful have degraded",
+          "oppressed poor and marginalized groups",
+          "socially/economically vulnerable population"
+        ],
+        "vehicle": [
+          "sheep eating trampled pasture and drinking muddied water left by others’ feet",
+          "animals consuming spoiled resources",
+          "pastoral resource imagery"
+        ],
+        "ground": [
+          "both describe dependents who receive only damaged, inferior resources due to others’ greed or carelessness",
+          "living off what is degraded by the powerful",
+          "systemic inequity in resource distribution"
+        ],
+        "posture": [
+          "expressing outrage at the injustice visited upon 'My flock'",
+          "sympathetic toward victims, accusatory toward oppressors",
+          "prophetic protest"
+        ],
+        "explanation": "The image of sheep forced to graze trampled grass and drink muddied water metaphorically portrays the plight of the weak who must subsist on what the powerful have spoiled.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 34:20",
+    "deliberation": "God declares He will judge 'between fat sheep and lean sheep.' 'Fat' and 'lean' sheep represent privileged vs. deprived people within the community; this is one metaphorical contrast of internal social stratification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְשָֽׁפַטְתִּי֙ בֵּֽין־שֶׂ֣ה בִרְיָ֔ה וּבֵ֥ין שֶׂ֖ה רָזָֽה",
+        "english_text": "I am going to decide between the stout animals and the lean.",
+        "target": [
+          "well-off oppressors versus deprived victims within Israel",
+          "internal socio-economic classes",
+          "community inequality"
+        ],
+        "vehicle": [
+          "fat (well-nourished) and lean (emaciated) sheep distinguished by a shepherd-judge",
+          "contrasting physical conditions in a flock",
+          "animal health/condition imagery"
+        ],
+        "ground": [
+          "fat sheep and privileged people both display signs of overabundance, while lean sheep and the poor show deprivation",
+          "visible disparity within one group that calls for corrective judgment",
+          "inequity and imbalance needing redress"
+        ],
+        "posture": [
+          "assertive commitment to redress inequalities among His people",
+          "judicial and corrective",
+          "justice-oriented promise"
+        ],
+        "explanation": "The contrast between 'fat' and 'lean' sheep metaphorically represents disparities between powerful, overfed individuals and the undernourished weak whom God will judge between.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 34:21",
+    "deliberation": "The verse describes animals pushing with side and shoulder and butting with horns until others are scattered. Within the flock metaphor this portrays aggressive, domineering behavior by powerful people toward the weak.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּצַ֤ד וּבְכָתֵף֙ תֶּהְדֹּ֔פוּ וּבְקַרְנֵיכֶ֥ם תְּנַגְּח֖וּ כׇּל־הַנַּחְל֑וֹת עַ֣ד אֲשֶׁ֧ר הֲפִיצוֹתֶ֛ם אוֹתָ֖נָה אֶל־הַחֽוּצָה",
+        "english_text": "Because you pushed with flank and shoulder against the feeble ones and butted them with your horns until you scattered them abroad",
+        "target": [
+          "strong members of the community who bully and drive out the weaker ones",
+          "oppressive intra-community actors",
+          "social conflict and exclusion"
+        ],
+        "vehicle": [
+          "robust animals pushing with side and shoulder and goring others with horns, scattering them",
+          "aggressive flock members",
+          "animal combat and dominance behavior"
+        ],
+        "ground": [
+          "both depict the strong using physical force to displace and scatter the feeble",
+          "coercive dominance that causes the weak to be driven out",
+          "abuse of strength and resulting fragmentation"
+        ],
+        "posture": [
+          "condemning aggressive oppression within the flock/people",
+          "sharply negative/judicial",
+          "indictment of internal violence"
+        ],
+        "explanation": "Pushing with flank and shoulder and butting with horns is a metaphor for the powerful using their advantage to harm and scatter the feeble members of the community.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 34:22",
+    "deliberation": "God will 'save My flock' so they are no longer 'spoil' and again will 'judge between sheep and sheep.' These are reiterations of the flock metaphor and internal judgment; I treat them as one combined instance here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהוֹשַׁעְתִּ֣י לְצֹאנִ֔י וְלֹא־תִהְיֶ֥ינָה ע֖וֹד לָבַ֑ז וְשָׁ֣פַטְתִּ֔י בֵּ֥ין שֶׂ֖ה לָשֶֽׂה",
+        "english_text": "I will rescue My flock and they shall no longer be a spoil. I will decide between one animal and another.",
+        "target": [
+          "God’s people who will be delivered from exploitation and judged among themselves",
+          "oppressed community and its internal factions",
+          "national restoration and internal justice"
+        ],
+        "vehicle": [
+          "a flock no longer taken as spoil, among whom a shepherd judges between individual sheep",
+          "rescued and regulated flock",
+          "pastoral care and judgment scene"
+        ],
+        "ground": [
+          "just as a good shepherd both protects his animals from being taken and adjudicates intra-flock issues, God will protect and judge among His people",
+          "protection from external plunder and fair internal regulation",
+          "comprehensive oversight"
+        ],
+        "posture": [
+          "promising both salvation from predators and fair judgment within the community",
+          "assuring yet solemn",
+          "holistic shepherd-judge stance"
+        ],
+        "explanation": "Rescuing 'My flock' from being 'spoil' and judging 'between sheep and sheep' continues the metaphor of God as shepherd protecting and justly governing His people.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 34:23",
+    "deliberation": "A 'single shepherd'—'My servant David'—will shepherd and tend them. This applies the shepherd metaphor to the future Davidic ruler, and 'David' itself likely functions metonymically for the Davidic line or an ideal descendant.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַהֲקִמֹתִ֨י עֲלֵיהֶ֜ם רֹעֶ֤ה אֶחָד֙ ... אֵ֖ת עַבְדִּ֣י דָוִ֑יד ה֚וּא יִרְעֶ֣ה אֹתָ֔ם",
+        "english_text": "Then I will appoint a single shepherd over them to tend them—My servant David. He shall tend them, he shall be a shepherd to them.",
+        "target": [
+          "the future ideal ruler from David’s line who will lead and care for Israel",
+          "messianic or Davidic kingship figure",
+          "political-spiritual leadership of restored Israel"
+        ],
+        "vehicle": [
+          "a single shepherd caring for and feeding a flock",
+          "unified pastoral leadership",
+          "shepherding vocation"
+        ],
+        "ground": [
+          "both a shepherd and a just king provide unified, protective, nourishing leadership for those under them",
+          "centralized, benevolent authority and care",
+          "model governance"
+        ],
+        "posture": [
+          "positive, hopeful portrayal of future leadership as true shepherding",
+          "idealizing/affirming",
+          "messianic promise"
+        ],
+        "explanation": "The promised 'shepherd' identified as 'My servant David' metaphorically portrays a coming Davidic ruler as a shepherd-king; the name 'David' functions metonymically for his enduring dynasty or ideal descendant.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 34:24",
+    "deliberation": "Here God says He will be their God and 'My servant David' will be 'prince among them.' The main potential figure is 'David' as a metonymy for a Davidic ruler, not necessarily the historical David resurrected. There is no explicit pastoral imagery here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְעַבְדִּ֥י דָוִ֖ד נָשִׂ֣יא בְתוֹכָ֑ם",
+        "english_text": "and My servant David shall be a ruler among them",
+        "target": [
+          "the future ruler from David’s line who will govern Israel",
+          "Davidic kingship in its ideal/restored form",
+          "institution of royal leadership"
+        ],
+        "vehicle": [
+          "the personal name 'David' used as the label for that future ruler",
+          "eponymous ancestor representing his descendants",
+          "dynastic/ancestral naming"
+        ],
+        "ground": [
+          "the future ruler is defined by continuity with David’s line and qualities, so David’s name can stand for that office",
+          "representative use of the founding figure’s name for his lineage",
+          "metonymic naming in royal ideology"
+        ],
+        "posture": [
+          "affirming continuity with the Davidic covenant and idealizing that rule",
+          "positive/covenantal",
+          "theological legitimation of future kingship"
+        ],
+        "explanation": "The mention of 'My servant David' uses David’s name metonymically for a future Davidic prince who will rule among the people.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 34:25",
+    "deliberation": "The 'covenant of peace' is a theological term; the removal of 'vicious beasts' and safety in wilderness and woods can be read literally, but in the chapter’s flow they also extend the earlier metaphor of beasts as threats (nations/hostile forces). I treat the beast-removal and fearless dwelling as one figurative assurance of comprehensive safety.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִשְׁבַּתִּ֥י חַיָּֽה־רָעָ֖ה מִן־הָאָ֑רֶץ וְיָשְׁב֤וּ בַמִּדְבָּר֙ לָבֶ֔טַח וְיָשְׁנ֖וּ בַּיְּעָרִֽים",
+        "english_text": "I will banish vicious beasts from their land, and they shall live secure in the wasteland, they shall even sleep in the woodland.",
+        "target": [
+          "God’s people freed from external and internal threats, living in comprehensive security",
+          "the community’s experience of peace and safety",
+          "social-political and environmental security"
+        ],
+        "vehicle": [
+          "removal of dangerous wild animals and the ability to dwell and sleep safely even in wilderness and forests",
+          "land free of predatory beasts",
+          "natural environment imagery"
+        ],
+        "ground": [
+          "just as there is complete safety when all predators are gone and even wild places are secure, so the restored people will enjoy pervasive peace without fear",
+          "absence of threat in all environments",
+          "total security"
+        ],
+        "posture": [
+          "strong reassurance of peace extending to all areas of life",
+          "comforting/confident",
+          "shalom-promise rhetoric"
+        ],
+        "explanation": "The banishment of 'vicious beasts' and safe sleeping in the wilderness figuratively portray a state of comprehensive peace where hostile forces (earlier likened to beasts) are eliminated.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 34:26",
+    "deliberation": "God will make 'them and the environs of My hill' a blessing and send 'rains of blessing.' 'My hill' is a metonymy for Zion / the central sanctuary-city, and rain functions as both literal provision and symbolic blessing. I treat 'my hill' as the clearest figurative element.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתִּ֥י אוֹתָ֛ם וּסְבִיב֥וֹת גִּבְעָתִ֖י בְּרָכָ֑ה",
+        "english_text": "I will make these and the environs of My hill a blessing",
+        "target": [
+          "Zion/Jerusalem and its surrounding population and territory",
+          "central worship center and its environs",
+          "religious-political heart of Israel"
+        ],
+        "vehicle": [
+          "‘My hill’ (גִּבְעָתִי) as a physical elevation belonging to God",
+          "sacred hill as shorthand for the sanctuary-city",
+          "topographic feature"
+        ],
+        "ground": [
+          "the temple mount or city is located on a hill and functions as God’s special dwelling, so 'My hill' stands for that cultic-political center",
+          "place-associated identity and representation",
+          "metonymic designation of sacred space"
+        ],
+        "posture": [
+          "positively portraying the central hill/city as a source and locus of blessing",
+          "affirming/elevating",
+          "theological geography"
+        ],
+        "explanation": "‘My hill’ uses the physical hill as a metonymy for Zion/Jerusalem (God’s dwelling and rule), whose environs God will make a blessing.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 34:27",
+    "deliberation": "The first half (trees yielding fruit, land yield) can be literal. The key figurative clause is 'when I break the bars of their yoke and rescue them from the hand of those who enslave them,' a standard metaphor of oppressive bondage as a yoke with bars that can be broken.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּשִׁבְרִי֙ אֶת־מֹט֣וֹת עֻלָּ֔ם וְהִ֨צַּלְתִּ֔ים מִיַּ֖ד הָעֹבְדִ֥ים בָּהֶֽם",
+        "english_text": "when I break the bars of their yoke and rescue them from those who enslave them",
+        "target": [
+          "Israel’s experience of political and economic oppression and God’s act of liberation",
+          "state of subjugation under foreign rule or exploiters",
+          "socio-political bondage"
+        ],
+        "vehicle": [
+          "a yoke with bars placed on animals, which can be shattered to free them",
+          "beasts of burden under a wooden yoke",
+          "agrarian labor equipment"
+        ],
+        "ground": [
+          "both a yoke and oppressive rule impose burdensome control; breaking the yoke and rescuing from a master correspond to liberation from domination",
+          "heavy, constraining control and its removal",
+          "oppression vs. freedom"
+        ],
+        "posture": [
+          "celebratory promise of emancipation from oppressive powers",
+          "liberating/hopeful",
+          "exodus-like salvation imagery"
+        ],
+        "explanation": "The 'bars of their yoke' metaphorically depict oppressive rule as a physical yoke on laboring animals; God’s 'breaking' of it symbolizes liberation from those who enslave them.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 34:28",
+    "deliberation": "They will no longer be 'spoil for the nations,' and 'the beasts of the earth shall not devour them'; they will dwell secure with 'none to make them afraid.' 'Spoil' and 'beasts devouring' extend the earlier images of plunder and predatory nations within the flock/predator metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְלֹא־יִהְי֨וּ ע֥וֹד בַּז֙ לַגּוֹיִ֔ם וְחַיַּ֥ת הָאָ֖רֶץ לֹ֣א תֹאכְלֵ֑ם",
+        "english_text": "They shall no longer be a spoil for the nations, and the beasts of the earth shall not devour them",
+        "target": [
+          "Israel’s cessation of being plundered and destroyed by foreign powers and other threats",
+          "vulnerable nation vis-à-vis surrounding peoples",
+          "international relations and security"
+        ],
+        "vehicle": [
+          "plunder (spoil) taken by victors and wild beasts that eat prey",
+          "war booty and animal predation",
+          "military and natural threat imagery"
+        ],
+        "ground": [
+          "in war, defeated peoples are treated as spoil, and like prey devoured by beasts; protection from both pictures safety from exploitation and violence",
+          "being treated as consumable objects vs. being secure",
+          "exposure to vs. freedom from destructive powers"
+        ],
+        "posture": [
+          "confident assurance of an end to exploitation and predation",
+          "reassuring/protective",
+          "salvation oracle"
+        ],
+        "explanation": "To no longer be 'spoil' and not be 'devoured' by beasts figuratively expresses that the people will cease to be plundered and destroyed by hostile nations and forces.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 34:29",
+    "deliberation": "God will raise up for them 'a planting of renown' (מַטָּע לְשֵׁם). This likely symbolizes a community/land that is fruitful and honored. The phrase is metaphorical; famine and disgrace removal are then stated literally or semi-literally.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַהֲקִמֹתִ֥י לָהֶ֛ם מַטָּ֖ע לְשֵׁ֑ם",
+        "english_text": "I shall establish for them a planting of renown",
+        "target": [
+          "a stable, fruitful, and honored state for God’s people (and/or their land)",
+          "restored community and its prosperity",
+          "national flourishing and reputation"
+        ],
+        "vehicle": [
+          "a 'planting' that has a name or renown",
+          "well-established, notable plantation or tree stand",
+          "agricultural/horticultural image"
+        ],
+        "ground": [
+          "as a well-rooted, fruitful planting gains recognition and endures, so the restored people/land will be fruitful, secure, and honored among nations",
+          "stability, productivity, and reputation",
+          "growth and esteem"
+        ],
+        "posture": [
+          "positive elevation of the people’s status and wellbeing",
+          "honorific/promise-laden",
+          "restoration and glorification rhetoric"
+        ],
+        "explanation": "The 'planting of renown' metaphor portrays the community (or its land) as a well-established, fruitful planting whose flourishing will be recognized, countering famine and disgrace.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 34:30",
+    "deliberation": "The verse states the covenant formula 'I am YHWH their God with them and they ... are My people' and refers to 'the house of Israel.' The main figurative element is 'house of Israel,' a metonym/synecdoche where 'house' stands for the whole nation descended from Israel/Jacob.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בֵּ֣ית יִשְׂרָאֵ֔ל",
+        "english_text": "the House of Israel",
+        "target": [
+          "the people/nation descended from Israel (Jacob)",
+          "corporate national entity",
+          "ethnic-religious community of Israel"
+        ],
+        "vehicle": [
+          "a 'house' belonging to or consisting of Israel",
+          "household as extended family line",
+          "domestic/kinship structure"
+        ],
+        "ground": [
+          "a house can stand for the whole family or dynasty dwelling in it; likewise 'House of Israel' stands for Israel’s descendants collectively",
+          "use of a family/household term to denote a whole people",
+          "synecdochic and metonymic naming"
+        ],
+        "posture": [
+          "affirming corporate identity in covenant relationship",
+          "inclusive/relational",
+          "covenant declaration style"
+        ],
+        "explanation": "The expression 'House of Israel' uses the image of a household to stand metonymically and synecdochically for the entire nation descended from Israel.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 34:31",
+    "deliberation": "This verse explicitly restates the pastoral metaphor: 'you—My flock, the flock of My pasture—are human.' The first part is metaphorical (people as God’s flock and pasture-sheep), while the second part clarifies the literal referent. I treat the flock/pasture image as one major metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְאַתֵּ֥ן צֹאנִ֛י צֹ֥אן מַרְעִיתִ֖י אָדָ֣ם אַתֶּ֑ם",
+        "english_text": "For you—My flock, the flock that I tend—are human",
+        "target": [
+          "God’s human people in covenant with Him",
+          "community of believers/Israel",
+          "covenant people as humans under divine care"
+        ],
+        "vehicle": [
+          "a flock of sheep belonging to and pastured by a shepherd",
+          "sheep of a pasture under a shepherd’s care",
+          "pastoral image of ownership and provision"
+        ],
+        "ground": [
+          "both sheep and God’s people depend on a caretaker for provision, protection, and guidance",
+          "belonging to a caretaker and living off his pasture",
+          "dependence, ownership, and sustained care"
+        ],
+        "posture": [
+          "clarifying the metaphor while reinforcing intimacy and responsibility",
+          "didactic/affirming",
+          "interpretive closure to the shepherd-flock imagery"
+        ],
+        "explanation": "By calling them 'My flock, the flock of My pasture,' God reaffirms the shepherd metaphor—He owns, feeds, and cares for them like a shepherd—then explicitly states that these 'sheep' are actually human.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

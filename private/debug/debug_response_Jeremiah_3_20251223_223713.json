@@ -1,0 +1,771 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 3:1",
+    "deliberation": "Saw an initial legal scenario from Deut 24 that is largely literal, but noted two figurative elements: (1) the extended metaphor of Israel as a woman who has 'whored with many lovers' for covenant unfaithfulness/idolatry, and (2) the 'land' being defiled as a way of speaking about communal moral pollution, with the land standing metonymically for its people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַתְּ זָנִית רֵעִים רַבִּים",
+        "english_text": "Now you have whored with many lovers",
+        "target": ["Israel’s covenant behavior toward YHWH", "spiritual fidelity/infidelity", "religious-covenantal life"],
+        "vehicle": ["a woman/prostitute with many lovers", "marital and sexual promiscuity", "human sexuality and marriage"],
+        "ground": ["unfaithfulness and promiscuity toward the one partner", "violation of an exclusive bond and impurity", "breach of covenant obligations"],
+        "posture": ["accusation of betrayal", "prophetic judgment oracle", "rhetorical indictment in covenant lawsuit"],
+        "explanation": "Israel’s idolatry and covenant treachery are depicted as a woman’s sexual promiscuity with many lovers, casting their sin in the vivid terms of marital infidelity.",
+        "confidence": 0.99
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֲלֹא חָנֹף תֶּחֱנַף הָאָרֶץ הַהִיא",
+        "english_text": "Would not such a land be defiled?",
+        "target": ["the moral-spiritual state of the community", "corporate guilt resulting from apostasy", "the covenant people in their land"],
+        "vehicle": ["a land/soil made ritually impure", "physical cultic defilement of territory", "sacred space that can be polluted"],
+        "ground": ["sin as contamination spreading over the whole environment", "the way individual acts affect the whole community and its standing before God", "covenant-breaking portrayed as defiling the very land"],
+        "posture": ["warning about consequences", "theological evaluation of sin", "prophetic explanation of covenant curse imagery"],
+        "explanation": "The physical ‘land’ stands for the community dwelling in it, and their moral apostasy is portrayed as ritual defilement of that land, using cultic impurity imagery for moral corruption.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 3:2",
+    "deliberation": "Noted continuation of sexual imagery for idolatry. Identified an explicit simile ('like an Arab in the wilderness') describing Israel’s predatory eagerness, and another metaphor of the land being polluted by harlotries and wickedness, again using cultic-pollution language for moral evil.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־דְּרָכִים יָשַׁבְתְּ לָהֶם כַּעֲרָבִי בַּמִּדְבָּר",
+        "english_text": "On the roads you sat for them like a bandit/Arab in the wilderness",
+        "target": ["Israel’s eager pursuit of illicit worship and alliances", "their spiritual and moral predation", "religious and political behavior"],
+        "vehicle": ["a bandit/Arab lying in wait in the desert", "ambush predator on roads", "wilderness raider"],
+        "ground": ["active, deliberate lying in wait for victims/partners", "aggressive initiative rather than passive seduction", "readiness to seize any passing opportunity for unfaithfulness"],
+        "posture": ["intensification of accusation", "vivid characterization of guilt", "rhetorical shaming through comparison"],
+        "explanation": "Israel’s readiness to meet illicit partners (other gods or nations) is likened to a highwayman lying in ambush, emphasizing their proactive, predatory stance in sin.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתַּחֲנִיפִי אֶרֶץ בִּזְנוּתַיִךְ וּבְרָעָתֵךְ",
+        "english_text": "And you defiled the land with your whoring and your wickedness",
+        "target": ["the nation’s moral and spiritual condition", "effects of Israel’s idolatry on the community", "the covenant people as a whole"],
+        "vehicle": ["a land that is ritualistically defiled", "polluted territory", "cultically contaminated space"],
+        "ground": ["sin and idolatry as contaminating forces", "individual acts of harlotry staining the whole country", "moral evil portrayed as impurity clinging to the land"],
+        "posture": ["interpretive evaluation of their behavior", "warning about the breadth of consequences", "prophetic use of cultic imagery to condemn sin"],
+        "explanation": "The verse portrays Israel’s idolatrous ‘whoring’ and wickedness as defiling the land itself, using ritual pollution language for widespread moral corruption; ‘land’ stands for the community affected.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 3:3",
+    "deliberation": "Considered whether the withholding of rains is figurative or literal covenant curse; treated it as literal judgment imagery. Identified one clear metaphor: having 'the forehead of a prostitute' as a way to describe Judah’s shamelessness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמֵצַח אִשָּׁה זוֹנָה הָיָה לָךְ",
+        "english_text": "You had the forehead of a streetwalker/prostitute",
+        "target": ["Judah’s moral attitude in sin", "her lack of shame over apostasy", "inner disposition of the people"],
+        "vehicle": ["the forehead/face of a prostitute", "brazen facial expression", "unblushing countenance"],
+        "ground": ["shamelessness and brazen boldness in wrongdoing", "thick-skinned refusal to blush", "public, unabashed sinning"],
+        "posture": ["rebuke of hardened attitude", "exposure of inner disposition", "heightening moral outrage through vivid image"],
+        "explanation": "Judah’s refusal to be ashamed is depicted as having ‘the forehead of a prostitute,’ a metaphor for brazen, unblushing shamelessness in open sin.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 3:4",
+    "deliberation": "Noted two relational titles used of God—'Father' and 'companion of my youth.' Both are metaphors for the covenant relationship, evoking familial and intimate companionship imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָבִי",
+        "english_text": "Father!",
+        "target": ["YHWH’s covenant relationship to Israel", "God’s role toward His people", "divine–human relation"],
+        "vehicle": ["a human father", "parent–child relationship", "family life"],
+        "ground": ["care, authority, provision, and discipline", "origin and upbringing", "obligation of filial respect and obedience"],
+        "posture": ["appeal for mercy by invoking intimacy", "rhetorical self-presentation as loyal child", "attempt to soften judgment language"],
+        "explanation": "Calling God 'Father' metaphorically presents the covenant bond as a parent–child relationship, highlighting care, authority, and expected obedience.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַלּוּף נְעֻרַי אָתָּה",
+        "english_text": "You are the companion of my youth",
+        "target": ["Israel’s long-standing relationship with YHWH", "their early covenant history", "divine–human bond over time"],
+        "vehicle": ["a close youthful companion or intimate friend", "longtime trusted associate", "human friendship"],
+        "ground": ["early shared history, intimacy, and loyalty", "deep familiarity from youth", "sense of belonging together over time"],
+        "posture": ["appeal to shared history", "attempt to obligate God through remembered intimacy", "rhetorical self-justification despite current betrayal"],
+        "explanation": "Israel depicts God as a ‘companion of my youth,’ a metaphor evoking an intimate, long-standing friendship to argue for continued favor.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 3:5",
+    "deliberation": "Saw rhetorical questions about whether anger lasts forever. Identified a conventional idiom that conceptualizes anger as something 'kept/guarded' forever—an underlying conceptual metaphor plus hyperbolic 'forever' language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲיִנְטֹר לְעוֹלָם אִם־יִשְׁמֹר לָנֶצַח",
+        "english_text": "Does one hate/keep (anger) for all time? Does one guard (it) forever?",
+        "target": ["the duration of YHWH’s anger", "God’s emotional stance toward Israel", "divine wrath"],
+        "vehicle": ["an object that is kept and guarded indefinitely", "a possession stored over time", "material goods held in reserve"],
+        "ground": ["anger represented as something that can be stored and retained", "possibility of long-term preservation or release", "control over whether to keep or discard it"],
+        "posture": ["minimizing seriousness of sin through rhetoric", "testing limits of divine patience", "probing expectation that God will not stay angry forever"],
+        "explanation": "The idiom treats anger as an object one can ‘keep/guard forever,’ a metaphorical way of speaking about sustained wrath, with ‘forever’ adding hyperbolic force.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 3:6",
+    "deliberation": "Verse combines stock cultic locale phrase ('every high mountain and under every green tree') with the key image 'and whored there.' Took the locations as metonymy for idolatrous shrines, and the 'whoring' as metaphor for idolatry/spiritual infidelity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־כׇּל־הַר גָּבֹהַּ וְאֶל־תַּחַת כׇּל־עֵץ רַעֲנָן",
+        "english_text": "on every high mountain and under every leafy tree",
+        "target": ["sites of Israel’s idolatrous worship", "the whole network of pagan cult places", "religious practices of apostasy"],
+        "vehicle": ["high mountains and leafy trees", "prominent heights and secluded groves", "natural cultic sites"],
+        "ground": ["these places stand for the pagan shrines located there", "familiar formula for idolatrous worship spots", "physical locales representing the associated practices"],
+        "posture": ["cataloging the extent of idolatry", "evoking well-known imagery of pagan worship", "condemning the spread of illicit cults"],
+        "explanation": "‘Every high mountain and under every leafy tree’ is a stereotyped way of referring to high-place shrines and grove worship, where the physical locales are metonymy for the idolatrous rituals performed there.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּזְנִי־שָׁם",
+        "english_text": "and whored there",
+        "target": ["Israel’s idolatry and covenant treachery", "spiritual unfaithfulness to YHWH", "religious conduct at those sites"],
+        "vehicle": ["sexual prostitution", "a woman’s whoring", "marital/sexual immorality"],
+        "ground": ["violation of exclusive loyalty", "selling oneself to others", "shameful, illicit intimacy with many partners"],
+        "posture": ["moral denunciation through shocking language", "casting idolatry as adultery", "heightening the sense of betrayal"],
+        "explanation": "Israel’s worship of other gods at high places is portrayed as ‘whoring,’ metaphorically casting idolatry as sexual prostitution and thus as covenantal adultery against YHWH.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 3:7",
+    "deliberation": "Beyond the narrative structure, the key figurative element is the repeated reference to Israel and Judah as 'sisters,' personifying the two kingdoms as related women within the broader marital infidelity metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בָּגוֹדָה אֲחוֹתָהּ יְהוּדָה",
+        "english_text": "and her sister, Faithless Judah, saw it",
+        "target": ["the kingdom/people of Judah", "the political community related to Israel", "the southern nation as a collective"],
+        "vehicle": ["a sister of Israel", "female sibling in a family", "personified woman"],
+        "ground": ["close kinship and shared family status", "parallel identity and destiny", "capacity to learn from a sister’s example"],
+        "posture": ["emphasizing Judah’s culpability by familial comparison", "heightening shame (sister repeating same betrayal)", "structuring the discourse as a family drama"],
+        "explanation": "Judah is personified as the ‘sister’ of Israel, casting the two kingdoms as related women within a family drama of marital infidelity and warning.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 3:8",
+    "deliberation": "The verse extends the marital metaphor: Israel is said to have 'committed adultery'; YHWH 'sent her away' and gave a 'bill of divorce'; Judah then 'went and whored also.' Treated this as one coherent adultery/divorce metaphor for covenant rupture.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־כׇּל־אֹדוֹת אֲשֶׁר נִאֲפָה מְשֻׁבָה יִשְׂרָאֵל שִׁלַּחְתִּיהָ וָאֶתֵּן אֶת־סֵפֶר כְּרִיתֻתֶיהָ אֵלֶיהָ ... וַתֵּלֶךְ וַתִּזֶן גַּם־הִיא",
+        "english_text": "Because Rebel Israel had committed adultery, I cast her off and handed her a bill of divorce ... she too went and whored.",
+        "target": ["YHWH’s covenant with Israel (and Judah)", "the breach and termination of that covenant", "national apostasy and exile"],
+        "vehicle": ["marriage violated by adultery and ended by divorce", "unfaithful wife and legal bill of divorce", "sexual whoring by a married woman"],
+        "ground": ["exclusive relationship broken by infidelity", "formal severing of the bond because of persistent adultery", "shameful pursuit of other partners despite being married"],
+        "posture": ["justifying divine judgment (exile) as a lawful ‘divorce’", "exposing the seriousness of idolatry", "warning Judah by Israel’s example"],
+        "explanation": "Israel’s idolatry is portrayed as adultery, and God’s judgment as issuing a divorce document; Judah then imitates this ‘whoring,’ extending the marital-legal metaphor for covenant rupture.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 3:9",
+    "deliberation": "Observed both (1) the land again 'defiled' by her harlotry, and (2) the striking line that she 'committed adultery with stone and wood,' personifying idols and extending sexual imagery to inanimate materials.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתֶּחֱנַף אֶת־הָאָרֶץ",
+        "english_text": "the land was defiled",
+        "target": ["the community’s spiritual and moral condition", "the cumulative guilt of Israel’s behavior", "the nation in its land"],
+        "vehicle": ["a land rendered ritually polluted", "unclean territory", "contaminated sacred space"],
+        "ground": ["sin as defilement that clings to the whole country", "corporate impact of individual harlotries", "covenant violations staining the land"],
+        "posture": ["highlighting the breadth of damage caused by sin", "using cultic imagery to intensify the indictment", "explaining why judgment on the land is warranted"],
+        "explanation": "Israel’s harlotries are said to ‘defile the land,’ using cultic impurity imagery to describe moral and spiritual corruption; ‘land’ functions metonymically for the people and their environment.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּנְאַף אֶת־הָאֶבֶן וְאֶת־הָעֵץ",
+        "english_text": "she committed adultery with stone and with wood",
+        "target": ["Israel’s worship of idols", "their relationship to man-made gods", "acts of idolatrous devotion"],
+        "vehicle": ["adulterous sexual relations with partners", "a married woman’s affairs", "sexual intimacy with lovers"],
+        "ground": ["giving to idols the loyalty and affection owed to YHWH", "entering into intimate, exclusive bonds with false gods", "shameful, illicit union with what cannot truly be a spouse"],
+        "posture": ["ridiculing the worship of lifeless idols", "heightening the indecency of idolatry", "portraying devotion to idols as grotesque sexual betrayal"],
+        "explanation": "By saying she ‘committed adultery with stone and wood,’ the prophet personifies the idol materials and frames Israel’s idol worship as adulterous intercourse with them, underlining both the folly and the betrayal of such worship.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 3:10",
+    "deliberation": "Looked for major imagery; found none like the strong marital metaphors earlier. Noted, however, the idiomatic use of 'with all her heart' where 'heart' stands for the inner self, making this a metonymic expression for total, sincere commitment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּכׇל־לִבָּהּ ... כִּי אִם־בְּשֶׁקֶר",
+        "english_text": "not ... wholeheartedly, but insincerely (lit. not with all her heart but in falsehood)",
+        "target": ["Judah’s inner disposition in returning to YHWH", "the sincerity of her repentance", "her true spiritual state"],
+        "vehicle": ["the ‘heart’ as the inner person and will", "totality expressed as ‘all the heart’", "falsehood as a sphere of action ('in lie')"],
+        "ground": ["heart standing for the whole inner self (metonymy)", "complete commitment vs. partial, deceptive involvement", "external return masking inward falseness"],
+        "posture": ["unmasking superficial religiosity", "clarifying that outward return did not match inner reality", "discrediting Judah’s apparent repentance"],
+        "explanation": "The phrase ‘with all her heart’ uses ‘heart’ metonymically for the whole inner self, contrasting true, total commitment with a merely external, insincere return ‘in falsehood.’",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 3:11",
+    "deliberation": "The logic is comparative, but the figurative element is the ongoing personification of 'Rebel Israel' and 'Faithless Judah' as moral agents, implicitly as women in the surrounding marital metaphor, whose souls are said to have 'proved righteous' in comparison.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צִדְּקָה נַפְשָׁהּ מְשֻׁבָה יִשְׂרָאֵל מִבֹּגֵדָה יְהוּדָה",
+        "english_text": "Rebel Israel has shown herself more in the right than Faithless Judah",
+        "target": ["the corporate entities of Israel and Judah", "their comparative moral status", "the two kingdoms as covenant partners"],
+        "vehicle": ["individual women whose moral character can be rated", "personified souls that ‘prove’ themselves", "female figures labeled 'rebellious' and 'treacherous'"],
+        "ground": ["nations treated as single moral persons", "capacity to be comparatively justified or condemned", "continuation of the marital-family personification"],
+        "posture": ["reframing expectations (Israel surprisingly ‘less guilty’)", "heightening Judah’s guilt by comparison", "developing the family drama of two sisters"],
+        "explanation": "Israel and Judah are personified (within the larger marital metaphor) as women whose ‘souls’ can be judged, allowing God to say that Rebel Israel has in some sense proved more righteous than Faithless Judah.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 3:12",
+    "deliberation": "Considered idioms about anger and bearing a grudge. Chose one clear anthropomorphic metaphor: 'I will not cause my face to fall upon you,' where God’s 'face' and its direction are used to speak about his attitude and anger.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא־אַפִּיל פָּנַי בָּכֶם",
+        "english_text": "I will not look on you in anger (lit. I will not cause my face to fall upon you)",
+        "target": ["YHWH’s attitude toward repentant Israel", "the manifestation of divine anger or favor", "God’s relational stance"],
+        "vehicle": ["a human face turned toward or away from someone", "a ‘fallen’ or darkened countenance", "facial expression indicating displeasure"],
+        "ground": ["facial orientation symbolizes inner attitude", "a downcast face corresponds to disfavor or anger", "withholding the ‘fallen face’ equals withholding wrath"],
+        "posture": ["offering reassurance of mercy", "softening previous threats of wrath", "inviting repentance with promise of changed divine stance"],
+        "explanation": "God’s relational stance is expressed by the idiom of his ‘face’ falling upon the people; promising not to do so metaphorically signals that he will not let anger rest on them if they return.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 3:13",
+    "deliberation": "Detected the continuation of sexual-prostitution imagery in 'you scattered your ways to strangers under every leafy tree'—portraying Israel’s many idolatries and alliances as promiscuous scattering of herself, with 'every leafy tree' again metonymic for cult sites.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתְּפַזְּרִי אֶת־דְּרָכַיִךְ לַזָּרִים תַּחַת כׇּל־עֵץ רַעֲנָן",
+        "english_text": "and scattered your ways among strangers under every leafy tree",
+        "target": ["Israel’s religious and political infidelities", "her turning to foreign gods and powers", "the pattern of national apostasy"],
+        "vehicle": ["a woman scattering her favors/ways to many strangers", "promiscuous sexual availability", "locations under leafy trees as cult shrines"],
+        "ground": ["indiscriminate giving of herself to many partners", "seeking intimacy with ‘strangers’ instead of the rightful spouse", "use of groves/high-places as emblematic idolatrous sites"],
+        "posture": ["exposing the breadth of betrayal", "framing idolatry as sexual promiscuity", "connecting behavior to specific cult locales"],
+        "explanation": "Israel’s ‘ways’ are scattered to strangers like a promiscuous woman’s favors, and ‘under every leafy tree’ evokes the high-place groves, combining prostitution metaphor with metonymic reference to cult sites.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 3:14",
+    "deliberation": "Noted two overlapping relational images: (1) the address 'rebellious children,' which assumes God as parent, and (2) 'for I am baʿalti bakhem' ('I am a husband/master to you'), explicitly marital. Treated these as two distinct but related metaphors (parent–child and husband–wife).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שׁוּבוּ בָנִים שׁוֹבָבִים",
+        "english_text": "Turn back, rebellious children",
+        "target": ["Israel’s relationship to YHWH", "their status as people under God", "the nation addressed in its guilt"],
+        "vehicle": ["children who have rebelled against a parent", "wayward sons in a household", "family dynamics of discipline and return"],
+        "ground": ["dependence and obligation of children to a parent", "rebellion as disobedience to rightful authority", "expectation of parental correction and acceptance upon return"],
+        "posture": ["calling for repentance in familial terms", "softening the call with parental imagery", "holding out hope of restoration despite rebellion"],
+        "explanation": "By calling them 'rebellious children,' God portrays Israel as wayward sons under a parent’s authority, using the parent–child metaphor to frame both their sin and the possibility of return.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי אָנֹכִי בָּעַלְתִּי בָכֶם",
+        "english_text": "For I am a husband to you (I have espoused you)",
+        "target": ["YHWH’s covenant bond with Israel", "the exclusivity of the divine–Israel relationship", "Israel’s identity as God’s people"],
+        "vehicle": ["a husband in a marriage", "marital union and legal bond", "spousal relationship"],
+        "ground": ["exclusive, covenantal belonging", "rights of a husband over his wife and care for her", "obligation of faithful love and loyalty"],
+        "posture": ["asserting God’s rightful claim over Israel", "preparing for language of marital infidelity and restoration", "inviting return on the basis of existing bond"],
+        "explanation": "God describes himself as Israel’s ‘husband,’ using a marital metaphor to express the exclusive, covenantal nature of their relationship, which makes their rebellion adulterous.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 3:15",
+    "deliberation": "Recognized the classic shepherd metaphor: God will give 'shepherds after my heart' who will 'pasture' the people with knowledge and understanding. Leaders are figurative shepherds; people are a flock; instruction is food.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי לָכֶם רֹעִים כְּלִבִּי וְרָעוּ אֶתְכֶם דֵּעָה וְהַשְׂכֵּיל",
+        "english_text": "I will give you shepherds after My own heart, who will pasture you with knowledge and skill",
+        "target": ["future leaders of Israel", "the community’s spiritual and political guidance", "the people’s formation and care"],
+        "vehicle": ["shepherds caring for a flock", "pasturing activity", "grazing animals under wise oversight"],
+        "ground": ["leaders as protectors, providers, and guides", "people as vulnerable flock needing feeding and direction", "knowledge and skill as nourishment and wise guidance"],
+        "posture": ["promise of restorative leadership", "contrasting future good shepherds with past bad ones", "assuring people of tender, knowledgeable care"],
+        "explanation": "God promises leaders who will be like good shepherds, pasturing the people with knowledge and insight; the ruler-as-shepherd and people-as-flock metaphor highlights protection, provision, and wise guidance.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 3:16",
+    "deliberation": "Most of the verse seems straightforwardly predictive about the Ark fading from focus. Noted, however, the idiom 'it will not come up on the heart' for 'it will not come to mind,' using 'heart' metonymically for the inner thinking faculties.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא יַעֲלֶה עַל־לֵב",
+        "english_text": "nor shall it come to mind (lit. not go up upon the heart)",
+        "target": ["human remembering and thinking about the Ark", "mental attention and concern", "inner cognitive processes"],
+        "vehicle": ["the ‘heart’ as seat of thought and intention", "something rising up upon the heart", "an image of ideas arriving in the inner self"],
+        "ground": ["heart representing the mind/inner person", "remembering pictured as something arising within", "no recollection = nothing ‘going up’ on the heart"],
+        "posture": ["describing a future shift in religious focus", "downplaying attachment to the Ark", "indicating inner as well as outward change"],
+        "explanation": "The Hebrew idiom ‘go up upon the heart’ uses ‘heart’ metonymically for the mind or inner person; saying the Ark will not ‘go up upon the heart’ means it will no longer be remembered or considered.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 3:17",
+    "deliberation": "Identified two distinct images: (1) Jerusalem called 'the throne of YHWH'—a city metaphorically functioning as God’s throne; and (2) 'they will not walk after the stubbornness of their evil heart'—life as walking and the heart as inner guide, an ethical-path metaphor combined with heart-metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יִקְרְאוּ לִירוּשָׁלַ͏ִם כִּסֵּא יְהוָה",
+        "english_text": "they shall call Jerusalem 'GOD’s Throne'",
+        "target": ["Jerusalem’s future status and role", "the city as locus of God’s rule and presence", "Zion in the eschatological vision"],
+        "vehicle": ["a royal throne", "seat of a king’s rule", "place of authority and presence"],
+        "ground": ["Jerusalem as the center from which God’s kingship is manifested", "the city representing divine authority and presence", "honor and centrality implied by being a ‘throne’"],
+        "posture": ["elevating Jerusalem’s significance", "expressing hope for universal recognition of YHWH’s rule", "portraying the city in regal, symbolic terms"],
+        "explanation": "Jerusalem is metaphorically called ‘GOD’s Throne’; the city stands metonymically for the locus of divine rule and presence, as a throne is for a king.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא־יֵלְכוּ עוֹד אַחֲרֵי שְׁרִרוּת לִבָּם הָרָע",
+        "english_text": "They shall no longer follow the willfulness of their evil hearts",
+        "target": ["the people’s pattern of moral and spiritual conduct", "their obedience or disobedience", "inner motivations driving outward life"],
+        "vehicle": ["walking/following a path", "heart as leader/guide", "stubbornness as a path to be followed"],
+        "ground": ["life portrayed as a walk on a path", "heart representing the inner inclinations and decisions", "to ‘follow the heart’ = to live according to its impulses"],
+        "posture": ["promising inner moral transformation", "contrasting past stubbornness with future obedience", "reframing repentance as a change of ‘walk’ and ‘heart’"],
+        "explanation": "The people’s conduct is expressed as ‘walking after’ their evil heart’s stubbornness: a path-walking metaphor where ‘heart’ metonymically denotes inner will, so repentance is a change in what (or whom) they follow.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 3:18",
+    "deliberation": "The movement from the land of the north back to the promised land is literal restoration imagery. The notable figurative element is 'House of Judah' and 'House of Israel,' where 'house' stands metonymically for the people/nation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית־יְהוּדָה ... בֵּית יִשְׂרָאֵל",
+        "english_text": "the House of Judah ... the House of Israel",
+        "target": ["the peoples/kingdoms of Judah and Israel", "the two communities in exile and restoration", "the national entities as a whole"],
+        "vehicle": ["a ‘house’ or household", "domestic unit under one head", "dynastic or family structure"],
+        "ground": ["house standing for the family/clan/nation", "emphasis on shared household identity", "unity and lineage implied by ‘house’"],
+        "posture": ["stressing kinship and shared destiny", "preparing for reunification imagery", "speaking of nations in familial-corporate terms"],
+        "explanation": "‘House of Judah’ and ‘House of Israel’ use ‘house’ metonymically to refer to the entire people or kingdom, framing them as large family units that will again journey together.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 3:19",
+    "deliberation": "Identified the dual imagery of (1) God expecting Israel to call him 'Father' (parent–child metaphor) and (2) ‘not turning back from after me,’ conceptualizing faithfulness as continuing to follow God on a path.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָבִי תִּקְרְאִי־לִי",
+        "english_text": "you would surely call Me 'Father'",
+        "target": ["the relationship God intended with Israel", "their posture toward YHWH", "covenant self-understanding of the people"],
+        "vehicle": ["a child addressing a human father", "parent–child family relationship", "intimate and respectful familial bond"],
+        "ground": ["dependence, care, and authority in the relationship", "trust and obedience expected from a child", "closeness of address and identity"],
+        "posture": ["expressing God’s hopeful intention for intimacy", "showing how far their betrayal falls short", "contrasting desired filial loyalty with actual treachery"],
+        "explanation": "God intended Israel to relate to Him as to a father, using the parent–child metaphor to frame the covenant in terms of familial intimacy and loyal obedience.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמֵאַחֲרַי לֹא תָשׁוּבִי",
+        "english_text": "and never cease to be loyal to Me (lit. and from after Me you would not turn back)",
+        "target": ["Israel’s faithfulness or apostasy", "ongoing adherence to YHWH", "their spiritual direction over time"],
+        "vehicle": ["following someone on a path", "turning back from following", "journeying behind a leader"],
+        "ground": ["life of faith as walking behind God", "apostasy as turning back from following", "direction and movement representing loyalty or desertion"],
+        "posture": ["depicting faithfulness as sustained following", "showing betrayal as a reversal of direction", "intensifying the sense of relational departure"],
+        "explanation": "Israel’s loyalty is expressed as continuing to ‘follow after’ God; to turn back ‘from after’ Him is metaphorically to abandon the path of discipleship and covenant obedience.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 3:20",
+    "deliberation": "Here the marital metaphor is expressed explicitly as a simile: 'as a woman breaks faith with her companion, so you have broken faith with Me.' Treated this as a distinct simile within the broader marriage imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָכֵן בָּגְדָה אִשָּׁה מֵרֵעָהּ כֵּן בְּגַדְתֶּם בִּי בֵּית יִשְׂרָאֵל",
+        "english_text": "As a woman breaks faith with her companion, so you have broken faith with Me, O House of Israel",
+        "target": ["Israel’s betrayal of YHWH", "covenant unfaithfulness of the nation", "their relational stance toward God"],
+        "vehicle": ["a woman betraying her male companion/husband", "marital infidelity", "personal relationship ruptured by unfaithfulness"],
+        "ground": ["breach of exclusive loyalty and trust", "hidden or deliberate betrayal of a partner", "shock and shame associated with adultery"],
+        "posture": ["dramatizing Israel’s betrayal", "making the accusation emotionally vivid through comparison", "placing Israel’s sin in the sphere of intimate relational treachery"],
+        "explanation": "Israel’s covenant breach is likened to a woman’s betrayal of her companion, explicitly using a simile to cast their sin as an act of marital infidelity against God.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 3:21",
+    "deliberation": "Heard 'voice on the heights' and 'weeping'; these likely describe actual or envisioned repentance and so may be taken literally. The clear figurative expression is 'they have gone a crooked way,' treating their conduct as a pathway that has become twisted.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי הֶעֱווּ אֶת־דַּרְכָּם",
+        "english_text": "For they have gone a crooked way (lit. they have twisted their way)",
+        "target": ["Israel’s pattern of behavior", "their moral and spiritual conduct", "course of life and choices"],
+        "vehicle": ["a path or way that is twisted/crooked", "distorted road", "irregular route"],
+        "ground": ["conduct conceived as walking a ‘way’", "sin as deviation from a straight path", "crookedness representing moral distortion"],
+        "posture": ["morally evaluating their behavior", "implying a standard ‘straight’ way they should have taken", "preparing for a call to return to the right path"],
+        "explanation": "The people’s behavior is described as a ‘twisted way,’ using the common path metaphor where right conduct is a straight road and sin is a crooked, distorted path.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 3:22",
+    "deliberation": "Identified the healing metaphor in 'I will heal your backslidings/turnings.' Spiritual apostasy is conceptualized as an illness or wound; God is the healer.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶרְפָּה מְשׁוּבֹתֵיכֶם",
+        "english_text": "I will heal your backslidings",
+        "target": ["Israel’s repeated apostasies", "their spiritual instability and rebellion", "the condition produced by their sin"],
+        "vehicle": ["an illness or wound that needs healing", "medical treatment", "restoration of health"],
+        "ground": ["apostasy portrayed as sickness", "God as physician restoring health", "healing as reversal of damaging condition"],
+        "posture": ["offering hope despite deep sickness of sin", "reframing repentance as receiving healing", "emphasizing God’s restorative compassion"],
+        "explanation": "Their ‘backslidings’ are treated as a disease that God will ‘heal,’ casting spiritual rebellion in medical terms and YHWH as the one who restores them to health.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 3:23",
+    "deliberation": "The line contrasts deceptive help from 'hills' and 'mountains' with true deliverance from YHWH. Took 'hills' and 'mountains' as metonymy for high-place cults and political reliance associated with them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אָכֵן לַשֶּׁקֶר מִגְּבָעוֹת הָמוֹן הָרִים",
+        "english_text": "Surely, futility comes from the hills, confusion from the mountains",
+        "target": ["false sources of help and salvation", "idolatrous high-place worship and alliances", "objects of misplaced trust"],
+        "vehicle": ["hills and the throng of mountains", "elevated terrain", "visible high places"],
+        "ground": ["hills/mountains standing for the cultic/high-place system located there", "elevation associated with pagan shrines and political alliances", "these sites embodying deceptive expectations of help"],
+        "posture": ["denouncing idolatrous reliance", "contrasting false hope with true salvation in YHWH", "discrediting the religious-political system tied to high places"],
+        "explanation": "‘Hills’ and ‘mountains’ function metonymically for the high-place shrines and the system of idolatrous reliance associated with them; from these, only deception comes, in contrast to YHWH who truly saves.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 3:24",
+    "deliberation": "Here 'the Shameful Thing' is a contemptuous title for Baal; it is said to have 'eaten' the labor and offspring of their ancestors. This personifies the idol and uses devouring imagery for the destructive consequences of idolatry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהַבֹּשֶׁת אָכְלָה אֶת־יְגִיעַ אֲבוֹתֵינוּ ... אֶת־בְּנֵיהֶם וְאֶת־בְּנוֹתֵיהֶם",
+        "english_text": "But the Shameful Thing has consumed the possessions of our ancestors ... their sons and daughters",
+        "target": ["Baal-worship and its effects", "the system of idolatry they embraced", "what has destroyed their goods and families"],
+        "vehicle": ["‘the Shameful Thing’ as a devouring entity", "a creature that eats labor, flocks, and children", "voracious consumer"],
+        "ground": ["idolatry portrayed as something that devours resources and lives", "Baal as a shameful power that consumes what people value", "destructive consequences equated with being eaten up"],
+        "posture": ["confessing the ruinous cost of idolatry", "mocking Baal by calling him ‘Shame’", "emphasizing total loss (possessions and offspring) by devouring image"],
+        "explanation": "Baal, derisively called ‘the Shameful Thing,’ is personified as a devourer that has ‘eaten’ their labor, flocks, and even children, metaphorically depicting idolatry as consuming and destroying everything.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 3:25",
+    "deliberation": "Observed confession language plus vivid images: 'let us lie down in our shame' and 'let our disgrace cover us.' Took these as metaphors that treat shame as a place to lie in and as a covering garment over the people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִשְׁכְּבָה בְּבׇשְׁתֵּנוּ וּתְכַסֵּנוּ כְּלִמָּתֵנוּ",
+        "english_text": "Let us lie down in our shame, let our disgrace cover us",
+        "target": ["Israel’s guilty condition and acknowledgement of sin", "their sense of humiliation", "the community under judgment"],
+        "vehicle": ["a place or bed of shame to lie in", "a garment or covering of disgrace", "physical enclosure and covering"],
+        "ground": ["shame experienced as something surrounding and over one", "overwhelming disgrace likened to a covering", "passive submission to deserved humiliation as ‘lying down’ in it"],
+        "posture": ["expressing deep contrition", "accepting the consequences of sin", "dramatizing repentance through bodily imagery"],
+        "explanation": "Shame is depicted as a place to lie in and disgrace as a garment that covers, metaphorically conveying how completely guilt envelops the people and how they submit to its weight in confession.",
+        "confidence": 0.94
+      }
+    ]
+  }
+]

@@ -1,0 +1,668 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 22:1",
+    "deliberation": "Checked for metaphorical uses (e.g., 'go down,' 'house of the king') or personification. Here 'go down to the house of the king of Judah' is best read as a literal spatial movement to the royal palace; no clear figurative device stands out.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 22:2",
+    "deliberation": "Considered whether 'throne of David' and 'gates' are literal or figurative. The phrase 'throne of David' functions as a dynastic symbol, a metonymy for royal authority in David’s line.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַיֹּשֵׁב עַל־כִּסֵּא דָוִד",
+        "english_text": "you who sit on the throne of David",
+        "target": ["the current king’s royal authority", "kingship/dynasty", "political"],
+        "vehicle": ["throne of David", "royal seat/dynastic symbol", "political/royal iconography"],
+        "ground": ["legitimacy and continuity from David", "rightful succession", "covenantal kingship"],
+        "posture": ["affirmation of Davidic legitimacy even in rebuke", "evaluative description", "theological-political"],
+        "explanation": "The 'throne of David' stands metonymically for the Davidic kingship and its authority, not merely the physical chair.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 22:3",
+    "deliberation": "Most commands are literal ethical injunctions. Two phrases use conventional Hebrew figurative language: 'from the hand of the oppressor' (hand as power) and 'shed innocent blood' (blood as life).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהַצִּילוּ גָזֻל מִיַּד עָשׁוֹק",
+        "english_text": "rescue from the defrauder anyone who is robbed (lit. 'from the hand of the oppressor')",
+        "target": ["the oppressor’s control over the victim", "coercive power", "social-legal"],
+        "vehicle": ["hand", "bodily part as symbol of power", "anthropological"],
+        "ground": ["ability to grasp, control, and harm", "power and domination", "social oppression"],
+        "posture": ["moral condemnation of abusive power", "judgmental", "ethical-theological"],
+        "explanation": "The 'hand' of the oppressor is a metonymy and idiom for his power or control, from which the robbed must be rescued.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְדָם נָקִי אַל־תִּשְׁפְּכוּ",
+        "english_text": "do not shed the blood of the innocent",
+        "target": ["the lives of innocent people", "human life", "ethical-legal"],
+        "vehicle": ["blood", "vital fluid as stand-in for life", "anthropological/ritual"],
+        "ground": ["blood represents life and its loss", "taking life = shedding blood", "sacrificial/legal imagery for homicide"],
+        "posture": ["strong prohibition of lethal injustice", "judicial warning", "covenantal ethics"],
+        "explanation": "Here 'blood' stands metonymically for the life of the innocent; 'shedding blood' is a fixed idiom for killing.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 22:4",
+    "deliberation": "The verse promises literal royal prosperity—kings entering the palace gates on chariots and horses. While vivid, it can be read straightforwardly as concrete description of royal processions rather than a distinct metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 22:5",
+    "deliberation": "Considered whether 'this house shall become a ruin' is figurative. Given the context of siege and destruction, it naturally refers to the palace’s literal devastation. No clear additional figurative layer is required.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 22:6",
+    "deliberation": "Here the 'house of the king of Judah' is likened to regions (Gilead, Lebanon) and then threatened with becoming a wilderness and uninhabited towns. These are extended metaphors for the palace/royal house’s former glory and coming desolation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "גִּלְעָד אַתָּה לִי",
+        "english_text": "You are as Gilead to Me",
+        "target": ["the royal palace/house of Judah", "royal establishment", "political"],
+        "vehicle": ["Gilead", "fertile, valuable region", "geographical-symbolic"],
+        "ground": ["beauty, fertility, preciousness", "high value and desirability", "covenantal favor imagery"],
+        "posture": ["recalling former favor and value prior to judgment", "nostalgic then critical", "theological-judicial"],
+        "explanation": "The palace of Judah is metaphorically identified with Gilead, a rich and desirable region, to stress its former excellence in God’s sight.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רֹאשׁ הַלְּבָנֹן",
+        "english_text": "the summit (head) of Lebanon",
+        "target": ["the royal palace/house of Judah", "royal establishment", "political"],
+        "vehicle": ["summit of Lebanon", "highest part of famed cedar-covered mountain", "geographical/forestry"],
+        "ground": ["elevation, prominence, and splendor", "preeminent status and grandeur", "royal magnificence"],
+        "posture": ["acknowledgment of exalted status before announcing its reversal", "ironic setup for judgment", "prophetic critique"],
+        "explanation": "Calling the palace 'the summit of Lebanon' figuratively portrays its exalted and splendid status using Lebanon’s famous heights.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִם־לֹא אֲשִׁיתְךָ מִדְבָּר עָרִים לֹא נוֹשָׁבוּ",
+        "english_text": "I will make you a desert, uninhabited towns",
+        "target": ["royal palace/house (and by extension the royal city)", "royal-political center", "political/geographical"],
+        "vehicle": ["desert and uninhabited towns", "devastated landscape", "geographical-judgment imagery"],
+        "ground": ["emptiness, lifelessness, lack of inhabitants", "total ruin and abandonment", "covenantal curse imagery"],
+        "posture": ["threat of radical judgment and reversal of fortune", "severe warning", "theological-judicial"],
+        "explanation": "The palace is threatened with becoming 'a desert, uninhabited towns,' a metaphor for complete desolation and depopulation.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 22:7",
+    "deliberation": "The verse continues the forest/palace imagery with 'your choicest cedars,' echoing Lebanon and cedar imagery in the context. Although it can refer literally to cedar beams of the palace, it also functions as a symbol of royal luxury to be destroyed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְכָרְתוּ מִבְחַר אֲרָזֶיךָ",
+        "english_text": "They shall cut down your choicest cedars",
+        "target": ["the palace’s finest features and royal splendor", "royal luxury", "political/material"],
+        "vehicle": ["choicest cedars", "premium cedar timbers", "architectural/forestry"],
+        "ground": ["costliness, prestige, and beauty", "symbols of wealth and status", "royal opulence"],
+        "posture": ["announcement of the stripping away of luxury as judgment", "critical", "prophetic-judicial"],
+        "explanation": "The 'choicest cedars' stand metonymically for the palace’s most luxurious elements, whose destruction signifies the fall of royal splendor.",
+        "confidence": 0.6
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 22:8",
+    "deliberation": "The nations literally 'pass by this city' and ask a question. 'Great city' is an evaluative epithet rather than a clear hyperbole. No distinct metaphor, simile, or other figure is necessary for the sense.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 22:9",
+    "deliberation": "Straightforward explanation of the cause of judgment—forsaking the covenant and serving other gods. No special figurative vehicles are used beyond standard theological terminology.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 22:10",
+    "deliberation": "Looked for euphemistic or metaphorical use of 'the one going' and the weeping language. The contrast between death and exile is rhetorical but expressed with ordinary terms for weeping and going; no stable idiomatic metaphor clearly distinct from the literal meaning.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 22:11",
+    "deliberation": "Narrates about Shallum who went out and will not return. The language of going out and not returning is literal in the context of exile. No clear figurative expression detected.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 22:12",
+    "deliberation": "States that he will die in the place of exile and not see the land again. These are literal predictions, without metaphorical or personifying language.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 22:13",
+    "deliberation": "While 'building his house with injustice' could have a secondary sense of building a regime, in context it addresses actual construction projects using unpaid labor. The verse functions as literal social critique, not as an independent metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 22:14",
+    "deliberation": "Describes literal architectural ambitions: a large house, spacious upper rooms, windows, cedar paneling, vermilion. These are concrete details rather than figurative vehicles.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 22:15",
+    "deliberation": "Key question is the phrase 'compete in cedar,' where cedar stands for royal luxury. 'Cedar' here functions metonymically as a symbol of extravagant kingship, contrasted with the just rule of the father.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֲתִמְלֹךְ כִּי אַתָּה מְתַחֲרֶה בָּאָרֶז",
+        "english_text": "Do you think you are more a king because you compete in cedar?",
+        "target": ["the king’s claim to true kingship and status", "royal legitimacy and greatness", "political"],
+        "vehicle": ["cedar (as building material)", "luxury architectural resource", "material/royal culture"],
+        "ground": ["cedar symbolizes opulence and royal show", "external display vs. real kingship", "critique of ostentation"],
+        "posture": ["ironical challenge to superficial markers of kingship", "sarcastic rebuke", "prophetic critique"],
+        "explanation": "To 'compete in cedar' is an idiomatic-metonymic way to speak of competing in ostentatious royal luxury, as if that made one truly a king.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 22:16",
+    "deliberation": "Defines 'knowing' GOD as doing justice for the poor and needy. This is theological but not expressed via an additional image or vehicle (no metaphor like 'path,' 'light,' etc.); the verse is conceptual rather than figuratively imagistic.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 22:17",
+    "deliberation": "Eyes and heart are said to be 'on' greed, bloodshed, and oppression. Here 'eyes' and 'heart' function as metonymy/synecdoche for the whole inner orientation and desire of the king.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כִּי אֵין עֵינֶיךָ וְלִבְּךָ כִּי אִם־עַל־בִּצְעֶךָ",
+        "english_text": "But your eyes and your mind (heart) are only on ill-gotten gains",
+        "target": ["the king’s inner motives and desires", "moral orientation", "psychological/ethical"],
+        "vehicle": ["eyes and heart", "sense organ and inner organ as symbols of attention and will", "anthropological"],
+        "ground": ["where one looks and what one’s heart focuses on indicate desire", "fixation and intent", "moral psychology"],
+        "posture": ["condemnation of greed and violence at the core of royal character", "judgmental", "ethical-prophetic"],
+        "explanation": "The physical 'eyes' and 'heart' stand metonymically for the king’s focus and will, depicting his whole inner orientation as fixed on gain and violence.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 22:18",
+    "deliberation": "The verse quotes stereotypical mourning cries ('Ah, brother!', etc.). These are formulaic expressions of lament but not metaphorical in themselves; the point is that such laments will not be uttered. No distinct figurative vehicle is central here.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 22:19",
+    "deliberation": "The 'burial of a donkey' is a vivid comparison for disgraceful lack of proper burial. It is a metaphorical/idiomatic way to describe a shameful end rather than a technical description of a burial rite.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קְבוּרַת חֲמוֹר יִקָּבֵר",
+        "english_text": "He shall have the burial of a donkey",
+        "target": ["the king’s dishonorable death and treatment of his corpse", "postmortem status", "social/ritual"],
+        "vehicle": ["burial of a donkey", "disposal of an unclean working animal", "animal/ritual imagery"],
+        "ground": ["lack of honor, care, or mourning; being cast out", "shame and degradation", "reversal of royal dignity"],
+        "posture": ["severe denigration of the king’s end as a form of judgment", "scornful", "prophetic judgment"],
+        "explanation": "To say he will have 'the burial of a donkey' metaphorically and idiomatically depicts a shameful, unceremonious end, like an animal carcass dragged out and dumped.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 22:20",
+    "deliberation": "Judah (feminine 'you') is told to climb Lebanon, Bashan, and Abarim and cry because 'all your lovers are crushed.' The nation is personified as a woman, and 'lovers' is a metaphor for political allies.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֲלִי הַלְּבָנוֹן וּצְעָקִי ... וְצַעֲקִי מֵעֲבָרִים",
+        "english_text": "Climb Lebanon and cry out, raise your voice in Bashan, cry out from Abarim",
+        "target": ["the nation/people of Judah (often embodied as Jerusalem)", "collective Judah", "national-religious"],
+        "vehicle": ["a woman moving over mountains and crying out", "feminine persona acting and wailing", "dramatic lament scene"],
+        "ground": ["the city/nation cannot literally climb and cry; it is spoken of as a single woman in distress", "embodied suffering", "prophetic city-personification tradition"],
+        "posture": ["summons to lament over coming disaster", "mournful yet accusatory", "prophetic lament"],
+        "explanation": "Judah is personified as a woman commanded to go up on high places and wail, dramatizing the nation’s coming grief.",
+        "confidence": 0.91
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי נִשְׁבְּרוּ כָּל־מְאַהֲבָיִךְ",
+        "english_text": "For all your lovers are crushed",
+        "target": ["Judah’s foreign allies or political patrons", "international alliances", "political-diplomatic"],
+        "vehicle": ["lovers", "sexual/romantic partners", "relational imagery"],
+        "ground": ["intimate but illicit relationship, dependence, and betrayal", "improper reliance on foreign powers as on illicit lovers", "covenantal infidelity imagery"],
+        "posture": ["condemning Judah’s alliances as adulterous loves now destroyed", "judgmental", "prophetic marital metaphor tradition"],
+        "explanation": "The foreign allies on whom Judah relied are metaphorically called 'lovers,' turning political dependence into the picture of illicit romantic relationships that end in ruin.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 22:21",
+    "deliberation": "Phrase 'this is your way from your youth' conceptualizes behavior as a 'way' or path, a common Hebrew metaphor for life-conduct.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "זֶה דַרְכֵּךְ מִנְּעוּרַיִךְ",
+        "english_text": "That was your way ever since your youth",
+        "target": ["Judah’s habitual pattern of refusing to listen", "moral-spiritual behavior", "ethical/spiritual"],
+        "vehicle": ["way (path/road)", "route one walks along", "spatial/motion imagery"],
+        "ground": ["a path is something consistently followed; a lifestyle is something habitually practiced", "continuity and direction of conduct", "conceptual metaphor LIFE-AS-PATH"],
+        "posture": ["highlighting long-standing stubbornness", "accusatory", "prophetic indictment"],
+        "explanation": "Calling disobedience 'your way' uses the common Hebrew metaphor of a 'way' or path for a settled course of life and behavior.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 22:22",
+    "deliberation": "Three figurative elements: (1) 'shepherds' as a metaphor for leaders, (2) 'wind' acting destructively on them (personification/imagistic metaphor), and (3) again 'lovers' as a metaphor for foreign allies.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כׇּל־רֹעַיִךְ",
+        "english_text": "All your shepherds",
+        "target": ["Judah’s political and/or religious leaders", "leadership class", "social-political"],
+        "vehicle": ["shepherds", "animal herders who guide and protect flocks", "pastoral imagery"],
+        "ground": ["shepherds lead, protect, and are responsible for sheep; leaders do (or should do) the same for people", "guidance and care", "royal/pastoral metaphor tradition"],
+        "posture": ["implied criticism of failed leadership", "judgmental", "prophetic critique"],
+        "explanation": "The leaders of Judah are metaphorically called 'shepherds,' drawing on the common biblical figure of rulers as caretakers of a flock.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תִּרְעֶה־רוּחַ (cf. Eng. 'shall be devoured by the wind')",
+        "english_text": "shall be devoured by the wind",
+        "target": ["the security and existence of Judah’s leaders", "leader’s fate", "political"],
+        "vehicle": ["wind that devours/shepherds away", "powerful, invisible force as agent", "natural-force imagery"],
+        "ground": ["wind can sweep away and destroy; invading powers or divine judgment remove leaders irresistibly", "sudden, uncontrollable loss", "judgment-as-storm metaphor"],
+        "posture": ["threat of overwhelming, inescapable judgment", "ominous", "theological-judicial"],
+        "explanation": "The 'wind' is personified and metaphorically portrayed as devouring or driving away the shepherds, symbolizing the destructive force of judgment/exile.",
+        "confidence": 0.78
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמְאַהֲבַיִךְ בַּשְּׁבִי יֵלֵכוּ",
+        "english_text": "and your lovers shall go into captivity",
+        "target": ["Judah’s foreign allies or friendly powers", "political alliances", "international relations"],
+        "vehicle": ["lovers", "romantic/sexual partners", "relational imagery"],
+        "ground": ["intimate, chosen relationships reflecting attachment and misplaced trust", "improper affection for foreign powers rather than for God", "adultery-as-idolatry/alliances motif"],
+        "posture": ["exposing alliances as adulterous loves now humiliated", "judgmental", "prophetic marital metaphor"],
+        "explanation": "Again 'lovers' metaphorically denotes Judah’s foreign allies, whose captivity underscores the folly of trusting them.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 22:23",
+    "deliberation": "Two main images: (1) Judah/royal house depicted as dwelling in Lebanon and nesting in cedars—a personified, birdlike metaphor for secure luxury; (2) suffering likened to the pains of a woman giving birth.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יֹשַׁבְתְּ בַּלְּבָנוֹן מְקֻנַּנְתְּ בָּאֲרָזִים",
+        "english_text": "You who dwell in Lebanon, nestled among the cedars",
+        "target": ["the royal house / Jerusalem / Judah in luxurious security", "royal-nation entity", "political/social"],
+        "vehicle": ["dwelling in Lebanon, nesting in cedars", "a bird or woman securely lodged in tall cedars on Lebanon", "mountain/forest and nesting imagery"],
+        "ground": ["height, security, and luxury; cedar imagery echoes palace building", "sense of exalted, comfortable position", "royal opulence and false security"],
+        "posture": ["ironically highlighting false security before disaster", "critical", "prophetic warning"],
+        "explanation": "Judah is personified and metaphorically portrayed as living high in Lebanon, like one 'nested in the cedars'—a picture of lofty, luxurious security soon to be shattered.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חִיל כַּיֹּלֵדָה",
+        "english_text": "pains come upon you, travail as in childbirth",
+        "target": ["the anguish Judah/royal house will experience in judgment", "national distress", "experiential/psychological"],
+        "vehicle": ["a woman in labor", "childbirth pains", "bodily/suffering imagery"],
+        "ground": ["intense, unavoidable, escalating pain leading to a crisis", "inescapable anguish and vulnerability", "judgment-as-birth-pangs motif"],
+        "posture": ["foretelling severe, unavoidable suffering", "ominous", "prophetic judgment"],
+        "explanation": "Judah’s coming anguish is compared explicitly to the travail of a woman in childbirth, emphasizing the intensity and inevitability of the suffering.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 22:24",
+    "deliberation": "The conditional 'if Coniah were a signet ring on My right hand, from there I would tear you off' is a clear metaphor: signet ring symbolizes cherished authority and closeness, yet even from there he would be removed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי אִם־יִהְיֶה כׇּנְיָהוּ ... חוֹתָם עַל־יַד יְמִינִי כִּי מִשָּׁם אֶתְּקֶנְךָּ",
+        "english_text": "if you, O King Coniah ... were a signet on My right hand, I would tear you off even from there",
+        "target": ["King Coniah’s status and relationship to God", "royal person and office", "theological-political"],
+        "vehicle": ["signet ring on the right hand", "precious royal seal worn by the owner", "royal/juridical object"],
+        "ground": ["a signet signifies intimate possession, authority, and honor, yet can be removed", "both value and the owner’s freedom to discard", "sovereign control and rejection"],
+        "posture": ["emphasizing the certainty and radical nature of divine rejection", "resolute judgment", "theological-judicial"],
+        "explanation": "Coniah is metaphorically likened to a signet ring—an honored, intimate possession—yet God declares He would still tear him off, stressing total rejection despite any former favor.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 22:25",
+    "deliberation": "Two conventional Hebrew idioms appear: being given 'into the hand' of someone (hand as power) and enemies who 'seek your life' (seeking life = trying to kill).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּנְתַתִּיךָ בְּיַד מְבַקְשֵׁי נַפְשֶׁךָ ... וּבְיַד נְבוּכַדְרֶאצַּר ... וּבְיַד הַכַּשְׂדִּים",
+        "english_text": "I will deliver you into the hands of those who seek your life ... into the hand of King Nebuchadrezzar ... and into the hand of the Chaldeans",
+        "target": ["the control exerted by Coniah’s enemies over him", "domination by hostile powers", "political/military"],
+        "vehicle": ["hand(s)", "bodily organ used to grasp and hold", "anthropological"],
+        "ground": ["hands grasp and hold; being in someone’s hand = under their control", "dominion and power", "war/judgment imagery"],
+        "posture": ["depicting complete subjugation as divine judgment", "threatening", "theological-political"],
+        "explanation": "The recurring phrase 'into the hand of' is an idiomatic metonymy for falling under the power and control of enemies.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מְבַקְשֵׁי נַפְשֶׁךָ",
+        "english_text": "those who seek your life",
+        "target": ["Coniah’s mortal enemies", "hostile persons", "personal/political"],
+        "vehicle": ["seeking one’s life", "pursuing someone’s very life", "pursuit imagery"],
+        "ground": ["to 'seek someone’s life' is to aim at killing them, not merely desiring their presence", "intent to destroy", "standard Hebrew idiom"],
+        "posture": ["stressing the lethal intent of the enemies God uses as instruments", "grim", "judgment language"],
+        "explanation": "The phrase 'seek your life' is a fixed idiom meaning 'to try to kill you,' highlighting the deadly intentions of these enemies.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 22:26",
+    "deliberation": "God says, 'I will hurl you and the mother who bore you into another land.' The verb of violent throwing treats people like objects to be flung away—a metaphor for forcible exile and rejection.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהֵטַלְתִּי אֹתְךָ וְאֶת־אִמְּךָ ... עַל הָאָרֶץ אַחֶרֶת",
+        "english_text": "I will hurl you and the mother who bore you into another land",
+        "target": ["Coniah and his mother’s forcible deportation", "experience of exile", "political/personal"],
+        "vehicle": ["hurling (throwing) an object onto a land", "violent tossing away", "kinetic/action imagery"],
+        "ground": ["objects hurled are forcibly, contemptuously displaced; so are these people in exile", "violence, rejection, loss of place", "judgment-as-casting-away"],
+        "posture": ["emphasizes the violence and contempt of the coming exile", "severe", "prophetic judgment"],
+        "explanation": "Using the verb 'hurl' for sending them into another land metaphorically depicts their exile as a violent, contemptuous throwing away.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 22:27",
+    "deliberation": "The idiom 'they lift up their soul to return there' uses 'soul' and 'lifting' metaphorically to express intense yearning for the land.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־הָאָרֶץ אֲשֶׁר־הֵם מְנַשְּׂאִים אֶת־נַפְשָׁם לָשׁוּב שָׁם",
+        "english_text": "the land that they yearn (lit. 'lift up their soul') to come back to",
+        "target": ["the exiles’ intense longing for the homeland", "desire and hope", "psychological/spiritual"],
+        "vehicle": ["lifting up the soul", "raising one’s inner self toward something", "vertical motion imagery"],
+        "ground": ["lifting up implies directing and elevating one’s inner being toward an object of desire", "focused yearning and aspiration", "prayer/longing idiom in Hebrew"],
+        "posture": ["underscores deep, frustrated desire to return", "pathos-laden", "exilic lament"],
+        "explanation": "To 'lift up the soul' toward the land is an idiomatic metaphor for passionately yearning to return home.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 22:28",
+    "deliberation": "Central figure: Coniah is compared to a despised shattered pot, a vessel no one wants. This extended cookware/pottery metaphor highlights his rejection and uselessness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַעֶצֶב נִבְזֶה נָפוּץ הָאִישׁ הַזֶּה כׇּנְיָהוּ אִם־כְּלִי אֵין חֵפֶץ בּוֹ",
+        "english_text": "Is this man Coniah a despised broken pot, a vessel no one wants?",
+        "target": ["Coniah’s status and value in God’s and people’s eyes", "rejected king", "political/theological"],
+        "vehicle": ["despised broken pot / unwanted vessel", "damaged pottery", "household object imagery"],
+        "ground": ["a shattered pot is useless and discarded; so Coniah is viewed as worthless and rejected", "uselessness and contempt", "judgment-rejection motif"],
+        "posture": ["emphatic denunciation of the king’s worth and future", "scornful", "prophetic judgment"],
+        "explanation": "Coniah is metaphorically portrayed as a shattered, despised pot that no one desires, stressing his complete rejection and lack of future usefulness.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 22:29",
+    "deliberation": "The land is addressed directly and told to 'hear the word of the LORD.' This is personification of the land as a listener and respondent to God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶרֶץ אֶרֶץ אָרֶץ שִׁמְעִי דְּבַר־יְהוָה",
+        "english_text": "O land, land, land, hear the word of the LORD!",
+        "target": ["the land of Judah (and by extension its inhabitants)", "land/people complex", "theological-geographical"],
+        "vehicle": ["land as a hearer addressed directly", "responsive auditory subject", "person-like land"],
+        "ground": ["only persons 'hear' and obey; treating land as hearer dramatizes the address to the whole covenant environment", "moral responsiveness", "creation-personification motif"],
+        "posture": ["solemn, urgent summons to attend to God’s word", "intensely exhortative", "prophetic address"],
+        "explanation": "The land is personified as if it could listen and respond to God’s word, heightening the gravity of the proclamation to all creation associated with Judah.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 22:30",
+    "deliberation": "The command to 'write this man childless' is not strictly literal, since Coniah had offspring; it is a legal-metaphorical, somewhat hyperbolic way of declaring him dynastically cut off—no son will prosper on David’s throne.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּתְבוּ אֶת־הָאִישׁ הַזֶּה עֲרִירִי",
+        "english_text": "Record this man as without succession (childless)",
+        "target": ["Coniah’s dynastic future and legitimacy", "royal succession", "political/theological"],
+        "vehicle": ["being written down as childless", "legal record of having no offspring", "juridical/status imagery"],
+        "ground": ["to be childless in royal terms is to have no heirs to continue one’s line or office", "termination of dynastic line", "covenant-breaking consequences"],
+        "posture": ["formal pronouncement of irreversible dynastic judgment", "authoritative and final", "theological-legal"],
+        "explanation": "To 'write this man childless' is a legal metaphor and hyperbole for declaring that, as far as the throne is concerned, he effectively has no heirs—none of his offspring will sit on David’s throne.",
+        "confidence": 0.94
+      }
+    ]
+  }
+]

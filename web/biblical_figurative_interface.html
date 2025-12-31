@@ -1284,7 +1284,14 @@
             <!-- Book/Chapter Selection -->
             <section class="book-selection">
                 <h3>Text Selection</h3>
-                <label for="book-select">Books (Ctrl+Click to select):</label>
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <label for="book-select">Books (Ctrl+Click to select):</label>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button onclick="selectAllBooks()" style="background: none; border: none; color: #007bff; font-size: 0.85rem; cursor: pointer; padding: 0; margin: 0; text-decoration: underline;" title="Select all books">All</button>
+                        <span style="color: #6c757d;">|</span>
+                        <button onclick="clearAllBooks()" style="background: none; border: none; color: #007bff; font-size: 0.85rem; cursor: pointer; padding: 0; margin: 0; text-decoration: underline;" title="Clear all books">None</button>
+                    </div>
+                </div>
                 <select id="book-select" multiple>
                     <option value="genesis" selected>Genesis</option>
                     <option value="exodus" selected>Exodus</option>
@@ -1292,6 +1299,13 @@
                     <option value="numbers" selected>Numbers</option>
                     <option value="deuteronomy" selected>Deuteronomy</option>
                     <option value="psalms" selected>Psalms</option>
+                    <option value="proverbs" selected>Proverbs</option>
+                    <option value="isaiah" selected>Isaiah</option>
+                    <option value="jeremiah" selected>Jeremiah</option>
+                    <option value="ezekiel" selected>Ezekiel</option>
+                    <option value="hosea" selected>Hosea</option>
+                    <option value="joel" selected>Joel</option>
+                    <option value="amos" selected>Amos</option>
                 </select>
                 <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.75rem;">
                     <label for="chapter-input">Chapters:</label>
@@ -1490,6 +1504,13 @@
                 <p>This is a two-stage process. A first AI agent reads the verse, deliberates and identifies figurative speech. A second AI agent reviews the work of the first, validating, invalidating or reclassifying the initial tags. Tzafun records the final result, as well as the deliberations of both agents.</p>
 
                 <h2 id="section-information">The information in Tzafun</h2>
+                <p><strong>Coverage:</strong> Tzafun currently includes 13 biblical books with over 13,500 verses analyzed:</p>
+                <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                    <li><strong>Torah (Pentateuch):</strong> Genesis, Exodus, Leviticus, Numbers, Deuteronomy</li>
+                    <li><strong>Wisdom Literature:</strong> Psalms, Proverbs</li>
+                    <li><strong>Major Prophets:</strong> Isaiah, Jeremiah, Ezekiel</li>
+                    <li><strong>Minor Prophets (Twelve):</strong> Hosea, Joel, Amos</li>
+                </ul>
                 <p>Each verse is shown in Hebrew (Masoretic) and English (JPS 2006). Examples of figurative speech that were identified by the first agent and validated by the second are highlighted. If you click on the header above any verse, you can see the LLM's deliberations. If you click on a highlighted example of figurative speech, you can also see the following information:</p>
                 <p><strong>Target</strong> what or who the figurative speech is about</p>
                 <p><strong>Vehicle</strong> what the target is being likened to</p>
@@ -1501,7 +1522,7 @@
                 <p><strong>Validation reasons</strong> The second agent's deliberations about whether to validate/invalidate/reclassify a phrase tagged by the first agent as figurative speech.</p>
                 <p><strong>Speaker</strong> The LLM's assessment of who is speaking the figurative language.</p>
                 <p><strong>Confidence</strong> The LLM's level of confidence that this is figurative language.</p>
-                <p><strong>Name of the model</strong> Most verses were processed by Gemini-2.5-flash. However, this model struggled to process about 10% of verses, and it returned incomplete deliberations. When this happened, we used Gemini-2.5-pro as a fallback. When this failed (well under 1% of the time), Claude-Sonnet-4 was used.</p>
+                <p><strong>Name of the model</strong> Most verses were processed by GPT-5.1, with Claude Opus 4.5 and Gemini 3.0 Pro as fallback models. The model name is shown with each verse's deliberation.</p>
 
                 <h2 id="section-sacred">Sacred Names</h2>
                 <p>Traditional Jews who are printing results from Tzafun may wish to avoid printing Divine names that they consider sacred. They can select 'Traditional Jewish' versions of the verses, which replace divine Names with traditional abbreviations.</p>
@@ -1600,6 +1621,21 @@
             document.getElementById('main-content').style.display = 'block';
             document.querySelector('.sidebar').style.display = 'block';
             document.getElementById('about-page').classList.remove('active');
+        }
+
+        // Book Selection Helper Functions
+        function selectAllBooks() {
+            const bookSelect = document.getElementById('book-select');
+            for (let i = 0; i < bookSelect.options.length; i++) {
+                bookSelect.options[i].selected = true;
+            }
+        }
+
+        function clearAllBooks() {
+            const bookSelect = document.getElementById('book-select');
+            for (let i = 0; i < bookSelect.options.length; i++) {
+                bookSelect.options[i].selected = false;
+            }
         }
 
         // Print Functions
@@ -2150,7 +2186,7 @@
             if (bookSelect.options.length === 0) {
                 bookSelect.innerHTML = '';
                 // Biblical order
-                const biblicalOrder = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Psalms'];
+                const biblicalOrder = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Psalms', 'Proverbs', 'Isaiah', 'Jeremiah', 'Ezekiel', 'Hosea', 'Joel', 'Amos'];
                 biblicalOrder.forEach(book => {
                     if (books.includes(book)) {
                         const option = document.createElement('option');

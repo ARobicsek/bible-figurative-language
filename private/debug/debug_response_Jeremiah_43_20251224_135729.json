@@ -1,0 +1,325 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 43:1",
+    "deliberation": "I checked for idiomatic or metaphorical uses (e.g., 'all the words of YHWH,' 'sent him to them'). The verse is a straightforward narrative formula introducing Jeremiah's speech; 'words' and 'sending' are standard ways to describe divine revelation and carry no special figurative twist here beyond normal communication language.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 43:2",
+    "deliberation": "I considered whether 'you are lying' or the prohibition 'do not go to Egypt to sojourn there' contains figurative language. These are literal accusations and commands. No metaphor, simile, idiom, or metonymy appears.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 43:3",
+    "deliberation": "I examined 'inciting you against us' and especially 'to give us into the hand of the Chaldeans.' The latter is the standard biblical idiom נתן/מסר ביד with 'hand' as metonymy for power/control. This is a clear figurative expression; the rest of the verse is literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְמַ֩עַן֩ תֵּ֨ת אֹתָ֤נוּ בְיַֽד־הַכַּשְׂדִּים֙",
+        "english_text": "so that we will be delivered into the hands of the Chaldeans",
+        "target": [
+          "the Judahites being subjected to Babylonian control and harm",
+          "subjugation to an enemy",
+          "political-military judgment"
+        ],
+        "vehicle": [
+          "being placed into someone's hand",
+          "physical transfer into another's grasp",
+          "bodily control/power"
+        ],
+        "ground": [
+          "being completely at the mercy of another party",
+          "total domination/control",
+          "asymmetrical power relations"
+        ],
+        "posture": [
+          "portrays the feared outcome as utter domination by the Chaldeans",
+          "fearful/judgment-laden characterization of exile",
+          "theological reading of enemy power as a fate to be delivered into"
+        ],
+        "explanation": "The idiom 'give into the hand of X' uses 'hand' as a metonymy for power and control, describing subjugation as if people were physically placed into an enemy’s hand.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 43:4",
+    "deliberation": "The key phrase is 'did not obey the voice of YHWH' (לֹא־שָׁמַע ... בְקוֹל יְהוָה). Literally it is 'did not listen to the voice of YHWH.' This is a fixed covenant idiom where 'voice' stands metonymically for God's command and 'listening' stands for obeying.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא־שָׁמַע ... בְּק֣וֹל יְהוָ֑ה",
+        "english_text": "did not obey GOD’s command (lit. 'did not listen to the voice of YHWH')",
+        "target": [
+          "Johanan, the officers, and the people’s refusal to follow God's instruction",
+          "covenant disobedience",
+          "ethical/theological behavior"
+        ],
+        "vehicle": [
+          "not listening to someone’s voice",
+          "a failed act of auditory attention",
+          "sensory experience of hearing"
+        ],
+        "ground": [
+          "ignoring someone's voice parallels ignoring their will",
+          "failure of attentive listening maps to refusal to comply",
+          "hearing as prerequisite for obedience"
+        ],
+        "posture": [
+          "evaluates their action as stubborn refusal of divine authority",
+          "frames disobedience in relational/auditory terms",
+          "covenant lawsuit style depiction of guilt"
+        ],
+        "explanation": "The idiom 'not listen to the voice of YHWH' uses 'voice' metonymically for God's command and 'listening' for obedience, turning an auditory image into a moral-theological assessment.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 43:5",
+    "deliberation": "I considered 'the entire remnant of Judah' (שְׁאֵרִית יְהוּדָה) and 'from all the nations where they had been driven.' 'Remnant' here literally denotes the surviving subset; it is a theological theme but not used as part-for-whole synecdoche. 'Driven' is standard exile language but functions here as a literal description of forced displacement. No clear, discrete figurative device stands out.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 43:6",
+    "deliberation": "The verse is a detailed list of groups taken to Egypt. I checked phrases like 'all the people whom Nebuzaradan left with Gedaliah' for idioms or metaphors, but they are straightforward narrative references to historical actors and groups.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 43:7",
+    "deliberation": "Again the phrase 'they did not obey GOD' reflects the Hebrew idiom 'they did not listen to the voice of YHWH' (לֹא שָׁמְעוּ בְּקוֹל יְהוָה). As in verse 4, this is an idiomatic, metonymic expression for covenant disobedience.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֛י לֹ֥א שָׁמְע֖וּ בְּק֣וֹל יְהוָ֑ה",
+        "english_text": "They did not obey GOD (lit. 'they did not listen to the voice of YHWH')",
+        "target": [
+          "the people's refusal to follow God’s instruction by going to Egypt",
+          "covenant breach/disobedience",
+          "ethical/theological behavior"
+        ],
+        "vehicle": [
+          "not listening to someone’s voice",
+          "refusal of auditory attention",
+          "hearing in interpersonal communication"
+        ],
+        "ground": [
+          "refusal to heed a voice parallels refusal to accept authority",
+          "hearing as a metaphor for responsive obedience",
+          "auditory attention as indicator of relational loyalty"
+        ],
+        "posture": [
+          "presents the journey to Egypt as an act of defiant disobedience",
+          "uses covenant idiom to frame their action as legally and morally culpable",
+          "supports the prophetic accusation of rebellion"
+        ],
+        "explanation": "The fixed phrase 'not listen to the voice of YHWH' uses 'voice' metonymically for command and has become an idiom meaning 'to disobey,' casting their movement to Egypt as covenant rebellion.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 43:8",
+    "deliberation": "The formula 'the word of YHWH came to Jeremiah' (וַיְהִי דְבַר־יְהוָה אֶל־יִרְמְיָהוּ) depicts 'word' as an entity that can 'come' to someone. This personifies the divine message and also uses 'word' metonymically for God’s act of speaking/revealing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֤י דְבַר־יְהוָה֙ אֶֽל־יִרְמְיָ֔הוּ",
+        "english_text": "and the word of GOD came to Jeremiah",
+        "target": [
+          "God’s act of revealing a message to Jeremiah",
+          "prophetic inspiration/revelation",
+          "theological communication"
+        ],
+        "vehicle": [
+          "a 'word' that travels and arrives to someone",
+          "an entity that moves from sender to recipient",
+          "spatial movement/path"
+        ],
+        "ground": [
+          "a message originates from a source and reaches a recipient",
+          "movement from one place/person to another parallels communication flow",
+          "treating the message as an arriving agent highlights its initiative"
+        ],
+        "posture": [
+          "emphasizes the divine initiative and authority behind the oracle",
+          "frames the prophecy as an active, coming event, not just inner thought",
+          "supports the legitimacy of Jeremiah’s message as externally given"
+        ],
+        "explanation": "The phrase personifies the 'word' as an agent that 'comes' and uses 'word' metonymically for God's act of speaking, picturing revelation as an active arrival rather than a mere inner idea.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 43:9",
+    "deliberation": "This verse prescribes a symbolic act (taking stones and embedding them in mortar), but linguistically it is described in literal, concrete terms. The symbolic meaning is given in the next verse; here there is no metaphorical wording—just instructions about actual stones, mortar, and location.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 43:10",
+    "deliberation": "I examined: (1) the designation of Nebuchadrezzar as 'my servant' and (2) the setting of his throne and pavilion over the stones. The enthronement language over stones can be read literally as a prophetic sign of his future presence; it is not necessarily a figurative phrase. However, calling a pagan king 'my servant' for YHWH is a clear role metaphor: he is not literally YHWH’s worshiping servant, but an instrument used for YHWH’s purposes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נְבוּכַדְרֶאצַּ֤ר מֶֽלֶךְ־בָּבֶל֙ עַבְדִּ֔י",
+        "english_text": "My servant King Nebuchadrezzar of Babylon",
+        "target": [
+          "Nebuchadrezzar’s role in executing YHWH’s judgment",
+          "foreign imperial ruler as an agent of God",
+          "political power under divine sovereignty"
+        ],
+        "vehicle": [
+          "a servant belonging to a master",
+          "dependent household or court servant",
+          "social hierarchy of master–servant"
+        ],
+        "ground": [
+          "a servant carries out the will and tasks of the master",
+          "instrumentality, subordination, and usefulness",
+          "alignment of actions with a superior’s purposes"
+        ],
+        "posture": [
+          "presents Nebuchadrezzar as subordinated to YHWH’s will despite his pagan status",
+          "reframes imperial conquest as divinely commissioned service",
+          "asserts theological control over geopolitical events"
+        ],
+        "explanation": "Calling Nebuchadrezzar 'my servant' metaphorically casts him as YHWH’s subordinate agent, emphasizing that his military actions function in service of God’s purposes rather than his own autonomous power.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 43:11",
+    "deliberation": "I considered the triad 'those to death, to death; to captivity, to captivity; to the sword, to the sword.' The form itself is emphatic but not figurative. However, 'the sword' is a standard metonymy for warfare/violent death. The phrase 'those destined for the sword, to the sword' uses the instrument ('sword') for the manner of death.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַאֲשֶׁ֥ר לַחֶ֖רֶב לֶחָֽרֶב",
+        "english_text": "And those destined for the sword, to the sword",
+        "target": [
+          "people who will die violently in the coming invasion",
+          "war-caused death",
+          "military judgment"
+        ],
+        "vehicle": [
+          "a sword as a weapon",
+          "instrument of killing in battle",
+          "concrete tool of violence"
+        ],
+        "ground": [
+          "the sword is the primary instrument by which such deaths occur",
+          "instrument stands for the act and outcome of killing",
+          "close association between weapon and warfare"
+        ],
+        "posture": [
+          "underscores the inevitability and specificity of fates in judgment",
+          "uses vivid martial imagery to stress severity",
+          "frames death in war as divinely allotted destiny"
+        ],
+        "explanation": "Here 'the sword' stands metonymically for violent death in battle; the instrument is used to evoke the whole experience and outcome of warfare.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 43:12",
+    "deliberation": "I examined 'I will set fire to the temples' (literal destructive language) and especially 'he shall wrap [himself in] the land of Egypt as a shepherd wraps his garment.' This is an explicit simile (כַּאֲשֶׁר), picturing Nebuchadrezzar’s appropriation of Egypt in terms of a shepherd easily wrapping his cloak.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעָטָה֩ אֶת־אֶ֨רֶץ מִצְרַ֜יִם כַּֽאֲשֶׁר־יַעְטֶ֤ה הָרֹעֶה֙ אֶת־בִּגְד֔וֹ",
+        "english_text": "He shall wrap himself up in the land of Egypt, as a shepherd wraps himself up in his garment.",
+        "target": [
+          "Nebuchadrezzar’s total and effortless taking possession of Egypt",
+          "imperial conquest/appropriation",
+          "political-military domination"
+        ],
+        "vehicle": [
+          "a shepherd wrapping his garment around himself",
+          "the simple act of enveloping oneself in clothing",
+          "pastoral everyday activity"
+        ],
+        "ground": [
+          "complete and close enveloping of something around oneself",
+          "effortless, unresisted appropriation and control",
+          "familiar ease and security in taking hold of what belongs to you"
+        ],
+        "posture": [
+          "portrays Babylon’s conquest as easy, thorough, and unthreatened",
+          "frames Egypt as something the conqueror wears or possesses",
+          "intensifies the inevitability and comprehensiveness of judgment"
+        ],
+        "explanation": "The simile compares Nebuchadrezzar’s grasp of Egypt to a shepherd casually wrapping his cloak, highlighting the ease, completeness, and familiarity with which he will take possession of the land.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 43:13",
+    "deliberation": "I checked whether 'the obelisks of the House of the Sun' or 'burn the temples of the gods of Egypt' are figurative. These refer to literal cultic structures in Egypt and literal acts of smashing and burning. The name 'House of the Sun' functions as a proper noun; the description itself is not used figuratively.",
+    "instances": []
+  }
+]

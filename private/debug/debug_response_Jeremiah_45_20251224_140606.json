@@ -1,0 +1,307 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 45:1",
+    "deliberation": "Checked for figurative use of הַדָּבָר ('the word'), the writing-on-scroll language, and the chronological formula. All are standard prophetic and narrative formulae functioning literally (a spoken divine message, physically written on a scroll, dated to a specific regnal year). No clear metaphor, personification, idiom, hyperbole, or metonymy beyond normal lexical usage.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 45:2",
+    "deliberation": "Examined the messenger formula כֹּה־אָמַר יְהוָה אֱלֹהֵי יִשְׂרָאֵל ('thus said YHWH, the God of Israel') and the phrase עָלֶיךָ בָּרוּךְ ('concerning you, Baruch'). These are standard formulae identifying the speaker and addressee; no transferred imagery, no anthropomorphism beyond normal theistic language, and no idiomatic expressions in need of figurative classification.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 45:3",
+    "deliberation": "This lament includes several non-literal expressions: the cry 'אוי־נא לי' is a conventional idiom of lament; 'יָסַף יְהוָה יָגוֹן עַל־מַכְאֹבִי' portrays grief as something quantitatively 'added' to pain; and 'מְנוּחָה לֹא מָצָאתִי' pictures rest as an object one searches for and finds. These are distinct figurative/idiomatic expressions within the same verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָמַרְתָּ אֽוֹי־נָא לִי",
+        "english_text": "You say, “Woe is me!”",
+        "target": [
+          "Baruch’s intense inner distress and discouragement",
+          "personal emotional suffering",
+          "human psychological experience"
+        ],
+        "vehicle": [
+          "the conventional exclamation “woe to me” used in mourning or calamity contexts",
+          "lament cry formula",
+          "ritual/social language of grief"
+        ],
+        "ground": [
+          "such cries are associated with severe misfortune and deep anguish",
+          "association of the phrase ‘woe’ with extreme trouble",
+          "shared cultural understanding that this cry signals calamity-level suffering"
+        ],
+        "posture": [
+          "Baruch’s self-directed lament and complaint before God",
+          "stance of exaggerated, despairing self-pity",
+          "lamentative posture in prophetic discourse"
+        ],
+        "explanation": "The phrase “אוי־נא לי / Woe is me” is a fixed lament idiom that intensifies and dramatizes Baruch’s distress, going beyond a bare statement of ‘I am sad’ and functioning as a hyperbolic cry of calamity.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־יָסַף יְהוָה יָגוֹן עַל־מַכְאֹבִי",
+        "english_text": "For GOD has added grief to my pain.",
+        "target": [
+          "Baruch’s cumulative experience of suffering (both existing pain and new troubles)",
+          "emotional and circumstantial affliction",
+          "human experiential domain of suffering"
+        ],
+        "vehicle": [
+          "the act of adding one quantity or burden on top of another",
+          "increase of a load or amount",
+          "physical/quantitative domain (stacking or augmenting a burden)"
+        ],
+        "ground": [
+          "both the literal adding of weight and Baruch’s experience involve an increase beyond an already existing burden",
+          "intensification and accumulation of what is hard to bear",
+          "shared notion of ‘more added on top of what was already there’"
+        ],
+        "posture": [
+          "Baruch’s complaint that God is intensifying his hardships",
+          "perception of God as the active source who keeps increasing suffering",
+          "lamenting/protesting stance toward divine action"
+        ],
+        "explanation": "Grief (an intangible emotion) is depicted as something God can ‘add’ on top of pain as if they were measurable, stackable burdens. This conceptualizes suffering as an accumulating load, a metaphorical and partly idiomatic way to describe intensified affliction.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמְנוּחָה לֹא מָצָאתִי",
+        "english_text": "and I have found no rest.",
+        "target": [
+          "Baruch’s lack of relief or inner peace amid ongoing trouble",
+          "state of unresolved unrest and anxiety",
+          "human psychological/spiritual condition"
+        ],
+        "vehicle": [
+          "seeking and finding a place or object called ‘rest’",
+          "search for a tangible location or item",
+          "spatial/locative domain of finding a safe resting-place"
+        ],
+        "ground": [
+          "both finding a resting place and gaining inner relief involve arriving at a state where strain ceases",
+          "transition from exertion to settled ease",
+          "shared idea of coming to a stopping-point where one can relax"
+        ],
+        "posture": [
+          "Baruch’s description of his life as a continual, unsuccessful search for relief",
+          "stance of weariness and frustration at the absence of peace",
+          "lament over unremitting unrest"
+        ],
+        "explanation": "‘Rest’ (מְנוּחָה) is pictured as something one can ‘find’ like a physical place or object. This conventional biblical idiom uses spatial search/finding language as a metaphor for attaining inner or circumstantial relief.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 45:4",
+    "deliberation": "Verse 4 clearly shifts into imagery: God speaks of ‘what I have built’ and ‘what I have planted’ which He will now ‘tear down’ and ‘uproot’. These are standard prophetic metaphors for God’s establishment and subsequent dismantling of a nation/people. In addition, the phrase ‘כׇּל־הָאָרֶץ’ functions metonymically/synecdochically for the whole national entity (land with its people and structures), not merely the soil.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנֵּה אֲשֶׁר־בָּנִיתִי אֲנִי הֹרֵס",
+        "english_text": "I am going to overthrow what I have built",
+        "target": [
+          "the national, political, and religious structures of Judah that God previously established",
+          "a people’s institutional and historical existence",
+          "socio-political/theological reality of Israel/Judah"
+        ],
+        "vehicle": [
+          "a constructed building that the builder now demolishes",
+          "architectural structure being torn down",
+          "physical domain of construction and destruction"
+        ],
+        "ground": [
+          "both a built structure and a nation’s institutions are created, ordered entities that can later be dismantled",
+          "reversal of previous constructive work",
+          "sovereign control over creating and un-creating a complex system"
+        ],
+        "posture": [
+          "God’s assertion of sovereign right to dismantle what He has established",
+          "judicial stance of purposeful destruction against His own former work",
+          "prophetic pronouncement of drastic reversal"
+        ],
+        "explanation": "God did not literally build Judah as a physical house; rather, Judah’s national existence is metaphorically portrayed as a building God constructed and will now demolish. It is a stock prophetic metaphor for divine founding and overthrow of a kingdom.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְאֵת אֲשֶׁר־נָטַעְתִּי אֲנִי נֹתֵשׁ",
+        "english_text": "and uproot what I have planted",
+        "target": [
+          "the people and their rooted presence in the land as established by God",
+          "the covenant community’s settled life and growth",
+          "historical community of Israel/Judah"
+        ],
+        "vehicle": [
+          "a plant that has been planted and is now pulled up by the roots",
+          "cultivated vegetation being uprooted",
+          "agricultural domain of planting and uprooting"
+        ],
+        "ground": [
+          "both a planted crop and a settled people represent something established to grow and flourish, yet vulnerable to being removed",
+          "removal from a place of rooting and nurture",
+          "termination of a growth-process initiated by the planter"
+        ],
+        "posture": [
+          "God’s role as planter-then-uprooter of His people",
+          "stance of a sovereign cultivator choosing to destroy what He once nurtured",
+          "judgmental reversal of prior favor and nurture"
+        ],
+        "explanation": "Here Judah (and/or the broader people under judgment) is pictured as something God has ‘planted,’ now to be ‘uprooted’. The agricultural metaphor depicts the end of a divinely nurtured existence in the land.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְאֶת־כׇּל־הָאָרֶץ הִיא",
+        "english_text": "—this applies to the whole land.",
+        "target": [
+          "all the inhabitants and the total national entity subject to God’s judgment",
+          "the nation/people as a collective",
+          "corporate human community in its territory"
+        ],
+        "vehicle": [
+          "‘the whole land’ as a geographic expanse",
+          "territory/soil as designation",
+          "spatial/territorial domain"
+        ],
+        "ground": [
+          "land and people are so closely linked that the territory can stand for the entire national reality",
+          "inseparability of land and its inhabitants in covenantal thought",
+          "use of place-name or territory to denote its people and institutions"
+        ],
+        "posture": [
+          "God’s declaration that the coming dismantling is comprehensive, covering all associated with this land",
+          "stance of total, not partial, judgment",
+          "prophetic emphasis on the scope of divine action"
+        ],
+        "explanation": "‘The whole land’ functions metonymically (and as a kind of synecdoche) for the entire national community—land plus people and structures. It is not limited to soil, but stands for the totality of the covenant territory and its occupants.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 45:5",
+    "deliberation": "The closing verse contains a key metonymic/synecdochic expression, ‘עַל־כׇּל־בָּשָׂר’ (‘upon all flesh’), where ‘flesh’ stands for mortal human beings, and a vivid metaphor/idiom, ‘אֶת־נַפְשְׁךָ לְשָׁלָל’ (‘your life as spoil/booty’), picturing Baruch’s survival as plunder taken from a battlefield. These are two distinct figurative devices.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עַל־כׇּל־בָּשָׂר",
+        "english_text": "upon all flesh",
+        "target": [
+          "all human beings upon whom God will bring disaster",
+          "mortal humanity subject to judgment (here, all those in the affected sphere)",
+          "human domain"
+        ],
+        "vehicle": [
+          "‘all flesh’ as a description of embodied, living beings",
+          "flesh as a term for creaturely, mortal life",
+          "biological/physical domain"
+        ],
+        "ground": [
+          "flesh is the visible, vulnerable aspect of living creatures, so it can stand for ‘mortals’ as such",
+          "association of ‘flesh’ with frailty and creatureliness",
+          "use of a bodily characteristic to denote the whole person or class of persons"
+        ],
+        "posture": [
+          "God’s announcement of comprehensive judgment on all mortals in view",
+          "stance emphasizing universality and vulnerability of those judged",
+          "prophetic rhetoric highlighting the scope and seriousness of disaster"
+        ],
+        "explanation": "The expression ‘all flesh’ does not focus on literal meat but uses ‘flesh’ as a metonym/synecdoche for mortal human beings. It highlights human frailty and the universality of those included in the threatened disaster.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "وְנָתַתִּי לְךָ אֶת־נַפְשְׁךָ לְשָׁלָל",
+        "english_text": "but I will at least grant you your life as booty/spoil",
+        "target": [
+          "Baruch’s preservation from death amid general calamity",
+          "his ongoing existence and safety",
+          "individual human survival"
+        ],
+        "vehicle": [
+          "war booty (spoil) that someone manages to take from a battlefield or conquered place",
+          "valuable plunder spared from destruction",
+          "military/warfare domain of plundering"
+        ],
+        "ground": [
+          "both spared plunder and Baruch’s survival are ‘rescued’ from a situation of widespread loss and destruction",
+          "perception of life as a precious gain taken from the jaws of disaster",
+          "contrast between what is lost and the small portion salvaged"
+        ],
+        "posture": [
+          "God’s promise that, though judgment is coming, Baruch’s survival will be his only ‘gain’",
+          "stance that redefines life itself as the sole spoils of war granted by divine mercy",
+          "pastoral yet sobering assurance within a context of judgment"
+        ],
+        "explanation": "The idiom ‘to give one’s life as spoil’ is a metaphor from warfare: Baruch’s continued life is likened to plunder snatched from a battlefield. It pictures survival as the only ‘booty’ salvaged from the devastation God is bringing.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]

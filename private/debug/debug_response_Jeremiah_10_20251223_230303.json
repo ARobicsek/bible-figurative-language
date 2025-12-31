@@ -1,0 +1,642 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 10:1",
+    "deliberation": "Checked for metaphor, personification, etc. The only non-literal expression is 'house of Israel', a standard collective designation where a household term stands for the people. The rest is a straightforward prophetic summons.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יִשְׂרָאֵל",
+        "english_text": "House of Israel",
+        "target": ["the people of Israel as the addressees", "national community", "socioreligious"],
+        "vehicle": ["a house/household", "dwelling and family unit", "social-structural"],
+        "ground": ["a unified group living together under one authority", "collective identity", "conceptual"],
+        "posture": ["prophetic address stressing corporate responsibility", "rhetorical stance", "discourse-pragmatic"],
+        "explanation": "The term 'house' is used metonymically for the entire people/nation of Israel, as a family-household stands for all its members.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 10:2",
+    "deliberation": "Considered 'way of the nations' and 'do not learn to go' as possibly literal versus figurative. The text uses common Hebrew path-language (way, going, learning) metaphorically for lifestyle and religious practice; the portents in the sky are literal omens, not figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶל־דֶּרֶךְ הַגּוֹיִם אַל־תִּלְמָדוּ",
+        "english_text": "Do not learn to go the way of the nations",
+        "target": ["Israel's religious and cultural conduct", "behavioral pattern/lifestyle", "ethical-religious"],
+        "vehicle": ["a 'way' that one walks/learns", "path or route of travel", "spatial movement"],
+        "ground": ["conduct is like following a path one chooses and walks along", "structured progression", "conceptual mapping of life-as-walk"],
+        "posture": ["warning against adopting foreign patterns of life and worship", "admonitory stance", "prophetic rhetoric"],
+        "explanation": "The 'way of the nations' is a metaphor where lifestyle and religious practice are conceptualized as a path one learns to walk.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 10:3",
+    "deliberation": "Looked for figurative language in the evaluation of the nations' statutes and the description of the idol's construction. The phrase 'the statutes/customs of the peoples are hevel (vanity/breath)' is metaphorical; the tree-cutting description itself is literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־חֻקּוֹת הָעַמִּים הֶבֶל הוּא",
+        "english_text": "For the laws/statutes of the nations are delusion/vanity",
+        "target": ["the religious customs and decrees of the nations", "religious-legal systems", "socioreligious"],
+        "vehicle": ["הֶבֶל (hevel) – breath, vapor, vanity", "ephemeral, insubstantial thing", "natural/experiential"],
+        "ground": ["these customs are insubstantial, futile, lacking real substance or power", "emptiness and transience", "evaluative"],
+        "posture": ["prophetic polemic that devalues foreign cultic practice", "critical stance", "theological argument"],
+        "explanation": "The nations' statutes are metaphorically called 'hevel', likening them to vapor or breath to stress their emptiness and lack of permanence or power.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 10:4",
+    "deliberation": "This verse continues the description of the idol's manufacture with nails and hammer so it does not totter. The language is descriptive and concrete; no clear metaphor, simile, or other figure beyond rhetorical irony from the larger context, which is not encoded in a specific phrase here.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 10:5",
+    "deliberation": "Identified an explicit comparison introduced by 'like' and a possible merism in 'do no harm nor good'. The impotent idol imagery (cannot speak, walk) is largely literal about statues, though rhetorically ironic about their supposed divinity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּתֹמֶר מִקְשָׁה הֵמָּה",
+        "english_text": "They are like a scarecrow/palm in a cucumber patch",
+        "target": ["the idols of the nations", "cult images", "religious objects"],
+        "vehicle": ["a stationary figure in a field (scarecrow/palm-pole)", "immobile marker or post", "agricultural"],
+        "ground": ["visible yet powerless, standing in a field but unable to act", "immobility and uselessness", "evaluative"],
+        "posture": ["mocking comparison to expose the idols' impotence", "satirical stance", "prophetic polemic"],
+        "explanation": "The idols are explicitly compared to a scarecrow or post in a field, highlighting that they just stand there and cannot act.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי־לֹא יָרֵעוּ וְגַם־הֵיטִיב אֵין אוֹתָם",
+        "english_text": "for they can do no harm; nor is it in them to do any good",
+        "target": ["the possible effects idols might have", "outcomes of supposed divine action", "religious experience"],
+        "vehicle": ["harm and good as polar opposites", "binary extremes of negative and positive action", "ethical valuation"],
+        "ground": ["by denying both extremes, the verse denies any action or effect whatsoever", "total lack of efficacy", "logical-totalizing"],
+        "posture": ["comprehensive negation of idol power via meristic phrasing", "rhetorical emphasis", "polemical logic"],
+        "explanation": "The pairing of 'harm' and 'good' forms a merism that covers all possible effects; by saying idols can do neither, the text asserts they can do nothing at all.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 10:6",
+    "deliberation": "Examined 'great are You' and 'great is Your name in might'. The notable figurative element is 'name' standing for God's reputation and manifested power, a common biblical metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְגָדול שִׁמְךָ בִּגְבוּרָה",
+        "english_text": "and great is Your name in power",
+        "target": ["YHWH's reputation and self-manifestation", "divine renown", "theological"],
+        "vehicle": ["'name' (שֵׁם)", "spoken and known designation", "linguistic/social identity"],
+        "ground": ["the name represents the person, especially their fame and power", "representation by designation", "conceptual"],
+        "posture": ["praising God's manifested power as known among people", "doxological stance", "worship"],
+        "explanation": "God's 'name' is used metonymically to refer to God's reputation and effective power, not merely the label.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 10:7",
+    "deliberation": "Checked 'king of the nations' and the comparisons with wise men and kings. The dominant figure is the metaphor of divine kingship: YHWH is called 'king of the nations', a royal metaphor rather than a literal political office.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִי לֹא יִרָאֲךָ מֶלֶךְ הַגּוֹיִם",
+        "english_text": "Who would not revere You, O King of the nations?",
+        "target": ["YHWH's rule over all peoples", "divine sovereignty", "theological-political"],
+        "vehicle": ["a king", "human monarch with authority over subjects", "political"],
+        "ground": ["exercising authority, demanding reverence, and surpassing all other rulers", "rule and supremacy", "conceptual mapping of God-as-king"],
+        "posture": ["affirmation of God's universal sovereignty over every nation", "confessional stance", "theological argument"],
+        "explanation": "YHWH is metaphorically described as 'king of the nations', using royal imagery to express divine sovereignty over all peoples.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 10:8",
+    "deliberation": "Considered whether 'instruction of vanities is wood' is merely descriptive. It collapses the whole idol doctrine into the physical material, using 'wood' as a contemptuous metaphor for the teaching centered on idols.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מוּסַר הֲבָלִים עֵץ הוּא",
+        "english_text": "The discipline/instruction of idols is [but] a piece of wood",
+        "target": ["the content and practice of idol-worship instruction", "religious teaching", "socioreligious"],
+        "vehicle": ["a piece of wood", "inert material of the idol image", "material object"],
+        "ground": ["the teaching is as worthless and lifeless as the wooden idol itself", "worthlessness and lifelessness", "evaluative"],
+        "posture": ["derisive collapsing of the entire doctrine into its base material", "polemical stance", "prophetic satire"],
+        "explanation": "The prophet equates idol-related instruction with a mere piece of wood, metaphorically reducing the whole religious system to its lifeless material.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 10:9",
+    "deliberation": "All elements here (silver, gold, craftsmen, garments) describe the physical construction and adornment of the idols. The verse is vivid but basically literal, functioning as set-up for the contrast rather than as a figurative expression itself.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 10:10",
+    "deliberation": "Assessed phrases: 'living God', 'everlasting king', and 'at His wrath the earth quakes'. 'King' for God is a metaphor of divine kingship; 'the earth quakes at His wrath' personifies the earth as reacting to God's anger.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הוּא־אֱלֹהִים חַיִּים וּמֶלֶךְ עוֹלָם",
+        "english_text": "He is the living God and the everlasting King",
+        "target": ["YHWH's nature and rule", "divine sovereignty and vitality", "theological"],
+        "vehicle": ["a king (esp. 'everlasting king')", "human monarchy and enduring reign", "political-temporal"],
+        "ground": ["authority, governance, and enduring rule over subjects, contrasted with lifeless idols", "rule, stability, and life", "conceptual God-as-king schema"],
+        "posture": ["confessional exaltation of YHWH over idols as true sovereign", "polemical-doxological stance", "theological contrast"],
+        "explanation": "Calling God 'King' is a metaphor that uses human kingship imagery to communicate God's supreme and enduring rule.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִקִּצְפּוֹ תִּרְעַשׁ הָאָרֶץ",
+        "english_text": "At His wrath, the earth quakes",
+        "target": ["the physical world under God's judgment", "the earth-as-creation", "cosmic/natural"],
+        "vehicle": ["a being that trembles in fear", "frightened person reacting to anger", "psychological/embodied"],
+        "ground": ["the earth responds violently to God's anger as a person might tremble", "sensitivity to divine wrath", "affective reaction"],
+        "posture": ["dramatic portrayal of cosmic responsiveness to God's judgment", "rhetorical intensification", "prophetic warning"],
+        "explanation": "The earth is personified as trembling in response to God's wrath, as if it were a frightened person.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 10:11",
+    "deliberation": "The Aramaic verse declares that the gods who did not make 'heaven and earth' should perish. 'Heaven and earth' is a standard merism for the entire universe.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "דִּי־שְׁמַיָּא וְאַרְקָא לָא עֲבַדוּ",
+        "english_text": "who did not make heaven and earth",
+        "target": ["the totality of creation", "the cosmos", "cosmological"],
+        "vehicle": ["'heaven and earth' as two extremes", "upper and lower realms of reality", "spatial-totalizing pair"],
+        "ground": ["by naming the two extremes, the expression includes everything between", "comprehensiveness", "logical merism"],
+        "posture": ["asserting the non-creative impotence of idols regarding all that exists", "polemical stance", "theological critique"],
+        "explanation": "The phrase 'heaven and earth' functions as a merism, using two opposites to represent the whole created universe.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 10:12",
+    "deliberation": "Considered anthropomorphic aspects. 'Made the earth' and 'established the world' are fairly straightforward; 'stretched out the heavens' draws on tent-cloth imagery, a conventional metaphor for God's creative work.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבִתְבוּנָתוֹ נָטָה שָׁמָיִם",
+        "english_text": "and with understanding stretched out the skies/heavens",
+        "target": ["God's act of ordering the upper regions", "creation of the heavens", "cosmological"],
+        "vehicle": ["stretching out a tent or fabric", "spreading out material by hand", "craft/tent-making"],
+        "ground": ["deliberate extension, arrangement, and spreading of something overhead", "ordering and structuring", "conceptual mapping of cosmos-as-tent"],
+        "posture": ["poetic depiction of creation using familiar tent imagery", "celebratory stance", "wisdom hymn style"],
+        "explanation": "God's forming of the heavens is portrayed as 'stretching' them out like a tent or cloth, a metaphor that uses human tent-making imagery for cosmic creation.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 10:13",
+    "deliberation": "Examined storm imagery. Two clear figures: thunder as God's 'voice/sound', and wind coming out of God's 'treasuries', which likens wind to stored goods under God's control.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְקול תִּתּוֹ הֲמון מַיִם בַּשָּׁמַיִם",
+        "english_text": "At the sound of His giving (voice) there is a rumbling of water in the skies",
+        "target": ["the phenomenon of thunder and storm onset", "storm events", "meteorological"],
+        "vehicle": ["God's 'voice/sound' (קול) being heard", "speech or vocal utterance", "human communicative act"],
+        "ground": ["thunder resembles a powerful voice being emitted, signaling divine action", "audible power and authority", "conceptual mapping of thunder-as-voice"],
+        "posture": ["depicting natural phenomena as expressions of God's communicative presence", "theophanic stance", "poetic theology"],
+        "explanation": "Thunder is described as the 'sound' of God's giving/voice, metaphorically presenting storm noise as divine speech.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיּוֹצֵא רוּחַ מֵאֹצְרֹתָיו",
+        "english_text": "and [He] brings forth wind from His treasuries",
+        "target": ["the origin and control of the wind", "wind as a natural force", "meteorological"],
+        "vehicle": ["treasuries/storehouses (אֹצָרֹת)", "storerooms holding valuables", "economic/storage"],
+        "ground": ["wind is under God's control as valuables are under a householder's control, released at will", "control and reserved supply", "conceptual mapping of wind-as-stored-goods"],
+        "posture": ["emphasizing God's sovereign control over natural forces", "confessional-poetic stance", "theological"],
+        "explanation": "God is pictured as having 'treasuries' of wind from which He brings it out, a metaphor that likens wind to stored treasure under His command.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 10:14",
+    "deliberation": "Assessed 'every man is stupid without knowledge' and 'no breath in them'. The latter is literal regarding idols' lifelessness. The universal 'every man' is a rhetorical overstatement about idol-makers' folly, functioning as hyperbolic generalization.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִבְעַר כָּל־אָדָם מִדָּעַת",
+        "english_text": "Every mortal is proved dull, without knowledge",
+        "target": ["idol-making and idol-trusting people", "adherents of idolatry", "religious agents"],
+        "vehicle": ["'every man' as an absolute universal", "totality of humanity", "quantitative expression"],
+        "ground": ["uses sweeping language to stress the pervasive folly associated with idols", "exaggerated universality", "rhetorical intensification"],
+        "posture": ["sharp denunciation of human wisdom in the context of idolatry", "polemical stance", "prophetic critique"],
+        "explanation": "The claim that 'every man' is dull is hyperbolic, overstating universality to emphasize the folly of those involved with idols.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 10:15",
+    "deliberation": "Looked for figurative labeling of the idols. As in v.3, 'hevel' and 'work of mockery/deceptions' are metaphoric evaluations of the idols' nature rather than literal descriptors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֶבֶל הֵמָּה מַעֲשֵׂה תַעְתֻּעִים",
+        "english_text": "They are delusion/vanity, a work of mockery/deceptions",
+        "target": ["the idols and the cult surrounding them", "idolatrous objects and system", "religious"],
+        "vehicle": ["'hevel' and 'work of deceptions'", "worthless vapor and deceitful product", "moral-evaluative imagery"],
+        "ground": ["idols lack substance and are inherently deceptive, misleading those who trust them", "emptiness and deceit", "evaluative"],
+        "posture": ["denouncing idols as intrinsically empty and deceptive", "polemical stance", "prophetic satire"],
+        "explanation": "Idols are metaphorically labeled 'hevel' and a 'work of deceptions', characterizing them as insubstantial and misleading.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 10:16",
+    "deliberation": "Considered 'Portion of Jacob', 'One who formed all things', and 'tribe/rod of His inheritance'. The key figurative element is 'Portion of Jacob', a metaphor (with a metonymic flavor) presenting YHWH as Israel's allotted share/inheritance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לֹא־כְאֵלֶּה חֵלֶק יַעֲקֹב",
+        "english_text": "Not like these is the Portion of Jacob",
+        "target": ["YHWH in relation to Israel", "God as Israel's possession/relationship", "covenantal"],
+        "vehicle": ["a 'portion' or inheritance share", "allocated property in a division", "legal-economic"],
+        "ground": ["God relates to Israel as the most precious allotted share, in contrast to idols as possessions", "exclusive, defining possession", "conceptual mapping God-as-inheritance"],
+        "posture": ["affirming the unique, covenantal bond between YHWH and Israel", "confessional contrast", "theological identity"],
+        "explanation": "Calling YHWH 'the Portion of Jacob' metaphorically presents God as Israel's allotted inheritance, their defining and precious share.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 10:17",
+    "deliberation": "Evaluated 'gather from the land your bundle' and 'you who dwell under siege'. These read as straightforward instructions to pack belongings under siege; 'bundle' is concrete. Any possible synecdoche (bundle for possessions) is minimal and conventional, so I treat the verse as basically literal.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 10:18",
+    "deliberation": "Focused on the verb 'I will fling' (קולע) the inhabitants, evoking slinging/throwing, which is metaphorical for forceful exile. The harassment so they 'find/feel it' is more idiomatic but still primarily literal consequence language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִי קוֹלֵעַ אֶת־יוֹשְׁבֵי הָאָרֶץ",
+        "english_text": "I am about to fling away the inhabitants of the land",
+        "target": ["the removal/exile of Judah's population", "national displacement", "historical-judgment"],
+        "vehicle": ["flinging/slingshot action (קוֹלֵעַ)", "throwing an object violently", "physical-kinetic"],
+        "ground": ["the people will be hurled away from their land as an object is cast from a sling, suddenly and forcefully", "violence and loss of control", "conceptual mapping of exile-as-violent-casting"],
+        "posture": ["vividly portraying divine judgment as violent expulsion", "threatening stance", "prophetic warning"],
+        "explanation": "The verb for flinging or slinging is used metaphorically for God's act of exiling the inhabitants from the land.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 10:19",
+    "deliberation": "The speaker describes national calamity in terms of personal injury and illness: 'my hurt', 'my wound is severe', 'this is my sickness'. These constitute a coherent metaphor of public disaster as bodily sickness/wounding.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אוי לִי עַל־שִׁבְרִי נַחֲלָה מַכָּתִי ... אַךְ זֶה חֳלִי וְאֶשָּׂאֶנּוּ",
+        "english_text": "Woe unto me for my hurt, my wound is severe! ... This is but a sickness, and I must bear it.",
+        "target": ["the prophet's/people's experience of national judgment", "communal suffering", "historical-judgment"],
+        "vehicle": ["a bodily hurt, wound, and sickness one bears", "physical injury and chronic illness", "somatic experience"],
+        "ground": ["public calamity is experienced as intense, ongoing pain and debilitation, like a serious wound or disease", "pain, endurance, and vulnerability", "conceptual mapping of national-suffering-as-illness"],
+        "posture": ["lamenting acceptance of divinely inflicted suffering", "complaint mixed with submission", "prophetic lament"],
+        "explanation": "The verse uses the language of bodily injury and sickness as a metaphor for the severe national and personal suffering under judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 10:20",
+    "deliberation": "Considered whether tents are literal or represent the community/home. 'My tent is ravaged', 'all my cords are broken', and no one to stretch the tent cloths present the community (or Jerusalem/Zion) as a tent, a common metaphor in prophetic literature.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אׇהֳלִי שֻׁדָּד וְכָל־מֵיתָרַי נִתָּקוּ ... אֵין־נֹטֶה עוֹד אׇהֳלִי וּמֵקִים יְרִיעוֹתָי",
+        "english_text": "My tents are ravaged, all my tent cords are broken... No one is left to stretch out my tents and hang my tent cloths.",
+        "target": ["the social and familial structure of the people (possibly Jerusalem/Zion)", "community/home life", "sociopolitical"],
+        "vehicle": ["a tent with cords and cloths, lacking people to set it up", "nomadic dwelling", "domestic architecture"],
+        "ground": ["the community's destruction and depopulation is like a tent left in ruins with no one to pitch or maintain it", "fragility and desolation of dwelling", "conceptual mapping of community-as-tent"],
+        "posture": ["lamenting the collapse of communal and family structures", "mournful stance", "prophetic lament"],
+        "explanation": "The verse pictures the community as a tent whose cords are broken and which no one can set up, a metaphor for social collapse and exile.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 10:21",
+    "deliberation": "Identified the shepherd/flock imagery. 'Shepherds' refers to leaders; 'their flock' to the people. This is a unified pastoral metaphor for political and religious leadership.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי נִבְעֲרוּ הָרֹעִים ... וְכָל־מַרְעִיתָם נָפוֹצָה",
+        "english_text": "For the shepherds are dull... and all their flock is scattered.",
+        "target": ["Judah's leaders and their populace", "political-religious leadership and people", "sociopolitical"],
+        "vehicle": ["shepherds and their flock", "pastoral caretakers and sheep", "agricultural/pastoral"],
+        "ground": ["leaders are responsible to guide and care for people as shepherds for sheep; failure leads to the flock's scattering", "guidance, protection, and vulnerability", "conceptual mapping of leaders-as-shepherds"],
+        "posture": ["condemning negligent leadership through pastoral imagery", "critical stance", "prophetic critique"],
+        "explanation": "The leaders are called 'shepherds' and the people 'flock', a metaphor presenting rulers as caretakers whose folly causes the people's scattering.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 10:22",
+    "deliberation": "The noise from the north is literal war-rumor. The phrase 'a desolation, a haunt of jackals' uses wild-animal dwelling as an image of complete ruin, typical ruin-imagery in the prophets.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָשׂוּם אֶת־עָרֵי יְהוּדָה שְׁמָמָה מְעוֹן תַּנִּים",
+        "english_text": "to make the towns of Judah a desolation, a haunt of jackals",
+        "target": ["the future condition of Judah's cities", "urban landscape after judgment", "historical-judgment"],
+        "vehicle": ["a haunt or dwelling-place of jackals", "wilderness lair of scavenging animals", "wild-animal habitat"],
+        "ground": ["ruined cities become as uninhabited and wild as places where jackals live", "abandonment, wildness, and danger", "conceptual mapping of ruined-city-as-wild-lair"],
+        "posture": ["evoking the horror of total urban desolation", "warning stance", "prophetic imagery"],
+        "explanation": "Judah's cities are pictured as becoming a 'haunt of jackals', a metaphor for utter depopulation and ruin.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 10:23",
+    "deliberation": "The verse explicitly uses 'way' and 'steps' language for human life and choice. This is the well-known biblical path metaphor: life and destiny conceptualized as a road and one's decisions as steps.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי לֹא לָאָדָם דַּרְכּוֹ לֹא־לְאִישׁ הֹלֵךְ וְהָכִין אֶת־צַעֲדוֹ",
+        "english_text": "that mortals’ road is not theirs to choose, that people, as they walk, cannot direct their own steps.",
+        "target": ["human life path and decision-making", "life-course and choices", "anthropological/theological"],
+        "vehicle": ["a road and steps of a walker", "journey along a path", "spatial movement"],
+        "ground": ["a person's life unfolds like a journey, with steps representing choices, yet directed by God", "direction, guidance, and limitation", "conceptual mapping life-as-journey"],
+        "posture": ["confession of human dependence on God's direction", "submissive stance", "wisdom-theological reflection"],
+        "explanation": "The verse treats a person's life and decisions as a 'way' and 'steps' on a road, a metaphor for God's control over human destiny.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 10:24",
+    "deliberation": "Looked at 'chastise me', 'in judgment', and 'lest You make me small'. The pedagogical 'chastise' is standard for divine discipline. 'Make me small' is metaphorical for severely diminishing or annihilating the petitioner.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַל־בְּאַפְּךָ פֶּן־תַּמְעִטֵנִי",
+        "english_text": "Not in Your wrath, lest You reduce me to naught (make me small)",
+        "target": ["the extent of the speaker's possible suffering under God's wrath", "degree of divine punishment", "theological-judgment"],
+        "vehicle": ["making someone 'small'", "diminishing size to almost nothing", "spatial/quantitative"],
+        "ground": ["extreme punishment is like shrinking a person to near-nothingness, erasing their significance", "reduction and annihilation", "conceptual mapping of severity-as-diminution"],
+        "posture": ["pleading for moderated discipline rather than total destruction", "supplicatory stance", "prayer"],
+        "explanation": "The plea 'lest You make me small' is a metaphor (with hyperbolic force) for being utterly diminished or destroyed by divine wrath.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 10:25",
+    "deliberation": "Identified multiple figures: 'pour out Your wrath' (wrath as a liquid) and 'they have devoured Jacob...consumed him' (nations as eating Jacob), a common destruction-as-devouring metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שְׁפֹךְ חֲמָתְךָ עַל־הַגּוֹיִם",
+        "english_text": "Pour out Your wrath on the nations",
+        "target": ["the exercise of God's punitive anger", "act of divine judgment", "theological-judgment"],
+        "vehicle": ["pouring out a liquid", "emptying a vessel of fluid", "physical action with liquids"],
+        "ground": ["wrath is like a stored liquid that can be released in a downpour upon its target", "sudden overwhelming discharge", "conceptual mapping of anger-as-liquid"],
+        "posture": ["urgent call for visible, overflowing judgment on hostile nations", "imprecatory stance", "prayer for justice"],
+        "explanation": "God's wrath is depicted as something that can be 'poured out' like a liquid, a metaphor for the sudden and overwhelming unleashing of judgment.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־אָכְלוּ אֶת־יַעֲקֹב וַאֲכָלֻהוּ וַיְכַלֻּהוּ וְאֶת־נָוֵהוּ הֵשַׁמּוּ",
+        "english_text": "For they have devoured Jacob, have devoured and consumed him, and have laid desolate his homesteads.",
+        "target": ["the nations' violent oppression of Israel and its land", "acts of conquest and devastation", "historical-judgment"],
+        "vehicle": ["devouring and consuming a victim's flesh", "eating prey until finished", "predatory feeding"],
+        "ground": ["the nations' destruction of Israel is like predators eating a victim completely, leaving nothing", "total exploitation and ruin", "conceptual mapping of conquest-as-devouring"],
+        "posture": ["depicting enemy violence in stark, predatory terms to justify the plea for judgment", "accusatory stance", "imprecatory rhetoric"],
+        "explanation": "The enemies are said to have 'devoured' and 'consumed' Jacob, a metaphor (with hyperbolic piling-up) for their exhaustive destruction and exploitation of Israel and its land.",
+        "confidence": 0.98
+      }
+    ]
+  }
+]

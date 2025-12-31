@@ -1,0 +1,970 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 42:1",
+    "deliberation": "Checked for metaphors, personifications, idioms, and stock judgment formulas. The verse is mainly narrative, but the phrase 'from small to great' (מִקָּטֹן וְעַד־גָּדוֹל) functions as a merism expressing totality. No other figurative expressions detected.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִקָּטֹן וְעַד־גָּדוֹל",
+        "english_text": "from small to great",
+        "target": [
+          "all the people present regardless of rank",
+          "entire population",
+          "human society"
+        ],
+        "vehicle": [
+          "the span from the smallest individual to the greatest",
+          "range of social-status extremes",
+          "scales of size/importance"
+        ],
+        "ground": [
+          "using the extremes to imply everyone in between",
+          "completeness across a whole range",
+          "comprehensiveness"
+        ],
+        "posture": [
+          "describing the scope of those approaching Jeremiah",
+          "neutral descriptive narration",
+          "historical narrative"
+        ],
+        "explanation": "This is a merism: the extremes 'small' and 'great' stand for the whole group, indicating that people of every status came.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 42:2",
+    "deliberation": "Considered the remnant language and numerical contrast, which appear literal. The request formula 'may our supplication fall before you' is idiomatic and metaphorical, picturing a plea as a physical object falling at someone's feet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תִּפׇּל־נָא תְחִנָּתֵנוּ לְפָנֶיךָ",
+        "english_text": "Let our plea fall before you",
+        "target": [
+          "the people's request for intercession",
+          "a plea for help",
+          "prayer/communication with an authority"
+        ],
+        "vehicle": [
+          "an object falling down in front of someone",
+          "physical motion and position",
+          "spatial relations"
+        ],
+        "ground": [
+          "coming under someone's gaze and control as something laid at their feet",
+          "humble submission to another's decision",
+          "social dynamics of petition"
+        ],
+        "posture": [
+          "respectful, deferential address to a prophetic figure",
+          "formal and humble",
+          "petitionary speech formula"
+        ],
+        "explanation": "Their request is pictured as something that 'falls' before Jeremiah, a common Hebrew idiom in which a plea is conceptualized as a tangible object placed at someone's feet for judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 42:3",
+    "deliberation": "Looked for metaphors and idioms. The key phrase 'the way in which we shall walk' uses the spatial idea of a road and walking for the abstract notion of life conduct and decisions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶת־הַדֶּרֶךְ אֲשֶׁר נֵלֶךְ־בָּהּ",
+        "english_text": "the way in which we should walk",
+        "target": [
+          "the community's future course of action",
+          "moral and practical choices",
+          "human conduct"
+        ],
+        "vehicle": [
+          "a road or path on which one walks",
+          "route of travel",
+          "spatial movement"
+        ],
+        "ground": [
+          "both a path and a life-course have direction, alternatives, and outcomes depending on which way one goes",
+          "guidance and orientation",
+          "life conceptualized as a journey"
+        ],
+        "posture": [
+          "expressing dependence on divine direction",
+          "inquiring and submissive",
+          "prophetic consultation language"
+        ],
+        "explanation": "The verse uses the common biblical metaphor of 'way' and 'walking' for how one lives and acts, asking God to indicate the right path of behavior.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 42:4",
+    "deliberation": "Most of the verse is literal description of prayer and reporting. The phrase 'I will not withhold from you a word/anything' treats information as an object that can be physically held back, functioning as an idiomatic metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא־אֶמְנַע מִכֶּם דָּבָר",
+        "english_text": "I will withhold nothing from you",
+        "target": [
+          "the full content of God's message Jeremiah will communicate",
+          "information and instruction",
+          "divine revelation"
+        ],
+        "vehicle": [
+          "physically holding back an item from someone",
+          "retention of material goods",
+          "transfer of tangible objects"
+        ],
+        "ground": [
+          "both physical withholding and partial disclosure deny the recipient full access",
+          "control over what another receives",
+          "distribution vs. restriction"
+        ],
+        "posture": [
+          "assuring them of complete transparency",
+          "reassuring and earnest",
+          "prophetic mediation"
+        ],
+        "explanation": "Jeremiah depicts God's words as if they were objects that could be kept back in the hand; promising not to 'withhold' any is an idiomatic metaphor for full disclosure.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 42:5",
+    "deliberation": "Examined the oath formula. The core figurative element is their request that YHWH be 'a witness' concerning them, casting God in the human legal role of courtroom witness as a way to sanction their promise.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יְהִי יְהוָה בָּנוּ לְעֵד אֱמֶת וְנֶאֱמָן",
+        "english_text": "Let the LORD be a true and faithful witness against us",
+        "target": [
+          "God's role in holding them accountable to their oath",
+          "divine oversight of human commitments",
+          "covenant relationship"
+        ],
+        "vehicle": [
+          "a human witness in a court case",
+          "legal functionary",
+          "judicial process"
+        ],
+        "ground": [
+          "both a courtroom witness and God in this role observe, attest to truth, and can bring consequences for perjury",
+          "verification and accountability",
+          "binding legal-ethical authority"
+        ],
+        "posture": [
+          "solemn self-binding to unconditional obedience",
+          "serious and self-imprecatory",
+          "oath-taking rhetoric"
+        ],
+        "explanation": "They metaphorically cast YHWH as a legal witness in a lawsuit, a standard covenant idiom that underscores the seriousness and enforceability of their promise.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 42:6",
+    "deliberation": "Reviewed for multiple expressions. The key phrase 'whether good or bad' is a merism for the full range of possible instructions or outcomes. The rest ('it may go well with us') is conventional but not strongly figurative here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אִם־טוֹב וְאִם־רָע",
+        "english_text": "whether it is pleasant or unpleasant / whether good or bad",
+        "target": [
+          "the full range of what God might command them",
+          "possible demands and their effects",
+          "religious obedience"
+        ],
+        "vehicle": [
+          "the two opposite evaluations good and bad",
+          "value extremes",
+          "moral/experiential polarity"
+        ],
+        "ground": [
+          "naming both extremes implies everything in between",
+          "completeness of possible experiences",
+          "total willingness regardless of conditions"
+        ],
+        "posture": [
+          "stressing unconditional obedience",
+          "emphatic and absolute",
+          "pledge formula"
+        ],
+        "explanation": "This is a merism: by vowing obedience if the word is 'good' or 'bad', they claim readiness to accept any outcome at all.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 42:7",
+    "deliberation": "Considered whether the phrase 'the word of YHWH came' is purely formulaic or still figurative. It personifies the 'word' as an agent that arrives, and uses 'word' metonymically for the whole revelatory event.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֶל־יִרְמְיָהוּ",
+        "english_text": "the word of the LORD came to Jeremiah",
+        "target": [
+          "God's act of revealing His message to Jeremiah",
+          "prophetic revelation",
+          "divine communication"
+        ],
+        "vehicle": [
+          "a spoken word that moves from speaker to hearer",
+          "verbal utterance",
+          "linguistic event"
+        ],
+        "ground": [
+          "both a spoken word and a revelation originate with a speaker and arrive at a recipient as a distinct communication",
+          "direct and intentional address",
+          "transfer of information"
+        ],
+        "posture": [
+          "introducing an authoritative oracle",
+          "formal and solemn",
+          "prophetic narrative convention"
+        ],
+        "explanation": "The expression treats 'the word' as if it were a moving entity that comes to Jeremiah, and 'word' stands metonymically for the entire revelation given to the prophet.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 42:8",
+    "deliberation": "Again examined for figurative range markers. As in v.1, 'from small to great' is a merism for the whole group; the rest is straightforward narration.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְמִקָּטֹן וְעַד־גָּדוֹל",
+        "english_text": "from small to great",
+        "target": [
+          "all the people Jeremiah summoned",
+          "entire assembled group",
+          "human community"
+        ],
+        "vehicle": [
+          "the spectrum from the smallest to the greatest",
+          "range of social rank or importance",
+          "scalar extremes"
+        ],
+        "ground": [
+          "extremes used to signal everyone in between",
+          "comprehensiveness of inclusion",
+          "total participation"
+        ],
+        "posture": [
+          "emphasizing that the message is addressed to everyone",
+          "inclusive and descriptive",
+          "narrative framing"
+        ],
+        "explanation": "The phrase is a merism, using opposite ends of a spectrum to signify that all levels of the community were included.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 42:9",
+    "deliberation": "Most of the verse is literal reporting of speech. The phrase 'to cause your supplication to fall before Him' repeats the petition metaphor from v.2, treating prayer as an object dropped at God's feet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְהַפִּיל תְּחִנַּתְכֶם לְפָנָיו",
+        "english_text": "to present your supplication before Him (lit. to cause your supplication to fall before Him)",
+        "target": [
+          "the act of interceding with God on behalf of the people",
+          "presentation of their request",
+          "prayer"
+        ],
+        "vehicle": [
+          "causing an object to fall in front of someone",
+          "physical dropping/placing",
+          "spatial positioning"
+        ],
+        "ground": [
+          "placing something at another's feet for consideration parallels presenting a plea for judgment or mercy",
+          "yielding control of the matter to another",
+          "social act of appeal"
+        ],
+        "posture": [
+          "describing Jeremiah's intercessory role",
+          "formal and reverent",
+          "intercessory language"
+        ],
+        "explanation": "The Hebrew idiom pictures their supplication as a thing that 'falls' before God's presence, a metaphor for placing one's cause under His scrutiny.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 42:10",
+    "deliberation": "Here the oracle uses Jeremiah's characteristic restoration metaphors: (1) building/not tearing down and (2) planting/not uprooting, both applied to the people as if they were a structure or a planting. These are distinct but parallel metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבָנִיתִי אֶתְכֶם וְלֹא אֶהֱרֹס",
+        "english_text": "I will build you and not overthrow",
+        "target": [
+          "the restoration and strengthening of the remnant of Judah",
+          "the community/nation",
+          "sociopolitical entity"
+        ],
+        "vehicle": [
+          "constructing or tearing down a building",
+          "architectural structure",
+          "built environment"
+        ],
+        "ground": [
+          "both a building and a community can be made stable or demolished",
+          "stability vs. ruin",
+          "establishment and security"
+        ],
+        "posture": [
+          "promising positive reversal of previous judgment",
+          "encouraging and restorative",
+          "prophetic salvation oracle"
+        ],
+        "explanation": "The people are portrayed as a house or structure that God can build up or tear down; here He promises to build, not demolish, signaling restoration.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָטַעְתִּי אֶתְכֶם וְלֹא אֶתּוֹשׁ",
+        "english_text": "I will plant you and not uproot",
+        "target": [
+          "the people dwelling securely in their land",
+          "national existence in the land",
+          "community life"
+        ],
+        "vehicle": [
+          "a plant that is planted firmly or torn up by the roots",
+          "agricultural growth",
+          "vegetation/soil imagery"
+        ],
+        "ground": [
+          "both plants and peoples can be firmly established or removed from their place",
+          "rootedness vs. displacement",
+          "enduring stability and flourishing"
+        ],
+        "posture": [
+          "assuring lasting settlement if they obey",
+          "hopeful and nurturing",
+          "prophetic promise of restoration"
+        ],
+        "explanation": "Judah is likened to a plant that God can either plant to grow or uproot to destroy; the metaphor conveys the promise of secure re-establishment in the land.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 42:11",
+    "deliberation": "The main content is literally about fear of the king of Babylon and divine protection. The notable figurative expression is 'rescue you from his hand,' where 'hand' stands metonymically for power and control.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְהַצִּיל אֶתְכֶם מִיָּדוֹ",
+        "english_text": "to rescue you from his hand",
+        "target": [
+          "freedom from the king of Babylon's control",
+          "political domination",
+          "human exercise of power"
+        ],
+        "vehicle": [
+          "a physical hand that grasps and holds",
+          "body part used for seizing",
+          "human bodily strength"
+        ],
+        "ground": [
+          "both a hand that grabs and a ruler's authority exert controlling power over others",
+          "capacity to seize, hold, and release",
+          "effective power"
+        ],
+        "posture": [
+          "offering reassurance of divine deliverance",
+          "comforting and protective",
+          "prophetic encouragement"
+        ],
+        "explanation": "The king's 'hand' stands for his power and control, a common metonymy where the limb symbolizes the agent's might.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 42:12",
+    "deliberation": "Reviewed for metaphors and idioms. The phrase 'I will give you mercies' treats compassion as something that can be 'given' like a concrete object, an idiomatic way to describe God producing a favorable disposition in others.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֶתֵּן לָכֶם רַחֲמִים",
+        "english_text": "I will grant you mercy",
+        "target": [
+          "the favorable attitude others will have toward Judah",
+          "disposition of compassion",
+          "interpersonal favor"
+        ],
+        "vehicle": [
+          "tangible 'mercies' handed over as a gift",
+          "transferable objects",
+          "material goods"
+        ],
+        "ground": [
+          "both giving an object and causing someone to feel mercy involve bestowing something beneficial on another",
+          "initiating favorable conditions",
+          "bestowal of benefit"
+        ],
+        "posture": [
+          "assuring them of divinely arranged favor",
+          "comforting promise",
+          "prophetic encouragement"
+        ],
+        "explanation": "Compassion is conceptualized as a bestowable thing that God can 'give' to them, an idiomatic metaphor where the abstract attitude stands metonymically for the concrete effects of favor.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 42:13",
+    "deliberation": "This verse straightforwardly reports their possible refusal to stay in the land and defines that as not listening to God's voice. The 'voice' expression becomes more clearly figurative in v.21; here the focus is on the basic act of disobedience. I treat this verse as functionally literal within the prophetic idiom.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 42:14",
+    "deliberation": "Checked 'see war,' 'hear the sound of the horn,' and 'hunger for bread.' In context these are literal expectations about military conflict and famine, not stylized metaphors. No distinct figurative expressions were identified beyond normal descriptive language.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 42:15",
+    "deliberation": "Searched for idioms and metaphors. The notable idiom is 'set your faces to go to Egypt,' which uses physical orientation of the face as a metaphor for determined intention.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שׂוֹם תְּשִׂימוּן פְּנֵיכֶם לָבֹא מִצְרַיִם",
+        "english_text": "If you set your faces to go to Egypt",
+        "target": [
+          "their fixed determination to migrate to Egypt",
+          "human resolve and intention",
+          "volitional direction"
+        ],
+        "vehicle": [
+          "turning and setting one's face toward a destination",
+          "physical orientation of the head",
+          "spatial direction"
+        ],
+        "ground": [
+          "both the direction of one's face and one's inner resolve indicate where one is heading",
+          "focus and commitment to a course",
+          "embodied representation of purpose"
+        ],
+        "posture": [
+          "warning them against this settled resolve",
+          "admonitory and cautionary",
+          "prophetic exhortation"
+        ],
+        "explanation": "The idiom uses the physical act of setting the face toward a direction as a metaphor for firm inner decision and orientation of the will.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 42:16",
+    "deliberation": "Identified two vivid judgment images: (1) 'the sword will overtake you' and (2) 'the famine will cling/follow after you.' Both personify calamities as pursuing agents, and 'sword' operates as metonymy for warfare.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהָיְתָה הַחֶרֶב אֲשֶׁר אַתֶּם יְרֵאִים מִמֶּנָּה שָׁם תַּשִּׂיג אֶתְכֶם",
+        "english_text": "the sword that you fear shall overtake you there",
+        "target": [
+          "the violent military judgment awaiting them in Egypt",
+          "impending destruction",
+          "national fate"
+        ],
+        "vehicle": [
+          "a sword pursuing and catching someone",
+          "weapon as an active pursuer",
+          "battle imagery"
+        ],
+        "ground": [
+          "both a chasing enemy and 'the sword' here represent relentless, inescapable lethal threat",
+          "inescapability and pursuit by danger",
+          "war as a hunting predator"
+        ],
+        "posture": [
+          "intensely warning them of inescapable war",
+          "threatening and vivid",
+          "prophetic doom oracle"
+        ],
+        "explanation": "The 'sword' stands metonymically for warfare and is personified as an agent that actively chases and overtakes them, conveying the inevitability of violent judgment.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהָרָעָב אֲשֶׁר־אַתֶּם דֹּאֲגִים מִמֶּנּוּ שָׁם יִדְבַּק אַחֲרֵיכֶם",
+        "english_text": "and the famine you worry over shall follow at your heels (cling after you) there",
+        "target": [
+          "the severe lack of food that will strike them",
+          "economic hardship and suffering",
+          "judgment through scarcity"
+        ],
+        "vehicle": [
+          "a pursuer who sticks closely behind someone",
+          "clinging follower",
+          "chase/pursuit scene"
+        ],
+        "ground": [
+          "both a clinging follower and ongoing famine remain close and inescapable",
+          "constant, unavoidable pressure",
+          "inescapable affliction"
+        ],
+        "posture": [
+          "amplifying the threat beyond mere war",
+          "ominous and emphatic",
+          "prophetic rhetoric of pursuit"
+        ],
+        "explanation": "Famine is personified as a pursuer that 'clings' behind them, and functions metonymically for all the miseries of want that will relentlessly follow them into Egypt.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 42:17",
+    "deliberation": "Detected (1) the idiom 'set their faces to go to Egypt' again, and (2) the triad 'sword, famine, and pestilence' functioning as a stock synecdoche for comprehensive judgment, not just a random list of three discrete causes of death.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר־שָׂמוּ אֶת־פְּנֵיהֶם לָבֹא מִצְרַיִם",
+        "english_text": "who have set their faces to go to Egypt",
+        "target": [
+          "their determined choice to relocate to Egypt",
+          "fixed intention",
+          "volitional direction"
+        ],
+        "vehicle": [
+          "deliberately setting one's face toward a destination",
+          "bodily orientation",
+          "spatial direction"
+        ],
+        "ground": [
+          "both the direction of the face and decision of the will indicate commitment to a given course",
+          "focus and resolve",
+          "embodied purpose"
+        ],
+        "posture": [
+          "characterizing that decision as deliberate and culpable",
+          "critical and explanatory",
+          "prophetic indictment"
+        ],
+        "explanation": "As in v.15, the idiom uses the orientation of the face as a metaphor for the orientation of the will toward Egypt.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "יָמֻתוּ בַּחֶרֶב בָּרָעָב וּבַדָּבֶר",
+        "english_text": "they shall die by the sword, by famine, and by pestilence",
+        "target": [
+          "the totality of lethal judgments that will befall them",
+          "forms of divine punishment",
+          "national catastrophe"
+        ],
+        "vehicle": [
+          "three emblematic agents of death: sword, famine, pestilence",
+          "representative calamities",
+          "disaster imagery"
+        ],
+        "ground": [
+          "these three summarize the main covenant curses and so represent comprehensive destruction",
+          "representative parts standing for the entire range of disaster",
+          "fullness of judgment"
+        ],
+        "posture": [
+          "underscoring that no avenue of survival remains",
+          "solemn and categorical",
+          "prophetic curse formula"
+        ],
+        "explanation": "The recurring triad 'sword, famine, pestilence' is a stock synecdoche: these key calamities stand for the whole spectrum of covenant judgment, with 'sword' itself metonymic for warfare.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 42:18",
+    "deliberation": "Found two strong figurative expressions: (1) divine anger/wrath 'poured out' as if liquid, and (2) 'you will be an execration, horror, curse, and reproach,' where the people 'become' curse-formulas and objects of derision, a metaphor-metonymy for their future reputation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כַּאֲשֶׁר נִתַּךְ אַפִּי וַחֲמָתִי עַל־יֹשְׁבֵי יְר֣וּשָׁלִַם כֵּן תִּתַּךְ חֲמָתִי עֲלֵיכֶם",
+        "english_text": "As My anger and wrath were poured out upon the inhabitants of Jerusalem, so will My wrath be poured out on you",
+        "target": [
+          "the intensity and extent of God's punitive action",
+          "divine judgment",
+          "theology of wrath"
+        ],
+        "vehicle": [
+          "liquid being poured out from a container",
+          "fluid motion",
+          "physical process"
+        ],
+        "ground": [
+          "both a poured liquid and unleashed wrath spread over and overwhelm what they fall upon",
+          "sudden, total outpouring",
+          "overwhelming impact"
+        ],
+        "posture": [
+          "warning them by analogy with past catastrophe",
+          "threatening and didactic",
+          "prophetic comparison"
+        ],
+        "explanation": "God's wrath is pictured as a liquid that can be 'poured out' on people, a concrete metaphor that conveys the overwhelming and inescapable nature of His judgment.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וִהְיִיתֶם לְאָלָה וּלְשַׁמָּה וְלִקְלָלָה וּלְחֶרְפָּה",
+        "english_text": "You shall become an execration, a horror, a curse, and a reproach",
+        "target": [
+          "how other nations will speak and think about Judah",
+          "collective reputation",
+          "social memory of Israel"
+        ],
+        "vehicle": [
+          "verbal formulas of cursing, horror, and reproach",
+          "speech-acts of malediction and mockery",
+          "negative expressions"
+        ],
+        "ground": [
+          "becoming 'a curse' means being used as the content of curses and reproaches",
+          "being the negative example invoked in speech",
+          "complete disgrace"
+        ],
+        "posture": [
+          "heightening the shame of their potential fate",
+          "deterrent and stigmatizing",
+          "prophetic threat"
+        ],
+        "explanation": "The people are said to 'become' an execration and a curse—that is, they will serve as the stock example in curses and taunts. This blends metaphor (becoming abstract speech-acts) with metonymy (their name standing in cursing formulas).",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 42:19",
+    "deliberation": "Considered 'spoken against you' and 'testified against you.' The key figurative element is the Deuteronomistic formula 'I have testified against you today,' a legal metaphor framing God's warning as courtroom testimony.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּֽי־הַעִידֹתִי בָכֶם הַיּוֹם",
+        "english_text": "for I have testified against you this day",
+        "target": [
+          "God's formal warning to the remnant",
+          "covenant admonition",
+          "divine communication"
+        ],
+        "vehicle": [
+          "a witness giving testimony in court",
+          "legal procedure",
+          "judicial setting"
+        ],
+        "ground": [
+          "both courtroom testimony and this prophetic warning create a formal record that leaves the hearers liable if they disregard it",
+          "solemn accountability",
+          "law-court dynamics"
+        ],
+        "posture": [
+          "casting the warning in legal-covenantal terms",
+          "serious and juridical",
+          "covenant-lawsuit rhetoric"
+        ],
+        "explanation": "God describes His prophetic warning as 'testifying' against them, treating the scene as a lawsuit in which He serves as a witness laying evidence on the record.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 42:20",
+    "deliberation": "The rebuke centers on self-deception. The phrase 'you have deceived yourselves' literally reads 'you have deceived in your souls,' where 'souls' (נְפָשׁוֹתֵיכֶם) stands metonymically for the persons themselves.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִתְעֵיתֶם בְּנַפְשׁוֹתֵיכֶם",
+        "english_text": "you have deceived yourselves (lit. deceived in your souls)",
+        "target": [
+          "the people themselves as responsible agents",
+          "individual persons",
+          "human beings"
+        ],
+        "vehicle": [
+          "their 'souls' as an inner entity",
+          "psychic/life aspect",
+          "inner self concept"
+        ],
+        "ground": [
+          "the 'soul' stands for the whole person, so misleading 'in your souls' means self-deception",
+          "inner being representing the self",
+          "metonymic use of a part/aspect for the whole person"
+        ],
+        "posture": [
+          "accusing them of willful inner dishonesty",
+          "confrontational and exposing",
+          "prophetic rebuke"
+        ],
+        "explanation": "Here 'souls' functions metonymically for the people themselves, and the idiom conveys that they have acted as their own deceivers at the deepest level of selfhood.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 42:21",
+    "deliberation": "The main figurative element is the standard biblical idiom 'you did not hear in the voice of the LORD,' where 'hear' means 'obey' and 'voice' stands metonymically for the commandments themselves.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא שְׁמַעְתֶּם בְּקוֹל יְהוָה אֱלֹהֵיכֶם",
+        "english_text": "you have not obeyed (listened to) the voice of the LORD your God",
+        "target": [
+          "their failure to comply with God's commands",
+          "disobedience",
+          "religious-ethical behavior"
+        ],
+        "vehicle": [
+          "not listening to the audible voice of a speaker",
+          "auditory inattention",
+          "sensory experience of sound"
+        ],
+        "ground": [
+          "both not listening to someone and not obeying them reject their authority and message",
+          "hearing as a prerequisite to and symbol for obedience",
+          "voice as the bearer of will/command"
+        ],
+        "posture": [
+          "formally indicting them for noncompliance",
+          "reproachful and judgmental",
+          "prophetic accusation"
+        ],
+        "explanation": "The idiom uses 'hearing the voice' as a metaphor for obedience, with 'voice' standing metonymically for God’s revealed commands.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 42:22",
+    "deliberation": "As in v.17, the triad 'by the sword, by famine, and by pestilence' functions as a stock summary of covenant curses—representative synecdoche for comprehensive judgment. The final clause about the place they desire to go is literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בַּחֶרֶב בָּרָעָב וּבַדֶּבֶר תָּמֻתוּ",
+        "english_text": "you shall die by the sword, by famine, and by pestilence",
+        "target": [
+          "the comprehensive, lethal outcome awaiting them in Egypt",
+          "divine judgment resulting in death",
+          "national end"
+        ],
+        "vehicle": [
+          "three emblematic deadly agents: sword, famine, pestilence",
+          "representative calamities",
+          "judgment imagery"
+        ],
+        "ground": [
+          "these three stand for the principal modes of covenant punishment and so imply total destruction",
+          "representative parts standing for the broader whole of disaster",
+          "fullness and inevitability of ruin"
+        ],
+        "posture": [
+          "delivering a final emphatic warning",
+          "solemn and absolute",
+          "prophetic doom declaration"
+        ],
+        "explanation": "The repeated formula 'sword, famine, pestilence' uses metonymy (e.g., 'sword' for war) and functions as a synecdoche summarizing the whole range of fatal judgments to stress their completeness.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

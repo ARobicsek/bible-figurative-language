@@ -1,0 +1,972 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 11:1",
+    "deliberation": "Examined the prophetic formula 'the word that came to Jeremiah.' This presents 'word' as an entity that comes from YHWH, using movement language for revelation. That is a conventional but still figurative way to speak about divine communication.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַדָּבָר אֲשֶׁר הָיָה אֶל־יִרְמְיָהוּ",
+        "english_text": "The word that came to Jeremiah",
+        "target": [
+          "the prophetic revelation Jeremiah receives",
+          "divine communication",
+          "religious experience"
+        ],
+        "vehicle": [
+          "a 'word' that comes/arrives like a moving entity",
+          "message conceived as an object or messenger that travels",
+          "physical movement / human communication"
+        ],
+        "ground": [
+          "the revelation originates with God and reaches the prophet deliberately",
+          "transmission of content from sender to recipient",
+          "communication / agency"
+        ],
+        "posture": [
+          "presents Jeremiah’s message as objectively given by God, not self-generated",
+          "authoritative framing of the oracle",
+          "prophetic discourse convention"
+        ],
+        "explanation": "The 'word' is treated as an entity that 'comes' to Jeremiah, personifying and metaphorically objectifying divine revelation as something that travels from God to the prophet.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 11:2",
+    "deliberation": "Looked for figurative uses of 'hear' or 'speak.' Here 'hear the words of the covenant' and 'speak them' describe literal auditory reception and oral proclamation of the covenant terms. No clear metaphor, simile, or idiom beyond normal covenant-legal language.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 11:3",
+    "deliberation": "Considered whether 'cursed be the man' is figurative. In covenant contexts 'curse' is a technical-legal term for covenant sanctions, not obviously metaphorical in this setting. No other non-literal expressions identified.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 11:4",
+    "deliberation": "Noted the phrase 'from the land of Egypt, from the iron crucible.' This clearly uses an image of a smelting furnace for Israel’s oppressive experience in Egypt. The rest of the verse (be My people / be your God) is standard covenant formula and can be taken as conventional legal-religious language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מֵאֶרֶץ־מִצְרַיִם מִכּוּר הַבַּרְזֶל",
+        "english_text": "from the land of Egypt, the iron crucible",
+        "target": [
+          "Israel’s period of slavery in Egypt",
+          "experience of oppression",
+          "historical suffering"
+        ],
+        "vehicle": [
+          "an iron smelting furnace/crucible",
+          "instrument of intense heat and refinement",
+          "craft/industrial process"
+        ],
+        "ground": [
+          "extreme pressure, harsh conditions, and affliction",
+          "intensity and painfulness of the experience",
+          "suffering / testing"
+        ],
+        "posture": [
+          "frames Egypt as a place of severe affliction from which God rescued Israel",
+          "underscores God’s saving power and Israel’s obligation",
+          "covenant-historical rhetoric"
+        ],
+        "explanation": "Egypt is metaphorically portrayed as an 'iron crucible,' highlighting the severity and refining nature of Israel’s bondage there.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 11:5",
+    "deliberation": "The covenant land is described as 'a land flowing with milk and honey.' This is a well-known metaphorical and hyperbolic expression for abundant fertility, not literal rivers of milk and honey.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶרֶץ זָבַת חָלָב וּדְבַשׁ",
+        "english_text": "a land flowing with milk and honey",
+        "target": [
+          "the promised land given to the ancestors and their descendants",
+          "fertility and prosperity of the territory",
+          "geographical-economic reality"
+        ],
+        "vehicle": [
+          "a land where milk and honey literally flow",
+          "image of overflowing nourishment and sweetness",
+          "sensory abundance"
+        ],
+        "ground": [
+          "rich productivity and pleasantness of the land",
+          "superabundance of resources",
+          "blessing / well-being"
+        ],
+        "posture": [
+          "celebrates the generosity of God’s promise",
+          "motivates obedience by evoking attractive imagery",
+          "persuasive covenant rhetoric"
+        ],
+        "explanation": "The land is pictured as if it literally 'flows' with milk and honey, a metaphorical and hyperbolic way of emphasizing its extraordinary fertility and desirability.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 11:6",
+    "deliberation": "Commands to 'proclaim' and 'hear' the covenant terms are straightforward speech and obedience language. No obvious metaphor, simile, or idiom beyond standard prophetic diction.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 11:7",
+    "deliberation": "Key phrase is 'rising early and warning' (hashkem veha‘ed). This is a stock anthropomorphic idiom portraying YHWH as one who gets up early to warn, expressing his persistent diligence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַשְׁכֵּם וְהָעֵד",
+        "english_text": "rising early and warning",
+        "target": [
+          "YHWH’s repeated sending of warnings through prophets",
+          "divine persistence in admonishing Israel",
+          "God’s communicative activity"
+        ],
+        "vehicle": [
+          "a person who gets up early to testify or warn",
+          "diligent human messenger",
+          "daily human routine"
+        ],
+        "ground": [
+          "eagerness, repeated initiative, and careful concern",
+          "urgency and persistence of the effort",
+          "care / responsibility"
+        ],
+        "posture": [
+          "presents God as a conscientious guardian who has done more than enough to warn his people",
+          "heightens Israel’s culpability for ignoring him",
+          "judgment-oriented rhetoric"
+        ],
+        "explanation": "By saying God 'rose early and warned,' the text uses an anthropomorphic idiom to depict God’s persistent and diligent sending of warnings, as if he were an eager human who gets up early to do so.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 11:8",
+    "deliberation": "Two main idiomatic-metaphorical expressions: (1) 'they did not incline their ear' for refusing to listen, and (2) 'they went/walked, each, in the stubbornness of his evil heart' using movement and 'heart' imagery for moral-willful orientation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא־הִטּוּ אֶת־אׇזְנָם",
+        "english_text": "they would not incline their ear",
+        "target": [
+          "the people’s refusal to pay heed to God’s commands",
+          "act of willful inattention",
+          "moral responsiveness"
+        ],
+        "vehicle": [
+          "physically turning or tilting one’s ear",
+          "bodily gesture of listening",
+          "human anatomy and posture"
+        ],
+        "ground": [
+          "attentiveness and receptivity signaled by bodily orientation",
+          "link between hearing and obeying",
+          "perception / openness"
+        ],
+        "posture": [
+          "portrays their disobedience as deliberate refusal even to 'lean in' to listen",
+          "intensifies the charge of stubbornness",
+          "accusatory rhetoric"
+        ],
+        "explanation": "Refusal to obey is depicted idiomatically as not 'inclining the ear,' using bodily movement as a metaphor for attentive responsiveness.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיֵּלְכוּ אִישׁ בִּשְׁרִירוּת לִבָּם הָרָע",
+        "english_text": "they all followed the willfulness of their evil hearts",
+        "target": [
+          "each person’s pattern of obstinate disobedience",
+          "inner moral and volitional orientation",
+          "human character"
+        ],
+        "vehicle": [
+          "walking along a path dictated by one’s heart’s stubbornness",
+          "journeying in a direction set by an inner guide",
+          "spatial movement"
+        ],
+        "ground": [
+          "life-conduct conceived as walking a path",
+          "an 'evil heart' steering behavior",
+          "course / direction of life"
+        ],
+        "posture": [
+          "frames their sin as a chosen lifestyle path rather than isolated acts",
+          "emphasizes deep-seated inner corruption",
+          "prophetic moral indictment"
+        ],
+        "explanation": "The idiom of 'walking in the stubbornness of their heart' metaphorically represents their entire way of life as a path determined by an evil inner disposition.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 11:9",
+    "deliberation": "The term 'conspiracy' (קֶשֶׁר) is used for secret plotting; here it seems literal social-political or religious collusion. No clear figurative mapping beyond its ordinary sense.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 11:10",
+    "deliberation": "Identified two figurative expressions: (1) 'they went after other gods'—movement metaphor for allegiance and worship; and (2) 'they have broken my covenant'—using physical breaking for violating a treaty.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהֵמָּה הָלְכוּ אַחֲרֵי אֱלֹהִים אֲחֵרִים לְעׇבְדָם",
+        "english_text": "They, too, have followed other gods and served them",
+        "target": [
+          "Israel and Judah’s choice to worship other deities",
+          "religious allegiance and service",
+          "spiritual orientation"
+        ],
+        "vehicle": [
+          "physically going/walking after someone",
+          "following a leader on a path",
+          "spatial pursuit"
+        ],
+        "ground": [
+          "devotion and imitation implied by following someone",
+          "directionality of commitment",
+          "loyalty / discipleship"
+        ],
+        "posture": [
+          "portrays idolatry as a decisive turning and following of rival leaders",
+          "emphasizes intentional betrayal",
+          "covenant-polemic rhetoric"
+        ],
+        "explanation": "Serving other gods is expressed as 'going after' them, a metaphor equating religious allegiance with physically following a leader on a path.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵפֵרוּ בֵית־יִשְׂרָאֵל וּבֵית יְהוּדָה אֶת־בְּרִיתִי אֲשֶׁר כָּרַתִּי אֶת־אֲבוֹתָם",
+        "english_text": "The House of Israel and the House of Judah have broken the covenant that I made with their ancestors",
+        "target": [
+          "their violation of covenant obligations",
+          "breach of a relational-legal agreement",
+          "social-religious behavior"
+        ],
+        "vehicle": [
+          "breaking a physical object or contract",
+          "shattering something whole",
+          "physical damage"
+        ],
+        "ground": [
+          "irreversible failure and destruction of integrity",
+          "seriousness and finality of the violation",
+          "rupture / discontinuity"
+        ],
+        "posture": [
+          "depicts covenant infidelity as a violent rupture of relationship",
+          "underscores gravity of their disobedience",
+          "forensic-prophetic rhetoric"
+        ],
+        "explanation": "The covenant is spoken of as something that can be 'broken,' using the physical act of breaking to picture a serious violation of relational and legal commitments.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 11:11",
+    "deliberation": "The phrase 'evil/disaster from which they will not be able to go out' treats calamity as a sort of enclosing space or trap one exits from, which is a conceptual metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רָעָה אֲשֶׁר לֹא־יוּכְלוּ לָצֵאת מִמֶּנָּה",
+        "english_text": "disaster from which they will not be able to escape",
+        "target": [
+          "the coming judgment on Judah",
+          "their situation of inescapable trouble",
+          "historical crisis"
+        ],
+        "vehicle": [
+          "an enclosing place or trap one might try to go out from",
+          "confining space",
+          "spatial enclosure"
+        ],
+        "ground": [
+          "lack of exit and helplessness",
+          "being hemmed in by circumstances",
+          "confinement / captivity"
+        ],
+        "posture": [
+          "presents the judgment as utterly inescapable",
+          "warns that repentance is now too late to avert consequences",
+          "threatening prophetic tone"
+        ],
+        "explanation": "The disaster is depicted as something they cannot 'go out from,' metaphorically turning calamity into an enclosing space or trap with no exit.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 11:12",
+    "deliberation": "The people 'cry out' to the gods to which they burn incense. This is literal cultic language for prayer; 'time of their disaster' is straightforward. No clear figurative devices beyond standard theological diction.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 11:13",
+    "deliberation": "Two notable figures: (1) the exaggeration that Judah has as many gods as towns (and altars as streets), i.e., hyperbolic ratio; (2) calling the altars 'altars to Shame' (הַבֹּשֶׁת) as a pejorative renaming of Baal, a metonymic and ironic expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי מִסְפַּר עָרֶיךָ הָיוּ אֱלֹהֶיךָ יְהוּדָה",
+        "english_text": "For your gods have become as many as your towns, O Judah",
+        "target": [
+          "the proliferation of Judah’s idolatrous cults",
+          "number of false deities worshiped",
+          "religious practices"
+        ],
+        "vehicle": [
+          "a one-to-one correspondence between cities and gods",
+          "extreme numerical equivalence",
+          "quantitative comparison"
+        ],
+        "ground": [
+          "vast numbers indicating excess",
+          "suggestion that idolatry pervades every locality",
+          "pervasiveness"
+        ],
+        "posture": [
+          "uses numerical exaggeration to condemn Judah’s rampant idolatry",
+          "heightens the sense of scandal",
+          "polemical hyperbole"
+        ],
+        "explanation": "Saying Judah has as many gods as towns is an exaggeration designed to stress how widespread idolatry has become.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "מִזְבְּחוֹת לַבֹּשֶׁת מִזְבְּחוֹת לְקַטֵּר לַבָּעַל",
+        "english_text": "altars to Shame—altars for sacrifice to Baal",
+        "target": [
+          "the worship of Baal in Jerusalem",
+          "a specific foreign cult",
+          "religious allegiance"
+        ],
+        "vehicle": [
+          "the abstract notion of 'shame'",
+          "disgrace as a substitute name",
+          "moral evaluation"
+        ],
+        "ground": [
+          "Baal worship is inherently shameful and degrading",
+          "naming the god by its moral quality",
+          "disgrace / dishonor"
+        ],
+        "posture": [
+          "derides Baal by refusing to name him directly, calling him 'Shame' instead",
+          "employs ironic, polemical naming to stigmatize the cult",
+          "prophetic sarcasm"
+        ],
+        "explanation": "The text uses 'Shame' as a pejorative metonymic name for Baal, an ironic way of characterizing the deity and his worship as intrinsically disgraceful.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 11:14",
+    "deliberation": "The key expression is 'do not lift up for them a cry and prayer.' 'Lift up' (תִּשָּׂא) for uttering prayer is a standard Hebrew idiom using vertical movement for vocal expression. The refusal of God to 'hear' is standard theological language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַל־תִּשָּׂא בַעֲדָם רִנָּה וּתְפִלָּה",
+        "english_text": "do not raise a cry of prayer on their behalf",
+        "target": [
+          "Jeremiah’s act of intercessory praying",
+          "offering verbal petitions",
+          "religious practice"
+        ],
+        "vehicle": [
+          "lifting up something upward",
+          "raising an object",
+          "vertical movement"
+        ],
+        "ground": [
+          "prayers conceived as something that ascend toward God",
+          "directionality from earth to heaven",
+          "spatial orientation"
+        ],
+        "posture": [
+          "frames intercession as an upward-directed act that God now forbids",
+          "stresses that such prayers will not be accepted",
+          "finality of judgment"
+        ],
+        "explanation": "Using 'lift up' for offering prayer metaphorically pictures prayers as something raised or sent upward toward God.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 11:15",
+    "deliberation": "Central figure is God referring to Judah as 'my beloved' in 'my house.' This is covenant-as-romance imagery, presenting the nation as a beloved yet faithless intimate in God’s dwelling. The rest of the verse primarily concerns sacrificial meat and rejoicing in evil, which read more literally.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מֶה לִידִידִי בְּבֵיתִי",
+        "english_text": "Why should My beloved be in My House",
+        "target": [
+          "Judah/Israel in covenant relationship with God, especially in the temple",
+          "the faithless covenant community",
+          "human collective"
+        ],
+        "vehicle": [
+          "a 'beloved' person dwelling in someone’s house",
+          "intimate partner or family member in a home",
+          "household/romantic relationship"
+        ],
+        "ground": [
+          "closeness, privilege, and expected loyalty in intimate relationships",
+          "the shock when such a beloved behaves treacherously",
+          "trust / betrayal"
+        ],
+        "posture": [
+          "expresses God’s wounded astonishment at Judah’s treachery in his sanctuary",
+          "frames covenant infidelity as marital/relational betrayal",
+          "emotive prophetic rebuke"
+        ],
+        "explanation": "By calling Judah 'my beloved' in 'my house,' God metaphorically portrays the nation as an intimate partner dwelling in his home (the temple), highlighting the betrayal of that close relationship.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 11:16",
+    "deliberation": "This verse builds an extended metaphor: Judah/Israel is named a 'green olive tree, fair with beautiful fruit,' then the tree is set on fire and its branches (boughs) are broken. The nation is depicted as a cultivated olive tree destroyed by judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "זַיִת רַעֲנָן יְפֵה פְרִי־תֹאַר קָרָא יְהוָה שְׁמֵךְ ... הִצִּית אֵשׁ עָלֶיהָ וְרָעוּ דָּלִיּוֹתָיו",
+        "english_text": "GOD named you 'Verdant olive tree, fair, with choice fruit.' But with a great roaring sound He has set it on fire, and its boughs are broken.",
+        "target": [
+          "the nation (Judah/Israel) in its former blessed state and coming judgment",
+          "collective covenant people and their fate",
+          "human community"
+        ],
+        "vehicle": [
+          "a lush, beautiful olive tree with good fruit that is burned and whose branches break",
+          "cultivated agricultural tree",
+          "natural/agricultural world"
+        ],
+        "ground": [
+          "planted, nurtured fruitfulness followed by catastrophic destruction",
+          "beauty, productivity, and then ruin",
+          "blessing and judgment"
+        ],
+        "posture": [
+          "recalls God’s gracious cultivation of his people while emphasizing the severity of their impending destruction",
+          "evokes both pathos and warning",
+          "vivid prophetic imagery"
+        ],
+        "explanation": "Judah is metaphorically portrayed as a flourishing olive tree with fine fruit that God now sets ablaze, breaking its branches, symbolizing the destruction of a once-favored nation.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 11:17",
+    "deliberation": "Continues the olive-tree imagery by calling God 'who planted you.' The nation ('you') is still being treated as a tree God planted and now decrees evil upon; this sustains the metaphor introduced in v.16.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיהוָה צְבָאוֹת הַנּוֹטֵעַ אוֹתָךְ דִּבֶּר עָלַיִךְ רָעָה",
+        "english_text": "GOD of Hosts, who planted you, has decreed disaster for you",
+        "target": [
+          "Judah/Israel as a people established by God",
+          "their national existence and stability",
+          "social-political entity"
+        ],
+        "vehicle": [
+          "a tree or plant that someone has planted",
+          "cultivated vegetation",
+          "agricultural planting"
+        ],
+        "ground": [
+          "dependence on the planter for existence and flourishing",
+          "the planter’s right to uproot or destroy what he planted",
+          "ownership / control"
+        ],
+        "posture": [
+          "reminds the people that the same God who established them now justly brings disaster",
+          "reinforces the seriousness of their offense",
+          "judicial-prophetic stance"
+        ],
+        "explanation": "Describing God as the one who 'planted you' continues the metaphor of Judah as a tree; their very existence is likened to a planting God is now judging.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 11:18",
+    "deliberation": "God 'informed' Jeremiah and 'showed' him their deeds. Although revelation can come via visions, the language itself (inform, show) is straightforward and not figurative in form here.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 11:19",
+    "deliberation": "This verse contains multiple, distinct figures: (1) Jeremiah 'like a tame lamb led to slaughter'—an explicit simile; (2) enemies saying 'let us destroy the tree with its fruit'—metaphor of a tree for the prophet (and/or his influence); (3) 'cut him off from the land of the living'—idiom for killing; (4) 'that his name be remembered no more'—metonymy of 'name' for reputation/existence, pushed toward hyperbolic erasure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַאֲנִי כְּכֶבֶשׂ אַלּוּף יוּבַל לִטְבּוֹחַ",
+        "english_text": "For I was like a docile lamb led to the slaughter",
+        "target": [
+          "Jeremiah’s unsuspecting vulnerability before his enemies",
+          "his situation as a threatened prophet",
+          "individual human experience"
+        ],
+        "vehicle": [
+          "a tame lamb being led off to be slaughtered",
+          "domesticated sacrificial animal",
+          "animal husbandry / sacrifice"
+        ],
+        "ground": [
+          "innocence, gentleness, and unawareness in the face of impending death",
+          "helplessness before more powerful agents",
+          "victimhood"
+        ],
+        "posture": [
+          "elicits sympathy for Jeremiah and underscores treachery of his opponents",
+          "links his suffering to sacrificial imagery",
+          "lament-complaint rhetoric"
+        ],
+        "explanation": "Jeremiah uses an explicit simile, comparing himself to a tame lamb led to slaughter, to express his innocent and unsuspecting vulnerability to murderous plots.",
+        "confidence": 0.99
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נַשְׁחִיתָה עֵץ בְּלַחְמוֹ",
+        "english_text": "Let us destroy the tree with its fruit",
+        "target": [
+          "Jeremiah (and possibly the effects or offspring of his ministry)",
+          "the prophet’s life and influence",
+          "individual and his legacy"
+        ],
+        "vehicle": [
+          "a tree along with its fruit or food",
+          "a plant and all it produces",
+          "natural object"
+        ],
+        "ground": [
+          "total removal of both source and outcomes",
+          "eradicating not only the person but what comes from him",
+          "comprehensive destruction"
+        ],
+        "posture": [
+          "conveys the enemies’ desire to wipe out Jeremiah and all that issues from him",
+          "shows the extremity of their hostility",
+          "hostile conspiratorial rhetoric (quoted by the prophet)"
+        ],
+        "explanation": "The plotters speak of destroying a 'tree with its fruit' as a metaphor for eliminating Jeremiah together with everything that proceeds from him.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנִכְרְתֶנּוּ מֵאֶרֶץ חַיִּים",
+        "english_text": "and let us cut him off from the land of the living",
+        "target": [
+          "their intent to kill Jeremiah",
+          "ending his life on earth",
+          "mortal existence"
+        ],
+        "vehicle": [
+          "cutting someone off from a land where living people dwell",
+          "removal from a territory",
+          "spatial exclusion"
+        ],
+        "ground": [
+          "death conceptualized as being removed from the realm of the living",
+          "sharp separation and exclusion",
+          "life vs. non-life domains"
+        ],
+        "posture": [
+          "emphasizes the radical finality of the threat against Jeremiah",
+          "presents his enemies as seeking total elimination",
+          "intensified complaint"
+        ],
+        "explanation": "To 'cut someone off from the land of the living' is an idiomatic metaphor for killing them, picturing death as expulsion from the territory inhabited by the living.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּשְׁמוֹ לֹא־יִזָּכֵר עוֹד",
+        "english_text": "that his name be remembered no more",
+        "target": [
+          "eradication of Jeremiah’s reputation and memory",
+          "the prophet’s continuing influence or remembrance",
+          "social memory"
+        ],
+        "vehicle": [
+          "a 'name' that is or is not remembered",
+          "verbal recollection of a person’s name",
+          "linguistic marker"
+        ],
+        "ground": [
+          "a person’s ongoing existence in communal consciousness is tied to remembering their name",
+          "obliterating memory as a form of total defeat",
+          "honor / memory"
+        ],
+        "posture": [
+          "shows enemies aim not only to kill Jeremiah but erase his legacy",
+          "pushes toward hyperbolic total erasure",
+          "heightens pathos of the complaint"
+        ],
+        "explanation": "The conspirators’ wish that Jeremiah’s 'name be remembered no more' uses 'name' metonymically for his reputation and pushes toward hyperbole by envisioning a complete erasure of his memory.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 11:20",
+    "deliberation": "Two figurative elements: (1) God as one who 'tests kidneys and heart,' where 'kidneys' and 'heart' stand for inner thoughts and emotions; (2) 'I have laid/revealed my case (rivi) to you'—forensic metaphor of Jeremiah’s complaint as a legal suit brought before a judge.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שֹׁפֵט צֶדֶק בֹּחֵן כְּלָיוֹת וָלֵב",
+        "english_text": "O just Judge, Who test the thoughts and the mind (literally: kidneys and heart)",
+        "target": [
+          "God’s examination of people’s inner motives and thoughts",
+          "divine scrutiny of the inner person",
+          "moral-spiritual evaluation"
+        ],
+        "vehicle": [
+          "testing internal organs ('kidneys and heart') as if they were objects of examination",
+          "physiological centers being probed",
+          "anatomical imagery"
+        ],
+        "ground": [
+          "ancient conception of kidneys and heart as seats of emotion and thought",
+          "God’s ability to see and assess what is hidden inside",
+          "inner/outer contrast"
+        ],
+        "posture": [
+          "affirms God’s perfect knowledge of internal motives, legitimizing Jeremiah’s appeal",
+          "casts God as an ideal forensic examiner",
+          "trusting yet urgent supplication"
+        ],
+        "explanation": "Calling God one who 'tests kidneys and heart' metaphorically uses internal organs as metonymies for the inner life—thoughts and emotions—that God scrutinizes.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי אֵלֶיךָ גִּלִּיתִי אֶת־רִיבִי",
+        "english_text": "For I lay my case before You (literally: I have revealed my dispute to You)",
+        "target": [
+          "Jeremiah’s complaint about his enemies",
+          "his appeal for justice",
+          "personal grievance"
+        ],
+        "vehicle": [
+          "a formal legal case or lawsuit brought before a judge",
+          "forensic 'dispute' presented in court",
+          "judicial process"
+        ],
+        "ground": [
+          "God is like a judge who hears and decides cases",
+          "Jeremiah’s situation parallels a plaintiff seeking legal redress",
+          "justice / adjudication"
+        ],
+        "posture": [
+          "frames Jeremiah’s suffering as a legal wrong needing divine judgment",
+          "invites God to act as courtroom judge on his behalf",
+          "forensic lament"
+        ],
+        "explanation": "Jeremiah describes his prayer as revealing or laying his 'case' (riv) before God, using legal-forensic metaphor to cast God as judge and himself as a plaintiff.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 11:21",
+    "deliberation": "The phrase 'who seek your life' (הַמְבַקְשִׁים אֶת־נַפְשְׁךָ) is a common Hebrew idiom for trying to kill someone, using 'life' (or 'soul') as the object sought.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַמְבַקְשִׁים אֶת־נַפְשְׁךָ",
+        "english_text": "who seek your life",
+        "target": [
+          "the people of Anathoth’s intention to kill Jeremiah",
+          "their murderous hostility",
+          "violent intent"
+        ],
+        "vehicle": [
+          "seeking or pursuing someone’s 'life/soul'",
+          "hunting for a vital essence",
+          "search/pursuit imagery"
+        ],
+        "ground": [
+          "to take someone’s life is to seize what is most vital to them",
+          "violent pursuit depicted as seeking the very principle of life",
+          "vitality / existence"
+        ],
+        "posture": [
+          "emphasizes the deadly seriousness of their opposition to Jeremiah",
+          "casts them as active hunters of his life",
+          "heightened accusation"
+        ],
+        "explanation": "To 'seek someone’s life' is an idiomatic, metonymic way of saying they are trying to kill him, picturing lethal intent as a pursuit of his very life-breath.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 11:22",
+    "deliberation": "Two figures: (1) 'die by the sword'—using 'sword' as metonymy for warfare/violent death; (2) 'their sons and their daughters shall die'—a male/female pair functioning as a merism for all their offspring.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַבַּחוּרִים יָמֻתוּ בַחֶרֶב",
+        "english_text": "the young men shall die by the sword",
+        "target": [
+          "the young men’s deaths in war",
+          "violent killing in battle",
+          "historical fate"
+        ],
+        "vehicle": [
+          "a literal sword as the agent of death",
+          "weapon used in combat",
+          "instrument of violence"
+        ],
+        "ground": [
+          "sword stands for warfare and military slaughter generally",
+          "focus on violent, external means of death",
+          "war / violence"
+        ],
+        "posture": [
+          "announces a specific, martial form of judgment",
+          "underscores the brutality of the coming punishment",
+          "threatening oracle"
+        ],
+        "explanation": "The phrase 'die by the sword' uses 'sword' metonymically for warfare and violent death in battle.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּנֵיהֶם וּבְנוֹתֵיהֶם יָמֻתוּ בָּרָעָב",
+        "english_text": "their boys and girls shall die by famine",
+        "target": [
+          "all the children of the people of Anathoth",
+          "their entire rising generation",
+          "family line"
+        ],
+        "vehicle": [
+          "the pairing of 'sons and daughters'",
+          "male and female children together",
+          "binary pair"
+        ],
+        "ground": [
+          "listing both male and female implies totality of offspring",
+          "no child is exempt, regardless of gender",
+          "comprehensiveness"
+        ],
+        "posture": [
+          "emphasizes that the judgment will spare none of their children",
+          "intensifies the sense of utter devastation",
+          "totalizing judgment rhetoric (merism)"
+        ],
+        "explanation": "The phrase 'sons and daughters' functions as a merism, using both genders to represent all their children who will die by famine.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 11:23",
+    "deliberation": "The expression 'year of their punishment' (שְׁנַת פְּקֻדָּתָם) is a set prophetic term for the appointed time of judgment but is not strongly figurative; it denotes a time period. 'No remnant shall be left' is a literal absolute statement within judgment rhetoric. No distinct metaphor or simile identified.",
+    "instances": []
+  }
+]

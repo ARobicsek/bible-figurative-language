@@ -1,0 +1,443 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 2:1",
+    "deliberation": "Checked whether the vocative בֶּן־אָדָם ('son of man' / 'mortal') is figurative (idiom, metonymy) and whether 'stand on your feet' functions metaphorically for readiness. In context it serves as a literal designation of Ezekiel’s humanity before God and a literal command to change posture (from prostrate to standing). No clear rhetorical or figurative device beyond normal narrative description.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 2:2",
+    "deliberation": "Considered whether 'a spirit entered into me and set me on my feet' personifies 'spirit' or uses metaphor for empowerment. In Ezekiel's visionary narrative, רוּחַ consistently denotes an actual divine/spiritual agency, not a non-personal abstraction. The movement from prone to standing is part of the visionary action, not an overt metaphor. Thus I treat this as visionary-literal rather than a rhetorical figure.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 2:3",
+    "deliberation": "Examined the labels 'nation of rebels' (גּוֹיִם הַמּוֹרְדִים), 'have rebelled against Me' (מָרְדוּ־בִי), and 'have defied/transgressed against Me' (פָּשְׁעוּ בִי). These extend political insurrection language to covenant violation, a standard prophetic conceptual metaphor. I treat the cluster of rebellion terms as a single figurative mapping (sin as political rebellion). Other elements of the verse are straightforward historical/theological description.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֶל־גּוֹיִ֥ם הַמּוֹרְדִ֖ים אֲשֶׁ֣ר מָרְדוּ־בִ֑י הֵ֤מָּה וַאֲבוֹתָם֙ פָּ֣שְׁעוּ בִ֔י",
+        "english_text": "to the people of Israel, that nation of rebels, who have rebelled against Me—They as well as their ancestors have defied Me",
+        "target": [
+          "Israel’s covenant infidelity toward God",
+          "religious-moral disobedience",
+          "human relationship to the divine"
+        ],
+        "vehicle": [
+          "rebellious nation and ancestors who revolt",
+          "political insurrection against a sovereign",
+          "ancient Near Eastern kingship and vassalage"
+        ],
+        "ground": [
+          "defiance of rightful authority and breach of loyalty",
+          "disloyal, oppositional behavior",
+          "authority–subject dynamics"
+        ],
+        "posture": [
+          "condemning Israel as rebels against their divine king",
+          "prophetic denunciation",
+          "covenant lawsuit / royal ideology"
+        ],
+        "explanation": "Terms for political revolt ('rebels,' 'rebelled against Me,' 'transgressed against Me') are transferred from the sphere of human politics to describe Israel’s religious disobedience to God, picturing sin as treason against a divine king.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 2:4",
+    "deliberation": "Focused on the descriptions קְשֵׁי פָנִים ('hard/brazen of face') and חִזְקֵי־לֵב ('hard/strong of heart'). Both use bodily terms (face, heart) and physical hardness to represent moral-attitudinal traits (shamelessness, stubborn will). These are distinct but related metaphors and also involve synecdoche (face and heart for the whole person’s stance).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "קְשֵׁ֤י פָנִים֙",
+        "english_text": "brazen of face",
+        "target": [
+          "the Israelites’ outward attitude and response to God’s word",
+          "public moral character and demeanor",
+          "human behavior"
+        ],
+        "vehicle": [
+          "a hard/stiff face",
+          "rigid, unyielding bodily surface",
+          "physical hardness / anatomy"
+        ],
+        "ground": [
+          "shameless resistance, unwillingness to show appropriate reaction",
+          "unresponsiveness and defiance",
+          "traits of resistance and lack of sensitivity"
+        ],
+        "posture": [
+          "negative evaluation of Israel’s shameless stance",
+          "prophetic censure of character",
+          "moral-religious critique"
+        ],
+        "explanation": "The people’s brazen attitude is depicted as having a 'hard face,' mapping physical rigidity onto moral shamelessness. The 'face' stands synecdochically for their outward stance toward God and his prophet.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְחִזְקֵי־לֵב",
+        "english_text": "and stubborn of heart",
+        "target": [
+          "the Israelites’ inner will and decision-making",
+          "inner moral disposition",
+          "human psychology"
+        ],
+        "vehicle": [
+          "a strong/hard heart",
+          "rigid, unyielding organ or object",
+          "physical hardness / solidity"
+        ],
+        "ground": [
+          "stubborn, resistant, not easily moved or changed",
+          "resistance to persuasion or repentance",
+          "enduring obstinacy"
+        ],
+        "posture": [
+          "condemning Israel’s inner obstinacy",
+          "prophetic warning about hardened will",
+          "moral-religious discourse"
+        ],
+        "explanation": "A 'hard/strong heart' metaphorically portrays the will as a solid, unyielding object that resists change, using the physical property of hardness to express moral stubbornness. 'Heart' functions as the seat of thought and will, standing for the person’s inner life.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 2:5",
+    "deliberation": "The key phrase is בֵּית מְרִי ('rebellious house'). Here 'house' is a conventional metonym/synecdoche for a family, dynasty, or communal group, and the entire community is labeled by the abstract quality 'rebellion.' I treat this as one figurative expression (primarily metonymy with synecdochic nuance). Other elements are straightforward.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כִּ֛י בֵּ֥ית מְרִ֖י הֵ֑מָּה",
+        "english_text": "for they are a rebellious house",
+        "target": [
+          "the community of Israel in Ezekiel’s day",
+          "social-religious collective",
+          "Israel as a covenant people"
+        ],
+        "vehicle": [
+          "a 'house' characterized by rebellion",
+          "household or dynasty label",
+          "kinship / social structure"
+        ],
+        "ground": [
+          "shared, defining trait passed through a household (rebellion as family identity)",
+          "corporate character and solidarity in disobedience",
+          "group identity and inheritance"
+        ],
+        "posture": [
+          "branding the whole group under a negative family name",
+          "prophetic indictment of communal identity",
+          "covenant lawsuit rhetoric"
+        ],
+        "explanation": "The term 'house' stands metonymically and synecdochically for the whole community, and that community is defined by the abstract noun 'rebellion.' It pictures Israel as a lineage or household whose hallmark is insubordination.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 2:6",
+    "deliberation": "This verse is rich in imagery. I examined (1) סָרָבִים וְסַלּוֹנִים ('thistles and thorns') in relation to the prophet, (2) 'you sit among scorpions' as an image of his environment, and (3) the repeated label בֵּית מְרִי ('rebellious house'). The plant and scorpion imagery function as metaphors for the people’s hostility and the painful danger of their opposition. 'Rebellious house' is again a metonymy for the community.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֣י סָרָבִ֤ים וְסַלּוֹנִים֙ אֹתָ֔ךְ",
+        "english_text": "though thistles and thorns press against you",
+        "target": [
+          "the hostile treatment and words Ezekiel will face from the people",
+          "social and verbal opposition",
+          "prophetic reception by the audience"
+        ],
+        "vehicle": [
+          "thistles and thorns pressing against someone",
+          "painful, prickly vegetation",
+          "natural images of physical irritation and harm"
+        ],
+        "ground": [
+          "causing pain and making movement difficult",
+          "irritating, wounding, obstructive opposition",
+          "experience of suffering and hindrance"
+        ],
+        "posture": [
+          "warning Ezekiel about painful resistance",
+          "realistic yet encouraging portrayal of ministry hardships",
+          "prophetic commissioning in hostile context"
+        ],
+        "explanation": "Hostile hearers and their stinging words are pictured as thistles and thorns that press against the prophet, mapping the physical pain and obstruction of briars onto the emotional and social pain of opposition.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֶל־עַקְרַבִּ֖ים אַתָּ֣ה יוֹשֵׁ֑ב",
+        "english_text": "and you sit upon/among scorpions",
+        "target": [
+          "the dangerous environment in which Ezekiel will minister",
+          "hostile, potentially harmful people",
+          "social setting of the prophet"
+        ],
+        "vehicle": [
+          "sitting among scorpions",
+          "deadly, stinging creatures",
+          "domain of venomous animals"
+        ],
+        "ground": [
+          "constant threat of sharp, sudden harm",
+          "danger, fearfulness, and potential injury",
+          "living under risk and hostility"
+        ],
+        "posture": [
+          "acknowledging real danger but urging fearless obedience",
+          "sobering yet strengthening depiction of Ezekiel’s task",
+          "prophetic call amidst persecution"
+        ],
+        "explanation": "Ezekiel’s hostile audience is likened to scorpions among which he must sit, using the danger and sting of scorpions to represent the injurious, threatening nature of the people around him.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כִּ֛י בֵּ֥ית מְרִ֖י הֵֽמָּה",
+        "english_text": "for they are a rebellious house",
+        "target": [
+          "the exilic Israelite community",
+          "collective identity of the people",
+          "Israel as covenant community"
+        ],
+        "vehicle": [
+          "a 'house' whose defining trait is rebellion",
+          "family/household designation",
+          "social-kinship structures"
+        ],
+        "ground": [
+          "corporate, inherited character of rebellion",
+          "shared household-like identity in disobedience",
+          "group solidarity in attitude and action"
+        ],
+        "posture": [
+          "fixing a negative collective label on the people",
+          "judicial-prophetic assessment",
+          "covenant lawsuit rhetoric"
+        ],
+        "explanation": "Again 'house' stands metonymically (and synecdochically) for the whole community, described as if 'rebellion' were their family name, emphasizing rebellion as their defining group characteristic.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 2:7",
+    "deliberation": "The notable phrase is כִּ֥י מְרִ֖י הֵֽמָּה ('for they are rebellious'). The noun מְרִי literally means 'rebellion' and is used in political contexts, but here it is predicated of the people’s religious stance toward God, extending political-revolt terminology into the theological sphere. I treat this as a concise instance of the same sin-as-rebellion metaphor seen earlier.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּ֥י מְרִ֖י הֵֽמָּה",
+        "english_text": "for they are rebellious",
+        "target": [
+          "Israel’s stance toward God’s message",
+          "religious disobedience",
+          "human–divine relationship"
+        ],
+        "vehicle": [
+          "rebellion against a ruler",
+          "political revolt terminology",
+          "royal/vassal relations"
+        ],
+        "ground": [
+          "defiance, refusal of obedience to rightful authority",
+          "insubordination and non-compliance",
+          "breach of loyalty"
+        ],
+        "posture": [
+          "summarizing Israel’s identity in political terms of revolt",
+          "prophetic indictment",
+          "covenant lawsuit / royal metaphor"
+        ],
+        "explanation": "By calling the people 'rebellion' itself, the verse uses the language of political insurrection to conceptualize their refusal to heed God’s words, treating religious disobedience as treason against a sovereign.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 2:8",
+    "deliberation": "Two figurative elements stand out: (1) the repeated designation בֵּית הַמֶּרִי ('the rebellious house'), again metonymic for the community, and (2) the command 'open your mouth and eat what I am giving you,' which initiates the enacted metaphor of consuming a scroll. Even before the scroll is revealed, 'eat what I give you' clearly extends food imagery to receiving God’s message.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אַל־תְּהִי־מֶ֖רִי כְּבֵ֣ית הַמֶּרִי",
+        "english_text": "Do not be rebellious like that rebellious house",
+        "target": [
+          "Ezekiel’s potential alignment with the people’s behavior",
+          "prophet’s moral stance",
+          "individual relationship to community identity"
+        ],
+        "vehicle": [
+          "a 'house' defined by rebellion",
+          "household as label for a group",
+          "social-kinship imagery"
+        ],
+        "ground": [
+          "shared family-like identity in a dominant trait",
+          "corporate character influencing individuals",
+          "belonging to or resembling a household"
+        ],
+        "posture": [
+          "urging Ezekiel to differentiate from the community’s identity",
+          "warning against assimilating to a rebellious group",
+          "prophetic separation from collective guilt"
+        ],
+        "explanation": "The 'rebellious house' is again a metonymic label in which 'house' stands for the whole people, conceived as a family whose defining characteristic is rebellion, and Ezekiel is warned not to resemble that household.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "פְּצֵ֣ה פִ֔יךָ וֶאֱכֹ֕ל אֵ֥ת אֲשֶׁר־אֲנִ֖י נֹתֵ֥ן אֵלֶֽיךָ",
+        "english_text": "Open your mouth and eat what I am giving you",
+        "target": [
+          "Ezekiel’s reception and internalization of God’s message",
+          "prophetic hearing, acceptance, and obedience",
+          "communication between God and prophet"
+        ],
+        "vehicle": [
+          "opening the mouth and eating given food",
+          "ingesting nourishment",
+          "bodily act of eating"
+        ],
+        "ground": [
+          "taking something into oneself to sustain and shape life",
+          "internalization leading to nourishment and transformation",
+          "deep assimilation of what is given"
+        ],
+        "posture": [
+          "presenting God’s word as spiritual nourishment to be internalized",
+          "emphasizing total assimilation rather than mere hearing",
+          "symbolic act grounding Ezekiel’s commission"
+        ],
+        "explanation": "The command to 'open your mouth and eat' what God gives maps the physical act of eating onto the spiritual act of receiving and internalizing God’s words. This initiates the enacted metaphor of the scroll as food in the following context.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 2:9",
+    "deliberation": "The phrase 'a hand stretched out to me' (יָד שְׁלוּחָה אֵלָי) is the main candidate. Within the vision, a disembodied hand appears to deliver the scroll. This is an anthropomorphic-metonymic representation: 'hand' stands for the divine (or angelic) agent and for active power. I treat that as one instance of metonymy with anthropomorphic coloring.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהִנֵּה־יָ֖ד שְׁלוּחָ֣ה אֵלָ֑י",
+        "english_text": "there was a hand stretched out to me",
+        "target": [
+          "the divine (or angelic) act of giving revelation to Ezekiel",
+          "God’s agency in commissioning the prophet",
+          "divine-human interaction"
+        ],
+        "vehicle": [
+          "a hand stretched out toward someone",
+          "human limb performing an action",
+          "bodily gesture of offering or reaching"
+        ],
+        "ground": [
+          "the hand as the instrument of giving and acting",
+          "agency, power, and intentional bestowal",
+          "embodied conveyance of gifts or messages"
+        ],
+        "posture": [
+          "making God’s act of revelation vivid and concrete",
+          "using anthropomorphic imagery to depict divine action",
+          "visionary-symbolic communication"
+        ],
+        "explanation": "The 'hand' is a metonym for the divine (or angelic) agent and for God’s active power, portrayed anthropomorphically as a human hand reaching out with a scroll. This personifies God’s agency in a bodily form to make the act of revelation tangible.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 2:10",
+    "deliberation": "Assessed whether the description of the scroll 'written on both the front and the back' and the triad 'lamentations, dirges, and woes' involve merism, hyperbole, or metaphor. The double-sided writing underscores fullness but is simply a physical description of the scroll; the listed terms denote types of lament without transferring meaning from another domain. The verse is vivid but not overtly figurative in the technical sense requested.",
+    "instances": []
+  }
+]

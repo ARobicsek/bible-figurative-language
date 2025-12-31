@@ -1,0 +1,836 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 38:1",
+    "deliberation": "Checked the standard prophetic formula וַיְהִי דְבַר־יְהוָה אֵלַי. The collocation treats YHWH’s 'word' as an entity that can 'come' to the prophet, a conventional idiom that personifies the divine message and uses 'word' metonymically for revelatory communication.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהֹוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "prophetic revelation received by Ezekiel",
+          "divine communication",
+          "prophetic-theological"
+        ],
+        "vehicle": [
+          "a 'word' that travels and arrives",
+          "speaking entity/moving object",
+          "human-communication/embodied-motion"
+        ],
+        "ground": [
+          "revelation is experienced as a discrete message that reaches the prophet from outside",
+          "transfer of information from sender to receiver",
+          "conceptualization of communication as physical movement"
+        ],
+        "posture": [
+          "presents prophecy as a concrete, authoritative message initiated by God",
+          "legitimizing/authority-marking formula",
+          "discourse-framing in prophetic literature"
+        ],
+        "explanation": "The divine revelation is portrayed as a 'word' that can come to the prophet, personifying the message and using 'word' metonymically for the whole revelatory event; the motion verb ‘came’ is a conceptual metaphor for communication.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 38:2",
+    "deliberation": "Examined the vocative בֶן־אָדָם and the command שִׂים פָּנֶיךָ אֶל־גּוֹג. Both are stock prophetic idioms: 'son of man' for a human/mortal and 'set your face toward' for adopting a hostile prophetic stance. Both are figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal (lit. son of man)",
+        "target": [
+          "Ezekiel as a human prophet",
+          "individual human being",
+          "anthropological"
+        ],
+        "vehicle": [
+          "a 'son of man'",
+          "offspring of the human category",
+          "family/descent terminology"
+        ],
+        "ground": [
+          "sharing the frailty and limitations of humankind",
+          "membership in the human race",
+          "use of descent language to denote class or category"
+        ],
+        "posture": [
+          "stresses the prophet’s mortality and low status in contrast to God",
+          "humbling/address-category",
+          "prophetic self-presentation"
+        ],
+        "explanation": "The phrase 'son of man' is a Hebraic idiom/synecdoche for a human being, highlighting Ezekiel’s mortal, creaturely status rather than literally describing parentage.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִׂ֤ים פָּנֶ֙יךָ֙ אֶל־גּוֹג",
+        "english_text": "turn your face toward Gog",
+        "target": [
+          "Ezekiel’s prophetic attention and opposition toward Gog",
+          "prophetic stance and focus",
+          "prophetic-commission"
+        ],
+        "vehicle": [
+          "physically setting one’s face toward someone",
+          "bodily orientation",
+          "spatial/embodied interaction"
+        ],
+        "ground": [
+          "facing someone corresponds to confronting or addressing them directly",
+          "direction of the face reflects intention and focus",
+          "embodied posture mapping onto relational stance"
+        ],
+        "posture": [
+          "depicts Ezekiel’s oracle as a direct, confrontational address to Gog",
+          "threatening/judicial stance",
+          "rhetorical framing of judgment speech"
+        ],
+        "explanation": "The idiom 'set your face toward' metaphorically uses physical orientation of the face to express deliberate, confrontational focus in prophecy.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 38:3",
+    "deliberation": "Looked at the divine oracle formula. The key phrase is הִנְנִי אֵלֶיךָ, literally 'here I am to you,' functioning idiomatically as 'I am against you,' a figurative expression of hostility rather than mere spatial proximity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִ֤י אֵלֶ֙יךָ֙ גּ֔וֹג",
+        "english_text": "Lo, I am coming to deal with you (lit. here I am against you), O Gog",
+        "target": [
+          "God’s judicial opposition to Gog",
+          "divine hostility and judgment",
+          "theological-judicial"
+        ],
+        "vehicle": [
+          "a person’s presence directed 'toward' another",
+          "spatial orientation and approach",
+          "embodied spatial relation"
+        ],
+        "ground": [
+          "being turned toward someone in confrontation signals active opposition",
+          "presence focused on an adversary implies engagement and conflict",
+          "use of spatial language to express relational stance"
+        ],
+        "posture": [
+          "emphasizes that God is personally and actively opposed to Gog, not neutral",
+          "threatening/judgment-announcement",
+          "prophetic intimidation strategy"
+        ],
+        "explanation": "The idiom 'here I am to you' uses spatial orientation ('to you') as a metaphor for adopting an adversarial stance, and in prophetic context means 'I am against you.'",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 38:4",
+    "deliberation": "Focused on וְנָתַתִּי חַחִים בִּלְחָיֶיךָ. This portrays Gog as an animal (fish or beast) led by hooks, a vivid controlling metaphor. The rest of the verse (army, horses, shields) is straightforward military description.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּ֥י חַחִ֖ים בִּלְחָיֶ֑יךָ",
+        "english_text": "I will put hooks in your jaws",
+        "target": [
+          "Gog’s plans and movements as a military leader",
+          "hostile imperial power under divine control",
+          "international-political"
+        ],
+        "vehicle": [
+          "an animal or large fish controlled by hooks in its jaws",
+          "restrained animal",
+          "animal-husbandry/fishing"
+        ],
+        "ground": [
+          "loss of autonomy and being forcibly directed despite resistance",
+          "physical compulsion overriding the will",
+          "coercive control"
+        ],
+        "posture": [
+          "depicts Gog as powerless livestock under God’s coercive guidance rather than a sovereign aggressor",
+          "humiliating and demoting the enemy",
+          "anti-imperial theological polemic"
+        ],
+        "explanation": "By saying He will put 'hooks in your jaws,' God metaphorically reduces Gog to a beast led by hooks, emphasizing divine control over Gog’s seemingly independent aggression.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 38:5",
+    "deliberation": "The verse lists nations (Persia, Cush, Put) and mentions shields and helmets in a straightforward, military sense. No clear metaphors, similes, or idiomatic expressions beyond literal armament.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 38:6",
+    "deliberation": "Names Gomer, Beth-togarmah, 'remotest parts of the north,' and 'many peoples with you.' These are geographic and ethnic designations used literally; no obvious figurative device like metaphor or simile is employed.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 38:7",
+    "deliberation": "Imperatives to be ready, prepare, and be a guard are in a military register and can be taken literally. 'You will be a guard for them' fits a straightforward military role rather than a figurative image in this context.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 38:8",
+    "deliberation": "Considered restoration imagery. The key figurative element is אֶרֶץ מְשׁוֹבֶבֶת מֵחֶרֶב, 'land restored from the sword,' where 'sword' stands metonymically for warfare and violent destruction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶרֶץ מְשׁוֹבֶבֶת מֵחֶרֶב",
+        "english_text": "the land [of a people] restored from the sword",
+        "target": [
+          "Israel’s land recovering from past devastation",
+          "post-war national restoration",
+          "historical-political"
+        ],
+        "vehicle": [
+          "a 'sword' representing organized destructive violence",
+          "weapon of war",
+          "military-violence"
+        ],
+        "ground": [
+          "the sword is the primary tool by which land is laid waste in war",
+          "instrument stands for the activity and its effects",
+          "causal association between weapon and devastation"
+        ],
+        "posture": [
+          "presents Israel’s restoration as a reversal of a history of warfare and devastation",
+          "highlighting deliverance from violence",
+          "theological interpretation of history"
+        ],
+        "explanation": "Here 'the sword' is a metonymy for warfare and violent destruction, so 'restored from the sword' means restored from the ravages of war.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 38:9",
+    "deliberation": "Identified two explicit comparative particles: כַּשֹּׁאָה ('like a storm') and כֶּעָנָן ('like a cloud') describing Gog’s advance. These are two related but distinct similes, storm and cloud, stressing violence and overwhelming coverage.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעָלִיתָ כַּשֹּׁאָה",
+        "english_text": "You shall advance, coming like a storm",
+        "target": [
+          "Gog’s military advance into the land",
+          "hostile invasion",
+          "international-conflict"
+        ],
+        "vehicle": [
+          "a violent storm",
+          "destructive weather event",
+          "natural-phenomena"
+        ],
+        "ground": [
+          "suddenness, force, and destructiveness of arrival",
+          "uncontrollable, fear-inducing power",
+          "overwhelming impact on those in its path"
+        ],
+        "posture": [
+          "presents Gog’s approach as terrifyingly violent and uncontrollable",
+          "escalating the perceived threat",
+          "rhetorical amplification of danger"
+        ],
+        "explanation": "The explicit 'like a storm' simile compares Gog’s advance to a violent storm to convey its sudden and destructive power; the extremity also has a hyperbolic coloring.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֶּעָנָן לְכַסּוֹת הָאָרֶץ תִּהְיֶה",
+        "english_text": "you shall be like a cloud covering the earth",
+        "target": [
+          "the size and spread of Gog’s forces",
+          "vast invading host",
+          "military/demographic"
+        ],
+        "vehicle": [
+          "a cloud that covers the land",
+          "dense atmospheric mass",
+          "sky/weather imagery"
+        ],
+        "ground": [
+          "extensive, obscuring, enveloping presence",
+          "numerousness and spread making resistance seem futile",
+          "visual dominance over the landscape"
+        ],
+        "posture": [
+          "intends to impress the reader with the sheer magnitude of the invasion",
+          "dramatic, awe-inducing portrayal",
+          "apocalyptic-style exaggeration"
+        ],
+        "explanation": "The simile 'like a cloud covering the earth' pictures Gog’s armies as a massive, darkening cloud, stressing their number and the sense that they blot out the land—an image with hyperbolic force.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 38:10",
+    "deliberation": "The key phrase is יַעֲלוּ דְבָרִים עַל־לְבָבֶךָ, literally 'things/words will go up upon your heart,' a common Hebrew conceptual metaphor where thoughts are objects moving upon the heart.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יַעֲלוּ דְבָרִים עַל־לְבָבֶךָ",
+        "english_text": "a thought will occur to you (lit. things will go up upon your heart)",
+        "target": [
+          "Gog’s process of forming an evil plan",
+          "internal thought and deliberation",
+          "cognitive/psychological"
+        ],
+        "vehicle": [
+          "things/words rising and resting upon the heart",
+          "moving objects contacting an inner organ",
+          "embodied-spatial imagery"
+        ],
+        "ground": [
+          "ideas appear in the mind as if arriving or rising from elsewhere",
+          "the heart is the seat of thought and will in Hebrew anthropology",
+          "mental events conceptualized as movements upon an inner space"
+        ],
+        "posture": [
+          "attributes Gog’s scheming to the emergence of thoughts within, emphasizing premeditation",
+          "describing inner evil as something that arises and takes hold",
+          "moral-psychological depiction"
+        ],
+        "explanation": "The idiom 'things will go up upon your heart' metaphorically represents the arising of thoughts as objects moving and settling upon the heart, the inner seat of planning.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 38:11",
+    "deliberation": "The description of 'a land of open towns,' 'tranquil people,' 'living in unwalled towns and lacking bars and gates' can be understood literally as undefended settlements and social security. I did not find a distinct figurative expression beyond normal description.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 38:12",
+    "deliberation": "Detected two figurative expressions: (1) לְהָשִׁיב יָדְךָ עַל, 'to turn your hand against,' an idiom for hostile action; (2) יֹשְׁבֵי עַל־טַבּוּר הָאָרֶץ, 'dwelling on the navel/center of the earth,' a metaphor for central importance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְהָשִׁ֨יב יָדְךָ֜ עַל־חֳרָב֣וֹת נוֹשָׁב֗וֹת",
+        "english_text": "to turn your hand against repopulated wastes",
+        "target": [
+          "Gog’s hostile actions toward the restored settlements",
+          "acts of aggression and exploitation",
+          "military/predatory behavior"
+        ],
+        "vehicle": [
+          "turning one’s hand against something",
+          "reorienting a limb toward an object",
+          "bodily-action imagery"
+        ],
+        "ground": [
+          "directing one’s hand toward someone is associated with striking, seizing, or harming",
+          "bodily movement symbolizes intentional hostile action",
+          "embodied gesture as proxy for aggression"
+        ],
+        "posture": [
+          "frames Gog’s intent as deliberate and aggressive",
+          "underscores culpability",
+          "judicial characterization of intent"
+        ],
+        "explanation": "The idiom 'turn your hand against' uses bodily movement as a metaphor for taking hostile, harmful action against a target.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יֹשְׁבֵ֖י עַל־טַבּ֥וּר הָאָֽרֶץ",
+        "english_text": "living at the center (lit. navel) of the earth",
+        "target": [
+          "the geographic and theological centrality of the people/land targeted",
+          "special status/location of Israel",
+          "geopolitical-theological"
+        ],
+        "vehicle": [
+          "the 'navel' of a body",
+          "central body part",
+          "anatomical imagery"
+        ],
+        "ground": [
+          "the navel is the central point of a body and lifeline in birth",
+          "centrality and connectedness imply importance and focality",
+          "imagery of core or hub"
+        ],
+        "posture": [
+          "elevates the significance of the land as the focal point of the earth’s story",
+          "underscores why it is a coveted target",
+          "Zion-centered theological geography"
+        ],
+        "explanation": "Calling the land the 'navel of the earth' is a metaphor, slightly hyperbolic, portraying it as the world’s central, most important point.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 38:13",
+    "deliberation": "The main figurative element is כְּפִירֶיהָ, 'its young lions,' used for the powerful leaders/merchants of Tarshish. The repeated questions about plunder are rhetorical but not metaphorical per se.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְכׇל־כְּפִירֶ֙יהָ֙",
+        "english_text": "and all its magnates (lit. its young lions)",
+        "target": [
+          "the leading powers associated with Tarshish",
+          "political/economic elites",
+          "social-political"
+        ],
+        "vehicle": [
+          "young lions",
+          "strong predatory animals",
+          "animal-king imagery"
+        ],
+        "ground": [
+          "strength, boldness, and predatory tendencies",
+          "dominance over others and capacity to seize prey",
+          "fear-inspiring power"
+        ],
+        "posture": [
+          "presents these merchants/leaders as strong, predatory, and self-interested observers of Gog’s plundering",
+          "mildly critical characterization",
+          "moral evaluation via animal imagery"
+        ],
+        "explanation": "Calling the leaders 'young lions' metaphorically emphasizes their strength and predatory character; the animal term functions as a metaphor and a metonymy for powerful human figures.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 38:14",
+    "deliberation": "The verse reiterates the prophetic formula and describes Israel 'living secure' in a way that can be taken as straightforward. I did not find an explicit metaphor, simile, or idiom distinct from normal speech patterns.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 38:15",
+    "deliberation": "Describes Gog’s origin ('farthest north'), many peoples, riding on horses, a great assembly and army. These function literally within the war vision; no clear figurative language beyond standard military imagery.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 38:16",
+    "deliberation": "Two candidate figures: (1) כֶּעָנָן לְכַסּוֹת הָאָרֶץ is an explicit simile, repeating v.9’s cloud imagery; (2) 'I will be sanctified in you' is theological but not clearly a distinct metaphor here. I mark the cloud simile as the primary figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֶּעָנָ֖ן לְכַסּ֣וֹת הָאָ֑רֶץ",
+        "english_text": "like a cloud covering the earth",
+        "target": [
+          "the extent and visual impact of Gog’s advance on Israel",
+          "huge invading force",
+          "military/demographic"
+        ],
+        "vehicle": [
+          "a cloud that covers the earth",
+          "vast, obscuring atmospheric mass",
+          "weather/sky imagery"
+        ],
+        "ground": [
+          "enveloping presence, obscuring what lies beneath",
+          "suggestion of oppressive, overwhelming dominance",
+          "visual spread over a wide area"
+        ],
+        "posture": [
+          "aims to dramatize the threat and set the stage for God’s dramatic intervention",
+          "heightening contrast between human might and divine holiness",
+          "apocalyptic-style dramatic framing"
+        ],
+        "explanation": "The simile 'like a cloud covering the earth' again portrays Gog’s forces as a massive, enveloping cloud, stressing size and ominous dominance in a somewhat hyperbolic way.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 38:17",
+    "deliberation": "Most of the verse is conceptual, about prior prophecy. The phrase בְּיַד עֲבָדַי נְבִיאֵי יִשְׂרָאֵל, 'by the hand of my servants the prophets,' uses 'hand' as a metonymy for agency/instrumentality.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּיַד֙ עֲבָדַי֙ נְבִיאֵ֣י יִשְׂרָאֵ֔ל",
+        "english_text": "through My servants, the prophets (lit. by the hand of My servants, the prophets)",
+        "target": [
+          "the prophets as instruments of God’s speech",
+          "human agents communicating divine message",
+          "prophetic-mediation"
+        ],
+        "vehicle": [
+          "a 'hand' performing an action",
+          "instrumental limb",
+          "body-part imagery"
+        ],
+        "ground": [
+          "the hand is the organ by which work is carried out",
+          "hands symbolize agency and instrumentality",
+          "part stands for the person’s effective action"
+        ],
+        "posture": [
+          "underscores that the prophets are God’s instruments, not independent authorities",
+          "emphasizes divine initiative and control",
+          "theological view of inspiration"
+        ],
+        "explanation": "Using 'by the hand of My servants, the prophets' employs 'hand' metonymically for active agency, portraying the prophets as the instruments through whom God spoke.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 38:18",
+    "deliberation": "The climactic phrase תַּעֲלֶה חֲמָתִי בְּאַפִּי, 'My wrath will go up in My nose,' is a vivid anthropomorphic idiom depicting divine anger as heat rising in the nostrils; a recurrent metaphor in biblical Hebrew for anger.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תַּעֲלֶ֥ה חֲמָתִ֖י בְּאַפִּֽי",
+        "english_text": "My raging anger shall flare up (lit. My wrath will go up in My nose)",
+        "target": [
+          "God’s intense anger at Gog’s invasion",
+          "divine emotional response",
+          "theological-affective"
+        ],
+        "vehicle": [
+          "heat or breath rising in the nose",
+          "flaring nostrils",
+          "physiological sign of anger"
+        ],
+        "ground": [
+          "in human experience, anger is accompanied by hot breath, flared nostrils",
+          "rising motion and heat signify intensification",
+          "embodied emotion mapped onto divine anger"
+        ],
+        "posture": [
+          "highlights the intensity and personal nature of God’s anger against Gog",
+          "warns of severe impending judgment",
+          "anthropomorphic rhetoric to make divine wrath vivid"
+        ],
+        "explanation": "The idiom 'My wrath will go up in My nose' metaphorically represents divine anger in terms of hot breath and flared nostrils, personifying God with human physiological reactions.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 38:19",
+    "deliberation": "The central figurative expression is בְּאֵשׁ־עֶבְרָתִי, 'in the fire of My wrath,' where God’s wrath is metaphorically depicted as blazing fire.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּקִנְאָתִ֥י בְאֵשׁ־עֶבְרָתִ֖י",
+        "english_text": "in My indignation and in My blazing wrath (lit. in the fire of My wrath)",
+        "target": [
+          "God’s intense, punitive anger",
+          "divine wrath",
+          "theological-affective"
+        ],
+        "vehicle": [
+          "fire",
+          "destructive, blazing flame",
+          "natural-element imagery"
+        ],
+        "ground": [
+          "both wrath and fire burn, consume, and destroy",
+          "heat and intensity as shared attributes",
+          "difficult to endure and potentially devastating"
+        ],
+        "posture": [
+          "portrays God’s judgment as fierce and consuming",
+          "prepares for the catastrophic earthquake described",
+          "heightened emotional tone"
+        ],
+        "explanation": "Describing wrath as 'fire' is a metaphor that conveys the consuming, intense nature of divine anger.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 38:20",
+    "deliberation": "Noted exhaustive list 'fish... birds... beasts... all creeping things... every human' forming a merism/all-inclusive catalog, and 'every wall shall fall to the ground' as hyperbolic language of total collapse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "דְּגֵ֣י הַיָּם ... וְע֨וֹף הַשָּׁמַ֜יִם וְחַיַּ֣ת הַשָּׂדֶ֗ה וְכׇל־הָרֶ֙מֶשׂ֙ ... וְכֹל֙ הָאָדָ֔ם",
+        "english_text": "The fish of the sea, the birds of the sky, the beasts of the field, all creeping things that move on the ground, and every human being on earth",
+        "target": [
+          "the totality of creation affected by God’s theophanic judgment",
+          "all living creatures",
+          "cosmic/ecological"
+        ],
+        "vehicle": [
+          "an exhaustive-sounding list covering all domains of life",
+          "meristic catalog",
+          "rhetorical enumeration"
+        ],
+        "ground": [
+          "mentioning all main categories implies universality",
+          "representative categories stand for the whole system of life",
+          "comprehensive scope signaled by inclusive listing"
+        ],
+        "posture": [
+          "conveys the cosmic extent of the upheaval caused by God’s presence",
+          "heightens the seriousness of the judgment event",
+          "apocalyptic-style universalizing rhetoric"
+        ],
+        "explanation": "The sweeping list of creatures functions as a merism and hyperbolic enumeration to depict all realms of life trembling before God, not just a few specific species.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכׇל־חוֹמָ֖ה לָאָ֥רֶץ תִּפּֽוֹל",
+        "english_text": "and every wall shall crumble to the ground",
+        "target": [
+          "the collapse of human defenses and structures",
+          "all protective fortifications",
+          "socio-political security"
+        ],
+        "vehicle": [
+          "every single wall falling to the ground",
+          "total structural collapse",
+          "architectural imagery"
+        ],
+        "ground": [
+          "widespread destruction is portrayed as if no wall remains standing",
+          "removal of all protection and security",
+          "absolute vulnerability"
+        ],
+        "posture": [
+          "intensifies the depiction of judgment as utterly dismantling human security",
+          "communicates total defeat and exposure",
+          "rhetorical overstatement for impact"
+        ],
+        "explanation": "Saying 'every wall shall fall' is hyperbolic language that dramatizes the thoroughness of the devastation and the end of all human defenses.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 38:21",
+    "deliberation": "Identified the phrase וְקָרָאתִי ... חֶרֶב, 'I will summon the sword,' which personifies 'the sword' as an agent and uses it metonymically for violent warfare; also 'each man’s sword against his brother' uses 'sword' for fratricidal violence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְקָרָ֨אתִי עָלָ֤יו לְכׇל־הָרַי֙ חֶ֔רֶב ... חֶ֥רֶב אִ֖ישׁ בְּאָחִ֥יו תִּהְיֶֽה",
+        "english_text": "I will then summon the sword against him throughout My mountains ... and every man’s sword shall be turned against his kin",
+        "target": [
+          "the outbreak of divinely induced civil/inner warfare among Gog’s forces",
+          "violent conflict and mutual slaughter",
+          "military/judicial"
+        ],
+        "vehicle": [
+          "a 'sword' that can be summoned and turned against kin",
+          "weapon treated as an active agent",
+          "combat imagery"
+        ],
+        "ground": [
+          "the sword is the instrument by which killing is done",
+          "calling the sword / swords against each other symbolizes war and self-destruction",
+          "weapon stands for act of killing and battle"
+        ],
+        "posture": [
+          "presents God as sovereign over warfare, turning attackers against one another",
+          "depicts judgment as self-destructive violence among enemies",
+          "theological interpretation of internecine conflict"
+        ],
+        "explanation": "Here 'the sword' is metonymy for warfare and killing, and it is personified as something God can summon; 'each man’s sword against his brother' pictures mutual slaughter using the weapon for the act.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 38:22",
+    "deliberation": "Lists modes of judgment—pestilence, bloodshed, torrential rain, hailstones, fire, sulfur. These may echo Sodom language but can all be taken as literal calamities sent by God; there is no clear marked metaphor, simile, or idiom beyond standard prophetic threat language.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 38:23",
+    "deliberation": "Considered the verbs 'I will magnify Myself, sanctify Myself, and make Myself known' and the phrase 'in the sight (lit. in the eyes) of many nations.' The key figurative element is בְּעֵינֵי גּוֹיִם רַבִּים, where 'eyes' stands metonymically for perception/awareness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנ֣וֹדַעְתִּ֔י לְעֵינֵ֖י גּוֹיִ֣ם רַבִּ֑ים",
+        "english_text": "and make Myself known in the sight (lit. in the eyes) of many nations",
+        "target": [
+          "the nations’ recognition of God’s greatness and holiness",
+          "human perception and acknowledgment of God",
+          "cognitive/theological"
+        ],
+        "vehicle": [
+          "the 'eyes' of the nations",
+          "organ of seeing",
+          "sensory-perception imagery"
+        ],
+        "ground": [
+          "eyes are associated with seeing and thus with knowing/realizing",
+          "visual perception stands for cognitive recognition",
+          "organ used metonymically for its function"
+        ],
+        "posture": [
+          "presents God’s self-revelation as publicly perceptible and undeniable",
+          "underscores the visibility and undeniability of His acts",
+          "universalizing, missional perspective"
+        ],
+        "explanation": "The phrase 'in the eyes of many nations' uses 'eyes' metonymically for perception and awareness, signifying that God’s greatness will become evident to their understanding.",
+        "confidence": 0.87
+      }
+    ]
+  }
+]

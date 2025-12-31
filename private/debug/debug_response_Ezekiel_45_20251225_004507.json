@@ -1,0 +1,326 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 45:1",
+    "deliberation": "Considered whether the cultic expressions 'תָּרִימוּ תְרוּמָה' (lift up an offering) and 'קֹדֶשׁ ... בְכׇל־גְּבוּלָהּ' (holy in all its border) are metaphorical. In priestly Hebrew these are technical terms for sacral status and property designation, not literary figures. No metaphors, similes, personification, metonymy, or idioms beyond standard cultic vocabulary.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 45:2",
+    "deliberation": "This verse is purely geometrical and architectural: dimensions, a square around the sanctuary, and an open space. No non-literal or figurative use of language detected.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 45:3",
+    "deliberation": "Again this verse specifies measurements and identifies the designated area as 'קֹדֶשׁ קׇדָשִׁים' (most holy), a fixed cultic category for sacred space. Within this priestly system it functions as a technical status, not as a metaphorical comparison. No figurative language devices identified.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 45:4",
+    "deliberation": "Describes a sacred portion of land for priestly housing and for the sanctuary. Terms like 'קֹדֶשׁ מִן־הָאָרֶץ' (a holy portion from the land) and 'מִקְדָּשׁ לַמִּקְדָּשׁ' (sanctuary for the sanctuary) are cultic-technical, not metaphorical. No metaphor, simile, personification, or idiom beyond institutional language.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 45:5",
+    "deliberation": "Allocates a measured tract of land to the Levites. All language is spatial, quantitative, and administrative, with no non-literal or figurative phrasing.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 45:6",
+    "deliberation": "Continues the distribution of measured land, this time for the city. The phrasing 'לְכׇל־בֵּית יִשְׂרָאֵל יִהְיֶה' here uses 'house of Israel' in a distributive, literal-collective sense for the nation; it is a conventional designation of the people, but functioning as the normal name of the group. I reserve metonymy analysis for places where the 'house' concept is more salient. No clear figurative devices identified.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 45:7",
+    "deliberation": "Describes the prince's allotment with directional language ('מִפְּאַת־יָם יָמָּה ... מִגְּב֥וּל יָם אֶל־גְּב֥וּל קָדִימָה'). Considered whether this is a merism (west to east for the whole), but here it literally defines the longitudinal extent of his domain, not a rhetorical totality statement. No figurative language.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 45:8",
+    "deliberation": "Most of the verse is literal: the land as the prince's holding and the end of defrauding the people. However, the phrase 'בֵּית־יִשְׂרָאֵל' ('the house of Israel') is a standard metonymic designation where a 'house' (household) stands for a kinship group or nation. Here it clearly labels the tribes collectively by a domestic/lineage term.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּֽית־יִשְׂרָאֵ֖ל",
+        "english_text": "the House of Israel",
+        "target": [
+          "the people of Israel as a nation, organized by tribes",
+          "collective human community",
+          "social-political domain"
+        ],
+        "vehicle": [
+          "a \"house\" understood as a household or family unit",
+          "physical dwelling / kinship unit",
+          "domestic-architectural domain"
+        ],
+        "ground": [
+          "a house gathers, shelters, and identifies the members belonging to it",
+          "the way a dwelling or household label represents all its members",
+          "using a concrete house term to stand for a social group"
+        ],
+        "posture": [
+          "distribution of land \"to the house of Israel by its tribes\"",
+          "normative/legal instruction about inheritance",
+          "covenantal-land-ethics domain"
+        ],
+        "explanation": "The expression 'house of Israel' uses a domestic term ('house/household') to stand metonymically for the entire nation, conceptualizing Israel as one extended household.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 45:9",
+    "deliberation": "Looked for non-literal rebuke language. Found (1) 'רַב־לָכֶם' as a fixed idiomatic rebuke meaning 'enough!' rather than a literal statement about quantity, and (2) 'הָרִימוּ גְרֻשֹׁתֵיכֶם מֵעַל עַמִּי', which pictures oppressive evictions as a physical load resting 'upon' the people that must be 'lifted off'. That second phrase blends idiomatic usage with a load/burden metaphor of oppression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רַב־לָכֶם֙ נְשִׂיאֵ֣י יִשְׂרָאֵ֔ל",
+        "english_text": "Enough, princes of Israel!",
+        "target": [
+          "the princes' ongoing oppressive behavior",
+          "human moral conduct",
+          "social-ethical domain"
+        ],
+        "vehicle": [
+          "the phrase 'it is much for you' (רַב לָכֶם) used idiomatically",
+          "language of quantity/measure ('too much')",
+          "economic/measurement domain"
+        ],
+        "ground": [
+          "the idea that their wrongdoing has exceeded an acceptable limit",
+          "excess in moral behavior conceptualized as having 'too much' of something",
+          "using quantitative excess to express moral boundary transgression"
+        ],
+        "posture": [
+          "divine rebuke directed at rulers",
+          "evaluative/judgmental stance",
+          "prophetic admonition genre"
+        ],
+        "explanation": "The collocation 'רַב־לָכֶם' functions as an idiomatic exclamation meaning 'That is enough!' or 'No more!', drawing on quantity language but used as a conventional rebuke rather than a literal statement about how much they have.",
+        "confidence": 0.82
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָרִ֤ימוּ גְרֻשֹֽׁתֵיכֶם֙ מֵעַ֣ל עַמִּ֔י",
+        "english_text": "Put a stop to your evictions of My people (lit. 'lift up/remove your expulsions from upon My people')",
+        "target": [
+          "the rulers’ practice of dispossessing and driving out God’s people",
+          "oppressive socio-economic actions",
+          "social-justice domain"
+        ],
+        "vehicle": [
+          "a heavy load resting on someone that is lifted off",
+          "physical burden/load imagery",
+          "bodily/spatial domain"
+        ],
+        "ground": [
+          "oppressive policies are experienced as a weight or burden pressing on the people",
+          "ending oppression is like lifting a weight off someone’s back",
+          "using physical pressure and relief to conceptualize social exploitation and its cessation"
+        ],
+        "posture": [
+          "command to remove unjust practices from 'upon' God’s people",
+          "liberating/relief-oriented stance",
+          "prophetic call for justice"
+        ],
+        "explanation": "By saying 'remove (lift up) your expulsions from upon My people', the text portrays the princes' evictions as a burden pressing down on the people that must be lifted away, an oppression-as-burden metaphor expressed in an idiomatic verbal phrase.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 45:10",
+    "deliberation": "The triad 'מֹאזְנֵי־צֶדֶק וְאֵיפַת־צֶדֶק וּבַת־צֶדֶק' attributes 'צֶדֶק' (righteousness/justice) to weighing scales and measures. This goes beyond physical description to map a moral-legal quality onto commercial instruments, a conventional moral metaphor (and mild personification) for honest trade.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מֹֽאזְנֵי־צֶ֧דֶק וְאֵֽיפַת־צֶ֛דֶק וּבַת־צֶ֖דֶק יְהִ֥י לָכֶֽם",
+        "english_text": "Have honest balances, an honest ephah, and an honest bath (lit. 'balances of righteousness, an ephah of righteousness, and a bath of righteousness')",
+        "target": [
+          "commercial transactions and the use of weights and measures",
+          "economic behavior in trade",
+          "social-ethical domain"
+        ],
+        "vehicle": [
+          "righteousness/justice applied to physical measuring instruments",
+          "moral-legal quality of being just or upright",
+          "judicial-moral domain"
+        ],
+        "ground": [
+          "accurate, non-deceptive measures correspond to morally right behavior",
+          "honesty in trade is like righteousness in court, hence 'righteous' weights",
+          "mapping ethical integrity onto physical tools to stress their moral significance"
+        ],
+        "posture": [
+          "command to ensure fair trading practices",
+          "didactic/normative stance",
+          "Torah-style instruction in justice"
+        ],
+        "explanation": "By calling scales and measures 'of righteousness', the verse metaphorically (and mildly personifies them) as morally upright, using the vocabulary of judicial righteousness to characterize economic honesty.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 45:11",
+    "deliberation": "Explains the equivalence between ephah, bath, and ḥomer. All terms and relationships are strictly mathematical and technical. No figurative extensions, evaluative adjectives, or anthropomorphisms here.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 45:12",
+    "deliberation": "Defines shekel-weight in gerahs and how various shekel amounts count as a mina. Again, all language is numerical and technical. No metaphor, simile, idiom, or other figurative device is employed.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 45:13",
+    "deliberation": "Specifies the exact fraction of an ephah to be given from grain as a contribution. This is legal-cultic prescription with numeric specificity. No non-literal or figurative language is used.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 45:14",
+    "deliberation": "Regulates the amount of oil due, measured by the bath and ḥomer. Though the Hebrew is somewhat technical/obscure, it is about measurement, not image. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 45:15",
+    "deliberation": "Gives the ratio of animals from the flock for offerings 'to make expiation for them'. Within priestly-cultic discourse, 'כִּפֵּר עֲלֵיהֶם' is a technical term for ritual atonement, not here used as a stylized metaphor. The verse otherwise lists offerings and ratios. No distinct literary figures identified.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 45:16",
+    "deliberation": "States that 'כֹּל הָעָם הָאָרֶץ' (all the people of the land) shall participate in the contribution. This is a comprehensive description of the populace, but functions straightforwardly, not as a merism or synecdoche beyond normal collective reference. No specific figurative construction singled out.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 45:17",
+    "deliberation": "Most of the verse is literal, listing types of offerings and assigning responsibility to the prince. However, the phrase 'לְכַפֵּ֖ר בְּעַ֥ד בֵּֽית־יִשְׂרָאֵֽל' uses 'house of Israel' again as a conventional metonymy for the people of Israel, casting the nation as a household that needs expiation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּֽית־יִשְׂרָאֵֽל",
+        "english_text": "the House of Israel",
+        "target": [
+          "the collective people of Israel who require expiation",
+          "national community",
+          "religious-societal domain"
+        ],
+        "vehicle": [
+          "a 'house' or household as a social unit",
+          "dwelling / family-household",
+          "domestic-architectural domain"
+        ],
+        "ground": [
+          "a house stands for everyone who belongs to it and shares its fate",
+          "the way a family is identified by its 'house' name maps onto national identity",
+          "using a concrete household image to denote the entire people as one unit"
+        ],
+        "posture": [
+          "cultic responsibility of the prince to provide offerings",
+          "mediatory/representative stance",
+          "sacrificial-atonement instruction"
+        ],
+        "explanation": "The expression 'house of Israel' employs a domestic term to stand metonymically for the entire people, conceptualizing the nation as a single household on whose behalf atonement is made.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 45:18",
+    "deliberation": "Instructs taking a flawless bull to 'חִטֵּאתָ אֶת־הַמִּקְדָּשׁ' (cleanse/purge the sanctuary). Although cleansing sin/impurity from a building is conceptually rich, in priestly language this is a technical description of ritual purification, not used as a literary metaphor here. No separate figurative device isolated.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 45:19",
+    "deliberation": "Describes applying blood to architectural elements (doorposts, corners, gate posts). These are ritual directions about spatial loci of purification; no metaphor, simile, personification, or idiom beyond the ritual system.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 45:20",
+    "deliberation": "Commands a similar ritual on the seventh day 'מֵאִישׁ שֹׁגֶה וּמִפֶּתִי וְכִפַּרְתֶּם אֶת־הַבָּיִת' (for someone who erred or was ignorant, and you shall purge the house). Here 'the house' is the temple complex; the atonement language is cultic-technical as in Levitical law, not deployed as a fresh figure of speech. No distinct figurative expression singled out.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 45:21",
+    "deliberation": "Describes timing and basic observance of Passover and unleavened bread. The terms 'הַפָּסַח' and 'מַצּוֹת' are names of rituals/foods, not used metaphorically here. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 45:22",
+    "deliberation": "States that the prince will provide a bull as a purgation offering for himself and the people. The language is straightforward cultic instruction; no metaphors, similes, or idioms beyond technical sacrificial vocabulary.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 45:23",
+    "deliberation": "Lists numbers and types of animals for daily burnt and purgation offerings during the festival. The number seven has symbolic resonance but here functions as prescribed quantity rather than as an explicit figure of speech. No discrete figurative constructions identified.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 45:24",
+    "deliberation": "Specifies the grain offering amounts and oil proportion per animal. Entirely technical and quantitative; no non-literal language or imagery.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 45:25",
+    "deliberation": "Describes offerings at the seventh-month festival with 'כָאֵלֶּה' (like these) referring back to previously specified sacrifices. This 'like these' is simple anaphoric comparison, not a developed simile or metaphor. No distinct figurative device is present.",
+    "instances": []
+  }
+]

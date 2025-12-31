@@ -1,0 +1,887 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 36:1",
+    "deliberation": "Examined whether this is merely an address to Ezekiel or includes figurative language. The command to prophesy to inanimate 'mountains' and the summons for them to 'hear' God’s word is a clear personification of the land as an audience capable of hearing and responding.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנָּבֵ֖א אֶל־הָרֵ֣י יִשְׂרָאֵ֑ל ... הָרֵי֙ יִשְׂרָאֵ֔ל שִׁמְע֖וּ דְּבַר־יְהֹוָֽה",
+        "english_text": "prophesy to the mountains of Israel and say: O mountains of Israel, hear the word of GOD",
+        "target": ["the mountains / land of Israel as audience", "the landscape of Israel", "physical geography"],
+        "vehicle": ["a listening human audience", "humans capable of hearing and obeying", "animate beings"],
+        "ground": ["being addressed and expected to respond to God’s word", "receptivity and accountability", "moral-spiritual agency"],
+        "posture": ["prophet speaks to land as if it were people", "rhetorical-prophetic personification", "prophetic discourse"],
+        "explanation": "The inanimate mountains are treated as if they can hear a prophetic message, personifying the land as a responsible audience of God.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 36:2",
+    "deliberation": "Considered whether 'ancient heights' or the enemy’s cry 'Aha!' were figurative. Here 'ancient heights' refers literally to longstanding high places/territory and the enemy’s gloating is direct speech without apparent metaphor or personification.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 36:3",
+    "deliberation": "Looked for metaphors in the verbs and idioms. Found a metaphorical verb of greedy panting after the land and an idiomatic-metonymic expression about being on the 'lip of the tongue', i.e., becoming the subject of gossip.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשָׁאֹ֨ף אֶתְכֶ֜ם מִסָּבִ֗יב לִֽהְיֽוֹתְכֶ֤ם מֽוֹרָשָׁה֙ לִשְׁאֵרִ֣ית הַגּוֹיִ֔ם",
+        "english_text": "they eagerly lusted to see you become a possession of the other nations round about",
+        "target": ["the nations’ desire for Israel’s land", "hostile political ambition", "international power relations"],
+        "vehicle": ["panting or gulping after something", "greedy animal hunger", "physical appetite"],
+        "ground": ["intense, greedy desire to seize the land", "aggressive covetousness", "consuming craving"],
+        "posture": ["condemns enemy greed by depicting it as animal-like panting", "evaluative metaphor of desire as voracious appetite", "prophetic denunciation"],
+        "explanation": "The verb 'to pant/aspire after' the land evokes an image of an animal greedily panting or gulping, metaphorically characterizing the nations’ covetous desire.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתֵּ֥עֲל֛וּ עַל־שְׂפַ֥ת לָשׁ֖וֹן וְדִבַּת־עָֽם",
+        "english_text": "so that you have become the butt of gossip in every language and of the jibes from every people",
+        "target": ["Israel / the land’s reputation", "social standing", "public perception"],
+        "vehicle": ["'lip of the tongue' and 'evil report'", "speech organs and gossip", "verbal expression"],
+        "ground": ["being constantly talked about with slander", "notoriety and mockery", "negative reputation"],
+        "posture": ["uses body-part imagery (tongue, lip) for speech about Israel", "idiomatic metonymy where tongue stands for language and talk", "lament over scorn"],
+        "explanation": "The phrase 'you went up on the lip of the tongue and the evil report of the people' idiomatically portrays Israel as the constant subject of slander, with 'tongue' standing metonymically for speech.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 36:4",
+    "deliberation": "Noted a meristic list of terrain features representing the whole land, and two evaluative metaphors ('prey' and 'laughingstock') describing how the nations treated the desolated land and cities.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לֶהָרִ֨ים וְלַגְּבָע֜וֹת לָאֲפִיקִ֣ים וְלַגֵּאָי֗וֹת",
+        "english_text": "to the mountains and the hills, to the watercourses and the valleys",
+        "target": ["the entire land of Israel", "territory of Israel", "physical geography"],
+        "vehicle": ["mountains, hills, ravines, valleys as a pair-list", "comprehensive listing of landscape features", "spatial totality"],
+        "ground": ["conveys total coverage of the land", "expresses wholeness via contrasting parts", "inclusiveness of all terrain"],
+        "posture": ["uses a merism-like list to represent the whole land", "stylistic 'other' figure (merism) rather than simple literal topography", "prophetic address to all parts of the land"],
+        "explanation": "The paired mention of mountains, hills, ravines, and valleys functions as a merism, evoking the entirety of the land by listing contrasting terrain features.",
+        "confidence": 0.78
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁ֨ר הָי֤וּ לְבַז֙",
+        "english_text": "that have become a prey",
+        "target": ["the desolate cities and land of Israel", "conquered settlements", "national fortunes of Israel"],
+        "vehicle": ["prey taken by a hunter", "hunted animal", "animal world"],
+        "ground": ["being vulnerable to seizure and plunder", "powerlessness before stronger enemies", "victimization"],
+        "posture": ["depicts plundered cities as animals seized as prey", "military defeat conceptualized as being hunted and eaten", "prophetic lament"],
+        "explanation": "Calling the ruined cities 'prey' metaphorically portrays them as hunted animals, emphasizing their vulnerability to foreign plunder.",
+        "confidence": 0.85
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּלְלַ֔עַג",
+        "english_text": "and a laughingstock",
+        "target": ["the desolate cities and land of Israel", "Israel’s political condition", "national status"],
+        "vehicle": ["object of mockery", "butt of jokes", "social ridicule"],
+        "ground": ["being ridiculed, not taken seriously", "shame before other nations", "public dishonor"],
+        "posture": ["uses evaluative metaphor to present the land as something laughed at", "projects social scorn onto the physical desolation", "prophetic description of humiliation"],
+        "explanation": "Describing the land as a 'laughingstock' metaphorically characterizes Israel’s devastation as an object of derisive ridicule among the nations.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 36:5",
+    "deliberation": "The key figurative expression is 'in the fire of My jealousy I have spoken', where divine jealousy/wrath is imaged as fire. The rest, including 'My land' as possession, is straightforward.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּאֵ֨שׁ קִנְאָתִ֥י דִבַּ֛רְתִּי",
+        "english_text": "I have indeed spoken in My blazing wrath",
+        "target": ["YHWH’s jealous wrath", "divine punitive emotion", "divine judgment"],
+        "vehicle": ["fire, blazing heat", "destructive flame", "natural force"],
+        "ground": ["intensity, consuming and destructive power", "unstoppable, burning anger", "dangerous, purging effect"],
+        "posture": ["portrays God’s jealousy as a devouring fire", "standard biblical metaphor of wrath as burning", "prophetic threat imagery"],
+        "explanation": "God’s jealousy or wrath is depicted as fire, highlighting its intense, consuming, and destructive character toward the nations.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 36:6",
+    "deliberation": "The land (mountains, hills, ravines, valleys) is addressed as 'you' and said to have 'borne the disgrace of the nations', personifying the land as a subject that can carry shame.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יַ֛עַן כְּלִמַּ֥ת גּוֹיִ֖ם נְשָׂאתֶֽם",
+        "english_text": "Because you have suffered the taunting of the nations",
+        "target": ["the land of Israel", "territory and cities", "physical geography as recipient of events"],
+        "vehicle": ["a person bearing disgrace or insults", "shamed individual", "socially humiliated human"],
+        "ground": ["being associated with disgrace brought by others", "carrying the effects of shame", "bearing reproach"],
+        "posture": ["the land is treated as if it personally bears mockery", "personification as shamed sufferer", "prophetic rhetoric to stress the land’s humiliation"],
+        "explanation": "The land is depicted as if it could 'bear' the nations’ disgrace, personifying it as a shamed sufferer rather than mere soil.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 36:7",
+    "deliberation": "Identified the idiom 'I have lifted my hand' as an oath formula, and the metaphor of 'bearing their disgrace' where disgrace is treated as a load carried.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲנִ֖י נָשָׂ֣אתִי אֶת־יָדִ֑י",
+        "english_text": "I hereby swear (literally: I have lifted up My hand)",
+        "target": ["YHWH’s solemn oath", "divine commitment", "speech act of swearing"],
+        "vehicle": ["lifting the hand", "gesture of oath-taking", "physical sign of resolve"],
+        "ground": ["formal, visible declaration of intent", "public seriousness and binding nature", "ritualized confirmation"],
+        "posture": ["conventional idiom where the raised hand stands metonymically for swearing an oath", "non-literal but formulaic expression", "legal-prophetic style"],
+        "explanation": "The phrase 'I have lifted My hand' is an idiomatic oath formula, using the physical gesture metonymically to signify a binding divine promise.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵ֖מָּה כְּלִמָּתָ֥ם יִשָּֽׂאוּ",
+        "english_text": "they shall, in their turn, suffer (literally: bear) their disgrace",
+        "target": ["the surrounding nations", "hostile peoples", "human societies"],
+        "vehicle": ["a person carrying a heavy load", "bearer of a burden", "physical labor"],
+        "ground": ["disgrace as something weighty and oppressive", "inescapable burden one must bear", "personal responsibility for shame"],
+        "posture": ["disgrace is conceptualized as a burden one must carry", "metaphor emphasizes the weight and inescapability of their shame", "retributive imagery"],
+        "explanation": "To 'bear their disgrace' treats shame as a heavy load placed upon them, highlighting the weight and inescapable nature of their dishonor.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 36:8",
+    "deliberation": "Observed that the mountains are addressed directly and portrayed as giving branches and bearing fruit specifically 'for My people Israel', personifying the land as an intentional provider for God’s people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַתֶּ֞ם הָרֵ֤י יִשְׂרָאֵל֙ עַנְפְּכֶ֣ם תִּתֵּ֔נוּ וּפֶרְיְכֶ֥ם תִּשְׂא֖וּ לְעַמִּ֣י יִשְׂרָאֵ֑ל",
+        "english_text": "But you, O mountains of Israel, shall yield your produce and bear your fruit for My people Israel",
+        "target": ["the mountains / land of Israel", "agricultural productivity of the land", "territorial environment"],
+        "vehicle": ["a purposeful benefactor or host", "a person giving produce for others", "intentional human provider"],
+        "ground": ["supplying sustenance for others’ benefit", "acting on behalf of someone’s welfare", "responsive generosity"],
+        "posture": ["the land is personified as an active giver for Israel’s sake", "emphasizes God-directed benevolence of the land toward His people", "restoration rhetoric"],
+        "explanation": "The mountains are addressed as if they could intentionally 'give' branches and fruit for Israel, personifying the land as a deliberate provider on behalf of God’s people.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 36:9",
+    "deliberation": "Considered whether 'turning to you' is merely directional or figurative. Here YHWH’s turning toward the land stands for showing favor, a common anthropomorphic metaphor for divine attention.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֖י הִנְנִ֣י אֲלֵיכֶ֑ם וּפָנִ֣יתִי אֲלֵיכֶ֔ם",
+        "english_text": "For I will care for you: I will turn to you",
+        "target": ["God’s change of stance toward Israel and its land", "divine favor and attention", "God–land relationship"],
+        "vehicle": ["a person turning their face toward someone", "favorable physical orientation", "interpersonal attention"],
+        "ground": ["attentive concern and readiness to help", "favor instead of neglect", "positive orientation"],
+        "posture": ["uses anthropomorphic bodily orientation as a metaphor for divine favor", "standard biblical idiom of God 'turning His face' to signal blessing", "restoration assurance"],
+        "explanation": "God’s promise to 'turn to' the land figuratively expresses a shift to active favor and care, using human bodily orientation as a metaphor for divine attention.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 36:10",
+    "deliberation": "Language about increasing population, resettling towns, and rebuilding ruins is straightforwardly descriptive of restoration; verbs and nouns function literally without clear metaphor or other figures.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 36:11",
+    "deliberation": "Descriptions of multiplying humans and animals and making things better than at first read as literal blessing language. No distinct metaphor, personification, or idiom beyond ordinary usage was detected.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 36:12",
+    "deliberation": "Here the land is promised not to 'cause them to be bereaved' any longer, echoing the motif of the land as a child‑bereaving mother or deadly environment, which personifies the land as an agent causing loss.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא־תוֹסִ֥ף ע֖וֹד לְשַׁכְּלָֽם",
+        "english_text": "and you shall not again cause them to be bereaved",
+        "target": ["the land of Israel in its effects on inhabitants", "Israel’s experience of loss in the land", "national survival"],
+        "vehicle": ["a bereaving or miscarrying mother", "someone who causes loss of children", "family tragedy agent"],
+        "ground": ["being the setting or agent of repeated deaths and losses", "cutting off offspring or future", "destructive, life-denying effect"],
+        "posture": ["personifies the land as a mother who previously caused her people to be bereaved", "links covenant curse to maternal imagery", "turns from deadly to life-supporting land"],
+        "explanation": "The land is portrayed as if it had been causing Israel’s bereavement, like a mother losing children, a personification stressing how hostile the land had become and how that will cease.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 36:13",
+    "deliberation": "This verse quotes what the nations say: that the land 'devours humans' and 'bereaves its nations'. These are two vivid metaphors personifying the land as both a man‑eating monster and a bereaving mother.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֹכֶ֥לֶת אָדָ֖ם אָ֑תְּ",
+        "english_text": "You are [a land] that devours humans",
+        "target": ["the land of Israel and its effect on inhabitants", "national mortality experience in the land", "living conditions in the land"],
+        "vehicle": ["a devouring creature or monster", "man‑eater", "dangerous animal"],
+        "ground": ["causing many deaths or disappearances", "perceived lethality of living there", "consuming people so that they vanish"],
+        "posture": ["personifies the land as a voracious eater of people", "hyperbolically expresses how deadly and inhospitable the land seemed", "echoes Num 13:32 imagery"],
+        "explanation": "Calling the land one that 'devours humans' is a metaphor that personifies it as a man‑eating creature, depicting the high mortality and disaster experienced there.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמְשַׁכֶּ֥לֶת גּוֹיַ֖יִךְ הָיִֽית",
+        "english_text": "you have been a bereaver of your nations",
+        "target": ["the land’s relationship to its nations/inhabitants", "Israel’s demographic losses", "corporate future of the people"],
+        "vehicle": ["a bereaved or miscarrying mother", "someone losing or causing loss of children", "family grief figure"],
+        "ground": ["cutting off offspring, future generations, and stability", "producing repeated bereavement", "deep grief over loss of people"],
+        "posture": ["extends personification of land as a mother who repeatedly loses or causes loss of her 'children'", "portrays national disasters as maternal bereavement", "intensifies the pathos of the curse"],
+        "explanation": "The land is described as a 'bereaver' of its nations, personified as a mother who loses or destroys her children, expressing the loss of population and hope.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 36:14",
+    "deliberation": "This verse repeats and negates the prior accusations: the land will no longer 'eat' humans nor 'bereave' its nations. These echo the personifying metaphors of devouring and bereaving.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָדָם֙ לֹא־תֹ֣אכְלִי ע֔וֹד",
+        "english_text": "you shall devour humans no more",
+        "target": ["the land’s future impact on its inhabitants", "mortality and danger in the land", "national existence"],
+        "vehicle": ["a creature that eats humans", "devouring mouth", "dangerous predator"],
+        "ground": ["consuming and eliminating people", "causing them to disappear", "threat to survival"],
+        "posture": ["denies that the land will continue to act like a devouring creature", "reverses earlier curse imagery", "restorative promise"],
+        "explanation": "The promise that the land will no longer 'eat' humans continues the metaphor of the land as a devouring monster, now negated to signify safety and stability.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְגוֹיַ֖יִךְ לֹ֣א תְשַׁכְּלִי־ע֑וֹד",
+        "english_text": "you shall never again bereave your nations",
+        "target": ["the land’s relationship to its peoples", "future demographic stability", "corporate life of Israel"],
+        "vehicle": ["a mother who causes loss of children", "bereaving figure", "family grief source"],
+        "ground": ["cutting off descendants and weakening the community", "repeated experience of tragic loss", "absence of secure continuity"],
+        "posture": ["negates the land’s earlier role as a bereaving mother", "signals transformation from death-dealing to life-supporting land", "reversal of covenant curses"],
+        "explanation": "The land is again portrayed as a bereaving mother, but now promised that it will no longer cause such losses, underscoring the end of disastrous conditions.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 36:15",
+    "deliberation": "Most phrases are straightforward denials of reproach. The final line, however, 'you will no longer cause your nations to stumble,' uses 'stumble' metaphorically for catastrophic failure or downfall caused by the land’s conditions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְגוֹיַ֙יִךְ֙ לֹא־תַכְשִׁ֣לִי ע֔וֹד",
+        "english_text": "and never again shall you cause your nations to stumble",
+        "target": ["Israel’s people in their life in the land", "national fortunes", "corporate existence"],
+        "vehicle": ["someone physically tripping and falling", "stumbling person", "bodily mishap"],
+        "ground": ["experiencing downfall or failure", "being destabilized and brought low", "harmful consequences resulting from conditions"],
+        "posture": ["personifies the land as one who makes others stumble", "uses physical stumbling as metaphor for disaster or ruin", "promise of newfound stability"],
+        "explanation": "To say the land will no longer cause its nations to 'stumble' personifies it as an agent of downfall and uses bodily tripping as a metaphor for catastrophic failure.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 36:16",
+    "deliberation": "The formula 'the word of YHWH came to me' is a standard prophetic introduction. Here it functions literally for divine communication and does not clearly operate as a distinct metaphor or other figure.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 36:17",
+    "deliberation": "Noted two related figures: (1) moral behavior 'defiling' the land, using cultic impurity imagery for sin, and (2) an explicit simile comparing Israel’s ways to the impurity of a menstruous woman.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְטַמְּא֣וּ אוֹתָ֔הּ בְּדַרְכָּ֖ם וּבַעֲלִֽילוֹתָ֑ם",
+        "english_text": "they defiled it with their ways and their deeds",
+        "target": ["Israel’s sinful conduct and its effect on the land", "moral state of the people", "covenant relationship"],
+        "vehicle": ["ritual defilement of holy space", "cultic impurity", "ritual contamination"],
+        "ground": ["rendering something unfit for God’s presence", "polluting what should be holy", "serious offense requiring cleansing"],
+        "posture": ["uses ritual impurity language to conceptualize moral sin as defilement", "frames ethical corruption as pollution of the land", "priestly-prophetic metaphor"],
+        "explanation": "Israel’s ways are said to 'defile' the land, metaphorically treating their moral sins as cultic pollution that makes the land unfit for God’s presence.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּטֻמְאַת֙ הַנִּדָּ֔ה הָיְתָ֥ה דַרְכָּ֖ם לְפָנָֽי",
+        "english_text": "their ways were in My sight like the impurity of a menstruous woman",
+        "target": ["Israel’s 'ways' (conduct)", "moral and religious behavior", "ethical-spiritual condition"],
+        "vehicle": ["the impurity of a menstruous woman", "state of niddah", "ritual uncleanness"],
+        "ground": ["being ritually excluded or unfit for contact with the holy", "strong sense of impurity and separation", "need for cleansing before restoration"],
+        "posture": ["explicit simile using cultic impurity to characterize Israel’s conduct", "intensifies the sense of defilement and repulsiveness", "priestly ethical evaluation"],
+        "explanation": "Their behavior is explicitly likened to the ritual impurity associated with menstruation, emphasizing its defiling, disqualifying character before God.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 36:18",
+    "deliberation": "Identified two figures: (1) 'I poured out My wrath' as a common metaphor picturing wrath as a liquid being emptied out, and (2) idols 'defiling' the land, again using ritual impurity as a metaphor for idolatry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וָאֶשְׁפֹּ֤ךְ חֲמָתִי֙ עֲלֵיהֶ֔ם",
+        "english_text": "So I poured out My wrath on them",
+        "target": ["God’s exercise of judgment", "divine wrath in action", "punitive response"],
+        "vehicle": ["pouring out a liquid", "emptying a container", "flowing substance"],
+        "ground": ["sudden, overwhelming release", "completeness and intensity of outpouring", "unstoppable flow"],
+        "posture": ["treats wrath as a liquid that can be poured out", "emphasizes the total, forceful nature of God’s judgment", "vivid anger imagery"],
+        "explanation": "God’s wrath is portrayed as something that can be 'poured out', a metaphor using liquid imagery for the intense, overwhelming execution of judgment.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְגִלּוּלֵיהֶ֖ם טִמְּאֽוּהָ",
+        "english_text": "and for the fetishes with which they defiled it",
+        "target": ["the impact of idolatry on the land and relationship with God", "spiritual condition of the land", "covenant status"],
+        "vehicle": ["ritual defilement of a holy space", "polluting presence", "cultic uncleanness"],
+        "ground": ["making what should be holy unacceptable to God", "polluting and desecrating the sacred", "requiring purification and exile"],
+        "posture": ["again uses impurity vocabulary for idolatry", "frames idolatrous practices as defiling contaminants", "priestly metaphor applied to land"],
+        "explanation": "Idolatrous 'fetishes' are said to 'defile' the land, employing ritual impurity language to describe how idolatry pollutes the covenant space.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 36:19",
+    "deliberation": "Verbs of scattering and dispersing are common literal descriptions for exile and diaspora; while historically deriving from scattering objects, here they function as standard terms without strong metaphorical overtones. No distinct figure was marked.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 36:20",
+    "deliberation": "The key figurative feature is 'My holy name' being profaned. 'Name' stands metonymically for God’s reputation or honor among the nations; profaning it means bringing dishonor on God’s perceived character.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַֽיְחַלְּל֖וּ אֶת־שֵׁ֣ם קׇדְשִׁ֑י",
+        "english_text": "they caused My holy name to be profaned",
+        "target": ["God’s reputation as perceived by nations", "public perception of YHWH’s holiness and power", "divine honor"],
+        "vehicle": ["God’s 'name'", "label or designation", "linguistic sign"],
+        "ground": ["the name represents the person and reputation", "to defile the name is to dishonor the person", "social status bound to one’s name"],
+        "posture": ["uses 'name' metonymically for God’s reputation", "describes exile as causing nations to regard YHWH as weak or unfaithful", "theological concern for God’s honor"],
+        "explanation": "'My holy name' functions as a metonymy for God’s reputation; to profane the name is to bring His honor into disrepute before the nations.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 36:21",
+    "deliberation": "Again 'My holy name' is the focus: God has compassion 'on My holy name', i.e., on His reputation. This is another use of 'name' as metonymy for honor and public perception.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וָאֶחְמֹ֖ל עַל־שֵׁ֣ם קׇדְשִׁ֑י",
+        "english_text": "Therefore I am concerned for My holy name",
+        "target": ["God’s public honor and reputation", "how YHWH is regarded among nations", "divine glory"],
+        "vehicle": ["God’s 'name'", "naming and designation", "linguistic signifier"],
+        "ground": ["name stands for the person’s identity and honor", "to care for the name is to care for the person’s reputation", "social value attached to a name"],
+        "posture": ["continues metonymy of 'name' for reputation", "portrays God as acting to vindicate His honor", "theological motivation for restoration"],
+        "explanation": "God’s pity for 'My holy name' means concern for His reputation, using 'name' as a metonym for His public honor.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 36:22",
+    "deliberation": "The contrast 'not for your sake but for My holy name' again uses 'name' metonymically for God’s reputation among the nations. No additional distinct figures beyond this metonymy are present.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֤י אִם־לְשֵׁם־קׇדְשִׁי֙ אֲשֶׁ֣ר חִלַּלְתֶּ֔ם",
+        "english_text": "but for My holy name, which you have caused to be profaned",
+        "target": ["God’s honor and reputation", "how YHWH is viewed among nations", "divine self-presentation"],
+        "vehicle": ["God’s 'name'", "designation/label", "linguistic reference"],
+        "ground": ["the name embodies the person’s fame and honor", "profaning the name equals dishonoring the person", "acting 'for the name' is acting for reputation"],
+        "posture": ["again 'name' functions as metonymy for God’s reputation", "makes clear that restoration is for divine honor rather than Israel’s merit", "theological emphasis on God’s motivation"],
+        "explanation": "'My holy name' stands for God’s reputation; Israel’s exile had profaned it, and God acts to restore that honor.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 36:23",
+    "deliberation": "The verse continues the theme of 'My great name' being profaned and then sanctified among the nations—again a metonymy of 'name' for reputation. The sanctification occurs 'in you before their eyes', but the primary distinct figure is the metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְקִדַּשְׁתִּ֞י אֶת־שְׁמִ֣י הַגָּד֗וֹל הַֽמְחֻלָּל֙ בַּגּוֹיִ֔ם",
+        "english_text": "I will sanctify My great name that has been profaned among the nations",
+        "target": ["God’s fame and honor", "recognition of YHWH’s holiness", "divine reputation among nations"],
+        "vehicle": ["God’s 'name'", "great name as designation", "linguistic token for identity"],
+        "ground": ["the name encapsulates the person’s renown and status", "sanctifying the name means publicly vindicating the person", "profaning name equals dishonoring the person"],
+        "posture": ["extends the metonymy of 'name' = reputation", "depicts restoration as public vindication of God’s holiness", "international recognition motif"],
+        "explanation": "God’s 'great name' is metonymic for His reputation; its profanation and sanctification refer to how the nations perceive and honor Him.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 36:24",
+    "deliberation": "The gathering from the nations and bringing back to the land are described in plain, geographic-historical terms; no distinctive metaphor, personification, or idiom beyond normal usage appears.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 36:25",
+    "deliberation": "The sprinkling of clean water may allude to literal cultic rites, but its application to moral defilement shows a metaphor: ritual purification stands for spiritual/moral cleansing from sins and idols.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְזָרַקְתִּ֧י עֲלֵיכֶ֛ם מַ֥יִם טְהוֹרִ֖ים וּטְהַרְתֶּ֑ם ... מִכׇּל־גִּלּ֥וּלֵיכֶ֖ם אֲטַהֵ֥ר אֶתְכֶֽם",
+        "english_text": "I will sprinkle pure water upon you, and you shall be purified ... I will purify you from all your defilement and from all your fetishes",
+        "target": ["Israel’s moral and cultic sins", "spiritual condition of the people", "covenant relationship"],
+        "vehicle": ["ritual sprinkling of cleansing water", "ceremonial purification", "washing away of impurity"],
+        "ground": ["removal of what makes one unclean and unacceptable before God", "transition from defiled to pure state", "restored access to holiness"],
+        "posture": ["uses cultic washing as a metaphor for inner moral and spiritual cleansing", "extends impurity imagery from earlier verses", "promissory purification"],
+        "explanation": "Sprinkling 'pure water' on the people metaphorically represents God’s act of cleansing them from moral defilement and idolatry, drawing on ritual purification practices.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 36:26",
+    "deliberation": "This verse is rich in metaphor: 'heart' and 'spirit' stand for inner disposition, and 'heart of stone' vs 'heart of flesh' contrasts stubborn unresponsiveness with soft receptivity. This extended metaphor is the central figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּ֤י לָכֶם֙ לֵ֣ב חָדָ֔שׁ ... וַהֲסִ֨רֹתִ֜י אֶת־לֵ֤ב הָאֶ֙בֶן֙ מִבְּשַׂרְכֶ֔ם וְנָתַתִּ֥י לָכֶ֖ם לֵ֥ב בָּשָֽׂר",
+        "english_text": "And I will give you a new heart and put a new spirit into you: I will remove the heart of stone from your body and give you a heart of flesh",
+        "target": ["Israel’s inner disposition and will", "moral and spiritual character", "covenant loyalty"],
+        "vehicle": ["heart as seat of will, made of stone or flesh", "stony object versus living flesh", "physical hardness versus softness"],
+        "ground": ["stone suggests hardness, unresponsiveness, and resistance; flesh suggests softness, sensitivity, and responsiveness", "inner transformation from obstinacy to receptivity", "capacity to respond to God’s commands"],
+        "posture": ["employs bodily and material imagery (heart, stone, flesh) as metaphors for inner moral change", "depicts regeneration as surgical replacement", "highly influential theological metaphor"],
+        "explanation": "The 'heart of stone' and 'heart of flesh' metaphorically describe a transformation from a stubborn, unresponsive will to a soft, responsive disposition toward God.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 36:27",
+    "deliberation": "Here 'walk in My statutes' is a standard metaphor in biblical Hebrew for living in obedience. God putting His spirit 'within you' is more theological than figurative, but the 'walking' in statutes is clearly metaphorical.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵ֤ת אֲשֶׁר־בְּחֻקַּי֙ תֵּלֵ֔כוּ",
+        "english_text": "Thus I will cause you to follow (literally: to walk in) My laws",
+        "target": ["Israel’s pattern of life", "ethical conduct and obedience", "ongoing behavior"],
+        "vehicle": ["walking along a path", "journeying in a way", "physical movement"],
+        "ground": ["a continuous course of action like following a path", "direction and guidance", "consistency over time"],
+        "posture": ["uses path-walking imagery to describe living according to God’s commands", "common biblical metaphor of life as a walk", "moral-ethical orientation"],
+        "explanation": "Obedience is depicted as 'walking' in God’s statutes, a metaphor comparing a way of life to following a path laid out by God’s laws.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 36:28",
+    "deliberation": "The covenant formula 'you shall be My people and I will be your God' expresses relationship but not via an explicit metaphor or simile in this context; it functions as a legal-theological statement. No clear additional figure detected.",
+    "instances": []
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 36:29",
+    "deliberation": "Noted two potential figures: salvation from 'defilements' (continuing impurity metaphor) and God 'calling to the grain'. The latter clearly personifies grain as responsive to God’s summons, which I mark as the distinct figurative instance here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְקָרָ֤אתִי אֶל־הַדָּגָן֙ וְהִרְבֵּיתִ֣י אֹת֔וֹ",
+        "english_text": "I will summon the grain and make it abundant",
+        "target": ["agricultural productivity in Israel", "grain harvests", "economic provision"],
+        "vehicle": ["calling a responsive servant or subject", "summoning someone to come", "personal obedience to a call"],
+        "ground": ["grain responds to God’s command as if it had agency", "direct divine control over natural processes", "immediate responsiveness to divine word"],
+        "posture": ["personifies the grain as if it could hear and obey God’s call", "underscores God’s sovereign command over creation", "restoration imagery"],
+        "explanation": "Grain is treated as though it can hear God’s summons and respond, personifying agricultural yield as an obedient subject to highlight divine control over provision.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 36:30",
+    "deliberation": "The verse promises increased fruit and crops and the end of 'reproach of famine'. This 'reproach of famine' is an evaluative phrase but functions literally as social shame tied to hunger; no distinct metaphor beyond normal extension is evident.",
+    "instances": []
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 36:31",
+    "deliberation": "The people will 'loathe yourselves in your own sight' because of sins. This uses self-loathing as a strong, possibly hyperbolic metaphor for deep contrition and moral revulsion at one’s own past behavior.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּנְקֹֽטֹתֶם֙ בִּפְנֵיכֶ֔ם עַ֚ל עֲוֺנֹ֣תֵיכֶ֔ם",
+        "english_text": "and you shall loathe yourselves in your own sight for your iniquities",
+        "target": ["Israel’s moral evaluation of themselves", "inner attitude toward their past", "repentant self-perception"],
+        "vehicle": ["feeling disgust or abhorrence as toward something vile", "loathing an object", "strong aversion"],
+        "ground": ["deep emotional revulsion toward what has become repulsive", "turning away in disgust", "moral horror at one’s sins"],
+        "posture": ["uses the language of self-loathing hyperbolically for intense repentance", "may function as idiomatic expression for profound regret", "inner transformation imagery"],
+        "explanation": "To 'loathe yourselves' metaphorically describes intense self-disgust over past sin, a hyperbolic idiom for deep contrition and moral revulsion.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Ezekiel 36:32",
+    "deliberation": "This verse reiterates that God acts not for Israel’s sake and calls them to be ashamed and confounded. Shame language here is affective but not overtly figurative; no clear metaphor or other figure stands out.",
+    "instances": []
+  },
+  {
+    "verse": 33,
+    "reference": "Ezekiel 36:33",
+    "deliberation": "The central figure is again impurity imagery: God will 'cleanse you from all your iniquities', treating moral罪 as defilement requiring purification. The rebuilding of cities is literal restoration.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּיוֹם֙ טַהֲרִ֣י אֶתְכֶ֔ם מִכֹּ֖ל עֲוֺנֽוֹתֵיכֶ֑ם",
+        "english_text": "When I have purified you of all your iniquities",
+        "target": ["Israel’s sins and guilt", "moral-spiritual state", "covenant standing"],
+        "vehicle": ["ritual purification from uncleanness", "washing/cleansing process", "priestly cleansing"],
+        "ground": ["removal of impurity that bars access to God", "transition from unclean to clean status", "restoration to holiness"],
+        "posture": ["continues the metaphor of sin as impurity", "frames forgiveness and restoration as cleansing", "priestly-prophetic idiom"],
+        "explanation": "God’s removal of iniquity is depicted as 'purifying' Israel, treating sin as a defiling impurity that must be cleansed away.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 34,
+    "reference": "Ezekiel 36:34",
+    "deliberation": "The formerly desolate land will be cultivated again. Here 'desolate' and 'tilled' function literally, describing the observable transformation of the landscape; no distinct figurative expression is present.",
+    "instances": []
+  },
+  {
+    "verse": 35,
+    "reference": "Ezekiel 36:35",
+    "deliberation": "The main figure is an explicit simile: the once-desolate land has become 'like the garden of Eden', comparing restored fertility to the paradigmatic lushness of Eden.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָאָ֤רֶץ הַלֵּ֙זוּ֙ הַנְּשַׁמָּ֔ה הָיְתָ֖ה כְּגַן־עֵ֑דֶן",
+        "english_text": "That land, once desolate, has become like the garden of Eden",
+        "target": ["restored land of Israel", "its fertility and beauty", "agricultural condition"],
+        "vehicle": ["the garden of Eden", "paradisiacal, lush garden", "primordial ideal landscape"],
+        "ground": ["extreme fruitfulness, beauty, and well-watered abundance", "restored harmony and blessing", "idealized environmental state"],
+        "posture": ["uses Eden as a simile for the transformed land", "hyperbolically elevates its restored fertility", "eschatological restoration imagery"],
+        "explanation": "The desolate land is said to be 'like the garden of Eden', a simile that likens its restored fruitfulness and beauty to the ideal primordial garden.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 36,
+    "reference": "Ezekiel 36:36",
+    "deliberation": "This verse asserts that the nations will know YHWH has 'rebuilt the ravaged places and replanted the desolate land'; these verbs describe literal restoration work. No distinct metaphor beyond normal restoration language appears.",
+    "instances": []
+  },
+  {
+    "verse": 37,
+    "reference": "Ezekiel 36:37",
+    "deliberation": "Found a clear simile: 'I will multiply them like sheep' ('as a flock of humans'). People are compared to flocks, evoking shepherd imagery and abundance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַרְבֶּ֥ה אֹתָ֛ם כַּצֹּ֖אן אָדָֽם",
+        "english_text": "I will multiply their people like sheep (literally: as a flock of humans)",
+        "target": ["Israel’s population", "the people of Israel", "national community"],
+        "vehicle": ["a flock of sheep", "numerous domestic animals", "herd imagery"],
+        "ground": ["large, cohesive group", "easily counted as abundant", "cared for and overseen like sheep by a shepherd"],
+        "posture": ["uses pastoral simile to picture demographic multiplication", "prepares for extended flock imagery in v. 38", "abundance and care theme"],
+        "explanation": "Israel’s people are compared to sheep in a flock, a simile that emphasizes their great number and suggests pastoral care under God.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 38,
+    "reference": "Ezekiel 36:38",
+    "deliberation": "The verse elaborates the flock imagery with two similes: as Jerusalem is filled with sacrificial sheep during festivals, so will the cities be filled with 'flocks of people'. People are portrayed as flocks like sacrificial sheep.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּצֹ֣אן קׇדָשִׁ֗ים כְּצֹ֤אן יְרוּשָׁלַ֙͏ִם֙ בְּמ֣וֹעֲדֶ֔יהָ ... מְלֵא֖וֹת צֹ֣אן אָדָ֑ם",
+        "english_text": "As Jerusalem is filled with sacrificial sheep during her festivals, so shall the ruined cities be filled with flocks of people",
+        "target": ["the repopulated cities of Israel", "their human inhabitants", "national restoration"],
+        "vehicle": ["sacrificial sheep and flocks in Jerusalem’s festivals", "dense flocks of animals", "pastoral-sacrificial scene"],
+        "ground": ["great numbers occupying the space densely", "ordered, gathered community under a central authority", "association with worship and holiness"],
+        "posture": ["extends the sheep-flock simile to human populations", "portrays cities as overflowing with 'flocks' of people like festival animals", "links demographic abundance with cultic celebration"],
+        "explanation": "The people filling the rebuilt cities are likened to sacrificial flocks crowding Jerusalem during festivals, a simile highlighting their abundance and the restored, worshipful life.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]

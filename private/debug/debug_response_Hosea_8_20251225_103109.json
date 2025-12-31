@@ -1,0 +1,643 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 8:1",
+    "deliberation": "I checked the command to put a shofar to the mouth and the mention of covenant and Torah. These are literal cultic/legal terms. The clearly figurative element is the comparison to an eagle over the House of YHWH, an explicit simile for the imminent enemy attack/judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כַּנֶּשֶׁר עַל־בֵּית יְהוָה",
+        "english_text": "Like an eagle over the House of GOD",
+        "target": [
+          "the impending enemy attack on Israel/its sanctuary",
+          "foreign invasion as an instrument of divine judgment",
+          "historical-political judgment on the covenant people"
+        ],
+        "vehicle": [
+          "an eagle hovering over its prey or nest",
+          "a bird of prey poised to swoop and strike",
+          "animal predation imagery"
+        ],
+        "ground": [
+          "the sudden, swift, menacing overshadowing of a vulnerable victim",
+          "speed, inevitability, and terror of the coming attack",
+          "danger and overpowering force"
+        ],
+        "posture": [
+          "a warning about looming destructive judgment",
+          "an alarmist, urgent prophetic tone",
+          "divine doom-oracle against covenant violation"
+        ],
+        "explanation": "The enemy/judgment is likened to an eagle hovering over its prey, highlighting the speed and inevitability of the coming attack on YHWH’s ‘house’ (temple/people).",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 8:2",
+    "deliberation": "I looked for metaphors or similes in the cry itself but the figurative force lies in the contrast between what Israel says and what is actually true in the context of Hosea. Their confession 'My God, we know you' is quoted ironically, since the surrounding verses show they do not truly know YHWH.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֱלֹהַי יְדַעֲנוּךָ יִשְׂרָאֵל",
+        "english_text": "\"O my God, we are devoted to You / we know You, Israel\"",
+        "target": [
+          "Israel’s actual covenant knowledge and loyalty",
+          "their spiritual and moral condition",
+          "their religious relationship to YHWH"
+        ],
+        "vehicle": [
+          "Israel’s spoken claim 'My God, we know you'",
+          "a verbal confession of intimacy and devotion",
+          "a speech-act of piety"
+        ],
+        "ground": [
+          "the discrepancy between their claim and their behavior",
+          "hypocrisy or self-deception exposed by context",
+          "a clash between words and reality"
+        ],
+        "posture": [
+          "sarcastic exposure of false piety",
+          "a critical, ironic prophetic stance",
+          "judgmental tone on hollow religiosity"
+        ],
+        "explanation": "The prophet quotes Israel’s declaration ironically. They claim to know God, but the surrounding accusations show this is precisely what they lack; the irony functions as a figurative device exposing hypocrisy.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 8:3",
+    "deliberation": "The verse is very brief: Israel has 'rejected the good' and an enemy will pursue him. The pursuit language is straightforward military imagery. The debated expression is 'the good' (הטוב), which in context functions as a metonymic summary for YHWH and His covenantal way, rather than just an abstract moral quality.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "זָנַח יִשְׂרָאֵל טוֹב",
+        "english_text": "Israel rejects what is good",
+        "target": [
+          "YHWH Himself and His covenantal ways/commands",
+          "divine goodness embodied in Torah and true worship",
+          "the covenant relationship with God"
+        ],
+        "vehicle": [
+          "\"the good\" as a single abstract object",
+          "a summary label standing for God’s will and presence",
+          "a moral-theological quality"
+        ],
+        "ground": [
+          "God and His ways are characterized as the good par excellence",
+          "to abandon God’s covenant is to abandon 'the good'",
+          "ethical valuation of covenant faithfulness"
+        ],
+        "posture": [
+          "moral censure of Israel’s rejection",
+          "a negative evaluative stance on their choice",
+          "prophetic indictment of covenant breach"
+        ],
+        "explanation": "‘The good’ functions metonymically for YHWH’s own covenantal way (and arguably for YHWH Himself as 'the Good One'). It is not just any generic goodness but shorthand for the whole divinely willed order Israel has spurned.",
+        "confidence": 0.76
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 8:4",
+    "deliberation": "I examined the language of making kings and princes, and of fashioning idols from silver and gold. These descriptions align with literal political and cultic actions. There is strong theological evaluation but no overt metaphor, simile, or other clear figure beyond normal prophetic diction.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 8:5",
+    "deliberation": "I considered the rejection of the calf of Samaria, the burning of YHWH’s anger, and the question about their ability to be pure. The 'calf' stands for the whole idolatrous cult (metonymy/synecdoche), and 'my anger burns' is a conventional Hebrew idiom/metaphor for intense wrath. These are distinct figurative units.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עֶגְלֵךְ שֹׁמְרוֹן",
+        "english_text": "your calf, Samaria",
+        "target": [
+          "Samaria’s entire calf-centered idolatrous religious system",
+          "the illicit cult of the northern kingdom",
+          "Israel’s corrupt worship practices"
+        ],
+        "vehicle": [
+          "a single calf idol/statue",
+          "the cult image at the center of worship",
+          "a concrete cult object"
+        ],
+        "ground": [
+          "the calf image is representative of the whole cultic system",
+          "centrality of that idol to Samaria’s religion",
+          "using a part/central symbol to stand for the whole"
+        ],
+        "posture": [
+          "sharp condemnation of the cult symbol and all it represents",
+          "derisive, polemical tone toward idolatry",
+          "prophetic denunciation of false worship"
+        ],
+        "explanation": "The 'calf' is more than a literal statue; it stands metonymically for the entire idolatrous system of Samaria which YHWH rejects.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חָרָה אַפִּי בָּם",
+        "english_text": "My anger burns against them",
+        "target": [
+          "YHWH’s intense wrath toward Israel’s idolatry",
+          "divine emotional response to their sin",
+          "the sphere of theological judgment"
+        ],
+        "vehicle": [
+          "a burning nose/face (Hebrew idiom for anger as heat)",
+          "fiery physical sensation of burning",
+          "heat imagery"
+        ],
+        "ground": [
+          "both anger and fire are experienced as hot and intense",
+          "idea of emotion flaring up and consuming like fire",
+          "visceral, forceful, potentially destructive power"
+        ],
+        "posture": [
+          "announcement of severe divine displeasure",
+          "threatening and ominous tone",
+          "prophetic warning of impending punishment"
+        ],
+        "explanation": "The idiom 'my nose burns' portrays God’s wrath as a kind of inner fire, a conventional metaphor in biblical Hebrew for intense anger.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 8:6",
+    "deliberation": "The first clauses stress the human manufacture and non-divinity of the calf—largely literal critique. The statement that the calf of Samaria will 'become splinters' is figurative, vividly portraying its total destruction and worthlessness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־שְׁבָבִים יִהְיֶה עֵגֶל שֹׁמְרוֹן",
+        "english_text": "For the calf of Samaria shall become splinters",
+        "target": [
+          "the idol of Samaria and its idolatrous system",
+          "false worship under judgment",
+          "the religious-political power structure tied to the calf"
+        ],
+        "vehicle": [
+          "splinters/chips of wood",
+          "worthless broken fragments or sawdust",
+          "destroyed debris"
+        ],
+        "ground": [
+          "from seemingly solid and impressive to shattered and useless",
+          "complete loss of strength, stability, and value",
+          "humiliating, irreparable destruction"
+        ],
+        "posture": [
+          "mocking prediction of the idol’s downfall",
+          "contempt for its impotence before God",
+          "prophetic threat of total judgment on idolatry"
+        ],
+        "explanation": "The calf is said to 'become splinters,' a metaphor for its being utterly shattered and rendered worthless, emphasizing the fragility and futility of the idol.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 8:7",
+    "deliberation": "The entire verse is an extended agricultural image: sowing wind, reaping whirlwind, barren stalks, no flour, and strangers devouring whatever might be produced. These elements cohere into a single sustained metaphor for the self-destructive futility of Israel’s conduct and its disastrous consequences, so I treat them as one complex figurative instance rather than multiple separate ones.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי רוּחַ יִזְרָעוּ וְסוּפָתָה יִקְצֹרוּ קָמָה אֵין־לוֹ צֶמַח בְּלִי יַעֲשֶׂה־קֶּמַח אוּלַי יַעֲשֶׂה זָרִים יִבְלָעֻהוּ",
+        "english_text": "They sow wind, and they shall reap whirlwind—standing stalks devoid of ears and yielding no flour. If they do yield any, strangers shall devour it.",
+        "target": [
+          "Israel’s futile and sinful policies (idolatry, alliances) and their outcomes",
+          "human actions and their consequences under God’s moral order",
+          "covenant behavior and ensuing judgment"
+        ],
+        "vehicle": [
+          "sowing wind, reaping whirlwind, barren stalks, lost harvest eaten by others",
+          "a disastrously failed agricultural process",
+          "natural/agricultural imagery of crop failure and loss"
+        ],
+        "ground": [
+          "empty or misguided actions produce amplified disaster, not blessing",
+          "law of sowing and reaping: what you plant (emptiness) comes back in destructive form (whirlwind)",
+          "futility, lack of yield, and loss of results to outsiders"
+        ],
+        "posture": [
+          "didactic warning about self-destructive choices",
+          "grim, proverbial tone reinforcing divine justice",
+          "prophetic wisdom-style pronouncement of judgment"
+        ],
+        "explanation": "Israel’s vain schemes are portrayed as sowing wind; the result is a whirlwind of judgment and a barren or confiscated harvest, a hyperbolic agricultural metaphor for moral futility and catastrophic consequences.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 8:8",
+    "deliberation": "I noted two separate figurative moves: (1) Israel is 'swallowed up', using devouring imagery for national collapse, and (2) they have become among the nations 'like an unwanted vessel', an explicit simile for their rejected status. These are distinct figures, not just parts of one image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִבְלַע יִשְׂרָאֵל",
+        "english_text": "Israel is swallowed up",
+        "target": [
+          "Israel’s political and social collapse among the nations",
+          "national destruction and loss of independence",
+          "the historical fate of the northern kingdom"
+        ],
+        "vehicle": [
+          "being swallowed/devoured by another",
+          "an organism or object consumed by a larger one",
+          "ingestion imagery"
+        ],
+        "ground": [
+          "total overpowering and absorption by a stronger force",
+          "disappearance as a distinct entity",
+          "helplessness of the devoured before the devourer"
+        ],
+        "posture": [
+          "somber depiction of irreversible judgment",
+          "recognition of Israel’s doom",
+          "prophetic pronouncement of calamity"
+        ],
+        "explanation": "National destruction is portrayed as being 'swallowed up', a metaphor of devouring that underscores Israel’s complete loss of autonomy and identity among the nations.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּכְלִי אֵין־חֵפֶץ בּוֹ",
+        "english_text": "like an unwanted vessel",
+        "target": [
+          "Israel’s standing and desirability among the nations",
+          "their perceived value and honor",
+          "their international/social status"
+        ],
+        "vehicle": [
+          "a useless or unwanted container",
+          "a discarded household vessel",
+          "an object no one values or uses"
+        ],
+        "ground": [
+          "rejected, of no practical worth, set aside",
+          "no one finds it desirable or necessary",
+          "shame, disposability, and lack of honor"
+        ],
+        "posture": [
+          "a contemptuous assessment of Israel’s condition",
+          "shaming and devaluing rhetoric",
+          "prophetic scorn at their reduced status"
+        ],
+        "explanation": "Israel is compared to a vessel that nobody wants, a simile emphasizing their rejection and worthlessness in the eyes of the surrounding nations.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 8:9",
+    "deliberation": "Two distinct figures appear: (1) Ephraim is likened, in verbless metaphor, to a solitary wild donkey, portraying stubborn, reckless behavior; (2) Ephraim 'hires lovers', continuing Hosea’s marriage/adultery metaphor where political alliances are cast as illicit sexual liaisons.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פֶּרֶא בּוֹדֵד לוֹ אֶפְרַיִם",
+        "english_text": "Ephraim is a lonely wild ass",
+        "target": [
+          "Ephraim/Israel’s self-willed, reckless approach to foreign powers",
+          "their national character and behavior",
+          "their political-spiritual stance"
+        ],
+        "vehicle": [
+          "a solitary wild donkey",
+          "an untamed, stubborn animal roaming alone",
+          "wild animal behavior"
+        ],
+        "ground": [
+          "stubborn independence and refusal of guidance",
+          "wandering after one’s own impulses without restraint",
+          "vulnerability created by solitary, unrestrained roaming"
+        ],
+        "posture": [
+          "derisive critique of Ephraim’s folly",
+          "negative zoomorphic portrayal",
+          "prophetic sarcasm toward their choices"
+        ],
+        "explanation": "Ephraim is metaphorically called a 'wild ass alone', highlighting their stubborn, unrestrained pursuit of their own way, especially in foreign policy.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶפְרַיִם הִתְנוּ אֲהָבִים",
+        "english_text": "Ephraim has hired lovers",
+        "target": [
+          "Ephraim’s payment of tribute to secure foreign alliances (especially Assyria)",
+          "their political dependence and diplomacy",
+          "international relations as acts of covenant infidelity"
+        ],
+        "vehicle": [
+          "a woman hiring or paying lovers for sexual relations",
+          "adulterous, transactional sexual relationships",
+          "marital/sexual infidelity imagery"
+        ],
+        "ground": [
+          "seeking intimacy and help outside the legitimate covenant partner",
+          "shameful, paid dependence rather than faithful love",
+          "betrayal, impurity, and reversal of proper roles"
+        ],
+        "posture": [
+          "moral condemnation framed through marital unfaithfulness",
+          "shaming, accusatory rhetoric",
+          "covenant-lawsuit style rebuke"
+        ],
+        "explanation": "Political alliances bought with tribute are depicted as an adulterous woman hiring lovers, a central Hoseanic metaphor for Israel’s unfaithfulness to YHWH.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 8:10",
+    "deliberation": "I considered whether the 'courting among the nations' continues the lover metaphor; the syntax is debated, but the clearest figurative element in the verse is the 'burden of king and princes', where oppressive rule is portrayed as a heavy load. That is a distinct, conventional metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִמַּשָּׂא מֶלֶךְ שָׂרִים",
+        "english_text": "from the burden of king and officers",
+        "target": [
+          "the oppressive demands, taxation, and control of kings and princes (especially foreign overlords)",
+          "political oppression and exploitation",
+          "socio-political conditions resulting from their alliances"
+        ],
+        "vehicle": [
+          "a physical burden or load that one must carry",
+          "a heavy weight pressing down on a bearer",
+          "laborious load-bearing"
+        ],
+        "ground": [
+          "both physical loads and oppressive rule cause strain and exhaustion",
+          "experience of being weighed down and diminished by another’s demands",
+          "sense of heaviness, pressure, and depletion"
+        ],
+        "posture": [
+          "critical portrayal of political domination",
+          "warning about the costly consequences of their choices",
+          "prophetic lament/judgment on their self-inflicted oppression"
+        ],
+        "explanation": "The demands of kings and princes are described as a 'burden', using load-bearing imagery to portray the heaviness and exhaustion of political oppression.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Hosea 8:11",
+    "deliberation": "The verse plays on 'altars for sin'—intended for dealing with guilt—becoming 'altars for sinning'. The same phrase is used with opposite functions, creating rhetorical irony: the more altars they build, the more they sin. This is not a metaphor but a sharp ironic reversal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי־הִרְבָּה אֶפְרַיִם מִזְבְּחוֹת לַחֲטֹא הָיוּ־לוֹ מִזְבְּחוֹת לַחֲטֹא",
+        "english_text": "For Ephraim has multiplied altars for sin; they have become for him altars for sinning.",
+        "target": [
+          "Ephraim’s sacrificial system meant to address guilt",
+          "their religious institutions and rituals",
+          "their approach to dealing with sin"
+        ],
+        "vehicle": [
+          "altars whose intended purpose (atonement) is inverted to produce more sin",
+          "a self-defeating religious mechanism",
+          "ritual structures turned inside out"
+        ],
+        "ground": [
+          "what was meant as remedy becomes part of the disease",
+          "perversion of purpose and function",
+          "self-contradictory outcomes of misguided piety"
+        ],
+        "posture": [
+          "mocking exposure of the corruption of worship",
+          "sarcastic, biting critique",
+          "prophetic denunciation of their cult"
+        ],
+        "explanation": "By repeating 'altars for sin' with opposite functional implications, the prophet uses irony: altars intended to deal with sin actually become places where sin multiplies.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Hosea 8:12",
+    "deliberation": "YHWH’s many teachings are said to be 'considered like something foreign' (כמו זר). This is an explicit simile: Torah is likened to a foreign object/person to stress Israel’s estrangement from what should be familiar.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּמוֹ־זָר נֶחְשָׁבוּ",
+        "english_text": "They have been treated as something foreign",
+        "target": [
+          "YHWH’s many teachings/instructions given to Israel",
+          "Torah content and divine revelation",
+          "the covenantal word of God"
+        ],
+        "vehicle": [
+          "a foreign or strange thing/person",
+          "an alien entity not belonging to the household",
+          "social otherness/outsider status"
+        ],
+        "ground": [
+          "what is 'foreign' is not recognized as one’s own and is kept at a distance",
+          "lack of acceptance, familiarity, and loyalty",
+          "estrangement and suspicion toward what should be embraced"
+        ],
+        "posture": [
+          "lamenting and rebuking Israel’s rejection of Torah",
+          "accusatory, covenant-lawsuit tone",
+          "grieved divine displeasure"
+        ],
+        "explanation": "Torah is likened to a foreign thing, a simile that underscores how Israel treats God’s own teachings as if they were alien and unwelcome.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Hosea 8:13",
+    "deliberation": "The verse describes sacrifice and God’s non-acceptance in largely literal cultic terms. The phrase 'they shall return to Egypt' is more than geography in Hosea; Egypt functions as a symbol/metonym for renewed slavery/exile, evoking a metaphorical 'back to bondage' movement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֵמָּה מִצְרַיִם יָשׁוּבוּ",
+        "english_text": "Back to Egypt with them! / They shall return to Egypt.",
+        "target": [
+          "Israel’s impending exile and renewed bondage under foreign powers (especially Assyria)",
+          "national judgment and loss of freedom",
+          "the undoing of the Exodus salvation"
+        ],
+        "vehicle": [
+          "a literal return to the land of Egypt",
+          "re-enslavement in the place of former bondage",
+          "Egypt as a geographical-historical symbol"
+        ],
+        "ground": [
+          "returning to Egypt evokes going back into slavery and foreign domination",
+          "reversal of redemption and restoration of a prior oppressed state",
+          "bondage, humiliation, and alien rule"
+        ],
+        "posture": [
+          "threatening announcement of covenant curses",
+          "severe, punitive tone",
+          "prophetic warning that prior salvation can be reversed by disobedience"
+        ],
+        "explanation": "‘Return to Egypt’ functions as a metaphoric/metonymic way of saying Israel will go back into a state of bondage and exile, undoing the freedom granted in the Exodus.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Hosea 8:14",
+    "deliberation": "Forgetting the Maker and building palaces/cities is stated literally. The figurative element is the description of fire 'eating' or 'consuming' the fortresses: fire is personified as a devourer, a common biblical image for devastating judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשִׁלַּחְתִּי־אֵשׁ בְּעָרָיו וְאָכְלָה אַרְמְנֹתֶיהָ",
+        "english_text": "I will send fire upon his cities, and it shall consume their fortresses",
+        "target": [
+          "the military destruction of Israel’s cities and fortresses",
+          "siege, conquest, and downfall of their defenses",
+          "historical judgment on their security structures"
+        ],
+        "vehicle": [
+          "a fire that is sent and that eats/consumes",
+          "devouring flames acting like a living creature",
+          "natural force personified as an eater"
+        ],
+        "ground": [
+          "both fire and an eater make things disappear by consuming them",
+          "rapid, total, and irreversible destruction",
+          "image of being 'devoured' highlights the completeness of loss"
+        ],
+        "posture": [
+          "threat of devastating divine judgment",
+          "ominous, punitive prophetic stance",
+          "warning that human defenses cannot withstand God’s consuming action"
+        ],
+        "explanation": "Fire is personified as an eater that 'consumes' fortresses, a metaphor stressing the thorough, voracious destruction that God will bring upon their cities.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]

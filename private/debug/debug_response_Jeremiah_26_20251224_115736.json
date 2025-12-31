@@ -1,0 +1,770 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 26:1",
+    "deliberation": "Formulaic prophetic introduction (“this word came from YHWH”) and chronological notice are standard and function literally in context; I did not treat them as salient figurative language.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 26:2",
+    "deliberation": "I checked the temple terminology and commands. Two clear figures emerge: (1) ‘all the cities of Judah who are coming to bow’ uses ‘cities’ for their inhabitants (metonymy); (2) ‘do not diminish/subtract a word’ treats the message as a measurable quantity (metaphorical/idiomatic).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־כׇּל־עָרֵי יְהוּדָה הַבָּאִים לְהִשְׁתַּחֲוֺת",
+        "english_text": "to [the inhabitants of] all the towns of Judah, who are coming to worship",
+        "target": [
+          "the inhabitants of the Judean towns who come to worship",
+          "group of people",
+          "social"
+        ],
+        "vehicle": [
+          "“all the towns of Judah” spoken of as those who come to bow",
+          "place-for-inhabitants expression",
+          "linguistic/conceptual"
+        ],
+        "ground": [
+          "a city is closely identified with the people who live in it",
+          "association/containment",
+          "cognitive"
+        ],
+        "posture": [
+          "to address all Judeans comprehensively via their towns",
+          "inclusive rhetorical address",
+          "discourse-strategic"
+        ],
+        "explanation": "The verse grammatically treats the cities as those who ‘come to bow’, using the place (cities) to stand for their inhabitants.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַל־תִּגְרַע דָּבָר",
+        "english_text": "Do not omit (literally, ‘subtract’) anything.",
+        "target": [
+          "Jeremiah’s communication of the divine message",
+          "speech content / prophecy",
+          "communication"
+        ],
+        "vehicle": [
+          "subtracting a measurable amount from a fixed quantity",
+          "numerical/physical reduction",
+          "physical"
+        ],
+        "ground": [
+          "removing words from a message is like subtracting units from a total, leaving it incomplete",
+          "incompleteness through reduction",
+          "conceptual"
+        ],
+        "posture": [
+          "to command complete and accurate transmission of the oracle",
+          "authoritative injunction",
+          "speech-act"
+        ],
+        "explanation": "The verb ‘to subtract’ is drawn from arithmetic/physical reduction and applied to words, picturing the message as a fixed quantity that must not be diminished.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 26:3",
+    "deliberation": "I examined ‘listen’, ‘turn back’, and ‘his evil way’. The key figurative complex is the metaphor of life-conduct as a ‘way’ or road from which one can turn back (repent).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיָשֻׁבוּ אִישׁ מִדַּרְכּוֹ הָרָעָה",
+        "english_text": "and turn back, each from their own evil way",
+        "target": [
+          "each person’s pattern of behavior and moral choices",
+          "moral conduct",
+          "ethical/spiritual"
+        ],
+        "vehicle": [
+          "a ‘way’ or road that a person walks on and can turn back from",
+          "path/journey",
+          "spatial"
+        ],
+        "ground": [
+          "both a road and a lifestyle have a direction and can be reversed or changed",
+          "directionality and changeability",
+          "conceptual"
+        ],
+        "posture": [
+          "call to abandon a destructive life-course and adopt a new one",
+          "exhortation to repentance",
+          "prophetic"
+        ],
+        "explanation": "‘Evil way’ conceptualizes a person’s behavior as a road, and ‘turn back’ as changing direction on that road, a standard biblical metaphor for repentance.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 26:4",
+    "deliberation": "Two expressions are potentially figurative: ‘listen to Me’ (obey) and especially ‘to walk in My Torah’. I count one primary metaphor here: obedience pictured as walking within God’s teaching.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָלֶכֶת בְּתּוֹרָתִי אֲשֶׁר נָתַתִּי לִפְנֵיכֶם",
+        "english_text": "abiding by (literally, ‘to walk in’) the Teaching that I have set before you",
+        "target": [
+          "Israel’s continuing obedience to God’s Torah",
+          "religious/moral conduct",
+          "ethical/spiritual"
+        ],
+        "vehicle": [
+          "walking along a path laid out before someone",
+          "locomotion/path-following",
+          "spatial"
+        ],
+        "ground": [
+          "both walking a path and obeying a teaching involve ongoing movement within set boundaries laid out in front of you",
+          "progress within prescribed limits",
+          "conceptual"
+        ],
+        "posture": [
+          "to stress that Torah requires a life-long course, not just a momentary decision",
+          "covenant stipulation",
+          "prophetic/legal"
+        ],
+        "explanation": "Torah is pictured as a path set before the people, and obedience as ‘walking’ within it—an entrenched biblical metaphor for covenantal living.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 26:5",
+    "deliberation": "Beyond literal ‘sending’ of prophets, the phrase ‘rising early and sending’ (השׁכם ושלח) is Jeremiah’s characteristic idiom, anthropomorphically depicting God as a diligent human who gets up early to send messengers.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר אָנֹכִי שֹׁלֵחַ אֲלֵיכֶם וְהַשְׁכֵּם וְשָׁלֹחַ",
+        "english_text": "whom I have been sending to you persistently (literally, ‘rising early and sending’)",
+        "target": [
+          "God’s persistent commissioning and dispatching of prophets to Judah",
+          "divine communicative action",
+          "theological"
+        ],
+        "vehicle": [
+          "a human master who gets up early in the morning to send out messengers",
+          "diligent human behavior",
+          "social"
+        ],
+        "ground": [
+          "rising early suggests eagerness, persistence, and priority, which parallel God’s repeated, urgent sending of prophets",
+          "diligence and urgency",
+          "conceptual"
+        ],
+        "posture": [
+          "to underline God’s energetic efforts and thereby heighten Judah’s guilt for not listening",
+          "reproachful reminder",
+          "prophetic"
+        ],
+        "explanation": "God is portrayed in human terms as one who ‘rises early’ to send messengers—an idiomatic anthropomorphism emphasizing divine diligence in sending prophets.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 26:6",
+    "deliberation": "I found two distinct figures: (1) a simile likening the Jerusalem temple to Shiloh’s ruined sanctuary; (2) making ‘this city’ into ‘a curse’, where the city’s name becomes a proverbial malediction among the nations (metaphor/metonymy).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי אֶת־הַבַּיִת הַזֶּה כְּשִׁלֹה",
+        "english_text": "then I will make this House like Shiloh",
+        "target": [
+          "the present temple in Jerusalem",
+          "central cultic institution",
+          "religious"
+        ],
+        "vehicle": [
+          "the former sanctuary at Shiloh that was destroyed/abandoned",
+          "ruined sanctuary",
+          "historical-religious"
+        ],
+        "ground": [
+          "both are central shrines that can lose divine favor and be desolated",
+          "vulnerability of sanctuaries to judgment",
+          "theological"
+        ],
+        "posture": [
+          "to warn that the current temple is not exempt from the fate of Shiloh",
+          "threatening precedent",
+          "prophetic"
+        ],
+        "explanation": "The temple is explicitly compared to Shiloh’s ruined sanctuary, warning that it can likewise be abandoned and destroyed.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֶת־הָעִיר הַזֹּאת אֶתֵּן לִקְלָלָה לְכֹל גּוֹיֵי הָאָרֶץ",
+        "english_text": "and I will make this city a curse for all the nations of earth",
+        "target": [
+          "Jerusalem’s fate and reputation among the nations",
+          "the city’s name and status",
+          "social-historical"
+        ],
+        "vehicle": [
+          "a curse used in maledictions (e.g., ‘may you be like X’)",
+          "proverbial object of imprecation",
+          "speech"
+        ],
+        "ground": [
+          "a destroyed city can become a byword invoked in curses, symbolizing extreme disaster",
+          "exemplar of calamity",
+          "cultural"
+        ],
+        "posture": [
+          "to threaten that Jerusalem will serve as a notorious example of divine judgment",
+          "prophetic warning",
+          "rhetorical"
+        ],
+        "explanation": "The city (standing for its name and memory) is said to become ‘a curse’, i.e., a proverbial formula in international maledictions, using the city as a symbol of ruin.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 26:7",
+    "deliberation": "The verse simply narrates that priests, prophets, and people heard Jeremiah speaking in the temple; I see no non-literal or figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 26:8",
+    "deliberation": "Despite the emphatic ‘die you shall die’ (infinitive absolute), the language describes literal seizure and a literal death threat; I do not treat the emphasis as figurative (e.g., not hyperbole).",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 26:9",
+    "deliberation": "Key expressions were evaluated: ‘House shall become like Shiloh’ repeats the simile from v.6; ‘city will be desolate without inhabitant’ can be literal devastation. Only the Shiloh comparison is clearly figurative here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּשִׁלוֹ יִהְיֶה הַבַּיִת הַזֶּה",
+        "english_text": "that this House shall become like Shiloh",
+        "target": [
+          "the Jerusalem temple",
+          "cultic center",
+          "religious"
+        ],
+        "vehicle": [
+          "the ruined sanctuary at Shiloh",
+          "abandoned holy place",
+          "historical-religious"
+        ],
+        "ground": [
+          "both temples can be destroyed or abandoned because of covenant infidelity",
+          "susceptibility to divine judgment",
+          "theological"
+        ],
+        "posture": [
+          "summary of Jeremiah’s threat as perceived by his accusers",
+          "repeated warning content",
+          "discourse"
+        ],
+        "explanation": "The opponents quote Jeremiah’s assertion that the temple will become ‘like Shiloh’, again invoking the earlier simile of a sanctuary reduced to ruin.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 26:10",
+    "deliberation": "This is a straightforward narrative of officials moving from the king’s house to the temple and sitting in the gate; the verbs ‘went up’ and ‘sat’ follow literal spatial and judicial usage. No figurative language identified.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 26:11",
+    "deliberation": "Legal language (‘deserves the death penalty’, ‘prophesied against this city’) appears literal; ‘this city’ can naturally include both place and community without a marked figurative shift. No distinct figurative devices detected.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 26:12",
+    "deliberation": "Jeremiah’s defense rehearses literal facts: YHWH sent him to prophesy against this house and this city, speaking all the words heard. The wording follows standard prophetic formula without a salient metaphor or idiom beyond normal usage.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 26:13",
+    "deliberation": "Two figurative elements stand out: (1) ‘improve your ways’ again treats conduct as a ‘way’ or road; (2) ‘listen to the voice of YHWH’ uses ‘voice’ metonymically for his command and ‘listening’ for obedience.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵיטִיבוּ דַרְכֵיכֶם וּמַעַלְלֵיכֶם",
+        "english_text": "Therefore mend your ways and your acts",
+        "target": [
+          "the people’s established patterns of life and behavior",
+          "moral conduct",
+          "ethical"
+        ],
+        "vehicle": [
+          "a ‘way’ or road that can be made good or straightened",
+          "roadway/path",
+          "spatial"
+        ],
+        "ground": [
+          "repairing a road and reforming behavior both involve removing harmful features and making a course suitable",
+          "rectification and improvement",
+          "conceptual"
+        ],
+        "posture": [
+          "appeal to moral reform as condition for averting judgment",
+          "exhortation",
+          "prophetic"
+        ],
+        "explanation": "‘Ways’ presents their conduct as roads that can be ‘made good’, extending the common biblical metaphor of life as a path.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשִׁמְעוּ בְקול יְהוָה אֱלֹהֵיכֶם",
+        "english_text": "and heed (literally, ‘listen to’) the voice of the ETERNAL your God",
+        "target": [
+          "the people’s obedience to God’s will",
+          "submission to divine commands",
+          "ethical/theological"
+        ],
+        "vehicle": [
+          "hearing someone’s literal voice and responding appropriately",
+          "auditory perception and response",
+          "sensory/social"
+        ],
+        "ground": [
+          "both obeying and listening involve attentive reception and appropriate response to what is said",
+          "attentive responsiveness",
+          "conceptual"
+        ],
+        "posture": [
+          "to frame obedience as receptive listening to God’s personal address",
+          "relational summons",
+          "prophetic"
+        ],
+        "explanation": "God’s ‘voice’ stands for his commands, and ‘listening’ to it is the idiomatic way to speak of obedience—a metonymic and metaphorical framing of covenant loyalty.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 26:14",
+    "deliberation": "The key clause ‘I am in your hand’ is clearly metaphorical, depicting Jeremiah’s legal and physical vulnerability as being physically held in their hand.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַאֲנִי הִנְנִי בְיֶדְכֶם",
+        "english_text": "As for me, I am in your hands",
+        "target": [
+          "Jeremiah’s dependence on the officials’ and people’s power over his fate",
+          "legal/political vulnerability",
+          "social-political"
+        ],
+        "vehicle": [
+          "an object or person physically held in someone’s hand",
+          "bodily control/possession",
+          "physical"
+        ],
+        "ground": [
+          "what is in the hand is under one’s immediate control; Jeremiah’s life is under their decision-making power",
+          "control and subjection",
+          "relational"
+        ],
+        "posture": [
+          "humble acknowledgment of their authority while maintaining his innocence elsewhere",
+          "submission",
+          "speech-act"
+        ],
+        "explanation": "Jeremiah likens his situation to being in their physical hand, a conventional idiom for being under another’s control.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 26:15",
+    "deliberation": "I focused on ‘you are putting innocent blood upon yourselves and upon this city’. This uses ‘blood’ symbolically for guilt and ‘city’ metonymically for its community, picturing guilt as something placed upon them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי־דָם נָקִי אַתֶּם נֹתְנִים עֲלֵיכֶם וְאֶל־הָעִיר הַזֹּאת",
+        "english_text": "for you and this city and its inhabitants will be guilty of shedding an innocent’s blood (literally, ‘you are putting innocent blood upon yourselves and upon this city’)",
+        "target": [
+          "the moral and legal guilt incurred by unjustly killing Jeremiah",
+          "culpability for bloodshed",
+          "ethical/judicial"
+        ],
+        "vehicle": [
+          "innocent blood physically put upon persons or a city",
+          "stain/burden of blood",
+          "physical/ritual"
+        ],
+        "ground": [
+          "shed blood in biblical thought clings as a stain that requires atonement, paralleling guilt that remains upon a person or community",
+          "staining and liability",
+          "theological"
+        ],
+        "posture": [
+          "to warn them that killing him will place a lasting, communal burden of guilt upon themselves",
+          "deterrent admonition",
+          "prophetic"
+        ],
+        "explanation": "‘Innocent blood’ stands for the guilt of murder, and this guilt is pictured as something placed ‘upon’ them and their city, using blood as a metaphorical stain and the city as metonymy for its population.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 26:16",
+    "deliberation": "The officials and people straightforwardly declare Jeremiah lacks ‘death penalty’ because he spoke in God’s name; this is legal rather than figurative language. No metaphor or idiom beyond standard juridical phrasing.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 26:17",
+    "deliberation": "This transitional narrative line (‘elders of the land arose and said…’) uses conventional verbs of standing and speaking with literal senses. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 26:18",
+    "deliberation": "Micah’s old prophecy quoted here piles up three images of devastation: Zion plowed as a field, Jerusalem becoming heaps of ruins, and the Temple Mount turned into forest high places. These are three distinct but parallel metaphors of desolation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צִיּוֹן שָׂדֶה תֵחָרֵשׁ",
+        "english_text": "Zion shall be plowed as a field",
+        "target": [
+          "Zion/Jerusalem as a built-up, fortified sacred hill",
+          "urban sacred space",
+          "geographical-political"
+        ],
+        "vehicle": [
+          "an agricultural field being plowed flat for cultivation",
+          "cultivated field",
+          "rural/agricultural"
+        ],
+        "ground": [
+          "both razing a city and plowing a field involve leveling what was there and preparing it for something else",
+          "leveling and overwriting",
+          "conceptual"
+        ],
+        "posture": [
+          "to emphasize the totality of the coming demolition of the sacred city",
+          "vivid threat of devastation",
+          "prophetic"
+        ],
+        "explanation": "Zion, a built-up sacred hill, is depicted as turned into a plowed field, dramatizing the thorough leveling of its structures.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וִירוּשָׁלַיִם עִיִּים תִּהְיֶה",
+        "english_text": "Jerusalem shall become heaps of ruins",
+        "target": [
+          "Jerusalem as a functioning city",
+          "urban center",
+          "geographical-political"
+        ],
+        "vehicle": [
+          "heaps/piles of rubble",
+          "rubble/debris",
+          "physical"
+        ],
+        "ground": [
+          "both a ruined city and piles of rubble signify destruction and abandonment",
+          "visible desolation",
+          "historical"
+        ],
+        "posture": [
+          "to underline the complete ruin of the city, not just partial damage",
+          "intensification of judgment image",
+          "prophetic"
+        ],
+        "explanation": "The city is envisaged as nothing but ‘heaps’, a metaphor that collapses its identity into rubble to highlight its total ruin.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהַר הַבַּיִת לְבָמוֹת יָעַר",
+        "english_text": "and the Temple Mount [shall become] a shrine in the woods (literally, ‘high places of a forest’)",
+        "target": [
+          "the Temple Mount as ordered, centralized worship site of YHWH",
+          "central cultic institution",
+          "religious"
+        ],
+        "vehicle": [
+          "a wooded hill with scattered ‘high places’",
+          "overgrown hill with cult sites",
+          "natural/religious"
+        ],
+        "ground": [
+          "an abandoned temple area and a forested hill with high places both lack structured, centralized worship and appear chaotic and profane",
+          "loss of ordered sanctity",
+          "theological"
+        ],
+        "posture": [
+          "to depict reversal from organized temple worship to desolate, quasi-pagan landscape",
+          "dramatic portrayal of desecration",
+          "prophetic"
+        ],
+        "explanation": "The Temple Mount is envisioned as turning into forest ‘high places’, merging imagery of abandonment, overgrowth, and illicit shrines to show religious collapse.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 26:19",
+    "deliberation": "Two expressions are figurative: (1) ‘he entreated the face of YHWH’ personifies God and uses ‘face’ as metonymy for presence/favor; (2) ‘we are doing great evil upon our own souls’ pictures their intended action as self-inflicted harm on their own lives.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְחַל אֶת־פְּנֵי יְהוָה",
+        "english_text": "and he implored (literally, ‘entreated the face of’) GOD",
+        "target": [
+          "Hezekiah’s act of praying earnestly to God",
+          "petitionary prayer",
+          "religious practice"
+        ],
+        "vehicle": [
+          "seeking an audience with someone’s face/presence to win favor",
+          "interpersonal supplication",
+          "social"
+        ],
+        "ground": [
+          "both prayer and pleading before a human superior involve approaching a presence and seeking favorable response",
+          "favor-seeking before a superior",
+          "conceptual"
+        ],
+        "posture": [
+          "to portray Hezekiah as humbly and personally appealing to God’s favor",
+          "commendable model of response",
+          "didactic"
+        ],
+        "explanation": "God is described as having a ‘face’ that can be entreated; the phrase uses human imagery for God’s presence and favor and functions as an idiom for fervent prayer.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַאֲנַחְנוּ עֹשִׂים רָעָה גְדוֹלָה עַל־נַפְשׁוֹתֵינוּ",
+        "english_text": "We are about to do great injury to ourselves (literally, ‘we are doing great evil upon our souls/lives’)",
+        "target": [
+          "the spiritual and existential harm they will bring on themselves by killing Jeremiah",
+          "self-inflicted disaster",
+          "ethical/theological"
+        ],
+        "vehicle": [
+          "committing evil ‘upon’ one’s own soul/life",
+          "self-directed physical injury",
+          "physical/psychological"
+        ],
+        "ground": [
+          "both harming oneself physically and committing grave sin against one’s own life lead to one’s own ruin",
+          "self-destructiveness",
+          "conceptual"
+        ],
+        "posture": [
+          "to warn themselves that opposing the prophet is ultimately suicidal",
+          "self-admonition",
+          "didactic"
+        ],
+        "explanation": "Their contemplated action is pictured as doing ‘great evil’ upon their own lives, an idiomatic metaphor for bringing ruin down on themselves.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 26:20",
+    "deliberation": "This verse introduces Uriah and states that he prophesied against the city and the land like Jeremiah. The language is straightforward and mirrors earlier literal descriptions of prophecy. No distinct figurative expressions identified.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 26:21",
+    "deliberation": "The narrative describes hearing, fearing, fleeing, and going to Egypt. These are ordinary physical and emotional actions; no metaphors or idioms beyond literal usage.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 26:22",
+    "deliberation": "Jehoiakim ‘sent men to Egypt’; this is a literal political action, not metaphorical ‘sending’. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 26:23",
+    "deliberation": "Uriah is brought back, struck with the sword, and his body thrown into common graves. Given the narrative context, ‘struck with the sword’ describes his actual execution instrumentally and is not functioning as a separate idiom. No clear figurative expressions isolated.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 26:24",
+    "deliberation": "The phrase ‘the hand of Ahikam was with Jeremiah’ is figurative: ‘hand’ stands for active power/help, and ‘being with’ expresses protective support, an idiomatic metaphor/metonymy for patronage.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַךְ יַד אֲחִיקָם בֶּן־שָׁפָן הָיְתָה אֶת־יִרְמְיָהוּ",
+        "english_text": "However, the hand of Ahikam son of Shaphan was with Jeremiah",
+        "target": [
+          "Ahikam’s protective influence and active support for Jeremiah",
+          "human patronage/protection",
+          "social-political"
+        ],
+        "vehicle": [
+          "a physical hand being ‘with’ someone, able to help or shield",
+          "hand as instrument of action and power",
+          "physical"
+        ],
+        "ground": [
+          "hands perform actions and exercise power; a ‘hand with’ someone suggests active backing and protection",
+          "agency and supportive power",
+          "conceptual"
+        ],
+        "posture": [
+          "to credit Ahikam with decisive protective action that saved Jeremiah",
+          "narrative commendation",
+          "narrative"
+        ],
+        "explanation": "‘Hand’ functions metonymically for Ahikam’s power and agency, and the idiom ‘his hand was with Jeremiah’ metaphorically portrays his active protection and support.",
+        "confidence": 0.94
+      }
+    ]
+  }
+]
