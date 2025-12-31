@@ -1,0 +1,622 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 9:1",
+    "deliberation": "I checked the wish to be in the desert, the phrase 'מי יתנני', and the charges 'מנאפים' and 'בוגדים'. The optative 'מי יתנני' is a conventional idiom. 'Adulterers' in prophetic discourse commonly functions metaphorically for covenant infidelity, not only literal sexual sin.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִֽי־יִתְּנֵ֣נִי בַמִּדְבָּ֗ר מְלוֹן֙ אֹֽרְחִ֔ים",
+        "english_text": "Oh, to be in the desert, at an encampment for wayfarers!",
+        "target": ["Jeremiah’s longing to escape the people", "prophetic emotional state", "prophetic discourse"],
+        "vehicle": ["The question ‘who will give me…?’ as if someone could grant relocation", "request formula", "Hebrew idiomatic speech"],
+        "ground": ["Expresses intense wish rather than an actual search for a giver", "expression of desire", "emotional communication"],
+        "posture": ["Lamenting desire for distance from the corrupt people", "emotive complaint", "judgment-lament rhetoric"],
+        "explanation": "The Hebrew formula 'מי יתנני' literally means 'who will give me', but functions idiomatically as an optative, 'O that I were…', expressing a wish rather than a genuine question.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֻלָּם֙ מְנָ֣אֲפִ֔ים עֲצֶ֖רֶת בֹּגְדִֽים",
+        "english_text": "for they are all adulterers, a band of rogues.",
+        "target": ["Israel’s covenant unfaithfulness", "spiritual/moral infidelity", "covenant relationship with God"],
+        "vehicle": ["Sexual adultery and a company of traitors", "marital and political betrayal", "family and political life"],
+        "ground": ["Violation of exclusive loyalty, secret unfaithfulness, and betrayal of trust", "breach of covenant fidelity", "ethics of loyalty and treachery"],
+        "posture": ["Severe moral condemnation of the people’s unfaithfulness to God and one another", "prophetic accusation", "covenant lawsuit rhetoric"],
+        "explanation": "Prophetic usage of 'adulterers' regularly extends beyond literal sexual sin to depict Israel’s covenant-breaking and idolatry as marital infidelity, here reinforced by the term 'traitors'.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 9:2",
+    "deliberation": "I examined 'they bend their tongues like bows', the description of valor for deceit, and 'from evil to evil they go'. The bow imagery is a clear metaphor; the depiction of being 'valiant' in treachery is an ironic reversal of usual heroic language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַֽיַּדְרְכ֤וּ אֶת־לְשׁוֹנָם֙ קַשְׁתָּ֣ם שֶׁ֔קֶר",
+        "english_text": "They bend their tongues like bows for falsehood",
+        "target": ["The people’s deceitful speech", "verbal behavior", "social-moral life of Judah"],
+        "vehicle": ["A bent bow prepared to shoot deadly arrows", "weapon of war", "warfare and violence"],
+        "ground": ["Speech is portrayed as a weapon that can pierce and harm, deliberately aimed for falsehood", "harmful, aggressive intent", "moral violence in community"],
+        "posture": ["Condemnation of speech as intentionally destructive", "ethical critique", "prophetic warning"],
+        "explanation": "The tongue stands metonymically for speech, and that speech is metaphorically likened to a drawn bow ready to shoot lies as arrows, highlighting how words are weaponized.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלֹ֥א לֶאֱמוּנָ֖ה גָּבְר֣וּ בָאָ֑רֶץ כִּי֩ מֵרָעָ֨ה אֶל־רָעָ֧ה ׀ יָצָ֛אוּ",
+        "english_text": "They are valorous in the land for treachery, not for honesty; they advance from evil to evil.",
+        "target": ["The people’s persistent practice of evil", "moral conduct", "ethical life of the nation"],
+        "vehicle": ["Language of military heroism and advancement in battle", "valor terminology", "warfare / heroic ideals"],
+        "ground": ["Terms normally praising courage in battle are inverted and applied to moral corruption, creating an ironic mismatch", "reversal of expected value of 'valor'", "ethical irony"],
+        "posture": ["Ironical denunciation that mocks their ‘heroism’ in doing wrong rather than right", "satiric critique", "prophetic sarcasm against sin"],
+        "explanation": "By saying they are 'valorous' but only in treachery, Jeremiah ironically uses heroic vocabulary for their wickedness, undercutting any claim to true greatness.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 9:3",
+    "deliberation": "The verse warns against trusting friend and brother. I focused on 'כל אח עקוב יעקב וכל רע רכיל יהלך'. This combines a universal quantifier ('every') used rhetorically and the idiomatic verb phrase 'הלך רכיל' (go about as a talebearer).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֤י כׇל־אָח֙ עָק֣וֹב יַעְקֹ֔ב וְכׇל־רֵ֖עַ רָכִ֥יל יַהֲלֹֽךְ",
+        "english_text": "For every sibling takes advantage, every friend deals basely [goes about as a slanderer].",
+        "target": ["The untrustworthiness of social relationships", "human interpersonal conduct", "community ethics in Judah"],
+        "vehicle": ["'Going about' as a peddler of gossip and the sweeping 'every brother/friend' formulation", "movement and trade imagery plus universal quantifier", "daily social interaction"],
+        "ground": ["Slander is portrayed as something actively carried around, and the use of 'every' exaggerates the prevalence of betrayal", "activity and pervasiveness of deceit", "moral corruption pictured as socially ubiquitous"],
+        "posture": ["Strong denunciation of widespread treachery, stressing its almost universal reach", "pessimistic social critique", "prophetic lament over communal breakdown"],
+        "explanation": "The idiom 'הלך רכיל' pictures a person as walking around with gossip like a peddler, and 'every brother/every friend' functions hyperbolically to emphasize how common such betrayal is.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 9:4",
+    "deliberation": "I considered 'they have trained their tongues to speak falsely' and 'they weary themselves doing wrong'. The key figurative element is 'tongue' as metonymy for speech and as if it were a pupil being trained.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לִמְּד֧וּ לְשׁוֹנָ֛ם דַּבֶּר־שֶׁ֖קֶר",
+        "english_text": "They have trained their tongues to speak falsely.",
+        "target": ["The cultivation of lying habits", "verbal behavior", "ethical speech in the community"],
+        "vehicle": ["A tongue that can be trained like a student or an animal", "body part as learner", "education / discipline"],
+        "ground": ["Falsehood is not accidental but a practiced skill, as though the organ of speech were schooled for deceit", "intentional, learned behavior", "moral formation in vice"],
+        "posture": ["Critique of deliberate, disciplined commitment to lying", "ethical condemnation", "warning against entrenched deceit"],
+        "explanation": "The tongue stands metonymically for speech, and it is personified/metaphorically depicted as being 'trained', emphasizing that their deceit is the result of intentional practice.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 9:5",
+    "deliberation": "I checked whether 'dwelling in the midst of deceit' is literal or metaphorical. 'Deceit' functions as an environment they inhabit, which goes beyond a simple predicate and becomes a spatial metaphor for moral atmosphere.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִׁבְתְּךָ֖ בְּת֣וֹךְ מִרְמָ֑ה",
+        "english_text": "You dwell in the midst of deceit.",
+        "target": ["The people’s social-moral setting", "moral environment", "life of Judah as a community"],
+        "vehicle": ["A physical habitation surrounded by something", "spatial environment", "dwelling/settlement imagery"],
+        "ground": ["Deceit is so pervasive that it is as if the people live inside a region or atmosphere made of deceit", "pervasiveness and inescapability", "moral climate imagery"],
+        "posture": ["Depicts their society as thoroughly saturated with deceit, heightening the charge of guilt", "negative evaluation of social environment", "prophetic denunciation"],
+        "explanation": "Deceit is conceptualized as a surrounding space in which they live, shifting from a single act of lying to an all-encompassing moral climate.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 9:6",
+    "deliberation": "I examined 'I shall smelt and assay them'. This is classic prophetic refining imagery, using metallurgical processes as a metaphor for purifying the people through judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִ֥י צוֹרְפָ֖ם וּבְחַנְתִּ֑ים",
+        "english_text": "Lo, I shall smelt and assay them.",
+        "target": ["God’s disciplinary dealings with His people", "divine judgment and purification", "covenant community of Judah"],
+        "vehicle": ["The smelting and assaying of metal ore", "metallurgical refining", "craft/industry"],
+        "ground": ["As ore is heated and tested to remove dross and prove its quality, so the people will undergo severe trials that expose and purge corruption", "purification through testing", "judicial refinement"],
+        "posture": ["God portrays His judgment as purposeful refinement, not arbitrary destruction", "corrective but severe stance", "covenant-purification rhetoric"],
+        "explanation": "The people are likened to metal being smelted and tested, a common prophetic metaphor for the purifying intent of divine judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 9:7",
+    "deliberation": "I noted the description of the tongue as a sharpened arrow and the inner ambush set against one’s neighbor. Both use battle/weapon imagery to depict deceitful speech and hidden plots.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "חֵ֥ץ שָׁח֛וּט לְשׁוֹנָ֖ם מִרְמָ֣ה דִבֵּ֑ר",
+        "english_text": "Their tongue is a sharpened arrow; it speaks deceit.",
+        "target": ["The people’s deceitful words", "speech as moral action", "interpersonal relations in Judah"],
+        "vehicle": ["A sharpened/slaughtering arrow", "lethal weapon", "warfare and violence"],
+        "ground": ["Like a sharpened arrow, their speech is precise, penetrating, and capable of killing or seriously harming", "capacity to injure from a distance", "destructive power in conflict"],
+        "posture": ["Severe moral indictment of their words as intentionally lethal", "ethical condemnation", "judgment imagery"],
+        "explanation": "The tongue (metonymy for speech) is metaphorically equated with a sharpened arrow, stressing the deadly and hostile character of their deceitful speech.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְקִרְבּ֖וֹ יָשִׂ֥ים אׇרְבּֽוֹ",
+        "english_text": "But in his heart he lays an ambush for him.",
+        "target": ["Hidden hostile intentions toward one’s neighbor", "inner motives", "human heart and will"],
+        "vehicle": ["An ambush set by a warrior against an unsuspecting victim", "military trap", "warfare tactics"],
+        "ground": ["Inner planning of harm is like arranging a secret ambush that the victim does not see", "concealment and surprise leading to harm", "covert aggression"],
+        "posture": ["Portrays their inward thoughts as militarized hostility, heightening the treachery", "moral exposure of hidden evil", "prophetic unveiling of hearts"],
+        "explanation": "The inner self ('within him') is depicted as the location where an ambush is set, personifying the heart as a battlefield where plots are laid against others.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 9:8",
+    "deliberation": "This verse is composed of rhetorical questions about punishment. They reinforce certainty of judgment but do not introduce a new image or comparison; I found no clear metaphor, simile, personification, or idiom.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 9:9",
+    "deliberation": "I evaluated 'I take up weeping' and the lament over mountains and pastures. The devastation imagery itself can be literal. The phrase 'אשא בכי' (to lift up weeping) is a conventional idiom for beginning or engaging in lament.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־הֶ֨הָרִ֜ים אֶשָּׂ֧א בְכִ֣י וָנֶ֗הִי",
+        "english_text": "For the mountains I take up weeping and wailing.",
+        "target": ["The prophet’s act of lamenting over the land", "prophetic emotional response", "lamentation practice"],
+        "vehicle": ["‘Lifting up’ weeping as if it were an object or voice to be raised", "ritual lament phrase", "speech performance"],
+        "ground": ["Weeping is described in terms of raising or carrying it, a conventional way to speak of beginning a public lament", "formal initiation of lament", "cultic-lament rhetoric"],
+        "posture": ["Signals a solemn, official lament over the judgment on the land", "mourning posture", "prophetic grief language"],
+        "explanation": "The idiom 'to lift up weeping' portrays lament as something one raises up, akin to lifting one’s voice, marking a stylized start of mourning.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 9:10",
+    "deliberation": "I considered the prediction that Jerusalem will become 'heaps' and 'a den of jackals'. The image of the city as a haunt of wild animals is a standard metaphor for total desolation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּ֧י אֶת־יְרוּשָׁלִַ֛ם לְגַלִּ֖ים מְע֣וֹן תַּנִּ֑ים",
+        "english_text": "I will turn Jerusalem into rubble, into dens for jackals.",
+        "target": ["The future state of Jerusalem after judgment", "city’s post-destruction condition", "land and urban life of Judah"],
+        "vehicle": ["Rubble-heaps inhabited by jackals", "ruins turned into wild-animal lairs", "wilderness desolation"],
+        "ground": ["A once-inhabited city becoming suitable only for wild scavengers encapsulates extreme devastation and abandonment", "from civilized habitation to wild desolation", "judgment as reversal of ordered life"],
+        "posture": ["Threatens a radical reversal of Jerusalem’s status, underlining the severity of judgment", "warning stance", "prophetic doom imagery"],
+        "explanation": "Portraying Jerusalem as a jackal den uses wilderness fauna as a metaphor for complete ruin and the loss of human society.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 9:11",
+    "deliberation": "I observed 'the mouth of YHWH has spoken' and the phrase 'laid waste like a wilderness'. The first is anthropomorphic/metonymic; the second is an explicit simile comparing the land’s ruin to a desert.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַאֲשֶׁ֨ר דִּבֶּ֧ר פִּֽי־יְהֹוָ֛ה אֵלָ֖יו",
+        "english_text": "To whom has the mouth of GOD spoken…",
+        "target": ["God’s act of revelation", "divine communication", "prophetic inspiration"],
+        "vehicle": ["God’s 'mouth' as if He had human speech organs", "human bodily feature", "anthropomorphic imagery"],
+        "ground": ["Just as a human mouth produces speech, so the expression attributes God’s revelation to a 'mouth', concretizing the abstract act of speaking", "source of authoritative words", "communication between persons"],
+        "posture": ["Underscores the direct, personal character of the revelation and its authority", "affirmation of divine speech", "theology of prophecy"],
+        "explanation": "The phrase 'mouth of YHWH' is an anthropomorphism and a metonymy for God’s speech, depicting the transcendent God as if He had a human mouth to emphasize the reality of His utterance.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִצְּתָ֥ה כַמִּדְבָּ֖ר מִבְּלִ֥י עֹבֵֽר",
+        "english_text": "Laid waste like a wilderness, with none passing through.",
+        "target": ["The devastated land of Judah", "physical condition of the territory", "land and environment"],
+        "vehicle": ["A barren wilderness with no travelers", "uninhabited desert", "hostile, empty landscape"],
+        "ground": ["Both the judged land and a wilderness are empty, lifeless, and without normal human traffic", "desolation, lack of habitation", "judgment expressed as reversion to chaos"],
+        "posture": ["Emphasizes the extremity of the ruin by likening it to a desert", "heightened sense of loss", "prophetic lament over land"],
+        "explanation": "Using 'like a wilderness' explicitly compares the ruined land to a desert, a simile conveying total desolation and absence of normal life.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 9:12",
+    "deliberation": "I looked at 'they forsook my Torah' and 'they did not walk in it'. The latter is the well-known metaphor of living according to Torah as walking on a path.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא־שָׁמְע֥וּ בְקוֹלִ֖י וְלֹא־הָ֥לְכוּ בָֽהּ",
+        "english_text": "They did not obey Me and they did not walk in it.",
+        "target": ["Obedience to God’s Torah", "covenant obedience", "ethical-religious life of Israel"],
+        "vehicle": ["Walking on a way or path", "journeying", "movement through space"],
+        "ground": ["Living by God’s instruction is like traveling along a path: it requires direction, continuation, and staying within bounds", "ordered, continual practice", "life-course imagery"],
+        "posture": ["Accuses them of refusing the proper 'way' laid out by Torah", "moral indictment", "covenant lawsuit imagery of straying from the way"],
+        "explanation": "The verse uses the frequent biblical metaphor of Torah as a path and obedience as 'walking' in it, framing moral life in terms of journey and direction.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 9:13",
+    "deliberation": "I checked 'they went after the stubbornness of their heart' and 'after the Baals'. The heart’s stubbornness is personified as something one can follow, extending the path/leadership metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיֵּ֣לְכ֔וּ אַחֲרֵ֖י שְׁרִר֣וּת לִבָּ֑ם",
+        "english_text": "They followed their own willful heart.",
+        "target": ["Israel’s self-willed desires", "inner impulses", "human heart and will"],
+        "vehicle": ["A leader or path that one walks behind", "guide being followed", "journey/discipleship imagery"],
+        "ground": ["Their inner stubbornness is treated as a guide or path that leads them, rather than God leading them", "misdirected allegiance and guidance", "contrast of following God vs. following self"],
+        "posture": ["Depicts their disobedience as a wrongful choice of leader, intensifying guilt", "moral censure", "covenant infidelity theme"],
+        "explanation": "The 'stubbornness of their heart' is personified and treated as something they 'go after', continuing the metaphor of life as a way one walks and of allegiance as following a leader.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 9:14",
+    "deliberation": "I examined the feeding with wormwood and giving bitter water to drink. These are not literal dietary plans but images for bitter, poisonous experiences of judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִ֧י מַאֲכִילָ֛ם אֶת־הָעָ֥ם הַזֶּ֖ה לַעֲנָ֑ה וְהִשְׁקִיתִ֖ים מֵי־רֹֽאשׁ",
+        "english_text": "I am going to feed that people wormwood and make them drink a bitter draft.",
+        "target": ["The bitter experiences of divine judgment (exile, suffering)", "coming calamities", "historical fate of the people"],
+        "vehicle": ["Eating wormwood and drinking poisonous/bitter water", "ingesting bitter, noxious substances", "food and drink imagery"],
+        "ground": ["Judgment will be as bitter and harmful as consuming wormwood and poison, affecting them internally and painfully", "bitterness and toxicity of the experience", "suffering as something taken into oneself"],
+        "posture": ["Threatens intensely painful and destructive consequences for their sin", "judicial stance", "prophetic curse imagery"],
+        "explanation": "Divine judgment is portrayed as being fed bitter wormwood and poisonous water, a metaphor that captures the internalized, painful, and life-threatening nature of the coming disasters.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 9:15",
+    "deliberation": "I distinguished literal exile ('scatter among nations') from 'I will send the sword after them', where 'sword' stands for warfare and is personified as a pursuing agent.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשִׁלַּחְתִּ֤י אַֽחֲרֵיהֶם֙ אֶת־הַחֶ֔רֶב עַ֥ד כַּלּוֹתִ֖י אוֹתָֽם",
+        "english_text": "And I will dispatch the sword after them until I have consumed them.",
+        "target": ["The destructive military forces that will pursue Israel", "agents of judgment", "historical instruments of divine punishment"],
+        "vehicle": ["A sword sent and pursuing like a hunter or messenger", "weapon treated as an active pursuer", "warfare personified"],
+        "ground": ["The invading powers are as relentless and deadly as a sword that chases and strikes its target", "relentless pursuit and lethal force", "martial execution of judgment"],
+        "posture": ["Conveys the inescapable, active nature of God’s judgment through war", "threatening stance", "prophetic terror imagery"],
+        "explanation": "The 'sword' metonymically represents warfare and is personified as something that can be sent to pursue them, emphasizing the active, relentless character of the coming military judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 9:16",
+    "deliberation": "This verse calls to summon professional dirge-singers and wise women. These are literal instructions within the cultural context of hired mourners; I did not find a clear metaphor or other figurative mapping.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 9:17",
+    "deliberation": "The verse speaks of eyes running with tears and eyelids flowing with water. Tears are literal, but the image of 'flowing' water from eyelids is an intensified, somewhat hyperbolic way to depict abundant weeping.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְתֵרַ֤דְנָה עֵינֵ֙ינוּ֙ דִּמְעָ֔ה וְעַפְעַפֵּ֖ינוּ יִזְּלוּ־מָֽיִם",
+        "english_text": "That our eyes may run with tears, our pupils flow with water.",
+        "target": ["The intensity of the people’s grief", "emotional response of the community", "human sorrow"],
+        "vehicle": ["Eyes and eyelids as sources of flowing water", "abundant liquid flow", "water imagery"],
+        "ground": ["Very heavy weeping is like streams of water pouring from the eyes, emphasizing quantity and continuity", "abundance and unceasing nature of tears", "overwhelming grief"],
+        "posture": ["Urges a full, unrestrained expression of sorrow appropriate to the disaster", "call to deep mourning", "lament rhetoric"],
+        "explanation": "The idiomatic description of eyes running and eyelids flowing with water hyperbolically portrays copious tears as if water were streaming from the face.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 9:18",
+    "deliberation": "The verse reports the sound of wailing from Zion and the need to leave land and dwellings. These are literal descriptions of loss and shame without a clear metaphor, simile, or personification beyond normal language.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 9:19",
+    "deliberation": "I noted 'let your ears receive the word of his mouth'. 'Mouth of YHWH' is anthropomorphic/metonymic, and 'ears receiving a word' is an idiomatic description of hearing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְתִקַּ֥ח אׇזְנְכֶ֖ם דְּבַר־פִּ֑יו",
+        "english_text": "Let your ears receive the word of His mouth.",
+        "target": ["The act of heeding God’s message", "human reception of revelation", "communication between God and the people"],
+        "vehicle": ["Ears taking hold of something; God’s 'mouth' uttering words", "bodily actions of taking and speaking", "human sensory and speech organs"],
+        "ground": ["Hearing is depicted as the ears 'taking' a word, and God’s revelation as if spoken by a human mouth, making the invisible process concrete", "transfer and reception of a message", "personal communication"],
+        "posture": ["Emphasizes attentive, receptive listening to divine speech", "exhortative stance", "prophetic appeal to obey the word"],
+        "explanation": "The 'mouth of God' is an anthropomorphism and metonymy for His speech, while the ears 'taking' the word is idiomatic imagery for attentive hearing and acceptance.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 9:20",
+    "deliberation": "I focused on 'death has climbed through our windows, has entered our fortresses'. Death is personified as an intruder or attacker entering houses and strongholds.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־עָלָ֤ה מָ֙וֶת֙ בְּחַלּוֹנֵ֔ינוּ בָּ֖א בְּאַרְמְנוֹתֵ֑ינוּ",
+        "english_text": "For death has climbed through our windows, has entered our fortresses.",
+        "target": ["The invading forces and the pervasive reality of dying in the city", "experience of lethal invasion", "judgment events within Judah"],
+        "vehicle": ["A person or enemy scaling windows and entering palaces", "intruder/attacker figure", "siege and home invasion imagery"],
+        "ground": ["Death, like a prowling invader, breaches defenses and penetrates private spaces, making all vulnerable", "inescapable, invasive presence", "total vulnerability under attack"],
+        "posture": ["Dramatizes the terror and inescapability of the coming slaughter", "heightened warning", "prophetic apocalyptic tone"],
+        "explanation": "Death is personified as an agile intruder climbing through windows and entering fortresses, vividly portraying how the lethal effects of judgment will penetrate every level of society.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 9:21",
+    "deliberation": "I identified two explicit comparison clauses: carcasses lying like dung on the field and like sheaves behind the reaper. These are two distinct similes highlighting worthlessness and abundance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָֽפְלָה֙ נִבְלַ֣ת הָאָדָ֔ם כְּדֹ֖מֶן עַל־פְּנֵ֣י הַשָּׂדֶ֑ה",
+        "english_text": "People’s carcasses shall lie like dung upon the fields.",
+        "target": ["The bodies of those slain in judgment", "victims of calamity", "human population of Judah"],
+        "vehicle": ["Dung spread on the surface of a field", "animal excrement", "worthless agricultural byproduct"],
+        "ground": ["The dead will be as disregarded and defiling as dung, left exposed and uncollected", "worthlessness, uncleanness, and exposure", "extreme degradation under judgment"],
+        "posture": ["Presents the fate of the wicked as utterly disgraceful and contemptible", "intensified warning", "prophetic shock imagery"],
+        "explanation": "The simile likens unburied human corpses to dung scattered on fields, hyperbolically conveying their utter dishonor and the horror of mass death.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּכְעָמִ֛יר מֵאַחֲרֵ֥י הַקֹּצֵ֖ר וְאֵ֥ין מְאַסֵּֽף",
+        "english_text": "And like sheaves behind the reaper, with none to pick them up.",
+        "target": ["The multitude of unburied bodies left after judgment", "extent of the slaughter", "population decimated by war"],
+        "vehicle": ["Sheaves left lying in the field after harvest", "abandoned harvested bundles", "agricultural residue"],
+        "ground": ["The number and neglect of corpses is compared to leftover sheaves that no one comes back to collect", "abundance and abandonment", "overwhelming scale of loss"],
+        "posture": ["Stresses both the magnitude and neglect of the dead, underscoring societal collapse", "grim emphasis", "prophetic catastrophe imagery"],
+        "explanation": "This simile compares the many uncollected corpses to sheaves left behind by the reaper, hyperbolically highlighting both their number and the lack of anyone to care for them.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 9:22",
+    "deliberation": "The verse forbids boasting in wisdom, strength, or riches. These are straightforward moral directives using ordinary language for boasting; I found no special metaphor beyond normal usage.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 9:23",
+    "deliberation": "The permitted boasting is in knowing YHWH who practices kindness, justice, and righteousness in the earth. These are primarily theological and ethical assertions. The language is direct, without a distinct figurative mapping beyond standard abstractions.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 9:24",
+    "deliberation": "I focused on 'I will take note of everyone circumcised in the foreskin (כל מול בערלה)'. This paradoxical phrase uses a positive religious term ('circumcised') with 'foreskin', creating an ironic emphasis on merely external religiosity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּפָ֣קַדְתִּ֔י עַל־כׇּל־מ֖וּל בְּעׇרְלָֽה",
+        "english_text": "I will take note of everyone circumcised in the foreskin.",
+        "target": ["Those who rely on outward religious marks without inner obedience", "externally religious people", "religious identity among nations and Israel"],
+        "vehicle": ["Being 'circumcised in the foreskin'—a self-contradictory combination of sign and its removal-site", "ritual mark on the body", "bodily religious symbol"],
+        "ground": ["External circumcision without inner change is treated as a hollow or even absurd sign, ironically labeled as circumcision that is still 'in the foreskin'", "empty externality vs. true inward reality", "symbol versus substance in religion"],
+        "posture": ["Critiques and exposes the emptiness of purely external covenantal marks", "ironical judgment", "prophetic polemic against formalism"],
+        "explanation": "The phrase 'circumcised in the foreskin' is a paradoxical, ironic way to describe those who possess the physical sign yet lack the corresponding inner transformation, using the bodily rite metonymically for religious identity.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 9:25",
+    "deliberation": "I examined the list of nations and the statement that all Israel is 'uncircumcised of heart'. The key figurative element is 'uncircumcised heart', a well-known metaphor for inner insensitivity or rebellion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכׇל־בֵּ֥ית יִשְׂרָאֵ֖ל עַרְלֵי־לֵֽב",
+        "english_text": "But all the House of Israel are uncircumcised of heart.",
+        "target": ["Israel’s inner spiritual/moral condition", "inward disposition", "covenant relationship at the heart-level"],
+        "vehicle": ["An uncircumcised heart", "heart lacking the covenantal cutting", "bodily rite applied to inner organ"],
+        "ground": ["Just as uncircumcised flesh lacks the covenant sign and remains insensitive, so their inner being is unmarked by true commitment and is resistant to God", "absence of covenantal loyalty and sensitivity", "moral and spiritual dullness"],
+        "posture": ["Pronounces a devastating verdict that Israel, despite outward signs, is inwardly no different from uncircumcised nations", "critical stance", "prophetic exposure of hypocrisy"],
+        "explanation": "The metaphor 'uncircumcised of heart' transfers the physical rite of circumcision to the inner self, depicting Israel’s hearts as unresponsive and outside true covenant fidelity.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

@@ -1,0 +1,880 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 4:1",
+    "deliberation": "I checked whether commands like 'hear' or lists of virtues are figurative; they are literal. The primary figure is the covenant-lawsuit frame: 'YHWH has a rîb with the inhabitants of the land', which maps human legal dispute onto God's dealings with Israel.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּ֣י רִ֤יב לַֽיהֹוָה֙ עִם־יוֹשְׁבֵ֣י הָאָ֔רֶץ",
+        "english_text": "For the LORD has a case (lawsuit) against the inhabitants of the land",
+        "target": [
+          "YHWH's covenant accusation against Israel",
+          "divine-people relationship",
+          "covenant/judgment domain"
+        ],
+        "vehicle": [
+          "a legal 'rîb' (lawsuit) between human parties",
+          "judicial dispute/prosecution",
+          "legal/social domain"
+        ],
+        "ground": [
+          "formal charges, guilt, and impending judgment",
+          "structured confrontation over breached obligations",
+          "norm-enforcement domain"
+        ],
+        "posture": [
+          "YHWH portrayed as plaintiff/prosecutor",
+          "forensic/judicial stance",
+          "covenant-lawsuit rhetoric"
+        ],
+        "explanation": "The prophet depicts YHWH as bringing a formal lawsuit against Israel, borrowing courtroom imagery to portray covenant judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 4:2",
+    "deliberation": "Most of the verse is a literal catalog of sins. The clause 'blood touches blood' is a vivid idiomatic intensifier for continuous bloodshed, likely hyperbolic imagery rather than a literal physical description of blood pooling.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְדָמִ֥ים בְּדָמִ֖ים נָגָֽעוּ",
+        "english_text": "and blood [is] touching blood",
+        "target": [
+          "the frequency and relentlessness of acts of violence and murder",
+          "pattern of social crime",
+          "ethical/social order"
+        ],
+        "vehicle": [
+          "pools/streams of blood coming into contact",
+          "overabundance/contiguity of spilled blood",
+          "physical violence imagery"
+        ],
+        "ground": [
+          "one act of bloodshed immediately followed by another with no gap",
+          "unbroken succession and excess",
+          "intensification of violence"
+        ],
+        "posture": [
+          "prophetic condemnation of pervasive violence",
+          "indignant moral evaluation",
+          "judgment oracle rhetoric"
+        ],
+        "explanation": "The phrase 'blood touches blood' is an idiomatic and hyperbolic picture of killings so frequent that the resulting 'blood' runs together, emphasizing unceasing violence.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 4:3",
+    "deliberation": "I evaluated whether the languishing of animals is hyperbolic or literal consequence of covenant curses; it can be taken literally. The clearest figure is the personification of 'the land' as mourning.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תֶּאֱבַ֣ל הָאָ֗רֶץ",
+        "english_text": "the land will mourn",
+        "target": [
+          "the condition of the territory of Israel under judgment",
+          "devastated environment/landscape",
+          "covenant land"
+        ],
+        "vehicle": [
+          "a person who mourns",
+          "human emotional/ritual grieving",
+          "family/funeral domain"
+        ],
+        "ground": [
+          "visible signs of loss, distress, and desolation",
+          "outward expression of deep loss",
+          "judgment-induced ruin"
+        ],
+        "posture": [
+          "prophetic portrayal of creation reacting to sin",
+          "empathetic but severe stance",
+          "covenant-curses discourse"
+        ],
+        "explanation": "The land is depicted as if it were a person mourning, attributing human emotional behavior to the soil to express how deeply the land is affected by Israel's sin.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 4:4",
+    "deliberation": "The prohibitions of rebuke appear literal. The phrase 'your people are like those who contend with a priest' uses כ- to make a comparison that is more than strictly historical description, functioning as a simile for extreme contentiousness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעַמְּךָ֖ כִּמְרִיבֵ֥י כֹהֵֽן",
+        "english_text": "and your people are like those who contend with a priest",
+        "target": [
+          "the people addressed by the prophet (Israel/Judah) in their attitude to authority",
+          "rebellious community",
+          "covenant people"
+        ],
+        "vehicle": [
+          "individuals who engage in dispute with a priest",
+          "paradigmatic figure of brazen defiance of sacred authority",
+          "cultic/legal setting"
+        ],
+        "ground": [
+          "audacious resistance to correction and instruction",
+          "disrespect for spiritual authority",
+          "stubborn refusal to submit"
+        ],
+        "posture": [
+          "prophetic censure highlighting outrageous behavior",
+          "critical and warning stance",
+          "sapiential/proverbial coloring"
+        ],
+        "explanation": "The people are compared to those who contend with a priest, a shocking scenario in Israelite culture, to depict their brazen refusal of correction.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 4:5",
+    "deliberation": "I distinguished between literal and figurative senses of 'stumble' and considered whether 'your mother' is a corporate metaphor. 'Stumble' clearly functions metaphorically for failure/judgment, and 'your mother' likely personifies the nation as the mother of individual Israelites.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכָשַׁלְתָּ֣ הַיּ֔וֹם וְכָשַׁ֧ל גַּם־נָבִ֛יא עִמְּךָ֖ לָ֑יְלָה",
+        "english_text": "You shall stumble by day, and a prophet also shall stumble with you by night",
+        "target": [
+          "the failure and downfall of the people and their prophet",
+          "national and prophetic collapse",
+          "covenant community under judgment"
+        ],
+        "vehicle": [
+          "a person physically stumbling or tripping",
+          "loss of footing and falling",
+          "bodily movement/navigation"
+        ],
+        "ground": [
+          "sudden failure, inability to stand or proceed safely",
+          "disorientation and vulnerability",
+          "experiencing calamity and defeat"
+        ],
+        "posture": [
+          "announcement of inevitable collapse in all circumstances (day/night)",
+          "threatening/judgmental stance",
+          "prophetic doom oracle"
+        ],
+        "explanation": "Physical stumbling is used idiomatically as a metaphor for experiencing calamity and failure under divine judgment, by day and by night.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְדָמִ֖יתִי אִמֶּֽךָ",
+        "english_text": "and I will destroy your mother",
+        "target": [
+          "the corporate entity (Israel as a whole) related to the addressed individuals",
+          "the nation as the source of its members",
+          "covenant community"
+        ],
+        "vehicle": [
+          "the mother of children",
+          "a family matriarch",
+          "kinship/family domain"
+        ],
+        "ground": [
+          "origin and source of life and identity for the children",
+          "close relational bond between corporate body and individuals",
+          "shared fate of family members with their mother"
+        ],
+        "posture": [
+          "YHWH depicted as executing judgment on the corporate 'mother'",
+          "forensic and severe stance",
+          "covenant-family metaphor"
+        ],
+        "explanation": "The nation is personified as the 'mother' of the addressed people; destroying the mother symbolizes the annihilation of the corporate body on which individuals depend.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 4:6",
+    "deliberation": "I considered whether 'lack of knowledge' and 'rejecting knowledge' are figurative metonymy for covenant loyalty (which they likely are) but focused on one clear anthropomorphic metaphor: YHWH 'forgetting' the children, which describes divine rejection in human memory terms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶשְׁכַּ֥ח בָּנֶ֖יךָ גַּם־אָֽנִי",
+        "english_text": "I also will forget your children",
+        "target": [
+          "YHWH's choice to withdraw covenant favor and protection from the next generation",
+          "divine rejection of descendants",
+          "covenant relationship dynamics"
+        ],
+        "vehicle": [
+          "a human forgetting someone",
+          "failure or refusal to keep someone in mind",
+          "human cognitive/memory process"
+        ],
+        "ground": [
+          "ceasing to pay attention or show concern",
+          "no longer acting for someone's good because they are 'out of mind'",
+          "relational abandonment"
+        ],
+        "posture": [
+          "YHWH portrayed in anthropomorphic terms to stress the seriousness of rejection",
+          "retributive stance mirroring Israel's 'forgetting' of Torah",
+          "covenant reciprocity theme"
+        ],
+        "explanation": "God threatens to 'forget' the children, using human memory language to describe covenantal abandonment, mirroring Israel's forgetting of God's teaching.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 4:7",
+    "deliberation": "The increase in number and their sinning are literal. The statement 'I will change their glory into shame' treats 'glory' and 'shame' as abstract yet almost object-like conditions that can be exchanged, a metaphor for reversal of status.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כְּבוֹדָ֖ם בְּקָל֥וֹן אָמִֽיר",
+        "english_text": "I will change their glory into shame",
+        "target": [
+          "Israel's honored status and reputation before God and nations",
+          "social and religious standing",
+          "covenant blessing condition"
+        ],
+        "vehicle": [
+          "an exalted 'glory' being exchanged for 'shame'",
+          "valuable thing being swapped for something disgraceful",
+          "honor/shame symbolism"
+        ],
+        "ground": [
+          "a complete reversal from honor to disgrace",
+          "loss of esteem and public humiliation",
+          "retributive transformation"
+        ],
+        "posture": [
+          "YHWH asserts power to invert their status",
+          "threatening, justice-oriented stance",
+          "reversal-judgment motif"
+        ],
+        "explanation": "Their 'glory' (status/honor) is depicted as something God can turn into 'shame', expressing a drastic reversal of fortunes through metaphorical exchange.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 4:8",
+    "deliberation": "I distinguished the literal priestly consumption of offerings from figurative language. Eating the people's sin-offerings is literal; the idiom 'lift up the soul to' iniquity for desiring it is figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֶל־עֲוֺנָ֖ם יִשְׂא֥וּ נַפְשֽׁוֹ",
+        "english_text": "and to their iniquity they lift up their soul",
+        "target": [
+          "the priests' inward desire for the people's sin (because it brings more offerings)",
+          "covetous attitude",
+          "moral disposition"
+        ],
+        "vehicle": [
+          "lifting up one's soul toward something",
+          "directing one's inner self upward in aspiration",
+          "gesture of longing or devotion"
+        ],
+        "ground": [
+          "intense desire and orientation of the inner self toward an object",
+          "seeking and pursuing something with appetite",
+          "misdirected devotion"
+        ],
+        "posture": [
+          "prophetic critique of priests' corrupt appetite for sin",
+          "exposing perverse desire",
+          "moral indictment"
+        ],
+        "explanation": "The idiom 'lift up the soul to' something is a metaphor for strongly desiring or setting one's heart upon it; here it exposes priests as inwardly craving the people's iniquity.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 4:9",
+    "deliberation": "I looked for explicit imagery beyond the pronouncement of equal treatment. The phrase 'like people, like priest' is a proverbial simile compressing the idea that both groups will share the same fate.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָ֥ה כָעָ֖ם כַּכֹּהֵ֑ן",
+        "english_text": "and it shall be: like people, like priest",
+        "target": [
+          "the shared moral condition and fate of priests and people",
+          "entire community under judgment",
+          "covenant body (leaders and laity)"
+        ],
+        "vehicle": [
+          "a proverbial formula equating two parties",
+          "succinct comparison pattern",
+          "wisdom/proverbial speech"
+        ],
+        "ground": [
+          "similarity in behavior and resulting punishment",
+          "no distinction in accountability or outcome",
+          "mutual corruption"
+        ],
+        "posture": [
+          "levelling of hierarchical distinctions in judgment",
+          "critical and ironic stance toward failed leadership",
+          "proverbial/judgment rhetoric"
+        ],
+        "explanation": "The terse saying 'like people, like priest' functions as a simile and proverb, asserting that priests will fare just as the people do because their conduct is alike.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 4:10",
+    "deliberation": "I considered whether 'eat and not be satisfied' and 'commit harlotry and not increase' are hyperbolic, but they can plausibly be taken as literal covenant-curse outcomes (famine and infertility). The verse contains no clearly distinct metaphor, simile, or personification beyond that standard curse language.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Hosea 4:11",
+    "deliberation": "The terms 'whoredom, wine, and new wine' are partly literal (actual practices). The key figure is the idiom 'take away the heart', which metaphorically describes the loss of understanding or sound judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "זְנ֛וּת וְיַ֥יִן וְתִיר֖וֹשׁ יִֽקַּֽח־לֵֽב",
+        "english_text": "harlotry and wine and new wine take away the heart",
+        "target": [
+          "the mental and moral faculties of the people (their 'heart' as mind/will)",
+          "capacity for sound judgment",
+          "inner person"
+        ],
+        "vehicle": [
+          "someone or something 'taking away' the heart",
+          "removing an essential organ or center",
+          "act of theft or removal"
+        ],
+        "ground": [
+          "loss of clear thinking and moral discernment",
+          "being deprived of what guides decisions",
+          "captivation and stupefaction"
+        ],
+        "posture": [
+          "prophetic warning about the stupefying power of vice",
+          "critical stance toward pleasures that dull the mind",
+          "moral exhortation"
+        ],
+        "explanation": "Harlotry and intoxicants are said to 'take away the heart', an idiom that metaphorically portrays them as robbing people of their understanding and self-control.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Hosea 4:12",
+    "deliberation": "I identified two distinct figures: (1) personifying wood and a staff as if they give oracles, which also has an ironic edge, and (2) 'a spirit of whoredom' as a metaphor for a pervasive, animating disposition toward idolatry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עַמִּי֙ בְּעֵצ֣וֹ יִשְׁאָ֔ל וּמַקְל֖וֹ יַגִּ֣יד ל֑וֹ",
+        "english_text": "My people consult their piece of wood, and their staff tells them",
+        "target": [
+          "Israel's practice of seeking guidance from idols and divination tools",
+          "idolatrous consultation for decision-making",
+          "worship/divination behavior"
+        ],
+        "vehicle": [
+          "a wooden object or staff that can speak and give answers",
+          "animated, communicative object",
+          "oracular person/being"
+        ],
+        "ground": [
+          "treating lifeless objects as if they had knowledge and speech",
+          "absurdity and futility of such consultation",
+          "misplaced trust"
+        ],
+        "posture": [
+          "ironical exposure of Israel's folly",
+          "mocking, derisive stance toward idolatry",
+          "prophetic satire"
+        ],
+        "explanation": "Wood and a staff are personified as giving oracles, highlighting through irony the absurdity of seeking guidance from lifeless idols and implements.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֣י ר֤וּחַ זְנוּנִים֙ הִתְעָ֔ה",
+        "english_text": "for a spirit of whoredom has led them astray",
+        "target": [
+          "the inner drive and pervasive tendency of the people toward idolatry and unfaithfulness",
+          "collective moral disposition",
+          "spiritual state of Israel"
+        ],
+        "vehicle": [
+          "a 'spirit' characterized by whoredom that deceives and leads astray",
+          "an animating, quasi-personal force",
+          "supernatural/animating agency"
+        ],
+        "ground": [
+          "powerful, pervasive influence over thoughts and behavior",
+          "leading people off the right path",
+          "being under the sway of an alien impulse"
+        ],
+        "posture": [
+          "diagnosis of Israel's idolatry as being driven by a corrupt inner force",
+          "explanatory but condemnatory stance",
+          "spiritual-psychological analysis"
+        ],
+        "explanation": "The people's propensity to spiritual unfaithfulness is described as a 'spirit of whoredom' that deceives them, personifying and reifying their corrupt inclination as a misguiding force.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Hosea 4:13",
+    "deliberation": "The descriptions of sacrificing on mountains and under trees, and the resulting fornication and adultery of daughters and daughters-in-law, fit the literal cultic and sexual practices associated with Canaanite worship. Though 'whoredom' elsewhere in Hosea is a metaphor for idolatry, here the focus appears to be on the concrete practices; I did not isolate a distinct figurative expression.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Hosea 4:14",
+    "deliberation": "This verse continues the literal description of sexual immorality with prostitutes and consecrated women as part of pagan worship, and the statement that a senseless people will stumble. 'Stumble' here may echo metaphorical usage, but it can naturally denote literal ruin; there is no clearly new or elaborated figure beyond earlier usage.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Hosea 4:15",
+    "deliberation": "I found two distinct figures: (1) Israel 'playing the harlot' as a metaphor for spiritual/covenant unfaithfulness, and (2) the renaming of Bethel as 'Beth-aven', a punning metonymy/ironic label that treats the sanctuary-town as a 'house of iniquity'.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִם־זֹנֶ֤ה אַתָּה֙ יִשְׂרָאֵ֔ל",
+        "english_text": "If you play the harlot, O Israel",
+        "target": [
+          "Israel's religious and covenantal infidelity to YHWH",
+          "idolatrous behavior of the nation",
+          "covenant relationship"
+        ],
+        "vehicle": [
+          "a woman acting as a prostitute/adulteress",
+          "sexual unfaithfulness and commercial sex",
+          "marital/sexual domain"
+        ],
+        "ground": [
+          "betrayal of an exclusive, pledged relationship",
+          "seeking other partners/lovers for gain or pleasure",
+          "shameful breach of fidelity"
+        ],
+        "posture": [
+          "prophetic indictment of Israel as an unfaithful wife",
+          "deeply personal and moralizing stance",
+          "marriage-covenant metaphor"
+        ],
+        "explanation": "Israel's idolatry is portrayed as 'playing the harlot', extending the marriage metaphor in Hosea: YHWH is the faithful husband, Israel is the unfaithful wife.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בֵּ֣ית אָ֔וֶן",
+        "english_text": "Beth-aven ('house of iniquity')",
+        "target": [
+          "the sanctuary-town Bethel with its illegitimate cult",
+          "northern royal sanctuary",
+          "geographical/cultic center"
+        ],
+        "vehicle": [
+          "a place named 'house of iniquity' or 'house of vanity'",
+          "location characterized by emptiness and wickedness",
+          "moralized toponym"
+        ],
+        "ground": [
+          "the shrine produces not blessing but iniquity and emptiness",
+          "what should be 'house of God' has become a place of sin",
+          "identity determined by practice"
+        ],
+        "posture": [
+          "prophetic renaming as sarcastic judgment",
+          "ironical, denunciatory stance",
+          "naming/pun as rhetorical weapon"
+        ],
+        "explanation": "By punning on 'Bethel' ('house of God') as 'Beth-aven' ('house of iniquity/vanity'), the prophet metonymically characterizes the whole cultic center by its corrupt worship.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Hosea 4:16",
+    "deliberation": "This verse contains two explicit similes: Israel compared to a stubborn cow in balking, and YHWH grazing them like a lamb in a broad field. Both employ animal husbandry imagery to depict Israel's obstinacy and the form of divine response.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֚י כְּפָרָ֣ה סֹרֵרָ֔ה סָרַ֖ר יִשְׂרָאֵ֑ל",
+        "english_text": "For like a stubborn cow, Israel is stubborn",
+        "target": [
+          "Israel's resistant, disobedient behavior toward YHWH",
+          "national stubbornness",
+          "covenant people's attitude"
+        ],
+        "vehicle": [
+          "a cow that refuses the yoke and resists guidance",
+          "stubborn draft animal",
+          "agricultural/livestock setting"
+        ],
+        "ground": [
+          "refusal to submit to control or direction",
+          "pulling away from the one who guides",
+          "unmanageable obstinacy"
+        ],
+        "posture": [
+          "YHWH (via the prophet) depicts Israel as unmanageable livestock",
+          "disapproving, corrective stance",
+          "shepherd/farmer metaphor for leadership"
+        ],
+        "explanation": "Israel's disobedience is likened to a cow that balks instead of accepting the yoke, emphasizing their resistance to divine guidance.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַתָּה֙ יִרְעֵ֣ם יְהֹוָ֔ה כְּכֶ֖בֶשׂ בַּמֶּרְחָֽב",
+        "english_text": "Now the LORD will graze them like a lamb in a broad pasture",
+        "target": [
+          "YHWH's treatment of Israel in judgment (perhaps exile/exposure)",
+          "future condition of the people",
+          "divine governance of Israel"
+        ],
+        "vehicle": [
+          "a lamb grazing in a wide/open field",
+          "small, vulnerable sheep led into open range",
+          "pastoral/shepherding scene"
+        ],
+        "ground": [
+          "being driven out into an exposed, uncontrolled environment",
+          "loss of protective boundaries",
+          "continued dependence despite stubbornness"
+        ],
+        "posture": [
+          "YHWH as shepherd-figure who responds to stubborn cattle as with small livestock",
+          "ambiguous mix of care and judgment",
+          "shepherd-judgment imagery"
+        ],
+        "explanation": "Israel will be 'grazed' like a lamb in open country, suggesting either ironic 'freedom' that is actually exposure and judgment, or a reduced, vulnerable state under God's control.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Hosea 4:17",
+    "deliberation": "I examined whether 'joined to idols' is simply literal association or figurative. The verb 'bound/joined' used of Ephraim to idols implies a metaphor of binding/attachment that portrays spiritual addiction or clinging.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חֲב֧וּר עֲצַבִּ֛ים אֶפְרָ֖יִם",
+        "english_text": "Ephraim is joined/bound to idols",
+        "target": [
+          "Ephraim's total commitment to idolatry",
+          "spiritual allegiance",
+          "tribal/national religious life"
+        ],
+        "vehicle": [
+          "someone tied or bound in close attachment to another object",
+          "binding or fastening connection",
+          "physical attachment"
+        ],
+        "ground": [
+          "inseparable association and strong attachment",
+          "inability or unwillingness to break away",
+          "habitual, entrenched connection"
+        ],
+        "posture": [
+          "resigned prophetic assessment ('leave him alone')",
+          "lamenting yet judgmental stance",
+          "diagnosis of hopeless entanglement"
+        ],
+        "explanation": "Ephraim is said to be 'bound' to idols, an idiomatic metaphor portraying a tight, addictive attachment to idolatry that is not easily broken.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Hosea 4:18",
+    "deliberation": "This compact verse has layered imagery: (1) 'they commit harlotry' continues Hosea's metaphor of sexual infidelity for idolatry, and (2) 'her shields' as those who 'love shame' uses 'shields' metonymically for rulers or leaders.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַזְנֵ֣ה הִזְנ֔וּ",
+        "english_text": "they commit whoredom continually",
+        "target": [
+          "the persistent idolatrous and covenant-breaking behavior of the people",
+          "spiritual unfaithfulness",
+          "relationship between Israel and YHWH"
+        ],
+        "vehicle": [
+          "habitual sexual whoredom",
+          "ongoing prostitution/adultery",
+          "marital/sexual misconduct"
+        ],
+        "ground": [
+          "repeated unfaithfulness, breaking exclusive commitment",
+          "seeking many 'lovers' instead of one rightful spouse",
+          "shameful, dishonorable conduct"
+        ],
+        "posture": [
+          "intensified indictment of their repeated betrayals",
+          "morally outraged stance",
+          "extension of marriage/prostitution metaphor"
+        ],
+        "explanation": "The root for 'whoredom' is used metaphorically for Israel’s persistent idolatry and covenant violations, presenting them as a partner who endlessly cheats.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אָהֲב֥וּ הֵב֛וּ קָל֖וֹן מָגִנֶּֽיהָ",
+        "english_text": "her shields love, love shame",
+        "target": [
+          "the political and military leaders of the nation",
+          "ruling class/officials",
+          "governing structures"
+        ],
+        "vehicle": [
+          "shields as defensive weapons",
+          "military equipment associated with warriors/princes",
+          "warfare apparatus"
+        ],
+        "ground": [
+          "leaders are protectors just as shields protect in battle",
+          "the representatives are identified with their instruments",
+          "their role is to defend but they embrace disgrace"
+        ],
+        "posture": [
+          "critique of leaders who, instead of defending honor, embrace shameful practices",
+          "sharp prophetic denunciation",
+          "political-ethical rhetoric"
+        ],
+        "explanation": "The term 'shields' stands metonymically for the nation's leaders or princes, who are paradoxically said to 'love shame', highlighting their corrupt values.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Hosea 4:19",
+    "deliberation": "I saw two separate figures: (1) the wind binding 'her' in its wings, which personifies the wind and metaphorically depicts exile/overthrow, and (2) shame from 'their sacrifices', where altars/sacrifices stand metonymically for the entire illegitimate cult they trusted in.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צָרַ֥ר ר֛וּחַ אוֹתָ֖הּ בִּכְנָפֶ֑יהָ",
+        "english_text": "The wind has bound her up in its wings",
+        "target": [
+          "the fate of Israel/Ephraim being swept away into judgment or exile",
+          "national removal/overthrow",
+          "historical destiny under divine judgment"
+        ],
+        "vehicle": [
+          "wind with wings that wraps up and carries something off",
+          "a winged entity enfolding a captive",
+          "storm-like force"
+        ],
+        "ground": [
+          "sudden, irresistible removal by an unseen force",
+          "being carried away and enclosed beyond one’s control",
+          "loss of stability and place"
+        ],
+        "posture": [
+          "portrayal of judgment as a natural yet divinely directed force",
+          "ominous, poetic stance",
+          "nature-judgment imagery"
+        ],
+        "explanation": "The wind is personified as having wings that wrap Israel up, a metaphor for being swept away irresistibly by the forces of judgment, likely exile.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְיֵבֹ֖שׁוּ מִזִּבְחוֹתָֽם",
+        "english_text": "and they shall be ashamed because of their sacrifices",
+        "target": [
+          "the people's reliance on the illegitimate sacrificial cult",
+          "their religious practices and worship system",
+          "cultic life"
+        ],
+        "vehicle": [
+          "their 'sacrifices' and altars",
+          "concrete ritual acts and objects",
+          "worship implements"
+        ],
+        "ground": [
+          "sacrifices represent the whole system they trusted in",
+          "when that system fails, their misplaced trust is exposed",
+          "shame arises from reliance on futile rites"
+        ],
+        "posture": [
+          "prophetic prediction of disillusionment with false worship",
+          "shaming, corrective stance",
+          "anti-idolatry polemic"
+        ],
+        "explanation": "Their 'sacrifices' stand metonymically for the entire cult and its supposed security; when judgment comes, this system proves futile, and they are ashamed of what they trusted in.",
+        "confidence": 0.87
+      }
+    ]
+  }
+]

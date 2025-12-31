@@ -1,0 +1,347 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 47:1",
+    "deliberation": "Checked for metaphors, similes, idioms, and personification. The verse mainly describes a visionary but spatially concrete scene. However, two anthropomorphic spatial terms are used for the temple: its 'face' (front) and its 'shoulder' (side). These are conventional metaphors mapping human body parts onto architectural features.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פְּנֵי הַבַּיִת",
+        "english_text": "the face of the temple / since the temple faced east",
+        "target": ["the front orientation of the temple building", "architectural feature", "physical space"],
+        "vehicle": ["a person's face/front", "body part", "human body"],
+        "ground": ["having a front side that determines orientation", "shared spatial/orientational property", "embodied spatial experience"],
+        "posture": ["neutral description of layout", "descriptive stance", "spatial/architectural domain"],
+        "explanation": "The temple’s front side is described as its 'face', an anthropomorphic metaphor mapping a human face (with its directional orientation) onto a building.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִכֶּתֶף הַבַּיִת הַיְמָנִית",
+        "english_text": "from under the right shoulder of the temple",
+        "target": ["the south/right side of the temple structure", "architectural side", "physical space"],
+        "vehicle": ["a person's shoulder", "body part", "human body"],
+        "ground": ["a lateral supporting side or edge", "shared sense of side-support/projection", "embodied bodily/spatial awareness"],
+        "posture": ["neutral spatial description", "descriptive stance", "architectural mapping to body schema"],
+        "explanation": "The side of the temple is called its 'shoulder', a conventional metaphor that conceptualizes parts of a building in terms of human anatomy.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 47:2",
+    "deliberation": "Again mostly literal topographical description of the visionary scene. As in v.1, the side of the structure is called its 'right shoulder', an anthropomorphic metaphor for the building’s side.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִן־הַכָּתֵף הַיְמָנִית",
+        "english_text": "from [under] the south/right wall (lit. from the right shoulder)",
+        "target": ["the right/southern side of the outer gate/complex", "architectural side", "physical space"],
+        "vehicle": ["a person's shoulder", "body part", "human body"],
+        "ground": ["lateral side associated with support and bearing weight", "shared side-oriented spatial feature", "body-based spatial schema"],
+        "posture": ["matter-of-fact spatial description", "descriptive stance", "architectural mapping to body schema"],
+        "explanation": "The passage uses 'shoulder' for the side of the structure, a conventional metaphor that treats building sides in terms of human shoulders.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 47:3",
+    "deliberation": "Considered whether measuring 'waters of ankles' is metaphorical. Here 'waters of ankles' simply describes depth (ankle-deep), a literal physical measure in the vision, not a metaphor for something else. No similes, idioms, or personification present.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 47:4",
+    "deliberation": "Descriptions of water reaching knees and loins are literal depth indicators (knee-deep, waist-deep) in the visionary scene. No lexical or syntactic markers of metaphor, simile, or idiom beyond straightforward spatial description.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 47:5",
+    "deliberation": "The verse states the water became a stream that could not be crossed except by swimming. This explains that it is no longer fordable, not an obvious hyperbole or metaphor. No similes, idioms, or personifications appear.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 47:6",
+    "deliberation": "Looked for idioms and personification. The only notable expression is the vocative 'son of man' (בֶּן־אָדָם) addressed to Ezekiel, a conventional idiom for 'human being/mortal' rather than a genealogical statement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal (lit. son of man)",
+        "target": ["Ezekiel as a human being", "individual person", "humanity"],
+        "vehicle": ["a 'son' of generic 'man/human'", "kinship expression", "family / human lineage"],
+        "ground": ["belonging to the class of humans, characterized by mortality and limitation", "part–whole / class-membership relation", "anthropological category of humans"],
+        "posture": ["emphasizing human limitation before God", "humbling, contrastive stance", "theological/human-divine relationship"],
+        "explanation": "The phrase literally means 'son of man' but idiomatically designates a human being. It functions metonymically/synecdochically (offspring of humankind for a human individual) and has become a fixed prophetic address.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 47:7",
+    "deliberation": "Describes seeing many trees on both banks of the stream. While the entire scene is symbolically rich, the wording here is a straightforward visual report with no explicit metaphors, similes, idioms, or personification.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 47:8",
+    "deliberation": "Examined the phrase about the sea of 'foul waters' and 'the waters being healed'. 'Foul waters' is descriptive. The verb רפא 'to heal' applied to waters is personification, presenting the sea’s water as a sick patient restored to health.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנִרְפְּאוּ הַמָּיִם",
+        "english_text": "the water will become wholesome (lit. the waters shall be healed)",
+        "target": ["the formerly salty/ruined sea water", "natural environment", "physical creation"],
+        "vehicle": ["a sick person being healed", "medical recovery", "human bodily health"],
+        "ground": ["transition from diseased/ruined state to restored, beneficial condition", "shared change from harm to health/wholeness", "restoration as a medical/healing process"],
+        "posture": ["hopeful portrayal of transformation", "promissory, salvific stance", "restoration/redemption domain"],
+        "explanation": "By using the verb 'to heal' of inanimate waters, the sea is personified as a sick entity recovering health, metaphorically describing its purification and renewal.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 47:9",
+    "deliberation": "Considered whether the universal language ('every living creature', 'everything will live wherever the stream goes') is hyperbole; in context it describes total transformation of this specific ecosystem. The clearly figurative element is again the verb 'be healed' for the waters, continuing the personification from v.8.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי בָאוּ שָׁמָּה הַמַּיִם הָאֵלֶּה וְיֵרָפְאוּ",
+        "english_text": "once these waters have reached there, they will be healed",
+        "target": ["the brackish waters of the sea/region affected", "natural water body", "physical environment"],
+        "vehicle": ["a patient being healed from illness", "medical recovery process", "human bodily health/medicine"],
+        "ground": ["movement from damaged/unhealthy to sound and life-supporting condition", "shared notion of curing what is harmful", "restoration and remediation"],
+        "posture": ["depicts divine restoration in therapeutic terms", "reassuring, restorative stance", "salvation as healing domain"],
+        "explanation": "The waters are again spoken of as 'being healed', personifying them as patients and metaphorically expressing their purification and capacity to sustain abundant life.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 47:10",
+    "deliberation": "Looked for similes and hyperbole. The verse includes an explicit comparison using כ ('like') between the fish of this sea and the fish of the Great Sea, which is a literal quantitative simile functioning as a rhetorical comparison.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּדְגַת הַיָּם הַגָּדוֹל רַבָּה מְאֹד",
+        "english_text": "like the fish of the Great Sea, very many",
+        "target": ["the quantity and variety of fish in the healed sea", "abundance of resources", "restored ecosystem"],
+        "vehicle": ["the fish population of the Great Sea (Mediterranean)", "well-known standard of abundance", "regional maritime environment"],
+        "ground": ["great numerical abundance and diversity of fish", "shared property of being teeming with marine life", "plentiful provision"],
+        "posture": ["emphasizing lavish sufficiency through comparison", "assuring/promissory stance", "blessing/abundance domain"],
+        "explanation": "By saying the fish will be 'like the fish of the Great Sea, very many', the text uses a simile to convey the extraordinary abundance of fish in the transformed waters.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 47:11",
+    "deliberation": "The focus is on swamps and marshes that 'will not be healed' and are 'given for salt'. The negative 'not be healed' again applies a medical verb to water bodies, personifying them by contrast with the healed waters of vv.8–9.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא יֵרָפְאוּ לְמֶלַח נִתָּנוּ",
+        "english_text": "they shall not become wholesome (lit. they shall not be healed); they are given for salt",
+        "target": ["the swamps and marshes remaining salty", "local sub-areas of the water system", "specific parts of the environment"],
+        "vehicle": ["patients who remain unhealed", "medical non-recovery", "human health/illness domain"],
+        "ground": ["remaining in an impaired state rather than being restored", "shared idea of persisting affliction or non-remediation", "ongoing defect in contrast to healing elsewhere"],
+        "posture": ["marks a deliberate limitation within the restoration", "nuanced/qualified stance toward the transformation", "judgment and utility (for salt) domain"],
+        "explanation": "Using 'heal' and 'not heal' of inanimate wetlands personifies them as patients that could be cured but in this case are intentionally left unhealed, highlighting a contrast within the restored landscape.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 47:12",
+    "deliberation": "Considered whether 'leaves for healing' is a metaphor for spiritual restoration; however, within the text it is a straightforward statement that these tree leaves serve a healing function, consistent with medicinal plants. The language lacks overt metaphorical or idiomatic markers beyond its miraculous content.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 47:13",
+    "deliberation": "Boundary and allocation language; no figurative body-part metaphors or idioms like in earlier verses. 'Joseph shall receive two portions' is a legal fact, not metaphorical. No simile, personification, or idiom detected.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 47:14",
+    "deliberation": "Looked carefully for legal idioms. Two figurative expressions appear: (1) 'I lifted my hand' as idiom for swearing an oath; (2) 'the land shall fall to you as an inheritance', where 'fall' is an idiom derived from casting lots, meaning 'be assigned/come to you'. Both are conventional legal metaphors/metonymies.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֲשֶׁר נָשָׂאתִי אֶת־יָדִי לְתִתָּהּ לַאֲבֹתֵיכֶם",
+        "english_text": "as I swore (lit. lifted my hand) to give it to your fathers",
+        "target": ["YHWH’s solemn oath to give the land", "divine promise", "legal-covenantal act"],
+        "vehicle": ["the physical act of lifting one’s hand", "gesture in oath-taking", "human bodily movement in legal ritual"],
+        "ground": ["raising the hand publicly signals commitment and binds one to a promise", "gesture representing formal pledge", "legal/ritual embodiment of a verbal oath"],
+        "posture": ["underscores the formality and reliability of God’s promise", "solemn, covenantal stance", "oath/judicial domain"],
+        "explanation": "The idiom 'to lift the hand' functions as a metonymy/synecdoche for taking an oath; the bodily gesture stands for the entire act of swearing, metaphorically expressing divine commitment.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנָפְלָה הָאָרֶץ הַזֹּאת לָכֶם בְּנַחֲלָה",
+        "english_text": "so shall this land fall to you as your heritage",
+        "target": ["Israel’s reception of the land as inheritance", "allocation of territory", "covenantal possession"],
+        "vehicle": ["something physically falling by lot or chance (lot-stones falling)", "casting of lots", "random physical movement determining outcome"],
+        "ground": ["outcome determined by an allotted portion that 'falls' to someone", "shared idea of receiving a determined share", "distribution/assignment imagery"],
+        "posture": ["presents the inheritance as a fixed, allotted destiny", "assured, juridical stance", "inheritance and lot-casting domain"],
+        "explanation": "The verb 'fall' for the land coming to them is an idiom rooted in lot-casting, a metaphorical way to speak of an assigned share as something that 'falls' to a person.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 47:15",
+    "deliberation": "Provides northern boundary description with concrete geographic markers. No figurative idioms (such as body-part metaphors) or similes are present here; the language is strictly cartographic.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 47:16",
+    "deliberation": "Continues listing place names and borders in a matter-of-fact way. No metaphor, simile, idiom, personification, or other obvious figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 47:17",
+    "deliberation": "More boundary tracing between known locations. The repeated 'this shall be the northern limit' is literal demarcation, not a figure. No figurative expressions identified.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 47:18",
+    "deliberation": "Describes the eastern boundary line with Jordan and the Eastern Sea. The wording is technical and spatial, without idioms or metaphors beyond straightforward measurement.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 47:19",
+    "deliberation": "Describes the southern boundary from Tamar to Meribath-kadesh to the Great Sea. Though 'Waters of Meribath-kadesh' alludes to an earlier narrative, the phrase is a proper toponym here, not used figuratively. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 47:20",
+    "deliberation": "Defines the western boundary by the Great Sea. This is cartographic prose with no metaphor, simile, idiom, or personification evident.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 47:21",
+    "deliberation": "States that the land is to be divided among the tribes. The verb 'divide' and the phrase 'for yourselves' function literally in a legal-administrative context. No figurative language used.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 47:22",
+    "deliberation": "Examined the legal inclusion of strangers. The key expression is 'they shall be to you as a native-born citizen', which explicitly uses כ ('as') to liken the status of resident aliens to that of native Israelites—a legal simile of equivalence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיוּ לָכֶם כְּאֶזְרָח בִּבְנֵי יִשְׂרָאֵל",
+        "english_text": "You shall treat them as Israelite citizens (lit. they shall be to you as a native among the sons of Israel)",
+        "target": ["the legal and social status of resident aliens", "social identity", "covenant community membership"],
+        "vehicle": ["an 'ezrach' (native-born Israelite citizen)", "fully enfranchised member", "indigenous community member"],
+        "ground": ["sharing equal rights and inheritance within Israel", "equivalence of legal standing and privilege", "full inclusion in the people’s structures"],
+        "posture": ["emphasizes generous inclusion and equality", "normative, egalitarian stance", "ethics-of-community domain"],
+        "explanation": "By saying the resident aliens shall be 'as a native-born', the text uses a simile to equate their status with that of Israelites, stressing full inclusion by comparison.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 47:23",
+    "deliberation": "Concludes the allocation rule: each tribe must give the resident alien an inheritance within it. The language is straightforward legal prescription without metaphor, simile, or idiomatic expressions beyond normal juridical phrasing.",
+    "instances": []
+  }
+]

@@ -1,0 +1,707 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 17:1",
+    "deliberation": "Checked the prophetic introduction formula. The phrase 'the word of YHWH came to me' conceptualizes divine speech as something that can 'come' spatially, which is conventional but still figurative (personification/metonymy/idiom). No other imagery present.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "The word of GOD came to me",
+        "target": ["prophetic revelation received by Ezekiel", "divine communication", "revelation/prophecy"],
+        "vehicle": ["a 'word' that travels and arrives", "moving/discrete object or messenger", "spatial movement"],
+        "ground": ["initiative and directedness of God’s communication toward the prophet", "dynamic arrival of a message", "communication dynamics"],
+        "posture": ["authorize Ezekiel’s message as divinely initiated", "authentication formula", "prophetic discourse"],
+        "explanation": "God’s message is portrayed as a 'word' that can come to someone, personifying the word and using a spatial arrival metaphor as an idiomatic way to describe revelation.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 17:2",
+    "deliberation": "Looked for imagery. The key phrase 'ben-’adam' is a fixed idiomatic address meaning 'human/mortal'; 'riddle' and 'parable' describe genre, not figurative content. So counted only the address as idiom/metonymy for human frailty.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal (lit. son of man)",
+        "target": ["Ezekiel as a human being", "human prophet", "humanity/mortality"],
+        "vehicle": ["'son of man'", "offspring of humankind", "kinship/lineage language"],
+        "ground": ["emphasis on Ezekiel’s human, mortal status before God", "derivation from humankind, not divine", "creator–creature distinction"],
+        "posture": ["humbling form of address highlighting God’s superiority", "status-marking vocative", "prophetic address convention"],
+        "explanation": "The phrase literally means 'son of man' but idiomatically means 'human/mortal', using lineage language metonymically to stress Ezekiel’s humanity.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 17:3",
+    "deliberation": "This inaugurates the allegory. The 'great eagle' is a metaphor for a powerful king (Nebuchadnezzar), and 'the top of the cedar' is the royal apex of Judah (its king/royal house). Lebanon/cedar imagery is part of that plant-kingdom metaphor. Treated eagle and cedar-top as two distinct metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַנֶּשֶׁר הַגָּדוֹל גְּדוֹל הַכְּנָפַיִם אֶרֶךְ הָאֵבֶר מָלֵא הַנּוֹצָה אֲשֶׁר־לוֹ הָרִקְמָה",
+        "english_text": "The great eagle with the great wings and the long pinions, with the full plumage and the brilliant colors",
+        "target": ["the king of Babylon (Nebuchadnezzar)", "imperial ruler", "political/military power"],
+        "vehicle": ["a large, magnificent eagle", "majestic bird of prey", "animal imagery"],
+        "ground": ["power, far reach, majesty, ability to swoop down on prey/lands", "dominating presence and mobility", "strength and dominion"],
+        "posture": ["present Nebuchadnezzar as a God-used agent of overwhelming power", "foreshadowing instrument of judgment", "prophetic interpretation of imperial politics"],
+        "explanation": "The richly described eagle represents the Babylonian king, emphasizing his power, reach, and splendor through avian imagery.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בָּא אֶל־הַלְּבָנוֹן וַיִּקַּח אֶת־צַמֶּרֶת הָאֶרֶז",
+        "english_text": "came to the Lebanon range and seized the top of the cedar",
+        "target": ["Jerusalem’s royal house and its king (esp. Jehoiachin)", "Davidic monarchy in Judah", "Israelite polity"],
+        "vehicle": ["Lebanon with its cedars, especially the top of a cedar tree", "lofty mountain tree-top", "forest/arboreal imagery"],
+        "ground": ["height, prominence, and nobility of the royal house; its vulnerable topmost leader", "elevated status and visibility", "social/political hierarchy"],
+        "posture": ["depict the removal of Judah’s king as a pruning of a lofty tree", "interpret exile as divinely directed cutting down", "judgment on elevated human power"],
+        "explanation": "Lebanon’s cedar-top stands for the Davidic king in Jerusalem; the eagle seizing it pictures Nebuchadnezzar deporting the king from his high position.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 17:4",
+    "deliberation": "Continuing the allegory: the 'topmost shoot' still represents the removed king, and its being carried to 'land of Canaan, city of merchants' figuratively designates Babylon by a trade-focused label. Treated these as two related but distinct figurative moves: plant-part for king, commercial-land for Babylon.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֵת רֹאשׁ יְנִיקוֹתָיו קָטָף",
+        "english_text": "He plucked off its topmost bough",
+        "target": ["the deported king of Judah (Jehoiachin)", "top political leader", "kingship"],
+        "vehicle": ["the top of the young shoots of a cedar", "most tender upper bough", "tree/plant structure"],
+        "ground": ["being the highest, youngest, and most prominent part, easily removed", "vulnerability of the leading figure", "hierarchical apex"],
+        "posture": ["present the exile of the king as precise selective pruning", "show sovereignty over the monarchy’s fate", "interpret political loss in horticultural terms"],
+        "explanation": "The 'topmost bough' image continues to depict the king as the uppermost, most prominent part of the royal tree, which the eagle can easily pluck away.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֶל־אֶרֶץ כְּנַעַן בְּעִיר רֹכְלִים שָׂמוֹ",
+        "english_text": "to the land of traders and set it in a city of merchants",
+        "target": ["Babylon as the place of exile", "imperial capital of Babylon", "foreign imperial power"],
+        "vehicle": ["a land of traders, a city of merchants", "commercial center", "economic activity"],
+        "ground": ["Babylon’s role as an international trading hub, cosmopolitan and profit-driven", "wealth, exchange, and foreign commerce", "economic dominance"],
+        "posture": ["frame Babylon as a marketplace-dominated center rather than as a covenantal land", "underscore Judah’s subjection to foreign economic-political power", "critical depiction of empire"],
+        "explanation": "Calling Babylon 'land of traders/city of merchants' uses its commercial character metonymically to identify it and to highlight its nature as an economic-imperial power.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 17:5",
+    "deliberation": "Still within the allegory: 'seed of the land' planted in a field represents a new, local king (Zedekiah) established by Babylon; then 'like a willow beside abundant waters' is a comparison of its placement. Treated planting as metaphor and the 'like a willow' as a simile.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיִּקַּח מִזֶּרַע הָאָרֶץ וַיִּתְּנֵהוּ בִּשְׂדֵה־זָרַע",
+        "english_text": "He then took some of the seed of the land and planted it in a fertile field",
+        "target": ["a native member of the royal line (Zedekiah) installed as vassal king", "local leadership of Judah", "political arrangement under empire"],
+        "vehicle": ["seed of the land planted in a field", "agricultural seedstock in cultivated soil", "agricultural process"],
+        "ground": ["taking local stock and establishing it in conditions meant to foster controlled growth", "derivation from the land and dependence on the planter", "cultivation and managed development"],
+        "posture": ["portray Zedekiah’s kingship as something carefully planted and controlled by the imperial power", "stress his derivative, dependent position", "interpret vassalage as cultivated planting"],
+        "explanation": "The 'seed of the land' planted in a field is the vassal king from Judah established by Babylon, likened to locally sourced seed that is put under a gardener’s control.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קָח עַל־מַיִם רַבִּים צַפְצָפָה שָׂמוֹ",
+        "english_text": "he planted and set it like a willow beside abundant waters",
+        "target": ["the newly established vassal kingdom of Judah", "small but potentially thriving polity", "political state under protection"],
+        "vehicle": ["a willow beside many waters", "water-loving tree in a favorable location", "plant ecology"],
+        "ground": ["having abundant resources and good conditions for growth and stability", "secure, well-watered placement", "nurture and potential flourishing"],
+        "posture": ["highlight that Judah had adequate conditions under Babylonian oversight to survive", "undercut any excuse for seeking other support", "evaluation of vassal situation as sufficient"],
+        "explanation": "Comparing the planting to a willow beside abundant waters emphasizes that the vassal kingdom was placed in favorable conditions to live and grow.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 17:6",
+    "deliberation": "The seed grows into a 'spreading vine of low stature' whose branches turn toward the planter and whose roots remain under him. This is the vine-as-kingdom metaphor elaborated to portray humble growth and dependence on Babylon. Treated as a single extended plant metaphor for the vassal state.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיִּצְמַח וַיְהִי לְגֶפֶן סֹרַחַת שִׁפְלַת קוֹמָה לִפְנוֹת דָּלִיּוֹתָיו אֵלָיו וְשָׁרָשָׁיו תַּחְתָּיו יִהְיוּ",
+        "english_text": "It grew and became a spreading vine of low stature, [with] its twigs turning to him, and its roots staying under him",
+        "target": ["Judah as a vassal kingdom under Babylon (especially under Zedekiah)", "subordinate political entity", "nation under suzerainty"],
+        "vehicle": ["a low, spreading vine whose branches lean toward and whose roots remain beneath the planter", "humble creeper dependent on its support", "cultivated plant"],
+        "ground": ["modest size (not a tall tree), dependence, orientation of growth toward the benefactor, rootedness under his control", "limited autonomy and directed loyalty", "subordination and reliance"],
+        "posture": ["portray the intended proper role of Judah as humbly dependent on Babylon", "illustrate the acceptable but limited arrangement God allowed", "explanatory allegory of vassal stability"],
+        "explanation": "Judah’s vassal state is depicted as a low, sprawling vine whose growth is directed toward its benefactor and whose roots remain under him, illustrating planned, humble dependence.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 17:7",
+    "deliberation": "The second 'great eagle' stands for another powerful king (Pharaoh of Egypt), and the vine’s bending its roots and twigs toward him for water portrays Judah’s political reorientation. Treated eagle and vine’s turning as two related but distinct metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִי נֶשֶׁר־אֶחָד גָּדוֹל גְּדוֹל כְּנָפַיִם וְרַב־נוֹצָה",
+        "english_text": "But there was another great eagle with great wings and full plumage",
+        "target": ["the king of Egypt (Pharaoh)", "rival imperial ruler", "foreign political power"],
+        "vehicle": ["another great eagle with large wings and many feathers", "impressive bird of prey", "animal imagery"],
+        "ground": ["significant power and reach, ability to project strength, attractiveness as an ally", "perceived majesty and capability", "political/military influence"],
+        "posture": ["present Egypt as a seemingly attractive alternative patron to Babylon", "set up contrast between competing great powers", "critical framing of Judah’s temptation"],
+        "explanation": "The second eagle represents Egypt’s king, another major power, depicted with similar majestic bird imagery to show his rival appeal.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִנֵּה הַגֶּפֶן הַזֹּאת כָּפְנָה שָׁרָשֶׁיהָ עָלָיו וְדָלִיּוֹתָיו שִׁלְחָה־לּוֹ לְהַשְׁקוֹת אוֹתָהּ",
+        "english_text": "and this vine now bent its roots in his direction and sent out its twigs toward him, that he might water it",
+        "target": ["Judah under Zedekiah seeking Egyptian support", "vassal state shifting allegiance", "political dependence/alliances"],
+        "vehicle": ["a vine bending its roots and stretching its tendrils toward another source of water", "plant reorienting toward a different water source", "plant behavior"],
+        "ground": ["turning away from original benefactor to seek sustenance from another, reorienting dependence", "realignment of loyalty and support", "seeking alternative nurture"],
+        "posture": ["depict Judah’s appeal to Egypt as a kind of disloyal turning of roots and branches", "morally critique the political maneuver", "warn against misplaced trust"],
+        "explanation": "The vine’s roots and twigs reaching toward the second eagle for water represent Judah’s political reorientation toward Egypt to seek help instead of remaining loyal to Babylon.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 17:8",
+    "deliberation": "Still elaborating the vine metaphor: rich soil and abundant water depict good conditions, and 'to be a noble vine' describes the intended flourishing state. Kept this as one continued metaphorical portrayal of Judah’s potential under the original arrangement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶל־שָׂדֶה טּוֹב אֶל־מַיִם רַבִּים הִיא שְׁתוּלָה לַעֲשׂוֹת עָנָף וְלָשֵׂאת פֶּרִי לִהְיוֹת לְגֶפֶן אַדָּרֶת",
+        "english_text": "though it was planted in rich soil beside abundant water—so that it might grow branches and produce boughs and be a noble vine",
+        "target": ["Judah’s vassal kingdom as God-allowed polity under Babylon", "small but viable political entity", "national life under conditional stability"],
+        "vehicle": ["a vine planted in good field by many waters that can become a noble vine", "well-situated cultivated plant", "horticultural prosperity"],
+        "ground": ["good external conditions for growth and fruitfulness, potential for honorable flourishing if conditions are respected", "stability, fertility, and honor", "well-being and success"],
+        "posture": ["stress that Judah’s initial situation under Babylon was adequate and honorable if they remained loyal", "prepare for the charge that their ruin is self-inflicted", "implicit admonition and explanation"],
+        "explanation": "The well-planted vine meant to become 'noble' portrays Judah as having been given favorable conditions to grow and bear fruit under the vassal arrangement.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 17:9",
+    "deliberation": "Still inside the plant allegory: uprooting roots, tearing off its crown, and foliage withering all symbolize the kingdom’s downfall. Rather than split each horticultural verb, treated this as one destruction-metaphor applied to the vine/kingdom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֲלוֹא אֶת־שָׁרָשֶׁיהָ יְנַתֵּק וְאֶת־פִּרְיָהּ יְקוֹסֵס וְיָבֵשׁ כׇּל־טַרְפֵּי צִמְחָהּ תִּיבָשׁ",
+        "english_text": "Will he not tear out its roots and rip off its crown, so that its entire foliage withers? It shall wither",
+        "target": ["the vassal kingdom of Judah with its leadership and population", "political structure and its fruit (benefits/offspring)", "national life under judgment"],
+        "vehicle": ["a vine whose roots are torn out, crown stripped, and foliage dried up", "plant violently uprooted and desiccated", "horticultural ruin"],
+        "ground": ["radical removal of stability (roots), removal of leadership/fruit, complete loss of vitality", "total collapse and desolation", "judgment and extinction"],
+        "posture": ["warn that rebellion will bring total dismantling of Judah’s polity despite human efforts", "undercut false hopes of survival", "prophetic threat of judgment"],
+        "explanation": "The imagery of tearing out roots, stripping the crown, and withering foliage depicts the complete overthrow and desiccation of Judah’s vassal kingdom and its benefits.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 17:10",
+    "deliberation": "Examined the 'east wind' and withering language. In prophetic usage, the 'east wind' is a stock image for scorching, destructive force, often linked to divine judgment. The withering of the plant under this wind continues the kingdom-as-vine metaphor, foregrounding the east wind as a figurative agent of ruin.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כְגַעַת בָּהּ רוּחַ הַקָּדִים תִּיבַשׁ יָבֹשׁ",
+        "english_text": "When the east wind strikes it, it shall wither—wither",
+        "target": ["the destructive intervention against Judah (esp. Babylon’s assault as God’s instrument)", "devastating historical judgment", "national calamity"],
+        "vehicle": ["the scorching east wind that causes a plant to wither", "desiccating desert wind", "natural destructive force"],
+        "ground": ["sudden, intense, and inescapable drying and killing effect", "overpowering external force that a plant cannot resist", "irresistible judgment"],
+        "posture": ["depict God’s chosen instrument of judgment as a harsh natural force that guarantees Judah’s ruin", "stress inevitability of withering despite good planting", "warning and explanation"],
+        "explanation": "The 'east wind' represents the harsh, divinely directed historical force (Babylonian invasion) that will cause the vassal kingdom, pictured as a plant, to wither and die.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 17:11",
+    "deliberation": "Same prophetic formula as verse 1. Again the 'word of YHWH came to me' phrase uses movement language for speech. Treated it as the same conventional personification/metonymy/idiom, with no other imagery in the verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "Then the word of GOD came to me",
+        "target": ["the prophetic revelation Ezekiel receives", "divine message", "revelation/prophecy"],
+        "vehicle": ["a 'word' that can come/arrive", "moving communicative entity", "spatial movement"],
+        "ground": ["God’s initiative and directedness in sending a message", "dynamic arrival and encounter", "communication event"],
+        "posture": ["reaffirm divine origin of the explanation that follows", "mark transition and authority", "prophetic discourse convention"],
+        "explanation": "The phrase again personifies God’s speech as a 'word' that travels and arrives, an idiomatic way to describe the experience of receiving revelation.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 17:12",
+    "deliberation": "Here the allegory is unpacked in largely literal historical terms. The main non-literal element is the label 'house of rebellion' or 'rebellious breed' for Israel, which is a figurative characterization of the people by a defining trait. Treated that as a metaphorical epithet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְבֵית הַמֶּרִי",
+        "english_text": "to the rebellious breed (lit. house of rebellion)",
+        "target": ["the people of Israel/Judah as a community", "covenant people", "religious-political community"],
+        "vehicle": ["a 'house' defined by rebellion", "lineage/household characterized by a single trait", "kinship/social unit"],
+        "ground": ["persistent, defining rebellion as if it were their family identity or household name", "chronic disobedience", "moral character"],
+        "posture": ["sharply denounce the audience’s character, framing rebellion as their core identity", "heighten culpability and shame", "prophetic rebuke"],
+        "explanation": "Calling Israel the 'house of rebellion' metaphorically treats rebelliousness as their family name and defining characteristic, in a somewhat hyperbolic moral indictment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 17:13",
+    "deliberation": "Narration of historical actions: taking from the 'seed of the kingship' (royal offspring) is expressed with 'seed' for descendants—a standard Hebrew metaphor/metonymy. The rest is covenantal/legal language used literally. So I marked only 'seed of the kingship' as figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִזֶּרַע הַמְּלוּכָה",
+        "english_text": "one of the seed royal",
+        "target": ["a member of the royal family", "royal descendant", "dynastic line"],
+        "vehicle": ["'seed' of the kingship", "agricultural seed as offspring", "reproductive imagery"],
+        "ground": ["origin in a line, continuity and propagation from a source", "descent and succession", "lineage and inheritance"],
+        "posture": ["stress dynastic continuity even in political humiliation", "frame the selected vassal as legitimate offspring of the monarchy", "historical explanation with genealogical nuance"],
+        "explanation": "The phrase uses 'seed' as a metonymic/idiomatic expression for descendants, portraying the royal line in terms of reproductive seed.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 17:14",
+    "deliberation": "Looked for conceptual metaphors. The 'low kingdom' and 'not exalt itself' use vertical height for status/pride, which is a standard metaphorical mapping. Treated the height language as one figurative complex for humility vs. self-exaltation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לִהְיוֹת מַמְלָכָה שְׁפָלָה לְבִלְתִּי הִתְנַשֵּׂא",
+        "english_text": "so that it might be a humble kingdom and not exalt itself",
+        "target": ["the status and behavior of the vassal kingdom of Judah", "political self-perception", "national pride/humility"],
+        "vehicle": ["being low vs. exalting oneself (height imagery)", "vertical spatial position", "spatial orientation"],
+        "ground": ["low height as humility/subordination; highness/exaltation as pride and overreaching power", "status hierarchy mapped onto vertical scale", "power and arrogance vs. modest submission"],
+        "posture": ["define God’s will that Judah remain in a low, submissive posture rather than seek greatness", "moralize political realism as humility", "didactic use of spatial metaphor"],
+        "explanation": "Describing the kingdom as 'low' and warning it not to 'exalt itself' uses vertical position as a metaphor for humble vs. proud political stance.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 17:15",
+    "deliberation": "This verse is straightforward historical and rhetorical: rebellion, sending envoys, horses, people, covenants, and escaping are all literal. The rhetorical questions heighten effect but are not figurative per se. I did not find distinct metaphors or idioms needing classification.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 17:16",
+    "deliberation": "Considered 'As I live' and oath language. Within Israelite theology, God as 'living' is literal, and the rest of the verse is descriptive (place of the king, Babylon, dying). The verse argues judicially rather than by image, so I did not count figurative devices here.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 17:17",
+    "deliberation": "Siege warfare is described with 'mounds' and 'siege-towers,' which are literal. No metaphorical or personifying language beyond ordinary military description. Thus no distinct figurative instance identified.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 17:18",
+    "deliberation": "The key expression 'he gave his hand' is a standard idiom for pledging or swearing allegiance. That and possibly 'flouted an oath' are non-literal uses of physical/body language for agreement. I treated 'gave his hand' as one idiomatic/metonymic expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִנֵּה נָתַן יָדוֹ",
+        "english_text": "he gave his promise (lit. he gave his hand)",
+        "target": ["the act of swearing loyalty or entering a binding agreement", "formal commitment", "legal/political obligation"],
+        "vehicle": ["giving one’s hand", "physical gesture of hand extension", "body-part action"],
+        "ground": ["the hand as the organ of grasping, sealing agreements, and performing gestures; the gesture stands for the pledge", "visible, tangible sign of commitment", "symbolic representation"],
+        "posture": ["underscore the seriousness of the commitment Zedekiah violated", "heighten his guilt for breaking a solemnly signaled oath", "legal-moral indictment"],
+        "explanation": "The phrase 'gave his hand' is an idiom where the physical gesture of extending the hand stands metonymically for entering into a binding promise.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 17:19",
+    "deliberation": "Focused on 'I will give it upon his head' as a figurative way of saying 'I will make it fall back on him' (punitive reversal). Considered the oath 'As I live' but again treated that as standard formula. Marked the 'on his head' expression as a retributive metaphor/idiom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אָֽלָתִי אֲשֶׁר בָּזָה וּבְרִיתִי אֲשֶׁר הֵפִיר וּנְתַתִּיו בְּרֹאשׁוֹ",
+        "english_text": "My oath which he flouted and My covenant which he broke—I will pay him back (lit. I will give it upon his head)",
+        "target": ["the personal experience of punishment by the covenant-breaker", "retributive outcome", "judicial consequence"],
+        "vehicle": ["placing something on a person’s head", "burden or blow descending upon the head", "body-part imagery"],
+        "ground": ["the head as the top/most exposed part; something coming 'on the head' as bearing the brunt of consequences", "consequences returning directly onto the offender", "retribution coming home"],
+        "posture": ["assert that the broken oath and covenant will recoil back on the violator himself", "underline strict, personal retribution by God", "judgment declaration"],
+        "explanation": "The phrase 'I will give it upon his head' metaphorically portrays God’s retribution as something placed on the offender’s head, indicating consequences falling back on him.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 17:20",
+    "deliberation": "Here God’s capture of the king is portrayed through hunting/fishing imagery: spreading a net and catching him in a snare. This is a clear metaphor for God’s providential seizure using historical means. Treated the net/snare complex as one extended metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּפָרַשְׂתִּי עָלָיו רִשְׁתִּי וְנִתְפַּשׂ בִּמְצוּדָתִי",
+        "english_text": "I will spread My net over him and he shall be caught in My snare",
+        "target": ["the king who broke the covenant being inexorably captured and judged", "inescapable downfall of the ruler", "divine judgment through history"],
+        "vehicle": ["a net and snare used to trap prey", "hunting/fishing equipment for capture", "capture imagery"],
+        "ground": ["inescapable entanglement, loss of freedom, being overtaken by a hidden but effective device", "sudden and total capture beyond the prey’s control", "sovereign control and inevitability"],
+        "posture": ["present God as the true hunter/ensnarer behind political events", "emphasize the inescapability of judgment", "reassure that covenant-breaking will be pursued"],
+        "explanation": "God’s action in arresting the covenant-breaking king is depicted as spreading a net and catching him in a snare, a vivid metaphor of inescapable capture.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 17:21",
+    "deliberation": "Saw three figurative elements: (1) 'all his fugitives in all his wings' with 'wings' for divisions or extensions of his forces; (2) 'fall by the sword' using 'sword' as metonymy for violent death/war; (3) 'scatter to every wind' as a dispersal image functioning like a merism for all directions. Treated these as three distinct instances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֵת כׇּל־מִבְרָחָו בְּכׇל־אֲגַפָּיו",
+        "english_text": "And all the fugitives of all his battalions (lit. in all his wings)",
+        "target": ["the king’s various military units and outlying contingents", "extensions of his power base", "armed forces and satellites"],
+        "vehicle": ["wings", "appendages or outstretched limbs of a bird/body", "anatomical imagery"],
+        "ground": ["peripheral extensions branching out from a central body, capable of flight/escape", "spread-out sections under one head", "organizational extension"],
+        "posture": ["indicate that not only the king but all his far-flung forces will be brought down", "stress the totality of collapse", "judgment on the entire military apparatus"],
+        "explanation": "Referring to his 'wings' depicts his forces or outlying groups as extensions like a bird’s wings, metonymic for all parts of his power structure.",
+        "confidence": 0.84
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בַּחֶרֶב יִפֹּלוּ",
+        "english_text": "shall fall by the sword",
+        "target": ["the violent deaths of his fugitives in war", "killing in battle", "military defeat"],
+        "vehicle": ["the sword", "weapon of war", "instrument of killing"],
+        "ground": ["the sword as the standard weapon typifying warfare and execution", "means standing for act/result", "lethal force of battle"],
+        "posture": ["announce that escapees will die in battle, not survive", "underscore unavoidable violent end", "judgment oracle"],
+        "explanation": "The 'sword' stands metonymically for warfare and violent death; to 'fall by the sword' is an idiomatic way of saying they will be killed in war.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהַנִּשְׁאָרִים לְכׇל־רוּחַ יִפָּרֵשׂוּ",
+        "english_text": "and those who remain shall scatter in every direction (lit. to every wind they shall be scattered)",
+        "target": ["the surviving remnant of the king’s people", "dispersed population", "exiles/refugees"],
+        "vehicle": ["being scattered to every wind", "debris blown by winds in all directions", "meteorological dispersion"],
+        "ground": ["forcible, chaotic dispersal with no control and no single direction", "total displacement and loss of cohesion", "exile and diaspora"],
+        "posture": ["warn that any survivors will be utterly scattered among the nations", "stress completeness of dispersion", "judgment and loss of national coherence"],
+        "explanation": "Being scattered 'to every wind' metaphorically portrays the survivors as blown in all directions, a vivid image of complete and uncontrollable dispersal.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 17:22",
+    "deliberation": "God resumes the arboreal imagery but now as positive promise: taking from the 'top of the high cedar', plucking a tender twig, planting it on a high mountain. Within the chapter’s mapping, the cedar is the Davidic dynasty and the tender twig a future ruler; the mountain stands for an exalted Zion. I distinguished three related metaphors: cedar-top, tender twig, and high mountain.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלָקַחְתִּי אָנִי מִצַּמֶּרֶת הָאֶרֶז הָרָמָה וְנָתָתִּי",
+        "english_text": "Then I in turn will take and set [in the ground a slip] from the lofty top of the cedar",
+        "target": ["the Davidic royal house from which God will select", "dynastic line of promise", "messianic/dynastic source"],
+        "vehicle": ["the lofty top of a high cedar", "uppermost part of a tall tree", "arboreal height"],
+        "ground": ["elevated, distinguished origin; the top as the select portion from a noble tree", "preeminence and nobility", "status and election"],
+        "posture": ["affirm God’s ongoing claim on and use of the Davidic line despite present judgment", "introduce a new, hopeful divine initiative", "restoration promise"],
+        "explanation": "The 'lofty top of the cedar' stands for the Davidic dynasty in its elevated status, from which God will take a portion for His purpose.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מֵרֹאשׁ יֹנְקוֹתָיו רַךְ אֶקְטֹף",
+        "english_text": "I will pluck a tender twig from the tip of its crown",
+        "target": ["a future chosen ruler from the Davidic house", "individual messianic figure or renewed leadership", "royal person"],
+        "vehicle": ["a tender young shoot from the top of the tree", "fragile, fresh twig", "new plant growth"],
+        "ground": ["youth, newness, vulnerability yet potential for growth, close connection to noble source", "fresh beginning from the same stock", "hopeful continuity"],
+        "posture": ["depict the awaited ruler as a new, delicate yet promising offshoot", "encourage hope in gentle but divinely planted leadership", "restorative vision"],
+        "explanation": "The 'tender twig' is a young offshoot from the cedar’s crown symbolizing a future Davidic ruler—new, vulnerable, but full of potential.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשָׁתַלְתִּי אָנִי עַל הַר־גָּבֹהַּ וְתָלוּל",
+        "english_text": "and I will plant it on a tall, towering mountain",
+        "target": ["the exalted position of the renewed kingdom centered in Zion/Israel", "restored national-religious center", "divinely elevated community"],
+        "vehicle": ["a tall, towering mountain where a tree is planted", "elevated landscape feature", "geographical height"],
+        "ground": ["visibility, prominence, stability, and exaltation associated with a high mountain", "publicly elevated status and security", "glory and centrality"],
+        "posture": ["promise that the new Davidic plant will be set in an exalted, prominent place by God Himself", "reverse earlier lowering of Judah", "hopeful elevation"],
+        "explanation": "Planting the tender twig on a 'tall, towering mountain' metaphorically portrays God exalting the restored kingdom and its ruler to a prominent, secure position.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 17:23",
+    "deliberation": "The planted twig becomes a 'noble cedar', and 'every bird of every feather' shelters in its shade—standard prophetic imagery for an exalted kingdom providing refuge for many nations. I treated (1) the noble cedar as the restored kingdom and (2) the birds under its shade as dependent peoples/nations.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָשָׂא עָנָף וְעָשָׂה פֶרִי וְהָיָה לְאֶרֶז אַדִּיר",
+        "english_text": "and it shall bring forth boughs and produce branches and grow into a noble cedar",
+        "target": ["the future restored kingdom centered on God’s chosen ruler", "idealized Israelite polity", "God’s dominion through His king"],
+        "vehicle": ["a great cedar tree with many branches and fruit", "large, noble tree", "arboreal majesty"],
+        "ground": ["strength, stability, height, and expansive reach; capacity to support others and be fruitful", "majestic, sheltering growth", "royal grandeur and security"],
+        "posture": ["present the restored Davidic realm as strong and life-giving, not low and withering", "offer a positive counter-image to earlier withering vine", "hope and reassurance"],
+        "explanation": "The twig becoming a 'noble cedar' depicts the restored kingdom as a majestic, fruitful tree with expansive reach and stability.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְשָׁכְנוּ תַחְתָּיו כׇּל־צִפּוֹר כׇּל־כָּנָף בְּצֵל דָּלִיּוֹתָיו תִּשְׁכֹּנָּה",
+        "english_text": "Every bird of every feather shall take shelter under it, shelter in the shade of its boughs",
+        "target": ["the various nations/peoples benefiting from and subject to the restored kingdom", "those who find refuge under God’s rule", "international community"],
+        "vehicle": ["all kinds of birds dwelling under a tree’s branches and in their shade", "diverse avian life taking refuge", "animal shelter imagery"],
+        "ground": ["protection, shade, and habitat provided by a large tree to many different creatures", "inclusive refuge and beneficent oversight", "security and blessing"],
+        "posture": ["portray the restored kingdom as a source of shelter and stability for many peoples", "anticipate a broad, inclusive impact", "expansive eschatological hope"],
+        "explanation": "The many birds dwelling under the cedar’s shade represent diverse peoples or nations finding refuge and shelter under the rule of the exalted kingdom.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 17:24",
+    "deliberation": "The verse generalizes the arboreal imagery: 'all the trees of the field' are other powers, and God’s actions—abasing the high tree, exalting the low tree, drying the green, making the dry flourish—use tree health/height as metaphors for status and prosperity. Treated this as one overarching metaphor of trees as human powers and God’s reversal of fortunes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְיָדְעוּ כׇּל־עֲצֵי הַשָּׂדֶה כִּי אֲנִי יְהוָה הִשְׁפַּלְתִּי עֵץ גָּבֹהַּ הִגְבַּהְתִּי עֵץ שָׁפָל הוֹבַשְׁתִּי עֵץ לָח וְהִפְרַחְתִּי עֵץ יָבֵשׁ",
+        "english_text": "Then shall all the trees of the field know that it is I, GOD, who have abased the lofty tree and exalted the lowly tree, who have dried up the green tree and made the withered tree bud",
+        "target": ["human kingdoms, powers, and individuals whose status God reverses", "political and social entities", "the realm of human status and prosperity"],
+        "vehicle": ["trees of the field—high vs. low, green vs. dry", "arboreal height and vitality contrasts", "plant status imagery"],
+        "ground": ["tree height for status; greenness for prosperity; dryness for barrenness; God’s power to reverse each condition", "reversibility of fortunes under divine sovereignty", "humbling and exalting, killing and reviving"],
+        "posture": ["assert God’s universal sovereignty over raising and lowering powers", "interpret coming historical reversals as acts of YHWH", "theological explanation and admonition"],
+        "explanation": "Trees—especially high/low and green/dry—stand for human powers and fortunes; God’s action in lowering, raising, drying, and making flourish depicts His sovereign reversal of human status.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]

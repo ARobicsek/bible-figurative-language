@@ -1,0 +1,674 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 6:1",
+    "deliberation": "Considered whether the formula וַיְהִי דְבַר־יְהוָה אֵלַי לֵאמֹר is purely formulaic or still counts as figurative. It treats the divine 'word' as an entity that can come to the prophet (personification) and uses 'word' as a metonym for revelation. Marked one combined instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהֹוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "prophetic revelation given to Ezekiel",
+          "divine communication",
+          "theological domain"
+        ],
+        "vehicle": [
+          "a 'word' that moves and arrives like a person or messenger",
+          "speaking object/agent",
+          "concrete/relational domain"
+        ],
+        "ground": [
+          "both involve something originating with God and arriving at the prophet",
+          "transmission and arrival of a message",
+          "shared communicative process"
+        ],
+        "posture": [
+          "formulaic description of revelation without explicit emotional coloring",
+          "neutral/conventional",
+          "prophetic-discourse convention"
+        ],
+        "explanation": "The abstract message from God is called 'the word of YHWH' (metonymy for revelation) and is said to 'come' to the prophet as if it were a moving agent (personification).",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 6:2",
+    "deliberation": "Looked for idioms and anthropomorphic or personifying language. 'Set your face toward' is a fixed idiom/metaphor for deliberate orientation/hostility. Also, Ezekiel is to prophesy 'to them'—to the mountains—treating inanimate geography as an audience (personification).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בֶּן־אָדָ֕ם שִׂ֥ים פָּנֶ֖יךָ אֶל־הָרֵ֣י יִשְׂרָאֵ֑ל",
+        "english_text": "O mortal, turn/set your face toward the mountains of Israel",
+        "target": [
+          "Ezekiel’s deliberate focus and hostile stance toward Israel’s situation",
+          "prophetic resolve/attention",
+          "psychological-volitional domain"
+        ],
+        "vehicle": [
+          "the physical act of setting one’s face toward a location",
+          "body orientation",
+          "spatial/bodily domain"
+        ],
+        "ground": [
+          "both involve directing oneself purposefully toward a target",
+          "focused, determined orientation (often hostile)",
+          "shared intentional alignment"
+        ],
+        "posture": [
+          "commanding Ezekiel to adopt a confrontational stance",
+          "negative/judgmental orientation",
+          "prophetic address to condemned audience"
+        ],
+        "explanation": "The idiom 'set your face toward' uses bodily orientation as a metaphor for determined, often hostile, attention; it is more than literal turning of the head.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהִנָּבֵ֖א אֲלֵיהֶֽם",
+        "english_text": "and prophesy to them",
+        "target": [
+          "the land and the cultic centers located in the mountains of Israel",
+          "geographical/cultic reality",
+          "historical-religious domain"
+        ],
+        "vehicle": [
+          "speaking prophecy directly to mountains as if they were persons",
+          "addressed audience",
+          "personal/relational domain"
+        ],
+        "ground": [
+          "both land and people associated with it are treated as recipients of divine address",
+          "capacity to be addressed and to stand under judgment",
+          "shared role as target of speech/judgment"
+        ],
+        "posture": [
+          "heightens the seriousness of the coming judgment by making the land itself a hearer",
+          "solemn, accusatory",
+          "prophetic rhetoric"
+        ],
+        "explanation": "The mountains—part of the inanimate landscape—are treated as recipients of prophetic speech, personifying the land that bears Israel’s idolatry.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 6:3",
+    "deliberation": "Examined vocative address to mountains, the list of topographical features, and the image of a 'sword' coming. Found personification (mountains hearing), a meristic list of terrain features representing the whole land, and 'sword' as metonymy for invading warfare.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָרֵי֙ יִשְׂרָאֵ֔ל שִׁמְע֖וּ דְּבַר־אֲדֹנָ֣י יֱהֹוִ֑ה",
+        "english_text": "O mountains of Israel, hear the word of the Sovereign GOD",
+        "target": [
+          "the entire land of Israel with its inhabitants and cult sites",
+          "land/people under judgment",
+          "historical-theological domain"
+        ],
+        "vehicle": [
+          "mountains addressed as if they can hear and respond",
+          "personified landscape",
+          "natural/physical domain"
+        ],
+        "ground": [
+          "both are treated as subjects standing before God’s word of judgment",
+          "capacity to be addressed as responsible parties",
+          "shared role as bearers of Israel’s history and sin"
+        ],
+        "posture": [
+          "emphasizes inevitability and seriousness of judgment by dramatizing the scene",
+          "solemn and accusatory",
+          "prophetic rhetoric"
+        ],
+        "explanation": "The inanimate 'mountains of Israel' are commanded to 'hear' God’s word, personifying the land as if it were a conscious audience to the oracle.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לֶהָרִ֨ים וְלַגְּבָע֜וֹת לָאֲפִיקִ֣ים וְלַגֵּיאָי֗וֹת",
+        "english_text": "to the mountains and the hills, to the streams and the valleys",
+        "target": [
+          "the entirety of Israel’s land and cultic landscape",
+          "the whole territorial setting of idolatry",
+          "geographical-religious domain"
+        ],
+        "vehicle": [
+          "a list of prominent landscape features: mountains, hills, ravines, valleys",
+          "enumeration of parts",
+          "spatial/physical domain"
+        ],
+        "ground": [
+          "by naming contrasting/topographically varied elements, it suggests comprehensiveness",
+          "use of diverse parts to evoke the whole land (merism/synecdoche)",
+          "shared sense of total coverage"
+        ],
+        "posture": [
+          "underscores that no part of the land is exempt from judgment",
+          "intensely comprehensive/totalizing",
+          "prophetic condemnation"
+        ],
+        "explanation": "The paired and varied terrain terms function as a meristic list: by naming different kinds of landforms, the verse evokes the totality of the land implicated in idolatry.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנְנִ֨י אֲנִ֜י מֵבִ֤יא עֲלֵיכֶם֙ חֶ֔רֶב",
+        "english_text": "See, I will bring a sword against you",
+        "target": [
+          "the coming military invasion and violent destruction",
+          "divine judgment via war",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "a literal sword as an instrument of killing",
+          "weapon of warfare",
+          "concrete martial domain"
+        ],
+        "ground": [
+          "both the actual invasion and a physical sword result in bloodshed and death",
+          "shared function as instruments of violent death",
+          "instrumentality and lethal effect"
+        ],
+        "posture": [
+          "threatens severe judgment in vivid martial terms",
+          "ominous and punitive",
+          "prophetic warning"
+        ],
+        "explanation": "The 'sword' stands metonymically for the invading army and the whole experience of war, using the key weapon to evoke the entire judgment event.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 6:4",
+    "deliberation": "Description of altars being ruined and corpses thrown before idols is graphic but straightforward. The actions (wrecked, smashed, hurled down) and objects (altars, incense stands, idols) function literally within the judgment scene; no clear metaphor, simile, or personification distinct from the literal narrative.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 6:5",
+    "deliberation": "Again depicts corpses and bones placed before idols and around altars. These are literal cultic objects and literal bodies; the shocking juxtaposition is symbolic theologically, but the language itself is not figurative in the narrow sense (no metaphor/simile/personification beyond literal description).",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 6:6",
+    "deliberation": "Looked at terms for cities, high places, altars, idols, and 'your works.' Found personification where altars are said to become desolate/guilty, and metonymy where 'your works' refers to the idols they made, not their deeds in general.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְמַ֩עַן֩ יֶחֶרְב֨וּ וְיֶאְשְׁמ֜וּ מִזְבְּחֽוֹתֵיכֶ֗ם",
+        "english_text": "Thus your altars shall be laid waste and bear their punishment / be made desolate and guilty",
+        "target": [
+          "the cultic system centered on the altars and its culpability",
+          "idolatrous worship infrastructure",
+          "religious-moral domain"
+        ],
+        "vehicle": [
+          "altars described as ruined and 'guilty' as if moral agents under punishment",
+          "personified ritual objects",
+          "legal/moral-agent domain"
+        ],
+        "ground": [
+          "both the altars and the worshipers associated with them are implicated in guilt and judgment",
+          "association of structural objects with the moral status of their use",
+          "shared bearing of consequences"
+        ],
+        "posture": [
+          "heightens condemnation by extending guilt language from people to objects",
+          "strongly negative/judicial",
+          "prophetic indictment"
+        ],
+        "explanation": "The altars are portrayed as becoming 'desolate' and 'guilty,' personifying the cultic objects and metaphorically loading them with the moral guilt of the idolatry they facilitated.",
+        "confidence": 0.87
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנִמְח֖וּ מַעֲשֵׂיכֶֽם",
+        "english_text": "and your handiwork / your works shall be wiped out",
+        "target": [
+          "the idols and cult-objects Israel produced",
+          "manufactured objects of worship",
+          "religious-material domain"
+        ],
+        "vehicle": [
+          "‘your works/handiwork’ as a label for the physical products of their labor",
+          "products standing for the thing produced (idols)",
+          "economic/artisanal domain"
+        ],
+        "ground": [
+          "their key 'works' in context are the idols themselves, so destroying these works equals removing idolatry",
+          "using the product of labor to stand for the cultic object",
+          "association of maker and made object"
+        ],
+        "posture": [
+          "emphasizes that everything they have fashioned for idolatry will be erased",
+          "destructive and purgative",
+          "judgmental rhetoric"
+        ],
+        "explanation": "In context 'your works' functions metonymically for the idols they have made; wiping out their 'works' means eradicating their handmade gods.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 6:7",
+    "deliberation": "Describes the literal fall of the slain 'in your midst' and the recognition formula 'you shall know that I am YHWH.' Both are standard prophetic motifs rather than metaphorical expressions; no clear figurative vehicle distinct from the literal meaning.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 6:8",
+    "deliberation": "Considered 'remnant', 'escape the sword', and 'be scattered among the lands.' 'Sword' functions metonymically for warfare; 'scattering' is a conventional metaphor for dispersion/exile. Treated these as two distinct figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "פְּלִיטֵי חֶ֖רֶב",
+        "english_text": "escape the sword / survivors of the sword",
+        "target": [
+          "people who survive the coming military onslaught",
+          "human survivors of war",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "the sword as the emblematic weapon of killing",
+          "instrument of lethal violence",
+          "martial/physical domain"
+        ],
+        "ground": [
+          "both the invasion and a literal sword bring deadly violence",
+          "shared function as cause of violent death",
+          "instrumentality and lethal outcome"
+        ],
+        "posture": [
+          "underscores the deadly nature of the judgment they barely survive",
+          "threatening but with a hint of spared remnant",
+          "judgment-with-mercy rhetoric"
+        ],
+        "explanation": "The 'sword' stands for the whole military catastrophe; to escape 'the sword' is to survive the war, using the key weapon as a metonym for the entire event.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּהִזָּרוֹתֵיכֶ֖ם בָּאֲרָצֽוֹת",
+        "english_text": "when you are scattered through the lands",
+        "target": [
+          "forced dispersion of the people among foreign nations",
+          "experience of exile",
+          "socio-political domain"
+        ],
+        "vehicle": [
+          "scattering, as of seed or chaff",
+          "spreading of small items over a wide area",
+          "agricultural/physical domain"
+        ],
+        "ground": [
+          "both involve being spread widely, losing former concentration and cohesion",
+          "dispersal, loss of gathered unity",
+          "shared spatial diffusion"
+        ],
+        "posture": [
+          "presents exile as a humiliating, disintegrating process",
+          "negative and lamentable",
+          "judgment portrayal"
+        ],
+        "explanation": "The Niphal of זרה depicts exile as being 'scattered' like seed or chaff, a metaphor emphasizing dispersion and loss of corporate unity.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 6:9",
+    "deliberation": "Examined 'I broke their whoring heart' and 'their eyes that whore after their idols.' These continue Ezekiel’s adultery/prostitution metaphor for idolatry, with 'heart' and 'eyes' personified as prostitutes and also functioning as synecdoche for the inner person and desires.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֲשֶׁ֨ר נִשְׁבַּ֜רְתִּי אֶת־לִבָּ֣ם הַזּוֹנֶ֗ה אֲשֶׁר־סָר֙ מֵֽעָלַ֔י",
+        "english_text": "how I broke their faithless / whoring heart that turned away from Me",
+        "target": [
+          "Israel’s inner disposition of covenant unfaithfulness",
+          "idolatrous loyalty and desire",
+          "spiritual-moral domain"
+        ],
+        "vehicle": [
+          "a heart portrayed as a prostitute and broken by God",
+          "unfaithful lover whose body is shattered",
+          "sexual-relational domain"
+        ],
+        "ground": [
+          "both an adulterous partner and idolatrous Israel betray an exclusive bond and suffer painful consequences",
+          "unfaithfulness leading to painful judgment",
+          "shared violation of covenant/relationship"
+        ],
+        "posture": [
+          "expresses God’s hurt and severe corrective action in relational terms",
+          "deeply negative yet emotionally charged",
+          "covenant lawsuit imagery"
+        ],
+        "explanation": "Israel’s inner self ('heart') is personified and metaphorically described as a prostitute who has turned away; God 'breaking' this heart portrays severe judgment on their unfaithful love.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְאֵת֙ עֵֽינֵיהֶ֔ם הַזֹּנ֕וֹת אַחֲרֵ֖י גִּלּוּלֵיהֶ֑ם",
+        "english_text": "and their eyes that lust / whore after their fetishes",
+        "target": [
+          "Israel’s covetous gaze and desire for idols",
+          "idolatrous longing",
+          "psychological-moral domain"
+        ],
+        "vehicle": [
+          "eyes depicted as prostitutes chasing after lovers",
+          "body parts as sexually unfaithful agents",
+          "sexual-relational domain"
+        ],
+        "ground": [
+          "both roaming, lustful eyes and a prostitute pursue forbidden partners",
+          "restless pursuit of illicit desire",
+          "shared unrestrained seeking of what is forbidden"
+        ],
+        "posture": [
+          "intensifies the accusation of unfaithfulness by focusing on their desirous gaze",
+          "strong condemnation, shaming",
+          "prophetic polemic against idolatry"
+        ],
+        "explanation": "Their 'eyes' are personified and metaphorically called 'whoring' after idols, extending the adultery metaphor to the realm of visual desire and coveting.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 6:10",
+    "deliberation": "Language about knowing that YHWH is God and that He did not speak 'for nothing' uses standard covenant/judgment idiom. 'This evil' refers concretely to calamity; no distinct metaphor, simile, or personification beyond normal semantic range.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 6:11",
+    "deliberation": "Evaluated the gestural commands (clap, stamp) as symbolic acts but linguistically literal. The phrase 'House of Israel' is a standard metonymy: a 'house' standing for the whole kinship group/nation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בֵּ֣ית יִשְׂרָאֵ֑ל",
+        "english_text": "the House of Israel",
+        "target": [
+          "the people of Israel as a national community",
+          "corporate body of Israel",
+          "social-historical domain"
+        ],
+        "vehicle": [
+          "a 'house' as a household or extended family unit",
+          "dwelling/household entity",
+          "domestic/kinship domain"
+        ],
+        "ground": [
+          "both a physical house and a kin-group are unified structures comprising many members",
+          "cohesive unit containing related members",
+          "shared notion of a bounded collective"
+        ],
+        "posture": [
+          "frames Israel as a single corporate entity responsible for abominations",
+          "judicial and collective",
+          "covenant lawsuit rhetoric"
+        ],
+        "explanation": "The expression 'House of Israel' uses 'house' metonymically (and as a kind of synecdoche) to denote the entire people as one corporate family-nation.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 6:12",
+    "deliberation": "Considered distance terms and the triad of sword, famine, pestilence; these are literal modes of judgment. The closing phrase 'I will spend/finish my fury upon them' is metaphorical, picturing wrath as something that can be exhausted or poured out.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְכִלֵּיתִ֥י חֲמָתִ֖י בָּֽם",
+        "english_text": "Thus I will spend / exhaust My fury upon them",
+        "target": [
+          "the completion of God’s punitive action against Israel",
+          "the outworking of divine judgment",
+          "theological-judicial domain"
+        ],
+        "vehicle": [
+          "fury treated as a substance or resource that can be used up",
+          "finite store to be exhausted or fire to be fully burned out",
+          "emotional/physical-energy domain"
+        ],
+        "ground": [
+          "both an exhaustible resource and the process of judgment can reach a point of completion",
+          "notion of something intense that is eventually fully discharged",
+          "shared idea of total expenditure"
+        ],
+        "posture": [
+          "emphasizes the total, not partial, implementation of judgment",
+          "severe and final",
+          "prophetic warning of complete wrath"
+        ],
+        "explanation": "God’s wrath is depicted metaphorically as something that can be 'spent' or 'used up,' suggesting an intense, finite outpouring that will run its full course.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 6:13",
+    "deliberation": "Looked at the catalogue of locations: every high hill, all mountaintops, under every green tree, every leafy oak. This is a stereotyped formula for pagan shrines; it functions hyperbolically and meristically to express the pervasiveness of idolatry across the land.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֶל֩ כׇּל־גִּבְעָ֨ה רָמָ֜ה בְּכֹ֣ל רָאשֵׁ֣י הֶהָרִ֗ים וְתַ֨חַת כׇּל־עֵ֤ץ רַֽעֲנָן֙ וְתַ֙חַת֙ כׇּל־אֵלָ֣ה עֲבֻתָּ֔ה",
+        "english_text": "on every high hill, on all the mountaintops, under every green tree, and under every leafy oak",
+        "target": [
+          "the widespread locations of Israel’s illicit worship sites",
+          "total geographic spread of idolatry",
+          "religious-geographical domain"
+        ],
+        "vehicle": [
+          "a sweeping list of prominent outdoor spots, intensified by repeated 'every/all'",
+          "enumerative catalogue of contrasted locations",
+          "spatial/descriptive domain"
+        ],
+        "ground": [
+          "by naming many representative cult locations and using 'every/all', it suggests that such shrines cover the whole land",
+          "use of representative extremes and repetition to convey totality (merism + hyperbole)",
+          "shared sense of pervasiveness"
+        ],
+        "posture": [
+          "portrays idolatry as saturating the land without exception",
+          "intensely accusatory and sweeping",
+          "prophetic exaggeration for moral effect"
+        ],
+        "explanation": "The repeated 'every/all' with a stock list of high places and trees is a hyperbolic, meristic formula indicating that idolatrous sacrifice took place throughout the land, not literally at every such spot but pervasively.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 6:14",
+    "deliberation": "Detected anthropomorphic language in 'I will stretch out my hand against them' and a likely merism in 'from the wilderness as far as Diblah' describing the whole span of the land. Treated these as two distinct figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנָטִ֤יתִי אֶת־יָדִי֙ עֲלֵיהֶ֔ם",
+        "english_text": "I will stretch out My hand against them",
+        "target": [
+          "God’s active intervention in judgment against the people/land",
+          "exercise of divine power",
+          "theological-judicial domain"
+        ],
+        "vehicle": [
+          "a human hand stretched out to strike or act",
+          "anthropomorphic limb and gesture",
+          "bodily/action domain"
+        ],
+        "ground": [
+          "both a striking hand and divine judgment involve decisive, directed action against someone",
+          "initiative, power, and reach of the actor",
+          "shared notion of forceful intervention"
+        ],
+        "posture": [
+          "presents God as an active warrior/judge reaching out to punish",
+          "threatening and forceful",
+          "prophetic theophany imagery"
+        ],
+        "explanation": "God is portrayed in anthropomorphic, metaphorical terms as stretching out a hand, personifying His power and initiative in executing judgment.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִמִּדְבַּ֣ר דִּבְלָ֔תָה בְּכֹ֖ל מוֹשְׁבֽוֹתֵיהֶ֑ם",
+        "english_text": "in all their settlements, from the wilderness as far as Diblah",
+        "target": [
+          "the full geographical extent of the land to be made desolate",
+          "entire territory of Israel/Judah",
+          "spatial-historical domain"
+        ],
+        "vehicle": [
+          "a span marked by two boundary points (wilderness and Diblah)",
+          "endpoints of a range",
+          "cartographic/geographical domain"
+        ],
+        "ground": [
+          "naming opposite or distant points suggests everything in between is included",
+          "use of endpoints to denote the whole in between (merism) with an all-inclusive 'all their settlements'",
+          "shared sense of total coverage"
+        ],
+        "posture": [
+          "stresses that no settlement will escape devastation",
+          "sweeping and emphatic",
+          "prophetic hyperbole for total judgment"
+        ],
+        "explanation": "The phrase 'from the wilderness as far as Diblah' functions as a merism: by naming extremities, it hyperbolically indicates that the entire stretch of the land, all its settlements, will be desolated.",
+        "confidence": 0.85
+      }
+    ]
+  }
+]

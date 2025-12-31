@@ -1,0 +1,841 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 31:1",
+    "deliberation": "Checked the chronological formula; it is literal. The clause 'the word of YHWH came to me' is a conventional prophetic idiom but still figurative: it portrays God's 'word' as if it were an entity that can come to a person, which is both metaphor and personification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הָיָה דְבַר־יְהוָה אֵלַי",
+        "english_text": "the word of the LORD came to me",
+        "target": [
+          "the prophetic revelation Ezekiel receives",
+          "divine message",
+          "religious/prophetic communication"
+        ],
+        "vehicle": [
+          "a 'word' that comes to someone like a visiting person or object",
+          "moving entity/visitor",
+          "ordinary spatial movement in human experience"
+        ],
+        "ground": [
+          "the initiative and otherness of the revelation, arriving from outside Ezekiel",
+          "an encounter initiated by an external agent",
+          "experiential/rhetorical domain"
+        ],
+        "posture": [
+          "stresses that Ezekiel’s message is not self-originating but divinely sent",
+          "reverent and authoritative portrayal of revelation",
+          "prophetic rhetoric legitimizing the oracle"
+        ],
+        "explanation": "The phrase treats God’s 'word' as if it were an entity that can come to a person, a conventional metaphorical-personifying idiom for receiving revelation.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 31:2",
+    "deliberation": "Considered whether 'ben-’adam' ('mortal') and the question 'Who is like you in greatness?' function as idiom or simile. In Ezekiel, 'ben-’adam' is a fixed address meaning simply 'human' and the question about likeness is semantic, not a crafted image. No clear metaphor, simile, personification, or other device beyond normal address and interrogation.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 31:3",
+    "deliberation": "This verse inaugurates the great arboreal image that runs through the oracle. 'Assyria was a cedar in Lebanon' is an explicit metaphor mapping an empire to a tree. The subsequent attributes ('beautiful branches,' 'shady thicket,' 'lofty stature,' 'top among the thick boughs') elaborate the same basic metaphor rather than creating separate figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנֵּה אַשּׁוּר אֶרֶז בַּלְּבָנוֹן יְפֵה עָנָף וְחֹרֶשׁ מֵצַל וּגְבַהּ קוֹמָה וּבֵין עֲבֹתִים הָיְתָה צַמַּרְתּוֹ",
+        "english_text": "Assyria was a cedar in Lebanon with beautiful branches and shady thickets, of lofty stature, with its top among the leafy trees.",
+        "target": [
+          "Assyria as an imperial power",
+          "a dominant kingdom/empire",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "a tall, beautiful cedar in Lebanon with a top among other thick trees",
+          "majestic tree",
+          "natural/arboreal domain"
+        ],
+        "ground": [
+          "greatness, prominence, stability, and expansive reach over others",
+          "impressive size, elevation, and ability to overshadow surroundings",
+          "evaluative/political domain (superiority among nations)"
+        ],
+        "posture": [
+          "initially admiring depiction that foreshadows later judgment",
+          "ambivalent (recognizing splendor yet setting up for a warning)",
+          "prophetic critique of imperial hubris"
+        ],
+        "explanation": "Assyria is not literally a cedar; the verse uses a cedar’s height, beauty, and dominance in the forest as a metaphor for Assyria’s imperial greatness.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 31:4",
+    "deliberation": "Syntactically this continues describing the same tree, but contextually that tree is already established as the metaphorical representation of Assyria. The waters and the deep making it tall are literal within the story-world of the tree yet figurative for the empire’s nourishing resources and geopolitical conditions. I treat this as one continued metaphorical instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מַיִם גִּדְּלֻהוּ תְּהוֹם רֹמְמָתְהוּ ... וְאֶת־תְּעָלֹתֶיהָ שִׁלְחָה אֶל־כָּל־עֲצֵי הַשָּׂדֶה",
+        "english_text": "Waters nourished it, the deep made it grow tall ... making its channels well up to all the trees of the field.",
+        "target": [
+          "Assyria’s growth and flourishing",
+          "imperial prosperity and expansion",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "a tree being nourished by waters and the deep with channels reaching other trees",
+          "well-watered tree with irrigation network",
+          "natural/agrarian domain"
+        ],
+        "ground": [
+          "abundant resources and favorable conditions enabling expansion and influence on others",
+          "being supplied, supported, and in turn benefitting neighbors",
+          "socio-economic/political flourishing"
+        ],
+        "posture": [
+          "acknowledges that Assyria’s greatness was heavily resourced and far-reaching",
+          "nuanced description that prepares for the irony of its fall despite such provision",
+          "prophetic reflection on the sources of imperial strength"
+        ],
+        "explanation": "The description of waters and the deep making the tree tall metaphorically depicts the abundant resources and conditions that allowed Assyria to grow powerful and to affect surrounding peoples.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 31:5",
+    "deliberation": "Still within the established tree-image. The tree’s surpassing height above all other trees and the multiplication of its branches are figurative for the empire’s superiority and extensive reach. These features elaborate the same core metaphor rather than forming separate figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "עַל־כֵּן גָּבְהָא קֹמָתוֹ מִכֹּל עֲצֵי הַשָּׂדֶה וַתִּרְבֶּינָה סַרְעַפֹּתָיו וַתֶּאֱרַכְנָה פֹּארֹתָו מִמַּיִם רַבִּים",
+        "english_text": "Therefore it exceeded in stature all the trees of the field; its branches multiplied and its boughs grew long because of the abundant water.",
+        "target": [
+          "Assyria’s supremacy and influence",
+          "imperial dominance and extensive sway",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "a tree higher than all other trees with many long branches",
+          "towering, wide-spreading tree",
+          "natural/arboreal domain"
+        ],
+        "ground": [
+          "being greater than peers and extending power widely",
+          "superiority and far-reaching impact",
+          "comparative political status"
+        ],
+        "posture": [
+          "emphasizes exceptional greatness that invites judgment for pride",
+          "slightly hyperbolic praise to heighten the contrast with coming ruin",
+          "prophetic amplification for rhetorical effect"
+        ],
+        "explanation": "Describing the cedar as taller than all other trees with hugely extended branches metaphorically exaggerates Assyria’s superiority and far-reaching influence among nations.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 31:6",
+    "deliberation": "The verse continues the tree image but adds the motif of creatures and nations dwelling in its shade. Birds and beasts nesting are literal within the arboreal picture; 'all the nations sitting in its shadow' is a clear metaphor of political protection and dependence. The main distinct figure here is the ‘shadow’ as protective rule for nations.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּבְצִלּוֹ יֵשְׁבוּ כֹּל גּוֹיִם רַבִּים",
+        "english_text": "And in its shadow lived all the great nations.",
+        "target": [
+          "nations subject to Assyria",
+          "vassal and client peoples",
+          "geopolitical domain"
+        ],
+        "vehicle": [
+          "creatures dwelling in the protective shade of a large tree",
+          "being sheltered under a shadow",
+          "natural/physical shelter domain"
+        ],
+        "ground": [
+          "receiving protection, benefit, and a place to dwell under a greater power",
+          "dependence and security provided by a dominant entity",
+          "political-protective relationship"
+        ],
+        "posture": [
+          "highlights the extent of Assyria’s protective (and controlling) reach over many nations",
+          "rhetorically expansive, suggesting a near-universal clientele",
+          "prophetic critique of far-reaching hegemony"
+        ],
+        "explanation": "To say that many nations ‘sat in its shadow’ metaphorically portrays their political dependence and protection under Assyria, exaggerating their number for rhetorical effect.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 31:7",
+    "deliberation": "Still inside the cedar metaphor. The beauty of its height and length of branches because its roots are by many waters continues to depict Assyria via the tree image. No independent simile or personification beyond the established mapping.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַיְיִף בְּגָדְלוֹ בְּאֹרֶךְ דָּלִיּוֹתָיו כִּי־הָיָה שָׁרְשׁוֹ אֶל־מַיִם רַבִּים",
+        "english_text": "It was beautiful in its height, in the length of its branches, because its root was by abundant waters.",
+        "target": [
+          "Assyria’s impressive stature and secure base",
+          "imperial greatness grounded in strong resources",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "a tall, beautiful, well-rooted tree by abundant waters",
+          "well-established flourishing tree",
+          "natural/arboreal domain"
+        ],
+        "ground": [
+          "visible prominence supported by a deep and well-supplied base",
+          "stability and flourishing grounded in rich resources",
+          "structural/political strength"
+        ],
+        "posture": [
+          "recognizes that Assyria’s greatness had real substance beneath it",
+          "sets up the irony that even such a well-rooted tree can fall",
+          "prophetic undermining of confidence in apparent stability"
+        ],
+        "explanation": "The well-rooted, beautiful tree by many waters continues the metaphor for Assyria’s seemingly secure, resource-backed imperial greatness.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 31:8",
+    "deliberation": "Here the cedar is compared with other trees in the 'garden of God'. This continues the metaphor of Assyria as an unparalleled tree, using hyperbolic comparison (‘no tree could compare’) and mythic setting (‘garden of God’). I treat it as a single extended metaphor with hyperbolic coloring.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֲרָזִים לֹא־עֲמָמֻהוּ בְּגַן־אֱלֹהִים ... כָּל־עֵץ בְּגַן־אֱלֹהִים לֹא־דָמָה אֵלָיו בְּיָפְיוֹ",
+        "english_text": "Cedars in the garden of God could not compare with it ... no tree in the garden of God was its equal in beauty.",
+        "target": [
+          "Assyria’s supposed unmatched splendor",
+          "unsurpassed imperial greatness",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "a cedar surpassing all other trees even in the divine garden",
+          "peerless tree of exceptional beauty",
+          "cosmic-mythic arboreal domain"
+        ],
+        "ground": [
+          "being unmatched by even the best of peers in beauty and stature",
+          "unsurpassed excellence and distinction",
+          "comparative valuation"
+        ],
+        "posture": [
+          "uses lofty, almost mythic hyperbole to magnify Assyria’s former greatness",
+          "heightens the contrast with its impending humiliation",
+          "prophetic rhetoric of ironic exaltation-before-fall"
+        ],
+        "explanation": "Saying no tree in God’s own garden could match this cedar hyperbolically extends the metaphor to claim that Assyria was peerless in splendor, setting up an ironic reversal.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 31:9",
+    "deliberation": "Still in the arboreal register but now with explicit divine agency and emotional language. God ‘made it beautiful’ in many branches and 'all the trees of Eden envied it'. Envy is ascribed to trees, which is clear personification, within the same metaphor of rival powers as trees.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "יָפֶה עֲשִׂיתִיו בְּרֹב דָּלִיּוֹתָיו וַיְקַנְאֻהוּ כָּל־עֲצֵי־עֵדֶן אֲשֶׁר בְּגַן הָאֱלֹהִים",
+        "english_text": "I made it beautiful in the profusion of its branches; and all the trees of Eden in the garden of God envied it.",
+        "target": [
+          "Assyria’s God-given magnificence and others’ reactions",
+          "imperial endowment and rival powers’ jealousy",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "a luxuriant tree distinguished by many branches and envied by other trees",
+          "trees experiencing envy and rivalry",
+          "natural/arboreal domain with human emotions superimposed"
+        ],
+        "ground": [
+          "special adornment leading to jealousy from others of similar kind",
+          "rival powers begrudging another’s exceptional favor and prominence",
+          "inter-state rivalry and divine favor"
+        ],
+        "posture": [
+          "underscores that God Himself enabled Assyria’s splendor, yet others viewed it with jealous eyes",
+          "heightens pathos and irony before its downfall",
+          "prophetic theologically charged critique of pride and envy"
+        ],
+        "explanation": "The other 'trees' of Eden, representing other exalted entities, are said to envy this cedar. This personifies the trees and extends the tree-metaphor to depict rival powers’ jealousy of Assyria’s divinely granted splendor.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 31:10",
+    "deliberation": "God interprets the tree image morally: height and top among the boughs stand for arrogance, and 'his heart was high in his height' uses verticality as a metaphor for pride. The whole clause fuses the arboreal height metaphor with the conventional biblical metaphor of a 'raised heart' for arrogance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "יַעַן אֲשֶׁר גָּבַהְתָּ בְּקוֹמָה וַיִּתֵּן צַמַּרְתּוֹ אֶל־בֵּין עֲבוֹתִים וְרָם לְבָבוֹ בְּגָבְהוֹ",
+        "english_text": "Because it towered high in stature and thrust its top up among the leafy trees, and its heart was arrogant in its height.",
+        "target": [
+          "the king/empire’s arrogance",
+          "human pride and self-exaltation",
+          "moral-psychological domain"
+        ],
+        "vehicle": [
+          "a tree growing very tall with its top among other thick boughs; a 'high' heart",
+          "extreme height and elevation",
+          "spatial/vertical domain"
+        ],
+        "ground": [
+          "being above others leading to an inflated sense of self",
+          "superiority and loftiness as images for haughty attitude",
+          "conceptual metaphor of UP = PROUD"
+        ],
+        "posture": [
+          "condemns exaltation and pride that accompanies great stature",
+          "interprets the tree’s physical height as a moral fault",
+          "prophetic moralization of political greatness"
+        ],
+        "explanation": "Physical height and an elevated 'heart' are metaphorical for arrogance: the empire’s towering position among others is recast as sinful self-exaltation.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 31:11",
+    "deliberation": "This verse largely shifts to direct judgment language. The notable figurative element is 'I delivered it into the hand of the mighty one of the nations,' where 'hand' is a standard metonymy/idiom for power or control rather than the literal body part.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְאֶתְּנֵהוּ בְּיַד אֵיל גּוֹיִם",
+        "english_text": "I delivered it into the hand of the mightiest of nations.",
+        "target": [
+          "the transfer of Assyria into another power’s control",
+          "political domination and conquest",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "being placed into someone’s hand",
+          "hand as seat of power/control",
+          "body-part metonymy domain"
+        ],
+        "ground": [
+          "having the capacity to grasp and control what is in one’s hand",
+          "control, authority, and ability to act upon what one holds",
+          "power relations"
+        ],
+        "posture": [
+          "stresses God’s sovereignty in handing Assyria over to another’s control",
+          "uses conventional idiom to represent political subjugation",
+          "prophetic declaration of divinely orchestrated conquest"
+        ],
+        "explanation": "The 'hand' of the mighty nation stands metonymically for its power and control; being given into that hand means coming under its domination.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 31:12",
+    "deliberation": "Returns to the arboreal destruction: foreigners cut down the tree; its branches fall on mountains and in valleys; peoples depart from its shade. Within the narrative, the 'tree' is still Assyria, so this is metaphorical description of its political collapse and the loss of protection for subject peoples. I treat the whole complex as one extended metaphorical instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַיִּכְרְתֻהוּ זָרִים עָרִיצֵי גוֹיִם וַיִּטְּשֻׁהוּ אֶל־הֶהָרִים וּבְכָל־גֵּאָיוֹת נָפְלוּ דָלִיּוֹתָיו וַתִּשָּׁבַרְנָה פֹּרֹאתָיו בְּכֹל אֲפִיקֵי הָאָרֶץ וַיֵּרְדוּ מִצִּלּוֹ כָּל־עַמֵּי הָאָרֶץ וַיִּטְּשֻׁהוּ",
+        "english_text": "Strangers, the most ruthless of nations, cut it down and abandoned it; its branches fell on the mountains and in every valley; its boughs were splintered in every watercourse of the earth; and all the peoples of the earth departed from its shade and abandoned it.",
+        "target": [
+          "Assyria’s overthrow and the abandonment by subject peoples",
+          "the fall of an empire and collapse of its sphere of influence",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "a great tree cut down, its branches scattered across mountains, valleys, and watercourses; creatures leaving its shade",
+          "fellled, abandoned tree whose shade is lost",
+          "natural/arboreal landscape domain"
+        ],
+        "ground": [
+          "a formerly dominant structure being violently dismantled and its benefits scattered and lost",
+          "the far-reaching impact of the fall and the loss of shelter and support for dependents",
+          "political disintegration and widespread consequences"
+        ],
+        "posture": [
+          "portrays Assyria’s demise as total and far-reaching, affecting all who relied on it",
+          "uses expansive, slightly hyperbolic imagery for universal impact",
+          "prophetic warning about the fragility of imperial shelter"
+        ],
+        "explanation": "The cutting down and scattering of the tree’s branches, and the departure of those who sat in its shade, metaphorically depict Assyria’s violent overthrow and the abandonment of its protection by all peoples.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 31:13",
+    "deliberation": "Depicts birds and beasts now inhabiting the fallen trunk and broken branches. Within the extended metaphor, these creatures can represent smaller powers or opportunists feeding on the fallen empire. This is best treated as one more stage of the same tree-metaphor, now emphasizing post-collapse exploitation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "עַל־מַפַּלְתּוֹ יִשְׁכְּנוּ כָּל־עוֹף הַשָּׁמַיִם וְאֶל־פֹּרֹאתָיו הָיוּ כֹּל חַיַּת הַשָּׂדֶה",
+        "english_text": "Upon its fallen trunk all the birds of the sky nest, and among its boughs are all the beasts of the field.",
+        "target": [
+          "those who exploit the fallen empire",
+          "smaller powers and groups taking advantage of Assyria’s ruin",
+          "geopolitical/social domain"
+        ],
+        "vehicle": [
+          "birds and beasts nesting in and lodging upon a fallen tree",
+          "scavenging and opportunistic habitation on a fallen trunk",
+          "animal/natural domain"
+        ],
+        "ground": [
+          "benefiting from or occupying what remains of a toppled structure",
+          "taking advantage of the ruins left by a once-great power",
+          "post-collapse opportunism"
+        ],
+        "posture": [
+          "depicts the humiliation and vulnerability of the fallen empire",
+          "suggests that what was once majestic is now merely habitat for lesser creatures",
+          "prophetic derision of former greatness"
+        ],
+        "explanation": "The image of birds and beasts nesting on the fallen tree extends the metaphor to show that Assyria’s ruins become a resource for lesser entities, emphasizing its humiliation.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 31:14",
+    "deliberation": "This is a generalizing explanation: 'trees of water' and 'drinkers of water' stand for other powerful, well-resourced kingdoms; their 'exalting themselves in stature' and 'setting tops among the thick boughs' reuse the tree/height metaphor for pride. Their consignment to death 'to the lower world among humans' blends the arboreal and human realms, showing trees as dying like people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְמַעַן אֲשֶׁר לֹא־יִגְבְּהוּ בְקוֹמָתָם כָּל־עֲצֵי־מַיִם ... כָּל־שֹׁתֵי מָיִם כִּי־כֻלָּם נִתְּנוּ לַמָּוֶת אֶל־אֶרֶץ תַּחְתִּית בְּתוֹךְ בְּנֵי אָדָם אֶל־יוֹרְדֵי בוֹר",
+        "english_text": "so that no trees by water should exalt themselves in stature or set their tops among the leafy trees, and that no well‑watered tree may reach up to them in height. For they are all consigned to death, to the lowest part of the netherworld, together with human beings who descend into the Pit.",
+        "target": [
+          "other proud, well-resourced kingdoms",
+          "self-exalting political powers among the nations",
+          "historical-political domain"
+        ],
+        "vehicle": [
+          "tall, well-watered trees exalting their stature and raising their tops among thick boughs, then being sent to the underworld with humans",
+          "trees as analogues for kingdoms, sharing human fate of death",
+          "natural/arboreal plus underworld domain"
+        ],
+        "ground": [
+          "abundant resources and height as analogues for political might and pride, yet ending in the same mortality as ordinary people",
+          "no matter how well-supplied and elevated, all powers share the same end",
+          "theological assertion of universal mortality and judgment"
+        ],
+        "posture": [
+          "warns all great powers against pride by asserting their inevitable fall and death",
+          "universalizes the lesson of Assyria’s fall",
+          "prophetic leveling of arrogant nations"
+        ],
+        "explanation": "Describing other kingdoms as 'trees by water' and 'drinkers of water' that exalt their height yet are sent to the underworld among humans extends the tree-metaphor to all proud, well-resourced powers and stresses their mortal fate.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 31:15",
+    "deliberation": "This verse layers several figures: (1) the tree’s descent to Sheol continues the kingdom-as-tree metaphor; (2) the deep, rivers, and waters are described as if reacting (being closed, restrained), suggesting cosmic disarray; (3) 'I made Lebanon mourn' personifies the region; (4) 'all the trees of the field fainted' personifies trees. I treat three distinct instances: descent to Sheol, Lebanon mourning, trees fainting.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּיוֹם רִדְתּוֹ שְׁאוֹלָה",
+        "english_text": "On the day it went down to Sheol",
+        "target": [
+          "the death and downfall of the kingdom symbolized by the tree",
+          "the empire’s transition from life and power to death and ruin",
+          "historical-political and eschatological domain"
+        ],
+        "vehicle": [
+          "going down to Sheol, the underworld",
+          "descent into the realm of the dead",
+          "cosmological/spatial domain (upper vs. lower world)"
+        ],
+        "ground": [
+          "moving from a high place of life to a low place of death and impotence",
+          "the end of power pictured as descent into a lower, shadowy realm",
+          "conceptual metaphor DOWN = DEATH/HUMILIATION"
+        ],
+        "posture": [
+          "portrays the fall of the empire as a catastrophic, terminal event",
+          "frames political collapse in eschatological terms",
+          "prophetic absolutizing of judgment"
+        ],
+        "explanation": "Trees do not literally go down to Sheol; this is metaphorical language for the kingdom’s death and entrance into the realm of the dead, using the conventional idiom of descent.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וָאַקְדִּר עָלָיו לְבָנוֹן",
+        "english_text": "I made Lebanon mourn deeply for it",
+        "target": [
+          "the land and region associated with the fallen power",
+          "the broader environment affected by the empire’s fall",
+          "geographical/historical domain"
+        ],
+        "vehicle": [
+          "Lebanon mourning",
+          "a land or region engaging in mourning",
+          "human emotional/ritual domain"
+        ],
+        "ground": [
+          "a place deeply affected emotionally and ritually by a loss",
+          "widespread lamentation caused by a great downfall",
+          "collective grief"
+        ],
+        "posture": [
+          "emphasizes the scale of impact by picturing the land itself in mourning",
+          "heightens the sense of cosmic grief at the fall",
+          "prophetic dramatization of catastrophe"
+        ],
+        "explanation": "Lebanon, an inanimate region, is depicted as mourning, personifying the land to stress the profound impact of the tree/kingdom’s fall.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְכָל־עֲצֵי הַשָּׂדֶה עָלָיו עֻלְפֶּה",
+        "english_text": "and all the trees of the field languished [fainted] on its account.",
+        "target": [
+          "other powers or entities affected by the fall",
+          "associated nations or cosmic participants reacting to the downfall",
+          "political/cosmic domain"
+        ],
+        "vehicle": [
+          "trees that faint or languish",
+          "inanimate trees experiencing physical collapse from grief or shock",
+          "human bodily/emotional domain"
+        ],
+        "ground": [
+          "being overwhelmed, weakened, or devastated by another’s fall",
+          "emotional and existential impact expressed as physical collapse",
+          "shared vulnerability and loss"
+        ],
+        "posture": [
+          "depicts shock and grief as cosmically widespread",
+          "amplifies the importance of the fallen power by the reaction it provokes",
+          "prophetic hyperbolization of lament"
+        ],
+        "explanation": "Other 'trees of the field' are said to faint because of the fallen cedar; this personifies them with human reactions to dramatize the far-reaching shock and grief at the empire’s collapse.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 31:16",
+    "deliberation": "Two main figures: (1) the nations 'quake' at the sound of its fall—metaphorical/hyperbolic for fear and upheaval; (2) 'all the trees of Eden ... in the earth below were comforted'—trees personified as conscious, being consoled in Sheol, continuing the metaphor of exalted powers as trees in the underworld.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִקּוֹל מַפַּלְתּוֹ הִרְעַשְׁתִּי גוֹיִם",
+        "english_text": "I made nations quake at the crash of its fall.",
+        "target": [
+          "the reaction of other nations to Assyria’s collapse",
+          "fear, instability, and upheaval among peoples",
+          "international-political domain"
+        ],
+        "vehicle": [
+          "nations quaking at a loud crash",
+          "earthquake-like shaking in response to a sound",
+          "physical/seismic domain"
+        ],
+        "ground": [
+          "being deeply shaken and destabilized by another’s downfall",
+          "fear and turmoil expressed as bodily/earthly trembling",
+          "emotional and political shock"
+        ],
+        "posture": [
+          "underscores the dramatic, far-reaching impact of Assyria’s fall",
+          "uses hyperbolic seismic imagery to convey fear and disturbance",
+          "prophetic magnification of judgment’s effects"
+        ],
+        "explanation": "The nations did not literally experience an earthquake; their 'quaking' at the sound of the fall is a hyperbolic metaphor for fear and political upheaval caused by the empire’s collapse.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַיִּנָּחֲמוּ בְּאֶרֶץ תַּחְתִּית כָּל־עֲצֵי־עֵדֶן מִבְחַר וְטוֹב־לְבָנוֹן כָּל־שֹׁתֵי מָיִם",
+        "english_text": "and all the trees of Eden, the choicest and best of Lebanon, all that were well watered, were consoled in the lowest part of the netherworld.",
+        "target": [
+          "other exalted powers already brought low",
+          "former great kingdoms sharing Assyria’s fate",
+          "historical-political domain seen in eschatological perspective"
+        ],
+        "vehicle": [
+          "trees of Eden, choicest of Lebanon, being comforted in the underworld",
+          "trees as conscious beings receiving consolation",
+          "arboreal underworld scene"
+        ],
+        "ground": [
+          "others who have suffered similar humiliation finding a kind of grim solidarity in another’s fall",
+          "shared fate lessening isolation of the previously fallen",
+          "communal experience of judgment"
+        ],
+        "posture": [
+          "portrays Assyria’s fall as joining a company of previously judged powers",
+          "uses personified trees to depict a macabre consolation among the dead",
+          "prophetic reflection on the solidarity of the judged"
+        ],
+        "explanation": "The 'trees of Eden'—metaphors for other exalted powers—are personified as beings in Sheol who find comfort when Assyria joins them, extending the tree-metaphor into the underworld.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 31:17",
+    "deliberation": "Two figures stand out: (1) they 'descended with it to Sheol'—again metaphorical idiom for death; (2) 'his arm' and 'those who sat in his shadow'—'arm' as metonymy for allies/supporters, and 'sitting in his shadow' as metaphor for living under political protection.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "גַּם־הֵם אִתּוֹ יָרְדוּ שְׁאוֹלָה אֶל־חַלְלֵי־חָרֶב",
+        "english_text": "They also descended with it into Sheol, to those slain by the sword.",
+        "target": [
+          "the death of those associated with the fallen empire",
+          "supporting peoples being killed in its downfall",
+          "historical-political and eschatological domain"
+        ],
+        "vehicle": [
+          "descent into Sheol to join the slain",
+          "going down to the realm of the dead",
+          "cosmological/spatial domain"
+        ],
+        "ground": [
+          "sharing the same fate of death and dishonor as the fallen power",
+          "downward movement as image of demise and defeat",
+          "conceptual metaphor DOWN = DEATH/HUMILIATION"
+        ],
+        "posture": [
+          "warns that not only the great power but its associates share its fate",
+          "emphasizes the comprehensive reach of judgment",
+          "prophetic insistence on solidarity in doom"
+        ],
+        "explanation": "The language of 'descending to Sheol' is not spatially literal but an idiomatic metaphor for dying violently and entering the realm of the dead.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּזְרֹעוֹ יָשְׁבוּ בְצִלּוֹ בְּתוֹךְ גּוֹיִם",
+        "english_text": "and its arm—those who had lived under its shadow among the nations.",
+        "target": [
+          "Assyria’s allies and dependents",
+          "supporting powers and protected nations",
+          "geopolitical domain"
+        ],
+        "vehicle": [
+          "an 'arm' and those sitting in its shadow",
+          "arm as agent of support; shade as protective shelter",
+          "body-part and shelter imagery"
+        ],
+        "ground": [
+          "the arm as what extends strength and help; the shadow as what offers protection and cover",
+          "allies and vassals as extensions and beneficiaries of imperial power",
+          "networked strength and protection"
+        ],
+        "posture": [
+          "shows that those who were the empire’s strength and those protected by it share its downfall",
+          "underscores the reach and the vulnerability of its support system",
+          "prophetic critique of misplaced trust in imperial protection"
+        ],
+        "explanation": "The empire’s 'arm' stands metonymically for its allies/supporters, and those who 'sat in its shadow' are those under its protection—both metaphors for political relationships rather than literal limbs or shade.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 31:18",
+    "deliberation": "The verse closes the analogy by explicitly aligning Pharaoh with the cedar of Assyria and 'trees of Eden'. 'Trees of Eden' remain the metaphor for exalted powers; being 'brought down' with them to the underworld and 'lying among the uncircumcised and slain by the sword' is judgment language. The core figurative expression is Pharaoh’s comparison to a tree of Eden that is brought down.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֶל־מִי דָמִיתָ כָּכָה בְּכָבוֹד וּבְגֹדֶל בַּעֲצֵי־עֵדֶן ... וְהוּרַדְתָּ אֶת־עֲצֵי־עֵדֶן אֶל־אֶרֶץ תַּחְתִּית",
+        "english_text": "Who is comparable to you in glory and greatness among the trees of Eden? Yet you shall be brought down with the trees of Eden to the lowest part of the netherworld.",
+        "target": [
+          "Pharaoh/Egypt’s lofty status and impending humiliation",
+          "the glory and downfall of a great kingdom",
+          "historical-political and eschatological domain"
+        ],
+        "vehicle": [
+          "trees of Eden being brought down to the underworld",
+          "exalted trees descending to the earth below",
+          "arboreal and underworld imagery"
+        ],
+        "ground": [
+          "sharing the same fate as other exalted powers despite exceptional glory",
+          "downward movement from high honor to disgrace and death",
+          "pattern of exaltation followed by humiliation in divine judgment"
+        ],
+        "posture": [
+          "directly applies the Assyria-cedar parable to Pharaoh, warning of identical fate",
+          "undercuts Pharaoh’s perceived uniqueness by likening him to other felled trees",
+          "prophetic leveling and warning against imperial pride"
+        ],
+        "explanation": "By asking who compares to Pharaoh among the 'trees of Eden' and then declaring he will be brought down with them to the underworld, the verse sustains the metaphor of exalted kings as Edenic trees that are felled and humbled.",
+        "confidence": 0.95
+      }
+    ]
+  }
+]

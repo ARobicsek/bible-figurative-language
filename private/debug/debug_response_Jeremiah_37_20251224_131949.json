@@ -1,0 +1,373 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 37:1",
+    "deliberation": "Verse 1 is purely historical prose describing succession and political installation of Zedekiah by Nebuchadnezzar. No metaphorical verbs or idiomatic phrases beyond standard royal language; all elements (becoming king, setting up a king, land of Judah) are literal.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 37:2",
+    "deliberation": "The verse narrates refusal to listen to YHWH's words. The collocation 'שמע אל דברי' (to listen to the words) can, in some contexts, shade into 'obey', but here it functions as normal Hebrew for heeding speech; no special figurative image is foregrounded.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 37:3",
+    "deliberation": "The actions of sending messengers and the request 'התפלל־נא בעדנו אל־יְהֹוָה אֱלֹהֵינוּ' are straightforward. 'Pray on our behalf' is literal intercession language, not an idiomatic metaphor in Hebrew here. No similes, metaphors, or hyperbole are present.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 37:4",
+    "deliberation": "The statement that Jeremiah went in and out among the people and had not yet been put in prison is spatial and legal description. No figurative use of motion, no idiom beyond normal prose.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 37:5",
+    "deliberation": "Military movements (Pharaoh's army going out, Chaldeans lifting the siege) are described in literal terms. The verbs 'יצא', 'שמע', 'ויעלו מעל' are used in their normal senses in a siege context; no metaphor or idiomatic expression dominates.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 37:6",
+    "deliberation": "The prophetic formula 'ויהי דבר־יְהֹוָה אל־יִרְמְיָהוּ' depicts the 'word' as something that 'comes' to Jeremiah. This conventional formula personifies or reifies the divine word as an entity that moves from God to the prophet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַֽיְהִי֙ דְּבַר־יְהֹוָ֔ה אֶל־יִרְמְיָ֥הוּ הַנָּבִ֖יא",
+        "english_text": "Then the word of YHWH came to the prophet Jeremiah",
+        "target": [
+          "the prophetic revelation given to Jeremiah",
+          "divine message",
+          "divine–human communication"
+        ],
+        "vehicle": [
+          "a 'word' that comes to someone",
+          "spoken message conceptualized as a moving entity",
+          "physical movement in space"
+        ],
+        "ground": [
+          "communication proceeds from sender to recipient",
+          "God's will is transmitted to Jeremiah",
+          "movement from source to target"
+        ],
+        "posture": [
+          "prophetic narrator’s formula affirming that the speech originates with YHWH",
+          "authoritative framing of Jeremiah’s subsequent words",
+          "religious-discourse convention"
+        ],
+        "explanation": "The 'word of YHWH' is personified as an entity that can 'come' to the prophet, turning an abstract communication into a quasi-agent that moves from God to Jeremiah.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 37:7",
+    "deliberation": "The verse delivers a divine oracle in plain predictive prose: the army of Pharaoh will return to Egypt. The verbs 'יוצא', 'שב' are literal movements of troops. No metaphor, simile, or idiom stands out as figurative beyond normal military language.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 37:8",
+    "deliberation": "The Chaldeans 'will fight', 'capture' the city, and 'burn it with fire'. In the historical-prophetic context of siege and destruction this is straightforward literal prediction of conquest and burning, not a symbolic or metaphorical burning.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 37:9",
+    "deliberation": "The key phrase 'אַל־תַּשִּׁ֤אוּ נַפְשֹֽׁתֵיכֶם֙' literally 'do not lift up your souls' is used idiomatically for self-delusion or self-encouragement with false hope. This is a conventional idiom which draws on a metaphor of 'lifting' the inner self but functions as a set expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַל־תַּשִּׁ֤אוּ נַפְשֹֽׁתֵיכֶם֙ לֵאמֹ֔ר",
+        "english_text": "Do not delude yourselves into thinking (lit. 'do not lift up your souls, saying')",
+        "target": [
+          "Judah’s inner attitude of false confidence about the Chaldeans’ departure",
+          "self-deception / wishful thinking",
+          "human psychology"
+        ],
+        "vehicle": [
+          "lifting up one’s soul",
+          "upward movement of an inner self",
+          "physical elevation / motion"
+        ],
+        "ground": [
+          "exalting or raising the inner self parallels encouraging oneself with unfounded hopes",
+          "movement upward suggests heightened expectation",
+          "change of internal state compared to spatial elevation"
+        ],
+        "posture": [
+          "YHWH’s warning rejects this self-exalting stance",
+          "the idiom is used critically to expose their misguided hope",
+          "prophetic corrective to internal attitude"
+        ],
+        "explanation": "The idiom 'lift up your souls' uses a spatial image for an inner state of self-encouragement or delusion; here it warns them not to raise their inner expectations with the claim that the Chaldeans will depart.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 37:10",
+    "deliberation": "The conditional scenario that even if all the Chaldean army were struck down and only pierced, wounded men in their tents remained, they would still rise and burn the city functions as deliberate exaggeration to stress the inevitability of Jerusalem’s fall.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנִ֨שְׁאֲרוּ־בָ֔ם אֲנָשִׁ֖ים מְדֻקָּרִ֑ים אִ֤ישׁ בְּאׇֽהֳלוֹ֙ יָק֔וּמוּ וְשָׂ֥רְפ֛וּ אֶת־הָעִ֥יר הַזֹּ֖את בָּאֵֽשׁ",
+        "english_text": "and only wounded men were left lying in their tents, they would get up and burn this city down",
+        "target": [
+          "the certainty of Jerusalem’s destruction by the Chaldeans",
+          "inescapable military defeat",
+          "historical-political outcome"
+        ],
+        "vehicle": [
+          "mortally wounded soldiers still rising to burn the city",
+          "incapacitated men acting as unstoppable conquerors",
+          "extreme, impossible combat scenario"
+        ],
+        "ground": [
+          "even in an obviously weakened state they are depicted as capable of completing the task",
+          "the disparity underscores that the decisive factor is YHWH’s decree, not their physical strength",
+          "exaggeration highlights inevitability"
+        ],
+        "posture": [
+          "prophetic speech dramatizes the point through overstatement",
+          "the audience is meant to feel the futility of resistance",
+          "rhetorical intensification in divine warning"
+        ],
+        "explanation": "By claiming that even only pierced, wounded Chaldeans in their tents would still get up and burn the city, the verse uses hyperbole to convey that Jerusalem’s fall is certain regardless of military odds.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 37:11",
+    "deliberation": "The clause reports the army lifting the siege because of Pharaoh’s army. The verbs and prepositions describe literal military repositioning; there is no idiomatic or metaphorical extension beyond normal siege terminology.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 37:12",
+    "deliberation": "Jeremiah’s leaving Jerusalem to go to Benjamin to divide property is straightforward narrative. The verb 'לחליק' here means to receive/share a portion; this is a normal juridical term, not a metaphor in this context.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 37:13",
+    "deliberation": "The key expression is Irijah’s accusation 'אֶל־הַכַּשְׂדִּים אַתָּה נֹפֵל' literally 'you are falling to the Chaldeans'. Here 'to fall to' is idiomatic for 'defect/go over to' the enemy, not physical falling.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶל־הַכַּשְׂדִּ֖ים אַתָּ֥ה נֹפֵֽל",
+        "english_text": "You are defecting to the Chaldeans! (lit. 'You are falling to the Chaldeans')",
+        "target": [
+          "Jeremiah’s alleged political and military betrayal",
+          "changing allegiance to the enemy",
+          "socio-political behavior"
+        ],
+        "vehicle": [
+          "falling toward the Chaldeans",
+          "physical falling/moving into the sphere of another",
+          "bodily motion and loss of standing"
+        ],
+        "ground": [
+          "a change of side is likened to losing one’s position and ending up among the enemy",
+          "falling suggests both movement and disgrace",
+          "spatial transfer images realignment of loyalty"
+        ],
+        "posture": [
+          "Irijah uses the idiom accusatorily to frame Jeremiah as a traitor",
+          "the phrase encodes suspicion and hostility",
+          "military-judicial discourse"
+        ],
+        "explanation": "The verb 'fall' with the preposition 'to' is an idiom for defecting to an enemy camp, evoking the image of someone losing their standing and ending up among the opposing forces.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 37:14",
+    "deliberation": "Jeremiah denies the same accusation using the same verb: 'אינני נפל על־הכשדים'. Again 'fall upon/to the Chaldeans' is an idiomatic way to say 'defect', not literal falling.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵינֶ֤נִּי נֹפֵל֙ עַל־הַכַּשְׂדִּ֔ים",
+        "english_text": "I’m not defecting to the Chaldeans! (lit. 'I am not falling upon the Chaldeans')",
+        "target": [
+          "Jeremiah’s alleged or denied change of allegiance",
+          "political-military defection",
+          "socio-political behavior"
+        ],
+        "vehicle": [
+          "falling upon/to the Chaldeans",
+          "sudden movement or collapse in the direction of another party",
+          "bodily motion / loss of footing"
+        ],
+        "ground": [
+          "transfer of loyalty is pictured as a collapse into the enemy’s sphere",
+          "falling implies both directional change and vulnerability",
+          "spatial relocation parallels allegiance shift"
+        ],
+        "posture": [
+          "Jeremiah rejects the idiomatic charge categorically",
+          "he distances himself from the figurative scenario it evokes",
+          "legal self-defense in interrogative setting"
+        ],
+        "explanation": "Jeremiah’s denial repeats the idiom 'fall to/upon' for defecting to an enemy, negating the figurative scenario of collapse into the Chaldeans’ camp.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 37:15",
+    "deliberation": "The verse reports anger, beating, and incarceration in a house that had been turned into a jail. These are literal descriptions; 'קצף' (to be furious) can be vivid but here functions as normal emotional vocabulary, not an extended metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 37:16",
+    "deliberation": "Jeremiah’s coming to 'בית הבור' and 'החנֻיות' (the pit/dungeon and the cells) is a spatial-architectural description of confinement. Though 'בור' can metaphorically denote death or Sheol elsewhere, here it designates an actual dungeon; the usage is concrete.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 37:17",
+    "deliberation": "Two expressions stand out: 'יש דבר מאת יְהֹוָה' and 'ביד מלך־בבל תינתן'. The first is simply 'is there a word/message from YHWH?', but the second uses 'hand' metaphorically for power: being 'given into the hand' means coming under the control of the king of Babylon.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּיַ֥ד מֶלֶךְ־בָּבֶ֖ל תִּנָּתֵֽן",
+        "english_text": "You will be delivered into the hands of the king of Babylon",
+        "target": [
+          "Zedekiah’s political subjugation to the Babylonian king",
+          "being under another’s control or power",
+          "political domination"
+        ],
+        "vehicle": [
+          "being given into someone’s hand",
+          "a hand that holds and controls an object or person",
+          "human bodily control/grasp"
+        ],
+        "ground": [
+          "one who holds something in the hand exercises control and can dispose of it",
+          "Zedekiah’s fate will be entirely at the Babylonian king’s discretion",
+          "physical grasp represents comprehensive power"
+        ],
+        "posture": [
+          "Jeremiah uses a familiar conquest metaphor to convey divine judgment",
+          "the wording underscores Zedekiah’s helplessness",
+          "prophetic pronouncement of inevitable subjection"
+        ],
+        "explanation": "The phrase 'given into the hand' uses the hand as a metaphor for power and control, depicting Zedekiah as an object placed into the Babylonian king’s grasp.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 37:18",
+    "deliberation": "Jeremiah’s question about what sin he has committed and why he has been put in prison is straightforward legal/moral language. No figurative idioms beyond normal juridical verbs ('חטא', 'נתתם אותי אל בית הכלא') are employed.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 37:19",
+    "deliberation": "The verse recalls the failed prediction of other prophets. 'לא יבוא מלך־בבל עליכם' is a literal claim about military action. The rhetorical question 'ואיה נביאיכם' is pointed but not figurative in form.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 37:20",
+    "deliberation": "The request 'תִּפׇּל־נָ֤א תְחִנָּתִי֙ לְפָנֶ֔יךָ' literally 'may my supplication fall before you' is an idiom/metaphorical expression for presenting a plea in humility, picturing the petition as something that falls prostrate before the king.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תִּפׇּל־נָ֤א תְחִנָּתִי֙ לְפָנֶ֔יךָ",
+        "english_text": "grant my plea (lit. 'may my supplication fall before you')",
+        "target": [
+          "Jeremiah’s act of petitioning the king for mercy",
+          "presenting a humble request",
+          "courtly appeal in a power hierarchy"
+        ],
+        "vehicle": [
+          "a supplication that falls before someone",
+          "an object or person prostrating itself at another’s feet",
+          "vertical motion downward / prostration"
+        ],
+        "ground": [
+          "falling before someone’s face evokes humility and submission",
+          "the plea is imagined as lowly, at the king’s disposal",
+          "spatial lowliness parallels social inferiority"
+        ],
+        "posture": [
+          "Jeremiah adopts a deferential stance toward Zedekiah",
+          "the idiom encodes respect and dependence",
+          "petitionary court language"
+        ],
+        "explanation": "The idiom imagines Jeremiah’s plea as something that falls down in front of the king, expressing humility and dependence through a metaphor of prostration.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 37:21",
+    "deliberation": "The verse describes Zedekiah’s command to keep Jeremiah in the court of the guard and to give him daily bread until the bread in the city was gone. These are literal provisions; 'עד תם כל־הלחם מן־העיר' is a chronological limit, not figurative.",
+    "instances": []
+  }
+]

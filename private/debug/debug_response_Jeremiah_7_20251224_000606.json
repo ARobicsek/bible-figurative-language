@@ -1,0 +1,1319 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 7:1",
+    "deliberation": "Checked for metaphorical uses of דָּבָר ('word'), personification of 'word', or idiomatic expressions. Here דָּבָר הָיָה אֶל־יִרְמְיָהוּ functions as a standard prophetic formula meaning 'a message came to Jeremiah'; it is conventional and not deployed as a conscious figure. No clear figurative language.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 7:2",
+    "deliberation": "Considered 'gate of the house of YHWH' for metonymy and 'hear the word of YHWH' as idiom or metaphor for obedience. In this context the gate is the literal temple gate and 'hear the word' is a standard prophetic summons without further figurative exploitation. Overall the verse is structurally literal.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 7:3",
+    "deliberation": "Looked for metaphors in 'mend your ways and your actions' and for any personification of the land or place. The key figurative element is the conventional biblical metaphor of 'way' (דֶּרֶךְ) for moral conduct.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵיטִיבוּ דַרְכֵיכֶם וּמַעַלְלֵיכֶם",
+        "english_text": "Mend your ways and your actions",
+        "target": [
+          "The people's moral and religious behavior ('your ways and your actions')",
+          "ethical conduct of Judah",
+          "covenant obedience / ethics"
+        ],
+        "vehicle": [
+          "A physical road or path that can be improved or straightened",
+          "travel route / roadway",
+          "spatial movement / journey"
+        ],
+        "ground": [
+          "Both behavior and a path can follow a wrong course and be corrected or made 'good'",
+          "direction and quality of movement",
+          "order vs. deviation"
+        ],
+        "posture": [
+          "Urgent divine call to correction",
+          "prophetic admonition",
+          "divine judgment and appeal"
+        ],
+        "explanation": "The verse uses the common Hebrew metaphor of 'way' (דֶּרֶךְ) to depict moral conduct as a path that can be improved or straightened.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 7:4",
+    "deliberation": "Considered whether 'trusting in deceptive words' is metaphorical (trust as physical support) and whether the triple 'Temple of YHWH' slogan functions ironically. The verse is primarily a literal warning against a specific false slogan; the repetition is rhetorical but not clearly a distinct metaphor, simile, or personification.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 7:5",
+    "deliberation": "Again examined 'mend your ways and your actions' and the phrase 'execute justice' for figurative usage. As in v.3, 'ways' (דְּרָכִים) is a path metaphor for conduct; the rest is straightforward legal language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵיטֵיב תֵּיטִיבוּ אֶת־דַּרְכֵיכֶם וְאֶת־מַעַלְלֵיכֶם",
+        "english_text": "if you really mend your ways and your actions",
+        "target": [
+          "The people's patterns of behavior",
+          "moral and social conduct",
+          "covenant life of Judah"
+        ],
+        "vehicle": [
+          "A road or way that can be improved or made straight",
+          "pathway / route",
+          "spatial trajectory"
+        ],
+        "ground": [
+          "Both behavior and a path can be on a wrong or right course and can be 'made good'",
+          "correctability of direction",
+          "ordered vs. disordered movement"
+        ],
+        "posture": [
+          "Conditional divine exhortation",
+          "prophetic instruction",
+          "covenantal demand"
+        ],
+        "explanation": "The verse uses 'ways' as a metaphor for habitual behavior, portraying ethical reform as the repair of a path.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 7:6",
+    "deliberation": "Checked 'do not oppress the stranger, orphan, widow' (literal), 'do not shed innocent blood' and 'do not go after other gods' for figurative language. Found (1) a blood synecdoche/idiom for killing, and (2) another path metaphor in 'go after other gods.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דָּם נָקִי אַל־תִּשְׁפְּכוּ",
+        "english_text": "do not shed the blood of the innocent",
+        "target": [
+          "Innocent human lives",
+          "vulnerable persons being killed",
+          "human life / community members"
+        ],
+        "vehicle": [
+          "Blood as a visible fluid that can be poured out",
+          "portion representing the whole body",
+          "physical life-sign / lifeblood"
+        ],
+        "ground": [
+          "Blood represents the life of the person so that 'shedding blood' equals killing",
+          "part standing for the whole person",
+          "life expressed through blood"
+        ],
+        "posture": [
+          "Strong divine prohibition of violence",
+          "legal-ethical condemnation",
+          "covenant justice concern"
+        ],
+        "explanation": "This is an idiomatic synecdoche: 'blood' stands for the whole person so that 'shedding blood' means killing the innocent.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַחֲרֵי אֱלֹהִים אֲחֵרִים לֹא תֵלְכוּ",
+        "english_text": "if you do not follow other gods",
+        "target": [
+          "The people's religious allegiance and worship practices",
+          "idolatrous devotion",
+          "religious loyalty"
+        ],
+        "vehicle": [
+          "Walking behind someone on a path",
+          "physical following in a journey",
+          "movement in space"
+        ],
+        "ground": [
+          "Both discipleship/worship and walking behind someone imply commitment and following their lead",
+          "directional following vs. independent path",
+          "guidance and pursuit"
+        ],
+        "posture": [
+          "Warning against misdirected allegiance",
+          "prophetic rebuke",
+          "covenant loyalty demand"
+        ],
+        "explanation": "The idiom 'walk after other gods' uses journey imagery to depict religious allegiance as following a leader along a path.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 7:7",
+    "deliberation": "Considered whether 'dwell in this place' is metaphorical (it is literal) and examined 'from of old forever and ever' (לְמִן־עוֹלָם וְעַד־עוֹלָם) for hyperbolic extension of time. It functions as an exaggeration for perpetuity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְמִן־עוֹלָם וְעַד־עוֹלָם",
+        "english_text": "for all time (from eternity to eternity)",
+        "target": [
+          "Duration of Israel's dwelling in the land",
+          "length of covenant possession",
+          "historical existence in the land"
+        ],
+        "vehicle": [
+          "An unbounded stretch 'from eternity to eternity'",
+          "infinite temporal span",
+          "abstract time-extremes"
+        ],
+        "ground": [
+          "The promise is depicted as extending indefinitely, like an unbounded span in both directions",
+          "emphasis on permanence and continuity",
+          "maximizing duration"
+        ],
+        "posture": [
+          "Emphatic reassurance contingent on obedience",
+          "covenant promise rhetoric",
+          "theological assurance"
+        ],
+        "explanation": "The phrase uses temporal hyperbole—'from eternity to eternity'—to stress the intended permanence of the land grant, not to define a literal infinite duration.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 7:8",
+    "deliberation": "Reviewed 'trusting in deceptive words that do not profit' for metaphor (trust as physical support, profit as commercial metaphor). These are conventional abstract uses in Hebrew and not strongly foregrounded as figures here. No clear, marked figurative expression beyond normal abstraction.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 7:9",
+    "deliberation": "Most verbs (steal, murder, commit adultery, swear falsely) are literal. The final clause 'go after other gods' reprises the path metaphor of v.6, depicting idolatry as following. That is the distinct figurative expression here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָלֹךְ אַחֲרֵי אֱלֹהִים אֲחֵרִים אֲשֶׁר לֹא־יְדַעְתֶּם",
+        "english_text": "and follow other gods whom you have not experienced",
+        "target": [
+          "The people’s choice to worship other deities",
+          "idolatrous allegiance",
+          "religious orientation"
+        ],
+        "vehicle": [
+          "Walking behind someone as a follower on a road",
+          "follower in a journey",
+          "spatial following"
+        ],
+        "ground": [
+          "Both discipleship/worship and physical following involve commitment to go where the leader goes",
+          "submission to guidance",
+          "direction of one’s course by another"
+        ],
+        "posture": [
+          "Critical exposure of their misplaced loyalty",
+          "prophetic accusation",
+          "covenant lawsuit"
+        ],
+        "explanation": "The idiom 'go after other gods' uses journey imagery to picture worship as following a leader down a path.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 7:10",
+    "deliberation": "Considered (1) 'house that is called by My name' for metonymy of 'name' as presence/ownership, and (2) the claim 'We are safe in order to do all these abominations' as an ironic reversal of deliverance language. Both are distinct figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַבַּיִת הַזֶּה אֲשֶׁר נִקְרָא־שְׁמִי עָלָיו",
+        "english_text": "this House that bears My name",
+        "target": [
+          "The Jerusalem temple as locus of divine presence",
+          "central sanctuary institution",
+          "cultic place of worship"
+        ],
+        "vehicle": [
+          "A 'name' placed upon a house to indicate ownership or association",
+          "label / reputation marker",
+          "social identity sign"
+        ],
+        "ground": [
+          "Having a name on a house signifies belonging and identification, so God's 'name' signifies His presence and claim over the temple",
+          "ownership and representation",
+          "presence signaled through naming"
+        ],
+        "posture": [
+          "Undermining false confidence in the building",
+          "prophetic correction",
+          "theological clarification"
+        ],
+        "explanation": "God’s 'name' functions metonymically for His presence and ownership; the temple is described as the house upon which His name is called.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַאֲמַרְתֶּם נִצַּלְנוּ לְמַעַן עֲשׂוֹת אֵת כָּל־הַתּוֹעֵבוֹת הָאֵלֶּה",
+        "english_text": "and say, “We are safe”—[safe] to do all these abhorrent things!",
+        "target": [
+          "The people’s self-deception about salvation and security",
+          "false sense of deliverance",
+          "covenantal status"
+        ],
+        "vehicle": [
+          "Deliverance language typically used for God’s true rescue",
+          "terminology of salvation",
+          "redemption imagery"
+        ],
+        "ground": [
+          "The claim to be 'delivered' is perversely used to justify sin, creating a sharp ironic contrast between true and false deliverance",
+          "reversal of expected moral implication",
+          "contrast between profession and practice"
+        ],
+        "posture": [
+          "Prophetic irony exposing moral absurdity",
+          "sarcastic denunciation",
+          "judgmental critique"
+        ],
+        "explanation": "There is verbal irony: they invoke the language of deliverance ('we are saved') precisely to license the abominations that would warrant judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 7:11",
+    "deliberation": "Identified (1) a temple metaphor as 'den of robbers,' and (2) repetition of the 'house that is called by My name' metonymy. Both are distinct: one re-images the temple, the other explains its divine association.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַמְעָרַת פָּרִצִים הָיָה הַבַּיִת הַזֶּה",
+        "english_text": "Has this House become, in your eyes, a den of thieves?",
+        "target": [
+          "The corrupt use of the temple by the people",
+          "their religious practice and gathering place",
+          "institutional worship life"
+        ],
+        "vehicle": [
+          "A cave or den where violent robbers hide and feel secure",
+          "hideout of bandits",
+          "criminal refuge"
+        ],
+        "ground": [
+          "Both a robbers’ den and the abused temple serve as a false refuge where wrongdoers feel safe from consequences",
+          "concealment and misplaced security",
+          "shelter used to protect evil-doers"
+        ],
+        "posture": [
+          "Sharp prophetic condemnation",
+          "judicial accusation",
+          "divine repudiation of their cult"
+        ],
+        "explanation": "The temple is likened to a robbers’ cave, suggesting it has become a safe hideout for criminals rather than a holy place.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַבַּיִת הַזֶּה אֲשֶׁר־נִקְרָא־שְׁמִי עָלָיו",
+        "english_text": "this House, which bears My name",
+        "target": [
+          "The temple as site of divine presence",
+          "sanctuary structure",
+          "cultic-symbolic center"
+        ],
+        "vehicle": [
+          "A 'name' attached to a house indicating ownership and fame",
+          "naming as representation",
+          "socially recognized label"
+        ],
+        "ground": [
+          "The divine name stands for God Himself, so a house 'called by His name' signifies His claimed presence there",
+          "association through naming",
+          "presence via reputation"
+        ],
+        "posture": [
+          "Reminder of the temple's true identity",
+          "theological framing",
+          "covenant reminder"
+        ],
+        "explanation": "God’s 'name' functions metonymically for His person and reputation; calling the temple by His name expresses His claim over it.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 7:12",
+    "deliberation": "Looked at 'My place at Shiloh' and 'where I caused My name to dwell there at first.' The key figure is again the metonymic use of God's 'name' for His presence and ownership.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר שִׁכַּנְתִּי שְׁמִי שָׁם בָּרִאשׁוֹנָה",
+        "english_text": "where I had established My name formerly",
+        "target": [
+          "The manifestation of God's presence at Shiloh",
+          "earlier sanctuary status",
+          "cultic dwelling of God"
+        ],
+        "vehicle": [
+          "Causing a 'name' to dwell in a place",
+          "name as stand-in for a person",
+          "symbolic emplacement of identity"
+        ],
+        "ground": [
+          "Having one’s name dwell somewhere indicates association and presence, so God's 'name' stands for His own dwelling there",
+          "representation by name",
+          "presence localized via reputation"
+        ],
+        "posture": [
+          "Historical warning by example",
+          "didactic recollection",
+          "covenant admonition"
+        ],
+        "explanation": "God’s 'name' is used metonymically for His personal presence; Shiloh was where His name—hence His presence—formerly resided.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 7:13",
+    "deliberation": "Considered the verbs 'spoke' and 'called'—literal for prophetic communication—and especially the idiom 'rising early and speaking' (הַשְׁכֵּם וְדַבֵּר) which anthropomorphically depicts God as an eager early riser. This is a personifying idiom stressing persistence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וָאֲדַבֵּר אֲלֵיכֶם הַשְׁכֵּם וְדַבֵּר",
+        "english_text": "though I spoke to you persistently (rising early and speaking)",
+        "target": [
+          "God’s repeated sending of messages through prophets",
+          "divine persistence in warning",
+          "prophetic communication"
+        ],
+        "vehicle": [
+          "A human who rises early in the morning to speak diligently",
+          "eager early-rising worker",
+          "daily human schedule"
+        ],
+        "ground": [
+          "Both an early riser and God’s prophetic activity show diligence and urgency in addressing others",
+          "energetic initiative",
+          "persistence over time"
+        ],
+        "posture": [
+          "Emphasis on God’s earnest efforts vs. their stubbornness",
+          "lamenting rebuffed grace",
+          "judicial self-vindication"
+        ],
+        "explanation": "The idiom 'rising early and speaking' personifies God with a human daily routine to underline how diligently and repeatedly He has warned them.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 7:14",
+    "deliberation": "Examined the threat language. The notable figure is again 'the house that is called by My name'—metonymy for God’s presence at the temple. The comparison with Shiloh itself is historical, not metaphorical.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לַבַּיִת אֲשֶׁר נִקְרָא־שְׁמִי עָלָיו אֲשֶׁר אַתֶּם בֹּטְחִים בּוֹ",
+        "english_text": "to the House that bears My name, on which you rely",
+        "target": [
+          "The physical temple as focal point of misplaced trust",
+          "Jerusalem sanctuary",
+          "institutional locus of worship"
+        ],
+        "vehicle": [
+          "A house carrying an owner’s name",
+          "named dwelling",
+          "property marked by a name"
+        ],
+        "ground": [
+          "The association of name and house signals ownership; God’s 'name' stands for Himself, so the phrase denotes His claimed presence there",
+          "representation via naming",
+          "presence and authority implied by label"
+        ],
+        "posture": [
+          "Challenge to their temple theology",
+          "prophetic deconstruction of false security",
+          "theological critique"
+        ],
+        "explanation": "Again God’s 'name' functions metonymically for His person; the temple is described as the house called by that name.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 7:15",
+    "deliberation": "Considered 'cast you out from before My face' and 'seed of Ephraim.' 'Seed' for descendants is lexicalized, but 'from before My face' clearly uses 'face' as metonymy for presence, expressing relational expulsion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִשְׁלַכְתִּי אֶתְכֶם מֵעַל פָּנָי",
+        "english_text": "And I will cast you out of My presence (from before My face)",
+        "target": [
+          "The people’s covenant relationship and access to God",
+          "their standing before Him",
+          "divine-human proximity"
+        ],
+        "vehicle": [
+          "Being thrown away from in front of someone’s face",
+          "physical displacement from a ruler’s presence",
+          "spatial removal from sight"
+        ],
+        "ground": [
+          "To be in front of someone’s face is to enjoy their presence; being cast away depicts total rejection",
+          "presence as spatial nearness",
+          "relational rupture expressed as expulsion"
+        ],
+        "posture": [
+          "Announcement of severe rejection",
+          "judicial sentence",
+          "covenant curse"
+        ],
+        "explanation": "God’s 'face' stands metonymically for His presence; being cast away from His face portrays loss of relationship in spatial terms.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 7:16",
+    "deliberation": "Checked whether 'I will not listen to you' is figurative beyond standard anthropomorphic language. Here 'listen' means 'heed/respond to' in a normal sense; the verse is a straightforward prohibition of intercession with no marked metaphor or simile.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 7:17",
+    "deliberation": "Descriptive question about what they do in towns and streets. No metaphors, similes, or personifications detected; 'see' is literal cognition and locations are concrete.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 7:18",
+    "deliberation": "Narrates literal cultic preparations for idolatry: gathering wood, kindling fire, kneading dough, making cakes, pouring libations. 'Queen of Heaven' is a cult title for a goddess, not a metaphor in this context. No clear figurative language.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 7:19",
+    "deliberation": "Considered whether God's being 'vexed' is merely anthropomorphic (standard) and examined 'for the shame of their faces' (לְמַעַן בֹּשֶׁת פְּנֵיהֶם). Here 'faces' stand metonymically for their public self and honor, expressing disgrace.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֲלוֹא אֹתָם לְמַעַן בֹּשֶׁת פְּנֵיהֶם",
+        "english_text": "Is it not themselves, to their own disgrace (for the shame of their faces)?",
+        "target": [
+          "The people’s public humiliation and loss of honor",
+          "their state of disgrace",
+          "social-moral standing"
+        ],
+        "vehicle": [
+          "Faces experiencing shame or covered with shame",
+          "visible countenance",
+          "publicly seen appearance"
+        ],
+        "ground": [
+          "The face represents the self before others; shame on the face expresses total public humiliation",
+          "outer countenance as sign of inner and social status",
+          "visibility of dishonor"
+        ],
+        "posture": [
+          "Explanation of consequences of their sin",
+          "moral warning",
+          "didactic reorientation"
+        ],
+        "explanation": "‘Faces’ function metonymically for their public self; the phrase depicts their idolatry as resulting in visible, public shame.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 7:20",
+    "deliberation": "Noted two main figures: (1) God’s anger and wrath 'poured out' and 'burning' unquenchably—a complex metaphor of wrath as consuming fire/liquid; (2) the list 'on human, on beast, on tree of the field, on fruit of the ground' functioning as a merism for total devastation of all life and produce.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה אַפִּי וַחֲמָתִי נִתֶּכֶת אֶל־הַמָּקוֹם הַזֶּה ... וּבָעֲרָה וְלֹא תִכְבֶּה",
+        "english_text": "My wrath and My fury will be poured out upon this place … It shall burn, with none to quench it.",
+        "target": [
+          "The destructive exercise of God’s judgment",
+          "divine wrath in action",
+          "covenant punishment"
+        ],
+        "vehicle": [
+          "A burning, unquenchable substance (like molten metal or fire) being poured out and blazing",
+          "uncontrollable fire/liquid",
+          "destructive natural force"
+        ],
+        "ground": [
+          "Both unquenchable fire and divine wrath are intense, consuming, and unstoppable once unleashed",
+          "overwhelming destructive power",
+          "irreversible devastation"
+        ],
+        "posture": [
+          "Threatening portrayal of coming judgment",
+          "terrifying warning",
+          "covenant curse imagery"
+        ],
+        "explanation": "Wrath is conceptualized as a poured-out, unquenchable blaze, using fire/liquid imagery to emphasize its consuming and unstoppable nature.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עַל־הָאָדָם וְעַל־הַבְּהֵמָה וְעַל־עֵץ הַשָּׂדֶה וְעַל־פְּרִי הָאֲדָמָה",
+        "english_text": "upon human beings and on animals, on the trees of the field and the fruit of the soil",
+        "target": [
+          "All forms of life and productivity in the land",
+          "total environment of Judah",
+          "creation within the land"
+        ],
+        "vehicle": [
+          "A fourfold list of representative categories: humans, beasts, trees, fruits",
+          "enumerated sample of living things",
+          "partitive listing"
+        ],
+        "ground": [
+          "Listing main categories of life and produce suggests that nothing in the land will escape the judgment",
+          "parts used to imply the whole (merism)",
+          "comprehensive scope via representative items"
+        ],
+        "posture": [
+          "Stressing totality of devastation",
+          "intensified threat",
+          "covenant curse formulation"
+        ],
+        "explanation": "The list functions as a merism: representative elements (humans, animals, trees, crops) stand for the entire creation of the land that will be affected.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 7:21",
+    "deliberation": "The directive to 'add your burnt offerings to your sacrifices and eat the meat' runs counter to sacrificial law and is widely read as biting irony, not a literal instruction. It uses an ironic command to expose the worthlessness of their cult.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "עֹלוֹתֵיכֶם סְפוּ עַל־זִבְחֵיכֶם וְאִכְלוּ בָשָׂר",
+        "english_text": "Add your burnt offerings to your other sacrifices and eat the meat!",
+        "target": [
+          "The people’s reliance on sacrificial ritual",
+          "their entire sacrificial system",
+          "cultic practice"
+        ],
+        "vehicle": [
+          "A sarcastic invitation to pile up offerings and treat them like ordinary meat",
+          "ironically permissive command",
+          "mock liturgical instruction"
+        ],
+        "ground": [
+          "By telling them to do more of what is actually rejected, the statement exposes that their sacrifices are no better than common food",
+          "inversion of expected divine desire",
+          "ridicule of empty ritual"
+        ],
+        "posture": [
+          "Prophetic sarcasm and irony",
+          "polemic against externalism",
+          "divine disgust"
+        ],
+        "explanation": "This is an ironic command: God mockingly tells them to combine burnt offerings with other sacrifices and eat, highlighting that He finds their cultic acts meaningless.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 7:22",
+    "deliberation": "The claim 'I did not speak…concerning burnt offerings or sacrifice' is rhetorically absolute though sacrificial laws do exist. It is hyperbolic contrast, stressing that sacrifice was not the primary demand compared to obedience.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא־דִבַּרְתִּי ... עַל־דִּבְרֵי עוֹלָה וָזָבַח",
+        "english_text": "I did not speak with them or command them … concerning burnt offerings or sacrifice",
+        "target": [
+          "The relative importance of sacrificial commands vs. obedience",
+          "God’s original covenantal demand",
+          "divine priorities"
+        ],
+        "vehicle": [
+          "A categorical denial of having spoken about sacrifices",
+          "absolute negation",
+          "total exclusion formula"
+        ],
+        "ground": [
+          "The exaggerated denial serves to highlight that sacrifice was secondary compared to the central demand of obedience",
+          "contrastive overstatement to re-rank values",
+          "emphasis by exclusion"
+        ],
+        "posture": [
+          "Corrective emphasis on obedience over ritual",
+          "prophetic reorientation",
+          "value clarification"
+        ],
+        "explanation": "The verse employs hyperbolic negation: God says He did not command sacrifices, meaning they were not His primary concern compared to obeying His voice.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 7:23",
+    "deliberation": "Noted the covenant formula 'I will be your God, you will be My people' (largely literal covenant language) and 'walk in all the way that I command you,' which continues the 'way/path' metaphor for conduct.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַהֲלַכְתֶּם בְּכָל־הַדֶּרֶךְ אֲשֶׁר אֲצַוֶּה אֶתְכֶם",
+        "english_text": "walk only in the way that I enjoin upon you",
+        "target": [
+          "Their comprehensive pattern of living in obedience",
+          "total covenantal behavior",
+          "lifestyle under God’s commands"
+        ],
+        "vehicle": [
+          "Walking along a designated road",
+          "movement on a path",
+          "journey route"
+        ],
+        "ground": [
+          "Obedient living is like following a prescribed path rather than wandering off it",
+          "direction and boundary of movement",
+          "staying within a marked way"
+        ],
+        "posture": [
+          "Positive covenant exhortation",
+          "guidance imagery",
+          "divine pastoral care"
+        ],
+        "explanation": "The 'way' is a metaphor for God's commanded pattern of life; to 'walk in it' means to live in obedience.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 7:24",
+    "deliberation": "Detected several idiomatic/metaphorical expressions: (1) 'did not incline their ear' for refusing to heed, (2) 'walked in the counsels and stubbornness of their evil heart' continuing path imagery, and (3) 'they became backward and not forward' as an orientation metaphor for moral regression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא־הִטּוּ אֶת־אׇזְנָם",
+        "english_text": "they did not give ear (they did not incline their ear)",
+        "target": [
+          "The people’s refusal to pay attention to God’s messages",
+          "failure to heed prophetic word",
+          "listening/obedience"
+        ],
+        "vehicle": [
+          "Physically turning or inclining an ear toward a sound",
+          "orienting the ear",
+          "bodily gesture of attentiveness"
+        ],
+        "ground": [
+          "Inclining the ear toward a speaker symbolizes readiness to listen; refusing to do so represents willful inattention",
+          "bodily posture as sign of inner stance",
+          "attention mapped onto ear movement"
+        ],
+        "posture": [
+          "Highlighting culpable refusal",
+          "prophetic blame",
+          "judicial characterization"
+        ],
+        "explanation": "The idiom 'incline the ear' uses bodily imagery to depict attentive listening; its negation pictures willful refusal to heed.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיֵּלְכוּ בְּמֹעֲצוֹת בִּשְׁרִרוּת לִבָּם הָרָע",
+        "english_text": "they followed their own counsels, the willfulness of their evil hearts",
+        "target": [
+          "Their self-directed, stubborn decision-making",
+          "inner motivations and plans",
+          "moral orientation"
+        ],
+        "vehicle": [
+          "Walking along within counsels and stubbornness as if along a path",
+          "journeying inside advice/heart",
+          "spatial movement in inner terrain"
+        ],
+        "ground": [
+          "Living according to one’s inner plans is likened to walking a path laid out by the heart’s stubborn advice",
+          "following an internal guide",
+          "direction set by inner disposition"
+        ],
+        "posture": [
+          "Condemnation of self-willed behavior",
+          "negative evaluation",
+          "covenant indictment"
+        ],
+        "explanation": "The verse extends path imagery inward: they 'walk' in the counsels of their evil heart, depicting their lives as guided by stubborn inner pathways.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיִּהְיוּ לְאָחוֹר וְלֹא לְפָנִים",
+        "english_text": "They have gone backward, not forward",
+        "target": [
+          "The people’s historical-spiritual development",
+          "moral and religious progress or decline",
+          "covenant trajectory"
+        ],
+        "vehicle": [
+          "A person moving backward instead of forward",
+          "spatial orientation of movement",
+          "direction in physical travel"
+        ],
+        "ground": [
+          "Moral/spiritual decline is pictured as moving in reverse rather than advancing",
+          "progress vs. regression mapped onto front/back motion",
+          "incorrect direction of movement"
+        ],
+        "posture": [
+          "Strong negative assessment of their history",
+          "lamenting regression",
+          "judicial summary"
+        ],
+        "explanation": "The orientation metaphor equates moral decline with walking backward instead of progressing forward.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 7:25",
+    "deliberation": "The time-span 'from the day your ancestors left Egypt until this day' is chronological rather than figurative. The notable idiom is again 'rising early and sending' the prophets, which anthropomorphically portrays God’s diligence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יוֹם הַשְׁכֵּם וְשָׁלֹחַ",
+        "english_text": "daily and persistently (rising early and sending)",
+        "target": [
+          "God’s continual commissioning of prophets",
+          "frequency and zeal of His sending",
+          "divine outreach"
+        ],
+        "vehicle": [
+          "A person who gets up early each day to send out messengers",
+          "early-rising dispatcher",
+          "human daily routine"
+        ],
+        "ground": [
+          "Both an early-rising sender and God’s activity show persistent initiative over time",
+          "diligence and repetition",
+          "ongoing effort"
+        ],
+        "posture": [
+          "Self-justification of God’s patience vs. their stubbornness",
+          "forensic defense",
+          "emphasis on grace spurned"
+        ],
+        "explanation": "The idiom 'rising early and sending' again personifies God as an eager human dispatcher to highlight His persistent sending of prophets.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 7:26",
+    "deliberation": "Considered 'would not listen' as literal refusal, and found a clear metaphor in 'they stiffened their neck' (הִקְשׁוּ אֶת־עׇרְפָּם), drawn from stubborn animals resisting the yoke.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיַּקְשׁוּ אֶת־עׇרְפָּם",
+        "english_text": "They stiffened their necks",
+        "target": [
+          "The people’s obstinate refusal to submit to God",
+          "spiritual stubbornness",
+          "inner disposition"
+        ],
+        "vehicle": [
+          "An animal that hardens its neck and resists a yoke",
+          "stubborn beast of burden",
+          "physical rigidity"
+        ],
+        "ground": [
+          "Both a stiff-necked animal and Israel resist guidance and refuse to bend to the yoke",
+          "resistance to control",
+          "unwillingness to submit"
+        ],
+        "posture": [
+          "Vivid condemnation of their stubbornness",
+          "prophetic invective",
+          "covenant lawsuit imagery"
+        ],
+        "explanation": "The 'stiff neck' metaphor likens Israel to an animal that refuses the yoke, emphasizing their refusal to submit.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 7:27",
+    "deliberation": "Straightforward prediction that they will not listen or answer Jeremiah. 'Speak' and 'call' are literal communicative verbs; no distinctive figurative imagery is exploited here.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 7:28",
+    "deliberation": "Observed two figures: (1) 'did not listen to the voice of YHWH' where 'voice' is metonymic for command and 'listen' idiomatic for obey; (2) 'Faithfulness has perished, and is cut off from their mouths' personifies faithfulness as a living entity that can die and be excised from speech.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַגּוֹי אֲשֶׁר לֹא־שָׁמְעוּ בְּקוֹל יְהוָה אֱלֹהָיו",
+        "english_text": "This is the nation that would not obey the voice of the LORD their God",
+        "target": [
+          "Their refusal to obey God’s commands",
+          "disobedience to divine instruction",
+          "covenant-breaking"
+        ],
+        "vehicle": [
+          "A 'voice' that one can listen to or ignore",
+          "audible speech",
+          "sound-bearing command"
+        ],
+        "ground": [
+          "God’s commands are conceptualized as His 'voice,' and to 'listen' to it is to obey",
+          "hearing mapped onto obedience",
+          "speech representing will"
+        ],
+        "posture": [
+          "Judicial labeling of the nation",
+          "covenant indictment",
+          "theological characterization"
+        ],
+        "explanation": "God’s 'voice' stands metonymically for His commands, and 'listening to the voice' is an idiom for obedient response.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָבְדָה הָאֱמוּנָה וְנִכְרְתָה מִפִּיהֶם",
+        "english_text": "Faithfulness has perished, vanished from their mouths",
+        "target": [
+          "The people’s reliability and truthfulness",
+          "covenant faithfulness and integrity",
+          "moral quality of fidelity"
+        ],
+        "vehicle": [
+          "A living entity that can die ('perish') and be cut off from the mouth",
+          "person whose presence can cease",
+          "organism that can be removed"
+        ],
+        "ground": [
+          "Faithfulness is treated like a living presence once in their speech that has now died and been excised",
+          "absence of a virtue pictured as death and removal",
+          "loss manifested in what they no longer say"
+        ],
+        "posture": [
+          "Emphatic diagnosis of moral collapse",
+          "lamenting loss of integrity",
+          "prophetic denunciation"
+        ],
+        "explanation": "Abstract 'faithfulness' is personified as something that can perish and be cut off from their mouths, highlighting its complete disappearance from their speech.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 7:29",
+    "deliberation": "The imperatives are in feminine singular, addressing Jerusalem/Zion as a woman commanded to shear her 'nazir' locks and lament on the heights. This is a personification of the city/people as a mourning woman performing symbolic acts of grief.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "גׇּזִּי נִזְרֵךְ וְהַשְׁלִיכִי וּשְׂאִי עַל־שְׁפָיִם קִינָה",
+        "english_text": "Shear your locks and cast them away, Take up a lament on the heights",
+        "target": [
+          "Jerusalem/Zion and its inhabitants under judgment",
+          "the community of Judah",
+          "covenant people as a whole"
+        ],
+        "vehicle": [
+          "A woman (possibly a Nazirite-like figure) shaving her hair and wailing publicly on high places",
+          "mourning woman with shorn hair",
+          "ritualized act of grief"
+        ],
+        "ground": [
+          "The city’s rejection and sorrow are expressed by picturing her as a woman performing traditional mourning gestures",
+          "external signs (shorn hair, lament) embody inward and communal grief",
+          "feminine persona representing the community"
+        ],
+        "posture": [
+          "Command to embody and acknowledge judgment",
+          "prophetic dramatization",
+          "poetic lament initiation"
+        ],
+        "explanation": "Jerusalem is personified as a woman told to cut off her consecrated hair and wail on the heights, dramatizing her rejection and grief.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 7:30",
+    "deliberation": "Most elements (abominations placed in the house, defiling it) are literal cultic language. 'The house that is called by My name' again uses 'name' metonymically for divine presence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בַּבַּיִת אֲשֶׁר־נִקְרָא־שְׁמִי עָלָיו",
+        "english_text": "in the House that is called by My name",
+        "target": [
+          "The temple as sanctified dwelling of God",
+          "holy place of worship",
+          "cultic center"
+        ],
+        "vehicle": [
+          "A building marked with an owner’s name",
+          "named property",
+          "house bearing a label"
+        ],
+        "ground": [
+          "The owner’s name on a house signifies belonging; God’s name on the temple signifies His claim and presence there",
+          "ownership and presence via naming",
+          "association encoded in a label"
+        ],
+        "posture": [
+          "Intensifying the seriousness of their defilement",
+          "moral aggravation of guilt",
+          "covenant outrage"
+        ],
+        "explanation": "God’s 'name' again stands metonymically for His person; the house called by His name is the temple He claims as His own.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 7:31",
+    "deliberation": "The horrific actions (building Topheth, burning sons and daughters) are literal. The clause 'which I never commanded, which never came to My mind/heart' uses the idiom 'come up upon the heart' for conceiving an idea, an anthropomorphic idiom for divine thought.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא עָלְתָה עַל־לִבִּי",
+        "english_text": "which never came to My mind (did not rise upon My heart)",
+        "target": [
+          "God’s will and conceptualization regarding child sacrifice",
+          "His internal purposes",
+          "divine thought"
+        ],
+        "vehicle": [
+          "An idea rising up onto a human heart",
+          "movement of a thought toward the inner self",
+          "spatial ascent into the seat of thinking"
+        ],
+        "ground": [
+          "Conceiving an idea is pictured as something rising into one’s heart; saying it never rose emphasizes total foreignness to God’s will",
+          "inner cognition portrayed as spatial motion",
+          "non-occurrence expressed as absence of that motion"
+        ],
+        "posture": [
+          "Strong repudiation of child sacrifice",
+          "moral distancing",
+          "theological clarification"
+        ],
+        "explanation": "The idiom 'did not come up upon My heart' anthropomorphically depicts God’s thought process; the figure denies that child sacrifice ever even entered His mind.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Jeremiah 7:32",
+    "deliberation": "Observed the renaming of Topheth/Valley of Ben-Hinnom as 'Valley of Slaughter.' This new toponym functions metaphorically, branding the place by the coming massacre that will characterize it.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי אִם־גֵּיא הַהֲרֵגָה",
+        "english_text": "but [it will be called] the Valley of Slaughter",
+        "target": [
+          "The future state and reputation of the valley",
+          "its role as site of mass death",
+          "geographical locus of judgment"
+        ],
+        "vehicle": [
+          "A valley identified by the abstract noun 'slaughter'",
+          "place named after an event",
+          "toponymic label of killing"
+        ],
+        "ground": [
+          "Naming the valley 'Slaughter' depicts its defining characteristic as widespread killing, so that the place and the massacre are inseparably linked",
+          "place identity defined by event",
+          "metonymic fusion of location and fate"
+        ],
+        "posture": [
+          "Prophetic branding of the site as cursed",
+          "ominous renaming",
+          "judgment oracle"
+        ],
+        "explanation": "The new name 'Valley of Slaughter' is a metaphorical/toponymic label where the event of slaughter stands for and defines the place.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 33,
+    "reference": "Jeremiah 7:33",
+    "deliberation": "The gruesome image of carcasses as food for birds and beasts is a standard covenant-curse motif but is literal in content; it does not rely on metaphor or personification beyond the shocking description itself.",
+    "instances": []
+  },
+  {
+    "verse": 34,
+    "reference": "Jeremiah 7:34",
+    "deliberation": "Identified 'I will silence… the sound of mirth and gladness, the voice of bridegroom and bride' as metonymic/merismic: the 'voice' of celebrations and weddings stands for the events and the entire fabric of joyous communal life that will cease.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "ק֣וֹל שָׂשׂוֹן וְק֣וֹל שִׂמְחָה ק֥וֹל חָתָן וְק֣וֹל כַּלָּה",
+        "english_text": "the sound of mirth and gladness, the voice of bridegroom and bride",
+        "target": [
+          "All joyful social life, especially celebrations and weddings in Judah",
+          "communal happiness and festivity",
+          "normal societal flourishing"
+        ],
+        "vehicle": [
+          "Audible sounds and voices associated with joy and marriage ceremonies",
+          "sounds of feasting and wedding voices",
+          "acoustic markers of joy"
+        ],
+        "ground": [
+          "The sounds of joy and wedding voices represent the existence of community celebrations; silencing them signifies the end of social joy",
+          "part (sound) stands for whole event",
+          "meristic list of key joy-expressions"
+        ],
+        "posture": [
+          "Announcement of total desolation of communal life",
+          "lament-style curse",
+          "covenant judgment"
+        ],
+        "explanation": "The 'voice' of joy and of bridegroom/bride functions metonymically and as a merism for all occasions of communal happiness, whose cessation marks the land’s devastation.",
+        "confidence": 0.95
+      }
+    ]
+  }
+]

@@ -1,0 +1,580 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 7:1",
+    "deliberation": "I examined whether the verse’s crime imagery (thieves, raiding bands) is figurative or literal. It appears to describe actual social violence. The clearly figurative element is YHWH 'healing Israel,' which uses medical imagery for covenantal restoration. I treat this as one metaphor; the rest of the verse is straightforward description.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּרׇפְאִ֣י לְיִשְׂרָאֵ֗ל",
+        "english_text": "When I would heal Israel",
+        "target": ["Israel’s national/moral condition", "covenant community", "religious-moral"],
+        "vehicle": ["a sick patient being medically healed", "physical illness and treatment", "embodied/medical"],
+        "ground": ["restoration from damage, return to wholeness", "change of condition from diseased to sound", "salvation/judgment"],
+        "posture": ["YHWH as caring but frustrated physician", "divine restorative initiative despite corruption", "theological"],
+        "explanation": "Israel’s spiritual and political restoration is depicted as God ‘healing’ a sick patient, using medical treatment as a metaphor for covenantal repair.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 7:2",
+    "deliberation": "I looked for idioms and spatial metaphors. 'They do not say in their heart' is a Hebrew idiom for inner reflection. 'Their deeds surround them' portrays actions as encircling them like enemies, a clear metaphor. Divine remembrance and 'before My face' are conventional anthropomorphisms but less central here; I focused on the two clearest figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבַל־יֹֽאמְרוּ֙ לִלְבָבָ֔ם",
+        "english_text": "And they do not say to their heart",
+        "target": ["Israel’s inner deliberation", "human thought/intention", "psychological"],
+        "vehicle": ["speaking to one’s own heart", "inward dialogue", "linguistic/embodied"],
+        "ground": ["self-address as a way of describing internal reflection", "using outward speech imagery for inner thought", "cognition"],
+        "posture": ["critique of their lack of self-examination", "negative moral evaluation", "ethical/theological"],
+        "explanation": "The phrase 'say to their heart' is a Hebrew idiom for serious inward reflection, not literal speech directed at the physical organ.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַתָּה֙ סְבָב֣וּם מַעַלְלֵיהֶ֔ם",
+        "english_text": "Now their deeds surround them",
+        "target": ["the people of Israel themselves", "covenant community", "religious-moral"],
+        "vehicle": ["an encircling force or besieging enemy", "spatial enclosure/siege", "military/spatial"],
+        "ground": ["inescapability and pressure of accumulated sins", "being hemmed in by one’s own actions", "judgment/consequence"],
+        "posture": ["warning about being trapped by their own behavior", "negative moral evaluation", "ethical/theological"],
+        "explanation": "Israel’s own misdeeds are pictured as surrounding them like a besieging force, conveying that their sins have enclosed them and cannot be escaped.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 7:3",
+    "deliberation": "I considered whether 'in their evil they make a king glad, and princes in their lies' might contain metonymy (evil and lies standing for corrupt policies), but this reads naturally as a straightforward moral description of how rulers delight in wickedness. I do not see a clearly marked metaphor, simile, or idiom beyond normal moral language.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 7:4",
+    "deliberation": "Two figurative layers appear: (1) 'All of them are adulterers' is part of Hosea’s overarching marital metaphor for covenant unfaithfulness; though sexual sin may also be literal, the prophetic frame treats it as spiritual adultery. (2) The explicit comparison of their passion/plots to a super-heated oven is a simile with extended imagery in vv. 4–7.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֻּלָּם֙ מְנָ֣אֲפִ֔ים",
+        "english_text": "They commit adultery, all of them",
+        "target": ["Israel’s covenant relationship to YHWH", "religious loyalty/obedience", "religious-moral"],
+        "vehicle": ["marital infidelity (adultery)", "sexual/marital betrayal", "familial/marital"],
+        "ground": ["breach of exclusive relationship, betrayal of pledged loyalty", "unfaithfulness and illicit attachment", "covenant violation"],
+        "posture": ["strong condemnation of their disloyalty", "moral indictment using shocking imagery", "ethical/theological"],
+        "explanation": "Israel’s spiritual and political unfaithfulness to YHWH is characterized as 'adultery,' extending Hosea’s marital metaphor for covenant infidelity.",
+        "confidence": 0.87
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּמ֣וֹ תַנּ֔וּר בֹּעֵ֖רָה מֵאֹפֶ֑ה",
+        "english_text": "Like an oven fired by a baker",
+        "target": ["the inner lust and violent passion of the people", "emotional/moral state", "psychological/ethical"],
+        "vehicle": ["a super-heated bread oven tended by a baker", "intensely hot furnace", "physical/thermal"],
+        "ground": ["intensity, heat, and continuity of desire or anger", "uncontrolled, consuming passion", "judgment/vice"],
+        "posture": ["depicts their sin as dangerously overheated and uncontrolled", "critical, warning tone", "ethical/theological"],
+        "explanation": "Their burning lust and conspiratorial zeal are compared to a baker’s oven kept intensely hot, highlighting the intensity and readiness of their sin.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 7:5",
+    "deliberation": "I looked for figurative expressions around wine and political complicity. 'The heat/fury of wine' is standard Hebrew imagery for intoxication, using heat language metaphorically. 'He stretched out his hand with scoffers/traitors' is an idiom for forming alliance or complicity, not merely a physical gesture.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חֲמַ֣ת מִיָּ֑יִן",
+        "english_text": "the heat [or fury] of wine",
+        "target": ["the condition of drunken princes and king", "intoxicated mental state", "psychological"],
+        "vehicle": ["burning heat/fury", "intense physical heat/anger", "physical/emotional"],
+        "ground": ["loss of control, inflamed state produced by wine", "agitation and over-heating of the person", "vice/consequence"],
+        "posture": ["critical portrayal of elite drunkenness", "negative moral evaluation", "ethical/political"],
+        "explanation": "Drunkenness is described as 'the heat of wine,' using the image of burning heat or fury to convey the inflamed, uncontrolled state caused by intoxication.",
+        "confidence": 0.8
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מָשַׁ֥ךְ יָד֖וֹ אֶת־לֹצְצִֽים",
+        "english_text": "He stretched out his hand with traitors/mockers",
+        "target": ["the king’s political/moral alignment", "alliances/complicity", "political"],
+        "vehicle": ["extending one’s hand in pledge or partnership", "gesture of alliance", "social/ritual"],
+        "ground": ["joining oneself to others, entering partnership", "solidarity and agreement expressed through gesture", "covenant/social bond"],
+        "posture": ["condemns the king’s willing complicity with corrupt men", "negative judgment", "ethical/political"],
+        "explanation": "To 'stretch out the hand with' someone is an idiom for forming alliance or partnership, depicting the king’s deliberate solidarity with corrupt companions.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 7:6",
+    "deliberation": "This continues the oven imagery. Two explicit similes appear: their heart 'like an oven' in ambush, and in the morning 'it burns like a blazing fire.' These compare their inner plotting and passion to an oven/fire. The 'baker' likely personifies their conspiratorial leadership within the same extended image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּֽי־קֵרְב֧וּ כַתַּנּ֛וּר לִבָּ֖ם בְּאׇרְבָּ֑ם",
+        "english_text": "For they approach their ambush; their heart is like an oven",
+        "target": ["the inner motives and desires of the conspirators", "human heart/mind", "psychological/ethical"],
+        "vehicle": ["a hot oven used in baking", "enclosed, heated chamber", "physical/thermal"],
+        "ground": ["hidden but intense, self-sustaining heat of passion and malice", "readiness to burst into action", "vice/violence"],
+        "posture": ["depicts their scheming as dangerously inflamed", "prophetic censure", "ethical/theological"],
+        "explanation": "Their hearts in ambush are likened to a heated oven, emphasizing the concealed but intense and combustible nature of their plotting.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בֹּ֕קֶר ה֥וּא בֹעֵ֖ר כְּאֵ֥שׁ לֶהָבָֽה",
+        "english_text": "In the morning it burns like a blazing fire",
+        "target": ["their fully awakened passion and conspiratorial action", "emotional/moral state", "psychological/ethical"],
+        "vehicle": ["a blazing flame of fire", "intense burning fire", "physical/thermal"],
+        "ground": ["sudden flare-up, consuming and destructive power", "uncontrollable outbreak of violence or lust", "judgment/violence"],
+        "posture": ["warns of the destructive outcome of their heated plotting", "negative moral evaluation", "ethical/theological"],
+        "explanation": "The culmination of their plotting is compared to a blazing fire flaring up in the morning, stressing the consuming and destructive nature of their sin when it erupts.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 7:7",
+    "deliberation": "The oven image continues: 'they are hot like an oven' is an explicit simile. 'They devour their judges' uses eating imagery for overthrowing rulers. I treat these as two distinct figurative expressions within the same thematic field of destructive passion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֻּלָּ֤ם יֵחַ֙מּוּ֙ כַּתַּנּ֔וּר",
+        "english_text": "They all get heated like an oven",
+        "target": ["the emotional state of the people (especially conspirators)", "collective passion/anger", "psychological/social"],
+        "vehicle": ["a heated oven ready for baking", "hot furnace", "physical/thermal"],
+        "ground": ["intense internal heat, readiness to act destructively", "unrestrained passion and rage", "vice/violence"],
+        "posture": ["portrays their passion as uniformly overheated and dangerous", "prophetic critique", "ethical/theological"],
+        "explanation": "Their collective emotional state is compared to a heated oven, highlighting the intensity and uniformity of their destructive zeal.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאָכְל֖וּ אֶת־שֹׁפְטֵיהֶ֑ם",
+        "english_text": "And they devour their rulers/judges",
+        "target": ["the violent overthrow or destruction of rulers", "political leadership", "political"],
+        "vehicle": ["eating/devouring a victim", "consumption of food", "bodily/culinary"],
+        "ground": ["complete removal and destruction, using others as prey", "predatory exploitation", "violence/predation"],
+        "posture": ["condemns the people’s predatory attitude toward their own leaders", "negative moral evaluation", "ethical/political"],
+        "explanation": "The killing or overthrowing of rulers is described as 'devouring' them, a metaphor emphasizing predatory, consuming violence.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 7:8",
+    "deliberation": "I noted two related but distinct images. 'Ephraim mixes himself among the peoples' uses mixture imagery for assimilation. 'Ephraim has become a cake not turned' is a metaphor from cooking: a half-baked cake, burned on one side and raw on the other, symbolizing his ruined, unbalanced state.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶפְרַ֕יִם בָּעַמִּ֖ים ה֣וּא יִתְבּוֹלָ֑ל",
+        "english_text": "Ephraim mixes himself among the peoples",
+        "target": ["Ephraim’s political and religious assimilation", "national identity and policy", "political/religious"],
+        "vehicle": ["material mixing and dilution (e.g., mixing substances)", "blending into a larger mass", "physical/chemical"],
+        "ground": ["loss of distinctness, dilution of unique identity", "becoming indistinguishable in a larger mixture", "cultural/religious compromise"],
+        "posture": ["lament and critique of Ephraim’s self-chosen assimilation", "negative evaluation", "ethical/theological"],
+        "explanation": "Ephraim’s alliance and cultural-religious blending with the nations is portrayed as mixing into other peoples like a substance losing its distinctness in a mixture.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶפְרַ֛יִם הָיָ֥ה עֻגָ֖ה בְּלִ֥י הֲפוּכָֽה",
+        "english_text": "Ephraim has become a cake not turned",
+        "target": ["Ephraim’s ruined national/spiritual condition", "covenant community", "religious/political"],
+        "vehicle": ["a cake or loaf left unturned on the fire", "spoiled or unevenly baked food", "culinary"],
+        "ground": ["ruin, imbalance, one-sided burning and underdevelopment", "uselessness and failure to reach proper form", "judgment/decay"],
+        "posture": ["scornful depiction of Ephraim’s damaged state", "prophetic ridicule as warning", "ethical/theological"],
+        "explanation": "Ephraim is likened to a cake left unturned, burned on one side and raw on the other, symbolizing a nation spoiled and useless through compromised alliances and partial commitments.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 7:9",
+    "deliberation": "I saw two personified/metaphorical depictions of national decline. 'Strangers have devoured his strength' uses eating imagery for exploitation. 'Gray hairs are sprinkled on him' extends the personification of the nation as an aging man whose decline is visible but unnoticed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָכְל֤וּ זָרִים֙ כֹּח֔וֹ",
+        "english_text": "Strangers have consumed his strength",
+        "target": ["Ephraim/Israel’s political-military and economic power", "national strength", "political/economic"],
+        "vehicle": ["eating/consuming food", "devouring a meal or prey", "bodily/culinary"],
+        "ground": ["progressive depletion and exploitation by others", "loss of substance and vitality", "judgment/consequence"],
+        "posture": ["lament over their blindness to exploitation", "critical but sorrowful tone", "ethical/theological"],
+        "explanation": "Foreign powers draining Israel’s resources and power are portrayed as 'strangers' eating up his strength, likening exploitation to consuming a victim.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "גַּם־שֵׂיבָה֙ זָ֣רְקָה בּ֔וֹ",
+        "english_text": "Also gray hairs are sprinkled upon him",
+        "target": ["Ephraim as a nation in decline", "collective national life", "political/religious"],
+        "vehicle": ["an aging man whose gray hairs appear sprinkled over his head", "signs of bodily aging", "embodied/temporal"],
+        "ground": ["subtle but real aging and decline, visible signs of approaching weakness", "nearing the end of vigor", "judgment/decay"],
+        "posture": ["mournful exposure of unnoticed decline", "warning through vivid image", "ethical/theological"],
+        "explanation": "The nation is personified as an aging man with gray hairs scattered on him, highlighting Israel’s unnoticed but advanced decline toward weakness and judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 7:10",
+    "deliberation": "The key figurative element is 'the pride of Israel answers/testifies before his face.' Here 'pride' is personified as a witness giving testimony against Israel. The rest (not turning back, not seeking YHWH) is standard covenant-language without a marked metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעָנָ֥ה גְאֽוֹן־יִשְׂרָאֵ֖ל בְּפָנָ֑יו",
+        "english_text": "The pride of Israel is humbled / answers before his face",
+        "target": ["Israel’s arrogant attitude and behavior", "moral-spiritual posture", "religious/ethical"],
+        "vehicle": ["a witness giving an answer or testimony in someone’s presence", "legal testimony", "legal/judicial"],
+        "ground": ["pride itself serving as evidence, self-incriminating witness", "behavior testifying against the person", "judgment/accountability"],
+        "posture": ["exposes Israel’s pride as its own accuser", "strong moral indictment", "ethical/theological"],
+        "explanation": "Israel’s 'pride' is personified as a witness that 'answers' in his face, meaning their arrogant conduct itself stands as public testimony against them.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Hosea 7:11",
+    "deliberation": "Two figurative components stand out: Ephraim 'has become like a silly dove without heart' is a simile likening the nation’s foreign-policy vacillation to a gullible bird. Within that, 'without heart' is a Hebrew idiom meaning lacking sense or understanding.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֣י אֶפְרַ֔יִם כְּיוֹנָ֥ה פוֹתָ֖ה אֵ֣ין לֵ֑ב",
+        "english_text": "Ephraim has become like a silly dove without heart",
+        "target": ["Ephraim’s political-spiritual naiveté and instability", "national character/behavior", "political/religious"],
+        "vehicle": ["a simple, easily trapped dove devoid of sense", "gullible, defenseless bird", "animal/behavioral"],
+        "ground": ["gullibility, lack of foresight, easily lured into danger", "flightiness and lack of stable judgment", "folly"],
+        "posture": ["mocking rebuke of Ephraim’s foolish diplomacy", "negative moral evaluation", "ethical/political"],
+        "explanation": "Ephraim’s foolish turning alternately to Egypt and Assyria is compared to a naive dove that lacks sense and is easily ensnared.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵ֣ין לֵ֑ב",
+        "english_text": "without heart",
+        "target": ["Ephraim’s lack of understanding", "cognitive capacity", "psychological"],
+        "vehicle": ["having or lacking a physical heart", "bodily organ as seat of thought", "embodied/cognitive"],
+        "ground": ["no capacity for judgment or discernment", "deficiency of inner wisdom", "folly"],
+        "posture": ["judgment on their irrational behavior", "negative evaluation", "ethical/theological"],
+        "explanation": "The idiom 'without heart' in biblical Hebrew means without understanding or sense, not literally lacking a heart-organ.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Hosea 7:12",
+    "deliberation": "Two hunting/birding images frame divine judgment: 'I will spread My net over them' is a metaphor for God’s capture of the people through judgment. 'I will bring them down like the birds of heaven' is a simile extending that imagery. Both treat Israel as birds trapped and brought low.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶפְר֤וֹשׂ עֲלֵיהֶם֙ רִשְׁתִּ֔י",
+        "english_text": "I will spread My net over them",
+        "target": ["YHWH’s act of judgment on Israel", "divine intervention", "religious/judicial"],
+        "vehicle": ["a hunter’s or fowler’s net spread to catch prey", "trapping apparatus", "hunting"],
+        "ground": ["inescapable capture and restriction of movement", "being taken unawares and rendered helpless", "judgment/punishment"],
+        "posture": ["asserts divine sovereignty as hunter over evasive prey", "warning tone", "theological"],
+        "explanation": "God’s coming judgment is depicted as a hunter spreading a net over prey, emphasizing the inescapable capture of the wayward people.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּע֥וֹף הַשָּׁמַ֖יִם אוֹרִידֵ֑ם",
+        "english_text": "I will bring them down like the birds of the sky",
+        "target": ["Israel’s forced humiliation and downfall", "national status", "political/religious"],
+        "vehicle": ["birds of the sky being shot or trapped and brought down", "captured wild birds", "animal/hunting"],
+        "ground": ["loss of freedom and height, forced descent to captivity or death", "sudden reversal from freedom to capture", "judgment/humiliation"],
+        "posture": ["threatening depiction of certain downfall", "judicial tone", "theological"],
+        "explanation": "Israel’s humiliation is compared to birds of the sky being brought down, stressing the dramatic loss of freedom and status under divine judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Hosea 7:13",
+    "deliberation": "I examined whether 'wandered from Me' is literal or figurative. In Hosea’s covenant context it clearly uses spatial language for spiritual apostasy. The rest of the verse (redeeming, speaking lies) is straightforward theological description.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּֽי־נָדְד֣וּ מִמֶּ֔נִּי",
+        "english_text": "For they have strayed / wandered from Me",
+        "target": ["Israel’s covenant unfaithfulness and disloyalty", "spiritual relationship", "religious"],
+        "vehicle": ["physical wandering away from a person or place", "movement off the proper path", "spatial/kinetic"],
+        "ground": ["abandoning rightful place, leaving proper relationship", "aimless, willful departure", "covenant breach"],
+        "posture": ["lamenting and condemning their apostasy", "negative moral judgment", "ethical/theological"],
+        "explanation": "Israel’s religious and moral rebellion is portrayed as 'wandering' away from God, using physical movement as a metaphor for spiritual apostasy.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Hosea 7:14",
+    "deliberation": "Two figurative elements are clear despite textual difficulty. 'They howl upon their beds' uses animal-like howling for insincere, self-pitying lament. 'They turn aside from Me' uses directional language for rebellion. I refrained from treating the debated verb on grain and wine as a separate figure given lexical uncertainty in the prompt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֥י יְיֵלִ֖ילוּ עַל־מִשְׁכְּבוֹתָ֑ם",
+        "english_text": "For they wail/howl upon their beds",
+        "target": ["Israel’s self-centered crying in distress", "emotional response", "psychological/religious"],
+        "vehicle": ["howling like animals, loud ululation", "intense animal-like cry", "animal/expressive"],
+        "ground": ["loud, uncontrolled lament, but lacking true directed prayer", "noisy display rather than sincere address", "hypocrisy/shallow grief"],
+        "posture": ["criticizes their lament as animal-like and self-pitying, not true prayer", "negative moral judgment", "ethical/theological"],
+        "explanation": "Their cries in distress are depicted as 'howling on their beds,' an exaggerated, almost animal image that underscores the self-centered and insincere nature of their lament.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יָס֥וּרוּ בִֽי",
+        "english_text": "They turn away from Me",
+        "target": ["their choice to reject God’s ways", "covenant loyalty", "religious/ethical"],
+        "vehicle": ["turning aside from a person or path", "change of physical direction", "spatial/kinetic"],
+        "ground": ["deliberate diversion from proper relationship and path", "reorientation away from the rightful Lord", "disobedience"],
+        "posture": ["condemnation of their willful rebellion", "negative evaluation", "ethical/theological"],
+        "explanation": "Moral and spiritual rebellion is portrayed as 'turning away' from God, using spatial turning to depict relational disloyalty.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Hosea 7:15",
+    "deliberation": "The verse describes God disciplining and strengthening their arms, which could be mildly anthropomorphic but is a normal way to speak of giving military strength. It lacks a clearly marked metaphor, simile, or idiom distinct from standard theological language, so I do not count a specific figurative instance.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Hosea 7:16",
+    "deliberation": "I identified three expressions: (1) 'They return, not upward' uses vertical spatial language as a metaphor for not truly turning to the Most High. (2) 'They have become like a deceitful bow' is an explicit simile for unreliability. (3) 'Because of the rage of their tongue' uses the tongue metonymically for speech and personifies it as possessing 'rage', making their words the cause of their downfall.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יָשׁ֣וּבוּ׀ לֹ֣א עָ֗ל",
+        "english_text": "They return, but not upward",
+        "target": ["Israel’s attempted but false 'repentance'", "religious response", "religious"],
+        "vehicle": ["movement upward toward a higher place", "vertical spatial ascent", "spatial"],
+        "ground": ["the proper direction toward God as 'upward', but their turning is wrongly oriented", "external motion without reaching the true goal", "false repentance"],
+        "posture": ["critical exposure of superficial turning", "negative evaluation", "ethical/theological"],
+        "explanation": "Their supposed 'return' is said to be 'not upward,' metaphorically indicating that their turning is not truly directed toward the Most High God.",
+        "confidence": 0.83
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָיוּ֙ כְּקֶ֣שֶׁת רְמִיָּ֔ה",
+        "english_text": "They have become like a deceitful bow",
+        "target": ["Israel’s unreliability and failure in their covenant role", "collective character", "religious/political"],
+        "vehicle": ["a faulty or treacherous bow that misfires", "unreliable weapon", "military/technological"],
+        "ground": ["failure to hit the intended target, unreliability under pressure", "deceptive appearance of usefulness", "unfaithfulness"],
+        "posture": ["derisive judgment of their untrustworthiness", "prophetic censure", "ethical/theological"],
+        "explanation": "Israel is compared to a deceitful bow that does not shoot straight, highlighting their unreliability and failure to fulfill their intended purpose before God.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִזַּ֣עַם לְשׁוֹנָ֑ם",
+        "english_text": "because of the rage of their tongue",
+        "target": ["the harmful, hostile speech of the leaders", "verbal behavior", "ethical/social"],
+        "vehicle": ["an enraged 'tongue' as if it had its own anger", "body part representing speech", "embodied/linguistic"],
+        "ground": ["hostile, inflammatory words causing destructive consequences", "speech as the active agent of anger", "moral culpability of words"],
+        "posture": ["warns that their own speech will bring judgment", "negative evaluation", "ethical/theological"],
+        "explanation": "The 'tongue' stands metonymically for their speech and is personified as having 'rage'; their destructive words are portrayed as the direct cause of their downfall.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

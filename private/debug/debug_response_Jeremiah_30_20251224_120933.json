@@ -1,0 +1,946 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 30:1",
+    "deliberation": "Considered whether the prophetic formula 'the word that came to Jeremiah from YHWH' is purely literal. The collocation treats a verbal message as something that 'comes' like an object or messenger, which reflects a conventional metaphor/idiom for revelation rather than a strictly literal description.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַדָּבָר אֲשֶׁר הָיָה אֶל־יִרְמְיָהוּ מֵאֵת יְהוָה",
+        "english_text": "The word that came to Jeremiah from the LORD",
+        "target": [
+          "prophetic revelation received by Jeremiah",
+          "divine communication",
+          "theological"
+        ],
+        "vehicle": [
+          "a concrete 'word' that can 'come' to someone",
+          "physical object or messenger in motion",
+          "everyday physical experience"
+        ],
+        "ground": [
+          "transfer of a message from sender to receiver",
+          "movement from origin to destination parallels reception of speech",
+          "communication as transmission"
+        ],
+        "posture": [
+          "formal prophetic report formula marking authority",
+          "speech-act framing",
+          "literary/theological"
+        ],
+        "explanation": "The revelation is conceptualized as a 'word' that physically 'comes' to Jeremiah, using the metaphor of a moving object or messenger to describe an auditory/mental event. This has become a conventional prophetic idiom.",
+        "confidence": 0.6
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 30:2",
+    "deliberation": "The verse commands Jeremiah to write specific spoken words in a scroll. The language of speaking, writing, and scrolls is straightforwardly literal within the prophetic context; no clear metaphor, simile, personification, or idiom beyond normal usage is present.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 30:3",
+    "deliberation": "Examined 'days are coming' and 'restore the fortunes/turn the captivity'. The former is a normal temporal idiom. The Hebrew 'וְשַׁבְתִּי אֶת־שְׁבוּת' is a fixed idiom literally 'turn the captivity', broadly used for restoring fortunes; it functions metonymically/idiomatically for comprehensive restoration.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשַׁבְתִּי אֶת־שְׁבוּת עַמִּי יִשְׂרָאֵל וִיהוּדָה",
+        "english_text": "when I will restore the fortunes of My people Israel and Judah",
+        "target": [
+          "the overall condition and well-being of Israel and Judah",
+          "national restoration",
+          "social/political"
+        ],
+        "vehicle": [
+          "their 'captivity' or exiled state being 'turned back'",
+          "reversal of a state of bondage",
+          "political/military captivity"
+        ],
+        "ground": [
+          "a complete reversal from loss and bondage to freedom and prosperity",
+          "turning around a dire situation",
+          "change from negative to positive condition"
+        ],
+        "posture": [
+          "assurance of comprehensive future restoration",
+          "promissory declaration",
+          "theological/pastoral"
+        ],
+        "explanation": "The idiom 'turn the captivity/restore the fortunes' uses 'captivity' metonymically for the whole distressed condition of the people and expresses restoration as its reversal.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 30:4",
+    "deliberation": "Merely introduces that these are the words YHWH spoke concerning Israel and Judah. No metaphor, simile, or other figurative device beyond literal reference to divine speech.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 30:5",
+    "deliberation": "Considered whether 'voice of trembling' is figurative. It can be understood literally as the sound of panicked cries from trembling people. 'Fear and not peace' is a direct contrast, not a figurative pairing like a merism. Overall the language can be read straightforwardly.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 30:6",
+    "deliberation": "The verse clearly uses a simile comparing men in terror to a woman in labor, and a vivid image of all faces turning pale/greenish to express fear. Both qualify as distinct figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רָאִיתִי כׇל־גֶּבֶר יָדָיו עַל־חֲלָצָיו כַּיּוֹלֵדָה",
+        "english_text": "Why then do I see every man with his hands on his loins like a woman in labor?",
+        "target": [
+          "the men of the nation under judgment",
+          "people experiencing terror and anguish",
+          "Israel/Judah corporately"
+        ],
+        "vehicle": [
+          "a woman in labor clutching her loins",
+          "a person in childbirth",
+          "family/biological experience"
+        ],
+        "ground": [
+          "intense, inescapable pain and helplessness",
+          "physical contortion and groaning",
+          "extreme distress"
+        ],
+        "posture": [
+          "dramatic warning about the severity of coming trouble",
+          "rhetorical vividness",
+          "prophetic exhortation"
+        ],
+        "explanation": "Men facing judgment are explicitly compared to a woman in labor to convey the extremity and inevitability of their anguish.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנֶהֶפְכוּ כׇל־פָּנִים לְיֵרָקוֹן",
+        "english_text": "and all faces turned pale [greenish]",
+        "target": [
+          "the emotional and psychological state of the people",
+          "collective fear and faintness",
+          "Israel/Judah"
+        ],
+        "vehicle": [
+          "faces becoming greenish/pale",
+          "a sickly, bloodless complexion",
+          "bodily appearance"
+        ],
+        "ground": [
+          "visible symptoms of inner terror and weakness",
+          "loss of strength and vitality",
+          "fear manifesting in the body"
+        ],
+        "posture": [
+          "vivid description to impress the horror of the situation",
+          "evocative imagery",
+          "prophetic warning"
+        ],
+        "explanation": "The turning of all faces to a sickly pale/green color is a figurative way of portraying the people’s overwhelming fear and debilitation.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 30:7",
+    "deliberation": "This verse calls the day 'great, none like it' (an emphatic exaggeration) and speaks of 'Jacob' as the one in trouble, using the ancestor's name for the nation; that is a standard metonymic/synecdochic usage.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "גָדוֹל הַיּוֹם הַהוּא מֵאַיִן כָּמֹהוּ",
+        "english_text": "that day is awesome; there is none like it",
+        "target": [
+          "the coming time of judgment and deliverance",
+          "eschatological crisis day",
+          "theological history"
+        ],
+        "vehicle": [
+          "a day that is utterly unique, with no comparable day",
+          "unsurpassed event",
+          "extreme comparison"
+        ],
+        "ground": [
+          "the unparalleled intensity of the coming trouble",
+          "its exceptional severity and significance",
+          "maximum seriousness"
+        ],
+        "posture": [
+          "heightened emphasis on the uniqueness of the event",
+          "rhetorical exaggeration for impact",
+          "prophetic warning/assurance"
+        ],
+        "explanation": "Saying that there is 'none like it' is a hyperbolic way of stressing the extraordinary character of the coming day of trouble.",
+        "confidence": 0.83
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עֵת־צָרָה הִיא לְיַעֲקֹב",
+        "english_text": "It is a time of trouble for Jacob",
+        "target": [
+          "the nation descended from Jacob",
+          "Israel/Judah as a people",
+          "covenant community"
+        ],
+        "vehicle": [
+          "the single ancestor 'Jacob'",
+          "an individual patriarchal figure",
+          "family/ancestral identity"
+        ],
+        "ground": [
+          "Jacob as representative head of his descendants",
+          "using the forefather’s name for the nation",
+          "synecdoche/metonymy of part for whole"
+        ],
+        "posture": [
+          "covenantal and historical framing of the nation’s experience",
+          "relational identification",
+          "theological/narrative"
+        ],
+        "explanation": "The name 'Jacob' stands for the whole nation descended from him, a synecdochic/metonymic way of speaking about Israel.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 30:8",
+    "deliberation": "The verse speaks of breaking a 'yoke' from the neck and snapping 'bonds'. These are conventional metaphors for liberation from political oppression, not descriptions of literal farm implements or shackles on Israel's neck.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶשְׁבֹּר עֻלּוֹ מֵעַל צַוָּארֶךָ",
+        "english_text": "I will break the yoke from off your neck",
+        "target": [
+          "foreign domination over Israel/Judah",
+          "political and social oppression",
+          "international power relations"
+        ],
+        "vehicle": [
+          "a yoke resting on an animal’s neck",
+          "farm-implement of forced labor",
+          "agrarian labor world"
+        ],
+        "ground": [
+          "external control that restricts freedom and forces service",
+          "weight and constraint imposed on the subject",
+          "subjection to another’s will"
+        ],
+        "posture": [
+          "promise of decisive liberation from oppressive rule",
+          "emancipatory proclamation",
+          "theological/political"
+        ],
+        "explanation": "Oppressive foreign rule is portrayed as a heavy yoke on the neck that God will break, using agrarian imagery for political servitude.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמוֹסְרוֹתֶיךָ אֲנַתֵּק",
+        "english_text": "and I will rip off your bonds",
+        "target": [
+          "the constraints of enslavement and captivity",
+          "limitations imposed by foreign powers",
+          "social/political condition"
+        ],
+        "vehicle": [
+          "bonds/cords that tie and restrain",
+          "physical restraints",
+          "imprisonment imagery"
+        ],
+        "ground": [
+          "being tied up and unable to move freely",
+          "loss of autonomy under compulsion",
+          "restriction of action"
+        ],
+        "posture": [
+          "depiction of God as the one who frees from restraints",
+          "liberating action",
+          "theological promise"
+        ],
+        "explanation": "The imagery of snapping bonds continues the metaphor of Israel as bound captives whom God will physically unbind to set free.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 30:9",
+    "deliberation": "The key figurative element is the idiom 'raise up' a king, which goes beyond literal vertical movement to mean appointing or establishing a ruler.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דָּוִד מַלְכָּם אֲשֶׁר אָקִים לָהֶם",
+        "english_text": "David, the king whom I will raise up for them",
+        "target": [
+          "the future establishment of a Davidic ruler",
+          "appointment of leadership",
+          "political/theological rule"
+        ],
+        "vehicle": [
+          "raising someone up",
+          "lifting a person to a higher position",
+          "physical elevation"
+        ],
+        "ground": [
+          "being exalted from a low to a high position",
+          "installation into a role of prominence",
+          "transition from ordinary to royal status"
+        ],
+        "posture": [
+          "promise of divinely established leadership",
+          "restorative hope",
+          "messianic/kingship theology"
+        ],
+        "explanation": "To 'raise up' David as king uses the metaphor of physical elevation to describe God’s act of appointing or installing a ruler.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 30:10",
+    "deliberation": "Looked for metaphors beyond the covenant title 'my servant' and the ancestry-based name 'Jacob'. The most notable figure is the use of 'Jacob' (and parallel 'Israel') as synecdoche/metonymy for the nation, framed in covenant language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עַבְדִּי יַעֲקֹב ... יִשְׂרָאֵל",
+        "english_text": "My servant Jacob … O Israel",
+        "target": [
+          "the people descended from Jacob",
+          "the covenant nation",
+          "Israel/Judah"
+        ],
+        "vehicle": [
+          "the individual patriarch Jacob/Israel",
+          "a single servant figure",
+          "ancestral person"
+        ],
+        "ground": [
+          "the ancestor embodies and represents his descendants",
+          "one person’s name stands for the whole people",
+          "synecdoche of forefather for nation"
+        ],
+        "posture": [
+          "intimate covenantal address tying present people to their ancestor",
+          "reassuring identification",
+          "theological/narrative"
+        ],
+        "explanation": "Calling the nation 'my servant Jacob' and 'Israel' uses the ancestor’s name as a synecdoche/metonymy for the whole covenant people.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 30:11",
+    "deliberation": "Considered whether 'make a full end' and 'chastise you in measure' are figurative. In this context, they are standard ways of describing judgment and discipline without a distinct concrete image (like storm, wound, or yoke), so I treat them as conventional legal/judicial language rather than marked figurative imagery.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 30:12",
+    "deliberation": "The verse uses medical/injury language ('fracture', 'wound') for Judah’s national calamity. This is a clear metaphorical portrayal of political/spiritual disaster as bodily injury.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָנ֣וּשׁ לְשִׁבְרֵךְ נַחְלָה מַכָּתֵךְ",
+        "english_text": "Your injury is incurable, your wound severe",
+        "target": [
+          "the desperate national condition of Judah/Israel",
+          "political and spiritual ruin",
+          "covenant community in crisis"
+        ],
+        "vehicle": [
+          "an incurable fracture and grievous wound",
+          "serious bodily trauma and sickness",
+          "medical/injury situation"
+        ],
+        "ground": [
+          "severity and apparent hopelessness of the condition",
+          "helplessness and pain associated with a grave wound",
+          "need for healing/restoration"
+        ],
+        "posture": [
+          "underscoring the extremity of judgment under human means",
+          "diagnostic pronouncement",
+          "prophetic indictment"
+        ],
+        "explanation": "National calamity is portrayed as a bodily fracture and wound that is humanly incurable, setting up God’s later promise to heal.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 30:13",
+    "deliberation": "The verse extends the prior medical metaphor, combining legal ('pleads your case') and medical ('for bandage', 'healing') language to describe the lack of remedy for the nation’s condition.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵין־דָּן דִּינֵךְ לְמָזוֹר רְפֻאוֹת תְּעָלָה אֵין לָךְ",
+        "english_text": "No one pleads for the healing of your sickness, there is no remedy, no recovery for you",
+        "target": [
+          "Israel’s broken covenant and political devastation",
+          "the nation’s overall plight",
+          "corporate condition"
+        ],
+        "vehicle": [
+          "a sick person needing bandaging and medical treatment with no advocate or remedy",
+          "untreated illness",
+          "medical/legal situation"
+        ],
+        "ground": [
+          "absence of any effective help or advocate",
+          "hopelessness of the condition apart from divine intervention",
+          "need for both just advocacy and healing care"
+        ],
+        "posture": [
+          "highlighting the hopelessness of human help",
+          "rhetorical deepening of the sickness imagery",
+          "prophetic lament/indictment"
+        ],
+        "explanation": "The nation’s desperate situation is depicted as a sickness requiring bandaging and healing, yet with no doctor or advocate to secure treatment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 30:14",
+    "deliberation": "Two main figures appear: (1) 'lovers' forgetting the addressee, portraying political allies/idols as forsaking lovers, and (2) God striking with 'the blow of an enemy' and 'cruel chastisement', continuing the punishment-as-beating metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כׇּל־מְאַהֲבַיִךְ שְׁכֵח֔וּךְ אוֹתָךְ לֹא יִדְרֹשׁוּ",
+        "english_text": "All your lovers have forgotten you; they do not seek you out",
+        "target": [
+          "Judah’s political allies and idolatrous partners",
+          "foreign nations and false supports",
+          "international relationships"
+        ],
+        "vehicle": [
+          "lovers who forget and no longer seek their beloved",
+          "failed romantic/sexual relationships",
+          "human intimacy"
+        ],
+        "ground": [
+          "former intimacy and dependence now betrayed",
+          "abandonment by those once courted and trusted",
+          "unfaithfulness and rejection"
+        ],
+        "posture": [
+          "exposing Judah’s misplaced trust and unfaithfulness",
+          "ironic reversal of former illicit 'love' alliances",
+          "prophetic critique"
+        ],
+        "explanation": "Judah’s foreign allies and idolatries are depicted as 'lovers' who have now forgotten and abandoned her, using marital/adulterous imagery for political and religious alliances.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי מַכַּת אוֹיֵב הִכִּיתִיךְ מוּסַר אַכְזָרִי",
+        "english_text": "For I have struck you as an enemy strikes, with cruel chastisement",
+        "target": [
+          "the judgments God has brought on Judah",
+          "national defeat and suffering",
+          "covenant discipline"
+        ],
+        "vehicle": [
+          "an enemy delivering a harsh physical blow and cruel beating",
+          "corporal punishment by a foe",
+          "violent physical assault"
+        ],
+        "ground": [
+          "severity and pain of the inflicted judgment",
+          "experience comparable to being beaten by an enemy",
+          "sense of hostility and harsh correction"
+        ],
+        "posture": [
+          "emphasizing the severity of divine discipline",
+          "interpretive framing of calamity as punitive",
+          "prophetic explanation"
+        ],
+        "explanation": "God’s disciplinary judgment is portrayed in terms of an enemy’s grievous blow and cruel beating, extending the metaphor of bodily punishment for national sin.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 30:15",
+    "deliberation": "Reiterates the 'fracture' and 'pain' imagery from vv. 12–14, again using bodily injury as a metaphor for Judah’s dire condition and suffering.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַה־תִּזְעַק עַל־שִׁבְרֵךְ אָנ֖וּשׁ מַכְאֹבֵךְ",
+        "english_text": "Why cry out over your injury, that your wound is incurable?",
+        "target": [
+          "the consequences of Judah’s great iniquity",
+          "national suffering and loss",
+          "corporate fate"
+        ],
+        "vehicle": [
+          "a grievous fracture and incurable pain",
+          "severe bodily wound and agony",
+          "medical/injury condition"
+        ],
+        "ground": [
+          "severity and ongoing nature of the suffering",
+          "apparent hopelessness of relief",
+          "relationship between cause (sin) and painful effect"
+        ],
+        "posture": [
+          "rebuking complaint about judgment while underscoring its just cause",
+          "didactic explanation",
+          "prophetic admonition"
+        ],
+        "explanation": "The nation’s suffering under judgment is again represented as an incurable fracture and intense pain, extending the metaphor of bodily injury.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 30:16",
+    "deliberation": "The opening clause uses eating imagery ('all who devour you shall be devoured'), a standard metaphor for hostile exploitation or destruction. The plundering language can be taken literally for wartime spoils, but the 'eating' phrase is particularly figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָכֵן כׇּל־אֹכְלַיִךְ יֵאָכֵלוּ",
+        "english_text": "Therefore, all who wanted to devour you shall be devoured",
+        "target": [
+          "the hostile actions of Israel’s enemies against her",
+          "oppression and exploitation of the nation",
+          "international aggression"
+        ],
+        "vehicle": [
+          "devouring someone as food",
+          "predatory eating",
+          "animal predation"
+        ],
+        "ground": [
+          "complete consumption and destruction of the victim",
+          "predatory taking of resources and life",
+          "one-sided benefit at the expense of another"
+        ],
+        "posture": [
+          "retributive justice that mirrors the enemies’ own actions",
+          "lex talionis imagery",
+          "prophetic reversal promise"
+        ],
+        "explanation": "Those who exploited and destroyed Israel are portrayed as predators who 'devour' her; God promises that they themselves will be 'devoured' in return.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 30:17",
+    "deliberation": "The verse explicitly reverses the earlier sickness/wound imagery: God will 'bring healing' and 'heal your wounds'. This continues the medical metaphor for national restoration.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי אַעֲלֶה אֲרֻכָה לָךְ וּמִמַּכּוֹתַיִךְ אֶרְפָּאֵךְ",
+        "english_text": "But I will bring healing to you and cure you of your wounds",
+        "target": [
+          "Israel’s broken political and spiritual condition",
+          "the restoration of the people",
+          "corporate renewal"
+        ],
+        "vehicle": [
+          "medical healing and curing of bodily wounds",
+          "recovery of a sick or injured person",
+          "health/medicine domain"
+        ],
+        "ground": [
+          "transition from damaged, painful state to wholeness",
+          "removal of harmful effects and restoration of function",
+          "careful, restorative intervention"
+        ],
+        "posture": [
+          "promise of comprehensive restoration",
+          "comforting reassurance",
+          "theological salvation imagery"
+        ],
+        "explanation": "God’s restorative work for the nation is depicted as bringing up a healing bandage and curing physical wounds, answering the prior 'incurable' diagnosis.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 30:18",
+    "deliberation": "Two figures are prominent: the idiom 'restore the fortunes/turn the captivity' repeated from v.3, and 'Jacob’s tents' as a metonym for the dwellings/people of Israel.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנְנִי־שָׁב שְׁבוּת אׇהֳלֵי יַעֲקֹב",
+        "english_text": "I will restore the fortunes of Jacob’s tents",
+        "target": [
+          "the overall welfare and status of Jacob’s descendants",
+          "national fortunes",
+          "social/political condition"
+        ],
+        "vehicle": [
+          "turning back the captivity/fortunes associated with their tents",
+          "reversal of exilic loss affecting dwellings",
+          "restoration from displacement"
+        ],
+        "ground": [
+          "comprehensive reversal from loss to prosperity and stability",
+          "return from exile to secure habitation",
+          "undoing previous judgment"
+        ],
+        "posture": [
+          "assurance of full restorative action",
+          "promissory formula",
+          "theological hope"
+        ],
+        "explanation": "As in v.3, 'restore the fortunes/turn the captivity' is an idiom using 'captivity' as a metonym for the whole distressed condition, expressing its reversal.",
+        "confidence": 0.85
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אׇהֳלֵי יַעֲקֹב",
+        "english_text": "Jacob’s tents",
+        "target": [
+          "the households and dwelling-communities of Israel",
+          "the people in their homes and settlements",
+          "covenant community’s life"
+        ],
+        "vehicle": [
+          "tents belonging to Jacob",
+          "nomadic dwelling structures",
+          "household imagery"
+        ],
+        "ground": [
+          "tents/houses represent the domestic life of the people",
+          "dwelling-places stand for their inhabitants",
+          "metonymy of place for people"
+        ],
+        "posture": [
+          "emphasizing care for ordinary domestic life, not just institutions",
+          "tender restorative concern",
+          "pastoral/theological"
+        ],
+        "explanation": "The phrase 'Jacob’s tents' uses the dwellings synecdochically for the people and their domestic life, emphasizing restoration at the household level.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 30:19",
+    "deliberation": "The line 'I will make them honored [literally, heavy] and they shall not be small' uses the Hebrew root כבד ('be heavy') figuratively for honor/importance, contrasted with being 'small' (insignificant). This reflects a weight-as-honor metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהִכְבַּדְתִּים וְלֹא יִצְעָרוּ",
+        "english_text": "I will make them honored, and they shall not be humbled [literally: I will make them heavy and they shall not be small]",
+        "target": [
+          "the future status of the restored people",
+          "their social and communal importance",
+          "corporate dignity"
+        ],
+        "vehicle": [
+          "heaviness vs. smallness in physical size or weight",
+          "large, weighty body vs. small, slight one",
+          "physical dimension"
+        ],
+        "ground": [
+          "what is heavy/weighty is significant and impressive; what is small is insignificant",
+          "social 'weight' equated with honor and influence",
+          "contrast between prominence and insignificance"
+        ],
+        "posture": [
+          "affirming a reversal from humiliation to honor",
+          "elevating promise",
+          "prophetic encouragement"
+        ],
+        "explanation": "The Hebrew verbs use the metaphor of physical weight and size to describe social honor and significance, promising that the people will be 'weighty' (honored) rather than 'small' (insignificant).",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 30:20",
+    "deliberation": "References to children being 'as of old' and the community being 'established before me' function as temporal and covenantal descriptions. They do not introduce a distinct concrete image used figuratively; they are straightforward in context.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 30:21",
+    "deliberation": "The notable figure is the idiom 'who has pledged/engaged his heart to approach me', which treats the 'heart' as the seat of resolve/courage and speaks of 'engaging' it, a metaphorical way to describe daring commitment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי מִי הוּא־זֶה עָרַב אֶת־לִבּוֹ לָגֶשֶׁת אֵלַי",
+        "english_text": "For who would otherwise dare [literally: pledge his heart] to approach Me?",
+        "target": [
+          "the inner resolve and courage of the one who approaches God",
+          "human willingness to draw near to the divine",
+          "spiritual/moral disposition"
+        ],
+        "vehicle": [
+          "pledging/engaging one’s heart",
+          "putting one’s inner self up as security",
+          "economic/legal guarantee image"
+        ],
+        "ground": [
+          "total inner commitment and risk in approaching God",
+          "the heart as the center of will and courage",
+          "binding oneself to an action"
+        ],
+        "posture": [
+          "stressing the extraordinary privilege and boldness of this ruler’s access",
+          "awe-inducing rhetorical question",
+          "theological emphasis on mediated approach"
+        ],
+        "explanation": "The phrase 'pledged his heart' uses legal/economic imagery of surety and the heart-as-will metaphor to describe the daring inner commitment required to approach God.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 30:22",
+    "deliberation": "This is the classic covenant formula 'You shall be my people, and I will be your God'. Despite its relational depth, it is not built on a concrete image functioning figuratively; rather, it states the covenant relationship directly.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 30:23",
+    "deliberation": "Here divine wrath is vividly imaged as a storm/whirlwind that goes forth and whirls down on the head of the wicked. This is an extended metaphor with personification of the storm as an active agent of YHWH’s anger.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה סַעֲרַת יְהוָה חֵמָה יָצְאָה סַעַר מִתְגּוֹרֵר עַל רֹאשׁ רְשָׁעִים יָחוּל",
+        "english_text": "Lo, the LORD’s storm goes forth in fury, a raging tempest; it shall whirl down upon the head of the wicked",
+        "target": [
+          "YHWH’s judgment and wrath against the wicked",
+          "the execution of divine punishment",
+          "historical calamity as divine action"
+        ],
+        "vehicle": [
+          "a fierce storm/whirlwind going forth and whirling down",
+          "raging natural tempest",
+          "meteorological phenomena"
+        ],
+        "ground": [
+          "sudden, overwhelming, and uncontrollable destructive force",
+          "inescapable impact on those in its path",
+          "chaotic yet purposeful devastation"
+        ],
+        "posture": [
+          "depicting judgment as terrifying and unstoppable",
+          "warning and reassurance (to different audiences)",
+          "prophetic theophany imagery"
+        ],
+        "explanation": "Divine wrath is portrayed as YHWH’s own storm, a raging whirlwind that falls on the wicked, using storm imagery and personification to convey the power and direction of judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 30:24",
+    "deliberation": "The main figure is the personification of 'the anger of the LORD' as something that 'will not turn back' until it has accomplished its purpose, treating divine anger as an active agent that can advance and then retreat.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא יָשׁוּב חֲרוֹן אַף־יְהוָה עַד־עֲשֹׂתֹו וְעַד־הֲקִימוֹ מְזִמּוֹת לִבּוֹ",
+        "english_text": "The anger of the LORD shall not turn back till it has fulfilled and completed His purposes",
+        "target": [
+          "the process of God’s judgment being carried out",
+          "the effective operation of divine wrath",
+          "covenantal justice"
+        ],
+        "vehicle": [
+          "an advancing agent (anger) that can turn back only after finishing a task",
+          "a personified force executing intentions",
+          "human-like actor"
+        ],
+        "ground": [
+          "persistence of judgment until its goals are complete",
+          "purposeful, directed action that does not relent prematurely",
+          "anger as a driving force"
+        ],
+        "posture": [
+          "underscoring the inevitability and completeness of judgment",
+          "solemn assurance",
+          "prophetic explanation of events"
+        ],
+        "explanation": "YHWH’s anger is personified as a force that advances and only later 'turns back', emphasizing that judgment will run its full course until God’s plans are accomplished.",
+        "confidence": 0.93
+      }
+    ]
+  }
+]

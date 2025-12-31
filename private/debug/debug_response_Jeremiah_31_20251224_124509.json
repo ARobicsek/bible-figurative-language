@@ -1,0 +1,1010 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 31:1",
+    "deliberation": "Examined covenant formula 'I will be God ... they shall be My people.' This is a technical legal-religious formula, not a metaphor or simile; no other imagery or idiomatic proverb present.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 31:2",
+    "deliberation": "Looked for imagery beyond the historical-exodus/allusion sense. Found one idiomatic grace-expression and one metaphorical use of 'rest' for secure settlement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מָצָא חֵן בַּמִּדְבָּר",
+        "english_text": "found favor in the wilderness",
+        "target": ["Israel’s reception of divine grace", "divine-human relationship", "theological"],
+        "vehicle": ["finding favor (courtly approval)", "social-relational approval", "human social life"],
+        "ground": ["being pleasing to a superior and accepted", "acceptance and goodwill", "ethics/morality"],
+        "posture": ["positive evaluation of Israel despite danger", "assurance/encouragement", "rhetorical"],
+        "explanation": "The idiom 'find favor' uses the image of gaining favor in a superior’s eyes to express receiving divine grace, without an actual search.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָלוֹךְ לְהַרְגִּיעוֹ יִשְׂרָאֵל",
+        "english_text": "when Israel was marching homeward / going to find rest",
+        "target": ["Israel’s transition from danger to security", "national restoration", "historical-salvific"],
+        "vehicle": ["coming to a place of rest", "physical rest after journey", "bodily experience"],
+        "ground": ["end of wandering and threat, experience of relief and security", "from turmoil to repose", "psychological state"],
+        "posture": ["portrays return as peaceful culmination of hardship", "comfort and hope", "rhetorical"],
+        "explanation": "Israel’s restoration is depicted as going to a 'resting place,' using physical rest as a metaphor for political and spiritual security.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 31:3",
+    "deliberation": "Considered temporal/spatial 'from afar'; main clear metaphor is drawing/attracting with חסד, using the verb 'to draw' in a non-literal sense.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־כֵּן מְשַׁכְתִּיךְ חָסֶד",
+        "english_text": "therefore I continue / I have drawn you with grace",
+        "target": ["God’s initiative in restoring Israel", "divine saving action", "theological"],
+        "vehicle": ["drawing/pulling something with a cord", "physical pulling motion", "bodily/kinetic action"],
+        "ground": ["bringing someone into closer relationship and safety by one-sided effort", "attraction and relocation", "social-relational"],
+        "posture": ["emphasizes gentle, intentional attraction rather than coercion", "affectionate, reassuring", "rhetorical"],
+        "explanation": "The verb 'to draw' is used metaphorically: God does not literally pull Israel with a rope, but graciously attracts and brings them back.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 31:4",
+    "deliberation": "Two distinct images: Israel as a 'maiden' and Israel being 'built.' Both are non-literal descriptions of the nation and its restoration.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּתוּלַת יִשְׂרָאֵל",
+        "english_text": "O Maiden Israel",
+        "target": ["the people/nation of Israel", "collective community", "socio-political"],
+        "vehicle": ["a virgin/maiden", "young unmarried woman", "human family life"],
+        "ground": ["youth, vulnerability, potential, and capacity for joy", "personal qualities", "social-relational"],
+        "posture": ["tender, affectionate view of Israel, in need of care and with hopeful future", "sympathetic elevation of status", "rhetorical"],
+        "explanation": "The nation is personified and metaphorically portrayed as a young virgin, highlighting her vulnerability and future joy.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עוֹד אֶבְנֵךְ וְנִבְנֵית",
+        "english_text": "I will build you again, and you shall be rebuilt",
+        "target": ["Israel’s communal and political restoration", "national reconstitution", "historical-salvific"],
+        "vehicle": ["constructing a building", "building activity", "craft/architecture"],
+        "ground": ["creating stable structure after ruin; orderly re-establishment", "from ruins to solidity", "socio-political stability"],
+        "posture": ["frames restoration as solid, lasting reconstruction", "assurance of permanence", "rhetorical"],
+        "explanation": "Restoring Israel as a people is described as rebuilding a structure; the community is not literally a building.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 31:5",
+    "deliberation": "Planting vineyards and enjoying their fruit can be literal agricultural restoration; no obvious metaphor, proverb, or personification distinct from the concrete promise.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 31:6",
+    "deliberation": "Watchmen calling people to go up to Zion can be taken literally as sentinels or leaders; no marked figurative construction, simile, or idiom beyond normal worship language.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 31:7",
+    "deliberation": "Looked for metaphorical titles or idioms. The main figure is the use of 'Jacob' to stand for the whole people of Israel, a standard metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "רנּוּ לְיַעֲקֹב",
+        "english_text": "Cry out in joy for Jacob",
+        "target": ["the nation descended from Jacob", "Israel as a people", "socio-political"],
+        "vehicle": ["the patriarch Jacob as a name", "personal name", "genealogical ancestry"],
+        "ground": ["ancestral identity representing descendants", "cause-effect/lineage link", "social identity"],
+        "posture": ["invites praise for the whole people via their ancestor’s name", "inclusive, celebratory", "rhetorical"],
+        "explanation": "The name 'Jacob' stands for the entire nation descended from him, a metonymy of ancestor for people.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 31:8",
+    "deliberation": "Considered whether the geography is literal; 'from the ends of the earth' is a stock hyperbolic idiom for extreme distance, not a precise cosmological statement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִיַּרְכְּתֵי־אָרֶץ",
+        "english_text": "from the ends of the earth",
+        "target": ["locations of Israel’s dispersion", "geographical spread of exiles", "historical-political"],
+        "vehicle": ["extreme extremities/borders of the earth", "spatial extremity", "cosmological imagery"],
+        "ground": ["very far away, scattered to remote places", "extreme distance", "spatial magnitude"],
+        "posture": ["underscores how far God’s regathering reaches", "emphatic, hopeful", "rhetorical"],
+        "explanation": "The phrase 'ends of the earth' exaggerates to express great distance; it is an idiomatic hyperbole for far-flung exile.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 31:9",
+    "deliberation": "Noted journey imagery and kinship language. The clearest figures are (1) God as father and Ephraim as firstborn, and (2) the 'level road' and 'streams of water' standing for safe, beneficial conditions of return.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־הָיִיתִי לְיִשְׂרָאֵל לְאָב וְאֶפְרַיִם בְּכֹרִי הוּא",
+        "english_text": "For I am a Father to Israel, and Ephraim is My first-born",
+        "target": ["YHWH’s relationship to Israel/Ephraim", "covenant bond", "divine-human relations"],
+        "vehicle": ["father–firstborn son relationship", "family kinship", "human family life"],
+        "ground": ["care, priority, authority, affection, discipline", "relational qualities", "ethics/morality"],
+        "posture": ["underscores deep, privileged bond and parental compassion", "warm, protective", "rhetorical"],
+        "explanation": "God is not literally Israel’s biological parent; the father–firstborn image conveys care, priority, and covenantal responsibility.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אוֹלִיכֵם אֶל־נַחֲלֵי מַיִם בְּדֶרֶךְ יָשָׁר לֹא יִכָּשְׁלוּ בָּהּ",
+        "english_text": "I will lead them to streams of water, by a level road where they will not stumble",
+        "target": ["conditions of the return from exile and ensuing life", "national well-being", "historical-salvific"],
+        "vehicle": ["well-watered paths and smooth, straight roadways", "favorable travel conditions", "physical journey"],
+        "ground": ["provision, refreshment, safety, absence of obstacles", "ease versus hardship", "experiential life-course"],
+        "posture": ["portrays restoration as safe, nourishing journey under divine care", "comforting, encouraging", "rhetorical"],
+        "explanation": "The return is pictured as guidance along smooth, watered paths; this imagery goes beyond a literal route to express security and abundance.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 31:10",
+    "deliberation": "The key figure is the explicit simile likening God’s care for Israel to a shepherd caring for his flock.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּשְׁמָרוֹ כְּרֹעֶה עֶדְרוֹ",
+        "english_text": "and will guard them as a shepherd his flock",
+        "target": ["God’s protective care for Israel", "divine guardianship", "theological"],
+        "vehicle": ["a shepherd guarding his flock", "shepherding", "agricultural/pastoral life"],
+        "ground": ["constant oversight, guidance, protection from danger", "caretaking role", "ethics/responsibility"],
+        "posture": ["reassures exiles of intimate, attentive protection", "consolatory", "rhetorical"],
+      "explanation": "An explicit simile: God’s guarding of Israel is compared to a shepherd’s care for sheep.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 31:11",
+    "deliberation": "Redeeming from 'the hand' of one stronger uses 'hand' as a metonymy for power or control, not a literal physical hand.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּגְאָלֹו מִיַּד חָזָק מִמֶּנּוּ",
+        "english_text": "and redeem him from the hand of one too strong for him",
+        "target": ["Israel’s subjection to a stronger power", "political domination", "historical-political"],
+        "vehicle": ["the hand of a strong person", "body-part representing power", "bodily action"],
+        "ground": ["ability to seize, control, and oppress", "power and control", "social hierarchy"],
+        "posture": ["stresses how complete the domination was and how decisive God’s deliverance is", "dramatic, hopeful", "rhetorical"],
+        "explanation": "The oppressor’s 'hand' stands for his power and control over Israel, a common Hebrew metonymy.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 31:12",
+    "deliberation": "Several figures: (1) people 'streaming' to God’s goodness, using a river-verb, (2) explicit simile 'their soul like a watered garden', and (3) 'they shall not again sorrow' as an idealizing hyperbole.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָהֲרוּ אֶל־טוּב יְהוָה",
+        "english_text": "and they shall stream to GOD’s goodness",
+        "target": ["the movement of people toward God’s beneficence", "corporate response to divine blessing", "religious life"],
+        "vehicle": ["a river or stream flowing", "watercourse motion", "natural phenomena"],
+        "ground": ["continuous, eager, collective movement toward a source", "flow and attraction", "experiential dynamics"],
+        "posture": ["pictures their eagerness and abundance of movement toward blessing", "vividly positive", "rhetorical"],
+        "explanation": "The verb 'to stream' is used figuratively of people moving like a river toward God’s goodness.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיְתָה נַפְשָׁם כְּגַן רָוֶה",
+        "english_text": "their soul shall be like a watered garden",
+        "target": ["their inner life and overall well-being", "psychological/spiritual state", "human experience"],
+        "vehicle": ["a well-watered garden", "cultivated fertile garden", "agricultural imagery"],
+        "ground": ["freshness, fruitfulness, beauty, constant nourishment", "flourishing versus barrenness", "value/quality"],
+        "posture": ["celebrates the fullness and stability of their future condition", "joyful and idealizing", "rhetorical"],
+        "explanation": "A simile explicitly likens their inner condition to a lush, irrigated garden, highlighting flourishing and satisfaction.",
+        "confidence": 0.99
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metaphor": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא־יוֹסִיפוּ לְדַאֲבָה עוֹד",
+        "english_text": "and they shall never again languish",
+        "target": ["frequency of sorrow in restored times", "experience of hardship", "human suffering"],
+        "vehicle": ["'never again' language", "absolute negation idiom", "rhetorical emphasis"],
+        "ground": ["promise of radically reduced suffering, expressed as total elimination", "idealization", "temporal/magnitude"],
+        "posture": ["reassures by overstating the end of sorrow in absolute terms", "strongly consoling", "rhetorical"],
+        "explanation": "The claim that they will 'never again' languish functions as prophetic hyperbole, an idealized picture of future joy.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 31:13",
+    "deliberation": "Main figure is God 'turning' mourning into joy—transforming one emotional state into another as if it were a substance that can be changed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָפַכְתִּי אֶבְלָם לְשָׂשׂוֹן",
+        "english_text": "I will turn their mourning into joy",
+        "target": ["the people’s emotional and existential condition", "inner state of Israel", "human experience"],
+        "vehicle": ["turning one thing into another", "transforming substances", "physical change"],
+        "ground": ["complete reversal from grief to gladness", "opposition between states", "value/quality"],
+        "posture": ["stresses radical, divinely effected reversal of fortune", "deeply hopeful", "rhetorical"],
+        "explanation": "Mourning and joy are treated as convertible entities that God can 'turn' one into the other, a metaphor for total emotional reversal.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 31:14",
+    "deliberation": "Food/fat imagery is applied to 'soul' and to enjoying God’s 'goodness'; this uses satiation as a metaphor for full enjoyment of divine blessing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְרִוֵּיתִי נֶפֶשׁ הַכֹּהֲנִים דָּשֶׁן",
+        "english_text": "I will satiate the soul of the priests with fatness",
+        "target": ["inner satisfaction of priests with God’s provision", "spiritual/material well-being", "religious life"],
+        "vehicle": ["being filled with rich fat food", "satiation with rich fare", "eating/embodiment"],
+        "ground": ["abundance, satisfaction, lack of want", "fullness versus lack", "value/quality"],
+        "posture": ["underscores lavish sufficiency of God’s provision", "reassuring, generous", "rhetorical"],
+        "explanation": "The priests’ 'soul' is not literally filled with fat; physical satiation with rich food images their complete satisfaction.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 31:15",
+    "deliberation": "The whole scene is a poetic figure: ancestral Rachel, long dead, is pictured as weeping over exiled descendants; she stands for the nation/mothers of Israel.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "רָחֵל מְבַכָּה עַל־בָּנֶיהָ",
+        "english_text": "Rachel weeping for her children",
+        "target": ["the bereaved people of Israel, especially the northern tribes and their mothers", "corporate suffering", "historical-national"],
+        "vehicle": ["Rachel, the matriarch, as a grieving mother", "ancestral mother figure", "family/ancestry"],
+        "ground": ["deep maternal grief over loss of offspring, solidarity of ancestor with descendants", "emotional intensity and kinship bond", "social-relational"],
+        "posture": ["laments the tragedy of exile with poignant maternal imagery", "sorrowful, empathetic", "rhetorical"],
+        "explanation": "Rachel, long dead, is personified and used metonymically as the mother of the northern tribes, weeping for exiled 'children.'",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 31:16",
+    "deliberation": "Speech continues addressing the symbolic mother-figure introduced in v.15. The reference to 'your voice' and 'your eyes' presupposes the personified Rachel/Zion; that personification is still operative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִנְעִי קוֹלֵךְ מִבֶּכִי וְעֵינַיִךְ מִדִּמְעָה",
+        "english_text": "Restrain your voice from weeping, and your eyes from tears",
+        "target": ["the grieving community of Israel represented as a woman/mother", "collective sorrow", "national experience"],
+        "vehicle": ["a woman’s weeping voice and tear-filled eyes", "human body in grief", "embodied emotion"],
+        "ground": ["visible and audible expressions of grief", "outward signs of inner sorrow", "psychological/relational"],
+        "posture": ["God now comforts and gently restrains the symbolic grieving mother", "consolatory", "rhetorical"],
+        "explanation": "The addressee’s 'voice' and 'eyes' belong to the already personified figure (Rachel/Zion) who represents Israel’s grief.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 31:17",
+    "deliberation": "Hope for the future and children’s return are straightforward promises of restoration without marked figurative imagery or idiom distinct from literal speech.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 31:18",
+    "deliberation": "Two figures: (1) Ephraim as a name for the northern kingdom (metonymy), and (2) an explicit simile comparing Ephraim’s untrained state to a calf that has not been broken.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶפְרַיִם",
+        "english_text": "Ephraim (as used here for the people)",
+        "target": ["the northern kingdom/people of Israel", "collective community", "historical-national"],
+        "vehicle": ["the tribe/person of Ephraim", "tribal name", "genealogical group"],
+        "ground": ["prominent tribe standing for the whole region/people", "part-whole representation", "social identity"],
+        "posture": ["individualizes the nation’s voice in a representative figure", "personalizing", "rhetorical"],
+        "explanation": "The name 'Ephraim' stands for the northern Israelites, a metonymy of prominent tribal ancestor/region for the whole people.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּעֵגֶל לֹא לֻמָּד",
+        "english_text": "like a calf that has not been broken (not trained)",
+        "target": ["Ephraim’s undisciplined, resistant character before repentance", "spiritual/moral condition", "ethics/morality"],
+        "vehicle": ["an untrained calf", "young unbroken farm animal", "agricultural life"],
+        "ground": ["stubbornness, wildness, need for training and discipline", "lack of submission", "behavioral patterns"],
+        "posture": ["acknowledges prior resistance to God’s discipline", "confessional", "rhetorical"],
+        "explanation": "An explicit simile compares Ephraim to an untrained calf to express stubborn, undisciplined behavior.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 31:19",
+    "deliberation": "Gestures like 'striking my thigh' are literal signs of remorse; the more conceptual figure is 'I bore the reproach of my youth,' treating disgrace as something carried.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי נָשָׂאתִי חֶרְפַּת נְעוּרָי",
+        "english_text": "for I bear the disgrace of my youth",
+        "target": ["ongoing consequences and memory of youthful sin", "moral/spiritual burden", "ethics/morality"],
+        "vehicle": ["carrying a burden (bearing something)", "load-bearing", "bodily effort"],
+        "ground": ["shame as a weight one carries over time", "persistence and encumbrance", "psychological experience"],
+        "posture": ["expresses deep, enduring sense of guilt", "penitential", "rhetorical"],
+        "explanation": "Disgrace is conceptualized as a burden that can be 'borne,' an idiomatic metaphor for lasting shame.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 31:20",
+    "deliberation": "Several rich images: (1) Ephraim as a 'dear son' and 'child of delights'—kinship metaphor; (2) God’s 'inner parts' stirred for him—an anthropopathic image of compassion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֲבֵן יַקִּיר לִי אֶפְרַיִם אִם יֶלֶד שַׁעֲשֻׁעִים",
+        "english_text": "Is Ephraim a dear son to Me? Is he a child of delights?",
+        "target": ["God’s covenantal attitude toward Ephraim/Israel", "divine regard", "theological"],
+        "vehicle": ["a beloved and pampered son/child", "family kinship", "human family life"],
+        "ground": ["deep affection, special status, tender care", "emotional attachment", "ethics/relationships"],
+        "posture": ["emphasizes God’s enduring fondness despite discipline", "tender, affectionate", "rhetorical"],
+        "explanation": "God speaks of Ephraim as a dear, delight-giving son; this familial language is metaphorical of divine–people relations, with Ephraim again metonymic for the people.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־כֵּן הָמוּ מֵעַי לוֹ",
+        "english_text": "Therefore My inward parts yearn for him",
+        "target": ["God’s compassionate response toward Ephraim", "divine emotion", "theological"],
+        "vehicle": ["inner organs in turmoil/longing", "visceral movement", "bodily sensation"],
+        "ground": ["deep, gut-level emotion and longing", "intensity and inwardness of feeling", "psychological experience"],
+        "posture": ["anthropopathically portrays divine compassion in vivid bodily terms", "affectionate, urgent", "rhetorical"],
+        "explanation": "God’s compassion is pictured as churning in the 'inner parts,' a human bodily metaphor applied to God.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 31:21",
+    "deliberation": "Found two figures: Israel as 'Maiden' (personified nation) and 'set your heart on the highway,' using 'heart' for focused attention and internal orientation toward the way home.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שׁוּבִי בְּתוּלַת יִשְׂרָאֵל",
+        "english_text": "Return, O Maiden Israel",
+        "target": ["the people of Israel", "collective community", "national"],
+        "vehicle": ["a virgin/maiden", "young unmarried woman", "human social life"],
+        "ground": ["youthfulness, purity (ideally), vulnerability, capacity for renewal", "relational status", "social-symbolic"],
+        "posture": ["invites the nation as a beloved but wayward young woman to return", "tender, admonitory", "rhetorical"],
+        "explanation": "Israel is again personified as a virgin/maiden, a metaphor emphasizing relational and emotional aspects of return.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִׁתִי לִבֵּךְ לַמְסִלָּה דֶּרֶךְ הָלָכְתְּ",
+        "english_text": "Set your heart toward the highway, the road you traveled",
+        "target": ["Israel’s intentional orientation toward the path of return", "inner resolve", "psychological/spiritual"],
+        "vehicle": ["directing the heart toward a road", "internal organ as seat of focus", "embodied cognition"],
+        "ground": ["concentrated attention and determination fixed on a way back", "orientation and memory", "mental/spiritual process"],
+        "posture": ["calls for deliberate, heartfelt commitment to the route of return", "exhortative", "rhetorical"],
+        "explanation": "The 'heart' stands for inner attention and will, metaphorically directed toward a 'highway' of return.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 31:22",
+    "deliberation": "Identified (1) Israel as 'rebellious daughter' (personified metaphor), and (2) the enigmatic saying 'a woman surrounds a man' as a symbolic, likely metaphorical, picture of a role-reversal/new dynamic.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַבַּת הַשּׁוֹבֵבָה",
+        "english_text": "O rebellious daughter",
+        "target": ["Israel as a wayward people", "collective community", "national"],
+        "vehicle": ["a disloyal/wayward daughter", "family role", "human kinship"],
+        "ground": ["disobedience, instability, relational infidelity", "moral failure within a relationship", "ethics/morality"],
+        "posture": ["rebukes but still addresses Israel in familial, intimate terms", "admonitory yet relational", "rhetorical"],
+        "explanation": "The nation is personified as a 'rebellious daughter,' highlighting covenant infidelity in familial imagery.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "נְקֵבָה תְּסוֹבֵב גָּבֶר",
+        "english_text": "a woman shall surround a man",
+        "target": ["new pattern in Israel’s relationship with God (or social order)", "covenantal/relational dynamic", "theological/social"],
+        "vehicle": ["a woman encircling a man", "reversal of usual pursuit/protection roles", "gender-role imagery"],
+        "ground": ["unexpected reversal, initiative from the weaker, protective or seeking embrace", "novelty and inversion", "social symbolism"],
+        "posture": ["announces a surprising, restorative reconfiguration of relationships", "mysterious, hopeful", "rhetorical"],
+        "explanation": "The 'new thing' is portrayed in terms of gender-role inversion; the woman’s surrounding of the man functions as a symbolic metaphor for an unexpected reversal in relational dynamics, commonly read as Israel seeking/embracing God.",
+        "confidence": 0.75
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 31:23",
+    "deliberation": "Two metaphorical designations: 'Abode of righteousness' and 'holy mountain' as titles for Jerusalem/Zion, imbuing place with moral and cultic qualities.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נְוֵה־צֶדֶק",
+        "english_text": "Abode of righteousness",
+        "target": ["Jerusalem/Zion as restored community and city", "urban community", "socio-religious"],
+        "vehicle": ["a dwelling/pasture characterized by righteousness", "place defined by moral quality", "spatial metaphor"],
+        "ground": ["the city as a habitat where justice and right prevail", "environmentalizing moral quality", "ethics/morality"],
+        "posture": ["recasts Jerusalem’s identity around righteousness rather than ruin", "restorative, laudatory", "rhetorical"],
+        "explanation": "Jerusalem is called the 'Abode of righteousness,' a metaphor that locates moral quality in the very character of the place.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַר הַקֹּדֶשׁ",
+        "english_text": "the holy mountain",
+        "target": ["Zion/Temple mount and its cultic community", "central sanctuary-city complex", "religious-political"],
+        "vehicle": ["a mountain marked by holiness", "sacred high place", "spatial/cultic imagery"],
+        "ground": ["set-apartness, nearness to God, cultic centrality", "sacred status", "religious value"],
+        "posture": ["elevates the city’s stature as uniquely dedicated to YHWH", "honorific", "rhetorical"],
+        "explanation": "Calling Jerusalem 'the holy mountain' is a metaphorical-cultic title, using the mountain image as a metonymy for the whole holy city and its temple.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 31:24",
+    "deliberation": "Description of habitation by farmers and shepherds is literal restoration imagery, without additional figurative overlay beyond normal usage.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 31:25",
+    "deliberation": "Uses thirst and satiation of 'soul' as a metaphor for reviving the weary and filling the languishing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי הִרְוֵיתִי נֶפֶשׁ עֲיֵפָה וְכָל־נֶפֶשׁ דָּאֲבָה מִלֵּאתִי",
+        "english_text": "For I will give the thirsty abundant drink, and satisfy all who languish",
+        "target": ["inner condition of the exhausted and sorrowful", "emotional/spiritual state", "human experience"],
+        "vehicle": ["thirsty soul being given drink; being filled up", "physical thirst and satiation", "bodily need"],
+        "ground": ["renewal, relief, and satisfaction after depletion", "from emptiness to fullness", "value/quality"],
+        "posture": ["offers restorative, nurturing care to the broken", "comforting, compassionate", "rhetorical"],
+        "explanation": "Weary and languishing 'souls' are not literally thirsty; physical refreshment images spiritual and emotional restoration.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 31:26",
+    "deliberation": "The prophet’s awakening and finding his sleep pleasant is presented straightforwardly; no figurative idiom or imagery beyond literal experience.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 31:27",
+    "deliberation": "Key metaphor: sowing the houses of Israel and Judah with 'seed of humans and animals'—applying agricultural sowing language to demographic restoration.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְזָרַעְתִּי אֶת־בֵּית יִשְׂרָאֵל וְאֶת־בֵּית יְהוּדָה זֶרַע אָדָם וְזֶרַע בְּהֵמָה",
+        "english_text": "I will sow the House of Israel and the House of Judah with seed of people and seed of cattle",
+        "target": ["repopulation and renewal of Israel and Judah", "demographic and economic restoration", "historical-salvific"],
+        "vehicle": ["sowing seed in a field", "agricultural planting", "farming"],
+        "ground": ["initiating growth leading to multiplication and fruitfulness", "from few to many", "life processes"],
+        "posture": ["depicts restoration as organic, divinely initiated growth", "hopeful and fertile", "rhetorical"],
+        "explanation": "People and animals are described as 'seed' that God will 'sow,' a metaphor for bringing about abundant life in the land.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 31:28",
+    "deliberation": "The sequence 'uproot, pull down, overthrow, destroy, build, plant' reprises Jeremiah’s commission imagery, applying agricultural and construction verbs to God’s dealings with the nation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לִנְתֹשׁ וְלִנְתֹץ וְלַהֲרֹס וּלְהַאֲבִיד וּלְהָרֵעַ ... לִבְנוֹת וְלִנְטֹעַ",
+        "english_text": "to uproot and to pull down, to overthrow and to destroy and to bring disaster ... to build and to plant",
+        "target": ["God’s historical actions of judgment and restoration on Israel", "national destiny", "historical-theological"],
+        "vehicle": ["uprooting plants, demolishing buildings, then building and planting", "agricultural and construction work", "material processes"],
+        "ground": ["removal and demolition versus establishment and growth", "radical change of condition", "structural stability/instability"],
+        "posture": ["frames history as God’s purposeful renovating work on His people", "solemn yet hopeful", "rhetorical"],
+        "explanation": "Israel’s downfall and renewal are portrayed in terms of plants and buildings being torn down or planted and built.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 31:29",
+    "deliberation": "The proverb about parents eating sour grapes and children’s teeth being set on edge is a figurative idiom where the grapes stand for sins and the teeth’s reaction for consequences.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָבוֹת אָכְלוּ בֹסֶר וְשִׁנֵּי בָנִים תִּקְהֶינָה",
+        "english_text": "Parents have eaten sour grapes and children’s teeth are blunted/set on edge",
+        "target": ["perceived transgenerational consequences of sin", "distribution of guilt and punishment", "ethical-theological"],
+        "vehicle": ["eating sour grapes affecting someone else’s teeth", "gustatory experience and dental reaction", "bodily sensation"],
+        "ground": ["one party’s actions causing unpleasant consequences for another", "indirect suffering", "cause-effect relationships"],
+        "posture": ["quotes a popular saying that the prophet then corrects", "critical of the proverb’s theology", "rhetorical"],
+        "explanation": "The saying uses the image of sour grapes affecting others’ teeth to express the idea that children suffer for parents’ sins.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 31:30",
+    "deliberation": "Reuses the same sour-grape imagery, now applied individually; still a figurative idiom for sin and consequence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כָּל־הָאָדָם הָאֹכֵל הַבֹּסֶר תִּקְהֶינָה שִׁנָּיו",
+        "english_text": "everyone who eats sour grapes, his teeth shall be blunted/set on edge",
+        "target": ["individual responsibility for sin and its consequences", "personal moral accountability", "ethics/theology"],
+        "vehicle": ["eating sour grapes affecting one’s own teeth", "gustatory-dental reaction", "bodily experience"],
+        "ground": ["the one who acts experiences the unpleasant consequence", "direct cause-effect within the same person", "justice/fairness"],
+        "posture": ["corrects the earlier proverb by insisting on individual responsibility", "didactic", "rhetorical"],
+        "explanation": "Retains the sour-grape idiom as a metaphor: the one who 'eats' (sins) feels the 'teeth set on edge' (punishment).",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 31:31",
+    "deliberation": "Declaration of a 'new covenant' uses covenant as a legal-religious term; no additional imagery or idiom is present here by itself.",
+    "instances": []
+  },
+  {
+    "verse": 32,
+    "reference": "Jeremiah 31:32",
+    "deliberation": "Two clear anthropomorphic/relational metaphors: (1) God taking Israel 'by the hand' to lead them from Egypt, and (2) 'I was their husband' (or master), a marital metaphor for covenant.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּיוֹם הֶחֱזִיקִי בְיָדָם לְהוֹצִיאָם מֵאֶרֶץ מִצְרָיִם",
+        "english_text": "when I took them by the hand to lead them out of the land of Egypt",
+        "target": ["God’s act of delivering Israel from Egypt", "historical redemption", "theological-historical"],
+        "vehicle": ["an adult taking a child by the hand to lead", "guiding a weaker person", "family/social care"],
+        "ground": ["tender guidance, protection, and initiative by the stronger party", "careful leading", "ethics/relationship"],
+        "posture": ["frames the exodus as parental, intimate guidance", "affectionate yet solemn", "rhetorical"],
+        "explanation": "God did not literally hold physical hands; the exodus is pictured via the metaphor of a caregiver leading a child by the hand.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאָנֹכִי בָעַלְתִּי בָם",
+        "english_text": "though I espoused them / I was their husband",
+        "target": ["covenant relationship between God and Israel", "divine–people bond", "theological"],
+        "vehicle": ["marital relationship of a husband", "spousal bond", "family life"],
+        "ground": ["exclusive commitment, intimacy, faithfulness, and rightful expectations", "relational obligations", "ethics/morality"],
+        "posture": ["underscores Israel’s unfaithfulness as marital betrayal", "indicting yet relational", "rhetorical"],
+        "explanation": "God’s covenant with Israel is depicted as a marriage in which God is the husband and Israel the spouse.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 33,
+    "reference": "Jeremiah 31:33",
+    "deliberation": "The central metaphor is God putting Torah 'within them' and 'writing it on their hearts'—treating the heart as a tablet inscribed with teaching.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נָתַתִּי אֶת־תּוֹרָתִי בְּקִרְבָּם וְעַל־לִבָּם אֶכְתְּבֶנָּה",
+        "english_text": "I will put My Teaching within them and inscribe it upon their hearts",
+        "target": ["internalization of God’s will in the people", "inner moral/spiritual disposition", "ethics/theology"],
+        "vehicle": ["placing and writing on an inner tablet (heart)", "inscription process", "scribal practice"],
+        "ground": ["permanent, intimate, internal knowledge and inclination", "from external law to inward desire", "cognitive/moral transformation"],
+        "posture": ["promises profound inner change, not just external legislation", "hopeful, transformative", "rhetorical"],
+        "explanation": "The human heart is pictured as a surface on which God writes Torah, a metaphor for deeply internalized guidance.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 34,
+    "reference": "Jeremiah 31:34",
+    "deliberation": "Two figures: (1) 'from least to greatest' as a merism for all people, and (2) 'I will remember their sins no more' where remembering/forgetting is used metaphorically for holding sins to account.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְמִקְּטַנָּם וְעַד־גְּדוֹלָם",
+        "english_text": "from the least of them to the greatest of them",
+        "target": ["the entire spectrum of Israel’s population", "collective totality", "social structure"],
+        "vehicle": ["minors and great ones as endpoints", "social extremes", "rank/status imagery"],
+        "ground": ["inclusion of all intermediate members by naming extremes", "comprehensiveness", "logical set relation"],
+        "posture": ["stresses universality of knowledge of God", "inclusive, emphatic", "rhetorical"],
+        "explanation": "This is a merism: citing the smallest and the greatest to signify everyone in between as well.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּלְחַטָּאתָם לֹא אֶזְכָּר־עוֹד",
+        "english_text": "and their sins I will remember no more",
+        "target": ["God’s treatment of Israel’s past sins", "forgiveness and non-punishment", "theological-ethical"],
+        "vehicle": ["remembering versus not remembering offenses", "memory function", "cognitive process"],
+        "ground": ["not bringing sins to mind equals not holding them against people", "memory as basis for response", "legal/moral practice"],
+        "posture": ["assures complete forgiveness framed as divine 'forgetting'", "strongly consolatory", "rhetorical"],
+        "explanation": "Divine remembering is metonymic for acting upon sins; saying God will 'not remember' is an idiomatic metaphor for full forgiveness.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 35,
+    "reference": "Jeremiah 31:35",
+    "deliberation": "Lists God’s cosmic acts—giving sun, moon, stars, calming the sea—in essentially literal cosmological-theological language; no marked metaphor beyond standard descriptions of sea waves.",
+    "instances": []
+  },
+  {
+    "verse": 36,
+    "reference": "Jeremiah 31:36",
+    "deliberation": "Conditional statement using literal 'laws' of celestial bodies; Israel as 'offspring' is literal lineage language here; no distinct figurative idiom beyond this.",
+    "instances": []
+  },
+  {
+    "verse": 37,
+    "reference": "Jeremiah 31:37",
+    "deliberation": "The impossibility of measuring the heavens or searching out earth’s foundations operates as hyperbolic imagery to stress God’s unbreakable commitment; 'foundations of the earth' also functions as metaphorical cosmological language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִם־יִמַּדּוּ שָׁמַיִם מִלְמַעְלָה וְיֵחָקְרוּ מוֹסְדֵי־אֶרֶץ לְמָטָּה",
+        "english_text": "If the heavens above could be measured, and the foundations of the earth below could be fathomed",
+        "target": ["the (im)possibility of God rejecting all Israel", "security of the covenant people", "theological"],
+        "vehicle": ["measuring heavens and probing earth’s foundations", "cosmic surveying", "cosmological imagery"],
+        "ground": ["these tasks are impossibly vast, so the condition is unreal", "extreme difficulty/impossibility", "magnitude"],
+        "posture": ["emphasizes that God’s rejection is as impossible as fully measuring cosmos", "reassuring, emphatic", "rhetorical"],
+        "explanation": "Uses hyperbolic cosmological imagery—the impossible measurement of heavens and earth—to assert that God will not reject Israel.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 38,
+    "reference": "Jeremiah 31:38",
+    "deliberation": "City being rebuilt 'for YHWH' expresses dedication but is not figurative beyond normal cultic language; tower and gate are concrete landmarks.",
+    "instances": []
+  },
+  {
+    "verse": 39,
+    "reference": "Jeremiah 31:39",
+    "deliberation": "The measuring line going out to named hills is technical building/topographic description, not metaphorical in context.",
+    "instances": []
+  },
+  {
+    "verse": 40,
+    "reference": "Jeremiah 31:40",
+    "deliberation": "Topographic description is literal; the main figure is 'never again uprooted or overthrown,' using agricultural uprooting and military-toppling as metaphors for destruction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא־יִנָּתֵשׁ וְלֹא־יֵהָרֵס עוֹד לְעוֹלָם",
+        "english_text": "They shall never again be uprooted or overthrown",
+        "target": ["future security and permanence of the sanctified city/area", "stability of the community", "socio-political"],
+        "vehicle": ["uprooting plants; demolishing structures", "agricultural and building destruction", "material processes"],
+        "ground": ["removal from place and violent destruction as images of ending existence there", "instability versus permanence", "structural condition"],
+        "posture": ["assures everlasting stability and holiness for the area", "strongly reassuring", "rhetorical"],
+        "explanation": "The community/territory is not literally a plant to uproot or a building to raze; these are metaphors for being destroyed or expelled.",
+        "confidence": 0.93
+      }
+    ]
+  }
+]

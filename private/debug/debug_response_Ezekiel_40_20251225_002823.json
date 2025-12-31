@@ -1,0 +1,642 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 40:1",
+    "deliberation": "Checked the chronological and historical markers, which are literal. Detected (1) the idiomatic anthropomorphic phrase 'the hand of YHWH was upon me' as a conventional metaphor for prophetic seizure, and (2) 'the city was struck' as a metonymic way of referring to the city's destruction and its inhabitants' suffering. No hyperbole, irony, or similes present.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָיְתָ֤ה עָלַי֙ יַד־יְהוָ֔ה",
+        "english_text": "GOD’s hand came upon me",
+        "target": [
+          "Ezekiel’s experience of prophetic seizure and empowerment",
+          "prophetic inspiration",
+          "divine–human interaction"
+        ],
+        "vehicle": [
+          "YHWH’s ‘hand’ coming upon someone",
+          "a physical hand exerting force or control on a body",
+          "human body / physical force"
+        ],
+        "ground": [
+          "the exercise of overwhelming power and control initiating an action",
+          "effect of a strong grasp on a passive recipient",
+          "agency and causation"
+        ],
+        "posture": [
+          "Ezekiel portrayed as passive under overpowering divine initiative",
+          "subjection to a superior will",
+          "authoritative divine control over the prophet’s movements"
+        ],
+        "explanation": "The anthropomorphic idiom ‘the hand of YHWH was upon me’ metaphorically depicts God’s overpowering influence and control as a physical hand seizing a person, a standard prophetic expression for inspiration or compulsion.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַחַ֕ר אֲשֶׁ֥ר הֻכְּתָ֖ה הָעִ֑יר",
+        "english_text": "the fourteenth year after the city had [been] struck / fallen",
+        "target": [
+          "the destruction/conquest of Jerusalem and its inhabitants",
+          "a historical catastrophe",
+          "political–military history"
+        ],
+        "vehicle": [
+          "‘the city’ as something that is struck",
+          "the urban entity as a single object receiving a blow",
+          "physical object / fortified place"
+        ],
+        "ground": [
+          "the fate of the inhabitants and structures is represented by the city as a whole",
+          "container standing for what it contains",
+          "metonymic representation of a collective by its locale"
+        ],
+        "posture": [
+          "compresses complex suffering and judgment into a single event term",
+          "gives a unified perspective on the city’s fall",
+          "frames history as a decisive blow under divine sovereignty"
+        ],
+        "explanation": "‘The city was struck’ uses ‘city’ metonymically for the whole population and infrastructure that underwent destruction, collapsing a complex siege into the image of a single blow.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 40:2",
+    "deliberation": "Considered whether the high mountain and city outline are symbolic; linguistically they are straightforward elements of the vision. The phrase 'in visions of God' is a standard prophetic formula for revelation, functioning idiomatically to denote divinely granted visions rather than ordinary sight. No similes, personifications, or hyperbole detected.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּמַרְא֣וֹת אֱלֹהִ֔ים הֱבִיאַ֖נִי",
+        "english_text": "It brought me, in divine visions,",
+        "target": [
+          "Ezekiel’s mode of receiving revelation",
+          "prophetic visionary experience",
+          "divine–human communication"
+        ],
+        "vehicle": [
+          "‘visions of God’ as a technical description",
+          "a special class of visions associated with God as source",
+          "prophetic discourse formula"
+        ],
+        "ground": [
+          "the content and origin of these visions are uniquely divine, not ordinary perception",
+          "visions marked off as authoritative and supernatural",
+          "distinction between mundane and revelatory experience"
+        ],
+        "posture": [
+          "presents Ezekiel as a seer transported within God-given visions",
+          "underscores his passivity and God’s initiative",
+          "claims revelatory authority for what is described"
+        ],
+        "explanation": "The phrase ‘in visions of God’ is an idiomatic prophetic formula marking a special, divinely sourced visionary state, differentiating it from normal seeing.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 40:3",
+    "deliberation": "The description is mostly literal (a figure with measuring tools). The explicit comparison 'his appearance like the appearance of bronze' is a clear simile, using metallic imagery to convey radiance or strength. No other figurative devices detected.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִישׁ֙ מַרְאֵ֙הוּ֙ כְּמַרְאֵ֣ה נְחֹ֔שֶׁת",
+        "english_text": "a figure who shone like copper / whose appearance was like the appearance of bronze",
+        "target": [
+          "the visual impression of the mysterious ‘man’ (angelic figure)",
+          "supernatural messenger’s appearance",
+          "divine realm / vision imagery"
+        ],
+        "vehicle": [
+          "the appearance of copper/bronze",
+          "bright, polished metal",
+          "inanimate physical substance"
+        ],
+        "ground": [
+          "brightness, gleam, and perhaps hardness or majesty common to both",
+          "striking visual radiance",
+          "sensory similarity"
+        ],
+        "posture": [
+          "Ezekiel uses familiar sensory imagery to approximate an ineffable sight",
+          "acknowledges limits of human description",
+          "adopts an analogical, not literal, mode of portrayal"
+        ],
+        "explanation": "The comparison ‘his appearance like the appearance of bronze’ is a simile, using bronze’s shine and solidity to convey the dazzling, awe‑inspiring look of the heavenly figure.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 40:4",
+    "deliberation": "The verse mixes literal imperatives (look, listen) with several conventional figurative expressions: (1) the vocative 'son of man' as an idiomatic, metonymic way to address Ezekiel as a mere mortal; (2) 'set your heart' for concentrating one’s attention; and (3) 'house of Israel' as a metonymy for the people. These are standard Hebrew figures, not architectural.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָ֡ם",
+        "english_text": "Mortal / son of man",
+        "target": [
+          "Ezekiel himself as addressee",
+          "an individual human being",
+          "humanity"
+        ],
+        "vehicle": [
+          "‘son of man’ (offspring of generic humanity)",
+          "familial/kinship designation",
+          "social–anthropological category"
+        ],
+        "ground": [
+          "emphasizes Ezekiel’s membership in frail humanity as contrasted with the divine speaker",
+          "stresses weakness and limitation",
+          "creator–creature distinction"
+        ],
+        "posture": [
+          "positions Ezekiel as humble, finite recipient of revelation",
+          "heightens the asymmetry between God and prophet",
+          "encourages reverent attentiveness"
+        ],
+        "explanation": "The address ‘son of man’ is an idiomatic, metonymic way to say ‘human one’, underlining Ezekiel’s mortality and lowliness over against God.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשִׂ֣ים לִבְּךָ֗ לְכֹ֤ל אֲשֶׁר־אֲנִי֙ מַרְאֶ֣ה אוֹתָ֔ךְ",
+        "english_text": "and set your heart to everything that I am going to show you",
+        "target": [
+          "Ezekiel’s focused attention and understanding",
+          "cognitive concentration",
+          "inner human faculties"
+        ],
+        "vehicle": [
+          "‘setting’ or placing the heart toward an object",
+          "moving/positioning a physical organ or object",
+          "bodily/spatial action"
+        ],
+        "ground": [
+          "directing attention likened to physically positioning the core of one’s being",
+          "intentional orientation toward something",
+          "attention-as-orientation metaphor"
+        ],
+        "posture": [
+          "presents attention as an active, volitional stance Ezekiel must take",
+          "invites whole‑hearted engagement with revelation",
+          "frames listening as a disciplined inner posture"
+        ],
+        "explanation": "‘Set your heart’ is an idiomatic metaphor portraying mental focus and receptivity as if one were physically placing or directing the heart toward what God reveals.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְבֵ֥ית יִשְׂרָאֵֽל",
+        "english_text": "to the House of Israel",
+        "target": [
+          "the people of Israel as a nation",
+          "collective community",
+          "socioreligious entity"
+        ],
+        "vehicle": [
+          "‘house’ as a single household or dynasty",
+          "architectural/familial unit",
+          "domestic structure / family"
+        ],
+        "ground": [
+          "a nation conceptualized as one extended household descended from a common ancestor",
+          "unity and kinship bonds",
+          "container/structure representing its members"
+        ],
+        "posture": [
+          "frames Israel as a family under God’s authority",
+          "invokes covenantal household imagery",
+          "highlights corporate responsibility to heed the vision"
+        ],
+        "explanation": "‘House of Israel’ uses ‘house’ metonymically for the entire people, viewing the nation as one familial household descended from Israel/Jacob.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 40:5",
+    "deliberation": "The verse gives technical measurements of a wall and the measuring rod. Repetition of ‘all around’ is spatial, not rhetorical hyperbole in context. No metaphors, similes, idioms, or metonymies beyond literal architectural description are present.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 40:6",
+    "deliberation": "This is a straightforward description of approaching the east-facing gate and measuring its threshold. The language is concrete and architectural; directional terms and measurement units are literal. No figurative expressions detected.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 40:7",
+    "deliberation": "The verse continues precise measurements of recesses, distances, and thresholds. All terms function in a technical, spatial sense; there is no metaphorical use of body parts, no similes, and no idioms.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 40:8",
+    "deliberation": "Only a literal measurement of the inner vestibule of the gate is given. No evaluative or figurative language is used.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 40:9",
+    "deliberation": "Again, this is purely architectural description: cubit counts for vestibule and supports, with a note on location. No imagery, idiom, or non-literal usage appears.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 40:10",
+    "deliberation": "Describes the number and identical size of recesses and supports at the eastern gate. The comparison ‘one measure’ is numerical, not figurative. No metaphor or idiom is present.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 40:11",
+    "deliberation": "Contains only straightforward measurements of width and length of the gate opening. No figurative constructions appear.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 40:12",
+    "deliberation": "The ‘barriers’ and distances are literal architectural features. No metaphorical use of ‘boundary’ or similar terms is evident in this technical context.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 40:13",
+    "deliberation": "The measuring from roof to roof and the phrase ‘opening opposite opening’ are literal spatial descriptions of facing recesses across a passage. No figurative senses detected.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 40:14",
+    "deliberation": "Refers to constructing and measuring supports (’elim) and their relationship to the court. These are structural terms used literally. No figurative language present.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 40:15",
+    "deliberation": "States the quantitative distance from the outer gate’s front to the inner vestibule. This is a simple spatial measure without figurative overlay.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 40:16",
+    "deliberation": "Describes windows, frames, and palm decorations on supports and vestibules. ‘Palms’ refers to carved or sculpted motifs, which, though symbolically rich, are here described literally as ornamentation. No explicit figurative phrasing within the verse.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 40:17",
+    "deliberation": "Mentions being brought to the outer court, with chambers and pavement all around, and the number of chambers. The language is entirely descriptive and technical; no metaphor or idiom is used.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 40:18",
+    "deliberation": "The pavements ‘flanking’ the gates and corresponding in length are literal spatial relations. No figurative extension of these terms is present.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 40:19",
+    "deliberation": "Reports a 100-cubit measurement between gates at specific orientations (east, north). All terms are spatial and numeric; there is no figurative or idiomatic use.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 40:20",
+    "deliberation": "Simply notes a north-facing gate of the outer court and measuring its length and width. No figurative language involved.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 40:21",
+    "deliberation": "Lists the three recesses, supports, vestibule, and dimensions mirroring the first gate. The comparisons are factual equivalences, not literary similes or metaphors.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 40:22",
+    "deliberation": "Windows, vestibule, and palm trees are said to correspond to those of the east gate, and the number of steps is given. This is descriptive, not figurative; palms refer to decorations, not metaphorical ‘palms’.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 40:23",
+    "deliberation": "States that a gate of the inner court faces the north and east gates, and that the distance from gate to gate is 100 cubits. No figurative expressions are used.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 40:24",
+    "deliberation": "Describes movement to the south side, finding a gate, and measuring its supports and vestibule ‘according to these measures’. All terms are literal and technical.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 40:25",
+    "deliberation": "Notes that this gate and its vestibule have windows like the others and gives its dimensions. The likeness is an architectural correspondence, not a simile used for imagery. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 40:26",
+    "deliberation": "The seven steps, the position of the vestibule, and palm-tree decorations on supports are literal structural and decorative details. No metaphorical deployment of these terms within the verse.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 40:27",
+    "deliberation": "Gives the existence of an inner-court gate facing south and a 100‑cubit distance between gates. All language is spatially literal.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 40:28",
+    "deliberation": "Entrance to the inner court through the south gate and measurement ‘according to these measures’ continue the technical description. No figurative devices appear.",
+    "instances": []
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 40:29",
+    "deliberation": "Enumerates recesses, supports, vestibule, and repeated reference to windows and size. This is purely architectural specification with no imagery beyond literal forms.",
+    "instances": []
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 40:30",
+    "deliberation": "States dimensions of vestibules on both sides. No metaphor, idiom, or personification is present.",
+    "instances": []
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 40:31",
+    "deliberation": "Speaks of the vestibule opening to the outer court, palms on supports, and an eight-step staircase. The terms function strictly as structural descriptors.",
+    "instances": []
+  },
+  {
+    "verse": 32,
+    "reference": "Ezekiel 40:32",
+    "deliberation": "Mentions movement to the east side of the inner court and measuring the gate according to prior measures. No figurative language is used.",
+    "instances": []
+  },
+  {
+    "verse": 33,
+    "reference": "Ezekiel 40:33",
+    "deliberation": "Repeats the pattern of recesses, supports, vestibule, windows, and measurements for another gate. The language is technical and literal.",
+    "instances": []
+  },
+  {
+    "verse": 34,
+    "reference": "Ezekiel 40:34",
+    "deliberation": "Describes a vestibule opening to the outer court, palm-decorated supports, and eight steps. Although palms have symbolic resonance, the wording is literal description of ornament and stairs.",
+    "instances": []
+  },
+  {
+    "verse": 35,
+    "reference": "Ezekiel 40:35",
+    "deliberation": "States that he was led to the north gate and measurements matched the others. This is straightforward architectural detail without figurative elements.",
+    "instances": []
+  },
+  {
+    "verse": 36,
+    "reference": "Ezekiel 40:36",
+    "deliberation": "Lists recesses, supports, vestibule, windows, and size again. No non-literal language is present.",
+    "instances": []
+  },
+  {
+    "verse": 37,
+    "reference": "Ezekiel 40:37",
+    "deliberation": "Mentions supports toward the outer court, palms on supports, and eight steps. All these are literal features; there is no linguistic metaphor or idiom indicated.",
+    "instances": []
+  },
+  {
+    "verse": 38,
+    "reference": "Ezekiel 40:38",
+    "deliberation": "References a chamber with its entrance by the gate-supports, where burnt offerings are washed. The washing of the burnt offering is a ritual procedure described literally, not metaphorically.",
+    "instances": []
+  },
+  {
+    "verse": 39,
+    "reference": "Ezekiel 40:39",
+    "deliberation": "Describes two tables on each side in the gate vestibule for slaughtering specific sacrifices. All terms (burnt offering, sin offering, guilt offering) function literally as cultic categories.",
+    "instances": []
+  },
+  {
+    "verse": 40,
+    "reference": "Ezekiel 40:40",
+    "deliberation": "Continues enumerating the positions and number of tables near the north gate. The spatial prepositions and nouns are literal; no figurative language is employed.",
+    "instances": []
+  },
+  {
+    "verse": 41,
+    "reference": "Ezekiel 40:41",
+    "deliberation": "Summarizes the number of tables on each flank and their purpose for slaughter. This counting and functional description is literal, with no metaphor or idiom.",
+    "instances": []
+  },
+  {
+    "verse": 42,
+    "reference": "Ezekiel 40:42",
+    "deliberation": "Gives dimensions and material of stone tables and their use for placing instruments of sacrifice. All vocabulary is concrete and ritual-technical.",
+    "instances": []
+  },
+  {
+    "verse": 43,
+    "reference": "Ezekiel 40:43",
+    "deliberation": "Mentions shelves (or hooks) of a handbreadth and sacrificial flesh on the tables. The ‘handbreadth’ is a standard unit, not a metaphor, and ‘flesh’ is literal sacrificial meat. No figurative language apparent.",
+    "instances": []
+  },
+  {
+    "verse": 44,
+    "reference": "Ezekiel 40:44",
+    "deliberation": "Describes chambers for singers with specified positions and orientations. ‘Singers’ are literal temple personnel. Directions (north, south) are spatial. No metaphors, idioms, or personifications used.",
+    "instances": []
+  },
+  {
+    "verse": 45,
+    "reference": "Ezekiel 40:45",
+    "deliberation": "Identifies one chamber as for priests who ‘keep the charge of the house’. The phrase ‘keep the charge’ (shomrê mishmeret) is a conventional idiom portraying priestly duty as guarding or keeping custody, thus a mild conceptual metaphor. No other figures detected.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לַכֹּ֣הֲנִ֔ים שֹׁמְרֵ֖י מִשְׁמֶ֥רֶת הַבָּֽיִת",
+        "english_text": "for the priests who perform the duties of / keep the charge of the temple",
+        "target": [
+          "priests’ responsibility for temple service and order",
+          "cultic duty",
+          "religious practice"
+        ],
+        "vehicle": [
+          "‘keeping the charge of the house’",
+          "guarding or watching over something entrusted",
+          "security/custody imagery"
+        ],
+        "ground": [
+          "priestly functions conceptualized as guarding a trust or assignment",
+          "vigilance, faithfulness, and accountability",
+          "duty-as-trust metaphor"
+        ],
+        "posture": [
+          "presents priests as custodians rather than owners of the temple",
+          "emphasizes their accountability to a higher authority (God)",
+          "frames service as careful, protective stewardship"
+        ],
+        "explanation": "The idiom ‘those who keep the charge of the house’ metaphorically portrays the priests’ duties as guarding and watching over a trust, not merely performing routine tasks.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 46,
+    "reference": "Ezekiel 40:46",
+    "deliberation": "Two idiomatic expressions appear: (1) priests ‘keeping the charge of the altar’, parallel to v.45 and similarly metaphorical; and (2) the priests ‘who draw near to YHWH’ as a standard metaphor for privileged cultic access, conceptualized as physical proximity to a person of high status.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לַכֹּ֣הֲנִ֔ים שֹׁמְרֵ֖י מִשְׁמֶ֣רֶת הַמִּזְבֵּ֑חַ",
+        "english_text": "for the priests who perform the duties of / keep the charge of the altar",
+        "target": [
+          "priests’ specific responsibilities regarding the altar",
+          "cultic duty",
+          "sacrificial administration"
+        ],
+        "vehicle": [
+          "‘keeping the charge of the altar’",
+          "guarding or watching over an assigned object",
+          "security/custodial activity"
+        ],
+        "ground": [
+          "their service at the altar is treated as guarding and maintaining a sacred trust",
+          "stresses faithful oversight and protection",
+          "duty-as-entrusted-object metaphor"
+        ],
+        "posture": [
+          "depicts these priests as guardians of the altar’s sanctity",
+          "highlights their accountability for correct ritual practice",
+          "underscores the seriousness of their role"
+        ],
+        "explanation": "As in v.45, ‘keeping the charge’ is an idiomatic metaphor, casting priestly altar service as the vigilant guarding of something entrusted, not just routine work.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֵ֣מָּה בְנֵֽי־צָד֗וֹק הַקְּרֵבִ֧ים מִבְּנֵֽי־לֵוִ֛י אֶל־יְהֹוָ֖ה לְשָׁרְתֽוֹ",
+        "english_text": "they are the descendants of Zadok, who draw near to GOD to minister to Him",
+        "target": [
+          "the Zadokite priests’ unique privilege of access and service to God",
+          "cultic and relational nearness",
+          "divine–human relationship in worship"
+        ],
+        "vehicle": [
+          "‘drawing near to YHWH’",
+          "physical movement into someone’s personal presence",
+          "spatial/social proximity"
+        ],
+        "ground": [
+          "ritual and relational access to God conceived as bodily approach into His presence",
+          "closeness signifies privilege, intimacy, and honor",
+          "presence-as-space metaphor"
+        ],
+        "posture": [
+          "elevates Zadok’s descendants as intimate attendants of YHWH",
+          "marks a hierarchical distinction within Levi",
+          "reinforces reverent, service-oriented stance toward God"
+        ],
+        "explanation": "The phrase ‘who draw near to YHWH’ is a metaphoric idiom where privileged cultic access is conceptualized as physical approach into God’s presence, signaling intimacy and high status.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 47,
+    "reference": "Ezekiel 40:47",
+    "deliberation": "Reports the length and breadth of the court (100 by 100 cubits, ‘foursquare’) and notes the altar before the temple. ‘Foursquare’ here describes literal symmetry of dimensions, not perfection metaphorically. No figurative language is evident.",
+    "instances": []
+  },
+  {
+    "verse": 48,
+    "reference": "Ezekiel 40:48",
+    "deliberation": "Details entry into the temple portico, measurements of jambs, and gate width. All terms are used in their literal architectural sense; no idioms or metaphors occur.",
+    "instances": []
+  },
+  {
+    "verse": 49,
+    "reference": "Ezekiel 40:49",
+    "deliberation": "Gives the length and width of the portico, access by steps, and columns by the jambs. These are structural features, not images for other realities. No figurative language detected.",
+    "instances": []
+  }
+]

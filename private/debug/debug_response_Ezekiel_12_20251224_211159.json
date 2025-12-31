@@ -1,0 +1,1383 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 12:1",
+    "deliberation": "Looked for non-literal expressions. The clause 'the word of YHWH came to me' uses spatial motion ('came') for an intangible message and treats 'word' as a quasi-object, a conventional prophetic metaphor/metonymy for revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָה אֵלַי לֵאמֹר",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "Ezekiel’s reception of divine revelation",
+          "prophetic experience",
+          "religious communication"
+        ],
+        "vehicle": [
+          "a 'word' that travels and arrives to someone",
+          "moving object / message",
+          "physical motion in space"
+        ],
+        "ground": [
+          "an originating source sends something that reaches a recipient",
+          "transfer/arrival relationship",
+          "communication domain"
+        ],
+        "posture": [
+          "asserting the authority and divine origin of Ezekiel’s message",
+          "authoritative self-presentation formula",
+          "prophetic discourse convention"
+        ],
+        "explanation": "The abstract event of revelation is depicted as a concrete 'word' that moves and 'comes' to the prophet, a conventional prophetic metaphor and metonymy for divine communication.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 12:2",
+    "deliberation": "Checked the vocative, the label 'rebellious house', and the sensory language. Found: (1) 'son of man' as an idiomatic metonymy for a mortal; (2) 'rebellious house' as a metaphor for the people; (3) eyes/ears that 'do not see/hear' as metaphor and synecdoche for spiritual insensitivity, with some hyperbolic coloring.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal (lit. 'son of man')",
+        "target": [
+          "Ezekiel as a finite human being",
+          "individual human person",
+          "humanity/mortality"
+        ],
+        "vehicle": [
+          "a 'son of man' (offspring of humankind)",
+          "kinship/genealogical designation",
+          "family/lineage domain"
+        ],
+        "ground": [
+          "sharing the condition and limitations of ordinary humans",
+          "membership in the human family",
+          "anthropological domain"
+        ],
+        "posture": [
+          "underscoring the prophet’s frailty before God",
+          "humbling, contrastive address",
+          "prophetic address convention"
+        ],
+        "explanation": "The phrase 'son of man' is an idiomatic metonymy where descent from humans stands for being a mere human, emphasizing Ezekiel’s mortality.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית־הַמֶּרִי",
+        "english_text": "the rebellious house",
+        "target": [
+          "the people of Israel characterized by rebellion",
+          "collective human group",
+          "covenant community"
+        ],
+        "vehicle": [
+          "a 'house' marked by rebellion against its head",
+          "household/family unit",
+          "domestic/social structure"
+        ],
+        "ground": [
+          "a cohesive group acting together in stubborn opposition to authority",
+          "shared identity and habitual defiance",
+          "moral–relational sphere"
+        ],
+        "posture": [
+          "condemning Israel’s character as habitually insubordinate",
+          "negative evaluative labeling",
+          "prophetic judgment rhetoric"
+        ],
+        "explanation": "Israel is figuratively called a 'house' defined by rebellion, a metaphorical and idiomatic way of describing the people as a single unruly household.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֲשֶׁ֣ר עֵינַ֩יִם֩ לָהֶ֨ם לִרְא֜וֹת וְלֹ֣א רָא֗וּ אׇזְנַ֨יִם לָהֶ֤ם לִשְׁמֹ֙עַ֙ וְלֹ֣א שָׁמֵ֔עוּ",
+        "english_text": "They have eyes to see but see not, ears to hear but hear not",
+        "target": [
+          "Israel’s refusal to perceive and heed God’s message",
+          "spiritual/moral responsiveness",
+          "inner condition of the covenant people"
+        ],
+        "vehicle": [
+          "bodily eyes and ears that fail to function",
+          "sense organs / physical faculties",
+          "human body domain"
+        ],
+        "ground": [
+          "having the capacities needed for perception yet failing to use them",
+          "non-responsiveness and dullness",
+          "cognitive–spiritual domain"
+        ],
+        "posture": [
+          "rebuking their willful spiritual blindness and deafness",
+          "shaming and exposing culpable insensitivity",
+          "prophetic indictment"
+        ],
+        "explanation": "Eyes and ears stand synecdochically for the whole person’s capacity to perceive, and their failure to 'see' or 'hear' depicts Israel’s spiritual insensitivity in a hyperbolic metaphor; they have the faculties but refuse to use them rightly.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 12:3",
+    "deliberation": "Looked at 'son of man', 'gear for exile', and 'rebellious house'. The sign-act instructions themselves are literal actions but symbolically meaningful; the main figurative elements are the idiomatic address 'son of man' and the metaphor 'rebellious house', repeated from v.2.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאַתָּ֣ה בֶן־אָדָם",
+        "english_text": "And you, O mortal (lit. 'son of man')",
+        "target": [
+          "Ezekiel as a limited human creature",
+          "individual human person",
+          "humanity/mortality"
+        ],
+        "vehicle": [
+          "a 'son of man'",
+          "offspring / descendant",
+          "family lineage domain"
+        ],
+        "ground": [
+          "belonging to the human race with its weaknesses",
+          "shared human nature",
+          "anthropological domain"
+        ],
+        "posture": [
+          "reminding the prophet of his creaturely status before God",
+          "humbling address",
+          "prophetic address convention"
+        ],
+        "explanation": "As in v.2, 'son of man' is an idiomatic metonymy for a human being, highlighting Ezekiel’s mortality.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֛י בֵּ֥ית מְרִ֖י הֵֽמָּה",
+        "english_text": "for they are a rebellious house",
+        "target": [
+          "Israel as a persistently disobedient people",
+          "collective human group",
+          "covenant community"
+        ],
+        "vehicle": [
+          "a 'house' characterized by rebellion against its master",
+          "household/family unit",
+          "domestic social structure"
+        ],
+        "ground": [
+          "unity as a household and shared defiant behavior",
+          "corporate identity in opposition",
+          "moral–relational domain"
+        ],
+        "posture": [
+          "stressing the entrenched nature of their rebellion",
+          "denunciatory labeling",
+          "prophetic judgment speech"
+        ],
+        "explanation": "The community is figuratively labeled a 'rebellious house', again using 'house' as a metaphorical and metonymic term for the people bound together in disobedience.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 12:4",
+    "deliberation": "Checked whether the exile-gear instructions are purely literal. The key non-literal marker is the comparative כ in 'as those going into exile', which indicates a simile: Ezekiel is to act in the manner of exiles, not because he is literally being deported at that moment but to resemble them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כְּמוֹצָאֵ֖י גּוֹלָה",
+        "english_text": "as one who goes out into exile",
+        "target": [
+          "Ezekiel’s enacted departure from his home",
+          "prophetic sign-act",
+          "historical behavior of the prophet"
+        ],
+        "vehicle": [
+          "people going out into exile",
+          "deportees / forced migrants",
+          "experience of national defeat"
+        ],
+        "ground": [
+          "visible resemblance in the way belongings are carried and departure is made",
+          "outward pattern of movement and burden-bearing",
+          "social–experiential domain"
+        ],
+        "posture": [
+          "using mimed behavior to foreshadow coming judgment",
+          "didactic prophetic dramatization",
+          "symbolic-action rhetoric"
+        ],
+        "explanation": "By commanding Ezekiel to go out 'as one going into exile', the text explicitly casts his movements as a simile, a visible likeness to future deportees.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 12:5",
+    "deliberation": "Considered whether digging through the wall could be figurative. Here it is a literal action described straightforwardly, though symbolically meaningful in the larger narrative. No explicit metaphorical or idiomatic expressions in the wording itself.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 12:6",
+    "deliberation": "Examined the darkness and covering of the face; these are literal within the sign-act. The explicit figurative expression is 'I have made you a מוֹפֵת (portent/sign) to the house of Israel', which metaphorically casts the prophet himself as a sign-object.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּֽי־מוֹפֵ֥ת נְתַתִּ֖יךָ לְבֵ֥ית יִשְׂרָאֵֽל",
+        "english_text": "for I make you a portent to the House of Israel",
+        "target": [
+          "Ezekiel’s person and actions before Israel",
+          "prophetic role",
+          "religious leadership in Israel"
+        ],
+        "vehicle": [
+          "a מוֹפֵת, a sign/portent that points beyond itself",
+          "symbolic object",
+          "semiotic domain (signs and meanings)"
+        ],
+        "ground": [
+          "Ezekiel’s life and acts convey a message about future events, just as a sign points to something else",
+          "representative, referential function",
+          "communication/representation domain"
+        ],
+        "posture": [
+          "framing the prophet’s suffering and odd behavior as divinely intended symbolism",
+          "interpretive guidance to the audience",
+          "prophetic self-definition"
+        ],
+        "explanation": "God metaphorically designates Ezekiel himself as a 'portent', a living sign whose enacted behavior communicates God’s message.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 12:7",
+    "deliberation": "This verse narrates Ezekiel’s literal obedience to the sign-act instructions: taking out his gear, digging through the wall, carrying it on his shoulder. The language is straightforwardly descriptive; the symbolic force lies in the action, not in figurative turns of phrase.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 12:8",
+    "deliberation": "Again evaluated the prophetic formula. 'The word of YHWH came to me in the morning' repeats the same metaphor/metonymy of a 'word' that travels to the prophet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֧י דְבַר־יְהוָ֛ה אֵלַ֖י בַּבֹּ֥קֶר לֵאמֹֽר",
+        "english_text": "In the morning, the word of GOD came to me",
+        "target": [
+          "Ezekiel’s reception of a further revelation",
+          "prophetic communication event",
+          "religious experience"
+        ],
+        "vehicle": [
+          "a 'word' arriving at a person at a given time of day",
+          "moving/dispatched object",
+          "spatial–temporal motion"
+        ],
+        "ground": [
+          "something originates from a sender and reaches a recipient at a specific time",
+          "temporalized arrival",
+          "communication process"
+        ],
+        "posture": [
+          "marking a new, time-specific divine message",
+          "formal introduction of oracle",
+          "prophetic discourse formula"
+        ],
+        "explanation": "As in v.1, revelation is conceptualized as a 'word' that comes, blending metaphor (motion) and metonymy (word for message).",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 12:9",
+    "deliberation": "Considered 'son of man' and 'rebellious house' again; both reappear, as does 'house of Israel'. These are figurative; the question 'What are you doing?' is literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal (lit. 'son of man')",
+        "target": [
+          "Ezekiel as a mortal human",
+          "individual human being",
+          "humanity"
+        ],
+        "vehicle": [
+          "offspring of man ('son of man')",
+          "kinship term",
+          "family domain"
+        ],
+        "ground": [
+          "derivation from humankind implying shared frailty",
+          "belonging to human stock",
+          "anthropological domain"
+        ],
+        "posture": [
+          "keeping the prophet’s status distinct from God’s",
+          "humbling address",
+          "prophetic idiom"
+        ],
+        "explanation": "Again an idiomatic metonymy profiling Ezekiel’s humanness.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יִשְׂרָאֵל בֵּית הַמֶּרִי",
+        "english_text": "the House of Israel, that rebellious house",
+        "target": [
+          "the covenant people of Israel",
+          "national community",
+          "religious–ethnic group"
+        ],
+        "vehicle": [
+          "a 'house' characterized by rebellion",
+          "household/family metaphor",
+          "social structure"
+        ],
+        "ground": [
+          "corporate identity and collective resistance to rightful rule",
+          "unity in disobedience",
+          "moral–social domain"
+        ],
+        "posture": [
+          "highlighting shared culpability of the nation",
+          "denunciatory label",
+          "judgment oracle"
+        ],
+        "explanation": "The people are conceptualized as a single rebellious 'house', a metaphorical and metonymic shorthand for the nation in revolt.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 12:10",
+    "deliberation": "Examined 'burden/massā', 'prince', and 'house of Israel'. The key figurative elements: (1) מַשָּׂא as a technical term for an oracle, metaphorically a 'burden'; (2) 'house of Israel' as standard metonymy for the people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "הַנָּשִׂ֞יא הַמַּשָּׂ֤א הַזֶּה֙ בִּירוּשָׁלִַ֔ם",
+        "english_text": "The prince, this burden, in Jerusalem",
+        "target": [
+          "the prophetic message concerning the prince in Jerusalem",
+          "judgment oracle",
+          "prophetic communication"
+        ],
+        "vehicle": [
+          "a 'burden' (מַשָּׂא) that is carried",
+          "heavy physical load",
+          "manual labor domain"
+        ],
+        "ground": [
+          "the oracle is weighty and grievous like a heavy burden",
+          "difficulty and heaviness",
+          "affective–evaluative domain"
+        ],
+        "posture": [
+          "framing the prophecy about the prince as a heavy, ominous announcement",
+          "solemnizing the message",
+          "prophetic genre marker"
+        ],
+        "explanation": "The technical term מַשָּׂא, literally 'burden', functions metaphorically and idiomatically for a heavy, weighty oracle about the prince.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְכׇל־בֵּ֥ית יִשְׂרָאֵ֖ל אֲשֶׁר־הֵ֥מָּה בְתוֹכָֽם",
+        "english_text": "and all the House of Israel who are in it",
+        "target": [
+          "Israelites present in Jerusalem",
+          "group of people",
+          "covenant community"
+        ],
+        "vehicle": [
+          "a 'house' with members inside",
+          "household / building",
+          "domestic space"
+        ],
+        "ground": [
+          "many individuals forming one enclosed, belonging unit",
+          "corporate solidarity and membership",
+          "social–relational domain"
+        ],
+        "posture": [
+          "emphasizing that the message concerns the entire community, not just the ruler",
+          "inclusive reference",
+          "prophetic address"
+        ],
+        "explanation": "'House of Israel' uses the image of a household to refer metonymically and metaphorically to the whole people.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 12:11",
+    "deliberation": "Checked the claim 'I am your portent' and the exile language. Exile/captivity here are literal; 'I am a portent for you' is metaphoric, casting Ezekiel’s person/actions as a sign.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֲנִ֣י מוֹפֶתְכֶ֑ם",
+        "english_text": "I am a portent for you",
+        "target": [
+          "Ezekiel’s life and enacted behavior as observed by Israel",
+          "prophetic role",
+          "religious witness"
+        ],
+        "vehicle": [
+          "a portent/sign that indicates coming events",
+          "symbolic indicator",
+          "semiotic phenomenon"
+        ],
+        "ground": [
+          "Ezekiel’s actions point beyond themselves to future exile, as a sign does to its referent",
+          "indirect representation",
+          "communication domain"
+        ],
+        "posture": [
+          "explaining that his strange behavior is not random but divinely meaningful",
+          "interpretive self-identification",
+          "pedagogical explanation"
+        ],
+        "explanation": "By saying 'I am your portent', Ezekiel speaks metaphorically of himself as a sign whose behavior signifies what will happen to them.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 12:12",
+    "deliberation": "The description of the prince’s escape attempt—carrying gear, going in the dark, breaking through the wall, covering his face so as not to see the land—matches the literal historical fate of Zedekiah. Though symbolically loaded, the wording itself is descriptive rather than metaphorical.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 12:13",
+    "deliberation": "Considered the hunting imagery vs. the statements about Babylon. The key figurative cluster is 'I will spread my net over him, and he will be caught in my snare', using hunting gear as a metaphor for divine capture through historical events.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּפָרַשְׂתִּ֤י אֶת־רִשְׁתִּי֙ עָלָ֔יו וְנִתְפַּ֖שׂ בִּמְצוּדָתִ֑י",
+        "english_text": "I will spread My net over him, and he shall be caught in My snare",
+        "target": [
+          "God’s inescapable judgment catching the prince (Zedekiah)",
+          "divine control of historical defeat",
+          "judicial action of God"
+        ],
+        "vehicle": [
+          "a hunter’s/fisherman’s net and trap that ensnare prey",
+          "hunting gear",
+          "animal capture domain"
+        ],
+        "ground": [
+          "inescapable capture orchestrated by a more powerful agent",
+          "being taken unavoidably despite attempts to flee",
+          "control and subjugation"
+        ],
+        "posture": [
+          "emphasizing God’s sovereign, intentional seizure of the king through Babylonian conquest",
+          "vivid threat imagery",
+          "prophetic warning"
+        ],
+        "explanation": "God’s judicial capture of the prince is pictured as throwing a net and catching him in a trap, a standard hunting metaphor for inescapable divine judgment.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 12:14",
+    "deliberation": "Looked at 'scatter to every wind' and 'unsheathe the sword'. Both are conventional images: the first a metaphor/idiom of scattering people like chaff, the second a metonymy where 'the sword' stands for violent warfare and judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֱזָרֶ֣ה לְכׇל־ר֑וּחַ",
+        "english_text": "I will scatter [them] in every direction (lit. 'to every wind')",
+        "target": [
+          "the dispersion of the king’s entourage and troops",
+          "forced exile and flight",
+          "historical fate of people"
+        ],
+        "vehicle": [
+          "particles scattered by the wind in all directions",
+          "chaff/dust dispersed by air currents",
+          "natural physical process"
+        ],
+        "ground": [
+          "being spread out uncontrollably over a wide area",
+          "loss of cohesion and forced distribution",
+          "disintegration of a group"
+        ],
+        "posture": [
+          "threatening complete dispersal and loss of solidarity",
+          "evoking imagery of winnowing/scattering",
+          "judgment rhetoric"
+        ],
+        "explanation": "The exiling and fleeing of people is portrayed as scattering something 'to every wind', an idiomatic metaphor for total dispersion.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְחֶ֖רֶב אָרִ֥יק אַחֲרֵיהֶֽם",
+        "english_text": "and I will unsheathe the sword after them",
+        "target": [
+          "ongoing threat of violent judgment pursuing the fugitives",
+          "continuing warfare",
+          "divine punishment"
+        ],
+        "vehicle": [
+          "a drawn sword",
+          "weapon of war",
+          "military violence"
+        ],
+        "ground": [
+          "a drawn sword embodies imminent lethal danger",
+          "pursuit with intent to strike",
+          "coercive force"
+        ],
+        "posture": [
+          "depicting God’s judgment as relentless military pursuit",
+          "intensifying threat imagery",
+          "prophetic warning"
+        ],
+        "explanation": "'The sword' stands metonymically for warfare and lethal judgment, and the idiom of 'unsheathing' heightens the sense of imminent violence.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 12:15",
+    "deliberation": "The scattering among nations and dispersal through countries are, in context, literal descriptions of exile, not obviously figurative exaggerations. 'They shall know that I am YHWH' is a theological formula, not a metaphor. No clear figurative expressions beyond standard covenant formula.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 12:16",
+    "deliberation": "Checked 'men of number', the triad 'sword, famine, pestilence', and 'recount all their abominations'. The verse uses: (1) 'men of number' as an idiom for 'a few'; (2) the stock trio 'sword, famine, and pestilence' as a meristic way of denoting comprehensive covenant curses.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אַנְשֵׁ֣י מִסְפָּ֔ר",
+        "english_text": "men of number (i.e., a few people)",
+        "target": [
+          "the small remnant that will survive",
+          "minority subset of the people",
+          "surviving group"
+        ],
+        "vehicle": [
+          "people few enough to be counted individually",
+          "countable items",
+          "numeric quantification"
+        ],
+        "ground": [
+          "smallness is associated with easy countability",
+          "limited quantity",
+          "measurement/quantity domain"
+        ],
+        "posture": [
+          "emphasizing the tiny size of the surviving remnant",
+          "sobering understatement",
+          "judgment–mercy tension"
+        ],
+        "explanation": "The idiom 'men of number' figuratively presents the remnant as so few that they can easily be numbered one by one.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "מֵחֶ֖רֶב מֵרָעָ֣ב וּמִדָּ֑בֶר",
+        "english_text": "from the sword, from famine, and from pestilence",
+        "target": [
+          "the full range of covenant judgments and calamities",
+          "divine punitive actions",
+          "national disasters"
+        ],
+        "vehicle": [
+          "three representative scourges: war, hunger, disease",
+          "categories of calamity",
+          "experience of suffering"
+        ],
+        "ground": [
+          "these three encompass the main modes of catastrophic judgment",
+          "comprehensiveness via representative list",
+          "meristic enumeration"
+        ],
+        "posture": [
+          "depicting judgment as thorough yet leaving a tiny remnant",
+          "intensifying the seriousness of sin’s consequences",
+          "covenant-curse rhetoric"
+        ],
+        "explanation": "The triad 'sword, famine, and pestilence' functions meristically and metonymically for comprehensive covenantal judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 12:17",
+    "deliberation": "Same prophetic formula occurs: 'the word of YHWH came to me'. This again personifies/metaphorizes the divine message as a 'word' that comes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָה אֵלַי לֵאמֹר",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "Ezekiel’s experience of receiving a new oracle",
+          "prophetic revelation event",
+          "divine communication"
+        ],
+        "vehicle": [
+          "a 'word' that moves toward and reaches a person",
+          "traveling message",
+          "physical motion schema"
+        ],
+        "ground": [
+          "incoming communication resembles an object arriving from a source",
+          "source–path–goal pattern",
+          "conceptual metaphor for communication"
+        ],
+        "posture": [
+          "authorizing the message as divinely initiated",
+          "formal oracle introduction",
+          "prophetic discourse frame"
+        ],
+        "explanation": "Again revelation is depicted as a 'word' that 'comes', combining metaphor of motion with metonymy of 'word' for message.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 12:18",
+    "deliberation": "Checked whether eating 'in trembling' is figurative; here it is a literal sign-act embodying coming fear. The main figurative aspect is the use of 'bread' and 'water' as staples standing for basic sustenance generally (synecdoche/metonymy).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לַחְמְךָ֖ ... וּמֵימֶ֕יךָ",
+        "english_text": "your bread … and your water",
+        "target": [
+          "all of Ezekiel’s (and by sign, the people’s) basic nourishment",
+          "daily means of survival",
+          "material provision"
+        ],
+        "vehicle": [
+          "bread and water as primary staple foods",
+          "simple food items",
+          "dietary staples"
+        ],
+        "ground": [
+          "these are the most basic, representative elements of sustenance",
+          "part stands for the whole diet",
+          "synecdochic relation"
+        ],
+        "posture": [
+          "highlighting that even the most basic necessities will be consumed in fear",
+          "stressing total affective impact of siege conditions",
+          "prophetic sign-act explanation"
+        ],
+        "explanation": "Bread and water, as staples, function synecdochically and metonymically for all basic sustenance that will be eaten in anxiety.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 12:19",
+    "deliberation": "Again considered bread/water terms and the phrase 'her land will be desolate from its fullness'. Found: (1) bread and water as synecdoche for all food/drink; (2) 'its fullness' as synecdoche for population and produce that fill the land.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לַחְמָם֙ בִּדְאָגָ֣ה יֹאכֵ֔לוּ וּמֵימֵיהֶ֖ם בְּשִׁמָּמ֣וֹן יִשְׁתּ֑וּ",
+        "english_text": "They shall eat their bread in anxiety and drink their water in desolation",
+        "target": [
+          "the people’s entire experience of sustaining life under judgment",
+          "daily survival conditions",
+          "social-economic situation"
+        ],
+        "vehicle": [
+          "bread and water as emblematic food and drink",
+          "basic staples",
+          "dietary provision"
+        ],
+        "ground": [
+          "bread and water represent the entirety of one’s sustenance, now overshadowed by fear and desolation",
+          "representative detail standing for whole condition",
+          "synecdoche"
+        ],
+        "posture": [
+          "conveying that anxiety will pervade even the simplest acts of eating and drinking",
+          "intensifying the sense of comprehensive distress",
+          "judgment portrayal"
+        ],
+        "explanation": "As in v.18, bread and water function as synecdochic stand-ins for all food and drink, now characterized by anxiety and desolation.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "תֵּשַׁ֤ם אַרְצָהּ֙ מִמְּלֹאָ֔הּ",
+        "english_text": "their land will be desolate of its fullness",
+        "target": [
+          "the depletion of the land’s inhabitants and resources",
+          "loss of population and wealth",
+          "national devastation"
+        ],
+        "vehicle": [
+          "the 'fullness' of a land (people, produce, structures filling it)",
+          "contents of a container",
+          "spatial fullness"
+        ],
+        "ground": [
+          "what fills a land—its people and goods—is what makes it thriving",
+          "emptiness vs. fullness as gauge of prosperity",
+          "prosperity/demographic domain"
+        ],
+        "posture": [
+          "portraying judgment as a stripping away of everything that once filled the land",
+          "evoking stark contrast between former plenty and future emptiness",
+          "lament-like imagery"
+        ],
+        "explanation": "'Fullness' is a synecdochic term for the population and resources that fill the land; their removal is described as the land becoming desolate of its fullness.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 12:20",
+    "deliberation": "The towns being laid waste and the land becoming a desolation match the literal prediction of destruction, not clearly figurative exaggeration in context. The recognition formula 'you shall know that I am YHWH' is theological but not metaphorical in itself.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 12:21",
+    "deliberation": "The prophetic formula recurs unchanged, again treating the divine message as a 'word' that comes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָה אֵלַי לֵאמֹר",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "Ezekiel’s reception of yet another oracle",
+          "prophetic communication",
+          "divine–human interaction"
+        ],
+        "vehicle": [
+          "a 'word' moving toward and reaching a recipient",
+          "mobile message",
+          "motion in space"
+        ],
+        "ground": [
+          "a message originating from a sender and arriving to a hearer",
+          "source–target arrival pattern",
+          "communication metaphor"
+        ],
+        "posture": [
+          "asserting divine origin and authority of what follows",
+          "formulaic introduction",
+          "prophetic style"
+        ],
+        "explanation": "Same figurative formula as earlier: revelation is a 'word' that 'comes'.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 12:22",
+    "deliberation": "Looked at the proverb’s wording. It contains: (1) 'the days grow many'—a metaphorical idiom of time as something that lengthens, implying delay; (2) 'every vision is lost'—a personification of 'vision' as something that can perish or fail.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "יַֽאַרְכוּ֙ הַיָּמִ֔ים",
+        "english_text": "The days grow many (are prolonged)",
+        "target": [
+          "the perceived delay in fulfillment of prophetic words",
+          "time between prophecy and fulfillment",
+          "historical expectation"
+        ],
+        "vehicle": [
+          "days that lengthen or stretch out",
+          "extended temporal span",
+          "physical extension/elongation"
+        ],
+        "ground": [
+          "a long, drawn-out process is like something stretched or prolonged",
+          "experience of delay",
+          "time-as-space metaphor"
+        ],
+        "posture": [
+          "expressing cynical complaint that fulfillment is endlessly postponed",
+          "skeptical proverb",
+          "popular folk-saying"
+        ],
+        "explanation": "The proverb depicts the lapse of time as 'days' becoming long or many, an idiomatic temporal metaphor suggesting excessive delay, with some hyperbolic flavor.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְאָבַ֖ד כׇּל־חָזֽוֹן",
+        "english_text": "and every vision comes to naught (is lost)",
+        "target": [
+          "prophecies that seem never to be fulfilled",
+          "prophetic promises/threats",
+          "religious expectations"
+        ],
+        "vehicle": [
+          "a 'vision' that can perish or be destroyed",
+          "fragile entity that fails or disappears",
+          "life/death domain"
+        ],
+        "ground": [
+          "visions that never materialize are treated as if they 'die' or become nothing",
+          "failure conceived as perishing",
+          "evaluation of reliability"
+        ],
+        "posture": [
+          "voicing the people’s derision of prophecy as ineffective",
+          "ironically quoting their cynical proverb",
+          "polemic against unbelief"
+        ],
+        "explanation": "The proverb personifies 'vision' as something that can 'perish' or fail, hyperbolically claiming that all prophecies come to nothing.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 12:23",
+    "deliberation": "Assessed the ending of the proverb and God’s counter-statement. Key figurative element is 'the days draw near'—again a metaphor of time as something that moves toward the people, reversing v.22’s complaint.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "קָֽרְבוּ֙ הַיָּמִ֔ים",
+        "english_text": "The days draw near",
+        "target": [
+          "the imminence of fulfillment of prophetic visions",
+          "time until God’s word comes to pass",
+          "eschatological expectation (near-term here)"
+        ],
+        "vehicle": [
+          "days that move closer to a person",
+          "approaching objects",
+          "spatial movement toward a point"
+        ],
+        "ground": [
+          "an event getting closer in time is like an object drawing nearer in space",
+          "experiencing imminence",
+          "time-as-space metaphor"
+        ],
+        "posture": [
+          "countering the people’s notion of perpetual delay with the assertion of nearness",
+          "corrective prophetic rebuke",
+          "rhetorical reversal of a proverb"
+        ],
+        "explanation": "God replies that instead of days being 'prolonged', the 'days draw near', personifying time as something that approaches, signaling imminent fulfillment.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 12:24",
+    "deliberation": "Examined 'false vision', 'smooth divination', and 'house of Israel'. 'False vision' is descriptive; the phrase 'smooth divination' uses a physical property ('smooth') metaphorically for flattering, easy-sounding predictions; 'house of Israel' is a standard collective metaphor/metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִקְסַ֣ם חָלָ֑ק",
+        "english_text": "soothing (smooth) divination",
+        "target": [
+          "deceptively comforting prophetic practices",
+          "false oracles",
+          "religious manipulation"
+        ],
+        "vehicle": [
+          "something 'smooth', without roughness or resistance",
+          "pleasant, slick surface",
+          "physical texture"
+        ],
+        "ground": [
+          "flattering speech feels easy and pleasing, like a smooth surface",
+          "lack of friction corresponds to lack of challenge",
+          "affective response to rhetoric"
+        ],
+        "posture": [
+          "criticizing divination that reassures rather than confronts sin",
+          "exposing the seductive quality of false prophecy",
+          "prophetic polemic"
+        ],
+        "explanation": "Describing divination as 'smooth' metaphorically characterizes it as flattering and easy to accept, like a smooth surface, rather than rough and truthfully confronting.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּת֖וֹךְ בֵּ֥ית יִשְׂרָאֵֽל",
+        "english_text": "in the midst of the House of Israel",
+        "target": [
+          "the Israelite people among whom these practices occur",
+          "national community",
+          "covenant people"
+        ],
+        "vehicle": [
+          "a 'house' with an interior middle",
+          "building/household",
+          "domestic space"
+        ],
+        "ground": [
+          "a bounded entity with an interior where activity happens corresponds to a community with an internal life",
+          "image of shared space and belonging",
+          "social-structural domain"
+        ],
+        "posture": [
+          "indicating that such false practices are embedded within the community",
+          "locating guilt inside the covenant house",
+          "judgment emphasis"
+        ],
+        "explanation": "As elsewhere, 'House of Israel' uses the metaphor of a house to refer metonymically to the entire people.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 12:25",
+    "deliberation": "Considered 'my word will not be prolonged/delayed' and 'rebellious house'. The verse personifies or reifies God's 'word' as something that can be 'stretched out' or delayed, and again uses 'rebellious house' for the people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֲדַבֵּר֙ אֵת֩ אֲשֶׁ֨ר אֲדַבֵּ֤ר דָּבָר֙ וְיֵ֣עָשֶׂ֔ה לֹ֥א תִמָּשֵׁ֖ךְ ע֑וֹד",
+        "english_text": "Whatever I speak, that word shall be fulfilled; it shall not be delayed any more",
+        "target": [
+          "the timing of fulfillment of God’s spoken promises and threats",
+          "realization of divine speech",
+          "history under God’s word"
+        ],
+        "vehicle": [
+          "a 'word' conceived as an object whose effect can be 'drawn out' or delayed",
+          "stretchable/delayable entity",
+          "time/space manipulable object"
+        ],
+        "ground": [
+          "postponement of fulfillment is like physically stretching something out over a longer span",
+          "temporal delay mapped to spatial extension",
+          "time-as-space conceptual metaphor"
+        ],
+        "posture": [
+          "denying any further postponement and asserting immediacy",
+          "correcting complacent expectations",
+          "prophetic assurance of fulfillment"
+        ],
+        "explanation": "God’s 'word' is treated as an entity that can be 'drawn out' or delayed, a metaphorical way to speak of the timing of fulfillment.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּ֣ית הַמֶּרִי",
+        "english_text": "O rebellious breed (lit. 'rebellious house')",
+        "target": [
+          "the audience of Ezekiel’s generation",
+          "the people of Israel",
+          "covenant community"
+        ],
+        "vehicle": [
+          "a household characterized by rebellion",
+          "house/family metaphor",
+          "domestic unit"
+        ],
+        "ground": [
+          "shared identity in habitual disobedience to authority",
+          "corporate defiance",
+          "moral–social relation"
+        ],
+        "posture": [
+          "confronting the audience with their entrenched rebellious identity",
+          "sharpening the oracle’s addressee",
+          "judgment address"
+        ],
+        "explanation": "Again the people are figuratively named a 'rebellious house', fusing metaphor and metonymy for the community.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 12:26",
+    "deliberation": "Same prophetic introduction; no new imagery besides 'the word of YHWH came to me'.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָה אֵלַי לֵאמֹר",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "Ezekiel’s reception of yet another divine message",
+          "prophetic revelation",
+          "divine–human communication"
+        ],
+        "vehicle": [
+          "a 'word' that travels and arrives",
+          "moving object/message",
+          "spatial motion"
+        ],
+        "ground": [
+          "a communicated message is conceptualized as something that moves from sender to recipient",
+          "transmission/arrival pattern",
+          "communication metaphor"
+        ],
+        "posture": [
+          "authorizing the following response to Israel’s saying",
+          "formal oracle frame",
+          "prophetic convention"
+        ],
+        "explanation": "Reuses the same metaphor/metonymy pattern of a 'word' that 'comes'.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 12:27",
+    "deliberation": "Observed 'house of Israel' and the expressions 'for many days' and 'for distant times'. The key figurative is 'distant times', mapping temporal remoteness onto spatial distance; 'house of Israel' again functions as a collective metaphor/metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּֽית־יִשְׂרָאֵל",
+        "english_text": "the House of Israel",
+        "target": [
+          "the Israelite people speaking skeptically",
+          "national community",
+          "covenant group"
+        ],
+        "vehicle": [
+          "a household ('house')",
+          "family/household unit",
+          "domestic structure"
+        ],
+        "ground": [
+          "multiple individuals constitute one 'house' belonging together",
+          "corporate identity",
+          "social-structural domain"
+        ],
+        "posture": [
+          "identifying the whole people as sharing this skeptical viewpoint",
+          "collective attribution of speech",
+          "prophetic critique"
+        ],
+        "explanation": "Once more, 'House of Israel' metaphorically and metonymically denotes the people as a single household.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְיָמִ֣ים רַבִּ֑ים וּלְעִתִּ֥ים רְחוֹק֖וֹת",
+        "english_text": "for many days, and he prophesies for distant times",
+        "target": [
+          "the supposedly far-off fulfillment of Ezekiel’s visions",
+          "temporal distance of events",
+          "historical timetable"
+        ],
+        "vehicle": [
+          "many days and 'distant' (far-away) times",
+          "spatial remoteness and quantity of days",
+          "space/time imagery"
+        ],
+        "ground": [
+          "a long delay feels like great spatial distance and a large accumulation of days",
+          "remoteness conceptualized as distance",
+          "time-as-space conceptual metaphor"
+        ],
+        "posture": [
+          "expressing the people’s attempt to neutralize the message by pushing it into a remote future",
+          "minimizing urgency",
+          "skeptical quotation"
+        ],
+        "explanation": "The people describe the fulfillment as for 'distant times', using spatial distance as a metaphor for temporal remoteness.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 12:28",
+    "deliberation": "God repeats the assurance that there will be no delay: 'no more postponement' and 'the word I speak will be done'. This continues the metaphor of God’s 'words' as things that can be delayed or not delayed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לֹא־תִמָּשֵׁ֥ךְ ע֖וֹד כׇּל־דְּבָרָ֑י אֲשֶׁ֨ר אֲדַבֵּ֤ר דָּבָר֙ וְיֵ֣עָשֶׂ֔ה",
+        "english_text": "There shall be no more delay in any of My words; whenever I speak a word, that word shall be fulfilled",
+        "target": [
+          "the realization of all God’s spoken declarations",
+          "fulfillment of divine speech",
+          "historical execution of God’s will"
+        ],
+        "vehicle": [
+          "words treated as entities that can be prolonged or promptly realized",
+          "objects or processes subject to delay or acceleration",
+          "time/space manipulable items"
+        ],
+        "ground": [
+          "the interval between speech and fulfillment is likened to a stretchable period that can be drawn out or not",
+          "control over the timing of an outcome",
+          "time-as-space metaphor and speech-as-object metonymy"
+        ],
+        "posture": [
+          "solemnly guaranteeing the immediacy and certainty of fulfillment",
+          "closing off excuses that push fulfillment into the distance",
+          "concluding reassurance/threat"
+        ],
+        "explanation": "God’s 'words' are depicted as if they could be 'drawn out' (delayed) but now will not be; a metaphorical way to talk about the timing of fulfillment.",
+        "confidence": 0.93
+      }
+    ]
+  }
+]

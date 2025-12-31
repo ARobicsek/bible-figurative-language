@@ -1,0 +1,1098 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 23:1",
+    "deliberation": "Considered whether the prophetic formula is purely literal. The phrase 'the word of YHWH came to me' personifies the divine word as something that can 'come' and uses 'word' metonymically for YHWH's message or revelation, which counts as figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָה אֵלַי לֵאמֹר",
+        "english_text": "The word of GOD came to me",
+        "target": ["YHWH’s revelatory communication to the prophet", "divine message", "theological/spiritual domain"],
+        "vehicle": ["a moving agent that can 'come' to someone", "animated object/visitor", "spatial-movement domain"],
+        "ground": ["initiative and directedness of the revelation toward the prophet", "active approach and personal address", "interaction/communication domain"],
+        "posture": ["authoritative commissioning of the prophet", "solemn introduction to a divine speech", "prophetic-judgment discourse"],
+        "explanation": "The 'word' is personified as an entity that can come, and it stands metonymically for YHWH’s act of revelation, not a literal spoken word traveling through space.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 23:2",
+    "deliberation": "This verse introduces 'two women, daughters of one mother' which, in the context of vv. 3–4, clearly functions as the opening of an allegory for two related communities (Samaria and Jerusalem). So the description of the two women is figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "שְׁתַּ֣יִם נָשִׁ֔ים בְּנ֥וֹת אֵם־אַחַ֖ת הָיֽוּ",
+        "english_text": "two women, daughters of one mother",
+        "target": ["Samaria and Jerusalem as related political-religious communities", "two covenant entities within Israel", "covenant-community domain"],
+        "vehicle": ["two sisters sharing one mother", "close family relationship", "family/kinship domain"],
+        "ground": ["common origin yet distinct identities and later rivalries", "shared ancestry and obligations with divergent behavior", "social-relational domain"],
+        "posture": ["setting up an allegory to expose covenant infidelity", "moral indictment framed as a family drama", "prophetic-parabolic discourse"],
+        "explanation": "The two women who are daughters of one mother represent two related communities (later identified as Samaria and Jerusalem). The familial imagery is a metaphorical framework for the ensuing critique.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 23:3",
+    "deliberation": "The explicit sexual language about whoring in Egypt, squeezed breasts, and handled nipples functions, in the context of the chapter, as an allegory for early political/idolatrous entanglements with Egypt. I treat the whole cluster of sexual acts as one metaphorical complex rather than multiple separate instances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּזְנֶ֣ינָה בְמִצְרַ֔יִם בִּנְעוּרֵיהֶ֖ן זָנ֑וּ שָׁ֚מָּה מֹעֲכ֣וּ שְׁדֵיהֶ֔ן וְשָׁ֣ם עִשּׂ֔וּ דַּדֵּ֖י בְּתוּלֵיהֶֽן",
+        "english_text": "They played the whore in Egypt; they played the whore while still young. There their breasts were squeezed, and there their virgin nipples were handled.",
+        "target": ["Israel’s early alliances and idolatry with Egypt", "covenant infidelity of the people", "political-religious domain"],
+        "vehicle": ["a young prostitute’s sexual availability and abuse", "illicit sexual behavior of a promiscuous girl", "sexual/body domain"],
+        "ground": ["eager, degrading yielding to foreign influence and control", "loss of purity and shameful dependence on Egypt", "moral/spiritual corruption"],
+        "posture": ["sharply condemnatory portrayal of past behavior", "shaming rhetoric to evoke disgust and repentance", "judgment-oracle discourse"],
+        "explanation": "The whoring and graphic handling of the women’s bodies depict Israel’s youthful political and religious entanglements with Egypt. The sexual imagery hyperbolically intensifies the sense of betrayal and degradation.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 23:4",
+    "deliberation": "This verse explains the allegory: Oholah and Oholibah correspond to Samaria and Jerusalem, and 'they became mine' uses marital imagery for covenant. I treat the marital language as the key metaphor; the explicit equation of names to cities is explanatory, not itself figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַתִּהְיֶ֣ינָה לִ֔י וַתֵּלַ֖דְנָה בָּנִ֣ים וּבָנ֑וֹת",
+        "english_text": "They became Mine, and they bore sons and daughters.",
+        "target": ["YHWH’s covenant relationship with Samaria and Jerusalem", "the bond between God and His people", "covenant-theological domain"],
+        "vehicle": ["marriage and childbearing between husband and wives", "family formation", "marital/familial domain"],
+        "ground": ["exclusive belonging, intimacy, and fruitfulness expected in the relationship", "obligations of loyalty and the production of a community (children)", "relational/ethical domain"],
+        "posture": ["portrays the covenant as a spousal bond that has been betrayed", "heightens the seriousness of their later infidelity", "prophetic marriage-allegory discourse"],
+        "explanation": "The cities 'became' YHWH’s as wives become a husband’s, and their populations are depicted as children. This extends the personification of the cities as women and the metaphor of covenant as marriage.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 23:5",
+    "deliberation": "Oholah is said to 'whore' while belonging to YHWH and to 'lust after her lovers, the Assyrians.' This clearly continues the adultery metaphor, where political/military alliances and idolatry are framed as marital infidelity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וַתִּזֶן אׇהֳלָה תַּחְתָּי וַתֶּעְגַּב עַל־מְאַהֲבֶיהָ אֶל־אַשּׁוּר קְרוֹבִים",
+        "english_text": "Oholah whored while she was Mine, and she lusted after her lovers, after the Assyrians, warriors",
+        "target": ["Samaria’s political and religious alignment with Assyria", "covenant unfaithfulness of the northern kingdom", "international-political/religious domain"],
+        "vehicle": ["a married woman committing adultery with lovers", "sexual infidelity and lust", "marital/sexual domain"],
+        "ground": ["betrayal of exclusive loyalty and desire for other partners", "seeking protection and satisfaction from others instead of the rightful spouse", "ethical/spiritual betrayal"],
+        "posture": ["denounces alliances and idolatry as shameless adultery", "casts the behavior in morally repulsive terms", "judgmental prophetic rhetoric"],
+        "explanation": "Oholah’s attraction to Assyrian power is depicted as a wife’s lust for illicit lovers, making political and religious compromise equivalent to adultery against YHWH.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 23:6",
+    "deliberation": "This verse describes the Assyrian men’s clothing and attractiveness. Although the larger allegory is figurative, the verse itself simply supplies literal descriptive detail about the ‘lovers’ in the story and does not introduce a distinct metaphor, simile, or idiom.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 23:7",
+    "deliberation": "Continues the adultery imagery: she 'bestowed her whorings upon them' and 'defiled herself with their idols.' The sexual language remains metaphorical for idolatrous devotion and political entanglement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וַתִּתֵּן תַּזְנוּתֶיהָ עֲלֵיהֶם ... וּבְכֹל אֲשֶׁר־עָגְבָה בְּכׇל־גִּלּוּלֵיהֶם נִטְמָאָה",
+        "english_text": "She bestowed her favors upon them—upon all the pick of the Assyrians—and defiled herself with all their fetishes after which she lusted.",
+        "target": ["Samaria’s worship of Assyrian gods and dependence on Assyrian power", "idolatrous and political compromise", "religious-political domain"],
+        "vehicle": ["a prostitute giving herself sexually to clients", "sexual defilement with lovers and their paraphernalia", "sexual/prostitution domain"],
+        "ground": ["active, willing participation and degradation before foreign powers and their gods", "moral uncleanness through intimate association", "ritual/moral impurity"],
+        "posture": ["strong condemnation of idolatry by casting it as dirty prostitution", "aims to evoke shame and revulsion", "prophetic polemic against foreign alliances"],
+        "explanation": "Her relations with Assyrian idols and powers are portrayed as a prostitute’s services to her clients, emphasizing deliberate self-defilement.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 23:8",
+    "deliberation": "Describes her failure to give up 'whoring' from Egypt, using explicit sexual handling imagery for early Egyptian involvement. This extends the prostitution metaphor to continued idolatry/alliances with Egypt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "hebrew_text": "וְאֶת־תַּזְנוּתֶיהָ מִמִּצְרַיִם לֹא עָזָבָה ... וַיִּשְׁפְּכוּ תַזְנוּתָם עָלֶיהָ",
+        "english_text": "She did not give up the whoring she had begun with the Egyptians; for they had lain with her in her youth ... and had poured out their lust upon her.",
+        "target": ["Israel’s longstanding reliance on and idolatry with Egypt", "persistent covenant disloyalty toward YHWH", "historical-political/religious domain"],
+        "vehicle": ["a woman’s prolonged prostitution beginning in youth", "sexual use and abuse with excessive emission", "sexual/body domain"],
+        "ground": ["longstanding, deeply ingrained unfaithfulness and exploitation", "complete surrender to foreign powers’ desires", "moral/spiritual entanglement"],
+        "posture": ["recalls and heightens the shamefulness of the earliest compromises", "underscores the depth and duration of the guilt", "judgmental historical retrospection"],
+        "explanation": "The history of alliance/idolatry with Egypt is depicted as a young woman’s long-term prostitution and being used sexually, underlining persistent and degrading infidelity.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 23:9",
+    "deliberation": "God 'delivers her into the hand of her lovers, into the hand of the Assyrians.' The 'lovers' language continues the adultery metaphor; 'hand' is a metonymy for power/control.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "hebrew_text": "נְתַתִּיהָ בְּיַד־מְאַהֲבֶיהָ בְּיַד בְּנֵי אַשּׁוּר",
+        "english_text": "I delivered her into the hands of her lovers, into the hands of the Assyrians",
+        "target": ["Samaria’s subjugation to Assyria as divine judgment", "political downfall of the northern kingdom", "historical-political domain"],
+        "vehicle": ["a woman handed over to the control of her illicit lovers", "sexual relationship of dependence and vulnerability", "marital/sexual domain"],
+        "ground": ["the one she sought for pleasure becomes her oppressor", "judgment through the very alliances she pursued", "reversal and poetic justice"],
+        "posture": ["portrays judgment as fitting retribution via the deceptive lovers", "reveals the self-destructive nature of her infidelity", "prophetic irony and warning"],
+        "explanation": "The Assyrians, called 'lovers', receive her into their 'hand' (power). This uses adultery imagery and hand-as-power metonymy to show how her chosen allies become instruments of punishment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 23:10",
+    "deliberation": "Two notable figures: 'they exposed her nakedness' (shame/humiliation image) and 'she became a name among women' (being a proverbial example). I treat these together as one complex of shame/humiliation imagery, with both metaphor and metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "hebrew_text": "הֵמָּה גִּלּוּ עֶרְוָתָהּ ... וַתְּהִי־שֵׁם לַנָּשִׁים",
+        "english_text": "They exposed her nakedness ... and because of the punishment inflicted upon her, she became a byword among women.",
+        "target": ["Samaria’s public humiliation and exemplary downfall", "the city’s disgrace before other nations/peoples", "political-moral domain"],
+        "vehicle": ["an adulterous woman stripped naked and talked about by other women", "public exposure and infamous reputation", "social-shame domain"],
+        "ground": ["complete loss of honor, privacy, and protection; becoming a warning example", "others speak of her fate as a cautionary tale", "social memory of disgrace"],
+        "posture": ["depicts the judgment as utterly shaming and exemplary", "aims to warn the audience against similar conduct", "didactic use of shame imagery"],
+        "explanation": "The uncovering of nakedness symbolizes utter humiliation, and 'being a name among women' (a byword) metonymically captures her reputation as a notorious example.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 23:11",
+    "deliberation": "Oholibah’s 'lusting' and 'whorings' exceeding her sister’s continues the adultery metaphor, now emphasizing the intensification of unfaithfulness by the southern kingdom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "hebrew_text": "וַתַּשְׁחֵת עַגְבָתָהּ מִמֶּנָּה וְאֶת־תַּזְנוּתֶיהָ מִזְּנוּנֵי אֲחוֹתָהּ",
+        "english_text": "yet her lusting was more depraved than her sister’s, and her whoring more debased.",
+        "target": ["Jerusalem’s idolatry and alliances surpassing Samaria’s in corruption", "southern kingdom’s covenant infidelity", "religious-political domain"],
+        "vehicle": ["a sister whose sexual depravity exceeds that of another promiscuous sister", "increasingly vile prostitution", "family/sexual domain"],
+        "ground": ["escalation in shamelessness and moral degradation", "outdoing an already extreme example of infidelity", "comparative excess in sin"],
+        "posture": ["sharpens the indictment against Jerusalem by comparison", "heightens culpability through hyperbolic moral language", "judgment-oracle intensification"],
+        "explanation": "Jerusalem’s conduct is described as even worse sexual depravity than Samaria’s, metaphorically expressing a greater degree of covenant betrayal and idolatry.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 23:12",
+    "deliberation": "Her 'lusting' after Assyrian rulers and horsemen uses the same adultery motif. Here the political-military attractions are again cast as erotic desire, reinforcing the marriage/whoredom metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "אֶל־בְּנֵי אַשּׁוּר עָגָבָה ... פָּרָשִׁים רֹכְבֵי סוּסִים בַּחֲוּרֵי חֶמֶד כֻּלָּם",
+        "english_text": "She lusted after the Assyrians, governors and prefects, warriors gorgeously clad, horsemen mounted on steeds—all of them handsome young fellows.",
+        "target": ["Jerusalem’s attraction to Assyrian power and culture", "idolatrous political courting of Assyria", "international-political domain"],
+        "vehicle": ["a woman’s erotic attraction to handsome, decorated warriors", "sexual longing for impressive males", "sexual/aesthetic domain"],
+        "ground": ["being drawn by external splendor, strength, and status", "desire for glamorous foreign protection rather than faithful reliance on YHWH", "misdirected trust and admiration"],
+        "posture": ["criticizes political admiration as morally tainted lust", "reveals the seductiveness of foreign power", "prophetic warning rhetoric"],
+        "explanation": "Jerusalem’s political desire for Assyrian power is represented as a woman’s lust for handsome soldiers, showing her alliances as adulterous attraction.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 23:13",
+    "deliberation": "The phrase 'one way [path] to both of them' uses a common biblical metaphor of 'way/path' for conduct or life-course, here highlighting that both sisters (cities) follow the same defiled pattern.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "דֶּרֶךְ אֶחָד לִשְׁתֵּיהֶן",
+        "english_text": "Both of them followed the same course",
+        "target": ["the pattern of behavior of Samaria and Jerusalem", "their shared moral and religious conduct", "ethical-spiritual domain"],
+        "vehicle": ["a single path or road that two travelers walk", "shared route", "spatial-journey domain"],
+        "ground": ["similar choices and direction despite being distinct entities", "common trajectory toward corruption and judgment", "parallelism in life-course"],
+        "posture": ["emphasizes that Jerusalem learned nothing from Samaria’s fate", "frames their choices as a deliberate walk down the same path", "didactic, accusatory tone"],
+        "explanation": "The term 'way' metaphorically denotes their manner of life. Saying there is 'one way for both' depicts their identical, defiling behavior as walking the same path.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 23:14",
+    "deliberation": "She 'added to her whorings' upon seeing Chaldean images. This continues the metaphor of adultery/prostitution for idolatrous desire fueled by visual allure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וַתּוֹסֶף אֶל־תַּזְנוּתֶיהָ וַתֵּרֶא אַנְשֵׁי מְחֻקֶּה עַל־הַקִּיר",
+        "english_text": "but she carried her whoring further. For she saw men sculptured upon the walls",
+        "target": ["Jerusalem’s further idolatry and attraction to Babylon/Chaldea", "escalation of covenant infidelity", "religious-political domain"],
+        "vehicle": ["a prostitute increasing her sexual activity after seeing attractive men", "sexual escalation stirred by visual stimuli", "sexual/desire domain"],
+        "ground": ["allowing visual fascination with foreign power-images to incite deeper unfaithfulness", "progressive moral decline driven by desire", "susceptibility to seduction"],
+        "posture": ["underscores the culpability of letting one’s gaze feed idolatrous attractions", "builds the case of aggravated betrayal", "prophetic indictment"],
+        "explanation": "The added 'whoring' triggered by viewing images of Chaldeans allegorically depicts how Jerusalem’s sight of Babylonian might prompted deeper idolatrous and political infidelity.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 23:15",
+    "deliberation": "This verse describes belts and turbans, and notes that the figures looked like officers from Babylon. Within the allegory this is still narrative description; there is no additional metaphor, simile, or idiom beyond the ongoing framework.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 23:16",
+    "deliberation": "Her 'lusting at the sight of them with her eyes' and sending messengers to Chaldea continues the sexual metaphor for political/idolatrous courting. The emphasis on sight as trigger for lust reinforces the seduction motif.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וַתַּעְגְּבָה עֲלֵיהֶם לְמַרְאֵה עֵינֶיהָ וַתִּשְׁלַח מַלְאָכִים אֲלֵיהֶם כַּשְׂדִּימָה",
+        "english_text": "At the very sight of them she lusted after them, and she sent messengers for them to Chaldea.",
+        "target": ["Jerusalem’s political overtures and idolatrous outreach to Babylon", "seeking alliance and religious compromise", "international-religious domain"],
+        "vehicle": ["a woman who, on seeing attractive men, is inflamed with desire and summons them", "visual arousal leading to sexual initiative", "sexual/psychological domain"],
+        "ground": ["desire sparked by visual admiration of foreign splendor leads to active pursuit", "Jerusalem takes initiative in her own seduction", "self-chosen unfaithfulness"],
+        "posture": ["portrays Jerusalem as aggressively complicit in her corruption", "accentuates blameworthiness, not victimhood", "judgmental and accusatory stance"],
+        "explanation": "Her diplomatic and religious outreach to Chaldea is cast as a woman aroused by what she sees and sending for lovers, highlighting voluntary and lust-driven unfaithfulness.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 23:17",
+    "deliberation": "Babylonians 'come for lovemaking' and 'defile her with their whoring'—again, sexual acts represent idolatrous and political relationships. Her later disgust is still within this marital/sexual frame.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וַיָּבֹאוּ אֵלֶיהָ בְנֵי־בָבֶל לְמִשְׁכַּב דֹּדִים וַיְטַמְּאוּ אוֹתָהּ בְּתַזְנוּתָם",
+        "english_text": "So the Babylonians came to her for lovemaking and defiled her with their whoring",
+        "target": ["Jerusalem’s religious-political entanglement with Babylon", "covenant impurity through foreign dealings", "international-religious domain"],
+        "vehicle": ["illicit sexual intercourse and defilement", "sexual union that brings ritual/moral uncleanness", "sexual/purity domain"],
+        "ground": ["intimate, binding involvement that renders one impure", "mutual participation in shameful behavior", "shared guilt and contamination"],
+        "posture": ["depicts these alliances as inherently defiling", "underscores that Jerusalem willingly participated and then grew disgusted", "moralizing narrative tone"],
+        "explanation": "The Babylonian relationship is again portrayed with whoring and sexual defilement imagery, treating the political and cultic compromises as adulterous lovemaking.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 23:18",
+    "deliberation": "Her 'flaunting whoring and exposing nakedness' continues the shame-based adultery metaphor. In addition, YHWH’s 'soul' being disgusted anthropopathically attributes human emotion to God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַתְּגַל תַּזְנוּתֶיהָ וַתְּגַל אֶת־עֶרְוָתָהּ וַתֵּקַע נַפְשִׁי מֵעָלֶיהָ",
+        "english_text": "She flaunted her whoring and exposed her nakedness, and I turned from her in disgust",
+        "target": ["Jerusalem’s brazen sin and YHWH’s rejection of her", "covenant relationship breakdown", "theological-moral domain"],
+        "vehicle": ["a shameless prostitute baring herself, and a husband’s soul recoiling", "public sexual exhibition and relational revulsion", "sexual/emotional domain"],
+        "ground": ["open, unashamed display of infidelity leads to deep disgust and severed relationship", "gross offense provoking visceral rejection", "emotional rupture"],
+        "posture": ["expresses divine revulsion in strong anthropopathic language", "warns of complete relational estrangement due to brazen sin", "highly charged judgment rhetoric"],
+        "explanation": "Her sins are pictured as brazenly exposing her nakedness, and God’s 'soul' (inner self) is said to recoil, using marital and emotional imagery to communicate divine rejection.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 23:19",
+    "deliberation": "She 'whored still more, remembering the days of her youth in Egypt.' This keeps the prostitution metaphor and ties current behavior to formative patterns of unfaithfulness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "hebrew_text": "וַתַּרְבֶּה אֶת־תַּזְנוּתֶיהָ לִזְכֹּר אֶת־יְמֵי נְעוּרֶיהָ אֲשֶׁר זָנְתָה בְּאֶרֶץ מִצְרָיִם",
+        "english_text": "But she whored still more, remembering how in her youth she had played the whore in the land of Egypt",
+        "target": ["Jerusalem’s intensifying idolatry linked to earlier patterns with Egypt", "persistent covenant infidelity", "historical-religious domain"],
+        "vehicle": ["a woman whose present prostitution is fueled by memories of youthful liaisons", "sexual nostalgia leading to renewed sin", "sexual/psychological domain"],
+        "ground": ["relapse into old sins by recalling past pleasures", "deep-rooted tendencies toward unfaithfulness", "cyclical moral failure"],
+        "posture": ["heightens guilt by connecting current excess to a long history", "warns that unchecked memory/desire can exacerbate sin", "didactic and accusatory tone"],
+        "explanation": "Her increasing idolatry and alliances are portrayed as a prostitute remembering and reenacting the whoring of her youth in Egypt, showing continuity and intensification of betrayal.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 23:20",
+    "deliberation": "This verse uses two explicit zoomorphic similes comparing the men’s genitals and emission to those of donkeys and stallions. These intensify the sexual metaphor and are clearly figurative comparisons.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר בְּשַׂר־חֲמוֹרִים בְּשָׂרָם",
+        "english_text": "whose members were like those of donkeys",
+        "target": ["the perceived sexual potency of the Egyptian/Babylonian men she lusts after", "their erotic allure in her imagination", "sexual-desire domain"],
+        "vehicle": ["the large genitals of donkeys", "animal virility and size", "animal/physical domain"],
+        "ground": ["exaggerated sense of size and sexual power", "brute, bestial sexuality", "intensity and extremity of lust"],
+        "posture": ["disparaging, coarse depiction meant to shock the audience", "shows her lust as base and animalistic", "moral denunciation through grotesque imagery"],
+        "explanation": "The men’s sex organs are compared to those of donkeys to convey grotesquely exaggerated virility and to portray her desire as brutish and degrading.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְזִרְמַת סוּסִים זִרְמָתָם",
+        "english_text": "and whose organs were like those of stallions",
+        "target": ["the intensity and quantity of the men’s sexual emission", "her fixation on their supposed potency", "sexual-desire domain"],
+        "vehicle": ["the semen/ejaculation of stallions", "animal reproductive power", "animal/biological domain"],
+        "ground": ["perceived abundance and force of sexual activity", "uncontrolled, powerful sexuality", "excessiveness and vigor"],
+        "posture": ["further intensifies the lurid tone to underscore the obscenity of her desires", "intended to disgust and morally repel", "harsh prophetic invective"],
+        "explanation": "The comparison of their emission to that of stallions hyperbolically represents extreme sexual potency, reinforcing the portrayal of her lust as obscene and bestial.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 23:21",
+    "deliberation": "She 'reverted to the wantonness of your youth,' with recollection of Egyptian men handling her breasts. This continues the prostitution metaphor for renewed idolatry, tying it to remembered youthful sensuality.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "hebrew_text": "וַתִּפְקְדִי אֵת זִמַּת נְעוּרָיִךְ ... בַּעְשׂוֹת מִמִּצְרַיִם דַּדַּיִךְ",
+        "english_text": "Thus you reverted to the wantonness of your youth, remembering your youthful breasts, when the men of Egypt handled your nipples.",
+        "target": ["Jerusalem’s relapsing into earlier idolatrous patterns tied to Egypt", "renewed covenant betrayal", "historical-religious domain"],
+        "vehicle": ["a woman recalling and returning to her youthful sexual escapades", "sensual nostalgia leading to renewed promiscuity", "sexual/psychological domain"],
+        "ground": ["old desires reawakened by memory, leading to repeated unfaithfulness", "emotional and sensual roots of present sin in youthful experiences", "continuity in character flaws"],
+        "posture": ["presents present idolatry as a willful revisiting of past wantonness", "highlights culpable remembrance and repetition", "condemnatory reflective tone"],
+        "explanation": "Reverting to 'youthful wantonness' and recalling Egyptian sexual contact metaphorically depict returning to former idolatrous and political dependencies.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 23:22",
+    "deliberation": "God will 'rouse your lovers against you.' Calling foreign powers 'lovers' maintains the adultery metaphor, and their being stirred up as agents of judgment introduces an ironic reversal: former lovers become attackers.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנְנִי מֵעִיר אֶת־מְאַהֲבַיִךְ עָלָיִךְ אֵת אֲשֶׁר־נָקְעָה נַפְשֵׁךְ מֵהֶם",
+        "english_text": "I am going to rouse against you the lovers from whom you turned in disgust",
+        "target": ["the foreign nations (e.g., Babylon, Assyria) now becoming instruments of Jerusalem’s judgment", "political-military agents of punishment", "historical-political domain"],
+        "vehicle": ["former sexual lovers aroused to attack a woman who once desired them but now despises them", "erotic partners turned vengeful", "marital/sexual-relational domain"],
+        "ground": ["those once courted in unfaithfulness become instruments of harm", "divine reversal of alliances into judgments", "ironic retribution"],
+        "posture": ["stresses poetic justice and irony in judgment", "depicts God as sovereignly turning past sin-partners into executioners", "judgment-oracle with ironic twist"],
+        "explanation": "Foreign nations are labeled 'lovers' who are now stirred up against Jerusalem, turning her former adulterous partners into hostile agents, an ironic extension of the adultery metaphor.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 23:23",
+    "deliberation": "Lists the nations and officials (Babylonians, Chaldeans, Assyrians) who will come. This verse is descriptive within the allegory and does not add a new distinct figure beyond the already-established 'lovers' terminology in v.22.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 23:24",
+    "deliberation": "Describes the military onslaught with chariots, shields, and helmets, and states they will 'judge you with their judgments.' While this introduces legal language, it is straightforwardly about conquest and judicial treatment; no distinct metaphor or simile appears beyond standard legal idiom.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 23:25",
+    "deliberation": "The key figure is 'I will put my jealousy in you,' conceptualizing divine jealousy as something placed within her, which then results in furious treatment. This treats jealousy as a quasi-substantial force and is metaphorical/anthropopathic.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתִּי קִנְאָתִי בָּךְ וְעָשׂוּ אוֹתָךְ בְּחֵמָה",
+        "english_text": "I will direct My passion [jealousy] against you, and they shall deal with you in fury",
+        "target": ["the intense zeal and punitive wrath of YHWH against Jerusalem", "divine motive energizing the invaders", "theological/emotional domain"],
+        "vehicle": ["jealous passion residing within someone, driving furious action", "internalized emotional force", "psychological domain"],
+        "ground": ["deep, possessive concern translated into drastic punitive action", "emotional energy of jealousy manifesting as anger and violence", "cause-effect between feeling and judgment"],
+        "posture": ["emphasizes the relationally driven nature of judgment (spousal jealousy)", "presents judgment as the outworking of divine passion", "anthropopathic prophetic rhetoric"],
+        "explanation": "YHWH’s jealousy is spoken of as something placed 'in' her, personifying the emotion as an active power that produces furious treatment through the invaders.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 23:26",
+    "deliberation": "Stripping clothes and taking ornaments is part of the punishment pattern for an adulteress and, in the larger allegory, symbolizes loss of honor and wealth. I treat this as a metaphor for public shaming and despoiling of the city.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וְהִפְשִׁיטוּךְ אֶת־בְּגָדָיִךְ וְלָקְחוּ כְּלֵי תִפְאַרְתֵּךְ",
+        "english_text": "They shall strip you of your clothing and take away your dazzling jewels.",
+        "target": ["Jerusalem’s honor, status, and material wealth", "the city’s protective and glorious trappings", "socio-political domain"],
+        "vehicle": ["an adulterous woman stripped of clothes and jewelry", "public disrobing and confiscation of adornments", "shame/legal-punishment domain"],
+        "ground": ["complete exposure and loss of status and security", "shameful vulnerability and impoverishment", "transition from splendor to disgrace"],
+        "posture": ["depicts the judgment as socially and materially stripping", "illustrates how her former 'glory' will be removed", "shame-laden prophetic warning"],
+        "explanation": "The removal of garments and ornaments in the allegory portrays Jerusalem’s humiliation and plundering, as if an adulteress is stripped before all.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 23:27",
+    "deliberation": "Key figure here is the idiom 'you shall not lift your eyes to them,' meaning you will no longer long for or look with desire toward Egypt. The whoring language repeats earlier metaphor; the 'lifting of the eyes' is an idiomatic expression of desire.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלֹא־תִשְׂאִי עֵינַיִךְ אֲלֵיהֶם",
+        "english_text": "and you shall not long for them [lit. 'lift your eyes to them']",
+        "target": ["Jerusalem’s desire and longing for Egypt and its support", "inner orientation of trust and attraction", "psychological/religious domain"],
+        "vehicle": ["lifting one’s eyes toward someone or something", "upward gaze directed at an object of interest", "visual-orientation domain"],
+        "ground": ["active, intentional directing of attention and desire toward an object", "aspiration and expectation represented by the gaze", "inner longing shown by where one looks"],
+        "posture": ["promises an end to misplaced desire via judgment", "indicates a future where Egypt no longer holds appeal", "restorative yet stern prophetic tone"],
+        "explanation": "The idiom of 'lifting the eyes' stands for desiring or looking longingly. Here it conveys the end of her yearning for Egyptian alliances.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 23:28",
+    "deliberation": "God will give her 'into the hand of those you hate.' The 'hand' is a standard metonymy for power and control, depicting subjection under her enemies’ dominion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נֹתְנָךְ בְּיַד אֲשֶׁר שָׂנֵאת",
+        "english_text": "I am going to deliver you into the hands of those you hate",
+        "target": ["Jerusalem’s political-military subjugation to hostile nations", "being under enemy control", "historical-political domain"],
+        "vehicle": ["a person’s hand as the instrument of control and action", "physical grasp or possession", "bodily/action domain"],
+        "ground": ["being under someone’s power is like being in their hand", "they can manipulate, harm, or preserve at will", "control, dominance, vulnerability"],
+        "posture": ["presents judgment as a reversal where despised enemies gain full control", "underscores the bitter irony of relying on such powers", "threatening prophetic tone"],
+        "explanation": "Being given into their 'hand' is metonymic for coming under their power and control, conveying complete subjection to hated enemies.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 23:29",
+    "deliberation": "The key figure is being left 'naked and bare,' with 'the nakedness of your whorings' exposed—continuing the metaphor of public nudity as shame and the unveiling of moral corruption.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וַעֲזָבוּךְ עֵירֹם וְעֶרְיָה וְנִגְלָה עֶרְוַת זְנוּנַיִךְ",
+        "english_text": "and leave you naked and bare; your naked licentiousness, wantonness, and whoredom will be exposed.",
+        "target": ["Jerusalem’s hidden sins and false securities", "her moral corruption and reliance on others", "ethical-political domain"],
+        "vehicle": ["a woman stripped naked so that her shameful acts are visible to all", "public disrobing revealing sexual infidelity", "shame/exposure domain"],
+        "ground": ["complete loss of covering or concealment, resulting in exposed shame", "judgment makes hidden corruption visible", "humiliation and vulnerability"],
+        "posture": ["intends to strip away illusions of respectability", "warns that judgment will reveal the full extent of guilt", "prophetic exposure rhetoric"],
+        "explanation": "Being made naked symbolizes public humiliation and the revelation of the shameful character of her 'whorings,' i.e., her unfaithful behavior.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 23:30",
+    "deliberation": "States the rationale: 'for your whoring with the nations, for defiling yourself with their fetishes.' 'Whoring with the nations' is the by-now standard adultery metaphor for political/idolatrous association.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "בִּזְנוֹתֵךְ אַחֲרֵי גוֹיִם עַל אֲשֶׁר־נִטְמֵאת בְּגִלּוּלֵיהֶם",
+        "english_text": "for your whoring with the nations, for defiling yourself with their fetishes.",
+        "target": ["Jerusalem’s alliances and idol worship with foreign nations", "covenant unfaithfulness through international relations", "religious-political domain"],
+        "vehicle": ["a woman prostituting herself with multiple partners", "sexual promiscuity and ritual defilement", "sexual/prostitution domain"],
+        "ground": ["seeking intimacy and benefit from many others instead of a single rightful partner", "becoming ritually/morally unclean through illicit unions", "disloyalty and contamination"],
+        "posture": ["explains judgment as a direct result of this figurative adultery", "justifies the severity of the coming punishment", "forensic prophetic tone"],
+        "explanation": "‘Whoring with the nations’ metaphorically describes her political and cultic entanglements, and ‘defiling yourself with their fetishes’ frames idolatry as sexual impurity.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 23:31",
+    "deliberation": "Two distinct figures: (1) 'You walked in your sister’s path' using the path/lifestyle metaphor; (2) 'I will put her cup into your hand' beginning the cup-of-judgment metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "בְּדֶרֶךְ אֲחוֹתֵךְ הָלָכְתְּ",
+        "english_text": "You walked in your sister’s path",
+        "target": ["Jerusalem’s pattern of behavior", "moral and religious conduct", "ethical-spiritual domain"],
+        "vehicle": ["walking on the same road as another person", "shared physical path", "journey/spatial domain"],
+        "ground": ["imitating another’s pattern and ending where they did", "following precedent into the same destiny", "conformity in choices and outcomes"],
+        "posture": ["highlights deliberate imitation despite known consequences", "sets up inevitability of similar judgment", "didactic and accusatory tone"],
+        "explanation": "Jerusalem’s behavior is portrayed as taking the same road that Samaria took, implying that she will reach the same ruinous destination.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "hebrew_text": "וְנָתַתִּי כּוֹסָהּ בְּיָדֵךְ",
+        "english_text": "therefore I will put her cup into your hand.",
+        "target": ["the share of judgment and suffering that will befall Jerusalem", "her allotted fate like Samaria’s", "judgment-suffering domain"],
+        "vehicle": ["a cup given to someone to drink", "portion served in a vessel", "food/drink domain"],
+        "ground": ["receiving and having to consume an assigned portion", "shared experience of the same bitter fate", "participation in another’s lot"],
+        "posture": ["presents judgment as an inescapable, divinely assigned share", "links Jerusalem’s punishment directly to Samaria’s", "forensic and ominous tone"],
+        "explanation": "The 'cup' stands metonymically for a portion of judgment. Giving Samaria’s cup to Jerusalem signifies that she will undergo an equivalent fate.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Ezekiel 23:32",
+    "deliberation": "Develops the 'cup' image: a deep and wide cup that causes derision and scorn. This is a sustained metaphor of a cup symbolizing overwhelming judgment and disgrace.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "hebrew_text": "כּוֹס אֲחוֹתֵךְ תִּשְׁתִּי הָעֲמֻקָּה וְהָרְחָבָה תִּהְיֶה לִצְחֹק וּלְלַעַג מִרְבָּה לְהָכִיל",
+        "english_text": "You shall drink of your sister’s cup, so deep and wide; it shall cause derision and scorn, it holds so much.",
+        "target": ["Jerusalem’s extensive, humiliating judgment", "the severity and notoriety of her punishment", "judgment-experience domain"],
+        "vehicle": ["a very large, deep drinking cup that makes one drunk and becomes a cause of mockery", "overfull vessel associated with shameful overindulgence", "drinking/shame domain"],
+        "ground": ["excessive quantity leading to staggering, and public ridicule", "unbearable extent of suffering and disgrace", "overwhelming, inescapable portion"],
+        "posture": ["stresses the enormity and shame-producing nature of the coming judgment", "warns that others will mock rather than pity", "severe prophetic warning"],
+        "explanation": "The 'deep and wide' cup stands for a massive and humiliating judgment. Drinking it signifies undergoing an overwhelming, shame-inducing fate like Samaria’s.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 33,
+    "reference": "Ezekiel 23:33",
+    "deliberation": "Extends the cup metaphor: filled with 'drunkenness and woe,' called 'the cup of desolation and horror.' These are metaphorical contents and titles for the same symbolic cup of judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "hebrew_text": "שִׁכָּרוֹן וְיָגוֹן תִּמָּלֵאִי כּוֹס שַׁמָּה וּשְׁמָמָה כּוֹס אֲחוֹתֵךְ שֹׁמְרוֹן",
+        "english_text": "You shall be filled with drunkenness and woe. The cup of desolation and horror, the cup of your sister Samaria—",
+        "target": ["Jerusalem’s inner experience and condition under judgment", "emotional and societal devastation", "psychological-social domain"],
+        "vehicle": ["drunkenness, woe, desolation, horror as what a cup contains and imparts", "intoxicating, ruinous drink", "drinking/disaster domain"],
+        "ground": ["loss of control, confusion, and misery as effects of drinking", "total devastation and terror as the content of her fate", "intense, overwhelming suffering"],
+        "posture": ["emphasizes the internal turmoil and external ruin of judgment", "links Jerusalem’s fate explicitly to Samaria’s cup", "somber, emphatic tone"],
+        "explanation": "The cup is said to fill her with drunkenness and sorrow and is named 'the cup of desolation and horror,' all metaphorically describing the emotional and societal collapse she will endure.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 34,
+    "reference": "Ezekiel 23:34",
+    "deliberation": "She will drink and drain the cup, gnaw its shards, and tear her breasts. This graphic extension of the cup metaphor portrays total consumption of judgment and self-destructive anguish, with hyperbolic imagery (gnawing shards).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "hebrew_text": "וְשָׁתִית אוֹתָהּ וּמָצִית וְאֶת־חֲרָשֶׂיהָ תְּגָרֵמִי וְשָׁדַיִךְ תְּנַתֵּקִי",
+        "english_text": "You shall drink it and drain it, and gnaw its shards; and you shall tear your breasts.",
+        "target": ["Jerusalem’s exhaustive experience of divine judgment and ensuing despair", "the extremity of her suffering and remorse", "judgment-psychological domain"],
+        "vehicle": ["drinking a cup to the dregs, chewing its broken pieces, and violently tearing one’s own breasts", "self-harming response to extreme distress", "drinking/body-violence domain"],
+        "ground": ["no mitigation or remainder of judgment; internal damage and self-directed anguish", "intolerable pain leading to self-destructive behavior", "total, consuming catastrophe"],
+        "posture": ["underscores that she cannot escape or soften the judgment", "uses shocking imagery to convey utter ruin and grief", "intense prophetic invective"],
+        "explanation": "Draining the cup and gnawing its shards hyperbolically depict undergoing judgment to the fullest extent, while tearing the breasts expresses extreme grief and self-loathing within the adultery imagery.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 35,
+    "reference": "Ezekiel 23:35",
+    "deliberation": "Two figures: (1) 'you have cast Me behind your back'—a metaphor/idiom for disregarding God; (2) 'you, too, bear your lewdness and your whorings'—guilt as a burden carried.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וַתַּשְׁלִיכִי אוֹתִי אַחֲרֵי גַוֵּךְ",
+        "english_text": "you have cast Me behind your back",
+        "target": ["Israel’s disregard and rejection of YHWH", "their relational stance toward God", "theological-relational domain"],
+        "vehicle": ["throwing something behind one’s back", "discarding an unwanted object out of sight", "bodily-action domain"],
+        "ground": ["contemptuous neglect and intentional turning away", "treating God as something to be gotten rid of and ignored", "rejection and dismissal"],
+        "posture": ["accuses them of deliberate and contemptuous exclusion of God", "justifies severe consequences", "indignant prophetic tone"],
+        "explanation": "Casting God 'behind the back' metaphorically pictures intentional, contemptuous disregard—God is treated like an object thrown away and no longer looked at.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וְגַם־אַתְּ שְׂאִי זִמָּתֵךְ וְאֶת־תַּזְנוּתָיִךְ",
+        "english_text": "you in turn must suffer [lit. 'bear'] for your wanton whoring.",
+        "target": ["the consequences and guilt of their immoral actions", "the burden of punishment", "ethical/judgment domain"],
+        "vehicle": ["carrying or bearing a load", "physical burden-bearing", "labor/weight domain"],
+        "ground": ["responsibility as something one must carry and not lay on others", "enduring the weight of one’s own actions", "inescapable personal liability"],
+        "posture": ["insists that they must face the full weight of their sins", "emphasizes personal accountability", "forensic and admonitory tone"],
+        "explanation": "To 'bear' lewdness and whorings metaphorically presents guilt and its punishment as a heavy load that they themselves must carry.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 36,
+    "reference": "Ezekiel 23:36",
+    "deliberation": "God asks the prophet to 'arraign' (judge) Oholah and Oholibah and 'declare their abominations.' The legal language frames the prophetic speech as a courtroom proceeding, a standard legal metaphor for prophetic indictment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "hebrew_text": "הֲתִשְׁפּוֹט אֶת־אׇהֳלָה וְאֶת־אׇהֳלִיבָה וְהַגֵּד לָהֶן אֵת תּוֹעֲבוֹתֵיהֶן",
+        "english_text": "O mortal, arraign Oholah and Oholibah, and charge them with their abominations.",
+        "target": ["the prophetic proclamation of guilt against Samaria and Jerusalem", "YHWH’s moral evaluation and sentencing", "legal-theological domain"],
+        "vehicle": ["judicial proceedings where defendants are judged and their crimes read out", "courtroom trial and indictment", "legal/court domain"],
+        "ground": ["formal, public declaration of wrongdoing leading to sentence", "prophet functions like a prosecutor or judge reading charges", "structured accountability"],
+        "posture": ["presents the oracle as a formal legal case against the cities", "underscores procedural justice in the coming punishment", "forensic prophetic rhetoric"],
+        "explanation": "The instruction to 'judge' and 'declare abominations' frames the prophetic speech as a legal indictment, a courtroom metaphor for divine judgment.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 37,
+    "reference": "Ezekiel 23:37",
+    "deliberation": "Two main figures: (1) 'blood is on their hands'—a synecdoche/metonymy for guilt in bloodshed; (2) 'committed adultery with their fetishes'—sexual adultery metaphor for idolatry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְדָם בִּידֵיהֶן",
+        "english_text": "and blood is on their hands",
+        "target": ["their culpability for violent bloodshed (including child sacrifice)", "moral responsibility for killing", "ethical-legal domain"],
+        "vehicle": ["bloodstains on a person’s hands", "visible marks of having killed", "body/forensic domain"],
+        "ground": ["having performed the act of killing leaves figurative 'blood' marking one’s hands", "hands as instruments of action stand for guilt", "detectable responsibility"],
+        "posture": ["emphasizes manifest, undeniable guilt", "underscores the seriousness of their crimes", "forensic and accusatory tone"],
+        "explanation": "The phrase 'blood on their hands' uses hands as a synecdoche for agency and 'blood' for murder, together metonymically expressing guilt in bloodshed.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וְאֶת־גִּלּוּלֵיהֶן נִאֵפוּ",
+        "english_text": "they have committed adultery with their fetishes",
+        "target": ["their idolatrous worship and devotion to images", "religious unfaithfulness to YHWH", "theological-religious domain"],
+        "vehicle": ["marital adultery with lovers", "sexual infidelity", "marital/sexual domain"],
+        "ground": ["exclusive loyalty owed to one partner but given to others", "intimate union and affection directed wrongly", "betrayal and covenant-breaking"],
+        "posture": ["equates idolatry with marital betrayal", "seeks to evoke moral revulsion toward idol worship", "prophetic marriage-metaphor polemic"],
+        "explanation": "Adultery language is used for idolatry, portraying their relationship to idols as that of an unfaithful spouse with illicit partners.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 38,
+    "reference": "Ezekiel 23:38",
+    "deliberation": "This verse notes that they defiled God’s sanctuary and profaned His Sabbaths. These are standard cultic terms describing literal ritual impurity and violation; no additional metaphor, simile, or idiom emerges beyond normal cult language.",
+    "instances": []
+  },
+  {
+    "verse": 39,
+    "reference": "Ezekiel 23:39",
+    "deliberation": "Describes literally slaughtering children to idols and entering the sanctuary to profane it. Although the actions are horrifying, the wording itself is straightforward narrative/cultic description without a distinct figurative device.",
+    "instances": []
+  },
+  {
+    "verse": 40,
+    "reference": "Ezekiel 23:40",
+    "deliberation": "They send for men from afar and, for them, bathe, paint eyes, and adorn with ornaments. Within the allegory this is courtship/prostitution imagery for political/idolatrous self-presentation, continuing the adultery metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "תִּשְׁלַחְנָה לַאֲנָשִׁים בָּאִים מִמֶּרְחָק ... רָחַצְתְּ כָּחַלְתְּ עֵינַיִךְ וְעָדִית עֶדִי",
+        "english_text": "they sent for men to come from afar ... For them, you bathed, painted your eyes, and donned your finery",
+        "target": ["Jerusalem’s diplomatic efforts and religious-political courting of foreign nations", "self-preparing to impress and attract allies", "international-political domain"],
+        "vehicle": ["a woman preparing herself cosmetically and ornamentally to attract lovers or clients", "prostitute/lover’s beautification ritual", "sexual/cosmetic domain"],
+        "ground": ["intentional self-adornment aimed at seducing or pleasing others", "active pursuit of relationships based on external allure", "calculating, seductive behavior"],
+        "posture": ["condemns such political-religious courting as shameless prostitution", "exposes premeditated nature of the infidelity", "judgmental and vivid rhetoric"],
+        "explanation": "Bathing, eye-painting, and adorning for visiting men represent Jerusalem’s self-conscious efforts to attract foreign alliances and idolatrous partners, continuing the prostitution metaphor.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 41,
+    "reference": "Ezekiel 23:41",
+    "deliberation": "She sits on a 'grand couch' with a 'set table' laid with 'My incense and My oil.' The couch and table imagery frame foreign worship/political feasting as an adulterous banquet using resources owed to YHWH; the possessive 'My' heightens the covenant infidelity metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "hebrew_text": "וְיָשַׁבְתְּ עַל־מִטָּה כְּבוּדָּה וְשֻׁלְחָן עָרוּךְ לְפָנֶיהָ וּקְטׇרְתִּי וְשַׁמְנִי שַׂמְתְּ עָלֶיהָ",
+        "english_text": "and you sat on a grand couch with a set table in front of it—and it was My incense and My oil you laid upon it.",
+        "target": ["Jerusalem’s use of resources and worship proper to YHWH for foreign cultic/political feasts", "misappropriation of covenant gifts", "theological-political domain"],
+        "vehicle": ["a richly adorned adulteress reclining with a lavishly prepared table, using her husband’s provisions for other lovers", "luxurious illicit banquet", "feast/marriage domain"],
+        "ground": ["enjoying lavish comforts and offerings obtained from the rightful partner but spent on adulterous relationships", "betrayal through the use of another’s property", "ingratitude and misuse"],
+        "posture": ["intends to show the scandal of using YHWH’s gifts to honor others", "heightens the charge of treachery and ingratitude", "sharp prophetic polemic"],
+        "explanation": "The grand couch and table, overlaid with 'My incense and My oil,' depict Jerusalem as an adulterous wife hosting a sumptuous feast for lovers with her husband’s resources.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 42,
+    "reference": "Ezekiel 23:42",
+    "deliberation": "Describes the noise of a carefree multitude, men brought drunk from the desert, and the giving of bracelets and crowns. While this supports the festive/sexual scene, it remains descriptive of the allegorical party without introducing a distinct metaphor or idiom beyond the running adultery framework.",
+    "instances": []
+  },
+  {
+    "verse": 43,
+    "reference": "Ezekiel 23:43",
+    "deliberation": "Despite textual difficulty, the sense is an exclamation regarding a worn-out adulteress and the continuation of her fornications. It uses adultery language for persistent idolatry/unfaithfulness, aligning with the chapter’s main metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לַבָּלָה נִאוּפִים ... עַתָּה יִזְנוּ תַזְנוּתֶהָ",
+        "english_text": "To destruction with adultery! Look, they are still going on with those same fornications of hers.",
+        "target": ["the ongoing idolatry and covenant infidelity of Oholah/Oholibah", "persistent unfaithful practices", "religious-ethical domain"],
+        "vehicle": ["a worn-out adulteress continuing in her adulteries", "sexual infidelity that persists despite age or ruin", "marital/sexual domain"],
+        "ground": ["incorrigible, shameless continuance in the same sins", "moral exhaustion yet ongoing depravity", "stubborn repetition of betrayal"],
+        "posture": ["expresses exasperation and condemnation at relentless sin", "heightens the sense of moral disgust", "prophetic lament-invective"],
+        "explanation": "The language of an adulteress whose fornications continue portrays their idolatry as unrelenting marital infidelity, even when it is 'worn-out' and ruinous.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 44,
+    "reference": "Ezekiel 23:44",
+    "deliberation": "States that men went to them 'as one goes to a prostitute,' explicitly using a simile. Oholah and Oholibah are then labeled 'wanton women,' reinforcing the prostitution metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "hebrew_text": "וַיָּבֹא אֵלֶיהָ כְּבֹא אֶל־אִשָּׁה זוֹנָה כֵּן בָּאוּ אֶל־אׇהֳלָה וְאֶל־אׇהֳלִיבָה אִשֹּׁת הַזִּמָּה",
+        "english_text": "And they would go to her as one goes to a prostitute; that is how they went to Oholah and Oholibah, wanton women.",
+        "target": ["the nature of foreign relations with Samaria and Jerusalem and those cities’ receptivity to illicit alliances", "their public reputation for unfaithfulness", "international-religious domain"],
+        "vehicle": ["a man’s habitual visits to a prostitute, and women known as 'wanton women'", "commercialized sexual availability", "sexual/prostitution domain"],
+        "ground": ["predictable, transactional, and morally tainted interactions", "known reputation for being sexually (politically/religiously) available", "shameless readiness to engage"],
+        "posture": ["labels their behavior as openly and repeatedly prostituting themselves", "seeks to disgrace their public image", "sharp, stigmatizing prophetic rhetoric"],
+        "explanation": "The explicit simile likens others’ approach to Oholah and Oholibah to visiting a prostitute, solidifying the metaphor of the cities as professional adulteresses (wanton women).",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 45,
+    "reference": "Ezekiel 23:45",
+    "deliberation": "Again 'blood is on their hands' (guilt for bloodshed), and 'punishments for adulteresses' for their spiritual adultery. The verse fuses legal and sexual imagery to describe their judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כִּי נֹאֲפוֹת הֵנָּה וְדָם בִּידֵיהֶן",
+        "english_text": "for they are adulteresses and have blood on their hands.",
+        "target": ["their dual guilt of idolatry and violent bloodshed", "moral-legal standing before God", "ethical-legal domain"],
+        "vehicle": ["adulterous women with bloodstained hands", "sexual infidelity plus visible marks of murder", "marital/forensic domain"],
+        "ground": ["both covenant betrayal and homicidal guilt characterize them", "hands as agents show direct involvement in killing", "compound moral corruption"],
+        "posture": ["justifies severe, legally appropriate punishment", "presents them as fitting objects of judicial wrath", "forensic prophetic pronouncement"],
+        "explanation": "Calling them 'adulteresses' extends the idolatry-as-adultery metaphor, while 'blood on their hands' metonymically and synecdochically signifies their responsibility for bloodshed.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 46,
+    "reference": "Ezekiel 23:46",
+    "deliberation": "They will be made 'an object of horror and plunder.' While 'horror' is abstract, the expression as a whole is straightforward: they become something terrifying and despoiled to others. This is evaluative but not a distinct metaphor beyond the legal/judgment frame.",
+    "instances": []
+  },
+  {
+    "verse": 47,
+    "reference": "Ezekiel 23:47",
+    "deliberation": "Mentions stoning, cutting down with swords, killing children, and burning houses. These are standard execution and warfare images. Though they echo legal punishments for adulteresses, they function here as literal modes of judgment within the narrative, not additional figures.",
+    "instances": []
+  },
+  {
+    "verse": 48,
+    "reference": "Ezekiel 23:48",
+    "deliberation": "God will 'put an end to wantonness (zimmâ) in the land' so that 'all the women shall take warning.' 'Wantonness' is the sexualized label for covenant infidelity, treated almost as a force to be removed; 'women' stand for other cities/nations as potential imitators. This personifies and generalizes the adultery metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהִשְׁבַּתִּי זִמָּה מִן־הָאָרֶץ וְנִוַּסְּרוּ כָּל־הַנָּשִׁים וְלֹא תַעֲשֶׂינָה כְּזִמַּתְכֶנָה",
+        "english_text": "I will put an end to wantonness in the land; and all the women shall take warning not to imitate your wantonness.",
+        "target": ["the practice of idolatrous and politically adulterous behavior in the wider region", "potential imitators among surrounding peoples/cities", "social-religious domain"],
+        "vehicle": ["sexual wantonness as a phenomenon that can be 'ceased' from the land, and 'women' as observers learning from an adulteress’s fate", "moral vice as a quasi-entity and women as types of communities", "moral-personification domain"],
+        "ground": ["removing a pervasive sinful practice is like eliminating a corrupting presence from the land", "other groups (women/cities) observe and learn not to replicate", "exemplar-based moral instruction"],
+        "posture": ["presents the judgment as pedagogical for the wider world", "underlines that their fate is meant to deter similar unfaithfulness", "didactic, exemplary judgment rhetoric"],
+        "explanation": "Zimmâ ('wantonness') is personified as something that can be caused to cease from the land, and 'all the women' metonymically represent other communities who will learn from this adulterous example and not imitate it.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 49,
+    "reference": "Ezekiel 23:49",
+    "deliberation": "States that 'they shall give your wantonness upon you' and 'you shall suffer the penalty for your sinful idolatry.' The giving/placing of zimmâ on them pictures guilt as a burden or consequence imposed, echoing 'bearing' sin language, while remaining within the adultery/idolatry framework.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנָתְנוּ זִמַּתְכֶנָה עֲלֵיכֶן וַחֲטָאֵי גִלּוּלֵיכֶן תִּשֶּׂאינָה",
+        "english_text": "They shall punish you for your wantonness, and you shall suffer the penalty [lit. 'bear'] for your sinful idolatry.",
+        "target": ["the consequences and guilt of their immoral and idolatrous behavior", "the experiential load of punishment", "ethical-juridical domain"],
+        "vehicle": ["placing wantonness upon someone and bearing sins", "putting a load on a person’s shoulders", "burden-bearing domain"],
+        "ground": ["guilt and its repercussions are like a weight imposed and carried", "judgment corresponds to and is inseparable from the sin itself", "inescapable personal responsibility"],
+        "posture": ["affirms retributive justice: they will carry exactly what they have done", "closes the oracle with a firm declaration of accountability and recognition of YHWH", "forensic, summarizing tone"],
+        "explanation": "To 'give wantonness upon' them and to 'bear' sins treats their zimmâ and idolatry as burdens or liabilities laid on them, which they must carry as punishment, combining burden and retribution imagery.",
+        "confidence": 0.94
+      }
+    ]
+  }
+]

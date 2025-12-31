@@ -1,0 +1,515 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 40:1",
+    "deliberation": "Checked for metaphors, idioms, and personification. Narrative is mostly literal, but the prophetic formula 'the word that came to Jeremiah from YHWH' personifies the divine message as a thing that can 'come' and functions metonymically for revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַדָּבָר אֲשֶׁר־הָיָה אֶל־יִרְמְיָהוּ מֵאֵת יְהוָה",
+        "english_text": "The word that came to Jeremiah from GOD",
+        "target": [
+          "prophetic revelation received by Jeremiah",
+          "divine communication",
+          "religious experience"
+        ],
+        "vehicle": [
+          "a 'word' that physically comes to someone",
+          "moving object/person entering someone's presence",
+          "physical movement in space"
+        ],
+        "ground": [
+          "a message arriving and initiating contact with a person",
+          "encounter/arrival",
+          "communication dynamics"
+        ],
+        "posture": [
+          "narrator’s description of how Jeremiah receives revelation",
+          "prophetic formulaic language",
+          "biblical narrative discourse"
+        ],
+        "explanation": "The divine revelation is described as a 'word' that 'came' to Jeremiah, personifying the message and using a movement metaphor for God’s act of revealing.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 40:2",
+    "deliberation": "Looked for metaphor, idiom, and metonymy. The speech is straightforward, but 'this place' stands for the city and its inhabitants, a common metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יְהוָה אֱלֹהֶיךָ דִּבֶּר אֶת־הָרָעָה הַזֹּאת אֶל־הַמָּקוֹם הַזֶּה",
+        "english_text": "The ETERNAL your God threatened this place with this disaster",
+        "target": [
+          "the people and city of Jerusalem/Judah who will suffer judgment",
+          "inhabitants of a locality",
+          "social-political community"
+        ],
+        "vehicle": [
+          "‘this place’ (the physical location)",
+          "geographical site",
+          "physical space"
+        ],
+        "ground": [
+          "close association between a place and the people who live there",
+          "location representing its population",
+          "metonymic association (place-for-people)"
+        ],
+        "posture": [
+          "Nebuzaradan’s explanation of the judgment",
+          "interpretive summary of God’s threat",
+          "political-religious discourse"
+        ],
+        "explanation": "‘This place’ refers not only to the soil but to the city and its inhabitants, using the location metonymically for the community under judgment.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 40:3",
+    "deliberation": "Searched for metaphor and idiom. The causal explanation is literal, but the expression ‘you did not listen to His voice’ is a standard idiom for disobedience, conceptualizing obedience as listening to a voice.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא־שְׁמַעְתֶּם בְּקוֹלוֹ",
+        "english_text": "and did not pay heed [lit. ‘did not listen to His voice’]",
+        "target": [
+          "Israel’s failure to obey God",
+          "human obedience/disobedience",
+          "ethical-religious behavior"
+        ],
+        "vehicle": [
+          "not listening to someone’s voice",
+          "auditory perception and response",
+          "sensory experience"
+        ],
+        "ground": [
+          "obedience pictured as attentive listening to speech",
+          "receptivity and responsiveness",
+          "conceptual metaphor HEARING-AS-OBEYING"
+        ],
+        "posture": [
+          "Nebuzaradan’s theological interpretation of events",
+          "moral evaluation of Judah’s behavior",
+          "didactic explanation"
+        ],
+        "explanation": "The idiom ‘listen to His voice’ metaphorically frames obedience to God as hearing and heeding a spoken voice.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 40:4",
+    "deliberation": "Examined the release speech for idioms and metaphors. Found three: (1) ‘I will set my eye on you’ for protective care, (2) ‘the whole land is before you’ picturing freedom of choice as an open expanse, and (3) ‘what is good/right in your eyes’ as a visual idiom for personal evaluation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאָשִׂים אֶת־עֵינִי עָלֶיךָ",
+        "english_text": "and I will look after you [lit. ‘I will set my eye on you’]",
+        "target": [
+          "Jeremiah’s protection and welfare under Babylonian authority",
+          "personal safety and oversight",
+          "social-political care"
+        ],
+        "vehicle": [
+          "placing one’s eye on someone",
+          "focused gaze/visual attention",
+          "physical perception"
+        ],
+        "ground": [
+          "constant watchfulness implies protection and concern",
+          "attentive observation",
+          "care expressed as vigilant looking"
+        ],
+        "posture": [
+          "Nebuzaradan’s reassuring promise to Jeremiah",
+          "benevolent political assurance",
+          "diplomatic reassurance"
+        ],
+        "explanation": "The phrase uses a body-part metaphor: fixing one’s ‘eye’ on someone stands for sustained protective attention and care.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רְאֵה כׇּל־הָאָרֶץ לְפָנֶיךָ",
+        "english_text": "See, the whole land is before you",
+        "target": [
+          "Jeremiah’s unrestricted options about where to live",
+          "freedom of movement and choice",
+          "social-political situation"
+        ],
+        "vehicle": [
+          "an open land lying in front of a person",
+          "unobstructed physical expanse",
+          "spatial configuration"
+        ],
+        "ground": [
+          "having an open expanse before you evokes freedom and lack of barriers",
+          "unrestricted access",
+          "openness and possibility"
+        ],
+        "posture": [
+          "Nebuzaradan’s invitation highlighting Jeremiah’s freedom",
+          "persuasive framing of options",
+          "narrative direct speech"
+        ],
+        "explanation": "Jeremiah’s range of choices is pictured as an open land spread out before him, an idiomatic metaphor for full freedom of choice.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶל־טוֹב וְאֶל־הַיָּשָׁר בְּעֵינֶיךָ לָלֶכֶת שָׁמָּה לֵךְ",
+        "english_text": "go wherever seems good and right to you [lit. ‘what is good and right in your eyes’]",
+        "target": [
+          "Jeremiah’s internal evaluation and preference",
+          "personal judgment",
+          "cognitive-ethical assessment"
+        ],
+        "vehicle": [
+          "what appears good/right in someone’s eyes",
+          "visual perception of pleasing objects",
+          "physical sight"
+        ],
+        "ground": [
+          "evaluation conceptualized as visual appraisal",
+          "liking something as ‘seeing it as good’",
+          "metaphor THINKING-AS-SEEING"
+        ],
+        "posture": [
+          "Nebuzaradan deferring to Jeremiah’s own judgment",
+          "respectful granting of autonomy",
+          "interpersonal negotiation"
+        ],
+        "explanation": "The idiom uses visual language (‘in your eyes’) to describe Jeremiah’s inner judgment and moral assessment.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 40:5",
+    "deliberation": "Most of the verse is logistical and literal. The one figurative element is again the idiom ‘what is right in your eyes to go, go,’ using visual language for internal evaluation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אוֹ אֶל־כׇּל־הַיָּשָׁר בְּעֵינֶיךָ לָלֶכֶת לֵךְ",
+        "english_text": "or go wherever you want to go [lit. ‘wherever is right in your eyes to go, go’]",
+        "target": [
+          "Jeremiah’s own sense of what course of action is appropriate",
+          "personal decision-making",
+          "cognitive-moral judgment"
+        ],
+        "vehicle": [
+          "what is ‘straight/right’ in someone’s eyes",
+          "visual perception of something as straight/right",
+          "physical sight and spatial straightness"
+        ],
+        "ground": [
+          "rightness is conceptualized as straightness perceived visually",
+          "alignment with one’s sense of propriety",
+          "metaphor MORALITY-AS-STRAIGHTNESS combined with SEEING-AS-KNOWING"
+        ],
+        "posture": [
+          "Nebuzaradan’s deference to Jeremiah’s evaluation",
+          "granting freedom framed in visual-ethical terms",
+          "direct speech"
+        ],
+        "explanation": "The idiom uses what is ‘right in your eyes’ to describe Jeremiah’s internal moral and practical evaluation, mixing visual and ethical metaphors.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 40:6",
+    "deliberation": "Narrates Jeremiah’s movement to Gedaliah and his residence among the remaining people. Expressions like ‘among the people who were left in the land’ are literal descriptions of location and status, not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 40:7",
+    "deliberation": "Describes who heard what, and administrative appointments. Phrases like ‘officers in the field’ and ‘from the poorest of the land’ are socio-geographical labels here, not functioning as metaphors or idioms.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 40:8",
+    "deliberation": "This verse is a list of names and places, narrating who came to Gedaliah. I did not find metaphors, idioms, or other figurative devices; all elements function literally.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 40:9",
+    "deliberation": "Investigated ‘serve the Chaldeans’ and ‘it will be good for you.’ In this political context ‘serve’ means literal political subjection, and ‘it will go well with you’ is a straightforward outcome statement, not heightened or figurative.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 40:10",
+    "deliberation": "Most of the verse is practical instruction. The idiom ‘to stand before the Chaldeans’ is figurative for serving or representing them in an official capacity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִי יֹשֵׁב בַּמִּצְפָּה לַעֲמֹד לִפְנֵי הַכַּשְׂדִּים",
+        "english_text": "I am going to stay in Mizpah to attend upon the Chaldeans [lit. ‘to stand before the Chaldeans’]",
+        "target": [
+          "Gedaliah’s role of service and representation before Babylonian authorities",
+          "official service/courtly representation",
+          "political-administrative activity"
+        ],
+        "vehicle": [
+          "standing before someone",
+          "physical posture in another’s presence",
+          "bodily orientation in space"
+        ],
+        "ground": [
+          "court officials literally stand before their superiors; standing signals readiness to serve",
+          "service characterized by attentive presence",
+          "status and subordination expressed by bodily posture"
+        ],
+        "posture": [
+          "Gedaliah’s self-description of his political function",
+          "statement of loyal service",
+          "administrative discourse"
+        ],
+        "explanation": "‘Standing before’ the Chaldeans is an idiom picturing official service as the physical posture of standing in a superior’s presence.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 40:11",
+    "deliberation": "The verse reports that the king of Babylon left ‘a remnant’ of Judah and appointed Gedaliah. Here ‘remnant’ is used in its straightforward sense ‘survivors’ without clear figurative extension; the language reads as literal.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 40:12",
+    "deliberation": "Looked for imagery in the verbs of movement. The phrase ‘from all the places to which they had been driven’ uses a verb of pushing/driving for exile and is rendered ‘scattered’; this conceptualizes exiles as objects driven or scattered, a conventional metaphor for dispersion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִכׇּל־הַמְּקֹמוֹת אֲשֶׁר נִדְּחוּ־שָׁם",
+        "english_text": "from all the places to which they had scattered / been driven",
+        "target": [
+          "the forced dispersion of Judeans by conquest and exile",
+          "political displacement of a population",
+          "historical-national experience"
+        ],
+        "vehicle": [
+          "being driven/pushed away to various places",
+          "scattering of objects by force",
+          "physical motion of items under impact"
+        ],
+        "ground": [
+          "exile resembles objects being forced away and dispersed in different directions",
+          "loss of cohesion and control",
+          "conceptual metaphor COMMUNITY-AS-COLLECTION-OF-OBJECTS"
+        ],
+        "posture": [
+          "narrator’s summary of the exiles’ past experience",
+          "retrospective characterization of dispersion",
+          "historical narration"
+        ],
+        "explanation": "The verb ‘were driven/scattered’ metaphorically portrays the exiles as objects pushed and dispersed to many locations.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 40:13",
+    "deliberation": "Simple narrative of Johanan and the officers coming to Gedaliah. No idioms, metaphors, or personification beyond standard literal usage were detected.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 40:14",
+    "deliberation": "The warning to Gedaliah is mostly literal. The expression ‘to strike you, nefesh’ (smite you, life) uses ‘soul/life’ as a part/aspect standing for the whole person, a synecdoche/metonymy for killing you.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְהַכֹּתְךָ נָפֶשׁ",
+        "english_text": "to kill you [lit. ‘to strike you, life/soul’]",
+        "target": [
+          "Gedaliah’s death as a person",
+          "the taking of a person’s life",
+          "human mortality"
+        ],
+        "vehicle": [
+          "striking the ‘soul/life’ (נֶפֶשׁ)",
+          "an aspect/dimension of a person",
+          "psychophysical aspect term"
+        ],
+        "ground": [
+          "the life/soul represents the whole living person; to strike the life is to kill the person",
+          "part-for-whole relation",
+          "synecdochic metonymy LIFE-FOR-PERSON"
+        ],
+        "posture": [
+          "Johanan’s report of the assassination plot",
+          "warning framed in idiomatic death language",
+          "urgent political speech"
+        ],
+        "explanation": "‘Strike you, nefesh’ uses ‘life/soul’ as a synecdoche for the person, an idiomatic metonymy for killing you.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 40:15",
+    "deliberation": "Explored Johanan’s proposal. Found (1) the same idiomatic ‘strike [someone], nefesh’ for killing, and (2) the depiction of the Judeans as ‘gathered’ and then ‘scattered,’ conceptualizing the community as objects that can be collected and dispersed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לָמָּה יַכֶּכָּה נֶּפֶשׁ",
+        "english_text": "otherwise he will kill you [lit. ‘why should he strike you, life/soul?’]",
+        "target": [
+          "Gedaliah’s possible death",
+          "the loss of a person’s life",
+          "human mortality"
+        ],
+        "vehicle": [
+          "striking the ‘soul/life’ (נֶפֶשׁ)",
+          "an aspect of personhood",
+          "psychophysical aspect term"
+        ],
+        "ground": [
+          "the life/soul stands for the whole person; striking the life equals killing the person",
+          "part-for-whole relationship",
+          "synecdochic metonymy"
+        ],
+        "posture": [
+          "Johanan’s secret argument to persuade Gedaliah",
+          "use of idiomatic death language",
+          "persuasive political counsel"
+        ],
+        "explanation": "Again ‘strike you, nefesh’ uses ‘life/soul’ as a synecdoche for the person, an idiomatic way to speak of killing.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָפֹצוּ כׇּל־יְהוּדָה הַנִּקְבָּצִים אֵלֶיךָ",
+        "english_text": "and all the Judeans who have gathered about you will be dispersed",
+        "target": [
+          "the political and social breakup of the Judean community around Gedaliah",
+          "cohesion or dissolution of a community",
+          "social-political organization"
+        ],
+        "vehicle": [
+          "objects gathered and then scattered",
+          "collection of items that can be broken apart",
+          "physical manipulation of discrete objects"
+        ],
+        "ground": [
+          "a unified community is like gathered items; scattering them pictures the loss of unity and proximity",
+          "cohesion vs. dispersion",
+          "conceptual metaphor COMMUNITY-AS-COLLECTION"
+        ],
+        "posture": [
+          "Johanan’s warning about the consequences of Gedaliah’s death",
+          "vivid depiction of potential communal collapse",
+          "rhetorical argumentation"
+        ],
+        "explanation": "The gathered Judeans are portrayed as a collection of items that can be ‘scattered,’ metaphorically describing political and social dispersal.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 40:16",
+    "deliberation": "Gedaliah’s rebuttal is simple denial. Phrases like ‘you are speaking a lie’ are straightforward moral evaluation of Johanan’s report, not figurative or idiomatic beyond normal usage.",
+    "instances": []
+  }
+]

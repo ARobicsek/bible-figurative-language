@@ -1,0 +1,804 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 20:1",
+    "deliberation": "Narrative description of Pashhur's identity and his hearing Jeremiah prophesy. No metaphorical or idiomatic uses; temple terminology and titles appear to be straightforward and literal.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 20:2",
+    "deliberation": "Describes Pashhur striking Jeremiah and putting him in the מַהְפֶּכֶת (stocks/cell) at a specific gate. The language is descriptive and concrete; even if the precise nature of המהפכת is debated, it denotes a physical restraining device, not an image for something else.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 20:3",
+    "deliberation": "Jeremiah renames Pashhur with the symbolic name מָגוֹר מִסָּבִיב (terror on every side). This is a prophetic name-metaphor: the phrase of pervasive terror is transferred to Pashhur as his identity and destiny. The rest of the verse is literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לֹ֤א פַשְׁחוּר֙ קָרָ֤א יְהוָה֙ שְׁמֶ֔ךָ כִּ֖י אִם־מָג֥וֹר מִסָּבִֽיב",
+        "english_text": "GOD has named you not Pashhur, but Magor-missabib (Terror-all-around).",
+        "target": [
+          "Pashhur’s fate and public identity",
+          "an individual opponent of Jeremiah",
+          "human social and historical reality"
+        ],
+        "vehicle": [
+          "מָגוֹר מִסָּבִיב, a formula for pervasive terror used as a name",
+          "a condition of being surrounded by fear and disaster",
+          "emotional and experiential domain of panic and siege"
+        ],
+        "ground": [
+          "Pashhur will be encompassed and defined by terror and calamity",
+          "inescapable, all‑around danger and fear",
+          "divine judgment imagery"
+        ],
+        "posture": [
+          "Jeremiah’s ironic re‑naming of an official associated with security as Terror‑on‑every‑side",
+          "prophetic denunciation and wordplay",
+          "prophetic discourse critiquing religious authority"
+        ],
+        "explanation": "The stereotyped expression 'terror all around' is turned into Pashhur’s new name, metaphorically defining his identity by the terror and disaster that will surround him. It also carries ironic force, replacing his given name with a name of doom.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 20:4",
+    "deliberation": "Judgment oracle. Notable figurative elements: (1) 'I am giving you to terror' treats terror as a master/realm to which someone can be handed over; (2) 'into the hand of the king of Babylon' uses 'hand' as a metonym for power/control; (3) 'fall by the sword' uses 'sword' as a metonym for violent death/warfare. These are distinct conventional figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִי֩ נֹתֶנְךָ֨ לְמָג֜וֹר לְךָ֣ וּלְכׇל־אֹהֲבֶ֗יךָ",
+        "english_text": "I am going to deliver you and all your friends over to terror.",
+        "target": [
+          "Pashhur and his associates’ experience under judgment",
+          "the destiny of specific people",
+          "historical experience of conquest and exile"
+        ],
+        "vehicle": [
+          "being handed over to 'terror' as if to a captor or domain",
+          "a hostile power or realm exercising control",
+          "domain of psychological and military oppression"
+        ],
+        "ground": [
+          "terror will dominate and control them as a master controls captives",
+          "total subjection to frightening, destructive forces",
+          "imagery of conquest and captivity re-applied to emotional/spiritual dread"
+        ],
+        "posture": [
+          "prophetic representation of divine judgment",
+          "announcement of retributive reversal",
+          "theological explanation of coming catastrophe"
+        ],
+        "explanation": "Terror is treated like a power to whom people can be 'given,' personifying fear as a captor and metaphorically describing the total domination Pashhur and his allies will experience.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶתֵּן֙ בְּיַ֣ד מֶלֶךְ־בָּבֶ֔ל",
+        "english_text": "I will deliver [them] into the hand of the king of Babylon.",
+        "target": [
+          "Judah’s subjection to Babylonian rule",
+          "a nation’s political fate",
+          "geopolitical power relations"
+        ],
+        "vehicle": [
+          "the 'hand' of the king of Babylon",
+          "physical hand as a symbol of power and control",
+          "body-part metonymy for authority and capability"
+        ],
+        "ground": [
+          "what the hand does (grasp, control) corresponds to political domination",
+          "transfer of control from one power to another",
+          "concept of sovereignty and mastery"
+        ],
+        "posture": [
+          "prophetic description of conquest in covenantal terms",
+          "legal-transfer imagery applied to political domination",
+          "theological framing of international politics"
+        ],
+        "explanation": "The 'hand' of the king stands metonymically for his power and control. To be given into his 'hand' is an idiomatic way to say that Judah will come under his dominion.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָ֥פְל֛וּ בְּחֶ֥רֶב אֹיְבֵיהֶ֖ם ... וְהִכָּ֥ם בֶּחָֽרֶב",
+        "english_text": "They will fall by the sword of their enemies ... and he will strike them with the sword.",
+        "target": [
+          "the people’s deaths in war",
+          "violent killing in battle",
+          "historical event of military defeat"
+        ],
+        "vehicle": [
+          "the 'sword' as the agent",
+          "weapon representing warfare and killing",
+          "instrumental metonymy for military violence"
+        ],
+        "ground": [
+          "the sword is the typical tool of soldiers and executioners",
+          "the weapon stands for the act and event of slaughter",
+          "shared association of sword with war and death"
+        ],
+        "posture": [
+          "announcement of concrete but also theologically charged violence",
+          "judgment expressed through war imagery",
+          "prophetic interpretation of military disaster"
+        ],
+        "explanation": "The 'sword' functions as a metonym for warfare and violent death. Saying they will 'fall by the sword' is a conventional idiom for being killed in battle.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 20:5",
+    "deliberation": "Continues judgment: wealth and treasures are given 'into the hand of their enemies,' using the same idiom as v.4. That is a metonymy/idiom for coming under someone’s power. The rest is literal description of plunder.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶתֵּן֙ בְּיַ֣ד אֹֽיְבֵיהֶ֔ם",
+        "english_text": "I will deliver [them] into the hand of their enemies.",
+        "target": [
+          "the city’s wealth coming under enemy control",
+          "loss of possessions through conquest",
+          "economic and political subjugation"
+        ],
+        "vehicle": [
+          "the 'hand' of the enemies",
+          "the hand as symbol of power, possession, and control",
+          "body-part metonymy for dominion"
+        ],
+        "ground": [
+          "what a hand grasps it owns and controls",
+          "transfer of goods into another’s sphere of power",
+          "concept of being at the mercy of another"
+        ],
+        "posture": [
+          "prophetic portrayal of looting as divinely decreed transfer",
+          "covenantal-legal imagery for judgment",
+          "theological framing of economic loss"
+        ],
+        "explanation": "Again 'hand' is metonymy for the enemies’ power. To give the city’s wealth 'into the hand' of enemies is an idiomatic way of saying they will fully control and plunder it.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 20:6",
+    "deliberation": "Predicts literal exile, death, and burial in Babylon for Pashhur and his household. 'House' for family is a normal social term here, not an image. No clear metaphors or special idioms beyond standard prose.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 20:7",
+    "deliberation": "Jeremiah speaks of God 'enticing' and 'overpowering' him, using seduction and combat imagery for his prophetic call—these are metaphors applied to God. Then he says he has become 'a laughingstock all day; everyone mocks me,' an exaggerated, idiomatic way of describing constant public ridicule.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "פִּתִּיתַ֤נִי יְהוָה֙ וָאֶפָּ֔ת חֲזַקְתַּ֖נִי וַתּוּכָ֑ל",
+        "english_text": "You enticed me, O LORD, and I was enticed; You overpowered me and You prevailed.",
+        "target": [
+          "Jeremiah’s experience of being compelled into prophetic service",
+          "the inner process of prophetic vocation",
+          "human response to divine call"
+        ],
+        "vehicle": [
+          "being seduced and overpowered in struggle",
+          "romantic/sexual persuasion and military defeat",
+          "domains of interpersonal attraction and physical combat"
+        ],
+        "ground": [
+          "Jeremiah’s will was overcome despite resistance",
+          "loss of control and yielding under a stronger influence",
+          "asymmetry of power between God and prophet"
+        ],
+        "posture": [
+          "complaint accusing God of coercive treatment",
+          "lamenting tone bordering on ironic accusation",
+          "prophetic self-reflection in prayer"
+        ],
+        "explanation": "Jeremiah uses the language of seduction and overpowering to describe how God’s call overcame his resistance. This is metaphorical and deliberately provocative, casting God as a powerful suitor or conqueror.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָיִ֤יתִי לִשְׂחוֹק֙ כׇּל־הַיּ֔וֹם כֻּלֹּ֖ה לֹעֵ֥ג לִֽי",
+        "english_text": "I have become a laughingstock all day; everyone jeers at me.",
+        "target": [
+          "Jeremiah’s social standing and emotional state",
+          "an individual’s public reputation",
+          "social experience of shame"
+        ],
+        "vehicle": [
+          "a person turned into 'laughter' and constant mockery",
+          "an object of ridicule on whom people vent scorn",
+          "domain of social derision"
+        ],
+        "ground": [
+          "Jeremiah is treated only as a source of amusement and contempt",
+          "ongoing, pervasive mockery that defines his public identity",
+          "association of laughter with humiliation"
+        ],
+        "posture": [
+          "self-lament highlighting extremity of rejection",
+          "hyperbolic complaint before God",
+          "individual lament psalm-like discourse"
+        ],
+        "explanation": "By saying he has 'become a laughingstock all day' and 'everyone' mocks him, Jeremiah uses hyperbolic, idiomatic language to portray himself as nothing but an object of ridicule.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 20:8",
+    "deliberation": "Jeremiah summarizes his message ('violence and destruction') and its result: 'the word of YHWH has become for me a reproach and derision all day.' The 'word of YHWH' here stands metonymically for the prophetic commission/message and its social consequences, which become shame for him.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּֽי־הָיָ֨ה דְבַר־יְהוָ֥ה לִ֛י לְחֶרְפָּ֥ה וּלְקֶ֖לֶס כׇּל־הַיּֽוֹם",
+        "english_text": "For the word of the LORD has become for me a reproach and derision all day.",
+        "target": [
+          "Jeremiah’s experience of the prophetic message",
+          "the burden and consequences of his vocation",
+          "intersection of revelation and social response"
+        ],
+        "vehicle": [
+          "the 'word of the LORD' as something that itself is reproach and mockery",
+          "a message perceived as shameful abuse",
+          "domain of social stigma"
+        ],
+        "ground": [
+          "carrying and speaking the divine word results in continual shame",
+          "what should be honorable instead brings disgrace",
+          "paradox of divine message producing scorn"
+        ],
+        "posture": [
+          "complaint about the cost of ministry",
+          "hyperbolic, idiomatic lament",
+          "prophetic self-disclosure to God"
+        ],
+        "explanation": "The 'word of the LORD' functions both metonymically for Jeremiah’s prophetic commission and metaphorically as if it were itself 'reproach and derision.' The phrase 'all day' heightens the sense of unrelenting disgrace.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 20:9",
+    "deliberation": "Jeremiah resolves not to speak in God’s name, but then describes the inner compulsion: the word is 'like a burning fire in my heart, shut up in my bones.' This is a vivid simile extended into bodily metaphor; it pictures the message as fire imprisoned within him, making silence impossible.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָ֤ה בְלִבִּי֙ כְּאֵ֣שׁ בֹּעֶ֔רֶת עָצֻ֖ר בְּעַצְמֹתָ֑י",
+        "english_text": "But [his word] was in my heart like a burning fire, shut up in my bones.",
+        "target": [
+          "Jeremiah’s inner experience of prophetic compulsion",
+          "emotional and spiritual state of the prophet",
+          "human response to divine revelation"
+        ],
+        "vehicle": [
+          "a raging fire confined within his body (heart and bones)",
+          "uncontrollable, destructive heat seeking release",
+          "domain of physical sensation and natural force"
+        ],
+        "ground": [
+          "intense, painful pressure that demands expression",
+          "impossibility of suppressing something so powerful",
+          "shared features of fire’s energy and the urge to speak"
+        ],
+        "posture": [
+          "confession of inescapable vocation",
+          "lament mixed with acknowledgment of divine power",
+          "prophetic self-description using visceral imagery"
+        ],
+        "explanation": "Jeremiah likens the divine word inside him to a blazing fire trapped within his very bones, an image that captures both the pain of restraint and the inevitability of his speaking.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 20:10",
+    "deliberation": "Jeremiah reports hearing 'terror on every side' and describes his supposed friends 'watching for my stumbling.' 'Terror on every side' reprises the set phrase מגור מסביב for pervasive fear, and 'stumbling' is metaphorical for failing or falling into misfortune.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דִּבַּ֣ת רַבִּים֮ מָג֣וֹר מִסָּבִיב",
+        "english_text": "The whisperings of many: Terror all around!",
+        "target": [
+          "the social atmosphere around Jeremiah",
+          "collective mood and threat perception",
+          "community context of hostility"
+        ],
+        "vehicle": [
+          "מָגוֹר מִסָּבִיב, 'terror all around'",
+          "a state of being surrounded by dread and danger",
+          "emotional and military-siege imagery"
+        ],
+        "ground": [
+          "Jeremiah is encircled by hostility and threat",
+          "sense that danger presses in from every side",
+          "blend of fear and actual plotting"
+        ],
+        "posture": [
+          "report of hostile gossip and atmosphere",
+          "lament over pervasive opposition",
+          "prophetic complaint about social environment"
+        ],
+        "explanation": "The slogan-like phrase 'terror all around' is a conventional image for pervasive, inescapable fear and danger, characterizing the environment that surrounds Jeremiah.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֹּ֚ל אֱנ֣וֹשׁ שְׁלֹמִ֔י שֹׁמְרֵ֖י צַלְעִ֑י",
+        "english_text": "All the men of my peace are watching for my stumbling.",
+        "target": [
+          "Jeremiah’s anticipated failure or downfall",
+          "his prophetic career and personal safety",
+          "individual life-course and status"
+        ],
+        "vehicle": [
+          "stumbling (צלע) while people watch",
+          "a person tripping or falling under observation",
+          "physical movement and misstep"
+        ],
+        "ground": [
+          "to 'stumble' is to fail or fall into misfortune",
+          "his 'friends' eagerly await a misstep that will ruin him",
+          "connection between physical and moral/ vocational collapse"
+        ],
+        "posture": [
+          "expression of betrayal and suspicion",
+          "use of idiomatic fall-language for ruin",
+          "lament about malicious intent among intimates"
+        ],
+        "explanation": "Jeremiah’s 'men of peace' are said to watch for his 'stumbling,' a common metaphor in Hebrew where physical stumbling represents failure or calamity.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 20:11",
+    "deliberation": "Jeremiah contrasts God’s support with his enemies’ fate. 'The LORD is with me like a mighty warrior' is an explicit simile; 'my pursuers will stumble' again uses the metaphor of stumbling for failure or ruin.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיהוָ֤ה אוֹתִי֙ כְּגִבּ֣וֹר עָרִ֔יץ",
+        "english_text": "But the LORD is with me like a mighty warrior.",
+        "target": [
+          "God’s protective presence with Jeremiah",
+          "divine support in conflict",
+          "theological reality of God as helper"
+        ],
+        "vehicle": [
+          "a 'mighty warrior' (גִבּוֹר עָרִיץ)",
+          "a powerful, fearsome combatant",
+          "military and heroic imagery"
+        ],
+        "ground": [
+          "strength, courage, and capacity to defeat enemies",
+          "presence that inspires fear in opponents and confidence in allies",
+          "association of warrior with victory and protection"
+        ],
+        "posture": [
+          "confident affirmation of trust in God",
+          "reframing of circumstances through martial metaphor",
+          "praise-like confession within lament"
+        ],
+        "explanation": "Jeremiah compares God’s presence to that of a formidable warrior standing by his side, emphasizing divine strength and protection in the face of persecution.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רֹדְפַ֥י יִכָּשְׁל֖וּ וְלֹ֣א יֻכָ֑לוּ",
+        "english_text": "Therefore my persecutors shall stumble and not prevail.",
+        "target": [
+          "the failure of Jeremiah’s persecutors",
+          "the outcome of opposition to the prophet",
+          "human plans against God’s representative"
+        ],
+        "vehicle": [
+          "stumbling and being unable to stand or progress",
+          "losing footing and falling in a pursuit",
+          "physical movement image of a failed chase"
+        ],
+        "ground": [
+          "their attempts will be thwarted and collapse",
+          "stumbling symbolizes defeat and frustration of plans",
+          "connection between loss of balance and loss of success"
+        ],
+        "posture": [
+          "statement of assured reversal",
+          "use of idiomatic failure imagery",
+          "trust-filled prediction of opponents’ shame"
+        ],
+        "explanation": "As in v.10, physical 'stumbling' is a metaphor for failing in one’s efforts. Jeremiah asserts that his persecutors will trip up and be unable to prevail.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 20:12",
+    "deliberation": "God is described as one who 'sees kidneys and heart.' In Hebrew anthropology 'kidneys and heart' metonymically/synecdochically represent the inner thoughts, motives, and emotions. This is a standard but still figurative way of speaking of the inmost self.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "רֹאֶ֥ה כְלָי֖וֹת וָלֵ֑ב",
+        "english_text": "Who examines the kidneys and the heart.",
+        "target": [
+          "human inner life (thoughts, motives, emotions)",
+          "the moral and spiritual core of a person",
+          "anthropological understanding of the self"
+        ],
+        "vehicle": [
+          "kidneys and heart as organs that God sees",
+          "internal organs as seats of feeling and intention",
+          "body-part terminology"
+        ],
+        "ground": [
+          "these organs are associated with hidden inner realities",
+          "to see them is to know a person’s true inner state",
+          "metonymic link between organs and inward character"
+        ],
+        "posture": [
+          "appeal to God’s perfect knowledge and justice",
+          "forensic and covenantal language",
+          "prayer for vindication based on divine omniscience"
+        ],
+        "explanation": "‘Kidneys and heart’ stand metonymically for the inner being. Saying that God sees them means he knows the deepest thoughts and motives of people.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 20:13",
+    "deliberation": "Praise verse. Two small figures: 'soul of the needy' uses 'soul' as synecdoche for the whole person, and 'hand of evildoers' uses 'hand' as metonym for their power or grasp.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶת־נֶ֥פֶשׁ אֶבְי֖וֹן",
+        "english_text": "the soul of the needy one",
+        "target": [
+          "the whole needy person whom God rescues",
+          "a vulnerable human being",
+          "individual human life"
+        ],
+        "vehicle": [
+          "נֶפֶשׁ (soul/life) as the referent",
+          "life or self as a part/aspect of the person",
+          "inner-life terminology"
+        ],
+        "ground": [
+          "soul stands for the living person in their vulnerability",
+          "focus on the life at stake rather than possessions",
+          "association of נֶפֶשׁ with the living self"
+        ],
+        "posture": [
+          "celebration of God’s care for the weak",
+          "praise language highlighting vulnerability",
+          "theological affirmation of divine rescue"
+        ],
+        "explanation": "Here 'soul' is a common synecdoche for the whole person, emphasizing the life that God has preserved.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִיַּ֥ד מְרֵעִֽים",
+        "english_text": "from the hand of evildoers",
+        "target": [
+          "the power and control of wicked people over the needy",
+          "oppressive human agency",
+          "social injustice and violence"
+        ],
+        "vehicle": [
+          "the 'hand' of evildoers",
+          "hand as symbol of power, grasp, and control",
+          "body-part metonymy for capability and dominance"
+        ],
+        "ground": [
+          "what the hand holds is under one’s control",
+          "deliverance from the 'hand' means liberation from control",
+          "association of hands with exertion of power"
+        ],
+        "posture": [
+          "praise for God’s liberating action",
+          "use of conventional deliverance imagery",
+          "worship discourse celebrating justice"
+        ],
+        "explanation": "The 'hand' of evildoers stands metonymically for their power over victims; God rescues the needy from their grasp.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 20:14",
+    "deliberation": "Jeremiah curses the day of his birth and says, 'Let not the day be blessed.' A 'day' cannot literally be cursed or blessed; this is hyperbolic, personifying the day as if it could receive blessing or cursing to express extreme self‑loathing and regret.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָר֣וּר הַיּ֔וֹם אֲשֶׁ֥ר יֻלַּ֖דְתִּי בּ֑וֹ ... אַל־יְהִ֥י בָרֽוּךְ",
+        "english_text": "Accursed be the day that I was born! Let not the day be blessed when my mother bore me!",
+        "target": [
+          "Jeremiah’s own existence and life history",
+          "his experience of life’s misery",
+          "individual biography under suffering"
+        ],
+        "vehicle": [
+          "cursing or blessing a 'day' as if it were a subject",
+          "treating a calendar day as an accursed entity",
+          "ritual-language applied to time"
+        ],
+        "ground": [
+          "the birthday symbolizes his entire troubled life",
+          "to curse the day is to reject the whole fact of his existence",
+          "link between beginnings and subsequent suffering"
+        ],
+        "posture": [
+          "extreme lament echoing Job-like curses",
+          "hyperbolic rejection of one’s own life",
+          "poetic complaint before God"
+        ],
+        "explanation": "Jeremiah personifies and curses the very day of his birth as a way of rejecting his existence; this is hyperbolic lament language, not a literal curse on a date.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 20:15",
+    "deliberation": "Jeremiah extends his curse to the man who brought his father the birth news. Wishing a curse on the messenger is rhetorical hyperbole: he does not know or literally target that herald, but uses him as a figure for the whole event of his birth.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אָר֣וּר הָאִ֗ישׁ אֲשֶׁ֨ר בִּשַּׂ֤ר אֶת־אָבִי֙ לֵאמֹ֔ר יֻֽלַּד־לְךָ֖ בֵּ֣ן זָכָ֑ר",
+        "english_text": "Accursed be the man who brought my father the news and said, 'A boy is born to you.'",
+        "target": [
+          "Jeremiah’s birth event and the joy surrounding it",
+          "the origin of his troubled life",
+          "family history and beginnings"
+        ],
+        "vehicle": [
+          "cursing the joyful messenger of good news",
+          "treating the herald as deserving doom",
+          "social role of messenger as focus of blame"
+        ],
+        "ground": [
+          "the messenger represents the event he announced",
+          "by cursing the messenger he symbolically curses the birth itself",
+          "intense wish that the joyful announcement had never occurred"
+        ],
+        "posture": [
+          "hyperbolic lament intensifying the curse of v.14",
+          "use of metonymic target to dramatize self-rejection",
+          "poetic extremity in complaint"
+        ],
+        "explanation": "The man who brought the birth news stands metonymically for the whole event of Jeremiah’s birth. Cursing him is a hyperbolic way of rejecting the fact of his existence and the joy it caused.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 20:16",
+    "deliberation": "Jeremiah wishes that that man become 'like the cities that the LORD overthrew,' an explicit simile evoking Sodom-type destruction. The battle cries morning and noon may be literal wishes for constant terror, but the key figurative element is the comparison to overthrown cities.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָה֙ הָאִ֣ישׁ הַה֔וּא כֶּעָרִ֛ים אֲשֶׁר־הָפַ֥ךְ יְהוָ֖ה וְלֹ֣א נִחָ֑ם",
+        "english_text": "Let that man become like the cities that the LORD overthrew and did not relent.",
+        "target": [
+          "the imagined fate of the birth messenger",
+          "a single individual’s destiny",
+          "divine judgment on a person"
+        ],
+        "vehicle": [
+          "cities overthrown by God without relenting (e.g., Sodom-like)",
+          "total, irrevocable destruction of urban centers",
+          "domain of catastrophic judgment narratives"
+        ],
+        "ground": [
+          "desire for complete, pitiless ruin",
+          "link between the cities’ exemplary destruction and the wished fate of the man",
+          "symbolic use of well-known judgment precedent"
+        ],
+        "posture": [
+          "extreme emotional outburst in lament",
+          "invocation of traditional judgment imagery as curse",
+          "poetic intensification of self-directed despair"
+        ],
+        "explanation": "The man is compared to cities that God destroyed without pity, a hyperbolic simile that uses the stock image of Sodom-like devastation to express Jeremiah’s intense anguish.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 20:17",
+    "deliberation": "Jeremiah imagines God killing him 'from the womb' so that 'my mother would be my grave, and her womb pregnant forever.' The mother’s womb is metaphorically cast as his grave, with the phrase 'pregnant forever' hyperbolically extending the image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתְּהִי־לִ֤י אִמִּי֙ קִבְרִ֔י וְרַחְמָ֖הּ הֲרַ֥ת עוֹלָֽם",
+        "english_text": "So that my mother might be my grave, and her womb pregnant forever.",
+        "target": [
+          "Jeremiah’s non-existence or un-lived life",
+          "his desire that his life had ended before birth",
+          "personal fate and suffering"
+        ],
+        "vehicle": [
+          "the mother as a grave; her womb as eternally pregnant",
+          "burial place and unending gestation",
+          "domains of death and pregnancy merged"
+        ],
+        "ground": [
+          "remaining in the womb would be equivalent to being buried",
+          "he longs for a state where he never emerges into life’s sorrow",
+          "use of paradox (eternal pregnancy) to stress impossibility and wish"
+        ],
+        "posture": [
+          "deep existential lament",
+          "shocking imagery to express desire never to have lived",
+          "poetic fusion of birth and death motifs"
+        ],
+        "explanation": "Jeremiah pictures his mother as his 'grave' and her womb as perpetually pregnant, a metaphoric and hyperbolic way to wish that he had died in utero and never been born.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 20:18",
+    "deliberation": "Jeremiah asks why he came forth from the womb 'to see' misery and sorrow and have his days 'end in shame.' 'See' in Hebrew regularly means 'experience,' and the phrasing about his days ending in shame can be taken straightforwardly as life ending in disgrace. The verse is intensely emotional but does not introduce a distinct, non-conventional image beyond standard lament diction.",
+    "instances": []
+  }
+]

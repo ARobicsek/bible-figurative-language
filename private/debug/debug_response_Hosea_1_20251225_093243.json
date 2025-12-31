@@ -1,0 +1,335 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 1:1",
+    "deliberation": "I checked whether the verse is purely historical (listing prophet, kings, period) or if standard prophetic formulas also carry figurative force. The phrase “the word of YHWH … came to Hosea” personifies the divine word and uses a quasi-spatial verb (“came”) for an abstract message, which is a conventional but still figurative way of describing revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דְּבַר־יְהוָה אֲשֶׁר הָיָה אֶל־הוֹשֵׁעַ",
+        "english_text": "The word of GOD that came to Hosea",
+        "target": [
+          "the prophetic message addressed to Hosea",
+          "divine communication/revelation",
+          "theological/communication"
+        ],
+        "vehicle": [
+          "a ‘word’ that can actively ‘come’ to someone like a messenger or person",
+          "moving agent/visitor",
+          "spatial/motion/social interaction"
+        ],
+        "ground": [
+          "the initiative and directed movement of God’s communication toward the prophet",
+          "an intentional approach from one party to another",
+          "divine–human encounter"
+        ],
+        "posture": [
+          "presents revelation as an active approach from God rather than a human search",
+          "emphasis on God’s initiative and authority in speaking",
+          "theological valuation of prophecy"
+        ],
+        "explanation": "The abstract ‘word’ of YHWH is portrayed as if it were a personal agent that ‘comes’ to Hosea, a conventional personification and metonymy in prophetic literature for God’s revelatory action.",
+        "confidence": 0.74
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 1:2",
+    "deliberation": "I distinguished between the possibly literal command to marry a promiscuous woman (a symbolic act, but not itself phrased figuratively) and the explicitly figurative description of Israel’s apostasy. The key clause ‘for the land will surely whore away from after YHWH’ combines metaphor (unfaithfulness as harlotry), metonymy (land for people), and personification (land acting sexually).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּֽי־זָנֹ֤ה תִזְנֶה֙ הָאָ֔רֶץ מֵאַחֲרֵ֖י יְהוָה",
+        "english_text": "for the land will surely stray/whore from following GOD",
+        "target": [
+          "Israel’s people and their covenant loyalty to YHWH",
+          "the covenant community’s religious allegiance",
+          "social–religious life of Israel"
+        ],
+        "vehicle": [
+          "a land/person that ‘whores’ after another",
+          "sexually unfaithful spouse/prostitute",
+          "marriage/sexual relations"
+        ],
+        "ground": [
+          "abandoning an exclusive relationship in pursuit of others",
+          "betrayal and illicit attachments",
+          "covenant-breaking and idolatry"
+        ],
+        "posture": [
+          "strong moral condemnation of Israel’s idolatry as shameful sexual infidelity",
+          "depicts apostasy as both disgusting and treacherous",
+          "judgmental theological stance toward syncretism"
+        ],
+        "explanation": "‘The land’ stands metonymically for its inhabitants, who are depicted as an unfaithful spouse/prostitute. Their pursuit of other gods is metaphorically and personifyingly described as sexual ‘whoring’ away from YHWH.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 1:3",
+    "deliberation": "The verse narrates Hosea’s obedience: he marries Gomer and she bears a son. While the marriage is a symbolic act within the book’s larger structure, the wording here is straightforward narrative without figurative expressions (no metaphors, idioms, or personifications in the phrasing itself).",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 1:4",
+    "deliberation": "I examined the symbolic naming ‘Jezreel’ and the phrase ‘the blood of Jezreel.’ The name functions as a sign-name, where the child’s name stands for a coming act of judgment. ‘The blood of Jezreel’ is a standard biblical metonymy where ‘blood’ represents bloodshed-guilt. These are two related but distinct figurative devices.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "קְרָא שְׁמוֹ יִזְרְעֶאל כִּי־ע֣וֹד מְעַט וּפָקַדְתִּי אֶת־דְּמֵי יִזְרְעֶאל עַל־בֵּית יֵהוּא",
+        "english_text": "Name him Jezreel; for I will soon punish the House of Jehu for the blood of Jezreel",
+        "target": [
+          "the impending divine judgment on the house of Jehu and on Israel’s monarchy",
+          "coming national punishment",
+          "historical/theological destiny of Israel"
+        ],
+        "vehicle": [
+          "the child bearing the name ‘Jezreel’ which evokes the site and memory of a massacre",
+          "symbolic sign-name tied to a place of bloodshed",
+          "prophetic sign-act / historical geography"
+        ],
+        "ground": [
+          "the name encapsulates and continually recalls a prior violent event that prefigures coming judgment",
+          "using a personal name as a living reminder of guilt and its consequences",
+          "prophetic symbolism linking past and future judgment"
+        ],
+        "posture": [
+          "warns and ominously signals that past violence will be requited",
+          "presents the child’s very identity as a standing indictment",
+          "judicial/theological pronouncement against illegitimate power"
+        ],
+        "explanation": "The child’s name ‘Jezreel’ is not merely descriptive; it is a prophetic sign-name. The person is made into a living symbol of the judgment tied to the infamous events at Jezreel—an instance of symbolic metonymy within a prophetic sign-act.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דְּמֵי יִזְרְעֶאל",
+        "english_text": "the blood of Jezreel",
+        "target": [
+          "the culpable killings committed at Jezreel by the house of Jehu",
+          "guilt of violent bloodshed",
+          "moral/judicial responsibility"
+        ],
+        "vehicle": [
+          "the literal blood shed in the events at Jezreel",
+          "‘blood’ as a representation of killing",
+          "physiological/violent imagery"
+        ],
+        "ground": [
+          "blood represents the taking of life and thus the guilt of murder",
+          "close association of spilled blood with the crime and its consequences",
+          "legal-theological notion of ‘bloodguilt’"
+        ],
+        "posture": [
+          "highlights the gravity of the violence as something that cries out for reckoning",
+          "frames the massacre as an outstanding debt owed in justice",
+          "judicial condemnation"
+        ],
+        "explanation": "Here ‘blood’ stands metonymically for the violent bloodshed and its attached guilt at Jezreel. YHWH’s ‘visiting the blood’ thus means punishing the murders, not the literal fluid itself.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 1:5",
+    "deliberation": "The geographical reference to the Valley of Jezreel is literal, but the clause ‘I will break the bow of Israel’ uses a weapon as a synecdoche/metonymy for military power and the act of ‘breaking’ as a metaphor for destroying that power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְשָׁבַרְתִּי אֶת־קֶשֶׁת יִשְׂרָאֵל",
+        "english_text": "I will break the bow of Israel",
+        "target": [
+          "Israel’s military strength and capacity to wage war",
+          "national defense / armed force",
+          "political–military power"
+        ],
+        "vehicle": [
+          "a bow that is broken and rendered useless",
+          "disabled weapon",
+          "warfare implements"
+        ],
+        "ground": [
+          "a broken bow cannot function, just as a defeated army cannot defend itself",
+          "loss of operational capacity and vulnerability",
+          "destruction of strength and protection"
+        ],
+        "posture": [
+          "announces deliberate divine dismantling of Israel’s might",
+          "emphasizes Israel’s coming helplessness in battle",
+          "judgment on misplaced trust in military power"
+        ],
+        "explanation": "‘Bow’ stands synecdochically/metonymically for Israel’s whole military apparatus, and ‘break’ is a metaphor for decisively nullifying that strength. YHWH is not literally snapping a physical bow but ending Israel’s capacity to fight.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 1:6",
+    "deliberation": "I looked at the naming formula and the statement about no longer showing compassion. The semantic content ‘I will no longer have mercy’ is straightforward, but the daughter’s name ‘Lo-ruhamah’ (‘No-mercy/Not-pitied’) is a prophetic sign-name in which the child’s identity functions as a symbol and metonymy for YHWH’s withdrawal of compassion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "קְרָא שְׁמָהּ לֹא רֻחָמָה כִּי לֹא אוֹסִיף עוֹד אֲרַחֵם אֶת־בֵּית יִשְׂרָאֵל",
+        "english_text": "Name her Lo-ruhamah; for I will no longer have compassion on the House of Israel",
+        "target": [
+          "YHWH’s impending cessation of compassion toward Israel",
+          "divine emotional stance and covenant favor",
+          "theological/judicial relationship"
+        ],
+        "vehicle": [
+          "a child bearing the name ‘Lo-ruhamah’ (‘No-mercy’)",
+          "negative sign-name expressing an attitude",
+          "family naming / identity marker"
+        ],
+        "ground": [
+          "the name semantically encodes the state of ‘not being pitied’",
+          "the person continuously embodies and signals God’s stance toward the nation",
+          "use of names as compact summaries of theological status"
+        ],
+        "posture": [
+          "portrays Israel’s situation as pitiable yet unpitied, under judgment",
+          "infuses daily family life with the reminder of divine displeasure",
+          "sobering, condemnatory tone"
+        ],
+        "explanation": "The daughter’s name is a prophetic sign: her very identity stands metonymically for YHWH’s refusal to show mercy. The name functions as a living symbol rather than merely labeling the child.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 1:7",
+    "deliberation": "The promise of salvation ‘by YHWH their God’ is conceptually literal, but the list ‘not by bow, nor by sword, nor by war, by horses nor by horsemen’ uses specific military items as a meristic and synecdochic way to denote all human military means. That list is figurative metonymy for human power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְלֹא אוֹשִׁיעֵם בְּקֶשֶׁת וּבְחֶרֶב וּבְמִלְחָמָה בְּסוּסִים וּבְפָרָשִׁים",
+        "english_text": "I will not save them with bow and with sword and with war, with horses and with horsemen",
+        "target": [
+          "all human military means by which salvation might be expected",
+          "human military power and strategies",
+          "political–military resources"
+        ],
+        "vehicle": [
+          "bows, swords, war, horses, and horsemen as concrete items",
+          "representative tools and agents of battle",
+          "ancient warfare imagery"
+        ],
+        "ground": [
+          "these items embody and stand for the broader reality of armed force",
+          "typical instruments and practitioners of war suggest the whole human apparatus of defense",
+          "association of specific implements with the general concept of military might"
+        ],
+        "posture": [
+          "denies the sufficiency of human power and redirects trust to divine deliverance alone",
+          "contrasts fragile human means with YHWH’s saving action",
+          "theological critique of reliance on military strength"
+        ],
+        "explanation": "The catalogue of weapons and warriors functions as a merism/synecdoche for all human military means. YHWH’s salvation is defined over against these metonymic stand-ins for human power.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 1:8",
+    "deliberation": "The verse merely reports that after Lo-ruhamah was weaned, another conception and birth occurred. Although the daughter’s name is symbolic in origin, this verse contains no new figurative expression; it is plain narrative description.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 1:9",
+    "deliberation": "Here I distinguished between the theological declaration ‘you are not My people’ (which is a literal covenant-status reversal) and the symbolic naming ‘Lo-ammi.’ The child’s name functions as a prophetic sign-name, where his identity stands metonymically for the broken covenant relationship.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "קְרָא שְׁמוֹ לֹא עַמִּי כִּי אַתֶּם לֹא עַמִּי וְאָנֹכִי לֹא־אֶהְיֶה לָכֶם",
+        "english_text": "Name him Lo-ammi; for you are not My people, and I will not be for you",
+        "target": [
+          "the severed covenant relationship between YHWH and Israel",
+          "Israel’s loss of covenant identity as God’s people",
+          "theological/covenantal status"
+        ],
+        "vehicle": [
+          "a child named ‘Lo-ammi’ (‘Not-my-people’)",
+          "identity-denying sign-name",
+          "family naming used as prophetic sign"
+        ],
+        "ground": [
+          "the name directly encodes the statement of non-belonging",
+          "the person continually embodies and proclaims Israel’s disowned status",
+          "close tie between personal name and communal identity"
+        ],
+        "posture": [
+          "communicates a stark, painful rupture between God and people",
+          "turns ordinary family speech into a perpetual reminder of rejection",
+          "severe judgment with an implied call to repentance"
+        ],
+        "explanation": "The boy’s name ‘Lo-ammi’ is a prophetic sign-name: his very existence and daily mention stand metonymically for YHWH’s declaration that Israel is no longer His people. The figurative force lies in using a person’s name as a living symbol of covenant rupture.",
+        "confidence": 0.95
+      }
+    ]
+  }
+]

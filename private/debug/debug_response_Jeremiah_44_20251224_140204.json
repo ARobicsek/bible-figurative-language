@@ -1,0 +1,760 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 44:1",
+    "deliberation": "Examined whether formulaic terms like 'the word that came' (הַדָּבָר אֲשֶׁר הָיָה) or the geographic listing might be metonymic or figurative. Concluded this opening superscription is standard narrative formula with literal geography and no clear figurative usage beyond routine prophetic diction.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 44:2",
+    "deliberation": "Considered whether 'all the evil that I brought' (כׇּל־הָרָעָה) or 'they are a ruin today' (וְהִנָּם חָרְבָּה) are figurative. Here they refer to actual historical devastation of Jerusalem and Judah's towns; 'evil' in the sense of calamity is lexical. No strong metaphor, simile, or personification beyond standard prophetic prose.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 44:3",
+    "deliberation": "Looked at 'to vex/provoke Me' (לְהַכְעִסֵנִי) as an anthropopathic representation of God being angered by idolatry. This assigns a human psychological reaction to God. No other metaphors or similes appear.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לְהַכְעִסֵנִי",
+        "english_text": "to vex Me / to provoke Me",
+        "target": ["YHWH's response to Israel's idolatry", "divine emotional/moral reaction", "theological"],
+        "vehicle": ["human irritation/being provoked", "human emotional state", "human psychology"],
+        "ground": ["being personally affronted and angered by another's behavior", "relational offense and displeasure", "shared social-emotional experience"],
+        "posture": ["condemnation of idolatry as personally offensive to God", "judicial/evaluative stance", "prophetic accusation"],
+        "explanation": "The verb 'to vex/provoke Me' attributes to God a human-like experience of being deliberately irritated, an anthropopathic way of expressing divine displeasure.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 44:4",
+    "deliberation": "Focused on the expression 'הַשְׁכֵּים וְשָׁלֹחַ' ('rising early and sending') for God's dispatching of prophets. This is a stock Jeremianic idiom that pictures God as a human householder rising early to send messengers, an anthropomorphic and idiomatic way to stress persistence and urgency.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הַשְׁכֵּם וְשָׁלֹחַ",
+        "english_text": "persistently (lit. 'rising early and sending')",
+        "target": ["God's repeated sending of prophets", "divine initiative in warning", "theological"],
+        "vehicle": ["a person who gets up early to send messengers", "diligent human daily routine", "human social life"],
+        "ground": ["eagerness, persistence, priority-giving to a task", "constant, timely effort", "shared human experience of early rising for important work"],
+        "posture": ["portrays God as extraordinarily diligent in warning them, intensifying their guilt", "emphatic/judicial stance", "prophetic rebuke"],
+        "explanation": "The idiom 'rising early and sending' metaphorically depicts God's persistence and urgency in sending prophets as if He were a human master up early to dispatch servants.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 44:5",
+    "deliberation": "Considered two expressions: (1) 'inclined not their ear' (לֹא־הִטּוּ אֶת־אׇזְנָם) as idiomatic for refusing attentive obedience, and (2) 'to turn back from their wickedness' (לָשׁוּב מֵרָעָתָם) as the standard path/turning metaphor for repentance. Both are figurative, distinct conceptualizations.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלֹא־הִטּוּ אֶת־אׇזְנָם",
+        "english_text": "they did not incline their ear",
+        "target": ["the people's refusal to heed the prophets", "audience responsiveness/obedience", "covenant behavior"],
+        "vehicle": ["tilting one's ear toward a speaker", "bodily orientation for careful listening", "human bodily action"],
+        "ground": ["attentive openness versus deliberate inattention", "physical posture as indicator of receptivity", "shared communicative behavior"],
+        "posture": ["criticizes them for willful inattention to divine warning", "rebuking stance", "prophetic accusation"],
+        "explanation": "The idiom 'to incline the ear' pictures obedience as physically leaning one's ear toward a speaker, so their failure to do so figuratively depicts stubborn refusal to heed.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָשׁוּב מֵרָעָתָם",
+        "english_text": "to turn back from their wickedness",
+        "target": ["their moral and religious conduct", "ethical/spiritual direction of life", "covenant behavior"],
+        "vehicle": ["turning back from a path or journey", "spatial movement/change of direction", "physical locomotion"],
+        "ground": ["change of course from one direction to another", "reversal and reorientation", "shared experience of walking/travel"],
+        "posture": ["frames repentance as a decisive change of direction away from evil", "hortatory/judicial stance", "prophetic theology of repentance"],
+        "explanation": "Using the common 'turn back' verb for repentance, wicked behavior is conceptualized as a wrong path from which one must reverse course.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 44:6",
+    "deliberation": "Identified two vivid images of divine anger: (1) 'my wrath and my anger were poured out' (וַתִּתַּךְ חֲמָתִי וְאַפִּי) treating anger as a liquid, and (2) 'it burned in the cities' (וַתִּבְעַר בְּעָרֵי יְהוּדָה) treating wrath as fire. Both are standard prophetic metaphors for judgment, not literal physical fluids or flames from God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַתִּתַּךְ חֲמָתִי וְאַפִּי",
+        "english_text": "so My fierce anger was poured out",
+        "target": ["YHWH's act of judgment against Judah", "divine wrath as action", "theological"],
+        "vehicle": ["a liquid being poured out", "fluid that can be tipped out in quantity", "physical/material phenomena"],
+        "ground": ["sudden, forceful, overwhelming release", "uncontainable outpouring", "shared experience of liquid being dumped out"],
+        "posture": ["emphasizes the severity and totality of judgment as an unstoppable outpouring", "judicial stance", "prophetic warning"],
+        "explanation": "God's wrath is metaphorically depicted as a liquid that is poured out, highlighting its intensity and the completeness of the judgment.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּבְעַר בְּעָרֵי יְהוּדָה וּבְחֻצ֖וֹת יְרוּשָׁלִַם",
+        "english_text": "and it blazed against the towns of Judah and the streets of Jerusalem",
+        "target": ["the effect of God's wrath on Judah's cities", "divine judgment impacting urban centers", "historical calamity"],
+        "vehicle": ["a fire blazing in cities and streets", "destructive flame", "natural destructive force"],
+        "ground": ["consuming, devastating spread; leaving ruins behind", "intense heat and destruction", "shared experience of fire's effects"],
+        "posture": ["presents judgment as a consuming fire engulfing the community", "warnings about total devastation", "prophetic rhetoric"],
+        "explanation": "Divine anger is described as a blaze burning through the cities, personifying wrath as an active, destructive fire.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 44:7",
+    "deliberation": "Looked for totalizing or idiomatic patterns. The sequence 'man and woman, child and suckling' (אִישׁ־וְאִשָּׁה עוֹלֵל וְיוֹנֵק) functions as a merism, enumerating all demographic groups to express complete annihilation. No separate metaphors or similes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אִישׁ־וְאִשָּׁה עוֹלֵל וְיוֹנֵק",
+        "english_text": "every man and woman, child and infant",
+        "target": ["the total population of Judah", "all members of the community", "covenant people"],
+        "vehicle": ["a comprehensive pair of gender and age contrasts", "meristic list of social categories", "rhetorical enumeration"],
+        "ground": ["inclusive span from male to female, from infant to older child", "communicates totality through extremes and pairs", "shared use of lists to denote 'everyone'"],
+        "posture": ["underscores that no segment of the people will escape judgment", "intensifying/judicial stance", "prophetic warning"],
+        "explanation": "By pairing male/female and child/nursing infant, the text uses merism to convey that the entire community, without exception, is threatened with being cut off.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 44:8",
+    "deliberation": "Noted two figurative elements: (1) 'the work of your hands' (מַעֲשֵׂי יְדֵיכֶם) as synecdoche/metonymy for their deeds or cultic practices, and (2) 'to be a curse and a reproach among all nations' (לִקְלָלָה וּלְחֶרְפָּה) where 'curse' and 'reproach' stand metonymically for being objects of cursing and mockery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּמַעֲשֵׂי יְדֵיכֶם",
+        "english_text": "by your deeds (lit. 'by the work of your hands')",
+        "target": ["their idolatrous and sinful actions", "human behavior", "ethical/religious practice"],
+        "vehicle": ["the physical work performed by one's hands", "manual activity", "bodily action"],
+        "ground": ["hands as primary instruments of doing", "what the hands make/do represents the whole deed", "common synecdoche for action"],
+        "posture": ["highlights that their concrete, deliberate acts provoke God", "judicial stance", "prophetic moral critique"],
+        "explanation": "Referring to 'the work of your hands' uses the hands as a synecdoche for the totality of their deeds, especially their manufactured idols and rituals.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּלְמַעַן הֱיוֹתְכֶם לִקְלָלָה וּלְחֶרְפָּה בְּכֹל גּוֹיֵ הָאָרֶץ",
+        "english_text": "so that you may become a curse and a mockery among all the nations of the earth",
+        "target": ["Judah's reputation and fate among the nations", "social standing and memory", "inter-national perception"],
+        "vehicle": ["a 'curse' and a 'reproach' as labels", "objects of cursing and ridicule", "verbal-social acts of denigration"],
+        "ground": ["those under judgment become proverbial examples used in cursing and mocking", "identity reduced to being a byword of disgrace", "shared use of names as negative examples"],
+        "posture": ["warns that their destiny will be to serve as a negative proverb among the nations", "threatening/judicial stance", "prophetic warning"],
+        "explanation": "To 'become a curse and a mockery' means they will be so notorious for disaster that their name is used metonymically in others' curses and insults.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 44:9",
+    "deliberation": "The verse recounts 'the evils' of ancestors, kings, and wives in literal historical terms, with geography ('in the land of Judah and streets of Jerusalem') also literal. No metaphorical or idiomatic expression is prominent here beyond standard moral terminology.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 44:10",
+    "deliberation": "Observed two figurative expressions: (1) 'they were not crushed/humbled' (לֹא דֻכְּאוּ) depicting contrition as being 'crushed', and (2) 'they did not walk in My Teaching and My laws' (לֹא־הָלְכוּ בְתֽוֹרָתִי) using the conventional 'walk' metaphor for one's way of life in relation to Torah.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לֹא דֻכְּאוּ",
+        "english_text": "no one has shown contrition (lit. 'they were not crushed')",
+        "target": ["their inner moral/spiritual state", "repentant humility", "ethical disposition"],
+        "vehicle": ["an object being crushed or broken", "physical pressure causing breakage", "material damage"],
+        "ground": ["contrition feels like being broken or shattered", "loss of pride and self-sufficiency", "embodied experience of being pressed down"],
+        "posture": ["laments their lack of inward brokenness over sin", "evaluative/judicial stance", "prophetic moral assessment"],
+        "explanation": "The puʿal of דכא pictures true repentance as being 'crushed', a metaphor conveying deep inner humbling that has not occurred.",
+        "confidence": 0.89
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא־הָלְכוּ בְתֽוֹרָתִי וּבְחֻקֹּתַי",
+        "english_text": "and they did not walk in My Teaching and My laws",
+        "target": ["their pattern of conduct vis-à-vis God's commands", "lifelong behavior", "covenant obedience"],
+        "vehicle": ["walking along a path", "journeying on a way", "physical movement/location"],
+        "ground": ["life as a path; conduct as the route one walks", "direction, continuity, and choice of 'way'", "shared experience of following or deviating from a path"],
+        "posture": ["frames obedience as staying on the path laid out by God", "didactic/judicial stance", "prophetic use of 'way' metaphor"],
+        "explanation": "Using 'walk in my Torah' conceptualizes their behavior as a path they should traverse but have refused, a standard ethical metaphor in Hebrew.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 44:11",
+    "deliberation": "The key idiom is 'I am setting My face against you for evil' (הִנְנִי שָׂם פָּנַי בָּכֶם לְרָעָה). This pictures divine disfavor as the orientation of God's 'face' toward them for harm, an anthropomorphic metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנְנִי שָׂם פָּנַי בָּכֶם לְרָעָה",
+        "english_text": "I am going to set My face against you for punishment",
+        "target": ["God's hostile stance toward Judah", "divine judicial intention", "theological"],
+        "vehicle": ["a person's face turned against someone", "hostile human gaze/orientation", "interpersonal body language"],
+        "ground": ["where one turns their face signals favor or hostility", "intentional focus directed toward another", "shared social cue of turning one's face against someone"],
+        "posture": ["announces God's deliberate opposition to them", "judgmental stance", "prophetic threat"],
+        "explanation": "God's 'face' oriented 'against' them metaphorically represents His resolved, hostile judicial attitude toward Judah.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 44:12",
+    "deliberation": "Found three distinct devices: (1) 'who set their faces to come to Egypt' (אֲשֶׁר־שָׂמוּ פְנֵיהֶם לָבוֹא) as an idiom for determined intent, (2) 'from small to great' (מִקָּטֹן וְעַד־גָּדוֹל) as a merism for everyone, and (3) 'they shall be for an oath, a desolation, a curse, and a reproach' (לְאָלָה לְשַׁמָּה וְלִקְלָלָה וּלְחֶרְפָּה) as metonymic language for becoming proverbial objects of cursing and horror.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֲשֶׁר־שָׂמוּ פְנֵיהֶם לָבוֹא אֶרֶץ־מִצְרַיִם",
+        "english_text": "who turned/set their faces toward the land of Egypt, to go there",
+        "target": ["their decision to emigrate to Egypt", "human intention and resolve", "historical choice"],
+        "vehicle": ["orienting one's face in a direction", "bodily facing toward a destination", "spatial orientation"],
+        "ground": ["where you face shows where you intend to go", "bodily orientation as indicator of determined intention", "shared embodied cue of 'setting one's face'"],
+        "posture": ["portrays their move to Egypt as a deliberate, resolute act", "critical/judicial stance", "prophetic evaluation of their choice"],
+        "explanation": "To 'set one's face' toward a place is an idiomatic metaphor for firm determination to go there.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִקָּטֹן וְעַד־גָּדוֹל",
+        "english_text": "great and small alike (lit. 'from small and up to great')",
+        "target": ["all individuals in the remnant group", "the entire social spectrum", "community membership"],
+        "vehicle": ["size contrast between small and great", "meristic pair of extremes", "scalar description"],
+        "ground": ["covering both extremes implies including everyone in between", "use of opposites to signal totality", "common rhetorical merism"],
+        "posture": ["stresses that no social rank will escape judgment", "intensifying/judicial stance", "prophetic universality of punishment"],
+        "explanation": "The phrase uses small/great as a merism to express that every person, regardless of status, will be affected.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהָיוּ לְאָלָה לְשַׁמָּה וְלִקְלָלָה וּלְחֶרְפָּה",
+        "english_text": "and they shall become an execration, a desolation, a curse, and a mockery",
+        "target": ["their remembered fate among other peoples", "reputation and exemplarity", "inter-national discourse"],
+        "vehicle": ["oath-curse, horror, curse, reproach as labels or bywords", "lexicon of denunciation", "verbal malediction and horror language"],
+        "ground": ["becoming the stock example invoked in oaths, horror stories, and insults", "identity reduced to a proverb of doom", "shared practice of citing notorious disasters as warnings"],
+        "posture": ["threatens that their story will serve as a negative paradigm to others", "judicial/warning stance", "prophetic rhetoric of exemplarity"],
+        "explanation": "Being 'for an oath, a desolation, a curse, and a reproach' means others will use their fate as a metonymic label in swearing, shuddering, cursing, and mocking.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 44:13",
+    "deliberation": "Checked whether 'I will punish (פָּקַדְתִּי) ... with the sword, with famine, and with pestilence' used metaphorical imagery. Here 'sword, famine, pestilence' function as the actual means of judgment, in a well-known triad, but not in a clearly figurative or personified way in this verse. Chose to treat the language as essentially literal-prophetic.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 44:14",
+    "deliberation": "The key idiom is 'who are lifting up their souls to return' (אֲשֶׁר־הֵמָּה מְנַשְּׂאִים אֶת־נַפְשָׁם לָשׁוּב), a common Hebrew metaphor for intense desire or aspiration. No other strong figures besides standard 'remnant' language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מְנַשְּׂאִים אֶת־נַפְשָׁם לָשׁוּב",
+        "english_text": "who long to return (lit. 'who are lifting up their souls to return')",
+        "target": ["their strong longing to return to Judah", "inner desire/will", "psychological state"],
+        "vehicle": ["lifting up the 'soul' (nephesh)", "raising something upward", "physical elevation"],
+        "ground": ["intense desire felt as a 'lifted-up' inner self reaching toward a goal", "upward movement as aspiration", "shared association of elevation with longing and hope"],
+        "posture": ["acknowledges their strong yearning but denies its fulfillment", "ironic/judicial stance", "prophetic correction of misplaced hope"],
+        "explanation": "The idiom 'lift up the soul' portrays their desire to return as their inner self being elevated toward that aim.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 44:15",
+    "deliberation": "Describes the speakers (men, women, all the people in Pathros) in straightforward narrative form. No metaphorical, personifying, or idiomatic expressions stand out; the cultic actions are literal.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 44:16",
+    "deliberation": "The refusal 'we will not listen to you' (אֵינֶנּוּ שֹׁמְעִים אֵלֶיךָ) is literal, though 'listen' often implies 'obey'. Here it does not rise above normal semantic extension into a distinct figure; no marked metaphor or idiom beyond that.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 44:17",
+    "deliberation": "Examined possible idioms: 'we had plenty to eat and were well-off' is literal. The phrase 'and we saw no evil' (וְרָעָה לֹא רָאִינוּ) uses 'see evil' as an idiom for experiencing misfortune, a mild metaphorical expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְרָעָה לֹא רָאִינוּ",
+        "english_text": "and we suffered no misfortune (lit. 'we did not see evil')",
+        "target": ["their experience of calamity or trouble", "life circumstances", "historical experience"],
+        "vehicle": ["seeing 'evil' (raʿah) with the eyes", "visual perception of something bad", "sensory experience"],
+        "ground": ["to experience something is like 'seeing' it", "visibility as metaphor for encounter", "shared expression 'to see trouble' meaning to undergo it"],
+        "posture": ["asserts that under the Queen of Heaven's worship they did not encounter disaster", "self-justifying stance", "counter-prophetic narrative"],
+        "explanation": "The idiom 'not see evil' uses visual perception as a metaphor for experiencing calamity, claiming they did not encounter misfortune during that period.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 44:18",
+    "deliberation": "Noted two elements: (1) 'we have lacked everything' (חָסַרְנוּ כֹל) as rhetorical overstatement/hyperbole of deprivation, and (2) 'we have been finished/consumed by the sword and by famine' (וּבַחֶרֶב וּבָרָעָב תָּמְנוּ), where 'sword' and 'famine' stand metonymically for war-related death and deprivation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "חָסַרְנוּ כֹל",
+        "english_text": "we have lacked everything",
+        "target": ["their economic and material situation", "provision and security", "life circumstances"],
+        "vehicle": ["total absence of all things", "absolute emptiness", "extreme lack"],
+        "ground": ["intensely perceived deprivation is described as lacking 'everything'", "emotional exaggeration to stress hardship", "shared rhetorical overstatement of want"],
+        "posture": ["dramatizes their hardship to defend continued idolatry", "self-justifying/complaining stance", "counter-theological argument"],
+        "explanation": "Claiming they have 'lacked everything' overstates their deprivation for rhetorical effect, functioning as hyperbole.",
+        "confidence": 0.8
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּבַחֶרֶב וּבָרָעָב תָּמְנוּ",
+        "english_text": "we have been consumed by the sword and by famine",
+        "target": ["their deaths and losses in war and scarcity", "the community's destruction", "historical suffering"],
+        "vehicle": ["the 'sword' and 'famine' as agents that consume people", "weapons and scarcity personified as killers", "impersonal forces depicted as actors"],
+        "ground": ["warfare and hunger are primary causes of death in crisis", "sword and famine encapsulate the violent and privational aspects of judgment", "common prophetic metonymy for war and siege conditions"],
+        "posture": ["interprets their suffering as connected to cessation of goddess worship, but still uses prophetic death language", "theological misreading", "debate with Jeremiah's message"],
+        "explanation": "The 'sword' stands metonymically for warfare, and 'famine' for starvation; they are personified as consuming agents that have finished them off.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 44:19",
+    "deliberation": "Their question about making cakes in the Queen of Heaven's likeness and pouring libations is cultically literal. The focus is on whether they acted with their husbands' approval. No clear metaphor, idiom, or personification appears.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 44:20",
+    "deliberation": "Narrative framing of Jeremiah's response ('Jeremiah said to all the people...') without idiomatic or figurative turns. Speech and participants are described literally.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 44:21",
+    "deliberation": "Two ideas appear, but one is strongly figurative: 'YHWH remembered and it came up on His heart' (אֹתָם זָכַר יְהוָה וַתַּעֲלֶה עַל־לִבּוֹ). The movement 'up onto the heart' is an anthropopathic metaphor for God taking something into His inner regard; it is the main figure here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֹתָם זָכַר יְהוָה וַתַּעֲלֶה עַל־לִבּוֹ",
+        "english_text": "they were remembered by GOD and brought to mind (lit. 'and it came up onto His heart')",
+        "target": ["God's internal attention to their idolatrous offerings", "divine awareness and decision-making", "theological"],
+        "vehicle": ["things rising up onto a person's heart", "inner organ as seat of thought/emotion", "human inner life"],
+        "ground": ["to consider something deeply is to have it on one’s heart", "movement 'up' to the heart signals focus and concern", "shared embodiment where heart symbolizes inner self"],
+        "posture": ["portrays their sins as coming fully into God's conscious regard, prompting judgment", "judicial stance", "prophetic explanation of judgment's cause"],
+        "explanation": "The idiom of something 'coming up onto the heart' anthropomorphically depicts God as a human whose inner self is preoccupied with remembered offenses.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 44:22",
+    "deliberation": "Detected: (1) 'YHWH could no longer bear' (לֹא־יוּכַל יְהוָה עוֹד לָשֵׂאת) as an anthropopathic metaphor for God being unable to tolerate their evil any more, and (2) 'your land became a desolate ruin and a curse' (וַתְּהִי אַרְצְכֶם לְחָרְבָּה וּלְשַׁמָּה וְלִקְלָלָה) where 'a curse' again metonymically signifies becoming a negative example in others' speech.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלֹא־יוּכַל יְהוָה עוֹד לָשֵׂאת",
+        "english_text": "When GOD could no longer bear [it]",
+        "target": ["God's tolerance threshold regarding their sins", "divine forbearance", "theological attribute"],
+        "vehicle": ["a person bearing/carrying a burden until it becomes too heavy", "load-bearing endurance", "physical strain"],
+        "ground": ["persistent evil is like an increasing weight", "eventual collapse under an unbearable load", "shared experience of 'not being able to carry more'"],
+        "posture": ["stresses the extreme, intolerable nature of their abominations", "judicial/urgent stance", "prophetic justification of judgment"],
+        "explanation": "The phrase likens God's forbearance to a person carrying a heavy burden who finally cannot carry it any longer, an anthropopathic metaphor for the end of divine patience.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַתְּהִי אַרְצְכֶם לְחָרְבָּה וּלְשַׁמָּה וְלִקְלָלָה",
+        "english_text": "your land became a desolate ruin and a curse",
+        "target": ["the status and reputation of the land of Judah", "its condition and symbolic role", "national fate"],
+        "vehicle": ["a 'curse' as a label used in imprecations", "desolation and horror as paradigmatic states", "language of ruin and malediction"],
+        "ground": ["the devastated land becomes an emblem cited in curses and horror tales", "identity collapsed into being a byword of ruin", "shared practice of invoking ruined places as warnings"],
+        "posture": ["underscores that Judah has become a proverb of disaster", "judicial/explanatory stance", "prophetic theology of exemplary judgment"],
+        "explanation": "Calling the land 'a curse' means it serves metonymically as an example invoked in the curses and fearful speech of others, not that the land literally transforms into a spoken curse.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 44:23",
+    "deliberation": "Reviewed 'this disaster has befallen you' (קָרָאת אֶתְכֶם הָרָעָה) and other phrasing; here 'evil' again means calamity. The idiom 'befall' is standard and not strongly pictorial in this context. Overall, the verse summarizes causality in relatively literal legal-theological language.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 44:24",
+    "deliberation": "A direct address ('Hear the word of YHWH') to all Judah in Egypt. 'Hear' carries its typical connotation of 'obey', but this is standard covenant idiom rather than a marked figurative expression in this verse. No distinct metaphor or personification detected.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 44:25",
+    "deliberation": "Identified 'with your mouths you spoke, and with your hands you fulfilled [it]' (וַתְּדַבֵּרְנָה בְּפִיכֶם וּבִידֵיכֶם מִלֵּאתֶם) as synecdochic and idiomatic: 'mouth' and 'hand' stand for word and deed, and 'fill with the hand' is a metaphor for carrying out what was said.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַתְּדַבֵּרְנָה בְּפִיכֶם וּבִידֵיכֶם מִלֵּאתֶם",
+        "english_text": "you spoke with your mouths and fulfilled it with your hands",
+        "target": ["their verbal vows and corresponding actions", "speech and behavior", "covenant-breaking conduct"],
+        "vehicle": ["mouth as instrument of speech; hand as instrument of action", "bodily organs standing for functions", "synecdochic body-part imagery"],
+        "ground": ["what the mouth says and the hand does represent the whole person’s commitment", "speech–deed alignment", "shared embodiment where mouth/hand typify word and work"],
+        "posture": ["indicts them for fully enacting their idolatrous vows in both word and deed", "judicial stance", "prophetic exposure of consistency in evil"],
+        "explanation": "The verse uses mouth and hand metonymically for their speech and actions, and 'you filled it with your hands' metaphorically for bringing their words to full realization through deeds.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 44:26",
+    "deliberation": "Key figurative element: 'by My great name' and 'if My name shall ever again be invoked in the mouth of any man of Judah' (שְׁמִי ... נִקְרָא ... בְּפִי כׇּל־אִישׁ יְהוּדָה). 'Name' functions metonymically for God's person and authority, and 'be called in the mouth' is idiomatic for oath invocation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בִּשְׁמִי הַגָּדוֹל ... שְׁמִי נִקְרָא ... בְּפִי כׇּל־אִישׁ יְהוּדָה",
+        "english_text": "by My great name ... that none of Judah shall ever again invoke My name, saying, 'As my Sovereign GOD lives!'",
+        "target": ["God Himself and His authority as invoked in oaths", "divine presence in Israel's speech", "theological relationship in language"],
+        "vehicle": ["God's 'name' as the object uttered in the mouth", "verbal designation representing the person", "linguistic label"],
+        "ground": ["uttering the name stands for appealing to the person and authority behind it", "name as metonym for identity", "shared human practice of using names as proxies for persons/power"],
+        "posture": ["announces a ban on invoking YHWH in oaths, marking relational severance", "judicial/exilic stance", "prophetic sign of broken covenant"],
+        "explanation": "Here 'My name' stands metonymically for God Himself and His authority; the prohibition that His name be 'called in the mouth' forbids any appeal to Him in oaths.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 44:27",
+    "deliberation": "Detected two figures: (1) 'I am watching over them for evil and not for good' (הִנְנִי שֹׁקֵד עֲלֵיהֶם לְרָעָה וְלֹא לְטוֹבָה) as a metaphor (and ironic reversal) of the typical image of God watching over for good, and (2) 'by the sword and by famine' again using 'sword' and 'famine' metonymically and with slight personification as agents of consumption.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנְנִי שֹׁקֵד עֲלֵיהֶם לְרָעָה וְלֹא לְטוֹבָה",
+        "english_text": "I will be watchful over them to their hurt, not to their benefit",
+        "target": ["God's active providential engagement with Judah in Egypt", "divine oversight", "theological governance"],
+        "vehicle": ["a watchful guardian or caretaker, but for harm", "vigilant human observer", "social role of protector/overseer"],
+        "ground": ["constant attention and supervision can be directed for good or ill", "ironic flip of expected benevolent watchcare", "shared sense of being 'watched over' by authorities"],
+        "posture": ["ironically inverts the usual promise of watchful care, announcing vigilant supervision for their ruin", "judicial/ironic stance", "prophetic subversion of comfort imagery"],
+        "explanation": "The verb 'watching over' evokes a guardian's care, but here God declares He will exercise that vigilance to ensure their harm, an ironic metaphor contrasting with earlier assurances of watchcare for good.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בַּחֶרֶב וּבָרָעָב עַד־כְּלוֹתָם",
+        "english_text": "by sword and by famine, until they cease to be",
+        "target": ["the means and process of their destruction", "judgment mechanisms", "historical calamity"],
+        "vehicle": ["'sword' and 'famine' as actors that consume people", "weapons and scarcity functioning as killers", "impersonal forces personified as executioners"],
+        "ground": ["warfare and hunger are the main causes of mass death in such crises", "sword and famine encapsulate two facets of judgment", "shared recognition of these as stock agents of disaster"],
+        "posture": ["specifies that God’s negative oversight will work through these classic agents of judgment", "judicial stance", "prophetic vocabulary of doom"],
+        "explanation": "Here the 'sword' stands metonymically for warfare, and 'famine' for hunger; both are personified as instruments that bring about their end.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 44:28",
+    "deliberation": "Observed two figures: (1) 'survivors of the sword' (פְּלִיטֵי חֶרֶב) again using 'sword' as synecdoche/metonymy for warfare, and (2) 'whose word will stand' (דְּבַר־מִי יָקוּם) using 'stand' as a metaphor for being fulfilled or proven true.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּפְלִיטֵי חֶרֶב יְשֻׁבּוּן",
+        "english_text": "Only the few who survive the sword shall return",
+        "target": ["those spared from warfare's slaughter", "remnant survivors", "human fate in conflict"],
+        "vehicle": ["the 'sword' as shorthand for battle/war", "weapon representing the whole combat scenario", "martial instrument"],
+        "ground": ["dying 'by the sword' is emblematic of wartime death", "the weapon stands for the context and process of killing", "common synecdoche in Hebrew war language"],
+        "posture": ["underscores that only a tiny remnant will outlive the violence", "judicial yet hopeful-remnant stance", "prophetic remnant theology"],
+        "explanation": "Calling them 'survivors of the sword' uses the sword metonymically and synecdochically for warfare and its lethal force.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "דְּבַר־מִי יָקוּם מִמֶּנִּי וּמֵהֶם",
+        "english_text": "whose word will be fulfilled—Mine or theirs (lit. 'whose word will stand, from Me or from them')",
+        "target": ["the competing claims about what will happen", "prophetic word versus popular word", "truth-claim about future events"],
+        "vehicle": ["a 'word' that stands or rises", "stability/uprightness of a standing object", "physical posture of standing"],
+        "ground": ["what 'stands' is firm, realized, enduring; what falls does not endure", "fulfillment is pictured as successful standing", "shared sense of standing as metaphor for validity"],
+        "posture": ["casts the issue as a contest of which word will prove enduringly true", "polemic/apologetic stance", "prophetic assertion of God's word over against human claims"],
+        "explanation": "The idiom of a 'word' that 'stands' depicts the fulfillment and enduring truth of a prediction as if it were an object that successfully remains upright.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 44:29",
+    "deliberation": "Primary figure: 'that My words will surely stand against you for evil' (כִּי קוֹם יָקוּמוּ דְבָרַי עֲלֵיכֶם לְרָעָה), again using the 'standing' metaphor for the firm realization of God's threat, now explicitly in the form of a sign.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי־קוֹם יָקוּמוּ דְבָרַי עֲלֵיכֶם לְרָעָה",
+        "english_text": "that My threats of punishment against you will be fulfilled (lit. 'surely My words will stand against you for evil')",
+        "target": ["God's announced judgment", "the prophetic pronouncements themselves", "theological speech-act"],
+        "vehicle": ["words that 'rise' and 'stand' upon someone", "upright, established objects pressing on a person", "physical stability and imposition"],
+        "ground": ["firmly standing evokes stability, reality, and effectiveness", "a word that stands over someone exerts force", "shared metaphor of standing for established fact"],
+        "posture": ["emphasizes the certainty and effective imposition of His threats", "judicial/assuring stance", "prophetic guarantee of fulfillment"],
+        "explanation": "Again God's words are portrayed as something that 'stands', picturing their threats as firmly established realities that will press upon the people.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 44:30",
+    "deliberation": "Found two idiomatic-metaphoric phrases: (1) 'into the hand of his enemies' (בְּיַד אֹיְבָיו) where 'hand' stands for power/control, and (2) 'those who seek his life' (מְבַקְשֵׁי נַפְשׁוֹ) as an idiom for those seeking to kill him, not merely to 'find' his life in a neutral sense.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּיַד אֹיְבָיו",
+        "english_text": "into the hands of his enemies",
+        "target": ["Pharaoh Hophra's political fate and subjugation", "being under enemy control", "historical power relations"],
+        "vehicle": ["the 'hand' as locus of power and control", "manual grasp over someone", "bodily metaphor for dominance"],
+        "ground": ["being in someone's hand indicates being under their power", "hand as the instrument of seizure and control", "shared embodied sense of grasping as domination"],
+        "posture": ["announces Pharaoh's defeat and subjection to his foes", "judicial/prophetic stance over nations", "theology of God's control of rulers"],
+        "explanation": "The 'hand' of enemies metonymically represents their power; to be given into their hand is to fall under their control.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "מְבַקְשֵׁי נַפְשׁוֹ",
+        "english_text": "those who seek his life",
+        "target": ["his would-be assassins or conquerors", "people intent on killing him", "political/military opponents"],
+        "vehicle": ["seeking a person's 'life' (nephesh)", "searching as if for an object to obtain", "pursuit imagery"],
+        "ground": ["actively attempting to kill someone is conceptualized as 'seeking their life'", "life as an object that can be taken by those who seek it", "shared idiom for murderous intent"],
+        "posture": ["frames his enemies as relentless pursuers aiming at his very life", "threatening/judicial stance", "prophetic depiction of violent opposition"],
+        "explanation": "The idiom 'seek his life' uses 'life' metonymically for the person’s continued existence, depicting those who aim to kill him as pursuing his life.",
+        "confidence": 0.92
+      }
+    ]
+  }
+]

@@ -1,0 +1,1111 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 18:1",
+    "deliberation": "Checked the prophetic formula for figurative content. The phrase 'the word that came to Jeremiah from YHWH' treats an abstract 'word' as an active agent that can 'come' to someone; this is a conventional personification/metonymy for divine revelation, so I counted it as one figurative instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַדָּבָר אֲשֶׁר הָיָה אֶל־יִרְמְיָהוּ מֵאֵת יְהוָה",
+        "english_text": "The word that came to Jeremiah from GOD",
+        "target": [
+          "prophetic revelation to Jeremiah",
+          "divine communication",
+          "theological/spiritual domain"
+        ],
+        "vehicle": [
+          "a 'word' that comes to someone like a messenger",
+          "personified spoken message",
+          "human communicative domain"
+        ],
+        "ground": [
+          "initiative and movement from speaker to hearer",
+          "a discrete message originating with a sender and arriving at a recipient",
+          "communication/transfer domain"
+        ],
+        "posture": [
+          "presents the prophecy as an authoritative, externally given message",
+          "underscores Jeremiah’s role as recipient rather than originator",
+          "prophetic-authoritative stance"
+        ],
+        "explanation": "The abstract 'word' is personified as an entity that 'comes' to Jeremiah and stands metonymically for the total act of divine revelation.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 18:2",
+    "deliberation": "Examined 'go down to the house of the potter' and 'I will cause you to hear my words'. At this stage the potter’s house is a literal location and the action is straightforward; the figurative potter/clay imagery is not yet applied to Israel. No clear metaphor, simile, or idiom beyond standard prophetic diction.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 18:3",
+    "deliberation": "The verse describes Jeremiah literally going down to the potter’s house and seeing him work at the wheel. Though the scene will function symbolically in context, the wording here is descriptive and concrete, without figurative turns of phrase.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 18:4",
+    "deliberation": "The spoiled vessel and the potter remaking it are literally about pottery work. The verse is part of a larger symbolic setup, but within this verse only literal pottery language is used; the figurative application to Israel appears explicitly in v.6, so I do not count a distinct figurative expression here.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 18:5",
+    "deliberation": "Same prophetic formula as v.1: 'the word of YHWH came to me.' This personifies 'word' and uses it metonymically for the whole revelatory event. I treat that standard formula as one figurative instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי לֵאמֹר",
+        "english_text": "Then the word of GOD came to me",
+        "target": [
+          "Jeremiah’s reception of a prophetic message",
+          "divine revelation event",
+          "theological/spiritual domain"
+        ],
+        "vehicle": [
+          "a 'word' that comes to someone",
+          "personified spoken utterance approaching a hearer",
+          "human speech/communication domain"
+        ],
+        "ground": [
+          "a message originates from a speaker and is received by a listener",
+          "dynamic movement from God to prophet",
+          "communication/transfer domain"
+        ],
+        "posture": [
+          "emphasizes the external, God-given origin of Jeremiah’s speech",
+          "presents Jeremiah as passive recipient of an active divine word",
+          "authoritative-prophetic stance"
+        ],
+        "explanation": "Again 'word' is treated as an active agent that can 'come' to someone, a conventional personification and metonymy for God’s revelatory action.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 18:6",
+    "deliberation": "This verse contains the central figurative comparison of the chapter: Israel as clay and YHWH as potter. There is an explicit comparative particle ('כחֹמֶר ... כֵן אַתֶּם') making this a simile. Additionally, the phrase 'in my hand' for God is an anthropomorphic metaphor for sovereign control. I treat the potter–clay analogy as one simile and 'in my hand' as a closely related but distinguishable metaphorical expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה כַחֹמֶר בְּיַד הַיּוֹצֵר כֵּן־אַתֶּם בְּיָדִי בֵּית יִשְׂרָאֵל",
+        "english_text": "Just like clay in the hands of the potter, so are you in My hands, O House of Israel",
+        "target": [
+          "the House of Israel under God’s sovereignty",
+          "a covenant people subject to divine shaping and judgment",
+          "social/theological domain"
+        ],
+        "vehicle": [
+          "clay in the potter’s hand",
+          "malleable material shaped by an artisan",
+          "craft/artisanal domain"
+        ],
+        "ground": [
+          "complete malleability and dependence on the shaper’s intentions",
+          "ability to be remade, reshaped, or discarded at the shaper’s will",
+          "control/form-giving domain"
+        ],
+        "posture": [
+          "asserts God’s absolute right and power to redefine Israel’s destiny",
+          "warns Israel not to presume on its current form or status",
+          "admonitory-sovereign stance"
+        ],
+        "explanation": "Israel’s historical and moral destiny is compared explicitly to a lump of clay entirely at a potter’s disposal, stressing God’s freedom to reshape or discard.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּיָדִי",
+        "english_text": "in My hands",
+        "target": [
+          "God’s relation of control over Israel",
+          "divine sovereignty and power",
+          "theological/power domain"
+        ],
+        "vehicle": [
+          "a hand grasping or holding something",
+          "instrument of control and manipulation",
+          "bodily/agency domain"
+        ],
+        "ground": [
+          "what is in the hand is subject to the holder’s will and protection or harm",
+          "imagery of grasping, directing, and possibly crushing",
+          "control/agency domain"
+        ],
+        "posture": [
+          "stresses intimate, direct control rather than distant oversight",
+          "presents God as an agent actively handling Israel’s fate",
+          "immediate, hands-on stance"
+        ],
+        "explanation": "God’s ‘hand’ here is an anthropomorphic metaphor for His effective power and control over Israel’s fate, tied to but distinguishable from the potter image.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 18:7",
+    "deliberation": "The verse speaks of a nation/kingdom being 'uprooted' and 'pulled down.' These verbs come from plant and construction domains, applied to polities, forming two related metaphors for judgment. I treat 'uproot' and 'pull down' as distinct metaphoric vehicles; 'destroy' is more abstract and not clearly image-based.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־גּוֹי וְעַל־מַמְלָכָה לִנְתּוֹשׁ",
+        "english_text": "that a nation or a kingdom shall be uprooted",
+        "target": [
+          "the termination of a nation or kingdom",
+          "political downfall and removal",
+          "socio-political domain"
+        ],
+        "vehicle": [
+          "uprooting a plant",
+          "violent removal of a rooted organism from the soil",
+          "agricultural domain"
+        ],
+        "ground": [
+          "tearing something out of its place so it can no longer live or grow there",
+          "removal from one’s land and life-supporting context",
+          "displacement/destruction domain"
+        ],
+        "posture": [
+          "presents judgment as radical and life-ending, not mere pruning",
+          "emphasizes the completeness of the nation’s removal",
+          "severe-judgment stance"
+        ],
+        "explanation": "A nation is depicted as a plant that God can yank from its soil, a metaphor for violent, root-level judgment and exile.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלִנְתוֹץ",
+        "english_text": "and pulled down",
+        "target": [
+          "the dismantling of a nation/kingdom",
+          "overthrow of a political structure",
+          "socio-political domain"
+        ],
+        "vehicle": [
+          "demolishing a building",
+          "breaking down constructed walls or structures",
+          "architectural/demolition domain"
+        ],
+        "ground": [
+          "eliminating a structure by breaking it apart piece by piece",
+          "from stable, upright to rubble and non-functional",
+          "ruin/destruction domain"
+        ],
+        "posture": [
+          "views the nation as a constructed edifice that can be demolished",
+          "underlines the fragility of human political structures before God",
+          "warning-judgment stance"
+        ],
+        "explanation": "A nation is portrayed as a building God can tear down, highlighting the vulnerability of its institutional structures to divine action.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 18:8",
+    "deliberation": "Looked for spatial or bodily metaphors. The key phrase is 'the nation turns back from its evil,' using the common 'turn' verb (שׁוּב) for repentance. This is a movement metaphor—changing moral orientation expressed as physically turning away.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשָׁב הַגּוֹי הַהוּא מֵרָעָתוֹ",
+        "english_text": "but if that nation ... turns back from its wickedness",
+        "target": [
+          "moral and behavioral change of a nation",
+          "repentance and reform",
+          "ethical/spiritual domain"
+        ],
+        "vehicle": [
+          "physically turning back from a direction",
+          "reversal of travel or orientation",
+          "spatial/motion domain"
+        ],
+        "ground": [
+          "changing one’s direction implies leaving a former path and heading elsewhere",
+          "reversal and retreat from a previously chosen course",
+          "course-correction domain"
+        ],
+        "posture": [
+          "invites concrete imagination of repentance as an about-face",
+          "stresses that change is possible and observable, like a traveler turning around",
+          "pastoral-appeal stance"
+        ],
+        "explanation": "Repentance is depicted through the spatial metaphor of turning back, a common idiomatic use of שׁוּב in biblical Hebrew.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 18:9",
+    "deliberation": "Here God speaks of decreeing that a nation be 'built' and 'planted'. These verbs are applied metaphorically to a political entity, drawing on construction and agricultural imagery. I treat them as two distinct but parallel metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־גּוֹי וְעַל־מַמְלָכָה לִבְנוֹת",
+        "english_text": "that a nation or a kingdom shall be built",
+        "target": [
+          "the establishment and strengthening of a nation",
+          "political formation and stability",
+          "socio-political domain"
+        ],
+        "vehicle": [
+          "constructing a building",
+          "erecting and consolidating a structure",
+          "architectural/construction domain"
+        ],
+        "ground": [
+          "stepwise assembling of parts into a stable, enduring structure",
+          "from foundation to completion, ensuring solidity",
+          "formation/stability domain"
+        ],
+        "posture": [
+          "presents God as an architect of national existence",
+          "underscores the planned and purposeful aspect of His blessing",
+          "constructive-sovereign stance"
+        ],
+        "explanation": "A nation’s favorable destiny is portrayed as God ‘building’ it, like a planned structure erected securely.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלִנְטוֹעַ",
+        "english_text": "and planted",
+        "target": [
+          "the rooting and flourishing of a nation",
+          "national stability and growth",
+          "socio-political domain"
+        ],
+        "vehicle": [
+          "planting a tree or vine",
+          "placing a living organism where it can take root and grow",
+          "agricultural/horticultural domain"
+        ],
+        "ground": [
+          "placement in fertile soil leads to rooting, growth, and fruitfulness",
+          "long-term flourishing depends on initial planting and ongoing conditions",
+          "growth/prosperity domain"
+        ],
+        "posture": [
+          "signals that national blessing is organic and sustained, not momentary",
+          "emphasizes God’s role in giving deep roots and long-term stability",
+          "nurturing-sovereign stance"
+        ],
+        "explanation": "God ‘plants’ a nation like a tree, suggesting deep roots, stability, and long-term flourishing under His care.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 18:10",
+    "deliberation": "Searched for idiomatic and anthropomorphic language. Two expressions stand out: doing 'the evil in My eyes' (בְּעֵינַי), which uses God’s ‘eyes’ idiomatically for His evaluation, and 'not listening to My voice' as an idiom for disobedience. I treat each as a figurative expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעָשָׂה הָרַע בְּעֵינַי",
+        "english_text": "but if it does what is displeasing in My eyes",
+        "target": [
+          "God’s moral evaluation of a nation’s behavior",
+          "divine judgment of good and evil",
+          "ethical/theological domain"
+        ],
+        "vehicle": [
+          "what appears in someone’s eyes",
+          "visual perception by bodily organs",
+          "sensory-perception domain"
+        ],
+        "ground": [
+          "what one sees (in one’s eyes) is what one perceives and judges",
+          "eyes as instruments of assessment and approval/disapproval",
+          "evaluation/perception domain"
+        ],
+        "posture": [
+          "anthropomorphically portrays God as an observer whose gaze confers approval or disapproval",
+          "emphasizes personal, engaged evaluation rather than abstract decree",
+          "relational-judging stance"
+        ],
+        "explanation": "The idiom 'in My eyes' uses bodily imagery of sight to express God’s evaluative judgment of human actions.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְבִלְתִּי שְׁמֹעַ בְּקוֹלִי",
+        "english_text": "and does not obey Me (lit. 'so as not to listen to My voice')",
+        "target": [
+          "obedience or disobedience to God’s commands",
+          "covenantal response to revelation",
+          "ethical/spiritual domain"
+        ],
+        "vehicle": [
+          "listening to someone’s voice",
+          "auditory reception of spoken words",
+          "speech/hearing domain"
+        ],
+        "ground": [
+          "to listen carefully to someone is to heed and follow their instructions",
+          "hearing as a precondition and sign of obedience",
+          "responsiveness/attention domain"
+        ],
+        "posture": [
+          "frames obedience as attentive listening to a personal speaker",
+          "stresses relational responsiveness rather than mere rule-keeping",
+          "covenantal-relational stance"
+        ],
+        "explanation": "The idiom 'listen to My voice' uses the physical act of hearing as a metaphor and metonymy for heeding and obeying God.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 18:11",
+    "deliberation": "Looked for continuity with potter imagery and for path/way metaphors. (1) 'I am forming evil against you' reuses the potter-verb to depict God shaping disaster. (2) 'Turn back each from his evil way and make good your ways and your deeds' employs the common path metaphor for moral conduct plus the motion verb 'turn back' for repentance; I treat that cluster as one extended path metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה אָנֹכִי יוֹצֵר עֲלֵיכֶם רָעָה",
+        "english_text": "I am devising (lit. forming) disaster for you",
+        "target": [
+          "the impending calamity God plans for Judah",
+          "divinely orchestrated judgment",
+          "historical/theological domain"
+        ],
+        "vehicle": [
+          "forming or shaping something as a potter",
+          "deliberate craftsmanship producing a specific object",
+          "artisanal/formation domain"
+        ],
+        "ground": [
+          "a craftsman intentionally shapes raw material into a desired form",
+          "disaster is portrayed as something molded and fashioned by God’s will",
+          "intentional-design domain"
+        ],
+        "posture": [
+          "continues the potter imagery to stress that even disaster is not random but crafted",
+          "underscores deliberateness and justice in judgment",
+          "sovereign-judicial stance"
+        ],
+        "explanation": "God uses the potter verb 'form' to describe how He is shaping calamity, extending the earlier potter metaphor now to the judgment itself.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שׁוּבוּ נָא אִישׁ מִדַּרְכּוֹ הָרָעָה וְהֵיטִיבוּ דַרְכֵיכֶם וּמַעַלְלֵיכֶם",
+        "english_text": "Turn back, each of you, from your wicked ways, and mend your ways and your actions",
+        "target": [
+          "the people’s patterns of life and behavior",
+          "moral conduct and habitual lifestyle",
+          "ethical/social domain"
+        ],
+        "vehicle": [
+          "a 'way' or road on which one walks, from which one can turn back or make straight",
+          "travel along paths and byways",
+          "spatial/journey domain"
+        ],
+        "ground": [
+          "a chosen path represents a chosen course of life and action",
+          "to turn back from a way is to abandon a course; to 'make good' a way is to improve conduct",
+          "life-as-journey domain"
+        ],
+        "posture": [
+          "urges repentance as a change of direction on life’s road",
+          "presents obedience as walking on a corrected, improved path",
+          "exhortative-reform stance"
+        ],
+        "explanation": "The people’s behavior is conceptualized as a 'way' they walk; repentance is ‘turning back’ from an evil road and ‘making good’ their path.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 18:12",
+    "deliberation": "The people say they will 'go after our own plans' and each will act by the 'stubbornness of his evil heart.' The verb 'go after' extends the path metaphor for following counsel or plans. The phrase is an idiom for being led by one’s own obstinate inner inclination; I count this as a single path-following metaphor/idiom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־אַחֲרֵי מַחְשְׁבוֹתֵינוּ נֵלֵךְ וְאִישׁ שְׁרִרוּת לִבּוֹ־הָרָע נַעֲשֶׂה",
+        "english_text": "We will keep on following our own plans; each of us will act in the willfulness of our own evil heart",
+        "target": [
+          "the people’s self-willed persistence in sin",
+          "stubborn adherence to one’s own counsel and desires",
+          "ethical/psychological domain"
+        ],
+        "vehicle": [
+          "going after a path or guide",
+          "walking behind and following a route or leader",
+          "journey/followership domain"
+        ],
+        "ground": [
+          "following one’s plans as if they were a path or leader to walk after",
+          "stubborn heart as an internal 'guide' that one chooses to obey",
+          "guidance/loyalty domain"
+        ],
+        "posture": [
+          "ironically highlights their self-chosen guidance system as a perverse road they insist on following",
+          "shows defiance by picturing them marching after their own plans",
+          "defiant/self-willed stance (reported speech)"
+        ],
+        "explanation": "Their decision to 'go after our own plans' uses journey imagery for following guidance, depicting their stubborn hearts as the route they refuse to leave.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 18:13",
+    "deliberation": "Main figurative element is 'Maiden (Virgin) Israel' for the nation, a personification of Israel as a young woman. The rhetorical question about unprecedented deeds heightens shock but is not itself an image; I count one figurative instance, the personified title.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּתוּלַת יִשְׂרָאֵל",
+        "english_text": "Maiden Israel",
+        "target": [
+          "the nation Israel as a collective entity",
+          "covenant community of Israel",
+          "social/theological domain"
+        ],
+        "vehicle": [
+          "a maiden/virgin daughter",
+          "young unmarried woman of honor and vulnerability",
+          "family/social-status domain"
+        ],
+        "ground": [
+          "ideas of purity, vulnerability, and family relationship",
+          "a daughter who has violated expectations of chastity/loyalty",
+          "honor/shame and relational domain"
+        ],
+        "posture": [
+          "presents Israel as one who ought to have remained pure and loyal but has performed 'a most horrible thing'",
+          "heightens the sense of betrayal and disgrace",
+          "indignant-lament stance"
+        ],
+        "explanation": "Israel is personified as a virgin daughter whose shocking behavior makes her unfaithfulness particularly disgraceful.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 18:14",
+    "deliberation": "The verse uses nature imagery in rhetorical questions: snow of Lebanon 'forsaking' the rock, and waters being 'torn away'. The first treats snow as if it could consciously abandon its rocky source—personification serving an implied comparison with Israel’s unnatural abandonment of God. I count that as one figurative instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הֲיַעֲזֹב מִצּוּר שָׂדַי שֶׁלֶג לְבָנוֹן",
+        "english_text": "Does one forsake Lebanon snow from the mountainous rocks?",
+        "target": [
+          "Israel’s abandonment of its God",
+          "covenantal unfaithfulness",
+          "theological/ethical domain"
+        ],
+        "vehicle": [
+          "snow of Lebanon leaving the rock",
+          "a natural element forsaking its proper place/source",
+          "nature/environment domain"
+        ],
+        "ground": [
+          "it is unthinkable for snow naturally attached to high rocks simply to 'forsake' them",
+          "connotes stability and constancy versus abnormal desertion",
+          "normality/deviation domain"
+        ],
+        "posture": [
+          "presents Israel’s apostasy as a violation of what should be as stable as snow on a mountain",
+          "invites incredulity at their behavior by comparison with nature’s constancy",
+          "rhetorical-reproach stance"
+        ],
+        "explanation": "Snow is personified as 'forsaking' the rock, an image implying that Israel’s turning from God is more unnatural than such an impossible event in nature.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 18:15",
+    "deliberation": "The dominant imagery is the 'ways,' 'ancient paths,' 'byways,' and 'road not built up'—a well-known metaphor for moral conduct and tradition as paths one walks on. 'They are made to stumble in their ways' extends the same path metaphor. I treat the whole cluster as one extended path-of-life metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיַּכְשִׁלֻם בְּדַרְכֵיהֶם שְׁבִילֵי עוֹלָם לָלֶכֶת נְתִיבוֹת דֶּרֶךְ לֹא סְלוּלָה",
+        "english_text": "They are made to stumble in their ways—the ancient paths—and to walk instead on byways, on a road not built up",
+        "target": [
+          "Israel’s moral and religious conduct",
+          "lifestyle patterns and faithfulness/unfaithfulness",
+          "ethical/religious domain"
+        ],
+        "vehicle": [
+          "paths, roads, byways, stumbling while walking",
+          "travel along prepared or unprepared ways",
+          "journey/roadway domain"
+        ],
+        "ground": [
+          "walking on a well-trodden ancient path suggests secure, time-tested practices",
+          "straying onto unbuilt, rough byways and stumbling suggests danger, error, and misguidance",
+          "guidance/safety vs. wandering/peril domain"
+        ],
+        "posture": [
+          "laments that the people have left reliable, longstanding ways of faithfulness",
+          "depicts their idolatry as a misstep onto hazardous, illegitimate roads",
+          "warning-lament stance"
+        ],
+        "explanation": "Israel’s faithfulness is pictured as walking ancient, well-made paths, while their idolatry is walking on rough byways where they stumble—a comprehensive path-of-life metaphor.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 18:16",
+    "deliberation": "The land becoming 'a desolation, an object of hissing forever' and passersby 'shaking the head' use bodily gestures as metonyms for derision and horror. I treat this as one metonymic depiction of public scorn and astonishment focused on the land.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לָשׂוּם אַרְצָם לְשַׁמָּה שְׁרִיקוֹת עוֹלָם כׇּל עוֹבֵר עָלֶיהָ יִשֹּׁם וְיָנִיד בְּרֹאשׁוֹ",
+        "english_text": "So their land will become a desolation, an object of hissing for all time. Every passerby will be appalled and will shake their head",
+        "target": [
+          "the reputation and perceived horror of the devastated land",
+          "public reaction to Judah’s judgment",
+          "social-perceptual domain"
+        ],
+        "vehicle": [
+          "hissing and head-shaking gestures",
+          "bodily actions expressing derision and astonishment",
+          "nonverbal-communication domain"
+        ],
+        "ground": [
+          "hissing and head-shaking are outward signs of scorn, shock, or disbelief",
+          "the land becomes a spectacle that elicits these reactions from onlookers",
+          "sign/symbol domain"
+        ],
+        "posture": [
+          "depicts the judgment as so severe that the land becomes a proverbial object of scorn and amazement",
+          "the word 'forever' heightens the sense of lasting disgrace",
+          "warning of enduring shame stance"
+        ],
+        "explanation": "Hissing and head-shaking stand metonymically for the derision and horror others will feel when they see the desolated land; 'forever' adds a hyperbolic sense of permanence.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 18:17",
+    "deliberation": "Two main figures: (1) 'Like the east wind, I will scatter them'—an explicit simile using a destructive wind as vehicle; (2) 'I will show them the back and not the face'—anthropomorphic metaphor for rejection vs favor. I treat these as two distinct figurative instances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּרוּחַ־קָדִים אֲפִיצֵם לִפְנֵי אוֹיֵב",
+        "english_text": "Like the east wind, I will scatter them before the enemy",
+        "target": [
+          "the dispersion of Judah among enemies",
+          "national scattering and defeat",
+          "historical/political domain"
+        ],
+        "vehicle": [
+          "an east wind scattering things",
+          "hot, destructive desert wind blowing things away",
+          "meteorological/nature domain"
+        ],
+        "ground": [
+          "an east wind violently blows and disperses what is light and unsecured",
+          "suggests forceful, uncontrollable scattering",
+          "destructive-force domain"
+        ],
+        "posture": [
+          "portrays God’s judgment as harsh and uncontrollable as a desert windstorm",
+          "emphasizes power and inevitability of the coming dispersion",
+          "threat-judgment stance"
+        ],
+        "explanation": "God’s act of scattering the people in exile is compared to the destructive east wind that drives things before it.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֹרֶף וְלֹא־פָנִים אֶרְאֵם בְּיוֹם אֵידָם",
+        "english_text": "I will look upon their back, not their face, in their day of disaster",
+        "target": [
+          "God’s relational stance toward His people in judgment",
+          "withdrawal of favor and attention",
+          "theological/relational domain"
+        ],
+        "vehicle": [
+          "turning one’s back vs. showing one’s face",
+          "physical orientation of a person toward or away from another",
+          "bodily/relational domain"
+        ],
+        "ground": [
+          "facing someone signifies favor, engagement, and readiness to help",
+          "turning one’s back signifies rejection, refusal to hear, or abandonment",
+          "presence/absence and favor/rejection domain"
+        ],
+        "posture": [
+          "underscores that God will refuse to regard or aid them in their calamity",
+          "intensifies the sense of relational rupture, not just circumstantial misfortune",
+          "severe-withdrawal stance"
+        ],
+        "explanation": "God’s favor is depicted through the image of His 'face'; here, He will show them only His 'back,' a metaphor for rejection and non-response.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 18:18",
+    "deliberation": "The plotting opponents say, 'let us strike him with the tongue'—a non-literal 'striking' by speech, metaphor/idiom for slander or hostile talk. The rest is mostly literal about priest, wise, prophet. I count one figurative expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְכוּ וְנַכֵּהוּ בַלָּשׁוֹן",
+        "english_text": "Come, let us strike him with the tongue",
+        "target": [
+          "verbal persecution and discrediting of Jeremiah",
+          "slander and hostile speech",
+          "social/communicative domain"
+        ],
+        "vehicle": [
+          "striking someone with a weapon",
+          "physical blow inflicting harm",
+          "violence/warfare domain"
+        ],
+        "ground": [
+          "verbal attacks can wound reputation and well-being like physical blows wound the body",
+          "the tongue is likened to a weapon inflicting injury",
+          "harm/attack domain"
+        ],
+        "posture": [
+          "reveals the malice of Jeremiah’s opponents by weaponizing speech in the imagery",
+          "frames their plan as an assault, not mere disagreement",
+          "hostile-conspiratorial stance (quoted speech)"
+        ],
+        "explanation": "Speech is depicted as a weapon that 'strikes' Jeremiah—an idiomatic metaphor for slanderous or hostile talk.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 18:19",
+    "deliberation": "Jeremiah asks God to 'listen to me' and 'hear the voice of my adversaries.' These are literal uses of hearing and 'voice' for speech, without an obvious figurative extension beyond standard communication language. No distinct metaphor or idiom beyond normal prayer address.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 18:20",
+    "deliberation": "Two figures appear: (1) 'they have dug a pit for my life'—a trap metaphor for plotting his harm; (2) 'to turn Your wrath back from them'—spatial metaphor for redirecting divine anger, an idiom in Hebrew. I treat these as two distinct expressions from different domains (trapping vs. spatial redirection of anger).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־כָר֥וּ שׁוּחָ֖ה לְנַפְשִׁי",
+        "english_text": "Yet they have dug a pit for me (lit. 'for my life')",
+        "target": [
+          "plots and schemes to destroy Jeremiah",
+          "hidden dangers laid for his downfall",
+          "social/conflict domain"
+        ],
+        "vehicle": [
+          "digging a pit as a trap",
+          "a concealed hole into which a victim falls",
+          "hunting/warfare domain"
+        ],
+        "ground": [
+          "a pit is prepared in advance and concealed, meant to cause someone’s fall",
+          "the victim is unaware until it is too late",
+          "ambush/concealed-danger domain"
+        ],
+        "posture": [
+          "portrays Jeremiah’s enemies as treacherous hunters laying snares",
+          "evokes the injustice of repaying good with hidden harm",
+          "complaint-lament stance"
+        ],
+        "explanation": "Their secret schemes are likened to a pit dug for Jeremiah to fall into, a standard metaphor for treacherous plotting.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְהָשִׁיב אֶת־חֲמָתְךָ מֵהֶם",
+        "english_text": "to turn Your anger away from them",
+        "target": [
+          "the cessation or mitigation of divine judgment",
+          "God’s change from wrath to forbearance",
+          "theological/judicial domain"
+        ],
+        "vehicle": [
+          "turning something away spatially",
+          "redirecting or removing an approaching force",
+          "spatial/motion domain"
+        ],
+        "ground": [
+          "turning away an approaching danger keeps it from reaching its target",
+          "anger is conceptualized as something that advances toward people and can be diverted",
+          "danger-avoidance domain"
+        ],
+        "posture": [
+          "frames intercession as intervening to divert the course of wrath",
+          "presents divine anger in concrete, almost physical terms to stress its threat",
+          "intercessory-mediator stance"
+        ],
+        "explanation": "Divine anger is depicted as something that moves toward people and can be 'turned back' or redirected through intercession.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 18:21",
+    "deliberation": "Jeremiah’s imprecations use disaster terms in agentive ways. 'Give their children over to famine' personifies famine as a devouring agent; 'mow them down by the sword' (Heb. deliver them by the hand of the sword) similarly personifies the sword as an agent, a metonymy for violent enemies/war. I treat famine and sword as two related but distinct figurative agents.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "תֵּן אֶת־בְּנֵיהֶם לָרָעָב",
+        "english_text": "Oh, give their children over to famine",
+        "target": [
+          "the children’s suffering and death through deprivation",
+          "judgment on the next generation",
+          "social/judicial domain"
+        ],
+        "vehicle": [
+          "famine as a recipient or devourer",
+          "an almost personified force that takes possession of victims",
+          "disaster/personified-calamity domain"
+        ],
+        "ground": [
+          "to 'give over' to someone/thing suggests placing under their power",
+          "famine is treated as an active agent that seizes and consumes lives",
+          "power/subjection domain"
+        ],
+        "posture": [
+          "heightens the severity of the curse by imagining famine as a voracious captor",
+          "emphasizes total helplessness of the victims before this force",
+          "intense-imprecatory stance"
+        ],
+        "explanation": "Famine is personified as an agent to whom children can be handed over, intensifying the image of judgment and suffering.",
+        "confidence": 0.87
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהַגִּרֵם עַל־יְדֵי־חֶרֶב",
+        "english_text": "and mow them down by the sword (lit. 'cause them to be hurled by the hand of the sword')",
+        "target": [
+          "the violent killing of the people",
+          "death in war and massacre",
+          "conflict/judgment domain"
+        ],
+        "vehicle": [
+          "the 'hand of the sword' acting on people",
+          "a weapon treated as an agent with a hand, or as shorthand for armed attackers",
+          "warfare/instrument-as-agent domain"
+        ],
+        "ground": [
+          "the sword symbolizes the agency of hostile armies",
+          "saying the 'hand of the sword' personifies the instrument as if it itself strikes and hurls victims down",
+          "instrument/agent conflation domain"
+        ],
+        "posture": [
+          "intensifies the brutality of the desired judgment",
+          "depicts the people as helpless before the relentless action of the sword",
+          "vengeful-imprecatory stance"
+        ],
+        "explanation": "The sword, via the phrase 'hand of the sword', is personified and used metonymically for the killing power of the enemies, creating a vivid image of violent slaughter.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 18:22",
+    "deliberation": "Again trap imagery: 'they have dug a pit to trap me' and 'have laid snares for my feet.' Pit and snares are two distinct vehicles (excavated hole vs. trapping devices) expressing their plots. I count them as two figurative instances from the hunting/trapping domain.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־כָר֤וּ שׁוּחָה֙ לְלׇכְדֵנִי",
+        "english_text": "For they have dug a pit to trap me",
+        "target": [
+          "secret plans to capture or destroy Jeremiah",
+          "plots against his life",
+          "social/conflict domain"
+        ],
+        "vehicle": [
+          "digging a pit to catch prey",
+          "concealed hole as a trap",
+          "hunting/ambush domain"
+        ],
+        "ground": [
+          "a dug pit is hidden until the victim falls in; it is premeditated and concealed",
+          "captures the unsuspecting with no apparent escape",
+          "treachery/hidden-danger domain"
+        ],
+        "posture": [
+          "portrays opponents as deceitful trappers rather than open opponents",
+          "evokes the unfairness and danger of their schemes",
+          "complaint-imprecatory stance"
+        ],
+        "explanation": "Their hidden plots are likened to digging a pit designed to catch and hold Jeremiah—a standard trap metaphor.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּפַחִים טָמְנוּ לְרַגְלָי",
+        "english_text": "and laid snares for my feet",
+        "target": [
+          "attempts to cause Jeremiah’s downfall",
+          "plots to trip him up or ensnare him",
+          "social/conflict domain"
+        ],
+        "vehicle": [
+          "snares laid for an animal’s feet",
+          "traps that catch by entangling the feet",
+          "hunting/trapping domain"
+        ],
+        "ground": [
+          "snares are set along a path, unseen until they catch the foot",
+          "once caught, the victim is immobilized and vulnerable",
+          "entrapment/immobilization domain"
+        ],
+        "posture": [
+          "emphasizes how his enemies are trying to trip him in his course",
+          "the focus on 'feet' connects with imagery of walking and life’s path",
+          "vulnerable-complaint stance"
+        ],
+        "explanation": "Their schemes are compared to snares hidden along a path to catch his feet, an idiomatic metaphor for causing someone’s downfall.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 18:23",
+    "deliberation": "The main imagery is 'let them be made to stumble before You'—stumbling as a metaphor for failure/judgment in God’s presence. Other phrases ('do not blot out their guilt') also have metaphorical color, but I focus on the clear bodily-motion image of stumbling.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיִהְיוּ מֻכְשָׁלִים לְפָנֶיךָ",
+        "english_text": "Let them be made to stumble before You",
+        "target": [
+          "their downfall and failure under divine judgment",
+          "being brought low and ruined before God",
+          "ethical/judicial domain"
+        ],
+        "vehicle": [
+          "stumbling and falling while walking",
+          "loss of footing leading to a fall",
+          "bodily-motion domain"
+        ],
+        "ground": [
+          "stumbling suggests weakness, misstep, and collapse",
+          "occurring 'before You' highlights exposure and humiliation in God’s presence",
+          "failure/exposure domain"
+        ],
+        "posture": [
+          "intensifies the desired judgment by picturing their collapse before God Himself",
+          "expresses a wish that their secret plots be publicly undone",
+          "imprecatory-justice stance"
+        ],
+        "explanation": "Their judgment is depicted as a stumbling fall in God’s presence, an idiomatic metaphor for ruin and disgrace.",
+        "confidence": 0.93
+      }
+    ]
+  }
+]

@@ -1,0 +1,383 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 28:1",
+    "deliberation": "Checked for any metaphors, idioms, or metonymies (e.g., לְעֵינֵי 'before the eyes of'). The verse is a purely historical introduction describing time, place, speakers, and audience. 'Before the eyes of' matches the literal situation (they literally see and hear), so it functions straightforwardly, not as a marked figurative device here.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 28:2",
+    "deliberation": "The key phrase is שָׁבַרְתִּי אֶת־עֹל מֶלֶךְ בָּבֶל 'I have broken the yoke of the king of Babylon.' This is not about a literal animal yoke but about political domination. It is a conventional but still live metaphor of subjugation as wearing a yoke that can be broken.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "שָׁבַרְתִּי אֶת־עֹל מֶלֶךְ בָּבֶל",
+        "english_text": "I hereby break the yoke of the king of Babylon",
+        "target": [
+          "Judah’s (and allied nations’) political subjugation to the king of Babylon",
+          "national-political condition",
+          "socio-political"
+        ],
+        "vehicle": [
+          "a yoke placed on an animal’s neck for forced labor",
+          "implement of burden and control",
+          "agrarian"
+        ],
+        "ground": [
+          "the experience of heavy, imposed labor and lack of freedom under a master",
+          "burdensome, constraining domination",
+          "conceptual"
+        ],
+        "posture": [
+          "Hananiah’s confident promise that this domination is (supposedly) already broken",
+          "optimistic-prophetic stance",
+          "discourse"
+        ],
+        "explanation": "Hananiah depicts Babylonian rule as a yoke used to control an animal; breaking it symbolizes liberation from oppressive foreign rule.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 28:3",
+    "deliberation": "Considered whether בְּע֣וֹד שְׁנָתַיִם יָמִים 'in two years of days' is an idiom and whether 'House of YHWH' is metonymic. The time phrase is a standard temporal expression, and 'House of YHWH' functions as the literal cultic building. No marked figurative language is used; the verse promises literal restoration of temple vessels.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 28:4",
+    "deliberation": "Most of the verse is a literal promise of return of king and exiles. The clause כִּי אֶשְׁבֹּר אֶת־עֹל מֶלֶךְ בָּבֶל repeats the 'yoke' metaphor from v.2, again describing political subjugation as a yoke to be broken.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּ֣י אֶשְׁבֹּ֔ר אֶת־עֹ֖ל מֶ֥לֶךְ בָּבֶל",
+        "english_text": "for I will break the yoke of the king of Babylon",
+        "target": [
+          "Babylon’s ongoing control over Judah and the exiles",
+          "imperial domination",
+          "socio-political"
+        ],
+        "vehicle": [
+          "a yoke restraining and directing an animal",
+          "instrument of forced service",
+          "agrarian"
+        ],
+        "ground": [
+          "burden, constraint, and enforced service imposed by a stronger power",
+          "oppressive subjection",
+          "conceptual"
+        ],
+        "posture": [
+          "Hananiah’s portrayal of coming liberation as the shattering of a device of oppression",
+          "hopeful-prophetic stance",
+          "discourse"
+        ],
+        "explanation": "Again, Babylonian rule is conceptualized as a yoke; breaking it figuratively describes an escape from foreign domination.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 28:5",
+    "deliberation": "Purely narrative: Jeremiah responds in the presence of priests and people. No metaphors, similes, or idioms beyond straightforward description.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 28:6",
+    "deliberation": "Looked at אָמֵן (liturgical assent) and especially at יָקֵם יְהוָה אֶת־דְּבָרֶיךָ 'may YHWH establish your words.' Here 'establish' (make stand) is used of spoken words, picturing them as something that can be set up firmly. This is a conventional but still figurative way of speaking about fulfillment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "יָקֵ֤ם יְהֹוָה֙ אֶת־דְּבָרֶ֔יךָ",
+        "english_text": "May GOD fulfill (establish) what you have prophesied",
+        "target": [
+          "the actual fulfillment of Hananiah’s prophetic promises",
+          "realization of prophecy",
+          "theological-historical"
+        ],
+        "vehicle": [
+          "erecting or making something stand firmly in place",
+          "act of stabilizing/setting up a structure",
+          "structural/architectural"
+        ],
+        "ground": [
+          "firmness, reliability, and visible, enduring reality",
+          "stability and confirmation",
+          "conceptual"
+        ],
+        "posture": [
+          "Jeremiah’s cautious wish that God might confirm Hananiah’s words, tinged with irony in context",
+          "qualified/ironic-prophetic stance",
+          "discourse"
+        ],
+        "explanation": "Jeremiah pictures prophetic words as something that can be made to stand firmly, a metaphor for their being solidly fulfilled in history.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 28:7",
+    "deliberation": "Expressions like 'in your ears' and 'in the ears of all the people' describe literal hearing of spoken words. The language is direct and not functioning figuratively beyond normal physical description.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 28:8",
+    "deliberation": "Surveyed terms like מִן־הָעוֹלָם 'from of old' for hyperbole or idiom. Here it is a standard temporal marker ('from long ago'), and the rest of the verse lists literal prophetic themes (war, disaster, pestilence) without figurative turns. No marked metaphors or other devices.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 28:9",
+    "deliberation": "The key phrase is בְּבֹא דְּבַר הַנָּבִיא 'when the word of the prophet comes.' A 'word' does not literally travel or arrive; this is the standard biblical way of speaking about a prophecy being fulfilled. It conceptualizes the prophesied event as the 'coming' of the word.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּבֹא דְּבַר הַנָּבִיא",
+        "english_text": "when the word of the prophet comes",
+        "target": [
+          "the actual occurrence of what the prophet promised (good fortune/shalom)",
+          "fulfillment of prophecy",
+          "theological-historical"
+        ],
+        "vehicle": [
+          "a 'word' that moves and arrives like a person or object entering a place",
+          "motion/arrival event",
+          "spatial"
+        ],
+        "ground": [
+          "transition from not-yet-present to manifest presence; realization",
+          "appearance/arrival as proof of reality",
+          "conceptual"
+        ],
+        "posture": [
+          "Jeremiah’s didactic rule for testing a prophet by the eventual arrival of his word",
+          "evaluative-prophetic stance",
+          "discourse"
+        ],
+        "explanation": "The prophecy’s fulfillment is portrayed as the word itself 'coming' into reality, personifying the word and using a movement metaphor for realization.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 28:10",
+    "deliberation": "Although the physical yoke-bar Jeremiah wears is symbolic in the larger narrative, this verse’s wording simply reports a concrete action: Hananiah takes the bar from Jeremiah’s neck and breaks it. The sentence itself contains no figurative expression; the symbolic meaning is made explicit only in the following verse.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 28:11",
+    "deliberation": "Hananiah explicitly interprets his breaking of the wooden bar: 'So will I break the yoke of King Nebuchadnezzar ... from off the necks of all the nations.' Here 'yoke' and 'necks of the nations' form an extended metaphor and part-for-whole synecdoche (neck = the subject peoples) for imperial domination.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כָּכָה אֶשְׁבֹּר אֶת־עֹל נְבֻכַדְנֶאצַּר מֶלֶךְ־בָּבֶל ... מֵעַל צַוַּאר כׇּל־הַגּוֹיִם",
+        "english_text": "So will I break the yoke of King Nebuchadnezzar of Babylon from off the necks of all the nations",
+        "target": [
+          "the subjection of many nations to Nebuchadnezzar’s empire",
+          "political/military domination",
+          "socio-political"
+        ],
+        "vehicle": [
+          "a yoke resting on the necks of draft animals, which can be broken off",
+          "instrument of forced service on the body",
+          "agrarian/bodily"
+        ],
+        "ground": [
+          "the experience of being constrained, directed, and made to serve by a stronger master",
+          "oppression and enforced servitude",
+          "conceptual"
+        ],
+        "posture": [
+          "Hananiah’s optimistic prediction of imminent release from that domination",
+          "reassuring-prophetic stance",
+          "discourse"
+        ],
+        "explanation": "National subjugation is portrayed as animals wearing a yoke on their necks; breaking it from their necks figuratively depicts the nations’ liberation from Babylonian control. The 'necks' of the nations stand for the nations themselves under that control.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 28:12",
+    "deliberation": "Narrative linkage: after Hananiah broke the bar, the word of YHWH came to Jeremiah. 'The word of YHWH came' is a standard prophetic formula, but in this context it serves as a set phrase rather than a focus of figurative development. No distinct figurative expression within this verse stands out beyond that conventional formula.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 28:13",
+    "deliberation": "God’s message refers to 'bars of wood' and 'bars of iron.' In this verse they still refer primarily to the literal sign-act object that will now be replaced with a heavier one; the explicitly figurative explanation ('iron yoke on the necks of all these nations') comes in v.14. Here the materials are concrete, not yet applied metaphorically to the nations within this sentence.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 28:14",
+    "deliberation": "Two figurative elements stand out: (1) 'I have put an iron yoke upon the necks of all these nations'—a developed metaphor of imperial oppression as a heavy iron yoke borne on the necks of subject peoples; (2) 'I have even given the wild beasts of the field to him'—likely hyperbolic language for the comprehensiveness of Nebuchadnezzar’s dominion, extending beyond human subjects.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עֹל בַּרְזֶל נָתַתִּי עַל־צַוַּאר כׇּל־הַגּוֹיִם הָאֵלֶּה",
+        "english_text": "I have put an iron yoke upon the necks of all those nations",
+        "target": [
+          "the enforced service of all these nations to Nebuchadnezzar",
+          "political bondage under empire",
+          "socio-political"
+        ],
+        "vehicle": [
+          "an iron yoke pressing on the neck of an animal, too strong to break",
+          "heavy, unbreakable implement of labor",
+          "agrarian/material"
+        ],
+        "ground": [
+          "inescapable, burdensome, and rigidly enforced subjugation",
+          "harshness, durability, and inescapability of control",
+          "conceptual"
+        ],
+        "posture": [
+          "YHWH’s declaration of the severity and inevitability of Babylonian rule as His judgment",
+          "judgment-prophetic stance",
+          "discourse"
+        ],
+        "explanation": "Imperial domination is portrayed as an iron yoke on the nations’ necks, intensifying the earlier wooden-yoke metaphor to stress how hard and unbreakable this subjugation will be.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְגַם אֶת־חַיַּת הַשָּׂדֶה נָתַתִּי לוֹ",
+        "english_text": "I have even given the wild beasts of the field to him",
+        "target": [
+          "the extent of Nebuchadnezzar’s authority and dominion",
+          "scope of imperial power",
+          "socio-political/cosmic"
+        ],
+        "vehicle": [
+          "possession and control of all wild animals of the field",
+          "rule over untamed nature",
+          "natural world"
+        ],
+        "ground": [
+          "comprehensiveness and universality of control, leaving nothing outside his reach",
+          "total dominion over all realms within his territory",
+          "conceptual"
+        ],
+        "posture": [
+          "YHWH’s emphatic portrayal of the breadth of Babylonian power as part of His decree",
+          "intensifying-judgment stance",
+          "discourse"
+        ],
+        "explanation": "By saying that even the wild beasts have been given to Nebuchadnezzar, the oracle hyperbolically and metonymically expresses the total range of his God-given dominion, not merely over human nations but over the entire created order within his sphere.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 28:15",
+    "deliberation": "Examined the expression הִבְטַחְתָּ אֶת־הָעָם הַזֶּה עַל־שָׁקֶר 'you have made this people trust in a lie.' While conceptually rich, it is a straightforward statement about inducing false confidence; it does not hinge on a particular image or idiom beyond normal abstract language. No discrete metaphor or other figure that clearly exceeds literal usage is present.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 28:16",
+    "deliberation": "The phrase הִנְנִי מְשַׁלֵּחֲךָ מֵעַל פְּנֵי הָאֲדָמָה 'I am going to banish you from off the face of the ground' is a standard biblical idiom for removal from the land / from life. It personifies the earth as having a 'face' and uses spatial banishment as a figurative way to describe death and eradication from the community of the living.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "מְשַׁלֵּחֲךָ מֵעַל פְּנֵי הָאֲדָמָה",
+        "english_text": "I am going to banish you from off the earth",
+        "target": [
+          "Hananiah’s impending death and removal from among the living on the land",
+          "personal fate (loss of life and place)",
+          "anthropological/theological"
+        ],
+        "vehicle": [
+          "being sent away from upon the 'face' of the ground, as from a person’s presence",
+          "expulsion from before someone’s face / from a surface",
+          "spatial-relational"
+        ],
+        "ground": [
+          "separation from presence, community, and the sphere where life is enjoyed",
+          "exclusion and removal from the inhabited realm",
+          "conceptual"
+        ],
+        "posture": [
+          "YHWH’s judicial pronouncement of ultimate exclusion as a response to rebellion",
+          "judicial-prophetic stance",
+          "discourse"
+        ],
+        "explanation": "The earth is pictured as having a 'face' before which one can stand; to be sent away from its face idiomatically and figuratively describes being removed from the land and from life itself.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 28:17",
+    "deliberation": "Concludes the narrative with a simple report of Hananiah’s death in that year and month. The wording is entirely literal chronological narration, with no figurative turns.",
+    "instances": []
+  }
+]

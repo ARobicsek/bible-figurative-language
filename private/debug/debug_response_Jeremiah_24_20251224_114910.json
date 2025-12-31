@@ -1,0 +1,410 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 24:1",
+    "deliberation": "I considered whether the vision report itself is symbolic or figurative. In this verse the prophet simply reports what YHWH showed him (two baskets of figs before the temple) and gives precise historical context of Jeconiah’s exile. The symbolic meaning of the figs is not yet stated here; it is only interpreted later (vv.5, 8). The language in v.1 is narrative and descriptive, not employing metaphor, simile, or other figures on its own.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 24:2",
+    "deliberation": "I checked for explicit comparison markers and exaggeration. The clause כִּתְאֵנֵי הַבַּכֻּרוֹת is a clear simile comparing the good figs to prized first-ripened figs. The statement that the bad figs are so bad they cannot be eaten can be literally true (inedible produce) and does not require hyperbole. The good/bad figs here are still literal within the vision; their representative function is only defined in vv.5, 8.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תְּאֵנִים טֹבוֹת מְאֹד כִּתְאֵנֵי הַבַּכֻּרוֹת",
+        "english_text": "very good figs, like first-ripened figs",
+        "target": [
+          "the quality of the figs seen in the vision",
+          "degree of desirability/quality",
+          "agricultural produce in prophetic vision"
+        ],
+        "vehicle": [
+          "first-ripened figs (תְּאֵנֵי הַבַּכּוּרוֹת)",
+          "earliest and choicest fruit",
+          "agricultural abundance/prime produce"
+        ],
+        "ground": [
+          "exceptional goodness, sweetness, and desirability",
+          "superior quality and value",
+          "evaluation of produce in agrarian culture"
+        ],
+        "posture": [
+          "Jeremiah’s and YHWH’s positive evaluation of these figs",
+          "divine and prophetic assessment",
+          "theological interpretation of a vision image"
+        ],
+        "explanation": "The figs in one basket are explicitly compared, by means of כִּ, to first-ripened figs, evoking the special excellence and desirability of such early fruit.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 24:3",
+    "deliberation": "I considered whether Jeremiah’s repetition introduces figurative meaning. Here he simply restates what he sees—good figs very good, bad figs very bad—in response to a divine question. No new comparison marker appears, and the verse does not yet map the figs to people or conditions. The language is emphatic but not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 24:4",
+    "deliberation": "I examined the prophetic formula וַיְהִי דְבַר־יְהוָה אֵלַי. This conventional expression treats the ‘word’ as an entity that ‘comes’ to the prophet, which is a conceptual metaphor and mild personification of the divine message as an approaching agent or object. No other figures occur.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "Then the word of the LORD came to me",
+        "target": [
+          "YHWH’s act of communicating with Jeremiah",
+          "divine revelation/communication",
+          "theological interaction between God and prophet"
+        ],
+        "vehicle": [
+          "a ‘word’ that comes to someone",
+          "a message treated as a moving agent or object",
+          "ordinary experience of people or things arriving"
+        ],
+        "ground": [
+          "the prophet’s experience of receiving something from outside himself",
+          "the initiative and directedness of the communication",
+          "mapping abstract communication onto concrete motion/approach"
+        ],
+        "posture": [
+          "Jeremiah’s recipient stance toward God’s initiative",
+          "prophetic reception of a message",
+          "theology of revelation as an event that ‘comes’"
+        ],
+        "explanation": "The ‘word of the LORD’ is depicted as something that ‘comes’ to Jeremiah, personifying the message and using motion imagery to describe divine revelation.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 24:5",
+    "deliberation": "I looked for explicit comparison signals and for the point where the vision is interpreted. The particle כַּ plus כֵּן sets up a simile: the good figs correspond to the Judean exiles whom YHWH will regard for good. This is the interpretive move that connects the fig image to a human group. Other phrases in the verse are straightforward theological explanation of exile, not figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כַּתְּאֵנִים הַטֹּבוֹת הָאֵלֶּה כֵּן־אַכִּיר אֶת־גָּלוּת יְהוּדָה",
+        "english_text": "As with these good figs, so will I single out for good the Judean exiles",
+        "target": [
+          "the Judean exiles and YHWH’s favorable treatment of them",
+          "a group of people and their divinely-evaluated condition",
+          "Israel’s historical community in exile"
+        ],
+        "vehicle": [
+          "these good figs (הַתְּאֵנִים הַטֹּבוֹת הָאֵלֶּה)",
+          "choice, high-quality fruit set before God’s temple",
+          "agricultural produce symbolizing value and acceptability"
+        ],
+        "ground": [
+          "being valued, chosen, and destined for good despite removal from the tree/land",
+          "positive evaluation, quality, and hopeful future",
+          "correspondence between prized produce and a preserved remnant"
+        ],
+        "posture": [
+          "YHWH’s gracious stance toward the exiles, contrary to appearances",
+          "divine favor versus human expectation about exile",
+          "theological re-framing of political catastrophe as beneficial"
+        ],
+        "explanation": "The exiles of Judah are explicitly likened to the basket of good figs; as the figs are choice and acceptable, so the exiles are those whom God recognizes and intends to benefit.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 24:6",
+    "deliberation": "I examined three clauses for figurative language: (1) ‘I will set my eye upon them for good’ anthropomorphically portrays God’s favorable attention as an ‘eye’ directed toward them. (2) ‘I will build them and not tear down’ treats the people as a structure God constructs, echoing Jeremiah 1:10; this is metaphorical. (3) ‘I will plant them and not uproot’ likens the restored community to a planted organism made secure in the land. These are three distinct but related metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשַׂמְתִּי עֵינִי עֲלֵיהֶם לְטוֹבָה",
+        "english_text": "I will set My eye upon them for good",
+        "target": [
+          "God’s favorable attention and care toward the exiles",
+          "divine favor/protection",
+          "theological relationship between God and His people"
+        ],
+        "vehicle": [
+          "an eye set upon someone",
+          "focused human watching and regard",
+          "embodied perception and oversight"
+        ],
+        "ground": [
+          "close, intentional observation signifying concern",
+          "attentiveness, vigilance, benevolent oversight",
+          "mapping visual focus onto relational care"
+        ],
+        "posture": [
+          "YHWH’s committed, protective orientation toward the exiles",
+          "divine stance of watchful favor",
+          "theology of God as watcher/guardian of His people"
+        ],
+        "explanation": "God speaks of ‘setting His eye’ on the exiles, using anthropomorphic eye imagery to express focused, benevolent attention and protection.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְנִיתִים וְלֹא אֶהֱרֹס",
+        "english_text": "and I will build them and not overthrow [tear down]",
+        "target": [
+          "the restoration and strengthening of the exiled community",
+          "social and national re-establishment",
+          "Israel’s collective life in history"
+        ],
+        "vehicle": [
+          "building and not tearing down a structure",
+          "construction versus demolition of a house or city",
+          "crafting and preserving physical architecture"
+        ],
+        "ground": [
+          "stability, order, and intentional structuring",
+          "creating something enduring instead of destroying it",
+          "analogy between erecting a building and reconstituting a people"
+        ],
+        "posture": [
+          "YHWH’s resolve to restore rather than judge this group",
+          "divine commitment to constructive, not destructive, action",
+          "theological reversal from prior ‘tearing down’ to ‘building up’"
+        ],
+        "explanation": "God depicts His future treatment of the exiles as ‘building’ them instead of tearing them down, treating the people metaphorically as a structure that He constructs and preserves.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּנְטַעְתִּים וְלֹא אֶתּוֹשׁ",
+        "english_text": "and I will plant them and not uproot",
+        "target": [
+          "the secure resettlement and enduring stability of the people in the land",
+          "communal rootedness and continuity",
+          "Israel’s long-term dwelling in its territory"
+        ],
+        "vehicle": [
+          "planting and not uprooting a plant or tree",
+          "agricultural process of setting and preserving roots",
+          "growth of vegetation in stable soil"
+        ],
+        "ground": [
+          "firm establishment, rootedness, and capacity to flourish over time",
+          "security versus displacement",
+          "analogy between a planted organism and a settled community"
+        ],
+        "posture": [
+          "YHWH’s intention to make their position in the land stable",
+          "divine stance of granting rootedness instead of exile",
+          "theological assurance of lasting restoration"
+        ],
+        "explanation": "By promising to ‘plant’ the people and not uproot them, God metaphorically likens the restored community to deeply rooted vegetation that will not be torn from its soil.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 24:7",
+    "deliberation": "I focused on the use of ‘heart’ (לֵב). ‘I will give them a heart to know Me’ and ‘they will return to Me with all their heart’ employ ‘heart’ metonymically for the inner cognitive-volitional self. The covenant formula ‘they will be My people and I will be their God’ is a relational statement, but not necessarily figurative in itself. The primary figure is the heart as the center of understanding and commitment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי לָהֶם לֵב לָדַעַת אֹתִי ... כִּי־יָשֻׁבוּ אֵלַי בְּכׇל־לִבָּם",
+        "english_text": "And I will give them the heart to know Me … when they turn back to Me with all their heart",
+        "target": [
+          "the exiles’ inner cognitive and moral disposition toward God",
+          "human mind/will and total inner commitment",
+          "religious-ethical transformation of a community"
+        ],
+        "vehicle": [
+          "the ‘heart’ (לֵב) as a bodily organ",
+          "the physical center of life in the body",
+          "human anatomy"
+        ],
+        "ground": [
+          "centrality and control associated with the physical heart",
+          "the idea of an internal core governing thought and decision",
+          "using a bodily center to stand for the inner person"
+        ],
+        "posture": [
+          "God’s transformative gift and the people’s wholehearted response",
+          "covenant loyalty expressed as inner orientation",
+          "theological depiction of repentance and knowledge of God"
+        ],
+        "explanation": "‘Heart’ is used metonymically for the inner self—the seat of understanding and will—so that giving ‘a heart to know’ and returning ‘with all their heart’ describe total inner transformation and commitment, not literal cardiac change.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 24:8",
+    "deliberation": "I looked for the counterpart to the good-figs comparison. The construction וְכַ… כֵּן again signals a simile: the bad, inedible figs correspond to Zedekiah, his officials, and the remaining Judeans (including those in Egypt). The verse uses the previously described figs as an image for the worthlessness and doom of this group.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַתְּאֵנִים הָרָעוֹת אֲשֶׁר לֹא־תֵאָכַלְנָה מֵרֹעַ כִּי־כֹה אָמַר יְהוָה כֵּן אֶתֵּן אֶת־צִדְקִיָּהוּ מֶלֶךְ־יְהוּדָה וְאֶת־שָׂרָיו וְאֵת שְׁאֵרִית יְרוּשָׁלִַם ... וְהַיֹּשְׁבִים בְּאֶרֶץ מִצְרָיִם",
+        "english_text": "And like the bad figs, which are so bad that they cannot be eaten—thus said the LORD—so will I treat King Zedekiah of Judah and his officials and the remnant of Jerusalem … and those who are living in the land of Egypt",
+        "target": [
+          "Zedekiah, his officials, and the Judean remnant with their destined treatment",
+          "a group of people under divine judgment",
+          "Judah’s political and social leadership and remaining populace"
+        ],
+        "vehicle": [
+          "bad, inedible figs (תְּאֵנִים הָרָעוֹת אֲשֶׁר לֹא־תֵאָכַלְנָה מֵרֹעַ)",
+          "spoiled produce that must be rejected",
+          "worthless agricultural fruit destined for disposal"
+        ],
+        "ground": [
+          "extreme worthlessness and repulsiveness leading to rejection",
+          "unsuitability for the intended purpose and impending removal",
+          "analogy between rotten fruit and a corrupt, doomed leadership"
+        ],
+        "posture": [
+          "YHWH’s condemning stance toward this group",
+          "divine evaluation and decree of rejection",
+          "prophetic framing of political fate as analogous to spoiled fruit"
+        ],
+        "explanation": "The king, his officials, and the remaining Judeans are explicitly likened to the basket of bad figs that cannot be eaten, portraying them as utterly unfit and destined for rejection.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 24:9",
+    "deliberation": "I evaluated the series of nouns describing what God will ‘make’ them: horror, disgrace, proverb, byword, curse. They do not literally become these abstractions; rather, they become objects that evoke horror and are spoken of as proverbs and curses among the nations. This is one composite metaphor/metonymy cluster about their reputation and exemplary misfortune.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּנְתַתִּים לְזַעֲוָה לְרָעָה לְכֹל מַמְלְכוֹת הָאָרֶץ לְחֶרְפָּה וּלְמָשָׁל לִשְׁנִינָה וְלִקְלָלָה",
+        "english_text": "I will make them a horror—an evil—to all the kingdoms of the earth, a disgrace and a proverb, a byword and a curse",
+        "target": [
+          "the people’s reputation and fate among the nations",
+          "notorious status as a negative example",
+          "Israel/Judah’s standing in the international arena"
+        ],
+        "vehicle": [
+          "a horror, a disgrace, a proverb, a byword, a curse",
+          "categories of fearful spectacle and negative speech labels",
+          "social-linguistic phenomena of ridicule and cursing"
+        ],
+        "ground": [
+          "being perceived as terrifying and shameful, invoked in speech as an example of misfortune",
+          "becoming the standard negative illustration people talk about",
+          "the way extreme disaster is remembered and referenced in communal discourse"
+        ],
+        "posture": [
+          "YHWH’s punitive determination to turn them into an awful example",
+          "hostile nations’ mockery and fear as instruments of divine judgment",
+          "theological portrayal of exile as an object lesson to the world"
+        ],
+        "explanation": "By saying He will make them ‘a horror … a disgrace and a proverb, a byword and a curse,’ God metaphorically and metonymically portrays the people as becoming the paradigmatic example of disaster that others fear, mock, and invoke in curses.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 24:10",
+    "deliberation": "I checked the triad ‘sword, famine, and pestilence’ and the verb ‘send.’ ‘Sword’ stands metonymically for warfare/violent death, and all three are treated as agents that can be ‘sent,’ which personifies them slightly. The phrase ‘until they are consumed from the land’ can be literally fulfilled in terms of population removal and need not be read as hyperbole. The main figurative element is the metonymic triad used for forms of judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשִׁלַּחְתִּי בָּם אֶת־הַחֶרֶב אֶת־הָרָעָב וְאֶת־הַדָּבֶר",
+        "english_text": "I will send the sword, famine, and pestilence against them",
+        "target": [
+          "the experiences of war, deprivation, and disease that will strike the people",
+          "forms of covenant judgment on the nation",
+          "historical calamities befalling Israel/Judah"
+        ],
+        "vehicle": [
+          "the sword, famine, and pestilence as things ‘sent’",
+          "concrete agents/disasters dispatched like messengers or weapons",
+          "instruments of punishment conceptualized as emissaries"
+        ],
+        "ground": [
+          "these forces act as instruments executing divine judgment",
+          "their destructive, invasive nature parallels that of an attacking agent",
+          "war, scarcity, and plague are grouped as a standard package of covenant curses"
+        ],
+        "posture": [
+          "YHWH’s active punitive stance in unleashing these calamities",
+          "depiction of God as commander who ‘sends’ destructive agents",
+          "theological framing of historical disasters as commissioned judgments"
+        ],
+        "explanation": "‘Sword, famine, and pestilence’ function metonymically for war, deprivation, and disease, and they are personified as agents that God can ‘send’ against the people, portraying covenant curses as commissioned instruments.",
+        "confidence": 0.92
+      }
+    ]
+  }
+]

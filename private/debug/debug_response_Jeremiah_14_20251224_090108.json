@@ -1,0 +1,615 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 14:1",
+    "deliberation": "I considered whether the prophetic formula 'the word of YHWH that came to Jeremiah' should be treated as figurative (e.g., personifying 'word' as moving) but this is a conventional, almost technical expression for prophetic revelation. The droughts are literal. I judge the verse to be straightforwardly referential without a distinct figurative image to analyze.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 14:2",
+    "deliberation": "I checked for personification and metaphor in the description of Judah and Jerusalem. The verse presents Judah, her gates, and Jerusalem as mourning, languishing, bowing down, and crying out. These are human actions applied to a people, architectural features, and a city, respectively. I treat these as three distinct personifying/metaphorical expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָבְלָ֣ה יְהוּדָ֔ה",
+        "english_text": "Judah is in mourning",
+        "target": ["Judah as a nation/people", "collective community", "human society"],
+        "vehicle": ["a human mourner", "person experiencing bereavement", "human emotional experience"],
+        "ground": ["deep sorrow and grief under calamity", "emotional distress", "psychological/spiritual condition"],
+        "posture": ["prophetic lament over Judah", "evaluative-lamenting stance", "prophetic rhetoric about judgment"],
+        "explanation": "The nation of Judah is personified/metaphorically depicted as a human mourner, highlighting the depth of communal grief under drought and judgment.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּשְׁעָרֶ֥יהָ אֻמְלְל֖וּ קָדְר֣וּ לָאָ֑רֶץ",
+        "english_text": "Her gates languish; they are bowed to the ground",
+        "target": ["Judah's city-gates (esp. Jerusalem)", "urban centers/leadership/security", "social-political structure of the nation"],
+        "vehicle": ["a weak, collapsing person stooping down in grief", "physically exhausted mourner", "human physical-emotional state"],
+        "ground": ["loss of strength and dignity, humiliation", "visible collapse under suffering", "social and emotional breakdown"],
+        "posture": ["depiction of public humiliation and collapse", "judgment-lament stance", "prophetic critique of the nation's condition"],
+        "explanation": "The gates (architectural elements, metonymic for the cities and their leadership) are personified as languishing and bending to the ground like a humiliated mourner, emphasizing the collapse of civic life.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְצִוְחַ֥ת יְרוּשָׁלִַ֖ם עָלָֽתָה",
+        "english_text": "And the outcry of Jerusalem rises",
+        "target": ["Jerusalem (its inhabitants as a whole)", "city-community", "covenant people centered in Jerusalem"],
+        "vehicle": ["a crying/screaming person whose cry ascends", "vocal human lament", "human act of crying out to heaven"],
+        "ground": ["intense distress expressed vocally", "appeal or complaint directed upward", "emotional and spiritual anguish"],
+        "posture": ["depiction of desperate appeal to God", "lamenting posture", "rhetorical highlighting of severity of crisis"],
+        "explanation": "Jerusalem, the city, is personified as emitting an outcry that rises, like a person whose cry goes up to heaven, underscoring the extremity of suffering.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 14:3",
+    "deliberation": "I examined the description of nobles sending their youths to water, their vessels returning empty, and the people covering their heads. Though the gesture of covering the head is culturally symbolic of shame and mourning, here it is a literal bodily action in response to an actual drought situation rather than an independent figurative image. I therefore do not count a distinct metaphor, simile, or personification.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 14:4",
+    "deliberation": "I looked for figurative language in the land's reaction and the farmers' shame. The land is said to be 'dismayed' because there is no rain, which attributes psychological response to inanimate soil. This is a clear personification/metaphor, while the farmers' shame and head-covering likely describe literal behavior.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בַּעֲב֤וּר הָֽאֲדָמָה֙ חַ֔תָּה כִּ֛י לֹא־הָיָ֥ה גֶ֖שֶׁם בָּאָ֑רֶץ",
+        "english_text": "Because of the ground there is dismay, for there has been no rain on the earth",
+        "target": ["the ground/land of Judah", "physical land/agricultural environment", "non-human creation"],
+        "vehicle": ["a terrified or shattered person", "human experiencing dread and collapse", "human emotional-psychological condition"],
+        "ground": ["reacting with dismay to calamity", "loss of vitality/productivity", "felt impact of judgment or disaster"],
+        "posture": ["poetic portrayal of cosmic participation in judgment", "theological-lament stance", "prophetic dramatization of drought"],
+        "explanation": "The land is personified as if it can feel 'dismay' in response to the lack of rain, metaphorically presenting creation itself as sharing in the trauma of the drought.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 14:5",
+    "deliberation": "This verse describes a hind abandoning her newborn because there is no grass. While the image is vivid, it can be taken as literal animal behavior under extreme drought, not an explicit comparison to something else. I do not see a clear metaphor, simile, or personification beyond the naturalistic description.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 14:6",
+    "deliberation": "I looked at the wild asses panting on the heights, the comparison to jackals, and the statement that their eyes fail. There is a clear simile ('like jackals'), and 'their eyes are finished' is an idiomatic/hyperbolic way to describe exhaustion or failing sight.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שָׁאֲפ֥וּ ר֖וּחַ כַּתַּנִּ֑ים",
+        "english_text": "Snuffing the air like jackals",
+        "target": ["wild asses' desperate panting in drought", "behavior of drought-stricken animals", "physical suffering of creation"],
+        "vehicle": ["jackals' panting/snuffing behavior", "scavenger animals' breathing patterns", "animal life in desert conditions"],
+        "ground": ["labored, open-mouthed panting due to heat and thirst", "desperation in harsh environment", "visible signs of extreme deprivation"],
+        "posture": ["vivid comparison to intensify the scene", "descriptive-poetic stance", "heightening perception of drought's severity"],
+        "explanation": "The breath of the wild asses is explicitly compared to that of jackals, a simile that intensifies the picture of wild, desperate panting in the parched landscape.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כָּל֥וּ עֵינֵיהֶ֖ם",
+        "english_text": "Their eyes pine/fail",
+        "target": ["eyesight/vital powers of the animals", "physical faculties under strain", "creaturely life"],
+        "vehicle": ["being 'finished' or coming to an end", "resource that can be used up", "quantifiable store that can be exhausted"],
+        "ground": ["progressive dimming and weakening under strain", "sense of running out of strength", "approach to collapse or death"],
+        "posture": ["hyperbolic idiom of exhaustion", "intensifying description of suffering", "poetic dramatization of physical decline"],
+        "explanation": "The idiom 'their eyes are finished' hyperbolically depicts failing sight and life-force as if their eyes (and by extension their strength) were being used up or coming to an end.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 14:7",
+    "deliberation": "I checked for legal metaphors and metonymy. The verse makes iniquities 'testify' against the people, which personifies sins as courtroom witnesses. It also invokes God's 'name' as the basis for action, a standard metonymy of 'name' for reputation/character.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אִם־עֲוֺנֵ֙ינוּ֙ עָ֣נוּ בָ֔נוּ",
+        "english_text": "Though our iniquities testify against us",
+        "target": ["the people's sins/guilt", "moral failures", "covenant-breaking behavior"],
+        "vehicle": ["witnesses speaking in a courtroom", "legal accusers giving testimony", "judicial procedure"],
+        "ground": ["sins provide evidence against the sinners", "exposure and indictment before a judge", "inescapability of moral accountability"],
+        "posture": ["confessional appeal framed in legal terms", "acknowledgment of just condemnation", "theological-legal rhetoric"],
+        "explanation": "The iniquities are personified as if they were witnesses giving testimony in court against the offenders, a legal metaphor that underscores the undeniable guilt of the people.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יְהוָה עֲשֵׂ֖ה לְמַ֣עַן שְׁמֶ֑ךָ",
+        "english_text": "O YHWH, act for the sake of Your name",
+        "target": ["God's public reputation and covenant faithfulness", "divine character as known to the world", "theological identity of YHWH"],
+        "vehicle": ["God's 'name'", "designation/renown associated with God", "label that stands for a person"],
+        "ground": ["a name stands for the person’s character and reputation", "honor attached to the name reflects on the bearer", "public perception tied to the name used"],
+        "posture": ["appeal to God's concern for His reputation", "intercessory-theological reasoning", "covenant-based argumentation"],
+        "explanation": "God’s 'name' stands metonymically for His reputation and revealed character; the plea is that God act to uphold what His name represents.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 14:8",
+    "deliberation": "I noted the divine title 'Hope of Israel' and the two explicit similes comparing God to a stranger/sojourner. 'Hope of Israel' is a metaphorical epithet, and the questions ask why God appears 'like' a stranger or traveler—two clear similes expressing perceived distance or indifference.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִקְוֵה֙ יִשְׂרָאֵ֔ל מוֹשִׁיע֖וֹ בְּעֵ֣ת צָרָ֑ה",
+        "english_text": "O Hope of Israel, its deliverer in time of trouble",
+        "target": ["YHWH's role for Israel", "divine saving relationship", "theological function of God for His people"],
+        "vehicle": ["'hope' as an anchoring expectation/source of rescue", "abstract ground of trust", "psychological-spiritual resource"],
+        "ground": ["God is the source and object of Israel’s expectation for deliverance", "He functions as what hope does—sustaining and orienting in trouble", "dependence and expectation converge on Him"],
+        "posture": ["vocative confession of God’s saving identity", "theological affirmation used in appeal", "rhetorical framing of God as Israel’s only true resource"],
+        "explanation": "By calling YHWH 'Hope of Israel,' the text metaphorically identifies God with the very reality of hope, presenting Him as the foundational source and object of Israel’s expectation of rescue.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָ֤מָּה תִֽהְיֶה֙ כְּגֵ֣ר בָּאָ֔רֶץ",
+        "english_text": "Why are You like a stranger in the land?",
+        "target": ["God's apparent remoteness/inactivity", "perceived divine disengagement", "experience of God in crisis"],
+        "vehicle": ["a resident alien (גֵר) with no deep ties or obligations", "stranger living temporarily in a land", "social outsider with limited responsibility"],
+        "ground": ["lack of belonging and involvement", "absence of committed protection", "distance and non-identification with the community’s fate"],
+        "posture": ["complaint that God seems disengaged", "lament-questioning of divine behavior", "rhetorical pressure on covenant expectations"],
+        "explanation": "God is compared to a resident alien, suggesting that He seems to be behaving as if He had no deep covenantal stake in the land or people.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּכְאֹרֵ֖חַ נָטָ֥ה לָלֽוּן",
+        "english_text": "and like a traveler who stops only for the night",
+        "target": ["God’s short, seemingly superficial involvement", "perceived fleeting divine presence", "experience of intermittent help"],
+        "vehicle": ["a passing traveler lodging for one night", "temporary guest with no long-term stake", "itinerant moving quickly on"],
+        "ground": ["brief, non-permanent stay without deep commitment", "minimal engagement with local affairs", "sense of transience rather than abiding care"],
+        "posture": ["further complaint intensifying the charge of divine aloofness", "lament over lack of sustained intervention", "rhetorical pressure on God’s covenantal promises"],
+        "explanation": "God is likened to a traveler who merely turns aside to lodge for a night, accentuating the sense that His help is only brief and passing rather than a stable, committed presence.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 14:9",
+    "deliberation": "I noted two explicit similes—God 'like a man stunned' and 'like a warrior who cannot save'—that express perceived divine helplessness. I also considered the phrase 'Your name is called upon us' as an idiomatic metonymy for covenant ownership/belonging.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לָ֤מָּה תִֽהְיֶה֙ כְּאִ֣ישׁ נִדְהָ֔ם",
+        "english_text": "Why are You like a man who is stunned?",
+        "target": ["God’s seemingly inactive or confused response", "perceived failure of divine intervention", "the behavior of God as experienced by the people"],
+        "vehicle": ["a stunned or dumbfounded man", "human in shock and paralysis", "person mentally overwhelmed and unable to act"],
+        "ground": ["apparent inability to respond effectively", "bewilderment and paralysis in the face of events", "suspension of decisive action"],
+        "posture": ["bold lament pressing on God’s perceived inaction", "rhetorical challenge to divine behavior", "intense anthropomorphic complaint"],
+        "explanation": "God is compared to a shocked man, a simile that daringly voices the people’s feeling that God is paralyzed or bewildered rather than acting decisively.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כְּגִבּ֖וֹר לֹא־יוּכַ֣ל לְהוֹשִׁ֑יעַ",
+        "english_text": "like a warrior who cannot give victory",
+        "target": ["God’s apparent failure to deliver", "perceived impotence of divine power", "experience of unanswered expectation of rescue"],
+        "vehicle": ["a warrior unable to save", "soldier who lacks power or success", "failed military champion"],
+        "ground": ["expected strength contrasted with actual failure", "discrepancy between role and performance", "shocking ineffectiveness where power is assumed"],
+        "posture": ["complaint flirting with irony about God’s might", "rhetorical intensification of lament", "theological crisis over divine power and action"],
+        "explanation": "The simile likens God to a warrior who cannot save, underscoring the shocking gap between God’s reputed might and the people’s present experience of defeat.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשִׁמְךָ֛ עָלֵ֥ינוּ נִקְרָ֖א",
+        "english_text": "And Your name is attached to us / called upon us",
+        "target": ["the people’s covenant identity and belonging to YHWH", "Israel/Judah as God’s possession", "covenant community"],
+        "vehicle": ["a name called over someone to mark ownership or association", "label placed upon a person or group", "designation indicating belonging"],
+        "ground": ["bearing someone’s name indicates belonging and representation", "a name placed upon a group shows patronage and identity", "social-legal linkage through naming"],
+        "posture": ["appeal to covenant status and belonging", "reminder of God’s commitments", "intercessory leverage based on identity"],
+        "explanation": "The idiom that God’s name is ‘called upon’ the people uses ‘name’ metonymically for God Himself and His ownership, expressing that they are marked as His and so He should not abandon them.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 14:10",
+    "deliberation": "I examined the language of loving to wander and not restraining their feet. This is a metaphor of spiritual/moral unfaithfulness depicted as physical wandering and unrestrained movement, common in prophetic literature. The rest of the verse is declarative judgment language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֵּ֤ן אָֽהֲבוּ֙ לָנ֔וּעַ רַגְלֵיהֶ֖ם לֹ֣א חָשָׂ֑כוּ",
+        "english_text": "They love to stray; they have not restrained their feet",
+        "target": ["the people’s covenant infidelity and instability", "moral/spiritual behavior of Judah", "inner disposition expressed in conduct"],
+        "vehicle": ["wandering, unrestrained walking with one’s feet", "aimless roaming traveler", "physical movement without discipline"],
+        "ground": ["lack of constancy and commitment", "tendency to drift from proper path", "refusal to exercise self-control"],
+        "posture": ["moral indictment expressed via path/walking metaphor", "prophetic characterization of apostasy", "didactic warning through imagery"],
+        "explanation": "The people’s love of unfaithfulness is expressed through the metaphor of loving to wander and not restraining their feet, casting sin as path-deviation and lack of disciplined walking.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 14:11",
+    "deliberation": "This is a straightforward divine command to Jeremiah not to pray for the people’s good. It lacks comparisons, personifications, or idiomatic phrases beyond normal speech, so I find no distinct figurative expression to isolate.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 14:12",
+    "deliberation": "The verse states that God will not listen to fasting or offerings and will instead consume the people by sword, famine, and pestilence. These are standard covenant curses and can be historically literal. The verbs and nouns here can be read straightforwardly without a discrete metaphor or simile that demands separate analysis.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 14:13",
+    "deliberation": "Jeremiah reports the false prophets promising no sword or famine and 'true peace' in this place. 'Peace' (שָׁלוֹם) is a rich concept, but here it functions as a normal abstract noun for well-being, not as a vehicle in an explicit metaphor. Thus I see no distinct figurative construction in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 14:14",
+    "deliberation": "God exposes the false prophets, mentioning a lying vision, empty divination, and 'the deceit of their heart.' The phrase 'their heart' as the seat of inner thoughts and intentions is a well-known anthropological metonymy, where 'heart' stands for the inner person/mind/will.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְתַרְמִ֣ית לִבָּ֔ם",
+        "english_text": "the deceit of their own contriving / of their heart",
+        "target": ["the prophets’ inner thoughts and intentions", "their planning and willing", "their inner self"],
+        "vehicle": ["the 'heart' (לֵב) as inner center", "bodily organ used for mind/will", "physical part representing inner life"],
+        "ground": ["the heart is central and hidden, like thoughts and motives", "bodily organ metaphorically associated with decision-making", "interior location mapping to inner person"],
+        "posture": ["exposure of inner falsity", "moral-psychological critique", "prophetic unmasking of hidden motives"],
+        "explanation": "The 'heart' functions metonymically for the inner mind and will of the prophets; their deceit comes from within, from what 'their heart' devises.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 14:15",
+    "deliberation": "This verse pronounces that the false prophets will perish by the very sword and famine they denied. While there is an ironic reversal, the language of sword and famine is literal and there is no explicit comparison or anthropomorphism used as a separate image. I do not isolate a discrete metaphor or simile, though the situational irony is thematic.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 14:16",
+    "deliberation": "The verse describes people lying unburied in the streets due to sword and famine, which can be taken literally as a war/famine scene. However, the final clause 'I will pour out upon them their wickedness' uses a liquid/outpouring image for the execution of judgment, a clear metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשָׁפַכְתִּ֥י עֲלֵיהֶ֖ם אֶת־רָעָתָֽם",
+        "english_text": "I will pour out upon them [the requital of] their wickedness",
+        "target": ["God’s punitive response to their evil", "judgment and its effects", "experience of retribution"],
+        "vehicle": ["pouring out a liquid upon someone", "spilling or dousing", "violent outflow"],
+        "ground": ["overwhelming, surrounding impact", "inescapable coverage from above", "abundant outflow that engulfs the recipient"],
+        "posture": ["graphic depiction of retributive justice", "intensification of the judgment theme", "prophetic threat using physical imagery"],
+        "explanation": "Divine judgment is metaphorically portrayed as a liquid poured out upon the people, and 'their wickedness' stands metonymically for the punishment warranted by that wickedness.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 14:17",
+    "deliberation": "I evaluated the language of incessant tears and the description of 'the virgin daughter of my people' being broken with a great breach and a grievous wound. There is a hyperbolic picture of unceasing weeping, and a personifying/national-as-woman metaphor with additional bodily-injury imagery for national calamity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תֵּרַ֨דְנָה עֵינַ֥י דִּמְעָ֛ה לַ֥יְלָה וְיוֹמָ֖ם וְאַל־תִּדְמֶ֑ינָה",
+        "english_text": "Let my eyes run with tears, day and night let them not cease",
+        "target": ["the prophet’s (or personified community’s) grief", "emotional response to national disaster", "inner sorrow expressed outwardly"],
+        "vehicle": ["unending stream of tears from eyes", "continuous physical weeping without pause", "flowing liquid imagery"],
+        "ground": ["intensity and persistence of sorrow", "sense that grief is overwhelming and unrelenting", "inner anguish overflowing outwardly"],
+        "posture": ["hyperbolic self-lament commanded as prophetic stance", "dramatic expression of solidarity with the suffering people", "rhetorical heightening of grief"],
+        "explanation": "The assertion that the eyes run with tears day and night without ceasing is hyperbolic imagery of continual weeping, underscoring the extremity of grief.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֩י שֶׁ֨בֶר גָּד֜וֹל נִשְׁבְּרָ֗ה בְּתוּלַת֙ בַּת־עַמִּ֔י",
+        "english_text": "For my hapless people has suffered a grievous injury (lit. 'the virgin daughter of my people is broken with a great breach')",
+        "target": ["the nation (people) of Judah", "covenant community", "corporate body of 'my people'"],
+        "vehicle": ["a virgin daughter who has been broken with a great breach", "young woman suffering catastrophic harm", "human body violently damaged"],
+        "ground": ["vulnerability and cherished status violated", "sudden catastrophic harm to what was whole", "emotional shock and shame accompanying injury"],
+        "posture": ["lamenting personification of the nation", "emotive portrayal intended to evoke pity and horror", "theological reading of national calamity as assault on God’s daughter"],
+        "explanation": "The people are personified as a 'virgin daughter' who has been 'broken' with a great breach, a metaphor that casts national devastation as a shocking, violating injury to a young woman.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַכָּ֖ה נַחְלָ֥ה מְאֹֽד",
+        "english_text": "a very painful wound",
+        "target": ["the national disaster/judgment on 'my people'", "collective condition of Judah", "historical calamity they endure"],
+        "vehicle": ["a grievous bodily wound", "open, incurable injury", "physical trauma"],
+        "ground": ["severe damage that causes ongoing pain", "state of being deeply afflicted and impaired", "need for healing that is not forthcoming"],
+        "posture": ["medical-injury metaphor to characterize judgment", "heightening the sense of harm and urgency", "preparing for later 'healing' imagery in the chapter"],
+        "explanation": "The calamity that has struck the people is described as a 'very painful wound,' extending the bodily-injury metaphor to depict national suffering as a severe, festering hurt.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 14:18",
+    "deliberation": "The verse contrasts slain of the sword in the field and famine-sick in the city, and notes priests and prophets wandering to a land they do not know. While the scene is poetic, these can all describe literal outcomes of war and exile; there is no explicit metaphor, simile, or personification beyond the grim reportage.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 14:19",
+    "deliberation": "I considered anthropomorphic/anthropopathic language about God rejecting and His 'soul' loathing Zion, and also the medical imagery of being struck with no healing and hoping for healing but finding terror instead. These provide two main figurative constructions: attributing a loathing 'soul' to God, and a sustained medical metaphor for national condition.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִם־בְּצִיּוֹן֙ גָּעֲלָ֣ה נַפְשֶׁ֔ךָ",
+        "english_text": "Have You spurned Zion? (lit. 'Has Your soul loathed Zion?')",
+        "target": ["God’s covenant attitude toward Zion", "divine acceptance or rejection", "relationship between YHWH and His city/people"],
+        "vehicle": ["a human 'soul' (נֶפֶשׁ) that feels loathing/disgust", "person emotionally withdrawing in revulsion", "human inner life with strong negative affect"],
+        "ground": ["emotional rejection and repulsion", "turning away from what is despised", "severing of relationship through disgust"],
+        "posture": ["bold anthropopathic questioning of God", "lament expressing fear of total rejection", "rhetorical exploration of covenant breakdown"],
+        "explanation": "God is described in anthropopathic terms as having a 'soul' that might loathe Zion, using human language for emotions to voice the fear that God has emotionally repudiated His people.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַדּ֙וּעַ֙ הִכִּיתָ֔נוּ וְאֵ֥ין לָ֖נוּ מַרְפֵּ֑א ... וּלְעֵ֥ת מַרְפֵּ֖א וְהִנֵּ֥ה בְעָתָֽה",
+        "english_text": "Why have You smitten us so that there is no cure? ... For a time of healing, and meet terror instead",
+        "target": ["the national experience of judgment and hoped-for restoration", "collective condition of Judah", "historical crisis and its hoped resolution"],
+        "vehicle": ["being struck with an incurable illness/wound and seeking a time of healing", "medical situation with treatment expected", "therapy versus outbreak of panic/terror"],
+        "ground": ["damage that requires healing, yet remains uncured", "expectation of recovery replaced by worsening crisis", "contrast between hoped convalescence and actual catastrophe"],
+        "posture": ["lament framed as medical paradox", "appeal highlighting the seeming futility of suffering", "theological wrestling with prolongation of judgment"],
+        "explanation": "The people’s plight is portrayed through medical imagery: God has ‘struck’ them, there is ‘no healing,’ and the expected time of healing brings terror instead, casting national judgment as an incurable illness.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 14:20",
+    "deliberation": "This is a straightforward confession of wickedness and ancestral iniquity before God. The terms for sin and knowledge are used literally rather than as vehicles in a metaphor. I do not find a discrete figurative expression requiring separate analysis.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 14:21",
+    "deliberation": "I checked the references to God’s 'name' and 'the throne of Your glory.' 'Name' is a standard metonymy for God’s reputation/character, and 'throne of glory' is a metaphorical/metonymic way of speaking of God’s royal presence, likely linked to Zion/temple, not merely an item of furniture.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַל־תִּנְאַץ֙ לְמַ֣עַן שִׁמְךָ֔",
+        "english_text": "For Your name’s sake, do not disown us",
+        "target": ["God’s honor and public character", "divine reputation bound up with His people", "theological identity of YHWH as known in history"],
+        "vehicle": ["God’s 'name'", "designation conveying reputation", "label by which God is invoked and known"],
+        "ground": ["a name stands for the person’s character and renown", "disgracing the name is disgracing the person", "honoring the name preserves the bearer’s honor"],
+        "posture": ["appeal based on God’s concern for His own reputation", "covenantal-theological argument", "intercessory reasoning rooted in God’s self-regard"],
+        "explanation": "Here 'name' functions metonymically for God’s reputation and character; the plea is that God not act in a way that would bring contempt upon what His name represents.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַל־תְּנַבֵּ֖ל כִּסֵּ֣א כְבוֹדֶ֑ךָ",
+        "english_text": "Do not dishonor Your glorious throne",
+        "target": ["God’s royal rule and manifest presence (likely as associated with Zion/temple)", "divine kingship as exercised over Israel", "relationship between God’s glory and its earthly locus"],
+        "vehicle": ["a glorious throne", "royal seat that symbolizes authority and honor", "visible emblem of kingship"],
+        "ground": ["throne represents the king’s authority and prestige", "dishonoring the throne implies dishonoring the ruler", "glory is associated with the royal seat"],
+        "posture": ["appeal to the honor of God’s kingship", "reminder that His own status is bound up with His people’s fate", "intercession based on royal symbolism"],
+        "explanation": "The 'throne of Your glory' is a metaphor/metonymy for God’s royal presence and rule (probably linked to Zion); to 'dishonor' it would be to tarnish God’s own royal honor.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 14:22",
+    "deliberation": "I evaluated the phrase 'the vanities of the nations' for idols and the rhetorical question about the heavens giving rain. 'Vanities' (הֲבָלִים) is a metaphor likening idols to vapor/emptiness, and the heavens are personified as potential rain-givers, contrasted with YHWH as the true source.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֲיֵ֨שׁ בְּהַבְלֵ֤י הַגּוֹיִם֙ מַגְשִׁמִ֔ים",
+        "english_text": "Can any of the false gods (lit. 'vanities') of the nations give rain?",
+        "target": ["the idols/worship objects of the nations", "foreign deities as conceived by their worshipers", "non-YHWH religious systems"],
+        "vehicle": ["'vanities' / vapors (הֲבָלִים)", "insubstantial breath-like phenomena", "things lacking substance and power"],
+        "ground": ["idols are empty and powerless like vapor", "what appears impressive but has no real substance", "inability to effect real-world outcomes like rain"],
+        "posture": ["polemical denigration of idols", "theological contrast between YHWH and false gods", "rhetorical undermining of alternative worship"],
+        "explanation": "Foreign gods are called 'vanities', metaphorically portraying them as mere vapor or emptiness; the phrase stands metonymically for the idols themselves as powerless to give rain.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאִם־הַשָּׁמַ֖יִם יִתְּנ֣וּ רְבִבִ֑ים",
+        "english_text": "Can the skies of themselves give showers?",
+        "target": ["impersonal natural processes (the sky/weather)", "non-personal secondary causes of rain", "created order apart from God"],
+        "vehicle": ["a giving agent that dispenses showers", "personal donor capable of bestowing gifts", "intentional benefactor"],
+        "ground": ["appearance that the skies produce rain", "perceived agency in weather phenomena", "contrast between mere instrument and true source"],
+        "posture": ["rhetorical personification to highlight dependence on God", "theological correction of naturalistic assumptions", "argument that only YHWH truly 'gives' rain"],
+        "explanation": "The heavens are personified as hypothetical givers of rain to deny that role to them and affirm it belongs to YHWH alone; the image implicitly contrasts impersonal sky with the personal God who actually 'gives' showers.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

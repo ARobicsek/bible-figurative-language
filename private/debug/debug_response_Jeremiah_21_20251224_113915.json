@@ -1,0 +1,710 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 21:1",
+    "deliberation": "Examined the prophetic formula and narrative frame. The only potential figure is the standard phrase \"the word that came to Jeremiah from YHWH,\" where 'word' is conceived as something that arrives. This is a conventional prophetic idiom that still rests on a mild personifying/metaphorical image. No other parts of the verse appear figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַדָּבָר אֲשֶׁר־הָיָה אֶל־יִרְמְיָהוּ מֵאֵת יְהוָה",
+        "english_text": "The word that came to Jeremiah from GOD",
+        "target": [
+          "divine communication to Jeremiah",
+          "prophetic revelation",
+          "theology"
+        ],
+        "vehicle": [
+          "a \"word\" that \"comes\" or arrives",
+          "moving/dispatched object",
+          "spatial-motion experience"
+        ],
+        "ground": [
+          "the message originates elsewhere and reaches the prophet",
+          "transmitted, directed, purposeful communication",
+          "communication-as-object/motion conceptualization"
+        ],
+        "posture": [
+          "presenting Jeremiah’s oracle as divinely authorized",
+          "legitimizing prophetic speech",
+          "prophetic discourse framing"
+        ],
+        "explanation": "The 'word' is personified as an entity that 'comes' to Jeremiah, a conventional metaphor/idiom for revelatory communication traveling from God to the prophet.",
+        "confidence": 0.72
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 21:2",
+    "deliberation": "Considered whether the request language and references to wonders and withdrawal are figurative. The main non-literal element is the idiomatic use of 'seek/inquire of YHWH' for prophetic intercession, conceptualizing prayer as a kind of searching. The rest (attack, wonders, withdraw) is straightforwardly literal in context.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דְּרׇשׁ־נָא בַעֲדֵנוּ אֶת־יְהוָה",
+        "english_text": "Please inquire of GOD on our behalf",
+        "target": [
+          "prophetic intercession on behalf of the people",
+          "prayer/consultation with God",
+          "religious practice"
+        ],
+        "vehicle": [
+          "seeking/inquiring",
+          "searching for information or favor",
+          "human seeking behavior"
+        ],
+        "ground": [
+          "active effort directed toward obtaining a response",
+          "intentional approach to a superior for guidance or help",
+          "approaching‑God‑as‑seeking conceptualization"
+        ],
+        "posture": [
+          "urgent royal request for help",
+          "pleading for divine intervention",
+          "supplicatory discourse"
+        ],
+        "explanation": "The verb 'seek/inquire of YHWH' functions idiomatically for intercessory prayer or prophetic consultation, conceptualizing approaching God as searching or inquiring rather than literal physical seeking.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 21:3",
+    "deliberation": "This verse is a simple narrative transition and speech-introduction formula ('Thus you shall say to Zedekiah'). I looked for idioms or imagery but found only direct, literal report of Jeremiah’s speech act.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 21:4",
+    "deliberation": "Considered whether 'turning around the weapons' is a purely literal description of military reversal, and whether any idiom is present. The clearest figure is the use of 'weapons of war' as a stand-in for Judah’s military capability/power, which is a metonymic/synecdochic usage. The rest can be taken literally as the prediction that their own weaponry and defenses will end up inside the besieged city.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כְּלֵי הַמִּלְחָמָה אֲשֶׁר בְּיֶדְכֶם אֲשֶׁר אַתֶּם נִלְחָמִים בָּם",
+        "english_text": "the weapons of war that are in your hands, with which you are battling",
+        "target": [
+          "Judah’s military strength and means of defense",
+          "military capability",
+          "warfare/politics"
+        ],
+        "vehicle": [
+          "weapons (in their hands)",
+          "concrete instruments of war",
+          "material objects of combat"
+        ],
+        "ground": [
+          "weapons represent the power to wage war and defend",
+          "tools standing for the activity and capacity they enable",
+          "part‑for‑whole conceptualization of military force"
+        ],
+        "posture": [
+          "announcing the futility of Judah’s military efforts",
+          "undermining confidence in armed resistance",
+          "prophetic judgment on political-military policy"
+        ],
+        "explanation": "The 'weapons of war in your hands' function metonymically/synecdochically for Judah’s overall military capacity and efforts, not merely the physical objects themselves.",
+        "confidence": 0.74
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 21:5",
+    "deliberation": "Here the divine self‑presentation is strongly anthropomorphic and martial. I considered whether to separate 'I will fight against you' from 'with outstretched hand and strong arm'; they form one coherent divine‑warrior image. It clearly treats YHWH as a human combatant with limbs, conveying his active, powerful opposition.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנִלְחַמְתִּי אֲנִי אִתְּכֶם בְּיָד נְטוּיָה וּבִזְרוֹעַ חֲזָקָה",
+        "english_text": "and I Myself will battle against you with an outstretched mighty arm",
+        "target": [
+          "YHWH’s hostile intervention against Judah",
+          "divine judgment activity",
+          "theology"
+        ],
+        "vehicle": [
+          "a human warrior with outstretched hand and strong arm",
+          "armed human combatant",
+          "warfare/human body imagery"
+        ],
+        "ground": [
+          "direct, forceful, physically overpowering attack",
+          "active opposition and irresistible strength",
+          "God‑as‑warrior conceptualization of judgment"
+        ],
+        "posture": [
+          "threatening Judah with direct divine combat",
+          "heightening the terror of impending judgment",
+          "prophetic warning"
+        ],
+        "explanation": "God depicts himself as a human warrior with an 'outstretched hand' and 'strong arm,' an anthropomorphic divine‑warrior metaphor emphasizing the power and directness of his opposition to Judah.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 21:6",
+    "deliberation": "The verse speaks of striking the inhabitants and their dying by a great pestilence. The verbs 'strike' and 'die' and the mention of pestilence can be taken straightforwardly, as standard covenant‑curse language, without apparent figurative extension in this specific clause.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 21:7",
+    "deliberation": "I examined repeated 'into the hand of' phrases, the idiom 'seek their life,' and 'by the mouth of the sword.' All three are standard biblical idioms/metonymies: 'hand' for power/control, 'seek the life' for seeking to kill, and 'mouth of the sword' for its cutting edge. These are distinct expressions within the verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּיַד נְבוּכַדְרֶאצַּר מֶלֶךְ־בָּבֶל וּבְיַד אֹיְבֵיהֶם וּבְיַד מְבַקְשֵׁי נַפְשָׁם",
+        "english_text": "into the hands of King Nebuchadrezzar of Babylon, into the hands of their enemies, into the hands of those who seek their lives",
+        "target": [
+          "Judah’s subjection to foreign rulers and enemies",
+          "political and military domination",
+          "warfare/politics"
+        ],
+        "vehicle": [
+          "the 'hand' that holds or controls something",
+          "physical grasp/power of a person",
+          "human bodily control imagery"
+        ],
+        "ground": [
+          "being under another’s control and at their mercy",
+          "complete vulnerability to another’s power",
+          "domination‑as‑physical‑grasp conceptualization"
+        ],
+        "posture": [
+          "announcing total transfer of power over Judah",
+          "intensifying the horror of coming defeat",
+          "prophetic judgment"
+        ],
+        "explanation": "The repeated phrase 'into the hand of' uses 'hand' metonymically for controlling power, picturing Judah as delivered over to the complete control and mercy of their enemies.",
+        "confidence": 0.91
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מְבַקְשֵׁי נַפְשָׁם",
+        "english_text": "those who seek their lives",
+        "target": [
+          "enemies intent on killing them",
+          "hostile assassins/attackers",
+          "warfare/conflict"
+        ],
+        "vehicle": [
+          "seeking someone’s 'life'",
+          "pursuit of a target",
+          "quest/pursuit imagery"
+        ],
+        "ground": [
+          "active, determined intent to take life",
+          "relentless pursuit of another’s destruction",
+          "killing‑as‑pursuit conceptualization"
+        ],
+        "posture": [
+          "characterizing the enemies’ lethal intent",
+          "heightening the sense of mortal danger",
+          "prophetic warning"
+        ],
+        "explanation": "The idiom 'seek their life' means 'seek to kill them'; life is the object of pursuit, emphasizing the enemies’ determined, lethal hostility.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִכָּם לְפִי־חֶרֶב",
+        "english_text": "He will put them to the sword (lit. 'strike them by the mouth of the sword')",
+        "target": [
+          "the killing of Judah’s people in battle/execution",
+          "violent death by weapon",
+          "warfare"
+        ],
+        "vehicle": [
+          "the 'mouth' of a sword",
+          "sharp cutting edge as a mouth",
+          "body‑part imagery applied to weapons"
+        ],
+        "ground": [
+          "cutting/biting function likened to a mouth",
+          "the sword as an agent that 'devours' lives",
+          "violence‑as‑devouring conceptualization"
+        ],
+        "posture": [
+          "foretelling bloody execution by foreign ruler",
+          "underscoring the brutality of judgment",
+          "prophetic doom"
+        ],
+        "explanation": "The idiom 'mouth of the sword' treats the sword’s edge as a 'mouth' that devours, a metaphorical and metonymic way to describe killing by the sword.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 21:8",
+    "deliberation": "This verse contains the classic Deuteronomic imagery of 'the way of life and the way of death.' I identified a conceptual metaphor of moral choices as pathways and likely also a merism (life/death) for the totality of possible outcomes. They function as a unified, central figure in the verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנְנִי נֹתֵן לִפְנֵיכֶם אֶת־דֶּרֶךְ הַחַיִּים וְאֶת־דֶּרֶךְ הַמָּוֶת",
+        "english_text": "I set before you the way of life and the way of death",
+        "target": [
+          "the options of obedience (surrender) vs. stubborn resistance, with their outcomes",
+          "covenant choices and their consequences",
+          "ethics/theology"
+        ],
+        "vehicle": [
+          "two 'ways' or roads labeled life and death",
+          "divergent paths",
+          "journey/path imagery"
+        ],
+        "ground": [
+          "different choices lead in different directions with distinct endpoints",
+          "once on a path, one moves progressively toward its destination",
+          "moral‑choice‑as‑journey conceptualization; life/death as total outcome merism"
+        ],
+        "posture": [
+          "placing a stark choice before the people",
+          "urging them to choose the option that leads to survival",
+          "prophetic exhortation framed as covenant decision"
+        ],
+        "explanation": "The verse pictures obedience/surrender and resistance as two 'ways' or roads, one leading to life and one to death, a metaphorical and merismic formulation of the total range of possible outcomes before them.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 21:9",
+    "deliberation": "Looked at the death triad (sword, famine, pestilence) and the surrender motif. The most explicit figure is 'his life shall be to him as spoil,' treating survival as war-plunder. Also 'goes out and falls to the Chaldeans' is idiomatic for surrendering to them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיְתָה־לוֹ נַפְשׁוֹ לְשָׁלָל",
+        "english_text": "he shall at least gain his life (lit. 'his life shall be to him for spoil')",
+        "target": [
+          "bare survival of the individual who surrenders",
+          "remaining alive after catastrophe",
+          "warfare/judgment outcome"
+        ],
+        "vehicle": [
+          "spoil/booty taken in war",
+          "plunder",
+          "war‑economy imagery"
+        ],
+        "ground": [
+          "life is the only 'gain' salvaged from loss",
+          "something snatched from destruction like plunder from a battlefield",
+          "survival‑as‑rescued‑booty conceptualization"
+        ],
+        "posture": [
+          "downplaying the benefits of surrender while still offering it as mercy",
+          "emphasizing that survival will be minimal and precarious",
+          "prophetic warning mixed with promise"
+        ],
+        "explanation": "The idiom 'his life shall be to him for spoil' treats his surviving life as war‑plunder—something meager salvaged from comprehensive loss.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהַיּוֹצֵא וְנָפַל עַל־הַכַּשְׂדִּים",
+        "english_text": "whoever leaves and goes over (lit. 'falls') to the Chaldeans",
+        "target": [
+          "the act of surrendering to the besieging army",
+          "abandoning one’s own city to the enemy",
+          "warfare/politics"
+        ],
+        "vehicle": [
+          "to 'fall upon' someone",
+          "a body dropping or collapsing toward another",
+          "physical falling imagery"
+        ],
+        "ground": [
+          "movement downward/into enemy control",
+          "loss of standing and autonomy",
+          "surrender‑as‑falling conceptualization"
+        ],
+        "posture": [
+          "presenting surrender as a humiliating yet life‑saving act",
+          "framing the choice as a descent to the enemy",
+          "prophetic instruction through stark imagery"
+        ],
+        "explanation": "The idiom 'fall upon the Chaldeans' depicts surrender as a kind of collapse or fall into the enemy’s hands, emphasizing humiliation and loss of status.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 21:10",
+    "deliberation": "Identified two main figures: (1) 'I have set my face against this city,' where God's resolve is expressed by orienting his 'face' in hostility; and (2) 'it shall be delivered into the hand of the king of Babylon,' a repeated metonymy of 'hand' for power/control. The burning by fire can be taken literally in context.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי שַׂמְתִּי פָנַי בָּעִיר הַזֹּאת לְרָעָה וְלֹא לְטוֹבָה",
+        "english_text": "For I have set My face against this city for evil and not for good",
+        "target": [
+          "YHWH’s settled intention to harm, not bless, the city",
+          "divine favor vs. hostility",
+          "theology"
+        ],
+        "vehicle": [
+          "the orientation of a person’s face (toward/away, for/against)",
+          "facial direction and expression",
+          "human bodily and emotional cues"
+        ],
+        "ground": [
+          "turning one’s face against someone signals disfavor and opposition",
+          "face orientation expresses relational stance",
+          "divine‑attitude‑as‑facial‑orientation conceptualization"
+        ],
+        "posture": [
+          "declaring irrevocable divine hostility to the city",
+          "removing hope of reversal of judgment",
+          "prophetic pronouncement of doom"
+        ],
+        "explanation": "God’s 'face' is a metonym for his relational stance (favor vs. anger); to 'set my face against' is an anthropomorphic metaphor for determined hostility toward the city.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּיַד־מֶלֶךְ בָּבֶל תִּנָּתֵן",
+        "english_text": "It shall be delivered into the hand of the king of Babylon",
+        "target": [
+          "Jerusalem’s political and military subjugation to Babylon",
+          "transfer of control over the city",
+          "warfare/politics"
+        ],
+        "vehicle": [
+          "the 'hand' that receives and controls something",
+          "physical grasp/possession",
+          "body‑part imagery"
+        ],
+        "ground": [
+          "to be in someone’s hand is to be under their control",
+          "physical holding parallels political domination",
+          "domination‑as‑holding conceptualization"
+        ],
+        "posture": [
+          "announcing total Babylonian control over Jerusalem",
+          "emphasizing the completeness of defeat",
+          "prophetic judgment"
+        ],
+        "explanation": "The city being given into the 'hand' of the Babylonian king uses 'hand' metonymically for his controlling power over Jerusalem.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 21:11",
+    "deliberation": "The short oracle heading addresses 'the house of the king of Judah.' This expression uses 'house' for the royal dynasty or court, a standard metonymy. The command to hear the word is otherwise literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּלְבֵית מֶלֶךְ יְהוּדָה",
+        "english_text": "To the House of the king of Judah",
+        "target": [
+          "the royal family, court, and administration of Judah",
+          "monarchical institution",
+          "political structure"
+        ],
+        "vehicle": [
+          "a 'house' or household",
+          "physical/familial dwelling unit",
+          "domestic architecture/kinship"
+        ],
+        "ground": [
+          "a ruling family and its court function as one household unit",
+          "the physical house represents the dynasty and institution within",
+          "institution‑as‑household conceptualization"
+        ],
+        "posture": [
+          "directing the oracle specifically to the ruling elite",
+          "singling out the monarchy for responsibility",
+          "prophetic address"
+        ],
+        "explanation": "The 'house of the king of Judah' uses 'house' metonymically for the royal dynasty and court, not merely the physical building.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 21:12",
+    "deliberation": "This verse combines several figures: 'House of David' again metonymic for the Davidic dynasty; 'from the hand of the defrauder' with 'hand' as power; and wrath compared to a fire that goes forth and burns with none to quench—a clear simile/metaphor. I highlight two representative, distinct images: the dynastic 'house' and wrath‑as‑fire.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית דָּוִד",
+        "english_text": "O House of David",
+        "target": [
+          "the Davidic royal line and its ruling court",
+          "monarchy/dynasty",
+          "political structure"
+        ],
+        "vehicle": [
+          "a 'house' belonging to David",
+          "familial household",
+          "domestic/kinship imagery"
+        ],
+        "ground": [
+          "a dynasty is like a household descended from a founding ancestor",
+          "house stands for family line and its authority",
+          "dynasty‑as‑household conceptualization"
+        ],
+        "posture": [
+          "addressing the royal line as covenantally responsible",
+          "recalling Davidic obligations to justice",
+          "prophetic summons"
+        ],
+        "explanation": "Here 'House of David' is a metonymy where 'house' refers to the Davidic dynasty and court rather than a literal building.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פֶּן־תֵּצֵא כָּאֵשׁ חֲמָתִי וּבָעֲרָה וְאֵין מְכַבֶּה",
+        "english_text": "Else My wrath will break forth like fire and burn, with none to quench it",
+        "target": [
+          "YHWH’s wrathful judgment on unjust rulers",
+          "divine anger and its effects",
+          "theology/judgment"
+        ],
+        "vehicle": [
+          "fire that breaks out, burns, and cannot be quenched",
+          "uncontrollable conflagration",
+          "destructive natural force"
+        ],
+        "ground": [
+          "both wrath and fire are intense, consuming, and hard to stop once unleashed",
+          "spreading destruction in their path",
+          "anger‑as‑fire conceptualization"
+        ],
+        "posture": [
+          "warning the rulers of the consequences of injustice",
+          "urging immediate reform to avert destruction",
+          "prophetic admonition"
+        ],
+        "explanation": "Divine wrath is explicitly compared to fire that bursts out and burns unquenched, a simile/metaphor portraying judgment as an unstoppable conflagration.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 21:13",
+    "deliberation": "The key figurative elements are the designations 'inhabitant of the valley' and 'rock of the plain.' These likely refer collectively to Jerusalem/Zion in its topographical setting, portraying it as a secure rocky stronghold in a valley/plain, highlighting its sense of invulnerability. This is a metaphorical epithet for the city and its inhabitants.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יֹשֶׁבֶת הָעֵמֶק צּוּר הַמִּישֹׁר",
+        "english_text": "O inhabitant of the valley, O rock of the plain",
+        "target": [
+          "Jerusalem/Zion and its proud inhabitants",
+          "the city as a political‑religious center",
+          "geopolitical entity"
+        ],
+        "vehicle": [
+          "an inhabitant dwelling in a valley; a rock in the plain",
+          "secure topographical feature/stronghold",
+          "landscape/fortress imagery"
+        ],
+        "ground": [
+          "elevated, seemingly impregnable position amid surroundings",
+          "stability, strength, and perceived safety",
+          "city‑as‑fortress‑rock conceptualization"
+        ],
+        "posture": [
+          "challenging the city’s false sense of security",
+          "ironic address to a self‑confident stronghold",
+          "prophetic rebuke"
+        ],
+        "explanation": "By calling Jerusalem 'inhabitant of the valley, rock of the plain,' the text personifies and metaphorically depicts the city as a secure rocky stronghold in its terrain, exposing its boastful sense of invulnerability.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 21:14",
+    "deliberation": "Identified two primary figures: (1) 'according to the fruit of your deeds,' where deeds produce 'fruit'—a metaphor for consequences; and (2) 'I will kindle a fire in its forest, and it shall eat/consume all around it,' where 'forest' likely stands for the royal complex or city, and fire 'eats' its surroundings. Both exploit vivid imagery to depict judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּפָקַדְתִּי עֲלֵיכֶם כִּפְרִי מַעַלְלֵיכֶם",
+        "english_text": "I will punish you according to the fruit of your deeds",
+        "target": [
+          "the outcomes and recompense for their actions",
+          "moral consequences of behavior",
+          "ethics/judgment"
+        ],
+        "vehicle": [
+          "fruit produced by actions",
+          "agricultural yield",
+          "agrarian imagery"
+        ],
+        "ground": [
+          "actions naturally lead to results, as trees bear fruit",
+          "the nature of the fruit reflects the nature of the tree/deeds",
+          "consequences‑as‑fruit conceptualization"
+        ],
+        "posture": [
+          "asserting the just, measure‑for‑measure nature of judgment",
+          "linking punishment directly to prior conduct",
+          "prophetic declaration of retribution"
+        ],
+        "explanation": "Their deeds are portrayed as producing 'fruit,' a metaphor suggesting that punishment is the natural, fitting outgrowth of their own actions.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִצַּתִּי אֵשׁ בְּיַעְרָהּ וְאָכְלָה כׇּל־סְבִיבֶיהָ",
+        "english_text": "I will set fire to its forest; it shall consume all that is around it",
+        "target": [
+          "the destruction of the royal/city complex and its surroundings",
+          "comprehensive judgment on the city",
+          "warfare/judgment"
+        ],
+        "vehicle": [
+          "a forest set ablaze that eats/consumes what is around it",
+          "raging wildfire",
+          "natural destructive force"
+        ],
+        "ground": [
+          "fire rapidly devours all in its vicinity",
+          "unstoppable spread and total devastation",
+          "judgment‑as‑consuming‑fire conceptualization; forest‑as‑royal‑complex"
+        ],
+        "posture": [
+          "threatening total devastation of the royal center and environs",
+          "underscoring the thoroughness of God’s judgment",
+          "prophetic doom oracle"
+        ],
+        "explanation": "The 'forest' likely stands metonymically for the royal/palace area (or the city’s structures), and the fire is personified as something that 'eats/consumes' everything around, a vivid metaphor of total, consuming judgment.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

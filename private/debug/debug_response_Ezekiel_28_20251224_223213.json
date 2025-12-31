@@ -1,0 +1,740 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 28:1",
+    "deliberation": "Checked whether the prophetic formula is purely literal. The phrase 'the word of YHWH came to me' treats 'word' as an active agent that can 'come,' which is a conventional personification/metonymy for divine revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "The word of GOD came to me",
+        "target": ["divine revelation to the prophet", "prophetic message", "theological"],
+        "vehicle": ["a 'word' that comes/arrives like a person or messenger", "moving agent", "social interaction/communication"],
+        "ground": ["initiative and directed movement from sender to recipient", "intentional communication", "communication dynamics"],
+        "posture": ["emphasis on God’s initiative in revelation", "theological evaluation", "theological"],
+        "explanation": "The 'word' is spoken of as if it were a being that can come to Ezekiel, personifying the message and metonymically standing for God’s act of revelation.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 28:2",
+    "deliberation": "Looked for pride imagery and divine-claim language. Found idiomatic/metaphorical uses of 'heart' and spatial imagery ('seat of God,' 'heart of the seas') used for status and security, plus a further metaphor of the king’s mind as a divine heart.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יַעַן גָּבַהּ לִבְּךָ",
+        "english_text": "Because your heart has been lifted up / because you have been so haughty",
+        "target": ["the king of Tyre’s inner attitude of pride", "moral-spiritual state", "ethical/psychological"],
+        "vehicle": ["a heart lifted up high", "vertical elevation", "spatial orientation"],
+        "ground": ["being exalted above one’s proper place, arrogance", "excessive height", "status hierarchy"],
+        "posture": ["condemnation of arrogant self-exaltation", "negative evaluation", "ethical/theological"],
+        "explanation": "The king’s pride is depicted as his 'heart' being lifted up, an idiomatic metaphor using vertical height to convey arrogant self-exaltation.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֵל אָנִי מוֹשַׁב אֱלֹהִים יָשַׁבְתִּי בְּלֵב יַמִּים",
+        "english_text": "“I am a god; I sit enthroned like a god in the heart of the seas”",
+        "target": ["the king’s political-security status and royal rule in Tyre", "royal power and security", "political"],
+        "vehicle": ["a divine throne located in the 'heart' of the seas", "central, elevated, secure seat", "cosmic/topographical"],
+        "ground": ["supreme authority, unassailable central position, invulnerability", "divine enthronement and centrality", "power and security"],
+        "posture": ["exposing and critiquing the king’s presumptuous self-deification", "negative evaluation", "theological/political"],
+        "explanation": "The king’s claim to sit in a 'seat of God' in the 'heart of the seas' metaphorically presents his rule over island-Tyre as a divine, centrally enthroned, invulnerable status.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּתֵּן לִבְּךָ כְּלֵב אֱלֹהִים",
+        "english_text": "you deemed your mind equal to a god’s / you gave your heart as the heart of a god",
+        "target": ["the king’s intellect and self-estimation", "inner cognitive life", "psychological"],
+        "vehicle": ["the 'heart' of a god", "divine mind", "divine attributes"],
+        "ground": ["perceived boundless wisdom, autonomy, and authority", "superior cognitive status", "knowledge/authority"],
+        "posture": ["judgment on the king’s blasphemous self-comparison to deity", "negative evaluation", "theological"],
+        "explanation": "The king’s mind is metaphorically described as being like the heart of a god, depicting his claim to divine-level wisdom and status.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 28:3",
+    "deliberation": "Assessed whether the praise of wisdom is literal or exaggerated/ironic. The comparison 'wiser than Daniel' and 'no hidden matter' language appears deliberately overstated and sarcastic, functioning as hyperbolic irony rather than straightforward compliment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנֵּה חָכָם אַתָּה מִדָּנִיאֵל כׇּל־סָתוּם לֹא עֲמָמֻךָ",
+        "english_text": "Yes, you are wiser than Daniel; in no hidden matter can anyone compare to you.",
+        "target": ["the king of Tyre’s vaunted wisdom", "claimed intellectual capacity", "psychological/social"],
+        "vehicle": ["comparison surpassing Daniel and knowing every hidden thing", "idealized sage-figure and exhaustive knowledge", "wisdom tradition"],
+        "ground": ["extreme, exaggerated degree of wisdom and insight", "unsurpassed ability", "cognitive excellence"],
+        "posture": ["ironic echoing of the king’s self-flattery to ridicule it", "sarcastic evaluation", "rhetorical/theological"],
+        "explanation": "The statement that he surpasses Daniel and that no secret is hidden from him is deliberately hyperbolic and ironic, mocking the king’s inflated self-image rather than sincerely praising him.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 28:4",
+    "deliberation": "Reviewed whether 'wisdom' and 'treasuries' are used figuratively. Here they describe literal economic skill and accumulated wealth without clear metaphorical or idiomatic usage beyond standard abstractions.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 28:5",
+    "deliberation": "Considered trade language as literal and checked for idioms. The notable figurative element is again the idiomatic metaphor of the 'heart' being raised, expressing pride grounded in wealth.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיִּגְבַּהּ לְבָבְךָ בְּחֵילֶךָ",
+        "english_text": "And you have grown haughty because of your wealth (your heart was lifted up in your wealth)",
+        "target": ["the king’s inner arrogance produced by riches", "emotional-moral disposition", "ethical/psychological"],
+        "vehicle": ["a heart raised high", "vertical elevation", "spatial orientation"],
+        "ground": ["being above others and above one’s proper station", "superiority, exaltation", "status hierarchy"],
+        "posture": ["rebuke of pride that is grounded in material success", "negative evaluation", "ethical/theological"],
+        "explanation": "The expression 'your heart was lifted up' uses height as a metaphor for haughtiness, an idiom describing arrogance rooted in wealth.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 28:6",
+    "deliberation": "Looked for repeated pride imagery. The verse reuses the 'heart like the heart of a god' wording, a metaphor/idiom for arrogating divine status to one’s inner counsel.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יַעַן תִּתְּךָ אֶת־לְבָבְךָ כְּלֵב אֱלֹהִים",
+        "english_text": "Because you have deemed your mind equal to a god’s / Because you set your heart as the heart of God",
+        "target": ["the king’s mind and intentional stance toward himself", "inner cognition and will", "psychological"],
+        "vehicle": ["the heart of God", "divine mind", "divine attributes"],
+        "ground": ["claim to supreme wisdom, autonomy, and authority", "elevated cognitive and status position", "knowledge/authority"],
+        "posture": ["condemnation of presumptuous self‑deification", "negative evaluation", "theological"],
+        "explanation": "The king’s 'heart'—his inner mind—is likened to God’s heart, metaphorically expressing his claim to divine-level status and wisdom.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 28:7",
+    "deliberation": "Examined the violent imagery. The 'swords' are directed against the 'beauty of your wisdom' and 'splendor'—abstract qualities—so physical attack language is metaphorically applied to status/reputation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהֵרִיקוּ חַרְבוֹתָם עַל־יְפִי חׇכְמָתֶךָ וְחִלְּלוּ יִפְעָתֶךָ",
+        "english_text": "They shall unsheathe their swords against your prized shrewdness, and they shall strike down/profane your splendor.",
+        "target": ["the king’s prestigious wisdom, splendor, and public standing", "honor and reputation", "social/political"],
+        "vehicle": ["swords attacking beauty and splendor, and cultic 'profanation'", "physical defilement and desecration", "ritual/warfare"],
+        "ground": ["violent removal and shaming of what was once admired and set apart", "destruction of honor", "social status"],
+        "posture": ["announcement of humiliating judgment on the king’s vaunted status", "negative evaluation", "theological/political"],
+        "explanation": "Swords cannot literally cut 'wisdom' or 'splendor'; the language metaphorically depicts military conquest as violently desecrating the king’s prestige and glory, using cultic 'profanation' imagery.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 28:8",
+    "deliberation": "Evaluated Sheol/grave imagery and death formula. 'Bring you down to the Pit' is a common metaphor for consigning someone to the realm of the dead. 'Death of the slain' is a set phrase for violent death, functioning idiomatically.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לַשַּׁחַת יוֹרִידוּךָ",
+        "english_text": "They shall bring you down to the Pit",
+        "target": ["the king’s death and removal from life and power", "termination of life/status", "existential/political"],
+        "vehicle": ["being lowered into a pit", "descent into a deep hole/underworld", "topographical/underworld imagery"],
+        "ground": ["being cast down, trapped, and removed from the realm of the living", "loss of power and freedom", "life vs. death"],
+        "posture": ["portrays death as a humiliating downward movement under divine judgment", "negative evaluation", "theological"],
+        "explanation": "Death is portrayed as being brought down into 'the Pit,' a conventional metaphor (and metonymy) for Sheol/the grave, emphasizing humiliation and total removal.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וָמַתָּה מְמוֹתֵי חָלָל",
+        "english_text": "In the heart of the sea you shall die the death of the slain",
+        "target": ["the manner of the king’s end", "mode of death", "existential/military"],
+        "vehicle": ["'death of the slain'", "standard formula for violent battlefield death", "warfare"],
+        "ground": ["violent, dishonorable killing rather than natural death", "forcible removal", "conflict and defeat"],
+        "posture": ["underscores the shameful character of the king’s demise", "negative evaluation", "theological/political"],
+        "explanation": "The phrase 'death of the slain' is an idiomatic formula for a violent, battle-like death, marking his end as disgraceful rather than peaceful.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 28:9",
+    "deliberation": "Considered whether the rhetorical question or 'before your slayers' language is figurative beyond rhetoric. The verse is a straightforward challenge contrasting his claim to deity with his obvious mortality at death; no distinct metaphor or idiom beyond prior 'I am a god' claim.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 28:10",
+    "deliberation": "Looked at 'death of the uncircumcised' and 'by the hand of strangers.' Both are idiomatic: 'hand' for agency and 'uncircumcised' as a cultural-religious label standing for foreign, shameful death.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מוֹתֵי עֲרֵלִים תָּמוּת",
+        "english_text": "You shall die the death of the uncircumcised",
+        "target": ["the king’s disgraceful fate", "type/status of death", "existential/social-religious"],
+        "vehicle": ["the death of uncircumcised foreigners", "outsider, non‑covenant death", "ethnic/religious identity"],
+        "ground": ["shameful, alien, God-forsaken kind of end", "being treated as an outsider", "covenant inclusion vs. exclusion"],
+        "posture": ["pronounces the king’s fate as that of a despised outsider", "negative evaluation", "theological"],
+        "explanation": "Calling it 'the death of the uncircumcised' uses covenantal language to depict his death as shameful and foreign, not befitting his claims to divinity.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּיַד־זָרִים",
+        "english_text": "by the hands of strangers",
+        "target": ["the agents who will kill the king", "human agents of judgment", "political/military"],
+        "vehicle": ["their 'hands' as instruments of action", "body part representing agency", "human body"],
+        "ground": ["hands effect what people do", "instrumentality and control", "agency and causation"],
+        "posture": ["indicates foreign powers as instruments of divine judgment", "theological interpretation", "theological/political"],
+        "explanation": "'Hand' stands metonymically for the effective power and agency of foreign nations who will execute him.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 28:11",
+    "deliberation": "Same prophetic formula as v.1. Again the 'word of YHWH' is depicted as coming, which personifies the divine message.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "The word of GOD came to me",
+        "target": ["the act of God revealing a message", "prophetic revelation", "theological"],
+        "vehicle": ["a 'word' that travels and arrives", "moving agent/messenger", "social interaction/communication"],
+        "ground": ["intentional approach from sender to recipient", "initiative and directedness", "communication dynamics"],
+        "posture": ["stresses that the prophecy originates in God, not the prophet", "theological emphasis", "theological"],
+        "explanation": "The 'word' is portrayed as an active subject that 'comes,' a standard personification and metonymy for God’s revelatory action.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 28:12",
+    "deliberation": "Looked at the lament introduction and descriptions of the king. 'Seal of perfection' is a clear metaphor, and 'full of wisdom, perfect in beauty' is hyperbolic idealization within that metaphorical frame.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַתָּה חוֹתֵם תָּכְנִית מָלֵא חׇכְמָה וּכְלִיל יֹפִי",
+        "english_text": "You were the seal of perfection, full of wisdom and flawless in beauty.",
+        "target": ["the king of Tyre’s former exalted status and qualities", "royal character and appearance", "social/political"],
+        "vehicle": ["a seal that perfectly imprints a pattern; flawless beauty", "crafted object of perfect design", "material culture/art"],
+        "ground": ["completeness, exemplarity, nothing lacking or flawed", "ideal form", "aesthetics/excellence"],
+        "posture": ["presents his initial state as ideally exalted in order to heighten the tragedy of his fall", "lamenting evaluation", "theological/aesthetic"],
+        "explanation": "Calling him 'the seal of perfection' and 'flawless in beauty' metaphorically idealizes the king as the perfect imprint of wisdom and beauty, using hyperbole to stress how high he once stood.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 28:13",
+    "deliberation": "Assessed whether Eden is literal or symbolic. The king is placed in 'Eden, the garden of God' and portrayed as adorned with precious stones—mythic-garden and jewel imagery functioning as an extended metaphor for paradisal, priestly-royal splendor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּעֵדֶן גַּן־אֱלֹהִים הָיִיתָ",
+        "english_text": "You were in Eden, the garden of God",
+        "target": ["the king’s exalted, privileged environment and status", "royal setting and condition", "social/theological"],
+        "vehicle": ["Eden, God’s garden", "primordial paradise", "cosmic-sacred space"],
+        "ground": ["nearness to God, abundance, beauty, and privilege", "ideal blessed environment", "blessing/proximity to deity"],
+        "posture": ["depicts his former state as paradisal in order to contrast his later fall", "lamenting evaluation", "theological"],
+        "explanation": "Placing the historical king in 'Eden' is not literal geography but a metaphorical relocation to God’s primordial garden, symbolizing ideal nearness to God and fullness of blessing.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כׇּל־אֶבֶן יְקָרָה מְסֻכָתֶךָ ... זָהָב מְלֶאכֶת תֻּפֶּיךָ וּנְקָבֶיךָ בָּךְ",
+        "english_text": "Every precious stone was your adornment ... and gold beautifully wrought for you",
+        "target": ["the king’s glory and high status", "regal splendor", "social/political"],
+        "vehicle": ["a garment or covering made of every kind of precious stone and gold workmanship", "jeweled vestment", "material wealth/cultic regalia"],
+        "ground": ["extreme value, beauty, and honor, like a richly adorned high priest/king", "radiance and rarity", "aesthetic and economic worth"],
+        "posture": ["emphasizes how richly endowed and honored he was", "elevating evaluation before judgment", "theological/aesthetic"],
+        "explanation": "The list of precious stones and gold as his 'covering' metaphorically portrays his status as one clothed in unparalleled honor and value, likely echoing priestly-royal vestments.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 28:14",
+    "deliberation": "This verse is dense with mythic-cherubic imagery. The king is likened to an anointed cherub on God’s holy mountain, walking among 'stones of fire'—an extended metaphor mapping him onto a heavenly guardian in a dangerous sacred realm.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַתְּ כְּרוּב מִמְשַׁח הַסּוֹכֵךְ",
+        "english_text": "I created you as a cherub with outstretched shielding wings / You were the anointed shielding cherub",
+        "target": ["the king’s protective, exalted office over Tyre", "royal role and status", "political/theological"],
+        "vehicle": ["anointed cherub who covers (guardian being with wings)", "heavenly throne-guardian", "angelic/cultic imagery"],
+        "ground": ["exalted nearness to the divine, protective responsibility, consecration", "guardian status", "sacred service"],
+        "posture": ["presents the king’s original calling as a divinely appointed, sacred guardian", "elevating yet ominous evaluation", "theological"],
+        "explanation": "The king is metaphorically portrayed as an 'anointed cherub that covers,' mapping his royal office onto the image of a heavenly guardian of God’s presence.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּהַר קֹדֶשׁ אֱלֹהִים הָיִיתָ בְּתוֹךְ אַבְנֵי־אֵשׁ הִתְהַלָּכְתָּ",
+        "english_text": "You resided on God’s holy mountain; you walked among stones of fire.",
+        "target": ["the king’s exalted, perilous nearness to God and his privileged environment", "status and sphere of activity", "theological/political"],
+        "vehicle": ["God’s holy mountain and fiery stones", "cosmic mountain and blazing stones", "mythic/cosmic imagery"],
+        "ground": ["elevation, sacredness, glory, and danger in God’s immediate sphere", "lofty and hazardous proximity", "sacred space vs. profane"],
+        "posture": ["underscores both the height of his position and the danger of his later fall", "solemn evaluation", "theological"],
+        "explanation": "Living on 'God’s holy mountain' and walking among 'stones of fire' symbolically describes his high, sacred, and dangerous proximity to the divine, not a literal geography.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 28:15",
+    "deliberation": "Explored whether 'your ways' is idiomatic. It follows the common biblical metaphor of life as a path, where 'ways' stands for moral conduct rather than literal routes.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תָּמִים אַתָּה בִּדְרָכֶיךָ",
+        "english_text": "You were blameless in your ways",
+        "target": ["the king’s pattern of conduct and character", "ethical behavior", "moral"],
+        "vehicle": ["'ways' as paths one walks", "routes or roads", "spatial movement"],
+        "ground": ["a course of life analogous to a path one travels, with direction and choices", "lifestyle as journey", "life trajectory"],
+        "posture": ["evaluates his initial course of life as morally sound", "positive moral assessment (before fall)", "ethical/theological"],
+        "explanation": "'Ways' is an idiomatic metaphor for one’s conduct or manner of life, pictured as paths on which a person walks.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 28:16",
+    "deliberation": "Looked at trade language and the continuation of cherub/mountain imagery. The core figure is the removal of the 'covering cherub' from the divine mountain and fiery stones, continuing the metaphor of the king as a heavenly guardian expelled from God’s realm.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וָאֲחַלֶּלְךָ מֵהַר אֱלֹהִים וָאַבֶּדְךָ כְּרוּב הַסֹּכֵךְ מִתּוֹךְ אַבְנֵי־אֵשׁ",
+        "english_text": "So I have struck you down from the mountain of God, and I have destroyed you, O shielding cherub, from among the stones of fire.",
+        "target": ["the king’s loss of office and expulsion from his exalted status", "deposition and judgment", "political/theological"],
+        "vehicle": ["a covering cherub being profaned and expelled from God’s mountain and fiery stones", "banished guardian from sacred realm", "angelic/cosmic imagery"],
+        "ground": ["loss of sacred privilege, removal from God’s immediate presence and from a high place", "downfall from exalted sphere", "status reversal"],
+        "posture": ["presents his judgment as a desecration and banishment from the divine realm", "negative, judicial evaluation", "theological"],
+        "explanation": "The king, portrayed as a 'covering cherub,' is said to be profaned and destroyed from God’s mountain and fiery stones, metaphorically depicting his deposition as expulsion from a heavenly-sounding sacred realm.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 28:17",
+    "deliberation": "Examined pride and humiliation language. Found the idiom of the 'heart' being lifted by beauty, and the humiliation images of being cast to the ground and made a spectacle for kings.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "גָּבַהּ לִבְּךָ בְּיָפְיֶךָ",
+        "english_text": "You grew haughty because of your beauty (your heart was lifted up in your beauty)",
+        "target": ["the king’s inner pride derived from his attractiveness/glory", "psychological state", "ethical/psychological"],
+        "vehicle": ["a heart raised high", "elevated object", "spatial elevation"],
+        "ground": ["exaltation beyond proper measure, feeling above others", "height as superiority", "status hierarchy"],
+        "posture": ["condemns beauty-induced pride as self-corrupting", "negative moral evaluation", "ethical/theological"],
+        "explanation": "As earlier, the 'heart' being lifted up is an idiomatic metaphor depicting arrogance, here explicitly tied to his beauty.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־אֶרֶץ הִשְׁלַכְתִּיךָ לִפְנֵי מְלָכִים נְתַתִּיךָ לְרַאֲוָה בָךְ",
+        "english_text": "I have cast you to the ground; I have made you an object for kings to stare at.",
+        "target": ["the king’s humiliation and public disgrace", "status and reputation", "social/political"],
+        "vehicle": ["a body thrown to the ground and displayed as a spectacle", "discarded object of public viewing", "physical posture/public show"],
+        "ground": ["from high to low, exposed helplessly, subject to others’ gaze and contempt", "status inversion and shame", "honor/shame dynamics"],
+        "posture": ["depicts God’s judgment as utter humiliation before other rulers", "negative, shaming evaluation", "theological/political"],
+        "explanation": "Being 'cast to the ground' and made into a spectacle for kings metaphorically portray his reversal from exalted status to humiliating public disgrace.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 28:18",
+    "deliberation": "Considered trade and sanctuary language. Focused on the internal fire imagery—'I made a fire issue from you; it has devoured you; I made you ashes'—as metaphorical for self-destructive judgment culminating in total ruin.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וָאוֹצִא־אֵשׁ מִתּוֹכְךָ הִיא אֲכָלַתְךָ וָאֶתֶּנְךָ לְאֵפֶר עַל־הָאָרֶץ",
+        "english_text": "So I made a fire issue from you, and it has devoured you; I have reduced you to ashes on the ground",
+        "target": ["the king’s destruction brought on by his own guilt and by God’s judgment", "downfall and annihilation", "theological/political"],
+        "vehicle": ["a fire coming out from within a person and consuming him until only ashes remain", "self-originating conflagration", "physical destruction"],
+        "ground": ["judgment arising from within his own corrupt state, leading to complete ruin", "self-destructive consequences and totality of loss", "cause-effect and annihilation"],
+        "posture": ["portrays his end as both deserved (from within) and total under God’s hand", "judicial evaluation", "theological"],
+        "explanation": "The image of a fire issuing from inside him to devour him, leaving only ashes, metaphorically depicts his own guilt and God’s judgment consuming him to utter ruin, with hyperbolic stress on total destruction.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 28:19",
+    "deliberation": "Checked for imagery in the reaction of nations. 'You have become a horror' is metaphorical—he himself is not literally a terror-entity but a symbol that evokes horror; 'you are not forever' reads as prophetic hyperbole about his political annihilation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בַּלָּהוֹת הָיִיתָ וְאֵינְךָ עַד־עוֹלָם",
+        "english_text": "You have become a horror and have ceased to be, forever.",
+        "target": ["the king/kingdom’s post-judgment reputation and status", "memory and continued existence", "social/political"],
+        "vehicle": ["a 'horror' and a state of non-existence", "terrifying spectacle and obliteration", "emotive response and annihilation"],
+        "ground": ["others recoil in dread at your fate; politically you are as good as gone", "evoking terror and total end", "perception and outcome"],
+        "posture": ["underscores the exemplary, terrifying nature of his downfall", "negative, warning evaluation", "theological"],
+        "explanation": "The king is said to 'become a horror' and to no longer exist forever; this is metaphorical and hyperbolic for his becoming an object of dread and his effective annihilation from the political stage.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 28:20",
+    "deliberation": "Same formula as vv.1 and 11: again, 'the word of YHWH came to me' personifies the divine message as a coming agent.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי",
+        "english_text": "The word of GOD came to me",
+        "target": ["God’s act of communicating with Ezekiel", "prophetic revelation", "theological"],
+        "vehicle": ["a 'word' that moves and arrives", "mobile entity/messenger", "social interaction/communication"],
+        "ground": ["initiative, directedness, and agency in communication", "active sending and coming", "communication dynamics"],
+        "posture": ["asserts divine origin and authority for what follows", "theological emphasis", "theological"],
+        "explanation": "The phrase again personifies the 'word' as if it travels to the prophet, a conventional figurative way to speak of divine revelation.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 28:21",
+    "deliberation": "Evaluated 'set your face toward Sidon' as possible idiom. It’s a standard prophetic idiom for turning one’s attention and stance resolutely toward a target of judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִׂים פָּנֶיךָ אֶל־צִידוֹן",
+        "english_text": "set your face toward Sidon",
+        "target": ["Ezekiel’s prophetic focus and stance toward Sidon", "attention and resolve", "psychological/prophetic"],
+        "vehicle": ["directing one’s physical face toward someone", "bodily orientation", "embodied interaction"],
+        "ground": ["fixing attention and intention firmly on a person/object", "determined confrontation", "stance and focus"],
+        "posture": ["signals a deliberate, confrontational prophetic address to Sidon", "judgmental stance", "theological/political"],
+        "explanation": "Setting one’s 'face' toward a city is an idiomatic metaphor for turning one’s attention and confrontational stance toward it in prophetic speech.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 28:22",
+    "deliberation": "Reviewed whether glory/holiness language is figurative. 'I will be glorified in your midst' and 'I will be sanctified in her' use cultic terms metonymically for God’s reputation and recognition among the nations through judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנִכְבַּדְתִּי בְּתוֹכֵךְ ... וְנִקְדַּשְׁתִּי בָהּ",
+        "english_text": "I will gain glory in your midst ... and show Myself holy through her.",
+        "target": ["how God is perceived and acknowledged among Sidon and the nations", "divine reputation", "theological/social"],
+        "vehicle": ["being glorified and sanctified", "receiving honor and recognition of holiness", "cultic and reputational status"],
+        "ground": ["God’s holiness and sovereignty becoming publicly recognized through His acts", "manifestation leading to acknowledgment", "perception and status"],
+        "posture": ["asserts that judgment on Sidon will function as a public vindication of God’s holiness", "theological interpretation", "theological"],
+        "explanation": "To be 'glorified' and 'sanctified' in or through a nation is metonymic for God’s character being recognized and honored as holy because of His judgments.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 28:23",
+    "deliberation": "Looked at pestilence and sword language. 'The sword comes upon her from all sides' uses 'sword' as a metonymy for war/invading armies; letting pestilence loose also slightly personifies the plague as an agent sent.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשִׁלַּחְתִּי־בָהּ דֶּבֶר ... בְּחֶרֶב עָלֶיהָ מִסָּבִיב",
+        "english_text": "I will let pestilence loose against her ... when the sword comes upon her from all sides.",
+        "target": ["the military and plague judgments on Sidon", "instruments of punishment", "political/theological"],
+        "vehicle": ["pestilence 'sent' and a sword that 'comes upon' a city", "plague and weapon acting as agents", "disease/warfare imagery"],
+        "ground": ["God directs destructive forces, especially war ('sword') and plague, as if they were His commissioned agents", "instrumentality and attack", "judgment mechanisms"],
+        "posture": ["depicts war and plague as God’s tools against Sidon", "judicial interpretation", "theological/political"],
+        "explanation": "'Sword' stands metonymically for invading armies and warfare, and both sword and pestilence are slightly personified as agents 'sent' or 'coming upon' the city by God.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 28:24",
+    "deliberation": "Identified the thorn/brier imagery. Neighboring hostile nations are depicted as 'prickling briers' and 'lacerating thorns'—a sustained metaphor for persistent, painful harassment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "סִלּוֹן מַמְאִיר וְקוֹץ מַכְאִב מִכֹּל סְבִיבֹתָם הַשָּׁאטִים אוֹתָם",
+        "english_text": "prickling briers and lacerating thorns from all the neighbors who despise them",
+        "target": ["the hostile surrounding nations that afflict Israel", "oppressive neighbors", "international/political"],
+        "vehicle": ["prickling briers and painful thorns", "harmful, piercing plants", "natural world"],
+        "ground": ["constant irritation, wounding, and difficulty of removal", "causing pain and hindrance", "experience of suffering"],
+        "posture": ["promises relief from the painful oppression of hostile nations", "comforting evaluation for Israel", "theological/pastoral"],
+        "explanation": "Hostile neighboring peoples are metaphorically described as briers and thorns, emphasizing their role in wounding and irritating Israel.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 28:25",
+    "deliberation": "Considered the gathering and sanctification language. The gathering from nations is literal exile-return imagery; 'I will be sanctified in them in the sight of the nations' again uses holiness terminology metonymically for God’s reputation being vindicated.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנִקְדַּשְׁתִּי בָם לְעֵינֵי הַגּוֹיִם",
+        "english_text": "and have shown Myself holy through them in the sight of the nations",
+        "target": ["how God is known and regarded among the nations through Israel’s restoration", "divine reputation", "theological/social"],
+        "vehicle": ["being 'sanctified' in or through a people", "recognized as holy", "cultic status/recognition"],
+        "ground": ["God’s uniqueness and holiness becoming evident through His historical actions on Israel’s behalf", "manifestation leading to acknowledgment", "perception and status"],
+        "posture": ["presents restoration as a means of publicly vindicating God’s holiness", "positive theological evaluation", "theological"],
+        "explanation": "To be 'sanctified' in Israel before the nations is a metonymy for God’s holiness being recognized and honored as He restores His people.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 28:26",
+    "deliberation": "Evaluated the security and prosperity language. 'Dwell in security' is idiomatic, and building houses/planting vineyards functions as a metonymy/synecdoche for a stable, prosperous settled life under divine protection.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְיָשְׁבוּ עָלֶיהָ לָבֶטַח וּבָנוּ בָתִּים וְנָטְעוּ כְּרָמִים וְיָשְׁבוּ לָבֶטַח",
+        "english_text": "and they shall dwell on it in security. They shall build houses and plant vineyards, and shall dwell on it in security",
+        "target": ["Israel’s future state of rest, stability, and prosperity in the land", "national well‑being", "social/political"],
+        "vehicle": ["dwelling 'securely' and engaging in house‑building and vineyard‑planting", "unthreatened settlement and cultivation", "everyday agrarian life"],
+        "ground": ["freedom from threat enabling normal, productive life and long‑term investment", "stability and flourishing", "peace vs. war/exile"],
+        "posture": ["promises comprehensive peace and prosperity under God’s protection", "positive, restorative evaluation", "theological/pastoral"],
+        "explanation": "Living 'securely' and building houses and vineyards is idiomatic and metonymic for a settled, unthreatened, and prosperous existence in the land.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

@@ -1,0 +1,558 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 16:1",
+    "deliberation": "Checked the standard prophetic formula. The only potentially figurative element is 'the word of YHWH came to me,' which treats 'word' as something that moves/approaches like a person or object. That is a conventional metaphor/personification for revelation; nothing else in the verse is figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָ֖ה אֵלַ֥י",
+        "english_text": "The word of GOD came to me",
+        "target": ["Prophetic revelation to Jeremiah", "Divine communication", "Theological/spiritual"],
+        "vehicle": ["A 'word' that comes/arrives like a visitor", "Physical movement/visitation", "Bodily/spatial experience"],
+        "ground": ["Initiative and approach of another toward Jeremiah", "Arrival/contact", "Relational encounter"],
+        "posture": ["Affirmation of direct divine initiative", "Authoritative prophetic self-presentation", "Religious discourse/legitimation"],
+        "explanation": "Divine revelation is depicted as a concrete 'word' that comes or arrives, personifying and using metonymy for God's communicative action.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 16:2",
+    "deliberation": "A direct prohibition against marriage and childbearing in a specific place. No comparisons, personifications, or idiomatic phrases beyond straightforward command language. 'In this place' functions literally as a spatial reference.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 16:3",
+    "deliberation": "Transitional oracle-introduction specifying subjects (children, mothers, fathers) and location. All terms are literal reference to people and place; no figurative comparisons, idioms, or anthropomorphisms appear.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 16:4",
+    "deliberation": "Most of the verse could be literally fulfilled (dying, not buried, eaten by birds). The clearly figurative expression is the comparison of unburied corpses to dung on the surface of the ground, which devalues them. This is a metaphor (not marked with כ but with ל, functioning as 'as').",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְדֹ֛מֶן עַל־פְּנֵ֥י הָאֲדָמָ֖ה יִהְי֑וּ",
+        "english_text": "they shall be like dung on the surface of the ground",
+        "target": ["The unburied corpses of the people", "Dishonored dead", "Human social-religious status"],
+        "vehicle": ["Dung on the surface of the ground", "Worthless filth/waste", "Physical impurity/garbage"],
+        "ground": ["Contempt, worthlessness, and pollution in public view", "Social and ritual disgrace", "Cultural notions of impurity and shame"],
+        "posture": ["Judgmental devaluation of the people", "Prophetic condemnation", "Covenant lawsuit rhetoric"],
+        "explanation": "The dead bodies are compared to dung, conveying extreme worthlessness and defilement; they are treated as refuse rather than honored with burial.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 16:5",
+    "deliberation": "The verse bans participation in mourning and gives the reason: God has 'withdrawn' shalom, hesed, and rahamim. These abstract qualities are treated as something that can be gathered up/removed, a metaphorical and mildly personifying way to speak of divine favor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּֽי־אָסַ֨פְתִּי אֶת־שְׁלוֹמִ֜י מֵאֵ֨ת הָעָ֤ם הַזֶּה֙ ... אֶת־הַחֶ֖סֶד וְאֶת־הָרַחֲמִֽים",
+        "english_text": "For I have withdrawn My favor from that people … My kindness and compassion",
+        "target": ["God’s favorable disposition toward the people", "Divine relational stance", "Theological/spiritual reality"],
+        "vehicle": ["Peace, kindness, and compassion as objects that can be taken away", "Removable possessions/resources", "Material/relational assets"],
+        "ground": ["Loss of protection and benevolence like losing a possessed good", "Change in accessibility and benefit", "Covenantal switching from favor to judgment"],
+        "posture": ["Announcement of a shift from favor to judgment", "Prophetic explanation of disaster", "Covenant-curse rhetoric"],
+        "explanation": "God's abstract qualities (peace, kindness, mercy) are depicted as tangible possessions He can 'gather up' from the people, personifying and using metonymy for His favorable presence.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 16:6",
+    "deliberation": "Looked for comparisons, personifications, or idioms. The mourning practices (gashing, shaving) are literal cultural actions. The phrase 'great and small' is a classic merism expressing all social ranks; that is a figurative totalizing device.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מֵ֨תוּ גְדֹלִ֧ים וּקְטַנִּ֛ים",
+        "english_text": "Great and small alike shall die",
+        "target": ["All the people in the land regardless of status", "Entire population", "Social body of Judah"],
+        "vehicle": ["Great and small as opposite ends of a scale", "Merism of high and low", "Social hierarchy polarities"],
+        "ground": ["Inclusiveness across the entire range without exception", "Total scope", "Comprehensiveness of judgment"],
+        "posture": ["Emphasizing universality of punishment", "Rhetorical intensification", "Prophetic warning to all classes"],
+        "explanation": "The pairing 'great and small' functions as a merism, using the extremes of status to indicate that everyone in between is included in the announced deaths.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 16:7",
+    "deliberation": "Two expressions stand out: (1) 'break bread for a mourner' is an idiom for providing the mourning meal; (2) 'cup of consolation' conceptualizes comfort as something drunk, a metaphor (and conventional expression). Both are distinct figurative units.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלֹא־יִפְרְס֥וּ לָהֶ֛ם עַל־אֵ֖בֶל",
+        "english_text": "They shall not break bread for a mourner",
+        "target": ["Provision of a condolence meal to the bereaved", "Ritual care for mourners", "Social-religious practice"],
+        "vehicle": ["Breaking bread as shorthand for giving the mourning meal", "Fixed mourning expression", "Conventional ritual action"],
+        "ground": ["Supplying food as an act of comfort", "Association of bread-breaking with communal support", "Cultural embedding of comfort in shared eating"],
+        "posture": ["Alluding to known mourning custom", "Evoking communal solidarity now withdrawn", "Prophetic depiction of social collapse"],
+        "explanation": "The phrase 'break bread for a mourner' is an idiomatic way to denote the customary meal of consolation, not merely the physical act of snapping bread.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כּ֣וֹס תַּנְחוּמִ֔ים",
+        "english_text": "a cup of consolation",
+        "target": ["Emotional/spiritual comfort offered to the bereaved", "Consolation", "Psychological/spiritual state"],
+        "vehicle": ["A cup of drink given to someone", "Drinkable liquid in a cup", "Physical nourishment/refreshment"],
+        "ground": ["Comfort as something one can 'take in' and be refreshed by", "Restorative and soothing effect", "Association of shared drink with relief and fellowship"],
+        "posture": ["Concretizing abstract comfort in a sensory image", "Liturgical/mourning idiom", "Pastoral depiction of lost supports"],
+        "explanation": "Consolation is portrayed as if it were a cup of drink to be offered and received, metaphorically turning emotional support into a tangible, refreshing beverage.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 16:8",
+    "deliberation": "This is a straightforward prohibition against entering a literal 'house of feasting' to sit, eat, and drink. In context these are actual banqueting houses; no underlying comparison, personification, or idiom beyond normal usage.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 16:9",
+    "deliberation": "The key image is the removal of 'the sound of joy and gladness, the voice of bridegroom and bride.' These 'voices' stand metonymically for festive occasions and the social institution of marriage as a symbol of communal joy. That constitutes a figurative use.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "ק֤וֹל שָׂשׂוֹן֙ וְק֣וֹל שִׂמְחָ֔ה ק֥וֹל חָתָ֖ן וְק֥וֹל כַּלָּֽה",
+        "english_text": "the sound of mirth and gladness, the voice of bridegroom and bride",
+        "target": ["Festive life and joyful social occasions in Judah", "Communal celebration", "Socio-religious vitality"],
+        "vehicle": ["The audible voices/sounds of rejoicing couples and weddings", "Wedding sounds as event-indicators", "Acoustic markers of celebration"],
+        "ground": ["Voices at weddings embody and signal joy and social flourishing", "Sound as proxy for the whole event", "Perceptible symptom for underlying condition"],
+        "posture": ["Portraying the end of joy via its most evocative signs", "Prophetic dramatization of desolation", "Covenant-curse imagery"],
+        "explanation": "The 'voice' of bride and groom stands metonymically for weddings and communal happiness; their silencing depicts the cessation of the entire joyful social order.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 16:10",
+    "deliberation": "Narrative setup of a future dialogue: Jeremiah announces, the people ask why. Phrases like 'all this great evil' are standard evaluative descriptions, not used figuratively here. No metaphors, similes, or idioms beyond normal legal-religious vocabulary.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 16:11",
+    "deliberation": "The key expression 'went after other gods' is not literal spatial pursuit but a conventional idiom/metaphor for religious allegiance and service. It invokes movement imagery for devotion; the rest of the verse (serve, bow down, abandon, not keep Torah) is conceptually literal in biblical idiom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיֵּלְכ֗וּ אַֽחֲרֵי֙ אֱלֹהִ֣ים אֲחֵרִ֔ים",
+        "english_text": "and followed other gods",
+        "target": ["Israel’s religious allegiance and worship practices", "Covenantal loyalty", "Spiritual/moral orientation"],
+        "vehicle": ["Going/walking after someone", "Physical following on a path", "Locomotion and discipleship image"],
+        "ground": ["Devotion and obedience likened to following a leader or master", "Directionality and pursuit", "Submission expressed in movement behind another"],
+        "posture": ["Critiquing misdirected allegiance", "Prophetic polemic against idolatry", "Covenant infidelity charge"],
+        "explanation": "Allegiance to other deities is conceptualized as physically going after them, an idiomatic metaphor that pictures idolatry as following a false leader along a path.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 16:12",
+    "deliberation": "The expression 'you are walking, each after the stubbornness of his evil heart' combines movement language with an inner disposition (the 'stubbornness of the heart') treated as something that leads them. This is a unified metaphor of moral conduct as walking behind an internal leader.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֹלְכִ֗ים אִ֚ישׁ אַֽחֲרֵי֙ שְׁרִר֣וּת לִבּֽוֹ־הָרָ֔ע",
+        "english_text": "every one of you following the willfulness of their own evil heart",
+        "target": ["The people’s morally deviant choices", "Moral/spiritual behavior patterns", "Ethical orientation"],
+        "vehicle": ["Walking after the stubbornness of the heart as if it leads the way", "Journeying behind a guide/master", "Path-following behavior"],
+        "ground": ["Inner impulses function as a guide that one can choose to follow", "Direction and persistence of conduct", "Submission to an internal, personified inclination"],
+        "posture": ["Moral indictment of self-directed stubbornness", "Prophetic exposure of inner rebellion", "Wisdom-style path imagery"],
+        "explanation": "Their evil inclination is pictured as a leader ahead of them on a path, and they are described as walking after it, personifying their heart’s stubbornness and using the journey metaphor for moral life.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 16:13",
+    "deliberation": "Examined the exile language. 'I will hurl you out of this land' uses a verb of throwing normally applied to objects, creating a metaphor of violently casting them away. Serving other gods 'day and night' could be literal or intensifying but need not be taken as hyperbole. The primary figurative expression is the 'hurling.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהֵטַלְתִּ֣י אֶתְכֶ֗ם מֵעַל֙ הָאָ֣רֶץ הַזֹּ֔את",
+        "english_text": "Therefore I will hurl you out of this land",
+        "target": ["The deportation of Judah’s population", "Exile/judgment event", "Historical-covenantal destiny"],
+        "vehicle": ["Hurling/throwing an object away from a place", "Violent casting out", "Physical removal action"],
+        "ground": ["Forceful rejection and abrupt displacement", "Loss of place and belonging", "Expression of anger/judgment by expelling"],
+        "posture": ["Threatening image of divine rejection", "Prophetic intensification of exile language", "Covenant curse visualization"],
+        "explanation": "Exile is portrayed as God forcefully throwing His people off the land like an unwanted object, a metaphor emphasizing rejection and violence.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 16:14",
+    "deliberation": "Looked at the temporal formula and oath language. The phrase 'behold, days are coming' gives days agency to 'come', a conventional temporal metaphor. The oath formula itself functions literally as an oath. Thus, a single anthropomorphic temporal image is present.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָכֵ֛ן הִנֵּה־יָמִ֥ים בָּאִ֖ים",
+        "english_text": "Assuredly, a time is coming",
+        "target": ["Future period in which the stated change will occur", "Coming era", "Temporal reality"],
+        "vehicle": ["Days that 'come' toward the speaker", "Approaching persons/objects", "Spatial movement through time"],
+        "ground": ["Future time experienced as something that approaches", "Imminence and inevitability", "Human perception of time as movement"],
+        "posture": ["Signal of prophetic future orientation", "Conventional eschatological formula", "Rhetorical marking of assured fulfillment"],
+        "explanation": "The future is expressed as 'days' that are coming toward the audience, personifying time as something that moves and arrives.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 16:15",
+    "deliberation": "Describes a future historical deliverance ('brought up from the land of the north and from all the lands'). This is theological but not figurative: the verbs and nouns function in a straightforward historical sense, with no explicit comparison or symbolic vehicle.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 16:16",
+    "deliberation": "The verse uses two parallel hunting images: sending 'many fishermen' who will 'fish them' and then 'many hunters' who will hunt them from every hiding place. These are standardly interpreted as metaphors for human agents (invaders, pursuers) who will track down the people. The fishermen and hunters are distinct but related vehicles in one extended image, so I treat them as two instances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִ֨י שֹׁלֵ֜חַ ... לְדַיָּגִ֥ים רַבִּ֛ים ... וְדִיג֑וּם",
+        "english_text": "I am sending for many fishermen … and they shall haul them out",
+        "target": ["The hostile agents who will pursue and capture Judah’s people", "Instruments of divine judgment (armies/officials)", "Political-military forces"],
+        "vehicle": ["Fishermen who net and haul fish", "Fishing activity (catching from water)", "Hunting/harvesting imagery"],
+        "ground": ["People as a catch to be gathered inescapably", "Skillful, persistent capture from their environment", "Lack of escape from a determined pursuer"],
+        "posture": ["Depicting judgment as an inescapable roundup", "Prophetic visualization of conquest", "Covenant-curse symbolism"],
+        "explanation": "The agents of judgment are portrayed as fishermen who will net and drag the people out, likening Judah to fish caught beyond escape.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַחֲרֵי־כֵ֗ן אֶשְׁלַח֙ לְרַבִּ֣ים צַיָּדִ֔ים וְצָד֞וּם מֵעַ֤ל כׇּל־הַר֙ וּמֵעַ֣ל כׇּל־גִּבְעָ֔ה וּמִנְּקִיקֵ֖י הַסְּלָעִֽים",
+        "english_text": "After that I will send for many hunters, and they shall hunt them out of every mountain and out of every hill and out of the clefts of the rocks",
+        "target": ["The exhaustive search and seizure of the people", "Extent of punitive pursuit", "Socio-political experience of being tracked down"],
+        "vehicle": ["Hunters seeking game in every terrain and cleft", "Predatory pursuit", "Search across mountains, hills, and caves"],
+        "ground": ["Relentless, wide-ranging pursuit leaving no hiding place", "Vulnerability of prey before skilled hunters", "Total lack of refuge from judgment"],
+        "posture": ["Intensifying the inescapability of judgment", "Graphic elaboration of pursuit", "Warning through vivid threat imagery"],
+        "explanation": "The pursuers are likened to hunters scouring every mountain, hill, and rock cleft for prey, stressing that no place will provide concealment from the coming judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 16:17",
+    "deliberation": "Anthropomorphic language dominates: 'My eyes are on all their ways', 'not hidden from before Me', 'not concealed from My sight.' This uses visual metaphors/personification for God’s omniscience, speaking of God as if He had literal eyes and visual perception.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֤י עֵינַי֙ עַל־כׇּל־דַּרְכֵיהֶ֔ם ... לֹֽא־נִצְפַּ֥ן עֲוֺנָ֖ם מִנֶּ֥גֶד עֵינָֽי",
+        "english_text": "For My eyes are on all their ways … Their iniquity is not concealed from My sight",
+        "target": ["God’s knowledge of the people’s conduct and sin", "Divine omniscience", "Theological reality of God’s awareness"],
+        "vehicle": ["Eyes and sight monitoring paths and hidden things", "Human visual perception", "Watching/seeing activity"],
+        "ground": ["Complete, attentive awareness as analogous to continual watching", "Inability to hide from a seeing observer", "Exposure of deeds to scrutiny"],
+        "posture": ["Asserting total divine awareness to underpin judgment", "Anthropomorphic accommodation to human concepts", "Judicial surveillance imagery"],
+        "explanation": "God’s comprehensive knowledge of their ways is expressed through eyes and sight, using human visual perception as a metaphor and metonymy for His omniscient awareness.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 16:18",
+    "deliberation": "Two main figurative features: (1) 'I will repay first double for their iniquity and their sin' uses financial/legal repayment metaphor, with 'double' likely hyperbolic for severe/abundant punishment; (2) 'with the corpses of their abominations' treats their abominable objects/practices as dead bodies polluting the land, a metaphor for the lifeless and defiling nature of idolatry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשִׁלַּמְתִּ֣י רִאשׁוֹנָ֗ה מִשְׁנֵ֤ה עֲוֺנָם֙ וְחַטָּאתָ֔ם",
+        "english_text": "I will pay them in full—nay, doubly for their iniquity and their sins",
+        "target": ["The punishment God will inflict for their sins", "Divine retribution", "Covenantal justice"],
+        "vehicle": ["Paying back double as in financial/legal settlement", "Compensatory repayment", "Economic-legal transaction"],
+        "ground": ["Punishment proportional and more-than-adequate to guilt, like an overpayment", "Retribution conceptualized as settling accounts", "Severity emphasized by 'double' measure"],
+        "posture": ["Framing judgment as just recompense", "Intensifying the severity with hyperbolic 'double'", "Legal-covenantal rhetoric"],
+        "explanation": "God’s punitive action is portrayed as repaying a debt, and 'double' likely functions as hyperbolic emphasis on the fullness and severity of the recompense, not a precise mathematical ratio.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּנִבְלַ֤ת שִׁקּֽוּצֵיהֶם֙",
+        "english_text": "With the corpses of their abominations",
+        "target": ["The idols and abominable cult objects/practices", "Idolatrous religion", "Religious corruption"],
+        "vehicle": ["Corpses (carcasses) polluting the land", "Dead bodies", "Physical sources of impurity"],
+        "ground": ["Lifelessness and defilement of idols likened to rotting corpses", "Polluting presence in the land", "Abhorrence and disgust"],
+        "posture": ["Demeaning idols with a graphic image", "Prophetic polemic using impurity language", "Ritual-impurity metaphor for idolatry"],
+        "explanation": "Their 'abominations'—idols and illicit practices—are called 'corpses', likening them to dead, decaying bodies that defile God’s land and inheritance.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 16:19",
+    "deliberation": "Multiple metaphors: (1) 'my strength', (2) 'my stronghold', and (3) 'my refuge' all liken God to protective/empowering realities; (4) 'from the ends of the earth' is an idiom/hyperbolic spatial metaphor for distant nations, not literal edges. These are distinct figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יְהֹוָ֞ה עֻזִּ֧י",
+        "english_text": "O ETERNAL One, my strength",
+        "target": ["Jeremiah’s and Israel’s experience of empowerment and support in trouble", "Source of inner and outer resilience", "Spiritual reliance on God"],
+        "vehicle": ["Strength as physical or military might", "Powerful force/energy", "Capability to withstand pressure"],
+        "ground": ["God enables and sustains like strength enables endurance", "Capacity to stand firm", "Dependence on a greater power"],
+        "posture": ["Personal confession of dependence", "Liturgical praise", "Faith-language in crisis"],
+        "explanation": "God is called 'my strength', likening His sustaining and empowering role to the physical or military strength by which one stands and acts.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמָעֻזִּ֛י",
+        "english_text": "and my stronghold",
+        "target": ["Experience of security in the midst of threats", "Protection from enemies/calamity", "Spiritual safety"],
+        "vehicle": ["A stronghold/fortress", "Fortified defensive structure", "Military architecture"],
+        "ground": ["God provides protection like a fortification shelters its inhabitants", "Impenetrability and safety", "Asylum against attack"],
+        "posture": ["Asserting God as defensive refuge", "Military metaphor for trust", "Encouragement amid danger"],
+        "explanation": "Calling God 'my stronghold' compares Him to a fortress that shields from attack, conveying security and defense.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמְנוּסִ֖י בְּי֣וֹם צָרָ֑ה",
+        "english_text": "and my refuge in a day of trouble",
+        "target": ["Place/means of escape and safety in crisis", "Experiential refuge in distress", "Spiritual sanctuary"],
+        "vehicle": ["Refuge/place of flight", "Shelter or safe hiding place", "Protective location"],
+        "ground": ["Turning to God in crisis is like fleeing to a physical shelter", "Protection and escape from danger", "Being hidden from harm"],
+        "posture": ["Confessing God as place of escape", "Pastoral/psalmic imagery", "Encouraging trust under threat"],
+        "explanation": "God is likened to a refuge to which one flees in trouble, picturing trust as seeking shelter from a storm or attack.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵלֶ֗יךָ גּוֹיִ֤ם יָבֹ֙אוּ֙ מֵֽאַפְסֵי־אָ֔רֶץ",
+        "english_text": "To You nations shall come from the ends of the earth",
+        "target": ["Nations from distant regions coming to acknowledge God", "Gentile response to YHWH", "International recognition"],
+        "vehicle": ["Ends of the earth as spatial extremities", "Geographical edges/corners", "Distant locations"],
+        "ground": ["Extreme distance used to represent faraway lands comprehensively", "Widest possible scope", "Universal reach beyond Israel"],
+        "posture": ["Hyperbolically universalizing the nations", "Emphasizing the global scope of recognition", "Eschatological hope"],
+        "explanation": "The idiom 'ends of the earth' hyperbolically portrays peoples from very distant places, extending the vision of God’s recognition to the whole world.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 16:20",
+    "deliberation": "The rhetorical question denies the reality of man-made 'gods.' The final clause 'they are no-gods' uses a paradoxical label that exposes the irony: things called 'gods' are in fact not divine at all. It is a rhetorical negation functioning as an ironic, polemical expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהֵ֖מָּה לֹ֥א אֱלֹהִֽים",
+        "english_text": "and they are no-gods",
+        "target": ["The supposed deities crafted and worshiped by humans", "Idols and false gods", "Competing religious objects"],
+        "vehicle": ["'No-gods' as a label denying their divine status", "Category-negating descriptor", "Ironical reclassification"],
+        "ground": ["They bear the name 'gods' but lack any true divinity or power", "Exposure of emptiness/ineffectiveness", "Polemic through contradiction of title and reality"],
+        "posture": ["Sarcastic demotion of idols", "Prophetic polemic against idolatry", "Theological clarification via irony"],
+        "explanation": "By calling them 'no-gods,' the text ironically overturns their honored designation, stressing that what people call 'gods' are, in truth, nothing of the sort.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 16:21",
+    "deliberation": "Two principal figurative elements: (1) 'I will make them know my hand and my might' uses 'hand' as a metonymic metaphor for active power; (2) 'they shall know that my name is YHWH' uses 'name' as metonymy for God’s revealed identity and character. Both are standard, distinct theological figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אוֹדִיעֵ֥ם אֶת־יָדִ֖י וְאֶת־גְּבוּרָתִ֑י",
+        "english_text": "I will teach them My power and My might (literally: 'my hand and my might')",
+        "target": ["God’s effective intervention in judgment/salvation", "Manifested divine power", "Historical-theological action"],
+        "vehicle": ["Hand and might as bodily strength in action", "Human limb as instrument of power", "Physical exertion imagery"],
+        "ground": ["God’s actions are like the exertion of a powerful arm or hand", "Capability to effect change", "Visibility of strength in deeds"],
+        "posture": ["Pledging a decisive demonstration of power", "Anthropomorphic description for comprehension", "Didactic revelation of God’s nature"],
+        "explanation": "God’s powerful acts are expressed as making His 'hand' and 'might' known, using the human hand as a metonymic metaphor for effective power in action.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְיָדְע֖וּ כִּֽי־שְׁמִ֥י יְהֹוָֽה",
+        "english_text": "And they shall learn that My name is GOD",
+        "target": ["True recognition of who YHWH is", "Knowledge of God’s character and lordship", "Theological understanding"],
+        "vehicle": ["Name 'YHWH' as representative of the person and identity", "Proper name as summary of character", "Linguistic sign of personal reality"],
+        "ground": ["Knowing the name stands for knowing the person and reputation", "Name encapsulates identity and authority", "Association between appellation and nature"],
+        "posture": ["Affirming eventual full recognition of YHWH’s identity", "Covenant-revelation formula", "Climactic disclosure of God’s self"],
+        "explanation": "‘My name is YHWH’ uses 'name' metonymically: to know God’s name is to know His true identity, authority, and character through His acts.",
+        "confidence": 0.92
+      }
+    ]
+  }
+]

@@ -1,0 +1,553 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 5:1",
+    "deliberation": "I considered whether the verse is purely instructional for a sign-act or already contains figurative meaning. In light of the chapter, Ezekiel’s shaved and weighed hair is a symbolic representation of Jerusalem’s population and their fate, and the address 'son of man' is a conventional idiomatic designation for a mortal human. Thus I identify (1) an idiomatic title 'ben-adam' and (2) the symbolic weighing/dividing of hair as a metaphorical sign-act of judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַתָּה בֶן־אָדָם",
+        "english_text": "And you, O mortal (son of man)",
+        "target": ["Ezekiel as a finite human being", "individual human", "anthropological"],
+        "vehicle": ["\"son of man\" (offspring of humanity)", "kinship/offspring expression", "family/social"],
+        "ground": ["Mortality, creatureliness, human limitation", "human finitude", "theological-anthropological"],
+        "posture": ["Divine address that underscores Ezekiel’s lowly human status before God", "humbling vocative", "rhetorical/theological"],
+        "explanation": "The expression \"ben‑adam\" literally means \"son of man\" but functions idiomatically as a title for a mere human, emphasizing Ezekiel’s mortality and subordinate status before the divine speaker.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהַעֲבַרְתָּ עַל־רֹאשְׁךָ וְעַל־זְקָנֶךָ וְלָקַחְתָּ לְךָ מֹאזְנֵי מִשְׁקָל וְחִלַּקְתָּם",
+        "english_text": "pass it over your head and beard. Then take scales and divide the hair.",
+        "target": ["The people of Jerusalem and their divided destinies", "community segments", "socio-historical"],
+        "vehicle": ["Ezekiel’s shaved hair weighed and divided in scales", "hair portions in a weighing ritual", "ritual/physical"],
+        "ground": ["Being cut off, measured out, and apportioned to different outcomes", "division and measured judgment", "judicial/theological"],
+        "posture": ["A prophetic symbolic action portraying coming judgment on the populace", "sign‑act of judicial doom", "prophetic communication"],
+        "explanation": "Ezekiel’s hair, shaved, weighed, and divided, functions as a symbolic representation of the population of Jerusalem being measured and apportioned to different fates; the action is a metaphorical sign‑act of God’s precise judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 5:2",
+    "deliberation": "Here the hair from v.1 is treated in three different ways that symbolically correspond to three fates of the people (fire, sword, scattering), and the phrase 'scatter to the wind' is a common figurative idiom for dispersion to all directions. I treat the distribution of hair as one extended metaphorical sign‑act and 'scatter to the wind' as a distinct idiomatic metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "שְׁלִשִׁית בָּאוּר תַּבְעִיר ... וְלָקַחְתָּ אֶת־הַשְּׁלִשִׁית תַּכֶּה בַחֶרֶב ... וְהַשְּׁלִשִׁית תִּזְרֶה לָרוּחַ",
+        "english_text": "destroy a third part in fire in the city, take a third and strike it with the sword all around the city, and scatter a third to the wind",
+        "target": ["Three segments of Jerusalem’s population and their respective fates", "subgroups of a community under judgment", "socio-historical"],
+        "vehicle": ["Three thirds of Ezekiel’s hair burned, struck, and scattered", "portions of hair under different treatments", "ritual/physical"],
+        "ground": ["Correspondence between the divided hair’s fates and the people’s burning, slaughter, and exile", "symbolic mapping of fate through treatment of hair", "judicial/theological"],
+        "posture": ["A divinely commanded sign‑act visually depicting how God will judge the people", "prophetic dramatization of judgment", "prophetic communication"],
+        "explanation": "The three treatments of the hair—burning, striking with a sword, and scattering—metaphorically portray the three ways segments of Jerusalem will be destroyed or dispersed. The hair continues to function as a symbolic stand‑in for the people.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהַשְּׁלִשִׁית תִּזְרֶה לָרוּחַ",
+        "english_text": "and scatter a third to the wind",
+        "target": ["Exiles from Jerusalem", "dispersed people", "socio-historical"],
+        "vehicle": ["Chaff or dust blown by the wind in every direction", "scattered particles in the air", "natural/meteorological"],
+        "ground": ["Loss of rootedness and uncontrolled dispersion over a wide area", "thorough scattering and vulnerability", "social-political"],
+        "posture": ["YHWH depicting the exile as a total, wind‑like scattering", "judicial removal from land", "theological"],
+        "explanation": "The idiom 'scatter to the wind' uses the image of particles blown by wind to metaphorically describe people being thoroughly dispersed into exile in all directions.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 5:3",
+    "deliberation": "This continues the hair sign‑act, but now only a few hairs are taken and bound in Ezekiel’s garment, which symbolically portray a preserved remnant. I treat this as a single metaphorical instance within the ongoing symbolic action.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלָקַחְתָּ מִשָּׁם מְעַט בְּמִסְפָּר וְצַרְתָּ אוֹתָם בִּכְנָפֶיךָ",
+        "english_text": "Take also a few from there and tie them up in your skirts.",
+        "target": ["The small remnant of Israel that will survive", "faithful or spared minority", "socio-theological"],
+        "vehicle": ["A few hairs bound securely in the edge of a garment", "small protected bundle of hair in a fold of cloth", "ritual/physical"],
+        "ground": ["Being small in number yet guarded and kept close for safekeeping", "preservation and protection of a remnant", "salvific/judicial"],
+        "posture": ["A sign‑act expressing God’s intention to preserve a minority even amid judgment", "visual reassurance of a remnant", "prophetic communication"],
+        "explanation": "The 'few hairs' tied into Ezekiel’s skirts metaphorically represent a small remnant of the people preserved and kept safe by God, using the image of something guarded in a garment fold.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 5:4",
+    "deliberation": "The verse intensifies the sign‑act: some of the preserved hairs are burned, and a 'fire' is said to go out upon all Israel. Here hair continues to symbolize people, 'fire' functions as a metaphor for destructive judgment (likely war/disaster), and 'house of Israel' is a standard metonymy for the people themselves.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּמֵהֶם עוֹד תִּקָּח וְהִשְׁלַכְתָּ אוֹתָם אֶל־תּוֹךְ הָאֵשׁ וְשָׂרַפְתָּ אֹתָם בָּאֵשׁ",
+        "english_text": "And take some more of them and cast them into the fire, and burn them in the fire.",
+        "target": ["A further portion of the people, even from among the remnant", "subset of the community", "socio-historical"],
+        "vehicle": ["Previously preserved hairs now thrown into and consumed by fire", "burning hair", "ritual/physical"],
+        "ground": ["Exposure to renewed and intensified destruction despite prior preservation", "second wave of judgment", "judicial"],
+        "posture": ["A prophetic sign‑act showing that even among the remnant some will yet face severe judgment", "complex depiction of purging judgment", "prophetic communication"],
+        "explanation": "The burning of some of the remnant hairs continues the metaphorical use of hair for people, illustrating that even among those apparently saved, some will still be subjected to destructive judgment.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִמֶּנּוּ תֵצֵא־אֵשׁ אֶל־כָּל־בֵּית יִשְׂרָאֵל",
+        "english_text": "From this a fire shall go out upon the whole House of Israel.",
+        "target": ["Calamity/judgment affecting all Israel", "national catastrophe", "socio-historical/theological"],
+        "vehicle": ["A fire going out and spreading", "spreading physical fire", "natural/destructive"],
+        "ground": ["Rapid, consuming, and far‑reaching destructive effect", "overwhelming devastation", "judicial/experiential"],
+        "posture": ["God portrays his judgment as a consuming fire emanating from within the people’s midst", "image of purging yet devastating wrath", "theological"],
+        "explanation": "The 'fire' that goes out upon the whole House of Israel is not literal flame from burnt hair but a metaphor for comprehensive destructive judgment that will engulf the nation.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כָּל־בֵּית יִשְׂרָאֵל",
+        "english_text": "the whole House of Israel",
+        "target": ["The people of Israel as a nation", "collective community", "socio-ethnic"],
+        "vehicle": ["\"house\" as a corporate household", "household/house", "domestic/social"],
+        "ground": ["A house as a single entity made up of many members", "corporate identity", "social-political"],
+        "posture": ["Covenantal language emphasizing Israel as God’s household", "relational covenant identity", "theological"],
+        "explanation": "The phrase 'house of Israel' uses 'house' metonymically for the people who belong to it, a conventional way of referring to the nation as a single unified household.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 5:5",
+    "deliberation": "The verse identifies 'this Jerusalem' as something God has set in the midst of the nations. Jerusalem is referred to with a feminine pronoun, and the city functions as a stand‑in for its human community. Thus we have both personification of the city and metonymic use of its name for its inhabitants.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "זֹאת יְרוּשָׁלִַם בְּתוֹךְ הַגּוֹיִם שַׂמְתִּיהָ",
+        "english_text": "This is Jerusalem; I set her in the midst of nations",
+        "target": ["The human community identified with Jerusalem", "city’s population/national entity", "socio-political"],
+        "vehicle": ["Jerusalem as a feminized city placed in a central location", "city as a woman placed among others", "urban/geographical"],
+        "ground": ["The city embodies and represents its people and occupies a central, conspicuous role among surrounding nations", "representative centrality", "historical/theological"],
+        "posture": ["God addresses Jerusalem as a person-like entity to highlight her privileged, visible position", "rhetorical personification to frame responsibility", "prophetic/theological"],
+        "explanation": "Jerusalem is described with a feminine pronoun and treated as if she were a person placed among other nations; at the same time, the city name stands metonymically for its people and their covenantal role.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 5:6",
+    "deliberation": "The verse speaks of Jerusalem as 'she' who rebelled and acted wickedly, and then shifts to 'they' who rejected and did not walk in God’s laws. This continues the personification of the city as an acting agent and uses the city as a metonym for its inhabitants. The legal language itself is straightforward, not figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתֶּמֶר אֶת־מִשְׁפָּטַי ... אֲשֶׁר סְבִיבוֹתֶיהָ ... כִּי בְמִשְׁפָּטַי מָאָסוּ",
+        "english_text": "But she rebelled against My rules ... the countries round about her; for they rejected My rules",
+        "target": ["The people of Jerusalem/Israel under indictment", "covenant community", "socio-theological"],
+        "vehicle": ["Jerusalem depicted as a woman who rebels, surrounded by other lands", "personified city as moral agent", "urban/personal"],
+        "ground": ["The city stands for its inhabitants, and their collective disobedience is cast as a personal act of rebellion by 'her'", "corporate moral agency", "ethical/theological"],
+        "posture": ["God frames the community’s sin as the betrayal of a personified Jerusalem, heightening the sense of personal offense", "indicting rhetoric", "prophetic"],
+        "explanation": "Jerusalem is personified as a woman who rebels against God’s judgments, while the city name and pronouns function metonymically for the actual people who have rejected God’s laws.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 5:7",
+    "deliberation": "The main imagery here is covenantal/legal and comparative. The notable figurative expression is 'walking in my statutes' as an idiom for living in obedience, based on the common metaphor of life as a path one walks. I treat this as a single metaphorical idiom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּחֻקֹּתַי לֹא הֲלַכְתֶּם",
+        "english_text": "you have not walked in My laws",
+        "target": ["Israel’s pattern of obedience or disobedience", "moral-religious conduct", "ethical/theological"],
+        "vehicle": ["Walking along a path or way", "physical locomotion on a path", "spatial/kinetic"],
+        "ground": ["Just as walking a path entails sustained movement in a direction, obedience entails consistent conduct according to a standard", "ordered progress according to a way", "ethical-experiential"],
+        "posture": ["Covenant obedience is portrayed as following a prescribed path, so failure is refusal to take that path", "didactic framing of law‑keeping", "prophetic/theological"],
+        "explanation": "The expression 'walk in my laws' is a metaphorical idiom: adherence to God’s statutes is pictured as walking along a prescribed path, so not 'walking' in them denotes disobedient living.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 5:8",
+    "deliberation": "I looked for metaphors of judgment or emotional language. The key expression is 'hinneni alayikh' ('I am against you'), which uses spatial language ('upon/against') idiomatically for opposition. The rest is largely straightforward judicial language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִי עָלַיִךְ גַּם־אָנִי",
+        "english_text": "I, in turn, am against you",
+        "target": ["God’s stance toward Jerusalem", "divine disposition (hostility vs. favor)", "theological"],
+        "vehicle": ["Being 'upon/against' someone in spatial confrontation", "adversarial spatial orientation", "spatial/relational"],
+        "ground": ["Physical opposition or attack is conceptualized as being 'against' someone’s person", "hostile orientation and impending action", "social/experiential"],
+        "posture": ["God declares a stance of active opposition rather than protection, reversing expected covenant favor", "judicial hostility", "prophetic/theological"],
+        "explanation": "The phrase 'I am against you' uses spatial language metaphorically and idiomatically to express God’s hostile stance and active opposition toward Jerusalem.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 5:9",
+    "deliberation": "This verse emphasizes the unprecedented nature of the coming judgment. The claim that God will do what He has never done and will never do again is expressed in absolute terms that likely function rhetorically as hyperbole to stress the intensity and uniqueness of the disaster.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעָשִׂיתִי בָךְ אֵת אֲשֶׁר לֹא־עָשִׂיתִי וְאֵת אֲשֶׁר־לֹא־אֶעֱשֶׂה כָמֹהוּ עוֹד",
+        "english_text": "I will do among you what I have never done, and the like of which I will never do again.",
+        "target": ["The severity and distinctiveness of the coming judgment", "degree/intensity of punishment", "theological/judicial"],
+        "vehicle": ["Absolute claims of never before and never again", "superlative uniqueness language", "rhetorical"],
+        "ground": ["Hyperbolic 'never before/never again' speech heightens perception of something as incomparable", "emphatic uniqueness", "communicative"],
+        "posture": ["God underscores the incomparable horror of this judgment to shock and warn the hearers", "intensified warning", "prophetic"],
+        "explanation": "The sweeping claim that such an act has never occurred and will never recur functions as hyperbolic rhetoric to stress the unparalleled severity of the impending catastrophe, rather than as a precise historical statistic.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 5:10",
+    "deliberation": "The shocking statement that parents and children will eat one another may be literal under extreme siege conditions but is also highly rhetorical and may function hyperbolically to depict utter horror. Additionally, 'scatter all your survivors to every spirit/wind' is a well-established idiom/metaphor for comprehensive dispersion in all directions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָבוֹת יֹאכְלוּ בָנִים בְּתוֹכֵךְ וּבָנִים יֹאכְלוּ אֲבוֹתָם",
+        "english_text": "parents shall eat their children in your midst, and children shall eat their parents.",
+        "target": ["The extremity of famine and social breakdown in Jerusalem", "degree of societal catastrophe", "socio-theological"],
+        "vehicle": ["Parents and children resorting to cannibalism of each other", "intra-family cannibalism", "bodily/familial horror"],
+        "ground": ["Cannibalism within the family represents the most extreme imaginable breakdown of natural bonds and desperation", "utter reversal of normal care and affection", "ethical/experiential"],
+        "posture": ["The prophecy uses a horrifying scenario to convey how desperate and unnatural conditions will become under judgment", "shock rhetoric to underline curse severity", "prophetic"],
+        "explanation": "The depiction of parents and children eating one another, whether or not it ever became fully literal, functions as an extreme image that expresses the depth of famine and moral collapse accompanying God’s judgment.",
+        "confidence": 0.6
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְזֵרִיתִי אֶת־כָּל־שְׁאֵרִיתֵךְ לְכָל־רוּחַ",
+        "english_text": "and I will scatter all your survivors in every direction (to every wind).",
+        "target": ["The dispersion of surviving inhabitants into exile", "diaspora of the remnant", "socio-political"],
+        "vehicle": ["Particles or chaff scattered by winds from every direction", "things driven by the wind", "natural/meteorological"],
+        "ground": ["The wind’s capacity to drive light objects indiscriminately in all directions parallels the uprooting and scattering of people far from home", "complete dispersal and lack of control", "social-experiential"],
+        "posture": ["God portrays the exile as an uncontrollable wind‑driven scattering of survivors", "graphic depiction of the end of settled life", "prophetic/theological"],
+        "explanation": "The idiom 'scatter ... to every wind' uses the image of the wind’s dispersing power to metaphorically describe the comprehensive, directionless scattering of Jerusalem’s surviving population.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 5:11",
+    "deliberation": "The verse uses cultic terminology of defilement straightforwardly. The notable figurative expression is 'my eye will not spare,' where the 'eye' is metonymy for compassion and 'sparing' is idiomatic for showing pity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא־תָחוֹס עֵינִי",
+        "english_text": "and My eye will not pity (spare)",
+        "target": ["God’s exercise (or withholding) of compassion in judgment", "divine mercy vs. severity", "theological"],
+        "vehicle": ["An eye that either looks with compassion or refuses to spare", "eye as seat of pity", "bodily/affective"],
+        "ground": ["The direction and quality of one’s gaze often signals compassion or lack thereof, so the eye stands for the inner disposition of mercy", "visual attention as indicator of pity", "psychological/experiential"],
+        "posture": ["God declares that His usual compassionate regard will be withdrawn in this act of judgment", "announcement of unmitigated severity", "prophetic/theological"],
+        "explanation": "The phrase 'my eye will not spare' uses the eye metonymically for God’s compassionate regard and functions as an idiom meaning that He will show no pity in the coming judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 5:12",
+    "deliberation": "The verse explains explicitly the threefold division hinted at in the hair sign‑act (pestilence/famine, sword, scattering). The distribution itself is literal in content, but 'scatter to every wind' recurs as an idiomatic metaphor, and 'I will unsheathe the sword after them' uses 'sword' metonymically for ongoing warfare pursuing the exiles.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהַשְּׁלִישִׁית לְכָל־רוּחַ אֶזָּרֶה",
+        "english_text": "and I will scatter one-third in every direction (to every wind)",
+        "target": ["That third of the population destined for exile", "portion of the community", "socio-political"],
+        "vehicle": ["Objects or chaff scattered by the winds", "wind‑blown fragments", "natural/meteorological"],
+        "ground": ["Complete lack of rootedness and direction as something is blown wherever the wind takes it", "thorough dispersion and loss of control", "social-experiential"],
+        "posture": ["God pictures His judgment as a wind‑like scattering of a third of the people", "emphasis on the extent of dispersion", "prophetic/theological"],
+        "explanation": "Again the idiom of scattering to the wind uses the imagery of wind‑driven scattering to represent comprehensive exile of a portion of the people.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְחֶרֶב אָרִיק אַחֲרֵיהֶם",
+        "english_text": "and I will unsheathe the sword after them.",
+        "target": ["Continuing violent judgment upon exiles", "ongoing hostile action", "socio-theological"],
+        "vehicle": ["A drawn sword pursuing after fleeing people", "pursuing weapon", "military"],
+        "ground": ["A sword symbolizes warfare and lethal force that can chase down and destroy", "unrelenting pursuit by violence", "experiential/military"],
+        "posture": ["God depicts His judgment as a personified sword of war that continues to follow the exiled third", "heightened sense of inescapable judgment", "prophetic/theological"],
+        "explanation": "Here 'sword' stands metonymically for warfare and deadly attack; the image of unsheathing it after them portrays God’s judgment as an ongoing, pursuing violence even beyond the city’s fall.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 5:13",
+    "deliberation": "This verse is rich in theological emotion language: God speaks of venting His anger, satisfying His fury, and being 'comforted.' These are anthropopathic metaphors, describing God’s actions and resultant state in human emotional terms; in particular, anger and fury are treated almost as entities that can be 'quieted' or 'satisfied.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְכָלָה אַפִּי וַהֲנִחוֹתִי חֲמָתִי בָּם וְהִנֶּחָמְתִּי",
+        "english_text": "I will vent all My anger and satisfy My fury upon them; and I will be comforted.",
+        "target": ["God’s exercise of judgment and the cessation of His wrath", "divine response to covenant violation", "theological"],
+        "vehicle": ["Human anger and fury that can be poured out until a person is comforted or calmed", "person-like emotions that can be satisfied", "psychological/affective"],
+        "ground": ["As with human anger, divine judgment is portrayed as an emotional burden that, when fully expressed, leads to a state of 'being comforted' or at rest", "transition from agitated wrath to resolved calm", "experiential"],
+        "posture": ["The text adopts human emotional language (anthropopathism) to describe God’s zealous commitment to justice and the eventual completion of His punitive work", "rhetorical accommodation of God’s passion", "prophetic/theological"],
+        "explanation": "God’s 'anger' and 'fury' are described in human emotional terms as something that can be fully vented and thereby lead to His being 'comforted'; this is an anthropopathic metaphor in which divine judgment is expressed through the imagery of human emotional processes.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 5:14",
+    "deliberation": "The verse says God will make 'you' (Jerusalem) a ruin and reproach among the nations, to the eyes of every passerby. The key figurative aspect is again the personified, feminized 'you' referring to Jerusalem as a representative of its people (metonymy plus personification). The terms 'ruin' and 'reproach' themselves here are straightforward descriptors, not obviously metaphorical.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֶתְּנֵךְ לְחָרְבָּה וּלְחֶרְפָּה בַּגּוֹיִם אֲשֶׁר סְבִיבוֹתָיִךְ",
+        "english_text": "I will make you a ruin and a mockery among the nations round about you",
+        "target": ["Jerusalem’s community and its reputation among other peoples", "city’s state and standing", "socio-political/theological"],
+        "vehicle": ["A feminized 'you' (the city) made into an object of desolation and taunting", "personified city subjected to humiliation", "urban/personal"],
+        "ground": ["The city embodies the people, and her becoming a ruin and reproach encapsulates both physical destruction and social shame", "corporate humiliation as if of a person", "ethical/social"],
+        "posture": ["God speaks to Jerusalem as a person whose downfall will be observed and mocked by all around", "shame-oriented rhetoric", "prophetic"],
+        "explanation": "Jerusalem is addressed as 'you' and treated as a person whose fate and disgrace will be seen by 'every passerby'; the city functions both as a personified figure and as a metonymy for its inhabitants and their humiliation.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 5:15",
+    "deliberation": "Here Jerusalem is said to 'be' reproach, insult, discipline, and horror to the nations. The city is personified and equated with abstract qualities that it will embody for others—a living warning. This is best treated as a metaphor in which Jerusalem becomes a paradigm or object lesson, as well as continuation of the personification of the city.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהָיִיתָ חֶרְפָּה וּגְדוּפָה מוּסָר וּמְשַׁמָּה לַגּוֹיִם אֲשֶׁר סְבִיבוֹתָיִךְ",
+        "english_text": "you shall be a mockery and a derision, a warning and a horror, to the nations round about you",
+        "target": ["Jerusalem as an example to other nations", "Israel’s judged condition as a didactic sign", "socio-theological"],
+        "vehicle": ["A person or object that itself is reproach, insult, instruction, and devastation to observers", "embodied warning sign", "social/didactic"],
+        "ground": ["The city’s judged state will serve as a visible, terrifying lesson and object of scorn for others", "exemplary punishment and stigma", "ethical/social"],
+        "posture": ["God casts Jerusalem as a living parable of judgment whose fate will instruct and warn surrounding nations", "didactic exemplification", "prophetic/theological"],
+        "explanation": "By saying Jerusalem will 'be' reproach, insult, discipline, and horror, the text metaphorically portrays the city (personified and metonymic for its people) as a living warning sign and object lesson for the surrounding nations.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 5:16",
+    "deliberation": "This verse contains two well-known metaphors: 'the evil arrows of famine' likens famine to deadly arrows God sends, and 'break the staff of bread' portrays bread/food as a staff that supports life. Both are distinct metaphorical expressions, not merely variations of one another.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּשַׁלְּחִי אֶת־חִצֵּי הָרָעָב הָרָעִים בָּהֶם אֲשֶׁר הָיוּ לְמַשְׁחִית",
+        "english_text": "When I loose the deadly arrows of famine against them, which were for destruction",
+        "target": ["The destructive impact of famine sent by God", "instrument of divine punishment (famine)", "theological/judicial"],
+        "vehicle": ["Arrows shot at people to kill and destroy", "deadly missiles from a bow", "military/violent"],
+        "ground": ["Like arrows, famine comes from a distance at God’s initiative, strikes its victims, and brings death", "precision, lethality, and divine aim", "experiential/theological"],
+        "posture": ["God is depicted as a warrior loosing famine like arrows against the people", "martial imagery of divine judgment", "prophetic"],
+        "explanation": "Famine is metaphorically described as 'arrows' that God sends, using martial imagery to portray famine as a targeted, lethal instrument of divine judgment.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשָׁבַרְתִּי לָכֶם מַטֶּה־לָחֶם",
+        "english_text": "and break your staff of bread.",
+        "target": ["The removal of basic sustenance and stability of life", "means of support (food supply)", "economic/experiential"],
+        "vehicle": ["A staff that supports a person’s weight, now broken", "supporting rod", "physical/object"],
+        "ground": ["As a staff supports a person physically, bread supports life; breaking the staff symbolizes removing that support", "dependence and its collapse", "experiential/theological"],
+        "posture": ["God describes His action as taking away the very support of life, not just reducing luxury", "emphasis on radical deprivation", "prophetic"],
+        "explanation": "The 'staff of bread' metaphor presents food as a supporting staff; to 'break' it is to remove the support of life itself, an idiomatic way of describing the cutting off of basic sustenance.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 5:17",
+    "deliberation": "The verse lists covenant curse elements: famine, wild beasts, pestilence, blood, and the sword. Most are straightforward; however, 'the sword' is a conventional metonymy for warfare/violent invasion, and its 'bringing' upon the people uses that figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְחֶרֶב אָבִיא עָלַיִךְ",
+        "english_text": "and I will bring the sword upon you.",
+        "target": ["Invading warfare and violent military destruction", "military judgment", "socio-political/theological"],
+        "vehicle": ["A sword as an instrument of killing", "weapon of war", "military"],
+        "ground": ["The sword is emblematic of warfare and bloodshed; bringing the sword means bringing war", "instrument stands for the whole conflict", "symbolic/military"],
+        "posture": ["God states that He Himself will be the one to initiate war against His people by sending invading forces", "attribution of invasion to divine judgment", "prophetic/theological"],
+        "explanation": "Here 'the sword' is a metonymy for warfare and violent invasion; saying 'I will bring the sword upon you' figuratively means that God will cause war to come upon Jerusalem.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

@@ -1,0 +1,855 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 7:1",
+    "deliberation": "Checked the standard prophetic formula וַיְהִי דְבַר־יְהוָה אֵלַי לֵאמֹר. Although conventional, it still treats the 'word' as an agent that can 'come' to the prophet, which is a mild personification/metaphor for revelatory experience.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "The word of GOD came to me",
+        "target": ["the prophetic revelation Ezekiel receives", "divine communication", "religious experience"],
+        "vehicle": ["a 'word' that comes to a person", "visiting agent/message", "human interaction and movement"],
+        "ground": ["initiative from outside, directed to a recipient", "transfer of information", "communication dynamics"],
+        "posture": ["authoritative prophetic formula", "revelation-claiming speech act", "prophetic discourse"],
+        "explanation": "Divine revelation is depicted as a concrete 'word' that travels and arrives, personifying God's message as an agent that comes to the prophet.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 7:2",
+    "deliberation": "Considered 'son of man' (vocative title, largely lexicalized), 'end has come' (possible personification), and 'four corners of the land/earth' which is a well-known idiom/merism for the whole territory. Chose two distinct expressions: personification of 'end' and the meristic idiom 'four corners of the land.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קֵ֑ץ בָּ֣א הַקֵּ֔ץ",
+        "english_text": "Doom! Doom is coming",
+        "target": ["the decisive end/judgment on Israel", "impending catastrophe", "historical-theological event"],
+        "vehicle": ["a person/agent who comes or arrives", "approaching visitor", "social interaction/movement"],
+        "ground": ["sudden arrival, inevitability, approach toward the addressee", "inescapability", "experienced intrusion"],
+        "posture": ["threatening announcement", "judgment oracle", "prophetic warning"],
+        "explanation": "The 'end' or 'doom' is portrayed as something that comes like an approaching person or force, personifying the abstract moment of judgment.",
+        "confidence": 0.82
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עַל־אַרְבַּ֖ע כַּנְפ֥וֹת הָאָֽרֶץ",
+        "english_text": "upon the four corners of the land",
+        "target": ["the total territory affected (land of Israel)", "geographical totality", "spatial extent of judgment"],
+        "vehicle": ["a four-cornered object with edges or wings", "bounded physical object", "concrete spatial form"],
+        "ground": ["completeness in all directions, full coverage", "inclusiveness", "omni-directionality"],
+        "posture": ["intensifying the scope of judgment", "comprehensive threat", "prophetic hyper-totalizing imagery"],
+        "explanation": "The idiom 'four corners of the land/earth' functions as a merism, using the image of a four-cornered object to represent the whole territory in all directions.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 7:3",
+    "deliberation": "Looked at 'the end is upon you', 'I will let loose my anger' and 'I will put upon you all your abominations'. Found (1) anger expressed via the idiom 'my nose' being 'sent', combining metonymy and metaphor, and (2) their abominations being 'put upon' them as a metaphor of sin returning as burden/punishment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשִׁלַּחְתִּ֤י אַפִּי֙ בָּ֔ךְ",
+        "english_text": "I will let loose My anger against you",
+        "target": ["YHWH's hostile response toward Judah", "divine anger", "divine emotional stance"],
+        "vehicle": ["a nose or face that is thrust/let loose", "physical organ and its movement", "human body and motion"],
+        "ground": ["sudden, forceful expression, directed against someone", "outburst and intensity", "embodied reaction"],
+        "posture": ["judicial threat", "anthropomorphic depiction of God", "prophetic indictment"],
+        "explanation": "Hebrew 'my nose' (אַפִּי) stands metonymically for anger, and this anger is depicted as something that can be 'sent out' or unleashed against them, personifying the emotion as an attacking force.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּ֣י עָלַ֔יִךְ אֵ֖ת כׇּל־תּוֹעֲבוֹתָֽיִךְ",
+        "english_text": "I will requite you for all your abominations (lit. 'I will put upon you all your abominations')",
+        "target": ["the punitive consequences Judah will suffer", "judgment experienced", "historical suffering of the people"],
+        "vehicle": ["a load or burden placed upon someone", "physical weight laid on a body", "material objects and carrying"],
+        "ground": ["what one has produced becomes a weight borne by oneself", "inescapable consequences", "burdening and oppression"],
+        "posture": ["retributive explanation", "moral causality imagery", "prophetic didactic stance"],
+        "explanation": "Their own abominations are conceptualized as a burden that God places back on them, a metaphor for their sins returning as oppressive consequences.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 7:4",
+    "deliberation": "Focused on 'my eye will not spare' and 'your ways I will give upon you'. Both expressions extend bodily or spatial imagery to moral/judicial concepts. Identified (1) 'eye' as metonym for compassion and (2) 'ways upon you I will give' as retributive metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא־תָח֥וֹס עֵינִ֛י עָלַ֖יִךְ",
+        "english_text": "I will show you no pity (lit. 'my eye shall not spare you')",
+        "target": ["God's compassionate restraint in judgment", "divine mercy", "moral/emotional disposition"],
+        "vehicle": ["an eye that has or withholds pity", "body part representing attitude", "human perception organ"],
+        "ground": ["the eye as indicator of favor or disdain", "seeing with kindness vs. turning away", "visual attention as care"],
+        "posture": ["denial of expected mercy", "judicial severity", "prophetic declaration"],
+        "explanation": "The 'eye' stands metonymically for compassionate regard; saying the eye will not spare is an idiomatic way of saying no mercy will be shown.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֣י דְרָכַ֜יִךְ עָלַ֣יִךְ אֶתֵּ֗ן",
+        "english_text": "for I will requite you for your ways (lit. 'your ways I will give upon you')",
+        "target": ["the retributive outcome they experience", "judgment", "moral consequences"],
+        "vehicle": ["paths/ways being placed back upon a person", "physical route as burden or outcome", "spatial movement"],
+        "ground": ["one's chosen path circles back upon oneself", "self-caused consequences", "closure of a journey"],
+        "posture": ["moral explanation of disaster", "didactic retribution principle", "prophetic rationale"],
+        "explanation": "Their behavior ('ways') is pictured as something God can place back upon them, a metaphor depicting judgment as their own conduct returning as their fate.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 7:5",
+    "deliberation": "Language is compressed: 'A disaster, a singular disaster—behold, it comes.' The key figurative feature is the disaster as an entity that 'comes', i.e., a personified calamity approaching.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רָעָ֛ה אַחַ֥ת רָעָ֖ה הִנֵּ֥ה בָאָֽה",
+        "english_text": "A singular disaster; a disaster is coming",
+        "target": ["the impending national catastrophe", "destructive judgment", "historical disaster"],
+        "vehicle": ["a person or force that comes/approaches", "approaching visitor/enemy", "movement of agents in space"],
+        "ground": ["movement toward the addressee, inevitability, closeness", "approach of something hostile", "encounter that cannot be avoided"],
+        "posture": ["ominous announcement", "heightening urgency", "prophetic alarm"],
+        "explanation": "The calamity is portrayed as if it were a personal agent that 'comes', personifying the disaster to intensify its imminence.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 7:6",
+    "deliberation": "Key expressions: 'end has come', 'it awakens against you'. The verb הֵקִיץ ('awoke') applied to קֵץ ('end') clearly personifies the 'end' as a sleeper rousing itself to attack.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בָּ֥א הַקֵּ֖ץ הֵקִ֣יץ אֵלָ֑יִךְ",
+        "english_text": "The hour of doom is coming! It stirs against you",
+        "target": ["the moment of judgment on the nation", "decisive end of current order", "historical turning point"],
+        "vehicle": ["a sleeper awakening and moving against someone", "roused person/attacker", "human bodily state and action"],
+        "ground": ["sudden transition from inactivity to active hostility", "shock of awakening", "directed aggressive movement"],
+        "posture": ["heightened threat", "dramatic personification", "prophetic emphasis on inevitability"],
+        "explanation": "The 'end' is depicted as a sleeper that awakens and rises up against them, personifying the abstract timing of judgment as an active assailant.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 7:7",
+    "deliberation": "Assessed the rare term הַצְּפִירָה ('the turn/doom'), the 'day' language, and 'panic on the mountains, not joy.' Took הַצְּפִירָה בָּאָה as personification of a cycle/turn of fate, and 'panic on the mountains' as metonymic for the terror of those dwelling there.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בָּאָה הַצְּפִירָה אֵלֶיךָ יוֹשֵׁב הָאָרֶץ",
+        "english_text": "The cycle has come around for you, O inhabitants of the land",
+        "target": ["the appointed turn of judgment against the land", "fateful moment", "historical crisis"],
+        "vehicle": ["a turning or cycle that comes toward someone", "rotating movement completing a circuit", "temporal cycle as moving object"],
+        "ground": ["inevitable return of a cycle to its starting point", "inescapable arrival at a destined moment", "closure of a repeated pattern"],
+        "posture": ["announcement of fateful turn", "prophetic framing of history as cyclical", "warning of inevitability"],
+        "explanation": "The term for 'turn/doom' is portrayed as something that 'comes' to the inhabitants, personifying the fateful cycle of judgment as an approaching entity.",
+        "confidence": 0.78
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַיּוֹם מְהוּמָה וְלֹא־הֵד הָרִים",
+        "english_text": "There is panic on the mountains, not joy",
+        "target": ["the terrified people in the mountainous regions", "inhabitants' emotional state", "population of Judah"],
+        "vehicle": ["mountains experiencing panic/joy", "geographical features as if feeling", "physical landscape"],
+        "ground": ["mountains stand for those dwelling on them", "location representing inhabitants", "shared fate of land and people"],
+        "posture": ["poetic, landscape-focused description", "broadening the scene beyond individuals", "prophetic dramatization"],
+        "explanation": "The 'mountains' function metonymically for their inhabitants: saying panic is on the mountains means those who live there are in panic rather than joy.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 7:8",
+    "deliberation": "Examined 'I will pour out my wrath' and 'I will exhaust/spend my anger.' Both use physical imagery for divine emotion: wrath as a liquid poured and anger as something that can be used up.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַתָּ֣ה מִקָּר֗וֹב אֶשְׁפּ֤וֹךְ חֲמָתִי֙ עָלַ֔יִךְ",
+        "english_text": "Very soon I will pour out My wrath upon you",
+        "target": ["God's punitive fury against the people", "divine wrath", "emotional-judicial response"],
+        "vehicle": ["a liquid being poured out from a container", "fluid movement downward", "physical substance and gravity"],
+        "ground": ["overwhelming, drenching impact", "intensity of outflow, loss of restraint", "being engulfed by what is poured"],
+        "posture": ["threatening judicial image", "standard prophetic idiom", "heightening of emotional intensity"],
+        "explanation": "Wrath is conceptualized as a liquid that God can pour out on them, conveying overwhelming, unrestrained judgment.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכִלֵּיתִ֤י אַפִּי֙ בָּ֔ךְ",
+        "english_text": "and spend My anger on you",
+        "target": ["duration and extent of God's anger", "divine wrath", "emotional capacity for judgment"],
+        "vehicle": ["a finite resource that can be used up/consumed", "limited supply being exhausted", "economic/consumption domain"],
+        "ground": ["anger has a limit that, once reached, ends in complete outpouring", "no reserve left", "finality of the process"],
+        "posture": ["emphasizing complete judgment", "no remaining mercy envisioned", "prophetic finality"],
+        "explanation": "God's anger is depicted as something that can be 'finished' or used up, a metaphor of emotional wrath as a finite resource consumed in judgment.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 7:9",
+    "deliberation": "Parallels verse 4 in phrasing: 'my eye will not spare,' 'your ways upon you I will give.' Identified same two figurative patterns: 'eye' as metonym for compassion and 'ways upon you' as retributive metaphor, with the added self-revelatory formula 'I, YHWH, who strike.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא־תָח֥וֹס עֵינִ֖י וְלֹ֣א אֶחְמֹ֑ל",
+        "english_text": "I will show you no pity and no compassion (lit. 'my eye will not spare')",
+        "target": ["God's merciful restraint", "divine compassion", "emotional stance in judgment"],
+        "vehicle": ["the eye as sparing or not sparing", "sight as expression of favor", "body part as attitude"],
+        "ground": ["looking with favor equated with mercy; refusal to 'spare with the eye' equals lack of compassion", "perception as care", "withholding gaze as rejection"],
+        "posture": ["denial of expected divine mercy", "heightening dread", "prophetic pronouncement"],
+        "explanation": "Again the 'eye' functions metonymically for God's compassionate regard; to say the eye does not spare is an idiomatic way of saying He will not show pity.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּדְרָכַ֜יִךְ עָלַ֣יִךְ אֶתֵּ֗ן",
+        "english_text": "I will requite you for your ways (lit. 'according to your ways I will give upon you')",
+        "target": ["the punishment that comes on the people", "experienced outcome", "historical suffering"],
+        "vehicle": ["a gift or object placed upon someone matching their path", "returning package", "transactional exchange"],
+        "ground": ["what one has done returns proportionally as what one receives", "fit correspondence between act and result", "reciprocity"],
+        "posture": ["justification of divine judgment", "lex talionis imagery", "prophetic teaching on retribution"],
+        "explanation": "Judgment is described as 'giving' their own ways back upon them, using the language of transaction to depict moral reciprocity.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 7:10",
+    "deliberation": "This verse is densely figurative: 'the day has come', 'the cycle/doom has gone out', 'the rod has blossomed', 'arrogance has budded.' I distinguish (1) the personified 'cycle' going out, and (2) the rod blossoming, and (3) arrogance budding like a plant as separate but related metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יָֽצְאָה֙ הַצְּפִרָ֔ה",
+        "english_text": "the cycle has come round; it has appeared (lit. 'the doom/turn has gone out')",
+        "target": ["the activation of the decreed judgment", "fateful turn of events", "historical crisis moment"],
+        "vehicle": ["something or someone going out from a place", "departing messenger/army", "movement from inside to outside"],
+        "ground": ["inner decision now manifesting outwardly", "transition from hidden to public action", "launching of a campaign"],
+        "posture": ["unveiling of judgment", "dramatic onset", "prophetic dramatization"],
+        "explanation": "The 'turn/doom' is pictured as something that 'goes out', like an army or herald, personifying the decree as an active emissary of judgment.",
+        "confidence": 0.79
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צָ֚ץ הַמַּטֶּ֔ה",
+        "english_text": "The rod has blossomed",
+        "target": ["the instrument of punishment arising from social evil", "oppressive power/judgment", "military-political force"],
+        "vehicle": ["a rod that sprouts or blossoms like a plant", "wooden staff as living branch", "botanical growth"],
+        "ground": ["development from earlier latent stage to full effectiveness", "maturation of something that was present but dormant", "visible flowering of hidden potential"],
+        "posture": ["depicting punishment as organically grown", "showing inevitability of consequences", "prophetic explanation of how judgment arose"],
+        "explanation": "The 'rod' (symbol of punishment) is said to have blossomed, likening the emergence of the punitive power to a branch reaching full growth.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פָּרַ֖ח הַזָּדֽוֹן",
+        "english_text": "arrogance has budded",
+        "target": ["the people's arrogance/insolence", "moral vice", "inner disposition"],
+        "vehicle": ["a plant that buds or flowers", "botanical growth process", "natural organism"],
+        "ground": ["incremental growth from hidden root to visible flower", "maturation over time", "inner cause manifesting outwardly"],
+        "posture": ["diagnosis of moral state", "explaining root of judgment", "prophetic moral critique"],
+        "explanation": "Arrogance is described as a plant that has budded, portraying their insolence as having grown to a conspicuous and ripe stage.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 7:11",
+    "deliberation": "The central image is 'violence has risen into a rod of wickedness.' It continues the rod imagery but with a distinct formulation: moral violence is pictured as being forged into a punitive rod.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֶחָמָ֥ס קָ֖ם לְמַטֵּה־רֶ֑שַׁע",
+        "english_text": "lawlessness has grown into a rod of wickedness",
+        "target": ["the people's pervasive violence", "social injustice", "moral corruption"],
+        "vehicle": ["a rod of wickedness that rises up", "weapon/staff used to strike", "instrument of physical punishment"],
+        "ground": ["their own violence becomes the very instrument that strikes them", "self-generated punishment", "transformation of quality into weapon"],
+        "posture": ["retributive explanation", "paradoxical reversal (violence turning on perpetrators)", "prophetic moral logic"],
+        "explanation": "Their violence is personified and metaphorically transformed into a 'rod of wickedness' that rises, implying that their own wrongdoing becomes the rod that will beat them.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 7:12",
+    "deliberation": "Looked for figurative devices: 'the time has come, the day has arrived' functions more as temporal proclamation; buyer/seller emotions are literal; 'wrath against all her multitude' is standard but not strongly figurative here. I judge the verse largely straightforward.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 7:13",
+    "deliberation": "Considered 'seller shall not return to what was sold' (literal in siege context), and 'the vision ... shall not return' (a prophecy 'returning' is non-literal; it is personified as something that could go back). Decided that this is a clear personification/metaphor of the prophetic vision as an irrevocable agent.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּֽי־חָז֤וֹן אֶל־כׇּל־הֲמוֹנָהּ֙ לֹ֣א יָשׁ֔וּב",
+        "english_text": "For the vision concerns all her multitude, it shall not be revoked (lit. 'shall not return')",
+        "target": ["the prophetic declaration of coming judgment", "divine decree", "spoken oracle"],
+        "vehicle": ["an entity that could return or go back on its path", "messenger changing direction", "moving agent"],
+        "ground": ["irrevocability, non-reversal once set in motion", "single-direction movement", "fixity of course"],
+        "posture": ["stress on unchangeable decree", "closing off hope of reversal", "prophetic certainty"],
+        "explanation": "The 'vision' is treated as if it were something that could go back but refuses to, personifying the prophetic word as an irreversible agent.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 7:14",
+    "deliberation": "The trumpet and battle imagery are literal within war context. The main non-literal element is 'My wrath is against all her multitude' (חֲרוֹנִי), where 'burning' stands idiomatically for anger.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֥י חֲרוֹנִ֖י אֶל־כׇּל־הֲמוֹנָֽהּ",
+        "english_text": "for My wrath is directed against all her multitude",
+        "target": ["God's intense anger", "divine emotional opposition", "judicial hostility"],
+        "vehicle": ["burning heat (חֲרוֹן) as a state directed toward someone", "physical heat/fire", "thermal phenomena"],
+        "ground": ["heat as experiential analog of anger's intensity", "burning and consuming character of wrath", "painful opposition"],
+        "posture": ["emotive characterization of judgment", "anthropopathic language", "prophetic intensification"],
+        "explanation": "The noun 'burning' (חֲרוֹן) is a metonymy for anger, using the experience of heat to represent the intensity of God's wrath toward the people.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 7:15",
+    "deliberation": "War, pestilence, and famine form a typical triad. The explicit figurative expression is 'famine and pestilence shall devour him'—where non-personal agents are said to 'eat' people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רָעָ֥ב וָדֶ֖בֶר יֹאכְלֶֽנּוּ",
+        "english_text": "famine and pestilence shall devour him",
+        "target": ["the lethal effects of famine and plague on city-dwellers", "death and destruction", "people's demise"],
+        "vehicle": ["a predator or eater devouring its prey", "eating/consuming organism", "animal consumption"],
+        "ground": ["total destructive effect, leaving nothing", "victim's utter vulnerability", "inescapable consumption"],
+        "posture": ["vivid dramatization of suffering", "intensifying horror", "prophetic vividness"],
+        "explanation": "Famine and pestilence are personified as devouring agents, likened to a predator eating its victim to convey their deadly thoroughness.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 7:16",
+    "deliberation": "The primary figure is explicit: 'they shall be like doves of the valleys, all of them moaning.' This simile compares survivors to moaning doves. The rest is literal confession ('each for his iniquity').",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָי֣וּ אֶל־הֶהָרִ֗ים כְּיוֹנֵ֧י הַגֵּאָי֛וֹת כֻּלָּ֖ם הֹמ֑וֹת",
+        "english_text": "they shall take to the mountains; they shall be like doves of the valley, moaning together",
+        "target": ["the terrified human survivors fleeing to the hills", "refugees", "remnant of the people"],
+        "vehicle": ["doves of the valleys that moan", "small vulnerable birds", "non-human animals"],
+        "ground": ["fearful, plaintive sounds; vulnerability; clustering in elevated refuges", "continuous low moaning", "defenselessness"],
+        "posture": ["sympathetic yet accusatory depiction", "evocative lament image", "prophetic pathos"],
+        "explanation": "The survivors are explicitly likened to valley-doves that continually moan, emphasizing their fear, frailty, and mournful cries.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 7:17",
+    "deliberation": "Both clauses depict emotional collapse through bodily imagery: 'all hands shall become weak' and 'all knees shall go as water.' Treated them as two related but distinct metaphors/idioms for terror-induced loss of strength.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כׇּל־הַיָּדַ֖יִם תִּרְפֶּ֑ינָה",
+        "english_text": "All hands shall grow weak",
+        "target": ["people's capacity to act/defend themselves", "human strength and resolve", "agency in crisis"],
+        "vehicle": ["hands becoming slack or limp", "paralyzed limbs", "bodily weakness"],
+        "ground": ["terror removes ability to act effectively", "dropping of hands equals surrender", "physiological collapse"],
+        "posture": ["describing total demoralization", "emphasizing helplessness", "prophetic portrayal of fear"],
+        "explanation": "The idiom of hands becoming weak uses physical limpness as a metaphor for loss of strength and resolve under extreme fear.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכׇל־בִּרְכַּ֖יִם תֵּלַ֥כְנָה מָּֽיִם",
+        "english_text": "and all knees shall turn to water",
+        "target": ["stability and firmness in the face of danger", "courage", "physical steadiness"],
+        "vehicle": ["knees becoming like or flowing with water", "liquid motion replacing solid structure", "fluid instead of bone"],
+        "ground": ["utter loss of firmness; trembling or collapsing", "inability to stand", "liquefaction as image of fear"],
+        "posture": ["graphic intensification of terror", "evocative bodily description", "prophetic dramatization"],
+        "explanation": "The phrase depicts knees as if they become water—an idiomatic metaphor for extreme fear that removes all stability and control.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 7:18",
+    "deliberation": "Sackcloth and baldness function as literal mourning customs. Two non-literal elements stand out: 'horror shall cover them' and 'shame on every face,' where emotions are portrayed as garments or coverings.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכִסְּתָ֥ה אוֹתָ֖ם פַּלָּצ֑וּת",
+        "english_text": "and horror shall cover them",
+        "target": ["their internal terror", "emotional state of dread", "psychological experience"],
+        "vehicle": ["a covering or garment that envelops someone", "outer layer on a body", "clothing"],
+        "ground": ["being completely surrounded/encased by fear", "no escape from the emotion", "visibility of the state"],
+        "posture": ["graphic portrayal of fear", "emotional saturation image", "prophetic emphasis on total dread"],
+        "explanation": "Horror is depicted as something that physically covers them like a garment, metaphorically expressing how utterly they are enveloped by fear.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֶל כׇּל־פָּנִים בּוּשָׁה",
+        "english_text": "every face shall betray shame (lit. 'on all faces, shame')",
+        "target": ["their sense of disgrace", "internal shame", "emotional guilt"],
+        "vehicle": ["a visible layer or mark on the face", "something sitting on a face", "external covering/feature"],
+        "ground": ["inner emotion becomes outwardly visible", "shame as something resting on one's countenance", "facial expression as sign of inner state"],
+        "posture": ["social humiliation emphasis", "public exposure of guilt", "prophetic shaming"],
+        "explanation": "Shame is treated as something that rests upon their faces, a metaphor for how their disgrace will be unmistakably visible.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 7:19",
+    "deliberation": "Several figurative elements: wealth as unable to 'save' in the day of wrath, silver/gold counted as נִדָּה (ritual impurity), and 'stumbling-block of their iniquity.' I isolate (1) wealth becoming 'unclean' and (2) 'stumbling-block of their iniquity' as distinct, well-formed metaphors/idioms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּזְהָבָם֮ לְנִדָּ֣ה יִֽהְיֶה",
+        "english_text": "their gold shall be treated as something unclean",
+        "target": ["their wealth (especially precious metals)", "economic resources", "possessions"],
+        "vehicle": ["ritually unclean thing (נִדָּה), associated with impurity and avoidance", "polluted object", "cultic impurity category"],
+        "ground": ["what was valued becomes repulsive and untouchable", "inversion of status from prized to defiled", "association with moral/spiritual contamination"],
+        "posture": ["moral revaluation of wealth", "critique of idolatrous trust in riches", "prophetic reversal of values"],
+        "explanation": "Gold is metaphorically recategorized as 'menstrual impurity' or defilement (נִדָּה), signaling that their wealth has become morally contaminating rather than honorable.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּֽי־מִכְשׁ֥וֹל עֲוֺנָ֖ם הָיָֽה",
+        "english_text": "Because they made them stumble into guilt (lit. 'for it was the stumbling-block of their iniquity')",
+        "target": ["their silver and gold (or what they did with them)", "idolatrous use of wealth", "cause of their sin"],
+        "vehicle": ["a stumbling-block that causes one to trip", "obstacle on a path", "road hazard"],
+        "ground": ["something that causes moral downfall", "unexpected hindrance leading to injury", "transition from safe walking to collapse"],
+        "posture": ["moral causal explanation", "warning against misplaced trust", "prophetic critique of idolatry/greed"],
+        "explanation": "Their wealth (and its idolatrous use) is called 'the stumbling-block of their iniquity,' an idiomatic metaphor for something that trips them up spiritually and leads to sin.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 7:20",
+    "deliberation": "Focused on 'the beauty of his ornament' and especially 'I will make it to them for uncleanness (לְנִדָּה).' This continues the metaphor of valuables (probably temple adornments) becoming ritual pollution.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־כֵּ֛ן נְתַתִּ֥יו לָהֶ֖ם לְנִדָּֽה",
+        "english_text": "therefore I will make their adornments a source of uncleanness to them",
+        "target": ["their beautiful adornments (likely temple/wealth)", "objects they prized", "cultic/economic assets"],
+        "vehicle": ["ritual impurity (נִדָּה) that contaminates contact", "unclean status", "cultic pollution category"],
+        "ground": ["close association brings defilement instead of honor", "reversal of value from glory to shame", "what they worshiped now harms them"],
+        "posture": ["judgment on idolatrous pride", "value inversion", "prophetic critique of misplaced glory"],
+        "explanation": "God declares He will turn their prized adornments into 'uncleanness' for them, continuing the metaphor of valuable objects becoming sources of ritual and moral pollution.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 7:21",
+    "deliberation": "This verse describes giving the valuables 'into the hand of strangers' and their being 'profaned.' These are standard terms for conquest and desecration, functioning largely literally in the context, so I do not mark a distinct figurative device beyond normal cultic language.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 7:22",
+    "deliberation": "Main non-literal expression: 'I will turn my face from them.' 'Face' here stands for God's favorable presence; turning it away is a metaphor for withdrawing protection. The rest (treasures/holy place defiled by intruders) is within literal cultic-desecration language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַהֲסִבּוֹתִ֤י פָנַי֙ מֵהֶ֔ם",
+        "english_text": "I will turn My face from them",
+        "target": ["God's favorable attention and protective presence", "divine favor", "covenantal relationship"],
+        "vehicle": ["a face turned toward or away from someone", "orientation of countenance", "visual attention"],
+        "ground": ["turning one's face away signals rejection, ceasing engagement", "face-toward as favor, face-away as abandonment", "relational distance"],
+        "posture": ["declaration of abandonment", "withdrawal of protection", "covenant-judgment idiom"],
+        "explanation": "God's 'face' functions as a metonym for His favorable presence; turning it away metaphorically describes His withdrawal of attentive protection.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 7:23",
+    "deliberation": "Two imagery layers: 'make/forge the chain' (literal order anticipating captivity) and 'the land is full of bloodshed; the city is full of violence'—using container imagery and 'land/city' metonymically for their inhabitants. I mark the fullness and land/city usage as one composite figurative instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֣י הָאָ֗רֶץ מָֽלְאָה֙ מִשְׁפַּ֣ט דָּמִ֔ים וְהָעִ֖יר מָלְאָ֥ה חָמָֽס",
+        "english_text": "for the land is full of bloody crimes, and the city is full of lawlessness",
+        "target": ["the moral condition of the people living in the land and city", "societal injustice and violence", "population's behavior"],
+        "vehicle": ["a land/city as a container filled with a substance", "physical volume holding liquid or objects", "spatial container"],
+        "ground": ["pervasiveness and saturation of violence and injustice", "no empty/innocent spaces left", "collective nature of guilt"],
+        "posture": ["sweeping moral indictment", "intensifying breadth of guilt", "prophetic hyperbole"],
+        "explanation": "The 'land' and 'city' stand metonymically for their inhabitants, and are depicted as containers 'full' of bloodshed and violence, an exaggerated image of pervasive moral corruption.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 7:24",
+    "deliberation": "Key phrase: 'I will put an end to the pride of the strong' (וְהִשְׁבַּתִּי גְּאוֹן עַזִּים). Here 'pride of the strong' functions as a metonym for the arrogant powerful, and 'cause to cease' uses quasi-locutional imagery of shutting down a sound or activity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִשְׁבַּתִּי֙ גְּא֣וֹן עַזִּ֔ים",
+        "english_text": "so shall I turn to naught the pride of the powerful",
+        "target": ["the arrogant elite and their self-exaltation", "socially powerful group", "human oppressors"],
+        "vehicle": ["'pride' as a quality that can be ceased", "boastful display/sound being cut off", "activity coming to rest"],
+        "ground": ["removal of public display of arrogance equates to downfall of the arrogant", "silencing/shutting down as ending power", "no more visible dominance"],
+        "posture": ["threat to elites", "reversal of status", "prophetic leveling"],
+        "explanation": "The expression 'pride of the strong' stands metonymically for the arrogant powerful themselves; God 'causing it to cease' portrays their fall as the end of their arrogant display.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 7:25",
+    "deliberation": "The noun קְפָדָה ('horror/destruction') is said to 'come'; thus an abstract terror is personified as an approaching entity. 'They will seek peace, and there shall be none' is more conceptual than imaginative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קְפָדָה־בָ֑א",
+        "english_text": "Horror comes",
+        "target": ["the onset of catastrophic judgment", "experience of terror/destruction", "national calamity"],
+        "vehicle": ["a person or force that comes/arrives", "approaching visitor/army", "moving agent"],
+        "ground": ["sudden arrival and presence, unavoidable encounter", "encroaching threat", "external force imposing itself"],
+        "posture": ["ominous, compact warning", "compression of threat into one word", "prophetic urgency"],
+        "explanation": "The abstract 'horror/destruction' is personified as something that comes, making the terror of judgment feel like an approaching entity.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 7:26",
+    "deliberation": "Noted: 'calamity upon calamity, rumor upon rumor' as piling repetition, and 'instruction shall perish from priest, counsel from elders' where abstract entities 'perish.' I mark (1) the repeated calamity/rumor as hyperbolic accumulation and (2) Torah/counsel perishing as personification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הֹוָ֤ה עַל־הֹוָה֙ תָּב֔וֹא וּשְׁמֻעָ֥ה אֶל־שְׁמוּעָ֖ה תִּֽהְיֶ֑ה",
+        "english_text": "Calamity shall follow calamity, and rumor follow rumor",
+        "target": ["frequency and intensity of bad events and news", "continual crises", "social experience of disaster"],
+        "vehicle": ["one thing piled upon another", "succession with no gaps", "iterative pattern"],
+        "ground": ["overwhelming, unrelenting sequence of troubles", "no respite between shocks", "cumulative impact"],
+        "posture": ["rhetorical intensification", "anaphoric piling", "prophetic dramatization of chaos"],
+        "explanation": "The doubling 'calamity upon calamity, rumor upon rumor' is a hyperbolic idiom stressing the relentless succession of disasters and disturbing reports.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְתוֹרָה֙ תֹּאבַ֣ד מִכֹּהֵ֔ן וְעֵצָ֖ה מִזְּקֵנִֽים",
+        "english_text": "instruction shall perish from the priest, and counsel from the elders",
+        "target": ["availability of authoritative guidance", "religious and social wisdom", "structures of counsel"],
+        "vehicle": ["living things dying or perishing", "loss of life", "biological cessation"],
+        "ground": ["complete disappearance, no longer functioning", "irrevocable loss", "end of capacity to provide what they once did"],
+        "posture": ["lament over collapse of guidance", "intensifying sense of abandonment", "prophetic critique of leadership"],
+        "explanation": "Torah and counsel, abstractions, are personified as things that 'perish,' picturing the loss of guidance as a kind of death.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 7:27",
+    "deliberation": "Important image: 'the prince shall clothe himself with desolation.' Here 'desolation' is treated as a garment. The other clauses ('hands will tremble', retributive 'according to their way') are more standard though they echo earlier metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָשִׂיא֙ יִלְבַּ֣שׁ שְׁמָמָ֔ה",
+        "english_text": "the prince shall clothe himself with desolation",
+        "target": ["the prince's experience of utter ruin and grief", "his status and inner state", "royal condition under judgment"],
+        "vehicle": ["a garment of desolation worn on the body", "clothing oneself with a quality", "outer layer covering a person"],
+        "ground": ["being entirely enveloped in ruin and grief", "desolation visible in outward appearance", "identity wrapped in disaster"],
+        "posture": ["dramatic humiliation of leadership", "symbolic mourning image", "prophetic reversal of royal splendor"],
+        "explanation": "Desolation is depicted as the prince's clothing, an idiomatic metaphor conveying that his whole appearance and condition will be marked by ruin.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

@@ -1,0 +1,798 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 9:1",
+    "deliberation": "I checked the imperative not to rejoice, the comparison with other nations, and especially the verbs and nouns around sexual imagery. The two clauses using זנה and אתנן clearly extend Hosea’s recurring prostitution metaphor for idolatry and materially-motivated unfaithfulness. I treat (1) the act 'you have played the harlot from your God' and (2) the love of 'a prostitute’s fee' as two related but distinct figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי זָנִיתָ מֵעַל אֱלֹהֶיךָ",
+        "english_text": "For you have strayed away (played the harlot) from your God",
+        "target": [
+          "Israel’s covenant unfaithfulness toward God",
+          "Spiritual/ethical loyalty to YHWH",
+          "Covenant relationship between Israel and God"
+        ],
+        "vehicle": [
+          "A woman committing prostitution against her rightful partner",
+          "Sexual infidelity/prostitution",
+          "Human marital/sexual relationships"
+        ],
+        "ground": [
+          "Betrayal of an exclusive relationship by seeking forbidden partners",
+          "Unfaithfulness motivated by illicit desire",
+          "Moral quality of treachery and impurity"
+        ],
+        "posture": [
+          "Prophetic accusation portraying Israel as an unfaithful wife or harlot",
+          "Condemning, indicting stance toward Israel’s idolatry",
+          "Prophetic/theological evaluation of Israel’s behavior"
+        ],
+        "explanation": "The verb זנה ‘to commit harlotry’ is applied to Israel’s relationship with God, metaphorically framing their religious apostasy as sexual infidelity, a conventional prophetic idiom.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אָהַבְתָּ אֶתְנָן עַל כָּל־גׇּרְנוֹת דָּגָן",
+        "english_text": "You have loved a prostitute’s fee on every threshing floor of grain",
+        "target": [
+          "Israel’s desire for agricultural prosperity through idolatrous cults",
+          "Greedy pursuit of material benefit in religion",
+          "Socio‑religious/economic behavior of Israel"
+        ],
+        "vehicle": [
+          "A prostitute’s payment (אֶתְנָן) received on many threshing floors",
+          "Commercialized sexuality and its wages",
+          "Economic aspect of prostitution and cultic fees"
+        ],
+        "ground": [
+          "Affection directed toward material rewards gained by unfaithful conduct",
+          "A mercenary, degraded ‘love’ motivated by payment rather than covenant loyalty",
+          "Moral quality of selling oneself for profit"
+        ],
+        "posture": [
+          "Prophetic denunciation of Israel’s love of profit instead of love of God",
+          "Critical exposure of the sordid nature of their idolatrous ‘love’",
+          "Theological critique of prosperity‑oriented religion"
+        ],
+        "explanation": "Israel’s delight in the agricultural yield obtained through idolatrous practices is metaphorically called a ‘prostitute’s fee’, casting their quest for fertility as selling themselves like a harlot; the threshing floors metonymically represent the whole fertility‑cult economy.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 9:2",
+    "deliberation": "I examined whether the agricultural images are simply literal or function symbolically. ‘Threshing floor and winepress’ stand for the entire agricultural economy (metonymy), and ‘the new wine will deceive/betray her’ personifies wine as an unreliable ally or deceiver.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "גֹּרֶן וָיֶקֶב לֹא יִרְעֵם",
+        "english_text": "Threshing floor and winepress shall not feed them",
+        "target": [
+          "Israel’s food supply and economic prosperity",
+          "Agricultural productivity and sustenance",
+          "Socio‑economic life of the nation"
+        ],
+        "vehicle": [
+          "Threshing floor and winepress installations",
+          "Places of processing grain and grapes",
+          "Agricultural infrastructure"
+        ],
+        "ground": [
+          "These places are the visible sources and symbols of grain and wine",
+          "Naming the key processing sites stands for the whole system of provision",
+          "Part‑for‑whole relation between facilities and total prosperity"
+        ],
+        "posture": [
+          "Prophetic warning that the usual sources of provision will fail",
+          "Threatening stance toward Israel’s assumed economic security",
+          "Theological interpretation of coming drought/failure as judgment"
+        ],
+        "explanation": "‘Threshing floor and winepress’ are concrete sites but function metonymically for all grain and wine production, summarizing Israel’s entire supply system that will no longer sustain them.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְתִירוֹשׁ יְכַחֶשׁ בָּהּ",
+        "english_text": "And the new wine shall betray her",
+        "target": [
+          "Israel’s expectation that abundant wine will secure her future",
+          "Reliance on agricultural fertility for security",
+          "National trust and hope"
+        ],
+        "vehicle": [
+          "A deceitful person who lies or betrays a partner",
+          "Unfaithful human ally or false friend",
+          "Interpersonal relationships marked by deception"
+        ],
+        "ground": [
+          "What is trusted proves unreliable and fails at a crucial moment",
+          "Apparent abundance masks ultimate failure and disappointment",
+          "Shared trait of deceptive appearance versus true outcome"
+        ],
+        "posture": [
+          "Prophetic undermining of Israel’s trust in material abundance",
+          "Critical stance exposing the ‘treachery’ of what they rely on",
+          "Theological insistence that only God, not produce, is trustworthy"
+        ],
+        "explanation": "Wine, an inanimate product, is personified and metaphorically depicted as a traitor who deceives Israel, highlighting that their trusted prosperity will let them down.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 9:3",
+    "deliberation": "I checked whether the phrases are purely geographic or symbolic. ‘Land of YHWH’ is a theological designation but not clearly figurative. However, ‘Ephraim shall return to Egypt’ in Hosea is a stereotyped way of speaking about going back into bondage/exile, with Egypt standing for oppressive foreign rule rather than a simple travel notice.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשָׁב אֶפְרַיִם מִצְרָיִם",
+        "english_text": "But Ephraim shall return to Egypt",
+        "target": [
+          "Israel’s impending exile and renewed experience of foreign bondage",
+          "National judgment in the form of subjugation by foreign powers",
+          "Historical-political fate of the northern kingdom"
+        ],
+        "vehicle": [
+          "Egypt, the place of Israel’s former slavery",
+          "Archetypal land of oppression and bondage",
+          "Geopolitical entity with a symbolic history"
+        ],
+        "ground": [
+          "Egypt is remembered as the paradigmatic place of forced servitude",
+          "Going ‘back to Egypt’ evokes the idea of reversing the exodus salvation",
+          "Shared notion of being under harsh foreign domination"
+        ],
+        "posture": [
+          "Prophetic portrayal of exile as a tragic reversal of redemption",
+          "Warning that covenant breach undoes the exodus gift",
+          "Theological reading of future history through the lens of past bondage"
+        ],
+        "explanation": "‘Return to Egypt’ functions as an idiomatic metonymy: Egypt stands for any oppressive exile that undoes Israel’s redeemed status, not merely for literal resettlement there.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 9:4",
+    "deliberation": "I considered whether ‘food of mourners’ is a metaphor; in context it refers to ritually defiled food after contact with the dead, a technical cultic category, so I treated it as literal. The primary figurative feature here is the conventional phrase ‘House of YHWH’, which uses ‘house’ metonymically for God’s temple/worship presence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יְהֹוָה",
+        "english_text": "the House of the LORD",
+        "target": [
+          "The temple/worship center and presence of YHWH",
+          "Official cult and meeting place between God and Israel",
+          "Religious-institutional sphere"
+        ],
+        "vehicle": [
+          "A house or dwelling place",
+          "Physical building as a locus of a person’s presence and authority",
+          "Domestic/architectural domain"
+        ],
+        "ground": [
+          "A house is where a person resides and receives guests",
+          "Calling the temple ‘God’s house’ presents it as His dwelling among His people",
+          "Part‑for‑whole relation between a building and the activities/authority centered there"
+        ],
+        "posture": [
+          "Covenantal depiction of Israel as admitted (or barred) guests in God’s dwelling",
+          "Emphasizes intimacy but also the right of the owner to exclude",
+          "Theological framing of cultic access as hospitality from God"
+        ],
+        "explanation": "‘House of YHWH’ is not a private residence but a metonymic way to speak of the temple and God’s cultic presence, conceptualizing God as a householder who can accept or refuse Israel.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 9:5",
+    "deliberation": "I checked for metaphors in ‘day of appointed time’ and ‘day of the festival of YHWH’; here they appear as literal cultic calendar designations, with only a rhetorical question but no figurative imagery or personification.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 9:6",
+    "deliberation": "I evaluated ‘Egypt will gather them, Moph will bury them’ for personification and metonymy, and the clauses about weeds and thorns for metaphor. Egypt/Memphis function as place‑for‑people metonymies and quasi‑personified agents of exile and death. The imagery of weeds inheriting silver and thorns in tents is an extended metaphor/personification for desolation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִצְרַיִם תְּקַבְּצֵם מֹף תְּקַבְּרֵם",
+        "english_text": "Egypt shall gather them, Moph shall bury them",
+        "target": [
+          "The fate of Israel’s people in exile (capture and death)",
+          "National judgment through deportation and mortality abroad",
+          "Historical-political destiny of the northern kingdom"
+        ],
+        "vehicle": [
+          "Egypt and Moph (Memphis) acting as gatherer and undertaker",
+          "Foreign land and capital city personified as active agents",
+          "Geographical-political entities"
+        ],
+        "ground": [
+          "Egypt/Memphis stand for their regimes and peoples who will control Israel’s fate",
+          "The lands where exiles are taken become the ‘gatherers’ and buriers of the defeated",
+          "Use of place names to evoke oppressive powers and their actions"
+        ],
+        "posture": [
+          "Prophetic portrayal of foreign nations as instruments of divine judgment",
+          "Sobering depiction of exile as being swallowed up by another land",
+          "Theological emphasis on total loss of autonomy, even in burial"
+        ],
+        "explanation": "Egypt and Memphis are metonymically and personifiedly depicted as agents who ‘gather’ and ‘bury’ Israel, summarizing the entire experience of captivity and dying on foreign soil.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַחְמַד לְכַסְפָּם קִמּוֹשׂ יִירָשֵׁם חוֹחַ בְּאׇהֳלֵיהֶם",
+        "english_text": "As for their precious silver, weeds shall inherit it; prickly shrubs [will be] in their tents",
+        "target": [
+          "The loss of Israel’s wealth and homes through judgment and abandonment",
+          "Desolation of property and homesteads",
+          "Socio‑economic consequences of national ruin"
+        ],
+        "vehicle": [
+          "Weeds inheriting silver and thorns occupying tents",
+          "Wild plants behaving like heirs and new occupants",
+          "Natural overgrowth in abandoned places"
+        ],
+        "ground": [
+          "In abandoned places, nature overruns former wealth and dwellings",
+          "Weeds ‘taking over’ parallels heirs taking possession of an estate",
+          "Shared idea of previous owners’ disappearance and replacement"
+        ],
+        "posture": [
+          "Vividly picturing judgment as nature reclaiming what was once Israel’s",
+          "Mournful yet accusatory tone about the futility of their treasures",
+          "Prophetic insistence that what they prized will pass to non‑human ‘heirs’"
+        ],
+        "explanation": "Weeds and thorns are personified as heirs and occupants of Israel’s valuables and tents, a metaphor for the complete desolation and abandonment of their wealth and homes.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 9:7",
+    "deliberation": "I checked whether ‘days of punishment’ and ‘days of recompense’ are metaphorical time expressions; they are abstract but not strongly figurative. The clause ‘the prophet is a fool, the man of the spirit is mad’ functions as an ironic reversal: the true prophet is derided as insane because of the people’s sin, a use of irony rather than metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֱוִיל הַנָּבִיא מְשֻׁגָּע אִישׁ הָרוּחַ",
+        "english_text": "The prophet is a fool, the man of the spirit is mad",
+        "target": [
+          "The true status and role of God’s prophet in Israel",
+          "Perception of prophetic ministry",
+          "Religious leadership and revelation"
+        ],
+        "vehicle": [
+          "A ‘fool’ and a ‘madman’ as labels of contempt",
+          "Socially derided irrational person",
+          "Psychological/social deviance"
+        ],
+        "ground": [
+          "From the people’s corrupt perspective, the prophet’s message seems insane",
+          "There is a contrast between appearance (madness) and reality (divine inspiration)",
+          "Irony arises from misjudging God’s spokesman"
+        ],
+        "posture": [
+          "Ironic and polemical stance: echoing the people’s insult to expose their guilt",
+          "Highlights the inversion of values in a sinful society",
+          "Prophetic defense of the true, though despised, messenger"
+        ],
+        "explanation": "The line is ironic: those who ought to honor God’s ‘man of the spirit’ instead brand him a fool and madman, revealing their own deep corruption; the rhetorical force rests on this inversion, not on literal description.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 9:8",
+    "deliberation": "The verse is textually difficult, but in any reading the prophet is likened to a watchman, and then to a snare. These are two distinct metaphors: (1) the positive role of prophet as a lookout, and (2) the corrupt prophet (or people's view of him) as a bird‑trap ensnaring others.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צֹפֶה אֶפְרַיִם עִם־אֱלֹהָי נָבִיא",
+        "english_text": "A watchman is over Ephraim with my God—the prophet",
+        "target": [
+          "The prophetic office watching over Ephraim",
+          "Spiritual oversight and warning function",
+          "Religious leadership role"
+        ],
+        "vehicle": [
+          "A city watchman stationed on the walls",
+          "Guardian who scans the horizon for danger",
+          "Military/urban security practice"
+        ],
+        "ground": [
+          "Both prophet and watchman are responsible to detect danger early",
+          "They must warn the community of approaching threats",
+          "Shared role of vigilance and protective oversight"
+        ],
+        "posture": [
+          "Affirming the ideal function of the prophet as God’s lookout",
+          "Shows divine alignment (‘with my God’) of true prophetic watching",
+          "Sets a standard against which corrupt practice is judged"
+        ],
+        "explanation": "The prophet is metaphorically called a ‘watchman’ over Ephraim, picturing his task as guarding the people by warning of coming judgment, just as a sentry guards a city.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נָבִיא פַּח יָקוֹשׁ עַל־כָּל־דְּרָכָיו",
+        "english_text": "The prophet is a fowler’s snare on all his paths",
+        "target": [
+          "The corrupt influence of the (false or compromised) prophet on Israel",
+          "Misleading spiritual guidance",
+          "Social-religious danger posed by leadership"
+        ],
+        "vehicle": [
+          "A bird‑trap or snare spread along paths",
+          "Hidden device that captures unsuspecting victims",
+          "Hunting technology"
+        ],
+        "ground": [
+          "Both ensnare and bring ruin to those who pass by trustingly",
+          "They operate deceptively, often unseen until it is too late",
+          "Shared trait of being a source of entrapment rather than safety"
+        ],
+        "posture": [
+          "Harshly critical portrayal of the prophet’s effect on the people",
+          "Warns that listening to such a prophet is spiritually deadly",
+          "Turns the ‘watchman’ image inside‑out into a trap"
+        ],
+        "explanation": "Here the prophet is not a guardian but likened to a bird‑snare, suggesting that instead of protecting the people he lures and traps them into destruction.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 9:9",
+    "deliberation": "I considered the historical comparison ‘as in the days of Gibeah’ (an allusion rather than a simile) and the phrase ‘they have deepened their corruption’. The verb ‘deepened’ applies spatial imagery of depth to moral ruin, a moral‑spatial metaphor common in Hebrew.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֶעְמִיקוּ שִׁחֵתוּ",
+        "english_text": "They have deeply corrupted themselves",
+        "target": [
+          "The extent of Israel’s moral and spiritual corruption",
+          "Degree of wickedness and depravity",
+          "Ethical-spiritual condition of the people"
+        ],
+        "vehicle": [
+          "Going down to a deep place",
+          "Physical depth and descent",
+          "Spatial dimension (vertical depth)"
+        ],
+        "ground": [
+          "Both ‘going deep’ and becoming extremely corrupt go beyond the surface or ordinary level",
+          "Imagery of depth conveys intensity and entrenchment",
+          "Shared notion of being far removed from the proper/normal state"
+        ],
+        "posture": [
+          "Emphasizes the seriousness and entrenched nature of their sin",
+          "Intensifies the accusation through spatial metaphor",
+          "Warns that their state is not superficial but profoundly rooted"
+        ],
+        "explanation": "The verb ‘they have deepened’ uses vertical depth metaphorically for the intensity of their self‑ruin, picturing their sin as plunging ever further down.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 9:10",
+    "deliberation": "I noted three explicit כּ‑comparisons: Israel as grapes in the wilderness, the ancestors as first‑ripe figs, and Israel becoming detestable ‘like’ what they loved. These are three distinct similes; the references to ‘shame’ and ‘abominations’ for Baal are contemptuous labels but function more as pejorative renamings than separate metaphors here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כַּעֲנָבִים בַּמִּדְבָּר מָצָאתִי יִשְׂרָאֵל",
+        "english_text": "I found Israel [as pleasing] as grapes in the wilderness",
+        "target": [
+          "God’s initial delight in Israel",
+          "Perceived value and freshness of Israel at first",
+          "Covenant affection at the outset"
+        ],
+        "vehicle": [
+          "Grapes found in the wilderness",
+          "Unexpected, refreshing fruit in a barren place",
+          "Agricultural produce in a harsh environment"
+        ],
+        "ground": [
+          "Both are rare, surprising, and highly prized in their setting",
+          "They bring joy and satisfaction when unexpectedly encountered",
+          "Shared sense of preciousness against a background of barrenness"
+        ],
+        "posture": [
+          "Affectionate recollection of how God once regarded Israel",
+          "Highlights the contrast with their later apostasy",
+          "Sets a tone of disappointed love"
+        ],
+        "explanation": "God compares His discovery of Israel to finding grapes in a desert, a simile expressing how unexpectedly delightful and precious they once appeared.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּבִכּוּרָה בִתְאֵנָה בְּרֵאשִׁיתָהּ רָאִיתִי אֲבוֹתֵיכֶם",
+        "english_text": "Your ancestors seemed to Me like the first fig to ripen on a fig tree",
+        "target": [
+          "God’s favorable view of Israel’s forefathers",
+          "Initial promise and attractiveness of the ancestors",
+          "Early stage of the covenant relationship"
+        ],
+        "vehicle": [
+          "The first ripe fig at the beginning of the fig season",
+          "Earliest, choicest fruit",
+          "Agricultural firstfruits"
+        ],
+        "ground": [
+          "First ripe figs are eagerly anticipated and especially valued",
+          "Both carry a sense of early, promising yield",
+          "Shared association of delight and special status"
+        ],
+        "posture": [
+          "Reminiscent praise of the ancestors as once‑precious to God",
+          "Sets up a tragic contrast with later generations’ idolatry",
+          "Frames the story as decline from early promise"
+        ],
+        "explanation": "The ancestors are compared to the first ripe fig, a simile expressing their special, eagerly awaited value at the beginning of Israel’s history.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיִּהְיוּ שִׁקּוּצִים כְּאׇהֳבָם",
+        "english_text": "Then they became as detestable as what they loved",
+        "target": [
+          "Israel’s moral/spiritual transformation through idolatry",
+          "Character of the people shaped by their worship",
+          "Ethical-spiritual likeness to idols"
+        ],
+        "vehicle": [
+          "The detestable object(s) they loved (Baal/‘shame’)",
+          "Abominable idol or shameful cult",
+          "Religious object of devotion"
+        ],
+        "ground": [
+          "Lovers come to resemble what they adore in values and character",
+          "Idols and shameful cults are ‘detestable’; Israel imitates that quality",
+          "Shared trait of repulsiveness before God"
+        ],
+        "posture": [
+          "Condemns Israel by equating them morally with their idols",
+          "Warns that worship shapes identity, for ill here",
+          "Theological explanation of corruption as becoming like one’s god"
+        ],
+        "explanation": "Using a simile, Hosea says Israel became ‘as detestable as what they loved’, asserting that by loving shameful idols they took on the abominable character of their gods.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Hosea 9:11",
+    "deliberation": "The key figurative element is the comparison of Ephraim’s ‘glory’ to a bird that flies away, an explicit simile capturing the swift, irretrievable loss of honor and offspring. The birth‑terms themselves are literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶפְרַיִם כָּעוֹף יִתְעוֹפֵף כְּבוֹדָם",
+        "english_text": "Ephraim—like a bird, their glory shall fly away",
+        "target": [
+          "Ephraim’s glory, including children and status",
+          "Honor, vitality, and continuation of the nation",
+          "Social-familial flourishing"
+        ],
+        "vehicle": [
+          "A bird that flies away",
+          "Small, mobile creature quickly disappearing from sight",
+          "Natural image of swift departure"
+        ],
+        "ground": [
+          "Both can vanish suddenly and be hard or impossible to retrieve",
+          "Movement is rapid and in one direction away from the observer",
+          "Shared impression of transience and loss"
+        ],
+        "posture": [
+          "Laments but also warns of the fragility of Ephraim’s glory",
+          "Presents the loss of offspring and honor as swift and final",
+          "Underscores the seriousness of judgment on fertility"
+        ],
+        "explanation": "Ephraim’s ‘glory’—likely their children and status—is compared to a bird flying away, a simile picturing its rapid, irretrievable loss.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Hosea 9:12",
+    "deliberation": "Most of the verse is straightforward threat language. I considered whether ‘when I turn away from them’ is just spatial description or a relational metaphor; in Hebrew ‘turning away’ from someone commonly figures relational rejection, so I treat that as a metaphor for withdrawing favor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּשׂוּרִי מֵהֶם",
+        "english_text": "when I turn away from them",
+        "target": [
+          "God’s decision to withdraw His favor and presence from Israel",
+          "Relational rejection and abandonment",
+          "Divine‑human covenant relationship"
+        ],
+        "vehicle": [
+          "Physically turning one’s body away from someone",
+          "Breaking face‑to‑face contact and moving aside",
+          "Spatial orientation in human interaction"
+        ],
+        "ground": [
+          "Turning away physically symbolizes ending engagement and concern",
+          "Both involve cessation of attentive, supportive presence",
+          "Shared implication of rejection and distance"
+        ],
+        "posture": [
+          "Expresses divine judgment as the withdrawal of relational nearness",
+          "Highlights the personal dimension of Israel’s loss (not just events)",
+          "Warns that their behavior leads to being forsaken"
+        ],
+        "explanation": "God’s ‘turning away’ uses bodily orientation as a metaphor for relational rejection—He will no longer face or attend to Israel, signifying abandonment.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Hosea 9:13",
+    "deliberation": "I focused on the comparison with Tyre and the planting imagery. Tyre ‘planted in a meadow’ itself is a metaphor (city as a well‑planted entity), and Ephraim is said to fare ‘as’ Tyre did. I treat this as one plant‑based simile describing Ephraim’s formerly secure, pleasant situation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶפְרַיִם כַּאֲשֶׁר־רָאִיתִי לְצֹר שְׁתוּלָה בְנָוֶה",
+        "english_text": "Ephraim—as I have seen it go with Tyre, which was planted in a meadow",
+        "target": [
+          "Ephraim’s former position of security and pleasant prosperity",
+          "National stability and flourishing before judgment",
+          "Political-economic condition of the kingdom"
+        ],
+        "vehicle": [
+          "Tyre as a plant ‘planted in a meadow’",
+          "Well‑rooted vegetation in a fertile, pleasant place",
+          "Agricultural image of secure growth"
+        ],
+        "ground": [
+          "Both a well‑planted tree and a secure city/enjoying nation are firmly established and well‑situated",
+          "They draw continuous sustenance from a favorable environment",
+          "Shared image of flourishing in a good location"
+        ],
+        "posture": [
+          "Recalls how promising and secure Ephraim once appeared, like Tyre",
+          "Sets the stage for the shock of bringing children out to the slayer",
+          "Uses flourishing‑plant imagery to heighten the tragedy of coming ruin"
+        ],
+        "explanation": "Ephraim’s secure state is likened to Tyre pictured as a plant ‘planted in a meadow’; this simile/metaphor casts the nation’s former prosperity as that of a well‑rooted plant in a pleasant place.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Hosea 9:14",
+    "deliberation": "I examined whether ‘a womb that miscarries and shriveled breasts’ are symbolic or literal. They function primarily as concrete imprecations for barrenness and infant death, without an additional figurative mapping beyond the direct curse itself. I therefore do not mark a distinct figurative expression.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Hosea 9:15",
+    "deliberation": "I checked ‘all their evil is in Gilgal’ (which situationally highlights that place but is not in itself figurative) and focused on ‘from my house I will drive them out’. This uses ‘house’ for God’s temple/presence (metonymy) and casts the covenant relationship as a household where God expels unwanted members, giving a metaphor of familial/household rejection.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִבֵּיתִי אֲגָרְשֵׁם",
+        "english_text": "From My house I will drive them out",
+        "target": [
+          "Israel’s exclusion from God’s presence and covenant fellowship",
+          "Loss of cultic access and belonging to God’s people",
+          "Divine-human relational standing"
+        ],
+        "vehicle": [
+          "A householder expelling people from his own house",
+          "Domestic scene of driving out unwelcome or disowned occupants",
+          "Family/household life"
+        ],
+        "ground": [
+          "Both involve removing people from a place of intimacy and provision",
+          "Being ‘driven out’ of a house signifies rejection and loss of status as family or guests",
+          "Shared sense of severed relationship and loss of protection"
+        ],
+        "posture": [
+          "Presents judgment as God’s decisive act of disowning and expelling",
+          "Stresses the personal, relational dimension of Israel’s rejection",
+          "Warns that their sin forfeits the privilege of dwelling in God’s ‘house’"
+        ],
+        "explanation": "God’s ‘house’ is the temple/presence of YHWH, and expelling Israel from it is metaphorically described as a householder driving people out of his home, conveying familial rejection.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Hosea 9:16",
+    "deliberation": "I examined whether the language of striking, root, and fruit is literal or figurative. ‘Ephraim is stricken’ is idiomatic judgment language; the main explicit metaphor is the plant imagery: Ephraim’s root is dried up, and they can bear no fruit, depicting the nation as a plant whose life‑source has withered.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֻכָּה אֶפְרַיִם שָׁרְשָׁם יָבֵשׁ פְּרִי בַל־יַעֲשׂוּן",
+        "english_text": "Ephraim is stricken; their root is dried up, they can produce no fruit",
+        "target": [
+          "The life, strength, and generative capacity of the nation Ephraim",
+          "National vitality, stability, and ability to produce offspring or success",
+          "Corporate existence of Israel"
+        ],
+        "vehicle": [
+          "A plant with a dried‑up root that bears no fruit",
+          "Botanical life dependent on roots and fruit‑bearing",
+          "Agricultural growth cycle"
+        ],
+        "ground": [
+          "Both a withered plant and a judged nation lack inner vitality and outward productivity",
+          "Dry root signifies no source of nourishment; no fruit signifies no outcome or continuation",
+          "Shared sense of inevitable decline and death"
+        ],
+        "posture": [
+          "Depicts judgment as cutting off Ephraim’s life‑source and future",
+          "Uses familiar agricultural imagery to make national ruin vivid",
+          "Warns that their current prosperity will not continue"
+        ],
+        "explanation": "Ephraim is metaphorically presented as a plant whose root has dried up and thus cannot bear fruit, signifying the loss of inner vitality and the end of productive future (including offspring).",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Hosea 9:17",
+    "deliberation": "I considered whether ‘My God will reject them’ and ‘they shall be wanderers among the nations’ are metaphorical. ‘Reject’ uses relational language, and ‘wanderers’ can be literal for exiles scattered among nations. There is no clear additional figurative vehicle beyond the straightforward description of rejection and dispersion.",
+    "instances": []
+  }
+]

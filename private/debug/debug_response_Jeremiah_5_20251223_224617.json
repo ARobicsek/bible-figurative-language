@@ -1,0 +1,678 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 5:1",
+    "deliberation": "Checked for overt metaphors or similes in the commands to roam and seek. The verbs and search imagery are literal. The key figurative element is the pronominal suffix לָהּ ('her') referring to Jerusalem as a woman, a conventional personification/metonymy for the city and its inhabitants.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֶסְלַח לָהּ",
+        "english_text": "That I should pardon her.",
+        "target": ["Jerusalem and its inhabitants", "collective community", "human society"],
+        "vehicle": ["a single woman being pardoned", "individual female person", "human individuals"],
+        "ground": ["moral agency and liability to pardon", "capacity to be judged and forgiven", "moral-relational status"],
+        "posture": ["judicial evaluation of the city", "condemnation tempered by potential mercy", "prophetic/legal discourse"],
+        "explanation": "The feminine pronoun 'her' refers to the city of Jerusalem as though it were a single woman who can be pardoned, personifying the city and using it metonymically for its inhabitants.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 5:2",
+    "deliberation": "Considered whether the oath formula 'As YHWH lives' or 'swear falsely' function figuratively. They operate here as a literal oath formula and description of perjury, without metaphorical transfer or personification.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 5:3",
+    "deliberation": "Identified (1) anthropomorphic language about YHWH's 'eyes' seeking faithfulness, (2) the metaphor 'they made their faces harder than rock' for stubbornness, and (3) 'refused to return' as an idiomatic metaphor for repentance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יְהוָה עֵינֶיךָ הֲלֹא לֶאֱמוּנָה",
+        "english_text": "O LORD, Your eyes look for integrity.",
+        "target": ["YHWH’s knowledge and moral scrutiny", "divine attribute", "divine realm"],
+        "vehicle": ["eyes that look for something", "human sense organ and activity", "human body and perception"],
+        "ground": ["capacity to see and examine closely", "perception and evaluation", "cognitive awareness"],
+        "posture": ["appeal to God's just perception", "prayerful complaint", "prophetic intercession"],
+        "explanation": "YHWH is described as having 'eyes' that look for faithfulness, an anthropomorphic metaphor that attributes human visual searching to divine moral scrutiny.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "חִזְּקוּ פְנֵיהֶם מִסֶּלַע",
+        "english_text": "They made their faces harder than rock.",
+        "target": ["the people’s attitude and moral responsiveness", "inner disposition", "human character"],
+        "vehicle": ["a face harder than rock", "rigid stone surface", "inanimate material world"],
+        "ground": ["unyielding, resistant quality", "rigidity and insensitivity", "psychological obstinacy"],
+        "posture": ["sharp moral condemnation", "diagnosis of hardness of heart", "prophetic rebuke"],
+        "explanation": "Their 'faces' (metonymy for their stance/attitude) are said to be harder than rock, a metaphor for extreme stubbornness and insensitivity to correction.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מֵאֲנוּ לָשׁוּב",
+        "english_text": "They refused to turn back.",
+        "target": ["spiritual-moral repentance", "religious response", "divine–human relationship"],
+        "vehicle": ["turning back on a path", "change of physical direction", "spatial movement"],
+        "ground": ["change from one direction to another", "reversal of course", "behavioral transformation"],
+        "posture": ["description of impenitence", "ethical evaluation", "prophetic exhortation (negative)"],
+        "explanation": "‘To turn back’ is an idiomatic metaphor for repentance, treating moral conversion as a reversal of physical direction on a path.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 5:4",
+    "deliberation": "Focused on the phrase 'the way of YHWH'. Here דֶּרֶךְ ('way') is a conventional metaphor/idiom for God’s prescribed manner of life, not a physical road.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא יָדְעוּ דֶּרֶךְ יְהוָה",
+        "english_text": "They do not know the way of the LORD.",
+        "target": ["God’s will and covenantal requirements", "religious-ethical conduct", "divine–human relationship"],
+        "vehicle": ["a way/path one can know and walk", "route or road", "spatial movement"],
+        "ground": ["ordered course that one follows", "direction and pattern of behavior", "normative guidance"],
+        "posture": ["critical description of ignorance", "moral evaluation", "prophetic indictment"],
+        "explanation": "‘Way of the LORD’ uses the image of a path for God’s prescribed pattern of life, an idiomatic metaphor for His ethical and covenantal demands.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 5:5",
+    "deliberation": "Besides the repeated 'way of YHWH', the main figurative element is the imagery of 'breaking the yoke' and 'snapping the bonds', using animal-servitude equipment as a metaphor/idiom for throwing off covenantal obligations.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַךְ הֵמָּה יַחְדָּו שָׁבְרוּ עֹל נִתְּקוּ מוֹסֵרוֹת",
+        "english_text": "But they as well had broken the yoke, had snapped the bonds.",
+        "target": ["Israel and Judah’s covenant submission to God", "social-religious obligation", "divine–human relationship"],
+        "vehicle": ["yoke and bonds broken off", "animal harness and restraints", "agrarian/servitude imagery"],
+        "ground": ["throwing off control and restraint", "refusal of imposed service", "rebellious independence"],
+        "posture": ["condemnation of rebellion", "judicial accusation", "prophetic critique"],
+        "explanation": "Yoke and bonds, used for animals or slaves, metaphorically depict covenant obligations to God; breaking and snapping them images deliberate rejection of His rule.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 5:6",
+    "deliberation": "Assessed whether the lion, wolf, and leopard are literal animals or figurative for invaders. In prophetic diction they function metaphorically: a composite image of a predatory enemy (likely foreign nation) that will attack the people like wild beasts.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־כֵּן הִכָּם אַרְיֵה מִיַּעַר זְאֵב עֲרָבוֹת יְשׇׁדְדֵם נָמֵר שֹׁקֵד עַל־עָרֵיהֶם כׇּל־הַיּוֹצֵא מֵהֵנָּה יִטָּרֵף",
+        "english_text": "Therefore, the lion of the forest strikes them down, the wolf of the desert ravages them, a leopard lies in wait by their towns; whoever leaves them will be torn in pieces.",
+        "target": ["the hostile nation and its attacks on Judah", "foreign military power", "political-military realm"],
+        "vehicle": ["lion, desert wolf, and leopard preying on victims", "predatory wild animals", "animal world"],
+        "ground": ["ferocity, sudden attack, and lethal danger", "relentless predation", "violence and vulnerability"],
+        "posture": ["threatening announcement of judgment", "warning imagery", "prophetic oracle of doom"],
+        "explanation": "The trio of wild beasts represents the invading enemy, whose violent raids and ambushes are likened to predatory attacks on prey.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 5:7",
+    "deliberation": "Considered whether 'adultery' here is only literal or also metaphorical for idolatry; context points at literal brothel visits. The clearest figurative element is 'no-gods' for idols, expressing ironic devaluation of them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַיִּשָּׁבְעוּ בְּלֹא אֱלֹהִים",
+        "english_text": "And [they] have sworn by no-gods.",
+        "target": ["the idols Israel worships", "false deities", "religious objects/practices"],
+        "vehicle": ["'no-gods' (non-gods)", "negated divine status", "theological valuation"],
+        "ground": ["lack of real divinity or power", "emptiness and worthlessness", "religious futility"],
+        "posture": ["ironical disparagement of idolatry", "polemical critique", "prophetic sarcasm"],
+        "explanation": "Calling idols 'no-gods' is a metonymic and ironic way of denying their reality as deities, reducing them to nonentities.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 5:8",
+    "deliberation": "The people are compared to 'well-fed stallions' that neigh after their neighbors’ wives. This is a zoomorphic metaphor (without 'like') portraying their lust and lack of restraint.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "סוּסִים מְיֻזָּנִים מַשְׁכִּים הָיוּ אִישׁ אֶל־אֵשֶׁת רֵעֵהוּ יִצְהָלוּ",
+        "english_text": "They were well-fed, lusty stallions, each neighing at another’s wife.",
+        "target": ["the men of Judah and their sexual behavior", "human moral conduct", "social-ethical realm"],
+        "vehicle": ["well-fed stallions neighing after mares", "sexually driven male horses", "animal sexuality/behavior"],
+        "ground": ["unchecked lust and restlessness", "overfed excess and lack of discipline", "bestial passion"],
+        "posture": ["moral denunciation through vivid image", "shaming comparison", "prophetic rebuke"],
+        "explanation": "The men’s adultery is depicted as if they were pampered stallions driven by instinct, highlighting their unbridled lust.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 5:9",
+    "deliberation": "The verse consists of rhetorical questions asserting the certainty of punishment, but there is no metaphor, simile, or personification beyond this rhetorical form.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 5:10",
+    "deliberation": "Evaluated whether 'vines' and 'trailing branches' are literal agriculture or figurative for the people. In line with wider prophetic vineyard imagery, these terms function metaphorically for the community and its members, to be pruned but not annihilated.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֲלוּ בְשָׁרוֹתֶיהָ וְשַׁחֲתוּ וְכָלָה אַל־תַּעֲשׂוּ הָסִירוּ נְטִישׁוֹתֶיהָ כִּי לֹא לַיהוָה הֵמָּה",
+        "english_text": "Go up among her vines and destroy; lop off her trailing branches, for they are not of the LORD.",
+        "target": ["the people within Jerusalem, especially unfaithful segments", "community membership", "covenant community"],
+        "vehicle": ["vines and trailing branches in a vineyard", "cultivated plants and offshoots", "agricultural imagery"],
+        "ground": ["being part of a larger organism yet removable", "need for pruning/removal of useless growth", "evaluation and selective destruction"],
+        "posture": ["call for selective judgment", "purging image", "prophetic warning of partial devastation"],
+        "explanation": "Jerusalem is envisioned as a vineyard whose vines and trailing branches represent its inhabitants; the command to cut off branches not belonging to YHWH depicts the removal of unfaithful members.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 5:11",
+    "deliberation": "The phrase 'house of Israel' / 'house of Judah' uses 'house' metonymically for the people descended from Israel/Judah, rather than a literal building.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יִשְׂרָאֵל וּבֵית יְהוּדָה",
+        "english_text": "the House of Israel and the House of Judah",
+        "target": ["the people/nation of Israel and Judah", "collective ethnic-political entities", "human society"],
+        "vehicle": ["a 'house' as a household or dynasty", "domestic unit/dynastic structure", "social structure"],
+        "ground": ["a group defined by common ancestor/name", "unity under one head", "corporate identity"],
+        "posture": ["summarizing corporate guilt", "covenantal accusation", "prophetic indictment of the nation"],
+        "explanation": "‘House’ stands for the people who belong to that household or lineage, using a physical structure to refer to the nation descended from Israel and Judah.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 5:12",
+    "deliberation": "Looked for metaphorical elements in denials of disaster. The notable figure is 'sword' as a metonymy for war and violent invasion rather than literally just a blade.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְחֶרֶב וְרָעָב לֹא נִרְאֶה",
+        "english_text": "We shall not see sword or famine.",
+        "target": ["experience of military attack and its hardships", "national calamity", "political-military realm"],
+        "vehicle": ["the 'sword'", "weapon of war", "tools of violence"],
+        "ground": ["instrument that brings death and destruction", "symbol of armed conflict", "means of warfare"],
+        "posture": ["complacent denial of judgment", "false security", "prophetic citation of people’s claim"],
+        "explanation": "‘Sword’ stands metonymically for warfare and military invasion that bring death and deprivation, not only a literal weapon.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 5:13",
+    "deliberation": "The statement 'the prophets will be [become] wind' portrays their message as empty and unsubstantial, a clear metaphor contrasting solid word with mere air.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהַנְּבִיאִים יִהְיוּ לְרוּחַ",
+        "english_text": "The prophets shall prove mere wind.",
+        "target": ["the content and reliability of the prophets’ message", "prophetic speech", "religious communication"],
+        "vehicle": ["wind/air", "insubstantial moving air", "natural phenomena"],
+        "ground": ["emptiness, lack of substance or stability", "transience and unreliability", "ineffectiveness"],
+        "posture": ["dismissive evaluation of false prophecy", "polemic against their words", "prophetic critique"],
+        "explanation": "Describing prophets as 'wind' depicts their words as empty and insubstantial, lacking the solid reality of true divine speech.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 5:14",
+    "deliberation": "This verse contains an extended metaphor: God’s words in Jeremiah’s mouth are 'fire', and the people are 'wood' that this fire consumes. These are two closely linked but distinct metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְּנִי נֹתֵן דְּבָרַי בְּפִיךָ לְאֵשׁ",
+        "english_text": "I am putting My words into your mouth as fire.",
+        "target": ["the prophetic word Jeremiah speaks", "divine message", "religious discourse"],
+        "vehicle": ["fire", "destructive and consuming flame", "elemental force"],
+        "ground": ["capacity to burn, purify, and destroy", "irresistible, consuming power", "judgmental effect"],
+        "posture": ["empowerment of Jeremiah’s message as judgment", "threatening assurance", "prophetic commissioning"],
+        "explanation": "God’s words are likened to fire, emphasizing their power to judge, consume, and purify rather than merely inform.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָעָם הַזֶּה עֵצִים וַאֲכָלָתַם",
+        "english_text": "And this people shall be firewood, which it will consume.",
+        "target": ["the people of Judah", "covenant community under judgment", "human society"],
+        "vehicle": ["wood being burned by fire", "combustible fuel", "inanimate material"],
+        "ground": ["being vulnerable fuel for fire", "susceptibility to destruction", "passive object of consuming force"],
+        "posture": ["declaration of impending devastation", "graphic warning", "judgment oracle"],
+        "explanation": "The people are compared to wood that the fiery word will consume, underlining how the prophetic message will bring about their ruin.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 5:15",
+    "deliberation": "Descriptions of a nation from afar, enduring and ancient, and its unknown language function literally as characterizations of the coming invader; there is no explicit metaphor, simile, or personification.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 5:16",
+    "deliberation": "The quiver is explicitly likened to 'a yawning/open grave' (כְּ), a simile highlighting the deadly nature of their weaponry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַשְׁפָּתוֹ כְּקֶבֶר פָּתוּחַ",
+        "english_text": "Their quivers are like a yawning grave.",
+        "target": ["the invader’s weaponry and its effect", "military capacity", "political-military realm"],
+        "vehicle": ["an open grave", "place of death ready to receive bodies", "death/burial imagery"],
+        "ground": ["bringing death and swallowing up lives", "capacity to kill many victims", "threatening finality"],
+        "posture": ["intensification of fear of the invader", "graphic warning", "prophetic description of terror"],
+        "explanation": "The quiver, source of deadly arrows, is likened to an open grave, stressing that their weapons will bring mass death.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 5:17",
+    "deliberation": "The repeated verb 'eat/devour' with harvest, children, flocks, and cities depicts military destruction as if the invader were consuming food. This is a standard warfare-as-devouring metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאָכַל קְצִירְךָ וְלַחְמֶךָ יֹאכְלוּ בָנֶיךָ וּבְנוֹתֶיךָ יֹאכַל צֹאנְךָ וּבְקָרֶךָ יֹאכַל גַּפְנְךָ וּתְאֵנָתֶךָ",
+        "english_text": "They will devour your harvest and food, they will devour your sons and daughters, they will devour your flocks and herds, they will devour your vines and fig trees.",
+        "target": ["the invader’s destructive actions against people and property", "military devastation", "warfare and conquest"],
+        "vehicle": ["eating/consuming food", "act of devouring", "bodily ingestion"],
+        "ground": ["total consumption and removal", "leaving nothing remaining", "ravenous taking away"],
+        "posture": ["forewarning of exhaustive loss", "heightened portrayal of judgment", "prophetic threat"],
+        "explanation": "The foreign nation is said to 'eat' both produce and people, using the metaphor of devouring to describe the thoroughness of their destruction.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 5:18",
+    "deliberation": "The assurance 'I will not make an end of you' is a straightforward judicial statement; no specific metaphorical image is employed beyond the abstract noun 'end', used literally for annihilation.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 5:19",
+    "deliberation": "The parallel between 'serving' foreign gods at home and 'serving' foreigners abroad is a pointed wordplay and moral logic, but it does not rely on metaphor or personification; it uses the same verb in two literal but contrasted senses.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 5:20",
+    "deliberation": "As in other passages, 'House of Jacob' uses 'house' metonymically for the people descended from Jacob, rather than a physical dwelling.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּבֵית יַעֲקֹב",
+        "english_text": "to the House of Jacob",
+        "target": ["the descendants/nation of Jacob (Israel)", "corporate people-group", "human society"],
+        "vehicle": ["a 'house' as household or clan", "domestic/building image", "social structure"],
+        "ground": ["shared lineage and corporate identity", "a group designated by a common ancestor’s name", "collective belonging"],
+        "posture": ["addressing the entire community", "covenantal summons", "prophetic proclamation"],
+        "explanation": "‘House of Jacob’ uses a household image to stand for the whole people descended from Jacob, a metonymy for the nation.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 5:21",
+    "deliberation": "Found two related figurative elements: (1) 'no heart' as an idiomatic metaphor for lack of understanding, and (2) 'eyes but do not see / ears but do not hear' as a metaphor for spiritual insensitivity rather than physical disability.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַם סָכָל וְאֵין לֵב",
+        "english_text": "O foolish people, devoid of intelligence [lit. 'and there is no heart'].",
+        "target": ["the people’s capacity for understanding and discernment", "cognitive faculty", "human inner life"],
+        "vehicle": ["heart (or absence of heart)", "inner organ as seat of thought", "human body metaphor"],
+        "ground": ["heart as locus of thought and will", "having/ lacking inner reasoning power", "mental functioning"],
+        "posture": ["denunciation of stupidity", "moral-mental critique", "prophetic rebuke"],
+        "explanation": "Saying the people have 'no heart' is an idiomatic metaphor meaning they lack understanding or moral sense, not that they literally lack the organ.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֵינַיִם לָהֶם וְלֹא יִרְאוּ אׇזְנַיִם לָהֶם וְלֹא יִשְׁמָעוּ",
+        "english_text": "That have eyes but can’t see, that have ears but can’t hear.",
+        "target": ["their spiritual and moral perception", "inner responsiveness", "religious/ethical awareness"],
+        "vehicle": ["physical eyes and ears that do not function", "sensory organs", "human bodily faculties"],
+        "ground": ["organs normally used to perceive but here nonfunctional", "insensitivity despite equipment for perception", "failure to register stimuli"],
+        "posture": ["sharp portrayal of willful blindness", "exposure of culpable deafness", "prophetic lament/rebuke"],
+        "explanation": "Having eyes that do not see and ears that do not hear figuratively describes their refusal to perceive God’s truth, not actual physical blindness or deafness.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 5:22",
+    "deliberation": "The description of the sea respecting the boundary of sand uses verbs ('they rage', 'they cannot prevail', 'they roar') that personify the sea and its waves as though they were a willful force restrained by God’s decree.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיִּתְגָּעֲשׁוּ וְלֹא יוּכָלוּ וְהָמוּ גַלָּיו וְלֹא יַעַבְרֻנְהוּ",
+        "english_text": "Though its waves toss, they cannot prevail; though they roar, they cannot pass it.",
+        "target": ["the physical sea and its waves", "natural forces", "cosmic order"],
+        "vehicle": ["an agitated, roaring opponent kept in check", "active, striving agent", "personal/volitional behavior"],
+        "ground": ["strong movement and noise yet inability to cross a set limit", "frustrated power", "subjection to a higher authority"],
+        "posture": ["demonstration of God’s sovereign control", "argument for fearing God", "theological exhortation"],
+        "explanation": "The sea’s waves are described with human-like striving and roaring, personifying them as a powerful but restrained agent under God’s decree.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 5:23",
+    "deliberation": "The 'heart' of the people is called 'wayward and defiant' (terms used of a rebellious child in Deut 21). This personifies the inner disposition as a rebellious person rather than an organ.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָעָם הַזֶּה הָיָה לֵב סוֹרֵר וּמוֹרֶה",
+        "english_text": "Yet this people has a wayward and defiant heart.",
+        "target": ["the inner will and disposition of the people", "moral-spiritual core", "human inner life"],
+        "vehicle": ["a 'rebellious and defiant' entity", "disobedient child/subject", "social role (rebellious person)"],
+        "ground": ["stubborn rejection of authority", "refusal to obey commands", "insubordination"],
+        "posture": ["indictment of inner rebellion", "deep moral critique", "prophetic judgment"],
+        "explanation": "Their 'heart' is portrayed as a rebellious person, personifying their inner disposition as if it were an insubordinate individual.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 5:24",
+    "deliberation": "Rain, early and late, and the weeks of harvest function here in a literal agrarian sense; 'in their heart they did not say' uses standard anthropological language about inner thought with no additional figurative image beyond a common anthropological idiom.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 5:25",
+    "deliberation": "Here 'your iniquities have diverted these things' and 'your sins have withheld the good' ascribe active agency (turning away, withholding) to sins and iniquities, a mild personification and metonymy for their consequences under God’s judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עֲוֺנוֹתֵיכֶם הִטּוּ־אֵלֶּה וְחַטֹּאותֵיכֶם מָנְעוּ הַטּוֹב מִכֶּם",
+        "english_text": "It is your iniquities that have diverted these things, your sins that have withheld the bounty from you.",
+        "target": ["the causal role of the people’s wrongdoing in their loss of blessing", "sin and its effects", "moral-religious realm"],
+        "vehicle": ["agents that divert and withhold goods", "active blockers or turners", "personal agency"],
+        "ground": ["acting as if sins themselves push away blessings", "blocking and deflecting benefits", "causative obstruction"],
+        "posture": ["explanation of deprivation", "assigning blame", "prophetic moral reasoning"],
+        "explanation": "Iniquities and sins are spoken of as if they actively turn away and withhold good, personifying the people’s wrongdoing and metonymically summarizing God’s punitive response.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 5:26",
+    "deliberation": "The evildoers are said to lurk 'like fowlers' and to set a net to catch people, a simile/metaphor that likens their predatory schemes to bird-catching.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יָשׁוּר כְּשַׁךְ יְקוּשִׁים הִצִּיבוּ מַשְׁחִית אֲנָשִׁים יִלְכֹּדוּ",
+        "english_text": "Who lurk, like fowlers lying in wait; they set up a trap to catch other people.",
+        "target": ["the actions of wicked people preying on others", "social exploitation", "human interpersonal relations"],
+        "vehicle": ["fowlers and their nets catching birds", "hunters lying in wait", "animal trapping"],
+        "ground": ["concealed waiting, deceptive trapping, making victims captive", "predatory intent", "calculated ambush"],
+        "posture": ["exposure of social injustice", "moral criticism", "prophetic denunciation"],
+        "explanation": "Evildoers are compared to birdcatchers who set nets and wait in ambush, highlighting the stealth and exploitation in their treatment of other people.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 5:27",
+    "deliberation": "An explicit simile equates a bird-filled cage with their houses filled with deceit, picturing accumulated fraud as birds crammed into a trap.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּכְלוּב מָלֵא עוֹף כֵּן בָּתֵּיהֶם מְלֵאִים מִרְמָה",
+        "english_text": "As a cage is full of birds, so their houses are full of guile.",
+        "target": ["the contents of their households (wealth, operations)", "accumulated deceit and ill-gotten gain", "social-economic behavior"],
+        "vehicle": ["a cage full of birds", "container packed with captured animals", "animal trapping imagery"],
+        "ground": ["being full of captured/illicit contents", "concentration of what has been seized", "visible evidence of predation"],
+        "posture": ["exposure of pervasive deceit", "condemnation of unjust wealth", "prophetic critique"],
+        "explanation": "Their homes are likened to a birdcage stuffed with birds: just as the cage displays captured prey, their houses display the accumulated results of their deceit.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 5:28",
+    "deliberation": "The people are said to have 'become fat and sleek', language regularly used metaphorically in the Hebrew Bible for complacent prosperity and moral insensitivity rather than simple bodily condition.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שָׁמְנוּ עָשְׁתוּ",
+        "english_text": "They have become fat and sleek.",
+        "target": ["their moral-spiritual state and social prosperity", "inner condition paired with external success", "social-ethical realm"],
+        "vehicle": ["fat and sleek body condition", "well-fed, glossy animals/people", "physical appearance"],
+        "ground": ["overfed ease and comfort", "self-indulgent prosperity", "lack of hardship leading to insensitivity"],
+        "posture": ["critical depiction of corrupt prosperity", "indictment of self-satisfied elites", "prophetic social critique"],
+        "explanation": "Describing them as 'fat and sleek' metaphorically portrays their prosperous, self-indulgent, and insensitive condition, not just their literal physique.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 5:29",
+    "deliberation": "Again uses rhetorical questions to affirm judgment but introduces no distinct metaphors, similes, or personifications beyond this rhetorical form.",
+    "instances": []
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 5:30",
+    "deliberation": "The verse labels what follows as 'an appalling, horrible thing' but does not itself employ imagery; it sets up the statement about prophets and priests in v.31 without a separate metaphorical expression.",
+    "instances": []
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 5:31",
+    "deliberation": "The description of prophets prophesying falsely, priests ruling by their hands, and the people loving it is a stark but literal portrayal of corruption; no clear metaphor, simile, or personification beyond normal abstract language is used.",
+    "instances": []
+  }
+]

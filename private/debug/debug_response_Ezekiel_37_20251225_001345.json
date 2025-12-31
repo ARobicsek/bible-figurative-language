@@ -1,0 +1,970 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 37:1",
+    "deliberation": "I checked for idioms, anthropomorphisms, and symbolic elements. The valley of bones is part of the vision world and is described straightforwardly. The clear figurative expression is the anthropomorphic idiom \"the hand of YHWH was upon me,\" a conventional metaphor for overpowering divine influence on the prophet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָיְתָ֣ה עָלַי יַד־יְהוָה",
+        "english_text": "GOD’s hand came upon me",
+        "target": [
+          "Ezekiel’s experience of being powerfully seized and directed by God",
+          "divine empowerment of a prophet",
+          "theological / prophetic experience"
+        ],
+        "vehicle": [
+          "YHWH’s \"hand\" being upon someone",
+          "a human hand as an instrument of power and control",
+          "human anatomy / embodied agency"
+        ],
+        "ground": [
+          "forceful control and guidance exerted by a stronger agent over another",
+          "the feeling of being grasped and moved by another’s power",
+          "agency and control dynamics"
+        ],
+        "posture": [
+          "Ezekiel reports this as a conventional image rather than a literal physical hand",
+          "reverent acknowledgment of God’s initiative using human bodily imagery accepted by the audience",
+          "prophetic formulaic language"
+        ],
+        "explanation": "Anthropomorphic idiom: God’s \"hand\" metaphorically represents His powerful, controlling presence upon the prophet.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 37:2",
+    "deliberation": "I looked for hyperbole or symbolic labels. The verse simply describes being led around and observing very many very dry bones. The intensifiers for number and dryness function descriptively within the vision rather than as distinct figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 37:3",
+    "deliberation": "I examined the vocative \"son of man\" and the question about bones living. The question is rhetorical but not itself metaphorical. The expression \"בן־אָדָם\" is a conventional idiom/metonymy highlighting Ezekiel’s mortal, human status.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal (lit. son of man)",
+        "target": [
+          "the prophet Ezekiel as an individual human being",
+          "a human prophet in contrast to God",
+          "humanity / anthropology"
+        ],
+        "vehicle": [
+          "\"son of man\" (offspring of a human)",
+          "kinship expression (son-of-X)",
+          "family / lineage terminology"
+        ],
+        "ground": [
+          "sharing the nature and limitations of human beings (mortality, frailty)",
+          "emphasis on humanness over against God’s transcendence",
+          "creaturely dependence"
+        ],
+        "posture": [
+          "God addresses Ezekiel with a humbling title accepted as a conventional prophetic vocative",
+          "Ezekiel and the audience understand this as highlighting human limitation, not as a literal genealogical statement",
+          "reverential, asymmetrical speaker–addressee relationship"
+        ],
+        "explanation": "\"Son of man\" is an idiomatic metonymy for a mere human, underscoring Ezekiel’s mortality and smallness before God.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 37:4",
+    "deliberation": "I considered whether the bones are already explicitly equated with Israel here (that comes in v.11). In this verse the clear device is addressing inanimate, skeletal remains as hearers of God’s word, which is personification and participates in the larger metaphor of Israel as dead bones.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָעֲצָמוֹת הַיְבֵשׁוֹת שִׁמְעוּ דְּבַר־יְהוָה",
+        "english_text": "O dry bones, hear the word of GOD!",
+        "target": [
+          "the exiled house of Israel in a state of spiritual and national death (as clarified in v.11)",
+          "the covenant people in hopeless exile",
+          "national-spiritual condition"
+        ],
+        "vehicle": [
+          "dry bones being addressed and commanded to hear",
+          "lifeless skeletal remains personified as listeners",
+          "corpse imagery / death scene"
+        ],
+        "ground": [
+          "complete lifelessness and inability contrasted with God’s life-giving word",
+          "the people’s utter hopelessness and incapacity apart from divine intervention",
+          "death vs. life contrast"
+        ],
+        "posture": [
+          "the prophet speaks within the vision as if the bones were conscious hearers",
+          "the audience understands this as a visionary image, not a literal sermon to bones",
+          "prophetic dramatization accepted as symbolic for Israel’s condition"
+        ],
+        "explanation": "The lifeless bones are addressed as if they can hear God’s word, personifying them and contributing to the larger metaphor of Israel as a dead, exiled community.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 37:5",
+    "deliberation": "I examined whether \"breath\" (רוּחַ) functions only within the vision or already as a metaphor for God’s life-giving Spirit to Israel. Given the context of death-to-life and later \"my Spirit\" in v.14, this verse participates in that life-giving metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה אֲנִי מֵבִיא בָכֶם רוּחַ וִחְיִיתֶם",
+        "english_text": "I will cause breath to enter you and you shall live again",
+        "target": [
+          "the restoration of Israel’s communal life from exile and despair",
+          "national-spiritual renewal of the people",
+          "corporate salvation / restoration"
+        ],
+        "vehicle": [
+          "breath entering lifeless bones and reviving them",
+          "physical respiration animating corpses",
+          "physiological life-process"
+        ],
+        "ground": [
+          "life depends on breath just as Israel’s future depends on God’s life-giving action",
+          "transition from death to vitality",
+          "dependence on an animating source"
+        ],
+        "posture": [
+          "God speaks in visionary terms that the audience recognizes as symbolizing His life-giving Spirit",
+          "the prophet accepts this concrete image as expressing an abstract restoration",
+          "prophetic promise framed in corporeal imagery"
+        ],
+        "explanation": "The entry of \"breath\" into bones stands as a concrete metaphor for God’s life-giving action restoring Israel from its death-like exile.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 37:6",
+    "deliberation": "I checked whether the anatomical rebuilding (sinews, flesh, skin) introduced additional metaphors beyond the already established resurrection image. Here the language functions as detailed description within the same visionary picture, without new discrete figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 37:7",
+    "deliberation": "I assessed whether \"sound\" and \"rattling\" were hyperbolic or symbolic. They describe the visionary process of bones reassembling and do not introduce a new metaphor, simile, or idiom beyond the ongoing scene.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 37:8",
+    "deliberation": "The verse continues the stepwise description of bodily restoration within the vision. No added figurative labels or anthropomorphisms appear beyond the ongoing vision of reconstituted bodies.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 37:9",
+    "deliberation": "I looked for personification and any merism. The \"breath\" (רוּחַ) is addressed and commanded as an agent, which is personification. The phrase \"from the four winds\" is a conventional compass merism for \"from all directions / the whole world.\"",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנָּבֵא אֶל־הָרוּחַ ... כֹּה־אָמַר ... מֵאַרְבַּע רוּחוֹת בֹּאִי הָרוּחַ וּפְחִי בַּהֲרוּגִים הָאֵלֶּה",
+        "english_text": "Prophesy to the breath... Thus said the Sovereign GOD: Come, O breath, from the four winds, and breathe into these slain",
+        "target": [
+          "God’s life-giving Spirit active in restoring Israel",
+          "divine animating power",
+          "spiritual / theological reality"
+        ],
+        "vehicle": [
+          "breath/wind addressed as if a personal agent summoned from the four winds to revive the dead",
+          "an animate, responsive wind acting on command",
+          "natural force personified"
+        ],
+        "ground": [
+          "an unseen, powerful force that can move, come, and revitalize",
+          "God’s Spirit operates like a free, dynamic wind that gives life",
+          "agency and responsiveness attributed to an impersonal element"
+        ],
+        "posture": [
+          "the prophet treats the breath/wind as a personal addressee within the vision",
+          "the audience recognizes this as symbolic personification of God’s Spirit, not literal conversation with air",
+          "prophetic dramatization of divine agency"
+        ],
+        "explanation": "The \"breath\" or wind is personified—addressed and commanded—to act as God’s life-giving agent, embodying His Spirit’s reviving power.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מֵאַרְבַּע רוּחוֹת",
+        "english_text": "from the four winds",
+        "target": [
+          "the totality of space from which God can summon life-giving power",
+          "all directions / everywhere the people are scattered",
+          "cosmic extent of divine action"
+        ],
+        "vehicle": [
+          "the four winds of the compass",
+          "four cardinal directions as a set",
+          "cosmological schema"
+        ],
+        "ground": [
+          "four directions together imply completeness of spatial coverage",
+          "God’s Spirit comes from everywhere and reaches everywhere",
+          "wholeness expressed via complementary parts"
+        ],
+        "posture": [
+          "the prophet uses a conventional merism without explaining it",
+          "the audience understands \"four winds\" as a way to say \"from all directions\"",
+          "shared cosmological idiom"
+        ],
+        "explanation": "\"From the four winds\" is a merism: the four compass winds collectively express totality, indicating God summons life-giving breath from every direction.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 37:10",
+    "deliberation": "I checked whether \"a vast army\" was metaphorical or simply descriptive within the vision. Here it naturally describes the multitude of revived figures in martial formation in the vision, without a separate figurative expression in the wording itself.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 37:11",
+    "deliberation": "This verse contains the explicit interpretation of the bones, plus the self-description of the people. I identified: (1) a direct metaphor equating the bones with \"the whole house of Israel\"; (2) a metaphor in \"our bones are dried up\" for utter hopelessness; and (3) an idiomatic expression \"we are cut off\" for being doomed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הָעֲצָמוֹת הָאֵלֶּה כׇּל־בֵּית יִשְׂרָאֵל הֵמָּה",
+        "english_text": "these bones are the whole House of Israel",
+        "target": [
+          "the whole house of Israel in exile",
+          "the covenant people as a corporate entity",
+          "national community"
+        ],
+        "vehicle": [
+          "a valley full of desiccated bones",
+          "scattered, dry skeletal remains",
+          "death imagery"
+        ],
+        "ground": [
+          "Israel’s corporate condition is as hopeless and lifeless as a heap of dry bones",
+          "both are devoid of visible vitality or prospects",
+          "extreme deprivation / death-like state"
+        ],
+        "posture": [
+          "God explicitly identifies the visionary image with Israel, signaling it as a metaphorical representation",
+          "the prophet and audience are invited to reinterpret the whole vision through this equation",
+          "authoritative divine interpretation of the symbolic picture"
+        ],
+        "explanation": "God directly equates the visionary bones with Israel, making the bones an explicit metaphor (and symbolic image) for the exiled nation’s death-like condition.",
+        "confidence": 0.99
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "יָבְשׁוּ עַצְמוֹתֵינוּ",
+        "english_text": "Our bones are dried up",
+        "target": [
+          "the inner strength and vitality of the exiled people",
+          "the community’s morale and capacity to hope",
+          "psychological-spiritual state"
+        ],
+        "vehicle": [
+          "bones that have dried out",
+          "desiccated skeletal structure",
+          "anatomical / bodily material"
+        ],
+        "ground": [
+          "dry bones signify exhaustion and irreversible loss of life",
+          "the people feel completely depleted and beyond recovery",
+          "permanent, brittle weakness"
+        ],
+        "posture": [
+          "Israel voices its condition using bodily imagery for inner despair",
+          "this complaint is accepted as figurative self-description, not a literal medical state",
+          "lament language drawing on somatic metaphor"
+        ],
+        "explanation": "The people describe their condition using bodily imagery: \"our bones are dried\" metaphorically expresses total exhaustion and loss of vitality.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִגְזַרְנוּ לָנוּ",
+        "english_text": "we are cut off [for ourselves]",
+        "target": [
+          "Israel’s future prospects and covenant status",
+          "the community’s ongoing existence and connection to God",
+          "national destiny"
+        ],
+        "vehicle": [
+          "being cut off (like something severed)",
+          "severing or cutting a thing away",
+          "physical separation / amputation imagery"
+        ],
+        "ground": [
+          "being cut off suggests irreversible separation and loss",
+          "the people see themselves as severed from life, land, and covenant",
+          "finality and isolation"
+        ],
+        "posture": [
+          "the phrase functions as an idiomatic lament for being doomed",
+          "speaker uses the cutting image conventionally to voice despair",
+          "figurative self-diagnosis rather than a literal physical cutting"
+        ],
+        "explanation": "The complaint \"we are cut off\" is an idiomatic metaphor for being utterly doomed and severed from hope and covenantal life.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 37:12",
+    "deliberation": "I considered whether \"open your graves\" is literal resurrection or figurative for return from exile. In context (especially vv.11, 14, 21), \"graves\" metaphorically depict the lands/exile as death, and coming up from graves depicts national restoration.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הִנֵּה אֲנִי פֹתֵחַ אֶת־קִבְרוֹתֵיכֶם וְהַעֲלֵיתִי אֶתְכֶם מִקִּבְרוֹתֵיכֶם עַמִּי",
+        "english_text": "I am going to open your graves and lift you out of the graves, O My people",
+        "target": [
+          "Israel’s release from exile and restoration to their land",
+          "historical-political deliverance of the nation",
+          "national fate / restoration"
+        ],
+        "vehicle": [
+          "opening graves and bringing corpses up from them",
+          "literal resurrection from tombs",
+          "death-to-life transition imagery"
+        ],
+        "ground": [
+          "exile is as final and hopeless as burial in a grave",
+          "return to the land is like resurrection from death",
+          "radical reversal from final loss to renewed life"
+        ],
+        "posture": [
+          "God interprets the visionary resurrection language as describing Israel’s national restoration",
+          "the audience is led to understand grave-opening figuratively in historical-theological terms",
+          "prophetic promise using eschatological-resurrection imagery"
+        ],
+        "explanation": "Opening graves and bringing the people up is a resurrection metaphor for ending exile and restoring Israel to its land.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 37:13",
+    "deliberation": "This verse repeats the grave-opening image as the basis for recognizing YHWH. It is the same resurrection metaphor of v.12, applied again as the sign of God’s identity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּפִתְחִי אֶת־קִבְרוֹתֵיכֶם וּבְהַעֲלוֹתִי אֶתְכֶם מִקִּבְרוֹתֵיכֶם עַמִּי",
+        "english_text": "when I have opened your graves and lifted you out of your graves, O My people",
+        "target": [
+          "Israel’s experiential knowledge of God through restoration from exile",
+          "recognition of YHWH via historical deliverance",
+          "theological awareness"
+        ],
+        "vehicle": [
+          "opening graves and bringing people out",
+          "resurrection from death imagery",
+          "tomb / burial reversal"
+        ],
+        "ground": [
+          "a saving act so radical it is comparable to resurrection will reveal God’s unique power",
+          "knowing God through a death-to-life kind of deliverance",
+          "extreme transformation evidencing divine sovereignty"
+        ],
+        "posture": [
+          "the prophet repeats the same figurative frame to underscore its evidential force",
+          "audience is invited to interpret national events through resurrection imagery",
+          "didactic reuse of established metaphor"
+        ],
+        "explanation": "Again, opening graves and raising the people is a metaphor describing the dramatic national restoration by which Israel will recognize YHWH.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 37:14",
+    "deliberation": "I focused on \"I will put My spirit/breath in you\" and its relation to living on the land. This clearly extends the life-from-death metaphor: God’s own Spirit is portrayed as the inner breath reviving Israel as a people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּי רוּחִי בָכֶם וִחְיִיתֶם",
+        "english_text": "I will put My breath/Spirit into you and you shall live again",
+        "target": [
+          "Israel’s inward renewal and empowerment by God",
+          "the restored spiritual and communal life of the people",
+          "inner transformation of the nation"
+        ],
+        "vehicle": [
+          "God’s own Spirit as breath put inside bodies",
+          "the inhalation of life-giving air",
+          "physiological breathing"
+        ],
+        "ground": [
+          "as breath animates a body, God’s Spirit animates and sustains the community",
+          "life and vitality depend on an internal, invisible force",
+          "intimate indwelling as condition for life"
+        ],
+        "posture": [
+          "God uses concrete bodily imagery to communicate an inward, spiritual reality",
+          "the audience is expected to see beyond the literal to divine indwelling power",
+          "prophetic promise framed with embodied metaphor"
+        ],
+        "explanation": "God’s \"Spirit\" is described as breath placed within Israel, a metaphor for His life-giving, indwelling power restoring them to true life.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 37:15",
+    "deliberation": "I considered the formula \"the word of YHWH came to me.\" This standard prophetic expression personifies the divine word as if it were an entity that travels and arrives to the prophet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֵלַי לֵאמֹר",
+        "english_text": "The word of GOD came to me",
+        "target": [
+          "the reception of a divine message by the prophet",
+          "prophetic inspiration/revelation",
+          "communication from God"
+        ],
+        "vehicle": [
+          "a \"word\" that comes to someone",
+          "a message treated as a moving, arriving object or messenger",
+          "spatial movement of an agent"
+        ],
+        "ground": [
+          "revelation is experienced as something entering or approaching the prophet from outside",
+          "movement toward the prophet parallels the onset of inspiration",
+          "external origin and directed arrival of communication"
+        ],
+        "posture": [
+          "Ezekiel reports this as a fixed formula personifying the word",
+          "audience understands this as idiomatic for receiving revelation, not literal movement of a physical object",
+          "conventional prophetic diction"
+        ],
+        "explanation": "The divine \"word\" is personified as if it travels and arrives, a conventional idiom for the prophet’s reception of revelation.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 37:16",
+    "deliberation": "I examined the tribal names and the sticks. The sticks are physical objects at this stage, but the names on them already function metonymically: Judah stands for the southern kingdom, Joseph/Ephraim for the northern kingdom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לִיהוּדָה וְלִבְנֵי יִשְׂרָאֵל חֲבֵרָו",
+        "english_text": "“Of Judah and the Israelites associated with him”",
+        "target": [
+          "the southern kingdom and its associated groups",
+          "the political entity centered on Judah",
+          "national-political collective"
+        ],
+        "vehicle": [
+          "the name \"Judah\" with \"the Israelites his companions\"",
+          "one leading tribe with attached companions",
+          "tribal designation"
+        ],
+        "ground": [
+          "Judah as the dominant tribe stands for the whole southern kingdom",
+          "naming the tribe implies the larger political unit it leads",
+          "part-for-whole reference"
+        ],
+        "posture": [
+          "God uses tribal nomenclature as a shorthand for the geopolitical entity",
+          "the audience recognizes this as conventional metonymy for the southern kingdom",
+          "prophetic naming practice"
+        ],
+        "explanation": "\"Judah\" with his companions is a tribal metonymy for the entire southern kingdom allied with Judah.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לְיוֹסֵף עֵץ אֶפְרַיִם וְכׇל־בֵּית יִשְׂרָאֵל חֲבֵרָו",
+        "english_text": "“Of Joseph—the stick of Ephraim—and all the House of Israel associated with him”",
+        "target": [
+          "the northern kingdom and its tribes",
+          "the political entity often called Israel/Ephraim",
+          "national-political collective"
+        ],
+        "vehicle": [
+          "the names \"Joseph\" and \"Ephraim\" with \"all the house of Israel his companions\"",
+          "prominent ancestor/tribe representing the whole north",
+          "tribal-ancestral label"
+        ],
+        "ground": [
+          "Joseph/Ephraim as leading figures/tribes represent the entire northern confederation",
+          "the ancestor or leading tribe stands in for the whole people descended from or led by them",
+          "founder/leader-for-group metonymy"
+        ],
+        "posture": [
+          "God invokes Joseph/Ephraim as accepted shorthand for the northern kingdom",
+          "the audience hears these names as political-religious designations, not just genealogical labels",
+          "prophetic use of ancestral metonymy"
+        ],
+        "explanation": "“Joseph” / “Ephraim” functions metonymically for the northern kingdom and its allied tribes.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 37:17",
+    "deliberation": "I assessed whether bringing two sticks together is purely an enacted sign or also verbal metaphor. Here \"they shall become one stick in your hand\" already states, in verbal form, a unification image whose referent (one nation) is clarified in vv.19–22.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהָיוּ לַאֲחָדִים בְּיָדֶךָ",
+        "english_text": "so that they become one stick, joined together in your hand",
+        "target": [
+          "the future political and spiritual unity of Israel and Judah",
+          "reunification of the divided kingdoms into a single nation",
+          "national-political condition"
+        ],
+        "vehicle": [
+          "two separate sticks becoming one in the prophet’s hand",
+          "fusion of distinct pieces of wood held together",
+          "physical unification of objects"
+        ],
+        "ground": [
+          "distinct groups losing their separation and functioning as a single entity",
+          "unity under a single controlling hand/authority",
+          "overcoming division by becoming one"
+        ],
+        "posture": [
+          "God commands a symbolic action that visually enacts the metaphor of unity",
+          "the language about one stick prepares the audience to receive the later explanation of one nation",
+          "prophetic sign-act with explicit unifying imagery"
+        ],
+        "explanation": "The two sticks becoming one in Ezekiel’s hand metaphorically depict the future unification of the formerly divided kingdoms into a single people.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 37:18",
+    "deliberation": "This verse records the anticipated question about the sign-act: \"What are these to you?\" The wording itself is literal; the figurative significance resides in the previously mentioned sticks, not in a new figurative expression here.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 37:19",
+    "deliberation": "Here God interprets the sign: the sticks explicitly stand for the two houses and their unification. I distinguish (1) the stick of Joseph/Ephraim as representing the northern tribes, and (2) the composite \"one stick\" in God’s hand as representing a unified people under His rule.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֶת־עֵץ יוֹסֵף אֲשֶׁר בְּיַד־אֶפְרַיִם וְשִׁבְטֵי יִשְׂרָאֵל חֲבֵרָו",
+        "english_text": "the stick of Joseph—which is in the hand of Ephraim—and of the tribes of Israel associated with him",
+        "target": [
+          "the northern kingdom and its constituent tribes",
+          "the collective of Israel’s northern tribes",
+          "political-religious community"
+        ],
+        "vehicle": [
+          "a single stick labeled for Joseph/Ephraim with associated tribes",
+          "a piece of wood held in someone’s hand",
+          "physical object representing a group"
+        ],
+        "ground": [
+          "one simple object can stand in for a complex group it is labeled with or held by",
+          "the stick’s unity mirrors the political unity of the tribes it represents",
+          "representational symbolism (token for group)"
+        ],
+        "posture": [
+          "God explicitly uses a labeled stick as a symbolic vehicle for an entire kingdom",
+          "the prophet and audience are invited to accept a concrete object as a stand-in for a large community",
+          "interpreted sign-act employing metonymic symbol"
+        ],
+        "explanation": "The labeled \"stick of Joseph\" serves as a symbolic stand-in (metonymic metaphor) for the entire northern kingdom and its tribes.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתִּי אוֹתָם עָלָיו אֶת־עֵץ יְהוּדָה וְעָשִׂיתִם לְעֵץ אֶחָד וְהָיוּ אֶחָד בְּיָדִי",
+        "english_text": "I will place the stick of Judah upon it and make them into one stick; they shall be joined in My hand",
+        "target": [
+          "the future unified people of God formed from Judah and the northern tribes",
+          "a single, reunited nation under divine sovereignty",
+          "corporate Israel"
+        ],
+        "vehicle": [
+          "two sticks joined into one stick held in God’s hand",
+          "a composite piece of wood under a single grip",
+          "unified physical token"
+        ],
+        "ground": [
+          "formerly separate entities become a single unit under one controlling hand",
+          "God’s hand holding one stick reflects His rule over a unified nation",
+          "unity and possession expressed through a single object"
+        ],
+        "posture": [
+          "God interprets the joined stick as representing the joined people in His hand",
+          "audience is guided to read the visible sign as a metaphor for political-spiritual unity",
+          "didactic metaphor of unification and divine lordship"
+        ],
+        "explanation": "The two labeled sticks fused into one in God’s hand metaphorically represent the reunification of Judah and Israel under God’s singular rule.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 37:20",
+    "deliberation": "This verse instructs Ezekiel to display the inscribed sticks. The figurative value resides in what has already been explained about them; the wording here is straightforwardly procedural.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 37:21",
+    "deliberation": "I checked whether \"from among the nations\" and \"from every side\" formed a merism or metaphor. They naturally describe geographic dispersion and regathering; they are standard spatial expressions and not clearly elevated to a separate figurative device here.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 37:22",
+    "deliberation": "The promise of making them one nation with one king is conceptually related to earlier imagery (one stick), but the verse itself speaks in literal political terms with no new figurative expression.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 37:23",
+    "deliberation": "I looked at \"defile themselves\" with idols and the covenant formula. The covenant formula is standard. The verb \"defile\" imports ritual impurity language into the moral/Idolatrous sphere, which is a pervasive moral-ritual metaphor in the Hebrew Bible.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלֹא יִטַּמְּאוּ עוֹד בְּגִלּוּלֵיהֶם וּבְשִׁקּוּצֵיהֶם וּבְכֹל פִּשְׁעֵיהֶם",
+        "english_text": "Nor shall they ever again defile themselves by their fetishes and their abhorrent things, and by their other transgressions",
+        "target": [
+          "Israel’s moral and spiritual corruption through idolatry and sin",
+          "their guilty standing and polluted relationship with God",
+          "ethical-spiritual condition"
+        ],
+        "vehicle": [
+          "ritual or physical defilement (becoming unclean) through contact with abominations",
+          "impurity that stains a person or object",
+          "purity/impurity system"
+        ],
+        "ground": [
+          "sin and idolatry damage and pollute a person in relation to God as ritual impurity does in cultic terms",
+          "both require cleansing to restore acceptable status",
+          "contamination and exclusion imagery"
+        ],
+        "posture": [
+          "God uses cultic impurity language to describe moral idolatry",
+          "the audience is expected to map familiar ritual categories onto ethical behavior",
+          "conceptual metaphor of sin-as-impurity"
+        ],
+        "explanation": "The verse uses impurity language (\"defile themselves\") metaphorically for moral and spiritual corruption through idolatry and transgression.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 37:24",
+    "deliberation": "This verse contains the prominent shepherd metaphor: \"one shepherd\" for all of them. \"My servant David\" may be metonymic for a future Davidic ruler, but the clearest figurative expression is king-as-shepherd.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְרוֹעֶה אֶחָד יִהְיֶה לְכֻלָּם",
+        "english_text": "there shall be one shepherd for all of them",
+        "target": [
+          "the future Davidic king/ruler over united Israel",
+          "political-spiritual leadership of the nation",
+          "governance / kingship"
+        ],
+        "vehicle": [
+          "a single shepherd caring for a flock",
+          "shepherding role guiding, feeding, and protecting sheep",
+          "pastoral vocation"
+        ],
+        "ground": [
+          "a shepherd guides, protects, and provides for a vulnerable flock just as a good king leads and cares for his people",
+          "both involve personal oversight and responsibility for the group’s well-being",
+          "guidance, protection, and unity under one leader"
+        ],
+        "posture": [
+          "God deliberately frames kingship in pastoral terms to stress care rather than domination",
+          "the audience, familiar with shepherd-kings, understands this as a leadership metaphor",
+          "prophetic idealization of monarchy using agrarian imagery"
+        ],
+        "explanation": "The one future king is portrayed metaphorically as a single shepherd caring for all the people, highlighting protective and guiding aspects of his rule.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 37:25",
+    "deliberation": "I considered \"forever\" (עוֹלָם) for hyperbole and the reference to \"David my servant.\" The enduring language is covenantal and debated, but \"David my servant\" most naturally functions as a metonymy: the name of the founding king representing the ongoing Davidic ruler/line.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְדָוִד עַבְדִּי נָשִׂיא לָהֶם לְעוֹלָם",
+        "english_text": "with My servant David as their prince for all time",
+        "target": [
+          "the eschatological or ongoing Davidic ruler over restored Israel",
+          "the ruling figure from David’s line",
+          "dynastic kingship"
+        ],
+        "vehicle": [
+          "the personal name \"David\" used with \"my servant\" as a present/future prince",
+          "the historical founder of the dynasty",
+          "ancestral royal figure"
+        ],
+        "ground": [
+          "the founding king represents and embodies the dynasty that continues his rule",
+          "invoking David’s name signals the type and legitimacy of the expected ruler",
+          "founder-for-dynasty metonymy"
+        ],
+        "posture": [
+          "God speaks of \"David\" as an enduring princely presence, prompting the audience to think of David’s line rather than strictly the historical individual",
+          "hearers versed in royal theology would grasp the dynastic implication",
+          "prophetic use of ancestral royal name as a symbol of the promised ruler"
+        ],
+        "explanation": "“David my servant” functions as a dynastic metonymy: the founding king’s name stands for the enduring Davidic ruler who will be prince over the restored people.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 37:26",
+    "deliberation": "I checked \"covenant of peace\" and \"cut a covenant.\" The phrase \"cut a covenant\" (כרת ברית) is a fixed idiom rooted in sacrificial practice, functioning figuratively as the standard way to speak of making a binding agreement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְכָרַתִּי לָהֶם בְּרִית שָׁלוֹם",
+        "english_text": "I will make (lit. cut) a covenant of peace with them",
+        "target": [
+          "God’s establishment of a binding, enduring relationship of peace with His people",
+          "the act of entering a formal covenant",
+          "relational-legal transaction"
+        ],
+        "vehicle": [
+          "cutting a covenant",
+          "a ritual act of cutting associated with treaty-making",
+          "sacrificial/treaty ceremony imagery"
+        ],
+        "ground": [
+          "ancient covenants were ratified by cutting animals, so \"cut\" came to mean \"make a covenant\"",
+          "the physical act represents the seriousness and binding nature of the agreement",
+          "ritual action as shorthand for a legal-relational act"
+        ],
+        "posture": [
+          "God uses a culturally fixed idiom whose literal sacrificial origins are backgrounded",
+          "audience understands \"cut a covenant\" as formulaic for establishing a treaty-like bond",
+          "conventional legal-theological phrase"
+        ],
+        "explanation": "“Cut a covenant” is an idiom that figuratively uses the act of cutting (from sacrificial ratification) to denote the making of a formal, binding covenant.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 37:27",
+    "deliberation": "I focused on \"my dwelling (mishkani) shall be over them\" and the covenant formula. The dwelling language casts God’s presence in spatial, tabernacle terms—a metaphor for His protective, intimate presence among the people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהָיָה מִשְׁכָּנִי עֲלֵיהֶם",
+        "english_text": "My Presence/dwelling shall rest over them",
+        "target": [
+          "God’s ongoing, protective, relational presence with His people",
+          "His covenantal nearness and oversight",
+          "theological reality of divine indwelling"
+        ],
+        "vehicle": [
+          "a dwelling/tabernacle resting over a people",
+          "a physical structure situated above/among inhabitants",
+          "spatial shelter image"
+        ],
+        "ground": [
+          "a dwelling denotes settled presence, accessibility, and protection",
+          "God’s continuous presence is like a shelter or tabernacle over the community",
+          "stability, nearness, and covering"
+        ],
+        "posture": [
+          "God uses cultic-spatial imagery to convey relational closeness",
+          "the audience maps the tabernacle/Temple concept onto the idea of God living with them",
+          "sacred-architecture metaphor applied to covenant presence"
+        ],
+        "explanation": "God’s \"dwelling\" being over the people is a spatial-temple metaphor for His settled, protective presence in their midst.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 37:28",
+    "deliberation": "I examined \"sanctify Israel\" and \"when My sanctuary is among them.\" Both draw on cultic language, but here they describe straightforwardly that God sets Israel apart and that His sanctuary will be in their midst; no additional distinct figurative turn beyond standard cultic-theological diction emerges in this wording.",
+    "instances": []
+  }
+]

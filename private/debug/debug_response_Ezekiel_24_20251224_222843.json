@@ -1,0 +1,725 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 24:1",
+    "deliberation": "Checked the temporal dating formula and the clause 'the word of YHWH came to me.' Although one could analyze 'word came' as mild personification or metonymy, in prophetic texts this has become a fixed technical formula for revelation, functioning essentially literally. No distinct, content‑bearing figurative expression appears in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 24:2",
+    "deliberation": "Looked at 'ben‑adam' and the siege language. The siege description is literal. 'Ben‑adam' is a stereotyped vocative meaning 'mortal,' functioning as an idiomatic reminder of human frailty rather than literal reference to parentage.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal",
+        "target": ["Ezekiel as a limited human being", "individual human prophet", "humanity / anthropology"],
+        "vehicle": ["\"son of man\" expression", "kinship/offspring term", "human familial relations"],
+        "ground": ["mortality, frailty, non‑divine status", "human limitation", "theological anthropology"],
+        "posture": ["divine address that humbles the prophet before God", "evaluative stance", "prophetic discourse"],
+        "explanation": "The vocative 'ben‑adam' ('son of man') is an idiomatic way to say 'mere human' or 'mortal,' highlighting human frailty and contrast with the divine speaker, not Ezekiel's literal parentage.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 24:3",
+    "deliberation": "Two potential figures: (1) 'rebellious house' where 'house' stands for the people; (2) the commanded cooking‑pot scene explicitly introduced as a mashal (allegory), where the cauldron and its heating are an image of Jerusalem under judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶל־בֵּית־הַמֶּרִי",
+        "english_text": "to the rebellious house / rebellious breed",
+        "target": ["The people of Israel/Judah who resist God", "community/nation", "Israel as covenant people"],
+        "vehicle": ["\"house\" (bayit)", "household / family unit", "domestic architecture and kinship"],
+        "ground": ["corporate identity and solidarity", "collective entity described by its character", "social structure imagery"],
+        "posture": ["condemnation of the community as characterized by rebellion", "negative evaluation", "prophetic indictment"],
+        "explanation": "Here 'house' is a metonymy for the people as a household or dynasty. The phrase 'rebellious house' characterizes the whole community by its dominant trait of rebellion.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מָשָׁ֔ל ... שְׁפֹ֤ת הַסִּיר֙ שְׁפֹ֔ת וְגַם־יְצֹ֥ק בּ֖וֹ מָֽיִם",
+        "english_text": "speak a parable ... Put the cauldron [on the fire], put it on, and then pour water into it",
+        "target": ["Jerusalem's coming siege and judgment", "impending national disaster", "history of Judah / divine judgment"],
+        "vehicle": ["a cauldron being set on the fire and filled with water", "cooking vessel and process", "domestic/cooking imagery"],
+        "ground": ["being subjected to intense heat and boiling, confinement leading to breakdown", "violent treatment and destruction", "judicial punishment conceptualized as burning/cooking"],
+        "posture": ["threatening, illustrative warning about judgment", "didactic warning", "prophetic allegory"],
+        "explanation": "The whole cooking‑pot scene is introduced as a mashal. The cauldron set on the fire represents Jerusalem placed under siege and exposed to destructive judgment.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 24:4",
+    "deliberation": "Continues the culinary imagery within the mashal. The 'pieces,' 'thigh and shoulder,' and 'choice bones' are not literal meat but represent people, especially the prominent members of the city.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֱסֹ֤ף נְתָחֶ֙יהָ֙ אֵלֶ֔יהָ כׇּל־נֵ֥תַח ט֖וֹב יָרֵ֣ךְ וְכָתֵ֑ף מִבְחַ֥ר עֲצָמִ֖ים מַלֵּֽא",
+        "english_text": "Collect in it the pieces [of meat], every choice piece, thigh and shoulder; fill it with the best bones",
+        "target": ["inhabitants of Jerusalem, especially the elite", "population / leadership", "society of Judah"],
+        "vehicle": ["choice meat cuts and bones in a pot", "butchered animal parts", "animal slaughter and cooking"],
+        "ground": ["being selected, cut up, and subjected to cooking", "vulnerability to violent treatment", "victims of sacrificial or culinary processing as image of human victims"],
+        "posture": ["depicting their fate as being broken down and 'cooked' in judgment", "grim, condemnatory stance", "prophetic judgment symbolism"],
+        "explanation": "Within the extended pot metaphor, the 'choice pieces' and 'bones' stand for the city's inhabitants, particularly the notable ones, as meat placed in a cauldron of judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 24:5",
+    "deliberation": "Still within the mashal. 'Best of the flock' and the boiling of bones extend the metaphor in which animals/meat correspond to the people exposed to severe judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִבְחַ֤ר הַצֹּאן֙ לָק֔וֹחַ ... רַתַּ֣ח רְתָחֶ֔יהָ גַּם־בָּשְׁל֥וּ עֲצָמֶ֖יהָ בְּתוֹכָֽהּ",
+        "english_text": "Take the best of the flock. Also pile the cuts under it; get it boiling briskly, and cook its bones in it.",
+        "target": ["Jerusalem's populace, especially its most prominent citizens", "human community / elite", "people of Judah under siege"],
+        "vehicle": ["best sheep from the flock, cuts and bones boiling in a pot", "slaughtered animal parts under intense heat", "animal husbandry and cooking imagery"],
+        "ground": ["being chosen, slaughtered, and thoroughly boiled or burned", "total vulnerability and destruction", "severity and completeness of impending judgment"],
+        "posture": ["underscoring the thoroughness of divine punishment", "judgment emphasis", "prophetic symbolic action imagery"],
+        "explanation": "The 'best of the flock' and boiling bones metaphorically represent the select inhabitants who will be consumed by the coming calamity, like choice animals cooked to pieces.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 24:6",
+    "deliberation": "Several figures cluster here: (1) 'city of blood' where 'blood' stands for bloodshed; (2) identification of that city with a cauldron full of scum; (3) 'scum/rust' itself as an image for moral filth.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עִ֣יר הַדָּמִים",
+        "english_text": "city of blood",
+        "target": ["Jerusalem as a guilty community", "city as social body", "nation of Judah / Jerusalem"],
+        "vehicle": ["'blood' as shorthand for bloodshed and murder", "violent act used as label", "forensic/moral terminology"],
+        "ground": ["notorious for shedding innocent blood", "characterized by violence", "moral corruption signaled by homicide"],
+        "posture": ["pronouncing woe and condemnation on the city", "judicial accusation", "prophetic lawsuit imagery"],
+        "explanation": "'Blood' stands metonymically for bloodshed and murder; calling Jerusalem 'city of blood' labels it by its characteristic crimes.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "סִ֚יר אֲשֶׁ֣ר חֶלְאָתָ֣הּ בָ֔הּ",
+        "english_text": "a cauldron whose scum is in it",
+        "target": ["Jerusalem and its entrenched wickedness", "corrupt urban community", "covenant city under judgment"],
+        "vehicle": ["a corroded cooking pot with encrusted scum", "dirty household vessel", "domestic metalware"],
+        "ground": ["ingrained, resistant filth that clings despite use", "moral uncleanness that remains despite past dealings", "pollution that calls for drastic cleaning"],
+        "posture": ["depicting the city as disgusting and in need of severe cleansing by judgment", "denunciatory stance", "prophetic purity/judgment imagery"],
+        "explanation": "The city is metaphorically likened to a pot whose scum has stayed inside, highlighting Jerusalem's persistent corruption.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְחֶ֨לְאָתָ֔הּ לֹ֥א יָצְאָ֖ה מִמֶּ֑נָּה",
+        "english_text": "whose scum has not been cleaned out of it",
+        "target": ["Jerusalem's moral guilt and defilement", "sinfulness", "ethical/spiritual state of the city"],
+        "vehicle": ["scum/rust clinging to a metal pot", "persistent physical corrosion", "physical impurity"],
+        "ground": ["stubbornly remaining despite attempts to remove it", "deep‑seated, resistant impurity", "need for intense cleansing or destruction"],
+        "posture": ["emphasizing the incurable nature of the city's corruption", "judgment‑oriented evaluation", "prophetic critique of unrepentant sin"],
+        "explanation": "The 'scum' (ḥelʾāh) on the pot metaphorically represents Jerusalem’s entrenched guilt—impurity that refuses to depart.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 24:7",
+    "deliberation": "Two related but distinct figures: (1) 'her blood' as an internal reality is bloodshed/guilt, not literal fluid; (2) placing that blood on bare rock, instead of covering it with earth, images shameless, public murder.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּ֤י דָמָהּ֙ בְּתוֹכָ֣הּ הָיָ֔ה",
+        "english_text": "For the blood she shed is still in her",
+        "target": ["the city's unresolved guilt for violence", "moral culpability", "forensic status of Jerusalem"],
+        "vehicle": ["'blood' remaining inside", "spilled blood as legal/moral stain", "forensic blood imagery"],
+        "ground": ["a crime that continues to pollute and indict", "unremoved contamination", "lingering liability for homicide"],
+        "posture": ["asserting ongoing guilt as basis for judgment", "accusatory stance", "prophetic legal rhetoric"],
+        "explanation": "'Blood in her' uses 'blood' metonymically for bloodshed and guilt; the city still harbors unatoned violence.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־צְחִ֥יחַ סֶ֖לַע שָׂמָ֑תְהוּ לֹ֤א שְׁפָכַ֙תְהוּ֙ עַל־הָאָ֔רֶץ לְכַסּ֥וֹת עָלָ֖יו עָפָֽר",
+        "english_text": "She set it upon a bare rock; she did not pour it out on the ground to cover it with earth.",
+        "target": ["Jerusalem's brazen, unhidden acts of bloodshed", "public shameless sin", "moral posture of the city"],
+        "vehicle": ["blood left exposed on bare rock instead of being covered with dust", "improper handling of shed blood", "ritual/forensic impropriety"],
+        "ground": ["crime openly displayed rather than concealed", "lack of shame and lack of atonement", "provocative defiance toward norms"],
+        "posture": ["condemning the city's shameless display of violence", "moral rebuke", "prophetic critique of brazen sin"],
+        "explanation": "The image of blood placed on a rock and not covered depicts murder left conspicuously unatoned, a metaphor for Jerusalem’s shameless public violence.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 24:8",
+    "deliberation": "This verse reuses the exposed‑blood image, now as God's act to provoke vengeance, and adds the expression 'to raise wrath,' which treats anger as something that rises like heat.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נָתַ֥תִּי אֶת־דָּמָ֖הּ עַל־צְחִ֣יחַ סָ֑לַע לְבִלְתִּ֖י הִכָּסֽוֹת",
+        "english_text": "I have set her blood upon the bare rock, so that it may not be covered",
+        "target": ["God’s deliberate public exposure of Jerusalem’s guilt", "manifestation of sin for judgment", "divine judicial action"],
+        "vehicle": ["blood displayed on an exposed rock surface", "uncovered forensic evidence", "ritual mishandling made conspicuous"],
+        "ground": ["guilt made visible and undeniable", "inviting judicial response", "removal of concealment to trigger punishment"],
+        "posture": ["presenting God as actively bringing sins to light for judgment", "judicial determination", "prophetic theology of retribution"],
+        "explanation": "YHWH’s placing of 'her blood' on bare rock is a metaphor for publicly exposing the city’s crimes so that they cannot be hidden or ignored.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְהַעֲל֤וֹת חֵמָה֙ לִנְקֹ֣ם נָקָ֔ם",
+        "english_text": "so that it may stir up [My] fury to take vengeance",
+        "target": ["divine anger and retributive action", "God’s punitive response", "theology of judgment"],
+        "vehicle": ["wrath being 'raised up' or 'brought up'", "heat rising or being stoked", "physical process of heat increase"],
+        "ground": ["anger conceptualized as heat that rises and leads to action", "intensification leading to explosive response", "inner emotion expressed as outward retribution"],
+        "posture": ["explaining judgment in vivid, emotionally charged terms", "emotive justification of punishment", "prophetic portrayal of divine wrath"],
+        "explanation": "The phrase 'to raise wrath' treats anger as something that heats up or rises, a common metaphor mapping emotional intensity onto physical heat.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 24:9",
+    "deliberation": "Again we have 'city of blood' (blood as metonymy for murder) and 'I will make the blaze large,' continuing the pot‑fire metaphor for intensifying judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "א֖וֹי עִ֣יר הַדָּמִ֑ים",
+        "english_text": "Woe to the city of blood!",
+        "target": ["Jerusalem as culpable city", "urban community", "Judah centered in Jerusalem"],
+        "vehicle": ["'blood' as shorthand for acts of killing", "violent crime as label", "forensic blood imagery"],
+        "ground": ["defined by pervasive bloodshed", "identity marked by violence", "deserving of woe because of murders"],
+        "posture": ["lamenting yet condemning the city’s violence", "woe oracle", "prophetic denunciation"],
+        "explanation": "Repeats the metonymic epithet 'city of blood,' using 'blood' for the city’s bloodshed and murders.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "גַּם־אֲנִ֖י אַגְדִּ֥יל הַמְּדוּרָֽה",
+        "english_text": "I in turn will make a great blaze",
+        "target": ["intensity of God’s judgment on Jerusalem", "severity of punishment", "experience of siege and destruction"],
+        "vehicle": ["a large burning fire (medurah)", "blaze used for cooking/burning", "fire imagery"],
+        "ground": ["increasing heat and destructive power", "amplified pain and devastation", "judgment seen as all‑consuming fire"],
+        "posture": ["threatening increased severity as just response", "judgment declaration", "prophetic warning through fire imagery"],
+        "explanation": "The 'great blaze' developed from the cooking‑pot image stands metaphorically for an intensified, consuming judgment on the city.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 24:10",
+    "deliberation": "All the commands about piling wood, kindling fire, cooking meat, and charring bones stand within the established allegory; they portray the thoroughness of judgment on the people via the image of overcooking a sacrificial animal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַרְבֵּ֤ה הָעֵצִים֙ הַדְלֵ֣ק הָאֵ֔שׁ הָתֵ֖ם הַבָּשָׂ֑ר ... וְהָעֲצָמ֖וֹת יֵחָֽרוּ",
+        "english_text": "Pile on the logs, kindle the fire, cook the meat through and stew it completely, and let the bones be charred.",
+        "target": ["Jerusalem’s inhabitants undergoing judgment", "population experiencing siege and destruction", "the totality of those in the city"],
+        "vehicle": ["meat and bones being thoroughly cooked and burned in a pot over a strong fire", "slaughtered animal reduced under intense heat", "culinary/sacrificial process"],
+        "ground": ["total exposure to destructive heat, leaving nothing intact", "severity and completeness of treatment", "victims reduced like bones charred in fire"],
+        "posture": ["stressing comprehensive devastation of the people", "grim judicial stance", "prophetic symbolism of total judgment"],
+        "explanation": "The thorough cooking and burning of meat and bones in the pot metaphorically depict the exhaustive, consuming nature of the coming judgment on the city's inhabitants.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 24:11",
+    "deliberation": "Here the pot itself, emptied and left on coals, represents Jerusalem, and the heating of the copper until its impurity melts portrays the purging of moral filth through fiery judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהַעֲמִידֶ֥הָ עַל־גֶּחָלֶ֖יהָ רֵקָ֑ה ... וְנִתְּכָ֤ה בְתוֹכָהּ֙ טֻמְאָתָ֔הּ תִּתֻּ֖ם חֶלְאָתָֽהּ",
+        "english_text": "Let it stand empty on the coals, until it becomes so hot that its copper glows. Then its impurity shall melt away in it, and its rust be consumed.",
+        "target": ["Jerusalem and its moral defilement under judgment", "corrupt community needing purification", "ethical condition of the city"],
+        "vehicle": ["a copper pot on coals until its metal glows, melting off impurity and consuming rust", "metal purification process", "domestic/industrial refining imagery"],
+        "ground": ["using intense heat to remove encrusted filth", "painful but cleansing process", "destructive measures to achieve purification"],
+        "posture": ["portraying judgment as purgative yet severe", "didactic explanation of punishment", "prophetic use of purification imagery for sin"],
+        "explanation": "The glowing copper pot with its impurities melting and rust consumed is a metaphor for God’s judgment burning away Jerusalem’s entrenched defilement.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 24:12",
+    "deliberation": "The Hebrew is difficult, but two figurative ideas are clear: (1) the pot/city 'wearies' attempts to cleanse it—personification; (2) its abundant 'rust/scum' again stands for moral filth destined for the fire.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תְּאֻנִ֖ים הֶלְאָ֑ת",
+        "english_text": "It has frustrated / wearied [all] effort",
+        "target": ["Jerusalem (or the pot) as resistant to cleansing", "the city's stubborn moral condition", "spiritual state of the community"],
+        "vehicle": ["something that tires out those who handle it", "agent that causes weariness", "labor‑provoking object"],
+        "ground": ["requiring repeated, exhausting efforts, yet remaining unchanged", "resistance to remedy", "burdensome incorrigibility"],
+        "posture": ["presenting the city as exasperatingly resistant to purification", "negative evaluation", "prophetic complaint about stubborn sin"],
+        "explanation": "By saying it 'wearies' efforts, the pot/city is personified as an exhausting object, highlighting how attempts to cleanse it have been ineffectual.",
+        "confidence": 0.78
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא־תֵצֵ֤א מִמֶּ֙נָּה֙ רַבַּ֣ת חֶלְאָתָ֔הּ בְּאֵ֖שׁ חֶלְאָתָֽהּ",
+        "english_text": "its thick scum will not leave it—into the fire with its scum!",
+        "target": ["Jerusalem’s persistent guilt", "moral defilement", "sinful condition"],
+        "vehicle": ["thick rust/scum clinging to a vessel and being thrown into fire", "stubborn physical residue", "combustible impurity"],
+        "ground": ["stubbornness and pervasiveness of defilement", "need for destructive burning", "uncleanness inseparable from the object"],
+        "posture": ["justifying the drastic measure of casting it into the fire", "judgment affirmation", "prophetic explanation of punishment severity"],
+        "explanation": "The 'scum' that will not leave, consigned to the fire, again metaphorically represents Jerusalem’s entrenched guilt that must be destroyed by judgment.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 24:13",
+    "deliberation": "Sin is framed in ritual‑purity imagery ('defilement') and God is said to have tried to 'purify' them, but they would not be purified; this is a metaphor of moral cleansing, with 'never be pure again' carrying a strong, arguably hyperbolic, sense of finality until wrath is spent.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּטֻמְאָתֵ֖ךְ זִמָּ֑ה ... יַ֤עַן טִֽהַרְתִּיךְ֙ וְלֹ֣א טָהַ֔רְתְּ מִטֻּמְאָתֵךְ֙ לֹ֣א תִטְהֲרִי־ע֔וֹד עַד־הֲנִיחִ֥י אֶת־חֲמָתִ֖י בָּֽךְ",
+        "english_text": "In your defilement is lewdness; because I sought to purify you of your defilement, but you would not be purified—you shall never be pure again until I have satisfied My fury upon you.",
+        "target": ["Israel’s sinful behavior and its consequences", "moral/religious state of the people", "covenant infidelity"],
+        "vehicle": ["ritual impurity and purification processes", "unclean condition versus cleansing", "cultic purity system"],
+        "ground": ["sin as defilement requiring cleansing, yet resistant to purification", "need for drastic measures before restoration", "moral filth parallel to ritual impurity"],
+        "posture": ["portraying their sin as vile uncleanness that must be burned away by wrath", "severe warning with final‑sounding language", "prophetic emphasis on the gravity and persistence of sin"],
+        "explanation": "The language of 'defilement' and 'purifying' maps moral lewdness onto ritual impurity and cleansing. The statement that they will 'never' be purified until God’s wrath is satisfied is a hyperbolic way of stressing the irrevocability of coming judgment until its course is complete.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 24:14",
+    "deliberation": "Most clauses are straightforward pledges of action. The phrase 'according to your ways and your deeds they shall judge you' gives 'ways and deeds' the role of judge; this is a compact personification of moral consequences judging the sinner.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּדְרָכַ֤יִךְ וְכַעֲלִילוֹתַ֙יִךְ֙ שְׁפָט֔וּךְ",
+        "english_text": "according to your ways and your deeds they shall judge you",
+        "target": ["God’s judgment on the people", "verdict against Israel", "experience of punishment"],
+        "vehicle": ["their 'ways' and 'deeds' acting as judges", "abstract behavior serving as judicial agents", "forensic personification"],
+        "ground": ["their own conduct provides the standard and evidence for condemnation", "self‑condemnation inherent in their actions", "no need for external accuser"],
+        "posture": ["underscoring that judgment is self‑incurred", "moralizing emphasis", "prophetic assertion of just retribution"],
+        "explanation": "By making 'ways and deeds' the grammatical subject that 'judge' them, the verse personifies their behavior as the judge that condemns them.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 24:15",
+    "deliberation": "This is the standard prophetic formula 'the word of YHWH came to me,' repeated from v.1. As in v.1, it functions as a conventional marker of revelation without adding a distinct, interpretable image beyond that formulaic use.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 24:16",
+    "deliberation": "Two figures: (1) 'ben‑adam' again as idiomatic 'mortal'; (2) Ezekiel’s wife described as 'the delight of your eyes,' a metaphorical epithet for someone deeply cherished.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָ֕ם",
+        "english_text": "O mortal",
+        "target": ["Ezekiel as human and limited", "individual prophet", "humanity in contrast to God"],
+        "vehicle": ["'son of man' expression", "kinship term", "human familial category"],
+        "ground": ["mortal derivation from humankind (’adam)", "human frailty", "non‑divine status"],
+        "posture": ["emphasizing the prophet’s mortality in the face of divine decree", "humbling address", "prophetic call rhetoric"],
+        "explanation": "As elsewhere, 'ben‑adam' serves as an idiomatic title for a mere human, underlining Ezekiel’s limited, mortal status.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶת־מַחְמַ֥ד עֵינֶ֖יךָ",
+        "english_text": "the delight of your eyes",
+        "target": ["Ezekiel’s beloved wife", "intimate relationship", "family bond"],
+        "vehicle": ["that which gives delight to the eyes", "pleasing visual object", "sensory pleasure imagery"],
+        "ground": ["intense affection and emotional pleasure associated with seeing her", "preciousness and desirability", "object of deep attachment"],
+        "posture": ["heightening the pathos of her loss for the prophet", "empathetic yet didactic stance", "prophetic sign‑act set‑up"],
+        "explanation": "Describing his wife as 'the delight of your eyes' metaphorically conveys how deeply cherished she is, intensifying the emotional impact of her impending death.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 24:17",
+    "deliberation": "Most instructions (turban, sandals, uncovered upper lip) refer literally to mourning customs. The phrase 'bread of men' is idiomatic for the condolence meal brought by others in mourning.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֶ֥חֶם אֲנָשִׁ֖ים לֹ֥א תֹאכֵֽל",
+        "english_text": "and do not eat the bread of men [=mourners/comforters]",
+        "target": ["the customary meal provided by comforters in mourning", "social practice of consolation", "funeral‑related actions"],
+        "vehicle": ["'bread of men' as shorthand for the mourners’ food", "food characterized by its providers", "social metonymy"],
+        "ground": ["bread representing the act of human consolation", "association between food-sharing and comfort", "ritualized support expressed through a meal"],
+        "posture": ["forbidding Ezekiel normal rites of mourning as a sign", "disruptive symbolic instruction", "prophetic sign‑act regulation"],
+        "explanation": "The expression 'bread of men' is an idiom (metonymic) for the condolence food supplied by others in mourning; Ezekiel is told to abstain from this customary sign of grief.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 24:18",
+    "deliberation": "This verse narrates straightforwardly that Ezekiel spoke to the people, his wife died, and he obeyed the command. No metaphorical or other figurative expressions beyond ordinary narrative language are apparent.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 24:19",
+    "deliberation": "The people’s question is literal—asking what Ezekiel’s unusual behavior means. There is no explicit figurative description; they are interpreting, not speaking in figures.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 24:20",
+    "deliberation": "Reiterates the prophetic formula 'the word of YHWH came to me.' As in vv.1 and 15, this is conventional revelatory language functioning as a technical heading, not a distinct, analyzable metaphor in its own right within this verse.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 24:21",
+    "deliberation": "Here the temple is given a series of metaphorical epithets ('pride of your strength,' 'delight of your eyes,' 'desire/compassion of your soul'), depicting it as the emotional and symbolic center of the people’s life.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶת־מִקְדָּשִׁי֙ גְּא֣וֹן עֻזְּכֶ֔ם מַחְמַ֥ד עֵינֵיכֶ֖ם וּמַחְמַ֣ל נַפְשְׁכֶ֑ם",
+        "english_text": "My Sanctuary, your pride and glory, the delight of your eyes and the desire of your heart",
+        "target": ["the Jerusalem temple and what it represents to the people", "religious-political center", "covenant relationship focal point"],
+        "vehicle": ["object of pride and strength, delight of the eyes, compassion/desire of the soul", "cherished trophy or beloved object", "emotive and honor imagery"],
+        "ground": ["source of identity, security, joy, and affection", "center of national self‑confidence and emotional attachment", "what they most value and feel attached to"],
+        "posture": ["heightening the pathos of its desecration by showing how much it means to them", "rhetorical intensification", "prophetic emphasis on the cost of judgment"],
+        "explanation": "By calling the sanctuary their 'pride and strength,' 'delight of eyes,' and 'desire of soul,' the verse metaphorically depicts the temple as both the emblem of their power and the beloved object of their deepest affections.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 24:22",
+    "deliberation": "This verse mostly repeats literal mourning‑practice prohibitions already given, but now applied to the people. 'Bread of men' recurs as the idiom for the mourning meal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֶ֥חֶם אֲנָשִׁ֖ים לֹ֥א תֹאכֵֽלוּ",
+        "english_text": "and you shall not eat the bread of men",
+        "target": ["the mourning/condolence meal offered by comforters", "social consolation practice", "funeral custom"],
+        "vehicle": ["'bread of men' naming the food by its human providers", "food as stand‑in for act of comforting", "metonymic ritual expression"],
+        "ground": ["bread associated with communal comfort", "human solidarity expressed through shared food", "ritual of consolation condensed into the term"],
+        "posture": ["instructing them to forego ordinary expressions of grief", "symbolic disruption of ritual", "prophetic sign‑act application"],
+        "explanation": "As in v.17, 'bread of men' is an idiom (metonymic) for the condolence food given by mourners; the people, like Ezekiel, are told to abstain from this.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 24:23",
+    "deliberation": "Most of the verse details literal behavior (turbans, sandals, not weeping). The phrase 'you shall rot away in your iniquities' uses physical decay as a metaphor for wasting under the burden of sin and its punishment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּנְמַקֹּתֶם֙ בַּעֲוֺנֹ֣תֵיכֶ֔ם",
+        "english_text": "you shall be heartsick / rot away in your iniquities",
+        "target": ["the people’s experience of suffering because of their sins", "internal torment under guilt and punishment", "spiritual-psychological state"],
+        "vehicle": ["rotting or wasting away", "physical decomposition", "somatic decay imagery"],
+        "ground": ["progressive weakening and disintegration caused by sin’s consequences", "inner anguish likened to physical wasting", "inescapable deterioration"],
+        "posture": ["portraying their coming misery in stark, visceral terms", "intensifying the warning", "prophetic evocation of the horror of judgment"],
+        "explanation": "The phrase depicts their inward misery and punishment as 'rotting away' in their iniquities, a vivid metaphor (with a hyperbolic edge) of spiritual and perhaps physical wasting under divine judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 24:24",
+    "deliberation": "Ezekiel himself is said to become a 'mōpet'—a sign/portent—for the people, meaning his life and behavior function symbolically rather than merely personally. This is a clear metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָ֨ה יְחֶזְקֵ֤אל לָכֶם֙ לְמוֹפֵ֔ת",
+        "english_text": "And Ezekiel shall become a portent/sign for you",
+        "target": ["Ezekiel’s prophetic role and actions", "his life and behavior", "prophetic ministry"],
+        "vehicle": ["a 'sign' or 'portent' (mōpet)", "symbolic object/event", "semiotic marker"],
+        "ground": ["his experience prefigures and interprets what will happen to them", "he embodies a message", "observable pattern that points beyond itself"],
+        "posture": ["framing his personal loss as a symbolic communication from God", "didactic stance", "prophetic sign‑act theology"],
+        "explanation": "Calling Ezekiel a 'sign' means his actions and experiences are not merely private but are metaphorically a living symbol that points to what God will do to the people.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 24:25",
+    "deliberation": "Again, the central object (temple/stronghold with attendant blessings) is described through several metaphoric designations: 'their stronghold,' 'joy of their glory,' 'delight of their eyes,' and 'lifting/burden of their soul.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מָעוּזָּ֔ם מְשׂ֖וֹשׂ תִּפְאַרְתָּ֑ם אֶת־מַחְמַ֤ד עֵינֵיהֶם֙ וְאֶת־מַשָּׂ֣א נַפְשָׁ֔ם",
+        "english_text": "their stronghold, their pride and joy, the delight of their eyes and the longing of their hearts",
+        "target": ["the central sanctuary/city and what it provides for them", "religious-political center and its benefits", "national security and identity"],
+        "vehicle": ["fortress/stronghold, joyous splendor, visual delight, 'lifting' or burden of the soul", "secure refuge and cherished treasure", "emotive and military imagery"],
+        "ground": ["seen as their protection, source of joy, and object of deepest desire", "combining security, honor, and affection", "what they rely on and cherish most"],
+        "posture": ["expressing how devastating its loss will be by piling up affectionate and honorific metaphors", "rhetorical intensification", "prophetic warning through affective language"],
+        "explanation": "The temple/city is depicted as their 'stronghold,' 'joy of their glory,' and 'delight of eyes/longing of soul,' metaphors that portray it as both their security and their most cherished possession.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 24:26",
+    "deliberation": "Describes a fugitive coming to report news, 'to let you hear it with your ears.' The mention of 'ears' is literal for hearing; the verse is narratively straightforward with no salient figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 24:27",
+    "deliberation": "Two figures: (1) 'your mouth shall be opened' and 'you shall no longer be dumb' is an idiomatic way of describing restored prophetic speech; (2) again Ezekiel is said to be a 'sign/portent' to them.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יִפָּ֤תַח פִּ֙יךָ֙ ... וְלֹ֥א תֵאָלֵ֖ם ע֑וֹד",
+        "english_text": "your mouth shall be opened ... and you shall no longer be dumb",
+        "target": ["Ezekiel’s prophetic ability and authorization to speak", "exercise of his prophetic office", "communication of God’s word"],
+        "vehicle": ["opening the mouth versus being mute", "physical state of speech organs", "bodily imagery for communicative capacity"],
+        "ground": ["permission and empowerment to speak conceptualized as an opened mouth", "divine restriction conceptualized as enforced muteness", "control over speech expressed bodily"],
+        "posture": ["marking the shift from restricted to free prophecy as a divinely timed act", "programmatic stance", "prophetic commissioning/de‑commissioning language"],
+        "explanation": "The 'opening' of Ezekiel’s mouth and cessation of dumbness is an idiomatic metaphor for God restoring his freedom and commission to speak as a prophet.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיִ֤יתָ לָהֶם֙ לְמוֹפֵ֔ת",
+        "english_text": "and you shall be a portent/sign for them",
+        "target": ["Ezekiel’s person and prophetic career", "his observable life and speech", "prophetic ministry"],
+        "vehicle": ["a 'sign' or 'portent' (mōpet)", "symbol indicating or foreshadowing something", "semiotic marker"],
+        "ground": ["his experiences signal and interpret God’s dealings with them", "he functions as a living symbol", "their recognition of God through his sign‑role"],
+        "posture": ["presenting Ezekiel as a living token of divine action", "didactic and revelatory stance", "prophetic sign‑act theology"],
+        "explanation": "As in v.24, Ezekiel himself is metaphorically called a 'sign,' meaning his life is a symbolic pointer to God’s actions toward the people.",
+        "confidence": 0.95
+      }
+    ]
+  }
+]

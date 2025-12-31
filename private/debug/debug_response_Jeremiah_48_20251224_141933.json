@@ -1,0 +1,1000 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 48:1",
+    "deliberation": "I checked whether the devastation language is literal or figurative. The verbs for shame and terror are applied to cities/fortresses, which creates personification, but there are no similes or extended metaphors beyond that.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֹבִישָׁה נִלְכְּדָה קִרְיָתָיִם הֹבִישָׁה הַמִּשְׂגָּב וָחָתָּה",
+        "english_text": "Kiriathaim captured and shamed, the stronghold shamed and dismayed!",
+        "target": ["Moabite cities and strongholds", "urban-political entities", "socio-political domain"],
+        "vehicle": ["ashamed and terrified person", "human emotional subject", "psychological domain"],
+        "ground": ["experience of humiliation and fear under defeat", "negative emotional state under calamity", "suffering/oppression domain"],
+        "posture": ["prophetic denunciation of Moab’s security", "judgmental evaluation", "theological-judicial domain"],
+        "explanation": "The cities and stronghold are spoken of as if they can feel shame and terror, personifying the urban centers to highlight Moab’s humiliation.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 48:2",
+    "deliberation": "I looked for wordplays and also for conceptual metaphors. I found metonymic uses (Heshbon for its people; Moab’s praise for its reputation; the sword for warfare). The rest is fairly literal planning of destruction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֵין עוֹד תְּהִלַּת מוֹאָב",
+        "english_text": "Moab’s glory is no more",
+        "target": ["Moab’s former prestige and reputation", "reputation/honor", "social-evaluative domain"],
+        "vehicle": ["תְּהִלָּה ‘glory, praise’ as if a concrete possession", "praiseworthy status", "value/status domain"],
+        "ground": ["loss of what made Moab commendable", "cessation of positive reputation", "honor-shame dynamics"],
+        "posture": ["prophetic lament and taunt over lost honor", "negative appraisal", "judgment domain"],
+        "explanation": "Moab’s ‘glory’ stands metonymically for its reputation and honor among the nations, which is said to have ceased.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּחֶשְׁבּוֹן חָשְׁבוּ עָלֶיהָ רָעָה",
+        "english_text": "In Heshbon they have planned evil against her",
+        "target": ["the leaders/inhabitants who plan war", "decision-makers of a city", "political-military domain"],
+        "vehicle": ["the city name ‘Heshbon’", "place-name for population", "spatial-geographical domain"],
+        "ground": ["city stands for the people who reside and strategize there", "association of locale with its ruling class", "conventional city=people metonymy"],
+        "posture": ["prophetic report of hostile planning", "narrative stance", "historical-prophetic domain"],
+        "explanation": "The place-name ‘Heshbon’ stands metonymically for its inhabitants/leaders who are doing the planning.",
+        "confidence": 0.82
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַחֲרַיִךְ תֵּלֶךְ חָרֶב",
+        "english_text": "The sword is following you",
+        "target": ["pursuing military destruction of the town ‘Madmen’", "impending violence/warfare", "warfare-judgment domain"],
+        "vehicle": ["חֶרֶב ‘sword’", "weapon of war", "physical-weaponry domain"],
+        "ground": ["sword represents attacking armies and killing", "instrument stands for the act of war", "instrument-for-action metonymy"],
+        "posture": ["threatening prophetic warning", "announcement of doom", "judicial-prophetic domain"],
+        "explanation": "The ‘sword’ stands metonymically for warfare and violent death that will overtake the city.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 48:3",
+    "deliberation": "I examined whether ‘voice of crying’ or ‘destruction and great breaking’ might be metaphorical. They function here as literal descriptions of alarm and ruin, without non-literal comparison or personification.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 48:4",
+    "deliberation": "I checked the verb ‘is broken’ used of Moab; it cannot be literal, since a nation is not a physical object. This yields a clear metaphor; the rest (crying young ones) is literal suffering language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִשְׁבְּרָה מוֹאָב",
+        "english_text": "Moab is broken",
+        "target": ["the nation of Moab", "nation/people-group", "socio-political domain"],
+        "vehicle": ["a shattered object", "fragile physical item", "physical-integrity domain"],
+        "ground": ["loss of structural integrity and ability to function", "complete defeat and helplessness", "destruction/humiliation domain"],
+        "posture": ["prophetic announcement of judgment", "divine perspective on Moab’s fall", "theological-judicial domain"],
+        "explanation": "Moab is likened to a breakable object that has been shattered, conveying its total defeat and helplessness.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 48:5",
+    "deliberation": "The ascent and descent locations with weeping and cries appear to be literal geographic-route descriptions of fleeing people. I did not find a clear non-literal comparison or personification distinct from the narrative description.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 48:6",
+    "deliberation": "I looked at the imperative to flee and the comparison with Aroer. The simile ‘be like Aroer in the desert’ is the key figure, conveying isolation/desolation; the rest is straightforward exhortation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְתִהְיֶנָה כַּעֲרוֹעֵר בַּמִּדְבָּר",
+        "english_text": "And be like Aroer in the desert",
+        "target": ["fleeing Moabite inhabitants", "threatened population", "socio-political domain"],
+        "vehicle": ["the town Aroer in the wilderness", "isolated/desolate settlement", "geographical-desert domain"],
+        "ground": ["exposure, isolation, and vulnerability", "lack of protection or population density", "desolation/abandonment domain"],
+        "posture": ["urgent prophetic counsel to seek survival even in desolation", "recognition of inevitable loss", "pastoral-judgment domain"],
+        "explanation": "Moab’s people are urged to become like the desolate town of Aroer in the wilderness, picturing their future isolation and exposure.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 48:7",
+    "deliberation": "I considered whether trust in ‘works and treasures’ was idiomatic; it reads literally as misplaced reliance. The notable figure is the treatment of Chemosh’s ‘exile’, which uses the god’s name metonymically for his cultic statue/people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְיָצָא כְּמוֹשׁ בַּגּוֹלָה כֹּהֲנָיו וְשָׂרָיו יַחְדָּיו",
+        "english_text": "And Chemosh shall go forth to exile, together with his priests and attendants",
+        "target": ["Chemosh’s cult statue and worshiping community", "religious system and its adherents", "religious-socio-political domain"],
+        "vehicle": ["the deity-name ‘Chemosh’", "national god as emblem", "theological-symbolic domain"],
+        "ground": ["the god represents the whole cultic system that will be deported/defeated", "defeat of the god implies defeat of his people", "god-people identification"],
+        "posture": ["mocking exposure of Chemosh’s powerlessness", "polemic against idolatry", "theological-controversial domain"],
+        "explanation": "‘Chemosh’ stands metonymically for his cult and worshipers whose exile displays their god’s impotence.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 48:8",
+    "deliberation": "The verse speaks of a destroyer coming to every city and the valley/tableland being devastated. These are literal images of conquest and environmental ruin; I did not identify figurative comparisons beyond ordinary descriptive language.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 48:9",
+    "deliberation": "I focused on the unusual command ‘give wings to Moab’, which clearly cannot be literal. In context, it pictures Moab as a bird needing wings to flee, a compact metaphor; the rest of the verse is literal desolation language.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תְּנוּ־צִיץ לְמוֹאָב כִּי נָצֹא תֵּצֵא",
+        "english_text": "Give wings to Moab, for she must go hence",
+        "target": ["Moab as a nation needing to escape", "threatened collective", "socio-political domain"],
+        "vehicle": ["a winged bird in flight", "fleeing animal", "animal-movement domain"],
+        "ground": ["rapid flight and attempt to escape danger", "vulnerability and lack of defenses", "survival/flight domain"],
+        "posture": ["ironic prophetic exhortation highlighting inescapability", "taunting tone toward Moab", "judgment-taunt domain"],
+        "explanation": "Moab is envisioned as a bird that would need wings to flee, underscoring both the urgency to escape and the futility of such attempts.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 48:10",
+    "deliberation": "I examined ‘work of YHWH’ and ‘withholds his sword from blood’. The former is standard for divinely commissioned action. The latter uses ‘sword’ and ‘blood’ metonymically for warfare and killing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אָרוּר מֹנֵעַ חַרְבּוֹ מִדָּם",
+        "english_text": "Cursed be he who withholds his sword from blood!",
+        "target": ["actual combat and killing in the judgment on Moab", "act of warfare", "military domain"],
+        "vehicle": ["‘sword’ and ‘blood’", "weapons and bodily fluids", "physical-violence domain"],
+        "ground": ["the sword stands for fighting, blood stands for lethal force", "instrument and result represent the whole act of battle", "part-for-whole metonymy"],
+        "posture": ["divine insistence on thorough execution of judgment", "disapproval of half-hearted action", "judicial-prophetic domain"],
+        "explanation": "The ‘sword’ represents warfare and ‘blood’ represents killing; together they figuratively denote full participation in the divinely mandated battle.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 48:11",
+    "deliberation": "This verse develops an extended wine metaphor: Moab is like wine resting on its lees, not poured from vessel to vessel; his taste and aroma remain. These attributes are not literal of a nation, so it is a sustained metaphor, not multiple unrelated figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שַׁאֲנַן מוֹאָב מִנְּעוּרָיו וְשֹׁקֵט הוּא אֶל־שְׁמָרָיו וְלֹא־הוּרַק מִכְּלִי אֶל־כֶּלִי ... עַל־כֵּן עָמַד טַעְמוֹ בּוֹ וְרֵיחוֹ לֹא נָמָר",
+        "english_text": "Moab has been secure from his youth—he is settled on his lees and has not been poured from vessel to vessel ... therefore his fine flavor has remained and his bouquet is unspoiled.",
+        "target": ["Moab’s national character and condition", "nation’s social-political state", "socio-political domain"],
+        "vehicle": ["wine resting on its lees with taste and aroma", "aged wine", "food/drink domain"],
+        "ground": ["stability, unshaken existence, and fixed character", "lack of disturbance leading to entrenched qualities", "long-term complacency domain"],
+        "posture": ["critical observation of Moab’s complacent security", "diagnostic divine assessment", "theological-judicial domain"],
+        "explanation": "Moab is likened to wine that has long rested undisturbed on its dregs, so that its ‘flavor’ and ‘aroma’—its entrenched character—have remained unchanged.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 48:12",
+    "deliberation": "This continues the wine metaphor: ‘tilters’ will pour him out, empty his vessels, and shatter jars. Moab is treated as wine in containers; the invaders are the pourers. I treat this as one coherent metaphorical extension.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשִׁלַּחְתִּי־לוֹ צֹעִים וְצֵעֻהוּ וְכֵלָיו יָרִיקוּ וְנִבְלֵיהֶם יְנַפֵּצוּ",
+        "english_text": "I will send to him those who will decant him; they shall empty his vessels and smash his jars.",
+        "target": ["Moab and his cities/population", "nation and its habitations", "socio-political/urban domain"],
+        "vehicle": ["wine being poured out and jars smashed", "containers and their contents", "food/drink and utensils domain"],
+        "ground": ["thorough emptying and destruction", "loss of stability and containment", "devastation/exile domain"],
+        "posture": ["assertion of God’s direct orchestration of Moab’s upheaval", "judgmental stance", "theological-judicial domain"],
+        "explanation": "Moab is depicted as wine in jars that will be poured out and shattered, signifying the complete emptying and destruction of the nation and its settlements.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 48:13",
+    "deliberation": "I examined the shame language and the reference to Bethel. ‘Bethel’ functions as a metonymy for its idolatrous cult, the object of Israel’s misplaced trust, paralleled with Chemosh for Moab.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כַּאֲשֶׁר־בֹּשׁוּ בֵּית יִשְׂרָאֵל מִבֵּית־אֵל מִבְטַחָם",
+        "english_text": "as the House of Israel were shamed because of Bethel, on whom they relied",
+        "target": ["the idolatrous cult at Bethel and Israel’s misplaced reliance", "religious practice and trust", "religious-theological domain"],
+        "vehicle": ["place-name ‘Bethel’", "sanctuary location", "geographical-sacral domain"],
+        "ground": ["sacred site stands for its cultic system and object of trust", "failure of the cult equals shame of the worshipers", "cult-place identification"],
+        "posture": ["didactic reminder of Israel’s past failure", "warning by analogy", "theological-exemplary domain"],
+        "explanation": "‘Bethel’ stands metonymically for the idolatrous shrine and its cult, which had been Israel’s false object of trust.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 48:14",
+    "deliberation": "The verse is a rhetorical question challenging Moab’s self-perception as warriors. In context (imminent defeat), it is ironic: their boast contrasts with reality. There is no explicit metaphor, but there is rhetorical irony.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֵיךְ תֹּאמְרוּ גִּבּוֹרִים אֲנַחְנוּ וְאַנְשֵׁי־חַיִל לַמִּלְחָמָה",
+        "english_text": "How can you say: We are warriors, Valiant men for war?",
+        "target": ["Moab’s self-assessment and public boasting", "self-perception of strength", "psychological/social domain"],
+        "vehicle": ["the claim to be ‘warriors, men of might’ in context of forthcoming defeat", "boastful war-epithets", "military-honor domain"],
+        "ground": ["discrepancy between claim and reality", "false confidence exposed by events", "ironic reversal domain"],
+        "posture": ["prophetic irony undermining Moab’s pride", "taunting stance", "judgment-taunt domain"],
+        "explanation": "The question is ironic: Moab calls itself mighty warriors precisely when it is about to be crushed, exposing the emptiness of the boast.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 48:15",
+    "deliberation": "I assessed ‘gone down to the slaughter’. The ‘slaughter’ (טָּבַח) evokes animal butchering and is applied to Moab’s young men, creating a metaphor for ruthless killing in battle.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמִבְחַר בַּחוּרָיו יָרְדוּ לַטָּבַח",
+        "english_text": "His choice young men have gone down to the slaughter",
+        "target": ["Moab’s elite fighting men", "human warriors", "military domain"],
+        "vehicle": ["animals led to a slaughterhouse", "butchering context", "animal-husbandry domain"],
+        "ground": ["helplessness against killing, mass death without honor", "one-sided, merciless killing", "violence/brutality domain"],
+        "posture": ["divine portrayal of Moab’s defeat as dehumanizing", "judgmental depiction", "theological-judicial domain"],
+        "explanation": "The deaths of Moab’s young men in battle are compared to animals being taken to slaughter, stressing the merciless and overwhelming nature of their defeat.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 48:16",
+    "deliberation": "The ‘doom’ of Moab drawing near is temporal language that can be taken straightforwardly as approaching judgment in time. I did not see a distinct metaphor beyond conventional phrasing of something ‘coming’.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 48:17",
+    "deliberation": "I focused on ‘the strong rod is broken, the lordly staff’. Rod/staff here symbolize Moab’s power or ruling authority, so we have a metaphorical transfer from physical staff to political strength.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵיכָה נִשְׁבַּר מַטֵּה־עֹז מַקֵּל תִּפְאָרָה",
+        "english_text": "Alas, the strong rod is broken, the lordly staff!",
+        "target": ["Moab’s ruling power and national strength", "political-military authority", "socio-political domain"],
+        "vehicle": ["a strong, splendid staff or rod", "supporting/disciplining instrument", "tool/leadership-symbol domain"],
+        "ground": ["the staff supports and rules, and when broken loses its function", "loss of capacity to lead and defend", "collapse of authority domain"],
+        "posture": ["lamenting recognition of Moab’s collapse", "observational stance", "judgment-lament domain"],
+        "explanation": "Moab’s power is pictured as a strong, glorious staff that has been broken, signifying the end of its capacity to rule or protect.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 48:18",
+    "deliberation": "I noted two distinct figures: (1) ‘daughter of Dibon’ is a standard personification of the city; (2) ‘sit in thirst’ pictures the city as enduring parched deprivation, a metaphor for the effects of siege or devastation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יֹשֶׁבֶת בַּת־דִּיבוֹן",
+        "english_text": "O inhabitant, daughter of Dibon",
+        "target": ["the city of Dibon and its population", "urban community", "socio-political/geographical domain"],
+        "vehicle": ["a ‘daughter’ as a young woman addressed directly", "female family member", "human-familial domain"],
+        "ground": ["city treated as a female person with status and vulnerability", "intimate, personalized address", "city-as-woman motif"],
+        "posture": ["compassionate yet admonitory prophetic address", "relational stance", "prophetic-oracular domain"],
+        "explanation": "Dibon is personified as a ‘daughter’, a young woman, giving the city a personal, vulnerable identity in the judgment speech.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רְדִי מִכָּבוֹד וּשְׁבִי בַצָּמָא",
+        "english_text": "Descend from glory and sit in thirst",
+        "target": ["Dibon’s former prosperity and its coming deprivation", "city’s status and condition", "socio-economic domain"],
+        "vehicle": ["a woman stepping down from an exalted place to sit parched with thirst", "humiliated, needy person", "bodily-experiential domain"],
+        "ground": ["loss of honor and comfort, replaced by humiliation and deprivation", "transition from abundance to need", "reversal-of-fortune domain"],
+        "posture": ["divine command to accept humiliation as deserved judgment", "downward-evaluative stance", "theological-judicial domain"],
+        "explanation": "The city is portrayed as a woman leaving a position of ‘glory’ to sit in physical thirst, a metaphor for loss of status and resources after devastation.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 48:19",
+    "deliberation": "The inhabitant of Aroer is addressed directly and told to question fleeing people. This can all be taken literally (witnessing refugees); I did not detect a non-literal comparison or emblematic use of Aroer here beyond that.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 48:20",
+    "deliberation": "I checked the shame and fear language. The nation ‘Moab’ is said to be shamed and terrified, which is a mild personification of a collective as experiencing human emotions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֹבִישׁ מוֹאָב כִּי־חַתָּה",
+        "english_text": "Moab is shamed and dismayed",
+        "target": ["the nation Moab as a whole", "collective people", "socio-political domain"],
+        "vehicle": ["a disgraced, terrified person", "human emotional subject", "psychological domain"],
+        "ground": ["shared experience of acute embarrassment and fear", "emotional consequence of defeat", "humiliation domain"],
+        "posture": ["prophetic proclamation of Moab’s emotional downfall", "judgmental stance", "theological-judicial domain"],
+        "explanation": "Moab, as a nation, is portrayed as a person who feels shame and terror in response to its overthrow.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 48:21",
+    "deliberation": "This is a bare announcement that judgment has reached certain regions and towns. ‘Judgment’ here is judicial action and can reasonably be read literally for divine punishment; no distinct figurative trope stands out.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 48:22",
+    "deliberation": "The verse simply lists further cities affected; there is no explicit figurative comparison, personification, or idiomatic phrase here.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 48:23",
+    "deliberation": "As with the preceding verse, this is a list of cities without additional descriptive imagery. I did not identify figurative language in this line.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 48:24",
+    "deliberation": "The verse continues the list and sums up ‘all the cities of the land of Moab, far and near’. The ‘far and near’ forms a merism conceptually for totality, but it is so conventional that I judged it borderline; I treat it as ordinary comprehensiveness rather than a separate figure here.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 48:25",
+    "deliberation": "Two distinct symbolic body parts are used: Moab’s ‘horn’ is cut off and his ‘arm’ is broken. Both are metaphors for strength, and they are separate expressions, not just two words for the same item.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִגְדְּעָה קֶרֶן מוֹאָב",
+        "english_text": "The horn of Moab has been cut down",
+        "target": ["Moab’s power and pride", "national strength", "socio-political domain"],
+        "vehicle": ["the ‘horn’ of an animal", "animal power-symbol", "animal-body domain"],
+        "ground": ["the horn symbolizes strength and dominion; its removal means loss of power", "public cutting down of might", "humiliation/defeat domain"],
+        "posture": ["divine declaration of the end of Moab’s power", "judgmental stance", "theological-judicial domain"],
+        "explanation": "Moab’s political/military power is symbolized as an animal horn that has been cut off.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּזְרֹעוֹ נִשְׁבָּרָה",
+        "english_text": "and his arm is broken",
+        "target": ["Moab’s capacity to act and fight", "agency/force of the nation", "socio-political/military domain"],
+        "vehicle": ["a human arm that is broken", "limb used for strength", "human-body domain"],
+        "ground": ["broken arm implies inability to exert force or defend oneself", "loss of practical power", "incapacity domain"],
+        "posture": ["emphatic completion of the previous metaphor", "reinforcing judgmental tone", "theological-judicial domain"],
+        "explanation": "Moab’s ability to act militarily is depicted as an arm that has been broken, indicating total incapacitation.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 48:26",
+    "deliberation": "I saw (1) the ‘drunk’/‘vomit’ imagery used metaphorically of the nation under judgment; and (2) Moab becoming ‘a laughingstock’, a metaphorical status of being turned into an object of ridicule.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַשְׁכִּירֻהוּ ... וְסָפַק מוֹאָב בְּקִיאוֹ",
+        "english_text": "Get him drunk, for he vaunted himself against the LORD. Moab shall vomit till he is drained",
+        "target": ["Moab in its arrogant self-exaltation and coming downfall", "arrogant nation", "socio-political/theological domain"],
+        "vehicle": ["a drunk person staggering and vomiting", "intoxicated body", "bodily-experiential domain"],
+        "ground": ["loss of control, disgrace, and physical abasement", "judgment causing Moab to be publicly humiliated and emptied", "humiliation/debasement domain"],
+        "posture": ["mocking divine response to pride", "retributive stance", "theological-judicial domain"],
+        "explanation": "Moab’s judgment is portrayed as intoxication leading to vomiting—an image of humiliating, uncontrollable downfall due to its arrogance against God.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָה לִשְׂחֹק גַּם־הוּא",
+        "english_text": "And he too shall be a laughingstock",
+        "target": ["Moab’s public reputation", "social standing before other nations", "social-perception domain"],
+        "vehicle": ["‘a laughingstock’—an object people laugh at", "figure of ridicule", "social-evaluative domain"],
+        "ground": ["others respond to Moab with mocking laughter instead of fear or respect", "shift from honor to ridicule", "shame/derision domain"],
+        "posture": ["reversal of Moab’s prior contempt for others (esp. Israel)", "retributive stance", "theological-ethical domain"],
+        "explanation": "Moab is depicted not just as being laughed at but as embodying ‘a laughingstock’, a metaphorical status of being an object of ridicule.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 48:27",
+    "deliberation": "I focused on Israel being ‘a laughingstock’ and the gesture of ‘shaking the head’ when speaking of him. Together they form an idiomatic/metaphorical expression for derisive mockery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַשְּׂחֹק הָיָה לְךָ יִשְׂרָאֵל ... כִּי־מִדֵּי דְבָרֶיךָ בּוֹ תִּתְנוֹדָד",
+        "english_text": "Wasn’t Israel a laughingstock to you? ... that you should shake your head whenever you speak of him?",
+        "target": ["Israel’s status in Moab’s eyes", "object of Moabite scorn", "inter-national relations domain"],
+        "vehicle": ["‘laughingstock’ and head-shaking gesture of derision", "mocking behavior", "social-gesture domain"],
+        "ground": ["habitual ridicule and contempt expressed nonverbally and verbally", "public shaming of another nation", "derision/honor-shame domain"],
+        "posture": ["God’s indictment of Moab’s mocking attitude toward Israel", "moral-evaluative stance", "theological-ethical domain"],
+        "explanation": "Calling Israel a ‘laughingstock’ and describing Moab as ‘shaking the head’ at him is an idiomatic way to speak of contemptuous mockery.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 48:28",
+    "deliberation": "I looked at the command to leave cities and dwell in rock, and especially the explicit comparison: ‘be like a dove that nests in the sides of a pit’. That is a clear simile for fearful hiding in inaccessible places.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וִהְיוּ כְיוֹנָה תְּקַנֵּן בְּעֶבְרֵי פִי־פָחַת",
+        "english_text": "Be like a dove that nests in the sides of a pit",
+        "target": ["Moabite inhabitants fleeing to the crags", "threatened refugees", "socio-political domain"],
+        "vehicle": ["a dove nesting on the sides of a pit or ravine", "timid bird in hidden crags", "animal-behavior domain"],
+        "ground": ["seeking safety in high, hidden, inaccessible places; fear and vulnerability", "flight from danger into rocky refuges", "survival/flight domain"],
+        "posture": ["urgent counsel to seek any available refuge", "somber recognition of their fear", "prophetic-pastoral domain"],
+        "explanation": "Moab’s people are urged to imitate a dove that hides its nest in the rocky sides of a pit, emphasizing their fearful retreat into inaccessible refuges.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 48:29",
+    "deliberation": "The piling of terms for pride culminates in ‘height of his heart’ (רוּם לִבּוֹ). That uses vertical imagery of height for arrogance, a conceptual metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְרֻם לִבּוֹ",
+        "english_text": "and his self-exaltation (lit. ‘the height of his heart’)",
+        "target": ["Moab’s inner attitude of pride", "emotional-dispositional state", "psychological domain"],
+        "vehicle": ["height/loftiness in spatial terms", "vertical elevation", "spatial domain"],
+        "ground": ["being ‘high’ symbolizes being above others, exalted, superior", "connection between height and arrogant self-elevation", "status/superiority domain"],
+        "posture": ["divine criticism of Moab’s excessive pride", "negative evaluative stance", "theological-ethical domain"],
+        "explanation": "Moab’s proud attitude is conceptualized as an elevated or ‘high’ heart, using spatial height as a metaphor for arrogance.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 48:30",
+    "deliberation": "The verse speaks of Moab’s wrath/insolence and that his boasts are not true. These can be read literally about his behavior and lies; I did not identify a distinct non-literal vehicle or comparison.",
+    "instances": []
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 48:31",
+    "deliberation": "‘I will howl/cry/moan for Moab’ can be taken as literal prophetic lament (either Jeremiah’s or YHWH’s). There is strong emotional language but not a clear metaphor or simile in this line itself.",
+    "instances": []
+  },
+  {
+    "verse": 32,
+    "reference": "Jeremiah 48:32",
+    "deliberation": "This verse personifies ‘vine of Sibmah’ and speaks of its tendrils crossing the sea—imagery for the extensive reach of Moab’s viticulture/trade and the lament over its loss. It forms a single extended metaphor/personification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִבְּכִי יַעְזֵר אֶבְכֶּה־לָּךְ הַגֶּפֶן שִׂבְמָה נְטִישֹׁתַיִךְ עָבְרוּ יָם עַד־יָם יַעְזֵר נָגָעוּ עַל־קֵיצֵךְ וְעַל־בְּצִירֵךְ שֹׁדֵד נָפָל",
+        "english_text": "With greater weeping than for Jazer I weep for you, O vine of Sibmah, whose tendrils crossed the sea, reached to the sea, to Jazer. A ravager has come down upon your fig and grape harvests.",
+        "target": ["Sibmah/Moab’s wine industry and its economic reach", "agricultural prosperity and trade", "economic-agricultural domain"],
+        "vehicle": ["a luxuriant vine with far-reaching tendrils crossing the sea", "fruitful plant with worldwide spread", "botanical domain"],
+        "ground": ["wide extension, richness, and vulnerability to being cut down", "economic reach and productivity like sprawling tendrils", "prosperity-and-loss domain"],
+        "posture": ["lament over the loss of Moab’s luxuriant prosperity", "mournful stance", "prophetic-lament domain"],
+        "explanation": "The ‘vine of Sibmah’ is personified and its tendrils are said to cross the sea, picturing the far-reaching prosperity and trade of Moab’s vineyards now devastated by a destroyer.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 33,
+    "reference": "Jeremiah 48:33",
+    "deliberation": "‘Joy and gladness are gathered from the vineyard/land’ uses removal verbs normally for people and applies them to emotions, and ‘the shout is no shout’ is rhetorical. I treat the personified removal of joy as the main figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנֶאֶסְפָה שִׂמְחָה וָגִיל מִכַּרְמֶל וּמֵאֶרֶץ מוֹאָב",
+        "english_text": "Rejoicing and gladness are gone from the farmland, from the country of Moab",
+        "target": ["the experience of joy in Moab’s agricultural life", "emotional climate of the land", "emotional/social domain"],
+        "vehicle": ["joy and gladness as entities that can be ‘gathered up’/removed", "mobile persons or items", "human/social domain"],
+        "ground": ["loss of festivity and celebration that once accompanied harvest", "complete absence of former positive emotions", "desolation-of-joy domain"],
+        "posture": ["sorrowful depiction of the depth of devastation", "lamenting stance", "prophetic-lament domain"],
+        "explanation": "Joy and gladness are treated like beings that can be taken away from the land, personifying these emotions to stress their total disappearance.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 34,
+    "reference": "Jeremiah 48:34",
+    "deliberation": "The place-names frame a geographic sweep of outcry. The phrase ‘the Waters of Nimrim shall become desolations’ treats the waters themselves as transformed into a wasteland, a compact metaphor for dried-up streams.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי גַּם־מֵי נִמְרִים לִמְשַׁמּוֹת יִהְיוּ",
+        "english_text": "For the Waters of Nimrim shall also become desolation",
+        "target": ["the water sources/streams of Nimrim and the life they support", "local environment and sustenance", "environmental domain"],
+        "vehicle": ["‘desolations’, an uninhabited wasteland", "ruined landscape", "geographical-devastation domain"],
+        "ground": ["loss of water leading to barrenness and uninhabitability", "shift from life-giving to lifeless", "ruin/desertification domain"],
+        "posture": ["emphasizing total ecological as well as social ruin", "heightened lament", "prophetic-lament domain"],
+        "explanation": "The waters are said to ‘become desolations’, picturing the drying up of vital streams as if they themselves turned into wasteland.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 35,
+    "reference": "Jeremiah 48:35",
+    "deliberation": "The verse literally states that God will put an end to those who go up to high places and offer incense. These are straightforward cultic actions; I did not discern figurative language here.",
+    "instances": []
+  },
+  {
+    "verse": 36,
+    "reference": "Jeremiah 48:36",
+    "deliberation": "The key figure is the explicit simile ‘my heart moans for Moab like flutes’, repeated for Kir-heres. The heart is personified as producing music-like sounds of lament.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לִבִּי לְמוֹאָב כַּחֲלִילִים יֶהֱמֶה וְלִבִּי אֶל־אַנְשֵׁי קִיר־חֶרֶשׂ כַּחֲלִילִים יֶהֱמֶה",
+        "english_text": "Therefore, My heart moans for Moab like a flute; like a flute my heart moans for the people of Kir-heres",
+        "target": ["the speaker’s (YHWH’s/prophet’s) internal grief over Moab", "emotional response", "psychological/theological domain"],
+        "vehicle": ["the sound of flutes (pipes) used in mourning rites", "musical instrument of lament", "ritual-musical domain"],
+        "ground": ["continuous, wailing, plaintive sound representing deep sorrow", "heartfelt grief expressed as music-like moaning", "lamentation domain"],
+        "posture": ["compassionate lament even in the context of judgment", "complex divine/emotional stance", "theological-lament domain"],
+        "explanation": "The heart is portrayed as moaning in a way likened to the sound of mourning flutes, personifying the inner emotion and comparing it to ritual music.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 37,
+    "reference": "Jeremiah 48:37",
+    "deliberation": "The bald heads, shorn beards, gashes, and sackcloth describe known mourning practices and can be taken literally as predicted behavior; I did not isolate a distinct metaphor beyond that cultural code.",
+    "instances": []
+  },
+  {
+    "verse": 38,
+    "reference": "Jeremiah 48:38",
+    "deliberation": "After literal mourning on the roofs and squares, God says, ‘I have broken Moab like a vessel in which there is no delight’. That is an explicit simile using Moab as a broken, worthless vessel.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־שָׁבַרְתִּי אֶת־מוֹאָב כִּכְלִי אֵין־חֵפֶץ בּוֹ",
+        "english_text": "For I have broken Moab like a vessel no one wants",
+        "target": ["Moab’s national existence and value among nations", "corporate entity", "socio-political domain"],
+        "vehicle": ["a useless vessel thrown away because no one desires it", "discarded pottery", "household-object domain"],
+        "ground": ["complete breakage and worthlessness, discarded by its owner", "loss of function and desirability", "rejection/destruction domain"],
+        "posture": ["assertion of deliberate divine judgment", "declarative stance", "theological-judicial domain"],
+        "explanation": "Moab is compared to a broken, unwanted vessel, emphasizing both its total ruin and the fact that no one values or wants it anymore.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 39,
+    "reference": "Jeremiah 48:39",
+    "deliberation": "‘Moab will be a laughingstock and a horror’ assigns to Moab a metaphorical status as something people mock and are appalled at; this echoes earlier ridicule imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָה מוֹאָב לִשְׂחֹק וְלִמְחִתָּה לְכָל־סְבִיבָיו",
+        "english_text": "Moab shall be a laughingstock and a shock to all those near him",
+        "target": ["Moab’s standing among neighboring peoples", "international reputation", "social-perception domain"],
+        "vehicle": ["an object of laughter and terror", "spectacle people deride and are appalled at", "emotional-response domain"],
+        "ground": ["people respond to Moab with both ridicule and horrified astonishment", "Moab’s fall becomes a warning example", "shame-and-warning domain"],
+        "posture": ["prophetic portrayal of Moab as cautionary example", "didactic-judgment stance", "theological-ethical domain"],
+        "explanation": "Moab is said to ‘be’ a laughingstock and a horror, characterizing its new identity as something people both mock and fear as a warning.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 40,
+    "reference": "Jeremiah 48:40",
+    "deliberation": "I identified an explicit simile: the attacker is likened to an eagle that swoops and spreads wings over Moab, a common biblical image for swift, overpowering invasion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה כַנֶּשֶׁר יִדְאֶה וּפָרַשׂ כְּנָפָיו אֶל־מוֹאָב",
+        "english_text": "See, he soars like an eagle and spreads out his wings against Moab!",
+        "target": ["the invading power that attacks Moab", "military aggressor", "political-military domain"],
+        "vehicle": ["a soaring eagle spreading its wings over prey/territory", "predatory bird", "animal-predation domain"],
+        "ground": ["speed, height, dominance from above, inescapable strike", "overwhelming, swift attack", "warfare-as-predation domain"],
+        "posture": ["warning of the unstoppable nature of the invader", "threatening stance", "judgment-proclamation domain"],
+        "explanation": "The invader is compared to an eagle swooping down and spreading its wings over Moab, symbolizing swift and dominating conquest.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 41,
+    "reference": "Jeremiah 48:41",
+    "deliberation": "After literal city capture, the clause ‘the heart of Moab’s warriors shall be like the heart of a woman in travail’ compares hardened soldiers to a woman in labor, a clear simile for anguish and weakness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָה לֵב גִּבּוֹרֵי מוֹאָב בַּיּוֹם הַהוּא כְּלֵב אִשָּׁה מְצֵרָה",
+        "english_text": "the heart of Moab’s warriors shall be like the heart of a woman in travail",
+        "target": ["the inner courage and emotional state of Moab’s warriors", "emotional strength/fear", "psychological domain"],
+        "vehicle": ["the heart of a woman in labor", "woman in acute birth pains", "human-suffering domain"],
+        "ground": ["intense pain, fear, and vulnerability", "collapse of composure and courage under pressure", "anguish/terror domain"],
+        "posture": ["humiliating reversal of expected masculine bravery", "judgmental stance", "theological-judicial domain"],
+        "explanation": "The warriors’ hearts are likened to a woman in labor, underscoring their extreme anguish and loss of courage in the day of judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 42,
+    "reference": "Jeremiah 48:42",
+    "deliberation": "Moab’s being ‘destroyed from being a people’ is literal language of national extinction. The phrase ‘he magnified himself against the LORD’ uses ‘magnified’ metaphorically for arrogance/exaltation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possible",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי עַל־יְהוָה הִגְדִּיל",
+        "english_text": "For he magnified himself against the LORD",
+        "target": ["Moab’s attitude and actions in relation to God", "arrogant behavior", "theological-ethical domain"],
+        "vehicle": ["becoming ‘great’ or enlarged in size/status", "magnification/exaltation", "spatial-size/status domain"],
+        "ground": ["self-exaltation as if increasing one’s greatness over proper bounds", "arrogance that challenges God’s supremacy", "pride/rebellion domain"],
+        "posture": ["divine condemnation of Moab’s overreaching pride", "judgmental stance", "theological-judicial domain"],
+        "explanation": "Moab is said to ‘magnify himself’ against God, using physical enlargement as a metaphor for arrogant self-exaltation.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 43,
+    "reference": "Jeremiah 48:43",
+    "deliberation": "The triad ‘terror, pit, and snare’ are listed as coming upon Moab; they are literal dangers but also prepare for the extended trap metaphor in the next verse. Here the line can still be read as a list of calamities, so I assign no separate figure.",
+    "instances": []
+  },
+  {
+    "verse": 44,
+    "reference": "Jeremiah 48:44",
+    "deliberation": "This verse develops a vivid hunting/trap metaphor: fleeing from ‘terror’ leads into a ‘pit’, and climbing out leads into a ‘snare’. It depicts inescapable judgment in terms of physical traps.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַנָּס מִפְּנֵי הַפַּחַד יִפֹּל אֶל־הַפַּחַת וְהָעֹלֶה מִן־הַפַּחַת יִלָּכֵד בַּפָּח",
+        "english_text": "He who flees from the terror shall fall into the pit; and he who climbs out of the pit shall be caught in the trap",
+        "target": ["those in Moab trying to escape God’s judgment", "human agents under wrath", "theological-judicial domain"],
+        "vehicle": ["prey fleeing but falling into pits and snares", "animals caught in traps", "hunting domain"],
+        "ground": ["every attempt to escape leads into another danger; inevitability of capture", "inescapable, all-encompassing judgment", "doom/inescapability domain"],
+        "posture": ["emphatic portrayal of the certainty of divine punishment", "threatening stance", "theological-judicial domain"],
+        "explanation": "Attempts to escape judgment are portrayed as an animal fleeing one danger only to fall into pits and snares, emphasizing the inescapability of God’s ‘year of punishment’.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 45,
+    "reference": "Jeremiah 48:45",
+    "deliberation": "I found (1) ‘fire went forth from Heshbon, flame from Sihon’—warfare as consuming fire—and (2) ‘it devoured the brow/crown of Moab’—Moab’s frontier and leaders as body/head imagery. These are two related but distinct metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־אֵשׁ יָצָא מֵחֶשְׁבּוֹן וְלֶהָבָה מִבֵּין סִיחוֹן",
+        "english_text": "For fire went forth from Heshbon, flame from the midst of Sihon",
+        "target": ["the destructive military force originating from Heshbon/Sihon", "warfare against Moab", "military domain"],
+        "vehicle": ["fire and flame spreading outward", "conflagration", "natural-force domain"],
+        "ground": ["rapid, consuming, uncontrollable destructive power", "war sweeping out like fire from a city", "devastation domain"],
+        "posture": ["poetic evocation of traditional taunt-song imagery", "literary-prophetic stance", "intertextual-taunt domain"],
+        "explanation": "The military aggression emanating from Heshbon/Sihon is portrayed as ‘fire’ and ‘flame’, stressing its destructive, spreading power.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתֹּאכַל פְּאַת מוֹאָב וְקָדְקֹד בְּנֵי שָׁאוֹן",
+        "english_text": "and it consumed the brow of Moab, the pate of the people of Shaon",
+        "target": ["Moab’s borderlands and leading classes", "territorial extremities and elites", "socio-political/territorial domain"],
+        "vehicle": ["‘brow’/‘corner’ and ‘crown of the head’ being eaten by fire", "body parts consumed", "human-body/consumption domain"],
+        "ground": ["top and edge stand for the foremost and most prominent; being ‘eaten’ signifies total destruction", "decapitation imagery for loss of leadership and frontier", "comprehensive-destruction domain"],
+        "posture": ["emphasizing the total reach of the judgment", "heightened, poetic stance", "prophetic-taunt domain"],
+        "explanation": "Moab’s ‘brow’ and ‘crown’—its frontier and chief people—are depicted as being consumed, using bodily head imagery for the destruction of its extremities and elites.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 46,
+    "reference": "Jeremiah 48:46",
+    "deliberation": "The verse laments Moab and says ‘the people of Chemosh are undone’, which literally refers to Moab as defined by its god. The captivity and exile of sons and daughters are concrete; no clear metaphor is introduced here beyond that national-theological label.",
+    "instances": []
+  },
+  {
+    "verse": 47,
+    "reference": "Jeremiah 48:47",
+    "deliberation": "The idiom ‘restore the fortunes’ / ‘turn the captivity’ (שָׁבַתִּי שְׁבוּת) is a standard metaphor for radically reversing a people’s situation. It is not literal physical turning but figurative for comprehensive restoration.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשַׁבְתִּי שְׁבוּת־מוֹאָב",
+        "english_text": "But I will restore the fortunes of Moab",
+        "target": ["Moab’s future condition after judgment", "national situation/status", "socio-political domain"],
+        "vehicle": ["‘turning back’ captivity/fortune as if it were a physical object moved back", "reversal of a prior state", "spatial-movement domain"],
+        "ground": ["comprehensive reversal from calamity to well-being", "change of circumstances likened to turning something around", "restoration domain"],
+        "posture": ["promise of eventual mercy following judgment", "restorative stance", "theological-redemptive domain"],
+        "explanation": "‘Restore the fortunes’ (literally ‘turn the captivity’) is an idiomatic metaphor for reversing a people’s disastrous condition and bringing them back to favor.",
+        "confidence": 0.93
+      }
+    ]
+  }
+]

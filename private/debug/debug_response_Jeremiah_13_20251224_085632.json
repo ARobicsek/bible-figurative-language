@@ -1,0 +1,862 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 13:1",
+    "deliberation": "This verse narrates a divine command to buy and wear a linen loincloth and not bring it into water. It sets up a symbolic sign-act, but within this verse the language itself is straightforward and literal; no explicit comparison, personification, or idiomatic expression beyond normal command language.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 13:2",
+    "deliberation": "This verse simply describes Jeremiah's literal obedience to the command about the loincloth. Although the act is symbolic in the chapter's larger structure, the wording here is narrative and non-figurative.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 13:3",
+    "deliberation": "The formula 'the word of YHWH came to me' is a standard prophetic expression. It could be analyzed as a mild personification of 'word', but in biblical Hebrew it functions as a fixed formula for revelation, not as a fresh figurative image in this context.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 13:4",
+    "deliberation": "The verse commands Jeremiah to take the loincloth to Perath and hide it in a rock crevice. Though the act is symbolic in the larger sign-act, the wording itself is descriptive and concrete, with no explicit figurative comparison in this verse alone.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 13:5",
+    "deliberation": "Jeremiah literally goes and buries the loincloth as commanded. The language is straightforward narrative; the symbolic significance will be unpacked later, not here.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 13:6",
+    "deliberation": "This verse narrates a time interval and a renewed command to retrieve the loincloth. The language is purely temporal and directive, without figurative devices.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 13:7",
+    "deliberation": "Jeremiah finds the loincloth ruined and 'not good for anything'. The sign-act is symbolic, but within this verse the main possible figurative element is the idiomatic hyperbolic phrase 'not good for anything,' which overstates total uselessness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא יִצְלַח לַכֹּל",
+        "english_text": "it was not good for anything",
+        "target": [
+          "the ruined loincloth's practical value",
+          "usefulness or fitness for purpose",
+          "everyday objects"
+        ],
+        "vehicle": [
+          "absolute lack of suitability for any task",
+          "total failure category",
+          "evaluative language"
+        ],
+        "ground": [
+          "severe deterioration making it effectively useless",
+          "degree of damage vs. utility",
+          "assessment of function"
+        ],
+        "posture": [
+          "rhetorical overstatement to stress the cloth's ruined state",
+          "emphatic description",
+          "narrative evaluation"
+        ],
+        "explanation": "The phrase 'not good for anything' is a conventional hyperbolic idiom expressing extreme uselessness, not a literal inventory of every conceivable use.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 13:8",
+    "deliberation": "Again the standard prophetic formula 'the word of YHWH came to me' appears. As in v.3, it functions as a technical expression for revelation rather than a fresh personification.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 13:9",
+    "deliberation": "Here God applies the ruined-linen imagery, declaring he will 'ruin the pride of Judah and the great pride of Jerusalem.' The verb 'ruin/destroy' applied to an abstract 'pride' creates a conceptual metaphor of humbling as destroying something concrete and lofty.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כָּכָה אַשְׁחִית אֶת־גְּאוֹן יְהוּדָה וְאֶת־גְּאוֹן יְרוּשָׁלִַם הָרָב",
+        "english_text": "Even so will I ruin the overweening pride of Judah and Jerusalem.",
+        "target": [
+          "Judah and Jerusalem as proud communities",
+          "national status and self-exaltation",
+          "political-spiritual condition"
+        ],
+        "vehicle": [
+          "a lofty, concrete thing being ruined or destroyed",
+          "demolition of a high structure or ornament",
+          "physical collapse"
+        ],
+        "ground": [
+          "removal of exaltation, bringing low what is high",
+          "loss of elevated status and security",
+          "humiliation/judgment"
+        ],
+        "posture": [
+          "divine threat to humble their arrogant self-image",
+          "judicial perspective",
+          "theological judgment"
+        ],
+        "explanation": "Abstract 'pride' is treated as a concrete, lofty thing that can be 'ruined'; it also stands metonymically for the proud people and their exalted status, expressing God's intention to humble them.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 13:10",
+    "deliberation": "This verse contains multiple figures: (1) 'walking in the stubbornness of their heart' uses a journey metaphor for conduct directed by inner willfulness; (2) 'going after' other gods extends the path metaphor; (3) they 'shall be like this loincloth which is good for nothing,' an explicit simile comparing the people to the ruined garment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַהֹלְכִים בִּשְׁרִרוּת לִבָּם",
+        "english_text": "who follow (lit. walk in) the willfulness of their own hearts",
+        "target": [
+          "the people's persistent disobedient behavior",
+          "moral and spiritual conduct",
+          "human life-course"
+        ],
+        "vehicle": [
+          "walking along a chosen path",
+          "journey or travel behavior",
+          "physical movement through space"
+        ],
+        "ground": [
+          "a continuous course directed by an internal guide",
+          "self-chosen direction and persistence",
+          "orientation/trajectory of life"
+        ],
+        "posture": [
+          "prophetic critique of their self-directed life apart from God",
+          "moral evaluation",
+          "theological judgment"
+        ],
+        "explanation": "The verb 'walk' with 'stubbornness of heart' metaphorically portrays their lifestyle as a path dictated by inner obstinacy, a conventional biblical idiom for conduct.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וִיהִי כָּאֵזוֹר הַזֶּה אֲשֶׁר לֹא־יִצְלַח לַכֹּל",
+        "english_text": "shall become like that loincloth, which is not good for anything",
+        "target": [
+          "this wicked people who refuse to heed God's words",
+          "covenant community of Judah/Israel",
+          "human collective"
+        ],
+        "vehicle": [
+          "the ruined linen loincloth",
+          "worthless garment",
+          "inanimate object"
+        ],
+        "ground": [
+          "useless for its intended purpose and fit only for rejection",
+          "loss of honor and function",
+          "disqualification from service"
+        ],
+        "posture": [
+          "God's evaluation of the people's covenant failure",
+          "judicial perspective",
+          "theological judgment"
+        ],
+        "explanation": "The explicit 'like' (כָּאֵזוֹר) creates a simile: the people will resemble the rotted loincloth in being utterly unfit for their intended role; 'not good for anything' adds hyperbolic idiom to stress their uselessness.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 13:11",
+    "deliberation": "This verse explains the sign-act with an explicit comparison: as a loincloth clings to a man's loins, so God caused Israel and Judah to cling to him. That is a clear simile grounding the larger metaphor of covenant intimacy and honor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי כַּאֲשֶׁר יִדְבַּק הָאֵזוֹר אֶל־מׇתְנֵי־אִישׁ כֵּן הִדְבַּקְתִּי אֵלַי אֶת־כׇּל־בֵּית יִשְׂרָאֵל וְאֶת־כׇּל־בֵּית יְהוּדָה",
+        "english_text": "For as a loincloth clings close to a man’s loins, so I brought close to Me the whole House of Israel and the whole House of Judah",
+        "target": [
+          "Israel and Judah's covenant relationship to God",
+          "covenant people",
+          "human-divine relationship"
+        ],
+        "vehicle": [
+          "a loincloth clinging to a man's loins",
+          "close-fitting garment",
+          "material object attached to body"
+        ],
+        "ground": [
+          "intimate proximity, constant attachment, and visibility",
+          "belonging and identification",
+          "honor/status associated with nearness"
+        ],
+        "posture": [
+          "divine self-description of how closely he joined Israel to himself",
+          "covenantal perspective",
+          "theological explanation"
+        ],
+        "explanation": "The verse uses an explicit simile ('as...so') in which Israel's intended intimate, honoring attachment to God is likened to a loincloth's tight, visible adherence to a man's body, forming the heart of the sign-act's metaphor.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 13:12",
+    "deliberation": "This verse introduces the saying about every jar being filled with wine and anticipates the people's literal-minded response. Within this verse itself, 'jar' and 'wine' are used in their ordinary senses; the figurative application (drunkenness as judgment) appears in the next verse.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 13:13",
+    "deliberation": "Here God interprets the jar-wine image by saying he will 'fill' all inhabitants, kings, priests, and prophets with 'drunkenness.' This extends the jar metaphor to people and uses 'drunkenness' metaphorically for disorientation, judgment, and self-destructive behavior.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנְנִי מְמַלֵּא אֶת־כׇּל־יֹשְׁבֵי הָאָרֶץ הַזֹּאת ... שִׁכָּרוֹן",
+        "english_text": "I am going to fill with drunkenness all the inhabitants of this land, and the kings ... and the priests and the prophets, and all the inhabitants of Jerusalem.",
+        "target": [
+          "all strata of Judah's population",
+          "national leadership and populace",
+          "human society"
+        ],
+        "vehicle": [
+          "drunkenness filling a person like wine in a jar",
+          "state of intoxication and loss of control",
+          "physical impairment by alcohol"
+        ],
+        "ground": [
+          "confusion, staggering, inability to act wisely, leading to harm",
+          "moral/spiritual disorientation",
+          "experience of divine judgment"
+        ],
+        "posture": [
+          "threat that God will plunge society into a state of self-destructive confusion",
+          "judgment oracle",
+          "theological warning"
+        ],
+        "explanation": "People are implicitly likened to jars being filled, and 'drunkenness' functions metaphorically for a divinely imposed, all-encompassing confusion and self-destructive state; 'all the inhabitants' is hyperbolic for comprehensive scope.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 13:14",
+    "deliberation": "Linking back to the jar imagery, God says he will 'smash them one against another.' The violent verb commonly used for shattering pottery is applied to people, metaphorically picturing their mutual destruction under judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנִפַּצְתִּים אִישׁ אֶל־אָחִיו ... לֹא־אֶחְמֹל ... מֵהַשְׁחִיתָם",
+        "english_text": "And I will smash them one against the other, parents and children alike ... from destroying them.",
+        "target": [
+          "the people of Judah (parents and children)",
+          "covenant community under judgment",
+          "human society"
+        ],
+        "vehicle": [
+          "pottery vessels being smashed against each other",
+          "violent shattering of brittle objects",
+          "inanimate breakable items"
+        ],
+        "ground": [
+          "complete and painful destruction, with pieces breaking apart",
+          "vulnerability to violent impact",
+          "irreversible ruin"
+        ],
+        "posture": [
+          "God portrays the coming judgment as catastrophic, mutual collision and destruction",
+          "judicial threat",
+          "theological warning"
+        ],
+        "explanation": "The verb 'smash' evokes the image of jars colliding and shattering, applied metaphorically to people to emphasize the severity and completeness of the coming destruction.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 13:15",
+    "deliberation": "The verse commands, 'Listen and give ear; do not be haughty (lit. do not be high), for YHWH has spoken.' The key figurative element is the height metaphor for pride—being 'high' as a figure for arrogance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַל־תִּגְבָּהוּ",
+        "english_text": "be not haughty (lit. do not be high)",
+        "target": [
+          "the people's arrogant attitude",
+          "inner disposition of pride",
+          "human character"
+        ],
+        "vehicle": [
+          "being physically high or elevated",
+          "vertical height",
+          "spatial position"
+        ],
+        "ground": [
+          "elevation suggesting superiority over others",
+          "looking down from above",
+          "self-exaltation"
+        ],
+        "posture": [
+          "prophetic call to abandon self-exaltation in response to God's word",
+          "moral exhortation",
+          "theological admonition"
+        ],
+        "explanation": "The verb for being 'high' is used metaphorically and idiomatically for being proud or haughty, drawing on the conceptual metaphor 'high = exalted/important.'",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 13:16",
+    "deliberation": "This verse weaves an extended metaphor: 'Give glory to YHWH your God before he causes darkness, before your feet stumble on the mountains of dusk; you hope for light, but he turns it to shadow of death and deep gloom.' One figure is the idiom 'give glory' for acknowledging God; another is the light/dark and stumbling imagery for the transition from security to judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "תְּנוּ לַיהוָה אֱלֹהֵיכֶם כָּבוֹד",
+        "english_text": "Give honor (glory) to the ETERNAL your God",
+        "target": [
+          "public acknowledgment and proper response to God",
+          "worshipful attitude and obedience",
+          "human religious behavior"
+        ],
+        "vehicle": [
+          "bestowing weighty honor or glory upon a superior",
+          "tribute or recognition",
+          "social valuation"
+        ],
+        "ground": [
+          "treating someone as weighty/important by appropriate response",
+          "recognition of status",
+          "respect and deference"
+        ],
+        "posture": [
+          "urgent call for repentance and acknowledgement of God's sovereignty",
+          "cultic/theological exhortation",
+          "covenantal appeal"
+        ],
+        "explanation": "The idiom 'give glory to YHWH' uses the language of conferring honor or weight to depict repentance and proper acknowledgment of God.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּטֶרֶם יַחְשִׁךְ וּבְטֶרֶם יִתְנַגְּפוּ רַגְלֵיכֶם עַל־הָרֵי נָשֶׁף ... וְקִוִּיתֶם לְאוֹר וְשָׂמָהּ לְצַלְמָוֶת וְשִׁית לַעֲרָפֶל",
+        "english_text": "Before darkness descends, before your feet stumble on the mountains in shadow—when you hope for light, and it is turned to darkness and becomes deep gloom.",
+        "target": [
+          "the people's impending experience of judgment and disaster",
+          "national destiny",
+          "historical-theological situation"
+        ],
+        "vehicle": [
+          "darkness, mountains of dusk, stumbling feet, loss of light, deep gloom",
+          "dangerous night travel imagery",
+          "physical environment and movement"
+        ],
+        "ground": [
+          "transition from safety and clarity to danger, confusion, and harm",
+          "inability to see or navigate leading to stumbling",
+          "reversal of hopeful expectation into peril"
+        ],
+        "posture": [
+          "warning that if they do not repent, their situation will move from apparent safety to catastrophic judgment",
+          "prophetic foresight",
+          "theological interpretation of coming events"
+        ],
+        "explanation": "Darkness, stumbling on twilight mountains, and the turning of hoped-for light into deep gloom form an extended metaphor for the shift from security to devastating judgment and confusion.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 13:17",
+    "deliberation": "The prophet describes his weeping and then calls Israel 'the flock of YHWH' that is taken captive. This is a conventional pastoral metaphor: the people as God's flock.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי נִשְׁבָּה עֵדֶר יְהוָה",
+        "english_text": "Because GOD’s flock is taken captive.",
+        "target": [
+          "the people of Israel/Judah",
+          "covenant community as a whole",
+          "human collective under God"
+        ],
+        "vehicle": [
+          "a flock of sheep belonging to a shepherd",
+          "domesticated herd animals",
+          "pastoral imagery"
+        ],
+        "ground": [
+          "dependency, need for guidance and protection, and vulnerability to enemies",
+          "ownership and care by a shepherd",
+          "corporate movement and fate"
+        ],
+        "posture": [
+          "compassionate grief over God's people as vulnerable dependents being led away",
+          "lament perspective",
+          "theological pathos"
+        ],
+        "explanation": "Calling Israel 'YHWH’s flock' metaphorically depicts them as sheep under divine shepherding, highlighting their vulnerability and belonging as they go into captivity.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 13:18",
+    "deliberation": "The king and queen mother are told to 'sit low' because 'your crown of glory has come down from your heads.' 'Crown' stands metonymically for royal authority, and its descent from the head metaphorically depicts the loss of royal status and honor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי יָרַד מַרְאֲשׁוֹתֵיכֶם עֲטֶרֶת תִּפְאַרְתְּכֶם",
+        "english_text": "For your diadems are abased, your glorious crowns have come down from your heads.",
+        "target": [
+          "the king's and queen mother's royal authority and splendor",
+          "political power and dignity",
+          "monarchy"
+        ],
+        "vehicle": [
+          "a crown physically descending from the head and being lowered",
+          "removal/abasing of headgear",
+          "royal ornament"
+        ],
+        "ground": [
+          "loss of elevated status and public honor",
+          "transition from exaltation to humiliation",
+          "dispossession of office"
+        ],
+        "posture": [
+          "prophetic declaration that their kingship is being stripped away",
+          "judgment perspective",
+          "theological interpretation of political fall"
+        ],
+        "explanation": "The crown represents royal office (metonymy), and its descent from the head metaphorically signifies the loss and humiliation of their kingship.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 13:19",
+    "deliberation": "This verse reports that the cities of the Negeb are shut with no one to open and that Judah is wholly exiled. These are literal siege and exile descriptions; any sense of totality in 'all of it exiled' reflects the historical devastation rather than a crafted hyperbole here.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 13:20",
+    "deliberation": "Jerusalem (or leadership) is asked where 'the flock, the sheep of your glory' are. This again uses the pastoral flock metaphor, with 'flock/sheep' standing for the people entrusted to Jerusalem's care.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַיֵּה הָעֵדֶר נִתַּן־לָךְ צֹאן תִּפְאַרְתֵּךְ",
+        "english_text": "Where are the sheep entrusted to you, the flock you took pride in?",
+        "target": [
+          "the people over whom Jerusalem/the king had responsibility",
+          "subjects or charges of the leadership",
+          "human community"
+        ],
+        "vehicle": [
+          "a flock of beautiful sheep entrusted to a guardian",
+          "domesticated animals under a shepherd",
+          "pastoral imagery"
+        ],
+        "ground": [
+          "responsibility to guard and care for dependents, and pride in their well-being",
+          "loss of those entrusted due to failure",
+          "vulnerability and dependence"
+        ],
+        "posture": [
+          "rebuke directed at Jerusalem/leadership personified as a shepherd who lost the flock",
+          "prophetic interrogation",
+          "theological critique of leadership"
+        ],
+        "explanation": "The people once under Jerusalem's care are metaphorically called 'the flock' and 'sheep of your glory,' personifying the city/leadership as a shepherd whose prized flock has been lost.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 13:21",
+    "deliberation": "The key figurative element is the closing question: 'Will not pangs seize you like a woman in childbirth?' This is a standard prophetic simile for acute, inescapable anguish.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲלֹא חֲבָלִים יֹאחֱזוּךְ כְּמוֹ אֵשֶׁת לֵדָה",
+        "english_text": "Shall not pangs seize you like a woman in childbirth?",
+        "target": [
+          "Jerusalem's impending experience of terror and distress",
+          "national anguish under judgment",
+          "collective emotional/physical suffering"
+        ],
+        "vehicle": [
+          "labor pains seizing a woman in childbirth",
+          "acute physical contractions",
+          "female reproductive experience"
+        ],
+        "ground": [
+          "sudden, intense, inescapable pain leading to a decisive outcome",
+          "helplessness and inevitability",
+          "overwhelming suffering"
+        ],
+        "posture": [
+          "prophetic warning that their chosen alliances will bring unavoidable agony",
+          "rhetorical challenge",
+          "theological interpretation of consequences"
+        ],
+        "explanation": "The simile explicitly compares coming distress to the pains of a woman in labor, highlighting its intensity and inevitability.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 13:22",
+    "deliberation": "The verse explains disaster as a result of sin: 'your skirts are lifted up, your heels exposed/violated.' Jerusalem is implicitly a woman being sexually exposed/abused—a metaphor and personification for the city's shame and vulnerability.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִגְלּוּ שׁוּלַיִךְ נֶחְמְסוּ עֲקֵבָיִךְ",
+        "english_text": "your skirts are lifted up, your limbs/heels exposed.",
+        "target": [
+          "Jerusalem's public humiliation and vulnerability under judgment",
+          "the city's honor and security",
+          "collective social-political state"
+        ],
+        "vehicle": [
+          "a woman's skirts being lifted and her body exposed/violated",
+          "sexual shame and assault imagery",
+          "female body modesty"
+        ],
+        "ground": [
+          "forced exposure leading to shame and dishonor",
+          "loss of protection and control",
+          "public humiliation as consequence"
+        ],
+        "posture": [
+          "God portrays the city's punishment as disgraceful exposure due to its many sins",
+          "judgment proclamation",
+          "theological critique"
+        ],
+        "explanation": "The city is personified as a woman whose clothing is lifted, exposing her body, a metaphor for Jerusalem's forced humiliation and loss of dignity because of her great iniquity.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 13:23",
+    "deliberation": "Two rhetorical questions—can a Cushite change his skin or a leopard its spots?—set up an analogy: just as these changes are impossible, so those accustomed to evil cannot suddenly do good. This functions as an implicit simile/metaphor for moral ingraining.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲיַהֲפֹךְ כּוּשִׁי עוֹרוֹ וְנָמֵר חֲבַרְבֻּרֹתָיו גַּם־אַתֶּם תּוּכְלוּ לְהֵיטִיב לִמֻּדֵי הָרֵעַ",
+        "english_text": "Can the Cushites change their skin, or leopards their spots? Just as much can you do good, who are practiced in doing evil!",
+        "target": [
+          "the moral character and ingrained habits of Judah's people",
+          "habitual evildoers",
+          "human moral disposition"
+        ],
+        "vehicle": [
+          "unchangeable skin color of a Cushite and spots of a leopard",
+          "inherent physical characteristics of humans and animals",
+          "natural, fixed traits"
+        ],
+        "ground": [
+          "difficulty/impossibility of changing something deeply inherent",
+          "fixedness developed over time",
+          "continuity between nature and behavior"
+        ],
+        "posture": [
+          "pessimistic assessment of their capacity to reform due to entrenched evil habits",
+          "prophetic indictment",
+          "theological anthropology"
+        ],
+        "explanation": "The parallel rhetorical questions create an implicit 'as...so' structure: as changing skin or spots is impossible, so those trained in evil cannot simply do good; this is both metaphor and functional simile for moral entrenchedness.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 13:24",
+    "deliberation": "God says he will scatter them 'like chaff driven by the desert wind.' This is a clear simile, comparing the people's dispersion to light straw blown away.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַאֲפִיצֵם כְּקַשׁ־עוֹבֵר לְרוּחַ מִדְבָּר",
+        "english_text": "So I will scatter you like straw that flies before the desert wind.",
+        "target": [
+          "the exiling and dispersal of Judah's people",
+          "national dispersion",
+          "historical fate of the community"
+        ],
+        "vehicle": [
+          "chaff/straw blown by a desert wind",
+          "light agricultural refuse in a storm",
+          "natural phenomenon"
+        ],
+        "ground": [
+          "ease with which something light is carried away uncontrollably",
+          "lack of rootedness and direction",
+          "powerlessness before a stronger force"
+        ],
+        "posture": [
+          "depiction of divine judgment as effortless, uncontrollable scattering",
+          "prophetic threat",
+          "theological portrayal of exile"
+        ],
+        "explanation": "The simile likens Judah's coming dispersion to chaff driven by desert wind, emphasizing their powerlessness and the thoroughness of their scattering.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 13:25",
+    "deliberation": "God declares, 'This is your lot, the portion of your measures, from me.' The imagery of 'lot' and 'portion' comes from allotted territory or share, used metaphorically for one's divinely assigned fate.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "זֶה גוֹרָלֵךְ מְנָת־מִדַּיִךְ מֵאִתִּי",
+        "english_text": "This shall be your lot, your measured portion from Me",
+        "target": [
+          "Jerusalem's destined experience of judgment",
+          "assigned fate of the people",
+          "historical-theological outcome"
+        ],
+        "vehicle": [
+          "an allotted lot or measured share given by an authority",
+          "inheritance/apportioned territory",
+          "distribution of property"
+        ],
+        "ground": [
+          "receiving a determined share that one must accept",
+          "unavoidable allocation from a superior",
+          "fixed destiny"
+        ],
+        "posture": [
+          "assertion that their disastrous fate is God's just allocation in response to their trust in falsehood",
+          "judicial pronouncement",
+          "theological explanation of destiny"
+        ],
+        "explanation": "Language of 'lot' and 'measured portion' derived from inheritance and land division is applied metaphorically to the calamity assigned to them by God as their due share.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 13:26",
+    "deliberation": "God says, 'I in turn will lift your skirts over your face and your shame shall be seen.' As in v.22, Jerusalem is personified as a woman whose garments are lifted for public exposure—a metaphor for disgrace and judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְגַם־אֲנִי חָשַׂפְתִּי שׁוּלַיִךְ עַל־פָּנָיִךְ וְנִרְאָה קְלוֹנֵךְ",
+        "english_text": "I in turn will lift your skirts over your face and your shame shall be seen.",
+        "target": [
+          "Jerusalem's public humiliation and exposure of guilt",
+          "honor and moral standing of the city",
+          "collective reputation"
+        ],
+        "vehicle": [
+          "a woman's skirts being lifted over her face, exposing her nakedness",
+          "sexualized public stripping",
+          "female body and clothing"
+        ],
+        "ground": [
+          "forcible exposure leading to shame before onlookers",
+          "removal of covering that once concealed dishonor",
+          "retributive humiliation"
+        ],
+        "posture": [
+          "God depicts his judgment as exposing Jerusalem's hidden shame to all",
+          "judicial retribution",
+          "theological unveiling of sin"
+        ],
+        "explanation": "Jerusalem is personified as a woman whose skirts are lifted over her face, a vivid metaphor for God exposing the city's disgrace as punishment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 13:27",
+    "deliberation": "The verse piles up sexual imagery—'your adulteries,' 'lustful neighings,' 'lewd whoredom,' 'your abominations'—to describe Jerusalem's idolatry. Jerusalem is personified as an unfaithful wife/prostitute, and the term 'neighings' adds an animalistic lust image, all within one extended metaphor of spiritual infidelity as sexual immorality.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִאֻפַיִךְ וּמִצְהֲלוֹתַיִךְ זִמַּת זְנוּתֵךְ עַל־גְּבָעוֹת בַּשָּׂדֶה רָאִיתִי שִׁקּוּצָיִךְ",
+        "english_text": "I behold your adulteries, your lustful neighing, your unbridled depravity, your vile acts on the hills of the countryside.",
+        "target": [
+          "Jerusalem's idolatrous practices and covenant unfaithfulness",
+          "religious and moral betrayal",
+          "corporate spiritual behavior"
+        ],
+        "vehicle": [
+          "adultery, prostitution, and animal-like lustful neighing",
+          "sexual immorality and shameless promiscuity",
+          "marital and animal behavior"
+        ],
+        "ground": [
+          "unfaithfulness to an exclusive bond, uncontrolled desire, and public shame",
+          "breaking of covenantal fidelity",
+          "disgust and defilement"
+        ],
+        "posture": [
+          "God denounces idolatry as marital infidelity and bestial lust, expressing moral revulsion",
+          "prophetic condemnation",
+          "theological portrayal of sin"
+        ],
+        "explanation": "Jerusalem is personified as an adulterous, prostituting woman whose lust is likened to neighing animals; this complex sexual metaphor portrays idolatry and moral depravity as outrageous unfaithfulness to God.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

@@ -1,0 +1,951 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 44:1",
+    "deliberation": "Examined spatial terms (outer gate, facing east, shut) and narrative verb 'he led me back'. All elements describe architecture and movement in the vision without using them to stand for something else linguistically. No metaphors, idioms, or personification detected; the verse is straightforwardly descriptive.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 44:2",
+    "deliberation": "Considered whether the permanently shut gate functions as a metaphor or symbolic sign; in context, the explanation is given literally within the visionary temple regulations, with no figurative phrasing (no 'like/as', no non‑literal verbs). The gate's symbolic function in the larger theology does not make the sentence linguistically figurative. No idiom or personification in the Hebrew wording.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 44:3",
+    "deliberation": "Looked at 'eat bread before YHWH' and the prince 'sitting in the gate'. The sitting is literal: an authorized space. The phrase 'eat bread before YHWH' is a cultic idiom and uses 'bread' metonymically for a fellowship meal/food in God's presence, signifying covenant fellowship and favor. That counts as figurative (idiom + metonymy).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לֶאֱכׇל־לֶחֶם לִפְנֵי יְהוָה",
+        "english_text": "to eat bread before GOD",
+        "target": [
+          "the prince’s privileged fellowship and access to God in worship",
+          "cultic status / covenant relationship",
+          "divine–human relations in temple worship"
+        ],
+        "vehicle": [
+          "eating bread in God’s presence",
+          "sharing a meal at a superior’s table",
+          "ancient Near Eastern hospitality and patronage"
+        ],
+        "ground": [
+          "sharing food signifies intimacy and favor with a superior",
+          "those who dine before a king enjoy special honor and access",
+          "social meal imagery naturally conveys covenant fellowship"
+        ],
+        "posture": [
+          "approving presentation of the prince’s limited but honored role",
+          "norm‑setting legal stance about proper access",
+          "reverent framing of worship as table‑fellowship with God"
+        ],
+        "explanation": "The phrase is a cultic idiom where 'bread' stands metonymically for sacrificial food and fellowship, so 'eating bread before YHWH' expresses honored, intimate access to God rather than merely physical eating.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 44:4",
+    "deliberation": "Considered 'the glory of YHWH filled the house' and Ezekiel falling on his face. Falling is a literal gesture of reverence. 'Glory filled the house' uses spatial language for an abstract divine quality, treating kavod as a quasi‑substance that occupies space—this is a conceptual/metaphorical and mildly personifying expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהִנֵּה מָלֵא כְבוֹד־יְהוָה אֶת־בֵּית יְהוָה",
+        "english_text": "lo! the Presence [glory] of GOD filled the Temple of GOD",
+        "target": [
+          "YHWH’s manifest presence in the temple",
+          "divine immanence in a sacred space",
+          "theophany and temple sanctification"
+        ],
+        "vehicle": [
+          "something that 'fills' a house like a substance or light",
+          "spatial fullness/occupation",
+          "physical phenomena that occupy all available space"
+        ],
+        "ground": [
+          "the presence is overwhelming and total, leaving no part empty",
+          "a filled space suggests control and consecration",
+          "people experience divine glory as all‑encompassing like a flood or light"
+        ],
+        "posture": [
+          "awe and reverence toward the divine presence",
+          "validation of the temple by depicting it as wholly occupied by God",
+          "prophetic endorsement of the new sanctuary’s holiness"
+        ],
+        "explanation": "The abstract 'glory of YHWH' is depicted as physically 'filling' the temple, personifying and metaphorically objectifying God’s presence as a substance saturating the building.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 44:5",
+    "deliberation": "Checked vocative 'son of man' and 'set your heart', plus the intensifying clauses 'see with your eyes, hear with your ears'. The last are literal emphatic commands. 'Son of man' is an idiomatic way to say 'human being/mortal.' 'Set your heart' is a metaphorical idiom for concentrating one’s inner faculties. Both are distinct figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal (son of man)",
+        "target": [
+          "Ezekiel’s status as a mere human before God",
+          "humanity/mortality",
+          "anthropology in relation to divine transcendence"
+        ],
+        "vehicle": [
+          "a 'son of man' (offspring of humankind)",
+          "genealogical/kinship description",
+          "family lineage terminology"
+        ],
+        "ground": [
+          "being born of human stock emphasizes finitude and weakness",
+          "contrasts the prophet sharply with the divine speaker",
+          "highlights dependence and limited authority"
+        ],
+        "posture": [
+          "humbling address from God to the prophet",
+          "didactic tone emphasizing the gap between God and human",
+          "authoritative framing of the ensuing instructions"
+        ],
+        "explanation": "The phrase 'son of man' is a fixed idiom for 'human/mortal,' foregrounding Ezekiel’s frailty in contrast to God’s authority.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שִׂים לִבְּךָ",
+        "english_text": "mark well (set your heart)",
+        "target": [
+          "Ezekiel’s act of focused attention and understanding",
+          "cognitive concentration",
+          "human inner life (mind/will)"
+        ],
+        "vehicle": [
+          "placing the 'heart' onto something",
+          "physical positioning of an internal organ",
+          "spatial orientation/placement"
+        ],
+        "ground": [
+          "directing the 'heart' pictures focusing one’s whole inner self",
+          "physical placing stands for mental attention",
+          "heart conceived as the seat of thought and will"
+        ],
+        "posture": [
+          "strong exhortation to careful, receptive listening",
+          "pedagogical stance demanding engagement",
+          "preparation for receiving sacred law"
+        ],
+        "explanation": "The idiom 'set your heart' metaphorically depicts mental focus as physically placing the heart on the object of attention.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 44:6",
+    "deliberation": "Considered 'rebellious house of Israel' and 'abominations.' 'Abominations' is a technical moral term here, not figurative. 'House of Israel' uses 'house' for the corporate people; that is a standard metonymy. No similes or metaphors beyond this structural metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יִשְׂרָאֵל",
+        "english_text": "the House of Israel",
+        "target": [
+          "the people/nation of Israel",
+          "corporate community",
+          "covenant people of God"
+        ],
+        "vehicle": [
+          "a 'house' as a single household or dynasty",
+          "architectural/family unit",
+          "domestic and kinship structure"
+        ],
+        "ground": [
+          "a house represents those who live in it or descend from its head",
+          "emphasizes unity and shared fate",
+          "common biblical way to speak of entire peoples or dynasties"
+        ],
+        "posture": [
+          "confrontational address toward the whole community",
+          "emphasis on collective guilt ('rebellious house')",
+          "legal/prophetic indictment of the nation"
+        ],
+        "explanation": "The expression 'house of Israel' uses 'house' metonymically to refer not to a building but to the entire people descended from Israel.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 44:7",
+    "deliberation": "Considered several candidate figures: 'sons of foreigner' (standard ethnic label), 'uncircumcised of heart and flesh', 'my bread—the fat and the blood', and 'broke my covenant.' 'Uncircumcised in flesh' is literal; 'uncircumcised of heart' is a moral/spiritual metaphor. 'My bread' is metonymy for sacrificial food. 'Broke my covenant' conceptualizes covenant violation as breaking a tangible object—a metaphorical idiom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַרְלֵי־לֵב",
+        "english_text": "uncircumcised of spirit/heart",
+        "target": [
+          "the inner moral and spiritual condition of the foreigners (and Israel who allow them)",
+          "spiritual insensitivity and covenant unfaithfulness",
+          "human inner life and responsiveness to God"
+        ],
+        "vehicle": [
+          "an uncircumcised heart",
+          "uncut foreskin on a bodily organ",
+          "ritual body modification in the covenant sign"
+        ],
+        "ground": [
+          "uncircumcision signifies being outside the covenant and insensitive",
+          "an uncut layer of flesh represents a barrier or stubbornness",
+          "links physical covenant sign with inner loyalty"
+        ],
+        "posture": [
+          "strongly negative moral evaluation",
+          "warning about improper access to holiness",
+          "prophetic condemnation of inner resistance to God"
+        ],
+        "explanation": "The 'heart' is described as uncircumcised to picture inner stubbornness and alienation from the covenant, using physical circumcision as a metaphor for spiritual receptivity.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּהַקְרִיבְכֶם אֶת־לַחְמִי חֵלֶב וָדָם",
+        "english_text": "when you offer up My food— the fat and the blood (lit. my bread, fat and blood)",
+        "target": [
+          "the sacrificial offerings owed to God",
+          "cultic provisions due to the deity",
+          "worship service in the sanctuary"
+        ],
+        "vehicle": [
+          "'my bread' consisting of fat and blood",
+          "staple food served at a table",
+          "meals presented to an honored superior"
+        ],
+        "ground": [
+          "offerings are pictured as sustenance presented to God",
+          "bread/food stands for the entire sacrificial fare",
+          "table‑meal language conveys honoring and serving a lord"
+        ],
+        "posture": [
+          "underscores the seriousness of mishandling sacrifices",
+          "reframes offerings as God’s own 'food' being profaned",
+          "intensifies the accusation against Israel’s worship"
+        ],
+        "explanation": "The term 'my bread' is an idiomatic metonymy for the whole range of sacrificial food (fat and blood), portraying offerings as food served to God.",
+        "confidence": 0.87
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיָּפֵרוּ אֶת־בְּרִיתִי",
+        "english_text": "You have broken My covenant",
+        "target": [
+          "Israel’s act of violating God’s covenant obligations",
+          "disobedience to a relational agreement",
+          "covenant relationship between God and people"
+        ],
+        "vehicle": [
+          "breaking a covenant as if it were a physical object",
+          "shattering something solid",
+          "damage to a tangible bond or contract"
+        ],
+        "ground": [
+          "covenant violation is conceptualized as destroying a bond",
+          "breaking something suggests irreparable damage and guilt",
+          "makes an abstract relationship feel concrete and fragile"
+        ],
+        "posture": [
+          "accusatory legal tone",
+          "emphasizes the seriousness of their disloyalty",
+          "frames sin as destructive of a precious bond"
+        ],
+        "explanation": "The abstract act of covenant violation is described through the metaphor of 'breaking' a physical object, a common idiomatic way to express disloyalty.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 44:8",
+    "deliberation": "Examined 'you did not keep the charge of my holy things' and 'you set them to keep the charge of my sanctuary for you.' The core phrase 'keep the charge' (שׁמר משמרת) extends guarding language from physical protection to faithful performance of duties; this is a conventional metaphorical idiom.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא שְׁמַרְתֶּם מִשְׁמֶרֶת קׇדָשָׁי",
+        "english_text": "You have not discharged the duties concerning My sacred offerings (lit. you did not keep the charge of my holy things)",
+        "target": [
+          "Israel’s responsibility to perform and protect sacred service",
+          "faithful execution of priestly/Levitical duties",
+          "cultic obedience to God’s regulations"
+        ],
+        "vehicle": [
+          "keeping/guarding a 'charge'",
+          "watching over something entrusted",
+          "military or custodial guarding"
+        ],
+        "ground": [
+          "just as a guard protects what is entrusted, priests must safeguard and fulfill holy responsibilities",
+          "guarding imagery conveys vigilance and faithfulness",
+          "casts disobedience as dereliction of guard duty"
+        ],
+        "posture": [
+          "rebuking Israel for negligence",
+          "highlighting the gravity of failing in sacred 'guard duty'",
+          "legal indictment framed in custodial terms"
+        ],
+        "explanation": "The idiom 'keep the charge of my holy things' metaphorically uses the idea of guarding something to describe faithful performance of sacred responsibilities.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 44:9",
+    "deliberation": "Considered 'alien, uncircumcised in heart and flesh.' 'Alien' is literal social status; 'uncircumcised in flesh' literal ritual status. 'Uncircumcised in heart' repeats the metaphor from v.7, depicting inner resistance as an uncircumcised organ.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֶרֶל לֵב וְעֶרֶל בָּשָׂר",
+        "english_text": "uncircumcised in spirit and flesh",
+        "target": [
+          "the inner spiritual and moral state of those barred from the sanctuary",
+          "lack of covenant loyalty",
+          "human disposition toward God"
+        ],
+        "vehicle": [
+          "an uncircumcised heart",
+          "uncut foreskin",
+          "physical sign of being outside the covenant"
+        ],
+        "ground": [
+          "just as uncircumcision marks separation from the covenant community, an 'uncircumcised heart' marks inner estrangement",
+          "the remaining 'flesh' suggests stubbornness not removed",
+          "moral dullness likened to unreformed physical condition"
+        ],
+        "posture": [
+          "exclusive, boundary‑drawing stance",
+          "underscores seriousness of inner disposition for access to holiness",
+          "prophetic reinforcement of covenant distinctiveness"
+        ],
+        "explanation": "Describing the heart as uncircumcised metaphorically portrays inner disloyalty and insensitivity to God, using physical ritual language for spiritual reality.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 44:10",
+    "deliberation": "Examined 'who went far from Me', 'when Israel went astray from Me, after their idols', and 'they shall bear their punishment/iniquity.' All three use spatial or physical metaphors: distance for estrangement, wandering from a path for apostasy, and carrying a burden for guilt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַלְוִיִּם אֲשֶׁר רָחֲקוּ מֵעָלַי",
+        "english_text": "the Levites who forsook Me (lit. who went far from Me)",
+        "target": [
+          "the Levites’ religious and moral apostasy",
+          "loss of covenant closeness",
+          "spiritual relationship with God"
+        ],
+        "vehicle": [
+          "being far away in space",
+          "physical distance",
+          "geographical separation"
+        ],
+        "ground": [
+          "physical distance evokes emotional and relational estrangement",
+          "leaving someone’s proximity pictures abandoning relationship",
+          "distance domain maps onto spiritual unfaithfulness"
+        ],
+        "posture": [
+          "judgmental description of their betrayal",
+          "portrays their choice as a deliberate 'moving away' from God",
+          "prepares for the sentence of reduced service"
+        ],
+        "explanation": "Their apostasy is depicted as physically moving far from God, using spatial distance as a metaphor for spiritual estrangement.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בִּתְעוֹת יִשְׂרָאֵל אֲשֶׁר תָּעוּ מֵעָלַי אַחֲרֵי גִּלּוּלֵיהֶם",
+        "english_text": "when Israel went astray—straying from Me to follow their fetishes",
+        "target": [
+          "Israel’s deviation from proper worship of YHWH",
+          "covenant infidelity",
+          "religious allegiance"
+        ],
+        "vehicle": [
+          "wandering off a correct path and going 'after' something",
+          "straying sheep or travelers leaving a road",
+          "movement in the wrong direction"
+        ],
+        "ground": [
+          "apostasy resembles leaving a safe path for a dangerous one",
+          "following idols is like physically trailing after a false leader",
+          "conveys error, danger, and misdirection"
+        ],
+        "posture": [
+          "condemnation of idolatry as foolish misdirection",
+          "warning about consequences of leaving the right 'way'",
+          "reinforces God as the proper point of orientation"
+        ],
+        "explanation": "Israel’s idolatry is framed as going astray from God and going 'after' idols, using path‑wandering and following imagery for religious defection.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָשְׂאוּ עֲוֺנָם",
+        "english_text": "they shall suffer their punishment (lit. they shall bear their iniquity)",
+        "target": [
+          "the experience of enduring guilt’s consequences",
+          "liability for sin",
+          "judicial punishment from God"
+        ],
+        "vehicle": [
+          "carrying a burden",
+          "bearing a physical load",
+          "load‑bearing action"
+        ],
+        "ground": [
+          "guilt weighs on a person like a heavy load",
+          "to 'bear' suggests ongoing, personal responsibility",
+          "punishment is something one must 'carry' through time"
+        ],
+        "posture": [
+          "solemn assertion of just recompense",
+          "emphasizes inescapability of the burden of sin",
+          "prophetic reinforcement of retributive justice"
+        ],
+        "explanation": "The idiom 'bear their iniquity' metaphorically presents guilt and its penalties as a heavy load that the sinners themselves must carry.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 44:11",
+    "deliberation": "Reviewed sacrificial verbs ('slaughter', 'serve'), spatial terms ('at the gates', 'before them'), and service language. Although 'stand before them to serve them' can be a courtly idiom, here it accurately describes literal temple personnel standing in front of worshipers to assist. The verse is cultically technical but not clearly figurative in its phrasing.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 44:12",
+    "deliberation": "Evaluated 'stumbling-block of iniquity', 'I have lifted my hand against them', and 'they shall bear their iniquity.' All three are familiar metaphors/idioms: sin causing stumbling, an upraised hand for sworn oath or hostile action, and guilt as a burden carried.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיוּ לְבֵית־יִשְׂרָאֵל לְמִכְשׁוֹל עָוֺן",
+        "english_text": "they were to the House of Israel a stumbling-block of guilt",
+        "target": [
+          "the effect of the Levites’ false service on Israel",
+          "inducement to sin and its consequences",
+          "spiritual harm within the community"
+        ],
+        "vehicle": [
+          "a stumbling‑block that trips a person",
+          "an obstacle on a path",
+          "hazards causing falls"
+        ],
+        "ground": [
+          "misleading service causes others to fall into sin",
+          "a stumbling‑block is something dangerous but often unnoticed",
+          "connects their ministry with concrete harm and collapse"
+        ],
+        "posture": [
+          "strong censure of their influence",
+          "highlights communal responsibility for others’ downfall",
+          "evokes path imagery already used for going astray"
+        ],
+        "explanation": "Their ministry is called a 'stumbling‑block of iniquity,' metaphorically portraying it as an obstacle that causes the people to fall into sin.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־כֵּן נָשָׂאתִי יָדִי עֲלֵיהֶם",
+        "english_text": "therefore I have sworn concerning them (lit. I have lifted my hand over them)",
+        "target": [
+          "God’s solemn decision to judge the Levites",
+          "divine oath and hostile resolve",
+          "God’s judicial stance"
+        ],
+        "vehicle": [
+          "lifting the hand over someone",
+          "gesture of oath‑taking or threatening strike",
+          "raised hand in legal or military contexts"
+        ],
+        "ground": [
+          "an upraised hand signals a binding commitment or impending action",
+          "such a gesture is public and irrevocable",
+          "maps bodily gesture onto divine resolve"
+        ],
+        "posture": [
+          "threatening and judicial",
+          "emphasizes certainty and formality of the sentence",
+          "portrays God as a king or judge enacting sanctions"
+        ],
+        "explanation": "The idiom 'I have lifted my hand over them' uses the gesture of raising a hand in oath or threat as a metaphor for God’s firm decision to judge.",
+        "confidence": 0.91
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָשְׂאוּ עֲוֺנָם",
+        "english_text": "they shall suffer their punishment (lit. they shall bear their iniquity)",
+        "target": [
+          "the experience of enduring the consequences of their sin",
+          "personal liability under divine judgment",
+          "guilt as it affects the sinner"
+        ],
+        "vehicle": [
+          "bearing/carrying a load",
+          "physical burden‑bearing",
+          "load that must be transported"
+        ],
+        "ground": [
+          "sin’s consequences weigh on the sinner like a heavy burden",
+          "bearing suggests ongoing, inescapable responsibility",
+          "visualizes punishment as something one must carry oneself"
+        ],
+        "posture": [
+          "reinforces strict correspondence between sin and penalty",
+          "removes any notion of evading responsibility",
+          "underscores the gravity of their past actions"
+        ],
+        "explanation": "Again, 'bear their iniquity' presents guilt and punishment as a heavy burden that the guilty party must carry.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 44:13",
+    "deliberation": "Looked at 'they shall not come near' and 'they shall bear their shame for the abominations.' Nearness is mainly spatial/ritual. 'Bear their shame' parallels 'bear their iniquity' and is metaphorical: shame is treated as a burden carried.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָשְׂאוּ כְּלִמָּתָם",
+        "english_text": "They shall bear their shame",
+        "target": [
+          "their experience of disgrace for past abominations",
+          "lasting social and spiritual humiliation",
+          "the internal and external effects of guilt"
+        ],
+        "vehicle": [
+          "bearing something (carrying a load)",
+          "carrying an object on one’s person",
+          "load‑bearing activity"
+        ],
+        "ground": [
+          "shame clings to a person like a heavy or visible burden",
+          "to 'bear' implies ongoing, personal ownership of the disgrace",
+          "conveys both weight and visibility of their dishonor"
+        ],
+        "posture": [
+          "retributive: they must live with the consequences",
+          "didactic: shame is not easily removed",
+          "underscores moral seriousness of their abominations"
+        ],
+        "explanation": "The phrase 'bear their shame' metaphorically treats shame as a burden that they must carry, parallel to bearing iniquity.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 44:14",
+    "deliberation": "Again considered 'keepers of the charge of the house.' The duties described are literal, but the idiom שֹׁמְרֵי מִשְׁמֶרֶת ('keepers of the charge') uses guarding language metaphorically for responsible service, as in v.8.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שֹׁמְרֵי מִשְׁמֶרֶת הַבָּיִת",
+        "english_text": "keepers of the charge of the temple",
+        "target": [
+          "those entrusted with ongoing temple duties",
+          "responsible performance of all temple service",
+          "human stewardship of sacred space"
+        ],
+        "vehicle": [
+          "guards keeping watch over something assigned",
+          "custodial/military guardianship",
+          "protective oversight"
+        ],
+        "ground": [
+          "temple service requires vigilance like guarding an entrusted object",
+          "guard imagery emphasizes responsibility and accountability",
+          "depicts their work as protective and watchful"
+        ],
+        "posture": [
+          "assigns them a lower yet still serious post",
+          "frames their role as custodial rather than priestly",
+          "emphasizes obedience after prior unfaithfulness"
+        ],
+        "explanation": "Calling them 'keepers of the charge of the house' metaphorically casts their temple service in terms of guarding or watching over entrusted responsibilities.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 44:15",
+    "deliberation": "Main candidates: 'who kept the charge of My sanctuary' and 'when the people of Israel went astray from Me.' The first repeats the guarding idiom; the second again uses path imagery for apostasy. I focus on the 'went astray from Me' as a distinct metaphor in this verse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בִּתְעוֹת בְּנֵי־יִשְׂרָאֵל מֵעָלַי",
+        "english_text": "when the people of Israel went astray from Me",
+        "target": [
+          "Israel’s religious defection and disobedience",
+          "covenant infidelity",
+          "spiritual relationship to YHWH"
+        ],
+        "vehicle": [
+          "going astray from someone",
+          "wandering from a path or leader",
+          "movement off the right way"
+        ],
+        "ground": [
+          "leaving God is like leaving the correct path or guide",
+          "travel imagery conveys error and danger",
+          "conveys both agency and misdirection in their sin"
+        ],
+        "posture": [
+          "contrasts unfaithful majority with faithful Zadokite priests",
+          "underscores merit of those who remained 'on the path'",
+          "supports their privileged access to God"
+        ],
+        "explanation": "Israel’s apostasy is pictured with the idiom 'went astray from Me,' using wandering from a path as a metaphor for leaving God.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 44:16",
+    "deliberation": "Explored 'enter My sanctuary', 'approach My table', and 'keep My charge.' 'My table' in Ezekiel is a recognized metaphor/ metonymy for the altar, conceptualizing sacrifices as a meal set before God. 'Keep My charge' repeats the guarding idiom, but the clearest distinct figure here is 'My table.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶל־שֻׁלְחָנִי לְשָׁרְתֵנִי",
+        "english_text": "to approach My table to minister to Me",
+        "target": [
+          "the altar where sacrificial offerings are made",
+          "cultic service rendered directly to God",
+          "the central place of worship"
+        ],
+        "vehicle": [
+          "a 'table' at which one serves a superior",
+          "domestic or royal dining table",
+          "meal setting with host and servants"
+        ],
+        "ground": [
+          "the altar functions like a table where offerings, conceived as 'food,' are set before God",
+          "table imagery emphasizes fellowship and honor",
+          "metonymically, the table stands for the whole sacrificial system"
+        ],
+        "posture": [
+          "highlights the unique intimacy of the Zadokite priests",
+          "frames priestly service as close attendance at God’s own table",
+          "underscores both privilege and responsibility"
+        ],
+        "explanation": "Calling the altar 'My table' metaphorically and metonymically presents sacrifices as food on God’s table, evoking themes of fellowship and royal service.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 44:17",
+    "deliberation": "Assessed clothing instructions ('linen garments', 'no wool upon them') for symbolic language. While the garments are theologically meaningful, the verse describes concrete cultic regulations in literal terms, without idiomatic or metaphorical phrases.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 44:18",
+    "deliberation": "Examined 'they shall not gird themselves with anything that causes sweat.' The reference to sweat is physical; the prohibition is practical/ritual, not metaphorical (no figurative use of 'sweat' for anxiety etc.). Thus the language remains literal temple‑dress instruction.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 44:19",
+    "deliberation": "Considered whether 'lest they sanctify the people with their garments' is figurative. In priestly theology, consecration through contact with holy things is a technical, literal notion, not a metaphor here. The rest ('outer court', 'take off garments') is spatially and materially literal.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 44:20",
+    "deliberation": "Hair regulations ('not shave', 'not let grow long', 'they shall trim') are straightforward ritual grooming rules with no figurative usage (no metaphor of hair as glory or shame here in the text).",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 44:21",
+    "deliberation": "The ban on wine for priests entering the inner court is stated in plain legal prose; wine is literal, and there is no idiomatic or metaphorical exploitation of drinking imagery in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 44:22",
+    "deliberation": "Marriage restrictions ('shall not take a widow or divorced woman... only virgins ... or a priest’s widow') are purely legal. No metaphor, personification, or idiom is used in the Hebrew phrasing.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 44:23",
+    "deliberation": "Looked at the contrasts 'between holy and common' and 'between unclean and clean.' These are technical priestly categories, not figurative; they denote ritual states literally within this system. The verbs 'teach' and 'make known' are ordinary and non‑figurative here.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 44:24",
+    "deliberation": "Reviewed 'stand to judge', 'preserve My teachings and laws', 'sanctify My Sabbaths.' These are standard legal/ritual expressions. 'Sanctify the Sabbaths' uses holiness language but within its normal cultic sense (treat as holy), not as a metaphor for something else. No clear figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 44:25",
+    "deliberation": "The verse details which close relatives a priest may defile himself for by contact with the dead. Terms like 'defile' and 'become unclean' are priestly-technical; within this system they are literal categorizations of ritual status, not metaphorical. No figurative expressions appear.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 44:26",
+    "deliberation": "The counting of seven days after purification is literal ritual timing; nothing in the Hebrew suggests metaphor, personification, or idiomatic non‑literal usage.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 44:27",
+    "deliberation": "The reentry of the priest into the inner court and his purgation offering (חַטָּאת) are technical cultic acts. The language is straightforward procedural law without figurative phrasing.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 44:28",
+    "deliberation": "Here 'I am their inheritance' and 'I am their holding' clearly use inheritance/land terminology metaphorically for God Himself as the priests’ portion, instead of acreage in Israel. This is a strong extended metaphor, expressed twice with two related nouns.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיְתָה לָהֶם לְנַחֲלָה אֲנִי נַחֲלָתָם ... אֲנִי אֲחֻזָּתָם",
+        "english_text": "This shall be their portion, for I am their portion; … for I am their holding",
+        "target": [
+          "the priests’ ultimate source of provision and security",
+          "their vocation and relationship to God",
+          "the reward and share of temple ministers"
+        ],
+        "vehicle": [
+          "an 'inheritance' and 'holding' of land in Israel",
+          "allotment of territory as patrimony",
+          "landed property within tribal divisions"
+        ],
+        "ground": [
+          "just as land gives livelihood and identity, God Himself is the priests’ sufficiency and defining share",
+          "inheritance imagery conveys permanence and exclusivity",
+          "reframes economic security as grounded in God, not land"
+        ],
+        "posture": [
+          "elevated, honoring view of priestly dependence on God alone",
+          "reassuring in the absence of territorial holding",
+          "theologically reorients value from material to relational"
+        ],
+        "explanation": "By saying 'I am their inheritance/holding,' God metaphorically replaces land allotment with His own presence and provision as the priests’ true portion.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 44:29",
+    "deliberation": "Describes what offerings the priests shall eat and what 'devoted things' belong to them. These terms are technical categories in priestly law (grain offering, sin offering, guilt offering, cherem), used literally within the cultic system. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 44:30",
+    "deliberation": "Looked at 'the first of the yield of your baking' and 'that a blessing may rest upon your house.' The firstfruits language is literal. 'A blessing may rest upon your house' personifies blessing as something that can 'rest' and uses 'house' metonymically for the household/family. This is a figurative expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְהָנִיחַ בְּרָכָה אֶל־בֵּיתֶךָ",
+        "english_text": "that a blessing may rest upon your home",
+        "target": [
+          "the wellbeing and prosperity of the offerer and family",
+          "ongoing divine favor on the household",
+          "life circumstances under God’s care"
+        ],
+        "vehicle": [
+          "a 'blessing' that can be set down or rest on a 'house'",
+          "an object or presence that comes to dwell in a place",
+          "a guest or protective influence staying in a home"
+        ],
+        "ground": [
+          "enduring favor is like something that comes to reside and stay",
+          "a 'house' stands for the entire household or family line",
+          "imagery of resting suggests stability and peace"
+        ],
+        "posture": [
+          "encouraging generosity by promising tangible divine favor",
+          "frames obedience as inviting blessing to 'live with' the family",
+          "optimistic, pastoral tone about the effects of giving"
+        ],
+        "explanation": "The verse personifies 'blessing' as something that can be made to 'rest' on a house, and uses 'house' metonymically for the family, thereby depicting enduring divine favor as a resident presence in the home.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 44:31",
+    "deliberation": "The prohibition on priests eating animals that died naturally or were torn is stated in plain legal terms; 'torn' and 'carcass' are literal descriptions. No metaphor, personification, idiom, or other figurative devices appear.",
+    "instances": []
+  }
+]

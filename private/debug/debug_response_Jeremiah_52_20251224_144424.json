@@ -1,0 +1,518 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 52:1",
+    "deliberation": "Verse 1 is a straightforward chronological and genealogical notice (age, reign length, mother’s name, place). I looked for conventional idioms or metaphorical titles but found only literal historical data.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 52:2",
+    "deliberation": "I examined whether the moral evaluation formula is figurative. The phrase 'he did what was evil in the eyes of YHWH' is a well-known idiom using anthropomorphic language for divine evaluation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיַּעַשׂ הָרַע בְּעֵינֵי יְהוָה",
+        "english_text": "He did what was displeasing (evil) in the eyes of the LORD",
+        "target": [
+          "Zedekiah’s behavior as judged by God",
+          "moral and covenantal conduct",
+          "theological-ethical domain"
+        ],
+        "vehicle": [
+          "something seen as evil by someone’s eyes",
+          "visual perception and aesthetic/moral displeasure",
+          "human sensory experience"
+        ],
+        "ground": [
+          "God evaluates and disapproves his actions as a person visually judging what he sees",
+          "assessment based on perceived quality",
+          "judgment / appraisal"
+        ],
+        "posture": [
+          "condemning Zedekiah’s reign according to YHWH’s standard",
+          "negative moral evaluation",
+          "prophetic/theological critique"
+        ],
+        "explanation": "The idiom 'to do evil in the eyes of YHWH' anthropomorphically portrays God as seeing and judging, metaphorically expressing divine moral disapproval.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 52:3",
+    "deliberation": "I looked for anthropomorphisms and spatial metaphors. The verse uses the idiom 'on the anger/nose of YHWH' for wrath, the metaphor 'cast them from upon his face' for expulsion from God’s presence, and employs 'Jerusalem and Judah' as metonymy for their inhabitants.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי עַל־אַף יְהוָה הָיְתָה בִּירוּשָׁלִַם וִיהוּדָה",
+        "english_text": "Indeed, because of the anger (nose) of the LORD it was [so] in Jerusalem and Judah",
+        "target": [
+          "YHWH’s wrath against Jerusalem and Judah",
+          "divine emotional response to sin",
+          "theological domain"
+        ],
+        "vehicle": [
+          "the 'nose' or face flushed in anger",
+          "human bodily feature representing anger",
+          "human emotion/physiology"
+        ],
+        "ground": [
+          "just as a flaring nose signals human anger, so YHWH is presented as intensely wrathful",
+          "visible sign standing for inner rage",
+          "expression of strong disfavor"
+        ],
+        "posture": [
+          "underscoring the severity of divine displeasure",
+          "depicting their condition as provoking intense wrath",
+          "judgmental stance"
+        ],
+        "explanation": "The phrase 'on the nose (anger) of YHWH' is an idiom using body-part metonymy to portray God’s wrath anthropomorphically.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַד־הִשְׁלִיכוֹ אוֹתָם מֵעַל פָּנָיו",
+        "english_text": "until He cast them out from before His face",
+        "target": [
+          "God’s rejection and expulsion of His people",
+          "loss of divine presence and favor",
+          "covenantal relationship"
+        ],
+        "vehicle": [
+          "physically throwing someone away from one’s face",
+          "forcible removal from personal presence",
+          "spatial-relational experience"
+        ],
+        "ground": [
+          "being violently removed from before someone’s face parallels being rejected and excluded from their presence and favor",
+          "distance and exclusion",
+          "relational rupture"
+        ],
+        "posture": [
+          "emphasizing the totality of God’s rejection",
+          "portraying the exile as complete removal from God’s presence",
+          "severe judgment stance"
+        ],
+        "explanation": "The clause depicts God’s act of rejecting His people as if physically throwing them away from His face; 'face' stands metonymically for presence, yielding a spatial metaphor for relational rupture.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בִּירוּשָׁלִַם וִיהוּדָה",
+        "english_text": "Jerusalem and Judah",
+        "target": [
+          "the people inhabiting Jerusalem and Judah",
+          "covenant community as a population",
+          "social-political entity"
+        ],
+        "vehicle": [
+          "the place-names 'Jerusalem' and 'Judah'",
+          "geographical locations",
+          "spatial domain"
+        ],
+        "ground": [
+          "the land/urban center stands for the people who live there",
+          "close association between territory and inhabitants",
+          "representation by locale"
+        ],
+        "posture": [
+          "speaking of the community collectively through its land and city",
+          "national characterization",
+          "prophetic address to the whole body"
+        ],
+        "explanation": "Here 'Jerusalem and Judah' function metonymically, with the places standing for their inhabitants who are the true objects of divine anger and exile.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 52:4",
+    "deliberation": "This is a precise military-historical notice (date, Nebuchadnezzar’s advance, siege, siege-works). Phrases like 'came against Jerusalem' and 'camped against it' describe literal military action, not figurative hostility. No non-literal metaphors or idioms appear.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 52:5",
+    "deliberation": "The verse continues the siege description with literal language: the city being in siege until a given year. No metaphorical uses of 'city' or 'siege' beyond their straightforward historical sense are evident.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 52:6",
+    "deliberation": "I checked the description of famine for personification or idiom. The famine is said to 'grow strong' in the city, which is a personifying metaphor; 'no bread' also functions as a synecdoche for all food.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַיֶחֱזַק הָרָעָב בָּעִיר",
+        "english_text": "the famine became strong in the city",
+        "target": [
+          "the increasing severity of the famine",
+          "degree of scarcity and suffering",
+          "social-disaster domain"
+        ],
+        "vehicle": [
+          "a person or force becoming strong",
+          "growing physical strength or power",
+          "bodily/warfare domain"
+        ],
+        "ground": [
+          "as a strong person exerts more power, so the famine exerts increasing, overpowering effects",
+          "intensity and dominance",
+          "overwhelming force"
+        ],
+        "posture": [
+          "stress the oppressive power of the famine",
+          "depict the situation as crushing and inescapable",
+          "heightened portrayal of judgment"
+        ],
+        "explanation": "The famine is personified as something that 'grows strong,' metaphorically portraying scarcity as a powerful force tightening its grip on the city.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלֹא־הָיָה לֶחֶם לְעַם הָאָרֶץ",
+        "english_text": "there was no bread for the people of the land",
+        "target": [
+          "the people’s lack of food in general",
+          "total deprivation of sustenance",
+          "basic survival needs"
+        ],
+        "vehicle": [
+          "absence of bread specifically",
+          "single staple food item",
+          "food domain"
+        ],
+        "ground": [
+          "bread, as the chief staple, stands for food as a whole",
+          "part representing the whole",
+          "synecdochic representation"
+        ],
+        "posture": [
+          "emphasizing complete want of sustenance",
+          "depicting extremity of hunger",
+          "intensifying the famine’s horror"
+        ],
+        "explanation": "The word 'bread' functions as a synecdoche for all necessary food, conveying that the population lacked basic sustenance.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 52:7",
+    "deliberation": "The verse describes a literal breach, soldiers fleeing by a particular gate, and surrounding Chaldeans. 'The city was breached' follows normal siege terminology, and the movement descriptions are geographical. I found no clear figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 52:8",
+    "deliberation": "Pursuit, overtaking in the plains, and the scattering of Zedekiah’s troops are all plausible historical-military descriptions. 'His entire force left him and scattered' describes literal desertion with no marked metaphorical framing beyond standard military language.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 52:9",
+    "deliberation": "The text narrates capture, transfer to Riblah, and speaking 'judgments' with him (putting him on trial). This is legal language rather than figurative; 'spoke judgments' is a standard idiom for judicial procedure, not a metaphorical image beyond its technical sense.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 52:10",
+    "deliberation": "The verse graphically describes slaughter before Zedekiah’s eyes. Although emotionally charged, the verbs for slaughtering are literal depictions of execution, not hyperbole or metaphor. No figurative devices are evident.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 52:11",
+    "deliberation": "Blinding, chaining with bronze fetters, transporting to Babylon, and imprisonment are all concrete actions. 'Until the day of his death' is temporal, not metaphorical. I found no figurative language here.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 52:12",
+    "deliberation": "This is a date formula plus the arrival and official capacity of Nebuzaradan. Expressions like 'stood before the king of Babylon in Jerusalem' are literal statements of service and presence, customary for court language. No metaphors or idioms of interest occur.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 52:13",
+    "deliberation": "The burning of the House of YHWH, the royal palace, and other houses is described concretely. 'Every great house' likely refers to large or notable buildings, not metaphorical 'houses' (families). The destruction language is straightforwardly literal.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 52:14",
+    "deliberation": "The tearing down of the walls of Jerusalem by the Chaldean forces is presented as factual military demolition. 'All the walls ... round about' is exhaustive but not hyperbolic; there is no obvious figurative usage.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 52:15",
+    "deliberation": "This verse lists groups deported: 'the remnant of the people,' 'those who fell to the king of Babylon,' and the remainder of the artisans. These are sociological categories. Although 'fell to the king' is slightly idiomatic for defecting, it still describes literal political submission rather than a vivid metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 52:16",
+    "deliberation": "Nebuzaradan leaves some of the poorest as vine-dressers and field workers. The occupational terms (vine-dressers, plowmen) denote real tasks rather than metaphorical identities. No figurative devices are present.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 52:17",
+    "deliberation": "I checked the cultic objects for traditional metaphorical names. The 'bronze sea' (יָם הַנְּחֹשֶׁת) is a conventional metaphorical designation for the large basin, contrasting its size with a sea; this stands out as figurative. The rest (columns, stands, bronze) are literal descriptions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְאֶת־יָם הַנְּחֹשֶׁת אֲשֶׁר בְּבֵית־יְהוָה",
+        "english_text": "and the bronze sea that was in the House of the LORD",
+        "target": [
+          "the large bronze basin used in the temple",
+          "a cultic vessel",
+          "ritual/architectural domain"
+        ],
+        "vehicle": [
+          "a 'sea' of water",
+          "a vast natural body of water",
+          "cosmic/geographical domain"
+        ],
+        "ground": [
+          "the basin’s large, expansive surface resembles a miniature sea",
+          "great extent and capacity",
+          "impressive size"
+        ],
+        "posture": [
+          "elevating the basin’s grandeur by naming it after a cosmic feature",
+          "sacralizing the object",
+          "liturgical-aesthetic appreciation"
+        ],
+        "explanation": "Calling the basin a 'sea' metaphorically highlights its great size and significance, a conventional cultic metaphor preserved in the technical term 'bronze sea.'",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 52:18",
+    "deliberation": "The verse enumerates cultic utensils (pails, shovels, snuffers, bowls, spoons) that were taken. These are all literal objects, and the verbs of taking are straightforward; no figurative expressions appear.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 52:19",
+    "deliberation": "Again, this is a list of temple vessels of gold and silver. The chief of the guard 'took' them. The passage is inventory-like and lacks metaphor, personification, or other figurative language.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 52:20",
+    "deliberation": "Details about the two columns, the one sea, the twelve bronze oxen, and the stands, plus the note that their bronze was 'beyond weighing' could perhaps be read as hyperbolic. Yet the phrase functions as a practical statement that the amount was too large to weigh, not a stylized exaggeration. I treat it as literal.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 52:21",
+    "deliberation": "The measurement data (height, circumference, thickness, hollow construction) are technical architectural details. No comparison or symbolic naming suggests figurative language.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 52:22",
+    "deliberation": "This continues the description of the capital, meshwork, and pomegranates, all made of bronze. These are literal design elements on the columns. The pomegranates are actual decorative forms, not figurative references to fruit in some other domain.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 52:23",
+    "deliberation": "The verse simply counts the bronze pomegranates. The enumeration is precise and not hyperbolic, symbolic, or metaphorical in this context.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 52:24",
+    "deliberation": "Nebuzaradan takes named priests and threshold-keepers. 'Guardians of the threshold' describes an office relating to the temple doors literally; there is no indication of metaphorical or symbolic use here.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 52:25",
+    "deliberation": "I examined 'those who see the face of the king' for idiom. It is a court formula meaning close royal attendants but is still tied to the literal privilege of physical audience with the king. It is conventional bureaucratic language rather than a vivid metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 52:26",
+    "deliberation": "Nebuzaradan takes the officials and brings them to the king at Riblah. The verbs of taking and bringing are straightforward and geographic; no figurative expressions are evident.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 52:27",
+    "deliberation": "Besides the literal executions, the clause 'Judah was exiled from its land' uses 'Judah' as a metonymy for its people. The act of exile itself is historical, but the naming compresses the whole population into the name of the territory.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיִּגֶל יְהוּדָה מֵעַל אַדְמָתוֹ",
+        "english_text": "Thus Judah was exiled from its land",
+        "target": [
+          "the people belonging to the kingdom of Judah",
+          "the covenant community inhabiting the territory",
+          "national-population domain"
+        ],
+        "vehicle": [
+          "the name 'Judah' as a territorial entity",
+          "geopolitical land designation",
+          "spatial-political domain"
+        ],
+        "ground": [
+          "the land’s name stands for the people who reside there",
+          "identity of nation with its territory",
+          "representation by place-name"
+        ],
+        "posture": [
+          "summarizing the catastrophe as the uprooting of a whole national body",
+          "emphasizing collective judgment",
+          "corporate perspective"
+        ],
+        "explanation": "The proper name 'Judah' functions metonymically, standing for its inhabitants who were exiled from their land.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 52:28",
+    "deliberation": "This verse lists a deportation year and an exact headcount of Judeans. The style is documentary, giving numbers without figurative flourish.",
+    "instances": []
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 52:29",
+    "deliberation": "Again, the verse provides a date in Nebuchadrezzar’s reign and a number of persons exiled. No imagery, hyperbole, or idioms beyond standard counting language occur.",
+    "instances": []
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 52:30",
+    "deliberation": "The final deportation tally is presented with precise numbers and a total. This is statistical and literal, lacking figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 52:31",
+    "deliberation": "I looked for idioms around Jehoiachin’s release. The phrase 'lifted up the head of Jehoiachin' is a well-known idiom and metaphor for restoring status and favor, not a physical act on his head alone.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נָשָׂא אֱוִיל מְרֹדַךְ מֶלֶךְ־בָּבֶל ... אֶת־רֹאשׁ יְהוֹיָכִין",
+        "english_text": "King Evil-merodach of Babylon ... lifted up the head of Jehoiachin",
+        "target": [
+          "Jehoiachin’s fortune and social status",
+          "his restoration to honor and freedom",
+          "political-social standing"
+        ],
+        "vehicle": [
+          "lifting a person’s head up",
+          "changing bodily posture from bowed to raised",
+          "physical stance / gesture domain"
+        ],
+        "ground": [
+          "raising the head parallels elevating someone from shame/low status to honor and freedom",
+          "from humiliation to dignity",
+          "transition from abasement to exaltation"
+        ],
+        "posture": [
+          "highlighting unexpected gracious reversal of fortunes",
+          "presenting Jehoiachin’s fate as elevation after long humiliation",
+          "hopeful closing note in a bleak narrative"
+        ],
+        "explanation": "The idiom 'to lift up the head' metaphorically describes Evil-merodach’s act of restoring Jehoiachin’s honor and releasing him from imprisonment.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Jeremiah 52:32",
+    "deliberation": "Evil-merodach speaks good things to Jehoiachin and literally gives him a throne higher than other captive kings. The giving of a physical seat of honor reflects genuine court practice; while it implies exalted status, this is not framed as a metaphor but as a concrete privilege.",
+    "instances": []
+  },
+  {
+    "verse": 33,
+    "reference": "Jeremiah 52:33",
+    "deliberation": "Jehoiachin’s prison garments are changed and he eats bread before the king continually. The phrase 'ate bread before him' likely reflects an actual arrangement of regular table-privilege; 'bread' here may function as a mild synecdoche for food, but the verse primarily reports literal provision. I treat it as effectively literal.",
+    "instances": []
+  },
+  {
+    "verse": 34,
+    "reference": "Jeremiah 52:34",
+    "deliberation": "The verse details a regular food allowance, 'day by day,' until his death. The temporal phrase 'day by day' is a standard way of indicating daily provision and is not a merism or hyperbole here. The language is administrative and literal.",
+    "instances": []
+  }
+]

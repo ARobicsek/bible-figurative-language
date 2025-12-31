@@ -1,0 +1,418 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 36:1",
+    "deliberation": "Formulaic prophetic introduction. Considered whether \"the word ... came\" is merely technical or retains metaphorical force. Treated the movement verb with an abstract subject (\"word\") as a conventional metaphor/idiom for revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָיָה הַדָּבָר הַזֶּה אֶל־יִרְמְיָהוּ מֵאֵת יְהוָה",
+        "english_text": "this word came to Jeremiah from GOD",
+        "target": ["divine message to Jeremiah", "revelation/event of communication", "divine–human communication"],
+        "vehicle": ["a 'word' that comes/arrives like a visitor", "movement/arrival", "physical motion in space"],
+        "ground": ["revelation originates from God and reaches the prophet with initiative and direction", "initiation of contact", "dynamics of sending and receiving"],
+        "posture": ["prophetic narrator's formal description of inspiration", "genre convention in prophetic speech", "religious discourse"],
+        "explanation": "The abstract 'word' is depicted as something that 'comes' to Jeremiah, using movement imagery for an act of revelation. This is a conventional metaphor/idiom for prophetic inspiration.",
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 36:2",
+    "deliberation": "Instruction to take a physical scroll and write past prophecies. Expressions like 'all the words that I have spoken' are straightforward. No metaphor, simile, personification, or idiom beyond normal lexical usage.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 36:3",
+    "deliberation": "Looked for figurative expressions in 'House of Judah', 'evil way', and 'turn back'. 'House of Judah' is a standard collective designation (metonymy). 'Turn back from his evil way' uses way/path as a metaphor for moral conduct.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יְהוּדָה",
+        "english_text": "the House of Judah",
+        "target": ["the people/community of Judah", "collective social-political entity", "human society"],
+        "vehicle": ["a 'house' or household", "building/family unit", "physical structure"],
+        "ground": ["the people form a single entity like members of one household under one roof and head", "corporate identity", "social organization by shared dwelling"],
+        "posture": ["covenantal designation of the community", "collective naming", "theological-political discourse"],
+        "explanation": "A 'house' stands metonymically for the people belonging to it. 'House of Judah' refers to Judah’s population as one corporate entity, not to a literal building.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יָשׁוּבוּ אִישׁ מִדַּרְכּוֹ הָרָעָה",
+        "english_text": "they will turn back, each from his evil way",
+        "target": ["each person's moral conduct", "ethical behavior/lifestyle", "human action"],
+        "vehicle": ["a road/way that one walks on", "path/route", "spatial journey"],
+        "ground": ["behavior has direction and can be continued or reversed like walking on a path", "change of course", "movement and orientation in space"],
+        "posture": ["prophetic exhortation to repent", "moral evaluation", "covenant warning/appeal"],
+        "explanation": "A person's behavior is conceptualized as a 'way' or path, and repentance as 'turning back' from that path. This is a standard biblical metaphor for moral change.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 36:4",
+    "deliberation": "Plain narration of dictation and writing. 'Words of YHWH' simply labels divine speech recorded on a scroll. No particular figurative construal beyond normal language.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 36:5",
+    "deliberation": "Jeremiah says he is 'restrained' and cannot go to the temple—likely literal restriction (confinement or ban). No clear metaphor or idiom beyond straightforward physical limitation.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 36:6",
+    "deliberation": "Instruction to read in the scroll 'in the ears' of the people. The 'ears' expression is normal Hebrew for 'in the hearing of' and functions as a literal bodily reference for hearing. Did not treat as marked figurative language here.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 36:7",
+    "deliberation": "Considered three expressions: (1) 'their supplication will fall before YHWH', (2) 'turn back from his evil way', (3) 'great is the anger and wrath'. All three employ non-literal imagery: prayer as a falling object, behavior as a path, and wrath as burning/flaring heat.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אוּלַי תִּפֹּל תְּחִנָּתָם לִפְנֵי יְהוָה",
+        "english_text": "Perhaps their entreaty will fall before GOD",
+        "target": ["their plea/prayer to God", "act of entreaty", "religious communication"],
+        "vehicle": ["something or someone that 'falls before' another", "falling/prostration", "physical motion/posture"],
+        "ground": ["earnest supplication is like falling down or casting oneself before a superior, coming into their presence for mercy", "submission and urgency", "social dynamics of approach to power"],
+        "posture": ["hopeful conditional appeal to divine mercy", "humble petition", "worship context"],
+        "explanation": "The supplication is depicted as 'falling' before YHWH, picturing prayer as a prostrate, falling entity entering God's presence. This is an idiomatic metaphor for an appeal being presented and potentially accepted.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיָשֻׁבוּ אִישׁ מִדַּרְכּוֹ הָרָעָה",
+        "english_text": "if they turn back, each from his wicked way",
+        "target": ["each person's moral conduct", "ethical lifestyle", "human action"],
+        "vehicle": ["a road/way that one travels on", "path/route", "spatial journey"],
+        "ground": ["conduct is like a path whose direction can be reversed; repentance is a literal 'turning back' from a course", "change of course/direction", "movement and orientation"],
+        "posture": ["appeal to change behavior to avert judgment", "moral exhortation", "covenant warning"],
+        "explanation": "As in v.3, behavior is conceptualized as a 'way' and repentance as turning back from that path. This is a conventional moral metaphor.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כִּי־גָדוֹל הָאַף וְהַחֵמָה אֲשֶׁר־דִּבֶּר יְהוָה",
+        "english_text": "For great is the anger and wrath with which GOD has threatened this people",
+        "target": ["GOD's disposition toward the people in judgment", "divine wrath", "divine emotion/judicial action"],
+        "vehicle": ["flaring nostrils (אַף) and burning heat (חֵמָה)", "bodily reaction and intense heat", "physical states and sensations"],
+        "ground": ["anger is like burning heat and flared nostrils in humans—intense, hot, and dangerous; this image is applied to God's judgment", "intensity and heat of emotion", "mapping physical reactions onto emotional/judicial states"],
+        "posture": ["threatening depiction of impending judgment", "judicial severity", "theological admonition"],
+        "explanation": "The Hebrew uses body-part and heat terms (nose/anger, heat/wrath) for God's judgment. This is an anthropopathic metaphor: divine wrath portrayed in terms of human physical anger and burning heat.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 36:8",
+    "deliberation": "Straightforward report that Baruch obeyed and read the words. No non-literal phrasing beyond normal attributions of speech.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 36:9",
+    "deliberation": "Narrative of a fast proclaimed before YHWH in Jerusalem. Expressions like 'called a fast' and 'before YHWH' are cultic but literal. No marked figurative structures.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 36:10",
+    "deliberation": "Detailed spatial description of Baruch’s location in the temple complex while reading. All terms appear to be literal architectural references.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 36:11",
+    "deliberation": "Micaiah 'heard all the words of YHWH from the scroll.' Here the words of YHWH are literally those written in the scroll and read aloud. No special metaphor beyond normal terminology for written prophecy.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 36:12",
+    "deliberation": "Plain description of Micaiah going down to the king’s house and listing officials. No figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 36:13",
+    "deliberation": "Report that Micaiah told the officials what he heard as Baruch read to the people. Language is straightforward.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 36:14",
+    "deliberation": "Officials send for Baruch with the scroll. The language of taking the scroll 'in your hand' and coming is literal. No evident figurative devices.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 36:15",
+    "deliberation": "Request to 'sit and read in our ears' is conventional for 'read for us to hear' and here functions literally. No distinctive figurative imagery.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 36:16",
+    "deliberation": "The officials 'feared, each to his neighbor.' This depicts mutual fear and consultation but does not hinge on metaphor; it is a literal emotional reaction. No strong figurative expression.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 36:17",
+    "deliberation": "They ask Baruch how he wrote the words. Straightforward inquiry with no figurative phrasing.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 36:18",
+    "deliberation": "Baruch explains that Jeremiah recited and he wrote in ink on the scroll. Purely literal description of the writing process.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 36:19",
+    "deliberation": "Officials urge Baruch and Jeremiah to hide and not reveal their location. Language of hiding is literal in context of political danger.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 36:20",
+    "deliberation": "They store the scroll and report matters to the king. Verbs 'deposit' and 'tell' are literal here. No figurative constructions.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 36:21",
+    "deliberation": "Jehudi fetches and reads the scroll. Again this is straightforward narrative without figurative language.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 36:22",
+    "deliberation": "Description of the setting: the king sitting in the winter house with a fire burning. All elements are literal physical details.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 36:23",
+    "deliberation": "The king cuts the scroll and throws it into the fire until it is consumed. Destruction of the scroll is literal; fire and knife are not symbolic here but actual instruments. No figurative device singled out.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 36:24",
+    "deliberation": "The verse contrasts their lack of fear with their failure to 'tear their garments'. Tearing garments is a cultural symbolic act for grief/repentance and thus functions idiomatically/metonymically for inner reaction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְלֹא קָרְעוּ אֶת־בִּגְדֵיהֶם",
+        "english_text": "and [they] did not tear their garments",
+        "target": ["their inner grief, fear, or repentance", "emotional/ethical response", "human psychology"],
+        "vehicle": ["torn garments", "damaged clothing", "material state of dress"],
+        "ground": ["in that culture, tearing one's clothes is a visible sign of intense grief or repentance; clothing represents the self's status", "outward symbol of inner turmoil", "use of physical signs to express emotion"],
+        "posture": ["narrator's critique of their hardness", "negative moral evaluation", "didactic commentary"],
+        "explanation": "Rending garments is an idiomatic symbolic act for mourning or repentance. By saying they did not tear their garments, the text metonymically indicates their lack of appropriate inner response.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 36:25",
+    "deliberation": "Elnathan, Delaiah, and Gemariah 'interceded' (begged) the king not to burn the scroll; he refused to listen. These are standard verbs for pleading and heeding. No clear figurative usage beyond normal.",
+    "instances": []
+  },
+  {
+    "verse": 26",
+    "reference": "Jeremiah 36:26",
+    "deliberation": "The king orders the seizure of Baruch and Jeremiah, but 'YHWH hid them'. This reflects divine protection in a concrete way; the hiding is best read as literal concealment effected by God’s providence, not as a metaphorical description.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 36:27",
+    "deliberation": "Repetition of the prophetic formula 'the word of YHWH came to Jeremiah' after the burning of the scroll. As in v.1, this uses movement language for an act of revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֶל־יִרְמְיָהוּ",
+        "english_text": "The word of GOD came to Jeremiah",
+        "target": ["new divine revelation to Jeremiah", "event of inspiration", "divine–human communication"],
+        "vehicle": ["a 'word' that comes/arrives", "movement/visitation", "physical motion/event"],
+        "ground": ["God initiates contact; revelation approaches the prophet like a visitor or message arriving from outside", "initiative and directionality", "communication as sending/coming"],
+        "posture": ["formal prophetic introduction of an oracle", "genre marker", "religious discourse"],
+        "explanation": "Again the abstract 'word' is portrayed as something that 'comes' to Jeremiah. This conventional prophetic idiom relies on a movement metaphor for the reception of God’s message.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 36:28",
+    "deliberation": "Command to take another scroll and rewrite the same words. The description of burning and rewriting is literal, not metaphorical.",
+    "instances": []
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 36:29",
+    "deliberation": "Looked at 'destroy this land' and 'cause human and animal to cease from it'. 'Destroy this land' is literal. The paired 'man and beast' is a well-known merism for all living inhabitants in the land, emphasizing total desolation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִשְׁבִּית מִמֶּנָּה אָדָם וּבְהֵמָה",
+        "english_text": "and cause human and animal to cease from it",
+        "target": ["all life and inhabitants in the land", "population and livestock as a whole", "life in the land"],
+        "vehicle": ["'man and beast' as two poles of living creatures", "paired opposites/ends of a spectrum", "list construction (merism)"],
+        "ground": ["naming the main categories of inhabitants (humans and domestic animals) conveys total depopulation and devastation", "completeness expressed by two extremes", "rhetoric of totality"],
+        "posture": ["pronouncement of comprehensive judgment", "emphatic warning", "prophetic threat"],
+        "explanation": "The phrase 'man and beast' functions as a merism, evoking all kinds of living beings in the land to stress complete desolation, not just those two categories in isolation.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 36:30",
+    "deliberation": "Considered two expressions: (1) 'sitting on the throne of David' as a symbolic designation of ruling in the Davidic line (metonymy), and (2) the corpse thrown out to 'the heat by day and the frost by night', which uses environmental extremes as a merism for total, ongoing exposure and disgrace.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "לֹא־יִהְיֶה־לּוֹ יוֹשֵׁב עַל־כִּסֵּא דָוִד",
+        "english_text": "He shall not have any of his line sitting on the throne of David",
+        "target": ["Jehoiakim's descendants exercising royal authority", "dynastic rule", "political kingship"],
+        "vehicle": ["the 'throne of David' and sitting upon it", "symbolic seat of rule", "royal furniture/insignia"],
+        "ground": ["to sit on a royal throne is to hold kingship; the throne stands for the institution of Davidic rule", "symbol for office/authority", "representational object for power"],
+        "posture": ["annulment of Davidic succession through Jehoiakim", "political-theological judgment", "covenant sanction"],
+        "explanation": "The 'throne of David' metonymically represents the Davidic kingship. Saying no descendant will sit on it declares the end of his dynastic rule.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנִבְלָתוֹ תִּהְיֶה מֻשְׁלֶכֶת לַחֹרֶב בַּיּוֹם וְלַקֶּרַח בַּלָּיְלָה",
+        "english_text": "and his own corpse shall be left exposed to the heat by day and the cold by night",
+        "target": ["Jehoiakim’s postmortem condition and honor", "his shameful fate", "human social status after death"],
+        "vehicle": ["a corpse thrown out to unshielded heat and frost day and night", "continuous exposure to extreme elements", "environmental conditions across time"],
+        "ground": ["lack of burial and protection signifies utter disgrace; day/night heat/cold cover the whole cycle, implying ongoing humiliation", "total exposure and abandonment", "shame expressed via unrelieved environmental suffering"],
+        "posture": ["severe curse on the king", "condemnatory prophecy", "judicial pronouncement"],
+        "explanation": "While Jehoiakim’s body might literally be unburied, the pairing of 'heat by day and frost by night' forms a meristic image of constant exposure, emphasizing total dishonor and abandonment.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 36:31",
+    "deliberation": "Considered 'I will visit upon him ... their iniquity' and 'I will bring upon them all the evil.' 'Visit upon' is a standard judicial idiom/metaphor for punishing, portraying judgment as a visit or inspection.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּפָקַדְתִּי עָלָיו וְעַל־זַרְעוֹ וְעַל־עֲבָדָיו אֶת־עֲוֺנָם",
+        "english_text": "And I will punish him and his offspring and his courtiers for their iniquity (literally: I will visit upon him ... their iniquity)",
+        "target": ["Jehoiakim, his descendants, and servants as offenders", "those to be held accountable", "human moral agents"],
+        "vehicle": ["a 'visit' or inspection imposed upon them", "coming/visitation", "social encounter/motion"],
+        "ground": ["a superior's visit entails scrutiny and consequences; punishment is pictured as God coming to them to reckon with their guilt", "encounter leading to reckoning", "judicial oversight enacted as presence"],
+        "posture": ["legal/judicial declaration of punishment", "covenant lawsuit language", "divine judge stance"],
+        "explanation": "The idiom 'to visit upon' uses the metaphor of a visit or official inspection to depict God’s act of punishing their iniquity.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Jeremiah 36:32",
+    "deliberation": "Description of taking another scroll, rewriting, and adding many similar words. All described actions are literal. No figurative language detected.",
+    "instances": []
+  }
+]

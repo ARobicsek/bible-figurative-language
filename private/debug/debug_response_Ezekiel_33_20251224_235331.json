@@ -1,0 +1,893 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 33:1",
+    "deliberation": "Formulaic prophetic introduction וַיְהִי דְבַר־יְהוָה אֵלַי לֵאמֹר portrays the divine word as something that comes to the prophet. This is a conventional but still figurative personification/metaphor of \"word\" as a moving, acting entity. No other imagery present.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "The word of GOD came to me:",
+        "target": ["divine revelation to Ezekiel", "prophetic communication", "theology"],
+        "vehicle": ["a moving/approaching 'word'", "animated object/visitor", "physical motion"],
+        "ground": ["initiative, directed movement toward the prophet, personal address", "transfer of something from sender to receiver", "communication"],
+        "posture": ["authoritative prophetic formula", "neutral description of revelation", "prophetic discourse"],
+        "explanation": "God’s communication is depicted as a concrete ‘word’ that comes to Ezekiel, personifying and metaphorically embodying revelation as a moving entity that approaches and addresses him.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 33:2",
+    "deliberation": "Verse sets up a watchman scenario. Within the scenario, most elements are literal in their own frame, but \"sword\" for an invading force is a standard metonymy. The appointment of a נֶצֹפֶה (lookout) is literal here, though it will be applied metaphorically to Ezekiel in v.7.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶ֕רֶץ כִּֽי־אָבִ֥יא עָלֶ֖יהָ חָ֑רֶב",
+        "english_text": "When I bring the sword against a country",
+        "target": ["military invasion/judgment on a land", "hostile action", "war/punishment"],
+        "vehicle": ["a sword", "weapon", "physical violence"],
+        "ground": ["a sword is an instrument of killing and war, so it stands for armed conflict and its destructive force", "instrument representing its user and act", "metonymic association of tool and action"],
+        "posture": ["threatening warning of coming judgment", "negative moral evaluation", "prophetic judgment discourse"],
+        "explanation": "The ‘sword’ stands metonymically for an invading army or war. God does not literally bring a single sword upon a land; the weapon represents the larger reality of military judgment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 33:3",
+    "deliberation": "Continues the watchman illustration. Again, the scene is literally conceivable, but \"sword\" coming upon the land functions as metonymy for an advancing army or warfare.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְרָאָ֥ה אֶת־הַחֶ֖רֶב בָּאָ֣ה עַל־הָאָ֑רֶץ",
+        "english_text": "Suppose he sees the sword advancing against the country",
+        "target": ["approach of hostile forces", "military threat", "warfare"],
+        "vehicle": ["the sword", "weapon", "physical object of war"],
+        "ground": ["the sword is the characteristic weapon of battle, so it easily stands for war and its destructive onset", "cause represented by instrument", "war/violence domain"],
+        "posture": ["vivid depiction to ground later moral point", "neutral-descriptive within warning", "prophetic instruction"],
+        "explanation": "The ‘sword’ here again stands metonymically for the hostile army or war that is approaching the land, not for a literal single weapon moving across the countryside.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 33:4",
+    "deliberation": "Two primary figurative expressions: (1) the sword that ‘comes and takes’ a person—personification plus metonymy for invading forces; (2) the idiom ‘his blood will be on his head’ for personal guilt/responsibility.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתָּ֥בוֹא חֶ֖רֶב וַתִּקָּחֵ֑הוּ",
+        "english_text": "and the sword comes and dispatches him / takes him",
+        "target": ["killing of the individual by invading forces", "death in war as divine judgment", "warfare/punishment"],
+        "vehicle": ["a sword that comes and takes someone", "animated killing weapon", "agentive instrument of war"],
+        "ground": ["the sword is the immediate instrument of death in battle and can be pictured as an active agent that ‘takes’ life", "agency of the weapon standing for the killers", "violence and removal from life"],
+        "posture": ["warning of real mortal danger", "negative moral/judicial evaluation", "prophetic judgment discourse"],
+        "explanation": "The sword is both metonymic (standing for attackers) and personified as an agent that ‘comes’ and ‘takes’ someone’s life, vividly depicting death by war.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דָּמ֖וֹ בְּרֹאשׁ֥וֹ יִֽהְיֶֽה",
+        "english_text": "his blood shall be on his own head",
+        "target": ["personal guilt and liability for one’s own death", "moral/legal responsibility", "judicial accountability"],
+        "vehicle": ["blood on a person’s head", "visible stain or burden", "physical defilement/mark"],
+        "ground": ["blood symbolizes life taken and guilt incurred; locating it ‘on the head’ pictures responsibility resting visibly and personally on the individual", "burden/marking indicating culpability", "legal-guilt imagery"],
+        "posture": ["strong moral warning", "negative evaluation of negligence", "didactic/judicial discourse"],
+        "explanation": "The idiom depicts guilt for one’s own death as ‘blood’ resting on one’s head, a metaphor for bearing full responsibility for the outcome.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 33:5",
+    "deliberation": "Reiterates v.4. One idiom repeats (‘his blood shall be upon himself’), and another expression ‘he has delivered his soul’ uses נֶפֶשׁ (soul) for ‘life’ and conceptualizes rescue as delivering the soul. Both are figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דָּמ֖וֹ בּ֣וֹ יִֽהְיֶ֑ה",
+        "english_text": "their bloodguilt shall be upon themselves",
+        "target": ["self-incurred guilt for one’s own death", "moral/legal responsibility", "judicial accountability"],
+        "vehicle": ["blood resting ‘on/in him’", "attached stain/burden", "physical contamination/weight"],
+        "ground": ["blood as symbol of life taken and guilt; the idea of it being ‘upon’ the person pictures their responsibility as a burden that clings to them", "attachment of consequence to agent", "guilt-as-burden imagery"],
+        "posture": ["emphatic moral assertion", "negative evaluation of ignoring warning", "didactic warning"],
+        "explanation": "The idiom uses ‘blood’ upon the person as a metaphor for the guilt and responsibility they carry for their own death.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְה֥וּא נִזְהָ֖ר נַפְשׁ֥וֹ מִלֵּֽט",
+        "english_text": "had they taken the warning, they would have saved their life (lit. ‘delivered his soul’)",
+        "target": ["preservation of physical life", "continued existence", "human well-being"],
+        "vehicle": ["‘soul’ (נֶפֶשׁ) to be delivered", "precious inner self rescued from danger", "removal from peril"],
+        "ground": ["נֶפֶשׁ stands metonymically for the whole person’s life; to ‘deliver’ it is to rescue from threat, picturing survival as escape from captivity or danger", "life conceptualized as something that can be carried off or saved", "rescue/salvation imagery"],
+        "posture": ["encouragement to heed warning", "positive evaluation of prudent response", "didactic exhortation"],
+        "explanation": "Life is spoken of as a ‘soul’ that can be delivered or rescued, using נֶפֶשׁ metonymically for the person’s life and the metaphor of escape from danger for survival.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 33:6",
+    "deliberation": "Two main figurative features: (1) recurring ‘sword’ imagery as metonymy for invaders; (2) idiom ‘I will require his blood from the hand of the watchman,’ where ‘requiring blood’ and ‘hand’ stand for holding someone accountable.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "partial",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְדָמ֖וֹ מִיַּֽד־הַצֹּפֶ֥ה אֶדְרֹֽשׁ",
+        "english_text": "I will demand a reckoning for their blood from the lookout (lit. ‘from the hand of the watchman I will seek his blood’)",
+        "target": ["God’s holding the watchman morally accountable", "assignment of responsibility", "judicial reckoning"],
+        "vehicle": ["seeking someone’s blood from their hand", "blood as object possessed/owed", "hand as locus of power and responsibility"],
+        "ground": ["blood symbolizes guilty death; the ‘hand’ symbolizes control and responsibility. To ‘seek blood from the hand’ pictures God demanding payment or accounting from the one who held responsibility", "legal repayment/exaction imagery", "agency represented by hand"],
+        "posture": ["severe warning to the prophet as watchman", "negative evaluation of negligence", "judgment-threat discourse"],
+        "explanation": "The idiom portrays God as demanding ‘blood’ (guilt for another’s death) from the ‘hand’ of the negligent watchman, metaphorically expressing divine accountability and retribution.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתָּב֣וֹא חֶ֔רֶב וַתִּקַּ֥ח מֵהֶ֖ם נָ֑פֶשׁ",
+        "english_text": "and the sword comes and destroys one of them (lit. ‘takes a life from them’)",
+        "target": ["killing of individuals by invading forces", "lethal outcome of war", "death in judgment"],
+        "vehicle": ["the sword taking a life", "weapon as agent removing life", "instrument standing for attackers"],
+        "ground": ["the sword is the means of killing and so stands for the warriors; its ‘taking’ a life pictures the lethal effect of the invasion", "instrument-action metonymy", "violence leading to loss of life"],
+        "posture": ["vivid description to motivate vigilance", "negative evaluation of failure to warn", "didactic warning"],
+        "explanation": "The sword is a metonym for the attacking forces, described as coming and ‘taking’ a life, emphasizing the deadly consequence of unheeded danger.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 33:7",
+    "deliberation": "Here the earlier literal watchman scenario is explicitly mapped onto Ezekiel’s prophetic role, so ‘watchman’ is now metaphorical. ‘House of Israel’ is a standard metonymy for the people as a whole. Both are figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צֹפֶ֥ה נְתַתִּ֖יךָ לְבֵ֣ית יִשְׂרָאֵ֑ל",
+        "english_text": "I have appointed you a lookout for the House of Israel",
+        "target": ["Ezekiel’s prophetic responsibility", "role of spiritual/moral warning", "prophetic office"],
+        "vehicle": ["a watchman posted over a city or people", "military lookout/guardian", "protective sentinel"],
+        "ground": ["both a watchman and a prophet must be vigilant, perceive approaching danger, and warn others, bearing responsibility for their response", "functions of warning and responsibility", "security/oversight imagery"],
+        "posture": ["commissioning and burdening of prophet", "serious, duty-focused evaluation", "prophetic vocation discourse"],
+        "explanation": "Ezekiel’s prophetic office is compared to a city watchman’s role, making his task of warning Israel about impending judgment vivid through the metaphor of vigilant surveillance.",
+        "confidence": 0.99
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לְבֵ֣ית יִשְׂרָאֵ֑ל",
+        "english_text": "for the House of Israel",
+        "target": ["the people of Israel collectively", "national entity", "covenant community"],
+        "vehicle": ["‘house’ as a household or dynasty", "built structure/lineage", "social unit"],
+        "ground": ["a ‘house’ can denote a family or lineage; here it stands for the entire people descended from Israel, emphasizing corporate identity", "container for its inhabitants", "family/dynasty imagery"],
+        "posture": ["covenantal corporate address", "neutral-descriptive", "prophetic address formula"],
+        "explanation": "‘House’ is used metonymically for the entire people of Israel, a conventional way of designating the nation as a single extended household.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 33:8",
+    "deliberation": "Main figurative element is the idiom ‘I will demand his blood from your hand’ (requiring blood from Ezekiel), expressing accountability. Other phrases are straightforward.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְדָמ֖וֹ מִיָּדְךָ֥ אֲבַקֵּֽשׁ",
+        "english_text": "while from you I will demand a reckoning for their blood (lit. ‘I will seek his blood from your hand’)",
+        "target": ["Ezekiel’s responsibility for failing to warn the wicked", "divine judgment on negligent leadership", "moral/legal accountability"],
+        "vehicle": ["seeking someone’s blood from another’s hand", "blood as a due that can be demanded", "hand as symbol of agency and responsibility"],
+        "ground": ["blood represents wrongful death; the ‘hand’ represents control and action. God’s seeking blood ‘from the hand’ pictures him exacting payment or holding someone answerable for another’s death", "legal claim/recovery imagery", "agency and liability symbolism"],
+        "posture": ["severe divine warning", "negative evaluation of silence", "judicial threat"],
+        "explanation": "The idiom portrays God as demanding the ‘blood’ (guilt for the wicked’s death) from Ezekiel’s ‘hand,’ a vivid metaphor for divine exaction of accountability from the prophet.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 33:9",
+    "deliberation": "Key figurative expression: ‘you will have saved your life’ (lit. ‘you have delivered your soul’), using נֶפֶשׁ for life and the metaphor of delivering/rescuing the soul.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאַתָּ֖ה נַפְשְׁךָ֥ הִצַּֽלְתָּ",
+        "english_text": "while you will have saved your life (lit. ‘you have delivered your soul’)",
+        "target": ["Ezekiel’s own preservation from divine judgment", "personal safety before God", "prophet’s well-being"],
+        "vehicle": ["delivering one’s ‘soul’", "rescuing an inner self from danger", "removing a precious entity from peril"],
+        "ground": ["נֶפֶשׁ stands for the person’s life; to ‘deliver’ it evokes saving someone from captivity, danger, or death. Ezekiel’s obedience ‘rescues’ his own life from judgment", "salvation-as-rescue imagery", "life conceptualized as something that can be taken or saved"],
+        "posture": ["encouraging compliance despite grim message", "positive evaluation of faithful warning", "didactic exhortation"],
+        "explanation": "Life is described as a ‘soul’ that can be delivered, using metonymy for life and the metaphor of rescue from danger to describe Ezekiel’s escape from guilt.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 33:10",
+    "deliberation": "Two related figurative expressions: (1) ‘our transgressions and sins are upon us’ portrays sins as a burden resting on people; (2) ‘in them we are wasting away’ uses imagery of bodily decay for inner spiritual/psychological disintegration under guilt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּֽי־פְשָׁעֵ֥ינוּ וְחַטֹּאתֵ֖ינוּ עָלֵ֑ינוּ",
+        "english_text": "Our transgressions and our sins [are] upon us",
+        "target": ["the oppressive effect of guilt on the exiles", "sense of condemnation", "spiritual/moral condition"],
+        "vehicle": ["sins lying ‘upon’ someone", "a weight or load resting on a person", "burden pressing down"],
+        "ground": ["a physical burden weighs upon and oppresses; guilt and sin create a similar felt heaviness and inescapable pressure", "upward/downward and weight imagery", "psychological oppression conceptualized as physical load"],
+        "posture": ["lamenting, despairing self-assessment", 'negative evaluation of their state', "penitential discourse"],
+        "explanation": "Israel’s sins are pictured as a heavy load resting upon them, a metaphor for the oppressive, inescapable nature of their guilt.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבָ֛ם אֲנַ֥חְנוּ נְמַקִּ֖ים",
+        "english_text": "and we are wasting away because of them (lit. ‘in them we are rotting away’)",
+        "target": ["their progressive spiritual and emotional deterioration under judgment and guilt", "loss of vitality and hope", "inner decay of the community"],
+        "vehicle": ["rotting/wasting away", "physical decay of flesh or material", "gradual decomposition"],
+        "ground": ["physical rot is slow, destructive, and irreversible; the people’s experience of judgment and guilt feels like a slow internal decay", "loss of integrity and strength", "sickness/decay imagery applied to spiritual/moral state"],
+        "posture": ["despairing acknowledgement of condition", "negative, hopeless tone", "lament"],
+        "explanation": "The community’s inner collapse under sin and exile is likened to a body rotting away, turning their spiritual despondency into vivid decay imagery.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 33:11",
+    "deliberation": "Key figurative cluster is the path metaphor: ‘turn back’ from ‘your evil ways’ conceptualizes moral conduct as a way/road and repentance as turning around. ‘House of Israel’ and oath formula are conventional.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שׁ֣וּבוּ שׁ֜וּבוּ מִדַּרְכֵיכֶ֧ם הָרָעִ֛ים",
+        "english_text": "Turn back, turn back from your evil ways",
+        "target": ["Israel’s patterns of behavior and moral choices", "repentance from sin", "ethical orientation of life"],
+        "vehicle": ["‘ways’ as roads or paths; ‘turning back’ as changing direction on a path", "travel along a route", "movement in space"],
+        "ground": ["a course of life resembles traveling along a path; to change one’s conduct is like turning around and choosing a different route", "directionality and orientation", "journey imagery for moral life"],
+        "posture": ["urgent exhortation", "strongly negative evaluation of current conduct, positive appeal to change", "prophetic call to repentance"],
+        "explanation": "Israel’s behavior is depicted as walking along ‘ways,’ and repentance is portrayed as turning around on those roads, a standard path metaphor for moral transformation.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 33:12",
+    "deliberation": "Dominant figurative expression is ‘the wickedness of the wicked will not cause him to stumble when he turns from his wickedness’—stumbling as a metaphor for suffering ruin/failure because of sin. Other elements are conceptual but fairly literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְרִשְׁעַ֤ת הָֽרָשָׁע֙ לֹא־יִכָּ֣שֶׁל בָּ֔הּ בְּי֖וֹם שׁוּב֣וֹ מֵֽרִשְׁע֑וֹ",
+        "english_text": "nor shall the wickedness of the wicked cause them to stumble when they turn back from their wickedness",
+        "target": ["suffering ruin or downfall because of past sin", "ongoing liability to judgment", "moral-spiritual failure"],
+        "vehicle": ["stumbling while walking", "tripping and falling on a path", "loss of footing"],
+        "ground": ["to stumble is to lose stability and fall; moral ruin and judgment are like tripping, losing one’s footing, and collapsing", "path/journey instability", "danger and harm from obstacles"],
+        "posture": ["reassuring promise to repentant sinners", "positive evaluation of turning from sin", "pastoral/protective discourse"],
+        "explanation": "Past wickedness is pictured as something that could cause a person to ‘stumble’—a metaphor for ruin or harm—but God assures that when they truly turn back, it will not trip them up.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 33:13",
+    "deliberation": "Verse states a moral principle about the righteous who turn to iniquity. Expressions like ‘none of his righteous deeds shall be remembered’ personify God as remembering/forgetting, but this is standard covenantal-legal language rather than vivid imagery; no strong distinct metaphor or idiom beyond that.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 33:14",
+    "deliberation": "Statement about a wicked person who turns and does justice and righteousness. Uses standard legal-moral vocabulary; no clear metaphor, simile, or idiom beyond the already established ‘you shall die’ formula.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 33:15",
+    "deliberation": "Key figurative expression is ‘he walked in the statutes of life’—conduct conceptualized as walking on a path defined by God’s ‘statutes of life.’ Rest of the verse is legal and literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּחֻקּ֤וֹת הַֽחַיִּים֙ הָלַ֔ךְ",
+        "english_text": "follow the laws of life (lit. ‘walked in the statutes of life’)",
+        "target": ["living in obedience to God’s life-giving commands", "ongoing moral conduct", "ethical lifestyle"],
+        "vehicle": ["walking in statutes/laws", "movement along a prescribed path", "journey under guidance"],
+        "ground": ["a way of life is like a route one walks; God’s statutes provide the path that leads to life, so obedience is like walking within those life-giving tracks", "direction, progress, boundaries", "journey/path imagery for obedience"],
+        "posture": ["positive description of repentance’s fruit", "affirmative evaluation of obedience", "didactic encouragement"],
+        "explanation": "Obedience is depicted as ‘walking’ in God’s ‘statutes of life,’ using the path metaphor for life conduct and presenting the commands as a roadway that leads to life.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 33:16",
+    "deliberation": "Main figurative expression is ‘none of the sins…shall be remembered to him,’ conceptualizing forgiveness as God’s ‘forgetting’ sins. This is anthropomorphic and metaphorical for not holding sins against someone.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כׇּל־חַטֹּאתָו֙ אֲשֶׁ֣ר חָטָ֔א לֹ֥א תִזָּכַ֖רְנָה ל֑וֹ",
+        "english_text": "None of the sins that they committed shall be remembered against them",
+        "target": ["God’s act of forgiving and no longer holding sins against a person", "status of guilt before God", "covenantal relationship"],
+        "vehicle": ["not remembering sins", "failure to call something to mind or record it", "erasure from memory"],
+        "ground": ["to remember is to keep something on record and act in light of it; not remembering pictures God as erasing or refusing to consult a record of sin", "memory/record-keeping imagery", "administrative/judicial forgetting"],
+        "posture": ["strong assurance of full forgiveness", "positive evaluation of just and righteous behavior", "pastoral/comforting discourse"],
+        "explanation": "Divine forgiveness is depicted as God’s ‘not remembering’ sins, a metaphor for wiping them from the record so that they no longer count against the person.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 33:17",
+    "deliberation": "Uses ‘way’ (דֶרֶךְ) for God’s manner of dealing and Israel’s manner of life—standard path metaphor for habitual conduct/strategy. The people say ‘the way of the Lord is not right/fair,’ contrasted with ‘their way is not right.’",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹ֥א יִתָּכֵ֖ן דֶּ֣רֶךְ אֲדֹנָ֑י וְהֵ֖מָּה דַּרְכָּ֥ם לֹא־יִתָּכֵֽן",
+        "english_text": "‘The Sovereign’s way is unfair.’ But it is their way that is unfair!",
+        "target": ["God’s pattern of judgment and mercy; Israel’s patterns of conduct", "moral policies and behavior", "divine and human ways of acting"],
+        "vehicle": ["a ‘way’ or road along which one travels", "route with direction and quality (straight/right vs. crooked/unfit)", "path or course"],
+        "ground": ["a course of action can be likened to a road: it has direction, can be straight or crooked, suitable or unsuitable; the judgment of ‘not right’ plays on this path imagery", "straightness vs. deviation", "journey metaphor for moral practice and policy"],
+        "posture": ["corrective rebuttal of Israel’s complaint", "negative evaluation of Israel’s own ‘way’", "argumentative prophetic discourse"],
+        "explanation": "Both God’s judicial practice and Israel’s behavior are described as ‘ways,’ using the path metaphor to frame the dispute over whose course is truly ‘right’ or ‘fitting.’",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 33:18",
+    "deliberation": "Again uses the path metaphor: ‘when the righteous turns from his righteousness and does iniquity’—turning from righteousness as changing direction on a path. The death result is literal punishment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּשׁוּב־צַדִּ֥יק מִצִּדְקָת֖וֹ",
+        "english_text": "When someone righteous turns away from their righteous deeds",
+        "target": ["abandoning a previously righteous pattern of life", "moral defection", "ethical change for the worse"],
+        "vehicle": ["turning away from a path", "changing direction while walking", "movement off a route"],
+        "ground": ["leaving a course of righteous living is like turning off a straight path to another direction", "directional movement as image of change", "path metaphor for moral orientation"],
+        "posture": ["warning of the danger of apostasy", "negative evaluation of turning from righteousness", "didactic/judgment discourse"],
+        "explanation": "Moral defection is conceptualized as physically turning away from a path of righteousness, continuing the path imagery of moral life.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 33:19",
+    "deliberation": "Mirror of v.18. Uses ‘turning back from wickedness’ and living ‘by’ just and right deeds. Path metaphor is primary: turning from one path to another. ‘Live by them’ is conceptual but essentially literal promise.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְשׁ֤וּב רָשָׁע֙ מֵֽרִשְׁעָת֔וֹ",
+        "english_text": "And when someone wicked turns back from wickedness",
+        "target": ["repentance of a formerly wicked person", "change in moral direction", "ethical reorientation"],
+        "vehicle": ["turning back along a path", "reversing direction of travel", "return to a starting point"],
+        "ground": ["changing from wicked to just behavior is like turning around and going the opposite way on a road", "reversal and return imagery", "journey metaphor for repentance"],
+        "posture": ["hopeful invitation and validation of repentance", "positive evaluation of change toward justice", "didactic/pastoral discourse"],
+        "explanation": "Repentance from wickedness is portrayed as turning back on a path, dramatizing moral change as a reversal of direction.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 33:20",
+    "deliberation": "Again uses ‘way’ (דֶרֶךְ) for God’s and Israel’s behavior, and ‘each according to his ways I will judge you’—judgment according to one’s path. This is the same path metaphor for conduct and policy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִ֧ישׁ כִּדְרָכָ֛יו אֶשְׁפּ֥וֹט אֶתְכֶ֖ם",
+        "english_text": "I will judge each one of you according to your own ways",
+        "target": ["individual patterns of life and behavior", "basis of divine judgment", "personal conduct record"],
+        "vehicle": ["‘ways’ as roads or paths people follow", "courses of travel", "routes with direction and quality"],
+        "ground": ["a person’s behavior over time resembles a path they take; judgment ‘according to his ways’ is like evaluating which route he chose and where it led", "path as cumulative pattern", "journey imagery for life-history"],
+        "posture": ["solemn pronouncement of individualized justice", "neutral-to-negative warning tone", "judicial discourse"],
+        "explanation": "God’s judgment is said to be ‘according to your ways,’ using the path metaphor to describe a person’s life-course as the road by which they are assessed.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 33:21",
+    "deliberation": "The phrase ‘the city has been struck’ (הֻכְּתָה הָעִיר) uses the city as metonymy for its community and ‘struck’ as battle language. The rest is narrative and literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "partial",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֻכְּתָ֥ה הָעִֽיר",
+        "english_text": "The city has fallen (lit. ‘the city has been struck’)",
+        "target": ["Jerusalem’s conquest and devastation", "defeat of its inhabitants", "military disaster"],
+        "vehicle": ["a city being struck", "physical blow delivered to an object", "attack on a structure"],
+        "ground": ["to ‘strike’ is to wound or defeat; the city stands for its people and defenses, so being struck pictures the community’s military defeat", "impact/harm imagery", "city-as-community metonymy"],
+        "posture": ["sober factual report of catastrophe", "negative evaluation implied by context", "historical-prophetic narrative"],
+        "explanation": "The city is used metonymically for its population and defenses, and described as ‘struck,’ a martial image conveying Jerusalem’s conquest.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 33:22",
+    "deliberation": "Two figurative expressions: (1) ‘the hand of YHWH was upon me’—metaphor for overpowering divine influence; (2) ‘he opened my mouth’ and ‘I was no longer mute’—metaphorical for enabling prophetic speech.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיַד־יְהֹוָה֩ הָיְתָ֨ה אֵלַ֜י",
+        "english_text": "Now GOD’s hand had come upon me",
+        "target": ["prophetic inspiration and overpowering divine influence on Ezekiel", "God’s control and empowerment", "revelatory experience"],
+        "vehicle": ["the ‘hand’ of YHWH upon someone", "physical grasp or pressure by a powerful hand", "tangible touch"],
+        "ground": ["a hand upon someone controls, directs, and can be heavy or compelling; divine influence likewise seizes, directs, and empowers the prophet", "agency, control, weight imagery", "bodily metaphor for spiritual empowerment"],
+        "posture": ["solemn description of divine intervention", "neutral-to-positive evaluation of God’s control", "visionary narrative"],
+        "explanation": "God’s powerful influence is depicted as his ‘hand’ resting on Ezekiel, a conventional metaphor for being seized and controlled by divine power.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיִּפְתַּ֣ח אֶת־פִּ֔י ... וַיִּפָּ֣תַח פִּ֔י וְלֹ֥א נֶאֱלַ֖מְתִּי עוֹד",
+        "english_text": "opening my mouth ... my mouth was opened and I was no longer speechless",
+        "target": ["restoration of Ezekiel’s prophetic speech and commission", "capacity and authorization to speak God’s word", "prophetic function"],
+        "vehicle": ["opening a mouth that was closed", "removal of impediment to speech", "physical unsealing of lips"],
+        "ground": ["a closed mouth cannot speak; opening it allows speech. Ezekiel’s prior restriction and now renewed ability are pictured as physical mouth-closure and opening", "constraint vs. freedom of speech", "bodily metaphor for communicative empowerment"],
+        "posture": ["explanatory note of prophetic re-enablement", "positive evaluation of restored role", "narrative of vocation"],
+        "explanation": "Ezekiel’s divinely imposed muteness and its end are portrayed as his mouth being shut and then opened, a concrete metaphor for being unable and then authorized to speak on God’s behalf.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 33:23",
+    "deliberation": "Same prophetic formula as v.1: ‘the word of YHWH came to me.’ Again personifies the divine word as approaching the prophet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהֹוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "The word of GOD came to me:",
+        "target": ["divine communication to Ezekiel", "revelation event", "prophetic message"],
+        "vehicle": ["a ‘word’ that comes to a person", "animated message/visitor", "movement towards a recipient"],
+        "ground": ["communication is conceptualized as something that travels from sender to recipient; the ‘word’ is treated as an agent that approaches and speaks", "transfer/motion imagery", "personification of message"],
+        "posture": ["authoritative signal of revelation", "neutral-descriptive", "prophetic discourse"],
+        "explanation": "As in v.1, God’s message is personified as a ‘word’ that comes to Ezekiel, a metaphor for the arrival of revelation.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 33:24",
+    "deliberation": "Argument about Abraham and the current inhabitants of the ruins. ‘Ruins’ are literal devastated sites; references to inheriting the land are covenantal but not figurative per se in this verse. No distinct rhetorical figure beyond conventional language.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 33:25",
+    "deliberation": "Two notable figurative elements: (1) idiom ‘you lift up your eyes to your idols’ for turning one’s attention/dependence toward them; (2) rhetorical-ironical question at the end: after listing bloody sins, ‘and you [expect to] possess the land?’—dramatic irony/sarcasm.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעֵינֵכֶ֛ם תִּשְׂא֥וּ אֶל־גִּלּוּלֵיכֶ֖ם",
+        "english_text": "you raise your eyes to your fetishes (idols)",
+        "target": ["directing devotion, trust, and worship toward idols", "inner orientation of the heart", "idolatrous allegiance"],
+        "vehicle": ["lifting up the eyes toward something", "looking up in expectation or reverence", "visual focus and upward gaze"],
+        "ground": ["where one looks, especially upward, indicates attention, desire, and reverence; turning the gaze to idols pictures giving them one’s worship and trust", "orientation of gaze as sign of devotion", "visual metaphor for spiritual direction"],
+        "posture": ["condemnation of idolatry", "negative moral evaluation", "prophetic accusation"],
+        "explanation": "The idiom ‘lift up the eyes to’ portrays idolatrous devotion as directing an upward, reverent gaze toward idols, a metaphor for turning one’s trust and worship toward them.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהָאָ֖רֶץ תִּירָֽשׁוּ",
+        "english_text": "yet you expect to possess the land!",
+        "target": ["their presumptuous expectation of security and blessing despite sin", "self-deception of the inhabitants", "false hope of inheritance"],
+        "vehicle": ["rhetorical question following a list of crimes", "implicit ironic contrast", "sarcastic incredulity"],
+        "ground": ["stating their expectation after enumerating disqualifying sins creates an irony: the outcome they anticipate is obviously incongruous with their behavior", "disjunction between expectation and reality", "rhetorical irony"],
+        "posture": ["biting rebuke and exposure of folly", "negative evaluation of their claim", "ironic/judgment discourse"],
+        "explanation": "After listing bloodshed and idolatry, the closing question ‘and the land you will possess?’ functions ironically—mocking their assumption that they can secure the land while flagrantly violating God’s commands.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 33:26",
+    "deliberation": "Key idiom: ‘you have stood upon your sword’—likely meaning relying on violence/armed power. The repeated ending ‘and you [expect to] possess the land?’ continues the irony of v.25 as a separate rhetorical device.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עֲמַדְתֶּ֤ם עַֽל־חַרְבְּכֶם֙",
+        "english_text": "You men have relied on your sword (lit. ‘you have stood upon your sword’)",
+        "target": ["trusting in violent power for security", "self-reliant militarism", "aggressive posture toward others"],
+        "vehicle": ["standing upon one’s sword", "posturing over a weapon", "physical stance on/with a blade"],
+        "ground": ["to stand upon one’s sword evokes reliance and constant readiness to use violence; their security is pictured as literally founded on the weapon", "foundation/support imagery using weapon", "metonymic use of sword for violent power"],
+        "posture": ["sharp denunciation of violent self-reliance", "negative, accusatory tone", "prophetic rebuke"],
+        "explanation": "Their dependence on violence is depicted by the idiom ‘you have stood upon your sword,’ a metaphorical way of saying that their footing and stance are based on armed might.",
+        "confidence": 0.91
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהָאָ֖רֶץ תִּירָֽשׁוּ",
+        "english_text": "yet you expect to possess the land!",
+        "target": ["their expectation of inheriting the land while committing abominations", "self-deceived confidence", "covenantal presumption"],
+        "vehicle": ["rhetorical question following charges of abomination and adultery", "implicit sarcasm/irony", "contrastive structure"],
+        "ground": ["the gap between their immoral behavior and their expectation of blessing creates an ironic tension; the form implies the outcome is absurd", "incongruity between premise and conclusion", "judgmental irony"],
+        "posture": ["derisive exposure of their false hopes", "strong negative evaluation", "ironic judicial speech"],
+        "explanation": "As in v.25, the climactic question ‘and you will possess the land?’ is an ironic device that ridicules their confidence in possessing the land despite their abhorrent conduct.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 33:27",
+    "deliberation": "Describes three groups and their deaths—by sword, beasts, pestilence. These are standard judgment motifs and may be literal outcomes; there is no clear additional figurative turn beyond established prophetic stock phrases.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 33:28",
+    "deliberation": "Two primary figurative expressions: (1) ‘the pride of its strength shall cease’ personifies the land’s ‘proud glory’ as something that can be stilled; (2) ‘the mountains of Israel shall be desolate, with none passing through’ likely uses hyperbole (‘no one passing’) to intensify the picture of desertedness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנִשְׁבַּ֖ת גְּא֣וֹן עֻזָּ֑הּ",
+        "english_text": "and its proud glory shall cease (lit. ‘the pride of its strength shall rest/come to an end’)",
+        "target": ["Israel’s former power, security, and splendor in the land", "national self-exaltation", "visible magnificence of the land and people"],
+        "vehicle": ["pride of strength resting/ceasing", "a proud entity coming to a halt", "personified ‘pride’ associated with strength"],
+        "ground": ["national greatness is likened to a proud, exalted state; its ‘resting’ or being stilled pictures humiliation and cessation of that self-exalting power", "height vs. collapse imagery", "personified abstraction of pride"],
+        "posture": ["pronouncement of humbling judgment", "negative evaluation of former pride", "prophetic doom oracle"],
+        "explanation": "The ‘pride of its strength’ personifies Israel’s former power and glory as a proud thing that can be brought to rest, portraying the coming end of national self-exaltation.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשָׁ֥מְמ֛וּ הָרֵ֥י יִשְׂרָאֵ֖ל מֵאֵ֥ין עוֹבֵֽר",
+        "english_text": "and the mountains of Israel shall be desolate, with none passing through",
+        "target": ["extreme depopulation and abandonment of the land", "total disruption of normal life and travel", "comprehensive devastation"],
+        "vehicle": ["mountains so desolate that no one passes through them at all", "absolute absence of travelers", "empty landscape imagery"],
+        "ground": ["a landscape without a single passerby is an intensified picture of desolation and abandonment, exaggerating the emptiness to underscore total devastation", "from many travelers to none", "hyperbolic zero-presence scenario"],
+        "posture": ["dramatic emphasis of judgment’s severity", "strongly negative tone", "prophetic threat"],
+        "explanation": "Saying that no one at all passes through the mountains is likely hyperbolic, using an extreme picture of emptiness to stress how thoroughly the land will be laid waste.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 33:29",
+    "deliberation": "Formula ‘they shall know that I am YHWH’ is covenantal but not strongly figurative; ‘make the land a desolate waste’ continues literal-judgment language from v.28. No additional clear rhetorical figures emerge here beyond standard terminology.",
+    "instances": []
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 33:30",
+    "deliberation": "People ‘speak about you by the walls and at the doors’—literal clandestine conversation. Figurative element: ‘what word has gone out from YHWH’—the ‘word’ depicted as something that goes out from God, like a dispatched message.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מָ֣ה הַדָּבָ֔ר הַיּוֹצֵ֖א מֵאֵ֥ת יְהֹוָֽה",
+        "english_text": "what word has issued from GOD (lit. ‘what is the word going out from YHWH’)",
+        "target": ["prophetic message originating with God", "divine communication", "revelatory speech-act"],
+        "vehicle": ["a ‘word’ that goes out from someone", "dispatched object/agent exiting a source", "movement from inside to outside"],
+        "ground": ["a spoken message proceeds from a speaker; describing it as ‘going out’ personifies the word as a thing or agent leaving God, emphasizing its origin and dynamic movement into the world", "emission/projection imagery", "personified message"],
+        "posture": ["curious but superficial interest by the people", "neutral description tinged with critique", "narrative-commentary"],
+        "explanation": "God’s message is personified as a ‘word’ that goes out from him, picturing revelation as a dispatched entity leaving its divine source.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 33:31",
+    "deliberation": "Two figurative phrases: (1) ‘they are doing loves/lusts with their mouth’—speech portrayed as erotic/affective output, a kind of sensuous talk; (2) ‘their heart goes after their gain’—heart as seat of desire and ‘going after’ as metaphorical pursuit.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "possible",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּֽי־עֲגָבִ֤ים בְּפִיהֶם֙ הֵ֣מָּה עֹשִׂ֔ים",
+        "english_text": "For they produce nothing but lust with their mouths (lit. ‘for loves/lusts with their mouth they are doing’)",
+        "target": ["their insincere, sensuous, self-gratifying speech in response to Ezekiel", "verbal flattery and empty emotion", "hypocritical religious talk"],
+        "vehicle": ["‘loves/lusts’ performed with the mouth", "erotic/affectionate acts associated with the mouth", "sensual output"],
+        "ground": ["their speech is not obedient response but self-indulgent verbal enjoyment, likened to performing acts of lust or love with the mouth", "mouth stands metonymically for speech", "sensuality imagery applied to talk"],
+        "posture": ["sharp critique of superficial listening", "negative moral evaluation", "prophetic denunciation"],
+        "explanation": "Their response to Ezekiel’s message is described as ‘doing loves with their mouth,’ portraying their talk as sensual, self-pleasing verbal output rather than genuine obedience.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַחֲרֵ֥י בִצְעָ֖ם לִבָּ֥ם הֹלֵֽךְ",
+        "english_text": "and their hearts pursue nothing but gain (lit. ‘after their gain their heart goes’)",
+        "target": ["their inner desires and motivations", "greedy orientation of the self", "moral center of decision-making"],
+        "vehicle": ["the heart going after gain", "an inner organ moving in pursuit", "pursuing something as a follower or hunter"],
+        "ground": ["the ‘heart’ stands metonymically for the inner self; its ‘going after’ gain pictures desire and will chasing profit as one would pursue a target", "movement toward an object of desire", "journey/chase imagery for covetousness"],
+        "posture": ["unmasking of internal motives", "negative evaluation of greed", "prophetic critique"],
+        "explanation": "Their inner self (‘heart’) is portrayed as actively going after material gain, a metaphor for their greedy pursuit of profit that overrides any sincere response to God’s word.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Ezekiel 33:32",
+    "deliberation": "Core figure is an explicit simile: Ezekiel is ‘like’ a singer of love/bawdy songs with a beautiful voice and skillful playing. This compares his prophetic message’s reception to entertainment music that people enjoy but don’t obey.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהִנְּךָ֤ לָהֶם֙ כְּשִׁ֣יר עֲגָבִ֔ים יְפֵ֥ה ק֖וֹל וּמֵטִ֣ב נַגֵּ֑ן",
+        "english_text": "To them you are just a singer of bawdy songs, who has a sweet voice and plays skillfully (lit. ‘and behold, you are to them like a song of loves, of beautiful voice and skillful playing’)",
+        "target": ["how the people perceive and treat Ezekiel’s prophetic ministry", "their reception of God’s word as mere entertainment", "the prophet’s function in their eyes"],
+        "vehicle": ["a performer of a ‘song of loves’ with beautiful voice and skillful music", "entertainment singer/musician", "sensual or pleasing musical performance"],
+        "ground": ["both the prophet and an entertainer speak/sing to an audience; here the audience enjoys the sound but does not act on the content, as if Ezekiel were merely a pleasing love-song performer", "aesthetic enjoyment without obedience", "artistic performance imagery for prophecy reception"],
+        "posture": ["sarcastic critique of their attitude", "negative evaluation of their superficial listening", "prophetic lament over audience response"],
+        "explanation": "Ezekiel’s role in the people’s eyes is compared, via simile, to that of a singer of love songs whose beautiful performance is enjoyed as entertainment rather than heeded as a serious, life-directing message.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 33,
+    "reference": "Ezekiel 33:33",
+    "deliberation": "Speaks of the coming of what has been prophesied and the people’s recognition of a prophet in their midst. The language is straightforward; no additional clear figurative devices beyond previously established judgment concepts.",
+    "instances": []
+  }
+]

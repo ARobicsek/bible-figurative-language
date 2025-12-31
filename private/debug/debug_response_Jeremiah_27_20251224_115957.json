@@ -1,0 +1,619 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 27:1",
+    "deliberation": "Considered whether the prophetic formula 'this word came to Jeremiah from YHWH' personifies 'word' as an agent, but in Biblical Hebrew it functions as a set technical formula for revelation and is read as straightforwardly literal within the canonical worldview. No other imagery or obvious figurative devices appear.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 27:2",
+    "deliberation": "On the surface this is a literal command to construct physical yoke-bars and put them on Jeremiah’s neck. However, in prophetic discourse this constitutes a symbolic action whose very design is metaphorical: the physical yoke represents coming political subjugation. The figurative force lies in the enacted metaphor of wearing a yoke as a symbol of foreign domination, which becomes explicit in later verses.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "עֲשֵׂה לְךָ מוֹסֵרוֹת וּמֹטוֹת וּנְתַתָּם עַל־צַוָּארֶךָ",
+        "english_text": "Make for yourself thongs and bars of a yoke, and put them on your neck.",
+        "target": [
+          "future political subjugation under Babylon",
+          "national/political domination",
+          "socio‑political reality"
+        ],
+        "vehicle": [
+          "a yoke placed on the neck",
+          "harness for a draft animal",
+          "agricultural/physical object"
+        ],
+        "ground": [
+          "heavy, constraining control imposed from outside",
+          "lack of freedom and enforced labor",
+          "experiential/affective features of oppression"
+        ],
+        "posture": [
+          "prophetic sign‑act embodying the necessity of submission",
+          "didactic prophetic symbolism",
+          "theological–pragmatic stance toward Babylonian rule"
+        ],
+        "explanation": "The physical yoke Jeremiah is commanded to wear functions as an enacted metaphor for the burdensome political control that Babylon will exercise over the nations.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 27:3",
+    "deliberation": "This verse narrates the sending of the (already symbolic) yokes to various kings by envoys. The verse itself uses only pronominal reference ('send them') without introducing new imagery; it describes the logistics of the sign‑act rather than employing an additional figurative expression.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 27:4",
+    "deliberation": "The verse is largely formulaic: 'Thus says YHWH of hosts, the God of Israel; Thus you shall say to your masters.' The title 'YHWH of hosts' is a conventional divine epithet and not deployed here as an active image, and 'masters' is literal for suzerain kings. No independent figurative expressions arise in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 27:5",
+    "deliberation": "This verse combines (1) a list of created entities, including 'the human and the animal,' functioning as a merism for living creatures, and (2) the anthropomorphic phrase 'by my great power and by my outstretched arm,' a conventional metaphor for divine power and effective action. Both are figurative and distinct.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֶת־הָאָדָם וְאֶת־הַבְּהֵמָה אֲשֶׁר עַל־פְּנֵי הָאָרֶץ",
+        "english_text": "the humans and the animals that are on the earth",
+        "target": [
+          "all living creatures on earth",
+          "totality of terrestrial life",
+          "created order"
+        ],
+        "vehicle": [
+          "humans and animals as two major classes",
+          "paired contrasting categories",
+          "taxonomic conceptualization"
+        ],
+        "ground": [
+          "two complementary categories standing for the whole range",
+          "inclusive representation of life forms",
+          "use of polar or major groups to imply totality"
+        ],
+        "posture": [
+          "asserts YHWH’s universal creative authority",
+          "theological comprehensive claim",
+          "cosmic–sovereign stance"
+        ],
+        "explanation": "The pairing of 'humans and animals' functions as a merism: two representative classes are named in order to signify all living creatures on earth.",
+        "confidence": 0.82
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּכֹחִי הַגָּדוֹל וּבִזְרוֹעִי הַנְּטוּיָה",
+        "english_text": "by My great might and My outstretched arm",
+        "target": [
+          "YHWH’s effective power in creation and history",
+          "divine power and agency",
+          "theological reality"
+        ],
+        "vehicle": [
+          "a powerful, outstretched arm",
+          "human limb extended in forceful action",
+          "bodily/anthropomorphic image"
+        ],
+        "ground": [
+          "strength, reach, and capability to act decisively",
+          "ability to exert control and accomplish tasks",
+          "shared experiential sense of power and effectiveness"
+        ],
+        "posture": [
+          "self‑assertion of unmatched strength",
+          "theophanic self‑presentation",
+          "claim of absolute divine sovereignty"
+        ],
+        "explanation": "Describing God’s power as an 'outstretched arm' is an anthropomorphic metaphor: divine might is pictured as a strong human arm extended to act forcefully.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 27:6",
+    "deliberation": "This verse contains several figurative elements: (1) 'I have given… into the hand of Nebuchadnezzar' where 'hand' metonymically denotes power or control; (2) Nebuchadnezzar called 'My servant'—a metaphor for his role as God’s instrument rather than a literal cultic servant; (3) 'even the wild beasts I have given to him to serve him,' which personifies animals as servants and metaphorically emphasizes the comprehensiveness of his dominion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "נָתַתִּי אֶת־כׇּל־הָאֲרָצוֹת הָאֵלֶּה בְּיַד נְבוּכַדְנֶאצַּר מֶלֶךְ־בָּבֶל",
+        "english_text": "I have given all these lands into the hand of King Nebuchadnezzar of Babylon",
+        "target": [
+          "Nebuchadnezzar’s divinely granted authority over the lands",
+          "political and military control",
+          "socio‑political power"
+        ],
+        "vehicle": [
+          "the hand receiving something",
+          "body part that grasps and wields",
+          "bodily image"
+        ],
+        "ground": [
+          "association of the hand with power, control, and ability to act",
+          "to have something 'in one’s hand' is to have it at one’s disposal",
+          "instrumental function of the hand"
+        ],
+        "posture": [
+          "depicts Nebuchadnezzar as empowered but derivative ruler",
+          "divine bestowal of authority",
+          "theological framing of imperial power"
+        ],
+        "explanation": "The 'hand' stands metonymically for power and control: giving the lands into Nebuchadnezzar’s hand means granting him authority over them.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "נְבוּכַדְנֶאצַּר מֶלֶךְ־בָּבֶל עַבְדִּי",
+        "english_text": "Nebuchadnezzar king of Babylon, My servant",
+        "target": [
+          "Nebuchadnezzar as an instrument of YHWH’s purposes",
+          "foreign imperial ruler functioning as divine agent",
+          "human political figure"
+        ],
+        "vehicle": [
+          "a servant belonging to a master",
+          "social role of a subordinate household worker",
+          "social hierarchy image"
+        ],
+        "ground": [
+          "relationship of subordination and usefulness to the will of another",
+          "carrying out tasks assigned by a superior",
+          "dependence and commanded service"
+        ],
+        "posture": [
+          "reframes the feared king as subordinate to YHWH",
+          "theological relativizing of imperial power",
+          "assertion of divine sovereignty over empires"
+        ],
+        "explanation": "Calling Nebuchadnezzar 'My servant' is metaphorical: he is not God’s worshiping devotee but an agent who, unknowingly, carries out God’s purposes as a servant does a master’s will.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְגַם אֶת־חַיַּת הַשָּׂדֶה נָתַתִּי לוֹ לְעׇבְדוֹ",
+        "english_text": "I even give him the wild beasts to serve him",
+        "target": [
+          "extent of Nebuchadnezzar’s dominion over the natural world in his realm",
+          "comprehensive sovereignty within his empire",
+          "political and cosmic rule"
+        ],
+        "vehicle": [
+          "wild beasts serving a master",
+          "domestic servant imagery applied to animals",
+          "social/animal image"
+        ],
+        "ground": [
+          "complete subjection implied when even animals are pictured as servants",
+          "lack of resistance and total control",
+          "breadth of authority beyond human subjects"
+        ],
+        "posture": [
+          "maximizes the perceived scope of his rule under God",
+          "emphasizes inevitability of Babylonian dominance",
+          "heightened portrayal of delegated power"
+        ],
+        "explanation": "Wild animals are personified as servants, forming a metaphor for the total subjection of the created order within Nebuchadnezzar’s sphere of rule.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 27:7",
+    "deliberation": "The main clause about nations serving Nebuchadnezzar and his descendants is standard political language. However, the phrase 'until the time of his own land comes' uses 'time of his land' as a metonymic way of speaking about Babylon’s appointed moment of judgment/overthrow, rather than a literal 'time' belonging to dirt or territory.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עַד בֹּא־עֵת אַרְצוֹ גַּם־הוּא",
+        "english_text": "until the turn [lit. time] of his own land comes also",
+        "target": [
+          "the appointed time for Babylon’s downfall and judgment",
+          "historical moment of reversal for the empire",
+          "divinely set historical future"
+        ],
+        "vehicle": [
+          "the 'time' of a land arriving",
+          "abstract temporal period linked to territory",
+          "temporal/metonymic expression"
+        ],
+        "ground": [
+          "lands/states are associated with historical 'times' or seasons",
+          "each realm has an allotted period of dominance and of judgment",
+          "time metaphorically 'comes' as a visitor or event"
+        ],
+        "posture": [
+          "relativizes Babylon’s power as limited and time‑bound",
+          "assurance of eventual justice",
+          "theological view of history as divinely scheduled"
+        ],
+        "explanation": "The 'time of his land' stands metonymically for the divinely appointed period when Babylon itself will be judged and subjugated by others.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 27:8",
+    "deliberation": "This verse contains (1) the central 'yoke' imagery—nations not putting their neck under the yoke of Babylon, clearly metaphorical for political submission; (2) the phrase 'with the sword' as shorthand for military invasion and violent judgment (metonymy); and (3) 'by his hand' for Nebuchadnezzar’s agency, another hand–power metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְאֵת אֲשֶׁר לֹא־יִתֵּן אֶת־צַוָּארוֹ בְּעֹל מֶלֶךְ בָּבֶל",
+        "english_text": "and that does not put its neck under the yoke of the king of Babylon",
+        "target": [
+          "refusal to submit to Babylonian overlordship",
+          "political and military resistance",
+          "socio‑political behavior"
+        ],
+        "vehicle": [
+          "a neck that is (or is not) placed under a yoke",
+          "draft animal under a heavy harness",
+          "agricultural image"
+        ],
+        "ground": [
+          "yokes signify imposed labor, control, and loss of freedom",
+          "placing the neck under a yoke signals acceptance of servitude",
+          "resisting the yoke symbolizes refusal of imposed authority"
+        ],
+        "posture": [
+          "presents submission as the divinely willed path to survival",
+          "prophetic framing of foreign domination as a burden to accept",
+          "theological–pragmatic exhortation"
+        ],
+        "explanation": "Political submission to Babylon is depicted as putting one’s neck under a yoke, a metaphor drawn from animals harnessed for labor to express imposed control and loss of autonomy.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בַּחֶרֶב וּבָרָעָב וּבַדֶּבֶר אֶפְקֹד עַל־הַגּוֹי הַהוּא",
+        "english_text": "with sword, famine, and pestilence I will visit that nation",
+        "target": [
+          "divine judgment through war and accompanying disasters",
+          "national calamity",
+          "historical/theological events"
+        ],
+        "vehicle": [
+          "the 'sword' alongside famine and pestilence",
+          "weapons and plagues listed as agents",
+          "instrumental imagery"
+        ],
+        "ground": [
+          "the sword represents warfare and killing rather than a single blade",
+          "naming instruments to stand for the broader phenomena they cause",
+          "triad conveys comprehensive judgment"
+        ],
+        "posture": [
+          "warns of severe, multi‑faceted punishment",
+          "prophetic threat language",
+          "covenant‑curse framing of consequences"
+        ],
+        "explanation": "Here 'the sword' functions metonymically for warfare and bloodshed (paired with famine and pestilence) as the mode by which God will punish disobedient nations.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עַד־תֻּמִּי אֹתָם בְּיָדוֹ",
+        "english_text": "until I have destroyed it by his hand",
+        "target": [
+          "Nebuchadnezzar’s role as executing agent of divine judgment",
+          "human instrumentality in destruction",
+          "political–military agency"
+        ],
+        "vehicle": [
+          "the hand as the means of action",
+          "body part that carries out one’s will",
+          "bodily image"
+        ],
+        "ground": [
+          "the hand is conventionally associated with effective action and power",
+          "destroying 'by someone’s hand' means through their agency",
+          "instrumental nuance of the hand"
+        ],
+        "posture": [
+          "presents Nebuchadnezzar as tool in God’s purposes",
+          "underscores indirect yet sovereign divine action",
+          "theological interpretation of geopolitical events"
+        ],
+        "explanation": "The phrase 'by his hand' uses the hand as a metonymy for Nebuchadnezzar’s agency in carrying out God’s destructive judgment.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 27:9",
+    "deliberation": "This verse is an admonition not to listen to various kinds of religious functionaries who advocate resistance to Babylon. The language is straightforwardly referential; no metaphor, personification, or special idiom beyond ordinary titles is introduced.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 27:10",
+    "deliberation": "The verse speaks of false prophecy leading to banishment: 'so that I will drive you out and you shall perish.' The verb 'drive out' can be vivid but here refers literally to exile/expulsion from the land; it is not clearly functioning as a distinct metaphor beyond normal displacement language.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 27:11",
+    "deliberation": "This verse mirrors v.8 but for the compliant nation: 'the nation that brings its neck under the yoke of the king of Babylon and serves him.' The 'neck under the yoke' language again clearly functions as a metaphor for political submission, now presented positively as the path to remaining in one’s land.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הַגּוֹי אֲשֶׁר יָבִיא אֶת־צַוָּארוֹ בְּעֹל מֶלֶךְ־בָּבֶל",
+        "english_text": "the nation that puts its neck under the yoke of the king of Babylon",
+        "target": [
+          "willing political submission to Babylonian suzerainty",
+          "acceptance of vassal status",
+          "socio‑political posture"
+        ],
+        "vehicle": [
+          "neck under a yoke",
+          "beast of burden harnessed for labor",
+          "agricultural image"
+        ],
+        "ground": [
+          "submitting to a yoke implies acceptance of burdensome control",
+          "the neck under a yoke loses freedom of movement",
+          "image captures constraint and ongoing obligation"
+        ],
+        "posture": [
+          "counsels strategic submission as divinely sanctioned",
+          "prophetic guidance toward survival through obedience",
+          "realistic–theological accommodation to empire"
+        ],
+        "explanation": "Again the yoke metaphor depicts political submission to Babylon as an animal placing its neck under a yoke, emphasizing the heaviness and inevitability of the imposed rule.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 27:12",
+    "deliberation": "Jeremiah addresses Zedekiah with the same image: 'Bring your necks under the yoke of the king of Babylon; serve him and his people, and live!' The yoke imagery here directly urges the Judean king to accept vassalage, extending the same metaphor of foreign domination as a yoke on the neck.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הָבִיאוּ אֶת־צַוְּארֵיכֶם בְּעֹל מֶלֶךְ־בָּבֶל",
+        "english_text": "Put your necks under the yoke of the king of Babylon",
+        "target": [
+          "Zedekiah’s and Judah’s political submission to Babylon",
+          "accepting vassal obligations",
+          "national political stance"
+        ],
+        "vehicle": [
+          "necks placed under a yoke",
+          "animals harnessed for draft work",
+          "agricultural bondage image"
+        ],
+        "ground": [
+          "yokes represent externally imposed control and hard labor",
+          "submitting the neck implies yielding autonomy",
+          "figurative alignment of servile labor with vassalage"
+        ],
+        "posture": [
+          "frames compliance as the way to preserve life",
+          "pragmatic–prophetic counsel for survival",
+          "theological acceptance of Babylon as God’s instrument"
+        ],
+        "explanation": "The command to put their necks under Babylon’s yoke metaphorically urges the king and people to accept servile subordination to Babylon as an ox submits to a yoke.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 27:13",
+    "deliberation": "The verse warns of death 'by sword, famine, and pestilence' if they refuse Babylon’s rule, echoing covenant‑curse formulas. The expression 'by the sword' again uses 'sword' metonymically for warfare and violent killing, while famine and pestilence are literal disasters.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בַּחֶרֶב בָּרָעָב וּבַדָּבֶר",
+        "english_text": "by sword, famine, and pestilence",
+        "target": [
+          "forms of divine judgment on resistant nations",
+          "national destruction and suffering",
+          "historical/theological consequences"
+        ],
+        "vehicle": [
+          "the 'sword' in a triad with famine and pestilence",
+          "weapon standing for military conflict",
+          "instrumental image"
+        ],
+        "ground": [
+          "the sword is a conventional emblem for war and bloodshed",
+          "listing instruments names the causes that bring about death",
+          "evokes the full spectrum of covenant curses"
+        ],
+        "posture": [
+          "serves as a stark warning of comprehensive ruin",
+          "reinforces seriousness of disobedience",
+          "covenantal–prophetic threat"
+        ],
+        "explanation": "Here 'the sword' functions as a metonym for warfare and violent death, paired with literal famine and disease to depict the severity of the threatened judgment.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 27:14",
+    "deliberation": "Repeats the admonition not to listen to false prophets who say 'Do not serve the king of Babylon.' The verbs and nouns are used literally; 'serve' here denotes political subjection but is standard terminology without additional imagery beyond that lexical metaphor of service, which is already embedded in the political vocabulary.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 27:15",
+    "deliberation": "God declares He has not sent the false prophets and that He will drive the people out so that they perish. The language of sending, prophesying, driving out, and perishing describes concrete actions and outcomes; no additional metaphor or special figurative device is clearly foregrounded.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 27:16",
+    "deliberation": "The verse addresses priests and people about claims that Temple vessels will soon return from Babylon. References to 'vessels of the house of YHWH' being returned are literal cultic objects and a literal hoped‑for reversal of exile; no new metaphorical imagery is introduced beyond theological content.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 27:17",
+    "deliberation": "Jeremiah urges, 'Serve the king of Babylon and live! Why should this city become a ruin?' The threat of the city becoming a ruin (חרבה) refers to literal physical destruction. The rhetoric is sharp and includes a rhetorical question, but it does not introduce a distinct metaphor or personification.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 27:18",
+    "deliberation": "The challenge—if they are prophets let them intercede with YHWH of hosts so that the remaining vessels not go to Babylon—uses literal language about intercession and the fate of cult objects. No metaphors, similes, or special idioms (beyond standard religious terms) are present.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 27:19",
+    "deliberation": "This verse lists specific Temple items (columns, the sea, stands, and other vessels) and states that YHWH speaks concerning them. The objects and actions mentioned are literal; no figurative reapplication of these items as symbols occurs in this verse.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 27:20",
+    "deliberation": "Narrates the historical fact that Nebuchadnezzar did not take certain items when he exiled Jeconiah and the nobles. Terms like 'exiled' and the identification of persons and objects are used in their straightforward, historical sense.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 27:21",
+    "deliberation": "Again introduces a divine oracle concerning the vessels remaining in the Temple, palace, and Jerusalem. The reference to these locations and items is literal, preparatory to the prediction in v.22; the verse itself does not contain an explicit figurative expression.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 27:22",
+    "deliberation": "The verse predicts that the vessels will be taken to Babylon and remain there 'until the day I visit/attend to them' (עַד יוֹם פׇּקְדִי אֹתָם). The verb פקד, literally 'to visit/attend,' functions here as an anthropomorphic metaphor for God’s special intervention or gracious attention, an idiom for restoring favor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "עַד יוֹם פׇּקְדִי אֹתָם",
+        "english_text": "until the day I take note of them [lit. visit them]",
+        "target": [
+          "YHWH’s future act of restoring the exiled vessels",
+          "divine intervention to reverse their exile",
+          "theological event of renewed favor"
+        ],
+        "vehicle": [
+          "a person visiting or attending to someone/something",
+          "personal inspection and care",
+          "relational/anthropomorphic image"
+        ],
+        "ground": [
+          "visiting implies focused attention and purposeful action on behalf of another",
+          "shift from neglect to active concern",
+          "restorative engagement signaled by personal 'visitation'"
+        ],
+        "posture": [
+          "promises eventual divine care and reversal of loss",
+          "reassuring eschatological outlook",
+          "covenantal hope of restoration"
+        ],
+        "explanation": "Saying that God will 'visit' or 'take note of' the vessels uses an anthropomorphic metaphor for His turning attention to them in order to restore them, not a literal physical visit.",
+        "confidence": 0.87
+      }
+    ]
+  }
+]

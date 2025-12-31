@@ -1,0 +1,559 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 17:1",
+    "deliberation": "Looked for non-literal uses. The core image is sin as something inscribed on the heart with an iron stylus and on altar horns. This is not literal writing on internal organs; it functions as a metaphor for deep, permanent guilt. No other distinct figures appear.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חַטַּאת יְהוּדָה כְּתוּבָה בְּעֵט בַּרְזֶל בְּצִפֹּרֶן שָׁמִיר חֲרוּשָׁה עַל־לוּחַ לִבָּם",
+        "english_text": "The guilt of Judah is inscribed with a stylus of iron, engraved with an adamant point on the tablet of their hearts",
+        "target": ["The enduring inner guilt of Judah", "moral–spiritual condition of the people", "human behavior and character"],
+        "vehicle": ["Inscription with an iron stylus on a tablet", "permanent engraving", "writing/engraving domain"],
+        "ground": ["Permanence, depth, and unerasability", "their sin is deeply impressed and not easily removed", "shared qualities of lasting marks"],
+        "posture": ["Accusation of deeply rooted sin", "prophetic judgment", "rhetorical indictment"],
+        "explanation": "Judah's sin is pictured as if it were physically engraved with iron on the inner 'tablet' of the heart, conveying the depth and permanence of their guilt.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 17:2",
+    "deliberation": "Considered whether 'children remember' and 'verdant trees / lofty hills' are figurative. They describe literal cultic sites and intergenerational memory of idolatry. No clear metaphor, simile, idiom, or personification beyond vivid description.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 17:3",
+    "deliberation": "Hebrew includes the debated phrase 'harari basadeh', but even if it is 'my mountain in the field' as an epithet for Zion, it still refers to a literal location. 'Heap in the field' is a concrete picture of devastation that can literally occur. I did not find a clearly distinct figurative device the verse hinges on.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 17:4",
+    "deliberation": "The loss of inheritance and serving enemies in an unknown land can be literal exile. The clearly non-literal element is 'you have kindled a fire in my nose/anger that shall burn forever', picturing divine wrath as a blazing fire. The eternity language intensifies the image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־אֵשׁ קְדַחְתֶּם בְּאַפִּי עַד־עוֹלָם תּוּקַד",
+        "english_text": "For you have kindled the flame of My wrath that shall burn for all time",
+        "target": ["God's anger and resulting judgment", "divine wrath", "divine–human relations"],
+        "vehicle": ["A fire kindled and burning perpetually", "blazing, unquenchable flame", "physical fire"],
+        "ground": ["Intense, consuming, and potentially ongoing destruction", "their provocation has ignited severe, lasting judgment", "shared qualities of destructive intensity"],
+        "posture": ["Threatening warning of judgment", "covenant lawsuit language", "rhetorical intimidation to induce repentance"],
+        "explanation": "The people are said to have 'kindled' a fire in God's anger, picturing divine wrath as a blaze they themselves ignited, whose burning 'forever' heightens the seriousness of the coming punishment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 17:5",
+    "deliberation": "Key clause: 'who makes flesh his arm'. 'Flesh' stands for human beings and 'arm' stands for the source of strength. This is a compact figure combining metonymy and metaphor to depict misplaced trust in human power.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשָׂם בָּשָׂר זְרֹעוֹ",
+        "english_text": "Who makes mere flesh his strength [lit. his arm]",
+        "target": ["Relying on human beings for security", "misplaced trust", "human behavior and reliance"],
+        "vehicle": ["An arm made of flesh", " bodily limb as symbol of strength", "body-part imagery"],
+        "ground": ["Perceived strength yet actual fragility and limitation", "making vulnerable human power one's main support instead of God", "shared idea of an arm as the means of power"],
+        "posture": ["Negative evaluation of human-centered trust", "prophetic curse formula", "didactic warning"],
+        "explanation": "To 'make flesh his arm' portrays trusting human beings as if they were one's main supporting limb, combining 'flesh' as a metonym for mortals and 'arm' as a metaphor for strength.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 17:6",
+    "deliberation": "Looked for explicit comparisons: 'he shall be like a bush in the desert' introduces a clear simile that is then elaborated with images of scorched, salty, uninhabited land. These all extend the same comparison of the faithless person to a stunted desert shrub.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָה כְּעַרְעָר בָּעֲרָבָה",
+        "english_text": "He shall be like a bush in the desert",
+        "target": ["The person who trusts in mortals instead of God", "unfaithful individual", "human character and destiny"],
+        "vehicle": ["A desert bush in a parched, salty wilderness", "stunted, isolated plant", "natural vegetation in arid landscape"],
+        "ground": ["Barren, exposed, without sustenance or future", "lack of flourishing and vulnerability to harsh conditions", "shared qualities of lifelessness and isolation"],
+        "posture": ["Warning through negative example", "sapiential comparison", "rhetorical deterrent"],
+        "explanation": "The man who trusts in human power is explicitly compared to a lonely shrub in the desert, highlighting his spiritual barrenness and lack of blessing.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 17:7",
+    "deliberation": "This verse contrasts the cursed man of v.5–6 with the blessed man, but does so propositionally: 'Blessed is the man who trusts in YHWH, whose trust is YHWH.' No explicit image or idiom is used here; it prepares for the simile in v.8.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 17:8",
+    "deliberation": "This verse is a sustained simile: the person who trusts in YHWH is 'like a tree planted by waters' with roots by a stream, unaffected by heat and drought, always fruitful. All the tree and climate imagery extends that one comparison.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיָה כְּעֵץ שָׁת֣וּל עַל־מַיִם וְעַל־יוּבַל יְשַׁלַּח שׇׁרָשָׁיו ... וְלֹא יָמִישׁ מֵעֲשׂוֹת פֶּרִי",
+        "english_text": "He shall be like a tree planted by waters, sending forth its roots by a stream ... it does not cease to yield fruit",
+        "target": ["The person who trusts in God", "faithful individual and his well-being", "human character and blessing"],
+        "vehicle": ["A well-watered, deeply rooted, ever-fruitful tree", "healthy irrigated tree", "plant life in a fertile environment"],
+        "ground": ["Stability, resilience under adverse conditions, ongoing fruitfulness", "the secure, sustained flourishing of the God-trusting person", "shared qualities of vitality and productivity"],
+        "posture": ["Positive exemplum to encourage trust", "sapiential teaching", "rhetorical promise"],
+        "explanation": "The trusting person is compared to a tree planted by abundant water, whose rootedness and fruitfulness illustrate the stability and blessing that come from reliance on God.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 17:9",
+    "deliberation": "The verse attributes crookedness and incurable sickness to 'the heart'. In Hebrew anthropology, 'heart' already functions metonymically for the inner self (mind, will, motives). The verse uses this established metonym, not an additional simile or metaphor within the line.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עָקֹב הַלֵּב מִכֹּל וְאָנֻשׁ הוּא",
+        "english_text": "Most devious is the heart; it is perverse [incurably sick]",
+        "target": ["The inner human self—thoughts, will, motives", "human nature", "anthropology/psychology"],
+        "vehicle": ["The physical 'heart' organ", "central bodily organ", "body-part imagery"],
+        "ground": ["Central controlling role, hiddenness, complexity", "using the bodily heart to stand for the inner person that is morally twisted and hard to diagnose", "shared idea of an unseen seat of life and decision"],
+        "posture": ["Bleak diagnosis of human nature", "wisdom reflection", "rhetorical exposure of self-deception"],
+        "explanation": "The 'heart' stands for the whole inner self, functioning as a metonym: it is this inner person that is described as deceitful and desperately sick.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 17:10",
+    "deliberation": "Identified two distinct figures: (1) God 'searching the heart' and 'testing the kidneys', where 'heart' and 'kidneys' metonymically denote inner thoughts and feelings, and God is portrayed as an examiner; (2) 'the fruit of his deeds', which metaphorically describes outcomes or recompense as fruit produced by actions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲנִי יְהוָה חֹקֵר לֵב בֹּחֵן כְּלָיוֹת",
+        "english_text": "I, the LORD, probe the heart, search the mind [lit. kidneys]",
+        "target": ["Human inner thoughts, motives, and emotions", "inner life of people", "anthropology/psychology"],
+        "vehicle": ["Heart and kidneys examined by a searcher/tester", "organs under scrutiny", "body-part imagery and investigative activity"],
+        "ground": ["Hiddenness and depth that require probing, capacity to be examined and evaluated", "God's intimate knowledge of the most concealed aspects of a person", "shared notion of internal reality accessible to a skilled examiner"],
+        "posture": ["Assertion of divine omniscience and justice", "theological proclamation", "rhetorical basis for the coming judgment"],
+        "explanation": "The heart and kidneys, as metonyms for the inner person, are portrayed as being searched and tested by God, picturing Him as one who scrutinizes hidden depths.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָתֵת לְאִישׁ כִּדְרָכָו כִּפְרִי מַעֲלָלָיו",
+        "english_text": "To repay each person according to their own ways, with the proper fruit of their deeds",
+        "target": ["The consequences and recompense for a person's actions", "outcome of human behavior", "moral causality"],
+        "vehicle": ["Fruit that deeds produce", "agricultural produce", "plant growth and harvest"],
+        "ground": ["Natural outgrowth and result of a prior cause", "deeds are pictured as trees or plants that yield fitting fruit as consequences", "shared idea of actions bearing results"],
+        "posture": ["Explanatory support for divine justice", "didactic clarification", "rhetorical motivation for obedience"],
+        "explanation": "Outcomes of one's deeds are described as 'fruit', suggesting that consequences grow organically and appropriately from prior actions.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 17:11",
+    "deliberation": "The structure is an explicit comparison: 'Like a partridge hatching what she did not lay, so is one who makes wealth unjustly.' The bird image and the unjust wealth are two sides of a simile; the later clauses explain the simile's point.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קֹרֵא דָגַר וְלֹא יָלָד כֵּן עֹשֶׂה עֹשֶׁר וְלֹא בְמִשְׁפָּט",
+        "english_text": "Like a partridge hatching what she did not lay, so are those who amass wealth by unjust means",
+        "target": ["The person who gains wealth unjustly", "unjust accumulator of riches", "moral behavior in economic life"],
+        "vehicle": ["A partridge incubating eggs it did not lay and losing them", "misappropriating bird", "animal behavior in nesting"],
+        "ground": ["Apparent gain that does not truly belong and will not be retained", "illicitly acquired wealth that departs mid-life and exposes the owner as a fool", "shared idea of deceiving oneself about what is genuinely one's own"],
+        "posture": ["Moral warning against unjust gain", "wisdom-style proverb", "didactic comparison"],
+        "explanation": "The unjustly wealthy person is likened to a partridge that broods eggs it did not lay, suggesting that what seems gained will be lost and reveal folly.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 17:12",
+    "deliberation": "The address 'Throne of glory, exalted from of old, place of our sanctuary' applies royal-throne imagery to God's presence and temple. God does not literally sit on a chair; 'throne of glory' is a metaphor for divine kingship concentrated at the sanctuary.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּסֵּא כָבוֹד מָרוֹם מֵרִאשׁוֹן מְקוֹם מִקְדָּשֵׁנוּ",
+        "english_text": "O Throne of Glory exalted from of old, our Sacred Shrine!",
+        "target": ["God's royal presence centered in the sanctuary", "divine kingship and temple", "theological reality of God's rule"],
+        "vehicle": ["A glorious, elevated throne", "royal seat of honor", "royal court imagery"],
+        "ground": ["Sovereignty, exaltation, stability, and honor", "the temple as the locus of God's kingly rule over Israel", "shared concept of a throne as the symbol of authority"],
+        "posture": ["Praise and acknowledgment of God's kingship", "liturgical exclamation", "rhetorical doxology"],
+        "explanation": "God's sanctuary is addressed as the 'Throne of Glory', a metaphor that identifies the temple as the seat of His royal, glorious rule.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 17:13",
+    "deliberation": "Found two clear metaphors: (1) 'Hope of Israel, YHWH' where God is called Israel's hope; (2) 'they have forsaken YHWH, the fountain of living waters' where God is likened to a spring of fresh water. The phrase about being 'written in the earth' is another image but the translation flattens it; the main figurative weight rests on the two divine epithets.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִקְוֵה יִשְׂרָאֵל יְהוָה",
+        "english_text": "O Hope of Israel! O LORD!",
+        "target": ["God as the object and ground of Israel's expectation", "divine reliability and salvation", "divine–human relationship"],
+        "vehicle": ["Hope itself, the thing hoped in", "secured expectation", "psychological state of confident trust"],
+        "ground": ["Dependability, future-oriented trust, and exclusive reliance", "Israel's destiny is anchored in God as in a sure hope", "shared notion of something that guarantees a positive outcome"],
+        "posture": ["Invocation and theological confession", "prayerful address", "rhetorical appeal to God's character"],
+        "explanation": "Calling YHWH 'the Hope of Israel' treats Him as the very embodiment and ground of Israel's expectations, not just as one who gives hope.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי עָזְבוּ מְקוֹר מַיִם־חַיִּים אֶת־יְהוָה",
+        "english_text": "For they have forsaken the LORD, the Fount of living waters",
+        "target": ["God as the life-giving source for His people", "divine provision and sustenance", "divine–human relation in terms of life-flow"],
+        "vehicle": ["A spring or fountain of living (flowing) water", "ever-flowing water source", "natural water supply"],
+        "ground": ["Continuous life-giving supply, refreshment, and indispensability", "turning from God is like abandoning the only fresh water source in a dry land", "shared qualities of dependence and vitality"],
+        "posture": ["Rebuke highlighting the folly of apostasy", "covenant lawsuit imagery", "rhetorical contrast between God and idols"],
+        "explanation": "The LORD is described as a 'fountain of living waters', portraying Him as the indispensable source of life and refreshment that the people have foolishly abandoned.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 17:14",
+    "deliberation": "The verbs 'heal' and 'save' could be broader than physical, but they are standard terms for God's restorative action without an overt image in this verse. 'You are my praise' is a compact theological statement rather than a developed metaphor. I discerned no clearly independent figurative expression here.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 17:15",
+    "deliberation": "The people say, 'Where is the word of YHWH? Let it come now.' Here 'word of YHWH' stands metonymically for the prophesied event, and 'come' is part of the idiomatic 'come to pass'. This is a figurative use of 'word' for its fulfillment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַיֵּה דְבַר־יְהוָה יָבוֹא נָא",
+        "english_text": "Where is the word of the LORD? Let it come to pass!",
+        "target": ["The predicted acts of God in judgment or salvation", "fulfillment of prophecy", "historical events foretold by God"],
+        "vehicle": ["The 'word of the LORD' that 'comes'", "spoken message treated as an event", "speech-act imagery"],
+        "ground": ["Intrinsic connection between divine speech and its realization", "using 'word' to stand for the event it guarantees, and its 'coming' for its fulfillment", "shared notion of speech that effectively brings reality about"],
+        "posture": ["Mocking challenge to the prophet and to God", "ironic taunt", "rhetorical skepticism"],
+        "explanation": "The 'word of the LORD' is used metonymically for the prophesied outcome, as the scoffers demand that what was spoken should 'come' or happen.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 17:16",
+    "deliberation": "Jeremiah claims he has not 'evaded from being a shepherd after you'. The prophetic role is depicted as shepherding under God. This is the familiar metaphor of leadership as shepherding, here applied to Jeremiah in relation to God and the people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַאֲנִי לֹא־אַצְתִּי מֵרֹעֶה אַחֲרֶיךָ",
+        "english_text": "But I have not evaded being a shepherd after You",
+        "target": ["Jeremiah's prophetic ministry of leading and caring for the people under God", "prophetic leadership", "social-religious role"],
+        "vehicle": ["A shepherd following after the chief shepherd", "pastoral caretaker of a flock", "animal husbandry imagery"],
+        "ground": ["Guidance, care, responsibility, and vulnerability for the flock", "Jeremiah's task to lead, warn, and protect the people on God's behalf", "shared idea of overseeing and tending others"],
+        "posture": ["Self-defense of prophetic integrity", "appeal in prayer", "rhetorical justification before God"],
+        "explanation": "Jeremiah describes his ministry as 'shepherding after' God, drawing on the shepherd metaphor for leadership and care of the community.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 17:17",
+    "deliberation": "Two complementary predicates are used of God: 'do not be to me for a terror' and 'You are my refuge in a day of calamity.' Each pictures God's relation to Jeremiah through spatial metaphors: God as a frightening force vs. God as a shelter. These are distinct but related metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אַל־תִּהְיֵה־לִי לִמְחִתָּה",
+        "english_text": "Do not be a cause of dismay to me [lit. do not be to me for a terror]",
+        "target": ["Jeremiah's experience of God's dealings with him", "prophet's perception of God", "divine–human relation"],
+        "vehicle": ["A crushing terror or object of horror", "frightening, destructive force", "psychological and military threat imagery"],
+        "ground": ["Capacity to overwhelm and shatter a person", "fear that God's judgment might fall on the prophet himself", "shared idea of something that causes dread and collapse"],
+        "posture": ["Plea for protection rather than judgment", "lament-prayer", "rhetorical appeal to God's mercy"],
+        "explanation": "Jeremiah asks that God not become for him a 'terror', picturing God as a potential source of overwhelming dread and destruction.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַחֲסִי אַתָּה בְּיוֹם רָעָה",
+        "english_text": "You are my refuge in a day of calamity",
+        "target": ["God's protective relationship to Jeremiah", "divine protection", "divine–human relation under threat"],
+        "vehicle": ["A refuge or shelter", "safe hiding place", "fortification/shelter imagery"],
+        "ground": ["Providing safety, covering, and security against danger", "Jeremiah's expectation that God will protect him in times of disaster", "shared notion of a place one can flee to"],
+        "posture": ["Confession of trust in God's protection", "prayerful affirmation", "rhetorical contrast to God as 'terror'"],
+        "explanation": "Calling God 'my refuge' depicts Him as a sheltering place where the prophet can be safe when calamity strikes.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 17:18",
+    "deliberation": "Literal 'day of disaster' fits standard prophetic idiom. The vivid phrase 'shatter them with double destruction' draws on imagery of breaking objects and intensifies it with 'double', which functions hyperbolically.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִשְׁנֶה שִׁבָּרוֹן שׇׁבְרֵם",
+        "english_text": "And shatter them with double destruction",
+        "target": ["The total ruin of Jeremiah's persecutors", "judgment on hostile individuals", "experience of defeat and downfall"],
+        "vehicle": ["Breaking something into pieces, and that in a 'double' way", "violent shattering of an object", "physical destruction imagery"],
+        "ground": ["Severity, irreversibility, and intensity of the coming judgment", "their downfall will be as if smashed beyond repair and even 'doubly' so", "shared idea of complete breakage"],
+        "posture": ["Imprecatory plea for severe judgment", "lament-curse language", "rhetorical call for decisive divine action"],
+        "explanation": "The persecutors' fate is pictured as being broken with a 'double breaking', a metaphor and hyperbole for extremely severe and irreversible ruin.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 17:19",
+    "deliberation": "Narrative instruction to stand in a specific gate by which kings enter and leave. The 'People's Gate' and 'gates of Jerusalem' function literally as architectural features and entry points. No distinct figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 17:20",
+    "deliberation": "The command 'Hear the word of the LORD' is formulaic; 'hear' covers both listening and obeying, but that semantic extension is standard and not a developed metaphor here. The rest is straightforward address. No discrete figurative expression stands out.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 17:21",
+    "deliberation": "The main content is literal Sabbath law. The phrase 'Guard yourselves with your souls/lives' is an idiomatic Hebrew way of saying 'be very careful for your own sake', not about literal soul-guarding. This idiom functions figuratively.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִשָּׁמְרוּ בְּנַפְשׁוֹתֵיכֶם",
+        "english_text": "Guard yourselves for your own sake [lit. guard yourselves with your souls]",
+        "target": ["The people's careful observance of Sabbath regulations", "self-preservation through obedience", "human responsibility"],
+        "vehicle": ["Guarding one's own 'souls' or lives", "self-watchfulness", "protective vigilance imagery"],
+        "ground": ["Taking active care to avoid danger or guilt", "by watching themselves they will avoid violating the Sabbath and incurring judgment", "shared idea of protecting something precious from harm"],
+        "posture": ["Earnest exhortation to obedience", "legal warning formula", "rhetorical emphasis on consequences for the audience"],
+        "explanation": "The idiom 'guard yourselves with your souls' urges the people to take great care, picturing obedience to Sabbath commands as self-protective vigilance over their very lives.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 17:22",
+    "deliberation": "The verse lists concrete Sabbath prohibitions and the command to 'hallow' the day. While consecration is a theological concept, it is not developed via a specific image here. No distinct metaphor, simile, or idiom emerges beyond standard legal language.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 17:23",
+    "deliberation": "Two well-known Hebrew body-part idioms are used: 'they did not incline their ear' meaning they refused to pay attention, and 'they stiffened their neck' meaning they were stubborn. Each is a separate figurative expression based on physical posture to describe inner attitude.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא הִטּוּ אֶת־אׇזְנָם",
+        "english_text": "They would not turn their ear",
+        "target": ["The people's refusal to pay attention to God's commands", "lack of receptivity", "human response to divine instruction"],
+        "vehicle": ["Physically inclining or turning one's ear toward a speaker", "posture of listening", "body movement imagery"],
+        "ground": ["Directing oneself to hear and heed vs. turning away", "their failure to listen is expressed as not giving God their ear", "shared notion of bodily orientation representing inner attentiveness"],
+        "posture": ["Rebuke for disobedience", "covenant lawsuit description", "rhetorical exposure of stubbornness"],
+        "explanation": "The idiom 'not incline the ear' pictures the people's refusal to heed God's word as a deliberate failure to turn their ear toward the speaker.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיַּקְשׁוּ אֶת־עׇרְפָּם",
+        "english_text": "They stiffened their necks",
+        "target": ["Israel's stubborn, unyielding attitude toward God's discipline", "obstinate will", "human character"],
+        "vehicle": ["A neck that is rigid and will not bend", "stiff neck", "body-part posture"],
+        "ground": ["Resistance to turning or bowing, refusal to submit", "their unwillingness to change course or humble themselves before God", "shared qualities of rigidity and unresponsiveness"],
+        "posture": ["Condemnation of obstinacy", "covenant rebuke", "rhetorical portrayal of hardened rebellion"],
+        "explanation": "The expression 'stiffened their neck' metaphorically depicts the people as refusing to bend or yield, an idiom for stubborn resistance.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 17:24",
+    "deliberation": "Again, the focus is on literal Sabbath behavior: not bringing burdens through the gates, sanctifying the day by ceasing from work. No distinct metaphor, simile, or idiom appears beyond the legal-ritual terminology already explained elsewhere.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 17:25",
+    "deliberation": "The verse promises that kings will enter Jerusalem's gates, sitting on the throne of David, with people and officials. While 'throne of David' is a dynastic expression, it functions here as literal royal seat and line. The city 'shall be inhabited forever' is theological promise but not clearly exaggerated for effect. I did not isolate a discrete figurative device.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 17:26",
+    "deliberation": "This verse describes people coming from real regions bringing various sacrifices and offerings to the house of the LORD. The sacrificial terms are technical cultic language, not deployed figuratively here. No metaphor, simile, or idiom is prominent.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 17:27",
+    "deliberation": "The threat is of literal fire set in the city gates during judgment. Yet the description that the fire will 'consume' (eat) the fortresses and 'not be quenched' uses personifying language and hyperbolic emphasis typical of prophetic 'unquenchable fire' imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהִצַּתִּי אֵשׁ בִּשְׁעָרֶיהָ וְאָכְלָה אַרְמְנוֹת יְרוּשָׁלִַם וְלֹא תִכְבֶּה",
+        "english_text": "Then I will set fire to its gates; it shall consume the fortresses of Jerusalem, and it shall not be extinguished",
+        "target": ["The devastating, unstoppable judgment on Jerusalem", "destruction of city and elite structures", "historical catastrophe as divine judgment"],
+        "vehicle": ["A fire that eats (consumes) and cannot be quenched", "insatiable, unquenchable blaze", "destructive natural force"],
+        "ground": ["Total, voracious, and uncontrollable destruction", "Jerusalem's palaces and defenses will be destroyed as if devoured by a fire no one can put out", "shared qualities of consuming and irreversibility"],
+        "posture": ["Severe warning of judgment for Sabbath violation", "prophetic threat", "rhetorical use of fear to enforce obedience"],
+        "explanation": "The coming destruction is portrayed as a fire that 'eats' Jerusalem's fortresses and cannot be quenched, personifying the fire and using hyperbole to stress the inevitability and completeness of the judgment.",
+        "confidence": 0.94
+      }
+    ]
+  }
+]

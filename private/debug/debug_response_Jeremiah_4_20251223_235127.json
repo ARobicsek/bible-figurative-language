@@ -1,0 +1,790 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 4:1",
+    "deliberation": "I examined whether the verse is purely covenantal-propositional or also uses spatial imagery metaphorically. 'Return to me' is standard repentance language based on movement imagery, and 'from before my face' is a metonymic idiom for God's presence. I treat these as two distinct figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִם־תָּשׁוּב יִשְׂרָאֵל ... אֵלַי תָּשׁוּב",
+        "english_text": "If you return, O Israel ... If you return to Me",
+        "target": ["Israel's repentance and covenant loyalty", "moral-spiritual conduct", "covenant relationship"],
+        "vehicle": ["physically returning to a person/place", "spatial movement toward a location", "embodied/relational domain"],
+        "ground": ["changing direction to restore closeness", "reversal of course and renewed nearness", "relational restoration"],
+        "posture": ["prophetic exhortation to repent", "rhetorical appeal", "pastoral/ethical discourse"],
+        "explanation": "Repentance and renewed covenant loyalty are depicted as physically returning to God, using spatial movement as a metaphor for moral and relational change.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאִם־תָּסִיר שִׁקּוּצֶיךָ מִפָּנַי",
+        "english_text": "If you remove your abominations from My presence (literally: from before My face)",
+        "target": ["God's experiential presence and regard", "divine-human relational space", "theological domain"],
+        "vehicle": ["God's 'face' or countenance", "body-part for personal presence", "anthropomorphic imagery"],
+        "ground": ["what is 'before the face' is in one's presence and attention", "removing offensive things from someone's immediate presence shows regard", "relational sensitivity"],
+        "posture": ["legal-covenantal warning", "anthropomorphic description of God", "theological discourse"],
+        "explanation": "'My face' stands metonymically for God's presence and attention; 'from before my face' is an idiomatic way of speaking about removing offensive practices from God's relational sphere.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 4:2",
+    "deliberation": "The oath formula 'as YHWH lives' is conventional and largely literal. The phrase 'nations shall bless themselves by you' uses Israel as a referential stand-in within blessing formulas, which is metonymic and idiomatic.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהִתְבָּרְכוּ בוֹ גּוֹיִם וּבוֹ יִתְהַלָּלוּ",
+        "english_text": "Nations shall bless themselves by you and praise themselves by you",
+        "target": ["the nations’ use of Israel/Israel’s God in blessing formulas", "speech formulas of blessing and boasting", "religious and social practice"],
+        "vehicle": ["invoking a paradigmatic name in speech ('by you')", "name or people as instrument of blessing in formulas", "linguistic/conventional domain"],
+        "ground": ["Israel stands as a representative case and reference point", "to 'bless oneself by' someone is to use them as a standard or source in speech", "exemplarity and representational function"],
+        "posture": ["promise of future reversal and honor", "prophetic reassurance", "covenantal-eschatological discourse"],
+        "explanation": "Israel (or Israel’s God) functions metonymically as the referential content of future blessing and praise formulas among the nations; 'by you' is idiomatic for using Israel as the standard in speech.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 4:3",
+    "deliberation": "The commands are framed in agricultural terms. 'Break up the fallow ground' and 'do not sow among thorns' form an extended metaphor for spiritual/moral preparation, common in prophetic literature.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "נִירוּ לָכֶם נִיר וְאַל־תִּזְרְעוּ אֶל־קֹצִים",
+        "english_text": "Break up the untilled ground for yourselves, and do not sow among thorns",
+        "target": ["Judah’s inner life and behavior (need for repentance)", "moral-spiritual receptivity", "covenant obedience"],
+        "vehicle": ["preparing fallow soil and avoiding sowing among thorns", "agricultural cultivation", "agrarian domain"],
+        "ground": ["unprepared, hard ground cannot receive seed just as unrepentant hearts cannot receive God’s word", "thorns choke growth as sins and obstacles choke spiritual fruitfulness", "necessity of prior preparation for fruitful outcome"],
+        "posture": ["urgent prophetic exhortation", "didactic use of farming imagery", "moral instruction"],
+        "explanation": "Agricultural work—breaking fallow ground and not sowing among thorns—functions as an extended metaphor for inner repentance and removal of moral obstacles so that God’s word may be fruitful.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 4:4",
+    "deliberation": "I noted two major figures: (1) 'circumcise yourselves to YHWH' and 'remove the foreskins of your heart' as a well-known metaphor for internalizing covenant loyalties; (2) YHWH’s wrath depicted 'like fire' that burns unquenched.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִמֹּלוּ לַיהוָה וְהָסִרוּ עׇרְלוֹת לְבַבְכֶם",
+        "english_text": "Circumcise yourselves to GOD, and remove the foreskins of your heart",
+        "target": ["inner disposition and stubbornness of Judah", "moral/spiritual state", "covenant fidelity"],
+        "vehicle": ["physical circumcision and removal of foreskin", "ritual bodily operation", "covenantal rite"],
+        "ground": ["cutting away a covering that prevents proper covenant identity", "exposing what is hidden and removing hardness", "internalization of an outward sign"],
+        "posture": ["sharp prophetic call to inner transformation", "redefinition of ritual in ethical terms", "theological critique of mere externals"],
+        "explanation": "The heart is portrayed as having a 'foreskin' which must be cut away, using the ritual of circumcision as a metaphor for removing inner stubbornness and embracing genuine covenant loyalty.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פֶּן־תֵּצֵא כָאֵשׁ חֲמָתִי וּבָעֲרָה וְאֵין מְכַבֶּה",
+        "english_text": "Lest My wrath break forth like fire and burn, with none to quench it",
+        "target": ["YHWH’s punitive response to Judah’s sin", "divine judgment", "theological-legal domain"],
+        "vehicle": ["outbreaking, unquenchable fire", "destructive consuming blaze", "natural destructive force"],
+        "ground": ["irresistible, consuming, and spreading power", "once unleashed it devastates and is hard to stop", "intensity and danger"],
+        "posture": ["threatening warning to deter sin", "vivid rhetorical heightening", "judgment proclamation"],
+        "explanation": "God’s wrath is likened to a fire that bursts out and cannot be quenched, using fire’s destructive and uncontrollable nature to convey the severity of impending judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 4:5",
+    "deliberation": "Commands to proclaim, blow the shofar, assemble, and go to fortified cities all describe standard wartime signaling and flight. They function literally within the narrative setting, not as metaphors for something else.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 4:6",
+    "deliberation": "The standard and flight language fit literal wartime contexts. The phrase 'evil from the north' is Jeremiah’s stereotyped expression for the northern invader; it compresses a people/empire into a direction, functioning metonymically.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי רָעָה אָנֹכִי מֵבִיא מִצָּפוֹן",
+        "english_text": "For I am bringing evil from the north",
+        "target": ["the invading imperial power (likely Babylon)", "foreign military threat", "geo-political judgment"],
+        "vehicle": ["'the north' as a directional label", "geographical orientation", "spatial domain"],
+        "ground": ["the invader approaches from the northern corridor", "direction stands for the source region and its people", "spatial indicator as shorthand for agents of disaster"],
+        "posture": ["prophetic announcement of impending invasion", "compressed threat formula", "judgment oracle"],
+        "explanation": "The phrase 'from the north' stands metonymically for the northern empire that will bring devastation, turning a compass direction into a label for the hostile power.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 4:7",
+    "deliberation": "The verse explicitly introduces a 'lion' rising from its thicket, then appositionally names it 'destroyer of nations'. This is a zoomorphic metaphor for the invading conqueror/empire.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָלָה אַרְיֵה מִסֻּבְּכוֹ וּמַשְׁחִית גּוֹיִם נָסַע",
+        "english_text": "The lion has come up from its thicket; the destroyer of nations has set out",
+        "target": ["the invading king/empire", "hostile human power", "political-military domain"],
+        "vehicle": ["a lion emerging from its thicket to hunt", "ferocious predator", "animal domain"],
+        "ground": ["predatory strength, terror, and inevitability of attack", "ability to devastate weaker victims", "fear-inducing power"],
+        "posture": ["vivid warning to heighten fear and seriousness", "prophetic portrayal of the enemy", "judgment rhetoric"],
+        "explanation": "The foreign conqueror is depicted as a lion leaving its lair, highlighting his predatory ferocity and the helplessness of the prey-nations.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 4:8",
+    "deliberation": "Sackcloth, mourning, and wailing are literal mourning practices. 'The blazing anger of YHWH' (חרון אף) is a conventional image of divine wrath as burning heat in the nostrils, a metaphorical-idiomatic expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי לֹא־שָׁב חֲרוֹן אַף־יְהוָה מִמֶּנּוּ",
+        "english_text": "For the blazing anger of GOD has not turned away from us",
+        "target": ["YHWH’s wrath against the people", "divine emotional-judicial stance", "theological domain"],
+        "vehicle": ["burning heat in the nose/face", "intense, hot fire-like emotion", "physiological/physical imagery"],
+        "ground": ["heat suggests intensity and discomfort", "burning evokes consuming harm", "the turning away of heat parallels subsiding anger"],
+        "posture": ["somber explanation for required mourning", "anthropopathic portrayal of God", "judgment oracle"],
+        "explanation": "Divine wrath is portrayed as burning heat ('the heat of YHWH’s nose'), an idiomatic metaphor that conveys the intensity and dangerousness of his anger.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 4:9",
+    "deliberation": "The reactions of priests and prophets are literal emotional states. 'The heart of the king and the heart of the princes shall perish' uses 'heart' for courage/understanding, a standard anthropological metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יֹאבַד לֵב־הַמֶּלֶךְ וְלֵב הַשָּׂרִים",
+        "english_text": "The mind/heart of the king and the mind/heart of the nobles shall fail",
+        "target": ["the king’s and nobles’ courage and decision-making capacity", "inner psychological state", "political leadership"],
+        "vehicle": ["heart as the inner organ of thought and resolve", "body-part for inner self", "anthropological imagery"],
+        "ground": ["the 'heart' is associated with courage, mind, and will", "its 'perishing' conveys total collapse of resolve", "inner failure expressed via bodily organ"],
+        "posture": ["prediction of total demoralization", "rhetorical intensification of the crisis", "judgment description"],
+        "explanation": "The 'heart' of leaders stands metonymically for their courage and understanding, so that its perishing indicates the collapse of their inner capacity to respond.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 4:10",
+    "deliberation": "The complaint about God deceiving the people is direct speech. The final clause 'the sword has reached to the soul' combines metonymy (sword for war/death) and metaphorical depth ('to the soul') for utter life-threat.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָגְעָה חֶרֶב עַד־הַנָּפֶשׁ",
+        "english_text": "Yet the sword has reached to the very life (soul)",
+        "target": ["the people’s imminent death and deepest vulnerability", "mortal danger", "war and judgment"],
+        "vehicle": ["a sword physically touching and penetrating up to the 'soul'", "weapon as agent of death", "violence/warfare domain"],
+        "ground": ["contact with the sword signifies lethal threat", "reaching 'to the soul' intensifies the totality of the threat", "war is equated with direct attack on life itself"],
+        "posture": ["lamenting shock at the severity of judgment", "hyperbolic emphasis on danger", "prophetic protest"],
+        "explanation": "The 'sword' stands metonymically for warfare and death, and its reaching 'to the soul' is a hyperbolic metaphor for danger that penetrates to the very core of life.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 4:11",
+    "deliberation": "The Hebrew describes a parching desert wind toward 'the daughter of my people'. This is not merely weather prediction but a vivid metaphor for an enemy invasion/judgment likened to a scorching, non-beneficial wind.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "רוּחַ צַח שְׁפָיִם בַּמִּדְבָּר דֶּרֶךְ בַּת־עַמִּי לֹא לִזְרוֹת וְלֹא לְהָבַר",
+        "english_text": "A searing wind from the bare heights in the desert, toward the daughter of My people, not for winnowing and not for cleansing",
+        "target": ["the invading force/judgment coming upon Judah", "national calamity", "historical judgment"],
+        "vehicle": ["a scorching, unproductive desert wind", "harmful natural phenomenon", "meteorological domain"],
+        "ground": ["both are powerful, overwhelming, and destructive rather than beneficial", "this 'wind' does not separate chaff in a helpful way but simply harms", "inescapable approach from an exposed place"],
+        "posture": ["ominous, poetic warning", "use of nature imagery to refract judgment", "prophetic vision language"],
+        "explanation": "The impending invasion is portrayed as a scorching desert wind that does not winnow or cleanse, emphasizing its purely destructive, not purifying, character.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 4:12",
+    "deliberation": "The 'fuller wind' continues the wind-imagery from v.11, signifying an overwhelming force. God 'speaking judgments with them' uses courtroom language but is a standard theological metaphor. I treat the main figure as the intensified 'wind' image for judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רוּחַ מָלֵא מֵאֵלֶּה יָבוֹא לִי",
+        "english_text": "A full blast beyond these comes to Me",
+        "target": ["the intensified invading judgment coming at God’s command", "escalated disaster", "national catastrophe"],
+        "vehicle": ["a wind 'fuller' or stronger than normal", "overfull, overwhelming blast of wind", "natural-force domain"],
+        "ground": ["excessive, more-than-normal force and scope", "not a mild breeze but a storm-level wind", "irresistible arrival at God’s decree"],
+        "posture": ["heightened threat portrayal", "continuation of nature-as-judgment imagery", "judicial announcement"],
+        "explanation": "Judgment is again depicted as a powerful wind, now described as 'fuller than these', emphasizing an overwhelming, excessive force sent by God.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 4:13",
+    "deliberation": "This verse stacks three explicit comparisons: ascent 'like clouds', chariots 'like a whirlwind', horses 'swifter than eagles'. All are similes depicting the enemy’s rapid and overwhelming advance. They are distinct though related images.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה כַּעֲנָנִים יַעֲלֶה",
+        "english_text": "Lo, he ascends like clouds",
+        "target": ["the approaching enemy force", "invading army", "military threat"],
+        "vehicle": ["rising storm clouds", "dense, dark formations in the sky", "weather domain"],
+        "ground": ["sudden, ominous covering and approach", "visually massive and threatening", "portent of storm and judgment"],
+        "posture": ["dramatic visualization of threat", "prophetic vision rhetoric", "warning"],
+        "explanation": "The enemy’s advance is likened to clouds rising, evoking the ominous, enveloping onset of a storm.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַסּוּפָה מַרְכְּבוֹתָיו",
+        "english_text": "His chariots are like a whirlwind",
+        "target": ["the speed and destructiveness of the enemy’s chariotry", "military capability", "warfare"],
+        "vehicle": ["a whirlwind", "rotating violent windstorm", "meteorological phenomenon"],
+        "ground": ["rapid, swirling, and devastating movement", "chaotic and unstoppable impact", "fear-inducing noise and havoc"],
+        "posture": ["heightening terror of war machinery", "vivid, sensory portrayal", "judgment imagery"],
+        "explanation": "The enemy chariots are compared to a whirlwind, stressing their rapid, chaotic, and devastating movement.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קַלּוּ מִנְּשָׁרִים סוּסָיו",
+        "english_text": "His horses are swifter than eagles",
+        "target": ["the remarkable speed of the enemy cavalry", "military mobility", "warfare"],
+        "vehicle": ["eagles in flight", "very fast, soaring birds of prey", "animal domain"],
+        "ground": ["impressive speed and swift approach", "ability to cover distance quickly on attack", "fearsome agility"],
+        "posture": ["hyperbolic stress on inescapable advance", "imagery to produce alarm", "judgment rhetoric"],
+        "explanation": "The horses are said to be swifter than eagles, a hyperbolic simile emphasizing their extraordinary speed and the inevitability of their arrival.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 4:14",
+    "deliberation": "The key figure is 'wash your heart from evil', where ritual washing is mapped onto moral cleansing. The heart as locus of thought is standard, and 'harboring evil designs' projects thoughts as internal lodgers, but the primary metaphor is the washing image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כַּבְּסִי מֵרָעָה לִבֵּךְ יְרוּשָׁלִַם",
+        "english_text": "Wash your heart clean of wickedness, O Jerusalem",
+        "target": ["Jerusalem’s inner moral corruption", "sinful disposition", "ethical-spiritual state"],
+        "vehicle": ["washing garments or body from dirt", "ritual and physical cleansing", "purity/cleanliness domain"],
+        "ground": ["removing defilement to restore cleanliness", "effortful action to purge what is unclean", "transition from stained to pure"],
+        "posture": ["call to deep moral reform", "reframing ritual language ethically", "prophetic exhortation"],
+        "explanation": "Jerusalem’s inner wickedness is depicted as filth on the 'heart' that must be washed away, using cleansing imagery for repentance and moral purification.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 4:15",
+    "deliberation": "The verse simply reports a 'voice' proclaiming from Dan and Mount Ephraim. This is standard prophetic report language of messengers and does not here function as a metaphor for anything beyond literal communication.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 4:16",
+    "deliberation": "The 'watchers' coming from a distant land are enemy forces who will besiege cities. While they are literal watch-post troops, the verse itself presents them in straightforward military terms without an explicit figurative comparison yet (the simile comes in v.17).",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 4:17",
+    "deliberation": "Here the besieging forces are explicitly compared 'like guards of a field' surrounding Jerusalem. This is a clear simile drawn from agricultural practice to depict military encirclement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּשֹׁמְרֵי שָׂדַי הָיוּ עָלֶיהָ מִסָּבִיב",
+        "english_text": "Like guards of fields, they surround her on every side",
+        "target": ["the enemy besieging Jerusalem", "military encirclement", "warfare situation"],
+        "vehicle": ["field guards posted around a plot", "agricultural watchmen", "agrarian practice"],
+        "ground": ["continuous watchfulness and encirclement", "preventing entry or exit", "close, surrounding presence"],
+        "posture": ["clarifying the nature of the siege", "using familiar rural imagery", "didactic-prophetic description"],
+        "explanation": "The besieging troops are compared to field guards who surround and watch a field, highlighting the tight encirclement of Jerusalem.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 4:18",
+    "deliberation": "The consequence of evil is described as 'bitter' and as something that 'reaches unto your heart'. This uses taste imagery and depth language to depict the painful, inwardly felt nature of the punishment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "זֹאת רָעָתֵךְ כִּי מָר כִּי נָגַע עַד־לִבֵּךְ",
+        "english_text": "This is your evil; how bitter it is, because it reaches to your heart",
+        "target": ["the painful experience of judgment resulting from sin", "inner suffering", "moral-consequential reality"],
+        "vehicle": ["bitterness in taste and something touching/penetrating the heart", "gustatory and depth imagery", "bodily experience"],
+        "ground": ["bitterness conveys unpleasantness and distress", "reaching the heart indicates deep, inward impact", "experiential intensity and inward penetration"],
+        "posture": ["interpretive comment on suffering", "rhetorical emphasis on depth of pain", "prophetic explanation"],
+        "explanation": "The consequence of Judah’s evil is likened to something bitter that penetrates to the heart, using taste and depth imagery to express how deeply the punishment is felt.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 4:19",
+    "deliberation": "The verse is rich in somatic imagery for anguish. 'My bowels, my bowels' uses inner organs metonymically for deep emotion, and 'the walls of my heart' architecturally depicts the inner self as a walled structure under strain. I treat these as two distinct figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מֵעַי מֵעַי אֽוֹחִילָה",
+        "english_text": "Oh, my inward parts, my inward parts! How I writhe!",
+        "target": ["the prophet’s intense emotional anguish", "inner psychological turmoil", "personal lament"],
+        "vehicle": ["bowels/inward organs", "somatic seat of emotion", "human body imagery"],
+        "ground": ["deep internal sensations accompany strong emotion", "inner organs are associated with visceral feeling", "physical churning parallels emotional distress"],
+        "posture": ["highly emotive lament", "hyperbolic self-expression", "prophetic empathy with the people"],
+        "explanation": "The 'bowels' function metonymically as the seat of deep emotion, and the repeated cry is a hyperbolic way to express extreme inner turmoil.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קִירוֹת לִבִּי הֹמֶה־לִּי לִבִּי",
+        "english_text": "Oh, the walls of my heart! My heart moans within me",
+        "target": ["the prophet’s vulnerable inner self under pressure", "emotional core", "personal interior life"],
+        "vehicle": ["walls of a structure enclosing and shaking", "architectural image of a building", "built environment domain"],
+        "ground": ["like walls of a house under stress, the inner self feels shaken and unstable", "enclosed interior affected by external shocks", "sense of being besieged and trembling"],
+        "posture": ["dramatic self-description", "alignment with the besieged city imagery", "empathetic identification"],
+        "explanation": "The heart is pictured as having 'walls' that tremble and moan, metaphorically aligning the prophet’s inner being with a shaken, besieged structure.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 4:20",
+    "deliberation": "I considered whether 'ruin upon ruin' is figurative; it is mainly intensifying repetition. The reference to 'my tents' and 'my tent-cloths' functions as synecdoche/metaphor for the dwellings of the people with whom the prophet identifies.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "פִּתְאֹם שֻׁדְּדוּ אֹהָלַי רֶגַע יְרִיעֹתָי",
+        "english_text": "Suddenly my tents have been ravaged, in a moment my tent cloths",
+        "target": ["the prophet’s people/the nation’s habitations", "collective community life", "social-political entity"],
+        "vehicle": ["tents and tent-cloths of a nomadic household", "portable dwellings", "pastoral-nomadic domain"],
+        "ground": ["dwelling structures represent the life of their inhabitants", "destroyed tents symbolize loss of security and home", "the prophet identifies the nation’s ruin with his own dwelling’s ruin"],
+        "posture": ["empathetic identification with national disaster", "poetic lament using traditional imagery", "prophetic solidarity"],
+        "explanation": "The prophet’s 'tents' and 'tent-cloths' stand metonymically and metaphorically for the dwellings and life of the community that have been suddenly devastated.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 4:21",
+    "deliberation": "The verse poses a rhetorical question about how long the prophet must see standards and hear the shofar. These are literal instruments of war and signal flags; no metaphor or personification appears beyond standard rhetorical questioning.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 4:22",
+    "deliberation": "Terms like 'stupid', 'foolish children' and 'clever to do evil' are evaluative but can be used literally. The striking inversion 'wise to do evil, but not to do good' functions as biting irony: they are 'wise' only in the realm where wisdom is perverse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "חֲכָמִים הֵמָּה לְהָרַע וּלְהֵיטִיב לֹא יָדָעוּ",
+        "english_text": "They are clever to do wrong, but to do right they do not know",
+        "target": ["the people’s moral perversity and misdirected abilities", "ethical incompetence for good", "moral character"],
+        "vehicle": ["being 'wise' or skilled in a domain", "technical proficiency", "cognitive-moral domain"],
+        "ground": ["they show deliberate skill and ingenuity in wrongdoing while being utterly inept at doing good", "the term 'wise' is used ironically", "disparity between potential and moral orientation"],
+        "posture": ["ironical denunciation", "rhetorical shaming", "prophetic critique"],
+        "explanation": "The people are called 'wise' only in doing evil, an ironic reversal that highlights their moral inversion and effectively mocks their supposed cleverness.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 4:23",
+    "deliberation": "Jeremiah’s vision of the land as 'tohu va-bohu' and the heavens without light clearly echoes Genesis 1:2. This portrays Judah’s devastation as a cosmic de-creation, using primeval chaos as a metaphor for national ruin.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "רָאִיתִי אֶת־הָאָרֶץ וְהִנֵּה־תֹהוּ וָבֹהוּ וְאֶל־הַשָּׁמַיִם וְאֵין אוֹרָם",
+        "english_text": "I look at the earth—and it is unformed and void; at the skies—and their light is gone",
+        "target": ["the condition of Judah/the land after judgment", "national and cosmic order", "historical-creation order"],
+        "vehicle": ["primeval chaos of 'unformed and void' and darkened heavens", "pre-creation state", "cosmological imagery"],
+        "ground": ["both depict absence of order, structure, and life-giving light", "judgment on the land is like a reversal of creation", "from formed, inhabited land back to formless waste"],
+        "posture": ["theological dramatization of judgment", "allusive echo of creation narrative", "prophetic vision of de-creation"],
+        "explanation": "Jeremiah uses Genesis-creation language ('tohu va-bohu' and darkened heavens) to depict the land’s devastation as a return to primordial chaos, a metaphor for total ruin.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 4:24",
+    "deliberation": "Mountains and hills 'quaking' and 'rocking' may reflect actual seismic imagery, but on the scale given they serve as cosmic hyperbole/metaphor: the most stable features of creation are depicted as shaken by God’s judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רָאִיתִי הֶהָרִים וְהִנֵּה רֹעֲשִׁים וְכָל־הַגְּבָעוֹת הִתְקַלְקָלוּ",
+        "english_text": "I look at the mountains—they are quaking; and all the hills are rocking",
+        "target": ["the profound upheaval brought by judgment", "disruption of established order", "national-cosmic stability"],
+        "vehicle": ["mountains and hills trembling and tottering", "seismic disturbance of topography", "natural-physical domain"],
+        "ground": ["mountains normally symbolize stability; their shaking suggests extreme disturbance", "judgment is so great it is as if creation itself is convulsed", "intensity and universality of disruption"],
+        "posture": ["dramatic intensification of the vision", "cosmic framing of historical judgment", "poetic hyperbole"],
+        "explanation": "Mountains and hills are portrayed as quaking, a hyperbolic metaphor indicating that God’s judgment shakes even what seems most stable.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 4:25",
+    "deliberation": "The statement that no human is left and all birds have fled is part of the de-creation scene. The absolute 'no human' is hyperbolic for comprehensive depopulation, and the birds’ flight completes the image of lifelessness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִנֵּה אֵין הָאָדָם וְכָל־עוֹף הַשָּׁמַיִם נָדָדוּ",
+        "english_text": "I look: no human is left, and all the birds of the sky have fled",
+        "target": ["the extent of desolation in the land", "complete loss of inhabitants", "post-judgment landscape"],
+        "vehicle": ["absolute absence of humans and flight of all birds", "empty environment", "ecological imagery"],
+        "ground": ["total emptiness signals extreme devastation", "humans and birds together represent visible life", "their absence conveys a sense of utter abandonment"],
+        "posture": ["stark portrayal of aftermath", "intensification of the de-creation theme", "visionary hyperbole"],
+        "explanation": "The claim that no human remains and all birds have fled is a hyperbolic way to express the total, eerie desolation left by judgment.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 4:26",
+    "deliberation": "The 'Carmel' (garden-land) turned into wilderness continues the de-creation image and may be literal devastation. The key figurative element here is again the 'heat of his anger', an anthropopathic metaphor for intense divine wrath.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִפְּנֵי יְהוָה מִפְּנֵי חֲרוֹן אַפּוֹ",
+        "english_text": "Because of GOD, because of the blazing heat of His anger",
+        "target": ["the intensity of God’s judgmental wrath", "divine response to sin", "theological-emotional reality"],
+        "vehicle": ["burning heat of the nose/face", "fiery temperature", "physical/thermal imagery"],
+        "ground": ["heat conveys intensity and consuming force", "anger is experienced like burning heat", "wrath drives the devastation of fertile land into desert"],
+        "posture": ["explanatory note tying devastation to God’s anger", "anthropopathic language", "judgment theology"],
+        "explanation": "God’s anger is again depicted as burning heat ('the heat of his nose'), an idiomatic metaphor that links the land’s ruin directly to the intense, fiery wrath of God.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 4:27",
+    "deliberation": "The verse plainly predicts desolation of the land while denying a total end. 'Desolate' and 'make a full end' are straightforward descriptive terms here; no additional figurative imagery (beyond the previously established de-creation motif) is introduced in this clause.",
+    "instances": []
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 4:28",
+    "deliberation": "Here the earth 'mourns' and the heavens are darkened. 'Mourns' is a clear personification of the earth, and darkening of skies functions as mourning imagery, together portraying creation as grieving over the decree.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "עַל־זֹאת תֶּאֱבַל הָאָרֶץ וְקָדְרוּ הַשָּׁמַיִם מִמָּעַל",
+        "english_text": "For this the earth mourns, and skies are dark above",
+        "target": ["the cosmic response to God’s irrevocable judgment", "the created order’s relation to human sin", "cosmic-moral order"],
+        "vehicle": ["mourning behavior and wearing dark/dim appearance", "human grief and funeral imagery", "social-ritual domain"],
+        "ground": ["darkness and mourning signal grief and sorrow", "the earth and heavens are depicted as participants in lament", "cosmic sympathy with human catastrophe"],
+        "posture": ["heightened dramatization of the seriousness of judgment", "poetic personification of nature", "theological cosmology"],
+        "explanation": "The earth is personified as mourning, and the darkening skies mirror mourning attire, presenting creation itself as grieving over God’s unrelenting judgment.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 4:29",
+    "deliberation": "Descriptions of fleeing into thickets and climbing rocks are literal flight behavior. 'The whole city flees' is metonymic—'city' stands for its inhabitants, since a city as a structure cannot run away.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֹּרַחַת כָּל־הָעִיר",
+        "english_text": "The whole city flees",
+        "target": ["the inhabitants of each city", "urban population", "social collectives"],
+        "vehicle": ["the 'city' as a unitary entity fleeing", "urban space as representative of its people", "spatial-political term"],
+        "ground": ["the city’s identity is bound up with its population", "speaking of the city fleeing compresses people and place into one", "emphasizes total depopulation"],
+        "posture": ["vivid, compact description of panic", "rhetorical shorthand", "judgment narrative"],
+        "explanation": "The 'city' is said to flee, a metonymy in which the place-name stands for its inhabitants who run away in terror.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 4:30",
+    "deliberation": "Jerusalem (feminine 'you, ravaged one') is portrayed as a woman adorning herself in scarlet, gold, and eye paint to attract lovers who now despise and seek her life. This is an extended metaphor/personification of the city/nation as a vain, spurned lover seeking political allies.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאַתְּ שָׁדוּד מַה־תַּעֲשִׂי כִּי־תִלְבְּשִׁי שָׁנִי כִּי־תַעְדִּי עֲדִי־זָהָב כִּי־תִקְרְעִי בַפּוּךְ עֵינַיִךְ לַשָּׁוְא תִּתְיַפִּי מָאֲסוּ־בָךְ עֹגְבִים נַפְשֵׁךְ יְבַקֵּשׁוּ",
+        "english_text": "And you, doomed to ruin, what do you accomplish by wearing crimson, by decking yourself in gold, by painting your eyes? You beautify yourself in vain; lovers despise you, they seek your life",
+        "target": ["Jerusalem/Israel and its futile attempts to secure foreign allies", "political-religious infidelity", "covenant community"],
+        "vehicle": ["a ravaged woman adorning herself to attract lovers who now despise her and seek her life", "erotic and cosmetic imagery", "marital/sexual domain"],
+        "ground": ["both involve seeking favor through outward adornment despite being in a degraded state", "former lovers/allies now turn hostile", "attempts at self-beautification cannot avert rejection and harm"],
+        "posture": ["sharp satire of political and religious infidelity", "moral indictment using marital imagery", "prophetic mockery of misplaced trust"],
+        "explanation": "Jerusalem is personified as a woman vainly beautifying herself to win back lovers (foreign powers) who now despise and seek her life, a metaphor for futile political alliances and spiritual infidelity.",
+        "confidence": 0.99
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 4:31",
+    "deliberation": "Two main figures appear: (1) the voice is 'like' that of a woman in labor/bearing her first child, explicit similes for Zion’s anguish; (2) 'daughter Zion' is personified as a woman panting, stretching out her hands, and speaking a death-cry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קִי קוֹל כְּחוֹלָה שָׁמַעְתִּי צָרָה כְּמַבְכִּירָה",
+        "english_text": "For I hear a voice as of one in travail, anguish as of a woman bearing her first child",
+        "target": ["Zion’s experience of extreme distress under attack", "national suffering", "siege experience"],
+        "vehicle": ["the cries of a woman in labor, especially first childbirth", "intense birthing pains", "human bodily experience"],
+        "ground": ["both involve acute, overwhelming pain and helpless cries", "first labor is especially intense and unfamiliar", "expectation of imminent crisis (birth/death)"],
+        "posture": ["empathetic, vivid portrayal of suffering", "heightening of pathos", "prophetic lament imagery"],
+        "explanation": "Zion’s distress is compared to the anguished cries of a woman in labor with her first child, emphasizing the intensity and unfamiliarity of the suffering.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "קוֹל בַּת־צִיּוֹן תִּתְיַפֵּחַ תְּפָרֵשׂ כַּפֶּיהָ אֹוי־נָא לִי כִּי־עָיְפָה נַפְשִׁי לְהֹרְגִים",
+        "english_text": "The voice of Fair Zion panting, stretching out her hands: 'Alas for me! I faint before the killers!'",
+        "target": ["Zion/Jerusalem as a collective of people under attack", "the covenant city", "nation in distress"],
+        "vehicle": ["a young woman ('daughter Zion') gasping, stretching out her hands, uttering a death-cry", "female person", "family/social domain"],
+        "ground": ["city/nation is depicted as a single vulnerable female figure", "her physical exhaustion and outstretched hands portray desperation and surrender", "her spoken lament conveys the community’s fear of death"],
+        "posture": ["pathos-laden personification", "dramatic staging of the city’s final cry", "prophetic lament performance"],
+        "explanation": "Zion is personified as a young woman who pants, stretches out her hands, and cries that her life is failing before the killers, embodying the communal experience of mortal peril.",
+        "confidence": 0.98
+      }
+    ]
+  }
+]

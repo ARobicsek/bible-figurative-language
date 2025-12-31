@@ -1,0 +1,810 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 35:1",
+    "deliberation": "Checked for metaphors, idioms, and personification. The verse is largely formulaic narrative, but the clause 'the word that came to Jeremiah from YHWH' treats the abstract 'word' as an agent that 'comes', and 'word' itself stands for divine revelation. This is a standard prophetic formula but still figurative (personification + metonymy).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַדָּבָר אֲשֶׁר־הָיָה אֶל־יִרְמְיָהוּ מֵאֵת יְהוָֹה",
+        "english_text": "The word that came to Jeremiah from GOD",
+        "target": [
+          "prophetic revelation received by Jeremiah",
+          "divine communication",
+          "theological domain"
+        ],
+        "vehicle": [
+          "a concrete 'word' that can come from someone",
+          "personified spoken message",
+          "linguistic/anthropomorphic domain"
+        ],
+        "ground": [
+          "the revelation has a determinate content and origin and reaches Jeremiah as if sent",
+          "external, intentional communication from sender to recipient",
+          "conceptual mapping of messages as movable objects/agents"
+        ],
+        "posture": [
+          "prophetic narrator presents this as a standard way of describing revelation",
+          "authoritative prophetic formula",
+          "liturgical/prophetic discourse convention"
+        ],
+        "explanation": "The abstract notion of divine revelation is expressed as a 'word' that actively 'comes' to Jeremiah, personifying the word and using 'word' metonymically for the whole revelatory event.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 35:2",
+    "deliberation": "Examined references to 'house' and other phrases. Two metonymic/idiomatic uses appear: 'house of the Rechabites' for the clan/family, and 'house of YHWH' for the temple as God's dwelling/place of worship.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית הָרֵכָבִים",
+        "english_text": "the house of the Rechabites",
+        "target": [
+          "the clan or extended family group descended from Rechab",
+          "social group/lineage",
+          "sociological domain"
+        ],
+        "vehicle": [
+          "a physical 'house'",
+          "household/building as emblem of a family",
+          "spatial/architectural domain"
+        ],
+        "ground": [
+          "a family typically inhabits a common dwelling and is identified with it",
+          "association of dwelling with its inhabitants",
+          "conceptual contiguity between place and people"
+        ],
+        "posture": [
+          "neutral narrative designation of the group",
+          "conventional kinship terminology",
+          "everyday social metonymy"
+        ],
+        "explanation": "The term 'house' does not refer to a specific structure but to the extended family or clan of the Rechabites, using the dwelling as a metonym for its inhabitants.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יְהוָֹה",
+        "english_text": "the House of GOD",
+        "target": [
+          "the Jerusalem temple as the cultic center where YHWH is worshiped",
+          "place of worship/divine presence",
+          "religious-institutional domain"
+        ],
+        "vehicle": [
+          "a 'house' belonging to YHWH",
+          "dwelling place",
+          "domestic/architectural domain"
+        ],
+        "ground": [
+          "the temple is perceived as YHWH's dwelling among His people",
+          "a dwelling signifies the presence and ownership of its lord",
+          "association between owner and house represents presence and authority"
+        ],
+        "posture": [
+          "reverential designation of the temple",
+          "cultic-conventional title",
+          "theological metonymy embedded in temple ideology"
+        ],
+        "explanation": "Calling the temple 'the House of GOD' uses the idea of a house to stand for the temple as YHWH’s dwelling and center of worship.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 35:3",
+    "deliberation": "The verse lists individuals and the group 'all the house of the Rechabites'. As in v.2, 'house' functions metonymically for the clan, not a literal house name. No other figurative language appears.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כׇּל־בֵּית הָרֵכָבִים",
+        "english_text": "all the household of the Rechabites",
+        "target": [
+          "the entire Rechabite clan/membership",
+          "social group/lineage",
+          "sociological domain"
+        ],
+        "vehicle": [
+          "a 'house' with all that it contains",
+          "household as a social unit",
+          "domestic/architectural domain"
+        ],
+        "ground": [
+          "a household encompasses all members associated with a family dwelling",
+          "house symbolizes the entirety of a family group",
+          "use of container to represent its human contents"
+        ],
+        "posture": [
+          "matter-of-fact clan designation",
+          "standard genealogical language",
+          "social metonymy in narrative prose"
+        ],
+        "explanation": "'House' denotes the extended family of the Rechabites, using the building/household as a metonym for the people composing it.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 35:4",
+    "deliberation": "Looked at 'House of YHWH' and the title 'man of God'. The first continues the metonymic temple language; the second is an idiomatic title for a prophetic/holy man, using 'of God' metonymically to define his role.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יְהוָֹה",
+        "english_text": "the House of GOD",
+        "target": [
+          "the temple in Jerusalem as worship site",
+          "religious sanctuary",
+          "cultic domain"
+        ],
+        "vehicle": [
+          "YHWH’s 'house'",
+          "dwelling of a master",
+          "domestic/architectural domain"
+        ],
+        "ground": [
+          "the temple functions as the locale of YHWH’s presence and honor",
+          "a house indicates residence and authority of its owner",
+          "place signifies its divine inhabitant"
+        ],
+        "posture": [
+          "conventional reverential naming",
+          "cultic formula",
+          "institutional religious metonymy"
+        ],
+        "explanation": "As in v.2, 'House of GOD' uses domestic imagery for the temple as YHWH’s dwelling and cultic center.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אִישׁ הָאֱלֹהִים",
+        "english_text": "the man of God",
+        "target": [
+          "a prophetic or specially devoted servant of YHWH (Hanan/that line)",
+          "religious functionary/holy man",
+          "religious-social domain"
+        ],
+        "vehicle": [
+          "a 'man belonging to God'",
+          "possessed/commissioned person",
+          "ownership/relationship domain"
+        ],
+        "ground": [
+          "the person is uniquely associated with God’s service and authority",
+          "association with God defines his role and status",
+          "owner (God) stands for the sphere and authority in which the man operates"
+        ],
+        "posture": [
+          "honorific designation",
+          "fixed prophetic idiom",
+          "religious title expressing special relationship"
+        ],
+        "explanation": "'Man of God' is an idiomatic title for a prophet or holy man; 'of God' metonymically expresses the person’s belonging to and representing God.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 35:5",
+    "deliberation": "Narrative description of placing wine before the Rechabites and inviting them to drink. No metaphor, personification, or idiom beyond literal action verbs.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 35:6",
+    "deliberation": "The vow not to drink wine 'forever' is a legal-religious formulation. 'Ad-olam' 'forever' can sometimes be hyperbolic, but here it functions as a genuine perpetual prohibition across generations, not as obvious rhetorical overstatement. I do not treat it as figurative in this context.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 35:7",
+    "deliberation": "Commands about not building houses, sowing, or planting vineyards and dwelling in tents are literal lifestyle prescriptions. Phrases like 'many days on the land where you sojourn' and 'on the face of the land' are standard Hebrew collocations; here they function straightforwardly without a distinct rhetorical figure.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 35:8",
+    "deliberation": "Searched for idioms and conceptual metaphors. The key phrase is 'we have obeyed the voice of Jonadab' (literally 'we have listened in the voice'), which is an idiomatic/metonymic way to say 'obey his command'.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַנִּשְׁמַע בְּקוֹל יְהוֹנָדָב בֶּן־רֵכָב אָבִינוּ",
+        "english_text": "And we have obeyed (lit. listened to) the voice of Jonadab son of Rechab our ancestor",
+        "target": [
+          "obedience to Jonadab’s instructions",
+          "human response/submission",
+          "ethical-behavioral domain"
+        ],
+        "vehicle": [
+          "hearing a person's 'voice'",
+          "auditory reception of sound/command",
+          "sensory-perception domain"
+        ],
+        "ground": [
+          "to obey is to heed and respond appropriately to what one hears",
+          "listening entails receptive, compliant attitude toward a speaker",
+          "sound/voice stands metonymically for command or authority"
+        ],
+        "posture": [
+          "self-descriptive claim of faithfulness",
+          "idiomatic obedience language",
+          "covenantal/filial obedience framing"
+        ],
+        "explanation": "The phrase uses 'listen to the voice' idiomatically for obeying a command, with 'voice' metonymically representing Jonadab’s directive.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 35:9",
+    "deliberation": "Continues literal description of Rechabite practice (not building houses, not owning vineyards/fields/seed). No marked figurative or idiomatic expressions beyond straightforward prohibition.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 35:10",
+    "deliberation": "Statement that they dwell in tents and obey Jonadab. The imagery of tents is literal for a nomadic lifestyle, not used metaphorically here. No other figurative language detected.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 35:11",
+    "deliberation": "Checked for idioms and metonymy. The phrase 'when Nebuchadnezzar ... went up against the land' uses 'the land' for the whole country/kingdom (people and territory), a common metonymy. The military motion verb 'go up' is conventional, but the key figurative element is 'land' as the object of invasion representing the polity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בַּעֲל֨וֹת נְבוּכַדְרֶאצַּ֥ר מֶלֶךְ־בָּבֶל אֶל־הָאָרֶץ",
+        "english_text": "when King Nebuchadrezzar of Babylon invaded (lit. went up to) the country",
+        "target": [
+          "the kingdom of Judah with its inhabitants and political reality",
+          "political entity/people",
+          "geo-political domain"
+        ],
+        "vehicle": [
+          "the 'land' as geographical territory that one goes up against",
+          "territory/soil",
+          "spatial/geographical domain"
+        ],
+        "ground": [
+          "attacking a people is carried out by invading their land",
+          "territory represents the people and state rooted in it",
+          "place stands metonymically for its inhabitants and polity"
+        ],
+        "posture": [
+          "historical description using conventional war idiom",
+          "narrative shorthand",
+          "politico-geographical metonymy"
+        ],
+        "explanation": "Here 'the land' represents the whole kingdom and its people under attack, using territory metonymically for the political community.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 35:12",
+    "deliberation": "Same prophetic formula as v.1: 'the word of YHWH came to Jeremiah.' Again, the abstract 'word' is treated as an agent that comes, and 'word' stands for the full revelatory act.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְּבַר־יְהוָֹה אֶל־יִרְמְיָהוּ",
+        "english_text": "Then the word of GOD came to Jeremiah",
+        "target": [
+          "the prophetic revelation Jeremiah receives",
+          "act/content of divine communication",
+          "theological domain"
+        ],
+        "vehicle": [
+          "a 'word' that can come to someone",
+          "personified speech act",
+          "linguistic/anthropomorphic domain"
+        ],
+        "ground": [
+          "revelation is experienced as a discrete communication originating from God",
+          "communication can be conceptualized as a moving object/agent",
+          "spoken word represents the broader revelatory encounter"
+        ],
+        "posture": [
+          "formal prophetic introduction",
+          "authoritative narrative framing",
+          "liturgical-prophetic convention"
+        ],
+        "explanation": "Personifies the divine 'word' as an entity that 'comes' to Jeremiah, using 'word' metonymically for the whole communication.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 35:13",
+    "deliberation": "Looked at divine titles and the exhortation. 'YHWH of Hosts' is a fixed title. The clause 'will you not take discipline to listen to my words' uses 'take discipline' as an idiomatic metaphor, treating instruction/reproof as something one can 'take' or 'accept' with the hand.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲל֨וֹא תִקְח֥וּ מוּסָ֛ר לִשְׁמֹ֥עַ אֶל־דְּבָרַי",
+        "english_text": "Will you not take discipline to listen to My words?",
+        "target": [
+          "Judah’s reception of God’s corrective teaching",
+          "moral/spiritual responsiveness",
+          "ethical-religious domain"
+        ],
+        "vehicle": [
+          "taking_hold_of 'discipline' as if it were an object",
+          "manual grasping/receiving",
+          "physical-manipulative domain"
+        ],
+        "ground": [
+          "accepting correction is like taking hold of something offered to you",
+          "voluntary reception and appropriation of instruction",
+          "conceptual metaphor: accepting teaching = taking/receiving an object"
+        ],
+        "posture": [
+          "divine rebuke framed as an appeal",
+          "exhortative idiom",
+          "didactic rhetoric urging acceptance"
+        ],
+        "explanation": "The verb 'take' with 'discipline' metaphorically depicts accepting God’s correction as grasping an offered object, an idiomatic exhortation to heed His words.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 35:14",
+    "deliberation": "Searched for conceptual metaphors and idioms. The distinctive figure is in 'I spoke to you, rising early and speaking' (hashkem ve-dabber), an anthropomorphic idiom for persistent, repeated effort, not literally God’s change of time-of-day.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאָנֹכִי דִּבַּרְתִּי אֲלֵיכֶם הַשְׁכֵּם וְדַבֵּר",
+        "english_text": "But I spoke to you persistently (lit. I spoke to you, rising early and speaking)",
+        "target": [
+          "God’s persistent sending of messages to Judah",
+          "divine initiative and patience",
+          "theological/ethical domain"
+        ],
+        "vehicle": [
+          "a person who rises early and keeps speaking",
+          "diligent, repeated early-morning effort",
+          "human daily-activity domain"
+        ],
+        "ground": [
+          "getting up early to address someone portrays zeal and persistence",
+          "continuous attempts over time are like repeated early visits",
+          "anthropomorphic metaphor of God as an early-rising messenger"
+        ],
+        "posture": [
+          "expresses God’s earnest, patient outreach",
+          "reproachful yet pleading tone",
+          "rhetoric of intensified concern"
+        ],
+        "explanation": "The phrase depicts God as one who repeatedly gets up early to speak, an idiomatic anthropomorphism conveying tireless persistence in sending His word.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 35:15",
+    "deliberation": "Multiple figurative expressions: (1) 'turn back, each from his evil way' uses the common metaphor of life-conduct as a path; (2) 'do not walk after other gods' treats religious allegiance as following a path/leader; (3) 'you did not incline your ear' is an idiom for paying attention/obeying. All are distinct though related conceptual metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "שֻׁבוּ־נָא אִישׁ מִדַּרְכּוֹ הָרָעָה",
+        "english_text": "Turn back, every one of you, from his wicked way",
+        "target": [
+          "people’s moral conduct and life-patterns",
+          "ethical behavior",
+          "moral-spiritual domain"
+        ],
+        "vehicle": [
+          "a 'way' or road one walks on and can turn back from",
+          "path/journey",
+          "spatial-movement domain"
+        ],
+        "ground": [
+          "patterns of behavior unfold over time like traveling along a road",
+          "changing conduct is like reversing direction on a path",
+          "conceptual metaphor: life/conduct = a path, repentance = turning back"
+        ],
+        "posture": [
+          "urgent prophetic call to repentance",
+          "ethical exhortation",
+          "didactic use of everyday travel imagery"
+        ],
+        "explanation": "Describes conduct as a 'way' and repentance as turning back from that path, using travel imagery for moral change.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאַל־תֵּלְכוּ אַחֲרֵי אֱלֹהִים אֲחֵרִים לְעׇבְדָם",
+        "english_text": "Do not follow after other gods to serve them",
+        "target": [
+          "Israel’s allegiance and cultic devotion",
+          "religious loyalty/service",
+          "theological domain"
+        ],
+        "vehicle": [
+          "walking after a leader along a path",
+          "following someone’s footsteps",
+          "movement/social-following domain"
+        ],
+        "ground": [
+          "devotion and obedience resemble following someone’s lead",
+          "serving a deity is like walking in its train as a follower",
+          "conceptual metaphor: allegiance = walking after; worship = following"
+        ],
+        "posture": [
+          "prohibition framed in relational imagery",
+          "covenantal jealousy against idolatry",
+          "warning cast in terms of misdirected following"
+        ],
+        "explanation": "Portrays idolatry as 'walking after' other gods, using following on a path as a metaphor for religious allegiance and service.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא הִטִּיתֶם אֶת־אׇזְנְכֶם",
+        "english_text": "But you did not incline your ear",
+        "target": [
+          "Judah’s attentiveness and willingness to heed God",
+          "receptive obedience",
+          "cognitive/volitional domain"
+        ],
+        "vehicle": [
+          "tilting one’s ear toward a speaker",
+          "physical gesture of listening closely",
+          "bodily-orientation domain"
+        ],
+        "ground": [
+          "serious attention resembles leaning in to hear better",
+          "physical orientation of the ear images inward attentiveness",
+          "conceptual metaphor: paying heed = inclining the ear"
+        ],
+        "posture": [
+          "indictment of stubborn inattentiveness",
+          "rebuking tone",
+          "embodied-language idiom to stress refusal to listen"
+        ],
+        "explanation": "The phrase uses bodily imagery—leaning the ear—as an idiom for giving earnest attention and obeying, here denied of Judah.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 35:16",
+    "deliberation": "Compared the obedience of Jonadab’s sons with Judah. The phrase 'this people has not listened to Me' uses 'listen' idiomatically for 'obey', an established auditory metaphor for responsiveness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָעָם הַזֶּה לֹא שָׁמְעוּ אֵלָי",
+        "english_text": "but this people has not listened to Me",
+        "target": [
+          "Israel’s refusal to obey God",
+          "covenantal disobedience",
+          "ethical-theological domain"
+        ],
+        "vehicle": [
+          "not listening to a speaker",
+          "failure of auditory reception",
+          "sensory-perception domain"
+        ],
+        "ground": [
+          "obedience presupposes attentive hearing of instructions",
+          "ignoring someone’s words parallels disobeying them",
+          "conceptual metaphor: obedience = listening; disobedience = not listening"
+        ],
+        "posture": [
+          "summarizing verdict on the people",
+          "judicial accusation",
+          "idiomatic condensed evaluation"
+        ],
+        "explanation": "Here 'listen' is idiomatic for 'obey'; saying they did not listen figuratively expresses their refusal to comply with God’s commands.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 35:17",
+    "deliberation": "Found two notable figurative elements: (1) 'I am bringing all the evil' where 'evil' stands for disaster/judgment; (2) the paired clauses 'I spoke... they would not listen; I called... they did not respond' extend the hearing/speaking metaphor to depict Judah’s refusal as ignoring a caller.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֵת כׇּל־הָרָעָה אֲשֶׁר דִּבַּרְתִּי עֲלֵיהֶם",
+        "english_text": "all the disaster (lit. evil) with which I have threatened them",
+        "target": [
+          "the concrete calamities coming upon Judah (war, exile, etc.)",
+          "historical judgments",
+          "political-theological domain"
+        ],
+        "vehicle": [
+          "‘evil’ (רָעָה) as a quality/state",
+          "moral wrongness/harmfulness",
+          "ethical-evaluative domain"
+        ],
+        "ground": [
+          "calamities are evaluated as morally bad and harmful",
+          "the result (harm, suffering) is labeled with the moral term ‘evil’",
+          "use of moral category to denote concrete disaster (metonymy of effect/quality)"
+        ],
+        "posture": [
+          "threatening oracle framing judgment morally",
+          "judicial pronouncement",
+          "prophetic re-description of events as morally charged evil"
+        ],
+        "explanation": "The term 'evil' functions as a metonym for the concrete calamities decreed, describing historical disaster with moral terminology.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יַעַן דִּבַּרְתִּי אֲלֵיהֶם וְלֹא שָׁמֵעוּ וָאֶקְרָא לָהֶם וְלֹא עָנוּ",
+        "english_text": "for I spoke to them, but they would not listen; I called to them, but they would not respond",
+        "target": [
+          "Israel’s persistent refusal of God’s prophetic appeals",
+          "covenantal unresponsiveness",
+          "ethical-theological domain"
+        ],
+        "vehicle": [
+          "a speaker/caller ignored by those addressed",
+          "failed conversation or summons",
+          "interpersonal-communication domain"
+        ],
+        "ground": [
+          "rejecting God’s message is like ignoring someone who speaks or calls to you",
+          "response to a summons parallels obedience to commands",
+          "conceptual metaphor: obedience = answering a call; refusal = remaining silent"
+        ],
+        "posture": [
+          "emphasizes God’s patience and Israel’s culpable silence",
+          "lamenting yet judicial tone",
+          "relational metaphor highlighting broken communication"
+        ],
+        "explanation": "Uses the imagery of one speaking and calling without answer to depict Israel’s refusal to heed God, extending the obedience-as-listening metaphor into a dialogue scenario.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 35:18",
+    "deliberation": "Examined commands and obedience language. The key figurative expression is 'you have kept all his commandments'—using the verb 'keep/guard' for careful observance, conceptualizing instructions as something one guards.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּשְׁמְרוּ אֶת־כׇּל־מִצְוֹתָיו",
+        "english_text": "and have kept all his commandments",
+        "target": [
+          "Rechabite adherence to Jonadab’s instructions",
+          "faithful observance",
+          "ethical/behavioral domain"
+        ],
+        "vehicle": [
+          "guarding or keeping something entrusted to you",
+          "protective watch over an object",
+          "security/stewardship domain"
+        ],
+        "ground": [
+          "obedient observance resembles guarding a trust carefully",
+          "commands are conceptualized as valuables to be kept intact",
+          "conceptual metaphor: obeying instructions = keeping/guarding them"
+        ],
+        "posture": [
+          "praising steadfast fidelity",
+          "commendatory tone",
+          "covenantal-like obedience language applied to a family rule"
+        ],
+        "explanation": "Uses 'keep' in its figurative sense for conscientious observance, likening commands to entrusted objects that must be guarded.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 35:19",
+    "deliberation": "Identified two idiomatic/metaphorical expressions: (1) 'there shall not be cut off a man' for the continuation/extinction of a lineage; (2) 'standing before Me' as an idiom for ongoing service or availability in God’s presence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לֹא־יִכָּרֵת אִישׁ לְיוֹנָדָב בֶּן־רֵכָב",
+        "english_text": "There shall never cease to be someone (lit. a man shall not be cut off) from Jonadab son of Rechab",
+        "target": [
+          "the ongoing survival of Jonadab’s lineage",
+          "family continuity/descendants",
+          "genealogical domain"
+        ],
+        "vehicle": [
+          "cutting off a person/line",
+          "severing or removing",
+          "physical-violent action domain"
+        ],
+        "ground": [
+          "ending a lineage is like cutting something off so it no longer continues",
+          "destruction/removal images extinction of posterity",
+          "conceptual metaphor: termination of a family line = cutting off"
+        ],
+        "posture": [
+          "promissory assurance of continuity",
+          "blessing-legal formula",
+          "covenant-style idiom applied to a clan"
+        ],
+        "explanation": "The idiom 'a man shall not be cut off' figuratively expresses that Jonadab’s line will not be extinguished, using cutting imagery for ending a lineage.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֹמֵד לְפָנַי כׇּל־הַיָּמִים",
+        "english_text": "standing before Me always (all the days)",
+        "target": [
+          "perpetual availability for service in God’s presence by Jonadab’s descendants",
+          "cultic/service relationship to God",
+          "theological/cultic domain"
+        ],
+        "vehicle": [
+          "a servant or courtier physically standing before a king",
+          "attentive presence in front of a superior",
+          "royal-court/body-position domain"
+        ],
+        "ground": [
+          "serving a superior involves standing attentively in his presence",
+          "unbroken availability is like continually standing ready before someone",
+          "conceptual metaphor: faithful service to God = standing in His presence"
+        ],
+        "posture": [
+          "exalts the clan’s honored status",
+          "promise of enduring service",
+          "courtly imagery adapted to divine-human relationship"
+        ],
+        "explanation": "The phrase uses royal court imagery—standing before a king—as an idiom and metaphor for ongoing service and favored access in God’s presence.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

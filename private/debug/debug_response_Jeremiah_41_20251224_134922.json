@@ -1,0 +1,215 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 41:1",
+    "deliberation": "Examined time phrase, genealogy, movement to Mizpah, and the meal. The only potentially figurative element is וַיֹּאכְלוּ שָׁם לֶחֶם יַחְדָּו (they ate bread together). In Biblical Hebrew לֶחֶם “bread” frequently stands by metonymy/synecdoche for the whole meal and the social act of table fellowship. No metaphor, simile, personification, hyperbole, or irony appears.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיֹּאכְלוּ שָׁם לֶחֶם יַחְדָּו",
+        "english_text": "and they ate bread together there",
+        "target": [
+          "the shared meal and social fellowship between Ishmael and Gedaliah",
+          "social interaction / table fellowship",
+          "human social-relational domain"
+        ],
+        "vehicle": [
+          "“bread” as the main food item of the meal",
+          "food/meal component",
+          "material / culinary domain"
+        ],
+        "ground": [
+          "bread as representative of the whole meal and the act of eating together",
+          "cultural association between sharing bread and sharing fellowship",
+          "conceptual mapping from food consumption to relational bonding"
+        ],
+        "posture": [
+          "narrator’s neutral description that assumes the cultural link between bread and fellowship",
+          "unmarked, matter-of-fact narrative stance",
+          "narrative discourse about social relations"
+        ],
+        "explanation": "“Bread” functions metonymically for the entire meal and for the act of table fellowship, a culturally significant sign of relationship and trust.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 41:2",
+    "deliberation": "Considered whether בַּחֶרֶב (“with the sword”) might be figurative for violent death in general, but in context it straightforwardly denotes the literal means of killing. The rest is plain narrative description of the assassination. No metaphor, simile, idiom, metonymy, or other figure stands out.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 41:3",
+    "deliberation": "Narrative account of Ishmael killing Judeans and Chaldean soldiers. The verbs for striking and killing, and the references to people and place, are all literal. No lexical or phrasal figurative language (metaphor, simile, personification, metonymy, etc.) appears.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 41:4",
+    "deliberation": "Describes temporal sequence (“the second day”) and the fact that no one knew yet. The phrasing וְאִישׁ לֹא יָדָע (“and no man knew”) could in some contexts be hyperbolic, but here it is best read literally (news of the murder had not yet spread). No clear figurative device is used.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 41:5",
+    "deliberation": "Considered the mourning gestures (shaved beards, torn garments, gashes) as symbolic actions, but linguistically they are literal descriptions of physical acts. The phrase בֵּית יְהוָה (“the House of YHWH”) is a standard metonymy for the temple as YHWH’s dwelling and the locus of worship, not just an ordinary domestic ‘house’. No other figurative expressions detected.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יְהוָה",
+        "english_text": "the House of the LORD (House of GOD)",
+        "target": [
+          "the Jerusalem temple and its worship",
+          "sanctuary / cult center",
+          "religious-institutional domain"
+        ],
+        "vehicle": [
+          "a “house” as a dwelling place",
+          "architectural building / residence",
+          "domestic-architectural domain"
+        ],
+        "ground": [
+          "a temple is conceived as YHWH’s dwelling place, analogous to a human house",
+          "association between a house and the presence of its owner",
+          "conceptual mapping from human dwelling to divine residence and cultic locus"
+        ],
+        "posture": [
+          "pious, reverent naming of the temple as God’s house",
+          "theological perspective that emphasizes divine presence",
+          "religious discourse about sacred space"
+        ],
+        "explanation": "“House of YHWH” is a metonymy in which the domestic term ‘house’ stands for the temple as YHWH’s dwelling and the center of His worship.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 41:6",
+    "deliberation": "Ishmael goes out weeping as he walks and invites the men to Gedaliah. The weeping is deceptive in motive, but described literally; there is no explicit figurative comparison or idiomatic expression in the Hebrew. No metaphor, simile, metonymy, or personification detected.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 41:7",
+    "deliberation": "The verse narrates their entry into the city and Ishmael’s slaughter of the men, casting them into the cistern. The language of slaughter and the cistern is concrete and literal. While the cistern later functions as a grim mass grave, the text states this straightforwardly. No figurative linguistic devices are clearly present.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 41:8",
+    "deliberation": "Examined the plea for life based on hidden stores, and the phrase בְּתוֹךְ אֲחֵיהֶם (“in the midst of their brothers”). Here אֲחֵיהֶם ‘their brothers’ is not about literal siblings but a broader social group, ‘their fellows / compatriots’, an extended kinship term functioning metonymically for their group. No metaphor, simile, or hyperbole evident.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּתוֹךְ אֲחֵיהֶם",
+        "english_text": "along with their fellows (lit. in the midst of their brothers)",
+        "target": [
+          "the other members of their party/group who were being killed",
+          "social group / companions",
+          "human social-relational domain"
+        ],
+        "vehicle": [
+          "“brothers” as a family-kinship term",
+          "sibling relationship",
+          "family-kinship domain"
+        ],
+        "ground": [
+          "use of family language to describe close social solidarity or common identity",
+          "association between brothers and tightly bound companions",
+          "conceptual mapping from literal sibling bonds to group/communal bonds"
+        ],
+        "posture": [
+          "narrator’s use of kinship language to represent communal ties",
+          "neutral narrative but shaped by kinship-oriented social worldview",
+          "social-discursive framing of group membership as brotherhood"
+        ],
+        "explanation": "The term “brothers” extends beyond literal siblings to denote their fellow men, using kinship language metonymically for the larger social group.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 41:9",
+    "deliberation": "Describes the specific cistern Asa made because of Baasha and notes Ishmael filled it with corpses. The filling is literal, not hyperbolic; the reference to earlier history is historical, not metaphorical. No clear figurative language devices are used.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 41:10",
+    "deliberation": "Narrative of Ishmael taking captive the remaining people, including royal daughters, and heading toward the Ammonites. The verbs for taking captive and going over are standard and literal in this context. No metaphor, simile, metonymy, or idiom stands out beyond straightforward military-captive language.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 41:11",
+    "deliberation": "Reports that Johanan and the army officers heard אֵת כָּל־הָרָעָה (“all the evil”) Ishmael did. הָרָעָה ‘the evil’ is a moral characterization but not figurative; it directly labels his deeds as wicked. No metaphor, simile, personification, or idiom appears.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 41:12",
+    "deliberation": "Describes mustering men, going to fight, and meeting Ishmael by מַיִם רַבִּים אֲשֶׁר בְּגִבְעוֹן (“the great waters / large pool that is in Gibeon”). Though a similar phrase can be figurative elsewhere, here it is clearly identified as a known physical pool. Language is purely descriptive.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 41:13",
+    "deliberation": "The verse recounts that all the people with Ishmael, seeing Johanan and the officers, rejoiced. Emotions (seeing, rejoicing) are stated literally. No figurative comparisons, personifications, or word-level metonymies are present.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 41:14",
+    "deliberation": "Describes the people turning around from Ishmael and going to Johanan. The verb וַיָּסֹבּוּ (“they turned around”) could, in some contexts, be a metaphor for changing allegiance; here it describes literal physical movement together with a change of side, but the wording itself is straightforward action language. No distinct figurative expression is clearly marked.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 41:15",
+    "deliberation": "Narrates Ishmael’s escape with eight men to the Ammonites. ‘Escaped’ and the movement verbs are literal; there is no figurative overlay (such as metaphorical flight, hyperbole, or idiom) present in the Hebrew wording.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 41:16",
+    "deliberation": "Johanan and the officers take all the remaining people—warriors, women, children, eunuchs—whom he had brought back. The language is a straightforward catalog of persons and actions, without metaphor, simile, personification, or metonymy beyond ordinary referential use.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 41:17",
+    "deliberation": "States that they went and stayed at Geruth Chimham by Bethlehem, on the way to enter Egypt. These are geographical and directional descriptions, literal rather than figurative. No metaphors, similes, or idioms are evident.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 41:18",
+    "deliberation": "Explains that they did this מִפְּנֵי הַכַּשְׂדִּים כִּי יָרְאוּ מִפְּנֵיהֶם (“because of the Chaldeans, for they were afraid of them”). The preposition מִפְּנֵי (‘from before/because of’) contains a common spatial-to-causal extension, but this is regular grammar rather than a marked literary figure. The statement of fear and the causal link to Gedaliah’s death are literal. No salient metaphor, simile, hyperbole, or personification.",
+    "instances": []
+  }
+]

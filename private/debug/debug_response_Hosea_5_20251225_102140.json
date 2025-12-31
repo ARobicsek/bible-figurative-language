@@ -1,0 +1,556 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 5:1",
+    "deliberation": "Looked for metaphors, similes, and metonymies. The key imagery is leaders as hunting equipment (snare/net) causing others to stumble at Mizpah and Tabor. Also evaluated whether “house of Israel/house of the king” are metonymic (they are conventional but still figurative).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־פַח הֱיִיתֶם לְמִצְפָּה",
+        "english_text": "for you have been a snare at Mizpah",
+        "target": ["the priests and ruling house at Mizpah", "corrupt religious-political leadership", "Israelite society"],
+        "vehicle": ["a snare/trap laid at Mizpah", "hunting device that captures victims", "hunting imagery"],
+        "ground": ["causing unsuspecting ones to be caught and harmed", "dangerous, deceptive entrapment", "moral/spiritual misguidance"],
+        "posture": ["accusatory characterization of leadership", "judgmental moral evaluation", "prophetic indictment"],
+        "explanation": "The priests and leaders are portrayed as a hunting snare at the cult center of Mizpah, emphasizing that instead of guiding people they trap and ruin them spiritually.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְרֶשֶׁת פְּרוּשָׂה עַל־תָּבוֹר",
+        "english_text": "and a net spread out over Tabor",
+        "target": ["the same priests/royal house influencing Tabor", "corrupt leadership around Mount Tabor", "Israel’s religious-political system"],
+        "vehicle": ["a net spread over Tabor", "large spread-out hunting/fowling net", "hunting imagery"],
+        "ground": ["wide-ranging, concealed danger leading to capture", "broad influence that ensnares many", "systemic spiritual entrapment"],
+        "posture": ["condemnation of systemic corruption", "warning about pervasive danger", "prophetic exposure of hidden snares"],
+        "explanation": "Leadership is also depicted as a net draped over Mount Tabor, suggesting pervasive and inescapable corruption that ensnares those who come there.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יִשְׂרָאֵל ... וּבֵית הַמֶּלֶךְ",
+        "english_text": "House of Israel ... and O royal house",
+        "target": ["the people of Israel and the royal family", "national community and ruling dynasty", "Israel as a political-religious entity"],
+        "vehicle": ["a \"house\" (household/building)", "physical dwelling and family unit", "domestic/architectural imagery"],
+        "ground": ["the household stands for those who live in and belong to it", "corporate identity represented by a single house", "collective representation via dwelling imagery"],
+        "posture": ["direct address in covenant lawsuit style", "solemn summoning of all responsible parties", "prophetic courtroom rhetoric"],
+        "explanation": "“House of Israel” and “royal house” use the image of a physical house to stand for the people and dynasty, a standard metonymy where the dwelling denotes its occupants.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 5:2",
+    "deliberation": "The Hebrew is difficult, but in the given reading trappers dig deep pits. Considered whether this referred literally to physical traps or figuratively to plots and deep corruption. The context of deceptive leadership suggests figurative plotting imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשַׁחֲטָה שֵׂטִים הֶעְמִיקוּ",
+        "english_text": "for when trappers dug deep pitfalls",
+        "target": ["corrupt plotters/rebels in Israel", "deceitful leaders and apostates", "Israel’s internal corrupters"],
+        "vehicle": ["trappers digging deep pits", "hunters engineering concealed snares", "hunting/ambush imagery"],
+        "ground": ["secretive, deliberate efforts to ensnare others", "depth suggesting intensity and hiddenness", "premeditated schemes to cause others to fall"],
+        "posture": ["moral exposure of hidden plots", "heightened seriousness of their scheming", "prophetic blame for deep-rooted evil"],
+        "explanation": "The verse depicts the schemers as trappers digging deep pits, a metaphor for their covert, carefully prepared plans to lead others into ruin.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 5:3",
+    "deliberation": "Searched for figurative uses: the key terms are sexual infidelity (זנה) and ritual impurity (טמא) used of Ephraim/Israel’s relationship to God. In Hosea this sexual language is a controlling metaphor for idolatry, and purity language for moral defilement.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי עַתָּה הִזְנֵיתָ אֶפְרָיִם",
+        "english_text": "Behold, you have fornicated, O Ephraim",
+        "target": ["Ephraim’s covenant infidelity to YHWH", "idolatrous/mixed worship practices", "Israel’s spiritual condition"],
+        "vehicle": ["sexual fornication/whoredom", "marital/sexual unfaithfulness", "sexual-relational domain"],
+        "ground": ["breaking exclusive loyalty, seeking other partners", "betrayal of a covenant relationship", "shameful and intimate unfaithfulness"],
+        "posture": ["accusation in marital-covenant terms", "heightening the offensiveness of idolatry", "prophetic lament and rebuke"],
+        "explanation": "Ephraim’s religious and political disloyalties are portrayed as sexual fornication against God, casting idolatry as marital betrayal.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִטְמָא יִשְׂרָאֵל",
+        "english_text": "Israel has defiled himself",
+        "target": ["Israel’s moral and cultic corruption", "their sin in turning from YHWH", "spiritual status of the nation"],
+        "vehicle": ["ritual defilement/uncleanness", "physical impurity in cultic law", "purity/impurity system"],
+        "ground": ["becoming unfit for God’s presence", "stain and pollution that separate from the holy", "contaminated status needing cleansing"],
+        "posture": ["theological evaluation of their state", "framing sin as pollution", "warning about exclusion from God’s presence"],
+        "explanation": "Israel’s sin is cast in the imagery of ritual defilement, implying that their behavior has made them unclean and unfit to approach the holy God.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 5:4",
+    "deliberation": "Looked for agency attributed to abstractions and internal drives. Two candidates: their deeds not allowing them to return (personification) and “spirit of whoredom” within them (metaphoric internal force for idolatrous desire).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא יִתְּנוּ מַעַלְלֵיהֶם לָשׁוּב אֶל־אֱלֹהֵיהֶם",
+        "english_text": "Their deeds do not let them turn back to their God",
+        "target": ["Israel’s entrenched sinful patterns", "the sinners themselves in their habits", "the moral-spiritual state of the people"],
+        "vehicle": ["deeds as agents that \"do not allow\"", "controlling authorities that forbid an action", "person-like controllers"],
+        "ground": ["their past actions now exert controlling power", "sin has become a master that prevents repentance", "self-imposed bondage through behavior"],
+        "posture": ["highlighting captivity to sin", "warning about consequences of habitual evil", "prophetic psychological insight"],
+        "explanation": "Their own deeds are personified as gatekeepers who refuse permission for them to return, emphasizing how their behavior now dominates and prevents repentance.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי רוּחַ זְנוּנִים בְּקִרְבָּם",
+        "english_text": "Because a spirit of whoredom is within them",
+        "target": ["Israel’s inner disposition toward idolatry", "their deep-seated inclination to unfaithfulness", "the psychological/spiritual root of their sin"],
+        "vehicle": ["a \"spirit of whoredom\" dwelling within", "an inner force characterized by sexual infidelity", "quasi-independent internal agent"],
+        "ground": ["an inner driving force that compels behavior", "pervasive, controlling tendency toward betrayal", "domineering influence leading to idolatry"],
+        "posture": ["diagnosis of inner corruption", "explaining persistent apostasy", "prophetic unveiling of hidden motive power"],
+        "explanation": "An internalized, idolatrous impulse is depicted as a ‘spirit of whoredom’ inside them, a metaphor for their deep, driving tendency to covenant unfaithfulness.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 5:5",
+    "deliberation": "Key possibilities: (1) “pride of Israel” doing something before his face, likely personified as a witness (cf. Hos 7:10); (2) “will stumble/fall in their guilt” as a standard metaphor for moral/spiritual failure and collapse.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעָנָה גְאוֹן־יִשְׂרָאֵל בְּפָנָיו",
+        "english_text": "Israel’s pride shall answer/testify before his very eyes",
+        "target": ["Israel’s arrogant attitude", "their boastful self-reliance", "the internal disposition of the nation"],
+        "vehicle": ["pride as someone who speaks or testifies", "a witness giving an answer in court", "personified abstract quality"],
+        "ground": ["their arrogance itself serves as evidence against them", "inner attitude becomes vocal testimony", "their sin is self-condemning"],
+        "posture": ["legal/courtroom accusation", "exposing their pride as incriminating", "prophetic irony that their own pride convicts them"],
+        "explanation": "Pride is personified as a witness answering before them, conveying that their own arrogance rises up as evidence of guilt in God’s courtroom.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיִשְׂרָאֵל וְאֶפְרַיִם יִכָּשְׁלוּ בַּעֲוֹנָם כָּשַׁל גַּם־יְהוּדָה עִמָּם",
+        "english_text": "Israel and Ephraim shall stumble in their iniquity; Judah also has stumbled with them",
+        "target": ["the national communities of Israel/Ephraim/Judah", "their moral and political failure", "their experience of judgment/exile"],
+        "vehicle": ["stumbling and falling while walking", "loss of footing on a path", "journey mishap imagery"],
+        "ground": ["sin causes loss of stability and downfall", "moral error likened to tripping and falling", "progress interrupted by collapse"],
+        "posture": ["warning of inevitable downfall", "showing sin’s destabilizing effect", "prophetic prediction of national collapse"],
+        "explanation": "Their moral failure and coming judgment are depicted as stumbling on a path, a metaphor for how sin makes them lose stability and fall into ruin.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 5:6",
+    "deliberation": "Examined “going with flocks and herds to seek YHWH but not find Him” and “He has withdrawn from them.” The cultic seeking is literal action, but the language of seeking/finding and withdrawal uses spatial search/removal as a metaphor for relational access and divine favor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יֵלְכוּ לְבַקֵּשׁ אֶת־יְהוָה וְלֹא יִמְצָאוּ חָלַץ מֵהֶם",
+        "english_text": "They will go to seek the LORD, but they will not find Him; He has withdrawn from them",
+        "target": ["Israel’s attempt to regain God’s favor", "the reality of God’s relational distance/judgment", "their covenant standing before God"],
+        "vehicle": ["seeking and not finding a person who has gone away", "someone withdrawing himself from another’s sphere", "spatial search and removal imagery"],
+        "ground": ["restored relationship pictured as locating someone present", "judgment as the beloved party pulling away", "loss of access and presence signifying rejection"],
+        "posture": ["depicting judgment as divine absence", "critiquing empty ritual without true repentance", "sobering portrayal of broken relationship"],
+        "explanation": "The language of seeking and not finding, and of God withdrawing, uses spatial imagery as an idiom for relational distance and rejection: God is metaphorically ‘gone’ from them.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 5:7",
+    "deliberation": "Considered three elements: (1) “they have dealt treacherously with YHWH” in a book saturated with marital imagery; (2) “they have begotten alien children” likely continuing marriage/offspring metaphor for a foreign, illegitimate generation; (3) “the new moon will devour them” uses time/occasion as a devouring agent, clear personification/metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בַּיהוָה בָּגָדוּ",
+        "english_text": "They have broken faith with the LORD",
+        "target": ["Israel’s covenant disloyalty to YHWH", "their idolatry and political treachery", "the covenant relationship itself"],
+        "vehicle": ["betrayal/treachery in a relationship", "unfaithfulness of a spouse or ally", "relational/marital-political sphere"],
+        "ground": ["violation of pledged loyalty", "secretly turning against one’s partner", "covenant as a bond that can be betrayed"],
+        "posture": ["judicial and relational accusation", "framing sin as betrayal of trust", "prophetic appeal to covenant standards"],
+        "explanation": "Their idolatry and political disloyalty are cast in terms of betrayal toward YHWH, drawing on marital and treaty imagery for covenant unfaithfulness.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־בָנִים זָרִים יָלָדוּ",
+        "english_text": "Because they have begotten alien children",
+        "target": ["the next generation shaped by idolatry", "spiritually illegitimate offspring/community", "the people’s religious identity"],
+        "vehicle": ["bearing foreign/illegitimate children", "offspring that do not belong to the true husband/father", "family/kinship imagery"],
+        "ground": ["producing a generation who does not truly belong to YHWH", "their ‘children’ are foreign in allegiance and character", "fruit of their unfaithfulness is an alien progeny"],
+        "posture": ["lamenting corrupted legacy", "intensifying the charge of unfaithfulness", "warning about long-term effects of idolatry"],
+        "explanation": "The community shaped by their idolatry is portrayed as ‘alien children,’ offspring who do not truly belong to YHWH, extending the marital/parental metaphor.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַתָּה יֹאכְלֵם חֹדֶשׁ אֶת־חֶלְקֵיהֶם",
+        "english_text": "Now the new moon shall devour their portion",
+        "target": ["Israel and their allotted possessions", "their land, inheritance, and prosperity", "their share of covenant blessings"],
+        "vehicle": ["a new moon that eats/devours", "a calendrical occasion as a ravenous eater", "personified time/feast as a predator"],
+        "ground": ["an appointed time consuming what they have", "judgment at a festal time reversed into destruction", "celebration day turned into devouring loss"],
+        "posture": ["ironic reversal of festal expectations", "threatening total loss of inheritance", "depicting judgment as inescapable and timed"],
+        "explanation": "The ‘new moon’—normally a time of festivity—is personified as a devourer that consumes their portion, a metaphor for a coming appointed time of loss and judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 5:8",
+    "deliberation": "Most of the verse is straightforward battle alarm language using literal shofar/trumpets. The notable figurative element is the renaming of Bethel as Beth-aven (“house of evil/vanity”), a polemical metonym and wordplay, not just a geographic label.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "הָרִיעוּ בֵּית אָוֶן",
+        "english_text": "Give the alarm in Beth-aven",
+        "target": ["the cult center at Bethel and its worship", "the idolatrous shrine and community using it", "Israel’s false worship site"],
+        "vehicle": ["\"Beth-aven\" = house of wickedness/vanity", "a house characterized by trouble/evil", "polemical renaming of a sacred place"],
+        "ground": ["the sanctuary is dominated by iniquity, not God", "its true character is vanity/evil instead of ‘God’s house’", "place-name stands for its corrupt cultic practice"],
+        "posture": ["satirical, condemnatory labeling", "demythologizing Bethel’s sanctity", "prophetic exposure through punning name"],
+        "explanation": "Calling Bethel “Beth-aven” (house of wickedness/vanity) is a polemical renaming where the place-name stands metonymically for its corrupt cult and character.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 5:9",
+    "deliberation": "Reviewed “Ephraim shall be a desolation/shammah on a day of rebuke; among the tribes of Israel I have made known what is sure.” These phrases can describe literal devastation and a literal day of judgment. There is no comparitive image or personification beyond normal prophetic diction.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 5:10",
+    "deliberation": "Identified two explicit כ- comparatives: (1) princes of Judah likened to boundary-movers, a moral simile; (2) wrath poured out like water, a vivid simile for overwhelming judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָיוּ שָׂרֵי יְהוּדָה כְּמַסִּיגֵי גְּבוּל",
+        "english_text": "The officers of Judah have acted like shifters of field boundaries",
+        "target": ["the princes of Judah", "their corrupt policies and actions", "Judah’s leadership class"],
+        "vehicle": ["those who move boundary markers", "land-thieves encroaching on others’ property", "agrarian property crime imagery"],
+        "ground": ["deliberate, unlawful encroachment on what belongs to others", "greedy violation of established limits", "abuse of power to gain advantage"],
+        "posture": ["moral condemnation via social-legal image", "showing leaders as brazen lawbreakers", "aligning them with classic covenant curses"],
+        "explanation": "Judah’s leaders are likened to those who illegally move boundary stones, highlighting their corrupt encroachment on what is not theirs.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֲלֵיהֶם אֶשְׁפּוֹךְ כַּמַּיִם עֶבְרָתִי",
+        "english_text": "On them I will pour out My wrath like water",
+        "target": ["God’s exercise of judgment on Judah’s leaders", "the experience of divine wrath", "the outcome of their sin"],
+        "vehicle": ["water being poured out abundantly", "a deluge or torrent covering someone", "liquid imagery of overwhelming force"],
+        "ground": ["wrath coming in a sudden, overwhelming flood", "inescapable engulfing of the guilty", "abundance and intensity of judgment"],
+        "posture": ["vivid threatening of severe judgment", "portraying wrath as unstoppable force", "solemn warning of coming disaster"],
+        "explanation": "God’s wrath is compared to water poured out, emphasizing the overwhelming and inescapable nature of the coming judgment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Hosea 5:11",
+    "deliberation": "Assessed whether oppression/crushing are literal or figurative; they plausibly describe real political oppression. The distinctly figurative phrase is “he walked after command/futility,” using walking after as a path metaphor for following empty human precepts/idols.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי הוֹאִיל הָלַךְ אַחֲרֵי־צָו",
+        "english_text": "Because he has willingly gone after futility/command",
+        "target": ["Ephraim’s religious and political allegiance", "their obedience to human or idolatrous decrees", "their orientation of life and worship"],
+        "vehicle": ["walking after something on a path", "following behind a leader on a journey", "journey/discipleship imagery"],
+        "ground": ["ordering one’s life by following a guide", "pursuing and adhering to something", "choosing a path of allegiance"],
+        "posture": ["critique of misguided obedience", "showing their active, willing pursuit of emptiness", "depicting idolatry as a chosen path"],
+        "explanation": "Ephraim is said to ‘walk after’ a mere command/futility, an idiomatic path metaphor for deliberately ordering life according to empty human or idolatrous precepts.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Hosea 5:12",
+    "deliberation": "The verse has two parallel כ- similes: God like a moth to Ephraim and like decay to Judah. Both express slow, consuming judgment through imagery of destructive agents.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַאֲנִי כָּעָשׁ לְאֶפְרָיִם",
+        "english_text": "For it is I who am like rot/moth to Ephraim",
+        "target": ["God’s mode of judgment on Ephraim", "Ephraim’s gradual weakening and loss", "the national strength and prosperity of Ephraim"],
+        "vehicle": ["a moth that eats away fabric", "a small insect that silently destroys", "slow, internal destructive process"],
+        "ground": ["quiet, often unnoticed consumption from within", "eventual ruin of what once seemed intact", "fragility under persistent nibbling damage"],
+        "posture": ["depicting judgment as subtle but inexorable", "undermining false security", "warning that ruin is already at work"],
+        "explanation": "God likens Himself to a moth to Ephraim, portraying His judgment as a slow, inward consumption that quietly ruins their strength.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכָרָקָב לְבֵית יְהוּדָה",
+        "english_text": "and like decay to the House of Judah",
+        "target": ["God’s judgment on Judah", "Judah’s internal deterioration", "the stability and institutions of Judah"],
+        "vehicle": ["decay/rot (רָקָב)", "corrosion, putrefaction of material", "slow disintegration imagery"],
+        "ground": ["internal breakdown over time", "corruption that eats away from inside", "eventual collapse due to unseen rot"],
+        "posture": ["warning of inevitable structural collapse", "emphasizing inner corruption rather than external blow", "portraying judgment as organic decay"],
+        "explanation": "God compares Himself to decay for Judah, signaling that His judgment will work like rot, corroding their strength and institutions from within.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Hosea 5:13",
+    "deliberation": "Noted a coherent illness-healing metaphor: Ephraim sees his ‘sickness’ and Judah his ‘wound’ and seeks healing from Assyria. This is not literal physical disease, but a metaphor for political/spiritual crisis and the vain search for help.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיַּרְא אֶפְרַיִם אֶת־חׇלְיוֹ וִיהוּדָה אֶת־מְזֹרוֹ ... וְהוּא לֹא יוּכַל לִרְפֹּא לָכֶם וְלֹא־יִגְהֶה מִכֶּם מָזוֹר",
+        "english_text": "Yet when Ephraim became aware of his sickness, Judah of his sores ... He will never be able to cure you, will not heal you of your sores",
+        "target": ["the political and spiritual crisis of Israel/Judah", "their vulnerability and weakened condition", "their need for deliverance and restoration"],
+        "vehicle": ["bodily sickness and sores needing healing", "a patient seeking a physician’s cure", "medical/illness imagery"],
+        "ground": ["serious but diagnosable condition", "dependence on a healer for recovery", "wrongly seeking help from an inadequate physician (Assyria)"],
+        "posture": ["critique of misplaced trust in foreign powers", "portraying their plight as needing divine, not political, remedy", "underscoring Assyria’s impotence to save"],
+        "explanation": "National and spiritual trouble is depicted as sickness and sores, and Assyria as an incompetent physician who cannot heal, forming a medical metaphor for their misplaced reliance.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Hosea 5:14",
+    "deliberation": "Two parallel כ- clauses describe God as a lion and young lion to Ephraim/Judah, elaborated by tearing and carrying off prey. This is a sustained predatory-animal simile for God’s violent, inescapable judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי אָנֹכִי כַשַּׁחַל לְאֶפְרָיִם",
+        "english_text": "For I will be like a lion to Ephraim",
+        "target": ["God’s direct judgment on Ephraim", "Ephraim’s experience of violent catastrophe", "the encounter between God and Ephraim"],
+        "vehicle": ["a lion (שַׁחַל)", "a powerful predator attacking prey", "wild-beast attack imagery"],
+        "ground": ["sudden, overpowering violence", "tearing and killing with no resistance", "prey’s helplessness before the predator"],
+        "posture": ["intense threat emphasizing fear and inevitability", "countering any view of God as harmless", "portraying judgment as deadly encounter"],
+        "explanation": "God likens Himself to a lion against Ephraim, depicting His judgment as a sudden, overpowering predatory attack that the nation cannot withstand.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכַכְּפִיר לְבֵית יְהוּדָה אֲנִי אֲנִי אֶטְרֹף וְאֵלֵךְ אֶשָּׂא וְאֵין מַצִּיל",
+        "english_text": "and like a young lion to the House of Judah; I, I will attack and stride away, carrying the prey that no one can rescue",
+        "target": ["God’s judgment on Judah", "Judah’s capture and exile/destruction", "the outcome of divine attack"],
+        "vehicle": ["a young lion seizing and carrying prey", "predator that tears and walks off with its kill", "lion-hunt sequence imagery"],
+        "ground": ["strength and agility to seize and carry prey away", "no rescuer can snatch prey from such a lion", "complete control of the victim’s fate"],
+        "posture": ["emphasizing irreversibility of judgment", "declaring absence of any human savior", "portraying God as unstoppable hunter"],
+        "explanation": "God compares Himself to a young lion toward Judah, elaborating that He will tear, carry off, and that none can rescue—an extended simile of predatory capture for unavoidable exile/judgment.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Hosea 5:15",
+    "deliberation": "Considered two main anthropomorphic/idiomatic expressions: (1) God ‘going and returning to His place’ as spatial withdrawal for relational distance; (2) Israel’s ‘seeking My face’ as idiom for seeking God’s presence/favor, not literally locating a physical face.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵלֵךְ אָשׁוּבָה אֶל־מְקוֹמִי",
+        "english_text": "I will go, I will return to My place",
+        "target": ["God’s withdrawal of active presence and help", "the change in His relational stance toward Israel", "the onset of divine hiddenness/judgment"],
+        "vehicle": ["a person physically leaving and going home", "retreating to one’s own place", "spatial movement imagery"],
+        "ground": ["distancing oneself from another", "no longer being available or present in the same way", "withdrawing engagement and accessibility"],
+        "posture": ["presenting judgment as God’s deliberate withdrawal", "explaining Israel’s experience of divine absence", "inviting reflection on cause of that withdrawal"],
+        "explanation": "God’s decision to ‘return to My place’ uses human spatial movement as a metaphor for relational and protective withdrawal from His people.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבִקְשׁוּ פָנָי בַּצַּר לָהֶם יְשַׁחֲרֻנְנִי",
+        "english_text": "Till they seek My face; in their distress they will seek Me",
+        "target": ["Israel’s renewed pursuit of God", "desire for restored relationship and favor", "their response of repentance in distress"],
+        "vehicle": ["seeking someone’s face", "anxiously searching for a person’s presence", "courtly/audience imagery"],
+        "ground": ["seeking access and favor from a superior", "desiring face-to-face presence and approval", "earnest pursuit expressed as search"],
+        "posture": ["portraying repentance as active pursuit of God", "showing distress as catalyst for seeking", "hopeful note that judgment will lead to renewed search"],
+        "explanation": "‘Seeking My face’ is an idiomatic metaphor for earnestly seeking God’s presence and favor, not literally looking for a physical face, indicating relational restoration as their goal.",
+        "confidence": 0.92
+      }
+    ]
+  }
+]

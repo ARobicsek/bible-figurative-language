@@ -1,0 +1,443 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 2:1",
+    "deliberation": "Considered whether 'stand on your feet' is merely physical or also metaphorical for readiness; context in v.2 shows an actual change of posture, so I treated it as primarily literal. The vocative 'בן־אדם' functions as a fixed idiomatic designation for Ezekiel as a mere human in contrast to the divine speaker, so I treated that as a metonymic/idiomatic expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֶּן־אָדָם",
+        "english_text": "O mortal (lit. son of man)",
+        "target": [
+          "Ezekiel as a human prophet",
+          "individual human being in contrast to God",
+          "humanity/mortality"
+        ],
+        "vehicle": [
+          "“son of man” (offspring of a human)",
+          "kinship/offspring language",
+          "family/anthropological relations"
+        ],
+        "ground": [
+          "sharing the nature and limitations of humanity",
+          "creaturely, mortal status as opposed to divine",
+          "the human side of the divine–human relationship"
+        ],
+        "posture": [
+          "humbling address that emphasizes Ezekiel’s lowly status",
+          "status-lowering, contrastive designation",
+          "prophetic commissioning discourse"
+        ],
+        "explanation": "The phrase 'בן־אדם' is an idiomatic way of saying 'human/mortal', using 'son of man' (offspring of a human) metonymically for one who shares human, and thus limited, nature in contrast to the divine speaker.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 2:2",
+    "deliberation": "Reviewed 'a spirit entered into me and set me upon my feet' and considered whether 'spirit' is a metaphor for courage or strength. In Ezekiel, however, 'רוּחַ' regularly denotes the actual divine Spirit/power acting on the prophet within a visionary context, not merely a figurative 'inner mood.' The setting is a theophanic vision with a real change of posture described, so I judged the verse to be functioning narratively, not as a deliberate metaphor or simile.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 2:3",
+    "deliberation": "Considered the pejorative phrasing 'nation of rebels' and the use of 'גּוֹיִם' for Israel, but these are evaluative rather than clearly figurative in this context. The one strongly idiomatic element is the temporal phrase 'עַד־עֶצֶם הַיּוֹם הַזֶּה', literally 'until the bone/essence of this day,' a standard Hebrew idiom intensifying 'to this very day.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַד־עֶצֶם הַיּוֹם הַזֶּה",
+        "english_text": "to this very day (lit. until the bone/essence of this day)",
+        "target": [
+          "the continuing duration of Israel’s rebellion",
+          "a specific stretch of time up to the present moment",
+          "time and historical continuity"
+        ],
+        "vehicle": [
+          "“bone/essence of the day”",
+          "a body-part/essence standing for the whole day",
+          "embodied/physical imagery applied to time"
+        ],
+        "ground": [
+          "the 'essence' or 'core' stands for the entirety and exactness of the day",
+          "intensification of the idea 'this very same day'",
+          "using part/essence language to stress the precise present moment"
+        ],
+        "posture": [
+          "emphasizing the unbroken persistence of rebellion",
+          "intensive temporal idiom, not neutral description",
+          "prophetic stressing of ongoing guilt in historical perspective"
+        ],
+        "explanation": "The phrase literally speaks of the 'bone/essence of this day,' using 'עֶצֶם' metonymically for the very substance or selfsame nature of the day, forming an idiom meaning 'to this very day' and intensifying the continuity of Israel’s defiance.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 2:4",
+    "deliberation": "Focused on the descriptors 'קְשֵׁי פָנִים' and 'חִזְקֵי־לֵב'. Both are conventional Hebrew expressions but still rely on physical imagery (hard face, strong/firm heart) mapped onto moral/psychological traits (shamelessness, stubbornness). I treated them as two distinct but closely related metaphors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "קְשֵׁי פָנִים",
+        "english_text": "brazen of face (lit. hard of face)",
+        "target": [
+          "the descendants’ shameless, unyielding attitude",
+          "stubbornness and resistance in people",
+          "moral–psychological character"
+        ],
+        "vehicle": [
+          "a hard or stiff face",
+          "physical hardness/rigidity",
+          "physical properties of objects or body parts"
+        ],
+        "ground": [
+          "hardness suggests resistance to change and lack of soft responsiveness",
+          "an unyielding 'face' conveys shameless defiance",
+          "mapping physical rigidity onto moral obstinacy"
+        ],
+        "posture": [
+          "condemning their shameless defiance before God",
+          "evaluative, invective metaphor",
+          "prophetic critique of the people’s moral state"
+        ],
+        "explanation": "Describing them as 'hard of face' uses physical hardness as a metaphor for shameless, unyielding defiance; their 'face' (public stance) is imagined as rigid, unable or unwilling to soften in response to God.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חִזְקֵי־לֵב",
+        "english_text": "stubborn of heart (lit. strong of heart)",
+        "target": [
+          "their inner will and responsiveness to God",
+          "the decision-making core of the person",
+          "moral and spiritual disposition"
+        ],
+        "vehicle": [
+          "a strong/firm 'heart' as an organ",
+          "physical toughness or strength",
+          "bodily state used as image"
+        ],
+        "ground": [
+          "a 'strong' heart suggests toughness and resistance to influence",
+          "inner core that does not bend or yield",
+          "physical strength mapped to moral intractability"
+        ],
+        "posture": [
+          "depicting their inner life as resistant to God",
+          "negative evaluation of their interior stubbornness",
+          "prophetic exposure of inner rebellion"
+        ],
+        "explanation": "Calling them 'strong of heart' metaphorically portrays their inner self as tough, unbending material, emphasizing their stubborn refusal to be moved by God’s word.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 2:5",
+    "deliberation": "Checked 'whether they listen or not' for hyperbole or idiom, but it functions as a straightforward concessive contrast. The expression 'בֵּית מְרִי' ('rebellious house') is Ezekiel’s characteristic label for Israel and uses 'house' for the people group, which is both idiomatic and metonymic.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית מְרִי",
+        "english_text": "a rebellious breed / rebellious house",
+        "target": [
+          "the people of Israel as a community",
+          "the covenant group characterized by rebellion",
+          "Israel’s collective identity"
+        ],
+        "vehicle": [
+          "a 'house' or household",
+          "a social unit defined by shared identity",
+          "family/household structure"
+        ],
+        "ground": [
+          "a 'house' commonly stands for the family or lineage inhabiting it",
+          "the group as a whole is marked by rebellion as its defining trait",
+          "using a household label to sum up corporate character"
+        ],
+        "posture": [
+          "branding the entire community with a negative identity",
+          "metonymic label used as prophetic indictment",
+          "covenant lawsuit rhetoric"
+        ],
+        "explanation": "The phrase 'rebellious house' uses 'house' metonymically for the people who belong to it, forming an idiomatic label that characterizes Israel collectively as defined by rebellion.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 2:6",
+    "deliberation": "This verse is rich in imagery. 'Thistles and thorns press against you' (from 'סָרָבִים וְסַלּוֹנִים אֹתָךְ') and 'you sit/dwell among scorpions' are not literal horticultural or zoological descriptions but metaphorical depictions of hostile, injurious people around the prophet. The repetition of 'בֵּית מְרִי' at the end reuses the metonymic/idiomatic label from v.5.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי סָרָבִים וְסַלּוֹנִים אֹתָךְ",
+        "english_text": "though thistles and thorns press against you",
+        "target": [
+          "the hostile Israelites opposing Ezekiel",
+          "dangerous, injurious human opposition",
+          "social hostility toward the prophet"
+        ],
+        "vehicle": [
+          "thistles and thorns",
+          "prickly, painful plants",
+          "hazardous elements in the natural world"
+        ],
+        "ground": [
+          "both hostile people and thorns wound and cause pain on contact",
+          "they obstruct, scratch, and make the path difficult",
+          "imagery of prickliness conveys the pain and difficulty of the prophet’s task"
+        ],
+        "posture": [
+          "warning Ezekiel that opposition will be sharp and painful",
+          "realistic but vivid portrayal of his dangerous environment",
+          "prophetic commissioning under threat"
+        ],
+        "explanation": "The surrounding people are likened to 'thistles and thorns' that press against Ezekiel, picturing their opposition as painful and obstructive, like walking through dense, prickly undergrowth.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֶל־עַקְרַבִּים אַתָּה יוֹשֵׁב",
+        "english_text": "and you sit upon scorpions / you dwell among scorpions",
+        "target": [
+          "Ezekiel’s situation among the exiles",
+          "constant exposure to treacherous, harmful people",
+          "the social–spiritual environment of his ministry"
+        ],
+        "vehicle": [
+          "scorpions",
+          "venomous, stinging creatures",
+          "dangerous animals"
+        ],
+        "ground": [
+          "both scorpions and the people around him can suddenly inflict severe pain or harm",
+          "conveys latent, ever-present danger",
+          "imagery of venom and sting applied to verbal and social hostility"
+        ],
+        "posture": [
+          "underscoring the perilous nature of his calling",
+          "heightening the sense of danger to emphasize the need for courage",
+          "commissioning rhetoric in vivid metaphor"
+        ],
+        "explanation": "To say that Ezekiel 'dwells among scorpions' metaphorically portrays his neighbors as venomous creatures whose attacks (verbal or otherwise) can be as painful and dangerous as scorpion stings.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הֵמָּה בֵּית מְרִי",
+        "english_text": "for they are a rebellious breed / rebellious house",
+        "target": [
+          "the people of Israel addressed by Ezekiel",
+          "the covenant community in its corporate identity",
+          "Israel as a social–religious entity"
+        ],
+        "vehicle": [
+          "“house” as a social unit",
+          "household or dynasty language",
+          "domestic structure implying a group of occupants"
+        ],
+        "ground": [
+          "a 'house' commonly stands for the family/lineage it shelters",
+          "using one term to sum up the collective and its defining trait of rebellion",
+          "metonymic label fusing group and characteristic"
+        ],
+        "posture": [
+          "reaffirming their settled identity as rebellious",
+          "compressing a long history of disobedience into a sharp label",
+          "prophetic indictment through naming"
+        ],
+        "explanation": "Again 'rebellious house' uses 'house' as a metonym for the people themselves, forming an idiomatic label for Israel as a community whose hallmark is rebellion.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 2:7",
+    "deliberation": "Re-examined 'whether they listen or not, for they are rebellious.' The statement is strongly evaluative but does not employ overt metaphor, simile, or other imagery beyond the straightforward adjective 'rebellious'; no 'house' terminology appears here. I therefore treated the verse as lacking a discrete figurative expression under the requested categories.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 2:8",
+    "deliberation": "Here 'בֶּן־אָדָם' reoccurs but I did not duplicate that analysis. The explicit comparison 'אַל־תְּהִי־מֶרִי כְּבֵית הַמֶּרִי' uses 'כְּ' ('like/as') and so constitutes a clear simile. The command 'open your mouth and eat what I give you' is preparatory to the scroll-eating sign-act, where consuming a scroll stands symbolically for internalizing the divine message, so I treated it as metaphorical action, even though in the vision Ezekiel literally does eat.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַל־תְּהִי־מֶרִי כְּבֵית הַמֶּרִי",
+        "english_text": "Do not be rebellious like that rebellious breed / house",
+        "target": [
+          "Ezekiel’s potential behavior and stance toward God’s command",
+          "a single prophet’s obedience or rebellion",
+          "individual covenant fidelity"
+        ],
+        "vehicle": [
+          "the 'rebellious house' (Israel) as a whole",
+          "a community characterized by rebellion",
+          "corporate covenant infidelity"
+        ],
+        "ground": [
+          "similar patterns of disobedience could be shared by prophet and people",
+          "Ezekiel is warned not to mirror the community’s characteristic rebellion",
+          "comparison highlights the danger of assimilation to the group’s behavior"
+        ],
+        "posture": [
+          "exhorting Ezekiel to distinguish himself from his people",
+          "using comparison as moral warning",
+          "prophetic pedagogy through simile"
+        ],
+        "explanation": "By saying 'do not be rebellious like the rebellious house,' God explicitly compares Ezekiel’s potential response to the established behavior of Israel, using the previously coined metonymic label 'rebellious house' as the vehicle in a simile to warn him against similar disobedience.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "פְּצֵה פִיךָ וֶאֱכֹל אֵת אֲשֶׁר־אֲנִי נֹתֵן אֵלֶיךָ",
+        "english_text": "Open your mouth and eat what I am giving you",
+        "target": [
+          "Ezekiel’s reception and internalization of God’s message",
+          "accepting and fully embracing the prophetic word",
+          "prophetic commission and instruction"
+        ],
+        "vehicle": [
+          "opening the mouth and eating",
+          "the physical act of ingesting food",
+          "bodily processes of consumption and assimilation"
+        ],
+        "ground": [
+          "eating brings something inside and makes it part of oneself",
+          "internalized food becomes energy and substance within the person",
+          "similarly, God’s words are to be taken in and become part of Ezekiel’s inner being"
+        ],
+        "posture": [
+          "portraying obedience as an internal, transformative act",
+          "using a symbolic action metaphor typical of prophetic sign-acts",
+          "commissioning Ezekiel through enacted metaphor"
+        ],
+        "explanation": "The command to 'open your mouth and eat' what God gives anticipates the eating of the scroll and uses the physical process of eating as a metaphor for taking God’s words deeply into oneself so that they shape the prophet from within.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 2:9",
+    "deliberation": "Considered whether the vision of a 'hand' stretched out is literal within the visionary world or figurative. In prophetic literature, a disembodied or divine 'hand' often functions metonymically for God’s agency; here no subject other than the divine context is supplied, so the 'hand sent to me' is best read as an anthropomorphic metonymy for God’s action in presenting the scroll.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהִנֵּה־יָד שְׁלוּחָה אֵלָי",
+        "english_text": "there was a hand stretched out to me",
+        "target": [
+          "God’s act of giving the scroll to Ezekiel",
+          "divine initiative and communication",
+          "divine agency in prophetic revelation"
+        ],
+        "vehicle": [
+          "a (stretched-out) hand",
+          "the bodily instrument of giving and acting",
+          "anthropomorphic imagery"
+        ],
+        "ground": [
+          "a hand is the normal means by which a person extends something to another",
+          "God’s action is pictured as if performed by a human hand",
+          "the concrete image makes divine agency vivid and graspable"
+        ],
+        "posture": [
+          "depicting divine agency in human bodily terms",
+          "using anthropomorphic metonymy to mediate transcendence",
+          "visionary representation of God’s giving of his word"
+        ],
+        "explanation": "The 'hand' that is 'sent' to Ezekiel is an anthropomorphic metonymy: a human hand stands for the divine action of extending the scroll, making God’s otherwise invisible agency concrete in the vision.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 2:10",
+    "deliberation": "Examined the description of the scroll written 'front and back' and the list 'lamentations, dirges, and woes.' The fullness of writing has symbolic significance for later interpretation, but the wording itself is descriptive rather than figurative (no explicit metaphor, simile, or idiom). The triplet names genres of judgment oracles, not metaphorical designations here, so I treated the verse as lacking a discrete figurative expression under the specified categories.",
+    "instances": []
+  }
+]

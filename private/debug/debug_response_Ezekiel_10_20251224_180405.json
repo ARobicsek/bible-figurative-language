@@ -1,0 +1,414 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 10:1",
+    "deliberation": "Checked for similes (noting repeated use of כ), metaphors, and metonymy. The vision report is mostly descriptive, but the comparison of the expanse to sapphire is a clear simile; the hedging formula 'appearance of a likeness of a throne' is more epistemic than figurative, so I did not treat it as a distinct figurative expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְאֶבֶן סַפִּיר",
+        "english_text": "like a sapphire stone",
+        "target": [
+          "the expanse over the heads of the cherubs",
+          "heavenly platform/firmament in the vision",
+          "visionary-theophanic realm"
+        ],
+        "vehicle": [
+          "a sapphire stone",
+          "precious blue gemstone",
+          "material/visual world"
+        ],
+        "ground": [
+          "brilliant blue, hard, precious appearance",
+          "visual radiance and value",
+          "sensory-perceptual qualities"
+        ],
+        "posture": [
+          "awe-filled descriptive comparison of what is seen",
+          "reverent depiction of the divine environment",
+          "prophetic visionary discourse"
+        ],
+        "explanation": "The expanse above the cherubs is compared to a sapphire stone to convey its brilliant, precious, blue appearance.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 10:2",
+    "deliberation": "Looked for explicit comparative markers and symbolic actions. The command to take coals and scatter them over the city is a symbolic act; within prophetic convention this functions as a metaphor for divine judgment by burning. No similes or personification occur in the wording.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמַלֵּא חׇפְנֶיךָ גַחֲלֵי־אֵשׁ מִבֵּינוֹת לַכְּרֻבִים וּזְרֹק עַל־הָעִיר",
+        "english_text": "fill your hands with glowing coals from among the cherubs, and scatter them over the city",
+        "target": [
+          "YHWH’s coming judgment on Jerusalem",
+          "divine punitive action",
+          "theological-ethical domain"
+        ],
+        "vehicle": [
+          "scattering burning coals over a city",
+          "act of fiery incineration",
+          "physical destruction imagery"
+        ],
+        "ground": [
+          "the consuming, devastating effect of fire on a city",
+          "severity and totality of destruction/purging",
+          "shared conceptual mapping between burning and judgment"
+        ],
+        "posture": [
+          "judicial sign-act dramatizing condemnation",
+          "warning-laden prophetic symbolism",
+          "prophetic oracular discourse"
+        ],
+        "explanation": "The command to scatter coals over the city is not about literal charcoal distribution but symbolically represents YHWH’s destructive judgment consuming Jerusalem like fire.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 10:3",
+    "deliberation": "Considered whether ‘cloud’ is used metonymically for YHWH’s presence; here it is part of the literal visionary theophany and described in straightforward spatial terms. No similes, metaphors, or idioms occur in the verse itself.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 10:4",
+    "deliberation": "Examined the repeated phrase כְבוֹד־יְהוָה (‘glory of YHWH’) and the filling of house/court with cloud and radiance. The cloud/radiance are literal elements of the vision. The expression ‘glory of YHWH’ functions as a metonymy, an attribute standing for YHWH’s manifested presence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כְּבוֹד־יְהוָה",
+        "english_text": "the Presence of GOD / the glory of YHWH",
+        "target": [
+          "YHWH himself as actively present in the temple",
+          "divine personal presence",
+          "theological domain"
+        ],
+        "vehicle": [
+          "glory (radiance, honor)",
+          "divine attribute of visible majesty",
+          "aesthetic-moral quality"
+        ],
+        "ground": [
+          "the attribute ‘glory’ uniquely characterizes YHWH’s appearing",
+          "visible honor and splendor signal the divine person",
+          "habitual association of brightness with God’s presence"
+        ],
+        "posture": [
+          "reverent circumlocution for God’s nearness",
+          "deferential religious naming strategy",
+          "cultic-prophetic discourse"
+        ],
+        "explanation": "‘Glory of YHWH’ is an attribute used in place of the person of YHWH, a metonymy highlighting his manifest, radiant presence in the temple.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 10:5",
+    "deliberation": "Looked for sound imagery and comparison markers. The key phrase uses כ to compare the sound of the wings to the divine voice, a clear simile; the distance ‘as far as the outer court’ is spatial and not obviously hyperbolic.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כְּקוֹל אֵל־שַׁדַּי בְּדַבְּרוֹ",
+        "english_text": "like the voice of El Shaddai when speaking",
+        "target": [
+          "the sound of the cherubs’ wings",
+          "auditory phenomenon in the vision",
+          "sensory experience"
+        ],
+        "vehicle": [
+          "the voice of El Shaddai speaking",
+          "divine speech sound",
+          "theophanic communication"
+        ],
+        "ground": [
+          "powerful, awe-inspiring, far-carrying sound",
+          "intensity and majesty of the noise",
+          "shared auditory impact"
+        ],
+        "posture": [
+          "awe-struck comparison to divine speech",
+          "elevated, reverential description",
+          "prophetic testimony"
+        ],
+        "explanation": "The roar of the cherubs’ wings is compared to the voice of God, emphasizing its overwhelming power and majesty.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 10:6",
+    "deliberation": "Assessed whether the command to take fire from within the wheelwork is itself figurative. Although the fire is part of a larger symbolic action (judgment), the wording here is plain narrative description without explicit figurative phrasing (no comparison markers, no attribute-for-person substitution).",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 10:7",
+    "deliberation": "Reviewed the actions (stretching out a hand, taking fire, placing it in the figure’s hands). These are concrete visionary actions; no similes, metaphors, or personifications are deployed in the wording itself.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 10:8",
+    "deliberation": "Considered whether ‘form of a human hand under their wings’ might be metaphorical. Within Ezekiel’s vision, this is presented as literal morphology of the living creatures, not as ‘hand-like’ with כ. Thus it functions as straightforward description, not a figure of speech.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 10:9",
+    "deliberation": "Searched for comparison language. The phrase using כְעֵין explicitly compares the appearance of the wheels to the look of beryl; this is a simile. The rest of the verse is descriptive (number and placement of wheels).",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמַרְאֵה הָאוֹפַנִּים כְּעֵין אֶבֶן תַּרְשִׁישׁ",
+        "english_text": "as for the appearance of the wheels, they gleamed like the beryl stone",
+        "target": [
+          "the visual appearance of the four wheels",
+          "heavenly chariot components",
+          "visionary machinery"
+        ],
+        "vehicle": [
+          "the look of a beryl stone (tarshish)",
+          "precious, gleaming gemstone",
+          "material/visual reference point"
+        ],
+        "ground": [
+          "shining, gemstone-like luster and color",
+          "visual brilliance and beauty",
+          "shared optical qualities"
+        ],
+        "posture": [
+          "attempt to make the strange vision intelligible via familiar imagery",
+          "descriptive, clarifying comparison",
+          "prophetic narrative explanation"
+        ],
+        "explanation": "The wheels are likened to beryl to convey their gleaming, precious appearance in terms familiar to the hearers.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 10:10",
+    "deliberation": "Looked for explicit comparative structures. The phrase introduced by כַאֲשֶׁר describes their construction as ‘as when a wheel is within a wheel,’ a comparative description functioning like a simile, even though both tenor and vehicle are ‘wheels.’ No other figures stand out.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כַּאֲשֶׁר יִהְיֶה הָאוֹפַן בְּתוֹךְ הָאוֹפָן",
+        "english_text": "as if there were a wheel within a wheel",
+        "target": [
+          "the form/structure of each visionary wheel",
+          "mechanism of the chariot-wheels",
+          "visionary machinery"
+        ],
+        "vehicle": [
+          "a wheel within another wheel",
+          "intersecting/crossed wheel construction",
+          "engineering/kinematic image"
+        ],
+        "ground": [
+          "multi-directional, complex motion capability",
+          "structural arrangement allowing movement without turning",
+          "shared mechanical property"
+        ],
+        "posture": [
+          "technical descriptive comparison to clarify shape",
+          "didactic explanation of an unfamiliar object",
+          "prophetic explanatory discourse"
+        ],
+        "explanation": "Ezekiel uses the image of one wheel within another as a comparative description so the audience can picture the strange, multidirectional wheels.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 10:11",
+    "deliberation": "The verse describes movement, directions, and heads literally within the vision’s framework. No explicit comparisons (כ/כמו), no attribute-for-person substitutions, and no idiomatic or hyperbolic expressions are used.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 10:12",
+    "deliberation": "Considered whether being ‘full of eyes all around’ is figurative for omniscience. Within the narrative it is presented as a literal (though symbolic) feature of the living creatures and wheels, not as ‘eye-like’ or ‘as if full of eyes.’ Thus I treat it as symbolic content, not a rhetorical figure like metaphor or simile.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 10:13",
+    "deliberation": "The naming of the wheels as הַגַּלְגַּל (‘the wheelwork’) is a lexical choice, not a figure of speech. I found no similes, metaphors, or metonymies in this short verse.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 10:14",
+    "deliberation": "The text lists the four faces (cherub, human, lion, eagle) as components of the living creature. These are symbolic but syntactically straightforward; Ezekiel does not say ‘like a lion’ here but that one face is a lion’s face. This is visionary description rather than a rhetorical simile or metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 10:15",
+    "deliberation": "This verse simply identifies the ascending cherubs with the living creatures seen earlier by the Chebar Canal. No figurative comparison, personification, merism, or metonymy appears in the wording.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 10:16",
+    "deliberation": "Describes coordinated movement of cherubs and wheels. I looked for parts used for the whole (synecdoche) and idiomatic uses of motion verbs, but here ‘wings,’ ‘wheels,’ and ‘earth’ function literally in the vision’s mechanics.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 10:17",
+    "deliberation": "The explanation ‘for the spirit of the living creature was in them’ attributes the same animating force to the wheels. This is theological anthropology rather than a clear metaphor or simile in the rhetoric of the verse; the language is not cast as a comparison.",
+    "instances": []
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 10:18",
+    "deliberation": "Again examined the phrase כְבוֹד יְהוָה (‘glory of YHWH’). As in v.4 it functions as an attribute-for-person metonymy, referring to YHWH’s personal, mobile presence leaving the temple threshold and standing over the cherubs.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כְּבוֹד יְהוָה",
+        "english_text": "the Presence of GOD / the glory of YHWH",
+        "target": [
+          "YHWH as the one departing from the temple threshold",
+          "divine personal agent",
+          "theological domain"
+        ],
+        "vehicle": [
+          "his ‘glory’ (visible majesty)",
+          "manifest attribute of radiance and honor",
+          "aesthetic-theological quality"
+        ],
+        "ground": [
+          "the attribute uniquely characterizes and signals YHWH’s presence",
+          "visible splendor stands for the person who bears it",
+          "stable association of glory with the divine presence"
+        ],
+        "posture": [
+          "reverential reference that avoids over-familiar naming of God",
+          "cultic-prophetic style of speaking about God’s movements",
+          "religious narrative discourse"
+        ],
+        "explanation": "‘Glory of YHWH’ is an attribute used metonymically for YHWH himself as he exits the inner part of the temple and takes his place over the cherubs.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 10:19",
+    "deliberation": "Reviewed for further comparison language and divine-title metonymy. The motion of wings and wheels is descriptive. The phrase ‘the glory of the God of Israel was above them’ again uses ‘glory’ as an attribute standing for the personal God of Israel, a metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּכְבוֹד אֱלֹהֵי־יִשְׂרָאֵל עֲלֵיהֶם מִלְמָעְלָה",
+        "english_text": "with the Presence of the God of Israel above them / the glory of the God of Israel above them",
+        "target": [
+          "the God of Israel present above the cherubs and wheels",
+          "divine ruler",
+          "theological domain"
+        ],
+        "vehicle": [
+          "his ‘glory’ (כְבוֹד אֱלֹהֵי־יִשְׂרָאֵל)",
+          "manifest radiance and honor as an attribute",
+          "aesthetic-moral domain"
+        ],
+        "ground": [
+          "the attribute ‘glory’ is the visible manifestation by which God is known",
+          "honor and radiance stand in for the personal deity",
+          "established scriptural association between God and his glory"
+        ],
+        "posture": [
+          "deferential way of describing God’s enthroned presence",
+          "reverent temple-theophany language",
+          "prophetic narrative with cultic coloration"
+        ],
+        "explanation": "Here ‘the glory of the God of Israel’ is an attribute used to denote God himself, emphasizing his majestic, enthroned presence above the chariot.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 10:20",
+    "deliberation": "This verse identifies the living creatures as the same beings seen earlier and recognizes them as cherubs. The wording is purely identificational and narrative; no explicit figurative devices appear.",
+    "instances": []
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 10:21",
+    "deliberation": "Describes four faces, four wings, and human hands under the wings as anatomical details. Although the creatures themselves are symbolic, Ezekiel is not using metaphorical language here but reporting their form.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 10:22",
+    "deliberation": "Notes the faces as matching those previously seen by the Chebar Canal and that each moved directly in the direction of its face. The phrasing is literal within the vision, with no comparison markers or substitutions indicating metaphor, simile, or metonymy.",
+    "instances": []
+  }
+]

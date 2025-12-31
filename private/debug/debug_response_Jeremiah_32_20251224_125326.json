@@ -1,0 +1,886 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 32:1",
+    "deliberation": "Considered whether the phrase 'the word that came to Jeremiah from YHWH' is purely formulaic or a figurative way of speaking about revelation. Treated it as a mild metonymic/anthropomorphic expression; the rest of the verse is chronological and literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַדָּבָר אֲשֶׁר־הָיָה אֶל־יִרְמְיָהוּ מֵאֵת יְהוָה",
+        "english_text": "The word that came to Jeremiah from YHWH",
+        "target": ["divine revelation given to Jeremiah", "prophetic communication", "theological domain"],
+        "vehicle": ["'word' that 'comes' as if a moving object", "spoken message conceived as a tangible entity that arrives", "physical movement / speech domain"],
+        "ground": ["the arrival of a message from speaker to hearer", "transfer of information/command", "communication process"],
+        "posture": ["presents revelation as concrete and objective", "prophetic-reverent stance toward God's speech", "religious devotion and authority domain"],
+        "explanation": "The 'word' is spoken of as if it were an object that can 'come' from God to Jeremiah; this is a metonymic/anthropomorphic way of describing divine communication.",
+        "confidence": 0.68
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 32:2",
+    "deliberation": "Verse is straightforward narrative description of a siege and Jeremiah's confinement. No non-literal body-part usage, no idioms beyond standard prose, and no obvious metaphor, simile, or personification.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 32:3",
+    "deliberation": "Examined the prophetic quotation, especially 'I am giving this city into the hand of the king of Babylon.' The 'hand' is a standard Hebrew metaphor/metonymy for power or control. Rest of the wording is literal prediction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנְנִי נֹתֵן אֶת־הָעִיר הַזֹּאת בְּיַד מֶלֶךְ־בָּבֶל",
+        "english_text": "I am delivering this city into the hands of the king of Babylon",
+        "target": ["Jerusalem's fate under Babylon", "political/military control", "historical judgment domain"],
+        "vehicle": ["the 'hand' of the king of Babylon", "body part symbolizing power and control", "human physical/body domain"],
+        "ground": ["a hand grasps and controls what is in it", "ability to dominate and hold firmly", "control/possession domain"],
+        "posture": ["presents Babylonian domination as something God actively places under Babylon's control", "tone of judicial inevitability", "prophetic theology of sovereignty"],
+        "explanation": "The 'hand' stands metonymically for the king's power and control; the city is not literally put in his palm but subjected to his authority.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 32:4",
+    "deliberation": "Looked at two expressions with 'hand' (of the Chaldeans and of the king of Babylon). Both realize the same conventional figure: hand = power/control. The 'mouth to mouth' and 'eyes' clauses are literal predictions of a face-to-face encounter.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לֹא יִמָּלֵט מִיַּד הַכַּשְׂדִּים כִּי הִנָּתֹן יִנָּתֵן בְּיַד מֶלֶךְ־בָּבֶל",
+        "english_text": "shall not escape from the hands of the Chaldeans; he shall be delivered into the hands of the king of Babylon",
+        "target": ["Zedekiah's capture and subjugation", "loss of political freedom", "historical judgment domain"],
+        "vehicle": ["the 'hand' of the Chaldeans / king of Babylon", "body part representing grasping power", "human physical/body domain"],
+        "ground": ["a hand that holds something prevents escape", "complete control and domination", "control/constraint domain"],
+        "posture": ["depicts Zedekiah as totally overpowered by the enemy allowed by God", "forensic/judicial tone", "prophetic interpretation of events"],
+        "explanation": "The 'hand' again functions metonymically for the enemy's power; Zedekiah is not literally in their palm, but under their complete control.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 32:5",
+    "deliberation": "Considered 'until I take note of him' and the warfare statement. The language can be somewhat idiomatic but does not clearly employ metaphor, simile, or personification; it describes captivity and failed resistance literally.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 32:6",
+    "deliberation": "Same prophetic formula as v.1 ('the word of YHWH came to me'), which I treat as a conventional metonymic/anthropomorphic way to speak about revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הָיָה דְבַר־יְהוָה אֵלַי לֵאמֹר",
+        "english_text": "The word of YHWH came to me",
+        "target": ["Jeremiah's reception of divine revelation", "prophetic communication event", "theological/revelatory domain"],
+        "vehicle": ["a 'word' that 'comes' as if traveling to a person", "message conceptualized as a moving object", "physical movement / speech domain"],
+        "ground": ["movement from source to recipient parallels message transmission", "arrival = commencement of communication", "communication process"],
+        "posture": ["presents revelation as objective, initiating from God", "emphasizes prophetic passivity/receiving stance", "religious authority domain"],
+        "explanation": "The phrase treats God's communication as a 'word' that moves toward Jeremiah; it's a standard metonymic image for revelation.",
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 32:7",
+    "deliberation": "Legal terminology of redemption and purchase; the field in Anathoth is literal property. No metaphorical or personifying expressions detected.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 32:8",
+    "deliberation": "Narrative of Hanamel's visit and legal rights. The phrasing 'right of inheritance' and 'duty of redemption' is juridical and literal in context, not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 32:9",
+    "deliberation": "Description of an actual sale with specific weight of silver. No figurative expressions; all terms function in a concrete legal sense.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 32:10",
+    "deliberation": "Continues the legal procedure (writing, sealing, weighing). Searched for idioms but found only literal procedural language.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 32:11",
+    "deliberation": "Refers to deed of purchase, sealed and open copies, according to 'command and statutes'—technical legal phrasing without clear figurative use.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 32:12",
+    "deliberation": "Simple narrative about handing over documents in the presence of witnesses. No body-part idioms, metaphorical 'hand', or similar figures here.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 32:13",
+    "deliberation": "Short transitional statement introducing a command to Baruch. No figurative language present.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 32:14",
+    "deliberation": "Though the action functions symbolically in the larger narrative (a sign of long-term restoration), the wording itself—taking scrolls, putting them in an earthen jar—is concrete and literal.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 32:15",
+    "deliberation": "Promise of future economic normalcy: 'Houses, fields, and vineyards shall again be purchased.' These are literal categories; there is no explicit metaphor or personification in the wording.",
+    "instances": []
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 32:16",
+    "deliberation": "Jeremiah states simply that he prayed after handing over the deed. No figurative language; the verbs used are straightforward.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 32:17",
+    "deliberation": "This verse is rich in classic biblical figures: (1) 'heaven and earth' as a merism for all creation; (2) 'outstretched arm' as an anthropomorphic metaphor for divine power; (3) the statement that nothing is 'too wondrous' (too difficult) for God as a hyperbolic universal negative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אַתָּה עָשִׂיתָ אֶת־הַשָּׁמַיִם וְאֶת־הָאָרֶץ",
+        "english_text": "You made heaven and earth",
+        "target": ["the totality of created reality", "everything that exists", "cosmos/creation domain"],
+        "vehicle": ["'heaven and earth' as two extremes", "paired opposites forming a totality (merism)", "cosmic spatial domain"],
+        "ground": ["mentioning top and bottom implies inclusion of everything between", "comprehensiveness", "totality concept"],
+        "posture": ["ascribes universal creative power to God", "confessional tone of awe", "theological praise domain"],
+        "explanation": "The pairing 'heaven and earth' is a merism: two extremes used to express the entire created order.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּכֹחֲךָ הַגָּדוֹל וּבִזְרֹעֲךָ הַנְּטוּיָה",
+        "english_text": "with Your great might and outstretched arm",
+        "target": ["God's effective power in creation", "divine agency", "theology domain"],
+        "vehicle": ["an 'outstretched arm' using great strength", "human bodily exertion", "human physical/action domain"],
+        "ground": ["an extended arm signifies exerted power and effective action", "ability to reach and accomplish", "forceful intervention"],
+        "posture": ["depicts God in vivid, anthropomorphic terms to stress His effective power", "reverent yet concrete portrayal", "devotional rhetoric"],
+        "explanation": "God is described as creating by means of an 'outstretched arm,' a metaphor borrowing human bodily imagery to convey divine power.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא־יִפָּלֵא מִמְּךָ כׇּל־דָּבָר",
+        "english_text": "Nothing is too wondrous for You",
+        "target": ["the scope of what God can accomplish", "degree of divine capability", "theological omnipotence domain"],
+        "vehicle": ["the universal set 'nothing' / 'every thing'", "absolute negation of difficulty", "logical/quantitative domain"],
+        "ground": ["hyperbolic denial of any limit expresses maximal power", "no exception underscores total ability", "extreme/unbounded capability"],
+        "posture": ["affirms God's limitless power in an absolute way", "faith-filled confidence", "worshipful exaggeration for emphasis"],
+        "explanation": "The statement that no thing at all is too difficult for God is phrased as an absolute, functioning as hyperbole to stress divine omnipotence.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 32:18",
+    "deliberation": "Identified two main figures: (1) 'repaying the iniquity of the fathers into the bosom of their children' uses bodily imagery for the experience of consequences; (2) the divine title 'YHWH of hosts' uses 'hosts' metonymically for the heavenly/angelic armies under God's command.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּמְשַׁלֵּם עֲוֹן אָבוֹת אֶל־חֵיק בְּנֵיהֶם אַחֲרֵיהֶם",
+        "english_text": "but visit the guilt of the parents upon their children after them [literally: 'repaying the iniquity of the fathers into the bosom of their children']",
+        "target": ["the later generation's suffering of ancestral consequences", "inheritance of guilt and its effects", "moral/judicial domain"],
+        "vehicle": ["placing something in a person's 'bosom' (lap/chest)", "reception of an object close to one's body", "intimate physical domain"],
+        "ground": ["what is placed in one's bosom is personally and inescapably experienced", "close contact equals personal bearing of consequences", "internalization/ownership of outcome"],
+        "posture": ["presents judgment as something personally and closely borne by descendants", "solemn judicial tone", "covenantal justice"],
+        "explanation": "The iniquity is described as if it were something placed into the children's bosom, a metaphor for the intimate, personal experience of ancestral consequences.",
+        "confidence": 0.8
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "הָאֵל הַגָּדוֹל הַגִּבּוֹר יְהוָה צְבָאוֹת שְׁמוֹ",
+        "english_text": "O great and mighty God whose name is YHWH of Hosts",
+        "target": ["God's rule over heavenly and earthly powers", "divine kingship/armies under God", "cosmic sovereignty domain"],
+        "vehicle": ["'hosts' (armies) associated with God's name", "military forces as attribute of a commander", "warfare/army domain"],
+        "ground": ["a commander is defined by the forces under his authority", "control of vast armies signifies power", "command and might"],
+        "posture": ["presents God as commander of vast celestial/earthly armies", "majestic, martial reverence", "royal-theological rhetoric"],
+        "explanation": "In the title 'YHWH of hosts', 'hosts' stands metonymically for the heavenly and possibly earthly armies, highlighting God's military-like supremacy.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 32:19",
+    "deliberation": "Looked especially at 'Your eyes are open upon all the ways of humankind.' This combines anthropomorphic imagery for divine knowledge with the common metaphor 'ways' for conduct; treated together as one complex metaphorical expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֲשֶׁר־עֵינֶיךָ פְקֻחוֹת עַל־כׇּל־דַּרְכֵי בְּנֵי אָדָם",
+        "english_text": "whose eyes observe [lit. are open upon] all the ways of mortals",
+        "target": ["God's comprehensive knowledge of human behavior", "divine omniscience regarding conduct", "theological knowledge domain"],
+        "vehicle": ["open, watching eyes and 'ways' (paths)", "seeing with eyes; paths on which people walk", "visual perception and travel domain"],
+        "ground": ["open eyes constantly watching a path suggest vigilant oversight of someone's course", "a 'way'/path maps onto a manner of life", "surveillance and moral scrutiny"],
+        "posture": ["depicts God as an ever-watchful inspector of human conduct", "solemn, judicial stance", "covenantal accountability"],
+        "explanation": "The verse uses anthropomorphic 'eyes' and the metaphor of 'ways' as life-paths to picture God's vigilant observation of all human behavior.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 32:20",
+    "deliberation": "Key figure is 'You made a name for yourself' (literally 'You made for yourself a name'), where 'name' stands for reputation/fame—standard Hebrew metonymy. The signs and wonders language itself is literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וַתַּעֲשֶׂה־לְּךָ שֵׁם כַּיּוֹם הַזֶּה",
+        "english_text": "and won renown for Yourself to this very day [literally: 'You made for Yourself a name']",
+        "target": ["God's reputation among Israel and the nations", "divine fame/honor", "social-perception domain"],
+        "vehicle": ["a 'name' made for oneself", "personal name standing for reputation", "identity/signification domain"],
+        "ground": ["a person's name evokes their reputation; 'making a name' means gaining renown", "association of label and public esteem", "recognition and memory"],
+        "posture": ["presents God's acts as establishing His enduring fame", "celebratory, doxological tone", "public honor of God"],
+        "explanation": "Here 'name' is a metonymy for reputation: by mighty deeds God 'made Himself a name,' i.e., gained renown.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 32:21",
+    "deliberation": "Again features the stock Exodus imagery 'with a strong hand and an outstretched arm', an anthropomorphic metaphor for divine power. The signs, wonders, and great terror are otherwise literal descriptors.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּיָד חֲזָקָה וּבְאֶזְרֹעַ נְטוּיָה",
+        "english_text": "with a strong hand and an outstretched arm",
+        "target": ["God's powerful saving action in the Exodus", "divine intervention", "salvation-history domain"],
+        "vehicle": ["a strong hand and an outstretched arm", "human bodily force and reach", "physical exertion domain"],
+        "ground": ["a strong, extended arm conveys effortful, effective power", "imagery of grasping and pulling out", "rescue by force"],
+        "posture": ["casts God as a mighty deliverer using human-like strength", "vivid, praise-filled portrayal", "liturgical remembrance"],
+        "explanation": "The verse depicts God's saving work using the metaphor of a strong, outstretched arm, borrowing human physical imagery to communicate divine power.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 32:22",
+    "deliberation": "The classic phrase 'a land flowing with milk and honey' is a sustained metaphor/hyperbolic image for extraordinary fertility and richness; the rest of the verse is literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אֶרֶץ זָבַת חָלָב וּדְבָשׁ",
+        "english_text": "a land flowing with milk and honey",
+        "target": ["the agricultural and economic richness of the promised land", "prosperity and fertility", "land/benefit domain"],
+        "vehicle": ["a land that 'flows' with milk and honey", "liquids associated with pastoral and apicultural abundance", "sensory abundance domain"],
+        "ground": ["superabundance of desirable products pictures extreme fertility and prosperity", "sweetness and richness connote delight", "excess/overflow"],
+        "posture": ["presents the land in idealized, enticing terms", "thankful, celebratory view of God's gift", "covenantal blessing rhetoric"],
+        "explanation": "The land is metaphorically described as 'flowing with milk and honey', a hyperbolic image for extraordinary fertility and pleasantness.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 32:23",
+    "deliberation": "Describes disobedience and resulting calamity in straightforward covenantal terms. No clear metaphor, simile, or idiom beyond standard theological vocabulary.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 32:24",
+    "deliberation": "Describes siege mounds and the city's surrender. The expression 'the city is given into the hand of the Chaldeans' again uses 'hand' as metonymy for power/control.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהָעִיר נִתְּנָה בְּיַד הַכַּשְׂדִּים הַנִּלְחָמִים עָלֶיהָ",
+        "english_text": "and the city ... is at the mercy of the Chaldeans [literally: 'is given into the hand of the Chaldeans']",
+        "target": ["Jerusalem's military subjugation", "loss of autonomy", "historical-political domain"],
+        "vehicle": ["the 'hand' of the Chaldeans", "grasping body part representing dominant power", "physical dominance domain"],
+        "ground": ["being in someone's hand implies being controlled by them", "no independent movement/choice", "subjection and vulnerability"],
+        "posture": ["underscores the completeness of Jerusalem's defeat", "lamenting yet acknowledging fulfillment of God's word", "prophetic interpretation of siege"],
+        "explanation": "The 'hand' of the Chaldeans metonymically represents their power; Jerusalem is figuratively 'placed' under their control.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 32:25",
+    "deliberation": "Jeremiah contrasts God's command to buy a field with the fact that 'the city is given into the hand of the Chaldeans'—again employing the 'hand' idiom/metonymy for control.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהָעִיר נִתְּנָה בְּיַד הַכַּשְׂדִּים",
+        "english_text": "when the city is at the mercy of the Chaldeans [literally: 'the city is given into the hand of the Chaldeans']",
+        "target": ["Jerusalem's actual condition under Babylonian siege", "city's political fate", "historical crisis domain"],
+        "vehicle": ["being 'in the hand' of the Chaldeans", "hand as emblem of power and control", "human-body/power domain"],
+        "ground": ["what is in the hand is subject to the holder's will", "image of overpowering control", "domination and custody"],
+        "posture": ["heightens the paradox between commanded purchase and apparent hopelessness", "tone of perplexed faith", "theological wrestling"],
+        "explanation": "The idiom 'given into the hand of' uses 'hand' metonymically for imperial power and control.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 32:26",
+    "deliberation": "Again the prophetic formula 'the word of YHWH came to Jeremiah', similar to vv.1 and 6, treated as a metonymic/anthropomorphic description of revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִי דְבַר־יְהוָה אֶל־יִרְמְיָהוּ לֵאמֹר",
+        "english_text": "Then the word of YHWH came to Jeremiah",
+        "target": ["divine communication initiating a new oracle", "act of revelation", "theological/prophetic domain"],
+        "vehicle": ["'word' that 'comes' to someone", "message pictured as a moving entity", "physical movement / speech domain"],
+        "ground": ["movement from speaker to hearer parallels message transmission", "arrival marks the start of communication", "transfer of information/authority"],
+        "posture": ["again stresses that Jeremiah is a recipient, not originator, of the message", "authoritative prophetic stance", "religious discourse"],
+        "explanation": "The expression treats God's message as a 'word' that travels to Jeremiah, a conventional metonymic/anthropomorphic image of revelation.",
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 32:27",
+    "deliberation": "Detected (1) 'God of all flesh' where 'flesh' is synecdoche/metonymy for all living humans, and (2) the rhetorical question 'Is anything too wondrous for Me?' echoing v.17's hyperbolic universal negative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֲנִי יְהוָה אֱלֹהֵי כׇּל־בָּשָׂר",
+        "english_text": "I am YHWH, the God of all flesh",
+        "target": ["God's sovereignty over all humanity", "universal Lordship", "theological sovereignty domain"],
+        "vehicle": ["'all flesh' as a designation for all living humans", "body substance representing living beings", "biological/embodied domain"],
+        "ground": ["flesh is what all humans share; it thus stands for humanity as a whole", "part/quality representing the whole group", "synecdochic totality"],
+        "posture": ["asserts God's universal authority beyond Israel alone", "expansive, declarative tone", "monotheistic proclamation"],
+        "explanation": "'All flesh' is a synecdochic/metonymic expression where 'flesh' stands for all living humans, emphasizing God's universal rule.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲמִמֶּנִּי יִפָּלֵא כׇּל־דָּבָר",
+        "english_text": "Is anything too wondrous for Me?",
+        "target": ["the range of tasks God can accomplish", "degree of divine power", "theological omnipotence domain"],
+        "vehicle": ["the universal set 'anything' / 'every thing'", "absolute question about possibility/difficulty", "logical/universal quantification domain"],
+        "ground": ["framing it as if there could be something 'too difficult' heightens the denial when the answer is no", "extreme/unbounded power expressed by sweeping language", "rhetorical overstatement"],
+        "posture": ["reemphasizes God's unlimited capability in contrast to human doubts", "reassuring, corrective tone", "faith-eliciting rhetoric"],
+        "explanation": "The rhetorical question uses universal language to insist there is no task beyond God; this absolutizing is hyperbolic for emphasis.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 32:28",
+    "deliberation": "Again the idiom 'I am giving this city into the hand of the Chaldeans ...' occurs, using 'hand' metonymically for power/control. The rest is literal prediction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנְנִי נֹתֵן אֶת־הָעִיר הַזֹּאת בְּיַד הַכַּשְׂדִּים",
+        "english_text": "I am delivering this city into the hands of the Chaldeans",
+        "target": ["Jerusalem's coming fall to Babylon", "transfer of political control", "historical-judgment domain"],
+        "vehicle": ["the 'hand' of the Chaldeans", "hand as a symbol of power and grasp", "physical control domain"],
+        "ground": ["being placed in someone's hand equates to being under their control", "image of capture and custody", "domination"],
+        "posture": ["stresses that Babylonian victory is an act authorized by God", "tone of solemn decree", "prophetic judgment rhetoric"],
+        "explanation": "The phrase uses the 'hand' metonymically to signify Chaldean power and control over the city.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 32:29",
+    "deliberation": "Describes the Chaldeans burning the city and mentions offerings to Baal. Expressions like 'to vex Me' are anthropopathic but standard; there is no distinct metaphor beyond emotional attribution to God.",
+    "instances": []
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 32:30",
+    "deliberation": "The statements 'have done nothing but evil' and 'have done nothing but vex Me' are generalizations; the former in particular functions as hyperbolic moral assessment rather than mathematically precise history.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־הָיוּ בְנֵי־יִשְׂרָאֵל וּבְנֵי יְהוּדָה אַךְ עֹשִׂים הָרַע בְּעֵינַי מִנְּעֻרֹתֵיהֶם",
+        "english_text": "For the people of Israel and Judah have done nothing but evil in My sight since their youth",
+        "target": ["the persistent disobedience of Israel and Judah", "overall moral character of the nation", "ethical/covenantal domain"],
+        "vehicle": ["'nothing but evil' since youth", "absolute quantification of wrongdoing", "extreme degree expression domain"],
+        "ground": ["stating that all their actions are evil exaggerates to stress pervasive corruption", "sweeping language emphasizes pattern not literal totality", "overstatement for rhetorical impact"],
+        "posture": ["expresses divine disgust and indictment of the nation's long-term behavior", "intensely condemnatory tone", "prophetic accusation"],
+        "explanation": "Saying they have done 'only evil' since youth is a hyperbolic generalization highlighting pervasive sin, not a literal denial of any good acts.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 32:31",
+    "deliberation": "Saw two figures: (1) 'This city has been to Me for anger and for wrath' uses the city metonymically/personificationally for its inhabitants as a cause of divine wrath; (2) 'to remove it from before My face' uses anthropomorphic facial imagery for God's favorable presence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כִּי עַל־אַפִּי וְעַל־חֲמָתִי הָיְתָה לִּי הָעִיר הַזֹּאת ... לַהֲסִירָהּ מֵעַל פָּנַי",
+        "english_text": "This city has aroused My anger and My wrath from the day it was built ... so that it must be removed from My sight",
+        "target": ["the sinful community residing in Jerusalem", "collective behavior provoking judgment", "covenant-community domain"],
+        "vehicle": ["'this city' as an agent that is 'for anger and wrath'", "the built city standing for its inhabitants' actions", "urban/person collective domain"],
+        "ground": ["a city embodies its people's character; speaking of the city as provoking anger personifies it", "metonymic use of place for population", "corporate identity"],
+        "posture": ["intensifies the indictment by making the city itself seem odious to God", "judicial, distancing stance", "language of rejection"],
+        "explanation": "The city is spoken of as if it itself were provoking divine anger, a metonymic personification standing for its sinful inhabitants.",
+        "confidence": 0.82
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לַהֲסִירָהּ מֵעַל פָּנָי",
+        "english_text": "so that it must be removed from My sight [literally: 'from upon My face']",
+        "target": ["God's withdrawal of favor and presence from Jerusalem", "rejection/exclusion from divine presence", "theological-relational domain"],
+        "vehicle": ["something taken away from before someone's face", "visual field of a person with a face", "human perception/relationship domain"],
+        "ground": ["what is before one's face is in one's presence and attention; removal signifies rejection or dismissal", "sight/presence mapped to favor", "closeness vs. exclusion"],
+        "posture": ["expresses God's decision to reject the city in vivid relational terms", "sorrowful yet resolute judgment", "covenantal estrangement"],
+        "explanation": "God's 'face' is an anthropomorphic metaphor for His presence and favor; removing the city from before His face images its rejection.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Jeremiah 32:32",
+    "deliberation": "Catalogues groups (kings, princes, priests, prophets, etc.) responsible for evil. The list is comprehensive but not a compact merism; it remains primarily literal enumeration.",
+    "instances": []
+  },
+  {
+    "verse": 33,
+    "reference": "Jeremiah 32:33",
+    "deliberation": "Identified two figures: (1) 'They turned their back to Me and not their face'—a relational metaphor using bodily orientation; (2) 'teaching them, rising early and teaching' is an idiomatic expression for persistent, repeated instruction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וַיִּפְנוּ אֵלַי עֹרֶף וְלֹא פָנִים",
+        "english_text": "They turned their backs to Me, not their faces",
+        "target": ["Israel/Judah's attitude toward God", "spiritual stance of rejection or acceptance", "covenantal relationship domain"],
+        "vehicle": ["turning one's back vs. face toward someone", "bodily orientation in interpersonal relations", "social-physical domain"],
+        "ground": ["facing someone signals openness and attention; turning the back signals rejection and refusal", "orientation of body maps onto orientation of will", "acceptance vs. rejection"],
+        "posture": ["underscores deliberate refusal to heed God", "strongly accusatory relational tone", "prophetic reproof"],
+        "explanation": "Using body orientation imagery, the verse metaphorically expresses rejection of God as turning one's back instead of one's face toward Him.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלַמֵּד אֹתָם הַשְׁכֵּם וְלַמֵּד",
+        "english_text": "though I have taught them persistently [literally: 'rising early and teaching']",
+        "target": ["God's repeated efforts to instruct His people", "divine persistence in sending teaching/prophets", "covenantal care domain"],
+        "vehicle": ["'rising early and teaching'", "habit of getting up early to carry out a task repeatedly", "daily-routine domain"],
+        "ground": ["rising early for something pictures diligence and repeated effort", "temporal priority implies importance and urgency", "persistent attention"],
+        "posture": ["portrays God as exceedingly diligent in instructing them, heightening their guilt for ignoring Him", "tone of frustrated care", "prophetic lament"],
+        "explanation": "The idiom 'rising early and teaching' hyperbolically depicts God's instruction as prompt and persistent, an established Hebrew expression for continual effort.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 34,
+    "reference": "Jeremiah 32:34",
+    "deliberation": "The phrase 'the House which is called by My name' uses 'name' metonymically for divine ownership/presence, a standard temple formula. The 'abominations' themselves are literal idols/practices.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בַּבַּיִת אֲשֶׁר־נִקְרָא־שְׁמִי עָלָיו",
+        "english_text": "in the House that bears My name [literally: 'upon which My name is called']",
+        "target": ["God's special ownership and presence in the temple", "covenantal designation of the sanctuary", "cultic/theological domain"],
+        "vehicle": ["God's 'name' called upon a building", "name functioning as marker of ownership and presence", "identity/naming domain"],
+        "ground": ["to have one's name on a place signifies belonging and representation", "name stands for person and authority", "metonymy of name"],
+        "posture": ["stresses the outrage of defiling a place marked as uniquely God's", "tone of shocked indignation", "covenant-violation rhetoric"],
+        "explanation": "The temple is described as the place where God's 'name' is called, a metonymic idiom indicating that it belongs to Him and represents His presence.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 35,
+    "reference": "Jeremiah 32:35",
+    "deliberation": "Most of the verse is literal description of child sacrifice. The clause 'it did not come up upon My heart' is an idiom/metaphor for never having conceived or desired such a thing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְלֹא עָלְתָה עַל־לִבִּי",
+        "english_text": "and it had never entered My mind [literally: 'and it did not come up upon My heart']",
+        "target": ["God's will and intention regarding such practices", "divine thought/desire", "theological-volitional domain"],
+        "vehicle": ["something 'coming up upon the heart'", "movement of an idea onto the inner organ", "spatial motion domain applied to thought"],
+        "ground": ["what rises up in the heart represents what one thinks or intends", "absence of such 'rising' equals total lack of intention", "inner origin of plans"],
+        "posture": ["emphatically denies any divine approval or conception of child sacrifice", "tone of moral revulsion", "clarification of God's character"],
+        "explanation": "The idiom pictures an idea as something that might 'come up upon' the heart; saying it never did means God never even conceived of such an abomination.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 36,
+    "reference": "Jeremiah 32:36",
+    "deliberation": "Refers again to the city 'being delivered into the hands of the king of Babylon' via sword, famine, pestilence. The 'hand' idiom/metonymy appears once more; the rest is literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נִתְּנָה בְּיַד מֶלֶךְ־בָּבֶל בַּחֶרֶב וּבָרָעָב וּבַדָּבֶר",
+        "english_text": "It is being delivered into the hands of the king of Babylon through the sword, through famine, and through pestilence",
+        "target": ["Jerusalem's subjection to Babylon by means of calamities", "political and military domination", "historical-judgment domain"],
+        "vehicle": ["'in the hand' of the king of Babylon", "hand as controlling, grasping organ", "human physical/power domain"],
+        "ground": ["being in someone's hand suggests being controlled and overpowered", "connection of means (sword, famine, pestilence) to final control", "subjugation imagery"],
+        "posture": ["acknowledges the city's dire condition as God himself describes it", "transition from judgment to future promise", "prophetic framing"],
+        "explanation": "The city being 'in the hand' of Babylon uses 'hand' metonymically for imperial power and control.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 37,
+    "reference": "Jeremiah 32:37",
+    "deliberation": "Language of scattering ('I have driven them') and gathering could be read metaphorically, but here it tracks the literal exile and return. No distinct metaphorical phrase beyond standard theological verbs.",
+    "instances": []
+  },
+  {
+    "verse": 38,
+    "reference": "Jeremiah 32:38",
+    "deliberation": "The covenant formula 'They shall be My people, and I will be their God' expresses relationship but is not phrased metaphorically; it defines status rather than using imagery.",
+    "instances": []
+  },
+  {
+    "verse": 39,
+    "reference": "Jeremiah 32:39",
+    "deliberation": "Detected the double image 'I will give them one heart and one way'—'heart' metaphorically for inner disposition, 'way' for manner of life, combined as a picture of unified devotion.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְנָתַתִּי לָהֶם לֵב אֶחָד וְדֶרֶךְ אֶחָד לְיִרְאָה אֹתִי",
+        "english_text": "I will give them a single heart and a single way to revere Me",
+        "target": ["the renewed people's inner character and unified conduct", "spiritual unity and orientation", "covenantal-transformation domain"],
+        "vehicle": ["a 'heart' and a 'way' that are 'one'", "inner organ as seat of will; path as life-course", "body and travel domains"],
+        "ground": ["a shared heart symbolizes unified desire/will; a single way symbolizes shared pattern of behavior", "internal attitude and external conduct coordinated", "unity and consistency"],
+        "posture": ["presents restoration as holistic inner and outer transformation toward God", "hopeful, promissory tone", "new-covenant rhetoric"],
+        "explanation": "Here 'heart' metaphorically denotes inner disposition, and 'way' denotes manner of life; together they picture a unified, God-fearing community.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 40,
+    "reference": "Jeremiah 32:40",
+    "deliberation": "The clause 'I will put My fear in their hearts' uses 'heart' metaphorically for the inner person and 'fear' as an internalized disposition implanted there by God.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְאֶת־יִרְאָתִי אֶתֵּן בִּלְבָבָם לְבִלְתִּי סוּר מֵעָלָי",
+        "english_text": "and I will put into their hearts reverence for Me, so that they do not turn away from Me",
+        "target": ["the people's internal motivation to remain faithful", "stabilized God-fearing disposition", "spiritual-moral domain"],
+        "vehicle": ["'putting' fear into the heart", "placing an object inside an inner organ", "physical insertion domain applied to emotion"],
+        "ground": ["locating something in the heart pictures deep-seated, controlling motivation", "implantation implies God-given character", "internalization"],
+        "posture": ["emphasizes that faithfulness will be grounded in divinely given inner transformation", "assuring, covenantal promise", "grace-oriented theology"],
+        "explanation": "God's 'fear' is portrayed as something He places 'in their hearts', using the heart as a metaphor for the center of will and emotion.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 41,
+    "reference": "Jeremiah 32:41",
+    "deliberation": "Found two related metaphors: (1) 'I will plant them in this land'—people as plants firmly established; (2) 'with all My heart and all My soul'—anthropomorphic merism for God's full, undivided commitment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּנְטַעְתִּים בָּאָרֶץ הַזֹּאת",
+        "english_text": "and I will plant them in this land",
+        "target": ["Israel's stable resettlement in the land", "secure, lasting restoration", "historical-salvation domain"],
+        "vehicle": ["planting (of trees/vines)", "agricultural act of setting a plant with roots", "botanical/agricultural domain"],
+        "ground": ["plants that are planted take root and remain; image conveys stability and flourishing", "act of planting implies intentional care", "settledness and nurture"],
+        "posture": ["presents restoration as carefully established and enduring, not transient", "tender, hopeful tone", "promise of secure future"],
+        "explanation": "The people are likened to plants God will 'plant' in the land, a metaphor for their secure and nurtured reestablishment.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּכׇל־לִבִּי וּבְכׇל־נַפְשִׁי",
+        "english_text": "with all My heart and soul",
+        "target": ["the completeness of God's commitment to doing them good", "degree of divine devotion", "theological-volitional domain"],
+        "vehicle": ["'heart' and 'soul' taken together", "inner faculties as seat of desire and life", "anthropological inner-life domain"],
+        "ground": ["pairing heart and soul forms a merism for the whole inner person; 'all' intensifies totality", "hyperbolic language for complete commitment", "integration of will, feeling, and being"],
+        "posture": ["portrays God as fully, joyfully engaged in their good", "warm, affectionate tone", "language of divine passion/zeal"],
+        "explanation": "The phrase 'with all My heart and soul' is an anthropomorphic merism and hyperbole expressing God's total, undivided commitment to their welfare.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 42,
+    "reference": "Jeremiah 32:42",
+    "deliberation": "Compares past disaster and future good; the language itself is propositional and literal ('as I brought ... so I will bring ...'). No explicit imagery-based figure detected.",
+    "instances": []
+  },
+  {
+    "verse": 43,
+    "reference": "Jeremiah 32:43",
+    "deliberation": "Uses the stock phrase 'it is given into the hand of the Chaldeans' (metonymy for their control). The description 'desolation, without man or beast' is literal hyper-devastation description, but not strongly figurative here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נִתְּנָה בְּיַד הַכַּשְׂדִּים",
+        "english_text": "it is delivered into the hands of the Chaldeans",
+        "target": ["the land's political/military subjection to Babylon", "loss of national control", "historical-exilic domain"],
+        "vehicle": ["'in the hand' of the Chaldeans", "hand as sign of grasping and control", "physical power domain"],
+        "ground": ["having something in one's hand means possessing and controlling it", "image of capture", "dominion"],
+        "posture": ["acknowledges the current bleak reality before promising future purchases", "realistic yet hopeful frame", "prophetic reassurance"],
+        "explanation": "The land being 'in the hand' of the Chaldeans uses the 'hand' metonymically for their controlling power.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 44,
+    "reference": "Jeremiah 32:44",
+    "deliberation": "Legal purchase language is literal; the key figurative expression is 'I will restore their fortunes' (literally 'I will turn their captivity'), an idiom/metaphor for reversing their overall condition.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כִּי־אָשִׁיב אֶת־שְׁבוּתָם נְאֻם־יְהוָה",
+        "english_text": "For I will restore their fortunes—declares YHWH [literally: 'I will turn their captivity']",
+        "target": ["the people's overall condition after exile", "reversal from disaster to wellbeing", "salvation/renewal domain"],
+        "vehicle": ["'turning' (reversing) captivity", "movement/rotation of a state", "spatial/transformational domain"],
+        "ground": ["turning something around pictures a radical reversal of situation", "captivity stands metonymically for their whole distressed state", "from bondage to freedom/blessing"],
+        "posture": ["promises a decisive reversal of the people's fortunes", "hopeful, restorative tone", "covenantal faithfulness"],
+        "explanation": "The idiom 'turn captivity' employs 'captivity' metonymically for the people's low condition; 'turning' it is a metaphor for reversing their fortunes.",
+        "confidence": 0.92
+      }
+    ]
+  }
+]

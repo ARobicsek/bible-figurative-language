@@ -1,0 +1,791 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 26:1",
+    "deliberation": "Looked for any non-literal expressions. The dating formula is straightforward, but the prophetic formula 'the word of YHWH came to me' uses motion language for speech and objectifies 'word', which is a conventional metonymic/metaphorical idiom for revelation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הָיָ֥ה דְבַר־יְהֹוָ֖ה אֵלַ֥י",
+        "english_text": "the word of the LORD came to me",
+        "target": [
+          "prophetic revelation to Ezekiel",
+          "divine message-event",
+          "theology/communication"
+        ],
+        "vehicle": [
+          "a 'word' that comes/arrives like an object or person",
+          "speech as physical arrival",
+          "spatial motion"
+        ],
+        "ground": [
+          "the initiative and directedness of God's communication",
+          "an external message entering the prophet's experience",
+          "divine–human encounter"
+        ],
+        "posture": [
+          "formulaic reporting of revelation",
+          "neutral narrative stance",
+          "prophetic discourse"
+        ],
+        "explanation": "The divine revelation is described as a 'word' that 'came' to Ezekiel, using motion language and objectifying the message; this is a conventional prophetic idiom combining metonymy (word for message) and metaphor (communication as an arriving object).",
+        "confidence": 0.6
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 26:2",
+    "deliberation": "Considered personification of Tyre speaking and imagery for Jerusalem. The clearest figurative expression is Jerusalem as 'the gateway/door of the peoples', a metaphor for its role as an access point among nations.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נִשְׁבְּרָ֛ה דַּלְת֥וֹת הָעַמִּ֖ים",
+        "english_text": "The gateway of the peoples is broken",
+        "target": [
+          "Jerusalem’s strategic and economic role",
+          "inter-national access point",
+          "geopolitics/trade"
+        ],
+        "vehicle": [
+          "a door/gate that is broken",
+          "city gate architecture",
+          "built environment"
+        ],
+        "ground": [
+          "loss of access, control and protection for the nations’ traffic",
+          "a once-open passage now disabled",
+          "political and commercial downfall"
+        ],
+        "posture": [
+          "Tyre’s gloating interpretation of Jerusalem’s fall",
+          "schadenfreude",
+          "international rivalry"
+        ],
+        "explanation": "Jerusalem is called 'the gateway of the peoples', picturing its role as a controlling passage for nations through the concrete image of a door; the door’s breaking symbolizes the collapse of its strategic function.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 26:3",
+    "deliberation": "Looked for comparisons or symbolic uses. The verse explicitly compares the oncoming nations to the sea lifting up its waves, which is a clear simile of overwhelming, repeated attacks.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהַעֲלֵיתִ֤י עָלַ֙יִךְ֙ גּוֹיִ֣ם רַבִּ֔ים כְּהַעֲל֥וֹת הַיָּ֖ם לְגַלָּֽיו",
+        "english_text": "I will hurl many nations against you, as the sea hurls its waves",
+        "target": [
+          "the many invading nations against Tyre",
+          "military coalition",
+          "human society/warfare"
+        ],
+        "vehicle": [
+          "the sea lifting up and casting its waves",
+          "stormy, surging sea",
+          "nature"
+        ],
+        "ground": [
+          "repeated, powerful, overwhelming onslaught",
+          "uncontrollable and relentless force",
+          "destructive power of judgment"
+        ],
+        "posture": [
+          "divine threat of judgment",
+          "ominous warning",
+          "prophetic/theological stance"
+        ],
+        "explanation": "The nations attacking Tyre are compared to waves of the sea; the simile highlights the unstoppable, pounding, and repeated nature of the coming invasions.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 26:4",
+    "deliberation": "Military actions (destroy, demolish) are literal. The phrase 'I will make her a naked rock' goes beyond literal architecture to depict the city as stripped bare, using a natural object metaphor for complete desolation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנָתַתִּ֥י אוֹתָ֖הּ לִצְחִ֥יחַ סָֽלַע",
+        "english_text": "I will leave her a naked rock",
+        "target": [
+          "Tyre as a city-state",
+          "urban community",
+          "human society"
+        ],
+        "vehicle": [
+          "a bare, exposed rock",
+          "desolate geological feature",
+          "natural landscape"
+        ],
+        "ground": [
+          "stripped of buildings, adornment, and inhabitants",
+          "barrenness and vulnerability",
+          "total ruin as divine judgment"
+        ],
+        "posture": [
+          "YHWH’s humbling of a proud trading city",
+          "negative, punitive evaluation",
+          "theological judgment"
+        ],
+        "explanation": "Tyre is likened to a bare rock, emphasizing that nothing of its built-up, inhabited character will remain—only a stripped, useless surface.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 26:5",
+    "deliberation": "Checked whether 'in the midst of the sea' is figurative, but in Hebrew it is a plain spatial phrase. The key figurative image is the site of Tyre as 'a place for spreading/drying nets', reducing a former metropolis to a lowly fishing surface.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִשְׁטַ֨ח חֲרָמִ֤ים תִּֽהְיֶה֙ בְּת֣וֹךְ הַיָּ֔ם",
+        "english_text": "She shall be in the midst of the sea a place for drying nets",
+        "target": [
+          "the remains/site of Tyre",
+          "urban ruin",
+          "human society"
+        ],
+        "vehicle": [
+          "a flat place used by fishermen to spread nets",
+          "menial fishing workspace",
+          "economy/ordinary labor"
+        ],
+        "ground": [
+          "from prominence to insignificance and lowly use",
+          "no independent glory, only utilitarian function",
+          "symbolic of humiliation and desolation"
+        ],
+        "posture": [
+          "divine downgrading of Tyre’s former glory",
+          "derisive depiction",
+          "prophetic judgment"
+        ],
+        "explanation": "The city’s site is imagined as only fit for fishermen to spread nets, contrasting sharply with its past magnificence and portraying its future as ignoble and desolate.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 26:6",
+    "deliberation": "The killing by the sword is literal. The phrase 'her daughters in the field' is figurative kinship language for dependent settlements/towns surrounding Tyre, a metaphorical extension and synecdochic way to speak of its outlying communities.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וּבְנוֹתֶ֙יהָ֙ אֲשֶׁ֣ר בַּשָּׂדֶ֔ה",
+        "english_text": "her daughter-towns in the country",
+        "target": [
+          "the dependent towns and villages around Tyre",
+          "satellite communities",
+          "human settlements"
+        ],
+        "vehicle": [
+          "daughters belonging to a mother",
+          "family relationship",
+          "social/kinship structure"
+        ],
+        "ground": [
+          "derivation, dependence, and subordination to a central entity",
+          "intimate linkage between main city and its offspring towns",
+          "political-territorial dependence"
+        ],
+        "posture": [
+          "emphasizing the breadth of coming judgment",
+          "matter-of-fact but ominous",
+          "prophetic warning"
+        ],
+        "explanation": "Outlying settlements are called Tyre’s 'daughters', using family imagery (a kind of metaphor/synecdoche) to express their dependence on and derivation from the central city.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 26:7",
+    "deliberation": "The military description is literal. The key figurative element is the title 'king of kings' given to Nebuchadrezzar, an exalted superlative for supreme imperial authority and thus a hyperbolic/metaphorical title.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מֶ֣לֶךְ מְלָכִ֑ים",
+        "english_text": "a king of kings",
+        "target": [
+          "Nebuchadrezzar’s imperial status",
+          "human ruler",
+          "political power"
+        ],
+        "vehicle": [
+          "a king who rules over other kings",
+          "superlative monarch",
+          "social hierarchy"
+        ],
+        "ground": [
+          "supremacy and authority over subordinate rulers",
+          "pre-eminence among all regional powers",
+          "formidability as an instrument of judgment"
+        ],
+        "posture": [
+          "heightening Nebuchadrezzar’s stature as YHWH’s agent",
+          "awe-inspiring and threatening",
+          "theological interpretation of empire"
+        ],
+        "explanation": "Calling Nebuchadrezzar 'king of kings' magnifies his authority beyond the literal, presenting him as the supreme overlord among kings—a hyperbolic metaphor underscoring how formidable the coming judgment will be.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 26:8",
+    "deliberation": "Siege actions (towers, mounds, shields) are literal warfare. The only figurative expression repeats the kinship metaphor for the dependent settlements, 'your daughters in the field', again treating satellite towns as offspring of the main city.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּנוֹתַ֥יִךְ בַּשָּׂדֶ֖ה",
+        "english_text": "your daughter-towns in the country",
+        "target": [
+          "Tyre’s dependent towns",
+          "satellite communities",
+          "human settlements"
+        ],
+        "vehicle": [
+          "daughters belonging to a mother",
+          "family kinship",
+          "social relations"
+        ],
+        "ground": [
+          "derivation and dependence from a central source",
+          "subordinate but closely related communities",
+          "political and economic dependence"
+        ],
+        "posture": [
+          "stressing that judgment reaches beyond the center",
+          "sober warning",
+          "prophetic discourse"
+        ],
+        "explanation": "The verse again uses familial imagery for outlying towns as 'daughters', a metaphor/synecdoche emphasizing their subordinate, derivative relationship to Tyre.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 26:9",
+    "deliberation": "Examined the siege language for symbolic or exaggerated use. The battering rams striking walls and towers being smashed appear to be straightforward literal descriptions of warfare, without clear metaphor, simile, or other figurative devices.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 26:10",
+    "deliberation": "Dust, noise, and shaking walls are realistic battle images. The explicit comparative construction 'as the entrance of a breached city' is a simile that characterizes the nature of Nebuchadrezzar’s entry into Tyre.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּבֹאוֹ֙ בִּשְׁעָרַ֔יִךְ כִּמְבוֹאֵ֖י עִ֥יר מְבֻקָּעָֽה",
+        "english_text": "when he enters your gates as those who enter a breached city",
+        "target": [
+          "Nebuchadrezzar’s invasion of Tyre",
+          "military entry",
+          "warfare"
+        ],
+        "vehicle": [
+          "troops entering an already-breached city",
+          "unopposed entry after a wall is broken",
+          "siege warfare scenario"
+        ],
+        "ground": [
+          "ease and inevitability of penetration",
+          "helplessness and lack of resistance from the city",
+          "finality of conquest"
+        ],
+        "posture": [
+          "emphasizing how thoroughly Tyre will be overrun",
+          "threatening portrayal",
+          "prophetic judgment"
+        ],
+        "explanation": "The invasion is likened to the entry into a city whose walls are already smashed, underscoring how Tyre’s defenses will be rendered meaningless and its fall certain.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 26:11",
+    "deliberation": "Considered whether 'pillars of your strength' might metaphorically refer to leaders or military power, but the context suggests literal monuments or cultic pillars being toppled. The trampling, sword, and falling structures are described in concrete terms, so no clear figurative device is isolated.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 26:12",
+    "deliberation": "The actions—plundering wealth, looting merchandise, razing walls and houses, casting stones, timber, and soil into the water—are all concrete acts of conquest and destruction. They may be symbolically loaded but are not expressed through explicit metaphor/simile or similar figures.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 26:13",
+    "deliberation": "Explored whether stopping the 'noise/multitude of your songs' might be metaphorical, but it straightforwardly means that the city’s music and celebrations will cease. The expressions remain literal in context, without a distinct figurative mapping beyond normal language.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 26:14",
+    "deliberation": "This verse reprises and intensifies earlier imagery: Tyre as a 'bare rock' and as a 'place for spreading nets.' Both are metaphors for complete desolation and loss of civic identity, layered to express humiliation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּנְתַתִּ֞יךְ לִצְחִ֣יחַ סֶ֗לַע",
+        "english_text": "I will make you a naked rock",
+        "target": [
+          "Tyre as city-state",
+          "urban community",
+          "human society"
+        ],
+        "vehicle": [
+          "a bare, exposed rock",
+          "desolate geological surface",
+          "natural landscape"
+        ],
+        "ground": [
+          "stripped of structures, adornment, and population",
+          "barrenness and exposure",
+          "total ruin under judgment"
+        ],
+        "posture": [
+          "humiliating a formerly powerful city",
+          "negative, punitive tone",
+          "theological judgment"
+        ],
+        "explanation": "Tyre is portrayed as a bare rock, stressing that nothing of its urban character will survive—only a stripped, useless outcrop.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִשְׁטַ֤ח חֲרָמִים֙ תִּֽהְיֶ֔ה",
+        "english_text": "you shall be a place for drying nets",
+        "target": [
+          "the future site/remains of Tyre",
+          "urban ruin",
+          "human society"
+        ],
+        "vehicle": [
+          "a spot used only to spread fishing nets",
+          "low-status working surface",
+          "economy/ordinary labor"
+        ],
+        "ground": [
+          "from great prominence to trivial everyday use",
+          "being reduced to a mere tool of others",
+          "symbolic of humiliation and insignificance"
+        ],
+        "posture": [
+          "deriding Tyre’s fall from greatness",
+          "mocking undertone",
+          "prophetic judgment"
+        ],
+        "explanation": "By picturing the site as suitable only for fishermen to place their nets, the text accentuates how utterly Tyre’s prestige and autonomy will be destroyed.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 26:15",
+    "deliberation": "Looked at whether the reaction of the 'coastlands' is literal or figurative. The coastlands 'quaking' at the sound of Tyre’s fall personifies geographical regions and uses them metonymically for their inhabitants, expressing widespread terror through physical shaking imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מִקּ֣וֹל מַפַּלְתֵּ֗ךְ ... יִרְעֲשׁ֖וּ הָאִיִּֽים",
+        "english_text": "The coastlands shall quake at the sound of your downfall",
+        "target": [
+          "peoples and powers in distant coastal regions",
+          "maritime nations",
+          "human society"
+        ],
+        "vehicle": [
+          "islands/coastlands physically quaking from a noise",
+          "trembling ground",
+          "natural phenomena"
+        ],
+        "ground": [
+          "intense fear and shock spreading outward",
+          "destabilization among those who hear of the fall",
+          "far-reaching impact of Tyre’s destruction"
+        ],
+        "posture": [
+          "emphasizing the exemplary, fear-inducing nature of Tyre’s fate",
+          "warning to observers",
+          "prophetic/theological stance"
+        ],
+        "explanation": "Inanimate 'coastlands' are said to 'quake' at the sound of Tyre’s fall, a personifying, hyperbolic way to depict the terror and upheaval felt by distant maritime peoples.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 26:16",
+    "deliberation": "The actions (leaving thrones, removing robes, sitting on the ground) describe mourning rituals realistically. The phrase 'they shall clothe themselves with trembling' is a striking metaphor, treating fear as a garment they put on.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "חֲרָד֤וֹת׀ יִלְבָּ֙שׁוּ֙",
+        "english_text": "they shall clothe themselves with trembling",
+        "target": [
+          "the emotional state of the sea-rulers",
+          "their fear and dismay",
+          "human psychology"
+        ],
+        "vehicle": [
+          "putting on garments of trembling",
+          "wearing clothing",
+          "daily embodied experience"
+        ],
+        "ground": [
+          "fear envelops and covers them completely",
+          "their terror becomes outwardly visible, like clothing",
+          "total identification with dread"
+        ],
+        "posture": [
+          "portraying their fear as overwhelming and inescapable",
+          "lamenting/astonished reaction",
+          "prophetic depiction"
+        ],
+        "explanation": "Fear is pictured as a garment they 'put on', personifying trembling and using clothing imagery to stress how fully these rulers are wrapped in dread at Tyre’s downfall.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 26:17",
+    "deliberation": "The dirge includes several evaluative descriptions of Tyre. The phrase 'you who were peopled from the seas' reflects a figurative/metonymic conception of the sea as the source of Tyre’s life—its population and power arising from maritime commerce and seafaring.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "נוֹשֶׁ֖בֶת מִיַּמִּ֑ים",
+        "english_text": "you who were peopled from the seas",
+        "target": [
+          "Tyre’s population and prosperity",
+          "urban community",
+          "human society"
+        ],
+        "vehicle": [
+          "inhabitation 'from the seas'",
+          "sea as source of life and supply",
+          "nature/maritime world"
+        ],
+        "ground": [
+          "deriving life, wealth, and strength from maritime activity",
+          "profound dependence on the sea",
+          "seaborne trade as lifeblood"
+        ],
+        "posture": [
+          "mourning the collapse of a great maritime power",
+          "sorrowful admiration",
+          "lament genre"
+        ],
+        "explanation": "To say Tyre was 'peopled from the seas' figuratively treats the sea as the generator of its inhabitants and power, highlighting how its whole existence was built on maritime commerce.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 26:18",
+    "deliberation": "This verse reiterates the reaction of the coastlands. The trembling and terror of 'the coastlands' again personify geographical regions and stand metonymically for the fear of their inhabitants in response to Tyre’s fall.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יֶחְרְד֣וּ הָאִיִּ֔ים ... וְנִבְהֲל֛וּ הָאִיִּ֥ים אֲשֶׁר־בַּיָּ֖ם",
+        "english_text": "Now shall the coastlands tremble on the day of your downfall, and the coastlands by the sea be terrified at your end",
+        "target": [
+          "peoples of the distant islands/coastlands",
+          "maritime nations",
+          "human society"
+        ],
+        "vehicle": [
+          "coastlands trembling and being terrified",
+          "shaking and fear in inanimate regions",
+          "natural/geographic domain"
+        ],
+        "ground": [
+          "widespread alarm and destabilization among maritime partners",
+          "shock caused by Tyre’s sudden fall",
+          "far-reaching consequences of the judgment"
+        ],
+        "posture": [
+          "underscoring the exemplary terror of Tyre’s demise",
+          "warning to other nations",
+          "prophetic/theological stance"
+        ],
+        "explanation": "The coastlands are depicted as trembling and terrified, attributing emotional reactions to locations as a vivid way to describe the fear experienced by their inhabitants when Tyre collapses.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 26:19",
+    "deliberation": "Here the 'Deep' and 'many waters' covering the city echo chaos/flood imagery elsewhere in the Hebrew Bible. While Tyre is coastal, the language evokes a metaphor in which the overwhelming forces of judgment are likened to the primordial waters engulfing a city.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "בְּהַעֲל֤וֹת עָלַ֙יִךְ֙ אֶת־תְּה֔וֹם וְכִסּ֖וּךְ הַמַּ֥יִם הָרַבִּֽים",
+        "english_text": "when I bring the Deep over you, and its mighty waters cover you",
+        "target": [
+          "the destruction and desolation of Tyre",
+          "national downfall",
+          "history/judgment"
+        ],
+        "vehicle": [
+          "the cosmic Deep and mighty waters flooding over something",
+          "catastrophic inundation",
+          "cosmic chaos/sea"
+        ],
+        "ground": [
+          "overwhelming, engulfing, and inescapable devastation",
+          "return to a chaos-like state erasing ordered life",
+          "total obliteration under divine judgment"
+        ],
+        "posture": [
+          "casting the judgment in mythic-chaos flood terms",
+          "intensely threatening",
+          "theological imagination"
+        ],
+        "explanation": "The forces that will ruin Tyre are described in terms of the primordial Deep and powerful waters covering it, a metaphor that portrays the judgment as a chaos-flood engulfing the city.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 26:20",
+    "deliberation": "The verse personifies Tyre as descending to the underworld with those who go down to the Pit, and contrasts this with 'the land of the living.' This uses death/Sheol imagery as a metaphor for the city’s irreversible removal from history.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "וְהוֹרַדְתִּיךְ֩ אֶת־י֨וֹרְדֵי ב֜וֹר אֶל־עַ֣ם עוֹלָ֗ם וְ֠הוֹשַׁבְתִּ֠יךְ בְּאֶ֨רֶץ תַּחְתִּיּ֜וֹת ... וְנָתַתִּ֥י צְבִ֖י בְּאֶ֥רֶץ חַיִּֽים",
+        "english_text": "then I will bring you down, with those who go down to the Pit, to the people of old. I will install you in the netherworld with those that go down to the Pit … and I will set splendor in the land of the living",
+        "target": [
+          "Tyre as a political entity/city-state",
+          "city/nation",
+          "human society"
+        ],
+        "vehicle": [
+          "a person descending to the Pit/netherworld among the ancient dead",
+          "journey to Sheol contrasted with remaining in the land of the living",
+          "afterlife mythic geography"
+        ],
+        "ground": [
+          "final, irrevocable removal from the sphere of active life",
+          "being counted among those long dead and ruined",
+          "judgment conceptualized as death and underworld exile"
+        ],
+        "posture": [
+          "announcing a death-sentence on Tyre’s historical existence",
+          "severe, solemn tone",
+          "theological pronouncement"
+        ],
+        "explanation": "Tyre is treated as a person sent down to the Pit to dwell with the dead, contrasted with the 'land of the living'; this personifying metaphor uses Sheol imagery to express the city’s utter and irreversible extinction from among living nations.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 26:21",
+    "deliberation": "Two distinct figurative ideas appear: (1) making Tyre 'a horror/terrors', i.e., an object lesson of fright; and (2) 'you shall be sought, but shall never be found again', a hyperbolic search image emphasizing complete disappearance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בַּלָּה֥וֹת אֶתְּנֵ֖ךְ",
+        "english_text": "I will make you a horror",
+        "target": [
+          "Tyre’s remembered fate and reputation",
+          "example of ruin",
+          "history/judgment"
+        ],
+        "vehicle": [
+          "a terrifying spectacle or collection of terrors",
+          "objects that inspire dread",
+          "emotion/experience"
+        ],
+        "ground": [
+          "evoking fear and horror in observers",
+          "becoming a paradigmatic example of disaster",
+          "serving as a warning to others"
+        ],
+        "posture": [
+          "using Tyre as a cautionary sign",
+          "didactic, warning tone",
+          "theological interpretation of catastrophe"
+        ],
+        "explanation": "YHWH declares he will make Tyre into 'horrors', meaning it will be an object of dread and a terrifying example, not just another ruined city.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּֽתְבֻקְשִׁ֗י וְלֹא־תִמָּֽצְאִ֥י עוֹד֙ לְעוֹלָ֔ם",
+        "english_text": "you shall be sought, but shall never be found again—for ever",
+        "target": [
+          "Tyre’s continuing existence",
+          "the city as recoverable entity",
+          "human society"
+        ],
+        "vehicle": [
+          "a missing object searched for but never found",
+          "unsuccessful search",
+          "everyday experience"
+        ],
+        "ground": [
+          "complete and irreversible disappearance",
+          "no possibility of restoration or re-emergence",
+          "finality of judgment"
+        ],
+        "posture": [
+          "underscoring the absolute finality of Tyre’s end",
+          "emphatic denial of hope",
+          "prophetic judgment"
+        ],
+        "explanation": "The image of searchers who can never find Tyre again is a hyperbolic way to communicate that its destruction and erasure will be complete and permanent.",
+        "confidence": 0.9
+      }
+    ]
+  }
+]

@@ -1,0 +1,647 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 8:1",
+    "deliberation": "The verse describes bones being taken from graves as an act of desecration. Though it is symbolically shameful, the wording itself is descriptive and literal rather than figurative; no explicit metaphor, simile, personification, idiom, or other trope is present.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 8:2",
+    "deliberation": "I checked the cultic verbs (loved, served, followed, bowed) toward the sun, moon, and host of heaven; they are literal descriptions of idolatry. The notable figurative expression is the comparison of the exposed bones to dung on the face of the ground.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְדֹמֶן עַל־פְּנֵי הָאֲדָמָה יִהְיוּ",
+        "english_text": "they shall become dung upon the face of the earth",
+        "target": ["the bones of the kings, priests, prophets, and people (their post-mortem honor)", "disgraced human remains / reputation", "judgment on Judah"],
+        "vehicle": ["dung scattered on the ground", "worthless, defiling waste", "ritual and social uncleanness"],
+        "ground": ["utter worthlessness, filth, and public exposure", "shame/defilement", "moral evaluation in covenant judgment"],
+        "posture": ["divine denunciation of their idolatrous leaders and people", "prophetic evaluation", "covenant lawsuit discourse"],
+        "explanation": "The bones are not literally turned into excrement; their dishonored exposure is pictured as if they were dung, conveying extreme shame and worthlessness.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 8:3",
+    "deliberation": "The verse contrasts death and life as choices of the remnant. While this could be psychologically literal (hoping for death), it functions rhetorically as a heightened way to describe misery. I treat this preference for death over life as hyperbolic emphasis rather than a concrete report.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְנִבְחַר מָוֶת מֵחַיִּים",
+        "english_text": "And death shall be preferable to life",
+        "target": ["the lived experience of the surviving remnant", "emotional state / quality of life", "post-exilic suffering under judgment"],
+        "vehicle": ["choosing death instead of life", "extreme preference expression", "rhetorical exaggeration of misery"],
+        "ground": ["their life will be so bitter that continued existence is intolerable", "intensity of suffering", "covenant curse experience"],
+        "posture": ["lamenting depiction of future distress", "prophetic pathos", "oracular announcement of doom"],
+        "explanation": "Preferring death to life dramatizes the severity of coming anguish; it is an exaggeration used to underscore the unbearable nature of their fate.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 8:4",
+    "deliberation": "The verse uses two everyday physical scenarios (falling and getting up; turning aside and turning back) as analogies for moral and spiritual behavior in the surrounding context. These actions are standard metaphors in Jeremiah for sin and repentance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֲיִפְּלוּ וְלֹא יָקוּמוּ אִם־יָשׁוּב וְלֹא יָשׁוּב",
+        "english_text": "When people fall, do they not get up again? If they turn aside, do they not turn back?",
+        "target": ["Israel’s moral and spiritual conduct (sin and repentance)", "covenant faithfulness / apostasy", "relationship between Judah and YHWH"],
+        "vehicle": ["falling down and rising; turning aside and returning on a path", "physical movement and recovery", "ordinary bodily experience of walking and stumbling"],
+        "ground": ["just as people naturally recover from a physical fall or wrong turn, so Judah should return from moral deviation", "expectability of restoration after failure", "norms of response to missteps"],
+        "posture": ["divine rebuke using proverbial imagery", "didactic rhetorical question", "covenant exhortation"],
+        "explanation": "Physical falling and rising, turning aside and returning, are used metaphorically for moral collapse and the expected act of repentance Judah is refusing.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 8:5",
+    "deliberation": "The verse describes Jerusalem as a perpetually wayward people and uses movement and grasping language. I see (1) backsliding/waywardness as a path metaphor for spiritual rebellion, and (2) holding fast to deceit as a grasping metaphor for stubborn attachment to falsehood.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַדּוּעַ שׁוֹבְבָה הָעָם הַזֶּה יְרוּשָׁלִַם מְשׁוּבָה נִצַּחַת",
+        "english_text": "Why is this people—Jerusalem—rebellious with a persistent rebellion?",
+        "target": ["Jerusalem’s covenant unfaithfulness", "spiritual/moral state", "Judah’s relationship to YHWH"],
+        "vehicle": ["being wayward / backsliding (שׁוֹבְבָה, מְשׁוּבָה)", "deviating from a path", "journey / path imagery"],
+        "ground": ["they have turned away from the proper path and remain off-course", "ongoing deviation and instability", "persistent refusal to walk rightly before God"],
+        "posture": ["indignant divine complaint", "prophetic evaluation", "covenant lawsuit rhetoric"],
+        "explanation": "Terms from the root שוב portray Judah as a chronically backsliding traveler, picturing spiritual rebellion as straying from the right way.",
+        "confidence": 0.85
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֶחֱזִיקוּ בַּתַּרְמִת מֵאֲנוּ לָשׁוּב",
+        "english_text": "They cling to deceit, they refuse to return.",
+        "target": ["the people’s commitment to falsehood and idolatry", "attitudes and beliefs", "inner moral life of Judah"],
+        "vehicle": ["physically holding fast or clinging", "firm manual grasp", "bodily action of gripping an object"],
+        "ground": ["stubborn, tenacious attachment to deception", "refusal to let go of sin", "willful persistence despite opportunities to repent"],
+        "posture": ["condemnation of stubbornness", "prophetic accusation", "ethical exhortation by contrast"],
+        "explanation": "Mental and spiritual attachment to deceit is pictured as physically gripping something, emphasizing their tenacity in error.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 8:6",
+    "deliberation": "The key figurative expression is an explicit simile likening their headlong persistence in evil to a war horse rushing into battle. The race imagery in \"בִמְרֻצָתָם\" is bound up with this same picture, so I treat it as one extended simile.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כֻּלּוֹ שָׁב בִּמְרֻצָתָם כְּסוּס שׁוֹטֵף בַּמִּלְחָמָה",
+        "english_text": "They all persist in their wayward course like a steed dashing forward in the fray.",
+        "target": ["the people’s relentless pursuit of their evil ways", "collective moral behavior", "Judah’s pattern of sin"],
+        "vehicle": ["a war horse charging headlong into battle", "powerful, unhesitating movement", "military animal imagery"],
+        "ground": ["unthinking, forceful, and unstoppable forward rush", "reckless momentum toward danger", "lack of reflection or restraint"],
+        "posture": ["sarcastic, critical portrayal of their behavior", "prophetic warning", "moral indictment using vivid imagery"],
+        "explanation": "Their persistence in evil is explicitly compared to a war horse that plunges into combat without hesitation, highlighting their reckless and unreflective drive.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 8:7",
+    "deliberation": "The birds are said to \"know\" and \"keep\" their appointed times; this loosely personifies them and is used to shame Judah by contrast: animals obey natural order, but the people ignore YHWH’s ordinance. The contrast is the rhetorical point.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "גַּם־חֲסִידָה בַשָּׁמַיִם יָדְעָה מוֹעֲדֶיהָ וְתֹר וְסִיס וְעָגֻר שָׁמְרוּ אֶת־עֵת בֹּאָנָה",
+        "english_text": "Even the stork in the sky knows its seasons, and the turtledove, swift, and crane keep the time of their coming;",
+        "target": ["the instinctive order of migratory birds", "non-human creatures", "natural world as God’s creation"],
+        "vehicle": ["knowing and keeping appointed times like rational agents", "cognitive and moral awareness", "human-like obedience to set rules"],
+        "ground": ["regular, reliable conformity to appointed patterns", "obedient response to God-given order", "contrast with Judah’s disobedience"],
+        "posture": ["ironic rebuke of Judah via comparison to animals", "didactic contrast", "prophetic criticism"],
+        "explanation": "The birds are described in human terms as knowing and keeping times, in order to highlight that even animals respond properly to divine order, unlike God’s people.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 8:8",
+    "deliberation": "The chief figure is \"the lying pen of the scribes\": the pen is given moral agency and stands for their writings/teaching, making this both personification and metonymy. The rest of the verse is straightforward argument.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עֵט שֶׁקֶר סֹפְרִים",
+        "english_text": "the lying pen of the scribes",
+        "target": ["the deceptive written teaching of the scribes", "authoritative religious instruction", "Torah-interpretation in Judah"],
+        "vehicle": ["a pen that itself lies", "tool acting as moral agent", "writing instrument as representative of its output"],
+        "ground": ["their written interpretations distort truth and mislead", "instrumentality in producing falsehood", "medium (writing) embodying the character of its authors"],
+        "posture": ["sharp prophetic critique of official teaching", "exposure of religious corruption", "covenant lawsuit tone"],
+        "explanation": "The inanimate pen is personified as a liar and, by metonymy, stands for the scribes’ false writings, underscoring the corruption of their supposed wisdom.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 8:9",
+    "deliberation": "The verse speaks of wise men being ashamed, dismayed, and caught because they rejected the word of YHWH. These can all be literal consequences (captivity, disgrace). There is strong rhetoric, but no distinct metaphor, simile, idiom, or other figure that clearly departs from literal description.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 8:10",
+    "deliberation": "Most of the verse is literal judgment language. Two classic Hebrew merisms occur: (1) from small to great, and (2) from prophet to priest, each expressing totality across a spectrum rather than only its endpoints.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי מִקָּטֹן וְעַד־גָּדוֹל כֻּלּוֹהּ בֹּצֵעַ בָּצַע",
+        "english_text": "For from the smallest to the greatest, they are all greedy for gain",
+        "target": ["the entire social spectrum of Judah’s people", "social classes", "national community of Judah"],
+        "vehicle": ["\"from small to great\" as endpoints of a scale", "merism expressing total range", "extremes used to include all in between"],
+        "ground": ["corruption pervades every social level without exception", "no class is exempt", "comprehensiveness of greed"],
+        "posture": ["sweeping moral indictment", "prophetic generalization", "covenant lawsuit formulation"],
+        "explanation": "The phrase \"from small to great\" is a merism, using both ends of a spectrum to signify that everyone in the social range is implicated.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מִנָּבִיא וְעַד־כֹּהֵן כֻּלּוֹהּ עֹשֶׂה שָּׁקֶר",
+        "english_text": "prophet and priest alike, they all act falsely",
+        "target": ["the whole range of official religious leadership", "religious offices", "institutional leadership in Judah"],
+        "vehicle": ["\"from prophet to priest\" as flanking representative offices", "merism of religious roles", "naming extremes to include all related positions"],
+        "ground": ["every kind of religious leader is corrupt", "system-wide falseness", "no trustworthy officeholder remains"],
+        "posture": ["wholesale condemnation of leadership", "prophetic exposure of institutional sin", "covenant lawsuit language"],
+        "explanation": "By pairing prophet and priest as representative offices, the phrase functions as a merism signifying the total corruption of religious leadership.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 8:11",
+    "deliberation": "Two intertwined figures appear: (1) \"the fracture/wound of the daughter of my people\" and attempts to heal it lightly is an extended medical metaphor for the nation’s deep spiritual and social crisis; (2) \"daughter of my people\" itself is a collective personification of the nation as a vulnerable female.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְרַפּוּ אֶת־שֶׁבֶר בַּת־עַמִּי עַל־נְקַלָּה",
+        "english_text": "They offer healing offhand for the fracture of the daughter of my people",
+        "target": ["Judah’s deep spiritual, social, and political crisis", "national condition", "covenant community in distress"],
+        "vehicle": ["a daughter with a serious fracture/wound being superficially treated", "medical and familial imagery", "female patient with inadequate care"],
+        "ground": ["the people’s condition is gravely damaged yet leaders treat it as minor", "mismatch between appearance and reality of healing", "exploitation of a vulnerable community"],
+        "posture": ["accusation against false healers/prophets", "indignant prophetic protest", "covenant lawsuit imagery"],
+        "explanation": "The nation is personified as a daughter with a serious fracture, and the leaders’ policies and prophecies are pictured as trivial bandaging of a grave wound.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בַּת־עַמִּי",
+        "english_text": "the daughter of my people",
+        "target": ["the people of Judah collectively", "national community", "covenant people"],
+        "vehicle": ["a daughter related to the speaker", "female family member", "kinship imagery"],
+        "ground": ["closeness, affection, and vulnerability of the people before God/prophet", "familial bond and protectiveness", "emotional stake in their suffering"],
+        "posture": ["empathetic lament as well as accusation", "expressive pastoral stance", "covenant familial imagery"],
+        "explanation": "The community is personified as a daughter, expressing both their vulnerability and the speaker’s deep familial concern.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 8:12",
+    "deliberation": "The verse uses \"fall\" and \"stumble\" in a judgment context, which is a standard metaphor for ruin and defeat. \"Time of their visitation\" is an idiom for the moment when God intervenes in judgment, not a literal friendly visit.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָכֵן יִפְּלוּ בַנֹּפְלִים ... יִכָּשְׁלוּ",
+        "english_text": "Assuredly, they shall fall among the falling; they shall stumble at the time of their doom",
+        "target": ["the fate of the shameless sinners in Judah", "their coming defeat and ruin", "outcome under divine judgment"],
+        "vehicle": ["falling and stumbling while walking", "loss of physical balance leading to collapse", "bodily mishap imagery"],
+        "ground": ["irremediable collapse and inability to stand", "sudden downfall with no recovery", "vulnerability under external forces"],
+        "posture": ["threatening pronouncement of downfall", "prophetic warning", "covenant curse rhetoric"],
+        "explanation": "Falling and stumbling are used metaphorically for catastrophic defeat under judgment, not merely tripping in a literal sense.",
+        "confidence": 0.86
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּעֵת פְּקֻדָּתָם",
+        "english_text": "at the time of their doom (literally: at the time of their visitation)",
+        "target": ["the moment when God executes judgment on them", "divine punitive action", "historical crisis of conquest/exile"],
+        "vehicle": ["\"visitation\" as though God were coming in person to inspect", "social act of visiting", "relational encounter language"],
+        "ground": ["God’s personal intervention to reckon with their sins", "closeness and intentionality in judgment", "divine oversight becoming active punishment"],
+        "posture": ["solemn framing of coming crisis as God’s appointed time", "covenant lawsuit closure", "theological interpretation of historical events"],
+        "explanation": "Here \"visitation\" is an idiom and metonymy for the concrete execution of judgment, not a casual visit, expressing God’s deliberate intervention.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 8:13",
+    "deliberation": "The image of vine and fig tree without fruit and withered leaves may refer to literal agricultural devastation, but in prophetic tradition vine and fig tree are standard metaphors for Israel’s fruitfulness. The clustered imagery functions as a metaphor for complete loss of covenant blessings and productivity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵין עֲנָבִים בַּגֶּפֶן וְאֵין תְּאֵנִים בַּתְּאֵנָה וְהֶעָלֶה נָבֵל",
+        "english_text": "No grapes left on the vine, no figs on the fig tree, the leaves all withered",
+        "target": ["Israel/Judah’s covenant life and blessings", "national fruitfulness and prosperity", "spiritual and social productivity"],
+        "vehicle": ["a barren vine and fig tree with withered leaves", "failed agricultural plants", "unfruitful orchard imagery"],
+        "ground": ["absence of expected results and blessings", "visible sign of curse and decay", "failure to produce the fruit appropriate to their calling"],
+        "posture": ["announcement of covenant curse using agrarian symbolism", "prophetic warning", "evaluation of Israel’s unfruitfulness"],
+        "explanation": "The unfruitful vine and fig tree with withered leaves portray the people’s loss of blessing and failure to yield the righteous fruit God sought.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 8:14",
+    "deliberation": "The key figurative phrase is \"he has made us drink water of gall/poison\"; this is a standard prophetic metaphor for bitter, deadly experiences of judgment, not literal medicinal drinking.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיַּשְׁקֵנוּ מֵי־רֹאשׁ כִּי חָטָאנוּ לַיהוָה",
+        "english_text": "And he has made us drink a bitter draft (water of gall), because we sinned against GOD",
+        "target": ["the people’s experience of divine judgment", "national suffering", "consequences of sin for Judah"],
+        "vehicle": ["drinking bitter or poisonous water", "ingesting something noxious", "cup of bitterness imagery"],
+        "ground": ["their punishment is deeply bitter and harmful, forced upon them", "inescapable, internalized consequences of sin", "God as one who administers a cup of judgment"],
+        "posture": ["confessional recognition of judgment", "lament over bitter fate", "theological framing of catastrophe"],
+        "explanation": "The people’s suffering under judgment is portrayed as being forced to drink an intensely bitter or poisonous drink, emphasizing the unpleasantness and compulsion.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 8:15",
+    "deliberation": "The verse contrasts hoped-for peace and healing with terror. The phrase \"time of healing\" is a continuation of the medical metaphor in this chapter, picturing national restoration as convalescence; its frustration is the point.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְעֵת מַרְפֵּה וְהִנֵּה בְעָתָה",
+        "english_text": "For a time of healing—but instead, there is terror!",
+        "target": ["anticipated national restoration and well-being", "social and political recovery", "state of the covenant community"],
+        "vehicle": ["a scheduled time of medical healing", "period of convalescence and recovery", "clinical improvement imagery"],
+        "ground": ["they expected improvement and relief but encountered the opposite", "misalignment between expectation and reality", "diagnosed condition worsens instead of heals"],
+        "posture": ["lament over disappointed hopes", "bitter acknowledgment of judgment", "contrastive rhetoric to highlight catastrophe"],
+        "explanation": "Restoration is envisioned as a time of healing, but terror arrives instead, continuing the medical metaphor for the nation’s condition and its failed recovery.",
+        "confidence": 0.84
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 8:16",
+    "deliberation": "Two figurative elements stand out: (1) the land \"quaking\" at the sound of the invaders’ horses—a vivid, likely hyperbolic personification of the land reacting in fear; (2) the invaders \"devour\" the land, its fullness, the city and inhabitants—an eating metaphor for conquest and destruction.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִקּוֹל מִצְהֲלוֹת אַבִּירָיו רָעֲשָׁה כָּל־הָאָרֶץ",
+        "english_text": "At the loud neighing of their steeds the whole land quaked.",
+        "target": ["the territory of Judah and its inhabitants", "land and society", "nation under invasion"],
+        "vehicle": ["earth/land trembling like a living being", "seismic shaking", "personified land reacting to noise"],
+        "ground": ["extreme disturbance and fear caused by the approaching army", "instability and upheaval", "overwhelming impact of invasion"],
+        "posture": ["dramatic portrayal of the invasion’s effect", "prophetic vividness", "heightened, hyperbolic description"],
+        "explanation": "The land is personified as quaking at the sound of the invaders’ horses; this hyperbolic image underscores how profoundly the invasion will shake the country.",
+        "confidence": 0.87
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיָּבֹאוּ וַיֹּאכְלוּ אֶרֶץ וּמְלוֹאָהּ עִיר וְיֹשְׁבֵי בָהּ",
+        "english_text": "They came and devoured the land and what was in it, the town and those who dwelt in it.",
+        "target": ["the invading army’s acts of conquest and plunder", "military destruction", "impact of enemy forces on Judah"],
+        "vehicle": ["devouring the land, its fullness, the city, and inhabitants", "eating/consuming food", "predatory feeding imagery"],
+        "ground": ["total consumption and destruction of resources and people", "insatiable and violent appropriation", "leaving nothing intact or untouched"],
+        "posture": ["condemnation of invaders as rapacious", "warning of total devastation", "prophetic visualization of judgment"],
+        "explanation": "Conquest and plunder are depicted as devouring the land and its residents like food, highlighting the thoroughness and violence of the invasion.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 8:17",
+    "deliberation": "The promised \"serpents, adders that cannot be charmed\" function as a vivid metaphor for dangerous, uncontrollable agents of judgment (most naturally the invading enemies), biting the people. The snake image works figuratively even if there is also a literal threat.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מְשַׁלֵּחַ בָּכֶם נְחָשִׁים צִפְעֹנִים אֲשֶׁר אֵין־לָהֶם לָחַשׁ וְנִשְּׁכוּ אֶתְכֶם",
+        "english_text": "I will send serpents against you, adders that cannot be charmed, and they shall bite you",
+        "target": ["the hostile forces or afflictions sent in judgment", "agents of divine punishment", "Babylonian invaders or analogous threats"],
+        "vehicle": ["venomous serpents and adders that cannot be charmed", "dangerous wild animals", "uncontrollable, biting creatures"],
+        "ground": ["sudden, painful, potentially lethal harm that cannot be averted", "uncontrollability and fear", "inescapable injury from small but deadly agents"],
+        "posture": ["threatening oracle", "vivid warning image", "intensification of prior invasion imagery"],
+        "explanation": "Enemies or afflictions sent by God are depicted as venomous snakes that cannot be charmed away, emphasizing the painful and inevitable nature of the coming judgment.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 8:18",
+    "deliberation": "The main figurative element is the depiction of the heart as \"sick\" within the speaker—emotional anguish rendered as physical illness, with the heart used metonymically for the inner self.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עָלַי לִבִּי דַוָּי",
+        "english_text": "My heart is sick within me",
+        "target": ["the speaker’s inner emotional state", "grief and anguish", "prophetic/ divine sorrow over the people"],
+        "vehicle": ["a physically sick heart", "bodily illness", "organ afflicted with disease"],
+        "ground": ["deep, debilitating inner distress analogous to physical sickness", "weakness, pain, and heaviness", "disrupted well-being"],
+        "posture": ["empathetic lament", "emotional self-disclosure in the oracle", "solidarity with the suffering people"],
+        "explanation": "The speaker’s profound grief is portrayed as a sick heart, using bodily illness as a metaphor and \"heart\" as a metonym for the inner person.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 8:19",
+    "deliberation": "Two figurative elements recur: (1) \"the daughter of my people\" as a personification of the nation; (2) \"alien vanities\" (literally breaths/vapors) as a metaphor for the idols’ emptiness and worthlessness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה־קוֹל שַׁוְעַת בַּת־עַמִּי מֵאֶרֶץ מַרְחַקִּים",
+        "english_text": "Hark! The outcry of the daughter of my people from a distant land",
+        "target": ["the exiled or suffering people of Judah", "national community", "covenant people in distress"],
+        "vehicle": ["a daughter crying out from far away", "female child’s lament", "familial personification"],
+        "ground": ["vulnerability, dependency, and pain calling for response", "familial bond between speaker and people", "pathos of exile as a child far from home"],
+        "posture": ["compassionate yet accusatory divine stance", "lament frame within judgment speech", "familial covenant rhetoric"],
+        "explanation": "The nation is again personified as a daughter crying out from exile, heightening the emotional impact of their suffering and estrangement.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בִּפְסִלֵיהֶם בְּהַבְלֵי נֵכָר",
+        "english_text": "with their images, with alien futilities (literally: foreign vanities/breaths)",
+        "target": ["the idols and foreign cult objects they worship", "false gods", "rival religious allegiances"],
+        "vehicle": ["\"vanities\" / breaths / vapors", "insubstantial, fleeting phenomena", "empty air imagery"],
+        "ground": ["worthlessness, powerlessness, and insubstantiality of idols", "transience and emptiness", "contrast with the solid reality of YHWH"],
+        "posture": ["contemptuous characterization of idolatry", "polemic against foreign cults", "theological derision"],
+        "explanation": "Idols are called \"vanities\" (breaths), metaphorically portraying them as insubstantial nothings, emphasizing their futility.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 8:20",
+    "deliberation": "The proverb-like saying mentions harvest and summer as past without salvation. While it may recall literal agricultural cycles, it functions as a temporal metaphor for the passing of all expected windows of deliverance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָבַר קָצִיר כָּלָה קָיִץ וַאֲנַחְנוּ לֹא נוֹשָׁעְנוּ",
+        "english_text": "Harvest is past, summer is gone, but we have not been saved.",
+        "target": ["the hoped-for occasions of deliverance for the people", "opportunities for rescue", "historical chances for salvation"],
+        "vehicle": ["the agricultural seasons of harvest and summer passing", "fixed temporal windows in the year", "times associated with plenty and completion"],
+        "ground": ["all expected times for help have come and gone without result", "finality and irreversibility of missed opportunities", "sense of belatedness and despair"],
+        "posture": ["resigned lament", "proverbial summary of hopelessness", "collective voice of disappointment"],
+        "explanation": "The passing of harvest and summer symbolizes that all anticipated periods of rescue are over, yet salvation has not come.",
+        "confidence": 0.83
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 8:21",
+    "deliberation": "Again the nation is portrayed as \"the daughter of my people\" with a \"shattering/breaking,\" and the speaker says \"I am shattered.\" This extends the bodily-breakage metaphor: national catastrophe and the speaker’s grief are depicted as physical fracture.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עַל־שֶׁבֶר בַּת־עַמִּי הָשְׁבָּרְתִּי",
+        "english_text": "Because my people is shattered, I am shattered",
+        "target": ["the catastrophic condition of Judah and the speaker’s grief", "national disaster and prophetic response", "state of the covenant community and its representative"],
+        "vehicle": ["shattering/breaking of a body or object", "physical fracture", "damage beyond easy repair"],
+        "ground": ["deep, painful, and possibly irreparable damage", "shared suffering between people and prophet", "intensity of emotional and communal trauma"],
+        "posture": ["empathetic identification with the people’s fate", "lamenting solidarity", "prophetic pathos"],
+        "explanation": "The people’s calamity and the prophet’s grief are pictured as physical shattering, with the nation again personified as a daughter, highlighting severity of suffering.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 8:22",
+    "deliberation": "The questions about balm in Gilead, a physician, and healing for the daughter of my people create an extended medical metaphor: spiritual/political restoration is framed as medical treatment and recovery for a patient-nation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַצֳּרִי אֵין בְּגִלְעָד אִם־רֹפֵא אֵין שָׁם כִּי מַדּוּעַ לֹא עָלְתָה אֲרֻכַת בַּת־עַמִּי",
+        "english_text": "Is there no balm in Gilead? Can no physician be found? Why has healing not yet come to my poor people?",
+        "target": ["the restoration and relief of Judah’s broken condition", "national/spiritual healing", "resolution of covenant crisis"],
+        "vehicle": ["balm, physician, and medical healing for a patient (the daughter of my people)", "therapeutic treatment and cure", "clinical care of a sick person"],
+        "ground": ["the people’s condition is like an illness needing expert treatment", "apparent lack of effective remedy despite renowned resources", "continuing sickness indicates unresolved sin/judgment"],
+        "posture": ["sorrowful questioning of the absence of restoration", "lament framed in medical terms", "indirect indictment of false remedies"],
+        "explanation": "Gilead’s balm and a physician symbolize effective means of healing, applied metaphorically to the nation personified as a daughter who has not yet recovered.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 8:23",
+    "deliberation": "The verse uses striking hyperbolic metaphors: wishing the head were water and the eyes a fountain of tears to enable unceasing weeping for the slain of the daughter of my people. The impossibility underscores the intensity of grief.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִי־יִתֵּן רֹאשִׁי מַיִם וְעֵינִי מְקוֹר דִּמְעָה וְאֶבְכֶּה יוֹמָם וָלַיְלָה",
+        "english_text": "Oh, that my head were water, my eyes a fount of tears! Then would I weep day and night",
+        "target": ["the speaker’s capacity for mourning over the slain of the people", "emotional response to national tragedy", "prophetic/ divine grief"],
+        "vehicle": ["a head made of water and eyes as a spring/fountain of tears", "inexhaustible water source", "physical transformation enabling constant outpouring"],
+        "ground": ["desire for limitless ability to weep, matching the scale of loss", "continuous, abundant expression of sorrow", "grief beyond normal human capacity"],
+        "posture": ["intense lament", "exaggerated wish expressing overwhelming sorrow", "prophetic solidarity with the slain"],
+        "explanation": "By imagining a head of water and eyes as a fountain, the speaker hyperbolically expresses a desire to weep without ceasing for the nation’s dead.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]

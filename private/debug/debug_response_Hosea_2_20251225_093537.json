@@ -1,0 +1,860 @@
+[
+  {
+    "verse": 1,
+    "reference": "Hosea 2:1",
+    "deliberation": "I looked for explicit comparison markers (כ, 'like'), kinship metaphors, and possible hyperbole. Found a clear simile with exaggeration (Israel's number like uncountable sand) and a covenant-sonship metaphor in 'sons of the living God.' Considered 'Not-My-People' only as a naming formula, not an additional figure here.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִסְפַּר בְּנֵי־יִשְׂרָאֵל כְּחוֹל הַיָּם אֲשֶׁר לֹא־יִמַּד וְלֹא יִסָּפֵר",
+        "english_text": "The number of the people of Israel shall be like that of the sands of the sea, which cannot be measured or counted",
+        "target": ["the future population of Israel", "national size and vitality", "covenant community"],
+        "vehicle": ["sand of the sea that cannot be measured or counted", "innumerable grains", "natural world"],
+        "ground": ["innumerability and abundance", "overwhelming quantity", "quantitative description"],
+        "posture": ["assuring promise of restoration and blessing", "positive evaluative stance", "theological hope"],
+        "explanation": "Israel’s future numbers are compared to the uncountable sand of the sea, an explicit simile that also hyperbolically stresses their innumerable increase.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יֵאָמֵר לָהֶם בְּנֵי אֵל־חָי",
+        "english_text": "they shall be called Children-of-the-Living-God",
+        "target": ["Israel’s covenant status", "identity/relationship", "covenant community"],
+        "vehicle": ["sons/children in a family", "kinship role", "human family relations"],
+        "ground": ["intimacy, belonging, dependence, protection", "qualities of filial relationship", "social-relational"],
+        "posture": ["restorative, affectionate redefinition of status", "positive, relational stance", "theological covenant renewal"],
+        "explanation": "Calling Israel 'children of the living God' uses familial kinship as a metaphor for covenant relationship and intimate belonging, not literal biological descent.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Hosea 2:2",
+    "deliberation": "I examined 'one head' for body-part imagery and 'day of Jezreel' for symbolic naming. 'One head' clearly uses a body part for leadership. 'Day of Jezreel' treats the name/place as a label for a future decisive time. 'Rise from the land' may allude to exodus or resurrection, but can also be taken literally (return), so I did not treat it as a separate clear figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְשָׂמ֥וּ לָהֶ֛ם רֹאשׁ אֶחָד",
+        "english_text": "and appoint one head over them",
+        "target": ["the unified political/spiritual leader of reunited Israel-Judah", "leadership office", "national governance"],
+        "vehicle": ["'head' of a body", "body part representing the directing organ", "human anatomy"],
+        "ground": ["guidance, authority, coordination", "functions of the physical head for the body", "control/authority dynamics"],
+        "posture": ["positive vision of unified leadership", "hopeful political-spiritual stance", "restoration ideology"],
+        "explanation": "The leader is called 'one head', using the body part metonymically and metaphorically for the person who directs the whole corporate 'body' of the people.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי גָדוֹל יוֹם יִזְרְעֶאל",
+        "english_text": "for great shall be the day of Jezreel",
+        "target": ["the future decisive time of God's intervention with Israel", "historical event/time", "eschatological or restoration moment"],
+        "vehicle": ["'day of Jezreel' (name of place/child)", "symbolic proper name", "geographical/name symbol"],
+        "ground": ["association of Jezreel with God's sowing/judgment and now restoration", "a named moment signifying divine action", "symbolic re-interpretation of history"],
+        "posture": ["reversal from earlier judgment to a positive 'great' day", "optimistic reinterpretive stance", "prophetic promise"],
+        "explanation": "The phrase 'day of Jezreel' uses the charged name 'Jezreel' metonymically for a future time when God will act, turning a symbol of judgment into one of restoration.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Hosea 2:3",
+    "deliberation": "I considered whether 'brothers' and 'sisters' are strictly literal (Hosea’s children) or figurative for fellow Israelites, and how the symbolic names function. The sibling terms generalize to the community, and the names themselves stand for restored statuses, so I classified one kinship metaphor and one metonymy of names.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִמְרוּ לַאֲחֵיכֶם ... וְלַאֲחוֹתֵיכֶם",
+        "english_text": "Oh, call your brothers ... And your sisters",
+        "target": ["fellow members of Israel", "social relationship among the people", "covenant community"],
+        "vehicle": ["brothers and sisters in a family", "sibling kinship", "human family relations"],
+        "ground": ["solidarity, shared origin, mutual obligation", "qualities of sibling relationships", "social-relational"],
+        "posture": ["invitation to restored familial closeness among God's people", "positive, reconciliatory stance", "community-building"],
+        "explanation": "Addressing fellow Israelites as 'brothers' and 'sisters' employs family kinship metaphorically to frame the community as one household under God.",
+        "confidence": 0.8
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַמִּי ... רֻחָמָה",
+        "english_text": "\"My People\" and \"Lovingly Accepted\"",
+        "target": ["Israel’s restored covenant status (belonging and mercy)", "spiritual condition", "covenant relationship"],
+        "vehicle": ["the proper names 'Ammi' and 'Ruhamah'", "labels/titles", "linguistic signs"],
+        "ground": ["the names encapsulate the new relationship (belonging and compassion)", "a part (name) stands for the whole status", "symbolic naming"],
+        "posture": ["pronouncement of favor and inclusion", "positive evaluative stance", "theological restoration"],
+        "explanation": "The names 'Ammi' ('My People') and 'Ruhamah' ('Shown Mercy') function metonymically: the names themselves stand for and enact the renewed relationship and divine attitude toward the people.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Hosea 2:4",
+    "deliberation": "I viewed this within Hosea’s extended marriage allegory. 'Mother' and 'wife' transparently stand for Israel, and 'whoredom' and 'adultery' for idolatry. Thus, there is a core marriage metaphor and a more specific sexual/whoredom metaphor for religious unfaithfulness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רִיבוּ בְאִמְּכֶם רִיבוּ כִּי־הִיא לֹא אִשְׁתִּי וְאָנֹכִי לֹא אִישָׁהּ",
+        "english_text": "Remonstrate your mother … For she is not My wife And I am not her husband",
+        "target": ["the relationship between YHWH and Israel", "covenant bond", "divine–human relationship"],
+        "vehicle": ["husband–wife relationship with threatened divorce", "marital status", "human marriage"],
+        "ground": ["exclusive commitment, fidelity, legal bond, and its rupture", "shared features of marriage and covenant", "relational/juridical parallels"],
+        "posture": ["judicial, confrontational stance toward Israel’s unfaithfulness", "negative evaluation of betrayal", "covenant lawsuit imagery"],
+        "explanation": "God’s covenant with Israel is cast as a marriage; declaring 'she is not my wife' metaphorically frames the covenant as being suspended or broken due to unfaithfulness.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְתָסֵר זְנוּנֶיהָ מִפָּנֶיהָ וְנַאֲפוּפֶיהָ מִבֵּין שָׁדֶיהָ",
+        "english_text": "And let her put away her whoredom from her face And her adultery from between her breasts",
+        "target": ["Israel’s idolatrous practices and visible symbols of cultic loyalty", "religious behavior", "covenant faithfulness"],
+        "vehicle": ["acts and adornments of a prostitute/adulteress", "sexual infidelity", "human sexual morality"],
+        "ground": ["unfaithfulness, shameless display, intimate betrayal", "shared moral quality of betrayal", "ethical-religious parallels"],
+        "posture": ["demand for visible repentance and removal of idolatrous 'ornaments'", "strong disapproval of idolatry", "prophetic rebuke"],
+        "explanation": "The 'whoredom' on her face and 'adultery between her breasts' describe Israel’s idolatry and public shame using the imagery of an unfaithful and provocatively adorned woman.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Hosea 2:5",
+    "deliberation": "I distinguished between the nakedness/birth imagery and the wilderness/drought imagery. Both belong to the wife metaphor but function as separate pictures: one of stripping and humiliation, the other of desolation like a wilderness, including hyperbolic 'die of thirst.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פֶּן־אַפְשִׁיטֶנָּה עֲרֻמָּה וְהִצַּגְתִּיהָ כְּיוֹם הִוָּלְדָהּ",
+        "english_text": "Else will I strip her naked And leave her as on the day she was born",
+        "target": ["Israel’s social and religious status, including protection and honor", "national condition", "covenant people"],
+        "vehicle": ["a woman stripped bare, like a newborn", "utter physical nakedness and vulnerability", "human life-cycle/embodiment"],
+        "ground": ["total deprivation, exposure, loss of dignity and protection", "shared notion of defenselessness", "social-honor parallels"],
+        "posture": ["threat of radical humiliation and removal of all gifts", "judgmental stance", "covenant curse imagery"],
+        "explanation": "God threatens to remove Israel’s blessings so completely that she will be like a newborn naked child, a metaphorical picture of total exposure and disgrace, expressed in hyperbolic terms.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשַׂמְתִּיהָ כַמִּדְבָּר וְשַׁתִּהָ כְּאֶרֶץ צִיָּה וַהֲמִתִּיהָ בַּצָּמָא",
+        "english_text": "And I will make her like a wilderness, Render her like desert land, And let her die of thirst",
+        "target": ["Israel’s land and life conditions", "national prosperity and survival", "covenant community in its environment"],
+        "vehicle": ["a wilderness / desert land bringing death by thirst", "arid, lifeless terrain", "natural geography"],
+        "ground": ["barrenness, lack of sustenance, threat of death", "shared idea of extreme desolation", "economic-agricultural vulnerability"],
+        "posture": ["severe warning of catastrophic deprivation", "strongly negative, punitive stance", "curse/judgment imagery"],
+        "explanation": "Israel is compared to a wilderness and parched land, a simile picturing utter desolation, intensified by the hyperbolic threat that she will 'die of thirst,' representing extreme judgment and loss of life-sustaining resources.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Hosea 2:6",
+    "deliberation": "I checked whether 'children' is literal or symbolic. Within Hosea’s allegory, 'children of whoredom' characterizes Israel’s members as sharing in the mother’s unfaithfulness. This is an evaluative metaphor, not just a biological description.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־בְנֵי זְנוּנִים הֵמָּה",
+        "english_text": "For they are now a whore’s brood",
+        "target": ["the individual Israelites aligned with idolatry", "moral-spiritual character of the people", "covenant members"],
+        "vehicle": ["children born of prostitution", "offspring of a whore", "family background imagery"],
+        "ground": ["inherited stigma, participation in a corrupt origin, likeness to an unfaithful mother", "moral continuity", "ethical-religious parallels"],
+        "posture": ["sharply condemnatory depiction of the people", "negative moral judgment", "prophetic denunciation"],
+        "explanation": "Calling them 'children of whoredom' metaphorically portrays the people as morally and religiously shaped by the nation’s idolatrous 'mother,' emphasizing their complicity.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Hosea 2:7",
+    "deliberation": "I separated the general statement about the mother’s whoring from her inner speech about chasing 'lovers.' Both function within the marriage/prostitution metaphor for idolatry, but one focuses on character, the other on pursuit of false providers.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי זָנְתָה אִמָּם הֹבִישָׁה הוֹרָתָם",
+        "english_text": "In that their mother has played the whore, She that conceived them has acted shamelessly",
+        "target": ["Israel as a corporate entity ('mother')", "national religious conduct", "covenant community"],
+        "vehicle": ["a woman engaging in prostitution and shameless behavior", "sexual immorality", "human sexual conduct"],
+        "ground": ["unfaithfulness, moral shame, violation of exclusive loyalty", "shared idea of betrayal", "ethical/religious infidelity"],
+        "posture": ["public accusation of disgraceful behavior", "strong negative moral stance", "covenant lawsuit tone"],
+        "explanation": "Israel’s idolatry is presented as the behavior of a mother who 'plays the whore,' a metaphor capturing the shameless and repeated nature of her unfaithfulness.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֵלְכָה אַחֲרֵי מְאַהֲבַי נֹתְנֵי לַחְמִי וּמֵימַי צַמְרִי וּפִשְׁתִּי שַׁמְנִי וְשִׁקּוּיָי",
+        "english_text": "“I will go after my lovers, Who supply my bread and my water, My wool and my linen, My oil and my drink.”",
+        "target": ["Israel’s pursuit of idols or foreign allies as sources of provision", "religious-political dependence", "covenant loyalty/misplaced trust"],
+        "vehicle": ["a woman chasing her lovers who pay her and provide for her", "prostitute’s clients/lovers", "erotic/economic relationships"],
+        "ground": ["seeking support and benefits through illicit, unfaithful relationships", "misdirected dependence", "economic-religious betrayal"],
+        "posture": ["critical of Israel’s misattribution of provision to idols/allies", "negative, ironic stance (she thinks they provide)", "prophetic rebuke"],
+        "explanation": "The 'lovers' symbolize idols or foreign patrons whom Israel pursues for material provision, using prostitution imagery to condemn this misplaced trust and affection.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Hosea 2:8",
+    "deliberation": "I checked whether 'hedge with thorns' and 'wall up her wall' could be literal. Given the context of blocking her pursuit of lovers, they functions as a road/obstacle metaphor, not literal horticulture or masonry.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לָכֵן הִנְנִי־שָׂךְ אֶת־דַּרְכֵּךְ בַּסִּירִים וְגָדַרְתִּי אֶת־גְּדֵרָהּ וּנְתִיבוֹתֶיהָ לֹא תִמְצָא",
+        "english_text": "Assuredly, I will hedge up her roads with thorns And raise walls against her, And she shall not find her paths.",
+        "target": ["Israel’s options and attempts to seek idols/alliances", "national choices and strategies", "covenant behavior"],
+        "vehicle": ["roads blocked by thorn-hedges and walls where paths cannot be found", "impassable way", "physical travel/obstacle imagery"],
+        "ground": ["frustration of movement, prevention of reaching desired destinations", "shared notion of blockage", "experiential obstacle schema"],
+        "posture": ["disciplinary restriction intended to halt unfaithful pursuits", "severe but ultimately corrective stance", "divine intervention in human plans"],
+        "explanation": "God depicts His thwarting of Israel’s pursuit of 'lovers' as hedging her way with thorns and walling her in, an idiomatic metaphor for blocking and frustrating her plans.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Hosea 2:9",
+    "deliberation": "I kept the pursuit of 'lovers' and the return to the 'first husband' as two related but distinct images: the first shows frustrated chasing of idols, the second a volitional return to YHWH as husband, within the same marriage metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְרִדְּפָה אֶת־מְאַהֲבֶיהָ וְלֹא־תַשִּׂיג אֹתָם וּבִקְשָׁתַם וְלֹא תִמְצָא",
+        "english_text": "Pursue her lovers as she will, She shall not overtake them; And seek them as she may, She shall never find them.",
+        "target": ["Israel’s efforts to gain help/benefit from idols and foreign powers", "religious-political strategies", "covenant unfaithfulness"],
+        "vehicle": ["a woman chasing after her lovers but unable to reach or find them", "failed erotic pursuit", "human romantic/sexual behavior"],
+        "ground": ["fruitless striving, unmet expectations, frustrated desire", "shared experience of pursuit without attainment", "psychological and relational frustration"],
+        "posture": ["portrays her pursuit as doomed and foolish", "critical, warning stance", "divine judgment that undercuts idolatrous plans"],
+        "explanation": "Her attempts to rely on idols or patrons are likened to a woman running after lovers she can never catch, highlighting the futility of such pursuits.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֵלְכָה וְאָשׁוּבָה אֶל־אִישִׁי הָרִאשׁוֹן כִּי טוֹב לִי אָז מֵעָתָּה",
+        "english_text": "Then she will say, “I will go and return To my first husband, For then I fared better than now.”",
+        "target": ["Israel’s repentance and return to YHWH", "restored covenant relationship", "spiritual turning"],
+        "vehicle": ["a wife deciding to return to her original husband after failed affairs", "marital reconciliation", "human marriage dynamics"],
+        "ground": ["recognition of prior goodness, decision to restore original exclusive relationship", "shared relational logic of returning to a faithful partner", "emotional and volitional change"],
+        "posture": ["hopeful anticipation of repentance", "positive, restorative outlook", "divine desire for renewed relationship"],
+        "explanation": "The decision to 'return to my first husband' metaphorically represents Israel’s repentance and re-embrace of YHWH after disillusionment with her 'lovers.'",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Hosea 2:10",
+    "deliberation": "I checked whether 'grain, wine, and oil; silver and gold' are purely literal or serve as a stock list for comprehensive blessing. The triad is a typical shorthand for overall agricultural prosperity and luxury, making it a metonymic catalog.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הַדָּגָן וְהַתִּירוֹשׁ וְהַיִּצְהָר וְכֶסֶף ... וְזָהָב",
+        "english_text": "the new grain and wine and oil; ... silver ... and gold",
+        "target": ["Israel’s total material prosperity and provision", "economic condition", "covenant blessings"],
+        "vehicle": ["the named staples and precious metals", "key agricultural products and wealth items", "economic goods"],
+        "ground": ["representative items standing for the broader set of blessings", "a part representing the whole", "synecdochic cataloging"],
+        "posture": ["emphasizes God as the true source of all prosperity", "corrective theological stance", "anti-idolatry polemic"],
+        "explanation": "The list 'grain, wine, oil, silver, and gold' functions metonymically as a stock list of God-given material blessings, standing for Israel’s overall prosperity, which she misattributes to Baal.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Hosea 2:11",
+    "deliberation": "I considered whether the removal of grain and wine is purely literal (famine) and saw it as such, but the 'wool and linen' that cover her nakedness clearly develop the wife metaphor, with 'nakedness' as shame and vulnerability.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהִצַּלְתִּי צַמְרִי וּפִשְׁתִּי לְכַסּוֹת אֶת־עֶרְוָתָהּ",
+        "english_text": "And I will snatch away My wool and My linen That serve to cover her nakedness.",
+        "target": ["Israel’s honor, security, and God-given protection", "social-religious standing", "covenant privileges"],
+        "vehicle": ["clothing that covers a woman’s nakedness", "wool and linen garments", "material covering"],
+        "ground": ["provision that conceals shame and vulnerability", "shared idea of protective and honor-giving covering", "social-symbolic function of clothing"],
+        "posture": ["threat to expose her by withdrawing protective gifts", "judgmental, disciplinary stance", "covenant curse imagery"],
+        "explanation": "God’s removal of 'wool and linen' that cover her nakedness metaphorically signifies stripping Israel of the protection and honor He had provided, leaving her exposed to shame.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Hosea 2:12",
+    "deliberation": "I identified 'uncover her shame' as metaphorical exposure of sin within the marriage image, and 'from my hand' as the standard metonymic idiom for power or control, not the literal physical hand.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֲגַלֶּה אֶת־נַבְלֻתָהּ לְעֵינֵי מְאַהֲבֶיהָ",
+        "english_text": "Now will I uncover her shame In the very sight of her lovers",
+        "target": ["Israel’s hidden guilt and disgrace", "moral-spiritual condition", "covenant faithfulness"],
+        "vehicle": ["a woman’s indecency/shame being uncovered before her lovers", "public exposure of nakedness", "human honor/shame scenario"],
+        "ground": ["public humiliation, removal of concealment, exposure to contempt", "shared notion of bringing hidden disgrace to light", "social-honor dynamics"],
+        "posture": ["threat of publicly exposing Israel’s unfaithfulness", "severe, punitive stance", "prophetic warning"],
+        "explanation": "To 'uncover her shame' before her lovers metaphorically describes God’s act of making Israel’s sin and disgrace publicly visible, especially before the powers she sought.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאִישׁ לֹא־יַצִּילֶנָּה מִיָּדִי",
+        "english_text": "And none shall save her from Me (lit. from My hand).",
+        "target": ["God’s irresistible power over Israel’s fate", "ability to execute judgment", "divine sovereignty"],
+        "vehicle": ["God’s 'hand' from which none can rescue", "physical hand as instrument of control", "human bodily power imagery"],
+        "ground": ["control, grasp, power to retain or release", "shared concept of the hand as seat of power", "agency and dominance"],
+        "posture": ["assertion of inescapable divine authority", "strong, uncompromising stance", "judicial sovereignty"],
+        "explanation": "The phrase 'from My hand' is an idiomatic metonymy in which the hand stands for God’s power and control; no one can deliver her from His decisive grasp.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Hosea 2:13",
+    "deliberation": "I examined 'end all her rejoicing' and the list of festivals. These appear to be straightforward descriptions of terminating literal cultic celebrations and not metaphorical; no personification or comparison is invoked.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Hosea 2:14",
+    "deliberation": "I checked whether the devastation of vines and fig trees is literal judgment or figurative. That can be literal. The clause where she calls them 'my hire' from lovers clearly continues the prostitution metaphor, mapping agricultural bounty to a prostitute’s wages.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁר אָמְרָה אֶתְנָה הֵמָּה לִי אֲשֶׁר נָתְנוּ־לִי מְאַהֲבָי",
+        "english_text": "Which she thinks are a fee She received from her lovers",
+        "target": ["Israel’s perception and misuse of her agricultural abundance", "interpretation of blessings", "religious-economic mindset"],
+        "vehicle": ["a prostitute’s hire/fee received from lovers", "payment for sexual services", "economic aspect of prostitution"],
+        "ground": ["viewing gifts as wages from illicit partners, not as gracious provision", "shared notion of payment for unfaithfulness", "moral-economic distortion"],
+        "posture": ["exposes Israel’s sordid misreading of God’s gifts", "critical, ironic stance", "anti-idolatry polemic"],
+        "explanation": "Israel’s vines and fig trees are called 'my fee' from my lovers, using prostitution wage imagery to portray how she views God’s blessings as payments from her idols or allies.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Hosea 2:15",
+    "deliberation": "I noted two figurative elements: 'days of the Baals' as a shorthand for idol-festivals, and yet again 'going after lovers' as the now familiar metaphor for pursuing idols/other allegiances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "יְמֵי הַבְּעָלִים אֲשֶׁר תַּקְטִיר לָהֶם",
+        "english_text": "the days of the Baalim, On which she brought them offerings",
+        "target": ["Israel’s periods of idolatrous worship", "cultic practices", "religious life"],
+        "vehicle": ["'days of the Baals' marked by incense offerings", "festival times labeled by the gods' names", "calendar terminology"],
+        "ground": ["a time-period representing the practice and lifestyle of idolatry", "time standing for activity", "ritualized devotion"],
+        "posture": ["declares those festal periods culpable", "negative evaluative stance", "judgment on idol-focused worship"],
+        "explanation": "'Days of the Baals' uses the name of the deities metonymically to label the festal times and ritual activity devoted to them, which God will punish.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַתֵּלֶךְ אַחֲרֵי מְאַהֲבֶיהָ וְאֹתִי שָׁכְחָה",
+        "english_text": "She would go after her lovers, Forgetting Me",
+        "target": ["Israel’s pursuit of idols or other protecting powers at the expense of YHWH", "religious-political allegiance", "covenant loyalty"],
+        "vehicle": ["a woman going after her lovers, neglecting her rightful partner", "adulterous pursuit", "human romantic/sexual conduct"],
+        "ground": ["active seeking of alternative partners and disregard of the rightful spouse", "shared notion of relational betrayal", "emotional and covenant infidelity"],
+        "posture": ["strong disapproval and grief at being forgotten", "negative, wounded stance", "prophetic lament and accusation"],
+        "explanation": "Israel’s idolatrous and political pursuits are again cast as an adulterous wife going after her lovers and forgetting her legitimate husband, YHWH.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Hosea 2:16",
+    "deliberation": "Within the same marriage framework, 'I will allure her' clearly uses courting language for divine initiative. 'Speak to her heart' is a well-known Hebrew idiom meaning to comfort or speak kindly, not literally addressing the physical heart.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הִנֵּה אָנֹכִי מְפַתֶּיהָ וְהֹלַכְתִּיהָ הַמִּדְבָּר",
+        "english_text": "Assuredly, I will speak coaxingly to her And lead her through the wilderness",
+        "target": ["God’s restorative dealings with Israel after judgment", "process of reconciliation", "divine–human relationship"],
+        "vehicle": ["a man alluring and leading his estranged wife to a secluded place", "romantic wooing in the wilderness", "human courtship and reconciliation"],
+        "ground": ["gentle persuasion, renewed intimacy, private encounter", "shared dynamics of wooing and reconciliation", "relational renewal"],
+        "posture": ["tender, restorative approach after prior judgment", "positive, hopeful stance", "love seeking reconciliation"],
+        "explanation": "God describes Himself as 'alluring' Israel and leading her into the wilderness, using romantic-wooing imagery for His initiative to restore the broken relationship.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְדִבַּרְתִּי עַל־לִבָּהּ",
+        "english_text": "And speak to her tenderly (lit. 'to her heart')",
+        "target": ["God’s mode of communication with restored Israel", "quality of divine speech", "covenant comfort"],
+        "vehicle": ["speaking to someone’s heart as opposed to merely to the ears", "address to inner self", "human emotional life"],
+        "ground": ["consolation, affection, persuasion at the deepest level", "shared idea of heartfelt communication", "psychological-emotional connection"],
+        "posture": ["gentle, consoling, affectionate stance", "positive pastoral tone", "reassuring promise"],
+        "explanation": "The idiom 'speak to her heart' metaphorically depicts God’s speech as reaching Israel’s inner being with comfort and tenderness, not just delivering information.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Hosea 2:17",
+    "deliberation": "I focused on 'Valley of Achor' turned into a 'door of hope' (a clear spatial metaphor with wordplay) and on 'days of her youth'/'day of coming up from Egypt', which metaphorically present the nation’s early covenant history as youthful days of the bride.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֶת־עֵמֶק עָכוֹר לְפֶתַח תִּקְוָה",
+        "english_text": "And the Valley of Achor as a door of hope",
+        "target": ["the future experience of restoration arising from a place of prior judgment", "national destiny", "covenant history"],
+        "vehicle": ["a valley named 'Trouble' becoming a 'door' of hope", "gateway image", "topographical and architectural imagery"],
+        "ground": ["transition point from trouble to hope, an opening into a new, favorable situation", "shared idea of an entrance leading to a new state", "spatiotemporal change"],
+        "posture": ["optimistic reversal of earlier judgment", "hopeful, redemptive stance", "theology of transformation"],
+        "explanation": "The historically troubled 'Valley of Achor' is reimagined as a 'door of hope,' a metaphor (with metonymy of place for event) for God turning a site of judgment into an entrance into renewed blessing.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְעָנְתָה שָּׁמָּה כִּימֵי נְעוּרֶיהָ וּכְיוֹם עֲלוֹתָהּ מֵאֶרֶץ־מִצְרָיִם",
+        "english_text": "There she shall respond as in the days of her youth, When she came up from the land of Egypt.",
+        "target": ["Israel’s restored response to God in the future", "worshipful relationship", "covenant experience"],
+        "vehicle": ["the bride’s 'days of youth' and the 'day of coming up from Egypt'", "youthful love and first deliverance", "human life stages and historical event"],
+        "ground": ["freshness, early devotion, formative liberation experience", "shared sense of first love/first salvation", "temporal and emotional beginnings"],
+        "posture": ["longing for a renewal of early, vibrant devotion", "positive, nostalgic stance", "hope for restored intimacy"],
+        "explanation": "Israel’s future response is likened to the 'days of her youth' and 'the day she came up from Egypt,' metaphorically casting the exodus and early devotion as the youthful days of a bride to be re-enacted in restoration.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Hosea 2:18",
+    "deliberation": "I saw here a concentrated play on marital terms: 'Ishi' (my husband) versus 'Baali' (my Baal/my master). The shift names God as husband rather than Baal/master, clearly extending the marriage metaphor and rejecting Baal terminology.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "תִּקְרְאִי אִישִׁי וְלֹא־תִקְרְאִי־לִי עוֹד בַּעְלִי",
+        "english_text": "You will call [Me] Ishi, And no more will you call Me Baali.",
+        "target": ["Israel’s way of addressing and conceiving of YHWH", "covenant relationship vocabulary", "theological understanding"],
+        "vehicle": ["husband-title 'Ishi' and master/Baal-title 'Baali'", "marital and lordship address", "social titles"],
+        "ground": ["personal, affectionate marital bond vs. ambiguous/masterly Baal-language", "shift from paganized title to intimate spouse-term", "relational quality encoded in naming"],
+        "posture": ["repudiation of Baal-like perceptions and embrace of intimate covenant love", "reforming, purifying stance", "theological reeducation"],
+        "explanation": "God portrays the renewed relationship as Israel calling Him 'my husband' instead of 'my Baal/master,' a marital metaphor and metonymic shift in naming that rejects Baal imagery and stresses intimate covenant love.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Hosea 2:19",
+    "deliberation": "I looked at 'remove the names from her mouth' and 'never remembered by name' as idiomatic; the 'names' stand for the gods/cults, and the 'mouth' for speech. This is metonymic language for eliminating the cult from Israel’s discourse and memory.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַהֲסִרֹתִי אֶת־שְׁמוֹת הַבְּעָלִים מִפִּיהָ וְלֹא־יִזָּכְרוּ עוֹד בִּשְׁמָם",
+        "english_text": "For I will remove the names of the Baalim from her mouth, And they shall nevermore be mentioned by name.",
+        "target": ["the cessation of Baal worship in Israel", "religious allegiance and confession", "cultural memory of idols"],
+        "vehicle": ["names on the lips and in remembrance", "verbal mention and memory", "linguistic-mental presence"],
+        "ground": ["to stop naming is to terminate allegiance and cultural presence", "speech and memory as proxies for worship", "expression representing underlying practice"],
+        "posture": ["total eradication of Baal’s influence", "radically purgative stance", "exclusive devotion to YHWH"],
+        "explanation": "Removing the Baals’ 'names' from her mouth so they are not remembered metonymically describes the elimination of their worship and cultural presence from Israel’s speech and memory.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Hosea 2:20",
+    "deliberation": "I identified three related but distinct images: (1) a 'covenant' with animals—personification and peace imagery; (2) breaking 'bow, sword, and war'—metonymy for warfare, using 'break' metaphorically; and (3) making them 'lie down in safety'—a pastoral resting image applied to the nation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכָרַתִּי לָהֶם בְּרִית ... עִם־חַיַּת הַשָּׂדֶה וְעִם־עוֹף הַשָּׁמַיִם וְרֶמֶשׂ הָאֲדָמָה",
+        "english_text": "I will make a covenant for them with the beasts of the field, the birds of the air, and the creeping things of the ground",
+        "target": ["the establishment of comprehensive peace in creation for Israel’s benefit", "environmental security", "cosmic order around the covenant people"],
+        "vehicle": ["a formal covenant made with animals as if they were parties to a treaty", "treaty-making", "legal-political practice"],
+        "ground": ["stable, non-hostile relations, removal of threat from nature", "shared idea of binding peace arrangement", "shalom extending into the natural world"],
+        "posture": ["vision of holistic peace and harmony", "positive, protective stance", "eschatological hope"],
+        "explanation": "Speaking of a 'covenant' with wild animals personifies them as treaty partners, metaphorically portraying the pacification of creation around Israel so that nature will no longer harm them.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְקֶשֶׁת וְחֶרֶב וּמִלְחָמָה אֶשְׁבּוֹר מִן־הָאָרֶץ",
+        "english_text": "I will also banish (lit. 'break') bow, sword, and war from the land.",
+        "target": ["the cessation of warfare in the land of Israel", "state of peace", "national security"],
+        "vehicle": ["breaking the bow, sword, and even 'war' itself", "destroying weapons", "material instruments of conflict"],
+        "ground": ["removal of capacity and conditions for war", "weapons standing for the practice of war", "disabling violence"],
+        "posture": ["strong commitment to end violent conflict", "positive, peace-establishing stance", "covenant blessing imagery"],
+        "explanation": "The 'bow and sword and war' stand metonymically for armed conflict; to 'break' them is an idiomatic metaphor for abolishing warfare and establishing peace in the land.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהִשְׁכַּבְתִּים לָבֶטַח",
+        "english_text": "Thus I will let them lie down in safety.",
+        "target": ["Israel’s experience of secure peace", "psychological and physical security", "life in the land"],
+        "vehicle": ["lying down safely (as unharmed animals or people at rest)", "rest without fear", "pastoral repose"],
+        "ground": ["absence of danger, ability to sleep/rest undisturbed", "shared sense of security and tranquility", "experiential peace"],
+        "posture": ["tender, protective assurance", "positive, pastoral stance", "shepherd-like care"],
+        "explanation": "Describing the people as 'lying down in safety' uses a pastoral rest image (common for flocks) as a metaphor for living in a state of deep security and peace.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Hosea 2:21",
+    "deliberation": "The repeated 'I will espouse you' uses formal betrothal language for covenant renewal. The 'bride-price' consists of righteousness, justice, steadfast love, and mercy—moral qualities personified as marriage terms, but all under one clear marriage metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֵרַשְׂתִּיךְ לִי לְעוֹלָם וְאֵרַשְׂתִּיךְ לִי בְּצֶדֶק וּבְמִשְׁפָּט וּבְחֶסֶד וּבְרַחֲמִים",
+        "english_text": "And I will espouse you forever: I will espouse you with righteousness and justice, And with goodness and mercy",
+        "target": ["the renewed covenant relationship between YHWH and Israel", "divine–human bond", "spiritual marriage"],
+        "vehicle": ["betrothal/marriage with a bride-price of ethical qualities", "marriage contract", "human nuptial relationship"],
+        "ground": ["exclusive, enduring commitment, secured by pledged goods (here, divine virtues)", "shared structure of marriage and covenant", "relational and legal permanence"],
+        "posture": ["highly positive, affirming permanent commitment", "loving, gracious stance", "covenant grace principle"],
+        "explanation": "God uses marriage language—'I will espouse you'—to depict His everlasting covenant with Israel, with 'righteousness, justice, goodness, and mercy' functioning as the qualities by which He binds Himself.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Hosea 2:22",
+    "deliberation": "This continues the marriage metaphor with 'I will espouse you in faithfulness' and concludes with 'you shall know YHWH,' where 'know' carries covenantal intimacy, not mere cognition, within the same figurative frame.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאֵרַשְׂתִּיךְ לִי בֶּאֱמוּנָה וְיָדַעַתְּ אֶת־יְהוָה",
+        "english_text": "And I will espouse you with faithfulness; Then you shall be devoted to (lit. 'know') GOD.",
+        "target": ["mutual covenant fidelity between God and Israel", "quality of relationship", "spiritual knowledge of God"],
+        "vehicle": ["betrothal in faithfulness and intimate 'knowing' as in a spouse relationship", "marital faithfulness and knowledge", "human marriage and experiential knowing"],
+        "ground": ["exclusive loyalty, intimate acquaintance, experiential relationship", "shared traits of faithful marriage and covenant knowledge of God", "relational depth and fidelity"],
+        "posture": ["promises a deeply faithful, intimate bond", "positive, relational stance", "transformational knowledge of God"],
+        "explanation": "God again uses betrothal imagery and the idiom 'know YHWH' to describe a renewed relationship of faithful, intimate covenant commitment, analogous to a loyal marriage.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Hosea 2:23",
+    "deliberation": "I saw a chain of 'answering' between God, the heavens, and the earth. The sky and earth are personified as responsive partners in a call-and-response pattern, depicting harmonious interaction rather than literal speech.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אֶעֱנֶה אֶת־הַשָּׁמָיִם וְהֵם יַעֲנוּ אֶת־הָאָרֶץ",
+        "english_text": "I will respond to the sky, And it shall respond to the earth",
+        "target": ["the coordinated provision of fertility and blessing for Israel", "cosmic order serving covenant purposes", "environmental response to God’s will"],
+        "vehicle": ["a dialogue or responsive interaction between God, heaven, and earth", "speaking and answering", "personal communication"],
+        "ground": ["interrelated causality portrayed as conversational responsiveness", "shared idea of responsive action/reaction", "relational coordination"],
+        "posture": ["depicts a harmonious, well-ordered creation under God", "positive, orderly stance", "blessing framework"],
+        "explanation": "Heaven and earth are personified as if they 'answer' God and each other, a metaphor for the responsive chain by which divine command brings about fruitful conditions.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Hosea 2:24",
+    "deliberation": "This continues the personified 'answering' chain: the earth answers grain, wine, and oil, and they answer Jezreel. Here both the produce and 'Jezreel' (a symbolic name) are treated as responders, forming one complex personification/metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְהָאָרֶץ תַּעֲנֶה אֶת־הַדָּגָן וְאֶת־הַתִּירוֹשׁ וְאֶת־הַיִּצְהָר וְהֵם יַעֲנוּ אֶת־יִזְרְעֶאל",
+        "english_text": "And the earth shall respond With new grain and wine and oil, And they shall respond to Jezreel.",
+        "target": ["the process by which the land and its produce supply Jezreel/Israel", "fertility cycle serving the people", "material blessing dynamics"],
+        "vehicle": ["earth, grain, wine, oil, and Jezreel engaging in responsive speech", "dialogue among non-human entities", "personal communication imagery"],
+        "ground": ["effective transmission of blessing along a chain, depicted as mutual response", "shared sense of interaction and cooperation", "relational order in creation"],
+        "posture": ["celebrates restored, responsive fertility directed to God's people", "positive, abundant stance", "restoration of favor"],
+        "explanation": "Earth and agricultural products are personified as 'answering' Jezreel (metonymic for the restored people/land), expressing the idea that God’s renewed favor results in a responsive, fruitful environment.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Hosea 2:25",
+    "deliberation": "I distinguished (1) 'I will sow her for Me in the land' as an agricultural metaphor for replanting the people and (2) the reuse of the symbolic names Lo-Ruhamah and Lo-Ammi as metonymies for relational status reversal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּזְרַעְתִּיהָ לִּי בָּאָרֶץ",
+        "english_text": "I will sow her in the land as My own",
+        "target": ["the re-establishment and multiplication of Israel in the land", "national restoration and stability", "covenant people’s future"],
+        "vehicle": ["sowing seed in the soil for a crop", "agricultural planting", "farming practice"],
+        "ground": ["intentional planting leading to rootedness, growth, and fruitfulness", "shared idea of purposeful establishment and multiplication", "agricultural life-cycle"],
+        "posture": ["positively committed to replant and own His people", "hopeful, creative stance", "restorative promise"],
+        "explanation": "God depicts His restoration of Israel as 'sowing her' in the land, a farming metaphor that plays on the name Jezreel and conveys secure re-establishment and future fruitfulness.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְרִחַמְתִּי אֶת־לֹא רֻחָמָה וְאָמַרְתִּי לְלֹא־עַמִּי עַמִּי־אַתָּה וְהוּא יֹאמַר אֱלֹהָי",
+        "english_text": "And take Lo-ruhamah back in favor; And I will say to Lo-ammi, “You are My people,” And he will respond, “[You are] my God.”",
+        "target": ["Israel’s changed covenant status from rejection to acceptance", "restored mutual confession between God and people", "theological identity"],
+        "vehicle": ["the names 'Lo-Ruhamah'/'Lo-Ammi' and their reversal into 'Ruhamah'/'Ammi', plus reciprocal speech", "naming and dialogic confession", "linguistic acts"],
+        "ground": ["names and mutual declarations encapsulate the entire relational shift", "a label and a spoken formula representing identity and belonging", "speech acts as covenant enactment"],
+        "posture": ["emphasizes full reversal of prior judgment into favor and belonging", "strongly positive, reconciliatory stance", "covenant renewal"],
+        "explanation": "The previously negative names 'Lo-Ruhamah' ('Not-Compassioned') and 'Lo-Ammi' ('Not-My-People') are used metonymically; their reversal and the mutual 'You are my people'/'my God' declarations signify complete restoration of the covenant relationship.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

@@ -1,0 +1,1217 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 51:1",
+    "deliberation": "Identified 'rousing a destructive wind against Babylon' (רוּחַ מַשְׁחִית) as metaphorical language for an invading, destructive force stirred up by God; Leb-qamai is a cryptogram, not figurative. No other clear figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "ר֖וּחַ מַשְׁחִֽית",
+        "english_text": "a destructive wind",
+        "target": ["the hostile force God sends against Babylon", "invading army / judgment", "politics/history"],
+        "vehicle": ["destructive wind", "violent atmospheric force", "nature/weather"],
+        "ground": ["suddenness, irresistibility, wide-ranging devastation", "overwhelming destructive impact", "danger/destruction"],
+        "posture": ["negative portrayal of the invasion as a divinely stirred natural catastrophe", "judgment oracle", "rhetorical/theological"],
+        "explanation": "The 'wind' represents the invading force God stirs up against Babylon, likening the attackers to a destructive gale that sweeps through and devastates.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 51:2",
+    "deliberation": "The sending of 'strangers' is literal, but 'they shall winnow her' (וְזֵר֔וּהָ) applies an agricultural process to Babylon as if she were grain; 'empty/strip her land' continues same image. Treated as one extended agricultural metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְזֵר֔וּהָ וִיבֹקְק֖וּ אֶת־אַרְצָ֑הּ",
+        "english_text": "and they shall winnow her, and they shall strip her land bare",
+        "target": ["Babylon and her population/wealth", "city/empire and its resources", "politics/economy"],
+        "vehicle": ["winnowing and emptying out grain", "agricultural processing of harvested grain", "agriculture"],
+        "ground": ["separating out and removing what is desired, leaving emptiness and waste", "thorough removal and dispersal", "loss/devastation"],
+        "posture": ["depicts Babylon as passively processed and exhausted by invaders", "judgment and humiliation", "prophetic rhetoric"],
+        "explanation": "Invading nations are portrayed as farmers winnowing grain, with Babylon as the grain that is sifted and its land emptied, emphasizing total plundering and dispersal.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 51:3",
+    "deliberation": "The verse issues literal military commands (archer, bow, coat of mail, young men, army). 'Devote to destruction' (הַחֲרִימוּ) is a technical term rather than a figurative image here. I see no distinct metaphor, simile, or personification beyond standard war language.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 51:4",
+    "deliberation": "Describes literal casualties ('slain in the land of Chaldea, pierced through in her streets'). The wording is vivid but not figurative; no metaphor or simile is used.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 51:5",
+    "deliberation": "Identified covenantal metaphor: Israel/Judah described as not being 'widowed' from their God, implying prior imagery of God as husband; 'land filled with guilt' is conceptual but conventional. One clear metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹא־אַלְמָ֨ן יִשְׂרָאֵ֤ל וִֽיהוּדָה֙ מֵאֱלֹהָ֔יו",
+        "english_text": "For Israel and Judah were not bereft [widowed] of their God",
+        "target": ["Israel and Judah’s covenant status", "people’s relationship to God", "theology/covenant"],
+        "vehicle": ["a woman who is (or is not) a widow", "marital status", "family/marriage"],
+        "ground": ["ongoing belonging and support despite catastrophe; not permanently abandoned", "relational fidelity and continued bond", "covenant loyalty"],
+        "posture": ["reassuring depiction of God’s continuing commitment despite judgment", "consolation", "theological affirmation"],
+        "explanation": "Israel and Judah are portrayed as a wife who has not actually become a widow, implying that God remains their living husband and covenant partner.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 51:6",
+    "deliberation": "Commands to flee and save one’s life and references to 'time of vengeance' and 'repayment' are standard judicial language. Considered whether 'perish for her iniquity' is metaphorical but here it describes literal perishing because of Babylon’s sins. No distinct figurative image.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 51:7",
+    "deliberation": "This verse uses a sustained metaphor: Babylon as a golden cup in God’s hand whose wine makes the nations drunk and mad. The 'drinking' and 'madness' unfold that image; I treat it as one extended metaphor.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כּוֹס־זָהָ֤ב בָּבֶל֙ בְּיַד־יְהוָ֔ה מְשַׁכֶּ֖רֶת כׇּל־הָאָ֑רֶץ מִיֵּינָהּ֙ שָׁת֣וּ גוֹיִ֔ם עַל־כֵּ֖ן יִתְהֹלְל֥וּ גוֹיִֽם",
+        "english_text": "Babylon was a golden cup in GOD’s hand, it made the whole earth drunk; the nations drank of her wine—therefore the nations are mad",
+        "target": ["Babylon’s imperial influence and the nations she affects", "empire and subject nations", "politics/history"],
+        "vehicle": ["a golden cup of intoxicating wine held by God", "luxury drinking vessel and its wine", "material culture/ritual drinking"],
+        "ground": ["Babylon as an attractive but dangerous instrument in God’s hand that intoxicates and deranges many nations", "harmful, intoxicating influence serving divine purposes", "judgment and moral corruption"],
+        "posture": ["negative, depicting Babylon as both precious and deadly, ultimately under God’s control", "theological critique of empire", "prophetic denunciation"],
+        "explanation": "Babylon’s power is depicted as a golden cup whose wine represents her intoxicating, corrupting influence on the nations, used by God to bring them into a mad stupor of judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 51:8",
+    "deliberation": "Babylon’s 'falling' could be literal, but 'shattered' plus 'balm for her pain... perhaps she may be healed' applies the language of bodily injury and medical treatment to the city’s political collapse. I treat this as one medical metaphor for her downfall.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "פִּתְאֹ֛ם נָפְלָ֥ה בָבֶ֖ל וַתִּשָּׁבֵ֑ר ... קְח֤וּ צֳרִי֙ לְמַכְאוֹבָ֔הּ אוּלַ֖י תֵּרָפֵֽא",
+        "english_text": "Suddenly Babylon has fallen and is shattered; ... Get balm for her wounds: Perhaps she can be healed",
+        "target": ["Babylon’s political and social condition", "city/empire’s fortunes", "politics/history"],
+        "vehicle": ["a human body that has fallen, been shattered, and needs balm for wounds", "severely injured patient", "medicine/physical health"],
+        "ground": ["severe, perhaps irreparable damage needing healing; fragility under catastrophe", "incurability of Babylon’s condition", "judgment as sickness"],
+        "posture": ["ironically proposes healing for a hopelessly shattered Babylon, underscoring her doom", "lament-tinged judgment", "prophetic rhetoric"],
+        "explanation": "Babylon’s collapse is pictured as a person’s catastrophic injury requiring balm and healing, highlighting both the severity and the likely incurability of her condition.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 51:9",
+    "deliberation": "The verse continues the medical metaphor ('We tried to heal Babylon, but she was not healed') and adds hyperbolic vertical imagery ('her judgment reaches to heaven, lifted up to the skies'). I treat these as two distinct figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "רִפִּ֤אנוּ אֶת־בָּבֶל֙ וְלֹ֣א נִרְפָּ֔תָה",
+        "english_text": "We tried to cure Babylon but she was incurable",
+        "target": ["attempts to restore Babylon’s fortunes", "political and social restoration", "politics/history"],
+        "vehicle": ["medical treatment and healing of a sick person", "doctor-patient situation", "medicine/health"],
+        "ground": ["application of remedies that fail to produce recovery; the condition is beyond cure", "hopelessness of Babylon’s situation", "irreversible judgment"],
+        "posture": ["despairing recognition that Babylon’s illness (guilt/judgment) cannot be reversed", "resigned evaluation", "prophetic interpretation"],
+        "explanation": "Efforts to 'heal' Babylon are depicted as failed medical treatment, emphasizing that the city’s plight is terminal.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּֽי־נָגַ֤ע אֶל־הַשָּׁמַ֙יִם֙ מִשְׁפָּטָ֔הּ וְנִשָּׂ֖א עַד־שְׁחָקִֽים",
+        "english_text": "For her punishment reaches to heaven, it is as high as the sky",
+        "target": ["extent of Babylon’s punishment/guilt", "magnitude of judgment", "moral-theological domain"],
+        "vehicle": ["height reaching up to heaven and the skies", "immense vertical distance", "cosmic space"],
+        "ground": ["enormous magnitude and visibility; beyond ordinary measure", "greatness and notoriety of her judgment", "severity/excess"],
+        "posture": ["emphatic exaggeration to stress just how great Babylon’s punishment is", "intensifying judgment", "prophetic hyperbole"],
+        "explanation": "The punishment (or guilt) of Babylon is said to reach up to heaven, an exaggerated image highlighting its immense magnitude and seriousness.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 51:10",
+    "deliberation": "God 'brings out' or 'proclaims' their righteousness; this is standard legal-vindication language rather than a crafted metaphor in context. No prominent, distinct figurative expression beyond normal judicial idiom.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 51:11",
+    "deliberation": "The war-preparation commands are literal. 'He has roused the spirit of the kings of Media' uses רוּחַ for inner disposition, but this is conventional. 'Vengeance of His temple' treats the temple as shorthand for what was done to it and to the worshipers; I classify that as metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּֽי־נִקְמַ֤ת יְהוָה֙ הִ֔יא נִקְמַ֖ת הֵיכָלֽוֹ",
+        "english_text": "For this is GOD’s vengeance, vengeance for His temple",
+        "target": ["God’s vengeance for wrongs done to His people and worship", "divine retribution", "theology/judgment"],
+        "vehicle": ["'His temple' as the desecrated sanctuary", "cultic building and objects", "religion/worship space"],
+        "ground": ["the temple stands for the whole sphere of God’s presence and worship that Babylon violated", "using the sanctuary as shorthand for the entire covenant relationship offended", "representative part-whole relation"],
+        "posture": ["frames Babylon’s punishment as payback specifically for desecrating God’s sanctuary", "moral focus on sacrilege", "prophetic indictment"],
+        "explanation": "The 'vengeance of His temple' uses the temple as a representative part for the whole covenant relationship and worship life that Babylon attacked, focusing divine retribution on that offense.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 51:12",
+    "deliberation": "All elements (standard, walls, watch, ambush) are literal military imagery. 'Planned and performed' is straightforward; nothing clearly figurative beyond normal martial description.",
+    "instances": []
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 51:13",
+    "deliberation": "Babylon literally dwellt by many waters (Euphrates and canals) and possessed great stores; 'your end has come, the measure of your unjust gain' is evaluative but not an independent image. I do not treat these as distinct figurative devices here.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 51:14",
+    "deliberation": "Identified a clear simile: filling Babylon with enemies 'like locusts', a common image for innumerable invaders. The shout against her follows from that swarm imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּ֣י אִם־מִלֵּאתִ֤יךְ אָדָם֙ כַּיֶּ֔לֶק",
+        "english_text": "I will fill you with men like a locust swarm",
+        "target": ["the invading forces filling Babylon", "enemy armies", "war/politics"],
+        "vehicle": ["a swarm of locusts", "countless devouring insects", "nature/animal world"],
+        "ground": ["overwhelming numbers, rapid devastating consumption, inescapability", "multitude and destructive impact", "threat/destruction"],
+        "posture": ["intensely negative, portraying the invaders as a devouring plague upon Babylon", "judgment emphasis", "prophetic warning"],
+        "explanation": "The attackers are compared to a locust swarm to stress their vast numbers and their consuming, inescapable devastation of Babylon.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 51:15",
+    "deliberation": "The verse is a creation formula. 'Stretched out the skies' (נָטָה שָׁמַיִם) anthropomorphically portrays God as stretching the heavens like a fabric or tent; this is a standard metaphor, but still figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבִתְבוּנָת֖וֹ נָטָ֥ה שָׁמָֽיִם",
+        "english_text": "And with understanding [He] stretched out the skies",
+        "target": ["God’s act of arranging the heavens", "creation of the sky", "cosmology/theology"],
+        "vehicle": ["stretching out fabric or a tent", "artisanal spreading or pitching", "craft/building"],
+        "ground": ["deliberate arrangement and extension over a wide area", "ordered, skilled shaping of the cosmos", "wisdom and power in creation"],
+        "posture": ["elevates God as a wise craftsman of the universe", "praise", "theological doxology"],
+        "explanation": "God’s creation of the heavens is likened to stretching out a fabric or tent, emphasizing His skillful, intentional ordering of the sky.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 51:16",
+    "deliberation": "The description of waters, vapors, lightning is largely literal meteorology under divine command. 'He brings out the wind from His storehouses/treasuries' is a metaphor, picturing winds as stored goods God releases.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיּוֹצֵא ר֖וּחַ מֵאֹצְרֹתָֽיו",
+        "english_text": "And [He] brings forth wind from His treasuries",
+        "target": ["God’s control over atmospheric phenomena", "origin and timing of the wind", "nature/theology"],
+        "vehicle": ["treasuries or storehouses containing valuables", "storage rooms of a great house", "economy/household"],
+        "ground": ["having resources stored and dispensing them at will", "sovereign management and distribution", "control/provision"],
+        "posture": ["stresses God’s sovereign management of natural forces as if they were stored treasures", "awe and reverence", "doxological praise"],
+        "explanation": "Winds are portrayed as if kept in God’s 'treasuries' and released by Him, underscoring His sovereign, almost royal control over nature.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 51:17",
+    "deliberation": "The verse contrasts human ignorance with lifeless idols. 'Every man is brutish (נִבְעַר) without knowledge' likens people to cattle/beasts in their stupidity—a metaphorical usage. The shame of the goldsmith is literal consequence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נִבְעַ֤ר כׇּל־אָדָם֙ מִדַּ֔עַת",
+        "english_text": "Every mortal is proved dull [brutish], without knowledge",
+        "target": ["idolaters’ intellectual and spiritual state", "human understanding", "ethics/theology"],
+        "vehicle": ["brutishness like that of an animal", "beast-like lack of understanding", "animal life"],
+        "ground": ["lack of rational insight, acting like unthinking beasts", "stupidity and moral insensitivity", "folly/irrationality"],
+        "posture": ["strongly disparaging portrayal of idolaters as no better than animals in understanding", "condemnation", "prophetic critique"],
+        "explanation": "People who make and trust idols are described as 'brutish,' i.e., like irrational beasts, to highlight their folly and lack of true knowledge.",
+        "confidence": 0.91
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 51:18",
+    "deliberation": "Idols are called 'hebel' (vanity/breath) and 'a work of mockeries'. 'Hebel' metaphorically equates them with vapor or nothingness; this is a standard prophetic metaphor for worthlessness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הֶ֣בֶל הֵ֔מָּה מַעֲשֵׂ֖ה תַּעְתֻּעִ֑ים",
+        "english_text": "They are delusion [vanity], a work of mockery",
+        "target": ["idols and the practice of idol-making", "false gods/images", "religion/theology"],
+        "vehicle": ["'hebel'—breath, vapor, insubstantial mist", "ephemeral, insubstantial phenomenon", "nature/atmosphere"],
+        "ground": ["lack of solidity, permanence, or real power; emptiness", "futility and unreliability of idols", "worthlessness"],
+        "posture": ["contemptuous dismissal of idols as insubstantial and deceptive", "polemical critique", "prophetic denunciation"],
+        "explanation": "Idols are likened to vapor or breath to stress their utter insubstantiality and unreliability as gods.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 51:19",
+    "deliberation": "Contrasts lifeless idols with Israel’s God. Two metaphors: (1) 'Portion of Jacob' presents God as Jacob’s allotted share/inheritance; (2) 'rod of His inheritance' presents Israel as God’s scepter or ruling staff. Both are distinct figurative expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לֹֽא־כְאֵ֜לֶּה חֵ֣לֶק יַעֲק֗וֹב",
+        "english_text": "Not like these is the Portion of Jacob",
+        "target": ["God in relation to Jacob/Israel", "deity as possessed relationship", "theology/covenant"],
+        "vehicle": ["a 'portion' or allotted share of an inheritance", "legal share of property", "law/family property"],
+        "ground": ["exclusive, valued possession belonging to someone; source of sustenance and security", "God as Israel’s true, sustaining inheritance", "belonging/provision"],
+        "posture": ["positive, intimate depiction of God as Israel’s true share as opposed to empty idols", "assurance", "covenantal identity"],
+        "explanation": "Calling God the 'Portion of Jacob' presents Him as Israel’s true allotted share and inheritance, in contrast to lifeless idols.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְשֵׁ֖בֶט נַחֲלָת֑וֹ",
+        "english_text": "and [Israel is] the rod of His inheritance",
+        "target": ["Israel’s role in God’s purposes", "people of God", "theology/politics"],
+        "vehicle": ["a 'rod' or scepter associated with rule", "staff wielded by a ruler", "royal symbolism"],
+        "ground": ["instrument of rule and representation of authority belonging to a king", "Israel as an instrument and display of God’s kingship", "authority/representation"],
+        "posture": ["elevates Israel’s identity as God’s royal staff, highlighting their special status and function", "honorific", "covenantal vocation"],
+        "explanation": "Israel is depicted as God’s 'rod' or scepter, symbolizing that they are His chosen instrument and visible emblem of His rule.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 51:20",
+    "deliberation": "This begins a sustained metaphor where the addressee (instrument of judgment) is God’s 'war club' with which He shatters nations and kingdoms. Although the destruction is literal, the identification of the nation with a hammer/club is figurative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַפֵּץ־אַתָּ֣ה לִ֔י כְּלֵ֖י מִלְחָמָ֑ה וְנִפַּצְתִּ֤י בְךָ֙ גּוֹיִ֔ם וְהִשְׁחַתִּ֥י בְךָ֖ מַמְלָכֽוֹת",
+        "english_text": "You are My war club, [My] weapons of battle; with you I clubbed nations, with you I destroyed kingdoms",
+        "target": ["the human instrument/nation God uses to judge others", "agent of divine judgment", "politics/history"],
+        "vehicle": ["war club and weapons in a warrior’s hand", "blunt instrument of battle", "warfare/weaponry"],
+        "ground": ["being an instrument through which the wielder’s power is expressed; capacity to crush opponents", "God’s use of this nation as His tool to shatter others", "instrumentality/power"],
+        "posture": ["initially exalts the addressee as God’s hammer, but in context sets up their own eventual judgment", "ambivalent (honor then doom)", "prophetic rhetoric"],
+        "explanation": "The unnamed power is likened to God’s war-hammer, emphasizing that its conquests are actually God’s work done through an instrument He wields.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 51:21",
+    "deliberation": "This verse elaborates the same 'war club' metaphor from v.20, listing targets (horse and rider, chariot and driver). No new figurative mapping beyond the already-established hammer imagery; so I do not count an additional distinct instance here.",
+    "instances": []
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 51:22",
+    "deliberation": "Again extends the war-club metaphor (now applied to all classes of people). The figurative framework is unchanged from v.20; the pairs are literal groups. No new independent figure.",
+    "instances": []
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 51:23",
+    "deliberation": "Continues the same hammer-of-God metaphor, specifying further social roles shattered. No separate metaphor or simile is introduced; it remains part of the v.20 image.",
+    "instances": []
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 51:24",
+    "deliberation": "God’s promise to 'requite' Babylon for the evil done to Zion is standard judicial language. 'Before your eyes' is literal. No distinct metaphor or personification beyond normal retributive idiom.",
+    "instances": []
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 51:25",
+    "deliberation": "Babylon is addressed as 'destroying mountain' that destroys the whole earth; then God will roll it from the rocks and make it a 'burnt mountain'. This uses mountain imagery metaphorically for the empire and its downfall.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַ֤ר הַמַּשְׁחִית֙ ... הַמַּשְׁחִ֖ית אֶת־כׇּל־הָאָ֑רֶץ ... וְגִלְגַּלְתִּ֙יךָ֙ מִן־הַסְּלָעִ֔ים וּנְתַתִּ֖יךָ לְהַ֥ר שְׂרֵפָֽה",
+        "english_text": "O mountain of the destroyer, destroyer of the whole earth ... I will roll you down from the crags, and make you a burnt-out mountain",
+        "target": ["Babylonian empire in its power and its downfall", "dominant imperial power", "politics/history"],
+        "vehicle": ["a towering mountain that devastates and then becomes a burned-out mountain rolled from its crags", "geological mass, perhaps a volcano", "nature/landscape"],
+        "ground": ["height, solidity, and far-reaching impact, followed by sudden ruin and permanent defacement", "Babylon’s dominant, destructive might and its total, fiery collapse", "power and its undoing"],
+        "posture": ["strongly condemnatory; Babylon is a dangerous peak God will topple and burn", "judgment threat", "prophetic denunciation"],
+        "explanation": "Babylon is portrayed as a 'destroying mountain' towering over and ravaging the earth, which God will roll down and leave as a burned-out ruin.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 51:26",
+    "deliberation": "Speaks of no stone being taken from Babylon as cornerstone or foundation stone and of permanent desolation. These are literal building terms describing total ruin; no clear independent metaphor beyond standard prophetic hyperbole.",
+    "instances": []
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 51:27",
+    "deliberation": "Military summons are literal, but 'bring up horses like bristling locusts' is an explicit simile likening the cavalry to a dense, bristling swarm.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַעֲלוּ־ס֖וּס כְּיֶ֥לֶק סָמָֽר",
+        "english_text": "Bring up horses like swarming locusts",
+        "target": ["the massed cavalry attacking Babylon", "mounted troops", "warfare"],
+        "vehicle": ["a bristling swarm of locusts", "dense, moving cloud of insects", "nature/animals"],
+        "ground": ["innumerable, overwhelming numbers and movement, evoking dread and devastation", "the overwhelming, devouring nature of the invading horsemen", "threatening multitude"],
+        "posture": ["depicts the attacking forces as a terrifying, devouring swarm", "heightens fear of the coming onslaught", "judgment rhetoric"],
+        "explanation": "The numerous horses are compared to a bristling locust swarm to convey their vast numbers and threatening advance on Babylon.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 51:28",
+    "deliberation": "Lists nations, kings, governors, and their lands assembled for war. Straightforward muster language; no overt metaphor, simile, or personification.",
+    "instances": []
+  },
+  {
+    "verse": 29,
+    "reference": "Jeremiah 51:29",
+    "deliberation": "The earth 'quakes' could be literal, but 'writhes' (וַתָּחֹל) evokes a laboring woman; together they personify the land as reacting to God’s purpose. I treat this as personification of the land under judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּרְעַ֥שׁ הָאָ֖רֶץ וַתָּחֹ֑ל",
+        "english_text": "Then the earth quakes and writhes",
+        "target": ["the land affected by Babylon’s fall", "physical territory", "nature/history interface"],
+        "vehicle": ["a living body trembling and twisting in labor pains", "person undergoing convulsions or childbirth", "human/animal body"],
+        "ground": ["violent, involuntary reaction to intense pressure and pain", "cosmic disturbance mirroring the severity of God’s judgment", "agony/upheaval"],
+        "posture": ["portrays the whole earth as agonizing in response to God’s plans against Babylon", "dramatic intensification", "apocalyptic coloring"],
+        "explanation": "The land is depicted as a living being that trembles and writhes like a woman in labor, stressing how momentous and painful God’s judgment on Babylon is.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Jeremiah 51:30",
+    "deliberation": "The verse uses two clear metaphors: (1) 'their might is dried up' uses drought imagery for loss of courage; (2) 'they became women' uses gendered metaphor for losing warrior bravery. I treat these as two distinct expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "נָשְׁתָ֥ה גְבוּרָתָ֖ם",
+        "english_text": "Their might is dried up",
+        "target": ["Babylon’s military courage/strength", "inner resolve and capability", "warfare/psychology"],
+        "vehicle": ["liquid drying up, perhaps a river or spring", "source of water that disappears", "nature/hydrology"],
+        "ground": ["once-flowing strength now exhausted and gone; inability to act", "complete depletion of power and morale", "weakness/exhaustion"],
+        "posture": ["depicts Babylon’s warriors as no longer having any vital strength", "derisive", "judgment rhetoric"],
+        "explanation": "Their courage and power are portrayed as a water source that has dried up, indicating complete depletion of strength.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָי֣וּ לְנָשִׁ֑ים",
+        "english_text": "They become women",
+        "target": ["Babylon’s warriors’ bravery", "their perceived masculinity/warrior status", "social roles/warfare"],
+        "vehicle": ["women as stereotypically non-warrior, non-combatant figures in ancient context", "female social role", "gender roles"],
+        "ground": ["loss of martial courage and aggressiveness as defined by ancient male-warrior ideals", "becoming timid and unable to fight", "cowardice/weakness (in ANE idiom)"],
+        "posture": ["derogatory in the ancient cultural frame, highlighting complete loss of warrior status", "mocking Babylon", "prophetic taunt"],
+        "explanation": "By saying the warriors 'become women,' the text, in its ancient context, metaphorically declares that they have lost the courage and aggression expected of male fighters.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Jeremiah 51:31",
+    "deliberation": "Depicts literal messengers running to report the capture of the city. Vivid but straightforward narrative; no distinct metaphor or simile beyond normal description.",
+    "instances": []
+  },
+  {
+    "verse": 32,
+    "reference": "Jeremiah 51:32",
+    "deliberation": "Describes fords seized, marshes burned, and warriors terrified. The imagery is military and topographical, not figurative in itself.",
+    "instances": []
+  },
+  {
+    "verse": 33,
+    "reference": "Jeremiah 51:33",
+    "deliberation": "Here Babylon is called 'Daughter Babylon' and likened to a threshing floor being trodden; additionally, 'her harvest time' coming is a familiar metaphor for judgment. I treat (1) the simile 'like a threshing floor' and (2) the 'harvest' as judgment as two related but distinct figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בַּת־בָּבֶ֕ל כְּגֹ֖רֶן עֵ֣ת הִדְרִיכָ֑הּ",
+        "english_text": "Fair Babylon is like a threshing floor ready to be trodden",
+        "target": ["Babylon in the moment before judgment", "city/people", "politics/history"],
+        "vehicle": ["a threshing floor about to be trodden", "prepared surface where grain is trampled", "agricultural process"],
+        "ground": ["being positioned for imminent, forceful processing that separates grain from chaff", "Babylon poised for destructive judgment", "readiness for decisive action"],
+        "posture": ["portrays Babylon as about to undergo a harsh, separating process at God’s hand", "threatening", "prophetic warning"],
+        "explanation": "Babylon is compared to a threshing floor about to be trodden, indicating she is poised for the harsh process of divine judgment.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עוֹד מְעַ֔ט וּבָ֥אָה עֵֽת־הַקָּצִ֖יר לָֽהּ",
+        "english_text": "In a little while her harvesttime will come",
+        "target": ["the time of Babylon’s judgment", "appointed moment of downfall", "history/judgment"],
+        "vehicle": ["harvesttime", "season of reaping crops", "agricultural calendar"],
+        "ground": ["a set season when what has grown is finally cut down and gathered", "moment when accumulated deeds yield consequences", "reaping what is sown"],
+        "posture": ["frames judgment as the inevitable harvest of Babylon’s actions", "moral inevitability", "prophetic theology"],
+        "explanation": "Babylon’s day of judgment is metaphorically called her 'harvesttime,' the season when what has been sown is finally reaped.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 34,
+    "reference": "Jeremiah 51:34",
+    "deliberation": "Speaking in Zion’s voice, the verse describes Nebuchadnezzar as devouring, swallowing 'like a dragon', filling his belly with delicacies, then setting the speaker down like an empty dish and rinsing. This is an extended devouring/monster metaphor, with an explicit simile 'like a dragon'. I focus on that simile as representative.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּלָעַ֙נִי֙ כַּתַּנִּ֔ין מִלָּ֥א כְרֵשׂ֖וֹ מֵעֲדָנָ֑י",
+        "english_text": "He swallowed me like a dragon, he filled his belly with my dainties",
+        "target": ["Nebuchadnezzar’s treatment of Zion/Israel", "imperial exploitation and oppression", "politics/history"],
+        "vehicle": ["a dragon/sea monster ravenously swallowing prey and filling its belly", "mythic predatory creature eating delicacies", "myth/animal predation"],
+        "ground": ["rapacious consumption, using up the victim’s resources completely, leaving them empty", "total exploitation and destruction of the victim", "greed and brutality"],
+        "posture": ["strongly accusatory and emotive, portraying the king as a monstrous devourer", "lament and indictment", "prophetic complaint"],
+        "explanation": "Nebuchadnezzar’s oppression of Zion is likened to a dragon swallowing prey and filling its belly, emphasizing his greedy, destructive consumption of her resources.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 35,
+    "reference": "Jeremiah 51:35",
+    "deliberation": "The speaker calls for 'my violence and my flesh' (or 'loss') to be upon Babylon and 'my blood' upon the Chaldeans. 'My blood' is a metonymy for the life unjustly taken and the guilt of shedding it.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְדָמִי֙ אֶל־יֹשְׁבֵ֣י כַשְׂדִּ֔ים",
+        "english_text": "And let my blood be upon the inhabitants of Chaldea",
+        "target": ["the guilt and responsibility for the harm done to Zion", "culpability for violence", "ethics/judgment"],
+        "vehicle": ["'my blood' as shed lifeblood", "spilled blood of victims", "physical body/violence"],
+        "ground": ["blood stands for the life wrongfully taken and the moral debt incurred", "calling that guilt down upon the perpetrators", "liability/retribution"],
+        "posture": ["invokes a legal-curse formula demanding that the perpetrators bear the consequences of shed blood", "imprecation", "prophetic appeal for justice"],
+        "explanation": "The phrase 'my blood be upon...' uses blood as a metonymy for the life taken and the guilt associated with its shedding, calling that guilt down on the Chaldeans.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 36,
+    "reference": "Jeremiah 51:36",
+    "deliberation": "God will 'dry up her sea' and 'make her fountain dry'. This may refer to literal waters, but the imagery also functions metaphorically for removing Babylon’s life-sources and defenses. I treat this as one metaphorical portrayal of cutting off her vitality.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהַֽחֲרַבְתִּי֙ אֶת־יַמָּ֔הּ וְהֹֽבַשְׁתִּ֖י אֶת־מְקוֹרָֽהּ",
+        "english_text": "I will dry up her sea and make her fountain run dry",
+        "target": ["Babylon’s sources of strength, wealth, and defense", "city’s sustaining systems", "politics/economy"],
+        "vehicle": ["sea and spring being dried up", "large body of water and its source disappearing", "nature/water systems"],
+        "ground": ["removal of protective and life-giving resources, leaving vulnerability and death", "cutting off Babylon’s life-blood and defenses", "deprivation/ruin"],
+        "posture": ["depicts God as decisively removing all that sustains Babylon", "threat of total collapse", "prophetic judgment"],
+        "explanation": "Babylon’s key resources and defenses are portrayed as a 'sea' and 'spring' that God will dry up, symbolizing the loss of her sustaining power.",
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "verse": 37,
+    "reference": "Jeremiah 51:37",
+    "deliberation": "Babylon becoming 'heaps, a den for jackals' can be literal ruin imagery, but 'an object of horror and hissing' (שַׁמָּה וּשְׁרֵקָה) is a set prophetic idiom for being mocked and derided. I treat that as one idiomatic figurative expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מְעוֹן־תַּנִּ֛ים שַׁמָּ֥ה וּשְׁרֵקָ֖ה",
+        "english_text": "a den for jackals, an object of horror and hissing",
+        "target": ["Babylon’s post-judgment reputation and state", "ruined city and its fame", "history/reputation"],
+        "vehicle": ["desolate lair of wild animals and a spectacle that makes people hiss in scorn", "abandoned ruin provoking derision", "nature/gesture of mockery"],
+        "ground": ["total abandonment, wild desolation, and being held up as a cautionary example of ruin", "Babylon as a byword for desolation and scorn", "disgrace/desolation"],
+        "posture": ["deeply negative, depicting Babylon as both physically ruined and socially ridiculed", "prophetic taunt", "judgment image"],
+        "explanation": "Calling Babylon a 'den for jackals' and an object of 'horror and hissing' portrays her as a desolate ruin that onlookers mock and shudder at, a standard idiom for utter disgrace.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 38,
+    "reference": "Jeremiah 51:38",
+    "deliberation": "Babylonians (likely revelers/warriors) are compared to lions and lion cubs in their roaring and growling. This is a double animal simile expressing their boisterous, predatory confidence.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "יַחְדָּ֖ו כַּכְּפִרִ֣ים יִשְׁאָ֑גוּ נָעֲר֖וּ כְּגוֹרֵ֥י אֲרָיֽוֹת",
+        "english_text": "Like lions, they roar together, they growl like lion cubs",
+        "target": ["Babylonian leaders/warriors in their revelry or war-cry", "proud aggressors", "warfare/social behavior"],
+        "vehicle": ["adult lions and lion cubs roaring and growling", "predatory big cats", "animal world"],
+        "ground": ["loud, fearsome, confident noise; predatory vigor", "Babylonians’ boisterous self-assurance and ferocity", "strength/ferocity"],
+        "posture": ["initially grants them ferocious power, which in context will be overturned by judgment", "ironic setup", "prophetic narrative"],
+        "explanation": "The Babylonians are likened to roaring lions and their cubs, highlighting their fierce, noisy confidence before their downfall.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 39,
+    "reference": "Jeremiah 51:39",
+    "deliberation": "Two figures: (1) God makes them drunk so they 'rejoice'—drunkenness as metaphor for stupefying judgment; (2) 'they shall sleep an endless sleep and not wake' is a metaphor for death. These are distinct though related images.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּחֻמָּ֞ם אָשִׁ֣ית אֶת־מִשְׁתֵּיהֶ֗ם וְהִשְׁכַּרְתִּים֙ לְמַ֣עַן יַעֲלֹ֔זוּ",
+        "english_text": "When they are heated, I will set out their drink and get them drunk, that they may become hilarious",
+        "target": ["Babylon’s leaders and warriors under divine judgment", "their mental state", "history/psychology"],
+        "vehicle": ["people heated with desire then plied with drink until drunk", "drinking party leading to stupor", "social drinking"],
+        "ground": ["losing self-control, becoming foolishly merry just before collapse or vulnerability", "stupefaction and false security before disaster", "deception/vulnerability"],
+        "posture": ["ironically shows God luring them into a state of drunken carelessness as part of their judgment", "ironic reversal", "prophetic taunt"],
+        "explanation": "Their intoxication is orchestrated by God to make them blindly joyful and unguarded, a metaphor for how divine judgment stupefies them before their downfall.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיָשְׁנ֥וּ שְׁנַת־עוֹלָ֖ם וְלֹ֣א יָקִ֑יצוּ",
+        "english_text": "and then sleep an endless sleep, never to awake",
+        "target": ["the final fate of Babylon’s elites", "their death", "human mortality/judgment"],
+        "vehicle": ["sleep, particularly an unending sleep", "state of unconscious rest", "human bodily states"],
+        "ground": ["inactivity and unresponsiveness of sleep as an image for death’s permanence", "death as irrevocable, unlike normal sleep", "cessation of activity"],
+        "posture": ["presents their death under God’s judgment as permanent, like a sleep from which there is no waking", "solemn finality", "prophetic warning"],
+        "explanation": "Their death is described as an 'endless sleep' to convey its finality and the impossibility of recovery from God’s judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 40,
+    "reference": "Jeremiah 51:40",
+    "deliberation": "Uses an explicit simile: people are brought down 'like lambs for slaughter, like rams and he-goats', likening doomed victims to sacrificial animals.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אוֹרִידֵ֖ם כְּכָרִ֣ים לִטְב֑וֹחַ כְּאֵילִ֖ים עִם־עַתּוּדִֽים",
+        "english_text": "I will bring them down like lambs for slaughter, like rams and he-goats",
+        "target": ["those to be destroyed in Babylon", "human victims of judgment", "warfare/judgment"],
+        "vehicle": ["lambs, rams, and goats led to slaughter", "sacrificial animals", "cult/animal life"],
+        "ground": ["being helplessly led to inevitable death, without effective resistance", "complete vulnerability before a determined slaughterer", "doom/helplessness"],
+        "posture": ["portrays the victims as defenseless sacrificial animals in God’s hands", "grim", "judgment imagery"],
+        "explanation": "Those God will destroy are compared to sacrificial sheep and goats being led to slaughter, stressing their helplessness and the certainty of their death.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 41,
+    "reference": "Jeremiah 51:41",
+    "deliberation": "Sheshach (cipher for Babylon) is said to be captured, 'the praise of the whole earth' seized, and to become a 'horror among the nations'. 'Praise of the whole earth' is a metaphorical epithet for Babylon’s former glory; I treat that as the main figure.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּתָּפֵ֖שׂ תְּהִלַּ֣ת כׇּל־הָאָ֑רֶץ",
+        "english_text": "The praise of the whole earth has been taken",
+        "target": ["Babylon’s former reputation and splendor", "status of the city/empire", "history/reputation"],
+        "vehicle": ["'praise of the whole earth'—object universally praised", "something admired by all lands", "social valuation"],
+        "ground": ["being widely admired, envied, and celebrated across nations", "Babylon’s erstwhile global prestige", "glory/fame"],
+        "posture": ["underscores the irony that one once universally admired is now captured and made a horror", "ironic reversal", "prophetic taunt"],
+        "explanation": "Babylon is called 'the praise of the whole earth,' portraying her as the object of worldwide admiration, which makes her present capture and disgrace more striking.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 42,
+    "reference": "Jeremiah 51:42",
+    "deliberation": "The 'sea' rising over Babylon and covering her with roaring waves likely symbolizes the invading armies, a common prophetic metaphor; Babylon is personified as being submerged by this sea.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עָלָ֥ה עַל־בָּבֶ֖ל הַיָּ֑ם בַּהֲמ֥וֹן גַּלָּ֖יו נִכְסָֽתָה",
+        "english_text": "The sea has risen over Babylon; she is covered by its roaring waves",
+        "target": ["the overwhelming invasion and destruction of Babylon", "foreign armies/judgment", "warfare/history"],
+        "vehicle": ["a sea with roaring waves inundating and covering a city", "flooding waters", "nature/ocean"],
+        "ground": ["overwhelming, inescapable, engulfing force; loud tumult", "invading armies’ unstoppable advance and total coverage of the land", "overrun/overwhelmed"],
+        "posture": ["depicts Babylon as helplessly submerged under the flood of attackers", "dramatic judgment image", "prophetic rhetoric"],
+        "explanation": "The 'sea' represents the mass of invading forces that inundate Babylon like roaring waves, emphasizing the overwhelming nature of her downfall.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 43,
+    "reference": "Jeremiah 51:43",
+    "deliberation": "The verse describes desolated towns, desert and steppe, and total absence of inhabitants. This is vivid but straightforward ruin language; no specific metaphor or simile beyond literal description.",
+    "instances": []
+  },
+  {
+    "verse": 44,
+    "reference": "Jeremiah 51:44",
+    "deliberation": "God will 'deal with Bel' and 'bring out of his mouth what he has swallowed'. Bel (the idol/god) is personified as a devourer that must disgorge his prey/treasures. This is a strong metaphor with personification.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּפָקַדְתִּ֨י עַל־בֵּ֜ל בְּבָבֶ֗ל וְהֹצֵאתִ֤י אֶת־בִּלְעוֹ֙ מִפִּ֔יו",
+        "english_text": "And I will deal with Bel in Babylon, and make him disgorge what he has swallowed from his mouth",
+        "target": ["Bel’s hold over captured peoples/treasures devoted to him", "idol’s supposed power and plunder", "religion/politics"],
+        "vehicle": ["a devouring creature swallowing victims or goods, forced to vomit them out", "predator regurgitating prey", "animal body/consumption"],
+        "ground": ["illegitimate possession and control that must be forcibly reversed; inability to retain stolen goods", "God’s power to strip the idol of what it 'consumed'", "overturning false power"],
+        "posture": ["humiliates Bel by depicting him as a creature forced to vomit back what he has taken", "polemical against idolatry", "prophetic ridicule"],
+        "explanation": "Bel is portrayed as having 'swallowed' what belongs to others; God will make him spit it out, exposing the idol’s supposed power as empty and reversible.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 45,
+    "reference": "Jeremiah 51:45",
+    "deliberation": "God warns His people to flee 'from the burning anger of YHWH'; 'burning anger' (חֲרוֹן אַף) is a conventional metaphor picturing wrath as heat. That is a clear figurative expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מֵחֲר֖וֹן אַף־יְהוָֽה",
+        "english_text": "From GOD’s furious [burning] anger",
+        "target": ["the intensity of God’s wrath against Babylon and those who remain", "divine emotional state expressed in judgment", "theology/judgment"],
+        "vehicle": ["burning heat, flaring of the nose/face", "fire or intense heat", "nature/body sensations"],
+        "ground": ["searing intensity, consuming, destructive force", "vehemence and danger of God’s anger", "intensity/destructiveness"],
+        "posture": ["warns that God’s wrath is dangerously intense, something one must escape like a fire", "urgent admonition", "prophetic exhortation"],
+        "explanation": "God’s wrath is portrayed as burning heat ('fury of His nose'), an idiomatic metaphor stressing its consuming intensity.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 46,
+    "reference": "Jeremiah 51:46",
+    "deliberation": "Talks about rumors, violence, and ruler against ruler in successive years. While 'rumor' is abstract, the language is literal and descriptive, not cast as a separate figure of speech.",
+    "instances": []
+  },
+  {
+    "verse": 47,
+    "reference": "Jeremiah 51:47",
+    "deliberation": "God will punish idols and the whole land will 'be ashamed' (תֵּב֑וֹשׁ). 'Land' here stands for its people and is said to feel shame, which is personification combined with metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְכׇל־אַרְצָ֖הּ תֵּב֑וֹשׁ",
+        "english_text": "Her whole land shall be shamed",
+        "target": ["the population of Babylon", "people inhabiting the land", "society/politics"],
+        "vehicle": ["a person experiencing shame", "human emotional state", "psychology"],
+        "ground": ["feeling disgraced and humiliated", "Babylon’s people deeply humiliated by God’s judgment on their idols", "disgrace/shame"],
+        "posture": ["emphasizes the moral humiliation of Babylon along with physical ruin", "judgment with moral dimension", "prophetic warning"],
+        "explanation": "The 'land' stands for its inhabitants, who are depicted as feeling shame, personifying the territory to describe the people’s humiliation.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 48,
+    "reference": "Jeremiah 51:48",
+    "deliberation": "Heaven and earth and all that is in them are said to 'shout/sing' over Babylon. This personifies the entire cosmos rejoicing at her downfall, a common prophetic image.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְרִנְּנ֤וּ עַל־בָּבֶל֙ שָׁמַ֣יִם וָאָ֔רֶץ וְכֹ֖ל אֲשֶׁ֣ר בָּהֶ֑ם",
+        "english_text": "Heavens and earth and all that is in them shall shout over Babylon",
+        "target": ["the universal response to Babylon’s fall", "cosmic reaction", "cosmology/theology"],
+        "vehicle": ["heaven, earth, and all creatures singing or shouting joyfully", "choir of all creation", "music/celebration"],
+        "ground": ["universal rejoicing and relief at the removal of a tyrant", "cosmic endorsement of God’s judgment", "joy/approval"],
+        "posture": ["portrays Babylon’s fall as so just that all creation celebrates it", "theological legitimation of judgment", "prophetic exaltation"],
+        "explanation": "The entire cosmos is personified as rejoicing over Babylon’s downfall, underscoring that her judgment is universally right and welcome.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 49,
+    "reference": "Jeremiah 51:49",
+    "deliberation": "The syntax is compressed but essentially states that Babylon falls because of the slain of Israel, just as she caused slain in all the earth. No independent figurative image beyond a tight causal statement.",
+    "instances": []
+  },
+  {
+    "verse": 50,
+    "reference": "Jeremiah 51:50",
+    "deliberation": "Two idiomatic/metonymic elements: (1) 'fugitives from the sword' uses 'sword' for warfare/death; (2) 'Jerusalem shall come up on your heart' is idiom for remembering thoughtfully. I focus on the clearer metonymy 'from the sword' as one instance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "פְּלֵטִ֣ים מֵחֶ֔רֶב",
+        "english_text": "You fugitives from the sword",
+        "target": ["those who survived Babylon’s violence", "surviving exiles", "warfare/history"],
+        "vehicle": ["the sword as the instrument of killing", "weapon standing for battle and death", "warfare/weaponry"],
+        "ground": ["the sword represents lethal combat and threat of death", "those who escaped being killed in war", "survival from lethal danger"],
+        "posture": ["addresses survivors as people who have narrowly escaped death in war", "compassion plus exhortation", "prophetic pastoral word"],
+        "explanation": "The 'sword' stands metonymically for warfare and death, so 'fugitives from the sword' are those who have escaped death in battle.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 51,
+    "reference": "Jeremiah 51:51",
+    "deliberation": "The people say, 'Humiliation covered our faces'—shame is conceptualized as a garment or substance that covers, an idiomatic metaphor; the rest (hearing reproach, foreigners in the sanctuary) is literal.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּסְּתָ֥ה כְלִמָּ֖ה פָּנֵ֑ינוּ",
+        "english_text": "Humiliation covered our faces",
+        "target": ["the people’s emotional experience of shame", "inner sense of dishonor", "psychology/social experience"],
+        "vehicle": ["a covering or garment over the face", "something physically spread over someone", "clothing/material objects"],
+        "ground": ["being visibly and thoroughly overwhelmed by shame, unable to show one’s face", "total public humiliation", "disgrace/exposure"],
+        "posture": ["expresses deep emotional pain at the desecration of God’s house", "lament", "communal grief"],
+        "explanation": "Shame is depicted as a covering that envelopes their faces, conveying how completely they feel humiliated.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 52,
+    "reference": "Jeremiah 51:52",
+    "deliberation": "God will punish her images and the slain will groan throughout her land. This is straightforward: idols and mortally wounded; no additional figurative device beyond earlier idol-punishment imagery.",
+    "instances": []
+  },
+  {
+    "verse": 53,
+    "reference": "Jeremiah 51:53",
+    "deliberation": "States that even if Babylon climbed to heaven and fortified her stronghold up to the heights, ravagers would still come from God. This uses hyperbolic vertical imagery (ascending to heaven) to express pride and imagined invincibility.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּֽי־תַעֲלֶ֤ה בָבֶל֙ הַשָּׁמַ֔יִם וְכִ֥י תְבַצֵּ֖ר מְר֣וֹם עֻזָּ֑הּ",
+        "english_text": "Though Babylon should climb to the skies, though she fortify her strongholds up to heaven",
+        "target": ["Babylon’s efforts to secure herself and her pride in security", "imperial self-exaltation", "politics/theology"],
+        "vehicle": ["ascending to heaven and fortifying high places", "climbing to the sky with strongholds", "cosmic vertical space/architecture"],
+        "ground": ["reaching the highest possible point to be out of danger; extreme self-elevation", "Babylon’s imagined invulnerability and arrogance", "exaltation/security"],
+        "posture": ["ridicules Babylon’s pride, affirming that God’s judgment reaches even the highest heights", "anti-pride polemic", "prophetic assurance"],
+        "explanation": "Babylon’s self-secure pride is hyperbolically portrayed as climbing to heaven and fortifying there, yet God still sends ravagers, showing that no height can escape His judgment.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 54,
+    "reference": "Jeremiah 51:54",
+    "deliberation": "Speaks of an outcry from Babylon and great destruction from Chaldea; these are literal references to sounds and ruin. No distinct metaphor or simile.",
+    "instances": []
+  },
+  {
+    "verse": 55,
+    "reference": "Jeremiah 51:55",
+    "deliberation": "God is said to silence Babylon’s 'great voice', and their tumult 'roars like many waters'. This uses simile comparing the city’s uproar to mighty waters; the 'voice' of Babylon is also personification of the city’s noise.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאִבַּ֥ד מִמֶּ֖נָּה ק֣וֹל גָּד֑וֹל וְהָמ֤וּ גַלֵּיהֶם֙ כְּמַ֣יִם רַבִּ֔ים",
+        "english_text": "He will put an end to her great din, whose roar is like waves of mighty waters",
+        "target": ["Babylon’s civic/military uproar and activity", "city’s collective noise and power", "urban life/warfare"],
+        "vehicle": ["roar of many waters/waves", "thundering sea", "nature/ocean"],
+        "ground": ["loud, continuous, overwhelming sound and force", "Babylon’s tumultuous, imposing presence before God silences it", "power/tumult"],
+        "posture": ["shows that even Babylon’s mighty, sea-like roar will be silenced by God", "diminishing imperial hubris", "prophetic judgment"],
+        "explanation": "Babylon’s great noise is compared to the roar of many waters, emphasizing her powerful tumult, which God will nevertheless bring to an end.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 56,
+    "reference": "Jeremiah 51:56",
+    "deliberation": "A ravager comes on Babylon; warriors are captured; bows broken; and God is called 'a God of requital'. This is judicial epithet, not a distinct metaphor; the images of capture and broken bows are literal war outcomes.",
+    "instances": []
+  },
+  {
+    "verse": 57,
+    "reference": "Jeremiah 51:57",
+    "deliberation": "Repeats earlier imagery: God makes officials drunk and they 'sleep an endless sleep, never to awaken'. This again uses drunkenness for stupefaction and eternal sleep as metaphor for irrevocable death. I treat it as one condensed metaphor here, focused on the 'endless sleep' phrase.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיָשְׁנ֥וּ שְׁנַת־עוֹלָ֖ם וְלֹ֣א יָקִ֑יצוּ",
+        "english_text": "And they shall sleep an endless sleep, never to awaken",
+        "target": ["final fate of Babylon’s leaders", "their death under judgment", "human mortality/theology"],
+        "vehicle": ["sleep, especially an unending one", "state of unconscious rest", "human bodily state"],
+        "ground": ["inactivity and unresponsiveness as an image for permanent death; contrast with ordinary waking", "irreversibility of God’s judgment-death", "finality/cessation"],
+        "posture": ["presents their demise as absolute and irreversible, underlining the seriousness of God’s sentence", "solemn", "prophetic warning"],
+        "explanation": "The leaders’ death is depicted as an 'endless sleep,' stressing that they will never rise again from the judgment God inflicts.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 58,
+    "reference": "Jeremiah 51:58",
+    "deliberation": "After describing the walls and gates literally destroyed, the verse says, 'Peoples shall labor for nothing, and nations for fire, and they will weary themselves.' 'For fire' metaphorically indicates that their labor ends in what will be burned up—futile work whose product is consumed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְיִֽגְע֨וּ עַמִּ֧ים בְּדֵי־רִ֛יק וּלְאֻמִּ֥ים בְּדֵי־אֵ֖שׁ וְיָעֵֽפוּ",
+        "english_text": "Peoples shall labor for naught, and nations for fire, and they shall weary themselves",
+        "target": ["the efforts of nations in building and supporting Babylon", "international labor and investment", "politics/economy"],
+        "vehicle": ["working only to feed the fire (labor 'for fire')", "producing something destined immediately to be burned", "destruction by fire"],
+        "ground": ["futility of toiling for what will be destroyed; wasted effort", "all their work for Babylon ends in fiery ruin", "vanity/futility"],
+        "posture": ["declares all imperial-building efforts ultimately futile under God’s judgment", "anti-imperial critique", "prophetic theology"],
+        "explanation": "Nations are said to labor 'for fire', portraying their work as producing what will only be burned, emphasizing the futility of building up doomed Babylon.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 59,
+    "reference": "Jeremiah 51:59",
+    "deliberation": "Historical narrative note about Jeremiah’s command to Seraiah; language is straightforwardly descriptive with no figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 60,
+    "reference": "Jeremiah 51:60",
+    "deliberation": "Describes Jeremiah writing the disaster into a scroll. This is literal narration; the 'evil' that will come is conceptual but not an image here.",
+    "instances": []
+  },
+  {
+    "verse": 61,
+    "reference": "Jeremiah 51:61",
+    "deliberation": "Jeremiah instructs Seraiah to read all these words upon arriving in Babylon. The action and language are literal, not figurative.",
+    "instances": []
+  },
+  {
+    "verse": 62,
+    "reference": "Jeremiah 51:62",
+    "deliberation": "Affirms that Babylon will be cut off, without human or animal inhabitant, a desolation forever. This is formulaic ruin language but not framed as an explicit simile or metaphor beyond standard prophetic hyperbole.",
+    "instances": []
+  },
+  {
+    "verse": 63,
+    "reference": "Jeremiah 51:63",
+    "deliberation": "Commands tying a stone to the scroll and throwing it into the Euphrates. The act is symbolic and will be interpreted in v.64, but in this verse the wording is purely instructional; the figurative meaning is not yet stated here.",
+    "instances": []
+  },
+  {
+    "verse": 64,
+    "reference": "Jeremiah 51:64",
+    "deliberation": "Explains the symbolic act: 'Thus shall Babylon sink and not rise again.' This is a metaphor: Babylon’s political downfall is likened to an object sinking irretrievably in a river, corresponding to the scroll with a stone.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כָּ֠כָה תִּשְׁקַ֨ע בָּבֶ֤ל וְלֹֽא־תָקוּם֙",
+        "english_text": "Thus shall Babylon sink and never rise again",
+        "target": ["Babylon’s final overthrow as an empire", "city/empire’s political fate", "history/politics"],
+        "vehicle": ["an object sinking into deep water and not rising", "stone-bound scroll submerged in a river", "physics of sinking objects"],
+        "ground": ["irrevocable submergence, disappearance from sight, impossibility of self-recovery", "Babylon’s irreversible collapse under divine judgment", "final loss/irreversibility"],
+        "posture": ["emphatically declares the finality of Babylon’s fall to reassure hearers of its certainty", "assurance of judgment", "prophetic sign interpretation"],
+        "explanation": "Babylon’s downfall is portrayed as a sinking object that will never rise again, interpreting the symbolic act of casting the weighted scroll into the Euphrates as a sign of her irreversible ruin.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]

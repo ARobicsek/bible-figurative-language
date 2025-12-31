@@ -1,0 +1,293 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 9:1",
+    "deliberation": "I checked for metaphorical weapons, symbolic numbers, and idiomatic phrases. The destructive instruments seem literal within the vision. The clearest figurative element is the idiomatic/metonymic phrase 'called in my ears' (בְאׇזְנַי), where 'ears' stand for Ezekiel's hearing/awareness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיִּקְרָא בְאׇזְנַי קוֹל גָּדוֹל",
+        "english_text": "Then [God] called loudly in my hearing",
+        "target": ["Ezekiel’s perception of the divine message", "prophetic audition", "religious experience"],
+        "vehicle": ["Ears as the place where the voice is heard", "body part", "human body/physiology"],
+        "ground": ["Reception of sound through ears", "sensory reception", "human perception"],
+        "posture": ["Narrator’s way of stressing direct reception", "descriptive idiom", "prophetic narrative style"],
+        "explanation": "The phrase 'in my ears' uses the physical organ (ears) as a metonymy for hearing/awareness; it is also an idiomatic way in Biblical Hebrew to say 'in my hearing.'",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 9:2",
+    "deliberation": "I considered whether the six 'men' and the linen‑clothed scribe are linguistic metaphors for angels or invaders, but within the vision they are simply described as men with weapons and a writing case. No explicit figurative wording (metaphor, idiom, hyperbole, etc.) appears; the symbolism belongs to the vision as a whole, not to the phrasing of this verse.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 9:3",
+    "deliberation": "I looked for metaphors in the movement of the divine Presence and in the description of the linen‑clothed figure. The key figurative element is 'the glory of the God of Israel' rising and moving, where 'glory' functions as a metonymy for God’s manifest presence and is also somewhat personified as a mobile entity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּכְב֣וֹד׀ אֱלֹהֵי יִשְׂרָאֵל נַעֲלָה מֵעַל הַכְּרוּב ... אֶל מִפְתַּן הַבָּיִת",
+        "english_text": "Now the Presence [glory] of the God of Israel had moved from the cherub on which it had rested to the platform of the House.",
+        "target": ["The active presence of Israel’s God", "divine presence", "theology"],
+        "vehicle": ["‘Glory’ as a quasi‑visible, moving entity", "manifestation/attribute", "religious imagery"],
+        "ground": ["The presence is experienced as a visible, mobile manifestation", "representation/embodiment", "how the divine interacts with space"],
+        "posture": ["Prophetic portrayal of God’s departure from the temple", "theological warning", "covenantal judgment"],
+        "explanation": "‘Glory of the God of Israel’ functions as a metonymy for God’s manifest presence, and it is personified as rising and moving from the cherub to the threshold, depicting divine withdrawal from the sanctuary.",
+        "confidence": 0.87
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 9:4",
+    "deliberation": "I examined whether the command to mark foreheads is purely literal within the vision or functions symbolically. The 'mark on the foreheads' is a symbolic sign indicating divine protection and distinction; the mark itself stands figuratively for being set apart and spared.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וְהִתְוִיתָ תָּו עַל־מִצְחֹת הָאֲנָשִׁים",
+        "english_text": "and put a mark on the foreheads of the persons",
+        "target": ["The people who will be spared from judgment", "righteous remnant", "covenant community"],
+        "vehicle": ["A visible mark on the forehead", "identifying sign/seal", "ritual/social marking"],
+        "ground": ["The mark distinguishes and protects its bearer", "identity/ownership/protection", "social and religious separation"],
+        "posture": ["Divine act of preservation amid judgment", "symbolic sealing", "apocalyptic/judgment imagery"],
+        "explanation": "The physical mark functions as a symbolic/metaphorical seal of divine ownership and protection; the sign itself stands for the status of being spared.",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 9:5",
+    "deliberation": "I looked for rhetorical exaggerations and idioms. The primary figurative wording is the idiom 'let not your eye spare,' where the 'eye' stands metonymically for compassion and the whole phrase idiomatically means 'show no pity.'",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אַל־תָּחֹס עֵינְכֶם וְאַל־תַּחְמֹלוּ",
+        "english_text": "show no pity or compassion [lit. let not your eye spare and do not have compassion]",
+        "target": ["The executioners’ emotional response", "compassion/mercy", "human affect"],
+        "vehicle": ["The eye as the agent that 'spares'", "body part", "human body/vision"],
+        "ground": ["The eye is associated with regard, favor, or turning away from harm", "perception tied to compassion", "embodied emotion"],
+        "posture": ["Command to withhold mercy in judgment", "judicial severity", "divine retribution"],
+        "explanation": "The expression uses 'eye' metonymically for compassion and is an idiomatic way of ordering them not to show mercy.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 9:6",
+    "deliberation": "I considered whether the demographic list is literal or functions as a rhetorical device. The series 'old man, young man, maiden, little ones, and women' is a stock totalizing list that functions like a merism/enumeration to express indiscriminate, comprehensive judgment on all social categories.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "זָקֵן בָּחוּר וּבְתוּלָה וְטַף וְנָשִׁים תַּהַרְגוּ",
+        "english_text": "Kill off graybeard, youth and maiden, women and children",
+        "target": ["All inhabitants of the city subject to judgment", "entire population", "covenant community under judgment"],
+        "vehicle": ["Representative list of age and gender categories", "enumeration/meristic list", "social structure"],
+        "ground": ["By naming all key demographic groups, it conveys comprehensiveness and lack of exception", "representative totality", "rhetorical emphasis on scope"],
+        "posture": ["Emphatic portrayal of total judgment", "judicial rhetoric", "prophetic warning"],
+        "explanation": "The list of age and gender groups functions as a rhetorical device similar to a merism, representing all segments of the population to stress that judgment is comprehensive and indiscriminate.",
+        "confidence": 0.8
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 9:7",
+    "deliberation": "I checked 'defile the house' and 'fill the courts with the slain.' Defilement is cultically literal here (corpses in the temple), but 'fill the courts with the slain' is hyperbolic imagery, portraying the courts as packed with bodies to emphasize the scale of slaughter.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּמַלְאוּ אֶת־הַחֲצֵרוֹת חֲלָלִים",
+        "english_text": "and fill the courts with the slain",
+        "target": ["The extent of deaths in and around the temple", "severity of judgment", "historical devastation"],
+        "vehicle": ["Courtyards completely filled with corpses", "overfilling of a space", "spatial imagery"],
+        "ground": ["An overfilled space portrays an overwhelming, massive quantity", "abundance/intensity", "visual horror"],
+        "posture": ["Intense depiction of temple desecration", "prophetic shock language", "judgment oracle"],
+        "explanation": "The command to 'fill the courts with the slain' is hyperbolic language picturing the temple courts as crammed with corpses to stress the scale and horror of the coming judgment.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 9:8",
+    "deliberation": "I evaluated Ezekiel’s falling on his face (likely a standard posture that can be literal) and his plea. The clearly figurative expression is 'pouring out your fury upon Jerusalem,' which metaphorically depicts divine wrath as a liquid being poured out.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּשׇׁפְכְּךָ אֶת־חֲמָתְךָ עַל־יְרוּשָׁלִָם",
+        "english_text": "pouring out Your fury upon Jerusalem",
+        "target": ["God’s exercise of judgment against Jerusalem", "divine wrath/judgment", "theology of retribution"],
+        "vehicle": ["Liquid being poured out from a container", "outpouring of fluid", "physical process"],
+        "ground": ["Like a poured liquid that spreads uncontrollably and completely, God’s wrath is depicted as overwhelming and unrestrained", "intensity and extensiveness", "embodied emotion as substance"],
+        "posture": ["Ezekiel’s anguished appeal against total destruction", "intercessory rhetoric", "prophetic lament"],
+        "explanation": "The phrase uses the common biblical metaphor of wrath as a liquid that can be 'poured out,' emphasizing the intensity and thoroughness of divine judgment; it functions as a fixed idiom in judgment contexts.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 9:9",
+    "deliberation": "I noted several figurative elements: (1) 'the land is full of blood'—land as container filled with bloodshed; (2) 'the city is full of perversion'—city as container filled with abstract evil; both are container metaphors with hyperbolic force; (3) 'YHWH has forsaken the land'—an idiom, with 'land' metonymic for its inhabitants and God portrayed as having departed.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַתִּמָּלֵא הָאָרֶץ דָּמִים",
+        "english_text": "the land is full of blood",
+        "target": ["The prevalence of bloodshed/violence in Israel and Judah", "social violence", "moral condition of the nation"],
+        "vehicle": ["Land imagined as a vessel filled with blood", "container full of liquid", "spatial image"],
+        "ground": ["A container filled with liquid suggests pervasive presence and excess", "pervasiveness and saturation", "moral pollution imagery"],
+        "posture": ["Divine evaluation of the people’s violence", "prophetic indictment", "judgment discourse"],
+        "explanation": "The phrase metaphorically portrays the land as a container filled with blood (violence, bloodshed); 'full' has a hyperbolic nuance, stressing that violence is pervasive everywhere.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָעִיר מָלְאָה מֻטֶּה",
+        "english_text": "and the city is full of corruption [perversion/injustice]",
+        "target": ["The extent of injustice/perversion in the city", "social and legal corruption", "urban community’s morality"],
+        "vehicle": ["City imagined as a container filled with an abstract substance (corruption)", "container image", "spatial fullness"],
+        "ground": ["Fullness suggests that corruption pervades every part of the city", "comprehensiveness and saturation", "moral contamination"],
+        "posture": ["Divine characterization of Jerusalem’s condition", "prophetic accusation", "judicial rhetoric"],
+        "explanation": "The city is depicted metaphorically as filled up with 'perversion,' an abstract evil treated like a substance; like the previous clause, the fullness language is hyperbolic to stress total moral decay.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עָזַב יְהוָה אֶת־הָאָרֶץ",
+        "english_text": "GOD has forsaken the land",
+        "target": ["God’s withdrawal of care and protection from His people", "loss of divine favor", "covenantal relationship"],
+        "vehicle": ["Leaving or abandoning a geographical area", "physical departure/separation", "spatial movement"],
+        "ground": ["To forsake a place/people is to cease caring for and watching over them", "absence, neglect, non‑involvement", "relationship breakdown"],
+        "posture": ["People’s cynical interpretation of current events", "theological complaint", "unbelief in divine oversight"],
+        "explanation": "The saying idiomatically expresses the belief that God has withdrawn His care; 'the land' stands metonymically for its inhabitants, and divine oversight is conceptualized as spatial presence/absence.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 9:10",
+    "deliberation": "I noted two idiomatic/figurative phrases: (1) 'my eye will not spare' repeats the metonymic idiom of the eye for compassion; (2) 'I have put their way on their head' is a retribution idiom, metaphorically depicting their conduct as something laid on their own heads as penalty.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "לֹא־תָחוֹס עֵינִי וְלֹא אֶחְמֹל",
+        "english_text": "I, in turn, will show no pity or compassion [lit. my eye will not spare, and I will not have compassion]",
+        "target": ["God’s disposition toward the guilty", "withholding of mercy", "divine emotional response"],
+        "vehicle": ["The eye that 'spares' or does not spare", "body part", "human embodiment of emotion"],
+        "ground": ["The eye, associated with how one looks on another, represents favor or lack of it", "regard/compassion tied to seeing", "embodied mercy or severity"],
+        "posture": ["Announcement of implacable judgment", "judicial resolve", "covenantal retribution"],
+        "explanation": "As in v.5, 'eye' is metonymic for compassion; 'my eye will not spare' is a conventional idiom meaning that God will show no mercy.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "דַּרְכָּם בְּרֹאשָׁם נָתָתִּי",
+        "english_text": "I will give them their deserts [lit. I have put their way on their head]",
+        "target": ["The punishment they will receive for their conduct", "retributive outcome", "judgment experience"],
+        "vehicle": ["Putting someone’s 'way' (conduct) on their head", "burden/object placed on head", "physical imposition"],
+        "ground": ["As a burden placed on one’s head rests upon and affects that person, so their own conduct comes back upon them in judgment", "consequences borne personally", "measure‑for‑measure repayment"],
+        "posture": ["Assertion of just, reciprocal punishment", "lex talionis principle", "theology of moral order"],
+        "explanation": "This idiom metaphorically pictures their behavior ('way') as an object laid on their heads, expressing the idea that their own deeds return upon them as punishment.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 9:11",
+    "deliberation": "This verse reports the linen‑clothed figure’s return and simple statement of obedience. I checked for symbolic verbs, idioms, or metaphors, but the language is straightforward narrative with no explicit figurative expressions distinct from the broader vision symbolism.",
+    "instances": []
+  }
+]

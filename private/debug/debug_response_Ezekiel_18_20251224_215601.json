@@ -1,0 +1,940 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 18:1",
+    "deliberation": "Examined for idiomatic or metaphorical expressions. The clause \"the word of YHWH came to me\" is the standard prophetic reception formula and uses motion language for an intangible message.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהוָה אֵלַ֥י",
+        "english_text": "the word of GOD came to me",
+        "target": ["prophetic revelation/message", "divine communication", "religious experience"],
+        "vehicle": ["a 'word' coming to someone", "moving object/event", "physical motion"],
+        "ground": ["arrival from outside, initiating encounter", "directedness toward a recipient", "communication/contact"],
+        "posture": ["emphasizes initiative and reality of revelation", "solemn prophetic authority", "theological assurance of God's active speaking"],
+        "explanation": "The intangible divine message is depicted as a concrete \"word\" that travels and arrives, personifying and metonymically representing God's act of revelation.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 18:2",
+    "deliberation": "Looked for poetic or proverbial imagery. The proverb about fathers eating sour grapes and children's teeth being set on edge is a compact figurative saying that encapsulates an idea about intergenerational guilt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אָבוֹת יֹאכְלוּ בֹסֶר וְשִׁנֵּי הַבָּנִים תִּקְהֶינָה",
+        "english_text": "Parents eat sour grapes and their children’s teeth are blunted",
+        "target": ["the transfer of consequences/guilt between generations", "experience of punishment for others' sins", "covenantal/moral retribution"],
+        "vehicle": ["eating sour grapes affecting someone else’s teeth", "physical cause and bodily effect", "sensory experience of sourness"],
+        "ground": ["one party's action causing unpleasant consequences for another", "involuntary suffering from others' choices", "unfair-seeming linkage of cause and effect"],
+        "posture": ["popular complaint about divine justice", "cynical/resentful stance toward God's governance", "theological protest"],
+        "explanation": "The proverb uses the image of fathers eating unripe grapes and children feeling the dental effect as a metaphor and idiom for children suffering consequences for their parents’ sins.",
+        "confidence": 0.98
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 18:3",
+    "deliberation": "Checked whether the oath formula or mention of the proverb is figurative beyond formulaic usage. \"As I live\" is a standard divine oath and the rest is literal prohibition of using the proverb.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 18:4",
+    "deliberation": "Considered whether \"nephesh\" is purely anthropological or a figure. The verse uses \"all the nephesh\" and \"the nephesh that sins\" in a way that treats \"life/soul\" as standing for the whole person.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הֵן כׇּל־הַנְּפָשׁוֹת לִי הֵנָּה ... הַנֶּפֶשׁ הַחֹטֵאת הִיא תָמוּת",
+        "english_text": "Consider, all lives are Mine ... Only the person (lit. the soul) who sins shall die",
+        "target": ["individual human beings", "persons as accountable agents", "humanity under God"],
+        "vehicle": ["\"soul\" / \"life\" (נפש) as a part/aspect", "inner life-principle", "psychophysical entity"],
+        "ground": ["the 'soul' represents the whole living person", "life as that which belongs to God", "seat of identity and accountability"],
+        "posture": ["asserts divine ownership over each person", "stresses individual responsibility", "theological clarification of judgment"],
+        "explanation": "\"Nephesh\" (life/soul) functions as a synecdoche for the whole person: the 'soul that sins' means the person who sins, not a detachable part.",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 18:5",
+    "deliberation": "The verse defines a righteous man and mentions doing justice and righteousness. These terms are moral-legal categories used straightforwardly without evident figurative imagery.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 18:6",
+    "deliberation": "Looked especially at cultic and idiomatic phrases. \"Eat on the mountains\" and \"raise his eyes to the idols\" are both stock idioms for idol worship, not merely geographic or optical descriptions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֶל־הֶהָרִים לֹא אָכָל",
+        "english_text": "he has not eaten on the mountains",
+        "target": ["participation in idolatrous cultic meals", "idol worship practices", "religious apostasy"],
+        "vehicle": ["eating on high places", "festive cultic banquets at hilltop shrines", "geographic elevation (mountains)"],
+        "ground": ["ritual meals as emblematic of worship", "high places as locations of forbidden cults", "physical participation signifying religious allegiance"],
+        "posture": ["condemns illicit worship", "marks such participation as disqualifying for righteousness", "negative theological judgment"],
+        "explanation": "The phrase condenses idolatrous worship into the image of eating at shrines on the hills, using location and meal as a metonymic idiom for the whole cultic practice.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְעֵינָיו לֹא נָשָׂא אֶל־גִּלּוּלֵי בֵּית יִשְׂרָאֵל",
+        "english_text": "and has not raised his eyes to the fetishes (idols) of the House of Israel",
+        "target": ["inner orientation of worship and trust", "idolatrous devotion", "religious allegiance"],
+        "vehicle": ["lifting up the eyes toward idols", "physical gaze and upward look", "bodily orientation"],
+        "ground": ["directing one’s gaze symbolizes seeking/help or honor", "eyes as indicators of desire and worship", "orientation toward an object as devotion"],
+        "posture": ["disapproves of idolatrous looking/seeking", "evaluates such orientation as sinful", "theological polemic against idols"],
+        "explanation": "The idiom uses the physical act of lifting up the eyes toward idols as a metonymic and metaphorical way to speak of seeking, honoring, or trusting them.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 18:7",
+    "deliberation": "Actions listed (not oppressing, returning pledge, not robbing, giving bread, clothing the naked) are social deeds that can be literally performed. While they can represent charity more broadly, here they seem concrete legal-ethical examples rather than figurative.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 18:8",
+    "deliberation": "Most financial terms are literal. The phrase about withdrawing one’s hand from injustice stands out as bodily-language for ceasing wrongdoing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מֵעָוֶל יָשִׁיב יָדוֹ",
+        "english_text": "he has abstained from wrongdoing (lit. he has withdrawn his hand from injustice)",
+        "target": ["ceasing active participation in unjust practices", "moral restraint from wrongdoing", "ethical behavior"],
+        "vehicle": ["withdrawing one's hand from something", "stopping manual action", "bodily distance from an object"],
+        "ground": ["the hand represents active agency", "to pull back the hand pictures refraining from action", "ending physical contact symbolizes ending involvement"],
+        "posture": ["commends self-restraint from evil", "frames injustice as something one should pull back from", "ethical exhortation via vivid imagery"],
+        "explanation": "The hand stands metonymically for one’s actions, and withdrawing it from injustice is a metaphorical idiom for stopping unjust behavior.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 18:9",
+    "deliberation": "The notable figurative element is the common biblical metaphor of \"walking\" in statutes, where moral obedience is pictured as travel along a path.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּחֻקּוֹתַי יְהַלֵּךְ",
+        "english_text": "if he has followed My laws (lit. walked in My statutes)",
+        "target": ["consistent obedience to God’s commands", "moral lifestyle", "covenant faithfulness"],
+        "vehicle": ["walking within statutes as if they were a path", "journeying along a way", "regulated movement"],
+        "ground": ["ongoing, step-by-step progress", "staying within set boundaries/directions", "life as a path requiring guidance"],
+        "posture": ["presents obedience as an ordered, guided life-journey", "approving stance toward such 'walking'", "didactic moral portrayal"],
+        "explanation": "Obedience is conceptualized as walking along God’s statutes as though they formed a road, using journey imagery for moral conduct.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 18:10",
+    "deliberation": "The description of the son includes moral labels and one idiomatic phrase, \"shedder of blood,\" which stands for a murderer.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "פָּרִיץ שֹׁפֵךְ דָּם",
+        "english_text": "a ruffian, a shedder of blood",
+        "target": ["committing homicide", "murderous behavior", "grave violence"],
+        "vehicle": ["shedding blood", "spilling life-fluid", "visible loss of blood"],
+        "ground": ["blood stands for life", "spilling blood signifies taking life", "visceral image for violent killing"],
+        "posture": ["strongly condemns such violence", "frames murder in shocking, physical terms", "heightens moral revulsion"],
+        "explanation": "The idiom \"shedder of blood\" uses blood metonymically for life, so that \"shedding blood\" stands for committing murder.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 18:11",
+    "deliberation": "Again examined cultic and sexual phrases. As before, \"eaten on the mountains\" is idiomatic for idol worship; the defilement of a neighbor’s wife is literal sexual transgression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "כִּי גַם אֶל־הֶהָרִים אָכַל",
+        "english_text": "That is, he has eaten on the mountains",
+        "target": ["engagement in idolatrous sacrificial meals", "forbidden religious worship", "spiritual infidelity"],
+        "vehicle": ["eating at elevated shrines", "meal on mountains/high places", "localized cultic banqueting"],
+        "ground": ["ritual meals epitomize participation in a cult", "high places symbolize idolatrous worship sites", "table-fellowship as covenantal association"],
+        "posture": ["presents such worship as blameworthy", "associates it with the son's wickedness", "prophetic critique of non-YHWH cults"],
+        "explanation": "As in verse 6, \"eating on the mountains\" is a metonymic, idiomatic way of referring to participating in idolatrous worship celebrated with meals at high places.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 18:12",
+    "deliberation": "Most actions (wronging, robbing, not returning pledge) are straightforward. The repeated idiom of \"raising his eyes to the idols\" functions as earlier.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֶל־הַגִּלּוּלִים נָשָׂא עֵינָיו",
+        "english_text": "he has raised his eyes to the fetishes (idols)",
+        "target": ["seeking help from idols", "idolatrous reverence and trust", "religious allegiance away from YHWH"],
+        "vehicle": ["lifting the eyes toward an object", "upward gaze", "bodily orientation"],
+        "ground": ["gaze indicates desire, reliance, and honor", "turning one's eyes symbolizes turning one's heart", "physical looking stands for inner seeking"],
+        "posture": ["condemns the inner and outer orientation toward idols", "emphasizes culpable intention", "supports prophetic polemic against idolatry"],
+        "explanation": "The idiom uses the act of lifting the eyes toward idols as a metonymic metaphor for turning one's desire and trust toward them.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 18:13",
+    "deliberation": "Financial phrases are literal. The closing statement \"his blood will be upon him\" is an idiom where blood stands for guilt and 'on him' frames responsibility as a burden resting on the person.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דָּמָיו בּוֹ יִהְיֶה",
+        "english_text": "his blood shall be upon him",
+        "target": ["guilt and liability for his own death", "moral responsibility for punishment", "self-incurred judgment"],
+        "vehicle": ["one’s own blood being upon oneself", "blood as something resting on a person", "visible stain/burden"],
+        "ground": ["blood symbolizes life taken and consequent guilt", "what is 'upon' someone is their burden/charge", "self-caused outcomes cling to the doer"],
+        "posture": ["stresses self-responsibility for the death sentence", "absolves others (and God) from injustice", "underscores moral causality"],
+        "explanation": "The idiom uses blood metonymically for guilt, picturing it as resting upon the guilty party as a burden or stain they themselves bear.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 18:14",
+    "deliberation": "This verse speaks of a son seeing his father's sins and not doing likewise. \"Seeing\" functions cognitively but in standard Hebrew this is conventional perception language, not a crafted metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Ezekiel 18:15",
+    "deliberation": "Parallel to verses 6 and 11, again contains idioms for idolatry. Both \"eating on the mountains\" and \"raising his eyes to the fetishes\" recur as figurative descriptions of idol worship.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "עַל־הֶהָרִים לֹא אָכָל",
+        "english_text": "He has not eaten upon the mountains",
+        "target": ["participation in idol cults", "wrongful worship", "spiritual apostasy"],
+        "vehicle": ["eating food at high places", "ritual meal on mountains", "physical feasting"],
+        "ground": ["cultic meals epitomize worship practices", "high places are emblematic of forbidden shrines", "joining a meal signals religious fellowship"],
+        "posture": ["praises abstention from idolatry", "frames cultic meals as morally loaded actions", "prophetic critique of such practices"],
+        "explanation": "The phrase condenses the complex practice of idolatrous worship into the physical image of eating at mountain shrines, a metonymic metaphor for the whole cult.",
+        "confidence": 0.93
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְעֵינָיו לֹא נָשָׂא אֶל־גִּלּוּלֵי בֵּית יִשְׂרָאֵל",
+        "english_text": "and has not raised his eyes to the fetishes of the House of Israel",
+        "target": ["inner orientation of desire and trust toward idols", "idolatrous seeking", "religious devotion"],
+        "vehicle": ["lifting the eyes toward idols", "directed gaze", "upward look"],
+        "ground": ["eyes represent attention and desire", "direction of gaze symbolizes where trust is placed", "looking up can signify reverence or appeal"],
+        "posture": ["commends inner faithfulness to YHWH", "rejects even the desire that looks toward idols", "moral exhortation via bodily metaphor"],
+        "explanation": "As in earlier verses, raising the eyes toward idols is an idiomatic, metaphorical way to speak of orienting one’s heart and trust toward them.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Ezekiel 18:16",
+    "deliberation": "The acts listed (not wronging, not seizing pledge, giving bread, clothing the naked) can be taken literally as social deeds. There is no clearly crafted figurative idiom beyond normal concrete description.",
+    "instances": []
+  },
+  {
+    "verse": 17,
+    "reference": "Ezekiel 18:17",
+    "deliberation": "Identified two recurring idioms: withdrawing the hand from the poor, and walking in God's statutes. Both use bodily-motion imagery for moral/economic conduct.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "מֵעָנִי הֵשִׁיב יָדוֹ",
+        "english_text": "he has refrained from oppressing the poor (lit. he has withdrawn his hand from the poor)",
+        "target": ["ceasing exploitative treatment of the poor", "economic restraint", "social justice"],
+        "vehicle": ["withdrawing the hand away from someone", "pulling back one's physical reach", "stopping touch or grasp"],
+        "ground": ["the hand stands for active power and exploitation", "pulling back pictures ending such actions", "physical non-contact symbolizes non-oppression"],
+        "posture": ["commends protection of the vulnerable", "frames exploitation as wrongful grasping", "moral exhortation by vivid bodily image"],
+        "explanation": "Here the hand is metonymic for powerful, oppressive action; withdrawing it is a metaphorical idiom for no longer exploiting the poor.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּחֻקּוֹתַי הָלָךְ",
+        "english_text": "he has followed My laws (lit. walked in My statutes)",
+        "target": ["habitual obedience to divine commands", "ethical way of life", "covenantal conduct"],
+        "vehicle": ["walking within statutes", "journeying along set paths", "ordered movement"],
+        "ground": ["life is like a journey", "commands mark out a road to follow", "faithfulness is steady step-by-step progress"],
+        "posture": ["approves steady devotion to God's way", "casts lawkeeping as a guided path", "didactic depiction of moral life"],
+        "explanation": "As in verse 9, obedience is represented as walking inside God’s statutes as though traveling along a marked-out path.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Ezekiel 18:18",
+    "deliberation": "The father’s actions (defrauding, robbing) are literal. \"He died in his iniquity\" is a typical way of connecting death and sin, but functions as a causal/legal statement more than a developed metaphor.",
+    "instances": []
+  },
+  {
+    "verse": 19,
+    "reference": "Ezekiel 18:19",
+    "deliberation": "The question \"why has not the son borne the iniquity of the father\" preserves the idiom of 'bearing iniquity', a metaphoric way of speaking of carrying guilt like a burden.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מַדֻּעַ לֹא־נָשָׂא הַבֵּן בַּעֲוֺן הָאָב",
+        "english_text": "Why has not the son shared the burden of his father’s guilt (lit. borne the iniquity of the father)?",
+        "target": ["legal/moral liability for another’s sins", "responsibility for guilt", "experience of punishment"],
+        "vehicle": ["bearing/carrying iniquity as a load", "supporting a weight", "physical burden-bearing"],
+        "ground": ["guilt is like a load that can be carried or not", "to 'bear' it is to endure its consequences", "transfer of burden pictures transfer of liability"],
+        "posture": ["challenges an assumed pattern of shared liability", "opens space to redefine justice", "didactic correction of popular theology"],
+        "explanation": "The idiom pictures iniquity as a burden that can be borne; to 'bear iniquity' is to carry its guilt and penalty.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Ezekiel 18:20",
+    "deliberation": "Contains several stock metaphors: 'the soul that sins', bearing iniquity, and righteousness/wickedness being 'upon' someone. All frame moral realities in physical/bodily terms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הַנֶּפֶשׁ הַחֹטֵאת הִיא תָמוּת",
+        "english_text": "Only the person (lit. the soul) who sins shall die",
+        "target": ["the individual human being who sins", "personal moral agent", "each person under judgment"],
+        "vehicle": ["\"soul\" / \"life\" (נפש)", "inner life-principle", "psychophysical entity"],
+        "ground": ["the 'soul' represents the whole living self", "life as what is at stake in sin", "identity located in the life-principle"],
+        "posture": ["emphasizes individual accountability", "clarifies that death attaches to the acting person", "theological precision about judgment"],
+        "explanation": "As in verse 4, 'nephesh' functions as a synecdoche for the entire person: the 'soul that sins' means the person who sins.",
+        "confidence": 0.83
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בֵּן לֹא־יִשָּׂא בַּעֲוֺן הָאָב וְאָב לֹא יִשָּׂא בַּעֲוֺן הַבֵּן",
+        "english_text": "A child shall not share the burden of a parent’s guilt, nor shall a parent share the burden of a child’s guilt (lit. shall not bear the iniquity)",
+        "target": ["legal and moral liability for another’s sin", "experience of punishment for others' deeds", "distribution of guilt"],
+        "vehicle": ["bearing iniquity as a physical burden", "carrying a load", "weight laid upon a person"],
+        "ground": ["guilt conceived as a weight that can be placed on or removed from someone", "to bear is to endure or suffer consequences", "non-transfer of burden mirrors non-transfer of liability"],
+        "posture": ["denies the transferability of guilt-burdens between generations", "underscores strict individual justice", "didactic correction of communal assumptions"],
+        "explanation": "The idiom again pictures iniquity as something carried; this verse explicitly denies that such a 'load' of guilt is borne across generational lines.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "צִדְקַת הַצַּדִּיק עָלָיו תִּהְיֶה וְרִשְׁעַת הָרָשָׁע עָלָיו תִּהְיֶה",
+        "english_text": "the righteousness of the righteous shall be upon them alone, and the wickedness of the wicked shall be upon them alone",
+        "target": ["moral status and its consequences belonging to each person", "righteous or wicked standing", "personal merit or guilt"],
+        "vehicle": ["righteousness/wickedness being 'upon' someone", "something resting on or covering a person", "clothing/burden imagery"],
+        "ground": ["what is 'upon' someone is what characterizes and affects them", "moral qualities cling to the individual", "covering/burden suggests inalienable association"],
+        "posture": ["insists that each person 'wears' their own moral status", "rejects the idea that another bears it instead", "didactic insistence on personal responsibility"],
+        "explanation": "Righteousness and wickedness are conceptualized as things that rest upon a person like a covering or burden, emphasizing personal ownership of moral status.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Ezekiel 18:21",
+    "deliberation": "Key figurative element is the 'turning back' from sins, a directional verb used metaphorically for repentance. 'Live' here can include covenant flourishing but in context is primarily literal life.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָרָשָׁע כִּי יָשׁוּב מִכׇּל־חַטֹּאתָיו אֲשֶׁר עָשָׂה",
+        "english_text": "if someone wicked repents (lit. turns back) from all the sins that were committed",
+        "target": ["moral and spiritual change of direction", "repentance from sinful behavior", "conversion of lifestyle"],
+        "vehicle": ["turning back from a course", "reorientation of movement", "changing physical direction"],
+        "ground": ["life conceptualized as a path one walks", "sin as a wrong way traveled", "repentance as reversing one's course"],
+        "posture": ["presents repentance as accessible and decisive", "encourages turning as pathway to life", "offers hope of reversal of destiny"],
+        "explanation": "The verb 'turn back' (שׁוּב) is used metaphorically for repentance, picturing moral change as reversing one’s direction on a life path defined by one’s sins.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Ezekiel 18:22",
+    "deliberation": "Examined memory language. \"Transgressions shall not be remembered\" uses cognitive imagery for divine judicial treatment—God not 'remembering' means not bringing to account.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כׇּל־פְּשָׁעָיו אֲשֶׁר עָשָׂה לֹא יִזָּכְרוּ לוֹ",
+        "english_text": "None of the transgressions they committed shall be remembered against them",
+        "target": ["God’s judicial regard for past sins", "ongoing liability for former transgressions", "record of guilt"],
+        "vehicle": ["remembering or not remembering facts", "retaining or erasing from memory", "cognitive recollection"],
+        "ground": ["to 'remember' is to take into account or act upon", "to 'forget' (not remember) is to disregard in action", "record keeping parallels memory"],
+        "posture": ["portrays divine mercy as a kind of intentional forgetting", "assures repentant people their guilt record is cancelled", "pastoral encouragement"],
+        "explanation": "The verse uses the metaphor/idiom of memory for divine judicial action: God’s not 'remembering' sins means He no longer counts them against the person.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Ezekiel 18:23",
+    "deliberation": "Looked for personification or metaphor. The key phrase \"turn back from their ways\" uses derekh ('way') as a life-course metaphor and 'turn back' for repentance.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּשׁוּבוֹ מִדְּרָכָיו וְחָיָה",
+        "english_text": "when they turn back from their ways and live",
+        "target": ["change of behavior and life-direction", "repentance from a wicked lifestyle", "moral reorientation"],
+        "vehicle": ["turning back from one’s ways (paths)", "reversing travel on a road", "spatial change of course"],
+        "ground": ["life presented as a road one walks", "pattern of conduct as 'ways'", "repentance as retracing steps off a wrong path"],
+        "posture": ["expresses God’s preference for repentance over death", "frames repentance as accessible path to life", "invites change rather than fatalism"],
+        "explanation": "The combination of 'ways' and 'turning back' uses the path metaphor for life and depicts repentance as changing the route one travels.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Ezekiel 18:24",
+    "deliberation": "Identified (1) 'turning from righteousness' as the same turning/path metaphor and (2) the non-remembrance of earlier righteous deeds using the memory-judgment metaphor as in verse 22.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְשׁוּב צַדִּיק מִצִּדְקָתוֹ",
+        "english_text": "if someone righteous turns away from righteousness",
+        "target": ["abandoning a previously righteous lifestyle", "apostasy or moral backsliding", "change in ethical trajectory"],
+        "vehicle": ["turning away from a position or path", "changing direction", "reorienting movement"],
+        "ground": ["righteousness pictured as a path or standing one can turn from", "direction of travel symbolizes moral choice", "movement imagery expresses change"],
+        "posture": ["warns that prior righteousness does not guarantee future safety", "underscores the seriousness of moral reversal", "didactic caution"],
+        "explanation": "The righteous person is said to 'turn from' righteousness, using physical turning to represent abandoning a righteous way of life.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כׇּל־צִדְקֹתָיו אֲשֶׁר־עָשָׂה לֹא תִזָּכַרְנָה",
+        "english_text": "None of the righteous deeds that they did shall be remembered",
+        "target": ["God’s judicial regard for prior righteous acts", "ongoing credit for earlier obedience", "moral accounting record"],
+        "vehicle": ["remembering or not remembering", "cognitive recollection of past deeds", "mental record-keeping"],
+        "ground": ["what is 'remembered' influences present treatment", "forgetting erases practical effect", "juridical record parallel to memory"],
+        "posture": ["stresses that present sin can cancel the benefit of past righteousness", "highlights seriousness of betrayal", "sobering theological warning"],
+        "explanation": "The same memory metaphor as in verse 22 is applied to righteousness: God’s not 'remembering' it means it is not credited in the face of subsequent treachery.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Ezekiel 18:25",
+    "deliberation": "Searched for figurative terms. The repeated phrase \"the way of the Lord / your ways\" uses 'way' (derekh) metaphorically for conduct or policy, and 'House of Israel' is a metonymy for the people.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דֶּרֶךְ אֲדֹנָי ... דַרְכֵיכֶם",
+        "english_text": "the Sovereign’s way ... your ways",
+        "target": ["God’s manner of judging, Israel’s manner of living", "divine policy and human behavior", "ethical/theological patterns"],
+        "vehicle": ["a 'way' or road one travels", "path of movement", "route or course"],
+        "ground": ["behavior and policy are like a path to follow", "consistency/direction of action mirrors a road’s course", "one can evaluate a 'way' as straight or twisted"],
+        "posture": ["defends the rightness of God’s 'way' and indicts Israel’s", "invites reflection on moral direction", "rhetorical contrast between divine and human paths"],
+        "explanation": "The term 'way' metaphorically represents habitual conduct or policy, contrasting God’s just 'way' with Israel’s unjust 'ways.'",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יִשְׂרָאֵל",
+        "english_text": "House of Israel",
+        "target": ["the people/nation of Israel", "collective community", "covenant Israel"],
+        "vehicle": ["\"house\" as a household or dynasty", "domestic structure", "family unit"],
+        "ground": ["a 'house' can stand for the family inhabiting it", "collective identity expressed as one household", "spatial unit representing social unit"],
+        "posture": ["addresses the whole people as a single family unit", "underscores solidarity and shared responsibility", "covenantal rhetoric"],
+        "explanation": "The phrase 'House of Israel' is a metonymy where 'house' stands for the entire people descended from Israel.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 26,
+    "reference": "Ezekiel 18:26",
+    "deliberation": "Parallels verse 24, reiterating the 'turning from righteousness' motif. The dying 'for' the wrong is causal, not especially figurative beyond legal usage.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "בְּשׁוּב־צַדִּיק מִצִּדְקָתוֹ וְעָשָׂה עָוֶל",
+        "english_text": "When someone righteous turns away from righteousness and does wrong",
+        "target": ["abandoning a righteous pattern of life", "moral apostasy", "ethical reversal"],
+        "vehicle": ["turning away from a path or position", "changing direction", "spatial reorientation"],
+        "ground": ["righteousness conceptualized as a path one walks", "leaving that path is like turning aside", "movement imagery conveys change and betrayal"],
+        "posture": ["emphasizes accountability for present conduct over past record", "warns against presumption based on former righteousness", "didactic warning"],
+        "explanation": "The physical act of 'turning' is used metaphorically for forsaking a righteous way of life and engaging in injustice.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Ezekiel 18:27",
+    "deliberation": "Identified two expressions: (1) turning back from wickedness (path metaphor) and (2) 'he will make his life live' as an idiom portraying a person as actively preserving their own life.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וּבְשׁוּב רָשָׁע מֵרִשְׁעָתוֹ אֲשֶׁר עָשָׂה",
+        "english_text": "if someone wicked turns back from the wickedness that is practiced",
+        "target": ["repentance from a sinful way of life", "change in moral direction", "conversion from evil"],
+        "vehicle": ["turning back from a path one was on", "reversing direction of travel", "spatial change"],
+        "ground": ["evil conduct conceptualized as a road traveled", "repentance as reversing course", "direction of motion mirrors moral orientation"],
+        "posture": ["encourages the possibility of radical change", "ties such turning to preservation of life", "pastoral exhortation"],
+        "explanation": "The wickedness is treated as a route from which the person can 'turn back', using the path metaphor for moral conduct and repentance.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הוּא אֶת־נַפְשׁוֹ יְחַיֶּה",
+        "english_text": "he shall save his life (lit. he will make his soul live)",
+        "target": ["preservation of one’s own life", "escaping death through repentance", "securing continued existence"],
+        "vehicle": ["making one’s soul live", "actively vivifying one’s life", "causing life to continue"],
+        "ground": ["life treated as something one can 'cause to live' through choices", "agency in securing or forfeiting life", "soul as the seat of life"],
+        "posture": ["stresses human responsibility in choosing life by repentance", "encourages proactive response", "gives hopeful agency to the wicked person"],
+        "explanation": "The idiom portrays the penitent as actively 'making his soul live', using causative life-language metaphorically for conserving one’s own life by changing conduct.",
+        "confidence": 0.89
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Ezekiel 18:28",
+    "deliberation": "Again features 'turning back from all his transgressions', the now-familiar path/turning metaphor for repentance. 'He shall live, not die' is a stark literal outcome pairing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיָּשׇׁב מִכׇּל־פְּשָׁעָיו אֲשֶׁר עָשָׂה",
+        "english_text": "because they took heed and turned back from all the transgressions that they committed",
+        "target": ["comprehensive repentance from sinful acts", "total moral reorientation", "leaving a life of sin"],
+        "vehicle": ["turning back from something one was moving toward", "reversing course", "spatial change in direction"],
+        "ground": ["sins conceptualized as a direction or route one follows", "to repent is to reverse course away from them", "movement image conveys decisiveness and thoroughness"],
+        "posture": ["assures that genuine turning brings life", "presents repentance as a clear break with former transgressions", "encouraging theological promise"],
+        "explanation": "The verb 'turn back' is again metaphorical for repentance, with the plural 'transgressions' forming the wrongward course one abandons.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 29,
+    "reference": "Ezekiel 18:29",
+    "deliberation": "Repeats the 'way of the Lord / your ways' contrast and the metonymic 'House of Israel' address, as in verse 25.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דֶּרֶךְ אֲדֹנָי ... דַרְכֵיכֶם",
+        "english_text": "The Sovereign’s way ... your ways",
+        "target": ["God’s mode of judgment, Israel’s mode of living", "divine justice and human behavior", "ethical/theological patterns"],
+        "vehicle": ["a way/road one walks", "path of travel", "course taken"],
+        "ground": ["conduct and policy are like a route followed", "consistency of behavior corresponds to a path’s direction", "paths can be evaluated as right or wrong, straight or crooked"],
+        "posture": ["defends God’s way as just", "accuses Israel’s ways as unjust", "rhetorical inversion of their complaint"],
+        "explanation": "As before, 'way' (derekh) is a metaphor for habitual conduct or policy, and the verse contrasts God’s 'way' with Israel’s 'ways.'",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יִשְׂרָאֵל",
+        "english_text": "House of Israel",
+        "target": ["the nation/people of Israel", "the covenant community", "collective Israel"],
+        "vehicle": ["a 'house' as a family household", "domestic unit", "dwelling representing its occupants"],
+        "ground": ["'house' often stands for the family within it", "collective can be pictured as one household", "spatial unit representing social whole"],
+        "posture": ["addresses Israel as a unified family", "highlights corporate responsibility for views of God’s way", "covenant rhetoric"],
+        "explanation": "Again 'House of Israel' is a metonymy where the term 'house' represents the entire people descended from Israel.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 30,
+    "reference": "Ezekiel 18:30",
+    "deliberation": "Found three figurative elements: judging 'according to your ways' (path metaphor), 'House of Israel' as metonymy, and 'stumbling block of iniquity' where sin is pictured as an obstacle that trips a person.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "אִישׁ כִּדְרָכָיו אֶשְׁפֹּט אֶתְכֶם",
+        "english_text": "I will judge each one of you according to your own ways",
+        "target": ["individual patterns of conduct", "personal moral behavior", "life-course of each person"],
+        "vehicle": ["'ways' (paths) a person has", "routes or courses traveled", "road imagery"],
+        "ground": ["behavior is like a path traced over time", "one can be judged based on the course taken", "paths encapsulate direction and destination"],
+        "posture": ["emphasizes individual accountability", "presents judgment as fair evaluation of one’s chosen route", "theological insistence on just recompense"],
+        "explanation": "Each person’s 'ways' are metaphorical paths representing their pattern of conduct, which God will use as the basis of judgment.",
+        "confidence": 0.95
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יִשְׂרָאֵל",
+        "english_text": "House of Israel",
+        "target": ["the people of Israel", "national community", "collective Israel"],
+        "vehicle": ["household/house", "domestic unit", "family dwelling"],
+        "ground": ["a 'house' can denote the family inhabiting it", "political or ethnic group conceived as one household", "built structure representing a lineage"],
+        "posture": ["addresses the nation corporately", "underscores communal accountability", "covenantal address"],
+        "explanation": "Once more, 'House of Israel' is a metonymy in which the term 'house' stands for the whole people descended from Israel.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְלֹא־יִהְיֶה לָכֶם לְמִכְשׁוֹל עָוֺן",
+        "english_text": "let them not be a stumbling block of guilt for you",
+        "target": ["the effect of sins on those who commit them", "hindrance caused by guilt", "moral/spiritual ruin"],
+        "vehicle": ["a stumbling block (obstacle) that trips a walker", "stone or object in a path", "hazard on a road"],
+        "ground": ["sin causes one to fall/come to ruin like a stone causes a person to trip", "obstacles impede progress along a way", "guilt can bring one down"],
+        "posture": ["warns that sin is self-destructive", "urges removal of sin to avoid self-harm", "pastoral admonition framed in path imagery"],
+        "explanation": "Iniquity is pictured as a 'stumbling block', an obstacle in one’s path that causes a damaging fall, using road imagery for the destructive effects of sin.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 31,
+    "reference": "Ezekiel 18:31",
+    "deliberation": "Contains several strong metaphors: 'cast away' transgressions (sins as objects thrown off), 'new heart' and 'new spirit' (inner life conceptualized as heart/spirit that can be renewed), and 'House of Israel' metonymy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הַשְׁלִיכוּ מֵעֲלֵיכֶם אֶת־כׇּל־פִּשְׁעֵיכֶם אֲשֶׁר פְּשַׁעְתֶּם בָּם",
+        "english_text": "Cast away all the transgressions by which you have offended",
+        "target": ["repentant rejection of sinful acts", "breaking with past transgressions", "moral cleansing"],
+        "vehicle": ["casting/throwing something away from oneself", "removing a burden or object from upon oneself", "physical disposal"],
+        "ground": ["sins are like unwanted burdens or objects clinging to a person", "repentance is like throwing them off", "distance from an object symbolizes freedom from its influence"],
+        "posture": ["urges decisive and active renunciation of sin", "frames sin as something externalizable and discardable", "pastoral exhortation to radical break with past"],
+        "explanation": "Transgressions are metaphorically treated as objects lying upon the people that they can and must 'cast away' from themselves.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַעֲשׂוּ לָכֶם לֵב חָדָשׁ",
+        "english_text": "get yourselves a new heart",
+        "target": ["inner dispositions and will", "core moral character", "spiritual center of the person"],
+        "vehicle": ["heart as an inner organ", "central bodily organ", "seat of life"],
+        "ground": ["the heart is conceived as the seat of thought, will and desire", "a 'new' heart signifies a transformed inner orientation", "inner renewal likened to organ replacement"],
+        "posture": ["calls for radical internal transformation, not just external reform", "emphasizes responsibility to seek such renewal", "theological appeal for inner change"],
+        "explanation": "The 'heart' is a standard biblical metaphor for the inner person (mind, will, desires); a 'new heart' signifies a fundamentally renewed inner life.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְרוּחַ חֲדָשָׁה",
+        "english_text": "and a new spirit",
+        "target": ["animating disposition and attitude", "inner motivational drive", "spiritual state"],
+        "vehicle": ["spirit/breath/wind (רוּחַ)", "invisible animating force", "breath of life"],
+        "ground": ["spirit conceptualized as the breath or wind animating a person", "a 'new' spirit suggests a fresh, different inner drive", "inner attitude likened to an animating wind"],
+        "posture": ["underscores need for fresh inner empowerment and attitude", "balances 'heart' as will with 'spirit' as energy", "invites comprehensive renewal"],
+        "explanation": "Here 'spirit' is metaphorical for the animating inner principle of a person; a 'new spirit' means a new, God-oriented disposition.",
+        "confidence": 0.96
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בֵּית יִשְׂרָאֵל",
+        "english_text": "House of Israel",
+        "target": ["the people of Israel", "national Israel", "covenant community"],
+        "vehicle": ["household/house", "family dwelling", "domestic structure"],
+        "ground": ["a 'house' can stand for the family or dynasty it houses", "one term represents the whole social group", "spatial image stands for collective identity"],
+        "posture": ["again addresses Israel as one family-unit under God", "stresses shared responsibility for response", "covenant rhetoric"],
+        "explanation": "As elsewhere, 'House of Israel' uses 'house' as a metonym for the entire people descended from Israel.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 32,
+    "reference": "Ezekiel 18:32",
+    "deliberation": "Theologically rich but figuratively focused phrase is the final imperative 'turn and live', using the standard turning/path metaphor for repentance as the route to life.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָשִׁיבוּ וִחְיוּ",
+        "english_text": "Repent, therefore, and live! (lit. Turn back and live!)",
+        "target": ["repentant change of life leading to preservation of life", "conversion from sinful ways", "choice between life and death"],
+        "vehicle": ["turning back from a course", "changing direction", "movement reversal"],
+        "ground": ["life is like a journey on a path", "turning back from the wrong road leads to safety/life", "repentance as directional change has life-or-death consequences"],
+        "posture": ["expresses God’s desire for life rather than death", "implores the audience to choose life by changing course", "strong pastoral appeal"],
+        "explanation": "The imperative 'turn back' (repent) uses the path-turning metaphor to urge a decisive change of direction that results in continuing to live.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

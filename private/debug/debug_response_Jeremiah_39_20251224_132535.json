@@ -1,0 +1,388 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 39:1",
+    "deliberation": "Examined temporal markers, military movement, and siege language. Terms like \"came\" (בָּא), \"whole army\" (כׇּל־חֵילוֹ), and \"laid siege\" (וַיָּצֻרוּ) function as standard military-historical description. No metaphors, similes, idioms, or personifications are used; the verse is straightforward narrative.",
+    "instances": []
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 39:2",
+    "deliberation": "Considered whether \"the city was breached\" (הׇבְקְעָה הָעִיר) might be figurative. In context it clearly refers to the literal breach of Jerusalem’s defensive walls, with no signal of metaphorical extension (e.g., moral or spiritual). No figurative language is detected.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 39:3",
+    "deliberation": "This verse lists Babylonian officials and a specific location (\"the middle gate\"). No expressions of comparison, personification, or metonymic place-for-people usage beyond straightforward political and military reference. The language is purely referential and literal.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 39:4",
+    "deliberation": "Checked whether \"the king’s garden,\" \"the gate between the walls,\" or \"the Arabah\" function metaphorically. All function as concrete topographical markers in a historical escape narrative. No idioms or figurative uses appear; the verbs \"fled\" and \"went out\" are literal.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 39:5",
+    "deliberation": "Reviewed pursuit/overtaking language and the legal term \"he spoke judgments with him\" (וַיְדַבֵּר אִתּוֹ מִשְׁפָּטִים). These all describe literal military and judicial actions, not metaphorical judgment scenes. No metaphor, simile, or idiomatic expressions beyond normal legal usage.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 39:6",
+    "deliberation": "The verbs \"slaughtered\" (וַיִּשְׁחַט) and references to sons and nobles are horrific but literal descriptions of execution. There is no figurative extension (e.g., \"slaughter\" used metaphorically for defeat); it is concrete, physical killing.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 39:7",
+    "deliberation": "Examined whether \"blinded\" and \"bronze fetters\" might be symbolic. In context these are standard punitive measures and instruments of captivity, not metaphorical depictions of spiritual blindness or bondage. The verse is descriptively literal.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 39:8",
+    "deliberation": "Considered whether burning the houses and tearing down the walls could be symbolic of judgment or social collapse. In this narrative setting they describe actual destruction of palace, homes, and fortifications. No figurative formulas (e.g., \"fire\" for passion) are present; it is concrete warfare imagery.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 39:9",
+    "deliberation": "\"The remnant of the people\" (יֶתֶר הָעָם) and \"those who fell to him\" (הַנֹּפְלִים) are technical population and political terms (remaining inhabitants, defectors). They are not functioning as metaphors for a spiritual remnant here but as census-like categories. Exile language is literal deportation.",
+    "instances": []
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 39:10",
+    "deliberation": "Reviewed \"the poorest of the people\" and the gift of \"vineyards and cisterns\" for figurative poverty/wealth contrasts. Here they are socio-economic descriptors and actual agricultural holdings redistributed by the conqueror. No figurative or idiomatic construction stands out.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 39:11",
+    "deliberation": "Checked royal command formula and especially the phrase \"in the hand of Nebuzaradan\" (בְּיַד נְבוּזַרְאֲדָן). This is a standard Hebrew idiom/metonymy where \"hand\" stands for agency or control, not a literal physical hand passing something. One figurative instance is present.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "בְּיַד נְבוּזַרְאֲדָן רַב־טַבָּחִים",
+        "english_text": "by the hand of Nebuzaradan, the chief of the guards",
+        "target": [
+          "the means and agent by which the king’s order about Jeremiah is carried out",
+          "agency/instrumentality in political action",
+          "political-military administration"
+        ],
+        "vehicle": [
+          "the \"hand\" of Nebuzaradan",
+          "a body part used as an instrument of action",
+          "human body and physical manipulation"
+        ],
+        "ground": [
+          "just as a hand executes a person’s will on objects, Nebuzaradan executes Nebuchadrezzar’s will concerning Jeremiah",
+          "exercise of control and implementation of another’s decision",
+          "causal power and effective agency"
+        ],
+        "posture": [
+          "neutral narrative depiction of bureaucratic chain of command using conventional idiom",
+          "matter-of-fact legal-administrative style",
+          "narrative reporting stance"
+        ],
+        "explanation": "\"Hand\" is a metonymy and idiom for someone’s power or agency; here it means the command is entrusted to Nebuzaradan to carry out, not literally placed in his physical hand.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 39:12",
+    "deliberation": "The command includes the idiom \"set your eyes upon him\" (וְעֵינֶיךָ שִׂים עָלָיו), which does not mean literally placing eyes but watching over/caring for him. This is a conventional metaphorical-idiomatic use of \"eyes\" for attentive concern.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְעֵינֶיךָ שִׂים עָלָיו",
+        "english_text": "and set your eyes upon him",
+        "target": [
+          "the careful protection and supervision of Jeremiah’s welfare",
+          "attentive care/oversight",
+          "social and political protection"
+        ],
+        "vehicle": [
+          "placing one’s eyes on someone",
+          "visual attention directed at an object",
+          "bodily perception (seeing) imagery"
+        ],
+        "ground": [
+          "what one keeps one’s eyes on is what one watches carefully and protects from harm",
+          "close visual attention parallels vigilant concern and responsibility",
+          "attentive perception as a model for care-giving"
+        ],
+        "posture": [
+          "the king’s benevolent order framed in vivid, protective imagery",
+          "reassuring command emphasizing careful treatment",
+          "authoritative directive within royal discourse"
+        ],
+        "explanation": "The phrase uses the metaphor/idiom of \"eyes\" for vigilant concern: to \"set your eyes on him\" means to guard and care for him, not to physically fix one’s gaze continuously.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 39:13",
+    "deliberation": "This verse lists officials and the fact that they \"sent\" (וַיִּשְׁלַח) for Jeremiah. \"Send\" here is literal, not figurative for commissioning or spiritual sending. No metaphorical titles or personifications occur beyond standard offices.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 39:14",
+    "deliberation": "Checked whether \"court of the guard\" or \"he dwelt among the people\" might be idiomatic or symbolic. Here they describe literal confinement conditions and Jeremiah’s physical residence with the populace. No figurative expressions detected.",
+    "instances": []
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 39:15",
+    "deliberation": "Looked at the prophetic formula \"the word of YHWH came to Jeremiah\" (הָיָה דְבַר־יְהוָה אֶל־יִרְמְיָהוּ). This treats the \"word\" as if it is a thing that can \"be\" to someone, and uses \"word\" metonymically for divine revelation. It is a conventional figurative-prophetic formula.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֶֽל־יִרְמְיָהוּ הָיָה דְבַר־יְהוָה",
+        "english_text": "The word of the LORD had come to Jeremiah",
+        "target": [
+          "the event of God communicating a message to Jeremiah",
+          "prophetic revelation/message",
+          "divine-human communication"
+        ],
+        "vehicle": [
+          "\"word\" existing or coming to someone as if it were an object or visitor",
+          "spoken word treated as a quasi-entity that arrives",
+          "linguistic unit conceptualized as a tangible agent"
+        ],
+        "ground": [
+          "just as a person or object can come to someone’s presence, so God’s revelation can newly confront or reach the prophet",
+          "arrival and presence signify the reception of content",
+          "experiencing a communication as an encounter"
+        ],
+        "posture": [
+          "authoritative prophetic framing that underscores the divine origin and weight of the message",
+          "ritualized formula marking revelation",
+          "religious-discursive stance emphasizing God’s initiative"
+        ],
+        "explanation": "\"Word\" stands metonymically for the whole revelation, and it is personified as something that \"is\" or arrives to Jeremiah, a conventional prophetic idiom signaling divine communication.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 39:16",
+    "deliberation": "Identified two figurative elements: (1) \"I am bringing my words upon this city for evil and not for good\" objectifies and metonymically uses \"words\" for decrees/events; (2) \"they will be before your face on that day\" uses spatial imagery for immediate personal experience. Both are conventional prophetic figures.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנְנִי מֵבִי אֶת־דְּבָרַי אֶל־הָעִיר הַזֹּאת לְרָעָה וְלֹא לְטוֹבָה",
+        "english_text": "I am going to bring My words upon this city—for disaster, not for good",
+        "target": [
+          "the impending historical calamity decreed for the city",
+          "divine judgment events",
+          "national/historical destiny under God’s rule"
+        ],
+        "vehicle": [
+          "God’s \"words\" being brought upon the city like an object or force",
+          "spoken decree treated as an operative burden or agent",
+          "language conceptualized as an efficacious, quasi-physical power"
+        ],
+        "ground": [
+          "as a burden or agent brought upon a place exerts decisive impact, so God’s spoken decree results inexorably in disaster for the city",
+          "God’s speech and the realized event share causal inevitability",
+          "authority of command and execution of sentence"
+        ],
+        "posture": [
+          "solemn, threatening announcement of irreversible judgment",
+          "prophetic warning emphasizing the power of divine speech",
+          "theological stance highlighting speech-act efficacy"
+        ],
+        "explanation": "Here \"My words\" stands metonymically for the decreed acts of judgment, and the act of \"bringing\" them on the city presents God’s speech metaphorically as a tangible force whose arrival brings calamity.",
+        "confidence": 0.92
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיוּ לְפָנֶיךָ בַּיּוֹם הַהוּא",
+        "english_text": "and they shall come true on that day in your presence (lit. \"they will be before you on that day\")",
+        "target": [
+          "Ebed-melech’s direct witnessing of the fulfillment of God’s threatening words",
+          "personal experience of foretold events",
+          "human perception of historical judgment"
+        ],
+        "vehicle": [
+          "the words/events standing \"before your face\"",
+          "objects located in someone’s visual foreground",
+          "spatial proximity to the face as an image for immediacy"
+        ],
+        "ground": [
+          "what is before one’s face is clearly seen and inescapably encountered; likewise Ebed-melech will unavoidably see these events",
+          "visual nearness parallels experiential immediacy",
+          "presence in front of someone as a model for direct involvement"
+        ],
+        "posture": [
+          "assuring yet sobering prediction that Ebed-melech will personally see the outcome",
+          "prophetic reassurance of the reliability of the word, via experiential proof",
+          "didactic stance that links prophecy and visible fulfillment"
+        ],
+        "explanation": "The phrase \"they will be before you\" is an idiomatic spatial metaphor: the events/words will stand in Ebed-melech’s immediate view, meaning he will personally witness their fulfillment.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 39:17",
+    "deliberation": "Focused on the phrase \"you shall not be given into the hand of the men you dread\" (לֹא תִנָּתֵן בְּיַד הָאֲנָשִׁים). \"Hand\" functions metonymically and idiomatically for power/control, not a literal transfer into someone’s palm.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְלֹא תִנָּתֵן בְּיַד הָאֲנָשִׁים אֲשֶׁר־אַתָּה יָגוֹר מִפְּנֵיהֶם",
+        "english_text": "you shall not be delivered into the hand of the men you dread",
+        "target": [
+          "Ebed-melech’s potential subjection to hostile men",
+          "being under someone’s power or control",
+          "social/political domination"
+        ],
+        "vehicle": [
+          "being given into someone’s \"hand\"",
+          "a hand that grasps and holds objects",
+          "body part as locus of physical control"
+        ],
+        "ground": [
+          "as an object placed in someone’s hand comes under that person’s control, so a person delivered into another’s hand falls under their power",
+          "control, possession, and vulnerability are shared notions",
+          "capacity of the hand to seize parallels authority to dominate"
+        ],
+        "posture": [
+          "comforting promise framed in conventional legal-military idiom",
+          "assurance that feared domination will not occur",
+          "pastoral-prophetic stance of protection"
+        ],
+        "explanation": "\"Hand\" is a metonymy and idiom for power or control; God promises that Ebed-melech will not be placed under the controlling power of the men he fears.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 39:18",
+    "deliberation": "Identified two idiomatic-metaphorical phrases: (1) \"you shall not fall by the sword\" (וּבַחֶרֶב לֹא תִפֹּל), with \"fall\" for die and \"sword\" as metonymy for war-death; (2) \"your life shall be to you for spoil\" (וְהָיְתָה לְךָ נַפְשְׁךָ לְשָׁלָל), where life is metaphorically treated as plunder taken from battle.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וּבַחֶרֶב לֹא תִפֹּל",
+        "english_text": "and you shall not fall by the sword",
+        "target": [
+          "the possibility of Ebed-melech’s violent death in war",
+          "death in battle",
+          "human mortality in the context of warfare"
+        ],
+        "vehicle": [
+          "falling by the sword",
+          "a warrior physically struck down by a weapon",
+          "combat imagery: bodily collapse before a blade"
+        ],
+        "ground": [
+          "warriors who are killed in battle literally fall when struck by weapons; thus \"fall\" becomes a metaphor for dying, and \"sword\" stands for lethal warfare",
+          "physical collapse parallels the termination of life",
+          "the weapon symbolizes the broader phenomenon of war-death"
+        ],
+        "posture": [
+          "a promise expressed in vivid battle language to stress deliverance from violent fate",
+          "reassuring yet realistic acknowledgment of wartime danger",
+          "prophetic assurance against expected form of death"
+        ],
+        "explanation": "The phrase is an idiomatic metaphor: \"fall\" means die, and \"sword\" metonymically represents warfare and its lethal force. God promises he will not die that way.",
+        "confidence": 0.94
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְהָיְתָה לְךָ נַפְשְׁךָ לְשָׁלָל",
+        "english_text": "and you shall escape with your life (lit. \"your life shall be to you for spoil\")",
+        "target": [
+          "Ebed-melech’s mere survival amid widespread destruction",
+          "deliverance understood as escaping with nothing but life",
+          "individual preservation in a context of loss"
+        ],
+        "vehicle": [
+          "one’s life counted as \"spoil\" or booty from battle",
+          "war plunder taken away from a defeated field",
+          "economic/military image of valuable goods carried off"
+        ],
+        "ground": [
+          "as a soldier might emerge from a battle with only the plunder he can carry, so Ebed-melech will emerge with only his life, which is treated as a precious gain",
+          "both spoil and life represent something rescued from danger",
+          "narrow escape and retained value are the shared concepts"
+        ],
+        "posture": [
+          "realistic yet hopeful portrayal of salvation as a narrow escape",
+          "underscores the value of bare survival as a gracious gift",
+          "pastoral-prophetic stance emphasizing the reward of trust"
+        ],
+        "explanation": "The verse metaphorically frames Ebed-melech’s life as war booty—something snatched out of a deadly situation. It is an idiomatic way of saying he will lose everything else but preserve his life as a precious gain.",
+        "confidence": 0.96
+      }
+    ]
+  }
+]

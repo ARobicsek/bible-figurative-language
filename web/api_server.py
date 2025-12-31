@@ -39,8 +39,11 @@ cache = Cache(app)
 # Use __file__ to get the directory of this script, then go up one level
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-DB_PATH = os.path.join(PROJECT_ROOT, 'database', 'Pentateuch_Psalms_fig_language.db')
+DB_PATH = os.path.join(PROJECT_ROOT, 'database', 'Biblical_fig_language.db')
 DB_DIRECTORY = os.path.join(PROJECT_ROOT, 'database')
+
+# Valid book names (lowercase for case-insensitive matching)
+VALID_BOOKS = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms', 'proverbs', 'isaiah', 'jeremiah', 'ezekiel', 'hosea', 'joel', 'amos']
 
 # Debug logging for production troubleshooting
 print(f"Script directory: {SCRIPT_DIR}")
@@ -301,8 +304,7 @@ def get_verses():
             for book in books:
                 book = book.strip()
                 # Handle all books by name
-                valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
-                if book.lower() in valid_books:
+                if book.lower() in VALID_BOOKS:
                     book_conditions.append("v.book = ?")
                     params.append(book.title())
                 elif book.isdigit():
@@ -591,8 +593,7 @@ def get_verses():
                 book_conds = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
-                    if book.lower() in valid_books:
+                    if book.lower() in VALID_BOOKS:
                         book_conds.append("v.book = ?")
                         count_params_list.append(book.title())
                 if book_conds:
@@ -637,8 +638,7 @@ def get_verses():
                 book_conds = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
-                    if book.lower() in valid_books:
+                    if book.lower() in VALID_BOOKS:
                         book_conds.append("v.book = ?")
                         verse_params.append(book.title())
                 if book_conds:
@@ -755,7 +755,7 @@ def get_statistics():
         total_instances = db_manager.execute_query("SELECT COUNT(*) as count FROM figurative_language")[0]['count']
 
         # Books in biblical order
-        biblical_order = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy']
+        biblical_order = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Psalms', 'Proverbs', 'Isaiah', 'Jeremiah', 'Ezekiel', 'Hosea', 'Joel', 'Amos']
         books_query = db_manager.execute_query("SELECT DISTINCT book FROM verses")
         available_books = [book['book'] for book in books_query]
         # Order books according to biblical sequence
@@ -873,8 +873,7 @@ def get_verses_count():
                 book_conditions = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
-                    if book.lower() in valid_books:
+                    if book.lower() in VALID_BOOKS:
                         book_conditions.append("v.book = ?")
                         params.append(book.title())
                 if book_conditions:
@@ -919,8 +918,7 @@ def get_verses_count():
                 book_conditions = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
-                    if book.lower() in valid_books:
+                    if book.lower() in VALID_BOOKS:
                         book_conditions.append("v.book = ?")
                         params.append(book.title())
                 if book_conditions:
@@ -961,8 +959,7 @@ def get_verses_count():
                 book_conditions = []
                 for book in books:
                     book = book.strip()
-                    valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
-                    if book.lower() in valid_books:
+                    if book.lower() in VALID_BOOKS:
                         book_conditions.append("v.book = ?")
                         params.append(book.title())
                 if book_conditions:

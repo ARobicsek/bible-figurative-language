@@ -1,0 +1,696 @@
+[
+  {
+    "verse": 1,
+    "reference": "Jeremiah 46:1",
+    "deliberation": "Formulaic heading. Considered whether “the word of YHWH” is figurative. It is a standard prophetic metonymy for divine revelation, but no extended imagery beyond that.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "דְבַר־יְהוָה",
+        "english_text": "the word of GOD",
+        "target": ["God’s prophetic message to Jeremiah", "revelation/communication", "theology"],
+        "vehicle": ["‘word’ (speech act)", "linguistic unit", "language/communication"],
+        "ground": ["communicated content", "message-bearing quality", "revelation as spoken discourse"],
+        "posture": ["formal prophetic formula", "authoritative framing", "discourse"],
+        "explanation": "“Word” stands for the whole revealed message of God, a metonymy where a single speech unit represents extended divine revelation.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Jeremiah 46:2",
+    "deliberation": "Purely historical-prose superscription naming Egypt, Pharaoh Neco, Nebuchadnezzar, dates and locations. No comparisons, personification, or idiomatic expressions beyond normal narrative usage.",
+    "instances": []
+  },
+  {
+    "verse": 3,
+    "reference": "Jeremiah 46:3",
+    "deliberation": "Literal military commands to prepare shield and buckler and approach battle. No overt metaphors or similes; armor and battle remain literal.",
+    "instances": []
+  },
+  {
+    "verse": 4,
+    "reference": "Jeremiah 46:4",
+    "deliberation": "Further literal military imperatives (harness horses, mount riders, helmets, spears, armor). No figurative transfer of meaning; all terms refer to actual equipment and actions.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Jeremiah 46:5",
+    "deliberation": "The verse vividly describes panic and retreat. The key idiomatic prophetic slogan is “terror on every side,” which treats terror as if it surrounds like an enemy force. Other phrases (fleeing, being struck) can be literal in battle context.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מָגוֹר מִסָּבִיב",
+        "english_text": "Terror all around!",
+        "target": ["The pervasive fear of the Egyptian troops", "emotional/psychological state", "human emotion"],
+        "vehicle": ["encircling threat ‘around’ someone", "hostile surrounding force", "warfare/space"],
+        "ground": ["being hemmed in and trapped", "inescapability and totality of fear", "overwhelming pressure"],
+        "posture": ["judgmental depiction of panic", "prophetic denunciation of false confidence", "discourse"],
+        "explanation": "The abstract emotion ‘terror’ is depicted as if it physically surrounds them like an enemy encirclement, an idiomatic personifying metaphor typical of Jeremiah.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 6,
+    "reference": "Jeremiah 46:6",
+    "deliberation": "Describes swift ones and warriors unable to escape and physically stumbling and falling by the Euphrates. The language fits literal battlefield catastrophe; no clear figurative extension beyond vivid description.",
+    "instances": []
+  },
+  {
+    "verse": 7,
+    "reference": "Jeremiah 46:7",
+    "deliberation": "Rhetorical question introducing imagery of rising like the Nile and surging like rivers. This is a clear simile anticipating the identification of Egypt as the subject.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִי־זֶה כַּיְאֹר יַעֲלֶה כַּנְּהָרוֹת יִתְגָּעֲשׁוּ מֵימָיו",
+        "english_text": "Who is this that rises like the Nile, whose waters surge like the rivers?",
+        "target": ["The advancing military power (implicitly Egypt)", "national military force", "politics/history"],
+        "vehicle": ["the Nile and surging rivers", "flooding waters", "geography/nature"],
+        "ground": ["powerful rising and overflowing movement", "overwhelming and unstoppable spread", "threatening force"],
+        "posture": ["critical portrayal of imperial ambition", "warning of coming judgment", "prophetic discourse"],
+        "explanation": "The unnamed force is explicitly compared to the Nile and surging rivers, highlighting its apparent irresistible rise and expansion.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 8,
+    "reference": "Jeremiah 46:8",
+    "deliberation": "Egypt is explicitly identified and likened to the Nile with surging waters (similes). The boast “I will cover the earth” is hyperbolic imagery for universal conquest, not literal global flooding.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "מִצְרַיִם כַּיְאֹר יַעֲלֶה וְכַנְּהָרוֹת יִתְגֹּעֲשׁוּ מָיִם",
+        "english_text": "It is Egypt that rises like the Nile, whose waters surge like rivers",
+        "target": ["Egypt’s imperial/military advance", "national power/army", "politics/history"],
+        "vehicle": ["the Nile and rivers in flood", "surging natural waters", "geography/nature"],
+        "ground": ["expansive, overflowing movement", "seemingly unstoppable might", "capacity to inundate territory"],
+        "posture": ["exposing Egypt’s overconfidence", "setting up contrast with divine judgment", "prophetic discourse"],
+        "explanation": "Egypt is directly compared to the Nile and surging rivers, portraying its power and advance as a flooding river.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "אַעֲלֶה אֲכַסֶּה־אֶרֶץ",
+        "english_text": "I will rise, I will cover the earth",
+        "target": ["Extent of Egypt’s intended conquests", "scope of political domination", "politics/history"],
+        "vehicle": ["covering the whole earth (as with water or a garment)", "total surface coverage", "spatial extent"],
+        "ground": ["completeness and universality", "leaving nothing untouched", "total dominance"],
+        "posture": ["mocked imperial boasting", "ironic setup for Egypt’s downfall", "prophetic irony"],
+        "explanation": "Egypt’s boast to ‘cover the earth’ uses spatial imagery for universal conquest, a hyperbolic metaphor that exaggerates its reach to total global coverage.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 9,
+    "reference": "Jeremiah 46:9",
+    "deliberation": "Horses and chariots are directly addressed and told to advance and ‘rage.’ This apostrophe and use of a verb of wildness for chariots personifies the war machines.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "עֲלוּ הַסּוּסִים וְהִתְהוֹלְלוּ הָרֶכֶב",
+        "english_text": "Advance, O horses, dash madly, O chariots!",
+        "target": ["The onset of battle by Egypt’s forces", "military engagement", "warfare"],
+        "vehicle": ["horses and chariots behaving like frenzied beings", "wild, self-driven actors", "living creatures"],
+        "ground": ["uncontrolled, intense movement", "ferocity and speed", "energetic onset of action"],
+        "posture": ["vivid, almost mocking animation of Egypt’s military", "heightened dramatic tone", "prophetic rhetoric"],
+        "explanation": "Inanimate chariots are urged to ‘dash madly,’ treating them as sentient, wild combatants to dramatize the rush into a doomed battle.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Jeremiah 46:10",
+    "deliberation": "Two prominent images: (1) the sword ‘devours,’ is ‘sated,’ and ‘drinks’ blood—strong personifying metaphor; (2) the battlefield as a ‘sacrifice’ prepared by YHWH, casting the slaughter in cultic terms.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְאָכְלָה חֶרֶב וְשָׂבְעָה וְרָוְתָה מִדָּמָם",
+        "english_text": "The sword shall devour; it shall be sated and drunk with their blood",
+        "target": ["The killing power of warfare against Egypt and allies", "battlefield slaughter", "warfare"],
+        "vehicle": ["a ravenous drinker/eater consuming blood", "gluttonous feasting", "human/animal appetite"],
+        "ground": ["insatiable, consuming destruction", "complete satisfaction through slaughter", "violence that ‘feeds’ on victims"],
+        "posture": ["grim depiction of divine judgment", "intensely negative evaluation of the conflict", "prophetic warning"],
+        "explanation": "The impersonal sword is portrayed as a living being that eats and drinks blood to satiety, vividly personifying the violence of war.",
+        "confidence": 0.98
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי זֶבַח לַאדֹנָי יְהוִה צְבָאוֹת",
+        "english_text": "For my Sovereign GOD of Hosts is preparing a sacrifice",
+        "target": ["The mass killing of Egypt’s armies at Carchemish", "national judgment event", "politics/history"],
+        "vehicle": ["a sacrificial ritual offered to God", "cultic animal sacrifice", "worship/ritual"],
+        "ground": ["lives formally devoted to deity", "bloody offering under divine control", "solemn, irreversible giving over to death"],
+        "posture": ["theological interpretation of battle as divine rite", "assertion of YHWH’s sovereignty over history", "prophetic theology"],
+        "explanation": "The battlefield slaughter is conceptualized as a ‘sacrifice’ offered by YHWH, casting the victims as offerings in a ritual of judgment.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 11,
+    "reference": "Jeremiah 46:11",
+    "deliberation": "Egypt is addressed as ‘virgin daughter Egypt’—national personification. Also a medical-healing metaphor: going to Gilead for balm, multiplying remedies, but there is ‘no healing’ for a national calamity.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "בְּתוּלַת בַּת־מִצְרָיִם",
+        "english_text": "Fair Maiden Egypt / Virgin daughter Egypt",
+        "target": ["The nation of Egypt", "collective national entity", "politics/history"],
+        "vehicle": ["a virgin daughter / fair maiden", "young unmarried woman", "family/social roles"],
+        "ground": ["perceived delicacy, attractiveness, and vulnerability", "status dependent on protection", "contrast between former security and coming violation"],
+        "posture": ["ironically tender address before judgment", "underscoring impending humiliation", "prophetic rhetoric"],
+        "explanation": "Egypt is personified as a virgin daughter, evoking youth, beauty, and vulnerability in ironic contrast to her coming defeat.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "לַשָּׁוְא הִרְבֵּית רְפֻאוֹת תְּעָלָה אֵין לָךְ",
+        "english_text": "In vain do you seek many remedies; there is no healing for you",
+        "target": ["Egypt’s political/military crisis", "national condition", "politics/history"],
+        "vehicle": ["incurable illness requiring medicine", "medical patient seeking treatments", "medicine/health"],
+        "ground": ["grave, chronic condition", "futility of attempted cures", "inevitability of decline/death"],
+        "posture": ["pronouncement of hopelessness for Egypt’s recovery", "emphatic closure of Egypt’s options", "prophetic judgment"],
+        "explanation": "Egypt’s national disaster is cast as an incurable disease, with ‘remedies’ and ‘healing’ used metaphorically for political solutions that cannot succeed.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 12,
+    "reference": "Jeremiah 46:12",
+    "deliberation": "‘Nations have heard your shame’ and ‘your scream has filled the earth.’ The second is an obvious hyperbole/metaphor for widespread notoriety of Egypt’s distress.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְצִוְחָתֵךְ מָלְאָה הָאָרֶץ",
+        "english_text": "your screams have filled the earth",
+        "target": ["The notoriety of Egypt’s suffering and defeat", "reputation of disaster", "social perception"],
+        "vehicle": ["sound filling all the land", "complete acoustic saturation", "physical space"],
+        "ground": ["extreme extent and spread", "impossibility of ignoring it", "widespread impact"],
+        "posture": ["public shaming of Egypt", "emphasizing the breadth of her humiliation", "prophetic denunciation"],
+        "explanation": "Egypt’s outcry is said to ‘fill the earth,’ a hyperbolic metaphor indicating that her distress has become universally known.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Jeremiah 46:13",
+    "deliberation": "Heading introducing another oracle, with literal reference to Nebuchadnezzar coming to strike the land of Egypt. No figurative expressions.",
+    "instances": []
+  },
+  {
+    "verse": 14,
+    "reference": "Jeremiah 46:14",
+    "deliberation": "Calls to proclaim and take positions are literal. The phrase “the sword has devoured around you” is a recurring personifying metaphor, as earlier in v.10.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "כִּי־אָכְלָה חֶרֶב סְבִיבֶיךָ",
+        "english_text": "For the sword has devoured all around you",
+        "target": ["The surrounding slaughter in regions near Egypt", "extent of military destruction", "warfare"],
+        "vehicle": ["a devouring agent that eats", "consumer of food", "living appetite"],
+        "ground": ["consuming and removing what is there", "thoroughness of destruction", "voraciousness"],
+        "posture": ["warning of encroaching catastrophe", "heightened urgency", "prophetic rhetoric"],
+        "explanation": "The impersonal ‘sword’ stands for warfare and is personified as a devourer, stressing the destructive spread of conflict around Egypt.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 15,
+    "reference": "Jeremiah 46:15",
+    "deliberation": "Asks why Egypt’s champions are ‘swept away’—a metaphor of being carried off by flood or force. YHWH’s ‘thrusting down’ is anthropomorphic but consistent with literal divine agency in battle imagery.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "מַדּוּעַ נִסְחַף אַבִּירֶיךָ",
+        "english_text": "Why are your stalwarts swept away?",
+        "target": ["Egypt’s elite warriors", "military strength", "warfare"],
+        "vehicle": ["objects swept away by a current or force", "debris carried off", "nature/forces"],
+        "ground": ["helpless movement under greater force", "sudden removal from place", "loss of control"],
+        "posture": ["taunting question exposing helplessness", "undermining Egypt’s pride", "prophetic mockery"],
+        "explanation": "The mighty warriors are depicted as things ‘swept away,’ evoking the image of being carried off helplessly by a stronger force.",
+        "confidence": 0.86
+      }
+    ]
+  },
+  {
+    "verse": 16,
+    "reference": "Jeremiah 46:16",
+    "deliberation": "Describes many stumbling and falling over one another, which can be literal battle chaos. The phrase ‘because of the deadly sword’ (or ‘sword of the oppressor’) uses ‘sword’ as a metonymy for warfare and killing.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "מִפְּנֵי חֶרֶב הַיּוֹנָה",
+        "english_text": "because of the deadly sword",
+        "target": ["The invading army’s violence", "warfare and slaughter", "warfare"],
+        "vehicle": ["the sword as individual weapon", "instrument of killing", "tools/weaponry"],
+        "ground": ["association of the sword with battle and death", "the sword as emblem of war", "part representing the whole conflict"],
+        "posture": ["emphasizing mortal threat of the invasion", "evoking fear as reason to flee", "prophetic exhortation"],
+        "explanation": "‘Sword’ stands metonymically for the entire warfare and its lethal threat, with the specific weapon representing the whole onslaught.",
+        "confidence": 0.78
+      }
+    ]
+  },
+  {
+    "verse": 17,
+    "reference": "Jeremiah 46:17",
+    "deliberation": "Pharaoh is mockingly nicknamed ‘Shaon’ (uproar/braggart) who has let the appointed time pass. This functions as an ironic metaphorical epithet highlighting empty noise instead of decisive action.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "פַּרְעֹה מֶלֶךְ־מִצְרַיִם שָׁאוֹן הֶעֱבִיר הַמּוֹעֵד",
+        "english_text": "Pharaoh king of Egypt: ‘Braggart who let the hour go by’",
+        "target": ["Pharaoh’s character and rule", "royal leadership", "politics/history"],
+        "vehicle": ["‘shaon’ (uproar/noise/braggart)", "empty tumultuous noise", "sound/chaos"],
+        "ground": ["loudness without effective substance", "boasting that achieves nothing", "confusion and delay"],
+        "posture": ["ironic derision of Pharaoh’s incompetence", "prophetic satire", "discourse irony"],
+        "explanation": "Calling Pharaoh ‘Shaon’ metaphorically reduces him to mere noise, an ironic nickname criticizing his boastful inaction as the critical time passes.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 18,
+    "reference": "Jeremiah 46:18",
+    "deliberation": "YHWH swears by himself and compares the certainty/visibility of what is coming to Tabor among the mountains and Carmel by the sea. This is a double simile stressing inevitability and conspicuousness.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי כְּתָבוֹר בֶּהָרִים וּכְכַרְמֶל בַּיָּם יָבוֹא",
+        "english_text": "As surely as Tabor is among the mountains and Carmel is by the sea, so shall this come",
+        "target": ["The coming of the decreed judgment/invader", "future historical event", "politics/history"],
+        "vehicle": ["Mount Tabor among mountains; Mount Carmel by the sea", "prominent fixed landmarks", "geography/nature"],
+        "ground": ["prominence and recognizability", "stability and inevitability", "fixed position in landscape"],
+        "posture": ["solemn assurance of fulfillment", "strengthening the credibility of the oracle", "prophetic oath"],
+        "explanation": "The arrival of God’s decree (or invader) is likened to the obvious presence of Tabor and Carmel in the landscape, highlighting its certainty and conspicuousness.",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "verse": 19,
+    "reference": "Jeremiah 46:19",
+    "deliberation": "Egypt is again addressed as a female inhabitant (‘daughter Egypt’), personifying the nation. ‘Prepare your baggage for exile’ can be literal instruction, though it has a grimly ironic tone.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "יוֹשֶׁבֶת בַּת־מִצְרָיִם",
+        "english_text": "Fair Egypt, you who dwell secure (lit. ‘O inhabitant, daughter Egypt’)",
+        "target": ["The Egyptian nation and its populace", "collective national body", "politics/history"],
+        "vehicle": ["a female inhabitant/daughter", "individual woman living in a place", "family/social identity"],
+        "ground": ["sense of settled security", "dependence and vulnerability", "contrast between current comfort and coming exile"],
+        "posture": ["warning to complacent Egypt", "ironic addressing before displacement", "prophetic exhortation"],
+        "explanation": "Egypt is personified as a daughter-inhabitant, highlighting her feeling of secure residence just as she is told to pack for exile.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 20,
+    "reference": "Jeremiah 46:20",
+    "deliberation": "Two linked animal images: Egypt as a ‘beautiful heifer’ and the northern invader as a ‘gadfly’ that comes against her. Both are metaphors casting political entities as animals in an agrarian scene.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "עֶגְלָה יְפֵה־פִיָּה מִצְרָיִם",
+        "english_text": "Egypt is a handsome heifer",
+        "target": ["Egypt’s national prosperity and attractiveness", "the nation as a whole", "politics/history"],
+        "vehicle": ["a beautiful young cow (heifer)", "well-fed, attractive farm animal", "animals/agriculture"],
+        "ground": ["physical beauty, strength, and well-being", "pampered and untested state", "suitability as a victim of attack/slaughter"],
+        "posture": ["ironically highlighting Egypt’s vulnerability in her prosperity", "setting up her being attacked", "prophetic satire"],
+        "explanation": "Egypt is depicted as a beautiful young cow, suggesting prosperity and appeal but also making her an obvious target for the ‘gadfly’ from the north.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "קֶרֶץ מִצָּפוֹן בָּא בָא",
+        "english_text": "A gadfly from the north is coming, coming!",
+        "target": ["The northern invading power (Babylon)", "foreign empire/army", "politics/history"],
+        "vehicle": ["a gadfly/biting insect", "irritating, stinging pest", "animals/insects"],
+        "ground": ["sudden stinging attack", "provocation and harassment", "disproportionate effect relative to size"],
+        "posture": ["belittling portrayal of the invader as a small yet painful agent of judgment", "ironic contrast with Egypt’s size", "prophetic rhetoric"],
+        "explanation": "The northern invader is characterized as a gadfly that comes to sting the ‘heifer’ Egypt, portraying the attack as sharp and inescapable.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 21,
+    "reference": "Jeremiah 46:21",
+    "deliberation": "Egypt’s mercenaries are likened to ‘stall-fed calves’—a simile stressing pampered softness and unpreparedness for battle, in contrast with the coming disaster.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "גַּם־שְׂכִרֶיהָ בְקִרְבָּהּ כְּעֶגְלֵי מַרְבֵּק",
+        "english_text": "Her mercenaries in her midst are like stall-fed calves",
+        "target": ["Egypt’s hired troops", "military personnel", "warfare"],
+        "vehicle": ["stall-fed calves", "well-fed, sheltered young cattle", "animals/agriculture"],
+        "ground": ["pampered, soft, and inexperienced in hardship", "concerned with comfort not combat", "liable to flee when threatened"],
+        "posture": ["critique of their unreliability and cowardice", "mocking their softness", "prophetic denunciation"],
+        "explanation": "The mercenaries are compared to well-fed calves, stressing their pampered condition and explaining why they will turn and flee.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 22,
+    "reference": "Jeremiah 46:22",
+    "deliberation": "Two explicit similes: Egypt’s voice going forth ‘like a snake,’ and invaders coming with axes ‘like woodcutters.’ Both are vivid comparisons, one for the sound of her retreat, one for the destructive work of the enemy.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "קוֹלָהּ כַּנָּחָשׁ יֵלֵךְ",
+        "english_text": "Her voice shall go forth like a snake",
+        "target": ["Egypt’s cry or sound in retreat", "national distress/complaint", "human emotion/warfare"],
+        "vehicle": ["a snake’s movement and hissing", "serpentine rustle", "animals"],
+        "ground": ["low, fearful, slithering quality", "stealthy, retreating movement", "a sinister, diminished sound"],
+        "posture": ["depiction of Egypt’s reduced, fearful state", "subtle mockery of her earlier boasting", "prophetic irony"],
+        "explanation": "Egypt’s voice is compared to a snake’s movement/sound, suggesting a furtive, fearful rustling as she withdraws.",
+        "confidence": 0.88
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "וּבְקַרְדֻּמּוֹת בָּאוּ לָהּ כְּחֹטְבֵי עֵצִים",
+        "english_text": "They come against her with axes, like hewers of wood",
+        "target": ["The invading soldiers attacking Egypt", "invading army", "warfare"],
+        "vehicle": ["woodcutters chopping trees with axes", "laborers clearing a forest", "work/forestry"],
+        "ground": ["systematic, forceful cutting down", "destructive yet methodical action", "viewing Egypt as something to be felled"],
+        "posture": ["emphasizes the invader’s ruthless efficiency", "frames the conquest as deliberate work", "prophetic visualization"],
+        "explanation": "The invaders are likened to woodcutters with axes, portraying their attack as the methodical chopping down of Egypt.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 23,
+    "reference": "Jeremiah 46:23",
+    "deliberation": "Egypt’s ‘forest’ is to be cut down, likely a metaphor for her land/population/strongholds. Then the invaders are said to be ‘more numerous than locusts, without number’—a hyperbolic simile for overwhelming numbers.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "possibly",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כָּרְתוּ יַעְרָהּ נְאֻם־יְהוָה",
+        "english_text": "They shall cut down her forest—declares GOD",
+        "target": ["Egypt’s resources/population/fortifications", "national strength/structure", "politics/history"],
+        "vehicle": ["a forest to be cut", "dense stand of trees", "geography/nature"],
+        "ground": ["density and breadth needing to be cleared", "something large reduced by chopping", "vulnerability to patient destruction"],
+        "posture": ["depicts conquest as clearing away Egypt’s strength", "emphasizes total dismantling", "prophetic judgment"],
+        "explanation": "Egypt’s ‘forest’ likely represents her complex of cities and people, envisioned as a woodland to be felled by invaders.",
+        "confidence": 0.78
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "yes",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "yes",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "כִּי רַבּוּ מֵאַרְבֶּה וְאֵין לָהֶם מִסְפָּר",
+        "english_text": "For they are more numerous than locusts, and cannot be counted",
+        "target": ["The number of invading soldiers", "size of the invading force", "warfare"],
+        "vehicle": ["locust swarms beyond counting", "innumerable insects", "animals/insects"],
+        "ground": ["overwhelming multitude", "inability to reckon the total", "devouring presence across a wide area"],
+        "posture": ["heightens fear of the invaders’ sheer numbers", "depicts resistance as futile", "prophetic emphasis"],
+        "explanation": "The invaders are compared to locusts in uncountable numbers, a hyperbolic simile underscoring their overwhelming multitude.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 24,
+    "reference": "Jeremiah 46:24",
+    "deliberation": "Again uses ‘daughter Egypt’ as a personification of the nation. Shame and being handed over are literal consequences expressed in that personified framework.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "yes",
+        "hebrew_text": "הֹבִישָׁה בַּת־מִצְרָיִם",
+        "english_text": "Fair Egypt (lit. ‘daughter Egypt’) shall be shamed",
+        "target": ["The Egyptian nation", "collective people-state", "politics/history"],
+        "vehicle": ["a daughter who feels shame", "female family member", "family/social roles"],
+        "ground": ["capacity to experience humiliation", "loss of honor before others", "vulnerability to disgrace"],
+        "posture": ["emphasizes Egypt’s personal humiliation", "anthropomorphizes national downfall", "prophetic judgment"],
+        "explanation": "Egypt is personified as a daughter who experiences shame, framing national defeat as a personal disgrace.",
+        "confidence": 0.93
+      }
+    ]
+  },
+  {
+    "verse": 25,
+    "reference": "Jeremiah 46:25",
+    "deliberation": "God names Amon of No, Pharaoh, Egypt, her gods and kings. These are literal referents; ‘punish/visit’ is standard covenant language but not strongly figurative here. No clear metaphor or simile.",
+    "instances": []
+  },
+  {
+    "verse": 26,
+    "reference": "Jeremiah 46:26",
+    "deliberation": "The phrase ‘those who seek their life’ is a standard Hebrew idiom for people trying to kill someone. The rest is literal transfer of power and later re-inhabitation.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "מְבַקְשֵׁי נַפְשָׁם",
+        "english_text": "those who seek their lives",
+        "target": ["People intent on killing them", "mortal enemies", "warfare/conflict"],
+        "vehicle": ["seekers of someone’s ‘life’ (nephesh)", "pursuers of a vital principle", "life/death vocabulary"],
+        "ground": ["pursuit aimed at taking life away", "persistent intent to destroy", "direct threat to existence"],
+        "posture": ["emphasizes deadly intent of their enemies", "underscores seriousness of judgment", "prophetic warning"],
+        "explanation": "‘Seeking someone’s life’ is an idiomatic way to say ‘seeking to kill them,’ where ‘life’ stands metonymically for the person’s existence.",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "verse": 27,
+    "reference": "Jeremiah 46:27",
+    "deliberation": "Addressed to ‘my servant Jacob’ and ‘Israel,’ where the ancestor’s name stands for the nation (metonymy). The rest speaks of literal restoration, calm, and quiet.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עַבְדִּי יַעֲקֹב",
+        "english_text": "My servant Jacob",
+        "target": ["The people of Israel as a whole", "covenant community", "theology/politics"],
+        "vehicle": ["Jacob the patriarch", "individual ancestor", "family lineage"],
+        "ground": ["corporate identity derived from an ancestor", "solidarity with forefather’s story", "covenantal continuity"],
+        "posture": ["reassuring promise to the covenant people", "personal, intimate address", "prophetic consolation"],
+        "explanation": "‘Jacob’ functions metonymically for the descendants of Jacob, i.e., the nation Israel, addressed as God’s servant.",
+        "confidence": 0.97
+      }
+    ]
+  },
+  {
+    "verse": 28,
+    "reference": "Jeremiah 46:28",
+    "deliberation": "Repeats ‘my servant Jacob’ with the same metonymy (ancestor for nation). The disciplinary language (‘chastise in measure, but not make a full end’) is covenantal but can be read literally as proportional national judgment.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "עַבְדִּי יַעֲקֹב",
+        "english_text": "My servant Jacob",
+        "target": ["The exiled and scattered people of Israel", "covenant nation", "theology/politics"],
+        "vehicle": ["Jacob the individual patriarch", "named forefather", "family lineage"],
+        "ground": ["continuity of identity across generations", "representation of the whole by the ancestor", "collective destiny tied to Jacob"],
+        "posture": ["reassuring despite judgment", "affirmation of enduring relationship", "prophetic consolation"],
+        "explanation": "Again, ‘Jacob’ stands for the entire people descended from him, a metonymy grounding the promise of presence and measured discipline.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]

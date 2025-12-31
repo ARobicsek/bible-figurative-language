@@ -1,0 +1,292 @@
+[
+  {
+    "verse": 1,
+    "reference": "Ezekiel 6:1",
+    "deliberation": "Checked the prophetic formula for figurative language. The key phrase is \"the word of YHWH came to me,\" which treats the divine word as an active agent that comes. This is a conventional prophetic metaphor/personification for divine communication; no other figures (simile, hyperbole, irony, etc.) appear.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וַיְהִ֥י דְבַר־יְהֹוָ֖ה אֵלַ֥י לֵאמֹֽר",
+        "english_text": "The word of GOD came to me",
+        "target": ["YHWH’s act of revealing a message to Ezekiel", "divine communication", "theological"],
+        "vehicle": ["a \"word\" that travels and arrives like a person or object", "movement/arrival of an agent", "spatial-kinetic"],
+        "ground": ["initiative and directedness of the message from sender to recipient", "transfer and arrival of communication", "communication dynamics"],
+        "posture": ["presents the message as authoritative and originating outside the prophet", "reverent-prophetic stance", "rhetorical/theological"],
+        "explanation": "The divine \"word\" is depicted as if it were an entity that can come to the prophet, personifying and metaphorically describing the experience of revelation.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 2,
+    "reference": "Ezekiel 6:2",
+    "deliberation": "Considered \"son of man\" as a title (largely conventional, not used figuratively in context) and \"set your face toward the mountains of Israel\" as a likely idiom. The phrase about the face being set toward the mountains uses body-part language for directed opposition/attention, functioning as an idiomatic metaphor/metonymy. Addressing the mountains will be personified more explicitly in v.3.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "שִׂ֥ים פָּנֶ֖יךָ אֶל־הָרֵ֣י יִשְׂרָאֵ֑ל",
+        "english_text": "turn/set your face toward the mountains of Israel",
+        "target": ["Ezekiel’s directed prophetic stance and opposition toward Israel’s idolatrous sites", "prophetic orientation/hostility", "theological-ethical"],
+        "vehicle": ["the physical face turned and fixed toward an object", "body-part orientation", "embodied/spatial"],
+        "ground": ["orientation, focus, and resolve directed at a target", "connection between bodily direction and inner intention", "embodied cognition"],
+        "posture": ["depicts Ezekiel’s role as determined opponent and herald of judgment", "judicial-prophetic stance", "rhetorical"],
+        "explanation": "The prophet is told to \"set his face\" toward the mountains; the literal face stands metonymically for attitude and resolve, forming an idiomatic metaphor for taking a firm, oppositional prophetic stance.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 3,
+    "reference": "Ezekiel 6:3",
+    "deliberation": "This verse has layered figurative language. (1) The mountains are addressed and told to \"hear,\" a clear personification. (2) The list of \"mountains, hills, ravines, valleys\" functions metonymically for the whole idolatrous cultic landscape of Israel. (3) \"I will bring a sword against you\" uses \"sword\" as metonymy for invading warfare and judgment. I treat these as three distinct but related expressions.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "הָרֵי֙ יִשְׂרָאֵ֔ל שִׁמְע֖וּ דְּבַר־אֲדֹנָ֣י יֱהֹוִ֑ה",
+        "english_text": "O mountains of Israel, hear the word of the Sovereign GOD",
+        "target": ["the land and cultic centers of Israel, especially the people who worship there", "addressees of divine judgment", "theological-historical"],
+        "vehicle": ["mountains as hearing, responsive subjects", "animate audience with ears and understanding", "personal/animistic"],
+        "ground": ["the mountains represent the enduring setting of Israel’s sin and thus are treated as if morally accountable hearers", "association between place and its inhabitants’ deeds", "moral geography"],
+        "posture": ["heightens the seriousness of the oracle by staging creation itself as listening to God’s decree", "dramatic-prophetic stance", "rhetorical"],
+        "explanation": "The inanimate mountains are commanded to \"hear\" God’s word, personifying the landscape as listening recipients of the oracle.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "כֹּה־אָמַ֣ר אֲדֹנָ֣י יֱהֹוִ֠ה לֶהָרִ֨ים וְלַגְּבָע֜וֹת לָאֲפִיקִ֣ים וְלַגֵּיאָי֗וֹת",
+        "english_text": "Thus said the Sovereign GOD to the mountains and the hills, to the streams and the valleys",
+        "target": ["all the idolatrous worship sites and those who use them throughout the land", "cultic high places and their worshipers", "religious-social"],
+        "vehicle": ["mountains, hills, ravines, and valleys as a list of terrain features", "geographical locations", "spatial-physical"],
+        "ground": ["these topographical features are the characteristic settings of the high places; mentioning them stands for the entire system of idolatrous worship in the land", "place representing its practices and people", "metonymic association"],
+        "posture": ["condenses the whole corrupt religious landscape into a vivid geographical catalogue", "comprehensive-accusatory stance", "rhetorical"],
+        "explanation": "The varied landforms function metonymically (and in a list similar to a merism) for all the cultic sites and worship practices spread across Israel.",
+        "confidence": 0.9
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "הִנְנִ֨י אֲנִ֜י מֵבִ֤יא עֲלֵיכֶם֙ חֶ֔רֶב",
+        "english_text": "See, I will bring a sword against you",
+        "target": ["the coming military invasion and divine judgment on Israel", "national catastrophe/war", "historical-political"],
+        "vehicle": ["a physical sword coming against someone", "weapon of death in battle", "martial/violent"],
+        "ground": ["the sword embodies lethal force and warfare; using \"sword\" for the invasion highlights its violent, martial character", "instrument representing the whole act of war", "means–effect association"],
+        "posture": ["presents the judgment as a direct, lethal onslaught from God Himself", "judicial-warring stance", "rhetorical/theological"],
+        "explanation": "\"Sword\" functions metonymically and metaphorically for the warfare and invading army God will send as judgment.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 4,
+    "reference": "Ezekiel 6:4",
+    "deliberation": "The verse describes altars being ruined, incense stands smashed, and slain cast in front of idols. These are gruesome, but the language itself is direct and concrete, not figurative: no metaphors, similes, or personifications beyond literal cultic and military imagery.",
+    "instances": []
+  },
+  {
+    "verse": 5,
+    "reference": "Ezekiel 6:5",
+    "deliberation": "Again the description of corpses and bones scattered around altars is graphic but straightforward. The actions (casting corpses, scattering bones) are literal judgments in prophetic imagery rather than figurative turns of phrase. I do not detect metaphor, simile, personification, or other figures in the wording itself.",
+    "instances": []
+  },
+  {
+    "verse": 6,
+    "reference": "Ezekiel 6:6",
+    "deliberation": "Most of the verse is literal description of cities devastated and cultic objects destroyed. One phrase stands out: the altars are said to become \"desolate and guilty\"/\"bear punishment\"—a verb of guilt/punishment that is normally predicated of persons is applied to inanimate altars, which personifies them as liable for guilt.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "לְמַ֩עַן֩ יֶחֶרְב֨וּ וְיֶאְשְׁמ֜וּ מִזְבְּחֽוֹתֵיכֶ֗ם",
+        "english_text": "Thus your altars shall be laid waste and bear their punishment / become guilty",
+        "target": ["the status of the idolatrous altars in God’s judgment", "condemnation of cultic objects", "theological-juridical"],
+        "vehicle": ["a person who becomes guilty and bears punishment", "legally responsible human agent", "forensic/social"],
+        "ground": ["altars, as centers of illegitimate worship, are treated like moral agents that incur guilt and punishment", "transfer of personal moral categories to objects", "moral personification"],
+        "posture": ["intensifies the condemnation of the cult by treating even the structures as culpable", "shaming-judicial stance", "rhetorical"],
+        "explanation": "By saying the altars \"become guilty\" or \"bear punishment,\" the text personifies them as if they were moral agents who can incur guilt.",
+        "confidence": 0.9
+      }
+    ]
+  },
+  {
+    "verse": 7,
+    "reference": "Ezekiel 6:7",
+    "deliberation": "The verse states that the slain will fall in the midst of the people and that they will know YHWH. These are standard prophetic statements of concrete death and cognitive/moral recognition. No non-literal imagery, simile, or special idiom is used beyond ordinary covenantal language.",
+    "instances": []
+  },
+  {
+    "verse": 8,
+    "reference": "Ezekiel 6:8",
+    "deliberation": "This verse promises a remnant who escape the sword and are scattered among the nations. Though \"remnant\" is a theological motif, here it functions as an ordinary term for survivors, and \"sword\" and \"scattering\" are used in their normal prophetic sense of literal warfare and exile (already picked up figuratively in v.3). No additional figurative expression specific to this wording is evident.",
+    "instances": []
+  },
+  {
+    "verse": 9,
+    "reference": "Ezekiel 6:9",
+    "deliberation": "This verse is rich in figurative language. The heart is called \"whoring\"—a metaphor for covenant infidelity—and the eyes are likewise said to \"play the harlot\" after idols. These expressions combine metaphor (unfaithful sexuality) with metonymy (heart/eyes for the whole inner person). I treat the whoring heart and the whoring eyes as two distinct figurative instances.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "אֲשֶׁ֣ר נִשְׁבַּרְתִּי אֶת־לִבָּ֣ם הַזּוֹנֶ֗ה אֲשֶׁר־סָר֙ מֵֽעָלַ֔י",
+        "english_text": "how I was brokenhearted through their faithless hearts that turned away from Me (lit. \"when I broke their whoring heart which turned away from Me\")",
+        "target": ["Israel’s inner loyalty and covenant relationship to YHWH", "spiritual/moral fidelity", "theological-ethical"],
+        "vehicle": ["a heart that is a prostitute/faithless sexual partner", "sexual infidelity/prostitution", "relational-moral"],
+        "ground": ["both prostitution and idolatry involve betrayal of an exclusive relationship and seeking other partners/loves", "shared notions of unfaithfulness and illicit desire", "covenantal-relationship analogy"],
+        "posture": ["frames Israel’s idolatry as deeply personal betrayal wounding God, not mere ritual error", "grieved yet judicial stance", "rhetorical/theological"],
+        "explanation": "Israel’s heart is metaphorically described as a \"whoring\" heart, personifying their inner disposition as an unfaithful sexual partner to depict covenant-breaking idolatry.",
+        "confidence": 0.97
+      },
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְאֵת֙ עֵֽינֵיהֶ֔ם הַזֹּנ֕וֹת אַחֲרֵ֖י גִּלּוּלֵיהֶ֑ם",
+        "english_text": "and their eyes that lusted/played the harlot after their fetishes",
+        "target": ["Israel’s desires and covetous looking toward idols", "idolatrous craving", "ethical-psychological"],
+        "vehicle": ["eyes that act as prostitutes pursuing clients", "sexualized pursuit/whoring", "relational-moral"],
+        "ground": ["wandering, desirous eyes and a prostitute both actively seek out forbidden partners", "connection between looking with desire and unfaithful pursuit", "desire/infidelity analogue"],
+        "posture": ["portrays their gaze as actively complicit in betrayal, not passive", "condemnatory stance", "rhetorical"],
+        "explanation": "Their \"eyes\" are personified and metaphorically called \"whoring\" as they follow idols, using body-part metonymy (eyes for desire) and the sexual infidelity metaphor to depict their idolatrous longing.",
+        "confidence": 0.96
+      }
+    ]
+  },
+  {
+    "verse": 10,
+    "reference": "Ezekiel 6:10",
+    "deliberation": "The verse states that they will know YHWH and recognize that He did not speak \"for nothing\" in bringing this evil. While \"evil\" here means calamity, that is standard prophetic usage, and \"not without cause\" is a literal legal-moral assertion. No clear metaphor, simile, or other figure stands out beyond normal theological language.",
+    "instances": []
+  },
+  {
+    "verse": 11,
+    "reference": "Ezekiel 6:11",
+    "deliberation": "The commands to clap hands, stamp feet, and say \"Aha!\" are symbolic prophetic gestures, but in the text they are literal instructions for embodied sign-acts, not figurative phrases. \"Fall by the sword, famine, and pestilence\" continues the literal triad of judgments. I do not isolate a distinct figurative linguistic expression here.",
+    "instances": []
+  },
+  {
+    "verse": 12,
+    "reference": "Ezekiel 6:12",
+    "deliberation": "The distributions of death by pestilence, sword, and famine are literal judgments. The key figurative phrase is \"Thus I will spend my fury upon them\" (וְכִלֵּיתִ֥י חֲמָתִ֖י בָּֽם), where wrath is conceptualized as something that can be used up or exhausted, a common metaphor/idiom for divine anger.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "no",
+        "other": "no",
+        "hebrew_text": "וְכִלֵּיתִ֥י חֲמָתִ֖י בָּֽם",
+        "english_text": "Thus I will spend My fury upon them",
+        "target": ["the completion of God’s judgmental anger against Israel", "divine wrath in action", "theological-judicial"],
+        "vehicle": ["using up or exhausting a finite resource", "consumption of a stored substance (e.g., provisions, energy)", "economic/physical"],
+        "ground": ["both exhausting a supply and fully executing wrath involve finishing what is held or intended so that nothing remains", "idea of completion and depletion", "process/completion analogy"],
+        "posture": ["underscores that judgment will be total and not partial or tentative", "emphatic-judicial stance", "rhetorical"],
+        "explanation": "God’s \"fury\" is portrayed as a quantity that can be spent or used up, an idiomatic metaphor for completely carrying out His wrath.",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "verse": 13,
+    "reference": "Ezekiel 6:13",
+    "deliberation": "The verse revisits slain among idols and a catalogue of locations: every high hill, all mountaintops, under every green tree, every leafy oak. This formula in the prophets is a stock way to denote all idolatrous high-place worship, using specific locations as metonymy and functioning similarly to a merism. I treat this as one composite metonymic expression.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "no",
+        "simile": "no",
+        "personification": "no",
+        "idiom": "no",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "yes",
+        "hebrew_text": "אֶל֩ כׇּל־גִּבְעָ֨ה רָמָ֜ה בְּכֹ֣ל רָאשֵׁ֣י הֶהָרִ֗ים וְתַ֨חַת כׇּל־עֵ֤ץ רַֽעֲנָן֙ וְתַ֙חַת֙ כׇּל־אֵלָ֣ה עֲבֻתָּ֔ה מְק֗וֹם אֲשֶׁ֤ר נָֽתְנוּ־שָׁם֙ רֵ֣יחַ נִיחֹ֔חַ לְכֹ֖ל גִּלּוּלֵיהֶֽם",
+        "english_text": "on every high hill, on all the mountaintops, under every green tree, and under every leafy oak—wherever they presented pleasing odors to all their fetishes",
+        "target": ["the entire system and ubiquity of idolatrous worship in the land", "pagan high-place cult", "religious-geographical"],
+        "vehicle": ["specific topographical and arboreal locations (high hills, mountaintops, green trees, oaks)", "worship sites in nature", "spatial/environmental"],
+        "ground": ["these specific places were characteristic sites of pagan worship; citing them stands for all such idolatrous practice throughout the land, in a list functioning like a merism", "place representing practice and its extent", "metonymic/meristic association"],
+        "posture": ["emphasizes how pervasive and entrenched the idolatry is across Israel’s landscape", "indicting stance", "rhetorical"],
+        "explanation": "The repeated formula \"every high hill ... under every green tree\" uses characteristic locations as metonymy (in a near-meristic way) for the whole spread of idolatrous high-place worship.",
+        "confidence": 0.94
+      }
+    ]
+  },
+  {
+    "verse": 14,
+    "reference": "Ezekiel 6:14",
+    "deliberation": "Most of the verse’s devastation language is literal prophetic description of desolation. The phrase \"I will stretch out My hand against them\" is a standard metaphor/anthropomorphism: God’s \"hand\" stands for His active power in judgment, and stretching it out portrays decisive action.",
+    "instances": [
+      {
+        "figurative_language": "yes",
+        "metaphor": "yes",
+        "simile": "no",
+        "personification": "yes",
+        "idiom": "yes",
+        "hyperbole": "no",
+        "metonymy": "yes",
+        "other": "no",
+        "hebrew_text": "וְנָטִ֤יתִי אֶת־יָדִי֙ עֲלֵיהֶ֔ם",
+        "english_text": "I will stretch out My hand against them",
+        "target": ["YHWH’s exertion of power in judging Israel and its land", "exercise of divine power/judgment", "theological-political"],
+        "vehicle": ["a human hand stretched out to strike or act against someone", "instrument of physical action and attack", "bodily/anthropomorphic"],
+        "ground": ["both a stretched-out hand and God’s act of judgment involve directed, intentional exertion of power against an object", "hand as metonymy for effective power", "agency/power association"],
+        "posture": ["presents divine judgment in vivid, personal terms as if God were a warrior or judge taking action", "anthropomorphic-judicial stance", "rhetorical/theological"],
+        "explanation": "God is portrayed anthropomorphically as stretching out His \"hand\"—a metonymy and metaphor for His active, forceful intervention in judgment.",
+        "confidence": 0.97
+      }
+    ]
+  }
+]
