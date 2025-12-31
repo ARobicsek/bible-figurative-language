@@ -3125,8 +3125,27 @@
                                 matchedText = match[0];
                             }
                         }
-                        // Try case-insensitive with core text
+                        // Try with flexible punctuation (handles period/comma/semicolon differences)
                         else {
+                            // Normalize punctuation in both texts for comparison
+                            const normalizedText = lowerText.replace(/[.,;:]/g, ',');
+                            const normalizedFig = lowerFig.replace(/[.,;:]/g, ',');
+
+                            if (normalizedText.includes(normalizedFig)) {
+                                // Build a flexible regex that allows any punctuation
+                                const flexiblePattern = trimmedFigText
+                                    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')  // Escape special chars
+                                    .replace(/[.,;:]/g, '[.,;:]');  // Allow any punctuation
+                                const regex = new RegExp(flexiblePattern, 'i');
+                                const match = highlightedText.match(regex);
+                                if (match) {
+                                    matchedText = match[0];
+                                    console.log('[DEBUG] Flexible punctuation match found:', matchedText.substring(0, 50));
+                                }
+                            }
+                        }
+                        // Try case-insensitive with core text (remove parenthetical)
+                        if (!matchedText) {
                             const coreText = trimmedFigText.replace(/\s*\([^)]*\)/g, '').replace(/\s*\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
                             if (coreText && lowerText.includes(coreText.toLowerCase())) {
                                 const regex = new RegExp(coreText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
