@@ -5,7 +5,7 @@ services:
     region: oregon
     plan: free
     branch: main
-    buildCommand: pip install -r web/requirements.txt
+    buildCommand: pip install -r web/requirements.txt && python web/download_database.py
     startCommand: gunicorn --bind 0.0.0.0:$PORT --chdir web --timeout 120 --workers 1 --threads 2 --worker-class gthread api_server:app
     envVars:
       - key: PYTHON_VERSION
