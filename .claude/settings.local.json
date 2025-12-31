@@ -13,7 +13,17 @@
       "Bash(copy:*)",
       "Bash(del:*)",
       "Bash(sqlite3:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(ls:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git diff-tree:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd Biblical_fig_language.db and update .gitignore\n\n- Add Biblical_fig_language.db (105MB) as the single production database\n- Remove old database files (Pentateuch_Psalms_fig_language.db, torah_figurative_language.db)\n- Update .gitignore to only allow Biblical_fig_language.db\n- All individual book databases (Amos.db, Ezekiel.db, etc.) remain ignored\nEOF\n)\")",
+      "Bash(git lfs:*)",
+      "Bash(git reset:*)",
+      "Bash(cat:*)",
+      "Bash(pip install:*)"
     ],
     "deny": [],
     "ask": []
