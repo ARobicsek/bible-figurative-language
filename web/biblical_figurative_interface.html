@@ -2855,24 +2855,55 @@
                         const parts = trimmedFigText.split(/…|\.\.\./).map(p => p.trim()).filter(p => p.length > 0);
 
                         if (parts.length >= 2) {
-                            // Find the first and last parts in the text
-                            const cleanText = highlightedText.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').replace(/&[a-zA-Z0-9#]+;/g, ' ');
-                            let firstPartPos = cleanText.indexOf(parts[0]);
-                            let lastPartPos = cleanText.indexOf(parts[parts.length - 1], firstPartPos);
+                            // For Hebrew, normalize both the text and the parts
+                            if (language === 'hebrew') {
+                                // Normalize the verse text (remove diacritics and HTML)
+                                const normalizedVerse = highlightedText
+                                    .replace(/<[^>]*>/g, '')
+                                    .replace(/&nbsp;/g, ' ')
+                                    .replace(/&[a-zA-Z0-9#]+;/g, ' ')
+                                    .replace(/־/g, ' ')  // Remove maqaf
+                                    .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '')  // Remove diacritics
+                                    .replace(/\s+/g, ' ')
+                                    .trim();
 
-                            // Try case-insensitive for English
-                            if (firstPartPos === -1 && language === 'english') {
-                                firstPartPos = cleanText.toLowerCase().indexOf(parts[0].toLowerCase());
-                            }
-                            if (lastPartPos === -1 && language === 'english' && firstPartPos !== -1) {
-                                lastPartPos = cleanText.toLowerCase().indexOf(parts[parts.length - 1].toLowerCase(), firstPartPos);
-                            }
+                                // Normalize the parts
+                                const normalizedParts = parts.map(part =>
+                                    part
+                                        .replace(/־/g, ' ')
+                                        .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '')
+                                        .replace(/\s+/g, ' ')
+                                        .trim()
+                                );
 
-                            if (firstPartPos !== -1 && lastPartPos !== -1) {
-                                // Extract the full span from first part to end of last part
-                                const spanEnd = lastPartPos + parts[parts.length - 1].length;
-                                matchedText = cleanText.substring(firstPartPos, spanEnd);
-                                console.log(`[DEBUG] Ellipsis match found: "${matchedText}"`);
+                                // Find positions in normalized text
+                                const firstPartPos = normalizedVerse.indexOf(normalizedParts[0]);
+                                const lastPartPos = normalizedVerse.indexOf(normalizedParts[normalizedParts.length - 1], firstPartPos);
+
+                                if (firstPartPos !== -1 && lastPartPos !== -1) {
+                                    const spanEnd = lastPartPos + normalizedParts[normalizedParts.length - 1].length;
+                                    matchedText = normalizedVerse.substring(firstPartPos, spanEnd);
+                                    console.log(`[DEBUG] Hebrew ellipsis match found: "${matchedText}"`);
+                                }
+                            } else {
+                                // For English, use simple text cleaning
+                                const cleanText = highlightedText.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').replace(/&[a-zA-Z0-9#]+;/g, ' ');
+                                let firstPartPos = cleanText.indexOf(parts[0]);
+                                let lastPartPos = cleanText.indexOf(parts[parts.length - 1], firstPartPos);
+
+                                // Try case-insensitive for English
+                                if (firstPartPos === -1) {
+                                    firstPartPos = cleanText.toLowerCase().indexOf(parts[0].toLowerCase());
+                                }
+                                if (lastPartPos === -1 && firstPartPos !== -1) {
+                                    lastPartPos = cleanText.toLowerCase().indexOf(parts[parts.length - 1].toLowerCase(), firstPartPos);
+                                }
+
+                                if (firstPartPos !== -1 && lastPartPos !== -1) {
+                                    const spanEnd = lastPartPos + parts[parts.length - 1].length;
+                                    matchedText = cleanText.substring(firstPartPos, spanEnd);
+                                    console.log(`[DEBUG] English ellipsis match found: "${matchedText}"`);
+                                }
                             }
                         }
                     }
