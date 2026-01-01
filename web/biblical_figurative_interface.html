@@ -3115,32 +3115,47 @@
 
                     // Try case-insensitive for English
                     if (!matchedText && language === 'english') {
-                        const lowerText = highlightedText.toLowerCase();
-                        const lowerFig = trimmedFigText.toLowerCase();
+                        // Normalize smart quotes to regular quotes for comparison
+                        const normalizeQuotes = (text) => text.replace(/[\u2018\u2019\u201C\u201D]/g, '"');
+
+                        const lowerText = normalizeQuotes(highlightedText.toLowerCase());
+                        const lowerFig = normalizeQuotes(trimmedFigText.toLowerCase());
+
                         if (lowerText.includes(lowerFig)) {
-                            // Find the actual case-preserved match
-                            const regex = new RegExp(trimmedFigText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
+                            // Find the actual case-preserved match with flexible quotes
+                            const flexiblePattern = trimmedFigText
+                                .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')  // Escape special chars
+                                .replace(/["']/g, '[\u0022\u0027\u2018\u2019\u201C\u201D]');  // Allow any quote variant
+                            const regex = new RegExp(flexiblePattern, 'i');
                             const match = highlightedText.match(regex);
                             if (match) {
                                 matchedText = match[0];
                             }
                         }
-                        // Try with flexible punctuation (handles period/comma/semicolon differences)
+                        // Try with flexible punctuation (handles period/comma/semicolon/quote differences)
                         else {
-                            // Normalize punctuation in both texts for comparison
-                            const normalizedText = lowerText.replace(/[.,;:]/g, ',');
-                            const normalizedFig = lowerFig.replace(/[.,;:]/g, ',');
+                            // Normalize punctuation and quotes in both texts for comparison
+                            const normalizedText = normalizeQuotes(lowerText)
+                                .replace(/[.,;:!?]/g, ',')
+                                .replace(/["']/g, '')  // Remove quotes entirely
+                                .replace(/\s+/g, ' ');
+                            const normalizedFig = normalizeQuotes(lowerFig)
+                                .replace(/[.,;:!?]/g, ',')
+                                .replace(/["']/g, '')  // Remove quotes entirely
+                                .replace(/\s+/g, ' ');
 
                             if (normalizedText.includes(normalizedFig)) {
-                                // Build a flexible regex that allows any punctuation
+                                // Build a flexible regex that allows any punctuation, quotes, and whitespace
                                 const flexiblePattern = trimmedFigText
                                     .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')  // Escape special chars
-                                    .replace(/[.,;:]/g, '[.,;:]');  // Allow any punctuation
+                                    .replace(/[.,;:!?]/g, '[.,;:!?]')  // Allow any punctuation
+                                    .replace(/["']/g, '[\u0022\u0027\u2018\u2019\u201C\u201D]?')  // Optional quotes
+                                    .replace(/\s+/g, '\\s+');  // Allow flexible whitespace
                                 const regex = new RegExp(flexiblePattern, 'i');
                                 const match = highlightedText.match(regex);
                                 if (match) {
                                     matchedText = match[0];
-                                    console.log('[DEBUG] Flexible punctuation match found:', matchedText.substring(0, 50));
+                                    console.log('[DEBUG] Flexible punctuation/quote match found:', matchedText.substring(0, 50));
                                 }
                             }
                         }
