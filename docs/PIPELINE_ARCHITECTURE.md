@@ -821,6 +821,8 @@ PIPELINE_VERSION = "2.2.1"
 
 #### Hosting Architecture
 - **Database Storage:** Google Drive (105MB)
+  - Database file: `Biblical_fig_language.db` (consolidated from previous separate book DBs)
+  - Previous database: `Pentateuch_Psalms_fig_language.db` (6 books) → replaced
   - Eliminates Git LFS costs
   - Auto-downloaded during Render.com deployment via `gdown` library
   - Cached in container (survives cold starts)
