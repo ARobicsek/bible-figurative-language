@@ -805,4 +805,52 @@ PIPELINE_VERSION = "2.2.1"
 
 ---
 
+## Recent Updates (December 2025)
+
+### Website Deployment & Database Expansion
+
+**Production Website:** https://tzafun.onrender.com
+
+#### Database Growth
+- **Previous:** 6 books (Torah + Psalms) - 8,373 verses
+- **Current:** 13 books - 13,548 verses (+62% growth)
+- **New Books Added:**
+  - Proverbs (Wisdom Literature)
+  - Isaiah, Jeremiah, Ezekiel (Major Prophets)
+  - Hosea, Joel, Amos (Minor Prophets/Twelve)
+
+#### Hosting Architecture
+- **Database Storage:** Google Drive (105MB)
+  - Eliminates Git LFS costs
+  - Auto-downloaded during Render.com deployment via `gdown` library
+  - Cached in container (survives cold starts)
+- **Web Hosting:** Render.com Free Tier
+  - Oregon region
+  - Gunicorn WSGI server (1 worker, 2 threads)
+  - Python 3.11
+
+#### Website Highlighting Improvements (December 31, 2025)
+Recent fixes to figurative text highlighting system:
+
+1. **Ellipsis Support** - Handles partial quotes with `...` or `…`
+   - Example: `"The wolf ... with a child"` now highlights full span
+   - Works for both English and Hebrew
+
+2. **Hebrew Normalization** - Proper diacritic handling for ellipses
+   - Removes vowel points and cantillation marks before matching
+   - Handles maqaf (־) normalization
+
+3. **Punctuation Flexibility** - Matches despite punctuation differences
+   - Handles period/comma/semicolon variations
+   - Example: `"them,"` matches `"them."`
+
+4. **Smart Quote Normalization** - Unicode quote handling
+   - Normalizes curly quotes (U+2018, U+2019, U+201C, U+201D)
+   - Fixes verses with trailing smart quotes
+   - Example: Genesis 49:27 with `spoil."` vs `spoil."`
+
+These improvements ensure robust highlighting across all 13 biblical books with various text formatting edge cases.
+
+---
+
 *Document generated from codebase analysis. For schema details, see `DATABASE_SCHEMA.md`. For methodology, see `METHODOLOGY.md`. For session notes, see `session_notes.md`.*
