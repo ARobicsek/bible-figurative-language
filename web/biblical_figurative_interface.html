@@ -620,31 +620,32 @@
             background-color: var(--color-other);
         }
 
-        /* Detail Panel */
+        /* Detail Panel - Right Drawer */
         .detail-panel {
             position: fixed;
-            bottom: 0;
-            left: 320px;
-            /* Aligned with grid */
+            top: 0;
             right: 0;
+            bottom: 0;
+            width: 450px;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(var(--glass-blur));
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
             padding: 2rem;
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
-            transform: translateY(100%);
+            box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+            transform: translateX(100%);
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            z-index: 900;
-            max-height: 40vh;
+            z-index: 1000;
+            /* Higher than header (100) and stats content */
             overflow-y: auto;
+            max-height: none;
         }
 
         .detail-panel.active {
-            transform: translateY(0);
+            transform: translateX(0);
         }
 
         .detail-panel.annotation-details {
-            max-height: 50vh;
+            max-height: none;
         }
 
         .panel-header {
@@ -1473,7 +1474,8 @@
                     </div>
                     <div style="font-size: 0.85rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.75rem;">For
                         multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
-                    <div class="metadata-search" style="margin-top: 0;">
+                    <div class="metadata-search"
+                        style="margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
                         <input type="text" id="target-search" placeholder="Target">
                         <input type="text" id="vehicle-search" placeholder="Vehicle">
                         <input type="text" id="ground-search" placeholder="Ground">
@@ -2599,10 +2601,10 @@
                     // Search Loop
                     let pos = 0;
 
-                    // Logic for English ellipses handling
-                    if (language !== 'hebrew' && (cleanPhrase.includes('...') || cleanPhrase.includes('…'))) {
-                        // Split into parts
-                        const parts = cleanPhrase.split(/…|\.\.\./).map(p =>
+                    // Logic for English ellipses and brackets handling
+                    if (language !== 'hebrew' && (cleanPhrase.match(/…|\.\.\.|\[.*?\]/))) {
+                        // Split into parts by ellipses OR brackets
+                        const parts = cleanPhrase.split(/…|\.\.\.|\[.*?\]/).map(p =>
                             p.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '').trim()
                         ).filter(p => p.length > 0);
 
@@ -2619,13 +2621,14 @@
                                 let matchEnd = currentIdx;
 
                                 for (let i = 1; i < parts.length; i++) {
+                                    // Search for next part AFTER currentIdx
                                     const nextIdx = normObj.text.indexOf(parts[i], currentIdx);
                                     if (nextIdx === -1) {
                                         allFound = false;
                                         break;
                                     }
-                                    currentIdx = nextIdx + parts[i].length;
-                                    matchEnd = currentIdx;
+                                    matchEnd = nextIdx + parts[i].length;
+                                    currentIdx = matchEnd;
                                 }
 
                                 if (allFound) {
@@ -2658,140 +2661,144 @@
 
                         pos = idx + 1;
                     }
+                    pos = idx + 1;
+                }
                 });
 
-                // 4. Search for SearchTerm
-                if (searchTerm) {
-                    let normSearch = '';
-                    if (language === 'hebrew') {
-                        normSearch = searchTerm.normalize('NFD')
-                            .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '')
-                            .replace(/־/g, ' ');
-                    } else {
-                        // For English search, be a bit more flexible with partial matches? 
-                        // Current logic matches 'man' in 'human'.
-                        normSearch = searchTerm.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '');
-                    }
 
-                    if (normSearch) {
-                        let pos = 0;
-                        while (true) {
-                            const idx = normObj.text.indexOf(normSearch, pos);
-                            if (idx === -1) break;
 
-                            results.push({
-                                startNorm: idx,
-                                endNorm: idx + normSearch.length,
-                                type: 'search',
-                                priority: 2,
-                                data: searchTerm
-                            });
-                            pos = idx + 1;
-                        }
-                    }
+            // 4. Search for SearchTerm
+            if(searchTerm) {
+                let normSearch = '';
+                if (language === 'hebrew') {
+                    normSearch = searchTerm.normalize('NFD')
+                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '')
+                        .replace(/־/g, ' ');
+                } else {
+                    // For English search, be a bit more flexible with partial matches? 
+                    // Current logic matches 'man' in 'human'.
+                    normSearch = searchTerm.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '');
                 }
 
-                // 5. Convert Norm Indices to HTML Indices
-                const validRanges = [];
-                results.forEach(r => {
-                    // map norm -> plain
-                    if (r.startNorm >= normObj.map.length) return;
+                if (normSearch) {
+                    let pos = 0;
+                    while (true) {
+                        const idx = normObj.text.indexOf(normSearch, pos);
+                        if (idx === -1) break;
 
-                    const pStart = normObj.map[r.startNorm];
-
-                    let pEnd;
-                    if (r.endNorm < normObj.map.length) {
-                        pEnd = normObj.map[r.endNorm];
-                    } else {
-                        pEnd = plainObj.text.length;
+                        results.push({
+                            startNorm: idx,
+                            endNorm: idx + normSearch.length,
+                            type: 'search',
+                            priority: 2,
+                            data: searchTerm
+                        });
+                        pos = idx + 1;
                     }
+                }
+            }
 
-                    // map plain -> html
-                    if (pStart >= plainObj.map.length) return;
-                    const hStart = plainObj.map[pStart];
+            // 5. Convert Norm Indices to HTML Indices
+            const validRanges = [];
+        results.forEach(r => {
+                // map norm -> plain
+                if (r.startNorm >= normObj.map.length) return;
 
-                    let hEnd;
-                    if (pEnd < plainObj.map.length) {
-                        hEnd = plainObj.map[pEnd];
-                    } else {
-                        // Safe fallback for end of string
-                        hEnd = html.length;
-                    }
+        const pStart = normObj.map[r.startNorm];
 
-                    validRanges.push({
-                        start: hStart,
-                        end: hEnd,
-                        type: r.type,
-                        priority: r.priority,
-                        data: r.data
-                    });
-                });
+        let pEnd;
+        if (r.endNorm < normObj.map.length) {
+            pEnd = normObj.map[r.endNorm];
+        } else {
+            pEnd = plainObj.text.length;
+        }
 
-                return validRanges;
+        // map plain -> html
+        if (pStart >= plainObj.map.length) return;
+        const hStart = plainObj.map[pStart];
+
+        let hEnd;
+        if (pEnd < plainObj.map.length) {
+            hEnd = plainObj.map[pEnd];
+        } else {
+            // Safe fallback for end of string
+            hEnd = html.length;
+        }
+
+        validRanges.push({
+            start: hStart,
+            end: hEnd,
+            type: r.type,
+            priority: r.priority,
+            data: r.data
+        });
+        });
+
+        return validRanges;
             }
 
             // Step 6. Apply Highlights
             static applyHighlights(html, ranges) {
-                if (ranges.length === 0) return html;
+            if (ranges.length === 0) return html;
 
-                // Flatten to points: { index, type: 'start'|'end', priority, ... }
-                const points = [];
-                ranges.forEach((r, i) => {
-                    points.push({ idx: r.start, type: 'start', priority: r.priority, id: i, data: r.data, rangeType: r.type });
-                    points.push({ idx: r.end, type: 'end', priority: r.priority, id: i, data: r.data, rangeType: r.type });
-                });
+            // Flatten to points: { index, type: 'start'|'end', priority, ... }
+            const points = [];
+            ranges.forEach((r, i) => {
+                points.push({ idx: r.start, type: 'start', priority: r.priority, id: i, data: r.data, rangeType: r.type });
+                points.push({ idx: r.end, type: 'end', priority: r.priority, id: i, data: r.data, rangeType: r.type });
+            });
 
-                points.sort((a, b) => {
-                    if (a.idx !== b.idx) return a.idx - b.idx;
-                    // Order at same index: Ends before Starts (Visual containment)
-                    return a.type === 'end' ? -1 : 1;
-                });
+            points.sort((a, b) => {
+                if (a.idx !== b.idx) return a.idx - b.idx;
+                // Order at same index: Ends before Starts (Visual containment)
+                return a.type === 'end' ? -1 : 1;
+            });
 
-                let result = '';
-                let lastIdx = 0;
+            let result = '';
+            let lastIdx = 0;
 
-                let activeFigurative = null;
-                let activeSearch = false;
+            let activeFigurative = null;
+            let activeSearch = false;
 
-                for (let i = 0; i < points.length; i++) {
-                    const point = points[i];
+            for (let i = 0; i < points.length; i++) {
+                const point = points[i];
 
-                    // Add text up to this point
-                    if (point.idx > lastIdx) {
-                        const chunk = html.substring(lastIdx, point.idx);
+                // Add text up to this point
+                if (point.idx > lastIdx) {
+                    const chunk = html.substring(lastIdx, point.idx);
 
-                        let wrapped = chunk;
+                    let wrapped = chunk;
 
-                        if (activeSearch) {
-                            wrapped = `<span class="search-highlight">${wrapped}</span>`;
-                        }
-                        if (activeFigurative) {
-                            wrapped = createFigurativeTag(wrapped, activeFigurative);
-                        }
-
-                        result += wrapped;
+                    if (activeSearch) {
+                        wrapped = `<span class="search-highlight">${wrapped}</span>`;
+                    }
+                    if (activeFigurative) {
+                        wrapped = createFigurativeTag(wrapped, activeFigurative);
                     }
 
-                    // Update state
-                    if (point.type === 'start') {
-                        if (point.rangeType === 'figurative') activeFigurative = point.data;
-                        if (point.rangeType === 'search') activeSearch = true;
-                    } else {
-                        // End point
-                        if (point.rangeType === 'figurative') activeFigurative = null;
-                        if (point.rangeType === 'search') activeSearch = false;
-                    }
-
-                    lastIdx = point.idx;
+                    result += wrapped;
                 }
 
-                // Trailing text
-                if (lastIdx < html.length) {
-                    result += html.substring(lastIdx);
+                // Update state
+                if (point.type === 'start') {
+                    if (point.rangeType === 'figurative') activeFigurative = point.data;
+                    if (point.rangeType === 'search') activeSearch = true;
+                } else {
+                    // End point
+                    if (point.rangeType === 'figurative') activeFigurative = null;
+                    if (point.rangeType === 'search') activeSearch = false;
                 }
 
-                return result;
+                lastIdx = point.idx;
             }
+
+            // Trailing text
+            if (lastIdx < html.length) {
+                result += html.substring(lastIdx);
+            }
+
+            return result;
+        }
         }
 
         function createFigurativeTag(content, annotation) {
