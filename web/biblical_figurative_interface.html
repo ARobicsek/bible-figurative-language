@@ -1,11 +1,12 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tzafun</title>
     <style>
-        /* Hebrew Font Support */ 
+        /* Hebrew Font Support */
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@400;600&family=Crimson+Text:wght@400;600&display=swap');
 
         :root {
@@ -20,7 +21,7 @@
 
             /* Layout Colors */
             --sidebar-bg: #f8f9fa;
-            --main-bg: #ffffff; 
+            --main-bg: #ffffff;
             --border-color: #dee2e6;
             --text-color: #212529;
             --accent-color: #007bff;
@@ -55,7 +56,7 @@
             background: linear-gradient(135deg, #0a1930 0%, #020408 100%);
             color: white;
             padding: 1rem 2rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -101,10 +102,15 @@
             color: white;
             text-decoration: none;
             cursor: pointer;
+            font-weight: 600;
+            /* Bolder */
+            display: inline-block;
+            transition: opacity 0.2s;
         }
 
         .header-attribution a:hover {
             text-decoration: underline;
+            opacity: 1;
         }
 
         .header h1 {
@@ -258,6 +264,8 @@
             color: #2b394f;
             border-bottom: 2px solid #2b394f;
             padding-bottom: 0.3rem;
+            width: fit-content;
+            /* Fixes underline length */
         }
 
         .sidebar h3.tooltip {
@@ -271,7 +279,8 @@
             font-size: 0.95rem;
         }
 
-        .sidebar input, .sidebar select {
+        .sidebar input,
+        .sidebar select {
             width: 100%;
             padding: 0.5rem;
             border: 1px solid var(--border-color);
@@ -280,10 +289,90 @@
             margin-bottom: 0.5rem;
         }
 
-        .sidebar input[type="checkbox"], .sidebar input[type="radio"] {
+        .sidebar input[type="checkbox"],
+        .sidebar input[type="radio"] {
             width: auto;
             margin-right: 0.5rem;
             margin-bottom: 0;
+        }
+
+        /* New Control Classes (Refactored from inline styles) */
+        .control-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .control-header.mt {
+            margin-top: 0.75rem;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .control-link {
+            background: none;
+            border: none;
+            color: #007bff;
+            font-size: 0.9rem;
+            cursor: pointer;
+            padding: 2px 4px;
+            margin: 0;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .control-link:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        .control-separator {
+            color: #dee2e6;
+            /* Lighter color for separator */
+        }
+
+        .refresh-btn {
+            background: none;
+            border: none;
+            color: #6c757d;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 4px;
+            margin: 0;
+            line-height: 1;
+            transition: color 0.2s, transform 0.2s;
+            border-radius: 4px;
+        }
+
+        .refresh-btn:hover {
+            color: #2b394f;
+            background-color: #e9ecef;
+            transform: rotate(30deg);
+        }
+
+        .load-btn {
+            width: 100%;
+            padding: 0.6rem;
+            background: #2b394f;
+            color: white;
+            border: 1px solid #2b394f;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 0.75rem;
+            transition: all 0.2s ease;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .load-btn:hover {
+            background: #1a2533;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+            transform: translateY(-1px);
         }
 
         /* Type Filter Colors */
@@ -302,7 +391,7 @@
             margin-right: 0;
         }
 
-        .type-filters input[type="checkbox"]:checked + .filter-color {
+        .type-filters input[type="checkbox"]:checked+.filter-color {
             opacity: 1;
         }
 
@@ -311,22 +400,43 @@
             height: 14px;
             border-radius: 3px;
             opacity: 0.4;
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
             flex-shrink: 0;
         }
 
-        .filter-color.metaphor { background-color: var(--metaphor-color); }
-        .filter-color.simile { background-color: var(--simile-color); }
-        .filter-color.personification { background-color: var(--personification-color); }
-        .filter-color.idiom { background-color: var(--idiom-color); }
-        .filter-color.hyperbole { background-color: var(--hyperbole-color); }
-        .filter-color.metonymy { background-color: var(--metonymy-color); }
-        .filter-color.other { background-color: var(--other-color); }
+        .filter-color.metaphor {
+            background-color: var(--metaphor-color);
+        }
+
+        .filter-color.simile {
+            background-color: var(--simile-color);
+        }
+
+        .filter-color.personification {
+            background-color: var(--personification-color);
+        }
+
+        .filter-color.idiom {
+            background-color: var(--idiom-color);
+        }
+
+        .filter-color.hyperbole {
+            background-color: var(--hyperbole-color);
+        }
+
+        .filter-color.metonymy {
+            background-color: var(--metonymy-color);
+        }
+
+        .filter-color.other {
+            background-color: var(--other-color);
+        }
 
         /* Main Content Area */
         .main-content {
             padding: 1.5rem;
-            padding-bottom: 120px; /* Space for fixed stats bar */
+            padding-bottom: 120px;
+            /* Space for fixed stats bar */
             overflow-y: auto;
             max-height: calc(100vh - 120px);
         }
@@ -338,12 +448,12 @@
             border-radius: 8px;
             overflow: hidden;
             background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             transition: box-shadow 0.2s ease;
         }
 
         .verse-container:hover {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .verse-header {
@@ -361,6 +471,8 @@
             gap: 2rem;
             padding: 1.5rem;
             position: relative;
+            align-items: center;
+            /* Vertically center the text blocks */
         }
 
         /* Text Columns */
@@ -385,7 +497,8 @@
 
         /* Simple Figurative Text Highlighting */
         .figurative-highlight {
-            background-color: #fff3cd; /* Light yellow highlighting */
+            background-color: #fff3cd;
+            /* Light yellow highlighting */
             padding: 1px 2px;
             border-radius: 2px;
             cursor: pointer;
@@ -393,7 +506,8 @@
         }
 
         .figurative-highlight:hover {
-            background-color: #ffeaa7; /* Slightly more yellow on hover */
+            background-color: #ffeaa7;
+            /* Slightly more yellow on hover */
         }
 
         /* Tooltip for showing figurative types */
@@ -492,7 +606,7 @@
             overflow-y: auto;
             transform: translateY(100%);
             transition: transform 0.3s ease;
-            box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
 
@@ -700,8 +814,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         /* Responsive Design */
@@ -747,7 +866,8 @@
         /* When search highlight is inside figurative highlight, pink takes priority */
         .figurative-highlight .search-highlight {
             background-color: #ffb3d9;
-            box-shadow: 0 0 0 2px #fff3cd; /* Yellow border to show it's also figurative */
+            box-shadow: 0 0 0 2px #fff3cd;
+            /* Yellow border to show it's also figurative */
         }
 
         /* Stats Bar */
@@ -768,7 +888,7 @@
             right: 0;
             width: 100%;
             z-index: 100;
-            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .stats-text {
@@ -785,13 +905,13 @@
             font-size: 1rem;
             font-weight: 600;
             transition: all 0.2s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .nav-button:hover {
             background: linear-gradient(135deg, #2b394f 0%, #0a1930 100%);
             transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
 
         /* Hebrew Keyboard Styles */
@@ -894,7 +1014,8 @@
         /* Ensure keyboard doesn't overlap with search input */
         #search-input {
             margin-bottom: 0;
-            padding-right: 4rem; /* Make room for both keyboard and clear buttons */
+            padding-right: 4rem;
+            /* Make room for both keyboard and clear buttons */
         }
 
         .clear-search-btn {
@@ -923,13 +1044,12 @@
             color: white;
         }
 
-        #clear-metadata-btn:hover {
-            color: #495057 !important;
-            transform: scale(1.1);
-        }
+        /* Clear Metadata Button hover effect removed (handled by .refresh-btn) */
+        /* #clear-metadata-btn:hover { ... } removed */
 
         /* Print Styles */
         @media print {
+
             /* Hide non-print elements */
             .sidebar,
             .header,
@@ -1009,8 +1129,8 @@
             }
 
             /* Hide the original Hebrew/English text in print (we show them at top in verse-text-columns) */
-            .verse-content > .hebrew-text,
-            .verse-content > .english-text {
+            .verse-content>.hebrew-text,
+            .verse-content>.english-text {
                 display: none !important;
             }
 
@@ -1250,7 +1370,8 @@
                 page-break-inside: avoid;
             }
 
-            h4, h5 {
+            h4,
+            h5 {
                 page-break-after: avoid;
             }
         }
@@ -1264,6 +1385,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="app-container">
         <!-- Header -->
@@ -1283,182 +1405,217 @@
         <aside class="sidebar">
             <!-- Book/Chapter Selection -->
             <section class="book-selection">
-                <h3>Text Selection</h3>
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
-                    <label for="book-select">Books (Ctrl+Click to select):</label>
-                    <div style="display: flex; gap: 0.5rem;">
-                        <button onclick="selectAllBooks()" style="background: none; border: none; color: #007bff; font-size: 0.85rem; cursor: pointer; padding: 0; margin: 0; text-decoration: underline;" title="Select all books">All</button>
-                        <span style="color: #6c757d;">|</span>
-                        <button onclick="clearAllBooks()" style="background: none; border: none; color: #007bff; font-size: 0.85rem; cursor: pointer; padding: 0; margin: 0; text-decoration: underline;" title="Clear all books">None</button>
+                <section class="book-selection">
+                    <h3>Text Selection</h3>
+
+                    <!-- Book Selection Controls -->
+                    <div class="control-header">
+                        <label for="book-select" style="margin-bottom: 0;">Books (Ctrl+Click):</label>
+                        <div class="control-group">
+                            <button onclick="selectAllBooks()" class="control-link"
+                                title="Select all books">All</button>
+                            <span class="control-separator">|</span>
+                            <button onclick="clearAllBooks()" class="control-link" title="Clear all books">None</button>
+                        </div>
                     </div>
-                </div>
-                <select id="book-select" multiple>
-                    <option value="genesis" selected>Genesis</option>
-                    <option value="exodus" selected>Exodus</option>
-                    <option value="leviticus" selected>Leviticus</option>
-                    <option value="numbers" selected>Numbers</option>
-                    <option value="deuteronomy" selected>Deuteronomy</option>
-                    <option value="psalms" selected>Psalms</option>
-                    <option value="proverbs" selected>Proverbs</option>
-                    <option value="isaiah" selected>Isaiah</option>
-                    <option value="jeremiah" selected>Jeremiah</option>
-                    <option value="ezekiel" selected>Ezekiel</option>
-                    <option value="hosea" selected>Hosea</option>
-                    <option value="joel" selected>Joel</option>
-                    <option value="amos" selected>Amos</option>
-                </select>
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.75rem;">
-                    <label for="chapter-input">Chapters:</label>
-                    <button onclick="document.getElementById('chapter-input').value='all'; filterAndRenderVerses();" style="background: none; border: none; color: #6c757d; font-size: 1.1rem; cursor: pointer; padding: 0; margin: 0;" title="Reset to all chapters">↻</button>
-                </div>
-                <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
-                    <label for="verse-input">Verses:</label>
-                    <button onclick="document.getElementById('verse-input').value='all'; filterAndRenderVerses();" style="background: none; border: none; color: #6c757d; font-size: 1.1rem; cursor: pointer; padding: 0; margin: 0;" title="Reset to all verses">↻</button>
-                </div>
-                <input type="text" id="verse-input" placeholder="e.g., 1-5,10,15 or 'all'">
-                <button id="load-verses" class="btn btn-primary" style="width: 100%; padding: 0.5rem; background: #2b394f; color: white; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; margin-top: 0.5rem; transition: all 0.2s ease;">Load Verses</button>
-            </section>
 
-            <!-- Figurative Type Filters -->
-            <section class="type-filters">
-                <h3>Figurative Language Types</h3>
+                    <select id="book-select" multiple>
+                        <!-- Torah -->
+                        <option value="genesis" selected>Genesis</option>
+                        <option value="exodus" selected>Exodus</option>
+                        <option value="leviticus" selected>Leviticus</option>
+                        <option value="numbers" selected>Numbers</option>
+                        <option value="deuteronomy" selected>Deuteronomy</option>
+                        <!-- Nevi'im (Prophets) -->
+                        <option value="isaiah" selected>Isaiah</option>
+                        <option value="jeremiah" selected>Jeremiah</option>
+                        <option value="ezekiel" selected>Ezekiel</option>
+                        <option value="hosea" selected>Hosea</option>
+                        <option value="joel" selected>Joel</option>
+                        <option value="amos" selected>Amos</option>
+                        <!-- Ketuvim (Writings) -->
+                        <option value="psalms" selected>Psalms</option>
+                        <option value="proverbs" selected>Proverbs</option>
+                    </select>
 
-                <!-- Select All / Clear All Buttons -->
-                <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
-                    <button id="select-all-types" style="flex: 1; padding: 0.4rem 0.8rem; background: #2b394f; color: white; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;">Select All</button>
-                    <button id="clear-all-types" style="flex: 1; padding: 0.4rem 0.8rem; background: white; color: #2b394f; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;">Clear All</button>
-                </div>
+                    <!-- Chapters Input -->
+                    <div class="control-header mt">
+                        <label for="chapter-input" style="margin-bottom: 0;">Chapters:</label>
+                        <button onclick="document.getElementById('chapter-input').value='all'; filterAndRenderVerses();"
+                            class="refresh-btn" title="Reset to all chapters">↻</button>
+                    </div>
+                    <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
 
-                <label class="tooltip">
-                    <input type="checkbox" value="metaphor" checked>
-                    <span class="filter-color metaphor"></span>
-                    Metaphor
-                    <span class="tooltiptext">A comparison where one thing is said to be another (e.g., "God is my rock")</span>
-                </label>
-                <label class="tooltip">
-                    <input type="checkbox" value="simile" checked>
-                    <span class="filter-color simile"></span>
-                    Simile
-                    <span class="tooltiptext">A comparison using "like" or "as" (e.g., "like a deer pants for water")</span>
-                </label>
-                <label class="tooltip">
-                    <input type="checkbox" value="personification" checked>
-                    <span class="filter-color personification"></span>
-                    Personification
-                    <span class="tooltiptext">Giving human qualities to non-human things (e.g., "the mountains skipped like rams")</span>
-                </label>
-                <label class="tooltip">
-                    <input type="checkbox" value="idiom" checked>
-                    <span class="filter-color idiom"></span>
-                    Idiom
-                    <span class="tooltiptext">A phrase with a meaning different from its literal words (e.g., "fruit of the womb")</span>
-                </label>
-                <label class="tooltip">
-                    <input type="checkbox" value="hyperbole" checked>
-                    <span class="filter-color hyperbole"></span>
-                    Hyperbole
-                    <span class="tooltiptext">Exaggeration for emphasis (e.g., "rivers of tears flow from my eyes")</span>
-                </label>
-                <label class="tooltip">
-                    <input type="checkbox" value="metonymy" checked>
-                    <span class="filter-color metonymy"></span>
-                    Metonymy
-                    <span class="tooltiptext">Using one thing to represent another closely related thing (e.g., "the sword" for war)</span>
-                </label>
-                <label class="tooltip">
-                    <input type="checkbox" value="other" checked>
-                    <span class="filter-color other"></span>
-                    Other
-                    <span class="tooltiptext">Other forms of figurative language not fitting the main categories</span>
-                </label>
-                <label>
-                    <input type="checkbox" value="not_figurative">
-                    <span class="filter-color" style="background-color: #6c757d;"></span>
-                    Not Figurative
-                </label>
-            </section>
+                    <!-- Verses Input -->
+                    <div class="control-header mt">
+                        <label for="verse-input" style="margin-bottom: 0;">Verses:</label>
+                        <button onclick="document.getElementById('verse-input').value='all'; filterAndRenderVerses();"
+                            class="refresh-btn" title="Reset to all verses">↻</button>
+                    </div>
+                    <input type="text" id="verse-input" placeholder="e.g., 1-5,10,15 or 'all'">
 
-            <!-- Text Version Toggle -->
-            <section class="text-options">
-                <h3 class="tooltip">Text Version
-                    <span class="tooltiptext">See About section for details</span>
-                </h3>
-                <div>
-                    <label><input type="radio" name="text-version" value="sacred" checked> Sacred Names</label>
-                    <label><input type="radio" name="text-version" value="non-sacred"> Traditional Jewish</label>
-                </div>
-            </section>
+                    <button id="load-verses" class="load-btn">Load Verses</button>
+                </section>
 
-            <!-- Advanced Search -->
-            <section class="advanced-search">
-                <h3>Search Biblical Text</h3>
+                <!-- Figurative Type Filters -->
+                <section class="type-filters">
+                    <h3>Figurative Language Types</h3>
 
-                <!-- Search Type Toggle -->
-                <div class="search-type-toggle">
-                    <button class="toggle-btn active" id="english-toggle" onclick="toggleSearchType('english')">English</button>
-                    <button class="toggle-btn" id="hebrew-toggle" onclick="toggleSearchType('hebrew')">עברית</button>
-                </div>
+                    <!-- Select All / Clear All Buttons -->
+                    <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <button id="select-all-types"
+                            style="flex: 1; padding: 0.4rem 0.8rem; background: #2b394f; color: white; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;">Select
+                            All</button>
+                        <button id="clear-all-types"
+                            style="flex: 1; padding: 0.4rem 0.8rem; background: white; color: #2b394f; border: 1px solid #2b394f; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s ease;">Clear
+                            All</button>
+                    </div>
 
-                <!-- Search Input with Clear and Keyboard Toggle -->
-                <div class="search-input-container">
-                    <input type="text" id="search-input" placeholder="Search English text...">
-                    <button class="clear-search-btn" id="clear-search-btn" onclick="clearTextSearch()" title="Clear Search">↻</button>
-                    <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()" title="Toggle Hebrew Keyboard">⌨</button>
-                </div>
+                    <label class="tooltip">
+                        <input type="checkbox" value="metaphor" checked>
+                        <span class="filter-color metaphor"></span>
+                        Metaphor
+                        <span class="tooltiptext">A comparison where one thing is said to be another (e.g., "God is my
+                            rock")</span>
+                    </label>
+                    <label class="tooltip">
+                        <input type="checkbox" value="simile" checked>
+                        <span class="filter-color simile"></span>
+                        Simile
+                        <span class="tooltiptext">A comparison using "like" or "as" (e.g., "like a deer pants for
+                            water")</span>
+                    </label>
+                    <label class="tooltip">
+                        <input type="checkbox" value="personification" checked>
+                        <span class="filter-color personification"></span>
+                        Personification
+                        <span class="tooltiptext">Giving human qualities to non-human things (e.g., "the mountains
+                            skipped like rams")</span>
+                    </label>
+                    <label class="tooltip">
+                        <input type="checkbox" value="idiom" checked>
+                        <span class="filter-color idiom"></span>
+                        Idiom
+                        <span class="tooltiptext">A phrase with a meaning different from its literal words (e.g., "fruit
+                            of the womb")</span>
+                    </label>
+                    <label class="tooltip">
+                        <input type="checkbox" value="hyperbole" checked>
+                        <span class="filter-color hyperbole"></span>
+                        Hyperbole
+                        <span class="tooltiptext">Exaggeration for emphasis (e.g., "rivers of tears flow from my
+                            eyes")</span>
+                    </label>
+                    <label class="tooltip">
+                        <input type="checkbox" value="metonymy" checked>
+                        <span class="filter-color metonymy"></span>
+                        Metonymy
+                        <span class="tooltiptext">Using one thing to represent another closely related thing (e.g., "the
+                            sword" for war)</span>
+                    </label>
+                    <label class="tooltip">
+                        <input type="checkbox" value="other" checked>
+                        <span class="filter-color other"></span>
+                        Other
+                        <span class="tooltiptext">Other forms of figurative language not fitting the main
+                            categories</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="not_figurative">
+                        <span class="filter-color" style="background-color: #6c757d;"></span>
+                        Not Figurative
+                    </label>
+                </section>
 
-                <!-- Hebrew Virtual Keyboard - Compact rectangular layout -->
-                <div class="hebrew-keyboard" id="hebrew-keyboard">
-                    <!-- Row 1: 9 letters -->
-                    <div class="hebrew-key" onclick="insertHebrew('א')">א</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ב')">ב</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ג')">ג</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ד')">ד</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ה')">ה</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ו')">ו</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ז')">ז</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ח')">ח</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ט')">ט</div>
-                    <!-- Row 2: 9 letters -->
-                    <div class="hebrew-key" onclick="insertHebrew('י')">י</div>
-                    <div class="hebrew-key" onclick="insertHebrew('כ')">כ</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ל')">ל</div>
-                    <div class="hebrew-key" onclick="insertHebrew('מ')">מ</div>
-                    <div class="hebrew-key" onclick="insertHebrew('נ')">נ</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ס')">ס</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ע')">ע</div>
-                    <div class="hebrew-key" onclick="insertHebrew('פ')">פ</div>
-                    <div class="hebrew-key" onclick="insertHebrew('צ')">צ</div>
-                    <!-- Row 3: 9 letters (4 regular + 5 final forms) -->
-                    <div class="hebrew-key" onclick="insertHebrew('ק')">ק</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ר')">ר</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ש')">ש</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ת')">ת</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ך')">ך</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ם')">ם</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ן')">ן</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ף')">ף</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ץ')">ץ</div>
-                    <!-- Row 4: Action keys -->
-                    <div class="hebrew-key action" onclick="clearSearch()" style="grid-column: span 2;">Clear</div>
-                    <div class="hebrew-key" onclick="insertHebrew(' ')" style="grid-column: span 5;">Space</div>
-                    <div class="hebrew-key action" onclick="deleteLastChar()" style="grid-column: span 2;">⌫</div>
-                </div>
-
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; margin-bottom: 0.5rem;">
-                    <h4 class="tooltip" style="color: #2b394f; margin: 0; font-size: 1rem; border-bottom: 2px solid #2b394f; padding-bottom: 0.3rem; flex: 1;">Search for Tag
+                <!-- Text Version Toggle -->
+                <section class="text-options">
+                    <h3 class="tooltip">Text Version
                         <span class="tooltiptext">See About section for details</span>
-                    </h4>
-                    <button id="clear-metadata-btn" onclick="clearMetadataSearch()" style="background: none; border: none; color: #6c757d; font-size: 1.2rem; cursor: pointer; padding: 0; margin: 0 0 0 0.5rem;" title="Clear tag search">↻</button>
-                </div>
-                <div style="font-size: 0.85rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.75rem;">For multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
-                <div class="metadata-search" style="margin-top: 0;">
-                    <input type="text" id="target-search" placeholder="Target">
-                    <input type="text" id="vehicle-search" placeholder="Vehicle">
-                    <input type="text" id="ground-search" placeholder="Ground">
-                    <input type="text" id="posture-search" placeholder="Posture">
-                </div>
-            </section>
+                    </h3>
+                    <div>
+                        <label><input type="radio" name="text-version" value="sacred" checked> Sacred Names</label>
+                        <label><input type="radio" name="text-version" value="non-sacred"> Traditional Jewish</label>
+                    </div>
+                </section>
+
+                <!-- Advanced Search -->
+                <section class="advanced-search">
+                    <h3>Search Biblical Text</h3>
+
+                    <!-- Search Type Toggle -->
+                    <div class="search-type-toggle">
+                        <button class="toggle-btn active" id="english-toggle"
+                            onclick="toggleSearchType('english')">English</button>
+                        <button class="toggle-btn" id="hebrew-toggle"
+                            onclick="toggleSearchType('hebrew')">עברית</button>
+                    </div>
+
+                    <!-- Search Input with Clear and Keyboard Toggle -->
+                    <div class="search-input-container">
+                        <input type="text" id="search-input" placeholder="Search English text...">
+                        <button class="clear-search-btn" id="clear-search-btn" onclick="clearTextSearch()"
+                            title="Clear Search">↻</button>
+                        <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()"
+                            title="Toggle Hebrew Keyboard">⌨</button>
+                    </div>
+
+                    <!-- Hebrew Virtual Keyboard - Compact rectangular layout -->
+                    <div class="hebrew-keyboard" id="hebrew-keyboard">
+                        <!-- Row 1: 9 letters -->
+                        <div class="hebrew-key" onclick="insertHebrew('א')">א</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ב')">ב</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ג')">ג</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ד')">ד</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ה')">ה</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ו')">ו</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ז')">ז</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ח')">ח</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ט')">ט</div>
+                        <!-- Row 2: 9 letters -->
+                        <div class="hebrew-key" onclick="insertHebrew('י')">י</div>
+                        <div class="hebrew-key" onclick="insertHebrew('כ')">כ</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ל')">ל</div>
+                        <div class="hebrew-key" onclick="insertHebrew('מ')">מ</div>
+                        <div class="hebrew-key" onclick="insertHebrew('נ')">נ</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ס')">ס</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ע')">ע</div>
+                        <div class="hebrew-key" onclick="insertHebrew('פ')">פ</div>
+                        <div class="hebrew-key" onclick="insertHebrew('צ')">צ</div>
+                        <!-- Row 3: 9 letters (4 regular + 5 final forms) -->
+                        <div class="hebrew-key" onclick="insertHebrew('ק')">ק</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ר')">ר</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ש')">ש</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ת')">ת</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ך')">ך</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ם')">ם</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ן')">ן</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ף')">ף</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ץ')">ץ</div>
+                        <!-- Row 4: Action keys -->
+                        <div class="hebrew-key action" onclick="clearSearch()" style="grid-column: span 2;">Clear</div>
+                        <div class="hebrew-key" onclick="insertHebrew(' ')" style="grid-column: span 5;">Space</div>
+                        <div class="hebrew-key action" onclick="deleteLastChar()" style="grid-column: span 2;">⌫</div>
+                    </div>
+
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; margin-bottom: 0.5rem;">
+                        <h4 class="tooltip"
+                            style="color: #2b394f; margin: 0; font-size: 1rem; border-bottom: 2px solid #2b394f; padding-bottom: 0.3rem; flex: 1;">
+                            Search for Tag
+                            <span class="tooltiptext">See About section for details</span>
+                        </h4>
+                        <button id="clear-metadata-btn" onclick="clearMetadataSearch()" class="refresh-btn"
+                            title="Clear tag search">↻</button>
+                    </div>
+                    <div style="font-size: 0.85rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.75rem;">For
+                        multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
+                    <div class="metadata-search" style="margin-top: 0;">
+                        <input type="text" id="target-search" placeholder="Target">
+                        <input type="text" id="vehicle-search" placeholder="Vehicle">
+                        <input type="text" id="ground-search" placeholder="Ground">
+                        <input type="text" id="posture-search" placeholder="Posture">
+                    </div>
+                </section>
         </aside>
 
         <!-- Main Content -->
@@ -1498,54 +1655,104 @@
             <!-- Main Content -->
             <div class="about-content">
                 <h2 id="section-tzafun">Tzafun</h2>
-                <p>"Tzafun" (צָפֻן) means "hidden" or "concealed" and also implies treasure, as in Psalms 31:20: "How abundant is the good that You have in store (צָפַ֢נְתָּ) for those who fear You" and Psalm 119:11: "I have treasured (צָפַ֣נְתִּי) Your word in my heart."</p>
-                <p>The Biblical text is a treasure house of rich figurative language, sometimes clear, sometimes mysterious. It's an essential part of the text's power and eternality. Often, the student's work would benefit from a wide search for some element of figurative speech across a wide corpus of Biblical texts, in the same way as one can search for a particular word or root in a Concordance. Creating a database to enable this would be a great deal of work for humans. Tzafun started with the question: couldn't we use modern Large Language Models (LLMs) to help compile this 'concordance' of biblical figurative speech?</p>
-                <p>Tzafun was created by having LLMs "read" the text of the Bible verse by verse, in English and Hebrew, and tag instances of figurative speech, including similes, metaphors, hyperbole, idioms, personification and metonymy.</p>
-                <p>This is a two-stage process. A first AI agent reads the verse, deliberates and identifies figurative speech. A second AI agent reviews the work of the first, validating, invalidating or reclassifying the initial tags. Tzafun records the final result, as well as the deliberations of both agents.</p>
+                <p>"Tzafun" (צָפֻן) means "hidden" or "concealed" and also implies treasure, as in Psalms 31:20: "How
+                    abundant is the good that You have in store (צָפַ֢נְתָּ) for those who fear You" and Psalm 119:11:
+                    "I have treasured (צָפַ֣נְתִּי) Your word in my heart."</p>
+                <p>The Biblical text is a treasure house of rich figurative language, sometimes clear, sometimes
+                    mysterious. It's an essential part of the text's power and eternality. Often, the student's work
+                    would benefit from a wide search for some element of figurative speech across a wide corpus of
+                    Biblical texts, in the same way as one can search for a particular word or root in a Concordance.
+                    Creating a database to enable this would be a great deal of work for humans. Tzafun started with the
+                    question: couldn't we use modern Large Language Models (LLMs) to help compile this 'concordance' of
+                    biblical figurative speech?</p>
+                <p>Tzafun was created by having LLMs "read" the text of the Bible verse by verse, in English and Hebrew,
+                    and tag instances of figurative speech, including similes, metaphors, hyperbole, idioms,
+                    personification and metonymy.</p>
+                <p>This is a two-stage process. A first AI agent reads the verse, deliberates and identifies figurative
+                    speech. A second AI agent reviews the work of the first, validating, invalidating or reclassifying
+                    the initial tags. Tzafun records the final result, as well as the deliberations of both agents.</p>
 
                 <h2 id="section-information">The information in Tzafun</h2>
-                <p><strong>Coverage:</strong> Tzafun currently includes 13 biblical books with over 13,500 verses analyzed:</p>
+                <p><strong>Coverage:</strong> Tzafun currently includes 13 biblical books with over 13,500 verses
+                    analyzed:</p>
                 <ul style="margin-left: 2rem; margin-bottom: 1rem;">
                     <li><strong>Torah (Pentateuch):</strong> Genesis, Exodus, Leviticus, Numbers, Deuteronomy</li>
                     <li><strong>Wisdom Literature:</strong> Psalms, Proverbs</li>
                     <li><strong>Major Prophets:</strong> Isaiah, Jeremiah, Ezekiel</li>
                     <li><strong>Minor Prophets (Twelve):</strong> Hosea, Joel, Amos</li>
                 </ul>
-                <p>Each verse is shown in Hebrew (Masoretic) and English (JPS 2006). Examples of figurative speech that were identified by the first agent and validated by the second are highlighted. If you click on the header above any verse, you can see the LLM's deliberations. If you click on a highlighted example of figurative speech, you can also see the following information:</p>
+                <p>Each verse is shown in Hebrew (Masoretic) and English (JPS 2006). Examples of figurative speech that
+                    were identified by the first agent and validated by the second are highlighted. If you click on the
+                    header above any verse, you can see the LLM's deliberations. If you click on a highlighted example
+                    of figurative speech, you can also see the following information:</p>
                 <p><strong>Target</strong> what or who the figurative speech is about</p>
                 <p><strong>Vehicle</strong> what the target is being likened to</p>
                 <p><strong>Ground</strong> what quality of the target is being illuminated by the figurative speech</p>
                 <p><strong>Posture</strong> purpose of the speech; emotional valence</p>
-                <p>Example: "כִּֽי־עָפָ֣ר אַ֔תָּה"/ "For dust you are" (Gen 3:19). Target = humans; Vehicle = dust; Ground = humble origin, ephemerality; Posture = solemn declaration</p>
-                <p>To make these easier to search, the LLM was instructed to generate a hierarchy of tags for each of these fields. For example, if the vehicle of the metaphor is bees, the LLM will record "bees → insects → animals". A search for any of these terms will identify Psalms 118:12 "סַבּ֤וּנִי כִדְבוֹרִ֗ים"/ "They have beset me like bees".</p>
+                <p>Example: "כִּֽי־עָפָ֣ר אַ֔תָּה"/ "For dust you are" (Gen 3:19). Target = humans; Vehicle = dust;
+                    Ground = humble origin, ephemerality; Posture = solemn declaration</p>
+                <p>To make these easier to search, the LLM was instructed to generate a hierarchy of tags for each of
+                    these fields. For example, if the vehicle of the metaphor is bees, the LLM will record "bees →
+                    insects → animals". A search for any of these terms will identify Psalms 118:12 "סַבּ֤וּנִי
+                    כִדְבוֹרִ֗ים"/ "They have beset me like bees".</p>
                 <p><strong>Explanation</strong> The LLM's explanation of the figurative speech.</p>
-                <p><strong>Validation reasons</strong> The second agent's deliberations about whether to validate/invalidate/reclassify a phrase tagged by the first agent as figurative speech.</p>
+                <p><strong>Validation reasons</strong> The second agent's deliberations about whether to
+                    validate/invalidate/reclassify a phrase tagged by the first agent as figurative speech.</p>
                 <p><strong>Speaker</strong> The LLM's assessment of who is speaking the figurative language.</p>
                 <p><strong>Confidence</strong> The LLM's level of confidence that this is figurative language.</p>
-                <p><strong>Name of the model</strong> Most verses were processed by GPT-5.1, with Claude Opus 4.5 and Gemini 3.0 Pro as fallback models. The model name is shown with each verse's deliberation.</p>
+                <p><strong>Name of the model</strong> Most verses were processed by GPT-5.1, with Claude Opus 4.5 and
+                    Gemini 3.0 Pro as fallback models. The model name is shown with each verse's deliberation.</p>
 
                 <h2 id="section-sacred">Sacred Names</h2>
-                <p>Traditional Jews who are printing results from Tzafun may wish to avoid printing Divine names that they consider sacred. They can select 'Traditional Jewish' versions of the verses, which replace divine Names with traditional abbreviations.</p>
+                <p>Traditional Jews who are printing results from Tzafun may wish to avoid printing Divine names that
+                    they consider sacred. They can select 'Traditional Jewish' versions of the verses, which replace
+                    divine Names with traditional abbreviations.</p>
 
                 <h2 id="section-documentation">More documentation</h2>
-                <p>Complete project documentation is available on GitHub at <a href="https://github.com/ARobicsek/bible-figurative-language" target="_blank">github.com/ARobicsek/bible-figurative-language</a></p>
+                <p>Complete project documentation is available on GitHub at <a
+                        href="https://github.com/ARobicsek/bible-figurative-language"
+                        target="_blank">github.com/ARobicsek/bible-figurative-language</a></p>
 
                 <h3>Available Documentation:</h3>
                 <ul>
-                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/README.md" target="_blank">README</a></strong> - Project overview, installation, and quick start guide</li>
-                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/docs/METHODOLOGY.md" target="_blank">Methodology</a></strong> - Detailed explanation of the two-stage AI analysis process, model selection, and validation approach</li>
-                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/docs/DATABASE_SCHEMA.md" target="_blank">Database Schema</a></strong> - Complete database structure and field definitions</li>
-                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/docs/FEATURES.md" target="_blank">Features Guide</a></strong> - Comprehensive guide to using the web interface</li>
-                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/docs/FAQ.md" target="_blank">FAQ</a></strong> - Frequently asked questions about the project and its data</li>
-                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></strong> - How to contribute feedback, report issues, or validate classifications</li>
-                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/SETUP.md" target="_blank">Setup Guide</a></strong> - Instructions for running Tzafun locally</li>
+                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/README.md"
+                                target="_blank">README</a></strong> - Project overview, installation, and quick start
+                        guide</li>
+                    <li><strong><a
+                                href="https://github.com/ARobicsek/bible-figurative-language/blob/main/docs/METHODOLOGY.md"
+                                target="_blank">Methodology</a></strong> - Detailed explanation of the two-stage AI
+                        analysis process, model selection, and validation approach</li>
+                    <li><strong><a
+                                href="https://github.com/ARobicsek/bible-figurative-language/blob/main/docs/DATABASE_SCHEMA.md"
+                                target="_blank">Database Schema</a></strong> - Complete database structure and field
+                        definitions</li>
+                    <li><strong><a
+                                href="https://github.com/ARobicsek/bible-figurative-language/blob/main/docs/FEATURES.md"
+                                target="_blank">Features Guide</a></strong> - Comprehensive guide to using the web
+                        interface</li>
+                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/docs/FAQ.md"
+                                target="_blank">FAQ</a></strong> - Frequently asked questions about the project and its
+                        data</li>
+                    <li><strong><a
+                                href="https://github.com/ARobicsek/bible-figurative-language/blob/main/CONTRIBUTING.md"
+                                target="_blank">Contributing</a></strong> - How to contribute feedback, report issues,
+                        or validate classifications</li>
+                    <li><strong><a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/SETUP.md"
+                                target="_blank">Setup Guide</a></strong> - Instructions for running Tzafun locally</li>
                 </ul>
 
                 <h3>Citation & Licensing:</h3>
-                <p>If you use Tzafun in your research or teaching, please cite it appropriately. Citation formats (BibTeX, APA, MLA) and licensing information are available in the <a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/CITATION.cff" target="_blank">CITATION.cff</a> file.</p>
+                <p>If you use Tzafun in your research or teaching, please cite it appropriately. Citation formats
+                    (BibTeX, APA, MLA) and licensing information are available in the <a
+                        href="https://github.com/ARobicsek/bible-figurative-language/blob/main/CITATION.cff"
+                        target="_blank">CITATION.cff</a> file.</p>
                 <ul>
-                    <li><strong>Code License:</strong> MIT License - see <a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/LICENSE-CODE.txt" target="_blank">LICENSE-CODE.txt</a></li>
-                    <li><strong>Data License:</strong> Creative Commons Attribution 4.0 (CC BY 4.0) - see <a href="https://github.com/ARobicsek/bible-figurative-language/blob/main/LICENSE-DATA.txt" target="_blank">LICENSE-DATA.txt</a></li>
+                    <li><strong>Code License:</strong> MIT License - see <a
+                            href="https://github.com/ARobicsek/bible-figurative-language/blob/main/LICENSE-CODE.txt"
+                            target="_blank">LICENSE-CODE.txt</a></li>
+                    <li><strong>Data License:</strong> Creative Commons Attribution 4.0 (CC BY 4.0) - see <a
+                            href="https://github.com/ARobicsek/bible-figurative-language/blob/main/LICENSE-DATA.txt"
+                            target="_blank">LICENSE-DATA.txt</a></li>
                 </ul>
 
                 <h2 id="section-acknowledgements">Acknowledgements</h2>
@@ -1916,7 +2123,7 @@
         };
 
         // Initialize Application
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             initializeEventListeners();
             loadStatistics();
             loadDefaultVerses(); // Load verses immediately
@@ -1925,7 +2132,7 @@
         function initializeEventListeners() {
             // Type filter checkboxes
             document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
-                checkbox.addEventListener('change', function() {
+                checkbox.addEventListener('change', function () {
                     if (this.value === 'not_figurative') {
                         appState.showNotFigurative = this.checked;
                     } else {
@@ -1941,7 +2148,7 @@
 
             // Text version radio buttons
             document.querySelectorAll('input[name="text-version"]').forEach(radio => {
-                radio.addEventListener('change', function() {
+                radio.addEventListener('change', function () {
                     appState.textVersion = this.value;
                     renderVerses();
                     // Update deliberation text if a verse is currently shown
@@ -1953,31 +2160,31 @@
             });
 
             // Search inputs
-            document.getElementById('search-input').addEventListener('input', function() {
+            document.getElementById('search-input').addEventListener('input', function () {
                 updateClearButtonVisibility();
                 debounce(handleSearch, 300)();
             });
             // Metadata search listeners
             // Metadata search event listeners - auto-uncheck "Not Figurative" when metadata search is active
-            document.getElementById('target-search').addEventListener('input', function() {
+            document.getElementById('target-search').addEventListener('input', function () {
                 if (this.value.trim()) {
                     uncheckNotFigurativeForMetadataSearch();
                 }
                 debounce(handleSearch, 300)();
             });
-            document.getElementById('vehicle-search').addEventListener('input', function() {
+            document.getElementById('vehicle-search').addEventListener('input', function () {
                 if (this.value.trim()) {
                     uncheckNotFigurativeForMetadataSearch();
                 }
                 debounce(handleSearch, 300)();
             });
-            document.getElementById('ground-search').addEventListener('input', function() {
+            document.getElementById('ground-search').addEventListener('input', function () {
                 if (this.value.trim()) {
                     uncheckNotFigurativeForMetadataSearch();
                 }
                 debounce(handleSearch, 300)();
             });
-            document.getElementById('posture-search').addEventListener('input', function() {
+            document.getElementById('posture-search').addEventListener('input', function () {
                 if (this.value.trim()) {
                     uncheckNotFigurativeForMetadataSearch();
                 }
@@ -1989,7 +2196,7 @@
             elements.loadBtn.addEventListener('click', loadVerses);
 
             // Select All / Clear All buttons for figurative language types
-            document.getElementById('select-all-types').addEventListener('click', function() {
+            document.getElementById('select-all-types').addEventListener('click', function () {
                 document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
                     if (!checkbox.checked) {
                         checkbox.checked = true;
@@ -2003,7 +2210,7 @@
                 filterAndRenderVerses();
             });
 
-            document.getElementById('clear-all-types').addEventListener('click', function() {
+            document.getElementById('clear-all-types').addEventListener('click', function () {
                 document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
                     if (checkbox.checked) {
                         checkbox.checked = false;
@@ -2535,7 +2742,7 @@
 
             // Add click listeners to highlighted figurative text
             document.querySelectorAll('.figurative-highlight').forEach(element => {
-                element.addEventListener('click', function(e) {
+                element.addEventListener('click', function (e) {
                     e.stopPropagation();
                     const annotation = JSON.parse(this.dataset.annotation);
                     showAnnotationDetails(annotation);
@@ -2719,11 +2926,11 @@
                     if (language === 'hebrew') {
                         const textWithoutHTML = highlightedText
                             .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
-                        .replace(/<[^>]*>/g, '') // Remove other HTML tags
+                            .replace(/<[^>]*>/g, '') // Remove other HTML tags
                             .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
                             .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
                             .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
-                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                            .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
                             .replace(/־/g, ' ') // Replace Hebrew hyphens with spaces
                             .replace(/\s+/g, ' ') // Normalize whitespace
                             .trim();
@@ -2781,7 +2988,7 @@
                     const figText = language === 'hebrew' ?
                         (appState.textVersion === 'sacred' ? ann.figurative_text_in_hebrew : ann.figurative_text_in_hebrew_non_sacred) :
                         (appState.textVersion === 'sacred' ? ann.figurative_text : ann.figurative_text_non_sacred);
-                    console.log(`[${verseRef}] Annotation ${i+1}: "${figText}"`);
+                    console.log(`[${verseRef}] Annotation ${i + 1}: "${figText}"`);
                     console.log(`[${verseRef}] Match test: ${text.includes(figText || '')}`);
 
                     // Test normalized matching
@@ -2929,181 +3136,241 @@
 
                         // For Hebrew, always use normalized matching (strip ALL diacritics)
                         if (language === 'hebrew') {
-                        // Normalize the figurative text - strip ALL diacritics
-                        const normalizedFigText = trimmedFigText
-                            .normalize('NFD')  // Unicode normalization
-                            .replace(/־/g, ' ') // Replace maqaf with space BEFORE removing diacritics
-                            .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove ALL Hebrew diacritics
-                            .replace(/&[a-zA-Z0-9#]+;/g, ' ')  // Replace HTML entities with spaces
-                            .replace(/\s+/g, ' ')
-                            .trim();
+                            // Normalize the figurative text - strip ALL diacritics
+                            const normalizedFigText = trimmedFigText
+                                .normalize('NFD')  // Unicode normalization
+                                .replace(/־/g, ' ') // Replace maqaf with space BEFORE removing diacritics
+                                .replace(/[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/g, '') // Remove ALL Hebrew diacritics
+                                .replace(/&[a-zA-Z0-9#]+;/g, ' ')  // Replace HTML entities with spaces
+                                .replace(/\s+/g, ' ')
+                                .trim();
 
-                        // Build a mapping of original highlightedText positions to normalized positions
-                        // This allows us to find where the match occurs in the original text
-                        const normalizedToOriginalMap = [];
-                        let normalizedText = '';
-                        let tempText = highlightedText;
-
-                        for (let i = 0; i < tempText.length; i++) {
-                            const char = tempText[i];
-
-                            // Check if this is a diacritic or HTML/entity we should skip
-                            const isDiacritic = /[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/.test(char);
-
-                            if (!isDiacritic) {
-                                // Check for HTML tags
-                                if (char === '<') {
-                                    const tagMatch = tempText.substring(i).match(/^<[^>]*>/);
-                                    if (tagMatch) {
-                                        i += tagMatch[0].length - 1; // Skip the tag (minus 1 because loop will increment)
-                                        continue;
-                                    }
-                                }
-
-                                // Check for HTML entities
-                                if (char === '&') {
-                                    const entityMatch = tempText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
-                                    if (entityMatch) {
-                                        normalizedText += ' ';
-                                        normalizedToOriginalMap.push(i);
-                                        i += entityMatch[0].length - 1; // Skip the entity
-                                        continue;
-                                    }
-                                }
-
-                                // Check for maqaf
-                                if (char === '־') {
-                                    normalizedText += ' ';
-                                    normalizedToOriginalMap.push(i);
-                                } else {
-                                    normalizedText += char;
-                                    normalizedToOriginalMap.push(i);
-                                }
-                            }
-                        }
-
-                        // Normalize whitespace
-                        normalizedText = normalizedText.replace(/\s+/g, ' ').trim();
-
-                        // Find the normalized figurative text in the normalized verse
-                        const matchPos = normalizedText.indexOf(normalizedFigText);
-
-                        if (matchPos >= 0) {
-                            // Map back to original positions
-                            // Account for whitespace normalization by finding actual match position
-                            let searchText = normalizedText;
-                            let searchPos = matchPos;
-
-                            // Simple approach: rebuild without whitespace normalization for accurate mapping
-                            normalizedText = '';
-                            normalizedToOriginalMap.length = 0;
+                            // Build a mapping of original highlightedText positions to normalized positions
+                            // This allows us to find where the match occurs in the original text
+                            const normalizedToOriginalMap = [];
+                            let normalizedText = '';
+                            let tempText = highlightedText;
 
                             for (let i = 0; i < tempText.length; i++) {
                                 const char = tempText[i];
+
+                                // Check if this is a diacritic or HTML/entity we should skip
                                 const isDiacritic = /[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/.test(char);
 
                                 if (!isDiacritic) {
+                                    // Check for HTML tags
                                     if (char === '<') {
                                         const tagMatch = tempText.substring(i).match(/^<[^>]*>/);
                                         if (tagMatch) {
-                                            i += tagMatch[0].length - 1;
+                                            i += tagMatch[0].length - 1; // Skip the tag (minus 1 because loop will increment)
                                             continue;
                                         }
                                     }
 
+                                    // Check for HTML entities
                                     if (char === '&') {
                                         const entityMatch = tempText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
                                         if (entityMatch) {
                                             normalizedText += ' ';
                                             normalizedToOriginalMap.push(i);
-                                            i += entityMatch[0].length - 1;
+                                            i += entityMatch[0].length - 1; // Skip the entity
                                             continue;
                                         }
                                     }
 
-                                    normalizedText += (char === '־' ? ' ' : char);
-                                    normalizedToOriginalMap.push(i);
+                                    // Check for maqaf
+                                    if (char === '־') {
+                                        normalizedText += ' ';
+                                        normalizedToOriginalMap.push(i);
+                                    } else {
+                                        normalizedText += char;
+                                        normalizedToOriginalMap.push(i);
+                                    }
                                 }
                             }
 
-                            // Find match in the non-whitespace-normalized version
-                            const finalMatchPos = normalizedText.indexOf(normalizedFigText);
+                            // Normalize whitespace
+                            normalizedText = normalizedText.replace(/\s+/g, ' ').trim();
 
-                            if (finalMatchPos >= 0 && normalizedToOriginalMap[finalMatchPos] !== undefined) {
-                                const startPos = normalizedToOriginalMap[finalMatchPos];
-                                const endCharIndex = Math.min(finalMatchPos + normalizedFigText.length, normalizedToOriginalMap.length - 1);
-                                const endPos = normalizedToOriginalMap[endCharIndex];
+                            // Find the normalized figurative text in the normalized verse
+                            const matchPos = normalizedText.indexOf(normalizedFigText);
 
-                                // Extract from original text, including any diacritics
-                                // We need to extend endPos to include trailing diacritics
-                                let actualEndPos = endPos + 1;
-                                while (actualEndPos < tempText.length && /[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/.test(tempText[actualEndPos])) {
-                                    actualEndPos++;
-                                }
+                            if (matchPos >= 0) {
+                                // Map back to original positions
+                                // Account for whitespace normalization by finding actual match position
+                                let searchText = normalizedText;
+                                let searchPos = matchPos;
 
-                                matchedText = tempText.substring(startPos, actualEndPos);
-                            }
-                        }
-                    }
-                    // For English, try exact match first
-                    else if (language === 'english') {
-                        if (highlightedText.includes(trimmedFigText) && !checkIfInAttribute(highlightedText, trimmedFigText)) {
-                            matchedText = trimmedFigText;
-                        }
-                        // Try divine name variation for non-sacred version
-                        else if (appState.textVersion === 'non-sacred') {
-                            const adjustedFigText = trimmedFigText.replace(/יהוה/g, 'ה׳');
-                            if (highlightedText.includes(adjustedFigText)) {
-                                matchedText = adjustedFigText;
-                            }
-                        }
-                    }
+                                // Simple approach: rebuild without whitespace normalization for accurate mapping
+                                normalizedText = '';
+                                normalizedToOriginalMap.length = 0;
 
-                    // Try core text (without parenthetical explanations)
-                    if (!matchedText) {
-                        const coreText = trimmedFigText.replace(/\s*\([^)]*\)/g, '').replace(/\s*\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
-                        if (coreText && coreText !== trimmedFigText) {
-                            if (highlightedText.includes(coreText)) {
-                                matchedText = coreText;
-                            }
-                            // For Hebrew, also try core text with HTML tag and entity handling
-                            else if (language === 'hebrew') {
-                                const textWithoutHTML = highlightedText
-                                    .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
-                        .replace(/<[^>]*>/g, '') // Remove other HTML tags
-                                    .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
-                                    .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
-                                    .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
-                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
-                                    .replace(/\s+/g, ' ') // Normalize whitespace
-                                    .trim();
-                                if (textWithoutHTML.includes(coreText)) {
-                                    // Build pattern handling HTML entities as units
-                                    let flexiblePattern = '';
-                                    let i = 0;
-                                    while (i < coreText.length) {
-                                        // Check for HTML entity
-                                        if (coreText[i] === '&') {
-                                            const entityMatch = coreText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
-                                            if (entityMatch) {
-                                                const entity = entityMatch[0];
-                                                const escapedEntity = entity.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                                                flexiblePattern += escapedEntity + '(?:<br\\s*\\/??>|<[^>]*>|\\{[^}]*\\}|[\\u0591-\\u05C7\\u05F0-\\u05F4])*';
-                                                i += entity.length;
+                                for (let i = 0; i < tempText.length; i++) {
+                                    const char = tempText[i];
+                                    const isDiacritic = /[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/.test(char);
+
+                                    if (!isDiacritic) {
+                                        if (char === '<') {
+                                            const tagMatch = tempText.substring(i).match(/^<[^>]*>/);
+                                            if (tagMatch) {
+                                                i += tagMatch[0].length - 1;
                                                 continue;
                                             }
                                         }
-                                        // Regular character
-                                        const char = coreText[i];
-                                        const escapedChar = char.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                                        if (char === ' ') {
-                                            flexiblePattern += '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4]|\\s)+';
-                                        } else {
-                                            flexiblePattern += escapedChar + '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4])*';
+
+                                        if (char === '&') {
+                                            const entityMatch = tempText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
+                                            if (entityMatch) {
+                                                normalizedText += ' ';
+                                                normalizedToOriginalMap.push(i);
+                                                i += entityMatch[0].length - 1;
+                                                continue;
+                                            }
                                         }
-                                        i++;
+
+                                        normalizedText += (char === '־' ? ' ' : char);
+                                        normalizedToOriginalMap.push(i);
                                     }
-                                    const regex = new RegExp(flexiblePattern, 'g');
+                                }
+
+                                // Find match in the non-whitespace-normalized version
+                                const finalMatchPos = normalizedText.indexOf(normalizedFigText);
+
+                                if (finalMatchPos >= 0 && normalizedToOriginalMap[finalMatchPos] !== undefined) {
+                                    const startPos = normalizedToOriginalMap[finalMatchPos];
+                                    const endCharIndex = Math.min(finalMatchPos + normalizedFigText.length, normalizedToOriginalMap.length - 1);
+                                    const endPos = normalizedToOriginalMap[endCharIndex];
+
+                                    // Extract from original text, including any diacritics
+                                    // We need to extend endPos to include trailing diacritics
+                                    let actualEndPos = endPos + 1;
+                                    while (actualEndPos < tempText.length && /[\u0591-\u05BD\u05BF-\u05C7\u05F0-\u05F4]/.test(tempText[actualEndPos])) {
+                                        actualEndPos++;
+                                    }
+
+                                    matchedText = tempText.substring(startPos, actualEndPos);
+                                }
+                            }
+                        }
+                        // For English, try exact match first
+                        else if (language === 'english') {
+                            if (highlightedText.includes(trimmedFigText) && !checkIfInAttribute(highlightedText, trimmedFigText)) {
+                                matchedText = trimmedFigText;
+                            }
+                            // Try divine name variation for non-sacred version
+                            else if (appState.textVersion === 'non-sacred') {
+                                const adjustedFigText = trimmedFigText.replace(/יהוה/g, 'ה׳');
+                                if (highlightedText.includes(adjustedFigText)) {
+                                    matchedText = adjustedFigText;
+                                }
+                            }
+                        }
+
+                        // Try core text (without parenthetical explanations)
+                        if (!matchedText) {
+                            const coreText = trimmedFigText.replace(/\s*\([^)]*\)/g, '').replace(/\s*\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
+                            if (coreText && coreText !== trimmedFigText) {
+                                if (highlightedText.includes(coreText)) {
+                                    matchedText = coreText;
+                                }
+                                // For Hebrew, also try core text with HTML tag and entity handling
+                                else if (language === 'hebrew') {
+                                    const textWithoutHTML = highlightedText
+                                        .replace(/<br\s*\/?>/gi, ' ') // Replace line breaks with spaces
+                                        .replace(/<[^>]*>/g, '') // Remove other HTML tags
+                                        .replace(/&nbsp;/g, ' ') // Remove non-breaking spaces
+                                        .replace(/&[a-zA-Z0-9#]+;/g, ' ') // Remove other HTML entities
+                                        .replace(/\{[^}]*\}/g, '') // Remove markup like {ס} {פ}
+                                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '') // Remove Hebrew vowels and cantillation marks
+                                        .replace(/\s+/g, ' ') // Normalize whitespace
+                                        .trim();
+                                    if (textWithoutHTML.includes(coreText)) {
+                                        // Build pattern handling HTML entities as units
+                                        let flexiblePattern = '';
+                                        let i = 0;
+                                        while (i < coreText.length) {
+                                            // Check for HTML entity
+                                            if (coreText[i] === '&') {
+                                                const entityMatch = coreText.substring(i).match(/^&[a-zA-Z0-9#]+;/);
+                                                if (entityMatch) {
+                                                    const entity = entityMatch[0];
+                                                    const escapedEntity = entity.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                                                    flexiblePattern += escapedEntity + '(?:<br\\s*\\/??>|<[^>]*>|\\{[^}]*\\}|[\\u0591-\\u05C7\\u05F0-\\u05F4])*';
+                                                    i += entity.length;
+                                                    continue;
+                                                }
+                                            }
+                                            // Regular character
+                                            const char = coreText[i];
+                                            const escapedChar = char.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                                            if (char === ' ') {
+                                                flexiblePattern += '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4]|\\s)+';
+                                            } else {
+                                                flexiblePattern += escapedChar + '(?:<br\\s*\\/??>|<[^>]*>|&[a-zA-Z0-9#]+;|\\{[^}]*\\}|־|[\\u0591-\\u05C7\\u05F0-\\u05F4])*';
+                                            }
+                                            i++;
+                                        }
+                                        const regex = new RegExp(flexiblePattern, 'g');
+                                        const match = highlightedText.match(regex);
+                                        if (match) {
+                                            matchedText = match[0];
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // Try case-insensitive for English
+                        if (!matchedText && language === 'english') {
+                            // Normalize smart quotes to regular quotes for comparison
+                            const normalizeQuotes = (text) => text.replace(/[\u2018\u2019\u201C\u201D]/g, '"');
+
+                            const lowerText = normalizeQuotes(highlightedText.toLowerCase());
+                            const lowerFig = normalizeQuotes(trimmedFigText.toLowerCase());
+
+                            if (lowerText.includes(lowerFig)) {
+                                // Find the actual case-preserved match with flexible quotes
+                                const flexiblePattern = trimmedFigText
+                                    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')  // Escape special chars
+                                    .replace(/["']/g, '[\u0022\u0027\u2018\u2019\u201C\u201D]');  // Allow any quote variant
+                                const regex = new RegExp(flexiblePattern, 'i');
+                                const match = highlightedText.match(regex);
+                                if (match) {
+                                    matchedText = match[0];
+                                }
+                            }
+                            // Try with flexible punctuation (handles period/comma/semicolon/quote differences)
+                            else {
+                                // Normalize punctuation and quotes in both texts for comparison
+                                const normalizedText = normalizeQuotes(lowerText)
+                                    .replace(/[.,;:!?]/g, ',')
+                                    .replace(/["']/g, '')  // Remove quotes entirely
+                                    .replace(/\s+/g, ' ');
+                                const normalizedFig = normalizeQuotes(lowerFig)
+                                    .replace(/[.,;:!?]/g, ',')
+                                    .replace(/["']/g, '')  // Remove quotes entirely
+                                    .replace(/\s+/g, ' ');
+
+                                if (normalizedText.includes(normalizedFig)) {
+                                    // Build a flexible regex that allows any punctuation, quotes, and whitespace
+                                    const flexiblePattern = trimmedFigText
+                                        .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')  // Escape special chars
+                                        .replace(/[.,;:!?]/g, '[.,;:!?]')  // Allow any punctuation
+                                        .replace(/["']/g, '[\u0022\u0027\u2018\u2019\u201C\u201D]?')  // Optional quotes
+                                        .replace(/\s+/g, '\\s+');  // Allow flexible whitespace
+                                    const regex = new RegExp(flexiblePattern, 'i');
+                                    const match = highlightedText.match(regex);
+                                    if (match) {
+                                        matchedText = match[0];
+                                        console.log('[DEBUG] Flexible punctuation/quote match found:', matchedText.substring(0, 50));
+                                    }
+                                }
+                            }
+                            // Try case-insensitive with core text (remove parenthetical)
+                            if (!matchedText) {
+                                const coreText = trimmedFigText.replace(/\s*\([^)]*\)/g, '').replace(/\s*\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
+                                if (coreText && lowerText.includes(coreText.toLowerCase())) {
+                                    const regex = new RegExp(coreText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
                                     const match = highlightedText.match(regex);
                                     if (match) {
                                         matchedText = match[0];
@@ -3111,66 +3378,6 @@
                                 }
                             }
                         }
-                    }
-
-                    // Try case-insensitive for English
-                    if (!matchedText && language === 'english') {
-                        // Normalize smart quotes to regular quotes for comparison
-                        const normalizeQuotes = (text) => text.replace(/[\u2018\u2019\u201C\u201D]/g, '"');
-
-                        const lowerText = normalizeQuotes(highlightedText.toLowerCase());
-                        const lowerFig = normalizeQuotes(trimmedFigText.toLowerCase());
-
-                        if (lowerText.includes(lowerFig)) {
-                            // Find the actual case-preserved match with flexible quotes
-                            const flexiblePattern = trimmedFigText
-                                .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')  // Escape special chars
-                                .replace(/["']/g, '[\u0022\u0027\u2018\u2019\u201C\u201D]');  // Allow any quote variant
-                            const regex = new RegExp(flexiblePattern, 'i');
-                            const match = highlightedText.match(regex);
-                            if (match) {
-                                matchedText = match[0];
-                            }
-                        }
-                        // Try with flexible punctuation (handles period/comma/semicolon/quote differences)
-                        else {
-                            // Normalize punctuation and quotes in both texts for comparison
-                            const normalizedText = normalizeQuotes(lowerText)
-                                .replace(/[.,;:!?]/g, ',')
-                                .replace(/["']/g, '')  // Remove quotes entirely
-                                .replace(/\s+/g, ' ');
-                            const normalizedFig = normalizeQuotes(lowerFig)
-                                .replace(/[.,;:!?]/g, ',')
-                                .replace(/["']/g, '')  // Remove quotes entirely
-                                .replace(/\s+/g, ' ');
-
-                            if (normalizedText.includes(normalizedFig)) {
-                                // Build a flexible regex that allows any punctuation, quotes, and whitespace
-                                const flexiblePattern = trimmedFigText
-                                    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')  // Escape special chars
-                                    .replace(/[.,;:!?]/g, '[.,;:!?]')  // Allow any punctuation
-                                    .replace(/["']/g, '[\u0022\u0027\u2018\u2019\u201C\u201D]?')  // Optional quotes
-                                    .replace(/\s+/g, '\\s+');  // Allow flexible whitespace
-                                const regex = new RegExp(flexiblePattern, 'i');
-                                const match = highlightedText.match(regex);
-                                if (match) {
-                                    matchedText = match[0];
-                                    console.log('[DEBUG] Flexible punctuation/quote match found:', matchedText.substring(0, 50));
-                                }
-                            }
-                        }
-                        // Try case-insensitive with core text (remove parenthetical)
-                        if (!matchedText) {
-                            const coreText = trimmedFigText.replace(/\s*\([^)]*\)/g, '').replace(/\s*\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim();
-                            if (coreText && lowerText.includes(coreText.toLowerCase())) {
-                                const regex = new RegExp(coreText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
-                                const match = highlightedText.match(regex);
-                                if (match) {
-                                    matchedText = match[0];
-                                }
-                            }
-                        }
-                    }
                     } // End of if (!matchedText) block
                 }
 
@@ -3560,4 +3767,5 @@
         }
     </script>
 </body>
+
 </html>
