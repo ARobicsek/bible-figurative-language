@@ -731,3 +731,72 @@ New algorithm:
 1. **Fuzzy word matching** (Levenshtein distance) for synonyms
 2. **Manual database corrections** for problematic annotations
 3. **Synonym dictionary** for common biblical translation variations
+
+
+## Session 11: Final UI Polish Pass
+
+**Date:** 2026-01-06
+
+### Summary
+Comprehensive UI polish session focusing on typography, spacing, visual consistency, and user feedback across the Tzafun web interface.
+
+### Completed Tasks
+
+#### 1. Header Typography Improvements
+| Element | Before | After |
+|---------|--------|-------|
+| Tagline | `1.1rem`, `opacity: 0.8` | `1.25rem`, `opacity: 0.85` |
+| Hebrew Quote | `1rem`, `opacity: 0.7` | `1.15rem`, `opacity: 0.75` |
+| About/Print Links | `0.95rem`, `font-weight: 500` | `1.05rem`, `font-weight: 600` |
+
+#### 2. Sidebar Spacing Refinements
+- Reduced section gap from `2rem` → `1.5rem`
+- Reduced label margin from `0.5rem` → `0.35rem`
+- Compact label padding from `0.4rem 0.6rem` → `0.3rem 0.5rem`
+
+#### 3. Figurative Language Type Labels
+- Increased label font-size from `0.95rem` → `1.05rem`
+- Increased color square size from `16px` → `18px`
+- "Other" label now fully visible (not cut off)
+
+#### 4. Standardized Button Classes
+Created reusable CSS classes to replace inline styles:
+- `.btn-mini` - Base button class
+- `.btn-mini-primary` - Filled primary style (Select All)
+- `.btn-mini-outline` - Outline secondary style (Clear All)
+
+#### 5. Enhanced Book Selector
+- Added custom styling for `select[multiple]`
+- Custom scrollbar with proper theming
+- Blue highlight for selected options
+
+#### 6. Unified Refresh Button Styling
+- All ↻ buttons now use `.refresh-btn` class
+- Consistent blue accent color
+- 30° rotation animation on hover
+- Fixed `.clear-search-btn` (in search input) to match
+
+#### 7. Section Dividers
+Added visual separators between sidebar sections:
+```css
+.sidebar section + section {
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+```
+Clear separation now visible between:
+- Text Selection ↔ Figurative Language Types
+- Figurative Language Types ↔ Text Version
+- Text Version ↔ Search Biblical Text
+
+#### 8. HTML Structure Fix
+Removed duplicate nested `<section class="book-selection">` that was causing structural issues with CSS sibling selectors.
+
+### Code Changes
+- **web/biblical_figurative_interface.html**:
+  - CSS: New variables, button classes, section dividers, refresh button animations
+  - HTML: Fixed section nesting, replaced inline styles with CSS classes
+
+### Commits
+- `7ca78a0` - UI polish: improve typography, spacing, and button consistency
+- `a590637` - UI polish: add section dividers and fix refresh button consistency
