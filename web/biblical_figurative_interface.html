@@ -2554,8 +2554,8 @@
                 if (!text) return '';
                 if (language === 'hebrew') return text;
 
-                // Remove parenthetical explanations like "(lit. ...)"
-                let coreText = text.replace(/\s*\([^)]*\)/g, '');
+                // Remove known parenthetical info (lit., Heb., meaning, etc.)
+                let coreText = text.replace(/\s*\((?:lit\.|Heb\.|meaning|i\.e\.).*?\)/gi, '');
 
                 // Clean up whitespace
 
@@ -2601,10 +2601,10 @@
                     // Search Loop
                     let pos = 0;
 
-                    // Logic for English ellipses and brackets handling
-                    if (language !== 'hebrew' && (cleanPhrase.match(/…|\.\.\.|\[.*?\]/))) {
-                        // Split into parts by ellipses OR brackets
-                        const parts = cleanPhrase.split(/…|\.\.\.|\[.*?\]/).map(p =>
+                    // Logic for English ellipses and brackets/parentheses handling
+                    if (language !== 'hebrew' && (cleanPhrase.match(/…|\.\.\.|\[.*?\]|\(.*?\)/))) {
+                        // Split into parts by ellipses OR brackets OR parentheses
+                        const parts = cleanPhrase.split(/…|\.\.\.|\[.*?\]|\(.*?\)/).map(p =>
                             p.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '').trim()
                         ).filter(p => p.length > 0);
 
