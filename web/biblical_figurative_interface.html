@@ -2592,6 +2592,15 @@
                     if (char === '<') {
                         const tagMatch = sourceText.substring(i).match(/^<[^>]+>/);
                         if (tagMatch) {
+                            const tag = tagMatch[0].toLowerCase();
+                            // If it's a block-level-ish tag or break, add a space to avoid merging words
+                            // e.g. "word<br>word" -> "word word", "end</div><div>start" -> "end start"
+                            if (tag.includes('<br') || tag.includes('<div') || tag.includes('<p') || tag.includes('</div') || tag.includes('</p')) {
+                                // Add a space in the plain text mapped to this tag start
+                                map.push(i);
+                                cleanText += ' ';
+                            }
+
                             i += tagMatch[0].length;
                             continue;
                         }
@@ -2688,8 +2697,9 @@
 
                 // Remove parenthetical explanations like "(lit. ...)"
                 let coreText = text.replace(/\s*\([^)]*\)/g, '');
-                // Remove bracketed explanations
-                coreText = coreText.replace(/\s*\[[^\]]*\]/g, '');
+
+                // Clean up whitespace
+
                 // Clean up whitespace
                 return coreText.replace(/\s+/g, ' ').trim();
             }
