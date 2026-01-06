@@ -568,3 +568,52 @@ Instead of migrating to a new platform, implemented a "keep-alive" strategy usin
 - **Zero Cost:** Remains on Render free tier
 - **Immediate Performance:** Eliminates cold start latency (load time 30s -> ~2s)
 - **No Code Changes:** No refactoring required (e.g. for serverless)
+
+---
+
+## Session 7: 2026-01-06
+
+**Focus:** Debugging Text Highlighting and Search Rendering
+
+### Problem
+Users reported issues with the new `TextHighlighter` class:
+1.  **Missing English Highlights:** Specific verses (Isaiah 40:14, 41:11) containing figurative language were not highlighting the English text, despite correct data.
+2.  **Inconsistent Search Highlights:** Search terms were sometimes highlighted in pink (background) instead of just underlined, or mixed with figurative highlights.
+3.  **Visual Clashes:** Search highlights (pink underline) and figurative highlights (yellow background) needed to coexist without overriding each other.
+
+### Changes Made
+
+#### 1. TextHighlighter Refactor ✅
+**Goal:** robust, language-aware normalization for matching text against annotations.
+- **Strict Normalization:** Updated English normalization to strip a wider range of punctuation, brackets, and quotes (`[God]` -> `god`, `"word"` -> `word`).
+- **Whitespace Handling:** Updated logic to collapse multiple spaces and handle newlines/tags correctly.
+- **Mapping Fix:** Updated `buildMap` to insert spaces when skipping block-level HTML tags (`<br>`, `<div>`, `<p>`) to prevent words from merging (e.g., "end</div><div>start" -> "end start" instead of "endstart").
+- **Annotation Cleaning:** Removed aggressive "bracket cleaning" that was stripping vital text (e.g., `[God]`) from annotations, causing mismatches.
+
+#### 2. Visual CSS Separation ✅
+**Goal:** Clear distinction between "Found Search Term" and "Figurative Language".
+- **Search Highlight:** Forced `background-color: transparent !important` and used `border-bottom: 3px solid #ffb3d9` (pink underline).
+- **Figurative Highlight:** Retained yellow background.
+- **Combined:** Now a word can have a yellow background (figurative) AND a pink underline (search match) simultaneously.
+
+### Ongoing Challenges ⚠️
+
+Despite these fixes, highlights in Isaiah 40:14 ("Whom did [God] consult") and Isaiah 41:11 ("become as naught") are **still failing** in the latest test.
+
+**Potential Causes:**
+1.  **Normalization Mismatch:** There may still be a discrepancy between how the HTML text is normalized vs. how the database annotation is normalized (e.g., smart quotes vs. straight quotes, or specific hidden characters).
+2.  **HTML Structure:** The `buildMap` function might still be losing sync with the DOM if the browser renders whitespace differently than our logic assumes (especially around complex verse references or line breaks).
+3.  **Data Integrity:** The actual text strings in the JSON data might differ slightly from the JPS text displayed (e.g., "God" vs "[God]"), requiring fuzzier matching.
+
+### Next Steps (UI Refactor)
+
+To continue the work, look at `task.md` under **Visual Overhaul**. The immediate next tasks are:
+1.  **Glassmorphism & Theming:**
+    -  Refactor CSS variables for better theme management.
+    -  Implement the glassmorphism design for the sidebar and header.
+2.  **Layout Improvements:**
+    -  Switch Verse Container to a CSS Grid layout for better alignment of Hebrew/English.
+    -  Add the "Details Drawer" (slide-out panel) to replace the current modal for viewing annotation details.
+3.  **Continued Debugging:**
+    -  Add verbose logging to `TextHighlighter.findRanges` to dump the exact `normalizedText` and `targetPhrase` to the console. This is the only way to definitively see *why* the match is failing (e.g., Is "God" matching "god"? Is "naught" becoming "naught " with a space?).
+
