@@ -677,3 +677,57 @@ This session addressed critical UI feedbacks and continued the debugging of Engl
 
 ### Next Steps Prompt
 Use the prompt provided in the task notification to start the next session.
+
+
+## Session 10: TextHighlighter Word-Order Subsequence Matching
+
+**Date:** 2026-01-06
+
+### Summary
+Deep dive into `TextHighlighter` logic to fix persistent English text highlighting failures. Implemented **word-order subsequence matching** which finds annotation words in order within verse text, allowing extra words in between. This is a more robust approach than exact substring matching.
+
+### Root Cause Analysis
+Annotations in the database use slightly different wording than JPS text:
+- Annotation: `"Whom did (God) consult"` → Normalized: `"whom did consult"`
+- Verse text: `"With whom did He consult"` → Has extra words "With" and "He"
+
+Exact substring matching fails because `"whom did consult"` is not a contiguous substring of the verse.
+
+### Solution: Word-Order Subsequence Matching
+New algorithm:
+1. Tokenize annotation into words: `["whom", "did", "consult"]`
+2. Find each word **in order** within the normalized verse text
+3. Allow up to 50 characters gap between words (to accommodate extra words)
+4. Fall back to exact match if subsequence fails
+
+### Completed Tasks
+1. **DEBUG Flag**: Added `TextHighlighter.DEBUG` toggle for verbose console logging
+2. **`tokenize()` Helper**: New method to split normalized text into words
+3. **Rewrote `findRanges()`**: English now uses subsequence matching as primary strategy
+4. **Tested with Isaiah 40**: Verified highlighting works for 40:2, 40:4 and fails for 40:3, 40:5
+
+### Verification Results
+| Verse | Status | Notes |
+|-------|--------|-------|
+| Genesis 1:1 | ✓ | "heaven and earth" highlighted |
+| Genesis 1:16 | ✓ | "dominate the day", "dominate the night" |
+| Genesis 1:27 | ✓ | "humankind", "the divine image" |
+| Isaiah 40:2 | ✓ | "Speak tenderly to Jerusalem" |
+| Isaiah 40:4 | ✓ | Full verse highlighted |
+| Isaiah 40:3 | ✗ | Annotation uses different vocabulary |
+| Isaiah 40:5 | ✗ | Annotation uses different vocabulary |
+
+### Code Changes
+- **web/biblical_figurative_interface.html**:
+  - Added `static DEBUG = false` to TextHighlighter class
+  - Added `static tokenize(text)` method
+  - Rewrote `findRanges()` annotation section for word-order matching
+  - Added console.group/log statements for DEBUG mode
+
+### Outstanding Issues
+**Translation Variations**: Some annotations contain completely different words than the verse text (e.g., annotation says "walk" but verse says "march"). These failures are a **data issue** in the database, not a matching logic problem.
+
+**Potential Future Improvements**:
+1. **Fuzzy word matching** (Levenshtein distance) for synonyms
+2. **Manual database corrections** for problematic annotations
+3. **Synonym dictionary** for common biblical translation variations
