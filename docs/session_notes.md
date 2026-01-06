@@ -509,3 +509,40 @@ With WriteQueue:
 
 - [PARALLEL_PROCESSING_ISSUES.md](PARALLEL_PROCESSING_ISSUES.md) - Detailed technical analysis
 - [PIPELINE_ARCHITECTURE.md](PIPELINE_ARCHITECTURE.md) - Overall pipeline documentation
+
+---
+
+## Session 5: 2026-01-05
+
+**Focus:** UI/UX Polish for Web Interface
+
+### Goal
+Address visual issues in the Tzafun web interface (`web/biblical_figurative_interface.html`), specifically a border layout issue, and improve overall polish.
+
+### Changes Made
+
+#### 1. Header Underline Fix ✅
+**Problem:** The underline for sidebar headers (like "Text Selection") extended across the full width, looking "uncut".
+**Fix:** Applied `width: fit-content` to `.sidebar h3` so the border matches the text width.
+
+#### 2. Sidebar Control Polish ✅
+**Problem:** "All | None" links and Reset (↻) buttons were cramped and used inline styles.
+**Fix:**
+- Created `.control-header`, `.control-group`, `.control-link`, and `.refresh-btn` CSS classes.
+- Refactored inline styles to use these classes.
+- Added proper spacing and alignment.
+
+#### 3. Header Visibility ✅
+**Problem:** "about" and "print" links were small and hard to see.
+**Fix:** Increased font weight (600) and size for `.header-attribution a`.
+
+#### 4. Book Reordering ✅
+**Problem:** Books were listed in English bible order (or arbitrary).
+**Fix:** Reordered `#book-select` options to follow the Tanakh order: Torah, Nevi'im (Prophets), Ketuvim (Writings).
+
+#### 5. Animation Consistency ✅
+**Problem:** "Search for Tag" reset button lacked the hover animation present on other buttons.
+**Fix:** Standardized all reset buttons to use the `.refresh-btn` class, ensuring consistent `transform: rotate(30deg)` on hover.
+
+### Files Modified
+- `web/biblical_figurative_interface.html` - CSS and HTML refactoring.
