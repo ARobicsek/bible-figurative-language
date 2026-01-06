@@ -617,3 +617,63 @@ To continue the work, look at `task.md` under **Visual Overhaul**. The immediate
 3.  **Continued Debugging:**
     -  Add verbose logging to `TextHighlighter.findRanges` to dump the exact `normalizedText` and `targetPhrase` to the console. This is the only way to definitively see *why* the match is failing (e.g., Is "God" matching "god"? Is "naught" becoming "naught " with a space?).
 
+
+## Session 8: Visual Overhaul of Tzafun Interface
+
+**Date:** 2026-01-06
+
+### Summary
+This session focused on a comprehensive visual overhaul of the web interface to modernize the design and resolve layout issues. The application was updated with a new CSS variable system, a premium "Glassmorphism" aesthetic, and a robust CSS Grid layout for verses.
+
+### Completed Tasks
+1.  **CSS Refactoring:** Established a semantic system of CSS variables for colors, typography, and spacing in :root, ensuring consistent theming across the app.
+2.  **GlassmorphismUI:** Implemented a modern frosted-glass effect for the Sidebar and Header, complete with a subtle gradient body background to enhance the depth.
+3.  **Grid Layout Implementation:**
+    -   Converted .verse-content to display: grid with lign-items: start.
+    -   This successfully resolved the whitespace alignment issues noted in verses like Isaiah 40:14.
+4.  **Detail Panel Modernization:** Updated the bottom detail panel to match the glass style (though user feedback suggests relocating this).
+
+### Code Changes
+-   **web/biblical_figurative_interface.html**: Extensive CSS updates and minor HTML structural changes to support the new grid layout.
+
+### Outstanding Issues / User Feedback
+1.  **Metadata Search Visibility:** The 'posture' search field is reportedly missing or hidden. This is likely a CSS flex/overflow issue in the sidebar.
+2.  **Detail Panel UI:** The user requested moving the Detail Panel from a bottom sheet to a **Right-Side Drawer** for better UX.
+
+### Next Steps
+1.  **Refine UI:**
+    -   Fix the metadata search visibility.
+    -   Implement the Right-Side Drawer for verse details.
+2.  **Highlighting Debugging:**
+    -   Investigate and fix the persistent issue where highlights are missing in Isaiah 40:14 and 41:11 (as noted in Session 7).
+
+
+## Session 9: UI Refinements & Highlighting Robustness
+
+**Date:** 2026-01-06
+
+### Summary
+This session addressed critical UI feedbacks and continued the debugging of English text highlighting. The UI was successfully refined by fixing the sidebar layout and transforming the detail panel into a modern right-side drawer. Highlighting robustness was improved by treating bracketed/parenthesized text as wildcards, though some English highlighting issues persist.
+
+### Completed Tasks
+1.  **UI Refinements:**
+    -   **Metadata Search Visibility:** Fixed the hidden 'Posture' field by converting the container to a 2-column Grid layout.
+    -   **Detail Drawer:** Transformed the detail panel from a bottom sheet to a **Right-Side Drawer** (`transform: translateX`) for better use of screen real estate.
+    -   **Sidebar Layout:** preventing the bottom search fields from being cut off by adding padding to the sidebar bottom.
+2.  **Highlighting Logic (Phase 1):**
+    -   **Wildcard Support:** Updated `TextHighlighter.findRanges` to treat text inside brackets `[...]` AND parentheses `(...)` as wildcards. This fixes issues where annotations like "Whom did (God) consult" failed to match "With whom did He consult".
+    -   **Smarter Cleaning:** Refined `cleanFigurativeText` to only strip specific glosses (e.g., `lit.`, `Heb.`) rather than removing all parenthetical content blindly.
+3.  **Deployment:** committed and pushed syntax fixes and UI changes to `main`.
+
+### Code Changes
+-   **web/biblical_figurative_interface.html**: 
+    -   CSS updates for `.detail-panel`, `.metadata-search`, and `.sidebar`.
+    -   JavaScript updates to `TextHighlighter` class for regex-based wildcard matching.
+
+### Outstanding Issues
+1.  **English Highlighting:** While the *logic* for wildcards works (verified via reproduction script), the user reports that English highlighting is **still failing often** in the main app.
+    -   *Hypothesis:* The `TextHighlighter` might be failing on other edge cases like punctuation handling, complex sentence structures, or data normalization mismatches not yet covered by the wildcard logic.
+    -   *Action:* Next session needs a deep dive into the `TextHighlighter` to make it fundamentally more robust (fuzzy matching?) or debug why the verified logic fails in the full app context.
+
+### Next Steps Prompt
+Use the prompt provided in the task notification to start the next session.
