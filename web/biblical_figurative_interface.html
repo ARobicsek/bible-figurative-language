@@ -2649,9 +2649,14 @@
                         map.push(i);
                         normalizedText += char;
                     } else {
-                        // English Logic
-                        if (/[.,;:!?]/.test(char)) {
-                            continue; // Skip punctuation
+                        // English Logic - STRICTER normalization
+                        // Skip ALL punctuation, brackets, parens, quotes (smart and straight)
+                        // Keep only letters, numbers, and spaces
+                        if (/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/.test(char)) {
+                            // If it's a hyphen, replacing with space arguably makes more sense for "anti-aircraft" -> "anti aircraft"
+                            // But for now let's just skip it to match previous "strip" logic, or mimic hebrew maqaf behavior?
+                            // Actually, let's just skip it.
+                            continue;
                         }
                         map.push(i);
                         normalizedText += char.toLowerCase();
@@ -2659,6 +2664,19 @@
                 }
 
                 return { text: normalizedText, map };
+            }
+
+            // Helper to strip parenthetical/bracketed glosses from figurative text (e.g. "foo (lit. bar)")
+            static cleanFigurativeText(text, language) {
+                if (!text) return '';
+                if (language === 'hebrew') return text;
+
+                // Remove parenthetical explanations like "(lit. ...)"
+                let coreText = text.replace(/\s*\([^)]*\)/g, '');
+                // Remove bracketed explanations
+                coreText = coreText.replace(/\s*\[[^\]]*\]/g, '');
+                // Clean up whitespace
+                return coreText.replace(/\s+/g, ' ').trim();
             }
 
             // Main Entry: Find Ranges
@@ -2677,20 +2695,73 @@
                     const phrase = language === 'hebrew' ? ann.figurative_text_in_hebrew : ann.figurative_text;
                     if (!phrase) return;
 
+                    // Clean the figurative phrase first (remove "lit." etc)
+                    const cleanPhrase = this.cleanFigurativeText(phrase, language);
+
                     // Normalize the target phrase using same logic
                     let normPhrase = '';
                     if (language === 'hebrew') {
-                        normPhrase = phrase.normalize('NFD')
+                        normPhrase = cleanPhrase.normalize('NFD')
                             .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '')
                             .replace(/־/g, ' ');
                     } else {
-                        normPhrase = phrase.toLowerCase().replace(/[.,;:!?]/g, '');
+                        // For English, we also need to handle ellipses "..." or "…"
+                        // Splitting by ellipses allows matching discontinuous phrases
+                        // But for now, let's just try to match the core text
+                        // normalize using same strict regex
+                        normPhrase = cleanPhrase.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '');
                     }
 
                     if (!normPhrase) return;
 
                     // Search Loop
                     let pos = 0;
+
+                    // Logic for English ellipses handling
+                    if (language !== 'hebrew' && (cleanPhrase.includes('...') || cleanPhrase.includes('…'))) {
+                        // Split into parts
+                        const parts = cleanPhrase.split(/…|\.\.\./).map(p =>
+                            p.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '').trim()
+                        ).filter(p => p.length > 0);
+
+                        if (parts.length > 0) {
+                            // Find all occurrences of the FIRST part
+                            let searchPos = 0;
+                            while (true) {
+                                const startIdx = normObj.text.indexOf(parts[0], searchPos);
+                                if (startIdx === -1) break;
+
+                                // Verify subsequent parts follow in order
+                                let currentIdx = startIdx + parts[0].length;
+                                let allFound = true;
+                                let matchEnd = currentIdx;
+
+                                for (let i = 1; i < parts.length; i++) {
+                                    const nextIdx = normObj.text.indexOf(parts[i], currentIdx);
+                                    if (nextIdx === -1) {
+                                        allFound = false;
+                                        break;
+                                    }
+                                    currentIdx = nextIdx + parts[i].length;
+                                    matchEnd = currentIdx;
+                                }
+
+                                if (allFound) {
+                                    results.push({
+                                        startNorm: startIdx,
+                                        endNorm: matchEnd,
+                                        type: 'figurative',
+                                        priority: 1,
+                                        data: ann
+                                    });
+                                }
+                                searchPos = startIdx + 1;
+                            }
+                            return; // Skip standard matching for this annotation
+                        }
+                    }
+
+                    // Standard exact match
                     while (true) {
                         const idx = normObj.text.indexOf(normPhrase, pos);
                         if (idx === -1) break;
@@ -2717,7 +2788,7 @@
                     } else {
                         // For English search, be a bit more flexible with partial matches? 
                         // Current logic matches 'man' in 'human'.
-                        normSearch = searchTerm.toLowerCase().replace(/[.,;:!?]/g, '');
+                        normSearch = searchTerm.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '');
                     }
 
                     if (normSearch) {
