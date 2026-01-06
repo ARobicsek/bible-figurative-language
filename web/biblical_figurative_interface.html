@@ -102,9 +102,9 @@
 
         .header h1 {
             font-family: var(--font-sans);
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.1rem;
             letter-spacing: -0.5px;
         }
 
@@ -115,16 +115,16 @@
 
         .header p {
             opacity: 0.85;
-            font-size: 1.25rem;
-            margin-bottom: 0.2rem;
+            font-size: 1.4rem;
+            margin-bottom: 0.1rem;
             font-family: var(--font-serif);
         }
 
         .header-hebrew-quote {
             font-family: var(--font-hebrew);
-            font-size: 1.15rem !important;
+            font-size: 1.3rem !important;
             opacity: 0.75;
-            margin-top: 0.25rem;
+            margin-top: 0.1rem;
         }
 
         .header-attribution {
@@ -1785,6 +1785,9 @@
             for (let i = 0; i < bookSelect.options.length; i++) {
                 bookSelect.options[i].selected = true;
             }
+            // Clear chapter/verse inputs and close detail panel
+            resetChapterVerseInputs();
+            closeDetailPanel();
         }
 
         function clearAllBooks() {
@@ -1792,6 +1795,15 @@
             for (let i = 0; i < bookSelect.options.length; i++) {
                 bookSelect.options[i].selected = false;
             }
+            // Clear chapter/verse inputs and close detail panel
+            resetChapterVerseInputs();
+            closeDetailPanel();
+        }
+
+        // Reset chapter and verse inputs when book selection changes
+        function resetChapterVerseInputs() {
+            document.getElementById('chapter-input').value = '';
+            document.getElementById('verse-input').value = '';
         }
 
         // Print Functions
@@ -2079,6 +2091,12 @@
         });
 
         function initializeEventListeners() {
+            // Book selection change - clear chapter/verse and close panel
+            document.getElementById('book-select').addEventListener('change', function () {
+                resetChapterVerseInputs();
+                closeDetailPanel();
+            });
+
             // Type filter checkboxes
             document.querySelectorAll('.type-filters input[type="checkbox"]').forEach(checkbox => {
                 checkbox.addEventListener('change', function () {
@@ -2091,6 +2109,7 @@
                             appState.selectedTypes.delete(this.value);
                         }
                     }
+                    closeDetailPanel(); // Close panel when filter changes
                     filterAndRenderVerses();
                 });
             });
@@ -2114,6 +2133,7 @@
             // Search inputs
             document.getElementById('search-input').addEventListener('input', function () {
                 updateClearButtonVisibility();
+                closeDetailPanel(); // Close panel when new search starts
                 debouncedSearch();
             });
 
@@ -2124,6 +2144,7 @@
                     if (this.value.trim()) {
                         uncheckNotFigurativeForMetadataSearch();
                     }
+                    closeDetailPanel(); // Close panel when tag search changes
                     debouncedSearch();
                 });
             });
@@ -2144,6 +2165,7 @@
                         }
                     }
                 });
+                closeDetailPanel(); // Close panel when filter changes
                 filterAndRenderVerses();
             });
 
@@ -2158,6 +2180,7 @@
                         }
                     }
                 });
+                closeDetailPanel(); // Close panel when filter changes
                 filterAndRenderVerses();
             });
         }
