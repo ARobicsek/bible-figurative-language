@@ -298,6 +298,12 @@
             /* Handled by flex gap */
         }
 
+        /* Section Dividers */
+        .sidebar section+section {
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
         .sidebar h3 {
             font-family: var(--font-sans);
             font-size: 0.85rem;
@@ -1115,14 +1121,20 @@
             right: 2.8rem;
             top: 50%;
             transform: translateY(-50%);
-            background: white;
-            border: 1px solid var(--color-text-muted);
+            background: none;
+            border: none;
             cursor: pointer;
-            color: var(--color-text-muted);
-            border-radius: 4px;
-            padding: 2px 6px;
+            color: var(--color-accent);
+            font-size: 1rem;
+            font-weight: 600;
             z-index: 10;
             display: none;
+            transition: color 0.2s, transform 0.2s;
+        }
+
+        .clear-search-btn:hover {
+            color: var(--color-accent-hover);
+            transform: translateY(-50%) rotate(30deg);
         }
 
         .clear-search-btn.active {
@@ -1349,213 +1361,210 @@
         <aside class="sidebar">
             <!-- Book/Chapter Selection -->
             <section class="book-selection">
-                <section class="book-selection">
-                    <h3>Text Selection</h3>
+                <h3>Text Selection</h3>
 
-                    <!-- Book Selection Controls -->
-                    <div class="control-header">
-                        <label for="book-select" style="margin-bottom: 0;">Books (Ctrl+Click):</label>
-                        <div class="control-group">
-                            <button onclick="selectAllBooks()" class="control-link"
-                                title="Select all books">All</button>
-                            <span class="control-separator">|</span>
-                            <button onclick="clearAllBooks()" class="control-link" title="Clear all books">None</button>
-                        </div>
+                <!-- Book Selection Controls -->
+                <div class="control-header">
+                    <label for="book-select" style="margin-bottom: 0;">Books (Ctrl+Click):</label>
+                    <div class="control-group">
+                        <button onclick="selectAllBooks()" class="control-link" title="Select all books">All</button>
+                        <span class="control-separator">|</span>
+                        <button onclick="clearAllBooks()" class="control-link" title="Clear all books">None</button>
                     </div>
+                </div>
 
-                    <select id="book-select" multiple>
-                        <!-- Torah -->
-                        <option value="genesis" selected>Genesis</option>
-                        <option value="exodus" selected>Exodus</option>
-                        <option value="leviticus" selected>Leviticus</option>
-                        <option value="numbers" selected>Numbers</option>
-                        <option value="deuteronomy" selected>Deuteronomy</option>
-                        <!-- Nevi'im (Prophets) -->
-                        <option value="isaiah" selected>Isaiah</option>
-                        <option value="jeremiah" selected>Jeremiah</option>
-                        <option value="ezekiel" selected>Ezekiel</option>
-                        <option value="hosea" selected>Hosea</option>
-                        <option value="joel" selected>Joel</option>
-                        <option value="amos" selected>Amos</option>
-                        <!-- Ketuvim (Writings) -->
-                        <option value="psalms" selected>Psalms</option>
-                        <option value="proverbs" selected>Proverbs</option>
-                    </select>
+                <select id="book-select" multiple>
+                    <!-- Torah -->
+                    <option value="genesis" selected>Genesis</option>
+                    <option value="exodus" selected>Exodus</option>
+                    <option value="leviticus" selected>Leviticus</option>
+                    <option value="numbers" selected>Numbers</option>
+                    <option value="deuteronomy" selected>Deuteronomy</option>
+                    <!-- Nevi'im (Prophets) -->
+                    <option value="isaiah" selected>Isaiah</option>
+                    <option value="jeremiah" selected>Jeremiah</option>
+                    <option value="ezekiel" selected>Ezekiel</option>
+                    <option value="hosea" selected>Hosea</option>
+                    <option value="joel" selected>Joel</option>
+                    <option value="amos" selected>Amos</option>
+                    <!-- Ketuvim (Writings) -->
+                    <option value="psalms" selected>Psalms</option>
+                    <option value="proverbs" selected>Proverbs</option>
+                </select>
 
-                    <!-- Chapters Input -->
-                    <div class="control-header mt">
-                        <label for="chapter-input" style="margin-bottom: 0;">Chapters:</label>
-                        <button onclick="document.getElementById('chapter-input').value='all'; filterAndRenderVerses();"
-                            class="refresh-btn" title="Reset to all chapters">↻</button>
-                    </div>
-                    <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
+                <!-- Chapters Input -->
+                <div class="control-header mt">
+                    <label for="chapter-input" style="margin-bottom: 0;">Chapters:</label>
+                    <button onclick="document.getElementById('chapter-input').value='all'; filterAndRenderVerses();"
+                        class="refresh-btn" title="Reset to all chapters">↻</button>
+                </div>
+                <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
 
-                    <!-- Verses Input -->
-                    <div class="control-header mt">
-                        <label for="verse-input" style="margin-bottom: 0;">Verses:</label>
-                        <button onclick="document.getElementById('verse-input').value='all'; filterAndRenderVerses();"
-                            class="refresh-btn" title="Reset to all verses">↻</button>
-                    </div>
-                    <input type="text" id="verse-input" placeholder="e.g., 1-5,10,15 or 'all'">
+                <!-- Verses Input -->
+                <div class="control-header mt">
+                    <label for="verse-input" style="margin-bottom: 0;">Verses:</label>
+                    <button onclick="document.getElementById('verse-input').value='all'; filterAndRenderVerses();"
+                        class="refresh-btn" title="Reset to all verses">↻</button>
+                </div>
+                <input type="text" id="verse-input" placeholder="e.g., 1-5,10,15 or 'all'">
 
-                    <button id="load-verses" class="load-btn">Load Verses</button>
-                </section>
+                <button id="load-verses" class="load-btn">Load Verses</button>
+            </section>
 
-                <!-- Figurative Type Filters -->
-                <section class="type-filters">
-                    <h3>Figurative Language Types</h3>
+            <!-- Figurative Type Filters -->
+            <section class="type-filters">
+                <h3>Figurative Language Types</h3>
 
-                    <!-- Select All / Clear All Buttons -->
-                    <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
-                        <button id="select-all-types" class="btn-mini btn-mini-primary">Select All</button>
-                        <button id="clear-all-types" class="btn-mini btn-mini-outline">Clear All</button>
-                    </div>
+                <!-- Select All / Clear All Buttons -->
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+                    <button id="select-all-types" class="btn-mini btn-mini-primary">Select All</button>
+                    <button id="clear-all-types" class="btn-mini btn-mini-outline">Clear All</button>
+                </div>
 
-                    <label class="tooltip">
-                        <input type="checkbox" value="metaphor" checked>
-                        <span class="filter-color metaphor"></span>
-                        Metaphor
-                        <span class="tooltiptext">A comparison where one thing is said to be another (e.g., "God is my
-                            rock")</span>
-                    </label>
-                    <label class="tooltip">
-                        <input type="checkbox" value="simile" checked>
-                        <span class="filter-color simile"></span>
-                        Simile
-                        <span class="tooltiptext">A comparison using "like" or "as" (e.g., "like a deer pants for
-                            water")</span>
-                    </label>
-                    <label class="tooltip">
-                        <input type="checkbox" value="personification" checked>
-                        <span class="filter-color personification"></span>
-                        Personification
-                        <span class="tooltiptext">Giving human qualities to non-human things (e.g., "the mountains
-                            skipped like rams")</span>
-                    </label>
-                    <label class="tooltip">
-                        <input type="checkbox" value="idiom" checked>
-                        <span class="filter-color idiom"></span>
-                        Idiom
-                        <span class="tooltiptext">A phrase with a meaning different from its literal words (e.g., "fruit
-                            of the womb")</span>
-                    </label>
-                    <label class="tooltip">
-                        <input type="checkbox" value="hyperbole" checked>
-                        <span class="filter-color hyperbole"></span>
-                        Hyperbole
-                        <span class="tooltiptext">Exaggeration for emphasis (e.g., "rivers of tears flow from my
-                            eyes")</span>
-                    </label>
-                    <label class="tooltip">
-                        <input type="checkbox" value="metonymy" checked>
-                        <span class="filter-color metonymy"></span>
-                        Metonymy
-                        <span class="tooltiptext">Using one thing to represent another closely related thing (e.g., "the
-                            sword" for war)</span>
-                    </label>
-                    <label class="tooltip">
-                        <input type="checkbox" value="other" checked>
-                        <span class="filter-color other"></span>
-                        Other
-                        <span class="tooltiptext">Other forms of figurative language not fitting the main
-                            categories</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" value="not_figurative">
-                        <span class="filter-color" style="background-color: #6c757d;"></span>
-                        Not Figurative
-                    </label>
-                </section>
+                <label class="tooltip">
+                    <input type="checkbox" value="metaphor" checked>
+                    <span class="filter-color metaphor"></span>
+                    Metaphor
+                    <span class="tooltiptext">A comparison where one thing is said to be another (e.g., "God is my
+                        rock")</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" value="simile" checked>
+                    <span class="filter-color simile"></span>
+                    Simile
+                    <span class="tooltiptext">A comparison using "like" or "as" (e.g., "like a deer pants for
+                        water")</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" value="personification" checked>
+                    <span class="filter-color personification"></span>
+                    Personification
+                    <span class="tooltiptext">Giving human qualities to non-human things (e.g., "the mountains
+                        skipped like rams")</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" value="idiom" checked>
+                    <span class="filter-color idiom"></span>
+                    Idiom
+                    <span class="tooltiptext">A phrase with a meaning different from its literal words (e.g., "fruit
+                        of the womb")</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" value="hyperbole" checked>
+                    <span class="filter-color hyperbole"></span>
+                    Hyperbole
+                    <span class="tooltiptext">Exaggeration for emphasis (e.g., "rivers of tears flow from my
+                        eyes")</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" value="metonymy" checked>
+                    <span class="filter-color metonymy"></span>
+                    Metonymy
+                    <span class="tooltiptext">Using one thing to represent another closely related thing (e.g., "the
+                        sword" for war)</span>
+                </label>
+                <label class="tooltip">
+                    <input type="checkbox" value="other" checked>
+                    <span class="filter-color other"></span>
+                    Other
+                    <span class="tooltiptext">Other forms of figurative language not fitting the main
+                        categories</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="not_figurative">
+                    <span class="filter-color" style="background-color: #6c757d;"></span>
+                    Not Figurative
+                </label>
+            </section>
 
-                <!-- Text Version Toggle -->
-                <section class="text-options">
-                    <h3 class="tooltip">Text Version
+            <!-- Text Version Toggle -->
+            <section class="text-options">
+                <h3 class="tooltip">Text Version
+                    <span class="tooltiptext">See About section for details</span>
+                </h3>
+                <div>
+                    <label><input type="radio" name="text-version" value="sacred" checked> Sacred Names</label>
+                    <label><input type="radio" name="text-version" value="non-sacred"> Traditional Jewish</label>
+                </div>
+            </section>
+
+            <!-- Advanced Search -->
+            <section class="advanced-search">
+                <h3>Search Biblical Text</h3>
+
+                <!-- Search Type Toggle -->
+                <div class="search-type-toggle">
+                    <button class="toggle-btn active" id="english-toggle"
+                        onclick="toggleSearchType('english')">English</button>
+                    <button class="toggle-btn" id="hebrew-toggle" onclick="toggleSearchType('hebrew')">עברית</button>
+                </div>
+
+                <!-- Search Input with Clear and Keyboard Toggle -->
+                <div class="search-input-container">
+                    <input type="text" id="search-input" placeholder="Search English text...">
+                    <button class="clear-search-btn" id="clear-search-btn" onclick="clearTextSearch()"
+                        title="Clear Search">↻</button>
+                    <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()"
+                        title="Toggle Hebrew Keyboard">⌨</button>
+                </div>
+
+                <!-- Hebrew Virtual Keyboard - Compact rectangular layout -->
+                <div class="hebrew-keyboard" id="hebrew-keyboard">
+                    <!-- Row 1: 9 letters -->
+                    <div class="hebrew-key" onclick="insertHebrew('א')">א</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ב')">ב</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ג')">ג</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ד')">ד</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ה')">ה</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ו')">ו</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ז')">ז</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ח')">ח</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ט')">ט</div>
+                    <!-- Row 2: 9 letters -->
+                    <div class="hebrew-key" onclick="insertHebrew('י')">י</div>
+                    <div class="hebrew-key" onclick="insertHebrew('כ')">כ</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ל')">ל</div>
+                    <div class="hebrew-key" onclick="insertHebrew('מ')">מ</div>
+                    <div class="hebrew-key" onclick="insertHebrew('נ')">נ</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ס')">ס</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ע')">ע</div>
+                    <div class="hebrew-key" onclick="insertHebrew('פ')">פ</div>
+                    <div class="hebrew-key" onclick="insertHebrew('צ')">צ</div>
+                    <!-- Row 3: 9 letters (4 regular + 5 final forms) -->
+                    <div class="hebrew-key" onclick="insertHebrew('ק')">ק</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ר')">ר</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ש')">ש</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ת')">ת</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ך')">ך</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ם')">ם</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ן')">ן</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ף')">ף</div>
+                    <div class="hebrew-key" onclick="insertHebrew('ץ')">ץ</div>
+                    <!-- Row 4: Action keys -->
+                    <div class="hebrew-key action" onclick="clearSearch()" style="grid-column: span 2;">Clear</div>
+                    <div class="hebrew-key" onclick="insertHebrew(' ')" style="grid-column: span 5;">Space</div>
+                    <div class="hebrew-key action" onclick="deleteLastChar()" style="grid-column: span 2;">⌫</div>
+                </div>
+
+                <div class="control-header" style="margin-top: 1.5rem; margin-bottom: 0.5rem;">
+                    <h4 class="tooltip"
+                        style="color: var(--color-primary); margin: 0; font-size: 1rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.3rem; flex: 1;">
+                        Search for Tag
                         <span class="tooltiptext">See About section for details</span>
-                    </h3>
-                    <div>
-                        <label><input type="radio" name="text-version" value="sacred" checked> Sacred Names</label>
-                        <label><input type="radio" name="text-version" value="non-sacred"> Traditional Jewish</label>
-                    </div>
-                </section>
-
-                <!-- Advanced Search -->
-                <section class="advanced-search">
-                    <h3>Search Biblical Text</h3>
-
-                    <!-- Search Type Toggle -->
-                    <div class="search-type-toggle">
-                        <button class="toggle-btn active" id="english-toggle"
-                            onclick="toggleSearchType('english')">English</button>
-                        <button class="toggle-btn" id="hebrew-toggle"
-                            onclick="toggleSearchType('hebrew')">עברית</button>
-                    </div>
-
-                    <!-- Search Input with Clear and Keyboard Toggle -->
-                    <div class="search-input-container">
-                        <input type="text" id="search-input" placeholder="Search English text...">
-                        <button class="clear-search-btn" id="clear-search-btn" onclick="clearTextSearch()"
-                            title="Clear Search">↻</button>
-                        <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()"
-                            title="Toggle Hebrew Keyboard">⌨</button>
-                    </div>
-
-                    <!-- Hebrew Virtual Keyboard - Compact rectangular layout -->
-                    <div class="hebrew-keyboard" id="hebrew-keyboard">
-                        <!-- Row 1: 9 letters -->
-                        <div class="hebrew-key" onclick="insertHebrew('א')">א</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ב')">ב</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ג')">ג</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ד')">ד</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ה')">ה</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ו')">ו</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ז')">ז</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ח')">ח</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ט')">ט</div>
-                        <!-- Row 2: 9 letters -->
-                        <div class="hebrew-key" onclick="insertHebrew('י')">י</div>
-                        <div class="hebrew-key" onclick="insertHebrew('כ')">כ</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ל')">ל</div>
-                        <div class="hebrew-key" onclick="insertHebrew('מ')">מ</div>
-                        <div class="hebrew-key" onclick="insertHebrew('נ')">נ</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ס')">ס</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ע')">ע</div>
-                        <div class="hebrew-key" onclick="insertHebrew('פ')">פ</div>
-                        <div class="hebrew-key" onclick="insertHebrew('צ')">צ</div>
-                        <!-- Row 3: 9 letters (4 regular + 5 final forms) -->
-                        <div class="hebrew-key" onclick="insertHebrew('ק')">ק</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ר')">ר</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ש')">ש</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ת')">ת</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ך')">ך</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ם')">ם</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ן')">ן</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ף')">ף</div>
-                        <div class="hebrew-key" onclick="insertHebrew('ץ')">ץ</div>
-                        <!-- Row 4: Action keys -->
-                        <div class="hebrew-key action" onclick="clearSearch()" style="grid-column: span 2;">Clear</div>
-                        <div class="hebrew-key" onclick="insertHebrew(' ')" style="grid-column: span 5;">Space</div>
-                        <div class="hebrew-key action" onclick="deleteLastChar()" style="grid-column: span 2;">⌫</div>
-                    </div>
-
-                    <div class="control-header" style="margin-top: 1.5rem; margin-bottom: 0.5rem;">
-                        <h4 class="tooltip"
-                            style="color: var(--color-primary); margin: 0; font-size: 1rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.3rem; flex: 1;">
-                            Search for Tag
-                            <span class="tooltiptext">See About section for details</span>
-                        </h4>
-                        <button id="clear-metadata-btn" onclick="clearMetadataSearch()" class="refresh-btn"
-                            title="Clear tag search">↻</button>
-                    </div>
-                    <div style="font-size: 0.85rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.75rem;">For
-                        multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
-                    <div class="metadata-search"
-                        style="margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
-                        <input type="text" id="target-search" placeholder="Target">
-                        <input type="text" id="vehicle-search" placeholder="Vehicle">
-                        <input type="text" id="ground-search" placeholder="Ground">
-                        <input type="text" id="posture-search" placeholder="Posture">
-                    </div>
-                </section>
+                    </h4>
+                    <button id="clear-metadata-btn" onclick="clearMetadataSearch()" class="refresh-btn"
+                        title="Clear tag search">↻</button>
+                </div>
+                <div style="font-size: 0.85rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.75rem;">For
+                    multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
+                <div class="metadata-search"
+                    style="margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                    <input type="text" id="target-search" placeholder="Target">
+                    <input type="text" id="vehicle-search" placeholder="Vehicle">
+                    <input type="text" id="ground-search" placeholder="Ground">
+                    <input type="text" id="posture-search" placeholder="Posture">
+                </div>
+            </section>
         </aside>
 
         <!-- Main Content -->
