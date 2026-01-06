@@ -546,3 +546,25 @@ Address visual issues in the Tzafun web interface (`web/biblical_figurative_inte
 
 ### Files Modified
 - `web/biblical_figurative_interface.html` - CSS and HTML refactoring.
+
+---
+
+## Session 6: 2026-01-05 (Deployment Optimization)
+
+**Focus:** Mitigating Render Free Tier Cold Starts
+
+### Problem
+The deployed application on Render free tier (https://tzafun.onrender.com/) suffers from slow initial load times (30-60+ seconds) due to "spin down" after 15 minutes of inactivity.
+
+### Solution: Uptime Monitor Workaround ✅
+Instead of migrating to a new platform, implemented a "keep-alive" strategy using a free uptime monitor.
+
+**Strategy:**
+- **Tool:** UptimeRobot (free tier)
+- **Configuration:** Ping `https://tzafun.onrender.com/` every 5 minutes
+- **Effect:** Prevents the service from spinning down by simulating activity
+
+### Benefits
+- **Zero Cost:** Remains on Render free tier
+- **Immediate Performance:** Eliminates cold start latency (load time 30s -> ~2s)
+- **No Code Changes:** No refactoring required (e.g. for serverless)
