@@ -276,7 +276,7 @@
             backdrop-filter: blur(var(--glass-blur));
             -webkit-backdrop-filter: blur(var(--glass-blur));
             border-right: 1px solid rgba(255, 255, 255, 0.4);
-            padding: 1.5rem;
+            padding: 1.5rem 1.5rem 5rem 1.5rem;
             overflow-y: auto;
             display: flex;
             flex-direction: column;
@@ -2661,144 +2661,142 @@
 
                         pos = idx + 1;
                     }
-                    pos = idx + 1;
-                }
                 });
 
 
 
-            // 4. Search for SearchTerm
-            if(searchTerm) {
-                let normSearch = '';
-                if (language === 'hebrew') {
-                    normSearch = searchTerm.normalize('NFD')
-                        .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '')
-                        .replace(/־/g, ' ');
-                } else {
-                    // For English search, be a bit more flexible with partial matches? 
-                    // Current logic matches 'man' in 'human'.
-                    normSearch = searchTerm.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '');
-                }
+                // 4. Search for SearchTerm
+                if (searchTerm) {
+                    let normSearch = '';
+                    if (language === 'hebrew') {
+                        normSearch = searchTerm.normalize('NFD')
+                            .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '')
+                            .replace(/־/g, ' ');
+                    } else {
+                        // For English search, be a bit more flexible with partial matches? 
+                        // Current logic matches 'man' in 'human'.
+                        normSearch = searchTerm.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '');
+                    }
 
-                if (normSearch) {
-                    let pos = 0;
-                    while (true) {
-                        const idx = normObj.text.indexOf(normSearch, pos);
-                        if (idx === -1) break;
+                    if (normSearch) {
+                        let pos = 0;
+                        while (true) {
+                            const idx = normObj.text.indexOf(normSearch, pos);
+                            if (idx === -1) break;
 
-                        results.push({
-                            startNorm: idx,
-                            endNorm: idx + normSearch.length,
-                            type: 'search',
-                            priority: 2,
-                            data: searchTerm
-                        });
-                        pos = idx + 1;
+                            results.push({
+                                startNorm: idx,
+                                endNorm: idx + normSearch.length,
+                                type: 'search',
+                                priority: 2,
+                                data: searchTerm
+                            });
+                            pos = idx + 1;
+                        }
                     }
                 }
-            }
 
-            // 5. Convert Norm Indices to HTML Indices
-            const validRanges = [];
-        results.forEach(r => {
-                // map norm -> plain
-                if (r.startNorm >= normObj.map.length) return;
+                // 5. Convert Norm Indices to HTML Indices
+                const validRanges = [];
+                results.forEach(r => {
+                    // map norm -> plain
+                    if (r.startNorm >= normObj.map.length) return;
 
-        const pStart = normObj.map[r.startNorm];
+                    const pStart = normObj.map[r.startNorm];
 
-        let pEnd;
-        if (r.endNorm < normObj.map.length) {
-            pEnd = normObj.map[r.endNorm];
-        } else {
-            pEnd = plainObj.text.length;
-        }
+                    let pEnd;
+                    if (r.endNorm < normObj.map.length) {
+                        pEnd = normObj.map[r.endNorm];
+                    } else {
+                        pEnd = plainObj.text.length;
+                    }
 
-        // map plain -> html
-        if (pStart >= plainObj.map.length) return;
-        const hStart = plainObj.map[pStart];
+                    // map plain -> html
+                    if (pStart >= plainObj.map.length) return;
+                    const hStart = plainObj.map[pStart];
 
-        let hEnd;
-        if (pEnd < plainObj.map.length) {
-            hEnd = plainObj.map[pEnd];
-        } else {
-            // Safe fallback for end of string
-            hEnd = html.length;
-        }
+                    let hEnd;
+                    if (pEnd < plainObj.map.length) {
+                        hEnd = plainObj.map[pEnd];
+                    } else {
+                        // Safe fallback for end of string
+                        hEnd = html.length;
+                    }
 
-        validRanges.push({
-            start: hStart,
-            end: hEnd,
-            type: r.type,
-            priority: r.priority,
-            data: r.data
-        });
-        });
+                    validRanges.push({
+                        start: hStart,
+                        end: hEnd,
+                        type: r.type,
+                        priority: r.priority,
+                        data: r.data
+                    });
+                });
 
-        return validRanges;
+                return validRanges;
             }
 
             // Step 6. Apply Highlights
             static applyHighlights(html, ranges) {
-            if (ranges.length === 0) return html;
+                if (ranges.length === 0) return html;
 
-            // Flatten to points: { index, type: 'start'|'end', priority, ... }
-            const points = [];
-            ranges.forEach((r, i) => {
-                points.push({ idx: r.start, type: 'start', priority: r.priority, id: i, data: r.data, rangeType: r.type });
-                points.push({ idx: r.end, type: 'end', priority: r.priority, id: i, data: r.data, rangeType: r.type });
-            });
+                // Flatten to points: { index, type: 'start'|'end', priority, ... }
+                const points = [];
+                ranges.forEach((r, i) => {
+                    points.push({ idx: r.start, type: 'start', priority: r.priority, id: i, data: r.data, rangeType: r.type });
+                    points.push({ idx: r.end, type: 'end', priority: r.priority, id: i, data: r.data, rangeType: r.type });
+                });
 
-            points.sort((a, b) => {
-                if (a.idx !== b.idx) return a.idx - b.idx;
-                // Order at same index: Ends before Starts (Visual containment)
-                return a.type === 'end' ? -1 : 1;
-            });
+                points.sort((a, b) => {
+                    if (a.idx !== b.idx) return a.idx - b.idx;
+                    // Order at same index: Ends before Starts (Visual containment)
+                    return a.type === 'end' ? -1 : 1;
+                });
 
-            let result = '';
-            let lastIdx = 0;
+                let result = '';
+                let lastIdx = 0;
 
-            let activeFigurative = null;
-            let activeSearch = false;
+                let activeFigurative = null;
+                let activeSearch = false;
 
-            for (let i = 0; i < points.length; i++) {
-                const point = points[i];
+                for (let i = 0; i < points.length; i++) {
+                    const point = points[i];
 
-                // Add text up to this point
-                if (point.idx > lastIdx) {
-                    const chunk = html.substring(lastIdx, point.idx);
+                    // Add text up to this point
+                    if (point.idx > lastIdx) {
+                        const chunk = html.substring(lastIdx, point.idx);
 
-                    let wrapped = chunk;
+                        let wrapped = chunk;
 
-                    if (activeSearch) {
-                        wrapped = `<span class="search-highlight">${wrapped}</span>`;
+                        if (activeSearch) {
+                            wrapped = `<span class="search-highlight">${wrapped}</span>`;
+                        }
+                        if (activeFigurative) {
+                            wrapped = createFigurativeTag(wrapped, activeFigurative);
+                        }
+
+                        result += wrapped;
                     }
-                    if (activeFigurative) {
-                        wrapped = createFigurativeTag(wrapped, activeFigurative);
+
+                    // Update state
+                    if (point.type === 'start') {
+                        if (point.rangeType === 'figurative') activeFigurative = point.data;
+                        if (point.rangeType === 'search') activeSearch = true;
+                    } else {
+                        // End point
+                        if (point.rangeType === 'figurative') activeFigurative = null;
+                        if (point.rangeType === 'search') activeSearch = false;
                     }
 
-                    result += wrapped;
+                    lastIdx = point.idx;
                 }
 
-                // Update state
-                if (point.type === 'start') {
-                    if (point.rangeType === 'figurative') activeFigurative = point.data;
-                    if (point.rangeType === 'search') activeSearch = true;
-                } else {
-                    // End point
-                    if (point.rangeType === 'figurative') activeFigurative = null;
-                    if (point.rangeType === 'search') activeSearch = false;
+                // Trailing text
+                if (lastIdx < html.length) {
+                    result += html.substring(lastIdx);
                 }
 
-                lastIdx = point.idx;
+                return result;
             }
-
-            // Trailing text
-            if (lastIdx < html.length) {
-                result += html.substring(lastIdx);
-            }
-
-            return result;
-        }
         }
 
         function createFigurativeTag(content, annotation) {
