@@ -1049,7 +1049,7 @@
 
         /* Search Highlight (Underline/Border to coexist with figurative background) */
         .search-highlight {
-            background-color: transparent;
+            background-color: transparent !important;
             border-bottom: 3px solid #ffb3d9;
             font-weight: 600;
         }
@@ -2653,11 +2653,26 @@
                         // Skip ALL punctuation, brackets, parens, quotes (smart and straight)
                         // Keep only letters, numbers, and spaces
                         if (/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/.test(char)) {
-                            // If it's a hyphen, replacing with space arguably makes more sense for "anti-aircraft" -> "anti aircraft"
-                            // But for now let's just skip it to match previous "strip" logic, or mimic hebrew maqaf behavior?
-                            // Actually, let's just skip it.
+                            // Skip punctuation
                             continue;
                         }
+
+                        // Collapse whitespace
+                        if (/\s/.test(char)) {
+                            if (normalizedText.length > 0 && normalizedText[normalizedText.length - 1] === ' ') {
+                                // Already have a space, just map this one to the existing space (or skip mapping?)
+                                // Actually, if we skip mapping, then " " -> " ".
+                                // We want "  " -> " ".
+                                // If we don't map it, highlighting won't cover the second space.
+                                // But normalized matching doesn't care about the second space's index.
+                                // We'll just continue.
+                                continue;
+                            }
+                            map.push(i);
+                            normalizedText += ' ';
+                            continue;
+                        }
+
                         map.push(i);
                         normalizedText += char.toLowerCase();
                     }
