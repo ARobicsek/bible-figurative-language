@@ -800,3 +800,58 @@ Removed duplicate nested `<section class="book-selection">` that was causing str
 ### Commits
 - `7ca78a0` - UI polish: improve typography, spacing, and button consistency
 - `a590637` - UI polish: add section dividers and fix refresh button consistency
+
+
+## Session 12: UI Polish & UX Improvements
+
+**Date:** 2026-01-06
+
+### Summary
+Continued UI polish focusing on header sizing, automatic panel dismissal behavior, and tooltip consistency. Addressed user feedback about tooltip visibility issues in the sidebar.
+
+### Completed Tasks
+
+#### 1. Header Typography Enhancement
+Made header elements on the left larger and closer together vertically:
+
+| Element | Before | After |
+|---------|--------|-------|
+| Title (h1) | `1.8rem`, `margin-bottom: 0.2rem` | `2.2rem`, `margin-bottom: 0.1rem` |
+| Tagline (p) | `1.25rem`, `margin-bottom: 0.2rem` | `1.4rem`, `margin-bottom: 0.1rem` |
+| Hebrew Quote | `1.15rem`, `margin-top: 0.25rem` | `1.3rem`, `margin-top: 0.1rem` |
+
+#### 2. Auto-Close Detail Panel on Filter Changes
+Added logic to automatically close the right-side detail drawer when:
+- User changes book selection (also clears chapter/verse inputs)
+- User toggles any figurative language type checkbox
+- User clicks "Select All" or "Clear All" type buttons
+- User types in the search input field
+- User types in any tag search field (Target, Vehicle, Ground, Posture)
+
+#### 3. Reset Chapter/Verse on Book Change
+When the user changes their book selection, the Chapter and Verse inputs are now automatically cleared to provide a fresh start.
+
+#### 4. Tooltip Improvements
+Added hover tooltips to tag search inputs (Target, Vehicle, Ground, Posture) with definitions:
+- **Target**: What or who the figurative speech is about
+- **Vehicle**: What the target is being likened to
+- **Ground**: What quality of the target is being illuminated by the figurative speech
+- **Posture**: Purpose of the speech; emotional valence
+
+**Initial approach** (custom CSS tooltips) caused clipping issues due to sidebar's `overflow-y: auto`. After multiple attempts, switched to **native HTML `title` attributes** which never get clipped by container overflow.
+
+For consistency, also converted figurative language type labels (Metaphor, Simile, etc.) from custom CSS tooltips to native `title` attributes.
+
+### Code Changes
+- **web/biblical_figurative_interface.html**:
+  - CSS: Increased header font sizes, reduced margins
+  - JS: Added `resetChapterVerseInputs()` helper, added `closeDetailPanel()` calls to event listeners
+  - HTML: Replaced custom `.tooltip` wrappers with native `title` attributes
+
+### Commits
+- `6524c06` - UI polish: larger header elements, auto-close panel on filter/search changes
+- `de62d99` - Add hover tooltips with definitions to tag search inputs
+- `2e3430d` - Fix tag search tooltips to appear on right side, avoiding sidebar clipping
+- `5bc396c` - Fix tag search tooltips to appear below inputs within sidebar
+- `01c74e7` - Use native title tooltips for tag search inputs - fixes clipping issue
+- `4747eb5` - Use native title tooltips for figurative language types for consistency
