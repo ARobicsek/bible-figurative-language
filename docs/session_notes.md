@@ -1041,3 +1041,16 @@ Addressed specific user feedback regarding header spacing, sidebar naming conven
     -   Added `#global-tooltip` and JS positioning logic.
     -   Updated default state for filters.
     -   Enhanced click listeners for annotations to handle toggle-close.
+
+## Session 13: Revert & Stabilization
+
+**Date:** 2026-01-07
+
+### Summary
+Reverted the global tooltip and modal toggle features introduced in Session 12 due to persistent clipping issues and complexity. Restored native browser tooltips (`title` attribute) for the "Search for Figurative Language" section, which definitively resolves the clipping issues on desktop.
+
+### Changes
+- **Reverted**: Global tooltip CSS/JS and custom HTML structure.
+- **Reverted**: Modal "close on re-click" logic.
+- **Restored**: Native `title` attributes for Search for Figurative Language inputs and help icons.
+- **Kept**: Header spacing adjustments and "Filter by Text" renaming.
