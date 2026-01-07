@@ -271,26 +271,28 @@
             bottom: 120%;
         }
 
-        /* Metadata search tooltips - position to right to avoid sidebar clipping */
+        /* Metadata search tooltips - position below to stay within sidebar */
         .metadata-search .tooltip .tooltiptext {
-            width: 220px;
-            left: 100%;
+            width: 200px;
+            left: 0;
+            right: auto;
             bottom: auto;
-            top: 50%;
-            transform: translateY(-50%);
-            margin-left: 10px;
+            top: 100%;
+            transform: none;
+            margin-top: 8px;
         }
 
         .metadata-search .tooltip .tooltiptext::after {
-            top: 50%;
-            left: -6px;
-            margin-top: -6px;
+            top: -12px;
+            left: 20px;
+            margin-top: 0;
             margin-left: 0;
-            border-color: transparent var(--color-primary) transparent transparent;
+            border-color: transparent transparent var(--color-primary) transparent;
         }
 
         .metadata-search .tooltip:hover .tooltiptext {
             bottom: auto;
+            top: 100%;
         }
 
         /* Glass Sidebar */
