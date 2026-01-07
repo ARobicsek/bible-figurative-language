@@ -877,3 +877,6 @@ Implemented dynamic book ordering to ensure biblical books appear in the correct
 ### Code Changes
 - `web/api_server.py`: Added `TANAKH_ORDER`, updated `get_statistics` and `get_verses`.
 - `web/biblical_figurative_interface.html`: Dynamic book list population.
+
+### Commits
+- `991f698` - feat: Implement dynamic Tanakh book ordering for book selector and verse sorting
