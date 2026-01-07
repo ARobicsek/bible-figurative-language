@@ -937,3 +937,51 @@ Implemented a comprehensive responsive design to make the Tzafun dashboard usabl
     -   JS: Rewrote book selection logic to use checkboxes.
 
 
+## Session 16: Fix Figurative Text Verbatim Extraction
+
+**Date:** 2026-01-06
+
+### Problem
+The annotation pipeline's LLM was not using exact verbatim text from source verses when populating the `figurative_text` and `figurative_text_in_hebrew` fields. Instead, it would:
+- Paraphrase the figurative language
+- Use ellipses (...)
+- Summarize or "freestyle" descriptions
+- Change word order or add/remove words
+
+This caused downstream issues in the web highlighting tool (`TextHighlighter`), which relies on exact text matches to highlight figurative expressions within verses.
+
+### Root Cause
+The LLM prompt in `interactive_parallel_processor.py` (lines 1794-1795) only stated:
+```
+9. **hebrew_text**: The Hebrew text of the figurative expression
+10. **english_text**: The English translation of the figurative expression
+```
+
+This was too vague - the model interpreted "the text" as permission to describe or summarize rather than copy verbatim.
+
+### Solution
+Updated the LLM prompt with explicit verbatim extraction requirements:
+
+1. **Added CRITICAL TEXT EXTRACTION REQUIREMENT section** at the top of the task instructions:
+   - Explicitly forbids paraphrasing, summarizing, ellipses, adding/removing words, changing word order
+   - Explains that exact text is essential for downstream highlighting
+
+2. **Updated field descriptions** (lines 1794-1795):
+   - From: "The Hebrew/English text of the figurative expression"
+   - To: "EXACT VERBATIM TEXT copied directly from the source above - do NOT paraphrase, summarize, or use ellipses"
+
+3. **Updated example JSON** to show actual Hebrew/English text instead of "..." placeholders:
+   - `"hebrew_text": "יְהוָה רֹעִי לֹא אֶחְסָר"`
+   - `"english_text": "The LORD is my shepherd; I shall not want"`
+
+4. **Added reminder at bottom** reinforcing that examples show exact verbatim text
+
+### Code Changes
+- **private/interactive_parallel_processor.py**: Updated batched prompt (~lines 1761-1902)
+
+### Commits
+- `34845be` - fix: Require exact verbatim text in figurative language annotations
+
+### Impact
+Future pipeline runs should produce annotations where `figurative_text` and `figurative_text_in_hebrew` contain exact substrings from the source verses, enabling reliable text highlighting in the web interface.
+
