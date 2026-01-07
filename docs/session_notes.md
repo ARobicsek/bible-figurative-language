@@ -985,3 +985,30 @@ Updated the LLM prompt with explicit verbatim extraction requirements:
 ### Impact
 Future pipeline runs should produce annotations where `figurative_text` and `figurative_text_in_hebrew` contain exact substrings from the source verses, enabling reliable text highlighting in the web interface.
 
+
+## Session 17: UI Refinements & Consistency
+**Date:** 2026-01-07
+
+### Summary
+Addressed specific user feedback to polish the UI, focusing on consistency, spacing, and clarifying interactions. The key improvements were unifying the sidebar controls, refining tooltip behaviors, and implementing "smart defaults" to reduce friction.
+
+### Completed Tasks
+1.  **Metadata Search Polish:**
+    -   Updated helper text to "Separate multiple terms with ;".
+    -   Restored '?' icons for visual clarity but removed the confusing `help` cursor (double question mark).
+    -   Switched all tooltips to use the native `title` attribute to permanently fix clipping issues.
+2.  **Compact Book List:**
+    -   Reduced vertical padding in `.book-checkbox-item` (`0px 0.5rem`) to increase information density.
+3.  **Smart Input Defaults:**
+    -   Updated `loadVerses` logic: If Chapter/Verse inputs are empty when clicked, they silently default to 'all' and visual feedback is provided.
+4.  **Unified Sidebar Controls:**
+    -   Refactored the "Figurative Language Types" section to use "All | None" text links instead of buttons, matching the "Filter by Text Scope" section for visual consistency.
+
+### Code Changes
+-   **web/biblical_figurative_interface.html**:
+    -   CSS updates for `.book-checkbox-item`, `.help-icon`, and cursor styles.
+    -   HTML updates for native `title` attributes and new "All | None" link structure.
+    -   JS updates to `loadVerses` for default text handling.
+
+### Next Steps Prompt
+Use the prompt provided in the task notification to start the next session.

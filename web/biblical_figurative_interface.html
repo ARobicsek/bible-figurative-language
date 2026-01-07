@@ -380,11 +380,14 @@
         .book-checkbox-item {
             display: flex;
             align-items: center;
-            padding: 0.4rem 0.5rem;
+            padding: 0px 0.5rem;
+            /* Tighter padding */
             border-radius: 4px;
             cursor: pointer;
             transition: background 0.1s;
             user-select: none;
+            line-height: 1.2;
+            /* Tighter line height */
         }
 
         .book-checkbox-item:hover {
@@ -436,24 +439,33 @@
 
         .load-btn {
             width: 100%;
-            padding: 0.8rem;
-            background: var(--color-primary);
+            padding: 0.9rem;
+            background: linear-gradient(135deg, var(--color-primary) 0%, #3a4b66 100%);
             color: white;
             border: none;
             border-radius: 6px;
             cursor: pointer;
             margin-top: 1.5rem;
             transition: all 0.2s ease;
-            font-weight: 600;
-            font-size: 1rem;
-            letter-spacing: 0.5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(43, 57, 79, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
         }
 
         .load-btn:hover {
-            background: #1a2533;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(43, 57, 79, 0.4);
+        }
+
+        .load-btn::before {
+            content: "➜";
+            font-size: 1.1em;
         }
 
         /* Standardized Mini Buttons */
@@ -596,6 +608,105 @@
             font-size: 1.05rem;
             display: flex;
             align-items: center;
+        }
+
+        /* Input Tooltips */
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-wrapper input {
+            padding-right: 28px !important;
+        }
+
+        .help-icon {
+            position: absolute;
+            right: 8px;
+            width: 16px;
+            height: 16px;
+            background: rgba(0, 0, 0, 0.1);
+            color: var(--color-text-muted);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+            z-index: 5;
+        }
+
+        .help-icon:hover {
+            background: var(--color-accent);
+            color: white;
+        }
+
+        /* Prevent tooltip clipping in sidebar */
+        .metadata-search .tooltiptext {
+            z-index: 1000;
+        }
+
+        /* Accordion Styles */
+        .sidebar-section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--color-border);
+            margin-bottom: 1rem;
+            transition: background 0.2s;
+        }
+
+        .sidebar-section-header:hover {
+            opacity: 0.8;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 0 !important;
+            /* Override default margin */
+            border-bottom: none !important;
+            /* Override default border */
+            padding-bottom: 0 !important;
+            flex: 1;
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+            width: 12px;
+            height: 12px;
+            border-right: 2px solid var(--color-text-muted);
+            border-bottom: 2px solid var(--color-text-muted);
+            transform: rotate(45deg);
+            /* Pointing down */
+            margin-left: 10px;
+            margin-bottom: 4px;
+        }
+
+        .section-collapsed .accordion-icon {
+            transform: rotate(-45deg);
+            /* Pointing right */
+            margin-bottom: 0;
+            margin-left: 6px;
+        }
+
+        .accordion-content {
+            overflow: hidden;
+            transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+            max-height: 2000px;
+            /* Arbitrary large value */
+            opacity: 1;
+        }
+
+        .accordion-content.collapsed {
+            max-height: 0;
+            opacity: 0;
+            margin: 0;
+            padding: 0;
+            /* Ensure no padding when collapsed */
         }
 
         .verse-header:hover {
@@ -1515,189 +1626,241 @@
 
         <!-- Sidebar -->
         <aside class="sidebar">
-            <!-- Book/Chapter Selection -->
-            <section class="book-selection">
-                <h3>Text Selection</h3>
-
-                <!-- Book Selection Controls -->
-                <div class="control-header">
-                    <label style="margin-bottom: 0;">Books:</label>
-                    <div class="control-group">
-                        <button onclick="selectAllBooks()" class="control-link" title="Select all books">All</button>
-                        <span class="control-separator">|</span>
-                        <button onclick="clearAllBooks()" class="control-link" title="Clear all books">None</button>
+            <!-- 1. Search for Figurative Language -->
+            <section class="figurative-search-section">
+                <div class="sidebar-section-header" onclick="toggleAccordion(this)">
+                    <h3 class="tooltip"
+                        style="color: var(--color-primary); margin: 0; font-size: 1rem; border-bottom: none; padding-bottom: 0; width: auto; text-transform: none;">
+                        Search for Figurative Language
+                        <span class="tooltiptext">Search by rhetorical fields (Target, Vehicle, etc.)</span>
+                    </h3>
+                    <div class="accordion-icon"></div>
+                </div>
+                <div class="accordion-content">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.85rem; color: #6c757d;">Separate multiple terms with ;</span>
+                        <button id="clear-metadata-btn" onclick="clearMetadataSearch()" class="refresh-btn"
+                            title="Clear tag search">↻</button>
+                    </div>
+                    <div class="metadata-search"
+                        style="margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                        <div class="input-wrapper">
+                            <input type="text" id="target-search" placeholder="Target"
+                                title="Target: The subject being described (e.g., &quot;God&quot;, &quot;Life&quot;).">
+                            <div class="help-icon"
+                                title="Target: The subject being described (e.g., &quot;God&quot;, &quot;Life&quot;).">?
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" id="vehicle-search" placeholder="Vehicle"
+                                title="Vehicle: The image used for description (e.g., &quot;Rock&quot;, &quot;Journey&quot;).">
+                            <div class="help-icon"
+                                title="Vehicle: The image used for description (e.g., &quot;Rock&quot;, &quot;Journey&quot;).">
+                                ?</div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" id="ground-search" placeholder="Ground"
+                                title="Ground: The common quality or meaning (e.g., &quot;Strength&quot;, &quot;Difficulty&quot;).">
+                            <div class="help-icon"
+                                title="Ground: The common quality or meaning (e.g., &quot;Strength&quot;, &quot;Difficulty&quot;).">
+                                ?</div>
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" id="posture-search" placeholder="Posture"
+                                title="Posture: The rhetorical intent or emotion (e.g., &quot;Praise&quot;, &quot;Complaint&quot;).">
+                            <div class="help-icon"
+                                title="Posture: The rhetorical intent or emotion (e.g., &quot;Praise&quot;, &quot;Complaint&quot;).">
+                                ?</div>
+                        </div>
                     </div>
                 </div>
-
-                <div id="book-select-container" class="book-list-container">
-                    <div class="loading" style="padding: 1rem; text-align: left;">Loading books...</div>
-                </div>
-
-                <!-- Chapters Input -->
-                <div class="control-header mt">
-                    <label for="chapter-input" style="margin-bottom: 0;">Chapters:</label>
-                    <button onclick="document.getElementById('chapter-input').value='all'; filterAndRenderVerses();"
-                        class="refresh-btn" title="Reset to all chapters">↻</button>
-                </div>
-                <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
-
-                <!-- Verses Input -->
-                <div class="control-header mt">
-                    <label for="verse-input" style="margin-bottom: 0;">Verses:</label>
-                    <button onclick="document.getElementById('verse-input').value='all'; filterAndRenderVerses();"
-                        class="refresh-btn" title="Reset to all verses">↻</button>
-                </div>
-                <input type="text" id="verse-input" placeholder="e.g., 1-5,10,15 or 'all'">
-
-                <button id="load-verses" class="load-btn">Load Verses</button>
             </section>
 
-            <!-- Figurative Type Filters -->
-            <section class="type-filters">
-                <h3>Figurative Language Types</h3>
-
-                <!-- Select All / Clear All Buttons -->
-                <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
-                    <button id="select-all-types" class="btn-mini btn-mini-primary">Select All</button>
-                    <button id="clear-all-types" class="btn-mini btn-mini-outline">Clear All</button>
+            <!-- 2. Search Biblical Text -->
+            <section class="biblical-text-search">
+                <div class="sidebar-section-header" onclick="toggleAccordion(this)">
+                    <h3>Search Biblical Text</h3>
+                    <div class="accordion-icon"></div>
                 </div>
+                <div class="accordion-content">
+                    <!-- Search Type Toggle -->
+                    <div class="search-type-toggle">
+                        <button class="toggle-btn active" id="english-toggle"
+                            onclick="toggleSearchType('english')">English</button>
+                        <button class="toggle-btn" id="hebrew-toggle"
+                            onclick="toggleSearchType('hebrew')">עברית</button>
+                    </div>
 
-                <label title="A comparison where one thing is said to be another (e.g., &quot;God is my rock&quot;)">
-                    <input type="checkbox" value="metaphor" checked>
-                    <span class="filter-color metaphor"></span>
-                    Metaphor
-                </label>
-                <label
-                    title="A comparison using &quot;like&quot; or &quot;as&quot; (e.g., &quot;like a deer pants for water&quot;)">
-                    <input type="checkbox" value="simile" checked>
-                    <span class="filter-color simile"></span>
-                    Simile
-                </label>
-                <label
-                    title="Giving human qualities to non-human things (e.g., &quot;the mountains skipped like rams&quot;)">
-                    <input type="checkbox" value="personification" checked>
-                    <span class="filter-color personification"></span>
-                    Personification
-                </label>
-                <label
-                    title="A phrase with a meaning different from its literal words (e.g., &quot;fruit of the womb&quot;)">
-                    <input type="checkbox" value="idiom" checked>
-                    <span class="filter-color idiom"></span>
-                    Idiom
-                </label>
-                <label title="Exaggeration for emphasis (e.g., &quot;rivers of tears flow from my eyes&quot;)">
-                    <input type="checkbox" value="hyperbole" checked>
-                    <span class="filter-color hyperbole"></span>
-                    Hyperbole
-                </label>
-                <label
-                    title="Using one thing to represent another closely related thing (e.g., &quot;the sword&quot; for war)">
-                    <input type="checkbox" value="metonymy" checked>
-                    <span class="filter-color metonymy"></span>
-                    Metonymy
-                </label>
-                <label title="Other forms of figurative language not fitting the main categories">
-                    <input type="checkbox" value="other" checked>
-                    <span class="filter-color other"></span>
-                    Other
-                </label>
-                <label title="Verses with no figurative language identified">
-                    <input type="checkbox" value="not_figurative">
-                    <span class="filter-color" style="background-color: #6c757d;"></span>
-                    Not Figurative
-                </label>
-            </section>
+                    <!-- Search Input with Clear and Keyboard Toggle -->
+                    <div class="search-input-container">
+                        <input type="text" id="search-input" placeholder="Search English text...">
+                        <button class="clear-search-btn" id="clear-search-btn" onclick="clearTextSearch()"
+                            title="Clear Search">↻</button>
+                        <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()"
+                            title="Toggle Hebrew Keyboard">⌨</button>
+                    </div>
 
-            <!-- Text Version Toggle -->
-            <section class="text-options">
-                <h3 class="tooltip">Text Version
-                    <span class="tooltiptext">See About section for details</span>
-                </h3>
-                <div>
-                    <label><input type="radio" name="text-version" value="sacred" checked> Sacred Names</label>
-                    <label><input type="radio" name="text-version" value="non-sacred"> Traditional Jewish</label>
+                    <!-- Hebrew Virtual Keyboard - Compact rectangular layout -->
+                    <div class="hebrew-keyboard" id="hebrew-keyboard">
+                        <!-- Row 1: 9 letters -->
+                        <div class="hebrew-key" onclick="insertHebrew('א')">א</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ב')">ב</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ג')">ג</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ד')">ד</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ה')">ה</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ו')">ו</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ז')">ז</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ח')">ח</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ט')">ט</div>
+                        <!-- Row 2: 9 letters -->
+                        <div class="hebrew-key" onclick="insertHebrew('י')">י</div>
+                        <div class="hebrew-key" onclick="insertHebrew('כ')">כ</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ל')">ל</div>
+                        <div class="hebrew-key" onclick="insertHebrew('מ')">מ</div>
+                        <div class="hebrew-key" onclick="insertHebrew('נ')">נ</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ס')">ס</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ע')">ע</div>
+                        <div class="hebrew-key" onclick="insertHebrew('פ')">פ</div>
+                        <div class="hebrew-key" onclick="insertHebrew('צ')">צ</div>
+                        <!-- Row 3: 9 letters (4 regular + 5 final forms) -->
+                        <div class="hebrew-key" onclick="insertHebrew('ק')">ק</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ר')">ר</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ש')">ש</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ת')">ת</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ך')">ך</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ם')">ם</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ן')">ן</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ף')">ף</div>
+                        <div class="hebrew-key" onclick="insertHebrew('ץ')">ץ</div>
+                        <!-- Row 4: Action keys -->
+                        <div class="hebrew-key action" onclick="clearSearch()" style="grid-column: span 2;">Clear</div>
+                        <div class="hebrew-key" onclick="insertHebrew(' ')" style="grid-column: span 5;">Space</div>
+                        <div class="hebrew-key action" onclick="deleteLastChar()" style="grid-column: span 2;">⌫</div>
+                    </div>
                 </div>
             </section>
 
-            <!-- Advanced Search -->
-            <section class="advanced-search">
-                <h3>Search Biblical Text</h3>
-
-                <!-- Search Type Toggle -->
-                <div class="search-type-toggle">
-                    <button class="toggle-btn active" id="english-toggle"
-                        onclick="toggleSearchType('english')">English</button>
-                    <button class="toggle-btn" id="hebrew-toggle" onclick="toggleSearchType('hebrew')">עברית</button>
+            <!-- 3. Filter by Text Scope -->
+            <section class="book-selection section-collapsed">
+                <div class="sidebar-section-header" onclick="toggleAccordion(this)">
+                    <h3>Filter by Text Scope</h3>
+                    <div class="accordion-icon"></div>
                 </div>
+                <div class="accordion-content collapsed">
+                    <!-- Book Selection Controls -->
+                    <div class="control-header">
+                        <label style="margin-bottom: 0;">Books:</label>
+                        <div class="control-group">
+                            <button onclick="selectAllBooks()" class="control-link"
+                                title="Select all books">All</button>
+                            <span class="control-separator">|</span>
+                            <button onclick="clearAllBooks()" class="control-link" title="Clear all books">None</button>
+                        </div>
+                    </div>
 
-                <!-- Search Input with Clear and Keyboard Toggle -->
-                <div class="search-input-container">
-                    <input type="text" id="search-input" placeholder="Search English text...">
-                    <button class="clear-search-btn" id="clear-search-btn" onclick="clearTextSearch()"
-                        title="Clear Search">↻</button>
-                    <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()"
-                        title="Toggle Hebrew Keyboard">⌨</button>
+                    <div id="book-select-container" class="book-list-container">
+                        <div class="loading" style="padding: 1rem; text-align: left;">Loading books...</div>
+                    </div>
+
+                    <!-- Chapters Input -->
+                    <div class="control-header mt">
+                        <label for="chapter-input" style="margin-bottom: 0;">Chapters:</label>
+                        <button onclick="document.getElementById('chapter-input').value='all'; filterAndRenderVerses();"
+                            class="refresh-btn" title="Reset to all chapters">↻</button>
+                    </div>
+                    <input type="text" id="chapter-input" placeholder="e.g., 1,3,5-7 or 'all'">
+
+                    <!-- Verses Input -->
+                    <div class="control-header mt">
+                        <label for="verse-input" style="margin-bottom: 0;">Verses:</label>
+                        <button onclick="document.getElementById('verse-input').value='all'; filterAndRenderVerses();"
+                            class="refresh-btn" title="Reset to all verses">↻</button>
+                    </div>
+                    <input type="text" id="verse-input" placeholder="e.g., 1-5,10,15 or 'all'">
+
+                    <button id="load-verses" class="load-btn">Load Verses</button>
                 </div>
+            </section>
 
-                <!-- Hebrew Virtual Keyboard - Compact rectangular layout -->
-                <div class="hebrew-keyboard" id="hebrew-keyboard">
-                    <!-- Row 1: 9 letters -->
-                    <div class="hebrew-key" onclick="insertHebrew('א')">א</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ב')">ב</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ג')">ג</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ד')">ד</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ה')">ה</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ו')">ו</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ז')">ז</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ח')">ח</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ט')">ט</div>
-                    <!-- Row 2: 9 letters -->
-                    <div class="hebrew-key" onclick="insertHebrew('י')">י</div>
-                    <div class="hebrew-key" onclick="insertHebrew('כ')">כ</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ל')">ל</div>
-                    <div class="hebrew-key" onclick="insertHebrew('מ')">מ</div>
-                    <div class="hebrew-key" onclick="insertHebrew('נ')">נ</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ס')">ס</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ע')">ע</div>
-                    <div class="hebrew-key" onclick="insertHebrew('פ')">פ</div>
-                    <div class="hebrew-key" onclick="insertHebrew('צ')">צ</div>
-                    <!-- Row 3: 9 letters (4 regular + 5 final forms) -->
-                    <div class="hebrew-key" onclick="insertHebrew('ק')">ק</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ר')">ר</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ש')">ש</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ת')">ת</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ך')">ך</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ם')">ם</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ן')">ן</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ף')">ף</div>
-                    <div class="hebrew-key" onclick="insertHebrew('ץ')">ץ</div>
-                    <!-- Row 4: Action keys -->
-                    <div class="hebrew-key action" onclick="clearSearch()" style="grid-column: span 2;">Clear</div>
-                    <div class="hebrew-key" onclick="insertHebrew(' ')" style="grid-column: span 5;">Space</div>
-                    <div class="hebrew-key action" onclick="deleteLastChar()" style="grid-column: span 2;">⌫</div>
+            <!-- 4. Figurative Language Types (Refinement) -->
+            <section class="type-filters section-collapsed">
+                <div class="sidebar-section-header" onclick="toggleAccordion(this)">
+                    <h3>Figurative Language Types</h3>
+                    <div class="accordion-icon"></div>
                 </div>
+                <div class="accordion-content collapsed">
+                    <!-- Select All / Clear All Buttons -->
+                    <div class="control-header">
+                        <label style="margin-bottom: 0;">Types:</label>
+                        <div class="control-group">
+                            <button id="select-all-types" class="control-link" title="Select all types">All</button>
+                            <span class="control-separator">|</span>
+                            <button id="clear-all-types" class="control-link" title="Clear all types">None</button>
+                        </div>
+                    </div>
 
-                <div class="control-header" style="margin-top: 1.5rem; margin-bottom: 0.5rem;">
-                    <h4 class="tooltip"
-                        style="color: var(--color-primary); margin: 0; font-size: 1rem; border-bottom: 2px solid var(--color-primary); padding-bottom: 0.3rem; flex: 1;">
-                        Search for Tag
+                    <label
+                        title="A comparison where one thing is said to be another (e.g., &quot;God is my rock&quot;)">
+                        <input type="checkbox" value="metaphor" checked>
+                        <span class="filter-color metaphor"></span>
+                        Metaphor
+                    </label>
+                    <label
+                        title="A comparison using &quot;like&quot; or &quot;as&quot; (e.g., &quot;like a deer pants for water&quot;)">
+                        <input type="checkbox" value="simile" checked>
+                        <span class="filter-color simile"></span>
+                        Simile
+                    </label>
+                    <label
+                        title="Giving human qualities to non-human things (e.g., &quot;the mountains skipped like rams&quot;)">
+                        <input type="checkbox" value="personification" checked>
+                        <span class="filter-color personification"></span>
+                        Personification
+                    </label>
+                    <label
+                        title="A phrase with a meaning different from its literal words (e.g., &quot;fruit of the womb&quot;)">
+                        <input type="checkbox" value="idiom" checked>
+                        <span class="filter-color idiom"></span>
+                        Idiom
+                    </label>
+                    <label title="Exaggeration for emphasis (e.g., &quot;rivers of tears flow from my eyes&quot;)">
+                        <input type="checkbox" value="hyperbole" checked>
+                        <span class="filter-color hyperbole"></span>
+                        Hyperbole
+                    </label>
+                    <label
+                        title="Using one thing to represent another closely related thing (e.g., &quot;the sword&quot; for war)">
+                        <input type="checkbox" value="metonymy" checked>
+                        <span class="filter-color metonymy"></span>
+                        Metonymy
+                    </label>
+                    <label title="Other forms of figurative language not fitting the main categories">
+                        <input type="checkbox" value="other" checked>
+                        <span class="filter-color other"></span>
+                        Other
+                    </label>
+                    <label title="Verses with no figurative language identified">
+                        <input type="checkbox" value="not_figurative">
+                        <span class="filter-color" style="background-color: #6c757d;"></span>
+                        Not Figurative
+                    </label>
+                </div>
+            </section>
+
+            <!-- 5. Text Version (Advanced) -->
+            <section class="text-options section-collapsed">
+                <div class="sidebar-section-header" onclick="toggleAccordion(this)">
+                    <h3 class="tooltip">Text Version
                         <span class="tooltiptext">See About section for details</span>
-                    </h4>
-                    <button id="clear-metadata-btn" onclick="clearMetadataSearch()" class="refresh-btn"
-                        title="Clear tag search">↻</button>
+                    </h3>
+                    <div class="accordion-icon"></div>
                 </div>
-                <div style="font-size: 0.85rem; color: #6c757d; margin-top: 0.5rem; margin-bottom: 0.75rem;">For
-                    multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
-                <div class="metadata-search"
-                    style="margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
-                    <input type="text" id="target-search" placeholder="Target"
-                        title="What or who the figurative speech is about">
-                    <input type="text" id="vehicle-search" placeholder="Vehicle"
-                        title="What the target is being likened to">
-                    <input type="text" id="ground-search" placeholder="Ground"
-                        title="What quality of the target is being illuminated by the figurative speech">
-                    <input type="text" id="posture-search" placeholder="Posture"
-                        title="Purpose of the speech; emotional valence">
+                <div class="accordion-content collapsed">
+                    <div>
+                        <label><input type="radio" name="text-version" value="sacred" checked> Sacred Names</label>
+                        <label><input type="radio" name="text-version" value="non-sacred"> Traditional Jewish</label>
+                    </div>
                 </div>
             </section>
         </aside>
@@ -2396,6 +2559,28 @@
             keyboard.classList.toggle('active');
         }
 
+        function toggleAccordion(header) {
+            const section = header.parentElement;
+            const content = section.querySelector('.accordion-content');
+
+            // Toggle classes
+            section.classList.toggle('section-collapsed');
+            content.classList.toggle('collapsed');
+
+            // Handle overflow for tooltips
+            if (!section.classList.contains('section-collapsed')) {
+                // Expanding: Wait for transition then set overflow visible
+                setTimeout(() => {
+                    if (!section.classList.contains('section-collapsed')) {
+                        content.style.overflow = 'visible';
+                    }
+                }, 400); // Match CSS transition time
+            } else {
+                // Collapsing: Set overflow hidden immediately
+                content.style.overflow = 'hidden';
+            }
+        }
+
         function insertHebrew(char) {
             const input = document.getElementById('search-input');
             const cursorPos = input.selectionStart;
@@ -2647,6 +2832,17 @@
         }
 
         function filterAndRenderVerses() {
+            // Default to 'all' if inputs are empty
+            const chapterInput = document.getElementById('chapter-input');
+            const verseInput = document.getElementById('verse-input');
+
+            if (!chapterInput.value.trim()) {
+                chapterInput.value = 'all';
+            }
+            if (!verseInput.value.trim()) {
+                verseInput.value = 'all';
+            }
+
             // Check if user has selected nothing (clear all scenario)
             if (appState.selectedTypes.size === 0 && !appState.showNotFigurative) {
                 // Show NO verses when clear all is pressed (user's request)
@@ -3567,6 +3763,17 @@
         }
 
         async function loadVerses() {
+            // Default to 'all' if inputs are empty
+            const chapterInput = document.getElementById('chapter-input');
+            const verseInput = document.getElementById('verse-input');
+
+            if (!chapterInput.value.trim()) {
+                chapterInput.value = 'all';
+            }
+            if (!verseInput.value.trim()) {
+                verseInput.value = 'all';
+            }
+
             // Reset pagination and load fresh data
             appState.pagination.offset = 0;
             const params = buildAPIParams();
