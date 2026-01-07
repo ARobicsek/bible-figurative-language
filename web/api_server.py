@@ -42,8 +42,29 @@ PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 DB_PATH = os.path.join(PROJECT_ROOT, 'database', 'Biblical_fig_language.db')
 DB_DIRECTORY = os.path.join(PROJECT_ROOT, 'database')
 
-# Valid book names (lowercase for case-insensitive matching)
-VALID_BOOKS = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms', 'proverbs', 'isaiah', 'jeremiah', 'ezekiel', 'hosea', 'joel', 'amos']
+# Complete Tanakh Book Order (Jewish Tradition)
+# Includes split books (e.g. 1 Samuel) as per standard English editions commonly used (JPS)
+# Ordered: Torah, Nevi'im (Prophets), Ketuvim (Writings)
+TANAKH_ORDER = [
+    # Torah
+    'Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy',
+    # Nevi'im - Former Prophets
+    'Joshua', 'Judges', '1 Samuel', '2 Samuel', 'Samuel', '1 Kings', '2 Kings', 'Kings',
+    # Nevi'im - Latter Prophets
+    'Isaiah', 'Jeremiah', 'Ezekiel',
+    # Nevi'im - The Twelve (Trei Asar)
+    'Hosea', 'Joel', 'Amos', 'Obadiah', 'Jonah', 'Micah',
+    'Nahum', 'Habakkuk', 'Zephaniah', 'Haggai', 'Zechariah', 'Malachi',
+    # Ketuvim
+    'Psalms', 'Proverbs', 'Job', 'Song of Songs', 'Ruth', 'Lamentations', 'Ecclesiastes',
+    'Esther', 'Daniel', 'Ezra', 'Nehemiah', 'Ezra-Nehemiah', '1 Chronicles', '2 Chronicles', 'Chronicles'
+]
+
+# Create a mapping for easy sort order lookup
+BOOK_ORDER_MAP = {book.lower(): i for i, book in enumerate(TANAKH_ORDER)}
+
+# Valid book names for validation (lowercase)
+VALID_BOOKS = [b.lower() for b in TANAKH_ORDER]
 
 # Debug logging for production troubleshooting
 print(f"Script directory: {SCRIPT_DIR}")
@@ -401,15 +422,20 @@ def get_verses():
             base_query += " GROUP BY v.id"
 
         # Add ordering and pagination (order books biblically)
-        base_query += """ ORDER BY
+        # Add ordering and pagination (order books biblically)
+        # Dynamically build CASE statement from TANAKH_ORDER
+        when_clauses = []
+        for i, book in enumerate(TANAKH_ORDER):
+            # Escape single quotes just in case, though these are trusted internal strings
+            safe_book = book.replace("'", "''")
+            when_clauses.append(f"WHEN '{safe_book}' THEN {i + 1}")
+        
+        order_case = "\n".join(when_clauses)
+        
+        base_query += f""" ORDER BY
             CASE v.book
-                WHEN 'Genesis' THEN 1
-                WHEN 'Exodus' THEN 2
-                WHEN 'Leviticus' THEN 3
-                WHEN 'Numbers' THEN 4
-                WHEN 'Deuteronomy' THEN 5
-                WHEN 'Psalms' THEN 6
-                ELSE 99
+                {order_case}
+                ELSE 999
             END, v.chapter, v.verse
             LIMIT ? OFFSET ?"""
         params.extend([limit, offset])
@@ -755,11 +781,16 @@ def get_statistics():
         total_instances = db_manager.execute_query("SELECT COUNT(*) as count FROM figurative_language")[0]['count']
 
         # Books in biblical order
-        biblical_order = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Psalms', 'Proverbs', 'Isaiah', 'Jeremiah', 'Ezekiel', 'Hosea', 'Joel', 'Amos']
         books_query = db_manager.execute_query("SELECT DISTINCT book FROM verses")
         available_books = [book['book'] for book in books_query]
-        # Order books according to biblical sequence
-        books = [{'book': book} for book in biblical_order if book in available_books]
+        
+        # Order books according to biblical sequence using the mapping
+        # Filter out any books that might not be in our map (though unlikely) and put them at the end
+        def get_book_sort_key(book_name):
+            return BOOK_ORDER_MAP.get(book_name.lower(), 999)
+            
+        sorted_books = sorted(available_books, key=get_book_sort_key)
+        books = [{'book': book} for book in sorted_books]
 
         # Figurative type counts
         type_counts = {}

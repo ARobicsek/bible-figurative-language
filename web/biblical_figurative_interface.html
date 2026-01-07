@@ -1374,22 +1374,7 @@
                 </div>
 
                 <select id="book-select" multiple>
-                    <!-- Torah -->
-                    <option value="genesis" selected>Genesis</option>
-                    <option value="exodus" selected>Exodus</option>
-                    <option value="leviticus" selected>Leviticus</option>
-                    <option value="numbers" selected>Numbers</option>
-                    <option value="deuteronomy" selected>Deuteronomy</option>
-                    <!-- Nevi'im (Prophets) -->
-                    <option value="isaiah" selected>Isaiah</option>
-                    <option value="jeremiah" selected>Jeremiah</option>
-                    <option value="ezekiel" selected>Ezekiel</option>
-                    <option value="hosea" selected>Hosea</option>
-                    <option value="joel" selected>Joel</option>
-                    <option value="amos" selected>Amos</option>
-                    <!-- Ketuvim (Writings) -->
-                    <option value="psalms" selected>Psalms</option>
-                    <option value="proverbs" selected>Proverbs</option>
+                    <option disabled>Loading books...</option>
                 </select>
 
                 <!-- Chapters Input -->
@@ -2343,27 +2328,31 @@
         function updateBookOptions(books) {
             const bookSelect = document.getElementById('book-select');
 
-            // Only update if the book select is empty or has different books
-            if (bookSelect.options.length === 0) {
-                bookSelect.innerHTML = '';
-                // Biblical order
-                const biblicalOrder = ['Genesis', 'Exodus', 'Leviticus', 'Numbers', 'Deuteronomy', 'Psalms', 'Proverbs', 'Isaiah', 'Jeremiah', 'Ezekiel', 'Hosea', 'Joel', 'Amos'];
-                biblicalOrder.forEach(book => {
-                    if (books.includes(book)) {
-                        const option = document.createElement('option');
-                        option.value = book.toLowerCase();
-                        option.textContent = book;
-                        option.selected = true; // Select all by default
-                        bookSelect.appendChild(option);
-                    }
-                });
+            // Always update to ensure we have the latest list from server
+            // The server now returns all available books sorted in Tanakh order
+            bookSelect.innerHTML = '';
+
+            if (books.length === 0) {
+                const option = document.createElement('option');
+                option.disabled = true;
+                option.textContent = 'No books found in database';
+                bookSelect.appendChild(option);
+                return;
             }
+
+            books.forEach(book => {
+                const option = document.createElement('option');
+                option.value = book.toLowerCase();
+                option.textContent = book;
+                option.selected = true; // Select all by default
+                bookSelect.appendChild(option);
+            });
         }
 
         async function loadDefaultVerses() {
-            // Load all books in biblical order by default
+            // Load all books (empty string = all)
             await loadVersesFromAPI({
-                books: 'genesis,exodus,leviticus,numbers,deuteronomy,psalms',
+                books: '', // Empty string implies all books
                 figurative_types: Array.from(appState.selectedTypes).join(','),
                 show_not_figurative: appState.showNotFigurative,
                 limit: 25,

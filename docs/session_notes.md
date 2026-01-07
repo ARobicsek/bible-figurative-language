@@ -855,3 +855,25 @@ For consistency, also converted figurative language type labels (Metaphor, Simil
 - `5bc396c` - Fix tag search tooltips to appear below inputs within sidebar
 - `01c74e7` - Use native title tooltips for tag search inputs - fixes clipping issue
 - `4747eb5` - Use native title tooltips for figurative language types for consistency
+
+## Session 13: Dynamic Tanakh Book Ordering
+
+**Date:** 2026-01-06
+
+### Summary
+Implemented dynamic book ordering to ensure biblical books appear in the correct Tanakh sequence (Torah, Nevi'im, Ketuvim) automatically when added to the database, removing the need for hardcoded lists in the frontend.
+
+### Completed Tasks
+1. **Server-Side Updates:**
+   - Defined `TANAKH_ORDER` master list in `api_server.py`.
+   - Updated `/statistics` to return books sorted by this order.
+   - Updated `/verses` to sort results using a dynamic SQL `CASE` statement based on this order.
+
+2. **Frontend Updates:**
+   - Removed hardcoded `<option>` elements from `biblical_figurative_interface.html`.
+   - Updated `updateBookOptions` to populate the list dynamically from the API response.
+   - Updated `loadDefaultVerses` to load all available books.
+
+### Code Changes
+- `web/api_server.py`: Added `TANAKH_ORDER`, updated `get_statistics` and `get_verses`.
+- `web/biblical_figurative_interface.html`: Dynamic book list population.
