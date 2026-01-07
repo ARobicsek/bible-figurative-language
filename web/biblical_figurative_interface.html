@@ -271,6 +271,28 @@
             bottom: 120%;
         }
 
+        /* Metadata search tooltips - position to right to avoid sidebar clipping */
+        .metadata-search .tooltip .tooltiptext {
+            width: 220px;
+            left: 100%;
+            bottom: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 10px;
+        }
+
+        .metadata-search .tooltip .tooltiptext::after {
+            top: 50%;
+            left: -6px;
+            margin-top: -6px;
+            margin-left: 0;
+            border-color: transparent var(--color-primary) transparent transparent;
+        }
+
+        .metadata-search .tooltip:hover .tooltiptext {
+            bottom: auto;
+        }
+
         /* Glass Sidebar */
         .sidebar {
             background: var(--glass-bg);
