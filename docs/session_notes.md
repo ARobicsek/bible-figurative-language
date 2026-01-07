@@ -1054,3 +1054,48 @@ Reverted the global tooltip and modal toggle features introduced in Session 12 d
 - **Reverted**: Modal "close on re-click" logic.
 - **Restored**: Native `title` attributes for Search for Figurative Language inputs and help icons.
 - **Kept**: Header spacing adjustments and "Filter by Text" renaming.
+## Session 15: UI Improvements - Modal Toggle & Default Selection
+
+**Date:** 2026-01-07
+
+### Summary
+Implemented several UI improvements to the Tzafun web interface focusing on modal interaction behavior and default filter settings.
+
+### Completed Tasks
+
+#### 1. Modal Toggle Functionality ✅
+**Goal:** Allow users to close the right-side detail panel by re-clicking the same highlighted figurative text.
+
+**Implementation:**
+- Added `currentAnnotation: null` to `appState` to track which annotation is currently displayed
+- Modified `showAnnotationDetails()` to check if the clicked annotation matches the currently displayed one
+- If the same annotation is clicked and panel is open, closes the panel instead of refreshing
+- Clear `currentAnnotation` when panel closes via `closeDetailPanel()`
+
+**User Benefit:** More intuitive interaction - users can toggle panel visibility with same element they opened it with.
+
+#### 2. Default Selection for "Not Figurative" ✅
+**Goal:** Include "Not Figurative" verses in the default selection on page load.
+
+**Implementation:**
+- Changed `appState.showNotFigurative` from `false` to `true`
+- Added `checked` attribute to "Not Figurative" checkbox in HTML
+
+**User Benefit:** Users see all content by default (both figurative and non-figurative verses) without needing to manually check the option.
+
+#### 3. UI Polish ✅
+**Changes:**
+- Renamed sidebar section from "Filter by Text" to "Filter by Book" for clarity
+- Reduced vertical spacing between figurative language type labels
+  - Found issue: `.type-filters label` had `padding: 0.3rem 0.5rem` causing large gaps
+  - Added override: `.type-filters .accordion-content label` with `padding: 0.1rem 0.5rem`
+  - Also set `line-height: 1.2` and `margin-bottom: 0.05rem` for tighter spacing
+
+### Code Changes
+- **File:** `web/biblical_figurative_interface.html`
+  - Lines 1846, 2042, 2063, 3576-3591, 3688-3694: Modal toggle implementation
+  - Line 1749: Title change "Filter by Text" → "Filter by Book"
+  - Lines 715-719: Tighter spacing for type labels
+
+### Commits
+- Session changes committed with improved UI interaction and default settings
