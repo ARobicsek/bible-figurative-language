@@ -1260,3 +1260,27 @@ The new SQL pattern checks:
 
 ### Commits
 - Enhanced whole-word search logic for JSON arrays to support partial-string word matches.
+
+## Session 12: Search Functionality & UI Polish
+
+**Date:** 2026-01-07
+
+### Summary
+Polished the search UI instructions and extended advanced search capabilities (semicolon-separated lists, quoted exact phrases) to the generic Biblical Text search.
+
+### Completed Tasks
+1.  **UI Instructions**:
+    -   Moved the instruction text from *above* to *below* the Figurative Language search boxes.
+    -   Updated text to: "Separate multiple terms with semicolon; Use "quotes" for exact words".
+    -   Added the same instruction text below the "Search Biblical Text" input field.
+2.  **Backend Search Logic**:
+    -   Refactored `SearchProcessor` in `api_server.py` to expose `parse_search_terms` as a reusable static method.
+    -   Implemented `build_text_search_condition` to support the advanced search syntax (`;` for OR, `""` for whole-word/phrase) in `search_hebrew` and `search_english`.
+    -   Updated `get_verses` to utilize this new logic, enabling advanced searching in the main text search.
+3.  **Frontend Polish (Follow-up)**:
+    -   Left-justified the search instruction text in both sidebar sections.
+    -   Updated `TextHighlighter` logic in `biblical_figurative_interface.html` to parse semicolon-separated search terms, ensuring independent highlighting of each term in multi-term searches.
+
+### Code Changes
+-   **web/biblical_figurative_interface.html**: Moved/Added instruction divs, updated CSS alignment, revised highlighting logic.
+-   **web/api_server.py**: Refactored `SearchProcessor` and updated `get_verses` query construction.

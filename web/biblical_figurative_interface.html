@@ -1647,9 +1647,7 @@
                     <div class="accordion-icon"></div>
                 </div>
                 <div class="accordion-content">
-                    <div
-                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                        <span style="font-size: 0.85rem; color: #6c757d;">Separate multiple terms with ;</span>
+                    <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 0.5rem;">
                         <button id="clear-metadata-btn" onclick="clearMetadataSearch()" class="refresh-btn"
                             title="Clear tag search">↻</button>
                     </div>
@@ -1659,30 +1657,37 @@
                             <input type="text" id="target-search" placeholder="Target"
                                 title="Target: The subject being described (e.g., &quot;God&quot;, &quot;Life&quot;).">
                             <div class="help-icon"
-                                title="Target: The subject being described (e.g., &quot;God&quot;, &quot;Life&quot;).">?
-                            </div>
+                                title="Target: The subject being described (e.g., 'God', 'Life'). Wrap terms in quotes for whole-word matching: 'king' vs king">
+                                ?</div>
                         </div>
                         <div class="input-wrapper">
                             <input type="text" id="vehicle-search" placeholder="Vehicle"
                                 title="Vehicle: The image used for description (e.g., &quot;Rock&quot;, &quot;Journey&quot;).">
                             <div class="help-icon"
-                                title="Vehicle: The image used for description (e.g., &quot;Rock&quot;, &quot;Journey&quot;).">
-                                ?</div>
+                                title="Vehicle: The image used for description (e.g., 'Rock', 'Journey'). Wrap terms in quotes for whole-word matching: 'air' won't match 'hair'">
+                                ?
+                            </div>
                         </div>
                         <div class="input-wrapper">
                             <input type="text" id="ground-search" placeholder="Ground"
                                 title="Ground: The common quality or meaning (e.g., &quot;Strength&quot;, &quot;Difficulty&quot;).">
                             <div class="help-icon"
-                                title="Ground: The common quality or meaning (e.g., &quot;Strength&quot;, &quot;Difficulty&quot;).">
-                                ?</div>
+                                title="Ground: The common quality or meaning (e.g., 'Strength', 'Difficulty'). Wrap terms in quotes for whole-word matching.">
+                                ?
+                            </div>
                         </div>
                         <div class="input-wrapper">
                             <input type="text" id="posture-search" placeholder="Posture"
                                 title="Posture: The rhetorical intent or emotion (e.g., &quot;Praise&quot;, &quot;Complaint&quot;).">
                             <div class="help-icon"
-                                title="Posture: The rhetorical intent or emotion (e.g., &quot;Praise&quot;, &quot;Complaint&quot;).">
-                                ?</div>
+                                title="Posture: The rhetorical intent or emotion (e.g., 'Praise', 'Complaint'). Wrap terms in quotes for whole-word matching.">
+                                ?
+                            </div>
                         </div>
+                    </div>
+                    <div
+                        style="margin-top: 0.5rem; font-size: 0.85rem; color: #6c757d; text-align: left; padding-left: 2px;">
+                        Separate multiple terms with semicolon; Use "quotes" for exact words
                     </div>
                 </div>
             </section>
@@ -1709,6 +1714,10 @@
                             title="Clear Search">↻</button>
                         <button class="keyboard-toggle" id="keyboard-toggle" onclick="toggleHebrewKeyboard()"
                             title="Toggle Hebrew Keyboard">⌨</button>
+                    </div>
+                    <div
+                        style="margin-top: 0.25rem; margin-bottom: 0.5rem; font-size: 0.85rem; color: #6c757d; text-align: left; padding-left: 2px;">
+                        Separate multiple terms with semicolon; Use "quotes" for exact words
                     </div>
 
                     <!-- Hebrew Virtual Keyboard - Compact rectangular layout -->
@@ -3273,20 +3282,31 @@
                 }
 
 
-                // 4. Search for SearchTerm
-                if (searchTerm) {
-                    let normSearch = '';
-                    if (language === 'hebrew') {
-                        normSearch = searchTerm.normalize('NFD')
-                            .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '')
-                            .replace(/־/g, ' ');
-                    } else {
-                        // For English search, be a bit more flexible with partial matches? 
-                        // Current logic matches 'man' in 'human'.
-                        normSearch = searchTerm.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '');
-                    }
+                // 4. Search for Search Terms (if any)
+                if (searchTerm && searchTerm.trim()) {
+                    // Split by semicolon and strip quotes
+                    const searchTerms = searchTerm.split(';')
+                        .map(t => t.trim())
+                        .filter(t => t.length > 0)
+                        .map(t => {
+                            // Strip quotes for highlighting purposes
+                            // (We highlight the text content, whether it was quoted or not)
+                            return t.replace(/^["']|["']$/g, '').trim();
+                        })
+                        .filter(t => t.length > 0);
 
-                    if (normSearch) {
+                    searchTerms.forEach(term => {
+                        let normSearch = '';
+                        if (language === 'hebrew') {
+                            normSearch = term.normalize('NFD')
+                                .replace(/[\u0591-\u05C7\u05F0-\u05F4]/g, '')
+                                .replace(/־/g, ' ');
+                        } else {
+                            normSearch = term.toLowerCase().replace(/[.,;:!?()\[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '');
+                        }
+
+                        if (!normSearch) return;
+
                         let pos = 0;
                         while (true) {
                             const idx = normObj.text.indexOf(normSearch, pos);
@@ -3297,11 +3317,11 @@
                                 endNorm: idx + normSearch.length,
                                 type: 'search',
                                 priority: 2,
-                                data: searchTerm
+                                data: term // store the specific term found
                             });
                             pos = idx + 1;
                         }
-                    }
+                    });
                 }
 
                 // 5. Convert Norm Indices to HTML Indices

@@ -160,45 +160,108 @@ class SearchProcessor:
         return f"({' OR '.join(conditions)})" if conditions else "1=1"
 
     @staticmethod
+    def parse_search_terms(search_str: str) -> List[tuple]:
+        """Parse semicolon-separated search terms, detecting quoted terms for whole-word matching
+        
+        Returns list of tuples: (term, is_whole_word)
+        - Quoted terms like "air" -> ('air', True) for whole-word matching
+        - Unquoted terms like wind -> ('wind', False) for substring matching
+        """
+        if not search_str:
+            return []
+        
+        # Normalize quotes and apostrophes to straight versions
+        # This ensures search works regardless of how users type/paste
+        normalized = search_str
+        normalized = normalized.replace('\u2019', "'")  # Smart apostrophe/right quote (U+2019) → straight
+        normalized = normalized.replace('\u201c', '"')  # Smart left quote (U+201C) → straight
+        normalized = normalized.replace('\u201d', '"')  # Smart right quote (U+201D) → straight
+        
+        terms = []
+        for term in normalized.split(';'):  # Use normalized string
+            term = term.strip()
+            if not term:
+                continue
+            
+            # Check if term is wrapped in quotes
+            if (term.startswith('"') and term.endswith('"')) or (term.startswith("'") and term.endswith("'")):
+                # Quoted term - whole word matching
+                clean_term = term[1:-1].strip()  # Remove quotes
+                if clean_term:
+                    terms.append((clean_term, True))
+            else:
+                # Unquoted term - substring matching
+                terms.append((term, False))
+        
+        return terms
+
+    @staticmethod
+    def build_text_search_condition(field_name: str, search_str: str) -> tuple:
+        """Build SQL condition for biblical text search with advanced filtering (semicolons, quotes)"""
+        if not search_str or not search_str.strip():
+            return None, []
+
+        conditions = []
+        params = []
+        
+        terms = SearchProcessor.parse_search_terms(search_str)
+        if not terms:
+            return None, []
+
+        term_conditions = []
+        for term, is_whole_word in terms:
+            if is_whole_word:
+                # Whole-word matching for natural text check boundaries
+                word_patterns = [
+                    (f"{field_name} = ?", [term]),                      # Exact match
+                    (f"{field_name} LIKE ?", [f"{term} %"]),            # Starts with word
+                    (f"{field_name} LIKE ?", [f"% {term}"]),            # Ends with word
+                    (f"{field_name} LIKE ?", [f"% {term} %"]),          # Middle of text
+                    
+                    # Common punctuation boundaries 
+                    (f"{field_name} LIKE ?", [f"% {term},%"]),          # Word then comma
+                    (f"{field_name} LIKE ?", [f"{term},%"]),            # Start then comma
+                    (f"{field_name} LIKE ?", [f"% {term}.%"]),          # Word then period
+                    (f"{field_name} LIKE ?", [f"{term}.%"]),            # Start then period
+                    (f"{field_name} LIKE ?", [f"% {term};%"]),          # Word then semicolon
+                    (f"{field_name} LIKE ?", [f"{term};%"]),            # Start then semicolon
+                    (f"{field_name} LIKE ?", [f"% {term}:%"]),          # Word then colon
+                    (f"{field_name} LIKE ?", [f"{term}:%"]),            # Start then colon
+                    (f"{field_name} LIKE ?", [f"% {term}?%"]),          # Word then question
+                    (f"{field_name} LIKE ?", [f"{term}?%"]),            # Start then question
+                    (f"{field_name} LIKE ?", [f"% {term}!%"]),          # Word then exclamation
+                    (f"{field_name} LIKE ?", [f"{term}!%"]),            # Start then exclamation
+                    
+                    # Quote boundaries
+                    (f"{field_name} LIKE ?", [f'% "{term}" %']),        # Surrounded by quotes
+                    (f"{field_name} LIKE ?", [f'"{term}" %']),          # Start quote
+                    (f"{field_name} LIKE ?", [f'% "{term}"']),          # End quote
+                ]
+                
+                # OR all the word patterns together
+                matches = []
+                for sql, p in word_patterns:
+                    matches.append(sql)
+                    params.extend(p)
+                
+                if matches:
+                    term_conditions.append(f"({' OR '.join(matches)})")
+            
+            else:
+                # Substring matching
+                term_conditions.append(f"{field_name} LIKE ?")
+                params.append(f"%{term}%")
+        
+        if term_conditions:
+            return f"({' OR '.join(term_conditions)})", params
+        
+        return None, []
+
+    @staticmethod
     def build_metadata_search(target: str, vehicle: str, ground: str, posture: str) -> tuple:
         """Build SQL conditions for metadata search with OR logic and semicolon-separated multi-term support"""
         conditions = []
         params = []
-
-        def parse_search_terms(search_str: str) -> List[tuple]:
-            """Parse semicolon-separated search terms, detecting quoted terms for whole-word matching
-            
-            Returns list of tuples: (term, is_whole_word)
-            - Quoted terms like "air" -> ('air', True) for whole-word matching
-            - Unquoted terms like wind -> ('wind', False) for substring matching
-            """
-            if not search_str:
-                return []
-            
-            # Normalize quotes and apostrophes to straight versions
-            # This ensures search works regardless of how users type/paste
-            normalized = search_str
-            normalized = normalized.replace('\u2019', "'")  # Smart apostrophe/right quote (U+2019) → straight
-            normalized = normalized.replace('\u201c', '"')  # Smart left quote (U+201C) → straight
-            normalized = normalized.replace('\u201d', '"')  # Smart right quote (U+201D) → straight
-            
-            terms = []
-            for term in normalized.split(';'):  # Use normalized string
-                term = term.strip()
-                if not term:
-                    continue
-                
-                # Check if term is wrapped in quotes
-                if (term.startswith('"') and term.endswith('"')) or (term.startswith("'") and term.endswith("'")):
-                    # Quoted term - whole word matching
-                    clean_term = term[1:-1].strip()  # Remove quotes
-                    if clean_term:
-                        terms.append((clean_term, True))
-                else:
-                    # Unquoted term - substring matching
-                    terms.append((term, False))
-            
-            return terms
         
         def build_whole_word_condition(field_name: str, term: str) -> tuple:
             """Build SQL condition for whole-word matching in JSON array fields
@@ -244,7 +307,7 @@ class SearchProcessor:
 
         # Handle target field with multi-term OR logic
         if target and target.strip():
-            target_terms = parse_search_terms(target)
+            target_terms = SearchProcessor.parse_search_terms(target)
             if target_terms:
                 target_conditions = []
                 for term, is_whole_word in target_terms:
@@ -262,7 +325,7 @@ class SearchProcessor:
 
         # Handle vehicle field with multi-term OR logic
         if vehicle and vehicle.strip():
-            vehicle_terms = parse_search_terms(vehicle)
+            vehicle_terms = SearchProcessor.parse_search_terms(vehicle)
             if vehicle_terms:
                 vehicle_conditions = []
                 for term, is_whole_word in vehicle_terms:
@@ -280,7 +343,7 @@ class SearchProcessor:
 
         # Handle ground field with multi-term OR logic
         if ground and ground.strip():
-            ground_terms = parse_search_terms(ground)
+            ground_terms = SearchProcessor.parse_search_terms(ground)
             if ground_terms:
                 ground_conditions = []
                 for term, is_whole_word in ground_terms:
@@ -298,7 +361,7 @@ class SearchProcessor:
 
         # Handle posture field with multi-term OR logic
         if posture and posture.strip():
-            posture_terms = parse_search_terms(posture)
+            posture_terms = SearchProcessor.parse_search_terms(posture)
             if posture_terms:
                 posture_conditions = []
                 for term, is_whole_word in posture_terms:
@@ -460,12 +523,16 @@ def get_verses():
 
         # Text search conditions (applied FIRST, independently of figurative filtering)
         if search_hebrew:
-            conditions.append("v.hebrew_text_stripped LIKE ?")
-            params.append(f"%{search_hebrew}%")
+            h_cond, h_params = SearchProcessor.build_text_search_condition("v.hebrew_text_stripped", search_hebrew)
+            if h_cond:
+                conditions.append(h_cond)
+                params.extend(h_params)
 
         if search_english:
-            conditions.append("v.english_text_clean LIKE ?")
-            params.append(f"%{search_english}%")
+            e_cond, e_params = SearchProcessor.build_text_search_condition("v.english_text_clean", search_english)
+            if e_cond:
+                conditions.append(e_cond)
+                params.extend(e_params)
 
         # Handle figurative language filtering (applied AFTER text search)
         # Skip this section for simple queries and show_all_verses - they don't need filtering
@@ -738,11 +805,15 @@ def get_verses():
                     count_params_list.extend(verses)
 
             if search_hebrew:
-                count_conditions.append("v.hebrew_text_stripped LIKE ?")
-                count_params_list.append(f"%{search_hebrew}%")
+                h_cond, h_params = SearchProcessor.build_text_search_condition("v.hebrew_text_stripped", search_hebrew)
+                if h_cond:
+                    count_conditions.append(h_cond)
+                    count_params_list.extend(h_params)
             if search_english:
-                count_conditions.append("v.english_text_clean LIKE ?")
-                count_params_list.append(f"%{search_english}%")
+                e_cond, e_params = SearchProcessor.build_text_search_condition("v.english_text_clean", search_english)
+                if e_cond:
+                    count_conditions.append(e_cond)
+                    count_params_list.extend(e_params)
 
             if count_conditions:
                 count_query += " AND " + " AND ".join(count_conditions)
@@ -785,11 +856,15 @@ def get_verses():
 
             # Add text search
             if search_hebrew:
-                verse_conditions.append("v.hebrew_text_stripped LIKE ?")
-                verse_params.append(f"%{search_hebrew}%")
+                h_cond, h_params = SearchProcessor.build_text_search_condition("v.hebrew_text_stripped", search_hebrew)
+                if h_cond:
+                    verse_conditions.append(h_cond)
+                    verse_params.extend(h_params)
             if search_english:
-                verse_conditions.append("v.english_text_clean LIKE ?")
-                verse_params.append(f"%{search_english}%")
+                e_cond, e_params = SearchProcessor.build_text_search_condition("v.english_text_clean", search_english)
+                if e_cond:
+                    verse_conditions.append(e_cond)
+                    verse_params.extend(e_params)
 
             # Add non-figurative condition
             # Include verses with no FL records OR verses where final_figurative_language = 'no'
