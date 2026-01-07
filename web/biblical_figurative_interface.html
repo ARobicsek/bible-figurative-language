@@ -353,34 +353,54 @@
             accent-color: var(--color-accent);
         }
 
-        /* Enhanced Book Selector */
-        .sidebar select[multiple] {
-            height: 140px;
+        /* Custom Checkbox List for Books */
+        .book-list-container {
+            height: 160px;
+            /* Slightly taller for better touch targets */
             padding: 0.5rem;
             background: white;
             border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 6px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
             box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
-        .sidebar select[multiple]::-webkit-scrollbar {
+        .book-list-container::-webkit-scrollbar {
             width: 6px;
         }
 
-        .sidebar select[multiple]::-webkit-scrollbar-thumb {
+        .book-list-container::-webkit-scrollbar-thumb {
             background-color: rgba(0, 0, 0, 0.15);
             border-radius: 3px;
         }
 
-        .sidebar select[multiple] option {
-            padding: 0.35rem 0.5rem;
+        .book-checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 0.4rem 0.5rem;
             border-radius: 4px;
-            margin-bottom: 1px;
-            font-size: 0.95rem;
+            cursor: pointer;
+            transition: background 0.1s;
+            user-select: none;
         }
 
-        .sidebar select[multiple] option:checked {
-            background: linear-gradient(0deg, var(--color-accent) 0%, var(--color-accent) 100%);
-            color: white;
+        .book-checkbox-item:hover {
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        .book-checkbox-item input[type="checkbox"] {
+            width: auto;
+            margin-right: 0.8rem;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .book-checkbox-item span {
+            font-size: 0.95rem;
+            color: var(--color-text-main);
         }
 
         /* Control Styles Refined */
@@ -992,8 +1012,12 @@
             .app-container {
                 display: block;
                 /* Stack layout */
-                height: 100vh;
+                height: auto;
+                /* Fix scrolling by allowing auto height */
+                min-height: 100vh;
                 overflow-x: hidden;
+                overflow-y: visible;
+                /* Fix scrolling */
             }
 
             /* Header Adjustments */
@@ -1497,7 +1521,7 @@
 
                 <!-- Book Selection Controls -->
                 <div class="control-header">
-                    <label for="book-select" style="margin-bottom: 0;">Books (Ctrl+Click):</label>
+                    <label style="margin-bottom: 0;">Books:</label>
                     <div class="control-group">
                         <button onclick="selectAllBooks()" class="control-link" title="Select all books">All</button>
                         <span class="control-separator">|</span>
@@ -1505,9 +1529,9 @@
                     </div>
                 </div>
 
-                <select id="book-select" multiple>
-                    <option disabled>Loading books...</option>
-                </select>
+                <div id="book-select-container" class="book-list-container">
+                    <div class="loading" style="padding: 1rem; text-align: left;">Loading books...</div>
+                </div>
 
                 <!-- Chapters Input -->
                 <div class="control-header mt">
@@ -2203,9 +2227,12 @@
 
         function initializeEventListeners() {
             // Book selection change - clear chapter/verse and close panel
-            document.getElementById('book-select').addEventListener('change', function () {
-                resetChapterVerseInputs();
-                closeDetailPanel();
+            // Book selection change - delegated to container
+            document.getElementById('book-select-container').addEventListener('change', function (e) {
+                if (e.target.matches('input[type="checkbox"]')) {
+                    resetChapterVerseInputs();
+                    closeDetailPanel();
+                }
             });
 
             // Type filter checkboxes
@@ -2458,27 +2485,48 @@
         }
 
         function updateBookOptions(books) {
-            const bookSelect = document.getElementById('book-select');
+            // Render checkboxes in the new container
+            const container = document.getElementById('book-select-container');
 
-            // Always update to ensure we have the latest list from server
-            // The server now returns all available books sorted in Tanakh order
-            bookSelect.innerHTML = '';
-
-            if (books.length === 0) {
-                const option = document.createElement('option');
-                option.disabled = true;
-                option.textContent = 'No books found in database';
-                bookSelect.appendChild(option);
+            if (!books || books.length === 0) {
+                container.innerHTML = '<div style="padding:1rem;">No books found</div>';
                 return;
             }
 
-            books.forEach(book => {
-                const option = document.createElement('option');
-                option.value = book.toLowerCase();
-                option.textContent = book;
-                option.selected = true; // Select all by default
-                bookSelect.appendChild(option);
-            });
+            container.innerHTML = books.map(book => `
+                <label class="book-checkbox-item">
+                    <input type="checkbox" value="${book.toLowerCase()}" checked>
+                    <span>${book}</span>
+                </label>
+            `).join('');
+
+            // Add change listener for delegations
+            // Remove any old ones if possible, but adding a new one is safe-ish if we handle it right
+            // The container is replaced, so previous listeners on children are gone.
+            // Listener on container itself (if added in DOMContentLoaded) persists.
+        }
+
+        function getSelectedBooks() {
+            const container = document.getElementById('book-select-container');
+            if (!container) return [];
+            const checkboxes = container.querySelectorAll('input[type="checkbox"]:checked');
+            return Array.from(checkboxes).map(cb => cb.value);
+        }
+
+        function selectAllBooks() {
+            const container = document.getElementById('book-select-container');
+            const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(cb => cb.checked = true);
+            closeDetailPanel();
+            resetChapterVerseInputs();
+        }
+
+        function clearAllBooks() {
+            const container = document.getElementById('book-select-container');
+            const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(cb => cb.checked = false);
+            closeDetailPanel();
+            resetChapterVerseInputs();
         }
 
         async function loadDefaultVerses() {
@@ -2621,7 +2669,7 @@
         }
 
         function buildAPIParams() {
-            const books = Array.from(document.getElementById('book-select').selectedOptions).map(opt => opt.value);
+            const books = getSelectedBooks();
             const chapters = document.getElementById('chapter-input').value;
             const verses = document.getElementById('verse-input').value;
 

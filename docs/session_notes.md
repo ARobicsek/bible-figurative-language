@@ -911,3 +911,29 @@ Implemented a comprehensive responsive design to make the Tzafun dashboard usabl
     - Added HTML for mobile menu button and overlay.
     - Added JavaScript for sidebar toggle functionality.
 
+
+## Session 15: Mobile UI Polish
+
+**Date:** 2026-01-06
+
+### Summary
+ addressed user feedback regarding the mobile interface. Fixed a scrolling issue that prevented viewing more than two verses on mobile and significantly improved the book selection experience by replacing the native select element with a custom checkbox list.
+
+### Completed Tasks
+1.  **Mobile Scrolling Fix**:
+    -   Updated CSS for `.app-container` on mobile devices.
+    -   Changed from `height: 100vh` to `height: auto` and enabled `overflow-y: visible`.
+    -   This allows the document to scroll naturally, fixing the "cut off" issue.
+
+2.  **Book Selector Enhancement**:
+    -   Replaced the native `<select multiple>` (which rendered poorly on iOS as "13 Items") with a custom scrollable `div` containing checkbox inputs.
+    -   This provides immediate visibility of all selected books and easy access to "Select All / None" controls.
+    -   Updated `updateBookOptions`, `selectAllBooks`, `clearAllBooks`, and relevant event listeners to work with the new DOM structure.
+
+### Code Changes
+-   **web/biblical_figurative_interface.html**:
+    -   CSS: Added `.book-list-container` styles, updated `@media` query.
+    -   HTML: Replaced `<select>` with `<div id="book-select-container">`.
+    -   JS: Rewrote book selection logic to use checkboxes.
+
+
