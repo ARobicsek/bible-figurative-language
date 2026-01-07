@@ -1099,3 +1099,164 @@ Implemented several UI improvements to the Tzafun web interface focusing on moda
 
 ### Commits
 - Session changes committed with improved UI interaction and default settings
+
+### Git History Cleanup ✅
+**Issue:** Push to GitHub failed due to large database backup files (100+ MB) in Git history from previous commits.
+
+**Solution:** Used `git-filter-repo` to permanently remove all `.db` and database backup files from entire Git history.
+
+**Results:**
+- Repository size reduced from ~110 MB database files to 15.25 MiB total
+- Pack size: 244 KiB (vs previously 21.42 MiB with database files)
+- Successfully force-pushed cleaned `main` branch to GitHub
+- Updated `.gitignore` with additional patterns to prevent future database backup tracking:
+  - `*.db.backup`
+  - `*.db_backup*`
+  - `*_backup*.db`
+
+**Commands executed:**
+```bash
+# Removed all database files from Git history
+git filter-repo --path-glob '*.db' --invert-paths --force
+
+# Re-added remote and force pushed
+git remote add origin https://github.com/ARobicsek/bible-figurative-language.git
+git push origin main --force
+```
+
+---
+
+## Session 13: Layout Regression Fix & Search Normalization
+
+**Date:** 2026-01-07  
+**Focus:** Critical HTML layout bug + smart quote/apostrophe normalization in search
+
+### Issue 1: Layout Completely Broken ✅
+
+**Problem:** After recent HTML edits, the entire website layout collapsed. Search results appeared ~1,369 pixels below the viewport, effectively invisible to users. Search functionality worked correctly (verified via browser automation), but layout was completely broken.
+
+**Root Cause:** A premature `</div>` closing tag at line 1692 in `biblical_figurative_interface.html` broke sidebar containment. This caused sidebar sections 2-5 (Biblical Text Search, Filter by Book, Figurative Language Types, Text Version) to "escape" the `<aside class="sidebar">` container and become direct children of `<body>`, stacking vertically instead of being contained in the left sidebar.
+
+**Fix:**
+- Removed the premature closing tag
+- All five sidebar sections now properly nested within the sidebar container
+- File: `web/biblical_figurative_interface.html:1692`
+
+**Verification:**
+- ✅ Two-column layout restored (sidebar left, results right)
+- ✅ Results visible immediately in viewport (0px offset)
+- ✅ Search functionality confirmed working (34 results for "air", 6 for exact `"air"`)
+
+---
+
+### Issue 2: Smart Apostrophe Search Failing ✅
+
+**Problem:** User reported that searching for "brother's" in the Vehicle field returned 0 results, even though Genesis 4:9 contains "brother's keeper" as a vehicle annotation.
+
+**Diagnosis:** Browser testing revealed the issue was **encoding-dependent**:
+- Search with **straight apostrophe** `'` (U+0027): ✅ 2 results (Genesis 4:9, Leviticus 18:16)
+- Search with **smart apostrophe** `'` (U+2019): ❌ 0 results
+
+When users copy-paste from word processors or use smart keyboards, they get smart apostrophes which don't match the straight apostrophes in the normalized database.
+
+**Root Cause:** The `parse_search_terms()` function in `api_server.py` (lines 168-194) normalized the database content but NOT the user's search input.
+
+**Fix:** Added input normalization to convert smart quotes/apostrophes to straight equivalents before processing:
+
+```python
+# Normalize quotes and apostrophes to straight versions
+normalized = search_str
+normalized = normalized.replace('\u2019', "'")  # Smart apostrophe → straight
+normalized = normalized.replace('\u201c', '"')  # Smart left quote → straight
+normalized = normalized.replace('\u201d', '"')  # Smart right quote → straight
+```
+
+**File:** `web/api_server.py:178-183`
+
+**Verification Results:**
+| Test | Character Type | Results | Status |
+|------|---------------|---------|--------|
+| 1 | Smart apostrophe `brother's` (U+2019) | 2 verses (Gen 4:9 ✓) | ✅ Pass |
+| 2 | Straight apostrophe `brother's` | 2 verses (regression test) | ✅ Pass |
+| 3 | Smart quotes `"air"` (U+201C/U+201D) | 6 verses (exact match) | ✅ Pass |
+
+---
+
+### Outstanding Issue: User Still Experiencing Search Failure ⚠️
+
+**Report:** User provided screenshots showing that despite our fix, searching for "brother's" in the Vehicle field still returns "No verses match your current filters."
+
+**Discrepancy:** 
+- Our automated browser tests PASS (2 results for "brother's")
+- User's manual testing FAILS (0 results)
+- Screenshots show search appears to be in correct field (Vehicle)
+
+**Hypotheses:**
+1. **UI Event Issue:** The search might not be triggering correctly when typed manually (vs programmatically as in our tests)
+2. **Field Confusion:** There may be a UI labeling issue where the field appears to be "Vehicle" but is actually bound to a different metadata field
+3. **Caching:** Browser may be caching old JavaScript/API responses
+4. **Race Condition:** Search might fire before normalization code loads
+
+**Evidence from Screenshots:**
+- Image 1: Shows Genesis 4:9 appearing (search working)
+- Image 2: Shows "No verses match your current filters" with "brother's" visible in field
+
+**Next Steps:**
+1. Debug why manual typing differs from automated test results
+2. Add console logging to verify which field is actually being searched
+3. Verify the `keyup` event handler is correctly attached to Vehicle field
+4. Check if there's a JavaScript error preventing the search from executing
+
+### Files Modified
+- `web/biblical_figurative_interface.html` - Removed premature closing div
+- `web/api_server.py` - Added smart quote/apostrophe normalization
+
+### Commits
+- Layout fix + apostrophe normalization (pending)
+
+---
+
+## Next Session Starting Prompt
+
+```
+The search for "brother's" in the Vehicle field is still failing for the user despite our fix passing automated tests. 
+
+Here's what we know:
+- Automated tests PASS: Searching "brother's" (both smart & straight apostrophes) returns 2 results
+- User's manual test FAILS: Returns "No verses match your current filters"
+- User provided 2 screenshots showing the discrepancy
+
+Please investigate why the automated test succeeds but manual user input fails. Possible areas:
+1. Event handlers - is the 'keyup'/'change' event properly attached to the Vehicle input?
+2. Field binding - verify the input field is actually connected to the vehicle parameter
+3. UI state - check if there are other active filters preventing results
+4. Console errors - look for JavaScript errors that might prevent search execution
+
+Start by examining the event handlers and search triggering logic in biblical_figurative_interface.html.
+```
+
+### Issue 3: Quoted Search Logic for JSON Arrays Fixed ✅
+
+**Problem:** User reported that searching for the exact quoted phrase `"brother's"` (to force exact match) in the Vehicle field failed to return results like "brother's keeper".
+
+**Diagnosis:**
+The backend logic for "whole word matching" (invoked when a search term is wrapped in quotes) was too restrictive for JSON array fields.
+- The previous logic checked if the field matched `["brother's", ...]` (start of array), `..., "brother's", ...]` (middle), or `..., "brother's"]` (end).
+- It failed for cases like `["brother's keeper"]` because `"brother's"` is only *part* of the array element string, but the user (and common sense) considers it a "whole word" match within that phrase.
+
+**Fix:** Updated `build_whole_word_condition` in `api_server.py` to support granular word-boundary matching *inside* JSON strings.
+The new SQL pattern checks:
+1. Exact element match: `["term"]`
+2. Start of element: `["term ...`
+3. Middle of element: `... "term ...`
+4. End of element: `... term"]`
+5. Generic whole word boundary: `... term ...` (surrounded by spaces)
+
+**File:** `web/api_server.py:227-242`
+
+**Verification:**
+- Validated that searching for `"brother's"` (quotes included) now correctly returns the 2 verses with "brother's" in the Vehicle field (Genesis 4:9, Leviticus 18:16).
+- Confirmed independent functionality of unquoted searches.
+
+### Commits
+- Enhanced whole-word search logic for JSON arrays to support partial-string word matches.

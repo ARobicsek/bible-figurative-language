@@ -165,21 +165,98 @@ class SearchProcessor:
         conditions = []
         params = []
 
-        def parse_search_terms(search_str: str) -> List[str]:
-            """Parse semicolon-separated search terms and trim whitespace"""
+        def parse_search_terms(search_str: str) -> List[tuple]:
+            """Parse semicolon-separated search terms, detecting quoted terms for whole-word matching
+            
+            Returns list of tuples: (term, is_whole_word)
+            - Quoted terms like "air" -> ('air', True) for whole-word matching
+            - Unquoted terms like wind -> ('wind', False) for substring matching
+            """
             if not search_str:
                 return []
-            # Strip whitespace and filter out empty strings
-            return [term.strip() for term in search_str.split(';') if term.strip()]
+            
+            # Normalize quotes and apostrophes to straight versions
+            # This ensures search works regardless of how users type/paste
+            normalized = search_str
+            normalized = normalized.replace('\u2019', "'")  # Smart apostrophe/right quote (U+2019) → straight
+            normalized = normalized.replace('\u201c', '"')  # Smart left quote (U+201C) → straight
+            normalized = normalized.replace('\u201d', '"')  # Smart right quote (U+201D) → straight
+            
+            terms = []
+            for term in normalized.split(';'):  # Use normalized string
+                term = term.strip()
+                if not term:
+                    continue
+                
+                # Check if term is wrapped in quotes
+                if (term.startswith('"') and term.endswith('"')) or (term.startswith("'") and term.endswith("'")):
+                    # Quoted term - whole word matching
+                    clean_term = term[1:-1].strip()  # Remove quotes
+                    if clean_term:
+                        terms.append((clean_term, True))
+                else:
+                    # Unquoted term - substring matching
+                    terms.append((term, False))
+            
+            return terms
+        
+        def build_whole_word_condition(field_name: str, term: str) -> tuple:
+            """Build SQL condition for whole-word matching in JSON array fields
+            
+            Since fields like vehicle are JSON arrays stored as strings like:
+            ["white hair", "physical characteristic"]
+            
+            We need to match the term as a complete element in the array or as a complete word.
+            This handles: JSON delimiters, spaces, and word boundaries.
+            """
+            # Build multiple LIKE conditions to catch different positions:
+            # 1. Exact match of entire field
+            # 2. Match as a JSON array element: "term"
+            # 3. Match at start of JSON array: ["term"
+            # 4. Match in middle of JSON array: , "term"
+            # 5. Match as whole word with spaces (for non-JSON text): " term "
+            conditions_sql = f"""(
+                {field_name} = ? OR
+                {field_name} LIKE ? OR
+                {field_name} LIKE ? OR
+                {field_name} LIKE ? OR
+                {field_name} LIKE ? OR
+                {field_name} LIKE ? OR
+                {field_name} LIKE ? OR
+                {field_name} LIKE ? OR
+                {field_name} LIKE ?
+            )"""
+            
+            # Corresponding parameter values
+            params_list = [
+                term,                      # Exact match of entire field
+                f'"{term}"',              # Quoted in JSON: "term"
+                f'["{term}"%',            # Start of array: ["term"
+                f'%, "{term}"%',          # Middle of array: , "term"
+                f'% {term} %',            # Whole word with spaces (Generic text / Middle of JSON string)
+                f'["{term} %',            # Start of array, start of word: ["term ...
+                f'%, "{term} %',          # Middle of array, start of word: , "term ...
+                f'% {term}"%',            # End of word, before quote: ... term"
+                f'%"{term}"%'             # Exact term inside quotes anywhere (fallback)
+            ]
+            
+            return conditions_sql, params_list
 
         # Handle target field with multi-term OR logic
         if target and target.strip():
             target_terms = parse_search_terms(target)
             if target_terms:
                 target_conditions = []
-                for term in target_terms:
-                    target_conditions.append("fl.target LIKE ?")
-                    params.append(f"%{term}%")
+                for term, is_whole_word in target_terms:
+                    if is_whole_word:
+                        # Whole-word matching
+                        word_cond, word_params = build_whole_word_condition("fl.target", term)
+                        target_conditions.append(word_cond)
+                        params.extend(word_params)
+                    else:
+                        # Substring matching
+                        target_conditions.append("fl.target LIKE ?")
+                        params.append(f"%{term}%")
                 if target_conditions:
                     conditions.append(f"({' OR '.join(target_conditions)})")
 
@@ -188,9 +265,16 @@ class SearchProcessor:
             vehicle_terms = parse_search_terms(vehicle)
             if vehicle_terms:
                 vehicle_conditions = []
-                for term in vehicle_terms:
-                    vehicle_conditions.append("fl.vehicle LIKE ?")
-                    params.append(f"%{term}%")
+                for term, is_whole_word in vehicle_terms:
+                    if is_whole_word:
+                        # Whole-word matching
+                        word_cond, word_params = build_whole_word_condition("fl.vehicle", term)
+                        vehicle_conditions.append(word_cond)
+                        params.extend(word_params)
+                    else:
+                        # Substring matching
+                        vehicle_conditions.append("fl.vehicle LIKE ?")
+                        params.append(f"%{term}%")
                 if vehicle_conditions:
                     conditions.append(f"({' OR '.join(vehicle_conditions)})")
 
@@ -199,9 +283,16 @@ class SearchProcessor:
             ground_terms = parse_search_terms(ground)
             if ground_terms:
                 ground_conditions = []
-                for term in ground_terms:
-                    ground_conditions.append("fl.ground LIKE ?")
-                    params.append(f"%{term}%")
+                for term, is_whole_word in ground_terms:
+                    if is_whole_word:
+                        # Whole-word matching
+                        word_cond, word_params = build_whole_word_condition("fl.ground", term)
+                        ground_conditions.append(word_cond)
+                        params.extend(word_params)
+                    else:
+                        # Substring matching
+                        ground_conditions.append("fl.ground LIKE ?")
+                        params.append(f"%{term}%")
                 if ground_conditions:
                     conditions.append(f"({' OR '.join(ground_conditions)})")
 
@@ -210,9 +301,16 @@ class SearchProcessor:
             posture_terms = parse_search_terms(posture)
             if posture_terms:
                 posture_conditions = []
-                for term in posture_terms:
-                    posture_conditions.append("fl.posture LIKE ?")
-                    params.append(f"%{term}%")
+                for term, is_whole_word in posture_terms:
+                    if is_whole_word:
+                        # Whole-word matching
+                        word_cond, word_params = build_whole_word_condition("fl.posture", term)
+                        posture_conditions.append(word_cond)
+                        params.extend(word_params)
+                    else:
+                        # Substring matching
+                        posture_conditions.append("fl.posture LIKE ?")
+                        params.append(f"%{term}%")
                 if posture_conditions:
                     conditions.append(f"({' OR '.join(posture_conditions)})")
 
