@@ -1758,6 +1758,15 @@ English:
 
 Analyze EACH of the {len(verses_data)} verses above for figurative language.
 
+CRITICAL TEXT EXTRACTION REQUIREMENT:
+When you identify figurative language, the "hebrew_text" and "english_text" fields MUST contain EXACT VERBATIM TEXT copied directly from the source verses above. Do NOT:
+- Paraphrase or summarize the text
+- Use ellipses (...)
+- Add or remove words
+- Change word order
+- "Freestyle" or describe the figurative language
+Copy the EXACT words from the verse that contain the figurative expression. This is essential for downstream text highlighting to work correctly.
+
 CRITICAL MULTI-INSTANCE DETECTION REQUIREMENTS:
 
 For EACH verse, you MUST explicitly determine and report:
@@ -1791,8 +1800,8 @@ For each detected instance, provide:
 6. **hyperbole**: "yes" or "no"
 7. **metonymy**: "yes" or "no"
 8. **other**: "yes" or "no"
-9. **hebrew_text**: The Hebrew text of the figurative expression
-10. **english_text**: The English translation of the figurative expression
+9. **hebrew_text**: EXACT VERBATIM TEXT copied directly from the Hebrew source above - do NOT paraphrase, summarize, or use ellipses (...). Copy the exact Hebrew words that contain the figurative expression.
+10. **english_text**: EXACT VERBATIM TEXT copied directly from the English source above - do NOT paraphrase, summarize, or use ellipses (...). Copy the exact English words that contain the figurative expression.
 11. **target**: JSON array with 3 levels - [specific, category, domain]
 12. **vehicle**: JSON array with 3 levels - [specific, category, domain]
 13. **ground**: JSON array with 3 levels - [specific, category, domain]
@@ -1832,8 +1841,8 @@ Example structure showing ZERO, ONE, and MULTIPLE instances:
         "hyperbole": "no",
         "metonymy": "no",
         "other": "no",
-        "hebrew_text": "...",
-        "english_text": "...",
+        "hebrew_text": "יְהוָה רֹעִי לֹא אֶחְסָר",
+        "english_text": "The LORD is my shepherd; I shall not want",
         "target": ["specific", "category", "domain"],
         "vehicle": ["specific", "category", "domain"],
         "ground": ["specific", "category", "domain"],
@@ -1857,8 +1866,8 @@ Example structure showing ZERO, ONE, and MULTIPLE instances:
         "hyperbole": "no",
         "metonymy": "no",
         "other": "no",
-        "hebrew_text": "...",
-        "english_text": "...",
+        "hebrew_text": "חָכְמוֹת בַּחוּץ תָּרֹנָּה",
+        "english_text": "Wisdom cries aloud in the street",
         "target": ["specific", "category", "domain"],
         "vehicle": ["specific", "category", "domain"],
         "ground": ["specific", "category", "domain"],
@@ -1875,8 +1884,8 @@ Example structure showing ZERO, ONE, and MULTIPLE instances:
         "hyperbole": "no",
         "metonymy": "no",
         "other": "no",
-        "hebrew_text": "...",
-        "english_text": "...",
+        "hebrew_text": "נְתִיבוֹת לִבָּם",
+        "english_text": "the paths of their heart",
         "target": ["specific", "category", "domain"],
         "vehicle": ["specific", "category", "domain"],
         "ground": ["specific", "category", "domain"],
@@ -1888,7 +1897,9 @@ Example structure showing ZERO, ONE, and MULTIPLE instances:
   }}
 ]
 
-IMPORTANT: Each verse's "deliberation" field should contain ONLY the analysis for that specific verse, not for other verses.
+IMPORTANT:
+- Each verse's "deliberation" field should contain ONLY the analysis for that specific verse, not for other verses.
+- The "hebrew_text" and "english_text" values shown above are examples of EXACT VERBATIM text copied from verses. Always copy exact text - never paraphrase or use "..." placeholders.
 """
 
     # Call GPT-5.1 MEDIUM
