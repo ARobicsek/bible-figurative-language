@@ -675,8 +675,18 @@
         }
 
         /* Prevent tooltip clipping in sidebar */
-        .metadata-search .tooltiptext {
+        .metadata-search .tooltip .tooltiptext {
             z-index: 1000;
+            bottom: auto;
+            top: 135%;
+            /* Position below */
+        }
+
+        .metadata-search .tooltip .tooltiptext::after {
+            top: auto;
+            bottom: 100%;
+            /* Arrow on top of tooltip */
+            border-color: transparent transparent var(--color-primary) transparent;
         }
 
         /* Accordion Styles */
