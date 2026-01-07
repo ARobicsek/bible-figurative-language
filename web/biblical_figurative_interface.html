@@ -1559,10 +1559,23 @@
                     multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
                 <div class="metadata-search"
                     style="margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
-                    <input type="text" id="target-search" placeholder="Target">
-                    <input type="text" id="vehicle-search" placeholder="Vehicle">
-                    <input type="text" id="ground-search" placeholder="Ground">
-                    <input type="text" id="posture-search" placeholder="Posture">
+                    <div class="tooltip" style="display: block;">
+                        <input type="text" id="target-search" placeholder="Target">
+                        <span class="tooltiptext">What or who the figurative speech is about</span>
+                    </div>
+                    <div class="tooltip" style="display: block;">
+                        <input type="text" id="vehicle-search" placeholder="Vehicle">
+                        <span class="tooltiptext">What the target is being likened to</span>
+                    </div>
+                    <div class="tooltip" style="display: block;">
+                        <input type="text" id="ground-search" placeholder="Ground">
+                        <span class="tooltiptext">What quality of the target is being illuminated by the figurative
+                            speech</span>
+                    </div>
+                    <div class="tooltip" style="display: block;">
+                        <input type="text" id="posture-search" placeholder="Posture">
+                        <span class="tooltiptext">Purpose of the speech; emotional valence</span>
+                    </div>
                 </div>
             </section>
         </aside>
