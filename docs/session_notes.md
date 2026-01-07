@@ -1012,3 +1012,32 @@ Addressed specific user feedback to polish the UI, focusing on consistency, spac
 
 ### Next Steps Prompt
 Use the prompt provided in the task notification to start the next session.
+
+
+## Session 12: UI/UX Refinements
+
+**Date:** 2026-01-07
+
+### Summary
+Addressed specific user feedback regarding header spacing, sidebar naming conventions, font consistency, mobile usability for tooltips, and modal interaction logic. Implemented a robust global tooltip solution to solve clipping issues.
+
+### Completed Tasks
+1.  **Header Spacing:**
+    -   Reduced margins for `.header h1` and `.header p` to 0.
+2.  **Renaming & Fonts:**
+    -   Renamed "Filter by Text Scope" -> "Filter by Text".
+    -   Standardized font for "Search for Figurative Language".
+3.  **Default Settings:**
+    -   "Figurative Language Types" now defaults to ALL (including "Not Figurative").
+4.  **Global Tooltips:**
+    -   Replaced CSS-relative tooltips with a `.global-tooltip` fixed-position element appended to the body. This solves the clipping issue in the sidebar (overflow hidden).
+    -   Implemented JS logic to position the global tooltip dynamically on hover or click (mobile support).
+5.  **Modal Logic:**
+    -   Clicking a verse header toggles the detail panel.
+    -   Clicking a *highlighted figurative phrase* that is already open in the panel also toggles (closes) the panel.
+
+### Code Changes
+-   **web/biblical_figurative_interface.html**:
+    -   Added `#global-tooltip` and JS positioning logic.
+    -   Updated default state for filters.
+    -   Enhanced click listeners for annotations to handle toggle-close.

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reproduction Script V3</title>
+</head>
+
+<body>
+    <h1>Reproduction Script V3</h1>
+    <div id="results">Running tests...</div>
+
+    <script>
+        class TextHighlighter {
+            static buildMap(sourceText) {
+                let cleanText = '';
+                const map = [];
+                let i = 0;
+                while (i < sourceText.length) {
+                    const char = sourceText[i];
+                    if (char === '<') {
+                        const tagMatch = sourceText.substring(i).match(/^<[^>]+>/);
+                        if (tagMatch) { i += tagMatch[0].length; continue; }
+                    }
+                    if (char === '&') {
+                        const entityMatch = sourceText.substring(i).match(/^&([a-zA-Z0-9#]+);/);
+                        if (entityMatch) { i += entityMatch[0].length; cleanText += ' '; map.push(i); continue; }
+                    }
+                    map.push(i);
+                    cleanText += char;
+                    i++;
+                }
+                return { text: cleanText, map };
+            }
+
+            static buildNormalizationMap(plainText, language) {
+                let normalizedText = '';
+                const map = [];
+                for (let i = 0; i < plainText.length; i++) {
+                    const char = plainText[i];
+                    if (language === 'hebrew') {
+                        map.push(i); normalizedText += char; // Simplified for test
+                    } else {
+                        if (/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/.test(char)) continue;
+                        if (/\s/.test(char)) {
+                            if (normalizedText.endsWith(' ')) continue;
+                            map.push(i); normalizedText += ' '; continue;
+                        }
+                        map.push(i); normalizedText += char.toLowerCase();
+                    }
+                }
+                return { text: normalizedText, map };
+            }
+
+            // CURRENT IMPLEMENTATION (Suspected Flaw: Removes ALL parentheses)
+            static cleanFigurativeText(text, language) {
+                if (!text) return '';
+                if (language === 'hebrew') return text;
+                let coreText = text.replace(/\s*\([^)]*\)/g, ''); // Removes (God)
+                return coreText.replace(/\s+/g, ' ').trim();
+            }
+
+            static findRanges(html, annotations, searchTerm, language) {
+                const results = [];
+                const plainObj = this.buildMap(html);
+                const normObj = this.buildNormalizationMap(plainObj.text, language);
+
+                annotations.forEach(ann => {
+                    const phrase = language === 'hebrew' ? ann.figurative_text_in_hebrew : ann.figurative_text;
+                    if (!phrase) return;
+
+                    const cleanPhrase = this.cleanFigurativeText(phrase, language);
+                    let normPhrase = cleanPhrase.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '');
+
+                    if (!normPhrase) return;
+
+                    // Wildcard logic (Current)
+                    const hasWildcard = cleanPhrase.match(/…|\.\.\.|\[.*?\]/);
+                    if (language !== 'hebrew' && hasWildcard) {
+                        const parts = cleanPhrase.split(/…|\.\.\.|\[.*?\]/).map(p =>
+                            p.toLowerCase().replace(/[.,;:!?()[\]{}<>"'\u2018\u2019\u201C\u201D\-]/g, '').trim()
+                        ).filter(p => p.length > 0);
+
+                        // ... Same search logic as before ...
+                        if (parts.length > 0) {
+                            let searchPos = 0;
+                            while (true) {
+                                const startIdx = normObj.text.indexOf(parts[0], searchPos);
+                                if (startIdx === -1) break;
+                                let currentIdx = startIdx + parts[0].length;
+                                let allFound = true;
+                                let matchEnd = currentIdx;
+                                for (let i = 1; i < parts.length; i++) {
+                                    const nextIdx = normObj.text.indexOf(parts[i], currentIdx);
+                                    if (nextIdx === -1) { allFound = false; break; }
+                                    matchEnd = nextIdx + parts[i].length;
+                                    currentIdx = matchEnd;
+                                }
+                                if (allFound) {
+                                    results.push({ startNorm: startIdx, endNorm: matchEnd, type: 'figurative' });
+                                }
+                                searchPos = startIdx + 1;
+                            }
+                            return;
+                        }
+                    }
+
+                    // Strict Match
+                    let pos = 0;
+                    while (true) {
+                        const idx = normObj.text.indexOf(normPhrase, pos);
+                        if (idx === -1) break;
+                        results.push({ startNorm: idx, endNorm: idx + normPhrase.length, type: 'figurative' });
+                        pos = idx + 1;
+                    }
+                });
+                return { results };
+            }
+        }
+
+        // --- TEST CASES ---
+        const testCases = [
+            {
+                name: "Isaiah 40:14 - Parentheses (God)",
+                html: "With whom did He consult",
+                language: "english",
+                annotations: [{ figurative_text: "Whom did (God) consult" }]
+                // EXPECTATION: cleanFigurativeText removes (God) -> "Whom did consult"
+                // Norm Search: "whom did consult"
+                // Verse Norm: "with whom did he consult"
+                // NO MATCH "whom did consult" because of "he"
+            }
+        ];
+
+        let output = "";
+        testCases.forEach(test => {
+            output += `<h3>${test.name}</h3>`;
+            const res = TextHighlighter.findRanges(test.html, test.annotations, null, test.language);
+            if (res.results.length > 0) output += "<p style='color:green'>MATCH FOUND</p>";
+            else output += "<p style='color:red'>NO MATCH</p>";
+        });
+        document.getElementById('results').innerHTML = output;
+
+    </script>
+</body>
+
+</html>

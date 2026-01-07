@@ -23,7 +23,9 @@
       "Bash(git lfs:*)",
       "Bash(git reset:*)",
       "Bash(cat:*)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nConfigure Google Drive database download for deployment\n\n- Add download_database.py script to fetch DB from Google Drive on build\n- Update render.yaml to run download script during deployment\n- Update .gitignore to exclude all .db files (downloaded on-demand)\n- Remove old database placeholders from git tracking\n- Add gdown dependency for reliable Google Drive downloads\n\nThis eliminates the 105MB database from git repository:\n- Faster git operations\n- No GitHub file size limit issues\n- No Git LFS costs\n- Database auto-downloaded during Render deployment\nEOF\n)\")",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

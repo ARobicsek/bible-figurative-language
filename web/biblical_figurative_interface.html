@@ -104,7 +104,7 @@
             font-family: var(--font-sans);
             font-size: 2.2rem;
             font-weight: 700;
-            margin-bottom: 0.1rem;
+            margin-bottom: 0;
             letter-spacing: -0.5px;
         }
 
@@ -116,7 +116,7 @@
         .header p {
             opacity: 0.85;
             font-size: 1.4rem;
-            margin-bottom: 0.1rem;
+            margin-bottom: 0;
             font-family: var(--font-serif);
         }
 
@@ -124,7 +124,7 @@
             font-family: var(--font-hebrew);
             font-size: 1.3rem !important;
             opacity: 0.75;
-            margin-top: 0.1rem;
+            margin-top: 0;
         }
 
         .header-attribution {
@@ -228,6 +228,7 @@
             line-height: 1.8;
         }
 
+        /* Global Tooltip */
         /* Tooltip styles */
         .tooltip {
             position: relative;
@@ -639,9 +640,38 @@
             z-index: 5;
         }
 
-        .help-icon:hover {
+        .help-icon:hover,
+        .help-icon.active {
             background: var(--color-accent);
             color: white;
+        }
+
+        /* Global Tooltip */
+        #global-tooltip {
+            position: fixed;
+            background: var(--color-primary);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            z-index: 2000;
+            /* Higher than other tooltips */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            pointer-events: none;
+            /* Allow clicks to pass through when hidden */
+        }
+
+        #global-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 6px solid transparent;
+            border-top-color: var(--color-primary);
         }
 
         /* Prevent tooltip clipping in sidebar */
@@ -707,6 +737,10 @@
             margin: 0;
             padding: 0;
             /* Ensure no padding when collapsed */
+        }
+
+        .accordion-content.visible-overflow {
+            overflow: visible;
         }
 
         .verse-header:hover {
@@ -1629,8 +1663,7 @@
             <!-- 1. Search for Figurative Language -->
             <section class="figurative-search-section">
                 <div class="sidebar-section-header" onclick="toggleAccordion(this)">
-                    <h3 class="tooltip"
-                        style="color: var(--color-primary); margin: 0; font-size: 1rem; border-bottom: none; padding-bottom: 0; width: auto; text-transform: none;">
+                    <h3 class="tooltip" style="width: auto;">
                         Search for Figurative Language
                         <span class="tooltiptext">Search by rhetorical fields (Target, Vehicle, etc.)</span>
                     </h3>
@@ -1648,30 +1681,34 @@
                         <div class="input-wrapper">
                             <input type="text" id="target-search" placeholder="Target"
                                 title="Target: The subject being described (e.g., &quot;God&quot;, &quot;Life&quot;).">
-                            <div class="help-icon"
-                                title="Target: The subject being described (e.g., &quot;God&quot;, &quot;Life&quot;).">?
+                            <div class="help-icon tooltip">?
+                                <span class="tooltiptext">Target: The subject being described (e.g., "God",
+                                    "Life").</span>
                             </div>
                         </div>
                         <div class="input-wrapper">
                             <input type="text" id="vehicle-search" placeholder="Vehicle"
                                 title="Vehicle: The image used for description (e.g., &quot;Rock&quot;, &quot;Journey&quot;).">
-                            <div class="help-icon"
-                                title="Vehicle: The image used for description (e.g., &quot;Rock&quot;, &quot;Journey&quot;).">
-                                ?</div>
+                            <div class="help-icon tooltip">?
+                                <span class="tooltiptext">Vehicle: The image used for description (e.g., "Rock",
+                                    "Journey").</span>
+                            </div>
                         </div>
                         <div class="input-wrapper">
                             <input type="text" id="ground-search" placeholder="Ground"
                                 title="Ground: The common quality or meaning (e.g., &quot;Strength&quot;, &quot;Difficulty&quot;).">
-                            <div class="help-icon"
-                                title="Ground: The common quality or meaning (e.g., &quot;Strength&quot;, &quot;Difficulty&quot;).">
-                                ?</div>
+                            <div class="help-icon tooltip">?
+                                <span class="tooltiptext">Ground: The common quality or meaning (e.g., "Strength",
+                                    "Difficulty").</span>
+                            </div>
                         </div>
                         <div class="input-wrapper">
                             <input type="text" id="posture-search" placeholder="Posture"
                                 title="Posture: The rhetorical intent or emotion (e.g., &quot;Praise&quot;, &quot;Complaint&quot;).">
-                            <div class="help-icon"
-                                title="Posture: The rhetorical intent or emotion (e.g., &quot;Praise&quot;, &quot;Complaint&quot;).">
-                                ?</div>
+                            <div class="help-icon tooltip">?
+                                <span class="tooltiptext">Posture: The rhetorical intent or emotion (e.g., "Praise",
+                                    "Complaint").</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1744,7 +1781,7 @@
             <!-- 3. Filter by Text Scope -->
             <section class="book-selection section-collapsed">
                 <div class="sidebar-section-header" onclick="toggleAccordion(this)">
-                    <h3>Filter by Text Scope</h3>
+                    <h3>Filter by Text</h3>
                     <div class="accordion-icon"></div>
                 </div>
                 <div class="accordion-content collapsed">
@@ -3544,6 +3581,14 @@
         }
 
         function showVerseDetails(reference, verseId) {
+            // Check if panel is already open for THIS verse - if so, close it
+            if (elements.detailPanel.classList.contains('active') &&
+                elements.selectedVerse.textContent === reference &&
+                !elements.detailPanel.classList.contains('annotation-details')) {
+                closeDetailPanel();
+                return;
+            }
+
             const verse = appState.verses.find(v => v.id === verseId);
             if (!verse) return;
 
