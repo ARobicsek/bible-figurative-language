@@ -271,30 +271,6 @@
             bottom: 120%;
         }
 
-        /* Metadata search tooltips - position below to stay within sidebar */
-        .metadata-search .tooltip .tooltiptext {
-            width: 200px;
-            left: 0;
-            right: auto;
-            bottom: auto;
-            top: 100%;
-            transform: none;
-            margin-top: 8px;
-        }
-
-        .metadata-search .tooltip .tooltiptext::after {
-            top: -12px;
-            left: 20px;
-            margin-top: 0;
-            margin-left: 0;
-            border-color: transparent transparent var(--color-primary) transparent;
-        }
-
-        .metadata-search .tooltip:hover .tooltiptext {
-            bottom: auto;
-            top: 100%;
-        }
-
         /* Glass Sidebar */
         .sidebar {
             background: var(--glass-bg);
@@ -1583,23 +1559,14 @@
                     multiple search terms, separate with semicolons (e.g., "God;Divine")</div>
                 <div class="metadata-search"
                     style="margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
-                    <div class="tooltip" style="display: block;">
-                        <input type="text" id="target-search" placeholder="Target">
-                        <span class="tooltiptext">What or who the figurative speech is about</span>
-                    </div>
-                    <div class="tooltip" style="display: block;">
-                        <input type="text" id="vehicle-search" placeholder="Vehicle">
-                        <span class="tooltiptext">What the target is being likened to</span>
-                    </div>
-                    <div class="tooltip" style="display: block;">
-                        <input type="text" id="ground-search" placeholder="Ground">
-                        <span class="tooltiptext">What quality of the target is being illuminated by the figurative
-                            speech</span>
-                    </div>
-                    <div class="tooltip" style="display: block;">
-                        <input type="text" id="posture-search" placeholder="Posture">
-                        <span class="tooltiptext">Purpose of the speech; emotional valence</span>
-                    </div>
+                    <input type="text" id="target-search" placeholder="Target"
+                        title="What or who the figurative speech is about">
+                    <input type="text" id="vehicle-search" placeholder="Vehicle"
+                        title="What the target is being likened to">
+                    <input type="text" id="ground-search" placeholder="Ground"
+                        title="What quality of the target is being illuminated by the figurative speech">
+                    <input type="text" id="posture-search" placeholder="Posture"
+                        title="Purpose of the speech; emotional valence">
                 </div>
             </section>
         </aside>
