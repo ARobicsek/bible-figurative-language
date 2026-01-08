@@ -1610,6 +1610,44 @@
         .verse-text-columns {
             display: none;
         }
+
+        /* Mobile Tooltip Styles */
+        .mobile-tooltip {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 320px;
+            background: rgba(43, 57, 79, 0.95);
+            /* Dark primary color */
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            z-index: 2000;
+            /* Above everything */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            pointer-events: none;
+            /* Allow clicks through when hidden */
+        }
+
+        .mobile-tooltip.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .mobile-tooltip-content {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -2047,6 +2085,10 @@
                     <span class="model-badge" id="model-used"></span>
                 </div>
             </div>
+        </div>
+        <!-- Mobile Tooltip Container -->
+        <div id="mobile-tooltip-container" class="mobile-tooltip">
+            <div class="mobile-tooltip-content"></div>
         </div>
     </div>
 
@@ -3877,6 +3919,53 @@
                 closeDetailPanel();
             }
         });
+    </script>
+
+    <script>
+        // Mobile Tooltip Logic
+        function initMobileTooltips() {
+            const helpIcons = document.querySelectorAll('.help-icon');
+            const mobileTooltip = document.getElementById('mobile-tooltip-container');
+            const mobileTooltipContent = document.querySelector('.mobile-tooltip-content');
+
+            if (!mobileTooltip || !mobileTooltipContent) return;
+
+            helpIcons.forEach(icon => {
+                icon.addEventListener('click', (e) => {
+                    // Prevent default behavior
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const title = icon.getAttribute('title');
+                    if (title) {
+                        mobileTooltipContent.textContent = title;
+                        mobileTooltip.classList.add('active');
+
+                        // Auto hide after 5 seconds
+                        if (window.tooltipTimeout) clearTimeout(window.tooltipTimeout);
+                        window.tooltipTimeout = setTimeout(() => {
+                            mobileTooltip.classList.remove('active');
+                        }, 5000);
+                    }
+                });
+            });
+
+            // Global click to close
+            document.addEventListener('click', (e) => {
+                if (mobileTooltip && mobileTooltip.classList.contains('active')) {
+                    if (!mobileTooltip.contains(e.target)) {
+                        mobileTooltip.classList.remove('active');
+                    }
+                }
+            });
+        }
+
+        // Initialize mobile tooltips
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initMobileTooltips);
+        } else {
+            initMobileTooltips();
+        }
     </script>
 </body>
 
