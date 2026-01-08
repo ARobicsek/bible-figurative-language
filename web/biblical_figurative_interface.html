@@ -1693,32 +1693,32 @@
                         style="margin-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
                         <div class="input-wrapper">
                             <input type="text" id="target-search" placeholder="Target"
-                                title="Target: The subject being described (e.g., &quot;God&quot;, &quot;Life&quot;).">
+                                title="Target: what or who the figurative speech is about">
                             <div class="help-icon"
-                                title="Target: The subject being described (e.g., 'God', 'Life'). Wrap terms in quotes for whole-word matching: 'king' vs king">
+                                title="Target: what or who the figurative speech is about. Wrap terms in quotes for whole-word matching: 'king' vs king">
                                 ?</div>
                         </div>
                         <div class="input-wrapper">
                             <input type="text" id="vehicle-search" placeholder="Vehicle"
-                                title="Vehicle: The image used for description (e.g., &quot;Rock&quot;, &quot;Journey&quot;).">
+                                title="Vehicle: what the target is being likened to">
                             <div class="help-icon"
-                                title="Vehicle: The image used for description (e.g., 'Rock', 'Journey'). Wrap terms in quotes for whole-word matching: 'air' won't match 'hair'">
+                                title="Vehicle: what the target is being likened to. Wrap terms in quotes for whole-word matching: 'air' won't match 'hair'">
                                 ?
                             </div>
                         </div>
                         <div class="input-wrapper">
                             <input type="text" id="ground-search" placeholder="Ground"
-                                title="Ground: The common quality or meaning (e.g., &quot;Strength&quot;, &quot;Difficulty&quot;).">
+                                title="Ground: what quality of the target is being illuminated by the figurative speech">
                             <div class="help-icon"
-                                title="Ground: The common quality or meaning (e.g., 'Strength', 'Difficulty'). Wrap terms in quotes for whole-word matching.">
+                                title="Ground: what quality of the target is being illuminated by the figurative speech. Wrap terms in quotes for whole-word matching.">
                                 ?
                             </div>
                         </div>
                         <div class="input-wrapper">
                             <input type="text" id="posture-search" placeholder="Posture"
-                                title="Posture: The rhetorical intent or emotion (e.g., &quot;Praise&quot;, &quot;Complaint&quot;).">
+                                title="Posture: purpose of the speech; emotional valence">
                             <div class="help-icon"
-                                title="Posture: The rhetorical intent or emotion (e.g., 'Praise', 'Complaint'). Wrap terms in quotes for whole-word matching.">
+                                title="Posture: purpose of the speech; emotional valence. Wrap terms in quotes for whole-word matching.">
                                 ?
                             </div>
                         </div>
@@ -3938,14 +3938,25 @@
 
                     const title = icon.getAttribute('title');
                     if (title) {
-                        mobileTooltipContent.textContent = title;
-                        mobileTooltip.classList.add('active');
+                        // Check if specific tooltip is already open. Only close if it's the SAME text.
+                        // If it's different text, switch to it (don't close).
+                        const isActive = mobileTooltip.classList.contains('active');
+                        const isSameText = mobileTooltipContent.textContent === title;
 
-                        // Auto hide after 5 seconds
-                        if (window.tooltipTimeout) clearTimeout(window.tooltipTimeout);
-                        window.tooltipTimeout = setTimeout(() => {
+                        if (isActive && isSameText) {
+                            // Close if clicking the same icon again
                             mobileTooltip.classList.remove('active');
-                        }, 5000);
+                        } else {
+                            // Open new tooltip
+                            mobileTooltipContent.textContent = title;
+                            mobileTooltip.classList.add('active');
+
+                            // Auto hide after 8 seconds (increased for better readability)
+                            if (window.tooltipTimeout) clearTimeout(window.tooltipTimeout);
+                            window.tooltipTimeout = setTimeout(() => {
+                                mobileTooltip.classList.remove('active');
+                            }, 8000);
+                        }
                     }
                 });
             });
