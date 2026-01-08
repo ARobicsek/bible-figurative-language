@@ -29,6 +29,7 @@ ENV/
 
 # Cache
 cache_*/
+private/.sefaria_cache/
 
 # Temporary
 tmp/
