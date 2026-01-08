@@ -2,11 +2,27 @@
 
 This guide provides instructions for merging chapter databases into a complete book database, and then merging that book into the main `Biblical_fig_language.db`.
 
+## Quick Reference Workflow
+
+```
+1. Process book with interactive_parallel_processor.py
+2. Check for failed chapters → retry if needed
+3. Verify ALL chapters present (completeness check)
+4. Merge chapter DBs → Book.db in database/
+5. Verify Book.db integrity
+6. Merge Book.db → Biblical_fig_language.db
+7. Verify main database integrity
+```
+
 ## Overview
 
 The pipeline generates separate SQLite databases for different chapter ranges. These must be merged while maintaining **foreign key integrity** between the `verses` and `figurative_language` tables.
 
 **Key constraint:** `figurative_language.verse_id` references `verses.id`
+
+**Output locations:**
+- Individual book databases: `database/{BookName}.db` (keep for reference/backup)
+- Main merged database: `database/Biblical_fig_language.db`
 
 ## Database Schema
 
@@ -24,6 +40,119 @@ figurative_language
 ├── verse_id (INTEGER) ──────────► verses.id
 ├── figurative_language, simile, metaphor, ...
 └── (48 other columns)
+```
+
+---
+
+## Pre-Merge Checklist: Verify Chapter Completeness
+
+**CRITICAL:** Before merging, ensure ALL chapters are present. Missing chapters mean incomplete data!
+
+### Expected Chapter Counts (Sefaria Hebrew Versification)
+
+```python
+EXPECTED_CHAPTERS = {
+    # Torah
+    "Genesis": 50, "Exodus": 40, "Leviticus": 27, "Numbers": 36, "Deuteronomy": 34,
+    # Former Prophets
+    "Joshua": 24, "Judges": 21, "1_Samuel": 31, "2_Samuel": 24, "1_Kings": 22, "2_Kings": 25,
+    # Major Prophets
+    "Isaiah": 66, "Jeremiah": 52, "Ezekiel": 48,
+    # Minor Prophets (The Twelve)
+    "Hosea": 14, "Joel": 4, "Amos": 9, "Obadiah": 1, "Jonah": 4, "Micah": 7,
+    "Nahum": 3, "Habakkuk": 3, "Zephaniah": 3, "Haggai": 2, "Zechariah": 14, "Malachi": 3,
+    # Ketuvim (Writings)
+    "Psalms": 150, "Proverbs": 31, "Job": 42, "Song_of_Songs": 8, "Ruth": 4,
+    "Lamentations": 5, "Ecclesiastes": 12, "Esther": 10, "Daniel": 12,
+    "Ezra": 10, "Nehemiah": 13, "I_Chronicles": 29, "II_Chronicles": 36
+}
+```
+
+### Completeness Check Script
+
+```python
+import sqlite3
+import os
+from collections import defaultdict
+
+def check_completeness(db_files: list, book_name: str, expected_chapters: int, source_dir: str = 'private/'):
+    """
+    Check if all chapters are covered across the database files.
+
+    Returns:
+        tuple: (chapters_found, missing_chapters, coverage_map)
+    """
+    coverage = defaultdict(list)  # chapter -> list of db files containing it
+
+    for db_file in db_files:
+        path = os.path.join(source_dir, db_file)
+        if not os.path.exists(path):
+            print(f"WARNING: {db_file} not found!")
+            continue
+
+        db = sqlite3.connect(path)
+        cursor = db.cursor()
+        cursor.execute('SELECT DISTINCT chapter FROM verses ORDER BY chapter')
+        chapters = [r[0] for r in cursor.fetchall()]
+        db.close()
+
+        for ch in chapters:
+            coverage[ch].append(db_file)
+
+        print(f'{db_file}: chapters {chapters}')
+
+    # Check for missing chapters
+    found = set(coverage.keys())
+    expected = set(range(1, expected_chapters + 1))
+    missing = expected - found
+
+    print(f'\n=== COMPLETENESS CHECK: {book_name} ===')
+    print(f'Expected chapters: 1-{expected_chapters}')
+    print(f'Found chapters: {sorted(found)}')
+
+    if missing:
+        print(f'⚠️  MISSING CHAPTERS: {sorted(missing)}')
+        print(f'\nTo process missing chapters, run:')
+        for ch in sorted(missing):
+            print(f'  python interactive_parallel_processor.py {book_name} {ch}')
+        return False, sorted(missing), coverage
+    else:
+        print(f'✅ ALL {expected_chapters} CHAPTERS PRESENT')
+        return True, [], coverage
+
+# Usage example
+db_files = ['ezekiel_ch1-10.db', 'ezekiel_ch11-24.db', 'ezekiel_ch25-48.db']
+complete, missing, coverage = check_completeness(db_files, 'Ezekiel', 48)
+
+if not complete:
+    print(f'\n❌ Cannot proceed with merge - {len(missing)} chapters missing!')
+```
+
+### Check Failure Manifests
+
+After processing, check the failure manifest for failed chapters:
+
+```python
+import json
+
+def check_failures(manifest_path: str):
+    """Check failure manifest for chapters that need retry."""
+    with open(manifest_path) as f:
+        manifest = json.load(f)
+
+    failed = manifest.get('failed_items', [])
+    if failed:
+        print(f'⚠️  {len(failed)} FAILED CHAPTERS:')
+        for item in failed:
+            print(f"  • {item['book']} {item['chapter']}: {item['reason'][:60]}...")
+            print(f"    Retry: {item['retry_command']}")
+        return False
+    else:
+        print('✅ No failed chapters')
+        return True
+
+# Check most recent failure manifest
+check_failures('output/book_ch1-48_all_v_parallel_YYYYMMDD_HHMM_failures.json')
 ```
 
 ---
@@ -173,9 +302,9 @@ def merge_chapters_to_book(coverage: dict, output_path: str, source_dir: str):
     print(f'\nMerge complete: {total_verses} verses, {total_fl} FL entries')
     return total_verses, total_fl
 
-# Usage
+# Usage - IMPORTANT: Save to database/ directory for backup/reference
 coverage = {1: 'ch1.db', 2: 'ch1-10.db', ...}
-merge_chapters_to_book(coverage, 'Book.db', 'private/')
+merge_chapters_to_book(coverage, 'database/Ezekiel.db', 'private/')  # Keep individual book DBs!
 ```
 
 ### Step 4: Verify the Merge
@@ -225,7 +354,7 @@ def verify_book_database(db_path: str):
 
     return True
 
-verify_book_database('Book.db')
+verify_book_database('database/Ezekiel.db')  # Verify the book database in database/
 ```
 
 ---
@@ -549,9 +678,38 @@ The main database may have ID gaps due to deletions. The merge process handles t
 
 ## Summary
 
-1. **Analyze** chapter databases to understand coverage
-2. **Map** each chapter to its source database (prefer latest/most complete)
-3. **Merge chapters** with sequential ID assignment and FK remapping
-4. **Verify** no orphaned FL entries exist
-5. **Merge into main** with ID offsets based on `MAX(id)`
-6. **Verify** JOINs work correctly across all books
+### Complete Workflow
+
+1. **Process** book with `interactive_parallel_processor.py`
+2. **Check failures** - review failure manifest, retry any failed chapters
+3. **Verify completeness** - ensure ALL chapters are present (use completeness check script)
+4. **Analyze** chapter databases to understand coverage/overlaps
+5. **Map** each chapter to its source database (prefer latest/most complete)
+6. **Merge chapters** into `database/{BookName}.db` with FK remapping
+7. **Verify** book database - no orphaned FL entries, JOINs work
+8. **Merge into main** `database/Biblical_fig_language.db` with ID offsets
+9. **Verify** main database integrity across all books
+
+### File Organization
+
+```
+Bible/
+├── private/                          # Source chapter databases (temporary)
+│   ├── ezekiel_ch1-10.db
+│   ├── ezekiel_ch11-24.db
+│   └── ...
+├── database/                         # Final databases (permanent)
+│   ├── Ezekiel.db                   # Complete book (keep for backup!)
+│   ├── Isaiah.db
+│   ├── ...
+│   └── Biblical_fig_language.db     # Main merged database
+└── output/                          # Logs and manifests
+    └── *_failures.json              # Check these for failed chapters!
+```
+
+### Key Points
+
+- **Always verify completeness** before merging - missing chapters = incomplete data
+- **Keep individual book databases** in `database/` as backups
+- **Check failure manifests** after processing to catch failed chapters
+- **Foreign key integrity** is critical - always verify JOINs work after merging

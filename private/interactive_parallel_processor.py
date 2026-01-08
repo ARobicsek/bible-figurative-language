@@ -37,7 +37,11 @@ TORAH_BOOKS = {
 }
 # Ketuvim (Writings)
 KETUVIM_BOOKS = {
-    "Psalms": 150, "Proverbs": 31
+    "Psalms": 150, "Proverbs": 31, "Job": 42,
+    "Song_of_Songs": 8, "Ruth": 4, "Lamentations": 5,
+    "Ecclesiastes": 12, "Esther": 10, "Daniel": 12,
+    "Ezra": 10, "Nehemiah": 13,
+    "I_Chronicles": 29, "II_Chronicles": 36
 }
 # Former Prophets (Nevi'im Rishonim)
 FORMER_PROPHETS = {
@@ -53,7 +57,7 @@ MAJOR_PROPHETS = {
 MINOR_PROPHETS = {
     "Hosea": 14, "Joel": 3, "Amos": 9, "Obadiah": 1,
     "Jonah": 4, "Micah": 7, "Nahum": 3, "Habakkuk": 3,
-    "Zephaniah": 3, "Haggai": 2, "Zechariah": 14, "Malachi": 4
+    "Zephaniah": 3, "Haggai": 2, "Zechariah": 14, "Malachi": 3  # Sefaria uses 3 chapters (Hebrew versification)
 }
 
 # All supported books
@@ -75,7 +79,11 @@ VERSE_ESTIMATES = {
     "Genesis": 1533, "Exodus": 1213, "Leviticus": 859,
     "Numbers": 1288, "Deuteronomy": 959,
     # Ketuvim (Writings)
-    "Psalms": 2461, "Proverbs": 915,
+    "Psalms": 2461, "Proverbs": 915, "Job": 1070,
+    "Song_of_Songs": 117, "Ruth": 85, "Lamentations": 154,
+    "Ecclesiastes": 222, "Esther": 167, "Daniel": 357,
+    "Ezra": 280, "Nehemiah": 406,
+    "I_Chronicles": 942, "II_Chronicles": 822,
     # Former Prophets
     "Joshua": 658, "Judges": 618,
     "1_Samuel": 810, "2_Samuel": 695,
