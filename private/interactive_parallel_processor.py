@@ -1789,6 +1789,27 @@ ESSENTIAL GUIDELINES:
 - Each instance must represent a DISTINCT figurative expression, NOT different aspects of the same expression
 - Multiple expressions in the same verse can be of the same type (e.g., two metaphors) or different types
 
+=== CRITICAL: WHAT IS NOT FIGURATIVE LANGUAGE ===
+
+DIVINE ACTIONS ARE LITERAL IN ANCIENT NEAR EASTERN CONTEXT:
+In biblical literature, God is understood as a personal agent who acts in the world. The following are NOT figurative language:
+- Divine speech: "the word of GOD came to", "GOD said", "GOD spoke" - standard prophetic formulae, NOT personification
+- Divine emotions: "GOD was angry", "GOD was pleased", "GOD loved" - literal divine attributes, NOT metaphor/personification
+- Divine actions: "GOD blessed", "GOD cursed", "GOD watched", "GOD remembered", "GOD fought", "GOD went" - literal divine activity
+- Prophetic call formulae: "the word of the LORD came to [prophet name]" is a standard prophetic authentication formula, NOT personification or metonymy
+
+EXCEPTION - Divine Body Parts ARE Metaphorical:
+Since God is incorporeal (has no physical body), references to God's body parts ARE metaphorical:
+- "God's hand", "mighty hand", "outstretched arm" = metaphor for divine power
+- "God's face", "hide My face" = metaphor for divine presence/favor
+- "God's eyes", "God's ears" = metaphor for divine awareness
+- "God's finger" = metaphor for divine action
+
+STANDARD BIBLICAL TERMINOLOGY (NOT figurative):
+- Covenant language: "cut a covenant", "signs and wonders", "testimonies and statutes"
+- Prophetic formulae: "thus says the LORD", "declares the LORD", "oracle of the LORD"
+- Historical references: "as your fathers did", "in the days of", "from Egypt"
+
 For each verse, briefly analyze what you considered and include it in the "deliberation" field of the JSON. Then detect instances of:
 - Metaphor
 - Simile
