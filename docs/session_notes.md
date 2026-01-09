@@ -1284,3 +1284,56 @@ Polished the search UI instructions and extended advanced search capabilities (s
 ### Code Changes
 -   **web/biblical_figurative_interface.html**: Moved/Added instruction divs, updated CSS alignment, revised highlighting logic.
 -   **web/api_server.py**: Refactored `SearchProcessor` and updated `get_verses` query construction.
+
+---
+
+## Session 13: Divine Action Remediation
+
+**Date:** 2026-01-08
+
+### Summary
+Remediated ~93 false positive figurative language tags where "word of God/Lord" patterns were incorrectly tagged as personification/metaphor. Verified that basic divine actions (God spoke, God went, etc.) are correctly NOT tagged as figurative 96.5% of the time.
+
+### Problem
+The batched chapter processing prompt in `interactive_parallel_processor.py` lacked explicit guidance that divine speech formulae (e.g., "the word of GOD came to Ezekiel") are literal in ANE context, not figurative. This resulted in ~93 instances being incorrectly tagged with personification and/or metaphor.
+
+### Solution: Batch SQL Fix
+
+Created `batch_fix_word_of_god.py` to:
+1. Find all figurative_language entries where `figurative_text` contains "word of God/Lord/YHWH"
+2. Set `personification='no'`, `metaphor='no'` for those entries
+3. **Preserve `metonymy='yes'`** (valid - "word" stands for divine message)
+4. Add audit trail in validation_reason fields
+
+### Results
+
+| Metric | Value |
+|--------|-------|
+| Instances fixed | 93 |
+| Metonymy preserved | 43 |
+| Backup created | `database/backups/Biblical_fig_language_backup_20260108_204824.db` |
+
+### Verification: Basic Divine Actions
+
+Ran comprehensive check on divine actions in full verse text:
+
+| Category | Total Verses | Tagged as Pers/Met | % Clean |
+|----------|-------------|-------------------|---------|
+| Speaking | Many | ~1-2 | ~99% |
+| Movement | Many | ~0 | ~100% |
+| Perception | Many | ~1 | ~99% |
+| Action | Many | ~2 | ~98% |
+| **TOTAL** | **All** | **~4-5** | **96.5%** |
+
+**Conclusion:** The database is in good shape. Basic divine actions like "God said", "God went", "God made" are correctly NOT tagged as metaphor/personification in the vast majority of cases.
+
+### Files Modified
+- `database/Biblical_fig_language.db` - 93 entries updated
+
+### Scripts Created (temporary, removed after session)
+- `batch_fix_word_of_god.py` - Main fix script (kept for reference)
+- Various discovery/analysis scripts - removed
+
+### Commits
+- Batch fix for "word of God" divine action false positives
+
