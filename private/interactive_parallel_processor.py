@@ -38,16 +38,16 @@ TORAH_BOOKS = {
 # Ketuvim (Writings)
 KETUVIM_BOOKS = {
     "Psalms": 150, "Proverbs": 31, "Job": 42,
-    "Song_of_Songs": 8, "Ruth": 4, "Lamentations": 5,
+    "Song of Songs": 8, "Ruth": 4, "Lamentations": 5,
     "Ecclesiastes": 12, "Esther": 10, "Daniel": 12,
     "Ezra": 10, "Nehemiah": 13,
-    "I_Chronicles": 29, "II_Chronicles": 36
+    "1 Chronicles": 29, "2 Chronicles": 36
 }
 # Former Prophets (Nevi'im Rishonim)
 FORMER_PROPHETS = {
     "Joshua": 24, "Judges": 21,
-    "1_Samuel": 31, "2_Samuel": 24,
-    "1_Kings": 22, "2_Kings": 25
+    "1 Samuel": 31, "2 Samuel": 24,
+    "1 Kings": 22, "2 Kings": 25
 }
 # Latter Prophets (Nevi'im Acharonim) - Major
 MAJOR_PROPHETS = {
@@ -80,14 +80,14 @@ VERSE_ESTIMATES = {
     "Numbers": 1288, "Deuteronomy": 959,
     # Ketuvim (Writings)
     "Psalms": 2461, "Proverbs": 915, "Job": 1070,
-    "Song_of_Songs": 117, "Ruth": 85, "Lamentations": 154,
+    "Song of Songs": 117, "Ruth": 85, "Lamentations": 154,
     "Ecclesiastes": 222, "Esther": 167, "Daniel": 357,
     "Ezra": 280, "Nehemiah": 406,
-    "I_Chronicles": 942, "II_Chronicles": 822,
+    "1 Chronicles": 942, "2 Chronicles": 822,
     # Former Prophets
     "Joshua": 658, "Judges": 618,
-    "1_Samuel": 810, "2_Samuel": 695,
-    "1_Kings": 816, "2_Kings": 719,
+    "1 Samuel": 810, "2 Samuel": 695,
+    "1 Kings": 816, "2 Kings": 719,
     # Major Prophets
     "Isaiah": 1292, "Jeremiah": 1364, "Ezekiel": 1273,
     # Minor Prophets (The Twelve)

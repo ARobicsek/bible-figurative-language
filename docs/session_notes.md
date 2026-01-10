@@ -1337,3 +1337,42 @@ Ran comprehensive check on divine actions in full verse text:
 ### Commits
 - Batch fix for "word of God" divine action false positives
 
+
+## Session 14: Fix About Page Mobile Layout
+
+**Date:** 2026-01-09
+
+### Summary
+Fixed the "About" page layout on mobile devices. The previous layout kept the sidebar and content side-by-side even on small screens, causing the text to be unreadable.
+
+### Specific Changes
+- Added a `@media (max-width: 768px)` query to `web/biblical_figurative_interface.html`.
+- Inside the media query:
+    - Stacked the grid columns (`grid-template-columns: 1fr`).
+    - Adjusted the Table of Contents (`.about-toc`) to take full width and display items horizontally/wrapped.
+    - Reduced padding for `.about-content`.
+
+### Verification
+- Verified using the browser tool with iPhone 12 Pro dimensions (390x844).
+- Confirmed that the layout stacks correctly and content is readable.
+
+## Session 15: Standardize Book Names and Order
+
+**Date:** 2026-01-10
+
+### Summary
+Standardized biblical book names in the database and pipeline to use the "Number Space Name" format (e.g., "1 Kings") and ensured books display in the traditional Tanakh order on the website.
+
+### Specific Changes
+- **Database (`Biblical_fig_language.db`):**
+    - Updated `verses` table to rename books (e.g., `1_Kings` → `1 Kings`, `II_Chronicles` → `2 Chronicles`).
+    - Updated `reference` strings to match the new format.
+- **Pipeline (`private/interactive_parallel_processor.py`):**
+    - Updated `SUPPORTED_BOOKS` and other configuration dictionaries to use the standardized names.
+- **Website:**
+    - Confirmed that `web/api_server.py` uses `TANAKH_ORDER` to sort books.
+    - Verified that the new book names match the keys in `TANAKH_ORDER`, ensuring correct display order without code changes.
+
+### Verification
+- Verified database counts: Old names have 0 rows, new names have correct counts.
+- Verified references: `reference` column updated correctly.
