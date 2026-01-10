@@ -228,6 +228,51 @@
             line-height: 1.8;
         }
 
+        /* Mobile Responsive Adjustments for About Page */
+        @media (max-width: 768px) {
+            .about-page.active {
+                grid-template-columns: 1fr;
+                /* Stack columns vertically */
+            }
+
+            .about-toc {
+                width: 100%;
+                height: auto;
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                padding: 1rem 1.5rem;
+            }
+
+            .about-toc h3 {
+                margin-bottom: 0.5rem;
+                display: inline-block;
+                margin-right: 1rem;
+                border: none;
+            }
+
+            .about-toc ul {
+                display: inline-flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .about-toc li {
+                margin-bottom: 0;
+            }
+
+            .about-toc a {
+                padding: 0;
+                font-size: 0.9rem;
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                opacity: 0.9;
+            }
+
+            .about-content {
+                padding: 1.5rem;
+            }
+        }
+
         /* Global Tooltip */
         /* Tooltip styles */
         .tooltip {
