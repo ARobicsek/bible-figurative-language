@@ -425,6 +425,11 @@ def get_verses():
         limit = int(request.args.get('limit', 50))
         offset = int(request.args.get('offset', 0))
 
+        # Initialize metadata search variables to defaults (prevent UnboundLocalError)
+        has_metadata_search = False
+        metadata_condition = ""
+        metadata_params = []
+
         # Check if metadata search is active FIRST (before deciding query structure)
         # This is needed to determine if we can use simple queries or need the JOIN
         has_any_metadata = bool(search_target or search_vehicle or search_ground or search_posture)
@@ -1066,6 +1071,11 @@ def get_verses_count():
         search_vehicle = request.args.get('search_vehicle', '')
         search_ground = request.args.get('search_ground', '')
         search_posture = request.args.get('search_posture', '')
+
+        # Initialize metadata search variables to defaults (prevent UnboundLocalError)
+        has_metadata_search = False
+        metadata_condition = ""
+        metadata_params = []
 
         # Build conditions (same logic as main /api/verses endpoint)
         # Check if metadata search is active FIRST
