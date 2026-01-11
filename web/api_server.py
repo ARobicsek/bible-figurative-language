@@ -548,7 +548,7 @@ def get_verses():
             # Ignore "Not Figurative" checkbox entirely (non-figurative verses have no metadata)
             if has_metadata_search:
                 # Only figurative verses
-                conditions.append("fl.id IS NOT NULL")
+                conditions.append("fl.final_figurative_language = 'yes'")
                 # Must match selected figurative types (if any specified)
                 if figurative_types and figurative_types != ['']:
                     figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
@@ -630,7 +630,7 @@ def get_verses():
                 validation_reason_idiom, validation_reason_hyperbole, validation_reason_metonymy,
                 validation_reason_other
             FROM figurative_language
-            WHERE verse_id IN ({placeholders})
+            WHERE verse_id IN ({placeholders}) AND final_figurative_language = 'yes'
             """
 
             # Apply figurative type filter to annotations if specified
@@ -908,10 +908,14 @@ def get_verses():
             # For show_all_verses or mixed queries, return estimate to trigger background count
             total_figurative_instances = 0  # Will be calculated in background
         else:
-            figurative_count_query = """
+            # Always enforce 'yes' for confirmed figurative language, even in search
+            # (User requested strict matching)
+            join_condition = "v.id = fl.verse_id AND fl.final_figurative_language = 'yes'"
+            
+            figurative_count_query = f"""
             SELECT COUNT(fl.id) as count
             FROM verses v
-            LEFT JOIN figurative_language fl ON v.id = fl.verse_id AND fl.final_figurative_language = 'yes'
+            INNER JOIN figurative_language fl ON {join_condition}
             WHERE 1=1
             """
 
@@ -1238,12 +1242,14 @@ def get_verses_count():
 
             # Get figurative instance count
             # For mixed queries with selected types, count only the selected types
-            if figurative_types and figurative_types != ['']:
-                # Count instances of selected types
+            # Get figurative instance count
+            # For mixed queries with selected types OR metadata search, count matching types/instances
+            if (figurative_types and figurative_types != ['']) or has_metadata_search:
+                # Count matching instances
                 figurative_count_query = """
                 SELECT COUNT(fl.id) as count
                 FROM verses v
-                INNER JOIN figurative_language fl ON v.id = fl.verse_id
+                INNER JOIN figurative_language fl ON v.id = fl.verse_id AND fl.final_figurative_language = 'yes'
                 WHERE 1=1
                 """
 
@@ -1255,8 +1261,7 @@ def get_verses_count():
                     book_conditions = []
                     for book in books:
                         book = book.strip()
-                        valid_books = ['genesis', 'exodus', 'leviticus', 'numbers', 'deuteronomy', 'psalms']
-                        if book.lower() in valid_books:
+                        if book.lower() in VALID_BOOKS:
                             book_conditions.append("v.book = ?")
                             count_params.append(book.title())
                     if book_conditions:
@@ -1283,9 +1288,10 @@ def get_verses_count():
                     count_conditions.append("v.english_text_clean LIKE ?")
                     count_params.append(f"%{search_english}%")
 
-                # Add figurative type filter
-                figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
-                count_conditions.append(figurative_filter)
+                # Add figurative type filter (only if specific types selected)
+                if figurative_types and figurative_types != ['']:
+                    figurative_filter = SearchProcessor.build_figurative_filter(figurative_types)
+                    count_conditions.append(figurative_filter)
 
                 # Add metadata search
                 if search_target or search_vehicle or search_ground or search_posture:
