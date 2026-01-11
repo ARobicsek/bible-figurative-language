@@ -629,18 +629,26 @@ def get_verses():
                 validation_reason_metaphor, validation_reason_simile, validation_reason_personification,
                 validation_reason_idiom, validation_reason_hyperbole, validation_reason_metonymy,
                 validation_reason_other
-            FROM figurative_language
-            WHERE verse_id IN ({placeholders}) AND final_figurative_language = 'yes'
+            FROM figurative_language fl
+            WHERE fl.verse_id IN ({placeholders}) AND fl.final_figurative_language = 'yes'
             """
 
-            # Apply figurative type filter to annotations if specified
+            # Initialize params with verse IDs
             annotation_params = list(verse_ids)
+            
+            # Apply metadata filter to annotations if specified (matches search Strictness)
+            if has_metadata_search and metadata_condition:
+                 annotations_query += f" AND {metadata_condition}"
+                 annotation_params.extend(metadata_params)
+
+            # Apply figurative type filter to annotations if specified
             if figurative_types and figurative_types != [''] and not show_all_verses:
                 # Only filter by type if not showing all verses
                 fig_conditions = []
                 for fig_type in figurative_types:
                     if fig_type in ['metaphor', 'simile', 'personification', 'idiom', 'hyperbole', 'metonymy', 'other']:
-                        fig_conditions.append(f"final_{fig_type} = 'yes'")
+                        # Use fl. prefix if we aliased the table, or just column name
+                        fig_conditions.append(f"fl.final_{fig_type} = 'yes'")
 
                 if fig_conditions:
                     annotations_query += f" AND ({' OR '.join(fig_conditions)})"
