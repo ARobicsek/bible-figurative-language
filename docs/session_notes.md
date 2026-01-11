@@ -1376,3 +1376,22 @@ Standardized biblical book names in the database and pipeline to use the "Number
 ### Verification
 - Verified database counts: Old names have 0 rows, new names have correct counts.
 - Verified references: `reference` column updated correctly.
+
+## Session 16: Fix Search Result Counts and Strictness
+
+**Date:** 2026-01-10
+
+### Summary
+Addressed user confusion regarding mismatched search result counts. Implemented strict filtering for confirmed figurative language (`final_figurative_language = 'yes'`) across all search, display, and counting logic to ensure consistency.
+
+### Specific Changes
+- **Backend (`web/api_server.py`):**
+    - Updated `get_verses` to enforce `final_figurative_language = 'yes'` when performing metadata searches.
+    - Updated annotation fetching to strictly exclude unconfirmed annotations.
+    - Updated `get_verses_count` to match the strict logic.
+    - Fixed a 500 error on initial load by initializing metadata variables correctly.
+
+### Verification
+- Confirmed that counts are now consistent (e.g., "Showing 20 (20) of 20 (20)").
+- Verified that unconfirmed instances are hidden.
+- Confirmed site stability.
